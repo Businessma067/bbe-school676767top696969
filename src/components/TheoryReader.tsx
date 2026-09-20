@@ -7,6 +7,7 @@ import "katex/dist/katex.min.css";
 import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2 } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
 import { getMathCourseTheory, type MathCourseTheoryChapter } from "@/data/math-course-theory";
+import { getWisoEconomicsCourseTheory } from "@/data/wiso-economics-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
 import { trackEvent, upsertTheoryProgress } from "@/lib/activity-tracker";
@@ -22,7 +23,7 @@ type Props = {
   title: string;
   onGoToPractice: () => void;
   /** Defaults to economics (existing Full Course behaviour). */
-  subject?: "economics" | "math";
+  subject?: "economics" | "math" | "wiso-economics";
   /** Optional override (e.g. WiSo German math theory). */
   theoryChapter?: MathCourseTheoryChapter;
 };
@@ -278,11 +279,25 @@ export function TheoryReader({
   const mathTheory =
     subject === "math" ? (theoryOverride ?? getMathCourseTheory(chapter)) : undefined;
   const economicsTheory = subject === "economics" ? getEconomicsCourseTheory(chapter) : undefined;
-  const markdown = (subject === "math" ? mathTheory?.markdown : economicsTheory?.markdown) ?? "";
+  const wisoTheory = subject === "wiso-economics" ? getWisoEconomicsCourseTheory(chapter) : undefined;
+  const markdown =
+    (subject === "math"
+      ? mathTheory?.markdown
+      : subject === "wiso-economics"
+        ? wisoTheory?.markdown
+        : economicsTheory?.markdown) ?? "";
   const materialsPdfUrl =
-    subject === "math" ? mathTheory?.materialsPdfUrl : ECONOMICS_MATERIALS_PDF_URL;
+    subject === "math"
+      ? mathTheory?.materialsPdfUrl
+      : subject === "wiso-economics"
+        ? wisoTheory?.materialsPdfUrl
+        : ECONOMICS_MATERIALS_PDF_URL;
   const materialsPdfName =
-    subject === "math" ? mathTheory?.materialsPdfName : ECONOMICS_MATERIALS_PDF_NAME;
+    subject === "math"
+      ? mathTheory?.materialsPdfName
+      : subject === "wiso-economics"
+        ? wisoTheory?.materialsPdfName
+        : ECONOMICS_MATERIALS_PDF_NAME;
   const enableMath = subject === "math";
   const toc = useMemo(() => extractToc(markdown), [markdown]);
   const segments = useMemo(() => segmentTheory(markdown), [markdown]);

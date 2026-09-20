@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.17",
+    "title": "Was, wie und für wen",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Grundfragen des Wirtschaftens:",
+    "statements": [
+      "Aus der laufenden Entscheidung über begrenzte Ressourcen folgt die Frage, was wie und für wen in welcher Menge und Qualität produziert werden soll.",
+      "Sobald irgendetwas hergestellt wird, entfällt die Frage, für wen produziert wird, weil dann alle versorgt sind.",
+      "Zu den Grundfragen gehört auch, was gekauft oder eingetauscht werden soll.",
+      "Wie produziert wird, gehört nicht zu den Grundfragen; entscheidend ist allein das Was.",
+      "Menge und Qualität der Produktion stehen in derselben Grundfrage, nicht nur die Stückzahl."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Laufend muss entschieden werden, wofür begrenzte Ressourcen eingesetzt werden. Daraus leiten sich die wesentlichen Grundfragen ab, darunter die Produktionsfrage: Was soll wie und für wen in welcher Menge und in welcher Qualität produziert werden? Der Satz gibt diese Liste vollständig wieder, ohne den Marktpreis an ihre Stelle zu setzen.\n\nDie Aussage ist wahr.",
+      "Herstellen allein beantwortet nicht, für wen die knappen Mittel eingesetzt werden. Die Grundfrage nennt ausdrücklich das Für-wen neben Was und Wie. Produktion ohne Adressaten wäre keine vollständige Allokation: dieselben Maschinenstunden können Kinderfahrräder, Stahlträger oder Catering ergeben, je nachdem, für wen geplant wird. Versorgung aller folgt nicht automatisch aus irgendeinem Output. Die Behauptung, die Frage entfalle, sobald irgendetwas entsteht, streicht einen Teil der Grundfragen.\n\nWer irgendein Gut vom Band nimmt, hat noch nicht entschieden, welche Bedürfnisse bedient werden und in welcher Menge und Qualität. Knappheit zwingt gerade zur Auswahl zwischen möglichen Empfängern und Verwendungen. Alle wären nur dann versorgt, wenn Ressourcen unbegrenzt wären. Genau das ist nicht der Fall. Die Frage für wen bleibt deshalb Teil des Wirtschaftens.\n\nDie Aussage ist falsch.",
+      "Neben der Produktionsseite steht die Verwendungsseite: Was soll gekauft oder eingetauscht werden? Private Haushalte haben kein unbegrenztes Geld oder andere Tauschmittel. Deshalb ist die Kauf- und Tauschfrage eine Grundfrage des Wirtschaftens, nicht nur eine Geschmacksnotiz nach der Produktion.\n\nDie Aussage ist wahr.",
+      "Wie produziert wird, steht in derselben Aufzählung wie Was und Für-wen. Maschinen, Arbeitskraft und Verfahren sind knappe Mittel; ihre Wahl ist die Wie-Frage. Wer nur das Was gelten lässt, streicht die Art des Einsatzes. Ein Betrieb wie Rosenbauer oder Do&Co entscheidet nicht nur über das Erzeugnis, sondern über Verfahren, Qualität der Mittel und Organisation. Die Einschränkung auf das Was allein ist falsch.\n\nDie Wie-Frage ist keine technische Spielerei außerhalb der Ökonomie. Alternative Verfahren verbrauchen dieselben knappen Ressourcen unterschiedlich. Deshalb gehört Wie in die Grundfragen, sobald geplant werden muss, wofür begrenzte Mittel eingesetzt werden. Allein das Was zu fragen würde heißen, den Einsatzweg für unbegrenzt zu halten.\n\nDie Aussage ist falsch.",
+      "In welcher Menge und in welcher Qualität: beide Teile stehen in einer Grundfrage. Qualität wegzulassen würde bedeuten, knappe Mittel nur nach Stückzahl zu planen. Güte der Leistung ist Teil derselben Entscheidung, nicht ein späteres Schmuckstück. Der Satz hält die Doppelung fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.18",
+    "title": "Familienbudget der Meiers",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Knappheit im privaten Haushalt:",
+    "statements": [
+      "Die Meiers müssen mit einem bestimmten Familienbudget entscheiden, wie viel sie für Wohnen, Mobilität, tägliche Einkäufe, Sparen und Urlaub einsetzen.",
+      "Haben sie die Miete überwiesen, stehen die übrigen Budgetposten unbegrenzt zur Verfügung.",
+      "Mehr für das Auto bedeutet weniger Spielraum für denselben Topf, etwa für Sparen oder den Urlaub.",
+      "Mit knappen finanziellen Mitteln wirtschaften müssen nur Unternehmen; Haushalte konsumieren lediglich.",
+      "Wirtschaften heißt hier, den Einsatz des begrenzten Haushaltsbudgets genau zu planen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine Familie hat ein bestimmtes Budget, nicht eine unendliche Kasse. Wohnen, Auto oder Fahrrad, Einkäufe, Sparen und Urlaub greifen auf denselben begrenzten Betrag zu. Genau dieses Haushaltsbeispiel zeigt Knappheit: mehrere mögliche Verwendungen, eine Entscheidung über den Einsatz.\n\nDie Aussage ist wahr.",
+      "Die Miete ist eine Verwendung, nicht das Ende der Knappheit. Was nach der Überweisung bleibt, ist weiterhin endlich und muss auf Mobilität, Einkäufe, Sparen und Urlaub verteilt werden. Unbegrenzt wären die übrigen Posten nur, wenn Geld keine knappe Ressource mehr wäre. Ein bezahltes Wohnen hebt die Grenze des Familienbudgets nicht auf. Die Meiers wirtschaften nach der Miete weiter, nur mit einem kleineren Rest.\n\nKein privater Haushalt hat unbegrenzt Geld oder andere Tauschmittel. Die Aufteilung Wohnen, Mobilität, Einkäufe, Sparen, Urlaub bleibt eine Aufteilung desselben Topfes. Wer einen Posten als erledigt behandelt und den Rest für unendlich erklärt, verwechselt eine Buchung mit Unbegrenztheit. Knappheit sitzt im Budget insgesamt, nicht nur vor der ersten Überweisung.\n\nDie Aussage ist falsch.",
+      "Derselbe Euro kann nicht zugleich extra ins Auto und extra auf das Sparkonto. Alternative Einsatzmöglichkeiten desselben Budgets erzeugen den Verzicht. Mehr Mobilität engt Sparen oder Urlaub ein, weil die Mittel knapp sind.\n\nDie Aussage ist wahr.",
+      "Knapp sind die Ressourcen auf beiden Seiten: bei Haushalten und bei Unternehmen. Deshalb müssen auch die Meiers wirtschaften, nicht nur eine Fabrik. Konsumieren ersetzt die Planung nicht; gerade der Konsum konkurriert um begrenzte Mittel. Die Einschränkung auf Unternehmen allein ist falsch.\n\nAlle Wirtschaftsteilnehmer müssen entscheiden, wofür sie begrenzte Ressourcen einsetzen, für die es alternative Einsatzmöglichkeiten gäbe. Wir alle müssen daher wirtschaften. Ein Haushalt, der nur konsumiert und nicht plant, würde die Knappheit leugnen. Die Rollenverteilung Produzent gegen Konsument streicht die Haushaltsseite der Knappheit, die das Lehrbuch ausdrücklich nennt.\n\nDie Aussage ist falsch.",
+      "Weil Mittel knapp sind, muss ihr Einsatz genau geplant werden. Im Haushalt ist das Familienbudget diese finanzielle Grenze. Wohnen, Mobilität, Einkäufe, Sparen und Urlaub sind die rivalisierenden Verwendungen, über die entschieden wird. Das ist Wirtschaften im Sinne der Knappheit.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.19",
+    "title": "Produktionsmittel bei AGRANA und Do&Co",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Knappheit im Unternehmen:",
+    "statements": [
+      "Ein Unternehmen wie AGRANA oder Do&Co muss klären, was es produzieren kann und welche Produktionsmittel in welcher Menge und Qualität bereitstehen.",
+      "Welche Produktionsmittel sich der Betrieb leisten kann, gehört zur Knappheitsentscheidung.",
+      "Finanzielle Mittel dürfen vollständig in Anlagen fließen, ohne laufende Zahlungen zu bedenken, weil Investieren keine Alternative zur Liquidität ist.",
+      "Entscheidungen über den Einsatz begrenzter Ressourcen stehen im Mittelpunkt des Wirtschaftens.",
+      "Bekannte Marken können unbegrenzt viele Güter herstellen, sobald Kundschaft wartet."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Betrieben wie AGRANA, Rosenbauer, Voest, Do&Co oder woom geht es ähnlich wie einem Haushalt, nur auf der Produktionsseite. Was soll und kann hergestellt werden? Welche Mittel stehen in welcher Qualität und Menge bereit? Das ist das Unternehmensbeispiel für Knappheit.\n\nDie Aussage ist wahr.",
+      "Neben dem Wunsch zu produzieren zählt, welche Produktionsmittel man sich leisten kann. Preis, verfügbare Menge und Güte der Maschinen, Vorleistungen und Arbeitskraft begrenzen das Machbare. Das ist Teil der zentralen Entscheidung über den Ressourceneinsatz, keine Randnotiz der Buchhaltung.\n\nDie Aussage ist wahr.",
+      "Das Lehrbuch fragt ausdrücklich: Wie viel kann investiert werden, wie viel sollte für laufende Zahlungen verfügbar bleiben? Investition und Liquidität sind alternative Verwendungen derselben finanziellen Mittel. Wer alles in Anlagen steckt und Zahlungen ignoriert, verkennt diese Rivalität. Die Behauptung, Investieren sei keine Alternative zur Liquidität, streicht genau die Knappheit im Unternehmen.\n\nFinanzielle Mittel stehen nicht unbegrenzt zur Verfügung. Dieselbe Summe kann nicht voll in Anlagen und voll als Zahlungsmittel bereitliegen. Laufende Zahlungen sind eine Verwendung, Investieren eine andere. Ohne diese Alternative gäbe es keine Entscheidung über den Mitteleinsatz. Der Satz leugnet die Alternative und damit den Mittelpunkt des Wirtschaftens.\n\nDie Aussage ist falsch.",
+      "Nicht der bloße Besitz von Zuckerfabriken oder Küchen macht Wirtschaften aus, sondern die laufende Wahl, wofür begrenzte Mittel eingesetzt werden. Dort liegt der Mittelpunkt: planen, entscheiden, andere Optionen ausschließen.\n\nDie Aussage ist wahr.",
+      "Kein Unternehmen kann unbegrenzt viele Güter produzieren. Rohstoffe, Maschinen, Arbeitskraft und finanzielle Mittel bleiben knapp, auch bei bekannter Marke. Nachfrage oder Warteschlangen schaffen keine unendlichen Produktionsmittel. Unbegrenztheit wäre nur gegeben, wenn Güter unbegrenzt zur Verfügung stünden, was der Ausgangspunkt ausdrücklich verneint.\n\nKundschaft kann den Wunsch nach mehr Output verstärken, sie verlängert aber nicht Maschinenstunden, Rohstoffe oder Eigenkapital ins Unendliche. AGRANA und Do&Co müssen weiterhin klären, was sie sich leisten können. Größe und Bekanntheit ändern die Anerkennung der Knappheit nicht in Unbegrenztheit. Die Produktionsgrenze bleibt die Realität, an der gewirtschaftet wird.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.20",
+    "title": "Samuelson: Knappheit anerkennen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Wesen des Wirtschaftens nach Samuelson und Nordhaus:",
+    "statements": [
+      "Das Wesen des Wirtschaftens besteht in der Anerkennung der Knappheit als Realität und in einer gesellschaftlichen Organisation, die einen möglichst effizienten Ressourceneinsatz zulässt.",
+      "Wer Knappheit leugnet, wirtschaftet trotzdem automatisch möglichst effizient.",
+      "Dieser Ressourceneinsatz ist laufend mit vielen Entscheidungen und Handlungen der Wirtschaftsteilnehmer verbunden.",
+      "Effizienter Einsatz entsteht von selbst, sobald irgendwelche Ressourcen vorhanden sind, ohne dass jemand entscheidet.",
+      "Wirtschaften heißt, begrenzte Ressourcen geplant einzusetzen, weil alternative Verwendungsmöglichkeiten existieren."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Samuelson und Nordhaus fassen das Wesen so: Knappheit als Realität anerkennen und eine gesellschaftliche Organisation, die möglichst effizienten Ressourceneinsatz zulässt. Ohne diese Anerkennung bleibt Planung leer. Der Satz gibt das Zitat sachlich wieder.\n\nDie Aussage ist wahr.",
+      "Effizienz entsteht nicht von selbst aus Verleugnung. Wer die Grenze nicht anerkennt, plant den Einsatz nicht und lässt eine Organisation effizienten Einsatzes gerade nicht zu. Automatische Effizienz wäre dann eine leere Hoffnung, kein Mechanismus. Das Wesen des Wirtschaftens beginnt bei der Anerkennung, nicht bei ihrer Verweigerung.\n\nOhne Anerkennung der Knappheit als Realität gibt es keine Planung des Einsatzes und keine gesellschaftliche Organisation, die Effizienz zulässt. Leugnen heißt, so zu tun, als stünden Rohstoffe, Arbeitskraft und Geld unbegrenzt bereit. Dann entfällt die Entscheidung, wofür Mittel eingesetzt werden. Genau diese Entscheidung steht im Mittelpunkt. Wer sie streicht, wirtschaftet nicht effizient, sondern gar nicht im Sinne des Textes.\n\nDie Aussage ist falsch.",
+      "Der Ressourceneinsatz bleibt keine einmalige Formel, sondern hängt an vielen Handlungen. Kaufen, Verkaufen, Handeln, Investieren und Überzeugen sind die alltägliche Form dieser Wahl. Laufend entscheiden die Teilnehmer, nicht nur einmal im Gründungsjahr.\n\nDie Aussage ist wahr.",
+      "Vorhandensein von Mitteln ersetzt die Entscheidung nicht. Ohne Wahl zwischen Alternativen gibt es keinen geplanten Einsatz. Effizienz setzt voraus, dass jemand den knappen Bestand anerkennt und organisiert. Ressourcen, die niemand zuteilt, sind noch kein Wirtschaften.\n\nSamuelson bindet Effizienz an Organisation und Anerkennung, nicht an bloßes Vorhandensein. Maschinen in der Halle, die niemand einplant, lösen die Grundfragen nicht. Was, wie, für wen, Menge und Qualität bleiben unbeantwortet, solange niemand entscheidet. Der Satz unterstellt Automatik, wo der Text Handlungen der Wirtschaftsteilnehmer verlangt.\n\nDie Aussage ist falsch.",
+      "Weil Mittel knapp sind und alternative Einsatzmöglichkeiten existieren, müssen alle Wirtschaftsteilnehmer entscheiden und planen. Das ist die Definition des Wirtschaftens in diesem Abschnitt, nicht ein Sonderfall großer Konzerne.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.21",
+    "title": "Kaufen, Verkaufen, Handeln, Investieren",
+    "context": "Bewerten Sie die folgenden Aussagen zur Wirtschaft als Geflecht menschlicher Aktivitäten:",
+    "statements": [
+      "Die Wirtschaft ist ein enorm komplexes Gebilde verschiedenster menschlicher Aktivitäten wie Kaufen, Verkaufen, Handeln, Investieren und Überzeugen.",
+      "Wirtschaften besteht ausschließlich aus Produktion in Fabriken; Kaufen und Überzeugen zählen nicht dazu.",
+      "Haushalte und Unternehmen sind auf beiden Seiten knapp und müssen den Einsatz ihrer Mittel planen.",
+      "Überzeugen gehört nicht zur Wirtschaft, weil Wirtschaft nur aus Maschinenstunden besteht.",
+      "Der Austausch von Gütern gegen Geld wäre relativ einfach, wenn beides unbegrenzt zur Verfügung stünde."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Samuelson und Nordhaus beschreiben die Wirtschaft als komplexes Gebilde menschlicher Aktivitäten und nennen Kaufen, Verkaufen, Handeln, Investieren und Überzeugen. Der Ressourceneinsatz erscheint in genau diesen Handlungen, nicht nur in einer Stückliste.\n\nDie Aussage ist wahr.",
+      "Die zitierte Liste ist bewusst breit. Wer nur die Fabrik gelten lässt, streicht Kaufen, Verkaufen, Handeln, Investieren und Überzeugen. Haushalte entscheiden, was gekauft oder eingetauscht wird; Unternehmen investieren und überzeugen Kundschaft. Produktion ist ein Teil, nicht die einzige Aktivität. Ausschließlich Fabrik verengt das Gebilde, das der Text als enorm komplex fasst.\n\nWirtschaftsteilnehmer handeln laufend, nicht nur am Fließband. Der Tausch Güter gegen Geld, die Anlage finanzieller Mittel und das Überzeugen anderer sind im selben Satz genannt. Eine Definition, die nur Produktionshallen kennt, würde die Haushaltsseite und weite Teile der Unternehmensseite ausblenden. Das widerspricht der Aufzählung und dem Mittelpunkt: Entscheidungen über knappe Ressourcen in vielen Formen.\n\nDie Aussage ist falsch.",
+      "Die Ressourcen, über die Haushalte und Unternehmen verfügen, sind auf beiden Seiten knapp. Deshalb muss mit ihnen gewirtschaftet, also ihr Einsatz genau geplant werden. Die Zweiseitigkeit ist das Merkmal, nicht eine Einbahn von der Fabrik zum Kunden.\n\nDie Aussage ist wahr.",
+      "Überzeugen steht in der Aktivitätenliste neben Investieren und Handeln. Maschinenstunden sind eine knappe Ressource, nicht die Definition der Wirtschaft. Wer Überzeugen streicht, weil nur Technik zähle, verwechselt ein Produktionsmittel mit dem gesamten Gebilde menschlicher Aktivitäten.\n\nÜberzeugen ist im Lehrbuchzitat ausdrücklich genannt. Es gehört zu den Handlungen, mit denen Ressourceneinsatz organisiert wird, etwa wenn ein Betrieb Kundschaft oder Mitarbeitende für eine Verwendung knapper Mittel gewinnt. Maschinenstunden erklären nicht, warum gekauft, verkauft und gehandelt wird. Die Verengung auf Technik lässt die Komplexität fallen, die Samuelson betont.\n\nDie Aussage ist falsch.",
+      "Wären Güter und Geld ohne Grenze vorhanden, gäbe es keinen Zwang zur Auswahl. Der Tausch wäre dann eine bloße Abwicklung. Der Ausgangspunkt des Abschnitts lautet genau so: relativ einfach wäre es nur unter Unbegrenztheit, die in der Wirklichkeit nicht gilt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.22",
+    "title": "Mila: Buchhandlung oder Schwimmakademie",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Opportunitätskosten knapper Samstagsstunden:",
+    "statements": [
+      "Milas Samstagvormittag ist knapp: dieselbe Zeit kann sie nicht voll in der Buchhandlung und voll in der Schwimmakademie verbringen.",
+      "Wählt sie die Akademie, gehören zu den Opportunitätskosten die entgangenen Einkünfte der überschneidenden Schicht.",
+      "Wählt sie die Schicht, gehören zu den Opportunitätskosten Training und eine mögliche sportliche Chance, auch wenn diese Chance unsicher ist.",
+      "Weil ein Stipendium oder eine sportliche Chance nur vielleicht eintritt, darf dieser Nutzen niemals als Opportunitätskosten zählen.",
+      "Als Privatperson muss Mila nicht wirtschaften; Knappheit der Zeit gilt nur für Unternehmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Zeit ist in der Ressourcenliste genannt und steht nicht unbegrenzt zur Verfügung. Buchhandlung und Akademie sind alternative Einsatzmöglichkeiten desselben Vormittags. Eine volle parallele Nutzung würde Unbegrenztheit vortäuschen. Mila muss entscheiden, wofür die knappe Zeit eingesetzt wird.\n\nDie Aussage ist wahr.",
+      "Option Akademie heißt Verzicht auf Option Schicht. Der entgangene Ertrag der aufgegebenen Alternative sind die Einkünfte, die in der Buchhandlung entstanden wären. Das folgt der Definition: Ertrag von B, auf den man verzichtet, weil man A wählt.\n\nDie Aussage ist wahr.",
+      "Umgekehrt fehlt an der Akademie, was die Schicht verdrängt: Trainingszeit und eine mögliche sportliche Perspektive. Nicht erzielter Nutzen darf unsicher sein. Das Lehrbuch lässt bei Wertpapieren ausdrücklich zu, dass man vielleicht Gewinne erzielen könnte; dieser mögliche, dann nicht erzielte Ertrag bleibt Opportunitätskosten. Unsicherheit nimmt der aufgegebenen Alternative nicht den Charakter als Nutzen.\n\nDie Aussage ist wahr.",
+      "Vielleicht ist im Gründungsbeispiel der Wertpapiere Teil der Argumentation, nicht ein Ausschlussgrund. Ein unsicherer, nicht erzielter Nutzen bleibt Nutzen der aufgegebenen Alternative. Niemals zu zählen wäre eine absolute Regel, die der Text nicht aufstellt. Wer Unsicherheit zum Verbotsgrund macht, könnte auch den möglichen Wertpapiergewinn nicht mehr als Opportunitätskosten der Gründung lesen.\n\nNote: Unsicherheit ändert die Definition nicht in null; sie beschreibt den entgangenen Ertrag, der vielleicht eingetreten wäre.\n\nDie Akademie kann eine Chance bieten, die sich nicht sicher in Euro fassen lässt. Trotzdem ist sie Option B, sobald Mila die Schicht wählt. Die Definition nennt nicht erzielten Nutzen, nicht nur sichere Kasseneingänge. Ein Verbot für unsichere Größen wäre enger als das Buch und würde Freizeitwert und vielleicht-Gewinne gleich mit streichen.\n\nDie Aussage ist falsch.",
+      "Alle Wirtschaftsteilnehmer müssen entscheiden, wofür sie begrenzte Ressourcen einsetzen. Wir alle müssen daher wirtschaften. Privatperson, Haushalt, Jugendliche: der Status hebt Knappheit der Zeit nicht auf. Nur Unternehmen zu nennen streicht die Haushalts- und Personenseite, an der das Kapitel Zeit und Lernen ausdrücklich erklärt.\n\nStudentin, Lehrling, Haushalt, Unternehmen: auf beiden Seiten und bei allen Wirtschaftsteilnehmern sind Ressourcen knapp. Überlappende Verwendungen desselben Vormittags erzwingen die Wahl. Eine Ausnahme für Privatpersonen würde das Merkmal wir alle müssen wirtschaften umkehren. Mila plant den Einsatz ihrer Stunden genauso wie ein Betrieb den Einsatz von Arbeitskraft.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.23",
+    "title": "Halbe Beete, Nachbars Wiese",
+    "context": "Bewerten Sie die folgenden Aussagen zur Allokation knapper Gartenfläche:",
+    "statements": [
+      "Teilt die Familie die knappe Fläche hälftig in Beet und Wiese, wirtschaftet sie trotzdem: der Einsatz der begrenzten Fläche wird geplant.",
+      "Wächst beim Nachbarn eine Blumenwiese, wird die eigene Fläche unbegrenzt und die Familie muss nicht mehr entscheiden.",
+      "Kompost statt gekaufter Erde ändert nichts daran, dass an derselben Stelle nicht zugleich volle Beete und eine volle Wiese stehen.",
+      "Die Opportunitätskosten der Beete sind die Gärtnerstunden der Beete selbst, nicht der entgangene Nutzen der Wiese.",
+      "Schönheit der nicht gewählten Wiese darf in die Opportunitätskosten ein, auch ohne Verkauf der Blumen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Hälftige Teilung ist eine Form der Planung, nicht die Aufhebung der Knappheit. Die Fläche bleibt begrenzt; ein größerer Wiesenanteil verdrängt Beetfläche und umgekehrt. Wirtschaften heißt, den Einsatz genau zu planen. Die Familie entscheidet, wofür welche Teilstücke eingesetzt werden, obwohl alternative Aufteilungen existieren.\n\nDie Aussage ist wahr.",
+      "Knappheit sitzt in den Ressourcen, über die der Haushalt selbst verfügt, nicht in der Landschaft der Nachbarschaft. Die eigene Parzelle wird nicht unendlich, nur weil anderswo Blumen stehen. Alternative Einsatzmöglichkeiten der eigenen Fläche bleiben. Entscheiden muss die Familie weiterhin, sonst leugnet sie die Realität der Knappheit auf ihrer Seite.\n\nKein privater Haushalt hat unbegrenzt Fläche, Geld oder andere Mittel. Das Nachbargrundstück ist nicht ihre Ressource und ersetzt nicht die Wahl zwischen Beet und Wiese. Unbegrenztheit durch fremde Gärten wäre ein Kategorienfehler: Wirtschaften betrifft den eigenen begrenzten Bestand. Die Pflicht zur Entscheidung entfällt nicht durch den Blick über den Zaun.\n\nDie Aussage ist falsch.",
+      "Kostenlosigkeit einer Vorleistung, hier Kompost, löscht nicht die Rivalität der Fläche. An derselben Stelle schließen sich volle Beete und volle Wiese weiter aus. Opportunitätskosten hängen an der aufgegebenen Verwendung der knappen Fläche, nicht daran, ob Erde gekauft wurde. Das Gartenbeispiel im Buch argumentiert über denselben Standort, nicht über den Preis des Substrats.\n\nDie Aussage ist wahr.",
+      "Gewählt wird das Beet; verzichtet wird auf die Wiese. Der Preis oder Aufwand von A ist nicht die Definition der Opportunitätskosten. Maßgeblich bleiben entgangene Erträge oder nicht erzielter Nutzen von B, hier Schönheit und Erholung der Wiese. Gärtnerstunden der Beete sind Aufwand der gewählten Option, nicht der Verzicht.\n\nDer Kaufpreis bzw. die Arbeit der gewählten Sache ist die Ausgabe für A. Opportunitätskosten sind der Nutzen von B. Beide können Mühe oder Euro enthalten und bleiben trotzdem verschiedene Begriffe. Wer die Beetarbeit zur Definition macht, verfehlt den Verzicht auf die Wiese an derselben Stelle. Genau so trennt das Buch Option A gegen Option B.\n\nDie Aussage ist falsch.",
+      "Nicht erzielter Nutzen muss kein Marktpreis sein. Die Wiese stiftet Schönheit; verzichtet die Familie darauf zugunsten der Beete, ist dieser Nutzen die aufgegebene Alternative. Freude und Erholung stellen einen Wert dar, auch wenn er sich nicht so einfach in Geldwert ausdrücken lässt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.24",
+    "title": "Gründung statt Wertpapieren und Weltreise",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema alternative Verwendung von Geld:",
+    "statements": [
+      "Investiert Mira verfügbares Geld in die Gründung eines Unternehmens, kann sie denselben Betrag nicht mehr in bestimmte Wertpapiere stecken.",
+      "Ebenso kann sie denselben Betrag nach der Bindung in die Gründung nicht mehr für eine Ausbildung oder eine Weltreise ausgeben.",
+      "Weil eine Gründung zukunftsorientiert ist, sind die Opportunitätskosten der nicht gewählten Anlagen automatisch null.",
+      "Zu den Opportunitätskosten der Gründung kann der entgangene mögliche Gewinn aus Wertpapieren zählen.",
+      "Eine gedankliche Zweckbindung für die Firma hebt alle alternativen Einsatzmöglichkeiten des Geldes auf."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Das Lehrbuch nennt genau diese Kette: Geld in eine Gründung zu stecken heißt, denselben Betrag nicht in bestimmte Wertpapiere zu investieren, mit denen man vielleicht Gewinne erzielen könnte. Eine Verwendung schließt die andere aus.\n\nDie Aussage ist wahr.",
+      "Ebenso kann das Geld nicht mehr für eine Ausbildung oder eine Weltreise ausgegeben werden. Ausbildung und Reise sind weitere alternative Einsatzmöglichkeiten derselben knappen finanziellen Mittel. Nach der Bindung in die Gründung sind sie ausgeschlossen.\n\nDie Aussage ist wahr.",
+      "Zukunftsorientierung ändert die Definition nicht. Opportunitätskosten sind der entgangene Ertrag der aufgegebenen Alternative, etwa mögliche Wertpapiergewinne oder der Nutzen von Reise und Ausbildung. Null werden sie nicht, nur weil die Gründung nach vorn blickt. Null gäbe es nur ohne alternative Einsatzmöglichkeit.\n\nWertpapiere, Ausbildung und Reise sind gerade solche Alternativen. Dass Mira in die Zukunft ihrer Firma zielt, ändert weder die Knappheit des Betrags noch den entgangenen Ertrag der nicht gewählten Anlage. Zukunft tilgt den Verzicht nicht. Automatisch null wäre nur eine Welt ohne Option B, die der Text ausdrücklich nennt.\n\nDie Aussage ist falsch.",
+      "Vielleicht Gewinne erzielen ist ausdrücklich Teil des Wertpapierbeispiels. Dieser nicht erzielte Ertrag ist Opportunitätskosten der Gründung, sofern die Wertpapiere die aufgegebene Alternative sind. Unsicherheit nimmt ihnen nicht den Charakter als entgangenen Ertrag.\n\nDie Aussage ist wahr.",
+      "Eine Etikette für die Firma ist keine Aufhebung der Knappheit. Solange der Betrag auch in Wertpapieren, Ausbildung oder Reise stecken könnte, gibt es alternative Einsatzmöglichkeiten. Deshalb muss mit dem Geld gewirtschaftet, also geplant und entschieden werden. Zweckbindung im Kopf ersetzt die Realität begrenzter Mittel nicht.\n\nSolange andere Verwendungen denkbar sind, muss entschieden werden, wofür der Betrag eingesetzt wird. Wirtschaften heißt genau diese Planung. Eine gedankliche Widmung ändert nicht, dass dieselben Euro nicht parallel Firma, Studium und Weltreise voll finanzieren. Alternative Einsatzmöglichkeiten bleiben, bis die Entscheidung sie ausschließt, nicht schon durch ein Etikett.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.25",
+    "title": "Bezdeka, Ihlenfeld und die nächste Alternative",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Opportunitätskosten im Unternehmen am Beispiel der woom-Gründer:",
+    "statements": [
+      "Zeit und Energie der Gründer sind knappe Ressourcen; andere berufliche Tätigkeit oder Freizeit waren alternative Einsatzmöglichkeiten während des Aufbaus.",
+      "Haben beide Gründer Freude am Aufbau gehabt, sind ihre Opportunitätskosten automatisch null, weil Zufriedenheit jeden Verzicht löscht.",
+      "Die Opportunitätskosten sind personenabhängig: je nachdem, was jeder aufgegeben hat, nicht die Summe aller irgendwann denkbaren Lebenswege.",
+      "Weil später eine GmbH existiert, zählt Freizeitnutzen der Gründerjahre nicht, denn Unternehmen kennen nur Euro.",
+      "Gut überlegt wäre die Gründungsentscheidung erst, wenn die aufgegebenen Möglichkeiten als Konsequenzen mitgedacht werden."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Christian Bezdeka und Marcus Ihlenfeld steckten viel Zeit und Energie in den Aufbau. Natürlich hätten sie in dieser Zeit auch einer anderen Beschäftigung nachgehen können, sei es einer anderen beruflichen Tätigkeit um Geld zu verdienen, sei es einer Freizeitbeschäftigung. Zeit und Energie sind knappe Ressourcen mit Alternativen.\n\nDie Aussage ist wahr.",
+      "Persönliche Freude ist Nutzen der gewählten Linie und kann die Wahl erklären. Sie rechnet den entgangenen Ertrag der anderen Linie nicht gegen null. Beim Aufbau von woom zählt Freizeitwert neben entgangenem Gehalt, ohne dass eine der Größen die andere auslöscht. Freude und Opportunitätskosten bestehen nebeneinander. Automatisch null wäre nur eine Welt ohne Option B.\n\nZufriedenheit am gewählten Weg ist nicht der Radiergummi für die ausgeschlossene Beschäftigung. Die Definition misst den nicht erzielten Nutzen von B, nicht die Stimmung bei A. Wer Freude zur Nullsetzung erklärt, könnte jede angenehme Gründung für opportunitätskostenfrei halten. Der Text tut das Gegenteil: er nennt gerade die aufgegebenen Möglichkeiten als Opportunitätskosten, unabhängig von der Begeisterung für woom.\n\nDie Aussage ist falsch.",
+      "Je nachdem, was die beiden dafür aufgegeben haben, um aufbauen zu können, stellen diese aufgegebenen Möglichkeiten ihre Opportunitätskosten dar. Die Formulierung ist personen- und situationsabhängig. Nicht jede denkbare Verwendung zählt, sondern die tatsächlich verdrängte nächstbeste Alternative, nicht ein Katalog aller Lebenswege.\n\nDie Aussage ist wahr.",
+      "Das Lehrbuch betont ausdrücklich, dass Freude und Erholung einen Wert darstellen, auch wenn er sich nicht so einfach in Geldwert ausdrücken lässt. Die spätere Rechtsform GmbH ändert diese Bewertung der Gründerjahre nicht nachträglich in nur Euro. Unternehmen als Organisation ersetzen nicht die Zeitentscheidung der Menschen, die aufbauen.\n\nWährend des Aufbaus war die Zeit der Gründer gebunden, nicht die einer schon fertigen Bilanz. Freizeitnutzen zählt in der Definition als nicht erzielter Nutzen. Euro-only wäre die enge Regel, die der Text an dieser Stelle gerade aufweitet. Existenz der GmbH hinterher ist das Ergebnis der Wahl, nicht der Beweis, dass nur Gehälter zählen durften.\n\nDie Aussage ist falsch.",
+      "Eine ökonomische Entscheidung trifft man erst dann gut überlegt und reflektiert, wenn man sich der Konsequenzen bewusst ist. Die Opportunitätskosten zählen dazu: das, was man aufgegeben hat, weil andere Optionen ausgeschlossen wurden. Für die Gründer heißt das, Gehalt oder Erholung als aufgegebene Möglichkeiten mitzudenken, nicht nur die Produktidee zu sehen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.26",
+    "title": "Ehrenamt oder bezahlte Schicht",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Opportunitätskosten einer unbezahlten Alternative:",
+    "statements": [
+      "Nimmt Simon am selben Samstag das Ehrenamt, gehören zu den Opportunitätskosten die entgangenen Einkünfte der überschneidenden bezahlten Schicht.",
+      "Weil das Ehrenamt nichts zahlt, entstehen bei dieser Wahl keine Opportunitätskosten.",
+      "Bleibt Simon in der Schicht, gehören zu den Opportunitätskosten der nicht erzielte Nutzen aus der ehrenamtlichen Tätigkeit.",
+      "Opportunitätskosten dürfen ausschließlich in Euro angegeben werden; andere Nutzengrößen zählen nicht.",
+      "Als Jugendlicher muss Simon trotzdem mit knapper Zeit wirtschaften und zwischen den Verwendungen wählen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Option Ehrenamt heißt Verzicht auf Option Schicht, sofern beide denselben Samstag beanspruchen. Der entgangene Ertrag der aufgegebenen Alternative sind die Einkünfte der Schicht. Das ist die finanzielle Seite der Opportunitätskosten, analog zum Verzicht auf eine andere berufliche Tätigkeit beim Unternehmensaufbau.\n\nDie Aussage ist wahr.",
+      "Null Lohn auf dem gewählten Weg ist nicht null Verzicht. Die Schicht, die Simon nicht mehr leisten kann, fällt weg. Opportunitätskosten sind der entgangene Nutzen der Alternative, nicht die Auszahlung der gewählten Beschäftigung. Unbezahlt löscht diesen Ertrag nicht.\n\nNote: Maßgeblich ist die aufgegebene nächstbeste Verwendung, nicht der Kassenfluss der gewählten Option.\n\nUnbezahlt ist das Ehrenamt auf dem Konto, nicht ohne Alternative. Simon könnte in derselben Zeit die Schicht arbeiten. Dieser entgangene Ertrag ist Option B. Die Definition fragt nicht, ob Option A ein Gehalt zahlt, sondern worauf zugunsten von A verzichtet wird. Null Lohn auf A löscht B nicht. Kostenlosigkeit der gewählten Tat ist kein Freibrief gegen Knappheit der Zeit.\n\nDie Aussage ist falsch.",
+      "Bleibt er in der Schicht, schließt er das Ehrenamt aus. Sinn, Freude oder Erholung der ehrenamtlichen Tätigkeit sind Nutzen, den er nicht erzielt. Auch nicht einfach in Geld fassbare Größen zählen, wie beim Freizeitwert im Gründerbeispiel.\n\nDie Aussage ist wahr.",
+      "Zeit, Erholung, Erfahrung und andere Nutzengrößen dürfen in die Opportunitätskosten ein. Das Lehrbuch sagt, dass Freude und Erholung einen Wert darstellen, auch wenn er sich nicht so einfach in Geldwert ausdrücken lässt. Die Regel nur Euro ist zu eng. Immer nur Euro, nie andere Dimensionen wäre die absolute Falle.\n\nDie Definition lässt nicht erzielten Nutzen ausdrücklich zu. Ehrenamtlicher Sinn gehört in dieselbe offene Nutzenkategorie wie Erholung. Eine Regel, die nur Euro zulässt, ist enger als die Bestimmung der Opportunitätskosten. Wer andere Dimensionen streicht, kann das woom-Beispiel mit Freizeitwert nicht mehr lesen.\n\nDie Aussage ist falsch.",
+      "Jugendlich zu sein hebt Knappheit nicht auf. Seine Stunden sind begrenzt, Schicht und Ehrenamt überlappen, alternative Einsatzmöglichkeiten der Zeit bleiben. Alle Wirtschaftsteilnehmer, also auch er, müssen entscheiden, wofür die knappe Ressource Zeit eingesetzt wird.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.27",
+    "title": "Haushalt und Betrieb vor derselben Grenze",
+    "context": "Bewerten Sie die folgenden Aussagen zum Vergleich von Haushaltsbudget und betrieblichen Ressourcen:",
+    "statements": [
+      "Haushalt und Unternehmen stehen vor derselben Logik: begrenzte Mittel, alternative Verwendungen, Entscheidung über den Einsatz.",
+      "Sobald ein Haushalt konsumiert und ein Betrieb produziert, entfällt Knappheit auf einer der beiden Seiten.",
+      "Die Grundfragen verbinden, was produziert wird, mit der Frage, was gekauft oder eingetauscht wird.",
+      "Rohstoffe, Maschinen, Arbeitskraft und finanzielle Mittel stehen nicht unbegrenzt zur Verfügung und müssen geplant eingesetzt werden.",
+      "Nur der Staat muss wirtschaften; private Haushalte und Unternehmen sind von der Knappheit ausgenommen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Auf beiden Seiten sind Ressourcen knapp. Der Haushalt teilt das Familienbudget auf Wohnen, Mobilität, Einkäufe, Sparen und Urlaub. Das Unternehmen klärt, was es produzieren kann und welche Produktionsmittel es sich leisten kann. Alternative Einsatzmöglichkeiten erzwingen dieselbe Entscheidungslogik.\n\nDie Aussage ist wahr.",
+      "Konsum und Produktion sind zwei Schauplätze derselben Knappheit, nicht ihre Aufhebung. Kein Haushalt hat unbegrenzt Tauschmittel, kein Unternehmen unbegrenzt Output. Wer eine Seite für unendlich erklärt, weil sie konsumiert oder produziert, verkennt das Merkmal: Ressourcen sind auf beiden Seiten knapp. Rollenwechsel löscht die Grenze nicht.\n\nDer Austausch wäre nur dann einfach, wenn Güter und Geld unbegrenzt wären. Das ist nicht der Fall. Konsumieren heißt, begrenztes Geld auf Käufe zu verteilen. Produzieren heißt, begrenzte Produktionsmittel einzusetzen. Beide Handlungen sind Wirtschaften. Die Behauptung, eine der Seiten werde durch ihre Rolle knappheitsfrei, widerspricht der Zweiseitigkeit des Abschnitts.\n\nDie Aussage ist falsch.",
+      "Aus der laufenden Entscheidung über begrenzte Ressourcen folgen beide Grundfragen: die Produktionsfrage (was, wie, für wen, Menge, Qualität) und die Frage, was gekauft oder eingetauscht werden soll. Haushalt und Betrieb sind in diesem Paar verbunden, nicht getrennt in zwei Wissenschaften.\n\nDie Aussage ist wahr.",
+      "Die Aufzählung im Text ist bewusst breit: Rohstoffe, Maschinen, Arbeitskraft, finanzielle Mittel und vieles mehr. Mit ihnen muss gewirtschaftet werden, das heißt ihr Einsatz muss genau geplant werden. Planung ist die Folge der Unbegrenztheit, die fehlt.\n\nDie Aussage ist wahr.",
+      "Wir alle müssen wirtschaften. Das Merkmal gilt für alle Wirtschaftsteilnehmer, weil alternative Einsatzmöglichkeiten existieren. Eine Ausnahme nur für den Staat und eine Befreiung von Haushalt und Unternehmen steht nicht im Abschnitt. Private Haushalte und Unternehmen sind gerade die beiden Seiten, an denen Knappheit erklärt wird.\n\nDer Staat als eigener Akteur im Kreislauf gehört in ein späteres Kapitel. Hier tragen Haushalt und Unternehmen die Beispiele. Sie auszunehmen würde das Kapitel umdrehen. Alle Wirtschaftsteilnehmer entscheiden, wofür begrenzte Ressourcen eingesetzt werden. Die absolute Ausnahme ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.28",
+    "title": "Bewässerung: Feld A oder Feld B",
+    "context": "Bewerten Sie die folgenden Aussagen zum knappen Einsatz natürlicher Ressourcen in der Produktion:",
+    "statements": [
+      "Begrenztes Bewässerungswasser ist eine knappe Ressource und muss zwischen zwei Feldern aufgeteilt bzw. einem Feld zugeordnet werden.",
+      "Weil Wasser in der Natur vorkommt, entstehen zwischen den Feldern keine Opportunitätskosten.",
+      "Wählt der Betrieb Feld A, betragen die Opportunitätskosten die Summe der Erträge beider Felder, als wären beide voll bewässert.",
+      "Wählt er Feld A, sind die Opportunitätskosten der entgangene Ertrag bzw. Nutzen, den Feld B erbracht hätte.",
+      "Rohstoffe stehen nicht unbegrenzt zur Verfügung; deshalb muss ihr Einsatz geplant werden."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Natürliche Ressourcen gehören zur Ressourcenliste neben Zeit, Geld und Produktionsmitteln. Wasser für die Felder ist knapp, sobald nicht beide Flächen voll versorgt werden können. Alternative Einsatzmöglichkeiten erzwingen die Entscheidung, wofür die begrenzte Menge eingesetzt wird.\n\nDie Aussage ist wahr.",
+      "Herkunft aus der Natur hebt Knappheit nicht auf. Luft, Wasser und Boden sind gerade die Medien, an denen die Bedeutung knapper Ressourcen deutlich wird. Zwei Felder rivalisieren um dieselbe begrenzte Wassermenge. Option A gegen Option B bleibt. Vorkommen in der Natur ist kein Freibrief für Unbegrenztheit.\n\nDie Bedeutung des Umgangs mit knappen Ressourcen wird vor allem bei Nutzung und Belastung von Luft, Wasser und Boden deutlich. Wer Wasser für unerschöpflich erklärt, weil es natürlich ist, leugnet genau diese Stelle. Opportunitätskosten entstehen, sobald die Bewässerung von A die von B ausschließt. Natürlichkeit der Ressource ändert die Definition nicht.\n\nDie Aussage ist falsch.",
+      "A plus B zu addieren würde beide Erträge so behandeln, als wären sie gleichzeitig erreichbar. Das Wasser reicht aber nicht für beide voll. Opportunitätskosten messen den entgangenen Ertrag der aufgegebenen Alternative, nicht die Summe beider Projekte. Die Addition wiederholt den Fehler, alle verworfenen Optionen aufzusummieren.\n\nSumme beider Felder unterstellt, der Verzicht sei beides zugleich. Verzicht ist nur das nicht gewählte Feld. Zwei Flächen gleichzeitig voll zu bewässern, verbietet die knappe Menge. Die Addition misst nicht die nächstbeste Alternative, sondern einen unerreichbaren Doppelbetrieb. Das widerspricht Option A gegen Option B.\n\nDie Aussage ist falsch.",
+      "Opportunitätskosten sind der Ertrag von Option B, auf den man verzichtet, da man sich für Option A entschieden hat. A ist die Bewässerung von Feld A, B der entgangene Nutzen von Feld B. Nicht die Pumpenrechnung von A allein, sondern der aufgegebene Feldertrag.\n\nDie Aussage ist wahr.",
+      "Rohstoffe, Maschinen, Arbeitskraft, finanzielle Mittel und vieles mehr stehen nicht unbegrenzt zur Verfügung. Deshalb muss mit ihnen gewirtschaftet, der Einsatz genau geplant werden. Bewässerungswasser ist in dieser Logik ein Rohstoff bzw. eine natürliche Ressource.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.29",
+    "title": "Konsequenzen der Wahl mitdenken",
+    "context": "Bewerten Sie die folgenden Aussagen zu reflektierten ökonomischen Entscheidungen:",
+    "statements": [
+      "Opportunitätskosten umfassen das, was man aufgegeben oder worauf man verzichtet hat, weil man sich für eine Option entschieden und andere ausgeschlossen hat.",
+      "Eine ökonomische Entscheidung ist erst dann gut überlegt, wenn man sich dieser Konsequenzen einschließlich der Opportunitätskosten bewusst ist.",
+      "Wer nur den unmittelbaren Vorteil der gewählten Option sieht, erfüllt bereits vollständig das Kriterium der reflektierten Entscheidung.",
+      "Jede Bindung von Zeit, Geld, Produktionsmitteln oder natürlichen Ressourcen an Option A ist zugleich die Entscheidung gegen Option B.",
+      "Sobald eine Entscheidung getroffen ist, dürfen die ausgeschlossenen Optionen als nie existent behandelt werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Die Konsequenz der Wahl wird so gefasst: Opportunitätskosten umfassen das Aufgegebene, weil eine bestimmte Option andere ausschließt. Es ist der Verzicht, der mit der Entscheidung selbst entsteht, nicht erst eine spätere Rechnung.\n\nDie Aussage ist wahr.",
+      "Gut überlegt und reflektiert ist die Entscheidung erst mit Bewusstsein für die Konsequenzen. Zu diesen Konsequenzen zählen die Opportunitätskosten. Wer nur den Vorteil von A sieht und B ausblendet, erfüllt dieses Kriterium nicht.\n\nDie Aussage ist wahr.",
+      "Unmittelbarer Vorteil von A ohne Blick auf den Verzicht ist genau das unreflektierte Muster. Der Abschnitt verlangt, sich der Konsequenzen bewusst zu sein; die Opportunitätskosten zählen dazu. Vollständig erfüllt wäre das Kriterium erst, wenn das Aufgegebene mitgedacht wird. Der Satz erklärt die Anforderung für erfüllt, obwohl der Kern fehlt.\n\nOhne dieses Bewusstsein bleibt die Wahl unreflektiert. Man sieht den Vorteil der gewählten Schicht, der Gründung oder des Beetes und blendet Training, Wertpapiere oder Wiese aus. Gut überlegt ist die ökonomische Entscheidung erst, wenn die Opportunitätskosten als Konsequenz mitgedacht werden. Allein der Vorteil von A reicht nicht.\n\nDie Aussage ist falsch.",
+      "Jede Entscheidung, Ressourcen für etwas einzusetzen, zum Beispiel für Option A, bedeutet gleichzeitig die Entscheidung gegen einen alternativen Einsatz, zum Beispiel gegen Option B. Dadurch entstehen Opportunitätskosten. Die A-gegen-B-Logik gilt für Zeit, Geld, Produktionsmittel, natürliche Ressourcen und Senken.\n\nDie Aussage ist wahr.",
+      "Ausgeschlossen heißt nicht, sie hätten nie existiert. Opportunitätskosten messen gerade den Nutzen der ausgeschlossenen Option. Sie als nie existent zu behandeln würde den Verzicht unsichtbar machen und die reflektierte Entscheidung unmöglich. Die Alternativen waren real und wurden nicht gewählt; das bleibt die Konsequenz.\n\nWährend der Wahl lagen die Optionen offen. Nach der Bindung der knappen Ressource sind sie nicht nachträglich ungeschehen, sondern aufgegeben. Wer sie für nie existent erklärt, streicht die Definition der Opportunitätskosten. Bewusstsein für Konsequenzen setzt voraus, B als aufgegebene Möglichkeit zu sehen, nicht als Illusion.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.30",
+    "title": "Heute und kommende Generationen",
+    "context": "Bewerten Sie die folgenden Aussagen zum nachhaltigen Wirtschaften im Sinne dieses Abschnitts:",
+    "statements": [
+      "Nachhaltiges Wirtschaften bedeutet, nicht nur an den eigenen Nutzen zu denken, sondern Auswirkungen auf andere Menschen und die Umwelt einzubeziehen, heute und für kommende Generationen.",
+      "Kurzfristiger eigener Nutzen ohne Blick auf andere und auf spätere Generationen erfüllt bereits vollständig die Anforderung nachhaltigen Wirtschaftens.",
+      "Kurzfristige Entscheidungen können langfristige ökologische Schäden und bereits heute Umweltprobleme sowie wirtschaftliche Herausforderungen verursachen.",
+      "Unternehmen dürfen Wirkungen auf andere ignorieren, weil langfristiger Erfolg nur vom eigenen Nutzen abhängt.",
+      "Umweltschonende Inhaltsstoffe und Betriebsmittel, energieeffiziente Verfahren oder nachhaltige Logistik sind Beispiele, Wirkungen auf andere einzubeziehen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Nicht nur an den eigenen Nutzen zu denken, sondern Auswirkungen auf andere Menschen und die Umwelt einzubeziehen, sowohl heute als auch für kommende Generationen: das ist die Bestimmung nachhaltigen Wirtschaftens in diesem Abschnitt. Beide Zeithorizonte stehen nebeneinander.\n\nDie Aussage ist wahr.",
+      "Nur der kurzfristige eigene Nutzen ist genau das, was der Text als unzureichend beschreibt. Kurzfristige Entscheidungen können ökologische Schäden und schon heutige Umweltprobleme sowie wirtschaftliche Herausforderungen erzeugen. Vollständig erfüllt wäre nachhaltiges Wirtschaften erst mit Einbezug anderer Menschen und der Umwelt in beiden Zeithorizonten.\n\nKommende Generationen stehen neben den heute Betroffenen. Wer den eigenen Nutzen isoliert, folgt der Haltung, die der Text verwirft. Die Anforderung ist nicht erfüllt, wenn andere und die Umwelt wegbleiben. Kurzfristigkeit ist hier das Risikomuster, nicht der Nachweis guten Wirtschaftens. Der Satz kehrt die Definition um.\n\nDie Aussage ist falsch.",
+      "Klimawissenschaftliche Analysen zeigen, dass kurzfristige Entscheidungen nicht nur langfristige ökologische Schäden verursachen können, sondern oft schon heute Umweltprobleme und wirtschaftliche Herausforderungen mit sich bringen. Die Doppelung aus später und jetzt ist wesentlich.\n\nDie Aussage ist wahr.",
+      "Alle Wirtschaftsteilnehmer, auch Unternehmen, können nur dann langfristig erfolgreich sein, wenn sie nachhaltig wirtschaften und Wirkungen ihrer Entscheidungen auf andere verantwortungsvoll einbeziehen. Ignorieren der Wirkungen widerspricht dieser Erfolgsbedingung. Eigener Nutzen allein trägt den langfristigen Erfolg im Text nicht.\n\nLangfristiger Erfolg ist an nachhaltiges Wirtschaften gebunden, ausdrücklich auch für Unternehmen. Verantwortungsvolles Einbeziehen kann über Inhaltsstoffe, Betriebsmittel, energieeffiziente Verfahren oder Logistik laufen. Die Behauptung, Erfolg hänge nur vom eigenen Nutzen ab und Wirkungen dürften ignoriert werden, ist die Gegenposition zum Abschnitt.\n\nDie Aussage ist falsch.",
+      "Die Einbeziehung von Wirkungen auf andere wird konkretisiert: umweltschonende Inhaltsstoffe und Betriebsmittel, energieeffiziente Produktionsverfahren, nachhaltige Logistiklösungen. Die genannten Wege stehen im Text als Beispiele verantwortungsvollen Wirtschaftens im Unternehmen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.31",
+    "title": "Ökologie, Ökonomie und Soziales",
+    "context": "Bewerten Sie die folgenden Aussagen zu den drei Dimensionen nachhaltigen Denkens:",
+    "statements": [
+      "Nachhaltiges Denken bezieht neben ökologischen auch soziale und ökonomische Überlegungen mit ein.",
+      "Nachhaltigkeit umfasst in diesem Verständnis nur die ökologische Dimension; Ökonomie und Soziales bleiben außen vor.",
+      "Für gesellschaftlichen Zusammenhalt sowie für Akzeptanz und Erfolg ökologischer Maßnahmen müssen auch wirtschaftliche und soziale Ziele erreicht werden.",
+      "Nachhaltiges Handeln strebt an, Ökologie gegen Ökonomie auszuspielen und soziale Ziele zurückzustellen.",
+      "Nachhaltigkeit umfasst und verknüpft die drei Dimensionen Ökologie, Ökonomie und Soziales und will sie in Einklang bringen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Text verknüpft die drei Seiten ausdrücklich: neben ökologischen auch soziale und ökonomische Überlegungen. Nachhaltigkeit ist hier kein reines Umweltetikett, sondern ein zusammengesetztes Verständnis. Die Aussage gibt diese Breite wieder.\n\nDie Aussage ist wahr.",
+      "Nachhaltigkeit umfasst und verknüpft die drei Dimensionen Ökologie, Ökonomie und Soziales. Wer Ökonomie und Soziales außen vor lässt, streicht zwei der drei Säulen. Der Abschnitt baut Nachhaltigkeit gerade nicht als isoliertes Umweltthema. Die Einschränkung auf Ökologie ist falsch.\n\nDrei Dimensionen: Ökologie, Ökonomie und Soziales. Außen vor lassen von zwei Dimensionen zerstört das Verständnis, in dem Nachhaltigkeit umfasst und verknüpft. Ökologie allein würde Zusammenhalt und Akzeptanz ökologischer Maßnahmen nicht tragen, wenn wirtschaftliche und soziale Ziele ausbleiben. Deshalb ist die Verengung unzulässig.\n\nDie Aussage ist falsch.",
+      "Gesellschaftlicher Zusammenhalt und die Akzeptanz ökologischer Maßnahmen hängen daran, dass auch wirtschaftliche und soziale Ziele erreicht werden. Ökologie allein, ohne diese Ziele, trägt die Argumentation des Textes nicht. Die Aussage trifft die Begründung, ohne spätere Kapitel über Staat oder Kreislauf zu bemühen.\n\nDie Aussage ist wahr.",
+      "Nachhaltiges Handeln strebt an, die drei Dimensionen miteinander in Einklang zu bringen, nicht Ökologie gegen Ökonomie auszuspielen und Soziales zurückzustellen. Hintanstellen wäre Unausgewogenheit, Einklang ist das Ziel. Die Richtung des Satzes ist umgekehrt zum Text.\n\nMiteinander in Einklang bringen ist das Ziel. Ausspielen und Zurückstellen wären Konflikt statt Verknüpfung. Wer ökologische Ziele gegen betriebliche Rechnung setzt und soziale Ziele opfert, verfehlt die drei Dimensionen. Der Abschnitt verlangt Abstimmung, nicht Rangfolge mit Restposten Soziales.\n\nDie Aussage ist falsch.",
+      "Umfasst und verknüpft: das ist das Verständnis dieses Abschnitts. Nachhaltiges Handeln will die drei Dimensionen in Einklang bringen. Der Satz hält Bestimmung und Ziel zusammen, ohne Brundtland-Formeln oder spätere Kapitel über Einbettung in das Erdsystem zu holen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.3",
+    "case_id": "WISO 1.3.32",
+    "title": "Senken, Effizienz und Einklang",
+    "context": "Bewerten Sie die folgenden Aussagen zum Schluss des Abschnitts über Knappheit und nachhaltiges Entscheiden:",
+    "statements": [
+      "Zeit, Geld, Produktionsmittel sowie natürliche Ressourcen und Senken sind Ressourcen, deren Einsatz Entscheidungen gegen alternative Verwendungen einschließt.",
+      "Effizienter Ressourceneinsatz setzt voraus, Knappheit als Realität anzuerkennen.",
+      "Sobald ein Unternehmen energieeffizient produziert, dürfen soziale und ökonomische Ziele ignoriert werden, weil eine Dimension der Nachhaltigkeit genügt.",
+      "Die Bedeutung knapper Ressourcen wird vor allem bei Nutzung und Belastung von Luft, Wasser und Boden deutlich.",
+      "Luft, Wasser und Boden sind unbegrenzt, weil sie nachwachsen; deshalb entfällt nachhaltiges Wirtschaften."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Die Liste der Ressourcen, über deren Einsatz entschieden wird, umfasst ausdrücklich Zeit, Geld, Produktionsmittel, natürliche Ressourcen und Senken. Jede Verwendung für Option A ist zugleich die Entscheidung gegen Option B und erzeugt Opportunitätskosten. Senken, etwa Aufnahmekapazität von Luft, Wasser und Boden, stehen in derselben Logik.\n\nDie Aussage ist wahr.",
+      "Das Wesen des Wirtschaftens besteht in der Anerkennung der Knappheit als Realität und in einer gesellschaftlichen Organisation, die einen möglichst effizienten Ressourceneinsatz zulässt. Ohne diese Anerkennung bleibt Planung des Einsatzes leer. Effizienz hängt an der anerkannten Grenze, nicht an ihrer Leugnung.\n\nDie Aussage ist wahr.",
+      "Nachhaltigkeit verknüpft Ökologie, Ökonomie und Soziales; nachhaltiges Handeln will sie in Einklang bringen. Energieeffizienz bedient vor allem die ökologische und teils ökonomische Seite, ersetzt aber nicht soziale und wirtschaftliche Ziele, die für Zusammenhalt und Akzeptanz nötig sind. Eine Dimension genügt nicht.\n\nEine Dimension genügt nicht, weil Nachhaltigkeit die drei Dimensionen verknüpft. Energieeffizienz kann ökologisch und ökonomisch helfen und trotzdem soziale Ziele offenlassen. Für Zusammenhalt und Akzeptanz müssen wirtschaftliche und soziale Ziele mit erreicht werden. Ignorieren nach einer technischen Maßnahme widerspricht dem Einklang. Der Satz macht aus einem Beispiel einen Freibrief, den der Text nicht gibt.\n\nDie Aussage ist falsch.",
+      "Vor allem bei der Nutzung und der Belastung von Luft, Wasser und Boden wird die Bedeutung knapper Ressourcen deutlich. Dort zeigen kurzfristige Entscheidungen ökologische und wirtschaftliche Folgen. Der Satz trifft diese Zuspitzung, ohne Treibhausgaslisten späterer Kapitel zu bemühen.\n\nDie Aussage ist wahr.",
+      "Unbegrenztes Nachwachsen ist nicht die Aussage des Textes. Gerade Luft, Wasser und Boden stehen im Zentrum, weil sie knapp und belastbar sind. Nachhaltiges Wirtschaften folgt daraus, dass Wirkungen auf andere und auf kommende Generationen einzubeziehen sind. Unbegrenztheit würde diese Pflicht streichen und die Knappheit leugnen.\n\nWer diese Medien für unbegrenzt erklärt, kehrt die Pointe um: der Abschnitt schärft Knappheit gerade dort. Kurzfristige Entscheidungen können sie schädigen, heute und langfristig. Dann entfällt nachhaltiges Wirtschaften nicht, es wird dringlicher. Die Begründung unbegrenzt nachwachsen trägt nicht und widerspricht der Ressourcenliste inklusive Senken.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,83 @@
+#### 4.2 Neue Produkte, Dienstleistungen und Geschäftsmodelle
+
+Viele Produkte und Dienstleistungen haben sich durch die Digitalisierung verändert. Die Art und Weise wie Sie in der heutigen digitalisierten Welt Produkte und Dienstleistungen verwenden hat vor zehn Jahren möglicherweise noch anders ausgesehen.
+
+Der Kauf eines Fahrscheins für die öffentlichen Verkehrsmittel bei den Wiener Linien 
+(www.wienerlinien.at) wird mittlerweile durch eine App ergänzt. Über ein Kundenkonto können Sie 
+Ihre Fahrkarten – z.B. die Jahreskarte – einfach digital verwalten und vorweisen. 
+Im Lebensmittelhandel können Sie sich über verschiedene Dienstleister (Gurkerl, Flink, Mjam, u.v.m.) 
+ihre Einkäufe nach Hause vor die Tür liefern lassen. Lebensmittelhändler selbst (wie z.B. Billa, Hofer 
+oder Interspar) bieten diese Dienstleistung auch an. Sie als Kunde stellen bequem über eine Webseite 
+ihren Einkauf zusammen und je nach Bedingungen erhalten Sie ihre Bestellung innerhalb kürzester Zeit 
+nach Hause geliefert. 
+All diese neuen Möglichkeiten setzen auf Technologie und verändern bzw. ermöglichen neue 
+Geschäftsmodelle, die vor längerer Zeit noch unvorstellbar waren. Durch den Einsatz von 
+Informationstechnologie (IT) verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. 
+Was ist ein Geschäftsmodell? 
+Ein Geschäftsmodell beschreibt, wie ein Unternehmen auf Basis einer 
+Geschäftsidee ein Produkt oder eine Dienstleistung erzeugt, bereitstellt und 
+vertreibt, um nach Gegenüberstellung eingesetzter Ressourcen und 
+Einnahmen, einen Gewinn zu erwirtschaften (Wertschöpfung). 
+
+Abbildung 29 illustriert den Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung im Unternehmen. Der Einsatz von Technologie schafft neue Möglichkeiten, um Produkte und Dienstleistungen mithilfe von Geschäftsprozessen zu erstellen, bereitzustellen und zu vertreiben. Darauf aufbauend kann ein Wert für Unternehmen und Kunden generiert werden. Dieser Wert kann durch den Einsatz von Technologie multipliziert werden. Das heißt, dass zum Beispiel durch die Verwendung von Informations- und Kommunikationstechnologie eine größere Anzahl an Kunden erreicht werden kann oder Produkte individualisiert angeboten werden können.
+
+Abbildung 29: Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung (Quelle: Leimeister (2021), S.19)
+
+Es gibt viele verschiedene Geschäftsmodelle, die durch den Einsatz von Informationstechnologie ermöglicht wurden. Einige Beispiele dafür sind der klassische Webshop, über welchen Sie direkt Produkte online bestellen können (Bsp.: Amazon.de oder Zalando.de). Es werden Güter direkt an den Kunden oder an einzelne Unternehmen verkauft. Ein weiteres Beispiel für ein technologie-basiertes Geschäftsmodell ist ein Online-Handelsplatz. Dabei handelt es sich um eine online Umgebung für Käufer und Verkäufer, über die Produkte umgesetzt werden können. Im Gegensatz zum Webshop, der von einem Verkäufer betrieben wird, haben hier auch Privatpersonen Zugang zur Plattform, um Produkte anzubieten und zu verkaufen (Bsp.: willhaben.at oder eBay.de). Ein Handelsplatzbetreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung. Interessierte Käufer können nach Produkten suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen. Ein anderes Beispiel für ein digitales Geschäftsmodell ist das Anbieten einer virtuellen Umgebung – einer online Gemeinschaft – auch bekannt als soziales Netzwerk (Bsp.: Facebook, X oder LinkedIn). Personen mit gleichen Interessensschwerpunkten können sich hier austauschen und mit Freunden in Kontakt treten. Geschäftsmodelle dieser Art verdienen ihr Geld unter anderem durch den Verkauf von Werbefläche.
+
+#### Geschäftsmodelle
+
+Die meisten dieser Geschäftsmodelle können als Pure-Play-Geschäftsmodelle bezeichnet werden, weil sie ausschließlich online stattfinden. Die Unternehmen agieren vorrangig im digitalen Raum (z.B. dem Internet) und besitzen keine physischen Geschäftsniederlassungen im Sinne eines Geschäfts, in das ein Kunde gehen kann, um sich ein Produkt physisch anzuschauen. Die meisten dieser Geschäftsmodelle sind durch das Internet erst ermöglicht worden. Alternativ dazu spricht man von Clicks and Mortar Geschäftsmodellen bei denen die digitale Präsenz (z.B. in Form einer Webseite oder Plattform) eine Erweiterung des traditionellen physischen Geschäfts
+
+Ein Beispiel für die Veränderung von Geschäftsmodellen
+
+Die heutige Musikindustrie unterscheidet sich maßgeblich von derjenigen im Jahr 2000. Verschiedene Anbieter haben das Geschäftsmodell mehrmals verändert. Alles, auf Basis des Einsatzes von Informations- und Kommunikationstechnologie. Apple (www.apple.com) hat das alte Geschäftsmodell des Vertriebs von Tonträgern (z.B.: Schallplatten oder CDs) auf Basis des iPods revolutioniert. Konnte man früher nur eine CD mit mehreren Liedern als ganzes Paket erwerben, so hat Apple durch den legalen Onlinevertrieb (iTunes Store) von einzelnen Musikstücken, in Kombination mit innovativen Abspielgeräten, die Art und Weise wie Musik konsumiert wurde, verändert. Spotify (www.spotify.com) hat auf ähnliche Weise erneut die Art und Weise wie Musik konsumiert wird verändert, indem Musikstücke nicht zum Download angeboten wurden, sondern über das Internet gestreamt werden konnten. Das Geschäftsmodell baut nicht mehr auf dem Vertrieb und Erwerb von einzelnen Musikstücken auf, sondern auf einem Abo-Modell über das Millionen von Anwendern Zugang zu nahezu allen verfügbaren Audiotiteln erhalten.
+
+darstellt. Beispiele wären etwa der klassische Buchhändler – wie z.B. Thalia – welcher neben dem physischen Geschäft noch ein Webshop anbietet um seine Produkte online zu verkaufen.
+
+#### Erlösmodelle
+
+Ein wichtiger Aspekt eines Geschäftsmodells ist die Frage wie das Unternehmen Geld verdient, also Einnahmen generiert und einen Gewinn erwirtschaftet – das Erlösmodell. Auch hier hat Technologie einen Einfluss darauf, wie dieses gestaltet werden kann. Es gibt viele verschiedene Erlösmodelle. Unternehmen können sich auf ein Erlösmodell fokussieren oder eine Kombination aus verschiedenen Modellen wählen. Wir wollen in diesem Kontext den Fokus auf zwei beispielhafte Erlösmodelle legen, welche vor allem im Kontext der Digitalisierung von Bedeutung sind: das Werbemodell und das Abonnentenmodell.
+
+Werbemodell 
+Das Werbemodell setzt auf Werbung als Einnahmequelle. Das bedeutet, dass ein Unternehme welches 
+eine Webseite betreibt und zahlreiche Besucher vorweisen kann, durch Anzeige von Werbung auf 
+dieser Website Einnahmen generiert. Unter einer Website verstehen wir alle möglichen Ausprägungen 
+wie Nachrichten, Webshops, soziale Netzwerke oder andere Plattformen über die Dienstleistungen 
+oder Produkte zur Verfügung gestellt werden. Das Werbemodell ist eines der beliebtesten 
+Erlösmodelle. Viele Dienstleistungen und Produkte, die wir heute verwenden und sich „kostenlos“ 
+anfühlen (Beispiel: Google Suche, willhaben oder geizhals), setzen seit den ersten Schritten im Internet 
+auf das Werbemodell. Unser Online-Erlebnis wie wir es heute kennen ist maßgeblich durch dieses 
+Erlösmodell geprägt und könnte vielleicht ganz anders aussehen, hätte sich ein anderes Erlösmodell 
+durchgesetzt. 
+Werbung kann in verschiedenen Ausprägungen vorkommen – analog und digital – wir konzentrieren 
+uns auf den digitalen Raum. Online bieten sich je nach Geschäftsfeld unterschiedliche Möglichkeiten 
+Werbetreibenden einen Werbeplatz anzubieten. Eine online Suchmaschine wie Google kann unter 
+anderem durch den Verkauf von Schlüsselwörtern bei der Suche (AdWords) oder den Verkauf von 
+Werbeanzeigen bei bestimmten Suchwörtern (AdSense) Werbeplätze anbieten. Ein Vergleichsportal 
+wie geizhals.at, welches von zahlreichen Besuchern frequentiert wird, kann durch klassische 
+Bannerwerbung einen Werbeplatz anbieten und diese Bannerwerbung auch mit bestimmten 
+Suchbegriffen kombinieren. Anbieter von Tageszeitungen verwenden unter anderem das 
+Werbemodell, um Kosten für den Betrieb und zur Verfügungstellung der Online-Inhalte zu decken. 
+Abbildung 30 zeigt eine Übersicht der möglichen Ausprägungen und Optionen für Werbemöglichkeiten 
+auf der Startseite von derstandard.at. 
+
+Abbildung 30: Beispiele für verschiedene Werbeformen auf derstandard.at (Quelle: Der Standard 1)
+
+Der Online-Werbemarkt ist prinzipiell ein stark vertretenes Werbemodell. Dies zeigt sich vor allem bei einem Blick auf die Quartalsumsätze von Alphabet (Mutterkonzern von Google und anderen Google Unternehmungen). So stammen von insgesamt 86,3 Milliarden Dollar Quartalsumsatz im Jahr 2023, 65,5 Milliarden Dollar aus Werbung. Dies ist ein Anteil von 75 Prozent.
+
+Abonnentenmodell Das Abonnentenmodell erhebt eine laufende Gebühr für den Zugriff auf einen Teil oder alle Angebote, die ein Unternehmen zur Verfügung stellt. Klassische Beispiele dafür sind Anbieter von Inhalten wie Netflix (netflix.com) oder Spotify (spotify.com). Durch die Registrierung eines Abonnements erhalten Kunden vollumfänglichen Zugang zu allen Inhalten der Plattform. Dieses Modell ist mittlerweile verstärkt im Einsatz und wurde von vielen Unternehmen, die zuvor ein anderes Erlösmodell eingesetzt haben, adaptiert. Früher war es zum Beispiel noch möglich bei einer Mehrzahl von Zeitungen Inhalte online ohne Einschränkungen mit Werbung zu konsumieren. Mittlerweile hat sich das Angebot diversifiziert und Inhaltsanbieter, wie Zeitungen, setzen auf das Abonnentenmodell oder eine Kombination von Werbe- und Abonnentenmodell, wie in der folgenden Abbildung 31 zu sehen ist.
+
+1 Online erfolgreich werben: https://sales.derstandard.at/werbung/online-erfolgreich-werben/, zuletzt aufgerufen am 26. Nov. 2024.
+
+Abbildung 31: Beispiel für Kombination von Werbe- und Abonnentenmodell (Quelle: Die Zeit 2)
+
+Ein weiteres Beispiel, welches diesen Wandel an Erlösmodellen durch die Digitalisierung verdeutlicht ist das Angebot des Unternehmens Adobe mit seinem breiten Portfolio an Software für Kreativschaffende. Das Unternehmen bietet in den Bereichen der Bildbearbeitung, Fotografie, Film oder Grafik und Illustration Softwarelösungen an. Im Jahr 2013 hat Adobe vom klassischen Umsatzmodell auf ein Abonnentenmodell gewechselt. 3 War es zuvor noch möglich einzelne Software Pakete wie zum Beispiel Adobe Photoshop durch Bezahlung eines einmaligen Betrags lebenslang zu erwerben, so muss man mittlerweile eine monatliche oder jährliche Gebühr zahlen, um diese Produkte nutzen zu können. Abbildung 32: Abo Modelle des Unternehmens Adobe (Quelle: Adobe) 4
+
+2 Die Zeit: https://www.zeit.de/, zuletzt aufgerufen am 28.11.2024. 
+3 10 Fragen, die mir immer wieder zur Creative Cloud gestellt werden: https://www.svenbrencher.de/10-fragen-die-mir-immer-wieder-zur 
+creative-cloud-gestellt-werden/, zuletzt aufgerufen am 28.11.2024. 
+4 Abos und Preise für die Desktop-Programme, Mobile Apps und Services von Creative Cloud: 
+https://www.adobe.com/at/creativecloud/plans.html, zuletzt aufgerufen am 28.11.2024. 
+
+Wie anfangs erwähnt sehen wir also anhand dieser Beispiele wie durch die Digitalisierung nicht nur ein Wandel von analog zu digital stattfindet, sondern gesamte Branchen mit ihren Produkten, Dienstleistungen und dahinterstehenden Geschäftsmodellen digital transformiert werden.

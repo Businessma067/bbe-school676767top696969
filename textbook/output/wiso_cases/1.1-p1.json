@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.01",
+    "title": "Privater Haushalt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema privater Haushalt:",
+    "statements": [
+      "Eine Person, die allein in einer Wohnung lebt, zählt als privater Haushalt.",
+      "Nur Familien mit Kindern gelten als private Haushalte.",
+      "Mehrere Studierende, die in einer Wohngemeinschaft zusammenleben, bilden einen privaten Haushalt.",
+      "Jeder private Haushalt hat jeden Tag eine Vielzahl von Bedürfnissen.",
+      "Wer allein wohnt, ist kein Teil der Wirtschaft, weil ein Haushalt mindestens zwei Personen braucht."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Alleinwohnen ändert den Status nicht. Das Lehrbuch zählt eine Person, die allein in einer Wohnung oder in einem Haus lebt, ausdrücklich als privaten Haushalt, genau so wie eine Familie oder eine Wohngemeinschaft. Entscheidend ist die wirtschaftliche Einheit, in der täglich Bedürfnisse auftreten, nicht die Zahl der Mitbewohnerinnen und Mitbewohner. Auch wer allein frühstückt, heizt und zur Arbeit fährt, bleibt damit Teil der Wirtschaft.\n\nDie Aussage ist wahr.",
+      "Kinder sind keine Eintrittskarte in den Haushaltsbegriff. Eine vierköpfige Familie gilt als privater Haushalt, aber ebenso eine allein lebende Person und Studierende in einer Wohngemeinschaft. Die gemeinsame Klammer ist das tägliche Bündel an Bedürfnissen, nicht ein bestimmtes Verwandtschaftsverhältnis. Die Einschränkung auf Familien mit Kindern ist daher zu eng und falsch.\n\nDie Aussage ist falsch.",
+      "Mehrere Studierende unter einem Dach bilden keine Ausnahme vom Haushaltsbegriff. Leben sie in einer Wohngemeinschaft zusammen, gelten sie als ein privater Haushalt, analog zur Familie im Haus und zur allein lebenden Person. Geteilte Miete, Küche und Alltag machen sie zu einer Einheit mit gemeinsamen und individuellen Bedürfnissen nach Nahrung, Wärme, Bildung und Mobilität. Genau diese Einheit meint das Buch mit privatem Haushalt.\n\nDie Aussage ist wahr.",
+      "Nahrung, Wohnung, Wärme, Sicherheit, Schlaf, Körperpflege, Bildung und Mobilität stehen nur als Beispiele. Das Buch hält fest, dass jeder private Haushalt, unabhängig von seiner Zusammensetzung, jeden Tag eine Vielzahl solcher Bedürfnisse hat. Manche davon lassen sich ohne Kauf stillen, viele aber über Produkte und Dienstleistungen. Die tägliche Vielfalt der Bedürfnisse ist also die gemeinsame Ausgangslage aller Haushalte, nicht ein Sonderfall großer Familien.\n\nDie Aussage ist wahr.",
+      "Wirtschaft beginnt nicht erst bei einer Paarbeziehung oder bei der Gründung einer Firma. Jeder Mensch ist Teil eines privaten Haushalts, egal ob allein, in Partnerschaft, Familie oder Wohngemeinschaft. Der allein lebende Mensch hat dieselben grundlegenden Bedürfnislagen wie andere Haushalte: Nahrung, Wohnung, Wärme, Sicherheit, Körperpflege, Bildung, Mobilität. Viele dieser Bedürfnisse erfüllt er über Produkte und Dienstleistungen, die er nicht selbst erstellt, sondern bei Unternehmen nachfragt. Die Mindestgröße von zwei Personen steht so nicht im Buch; sie würde Alleinlebende künstlich aus der Wirtschaft herausdefinieren, obwohl sie täglich Güter brauchen oder sich wünschen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.02",
+    "title": "Güter als Produkte und Dienstleistungen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Güter:",
+    "statements": [
+      "Produkte wie Brot oder ein Fahrrad und Dienstleistungen wie ein Haarschnitt heißen gemeinsam Güter.",
+      "Güter sind ausschließlich körperliche Produkte; Dienstleistungen zählen nicht dazu.",
+      "Die Behandlung durch eine Ärztin und die Beratung durch eine Bankmitarbeiterin sind Dienstleistungen, die Bedürfnisse erfüllen können.",
+      "Jedes Bedürfnis braucht zwingend ein Produkt oder eine Dienstleistung, sonst bleibt es unerfüllt.",
+      "Güter werden produziert und angeboten sowie nachgefragt und gekauft, damit Bedürfnisse der Menschen erfüllt werden können."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Brot, Gebäck, Seife, Zahnbürste, Auto, Treibstoff und Energie nennt das Buch als Produkte; Haarschnitt, ärztliche Behandlung, Bankberatung oder eine Trainerstunde als Dienstleistungen. Beide Gruppen werden ausdrücklich auch Güter genannt. Der Sammelbegriff deckt also nicht nur greifbare Dinge ab, sondern auch Leistungen, die jemand für andere erbringt. Wer nur die Ware sieht, unterschlägt die Hälfte dessen, was Haushalte täglich nachfragen.\n\nDie Aussage ist wahr.",
+      "Ausschließlich körperliche Dinge als Güter zu führen, widerspricht der Definition im Abschnitt. Produkte und Dienstleistungen werden gemeinsam Güter genannt, weil beide Bedürfnisse erfüllen können: das Fahrrad ebenso wie die Reparatur, das Brot ebenso wie der Arztbesuch. Dienstleistungen aus dem Güterbegriff zu streichen, würde die Nachfrage nach Behandlung, Beratung, Schnitt und Training unsichtbar machen. Genau diese Leistungen erstellt die Wirtschaft aber neben den Produkten.\n\nDie Aussage ist falsch.",
+      "Bankberatung und ärztliche Behandlung stehen im Buch als Dienstleistungen, die notwendig oder zumindest hilfreich sind, wenn Bedürfnisse nach Gesundheit oder finanzieller Orientierung erfüllt werden sollen. Sie sind keine körperlichen Produkte wie Brot, Seife oder ein Fahrrad, zählen aber zu den Gütern, weil Haushalte sie nachfragen und Praxen bzw. Banken sie anbieten. Der Nutzen entsteht im Vollzug der Leistung, nicht erst durch den Besitz eines Gegenstands. Wer nur greifbare Waren als Güter gelten lässt, streicht genau diese Alltagsleistungen aus der Wirtschaft, obwohl das Buch sie mit Produkten in einem Begriff zusammenfasst.\n\nDie Aussage ist wahr.",
+      "Schlaf, Nähe oder ein Gespräch können Bedürfnisse stillen, ohne dass jemand ein Produkt kauft oder eine Dienstleistung bucht. Das Buch sagt klar: Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung, auch wenn das für viele Bedürfnisse zutrifft. Nahrung, Pflege, Mobilität oder medizinische Hilfe laufen oft über Güter, andere Bedürfnisse aber nicht. Die absolute Behauptung, jedes Bedürfnis sei nur über den Markt erfüllbar, überzieht die Buchaussage.\n\nDie Aussage ist falsch.",
+      "Angebot und Nachfrage gehören zusammen. Güter werden einerseits produziert und angeboten, andererseits nachgefragt und gekauft, damit zahlreiche Bedürfnisse erfüllt werden können. Ohne Erstellung gäbe es nichts zu kaufen; ohne Nachfrage der Haushalte und anderer Unternehmen gäbe es keinen Anlass, Fahrräder, Reparaturen oder Gebäck in der bekannten Form bereitzustellen. Dieses Wechselspiel ist ein erstes wesentliches Merkmal der Wirtschaft.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.03",
+    "title": "Haushalte und Fremdproduktion",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wer Güter erstellt:",
+    "statements": [
+      "Private Haushalte können alle Güter, die sie brauchen und sich wünschen, selbst in der nötigen Qualität und Zeit herstellen.",
+      "In den meisten Fällen fehlen den Menschen die nötigen Fähigkeiten und Fertigkeiten sowie die notwendigen Produktionsbedingungen und Produktionsmittel.",
+      "Die Erstellung vieler Produkte und Dienstleistungen übernehmen daher sehr häufig Unternehmen.",
+      "Nur Unternehmen haben Bedürfnisse; private Haushalte fragen niemals Güter nach.",
+      "Ein erstes wesentliches Merkmal der Wirtschaft ist, dass es Produkte wie Fahrräder und Dienstleistungen wie Reparaturen gibt."
+    ],
+    "answer_key": [false, true, true, false, true],
+    "tactical_explanations": [
+      "Eigenbrot am Sonntag widerlegt nicht die Grundlinie. Menschen könnten die Güter, die sie brauchen und sich wünschen, nicht alle selbst in der notwendigen Qualität und in der verfügbaren Zeit produzieren. Das wäre zu schwierig oder unmöglich, weil Fähigkeiten, Fertigkeiten, Produktionsbedingungen und Produktionsmittel in den meisten Fällen fehlen. Die absolute Behauptung, Haushalte deckten den gesamten Bedarf selbst, verkennt genau diese Grenze und die Rolle der Unternehmen.\n\nDie Aussage ist falsch.",
+      "Fertigkeiten reichen im Alltag selten für alles. Wer ein Auto, Strom, eine Zahnbürste oder eine Bankberatung in brauchbarer Form haben will, braucht Maschinen, Wissen, Räume und Vorleistungen, die ein einzelner Haushalt typischerweise nicht bündelt. Das Buch nennt fehlende Fähigkeiten und Fertigkeiten sowie fehlende Produktionsbedingungen und Produktionsmittel als Grund, warum Selbstversorgung an Qualität und verfügbarer Zeit scheitert. Deshalb ist es zu schwierig oder unmöglich, alle Güter selbst zu erstellen. Daraus folgt, dass Unternehmen diese Aufgaben sehr häufig übernehmen, nicht die Behauptung, jeder Haushalt könne den gesamten Bedarf allein decken.\n\nDie Aussage ist wahr.",
+      "Unternehmen springen in diese Lücke. Bauunternehmen, Tischlereien, Bäckereien, Boutiquen oder Rundfunkunternehmen produzieren für andere und erstellen Leistungen, die Haushalte und andere Betriebe brauchen oder sich wünschen. Weil Selbstherstellung oft unmöglich oder zu schwierig ist, werden diese Aufgaben sehr häufig von Unternehmen übernommen. Der Haushalt bleibt Nachfrager, das Unternehmen Anbieter; beide gehören zur Wirtschaft.\n\nDie Aussage ist wahr.",
+      "Nachfrageseite auszublenden, verdreht das Bild. Jeder private Haushalt hat täglich Bedürfnisse nach Nahrung, Wohnung, Wärme, Bildung oder Mobilität und fragt dafür oft Güter nach. Unternehmen erkennen gerade diese Bedürfnisse und bieten an, was Haushalte oder andere Unternehmen brauchen. Bedürfnisse sitzen also auf beiden Seiten: im Haushalt als Ausgangspunkt, im Unternehmen als Anlass, Vorleistungen zu beziehen und für Kundinnen und Kunden Wert zu schaffen.\n\nDie Aussage ist falsch.",
+      "Fahrrad und Reparatur stehen als Paar. Es ist ein erstes wesentliches Merkmal der Wirtschaft, dass es Produkte wie Fahrräder und Dienstleistungen wie Reparaturen gibt. Beide heißen Güter, beide werden produziert bzw. erstellt und angeboten, beide werden nachgefragt und gekauft, damit Bedürfnisse erfüllt werden. Wer nur die Ware oder nur die Leistung gelten lässt, verfehlt dieses Merkmal.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.04",
+    "title": "Unternehmen und Kundenbedürfnisse",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle von Unternehmen:",
+    "statements": [
+      "Unternehmen wie eine Bäckerei, eine Tischlerei oder ein Bauunternehmen produzieren für andere und erstellen Leistungen.",
+      "Unternehmen erkennen ausschließlich Bedürfnisse privater Haushalte und niemals die anderer Unternehmen.",
+      "Indem sie anbieten, was Kundinnen und Kunden brauchen oder sich wünschen, schaffen Unternehmen Wert und Nutzen.",
+      "Private Haushalte kaufen keine Güter, weil nur Unternehmen miteinander handeln dürfen.",
+      "Auch eine Boutique oder ein Rundfunkunternehmen gehören zu den Betrieben, die für andere produzieren."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Bäckerei, Tischlerei und Bauunternehmen stehen im Buch als Beispiele für Betriebe, die nicht primär für den eigenen Kühlschrank produzieren, sondern für andere. Sie erstellen Produkte und Leistungen, die private Haushalte oder andere Unternehmen nachfragen. Genau darin liegt der Unterschied zum Haushalt, der viele Güter nicht selbst herstellt. Für-andere-produzieren ist die kurze Antwort auf die Frage, was Unternehmen sind.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Haushalte als Adressaten zu nennen, kürzt den Satz unzulässig. Unternehmen erkennen die Bedürfnisse von privaten Haushalten und/oder anderen Unternehmen und bieten an, was diese brauchen oder sich wünschen. Mehl für die Bäckerei, Bauteile für die Tischlerei oder Sendungen für ein Rundfunkunternehmen sind solche betrieblichen Bedarfe. Wer die zweite Adressatengruppe streicht, versteht Kundenorientierung nur zur Hälfte.\n\nDie Aussage ist falsch.",
+      "Wert entsteht nicht aus Produktion um ihrer selbst willen. Wenn ein Unternehmen Bedürfnisse erkennt und darauf mit einem Angebot reagiert, schafft es Wert und Nutzen für Kundinnen und Kunden. Das kann ein Problem lösen, eine Lücke schließen, Arbeit erleichtern oder das Leben angenehmer machen. Ohne diesen Bezug zur Bedarfslage der Gegenseite bleibt die Leistung ein Aufwand ohne den im Buch beschriebenen Mehrwert.\n\nDie Aussage ist wahr.",
+      "Haushalte stehen auf der Nachfrageseite. Güter werden nachgefragt und gekauft, damit Bedürfnisse erfüllt werden können; Brot, Energie, ein Arztbesuch oder eine Trainerstunde sind alltägliche Beispiele. Ein Verbot, dass nur Unternehmen miteinander handeln dürften, kommt im Abschnitt nicht vor. Es würde den privaten Haushalt aus der Wirtschaft herausnehmen, obwohl jeder Mensch Teil eines solchen Haushalts ist und täglich Bedürfnisse hat, die oft über Produkte und Dienstleistungen erfüllt werden. Kauf und Nachfrage der Haushalte gehören zum ersten Merkmal der Wirtschaft, nicht zu einem Sonderrecht der Firmen untereinander.\n\nDie Aussage ist falsch.",
+      "Die Liste der Beispiele ist offen. Neben Bau, Tischlerei und Bäckerei nennt das Buch ausdrücklich eine Boutique und ein Rundfunkunternehmen sowie viele, viele mehr. Alle produzieren für andere und erstellen Leistungen. Die Rechtsform oder die Branche ändert an dieser Grundrolle nichts: Wer Bedürfnisse erkennt und Güter anbietet, handelt als Unternehmen im Sinne des Abschnitts.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.05",
+    "title": "Bäckerei am Morgen",
+    "context": "Eine Wiener Bäckerei verkauft Gebäck an Haushalte und bezieht Mehl von einer Mühle. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Gebäck ist ein Produkt, ein späterer Haarschnitt beim Friseur eine Dienstleistung; beides sind Güter.",
+      "Das Bedürfnis nach Schlaf lässt sich nur erfüllen, wenn der Haushalt ein Schlafprodukt kauft.",
+      "Die Bäckerei als Unternehmen kann selbst Bedürfnisse haben, etwa nach Mehl eines anderen Unternehmens.",
+      "Der Kauf von Brot erfüllt ein Bedürfnis nach Nahrung, indem das Gut nachgefragt und gekauft wird.",
+      "Weil die Bäckerei ein Unternehmen ist, hat sie keine eigenen Bedürfnisse."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Gebäck liegt auf der Produktseite, der Haarschnitt auf der Dienstleistungsseite. Das Buch führt Brot und Gebäck sowie den Haarschnitt als typische Beispiele und fasst beide unter Güter. Am Morgen kauft der Haushalt das eine, später vielleicht das andere; wirtschaftlich gehören beide in denselben Vorgang aus Angebot und Nachfrage. Die Unterscheidung Produkt gegen Dienstleistung bleibt sinnvoll, der Oberbegriff Güter gilt für beide.\n\nDie Aussage ist wahr.",
+      "Schlaf braucht kein Ticket vom Markt. Das Buch zählt Schlaf zu den täglichen Bedürfnissen und betont zugleich, dass nicht jedes Bedürfnis zur Erfüllung ein Produkt oder eine Dienstleistung braucht. Ein Kissen kann helfen, zwingend ist der Kauf aber nicht. Die Behauptung, Schlaf existiere nur über ein Schlafprodukt, macht aus einer möglichen Hilfe eine falsche Notwendigkeit.\n\nDie Aussage ist falsch.",
+      "Mehl verbindet zwei Unternehmen. Die Bäckerei erkennt nicht nur das Bedürfnis nach Nahrung in privaten Haushalten, sie braucht selbst Vorleistungen: Mehl, Energie, Räume, Geräte. Das Buch sagt ausdrücklich, Unternehmen erkennen die Bedürfnisse von privaten Haushalten und/oder anderen Unternehmen und bieten an, was diese brauchen oder sich wünschen. Die Mühle erstellt also ein Gut für die Bäckerei, die Bäckerei erstellt Gebäck für Haushalte. Wert und Nutzen entstehen auf beiden Stufen, nicht nur an der Ladentheke. Wer der Bäckerei eigene Bedürfnisse abspricht, weil sie ein Unternehmen ist, durchtrennt genau diese Kette.\n\nDie Aussage ist wahr.",
+      "Nahrung ist eines der genannten Haushaltsbedürfnisse, Brot und Gebäck eines der genannten Produkte. Der Weg zur Erfüllung läuft hier über Produktion und Angebot der Bäckerei sowie über Nachfrage und Kauf des Haushalts. Genau dieses Muster beschreibt das Buch als Merkmal der Wirtschaft: Güter werden erstellt, damit zahlreiche Bedürfnisse erfüllt werden können. Der Brötchenkauf am Morgen ist dafür der schlichte Alltagsfall.\n\nDie Aussage ist wahr.",
+      "Unternehmensstatus löscht keine Bedarfe. Eine Bäckerei ohne Mehl, Energie oder funktionierende Öfen kann nichts anbieten. Bedürfnisse anderer Unternehmen sind im Buch ausdrücklich vorgesehen; die Bäckerei steht auf beiden Seiten, als Anbieterin gegenüber Haushalten und als Nachfragerin gegenüber der Mühle. Die Formel, nur Haushalte hätten Bedürfnisse, Unternehmen aber nicht, hält der Beschreibung nicht stand.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.06",
+    "title": "Kindgerechte Fahrräder",
+    "context": "Eltern suchen ein kindertaugliches Fahrrad; ein Unternehmen entwickelt Räder, die zur Anatomie von Kindern passen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eltern können das Bedürfnis haben, für ihre Kinder geeignete Fahrräder anzuschaffen, und Unternehmen können mit einem Angebot darauf reagieren.",
+      "Ein erfolgreiches Unternehmen braucht keine durchdachte Idee für Produkt oder Dienstleistung, solange irgendetwas hergestellt wird.",
+      "Eine gut durchdachte Idee erfüllt ein Bedürfnis, löst ein Problem oder schließt eine Lücke und stiftet so Mehrwert und Nutzen.",
+      "Nur Aktiengesellschaften dürfen sich an Kundenbedürfnissen orientieren; eine GmbH darf das nicht.",
+      "Die Gründungsidee eines Unternehmens kann aus einem Bedürfnis im eigenen privaten Haushalt der Gründerinnen und Gründer entstehen."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Eltern, die gerne Rad fahren, können das Bedürfnis haben, auch für ihre Kinder gut geeignete Räder anzuschaffen. Genau dieses Bedürfnis nach einem kindertauglichen Fahrrad können Unternehmen erkennen und mit ihrem Angebot beantworten, etwa indem Komponenten auf die Anatomie von Kindern abgestimmt werden. Das Buch schildert das als Normalfall von Kundenorientierung: der private Haushalt hat ein Bedürfnis, das Unternehmen produziert und bietet dafür. Kindgerechte Geometrie ist dann kein Extra zur Ware, sondern die Antwort auf die erkannte Bedarfslage. So entsteht der beschriebene Nutzen für Kundinnen und Kunden, hier für Kinder und Eltern zugleich.\n\nDie Aussage ist wahr.",
+      "Irgendetwas herstellen genügt nicht. Ein erfolgreiches Unternehmen basiert auf einer gut durchdachten Idee für ein Produkt oder eine Dienstleistung, die ein Bedürfnis erfüllt und so Mehrwert und Nutzen für die Kundinnen und Kunden hat. Produktion ohne diesen Bezug bleibt Beschäftigung; sie schafft nicht den im Buch beschriebenen Wert. Die durchdachte Idee ist die Brücke zwischen Haushaltsbedarf und Angebot, nicht ein schmückendes Beiwerk.\n\nDie Aussage ist falsch.",
+      "Mehrwert hat im Abschnitt eine klare Quelle. Die Idee soll ein Bedürfnis erfüllen und dabei ein Problem lösen, eine Lücke schließen, die Arbeit erleichtern oder das Leben angenehmer machen. Daraus entsteht Nutzen für Kundinnen und Kunden. Kindgerechte Räder, die Anatomie und Sicherheit ernst nehmen, sind genau so eine Lückenschließung gegenüber Rädern, die nur verkleinerte Erwachsenenmodelle wären.\n\nDie Aussage ist wahr.",
+      "Kundenorientierung hängt nicht an der Aktie. Das Buch nennt als Beispiel ausdrücklich eine GmbH, die kindertaugliche Fahrräder anbietet, und zählt daneben Bäckerei, Boutique oder Rundfunkunternehmen auf, ohne eine Rechtsform zur Bedingung zu machen. Wer Bedürfnisse erkennt und Güter anbietet, handelt als Unternehmen. Die Behauptung, nur Aktiengesellschaften dürften sich an Kundinnen und Kunden ausrichten, steht so nicht im Text und ist falsch.\n\nDie Aussage ist falsch.",
+      "Suche im eigenen Haushalt kann der Start sein. Die Gründung im Buchbeispiel beruht auf der Suche nach dem passenden Rad für die eigenen Kinder: ein Bedürfnis im privaten Haushalt der Gründerinnen und Gründer wird zur Unternehmens- und Produktidee. Das ändert nichts daran, dass später viele andere Haushalte dasselbe Bedürfnis haben können. Die Herkunft aus dem eigenen Alltag erklärt, warum die Idee am Bedarf ansetzt, statt an einer Ware ohne Adressaten.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.07",
+    "title": "Mehrwert durch Unternehmensideen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Bedürfnissen, Gütern und erfolgreichen Unternehmen:",
+    "statements": [
+      "Menschen könnten alle Güter, die sie sich wünschen, selbst herstellen, weil Qualität und verfügbare Zeit dabei keine Rolle spielen.",
+      "Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung.",
+      "Unternehmen schaffen automatisch Wert und Nutzen, auch wenn ihr Angebot kein Bedürfnis erfüllt.",
+      "Ein erfolgreiches Unternehmen basiert auf einer gut durchdachten Idee für ein Produkt oder eine Dienstleistung, die ein Bedürfnis erfüllt.",
+      "Unternehmen können sich an den Bedürfnissen anderer Unternehmen orientieren, nicht nur an denen privater Haushalte."
+    ],
+    "answer_key": [false, true, false, true, true],
+    "tactical_explanations": [
+      "Qualität und Zeit sind gerade die Hürden. Das Buch sagt, Menschen könnten die Güter, die sie brauchen und sich wünschen, nicht alle selbst in der notwendigen Qualität und in der zur Verfügung stehenden Zeit produzieren; das wäre zu schwierig oder unmöglich. Fähigkeiten, Fertigkeiten, Produktionsbedingungen und Produktionsmittel fehlen in den meisten Fällen. Ein Haushalt kann vielleicht Brot backen, aber nicht zugleich Auto, Stromnetz, ärztliche Behandlung und Bankberatung in brauchbarer Form erstellen. Wer behauptet, Wünsche ließen sich ohne diese Grenzen selbst bedienen, streicht die Begründung, warum Unternehmen die Erstellung sehr häufig übernehmen.\n\nDie Aussage ist falsch.",
+      "Bedürfnis und Gut fallen nicht zusammen. Schlaf, Sicherheit im engsten Kreis oder ein Gespräch können erfüllt sein, ohne dass jemand Brot, Seife, ein Auto oder eine Trainerstunde kauft. Das Buch hält die Unterscheidung fest: Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung, aber für viele ist das zutreffend. Die Wirtschaft kommt dort ins Spiel, wo Güter helfen; sie definiert nicht jedes menschliche Bedürfnis um in einen Kaufzwang.\n\nDie Aussage ist wahr.",
+      "Automatischer Wert ohne Bedarf ist kein Buchbegriff. Wert und Nutzen entstehen, weil Unternehmen Bedürfnisse erkennen und anbieten, was Kundinnen und Kunden brauchen oder sich wünschen. Erfolg hängt an einer Idee, die ein Bedürfnis erfüllt und ein Problem löst oder eine Lücke schließt. Ein Angebot, das niemanden trifft, beschäftigt Maschinen, stiftet aber nicht den beschriebenen Mehrwert. Die Kopplung an das Bedürfnis ist die Bedingung, nicht ein optionales Etikett.\n\nDie Aussage ist falsch.",
+      "Erfolg hat im Abschnitt eine inhaltliche Basis, keine bloße Größenordnung. Die gut durchdachte Idee betrifft ein Produkt oder eine Dienstleistung, die ein Bedürfnis erfüllt und so Mehrwert und Nutzen für Kundinnen und Kunden hat. Kindgerechte Fahrräder, die Anatomie ernst nehmen, sind das ausgeführte Beispiel; dasselbe Muster gilt für Bäckerei, Beratung oder Reparatur. Ohne erfülltes Bedürfnis bleibt die Idee ein Plan ohne den im Text genannten Nutzen.\n\nDie Aussage ist wahr.",
+      "Andere Unternehmen sind ausdrücklich Kundschaft. Bedürfnisse von privaten Haushalten und/oder anderen Unternehmen sollen erkannt werden; angeboten wird, was diese brauchen oder sich wünschen. Zulieferung von Mehl, Bauteilen oder spezialisierten Komponenten folgt derselben Logik wie der Verkauf an Familien. Wer nur Endverbraucherinnen und Endverbraucher gelten lässt, unterschlägt einen der beiden Adressaten, die das Buch nennt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.08",
+    "title": "Jeder Mensch als Wirtschaftsteil",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wer Teil der Wirtschaft ist:",
+    "statements": [
+      "Teil der Wirtschaft ist man erst, wenn man ein Unternehmen gründet.",
+      "Eine vierköpfige Familie und eine allein lebende Person gelten beide als privater Haushalt.",
+      "Wer im eigenen Haushalt Brot backt, scheidet aus der Wirtschaft aus, weil dann keine Güter mehr nachgefragt werden.",
+      "Güter werden produziert und angeboten sowie nachgefragt und gekauft, damit zahlreiche Bedürfnisse erfüllt werden können.",
+      "Dienstleistungen wie eine Trainerstunde zählen nicht zu den Gütern, weil nur Waren Güter sind."
+    ],
+    "answer_key": [false, true, false, true, false],
+    "tactical_explanations": [
+      "Gründung ist kein Eintrittstor. Jeder Mensch ist Teil eines privaten Haushalts und damit Teil der Wirtschaft, egal ob allein, in Partnerschaft, Familie oder Wohngemeinschaft. Bedürfnisse nach Nahrung, Wohnung, Wärme, Bildung oder Mobilität entstehen im Haushalt, lange bevor jemand eine Bäckerei oder eine GmbH anmeldet. Unternehmen erstellen viele der Güter, die Haushalte nicht selbst herstellen; sie ersetzen den Haushalt aber nicht als wirtschaftlichen Akteur. Die Behauptung, erst die Firma mache den Menschen zum Wirtschaftsteil, kehrt das Buch um.\n\nDie Aussage ist falsch.",
+      "Familiengröße entscheidet nicht über den Status. Das Buch stellt die vierköpfige Familie in Wohnung oder Haus und die allein lebende Person bewusst nebeneinander; beide gelten als privater Haushalt. Gemeinsam ist ihnen die tägliche Vielzahl von Bedürfnissen, nicht die Kopfzahl. Wer die allein lebende Person aus dem Begriff streicht, verengt ihn gegen den Wortlaut.\n\nDie Aussage ist wahr.",
+      "Eigenes Brot beendet weder den Haushalt noch die Wirtschaft. Selbstherstellung ist möglich, aber das Buch betont, dass Menschen nicht alle Güter in der nötigen Qualität und Zeit selbst produzieren können. Energie, Zahnbürste, Mobilität, ärztliche Behandlung oder ein Haarschnitt bleiben typische Nachfragen, auch wenn am Sonntag gebacken wird. Außerdem hat nicht jedes Bedürfnis einen Kauf zur Voraussetzung; der Haushalt bleibt dennoch Teil der Wirtschaft. Ausstieg durch ein einziges selbst erstelltes Produkt gibt es im Abschnitt nicht.\n\nDie Aussage ist falsch.",
+      "Produktion und Kauf bilden ein Paar. Produkte und Dienstleistungen, also Güter, werden einerseits erstellt und angeboten, andererseits nachgefragt und gekauft, damit die zahlreichen Bedürfnisse der Menschen erfüllt werden können. Ohne dieses Wechselspiel wären eingerichtete Wohnungen, Nahrungsmittel, Energie oder Reparaturen in der bekannten Form undenkbar. Der Satz fasst genau das erste wesentliche Merkmal, das der Abschnitt zur Wirtschaft nennt.\n\nDie Aussage ist wahr.",
+      "Warenmonopol über den Güterbegriff ist falsch. Trainerstunde, Haarschnitt, ärztliche Behandlung und Bankberatung stehen als Dienstleistungen im Text und werden mit Produkten gemeinsam Güter genannt. Nur körperliche Waren gelten zu lassen, würde die Leistungsseite streichen, obwohl Haushalte sie täglich nachfragen und Unternehmen sie erstellen. Der Oberbegriff Güter ist bewusst weiter als Ware.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  }
+]

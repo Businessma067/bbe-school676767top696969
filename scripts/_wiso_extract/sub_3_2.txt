@@ -1,0 +1,202 @@
+#### 3.2 Rechtsformen von Unternehmen
+
+Wer mit Unternehmen Geschäfte macht, soll auch Klarheit darüber haben, wer das Unternehmen leitet, wer die Geschäfte führt, wer für das Unternehmen Verträge abschließen darf, wer Kapital eingebracht hat und wer für die Schulden des Unternehmens haftet. Daher gibt es dafür gesetzliche Regelungen. Die Rechtsform ist für die alle angeführten Fragen bedeutsam. Viele dieser Informationen sind für an dem Unternehmen Interessierte aus dem Firmenbuch ersichtlich, jedoch nur im Hinblick auf Unternehmen, die ins Firmenbuch eingetragen sind (siehe dazu weiter unten). Aus der oben angeführten Aufzählung der größten Unternehmen Österreichs gehen bereits zwei Rechtsformen hervor, die vor allem bei großen Unternehmen häufig gewählt werden, weil sie einen großen Kapitalbedarf haben. Viele Großunternehmen sind als Aktiengesellschaft (AG) oder als Gesellschaft mit beschränkter Haftung (GmbH) organisiert. Die meisten Unternehmen in Österreich sind allerdings KMU, von denen der Großteil Einzelunternehmen sind. Die nachstehende Abbildung gibt einen ersten Überblick über wesentliche Rechtsformen von Unternehmen.
+
+Abbildung 18: Überblick über wesentliche Rechtsformen von Unternehmen in Österreich
+
+Die für ein Unternehmen geeignete Rechtsform ist insgesamt von mehreren Faktoren abhängig: einerseits von der Frage, wer das Unternehmen gründet und wer es leiten will oder soll, andererseits von der Frage, wie das notwendige Kapital für das Unternehmen aufgebracht werden soll und wer in welchem Umfang für die Schulden des Unternehmens haftet. Für eine Person, die in kleinem Rahmen mit ihrem Ersparten ein Unternehmen aufbaut, wird eine andere Rechtsform geeignet sein als für einen großen Industriebetrieb, der umfangreiche Produktionskapazitäten aufbauen und finanzieren muss.
+
+#### Das Einzelunternehmen
+
+Ein Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person das Unternehmen führt, die 
+Entscheidungen trifft und das unternehmerische Risiko trägt. Ein Einzelunternehmer oder eine 
+Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden seines Unternehmens, d.h. die 
+Haftung besteht nicht nur mit dem betrieblichen Vermögen, sondern auch mit dem Privatvermögen. 
+Viele Kleinunternehmen sind als Einzelunternehmen organisiert, weil sie relativ einfach und ohne 
+Mindestkapitalerfordernisse gegründet werden können. Das Kapital, das benötigt wird, muss der 
+Einzelunternehmer oder die Einzelunternehmerin für gewöhnlich allein aufbringen. Reichen die 
+eigenen Mittel nicht, wird der weitere Bedarf an finanziellen Mitteln in den meisten Fällen durch einen 
+Kredit abgedeckt. 
+Oft arbeitet nur der Einzelunternehmer oder die Einzelunternehmerin selbst für das Unternehmen, 
+manchmal werden ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt. Der 
+Selbstständigkeit und der Unabhängigkeit von anderen Gesellschafter:innen bei der 
+Unternehmensführung steht aber immer das Risiko gegenüber, das der oder die Einzelunternehmer:in 
+ganz allein in vollem Umfang tragen muss. Scheitert ein Einzelunternehmen, bedeutet das oft nicht 
+nur das Ende für das Unternehmen, sondern auch finanzielle Schwierigkeiten für die Unternehmerin 
+oder den Unternehmer als Privatperson. Die gescheiterte Selbstständigkeit ist ein häufiger Grund für 
+einen Privatkonkurs (Schuldenregulierungsverfahren bei Privatpersonen). 
+
+#### Personengesellschaften
+
+An einer Personengesellschaft ist mehr als eine Person beteiligt. Diese Personen bringen nicht nur das 
+Kapital für das Unternehmen auf, sie haften auch für die Schulden des Unternehmens. Je nachdem, 
+um welche Art von Gesellschafter:in es sich handelt, arbeiten sie auch im Unternehmen mit. 
+Einzelunternehmen, deren Unternehmensumfang deutlich zunimmt, sodass die 
+Unternehmensführung und/oder die Finanzierung für eine Person zu viel werden, können in 
+Personengesellschaften umgewandelt werden, um die Finanzierungsmöglichkeiten, die 
+Haftungssituation zu verbessern und die Verantwortung für die Unternehmensleitung aufzuteilen. Bei 
+den Personengesellschaften werden die Varianten Offene Gesellschaft und Kommanditgesellschaft 
+unterschieden. 
+Die Offene Gesellschaft (OG) kennt nur eine Art von Gesellschafter:innen. Mindestens zwei 
+Gesellschafter:innen gründen die OG, alle Gesellschafter:innen sind zur Geschäftsführung berechtigt 
+und verpflichtet. Jede Gesellschafterin und jeder Gesellschafter haftet mit dem gesamten 
+Privatvermögen für den Gesamtbetrag der Schulden des Unternehmens (solidarische Haftung) und 
+beteiligt sich am Kapital des Unternehmens, für das es jedoch wie beim Einzelunternehmen keine 
+gesetzliche Mindesthöhe gibt. 
+Die Kommanditgesellschaft (KG) hingegen unterscheidet zwischen zwei Arten von 
+Gesellschafter:innen, den Komplementären und den Kommanditisten. Mindestens eine Person ist 
+Komplementär, die im Hinblick auf die Mitarbeit im Unternehmen, die Beteiligung am Kapital und die 
+Haftung einem OG-Gesellschafter oder einer OG-Gesellschafterin vergleichbar ist. Daneben gibt es 
+noch mindestens eine Person als Kommanditisten, die nur mit der eigenen Kapitaleinlage haftet und 
+nicht im Unternehmen mitarbeitet. Für diesen Gesellschaftertyp ist also eine Haftungsbeschränkung 
+möglich. Kommanditisten haben Kontrollrechte und dürfen in die Bücher der Gesellschaft Einsicht 
+nehmen. 
+
+Personengesellschaften sind im Hinblick auf die von den Gesellschaftern eingebrachten Mittel in der Regel beschränkt, weil Personengesellschaften meist nur wenige Gesellschafter haben. Diese sind in vielen Fällen nicht in der Lage, hohe Kapitalsummen in das Unternehmen einzubringen. Personengesellschaften sind daher auch oft von der Finanzierung durch Bankkredite abhängig.
+
+#### Kapitalgesellschaften
+
+Höhere Kapitalsummen können eher mit Kapitalgesellschaften aufgebracht werden. Die Idee von 
+Kapitalgesellschaften besteht darin, dass die Gesellschafter:innen Kapital für das Unternehmen zur 
+Verfügung stellen, jedoch nicht (notwendigerweise) im Unternehmen mitarbeiten und dieses leiten. 
+Das Gesetz sieht hier für die Kapitalbeteiligung eine Mindestkapitalhöhe vor. Durch viele 
+Gesellschafter:innen, die grundsätzlich nur mit dem eingebrachten Kapital haften, können auch eher 
+hohe Kapitalsummen aufgebracht werden. Da die Gesellschafter:innen nicht notwendigerweise auch 
+mit der Geschäftsführung betraut sind, können Kapitalaufbringung und Geschäftsführung daher bei 
+Kapitalgesellschaften getrennt sein. 
+Kapitalgesellschaften weisen eine eigene Rechtspersönlichkeit auf, sie gelten als juristische Personen 
+(im Vergleich zu „natürlichen Personen“, also Menschen). Sie können als juristische Personen 
+Geschäfte machen, Verträge abschließen, klagen und geklagt werden, sie brauchen aber natürliche 
+Personen, die für sie handeln. 
+Die Gesellschaft mit beschränkter Haftung (GmbH) ist eine mögliche Form von Kapitalgesellschaft. Es 
+muss zumindest einen Gesellschafter geben. Das von dem/den Gesellschafter/n aufgebrachte Kapital 
+wird Stammkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens € 10.000 (seit 
+1.1.2024, davor waren es € 35.000) betragen. Jede Einlage eines Gesellschafters oder einer 
+Gesellschafterin (Stammeinlage) muss zumindest € 70 betragen. Zumindest die Hälfte des 
+Stammkapitals ist in Form von Geld aufzubringen, der Rest kann auch eine Sacheinlage sein (Computer, 
+Auto, etc.). 
+Die GmbH wird von einem oder mehreren Geschäftsführer:innen geleitet. Der Geschäftsführer oder 
+die Geschäftsführerin kann auch Gesellschafter:in der GmbH sein („geschäftsführende:r 
+Gesellschafter:in“), muss aber nicht. Für die Geschäftsführung wird ein Gehalt bezogen, die 
+Gesellschafter:innen erhalten für ihre Kapitaleinlagen Gewinnanteile. 
+Seit kurzem gibt es eine weitere an die GmbH „angelehnte“ Gesellschaftsform, die Flexible 
+Kapitalgesellschaft (FlexKapG). Ebenso wie bei der GmbH reicht ein Gesellschafter oder eine 
+Gesellschafterin, das Stammkapital beträgt ebenfalls € 10.000. Der Mindestbetrag einer Stammeinlage 
+beträgt jedoch nur € 1. Ein wesentlicher Unterschied besteht darin, dass die FlexKapG 
+Unternehmenswert-Anteile vorsieht, die eine Sonderform des Stammkapitals sind und eine einfache 
+Beteiligung der Mitarbeiter:innen ermöglichen sollen. Unternehmenswert-Beteiligte haben einen 
+Anspruch auf ihren Gewinnanteil, sie verfügen aber über kein Stimmrecht. 
+Auch die Aktiengesellschaft (AG)zählt zu den Kapitalgesellschaften. Das Kapital, das die Gesellschafter 
+einbringen, wird Grundkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens 
+70.000 Euro betragen. Da das Grundkapital in Aktien aufgeteilt wird, werden die Gesellschafter 
+Aktionäre genannt. So wie die GmbH-Gesellschafter haften auch die Aktionäre nicht persönlich für die 
+Schulden der AG, sie riskieren nur das Geld, das sie in den Aktienkauf investieren. Der Vorstand führt 
+die Geschäfte in eigener Verantwortung und vertritt die Gesellschaft. Die Vorstandsmitglieder werden 
+vom Aufsichtsrat bestellt und abberufen. Große Unternehmen, die viel Kapital benötigen, sind häufig 
+als AG organisiert. 
+
+Eine Variante der Aktiengesellschaft ist die Rechtsform der Europäischen Gesellschaft, die auch Europäische Aktiengesellschaft oder Societas Europaea (SE) genannt wird. Die Strabag ist zum Beispiel als SE organisiert. Die SE stellt eine mögliche Rechtsform für Aktiengesellschaften in der Europäischen Union und im Europäischen Wirtschaftsraum dar. So ist der Rechtsrahmen für diese Gesellschaftsform immer gleich, egal in welchem Mitgliedsstaat der EU oder des EWR die SE ihren Sitz hat. Das ist vor allem für Unternehmen, die in mehreren EU-/ EWR-Staaten Niederlassungen haben, von Interesse. Das Mindestkapital beträgt 120.000 Euro.
+
+#### Genossenschaften
+
+Genossenschaften sind Zusammenschlüsse von zumindest zwei natürlichen und/oder juristischen Personen mit dem Ziel der Förderung des Erwerbs und der Wirtschaft ihrer Mitglieder. Die Rechtsform selbst lautet in Österreich „eingetragene Genossenschaft“ (e. Gen.) und dient zur Errichtung von Erwerbs- und Wirtschaftsgenossenschaften. Auch die Genossenschaft hat ein europäisches Pendant: die Europäischen Genossenschaft oder Societas Cooperativa Europaea (SCE). Genossenschaften folgen dem Motto: „Was einer nicht schafft, das schaffen viele!“. Im Vordergrund steht daher nicht das Erzielen von Gewinnen, sondern das gemeinsame Wirtschaften, zum Beispiel durch
+
+• das gemeinsame Nutzen von Produktionsanlagen und Betriebsmitteln und/oder 
+• den gemeinsamen Einkauf und/oder Vertrieb. So können Synergieeffekte genutzt werden, weil man gemeinsam andere Größenverhältnisse erreichen kann. Gewinne werden entweder wieder in die Genossenschaft reinvestiert oder als Rückvergütungen an die Genossenschaftsmitglieder ausgezahlt. Die Anzahl der Mitglieder ist leicht veränderlich, weil es einfach ist, in eine Genossenschaft einzutreten und auch wieder auszutreten. So kann man auch nur vorübergehend zusammenarbeiten. Es ist kein Mindestkapital notwendig, Genossenschafter beteiligen sich an der Genossenschaft mit einer Kapitaleinlage. Ihre Haftung ist für gewöhnlich auf einen bestimmten Geldbetrag beschränkt. Wenn zum Beispiel ein Genossenschaftsanteil 100 Euro beträgt, haftet der Genossenschafter mit weiteren 100 Euro, d.h. der mögliche Verlust sind maximal 200 Euro. Die Leitung der Genossenschaft erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird. Das oberste Organ ist jedoch die Hauptversammlung, in der über die wesentlichen Entscheidungen in der Genossenschaft abgestimmt wird. Bemerkenswert ist in diesem Zusammenhang das so genannte Kopfstimmrecht, das bedeutet, dass bei einer Abstimmung jede Person – unabhängig von ihrem Anteil am Genossenschaftskapital – eine Stimme hat und diese Stimme nicht entsprechend dem Anteil am Kapital gewichtet wird. Die Satzung einer Genossenschaft kann aber eine abweichende Regelung vorsehen. Ab einer bestimmten Größe der Genossenschaft (ab 40 Arbeitnehmer/innen) ist auch ein Aufsichtsrat zu bilden. 
+Eintragung ins Firmenbuch 
+Manche Unternehmen können, andere müssen ins Firmenbuch eingetragen werden. Im Wesentlichen 
+ist es die Rechtsform, die hier entscheidend ist. 
+Was ist das Firmenbuch? 
+Das Firmenbuch ist eine öffentliche, zentrale von Gerichten geführte 
+Unternehmensdatenbank, in die Einsicht genommen werden kann. Dadurch wird 
+das Unternehmen transparenter, was für Geschäftsabschlüsse förderlich sein 
+kann, weil Geschäftspartner wichtige Informationen zum Unternehmen im 
+Firmenbuch ersehen können. 
+Die OG, KG, GmbH und AG sowie die Genossenschaften müssen ins Firmenbuch eingetragen werden, 
+das Einzelunternehmen erst ab einer bestimmten Größe (mehr als 700.000 Euro Umsatz pro Jahr in 
+zwei aufeinanderfolgenden Jahren oder mehr als 1 Mio. Euro Umsatz in einem Jahr). Eine freiwillige 
+Eintragung von Einzelunternehmen ist möglich, wenn ihnen zum Beispiel die oben genannte 
+Transparenz gegenüber ihren Geschäftspartnern wichtig ist. Kleine Einzelunternehmen sind trotzdem 
+häufig nicht eingetragen. 
+Die Firmenbucheintragung enthält die Firma, das ist der rechtliche Name des Unternehmens (z.B. 
+woom GmbH), den Sitz des Unternehmens und den Unternehmensgegenstand, die Namen der 
+Gesellschafter (nicht jedoch die Aktionäre der AG), die Höhe der Kapitaleinlagen (bei Kommanditisten 
+und GmbH-Gesellschaftern) und zeigt auf, wer die Geschäfte führen darf. 
+Zahlen, Daten, Fakten … 
+Der überwiegende Teil der Unternehmen sowie der 
+Unternehmensgründungen in Österreich – rund 85 % - sind 
+Einzelunternehmen. Ungefähr jedes zehnte Unternehmen ist eine GmbH, 
+gefolgt von je ca. 2 % OG und KG. Die übrigen Rechtsformen haben einen 
+noch geringeren Anteil. 
+
+Tab. 2: Zusammenfassende Darstellung der Merkmale der verschiedenen Rechtsformen
+
+Einzel unternehmen
+
+Offene Gesellschaft
+
+Kommandit gesellschaft
+
+Genossen schaft
+
+Gesellschaft mit beschränkter Haftung
+
+Aktien 
+gesellschaft 
+Societas 
+Europaea (SE) 
+
+Der Einzel unternehmer
+
+Der Vorstand Der Vorstand
+
+Wer führt die Geschäfte?
+
+Die OG Gesellschafter (mind. zwei)
+
+Der/die Komplementäre (mind. einer)
+
+Der/die 
+Geschäftsführ 
+er (mind. 
+einer) 
+
+| | Wer ist | Der Einzel | | Die OG | Der/die | | | Alle GmbH | | Die Aktionäre, | Die | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | Gesell | unternehmer | | Gesellschafter | Komplementäre | | | Gesellschafter | | die zumindest | Genossen | | |
+| | schafter? | | | (mind. zwei) | (mind. einer) | | | (mind. einer), | | eine Aktie | schafter | | |
+| | | | | | und der/die | | | die eine | | gekauft haben | | | |
+| | | | | | Kommandi | | | Stammeinlage | | | | | |
+| | | | | | tisten (mind. | | | geleistet | | | | | |
+| | | | | | einer) | | | haben | | | | | |
+| | Wer bringt | Der Einzel | | Die OG | Der | | | Die GmbH | | Die Aktionäre | Die | | |
+| | das Kapital | unternehmer | | Gesellschafter | Komplementär | | | Gesellschafter | | durch den | Genossen | | |
+| | auf? | | | | kann, der | | | mit ihren | | Aktienkauf | schafter | | |
+| | | | | | Kommanditist | | | Stammeinlage | | | | | |
+| | | | | | muss eine | | | n | | | | | |
+
+Kapitaleinlage leisten
+
+| Gibt es ein | | Nein | Nein | | Nein | | Ja, 10.000 | Ja, 70.000 | | | Nein | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Mindest | | | | | | | Euro | Euro (SE: | | | | |
+| kapital? | | | | | | | | 120.000 Euro) | | | | |
+| Wer haftet | | Der Einzel | Die OG | | Der | | Die GmbH | Die Aktionäre | | | Die | |
+| für die | | unternehmer | Gesellschafter | | Komplementär | | Gesellschafter | nur mit ihrem | | | Genossen | |
+| Schulden des | | persönlich, | persönlich, | | haftet so wie | | nur mit ihrer | Aktienkapital | | | schafter mit | |
+| Unter | | unbeschränkt | unbeschränkt, | | der OG | | Stammeinlage | | | | ihrer | |
+| nehmens | | | jeder für den | | Gesellschafter, | | | | | | Einlage | |
+| | | | Gesamtbetrag | | der | | | | | | (i.d.R. in | |
+| | | | der Schulden | | Kommanditist | | | | | | doppelter | |
+| | | | | | nur bis zur Höhe | | | | | | Höhe) | |
+| | | | | | seiner Einlage | | | | | | | |
+| Wie kann | | Der Einzel | Die OG | | Komplementär: | | Die bisherigen | Neue Aktien | | | Durch die | |
+| zusätzliches | | unternehmer | Gesellschafter | | siehe OG; | | Gesellschafter | werden | | | Aufnahme | |
+| (Eigen-) | | muss Kapital | müssen Kapital | | Kommanditist: | | erhöhen ihre | ausgegeben, | | | weiterer | |
+| Kapital | | einbringen. | einbringen | | Kapitaleinlage | | Einlagen oder | die entweder | | | Genossen | |
+| aufgebracht | | | | | erhöhen | | nehmen einen | die bisherigen | | | schafter | |
+| werden? | | | | | | | zusätzlichen | Aktionäre | | | | |
+
+Gesellschafter kaufen auf können oder sonst neue Aktionäre
+
+Anmerkung: Aus Platzgründen wurde in dieser Tabelle auf das Gendern des Texts verzichtet.

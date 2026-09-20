@@ -1,0 +1,234 @@
+[
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.09",
+    "title": "Tische oder nur Badmöbel",
+    "context": "Betrieb Althuber fertigt in der Möbelbranche ausschließlich Tische und Stühle, Betrieb Leitner ausschließlich Badezimmereinrichtungen. Bewerten Sie die folgenden Aussagen zur Spezialisierung zwischen Unternehmen:",
+    "statements": [
+      "Spezialisierung zwischen Unternehmen liegt vor, wenn Betriebe einer Branche nur bestimmte Produkte erzeugen.",
+      "Zwischenbetriebliche Spezialisierung setzt voraus, dass Althuber und Leitner zu einem einzigen Unternehmen verschmolzen sind.",
+      "Die Aufteilung nur Tische und Stühle versus nur Badezimmereinrichtungen ist ein Fall der Spezialisierung zwischen Unternehmen.",
+      "Innerhalb einer Branche darf sich kein Betrieb auf ein enges Sortiment beschränken, weil Spezialisierung ausschließlich zwischen Ländern vorkommt.",
+      "Arbeitsteilung und Spezialisierung finden in einer modernen Wirtschaft auch zwischen Unternehmen statt, nicht nur innerhalb eines Betriebs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "In der Möbelbranche kann ein Betrieb nur Tische und Stühle fertigen, ein anderer nur Badezimmereinrichtungen. Genau diese Beschränkung auf bestimmte Erzeugnisse innerhalb einer Branche nennt das Buch Spezialisierung zwischen Unternehmen. Es geht nicht um Abteilungen in einem Haus, sondern um getrennte Betriebe mit engem Sortiment. Althuber und Leitner illustrieren diese Ebene, ohne dass einer das gesamte Möbelsortiment abdecken muss.\n\nDie Aussage ist wahr.",
+      "Zwei rechtlich getrennte Möbelbetriebe können sich spezialisieren, ohne zu fusionieren. Das Buch spricht von Spezialisierung zwischen Unternehmen, also von mehreren Betrieben, deren Produkte sich ergänzen oder innerhalb einer Branche verengen. Eine Verschmelzung zu einem einzigen Rechtsträger wäre das Gegenteil dieser Trennung: dann läge eher innerbetriebliche Arbeitsteilung in Abteilungen vor, nicht die zwischenbetriebliche Ebene. Althuber bleibt Tisch- und Stuhlhersteller, Leitner bleibt Badmöbelspezialist, und gerade diese Trennung ist der Punkt. Konzernzugehörigkeit, gemeinsame Eigentümer oder ein gemeinsames Firmenschild sind keine Voraussetzung. Die Spezialisierung lebt davon, dass es mehrere Unternehmen gibt.\n\nDie Aussage ist falsch.",
+      "Nur Tische und Stühle auf der einen Seite, nur Badezimmereinrichtungen auf der anderen: das ist das Möbelbeispiel des Abschnitts, fast wörtlich. Spezialisierung heißt hier, dass nicht jeder Möbelbetrieb alles erzeugt, sondern sich auf bestimmte Produkte konzentriert. Die Szene um Althuber und Leitner fällt damit unter die zwischenbetriebliche Ebene, nicht unter eine bloße Geschmacksfrage des Sortiments.\n\nDie Aussage ist wahr.",
+      "Die Ebenen der Spezialisierung stehen nebeneinander: innerhalb von Haushalten und Unternehmen, zwischen Unternehmen und zwischen Ländern. Wer die zwischenbetriebliche Ebene streicht und nur Länder gelten lässt, verkürzt die Aufzählung. Eine Möbelbranche mit engen Sortimenten ist ausdrücklich erlaubt und sogar das Lehrbeispiel. Althuber darf bei Tischen bleiben, ohne dass dadurch internationale Spezialisierung die einzige zulässige Form wäre.\n\nDie Aussage ist falsch.",
+      "Moderne Wirtschaft kennt Arbeitsteilung auf mehreren Ebenen zugleich. Innerhalb eines Betriebs gibt es Abteilungen, zwischen Betrieben gibt es enge Sortimente und Zulieferketten, zwischen Ländern gibt es Standortschwerpunkte. Die Aussage hält fest, dass die zwischenbetriebliche Ebene dazugehört und nicht in der innerbetrieblichen aufgeht. Althuber und Leitner sind zwei Unternehmen, nicht zwei Abteilungen derselben Firma.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.10",
+    "title": "Obst, Tiefkühlkost und Karton",
+    "context": "Ein landwirtschaftlicher Betrieb liefert Obst an eine Tiefkühlkostfirma und an einen Hersteller von Fruchtzubereitungen. Beide beziehen Kartons von einem Verpackungsspezialisten. Bewerten Sie die folgenden Aussagen zur Spezialisierung in der Lieferkette:",
+    "statements": [
+      "Spezialisierung liegt auch vor, wenn die Produkte eines Unternehmens die Voraussetzung für die Produktion eines anderen sind.",
+      "Landwirtschaftliche Betriebe können Obst und Gemüse an mehrere weiterverarbeitende Unternehmen liefern.",
+      "Der Verpackungshersteller steht außerhalb jeder Spezialisierung, weil er selbst keine Lebensmittel erzeugt.",
+      "Ein Tiefkühlkostbetrieb muss Obst und Verpackung immer im eigenen Werk erzeugen, sonst liegt keine moderne Wirtschaft vor.",
+      "Dieselbe landwirtschaftliche Lieferung kann mehrere Abnehmer versorgen, etwa Tiefkühlkost und Fruchtzubereitung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Vorleistungen verbinden Betriebe zu einer Kette. Obst vom Hof ist die stoffliche Voraussetzung dafür, dass Tiefkühlkost oder Fruchtzubereitung entstehen kann. Das Buch nennt genau diesen Fall Spezialisierung: die Produkte des einen sind Bedingung für die Produktion des anderen. Es reicht nicht, nur an enge Sortimente in derselben Branche zu denken. Die Kette Hof, Verarbeitung, Karton ist das zweite Muster zwischenbetrieblicher Spezialisierung.\n\nDie Aussage ist wahr.",
+      "Obst und Gemüse verlassen den Hof nicht nur in eine Richtung. Im Text liefern landwirtschaftliche Unternehmen an mehrere Abnehmer, etwa an Tiefkühlkost und an Fruchtzubereitung. Ein Hof muss sich also nicht an einen einzigen Verarbeiter binden, um als spezialisiert zu gelten. Mehrere Abnehmer sind ausdrücklich vorgesehen. Die Szene trifft dieses Mehrfachmuster, nicht eine Einbahnstraße zu einem Konzern.\n\nDie Aussage ist wahr.",
+      "Verpackung ist selbst ein spezialisiertes Erzeugnis. Die Verarbeiter beziehen Kartons und ähnliche Hüllen von einem weiteren Unternehmen, das sich auf die Produktion der Verpackungen spezialisiert hat. Lebensmittelherstellung ist also keine Eintrittskarte in die Kategorie Spezialisierung. Wer den Kartonbetrieb ausklammert, weil er keinen Joghurt rührt, verkennt die Kette: Obst vom Hof, Verarbeitung zu Tiefkühlkost oder Fruchtzubereitung, danach die Hülle, ohne die die Ware nicht in den Handel kommt. Die dritte Stufe gehört dazu, gerade weil ihre Produkte die Voraussetzung für den Absatz der zweiten Stufe sind. Spezialisierung endet nicht bei essbaren Gütern.\n\nDie Aussage ist falsch.",
+      "Eigene Erzeugung aller Vorprodukte ist gerade nicht die Beschreibung der modernen Arbeitsteilung. Wer Fahrräder oder Fruchtjoghurt herstellt, erzeugt nicht notwendigerweise jedes Einzelteil und jedes Obst selbst. Tiefkühlkost kann Obst zukaufen und Kartons zukaufen. Die Behauptung, nur die vollständige Eigenfertigung zähle als moderne Wirtschaft, dreht das Kapitel um. Abhängigkeit von Zulieferern ist die Kehrseite, nicht ein Formfehler.\n\nDie Aussage ist falsch.",
+      "Dieselbe Ernte kann mehrere Abnehmer versorgen. Das Buch nennt Tiefkühlkost und Fruchtzubereitungen nebeneinander als Empfänger landwirtschaftlicher Lieferungen. Ein Hof muss die Menge also nicht exklusiv einem Werk reservieren, damit Spezialisierung vorliegt. Die parallelen Abnehmer zeigen, wie ein spezialisiertes Vorprodukt in verschiedene Weiterverarbeitungen eingeht. Genau das bildet die Szene ab.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.11",
+    "title": "Klima, Bodenschätze und Knowhow",
+    "context": "Länder setzen Schwerpunkte in Wirtschaftsbereichen, für die sie günstige Voraussetzungen haben. Bewerten Sie die folgenden Aussagen zur internationalen Spezialisierung:",
+    "statements": [
+      "Länder spezialisieren sich, indem sie in bestimmten Wirtschaftsbereichen tätig sind und vor allem jene Bereiche fördern, für die sie günstige Voraussetzungen haben.",
+      "Zu diesen Voraussetzungen zählt das Buch Klima, Bodenschätze, Arbeitskräfte und Knowhow.",
+      "Internationale Spezialisierung ist unmöglich, weil das Klima überall gleich ist und Standorte sich deshalb nicht unterscheiden.",
+      "Knowhow spielt bei der Standortwahl der Länder keine Rolle, entscheidend sind ausschließlich Bodenschätze.",
+      "Ein Land mit passendem Klima kann landwirtschaftliche Erzeugung fördern, ohne dass jedes Land dieselben Schwerpunkte setzen muss."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Länder wählen Schwerpunkte, statt in jedem Wirtschaftsbereich gleich stark zu sein. Das Buch beschreibt internationale Spezialisierung als Tätigkeit in bestimmten Bereichen und als Förderung jener Felder, für die günstige Voraussetzungen vorliegen. Klima, Rohstoffe, Arbeitskräfte und Wissen sind solche Hebel, nicht ein Zufallsgenerator. Die Aussage gibt diese Logik wieder, ohne zu behaupten, ein Land könne nur einen einzigen Sektor kennen.\n\nDie Aussage ist wahr.",
+      "Vier Voraussetzungen stehen im Text nebeneinander: Klima, Bodenschätze, Arbeitskräfte und Knowhow. Keine der vier ist bloßes Schmuckwort. Ein Weinbaugebiet nutzt Klima, ein Erzstandort Bodenschätze, ein Industriestandort oft Arbeitskräfte und angesammeltes Wissen. Die Liste ist die Definition der günstigen Voraussetzungen in diesem Abschnitt, nicht eine offene Wunschformel. Wer eine der vier streicht, verkürzt das Buch.\n\nDie Aussage ist wahr.",
+      "Klimaunterschiede sind im Text gerade ein Grund, warum Länder verschiedene Schwerpunkte setzen. Wäre das Klima überall identisch, fiele eines der genannten Standortmerkmale weg, die übrigen blieben aber. Die Behauptung, internationale Spezialisierung sei unmöglich, weil das Klima nirgends differiere, ist doppelt falsch: das Klima differiert zwischen Weinbaugebieten, Getreidegürteln und kälteren Zonen, und Spezialisierung hängt nicht allein am Wetter. Bodenschätze, Arbeitskräfte und Knowhow bleiben eigenständige Gründe. Ein Industriestandort kann sich über Wissen und Arbeitskräfte profilieren, auch wenn das Klima unauffällig ist. Unmöglichkeit folgt aus Gleichheit des Klimas also weder faktisch noch begrifflich.\n\nDie Aussage ist falsch.",
+      "Knowhow steht in derselben Klammer wie Klima, Bodenschätze und Arbeitskräfte. Es ist also ausdrücklich ein Standortfaktor, nicht ein Restposten. Taiwanesische Fahrradspezialisten im woom-Beispiel werden später gerade wegen jahrzehntelangen Know-hows genannt. Ausschließlich Bodenschätze gelten zu lassen streicht drei der vier Voraussetzungen und widerspricht der Aufzählung. Rohstoffe können helfen, sie ersetzen Wissen nicht.\n\nDie Aussage ist falsch.",
+      "Passendes Klima kann einen landwirtschaftlichen Schwerpunkt tragen, während ein anderes Land Metalle, Industrie oder Dienstleistungen fördert. Internationale Spezialisierung bedeutet gerade nicht, dass alle dieselben Bereiche wählen. Jedes Land setzt dort an, wo die Voraussetzungen günstig sind. Die Aussage hält diese Unterschiedlichkeit fest und bleibt innerhalb der Buchliste der Standortfaktoren.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.12",
+    "title": "woom und globale Fahrradteile",
+    "context": "Die woom GmbH lässt Kinderfahrräder nicht vollständig im eigenen Werk entstehen, sondern arbeitet mit hochspezialisierten Firmen in verschiedenen Ländern zusammen. Bewerten Sie die folgenden Aussagen zur internationalen Arbeitsteilung am Fahrrad:",
+    "statements": [
+      "Wer Fahrräder produziert, produziert nicht notwendigerweise alle Einzelteile, die für ein gesamtes Fahrrad notwendig sind.",
+      "Am Fahrrad erkennt man zwischenbetriebliche und internationale Spezialisierung zugleich.",
+      "woom arbeitet laut dem Buchbeispiel mit hochspezialisierten Firmen in verschiedenen Ländern zusammen, von Polen bis Kambodscha.",
+      "Ein Großteil der woom-Produktion erfolgt durch taiwanesische Fahrradspezialisten mit jahrzehntelangem Know-how, die in Ländern Südostasiens fertigen.",
+      "Internationale Arbeitsteilung am Fahrrad bedeutet, dass sämtliche Einzelteile zwingend in Österreich entstehen müssen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fahrradwerke kaufen Felgen, Schaltung, Sattel oder Rahmen oft zu, statt jedes Teil selbst zu pressen. Das Buch sagt ausdrücklich: wer Fahrräder produziert, produziert nicht notwendigerweise alle Einzelteile, die für ein gesamtes Fahrrad notwendig sind. Zwischenbetriebliche Spezialisierung heißt hier, dass hochspezialisierte Firmen Vorleistungen liefern. Die Endmontage oder die Marke ersetzt nicht die gesamte Teilefertigung. woom ist das anschauliche Gegenbild zur vollständigen Eigenherstellung: globale Marke, weltweite Herstellung, Partner von Polen bis Kambodscha. Ein fertiges Rad im Handel beweist nicht, dass ein einziges Werk jede Schraube selbst erzeugt hat.\n\nDie Aussage ist wahr.",
+      "Zwischenbetriebliche Ebene und Länderebene laufen am Fahrrad zusammen. Teile kommen von spezialisierten Firmen, und diese Firmen sitzen in verschiedenen Ländern. Das Kapitel stellt das Fahrrad deshalb als Beispiel vor, an dem man beide Formen zugleich erkennt. Wer nur Abteilungen in einem österreichischen Werk sieht, unterschlägt die internationale Kette. woom macht beides sichtbar: fremde Betriebe und fremde Standorte.\n\nDie Aussage ist wahr.",
+      "Polen bis Kambodscha ist die geografische Klammer im Zitat der woom-Website, Stand März 2021. Hochspezialisierte Firmen in verschiedenen Ländern sichern die Qualitätsansprüche, nicht ein einziges Stammwerk. Die Aussage wiederholt diesen Beleg, ohne Exportstatistiken auswendig zu verlangen. Zusammenarbeit über Ländergrenzen ist hier der Kern, nicht eine Werbephrase ohne Inhalt.\n\nDie Aussage ist wahr.",
+      "Taiwanesische Fahrradspezialisten tragen im Beispiel den Großteil der Produktion und fertigen in Südostasien, gestützt auf jahrzehntelanges Know-how in der Fahrradproduktion. Das ist internationale Spezialisierung über Knowhow, nicht über österreichische Bodenschätze. Die Marke woom bleibt global, die Fertigung folgt den Standorten mit dem angesammelten Wissen. Die Aussage trifft diesen Satz des Buches.\n\nDie Aussage ist wahr.",
+      "Sämtliche Teile in Österreich wären das Gegenteil der beschriebenen Kette. Internationale Arbeitsteilung heißt gerade, dass führende Exporteure von Fahrradteilen in verschiedenen Ländern sitzen und woom mit Partnern von Polen bis Kambodscha arbeitet. Ein Zwang zur Inlandserzeugung aller Komponenten streicht das Beispiel. Qualitätsansprüche werden hier durch spezialisierte ausländische Firmen bedient, nicht durch Autarkie.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.13",
+    "title": "Kompetenz und größere Stückzahl",
+    "context": "Ein Betrieb konzentriert sich auf wenige Arbeitsschritte und kauft übrige Komponenten zu. Bewerten Sie die folgenden Aussagen zu den Produktionsvorteilen der Spezialisierung:",
+    "statements": [
+      "Spezialisierung bedeutet für die Produktion den Vorteil, sich auf weniger Arbeitsschritte zu konzentrieren und in diesem Bereich Kompetenz auszubauen.",
+      "Wer nicht alle Komponenten selbst erzeugen und nicht alle Arbeitsschritte selbst durchführen muss, kann insgesamt eine größere Stückzahl erreichen.",
+      "Spezialisierung bringt der Produktion ausschließlich Nachteile und niemals Vorteile bei Kompetenz oder Menge.",
+      "Kompetenz wächst in dem engeren Feld, auf das sich der Betrieb konzentriert, nicht dadurch, dass jedes Teil im eigenen Werk entsteht.",
+      "Eine größere Stückzahl ist nur möglich, wenn jedes Unternehmen sämtliche Arbeitsschritte selbst durchführt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Weniger Arbeitsschritte im eigenen Betrieb schaffen Raum für Übung, Organisation und Qualität in genau diesem Ausschnitt. Das Buch nennt das einen großen Vorteil der Spezialisierung: man konzentriert sich auf weniger Arbeitsschritte und kann in diesem Bereich die Kompetenz ausbauen. Ein Rahmenbauer, der nicht zugleich jede Schaltung entwickelt, kann in der Rahmenfertigung tiefer werden, weil Zeit, Maschinen und Personal nicht auf alle Komponenten zersplittern. Die Aussage trifft diesen Mechanismus, ohne die später behandelten Abhängigkeiten zu leugnen. Vorteil und Nachteil stehen im Kapitel nacheinander; hier ist nur der Vorteil Kompetenz gemeint, nicht die Behauptung einer risikolosen Welt.\n\nDie Aussage ist wahr.",
+      "Fremdbezug entlastet Kapazität. Wer nicht jedes Teil selbst fertigt, kann die eigene Linie auf das konzentrieren, was sie kann, und so mehr fertige Stücke schaffen. Das Buch knüpft die größere Stückzahl ausdrücklich daran, dass man nicht alle Komponenten selbst erzeugen und nicht alle Schritte selbst durchführen muss. Die Menge steigt also nicht trotz Spezialisierung, sondern weil Spezialisierung Arbeit nach außen verlagert. Das ist der zweite Produktionsvorteil neben der Kompetenz.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Nachteile behauptet das Kapitel nicht. Es stellt große Vorteile voran: Konzentration, Kompetenz, größere Stückzahl, oft niedrigere Kosten pro Stück. Danach folgen Abhängigkeit und ökologische Lasten. Wer die Vorteilseite streicht, liest nur die Kehrseite. Kompetenz und Menge sind im Text gerade die positiven Wirkungen. Die absolute Formulierung niemals Vorteile hält der Gliederung nicht stand.\n\nDie Aussage ist falsch.",
+      "Kompetenz sitzt im gewählten Ausschnitt. Konzentration auf weniger Schritte ist der Weg dorthin, Vollsortiment im eigenen Werk ist es nicht. Ein Betrieb, der alles selbst macht, zersplittert Übung und Organisation. Das Buch bindet den Kompetenzgewinn an den engeren Bereich. Zukauf der übrigen Komponenten ist mit diesem Gewinn vereinbar, ja ermöglicht ihn oft erst. Die Aussage folgt dieser Bindung von Fokus und Können.\n\nDie Aussage ist wahr.",
+      "Sämtliche Schritte selbst durchzuführen ist im Text die Bremse, nicht die Bedingung für Menge. Größere Stückzahl wird gerade damit begründet, dass man nicht alles selbst erzeugen muss. Die Behauptung dreht die Kausalität um. Eigenfertigung aller Komponenten bindet Halle, Personal und Zeit an viele Teilarbeiten und begrenzt die fertige Stückzahl. Spezialisierung lockert diese Bindung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.14",
+    "title": "Hallenkosten und Stückkosten",
+    "context": "Eine Produktionshalle ist errichtet. Ob darin die volle oder nur die halbe Kapazität läuft, ändert den Bauaufwand nicht. Bewerten Sie die folgenden Aussagen zu Kosten und Spezialisierung:",
+    "statements": [
+      "Nicht alle Produktionskosten steigen mit der Anzahl der produzierten Stücke.",
+      "Eine Produktionshalle kostet in der Errichtung gleich viel, unabhängig davon, ob darin die volle oder nur die halbe Kapazität produziert wird.",
+      "Bei höherer Produktion können die gesamten Produktionskosten auf eine größere Stückzahl aufgeteilt werden, sodass die Kosten pro Stück sinken.",
+      "Die Kosten der Halle steigen stets im Verhältnis 1 zu 1 mit der Stückzahl, verdoppelt sich die Menge, verdoppelt sich der Hallenaufwand.",
+      "Sinkende Produktionskosten pro Stück können in weiterer Folge den Preis senken, zu dem ein Stück verkauft werden kann."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Stückzahl und Kostenblock laufen nicht immer parallel. Manche Aufwände, etwa die Errichtung einer Halle, entstehen unabhängig davon, ob später viele oder wenige Stücke die Linie verlassen. Das Buch hält fest: nicht alle Produktionskosten steigen mit der Anzahl der produzierten Stücke. Genau diese Unabhängigkeit öffnet den Weg zu sinkenden Kosten pro Stück, sobald die Menge wächst. Variable Vorleistungen können mitwachsen, der Hallenbau tut es in der Errichtung nicht.\n\nDie Aussage ist wahr.",
+      "Bauaufwand der Halle hängt nicht daran, ob später Vollauslastung oder halbe Kapazität herrscht. Das Kapitel sagt das ausdrücklich: die Halle kostet in der Errichtung gleich viel, volle oder halbe Nutzung ändert diesen Betrag nicht. Spezialisierung und größere Stückzahl nutzen genau diesen Block, indem sie mehr Erzeugnisse durch dieselbe Halle schicken. Die Aussage ist die Hallenregel des Texts, keine betriebswirtschaftliche Sonderlehre außerhalb des Buches.\n\nDie Aussage ist wahr.",
+      "Gesamtkosten geteilt durch Stückzahl ergibt die Kosten pro Stück. Steigt der Nenner, während ein großer Teil des Zählers, etwa die Halle, stehen bleibt, fällt der Quotient. Das Buch beschreibt genau diese Aufteilung auf eine größere Stückzahl. Niedrigere Stückkosten sind deshalb in vielen Fällen die Folge höherer Produktion unter Spezialisierung, nicht ein Zufall. Die Identität Kosten pro Stück gleich Gesamtkosten durch Menge trägt die Behauptung.\n\nDie Aussage ist wahr.",
+      "Die Errichtung einer Produktionshalle ist ein Kostenblock, der nicht Stück für Stück mitwächst. Ob später die volle oder nur die halbe Kapazität läuft, ändert den einmaligen Bauaufwand nicht. Verdoppelt sich die erzeugte Menge, verdoppelt sich dieser Hallenbetrag nicht im Gleichschritt. Angenommen, die Halle kostet in der Errichtung 400000 Euro: bei 2000 Stück lastet rechnerisch 200 Euro Hallenkosten auf jedem Stück, bei 4000 Stück nur noch 100 Euro. Die gesamten Produktionskosten werden auf mehr Einheiten verteilt, die Kosten pro Stück sinken. Ein starres Verhältnis 1 zu 1 von Hallenaufwand und Stückzahl widerspricht genau diesem Mechanismus, den das Buch an der Halle vorführt.\n\nDie Aussage ist falsch.",
+      "Niedrigere Stückkosten bleiben nicht in der Buchhaltung stehen. Das Kapitel zieht die Folge: der Preis, zu dem ein Stück verkauft werden kann, kann sinken. Spezialisierung wirkt so über Menge und Kostenteilung bis zum Marktpreis. Die Aussage behauptet keinen Zwang zu einer bestimmten Preissenkung, sondern die im Text genannte Möglichkeit. Halle, Stückzahl und Preis hängen in dieser Reihenfolge zusammen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.15",
+    "title": "Zulieferrisiko und Medikamente",
+    "context": "Ein pharmazeutischer Betrieb bezieht Wirkstoffe von spezialisierten Lieferanten. Eine Charge kommt verspätet und in schwankender Qualität. Bewerten Sie die folgenden Aussagen zu den Nachteilen der Spezialisierung:",
+    "statements": [
+      "Spezialisierung bedeutet auch Abhängigkeit von den anderen Unternehmen, die zuliefern sollen.",
+      "Diese Abhängigkeit betrifft die Qualität der Lieferung sowie eine ausreichende Menge, die zur richtigen Zeit eintreffen soll.",
+      "Verzögerte oder qualitativ schlechte Lieferung kann die eigene Produktion beeinträchtigen und zu Imageverlust sowie Auftragsverlust führen.",
+      "Besonders problematisch ist diese Abhängigkeit, wenn es um Produkte geht, die die Bevölkerung dringend benötigt, etwa Medikamente.",
+      "Sobald ein Betrieb in einem Schritt kompetent ist, entfällt jede Abhängigkeit von Zulieferern, weil Können Lieferrisiko vollständig aufhebt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zulieferer tragen Teile der Kette, die der spezialisierte Betrieb nicht mehr selbst beherrscht. Abhängigkeit ist deshalb die Kehrseite der Konzentration, nicht ein Betriebsunfall. Das Buch stellt diesen Nachteil unmittelbar nach den Kostenvorteilen. Der Pharmahersteller, der Wirkstoffe kauft, hängt an fremden Werken, selbst wenn die eigene Tablettierung hervorragend organisiert ist. Spezialisierung beseitigt diese Bindung nicht, sie erzeugt sie.\n\nDie Aussage ist wahr.",
+      "Qualität und Terminmenge sind die zwei Achsen der Abhängigkeit. Schlechte Charge und verspätete Charge sind im Text beide genannt: Qualität der Lieferung einerseits, ausreichende Menge zur richtigen Zeit andererseits. Preis allein ist nicht das Kriterium dieses Abschnitts. Der pharmazeutische Fall trifft beide Achsen: schwankende Qualität und Verspätung. Wer nur auf den Einkaufspreis schaut, unterschätzt den Nachteil, den das Kapitel beschreibt.\n\nDie Aussage ist wahr.",
+      "Produktion steht still oder wird fehlerhaft, sobald das Vorprodukt fehlt oder untauglich ist. Daraus können Imageverlust und der Verlust von Aufträgen folgen, so das Buch. Die Kette ist kausal, nicht bloß ärgerlich: Zulieferfehler, beeinträchtigte eigene Fertigung, beschädigte Außenwirkung, wegbrechende Bestellungen. Die verspätete Wirkstoffcharge illustriert denselben Pfad. Feinere Arbeitsteilung erhöht diese Verletzlichkeit, wenn eine spezialisierte Vorleistung ausfällt.\n\nDie Aussage ist wahr.",
+      "Medikamente stehen im Text als Beispiel für Güter, die die Bevölkerung dringend benötigt. Dort wird die Zulieferabhängigkeit besonders problematisch, weil nicht nur ein Firmenimage, sondern die Versorgung auf dem Spiel steht. Ein verspäteter Wirkstoff ist dann keine bloße Margenfrage. Die Aussage übernimmt dieses qualitative Urteil des Kapitels, ohne eine bestimmte Fehlmenge zu erfinden. Dringlichkeit macht aus betrieblicher Abhängigkeit ein gesellschaftliches Risiko.\n\nDie Aussage ist wahr.",
+      "Kompetenz im eigenen Schritt ersetzt die fremde Charge nicht. Das Kapitel trennt die Vorteile Konzentration, Können, Menge und Stückkosten klar von der Abhängigkeit in Qualität und Termin. Wer die Vorteilseite zur Aufhebung des Risikos erklärt, vermengt beide Absätze zu einem einzigen Wunschbild. Der pharmazeutische Betrieb kann Tablettierung meistern und trotzdem ohne rechtzeitigen, brauchbaren Wirkstoff nicht liefern; Image und Aufträge bleiben angreifbar. Können hebt das Lieferrisiko nicht vollständig auf, es macht den eigenen Ausschnitt stark und den Rest der Kette fremd. Gerade bei Medikamenten, die die Bevölkerung dringend braucht, bleibt diese Fremdheit gefährlich.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.16",
+    "title": "Lange Wege als Umweltlast",
+    "context": "Fahrradteile reisen über Kontinente, bevor ein fertiges Rad beim Händler steht. Bewerten Sie die folgenden Aussagen zu Lieferketten und Umwelt:",
+    "statements": [
+      "Lange Lieferwege und Lieferketten sind zudem ein ökologisches Problem.",
+      "Einzelne Teile für ein Produkt aus verschiedenen Ländern und Kontinenten viele tausend Kilometer zu transportieren bedeutet in der Regel eine hohe Belastung der Umwelt.",
+      "Diese Belastung entsteht vor allem beim Transport durch LKW, Containerschiffe oder Flugzeuge.",
+      "Internationale Spezialisierung beseitigt die ökologische Last des Transports vollständig, weil Stückkosten und Umweltbelastung einander ausschließen.",
+      "Das Buch erwähnt ökologische Probleme langer Ketten nicht, es behandelt ausschließlich Hallenkosten und Kompetenz."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Lange Wege stehen im Kapitel als eigener Nachteil neben der Zulieferabhängigkeit. Spezialisierung über Ländergrenzen schafft Mengen- und Kompetenzgewinne, zieht aber Transportstrecken nach sich. Das Buch nennt Lieferwege und Lieferketten ausdrücklich ein ökologisches Problem. Die Fahrradteile, die Kontinente kreuzen, sind genau dieser Fall, nicht ein Randthema außerhalb der Arbeitsteilung. Ökologie gehört zur Bewertung der Spezialisierung, nicht nur die Stückkosten.\n\nDie Aussage ist wahr.",
+      "Viele tausend Kilometer für einzelne Teile aus verschiedenen Ländern und Kontinenten: so formuliert der Text die Regel einer hohen Umweltbelastung. Es geht nicht um einen einmaligen Kurztrip zwischen zwei Nachbarwerken, sondern um die globale Kette, die das Fahrradbeispiel vorbereitet. In der Regel heißt: typischerweise hohe Last, nicht eine ausnahmslose Naturgesetzformel ohne Transportmittel. Die Aussage bleibt bei dieser qualitativen Regel.\n\nDie Aussage ist wahr.",
+      "Drei Träger der Last nennt das Buch namentlich: LKW, Containerschiffe und Flugzeuge. Vor allem dieser Güterverkehr belastet die Umwelt, wenn Teile über große Distanz bewegt werden. Die Aufzählung ist die Konkretisierung des ökologischen Problems, nicht eine beliebige Verkehrsliste. Ein Fahrradrahmen, der per Schiff und LKW reist, fällt darunter. Andere Verkehrsträger schließt der Satz nicht philosophisch aus, er benennt die im Text zentralen.\n\nDie Aussage ist wahr.",
+      "Stückkosten und Umweltlast laufen im Kapitel nacheinander, nicht als sich gegenseitig auslöschende Größen. Niedrigere Kosten pro Stück sind ein Vorteil der Spezialisierung, weil Halle und ähnliche Blöcke sich auf mehr Einheiten verteilen. Lange Wege sind ein ökologisches Problem derselben Spezialisierung, sobald Teile über Länder und Kontinente reisen. Vollständige Beseitigung der Transportlast durch internationale Arbeitsteilung behauptet der Text nicht. Im Gegenteil: gerade die internationale Kette erzeugt die Kilometer mit LKW, Containerschiff und Flugzeug. Wer Vorteil und Nachteil zu einem Spiel erklärt, in dem Umwelt verschwindet sobald der Stückpreis fällt, widerspricht der Gliederung.\n\nDie Aussage ist falsch.",
+      "Hallenkosten und Kompetenz füllen den Vorteilsabsatz, Abhängigkeit und lange Wege füllen den Nachteilsabsatz. Ökologie ist dort ausdrücklich genannt: hohe Belastung vor allem durch LKW, Containerschiff und Flugzeug. Die Behauptung, das Buch schweige zur Umwelt und kenne nur Halle und Können, streicht den Schlussteil. Das Fahrrad mit globalen Teilen ist ohne diese Seite unvollständig gelesen. Spezialisierung wird als Doppelgesicht dargestellt, nicht als reine Kostengeschichte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

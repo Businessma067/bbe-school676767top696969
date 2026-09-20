@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Short Balance Sheet Extract 1",
+    "statements": [
+      "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.",
+      "The current ratio exceeds 1.27.",
+      "Inventory of €65 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €320 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.001",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 200 |\n| Inventory | 65 |\n| Cash and cash equivalents | 55 |\n| Total assets | **320** |\n| **EQUITY** | |\n| Share capital | 150 |\n| Retained earnings | 23 |\n| Total equity | **173** |\n| **LIABILITIES** | |\n| Long-term bank loan | 115 |\n| Trade payables | 32 |\n| Total liabilities | **147** |\n| Total equity and liabilities | **320** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Financial Accounting and External Users",
+    "statements": [
+      "Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.002",
+    "context": "Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Short Depreciation Extract 3",
+    "statements": [
+      "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
+      "Residual value reduces the amount of Asset B's cost that is spread as depreciation.",
+      "Asset A will be fully written down to nil residual value at the end of its useful life.",
+      "Because the extract above (the combined asset cost of €99,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €99,000 thousand) must follow the identical statutory format shown here."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.003",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €76,000 purchase price, 6-year useful life, no residual value |\n| Asset B | €23,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Management Accounting for Internal Users",
+    "statements": [
+      "Management accounting reports prepared for managers of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Lenders of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Employees of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Managers of a manufacturer work inside the business and can be given management accounting reports designed around their own questions."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.004",
+    "context": "Review how owners, lenders, tax authorities and investors are generally classified as external users of accounting information. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Owners Weighing Return Against Risk",
+    "statements": [
+      "Management accounting reports prepared for employees of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Managers of a manufacturer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a manufacturer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Employees of a manufacturer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Owners of a manufacturer look at accounting information mainly to judge the return earned on the capital they have invested."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.005",
+    "context": "Analyze why managers and employees are generally classified as internal users of accounting information. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Liquidity From the Balance Sheet 6",
+    "statements": [
+      "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.",
+      "The current ratio exceeds 1.34.",
+      "Working capital of €204 thousand is positive on this balance sheet.",
+      "The equity ratio is below 20%.",
+      "The debt ratio exceeds 63.6%."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.006",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 292 |\n| Machinery | 176 |\n| Office equipment | 42 |\n| Patents, trademarks and licences | 45 |\n| Inventory | 192 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 102 |\n| Total assets | **964** |\n| **EQUITY** | |\n| Share capital | 149 |\n| Retained earnings | 116 |\n| Total equity | **265** |\n| **LIABILITIES** | |\n| Long-term bank loan | 436 |\n| Bonds payable | 58 |\n| Trade payables | 170 |\n| Bank overdraft | 35 |\n| Total liabilities | **699** |\n| Total equity and liabilities | **964** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Lenders and Repayment Capacity",
+    "statements": [
+      "Lenders of a manufacturer look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a manufacturer look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a manufacturer look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a manufacturer look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a manufacturer look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.007",
+    "context": "Review why owners weigh the return on their investment against the risk they are taking. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Short Balance Sheet Extract 8",
+    "statements": [
+      "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.",
+      "Inventory of €116 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €511 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €511 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses total assets of €511 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.008",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 348 |\n| Inventory | 116 |\n| Cash and cash equivalents | 47 |\n| Total assets | **511** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 172 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 172 |\n| Trade payables | 49 |\n| Total liabilities | **221** |\n| Total equity and liabilities | **511** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Short Depreciation Extract 9",
+    "statements": [
+      "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.",
+      "Asset A's annual depreciation charge is more than 29.9% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.009",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €65,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 10",
+    "statements": [
+      "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+      "Working capital of €133 thousand is positive on this balance sheet.",
+      "The debt ratio exceeds 56%.",
+      "Trade receivables make up less than 48.5% of current assets.",
+      "Cash and cash equivalents make up more than 23.1% of current assets."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.010",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Short Balance Sheet Extract 11",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The equity ratio is below 29.8%.",
+      "A published version of the extract above, showing total assets of €517 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "The long-term bank loan of €120 thousand is correctly classified within equity.",
+      "Because the extract above (total assets of €517 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.011",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 347 |\n| Inventory | 116 |\n| Cash and cash equivalents | 54 |\n| Total assets | **517** |\n| **EQUITY** | |\n| Share capital | 94 |\n| Retained earnings | 225 |\n| Total equity | **319** |\n| **LIABILITIES** | |\n| Long-term bank loan | 120 |\n| Trade payables | 78 |\n| Total liabilities | **198** |\n| Total equity and liabilities | **517** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Tax Authorities and Filed Accounts",
+    "statements": [
+      "Owners of a manufacturer have no interest in the return earned on the capital they have invested when they look at accounting information.",
+      "Lenders of a manufacturer have no interest in whether the business will be able to repay what it owes when they look at accounting information.",
+      "Owners of a retailer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Tax authorities of a manufacturer have no interest in how much tax is due on the business's profit when they look at accounting information."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.012",
+    "context": "Analyze why lenders focus on a business's ability to repay what it owes. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Short Depreciation Extract 13",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Asset A's annual depreciation charge is more than 39.5% higher than Asset B's annual depreciation charge.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.",
+      "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.013",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €74,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Balance Sheet Structure Review 14",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The current ratio exceeds 1.35.",
+      "The current ratio is below 0.9.",
+      "The debt ratio exceeds 47.9%.",
+      "Inventory make up more than 54% of current assets."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.014",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 510 |\n| Machinery | 167 |\n| Office equipment | 75 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 263 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 38 |\n| Total assets | **1313** |\n| **EQUITY** | |\n| Share capital | 204 |\n| Retained earnings | 419 |\n| Total equity | **623** |\n| **LIABILITIES** | |\n| Long-term bank loan | 361 |\n| Bonds payable | 66 |\n| Trade payables | 237 |\n| Bank overdraft | 26 |\n| Total liabilities | **690** |\n| Total equity and liabilities | **1313** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Short Balance Sheet Extract 15",
+    "statements": [
+      "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
+      "The current ratio exceeds 1.3.",
+      "The equity ratio is below 25.2%.",
+      "Inventory of €85 thousand is correctly classified as a current asset.",
+      "The long-term bank loan of €101 thousand is correctly classified within equity."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.015",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 255 |\n| Inventory | 85 |\n| Cash and cash equivalents | 76 |\n| Total assets | **416** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 117 |\n| Total equity | **279** |\n| **LIABILITIES** | |\n| Long-term bank loan | 101 |\n| Trade payables | 36 |\n| Total liabilities | **137** |\n| Total equity and liabilities | **416** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Short Depreciation Extract 16",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "Asset A's annual depreciation charge is more than 32.4% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €117,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €117,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €117,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.016",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €78,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €39,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Partnership Formation and Agreement Essentials",
+    "statements": [
+      "If two or more persons jointly found a business, that business is called a partnership.",
+      "Partners need to set up a partnership agreement to settle rights, responsibilities, and the division of profits and losses.",
+      "In a general partnership all partners have equal rights, liabilities, and responsibilities.",
+      "Each of the partners is solely liable for all debts of the business under unlimited liability.",
+      "Partners can share the tasks and specialise in different areas of the business."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.01",
+    "context": "Consider two consultants who jointly found a business and draft a partnership agreement covering ownership shares, profit division, and decision rights. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Limited Partner Liability Distinctions",
+    "statements": [
+      "A partnership can be formed when only one person owns and manages the business.",
+      "A limited partner who is not involved in management has liability limited to the amount of money contributed to the business.",
+      "A limited partner who takes an active role in daily management retains liability capped only at the capital contributed.",
+      "A general partnership requires a limited partner who stays outside management.",
+      "Because partnerships involve more than one owner, they automatically become incorporated legal persons with limited liability."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.02",
+    "context": "Review how unlimited liability in a general partnership differs from the capped liability of a limited partner who does not manage the firm. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "General Partnership Rights and Responsibilities",
+    "statements": [
+      "In a limited partnership there is at least one partner who is not involved in the management of the business.",
+      "Two or more partners should possibly be able to invest more savings and raise more financial funds than a sole proprietor.",
+      "Partners together may offer more private assets as collateral when applying for a business loan.",
+      "The financial aspects of partnerships are in general similar to those of sole proprietors.",
+      "The partnership agreement specifies each partner's percentage of ownership and the division of profit and loss."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.03",
+    "context": "Analyze the defining characteristics of a general partnership as a form of business ownership. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Partnership Agreement Contents",
+    "statements": [
+      "A partnership agreement is unnecessary when only two founders trust one another to divide returns fairly.",
+      "Hiring a salaried manager converts a one-person business into a partnership.",
+      "A clause assigning one partner to handle suppliers removes unlimited liability from the other general partners.",
+      "A general partner's liability is limited to the ownership percentage recorded in the partnership agreement.",
+      "Decision making and resolving disputes are among the details partners record in the partnership agreement."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.04",
+    "context": "Review the contractual elements partners include when settling how their jointly founded business will operate. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Partnership Financial Resources",
+    "statements": [
+      "All partners in a limited partnership share equal unlimited liability because the firm remains unincorporated.",
+      "In difficult situations partners can exchange ideas and perhaps make better decisions.",
+      "Managing partners in a limited partnership remain subject to unlimited liability for all firm debts.",
+      "Recording unequal ownership percentages in the agreement does not by itself cap each general partner's liability at that share of debt.",
+      "A partnership agreement that assigns sixty percent ownership to one partner caps that partner's liability at sixty percent of debts."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.05",
+    "context": "Analyze how the financial aspects of partnerships compare with those of sole proprietors when raising funds and offering collateral. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Unlimited Liability in General Partnerships",
+    "statements": [
+      "Specialising in one function does not release a general partner from unlimited liability for debts arising elsewhere in the firm.",
+      "Limited partnership status does not remove unlimited liability from partners who manage the business.",
+      "Incorporating as a partnership automatically grants every partner limited liability equal to their capital contribution.",
+      "Profit-sharing proportions stated in the agreement do not automatically divide each partner's legal liability in the same proportions.",
+      "Creditors under unlimited liability may pursue any one general partner for the full outstanding debt of the partnership."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.06",
+    "context": "Consider a general partnership where every partner participates in management and shares business risk. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Limited Partnership Structure",
+    "statements": [
+      "Terms of the partnership and other operational details may appear alongside profit division in the partnership agreement.",
+      "Partners who intend to be equally involved in management and share financial risk often choose a general partnership structure.",
+      "Rights and responsibilities of each partner are among the matters settled in the partnership agreement.",
+      "Oral promises between founders eliminate the need to settle profit division in a written partnership agreement.",
+      "Under unlimited liability a creditor must collect an equal fraction of the debt from every partner simultaneously."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.07",
+    "context": "Review the structure of a limited partnership that combines managing partners with at least one non-managing capital provider. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Partnership Decision Making and Collaboration",
+    "statements": [
+      "A business owned and managed by one person qualifies as a partnership once that person hires a salaried manager.",
+      "Because partners share profits, each partner's legal liability is automatically divided in proportion to profit share.",
+      "Partners in a general partnership must perform every management task themselves and cannot share or specialise.",
+      "Equal rights in a general partnership mean no partner may ever take a different specialised role from another partner.",
+      "Offering more private assets as collateral is plausible when several partners combine their personal resources."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.08",
+    "context": "Analyze how partners in a jointly founded business combine management duties and collective judgment. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Partnership Agreement and Joint Founding",
+    "statements": [
+      "A silent capital contributor who does not manage the firm has liability limited to the money contributed in a limited partnership.",
+      "Joint founding by two or more persons remains necessary before general or limited partnership rules apply.",
+      "Equal rights in a general partnership can coexist with unequal ownership percentages recorded in the agreement.",
+      "The partnership agreement should address decision-making procedures together with methods for resolving disputes between partners.",
+      "Each partner's percentage of ownership is among the details settled when partners set up the partnership agreement."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.09",
+    "context": "Review how founders of a partnership document ownership, profit sharing, and governance before trading begins. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "General Versus Limited Partner Roles",
+    "statements": [
+      "Unlimited liability means private assets of partners may be reached if business assets cannot cover unpaid debts.",
+      "A limited partnership requires no partnership agreement because liability rules alone settle every governance detail.",
+      "Two consultants who jointly found a firm and intend equal management involvement are describing a general partnership.",
+      "Limited partners are not involved in the management of the business while general partners manage operations.",
+      "Pooling partner savings can increase total investable funds available to the business compared with a single owner."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.10",
+    "context": "Consider a partnership that includes both actively managing founders and a silent capital contributor. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Partnership Liability Fundamentals",
+    "statements": [
+      "Every partner in a limited partnership enjoys liability capped at the capital each one invested.",
+      "A sole proprietor typically has greater combined collateral capacity than a multi-partner firm.",
+      "Partnerships face entirely different financial rules from sole proprietors and cannot invest personal savings similarly.",
+      "A limited partner who manages daily operations retains liability capped at the ownership percentage in the agreement.",
+      "A limited partnership may include both managing partners with unlimited liability and a non-managing partner with capped liability."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.11",
+    "context": "Review the liability rules that apply when two or more persons jointly operate an unincorporated business. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Partnership Management and Specialisation",
+    "statements": [
+      "Unequal ownership percentages stated in the agreement automatically convert a general partnership into a limited partnership.",
+      "Exchanging ideas in difficult situations may help partners reach better decisions than isolated decision makers.",
+      "The silent capital contributor in a limited partnership manages daily operations alongside the founding partners.",
+      "Partners may pledge private assets as loan collateral even though each general partner faces unlimited liability.",
+      "Founders of a partnership may begin trading without any agreement because oral understandings always suffice."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.12",
+    "context": "Analyze how general partners divide operational work while retaining shared legal responsibility for the firm. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Partnership Agreement Governance Provisions",
+    "statements": [
+      "Profit and loss division need not be documented if partners trust one another to divide returns fairly.",
+      "Decision-making rules and procedures for resolving disputes need not appear in a partnership agreement.",
+      "A single sole proprietor can normally pledge more combined private collateral than two partners acting together.",
+      "Resolving disputes between partners is a matter partners may address within the partnership agreement.",
+      "Limited partnership status removes the need for any partner to accept personal liability for business debts."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.13",
+    "context": "Review the governance clauses partners include when settling how their jointly founded enterprise will be run. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Partnership Finance Compared With Sole Trading",
+    "statements": [
+      "Taking an active management role while claiming limited partner status preserves capped liability for that partner.",
+      "A partner who paid the full debt to a creditor may still have internal recovery claims against co-partners.",
+      "A partnership agreement is unnecessary when only two founders are involved because equal shares are assumed by default.",
+      "Limited partners who manage daily operations retain liability capped at their capital contribution.",
+      "Two or more persons who jointly found a business create what is economically termed a partnership."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.14",
+    "context": "Consider a neighbourhood bakery founded by two partners who pool savings and seek a bank loan for equipment. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Equal Rights in General Partnerships",
+    "statements": [
+      "Rights, responsibilities, and profit-loss division are recorded together in the partnership agreement.",
+      "Partners specify decision-making procedures and methods for resolving disputes within the partnership agreement.",
+      "A partnership always raises less external finance than a corporation because shares cannot be sold publicly.",
+      "Partners who intend equal management involvement must choose a limited partnership rather than a general partnership.",
+      "A partner who specialises in client relations is liable only for debts that arise from client contracts."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.15",
+    "context": "Analyze the balance of rights, liabilities, and responsibilities among partners in a general partnership. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Limited Partner Non-Management Rule",
+    "statements": [
+      "Terms of the partnership and other operational details may also appear in the partnership agreement.",
+      "Recording unequal ownership percentages in the agreement converts unlimited liability into limited liability for all partners.",
+      "General managing partners in a limited partnership enjoy liability capped at their ownership percentage.",
+      "Each general partner remains solely liable for all debts even when the partnership agreement assigns unequal ownership percentages.",
+      "More combined savings and collateral can make partnership borrowing plausible compared with sole trading."
+    ],
+    "subsection": "4.2",
+    "case_id": "CASE 4.2.16",
+    "context": "Review the conditions under which a partner's liability is capped at contributed capital in a limited partnership. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  }
+]

@@ -18,13 +18,13 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
       {
         name: "description",
         content:
-          "WiSo economics practice mapped to Wirtschaft verstehen: Grundlagen der Wirtschaft and Unternehmensgrundlagen for the WU Aufnahmeprüfung.",
+          "WiSo-Wirtschaftsaufgaben zur Lernunterlage Wirtschaft verstehen (Aufnahmeprüfung 2026): Wahr/Falsch nach Kapiteln, mit Lehrererklärungen.",
       },
       { property: "og:title", content: "Wirtschaft verstehen — Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Practice cases aligned to Grundlagen der Wirtschaft and Unternehmensgrundlagen — remapped from the BBE Full Course bank, in German.",
+          "Aufgaben zu allen Kapiteln von Wirtschaft verstehen 2026, im BBE-Wahr/Falsch-Stil, auf Deutsch.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -41,7 +41,8 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
           loadAllChapters={loadAllWisoEconomicsChapterTasks}
           storageKey="wiso.economics.progress.v1"
           backTo="/wiso/products/full-course-subjects"
-          enableTheory={false}
+          enableTheory
+          theorySubject="wiso-economics"
         />
       </RequireFullCourse>
     );

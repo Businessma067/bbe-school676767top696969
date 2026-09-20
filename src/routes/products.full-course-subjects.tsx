@@ -37,9 +37,20 @@ const subjects = [
     title: "Economics",
     image: economicsAsset.url,
     accent: "#E85D3A",
-    tag: "Markets & Business",
+    tag: "BBE · English",
+    href: "/products/full-course-economics",
     description:
       "Master supply and demand, market structures, elasticities, and the economic intuition tested on the WU BBE exam.",
+  },
+  {
+    id: "wiso-economics",
+    title: "WISO Wirtschaft",
+    image: economicsAsset.url,
+    accent: "#0F766E",
+    tag: "WISO · Deutsch",
+    href: "/wiso/products/full-course-economics",
+    description:
+      "Aufgaben zur Lernunterlage Wirtschaft verstehen (Aufnahmeprüfung 2026): Wahr/Falsch nach Kapiteln, mit Lehrererklärungen.",
   },
   {
     id: "math",
@@ -47,6 +58,7 @@ const subjects = [
     image: mathAsset.url,
     accent: "#3B82F6",
     tag: "Quantitative",
+    href: "/products/full-course-math",
     description:
       "Sharpen algebra, ratios, percentages, graphs, and the quantitative shortcuts that save time under pressure.",
   },
@@ -56,6 +68,7 @@ const subjects = [
     image: englishAsset.url,
     accent: "#2DD4A8",
     tag: "Language",
+    href: "/products/full-course-english",
     description:
       "Build reading speed, vocabulary, and logical reasoning for the language and comprehension part of the exam.",
   },
@@ -85,7 +98,7 @@ function FullCourseSubjects() {
             <p className="mt-4 text-lg text-muted-foreground">Choose a subject to begin.</p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {subjects.map((s) => (
               <div
                 key={s.id}
@@ -119,15 +132,9 @@ function FullCourseSubjects() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.description}
                   </p>
-                  {s.id === "economics" || s.id === "math" || s.id === "english" ? (
+                  {s.href ? (
                     <Link
-                      to={
-                        s.id === "economics"
-                          ? "/products/full-course-economics"
-                          : s.id === "math"
-                            ? "/products/full-course-math"
-                            : "/products/full-course-english"
-                      }
+                      to={s.href}
                       className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                       style={{
                         backgroundColor: s.accent,

@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.01",
+    "title": "Bedürfnisse auch in der Zukunft",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Bedeutung von Nachhaltigkeit:",
+    "statements": [
+      "Nachhaltigkeit bedeutet, dass das gemeinsame System von Wirtschaft und Umwelt in der Lage ist, die Bedürfnisse der Menschen auch in der Zukunft zu befriedigen.",
+      "Ein nachhaltiges System umfasst nur die Umwelt und lässt Wirtschaft sowie Gesellschaft außen vor.",
+      "Wirtschaftliches Handeln gilt als nachhaltig, wenn es innerhalb der biophysischen Grenzen des Planeten erfolgt, ohne die natürlichen Lebensgrundlagen zu zerstören.",
+      "Ein wirtschaftliches System, das diese Prinzipien nicht berücksichtigt, gefährdet ausschließlich die Umwelt und niemals die eigene Stabilität.",
+      "Nachhaltige Wirtschaftsstrukturen sind so gestaltet, dass sie die Bedürfnisse aller Menschen decken und zugleich soziale Inklusion und gesellschaftlichen Zusammenhalt fördern."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Nachhaltigkeit zielt auf das gemeinsame System von Wirtschaft und Umwelt, nicht auf einen isolierten Naturschutzbegriff. Die Bedürfnisse der Menschen sollen auch später noch erfüllbar bleiben. Genau diese Zukunftsfähigkeit ist die erste Begriffsklärung des Abschnitts.\n\nWer nur den heutigen Absatz sieht, verfehlt den Punkt: das System muss morgen noch tragen. Wirtschaft und Umwelt werden hier als Einheit gedacht, deren Leistungskraft erhalten bleibt.\n\nOhne diese zeitliche Dehnung bleibt Nachhaltigkeit ein Etikett für heutige Produktion. Der Abschnitt beginnt mit der Fähigkeit des Systems, Bedürfnisse später noch zu decken, und das ist der Maßstab.\n\nDie Aussage ist wahr.",
+      "Nur die Umwelt zu nennen, lässt zwei der drei Felder weg, die der Text ausdrücklich zusammenbindet. Wirtschaft, Gesellschaft und Umwelt bilden das System, das als nachhaltig gelten kann. Eine reine Umweltformel ohne Wirtschaft und Gesellschaft ist zu schmal.\n\nSoziale Inklusion und wirtschaftliches Handeln innerhalb planetarer Grenzen gehören zur Definition dazu. Wer Gesellschaft und Wirtschaft abschneidet, beschreibt nicht das Lehrbuchkonzept.\n\nEntschlossenes Handeln soll Wirtschaft und Gesellschaft innerhalb biophysischer Grenzen erfolgreich machen und soziale Gerechtigkeit gewährleisten. Das gelingt nicht, wenn zwei der drei Felder aus der Definition fallen.\n\nDie Aussage ist falsch.",
+      "Innerhalb der biophysischen Grenzen zu bleiben und Lebensgrundlagen nicht zu zerstören, ist die operative Bedingung. Wirtschaften darf die physische Basis des Planeten nicht aufbrauchen. Das ist die Brücke von der Wortbedeutung zur Handlungsregel.\n\nOhne diese Grenze wäre jedes beliebige Wachstum schon nachhaltig, sobald jemand den Begriff verwendet. Der Text knüpft Nachhaltigkeit an planetare Grenzen, nicht an ein Etikett.\n\nDie Aussage ist wahr.",
+      "Ignorierte Prinzipien treffen nicht nur Wälder oder Gewässer. Der Text nennt ausdrücklich auch die Stabilität des Wirtschaftssystems und die gesellschaftliche Wohlfahrt als gefährdet. Die Verengung auf Umwelt allein ist daher unzutreffend.\n\nWer Folgekosten ausblendet, untergräbt die eigene Geschäftsgrundlage, weil Klima, Ressourcen und sozialer Zusammenhalt die Produktion tragen. Die Absolute „niemals die eigene Stabilität“ hält nicht.\n\nDie Aussage ist falsch.",
+      "Bedürfnisse aller Menschen und sozialer Zusammenhalt stehen neben der ökologischen Grenze, nicht hinter ihr. Nachhaltige Strukturen sollen decken und einschließen, nicht nur Emissionen zählen. Inklusion ist Teil der Gestaltungsaufgabe.\n\nDamit ist Nachhaltigkeit dreifach: biophysische Grenze, Bedarfsdeckung, gesellschaftlicher Halt. Die Aussage gibt diese Kombination wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.02",
+    "title": "Ressourcen zurück in den Kreislauf",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Ressourcenentnahme und nachhaltige Wirtschaftsstrukturen:",
+    "statements": [
+      "Entscheidend ist, wie Ressourcen entnommen, genutzt und wieder in Kreisläufe zurückgeführt werden, damit ökologische Belastungsgrenzen nicht überschritten werden.",
+      "Sobald ein Unternehmen Gewinn erzielt, ist sein Handeln automatisch nachhaltig, unabhängig von Umweltwirkungen.",
+      "Langfristig erfolgreiches Wirtschaften schließt ein, dass Unternehmen und Konsumentinnen sowie Konsumenten bei ihren Entscheidungen die Auswirkungen auf andere und die Umwelt einbeziehen.",
+      "Nachhaltige und widerstandsfähige Wirtschaftssysteme sollen das Wohlergehen der Menschen fördern und zugleich die Gesundheit der Ökosysteme erhalten.",
+      "Wechselwirkungen zwischen Natur und Wirtschaft zu ignorieren, ist der sicherste Weg zu widerstandsfähigen Systemen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Entnahme, Nutzung und Rückführung entscheiden, ob Belastungsgrenzen halten. Der Text hebt den Kreislauf der Materialien hervor, nicht nur die erste Förderung. Wer Rohstoffe holt und nie zurückführt, treibt die Überschreitung voran.\n\nDie Gestaltung der Flüsse ist deshalb der Hebel: Wiederverwertung und Rückführung gehören zur Nachhaltigkeitsdefinition, nicht als optionaler Anhang.\n\nÖkologische Belastungsgrenzen werden nicht durch den ersten Abbauschritt allein gesetzt, sondern durch den gesamten Pfad bis zur Rückführung. Wer nur fördert und nie zurückgibt, bleibt im linearen Muster.\n\nDie Aussage ist wahr.",
+      "Gewinn allein beweist keine Nachhaltigkeit. Ein positives Ergebnis kann gerade entstehen, weil Folgekosten auf Umwelt oder Dritte abgewälzt werden. Der Text koppelt Nachhaltigkeit an Grenzen und Auswirkungen, nicht an die Gewinn- und Verlustrechnung allein.\n\nEin Betrieb kann rentabel sein und gleichzeitig Lebensgrundlagen zerstören. Automatik zwischen Gewinn und Nachhaltigkeit gibt es hier nicht.\n\nKurzfristige Rendite kann die Rechnung sogar schöner machen, während Gesellschaft und Ökosystem die Restkosten tragen. Gewinn ist ein Erfolgskennzeichen der Firma, nicht der Nachweis planetarer Verträglichkeit.\n\nDie Aussage ist falsch.",
+      "Kapitel 1.3 koppelt langfristigen Erfolg an verantwortliches Handeln: Auswirkungen auf andere und die Umwelt einbeziehen. Der Abschnitt 2.2 greift das ausdrücklich wieder auf. Unternehmen und Haushalte stehen beide in der Pflicht.\n\nOhne diese Einbeziehung bleibt Wirtschaften kurzfristig, auch wenn es heute noch funktioniert. Die Aussage trifft die Wiederholung aus 1.3 im Nachhaltigkeitskapitel.\n\nDie Aussage ist wahr.",
+      "Wohlergehen und intakte Ökosysteme sind das Doppelziel am Anfang des Abschnitts. Widerstandsfähigkeit entsteht, wenn beides zusammen gedacht wird. Menschenförderung ohne Ökosystemintegrität wäre unvollständig, umgekehrt ebenso.\n\nDie Formulierung im Text ist bewusst und, nicht oder. Die Aussage gibt dieses Und wieder.\n\nDie Aussage ist wahr.",
+      "Wechselwirkungen auszublenden schwächt Systeme, statt sie zu stärken. Der Einstieg nennt das Erkennen dieser Kopplung als entscheidend für nachhaltige, widerstandsfähige Wirtschaft. Ignoranz ist das Gegenteil der geforderten Haltung.\n\nWer Natur und Wirtschaft getrennt denkt, übersieht, dass zerstörte Ökosysteme die wirtschaftliche Basis untergraben. Der sicherste Weg ist das Verstehen, nicht das Ausblenden.\n\nDer erste Satz des Kapitels macht das Erkennen der Wechselwirkungen zur Voraussetzung widerstandsfähiger Systeme. Wer sie ignoriert, baut auf einer Basis, die der Text als gefährdet beschreibt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.03",
+    "title": "Take, Make, Waste in der Produktion",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema lineares Wirtschaften:",
+    "statements": [
+      "In vielen Bereichen folgt wirtschaftliches Handeln noch dem linearen Prinzip, Rohstoffe zu entnehmen, Produkte herzustellen, zu konsumieren und anschließend zu entsorgen.",
+      "Die Möglichkeit, Materialien wiederzuverwenden, zu reparieren oder wiederzuverwerten, wird in linearen Systemen oft bewusst ausgeschöpft und nie vernachlässigt.",
+      "Ein linearer Ressourcenfluss führt zu wachsender Umweltbelastung, steigendem Ressourcenverbrauch und zunehmendem Druck auf die planetaren Grenzen.",
+      "Diese Wirtschaftsweise kann zentrale biophysische Systeme wie Klima, Artenvielfalt, Land und Wasser destabilisieren.",
+      "Lineares Wirtschaften hat keine Folgen für wirtschaftliche Stabilität oder menschliches Wohlergehen, weil nur die Umwelt betroffen wäre."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Rohstoffe holen, fertigen, nutzen, wegwerfen: das ist das lineare Muster, das der Text mit Take, Make, Waste benennt. Es beschreibt den noch vorherrschenden Fluss, nicht ein historisches Relikt. Entnahme ohne ausreichende Rückführung bleibt der Normalfall in vielen Bereichen.\n\nAnschließend entsorgen schließt den Strang, statt ihn zu einem Kreis zu biegen. Die Aussage gibt genau diesen Ablauf wieder.\n\nÖkologische Folgekosten von Ressourcenabbau, Emissionen und Abfall bleiben in diesem Strang oft außen vor. Genau deshalb ist das lineare Prinzip nicht nur ein Fließbild, sondern eine Kostenverschiebung.\n\nDie Aussage ist wahr.",
+      "Zirkuläre Nutzung wird im linearen Modell vielfach vernachlässigt, nicht ausgeschöpft. Wiederverwendung, Reparatur und Wiederverwertung wären die Alternative, sie bleiben aber oft ungenutzt. Die Absolute „nie vernachlässigt“ kehrt den Befund um.\n\nWer behauptet, lineare Systeme würden Kreisläufe stets pflegen, verwechselt Soll und Ist. Der Text beschreibt die Lücke, nicht die Vollendung.\n\nTake, Make, Waste lässt Reparatur und Recycling als Ausnahme, nicht als Regel. Die Formulierung nie vernachlässigt würde bedeuten, der lineare Fluss sei bereits kreislauffähig, was der Abschnitt bestreitet.\n\nDie Aussage ist falsch.",
+      "Wachsende Belastung, mehr Verbrauch, mehr Druck auf planetare Grenzen: das sind die genannten Folgen des linearen Flusses. Die Kette ist kausal im Text angelegt. Grenze wird nicht durch Entsorgen entlastet, sondern belastet.\n\nDamit ist Linearität nicht nur ein technisches Layout, sondern ein Treiber ökologischer Überschreitung. Die Aussage hält diese Dreifachfolge fest.\n\nSteigender Ressourcenverbrauch und Druck auf Grenzen folgen, weil Material nach Gebrauch das System verlässt. Entsorgen beendet die private Nutzung, nicht die ökologische Last.\n\nDie Aussage ist wahr.",
+      "Klima, Artenvielfalt, Land und Wasser nennt der Text als biophysische Systeme, die unter linearem Druck destabilisiert werden. Das ist keine Metapher, sondern die benannte Wirkungskette. Destabilisierung trifft die physische Basis der Wirtschaft.\n\nWer nur Abfallberge sieht, unterschätzt die Systemwirkung. Die Aussage bleibt nah an der Aufzählung.\n\nDie Aussage ist wahr.",
+      "Folgen bleiben nicht an der Umweltgrenze stehen. Klimakrise, Biodiversitätsverlust und Übernutzung gefährden laut Text auch wirtschaftliche Stabilität und menschliches Wohlergehen. Die Behauptung einer reinen Umweltsache ist zu eng.\n\nMensch und Markt hängen an denselben Systemen. Die Trennung „nur Umwelt“ widerspricht dem Abschnitt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.04",
+    "title": "Externe Kosten einer Möbelfabrik",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema externe Kosten und kurzfristige Gewinnmaximierung:",
+    "statements": [
+      "Für einzelne Akteure lohnt es sich oft, kurzfristige Gewinne zu maximieren und Produktionskosten zu senken, während Folgekosten auf andere oder auf zukünftige Generationen abgewälzt werden.",
+      "Externe Kosten entstehen nicht beim Unternehmen oder den Konsumentinnen und Konsumenten selbst, sondern werden von der Gesellschaft oder durch ökologische Schäden getragen.",
+      "Wer Emissionen und soziale Ausbeutung auslagert, hat damit alle gesellschaftlichen Kosten intern in den Produktpreis aufgenommen.",
+      "Klimakrise, Verlust der Biodiversität und Übernutzung natürlicher Ressourcen gefährden Umwelt, wirtschaftliche Stabilität und menschliches Wohlergehen.",
+      "Die intensive Entnahme natürlicher Ressourcen ohne Blick auf ökologische Belastungsgrenzen ist im Lehrtext bereits als überall überwunden dargestellt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Kurzfristiger Gewinn und gesenkte Produktionskosten können sich für den einzelnen Betrieb rechnen, weil die Rechnung unvollständig ist. Umweltzerstörung und soziale Ausbeutung wandern als externe Kosten nach außen oder in die Zukunft. Der Anreiz entsteht genau aus dieser Verschiebung.\n\nDie Möbelfabrik, die Abwässer spart, indem sie den Fluss belastet, zeigt denselben Mechanismus: privat billiger, gesellschaftlich teurer. Der Text beschreibt das als noch häufiges Muster.\n\nDie sogenannten externen Kosten, etwa Umweltzerstörung oder soziale Ausbeutung, entstehen in der Produktion, landen aber nicht in der Betriebsrechnung. Künftige Generationen erben den Schaden, der heute den Gewinn stützt.\n\nDie Aussage ist wahr.",
+      "Externe Kosten sitzen nicht in der Kalkulation des Verursachers. Gesellschaft oder Ökosystem tragen sie, obwohl Produktion und Konsum sie auslösen. Das ist die Definition im Abschnitt, nicht ein Sonderfall.\n\nKonsumentinnen und Konsumenten zahlen den Marktpreis, nicht automatisch den vollen Folgeschaden. Die Lücke zwischen Preis und Gesamtkosten ist der Kern des Arguments.\n\nDie Aussage ist wahr.",
+      "Ausgelagerte Emissionen bleiben gerade nicht intern. Externalität heißt, dass der Produktpreis die Folgeschäden nicht vollständig enthält. Wer Auslagerung mit voller Internalisierung gleichsetzt, verdreht den Begriff.\n\nSoziale Ausbeutung in der Kette ist im Text ausdrücklich ein Beispiel externer Kosten. Sie verschwindet nicht, weil sie nicht auf der Rechnung des Endverkäufers steht.\n\nInternalisieren hieße, Folgeschäden in Preisen und Kosten sichtbar zu machen. Auslagern ist der gegenteilige Schritt: die Last wandert zu Dritten, während der Preis unvollständig bleibt.\n\nDie Aussage ist falsch.",
+      "Drei Folgenbündel nennt der Text in einem Atemzug: Klima, Biodiversität, Übernutzung. Sie treffen Umwelt und zugleich Stabilität der Wirtschaft sowie Wohlergehen. Die Verknüpfung ist bewusst vollständig.\n\nNachhaltige Wirtschaft muss deshalb innerhalb ökologischer Grenzen agieren und Wohlergehen sichern, nicht eines von beiden opfern. Die Aussage bleibt bei dieser Kopplung.\n\nEine nachhaltige Wirtschaft muss deshalb innerhalb ökologischer Grenzen agieren und Wohlergehen sichern. Die drei Krisenfelder sind nicht dekorativ, sie begründen die Forderung nach neuen Modellen.\n\nDie Aussage ist wahr.",
+      "Intensive Entnahme ohne ausreichende Berücksichtigung der Grenzen ist der Ausgangsbefund, kein überwundenes Kapitel. Der Text sagt „nach wie vor“. Überall überwunden wäre das Gegenteil der Diagnose.\n\nNeue Modelle werden gefordert, weil das lineare Muster fortbesteht. Die Aussage behauptet einen Zustand, den der Abschnitt nicht beschreibt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.05",
+    "title": "Kreislauf statt Entsorgung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Kreislaufwirtschaft:",
+    "statements": [
+      "In der Kreislaufwirtschaft werden Abfälle minimiert und Ressourcen möglichst lange im Wirtschaftskreislauf gehalten.",
+      "Produkte, Materialien und Rohstoffe werden dabei wiederverwendet, repariert oder recycelt.",
+      "Ziel ist es, den Wert der Ressourcen so lange wie möglich zu erhalten und damit Umweltbelastung zu senken sowie wirtschaftliche Vorteile zu schaffen.",
+      "Kreislaufwirtschaft bedeutet, Rohstoffe einmal zu nutzen und anschließend vollständig zu entsorgen, ohne Rückführung in den Kreislauf.",
+      "Eine nachhaltige Wirtschaft muss innerhalb ökologischer Grenzen agieren und zugleich das Wohlergehen aller Menschen sichern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Abfälle minimieren und Materialien lange im Kreis halten: das ist die Kurzformel der Kreislaufwirtschaft im Text. Haltezeit ersetzt den schnellen Weg zur Deponie. Der Wirtschaftskreislauf wird zum Lager der Ressourcen, nicht zum Durchlauf.\n\nMinimieren heißt nicht, dass nie ein Rest bleibt, aber die Richtung ist klar gegen das lineare Entsorgen. Die Aussage trifft den Kern.\n\nSolange Material im Kreis bleibt, sinkt der Zwang zu neuer Entnahme. Minimierte Abfälle sind die sichtbare Seite derselben Strategie, den Durchsatz durch die Senken zu drosseln.\n\nDie Aussage ist wahr.",
+      "Wiederverwenden, reparieren, recyceln sind die drei genannten Hebel für Produkte, Materialien und Rohstoffe. Sie halten den Wert im System. Fehlt eine dieser Praktiken vollständig, nähert sich der Fluss wieder der Linearität.\n\nDer Text listet sie als zusammengehörige Wege, nicht als rivalisierende Schulen. Die Aussage gibt die Liste wieder.\n\nFehlt die Reparatur, enden Geräte früh als Abfall. Fehlt das Recycling, gehen Stoffe verloren. Die drei Praktiken stützen einander, weil sie denselben Wert im Kreislauf halten.\n\nDie Aussage ist wahr.",
+      "Werterhalt über die Zeit verbindet Ökologie und Ökonomie im selben Satz: weniger Belastung und wirtschaftliche Vorteile. Kreislaufwirtschaft ist hier kein reines Verzichtsmodell. Beides soll entstehen, nicht nur eines.\n\nSolange der Wert im Material bleibt, sinkt der Druck zu neuer Entnahme. Das ist der angestrebte Doppelgewinn.\n\nDie Aussage ist wahr.",
+      "Einmal nutzen und dann entsorgen ist das lineare Muster, nicht die Kreislaufwirtschaft. Rückführung ist gerade der Unterschied. Die Aussage vertauscht die beiden Modelle.\n\nOhne Rückführung gibt es keinen Kreis, nur eine Strecke mit Endpunkt Abfall. Der Lehrtext trennt diese Logiken ausdrücklich.\n\nDie Aussage ist falsch.",
+      "Ökologische Grenzen und Wohlergehen aller Menschen sind das Doppelmandat, für das neue Modelle wie die Kreislaufwirtschaft gebraucht werden. Beides zusammen, nicht als Ersatz füreinander. Der Satz steht unmittelbar vor der Einführung der Kreislaufwirtschaft.\n\nRegenerative Ressourcenströme und soziale Gerechtigkeit gehören laut Text in dasselbe Reformpaket. Die Aussage hält diese Klammer.\n\nDafür braucht es Modelle mit Kreislaufwirtschaft, regenerativen Ressourcenströmen und sozialer Gerechtigkeit. Grenzen und Wohlergehen sind die beiden Leitplanken, zwischen denen umgebaut werden soll.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.06",
+    "title": "Reparaturbonus und Circular Design",
+    "context": "Bewerten Sie die folgenden Aussagen zu verwandten Konzepten der Kreislaufwirtschaft:",
+    "statements": [
+      "Reparaturbonus, Circular Design, langlebige Produkte und Urban Mining sind mit der Kreislaufwirtschaft verwandte Konzepte.",
+      "Sharing-Modelle und langlebige Designs werden als Wege genannt, Wirtschaftswachstum weniger umweltbelastend zu gestalten.",
+      "Remanufacturing, die Wiederaufbereitung gebrauchter Teile, kann Rohstoffe einsparen, Emissionen reduzieren und zugleich neue wirtschaftliche Chancen schaffen.",
+      "Circular Design soll im Lehrtext Einwegprodukte fördern und steht im Gegensatz zur Idee langlebiger Produkte.",
+      "Der Reparaturbonus gehört laut Text nicht in die Nähe von Kreislaufüberlegungen, sondern ausschließlich zur linearen Entsorgungslogik."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Vier Namen stehen als verwandte Konzepte neben der Kreislaufwirtschaft: Reparaturbonus, Circular Design, langlebige Produkte, Urban Mining. Der Text definiert sie hier nicht einzeln aus, ordnet sie aber klar diesem Feld zu. Verwandtschaft heißt: gleiche Richtung, Wert und Nutzung verlängern.\n\nWer sie als fremde Marketingbegriffe abtut, widerspricht der Zuordnung. Die Aussage bleibt bei der Liste.\n\nLanglebige Produkte halten denselben Stoff länger in Nutzung, Urban Mining sucht Material im Bestand statt nur in der Lagerstätte. Die Liste zeigt Praxisformen, nicht fremde Modeworte aus einem anderen Lehrbuch.\n\nDie Aussage ist wahr.",
+      "Sharing und langlebiges Design stehen im Brundtland-Zusammenhang als Wege zu einer weniger belastenden Wachstumsart. Nutzen teilen und Produkte halten ersetzt einen Teil der Neuproduktion. Das ist praktisch, nicht nur rhetorisch.\n\nBeide Ansätze schonen Entnahme und Emissionen, indem Nutzung verlängert oder geteilt wird. Die Aussage bleibt bei Sharing-Modellen und langlebigem Design.\n\nWiederaufbereitung und Teilen ersetzen einen Teil der Primärproduktion. Der Bericht nennt solche Wege, damit Wachstum die Umwelt weniger belastet und zugleich Chancen entstehen.\n\nDie Aussage ist wahr.",
+      "Wiederaufbereitung gebrauchter Teile spart Rohstoff, senkt Emissionen und öffnet wirtschaftliche Chancen. Remanufacturing ist im Text ausdrücklich so übersetzt und begründet. Drei Wirkungen, ein Verfahren.\n\nChancen entstehen, weil Aufbereitung selbst Wertschöpfung ist, nicht nur Verzicht. Die Aussage gibt diese Dreifachwirkung wieder.\n\nGebrauchte Teile werden nicht Schrott, sondern Einsatzstoff. Rohstoffeinsparung und Emissionsminderung laufen parallel zur neuen Wertschöpfung in der Aufbereitung.\n\nDie Aussage ist wahr.",
+      "Circular Design steht neben langlebigen Produkten, nicht gegen sie. Einwegförderung wäre das lineare Gegenteil. Die Behauptung eines Gegensatzes verdreht die Verwandtschaftsliste.\n\nDesign für Kreis und Haltbarkeit zielt auf längere Nutzung, nicht auf schnellere Entsorgung. Die Aussage ist daher unzutreffend.\n\nDie Aussage ist falsch.",
+      "Der Reparaturbonus steht in derselben Verwandtschaftszeile wie Circular Design und langlebige Produkte. Reparatur hält Ressourcen im Kreis, Entsorgung wirft sie heraus. Die Zuordnung zur linearen Logik ist falsch.\n\nBonus fürs Reparieren macht Haltbarkeit wirtschaftlich attraktiver. Das ist Kreislaufpolitik im Sinne des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.07",
+    "title": "Armut als Transformationsaufgabe",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Armut und nachhaltige Transformation:",
+    "statements": [
+      "Mit der Transformation der Wirtschaft soll auch weit verbreitete Armut als eines der drängendsten Probleme adressiert werden.",
+      "Afrika südlich der Sahara trägt laut Lehrtext einen überproportionalen Anteil der extremen Armut im Vergleich zu seinem Anteil an der Weltbevölkerung.",
+      "In Österreich gilt eine andere Armutsdefinition als die weltweite Extremarmutsgrenze: armutsgefährdet ist, wer unter einer Schwelle für den Einpersonenhaushalt liegt.",
+      "Armut kommt in Österreich definitionsgemäß nicht vor, weil Armut ausschließlich ein Thema außerhalb Europas sei.",
+      "Fortschritte bei der Armutsbekämpfung können durch schwaches Wirtschaftswachstum, Pandemiefolgen und zunehmende Fragilität ins Stocken geraten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Weit verbreitete Armut ist im Text das drängende Problem, das die Transformation mit angehen soll. Kreislauf und regenerative Ströme stehen nicht isoliert von sozialer Lage. Wirtschaft umbauen und Armut adressieren gehören zusammen.\n\nOhne diese Klammer wäre Nachhaltigkeit nur Technik. Der Abschnitt öffnet ausdrücklich zur sozialen Frage.\n\nDie Aussage ist wahr.",
+      "Überproportional heißt hier: ein kleinerer Bevölkerungsanteil, ein größerer Anteil der extrem Armen. Der Text nennt Afrika südlich der Sahara in genau diesem Missverhältnis. Die geografische Konzentration ist der qualitative Punkt, nicht eine auswendig zu lernende Nachkommastelle.\n\nWer die Region als unauffällig darstellt, widerspricht der Gewichtung im Abschnitt. Die Aussage hält die Relation fest.\n\nObwohl dort nur ein kleinerer Teil der Weltbevölkerung lebt, entfällt ein großer Teil der extrem Armen auf diese Region. Die Relation ist der Lehrpunkt, nicht eine Prüfung auf die exakte Prozentzahl.\n\nDie Aussage ist wahr.",
+      "Österreich misst Armutsgefährdung am Haushaltseinkommen unter einer Schwelle für Alleinlebende, nicht an der globalen Extremarmutsgrenze in Dollar. Der Text stellt beide Logiken nebeneinander. Definitionen sind kontextabhängig.\n\nDamit ist Armut in Industrieländern nicht unsichtbar, sondern anders geschnitten. Die Aussage trifft diese Unterscheidung.\n\nDie weltweite Extremarmutsgrenze in Dollar pro Tag und die österreichische Schwelle für den Einpersonenhaushalt messen unterschiedliche Schnitte derselben sozialen Frage. Wer sie gleichsetzt, verwischt den Text.\n\nDie Aussage ist wahr.",
+      "Armutsgefährdung in Österreich wird mit einem Bevölkerungsanteil beziffert, also als vorhandenes Phänomen. Die Behauptung, Armut komme hier definitionsgemäß nicht vor, widerspricht dem Abschnitt. Europa ist nicht ausgenommen.\n\nAndere Schwelle heißt nicht Abwesenheit. Wer Armut nur außerhalb Europas verortet, ignoriert die nationale Messung.\n\nDie Aussage ist falsch.",
+      "Schwaches Wachstum, COVID-19-Folgen und Fragilität nennt der Text als Gründe, warum Fortschritte stocken. In Ländern mit niedrigem Einkommen können Raten sogar über dem Vorkrisenniveau liegen. Stagnation ist also erklärbar, nicht rätselhaft.\n\nArmutsbekämpfung ist kein Automatismus des Zeitablaufs. Die Aussage gibt die genannten Bremsfaktoren wieder.\n\nIn Ländern mit niedrigem Einkommen können Armutsraten sogar über dem Stand vor der Krise liegen. Zeit allein heilt die Lage nicht, wenn Wachstum schwach und die Lage fragil bleibt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.08",
+    "title": "Wachstum gegen planetare Grenzen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Dilemma von Wirtschaftswachstum und ökologischen Grenzen:",
+    "statements": [
+      "Wirtschaftswachstum, verstanden als Steigerung wirtschaftlicher Aktivitäten, wird häufig als zentrale Lösung angesehen, um Armut zu reduzieren.",
+      "Das derzeitige Niveau globaler wirtschaftlicher Aktivitäten überschreitet bereits mehrere planetare Grenzen.",
+      "Es besteht kein Dilemma, weil Wachstum Armut senkt und gleichzeitig niemals ökologische Grenzen berührt.",
+      "Maßnahmen zur Armutsbekämpfung können durch ihre ökologischen Auswirkungen langfristig neue wirtschaftliche und gesellschaftliche Risiken schaffen, besonders wenn sie auf ressourcenintensivem Wachstum beruhen.",
+      "Eine nachhaltige Transformation erfordert Ansätze, die wirtschaftliche Entwicklung innerhalb biophysischer Grenzen ermöglichen und soziale Gerechtigkeit fördern, ohne ökologische Kipppunkte zu überschreiten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Wachstum als Mehr an wirtschaftlicher Aktivität gilt vielen als Hebel gegen Armut. Der Text nimmt diese Sicht ernst, bevor er sie problematisiert. Zentrale Lösung ist die Zuschreibung, nicht schon der Beweis der Ungefährlichkeit.\n\nGesellschaftliche Entwicklung wird oft an diesen Anstieg gekoppelt. Die Aussage gibt die Ausgangsmeinung wieder, die das Dilemma erst erzeugt.\n\nAndererseits gilt Wachstum als nötig, um Armut zu senken und gesellschaftliche Entwicklung zu fördern. Genau dieser Anspruch prallt auf bereits überschrittene Grenzen und erzeugt das Dilemma.\n\nDie Aussage ist wahr.",
+      "Mehrere planetare Grenzen sind laut Text schon überschritten. Das heutige Aktivitätsniveau ist also nicht harmlos unterhalb der Linie. Langfristige Bedürfniserfüllung wird genau dadurch gefährdet.\n\nDie Diagnose steht vor der Quadratur. Ohne diese Überschreitung gäbe es das beschriebene Dilemma nicht in dieser Schärfe.\n\nDie Aussage ist wahr.",
+      "Kein Dilemma zu behaupten, streicht die Spannung, die der Abschnitt als zentrale Herausforderung bezeichnet. Wachstum soll Armut senken und belastet zugleich Grenzen. „Niemals berührt“ ist die Absolute, die der Text widerlegt.\n\nBeide Sätze sind im Buch wahr und zugleich unvereinbar im naiven Modell. Genau deshalb braucht es eine andere Wachstumsart.\n\nMaßnahmen gegen Armut können durch ökologische Folgen später neue Risiken schaffen. Die Absolute niemals berührt leugnet die zweite Seite, die der Text als bereits überschritten beschreibt.\n\nDie Aussage ist falsch.",
+      "Ressourcenintensives Wachstum kann Armut kurz lindern und später neue Risiken bauen, weil Ökosysteme kippen. Der Text warnt vor dieser Langfristfalle. Ökologische Auswirkungen der Armutsbekämpfung sind Teil der Rechnung.\n\nWer nur den heutigen Einkommenszuwachs zählt, übersieht Folgekosten für Wirtschaft und Gesellschaft. Die Aussage hält diesen Bogen.\n\nRessourcenintensität ist der Hebel, der die Falle auslöst: mehr Aktivität, mehr Entnahme, mehr Druck auf Kipppunkte. Armutsbekämpfung braucht deshalb andere Pfade als reines Mehr desselben Musters.\n\nDie Aussage ist wahr.",
+      "Innerhalb biophysischer Grenzen entwickeln, Gerechtigkeit fördern, Kipppunkte meiden: das ist die Transformationsformel. Sie löst das Dilemma nicht durch Leugnen einer Seite. Entwicklung bleibt erlaubt, aber begrenzt.\n\nSoziale Gerechtigkeit steht nicht als Restposten nach der Ökologie, sondern im selben Satz. Die Aussage gibt die Forderung vollständig wieder.\n\nKipppunkte markieren irreversible Schäden an biophysischen Systemen. Die Transformation soll Entwicklung ermöglichen, ohne diese Schwellen zu reißen, und Gerechtigkeit nicht als Restposten behandeln.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.09",
+    "title": "Our Common Future 1987",
+    "context": "Bewerten Sie die folgenden Aussagen zum Brundtland-Bericht:",
+    "statements": [
+      "Der Bericht Our Common Future wurde 1987 von der Weltkommission für Umwelt und Entwicklung (WCED) veröffentlicht.",
+      "Er wird auch Brundtland-Bericht genannt, weil Gro Harlem Brundtland die Vorsitzende der Kommission war.",
+      "Der Bericht hält fest, dass das zur Armutsbekämpfung notwendige Wirtschaftswachstum nicht durch seine Umweltauswirkungen zu künftigen wirtschaftlichen Problemen führen darf.",
+      "Brundtland vertrat die Ansicht, nachhaltige Entwicklung sei unmöglich, weil Wachstum und Umwelt sich unter keinen Umständen vereinbaren lassen.",
+      "Der Bericht beschreibt das Ausmaß der Armut und verschiedene Bedrohungen der Nachhaltigkeit und fordert eine neue Art des Wirtschaftswachstums mit deutlich geringerer Umweltbelastung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "1987, WCED, Our Common Future: das sind die bibliografischen Eckdaten im Text. Die Weltkommission für Umwelt und Entwicklung ist die herausgebende Instanz. Das Datum sitzt am Ende des zwanzigsten Jahrhunderts, wie der Abschnitt betont.\n\nOhne diese Zuordnung bleibt „Brundtland“ ein Name ohne Dokument. Die Aussage gibt Herkunft und Jahr korrekt wieder.\n\nOur Common Future gilt im Text als eine der einflussreichsten Veröffentlichungen des ausgehenden zwanzigsten Jahrhunderts. Jahr, Kommission und Titel gehören zusammen, sonst bleibt der Beiname Brundtland leer.\n\nDie Aussage ist wahr.",
+      "Gro Harlem Brundtland als Vorsitzende erklärt den Zweitnamen. Der Bericht und die Person sind im Lehrtext so verknüpft. Brundtland-Bericht ist also kein anderer Text, sondern dieselbe Veröffentlichung.\n\nWer den Beinamen für ein späteres EU-Dokument hält, verfehlt die Zuordnung. Die Aussage folgt dem Buch wörtlich in der Sache.\n\nDie Aussage ist wahr.",
+      "Quadratur des Kreises: Armut braucht Wachstum, Wachstum darf die Zukunft nicht durch Umweltzerstörung wirtschaftlich ruinieren. Der Bericht hält das für möglich, aber nur unter einer neuen Wachstumsart. Die Bedingung ist negativ formuliert: darf nicht zu künftigen Problemen führen.\n\nGenau diese Bedingung ist der Kern, nicht ein Verbot jeglicher Aktivität. Die Aussage trifft ihn.\n\nWachstum zur Armutsbekämpfung bleibt erlaubt, aber unter der Nebenbedingung, die Umwelt nicht so zu belasten, dass später die Wirtschaft selbst bricht. Das ist die Quadratur, die der Bericht für möglich hält.\n\nDie Aussage ist wahr.",
+      "Unmöglich ist das Gegenteil der Position. Der Bericht nennt nachhaltige Entwicklung notwendig und machbar. Vereinbarkeit wird gesucht, nicht geleugnet.\n\nWer Unvereinbarkeit als Brundtland-These ausgibt, verwechselt die Diagnose der Bedrohung mit der Schlussfolgerung. Die Schlussfolgerung ist die neue Wachstumsart.\n\nNotwendig und machbar nennt der Text die neue Art des Wachstums ausdrücklich. Unmöglichkeit wäre eine andere Schule, nicht Brundtland. Nachhaltige Entwicklung ist der Name dieser Machbarkeit.\n\nDie Aussage ist falsch.",
+      "Armut und Nachhaltigkeitsbedrohungen stehen nebeneinander als Gegenstand. Die Antwort ist Wachstum, das die Umwelt weit weniger belastet und die Fähigkeit des gemeinsamen Systems erhöht, Menschen zufriedenzustellen. Beides beschreibt der Text als Inhalt.\n\nDie neue Art gefährdet Nachhaltigkeit nicht, sie soll sie stärken. Die Aussage bündelt Beschreibung und Forderung.\n\nStatt Nachhaltigkeit zu gefährden, soll das gemeinsame System von Wirtschaft und Umwelt besser in der Lage sein, Menschen zufriedenzustellen. Armutsbeschreibung und Wachstumskritik liegen im selben Bericht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.10",
+    "title": "Nachhaltige Entwicklung nach Brundtland",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition nachhaltiger Entwicklung:",
+    "statements": [
+      "Nachhaltige Entwicklung ist eine Form des Wirtschaftswachstums, die die Bedürfnisse und Wünsche der Gegenwart befriedigt, ohne die Fähigkeit des Wirtschafts- und Umweltsystems zu gefährden, diese Bedürfnisse und Wünsche in der Zukunft zu erfüllen.",
+      "Was wir brauchen, so der Brundtland-Bericht, ist eine neue Art des Wirtschaftswachstums, das die Umwelt weit weniger belastet.",
+      "Nachhaltigkeit bedeutet im Lehrtext ausschließlich, heutige Gewinne zu maximieren, ohne künftige Bedürfnisse zu bedenken.",
+      "Diese neue Wachstumsart soll die Fähigkeit des gemeinsamen Systems von Wirtschaft und Umwelt erhöhen, die Menschen zufriedenzustellen.",
+      "Der Brundtland-Bericht ignoriert Armut vollständig und beschränkt sich auf technische Fragen des Recyclings."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gegenwart befriedigen, Zukunft nicht entmachten: das ist die Brundtland-Definition im Wortlaut des Abschnitts. Träger der Fähigkeit ist das Wirtschafts- und Umweltsystem gemeinsam. Bedürfnisse und Wünsche gelten für heute und morgen.\n\nGefährden heißt, die künftige Erfüllung zu untergraben, etwa durch zerstörte Lebensgrundlagen. Die Aussage ist die Definitionszeile, nicht eine freie Umschreibung.\n\nBedürfnisse und Wünsche gelten doppelt: jetzt und später. Gefährden würde heißen, dem künftigen System die Mittel zu nehmen, dieselben Bedarfe zu decken. Wachstum bleibt Form, Zukunftsfähigkeit bleibt Bedingung.\n\nDie Aussage ist wahr.",
+      "Weit weniger belasten ist die qualitative Vorgabe an das Wachstum, nicht ein völliger Stopp jeder Aktivität. Der Bericht will eine andere Art, nicht notwendig Null Wachstum. Umweltentlastung ist die Richtung.\n\nDamit bleibt Entwicklung möglich, während die Belastung sinkt. Die Aussage zitiert diese Bedarfsklausel sachlich.\n\nGeringere Belastung ist die qualitative Vorgabe, nicht ein bloßes Umbenennen des bisherigen Pfads. Sharing, langlebiges Design und Wiederaufbereitung sind im Text die angedeuteten Wege dorthin.\n\nDie Aussage ist wahr.",
+      "Heutige Gewinnmaximierung ohne Blick auf morgen ist das Gegenteil der Definition. Nachhaltigkeit im Abschnitt ist Zukunftsfähigkeit des gemeinsamen Systems. Ausschließlich Gegenwartsgewinne zu nennen, streicht den zweiten Zeitpol.\n\nKünftige Bedürfnisse sind der Prüfstein. Die Aussage verfehlt ihn vollständig.\n\nDie Aussage ist falsch.",
+      "Zufriedenstellen der Menschen über das gemeinsame System ist das positive Ziel neben der Entlastung. Statt Nachhaltigkeit zu gefährden, soll die Fähigkeit steigen. Der Text stellt beides in einen Satz.\n\nWirtschaft und Umwelt bleiben gekoppelt. Die Aussage gibt diese Erhöhung der Systemfähigkeit wieder.\n\nErhöhte Fähigkeit des Systems ist das Gegenstück zur Gefährdung. Entlastung der Umwelt und Zufriedenstellung der Menschen laufen in dieser Formulierung zusammen, nicht als Rivalen.\n\nDie Aussage ist wahr.",
+      "Armut ist ein Hauptthema des Berichts, nicht eine Leerstelle. Recycling und Wiederaufbereitung erscheinen später als Wege, nicht als alleiniger Inhalt. Die Beschränkung auf Technik ist falsch.\n\nOur Common Future beschreibt Ausmaß der Armut und Bedrohungen. Wer das ignoriert, hat den Abschnitt nicht getroffen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.11",
+    "title": "European Green Deal und Taxonomie",
+    "context": "Bewerten Sie die folgenden Aussagen zur Nachhaltigkeit in der europäischen Wirtschaftspolitik:",
+    "statements": [
+      "Im Rahmen des European Green Deal ist Nachhaltigkeit zu einem Schlüsselbegriff der europäischen Wirtschaftspolitik geworden.",
+      "Die Nachhaltigkeitsberichterstattung ist ab 2022 für große Unternehmen verpflichtend.",
+      "Die EU-Taxonomie soll ökologisches Wirtschaften fördern, beispielsweise durch eine bessere Stellung am Kapitalmarkt.",
+      "Der European Green Deal betrifft laut Lehrtext nur Forstbetriebe und gilt nicht als Schlüssel der EU-Wirtschaftspolitik.",
+      "Laut Lehrtext gilt die ab 2022 genannte Berichtspflicht ohne Größenunterschied für alle Unternehmen gleichermaßen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Schlüsselbegriff der europäischen Wirtschaftspolitik: so stuft der Text Nachhaltigkeit im European Green Deal ein. Es geht um Politikrahmen, nicht um ein freiwilliges Modewort. EGD ist die Klammer.\n\nDamit wandert Nachhaltigkeit von der Forstmetapher in die aktuelle EU-Steuerung. Die Aussage trifft diese Aufwertung.\n\nDie Aussage ist wahr.",
+      "Ab 2022, große Unternehmen, verpflichtend: drei Angaben stehen so im Abschnitt. Berichtspflicht ist keine Empfehlung für Konzerne dieser Größe. Das Jahr markiert die Zäsur im Text.\n\nWer die Pflicht auf unbestimmte Zukunft verschiebt, weicht von der Formulierung ab. Die Aussage bleibt bei Jahr, Kreis und Charakter.\n\nVerpflichtend unterscheidet die Regelung von freiwilligen Leitfäden. Der Kreis der Großen ist die im Buch genannte Schwelle, ab der berichtet werden muss, nicht eine unbestimmte Hoffnung.\n\nDie Aussage ist wahr.",
+      "Ökologisches Wirtschaften fördern ist der Zweck der Taxonomie, die bessere Kapitalmarktstellung das Beispiel. Kapital soll also Richtung ökologischer Tätigkeit gelenkt werden. Der Text nennt genau diesen Kanal.\n\nTaxonomie ist hier kein reines Klassifikationsspiel, sondern ein Förderinstrument über den Marktzugang. Die Aussage hält Zweck und Beispiel.\n\nBessere Stellung am Kapitalmarkt heißt: ökologisch ausgerichtete Tätigkeit soll Finanzierung erleichtern. Die Taxonomie ordnet Tätigkeiten, damit Kapital nicht blind in belastende Projekte fließt.\n\nDie Aussage ist wahr.",
+      "Nur Forstbetriebe wäre ein Rückfall in die Wortgeschichte, nicht die EGD-Aussage. Der Green Deal wird als wirtschaftspolitisch zentral für Europa eingeführt. Die Einschränkung auf Forst ist falsch.\n\nNachhaltigkeit als Schlüsselbegriff gilt der Wirtschaftspolitik insgesamt. Die Aussage verengt unzulässig.\n\nDie Aussage ist falsch.",
+      "Große Unternehmen sind der genannte Adressatenkreis der Pflicht. Ohne Größenunterschied behauptet die Aussage eine All-Pflicht, die der Text so nicht formuliert. Die Qualifikation „große“ wäre sonst überflüssig.\n\nKleine Betriebe werden hier nicht mit derselben ab 2022 geltenden Pflicht gleichgesetzt. Die Aussage überschreitet den Wortlaut.\n\nHätte der Text alle Rechtsformen und Größen gemeint, fehlte das Wort große. Die Berichtspflicht ab 2022 ist an diese Qualifikation gebunden und darf nicht zur All-Regel gestreckt werden.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.12",
+    "title": "Nachhaltigkeit aus der Forstwirtschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zum Ursprung und zur Erweiterung des Nachhaltigkeitsbegriffs:",
+    "statements": [
+      "Ursprünglich stammt der Begriff Nachhaltigkeit aus der Forstwirtschaft und bezeichnete die Praxis, nicht mehr Bäume zu fällen als nachwachsen können.",
+      "Dieser Grundgedanke sollte einen dauerhaften Holzertrag sichern und den Baumbestand erhalten.",
+      "Der Begriff Nachhaltigkeit wird häufig verwendet, seine Bedeutung bleibt jedoch oft unklar.",
+      "Nachhaltigkeit bezeichnete ursprünglich ausschließlich die Maximierung kurzfristiger Unternehmensgewinne.",
+      "Der forstliche Grundgedanke hat sich zu einem umfassenderen Konzept entwickelt, das langfristige ökologische, soziale und ökonomische Entwicklungen umfasst."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Nicht mehr fällen als nachwachsen: das ist die forstliche Ursprungspraxis. Der Bestand bleibt die erneuerbare Basis des Ertrags. Nachhaltigkeit beginnt als Nutzungsregel am Wald, nicht als Börsenjargon.\n\nDie Entnahmeregel schützt die Regenerationsfähigkeit. Die Aussage gibt Herkunft und Praxis korrekt wieder.\n\nNachwuchs begrenzt die zulässige Entnahme. Wer mehr fällt, als nachwächst, zehrt den Bestand auf und verfehlt den ursprünglichen Sinn. Die Waldregel ist die Wurzel des späteren, weiteren Konzepts.\n\nDie Aussage ist wahr.",
+      "Dauerhafter Holzertrag und erhaltener Baumbestand sind die zwei Zwecke derselben Regel. Ertrag ohne Bestand wäre Raubbau, Bestand ohne Nutzung wäre ein anderes Ziel. Der Text nennt beides.\n\nSichern und erhalten gehören zusammen. Die Aussage hält diese Doppelung.\n\nDie Aussage ist wahr.",
+      "Häufig gebraucht, oft unklar: so eröffnet der Abschnitt die Definitionsarbeit. Der Begriff braucht deshalb die historische und die systematische Klärung. Unklarheit ist der Anlass, nicht ein nebensächlicher Seufzer.\n\nOhne diese Warnung könnte man jedes Handeln nachhaltig nennen. Die Aussage trifft die diagnostizierte Unschärfe.\n\nUnklarheit entsteht, weil derselbe Name heute Ökologie, Soziales und Ökonomie umfasst, während der Alltag ihn oft als leeres Qualitätssiegel nutzt. Der Abschnitt trennt Herkunft, Unschärfe und Systematik, bevor er schwache und starke Lesarten unterscheidet.\n\nDie Aussage ist wahr.",
+      "Kurzfristige Gewinnmaximierung ist das Gegenteil der forstlichen Regel, die den Bestand über die Periode rettet. Ursprünglich ging es um Holzertrag im Gleichgewicht mit Nachwuchs. Die Aussage setzt einen modernen Finanzreflex an die falsche Stelle.\n\nUnternehmengewinne als Ursprungsbedeutung stehen nicht im Text. Die Zuordnung ist falsch.\n\nKurzfristiger Gewinn würde den Bestand opfern, sobald die Fällung den Nachwuchs übersteigt. Die Ursprungsbedeutung schützt gerade vor diesem Raubbau, sie feiert ihn nicht.\n\nDie Aussage ist falsch.",
+      "Ökologisch, sozial, ökonomisch: die Erweiterung nennt genau diese drei langfristigen Entwicklungen. Aus der Waldregel wird ein umfassenderes Konzept. Die drei Dimensionen sind hier ökologisch, sozial und ökonomisch, wie der Text die Erweiterung fasst.\n\nLangfristigkeit bleibt das Band zwischen Forst und heutigem Diskurs. Die Aussage gibt die Ausweitung wieder.\n\nÖkologie, Soziales und Ökonomie sind hier die drei langfristigen Stränge der Erweiterung. Aus der Holzzahl wird ein Entwicklungsbegriff, der die Dimensionen miteinander denkt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.13",
+    "title": "Drei Säulen und schwache Nachhaltigkeit",
+    "context": "Bewerten Sie die folgenden Aussagen zum Konzept der schwachen Nachhaltigkeit:",
+    "statements": [
+      "Schwache Nachhaltigkeit basiert auf dem Drei-Säulen-Modell, das Ökologie, Soziales und Ökonomie als gleichwertige Säulen betrachtet.",
+      "Nach diesem Konzept können Verluste in einem Bereich durch Gewinne in einem anderen ausgeglichen werden.",
+      "Natürliche Ressourcen können danach prinzipiell durch menschliches Wissen oder Kapital ersetzt werden, solange die Gesamtsumme aller Kapitalarten konstant bleibt oder wächst.",
+      "Humankapital meint im Lehrtext Produktionsanlagen in Fabriken, während Sachkapital für Bildung und Qualifikation steht.",
+      "Naturkapital umfasst im Text unter anderem Wälder, Bodenschätze und Biodiversität."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Gleichwertige Säulen Ökologie, Soziales, Ökonomie: das ist das Modell, auf dem schwache Nachhaltigkeit aufsetzt. Keine Säule hat in diesem Bild Vorrang. Drei-Säulen ist die Architektur der schwachen Lesart.\n\nGleichwertigkeit ermöglicht später den Ausgleich zwischen den Feldern. Die Aussage hält Architektur und Gewichtung.\n\nGleichwertigkeit erlaubt, eine geschwächte Säule durch eine stärkere zu kompensieren. Ohne diese Gleichsetzung wäre der Ausgleich zwischen Ökologie, Sozialem und Ökonomie schwerer zu begründen.\n\nDie Aussage ist wahr.",
+      "Ausgleich zwischen Bereichen ist die operative Idee: Minus hier, Plus dort. Die Summe zählt, nicht die Unversehrtheit jeder einzelnen Säule. Verluste sind danach kompensierbar.\n\nGenau diese Kompensationslogik unterscheidet schwach von stark. Die Aussage trifft den Ausgleichssatz.\n\nDie Aussage ist wahr.",
+      "Wissen oder Kapital als Ersatz für Natur, sofern die Gesamtsumme der Kapitalarten hält oder steigt: das ist die Substitutionsregel. Konstanz der Summe ersetzt Konstanz jeder einzelnen Form. Prinzipiell ersetzbar ist die Schlüsselannahme.\n\nNaturkapital, Humankapital und Sachkapital bilden die Summe. Die Aussage gibt Regel und Bedingung wieder.\n\nNaturkapital, Humankapital und Sachkapital bilden die Summe. Bleibt oder wächst diese Summe, gilt der Verlust an Wald oder Biodiversität nach schwacher Lesart als ausgleichbar durch Wissen oder Anlagen. Die Konstanz der Summe ersetzt die Unversehrtheit jeder einzelnen Kapitalform.\n\nDie Aussage ist wahr.",
+      "Produktionsanlagen sind Sachkapital, Bildung und Qualifikation sind Humankapital. Die Aussage vertauscht die beiden Zuordnungen. Fabriken werden damit fälschlich zu Humankapital erklärt.\n\nArbeitskräftequalifikation ist kein Maschinenpark. Die Vertauschung macht den Satz falsch, auch wenn beide Kapitalarten im selben Absatz stehen.\n\nBildung und Qualifikation von Arbeitskräften sind Humankapital. Produktionsanlagen in Fabriken sind Sachkapital. Die Vertauschung macht die Kapitalarten unbrauchbar für die Substitutionsregel.\n\nDie Aussage ist falsch.",
+      "Wälder, Bodenschätze, Biodiversität: so illustriert der Text Naturkapital. Es ist die ökologische Kapitalform in der Summe. Die Beispiele sind konkret, nicht beliebig.\n\nWer Naturkapital nur als Stimmung begreift, verfehlt die Aufzählung. Die Aussage bleibt bei den genannten Beständen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.14",
+    "title": "Stabiles Klima als unersetzbare Funktion",
+    "context": "Bewerten Sie die folgenden Aussagen zum Konzept der starken Nachhaltigkeit:",
+    "statements": [
+      "Starke Nachhaltigkeit geht davon aus, dass bestimmte ökologische Funktionen, etwa ein stabiles Klima, unverzichtbar und durch kein Maß an ökonomischem oder Humankapital ersetzbar sind.",
+      "Diese Perspektive lehnt die Gleichsetzung oder Substituierbarkeit natürlicher Ressourcen mit anderen Kapitalformen ab.",
+      "Starke Nachhaltigkeit fordert, natürliche Ökosysteme so weit wie möglich zu erhalten und zu schützen.",
+      "Starke Nachhaltigkeit gilt im Lehrtext als weniger anspruchsvoll als die schwache Variante und deshalb als verzichtbar.",
+      "Obwohl sie deutlich anspruchsvoller ist, ist starke Nachhaltigkeit laut Text notwendig, um eine nachhaltige Wirtschaft zu erreichen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unverzichtbar und unersetzbar: ein stabiles Klima bleibt Klima, auch wenn Fabriken und Bildungsabschlüsse wachsen. Kein Maß an anderem Kapital füllt diese Funktion. Das Beispiel macht die Grenze der Substitution greifbar.\n\nÖkologische Systeme und Prozesse haben hier Vorrang, weil Wirtschaft und Gesellschaft auf ihnen aufsitzen. Die Aussage trifft Annahme und Beispiel.\n\nWirtschaft und Gesellschaft hängen an ökologischen Prozessen, die sich nicht durch mehr Abschlüsse oder mehr Maschinen ersetzen lassen. Das stabile Klima ist das Schulbeispiel dieser Abhängigkeit.\n\nDie Aussage ist wahr.",
+      "Ablehnung der Gleichsetzung heißt: Natur ist nicht dieselbe Sorte Kapital wie Maschinen. Substituierbarkeit natürlicher Ressourcen wird zurückgewiesen. Andere Kapitalformen dürfen sie nicht ersetzen.\n\nOhne diese Ablehnung gäbe es keinen Gegensatz zur schwachen Lesart. Die Aussage hält die Absage an den Tausch.\n\nNatürliche Ressourcen werden nicht als eine weitere Sorte Kapital behandelt, die man 1:1 gegen Fabriken tauschen darf. Die Absage trifft die schwache Kompensationsidee frontal.\n\nDie Aussage ist wahr.",
+      "Erhalten und schützen so weit wie möglich ist die praktische Folgerung. Ökosysteme bleiben Ziel, nicht Restgröße nach der Kompensation. Schutz ist die Handlungsseite der Unersetzbarkeit.\n\nWeitestmögliche Erhaltung ist strenger als Ausgleich über die Summe. Die Aussage gibt diese Forderung wieder.\n\nDie Aussage ist wahr.",
+      "Weniger anspruchsvoll und verzichtbar kehrt die Bewertung um. Der Text nennt starke Nachhaltigkeit deutlich anspruchsvoller. Verzichtbarkeit behauptet er nicht, im Gegenteil.\n\nAnspruchsvoll meint hier die Härte der ökologischen Nebenbedingung, nicht Beliebigkeit. Die Aussage ist falsch.\n\nDie Aussage ist falsch.",
+      "Notwendig für eine nachhaltige Wirtschaft, obwohl anspruchsvoller: so schließt der Abschnitt. Die Härte ist begründet, nicht dekorativ. Schwache Kompensation reicht demnach nicht.\n\nNachhaltige Wirtschaft im Sinne des Kapitels braucht die starke Lesart. Die Aussage gibt Schluss und Konzession wieder.\n\nAnspruchsvoller heißt: ökologische Funktionen dürfen nicht wegsubstituiert werden. Notwendig heißt: ohne diese Härte erreicht man nach dem Text keine nachhaltige Wirtschaft.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.15",
+    "title": "Waldverlust gegen Bildungsfonds",
+    "context": "Bewerten Sie die folgenden Aussagen zum Unterschied von schwacher und starker Nachhaltigkeit:",
+    "statements": [
+      "Ein Ausgleich von Waldverlust durch mehr Humankapital entspricht der Logik schwacher Nachhaltigkeit, nicht der starken.",
+      "Ein stabiles Klima bleibt nach starker Nachhaltigkeit auch dann unersetzbar, wenn Sachkapital und Wissen zunehmen.",
+      "Solange der Börsenwert eines Unternehmens steigt, sind planetare Grenzen laut Lehrtext automatisch eingehalten.",
+      "Das Drei-Säulen-Modell der schwachen Nachhaltigkeit setzt Ökologie, Soziales und Ökonomie als gleichwertig.",
+      "Starke Nachhaltigkeit erlaubt, jedes Ökosystem vollständig zu ersetzen, sobald Fabriken produktiver werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wald ist Naturkapital, Bildung ist Humankapital. Schwache Nachhaltigkeit erlaubt den Tausch, wenn die Summe hält. Starke Nachhaltigkeit lehnt gerade diese Ersetzung natürlicher Bestände ab.\n\nEin Fonds für Qualifikation heilt den geklärten Wald nicht als Ökosystem. Die Szene macht den Modellunterschied sichtbar, ohne neue Zahlen zu erfinden.\n\nSchwache Nachhaltigkeit zählt die Summe der Kapitalarten. Steigt Humankapital stark genug, darf Naturkapital sinken. Starke Nachhaltigkeit bricht genau hier ab, weil der Wald als Ökosystem unersetzbar bleibt.\n\nDie Aussage ist wahr.",
+      "Klima als Funktion ist das Schulbeispiel der Unersetzbarkeit. Mehr Maschinen und mehr Wissen ändern die physikalische Rolle der Atmosphäre nicht. Starke Nachhaltigkeit zieht hier eine harte Linie.\n\nZunahme anderer Kapitalarten ist nach schwach ein Trost, nach stark kein Ersatz. Die Aussage bleibt auf der starken Seite.\n\nSachkapital und Wissen können Produktion steigern, sie stellen aber keine Atmosphäre her. Die Unersetzbarkeit gilt unabhängig vom Wachstum der anderen Kapitalformen.\n\nDie Aussage ist wahr.",
+      "Börsenwert misst Marktbewertung, nicht die Einhaltung planetarer Grenzen. Der Text koppelt Nachhaltigkeit an biophysische Grenzen und an externe Kosten, nicht an Kursgewinne. Automatik zwischen Kurs und Grenze gibt es nicht.\n\nEin steigender Kurs kann gerade Externalisierung belohnen. Die Aussage behauptet eine Garantie, die der Abschnitt nicht liefert.\n\nPlanetare Grenzen sind biophysisch, Kurse sind Bewertungen am Markt. Externe Kosten können den Kurs sogar stützen, indem Lasten abgewälzt werden. Automatische Einhaltung folgt daraus nicht.\n\nDie Aussage ist falsch.",
+      "Gleichwertigkeit der drei Säulen ist die Prämisse, aus der Kompensation folgt. Ohne Gleichwertigkeit wäre Ausgleich zwischen Feldern schwerer zu rechtfertigen. Der Text sagt gleichwertig ausdrücklich.\n\nÖkologie hat in diesem Modell keinen lexikalischen Vorrang. Die Aussage trifft die Gewichtung.\n\nDie Aussage ist wahr.",
+      "Jedes Ökosystem ersetzen, sobald Produktivität steigt, ist extreme schwache Logik, nicht starke. Starke Nachhaltigkeit will erhalten und schützen. Produktivere Fabriken heben die Absage an Substitution nicht auf.\n\nVollständige Ersetzbarkeit widerspricht Unverzichtbarkeit ökologischer Funktionen. Die Aussage ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "WISO 2.2.16",
+    "title": "Grenzen, Kreis und Berichterstattung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verknüpfung der Nachhaltigkeitskonzepte dieses Abschnitts:",
+    "statements": [
+      "Sharing-Modelle allein machen jedes beliebige Wachstum nachhaltig, unabhängig von biophysischen Grenzen.",
+      "Der Brundtland-Bericht hält die Quadratur für möglich: nötiges Wachstum zur Armutsbekämpfung ohne künftige wirtschaftliche Probleme durch Umweltwirkungen.",
+      "Lineares Take-Make-Waste und Kreislaufwirtschaft beschreiben denselben Ressourcenfluss ohne Unterschied.",
+      "Wirtschaftliche Entwicklung innerhalb biophysischer Grenzen bei gleichzeitiger sozialer Gerechtigkeit ist die Transformationsrichtung des Kapitels.",
+      "Externe Kosten verschwinden, sobald ein Gut einen Marktpreis hat, weil dieser Preis stets alle ökologischen und sozialen Folgeschäden enthält."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Sharing-Modelle sind ein Weg zu weniger belastendem Wachstum, kein Freibrief für grenzenloses Mehr. Biophysische Grenzen bleiben die Klammer jeder nachhaltigen Entwicklung. Allein und unabhängig kippt die Aussage in eine Absolute.\n\nJedes beliebige Wachstum wäre auch dann gefährlich, wenn einzelne Güter geteilt werden, solange Entnahme und Emissionen die planetaren Linien reißen. Der Text koppelt Wege an das Systemziel, nicht an Automatik.\n\nGrenzen bleiben die Bedingung, Sharing bleibt ein Mittel. Wer das Mittel zur hinreichenden Bedingung für jedes Wachstum macht, löst das Dilemma, das der Text beschreibt, nur rhetorisch auf.\n\nDie Aussage ist falsch.",
+      "Quadratur heißt hier: Armutsbekämpfung braucht Wachstum, Umwelt darf daraus keine späteren Wirtschaftsprobleme machen. Der Bericht hält das für möglich über eine neue Wachstumsart. Möglich ist die Stellungnahme, nicht die Behauptung, es sei bereits geschafft.\n\nOur Common Future verbindet beide Pole, statt einen zu streichen. Die Aussage gibt diese Haltung wieder.\n\nKünftige wirtschaftliche Probleme durch Umweltwirkungen sollen ausbleiben, obwohl heute Wachstum gegen Armut nötig bleibt. Möglich ist die Haltung des Berichts, nicht die Behauptung, die Quadratur sei schon gelöst.\n\nDie Aussage ist wahr.",
+      "Take-Make-Waste endet bei Entsorgung, Kreislaufwirtschaft hält Wert durch Wiederverwendung, Reparatur und Recycling. Das ist ein Unterschied der Flussform, kein Synonym. Gleichsetzen verwischt die Reformaufgabe.\n\nLineare Destabilisierung von Klima, Arten, Land und Wasser ist genau das Problem, das der Kreis adressieren soll. Die Aussage ist falsch.\n\nDie Aussage ist falsch.",
+      "Innerhalb der Grenzen entwickeln und Gerechtigkeit fördern, ohne Kipppunkte zu überschreiten: so fasst der Text die Transformation. Wirtschaftliche Entwicklung bleibt im Satz, sie wird nicht gestrichen. Die Richtung ist Begrenzung plus Soziales.\n\nDas löst das Wachstums-Armuts-Dilemma nicht durch Leugnen, sondern durch Gestaltungsbedingungen. Die Aussage trifft diese Richtung.\n\nSoziale Gerechtigkeit und biophysische Grenzen stehen in derselben Transformationsformel. Entwicklung wird nicht gestrichen, sie wird an Kipppunkte und Gerechtigkeit gebunden.\n\nDie Aussage ist wahr.",
+      "Marktpreis und Vollinternalisierung fallen im Abschnitt gerade auseinander. Externe Kosten trägt die Gesellschaft oder das Ökosystem, nicht automatisch der Preis. Sobald und stets sind die Fallen.\n\nEin Preis signalisiert Knappheit am Markt, nicht die planetare Rechnung. Solange Folgeschäden abgewälzt werden, bleiben sie extern, auch wenn die Ware ausgezeichnet ist.\n\nDer Marktpreis räumt Knappheit zwischen Käufer und Verkäufer, nicht die Last für Klima, Arten oder ausgebeutete Arbeit. Solange diese Lasten außen bleiben, sind sie extern im Sinne des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

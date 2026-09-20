@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.17",
+    "title": "Aufgabe der Kostenrechnung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kostenrechnung:",
+    "statements": [
+      "Die Kostenrechnung soll zeigen, wie viel ein erzeugtes Produkt oder eine erstellte Leistung kostet.",
+      "Ein Unternehmen kann auf Dauer existieren, auch wenn die Kosten durch die Erträge dauerhaft nicht gedeckt sind.",
+      "Jedes Unternehmen muss gesetzlich eine Kostenrechnung führen.",
+      "Die Kostenrechnung gilt als internes Rechnungswesen, weil sie nur intern verwendet wird.",
+      "Kleine Unternehmen führen eine Kostenrechnung besonders häufig und zuverlässig."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Stückkosten sind der Einstieg in die Steuerung. Das Buch stellt der Kostenrechnung zwei Fragen: Wie viel kostet das im Unternehmen erzeugte Produkt oder die erstellte Leistung, und wie viel trägt der Ertrag aus dem Verkauf zur Kostendeckung bei. Ohne diese Rechnung bleibt unklar, ob ein Fahrrad oder eine Dienstleistung den Verbrauch an Maschinen, Arbeit und Einsatzstoffen rechtfertigt. Genau deshalb muss ein Unternehmen seine Kosten kennen, nicht nur den Gewinn aus der Buchhaltung. Die Aufgabe ist intern und betriebswirtschaftlich, nicht bloß eine Pflichtübung für das Firmenbuch. Wer nur den Jahresgewinn kennt, weiß noch nicht, ob das einzelne Rad die Kosten trägt. Die Kostenrechnung ergänzt die Buchhaltung genau um diese Stück- und Leistungssicht.\n\nDie Aussage ist wahr.",
+      "Ohne Deckung durch Erträge hält kein Betrieb dauerhaft durch. Auf Dauer kann kein Unternehmen existieren, wenn die Kosten durch die Erträge nicht gedeckt sind. Ein einzelnes Jahr mit Verlust mag überbrückbar sein, eine dauerhafte Unterdeckung zehrt Substanz und Zahlungsfähigkeit auf. Der Satz behauptet das Gegenteil und streicht die Existenzbedingung, die das Buch der Kostenrechnung voranstellt. Wer Kosten ignoriert, weil irgendwo noch Umsatz sichtbar ist, verwechselt Bewegung mit Kostendeckung.\n\nDie Aussage ist falsch.",
+      "Kein Gesetz zwingt zur Kostenrechnung. Sie ist nicht gesetzlich verpflichtend, im Gegensatz zur Gewinnermittlung in der Buchhaltung. Betriebswirtschaftlich ist sie als Steuerungs- und Kontrollinstrument vorteilhaft, aber das macht sie nicht zur Pflicht. Wer aus dem Nutzen eine gesetzliche Pflicht ableitet, vermischt internes und externes Rechnungswesen. Kleine Betriebe lassen sie oft weg, obwohl sie nützlich wäre; genau das zeigt, dass kein Zwang besteht.\n\nDie Aussage ist falsch.",
+      "Intern heißt: die Zahlen bleiben im Haus. Die Kostenrechnung wird als internes Rechnungswesen bezeichnet, weil sie nur intern verwendet wird. Sie dient der Leitung als Steuerungs- und Kontrollinstrument, nicht der Veröffentlichung gegenüber Steuerbehörde oder Firmenbuch. Kapitalgeberinnen sehen den Jahresabschluss, nicht zwingend die Stückkalkulation. Genau diese Abgrenzung zum externen Rechnungswesen der Buchhaltung trägt der Satz.\n\nDie Aussage ist wahr.",
+      "Kleine Betriebe führen sie oft gerade nicht. Das Buch hält fest, dass eine Kostenrechnung vor allem in kleinen Unternehmen häufig nicht erfolgt, obwohl sie betriebswirtschaftlich vorteilhaft wäre. Die Behauptung, sie werde dort besonders häufig und zuverlässig geführt, kehrt diese Beobachtung um. Größe und Pflicht fallen hier auseinander: fehlende gesetzliche Verpflichtung und knappe Kapazität erklären die Lücke, nicht besondere Sorgfalt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.18",
+    "title": "Internes und externes Rechnungswesen",
+    "context": "Eine Fahrradmanufaktur in Graz führt Buchhaltung und Kostenrechnung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Buchhaltung wird externes Rechnungswesen genannt, weil sie eine Informations- und Dokumentationsfunktion nach außen hat.",
+      "Kapitalgeberinnen, Gesellschafter und Lieferanten haben Interesse am Gewinn oder Verlust des Geschäftsjahres.",
+      "Die Kostenrechnung muss denselben gesetzlichen Aufbau wie Bilanz und Gewinn- und Verlustrechnung verwenden.",
+      "Als Steuerungs- und Kontrollinstrument ist eine Kostenrechnung betriebswirtschaftlich vorteilhaft.",
+      "Eigentümerinnen erhalten die Kostenrechnung gesetzlich in derselben Form wie den veröffentlichten Jahresabschluss."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nach außen dokumentiert die Buchhaltung, nicht die Kalkulation. Jedes Unternehmen muss Gewinn oder Verlust für das Geschäftsjahr ermitteln, nicht zuletzt wegen der Ertragssteuern. Deshalb heißt die Buchhaltung externes Rechnungswesen: Sie informiert und dokumentiert gegenüber Steuerbehörde, Kapitalgebern, Gesellschaftern, Geschäftspartnern und Mitarbeitenden. Die Grazer Manufaktur legt damit Rechenschaft über Vermögen und Erfolg ab, unabhängig davon, wie detailliert intern kalkuliert wird.\n\nDie Aussage ist wahr.",
+      "Viele Anspruchsgruppen lesen denselben Erfolg. Ob Gewinn oder Verlust erzielt wurde, interessiert nicht nur die Steuerbehörde, sondern auch die Unternehmensleitung, Kapitalgeberinnen, Gesellschafterinnen etwa Aktionäre, Geschäftspartnerinnen etwa Lieferanten und Mitarbeiterinnen. Der Jahresabschluss beantwortet, ob das Unternehmen in der Periode reicher oder ärmer geworden ist. Genau dieses Interesse begründet die Dokumentationsfunktion nach außen. Die Kostenrechnung ersetzt diesen Blick nicht, sie ergänzt ihn intern. Ohne diesen äußeren Bericht fehlte Kapitalgebern und der Steuerbehörde die gemeinsame Zahlenbasis. Interne Stückkalkulationen ersetzen diese Dokumentationspflicht nicht und dürfen anders geschnitten sein.\n\nDie Aussage ist wahr.",
+      "Kein gesetzliches Korsett für die interne Rechnung. Die Kostenrechnung ist nicht gesetzlich verpflichtend und nur intern verwendet. Sie muss daher nicht denselben Aufbau haben wie Bilanz und G&V. Die Leitung kann Fixkosten, variable Kosten und Deckungsbeiträge so gliedern, wie Entscheidungen es brauchen. Wer intern denselben Pflichtaufbau wie beim Jahresabschluss verlangt, überträgt Regeln des externen Rechnungswesens auf ein Instrument, das das Buch ausdrücklich intern und freiwillig nennt.\n\nDie Aussage ist falsch.",
+      "Steuern und kontrollieren braucht Kosten, nicht nur den Jahresgewinn. Betriebswirtschaftlich ist es vorteilhaft, als Steuerungs- und Kontrollinstrument eine Kostenrechnung zu führen. Stückkosten, Zusatzauftrag und Break-even lassen sich aus der G&V allein nicht ablesen. Die Manufaktur entscheidet über Preise und Annahme von Aufträgen mit diesen internen Größen. Der Satz trifft genau diesen Nutzen, ohne eine gesetzliche Pflicht zu behaupten.\n\nDie Aussage ist wahr.",
+      "Eigentum macht die Kalkulation nicht zur Pflichtveröffentlichung. Eigentümerinnen und Gesellschafter zählen zu den Stakeholdern der Buchhaltung; publizierte Jahresabschlüsse umfassen Bilanz, G&V und oft eine Cashflowrechnung. Die Kostenrechnung bleibt intern und ist nicht gesetzlich verpflichtend. Eine gesetzliche Gleichstellung mit dem veröffentlichten Jahresabschluss erfindet das Buch nicht. Interne Berichte können häufiger und anders geschnitten sein, sie ersetzen den externen Abschluss nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.19",
+    "title": "Kosten und Aufwände",
+    "context": "Bewerten Sie die folgenden Aussagen zum Verhältnis von Kosten und Aufwänden:",
+    "statements": [
+      "Die Kosten entsprechen in den meisten Fällen weitgehend den Aufwänden in der Buchhaltung.",
+      "Zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind, sind möglich, etwa der Unternehmerlohn.",
+      "Der Unternehmerlohn eines Einzelunternehmers steht immer als Aufwand in der Buchhaltung.",
+      "Der Unternehmerlohn kann sich an den Opportunitätskosten orientieren, also an einem anderswo erzielbaren Einkommen.",
+      "Kosten sind dasselbe wie Auszahlungen in der Finanzrechnung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Weitgehend gleich, nicht wortgleich in jedem Posten. Kosten entsprechen in den meisten Fällen weitgehend den Aufwänden in der Buchhaltung. Löhne, Material, Miete und Energie tauchen in beiden Rechenkreisen auf. Trotzdem bleiben Differenzen möglich. Der Satz beschreibt die Nähe, ohne Identität zu behaupten. Wer Kosten und Aufwände als völlig getrennte Welten denkt, überzieht die Unterscheidung; wer sie für immer identisch hält, unterschlägt den nächsten Punkt des Buches. Material, Löhne und Energie tauchen deshalb oft in beiden Rechenkreisen auf, während der Unternehmerlohn die Lücke sichtbar macht. Wer die Nähe zur Identität überzieht, kann Zusatzkosten in der Steuerung nicht mehr abbilden.\n\nDie Aussage ist wahr.",
+      "Zusatzkosten sitzen neben der Buchhaltung. Zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind, sind möglich, zum Beispiel der Unternehmerlohn für Einzelunternehmer oder OG-Gesellschafter sowie Komplementäre. Das ist jener Verdienst, den sie sich für ihre Tätigkeit erwarten. Intern gehört er in die Kostenrechnung, damit die Leistung nicht kostenlos erscheint. Genau diese Lücke zwischen internem Verbrauch und externem Aufwand nennt das Buch.\n\nDie Aussage ist wahr.",
+      "In der Buchhaltung fehlt dieser Lohn oft gerade. Der Unternehmerlohn ist ein Beispiel für zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind. Einzelunternehmer und persönlich haftende Gesellschafter entnehmen oft Gewinn, ohne ein Gehalt wie Angestellte zu verbuchen. Der Satz mit „immer als Aufwand“ macht aus einer internen Kalkulationsgröße einen Pflichtposten der Buchhaltung und ist falsch.\n\nDie Aussage ist falsch.",
+      "Anderswo verdienen zu können setzt die Messlatte. Der Unternehmerlohn kann sich an den Opportunitätskosten orientieren, also an jenem Einkommen, das die Unternehmer verdienen könnten, wenn sie einer anderen beruflichen Tätigkeit nachgingen. Intern wird so sichtbar, ob die selbstständige Arbeit mindestens das versäumte Gehalt deckt. Das ist keine Auszahlung an Dritte, sondern ein Bewertungsmaßstab. Der Satz trifft genau diese Orientierung.\n\nDie Aussage ist wahr.",
+      "Verbrauch ist nicht dasselbe wie Geldabfluss. Kosten sind der wertmäßige Verbrauch von Leistungsfaktoren bei Produktion oder Leistungserstellung. Auszahlungen gehören zur Finanzrechnung und betreffen Liquidität. Abschreibungen sind Aufwand und oft Kosten, ohne in der Periode eine Auszahlung zu sein; der Unternehmerlohn kann Kosten sein, ohne Buchhaltungsaufwand. Wer Kosten mit Auszahlungen gleichsetzt, vermischt Kostenrechnung und Finanzrechnung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.20",
+    "title": "Begriff der Kosten",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was Kosten sind:",
+    "statements": [
+      "Kosten sind der wertmäßige Verbrauch von Leistungsfaktoren bei der Produktion oder Leistungserstellung.",
+      "Zu den Leistungsfaktoren zählen zum Beispiel Maschinen, Arbeit und Einsatzstoffe.",
+      "Zwischen Kosten und Aufwänden gibt es niemals Differenzen.",
+      "Fixe Kosten fallen unabhängig von der produzierten oder erstellten Menge an.",
+      "Variable Kosten sinken in der Regel, wenn die Produktionsmenge steigt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Verbrauch mit Wertansatz, nicht bloß Stückzählen. Kosten sind der wertmäßige Verbrauch von Leistungsfaktoren bei der Produktion oder Leistungserstellung eines Unternehmens. Maschinenstunden, Arbeit und Einsatzstoffe werden in Geld bewertet, sobald sie in die Leistung eingehen. Ohne diesen Begriff bleibt unklar, was die Kostenrechnung überhaupt misst. Der Satz gibt die Definition des Abschnitts wieder, nicht eine umgangssprachliche Gleichsetzung mit Rechnungen an Lieferanten. Ohne Geldwert bliebe nur eine technische Mengenliste, die sich nicht mit Preisen und Deckungsbeiträgen verrechnen lässt. Genau diese Bewertung macht aus Verbrauch eine Kostengröße der Kostenrechnung.\n\nDie Aussage ist wahr.",
+      "Drei Beispiele machen den Verbrauch greifbar. Leistungsfaktoren sind zum Beispiel Maschinen, Arbeit und Einsatzstoffe. Ein Fahrradwerk verbraucht Gestelle und Schaltungsteile, Arbeitszeit am Band und Abnutzung der Montageanlagen. Alle drei gehören in die Kosten, sobald sie wertmäßig in die Leistung eingehen. Der Satz zählt genau die Beispiele des Buches, ohne den Kreis künstlich auf Material allein zu verengen.\n\nDie Aussage ist wahr.",
+      "Einige Differenzen bleiben bewusst stehen. Kosten entsprechen weitgehend den Aufwänden, es gibt aber einige Differenzen, zum Beispiel den Unternehmerlohn. Die Behauptung, es gebe niemals Differenzen, streicht genau diesen Vorbehalt. Intern kann ein Verbrauch kalkuliert werden, den die Buchhaltung nicht als Aufwand zeigt. Wer Identität erzwingt, macht die Unterscheidung der beiden Rechenkreise überflüssig.\n\nDie Aussage ist falsch.",
+      "Die Menge ändert an Fixkosten nichts, solange die Kapazität gilt. Fixe Kosten fallen unabhängig von der produzierten oder erstellten Menge an. Gehälter der Geschäftsführung, Miete des Standorts und Versicherungen laufen weiter, ob 10 oder 10 000 Räder montiert werden. Die Unterscheidung setzt voraus, dass man weiß, welche Kosten sich bei steigender Menge verändern und welche nicht. Der Satz trifft die Definition der Fixkosten.\n\nDie Aussage ist wahr.",
+      "Mit der Menge steigen sie, sie fallen nicht. Variable Kosten steigen in der Regel proportional zur produzierten Menge. Bei Fahrrädern sind das im Wesentlichen die Kosten der Bestandteile. Wer behauptet, variable Kosten sänken mit steigender Menge, kehrt die Richtung um. Stückkosten können durch Fixkostendegression sinken, die variablen Kosten der zusätzlichen Räder steigen trotzdem mit der Menge.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.21",
+    "title": "Fixe und variable Kosten",
+    "context": "Ein Betrieb erzeugt Fahrräder. Bewerten Sie die folgenden Aussagen zu fixen und variablen Kosten:",
+    "statements": [
+      "Gehälter für die Geschäftsführung zählen zu den fixen Kosten.",
+      "Die Miete für den Produktionsstandort zählt zu den fixen Kosten, falls Miete zu zahlen ist.",
+      "Die Kosten der Bestandteile, aus denen die Räder zusammengebaut werden, sind im Wesentlichen variable Kosten.",
+      "Abschreibungen sind ausschließlich variable Kosten und steigen proportional zur Stückzahl.",
+      "Bei der Entscheidung über einen Zusatzauftrag betrachtet man, welche zusätzlichen Kosten durch diesen Auftrag anfallen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Die Geschäftsführung wird nicht je Rad neu eingestellt. Fixe Kosten fallen unabhängig davon an, wie viele Räder in einer Periode produziert werden. Dazu zählen die Gehälter für die Geschäftsführung. Ob die Montage ruhiger oder voller läuft, ändert diese Gehälter in der betrachteten Periode typischerweise nicht. Der Satz ordnet den Posten richtig den Fixkosten zu, wie das Fahrradbeispiel des Buches.\n\nDie Aussage ist wahr.",
+      "Raum kostet auch bei leerer Halle. Die Miete für den Produktionsstandort zählt zu den fixen Kosten, falls Miete zu zahlen ist. Sie hängt nicht an der Stückzahl der Räder, sondern am Vertrag über die Fläche. Versicherungen stehen in derselben Gruppe. Wer Miete als proportionalen Materialposten behandelt, verwechselt Standortkosten mit Bestandteilen.\n\nDie Aussage ist wahr.",
+      "Jedes zusätzliche Rad braucht Teile. Variable Kosten steigen in der Regel proportional zur produzierten Menge. Bei Fahrrädern sind das im Wesentlichen die Kosten für die Bestandteile, aus denen die Räder zusammengebaut werden. Rahmen, Reifen und Schaltung folgen der Stückzahl. Genau deshalb müssen sie im Preis mindestens gedeckt sein, bevor von einem Deckungsbeitrag die Rede sein kann.\n\nDie Aussage ist wahr.",
+      "Abschreibungen sind zumindest teilweise fix, nicht rein proportional. Das Buch nennt Abschreibungen bei den Fixkosten, und zwar zumindest teilweise. Maschinenabnutzung kann sich mit der Nutzung ändern, ein reiner proportionaler Anstieg mit jeder Stückzahl ist damit nicht die Regel des Textes. Wer Abschreibungen ausschließlich als variable Kosten fasst, streicht den Vorbehalt „zumindest teilweise“ und die Einordnung neben Miete und Geschäftsführungsgehältern.\n\nDie Aussage ist falsch.",
+      "Zusatzauftrag heißt: welche Kosten kommen neu hinzu. Entscheidet man über Annahme oder Ablehnung eines Zusatzauftrags, betrachtet man, welche zusätzlichen Kosten durch diesen Auftrag anfallen. Schon vorhandene Fixkosten der Halle und der Geschäftsführung ändert der einzelne Auftrag oft nicht. Relevant sind die zusätzlich verbrauchten Bestandteile und weitere zurechenbare Mehrkosten. Genau diese Betrachtung trennt das Buch von der Frage nach den gesamten Stückkosten eines Normalprogramms. Die bereits laufende Miete und die Geschäftsführungsgehälter ändert der einzelne Zusatzauftrag in der Regel nicht. Deshalb ist die Frage nach den zusätzlich anfallenden Kosten die passende Entscheidungsgröße, nicht die vollen Durchschnittsstückkosten inklusive aller Fixkosten.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.22",
+    "title": "Deckungsbeitrag und Preis",
+    "context": "Bewerten Sie die folgenden Aussagen zu Preis, variablen Kosten und Deckungsbeitrag:",
+    "statements": [
+      "Die variablen Kosten sollten auf alle Fälle durch den erzielten Preis gedeckt werden.",
+      "Übersteigt der Preis die variablen Kosten, entsteht ein Beitrag zur Deckung der fixen Kosten.",
+      "Dieser Beitrag zur Deckung der fixen Kosten heißt Deckungsbeitrag.",
+      "Der Deckungsbeitrag ergibt sich, indem man vom Preis die gesamten Fixkosten des Unternehmens abzieht.",
+      "Insgesamt sollte der Preis die gesamten Kosten decken, also variable und fixe Kosten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unter den variablen Kosten verkauft man Verlust pro Stück im engeren Sinn. Die variablen Kosten sollten auf alle Fälle durch den erzielten Preis gedeckt werden. Fehlt diese Deckung, verliert jedes zusätzliche Stück zusätzlich Geld, noch bevor Fixkosten zur Sprache kommen. Bestandteile und andere mengenabhängige Verbräuche müssen im Preis mindestens wiederkommen. Der Satz setzt die Untergrenze, die das Buch vor dem Deckungsbeitrag nennt.\n\nDie Aussage ist wahr.",
+      "Was über den variablen Kosten liegt, arbeitet an der Miete und den Gehältern. Übersteigt der erzielte Preis die variablen Kosten, wird ein Beitrag zur Deckung der fixen Kosten geleistet. Fixkosten fallen unabhängig von der Menge an; ohne solche Beiträge bleiben sie ungedeckt. Der Satz beschreibt genau diesen Überschuss, noch ohne die Formel Stückpreis minus variable Stückkosten auszusprechen.\n\nDie Aussage ist wahr.",
+      "Der Name bündelt denselben Überschuss. Für den Beitrag zur Deckung der fixen Kosten spricht man von Deckungsbeitrag. Er ist die Brücke zwischen Preis und Fixkostenblock, nicht der Gewinn nach allen Kosten. Erst wenn die Summe der Deckungsbeiträge die Fixkosten übersteigt, entsteht Gewinn. Der Satz setzt den Begriff richtig an diese Stelle.\n\nDie Aussage ist wahr.",
+      "Fixkosten des ganzen Betriebs gehören nicht in die Stückformel. Der Deckungsbeitrag eines Rades ist der Preis minus die variablen Kosten dieses Rades, im Zahlenbeispiel 400 minus 180 gleich 220 Euro. Die gesamten Fixkosten von Millionenbeträgen zieht man nicht vom einzelnen Preis ab, sonst entstünde ein sinnlos negativer Betrag. Die Fixkosten werden über die Summe der Deckungsbeiträge oder über Break-even-Umsatz und Deckungsquote verrechnet. Der Satz verwechselt Stückrechnung und Gesamtblock. Die gesamten Fixkosten werden über die Summe der Deckungsbeiträge oder über Break-even-Umsatz und Deckungsquote abgetragen. Ein Abzug des Millionenblocks vom einzelnen Verkaufspreis würde den Deckungsbeitrag unbrauchbar machen und das Fahrradbeispiel 400 minus 180 unmöglich machen.\n\nDie Aussage ist falsch.",
+      "Langfristig zählt die volle Deckung. Insgesamt sollte der Preis die gesamten Kosten decken, sowohl variable als auch fixe Kosten. Der Deckungsbeitrag ist die erste Hürde, die volle Kostendeckung die Existenzbedingung. Kurzfristige Ausnahmen für unverkäufliche Vorsaisonware ändert diese Zielgröße nicht. Der Satz hält das Soll fest, das das Buch nach der Definition des Deckungsbeitrags nennt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.23",
+    "title": "Kurzfristiger Preisnachlass",
+    "context": "Ein Händler hat Fahrräder aus der Vorsaison, die sich nicht mehr regulär verkaufen lassen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein geringerer Preis kann kurzfristig sinnvoll sein, wenn der reduzierte Preis die variablen Kosten übersteigt.",
+      "Es ist sinnvoller, ein solches Rad gar nicht zu verkaufen, als es mit positivem Deckungsbeitrag günstiger abzugeben.",
+      "Die fixen Kosten fallen in dieser Situation sowieso an.",
+      "Kurzfristig ist jeder Preis unter den variablen Kosten betriebswirtschaftlich genauso sinnvoll wie ein Preis darüber.",
+      "Auch bei einem Nachlass bleibt der Deckungsbeitrag ein Beitrag zur Deckung der fixen Kosten."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unverkäufliche Vorsaisonware ändert die Preislogik für den Moment. Kurzfristig kann ein geringerer Preis sinnvoll sein, wenn Räder aus der Vorsaison sich nicht mehr regulär verkaufen lassen. Übersteigt der reduzierte Preis die variablen Kosten, entsteht zumindest ein Deckungsbeitrag. Dann fließt noch etwas gegen die Fixkosten, statt dass das Rad stehen bleibt. Der Satz knüpft die Ausnahme genau an diese Bedingung, nicht an beliebiges Verschenken. Regulär soll der Preis weiterhin variable und fixe Kosten gemeinsam decken. Die Ausnahme gilt nur für Ware, die sich zum alten Preis nicht mehr verkaufen lässt, und nur solange der neue Preis über den variablen Kosten bleibt.\n\nDie Aussage ist wahr.",
+      "Stehenlassen ist teurer, wenn noch ein Beitrag möglich ist. Übersteigt der reduzierte Preis die variablen Kosten, ist der Verkauf sinnvoller, als das Rad gar nicht zu verkaufen. Die Fixkosten laufen weiter, das unverkaufte Rad deckt nichts. Die Behauptung kehrt die Empfehlung des Buches um. Nur wenn der Nachlasspreis unter die variablen Kosten fällt, würde jeder Verkauf die Lage verschärfen.\n\nDie Aussage ist falsch.",
+      "Halle, Versicherung und Geschäftsführung warten nicht auf das letzte Rad. Der Deckungsbeitrag ist ein Beitrag zur Deckung der fixen Kosten, die sowieso anfallen. Miete und ähnliche Posten verschwinden nicht, weil ein Modell aus der Vorsaison unverkäuflich wirkt. Genau deshalb lohnt ein Preis über den variablen Kosten: er mindert die ungedeckte Last, ohne neue Fixkosten zu erzeugen. Der Satz hält diese Unvermeidbarkeit fest.\n\nDie Aussage ist wahr.",
+      "Unter den variablen Kosten fehlt selbst der erste Beitrag. Die variablen Kosten sollten auf alle Fälle durch den Preis gedeckt werden. Ein Preis darunter vergrößert den Verlust je Stück und ist nicht genauso sinnvoll wie ein Preis darüber. Die kurzfristige Ausnahme gilt nur, wenn der reduzierte Preis die variablen Kosten übersteigt. Der Satz streicht diese Grenze und macht aus der Ausnahme eine Freigabe jedes Dumpingpreises.\n\nDie Aussage ist falsch.",
+      "Der Name ändert sich durch den Nachlass nicht. Auch beim günstigeren Preis spricht man von Deckungsbeitrag, sobald der Preis die variablen Kosten übersteigt: ein Beitrag zur Deckung der fixen Kosten. Er fällt kleiner aus als zum regulären Preis, bleibt aber dieselbe Größe. Gewinn nach vollen Kosten muss daraus nicht folgen. Der Satz trifft die Definition, die das Buch an genau dieser Stelle wiederholt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.24",
+    "title": "Deckungsbeitrag 400 Euro",
+    "context": "Ein Unternehmen verkauft ein Fahrrad um 400 Euro. Die variablen Kosten betragen 180 Euro. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Deckungsbeitrag beträgt 220 Euro je Rad.",
+      "Die Deckungsquote beträgt 55 Prozent vom Verkaufspreis.",
+      "Der Deckungsbeitrag beträgt 180 Euro je Rad.",
+      "Die Deckungsquote ergibt sich als 180 Euro geteilt durch 400 Euro.",
+      "55 Prozent des Verkaufspreises können zur Deckung der Fixkosten verwendet werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Preis minus variable Kosten, nicht minus Gewinnziel. 400 Euro Verkaufspreis minus 180 Euro variable Kosten ergeben 220 Euro. Das Buch nennt genau diesen Betrag als Deckungsbeitrag für das Rad. Die 220 Euro stehen zur Deckung der Fixkosten bereit, bevor Gewinn entsteht. Wer 180 Euro als Deckungsbeitrag liest, hat die variablen Kosten mit dem Beitrag verwechselt. Die Identität ist: Deckungsbeitrag = Preis - variable Stückkosten = 400 - 180 = 220. 220 Euro sind der Betrag, der nach Deckung der 180 Euro Bestandteile und übrigen Mengenkosten für Miete, Versicherung und ähnliche Fixkosten bleibt. Erst wenn solche Beiträge in der Summe die Fixkosten überschreiten, entsteht Gewinn, nicht schon beim einzelnen positiven Deckungsbeitrag.\n\nDie Aussage ist wahr.",
+      "Anteil am Preis, nicht Anteil an den Teilen. 220 Euro von 400 Euro sind 220 / 400 = 0,55, also 55 Prozent. Diesen Prozentsatz nennt das Buch Deckungsquote. Er sagt, welcher Teil jedes Euro Umsatz den Fixkosten zufließen kann, sobald die variablen Kosten verdient sind. Die Quote hängt am Verhältnis Beitrag zu Preis, nicht am bloßen Materialwert 180 Euro.\n\nDie Aussage ist wahr.",
+      "180 Euro sind die variablen Kosten, nicht der Beitrag. Der Deckungsbeitrag ist 400 minus 180 gleich 220 Euro. Wer 180 Euro als Deckungsbeitrag angibt, setzt den Mengenkostenblock mit dem Überschuss gleich. Dann wäre die Quote 180 / 400 = 45 Prozent, was dem Buch widerspricht. Die 180 Euro müssen zuerst gedeckt sein, der Beitrag kommt danach.\n\nDie Aussage ist falsch.",
+      "Die Quote hängt am Beitrag, nicht an den variablen Kosten allein. Deckungsquote = Deckungsbeitrag / Verkaufspreis = 220 / 400 = 55 Prozent. 180 geteilt durch 400 ergibt 45 Prozent und misst den Anteil der variablen Kosten am Preis, nicht die Deckungsquote. Das Buch setzt 55 Prozent ausdrücklich mit 220 von 400 gleich. Die falsche Division vertauscht Zähler.\n\nDie Aussage ist falsch.",
+      "Dieselbe 55 Prozent-Logik trägt später den Break-even. 55 Prozent der Verkaufspreise können zur Deckung der Fixkosten verwendet werden, weil genau das die Deckungsquote ist. Von jedem Umsatz-Euro bleiben nach variablen Kosten 55 Cent für den Fixkostenblock. Bei einheitlicher Quote über alle Modelle gilt dasselbe Verhältnis für den gesamten Umsatz. Der Satz wiederholt die Brücke, die das Buch vom Stückbeispiel zur Break-even-Rechnung schlägt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.25",
+    "title": "Break-even-Umsatz",
+    "context": "Die Fixkosten betragen 4 Millionen Euro, die Deckungsquote über alle Fahrradmodelle 55 Prozent. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Break-even-Umsatz beträgt 4 Millionen geteilt durch 55 und multipliziert mit 100, also 7 272 727,27 Euro.",
+      "Das Unternehmen sollte zumindest knapp 7,3 Millionen Euro Umsatz machen, um alle Kosten zu decken.",
+      "Der Break-even-Umsatz ergibt sich, indem man 4 Millionen Euro mit 0,55 multipliziert.",
+      "Bei höherem Umsatz als dem Break-even-Umsatz kommt das Unternehmen in die Gewinnzone.",
+      "Mit dem Erreichen der Kostendeckung am Break-even-Punkt sichert das Unternehmen seine Existenz im Sinne des Abschnitts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Fixkosten gleich 55 Prozent vom gesuchten Umsatz. Die Fixkosten von 4 Millionen Euro werden mit der Deckungsquote 55 Prozent gleichgesetzt. Dann gilt: 4 000 000 / 55 × 100 = 7 272 727,27 Euro. Anders geschrieben: Umsatz = Fixkosten / 0,55 = 4 000 000 / 0,55 = 7 272 727,27. Bei diesem Umsatz decken die kumulierten Deckungsbeiträge gerade den Fixkostenblock. Das Buch rechnet denselben Weg vor.\n\nDie Aussage ist wahr.",
+      "Knapp 7,3 Millionen ist die gerundete Schwelle. 7 272 727,27 Euro sind knapp 7,3 Millionen Euro. Unter dieser Marke bleiben Fixkosten ungedeckt, darüber beginnt die Gewinnzone. Der Satz übernimmt die qualitative Folgerung des Zahlenbeispiels, ohne eine neue Formel zu erfinden. Existenzsicherung hängt hier an der vollen Kostendeckung durch den Umsatz, nicht an einem beliebigen Umsatzziel.\n\nDie Aussage ist wahr.",
+      "Multiplizieren statt Dividieren liefert den Deckungsbeitragsbetrag, nicht den Umsatz. 4 000 000 × 0,55 = 2 200 000 Euro wäre jener Deckungsbeitrag, den 4 Millionen Umsatz bei 55 Prozent Quote erbrächten, weit unter den Fixkosten. Der gesuchte Break-even-Umsatz entsteht durch Division der Fixkosten durch die Quote, nicht durch Multiplikation. 4 Millionen mal 0,55 verfehlt 7,27 Millionen deutlich. Die falsche Rechenrichtung dreht die Gleichsetzung „Fixkosten = 55 Prozent vom Umsatz“ um. Die Gleichsetzung lautet: 0,55 mal Umsatz = 4 000 000, also Umsatz = 4 000 000 geteilt durch 0,55. Multiplikation der Fixkosten mit der Quote beantwortet eine andere Frage, nämlich welchen Deckungsbeitrag ein schon bekannter Umsatz erbrächte.\n\nDie Aussage ist falsch.",
+      "Über der Schwelle bleibt Beitrag übrig. Bei höherem Umsatz als dem Break-even kommt das Unternehmen in die Gewinnzone. Jeder weitere Euro Umsatz liefert nach den Annahmen 55 Cent über die bereits gedeckten Fixkosten hinaus. Unter der Schwelle bleiben die Fixkosten teilweise ungedeckt. Der Satz folgt direkt auf die Rechnung 7,27 Millionen im Buch.\n\nDie Aussage ist wahr.",
+      "Kostendeckung ist hier die Existenzbedingung. Das Unternehmen soll zumindest knapp 7,3 Millionen Umsatz machen, um zumindest alle Kosten zu decken; bei höherem Umsatz kommt es in die Gewinnzone und sichert damit seine Existenz. Auf Dauer kann kein Unternehmen existieren, wenn Kosten durch Erträge nicht gedeckt sind. Der Break-even-Punkt ist genau diese Schwelle im Zahlenbeispiel, nicht eine steuerliche Pflichtgröße.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.26",
+    "title": "Aufbau der Gewinn- und Verlustrechnung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Gewinn- und Verlustrechnung:",
+    "statements": [
+      "In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen.",
+      "Zu den Aufwänden zählen unter anderem Löhne und Gehälter, Materialaufwand, Miete, Versicherungen, Energie, Abschreibungen und die Bildung von Rückstellungen.",
+      "Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt.",
+      "Der Gewinn in der G&V ist stets identisch mit dem Cashflow derselben Periode.",
+      "Der Gewinn erhöht das Eigenkapital."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ertrag minus Aufwand, das ist die G&V. Von den Umsatzerlösen und anderen Erträgen werden die Aufwände abgezogen. So entsteht das Periodenergebnis, nicht durch Gegenüberstellung von Einzahlungen und Auszahlungen. Die FunBike-Zahlen beginnen bei Umsatzerlösen und ziehen Material, Personal, Abschreibungen und sonstige betriebliche Aufwände ab, bis zum EBIT und weiter zum Jahresergebnis. Der Satz beschreibt genau diesen Aufbau. Einzahlungen und Auszahlungen gehören in Finanz- und Cashflowrechnung. Abschreibungen und Rückstellungen zeigen in der G&V Aufwand, der in derselben Periode kein Geld sein muss, und genau deshalb steht die Erfolgsrechnung neben der Zahlungsrechnung.\n\nDie Aussage ist wahr.",
+      "Die Aufwandsliste ist breiter als nur Material. Löhne und Gehälter, Materialaufwand, Miete, Versicherungsaufwand, Energieaufwand, Abschreibungen auf Sachanlagen und die Bildung von Rückstellungen zählen zu den Aufwänden. Abschreibungen und Rückstellungen zeigen, dass Aufwand nicht dasselbe sein muss wie eine Auszahlung der Periode. Der Satz sammelt die Beispiele des Buches und macht die G&V als Erfolgsrechnung kenntlich.\n\nDie Aussage ist wahr.",
+      "Mehr Ertrag als Aufwand heißt Gewinn. Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt. Dann ist das Unternehmen in der Periode reicher geworden, im Sinn der Buchhaltungsfrage des Abschnitts. Liegen die Aufwände höher, entsteht Verlust. Der Satz hält die Vorzeichenregel fest, ohne Cashflow oder Stückkosten zu vermischen.\n\nDie Aussage ist wahr.",
+      "Erfolg und Geldfluss fallen auseinander. Der Cashflow ist nicht identisch mit dem Gewinn: man kann Gewinn erzielen, ohne über liquide Mittel zu verfügen, und liquide sein, ohne Gewinn zu erzielen. Abschreibungen mindern den Gewinn, ohne in der Periode Geld abfließen zu lassen; Lageraufbau kann Geld binden, während die G&V noch Gewinn zeigt. Die Behauptung einer steten Identität widerspricht genau dieser Unterscheidung.\n\nDie Aussage ist falsch.",
+      "Gewinn stärkt die Passivseite unten links im Eigenkapital. Der Gewinn erhöht das Eigenkapital und kann auch aus dem Vergleich des aktuellen Eigenkapitals mit jenem zu Beginn des Geschäftsjahres ermittelt werden. In der FunBike-Bilanz steht der Gewinn von 3 614 250 Euro ausdrücklich im Eigenkapital. Entnahme oder Ausschüttung wäre die Gegenbewegung. Der Satz trifft die Wirkung, die das Buch der G&V und der doppelten Gewinnermittlung zuschreibt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.27",
+    "title": "Doppelte Gewinnermittlung",
+    "context": "Bewerten Sie die folgenden Aussagen zur doppelten Gewinnermittlung:",
+    "statements": [
+      "Der Gewinn wird in der Gewinn- und Verlustrechnung ermittelt.",
+      "Der Gewinn kann auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende eines Geschäftsjahres ermittelt werden.",
+      "Beide Wege müssen denselben Gewinn ergeben.",
+      "Diese doppelte Gewinnermittlung steht im Zusammenhang mit dem Begriff doppelte Buchhaltung.",
+      "Die Einnahmen-Ausgaben-Rechnung gilt als doppelte Buchhaltung, weil sie Abschreibungen enthält."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Die G&V ist der erste Weg zum Periodenergebnis. Bei doppelter Buchhaltung entstehen Bilanz und Gewinn- und Verlustrechnung; der Gewinn wird in der G&V ermittelt. Umsatzerlöse und Erträge minus Aufwände führen zum Jahresergebnis. FunBike zeigt diesen Weg bis 3 614 250 Euro. Der Satz nennt den einen der beiden vorgeschriebenen Wege, ohne den Eigenkapitalvergleich auszuschließen. FunBike führt diesen Weg zahlenmäßig bis zum Jahresergebnis 3 614 250 Euro. Derselbe Betrag muss sich im Eigenkapitalvergleich wiederfinden, sonst wäre die doppelte Ermittlung gebrochen. Die G&V bleibt dabei die detaillierte Aufwand-Ertrag-Rechnung, nicht bloß eine Restgröße der Bilanz.\n\nDie Aussage ist wahr.",
+      "Steigendes Eigenkapital erzählt dieselbe Geschichte. Der Gewinn kann auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende eines Geschäftsjahres ermittelt werden. Steigt das Eigenkapital, liegt Gewinn vor, sinkt es, Verlust, sofern Entnahmen und Einlagen sachgerecht berücksichtigt sind. Die Bilanz zweier Stichtage liefert so die zweite Messung. Das Buch stellt beide Wege nebeneinander. Entnahmen und Einlagen sind dabei sachgerecht zu trennen, sonst würde eine Privatentnahme wie ein Verlust wirken. Das Buch stellt den Eigenkapitalvergleich deshalb als zweiten, gleichwertigen Weg neben die G&V, nicht als ungefähre Schätzung.\n\nDie Aussage ist wahr.",
+      "Gleicher Gewinn, sonst stimmt die Buchhaltung nicht. Beide Ermittlungen müssen denselben Gewinn ergeben, daher doppelte Gewinnermittlung. Weichen G&V und Eigenkapitalvergleich ab, liegt ein Fehler in den Geschäftsfällen oder in der Abschlussarbeit. Die Übereinstimmung ist die Kontrolle, nicht eine ungefähre Näherung. Der Satz gibt genau diese Muss-Bedingung wieder.\n\nDie Aussage ist wahr.",
+      "Der Name doppelte Buchhaltung hängt an dieser Doppelung. Man spricht von doppelter Gewinnermittlung und in diesem Zusammenhang auch von doppelter Buchhaltung: Bilanz plus G&V, Gewinn auf zwei Wegen. Das ist mehr als das bloße Vorhandensein von Abschreibungen. Der Satz ordnet den Begriff so, wie der Abschnitt ihn nach der G&V einführt.\n\nDie Aussage ist wahr.",
+      "EAR bleibt die einfachere Alternative, nicht die doppelte Buchhaltung. Einzelunternehmen und Personengesellschaften unter 700 000 Euro Umsatz können eine Einnahmen-Ausgaben-Rechnung erstellen, die weniger aufwendig ist als die doppelte Buchhaltung. Abschreibungen stecken in der EAR, das macht sie nicht zur doppelten Buchhaltung mit Bilanz, G&V und doppelter Gewinnermittlung. Kapitalgesellschaften und Überschreiten der Umsatzgrenze führen zur doppelten Buchhaltung. Der Satz vermischt beide Formen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.28",
+    "title": "G&V der FunBike GmbH",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro): Umsatzerlöse 70 656 000, Materialaufwand 53 175 000, Personalaufwand 7 900 000, Abschreibungen 1 800 000, sonstige betriebliche Aufwände 2 875 000, EBIT 4 906 000, Zinserträge 12 000, Zinsaufwand 99 000, Finanzergebnis -87 000, Ergebnis vor Steuern 4 819 000, Steuern 1 204 750, Jahresergebnis 3 614 250. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Ergebnis vor Zinsen und Steuern (EBIT) beträgt 4 906 000 Euro.",
+      "Der Materialaufwand übersteigt den Personalaufwand deutlich.",
+      "Das Finanzergebnis beträgt -87 000 Euro.",
+      "Das Jahresergebnis stimmt mit dem in der Bilanz ausgewiesenen Gewinn von 3 614 250 Euro überein.",
+      "Das Jahresergebnis beträgt 4 906 000 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nach den betrieblichen Aufwänden steht das EBIT. Umsatzerlöse 70 656 000 minus Material 53 175 000 minus Personal 7 900 000 minus Abschreibungen 1 800 000 minus sonstige betriebliche Aufwände 2 875 000 ergeben 4 906 000. 70 656 000 - 53 175 000 = 17 481 000; 17 481 000 - 7 900 000 = 9 581 000; 9 581 000 - 1 800 000 = 7 781 000; 7 781 000 - 2 875 000 = 4 906 000. Das Buch weist genau dieses Ergebnis vor Zinsen und Steuern aus. Zinsen und Steuern sind in dieser 4 906 000-Euro-Größe noch nicht abgezogen. Das Finanzergebnis und die Steuerzeile folgen erst danach und führen zum Jahresergebnis. Wer EBIT und Gewinn vertauscht, überspringt genau diese beiden Stufen der G&V.\n\nDie Aussage ist wahr.",
+      "Teile und Vorprodukte dominieren die Aufwandseite. Materialaufwand 53 175 000 Euro steht gegen Personalaufwand 7 900 000 Euro. 53 175 000 ist mehrfach so groß wie 7 900 000; das passt zu einem Fahrradproduzenten, der viele Bestandteile zukauft. Die Relation ist aus den beiden Zeilen unmittelbar ablesbar, ohne Schätzung. Wer den Personalblock für den größten Aufwand hielte, widerspräche der G&V. 53 175 000 zu 7 900 000 ist mehr als das Sechsfache. Die Kostenrechnung würde denselben Materialblock vor allem als variable Kosten der Bestandteile lesen, während Personal und Abschreibungen gemischter sitzen. Die G&V liefert die Rohzahlen für diese interne Deutung, ohne selbst Fix und variabel zu trennen.\n\nDie Aussage ist wahr.",
+      "Zinserträge minus Zinsaufwand, mit Vorzeichen. Zinserträge 12 000 minus Zinsaufwand 99 000 ergeben 12 000 - 99 000 = -87 000 Euro. Das Finanzergebnis ist damit negativ. Es trennt das EBIT vom Ergebnis vor Steuern 4 819 000. Der Satz übernimmt die ausgewiesene Zeile, nicht das EBIT.\n\nDie Aussage ist wahr.",
+      "Dieselbe 3 614 250 Euro-Brücke zwischen G&V und Bilanz. Jahresergebnis bzw. Gewinn 3 614 250 Euro steht in der G&V; in der Bilanz erscheint derselbe Gewinn im Eigenkapital neben den Bareinlagen von 525 000 Euro. 4 819 000 - 1 204 750 = 3 614 250 bestätigt die Steuerzeile. Die Übereinstimmung ist die doppelte Gewinnermittlung in Zahlen, nicht Zufall zweier unabhängiger Größen. 4 819 000 minus 1 204 750 ergibt 3 614 250 und schließt die Kette von EBIT über Finanzergebnis und Steuern. Ohne diese Übereinstimmung wäre die doppelte Gewinnermittlung in den FunBike-Zahlen widerlegt.\n\nDie Aussage ist wahr.",
+      "4 906 000 Euro ist das EBIT, nicht der Gewinn nach Zinsen und Steuern. Nach Finanzergebnis -87 000 folgt 4 819 000 vor Steuern, nach Steuern 1 204 750 bleibt 3 614 250. Wer 4 906 000 als Jahresergebnis liest, stoppt vor Zinsen und Steuern. Die G&V unterscheidet die Stufen ausdrücklich. Der Gewinn in der Bilanz ist 3 614 250, nicht 4 906 000.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.29",
+    "title": "Cashflow und Gewinn",
+    "context": "Bewerten Sie die folgenden Aussagen zur Cashflowrechnung:",
+    "statements": [
+      "Publizierte Jahresabschlüsse umfassen neben Bilanz und G&V auch eine Cashflowrechnung.",
+      "Die Cashflowrechnung zeigt Geldzuflüsse und Geldabflüsse in einer Periode und wird auch Geldflussrechnung genannt.",
+      "Man kann einen Gewinn erzielen, ohne über liquide Mittel zu verfügen.",
+      "Man kann liquide sein, ohne einen Gewinn zu erzielen.",
+      "Der Cashflow ist identisch mit dem Gewinn, weil beide denselben Periodenerfolg messen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Teile bilden den publizierten Abschluss in diesem Abschnitt. Publizierte Jahresabschlüsse umfassen neben Bilanz und G&V auch eine Cashflowrechnung. Sie ergänzt Vermögen und Erfolg um die Zahlungsströme. Investorinnen finden dort, ob der Kernbetrieb Einzahlungsüberschüsse liefert. Der Satz zählt die Bestandteile so, wie das Buch sie nach der FunBike-G&V einführt.\n\nDie Aussage ist wahr.",
+      "Geldfluss, nicht Aufwand und Ertrag. Die Cashflowrechnung zeigt die Geldzuflüsse und -abflüsse in und aus dem Unternehmen im Laufe der betrachteten Periode, in der Regel für ein Geschäftsjahr. Deshalb heißt sie auch Geldflussrechnung. Einzahlungen und Auszahlungen stehen im Mittelpunkt, analog zur Finanzrechnung, aber nach Ursachen gegliedert. Der Satz trifft Gegenstand und Zweitname.\n\nDie Aussage ist wahr.",
+      "Gewinn ohne Kasse ist möglich. Der Cashflow ist eine Kennzahl für Zahlungsfähigkeit und nicht identisch mit dem Gewinn; man kann einen Gewinn erzielen, ohne über liquide Mittel zu verfügen. Forderungen statt Zahlung, Lageraufbau oder Tilgungsdruck können den Gewinn von der Liquidität trennen. Abschreibungen mindern den Gewinn ohne Geldabfluss, während andere Vorgänge Geld abziehen, ohne den Gewinn ebenso zu treffen. Der Satz hält genau diese Möglichkeit fest. Abschreibungen von 1 800 000 Euro in der FunBike-G&V mindern den Gewinn, ohne in derselben Höhe Geld abfließen zu lassen. Forderungen und Lager können umgekehrt Geld binden, während die G&V noch Gewinn zeigt. Genau solche Brücken erklären, warum Liquidität und Erfolg auseinanderfallen können.\n\nDie Aussage ist wahr.",
+      "Kasse ohne Gewinn ist ebenfalls möglich. Man kann liquide sein, ohne einen Gewinn zu erzielen. Kreditaufnahme oder Verkauf von Anlagevermögen erhöhen Zahlungsmittel, ohne dass die G&V deshalb Gewinn ausweisen muss. Ein Verlustjahr mit noch vorhandenen Bankguthaben passt in dasselbe Bild. Der Satz ist die zweite Hälfte derselben Unterscheidung im Buch.\n\nDie Aussage ist wahr.",
+      "Zwei Kennzahlen, zwei Fragen. Der Cashflow ist nicht identisch mit dem Gewinn. Gewinn beantwortet, ob das Unternehmen reicher oder ärmer geworden ist; Cashflow beantwortet den Zahlungsmittelzufluss und die Liquidität. Die Behauptung, beide mäßen denselben Periodenerfolg und seien daher identisch, streicht Abschreibungen, Rückstellungen, Lager und Finanzierungsvorgänge. Genau deshalb steht die Cashflowrechnung neben der G&V, nicht als Kopie.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.30",
+    "title": "Bereiche der Cashflowrechnung",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Bereichen der Cashflowrechnung:",
+    "statements": [
+      "Der Bereich Betriebstätigkeit ist der wichtigste in der Cashflowrechnung, weil er den Kern des Geschäfts betrifft.",
+      "Im Finanzierungsbereich können Zuflüsse entstehen, wenn neue Gesellschafter Eigenkapital oder Kredite Fremdkapital bringen.",
+      "Zinszahlungen, Dividendenzahlungen oder Kreditrückzahlungen stehen als Abfluss im Finanzierungsbereich.",
+      "Im Investitionsbereich fließen Zahlungsmittel ab, wenn Anlagevermögen gekauft wird, und können zufließen, wenn etwa ein Grundstück verkauft wird.",
+      "Investorinnen schauen vor allem auf den Investitionsbereich, weil nur dort der Kern des Geschäfts sichtbar wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Operations trifft den laufenden Kern. Der Bereich Betriebstätigkeit ist der wichtigste in der Cashflowrechnung, weil er den Kern des Geschäfts betrifft. Er zeigt, ob dort Einzahlungsüberschüsse erwirtschaftet werden. Investorinnen schauen daher oft vor allem auf diesen Teil. Finanzierung und Investition erklären Kapitalaufnahme und Anlagenkauf, ersetzen aber nicht den Blick auf das operative Geschäft.\n\nDie Aussage ist wahr.",
+      "Neue Mittel von Gesellschaftern oder Banken landen bei der Finanzierung. Dieser Bereich zeigt Zuflüsse aus Finanzierungsaktivitäten, indem zum Beispiel neue Gesellschafter und damit Eigenkapital oder Kredite und damit Fremdkapital aufgenommen worden sind. Das ist Mittelherkunft in Zahlungsmitteln, nicht der Umsatz aus Fahrradverkäufen. Der Satz ordnet beide Quellen richtig diesem Block zu.\n\nDie Aussage ist wahr.",
+      "Abflüsse der Finanzierung sind Zinsen, Dividenden und Tilgung. Der Abfluss in diesem Bereich steht zum Beispiel in Zusammenhang mit Zinszahlungen, Dividendenzahlungen oder Kreditrückzahlungen. Das sind Kapitalkosten und Kapitalrückgaben, nicht der Kauf einer Maschine. Wer sie in die Betriebstätigkeit zwingt, vermischt Kernprozess und Kapitalstruktur. Der Satz folgt der Zuordnung des Buches.\n\nDie Aussage ist wahr.",
+      "Anlagen kaufen bindet Geld, Anlagen verkaufen setzt Geld frei. Im Investitionsbereich zeigt sich, ob Zahlungsmittel in langfristige Investments geflossen sind, um Anlagevermögen zu kaufen. Andererseits können Zahlungsmittel generiert werden, wenn Anlagevermögen verkauft worden ist, etwa ein Grundstück oder ein Gebäude. Beides betrifft die lange Bindung, nicht den Tagesumsatz. Der Satz nennt Zufluss und Abfluss in der vom Buch vorgesehenen Richtung.\n\nDie Aussage ist wahr.",
+      "Der Kern sitzt in der Betriebstätigkeit, nicht in den Investitionen. Investorinnen schauen oft vor allem auf den Teil Betriebstätigkeit, weil dort sichtbar wird, ob das Kerngeschäft Einzahlungsüberschüsse liefert. Der Investitionsbereich erklärt Anlagenkäufe und -verkäufe, nicht den laufenden Erfolg des Geschäftsmodells. Die Behauptung vertauscht den wichtigsten Bereich mit einem anderen. Maschinenkauf kann sogar negativ im Investitions-Cashflow stehen, während das operative Geschäft gesund ist. Ein kräftiger negativer Investitions-Cashflow kann sogar ein Zeichen für Maschinenkauf und Wachstum sein, während schwache operative Überschüsse das eigentliche Warnsignal wären. Die Rangfolge der drei Bereiche darf deshalb nicht umgedreht werden.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.31",
+    "title": "Umlaufintensität und goldene Bilanzregel",
+    "context": "Bilanz der FunBike GmbH per 31.12.20xx (Euro): Grundstücke und Bauten 750 000, technische Anlagen 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen 598 000, Bankguthaben 320 250, Bilanzsumme 9 638 250. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen, zum Beispiel Gebäude und Maschinen.",
+      "Umlaufvermögen bleibt für gewöhnlich kürzer als ein Jahr im Unternehmen, zum Beispiel Vorräte.",
+      "FunBike ist umlaufintensiv, weil das Umlaufvermögen deutlich über dem Anlagevermögen liegt.",
+      "Die goldene Bilanzregel verlangt, dass langfristig gebundenes Vermögen auch langfristig finanziert sein sollte.",
+      "FunBike hat deutlich mehr Anlagevermögen als Umlaufvermögen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Länger als ein Jahr, das ist die Schwelle des Anlagevermögens. Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, wird Anlagevermögen genannt, zum Beispiel Gebäude und Maschinen. Bei FunBike stehen Grundstücke und Bauten 750 000, technische Anlagen 2 330 000 und Finanzanlagen 240 000, zusammen 3 320 000 Euro. Das ist langfristig gebundenes Vermögen, nicht der Vorrat an Rahmen und Reifen. Der Satz gibt die Fristigkeitsregel des Buches wieder.\n\nDie Aussage ist wahr.",
+      "Unter einem Jahr liegt das Umlaufvermögen. Es stellt den Teil des Vermögens dar, der für gewöhnlich kürzer als ein Jahr im Unternehmen bleibt, zum Beispiel Vorräte. Forderungen und Bankguthaben gehören in dieselbe Gruppe. FunBike zeigt Vorräte 5 400 000, Forderungen 598 000 und Bank 320 250. Der Satz trifft Definition und Beispiel, ohne die Vorräte ins Anlagevermögen zu schieben.\n\nDie Aussage ist wahr.",
+      "Vorräte machen den Betrieb vorrats- und umlauflastig. Anlagevermögen 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro. Umlaufvermögen 5 400 000 + 598 000 + 320 250 = 6 318 250 Euro. 6 318 250 liegt deutlich über 3 320 000, daher umlaufintensiv. Für einen Fahrradproduzenten mit vielen Bestandteilen und fertigen Rädern auf Lager ist das plausibel. Trotzdem könnte die Lagerhaltung geprüft werden, ob sie reduzierbar ist, ohne die Produktion zu beeinträchtigen.\n\nDie Aussage ist wahr.",
+      "Lange Bindung braucht lange Finanzierung. Die goldene Bilanzregel verlangt, dass langfristig gebundenes Vermögen auch langfristig finanziert sein sollte. Bei FunBike liegt das langfristige Vermögen etwas über drei Millionen Euro, das Eigenkapital über vier Millionen, und ein Teil des Fremdkapitals wird vermutlich langfristig sein; die Regel ist erfüllt. Kurzfristige Lieferantenverbindlichkeiten allein dürften die Maschinenhalle nicht tragen. Kurzfristige Verbindlichkeiten aus Lieferungen von 300 000 Euro könnten die technische Ausstattung von über zwei Millionen Euro nicht tragen. Eigenkapital über vier Millionen plus vermutlich langfristige Bankkredite passen dagegen zur Bindungsdauer des Anlagevermögens. Das Buch prüft genau diese Fristenkongruenz der Finanzierung, nicht eine kurzfristige Liquiditätsquote, die der Abschnitt nicht einführt.\n\nDie Aussage ist wahr.",
+      "Die Relation liegt umgekehrt. Umlaufvermögen 6 318 250 gegen Anlagevermögen 3 320 000: deutlich mehr Umlauf- als Anlagevermögen. Die Behauptung, FunBike habe deutlich mehr Anlagevermögen, widerspricht den Additionen und der Kennzeichnung als umlaufintensiv. Gebäude und Maschinen sind groß in Euro, die Vorräte sind größer. Wer nur die erste Aktiva-Zeile liest, übersieht den Lagerblock.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.32",
+    "title": "Kapitalstruktur der FunBike GmbH",
+    "context": "Passiva der FunBike GmbH (Euro): Bareinlagen 525 000, Gewinn 3 614 250, Rückstellungen 2 000 000, Bankkredite 3 199 000, Verbindlichkeiten aus Lieferungen und Leistungen 300 000, Gesamtkapital 9 638 250. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Eigenkapital beträgt 4 139 250 Euro und liegt damit über vier Millionen Euro.",
+      "Rund 57 Prozent des Kapitals sind Fremdkapital.",
+      "Der Großteil des Fremdkapitals entfällt auf Bankkredite.",
+      "Eine hohe Abhängigkeit von Fremdkapital ist für österreichische KMU untypisch.",
+      "Verbleibt der hohe Gewinn im Unternehmen, stärkt er Eigenkapital und Innenfinanzierungskraft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Bareinlagen plus Gewinn ergeben das Eigenkapital. 525 000 + 3 614 250 = 4 139 250 Euro. Das Buch spricht davon, dass das Eigenkapital über vier Millionen Euro beträgt; 4 139 250 liegt klar darüber. Dieser Betrag finanziert zusammen mit langfristigem Fremdkapital das Anlagevermögen im Sinn der goldenen Bilanzregel. Die 4 139 250 Euro sind nicht das Fremdkapital und nicht die Bilanzsumme 9 638 250. Zusammen mit einem Teil des Fremdkapitals finanziert dieses Eigenkapital das Anlagevermögen von etwas mehr als drei Millionen Euro und erfüllt so die goldene Bilanzregel. 4 139 250 Euro sind die Summe der eigenen Mittel, nicht der Bankkredite.\n\nDie Aussage ist wahr.",
+      "Fremdkapital durch Bilanzsumme. Rückstellungen 2 000 000 + Bankkredite 3 199 000 + Verbindlichkeiten 300 000 = 5 499 000 Euro Fremdkapital. 5 499 000 / 9 638 250 ≈ 0,5705, also rund 57 Prozent. Das Buch nennt genau diesen Anteil. Eigenkapital 4 139 250 / 9 638 250 ≈ 43 Prozent ist der Rest, nicht die Mehrheit der Finanzierung. 100 mal 5 499 000 geteilt durch 9 638 250 liegt bei 57,05 Prozent, gerundet die vom Buch genannten rund 57 Prozent. Eine Behauptung weit darunter, etwa unter 20 Prozent, widerspräche dieser Division.\n\nDie Aussage ist wahr.",
+      "Kreditlinie schlägt Rückstellung und Lieferanten. Von 5 499 000 Euro Fremdkapital entfallen 3 199 000 auf Bankkredite, 2 000 000 auf Rückstellungen und 300 000 auf Verbindlichkeiten aus Lieferungen und Leistungen. 3 199 000 ist der größte Einzelposten. Das Buch führt den Großteil des Fremdkapitals auf Bankkredite zurück. Lieferantenkredite von 300 000 Euro tragen die Struktur nicht.\n\nDie Aussage ist wahr.",
+      "Für österreichische KMU ist hohe Fremdkapitalquote typisch. Die Kapitalstruktur mit rund 57 Prozent Fremdkapital ist nicht untypisch für ein österreichisches Unternehmen dieser Größe; es ist typisch für österreichische KMU, in hohem Ausmaß von Fremdkapital abhängig zu sein. Die Behauptung, das sei untypisch, kehrt den Satz um. FunBike mit Bilanzsumme knapp unter 10 Millionen Euro zählt gerade noch zu den Kleinunternehmen und passt in dieses Bild.\n\nDie Aussage ist falsch.",
+      "Einbehaltener Gewinn ist Innenfinanzierung. Der hohe Gewinn stärkt das Eigenkapital und die Innenfinanzierungskraft, wenn er im Unternehmen verbleibt. 3 614 250 Euro im Eigenkapital sind genau dieser Hebel; Ausschüttung würde ihn wieder reduzieren. Die Unternehmensleitung muss entscheiden, ob Gewinn entnommen oder für Maschinen und Anlagen belassen wird. Der Satz knüpft die Stärkung an das Verbleiben, nicht an jede Gewinnentstehung unabhängig von der Verwendung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

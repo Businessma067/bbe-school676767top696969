@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.01",
+    "title": "Digitalisierung und digitale Transformation",
+    "context": "Bewerten Sie die folgenden Aussagen zum Begriff der Digitalisierung und der digitalen Transformation:",
+    "statements": [
+      "Unter Digitalisierung wird die Anwendung digitaler Informations- und Kommunikationstechnologie verstanden.",
+      "Digitale Transformation meint die Veränderung, die durch diese Anwendung in Teilen der Wirtschaft, der Verwaltung und des privaten Bereichs vorangetrieben wird.",
+      "Digitalisierung betrifft ausschließlich Unternehmen und lässt Verwaltung sowie den privaten Bereich unberührt.",
+      "Der Einsatz von Technologie verändert unter anderem, wie Unternehmen Prozesse steuern, mit Kunden in Kontakt bleiben und Produkte sowie Dienstleistungen auf den Markt bringen.",
+      "Digitalisierung bedeutet im Lehrtext nur den Kauf neuer Geräte, ohne dass sich Wirtschaft, Verwaltung oder privater Alltag verändern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Anwendung steht im Zentrum der Definition, nicht ein einzelnes Gerät. Das Buch versteht unter Digitalisierung die Anwendung digitaler Informations- und Kommunikationstechnologie. Gemeint ist also der Einsatz dieser Technologie in konkreten Abläufen, nicht bloß der Besitz eines Rechners. Wer den Begriff auf den bloßen Gerätekauf reduziert, lässt genau diese Anwendung weg, obwohl sie der Ausgangspunkt der späteren Veränderung ist.\n\nDie Aussage ist wahr.",
+      "Veränderung folgt auf die Anwendung. Durch den Einsatz digitaler Informations- und Kommunikationstechnologie wird Veränderung vorangetrieben, und genau diese Veränderung heißt digitale Transformation. Sie greift in Teilen der Wirtschaft, der Verwaltung und des privaten Bereichs. Der zweite Begriff ist damit nicht ein zweites Wort für denselben Gerätekauf, sondern der Wandel, den die Anwendung auslöst.\n\nDie Aussage ist wahr.",
+      "Drei Felder nennt der Text ausdrücklich. Wirtschaft, Verwaltung und privater Bereich können von der durch Digitalisierung angestoßenen Veränderung erfasst werden. Eine Beschränkung allein auf Unternehmen streicht Verwaltung und Alltag aus dem Bild, obwohl beide im selben Satz stehen. Die absolute Behauptung, nur Betriebe seien betroffen, ist deshalb zu eng und falsch. Wer Digitalisierung nur in der Fabrik sucht, verpasst denselben Technologieeinsatz in Behörde und Haushalt.\n\nDie Aussage ist falsch.",
+      "Betriebswirtschaftlich tätig sein ändert sich an mehreren Stellen zugleich. Technologie wirkt darauf, wie Unternehmen interne Prozesse steuern, um möglichst effizient zu wirtschaften, wie sie mit Kunden in Kontakt bleiben und deren Anforderungen berücksichtigen, und wie sie Produkte und Dienstleistungen gestalten und auf den Markt bringen. Genau diese drei Wirkungen führt der Abschnitt als Beispiele an. Sie bilden später die drei Dimensionen: backstage, Frontstage und digitalisiertes Ergebnis. Wer nur eine davon gelten lässt, verkürzt den Einstieg in das Kapitel und macht das folgende Raster unverständlich.\n\nDie Aussage ist wahr.",
+      "Geräte ohne Wandel treffen die Definition nicht. Digitalisierung ist Anwendung digitaler Informations- und Kommunikationstechnologie, und daraus folgt Veränderung in Teilen von Wirtschaft, Verwaltung und privatem Bereich. Ein bloßer Kauf neuer Geräte, nach dem alles beim Alten bleibt, wäre Anwendung ohne Transformation und würde den zweiten Teil der Buchdefinition ausblenden. Der Lehrtext koppelt beide Seiten: Technologieeinsatz und die dadurch vorangetriebene Veränderung. Ohne diese Kopplung gäbe es keine drei Dimensionen, keine Strategie und kein Digital Business, sondern nur neue Kästen im Keller.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.02",
+    "title": "Technologie im Unternehmen",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was der Einsatz von Technologie in Unternehmen verändert:",
+    "statements": [
+      "Technologie kann darauf Einfluss nehmen, wie Unternehmen innerhalb des Betriebs die eigenen Prozesse steuern, um möglichst effizient zu wirtschaften.",
+      "Der Kontakt zu Kunden und die Berücksichtigung ihrer Anforderungen und Bedürfnisse bleiben von Technologie unberührt.",
+      "Auch die Gestaltung von Produkten und Dienstleistungen sowie deren Markteinführung können sich durch Technologie ändern.",
+      "Für solche Veränderungen fällt oft das Wort Digitalisierung bzw. digitale Transformation.",
+      "Nur die Gestaltung von Produkten ändert sich; interne Prozesse bleiben analog, weil Digitalisierung den Betrieb hinter den Kulissen nicht betrifft."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Effizienz hinter den Kulissen ist das erste Beispiel. Unternehmen steuern interne Prozesse, um möglichst effizient zu wirtschaften, und der Einsatz von Technologie verändert genau diese Steuerung. Es geht nicht um Dekoration am Schreibtisch, sondern um die Art und Weise, wie Arbeitsschritte im Betrieb ablaufen. Wer interne Prozesse aus der Digitalisierung ausklammert, widerspricht dem Einstiegsabsatz.\n\nDie Aussage ist wahr.",
+      "Kundenkontakt steht ausdrücklich auf der Liste. Technologie ändert, wie Unternehmen mit Kunden in Kontakt bleiben und deren Anforderungen und Bedürfnisse berücksichtigen. Unberührt bleibt dieser Bereich gerade nicht. Die Behauptung, nur Maschinen im Lager zählten, lässt die zweite der drei genannten Wirkungen weg. Später heißt dieselbe Außenseite Frontstage: Verbindung zwischen Kunden und Unternehmen.\n\nDie Aussage ist falsch.",
+      "Marktseite gehört dazu. Produkte und Dienstleistungen werden gestaltet und auf den Markt gebracht, und auch das ändert sich durch Technologie. Der Abschnitt stellt diese Wirkung neben Prozesssteuerung und Kundenkontakt. Digitalisierung ist damit nicht nur ein internes Thema der Abläufe, sondern reicht bis zum Angebot, das Kundinnen und Kunden sehen. Die dritte Dimension greift genau dieses Ergebnis der Wertschöpfung wieder auf.\n\nDie Aussage ist wahr.",
+      "Die beiden Wörter fallen genau bei diesen Veränderungen. Wenn Technologie Prozesse, Kundenbeziehung und Marktangebot verschiebt, spricht man oft von Digitalisierung bzw. digitaler Transformation. Der Text führt die Begriffe als übliche Bezeichnung für genau diesen Wandel ein, bevor er sie genauer definiert. Die Wortwahl ist also an die beschriebenen Wirkungen gebunden, nicht an ein beliebiges Modewort außerhalb des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Hinter den Kulissen ist der erste Schauplatz, nicht eine Ausnahme. Interne Prozesse sollen effizienter gesteuert werden, und später beschreibt das Buch gerade die backstage-Dimension der Geschäftsprozesse. Die Behauptung, nur die Produktgestaltung ändere sich und der Betrieb dahinter bleibe analog, kippt die Reihenfolge des Lehrtexts. Digitalisierung erfasst Prozesse, Kundenkontakt und Angebot, nicht nur die sichtbare Ware. Wer die Kulisse analog lässt, streicht den digital unterstützten Geschäftsprozess, den der Abschnitt als erste Dimension ausführt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.03",
+    "title": "Drei Dimensionen der Digitalisierung",
+    "context": "Bewerten Sie die folgenden Aussagen zu den drei Dimensionen der Digitalisierung:",
+    "statements": [
+      "Die Möglichkeiten der Veränderungen lassen sich im Kontext eines Unternehmens anhand von drei Dimensionen veranschaulichen.",
+      "Die erste Dimension betrifft Geschäftsprozesse hinter den Kulissen eines Unternehmens (backstage).",
+      "Die zweite Dimension, die Frontstage, versteht sich als Verbindung zwischen Kunden und Unternehmen.",
+      "Die dritte Dimension betrifft ausschließlich die interne Buchhaltung und niemals Produkte oder Dienstleistungen.",
+      "Ein Unternehmen darf sich nur auf genau eine Dimension konzentrieren; mehrere Dimensionen zugleich sind ausgeschlossen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Dimensionen sind das Ordnungsraster. Der Text veranschaulicht die Möglichkeiten der Veränderungen beispielhaft im Kontext eines Unternehmens anhand von drei Dimensionen, wie sie in Abbildung 28 zu sehen sind. Es geht um ein Schema für Ansatzpunkte im Betrieb, nicht um eine unendliche Liste beliebiger Technikthemen. Wer die Dreiheit ignoriert, verliert die Gliederung des gesamten Unterabschnitts.\n\nDie Aussage ist wahr.",
+      "Backstage ist die erste Dimension. Geschäftsprozesse hinter den Kulissen unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert. Der interne Fokus liegt auf der wirtschaftlichen Nutzung von Ressourcen, aus denen Produkte und Dienstleistungen entstehen. Diese Kulissenseite ist ausdrücklich die erste der drei Dimensionen, nicht die Kundenfront. Thalia im späteren Beispiel spielt genau auf dieser Bühne: intern System, Mitarbeiterin, Lager, Ende bei Lieferung oder Abholung.\n\nDie Aussage ist wahr.",
+      "Frontstage meint die Außenseite zum Kunden. Die zweite Dimension versteht sich als Verbindung zwischen Kunden und Unternehmen und ist der externe Fokus. Orientierung rund um den Kunden, Gestaltung von Angeboten im Sinne des Kunden: das ist diese Dimension, nicht der interne Bestellablauf im Lager. Die Trennung von backstage und Frontstage ist im Text gewollt. Humanic mit Fußscanner und App steht später auf dieser Außenseite, nicht hinter der Kulisse.\n\nDie Aussage ist wahr.",
+      "Ergebnis der Wertschöpfung, nicht Buchhaltung. Die dritte Dimension befasst sich damit, wie das Ergebnis aus der Wertschöpfung durch Technologie erweitert werden kann, also mit der Digitalisierung von Produkten und Dienstleistungen. Interne Buchhaltung als einziges Thema dieser Dimension steht so nicht im Abschnitt. Wer smartes Produkt und Dienstleistung durch Buchhaltung ersetzt, vertauscht die dritte mit der ersten Dimension. Lego-PDF und Erkundungsmission wären dann unsichtbar, obwohl sie das Buchbeispiel für die dritte Achse sind. Smart heißt hier Digitalisierung von Produkt und Dienstleistung, vom einfachen Zusatz bis zum nachhaltig geprägten Kundenerlebnis.\n\nDie Aussage ist falsch.",
+      "Eine oder mehrere Dimensionen sind zulässig. Unternehmen können entlang der drei Dimensionen tätig werden, um sich gezielt auf eine oder mehrere zu konzentrieren. Daraus lässt sich eine Digitalisierungsstrategie ableiten. Die Behauptung, nur genau eine Dimension sei erlaubt, widerspricht dem Wortlaut „eine oder mehrere“. Konzentration ist eine Wahl, kein Verbot der übrigen Felder. Im Gesamten kann daraus Digital Business werden, auch wenn nicht jede Achse gleich stark gezogen wird.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.04",
+    "title": "Backstage und Wertschöpfung",
+    "context": "Bewerten Sie die folgenden Aussagen zur ersten Dimension der Digitalisierung:",
+    "statements": [
+      "Der interne Fokus eines Unternehmens liegt auf der wirtschaftlichen Nutzung von Ressourcen, um daraus Produkte und Dienstleistungen zu erstellen.",
+      "Dabei soll ein Wert geschaffen werden; anders formuliert findet Wertschöpfung statt.",
+      "Geschäftsprozesse hinter den Kulissen unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.",
+      "Werden Arbeitsschritte digital unterstützt, entsteht ein digital unterstützter Geschäftsprozess.",
+      "Backstage bezeichnet im Lehrtext die öffentliche Verbindung zum Kunden, nicht die Abläufe hinter den Kulissen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ressourcen werden intern in Güter überführt. Der interne Fokus liegt auf der wirtschaftlichen Nutzung von Ressourcen, um Produkte und Dienstleistungen zu erstellen. Das ist die Kulissenseite des Unternehmens: nicht das Schaufenster, sondern die Erstellung. Ohne diese Nutzung gäbe es nichts, was später am Markt angeboten werden kann. Die erste Dimension setzt genau dort an, bevor Frontstage und smarte Produkte überhaupt in den Blick kommen.\n\nDie Aussage ist wahr.",
+      "Wertschöpfung ist der andere Name für denselben Vorgang. Es soll ein Wert geschaffen werden; anders formuliert findet Wertschöpfung statt. Der Text setzt beide Formulierungen gleich und bindet sie an die interne Erstellung von Produkten und Dienstleistungen. Wert entsteht hier im Prozess hinter den Kulissen, nicht erst durch ein Etikett auf der Verpackung. Geschäftsprozesse unterstützen genau diese Wertschöpfung und werden durch Systeme erweitert.\n\nDie Aussage ist wahr.",
+      "Prozesse tragen die Wertschöpfung und werden systemseitig ausgeweitet. Geschäftsprozesse hinter den Kulissen (backstage) unterstützen die Wertschöpfung. Sie werden zunehmend durch Systeme erweitert und gesteuert. Digitale Unterstützung heißt also nicht, den Prozess abzuschaffen, sondern ihn hinter der Bühne zu erweitern und zu lenken. Das ist die erste Dimension in einem Satz. Arbeitsschritte lassen sich so digital stützen, und es entsteht ein digital unterstützter Geschäftsprozess, wie ihn das Buch anschließend definiert und am Buchhändler vorführt.\n\nDie Aussage ist wahr.",
+      "Digital unterstützter Geschäftsprozess ist der Fachausdruck des Abschnitts. Lassen sich Arbeitsschritte digital unterstützen, entsteht genau dieses Gebilde: ein digital unterstützter Geschäftsprozess. Der Zusatz „unterstützt“ bleibt wichtig: das Buch spricht nicht von einem Prozess ohne Menschen, sondern von digital erweiterter Ablaufsteuerung. Thalia im späteren Beispiel zeigt denselben Gedanken konkret.\n\nDie Aussage ist wahr.",
+      "Kulisse und Bühne sind vertauscht. Backstage heißt hinter den Kulissen: interne Geschäftsprozesse, die die Wertschöpfung stützen. Die öffentliche Verbindung zum Kunden ist die zweite Dimension, die Frontstage. Wer backstage als Verbindung zum Kunden liest, vermengt die beiden ersten Dimensionen und macht das Dreierschema unbrauchbar. Dann ließe sich auch nicht mehr sagen, ein Unternehmen konzentriere sich gezielt auf eine der Achsen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.05",
+    "title": "Was ein Geschäftsprozess ist",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition eines Geschäftsprozesses:",
+    "statements": [
+      "Unter einem Geschäftsprozess versteht man einen komplexen, aus mehreren logisch zusammenhängenden Aktivitäten bestehenden Arbeitsablauf.",
+      "Dieser Arbeitsablauf leistet für das Unternehmen einen Beitrag (Wert) zu einem betriebswirtschaftlichen Ziel.",
+      "Geschäftsprozesse können wiederholt durchgeführt werden.",
+      "Ein Geschäftsprozess hat weder einen klar definierten Anfang noch ein definiertes Ende, weil er jederzeit beliebig beginnen kann.",
+      "Ein Geschäftsprozess hat einen klar definierten Anfang und ein oder mehrere definierte Enden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Komplex und logisch zusammenhängend: das ist die Bauform. Ein Geschäftsprozess ist kein einzelner Handgriff, sondern ein Arbeitsablauf aus mehreren Aktivitäten, die logisch zusammenhängen. Die Definition betont gerade diese Mehrstufigkeit. Wer den Begriff auf eine isolierte Tätigkeit reduziert, verfehlt den ersten Satz der Buchdefinition. Lagerposition abrufen, Produkt wählen und für Versand oder Abholung vorbereiten sind im Thalia-Beispiel genau solche zusammenhängenden Aktivitäten, nicht fünf getrennte Mini-Prozesse ohne Ziel. Der Wertbeitrag zum betriebswirtschaftlichen Ziel hält sie zusammen.\n\nDie Aussage ist wahr.",
+      "Wert zum Ziel ist Pflichtbestandteil. Der Ablauf leistet für das Unternehmen einen Beitrag, im Text in Klammern Wert genannt, zu einem betriebswirtschaftlichen Ziel. Ein zufälliges Durcheinander von Tätigkeiten ohne Zielbezug wäre danach kein Geschäftsprozess. Die Definition koppelt Ablauf, Wertbeitrag und Ziel; keines der drei Stücke darf fehlen. Rasch das bestellte Produkt zukommen zu lassen, ist im Buchhändler-Beispiel genau so ein Ziel, an dem die Schritte gemessen werden.\n\nDie Aussage ist wahr.",
+      "Wiederholbarkeit gehört zur Definition. Geschäftsprozesse können wiederholt durchgeführt werden. Der Einkauf, die Bestellabwicklung oder ein ähnlicher Ablauf ist nicht als einmaliges Ereignis gedacht, sondern als Muster, das erneut ablaufen kann. Genau deshalb lohnt digitale Unterstützung und Dokumentation: derselbe Prozess kehrt wieder.\n\nDie Aussage ist wahr.",
+      "Anfang und Ende sind definiert, nicht beliebig. Der Text sagt klar: Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Beliebiges Loslegen ohne Markierung widerspricht dieser Grenze. Beim Buchhändler-Beispiel beginnt der Ablauf mit der Bestellung und endet mit Lieferung oder Bereitstellung zur Abholung, nicht irgendwann dazwischen nach Gutdünken. Mehrere Enden bleiben erlaubt, Unbestimmtheit nicht: Abholung und Versand sind zwei klare Schlüsse, kein offenes Weiterwursteln.\n\nDie Aussage ist falsch.",
+      "Mehrere Enden sind vorgesehen. Neben dem klar definierten Anfang nennt die Definition ein oder mehrere definierte Enden. Abholung und Versand können verschiedene Schlüsse desselben Bestellprozesses sein, ohne dass der Prozess damit unbestimmt würde. Die Mehrzahl der Enden ist also kein Widerspruch zur Klarheit, sondern Teil der Definition.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.06",
+    "title": "Dokumentation und Prozessmodell",
+    "context": "Bewerten Sie die folgenden Aussagen zur Dokumentation von Geschäftsprozessen:",
+    "statements": [
+      "Das Festhalten eines Prozesses durch ein digitales System, auch Dokumentation genannt, hilft Mitarbeitern im Unternehmen, den Prozess zu kommunizieren.",
+      "Innerhalb eines solchen Prozesses können verschiedene Personen im Unternehmen den Überblick bewahren und relevante Entscheidungen schneller und gezielter treffen.",
+      "Ein visuelles Abbild, auch Prozessmodell genannt, kann helfen, einen ersten Überblick über einen zentralen Prozess etwa im Einkauf zu bekommen.",
+      "Die Dokumentation eines Prozesses ist überflüssig, weil Abläufe im Unternehmen nicht kommuniziert werden müssen.",
+      "Nur die Geschäftsleitung darf ein Prozessmodell nutzen; wer ein Praktikum beginnt, bleibt ohne Überblick."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Festhalten heißt Kommunizieren. Wird ein Prozess durch ein digitales System festgehalten, spricht der Text von Dokumentation. Das hilft Mitarbeitern, den Prozess zu kommunizieren, nicht nur einer einzelnen Person im stillen Kämmerlein. Digitale Dokumentation ist damit ein Mittel der Verständigung über denselben Ablauf, nicht bloß Archivierung um ihrer selbst willen. Ohne gemeinsames Bild vom Ablauf bleiben Überblick und gezielte Entscheidung, die der Absatz zuvor nennt, Zufall. Das Prozessmodell macht denselben Ablauf sichtbar, statt ihn nur mündlich weiterzugeben.\n\nDie Aussage ist wahr.",
+      "Überblick und Tempo der Entscheidung hängen am Prozess. Innerhalb eines solchen Prozesses können verschiedene Personen einfacher den Überblick bewahren und relevante Entscheidungen viel schneller und gezielter treffen. Die digitale Stütze wirkt also auf Orientierung und auf Entscheidungsqualität zugleich. Wer nur die Maschine sieht und die Entscheidung der Menschen ausblendet, liest den Absatz unvollständig.\n\nDie Aussage ist wahr.",
+      "Das Praktikum ist das Lehrbuchbild. Wer neu anfängt und erst herausfinden muss, wie ein zentraler Prozess im Einkauf abläuft, kann ein visuelles Abbild nutzen. Der Text nennt dieses Abbild auch Prozessmodell. Es liefert einen ersten Überblick, bevor jede Einzelheit im Alltag sitzt. Genau dafür steht die Darstellung, nicht als Ersatz für die gesamte Berufserfahrung und nicht als Geheimdokument nur der Geschäftsleitung.\n\nDie Aussage ist wahr.",
+      "Kommunikation ist der Zweck der Dokumentation. Der Absatz begründet das Festhalten im System gerade damit, dass Mitarbeiter den Prozess kommunizieren können. Überflüssig wäre Dokumentation nur, wenn niemand den Ablauf teilen müsste. Das Gegenteil steht im Buch: ohne gemeinsame Darstellung bleibt der Einkaufsprozess für Neue und Beteiligte schwer greifbar.\n\nDie Aussage ist falsch.",
+      "Praktikantinnen und Praktikanten sind die Zielgruppe des Beispiels. Stellen Sie sich vor, Sie fangen ein Praktikum an und müssen den zentralen Einkaufsprozess verstehen: genau dann soll das Prozessmodell den ersten Überblick geben. Eine Sperre nur für die Geschäftsleitung steht so nicht im Text und würde den Sinn der visuellen Darstellung umkehren. Dokumentation soll den Prozess kommunizierbar machen; Kommunikation schließt Neue im Betrieb ein, statt sie auszuschließen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.07",
+    "title": "Bestellung beim Buchhändler",
+    "context": "Bewerten Sie die folgenden Aussagen zum Beispiel eines digitalen Geschäftsprozesses bei einem Buchhändler wie Thalia:",
+    "statements": [
+      "Wenn Sie bei einem Buchhändler wie Thalia online eine Bestellung aufgeben, werden im Hintergrund sofort Schritte veranlasst, um Ihnen das bestellte Produkt möglichst rasch zukommen zu lassen.",
+      "Ein internes System fasst die Bestellung zusammen und die nächste freie Mitarbeiterin wird benachrichtigt, sich um weitere Schritte zu kümmern.",
+      "Zu den Detailschritten der Mitarbeiterin können gehören, die Lagerposition abzurufen, das Produkt auszuwählen und die Bestellung für Abholung oder Versand vorzubereiten.",
+      "Der Prozess endet, sobald die Bestellung im internen System erscheint, noch bevor geliefert oder zur Abholung bereitgestellt wird.",
+      "Die Mitarbeiterin markiert im System, dass sie die Bestellung erfolgreich bearbeitet hat, und kann sich der nächsten Bestellung widmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Online bestellen löst sofort den hinteren Ablauf aus. Das Beispiel beginnt beim Kundenklick und springt sogleich in den Hintergrund: Schritte werden veranlasst, damit das bestellte Produkt möglichst rasch ankommt. Das ist der digital unterstützte Geschäftsprozess der ersten Dimension, nicht schon die Gestaltung eines neuen Produkts. Thalia steht hier als anschaulicher Fall, nicht als einzige denkbare Firma.\n\nDie Aussage ist wahr.",
+      "System und Mitarbeiterin greifen ineinander. Ein internes System fasst die Bestellung zusammen, danach wird die nächste freie Mitarbeiterin benachrichtigt. Digitale Unterstützung ersetzt in diesem Bild nicht die Person, sondern ordnet ihr den nächsten Schritt zu. Sie weiß nun, dass verschiedene Detailschritte anstehen. Genau dieses Zusammenspiel von System und Bearbeitung ist der Kern des Beispiels.\n\nDie Aussage ist wahr.",
+      "Lager, Auswahl, Vorbereitung: die genannten Detailschritte. Die Mitarbeiterin muss sich unter anderem um das Abrufen der Lagerposition, die Auswahl des Produkts und die Vorbereitung je nachdem kümmern, ob abgeholt oder versendet wird. Der Text lässt mit „usw.“ offen, dass weitere Feinheiten folgen können. Die drei genannten Tätigkeiten gehören aber ausdrücklich zum Ablauf hinter der Bestellung.\n\nDie Aussage ist wahr.",
+      "Erscheinen im System ist der Start der Bearbeitung, nicht das Ende. Der Prozess endet mit der Lieferung oder der Bereitstellung zur Abholung. Solange das Buch noch im Regal liegt oder das Paket nicht auf dem Weg ist, ist das definierte Ende nicht erreicht. Wer den Prozess am bloßen Eintrag im System für beendet erklärt, verwechselt Dokumentationseingang mit Prozessabschluss und widerspricht dem Beispiel. Die Definition verlangt klar definierte Enden; hier sind es zwei: Lieferung oder Abholbereitstellung. Die Markierung der erfolgreichen Bearbeitung folgt diesem Ende und gibt den Weg zur nächsten, wiederholbaren Bestellung frei.\n\nDie Aussage ist falsch.",
+      "Abschluss im System gibt den Weg frei für die nächste Bestellung. Nach erfolgreicher Bearbeitung markiert die Mitarbeiterin das im System und kann sich der folgenden Bestellung widmen. Das passt zur Wiederholbarkeit von Geschäftsprozessen: derselbe Ablauf beginnt von vorn. Die Markierung ist der dokumentierte Schluss der Bearbeitung, nachdem Lieferung oder Abholbereitstellung das Prozessende bilden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.08",
+    "title": "Frontstage und Kunden",
+    "context": "Bewerten Sie die folgenden Aussagen zur zweiten Dimension der Digitalisierung:",
+    "statements": [
+      "Die Frontstage versteht sich als Verbindung zwischen Kunden und Unternehmen und bildet den externen Fokus eines Unternehmens.",
+      "Der Kunde kann je nach Umfeld eine Privatperson, ein Unternehmen oder auch eine öffentliche Institution sein.",
+      "Frontstage meint ausschließlich interne Lagerprozesse ohne jeden Bezug zu Kunden.",
+      "Es geht um die Gestaltung von Angeboten im Sinne des Kunden; Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer liegen im Vordergrund.",
+      "Die Digitalisierung bietet neue Potenziale, die Wünsche der Nutzer viel effizienter und gezielter zu berücksichtigen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Externer Fokus heißt Kundenverbindung. Die zweite Dimension der Digitalisierung, die Frontstage, versteht sich als Verbindung zwischen Kunden und Unternehmen. Hier liegt die Orientierung rund um den Kunden, nicht rund um das interne Lager. Wer Frontstage mit backstage vertauscht, liest die Überschrift der Dimension gegen den Wortlaut. Der Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein; die Frontstage bleibt trotzdem die Außenseite, nicht die Kulisse.\n\nDie Aussage ist wahr.",
+      "Drei mögliche Kundinnen und Kunden. Der Text warnt davor, nur die Privatperson zu sehen. Je nach Umfeld kann der Kunde eine Privatperson, ein Unternehmen oder eine öffentliche Institution sein. Angebote im Sinne des Kunden müssen diese Vielfalt aushalten. Eine Definition, die nur Endverbraucher kennt, ist enger als das Buch. Frontstage bleibt die Verbindung zu allen drei Gestalten, nicht nur zum privaten Schuhkauf.\n\nDie Aussage ist wahr.",
+      "Lager ohne Kunden ist die erste Dimension. Interne Prozesse hinter den Kulissen, etwa Lagerposition abrufen, gehören zur backstage und zur Wertschöpfung intern. Frontstage ist die Außenseite: Verbindung zum Kunden, Gestaltung von Angeboten, Bedürfnisse der Nutzerinnen und Nutzer. Die Aussage kehrt die Zuordnung um und ist falsch. Würde Frontstage das Lager meinen, gäbe es keine eigene zweite Dimension und das Humanic-Beispiel gehörte ins falsche Fach.\n\nDie Aussage ist falsch.",
+      "Angebote im Sinne des Kunden, nicht im Sinne des internen Plans allein. Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer liegen im Vordergrund. Digitalisierung auf der Frontstage heißt deshalb, diese Bedarfe besser zu treffen, nicht bloß interne Abläufe hinter den Kulissen zu pflegen. Humanic im nächsten Beispiel macht denselben Satz an der Passform von Schuhen fest: Scanner und Konto dienen dem Wunsch der Nutzerin oder des Nutzers, nicht dem Abrufen der Lagerposition.\n\nDie Aussage ist wahr.",
+      "Neue Potenziale, nicht bloß alte Kataloge digital abfotografiert. Der Text hält fest, dass Digitalisierung neue Potenziale bietet, Wünsche der Nutzer viel effizienter und gezielter zu berücksichtigen. Effizienter und gezielter sind die Maßstäbe, nicht die bloße Anwesenheit einer Online-Bestellseite. Die Frontstage-Dimension bemisst sich daran, ob Kundenwünsche treffender aufgenommen werden. Der 3D-Fußscanner ist genau so ein Potenzial: Passformfragen, die Zeit und Nerven kosten, werden festgehalten statt geraten. Genau das meint der Text mit effizienter und gezielter Berücksichtigung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.09",
+    "title": "Fußscanner im Schuhhandel",
+    "context": "Bewerten Sie die folgenden Aussagen zum Beispiel der Schuhmodekette Humanic:",
+    "statements": [
+      "Beim Kauf von Schuhen online oder im Handel ist die Passform, etwa die Größe und die Weite des Fußes, eine zentrale Frage.",
+      "Humanic hat mit einem Service vor Ort und via Smartphone-App die Möglichkeit eingeführt, Anforderungen der Nutzerinnen und Nutzer mithilfe eines 3D-Fußscanners festzuhalten.",
+      "Der 3D-Fußscanner erzeugt ein 3D-Bild der Füße und speichert es online im Kundenkonto.",
+      "Der digitale Fußabdruck lässt sich nur im Geschäft nutzen und darf bei einer späteren Online-Bestellung nicht abgeglichen werden.",
+      "Vor Ort und bei der nächsten Bestellung online kann der Kunde seinen digitalen Fußabdruck mit dem gewünschten Schuhmodell abgleichen, um die optimale Passform abzufragen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Größe, Schnitt und Weite kosten Zeit und Nerven. Ob der Schuh größer oder kleiner geschnitten ist, ob der Fuß schmal oder breit ist: das sind zentrale Fragen beim Schuhkauf online und im Handel. Falsche Größe beim Onlinekauf führt oft zu Frustration. Genau dieses Alltagsproblem macht das Buch zum Ausgangspunkt des Humanic-Beispiels, nicht ein beliebiges Technikspiel.\n\nDie Aussage ist wahr.",
+      "Vor Ort und per App, festgehalten mit dem Scanner. Humanic führt einen neuartigen Service ein, der Anforderungen der Nutzerinnen und Nutzer mithilfe eines 3D-Fußscanners festhält, vor Ort und via Smartphone-App. Es geht um die Frontstage: Kundenwünsche gezielter berücksichtigen. Der Scanner ist das Mittel, die Bedürfnisse der Nutzerinnen und Nutzer sichtbar und speicherbar zu machen. Größe, schmaler oder breiter Fuß, größer oder kleiner geschnittenes Modell: genau diese Fragen sollen nicht mehr nur Zeit und Nerven kosten. Der gespeicherte Fußabdruck macht sie für den nächsten Kauf verfügbar.\n\nDie Aussage ist wahr.",
+      "Bild und Konto gehören zusammen. Der Scanner erzeugt ein 3D-Bild der Füße und speichert es online im Kundenkonto. Ohne Speicherung im Konto gäbe es keinen digitalen Fußabdruck für den späteren Abgleich. Die technische Kette im Buch lautet also: scannen, Bild erzeugen, online ablegen. Das ist die Grundlage für den nächsten Schritt beim Modellvergleich.\n\nDie Aussage ist wahr.",
+      "Nur im Geschäft wäre zu wenig. Der Text sagt ausdrücklich: vor Ort und bei der nächsten Bestellung online kann der Kunde den digitalen Fußabdruck mit dem gewünschten Schuhmodell abgleichen. Die Beschränkung auf das Ladengeschäft streicht die Online-Seite, obwohl genau der frustrierende Onlinekauf das Problem war. Die Aussage ist deshalb falsch. Speicherung im Kundenkonto hätte sonst keinen Sinn für die nächste Bestellung im Netz; der Service wäre halbiert.\n\nDie Aussage ist falsch.",
+      "Abgleich zielt auf optimale Passform. Derselbe gespeicherte Fußabdruck dient im Laden und bei der nächsten Online-Bestellung dazu, das gewünschte Schuhmodell zu prüfen. So sollen die Wünsche der Nutzer effizienter und gezielter berücksichtigt werden. Das Beispiel bleibt auf der zweiten Dimension: Verbindung zum Kunden, nicht die Erfindung eines neuen Schuhs als smartes Produkt im Sinne der dritten Dimension. Der Scanner erweitert das Angebot im Sinne des Kunden, indem er Größe, Schnitt und Weite aus dem Ungefähren holt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.10",
+    "title": "Smarte Produkte und Dienstleistungen",
+    "context": "Bewerten Sie die folgenden Aussagen zur dritten Dimension der Digitalisierung:",
+    "statements": [
+      "Die dritte Dimension befasst sich mit dem Ergebnis aus der Wertschöpfung eines Unternehmens und damit, wie dieses Ergebnis durch Technologie erweitert werden kann.",
+      "Smart heißt in diesem Zusammenhang die Digitalisierung von Produkten und Dienstleistungen von Unternehmen.",
+      "Diese Digitalisierung kann im einfachsten Fall eine Ergänzung oder Erweiterung darstellen.",
+      "Im besten Fall prägt sie das Erlebnis des Kunden nachhaltig.",
+      "Smart bedeutet im Lehrtext ausschließlich, dass ein Produkt teurer wird, ohne Nutzen oder Erlebnis zu verändern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ergebnis erweitern, nicht den internen Ablauf umbenennen. Die dritte Dimension schaut auf das, was aus der Wertschöpfung hervorgeht, und fragt, wie Technologie dieses Ergebnis erweitern kann. Prozesse hinter den Kulissen waren die erste Dimension; hier geht es um Produkt und Dienstleistung selbst. Die Unterscheidung hält das Dreierschema klar. Thalia digitalisiert den Bestellablauf, Lego digitalisiert das Spielzeug; beides darf man nicht in dieselbe Schublade werfen.\n\nDie Aussage ist wahr.",
+      "Smart wird erklärt, nicht als leeres Modewort stehen gelassen. Der Text fragt, was smart in dem Fall überhaupt heißt, und antwortet: es geht um die Digitalisierung von Produkten und Dienstleistungen von Unternehmen. Smart ist also an diese Digitalisierung gebunden. Wer darunter nur Werbung oder einen höheren Preis versteht, verlässt die Buchdefinition. Ergänzung im einfachsten Fall und nachhaltig geprägtes Erlebnis im besten Fall sind die Stufen, nicht der Preis.\n\nDie Aussage ist wahr.",
+      "Einfachste Stufe: Ergänzung oder Erweiterung. Digitalisierung eines Produkts muss nicht sofort das ganze Erlebnis umkrempeln. Im einfachsten Fall ist es eine Ergänzung oder Erweiterung, im Lego-Beispiel etwa eine Anleitung als PDF. Die dritte Dimension beginnt also schon bei dieser bescheidenen Stufe, nicht erst beim spektakulärsten Fall. Der Text braucht diese untere Stufe, damit später klar wird, wann Digitalisierung das Erlebnis wirklich erweitert und wann sie nur das Heft ersetzt.\n\nDie Aussage ist wahr.",
+      "Beste Stufe: nachhaltig geprägtes Kundenerlebnis. Neben der einfachen Ergänzung nennt der Text den besten Fall, in dem die Digitalisierung das Erlebnis des Kunden nachhaltig prägt. Lego mit digitaler Erkundungsmission steht später genau dafür: je nach Verlauf entsteht unterschiedliches Spielzeug, Bindung steigt, das Erlebnis kann sich smart anfühlen. Die Skala von einfach bis bestmöglich ist im Abschnitt angelegt; der beste Fall ist mehr als ein PDF neben dem Karton. Wer nur die Datei sieht, bleibt auf der untersten Stufe der dritten Dimension stehen.\n\nDie Aussage ist wahr.",
+      "Preis ohne Erlebnis ist nicht die Definition. Smart meint Digitalisierung von Produkt und Dienstleistung, vom einfachen Zusatz bis zur nachhaltigen Prägung des Erlebnisses. Teurer ohne veränderten Nutzen steht so nicht im Text. Die Aussage hängt smart an den Preis und streicht genau das, woran das Buch smart misst: Ergänzung, Erweiterung, Kundenerlebnis. Eine PDF-Anleitung oder eine Erkundungsmission können den Preis gar nicht ersetzen als Kriterium; gemessen wird am Erlebnis, nicht an der Kassenzone.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.11",
+    "title": "Lego analog und digital",
+    "context": "Bewerten Sie die folgenden Aussagen zum Beispiel der Digitalisierung eines Lego-Produkts:",
+    "statements": [
+      "Lego ist im Ausgangspunkt ein analoges Erlebnis: man baut, was einem einfällt und zusammenpasst, oder folgt einer Anleitung.",
+      "Eine Anleitung, die digital als PDF zur Verfügung steht, ist ein Beispiel für eine einfache digitale Ergänzung zum analogen Produkt.",
+      "Wird der Lego-Baukasten durch eine digitale Erkundungsmission erweitert, bei der je nach Missionsverlauf unterschiedliches Spielzeug entsteht, kann das Erlebnis beim Zusammenbau erweitert werden.",
+      "PDF-Anleitung und digitale Erkundungsmission sind im Lehrtext dasselbe, weil jede digitale Datei das Erlebnis gleich stark verändert.",
+      "Ein solches erweitertes Erlebnis kann sich smart anfühlen und die Bindung zum Produkt steigern; der Text spricht von einem positiven digitalisierten Kundenerlebnis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Steine in der Hand, Idee oder Heft: analog. Fast jeder hat mit Lego gespielt, und der Text nennt das ein durchwegs analoges Erlebnis. Bauen nach Einfall und Passung oder nach einer Anleitung für etwas Komplexeres: beides bleibt zunächst ohne digitale Schicht. Digitalisierung setzt auf diesem analogen Kern auf, sie ersetzt ihn im Beispiel nicht durch bloßes Verschwinden der Steine. Erst danach kommen PDF oder Mission als Ergänzung bzw. Erweiterung.\n\nDie Aussage ist wahr.",
+      "PDF als schlichte Ergänzung. Digitalisierung kann bedeuten, dass eine Anleitung digital zur Verfügung gestellt wird, als PDF zum Beispiel. Der Text stuft das ausdrücklich als einfache digitale Ergänzung zum analogen Produkt ein. Die Steine bleiben Steine; hinzu kommt eine Datei statt oder neben dem gedruckten Blatt. Das ist die untere Stufe der dritten Dimension, noch ohne Erkundungsmission und ohne das Versprechen, die Bindung zum Produkt schon zu steigern.\n\nDie Aussage ist wahr.",
+      "Mission mit verschiedenem Verlauf ist die stärkere Stufe. Der Baukasten wird durch eine digitale Erkundungsmission erweitert, und je nach Missionsverlauf lässt sich unterschiedliches Lego-Spielzeug zusammenbauen. Damit hat Digitalisierung das Potenzial, das Erlebnis beim Zusammenbau zu erweitern, nicht nur das Heft zu ersetzen. Verlauf und Ergebnis hängen an der digitalen Schicht. Genau hier kann sich das Erlebnis smart anfühlen, anders als bei der bloßen PDF-Ergänzung.\n\nDie Aussage ist wahr.",
+      "Zwei Stufen, nicht eine. Das Buch trennt die einfache PDF-Ergänzung von der Erweiterung durch eine Erkundungsmission, die das Erlebnis verändern kann. Gleichsetzen würde den Unterschied zwischen „im einfachsten Fall“ und dem Fall mit Potenzial für ein smartes Erlebnis einebnen. Eine Datei allein ist noch nicht dieselbe Wirkung wie eine Mission mit unterschiedlichem Zusammenbau. Bindung zum Produkt und positives digitalisiertes Kundenerlebnis knüpft der Text an die stärkere Stufe, nicht an jedes PDF.\n\nDie Aussage ist falsch.",
+      "Bindung und positives Erlebnis sind das Zielbild. Das Erlebnis kann sich smart anfühlen, die Bindung zum Produkt wird gesteigert, und der Text nennt das ein positives digitalisiertes Kundenerlebnis. Dritte Dimension heißt hier: Technologie erweitert das Ergebnis der Wertschöpfung so, dass Kundinnen und Kunden das Produkt anders erleben. Das PDF allein muss diese Bindung noch nicht leisten. Die Erkundungsmission mit unterschiedlichem Verlauf zeigt, wann Digitalisierung über die schlichte Ergänzung hinausgeht und Nutzen wie Erlebnis innovativ erweitert, wie es der Schlusssatz des Abschnitts verlangt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.12",
+    "title": "Digitalisierungsstrategie und Digital Business",
+    "context": "Bewerten Sie die folgenden Aussagen zu Strategie und Digitalisierung des Unternehmens:",
+    "statements": [
+      "Unternehmen können entlang der drei Dimensionen tätig werden und sich gezielt auf eine oder mehrere Dimensionen konzentrieren.",
+      "Daraus lässt sich eine Digitalisierungsstrategie ableiten, die dem Unternehmen helfen kann, zukünftige Entscheidungen zu treffen, um einer klaren Vision zu folgen.",
+      "Im Gesamten führt dies zur Digitalisierung des Unternehmens, dem Digital Business.",
+      "Eine Digitalisierungsstrategie entsteht nur, wenn alle drei Dimensionen gleichzeitig und in gleichem Umfang bedient werden.",
+      "Konzentration auf eine einzelne Dimension ist nach dem Lehrtext unzulässig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Wahl entlang der drei Achsen. Unternehmen können entlang der Dimensionen tätig werden und sich gezielt auf eine oder mehrere konzentrieren. Gezielt heißt: nicht alles zugleich um jeden Preis, sondern eine bewusste Auswahl. Die Formulierung „eine oder mehrere“ öffnet beides. Wer nur die Vollausstattung als Digitalisierung gelten lässt, liest den Satz gegen den Wortlaut. Prozesse allein, Kundenbeziehung allein oder Produkt allein können der Einstieg sein; das Buch zwingt nicht zur Gleichzeitigkeit aller drei. Die spätere Digitalisierungsstrategie baut auf genau dieser Wahl auf.\n\nDie Aussage ist wahr.",
+      "Strategie folgt aus der Konzentration. Aus dem Handeln entlang der Dimensionen lässt sich eine Digitalisierungsstrategie ableiten. Sie soll helfen, zukünftige Entscheidungen zu treffen, um einer klaren Vision zu folgen. Strategie ist hier an Vision und Entscheidung gebunden, nicht an eine einmalige Anschaffung ohne Richtung. Der Text stellt die Strategie zwischen Dimensionenwahl und Digital Business. Ohne klare Vision wäre das Raster der drei Dimensionen nur eine Liste, kein Kompass für spätere Schritte.\n\nDie Aussage ist wahr.",
+      "Digital Business ist die Gesamtbezeichnung. Im Gesamten führt das beschriebene Vorgehen zur Digitalisierung des Unternehmens, und der Text setzt dafür den Ausdruck Digital Business. Gemeint ist also das Unternehmen, das entlang der Dimensionen digitalisiert wird, nicht ein einzelnes Gerät. Der Begriff schließt den Bogen von den drei Dimensionen zur Firmenebene. Erfolg hängt dann daran, sinnvolle Aspekte durch digitale Technologien zu erweitern, nicht am Etikett allein.\n\nDie Aussage ist wahr.",
+      "Gleicher Umfang aller drei Achsen ist keine Bedingung. Der Text erlaubt Konzentration auf eine oder mehrere Dimensionen. Eine Pflicht, alle drei gleichzeitig und gleichgewichtig zu bedienen, steht nicht da. Eine Strategie kann bei Geschäftsprozessen beginnen oder bei Produkt und Kunde; sie muss nicht jede Achse in derselben Stärke ziehen, um Strategie zu heißen. Digital Business entsteht im Gesamten aus dem gewählten Weg, nicht erst aus einem Zwang zur Vollständigkeit.\n\nDie Aussage ist falsch.",
+      "Eine Dimension ist ausdrücklich erlaubt. „Eine oder mehrere“ schließt die einzelne Achse ein. Unzulässig wäre Konzentration auf eine Dimension nur, wenn der Text Vollständigkeit aller drei erzwingen würde. Das tut er nicht. Wer die Einzelkonzentration verbietet, macht aus einer Wahlmöglichkeit ein Verbot. Gerade die gezielte Konzentration soll später Entscheidungen an einer klaren Vision ausrichten, nicht an einer Pflichtquote je Dimension.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.13",
+    "title": "Erfolgreiche digitale Transformation",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, worauf erfolgreiche Digitalisierung beruht:",
+    "statements": [
+      "Erfolgreiche Digitalisierung und die damit einhergehende digitale Transformation basieren vor allem darauf, sinnvolle Aspekte im Unternehmen durch den Einsatz digitaler Technologien zu erweitern.",
+      "Zu diesen Aspekten zählen unter anderem die Abfolge von Arbeitsschritten, die Kommunikation und die Berücksichtigung von Kundenbedürfnissen.",
+      "Die Transformation soll nicht im Weg stehen.",
+      "Nutzen und Erlebnis eines Produkts oder einer Dienstleistung sollen möglichst innovativ erweitert werden.",
+      "Digitale Transformation ist nach dem Lehrtext gelungen, sobald möglichst viele Abläufe umgestellt sind, auch wenn Nutzen und Erlebnis darunter leiden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Erweitern sinnvoller Aspekte, nicht Umstellen um der Umstellung willen. Erfolg hängt vor allem daran, sinnvolle Aspekte im Unternehmen durch digitale Technologien zu erweitern. Die Transformation folgt aus diesem Erweitern. Wer Digitalisierung als Maximalumbau ohne Blick auf Sinn versteht, verfehlt das „vor allem darauf“ des Schlusssatzes. Transformation soll nicht im Weg stehen; Nutzen und Erlebnis bleiben der Maßstab, nicht die Zahl der umgestellten Abläufe.\n\nDie Aussage ist wahr.",
+      "Arbeitsschritte, Kommunikation, Kundenbedürfnisse: die genannten Beispiele. Der Text zählt Abfolge von Arbeitsschritten, Kommunikation, Berücksichtigung von Kundenbedürfnissen und weiteres mehr. Die Klammern spiegeln die drei Dimensionen wider: Prozess, Verständigung, Kunde. Die Liste ist offen (und vieles mehr), aber diese drei Punkte stehen schwarz auf weiß. Digitale Technologien sollen genau solche Aspekte erweitern, nicht beliebige andere Schlagworte, die der Abschnitt nicht nennt.\n\nDie Aussage ist wahr.",
+      "Transformation als Mittel, nicht als Hindernis. Dabei soll die Transformation nicht im Weg stehen. Wandel um des Wandels willen, der Nutzen und Erlebnis blockiert, wäre genau das Gegenteil. Der Satz korrigiert die Vorstellung, Digitalisierung sei schon gut, wenn sie möglichst sichtbar stört. Sie soll den Weg zum erweiterten Nutzen freihalten. Erfolgreich ist die digitale Transformation danach, wenn sinnvolle Aspekte erweitert werden und das Erlebnis nicht unter der Umstellung leidet.\n\nDie Aussage ist wahr.",
+      "Innovativ erweiterter Nutzen und erweitertes Erlebnis. Statt im Weg zu stehen, sollen Nutzen und Erlebnis eines Produkts oder einer Dienstleistung möglichst innovativ erweitert werden. Das knüpft an die dritte Dimension und an das Lego-Bild an, gilt im Schlusssatz aber für das Unternehmen insgesamt. Erfolg misst sich an dieser Erweiterung, nicht an der Menge umgestellter Masken. Arbeitsschritte, Kommunikation und Kundenbedürfnisse sind die Beispiele sinnvoller Aspekte, die digitale Technologien erweitern sollen. Die Transformation bleibt Mittel, nicht Selbstzweck.\n\nDie Aussage ist wahr.",
+      "Möglichst viele Abläufe bei sinkendem Nutzen verfehlen den Maßstab. Der Text will sinnvolle Aspekte erweitern, die Transformation nicht im Weg, Nutzen und Erlebnis innovativ gestärkt. Umstellung als Selbstzweck, auch wenn Kundenerlebnis leidet, kehrt diese Rangfolge um. Genau dann stünde die Transformation im Weg. Die Aussage ist falsch. Lego-PDF ohne besseres Bauen oder ein Scanner, der nur stört, wären Technik, die dem Nutzen nicht dient; das Buch will das Gegenteil.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.14",
+    "title": "Beispiele den Dimensionen zuordnen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Zuordnung der Buchbeispiele zu den drei Dimensionen:",
+    "statements": [
+      "Der digital unterstützte Bestellablauf hinter den Kulissen bei einem Buchhändler wie Thalia gehört zur ersten Dimension (backstage).",
+      "Der 3D-Fußscanner von Humanic illustriert vor allem die Frontstage, weil Anforderungen der Nutzerinnen und Nutzer gezielter festgehalten werden.",
+      "Eine PDF-Anleitung zu einem Lego-Baukasten ist ein Beispiel für die Digitalisierung eines Produkts und damit für die dritte Dimension.",
+      "Frontstage und backstage sind identisch, weil jeder interne Lagerprozess zugleich der Kundenkontakt ist.",
+      "Wertschöpfung findet nur in der Frontstage statt; hinter den Kulissen entsteht kein Wert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Thalia ist das Prozessbeispiel der ersten Dimension. Online-Bestellung, internes System, Mitarbeiterin, Lager, Versand oder Abholung: das läuft hinter den Kulissen und stützt die Wertschöpfung. Der Kunde löst den Prozess aus und kann über den Status informiert werden, aber das Lehrstück gilt dem digital unterstützten Geschäftsprozess, nicht der Neugestaltung des Buches als smartes Produkt. Wer Thalia der dritten Dimension zuordnet, weil online bestellt wird, verwechselt den Kanal der Bestellung mit der Digitalisierung des Produkts selbst.\n\nDie Aussage ist wahr.",
+      "Humanic sitzt auf der zweiten Dimension. Der Absatz steht unter neuem Potenzial zur Berücksichtigung von Kundenwünschen. Scanner, App, Kundenkonto und Abgleich mit dem Schuhmodell dienen der Frontstage: Verbindung zum Kunden, Bedürfnisse der Nutzerinnen und Nutzer. Es ist kein Beispiel für den internen Einkaufsprozess und kein Lego-PDF. Die Zuordnung zur Frontstage folgt der Überschrift des Beispiels. Passformfragen werden festgehalten, damit Angebote im Sinne des Kunden entstehen, nicht damit intern ein Prozessmodell gezeichnet wird.\n\nDie Aussage ist wahr.",
+      "Lego-PDF ist die schlichte Produktdigitalisierung. Der Abschnitt heißt ausdrücklich Beispiel für die Digitalisierung eines Produkts. Eine digitale Anleitung als PDF ergänzt das analoge Spielzeug. Das ist die dritte Dimension: Ergebnis der Wertschöpfung durch Technologie erweitern, hier auf der einfachsten Stufe. Prozessmodell im Einkauf wäre etwas anderes; Kundenpassform-Scanner ebenfalls. Die Mission mit unterschiedlichem Zusammenbau liegt auf derselben Achse, nur eine Stufe höher.\n\nDie Aussage ist wahr.",
+      "Zwei Blickrichtungen, zwei Dimensionen. Interner Fokus und Wertschöpfung hinter den Kulissen stehen gegen externen Fokus und Kundenverbindung. Lagerposition abrufen ist backstage; Angebot im Sinne des Kunden ist Frontstage. Identität beider Seiten würde das Dreierschema zusammenfallen lassen. Der Text hält die Trennung gerade deshalb durch, weil Unternehmen sich auf eine oder mehrere Dimensionen konzentrieren können. Wären Frontstage und backstage dasselbe, gäbe es keine Wahl zwischen den Achsen und keine eigene dritte Dimension für Produkt und Dienstleistung.\n\nDie Aussage ist falsch.",
+      "Wertschöpfung ist an die erste Dimension gebunden. Der interne Fokus nutzt Ressourcen, um Produkte und Dienstleistungen zu erstellen; es findet Wertschöpfung statt. Geschäftsprozesse hinter den Kulissen unterstützen genau diese Wertschöpfung. Die Frontstage gestaltet Angebote im Sinne des Kunden, ersetzt aber nicht die Behauptung, hinter der Bühne entstehe kein Wert. Die Aussage dreht die Buchzuordnung um. Ohne backstage-Wertschöpfung gäbe es kein Ergebnis, das die dritte Dimension digital erweitern könnte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.15",
+    "title": "Kundenarten und Prozessende",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kundenbegriffen und zum Ende digital unterstützter Abläufe:",
+    "statements": [
+      "Eine öffentliche Institution kann im Sinne der Frontstage Kundin eines Unternehmens sein.",
+      "Auch ein anderes Unternehmen kann Kunde sein.",
+      "Nur Privatpersonen gelten als Kunden; öffentliche Institutionen sind ausgenommen.",
+      "Im Thalia-Beispiel endet der Prozess mit der Lieferung oder der Bereitstellung zur Abholung.",
+      "Intern können je nach Lagerstand weitere Prozesse angestoßen werden, und Sie als Kunde können über den aktuellen Status informiert werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Öffentliche Institution steht in der Dreierliste. Der Kunde kann je nach Umfeld eine Privatperson, ein Unternehmen oder auch eine öffentliche Institution sein. Eine Gemeinde oder Behörde, die bezieht, fällt unter diese dritte Möglichkeit. Frontstage heißt dann, Angebote im Sinne auch dieses Kunden zu gestalten, nicht nur im Sinne privater Haushalte. Digitalisierung soll Wünsche der Nutzerinnen und Nutzer gezielter berücksichtigen; Nutzerin kann hier die Institution sein.\n\nDie Aussage ist wahr.",
+      "Unternehmen als Kunde ist vorgesehen. Dieselbe Aufzählung nennt ausdrücklich ein Unternehmen neben der Privatperson. Nachfrage zwischen Betrieben ist damit Teil der Frontstage-Logik des Buchs. Wer nur Endverbraucher als Kunden zulässt, streicht die zweite der drei genannten Gestalten. Angebote im Sinne des Kunden müssen also auch den Betrieb als Abnehmer denken, nicht nur die Privatperson mit Schuhen oder Büchern.\n\nDie Aussage ist wahr.",
+      "Nur Privatperson ist zu eng. Öffentliche Institutionen sind ausdrücklich eingeschlossen, Unternehmen ebenfalls. Die Einschränkung „nur Privatpersonen“ und der Ausschluss öffentlicher Institutionen widersprechen dem Satz zum Umfeld des Kunden. Digitalisierung auf der Frontstage soll Nutzerwünsche gezielter treffen, und Nutzerinnen und Nutzer können in allen drei Rollen auftreten. Humanic zeigt die Privatperson anschaulich; die Definition der Dimension bleibt weiter.\n\nDie Aussage ist falsch.",
+      "Zwei mögliche Enden, beide definiert. Lieferung oder Bereitstellung zur Abholung: so endet der beschriebene Bestellprozess. Das entspricht der Definition, nach der ein Geschäftsprozess ein oder mehrere definierte Enden hat. Der Eintrag der Bestellung im System oder die Benachrichtigung der Mitarbeiterin sind Schritte davor, nicht der Schluss. Je nach Lagerstand können intern noch andere Prozesse angestoßen werden, bevor eines der beiden Enden erreicht ist.\n\nDie Aussage ist wahr.",
+      "Lagerstand kann weitere Abläufe auslösen. Der Text hält fest, dass intern je nach Lagerstand vielleicht noch andere Prozesse angestoßen werden und Sie als Kunde über den aktuellen Status informiert werden. Information an den Kunden ändert nicht die Zuordnung: der Kern bleibt der interne, digital unterstützte Prozess, der den Kunden gleichwohl nicht im Dunkeln lässt. Statusmeldung ist Begleitung des Ablaufs, nicht das definierte Ende; Ende bleibt Lieferung oder Abholbereitstellung. So bleiben Anfang und Ende des Geschäftsprozesses klar, auch wenn intern weitere Schritte folgen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.16",
+    "title": "Digitalisierung, Dimensionen und Nutzen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang von Digitalisierung, Dimensionen und Kundenerlebnis:",
+    "statements": [
+      "Digitalisierung als Anwendung digitaler Informations- und Kommunikationstechnologie treibt die digitale Transformation als Veränderung in Teilen von Wirtschaft, Verwaltung und privatem Bereich voran.",
+      "Die drei Dimensionen (Geschäftsprozesse backstage, Frontstage zum Kunden, Digitalisierung von Produkten und Dienstleistungen) beschreiben unterschiedliche Ansatzpunkte, nicht denselben Vorgang unter drei Namen.",
+      "Digital Business meint im Lehrtext die Digitalisierung des Unternehmens insgesamt, die sich aus dem Handeln entlang dieser Dimensionen ergibt.",
+      "Ein Prozessmodell ersetzt die Wertschöpfung: wer den Einkauf visuell abbildet, erzeugt damit bereits das Produkt für den Kunden.",
+      "Eine einfache digitale Ergänzung wie eine PDF-Anleitung ist dasselbe wie eine Erweiterung, die das Kundenerlebnis nachhaltig prägt; das Buch unterscheidet diese Stufen nicht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Anwendung und Veränderung bleiben zwei gekoppelte Schritte. Digitalisierung ist die Anwendung digitaler Informations- und Kommunikationstechnologie; digitale Transformation ist die dadurch vorangetriebene Veränderung in Teilen von Wirtschaft, Verwaltung und privatem Bereich. Der erste Begriff ohne den zweiten wäre Technik ohne Wandel; der zweite ohne den ersten wäre Wandel ohne den im Buch genannten Treiber. Der Schlussteil des Abschnitts kehrt zu genau dieser Kopplung zurück: Technologien erweitern sinnvolle Aspekte, die Transformation soll nicht im Weg stehen.\n\nDie Aussage ist wahr.",
+      "Drei Ansatzpunkte, eine Strategieoption. Backstage stützt Wertschöpfung durch digital unterstützte Geschäftsprozesse. Frontstage verbindet Unternehmen und Kunde und zielt auf Nutzerbedürfnisse. Die dritte Dimension digitalisiert das Ergebnis, Produkt oder Dienstleistung, vom PDF bis zur Mission. Wären die drei nur Umbenennungen desselben Vorgangs, könnte sich ein Unternehmen nicht gezielt auf eine oder mehrere konzentrieren. Die Trennung ist die Voraussetzung der Digitalisierungsstrategie.\n\nDie Aussage ist wahr.",
+      "Vom Raster zur Firmenebene. Wer entlang der Dimensionen tätig wird und eine Strategie mit klarer Vision ableitet, gelangt im Gesamten zur Digitalisierung des Unternehmens, dem Digital Business. Der Ausdruck bündelt nicht eine einzelne App, sondern das Unternehmen, das Prozesse, Kundenbeziehung und Angebot digital erweitert. Erfolg hängt daran, sinnvolle Aspekte durch digitale Technologien zu erweitern, nicht daran, das Wort Digital Business auf die Visitenkarte zu drucken.\n\nDie Aussage ist wahr.",
+      "Abbildung ist Orientierung, nicht Erstellung. Das Prozessmodell gibt Praktikantinnen und Mitarbeitern einen Überblick und hilft, den Ablauf zu kommunizieren. Wertschöpfung bleibt die wirtschaftliche Nutzung von Ressourcen zur Erstellung von Produkten und Dienstleistungen. Wer den Einkauf zeichnet, hat das bestellte Buch noch nicht kommissioniert, verpackt oder geliefert. Dokumentation unterstützt den Prozess; sie ersetzt ihn nicht und erzeugt nicht schon das Gut für den Kunden.\n\nDie Aussage ist falsch.",
+      "Einfachster Fall und bester Fall sind gestuft. PDF-Anleitung ergänzt das analoge Lego; die Erkundungsmission kann das Erlebnis erweitern, smart wirken und die Bindung steigern. Allgemein kann Digitalisierung im einfachsten Fall Ergänzung sein und im besten Fall das Kundenerlebnis nachhaltig prägen. Wer beide Stufen gleichsetzt, macht den Unterschied zunichte, den der Text am Lego-Beispiel und in der Definition von smart gerade aufbaut. Nutzen und Erlebnis innovativ zu erweitern, bleibt das Maß, nicht jede Datei neben dem Karton.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

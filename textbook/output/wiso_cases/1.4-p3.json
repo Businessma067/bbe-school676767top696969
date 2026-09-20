@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.33",
+    "title": "Ausland als weiterer Akteur",
+    "context": "Bewerten Sie die folgenden Aussagen zum einfachen Wirtschaftskreislauf und zu grenzüberschreitenden Austauschbeziehungen:",
+    "statements": [
+      "Der einfache Wirtschaftskreislauf zeigt stark vereinfacht die Wirtschaftsbeziehungen innerhalb eines Landes.",
+      "Es gibt auch grenzüberschreitende Austauschbeziehungen mit Wirtschaftsteilnehmern in anderen Ländern.",
+      "Der einfache Wirtschaftskreislauf erfasst den gesamten Außenhandel bereits vollständig, sodass kein weiterer Akteur nötig ist.",
+      "Um auch diese Beziehungen vereinfacht darzustellen, wird oft das Ausland als weiterer Akteur im Wirtschaftskreislauf gezeigt.",
+      "Grenzüberschreitende Austauschbeziehungen gibt es nur in sehr großen Volkswirtschaften, niemals in einem kleinen Land."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Haushalte, Unternehmen und Staat tauschen im einfachen Bild vor allem innerhalb der Landesgrenzen. Der Abschnitt sagt ausdrücklich, dass dieser Kreislauf die Wirtschaftsbeziehungen innerhalb eines Landes stark vereinfacht zeigt. Vereinfacht heißt: viele Details fehlen, die Grundrichtung bleibt inlandbezogen. Wer den einfachen Kreislauf schon für die ganze Weltwirtschaft hält, überschätzt das Schema.\n\nDie Aussage ist wahr.",
+      "Grenzen halten den Tausch nicht auf. Es gibt auch grenzüberschreitende Austauschbeziehungen mit Wirtschaftsteilnehmern in anderen Ländern. Exporte, Importe und andere internationale Kontakte gehören zur Realität, auch wenn das einfache Schema sie weglässt. Der nächste Schritt im Text ist genau diese Erweiterung, nicht die Behauptung, Wirtschaft ende an der Grenze.\n\nDie Aussage ist wahr.",
+      "Ohne den zusätzlichen Akteur Ausland bliebe der Außenhandel unsichtbar. Der einfache Kreislauf ist inlandbezogen und stark vereinfacht. Gerade weil grenzüberschreitende Beziehungen existieren, wird das Ausland oft extra eingezeichnet. Die Behauptung, der einfache Kreislauf erfasse den gesamten Außenhandel bereits vollständig, widerspricht diesem Schritt.\n\nIm Schema ohne Ausland fehlen Importe und Exporte als eigene Beziehungen zu Teilnehmern außerhalb des Landes. Der Text fügt das Ausland hinzu, um genau diese Lücke zu schließen. Wer den einfachen Kreislauf für vollständig erklärt, streicht die Erweiterung, die der Abschnitt begründet. Vollständigkeit im Sinne des Außenhandels verlangt den weiteren Akteur.\n\nDie Aussage ist falsch.",
+      "Im erweiterten Schema steht das Ausland neben Haushalten, Unternehmen und Staat. Der Lehrtext begründet das damit, dass man die grenzüberschreitenden Wirtschaftsbeziehungen vereinfacht darstellen will. Akteur heißt hier: eine weitere Ecke im Kreislauf, nicht eine einzelne ausländische Firma. Das ist die übliche Darstellung, von der der Abschnitt spricht.\n\nDie Aussage ist wahr.",
+      "Größe des Landes ändert die Existenz grenzüberschreitender Tauschbeziehungen nicht. Der Text führt das Ausland gerade ein und betont danach die Bedeutung für ein kleines Binnenland wie Österreich. Kleine Länder stehen nicht außerhalb des internationalen Tauschs. Die Einschränkung auf sehr große Volkswirtschaften ist falsch.\n\nOb ein Land viele Einwohner hat oder wenige, Importe und Exporte bleiben Beziehungen zu Teilnehmern in anderen Ländern. Österreich ist das Gegenbeispiel im Buch: klein, binnenländisch und dennoch stark eingebunden. Niemals in einem kleinen Land würde heißen, dass der zusätzliche Akteur Ausland nur für Großstaaten gilt. Genau das lehrt der Abschnitt nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.34",
+    "title": "Kleines offenes Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zur Bedeutung internationaler Austauschbeziehungen für Österreich:",
+    "statements": [
+      "Gerade für ein kleines Binnenland wie Österreich sind Austauschbeziehungen mit anderen Ländern von großer Bedeutung.",
+      "Die Mitgliedschaft in der Europäischen Union hat den Handel mit anderen Mitgliedsstaaten erleichtert.",
+      "Rund 70 Prozent der österreichischen Exporte und Importe erfolgen mit Mitgliedsstaaten der EU.",
+      "Österreich handelt ausschließlich mit Drittstaaten außerhalb der EU und nicht mit Mitgliedsstaaten.",
+      "Der Handel mit Drittstaaten, vor allem mit den USA, Großbritannien und China, spielt für das exportorientierte Österreich keine Rolle."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Klein und binnenländisch heißt nicht autark. Der Abschnitt stellt Österreich als kleines Binnenland dar, für das Austauschbeziehungen mit anderen Ländern von großer Bedeutung sind. Weniger Binnenmarktfläche und offene Grenzen zum Tausch machen den Außenhandel zum Alltag, nicht zum Sonderfall. Wer Österreich als geschlossene Insel denkt, verfehlt den Ausgangspunkt.\n\nDie Aussage ist wahr.",
+      "Mitgliedschaft senkt Hürden im Kreis der Union. Der Handel mit anderen Mitgliedsstaaten ist dadurch erleichtert worden, nicht erschwert. Erleichtert meint hier: weniger Grenzen im Binnenmarkt, nicht dass jeder Vertrag von selbst zustande kommt. Die Richtung des Satzes entspricht dem Lehrtext.\n\nDie Aussage ist wahr.",
+      "Die Größenordnung, nicht die Nachkommastelle, ist der Punkt. Rund 70 Prozent der Exporte und Importe laufen mit EU-Mitgliedsstaaten. Der Löwenanteil des österreichischen Außenhandels liegt also in der Union, der Rest bei anderen Partnern. Wer 70 Prozent als belanglose Zahl wegwischt, unterschätzt die Konzentration auf den EU-Raum. Wer eine genaue Ziffer auswendig lernen will, verfehlt den qualitativen Befund.\n\nRund heißt ungefähr. Der Text setzt diese Größenordnung, um zu zeigen, dass der Handel mit Mitgliedsstaaten dominiert. Drittstaaten bleiben daneben wichtig, sie tragen aber nicht den gleichen Anteil. Die Aussage hält sich an diese Ordnung.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Drittstaaten würde den EU-Anteil streichen. Der Text nennt rund 70 Prozent mit Mitgliedsstaaten und zusätzlich Handel mit Drittstaaten. Beides existiert. Die Behauptung, Österreich handle nur außerhalb der Union, kehrt die Gewichte um.\n\nErleichterter Handel in der EU und der hohe Anteil an den Exporten und Importen widersprechen einem reinen Drittstaatenmodell. USA, Großbritannien und China kommen als Beispiele für Drittstaaten vor, nicht als einzige Partner. Deshalb ist die Ausschließlichkeitsformel falsch.\n\nDie Aussage ist falsch.",
+      "Exportorientierung endet nicht an der EU-Außengrenze. Der Handel mit Drittstaaten, vor allem mit den USA, Großbritannien und China, spielt für ein exportorientiertes Land wie Österreich eine große Rolle. Keine Rolle zu behaupten, streicht genau diesen Satz. Große Rolle und rund 70 Prozent EU-Anteil können nebeneinander stehen: der eine beschreibt den Schwerpunkt, der andere die restlichen, aber wichtigen Partner.\n\nDrittstaaten sind nicht der Hauptblock, aber sie sind nicht null. Ein exportorientiertes Land verkauft und kauft auch jenseits der Union. Die Verneinung jeder Rolle widerspricht dem Abschnitt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.35",
+    "title": "Exportquote und Außenhandel",
+    "context": "Bewerten Sie die folgenden Aussagen zur Exportquote und zur Rolle des Außenhandels für die österreichische Wirtschaftsleistung:",
+    "statements": [
+      "Die Exportquote misst Waren- und Dienstleistungsexporte in Prozent der gesamten Wirtschaftsleistung, das heißt des Bruttoinlandsprodukts.",
+      "Liegt die Exportquote bei etwa der Hälfte, stammen fünf von zehn in Österreich erwirtschafteten Euro aus dem Außenhandel.",
+      "Die Exportquote ist die Differenz aus Importen und Exporten in Euro.",
+      "Österreich wird im Text als exportorientiertes Land beschrieben.",
+      "Die Exportquote zählt nur den Verkauf von Süßwaren an Touristinnen und Touristen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zähler und Nenner stehen fest. Oben Waren- und Dienstleistungsexporte, unten die gesamte Wirtschaftsleistung, gemessen am Bruttoinlandsprodukt. Prozent, nicht ein Eurobetrag. Genau so definiert der Kasten die Exportquote. Wer Exporte durch das BIP teilt, folgt dieser Definition. Wer etwas anderes durch etwas anderes teilt, misst nicht die Quote des Buches.\n\nDie Aussage ist wahr.",
+      "Hälfte der Leistung, Hälfte der Euro: dieselbe Relation in Alltagssprache. Der Text koppelt die Exportquote von 50 Prozent an den Satz, fünf von zehn in Österreich erwirtschafteten Euro stammten aus dem Außenhandel. Es geht um die Größenordnung der Offenheit, nicht um das Auswendiglernen einer Importziffer in Milliarden. Wer 50 Prozent als Exportquote versteht, darf den Satz mit den fünf von zehn Euro als Umschreibung lesen.\n\nDie Aussage ist wahr.",
+      "Differenz ist ein Saldo, keine Quote. Importe minus Exporte ergeben einen Überschuss oder ein Defizit in Euro, nicht den Anteil der Exporte am BIP. Die Exportquote ist ein Prozentverhältnis, Exporte bezogen auf das Bruttoinlandsprodukt. Wer die Differenz nimmt, verwechselt Handelsbilanz und Offenheitsmaß.\n\nEin Land kann Importe und Exporte in ähnlicher Höhe haben und trotzdem eine hohe Exportquote, wenn beide im Verhältnis zum BIP groß sind. Genau das deutet der Text für Österreich an: hohe Offenheit, zuletzt kleine Differenz. Die Definition über die Differenz zerstört dieses Maß. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Exportorientiert fällt nicht vom Himmel, der Abschnitt verwendet das Wort für Österreich. Es begründet, warum auch der Handel mit Drittstaaten eine große Rolle spielt. Orientierung nach außen heißt: Außenhandel ist tragend, nicht dass nichts im Inland erzeugt würde.\n\nDie Aussage ist wahr.",
+      "Süßwaren sind populäre Beispiele, nicht die Definition der Quote. Die Exportquote umfasst Waren- und Dienstleistungsexporte insgesamt in Prozent des BIP. Mozartkugeln, Waffeln oder Sachertorte führen die Liste nicht an. Maschinen, Fahrzeuge, bearbeitete Waren und chemische Erzeugnisse tun das. Eine Quote nur aus Touristensüßigkeiten wäre ein anderes, viel engeres Maß.\n\nFünf von zehn Euro aus dem Außenhandel beziehen sich auf den gesamten Außenhandel, nicht auf eine Konditorei. Dienstleistungen wie Tourismus zählen mit, aber nicht als einzige Position und nicht statt der Warenexporte. Die Verengung auf Süßwaren macht den Satz falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.36",
+    "title": "Was Österreich wirklich exportiert",
+    "context": "Bewerten Sie die folgenden Aussagen zur Zusammensetzung der österreichischen Exporte von Waren und Dienstleistungen:",
+    "statements": [
+      "Den Löwenanteil der Exporte machen nicht Mozartkugeln, Haselnusswaffeln oder Sachertorten aus.",
+      "Maschinen, Fahrzeuge, bearbeitete Waren und chemische Erzeugnisse führen die Liste der Exportartikel an.",
+      "Österreich exportiert ausschließlich Lebensmittel-Spezialitäten und sonst keine Waren.",
+      "Bei den Dienstleistungen verkaufen österreichische Unternehmen vor allem Tourismus, Transporte, technische Dienstleistungen und Informationsdienstleistungen an ausländische Abnehmerinnen und Abnehmer.",
+      "Sachertorte und Mozartkugeln sind die einzigen Güter, die im Ausland gekauft werden."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Bekannt ist nicht dasselbe wie groß. Mozartkugeln, Haselnusswaffeln und Sachertorte sind populäre Beispiele für Waren, die im Ausland gern gekauft werden. Den Löwenanteil bilden sie trotzdem nicht. Der Abschnitt warnt genau vor dieser Verwechslung von Image und Statistik.\n\nDie Aussage ist wahr.",
+      "Industrie führt, Konditorei illustriert. Maschinen, Fahrzeuge, bearbeitete Waren und chemische Erzeugnisse stehen an der Spitze der Exportartikel. Das sind die Positionen, mit denen Österreich den Großteil der Warenausfuhr bestreitet. Wer nur an Souvenirs denkt, liest die falsche Liste.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Spezialitäten würde Maschinen, Fahrzeuge, Chemie und bearbeitete Waren streichen. Der Text nennt diese Gruppen als führend und die Süßwaren nur als populäre Beispiele. Ein reines Lebensmittelexportland ist Österreich hier nicht.\n\nExport in mehr als 200 Länder und eine hohe Exportquote passen zu einem breiten Warenkorb, nicht zu einer einzigen Produktfamilie. Lebensmittel können Teil der Ausfuhr sein, sie ersetzen die genannten Industriegruppen nicht. Die Ausschließlichkeit macht den Satz falsch.\n\nDie Aussage ist falsch.",
+      "Dienstleistungen haben eine eigene Rangliste. Tourismus, also Urlaubs- und Geschäftsreisen, Transportdienstleistungen, technische Dienstleistungen sowie Informationsdienstleistungen verkaufen österreichische Unternehmen an ausländische Abnehmerinnen und Abnehmer. Das ergänzt die Waren, es ersetzt sie nicht. Wer nur Waren zählt, lässt diese Seite weg.\n\nDie Aussage ist wahr.",
+      "Einzige Güter im Ausland wären ein Souvenirstand, kein Außenhandel. Der Text sagt, jene Süßwaren würden im Ausland gern gekauft, der Löwenanteil liege aber bei Maschinen, Fahrzeugen, bearbeiteten Waren und Chemie. Dienstleistungen kommen hinzu. Die Formel von den einzigen Gütern ist falsch.\n\nGekauft werden im Ausland viele österreichische Erzeugnisse, nicht nur zwei Markenartikel. Die populären Beispiele dienen der Anschauung, nicht der Begrenzung des Exportkorbs. Wer den Korb auf Sachertorte und Mozartkugel verengt, widerspricht der Liste der führenden Artikel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.37",
+    "title": "Importe, Exporte und Tourismus",
+    "context": "Bewerten Sie die folgenden Aussagen zum Verhältnis von Importen und Exporten sowie zur internationalen Einbindung österreichischer Unternehmen:",
+    "statements": [
+      "Seit vielen Jahren übersteigen die Importe die Exporte.",
+      "Zuletzt war die Differenz zwischen Importen und Exporten klein.",
+      "Diese Differenz wird durch Überschüsse in anderen Bereichen, etwa dem Tourismus, wieder aufgewogen.",
+      "Ein Importüberschuss kann in Österreich niemals durch andere Bereiche ausgeglichen werden.",
+      "Österreichische Unternehmen exportieren in mehr als 200 Länder."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Mehr kaufen als verkaufen, über Jahre hinweg: so beschreibt der Abschnitt die Warenströme. Die Importe übersteigen seit vielen Jahren die Exporte. Das ist ein Befund über die Richtung der Differenz, nicht die Aufforderung, eine Milliardenziffer auswendig zu lernen. Wer daraus schließt, Österreich exportiere nichts, liest zu viel in den Satz. Ein Land kann zugleich exportorientiert sein und bei Waren netto mehr einführen. Genau diese Kombination hält der Text fest, bevor er die kleine Differenz und den Tourismusausgleich nennt.\n\nDie Aussage ist wahr.",
+      "Klein zuletzt, nicht verschwunden. Der Text hält fest, dass die Differenz zuletzt klein war. Die Richtung Importüberschuss bleibt, das Ausmaß ist gering. Genau diese Nuance verhindert, aus dem langjährigen Überhang eine dramatische Schieflage zu machen. Klein und seit vielen Jahren übersteigend gehören zusammen: der Überhang ist die Regel, seine Höhe zuletzt aber nicht mehr weit. Ohne diese zweite Angabe würde man aus dem ersten Satz eine große Lücke ableiten, die der Abschnitt so nicht behauptet.\n\nDie Aussage ist wahr.",
+      "Andere Bereiche können gegenbuchen. Überschüsse etwa im Tourismus wägen die Differenz wieder auf. Aufwiegen heißt: die Lücke in einem Feld wird durch ein Plus in einem anderen Feld ausgeglichen, nicht dass Importe und Exporte identisch wären. Tourismus ist das genannte Beispiel, nicht das einzige denkbare, aber das im Buch stehende.\n\nDie Aussage ist wahr.",
+      "Niemals ausgleichen widerspricht dem Satz über den Tourismus. Der Abschnitt sagt ausdrücklich, die Differenz werde durch Überschüsse in anderen Bereichen wieder aufgewogen. Ein Importüberschuss bei Waren kann also durch Dienstleistungsüberschüsse, hier Tourismus, gegengebucht werden. Das Wort „niemals“ macht den Satz falsch.\n\nWarenströme und Dienstleistungsströme sind nicht dieselbe Rechnung. Wer nur die Warenseite sieht, hält den Importüberhang für unausgleichbar. Der Lehrtext trennt beides und nennt den Ausgleich. Deshalb greift die Behauptung eines unmöglichen Ausgleichs nicht.\n\nDie Aussage ist falsch.",
+      "Weite, nicht Enge, beschreibt die Reichweite. Österreichische Unternehmen exportieren in mehr als 200 Länder auf der Welt. Das unterstreicht die globale Einbindung neben dem EU-Schwerpunkt. Mehr als 200 ist eine Größenordnung der Breite, kein Drill auf eine genaue Länderliste.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.38",
+    "title": "Binnenmarkt und vier Grundfreiheiten",
+    "context": "Bewerten Sie die folgenden Aussagen zu internationalen Regelungen, die die österreichische Wirtschaft prägen:",
+    "statements": [
+      "Als Mitglied der Europäischen Union unterliegt Österreich dem Binnenmarkt mit seinen vier Grundfreiheiten.",
+      "Zu den vier Grundfreiheiten gehören der freie Waren-, Personen-, Dienstleistungs- und Kapitalverkehr.",
+      "Die EU-Zollunion und Handelsabkommen mit Drittstaaten erleichtern den Zugang zu internationalen Märkten.",
+      "Die EU-Mitgliedschaft betrifft nur den kulturellen Austausch und legt keine Handels- und Wettbewerbsbedingungen fest.",
+      "Globale Regelwerke wie die der Welthandelsorganisation prägen die Rahmenbedingungen des Außenhandels."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Mitgliedschaft bindet an den Binnenmarkt. Österreich unterliegt ihm mit seinen vier Grundfreiheiten. Unterliegen heißt hier: die Regeln gelten, nicht dass jedes Unternehmen automatisch in jedem Mitgliedsland verkauft. Der rechtliche Rahmen des Binnenmarkts ist der erste internationale Block, den der Abschnitt nach dem reinen Handelsvolumen nennt. Ohne diese Mitgliedschaft fehlte genau jener Rechtsraum, in dem Waren, Personen, Dienstleistungen und Kapital grundsätzlich frei verkehren sollen. Handel mit Mitgliedsstaaten ist dadurch nicht nur üblich, sondern rechtlich erleichtert.\n\nDie Aussage ist wahr.",
+      "Vier, nicht drei und nicht fünf, und genau diese vier. Freier Warenverkehr, Personenverkehr, Dienstleistungsverkehr und Kapitalverkehr bilden die Grundfreiheiten. Wer eine davon streicht oder durch etwas anderes ersetzt, hat nicht die Liste des Buches. Zusammen beschreiben sie, was im Binnenmarkt grundsätzlich frei bewegt werden soll. Personenverkehr ist dabei ebenso Teil des Wirtschaftsraums wie der Warenstrom, Kapital ebenso wie Dienstleistungen. Eine verkürzte Liste würde den Binnenmarkt als bloße Zollsenkung missverstehen.\n\nDie Aussage ist wahr.",
+      "Zugang wird erleichtert, nicht garantiert ohne Vertrag. EU-Zollunion und Handelsabkommen mit Drittstaaten nennt der Text als Instrumente, die den Zugang zu internationalen Märkten erleichtern. Erleichtern bleibt die richtige Stufe: weniger Zoll- und Abkommenhürden, nicht die Abschaffung jedes Wettbewerbs. Drittstaaten stehen hier als Partner jenseits der Union.\n\nDie Aussage ist wahr.",
+      "Nur Kultur würde Richtlinien, Verordnungen, Zollunion und Wettbewerbsregeln ausblenden. Der Abschnitt sagt, zahlreiche Richtlinien und Verordnungen legten die Handels- und Wettbewerbsbedingungen fest. Die Mitgliedschaft ist ein Wirtschaftsrechtsrahmen, nicht ein Kulturverein. Die Verengung auf kulturellen Austausch ist falsch.\n\nVier Grundfreiheiten betreffen Waren, Personen, Dienstleistungen und Kapital, also wirtschaftliche Bewegungen. Wer das als bloßen Kulturaustausch liest, verfehlt den Gegenstand. Handels- und Wettbewerbsbedingungen sind ausdrücklich Teil des Textes. Deshalb hält die Aussage der Prüfung nicht stand.\n\nDie Aussage ist falsch.",
+      "Nicht nur die EU setzt den Rahmen. Globale Regelwerke wie die der Welthandelsorganisation prägen die Rahmenbedingungen des Außenhandels. Die WTO steht neben Binnenmarkt und Abkommen, nicht statt ihrer. Wer Außenhandel nur als bilaterales Geschäft ohne globale Regeln denkt, lässt diese Ebene weg.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.39",
+    "title": "Standards und Handelsabkommen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Umwelt-, Sozial- und Finanzstandards sowie zu Handelsabkommen:",
+    "statements": [
+      "Umwelt-, Sozial- und Finanzstandards wie die EU-Taxonomie, die OECD-Leitsätze für multinationale Unternehmen oder die Baseler Regelungen im Finanzsektor beeinflussen Geschäftsstrategien und Marktbedingungen.",
+      "Internationale Regelungen und Abkommen sind für die österreichische Wirtschaft ohne Bedeutung.",
+      "Handelsabkommen wie das EU-Mercosur-Abkommen oder bilaterale Abkommen mit Staaten wie den USA oder China spielen eine zentrale Rolle.",
+      "Solche Abkommen sichern ausschließlich höhere Zölle und verbieten jeden Marktzugang.",
+      "Die genannten Abkommen setzen auch Standards für nachhaltiges Wirtschaften und fairen Handel."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Standards steuern mit, sie stehen nicht nur in Broschüren. EU-Taxonomie für nachhaltige Investitionen, OECD-Leitsätze für multinationale Unternehmen und Baseler Regelungen im Finanzsektor beeinflussen Geschäftsstrategien und Marktbedingungen. Beeinflussen heißt: Unternehmen müssen sie in Pläne und Märkte einrechnen, nicht dass jede Investition automatisch grün oder jede Bankregel überflüssig wäre.\n\nDie Aussage ist wahr.",
+      "Ohne Bedeutung widerspricht der ganzen zweiten Hälfte des Abschnitts. Neben dem internationalen Handel sind internationale Regelungen und Abkommen für die österreichische Wirtschaft von zentraler Bedeutung. EU-Binnenmarkt, Zollunion, WTO, Taxonomie, OECD, Basel, Mercosur und bilaterale Abkommen sind genau diese Ebene. Die Verneinung jeder Bedeutung ist falsch.\n\nHandel ohne Regeln wäre ein anderes Kapitel. Der Text koppelt Warenströme an Rechtsrahmen. Zentrale Bedeutung ist die Formel, nicht eine Randnotiz. Wer Regelungen für belanglos erklärt, streicht den Satz, mit dem der Abschnitt diese Liste einleitet.\n\nDie Aussage ist falsch.",
+      "Zentrale Rolle, nicht Randthema. EU-Mercosur und bilaterale Abkommen mit Staaten wie den USA oder China nennt der Text namentlich. Sie stehen für Marktzugang jenseits oder am Rand des reinen Binnenmarkts. Ob ein bestimmtes Abkommen politisch umstritten ist, ändert nicht, dass das Buch ihnen diese Rolle zuschreibt.\n\nDie Aussage ist wahr.",
+      "Höhere Zölle und Verbot des Marktzugangs kehren den Zweck um. Die Abkommen sichern Marktzugang und Wettbewerbsgleichheit, sie sollen den Zugang erleichtern, nicht sperren. Ausschließlich höhere Zölle wäre das Gegenteil von Handelsabkommen im Sinne des Textes.\n\nMarktzugang und Wettbewerbsgleichheit sind die genannten Ziele. Dazu kommen Standards für nachhaltiges Wirtschaften und fairen Handel. Ein Abkommen, das jeden Marktzugang verbietet, wäre kein Instrument der Erleichterung. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Nicht nur Mengen und Zölle. Dieselben Abkommen setzen auch Standards für nachhaltiges Wirtschaften und fairen Handel. Der Abschnitt stellt das neben Marktzugang und Wettbewerbsgleichheit. Nachhaltigkeit und Fairness sind hier Teil der Vertragsarchitektur, nicht ein Ersatz für den Handel.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.40",
+    "title": "Was das BIP umfasst",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition des Bruttoinlandsprodukts:",
+    "statements": [
+      "Das Bruttoinlandsprodukt umfasst alle Güter, also Produkte und Dienstleistungen, zum Marktwert, die während einer bestimmten Periode innerhalb der Grenzen eines Landes produziert werden.",
+      "Der Marktwert entspricht Menge mal Marktpreis.",
+      "Zwischenprodukte oder Vorleistungen werden abgezogen, weil sie in der Endproduktion bereits enthalten sind.",
+      "Das BIP zählt nur materielle Produkte und lässt Dienstleistungen grundsätzlich weg.",
+      "Das BIP misst die Wirtschaftsleistung unabhängig vom Ort der Produktion und nur nach der Staatsangehörigkeit der Produzierenden."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Drei Klammern halten die Definition: was, wie bewertet, wo und wann. Alle Güter, Produkte und Dienstleistungen, zum Marktwert, in einer Periode, innerhalb der Landesgrenzen. Das ist das Bruttoinlandsprodukt als Maß der gesamtwirtschaftlichen Leistung. Fehlt eine Klammer, misst man etwas anderes, etwa nur Waren oder nur Inländer weltweit.\n\nDie Aussage ist wahr.",
+      "Menge mal Marktpreis, nicht Wunschpreis und nicht Selbstkosten allein. Der so genannte Marktwert ist genau dieses Produkt. Eine größere Menge zum selben Preis hebt den Wert, ein höherer Marktpreis bei gleicher Menge ebenfalls. Deshalb kann ein steigendes BIP später auch von Preisen kommen, nicht nur von mehr Stück.\n\nDie Aussage ist wahr.",
+      "Doppelt zählen soll verhindert werden. Zwischenprodukte oder Vorleistungen werden abgezogen, weil sie in der Endproduktion bereits enthalten sind. Wolle im Pullover, Blech im Auto: der Endwert trägt den Vorwert schon. Ohne Abzug würde dieselbe Leistung zweimal in der Summe stehen.\n\nDie Aussage ist wahr.",
+      "Dienstleistungen gehören zu den Gütern dieser Definition. Produkte und Dienstleistungen gemeinsam, zum Marktwert, innerhalb der Grenzen. Wer nur materielle Produkte zählt, halbiert das Maß. Tourismus, Transport, technische Dienste und Informationsdienste wären dann unsichtbar, obwohl sie Leistung sind.\n\nGüter heißt hier beides. Der Abschnitt wiederholt Produkte und Dienstleistungen bei der BIP-Definition wie zuvor im Kreislauf. Grundsätzlich Dienstleistungen wegzulassen widerspricht dem Wortlaut. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Ort zählt beim BIP, nicht die Staatsangehörigkeit. Produziert wird innerhalb der Grenzen eines Landes, in einer Periode. Ob die Produktionsfaktoren Inländern oder Ausländern gehören, ist die Logik des Bruttonationalprodukts, nicht des BIP. Wer das BIP nur nach Pass der Produzierenden misst, vertauscht die beiden Maße.\n\nEine ausländische Pendlerin, die in Österreich arbeitet, erzeugt Einkommen im Inland: das gehört ins BIP. Die Staatsangehörigkeit würde sie im BNP anders behandeln. Unabhängig vom Ort zu messen, wäre gerade nicht Inlandsprodukt. Die Aussage vermischt die Konzepte und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.41",
+    "title": "Pullover, Wolle und Doppelzählung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Behandlung von Vorleistungen bei der Berechnung des BIP:",
+    "statements": [
+      "Werden Pullover erzeugt, wird vom Marktwert der Pullover der Marktwert der verwendeten Wolle abgezogen.",
+      "Ohne diesen Abzug wäre der Wert der Wolle zweimal erfasst.",
+      "Zwischenprodukte werden absichtlich zweimal gezählt, damit das BIP möglichst hoch erscheint.",
+      "Vorleistungen sind in der Endproduktion bereits enthalten.",
+      "Das BIP addiert jede Rechnung in der Lieferkette ohne Abzug von Vorleistungen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Pullover minus Wolle, nicht Pullover plus Wolle. Vom Marktwert der erzeugten Pullover wird der Marktwert der Wolle abgezogen, die für die Produktion verwendet worden ist. Der Endwert bleibt, der Vorwert geht heraus. Das Beispiel macht die allgemeine Regel der Vorleistungen konkret.\n\nDie Aussage ist wahr.",
+      "Zweimal dieselbe Wolle, einmal als Wolle, einmal im Pullover: genau das soll nicht passieren. Ohne Abzug wäre der Wert der Wolle zweimal erfasst. Die Warnung vor der Doppelzählung ist der Grund des Abzugs, nicht eine Buchhalterlaune. Wer beides voll addiert, bläht die gemessene Leistung künstlich auf.\n\nDie Aussage ist wahr.",
+      "Absichtlich zweimal zählen, um das BIP zu erhöhen, kehrt die Regel um. Zwischenprodukte oder Vorleistungen werden abgezogen, weil sie in der Endproduktion bereits enthalten sind. Ziel ist Vermeidung der Doppelzählung, nicht Maximierung der Statistik.\n\nEin höheres BIP durch Doppelzählung wäre keine höhere Wirtschaftsleistung, sondern eine Rechenverzerrung. Der Pullover enthält die Wolle schon im Marktpreis. Dieselbe Wolle noch einmal als eigene Endleistung zu buchen, wäre genau der Fehler, den der Text ausschließt. Deshalb hält die Absichtsbehauptung nicht.\n\nDie Aussage ist falsch.",
+      "Enthalten heißt: im Endpreis schon drin. Vorleistungen stecken in der Endproduktion. Deshalb darf man sie nicht extra zur Summe der Endgüter addieren. Der Satz gibt die Begründung des Buches wieder, ohne das Pulloverbeispiel zu brauchen, und bleibt trotzdem derselbe Gedanke.\n\nDie Aussage ist wahr.",
+      "Jede Rechnung ohne Abzug wäre die Doppelzählung in Serie. Wolle, Garn, Stoff, Pullover: vier Rechnungen, eine Leistung am Ende, wenn man Endproduktion misst. Das BIP zieht Zwischenprodukte ab. Wer alle Rechnungen voll addiert, misst Umsatzkaskaden, nicht die definierte gesamtwirtschaftliche Leistung.\n\nMarktwert der Endgüter minus Vorleistungen, nicht die Summe aller Lieferantenrechnungen. Das Pulloverbeispiel zeigt den Abzug an einer Stufe, die Logik gilt für die Kette. Ohne Abzug wäre der Wert der Wolle zweimal erfasst, mit weiteren Stufen noch öfter. Die Aussage widerspricht der Definition und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.42",
+    "title": "BIP und Wirtschaftswachstum",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang zwischen BIP, Preisniveau und Wachstum:",
+    "statements": [
+      "Das BIP wird herangezogen, um das Wirtschaftswachstum zu bestimmen.",
+      "Ein höheres BIP im Jahresvergleich beweist stets reales Wachstum, auch wenn nur die Marktpreise gestiegen sind.",
+      "Bei der Beurteilung des Wachstums ist die Entwicklung des allgemeinen Preisniveaus zu berücksichtigen.",
+      "Ein höheres BIP könnte nicht nur durch eine gestiegene Wirtschaftsleistung, sondern auch durch höhere Marktpreise erzielt worden sein.",
+      "Wird das zu aktuellen Preisen ermittelte nominelle BIP um die Inflation bereinigt, ergibt sich das reale BIP."
+    ],
+    "answer_key": [true, false, true, true, true],
+    "tactical_explanations": [
+      "Wachstum braucht ein Maß, und häufig ist es das BIP. Steigt es im Jahresvergleich, spricht der Text von gewachsener Wirtschaft, mit der späteren Einschränkung über Preise. Heranziehen heißt: man verwendet es dafür, nicht dass jedes andere Maß verboten wäre. Der Satz bleibt auf dieser Verwendung. Ohne ein solches Maß gäbe es im Abschnitt keine Brücke von der Produktionsdefinition zur Frage, ob die Wirtschaft gegenüber dem Vorjahr gewachsen ist. Die Brücke ist das BIP, danach kommt die Preisprüfung.\n\nDie Aussage ist wahr.",
+      "Stets real, auch wenn nur Preise steigen, streicht die Einschränkung. Ein höheres BIP könnte sonst nicht nur durch gestiegene Wirtschaftsleistung, sondern auch durch höhere Marktpreise erzielt worden sein. Nominaler Anstieg ohne Blick auf das Preisniveau beweist kein reales Wachstum. Das Wort „stets“ macht den Satz falsch.\n\nJahresvergleich des ungeprüften BIP vermengt Menge und Preis. Inflation hebt Marktwerte, auch wenn die produzierte Menge gleich bleibt. Genau deshalb folgt im Text die Unterscheidung von nominellem und realem BIP. Wer den Preisweg leugnet, hält jedes Plus schon für reale Leistung.\n\nDie Aussage ist falsch.",
+      "Preisniveau ist kein Schmuckstück nach der Statistik. Der Abschnitt sagt, die Entwicklung des allgemeinen Preisniveaus sei zu berücksichtigen. Sonst verwechselt man teurere Güter mit mehr Gütern. Berücksichtigung heißt: nachschauen, ob das Plus von Mengen oder von Preisen kommt.\n\nDie Aussage ist wahr.",
+      "Zwei Wege zum höheren BIP: mehr Leistung oder höhere Marktpreise. Der Text nennt beide ausdrücklich. Wer nur den ersten Weg gelten lässt, liest Wachstum in jede Preissteigerung. Die Oder-Formel hält die Zweideutigkeit fest, die später die Inflationsbereinigung nötig macht. Marktwert ist Menge mal Marktpreis. Steigt nur der zweite Faktor, steigt das nominelle BIP, ohne dass mehr Pullover, Maschinen oder Dienste entstanden sein müssen. Genau diese Rechnung begründet, warum reales Wachstum ein eigenes, bereinigtes Maß braucht.\n\nDie Aussage ist wahr.",
+      "Aktuelle Preise zuerst, dann die Bereinigung. Das zunächst zu aktuellen Preisen ermittelte BIP ist das nominelle BIP. Um die Inflation bereinigt ergibt es das reale BIP, das zur Bestimmung des realen Wirtschaftswachstums herangezogen wird. Formel: nominell minus Preiseffekt, nicht nominell gleich real.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.43",
+    "title": "Nominelles und reales BIP",
+    "context": "Bewerten Sie die folgenden Aussagen zur Unterscheidung von nominellem und realem BIP:",
+    "statements": [
+      "Das nominelle BIP wird zu aktuellen Preisen ermittelt.",
+      "Das reale BIP entsteht, wenn das nominelle BIP um die Inflation bereinigt wird.",
+      "Das reale BIP wird herangezogen, um das reale Wirtschaftswachstum zu bestimmen.",
+      "Eine Inflationsbereinigung ist überflüssig, weil Preise das BIP definitionsgemäß nie beeinflussen.",
+      "Nominelles BIP und reales BIP sind definitionsgemäß in jedem Jahr identisch."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Aktuelle Preise sind die Preise der Periode, nicht irgendwelche Vorjahrespreise. Das nominelle BIP wird so ermittelt: Mengen mal jeweilige Marktpreise. Steigen die Preise, steigt ceteris paribus auch das nominelle BIP. Das ist der Ausgangswert, bevor jemand Inflation herausrechnet.\n\nDie Aussage ist wahr.",
+      "Bereinigen heißt: den Preiseffekt herausnehmen. Aus dem nominellen BIP wird durch Inflationsbereinigung das reale BIP. Real meint hier: näher an der tatsächlichen Leistungsänderung, nicht näher an einem Wunsch. Ohne diesen Schritt bleibt man bei aktuellen Preisen stehen.\n\nDie Aussage ist wahr.",
+      "Reales Wachstum braucht das reale Maß. Der Text sagt, das reale BIP werde zur Bestimmung des realen Wirtschaftswachstums herangezogen. Wer das nominelle BIP dafür einsetzt, mischt Preis und Menge. Die Zuordnung real zu real ist die Pointe der Unterscheidung.\n\nDie Aussage ist wahr.",
+      "Nie beeinflussen widerspricht Menge mal Marktpreis. Höhere Marktpreise können ein höheres BIP erzeugen, ohne dass mehr geleistet wurde. Genau deshalb ist die Inflationsbereinigung nicht überflüssig. Die Aussage leugnet den Preiseffekt, den der Abschnitt ausdrücklich nennt.\n\nNominell zu aktuellen Preisen, real nach Abzug der Inflation: zwei Größen, weil Preise wirken. Wären Preise definitionsgemäß wirkungslos, gäbe es die Unterscheidung nicht. Überflüssig wäre die Bereinigung nur in einer Welt ohne Inflation. Das Buch schreibt diese Welt nicht. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Identisch in jedem Jahr wären sie nur, wenn die Inflation null wäre oder man sie nicht herausrechnet. Definitionsgemäß sind sie verschieden: nominell aktuell, real bereinigt. Gleichsetzung streicht die Unterscheidung, um die es in diesem Abschnitt geht.\n\nEin Jahr mit steigendem Preisniveau zeigt die Lücke. Das nominelle BIP kann steigen, während das reale BIP stagniert oder fällt. Identisch wären sie dann nicht. Die Behauptung einer Definitionsidentität ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.44",
+    "title": "BIP pro Kopf als Wohlstandsmaß",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verwendung des BIP als Wohlstandsindikator:",
+    "statements": [
+      "Das BIP wird oft als Indikator für den Wohlstand eines Landes herangezogen.",
+      "Bezogen auf die Bevölkerungszahl erlaubt das BIP einen raschen ersten Vergleich der durchschnittlichen Wirtschaftsleistungen und Konsummöglichkeiten auch unterschiedlich großer Länder.",
+      "Diese Verwendung wird oft kritisch gesehen.",
+      "Das BIP sagt nichts über die Qualität und die Nachhaltigkeit der Wirtschaftsleistung oder des Wirtschaftswachstums aus.",
+      "Das BIP pro Kopf ist ein vollständiges und unproblematisches Maß für den gesamten Wohlstand der Bevölkerung."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Oft, nicht immer und nicht als einziges Maß. Der Abschnitt hält fest, dass das BIP oft als Indikator für den Wohlstand eines Landes herangezogen wird. Indikator heißt Anhaltspunkt, nicht fertiges Glücksmaß. Die spätere Kritik setzt genau an dieser häufigen Verwendung an. Wer die Zahl nie als Wohlstand liest, versteht nicht, warum der Text anschließend Qualität, Nachhaltigkeit, Katastrophen und unbezahlte Sorgearbeit dagegenhält. Die Verwendung kommt zuerst, die Einschränkung danach.\n\nDie Aussage ist wahr.",
+      "Größe des Landes stört den Rohvergleich. BIP pro Kopf oder pro Einwohnerin teilt die Leistung durch die Bevölkerung und erlaubt so einen raschen ersten Vergleich auch unterschiedlich großer Länder. Rasch und erster Vergleich: mehr verspricht der Text nicht. Durchschnittliche Wirtschaftsleistung und Konsummöglichkeiten sind die genannten Lesarten. Ein großes Land mit hohem Gesamt-BIP kann pro Kopf hinter einem kleineren liegen. Genau deshalb bezieht der Abschnitt die Zahl auf die Einwohnerinnen und Einwohner, bevor irgendwelche Ranglisten im EU-Vergleich Sinn ergeben.\n\nDie Aussage ist wahr.",
+      "Kritik folgt unmittelbar auf die Verwendung. Oft kritisch gesehen, weil Qualität und Nachhaltigkeit fehlen, Katastrophen das BIP heben können und unentgeltliche Sorgearbeit draußen bleibt. Die Formel „oft kritisch“ ist also nicht Nörgelei, sondern die Haltung des Abschnitts selbst.\n\nDie Aussage ist wahr.",
+      "Qualität und Nachhaltigkeit sind blinde Flecken. Das BIP sagt darüber nichts aus, weder zur Wirtschaftsleistung noch zum Wachstum. Ein hoher Wert kann umweltschädliche Produktion enthalten oder Wiederaufbau nach einem Unfall. Wer BIP mit guter und dauerhafter Entwicklung gleichsetzt, liest etwas in die Zahl, das sie nicht trägt.\n\nDie Aussage ist wahr.",
+      "Vollständig und unproblematisch streicht die ganze Kritik. Der Text nennt fehlende Qualität und Nachhaltigkeit, steigendes BIP nach Naturkatastrophen und Industrieunfällen, umweltschädliche Güter und fehlende unentgeltliche Pflege. Trotzdem darf BIP pro Kopf mit Einschränkungen oder ergänzt durch andere Indikatoren berücksichtigt werden. Unproblematisch ist das Gegenteil dieser Einschränkung.\n\nEin erster Vergleich der Konsummöglichkeiten bleibt möglich, ein Gesamtmaß des Wohlstands ist es nicht. Positive Korrelation mit Gesundheit und Bildung ändert die Lücken nicht in Vollständigkeit. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.45",
+    "title": "Grenzen des BIP als Wohlstandsmaß",
+    "context": "Bewerten Sie die folgenden Aussagen zu Fällen, in denen das BIP als Wohlstandsmaß irreführt:",
+    "statements": [
+      "Das BIP würde auch im Falle einer Naturkatastrophe oder eines Industrieunfalls steigen, wenn dadurch Sanierungs- und Wiederaufbauarbeiten ausgelöst werden.",
+      "Die Produktion von umweltschädlichen oder gesundheitsgefährdenden Gütern erhöht das BIP, selbst wenn langfristig negative ökologische und gesellschaftliche Folgen entstehen.",
+      "Unentgeltliche Pflege- und Sorgearbeit durch Angehörige ist ein Beispiel für Eigenproduktion ohne konkreten Marktwert, die das BIP nicht umfasst.",
+      "Weil Wiederaufbau das BIP erhöhen kann, bedeutet eine Naturkatastrophe selbst einen Gewinn an Lebensqualität.",
+      "Eigenproduktionen ohne Marktwert, etwa unentgeltliche Pflege, gehen vollständig zum Marktpreis in das BIP ein."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Trümmer und Aufbau können die Statistik nach oben ziehen. Sanierungs- und Wiederaufbauarbeiten sind Produktion zum Marktwert. Werden sie ausgelöst, steigt das BIP, obwohl die Katastrophe Zerstörung war. Genau dieses Paradox nennt der Text als Grund, Wohlstand nicht mit BIP gleichzusetzen.\n\nDie Aussage ist wahr.",
+      "Schädlich und trotzdem gezählt, wenn es einen Marktpreis gibt. Umweltschädliche oder gesundheitsgefährdende Güter erhöhen das BIP, auch wenn langfristig negative ökologische und gesellschaftliche Folgen folgen. Das Maß bucht die Produktion, nicht die späteren Schäden. Wer aus einem hohen BIP auf Unbedenklichkeit schließt, übersieht diesen blinden Fleck.\n\nDie Aussage ist wahr.",
+      "Ohne Rechnung, ohne BIP. Unentgeltliche Pflege- und Sorgearbeit durch Angehörige hat keinen konkreten Marktwert in dieser Buchung. Der Text nennt sie als Beispiel dafür, dass das BIP nicht alle Größen umfasst, die als Wirtschaftsleistung angesehen werden können. Haushaltspflege bleibt Leistung, sie erscheint nur nicht in dieser Summe.\n\nDie Aussage ist wahr.",
+      "Steigende Statistik ist nicht steigende Lebensqualität. Der Wiederaufbau zählt als Produktion, die Katastrophe selbst bleibt Zerstörung von Vermögen, Gesundheit oder Umwelt. Der Abschnitt führt das Beispiel gerade als Kritik, nicht als Wohlstandstheorie. Die Umdeutung der Katastrophe in einen Gewinn kehrt die Pointe um.\n\nBIP misst Marktwerte in einer Periode, nicht das Glück nach einem Unfall. Sanierung kann Zahlen heben und zugleich nur ersetzen, was verloren ging. Lebensqualität folgt daraus nicht. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Vollständig zum Marktpreis widerspricht dem Ausschluss. Eigenproduktionen ohne konkreten Marktwert, darunter unentgeltliche Pflege, umfasst das BIP gerade nicht. Es gibt keinen Marktpreis, den man einbuchen könnte, ohne die Definition zu verlassen. Die Aussage behauptet die Aufnahme, der Text die Lücke.\n\nMarktwert setzt Menge mal Marktpreis voraus. Unentgeltliche Sorgearbeit hat in diesem Sinne keinen Marktpreis. Sie als volle BIP-Position zu führen, würde genau jene Größen hineinholen, die der Abschnitt als fehlend nennt. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.46",
+    "title": "BIP, Gesundheit und Bildung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang zwischen BIP pro Kopf und anderen Wohlstandsgrößen:",
+    "statements": [
+      "Das BIP pro Kopf ist für gewöhnlich mit Größen wie dem Gesundheitsstatus und dem Bildungsniveau positiv korreliert.",
+      "Mit Einschränkungen oder ergänzt durch andere Indikatoren kann das BIP pro Kopf bei der Beurteilung des Wohlstands der Bevölkerung berücksichtigt werden.",
+      "Die positive Korrelation bedeutet, dass das BIP jede ökologische Folge der Produktion vollständig erfasst.",
+      "Andere Indikatoren können das BIP bei der Wohlstandsbeurteilung ergänzen.",
+      "Weil eine positive Korrelation besteht, entfällt jede Kritik am BIP als Wohlstandsmaß."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Für gewöhnlich, nicht in jedem Einzelfall gesetzmäßig. BIP pro Einwohnerin bewegt sich oft in dieselbe Richtung wie Gesundheitsstatus und Bildungsniveau. Positiv korreliert heißt: höhere Werte gehen typischerweise zusammen, nicht dass das BIP die Gesundheit erzeugt oder misst. Der Text hält diese Beobachtung fest, bevor er die Einschränkung setzt.\n\nDie Aussage ist wahr.",
+      "Trotzdem, und mit Klammern. Zumindest mit Einschränkungen oder ergänzt durch andere Indikatoren darf BIP pro Kopf bei der Beurteilung des Wohlstands berücksichtigt werden. Berücksichtigen ist schwächer als ersetzen. Die Klammern retten die Zahl als einen Baustein, nicht als alleiniges Urteil.\n\nDie Aussage ist wahr.",
+      "Korrelation mit Gesundheit und Bildung füllt nicht die ökologische Lücke. Das BIP sagt nichts über Qualität und Nachhaltigkeit. Umweltschädliche Güter erhöhen es sogar. Vollständig jede ökologische Folge zu erfassen, behauptet genau das, was der Abschnitt dem BIP abspricht.\n\nPositive Korrelation ist ein statistisches Mitlaufen zweier Größen, kein Inventar der Umweltfolgen. Sanierung nach einem Unfall kann das BIP heben, die ökologische Last bleibt. Wer Korrelation mit Vollständigkeit verwechselt, mischt zwei verschiedene Sätze des Textes. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Ergänzen ist die erlaubte Verwendung. Andere Indikatoren treten neben das BIP, weil es Qualität, Nachhaltigkeit und unentgeltliche Sorge nicht trägt. Der Satz „ergänzt durch andere Indikatoren“ steht wörtlich in der Schlussfolgerung. Ergänzen heißt hinzufügen, nicht das BIP streichen und nicht es für vollständig erklären.\n\nDie Aussage ist wahr.",
+      "Kritik entfällt nicht, sie bleibt die Voraussetzung der Einschränkung. Der Text sieht die Verwendung oft kritisch und nennt Katastrophen, schädliche Güter und fehlende Eigenproduktion. Die Korrelation rechtfertigt nur eine vorsichtige Mitverwendung. Jede Kritik zu streichen, weil zwei Größen zusammenlaufen, widerspricht diesem Aufbau.\n\nEinschränkungen existieren gerade weil die Zahl lückenhaft ist. Gesundheit und Bildung korrelieren, ökologische und soziale Folgen fehlen trotzdem. Ein Entfallen der Kritik würde das BIP wieder zum unproblematischen Gesamtmaß machen. Das lehrt der Abschnitt nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.47",
+    "title": "BIP und Bruttonationalprodukt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Unterschied zwischen BIP und Bruttonationalprodukt:",
+    "statements": [
+      "Das Bruttonationalprodukt ist der Wert aller Waren und Dienstleistungen, die von Inländern mit den ihnen gehörenden Produktionsfaktoren weltweit erzeugt werden.",
+      "Für das BNP ist nicht relevant, ob diese Einkommen im Inland oder im Ausland anfallen.",
+      "Das BNP enthält keine Einkommen, die von Ausländern im Inland erwirtschaftet werden.",
+      "Pendelt eine ausländische Person zum Arbeiten nach Österreich, wird ihr Einkommen im BIP erfasst, aber nicht im BNP.",
+      "In jeder kleinen Volkswirtschaft sind BIP und BNP stets gleich hoch."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Inländer und ihre Faktoren, Ort egal. Das BNP summiert Waren und Dienstleistungen, die von Inländern mit den ihnen gehörenden Produktionsfaktoren weltweit erzeugt werden. Weltweit ist die Pointe gegen das Inlandsprodukt. Besitz der Faktoren und Inländereigenschaft ersetzen die Grenze als Kriterium.\n\nDie Aussage ist wahr.",
+      "Inland oder Ausland ändert beim BNP die Zählung nicht. Entscheidend ist, wem die Produktionsfaktoren gehören und dass es Inländer sind. Ein österreichisches Faktoreinkommen im Ausland zählt mit, ein ausländisches Faktoreinkommen im Inland nicht. Die Ortsunabhängigkeit ist die Definition, nicht eine Ausnahme.\n\nDie Aussage ist wahr.",
+      "Ausländer im Inland: BIP ja, BNP nein. Im Gegensatz zum BIP enthält das BNP keine Einkommen, die von Ausländern im Inland erwirtschaftet werden. Die Grenze des Landes fängt sie für das Inlandsprodukt, die Inländereigenschaft fängt sie für das Nationalprodukt nicht. Beide Maße schneiden denselben Strom unterschiedlich.\n\nDie Aussage ist wahr.",
+      "Pendeln nach Österreich ist das Schulbeispiel. Die ausländische Person arbeitet im Inland, das Einkommen entsteht hier: BIP erfasst es. Sie ist nicht Inländerin mit inländischen Faktoren in der BNP-Logik dieses Beispiels: das BNP lässt es weg. Wer beide Zahlen gleichsetzt, verfehlt genau diesen Pendlerfall.\n\nOrt der Arbeit ist Österreich, also Inlandsproduktion. Zugehörigkeit der Person und der Faktoren ist ausländisch, also nicht BNP. Der Abschnitt setzt diesen Fall, damit die Definition nicht abstrakt bleibt. Die Aussage folgt ihm.\n\nDie Aussage ist wahr.",
+      "Stets gleich in jeder kleinen Volkswirtschaft kehrt den Text um. Für große Volkswirtschaften gilt meist, dass BIP und BNP ähnlich hoch sind. Bei kleinen kann ein großer Unterschied entstehen, Beispiel Luxemburg. Stets gleich wäre die Ausnahme zur Regel des Buches.\n\nViele Grenzgängerinnen und Grenzgänger, viel ausländisches Kapital oder viele Inländer mit Faktoren im Ausland treiben die beiden Maße auseinander. Kleine offene Wirtschaften sind dafür anfälliger, nicht immuner. Luxemburg steht als Warnung, nicht als Beweis der Identität. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.48",
+    "title": "Pendler, Luxemburg und andere Namen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Pendlerströmen, zur Differenz von BIP und BNP sowie zu den Bezeichnungen BNE und BSP:",
+    "statements": [
+      "Das Einkommen einer österreichischen Person, die ins Ausland zum Arbeiten pendelt, zählt zum BNP, aber nicht zum BIP.",
+      "Für große Volkswirtschaften sind BIP und BNP meist ähnlich hoch, bei kleinen kann ein großer Unterschied entstehen, etwa in Luxemburg.",
+      "Das BNP wird oft als Bruttonationaleinkommen bezeichnet und wurde früher Bruttosozialprodukt genannt.",
+      "Das BIP erfasst Produktion innerhalb der Landesgrenzen, unabhängig davon, ob die Einkommen von Inländern oder Ausländern stammen.",
+      "Pendelt eine Österreicherin ins Ausland, zählt ihr dortiges Arbeitseinkommen zum BIP Österreichs und nicht zum BNP."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Umgekehrt zum ausländischen Pendler nach Österreich. Die österreichische Person arbeitet draußen, das Einkommen fällt im Ausland an: nicht BIP Österreichs, weil die Grenze fehlt. Es zählt zum BNP, weil Inländer mit ihren Faktoren weltweit erzeugen. Der Abschnitt stellt beide Pendelrichtungen nebeneinander, damit Ort und Zugehörigkeit nicht vertauscht werden. Wer nur eine Richtung lernt, vertauscht leicht BIP und BNP. Die Spiegelung ist der Kern der Aufgabe, nicht eine Randnotiz zu Pendlern.\n\nDie Aussage ist wahr.",
+      "Größe dämpft die Lücke, Kleinheit kann sie aufreißen. Meist ähnlich in großen Volkswirtschaften, großer Unterschied in kleinen, Beispiel Luxemburg. Meist und kann: keine Naturkonstante, aber die im Buch genannte Tendenz. Wer kleine Länder für automatisch identisch in beiden Maßen hält, hat den Satz nicht gelesen.\n\nDie Aussage ist wahr.",
+      "Drei Namen, eine Größe in diesem Abschnitt. BNP oft Bruttonationaleinkommen, früher Bruttosozialprodukt. Wer BNE oder BSP liest, soll dasselbe Konzept erkennen, nicht drei rivalisierende Definitionen. Die Umbenennung ändert Inländer und weltweite Faktoren nicht.\n\nDie Aussage ist wahr.",
+      "Grenze zuerst, Pass danach. Innerhalb der Grenzen, Periode, Marktwert der Güter: das BIP. Ob Inländer oder Ausländer die Einkommen beziehen, ist für diese Buchung nachrangig. Genau deshalb landet die ausländische Pendlerin in Österreich im BIP. Das Spiegelbild zum BNP schärft beide Definitionen.\n\nDie Aussage ist wahr.",
+      "Zum BIP Österreichs und nicht zum BNP kehrt das Beispiel um. Arbeit im Ausland liegt außerhalb der österreichischen Grenzen, also nicht im BIP. Als Inländerin mit ihren Faktoren zählt sie ins BNP. Die Aussage vertauscht die beiden Zuordnungen.\n\nFormel: BIP gleich Ort Inland, BNP gleich Inländer weltweit. Auslandspendelnde Österreicherin: Ort Ausland, Zugehörigkeit inland. Daraus folgt BNP ja, BIP nein, nicht umgekehrt. Der ausländische Pendler nach Österreich ist das Gegenstück: Ort Inland, deshalb BIP, nicht BNP. Beide Fälle zusammen verhindern, Pass und Produktionsort in eins zu setzen. Der Satz ist die falsche Richtung desselben Beispiels.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

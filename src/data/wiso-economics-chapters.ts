@@ -1,8 +1,7 @@
 /**
- * WiSo Full Course economics banks (Wirtschaft verstehen chapters 1–4).
- * Cases remapped from BBE Fuhrmann banks; German text lives in the JSON banks.
- * Chapter 2 holds WiSo-native German cases for Wirtschaft verstehen §2.1–§2.6;
- * chapter 4 holds WiSo-native cases starting with §4.1 (Digitale Transformation).
+ * WISO Wirtschaft Full Course banks (Wirtschaft verstehen 2026, chapters 1–4).
+ * German true/false cases with teacher explanations for all book subsections.
+ * Chapter 4 §4.1 (Digitale Transformation) includes WiSo-native authored practice.
  */
 
 import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
@@ -23,10 +22,10 @@ type RawWisoEconomicsCase = {
 };
 
 const CHAPTER_LOADERS: Record<number, () => Promise<{ default: RawWisoEconomicsCase[] }>> = {
-  1: () => import("./wiso/economics-cases-ch1.json"),
-  2: () => import("./wiso/economics-cases-ch2.json"),
-  3: () => import("./wiso/economics-cases-ch3.json"),
-  4: () => import("./wiso/economics-cases-ch4.json"),
+  1: () => import("./wiso-economics-cases-ch1-subtopics.json"),
+  2: () => import("./wiso-economics-cases-ch2-subtopics.json"),
+  3: () => import("./wiso-economics-cases-ch3-subtopics.json"),
+  4: () => import("./wiso-economics-cases-ch4-subtopics.json"),
 };
 
 export const WISO_ECONOMICS_CHAPTER_NUMS = [1, 2, 3, 4] as const;
@@ -49,9 +48,9 @@ function toTask(raw: RawWisoEconomicsCase): EconomicsTask {
 
 function sortTasks(tasks: EconomicsTask[]): EconomicsTask[] {
   return [...tasks].sort((a, b) => {
-    const sub = a.subsection.localeCompare(b.subsection, "en", { numeric: true });
+    const sub = a.subsection.localeCompare(b.subsection, "de", { numeric: true });
     if (sub !== 0) return sub;
-    return a.sort_order - b.sort_order || a.case_id.localeCompare(b.case_id, "en", { numeric: true });
+    return a.sort_order - b.sort_order || a.case_id.localeCompare(b.case_id, "de", { numeric: true });
   });
 }
 

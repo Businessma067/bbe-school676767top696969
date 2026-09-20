@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Fatima's electric hatchback choice",
+    "statements": [
+      "Any price change anywhere is automatically macroeconomics regardless of scope analysed.",
+      "Because a national bonus programme exists, her purchase automatically becomes macroeconomics instead of micro.",
+      "A single café changing cake prices is automatically a macroeconomic event.",
+      "Nationwide statistics on total car sales after the bonus would be macroeconomic analysis.",
+      "Microeconomics and macroeconomics study identical questions with no meaningful scope difference."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.01",
+    "context": "Consider fatima compares buying an electric hatchback with a government bonus versus keeping her petrol car two more years. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Recession headline",
+    "statements": [
+      "Falling national GDP and economy-wide job losses are macroeconomic phenomena.",
+      "One closed shop laying off two staff is macroeconomics because layoffs appear in the headline.",
+      "Macroeconomics aims to explain and predict recessions and recovery patterns.",
+      "Economics as a whole studies decisions under limited resources at micro and macro levels.",
+      "Microeconomics cannot study unemployment because unemployment exists only at macro level."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.02",
+    "context": "Consider headlines report two consecutive quarters of falling national GDP and rising job losses economy-wide. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Freonia quarterly report",
+    "statements": [
+      "This whole-economy report is macroeconomic analysis rather than a single unit's decision.",
+      "Growth, unemployment, and interest rates are macroeconomic topics alongside inflation and price levels.",
+      "One bakery studying only its own sales and staffing would be microeconomics.",
+      "Economics as a science builds theories to explain and predict such nationwide phenomena.",
+      "Both branches fall under economics defined as decisions under limited resources."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.03",
+    "context": "Consider freonia's statistics office reports national growth, unemployment, and central-bank interest rates each quarter. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Household heating bill",
+    "statements": [
+      "Macroeconomics cannot explain recessions because only micro markets exist.",
+      "Energy is always macroeconomics because heating affects national consumption statistics.",
+      "If policymakers analysed total household energy use affecting national inflation, that would be macroeconomics.",
+      "Economics studies such household trade-offs under a limited monthly budget.",
+      "Micro and macro ask identical questions, so analysing the Weiss family equals analysing the nation."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.04",
+    "context": "Consider the Weiss family compares gas versus heat-pump suppliers for next winter's contract, ignoring national energy policy. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Export statistics release",
+    "statements": [
+      "Whole-country export and import totals are macroeconomic statistics.",
+      "One exporting winery's shipment schedule to Germany is macroeconomics because trade crosses a border.",
+      "Macro topics include growth, unemployment, inflation, and interest rates alongside aggregates like trade totals.",
+      "Economics tries to explain why national export performance changes over time.",
+      "Microeconomics studies individual firms' export decisions when those firms are the unit analysed."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.05",
+    "context": "Consider the trade ministry publishes total national exports and imports for the year. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Confusing scope with topic",
+    "statements": [
+      "Micro and macro study identical questions with no meaningful difference in scope.",
+      "Any discussion of wages is automatically macroeconomics because labour markets are national.",
+      "Economy-wide average wage growth published by a statistics office is macroeconomics.",
+      "A household choosing between two job offers compares micro-level alternatives under limited time.",
+      "Economics cannot explain individual choices, only nationwide aggregates."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.06",
+    "context": "Consider students debate whether 'prices' and 'jobs' are always macro or micro topics. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Teacher's scope quiz",
+    "statements": [
+      "Micro examines individual households, businesses, or markets; macro examines the whole economy.",
+      "A single consumer choosing organic milk is microeconomics.",
+      "National unemployment rate is macroeconomics.",
+      "Economics explains and predicts at both scopes using theories about limited resources.",
+      "If an example mentions government, it must always be classified as macroeconomics."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.07",
+    "context": "Consider a teacher lists examples and asks which are micro versus macro. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "BrewPeak espresso price hike",
+    "statements": [
+      "National unemployment figures belong to microeconomics because each worker is an individual.",
+      "Macroeconomics is simply the study of any price change, including one café's espresso price.",
+      "Microeconomics never studies how two firms interact in one product market.",
+      "Macroeconomics refuses to discuss inflation because inflation starts in single shops.",
+      "Economics remains a science building theories to explain and predict behaviour despite imperfect human prediction."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.08",
+    "context": "Consider inês raises BrewPeak espresso prices after imported bean costs rise, thinking only about her Porto shop. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Micro scope traps",
+    "statements": [
+      "A single farmer choosing between wheat and vegetable crops on limited irrigation water is microeconomics.",
+      "A single bakery setting its loaf price after flour costs rise is microeconomics.",
+      "A city bus company setting a new single-route fare is microeconomics when only that firm's pricing is analysed.",
+      "National GDP growth rate publication is macroeconomics because it summarises the entire economy.",
+      "Microeconomics can explain and predict behaviour of individual markets, households, and firms."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.09",
+    "context": "Analyze traps students face when classifying examples as microeconomic rather than macroeconomic. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Ride-hail surge pricing",
+    "statements": [
+      "Studying surge pricing for one platform in one district is microeconomics.",
+      "Surge pricing is macroeconomics because many riders are affected at once.",
+      "If analysts measured whether district fare spikes raised the city's overall consumer price index, that index move would be macroeconomics.",
+      "Economics can predict how riders and drivers respond to a local price spike.",
+      "Individual market pricing never falls within economics because only governments set prices."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.10",
+    "context": "Consider one ride-hail platform raises fares in one city district after a concert ends. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Competition authority case",
+    "statements": [
+      "Investigating pricing across an entire national mobile market can involve macro-style market-wide analysis.",
+      "One subscriber choosing a cheaper text plan for her own phone is microeconomics.",
+      "Economics builds theories to explain firm behaviour and market outcomes including competition issues.",
+      "Microeconomics studies individual firm pricing strategies when one carrier alone is analysed.",
+      "Economics excludes market competition because only government budgets matter."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.11",
+    "context": "Consider regulators investigate whether three mobile carriers colluded on text-message pricing nationally. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Bookstore pricing experiment",
+    "statements": [
+      "Analysing one branch's revenue after its own price change is microeconomics.",
+      "Central bank inflation targeting for an entire currency area is macroeconomics.",
+      "If the national statistics office later reported economy-wide consumer price inflation, that would be macroeconomics.",
+      "Micro focuses on individual households, businesses, and markets rather than the whole economy.",
+      "Economics tries to explain and predict outcomes such as how a branch responds to a price cut."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.12",
+    "context": "Consider a regional bookstore chain tests a 5% price cut in one city branch and tracks only that branch's weekly revenue. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Kelvinia rate rise",
+    "statements": [
+      "GDP growth and one household's grocery list are analysed with identical tools and the same scope.",
+      "Interest rates on national policy are a micro topic because each loan is signed by one borrower.",
+      "Microeconomics covers only diagrams; macroeconomics covers only newspaper opinion.",
+      "Because mortgages of specific families change, the central-bank move is automatically microeconomics.",
+      "Economics tries to build theories explaining why central banks raise rates and predict inflation effects."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.13",
+    "context": "Consider kelvinia's central bank raises the key interest rate nationwide to slow inflation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Household savings rate national data",
+    "statements": [
+      "Average national household savings rate is a macroeconomic aggregate.",
+      "One family increasing its monthly savings by fifty euros is macroeconomics because saving is national policy topic.",
+      "Macro includes growth, unemployment, inflation, interest rates, and such economy-wide averages.",
+      "Economics explains and predicts how aggregate saving responds to interest rate changes.",
+      "Microeconomics studies one family's saving choice when that family alone is the unit analysed."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.14",
+    "context": "Consider central bank publishes average household savings rate across the entire country. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Startup funding round",
+    "statements": [
+      "Choosing a smartphone brand is classified as macroeconomics once the price exceeds €500.",
+      "Because venture capital is a national phenomenon, any firm-level study becomes macroeconomics.",
+      "Summing all startup investment in the country to assess economic growth would be macroeconomics.",
+      "Microeconomics explains and predicts behaviour of individual businesses and markets.",
+      "Economics excludes entrepreneurial firms because they are too small for scientific study."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.15",
+    "context": "Consider ten startups in a city receive venture funding; an analyst studies only one robotics firm's hiring plan. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Budget airline seat sale",
+    "statements": [
+      "Route-level fare and booking analysis for one airline is microeconomics.",
+      "Any airfare change is macroeconomics because airlines operate internationally.",
+      "Economics predicts how passengers on that route respond to the fare cut under limited budgets.",
+      "If the statistics office later reported national transport inflation, that would be macroeconomics.",
+      "Household holiday booking under a fare sale is micro consumption choice."
+    ],
+    "subsection": "2.3",
+    "case_id": "CASE 2.3.16",
+    "context": "Consider a budget airline cuts base fares on one holiday route and tracks bookings for that route only. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  }
+]

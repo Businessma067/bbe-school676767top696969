@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Consumer sovereignty test",
+    "statements": [
+      "A free market bans courts, defence, and every other public function.",
+      "Consumer sovereignty means households never influence production because only planners decide output.",
+      "Firms respond to changing demand to earn revenue and profit in market systems.",
+      "In planned economies, identical consumer shifts always instantaneously change quotas without lag.",
+      "Prices and sales data help firms detect shifting preferences in market economies."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.01",
+    "context": "Households shift spending toward plant-based foods; grocers expand vegan ranges. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Eco-social renewable quota",
+    "statements": [
+      "Eco-social market can set ecological quotas while keeping wholesale power markets.",
+      "Environmental mandates operate alongside price-based competition among generators where allowed.",
+      "Eco-social economy bans all electricity trading because ecology requires central planning only.",
+      "Market prices still coordinate dispatch among plants within regulatory constraints.",
+      "Social and eco-social models retain market mechanisms as coordination base."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.02",
+    "context": "Renewable energy share mandated; power exchanges still trade wholesale electricity competitively. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Market versus planned systems",
+    "statements": [
+      "Eco-social market economy eliminates all market prices because ecology requires pure central planning.",
+      "Pure planning erases scarcity by ordering infinite output of every good.",
+      "Market and planned systems are identical because both use money in every transaction.",
+      "Transformation from planned toward market systems often introduces private ownership and competition.",
+      "Planned systems never face any resource constraints because the centre can print unlimited orders."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.03",
+    "context": "Evaluate core differences between market and planned economic systems: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Compare three market models",
+    "statements": [
+      "Free market economy emphasises private ownership, competition, and minimal intervention.",
+      "Social market economy adds social policy and welfare to preserve equity alongside markets.",
+      "Eco-social market economy adds environmental sustainability goals to the social market base.",
+      "Consumer sovereignty means household spending influences what firms produce through demand.",
+      "Transformation from planned systems moves toward market models, not deeper central planning."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.04",
+    "context": "Evaluate distinctions among free, social, and eco-social market economies: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Price liberalisation step",
+    "statements": [
+      "OECD members today run only central plans with no private pricing.",
+      "Market prices can signal shortages and surpluses to producers and consumers.",
+      "Liberalisation means all prices become zero because competition removes cost entirely.",
+      "Transition from planned systems often phases in price freedom gradually to limit shocks.",
+      "Consumer sovereignty can operate more fully when prices respond to demand and cost."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.05",
+    "context": "A transforming economy removes fixed bread prices, allowing shops to set levels. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Free market economy traits",
+    "statements": [
+      "Free market economy means zero government role including no courts, defence, or public goods.",
+      "Market and planned systems are identical because both use money in transactions.",
+      "Free market economies ban all government activity including courts and national defence.",
+      "Market and planned systems are the same whenever banknotes circulate.",
+      "Prices in free markets help coordinate supply and demand without central direction."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.06",
+    "context": "Analyze characteristics of a free market economy: Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "German social partners",
+    "statements": [
+      "Eco-social market systems abolish prices and reinstate pure planning for green goals.",
+      "Co-determination and welfare institutions aim at social peace without abolishing private firms.",
+      "Social market means unions set all output quotas replacing consumer demand entirely.",
+      "Market competition among firms can coexist with worker representation rules.",
+      "Eco-social market would add stronger environmental standards to this social-market base."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.07",
+    "context": "Employers' associations negotiate with unions under legal framework while firms compete in product markets. Evaluate social market:. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Universal basic services debate",
+    "statements": [
+      "Governments can provide selected services publicly while leaving most consumer goods to markets.",
+      "Social market economy tolerates mixed provision: public childcare plus competitive retail markets.",
+      "Exclusive state monopolies under planning may create shortages when prices are held below market-clearing levels.",
+      "Eco-social policies might subsidise green transport while competition continues among vehicle makers.",
+      "Consumer sovereignty mainly guides private competitive sectors like grocery retail."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.08",
+    "context": "Policy debate: expand public childcare while keeping private grocery markets. Evaluate mixed models:. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Social safety net in markets",
+    "statements": [
+      "All OECD countries today operate as pure planned economies with no market competition.",
+      "Social market economy rejects all market competition in favour of pure central planning.",
+      "Transformation to markets raises zero unemployment by creating ideal jobs overnight.",
+      "Regulation of labour markets can coexist with firm competition for customers.",
+      "Social and eco-social market models both retain market coordination as a base."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.09",
+    "context": "Unemployment insurance and retraining vouchers coexist with competitive product markets. Evaluate social market features:. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Consumer boycott effect",
+    "statements": [
+      "Consumer spending choices can punish firms that lose public trust, illustrating consumer sovereignty.",
+      "Boycotts prove planned economies operate in every retail sector because only planners can delist goods.",
+      "Profit motive leads retailers to respond when falling demand threatens revenue.",
+      "Market prices and sales volumes signal reputational damage faster than quota revisions would.",
+      "Social market economy still relies on consumer demand signals alongside labour regulation."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.10",
+    "context": "Shoppers boycott a brand over labour practices; sales collapse and retailer delists it. Evaluate market economy mechanisms:. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Transformation unemployment spike",
+    "statements": [
+      "Transformation from planned to market systems can cause transitional unemployment during restructuring.",
+      "Social market policies may include retraining and benefits to cushion adjustment costs.",
+      "Transition never produces unemployment because market reforms instantly create perfect jobs for all.",
+      "Long-run market competition may raise efficiency even if short-run dislocation occurs.",
+      "Eco-social market adds environmental restructuring goals to the same transition challenges."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.11",
+    "context": "State factory closures during market transition temporarily raise joblessness before new private firms grow. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Eco-tax on carbon",
+    "statements": [
+      "Planners always know every preference, so misallocation never occurs.",
+      "Eco-social market economy integrates ecological targets with market-based policy tools.",
+      "Carbon taxes eliminate all market prices because government sets every outcome directly.",
+      "Environmental goals in eco-social models can coexist with private firms competing on cost and quality.",
+      "Planned economies never use any environmental policy instruments at all."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.12",
+    "context": "Government imposes carbon price while keeping competitive electricity markets. Evaluate eco-social alignment:. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Social market economy",
+    "statements": [
+      "Planned systems never face scarcity because central authorities can order unlimited output of every good.",
+      "Central planning always matches consumer preferences perfectly with zero information problems.",
+      "Social market economy abolishes all private firms and replaces them with central planning.",
+      "Social market economies forbid any income support for the poor by definition.",
+      "Germany is an example of the social market economy approach."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.13",
+    "context": "Evaluate the social market economy model: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "State farm to cooperative",
+    "statements": [
+      "Free markets require the state to set every consumer price daily.",
+      "Market sales expose producers to consumer demand rather than fulfilment of plan quotas alone.",
+      "Transition always keeps 100% state ownership because privatisation never occurs in agriculture.",
+      "Profit incentive and price signals can guide crop choice after liberalisation.",
+      "Planned quota agriculture ignored local soil advantage because central targets overrode all information."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.14",
+    "context": "Former state collective farms become farmer cooperatives selling on open markets. Evaluate transformation:. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Planned steel quota surplus",
+    "statements": [
+      "Overplanned output creates surpluses when downstream demand is not coordinated through prices.",
+      "Market systems use price declines to signal excess supply and reduce production profitably.",
+      "Profit motive encourages firms to economise and respond to paying customers in competitive markets.",
+      "Transformation introduces market feedback to reduce persistent mismatch of intersectoral output.",
+      "Scarcity still applies under planning; producing too much steel wastes scarce inputs."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.15",
+    "context": "Central plan targets steel output above what machinery factories can absorb. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Eco-social housing standard",
+    "statements": [
+      "Planned systems give households unlimited product choice by design.",
+      "Environmental standards aim at sustainability without eliminating private builders competing for buyers.",
+      "Eco-social model requires abolishing all housing markets and assigning homes by central plan only.",
+      "Regulation sets minimum ecological performance; markets still compete above that floor.",
+      "Social market and eco-social market both preserve market coordination as a foundation."
+    ],
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.16",
+    "context": "Government sets energy-efficiency rules while builders compete on design and price. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  }
+]

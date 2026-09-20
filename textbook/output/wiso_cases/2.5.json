@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.01",
+    "title": "Wozu Wirtschaft dient",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zweck und zur Legitimation wirtschaftlichen Handelns:",
+    "statements": [
+      "Im Zentrum wirtschaftlicher Überlegungen steht die Frage, wozu Wirtschaft dient.",
+      "Wenn die Wirtschaft nicht dem Wohlbefinden der Menschen dient, verliert sie ihre Legitimation.",
+      "Wirtschaftliches Handeln hat laut Abschnitt stets das Ziel, den Nutzen als theoretische Modellgröße zu maximieren, nicht das menschliche Wohl zu fördern.",
+      "Wirtschaftliches Handeln hat stets das Ziel, das menschliche Wohl zu fördern.",
+      "Bedürfnis, Präferenz, Nutzen, Wohlbefinden, Lebenszufriedenheit und Glück meinen im Text dasselbe."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wozu die Wirtschaft da ist, steht vor jeder Kennzahl. Der Abschnitt rückt diese Zweckfrage in den Mittelpunkt und bindet sie an das Wohlbefinden der Menschen. Ohne diese Richtung bleibt Produktion ein Selbstzweck. Genau deshalb beginnt das Unterkapitel nicht mit einem Marktmodell, sondern mit der Legitimation. Wer nur Mengen und Preise zählt, überspringt die erste Setzung des Textes. Die Zweckfrage ist damit der Rahmen, in den später Schwellenwert, Doughnut und Suffizienz eingehängt werden: ohne Antwort darauf, wozu gewirtschaftet wird, bleiben diese Instrumente Technik ohne Maßstab.\n\nDie Aussage ist wahr.",
+      "Legitimation hängt hier nicht an Umsatz oder Wachstum an sich. Dient die Wirtschaft dem Wohlbefinden nicht, verliert sie nach dem Text ihre Rechtfertigung. Das ist eine harte Bedingung, kein schmückendes Leitbild. Wachstum, das Ungleichheit, Stress oder Umweltzerstörung verstärkt, kann denselben Maßstab verfehlen, selbst wenn der Nutzen steigt. Die Bindung an menschliches Wohlbefinden bleibt der Prüfstein.\n\nDie Aussage ist wahr.",
+      "Nutzenmaximierung als einziges Ziel zu setzen, vertauscht eine Modellgröße mit dem Zweck. Der Text sagt ausdrücklich: wirtschaftliches Handeln soll das menschliche Wohl fördern. Nutzen erklärt Entscheidungen und misst kurzfristige Zufriedenheit aus einer Präferenz, nicht Gerechtigkeit oder Nachhaltigkeit. Wer die Modellgröße zum Zweck erklärt, macht aus einem analytischen Werkzeug die Legitimation der ganzen Wirtschaft.\n\nDie Aussage ist falsch.",
+      "Menschliches Wohl als ständiges Ziel ist im Abschnitt keine Nebenbemerkung. Der Satz steht wörtlich als Richtung wirtschaftlichen Handelns. Wohl, Wohlbefinden und Lebenszufriedenheit liegen näher beieinander als Nutzen oder Glück im engen Sinn. Die Zielangabe begründet später, warum die Konzepte unterschieden werden müssen: nur so lässt sich prüfen, ob Systeme zum guten Leben beitragen.\n\nDie Aussage ist wahr.",
+      "Sechs Wörter für dieselbe Sache weist der Text zurück. Bedürfnisse, Präferenzen, Nutzen, Wohlbefinden, Lebenszufriedenheit und Glück erfassen verschiedene Ebenen, von objektiven Voraussetzungen bis zur subjektiven Wahrnehmung. Die Unterscheidung ist die Voraussetzung dafür, Entscheidung, Bedarf und tatsächliches Ergehen nicht in eins zu werfen. Eine Gleichsetzung würde genau diese Abstimmung zerstören.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.02",
+    "title": "Bedürfnisse als objektive Voraussetzungen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Bedürfnissen als Grundlage eines menschenwürdigen Lebens:",
+    "statements": [
+      "Bedürfnisse sind objektive Voraussetzungen menschlicher Existenz.",
+      "Ernährung, Gesundheit, Zugehörigkeit und Sicherheit nennt der Abschnitt als Beispiele für Bedürfnisse.",
+      "Bedürfnisse sind subjektive Bewertungen und kulturell geprägt.",
+      "Bedürfnisse markieren, was erfüllt sein muss, damit Menschen ein menschenwürdiges Leben führen können.",
+      "In der Übersichtstabelle stehen Bedürfnisse auf der subjektiven Ebene und gelten als sozial formbar."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Objektive Voraussetzungen meint hier keine Geschmacksfrage. Ernährung, Gesundheit, Zugehörigkeit und Sicherheit müssen gegeben sein, damit menschliche Existenz gelingt. Der Text stellt Bedürfnisse damit unter eine andere Logik als Wünsche. Wer Hunger als bloße Vorliebe behandelt, verfehlt genau diese Objektivität. Die Existenzbedingung bleibt unabhängig davon, ob jemand sie in einer Umfrage als Präferenz ankreuzt. Genau diese Objektivität trägt die ethische Pointe: was existenziell vorausgesetzt ist, darf nicht in der Wunschliste verschwinden, sonst fehlt später das soziale Minimum des Konsumkorridors.\n\nDie Aussage ist wahr.",
+      "Vier Beispiele öffnen den Bedürfnisbegriff bewusst: Stoffwechsel, körperliche Unversehrtheit, soziale Zugehörigkeit und Schutz. Der Abschnitt nennt Ernährung, Gesundheit, Zugehörigkeit und Sicherheit in einem Atemzug. Keines davon ist ein Luxuswunsch. Die Liste verhindert, Bedürfnisse auf Kalorien zu verkürzen oder Zugehörigkeit als weiches Extra abzutun.\n\nDie Aussage ist wahr.",
+      "Subjektiv und kulturell geprägt: das ist die Definition der Präferenzen, nicht der Bedürfnisse. Bedürfnisse bleiben objektive Voraussetzungen der Existenz. Die Verwechslung ist der erste typische Kurzschluss des Kapitels. Wer beides gleichsetzt, kann Werbung und Statusstreben nicht mehr als Verzerrung beschreiben, weil dann jedes Verlangen schon ein Bedürfnis wäre.\n\nNote: Präferenz und Bedürfnis nicht tauschen.\n\nDie Aussage ist falsch.",
+      "Ethische Relevanz heißt im Text: Bedürfnisse markieren den Mindestinhalt eines menschenwürdigen Lebens. Was erfüllt sein muss, ist damit eine Gerechtigkeitsfrage, nicht nur eine Nachfragekurve. Die Tabelle nennt dazu den Mindeststandard für Gerechtigkeit auf der objektiven Ebene. Ohne diese Markierung gäbe es keinen sozialen Boden im späteren Doughnut. Menschenwürde ist hier der Fluchtpunkt, nicht Maximierung erfüllter Vorlieben. Die Markierung sagt, woran Gerechtigkeit mindestens hängt, bevor Präferenzen und Nutzen überhaupt modelliert werden.\n\nDie Aussage ist wahr.",
+      "In der Übersicht stehen Bedürfnisse objektiv und als Mindeststandard für Gerechtigkeit. Subjektiv und sozial formbar ist die Zeile der Präferenzen. Wer die Ebenen tauscht, macht aus einem Existenzminimum eine formbare Vorliebe. Genau das würde den späteren Konsumkorridor seines sozialen Minimums berauben.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.03",
+    "title": "Präferenzen und ihre Verzerrungen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Präferenzen, Kultur und möglichen Verzerrungen:",
+    "statements": [
+      "Präferenzen sind subjektive Bewertungen und kulturell geprägt.",
+      "Präferenzen können Bedürfnisse widerspiegeln, aber auch durch Werbung, Statusstreben oder soziale Vergleiche verzerrt sein.",
+      "Präferenzen sind stets moralisch und ökologisch wünschenswert.",
+      "Menschen können auch umweltschädliche oder sozial destruktive Präferenzen haben.",
+      "Präferenzen sind in der Tabelle eine objektive Mindestgröße für Gerechtigkeit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Subjektive Bewertung und kulturelle Prägung trennen Präferenzen von Bedürfnissen. Was jemand vorzieht, hängt an Erziehung, Milieu und Vergleichen, nicht an einem festen Existenzkern. Der Text lässt damit Raum für Wandel: Vorlieben sind formbar. Genau deshalb taugt die Präferenz nicht als alleiniger Maßstab für nachhaltiges Wohlbefinden. Kulturelle Prägung erklärt, warum dieselben objektiven Bedürfnisse ganz unterschiedliche Warenkörbe erzeugen können, ohne dass der Bedürfniskern selbst zur Geschmackssache wird. Formbarkeit ist Stärke und Risiko: Vorlieben lassen sich in Richtung Suffizienz drehen, aber ebenso in Richtung Statuskonsum, der den Korridor nach oben sprengt.\n\nDie Aussage ist wahr.",
+      "Werbung, Statusstreben und soziale Vergleiche nennt der Abschnitt als Verzerrungsquellen. Eine Präferenz kann ein Bedürfnis treffen, muss es aber nicht. Der Satz hält beide Möglichkeiten offen und warnt vor der naiven Gleichung Wunsch gleich Bedarf. Wer jede angezeigte Vorliebe für authentisch hält, übersieht genau diese Verzerrungskette. Die Offenheit des Satzes ist die Lehre: Spiegelung ist möglich, Automatik ist es nicht. Wer die Verzerrungskanäle ignoriert, behandelt jede Werbewirkung als Offenbarung eines Bedarfs.\n\nDie Aussage ist wahr.",
+      "Immer wünschenswert wären Präferenzen nur, wenn Wünsche schon Moral und Ökologie verbürgten. Der Text sagt das Gegenteil: sie sind nicht immer moralisch oder ökologisch wünschenswert. Umweltschädliche und sozial destruktive Vorlieben sind ausdrücklich möglich. Die absolute Behauptung streicht genau diese Warnung und würde Konsumkorridore überflüssig machen.\n\nDie Aussage ist falsch.",
+      "Umweltschädlich oder sozial destruktiv: der Abschnitt lässt solche Präferenzen ausdrücklich zu. Damit fällt die Idee, beobachtetes Wollen sei schon das gute Leben. Nutzen kann solche Wünsche trotzdem abbilden, weil er wertneutral misst, was Individuen wollen. Die Trennung von Wollen und Würde ist hier der Punkt, nicht eine Belehrung über Geschmack.\n\nDie Aussage ist wahr.",
+      "Mindeststandard für Gerechtigkeit gehört in der Tabelle zu den Bedürfnissen auf der objektiven Ebene. Präferenzen stehen subjektiv, sozial formbar und nicht immer nachhaltig. Wer Präferenzen zur Gerechtigkeitsmindestgröße macht, verdreht die Zeilen und würde formbare Wünsche zum sozialen Boden erklären.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.04",
+    "title": "Nutzen, SWB und Lebenszufriedenheit",
+    "context": "Bewerten Sie die folgenden Aussagen zur Unterscheidung von Nutzen, subjektivem Wohlbefinden und Lebenszufriedenheit:",
+    "statements": [
+      "Nutzen ist die kurzfristige Zufriedenheit aus der Befriedigung einer Präferenz.",
+      "Subjektives Wohlbefinden und Lebenszufriedenheit beziehen sich auf das Gesamturteil über das eigene Leben.",
+      "Nutzen misst Gerechtigkeit und Nachhaltigkeit.",
+      "Wirtschaftliches Wachstum kann den Nutzen erhöhen, aber das Wohlbefinden dennoch mindern, wenn es soziale Ungleichheit, Stress oder Umweltzerstörung verstärkt.",
+      "Subjektives Wohlbefinden meint im Text bloß momentane Lust."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Kurzfristige Zufriedenheit nach erfüllter Vorliebe: so eng führt der Text den Nutzen. Es geht um die Befriedigung einer Präferenz, nicht um das Urteil über das ganze Leben. Als Modellgröße erklärt Nutzen Entscheidungen. Wer ihn mit Lebenszufriedenheit gleichsetzt, macht aus einem Moment einen Bestand.\n\nDie Aussage ist wahr.",
+      "Gesamturteil über das eigene Leben ist die Formulierung für subjektives Wohlbefinden und Lebenszufriedenheit. Der Blick gilt der nachhaltigen Qualität menschlicher Existenz. Momentane Lust reicht dafür nicht. Die Unterscheidung trägt die spätere These, Wachstum könne den Nutzen heben und das Wohlbefinden senken.\n\nDie Aussage ist wahr.",
+      "Gerechtigkeit und Nachhaltigkeit misst der Nutzen gerade nicht. Er ist wertneutral und zeigt, was Individuen wollen. Gerechtigkeit hängt an Bedürfnissen als Mindeststandard, Nachhaltigkeit an sozialen und ökologischen Grenzen. Wer Nutzen zur Moralwaage macht, überlädt die analytische Größe.\n\nNote: Nutzen bleibt wertneutral; er erklärt Wollen, nicht das gute Leben. Eine wertneutrale Skala kann umweltschädliches Wollen abbilden und trotzdem nichts über ein gutes Leben innerhalb planetarer Grenzen sagen. Genau deshalb braucht der Abschnitt SWB und Lebenszufriedenheit als andere Ebene.\n\nDie Aussage ist falsch.",
+      "Ungleichheit, Stress und Umweltzerstörung können das Wohlbefinden drücken, während der Nutzen noch steigt. Der Abschnitt nennt genau diese drei Verstärker als Gegenbewegung zum Wachstumsplus. Die Unterscheidung ist laut Text entscheidend: mehr erfüllte Präferenzen sind kein Beweis für bessere Existenzqualität. Ein steigendes BIP-Nutzen-Paar kann so ein schlechteres Gesamturteil über das Leben verdecken. Der Nutzen steigt, weil Präferenzen erfüllt werden; das Lebensurteil fällt, weil Vergleich, Belastung und Zerstörung das Gesamte verderben. Beide Bewegungen können gleichzeitig wahr sein, sobald man die Konzepte nicht in eins wirft.\n\nDie Aussage ist wahr.",
+      "Momentane Lust wäre Glück im engen Sinn oder der Nutzenmoment, nicht SWB. Subjektives Wohlbefinden und Lebenszufriedenheit zielen auf das Gesamturteil und die nachhaltige Qualität der Existenz. Der Text grenzt das ausdrücklich gegen bloße Lust ab. Wer SWB auf den kurzen Kick verkürzt, löscht genau diese Grenze.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.05",
+    "title": "Sechs Konzepte in der Übersicht",
+    "context": "Bewerten Sie die folgenden Aussagen zur tabellarischen Unterscheidung der Konzepte rund um Wohlbefinden:",
+    "statements": [
+      "Bedürfnisse beschreiben grundlegende Voraussetzungen für ein gutes Leben und stehen auf der objektiven Ebene.",
+      "Nutzen ist eine theoretische Modellgröße zur Erklärung von Entscheidungen und beschreibt Entscheidungsverhalten, nicht Wohlbefinden.",
+      "Glück ist im Schema die langfristige Einschätzung des eigenen Lebens.",
+      "Lebenszufriedenheit ist eine langfristige Einschätzung des eigenen Lebens und gilt empirisch als Maß für den Erfolg von Politik und Institutionen.",
+      "Subjektives Wohlbefinden steht in der Tabelle als analytische Modellgröße, die nur Entscheidungsverhalten beschreibt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Grundlegende Voraussetzungen und objektive Ebene: so steht die Bedürfniszeile. Die Bedeutung für Nachhaltigkeit ist der Mindeststandard für Gerechtigkeit. Die Tabelle hält damit fest, was später als soziale Basis des Doughnuts wiederkehrt. Eine bloß subjektive Lesart der Bedürfnisse würde diese Zeile kippen. Ohne diese Zeile gäbe es in der späteren Korridorlogik keinen Boden, nur eine Decke. Die Tabelle ordnet deshalb Gerechtigkeit den Bedürfnissen zu, nicht den formbaren Vorlieben.\n\nDie Aussage ist wahr.",
+      "Analytisch, nicht empirisch wohlfühlend: Nutzen erklärt, wie gewählt wird. Der Text sagt klar, dass diese Größe Entscheidungsverhalten beschreibt, nicht Wohlbefinden. Wer aus dem Nutzenindex schon Lebensqualität liest, überspringt SWB und Lebenszufriedenheit. Die Modellgröße bleibt Werkzeug, nicht Erfolgsmaß der Gesellschaft. Entscheidungserklärung und Lebensqualität liegen damit auf getrennten Etagen. Ein Modell, das Wahlen gut vorhersagt, hat damit noch nicht gezeigt, dass es den Menschen gut geht. Die Tabelle warnt ausdrücklich: Nutzen beschreibt Entscheidungsverhalten, nicht Wohlbefinden. Wer beides in einer Zahl sucht, hat die Zeile schon verlassen.\n\nDie Aussage ist wahr.",
+      "Langfristige Einschätzung des eigenen Lebens gehört zur Lebenszufriedenheit, nicht zum Glück. Glück steht als kurzfristige positive Emotion und als affektive Teilkomponente von Wohlbefinden. Die Verwechslung macht aus einem Gefühlsschub ein Politikmaß. Genau diese Zeilen trennt die Übersicht.\n\nDie Aussage ist falsch.",
+      "Politik und Institutionen am langfristigen Lebensurteil zu messen, ist die empirische Rolle der Lebenszufriedenheit. Der Text nennt sie Maß für Erfolg, nicht bloß Stimmung. Damit wird verständlich, warum Einkommen nur bis zu einem Schwellenwert korreliert: das Urteil hängt an mehr als am Kontostand.\n\nDie Aussage ist wahr.",
+      "Analytische Modellgröße für Entscheidungsverhalten ist der Nutzen. Subjektives Wohlbefinden steht empirisch als emotionale und kognitive Bewertung des Lebens und als Indikator gesellschaftlicher Qualität. Wer SWB in die Nutzenzeile schiebt, nimmt der Empirie ihren Indikator.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.06",
+    "title": "Warum die Unterscheidung nötig ist",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, weshalb Bedürfnis, Präferenz, Nutzen und Wohlbefinden getrennt werden müssen:",
+    "statements": [
+      "Die Unterscheidung der Begriffe hilft, wirtschaftliche, soziale und ökologische Ziele besser aufeinander abzustimmen.",
+      "Nur wenn die Konzepte unterschieden werden, kann die Wirtschaftswissenschaft zugleich erklären, wie Menschen entscheiden, was sie brauchen und wie gut es ihnen tatsächlich geht.",
+      "Nutzen ist wertneutral: er misst, was Individuen wollen, nicht Gerechtigkeit oder Nachhaltigkeit.",
+      "Wohlbefinden und Lebenszufriedenheit geben keine Hinweise darauf, ob gesellschaftliche Systeme zum guten Leben beitragen.",
+      "Präferenzen sind immer ein zuverlässiger Spiegel objektiver Bedürfnisse."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Zielarten in eine Linie zu bringen, gelingt nur, wenn die Wörter nicht durcheinanderlaufen. Wirtschaftlich erklären, sozial gerecht sichern, ökologisch begrenzen: der Text bindet die Begriffstrennung an genau diese Abstimmung. Ohne sie würde Nutzen schon als Nachhaltigkeit gelten oder Wunsch als Bedarf. Die Unterscheidung ist Instrument, nicht Wortklauberei. Abstimmung heißt konkret: den Nutzen nicht für Nachhaltigkeit ausgeben, Bedürfnisse nicht mit Werbung verwechseln und Lebenszufriedenheit nicht auf den kurzen Kick reduzieren.\n\nDie Aussage ist wahr.",
+      "Entscheiden, brauchen, ergehen: drei Fragen, drei Konzepte. Nutzen und Präferenzen tragen die Entscheidung, Bedürfnisse den Bedarf, Wohlbefinden und Lebenszufriedenheit das tatsächliche Ergehen. Der Abschnitt sagt, nur die Unterscheidung erlaube alle drei zugleich und die Ableitung nachhaltigen Wohlbefindens. Eine Vermischung würde eine der drei Fragen verschlucken. Nachhaltiges Wohlbefinden folgt erst aus diesem Dreiklang, nicht aus einer einzigen Kurve. Wer nur das Entscheidungsverhalten modelliert, erfährt weder den Bedarf noch das Ergehen. Ableiten, wie nachhaltiges Wohlbefinden erreicht wird, setzt voraus, dass diese drei Ebenen sichtbar bleiben.\n\nDie Aussage ist wahr.",
+      "Wertneutral heißt hier: der Nutzen zählt Wollen, nicht Sollen. Gerechtigkeit und Nachhaltigkeit liegen außerhalb seiner Skala. Deshalb kann ein hoher Nutzen mit umweltschädlichen Präferenzen einhergehen. Die Neutralität ist Stärke des Entscheidungsmodells und Grenze zugleich, sobald Politik das gute Leben innerhalb planetarer Grenzen sucht.\n\nDie Aussage ist wahr.",
+      "Hinweise auf das gute Leben sind gerade die Rolle von Wohlbefinden und Lebenszufriedenheit. Der Text stellt sie als Prüfgröße gesellschaftlicher Systeme. Die Verneinung streicht diesen Indikator. Dann bliebe nur noch der Nutzen, und der misst Wollen, nicht ob Systeme tragen.\n\nDie Aussage ist falsch.",
+      "Zuverlässiger Spiegel wäre die Ausnahme, nicht die Regel. Präferenzen können Bedürfnisse widerspiegeln, sie können aber verzerrt sein. Werbung, Status und Vergleiche stehen ausdrücklich im Text. Immer zuverlässig zu behaupten, hebt die Verzerrung auf und macht aus jedem Wunsch einen Bedarf.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.07",
+    "title": "Einkommen und Lebenszufriedenheit",
+    "context": "Bewerten Sie die folgenden Aussagen zum empirischen Zusammenhang zwischen Einkommen und Lebenszufriedenheit:",
+    "statements": [
+      "Empirische Erkenntnisse belegen, dass Einkommen nur bis zu einem gewissen Schwellenwert mit Lebenszufriedenheit korreliert.",
+      "Gesundheit, soziale Beziehungen, Vertrauen und Beteiligung sind laut Abschnitt wichtiger als ein unbegrenzter Einkommenszusammenhang.",
+      "Oberhalb jeder Einkommenshöhe steigt die Lebenszufriedenheit im Text proportional und ohne Schwelle weiter.",
+      "Der World Happiness Report 2025 wird neben Arbeiten von Ferrer-i-Carbonell als Beleglinie genannt.",
+      "Einkommen ist im Abschnitt der einzige empirische Bestimmungsfaktor der Lebenszufriedenheit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nur bis zu einem Schwellenwert: so begrenzt der Text die Einkommenskorrelation. Darunter kann mehr Einkommen mit höherer Lebenszufriedenheit einhergehen, darüber verliert der Zusammenhang an Kraft. Die Pointe ist qualitativ, nicht eine auswendig zu lernende Eurogrenze. Wer Einkommen als unbegrenzten Glücksmotor liest, widerspricht diesem Schwellenbefund. Unter der Schwelle kann Einkommen existenzielle Lücken schließen und das Lebensurteil heben; darüber gewinnen Gesundheit, Bindung und Vertrauen die größere Rolle. Die Korrelation endet nicht bei null, sie verliert den Vorrang.\n\nDie Aussage ist wahr.",
+      "Gesundheit, Beziehungen, Vertrauen und Beteiligung stehen als die wichtigeren Größen. Der Abschnitt stellt sie gegen die Idee, Lebenszufriedenheit folge vor allem dem Einkommen. Beteiligung und Vertrauen gehören damit in dieselbe Liga wie Gesundheit, nicht in eine weiche Restkategorie. Die Rangfolge trägt später die Länderbefunde zu institutioneller Qualität. Beteiligung und Vertrauen sind keine weichen Extra-Punkte neben dem Lohn, sondern die Größen, mit denen der World Happiness Report später glückliche Länder beschreibt.\n\nDie Aussage ist wahr.",
+      "Ohne Schwelle weiterzusteigen, ist genau die Lesart, die der empirische Befund kassiert. Korrelation nur bis zu einem gewissen Schwellenwert heißt: irgendwann trägt mehr Einkommen die Lebenszufriedenheit nicht mehr im selben Maß. Eine proportionale Unendlichkeit würde Gesundheit, Beziehungen und Vertrauen zur Seite schieben. Der Text tut das Gegenteil.\n\nDie Aussage ist falsch.",
+      "Ferrer-i-Carbonell und der World Happiness Report 2025 stehen als Beispielbelege in einer Klammer. Der Abschnitt stützt den Schwellenbefund und die folgenden Determinanten auf diese Linie, nicht auf eine einzelne Anekdote. Die Namen markieren Empirie, sie ersetzen aber nicht die inhaltliche Aussage über Schwelle und Rangfolge.\n\nDie Aussage ist wahr.",
+      "Einziger Faktor Einkommen würde die Liste streichen. Gesundheit, soziale Beziehungen, Vertrauen, Beteiligung, relative Vergleiche, Arbeitslosigkeit, Unsicherheit und Bildung kommen ausdrücklich vor. Die Verengung auf Geld allein widerspricht der Aufzählung und dem Satz, Einkommen korreliere nur bis zu einem Schwellenwert.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.08",
+    "title": "Vergleiche, Arbeitslosigkeit und Bildung",
+    "context": "Bewerten Sie die folgenden Aussagen zu relativen Vergleichen, Unsicherheit und Bildung als Determinanten des Wohlbefindens:",
+    "statements": [
+      "Menschen bewerten ihr Glück im Verhältnis zu anderen.",
+      "Arbeitslosigkeit und Unsicherheit mindern das Wohlbefinden stärker als Einkommensverluste.",
+      "Bildung erhöht Lebenszufriedenheit über Selbstwirksamkeit und Beschäftigungsaussichten.",
+      "Relative Vergleiche spielen laut Abschnitt keine Rolle für das Glücksurteil.",
+      "Einkommensverluste mindern das Wohlbefinden stets stärker als Arbeitslosigkeit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Im Verhältnis zu anderen: Glück ist hier relativ, nicht nur absolut. Der Text nennt relative Vergleiche als eigenen Punkt neben dem Einkommensschwellenwert. Wer nur das eigene Konto sieht, unterschätzt Nachbarn, Kolleginnen und Status. Genau diese Relativität erklärt, warum Wachstum den Nutzen heben und das Wohlbefinden trotzdem drücken kann, sobald Ungleichheit steigt. Status und Nachbarschaftskonto können so ein Einkommensplus entwerten, sobald andere schneller steigen. Relativität macht Ungleichheit zu einem direkten Kanal ins Glücksurteil, nicht nur zu einem Verteilungsanhang.\n\nDie Aussage ist wahr.",
+      "Stärker als Einkommensverluste: Arbeitslosigkeit und Unsicherheit greifen tiefer als ein bloßes Minus auf dem Konto. Der Abschnitt stellt diese Rangfolge ausdrücklich her. Verlust des Arbeitsplatzes und fehlende Sicherheit treffen Selbstwirksamkeit, Zugehörigkeit und Zukunftserwartung. Ein reiner Einkommensersatz ohne Sicherheit würde diese Differenz nicht aufheben. Wer nur das ausgefallene Gehalt ersetzt, behandelt Arbeitslosigkeit wie einen reinen Einkommensschock und unterschätzt Verlust von Rolle, Sicherheit und Zukunft, den der Abschnitt schwerer gewichtet.\n\nDie Aussage ist wahr.",
+      "Selbstwirksamkeit und Beschäftigungsaussichten sind die beiden Kanäle, über die Bildung die Lebenszufriedenheit hebt. Der Text nennt nicht einen magischen Bildungstitel, sondern diese Wirkwege. Wer Bildung nur als Einkommensmaschine liest, lässt die Selbstwirksamkeit weg. Beide Pfade gehören zur empirischen Liste, nicht nur einer.\n\nDie Aussage ist wahr.",
+      "Keine Rolle für Vergleiche zu behaupten, streicht einen der vier empirischen Punkte. Menschen bewerten ihr Glück im Verhältnis zu anderen. Die Verneinung würde den Status- und Vergleichskanal schließen, den der Text gerade öffnet. Relative Lage bleibt damit Teil der Glücksbewertung.\n\nDie Aussage ist falsch.",
+      "Stets stärker durch Einkommensverluste als durch Arbeitslosigkeit: das kehrt die Rangfolge um. Der Text sagt, Arbeitslosigkeit und Unsicherheit mindern das Wohlbefinden stärker als Einkommensverluste. Die Umkehrung macht aus dem tieferen Einschnitt einen kleineren. Genau das steht nicht im Abschnitt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.09",
+    "title": "Glückliche Länder und Jugendliche",
+    "context": "Bewerten Sie die folgenden Aussagen zum World Happiness Report und zur Lebenszufriedenheit Jugendlicher:",
+    "statements": [
+      "Der World Happiness Report 2025 zeigt, dass Länder mit hohen Werten für soziales Vertrauen, institutionelle Qualität und Umweltbewusstsein zugleich am glücklichsten sind.",
+      "Skandinavien, die Niederlande und Neuseeland nennt der Abschnitt als Beispiele solcher Länder.",
+      "Für Jugendliche ist Lebenszufriedenheit stark von Sinn, Sicherheit und sozialer Einbindung abhängig.",
+      "Der Report führt das Glück dieser Länder allein auf ein besonders hohes Pro-Kopf-Einkommen zurück.",
+      "Für Jugendliche hängt Lebenszufriedenheit laut Text vor allem am materiellen Konsum."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Soziales Vertrauen, institutionelle Qualität und Umweltbewusstsein stehen als das gemeinsame Muster der glücklichsten Länder. Der World Happiness Report 2025 liefert im Text genau diese Dreierbindung, nicht eine reine Einkommensrangliste. Wer eine der drei Größen streicht, zerlegt das Muster. Glück und Nachhaltigkeit rücken damit empirisch zusammen, bevor der Doughnut formal eingeführt wird. Institutionen und Umweltbewusstsein sitzen damit in derselben Empirie wie Vertrauen, nicht in einem getrennten Moralanhang. Glücksränge ohne diese drei Größen wären im Satz des Reports nicht gedeckt.\n\nDie Aussage ist wahr.",
+      "Skandinavien, Niederlande, Neuseeland: drei Regionenbeispiele für dasselbe Bündel aus Vertrauen, Institutionen und Umweltbewusstsein. Der Abschnitt nennt sie als die glücklichsten in diesem Sinn. Die Liste ist Illustration, nicht eine geschlossene Weltmeisterschaft. Sie verhindert die Fehlannahme, Glück sei nur eine Frage tropischer Freizeit oder reiner Kaufkraft. Die Beispiele liegen bewusst in sehr verschiedenen Weltgegenden, gebunden durch dasselbe Muster, nicht durch eine gemeinsame Währung oder ein gemeinsames Klima.\n\nDie Aussage ist wahr.",
+      "Sinn, Sicherheit und soziale Einbindung tragen die Jugenddiagnose. Lebenszufriedenheit hängt in diesem Alter laut Text stark an diesen drei Größen. Die Formulierung trifft die spätere Beobachtung, Jugendliche verbänden Glück mit Sinnhaftigkeit und Mitgestaltung. Eine reine Konsumerklärung würde diese Abhängigkeit verfehlen.\n\nDie Aussage ist wahr.",
+      "Allein Pro-Kopf-Einkommen als Ursache zu setzen, widerspricht der genannten Dreierbindung. Vertrauen, Institutionen und Umweltbewusstsein sind die im Report-Satz hervorgehobenen Werte. Einkommen bleibt im Kapitel an eine Schwelle gebunden und ist nicht der Alleinerklärer. Die Verengung auf Kaufkraft allein kippt den Befund.\n\nDie Aussage ist falsch.",
+      "Vor allem materieller Konsum für Jugendliche: der Text sagt das Gegenteil der späteren Trendpassage und schon hier Sinn, Sicherheit, Einbindung. Materielle Ausstattung ist nicht der Leitfaktor dieser Altersgruppe in der Darstellung. Wer Konsum zum Hauptanker macht, bereitet den falschen Kontrast zur Gallup-Passage vor.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.10",
+    "title": "Jugend, Klimaangst und Sinn",
+    "context": "Bewerten Sie die folgenden Aussagen zu Sorgen junger Menschen und zur Verknüpfung von Glück mit Nachhaltigkeit:",
+    "statements": [
+      "In Europa äußern laut Gallup-Daten 2023 fast 60 Prozent der 18- bis 29-Jährigen Sorgen über die Zukunft von Klima und Gesellschaft.",
+      "Jugendliche verbinden Glück zunehmend mit Sinnhaftigkeit, Naturerfahrung und Mitgestaltung statt mit materiellem Konsum.",
+      "Diese empirischen Trends zeigen, dass Wohlbefinden im 21. Jahrhundert untrennbar mit Nachhaltigkeit verknüpft ist.",
+      "Jugendliche verbinden Glück laut Abschnitt zunehmend vor allem mit materiellem Konsum.",
+      "Die genannten Gallup-Daten 2023 beschreiben alle Altersgruppen weltweit mit derselben Prozentangabe."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Europa, 18 bis 29 Jahre, fast 60 Prozent, Klima und Gesellschaft: vier Begrenzungen der Gallup-Angabe 2023. Der Text setzt die Zahl nicht als Weltgesetz aller Alterskohorten. Die Sorge um Zukunft ist der qualitative Punkt, die Größenordnung unterstreicht ihn. Wer die Kohorte oder den Raum streicht, macht aus einem gezielten Befund eine Allaussage.\n\nDie Aussage ist wahr.",
+      "Sinnhaftigkeit, Naturerfahrung und Mitgestaltung treten an die Stelle materiellen Konsums als Glücksanker. Der Abschnitt spricht von einem steigenden Bewusstsein für Nachhaltigkeit in genau dieser Verschiebung. Glück wird damit an Beteiligung und Natur gebunden, nicht an immer mehr Güter. Das trifft die frühere Jugendformel aus Sinn, Sicherheit und Einbindung. Mitgestaltung statt Besitzstand verschiebt den Glücksanker in Richtung der sozialen Einbindung, die der Text schon für Jugendliche als Determinante genannt hat.\n\nDie Aussage ist wahr.",
+      "Untrennbar mit Nachhaltigkeit: so zieht der Text die Konsequenz aus Sorge und Sinnverschiebung. Wohlbefinden im 21. Jahrhundert bleibt in dieser Lesart nicht neben Klimaschutz stehen. Die Formulierung bereitet Raworths Doughnut vor, der soziale Basis und ökologische Decke verbindet. Wer Wohlbefinden und Nachhaltigkeit trennt, widerspricht diesem Schlusssatz der Jugendpassage. Die Untrennbarkeit ist die Brücke von der Jugendsoziologie zum Doughnut: wer Sinn und Klima trennt, kann das 21. Jahrhundert in diesem Kapitel nicht mehr beschreiben. Kate Raworths zwei Ringe werden so vorbereitet, nicht als Ornament nachgeschoben.\n\nDie Aussage ist wahr.",
+      "Zunehmend vor allem materieller Konsum wäre die Gegenbewegung zu dem, was der Text beschreibt. Glück wandert zu Sinn, Natur und Mitgestaltung. Die Behauptung kippt den Trend und würde die Untrennbarkeit von Wohlbefinden und Nachhaltigkeit untergraben. Genau das steht nicht in der Gallup-Passage.\n\nDie Aussage ist falsch.",
+      "Alle Altersgruppen weltweit mit derselben Prozentzahl: das sprengt den Satz. Genannt sind Europa und die 18- bis 29-Jährigen. Eine globale Allaltersstatistik liefert der Abschnitt hier nicht. Die Ausweitung macht aus einem kohortenspezifischen Befund eine Scheingeneralisierung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.11",
+    "title": "Doughnut: soziale Basis und ökologische Decke",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kate Raworths Doughnut-Modell:",
+    "statements": [
+      "Kate Raworths Modell des Doughnuts verbindet eine soziale Basis, also Grundbedürfnisse für alle Menschen, mit einer ökologischen Decke der planetaren Belastungsgrenzen.",
+      "Der grüne Bereich zwischen diesen Ringen ist der sichere und gerechte Handlungsraum.",
+      "Das Modell verbindet ausschließlich ökologische Zielgrößen und kennt keine soziale Basis.",
+      "Das Ziel nachhaltiger Wirtschaft ist ein gutes Leben für alle innerhalb der planetaren Grenzen.",
+      "Die ökologische Decke bezeichnet im Modell das soziale Fundament ärmerer Länder."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Ringe, zwei Zielgrößen: unten die soziale Basis der Grundbedürfnisse für alle, oben die ökologische Decke der planetaren Belastungsgrenzen. Raworth verbindet beides, nicht nur eines. Der Doughnut wird so zum Bild für nachhaltiges Wohlbefinden, das der Abschnitt nach den Glücksbefunden einführt. Wer einen Ring weglässt, zerstört das Modell.\n\nDie Aussage ist wahr.",
+      "Zwischen den Ringen liegt der grüne Bereich als sicherer und gerechter Handlungsraum. Sicher bezieht sich auf die ökologische Decke, gerecht auf die soziale Basis. Wirtschaften soll in diesen Zwischenraum, nicht darunter ins soziale Defizit und nicht darüber in die Überschreitung. Abbildung 17 zeigt genau diese Spannung aus Defiziten und Überschreibungen. Unter dem inneren Ring beginnt das soziale Defizit, über dem äußeren die ökologische Überschreibung. Nur der Zwischenraum gilt als zugleich sicher und gerecht, nicht schon jede grüne Rhetorik.\n\nDie Aussage ist wahr.",
+      "Ausschließlich ökologisch ohne soziale Basis: das wäre ein einzelner Ring, kein Doughnut. Der Text nennt beide Zielgrößen ausdrücklich. Grundbedürfnisse für alle sind die innere Grenze, nicht ein Zusatz. Die Verneinung der sozialen Basis widerspricht der ersten Kugelpunktzeile des Modells.\n\nDie Aussage ist falsch.",
+      "Gutes Leben für alle innerhalb der planetaren Grenzen ist die Zielformel nach dem Doughnut Monitor. Sie übersetzt soziale Basis plus ökologische Decke in eine wirtschaftspolitische Richtung. Alle und innerhalb: beide Wörter zählen. Ein gutes Leben für wenige über den Grenzen oder für alle unter dem sozialen Boden verfehlt die Formel.\n\nDie Aussage ist wahr.",
+      "Soziales Fundament ärmerer Länder mit der ökologischen Decke zu verwechseln, tauscht Innen- und Außenring. Die Decke sind planetare Belastungsgrenzen. Das soziale Fundament unterschreiten laut Monitor eher ärmere Länder, während reiche die ökologischen Grenzen überschreiten. Der Tausch verdreht genau diese Empirie.\n\nNote: Innenring soziales Minimum, Außenring ökologische Decke. Ärmere Länder erscheinen im Monitor vor allem innen als Defizit, reiche außen als Überschuss. Wer die Decke zum Fundament macht, kann diese Asymmetrie nicht mehr lesen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.12",
+    "title": "Doughnut Monitor 2025",
+    "context": "Bewerten Sie die folgenden Aussagen zum empirischen Befund des Doughnut Monitor 2025:",
+    "statements": [
+      "Kein Land erfüllt alle sozialen Mindeststandards innerhalb der ökologischen Grenzen.",
+      "Reiche Länder überschreiten die ökologischen Grenzen.",
+      "Ärmere Länder unterschreiten das soziale Fundament.",
+      "Mehrere Länder erfüllen bereits alle sozialen Mindeststandards, ohne ökologische Grenzen zu überschreiten.",
+      "Reiche Länder unterschreiten typischerweise das soziale Fundament, während ärmere Länder die ökologische Decke reißen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Kein Land im grünen Zwischenraum vollständig: der Monitor 2025 zieht diese scharfe Bilanz. Alle sozialen Mindeststandards und zugleich innerhalb der ökologischen Grenzen schafft demnach niemand. Der Befund begründet, warum das Ziel noch Aufgabe ist, nicht schon erreichte Lage. Wer einzelne Vorzeigeländer als volle Lösung liest, überzieht den Text. Die leere Zelle im sicheren und gerechten Raum ist der empirische Skandal des Monitors, nicht eine vorübergehende Lücke einzelner Indikatoren. Politik bekommt daraus den Auftrag, beides zugleich zu schließen.\n\nDie Aussage ist wahr.",
+      "Ökologische Grenzen reißen in dieser Empirie die reichen Länder. Der Überschuss liegt außen am Doughnut, bei der Decke. Soziales Fundament kann dort vergleichsweise besser stehen, ökologisch nicht. Die Asymmetrie ist der Kern: Wohlstand in der bisherigen Form überzieht den Planeten.\n\nDie Aussage ist wahr.",
+      "Unter dem sozialen Fundament liegen in diesem Bild die ärmeren Länder. Grundbedürfnisse für alle sind dort nicht erfüllt. Der Innenring ist das Defizit, nicht die ökologische Decke. Zusammen mit dem Überschuss der Reichen ergibt sich die globale Schieflage, die kein Land in den sicheren und gerechten Raum bringt.\n\nDie Aussage ist wahr.",
+      "Bereits alle sozialen Mindeststandards innerhalb der Grenzen: das wäre die Negation von „kein Land“. Der Monitor lässt diese erfüllte Zelle leer. Einzelne Fortschritte ändert der Text nicht in eine vollständige Doppelerfüllung. Die Behauptung widerspricht dem ersten Monitorpunkt direkt.\n\nDie Aussage ist falsch.",
+      "Typischerweise Fundament bei Reichen unterschritten und Decke bei Armen gerissen: das ist die vertauschte Landkarte. Der Text ordnet ökologische Überschreitung den reichen, soziales Unterschreiten den ärmeren Ländern zu. Die Umkehrung würde aus dem Doughnut-Befund das Gegenteil machen und das Ziel eines guten Lebens für alle innerhalb der Grenzen falsch adressieren. Adressaten tauschen sich mit den Ringen: Reiche müssen die Decke einhalten, Ärmere das Fundament erreichen, und niemand hat beides schon vollständig.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.13",
+    "title": "Konsumkorridor zwischen Minimum und Maximum",
+    "context": "Bewerten Sie die folgenden Aussagen zum Konsumkorridor:",
+    "statements": [
+      "Ein Konsumkorridor legt den Bereich zwischen einem sozialen Minimum und einem ökologischen Maximum fest.",
+      "Unterernährung liegt unter dem sozialen Minimum.",
+      "Übermäßiger Fleisch- und Energieverbrauch liegt über dem ökologischen Maximum.",
+      "Der Konsumkorridor kennt nur eine Obergrenze und kein soziales Minimum.",
+      "Unterernährung liegt im Beispiel über dem ökologischen Maximum."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Was notwendig ist, um gut zu leben, und was der Planet dauerhaft verkraftet: dazwischen liegt der Korridor. Soziales Minimum und ökologisches Maximum spannen den Bereich. Der Begriff übersetzt den Doughnut in alltäglichen Verbrauch. Wer nur das Maximum nennt, lässt Menschen unter dem Boden zurück; wer nur das Minimum nennt, ignoriert die Decke. Der Korridor ist damit Alltagsübersetzung des Doughnuts: unten menschenwürdiges Leben, oben planetare Tragfähigkeit, dazwischen erlaubter Verbrauch statt beliebigem Mehr. Beliebiges Mehr wäre kein Korridor, sondern die alte Kopplung von Verbrauch und Wunsch ohne Boden und ohne Decke.\n\nDie Aussage ist wahr.",
+      "Unterernährung als Lage unter dem Minimum macht den sozialen Boden konkret. Gut leben können setzt Ernährung voraus, die der Bedürfniskatalog schon am Anfang nannte. Das Beispiel zeigt Unterschreiten, nicht Überschreiten. Hunger ist damit Korridorverletzung nach unten, kein ökologisches Zuviel. Ernährung als Bedürfnis vom Kapitelanfang kehrt hier als Untergrenze wieder. Wer Hunger als Geschmacksfrage behandelt, hat den Korridor schon nach unten verlassen.\n\nDie Aussage ist wahr.",
+      "Fleisch und Energie im Übermaß stoßen nach oben gegen das, was der Planet dauerhaft verkraftet. Der Text setzt beide als Beispiel über dem Maximum. Der Korridor hat damit eine sichtbare Decke im Alltag, nicht nur in abstrakten Erdsystemgrenzen. Maßhalten wird zur Bedingung, nicht zur Geschmacksfrage.\n\nDie Aussage ist wahr.",
+      "Nur Obergrenze ohne soziales Minimum wäre ein halber Korridor. Der Abschnitt definiert den Bereich zwischen beiden Marken. Unterernährung als Gegenbeispiel zum Zuviel wäre dann unverständlich. Die Verengung auf das Maximum allein streicht die Gerechtigkeitsseite, die Raworths innere Basis entspricht.\n\nDie Aussage ist falsch.",
+      "Unterernährung über das ökologische Maximum zu legen, verdreht das Beispielpaar. Unten Hunger, oben übermäßiger Fleisch- und Energieverbrauch: so steht es. Wer Hunger zur planetaren Überschreitung erklärt, verwechselt Defizit und Überzug und macht aus einem sozialen Unterschreiten eine ökologische Deckenverletzung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.14",
+    "title": "Produktionskorridor und Bedürfnisse",
+    "context": "Bewerten Sie die folgenden Aussagen zum Produktionskorridor:",
+    "statements": [
+      "Ein Produktionskorridor beschreibt, welche Güter und Dienstleistungen in welcher Form produziert werden sollten, um Bedürfnisse zu befriedigen, ohne ökologische Grenzen zu überschreiten.",
+      "Diese Konzepte knüpfen direkt an subjektives Wohlbefinden an.",
+      "Der Produktionskorridor legt ausschließlich Marktpreise fest und sagt nichts über Güterarten oder Produktionsformen.",
+      "Ziel der beschriebenen Produktion ist die Befriedigung von Bedürfnissen innerhalb ökologischer Grenzen.",
+      "Der Produktionskorridor ersetzt Bedürfnisse durch reinen Nutzen als Maßstab dessen, was hergestellt werden soll."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Welche Güter, welche Dienstleistungen, welche Form: drei Bestimmungsstücke des Produktionskorridors. Produziert werden soll, was Bedürfnisse erfüllt, und zwar so, dass ökologische Grenzen halten. Der Satz verbindet die Bedürfnisethik vom Kapitelanfang mit der planetaren Decke. Eine beliebige Güterliste nach Zahlungsbereitschaft allein wäre etwas anderes als dieser Korridor. Form der Produktion meint Technik, Intensität und Mix, nicht nur die Stückzahl. Bedürfnisgerecht und grenztreu zugleich zu fertigen, schließt Güter aus, die nur Präferenzen bedienen und die Decke reißen.\n\nDie Aussage ist wahr.",
+      "Direkt an subjektives Wohlbefinden knüpfen Konsum- und Produktionskorridor laut Text an. Die Brücke sind Studien zu abnehmenden Zufriedenheitszuwächsen bei übermäßigem Konsum und zu Suffizienz. Produktion innerhalb der Grenzen zielt damit nicht nur auf Tonnen und Emissionen, sondern auf stabileres Wohlbefinden. Die Konzepte bleiben anthropozentrisch im Sinn des Kapiteltitels, nicht bloß technisch. Stabileres Wohlbefinden durch Suffizienz ist der empirische Halt dieser Bindung: die Korridore sind keine ökologische Strafzone, sondern der Bereich, in dem Zufriedenheit nicht mit jedem Mehr weiter bröckelt.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Preise zu setzen, wäre Marktmechanik, nicht Korridor. Der Abschnitt fragt nach Gütern, Dienstleistungen und Form der Herstellung. Preise kommen in dieser Definition nicht vor. Wer den Korridor zur Preisbehörde macht, streicht Bedürfnisbefriedigung und ökologische Grenze als Inhalt.\n\nDie Aussage ist falsch.",
+      "Bedürfnisse befriedigen ohne Grenzübertritt: das ist die Zweckangabe in einem Satz. Sie hält fest, dass nicht jede Präferenz Produktionsrecht hat, sondern der objektive Bedarf innerhalb der Decke. Die Formel verbindet Mindeststandard und planetare Grenze operational. Genau so wird nachhaltiges Wirtschaften vom Glücksreport zum Mengengerüst.\n\nDie Aussage ist wahr.",
+      "Reiner Nutzen als Produktionsmaßstab würde wertneutrales Wollen an die Stelle von Bedürfnissen setzen. Der Text spricht von Bedürfnisbefriedigung, nicht von Nutzenmaximierung der Herstellung. Umweltschädliche Präferenzen dürften dann den Korridor sprengen. Die Ersetzung kippt die ethische Pointe des Kapitels.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.15",
+    "title": "Suffizienz und abnehmende Zuwächse",
+    "context": "Bewerten Sie die folgenden Aussagen zu übermäßigem Konsum, Suffizienz und Wohlbefinden:",
+    "statements": [
+      "Studien zeigen, dass übermäßiger Konsum abnehmende Zufriedenheitszuwächse bringt.",
+      "Suffizienz, verstanden als genug, aber nicht zu viel, erzeugt langfristig stabileres Wohlbefinden.",
+      "Suffizienz bedeutet im Abschnitt, so viel wie möglich zu konsumieren, solange der Nutzen steigt.",
+      "Konsum- und Produktionskorridore werden ausdrücklich an subjektives Wohlbefinden gebunden.",
+      "Unbegrenzter Konsum steigert das Wohlbefinden im Text linear und ohne abnehmende Zuwächse."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Abnehmende Zuwächse heißen: die nächste Gütereinheit hebt die Zufriedenheit weniger als die vorherige, sobald Konsum übermäßig wird. Der Text stützt das auf Studien und bindet es an die Korridoridee. Mehr ist irgendwann nicht spürbar besser, während ökologische Kosten weiterlaufen. Genau deshalb liegt übermäßiger Fleisch- und Energieverbrauch über dem Maximum, nicht in einem Glücksoptimum. Ökologische Kosten laufen indes weiter, auch wenn der Zufriedenheitszuwachs schrumpft. Genau dieses Auseinanderlaufen von Last und Gewinn macht das Maximum des Korridors nötig.\n\nDie Aussage ist wahr.",
+      "Genug, aber nicht zu viel: so klammert der Abschnitt Suffizienz. Langfristig stabileres Wohlbefinden ist die behauptete Folge, nicht asketische Lücke unter dem sozialen Minimum. Die Stabilität steht gegen den kurzen Nutzenkick übermäßigen Konsums. Suffizienz sitzt damit im Korridor, nicht darunter und nicht darüber. Unter dem Minimum wäre Suffizienz Hunger, über dem Maximum Übermaß. Der Klammerzusatz genug, aber nicht zu viel, hält die Lage im Korridor und widerspricht Askese ebenso wie Maßlosigkeit.\n\nDie Aussage ist wahr.",
+      "So viel wie möglich, solange der Nutzen steigt, wäre Nutzenmaximierung ohne Decke. Suffizienz heißt genug, aber nicht zu viel. Der Nutzen kann bei umweltschädlichen Präferenzen weiter klettern, während Wohlbefinden und Planet leiden. Die Gleichsetzung von Suffizienz mit Maximalnutzen tilgt genau die Korridorlogik.\n\nDie Aussage ist falsch.",
+      "An SWB gebunden sind die Korridore im Schlussteil ausdrücklich. Übermäßiger Konsum und Suffizienz werden als empirische Brücke genannt. Subjektives Wohlbefinden bleibt damit der menschliche Indikator, nicht ein ökologisches Extra ohne Menschen. Die Bindung schließt den Bogen von der Zweckfrage am Anfang zur Produktionsform am Ende.\n\nDie Aussage ist wahr.",
+      "Linear ohne abnehmende Zuwächse würde den Studienbefund umkehren. Übermäßiger Konsum bringt abnehmende Zufriedenheitszuwächse. Unbegrenztheit als Wohlfühlmaschine widerspricht Schwellenwert, Vergleichen und Suffizienz zugleich. Der Satz ist mit dem Kapitelende unvereinbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "WISO 2.5.16",
+    "title": "Wachstum, Nutzen und gemindertes Wohlbefinden",
+    "context": "Bewerten Sie die folgenden Aussagen zum Spannungsverhältnis von Wachstum, Nutzen und nachhaltigem Wohlbefinden:",
+    "statements": [
+      "Wirtschaftliches Wachstum kann den Nutzen erhöhen und das Wohlbefinden dennoch mindern, wenn soziale Ungleichheit, Stress oder Umweltzerstörung verstärkt werden.",
+      "Diese Unterscheidung zwischen Nutzen und Wohlbefinden ist laut Abschnitt entscheidend.",
+      "Steigt durch Wachstum der Nutzen, steigt das Wohlbefinden im Text immer im Gleichschritt mit.",
+      "Wenn die Wirtschaft nicht dem Wohlbefinden der Menschen dient, verliert sie ihre Legitimation.",
+      "Subjektives Wohlbefinden ist im Text identisch mit der kurzfristigen Zufriedenheit aus der Befriedigung einer einzelnen Präferenz."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nutzen hoch, Wohlbefinden runter: der Mechanismus läuft über Ungleichheit, Stress und Umweltzerstörung. Wachstum erfüllt dann mehr Präferenzen oder hebt kurzfristige Zufriedenheit, während das Gesamturteil über das Leben leidet. Relative Vergleiche machen Ungleichheit spürbar, Unsicherheit und ökologische Last drücken zusätzlich. Der Satz ist die zentrale Warnung des Theorieteils, bevor Empirie und Doughnut folgen. Wer Wachstum mit Wohlbefinden gleichsetzt, liest genau diese Verstärker nicht. SWB als Gesamturteil kann fallen, während einzelne erfüllte Wünsche den Nutzen noch nähren. Die drei Verstärker sind die sichtbaren Keile zwischen beiden Kurven, nicht beliebige Zusatzrisiken.\n\nDie Aussage ist wahr.",
+      "Entscheidend nennt der Text die Trennung, weil sonst Wachstumserfolge als Lebenserfolge verbucht würden. Nutzen bleibt die kurze Präferenzbefriedigung, Wohlbefinden das Gesamturteil nachhaltiger Existenzqualität. Ohne die Trennung gäbe es keinen Sinn für Schwellenwert, Suffizienz und Korridore. Die Betonung ist methodisch und politisch zugleich: sie ändert, woran Wirtschaft gemessen wird.\n\nDie Aussage ist wahr.",
+      "Immer im Gleichschritt mit dem Nutzen zu steigen, wäre die Leugnung des genannten Mechanismus. Der Abschnitt hält fest, dass Wohlbefinden trotz Nutzenplus sinken kann. Gleichschritt würde Ungleichheit, Stress und Umweltzerstörung für folgenlos erklären. Genau diese Folgenlosigkeit weist der Text zurück.\n\nDie Aussage ist falsch.",
+      "Legitimation am Wohlbefinden der Menschen: der Eröffnungssatz kehrt am Ende der Argumentation wieder, jetzt mit Doughnut, Korridor und Suffizienz im Rücken. Dient Wirtschaft diesem Maß nicht, verliert sie ihre Rechtfertigung. Nutzensteigerung allein rettet sie nicht, wenn das Gesamtleben schlechter wird. Der Bogen von der Zweckfrage zur planetaren Grenze bleibt damit geschlossen.\n\nDie Aussage ist wahr.",
+      "Kurzfristige Zufriedenheit aus einer Präferenz ist der Nutzen, nicht SWB. Subjektives Wohlbefinden ist emotionale und kognitive Bewertung des Lebens, empirischer Indikator gesellschaftlicher Qualität, gerichtet auf nachhaltige Existenz, nicht auf momentane Lust. Die Identität beider Größen würde Wachstumskritik, Gallup-Befund und Suffizienz unverständlich machen, weil dann jeder Konsumkick schon Wohlbefinden wäre.\n\nNote: Nutzen bleibt der kurze Kick; SWB ist das Lebensurteil. Identität beider Größen würde heißen, jeder Werbeerfolg sei schon gesellschaftliche Qualität. Der Abschnitt trennt die Ebenen gerade deshalb, weil sonst Wachstumskritik und Suffizienz keinen Indikator mehr hätten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

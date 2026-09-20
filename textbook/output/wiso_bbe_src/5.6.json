@@ -1,0 +1,674 @@
+[
+  {
+    "title": "Customer Characteristics in Market Research",
+    "statements": [
+      "Market segmentation divides a market into relatively homogeneous subgroups of customers who share relevant characteristics.",
+      "Geographic segmentation groups customers according to where they live or operate, such as a city and its surrounding area.",
+      "Demographic segmentation uses measurable social characteristics such as age, gender, education level, and income level.",
+      "Psychographic segmentation reflects attitudes, values, lifestyle interests, and willingness to pay for particular product philosophies.",
+      "Market segmentation requires every customer in a subgroup to be identical in all personal characteristics."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.01",
+    "context": "Consider a household detergent producer that promotes one standard formula nationwide without tailoring messages to regional income differences. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Geographic Segmentation by Location",
+    "statements": [
+      "Geographic segmentation classifies customers by income level and education rather than by location.",
+      "Demographic segmentation is defined by lifestyle attitudes and values rather than age or income.",
+      "Psychographic segmentation is defined solely by postal district and city boundaries.",
+      "Behavioural segmentation ignores how customers buy or use products and focuses only on gender.",
+      "Behavioural segmentation distinguishes customers by how they buy or use products, such as occasional versus heavy use."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.02",
+    "context": "Analyze geographic segmentation based on location such as city and surrounding area. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Demographic Segmentation Variables",
+    "statements": [
+      "A useful segment should be measurable so that its size and purchasing power can be estimated.",
+      "A useful segment should be profitable so that serving it is worthwhile for the business.",
+      "A useful segment should be accessible through communication channels and distribution channels that can reach it.",
+      "A segment is measurable only when every member has been individually interviewed.",
+      "A segment is profitable whenever it is large, even if serving it costs more than the revenue gained."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.03",
+    "context": "Review demographic segmentation using age, gender, education level, and income level. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Psychographic Segmentation and Values",
+    "statements": [
+      "A useful segment should be durable in the sense that it does not change too quickly to support planning.",
+      "A segment is accessible if it is profitable, regardless of whether communication or distribution can reach it.",
+      "Targeting is the process of evaluating each segment's attractiveness and selecting one or more segments to enter.",
+      "A target market is a group of people or businesses toward whom a firm markets goods, services, or ideas with a strategy designed for their specific needs and preferences.",
+      "Positioning is the process by which marketers try to create an image or identity in the minds of their target market."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.04",
+    "context": "Analyze psychographic segmentation reflecting attitudes, values, and lifestyle interests. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Behavioural Segmentation Patterns",
+    "statements": [
+      "A durable segment must never change over time in order to qualify for targeting.",
+      "After segments are identified and a target market is chosen, positioning clarifies which product meets the demands of the targeted subgroup.",
+      "Targeting means dividing the market into subgroups, while segmentation means choosing which subgroup to enter.",
+      "Mass marketing ignores different market segments and offers the same product to all customers.",
+      "Positioning occurs before segmentation and targeting in the marketing strategy sequence."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.05",
+    "context": "Consider a sportswear brand offering distinct product lines for occasional joggers and for competitive athletes based on usage intensity. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Homogeneous Subgroups in Segmentation",
+    "statements": [
+      "Under mass marketing, a product is promoted to all segments in almost the same way.",
+      "Mass marketing is often applied to everyday products such as pens, pencils, soaps, personal hygiene products, and detergents.",
+      "Mass marketing offers different tailored products to each identified market segment.",
+      "Mass marketing allows a business to produce a relatively large number of identical products and sell them to a relatively large market.",
+      "Economies of scale arise when a large number of identical products is produced and some costs do not increase in direct proportion to output."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.06",
+    "context": "Analyze how segmentation divides relatively homogeneous subgroups within a broader market. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Measurable Segment Criterion",
+    "statements": [
+      "Mass marketing promotes the same product differently to every segment with highly customised campaigns.",
+      "Economies of scale mean that every cost rises in direct proportion to output as production increases.",
+      "Increased total output of an identical product can reduce cost per unit because shared costs are divided across more units.",
+      "Economies of scale always raise cost per unit when total identical output increases.",
+      "Grouping buyers by adult men and women of all ages alone is geographic segmentation because demographics describe place."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.07",
+    "context": "Review the criterion that market segments should be measurable in size and purchasing power. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Profitable Segment Criterion",
+    "statements": [
+      "Mass marketing can be inflexible and make it harder to react to particular changes in some target markets.",
+      "Segment marketing means offering different products to one or more segments after some segmentation.",
+      "Grouping buyers in an Austrian city and its surrounding commuter area is psychographic segmentation because location reflects personal values.",
+      "Targeting buyers unwilling to pay the full price of a brand-new device is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "Distinguishing occasional users rather than intensive daily operators is demographic segmentation because usage is a social characteristic like age."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.08",
+    "context": "Analyze the criterion that market segments should be profitable for the business to serve. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Accessible Segment Criterion",
+    "statements": [
+      "Segment marketing focuses limited resources on segments where the firm has strategic fit with customer needs and wants.",
+      "Niche marketing focuses on particular segments and often on subgroups within broader segments through more segmentation.",
+      "Many small businesses employ niche marketing because they cannot produce the quantity required for a mass market.",
+      "A business specialising in a certain field may target only selected segments of a market rather than the whole market.",
+      "A niche specialist that serves a segment well can become a market leader regardless of firm size."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.09",
+    "context": "Consider a craft brewery selling specialised seasonal ales only to enthusiasts willing to pay premium prices in a narrow taste category. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Durable Segment Criterion",
+    "statements": [
+      "Targeting is the first step toward an effective marketing strategy before the marketing mix is applied to serve the target market.",
+      "The marketing mix is applied as a second step to serve the needs of the chosen target market.",
+      "Grouping buyers in an Austrian city and its surrounding commuter area illustrates geographic segmentation because location defines the subgroup.",
+      "A segment of an Austrian city and its surrounding commuter area is automatically profitable whenever it can be named on a map.",
+      "Describing customers as adult men and women of all ages illustrates demographic segmentation using measurable population characteristics."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.10",
+    "context": "Analyze the criterion that market segments should be durable rather than changing too quickly. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Targeting Selected Segments",
+    "statements": [
+      "A segment of adult men and women of all ages is accessible whenever it is measurable, even if no channel reaches them.",
+      "A segment of buyers unwilling to pay the full price of a brand-new device is durable only if preferences never shift, making short-term trends irrelevant.",
+      "Targeting buyers unwilling to pay the full price of a brand-new device reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Distinguishing occasional users rather than intensive daily operators is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "Mass marketing to an Austrian city and its surrounding commuter area requires a different product formula for every neighbourhood street."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.11",
+    "context": "Review targeting as the selection of segment or segments a business chooses to enter. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Evaluating Segment Attractiveness",
+    "statements": [
+      "Niche marketing to buyers unwilling to pay the full price of a brand-new device means selling one identical product to the entire national market.",
+      "Segment marketing to adult men and women of all ages means ignoring subgroup differences and promoting one undifferentiated offer.",
+      "Positioning toward occasional users rather than intensive daily operators is unnecessary if the firm already completed geographic segmentation.",
+      "A segment defined for an Austrian city and its surrounding commuter area is measurable when survey and sales data reveal its size and average purchasing power.",
+      "A segment of adult men and women of all ages is profitable only if expected revenue from serving them exceeds the cost of tailored offers."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.12",
+    "context": "Analyze how targeting evaluates each segment's attractiveness before commitment. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Positioning and Market Identity",
+    "statements": [
+      "Targeting occasional users rather than intensive daily operators means listing every possible subgroup without evaluating attractiveness.",
+      "Economies of scale for a niche offer to buyers unwilling to pay the full price of a brand-new device are identical to those for undifferentiated mass production.",
+      "A segment of buyers unwilling to pay the full price of a brand-new device is accessible when advertising and retail channels can reach those customers effectively.",
+      "A firm serving adult men and women of all ages with strategic fit should spread resources evenly across every segment in the economy.",
+      "Producing a tiny customised batch for buyers unwilling to pay the full price of a brand-new device always yields lower unit cost than mass production of identical units."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.13",
+    "context": "Consider a cleaning-products company unable to react quickly when one regional segment shifts toward eco-certified alternatives under a single mass-market formula. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Segmentation Targeting Positioning Sequence",
+    "statements": [
+      "Grouping buyers by employed wage earners and retired pensioners alone is geographic segmentation because demographics describe place.",
+      "Grouping buyers in a coastal region and neighbouring inland towns is psychographic segmentation because location reflects personal values.",
+      "A segment of occasional users rather than intensive daily operators is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Targeting customers who value environmental reuse of second-hand goods is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "Distinguishing seasonal purchasers rather than year-round repeat buyers is demographic segmentation because usage is a social characteristic like age."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.14",
+    "context": "Analyze the sequence from segmentation through targeting to positioning in marketing strategy. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Mass Marketing Definition",
+    "statements": [
+      "A segment of a coastal region and neighbouring inland towns is automatically profitable whenever it can be named on a map.",
+      "Mass marketing of a universal staple to an Austrian city and its surrounding commuter area and other areas uses one offer promoted in almost the same way everywhere.",
+      "A segment of employed wage earners and retired pensioners is accessible whenever it is measurable, even if no channel reaches them.",
+      "Segment marketing to adult men and women of all ages would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "A segment of customers who value environmental reuse of second-hand goods is durable only if preferences never shift, making short-term trends irrelevant."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.15",
+    "context": "Review mass marketing as offering the same product to all customers while ignoring segment differences. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Uniform Promotion in Mass Marketing",
+    "statements": [
+      "Niche marketing to buyers unwilling to pay the full price of a brand-new device concentrates on a narrow subgroup whose specialised preferences justify a focused offer.",
+      "Mass marketing to a coastal region and neighbouring inland towns requires a different product formula for every neighbourhood street.",
+      "Targeting occasional users rather than intensive daily operators means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria.",
+      "Positioning toward buyers unwilling to pay the full price of a brand-new device aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "Producing millions of identical units for an Austrian city and its surrounding commuter area can spread fixed factory costs and support economies of scale."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.16",
+    "context": "Analyze how mass marketing promotes a product to all segments in almost the same way. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Mass Marketing for Everyday Products",
+    "statements": [
+      "Niche marketing to customers who value environmental reuse of second-hand goods means selling one identical product to the entire national market.",
+      "A firm with strategic fit serving adult men and women of all ages should concentrate resources on that segment rather than undifferentiated mass coverage.",
+      "Grouping buyers in a coastal region and neighbouring inland towns illustrates geographic segmentation because location defines the subgroup.",
+      "Describing customers as employed wage earners and retired pensioners illustrates demographic segmentation using measurable population characteristics.",
+      "Targeting customers who value environmental reuse of second-hand goods reflects psychographic segmentation based on attitudes and preferences rather than location alone."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.17",
+    "context": "Consider a regional bakery chain that groups customers by city and surrounding commuter towns when planning delivery routes and store openings. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Economies of Scale in Production",
+    "statements": [
+      "Distinguishing seasonal purchasers rather than year-round repeat buyers is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "Segment marketing to employed wage earners and retired pensioners means ignoring subgroup differences and promoting one undifferentiated offer.",
+      "A segment defined for a coastal region and neighbouring inland towns is measurable when survey and sales data reveal its size and average purchasing power.",
+      "Positioning toward seasonal purchasers rather than year-round repeat buyers is unnecessary if the firm already completed geographic segmentation.",
+      "Targeting seasonal purchasers rather than year-round repeat buyers means listing every possible subgroup without evaluating attractiveness."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.18",
+    "context": "Analyze economies of scale arising when large identical output spreads some costs across more units. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Cost Per Unit and Total Output",
+    "statements": [
+      "Economies of scale for a niche offer to customers who value environmental reuse of second-hand goods are identical to those for undifferentiated mass production.",
+      "A segment of employed wage earners and retired pensioners is profitable only if expected revenue from serving them exceeds the cost of tailored offers.",
+      "A firm serving employed wage earners and retired pensioners with strategic fit should spread resources evenly across every segment in the economy.",
+      "Producing a tiny customised batch for customers who value environmental reuse of second-hand goods always yields lower unit cost than mass production of identical units.",
+      "A segment of customers who value environmental reuse of second-hand goods is accessible when advertising and retail channels can reach those customers effectively."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.19",
+    "context": "Review how mass marketing can reduce cost per unit through increased total output. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Mass Marketing Inflexibility",
+    "statements": [
+      "A segment of seasonal purchasers rather than year-round repeat buyers is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Grouping buyers by self-employed professionals and salaried staff alone is geographic segmentation because demographics describe place.",
+      "Mass marketing of a universal staple to a coastal region and neighbouring inland towns and other areas uses one offer promoted in almost the same way everywhere.",
+      "Segment marketing to employed wage earners and retired pensioners would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "Niche marketing to customers who value environmental reuse of second-hand goods concentrates on a narrow subgroup whose specialised preferences justify a focused offer."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.20",
+    "context": "Analyze the inflexibility of mass marketing when particular target markets change. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Segment Marketing Differentiation",
+    "statements": [
+      "Targeting seasonal purchasers rather than year-round repeat buyers means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria.",
+      "Positioning toward customers who value environmental reuse of second-hand goods aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "Producing millions of identical units for a coastal region and neighbouring inland towns can spread fixed factory costs and support economies of scale.",
+      "A firm with strategic fit serving employed wage earners and retired pensioners should concentrate resources on that segment rather than undifferentiated mass coverage.",
+      "Grouping buyers in a capital district and peripheral suburbs illustrates geographic segmentation because location defines the subgroup."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.21",
+    "context": "Consider a national soap manufacturer producing millions of identical bars to spread fixed factory costs across a very large output. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Strategic Fit in Segment Marketing",
+    "statements": [
+      "Describing customers as self-employed professionals and salaried staff illustrates demographic segmentation using measurable population characteristics.",
+      "Grouping buyers in a capital district and peripheral suburbs is psychographic segmentation because location reflects personal values.",
+      "Targeting users wanting hands-on help when starting equipment reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Distinguishing light users of software licences rather than power users is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "A segment defined for a capital district and peripheral suburbs is measurable when survey and sales data reveal its size and average purchasing power."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.22",
+    "context": "Analyze how segment marketing focuses limited resources on segments with strategic fit. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Niche Marketing Focus",
+    "statements": [
+      "A segment of self-employed professionals and salaried staff is profitable only if expected revenue from serving them exceeds the cost of tailored offers.",
+      "A segment of users wanting hands-on help when starting equipment is accessible when advertising and retail channels can reach those customers effectively.",
+      "Targeting users wanting hands-on help when starting equipment is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "A segment of light users of software licences rather than power users is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Mass marketing of a universal staple to a capital district and peripheral suburbs and other areas uses one offer promoted in almost the same way everywhere."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.23",
+    "context": "Review niche marketing as concentrating on particular segments or subgroups within segments. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Small Business Niche Preference",
+    "statements": [
+      "Segment marketing to self-employed professionals and salaried staff would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "Distinguishing light users of software licences rather than power users is demographic segmentation because usage is a social characteristic like age.",
+      "Niche marketing to users wanting hands-on help when starting equipment concentrates on a narrow subgroup whose specialised preferences justify a focused offer.",
+      "A segment of a capital district and peripheral suburbs is automatically profitable whenever it can be named on a map.",
+      "Targeting light users of software licences rather than power users means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.24",
+    "context": "Analyze why many small businesses favour niche marketing over mass-market volume. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "More Segmentation in Niche Marketing",
+    "statements": [
+      "A segment of self-employed professionals and salaried staff is accessible whenever it is measurable, even if no channel reaches them.",
+      "Positioning toward users wanting hands-on help when starting equipment aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "A segment of users wanting hands-on help when starting equipment is durable only if preferences never shift, making short-term trends irrelevant.",
+      "Producing millions of identical units for a capital district and peripheral suburbs can spread fixed factory costs and support economies of scale.",
+      "A firm with strategic fit serving self-employed professionals and salaried staff should concentrate resources on that segment rather than undifferentiated mass coverage."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.25",
+    "context": "Consider a supermarket group analysing age, employment status, and household income before designing loyalty offers for different shopper profiles. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Target Market Definition",
+    "statements": [
+      "Grouping buyers in a mountain province and valley municipalities illustrates geographic segmentation because location defines the subgroup.",
+      "Describing customers as households grouped by declared income brackets illustrates demographic segmentation using measurable population characteristics.",
+      "Mass marketing to a capital district and peripheral suburbs requires a different product formula for every neighbourhood street.",
+      "Targeting shoppers prioritising reliability over fashionable novelty reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Niche marketing to users wanting hands-on help when starting equipment means selling one identical product to the entire national market."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.26",
+    "context": "Analyze a target market as the group toward whom a business markets with a tailored strategy. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Satisfying Target Market Needs",
+    "statements": [
+      "Distinguishing infrequent maintainers rather than continuous heavy consumers is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "A segment defined for a mountain province and valley municipalities is measurable when survey and sales data reveal its size and average purchasing power.",
+      "Segment marketing to self-employed professionals and salaried staff means ignoring subgroup differences and promoting one undifferentiated offer.",
+      "Positioning toward light users of software licences rather than power users is unnecessary if the firm already completed geographic segmentation.",
+      "A segment of households grouped by declared income brackets is profitable only if expected revenue from serving them exceeds the cost of tailored offers."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.27",
+    "context": "Review how a target market strategy aims to satisfy specific needs and preferences. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Targeting as First Strategy Step",
+    "statements": [
+      "A segment of shoppers prioritising reliability over fashionable novelty is accessible when advertising and retail channels can reach those customers effectively.",
+      "A segment of infrequent maintainers rather than continuous heavy consumers is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Targeting light users of software licences rather than power users means listing every possible subgroup without evaluating attractiveness.",
+      "Economies of scale for a niche offer to users wanting hands-on help when starting equipment are identical to those for undifferentiated mass production.",
+      "A firm serving self-employed professionals and salaried staff with strategic fit should spread resources evenly across every segment in the economy."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.28",
+    "context": "Analyze targeting as the first step toward an effective marketing strategy. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Marketing Mix After Targeting",
+    "statements": [
+      "Mass marketing of a universal staple to a mountain province and valley municipalities and other areas uses one offer promoted in almost the same way everywhere.",
+      "Segment marketing to households grouped by declared income brackets would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "Niche marketing to shoppers prioritising reliability over fashionable novelty concentrates on a narrow subgroup whose specialised preferences justify a focused offer.",
+      "Producing a tiny customised batch for users wanting hands-on help when starting equipment always yields lower unit cost than mass production of identical units.",
+      "Targeting infrequent maintainers rather than continuous heavy consumers means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.29",
+    "context": "Consider a tutoring service positioning itself as the supportive option for adult learners returning to formal study after years in employment. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Employed and Retired Demographics",
+    "statements": [
+      "Positioning toward shoppers prioritising reliability over fashionable novelty aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "Producing millions of identical units for a mountain province and valley municipalities can spread fixed factory costs and support economies of scale.",
+      "A firm with strategic fit serving households grouped by declared income brackets should concentrate resources on that segment rather than undifferentiated mass coverage.",
+      "Grouping buyers in a border county and adjacent cross-border shoppers illustrates geographic segmentation because location defines the subgroup.",
+      "Describing customers as buyers classified by completed education level illustrates demographic segmentation using measurable population characteristics."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.30",
+    "context": "Analyze employed and retired adults as demographic characteristics in segmentation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Self-Employed Demographic Segment",
+    "statements": [
+      "Targeting clients seeking personalised service rather than self-service reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Distinguishing trial buyers before occasional repeat purchase is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "A segment defined for a border county and adjacent cross-border shoppers is measurable when survey and sales data reveal its size and average purchasing power.",
+      "Grouping buyers by households grouped by declared income brackets alone is geographic segmentation because demographics describe place.",
+      "A segment of buyers classified by completed education level is profitable only if expected revenue from serving them exceeds the cost of tailored offers."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.31",
+    "context": "Review self-employed status as a demographic variable for customer description. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Occasional Use Behavioural Segment",
+    "statements": [
+      "Grouping buyers in a mountain province and valley municipalities is psychographic segmentation because location reflects personal values.",
+      "Targeting shoppers prioritising reliability over fashionable novelty is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "Distinguishing infrequent maintainers rather than continuous heavy consumers is demographic segmentation because usage is a social characteristic like age.",
+      "A segment of clients seeking personalised service rather than self-service is accessible when advertising and retail channels can reach those customers effectively.",
+      "A segment of a mountain province and valley municipalities is automatically profitable whenever it can be named on a map."
+    ],
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.32",
+    "context": "Analyze occasional-use buyers as a behavioural segment distinct from heavy users. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  }
+]

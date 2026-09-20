@@ -1,14 +1,12 @@
 /**
- * Wirtschaft verstehen (WU WiSo Aufnahmeprüfung) TOC for Full WiSo Course.
- * Chapter 4 has no BBE/Fuhrmann counterpart — WiSo-native (§4.1 authored; §4.2–§4.3 pending).
- * Chapter 2 is WiSo-native (authored §2.1–§2.6).
+ * Table of contents for WISO Wirtschaft (Wirtschaft verstehen, Aufnahmeprüfung 2026).
  */
 
 export type WisoEconomicsSubtopic = {
   id: string;
   chapter: number;
   title: string;
-  /** True when BBE Full Course cases have been remapped into this subsection. */
+  /** True when practice cases exist for this subsection. */
   hasMappedBank: boolean;
 };
 
@@ -16,7 +14,7 @@ export type WisoEconomicsChapterToc = {
   num: number;
   title: string;
   enabled: boolean;
-  /** Empty bank until WiSo-native content exists (sustainability / digitalisation). */
+  /** Empty bank until WiSo-native content exists. */
   blank: boolean;
   subtopics: WisoEconomicsSubtopic[];
 };
@@ -24,39 +22,25 @@ export type WisoEconomicsChapterToc = {
 export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
   {
     num: 1,
-    title: "Grundlagen der Wirtschaft",
+    title: "Warum wir wirtschaften und was Wirtschaften bedeutet",
     enabled: true,
     blank: false,
     subtopics: [
-      {
-        id: "1.1",
-        chapter: 1,
-        title: "Wirtschaftskreislauf",
-        hasMappedBank: true,
-      },
-      {
-        id: "1.2",
-        chapter: 1,
-        title: "Knappheit und Opportunitätskosten",
-        hasMappedBank: true,
-      },
+      { id: "1.1", chapter: 1, title: "Jeder Mensch ist Teil der Wirtschaft", hasMappedBank: true },
+      { id: "1.2", chapter: 1, title: "Arbeitsteilung und Spezialisierung", hasMappedBank: true },
       {
         id: "1.3",
         chapter: 1,
-        title: "Arbeitsteilung und Spezialisierung",
+        title: "Knappheit, Entscheidungen und Opportunitätskosten",
         hasMappedBank: true,
       },
-      {
-        id: "1.4",
-        chapter: 1,
-        title: "Geld, Zinsen und Inflation",
-        hasMappedBank: true,
-      },
+      { id: "1.4", chapter: 1, title: "Der Wirtschaftskreislauf", hasMappedBank: true },
+      { id: "1.5", chapter: 1, title: "Geld als Tauschmittel", hasMappedBank: true },
     ],
   },
   {
     num: 2,
-    title: "Wirtschaft, Gesellschaft und Umwelt",
+    title: "Wirtschaft als Teil der Gesellschaft und Umwelt",
     enabled: true,
     blank: false,
     subtopics: [
@@ -66,16 +50,11 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
         title: "Einbettung der Wirtschaft in Gesellschaft und Umwelt",
         hasMappedBank: true,
       },
-      {
-        id: "2.2",
-        chapter: 2,
-        title: "Nachhaltigkeit und planetare Grenzen",
-        hasMappedBank: true,
-      },
+      { id: "2.2", chapter: 2, title: "Nachhaltigkeit", hasMappedBank: true },
       {
         id: "2.3",
         chapter: 2,
-        title: "Entkopplung von Wachstum und Umweltschäden",
+        title: "Entkopplung von Wirtschaftswachstum und Umweltschäden",
         hasMappedBank: true,
       },
       {
@@ -84,102 +63,80 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
         title: "Wirtschaften innerhalb der Erdsystemgrenzen",
         hasMappedBank: true,
       },
-      {
-        id: "2.5",
-        chapter: 2,
-        title: "Soziales Wohlbefinden als Ziel nachhaltigen Wirtschaftens",
-        hasMappedBank: true,
-      },
-      {
-        id: "2.6",
-        chapter: 2,
-        title:
-          "Gesellschaftliche Voraussetzungen für subjektives Wohlbefinden und Nachhaltigkeit",
-        hasMappedBank: true,
-      },
+      { id: "2.5", chapter: 2, title: "Soziales Wohlbefinden", hasMappedBank: true },
+      { id: "2.6", chapter: 2, title: "Gesellschaftliche Voraussetzungen", hasMappedBank: true },
     ],
   },
   {
     num: 3,
-    title: "Unternehmensgrundlagen",
+    title: "Was Wirtschaften für Unternehmen bedeutet",
     enabled: true,
     blank: false,
     subtopics: [
-      {
-        id: "3.1",
-        chapter: 3,
-        title: "Unternehmensarten und Rechtsformen",
-        hasMappedBank: true,
-      },
-      {
-        id: "3.2",
-        chapter: 3,
-        title: "Eigentum und Finanzierungsquellen",
-        hasMappedBank: true,
-      },
-      {
-        id: "3.3",
-        chapter: 3,
-        title: "Rechnungswesen",
-        hasMappedBank: true,
-      },
+      { id: "3.1", chapter: 3, title: "Arten von Unternehmen", hasMappedBank: true },
+      { id: "3.2", chapter: 3, title: "Rechtsformen von Unternehmen", hasMappedBank: true },
+      { id: "3.3", chapter: 3, title: "Finanzielle Mittel", hasMappedBank: true },
+      { id: "3.4", chapter: 3, title: "Rechnungswesen", hasMappedBank: true },
+      { id: "3.5", chapter: 3, title: "Marketing", hasMappedBank: true },
     ],
   },
   {
     num: 4,
-    title: "Digitalisierung",
+    title: "Digitalisierung und Vernetzung von Wirtschaft und Gesellschaft",
     enabled: true,
     blank: false,
     subtopics: [
-      {
-        id: "4.1",
-        chapter: 4,
-        title: "Digitale Transformation und Geschäftsmodelle",
-        hasMappedBank: true,
-      },
+      { id: "4.1", chapter: 4, title: "Digitale Transformation", hasMappedBank: true },
       {
         id: "4.2",
         chapter: 4,
-        title: "Internetplattformen",
-        hasMappedBank: false,
+        title: "Neue Produkte, Dienstleistungen und Geschäftsmodelle",
+        hasMappedBank: true,
       },
-      {
-        id: "4.3",
-        chapter: 4,
-        title: "Wirtschaftsinformatik",
-        hasMappedBank: false,
-      },
+      { id: "4.3", chapter: 4, title: "Das Internet als Plattform", hasMappedBank: true },
+      { id: "4.4", chapter: 4, title: "Wirtschaftsinformatik", hasMappedBank: true },
     ],
   },
 ];
 
+export function getEnabledWisoBookChapters(): WisoEconomicsChapterToc[] {
+  return WISO_ECONOMICS_BOOK_TOC.filter((c) => c.enabled);
+}
+
+export function getEnabledWisoEconomicsChapters(): WisoEconomicsChapterToc[] {
+  return getEnabledWisoBookChapters();
+}
+
+export function findWisoSubtopic(id: string): WisoEconomicsSubtopic | undefined {
+  for (const ch of WISO_ECONOMICS_BOOK_TOC) {
+    const s = ch.subtopics.find((t) => t.id === id);
+    if (s) return s;
+  }
+  return undefined;
+}
+
 /**
- * BBE Fuhrmann subsection → Wirtschaft verstehen subsection.
- * Ch.4 digitalisation is WiSo-native (not remapped from BBE).
- * BBE marketing (5.x) is not part of the WiSo foundations TOC — excluded.
- * Money/inflation cases are reclassified from basics via keyword override in the build script.
+ * BBE Fuhrmann subsection → Wirtschaft verstehen subsection (legacy build mapping).
  */
 export const BBE_TO_WISO_ECON_SUBSECTION: Record<string, string> = {
-  // WiSo 1.x ← BBE ch.2 basics
-  "2.1": "1.2", // being part of the economy → scarcity / economising
-  "2.2": "1.2", // scarcity & opportunity cost
-  "2.3": "1.2", // economic decisions under scarcity
-  "2.4": "1.1", // circular flow (+ specialisation override → 1.3)
-  "2.5": "1.1", // economic systems in the circular-flow picture
-  "2.6": "1.1", // supply & demand / market meeting
-  "2.7": "1.1", // competition
-  // WiSo 3.x ← BBE businesses / ownership / accounting (no marketing)
+  "2.1": "1.2",
+  "2.2": "1.2",
+  "2.3": "1.2",
+  "2.4": "1.1",
+  "2.5": "1.1",
+  "2.6": "1.1",
+  "2.7": "1.1",
   "3.1": "3.1",
   "3.2": "3.1",
   "3.3": "3.1",
   "3.4": "3.1",
   "3.5": "3.1",
   "3.6": "3.1",
-  "4.1": "3.1", // legal forms with Unternehmensarten
+  "4.1": "3.1",
   "4.2": "3.1",
   "4.3": "3.1",
   "4.4": "3.1",
-  "4.5": "3.2", // sources of finance
+  "4.5": "3.2",
   "4.6": "3.2",
   "6.1": "3.3",
   "6.2": "3.3",
@@ -188,7 +145,6 @@ export const BBE_TO_WISO_ECON_SUBSECTION: Record<string, string> = {
   "6.5": "3.3",
 };
 
-/** Keywords that pull a 2.4 case into WiSo 1.3 (specialisation / division of labour). */
 export const WISO_1_3_KEYWORDS = [
   "division of labour",
   "division of labor",
@@ -198,11 +154,6 @@ export const WISO_1_3_KEYWORDS = [
   "spezialisierung",
 ] as const;
 
-/**
- * Keywords that pull a basics case into WiSo 1.4 (money, interest, inflation).
- * Prefer title/strong topical hits over incidental euro amounts.
- */
-/** Title-only cues used by the build script for WiSo 1.4. */
 export const WISO_1_4_TITLE_KEYWORDS = [
   "inflation",
   "hyperinflation",
@@ -227,7 +178,3 @@ export const WISO_1_4_TITLE_KEYWORDS = [
   "rate rise",
   "barter",
 ] as const;
-
-export function getEnabledWisoEconomicsChapters(): WisoEconomicsChapterToc[] {
-  return WISO_ECONOMICS_BOOK_TOC.filter((c) => c.enabled);
-}

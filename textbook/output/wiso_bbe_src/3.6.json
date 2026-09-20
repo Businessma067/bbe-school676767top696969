@@ -1,0 +1,1010 @@
+[
+  {
+    "title": "Stakeholder definition breadth",
+    "statements": [
+      "Customers who rely on a firm's products count as stakeholders even without owning shares.",
+      "Stakeholders are limited to shareholders who hold voting rights in the company.",
+      "Suppliers and employees are excluded from stakeholder status because they receive payment.",
+      "Stakeholders include anyone affected by or interested in the business.",
+      "Only senior managers on the organisation chart qualify as stakeholders."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.01",
+    "context": "Analyze who counts as a stakeholder among parties affected by or interested in the firm. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Owner profit motives",
+    "statements": [
+      "A small IT-support venture have no interest in how the venture performs once the shop opens.",
+      "Profit rewards a small IT-support venture for coordinating staff, suppliers, and customer service.",
+      "Growing the bakery's reputation may increase the value of their investment over time.",
+      "They accept business risk because poor trading could reduce their personal return.",
+      "A small IT-support venture as owners seek profit from daily bread and pastry sales."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.02",
+    "context": "Consider a small IT-support venture evaluate what they as bakery owners seek from business performance. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Owner risk reward",
+    "statements": [
+      "Reward for owners is unrelated to how well the business trades.",
+      "Owners bear financial risk when revenue falls short of costs and may lose invested capital.",
+      "Owners share gains with staff but face no downside when sales decline sharply.",
+      "Risk and reward apply only to employees, not to people who provide capital.",
+      "Owners receive profit without risk because limited liability guarantees positive returns."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.03",
+    "context": "Analyze owner exposure to risk and reward in enterprise activity. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Manager income security",
+    "statements": [
+      "Restructuring decisions that threaten jobs show managers are affected as stakeholders.",
+      "Job security matters to managers because firm failure could end their employment.",
+      "Managers seek stable income from the employing firm as a core stakeholder interest.",
+      "Managers depend on continued firm success for promotion and salary prospects.",
+      "Managers are stakeholders because business outcomes affect their careers and pay."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.04",
+    "context": "Analyze managers weigh income and security when judging business decisions. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Employee identification",
+    "statements": [
+      "Staff depend on the bakery's continued operation for wages and job security.",
+      "Employees are not stakeholders because they do not invest capital in the bakery.",
+      "Job security is a legitimate employee stakeholder interest alongside monthly wages.",
+      "Employees may identify with the bakery and feel pride when it succeeds locally.",
+      "Employees lose stakeholder status once they receive their monthly wage payment."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.05",
+    "context": "Consider bakery staff may identify with a small IT-support venture's business success. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Mutual dependence staff",
+    "statements": [
+      "Managers and employees are mutually dependent on the business with the owners' venture.",
+      "The firm can operate indefinitely without managers or employees contributing labour.",
+      "Staff livelihoods are unaffected when the employing firm stops trading.",
+      "Mutual dependence applies only between customers and suppliers, not between staff and the firm.",
+      "Owners alone create output; staff dependence on the firm is a one-way relationship."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.06",
+    "context": "Analyze mutual dependence between managers, employees, and the employing firm. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Shared values culture",
+    "statements": [
+      "When personal values align with company practices, staff engagement often improves.",
+      "Shared values guarantee identical opinions on every management decision.",
+      "Employment contracts alone make shared values irrelevant to stakeholder relations.",
+      "Shared values can strengthen cooperation between employees and management on firm goals.",
+      "Shared values between staff and the organisation can support business success."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.07",
+    "context": "Analyze shared values as a link between staff and organisational success. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Supplier payment expectations",
+    "statements": [
+      "Suppliers expect to be paid for goods delivered to the buying business.",
+      "Stakeholder analysis includes suppliers expecting both payment and continued commercial relationship.",
+      "Suppliers are stakeholders because firm decisions affect their cash flow and volumes.",
+      "Fair payment terms reflect supplier stakeholder interests, not only accounting detail.",
+      "Suppliers rely on future orders, not only payment for past deliveries."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.08",
+    "context": "Analyze suppliers expect payment and future orders. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Supplier quality delivery",
+    "statements": [
+      "Late or defective shipments are solely the buyer's problem, not the supplier's concern.",
+      "Suppliers need not worry about timeliness because buyers hold all delivery risk.",
+      "Timely delivery is part of the supplier's stakeholder duty toward the buying firm.",
+      "Suppliers must deliver quality goods on time to satisfy the buying business.",
+      "Quality standards apply only to the buyer's internal staff, not to external suppliers."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.09",
+    "context": "Analyze suppliers depend on quality expectations and timely delivery from their own operations. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Customer mutual dependency",
+    "statements": [
+      "Mutual dependency means both parties need each other for continued benefit.",
+      "Customers depend on firms but firms do not depend on customers for revenue.",
+      "Customers depend on the bakery for product quality and daily availability.",
+      "The bakery depends on customers for revenue that keeps the shop trading.",
+      "If the bakery closes, regular customers lose a relied-upon source of fresh bread."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.10",
+    "context": "Consider neighbourhood bakery customers who depend on the shop for fresh bread. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Community interest",
+    "statements": [
+      "Residents may care about noise, pollution, and employment created by a nearby firm.",
+      "Communities near a plant can be stakeholders affected by jobs, traffic, and local spending.",
+      "Community opposition to expansion can signal conflicting stakeholder interests.",
+      "A town relying on one major employer shows community stake in that firm's survival.",
+      "Communities cannot be stakeholders because they do not sign contracts with the firm."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.11",
+    "context": "Analyze local communities can be affected by nearby business activity. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Government interest",
+    "statements": [
+      "Government stakeholder interest disappears wherever markets operate without formal rules.",
+      "Government is a stakeholder only when it owns shares in nationalised industries.",
+      "Regulators represent broader public interest when setting business rules.",
+      "Government has no stake in local tax-paying businesses because it only collects fixed fees.",
+      "Government has an interest in business activity through tax, regulation, and public policy."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.12",
+    "context": "Analyze governments take an interest in business activity within their jurisdiction. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Environment real action",
+    "statements": [
+      "Superficial eco-labels without operational change fully meet environmental stakeholder expectations.",
+      "Real environmental action is less important than using the word sustainable in advertising.",
+      "Environmental action requires only a logo change without process improvement.",
+      "Environmental stakeholders expect real action rather than superficial green marketing alone.",
+      "Environmental stakeholders are satisfied by marketing slogans without operational change."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.13",
+    "context": "Analyze environmental stakeholders' expectation of genuine action rather than superficial claims. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Greenwash warning",
+    "statements": [
+      "Greenwash misleads stakeholders by exaggerating environmental performance.",
+      "Greenwash strengthens long-term stakeholder trust more than honest reporting.",
+      "Greenwash means exceeding environmental standards while understating achievements.",
+      "Advertising recyclable packaging while increasing pollution illustrates greenwash risk.",
+      "Empty eco-slogans without process change can erode stakeholder trust over time."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.14",
+    "context": "Analyze greenwash as a stakeholder relations risk. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Environmental reporting",
+    "statements": [
+      "Disclosing environmental impacts helps stakeholders assess whether firms take genuine action.",
+      "Environmental reporting communicates firm impacts to interested stakeholders.",
+      "Sustainability reports can inform communities and investors about environmental impacts.",
+      "Environmental reporting without operational improvement may still mislead stakeholders.",
+      "The natural environment is treated as a stakeholder expecting substantive corporate response."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.15",
+    "context": "Analyze environmental reporting is discussed as a business responsibility. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Conflicting interests",
+    "statements": [
+      "Environmental spending may reduce short-term profit, creating owner-environment tension.",
+      "Profit maximisation plans may conflict with community noise or pollution concerns.",
+      "Different stakeholder groups can have conflicting interests in the same decision.",
+      "All stakeholder groups want the same outcome on every business decision.",
+      "Stakeholder conflict is rare and only occurs between owners and customers."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.16",
+    "context": "Analyze conflicting stakeholder interests arise in many decisions. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Legal structure factor",
+    "statements": [
+      "Legal and financial structure can influence how successfully a business meets stakeholder needs.",
+      "Choosing a partnership rather than a company can change how owner risk is shared.",
+      "Legal structure is listed among factors that can affect overall business success.",
+      "A company's legal form can determine reporting duties toward different stakeholder groups.",
+      "Legal form can shape duties owed to different stakeholder groups."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.17",
+    "context": "Analyze legal structure is listed among other success factors. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Financial structure factor",
+    "statements": [
+      "Financial structure choices can affect how risk is shared among owner stakeholders.",
+      "Financial structure matters only to accountants, not to owner or creditor stakeholders.",
+      "Borrowing decisions have no effect on which stakeholder groups bear business risk.",
+      "Equity and debt mix is unrelated to how stakeholder returns are funded.",
+      "Financial structure matters to creditors and owners as well as to accountants."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.18",
+    "context": "Analyze financial structure appears among factors affecting business success. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Market awareness factor",
+    "statements": [
+      "Ignoring local taste trends could harm a small IT-support venture's customers and their own returns.",
+      "Tracking customer preferences helps the bakery retain mutual dependency with its buyers.",
+      "Market awareness helps a firm respond to customer and competitive stakeholder pressures.",
+      "Market awareness concerns only rivals and has no bearing on customer stakeholders.",
+      "Understanding rival bakeries helps a small IT-support venture keep quality attractive to regular buyers."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.19",
+    "context": "Consider a small IT-support venture assess how market awareness affects their bakery stakeholders. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Cost profitability factor",
+    "statements": [
+      "Managing costs and profitability affects what returns owners and jobs employees can sustain.",
+      "Costs and profitability affect only owners and have no bearing on jobs or supplier orders.",
+      "Cutting costs on ingredients has no effect on customer stakeholder satisfaction.",
+      "Employee job security is unaffected by whether the firm remains profitable.",
+      "Profitability levels are irrelevant to whether suppliers receive future orders."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.20",
+    "context": "Analyze costs and profitability influence stakeholder outcomes. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Owners share value",
+    "statements": [
+      "Reinvesting profit rather than paying it out may aim to build long-term business value.",
+      "Owners bear losses when trading performance is poor, linking risk to reward.",
+      "Rising business value can reward owners for successful risk bearing over time.",
+      "Owners may want the value of shares or the business to increase.",
+      "Building a stronger brand can contribute to higher business valuation for owners."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.21",
+    "context": "Analyze owners may seek increases in share or business value. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Managers not stakeholders trap",
+    "statements": [
+      "Managers are not stakeholders because they are paid to execute orders without personal interest.",
+      "Customers are stakeholders only when they sit on the board of directors.",
+      "Only shareholders count as stakeholders in a listed company.",
+      "Stakeholders are only people who own shares; customers and employees are excluded.",
+      "Stakeholders include anyone affected by or interested in the business, not shareholders alone."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.22",
+    "context": "Analyze a student claims only shareholders are stakeholders. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Employees job security",
+    "statements": [
+      "Job security concerns apply only to managers, not to ordinary employees.",
+      "Job security is a legitimate employee stakeholder interest alongside wages.",
+      "Staff depend on the firm's continued operation for wages and job security.",
+      "Employees are stakeholders even if they do not own shares in the company.",
+      "Employees and managers share dependence on continued profitable operation for livelihoods."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.23",
+    "context": "Analyze employees seek job security alongside income. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Suppliers timely orders",
+    "statements": [
+      "Suppliers rely on predictable orders, not only on being paid for past deliveries.",
+      "Predictable order volumes are irrelevant to suppliers who already received payment.",
+      "Delayed or cancelled orders can threaten a supplier's ability to retain staff and pay bills.",
+      "A supplier's stakeholder interest ends once a single invoice is settled.",
+      "Suppliers care about payment but not about future order volumes."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.24",
+    "context": "Consider suppliers need predictable orders as well as payment. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Customers quality price",
+    "statements": [
+      "Customers suffer if a relied-upon provider fails to supply quality products on time.",
+      "Fair pricing and reliable quality keep a bakery's regular buyers returning to the bakery.",
+      "Quality and price matter only to owners, not to customer stakeholders.",
+      "Customers depend on firms for product quality and availability.",
+      "Buyers at a neighbourhood bakery have no stake in whether the shop stays open."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.25",
+    "context": "Analyze how a bakery's regular buyers depend on consistent quality and fair pricing. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Community local impact",
+    "statements": [
+      "Local communities can be stakeholders affected by jobs, traffic, and spending from nearby firms.",
+      "Facility expansion cannot create stakeholder conflict because communities do not trade with the firm.",
+      "Community jobs concerns are not stakeholder issues because employment is private.",
+      "Residents near an industrial plant may care about noise, pollution, and local jobs created by the firm.",
+      "Communities near a plant have no interest in how the firm performs commercially."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.26",
+    "context": "Analyze communities near a plant care about jobs, noise, and local spending. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Government tax compliance",
+    "statements": [
+      "Government stakeholder interest disappears in free markets with no regulation.",
+      "For tax compliance purposes, government has no stake in local firms because it only collects fixed fees.",
+      "Enforcement of business rules shows government acting as a stakeholder in firm conduct.",
+      "Compliance inspections link government oversight to how firms treat wider stakeholder interests.",
+      "Tax collection gives government a stake in the trading performance of local firms."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.27",
+    "context": "Analyze governments collect tax and enforce rules affecting firms. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Environment beyond slogan",
+    "statements": [
+      "Eco-slogans alone can satisfy environmental stakeholders without any change to production processes.",
+      "Cosmetic eco-labels on packaging fully meet environmental stakeholder expectations without operational change.",
+      "Beyond slogans, environmental stakeholders still expect substantive measures rather than marketing alone.",
+      "Cosmetic branding changes satisfy environmental stakeholders without process improvement.",
+      "Using the word sustainable in advertising matters more than real environmental action on the shop floor."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.28",
+    "context": "Consider whether environmental concerns require substantive measures, not slogans alone. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Stakeholders not shareholders only",
+    "statements": [
+      "Employees count as stakeholders through wages and job security even without owning shares.",
+      "Suppliers are stakeholders because payment and order decisions affect their operations.",
+      "Communities affected by traffic and jobs from a nearby plant count as stakeholders.",
+      "Stakeholders include anyone affected by or interested in the business, extending beyond shareholders.",
+      "Customers who depend on a firm's products are stakeholders through mutual dependency."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.29",
+    "context": "Analyze breadth of stakeholder concept beyond owners alone. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Owner risk bearing",
+    "statements": [
+      "Poor trading performance can reduce owner returns and the value of capital they invested.",
+      "Rising share or business value rewards owners who accepted earlier business risk.",
+      "Owners receive reward without risk because businesses guarantee profits.",
+      "Owners typically seek profit and a return for bearing business risk.",
+      "Owners accept that poor results can reduce the value of their invested capital."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.30",
+    "context": "Analyze owners bear financial risk if the venture performs poorly. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Manager employee dependence",
+    "statements": [
+      "Managers can ignore firm health because their salaries are fixed regardless of results.",
+      "Staff wages continue unchanged even when the employing firm stops trading permanently.",
+      "Managers and employees both rely on the firm's continued operation for income and jobs.",
+      "Employees need the firm for wages but the firm does not need employees to operate.",
+      "Mutual dependence between staff and firm is limited to customer-supplier links in the market."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.31",
+    "context": "Consider managers and employees rely on firm performance for livelihood. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Supplier buyer relationship",
+    "statements": [
+      "Only the bakery owners are stakeholders in the flour supply arrangement.",
+      "The flour supplier expects payment and future orders from a neighbourhood bakery.",
+      "The bakery depends on the supplier for quality flour while the supplier depends on bakery orders.",
+      "Delayed bakery orders threaten the flour supplier's cash flow and staffing plans.",
+      "Buyers and suppliers rely on each other for orders and cash flow."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.32",
+    "context": "Analyze how a bakery's flour supplier relies on their bakery for orders and payment. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Customer firm reliance",
+    "statements": [
+      "Firms depend on customers for revenue but customers depend on no particular supplier.",
+      "Closing a relied-upon supplier affects customers, but they have no stakeholder link to that firm.",
+      "Suppliers need customers but customers do not rely on suppliers for availability.",
+      "Customers lose access if a relied-upon supplier closes.",
+      "Buyers need reliable suppliers just as suppliers need paying customers."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.33",
+    "context": "Analyze customers lose access if a relied-upon supplier closes. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Community facility impact",
+    "statements": [
+      "Communities affected by noise from a new plant hold stakeholder interests in how the firm operates.",
+      "Local employment linked to a warehouse gives the community a stake in the firm's continued operation.",
+      "A new warehouse affects traffic and jobs in a town, creating community stakeholder interests.",
+      "Community opposition to a new warehouse signals conflicting interests with the developer.",
+      "Residents near a new facility may experience stakeholder effects from increased lorry movements."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.34",
+    "context": "Analyze a new warehouse affects traffic and jobs in a town. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Government regulation aim",
+    "statements": [
+      "Regulation aims to balance business activity with protection of wider stakeholder interests.",
+      "Business rules set by regulators reflect protection of the wider public interest.",
+      "Regulators have no stakeholder role because businesses operate independently of public policy.",
+      "Environmental rules reflect government acting as a stakeholder for the wider community.",
+      "Government builds roads solely for private amusement unrelated to business logistics."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.35",
+    "context": "Analyze regulators set standards protecting public interest in business conduct. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Sustainability reporting duty",
+    "statements": [
+      "Published sustainability data can inform investors and communities about environmental impacts.",
+      "Communities may rely on published environmental data when assessing local facility impacts.",
+      "Investors may use sustainability disclosures to judge whether environmental claims are credible.",
+      "Green marketing labels replace the need for environmental reporting.",
+      "Sustainability reporting is meant to hide impacts from community stakeholders."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.36",
+    "context": "Analyze investors and communities may demand sustainability reporting. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Profit versus environment conflict",
+    "statements": [
+      "Higher profit targets may clash with environmental spending on cleaner production.",
+      "Profit and environmental protection align perfectly with no trade-offs in every decision.",
+      "Owners and environmental stakeholders agree on every spending priority without exception.",
+      "Pollution control investments raise costs but create no tension with owner stakeholder interests.",
+      "Cleaner production spending can lower short-term profit and tension owner and environmental aims."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.37",
+    "context": "Consider higher profit targets may clash with environmental spending. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Growth versus community conflict",
+    "statements": [
+      "Expansion plans may clash with community preferences about noise and traffic.",
+      "Community objections to a bakery extension illustrate conflicting stakeholder interests in practice.",
+      "A small IT-support venture's growth ambitions may conflict with neighbours' wish to limit delivery traffic.",
+      "Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions.",
+      "Neighbours opposing a small IT-support venture's extension show conflicting stakeholder interests over local amenities."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.38",
+    "context": "Analyze a small IT-support venture plan a larger bakery extension opposed by neighbours. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Stakeholder synthesis",
+    "statements": [
+      "Mutual dependence exists only between customers and suppliers, not among staff and the firm.",
+      "Exam review: stakeholders include anyone affected by or interested in the business.",
+      "Stakeholder analysis applies only to shareholders because they provide capital.",
+      "Greenwash satisfies environmental stakeholders if marketing slogans are persuasive enough.",
+      "Conflicting stakeholder interests do not arise when success factors are managed well."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.39",
+    "context": "Analyze stakeholder theory and success factors for exam review. Evaluate the following economic assertions:",
+    "difficulty_level": "1/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Bakery stakeholder groups",
+    "statements": [
+      "Bakery staff depend on the shop for wages and job security as employee stakeholders.",
+      "Bakery owners seek profit and bear risk from how the shop trades.",
+      "The owners, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery.",
+      "Only a small IT-support venture count as stakeholders because they provided the original capital.",
+      "The flour supplier expects payment and future orders as a supplier stakeholder."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.40",
+    "context": "Consider a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Multinational stakeholder spread",
+    "statements": [
+      "Employees at a components manufacturer's plants are stakeholders affected by corporate decisions.",
+      "Government regulators in host countries hold stakeholder interests in a components manufacturer's operations.",
+      "Communities near a components manufacturer's facilities may be stakeholders affected by jobs and local spending.",
+      "A components manufacturer affects employees, suppliers, communities, and regulators across its operating countries.",
+      "A multinational like a components manufacturer has stakeholders only among its shareholders."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.41",
+    "context": "Consider a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Greenwash marketing trap",
+    "statements": [
+      "Honest green reporting builds less stakeholder trust than bold unsupported eco-claims.",
+      "Superficial eco-labels without operational change fail environmental stakeholder expectations.",
+      "Green packaging claims satisfy environmental stakeholders even when pollution rises.",
+      "Greenwash misleads stakeholders by exaggerating environmental performance in advertising.",
+      "Advertising recyclable boxes while dumping waste illegally illustrates greenwash risk."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.42",
+    "context": "Consider a firm that advertises eco-friendly packaging while increasing pollution. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Supplier contract fairness",
+    "statements": [
+      "Supplier cash flow concerns are unrelated to stakeholder analysis of payment fairness.",
+      "Delayed invoices affect only the buyer's finance department, not supplier stakeholders.",
+      "Fair payment terms matter to suppliers as stakeholder treatment, not only to accountants.",
+      "Suppliers have no stakeholder interest in payment timing once a contract is signed.",
+      "Fair supplier terms are purely legal technicalities, not stakeholder fairness concerns."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.43",
+    "context": "Analyze suppliers argue for fair payment terms when the buyer delays invoices. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Employee shared values",
+    "statements": [
+      "Staff engagement improves when employees feel company practices match their personal values.",
+      "Shared values between staff and the organisation can support overall business success.",
+      "Alignment of personal and company values can improve cooperation on business objectives.",
+      "Staff who share organisational values may identify more closely with firm success.",
+      "Aligned values help employees and managers cooperate on shared business objectives."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.44",
+    "context": "Analyze staff engagement rises when personal values align with company practices. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Owner long term value",
+    "statements": [
+      "Owners have no interest in long-term business value, only in immediate cash extraction.",
+      "Long-term value growth is unrelated to owner stakeholder concerns about risk and reward.",
+      "Weighing dividends against reinvestment affects the long-term value owners seek.",
+      "Retaining profit in the business rather than paying dividends can build long-term owner value.",
+      "Reinvestment decisions affect only accountants, not owner stakeholder interests."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.45",
+    "context": "Analyze owners weighing reinvestment versus dividends affect long-term value. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Customer boycott power",
+    "statements": [
+      "Customers cannot influence firms because switching suppliers is impossible in all markets.",
+      "Falling quality gives customers power to switch suppliers and reduce firm revenue.",
+      "Customers may switch if quality falls, exercising stakeholder influence on revenue.",
+      "Customer boycotts after poor service show stakeholder power over firm revenue.",
+      "Buyers at a bakery have no power because they purchase small quantities each visit."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.46",
+    "context": "Consider customers may switch suppliers if quality falls. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Community employment stake",
+    "statements": [
+      "If the factory closes, the community loses jobs linked to that employer.",
+      "A major employer's expansion or closure decision affects community stakeholders beyond the factory gate.",
+      "Residents whose family members work at the plant hold a community stakeholder interest in its future.",
+      "Local spending from factory wages links community welfare to the firm's continued operation.",
+      "Local jobs concentrating on a single company give the community a direct interest in that firm's continuity."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.47",
+    "context": "Analyze a town relies on one factory for many jobs. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Government infrastructure role",
+    "statements": [
+      "Infrastructure used by firms links government investment to business stakeholder context.",
+      "Tax revenue from trading firms helps fund public infrastructure used by business.",
+      "Public roads built for general use have no connection to business logistics needs.",
+      "Regulators may set transport standards affecting firms that depend on road networks.",
+      "Roads built for public use also support business logistics and distributor operations."
+    ],
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.48",
+    "context": "Analyze government builds roads used by a regional distributor. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  }
+]

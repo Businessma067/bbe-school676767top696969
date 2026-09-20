@@ -1,0 +1,234 @@
+[
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.09",
+    "title": "Bäckerei Novak in Linz",
+    "context": "Herr Novak verkauft in seiner Linzer Bäckerei Brot und Gebäck. Gegen Aufpreis liefert er die Ware an die Wohnungstür. Bewerten Sie die folgenden Aussagen zum Thema private Haushalte, Güter und Unternehmen:",
+    "statements": [
+      "Die Familien, die bei Novak einkaufen, sind private Haushalte; die Bäckerei ist ein Unternehmen, das für andere produziert.",
+      "Brot ist ein Produkt und die Lieferung eine Dienstleistung; beides zählt zu den Gütern.",
+      "Weil Novak ein Unternehmen führt, gehört er selbst keinem privaten Haushalt an.",
+      "Hunger nach Nahrung ist kein Bedürfnis, sobald das Brot von einem Unternehmen stammt.",
+      "Private Haushalte stellen Brot und ähnliche Güter in vielen Fällen nicht selbst her, sondern kaufen sie bei Unternehmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "In der Bäckerei stehen zwei Rollen nebeneinander. Die kaufenden Familien leben zusammen und haben täglich Bedürfnisse nach Nahrung; das Buch nennt genau solche Lebensgemeinschaften private Haushalte. Novaks Betrieb erkennt dieses Bedürfnis und backt für Kundinnen und Kunden, nicht nur für den Eigenbedarf. Eine Bäckerei ist damit das Lehrbuchbeispiel eines Unternehmens, das für andere produziert und Leistungen erstellt.\n\nDie Aussage ist wahr.",
+      "Das Buch trennt Produkte wie Brot und Gebäck von Dienstleistungen wie einer Lieferung, einem Haarschnitt oder einer Trainerstunde, fasst beide Gruppen aber unter dem Oberbegriff Güter. Novak erstellt das physische Gebäck und zusätzlich die Leistung, es an die Tür zu bringen. Wer nur das Brot als Gut gelten lässt und die Lieferung ausklammert, verengt den Begriff, den das Kapitel ausdrücklich weit fasst. Die Trennung Produkt gegen Dienstleistung bleibt sinnvoll, die gemeinsame Klammer Gut ebenso.\n\nDie Aussage ist wahr.",
+      "Unternehmersein ersetzt die Haushaltszugehörigkeit nicht. Der Abschnitt beginnt damit, dass jeder Mensch Teil eines privaten Haushalts ist, egal ob er allein, in einer Partnerschaft oder in einer Familie lebt. Novak backt tagsüber für andere, braucht abends aber selbst Nahrung, Wohnung, Wärme und Körperpflege und steht dann auf derselben Seite wie seine Kundschaft. Die Bäckerei erklärt, warum Güter von Betrieben erstellt werden. Sie erklärt nicht, dass der Inhaber aus der Menge der Haushalte austritt. Zwei Rollen in einer Person sind der Normalfall, nicht ein Widerspruch.\n\nDie Aussage ist falsch.",
+      "Bedürfnisse entstehen bei den Menschen im Haushalt, nicht erst durch die Herkunft der Ware. Nahrung bleibt ein tägliches Bedürfnis, unabhängig davon, ob das Brot in der eigenen Küche oder in einer Bäckerei entsteht. Gerade weil viele Haushalte Brot nicht selbst backen, kaufen sie es als Gut bei Unternehmen. Die Herkunft der Ware löscht das Bedürfnis nicht aus.\n\nDie Aussage ist falsch.",
+      "Menschen könnten die Güter, die sie brauchen und sich wünschen, nicht alle selbst in der nötigen Qualität und Zeit herstellen. Oft fehlen Fähigkeiten, Fertigkeiten, Produktionsbedingungen und Produktionsmittel. Deshalb übernehmen Unternehmen wie Bäckereien diese Aufgaben sehr häufig. Der Satz trifft genau diese häufige Übernahme durch Unternehmen, ohne zu behaupten, Haushalte würden niemals selbst backen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.10",
+    "title": "Esstisch bei der Tischlerei",
+    "context": "Petras Familie bestellt bei Tischler Fabian einen Esstisch. Er fertigt den Tisch und liefert ihn in die Wohnung. Bewerten Sie die folgenden Aussagen zum Thema Haushalte, Produkte und Unternehmen:",
+    "statements": [
+      "Petras Familie handelt als privater Haushalt, Fabians Tischlerei als Unternehmen.",
+      "Der fertige Esstisch ist ein Produkt und damit ein Gut.",
+      "Die Lieferung des Tisches ist keine Dienstleistung, weil nur Reparaturen als Dienstleistungen gelten.",
+      "Die Tischlerei erkennt ein Bedürfnis des Haushalts und bietet an, was die Familie braucht oder sich wünscht.",
+      "Sobald der Tisch bezahlt ist, hat die Familie an diesem Tag keine weiteren Bedürfnisse mehr."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Familienleben begründet im Buch den privaten Haushalt, sobald Menschen zusammenwohnen und täglich Bedürfnisse teilen. Die Tischlerei steht in der Liste der Unternehmen neben Bauunternehmen, Bäckerei und Boutique, also bei den Betrieben, die für andere produzieren und Leistungen erstellen. Fabian fertigt den Tisch nicht für den Eigenbedarf, sondern für Petras Familie und schafft so Nutzen. Die Rollenverteilung im Auftrag ist damit die Grundunterscheidung des Abschnitts, nicht eine besondere Rechtsform.\n\nDie Aussage ist wahr.",
+      "Fahrräder, Brot und ein Auto sind im Text Produkte; sie werden zusammen mit Dienstleistungen Güter genannt. Ein Esstisch ist ein hergestelltes Erzeugnis, das der Haushalt nachfragt und kauft, um ein Bedürfnis nach Wohnung und Alltagsleben zu erfüllen. Die stoffliche Form ändert nichts am Label Produkt. Der Satz trifft die Buchdefinition, ohne die Lieferung mit dem Tisch zu vermischen.\n\nDie Aussage ist wahr.",
+      "Reparaturen sind im Kapitel nur das anschauliche Dienstleistungsbeispiel neben Fahrrädern als Produkt, nicht die einzig zulässige Form. Daneben stehen die Behandlung durch eine Ärztin, die Beratung durch eine Bankmitarbeiterin, ein Haarschnitt und eine Trainerstunde. Fabian erbringt mit der Lieferung in die Wohnung ebenfalls eine Leistung für andere, getrennt vom Produkt Tisch. Das Wörtchen nur macht aus einem Beispiel eine Ausschließlichkeit, die der Text nicht trägt. Wer Lieferungen aus den Dienstleistungen streicht, verwechselt Illustration und Definition.\n\nDie Aussage ist falsch.",
+      "Unternehmen erkennen Bedürfnisse privater Haushalte und bieten an, was diese brauchen oder sich wünschen. Petras Familie will einen geeigneten Tisch; Fabian reagiert mit Fertigung und Lieferung. Genau so beschreibt das Buch den Kern unternehmerischen Handelns: eine Idee für ein Produkt oder eine Dienstleistung, die ein Problem löst und Nutzen stiftet.\n\nDie Aussage ist wahr.",
+      "Jedem privaten Haushalt entstehen jeden Tag viele Bedürfnisse, etwa nach Nahrung, Wärme, Sicherheit, Schlaf, Körperpflege, Bildung und Mobilität. Ein gekaufter Tisch deckt eines davon, lässt die übrigen aber bestehen. Das Kapitel betont die Vielzahl, nicht die einmalige Sättigung durch ein einzelnes Gut. Die absolute Behauptung, mit der Zahlung verschwänden alle Bedürfnisse, hält der Szene nicht stand. Am Abend braucht die Familie weiter Essen, Schlaf und Wärme.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.11",
+    "title": "Zulieferung und Haushaltszugehörigkeit",
+    "context": "Ein Wiener Betrieb montiert Laptops und bezieht Gehäuse von einer spezialisierten Lieferfirma. Bewerten Sie die folgenden Aussagen zum Thema Bedürfnisse von Haushalten und Unternehmen:",
+    "statements": [
+      "Auch Unternehmen haben Bedürfnisse, etwa nach Zulieferteilen, und andere Betriebe können genau darauf ein Angebot ausrichten.",
+      "Bedürfnisse gibt es nur bei Endkundinnen und Endkunden in privaten Haushalten, niemals in Unternehmen.",
+      "Ein Jugendlicher, der mit anderen Studentinnen und Studenten in einer Wohngemeinschaft lebt, gehört zu einem privaten Haushalt.",
+      "Jedes Bedürfnis eines Haushalts muss durch den Kauf eines Produkts oder einer Dienstleistung erfüllt werden.",
+      "Schlaf und Sicherheit nennt das Buch als Beispiele für tägliche Bedürfnisse privater Haushalte."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unternehmen erkennen nicht nur die Bedürfnisse privater Haushalte, sondern auch die anderer Unternehmen. Wer Gehäuse, Schrauben oder Software braucht, um selbst produzieren zu können, hat ein betriebliches Bedürfnis. Die Lieferfirma bietet an, was der Montagebetrieb braucht oder sich wünscht, und schafft damit Wert für Geschäftskundschaft. Das Kapitel stellt diese zweite Kundengruppe ausdrücklich neben die Haushalte.\n\nDie Aussage ist wahr.",
+      "Die Formel niemals in Unternehmen streicht genau die zweite Hälfte des Lehrsatzes. Betriebe erkennen Bedürfnisse privater Haushalte und/oder anderer Unternehmen und bieten an, was diese brauchen oder sich wünschen. Der Laptop-Monteur braucht Gehäuse, der Gehäusehersteller vielleicht Werkzeuge von einem Dritten. Wer Bedürfnisse allein den Endverbraucherinnen und Endverbrauchern zuschreibt, verwechselt den häufigsten Anschauungsfall mit der einzigen zulässigen Quelle. Beide Seiten der Kundschaft sind im Text vorgesehen, und Wert entsteht auch zwischen Firmen.\n\nDie Aussage ist falsch.",
+      "Ein paar Studentinnen und Studenten in einer Wohngemeinschaft gelten ebenso als privater Haushalt wie eine vierköpfige Familie oder eine alleinlebende Person. Alter, Ausbildungsstatus und fehlende eigene Firma ändern daran nichts. Der Jugendliche teilt Wohnung, Alltag und Bedürfnisse mit den Mitbewohnerinnen und Mitbewohnern. Die Haushaltsdefinition hängt am Zusammenleben, nicht am Gewerbeschein. Laptopmontage in einer fremden Firma ist dafür unerheblich.\n\nDie Aussage ist wahr.",
+      "Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung, auch wenn das für viele zutrifft. Schlaf kann ohne Markttransaktion gelingen, Sicherheit im nahen Umfeld oder ein Gespräch ebenso. Brot, Zahnbürste oder eine Arztbehandlung liegen eher auf der anderen Seite. Das Buch zieht genau diese Grenze, statt Bedürfnis und Kaufakt gleichzusetzen. Das Wort jedes überzieht eine häufige, aber nicht lückenlose Verbindung.\n\nDie Aussage ist falsch.",
+      "Die Aufzählung im Kapitel umfasst Nahrung, Wohnung, Wärme und Sicherheit, Schlaf, Körperpflege, Bildung und Mobilität. Schlaf und Sicherheit stehen dort als alltägliche Bedürfnisse jedes privaten Haushalts, nicht als Sonderfälle. Sie müssen nicht immer ein Gut auslösen, gehören aber zur täglichen Vielzahl. Der Satz gibt die Beispiele korrekt wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.12",
+    "title": "Lukas in der Wohngemeinschaft",
+    "context": "Student Lukas teilt sich mit zwei Kolleginnen eine Wohnung in Graz. Er kauft Zahnbürsten, fährt mit dem Bus und geht gelegentlich zum Haarschnitt. Bewerten Sie die folgenden Aussagen zum Thema private Haushalte und Güter:",
+    "statements": [
+      "Die Wohngemeinschaft zählt als privater Haushalt, ebenso wie eine Person, die allein in einer Wohnung lebt.",
+      "Körperpflege und Mobilität sind Bedürfnisse, für die Güter wie Zahnbürste, Seife oder eine Busfahrt oft hilfreich sind.",
+      "Bildung ist kein Bedürfnis privater Haushalte, weil sie im Alltag keine Rolle spielt.",
+      "Ein Haarschnitt ist eine Dienstleistung, mit der ein Bedürfnis nach Körperpflege erfüllt werden kann.",
+      "Solange Lukas kein Unternehmen gründet, ist er nicht Teil der Wirtschaft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Das Kapitel stellt die WG der Studentinnen und Studenten bewusst neben die Familie und die alleinlebende Person. Allen ist gemeinsam, dass sie private Haushalte bilden und täglich viele Bedürfnisse haben. Lukas teilt Wohnung und Alltag mit den Kolleginnen; das reicht für die Einordnung. Eine zweite, alleinlebende Nachbarin wäre ebenfalls ein Haushalt, nicht erst eine Familie mit Kindern. Die Größe der Wohnung ändert die Zugehörigkeit nicht.\n\nDie Aussage ist wahr.",
+      "Körperpflege und Mobilität stehen in der Bedürfnisliste. Seife und Zahnbürste sind die Produktbeispiele, Treibstoff, Energie und ein Auto die mobilen Pendants; eine Busfahrt ist die passende Dienstleistung. Nicht jedes Bedürfnis erzwingt einen Kauf, aber für diese beiden ist ein Gut oft notwendig oder zumindest hilfreich. Lukas Alltag mit Zahnbürste und Bus folgt genau diesem Muster, ohne dass jedes weitere Bedürfnis ebenfalls einen Einkauf verlangen würde.\n\nDie Aussage ist wahr.",
+      "Bildung steht ausdrücklich in der Reihe der täglichen Bedürfnisse, neben Nahrung, Wohnung und Mobilität. Ein Studentenhaushalt macht das besonders sichtbar, weil Studium und Lernen den Tag strukturieren. Bücher, Kurse oder eine Beratung können Güter sein, müssen es aber nicht in jedem Fall. Wer Bildung aus dem Wirtschaftsalltag streicht, ignoriert die Buchliste. Der Satz ist falsch, weil das Kapitel Bildung benennt, nicht weil sie unsichtbar wäre.\n\nDie Aussage ist falsch.",
+      "Unter den Dienstleistungsbeispielen nennt der Text einen Haarschnitt neben Arztbesuch, Bankberatung und Trainerstunde. Körperpflege ist das zugehörige Bedürfnis; der Friseurbetrieb erstellt die Leistung für andere. Produkte wie Seife können dasselbe Feld ergänzen, ersetzen die Dienstleistung aber nicht begrifflich. Der Haarschnitt bleibt ein Gut im weiteren Sinn.\n\nDie Aussage ist wahr.",
+      "Die Überschrift sagt, jeder Mensch sei Teil der Wirtschaft, und begründet das mit der Zugehörigkeit zu einem privaten Haushalt. Lukas lebt in einer WG, hat Bedürfnisse und fragt Zahnbürsten, Busfahrten und Haarschnitte nach. Dafür braucht er keine eigene Firma. Ein Unternehmen wäre eine zweite, häufige Rolle bei der Erstellung von Gütern für andere. Die Eintrittskarte ins Wirtschaftsleben ist der Haushalt, nicht der Gewerbeschein. Ohne Gründung bleibt er Kundschaft und Haushaltsmitglied, nicht außen vor. Die Szene in Graz zeigt genau diese alltägliche Einbindung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.13",
+    "title": "Kinderräder der woom GmbH",
+    "context": "Eltern möchten für ihre Kinder gut geeignete Fahrräder. Die in Klosterneuburg ansässige woom GmbH entwickelt Räder, die auf Kinder und ihre Anatomie abgestimmt sind. Bewerten Sie die folgenden Aussagen zum Thema Kundenbedürfnisse und Unternehmensidee:",
+    "statements": [
+      "woom hat das Bedürfnis nach einem kindertauglichen Fahrrad erkannt und mit einem Angebot darauf reagiert.",
+      "Ein Unternehmen schafft nur dann Wert und Nutzen, wenn es ausschließlich an andere Unternehmen liefert und private Haushalte meidet.",
+      "Eine durchdachte Produktidee, die ein Bedürfnis erfüllt, ein Problem löst oder eine Lücke schließt, ist die Grundlage eines erfolgreichen Unternehmens.",
+      "Weil ein Teil der Komponenten nicht speziell für Kinder entwickelt ist, richtet sich das Angebot nicht an Kinderbedürfnisse.",
+      "Die Gründungsidee setzte bei der Suche nach dem passenden Rad für die eigenen Kinder der Gründerinnen und Gründer an."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eltern, die selbst Rad fahren, können das Bedürfnis haben, auch für ihre Kinder geeignete Räder anzuschaffen. Das Buch führt woom genau als Betrieb an, der dieses Bedürfnis erkannt hat und mit kindgerechten Fahrrädern antwortet. Komponenten, die auf Anatomie und Alltag von Kindern zugeschnitten sind, sind das konkrete Angebot. Erkennen und Reagieren sind hier keine Werbesprüche, sondern der Mechanismus aus dem Kapitel.\n\nDie Aussage ist wahr.",
+      "Wert und Nutzen entstehen für Kundinnen und Kunden, und dazu zählen private Haushalte ebenso wie andere Unternehmen. woom verkauft Kinderräder an Familien, also an Haushalte, und erfüllt damit die Buchformel. Ausschließlich Geschäftskundschaft zu bedienen ist weder Pflicht noch Gütesiegel. Das Wort nur verdreht eine Oder-Beziehung in eine falsche Ausschließlichkeit. Ein Betrieb kann beide Kundengruppen bedienen oder eine davon, ohne den Begriff Unternehmen zu verlieren.\n\nDie Aussage ist falsch.",
+      "Ein erfolgreiches Unternehmen basiert auf einer gut durchdachten Idee für ein Produkt oder eine Dienstleistung, die ein Bedürfnis erfüllt. Das Kapitel ergänzt: ein Problem lösen, eine Lücke schließen, Arbeit erleichtern oder das Leben angenehmer machen, und so Mehrwert und Nutzen stiften. Die Kinderräder treffen genau diese Kette von Idee, Bedürfnis und Kundennutzen. Ohne diesen Bezug bleibt eine technische Konstruktion wirtschaftlich leer.\n\nDie Aussage ist wahr.",
+      "Das Beispiel betont, dass ein sehr großer Teil der Komponenten speziell für Kinder entwickelt und exklusiv gefertigt wird, damit die Räder zur Anatomie passen. Genau das liest das Buch als Beleg, dass sich das Angebot an Kinder und Eltern richtet. Ein Restanteil anderer Teile ist in jedem zusammengesetzten Produkt üblich und widerlegt die Ausrichtung nicht. Wer aus unvollständiger Spezialanfertigung schließt, das Kind werde ignoriert, verdreht ein Qualitätsdetail in sein Gegenteil. Die Orientierung am Bedürfnis bleibt der Punkt der Stelle, nicht eine hundertprozentige Teileliste.\n\nDie Aussage ist falsch.",
+      "Die Website-Erzählung im Buch beginnt mit der Suche nach dem perfekten Rad für die eigenen Kinder. Die Gründerinnen und Gründer wollten wissen, was ein ideales Kinderrad ausmacht, und Räder bauen, die Kinder und Eltern begeistern. Die Unternehmensidee wächst also aus einem privaten Bedürfnis, das anschließend als Angebot für viele Haushalte skaliert. Das ist der Lehrbuchweg von der Beobachtung zur Firma.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.14",
+    "title": "Wer gilt als privater Haushalt",
+    "context": "In einem Mehrfamilienhaus wohnen eine alleinstehende Pensionistin, eine vierköpfige Familie und drei Studierende in einer WG. Im Erdgeschoss arbeitet eine Boutique. Bewerten Sie die folgenden Aussagen zum Thema private Haushalte und Unternehmen:",
+    "statements": [
+      "Die alleinstehende Pensionistin bildet für sich einen privaten Haushalt.",
+      "Nur Lebensgemeinschaften mit mindestens vier Personen gelten als private Haushalte.",
+      "Haushalte könnten sämtliche Güter, die sie brauchen und sich wünschen, stets selbst in der nötigen Qualität und Zeit herstellen.",
+      "Die Boutique ist ein Unternehmen, das für andere produziert oder Leistungen erstellt und sich an Kundenbedürfnissen orientiert.",
+      "Allen drei Wohnformen ist gemeinsam, dass sie täglich eine Vielzahl von Bedürfnissen haben."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine Person, die allein in einer Wohnung oder in einem Haus lebt, gilt ebenso als privater Haushalt wie eine Familie oder eine WG. Der Familienstand als Pensionistin ändert die Definition nicht. Sie hat dieselben alltäglichen Bedürfnisse nach Nahrung, Wohnung, Wärme und Sicherheit. Alleinleben nimmt niemanden aus der Wirtschaft heraus, es macht den Haushalt nur kleiner.\n\nDie Aussage ist wahr.",
+      "Die Vier-Personen-Familie ist ein Beispiel, keine Untergrenze. Das Buch setzt die Familie, die WG und die alleinlebende Person ausdrücklich gleich. Eine Mindestkopfzahl von vier würde die Pensionistin und viele Paare aus dem Begriff drängen, obwohl der Text sie einschließt. Nur plus Zahl verwandelt eine Illustration in eine falsche Regel. Im Mehrfamilienhaus wären dann zwei der drei Wohnformen keine Haushalte, was dem Kapitel widerspricht.\n\nDie Aussage ist falsch.",
+      "Menschen könnten die Güter, die sie brauchen und sich wünschen, nicht alle selbst produzieren, weil das zu schwierig oder unmöglich wäre. In den meisten Fällen fehlen die nötigen Fähigkeiten und Fertigkeiten sowie die Produktionsbedingungen und Produktionsmittel. Deshalb übernehmen Unternehmen diese Aufgaben sehr häufig. Stets selbst herstellen überzieht den Satz ins Gegenteil dessen, was das Kapitel als erstes Merkmal der Wirtschaft beschreibt: Güter werden von Betrieben erstellt und von Haushalten nachgefragt. Die Boutique im Erdgeschoss existiert gerade deshalb.\n\nDie Aussage ist falsch.",
+      "Die Boutique steht im Buch in einer Reihe mit Bauunternehmen, Tischlerei, Bäckerei und Rundfunkunternehmen. All diese Betriebe produzieren für andere, erkennen Bedürfnisse und bieten an, was Kundinnen und Kunden brauchen oder sich wünschen. Im Erdgeschoss des Hauses erfüllt die Boutique genau diese Rolle gegenüber den Haushalten darüber. Der Satz hält sich an die Definition und verlangt keine Lieferung an andere Firmen, obwohl auch das zulässig wäre.\n\nDie Aussage ist wahr.",
+      "Was allen privaten Haushalten gemeinsam ist, ist die tägliche Vielzahl von Bedürfnissen. Familie, WG und Alleinlebende unterscheiden sich in der Größe, nicht in dieser Eigenschaft. Nahrung, Wohnung, Wärme, Sicherheit und die übrigen Punkte der Liste entstehen unabhängig vom Familientyp. Die gemeinsame Klammer des Kapitels ist genau diese Bedürfnisvielfalt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.15",
+    "title": "Angebot, Nachfrage und der Begriff Gut",
+    "context": "In einer Kleinstadt gibt es eine Bäckerei, eine Fahrradwerkstatt und eine Arztpraxis. Bewerten Sie die folgenden Aussagen zum Thema Güter, Bedürfnisse und die Rolle der Unternehmen:",
+    "statements": [
+      "Güter werden nur nachgefragt und gekauft; Produzieren und Anbieten gehören nicht zur Wirtschaft.",
+      "Fahrräder sind Produkte, Reparaturen Dienstleistungen; beide werden Güter genannt.",
+      "Unternehmen übernehmen die Erstellung vieler Güter, weil Haushalte oft weder Fähigkeiten noch Produktionsmittel dafür haben.",
+      "Ein Betrieb, der nur an andere Unternehmen liefert, erkennt keine Bedürfnisse, weil Bedürfnisse ausschließlich in Haushalten entstehen.",
+      "Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ein erstes wesentliches Merkmal der Wirtschaft ist, dass Produkte und Dienstleistungen existieren und denselben Namen Güter tragen. Sie werden einerseits produziert und angeboten und andererseits nachgefragt und gekauft, damit Bedürfnisse erfüllt werden können. Die Bäckerei, die Werkstatt und die Praxis stehen auf der Angebotsseite; Haushalte fragen nach. Nur Nachfrage ohne Erstellung streicht die Hälfte des Mechanismus. Ohne Anbieten gäbe es die genannten Betriebe in der Kleinstadt gar nicht als wirtschaftliche Akteure im Sinne dieses Kapitels.\n\nDie Aussage ist falsch.",
+      "Das Kapitel wählt gerade Fahrräder als Produktbeispiel und Reparaturen als Dienstleistungsbeispiel. Anschließend heißt es, Produkte und Dienstleistungen würden auch Güter genannt. Die Werkstatt, die ein Rad instand setzt, erstellt also ein Gut im weiteren Sinn, auch wenn nichts Neues aus der Fabrikhalle rollt. Die Doppelbezeichnung ist Absicht, keine Nachlässigkeit.\n\nDie Aussage ist wahr.",
+      "Haushalte könnten die benötigten Güter nicht alle selbst in der nötigen Qualität oder Zeit herstellen. Das wäre zu schwierig oder unmöglich, weil in den meisten Fällen Fähigkeiten, Fertigkeiten, Produktionsbedingungen und Produktionsmittel fehlen. Deshalb werden diese Aufgaben sehr häufig von Unternehmen übernommen. Bäcker, Mechanikerin und Ärztin sind genau solche Übernahmen, nicht Ausnahmen vom Lehrsatz. Häufig heißt dabei nicht immer, aber der Grundmechanismus bleibt.\n\nDie Aussage ist wahr.",
+      "Das Buch sagt Haushalte und/oder andere Unternehmen. Bedürfnisse anderer Betriebe sind also vorgesehen, etwa nach Vorleistungen, Werkzeugen oder Sendeminuten eines Rundfunkunternehmens. Wer ausschließlich an Firmen liefert, erkennt dennoch Bedürfnisse, nur eben betriebliche. Ausschließlich Haushalte als Quelle zu setzen, ignoriert das Oder im Lehrsatz. Die Werkstatt kann Räder von Haushalten reparieren und zugleich einer Bäckerei den Firmenwagen instand setzen.\n\nDie Aussage ist falsch.",
+      "Der Text trennt klar: Nicht jedes Bedürfnis braucht zur Erfüllung ein Produkt oder eine Dienstleistung, aber für viele ist es zutreffend. Schlaf, ein Gespräch oder Sicherheit im nahen Umfeld können ohne Kauf gelingen; Brot, Zahnbürste oder eine Arztbehandlung oft nicht. Die Kleinstadt illustriert die zweite Gruppe, widerlegt die erste nicht. Der Satz gibt die Einschränkung des Buches wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.1",
+    "case_id": "WISO 1.1.16",
+    "title": "Zwei Rollen in einer Person",
+    "context": "Frau Berger führt ein kleines Bauunternehmen und lebt allein in einer Wohnung. Am Abend schläft sie, ohne dafür eine Dienstleistung zu kaufen. Bewerten Sie die folgenden Aussagen zum Thema Zugehörigkeit zur Wirtschaft:",
+    "statements": [
+      "Jeder Mensch ist Teil eines privaten Haushalts, unabhängig davon, ob er allein, in einer Partnerschaft oder in einer Familie lebt.",
+      "Studentinnen und Studenten in einer Wohngemeinschaft gelten nicht als privater Haushalt, weil sie noch in Ausbildung sind.",
+      "Frau Berger gehört als Alleinlebende einem privaten Haushalt an und führt zugleich ein Unternehmen, das für andere produziert.",
+      "Schlaf ist ein Bedürfnis, das immer durch den Kauf einer Dienstleistung erfüllt werden muss.",
+      "Ein Bauunternehmen schafft Wert und Nutzen für Kundinnen und Kunden, sobald es deren Bedürfnisse erkennt und passende Leistungen anbietet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der erste Satz des Abschnitts ist eindeutig: Jeder Mensch ist Teil eines privaten Haushalts, egal ob er allein oder in einer Partnerschaft oder Familie lebt. Die Lebensform wechselt, die Zugehörigkeit nicht. Frau Berger allein in der Wohnung fällt unter dieselbe Regel wie ein Paar oder eine Familie mit Kindern. Die Wirtschaft beginnt also nicht erst bei der Firma, sondern schon bei dieser Haushaltszugehörigkeit.\n\nDie Aussage ist wahr.",
+      "Ein paar Studentinnen und Studenten, die in einer Wohngemeinschaft zusammenleben, gelten ausdrücklich als privater Haushalt. Der Ausbildungsstatus ist kein Ausschlusskriterium. Sie haben dieselben täglichen Bedürfnisse nach Wohnung, Nahrung, Bildung und Mobilität. Die Behauptung, Ausbildung halte sie außerhalb, widerspricht dem Beispiel im Buch. Frau Bergers Alleinwohnen ändert diese WG-Regel nicht, beide Formen zählen.\n\nDie Aussage ist falsch.",
+      "Alleinleben begründet den Haushalt; das Bauunternehmen begründet die zweite Rolle, Leistungen für andere zu erstellen. Das Kapitel nennt Bauunternehmen namentlich unter den Betrieben, die für Kundinnen und Kunden produzieren. Dieselbe Person kann abends Haushalt und tagsüber Unternehmen sein, ohne dass eine Rolle die andere aufhebt. Die Szene um Frau Berger ist genau diese Doppelung, die schon bei einem Bäcker oder einer Boutiqueinhaberin gilt.\n\nDie Aussage ist wahr.",
+      "Schlaf steht in der Bedürfnisliste, und zugleich gilt: Nicht jedes Bedürfnis braucht ein Produkt oder eine Dienstleistung. Frau Berger erfüllt Schlaf durch Ruhen in der eigenen Wohnung, ohne eine Trainerstunde, eine Übernachtung im Hotel oder eine andere bezahlte Leistung zu kaufen. Immer plus Kaufakt macht aus einem möglichen Hilfsmittel eine Pflicht, die der Text gerade verneint. Eine Matratze kann helfen, muss aber nicht gekauft werden, damit Schlaf überhaupt ein Bedürfnis ist. Das Bedürfnis bleibt, der Marktzwang nicht. Genau diese Unterscheidung trennt 1.1 von einer reinen Kaufliste.\n\nDie Aussage ist falsch.",
+      "Unternehmen erkennen Bedürfnisse privater Haushalte und/oder anderer Unternehmen und bieten an, was diese brauchen oder sich wünschen. Sie schaffen so Wert und Nutzen. Ein Bauunternehmen, das Wohnraum oder Sanierung liefert, folgt diesem Muster. Erfolg hängt an der durchdachten Idee, die ein Problem löst, nicht bloß am Schild über der Tür.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

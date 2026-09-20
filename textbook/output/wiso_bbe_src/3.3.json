@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Profit-oriented Basics",
+    "statements": [
+      "Strong customer demand alone guarantees profit regardless of expenses.",
+      "Break-even performance is the primary long-run goal of most profit-oriented manufacturers.",
+      "Recording revenue without controlling costs satisfies the profit objective.",
+      "Profit means matching expenses exactly while ignoring any surplus.",
+      "Covering costs alone is the usual long-run goal of profit-oriented manufacturers."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.01",
+    "context": "Review how profit-oriented businesses relate revenues to costs and expenses. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Bakery Oven Reinvestment",
+    "statements": [
+      "Seeking revenue above costs to buy new ovens reflects profit-oriented reinvestment logic.",
+      "Retained surplus from profitable sales can finance equipment upgrades.",
+      "The shop treats higher revenue than expenses as the basis for buying new ovens.",
+      "Durability requires distributing all earnings immediately to owners.",
+      "Oven purchases must come from donations rather than business surplus."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.02",
+    "context": "Consider a bakery chain targets revenue above costs to fund new ovens in a growing shop. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Revenue versus Costs",
+    "statements": [
+      "Cost control matters because profit compares revenue with total expenses.",
+      "Commercial expansion often relies on profit rather than persistent losses.",
+      "Margin above break-even allows commercial firms to expand operations.",
+      "Profit emerges when revenue exceeds total costs in a period.",
+      "Profit orientation requires revenues to exceed costs and expenses."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.03",
+    "context": "Analyze the revenue-versus-cost relationship in profit orientation. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Disaster Relief Funding",
+    "statements": [
+      "Charging a cost-recovery fee for some supplies converts a humanitarian NPO into a profit-maximising firm.",
+      "Any surplus from donations can be reinvested into further relief work.",
+      "Not-for-profit status means the organisation may ignore funding entirely.",
+      "Dispatching kits without prior inflows is typical NPO practice.",
+      "Relief organisations need no inflows because volunteers supply everything."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.04",
+    "context": "Consider a humanitarian NPO collecting donations before dispatching flood-relief kits to affected towns. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Profit Reinvestment",
+    "statements": [
+      "Profits can fund new equipment that improves future service capacity.",
+      "Retained profit can be reinvested to improve durability and sustainability of a business.",
+      "Reinvestment supports long-run survival alongside owner returns.",
+      "Repair shops reinvesting profit into diagnostic tools show commercial reinvestment.",
+      "Profit cannot fund equipment because it must be distributed immediately."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.05",
+    "context": "Review reinvestment of profit in commercial firms. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Merchandise and Mission Funding",
+    "statements": [
+      "Selling merchandise can raise funds for habitat work within an NPO model.",
+      "Merchandise income helps cover operating costs while funding conservation work.",
+      "Habitat work funded from surplus proves the organisation maximises owner wealth.",
+      "A conservation NPO seeks maximum private owner wealth like a listed corporation.",
+      "A conservation NPO must distribute merchandise surplus as private shareholder dividends."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.06",
+    "context": "Consider a conservation NPO that sells branded merchandise and ploughs surplus into habitat protection. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Owner and Investor Reward",
+    "statements": [
+      "Investors treat retained profit as reward for capital placed at risk.",
+      "Owner return logic treats profit as payoff for committing capital to uncertain ventures.",
+      "Profit orientation excludes any return to owners because customers pay prices.",
+      "Profits reward owners and investors for the risk they have taken.",
+      "Owners deserve no return when revenues exceed expenses."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.07",
+    "context": "Review profit as reward for owners and investors. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Startup Founder Risk",
+    "statements": [
+      "Investors bear no risk in startups because lenders absorb all uncertainty.",
+      "Startups are NPOs because early years may show low margins.",
+      "Covering costs fully removes any need to reward risk-bearing owners.",
+      "Profit has no connection to capital placed at risk.",
+      "Risk-bearing founders should expect no return when revenues exceed expenses."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.08",
+    "context": "Consider startup founders who expect profit as compensation for the risk they have invested. Evaluate the following economic assertions:",
+    "difficulty_level": "1/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Not-for-Profit Organisation Aims",
+    "statements": [
+      "Mission delivery still requires enough inflows to finance operations.",
+      "Not-for-profit organisations pursue a social or environmental mission rather than owner profit-maximisation.",
+      "A surplus in an NPO is typically used to further the organisation's purpose.",
+      "Humanitarian, conservation, and environmental campaign NPOs all pursue mission delivery rather than private profit.",
+      "Not-for-profit status means the organisation may ignore funding needs entirely."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.09",
+    "context": "Analyze the main aim of not-for-profit organisations when they pursue a mission rather than owner profit. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Charity Clinic Cost Coverage",
+    "statements": [
+      "Surplus from billing can improve patient services rather than owner payouts.",
+      "Treating patients while covering costs shows mission delivery with financial discipline.",
+      "Billing insurers to cover running costs aligns with not-for-profit cost coverage.",
+      "Billing insurers converts the clinic into a listed corporation.",
+      "Community clinics prove NPOs never need to cover staff or supply costs."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.10",
+    "context": "Consider a charity clinic bills insurers enough to cover running costs while treating patients. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Covering Costs in NPOs",
+    "statements": [
+      "NPOs ignore revenue because mission work is voluntary in nature.",
+      "Food banks track whether donations cover warehouse rent for ongoing operation.",
+      "Not-for-profit status does not prevent earning surplus reinvested for the mission.",
+      "Mission delivery requires no financial inflows once an NPO is registered.",
+      "Donor income frees an NPO from covering operating costs responsibly."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.11",
+    "context": "Review cost coverage for not-for-profit organisations. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "NGO Theatre Ticket Surplus",
+    "statements": [
+      "Ticket income covering nightly running costs lets performances continue.",
+      "Outreach funded from surplus shows mission reinvestment of NPO gains.",
+      "Performances require covered costs even when the mission is cultural outreach.",
+      "Reinvesting ticket surplus in outreach uses NPO gains for mission expansion.",
+      "The theatre combines earned ticket income with mission reinvestment aims."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.12",
+    "context": "Consider an NGO theatre sells tickets nightly and reinvests any surplus in outreach programmes. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Donations as Revenue",
+    "statements": [
+      "Donor income supports campaigns when earned revenue is limited.",
+      "Mixed donations and fees cannot sustain an NPO because only one revenue source is allowed.",
+      "Prior surplus cannot fund later aid shipments for humanitarian organisations.",
+      "Humanitarian NGOs dispatch kits before any funding because urgency overrides finance.",
+      "Donor gifts remove any need for NPOs to cover operating costs responsibly."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.13",
+    "context": "Review donations as revenue for non-profit organisations. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Investors and Retained Profit",
+    "statements": [
+      "Retained profit can reward investors for capital exposed to business risk.",
+      "Investors expect profit as compensation for capital committed to the firm.",
+      "Retained earnings and investor reward both link to business risk-bearing.",
+      "Fixed wages to investors replace profit regardless of business performance.",
+      "Capital at risk deserves no return when revenues exceed expenses."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.14",
+    "context": "Consider how investors treat retained profit as reward for capital placed at risk. Evaluate the following economic assertions:",
+    "difficulty_level": "1/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "NPO Revenue Mix",
+    "statements": [
+      "Donations and membership fees can fund not-for-profit operations.",
+      "Trading surplus can support mission spending within an NPO model.",
+      "Not-for-profit organisations never generate any surplus by definition.",
+      "Mission spending can only be financed by government grants.",
+      "Any surplus must be paid out as dividends to private owners."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.15",
+    "context": "Review how not-for-profit organisations finance their activities. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Humanitarian NPO Characteristics",
+    "statements": [
+      "A humanitarian NPO kit dispatch requires prior inflows to fund materials and logistics.",
+      "Mission delivery, not private profit-maximisation, is the organisation's primary aim.",
+      "A humanitarian NPO is legally the same as any listed for-profit corporation.",
+      "A humanitarian NPO operates without covering staff or warehouse costs.",
+      "Any surplus must be distributed as private shareholder dividends."
+    ],
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.16",
+    "context": "Review a humanitarian not-for-profit organisation as an economic actor. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  }
+]

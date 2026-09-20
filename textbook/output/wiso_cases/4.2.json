@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.01",
+    "title": "Digitalisierte Produkte und Dienstleistungen",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie Digitalisierung Produkte und Dienstleistungen verändert:",
+    "statements": [
+      "Viele Produkte und Dienstleistungen haben sich durch die Digitalisierung verändert.",
+      "Bei den Wiener Linien wird der Kauf eines Fahrscheins mittlerweile durch eine App ergänzt; über ein Kundenkonto lassen sich Fahrkarten digital verwalten und vorweisen.",
+      "Nur der öffentliche Verkehr nutzt solche Möglichkeiten; der Lebensmittelhandel bleibt ohne digitale Bestellung und Lieferung.",
+      "Dienstleister wie Gurkerl, Flink oder Mjam sowie Händler wie Billa, Hofer oder Interspar bieten an, Einkäufe nach Hause zu liefern.",
+      "All diese neuen Möglichkeiten setzen ausdrücklich nicht auf Technologie, sondern ersetzen Informationstechnologie durch rein analoge Schalter."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zehn Jahre zurückgedacht sieht der Alltag oft anders aus. Der Abschnitt öffnet mit genau diesem Abstand: die Art und Weise, wie Produkte und Dienstleistungen in der digitalisierten Welt verwendet werden, hat sich gegenüber früher verschoben. Digitalisierung ist hier nicht ein einzelnes Gerät, sondern die veränderte Nutzung. Fahrschein, Einkauf und Lieferung sind die ersten Bilder dafür, bevor Geschäftsmodelle formal definiert werden.\n\nDie Aussage ist wahr.",
+      "Papierfahrschein und App stehen nebeneinander, nicht als Entweder-oder. Der Kauf bei den Wiener Linien wird durch eine App ergänzt. Über ein Kundenkonto verwalten und vorweisen Sie Fahrkarten digital, etwa die Jahreskarte. Ergänzung heißt: der digitale Weg tritt hinzu, der Text behauptet nicht, analoge Schalter seien verschwunden. Technologie ändert hier die Dienstleistung des öffentlichen Verkehrs, noch bevor von Webshops die Rede ist.\n\nDie Aussage ist wahr.",
+      "Lebensmittelhandel steht ausdrücklich in derselben Reihe, nicht als Randnotiz. Über eine Webseite stellen Kundinnen und Kunden den Einkauf zusammen; je nach Bedingungen kommt die Bestellung nach Hause, oft in kurzer Zeit. Gurkerl, Flink und Mjam sind Dienstleister, Billa, Hofer und Interspar Händler mit eigenem Lieferangebot. Wer nur den Fahrschein der Wiener Linien gelten lässt und den Handel ausklammert, streicht die zweite Hälfte des Einstiegs und damit die Behauptung, Digitalisierung verändere viele Produkte und Dienstleistungen. Die Verengung auf den öffentlichen Verkehr allein ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Zwei Gruppen, ein Muster. Externe Dienstleister liefern, und Lebensmittelhändler selbst tun dasselbe. Die Namen Gurkerl, Flink, Mjam sowie Billa, Hofer, Interspar stehen im Text als Belege, nicht als Werbeliste. Bequem über eine Webseite zusammenstellen und nach Hause geliefert bekommen: genau das ist die veränderte Dienstleistung. Ohne diese Beispiele bliebe die Behauptung, Digitalisierung verändere den Handel, leer.\n\nDie Aussage ist wahr.",
+      "Technologie ist die Voraussetzung, nicht das Gegenteil. Der Abschnitt sagt klar: all diese neuen Möglichkeiten setzen auf Technologie und verändern bzw. ermöglichen neue Geschäftsmodelle. Durch den Einsatz von Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. Analog-only als Ersatz der IT widerspricht diesem Satz. Wer Schalter gegen Apps ausspielt, als gäbe es keine IT, verfehlt den Kern des Unterabschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.02",
+    "title": "Was ein Geschäftsmodell beschreibt",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition des Geschäftsmodells:",
+    "statements": [
+      "Ein Geschäftsmodell beschreibt, wie ein Unternehmen auf Basis einer Geschäftsidee ein Produkt oder eine Dienstleistung erzeugt, bereitstellt und vertreibt, um nach Gegenüberstellung eingesetzter Ressourcen und Einnahmen einen Gewinn zu erwirtschaften.",
+      "Diese Gewinnentstehung bezeichnet der Text als Wertschöpfung.",
+      "Ein Geschäftsmodell betrifft nur die Werbeidee auf Plakaten; Erzeugung, Bereitstellung und Vertrieb gehören nicht dazu.",
+      "Ressourcen und Einnahmen werden im Modell gegenübergestellt, bevor von Gewinn die Rede ist.",
+      "Informationstechnologie lässt Produkte, Dienstleistungen und Geschäftsmodelle unberührt; sie ändert nur die Büroausstattung."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Geschäftsidee allein ist noch kein Modell. Der Lehrtext spannt den Bogen von der Idee über Erzeugung, Bereitstellung und Vertrieb bis zur Gegenüberstellung von Ressourcen und Einnahmen. Ziel ist Gewinn. Genau diese Kette heißt Geschäftsmodell. Wer nur die Idee nennt oder nur den Verkauf, lässt Stufen weg, die der Definitionssatz alle enthält. Fahrradkarte, Webshop und Streaming werden später als Ausprägungen derselben Logik lesbar.\n\nDie Aussage ist wahr.",
+      "Wertschöpfung ist hier kein lockeres Modewort. In Klammern setzt der Text sie an das Erwirtschaften eines Gewinns nach der Gegenüberstellung von eingesetzten Ressourcen und Einnahmen. Wert entsteht also, wenn Einnahmen die eingesetzten Mittel in dieser Betrachtung übersteigen, nicht schon beim bloßen Vorhandensein einer App. Später knüpft Abbildung 29 denselben Begriff an den IT-Einsatz.\n\nDie Aussage ist wahr.",
+      "Plakate decken höchstens einen Rand des Vertriebs. Erzeugung und Bereitstellung stehen in der Definition gleichrangig neben dem Vertreiben. Ein Modell, das nur Werbung kennt und Produktion sowie Lieferung streicht, ist nach dem Buch kein Geschäftsmodell. Die drei Verben erzeugen, bereitstellen, vertreiben gehören zusammen. Ohne sie gäbe es keine Grundlage, Ressourcen und Einnahmen gegenüberzustellen.\n\nDie Aussage ist falsch.",
+      "Zuerst die Rechnung, dann der Gewinn. Eingesetzte Ressourcen und Einnahmen werden gegenübergestellt; daraus soll Gewinn entstehen. Die Reihenfolge ist Teil der Definition, nicht Schmuck am Satzende. Wer Gewinn unabhängig von dieser Gegenüberstellung behauptet, überspringt den Vergleich, den der Lehrtext verlangt. Wertschöpfung hängt in der Klammer genau an diesem Vergleich, bevor später die Grafik denselben Wert an den IT-Einsatz knüpft.\n\nDie Aussage ist wahr.",
+      "IT sitzt im ersten Absatz am Hebel, nicht an der Schreibtischlampe. Durch den Einsatz von Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. Bürostühle erwähnt der Text nicht. Die Behauptung, nur die Ausstattung ändere sich, während Modell und Angebot gleich bleiben, widerspricht dem Einstieg und der späteren Grafik, in der Technologie Geschäftsprozesse und Wertschöpfung verbindet. App-Fahrschein, Lieferhandel, Webshop und Streaming wären ohne diese Veränderung des Modells nicht die Beispiele des Unterabschnitts, sondern bloße Geräte im selben alten Betrieb.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.03",
+    "title": "IT-Einsatz und Wertschöpfung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung:",
+    "statements": [
+      "Der Einsatz von Technologie schafft neue Möglichkeiten, Produkte und Dienstleistungen mithilfe von Geschäftsprozessen zu erstellen, bereitzustellen und zu vertreiben.",
+      "Darauf aufbauend kann ein Wert für Unternehmen und Kunden generiert werden.",
+      "Dieser Wert kann durch den Einsatz von Technologie multipliziert werden, etwa indem eine größere Anzahl an Kunden erreicht oder Produkte individualisiert angeboten werden.",
+      "Technologie darf den Kundenkreis nicht vergrößern; Individualisierung von Produkten ist im Abschnitt ausgeschlossen.",
+      "Abbildung 29 betrifft nur die interne Buchhaltung und hat mit Wertschöpfung nichts zu tun."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Geschäftsprozesse sind das Gelenk. Technologie eröffnet neue Wege, Produkte und Dienstleistungen zu erstellen, bereitzustellen und zu vertreiben, und zwar mithilfe dieser Prozesse. Die drei Verben spiegeln die Definition des Geschäftsmodells. Ohne Prozess bliebe IT ein Gerät ohne Ablauf. Abbildung 29 soll genau diesen Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung im Unternehmen zeigen.\n\nDie Aussage ist wahr.",
+      "Zwei Empfänger, ein Satz. Der generierte Wert gilt Unternehmen und Kunden, nicht nur der einen Seite. Kundennutzen ohne betrieblichen Wert oder betrieblicher Wert ohne Kundenbezug wären nach dieser Formulierung unvollständig. Die Grafik sitzt zwischen Technologieeinsatz und dieser doppelten Wertgenerierung. Später wird Multiplikation an denselben Wert geknüpft.\n\nDie Aussage ist wahr.",
+      "Multiplizieren heißt hier Reichweite oder Passung, nicht Zauberei. Der Text erklärt das Wort: zum Beispiel erreicht man durch Informations- und Kommunikationstechnologie eine größere Anzahl an Kunden, oder Produkte werden individualisiert angeboten. Beides sind Ausprägungen derselben Idee, den Wert durch Technologie zu steigern. Wer Multiplikation nur als höhere Stückzahl in der Fabrik liest, lässt die Kundenzahl und die Individualisierung weg.\n\nDie Aussage ist wahr.",
+      "Genau die beiden Beispiele stehen im Buch als Inhalt des Wortes multipliziert. Durch Informations- und Kommunikationstechnologie kann eine größere Anzahl an Kunden erreicht werden, oder Produkte werden individualisiert angeboten. Beides auszuschließen heißt, den Erklärsatz umzukehren und Abbildung 29 ihrer Pointe zu berauben. IKT darf den Kreis erweitern und Angebote anpassen; das ist der Wirkungszusammenhang zwischen Technologie und Wert, nicht ein Verbot. Die absolute Sperre ist mit dem Lehrtext unvereinbar und würde den Wert auf der Kundenseite einfrieren, obwohl der Abschnitt ihn gerade steigerbar nennt.\n\nDie Aussage ist falsch.",
+      "Wertschöpfung ist der Titel der Abbildung, nicht ein Randthema. Der Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung im Unternehmen ist der Gegenstand. Interne Buchhaltung als einziges Thema steht dort nicht. Wer die Grafik auf Konten reduziert, trennt Technologie, Geschäftsprozesse und Wert für Unternehmen und Kunden voneinander, obwohl der Abschnitt sie verbindet.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.04",
+    "title": "Klassischer Webshop",
+    "context": "Bewerten Sie die folgenden Aussagen zum Webshop als technologiebasiertem Geschäftsmodell:",
+    "statements": [
+      "Beim klassischen Webshop können Sie Produkte direkt online bestellen; Amazon.de und Zalando.de nennt der Text als Beispiele.",
+      "Über den Webshop werden Güter direkt an den Kunden oder an einzelne Unternehmen verkauft.",
+      "Ein Webshop wird im Unterschied zum Online-Handelsplatz von einem Verkäufer betrieben.",
+      "Ein Webshop darf Güter niemals an Unternehmen verkaufen, sondern ausschließlich an Privatpersonen.",
+      "Der klassische Webshop ist kein Beispiel für ein durch Informationstechnologie ermöglichtes Geschäftsmodell."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Bestellen ohne Ladenregal ist das erste IT-Beispiel nach der Definition und nach der Grafik zur Wertschöpfung. Klassischer Webshop heißt: Sie bestellen Produkte direkt online. Amazon.de und Zalando.de stehen als Belege für diesen Kanal. Es geht um den direkten Verkauf im Netz, noch nicht um eine Plattform vieler privater Anbieter. Güter gehen an den Kunden oder an einzelne Unternehmen, betrieben von einem Verkäufer. Wer den Webshop aus der Liste technologiebasierter Modelle streicht, ignoriert das erste Beispiel des Absatzes und verwechselt ihn vorschnell mit dem später erklärten Handelsplatz.\n\nDie Aussage ist wahr.",
+      "Kunde und Unternehmen sitzen beide am Ende der Lieferung. Güter gehen direkt an den Kunden oder an einzelne Unternehmen. Der Webshop ist damit nicht auf den privaten Haushalt beschränkt. B2C und Verkauf an Betriebe liegen in demselben Satz. Die Direktheit unterscheidet den Kanal vom späteren Handelsplatz, auf dem Käufer und viele Verkäufer zusammenkommen.\n\nDie Aussage ist wahr.",
+      "Ein Betreiber, nicht ein Marktplatz voller Privatanbieter. Der Text stellt den Gegensatz ausdrücklich her: der Webshop wird von einem Verkäufer betrieben, während auf dem Handelsplatz auch Privatpersonen Zugang haben, um anzubieten und zu verkaufen. Diese Betreiberfrage ist das Unterscheidungskriterium, nicht die bloße Website-Optik. Note: dieselbe Domain-Endung .de macht aus eBay keinen Webshop im Sinne dieser Definition.\n\nDie Aussage ist wahr.",
+      "Einzelne Unternehmen stehen ausdrücklich als Abnehmer. Die Behauptung, niemals an Unternehmen, nur an Privatpersonen, streicht die zweite Hälfte des Verkaufssatzes. Direktverkauf an Betriebe gehört zum Webshop-Modell des Buchs. Die absolute Beschränkung auf Privatpersonen ist falsch. Amazon.de und Zalando.de illustrieren den Kanal, ersetzen aber nicht die Formulierung „Kunde oder einzelne Unternehmen“.\n\nDie Aussage ist falsch.",
+      "Der Webshop eröffnet die Beispielreihe. Viele Geschäftsmodelle wurden durch Informationstechnologie ermöglicht; das erste genannte ist der klassische Webshop. Ihn aus dieser Reihe zu nehmen hieße, das einfachste digitale Verkaufsmodell zu leugnen. Bestellen, direkt verkaufen, ein Verkäufer: das ist IT-gestütztes Geschäftsmodell, nicht bloß eine digitale Visitenkarte ohne Handel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.05",
+    "title": "Online-Handelsplatz",
+    "context": "Bewerten Sie die folgenden Aussagen zum Online-Handelsplatz im Unterschied zum Webshop:",
+    "statements": [
+      "Ein Online-Handelsplatz ist eine online Umgebung für Käufer und Verkäufer, über die Produkte umgesetzt werden können.",
+      "Im Gegensatz zum Webshop haben hier auch Privatpersonen Zugang zur Plattform, um Produkte anzubieten und zu verkaufen.",
+      "willhaben.at und eBay.de nennt der Text als Beispiele für solche Handelsplätze.",
+      "Der Handelsplatzbetreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung; Interessierte können suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen.",
+      "Ein Online-Handelsplatz ist dasselbe wie ein Webshop, weil in beiden Fällen nur ein einziger Verkäufer die gesamte Umgebung betreibt und Privatpersonen kein Angebot einstellen dürfen."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Umgebung statt Einzelregal. Käufer und Verkäufer treffen in einer online Umgebung zusammen, über die Produkte umgesetzt werden. Umsetzen heißt hier Handel auf der Plattform, nicht nur Katalog eines Hauses. Das Modell ist technologiebasiert wie der Webshop, aber zweiseitig. Ohne beide Rollen gäbe es keinen Handelsplatz im Sinne des Absatzes.\n\nDie Aussage ist wahr.",
+      "Privatpersonen sind zugelassen, das ist der Gegensatz. Der Webshop hat einen Verkäufer als Betreiber; der Handelsplatz öffnet die Plattform auch für Private, die anbieten und verkaufen. Wer Privatangebote für unzulässig erklärt, macht aus dem Handelsplatz wieder einen Webshop. Genau diese Öffnung nennt der Text als Unterschied.\n\nDie Aussage ist wahr.",
+      "Zwei Adressen, ein Typ. willhaben.at und eBay.de stehen hinter dem Handelsplatz, nicht hinter dem Ein-Verkäufer-Webshop. Die Beispiele sollen die zweiseitige Plattform greifbar machen. Sie mit Amazon.de oder Zalando.de zu vertauschen, würde die vom Buch gezogene Grenze verwischen.\n\nDie Aussage ist wahr.",
+      "Zugang, Suche, Kontakt, Preis: das ist die Kette des Betreibers, nicht des alleinigen Lagerhalters. Der Handelsplatzbetreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung. Interessierte Käufer können nach Produkten suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen. Preisfindung läuft zwischen den Parteien, nicht nur als festes Etikett eines zentralen Shops. Genau diese Ablaufkette gehört zur Buchdefinition und unterscheidet den Handelsplatz vom Webshop eines Verkäufers.\n\nDie Aussage ist wahr.",
+      "Gleichsetzung tilgt den Gegensatz, den der Text in einem Satz zieht und an Beispielen festmacht. Ein Verkäufer betreibt den Webshop, etwa im Sinne von Amazon.de oder Zalando.de. Auf dem Handelsplatz haben auch Privatpersonen Zugang, um anzubieten und zu verkaufen, etwa bei willhaben.at oder eBay.de. Der Betreiber stellt die Plattform bereit; Käufer suchen und legen mit Verkäufern den Preis fest. „Dasselbe Modell“ und „Privatpersonen dürfen nicht anbieten“ sind beide falsch. Note: Betreiber der Plattform und Verkäufer der einzelnen Ware sind hier zu trennen. Wer beides zusammenfallen lässt, versteht weder Webshop noch Handelsplatz.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.06",
+    "title": "Virtuelle Umgebung und soziales Netzwerk",
+    "context": "Bewerten Sie die folgenden Aussagen zu sozialen Netzwerken als digitalem Geschäftsmodell:",
+    "statements": [
+      "Ein digitales Geschäftsmodell kann im Anbieten einer virtuellen Umgebung bestehen, einer online Gemeinschaft, auch bekannt als soziales Netzwerk.",
+      "Facebook, X und LinkedIn nennt der Abschnitt als Beispiele.",
+      "Personen mit gleichen Interessensschwerpunkten können sich dort austauschen und mit Freunden in Kontakt treten.",
+      "Geschäftsmodelle dieser Art verdienen ihr Geld unter anderem durch den Verkauf von Werbefläche.",
+      "Soziale Netzwerke verdienen laut Lehrtext ausschließlich durch den Versand physischer Tonträger und niemals durch Werbefläche."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Gemeinschaft im Netz ist das dritte IT-Beispiel. Virtuelle Umgebung, online Gemeinschaft, soziales Netzwerk: der Text setzt die drei Bezeichnungen gleich. Es geht nicht um den Verkauf eines einzelnen Guts wie im Webshop, sondern um den Raum, in dem Personen zusammenkommen. Dieses Anbieten einer Umgebung ist ausdrücklich ein digitales Geschäftsmodell.\n\nDie Aussage ist wahr.",
+      "Drei Namen, ein Typ. Facebook, X und LinkedIn stehen als Beispiele der virtuellen Umgebung, der online Gemeinschaft, des sozialen Netzwerks. Die Liste ist nicht zufällig: unterschiedliche Plattformen, dieselbe Modellklasse. Wer eines davon zum reinen Webshop im Sinne von Amazon.de umdeutet, verfehlt die Zuordnung des Absatzes, weil dort ein Verkäufer Güter direkt verkauft, während hier Personen sich austauschen. Austausch und Kontakt, nicht der Direktverkauf eines Lagers, tragen das Beispiel und öffnen später den Verkauf von Werbefläche.\n\nDie Aussage ist wahr.",
+      "Gleiche Interessen und Freunde sind der Nutzungskern. Der Abschnitt beschreibt Austausch unter Personen mit gleichen Interessensschwerpunkten und Kontakt mit Freunden. Das ist der Inhalt der Gemeinschaft, bevor von Einnahmen die Rede ist. Ohne diesen sozialen Zweck wäre die Umgebung nur eine leere Website. Das Geschäftsmodell setzt auf genau diese Nutzung.\n\nDie Aussage ist wahr.",
+      "Unter anderem, nicht ausschließlich. Verkauf von Werbefläche ist die genannte Einnahmequelle dieser Modellart. Die Formulierung lässt andere Quellen offen, nennt aber Werbung ausdrücklich. Später vertieft der Text das Werbemodell an Google, willhaben und geizhals; hier ist der erste Hinweis, dass Gemeinschaft und Werbefläche zusammengehören können.\n\nDie Aussage ist wahr.",
+      "Tonträger gehören zur Musikindustrie weiter unten, nicht zu Facebook, X und LinkedIn. Der Satz zu sozialen Netzwerken nennt ausdrücklich den Verkauf von Werbefläche als Einnahme, unter anderem, nicht den Versand von Schallplatten oder CDs. „Ausschließlich Tonträger“ und „niemals Werbefläche“ drehen beides um und ziehen ein späteres Branchenbeispiel in die falsche Modellklasse. Die virtuelle Umgebung lebt vom Austausch gleicher Interessen und vom Kontakt mit Freunden; das Geld sitzt an der Fläche für Werbung, die später im Werbemodell vertieft wird. Wer die Erlösseite der Gemeinschaft mit dem CD-Regal verwechselt, mischt zwei Absätze und zwei Geschäftsmodelle.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.07",
+    "title": "Pure-Play-Geschäftsmodelle",
+    "context": "Bewerten Sie die folgenden Aussagen zu Pure-Play-Geschäftsmodellen:",
+    "statements": [
+      "Die meisten der zuvor genannten Geschäftsmodelle können als Pure-Play-Geschäftsmodelle bezeichnet werden, weil sie ausschließlich online stattfinden.",
+      "Solche Unternehmen agieren vorrangig im digitalen Raum und besitzen keine physischen Geschäftsniederlassungen im Sinne eines Geschäfts, in das ein Kunde gehen kann, um sich ein Produkt physisch anzuschauen.",
+      "Die meisten dieser Geschäftsmodelle sind durch das Internet erst ermöglicht worden.",
+      "Pure-Play verlangt zwingend ein Ladengeschäft mit Schaufenster, in dem jede Ware vor dem Kauf in die Hand genommen werden muss.",
+      "Ohne jede digitale Präsenz und nur mit einem klassischen Laden um die Ecke liegt nach dem Text ein reines Pure-Play-Modell vor."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Ausschließlich online ist das Kriterium. Webshop, Handelsplatz und soziales Netzwerk spielen in diesem Absatz als Modelle, die zumeist Pure-Play heißen, weil sie ausschließlich online stattfinden. Pure-Play ist also eine Sammelbezeichnung für den rein digitalen Schauplatz, nicht ein vierter Produkttyp. Wer Pure-Play mit einem einzelnen Markennamen gleichsetzt, verengt den Begriff.\n\nDie Aussage ist wahr.",
+      "Kein Geschäft zum Betreten. Vorrangig digitaler Raum, keine physische Niederlassung im Sinne eines Ladens, in den Kundinnen und Kunden gehen und Ware anschauen. Das ist die positive und die negative Seite derselben Definition. Schaufenster und Anprobe gehören nicht zu Pure-Play. Die Formulierung „im Sinne eines Geschäfts“ verhindert, dass irgendein Lagerraum schon als Laden zählt; gemeint ist der Kundenraum zum Anschauen.\n\nDie Aussage ist wahr.",
+      "Internet als Ermöglicher, nicht nur als Werbefläche an der Hauswand. Der Text hält fest, dass die meisten dieser Modelle durch das Internet erst ermöglicht worden sind. Ohne Netz gäbe es den beschriebenen reinen Onlinebetrieb so nicht, weder Webshop noch Handelsplatz noch virtuelle Gemeinschaft in der genannten Form. Das unterscheidet Pure-Play von einer bloßen Digitalkamera im Keller eines traditionellen Händlers. Ermöglicht heißt: das Modell hängt am Netz und findet ausschließlich dort statt.\n\nDie Aussage ist wahr.",
+      "Ladengeschäft ist genau das, was fehlt. Pure-Play besitzt keine physischen Geschäftsniederlassungen zum Anschauen der Ware. Die Forderung nach Schaufenster und Anfassen kehrt die Definition um. Wer Pure-Play so liest, beschreibt eher das traditionelle Geschäft oder später Clicks and Mortar, nicht den reinen Onlinefall. Die absolute Pflicht zum Laden ist falsch.\n\nDie Aussage ist falsch.",
+      "Nur der Laden ohne Netz ist das Gegenteil von Pure-Play. Pure-Play findet ausschließlich online statt: die Unternehmen agieren vorrangig im digitalen Raum und besitzen keine physischen Geschäftsniederlassungen im Sinne eines Geschäfts zum Anschauen der Ware. Ein klassisches Geschäft um die Ecke ohne digitale Präsenz erfüllt diese Definition nicht; es wäre der traditionelle Pol, den Clicks and Mortar später um eine Webseite oder Plattform ergänzt. Note: Pure-Play und Clicks and Mortar nicht tauschen. Rein analoger Laden ist kein Pure-Play, und ein Ladenplus-Webshop ist Clicks and Mortar, nicht reines Online-only.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.08",
+    "title": "Clicks and Mortar",
+    "context": "Bewerten Sie die folgenden Aussagen zu Clicks-and-Mortar-Geschäftsmodellen:",
+    "statements": [
+      "Bei Clicks-and-Mortar-Geschäftsmodellen ist die digitale Präsenz, etwa als Webseite oder Plattform, eine Erweiterung des traditionellen physischen Geschäfts.",
+      "Thalia als klassischer Buchhändler, der neben dem physischen Geschäft noch einen Webshop anbietet, ist ein Beispiel.",
+      "Clicks and Mortar bedeutet, dass das Unternehmen keine physische Niederlassung mehr haben darf.",
+      "Pure-Play und Clicks and Mortar sind im Lehrtext alternative Bezeichnungen desselben ausschließlich online stattfindenden Modells.",
+      "Eine Webseite oder Plattform kann die digitale Seite dieser Erweiterung sein."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Erweiterung, nicht Ersatz. Alternativ zu Pure-Play spricht der Text von Clicks and Mortar: die digitale Präsenz erweitert das traditionelle physische Geschäft. Beide Seiten bleiben im Modell, Laden und Netz. Wer die digitale Seite als komplette Schließung aller Filialen liest, macht daraus Pure-Play. Die Präposition „Erweiterung“ trägt die Definition.\n\nDie Aussage ist wahr.",
+      "Buchregal plus Webshop, nicht entweder oder. Thalia steht als klassischer Buchhändler mit physischem Geschäft und zusätzlich einem Webshop, um Produkte online zu verkaufen. Das Beispiel macht Clicks and Mortar greifbar: dieselbe Ware, zwei Kanäle. Es ist nicht willhaben als reiner Handelsplatz und nicht ein Shop ohne jede Filiale. Wer Thalia nur als Pure-Play führt, streicht den Laden, den der Satz gerade nennt, und verwechselt Erweiterung mit Ersatz. Die digitale Präsenz ist hier die Webseite, die das traditionelle Geschäft ergänzt.\n\nDie Aussage ist wahr.",
+      "Physische Niederlassung ist Voraussetzung der Erweiterung, nicht verboten. Clicks and Mortar hängt am traditionellen Geschäft, das um Digitales ergänzt wird. Das Verbot jeder Filiale wäre Pure-Play. Die Aussage verdreht die Alternative, die der Text nach dem Satz zu fehlenden Geschäftsniederlassungen ausdrücklich einführt. Ohne Laden gäbe es nichts zu erweitern.\n\nDie Aussage ist falsch.",
+      "Zwei Pole, nicht zwei Namen für denselben Online-only-Betrieb. Pure-Play findet ausschließlich online statt und hat keinen Laden, in den Kundinnen und Kunden gehen, um Ware anzuschauen. Clicks and Mortar koppelt digitale Präsenz, etwa Webseite oder Plattform, an das traditionelle physische Geschäft, wie Thalia mit Filiale und Webshop. Alternative Bezeichnung desselben ausschließlich online stattfindenden Modells wären sie nur, wenn der Text den Unterschied nicht zöge. Er zieht ihn ausdrücklich als Alternative. Wer die Wörter tauscht, macht aus der Buchhandlung ohne Netz ein Pure-Play oder aus Amazon-artigem Webshop ein Clicks-and-Mortar-Paar ohne Laden.\n\nDie Aussage ist falsch.",
+      "Webseite oder Plattform sind die genannten Formen. Digitale Präsenz heißt im Satz zum Beispiel eine Webseite oder eine Plattform. Mehr braucht der Text an Technikbegriffen hier nicht. Die Erweiterung kann also schlicht der Webshop neben der Buchhandlung sein, wie bei Thalia. Ohne irgendeine solche Präsenz bliebe nur das traditionelle Geschäft, und Clicks and Mortar wäre nicht erfüllt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.09",
+    "title": "Musikindustrie und iTunes",
+    "context": "Bewerten Sie die folgenden Aussagen zur Veränderung der Musikindustrie durch Apple und iTunes:",
+    "statements": [
+      "Die heutige Musikindustrie unterscheidet sich maßgeblich von derjenigen im Jahr 2000; Anbieter haben das Geschäftsmodell mehrmals verändert, auf Basis von Informations- und Kommunikationstechnologie.",
+      "Früher erwarb man typischerweise eine CD mit mehreren Liedern als ganzes Paket; der Vertrieb lief über Tonträger wie Schallplatten oder CDs.",
+      "Apple hat durch den legalen Onlinevertrieb einzelner Musikstücke im iTunes Store, kombiniert mit innovativen Abspielgeräten wie dem iPod, die Art des Musikkonsums verändert.",
+      "Apple hat das alte Modell beibehalten, indem weiterhin ausschließlich ganze Tonträgerpakete verkauft wurden und einzelne Stücke online nicht legal erhältlich waren.",
+      "Die beschriebene Revolution der Musiknutzung beruht laut Text nicht auf Informations- und Kommunikationstechnologie, sondern allein auf dickeren Plastikhüllen der CDs."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Jahr 2000 gegen heute ist der Zeitrahmen des Beispiels. Die Industrie unterscheidet sich maßgeblich; verschiedene Anbieter haben das Modell mehrmals verändert, alles auf Basis von IKT. „Mehrmals“ bereitet Apple und später Spotify vor. Wer die Branche für unverändert hält, widerspricht dem Eröffnungssatz des Kästchens. Technologie ist der Hebel, nicht ein Modewort nebenbei.\n\nDie Aussage ist wahr.",
+      "Paket statt Titel. Schallplatte oder CD als Tonträger, mehrere Lieder als ganzes Paket: so beschreibt der Text das alte Modell. Man kaufte das Bündel, nicht den einzelnen Titel. Genau diese Paketlogik bricht iTunes später auf. Wer behauptet, schon vor Apple sei der legale Einzelstückverkauf der Normalfall gewesen, vorwegnimmt, was der Text als Revolution kennzeichnet.\n\nDie Aussage ist wahr.",
+      "Zwei Innovationen gekoppelt, eine Konsumweise. Legaler Onlinevertrieb einzelner Stücke im iTunes Store plus innovative Abspielgeräte, genannt iPod. Zusammen ändern sie, wie Musik konsumiert wurde, gegenüber dem Kauf ganzer Tonträgerpakete. Weder der Player ohne Store noch der Store ohne neues Gerät tragen die Buchstory allein. Legal betont den Unterschied zu nicht näher ausgeführten anderen Wegen. Das alte Paket aus mehreren Liedern auf einer CD ist damit aufgebrochen, und IKT ist der Hebel, den der Abschnitt an den Anfang des Musikbeispiels stellt.\n\nDie Aussage ist wahr.",
+      "Einzelstücke legal online sind der Kern der Apple-Änderung, nicht das Festhalten am Paket. Früher erwarb man eine CD mit mehreren Liedern als ganzes Paket; Tonträger waren Schallplatte oder CD. Apple revolutioniert genau diesen Vertrieb, indem einzelne Musikstücke legal über den iTunes Store erhältlich werden, kombiniert mit Abspielgeräten wie dem iPod. „Ausschließlich ganze Pakete“ und „einzelne Stücke nicht legal“ beschreiben das Vorher, nicht das Apple-Modell nach der Revolution. Die Aussage hängt am alten Zustand und blendet die beschriebene Veränderung der Konsumweise aus, die der Text an IKT bindet.\n\nDie Aussage ist falsch.",
+      "IKT steht im ersten Satz des Beispiels und trägt Apple wie später Spotify. Plastikhüllen als alleinige Ursache stehen nicht im Text. Ohne Informations- und Kommunikationstechnologie gäbe es den legalen Onlinevertrieb und das Streaming so nicht. Die Verlagerung auf Verpackungsdicke macht aus einem Technologiebeispiel ein Materialbeispiel und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.10",
+    "title": "Spotify und Streaming-Abo",
+    "context": "Bewerten Sie die folgenden Aussagen zum Geschäftsmodell von Spotify im Vergleich zum Stückverkauf:",
+    "statements": [
+      "Spotify hat die Art des Musikkonsums erneut verändert, indem Musikstücke nicht zum Download angeboten wurden, sondern über das Internet gestreamt werden konnten.",
+      "Das Geschäftsmodell baut nicht mehr auf dem Vertrieb und Erwerb einzelner Musikstücke auf, sondern auf einem Abo-Modell.",
+      "Über das Abo erhalten Millionen von Anwendern Zugang zu nahezu allen verfügbaren Audiotiteln.",
+      "Spotify folgt demselben Modell wie der iTunes Store, weil weiterhin jedes Stück einzeln erworben und heruntergeladen werden muss, bevor es gehört werden darf.",
+      "Nach dem Lehrtext bleibt der Musikkonsum seit 2000 unverändert beim ausschließlichen Kauf ganzer CDs im Laden; Streaming und Abo spielten keine Rolle."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Stream statt Datei. Spotify ändert den Konsum erneut, indem Stücke nicht zum Download angeboten werden, sondern über das Internet gestreamt werden. „Erneut“ sitzt nach Apple: dieselbe Branche, nächste Modellstufe. Download war die iTunes-Logik; Stream löst sie ab. Wer Spotify als zweiten iTunes Store mit Pflicht-Download liest, streicht genau dieses „nicht zum Download“.\n\nDie Aussage ist wahr.",
+      "Abo ersetzt Stückkauf, das ist die betriebswirtschaftliche Pointe. Vertrieb und Erwerb einzelner Musikstücke tragen das Spotify-Modell nicht mehr; ein Abo-Modell tritt an ihre Stelle. Millionen Anwender erhalten Zugang zu nahezu allen verfügbaren Audiotiteln, ohne dass jedes Stück wie bei iTunes einzeln erworben würde. Das ist nicht nur ein anderes Dateiformat, sondern ein anderes Erlös- und Nutzungsmodell. Später taucht dasselbe Abonnentenmodell bei Netflix, Zeitungen und Adobe wieder auf: laufende Gebühr gegen Zugang statt einmaligem Eigentum am Titel.\n\nDie Aussage ist wahr.",
+      "Menge und Katalog. Millionen Anwender, Zugang zu nahezu allen verfügbaren Audiotiteln: so fasst der Text den Nutzen des Abos. Es geht um Breite des Zugangs, nicht um den Besitz von drei Singles. „Nahezu alle“ bleibt eine qualitative Angabe des Buchs, keine Zahl zum Auswendiglernen. Der Kontrast zum CD-Paket und zum Einzelkauf ist die Vollständigkeit des Katalogs im Abo.\n\nDie Aussage ist wahr.",
+      "iTunes und Spotify werden als aufeinanderfolgende Änderungen erzählt, nicht als Identität zweier Shops. Einzelkauf und Download gehören zu Apple: legale einzelne Stücke plus iPod. Stream und Abo gehören zu Spotify: Stücke nicht zum Download, sondern über das Internet gestreamt, Modell auf Zugang statt Erwerb. Die Behauptung, jedes Stück müsse einzeln erworben und heruntergeladen werden, bevor es gehört werden darf, hängt am vorherigen Modell. Der Lehrtext sagt ausdrücklich, dass Spotify nicht zum Download anbietet. Gleichsetzung der beiden Stufen ist falsch und würde den Satz „erneut verändert“ entleeren.\n\nDie Aussage ist falsch.",
+      "Maßgeblicher Unterschied seit 2000 ist die Überschrift des Beispiels. CD-Paket, dann Einzelstücke plus iPod, dann Stream und Abo: drei Stufen. Wer beim Ladenkauf ganzer CDs stehen bleibt und Streaming leugnet, streicht beide Revolutionen. IKT bleibt der durchgehende Hebel. Die Aussage ist mit dem gesamten Musikabsatz unvereinbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.11",
+    "title": "Erlösmodell als Teil des Geschäftsmodells",
+    "context": "Bewerten Sie die folgenden Aussagen zum Erlösmodell:",
+    "statements": [
+      "Das Erlösmodell betrifft die Frage, wie das Unternehmen Geld verdient, also Einnahmen generiert und einen Gewinn erwirtschaftet.",
+      "Technologie hat einen Einfluss darauf, wie das Erlösmodell gestaltet werden kann.",
+      "Unternehmen können sich auf ein Erlösmodell fokussieren oder eine Kombination aus verschiedenen Modellen wählen.",
+      "Im Kontext der Digitalisierung legt der Abschnitt den Fokus auf das Werbemodell und das Abonnentenmodell.",
+      "Ein Unternehmen darf immer nur genau ein Erlösmodell verwenden; Kombinationen sind ausgeschlossen, und Technologie darf die Gestaltung nicht beeinflussen."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Geld verdienen ist der Aspekt, nicht die ganze Firma. Das Geschäftsmodell umfasst Erzeugung, Bereitstellung, Vertrieb und Wertschöpfung; das Erlösmodell beantwortet, wie Einnahmen und Gewinn entstehen. Der Text nennt es einen wichtigen Aspekt des Geschäftsmodells. Wer Erlösmodell und Geschäftsmodell zu identischen Vollsynonymen macht, verdickt den Teil zum Ganzen. Wer den Erlös ganz streicht, lässt die Gewinnseite der Definition leer.\n\nDie Aussage ist wahr.",
+      "Gestaltung, nicht Schicksal. Auch beim Erlös hat Technologie Einfluss darauf, wie das Modell gebaut werden kann. Freie Suche mit Werbung, Abo für Kataloge, später der Wechsel bei Adobe: das sind gestaltete Antworten, keine Naturgesetze. Ohne diesen Einfluss gäbe es den folgenden Fokus auf zwei digitale Beispiele nicht. IT ändert nicht nur das Produkt, sondern die Art der Einnahme.\n\nDie Aussage ist wahr.",
+      "Eins oder mehrere, das steht vor den Beispielen. Der Satz erlaubt den Fokus auf ein Modell oder eine Kombination. Zeitungen erscheinen später genau in dieser Kombination aus Werbung und Abonnement, Abbildung 31. Die Erlaubnis zur Mischung ist Teil der allgemeinen Regel, nicht eine Ausnahme, die man erfinden müsste. Wer Kombination für unzulässig erklärt, widerspricht diesem Satz bereits, bevor Netflix, Spotify oder Adobe genannt werden, und macht aus dem Erlösaspekt eine starre Ein-Hebel-Maschine.\n\nDie Aussage ist wahr.",
+      "Zwei Namen, bewusster Ausschnitt. Es gibt viele Erlösmodelle; der Text will den Fokus auf zwei legen, die vor allem im Kontext der Digitalisierung bedeutsam sind: Werbemodell und Abonnentenmodell. Andere Modelle existieren, werden hier aber nicht ausgeführt. Prüfungsrelevant ist dieser Fokus, nicht eine selbst erfundene dritte Hauptkategorie, die der Absatz nicht einführt.\n\nDie Aussage ist wahr.",
+      "Zwei Verbote, beide falsch schon in der allgemeinen Regel. Der Text erlaubt Fokus auf ein Erlösmodell oder eine Kombination verschiedener Modelle. Technologie hat Einfluss darauf, wie das Erlösmodell gestaltet werden kann. „Immer nur genau eines“ und „Technologie darf nicht beeinflussen“ streichen beide Zugeständnisse. Später kombinieren Zeitungen Werbung und Abo, Adobe wechselt 2013 vom klassischen Umsatzmodell zum Abonnentenmodell: das wäre unverständlich, gälte der absolute Ein-Modell-Zwang ohne Technik. Die Aussage fällt an der Definition des Erlöses, nicht erst an den Beispielen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.12",
+    "title": "Werbemodell und vermeintlich kostenlose Dienste",
+    "context": "Bewerten Sie die folgenden Aussagen zum Werbemodell:",
+    "statements": [
+      "Das Werbemodell setzt auf Werbung als Einnahmequelle: ein Unternehmen, das eine Website mit zahlreichen Besuchern betreibt, generiert Einnahmen durch Anzeige von Werbung.",
+      "Unter Website versteht der Text Ausprägungen wie Nachrichten, Webshops, soziale Netzwerke oder andere Plattformen, über die Dienstleistungen oder Produkte zur Verfügung gestellt werden.",
+      "Viele Dienste, die sich „kostenlos“ anfühlen, etwa Google Suche, willhaben oder geizhals, setzen auf das Werbemodell.",
+      "Das Werbemodell gilt im Abschnitt als eines der unbeliebtesten Erlösmodelle und hat das Online-Erlebnis kaum geprägt.",
+      "Werbung gibt es nur analog; der digitale Raum und Websites sind als Werbeplätze ausgeschlossen."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Besucher und Anzeigen gehören zusammen. Wer eine Website mit zahlreichen Besuchern betreibt, kann durch Werbung auf dieser Seite Einnahmen erzielen. Das ist die Mechanik des Werbemodells: Aufmerksamkeit wird zum Werbeplatz. Ohne Reichweite kein klassisches Werbeerlös in diesem Bild. Das Unternehmen verkauft nicht notwendig das sichtbare „kostenlose“ Gut an den Nutzer, sondern Fläche an Werbetreibende.\n\nDie Aussage ist wahr.",
+      "Website ist weit gefasst. Nachrichten, Webshops, soziale Netzwerke, andere Plattformen: alle genannten Ausprägungen zählen, sobald darüber Dienstleistungen oder Produkte bereitstehen. Die Enge „nur eine Firmenhomepage mit Impressum“ steht nicht im Text. Soziale Netzwerke knüpfen an den früheren Verkauf von Werbefläche an; Nachrichtenseiten bereiten derstandard.at vor.\n\nDie Aussage ist wahr.",
+      "Kostenlos in Anführungszeichen, nicht an der Kasse. Google Suche, willhaben und geizhals fühlen sich unentgeltlich an, setzen aber seit frühen Internettagen auf das Werbemodell. Der Nutzer zahlt nicht sichtbar, der Werbekunde schon. Das Online-Erlebnis, wie wir es kennen, ist laut Text maßgeblich durch dieses Modell geprägt und könnte anders aussehen, hätte sich ein anderes Erlösmodell durchgesetzt. Ohne diese Beispiele bliebe „eines der beliebtesten Erlösmodelle“ abstrakt und die spätere Alphabet-Rechnung ohne Vorlauf.\n\nDie Aussage ist wahr.",
+      "Beliebtheit und Prägung stehen ausdrücklich. Es ist eines der beliebtesten Erlösmodelle; das heutige Online-Erlebnis ist maßgeblich davon geprägt und könnte anders aussehen, hätte sich ein anderes Modell durchgesetzt. „Unbeliebteste“ und „kaum geprägt“ kehren beides um. Die Konjunktivüberlegung im Text unterstreicht gerade die historische Prägekraft, nicht ihre Abwesenheit.\n\nDie Aussage ist falsch.",
+      "Analog und digital kommen vor, der Fokus liegt auf dem digitalen Raum. Der Abschnitt sagt, Werbung könne analog und digital vorkommen, konzentriert uns dann aufs Netz. Websites als Werbeplätze auszuschließen widerspricht der gesamten Mechanik: Anzeige auf der Website ist die Einnahmequelle bei zahlreichen Besuchern. Nur analog wäre das falsche Kapitel. Google Suche, willhaben, geizhals, Banner auf geizhals.at, AdWords, AdSense und die Startseite von derstandard.at wären sonst unerklärlich. Das heutige Online-Erlebnis, das der Text als durch das Werbemodell geprägt beschreibt, hängt genau an diesen digitalen Plätzen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.13",
+    "title": "Digitale Werbeplätze",
+    "context": "Bewerten Sie die folgenden Aussagen zu Ausprägungen digitaler Werbung:",
+    "statements": [
+      "Eine Suchmaschine wie Google kann unter anderem durch den Verkauf von Schlüsselwörtern bei der Suche (AdWords) oder den Verkauf von Werbeanzeigen bei bestimmten Suchwörtern (AdSense) Werbeplätze anbieten.",
+      "Ein Vergleichsportal wie geizhals.at kann durch klassische Bannerwerbung einen Werbeplatz anbieten und diese Bannerwerbung mit bestimmten Suchbegriffen kombinieren.",
+      "Anbieter von Tageszeitungen verwenden unter anderem das Werbemodell, um Kosten für Betrieb und Bereitstellung der Online-Inhalte zu decken.",
+      "Abbildung 30 zeigt mögliche Ausprägungen von Werbung auf der Startseite von derstandard.at.",
+      "Suchmaschinen und Vergleichsportale können Werbetreibenden keinerlei Werbeplatz anbieten; Banner und Schlüsselwörter sind im digitalen Raum unmöglich."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Zwei Google-Wege, beide Verkauf von Plätzen. Schlüsselwörter bei der Suche unter dem Namen AdWords, Werbeanzeigen bei bestimmten Suchwörtern unter AdSense. Der Text nennt sie unter anderem, also nicht als vollständige Liste aller Google-Produkte. Entscheidend ist: die Suchmaschine wird zum Markt für Werbeplätze, passend zur Anfrage. Ohne Suchwortbezug gäbe es diese beiden genannten Hebel nicht in dieser Form.\n\nDie Aussage ist wahr.",
+      "Banner plus Suchbegriff. geizhals.at hat zahlreiche Besucher; klassische Bannerwerbung ist ein Platz, und diese Banner können mit bestimmten Suchbegriffen kombiniert werden. Vergleichsportal und Werbung liegen damit auf derselben Seite, die sich „kostenlos“ anfühlt. Die Kombination aus Fläche und Suchkontext spiegelt, in kleinerem Maßstab, die Logik der Suchmaschine. Reichweite bleibt die Voraussetzung.\n\nDie Aussage ist wahr.",
+      "Deckung der Onlinekosten, nicht Almosen an die Redaktion. Anbieter von Tageszeitungen verwenden unter anderem das Werbemodell, um Kosten für den Betrieb und die Zurverfügungstellung der Online-Inhalte zu decken. „Unter anderem“ lässt später das Abonnentenmodell und die Kombination zu. Hier zählt: werbefinanzierte Inhalte haben eine Kostenseite, die Werbung mitträgt. Der Satz bereitet den Wandel vor, dass reine Werbefinanzierung nicht mehr überall reicht und Zeitungen diversifizieren. Abbildung 30 an derstandard.at macht denselben Nachrichtenraum als Werbefläche sichtbar.\n\nDie Aussage ist wahr.",
+      "Startseite als Schaukasten. Abbildung 30 ordnet mögliche Werbeformen auf der Startseite von derstandard.at. Der Verweis macht konkrete Ausprägungen sichtbar, ohne dass die Prüfung jedes Pixel auswendig kennen muss. Qualitativ gilt: eine Nachrichtenseite bündelt mehrere Werbeoptionen auf einem Screen. Das passt zur weiten Website-Definition, die Nachrichten einschließt.\n\nDie Aussage ist wahr.",
+      "Unmöglichkeit widerspricht beiden ausführlichen Beispielen und der Abbildung. Google kann Werbeplätze durch Verkauf von Schlüsselwörtern (AdWords) und durch Werbeanzeigen bei bestimmten Suchwörtern (AdSense) anbieten. geizhals.at bietet klassische Bannerwerbung, auch kombiniert mit Suchbegriffen. derstandard.at zeigt auf der Startseite mehrere Werbeformen. Digitale Werbeplätze sind der Gegenstand des Absatzes, je nach Geschäftsfeld. „Keinerlei Platz“ und „Banner und Schlüsselwörter unmöglich“ sind damit unvereinbar. Das Online-Erlebnis wäre ohne genau diese Plätze ein anderes, wie der Text zuvor andeutet.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.14",
+    "title": "Alphabet und der Anteil der Werbung",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Quartalsumsätzen von Alphabet und zum Online-Werbemarkt:",
+    "statements": [
+      "Alphabet ist im Text der Mutterkonzern von Google und anderen Google-Unternehmungen.",
+      "Von insgesamt 86,3 Milliarden Dollar Quartalsumsatz im Jahr 2023 stammten 65,5 Milliarden Dollar aus Werbung.",
+      "65,5 Milliarden Dollar von 86,3 Milliarden Dollar entsprechen einem Anteil von 75 Prozent.",
+      "Werbung trug nach diesen Zahlen nur einen vernachlässigbaren Bruchteil unter zehn Prozent zum Quartalsumsatz bei.",
+      "Der Online-Werbemarkt ist prinzipiell ein stark vertretenes Werbemodell; der Blick auf Alphabet soll das zeigen."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Mutter und Töchter. Alphabet steht als Mutterkonzern von Google und anderen Google-Unternehmungen. Die Umsatzzahlen gehören also zur Holding-Ebene, nicht zu einem einzelnen Suchfeld. Wer Alphabet mit einem reinen Zeitungsverlag verwechselt, hängt die 75 Prozent an den falschen Konzern. Der Satz dient dazu, den Online-Werbemarkt an einem großen Beispiel festzumachen.\n\nDie Aussage ist wahr.",
+      "Zwei Beträge, ein Quartal, Jahr 2023. Gesamtumsatz 86,3 Milliarden Dollar, davon 65,5 Milliarden Dollar aus Werbung. Der Text liefert genau diese Paarung. Qualitative Pointe: Werbung ist nicht eine Randzeile, sondern der Löwenanteil. Die Prüfung verlangt nicht, die Milliarden aus dem Gedächtnis auf die Nachkommastelle zu reproduzieren, wohl aber den qualitativen Befund, den die Zahlen tragen: Werbung dominiert.\n\nDie Aussage ist wahr.",
+      "Anteil rechnen, nicht raten. 65,5 Milliarden Dollar Werbung geteilt durch 86,3 Milliarden Dollar Gesamtumsatz ergibt 65,5 / 86,3 ≈ 0,759, also rund 75 Prozent. Der Text nennt denselben Anteil ausdrücklich. Die Division bestätigt, dass „75 Prozent“ nicht ein loses Etikett ist, sondern der Quotient der beiden genannten Milliardenbeträge des Quartals 2023. Wer 65,5 zu 86,3 als kleine Restgröße liest, hat die Division nicht ausgeführt und verfehlt, warum Alphabet den Online-Werbemarkt als stark vertretenes Modell belegen soll.\n\nDie Aussage ist wahr.",
+      "Unter zehn Prozent wäre rechnerisch 0,10 × 86,3 = 8,63 Milliarden Dollar, weit unter den genannten 65,5 Milliarden aus Werbung. Der tatsächliche Quotient 65,5 / 86,3 ≈ 0,759 liegt bei rund 75 Prozent, wie der Text den Anteil nennt. „Vernachlässigbarer Bruchteil unter zehn Prozent“ widerspricht sowohl der Division als auch dem Wort „75 Prozent“ im Buch. Werbung ist hier die tragende Säule des Quartalsumsatzes von Alphabet im Jahr 2023, nicht eine Fußnote unter zehn Prozent. Genau deshalb gilt der Online-Werbemarkt im Absatz als stark vertretenes Modell, das das heutige Online-Erlebnis mitprägt.\n\nDie Aussage ist falsch.",
+      "Stark vertreten, deshalb Alphabet. Der Online-Werbemarkt gilt als stark vertretenes Werbemodell; der Quartalsblick auf Alphabet soll das zeigen. 75 Prozent aus Werbung machen die Stärke konkret. Ohne dieses Beispiel bliebe „stark vertreten“ eine leere Steigerung. Die Zahlen illustrieren die Beliebtheit, die der Absatz zuvor allgemein behauptet hatte.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.15",
+    "title": "Abonnentenmodell und Kombination mit Werbung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Abonnentenmodell und zu kombinierten Erlösen:",
+    "statements": [
+      "Das Abonnentenmodell erhebt eine laufende Gebühr für den Zugriff auf einen Teil oder alle Angebote, die ein Unternehmen zur Verfügung stellt.",
+      "Netflix und Spotify sind klassische Beispiele; durch Registrierung eines Abonnements erhalten Kunden vollumfänglichen Zugang zu allen Inhalten der Plattform.",
+      "Viele Unternehmen, die zuvor ein anderes Erlösmodell eingesetzt haben, haben das Abonnentenmodell adaptiert.",
+      "Inhaltsanbieter wie Zeitungen setzen heute ausschließlich auf völlig werbefreie Gratisangebote ohne jede Gebühr; Abonnentenmodell und Kombination mit Werbung kommen nicht vor.",
+      "Eine Kombination von Werbe- und Abonnentenmodell ist möglich; Abbildung 31 zeigt ein solches Beispiel."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Laufende Gebühr, abgestufter Zugriff. Teil oder alle Angebote: beides deckt die Definition. Es muss nicht der gesamte Katalog sein, kann es aber. Laufend unterscheidet das Modell vom einmaligen Kauf eines Pakets, den Adobe später verlässt. Die Gebühr kauft Zugang, nicht notwendig Eigentum an einer Datei, wie schon bei Spotify im Musikbeispiel.\n\nDie Aussage ist wahr.",
+      "Zwei Plattformen, volle Inhalte nach Registrierung. Netflix und Spotify stehen als klassische Beispiele des Abonnentenmodells. Durch Registrierung eines Abonnements erhalten Kunden vollumfänglichen Zugang zu allen Inhalten der Plattform. Das konkretisiert die Seite „alle Angebote“ der Definition, nach der eine laufende Gebühr den Zugriff auf einen Teil oder alle Angebote kauft. Musikstream und Filmkatalog folgen derselben Erlösmechanik, trotz unterschiedlicher Medien. Wer Spotify hier nur als iTunes-Download mit Einzelkauf liest, hat den Musikabsatz nicht mit diesem Erlösabschnitt verbunden.\n\nDie Aussage ist wahr.",
+      "Wechsel ist vorgesehen. Das Modell ist verstärkt im Einsatz und wurde von vielen Unternehmen adaptiert, die zuvor anders verdienten. Adaption heißt Umbau des Erlöses, nicht nur ein neues Logo. Zeitungen und Adobe sind die folgenden Belege. Ohne diesen Satz wäre der historische Wandel von werbefinanzierten Gratisinhalten zum Abo ein bloßer Zufall.\n\nDie Aussage ist wahr.",
+      "Früher oft frei mit Werbung, heute diversifiziert. Es war zum Beispiel möglich, bei einer Mehrzahl von Zeitungen Inhalte online ohne Einschränkungen mit Werbung zu konsumieren. Mittlerweile setzen Inhaltsanbieter wie Zeitungen auf das Abonnentenmodell oder auf eine Kombination aus Werbe- und Abonnentenmodell, wie Abbildung 31 zeigt. „Ausschließlich werbefreie Gratisangebote ohne jede Gebühr“ beschreibt weder das Früher (Werbung war da) noch das Heute (Abo oder Mix). Die Aussage ist in beide Zeitrichtungen falsch und streicht genau den Wandel, den der Abschnitt am Erlös festmacht.\n\nDie Aussage ist falsch.",
+      "Mix ist der zweite Pfad. Kombination von Werbung und Abo ist ausdrücklich genannt; Abbildung 31 zeigt ein Beispiel, im Text mit Die Zeit verbunden. Das bestätigt die allgemeine Regel, dass Unternehmen kombinieren dürfen. Wer nur reines Abo oder nur reine Werbung zulässt, streicht den mittleren Weg, den der Abschnitt an Inhaltsanbietern festmacht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.16",
+    "title": "Adobe, Abo-Wechsel und Branchentransformation",
+    "context": "Bewerten Sie die folgenden Aussagen zum Modellwechsel bei Adobe und zur digitalen Transformation von Branchen:",
+    "statements": [
+      "Adobe hat 2013 vom klassischen Umsatzmodell auf ein Abonnentenmodell gewechselt.",
+      "Zuvor konnte man einzelne Softwarepakete wie Adobe Photoshop durch Zahlung eines einmaligen Betrags lebenslang erwerben.",
+      "Mittlerweile muss eine monatliche oder jährliche Gebühr gezahlt werden, um diese Produkte nutzen zu können.",
+      "Digitalisierung bedeutet im Schlusssatz nur den Wechsel von Papier zu Datei bei unverändertem Geschäftsmodell; Branchen, Produkte, Dienstleistungen und Modelle bleiben unberührt.",
+      "Anhand der Beispiele zeigt der Text, dass durch Digitalisierung nicht nur ein Wandel von analog zu digital stattfindet, sondern gesamte Branchen mit Produkten, Dienstleistungen und Geschäftsmodellen digital transformiert werden."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Jahr und Richtung sind festgehalten. 2013 wechselt Adobe vom klassischen Umsatzmodell auf ein Abonnentenmodell. Klassisch meint hier den einmaligen Verkauf, nicht Werbung. Das Softwarehaus mit Portfolio für Bild, Foto, Film, Grafik und Illustration wird zum Beleg, dass Digitalisierung Erlösmodelle umbauen kann, nicht nur Dateiformate. Wer den Wechsel leugnet, streicht das dritte große Abo-Beispiel nach Spotify und Netflix.\n\nDie Aussage ist wahr.",
+      "Lebenslang gegen Einmalbetrag, das ist das Vorher. Einzelne Softwarepakete wie Adobe Photoshop konnte man durch Zahlung eines einmaligen Betrags lebenslang erwerben. Das ist strukturell näher am CD-Paket oder am iTunes-Titel als am Stream. Der Kontrast macht den späteren Zwang zur monatlichen oder jährlichen Gebühr verständlich. Ohne dieses Vorher gäbe es keinen Wandel vom klassischen Umsatzmodell zum Abonnentenmodell zu erzählen, nur eine ewig gleiche Preisliste. 2013 markiert genau diesen Schnitt im Portfolio für Bild, Foto, Film, Grafik und Illustration.\n\nDie Aussage ist wahr.",
+      "Monat oder Jahr, nicht einmal für immer. Die Nutzung der Produkte setzt eine laufende Gebühr voraus. Das trifft die Definition des Abonnentenmodells: laufende Gebühr für Zugriff auf Angebote. Abbildung 32 verweist auf Abo-Modelle von Adobe, ohne dass einzelne Tarifnamen prüfungsrelevant erfunden werden müssten. Entscheidend ist der Rhythmus der Zahlung statt des lebenslangen Einmalkaufs.\n\nDie Aussage ist wahr.",
+      "Schlusssatz geht weiter als der Scan von Papier. Nicht nur ein Wandel von analog zu digital findet statt, sondern gesamte Branchen mit ihren Produkten, Dienstleistungen und dahinterstehenden Geschäftsmodellen werden digital transformiert. Unveränderte Modelle bei bloß neuem Dateiformat wären das Gegenteil dieser Pointe. Musik von der CD über iTunes zum Stream, Werbung auf Websites, Zeitungen im Mix aus Abo und Anzeige, Adobe 2013 vom Einmalkauf zur Gebühr: überall ändert sich, wie Wert entsteht und wie kassiert wird. Wer nur den Wechsel von Papier zu Datei sieht, bleibt hinter dem Absatz und hinter Abbildung 29 zurück.\n\nDie Aussage ist falsch.",
+      "Analog-digital plus Modellwechsel. Der Anfang des Unterabschnitts zeigte App-Fahrschein und Lieferhandel; das Ende bündelt: Digitalisierung transformiert Branchen samt Produkten, Dienstleistungen und Geschäftsmodellen. Wertschöpfung, Pure-Play, Clicks and Mortar, Werbung, Abo und der Adobe-Schnitt 2013 sind Stationen derselben These. Die Aussage gibt den Schlusssatz wieder und schließt den Kreis zur Definition der Wertschöpfung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

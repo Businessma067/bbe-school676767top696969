@@ -1,0 +1,83 @@
+#### 2.5 Soziales Wohlbefinden als Ziel nachhaltigen Wirtschaftens
+
+Im Zentrum wirtschaftlicher Überlegungen steht die Frage, wozu Wirtschaft dient. Wenn sie nicht 
+dem Wohlbefinden der Menschen dient, verliert sie ihre Legitimation. 
+Bedürfnisse, Präferenzen, Nutzen – theoretische Grundlagen 
+• Bedürfnisse sind objektive Voraussetzungen menschlicher Existenz (Ernährung, Gesundheit, Zugehörigkeit, Sicherheit). 
+• Präferenzen sind subjektive Bewertungen und kulturell geprägt. Sie können Bedürfnisse widerspiegeln, aber auch durch Werbung, Statusstreben oder soziale Vergleiche verzerrt sein. 
+• Nutzen ist die kurzfristige Zufriedenheit aus der Befriedigung einer Präferenz. 
+• Subjektives Wohlbefinden (SWB) und Lebenszufriedenheit beziehen sich dagegen auf das Gesamturteil über das eigene Leben, also auf die nachhaltige Qualität menschlicher Existenz, nicht bloß momentane Lust. Diese Unterscheidung ist entscheidend: Wirtschaftliches Wachstum kann den Nutzen erhöhen, aber das Wohlbefinden dennoch mindern, wenn es soziale Ungleichheit, Stress oder Umweltzerstörung verstärkt. 
+
+Bedürfnisse haben eine ethische Relevanz: Sie markieren, was erfüllt sein muss, damit Menschen ein 
+menschenwürdiges Leben führen können. Präferenzen dagegen sind nicht immer moralisch oder 
+ökologisch wünschenswert; Menschen können auch umweltschädliche oder sozial destruktive 
+Präferenzen haben. Nutzen ist wertneutral; er misst, was Individuen wollen, nicht Gerechtigkeit oder 
+Nachhaltigkeit. Wohlbefinden und Lebenszufriedenheit schließlich geben Hinweise darauf, ob 
+gesellschaftliche Systeme tatsächlich zum guten Leben beitragen. Damit wird deutlich: Nur wenn diese 
+Konzepte unterschieden werden, kann die Wirtschaftswissenschaft zugleich erklären, wie Menschen 
+entscheiden, was sie brauchen und wie gut es ihnen tatsächlich geht und daraus ableiten, wie 
+nachhaltiges Wohlbefinden erreicht werden kann. 
+Wirtschaftliches Handeln hat stets das Ziel, das menschliche Wohl zu fördern. 
+Dabei ist wichtig zu verstehen, dass Begriffe wie Bedürfnis, Präferenz, Nutzen, 
+Wohlbefinden, Lebenszufriedenheit und Glück nicht dasselbe meinen. Sie erfassen 
+verschiedene Ebenen – von den objektiven Voraussetzungen des guten Lebens bis 
+zu dessen subjektiver Wahrnehmung. Ihre Unterscheidung hilft, wirtschaftliche, 
+soziale und ökologische Ziele besser aufeinander abzustimmen. Hier 
+
+zusammengefasst: Konzept Was wird beschrieben? Ebene Bedeutung für Nachhaltigkeit
+
+Bedürfnisse Grundlegende Voraussetzungen für ein gutes Leben
+
+objektiv Mindeststandard für Gerechtigkeit
+
+Präferenzen Individuelle Wünsche und Vorlieben
+
+subjektiv sozial formbar, nicht immer nachhaltig
+
+Nutzen Theoretische Modellgröße zur Erklärung von Entscheidungen
+
+analytisch beschreibt Entscheidungs verhalten, nicht Wohlbefinden
+
+Subjektives Wohlbefinden (SWB)
+
+Emotionale und kognitive Bewertung des Lebens
+
+empirisch Indikator gesellschaftlicher Qualität
+
+Lebenszufriedenheit Langfristige Einschätzung des eigenen Lebens
+
+empirisch Maß für Erfolg von Politik und Institutionen
+
+Glück Kurzfristige positive Emotionen
+
+affektiv Teilkomponente von Wohlbefinden
+
+Glück, Lebenszufriedenheit und ihre empirischen Determinanten 
+Empirische Erkenntnisse (z.B. Ferrer-i-Carbonell et al. 2003, 2004a,b, 2005; World Happiness Report 
+2025) belegen, dass Einkommen nur bis zu einem gewissen Schwellenwert mit Lebenszufriedenheit 
+korreliert. Wichtiger sind: 
+• Gesundheit, soziale Beziehungen, Vertrauen und Beteiligung, 
+• Relative Vergleiche – Menschen bewerten ihr Glück im Verhältnis zu anderen, 
+• Arbeitslosigkeit und Unsicherheit mindern das Wohlbefinden stärker als Einkommensverluste, 
+• Bildung erhöht Lebenszufriedenheit über Selbstwirksamkeit und Beschäftigungsaussichten. 
+
+Der World Happiness Report 2025 zeigt, dass Länder mit hohen Werten für soziales Vertrauen, institutionelle Qualität und Umweltbewusstsein zugleich am glücklichsten sind (Skandinavien, Niederlande, Neuseeland). Für Jugendliche ist Lebenszufriedenheit stark von Sinn, Sicherheit und sozialer Einbindung abhängig.
+
+• In Europa äußern laut Gallup-Daten 2023 fast 60 % der 18- bis 29-Jährigen Sorgen über die Zukunft von Klima und Gesellschaft. 
+• Gleichzeitig steigt das Bewusstsein für Nachhaltigkeit: Jugendliche verbinden Glück zunehmend mit Sinnhaftigkeit, Naturerfahrung und Mitgestaltung statt mit materiellem Konsum. Diese empirischen Trends zeigen: Wohlbefinden im 21. Jahrhundert ist untrennbar mit Nachhaltigkeit verknüpft. Kate Raworths Modell des Doughnuts verbindet zwei Zielgrößen: 
+• eine soziale Basis (Grundbedürfnisse für alle Menschen), 
+• und eine ökologische Decke (planetare Belastungsgrenzen). 
+
+Abbildung 17: Aktueller globaler Status von sozialen Defiziten und ökologischen Überschreibungen (Quelle: Fanning, Raworth 2025)
+
+Der grüne Bereich zwischen diesen Ringen ist der sichere und gerechte Handlungsraum.
+
+Empirisch zeigt der Doughnut Monitor 2025:
+
+• Kein Land erfüllt alle sozialen Mindeststandards innerhalb der ökologischen Grenzen. 
+• Reiche Länder überschreiten die ökologischen Grenzen, 
+• ärmere Länder unterschreiten das soziale Fundament. Das Ziel nachhaltiger Wirtschaft ist daher ein gutes Leben für alle innerhalb der planetaren Grenzen. Von Bedürfnissen zu Konsum- und Produktionskorridoren Ein Konsumkorridor legt den Bereich fest zwischen: 
+• einem sozialen Minimum (was notwendig ist, um gut zu leben), 
+• und einem ökologischen Maximum (was der Planet dauerhaft verkraftet). Beispiel: 
+• Unterernährung liegt unter dem Minimum, 
+• übermäßiger Fleisch- und Energieverbrauch über dem Maximum. Ein Produktionskorridor beschreibt, welche Güter und Dienstleistungen in welcher Form produziert werden sollten, um Bedürfnisse zu befriedigen, ohne ökologische Grenzen zu überschreiten. Diese Konzepte knüpfen direkt an subjektives Wohlbefinden an: Studien zeigen, dass übermäßiger Konsum abnehmende Zufriedenheitszuwächse bringt, während Suffizienz (genug, aber nicht zu viel) langfristig stabileres Wohlbefinden erzeugt.

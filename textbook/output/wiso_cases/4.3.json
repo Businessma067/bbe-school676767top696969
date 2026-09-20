@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.01",
+    "title": "Internet als IT-Infrastruktur",
+    "context": "Bewerten Sie die folgenden Aussagen zum Internet als Baustein der Digitalisierung:",
+    "statements": [
+      "Zentraler Baustein für die Realisierung der Digitalisierung ist das Internet.",
+      "Das Internet stellt die wichtigste IT-Infrastruktur dar, um die globale Vernetzung von Personen und Unternehmen zu unterstützen.",
+      "Das Internet ist kein Netzwerk, sondern lediglich ein einzelnes lokales Kabel ohne Verbindung zu anderen Netzen.",
+      "Das Internet ist als Netzwerk von Netzwerken zu verstehen, die weltweit miteinander verbunden sind.",
+      "Daten werden im Internet niemals drahtlos übermittelt; nur Hochseekabel existieren."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ohne Träger bleibt Digitalisierung eine Absicht. Der Abschnitt setzt das Internet an den Anfang: es ist der zentrale Baustein, um Digitalisierung überhaupt zu realisieren. Zahlreiche Funktionen zum Austausch von Informationen und zur Kommunikation, privat wie im Unternehmen, bauen auf dieser Technik auf. Wer das Internet als Randgerät behandelt, verfehlt den Einstieg des Unterabschnitts. Plattformen und Browser kommen später; zuerst muss das Netz als Träger stehen, sonst bleibt jede digitale Funktion ohne Weg.\n\nDie Aussage ist wahr.",
+      "Infrastruktur meint hier die Grundlage der Vernetzung, nicht ein einzelnes Programm. Das Internet trägt die globale Verbindung von Personen und Unternehmen. Genau deshalb heißt es die wichtigste IT-Infrastruktur. Apps und Dienste sitzen später darauf; ohne dieses Netz gäbe es keine Plattform für die folgenden Beispiele. E-Mail, Suche und Messenger teilen denselben Träger, auch wenn Alltagssprache sie oft mit dem Web verwechselt.\n\nDie Aussage ist wahr.",
+      "Netzwerk von Netzwerken, nicht ein isoliertes Kabel. Weltweit sind Netze miteinander verbunden. Hochseekabel, Hausanschluss und Funk greifen ineinander. Die Behauptung, es gebe nur ein lokales Kabel ohne weitere Netze, streicht genau diese Verschachtelung. Dann wäre globale Vernetzung unmöglich, obwohl der Text sie als Zweck der Infrastruktur nennt. Ein einzelnes Bürokabel ohne Anschluss an andere Netze wäre ein lokales Rechnernetz, nicht das Internet im Sinn des Buchs. Kontinente, Haushalte und Betriebe greifen auf dasselbe verschachtelte System zu, auch wenn die sichtbare Technik jeweils anders aussieht.\n\nDie Aussage ist falsch.",
+      "Verschachtelung ist die Definition. Das Internet soll als Netzwerk verstanden werden, und zwar als Netzwerk von Netzwerken, die weltweit verbunden sind. Erscheinungsformen dürfen differieren, der Zugriff bleibt ein Zugriff auf dieses Netz. Ohne diese Formulierung blieben Kabel und Funk zwei getrennte Welten statt Teile desselben Internets.\n\nDie Aussage ist wahr.",
+      "Zwei Wege, ein Netz. Hochseekabel verbinden Kontinente; zu Hause oder im Unternehmen können Daten drahtlos übermittelt werden. In jedem Fall greift man auf das Internet zu. Wer drahtlose Übermittlung für immer ausschließt, widerspricht dem Haus- und Betriebsbeispiel. Funk und Kabel sind Ausprägungen, keine sich ausschließenden Welten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.02",
+    "title": "Was ein Netzwerk ist",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition eines Rechnernetzes:",
+    "statements": [
+      "Ein Netzwerk bzw. Rechnernetz wird als räumlich verteiltes System von Datenstationen verstanden, die durch Kommunikationseinrichtungen und -wege miteinander verbunden sind, um Daten auszutauschen.",
+      "Unter einer Datenstation versteht man einen Rechner, zum Beispiel einen PC, ein Tablet oder ein Smartphone.",
+      "Eine Kommunikationseinrichtung könnte das WLAN-Modul im Rechner oder der WLAN-Router im Haushalt sein.",
+      "Datenstationen dürfen niemals Smartphones sein, sondern nur Großrechner in Rechenzentren.",
+      "Ein Netzwerk verbindet Datenstationen, ohne dass Daten ausgetauscht werden sollen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Teile gehören zusammen: Stationen, Einrichtungen, Wege. Das Rechnernetz ist räumlich verteilt und dient dem Datenaustausch. Fehlt eines der Glieder, bleibt ein Haufen Geräte ohne Verbindung. Der englische Begriff computer network steht daneben, ändert aber die deutsche Definition nicht. Räumliche Verteilung heißt: die Stationen müssen nicht in einem Raum stehen, solange Kommunikationseinrichtung und Weg sie koppeln.\n\nDie Aussage ist wahr.",
+      "Datenstation heißt Rechner im Alltagssinn. PC, Tablet und Smartphone stehen ausdrücklich als Beispiele. Nicht nur der Turm im Büro zählt. Wer das Smartphone aus der Liste streicht, verengt den Begriff gegen den Lehrtext. Später erklärt derselbe Abschnitt drahtlose Übermittlung zu Hause; ohne Mobilgerät als Station wäre dieses Bild unvollständig.\n\nDie Aussage ist wahr.",
+      "Einrichtung ist das, was den Weg ermöglicht. WLAN-Modul im Gerät und Router im Haushalt sind die Buchbeispiele. Sie sind nicht selbst das ganze Internet, sondern die Stelle, an der ein Rechner ins Netz tritt. Ohne solche Einrichtungen blieben Stationen isoliert.\n\nDie Aussage ist wahr.",
+      "Smartphone steht in der Klammer neben PC und Tablet. Großrechner als einzig zulässige Station erwähnt der Text nicht. Die absolute Sperre gegen Mobilgeräte kippt die Definition der Datenstation. Dann wäre drahtlose Nutzung im Haushalt begrifflich unmöglich, obwohl der Abschnitt sie gerade erklärt. Ein Rechnernetz im Buch ist räumlich verteilt und alltagsnah: Tablet auf dem Sofa und PC am Schreibtisch können dieselbe Rolle spielen, nämlich Datenstation. Wer nur das Rechenzentrum gelten lässt, verwechselt Serverräume des späteren WWW mit der allgemeinen Netzdefinition am Anfang.\n\nDie Aussage ist falsch.",
+      "Zweck des Netzes ist der Austausch. Stationen sind verbunden, um Daten auszutauschen, nicht um stumm nebeneinander zu liegen. Eine Verbindung ohne diesen Zweck wäre nach der Definition kein Rechnernetz. Der Satz dreht die Absicht um und ist deshalb falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.03",
+    "title": "Kommunikationswege im Internet",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kabel, Funk und Zugriff auf das Internet:",
+    "statements": [
+      "Der Kommunikationsweg kann kabellos oder kabelgebunden umgesetzt werden.",
+      "Nur kabelgebundene Wege zählen als Netzwerk; WLAN ist kein Kommunikationsweg.",
+      "Hochseekabel verbinden Kontinente miteinander.",
+      "Zu Hause oder im Unternehmen werden Daten niemals drahtlos übermittelt.",
+      "In jedem Fall wird auf ein Netzwerk zugegriffen, das Internet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Umsetzungen, gleiche Rolle. Kabellos und kabelgebunden sind gleichberechtigte Kommunikationswege. Das Buch legt sich nicht auf Kupfer oder Glas allein fest. Wer nur eine Technik gelten lässt, zerschneidet die Definition des Weges. Der Router im Haushalt und das Seekabel zwischen Kontinenten sind verschiedene Erscheinungen desselben Zugriffs auf das Internet. Die Definition des Kommunikationswegs bleibt technisch offen, damit Kabel und Funk dieselbe Rolle spielen können.\n\nDie Aussage ist wahr.",
+      "WLAN gehört zur Einrichtung und zum kabellosen Weg. Der Router und das Modul im Rechner stehen als Beispiele. Ein Netz, das nur Kabel kennt, wäre unvollständig. Die Behauptung, WLAN sei kein Kommunikationsweg, widerspricht der offenen Formulierung kabellos oder kabelgebunden. Funk im Wohnzimmer ist genauso Zugriff auf das Internet wie das Hochseekabel, nur auf anderer Distanz. Wer WLAN aus dem Wegbegriff streicht, kann die häusliche drahtlose Übermittlung des Einstiegs nicht mehr erklären. Die absolute Beschränkung auf Kabel würde das Netzwerk von Netzwerken auf eine einzige Erscheinungsform zusammenziehen und den Einstieg des Unterabschnitts zerlegen.\n\nDie Aussage ist falsch.",
+      "Kontinente hängen an Seekabeln. Der Text nennt Hochseekabel als Erscheinungsform des Netzes zwischen Erdteilen. Das ist keine Metapher, sondern die physische Verbindung großer Distanz. Funk im Wohnzimmer ersetzt diese Seekabel nicht, ergänzt sie aber im lokalen Zugriff. Beides bleibt Zugriff auf dasselbe Internet.\n\nDie Aussage ist wahr.",
+      "Drahtlos zu Hause und im Unternehmen steht ausdrücklich da. Niemals drahtlos wäre das Gegenteil. Der Abschnitt will gerade zeigen, dass das Netz unterschiedlich aussehen kann und trotzdem Internet bleibt. Die absolute Verneinung des Funks ist falsch. WLAN-Modul und Router wären dann sinnlos in der Netzdefinition, obwohl sie als Kommunikationseinrichtung genannt sind.\n\nDie Aussage ist falsch.",
+      "Zugriff zählt, nicht die Optik des Kabels. Ob Seekabel oder Funk: man greift auf ein Netzwerk zu, und dieses Netzwerk ist das Internet. Die Pointe des Einstiegs liegt in dieser Einheit hinter den verschiedenen Erscheinungsformen. Global und lokal sind Schichten, nicht zwei Internets.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.04",
+    "title": "Internet und World Wide Web",
+    "context": "Bewerten Sie die folgenden Aussagen zum Unterschied zwischen Internet und WWW:",
+    "statements": [
+      "Das World Wide Web ist eine Anwendung bzw. ein Dienst, der auf der Infrastruktur des Internets aufbaut.",
+      "Das WWW ermöglicht es, Informationen zur Verfügung zu stellen, auffindbar zu machen und sinnvoll darzustellen.",
+      "Internet und World Wide Web sind im Lehrtext dieselbe Sache ohne jeden Unterschied.",
+      "Das Internet ist ein riesiges Netzwerk, über das Daten verschickt und empfangen werden können.",
+      "Das WWW braucht das Internet nicht; es läuft als eigenes Netz ohne diese Infrastruktur."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Dienst auf dem Netz, nicht das Netz selbst. WWW, Web und World Wide Web bezeichnen eine Anwendung, die die Infrastruktur des Internets verwendet. Informationen bereitstellen, finden und darstellen: das leistet dieser Dienst. Wer Web und Internet gleichsetzt, vermischt Träger und Anwendung. E-Mail und Messenger nutzen denselben Träger, ohne deshalb das WWW zu sein. Der Web-Browser ist später die Schnittstelle zum WWW, nicht zum Internet als ganzem Träger.\n\nDie Aussage ist wahr.",
+      "Drei Verben, ein Zweck. Zur Verfügung stellen, auffindbar machen, sinnvoll darstellen: genau das soll das Web leisten. Ohne Darstellung bliebe eine Datei unsichtbar, ohne Adressierung unauffindbar. Der Browser wird später die Schnittstelle dazu. HTTP, HTML und URL sind die Werkzeuge dieser drei Verben, noch bevor von Marktplätzen die Rede ist.\n\nDie Aussage ist wahr.",
+      "Alltag vermischt die Wörter, der Lehrtext trennt sie. Man sagt recherchieren im Internet und meint oft die Suche über das Web im Browser. Der Unterschied bleibt: Internet als riesiges Netzwerk, WWW als Dienst darauf. Kein Unterschied wäre die umgangssprachliche Verwechslung, nicht die Buchdefinition. Wer die Trennung leugnet, kann später nicht erklären, warum eine Mail das Netz nutzt, ohne das Web zu sein, und warum WhatsApp-Daten über das Internet laufen, ohne HTML-Seiten zu sein. Die Prüfungsfrage zielt genau auf diese Schichtentrennung, nicht auf den lockeren Sprachgebrauch im Büro.\n\nDie Aussage ist falsch.",
+      "Senden und Empfangen ist die Netzfunktion. Daten einer E-Mail, einer Suchanfrage oder einer WhatsApp-Nachricht können über dieses Netzwerk laufen. Das Web ist nur eine der Nutzungen. Die Größe des Netzes erklärt, warum so viele Dienste denselben Träger teilen.\n\nDie Aussage ist wahr.",
+      "Aufbauen heißt abhängig sein. Das Web verwendet die Infrastruktur des Internets. Ein eigenes Netz ohne Internet widerspräche dem Satz, das WWW sei ein Dienst auf diesem Netzwerk. Hypertext, Browser und Server setzen denselben Träger voraus.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.05",
+    "title": "Alltagssprache, E-Mail und weitere Dienste",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie Dienste das Internet nutzen:",
+    "statements": [
+      "Im Alltag und im Beruf werden die Begriffe Internet und Web oft als Synonym verwendet.",
+      "Wer über das Web mittels eines Browsers recherchiert, formuliert das oft als Recherche im Internet.",
+      "Eine E-Mail ist dasselbe wie das World Wide Web und kein eigener Dienst.",
+      "E-Mail ist ein weiterer Dienst, der das Internet zur Übertragung verwendet.",
+      "Nachrichten über WhatsApp gehören nicht zu den Daten, die über das Internet verschickt werden können."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Synonym im Sprachgebrauch, nicht in der Technik. Der Text hält fest, dass wir die Begriffe oft gleichsetzen, obwohl sie es nicht sind. Die Verwechslung ist alltäglich und beruflich üblich. Genau deshalb folgt die Klärung: Netz versus Dienst. Recherche, Mail und Messenger teilen den Träger und nicht unbedingt die Weboberfläche.\n\nDie Aussage ist wahr.",
+      "Browserweg und umgangssprachliche Formulierung fallen auseinander. Die Suche läuft über das Web, das Wort im Mund heißt oft Internet. Der Abschnitt nutzt genau dieses Beispiel, um den Unterschied greifbar zu machen. Wer beides für identisch hält, bleibt in der Alltagssprache stecken. Der Browser ist die Schnittstelle zum WWW, das Internet der Weg der Daten. Genau diese Lücke zwischen Wort und Technik begründet die eigene Frage nach dem Unterschied von Internet und Web.\n\nDie Aussage ist wahr.",
+      "E-Mail ist ein weiterer Dienst, nicht das Web selbst. Man sagt, man schicke eine Mail über das Web, verwendet aber nur die Übertragung über das Internet. WWW und E-Mail sind verschiedene Anwendungen auf demselben Netz. Gleichsetzung streicht diese Trennung. Der Lehrtext korrigiert die umgangssprachliche Formel bewusst: nicht jeder Dienst, der Daten über das Netz schickt, ist das World Wide Web. HTML-Seiten im Browser sind der Webdienst; die Mail folgt eigenen Regeln, braucht aber denselben Träger. Wer Mail und WWW in eins setzt, kann HTTP, HTML und URL nicht mehr als Konzepte gerade des Webs verstehen.\n\nDie Aussage ist falsch.",
+      "Übertragung braucht den Träger. Der Dienst E-Mail nutzt das Internet, um Daten zu schicken und zu empfangen. Das ist parallel zur Suchanfrage und zur Messenger-Nachricht. Ohne das riesige Netzwerk käme die Mail nicht an, das Web wäre dafür nicht zwingend die Oberfläche.\n\nDie Aussage ist wahr.",
+      "WhatsApp steht neben E-Mail und Suchanfrage als Beispiel für Daten, die über das Internet laufen. Ausschließen dieser Nachrichten widerspricht der Aufzählung. Der Messenger ist ein Dienst auf dem Netz, nicht ein Netz außerhalb des Internets. Die Daten gehören zur Mail, zur Suche oder zur Nachricht; der Träger bleibt das Internet.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.06",
+    "title": "Tim Berners-Lee und CERN",
+    "context": "Bewerten Sie die folgenden Aussagen zur Entstehung des World Wide Web:",
+    "statements": [
+      "Tim Berners-Lee hat im Jahr 1989 während seiner Arbeit bei CERN das World Wide Web erfunden.",
+      "Im Jahr 1990 publizierte er zu seinem Projekt einen wissenschaftlichen Aufsatz mit dem Titel Information Management: A Proposal.",
+      "Die Motivation lag ursprünglich darin, am CERN in Genf Forschungsergebnisse mit Kolleginnen und Kollegen zu verwalten und auszutauschen.",
+      "Das World Wide Web wurde 1989 von einem Handelsunternehmen in Wien erfunden, nicht am CERN.",
+      "Der Aufsatz von 1990 schlägt vor, Informationen im Internet niemals systematisch abzulegen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Jahr, Person und Ort sind festgehalten. 1989, Tim Berners-Lee, Arbeit bei CERN: dort entsteht das World Wide Web. Die Erfindung sitzt in der Forschungseinrichtung, nicht in einem späteren Marktplatz. Wer das Jahr oder den Ort verschiebt, verfehlt den historischen Kern des Abschnitts. 1990 folgt der Aufsatz; HTTP, HTML und URL sind die später genannten Konzepte derselben Idee. Die Motivation am CERN bleibt der Austausch von Forschungsergebnissen, nicht ein späterer digitaler Marktplatz.\n\nDie Aussage ist wahr.",
+      "Ein Jahr später folgt der Aufsatz. 1990 erscheint der Text zur Idee, Informationen im Internet zu organisieren. Der Titel lautet Information Management: A Proposal. Darin geht es um systematisches Ablegen und Bereitstellen, damit andere die Inhalte wiederfinden und aufrufen können. CERN bleibt der institutionelle Rahmen, nicht ein Handelsplatz.\n\nDie Aussage ist wahr.",
+      "CERN in Genf ist der Anlass, nicht ein späteres Geschäftsmodell. Forschungsergebnisse sollten mit Kollegen einfach verwaltet und ausgetauscht werden. Aus diesem Bestreben wächst das Projekt. Kommerzielle Plattformen wie refurbed kommen erst am Ende des Unterabschnitts, nicht an den Ursprung.\n\nDie Aussage ist wahr.",
+      "Wien und Handel stehen hier nicht als Geburtsort. CERN und 1989 sind die Angaben des Buchs. Ein Handelsunternehmen als Erfinder widerspricht Person, Jahr und Institution. Die spätere Internetökonomie baut auf dem Web auf, sie erfindet es 1989 nicht neu. Refurbed und willhaben sind digitale Märkte auf der Infrastruktur, nicht die Erfindung des WWW. Wer den Ursprung in den Handel verlegt, verwechselt Plattformökonomie mit Hypertext am CERN. Tim Berners-Lee und der Aufsatz von 1990 gehören zur Forschungsgeschichte; der Marktplatz kommt erst, wenn Dienste auf dem Netz ökonomische Transaktionen tragen.\n\nDie Aussage ist falsch.",
+      "Systematisch ablegen und bereitstellen ist der Vorschlag, nicht das Verbot. Andere Menschen sollen Informationen einfach wiederfinden und aufrufen können. Niemals ablegen wäre das Gegenteil der Proposal-Idee. HTTP, HTML und URL setzen genau diese Auffindbarkeit später um.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.07",
+    "title": "HTTP, HTML und URL",
+    "context": "Bewerten Sie die folgenden Aussagen zu den grundlegenden Konzepten des WWW:",
+    "statements": [
+      "HTTP ist ein Protokoll, in dem festgehalten wird, welche Schritte notwendig sind, damit ein Browser Informationen von einem Server anfordern kann.",
+      "HTML ist eine Sprache, mit der Informationen so strukturiert werden, dass ein Browser sie darstellen und ein Mensch sie lesen kann.",
+      "Die URL ist ein einheitliches System, um Informationen zu adressieren, also auffindbar und abrufbar zu machen.",
+      "HTML ist das Protokoll für die Anforderung beim Server, nicht eine Sprache zur Strukturierung der Darstellung.",
+      "URLs dienen nur der Dekoration von Webseiten und machen Ressourcen nicht auffindbar."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Schritte der Anforderung, das ist HTTP. Der Browser holt Informationen vom Server nach festgehaltenen Regeln. Ohne dieses Protokoll wüsste keine Seite, in welcher Reihenfolge gefragt und geantwortet wird. Die drei Konzepte zusammen sind laut Text heute maßgeblich für ein funktionierendes WWW. Request und Response später sind dieselbe Logik in anderen Wörtern. HTML und URL stehen daneben; ohne HTTP käme die Anforderung beim Server nicht in geregelten Schritten zustande.\n\nDie Aussage ist wahr.",
+      "Struktur für Mensch und Browser. HTML hält Informationen so fest, dass die Darstellung im Browser stimmt und lesbar bleibt. Es ist eine Sprache, kein Transportweg. Wer HTML mit dem Anforderungsprotokoll verwechselt, vertauscht Auszeichnung und HTTP. Der Mensch liest, was der Browser aus der strukturierten Datei macht.\n\nDie Aussage ist wahr.",
+      "Adresse macht auffindbar. Uniform Resource Locator heißt einheitliches System der Adressierung. Abrufbar wird eine Ressource erst, wenn sie so benannt ist, dass andere sie ansteuern können. Hyperlinks auf Seiten sind später genau solche URLs.\n\nDie Aussage ist wahr.",
+      "Rollen vertauscht. HTTP regelt die Anforderung, HTML die Struktur und Darstellung. HTML als Protokoll der Serveranfrage zu lesen, streicht beide Definitionen. Der Browser nutzt HTTP zum Holen und HTML zum Zeigen; das sind zwei Konzepte, nicht eines. Tim Berners-Lee nannte beide, weil ohne Transportregeln keine Datei käme und ohne Auszeichnung keine lesbare Seite entstünde. Die URL als dritte Säule adressiert, was geholt und angezeigt wird. Wer HTML die HTTP-Rolle gibt, kann Request-Response später nicht mehr an das richtige Protokoll binden. Die drei Konzepte bleiben getrennt, sonst bricht die Architektur des WWW in ein einziges falsch benanntes Werkzeug zusammen.\n\nDie Aussage ist falsch.",
+      "Auffindbar und abrufbar ist der Zweck der URL, nicht Schmuck. Dekoration ohne Adresse ließe Ressourcen im Netz unsichtbar. Der Text koppelt Locator an systematisches Wiederfinden, das schon die Proposal von 1990 anstrebte. Links auf weiteren Seiten sind URLs in der Praxis des Surfens.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.08",
+    "title": "Kommunikationsprotokoll",
+    "context": "Bewerten Sie die folgenden Aussagen zum Protokoll in der Informationstechnologie:",
+    "statements": [
+      "Ein Protokoll im Kontext der Informationstechnologie ist nicht dasselbe wie ein Protokoll, das für eine Besprechung erstellt wurde.",
+      "Kommunikationsprotokolle halten keine Regeln fest; Rechner kommunizieren ohne festgelegte Form.",
+      "Im Protokoll wird unter anderem festgehalten, wie Meldungen formuliert werden müssen und wie Antworten auf Meldungen gestaltet werden müssen.",
+      "Ähnlich wie bei der Post müssen Adressat inklusive Adresse und Absender angegeben werden, falls die Sendung nicht zugestellt werden kann.",
+      "Welche Zeichen, Inhalte und Repräsentationsgrößen verwendet werden dürfen, bleibt im IT-Protokoll völlig ungeregelt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wortgleichheit täuscht. Sitzungsprotokoll und Kommunikationsprotokoll teilen den Namen, nicht die Funktion. In der IT hält das Protokoll Regeln fest, wie Rechner präzise und möglichst unmissverständlich kommunizieren sollen. Wer beides gleichsetzt, erwartet Minuten einer Sitzung statt Nachrichtenformate zwischen Maschinen. HTTP ist später ein solches Regelwerk zwischen Browser und Server, kein Bericht einer Besprechung am CERN.\n\nDie Aussage ist wahr.",
+      "Regeln sind der Kern. Formulierung von Meldungen, Gestalt der Antworten, zulässige Zeichen und Größen: das steht im Protokoll. Ohne festgelegte Form wäre Kommunikation missverständlich, genau das Gegenteil der Buchdefinition. HTTP als Browser-Server-Protokoll setzt diese Regelhaftigkeit später konkret um. Die Postanalogie folgt, weil auch Briefe Konventionen brauchen, sonst kommt nichts an.\n\nDie Aussage ist falsch.",
+      "Hin und zurück ist normiert. Meldungen und Antworten gehören beide in die Festlegung. Ein Protokoll, das nur das Fragen kennt und das Antworten offenlässt, wäre unvollständig. Präzision entsteht, weil beide Seiten dieselben Konventionen kennen. Request und Response im WWW sind dieselbe Zweiseitigkeit unter anderem Namen.\n\nDie Aussage ist wahr.",
+      "Postbild erklärt Konvention. Brief braucht Adressat mit Adresse und Absender für den Fall fehlender Zustellung. Rechnerkommunikation folgt vergleichbar klaren Regeln. Das Bild ist didaktisch, nicht eine Behauptung, das Internet sei die Briefpost. Es macht verständlich, warum Adressierung und Rückweg festliegen müssen. URL und HTTP übernehmen im Web verwandte Aufgaben: wohin die Nachricht soll, und in welcher Form gefragt und geantwortet wird. Ohne Absenderlogik bliebe unklar, wohin eine gescheiterte Zustellung zurück soll, genau wie beim Brief.\n\nDie Aussage ist wahr.",
+      "Zeichen, Inhalte und Repräsentationsgrößen dürfen im Protokoll geregelt sein. Völlig ungeregelt wäre das Gegenteil der Aufzählung. Unmissverständlichkeit bricht zusammen, wenn jede Seite beliebige Formate sendet. Deshalb gehören diese Festlegungen zum Kommunikationsprotokoll.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.09",
+    "title": "Browser, HTML und Hyperlinks",
+    "context": "Bewerten Sie die folgenden Aussagen zum Surfen im Web:",
+    "statements": [
+      "Beim Surfen im Web verwendet man meistens einen Browser, der über HTTP mit einem Server kommuniziert.",
+      "Informationen werden im Browser unter anderem mithilfe von HTML angezeigt.",
+      "Hyperlinks sind Verknüpfungen, also platzierte URLs, die auf weitere Seiten verweisen.",
+      "Das Web ist kein Netzwerk verknüpfter Ressourcen, sondern eine einzelne isolierte Datei ohne Links.",
+      "Der Browser darf niemals HTML verwenden, um Seiten darzustellen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Umgangssprache Surfen, Technik Browser plus HTTP. Der Browser spricht nach den Regeln des Hypertext Transfer Protocol mit einem Server, um Informationen zu holen. Meistens, nicht ausschließlich, ist das der Weg ins Web. Später räumt der Text ein, dass auch Unternehmenssoftware Schnittstellen nutzen kann. HTML zeigt, was geholt wurde; URLs auf der Seite führen weiter. HTML zeigt die geholte Datei; ohne das Protokoll gäbe es nichts anzuzeigen.\n\nDie Aussage ist wahr.",
+      "Anzeige braucht Struktur. HTML ist das Mittel, mit dem der Browser Inhalte so darstellt, dass sie lesbar sind. Unter anderem heißt: HTML ist zentral, aber der Satz schließt andere Bestandteile der Seite nicht aus. Ohne diese Sprache bliebe die Antwort des Servers ein Rohling ohne Darstellung. HTTP holt, HTML zeigt: zwei Konzepte in einem Surfschritt.\n\nDie Aussage ist wahr.",
+      "Links machen das Web zum Netz der Ressourcen. Auf einer Seite können URLs stehen, die weiterführen. Diese Verknüpfungen heißen Hyperlinks. Adressieren, verknüpfen, aufrufen: genau das unterscheidet das Web von einer einzelnen unverbundenen Datei.\n\nDie Aussage ist wahr.",
+      "Viele Ressourcen, miteinander verknüpft. Der Text sagt ausdrücklich, Hyperlinks machten das Web zu einem Netzwerk, in dem Ressourcen adressiert und aufgerufen werden können. Isolierte Datei ohne Links wäre das Gegenteil. Berners-Lees Idee des Wiederfindens setzte Verknüpfung voraus, nicht Isolation. Eine einzige HTML-Datei ohne URL-Verweise wäre darstellbar, aber nicht das Web als Geflecht. Das Locator-System existiert, damit weitere Seiten auffindbar bleiben, sobald ein Link gesetzt ist. Wer Isolation behauptet, streicht die dritte Säule URL aus der Praxis des Surfens und aus der Definition des WWW.\n\nDie Aussage ist falsch.",
+      "HTML ist genau die Sprache der Darstellung im Browser. Niemals HTML hieße, die Anzeige zu verbieten, die der Abschnitt beschreibt. Browser, HTTP und HTML greifen beim Surfen ineinander. Die absolute Sperre ist mit dem Lehrtext unvereinbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.10",
+    "title": "Request, Response und Server",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kommunikation zwischen Browser und Server:",
+    "statements": [
+      "Der Browser kann mithilfe der Regeln von HTTP eine Datei auf einem Server anfordern.",
+      "Ein Server ist ein Rechner, der in einem Serverraum verbaut ist und über das Netzwerk, das Internet, auf Anfragen wartet.",
+      "Server Software bearbeitet Anfragen aus dem Internet und liefert auf einen Request eine Antwort, eine Response.",
+      "Die Antwort fällt immer gleich aus, unabhängig davon, ob die HTML-Seite auf dem Server auffindbar ist oder nicht.",
+      "Das Request-Response-Prinzip gehört nicht zur Architektur des WWW."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Anfordern ist der erste Schritt. HTTP hält fest, wie der Browser eine Datei beim Server holt. Ohne diese Regeln wüsste der Server nicht, was gemeint ist. Der Satz beschreibt denselben Vorgang, den das Buch Request nennt. Die Response folgt, sobald Server Software die Anfrage bearbeitet hat, und kann je nach Auffindbarkeit der Seite anders ausfallen. Server Software formt daraus die Response; der Browser bleibt der Klient dieser Anforderung.\n\nDie Aussage ist wahr.",
+      "Warten auf Anfragen, das ist die Rolle. Der Rechner steht im Serverraum und ist über das Internet erreichbar. Server ist hier die Maschine, nicht schon jede Anwendung darauf. Mehrere Systeme können auf derselben Maschine laufen; eines davon bearbeitet Anfragen aus dem Netz. Dieses eine System heißt Server Software und liefert die Response.\n\nDie Aussage ist wahr.",
+      "Software auf dem Server antwortet. Request kommt an, Response geht zurück. Die Namen sind die englischen Wörter des Lehrtexts für Anfrage und Antwort. Ohne diese Software bliebe der Rechner im Raum stumm, auch wenn das Kabel steckt.\n\nDie Aussage ist wahr.",
+      "Auffindbar oder nicht ändert die Antwort. Der Text sagt, die Response könne unterschiedlich ausfallen, je nachdem ob die HTML-Seite auffindbar ist. Immer gleich wäre das Gegenteil. Request-Response bleibt das Prinzip, der Inhalt der Antwort hängt vom Fund ab. Ein Browser, der eine fehlende Datei anfordert, erhält nicht dieselbe Nutzseite wie bei einem Treffer. Genau diese Differenz begründet, warum das Protokoll Antworten gestaltet, nicht nur Fragen. Client-Server bleibt stehen; nur der Payload wechselt. Wer Gleichheit behauptet, macht HTTP zu einer leeren Hülle ohne Rückmeldung über Erfolg oder Fehlen der Ressource.\n\nDie Aussage ist falsch.",
+      "Request-Response ist Teil der WWW-Architektur, die als Client-Server-Architektur bezeichnet wird. Viele Interaktionen im Internet bauen auch heute noch darauf auf. Wer das Prinzip aus der Architektur streicht, trennt Browser und Server, obwohl der Abschnitt sie koppelt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.11",
+    "title": "Client-Server-Architektur",
+    "context": "Bewerten Sie die folgenden Aussagen zum Modell von Klient und Server:",
+    "statements": [
+      "Die Client-Server-Architektur ist ein Modell, das zwischen dem Klienten und dem Server unterscheidet.",
+      "Auf einem Server können mehrere Anwendungen laufen, die Dienstleistungen über ein Netzwerk, das Internet, zur Verfügung stellen.",
+      "Der Klient darf niemals Inhalte von einem Server anfordern.",
+      "Ein Web-Browser ist ein Beispiel für einen Klienten.",
+      "Viele Interaktionen im Internet bauen nach dem Lehrtext nicht mehr auf dieser Architektur und dem Request-Response-Prinzip auf."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Rollen, ein Modell. Klient und Server sind unterschieden, nicht vermischt. Dienstleistungen liegen auf der Serverseite, die Anforderung auf der Klientenseite. Ohne diese Unterscheidung gäbe es keine Client-Server-Architektur im Sinn des Buchs. Der Browser als Klient holt, die Anwendungen auf dem Server stellen bereit. Dienstleistungen auf dem Server und Anforderung durch den Klienten gehören zusammen, sonst bleibt das Modell leer.\n\nDie Aussage ist wahr.",
+      "Mehrere Anwendungen, ein Rechner. Services gehen über das Internet nach außen. Der Server ist also nicht auf eine einzige Aufgabe beschränkt. Webseitenanfragen sind eine dieser Aufgaben, andere Systeme können daneben laufen. Server Software für Internetanfragen ist eine davon, nicht die einzige mögliche.\n\nDie Aussage ist wahr.",
+      "Anfordern ist die definierte Tätigkeit des Klienten. Der Web-Browser holt Inhalte vom Server. Niemals anfordern würde den Klienten zur passiven Dekoration machen. Request-Response stünde dann ohne Request da. Vergleichsplattform und Webshop im WWW setzen voraus, dass jemand Inhalte verlangt. Die Sperre kippt das Modell. Die englischen Klammern client und server ändern nichts an dieser Richtung der Anforderung.\n\nDie Aussage ist falsch.",
+      "Browser als Klient steht im Text. Er kann von einem Server Inhalte anfordern. Die englischen Wörter client und server klammert das Buch dazu, die deutsche Rolle bleibt Klient. Surfen im Web ist damit ein Fall der Architektur, nicht ein Sonderweg ohne Server.\n\nDie Aussage ist wahr.",
+      "Auch heute noch, sagt der Abschnitt. Viele Interaktionen bauen auf Architektur und Prinzip weiterhin auf. Die Behauptung, das sei vorbei, dreht den Schlusssatz um. Vergleichsplattform, Webshop und Nachrichtenanbieter im WWW setzen genau diese Grundlage voraus. Unternehmenssoftware mit Schnittstellen ändert den Klienten, nicht die Idee, dass jemand Dienste über das Netz anfordert. Wer Client-Server für historisch erledigt erklärt, kann Internetökonomie und Marktplätze nicht mehr an Browser oder betriebliche Software binden. Der Lehrtext betont die Kontinuität ausdrücklich, gerade weil Alltagssprache das Netz mit Apps verwechselt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.12",
+    "title": "Dienstleistungen im WWW",
+    "context": "Bewerten Sie die folgenden Aussagen zu Ausprägungen von Diensten im Web:",
+    "statements": [
+      "Auf Basis von Client-Server-Architektur und Kommunikationsprinzipien können im WWW verschiedene Dienstleistungen zur Verfügung gestellt werden.",
+      "Eine Vergleichsplattform ermöglicht Kundinnen und Kunden einen Überblick über Anbieter in einem Markt.",
+      "Ein Webshop wickelt Bestellungen ab; ein Inhaltsanbieter stellt Nachrichten online zur Verfügung.",
+      "Abbildung 33 zeigt ausschließlich analoge Schalter ohne digitale Dienste im WWW.",
+      "Die Möglichkeiten, über das Web Dienste anzubieten, sind knapp und schrumpfen stetig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Architektur zuerst, Dienste darauf. Vergleich, Shop und Inhalt sind Ausprägungen, nicht die Architektur selbst. Abbildung 33 bündelt solche Beispiele. Wer die Dienste ohne Client-Server denkt, hängt Angebote in die Luft. Der Browser bleibt zentrale Schnittstelle zu diesen Diensten, bis der Text Unternehmenssoftware als Alternative nennt.\n\nDie Aussage ist wahr.",
+      "Überblick über Anbieter, das ist die Vergleichsplattform. Kunden sollen den Markt sehen, nicht nur einen einzelnen Händler. Das Beispiel sitzt neben Webshop und Nachrichten. Es bereitet die spätere Rede von digitalen Marktplätzen vor, ohne schon refurbed zu nennen. Ökonomisch ist der Überblick der erste Schritt zur Transaktion im digitalen Ort.\n\nDie Aussage ist wahr.",
+      "Zwei weitere Ausprägungen. Bestellungen abwickeln ist der Webshop; Nachrichten online stellen der Inhaltsanbieter. Zusammen mit dem Vergleich sind das die drei Bilder der Abbildung. Keines davon ersetzt das Internet als Träger, alle nutzen das WWW als Dienstebene.\n\nDie Aussage ist wahr.",
+      "Digitale Dienstleistungen und Plattformen im WWW sind der Gegenstand der Abbildung, nicht analoge Schalter. Schalter ohne Netz würden den Unterabschnitt über das Internet als Plattform leugnen. Die Grafik illustriert genau die genannten Ausprägungen. Vergleich, Bestellung und Nachricht brauchen Request-Response, nicht einen physischen Schalter als einziges Bild. Wer Abbildung 33 analog liest, trennt sie vom Satz, dass auf Basis der Architektur Dienstleistungen im WWW bereitgestellt werden.\n\nDie Aussage ist falsch.",
+      "Zahlreich und wachsend, nicht knapp und schrumpfend. Der Text sagt, die Möglichkeiten seien zahlreich und wüchsen stetig. Der Browser bleibt zentrale Schnittstelle, muss aber nicht die einzige bleiben. Schrumpfen widerspricht diesem Satz und der folgenden Internetökonomie. Ein schrumpfendes Angebot an Webdiensten würde den digitalen Markt verengen, obwohl der Abschnitt ihn erst eröffnet: Leistungen im Netz schaffen oder erweitern Märkte. Die Behauptung kippt die Richtung des Unterabschnitts von der Technik zur Ökonomie. Wachstum der Webdienste ist die Voraussetzung dafür, dass aus dem Netz eine Internetökonomie mit digitalen Märkten werden kann.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.13",
+    "title": "Browser und Unternehmenssoftware",
+    "context": "Bewerten Sie die folgenden Aussagen zur Schnittstelle für Dienste im Internet:",
+    "statements": [
+      "Der Web-Browser ist die zentrale Schnittstelle, um auf Dienste im WWW zuzugreifen.",
+      "Es muss nicht immer ein Web-Browser sein.",
+      "Unternehmenssoftware darf im Internet niemals mit anderen Unternehmen kommunizieren.",
+      "Unternehmenssoftware kann selbst Schnittstellen haben, um im Internet mit anderen Unternehmen zu kommunizieren und Informationen auszutauschen.",
+      "Nur der private Browser zählt; betriebliche Systeme ohne Browser sind als Zugang ausgeschlossen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zentral heißt häufigster Weg, nicht einzig möglicher. Der Browser öffnet die Dienste des WWW für Nutzerinnen und Nutzer. Vergleichsplattform, Shop und Nachrichten laufen typischerweise darüber. Der nächste Satz relativiert: es muss nicht immer der Browser sein. Unternehmenssoftware kann dieselben Netze nutzen, ohne eine HTML-Oberfläche zu zeigen.\n\nDie Aussage ist wahr.",
+      "Relativierung steht ausdrücklich da. Nach der zentralen Rolle folgt: es kann auch Unternehmenssoftware sein, die Schnittstellen bereitstellt. Wer den Browser verabsolutiert, liest nur den ersten Halbsatz. Digitale Netzwerke zwischen Betrieben brauchen genau diese zweite Tür. Informationen tauschen Firmen dann maschinell, nicht nur über Surfen.\n\nDie Aussage ist wahr.",
+      "Kommunikation zwischen Unternehmen über das Internet ist vorgesehen. Software kann Schnittstellen haben, um Informationen auszutauschen. Niemals kommunizieren wäre das Gegenteil. Dann entstünde keine Erweiterung des Marktes um einen digitalen Ort zwischen Firmen. Die Internetökonomie setzt gerade voraus, dass Leistungen im digitalen Netzwerk angeboten werden, auch betrieblich. Ein Verbot der Firmenkommunikation würde Plattformbetreiber und Händler hinter refurbed begrifflich abschneiden.\n\nDie Aussage ist falsch.",
+      "Schnittstellen der Software, nicht nur die des Browsers. Andere Unternehmen werden über das Netz erreicht, Daten fließen in beide Richtungen. Das ist die Brücke von der Weboberfläche zur betrieblichen Kopplung. Darauf folgt unmittelbar die Internetökonomie.\n\nDie Aussage ist wahr.",
+      "Betriebliche Systeme sind nicht ausgeschlossen. Der Text nennt sie als Alternative zum Browser. Nur privat und nur Browser wäre eine Verengung, die den Satz über Unternehmenssoftware streicht. Plattformen für Firmen wie später refurbed setzen voraus, dass Betriebe digital erreichbar sind. Der private Surfweg bleibt zentral für Endkunden, ersetzt aber nicht den Austausch zwischen Unternehmen über eigene Schnittstellen. Wer Betriebssysteme ohne Browser aus dem Internet streicht, hält Digitalisierung bei der Oberfläche an und verfehlt den Markt zwischen Firmen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.14",
+    "title": "Internetökonomie",
+    "context": "Bewerten Sie die folgenden Aussagen zur ökonomischen Nutzung des Internets:",
+    "statements": [
+      "Durch die Möglichkeit, in einem digitalen Netzwerk Leistungen anzubieten, wird ein Markt geschaffen bzw. ein Markt um einen digitalen Ort erweitert, über den ökonomische Transaktionen abgewickelt werden können.",
+      "Die Internetökonomie umfasst die ökonomische Nutzung des Internets, um wertschöpfende Transaktionen durchzuführen.",
+      "Es entsteht dadurch ein digitaler Markt bzw. eine digitale Plattform in einem digitalen Netzwerk mit unterschiedlichen Marktteilnehmerinnen.",
+      "Internetökonomie meint im Lehrtext nur private Unterhaltung ohne wertschöpfende Transaktionen.",
+      "Das Internet wird in diesem Zusammenhang keine neue Plattform für Unternehmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Leistungen im Netz erzeugen oder erweitern den Markt. Ökonomische Transaktionen brauchen einen Ort; digital kann dieser Ort neu entstehen oder einen bestehenden Markt ergänzen. Der Satz verbindet technisches Netzwerk und Wirtschaft. Ohne Transaktionen bliebe das Netz reine Infrastruktur ohne Ökonomie. Vergleichsplattform und Webshop waren Vorstufen; jetzt wird der Marktbegriff ausdrücklich.\n\nDie Aussage ist wahr.",
+      "Nutzung zum Wert, das ist die Definition. Internetökonomie ist die ökonomische Nutzung des Internets für wertschöpfende Transaktionen. Spielerische Chatnutzung allein erfüllt den Begriff nicht. Wertschöpfung knüpft an das frühere Kapitelthema an, hier jedoch über das Netz als Marktort. Unterschiedliche Marktteilnehmerinnen stehen auf der entstehenden Plattform.\n\nDie Aussage ist wahr.",
+      "Markt, Plattform, Netzwerk, Teilnehmerinnen: vier Stücke einer Formulierung. Unterschiedliche Marktteilnehmerinnen stehen auf der digitalen Plattform im digitalen Netzwerk. Die Begriffe sind im Buch gekoppelt, nicht austauschbar gegen ein bloßes Kabel. Daraus wird das Internet zur Plattform für Unternehmen.\n\nDie Aussage ist wahr.",
+      "Wertschöpfende Transaktionen stehen in der Definition, nicht Unterhaltung als Selbstzweck. Private Kommunikation kann über dasselbe Netz laufen, begründet aber nicht den Begriff Internetökonomie. Wer nur Chat gelten lässt, streicht Markt und Plattform. Refurbed und willhaben wären dann unerklärlich. WhatsApp-Daten als Beispiel für Netzverkehr bleiben Technik; Ökonomie beginnt, wenn über das Netz Werte getauscht werden. Die Definition koppelt ökonomische Nutzung und Wertschöpfung, nicht Freizeit ohne Gegenleistung. Ein digitaler Markt mit Marktteilnehmerinnen entstünde in diesem verengten Bild nicht.\n\nDie Aussage ist falsch.",
+      "Neue Plattform für Unternehmen ist die Folgerung. Anbieter und Kunden treten in Austausch; manchmal kommen Plattformbetreiber hinzu. Die Verneinung widerspricht dem Schwenk des Abschnitts vom technischen Netz zur Internetökonomie. Über 30 Jahre digitaler Raum wären dann ohne unternehmerische Plattform geblieben. Endkunden merken den Betreiber nicht immer, gerade weil die Plattform den Austausch organisiert. Ohne diese Folgerung hinge Abbildung 33 in der Luft: Dienste ohne Markt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.15",
+    "title": "Plattformbetreiber und Endkunden",
+    "context": "Bewerten Sie die folgenden Aussagen zum Internet als Plattform und zu Betreibern digitaler Märkte:",
+    "statements": [
+      "Auf der Internetplattform können Anbieter und Kunden miteinander in Austausch treten.",
+      "Manchmal braucht es zusätzliche Plattformbetreiber, die für einen spezifischen Markt eine digitale Plattform anbieten.",
+      "Für Endkundinnen und Endkunden ist immer sofort offensichtlich, dass sie über einen Plattformbetreiber mit anderen Händlern in Kontakt treten.",
+      "Das Internet hat mittlerweile seit über 30 Jahren erfolgreich einen neuen digitalen Raum geschaffen, in dem zahlreiche Innovationen stattfinden können.",
+      "Anbieter und Kunden dürfen auf dieser Plattform niemals in Austausch treten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Austausch ist der Zweck der Plattform. Unternehmen nutzen das Internet als Ort, an dem Anbieter und Kunden zusammenkommen. Das folgt direkt aus der Internetökonomie. Ohne Austausch gäbe es Transaktionen nur analog neben dem Netz, nicht über die neue Plattform. Zusätzliche Betreiber können diesen Ort für einen spezifischen Markt bauen.\n\nDie Aussage ist wahr.",
+      "Nicht jeder Markt organisiert sich von selbst. Zusätzliche Betreiber stellen für einen spezifischen Markt die digitale Plattform. Refurbed folgt als Beispiel: der Marktplatz ist gestellt, Händler und Kundschaft treffen darüber zusammen. Manchmal heißt: nicht in jedem Fall, aber möglich und im Buch vorgesehen. Für Endkunden kann diese Rolle unsichtbar bleiben.\n\nDie Aussage ist wahr.",
+      "Gar nicht offensichtlich, sagt der Text zum Endkunden. Der Kontakt zu Händlern kann über den Betreiber laufen, ohne dass die Rolle sofort sichtbar ist. Immer offensichtlich ist das Gegenteil. Das refurbed-Beispiel soll genau diese Unsichtbarkeit verdeutlichen: Angebote werden gesammelt, der Vertrag liegt beim Händler. Wer Sichtbarkeit erzwingt, verfehlt, warum der Abschnitt den Betreiber eigens erklärt. Die Oberfläche zeigt Produkte; dahinter sitzen Firmen, die wiederaufbereitete Technologie verkaufen. Die Plattform ist der digitale Ort, nicht notwendig der sichtbare Vertragspartner.\n\nDie Aussage ist falsch.",
+      "Mehr als 30 Jahre digitaler Raum, zahlreiche Innovationen. Das Internet bleibt grundlegend für die beschriebenen Innovationen. Die Zahl ist qualitativ gemeint: ein seit langem etablierter Raum, nicht eine Prüfungsstatistik zum Auswendiglernen. Ohne diesen Raum gäbe es weder WWW-Dienste noch Internetökonomie in der dargestellten Form. HTTP am CERN und Marktplätze heute teilen denselben Träger über diese Spanne.\n\nDie Aussage ist wahr.",
+      "Austausch ist erlaubt und gewollt. Niemals in Austausch treten würde Anbieter und Kunden trennen, obwohl die Plattform sie zusammenführen soll. Transaktionen, Kaufvertrag bei refurbed, Kontakt auf willhaben: alles setzt Begegnung voraus. Die absolute Sperre kippt die Definition der Internetplattform.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "WISO 4.3.16",
+    "title": "Refurbed und willhaben",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Beispielen digitaler Marktplätze:",
+    "statements": [
+      "Refurbed bietet einen digitalen Marktplatz für Firmen, die gebrauchte und professionell wiederaufbereitete Technologie verkaufen möchten.",
+      "Im Hintergrund sammelt refurbed die besten Angebote verfügbarer Händler; Kundinnen und Kunden schließen mit dem entsprechenden Händler einen Kaufvertrag, danach wird das Produkt zugeschickt.",
+      "Willhaben ist ein weiteres Beispiel für einen digitalen Marktplatz, auf dem Anzeigen in verschiedenen Branchen aufgegeben werden können.",
+      "Refurbed verkauft im Lehrtext ausschließlich eigene Lagerware und vermittelt keine Händler im Hintergrund.",
+      "Auf willhaben dürfen Interessentinnen und Interessenten nach dem Aufgeben von Anzeigen nicht miteinander in Kontakt treten, um Transaktionen abzuschließen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Firmenseite und Produktart sind festgelegt. Gebrauchte, professionell wiederaufbereitete Technologie, verkauft über den digitalen Marktplatz von refurbed.at. Privatpersonen suchen und passen Produkte an. Der Betreiber stellt den Marktplatz, er ist nicht als einziger Händler im Satz definiert. Im Hintergrund werden Angebote verfügbarer Händler gesammelt, bevor der Kaufvertrag mit einem Händler entsteht.\n\nDie Aussage ist wahr.",
+      "Drei Schritte hinter der Oberfläche. Angebote der Händler werden gesammelt und gezeigt, der Kaufvertrag entsteht mit dem entsprechenden Händler, Versand folgt. Genau deshalb ist der Plattformbetreiber für Endkunden nicht immer sichtbar. Wer refurbed mit dem Verkäufer verwechselt, übersieht den Vertragspartner im Hintergrund. Die Internetökonomie braucht solche Betreiber, wenn ein spezifischer Markt digital organisiert werden soll. Suche und Anpassung durch Privatpersonen bleiben auf der Kundenseite; die Firmen liefern die wiederaufbereitete Ware.\n\nDie Aussage ist wahr.",
+      "Zweites Beispiel, andere Mechanik. Willhaben.at erlaubt Anzeigen in verschiedenen Branchen; Interessenten treten in Kontakt, um Transaktionen abzuschließen. Beides sind digitale Marktplätze, aber willhaben betont die Anzeige und die direkte Kontaktaufnahme. Der Unterabschnitt schließt mit diesem österreichischen Beispiel, nicht mit einem dritten erfundenen Portal. Refurbed bündelt Händlerangebote; willhaben lässt Anzeigen und Begegnung. Gemeinsam belegen sie, dass das Internet zur Plattform für Unternehmen und Privatpersonen geworden ist.\n\nDie Aussage ist wahr.",
+      "Händler im Hintergrund sind der Punkt. Beste Angebote verfügbarer Händler, Vertrag mit dem Händler: das ist Vermittlung über den gestellten Marktplatz. Ausschließlich eigene Lagerware ohne Händler widerspricht diesem Ablauf. Die Unsichtbarkeit des Betreibers ergibt nur Sinn, wenn andere Verkäufer existieren. Wäre refurbed nur eigenes Lager, gäbe es keinen entsprechenden Händler als Vertragspartner und nichts zu sammeln. Der Text trennt Marktplatzbereitstellung und Kaufabschluss bewusst. Wer die Händler streicht, macht aus der Plattform einen klassischen einzelnen Webshop und verfehlt das Beispiel für Plattformbetreiber.\n\nDie Aussage ist falsch.",
+      "Kontakt und Abschluss sind vorgesehen. Nach den Anzeigen sollen Interessenten miteinander in Verbindung treten, um Transaktionen zu tätigen. Kontaktverbot würde den Marktplatz zur reinen Pinnwand ohne Ökonomie machen. Der Text koppelt Anzeige, Kontakt und Transaktion; die Sperre trennt das letzte Glied ab. Internetökonomie verlangt wertschöpfende Transaktionen, nicht stumme Zettel. Willhaben steht neben refurbed, weil beide digitale Orte für Abschlüsse sind, nur mit anderer Vermittlungstiefe.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

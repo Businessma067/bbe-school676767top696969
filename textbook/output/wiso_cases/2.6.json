@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.01",
+    "title": "Umweltqualität und Lebenszufriedenheit",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang von Umweltqualität und Lebenszufriedenheit:",
+    "statements": [
+      "Saubere Luft, grüne Räume und intakte Ökosysteme erhöhen die Lebenszufriedenheit messbar.",
+      "Lärm, Luftverschmutzung und Flächenversiegelung senken die Lebenszufriedenheit.",
+      "Lärm erhöht laut den genannten empirischen Studien die Lebenszufriedenheit.",
+      "Die genannten Umweltfaktoren wirken sich empirisch auf die Lebenszufriedenheit aus.",
+      "Flächenversiegelung erhöht die Lebenszufriedenheit messbar."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Messbar heißt in diesem Abschnitt: empirische Studien verbinden saubere Luft, grüne Räume und intakte Ökosysteme mit höherer Lebenszufriedenheit, nicht nur mit einem unbestimmten Wohlgefühl. Die drei Umweltgüter stehen nebeneinander als steigernde Faktoren. Wer nur Parks gelten lässt und Luft sowie Ökosysteme streicht, verkürzt die Liste. Die Richtung ist klar nach oben, nicht indifferent. Lebenszufriedenheit wird damit an konkrete Umweltqualität gebunden, nicht an ein bloßes Landschaftsgefühl ohne Befund.\n\nWer die drei Güter trennt, tut so, als sei nur das Stadtgrün empirisch belegt. Der Abschnitt stellt Luft, Räume und Ökosysteme in eine Reihe und bindet alle drei an die messbare Lebenszufriedenheit. Genau diese Reihe begründet, warum Umweltqualität hier eine gesellschaftliche Voraussetzung ist und nicht ein privates Geschmacksurteil über Landschaft.\n\nDie Aussage ist wahr.",
+      "Lärm, Abgase in der Luft und versiegelte Flächen wirken in denselben Studien in die Gegenrichtung: sie senken die Lebenszufriedenheit. Die drei Belastungen gehören zur Minusseite derselben empirischen Gegenüberstellung, nicht zu einer separaten Debatte über Stadtplanung ohne Glücksbezug. Wer Versiegelung als neutral abhakt, lässt genau diesen Senkungseffekt weg. Die Richtung ist Abnahme, nicht Zunahme.\n\nDieselbe Studienebene, die Plusfaktoren hebt, drückt die Minusfaktoren. Lärm bleibt dabei kein bloßes Komfortthema, Luftverschmutzung kein rein medizinisches und Versiegelung kein nur städtebauliches Detail: alle drei senken die Zufriedenheit.\n\nDie Aussage ist wahr.",
+      "Wer Lärm zur Freudequelle umdeutet, dreht das Vorzeichen der Studienliste um. Der Abschnitt ordnet Lärm zusammen mit Luftverschmutzung und Flächenversiegelung den senkenden Faktoren zu. Eine Erhöhung der Lebenszufriedenheit durch Lärm steht dort nicht. Das empirische Muster bleibt: Belastung drückt die Zufriedenheit, sie hebt sie nicht.\n\nDie Aussage ist falsch.",
+      "Die Studienliste beginnt bei Luft, Grün und Ökosystemen und setzt bei Lärm, Verschmutzung und Versiegelung das Gegenstück. Beides zielt auf Lebenszufriedenheit als gemessene Größe, nicht auf ein reines Einkommenskonto. Umweltqualität ist damit ein eigener empirischer Hebel. Der Satz trifft diese empirische Bindung, ohne eine Zahl auswendig zu verlangen.\n\nOhne diese empirische Bindung bliebe Umweltqualität ein moralischer Wunsch. Der Text macht sie zum Befund: Lebenszufriedenheit reagiert auf Umwelt, nach oben wie nach unten.\n\nDie Aussage ist wahr.",
+      "Versiegelte Flächen als Glücksplus zu lesen, widerspricht der Minusliste. Flächenversiegelung steht bei den Faktoren, die die Lebenszufriedenheit senken. Eine messbare Erhöhung durch Versiegelung behauptet der Text nicht. Das Vorzeichen bleibt negativ, analog zu Lärm und Luftverschmutzung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.02",
+    "title": "Naturverbundenheit und psychische Gesundheit",
+    "context": "Bewerten Sie die folgenden Aussagen zu Naturverbundenheit, psychischer Gesundheit und Resilienz:",
+    "statements": [
+      "Naturverbundenheit stärkt psychische Gesundheit und Resilienz.",
+      "Naturverbundenheit schwächt die psychische Gesundheit.",
+      "Empirische Studien verbinden Umweltqualität mit messbarer Lebenszufriedenheit.",
+      "Nur das Einkommen bestimmt die Lebenszufriedenheit; Umweltqualität spielt keine Rolle.",
+      "Intakte Ökosysteme gehören zu den Faktoren, die die Lebenszufriedenheit erhöhen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Naturverbundenheit steht im Text nicht als romantische Nebenbemerkung, sondern als Stärkung von psychischer Gesundheit und Resilienz. Beide Zielgrößen werden gemeinsam genannt. Wer nur Erholung im Park meint und Resilienz streicht, lässt die zweite Hälfte weg. Die Richtung ist Stärkung, nicht Schwächung. Der Befund sitzt in derselben empirischen Reihe wie Luft, Grün und Ökosysteme.\n\nPsychische Gesundheit und Resilienz sind zwei Zielgrößen, keine Synonyme für ein kurzes Naturgefühl am Wochenende. Der Abschnitt hängt beide an Naturverbundenheit und setzt diesen Satz direkt hinter die Umweltlisten zu Luft, Grün und Ökosystemen. So wird aus Verbundenheit eine gesellschaftliche Voraussetzung für Wohlbefinden, nicht ein Freizeitgeschmack.\n\nDie Aussage ist wahr.",
+      "Schwächung kehrt die Richtung um. Der Abschnitt sagt ausdrücklich, Naturverbundenheit stärke psychische Gesundheit und Resilienz. Eine Schwächung der psychischen Gesundheit durch Naturverbundenheit steht dort nicht. Das Vorzeichen bleibt positiv für Gesundheit und Widerstandskraft.\n\nDie Aussage ist falsch.",
+      "Saubere Luft, grüne Räume und intakte Ökosysteme erhöhen die Lebenszufriedenheit messbar: das ist der erste empirische Punkt des Abschnitts. Umweltqualität und Lebenszufriedenheit sind damit verknüpft, nicht voneinander getrennt. Der Satz gibt diesen Studienbefund wieder, ohne eine einzelne Prozentzahl zu verlangen.\n\nDie Aussage ist wahr.",
+      "Nur Einkommen als Determinante zu setzen, streicht die gesamte Umweltliste. Der Text führt messbare Effekte von Luft, Grün, Ökosystemen, Lärm, Verschmutzung und Versiegelung auf die Lebenszufriedenheit an. Umweltqualität spielt also eine Rolle, sie ist nicht wirkungslos. Die Absolute „nur“ macht den Satz zu eng gegenüber dem Abschnitt.\n\nDie Absolute „nur“ ist hier die Falle. Sobald Einkommen allein entscheidet, müssten Lärm, Versiegelung und saubere Luft wirkungslos sein. Der Text führt sie aber ausdrücklich als Hebel der Lebenszufriedenheit. Umweltqualität bleibt damit ein eigener Faktor neben jeder Einkommensgeschichte.\n\nDie Aussage ist falsch.",
+      "Intakte Ökosysteme stehen in der Plusliste neben sauberer Luft und grünen Räumen. Sie erhöhen die Lebenszufriedenheit messbar, sie sind kein bloßes Kulissenwort. Wer Ökosysteme aus der Zufriedenheitswirkung herausnimmt, zerlegt genau dieses Trio. Der Satz hält die Zuordnung des Textes.\n\nÖkosysteme stehen nicht als biologisches Extra neben der Zufriedenheit, sondern in der Plusliste. Wer sie nur dem Naturschutz zuordnet und dem Glück entzieht, zerlegt genau das Trio, mit dem der Abschnitt die messbare Erhöhung begründet.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.03",
+    "title": "Healthy Lifetime Income nach Prettner",
+    "context": "Bewerten Sie die folgenden Aussagen zum Indikator des Healthy Lifetime Income:",
+    "statements": [
+      "Prettner et al. (2023) belegen mit dem Indikator des Healthy Lifetime Income, dass Länder mit höherer Lebenserwartung und besserer Gesundheitsversorgung ein deutlich höheres Niveau an Wohlbefinden erreichen, auch bei moderaterem materiellem Wohlstand.",
+      "Der Indikator knüpft Wohlbefinden an Lebenserwartung und Gesundheitsversorgung, nicht ausschließlich an materiellen Wohlstand.",
+      "Moderater materieller Wohlstand schließt laut diesem Befund jedes höhere Wohlbefinden aus.",
+      "Gesundheit und Lebenserwartung zählen in diesem Befund neben dem materiellen Wohlstand.",
+      "Der Indikator belegt, dass nur das höchste Einkommen ein höheres Wohlbefinden erzeugt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Prettner und Kolleginnen sowie Kollegen 2023 setzen den Healthy Lifetime Income als Indikator ein. Der Befund lautet: höhere Lebenserwartung und bessere Gesundheitsversorgung gehen mit deutlich höherem Wohlbefinden einher, auch wenn der materielle Wohlstand nur moderat ausfällt. Gesundheit zählt also mit, nicht erst das Spitzeneinkommen. Der Satz gibt diesen Beleg vollständig wieder, einschließlich der Einschränkung „auch bei moderaterem materiellem Wohlstand“.\n\nDie Pointe sitzt in der Einschränkung „auch bei moderaterem materiellem Wohlstand“. Ohne sie wäre der Indikator ein weiteres Einkommensranking. Mit ihr wird sichtbar, dass Lebensjahre in Gesundheit das Wohlbefinden tragen können, wo der materielle Wohlstand nicht an der Spitze liegt. Genau das belegt Prettner et al. 2023 mit dem Healthy Lifetime Income.\n\nDie Aussage ist wahr.",
+      "Lebenserwartung und Versorgung bilden im Indikator die Brücke zum Wohlbefinden. Materieller Wohlstand bleibt im Bild, steht aber nicht als einzige Bedingung. Genau deshalb können Länder mit nur moderatem materiellem Niveau trotzdem ein höheres Wohlbefinden erreichen, wenn Gesundheit und Lebensjahre besser ausfallen. Der Satz trifft diese Gewichtung.\n\nWürde materieller Wohlstand allein zählen, gäbe es keinen Grund, Lebenserwartung und Versorgung als Indikatorgrößen zu nennen. Der Text nennt sie und lässt Moderates materiell ausdrücklich zu. Wohlbefinden wird damit an gesunde Lebenszeit gebunden, nicht an ein reines Vermögensmaximum.\n\nDie Aussage ist wahr.",
+      "Ausschluss höheren Wohlbefindens bei nur moderatem materiellem Wohlstand ist das Gegenteil des Befundes. Der Text betont ausdrücklich, dass höheres Wohlbefinden auch bei moderaterem materiellem Wohlstand erreicht wird, sofern Lebenserwartung und Gesundheitsversorgung besser sind. Die Absolute, die Moderates zum Ausschlussgrund macht, widerspricht dieser Pointe.\n\nDie Aussage ist falsch.",
+      "Neben dem materiellen Wohlstand stehen Lebenserwartung und Gesundheitsversorgung als die Größen, an denen der Indikator Wohlbefinden festmacht. Wer Gesundheit ausblendet, liest den Healthy Lifetime Income als reines Einkommensmaß. Der Abschnitt führt beide Gesundheitsgrößen ausdrücklich an. Der Satz hält diese Zählung ein.\n\nDie Aussage ist wahr.",
+      "Nur höchstes Einkommen als Erzeuger höheren Wohlbefindens zu setzen, kippt den Indikator um. Der Beleg läuft gerade darauf hinaus, dass bessere Gesundheit und längere Lebenszeit ein höheres Niveau tragen können, auch ohne Spitzenwohlstand. Die Absolute „nur“ schließt genau den Fall aus, den Prettner et al. öffnen.\n\nHöchstes Einkommen als einzige Quelle höheren Wohlbefindens würde den Fall „moderat, aber gesund und langlebig“ ausschließen. Genau diesen Fall öffnet der Indikator. Die Absolute „nur“ steht deshalb gegen den Beleg, nicht mit ihm.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.04",
+    "title": "Glück jenseits reiner Einkommenssteigerung",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, welche Wirtschaftsausrichtung das Glück langfristig stärker steigert:",
+    "statements": [
+      "Eine Wirtschaft, die Gesundheit, Umweltqualität und soziale Stabilität stärkt, steigert das Glück langfristig stärker als reine Einkommenssteigerung.",
+      "Reine Einkommenssteigerung steigert das Glück langfristig stärker als eine Wirtschaft, die Gesundheit, Umweltqualität und soziale Stabilität stärkt.",
+      "Dieser Schluss folgt im Abschnitt aus dem Befund zum Healthy Lifetime Income.",
+      "Soziale Stabilität ist für diesen Schluss laut Text irrelevant.",
+      "Langfristiges Glück hängt in dieser Argumentation nicht allein an der Einkommenssteigerung."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Drei Stärkungen stehen gegen eine einzige Einkommenslinie: Gesundheit, Umweltqualität und soziale Stabilität. Der Abschnitt folgert, dass eine solche Wirtschaft das Glück langfristig stärker steigert als reine Einkommenssteigerung. Die Vergleichsrichtung ist klar: das Trio schlägt das bloße Plus auf dem Konto. Wer Einkommen zum alleinigen Langfristmotor macht, widerspricht dieser Folgerung.\n\nLangfristig und stärker: zwei Wörter, die reine Einkommenssteigerung relativieren, ohne Einkommen für nichts zu erklären. Der Schluss setzt ein Trio gegen eine Linie. Gesundheit, Umweltqualität und soziale Stabilität bilden zusammen die Ausrichtung, die Glück dauerhafter hebt als das bloße Plus auf dem Konto. Das folgt im Text aus dem Healthy Lifetime Income, nicht aus einer beliebigen Wertung.\n\nDie Aussage ist wahr.",
+      "Reine Einkommenssteigerung an die Spitze zu setzen, kehrt den Schluss um. Der Text sagt das Gegenteil: Gesundheit, Umweltqualität und soziale Stabilität steigern das Glück langfristig stärker. Die Umkehrung macht aus der Folgerung nach Prettner eine Einkommensdoktrin, die der Abschnitt gerade relativiert.\n\nDie Aussage ist falsch.",
+      "Aus dem Healthy-Lifetime-Income-Befund zieht der Text ausdrücklich diese Folgerung. Höheres Wohlbefinden trotz nur moderatem materiellem Wohlstand begründet, warum Gesundheit, Umweltqualität und soziale Stabilität das Glück stärker tragen als reines Einkommenswachstum. Der Satz benennt diese Ableitung, er erfindet sie nicht.\n\n„Daraus folgt“ im Abschnitt ist die Brücke: vom Indikator zu dieser Wirtschaftsausrichtung. Wer die Folgerung als unabhängigen Wunsch liest, trennt sie vom Beleg. Der Satz hält die Ableitung fest.\n\nDie Aussage ist wahr.",
+      "Soziale Stabilität steht im Trio der stärkenden Größen, nicht am Rand. Der Schluss nennt Gesundheit, Umweltqualität und soziale Stabilität gemeinsam. Irrelevanz der sozialen Stabilität würde das Trio auf zwei Größen stutzen. Der Text lässt diese dritte Größe nicht weg.\n\nDie Aussage ist falsch.",
+      "Allein an der Einkommenssteigerung hängt das langfristige Glück hier nicht. Der Vergleich setzt eine Wirtschaft, die Gesundheit, Umwelt und soziale Stabilität stärkt, über die reine Einkommenssteigerung. Der Satz hält diese Relativierung fest, ohne Einkommen für bedeutungslos zu erklären. Es geht um die stärkere Langfristwirkung, nicht um ein Nullsetzen des Einkommens.\n\nNicht allein heißt nicht: Einkommen spielt keine Rolle. Es heißt: als alleiniger Langfristmotor reicht es in dieser Argumentation nicht. Das Trio bleibt die stärkere Steigerung, das Einkommensplus die schwächere Vergleichsgröße.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.05",
+    "title": "Wohlbefinden im sozialen Kontext",
+    "context": "Bewerten Sie die folgenden Aussagen zu Vertrauen, Kooperation und Gleichheit als Faktoren des Wohlbefindens:",
+    "statements": [
+      "Wohlbefinden entsteht in einem sozialen Kontext.",
+      "Vertrauen, Kooperation und Gleichheit sind zentrale Faktoren.",
+      "Wohlbefinden entsteht unabhängig von sozialen Beziehungen, allein durch individuelles Einkommen.",
+      "Gleichheit gehört zu den zentralen Faktoren, nicht nur Vertrauen.",
+      "Kooperation gilt im Abschnitt als nebensächlich gegenüber dem BIP."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Sozialer Kontext ist im Text der Entstehungsrahmen, nicht eine optionale Kulisse. Wohlbefinden wird dort nicht als rein private Innenwelt beschrieben, sondern als Geschehen in Beziehungen und gesellschaftlichen Verhältnissen. Wer den Kontext streicht, macht aus dem Befund eine Individualpsychologie ohne Gesellschaft. Der Satz trifft die ausdrückliche Formulierung des Abschnitts.\n\nOhne sozialen Kontext wäre Wohlbefinden eine reine Innenbilanz des einzelnen Haushalts. Der Abschnitt rückt Entstehung in Verhältnisse: wer vertraut, wer kooperiert, wie gleich die Gesellschaft ist. Diese Verschiebung erklärt, warum später Glückswerte trotz ähnlichem BIP auseinanderliegen. Der Satz ist die Überschrift über die empirische Evidenz, die folgt.\n\nDie Aussage ist wahr.",
+      "Vertrauen, Kooperation und Gleichheit stehen als zentrale Faktoren in einer Reihe. Keiner der drei wird zur bloßen Randnotiz. Der nächste Absatz liefert empirische Evidenz genau zu Gleichheit, Ungleichheit und Korruption. Die Dreierliste ist die begriffliche Brücke dorthin. Der Satz gibt sie vollständig wieder.\n\nDie Aussage ist wahr.",
+      "Allein durch individuelles Einkommen und unabhängig von Beziehungen: das wäre die Absage an den sozialen Kontext. Der Abschnitt sagt das Gegenteil. Vertrauen, Kooperation und Gleichheit sind zentrale Faktoren, und spätere Vergleiche zeigen Glücksunterschiede trotz ähnlichem BIP. Die Absolute „allein“ schließt genau das aus, was der Text ins Zentrum stellt.\n\nUnabhängigkeit von Beziehungen und Alleinwirken des Einkommens wären die Absage an Vertrauen, Kooperation und Gleichheit. Der Text nennt genau diese drei zentral. Später reichen ähnliches BIP und starker materieller Vergleich nicht, um Glück gleichzusetzen. Die Absolute „allein“ fällt damit.\n\nDie Aussage ist falsch.",
+      "Gleichheit sitzt in der Faktorenliste neben Vertrauen und Kooperation, nicht hinter ihnen. Wer nur Vertrauen gelten lässt, halbiert die zentralen Faktoren. Der World Happiness Report wird im nächsten Schritt gerade über hohe soziale Gleichheit gelesen. Der Satz hält Gleichheit in der Mitte, wo der Text sie setzt.\n\nDie Aussage ist wahr.",
+      "Nebensächlich gegenüber dem BIP wäre Kooperation nur, wenn Glück allein am Inlandsprodukt hinge. Der Abschnitt nennt Kooperation als zentralen Faktor im sozialen Kontext und zeigt später, dass ähnliches BIP Glückswerte nicht gleichsetzt. Kooperation wird damit nicht hinter das BIP geschoben. Die Abwertung trifft den Text nicht.\n\nBIP als Rangfolge ohne Kooperation würde den sozialen Kontext zur Fußnote machen. Der Abschnitt macht Kooperation zum zentralen Faktor und zeigt mit dem Happiness Report, dass Gleichheit und Korruption die Werte verschieben, auch wenn das Inlandsprodukt ähnlich ist.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.06",
+    "title": "Gleichheit und World Happiness Report",
+    "context": "Bewerten Sie die folgenden Aussagen zu sozialer Gleichheit und den Glückswerten des World Happiness Report:",
+    "statements": [
+      "Gesellschaften mit hoher sozialer Gleichheit (Skandinavien) weisen laut World Happiness Report die höchsten Glückswerte auf.",
+      "Der World Happiness Report platziert skandinavische Gesellschaften trotz hoher Gleichheit am unteren Ende der Glückswerte.",
+      "Hohe soziale Gleichheit wird im Abschnitt mit den höchsten Glückswerten verknüpft.",
+      "Nur das BIP erklärt in diesem Abschnitt die Rangfolge der Glückswerte.",
+      "Skandinavien dient als Beispiel für Gesellschaften mit hoher sozialer Gleichheit."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Skandinavien steht in Klammern als Beispiel hoher sozialer Gleichheit. Der World Happiness Report liefert dazu die höchsten Glückswerte, nicht mittlere oder niedrige. Die Verknüpfung läuft über Gleichheit, nicht über eine bloße Nord-Süd-Folklore. Der Satz gibt Evidenz und Beispiel so wieder, wie der Abschnitt sie setzt.\n\nHöchste Glückswerte und hohe soziale Gleichheit werden hier nicht als zwei zufällig parallele Listen geführt, sondern als empirische Evidenz. Skandinavien illustriert den Typ Gesellschaft. Der World Happiness Report ist die Quelle für die Ranglage, nicht ein beliebiger Zeitungskommentar. Wer das Beispiel streicht, behält die Gleichheit ohne Ort; wer die Quelle streicht, behält eine Behauptung ohne den genannten Report.\n\nDie Aussage ist wahr.",
+      "Unteres Ende wäre die Umkehr der Rangfolge. Der Text sagt höchste Glückswerte für Gesellschaften mit hoher sozialer Gleichheit, mit Skandinavien als Beispiel. Ein Platz am unteren Ende trotz Gleichheit steht dort nicht. Das Vorzeichen der Evidenz bleibt positiv für Gleichheit.\n\nDie Aussage ist falsch.",
+      "Die empirische Evidenz beginnt mit hoher sozialer Gleichheit und endet bei den höchsten Glückswerten. Das ist die Verknüpfung, nicht eine lockere Nachbarschaft zweier Listen. Wer Gleichheit und Glück trennt, unterschlägt genau diesen ersten Spiegelstrich. Der Satz hält die Bindung fest.\n\nDie Aussage ist wahr.",
+      "Nur das BIP als Erklärung zu setzen, kollidiert mit dem nächsten Punkt: ähnliches BIP reicht nicht, wenn Ungleichheit oder Korruption stark sind. Schon der skandinavische Befund hängt an Gleichheit, nicht an einer reinen BIP-Rangliste. Die Absolute „nur“ ist deshalb zu eng für diesen Abschnitt.\n\nEine reine BIP-Rangliste würde den nächsten Spiegelstrich überflüssig machen. Dort liegen Länder trotz ähnlichem BIP niedriger, wenn Ungleichheit oder Korruption stark sind. Schon deshalb kann in diesem Abschnitt nicht nur das Inlandsprodukt die Glückswerte erklären.\n\nDie Aussage ist falsch.",
+      "Die Klammer hinter hoher sozialer Gleichheit nennt Skandinavien. Das Beispiel illustriert den Typ Gesellschaft, nicht eine beliebige Ländergruppe. Ohne dieses Beispiel bliebe die Gleichheitskategorie geografisch leer. Der Satz trifft die Zuordnung des Textes.\n\nOhne die Klammer bliebe „hohe soziale Gleichheit“ ein Typ ohne Beispiel. Der Text setzt Skandinavien genau dorthin. Das Beispiel trägt die Evidenz, es ersetzt sie nicht durch Folklore über den Norden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.07",
+    "title": "Ungleichheit, Korruption und ähnliches BIP",
+    "context": "Bewerten Sie die folgenden Aussagen zu Glückswerten bei Ungleichheit oder Korruption trotz ähnlichem BIP:",
+    "statements": [
+      "Länder mit starker Ungleichheit oder Korruption (zum Beispiel Brasilien, Südafrika) liegen deutlich niedriger, selbst bei ähnlichem BIP.",
+      "Bei ähnlichem BIP liegen alle Länder auf demselben Glücksniveau.",
+      "Brasilien und Südafrika sind die im Abschnitt genannten Beispiele.",
+      "Korruption bleibt ohne Einfluss auf die Glückswerte, sobald das BIP vergleichbar ist.",
+      "Ungleichheit oder Korruption können das Glücksniveau trotz ähnlichem BIP senken."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Brasilien und Südafrika stehen als Beispiele für starke Ungleichheit oder Korruption. Ihr Glücksniveau liegt deutlich niedriger, und der Text fügt hinzu: selbst bei ähnlichem BIP. Das Inlandsprodukt gleicht die Lücke also nicht aus. Die Evidenz widerspricht der Idee, gleiches BIP erzeuge gleiches Glück. Der Satz hält Beispiel, Niveau und BIP-Klausel zusammen.\n\nDie Klausel „selbst bei ähnlichem BIP“ ist die Pointe, nicht ein Zusatz. Sie sagt: das Inlandsprodukt erklärt den Abstand zu den höchsten Glückswerten nicht weg. Ungleichheit oder Korruption bleiben belastend, Brasilien und Südafrika bleiben die genannten Beispiele. Wer nur das BIP vergleicht und die soziale Lage streicht, liest den Spiegelstrich gegen seinen Zweck.\n\nDie Aussage ist wahr.",
+      "Alle Länder auf demselben Glücksniveau bei ähnlichem BIP: das wäre die Lesart, die der Abschnitt ausdrücklich entkräftet. Ähnliches BIP lässt die Werte trotzdem deutlich auseinanderliegen, wenn Ungleichheit oder Korruption stark sind. Die Allaussage über alle Länder trifft diese Differenz nicht.\n\nAllaussage und Nivellierung durch ähnliches BIP sind genau das Missverständnis, das der Text ausräumt. Glückswerte bleiben unterschiedlich, wenn Ungleichheit oder Korruption stark sind. „Alle Länder“ auf einem Niveau gibt es in diesem Befund nicht.\n\nDie Aussage ist falsch.",
+      "Die Klammer nennt Brasilien und Südafrika. Andere Länder können analog liegen, aber der Abschnitt belegt den Punkt an diesen beiden Namen. Wer die Beispiele austauscht, verlässt den Text. Der Satz bleibt bei der genannten Paarung.\n\nDie Aussage ist wahr.",
+      "Sobald das BIP vergleichbar ist, Korruption für wirkungslos zu erklären, streicht die zweite Hälfte der Evidenz. Korruption steht neben Ungleichheit als Grund, warum Werte deutlich niedriger liegen, selbst bei ähnlichem BIP. Vergleichbares Inlandsprodukt neutralisiert Korruption in diesem Abschnitt nicht.\n\nDie Aussage ist falsch.",
+      "Senkung trotz ähnlichem BIP ist die Pointe des Vergleichs. Ungleichheit oder Korruption erklären das niedrigere Niveau, nicht ein fehlendes BIP allein. Der Satz fasst die empirische Lehre, ohne eine einzelne Indexzahl zu verlangen. Genau so liest der Text den Abstand zu Gesellschaften mit hoher Gleichheit.\n\nSenken trotz ähnlichem BIP verbindet die soziale Lage mit den Glückswerten, ohne eine Indexziffer auswendig zu verlangen. Der qualitative Punkt reicht: Ungleichheit oder Korruption drücken, Gleichheit hebt, Einkommen allein setzt nicht gleich.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.08",
+    "title": "Partizipative Bildung und Jugendliche",
+    "context": "Bewerten Sie die folgenden Aussagen zu Lebenszufriedenheit und Zukunftsangst Jugendlicher in partizipativen Bildungssystemen:",
+    "statements": [
+      "Jugendliche in Ländern mit partizipativen Bildungssystemen berichten höhere Lebenszufriedenheit.",
+      "Dieselben Jugendlichen berichten geringere Zukunftsangst.",
+      "Partizipative Bildungssysteme erhöhen laut Abschnitt die Zukunftsangst der Jugendlichen.",
+      "Nur Erwachsene in Skandinavien, nicht Jugendliche, sind Gegenstand dieses Bildungsbefundes.",
+      "Partizipation im Bildungssystem steht hier mit höherer Lebenszufriedenheit und geringerer Zukunftsangst in Verbindung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Jugendliche, nicht die gesamte Altersstruktur, sind die Befragten dieses Spiegelstrichs. Partizipative Bildungssysteme sind die Rahmenbedingung. Höhere Lebenszufriedenheit ist die erste berichtete Folge. Wer den Befund auf beliebige Schulformen ohne Beteiligung ausweitet, verlässt den Text. Der Satz bleibt bei Gruppe, Systemtyp und Zufriedenheitsrichtung.\n\nPartizipation im Bildungssystem ist die Bedingung, Jugendliche sind die Gruppe, höhere Lebenszufriedenheit die erste Folge. Wer den Befund auf alle Schulen oder auf alle Altersgruppen ausdehnt, macht aus einem Spiegelstrich eine Allaussage, die der Text nicht trägt. Genau in dieser Begrenzung bleibt die Aussage wahr.\n\nDie Aussage ist wahr.",
+      "Geringere Zukunftsangst steht als zweite berichtete Folge neben der höheren Lebenszufriedenheit. Beides gehört zum selben Satz über Jugendliche in partizipativen Systemen. Angst vor der Zukunft sinkt in diesem Befund, sie steigt nicht. Der Satz isoliert die zweite Hälfte korrekt, ohne die erste zu streichen.\n\nDie Aussage ist wahr.",
+      "Erhöhte Zukunftsangst wäre das gegenteilige Vorzeichen. Der Abschnitt spricht von geringerer Zukunftsangst bei partizipativen Bildungssystemen. Wer Beteiligung zur Angstquelle macht, verdreht die empirische Evidenz. Die Richtung bleibt Entlastung, nicht Steigerung der Angst.\n\nDie Aussage ist falsch.",
+      "Nur Erwachsene in Skandinavien zu setzen, vermengt zwei Evidenzpunkte. Skandinavien illustriert hohe soziale Gleichheit und höchste Glückswerte insgesamt. Der Bildungsbefund betrifft Jugendliche in Ländern mit partizipativen Bildungssystemen, ohne diese Gruppe auf skandinavische Erwachsene zu verengen. Die Absolute „nur Erwachsene“ trifft den dritten Spiegelstrich nicht.\n\nZwei Evidenzstränge dürfen nicht zu einem werden. Skandinavien und Gleichheit betreffen Gesellschaften und den World Happiness Report. Partizipative Bildung betrifft Jugendliche und Zukunftsangst. Erwachsene als einzige Gruppe zu setzen, streicht den dritten Spiegelstrich. Die Absolute „nur“ ist hier die Falle.\n\nDie Aussage ist falsch.",
+      "Die Verbindung ist doppelt: höhere Lebenszufriedenheit und geringere Zukunftsangst. Partizipation im Bildungssystem ist die gemeinsame Bedingung. Der Satz fasst beide Richtungen, wie der Text sie nebeneinander stellt. Eine nur zufriedenere Jugend ohne den Angstbefund wäre unvollständig; hier sind beide genannt.\n\nBeide Richtungen gehören zusammen, weil der Text sie in einem Satz nennt. Zufriedenheit ohne den Angstbefund wäre unvollständig, Angst ohne Zufriedenheit ebenso. Partizipation bindet beides an das Bildungssystem, nicht an ein beliebiges Jugendprogramm ohne Beteiligung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.09",
+    "title": "Stabilität und Nachhaltigkeit als Mittel",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle wirtschaftlicher Stabilität und ökologischer Nachhaltigkeit:",
+    "statements": [
+      "Wirtschaftliche Stabilität und ökologische Nachhaltigkeit sind nicht Selbstzweck.",
+      "Sie sind Mittel, um Menschen die Freiheit zu geben, ein gutes Leben zu führen.",
+      "Ökologische Nachhaltigkeit ist im Abschnitt Selbstzweck, unabhängig vom guten Leben.",
+      "Freiheit zu einem guten Leben ist das Ziel, dem Stabilität und Nachhaltigkeit dienen.",
+      "Wirtschaftliche Stabilität gilt als Endzweck, dem das gute Leben untergeordnet ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nicht Selbstzweck: der Abschnitt spricht wirtschaftliche Stabilität und ökologische Nachhaltigkeit gemeinsam an. Beide werden vom Endzweck getrennt. Sie bleiben wichtig, aber als Weg, nicht als letztes Ziel. Wer sie zum Selbstzweck erhebt, überschreitet genau diese Grenze. Der Satz gibt die Verneinung des Textes wieder.\n\nSelbstzweck würde Stabilität und Nachhaltigkeit zum letzten Ziel machen und das gute Leben der Menschen nachordnen. Der Abschnitt verneint genau das. Beide Größen bleiben Mittel: wichtig, aber bezogen auf Freiheit zu einem guten Leben. Die Verneinung ist daher keine Abwertung, sondern eine Rangfolge.\n\nDie Aussage ist wahr.",
+      "Mittel zur Freiheit, ein gutes Leben zu führen: so füllt der Text die Lücke, die „nicht Selbstzweck“ öffnet. Menschen sollen die Freiheit zu diesem Leben bekommen; Stabilität und Nachhaltigkeit dienen dazu. Ohne diesen Zweckbezug wären beide Größen leer laufende Ziele. Der Satz trifft die positive Bestimmung.\n\nFreiheit, ein gutes Leben zu führen, füllt den Zweck, den „nicht Selbstzweck“ offenhält. Menschen stehen im Ziel, nicht die Stabilitätskennzahl und nicht die Nachhaltigkeitsformel als solche. Der Satz gibt diese positive Bestimmung vollständig wieder.\n\nDie Aussage ist wahr.",
+      "Unabhängigkeit vom guten Leben würde Nachhaltigkeit zum Selbstzweck machen. Der Abschnitt sagt das Gegenteil: ökologische Nachhaltigkeit ist Mittel, nicht letzter Zweck. Das gute Leben der Menschen bleibt der Bezugspunkt. Die Loslösung widerspricht dieser Rangfolge.\n\nDie Aussage ist falsch.",
+      "Ziel und Mittel sind hier klar verteilt. Freiheit zu einem guten Leben steht als das, wozu Stabilität und Nachhaltigkeit Mittel sind. Dienen heißt Unterordnung unter diesen Zweck, nicht Gleichrang als Selbstzweck. Der Satz hält die Zweckordnung des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Endzweck wirtschaftliche Stabilität mit untergeordnetem gutem Leben kehrt die Rangfolge um. Der Text gibt Menschen die Freiheit zu einem guten Leben als das, wozu Stabilität Mittel ist. Stabilität als letzter Zweck würde das gute Leben zum Anhängsel machen. Genau das weist die Formulierung „nicht Selbstzweck“ zurück.\n\nUnterordnung des guten Lebens unter Stabilität als Endzweck wäre die umgekehrte Zweckordnung. Der Text gibt die Freiheit zum guten Leben als das, wozu Stabilität Mittel ist. Endzweck Stabilität würde Menschen zum Anhängsel der Kennzahl machen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.10",
+    "title": "Drei Dimensionen nachhaltiger Wirtschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zu den drei Dimensionen, die eine nachhaltige Wirtschaft integrieren muss:",
+    "statements": [
+      "Eine nachhaltige Wirtschaft muss drei Dimensionen integrieren.",
+      "Die soziale Dimension verlangt, Bedürfnisse aller zu befriedigen und Ungleichheiten zu reduzieren.",
+      "Zwei Dimensionen, nur Soziales und Ökologie, reichen laut Abschnitt aus.",
+      "Die ökologische Dimension verlangt, innerhalb planetarer Grenzen zu bleiben.",
+      "Die psychologische Dimension wird in der Dreierliste ausdrücklich weggelassen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Dimensionen, nicht eine Leitgröße allein: so öffnet der Abschnitt die Anforderung an eine nachhaltige Wirtschaft. Integrieren heißt, sie zusammenzuführen, nicht eine davon als Etikett zu nutzen. Die folgende Nummerierung zählt sozial, ökologisch und psychologisch. Der Satz trifft Pflicht und Anzahl.\n\nAnzahl und Verb gehören zusammen: drei Dimensionen, und sie müssen integriert werden. Eine einzelne Leitgröße, etwa nur Ökologie oder nur Einkommen, erfüllt die Anforderung nicht. Die Nummerierung sozial, ökologisch, psychologisch macht die Drei konkret. Integration heißt Zusammenführen, nicht Etikettieren.\n\nDie Aussage ist wahr.",
+      "Sozial heißt hier doppelt: Bedürfnisse aller befriedigen und Ungleichheiten reduzieren. Beides gehört zur ersten Dimension. Wer nur Versorgung nennt und Ungleichheit stehen lässt, erfüllt die soziale Anforderung des Textes nicht. Der Satz gibt beide Teilsätze wieder.\n\nAlle und reduzieren: die soziale Dimension ist doppelter Auftrag. Bedürfnisse befriedigen ohne Abbau von Ungleichheiten wäre zu wenig, Ungleichheiten senken ohne Bedürfnisbefriedigung ebenso. Der Text verlangt beides in einem Punkt.\n\nDie Aussage ist wahr.",
+      "Nur zwei Dimensionen würden die psychologische streichen. Der Text verlangt Integration von drei Dimensionen und nummeriert sie durch. Ausreichen von Sozialem und Ökologie allein steht dort nicht. Die Verkürzung unterbietet die Anforderung.\n\nDie Aussage ist falsch.",
+      "Innerhalb planetarer Grenzen bleiben: das ist die ökologische Dimension in einem Satz. Die Dimension erschöpft sich nicht in einem Umweltgefühl ohne Grenze. Der Satz hält die Formulierung des Textes.\n\nPlanetare Grenzen geben der ökologischen Dimension eine harte Kante. Innerhalb bleiben ist mehr als Umweltfreundlichkeit ohne Maß. Die Formulierung macht das Bleiben innerhalb planetarer Grenzen zur Pflicht nachhaltiger Wirtschaft in diesem Abschnitt.\n\nDie Aussage ist wahr.",
+      "Weglassen der psychologischen Dimension widerspricht der nummerierten Liste. Punkt drei lautet ausdrücklich psychologisch: subjektives Wohlbefinden und Sinn ermöglichen. Eine Dreierliste ohne diesen Punkt wäre eine andere Gliederung. Der Abschnitt lässt die dritte Dimension nicht aus.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.11",
+    "title": "Psychologische Dimension von Nachhaltigkeit",
+    "context": "Bewerten Sie die folgenden Aussagen zur psychologischen Dimension nachhaltiger Wirtschaft:",
+    "statements": [
+      "Die psychologische Dimension soll subjektives Wohlbefinden und Sinn ermöglichen.",
+      "Sinn spielt in den drei Dimensionen keine Rolle.",
+      "Subjektives Wohlbefinden gehört zur psychologischen Dimension, nicht nur materieller Nutzen.",
+      "Die psychologische Dimension ersetzt die soziale und die ökologische vollständig.",
+      "Alle drei Dimensionen müssen integriert werden, sie sind nicht nacheinander optional wählbar."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Subjektives Wohlbefinden und Sinn stehen als Doppelauftrag der psychologischen Dimension. Ermöglichen ist das Verb, nicht erzwingen oder messen in einer einzelnen Skala. Wer nur Zufriedenheit nennt und Sinn streicht, lässt die zweite Hälfte weg. Der Satz gibt beide Zielworte wieder, wie der Text sie setzt.\n\nSinn neben subjektivem Wohlbefinden verhindert, die psychologische Dimension auf eine Stimmungsskala zu reduzieren. Ermöglichen heißt, Raum dafür zu schaffen, nicht ein Glücksquantum zu verordnen. Punkt drei der Liste ist genau dieses Doppel. Wer Sinn streicht, lässt die Dimension unvollständig.\n\nDie Aussage ist wahr.",
+      "Keine Rolle für Sinn würde die psychologische Dimension halbieren. Der Text nennt Sinn neben subjektivem Wohlbefinden. In der Dreierliste ist das der Inhalt von Punkt drei, nicht ein Schmuckwort. Die Verneinung trifft diesen Inhalt nicht.\n\nDie Aussage ist falsch.",
+      "Materieller Nutzen allein wäre eine andere Sprache, näher am Einkommensplus früherer Sätze. Hier sitzt subjektives Wohlbefinden in der psychologischen Dimension. Der Unterschied zur reinen Einkommenssteigerung aus dem Prettner-Schluss bleibt damit sichtbar. Der Satz ordnet subjektives Wohlbefinden der richtigen Dimension zu.\n\nDie Aussage ist wahr.",
+      "Vollständiger Ersatz der anderen beiden Dimensionen würde Integration in Verdrängung umdeuten. Der Abschnitt verlangt, drei Dimensionen zu integrieren: sozial, ökologisch, psychologisch. Psychologisch tritt hinzu und ermöglicht Sinn sowie Wohlbefinden, sie löscht weder Bedürfnisgerechtigkeit noch planetare Grenzen. Die Ersetzungslogik widerspricht der Integration.\n\nErsetzen wäre das Gegenteil von integrieren. Sozial bleibt Bedürfnis und Ungleichheit, ökologisch bleiben planetare Grenzen, psychologisch kommen Wohlbefinden und Sinn hinzu. Keine der drei löscht die anderen. Eine nachhaltige Wirtschaft, die nur noch Psychologie kennt, unterbietet die Anforderung des Textes.\n\nDie Aussage ist falsch.",
+      "Integrieren schließt optionales Nacheinander aus: man wählt nicht heute Soziales und nächstes Jahr Ökologie, während Psychologie wartet. Die nachhaltige Wirtschaft muss die drei Dimensionen zusammenführen. Der Schlusssatz zum Entstehen von Wohlbefinden wiederholt Bedürfnisse, ökologische Stabilität und soziale Beziehungen als gleichzeitige Bedingungen. Der Satz trifft diese Gleichzeitigkeit.\n\nOptional nacheinander würde Integration in eine Warteschlange verwandeln. Der Schlusssatz setzt erfüllte Bedürfnisse, ökologische Stabilität und soziale Beziehungen als gleichzeitigen Ort des Wohlbefindens. Genau diese Gleichzeitigkeit verlangt das Verb „integrieren“ für alle drei Dimensionen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.12",
+    "title": "Wo Wohlbefinden entsteht",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Bedingungen, unter denen Wohlbefinden entsteht:",
+    "statements": [
+      "Wohlbefinden entsteht dort, wo Bedürfnisse erfüllt, ökologische Stabilität gewahrt und soziale Beziehungen gepflegt werden.",
+      "Ökologische Stabilität ist für die Entstehung von Wohlbefinden verzichtbar, wenn die Bedürfnisse erfüllt sind.",
+      "Soziale Beziehungen gehören zur Entstehung von Wohlbefinden.",
+      "Nur erfüllte Bedürfnisse genügen; Beziehungen und ökologische Stabilität fallen weg.",
+      "Die drei Bedingungen stehen nebeneinander, nicht als Ersatz füreinander."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Drei Orte in einem Satz: erfüllte Bedürfnisse, gewahrte ökologische Stabilität, gepflegte soziale Beziehungen. Wohlbefinden entsteht dort, nicht bei einem der drei allein. Der Satz ist die Verdichtung der drei Dimensionen in eine Entstehungsformel. Wer eine Säule streicht, verändert den Ort. Der Wortlaut des Abschnitts ist genau diese Dreierbedingung.\n\nDie Entstehungsformel verdichtet die drei Dimensionen, ohne neue Größen einzuführen. Bedürfnisse verweisen auf das Soziale, ökologische Stabilität auf die planetaren Grenzen, soziale Beziehungen auf den Kontext aus Vertrauen, Kooperation und Gleichheit. Wohlbefinden hat in diesem Satz einen Ort mit drei Bedingungen, nicht mit einer. Wer eine streicht, verschiebt den Ort.\n\nDie Aussage ist wahr.",
+      "Verzichtbarkeit der ökologischen Stabilität bei erfüllten Bedürfnissen spaltet die Formel. Der Text stellt ökologische Stabilität als gleichrangige Bedingung daneben, nicht als Luxus nach der Versorgung. Planetare Grenzen in der ökologischen Dimension und diese Entstehungsklausel zeigen in dieselbe Richtung. Die Verzichtbarkeitsbehauptung trifft sie nicht.\n\nErfüllte Bedürfnisse als Freibrief, ökologische Stabilität fallen zu lassen, spaltet genau diese Formel. Der Text wahrt die Stabilität als Bedingung, parallel zur sozialen Dimension und zur psychologischen. Verzichtbarkeit steht dort nicht, weder als Ausnahme noch als Rangfolge nach der Versorgung.\n\nDie Aussage ist falsch.",
+      "Soziale Beziehungen pflegen ist der dritte Teilsatz der Entstehungsformel. Er schließt an den sozialen Kontext mit Vertrauen, Kooperation und Gleichheit an. Wohlbefinden ohne gepflegte Beziehungen wäre eine andere Definition. Der Satz hält diesen dritten Pfeiler.\n\nDie Aussage ist wahr.",
+      "Nur Bedürfnisse, ohne Beziehungen und ohne ökologische Stabilität, wäre eine Ein-Säulen-Formel. Der Abschnitt schreibt drei Teilsätze. Die Absolute „nur“ und das Wegfallen der anderen beiden widersprechen der Verdichtung am Ende des Kapitels. Erfüllung von Bedürfnissen bleibt nötig, sie reicht in dieser Formulierung nicht allein.\n\nDie Aussage ist falsch.",
+      "Nebeneinander statt Ersatz: so sind die drei Bedingungen syntaktisch und sachlich verbunden. Keine ersetzt die andere, alle drei markieren den Ort des Wohlbefindens. Das entspricht der Integration von sozialer, ökologischer und psychologischer Dimension. Der Satz beschreibt diese Gleichordnung, ohne eine Rangfolge zu erfinden, die der Text nicht setzt.\n\nErsatzlogik würde erlauben, Beziehungen durch Bedürfnisse oder Ökologie durch Versorgung zu ersetzen. Die Syntax des Schlusssatzes tut das nicht: drei Teilsätze, ein Ort. Integration der Dimensionen meint dasselbe: nebeneinander, nicht füreinander eintauschbar.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.13",
+    "title": "Umweltlasten und soziale Ungleichheit zusammen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenspiel von Umweltqualität, Gleichheit und Glückswerten:",
+    "statements": [
+      "Lärm, Luftverschmutzung und Flächenversiegelung senken die Lebenszufriedenheit, während saubere Luft, grüne Räume und intakte Ökosysteme sie erhöhen.",
+      "Hohe soziale Gleichheit und hohe Glückswerte fallen im World Happiness Report laut Abschnitt in skandinavischen Gesellschaften zusammen.",
+      "Bei ähnlichem BIP müssen Umweltqualität und Gleichheit die Glückswerte nicht mehr unterscheiden, weil das Inlandsprodukt bereits alles erklärt.",
+      "Naturverbundenheit stärkt psychische Gesundheit und Resilienz und steht damit auf der Plusseite derselben Umweltlogik wie saubere Luft und grüne Räume.",
+      "Brasilien und Südafrika liegen trotz möglichem ähnlichem BIP deutlich niedriger, weil der Abschnitt starke Ungleichheit oder Korruption als Belastung der Glückswerte nennt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Plusliste und Minusliste gehören zu derselben empirischen Gegenüberstellung. Erhöhung durch Luft, Grün und Ökosysteme, Senkung durch Lärm, Verschmutzung und Versiegelung: beide Richtungen stehen im ersten Block. Der Satz stellt sie gegeneinander, ohne eine dritte, ungenannte Umweltgröße einzuschieben. Das ist die Umweltseite der gesellschaftlichen Voraussetzungen, bevor soziale Gleichheit folgt.\n\nGegenüberstellung heißt: dieselben Studien, entgegengesetzte Vorzeichen. Wer nur die Plusliste kennt, unterschätzt Lärm, Verschmutzung und Versiegelung; wer nur die Minusliste kennt, unterschlägt Luft, Grün und Ökosysteme. Der Satz hält beide Richtungen, bevor Gleichheit und Korruption die soziale Seite öffnen. Umwelt bleibt damit erste gesellschaftliche Voraussetzung neben der später genannten Gleichheit.\n\nDie Aussage ist wahr.",
+      "Skandinavien, hohe soziale Gleichheit und höchste Glückswerte bilden im World Happiness Report das positive Gegenstück zur späteren Ungleichheitsliste. Zusammenfallen heißt hier: der Abschnitt liest die höchsten Werte über die Gleichheit, nicht über eine zufällige geografische Nähe. Der Satz verbindet Beispiel und Rang, wie der Text sie verbindet.\n\nDie Aussage ist wahr.",
+      "Alles erklärt durch das BIP: das wäre die Lesart, die der Text an zwei Stellen bricht. Erstens steigert eine Wirtschaft aus Gesundheit, Umweltqualität und sozialer Stabilität das Glück stärker als reine Einkommenssteigerung. Zweitens liegen Länder mit Ungleichheit oder Korruption trotz ähnlichem BIP deutlich niedriger. Umweltqualität und Gleichheit bleiben unterscheidungskräftig. Die Behauptung, das Inlandsprodukt reiche allein, trifft den Abschnitt nicht.\n\nBIP als Allerklärer würde Umweltqualität und Gleichheit überflüssig machen. Der Abschnitt tut das Gegenteil: er misst Lebenszufriedenheit an Umwelt, Glück an Gleichheit und Korruption, und er relativiert reine Einkommenssteigerung gegenüber Gesundheit, Umweltqualität und sozialer Stabilität. Ähnliches Inlandsprodukt löscht diese Unterschiede nicht. Die Behauptung, es erkläre bereits alles, trifft keinen der drei Blöcke.\n\nDie Aussage ist falsch.",
+      "Naturverbundenheit sitzt unmittelbar nach den Umweltlisten und stärkt psychische Gesundheit sowie Resilienz. Sie gehört zur Plusseite, nicht zu Lärm und Versiegelung. Saubere Luft und grüne Räume erhöhen die Lebenszufriedenheit; Naturverbundenheit ergänzt denselben Strang um Gesundheit und Widerstandskraft. Der Satz ordnet sie richtig ein.\n\nDie Aussage ist wahr.",
+      "Ungleichheit oder Korruption, Beispiele Brasilien und Südafrika, deutlich niedriger auch bei ähnlichem BIP: das bleibt der negative soziale Spiegel. Der Satz koppelt die Länderbeispiele an diese Belastung, ohne ein exaktes BIP-Niveau zu erfinden. Die Klausel „trotz ähnlichem BIP“ ist die des Textes. Genau deshalb erklärt Einkommen die Glückswerte nicht allein.\n\nDie Länderbeispiele tragen die soziale Minusseite, analog zur Umwelt-Minusliste. Stark, deutlich niedriger, selbst bei ähnlichem BIP: drei Bestimmungen, die den Abstand zu skandinavischer Gleichheit erklären. Ohne Ungleichheit oder Korruption bliebe der Abstand ein Rätsel des Inlandsprodukts. Der Text gibt die soziale Lage als Lösung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.14",
+    "title": "Gesundheit, Einkommen und Glücksvergleiche",
+    "context": "Bewerten Sie die folgenden Aussagen zum Verhältnis von Healthy Lifetime Income, materiellem Wohlstand und Glücksvergleichen:",
+    "statements": [
+      "Länder können laut Prettner et al. (2023) ein deutlich höheres Wohlbefinden erreichen, wenn Lebenserwartung und Gesundheitsversorgung besser sind, auch bei nur moderaterem materiellem Wohlstand.",
+      "Reine Einkommenssteigerung bleibt im Schluss des Abschnitts der stärkere Langfristmotor des Glücks gegenüber Gesundheit, Umweltqualität und sozialer Stabilität.",
+      "Ähnliches BIP setzt Brasilien oder Südafrika im Text nicht automatisch auf dasselbe Glücksniveau wie Gesellschaften mit hoher sozialer Gleichheit.",
+      "Der Healthy Lifetime Income ersetzt den World Happiness Report, sodass Gleichheit und Korruption für Wohlbefinden ohne Belang bleiben.",
+      "Eine Wirtschaft, die Gesundheit stärkt, folgt in diesem Kapitel derselben Logik, die den Indikator an Lebenserwartung und Versorgung bindet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Moderater materieller Wohlstand sperrt höheres Wohlbefinden nicht aus, sobald Lebenserwartung und Gesundheitsversorgung höher ausfallen. Das ist der Kern des Healthy Lifetime Income bei Prettner et al. 2023. Der Indikator öffnet genau diesen Fall, statt Wohlbefinden an Spitzenkonsum zu ketten. Der Satz hält Bedingung und Einschränkung zusammen.\n\nDeutlich höheres Wohlbefinden trotz nur moderatem materiellem Wohlstand ist der Fall, den der Indikator sichtbar macht. Lebenserwartung und bessere Gesundheitsversorgung sind die Bedingungen, nicht ein nachgereichtes Einkommenswunder. Prettner et al. 2023 belegen genau das mit dem Healthy Lifetime Income. Der Satz hält Fall, Bedingungen und Quelle zusammen.\n\nDie Aussage ist wahr.",
+      "Stärkerer Langfristmotor reines Einkommen: das ist die umgekehrte Folgerung. Der Text stellt Gesundheit, Umweltqualität und soziale Stabilität über die reine Einkommenssteigerung. Wer das Einkommen wieder an die Spitze setzt, liest den Schluss gegen den Indikator. Die Rangfolge bleibt zugunsten des Trios.\n\nDie Aussage ist falsch.",
+      "Automatische Gleichheit der Glückswerte bei ähnlichem BIP kennt der Vergleich nicht. Brasilien und Südafrika liegen deutlich niedriger, wenn Ungleichheit oder Korruption stark sind, selbst bei ähnlichem BIP. Skandinavien steht am anderen Ende über hohe Gleichheit. Ähnliches Inlandsprodukt nivelliert diese Differenz im Text nicht.\n\nNicht automatisch dasselbe Niveau: das ist die Lehre aus Ungleichheit und Korruption. Brasilien und Südafrika bleiben die Beispiele, Skandinavien das Gegenbild hoher Gleichheit. Ähnliches BIP ist im Text die Klausel, die eine Nivellierung gerade ausschließt, nicht herstellt.\n\nDie Aussage ist wahr.",
+      "Ersatz des World Happiness Report durch den Healthy Lifetime Income steht nicht im Abschnitt. Beide Befunde liegen nebeneinander: Gesundheit und Lebenszeit auf der einen Seite, Gleichheit, Ungleichheit und Korruption auf der anderen. Gleichheit und Korruption bleiben zentrale soziale Faktoren. Wer sie für belanglos erklärt, streicht die Evidenzliste.\n\nZwei Evidenzstücke ersetzen einander nicht. Der Indikator spricht Gesundheit und Lebenszeit, der Report Gleichheit und Korruption. Beide bleiben im Abschnitt stehen. Belanglosigkeit von Gleichheit und Korruption würde die Spiegelstriche zur sozialen Evidenz streichen. Einen solchen Ersatz beschreibt der Text nicht.\n\nDie Aussage ist falsch.",
+      "Gesundheit stärken in der Folgerung und Lebenserwartung plus Versorgung im Indikator zeigen in dieselbe Richtung. Eine Wirtschaft, die Gesundheit in den Vordergrund rückt, übersetzt den Befund aus dem Healthy Lifetime Income in eine Ausrichtung, die Glück stärker trägt als reines Einkommensplus. Der Satz zieht diese Linie, ohne eine Zahl zu erfinden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.15",
+    "title": "Mittel, Dimensionen und gutes Leben",
+    "context": "Bewerten Sie die folgenden Aussagen zum Verhältnis von Mittel-Zweck-Logik und den drei Nachhaltigkeitsdimensionen:",
+    "statements": [
+      "Wirtschaftliche Stabilität und ökologische Nachhaltigkeit bleiben Mittel zur Freiheit, ein gutes Leben zu führen, auch wenn die nachhaltige Wirtschaft drei Dimensionen integrieren muss.",
+      "Die ökologische Dimension (innerhalb planetarer Grenzen bleiben) macht ökologische Nachhaltigkeit zum Selbstzweck und streicht das gute Leben.",
+      "Die soziale Dimension (Bedürfnisse aller, weniger Ungleichheit) passt zur Evidenz, dass hohe Gleichheit mit hohen Glückswerten einhergeht und starke Ungleichheit die Werte drückt.",
+      "Die psychologische Dimension (subjektives Wohlbefinden und Sinn) fällt weg, sobald Stabilität und Nachhaltigkeit nur noch Mittel sind.",
+      "Wohlbefinden entsteht laut Schlusssatz dort, wo Bedürfnisse, ökologische Stabilität und soziale Beziehungen zusammenkommen, also dort, wo die drei Dimensionen praktisch greifen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Mittel-Zweck und Drei-Dimensionen-Pflicht stehen im Text hintereinander, nicht als Widerspruch. Stabilität und Nachhaltigkeit bleiben Mittel zur Freiheit eines guten Lebens; die nachhaltige Wirtschaft muss trotzdem sozial, ökologisch und psychologisch integrieren. Integration beschreibt, wie gewirtschaftet wird, der Zweck sagt, wozu. Der Satz hält beides, ohne eines zu streichen.\n\nWozu und wie liegen auf verschiedenen Ebenen. Wozu: Freiheit zu einem guten Leben, daher nicht Selbstzweck. Wie: drei Dimensionen integrieren, sozial, ökologisch, psychologisch. Der Satz lässt beide Ebenen gelten. Wer Integration gegen den Zweck ausspielt, macht aus einer Abfolge im Text einen Widerspruch, den der Abschnitt nicht behauptet.\n\nDie Aussage ist wahr.",
+      "Planetare Grenzen in der ökologischen Dimension konkretisieren, was ökologisch zu tun ist. Sie machen Nachhaltigkeit nicht zum Selbstzweck. Kurz zuvor sind wirtschaftliche Stabilität und ökologische Nachhaltigkeit ausdrücklich nicht Selbstzweck, sondern Mittel zum guten Leben. Grenzen bleiben die Bedingung, das gute Leben der Bezug. Die Streichung des guten Lebens widerspricht dieser Rangfolge.\n\nInnerhalb planetarer Grenzen bleiben konkretisiert die ökologische Dimension, es kassiert nicht den Satz, Nachhaltigkeit sei Mittel. Gutes Leben bleibt der Bezug, Grenzen bleiben die Bedingung ökologischen Wirtschaftens. Selbstzweck würde das gute Leben streichen; der Text streicht es nicht, er gibt Menschen die Freiheit dazu.\n\nDie Aussage ist falsch.",
+      "Bedürfnisse aller und Reduktion von Ungleichheiten auf der sozialen Seite treffen dieselbe Gleichheitslogik wie Skandinavien oben und Brasilien sowie Südafrika unten. Glückswerte folgen im Text nicht dem BIP allein, sondern der sozialen Lage. Die Dimension ist damit nicht ornamental, sie übersetzt die Evidenz in eine Anforderung an nachhaltige Wirtschaft. Der Satz zieht diese Brücke innerhalb des Abschnitts.\n\nDie Brücke ist intern: soziale Dimension verlangt weniger Ungleichheit, die Evidenz zeigt hohe Gleichheit oben und starke Ungleichheit oder Korruption unten. Glückswerte folgen dieser Lage, nicht dem BIP allein. Eine nachhaltige Wirtschaft, die Ungleichheiten reduziert, nimmt genau diese Evidenz ernst. Der Satz bleibt innerhalb dieses Abschnitts.\n\nDie Aussage ist wahr.",
+      "Wegfall der psychologischen Dimension, sobald etwas Mittel ist, verwechselt Zweck und Integrationspflicht. Mittel sind Stabilität und Nachhaltigkeit bezogen auf Freiheit und gutes Leben. Die psychologische Dimension soll gerade subjektives Wohlbefinden und Sinn ermöglichen, also denselben Zweck inhaltlich füllen. Sie fällt nicht weg, sie ist eine der drei zu integrierenden Größen.\n\nDie Aussage ist falsch.",
+      "Der Schlusssatz nennt erfüllte Bedürfnisse, gewahrte ökologische Stabilität und gepflegte soziale Beziehungen. Das sind die praktischen Orte von sozial, ökologisch und, über Wohlbefinden, psychologisch. Zusammenkommen, nicht einzelnes Ersetzen, bleibt die Bedingung. Der Satz liest die Verdichtung als Griff der drei Dimensionen, ohne eine vierte, ungenannte Säule hinzuzufügen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "WISO 2.6.16",
+    "title": "Fallen um BIP, Absolute und Selbstzweck",
+    "context": "Bewerten Sie die folgenden Aussagen zu typischen Verkürzungen der gesellschaftlichen Voraussetzungen von Wohlbefinden:",
+    "statements": [
+      "Weil Wohlbefinden in einem sozialen Kontext entsteht, reichen Vertrauen, Kooperation und Gleichheit als zentrale Faktoren aus, um Umweltqualität für die Lebenszufriedenheit für belanglos zu erklären.",
+      "Jugendliche in partizipativen Bildungssystemen berichten höhere Lebenszufriedenheit und geringere Zukunftsangst; dieser Befund steht neben, nicht anstelle der Umwelt- und Gleichheitsbefunde.",
+      "Eine nachhaltige Wirtschaft muss die psychologische Dimension weglassen, weil wirtschaftliche Stabilität bereits Selbstzweck ist.",
+      "Intakte Ökosysteme erhöhen die Lebenszufriedenheit messbar, während Flächenversiegelung sie senkt; beide Wirkungen bleiben bestehen, auch wenn das BIP zweier Länder ähnlich ist.",
+      "Der Abschnitt erlaubt den Schluss, reines Einkommenswachstum ohne Stärkung von Gesundheit, Umweltqualität und sozialer Stabilität sei der sicherste Weg zu langfristig höherem Glück."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Sozialer Kontext mit Vertrauen, Kooperation und Gleichheit steht im Text, Umweltqualität aber auch. Saubere Luft, grüne Räume und intakte Ökosysteme erhöhen die Lebenszufriedenheit messbar; Lärm, Luftverschmutzung und Flächenversiegelung senken sie. Die sozialen Faktoren machen die Umweltliste nicht belanglos. Wer den Kontext gegen die Umwelt ausspielt, spaltet zwei Blöcke, die der Abschnitt nacheinander als Voraussetzungen nennt. Belanglosigkeit der Umweltqualität folgt aus dem sozialen Kontext nicht.\n\nZwei Blöcke, eine Überschrift. Gesellschaftliche Voraussetzungen umfassen Umweltstudien und sozialen Kontext. Vertrauen, Kooperation und Gleichheit erklären nicht, warum Lärm die Lebenszufriedenheit senkt und saubere Luft sie hebt. Belanglosigkeit der Umweltqualität wäre eine Spaltung, die der Text nicht vornimmt. Der soziale Kontext tritt hinzu, er löscht die Umweltliste nicht.\n\nDie Aussage ist falsch.",
+      "Partizipative Bildung betrifft Jugendliche und liefert Zufriedenheit plus weniger Zukunftsangst. Der Spiegelstrich ergänzt die Evidenz zu Gleichheit, Ungleichheit und Korruption, er ersetzt weder die Umweltstudien noch den World Happiness Report. Nebeneinander heißt: mehrere gesellschaftliche Voraussetzungen, nicht ein einziger Königsweg. Der Satz hält den Bildungsbefund in dieser Reihe.\n\nDie Aussage ist wahr.",
+      "Weglassen der psychologischen Dimension und Stabilität als Selbstzweck sind zwei Fehler in einem Satz. Der Text verlangt drei Dimensionen einschließlich der psychologischen und sagt zugleich, wirtschaftliche Stabilität sei nicht Selbstzweck. Beides zusammen macht die Forderung unhaltbar. Nachhaltige Wirtschaft integriert subjektives Wohlbefinden und Sinn, statt sie zu streichen, weil Stabilität angeblich schon das Ziel sei.\n\nDoppelte Verkehrung: psychologische Dimension weg, Stabilität zum Selbstzweck. Der Abschnitt nummeriert drei Dimensionen einschließlich Wohlbefinden und Sinn und sagt zugleich, wirtschaftliche Stabilität sei nicht Selbstzweck, sondern Mittel zum guten Leben. Beide Hälften der Aussage fallen damit. Weglassen und Selbstzweck sind mit diesem Wortlaut unvereinbar.\n\nDie Aussage ist falsch.",
+      "Messbare Erhöhung durch intakte Ökosysteme und Senkung durch Flächenversiegelung gehören zur ersten empirischen Liste. Ähnliches BIP erklärt in einem späteren Satz Glücksdifferenzen nicht weg; erst recht löscht es diese Umweltwirkungen nicht. Der Satz koppelt beide Vorzeichen korrekt und hält fest, dass ein vergleichbares Inlandsprodukt die Umweltlogik nicht aufhebt. Genau so bleiben gesellschaftliche Voraussetzungen plural.\n\nÄhnliches BIP hebt Umweltwirkungen nicht auf, so wenig wie es Glücksdifferenzen durch Ungleichheit aufhebt. Intakte Ökosysteme bleiben Plus, Versiegelung bleibt Minus. Pluralität der Voraussetzungen heißt: Umwelt und Soziales gelten nebeneinander, das Inlandsprodukt nivelliert sie nicht. Der Satz hält beide Vorzeichen und diese Unabhängigkeit vom BIP-Vergleich.\n\nDie Aussage ist wahr.",
+      "Sicherster Weg reines Einkommenswachstum ohne das Trio: das ist die Absage an den Schluss nach Prettner. Der Abschnitt folgert das Gegenteil. Gesundheit, Umweltqualität und soziale Stabilität steigern das Glück langfristig stärker als reine Einkommenssteigerung. Wer das Einkommenswachstum zum sichersten Weg erklärt, ignoriert Indikator und Folgerung. Die Aussage ist damit mit dem Text unvereinbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

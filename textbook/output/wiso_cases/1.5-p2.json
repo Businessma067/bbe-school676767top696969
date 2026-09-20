@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.17",
+    "title": "Zinsen als Preis des Geldes",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Zinsen als Preis für ausgeborgtes Geld:",
+    "statements": [
+      "Zinsen sind der Preis für das Ausborgen von Geld.",
+      "Wer Geld herborgt, bekommt Zinsen und ist Gläubiger.",
+      "Wer Geld ausborgt, bezahlt keine Zinsen, weil nur der Gläubiger zahlt.",
+      "Wer Geld ausborgt, bezahlt Zinsen und ist Schuldner.",
+      "Zinsen entstehen nur, wenn zwei Güter unmittelbar gegeneinander getauscht werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Geld ausborgen hat einen Preis, und dieser Preis heißt Zinsen. Der Abschnitt stellt Zinsen damit auf dieselbe Ebene wie andere Preise: Man zahlt sie dafür, dass einem ein Geldbetrag überlassen wird. Ohne dieses Überlassen gäbe es in der Logik des Texts keinen Zins. Der Satz gibt die Definition wortgetreu wieder. Weder der Gütertausch Fleisch gegen Kleidung noch die bloße Existenz von Banknoten erklärt diesen Preis; er hängt am zeitweisen Hergeben von Geld.\n\nDie Aussage ist wahr.",
+      "Herborgen heißt: den Betrag zur Verfügung stellen. Dafür fließen Zinsen an diese Person. Das Buch nennt sie Gläubiger. Sparer gegenüber der Bank und Bank gegenüber dem Kreditnehmer stehen genau in dieser Rolle. Wer herborgt, empfängt den Preis, er zahlt ihn nicht.\n\nDie Aussage ist wahr.",
+      "Ausborgen kehrt die Zahlung um. Der Schuldner zahlt Zinsen, der Gläubiger empfängt sie. Die Behauptung, nur der Gläubiger zahle und der Ausborgende zahle nichts, vertauscht beide Seiten. Ein Kreditnehmer, der ein Auto finanziert, zahlt den Preis für das überlassene Geld. Die Bank als Gläubigerin erhält ihn. Wer die Zahlungsrichtung umkehrt, macht aus dem Preis des Ausborgens eine Einnahme des Schuldners. Genau das steht nicht im Lehrtext. Herborgen und Ausborgen sind zwei Richtungen desselben Geschäfts: Die eine Seite überlässt den Betrag und kassiert den Preis, die andere nimmt den Betrag und zahlt ihn. Ein Satz, der dem Ausborgenden die Zahlung erspart, zerstört diese Zuordnung.\n\nDie Aussage ist falsch.",
+      "Schuldner ist, wer den Betrag ausborgt und dafür den Preis zahlt. Das Buch nennt den Kreditnehmer beim Autokauf und die Bank, die Spareinlagen entgegennimmt. Beide schulden Zinsen an den jeweiligen Gläubiger. Die Rolle folgt aus dem Ausborgen, nicht aus dem Beruf oder der Rechtsform.\n\nDie Aussage ist wahr.",
+      "Zinsen sind der Preis für überlassenes Geld, nicht der Preis eines Gütertauschs Fleisch gegen Kleidung. Der unmittelbare Tausch ohne Zahlungsmittel steht früher im Kapitel und erklärt, warum man Geld braucht. Er erklärt nicht, warum Zinsen fließen. Wer Zinsen an den Naturaltausch bindet, vermengt zwei Abschnitte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.18",
+    "title": "Sparer, Bank und Kreditnehmer",
+    "context": "Bewerten Sie die folgenden Aussagen zu Gläubiger und Schuldner bei Spareinlagen und Krediten:",
+    "statements": [
+      "Der Sparer, der der Bank Geld zur Verfügung stellt, kann Gläubiger sein.",
+      "Gewährt die Bank einem Kunden einen Kredit, kann die Bank Gläubigerin sein.",
+      "Der Kreditnehmer, der für den Autokauf einen Kredit aufnimmt, ist ein Beispiel für einen Schuldner.",
+      "Die Bank, die Spareinlagen entgegennimmt, ist gegenüber den Sparern niemals Schuldnerin.",
+      "Dieselbe Bank kann gegenüber dem Sparer Schuldnerin und gegenüber dem Kreditnehmer Gläubigerin sein."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Spareinlagen sind überlassenes Geld. Der Sparer herborgt der Bank den Betrag und erhält dafür Zinsen. Genau diese Person nennt das Buch als mögliches Beispiel für den Gläubiger. Die Bank steht ihm als Schuldnerin gegenüber, weil sie die Einlage entgegengenommen hat.\n\nDie Aussage ist wahr.",
+      "Kreditvergabe dreht die Rollen. Die Bank überlässt dem Kunden Geld und verlangt Zinsen. Dann ist die Bank Gläubigerin, der Kunde Schuldner. Das Buch stellt dieses Paar ausdrücklich neben das Paar Sparer und Bank. Gläubiger sein hängt am Herborgen, nicht daran, ob die Institution Bank heißt.\n\nDie Aussage ist wahr.",
+      "Autokredit ist das Alltagsbeispiel des Texts. Der Käufer borgt den Kaufpreis aus und zahlt Zinsen. Damit ist er Schuldner. Die Bank, die den Kredit gewährt, ist in diesem Geschäft Gläubigerin. Das Beispiel macht die abstrakte Rolle greifbar, ohne eine zweite Definition einzuführen.\n\nDie Aussage ist wahr.",
+      "Spareinlagen kehren die Bankrolle um. Wer Einlagen entgegennimmt, borgt sich das Geld der Kunden und schuldet ihnen Zinsen. Das Buch nennt die Bank in genau diesem Fall als Schuldnerin. Die Behauptung, die Bank sei gegenüber Sparern niemals Schuldnerin, streicht dieses Beispiel. Eine Bank kann in einem Geschäft Gläubigerin und im anderen Schuldnerin sein. Die Einlage ist das zweite Geschäft. Gläubiger oder Schuldner folgt allein daraus, ob die Bank herborgt oder ausborgt, nicht daraus, dass sie eine Bank ist. Wer ihr die Schuldnerrolle gegenüber Sparern grundsätzlich abspricht, lässt nur noch den Kredit übrig und halbiert den Abschnitt.\n\nDie Aussage ist falsch.",
+      "Zwei Verträge, zwei Richtungen. Gegenüber dem Sparer nimmt die Bank Geld entgegen und zahlt Zinsen, also Schuldnerin. Gegenüber dem Kreditnehmer gibt sie Geld und empfängt Zinsen, also Gläubigerin. Der Abschnitt baut beide Beispiele bewusst nebeneinander. Dieselbe Institution trägt beide Rollen, je nachdem, ob sie herborgt oder ausborgt. Das ist kein Widerspruch, sondern die alltägliche Vermittlung: Einlagen finanzieren Kredite, und auf beiden Seiten fließt der Preis für überlassenes Geld.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.19",
+    "title": "Dubiosenrisiko",
+    "context": "Bewerten Sie die folgenden Aussagen zum Dubiosenrisiko als einem Grund für Zinsen:",
+    "statements": [
+      "Der Gläubiger möchte für das Risiko entschädigt werden, das er beim Überlassen des Geldbetrags eingeht.",
+      "Dubiosenrisiko meint, dass der Schuldner das Geld möglicherweise nicht zurückzahlen kann.",
+      "Zinsen entschädigen den Gläubiger ausschließlich für das Dubiosenrisiko und für nichts anderes.",
+      "Es ist möglich, dass der Schuldner den überlassenen Betrag nicht zurückzahlt.",
+      "Ohne jedes Ausfallrisiko gäbe es laut Lehrbuch trotzdem niemals Zinsen, weil Zinsen nur Strafe für Zahlungsverzug sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Überlassen ist nicht risikolos. Der Gläubiger gibt den Betrag aus der Hand und will dafür einen Preis. Der erste der drei Gründe im Buch ist genau diese Entschädigung für das eingegangene Risiko. Zinsen sind damit unter anderem eine Risikoprämie, nicht nur eine Rechengröße.\n\nDie Aussage ist wahr.",
+      "Dubiosenrisiko ist der Fachname für das Ausfallrisiko. Der Schuldner kann den Betrag schuldig bleiben. Dafür will der Gläubiger Zinsen. Der Text koppelt den Begriff ausdrücklich an die Möglichkeit, dass nicht zurückgezahlt wird. Wer den Namen hört, soll an diesen Ausfall denken, nicht an Wechselkurse oder Steuern.\n\nDie Aussage ist wahr.",
+      "Drei Gründe stehen nebeneinander. Neben dem Dubiosenrisiko nennt das Buch Konsumverzicht bzw. Opportunitätskosten und das Geldwertrisiko. Wer nur den Ausfall gelten lässt, streicht zwei der drei Entschädigungen. Zinsen können alle drei abgelten, nicht nur eines. Die Einschränkung auf ausschließlich das Dubiosenrisiko ist daher zu eng. Selbst ein Schuldner, dessen Rückzahlung als sicher gilt, löst beim Gläubiger noch Verzicht und mögliches Geldwertrisiko aus. Deshalb bleibt der Zins auch dann erklärbar, wenn das Dubiosenrisiko klein ist, und darf nicht auf diesen einen Punkt zusammengedrückt werden.\n\nDie Aussage ist falsch.",
+      "Rückzahlung ist möglich, aber nicht sicher. Genau diese Unsicherheit begründet den ersten Zinsgrund. Der Gläubiger überlässt den Betrag, obwohl der Schuldner ihn am Ende vielleicht nicht leisten kann. Ohne diese Möglichkeit gäbe es kein Dubiosenrisiko in der Formulierung des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Zinsen sind der Preis für überlassenes Geld, nicht eine Strafzahlung nach Verzug. Selbst wenn niemand ausfiele, blieben Opportunitätskosten und Geldwertrisiko als Gründe. Der Text zählt drei Motive, nicht eines. Strafe für Zahlungsverzug kommt in diesem Abschnitt nicht vor. Die Behauptung, ohne Ausfallrisiko gäbe es niemals Zinsen, widerspricht der Dreierliste. Ein Sparer, der der Bank Geld überlässt, will auch dann Zinsen, wenn er die Bank für zahlungsfähig hält: Er verzichtet auf Konsum und trägt das Risiko, dass der zurückgezahlte Betrag weniger kauft. Das Dubiosenrisiko ist ein Grund unter mehreren, keine notwendige Alleinerklärung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.20",
+    "title": "Konsumverzicht und Opportunitätskosten",
+    "context": "Bewerten Sie die folgenden Aussagen zu Konsumverzicht und Opportunitätskosten als Zinsgrund:",
+    "statements": [
+      "Während der Laufzeit muss der Gläubiger selbst auf den Geldbetrag verzichten.",
+      "Der Gläubiger kann den überlassenen Betrag in der Laufzeit weder anlegen noch ausgeben.",
+      "Opportunitätskosten des Gläubigers sind laut Lehrbuch immer gleich null, weil er den Betrag sofort zurückbekommt.",
+      "Opportunitätskosten umfassen entgangene Erträge und/oder Konsumverzicht.",
+      "Der Schuldner trägt die Opportunitätskosten des Gläubigers, indem er den Betrag während der Laufzeit selbst anlegt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Laufzeit heißt Warten. Der Gläubiger hat den Betrag hergegeben und kann ihn in dieser Zeit nicht selbst nutzen. Dieser Verzicht ist der zweite Zinsgrund im Buch. Zinsen sollen ihn dafür entschädigen, dass das Geld vorübergehend nicht in seiner Hand bleibt.\n\nDie Aussage ist wahr.",
+      "Weder neue Anlage noch eigene Ausgabe: Der überlassene Betrag ist gebunden. Genau das formuliert der Text als Lage des Gläubigers während der Laufzeit. Daraus folgen Opportunitätskosten. Wer den Betrag gleichzeitig ausgeben und verleihen könnte, hätte diesen Grund nicht.\n\nDie Aussage ist wahr.",
+      "Sofortige Rückgabe würde die Laufzeit streichen. Der Gläubiger wartet aber bis zur Rückzahlung und verzichtet bis dahin auf Anlage und Konsum. Opportunitätskosten sind in dieser Wartezeit gerade nicht null. Der Satz behauptet das Gegenteil der Definition. Entgangene Erträge und Konsumverzicht sind der Inhalt dieses Zinsgrunds, nicht eine leere Größe. Wer die Kosten auf null setzt, leugnet den Verzicht, den das Buch beschreibt. Solange der Betrag beim Schuldner ist, kann der Gläubiger ihn weder neu anlegen noch ausgeben; genau diese gebundene Zeit macht den zweiten Punkt der Liste aus.\n\nDie Aussage ist falsch.",
+      "Die Klammer im Lehrtext ist bewusst weit: entgangene Erträge und/oder Konsumverzicht. Beides sind Opportunitätskosten des Gläubigers. Er hätte den Betrag anders anlegen oder ausgeben können. Zinsen sollen diese entgangene Verwendung abgelten. Die Formulierung mit „und/oder“ lässt zu, dass eines von beiden oder beide zusammen auftreten. Wer nur entgangene Zinsen einer Alternativanlage zählt und den nicht getätigten Konsum streicht, oder umgekehrt, verkürzt die Definition. Der Abschnitt hält beide Wege des Verzichts offen.\n\nDie Aussage ist wahr.",
+      "Opportunitätskosten liegen beim Gläubiger, der verzichtet. Der Schuldner nutzt den Betrag, etwa für den Autokauf, und zahlt dafür Zinsen. Er legt nicht stellvertretend das Geld des Gläubigers an, um dessen Kosten zu tragen. Die Rollen bleiben getrennt: Verzicht auf der einen, Nutzung und Zinszahlung auf der anderen Seite.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.21",
+    "title": "Geldwertrisiko als Zinsgrund",
+    "context": "Bewerten Sie die folgenden Aussagen zum Geldwertrisiko als einem Grund dafür, dass es Zinsen gibt:",
+    "statements": [
+      "Zinsen sollen den Gläubiger auch dafür entschädigen, dass die Preise während der Laufzeit im Allgemeinen steigen könnten.",
+      "Geldwertrisiko bedeutet, dass der Gläubiger sich für den zurückgezahlten Betrag weniger leisten könnte als beim Überlassen des Geldes.",
+      "Das Geldwertrisiko ist laut diesem Abschnitt der einzige Grund für Zinsen.",
+      "Beim Überlassen und bei der späteren Rückzahlung kann derselbe nominale Betrag unterschiedlich viel Kaufmöglichkeit bieten.",
+      "Geldwertrisiko meint ausschließlich das Risiko, dass der Schuldner den Kreditvertrag verliert und die Bank schließt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Steigende Preise während der Laufzeit können den zurückgezahlten Betrag schwächen. Dafür will der Gläubiger Zinsen. Der dritte Grund im Buch heißt Geldwertrisiko und zielt genau auf diese mögliche allgemeine Preissteigerung. Es geht um Entschädigung des Gläubigers, nicht um die Messung der Inflationsrate im Warenkorb. Der Abschnitt bleibt bei der Begründung des Zinses: Der Gläubiger soll nicht schlechter dastehen, wenn dieselben Euro später weniger Güter kaufen. Warenkorb, VPI und Zielinflation gehören in den folgenden Text, nicht in diese Liste.\n\nDie Aussage ist wahr.",
+      "Weniger leisten können trotz gleicher Summe: Das ist die Alltagsfassung des Geldwertrisikos. Beim Überlassen kauft der Betrag eine bestimmte Gütermenge, bei der Rückzahlung vielleicht weniger. Zinsen sollen diese Lücke schließen helfen. Der Text bindet den Begriff an genau diesen Vergleich zwischen beiden Zeitpunkten.\n\nDie Aussage ist wahr.",
+      "Drei Gründe, nicht einer. Dubiosenrisiko, Opportunitätskosten und Geldwertrisiko stehen in einer Liste. Wer nur das Geldwertrisiko gelten lässt, streicht Ausfall und Konsumverzicht. Der Abschnitt überschreibt die Liste mit „Warum es Zinsen gibt“ und zählt alle drei. Die Alleinstellung ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Nominal gleich, real möglicherweise nicht. Derselbe Eurobetrag kann beim Überlassen mehr Güter kaufen als bei der Rückzahlung, wenn die Preise allgemein gestiegen sind. Genau diese Differenz begründet das Geldwertrisiko. Der Gläubiger vergleicht zwei Zeitpunkte desselben Betrags, nicht zwei verschiedene Währungen.\n\nDie Aussage ist wahr.",
+      "Bankschließung und verlorene Verträge gehören nicht zur Definition. Geldwertrisiko meint mögliche allgemeine Preissteigerungen und die schwächere Kaufmöglichkeit des zurückgezahlten Betrags. Das Ausfallrisiko trägt bereits den Namen Dubiosenrisiko. Die Vermengung beider Risiken verdreht den dritten Punkt der Liste. Ob die Bank schließt oder der Kreditnehmer den Vertrag verliert, wäre ein Ausfall des Schuldners, also Dubiosenrisiko. Das Geldwertrisiko setzt dagegen voraus, dass der Betrag zurückkommt, aber wegen höherer Preise weniger kauft. Zwei Namen, zwei Mechanismen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.22",
+    "title": "Billiges Geld und Kreditnachfrage",
+    "context": "Bewerten Sie die folgenden Aussagen zu Angebot, Nachfrage und der Höhe der Zinsen:",
+    "statements": [
+      "Die Höhe der Zinsen wird ebenso von Angebot und Nachfrage beeinflusst wie bei anderen Preisen auch.",
+      "Niedrige Kreditzinsen bedeuten, dass Kredite günstig zu haben sind, also billiges Geld, was zu einer höheren Nachfrage nach Krediten führt.",
+      "Steigt die Nachfrage nach Krediten sehr stark, fallen die Zinsen dauerhaft auf null und bleiben dort.",
+      "Ist die Nachfrage nach Krediten zu niedrig, kann sie durch niedrigere Zinssätze wieder stimuliert werden.",
+      "Steigt die Kreditnachfrage sehr stark, steigt der Preis für Kredite allmählich, wodurch die Nachfrage schließlich nicht mehr steigen wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Zinsen sind ein Preis, also gilt der Marktmechanismus. Angebot an und Nachfrage nach überlassenem Geld drücken die Höhe, wie bei anderen Preisen auch. Der Text überträgt diese Logik ausdrücklich vom Gütermarkt auf den Kredit. Ohne Angebot und Nachfrage bliebe die Zinsbildung in diesem Abschnitt unerklärt.\n\nDie Aussage ist wahr.",
+      "Niedrig heißt günstig, günstig heißt mehr Nachfrage. Das Buch nennt das billiges Geld. Haushalte und Unternehmen fragen dann mehr Kredite nach, etwa für Autos oder Investitionen. Die Richtung ist klar: niedriger Zinssatz, höhere Kreditnachfrage. Umgekehrt wäre teures Geld dämpfend.\n\nDie Aussage ist wahr.",
+      "Starke Nachfrage treibt den Preis nach oben, nicht auf null. Der Lehrtext sagt: Steigt die Nachfrage sehr stark, werden die Zinsen allmählich steigen. Nullzinsen sind ein später erwähntes historisches Umfeld, nicht die zwingende Folge einer Nachfragesteigerung. Die Behauptung kehrt den Preismechanismus um.\n\nWenn sehr viele Kredite nachgefragt werden, wird Geld nicht billiger, sondern teurer. Der Preis für Kredite steigt, bis die Nachfrage nicht mehr weiter zunimmt. Dauerhaft null wäre das Gegenteil dieses Ausgleichs. Deshalb ist der Satz falsch.\n\nDie Aussage ist falsch.",
+      "Zu wenig Nachfrage kann man über den Preis anregen. Niedrigere Zinssätze machen Kredite wieder günstiger und können die Nachfrage stimulieren. Der Text schließt den Kreislauf damit: hoch, dann steigender Preis und Stopp; zu niedrig, dann sinkender Preis und Anregung. Die Stimulierung ist der Gegenpol zur Dämpfung durch steigende Zinsen. Billiges Geld ist in diesem Abschnitt genau das: ein niedriger Kreditzins, der Haushalte und Unternehmen wieder an den Kreditmarkt holt, ohne dass der Preis auf Dauer bei null festgeschrieben wäre.\n\nDie Aussage ist wahr.",
+      "Allmähliches Steigen ist der Dämpfer. Sehr starke Nachfrage hebt den Kreditpreis. Höhere Zinsen bremsen weitere Zuwächse, bis die Nachfrage nicht mehr steigt. Das ist derselbe Mengen-Preis-Ausgleich wie bei anderen Gütern, nur hier für überlassenes Geld. Der Satz folgt dem Lehrtext Schritt für Schritt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.23",
+    "title": "Wie die Bank den Kreditzins setzt",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wovon der Zinssatz abhängt, den eine Bank für einen Kredit vergibt:",
+    "statements": [
+      "Der Zinssatz hängt zunächst davon ab, zu welchen Bedingungen die Bank sich selbst Geld ausborgen kann, also von den Refinanzierungskosten.",
+      "Wie riskant der Kredit eingeschätzt wird, fließt als Risikokosten in den Zinssatz ein.",
+      "Weitere zu deckende Kosten und ein Gewinnaufschlag gehören ebenfalls zu den Bestimmungsgründen.",
+      "Der Kreditzins der Bank richtet sich ausschließlich nach der Haarfarbe der Kundin und ignoriert Refinanzierung, Risiko und Gewinn.",
+      "Refinanzierungskosten der Bank sind identisch mit dem Dubiosenrisiko des Sparers gegenüber der Bank."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Bevor die Bank verleiht, muss sie sich oft selbst Geld beschaffen. Die Bedingungen dieses eigenen Ausborgens heißen Refinanzierungskosten. Sie sind der erste Bestimmungsgrund des Kreditzinses im Lehrtext. Teure eigene Mittel machen den Kundenkredit teurer, günstige Mittel lassen Spielraum nach unten.\n\nDie Aussage ist wahr.",
+      "Risiko hat einen Preis. Schätzt die Bank den Kredit als riskanter ein, verlangt sie mehr. Das Buch nennt das Risikokosten. Ein sicherer Schuldner und ein unsicherer Schuldner stehen damit nicht automatisch beim selben Satz, auch wenn die Refinanzierung gleich ist. Die Einschätzung des konkreten Kredits zählt.\n\nDie Aussage ist wahr.",
+      "Nach Refinanzierung und Risiko bleiben Betrieb und Ertrag. Weitere Kosten sollen gedeckt werden, und ein Gewinn soll aufgeschlagen werden. Der Zinssatz ist damit eine Summe mehrerer Bestandteile, nicht eine einzelne Zahl aus dem Nichts. Der dritte Punkt der Liste schließt genau diese Restgröße ein.\n\nDie Aussage ist wahr.",
+      "Haarfarbe kommt in der Liste nicht vor. Der Text nennt Refinanzierungskosten, Risikokosten, weitere Kosten und Gewinnaufschlag. Wer diese Gründe durch ein äußeres Merkmal der Kundin ersetzt, verlässt den Abschnitt. Der Kreditzins bleibt ein ökonomisch begründeter Preis für überlassenes Geld.\n\nPersönliche Merkmale ohne Bezug zu Risiko oder Kosten ersetzen keine der drei genannten Größen. Eine Bank, die nur die Haarfarbe anschaute, würde weder ihre eigenen Beschaffungskosten noch das Ausfallrisiko noch den Gewinnbedarf abbilden. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Refinanzierung ist, was die Bank selbst für ausgeborgtes Geld zahlt. Dubiosenrisiko ist das Ausfallrisiko des Gläubigers gegenüber dem Schuldner, beim Sparer also gegenüber der Bank. Das sind zwei verschiedene Größen auf zwei verschiedenen Seiten. Sie gleichzusetzen vermengt die Zinsbildung der Bank mit dem ersten allgemeinen Zinsgrund. Die Bank kalkuliert ihren Kundenkredit aus eigenen Beschaffungskosten, Risikokosten, weiteren Kosten und Gewinn. Das Dubiosenrisiko des Sparers erklärt, warum er von der Bank Zinsen will, nicht den Satz, den die Bank dem Autokäufer nennt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.24",
+    "title": "Zinssatz und Zeitraum",
+    "context": "Ein Guthaben von 10.000 € wird mit 2 % p.a. verzinst. Bewerten Sie die folgenden Aussagen zur Zinsberechnung:",
+    "statements": [
+      "Zinsen werden immer für einen bestimmten Zeitraum berechnet, zum Beispiel 2 % für ein Jahr bzw. 2 % p.a.",
+      "Für genau ein Jahr betragen die Zinsen 10.000 € × 0,02 = 200 €.",
+      "Der Zinssatz wird meist pro Jahr angegeben; 2 % p.a. heißt 2 Prozent je Jahr.",
+      "2 % p.a. auf 10.000 € ergeben in einem Jahr 2.000 € Zinsen, weil man den Satz ohne Bezug auf das Kapital als festen Eurobetrag liest.",
+      "Die Höhe der Zinsen wird in der Regel als Prozentsatz angegeben, man nennt ihn auch Zinssatz."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ohne Zeitraum wäre 2 % unvollständig. Der Abschnitt betont, dass Zinsen immer für einen bestimmten Zeitraum berechnet werden, und gibt das Lehrbeispiel 2 % für ein Jahr, geschrieben 2 % p.a. Der Satz ist die Maßeinheit, der Zeitraum der Nenner. Beides gehört zusammen, bevor man einen Eurobetrag ausrechnen kann. Dieselbe 2 % auf einen Monat bezogen wären ein anderer Preis als 2 % auf zwölf Monate. Deshalb steht p.a. im Text nicht als Schmuck, sondern als Zeitraumangabe.\n\nDie Aussage ist wahr.",
+      "Einfache Jahreszinsen folgen dem Satz mal Kapital. 2 % sind 0,02. 10.000 € × 0,02 = 200 € für genau ein Jahr. Das Buch liefert den Satz 2 % p.a.; die Multiplikation macht aus dem Prozentsatz den Zinsbetrag dieses Jahres. Ohne die Bindung an ein Jahr wäre die 200 € nicht definiert. Für denselben Satz und dasselbe Kapital über ein Jahr ist 200 € die passende Größe, nicht 2 € und nicht 2.000 €. Wer 10.000 durch 2 teilt oder 2 % als 2 € liest, verfehlt die Prozentrechnung, die hinter der Angabe 2 % für ein Jahr steht. Der Zeitraum ein Jahr und der Satz 0,02 müssen beide in der Multiplikation stecken, sonst entsteht ein anderer Eurobetrag.\n\nDie Aussage ist wahr.",
+      "p.a. kürzt per annum, also je Jahr. Der Zinssatz wird meist so angegeben. 2 % p.a. sind damit zwei Prozent des Kapitals in zwölf Monaten, nicht zwei Prozent je Monat und nicht zwei Euro unabhängig vom Kapital. Die Schreibweise im Lehrtext ist genau diese Jahresangabe.\n\nDie Aussage ist wahr.",
+      "2.000 € wären 20 %, nicht 2 %. 10.000 × 0,02 = 200, nicht 10.000 × 0,20 = 2.000. Wer den Prozentsatz als fertigen Eurobetrag liest oder die Kommastelle verschiebt, verdreht die Rechnung. Der Zinssatz bleibt ein Anteil am Kapital für den genannten Zeitraum. 2 % von 10.000 € sind 200 € in einem Jahr.\n\nDie Aussage ist falsch.",
+      "Prozentsatz und Zinssatz sind hier derselbe Name für die Höhe. Der Text sagt: Die Höhe der Zinsen wird in der Regel als Prozentsatz angegeben, man nennt ihn auch Zinssatz. 2 % p.a. ist genau so eine Angabe. Der Eurobetrag 200 € ist dann die Anwendung dieses Satzes auf 10.000 € in einem Jahr.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.25",
+    "title": "Zinseszinsen auf dem Konto",
+    "context": "Ein Guthaben von 10.000 € bleibt zwei Jahre zu 2 % p.a. auf dem Konto; gutgeschriebene Zinsen werden nicht abgehoben. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Hat das Geldgeschäft eine längere Laufzeit als ein Jahr, werden auch die Zinsbeträge wieder verzinst; man spricht von Zinseszinsen.",
+      "Im ersten Jahr entstehen 10.000 € × 0,02 = 200 € Zinsen, danach beträgt das Guthaben 10.200 €.",
+      "Im zweiten Jahr werden erneut nur die ursprünglichen 10.000 € verzinst, also wieder genau 200 €, weil Zinseszinsen das Buch nicht kennt.",
+      "Im zweiten Jahr gilt 10.200 € × 0,02 = 204 €; nach zwei Jahren stehen 10.404 € auf dem Konto.",
+      "Zinseszinsen entstehen nur, wenn das Guthaben kürzer als einen Tag auf dem Konto bleibt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Länger als ein Jahr heißt: Die bereits entstandenen Zinsen bleiben im Geschäft und werden selbst verzinst. Das Buch nennt das Zinseszinsen und nennt Kreditlaufzeiten über ein Jahr ebenso wie Guthaben, die länger auf dem Konto bleiben. Ohne Wiedereinbeziehung der Zinsbeträge gäbe es nur die einfache Jahresrechnung.\n\nDie Aussage ist wahr.",
+      "Erstes Jahr, einfacher Satz: 10.000 × 0,02 = 200. Das Kapital plus dieser Zinsen ergibt 10.200 €, sofern nichts abgehoben wird. Diese 10.200 € sind die neue Basis, sobald Zinseszinsen greifen. Der Lehrtext beschreibt genau diesen Schritt als Wiederverzinsung der Zinsbeträge.\n\nDie Aussage ist wahr.",
+      "Nur das Ursprungskapital zu verzinsen würde Zinseszinsen streichen. Der Text sagt das Gegenteil: Die Zinsbeträge werden wieder verzinst. Im zweiten Jahr sind 10.200 € die Basis, nicht 10.000 €. 10.200 × 0,02 = 204, nicht erneut 200. Wer beim alten Kapital stehen bleibt, rechnet ohne die vom Buch beschriebene Wiederverzinsung. Der Unterschied von 4 € ist klein, aber er ist genau der Zins auf die 200 € des ersten Jahres: 200 × 0,02 = 4. Das Buch kennt diesen Mechanismus und benennt ihn. Eine Rechnung, die im zweiten Jahr wieder nur 200 € ansetzt, tut so, als lägen die Zinsen des ersten Jahres nicht mehr auf dem Konto.\n\nDie Aussage ist falsch.",
+      "Zweiter Schritt der Kette: 10.200 × 0,02 = 204. Addiert man 200 aus dem ersten Jahr und 204 aus dem zweiten zu den 10.000 €, stehen 10.404 € auf dem Konto. Das ist mehr als 10.000 + 2 × 200 = 10.400, weil die 200 € des ersten Jahres im zweiten Jahr mitverdienen. Genau dieser Aufschlag von 4 € ist der Zinseszins. Ohne Wiederverzinsung der Zinsbeträge bliebe man bei 10.400 €; mit ihr, wie der Abschnitt es für längere Laufzeiten beschreibt, bei 10.404 €.\n\nDie Aussage ist wahr.",
+      "Kürzer als ein Tag wäre das Gegenteil der Bedingung. Zinseszinsen greifen, wenn die Laufzeit länger ist und Zinsbeträge wieder verzinst werden. Ein Guthaben, das nur Stunden liegt, illustriert diesen Fall nicht. Die Behauptung verdreht Zeitraum und Mechanismus.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.26",
+    "title": "Zinsen ohne Bankgeschäft",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, bei welchen Geldgeschäften Zinsen verrechnet werden:",
+    "statements": [
+      "Zinsen werden auch häufig bei Geldgeschäften verrechnet, die nicht von Banken abgewickelt werden.",
+      "Kauft man bei einem Online-Shop etwas auf Raten, können Zinsen anfallen.",
+      "Zinsen gibt es ausschließlich bei Geschäften mit Banken; Ratenkäufe im Online-Shop sind immer zinsfrei.",
+      "Der Preis für überlassenes Geld kann also auch außerhalb der Bankbilanz entstehen.",
+      "Ein Ratenkauf ist kein Geldgeschäft im Sinne des Abschnitts, weil dabei niemals ein Betrag überlassen wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Banken sind häufig, aber nicht allein. Der Lehrtext sagt ausdrücklich, dass Zinsen auch bei Geldgeschäften verrechnet werden, die nicht von Banken abgewickelt werden. Der Preis für überlassenes Geld hängt an der Überlassung, nicht am Schild über der Filiale. Wer Zinsen auf Banken beschränkt, verengt den Abschnitt.\n\nDie Aussage ist wahr.",
+      "Ratenkauf im Online-Shop ist das Beispiel des Buchs. Man zahlt den Kaufpreis nicht sofort, der Betrag wird überlassen, und dafür können Zinsen anfallen. Das Geschäft läuft ohne klassische Kreditabteilung, trägt aber denselben Preisgedanken. Die Formulierung „etwa wenn man bei einem Online-Shop etwas auf Raten kauft“ sitzt genau an dieser Stelle. Wer Zinsen nur hinter dem Bankschalter sucht, übersieht diese Stelle und verengt den Preis des Geldes auf ein Institut.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Banken widerspricht dem Satz über nicht bankmäßig abgewickelte Geschäfte. Der Online-Shop auf Raten ist das Gegenbeispiel. Zinsfrei wäre eine mögliche Kondition, nicht die Regel des Lehrtexts. Die Absolutheit „immer zinsfrei“ und „ausschließlich Banken“ ist daher falsch.\n\nRaten strecken die Zahlung. Diese Streckung ist überlassenes Geld, und überlassenes Geld hat einen Preis. Der Text nennt gerade diesen Fall, um die Bank nicht zur einzigen Zinsquelle zu machen. Ein Händler, der den Kaufpreis über Monate stundet, verlangt denselben Preisgedanken wie ein Kreditinstitut, auch wenn keine Filiale im Spiel ist. Deshalb hält die Einschränkung nicht.\n\nDie Aussage ist falsch.",
+      "Außerhalb der Bank bleibt der Kern gleich: Jemand überlässt Kaufkraft über die Zeit und verlangt dafür Zinsen. Der Online-Händler, der Ratenzahlung anbietet, steht in dieser Logik. Der Abschnitt weitet den Preis des Geldes über das Kreditinstitut hinaus. Die Bankbilanz ist ein wichtiger, aber nicht der einzige Ort.\n\nDie Aussage ist wahr.",
+      "Auf Raten kaufen heißt: nicht den vollen Betrag sofort zahlen. Die fehlende Sofortzahlung ist die Überlassung. Genau deshalb ordnet das Buch den Ratenkauf unter Geldgeschäfte mit Zinsen. Wer bestreitet, dass ein Betrag überlassen wird, streicht das Beispiel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.27",
+    "title": "Fixer und variabler Zinssatz",
+    "context": "Bewerten Sie die folgenden Aussagen zu fixen und variablen Zinssätzen:",
+    "statements": [
+      "Der Zinssatz kann fix oder variabel, das heißt veränderlich, sein.",
+      "Ein fixer Zinssatz bleibt für die vereinbarte Laufzeit sicher gleich hoch.",
+      "Ein variabler Zinssatz bleibt für die gesamte Laufzeit gesetzlich auf dem ersten Tageswert eingefroren.",
+      "Der variable Zinssatz kann sich im Zeitablauf ändern, je nachdem wie sich das Zinsniveau insgesamt entwickelt.",
+      "Fix und variabel unterscheiden sich nicht, weil jeder Satz täglich neu ausgehandelt werden muss."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Bauarten stehen zur Wahl. Fix heißt unverändert in der vereinbarten Zeit, variabel heißt veränderlich. Der Text stellt beide ausdrücklich nebeneinander. Welche Bauart im Vertrag steht, entscheidet, ob spätere Bewegungen des allgemeinen Zinsniveaus den eigenen Satz mitnehmen.\n\nDie Aussage ist wahr.",
+      "Sicher gleich hoch: Das ist die Definition des fixen Satzes für die vereinbarte Laufzeit. Steigt oder fällt das Marktniveau, bleibt dieser Vertragssatz trotzdem stehen. Genau deshalb können Zinszahlungen bei Fixzins ruhiger verlaufen als bei einem variablen Satz, den das Buch in der nächsten Figur gegenüberstellt. Die Sicherheit gilt nur für die vereinbarte Zeit, nicht für alle Ewigkeit nach Vertragsende, aber innerhalb der Laufzeit ändert der fixe Satz seine Höhe nicht.\n\nDie Aussage ist wahr.",
+      "Einfrieren auf den ersten Tag wäre ein fixer Satz, nicht ein variabler. Variabel bedeutet, dass sich der Satz im Zeitablauf ändern kann. Ein gesetzliches Einfrieren kennt der Abschnitt nicht. Die Behauptung nimmt dem variablen Satz genau die Veränderlichkeit, die ihn definiert.\n\nWer den variablen Satz auf den Abschlussmoment festzurrt, macht ihn zum Fixzins unter falschem Namen. Das Lehrbuch trennt beide Formen, damit spätere Bewegungen des Zinsniveaus den Schuldner treffen können. Ein Kredit, der 2025 variabel vereinbart war, ist das Gegenbild: Der Satz lief mit nach oben. Deshalb ist das behauptete Einfrieren falsch.\n\nDie Aussage ist falsch.",
+      "Gesamtes Zinsniveau, nicht nur die Laune einer Filiale: Der variable Satz folgt der Entwicklung dieses Niveaus. Steigt es, kann der vereinbarte Satz steigen; sinkt es, kann er sinken. Der Text koppelt die Änderung ausdrücklich an diese Gesamtentwicklung. Damit ist der variable Satz ein mitlaufender Preis, kein einmaliger Stempel.\n\nDie Aussage ist wahr.",
+      "Der Unterschied ist der Kern der Stelle. Fix bleibt in der Laufzeit gleich, variabel kann sich ändern. Täglich neu aushandeln müssen beide Formen nicht. Wer den Unterschied leugnet, macht Abbildung und Text überflüssig. Die Gleichsetzung ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.28",
+    "title": "Nullzinsen, EZB und variable Kredite",
+    "context": "Bewerten Sie die folgenden Aussagen zur jüngeren Entwicklung der Zinssätze laut Lehrbuch:",
+    "statements": [
+      "Derzeit (2025) sind die Zinsen deutlich höher als noch vor ein paar Jahren, als man sogar von Nullzinsen sprechen konnte.",
+      "Die EZB hat in den letzten rund 3,5 Jahren das Zinsniveau deutlich erhöht, um die Inflation zu bekämpfen.",
+      "Variable Kreditzinssätze sind trotz der EZB-Anhebung zwingend gesunken, weil variabel immer nach unten bedeutet.",
+      "Wo der Kreditzins variabel vereinbart war, sind die Sätze gestiegen und damit auch die Zinszahlungen der Schuldner.",
+      "Ein fixer Kreditzins ändert sich in der vereinbarten Laufzeit ebenso automatisch wie ein variabler Satz, sobald die EZB das Niveau anhebt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Phasen stehen im Text: zuerst so niedrige Sätze, dass von Nullzinsen die Rede war, dann 2025 deutlich höhere Zinsen. Der Vergleich ist qualitativ, nicht als auswendiggelernten Einzelwert gemeint. Wichtig ist die Richtung: höher als in den Nullzinsjahren. Der Abschnitt nutzt diese Gegenüberstellung, bevor er die EZB nennt. Wer 2025 noch von denselben Nullzinsen ausgeht, liest die Zeitangabe des Buchs nicht. Deutlich höher ist die Aussage, die der Text für die Gegenwart festhält.\n\nDie Aussage ist wahr.",
+      "Die Anhebung hat einen Zweck im Lehrtext: Inflationsbekämpfung. Rund 3,5 Jahre und die EZB als Akteur gehören zur Erzählung dieses Abschnitts über Zinsen, nicht erst zur späteren Messlehre der Preise. Höheres Zinsniveau ist hier das Werkzeug. Die Ursache „um die Inflation zu bekämpfen“ steht ausdrücklich dabei.\n\nDie Aussage ist wahr.",
+      "Variabel heißt mitlaufend, nicht dauernd fallend. Steigt das Niveau, können variable Sätze steigen. Der Text sagt genau das für Kredite, die variabel vereinbart waren: Die Sätze sind gestiegen. „Immer nach unten“ verdreht die Bedeutung von veränderlich. Veränderlich kann in beide Richtungen gehen.\n\nNach der EZB-Anhebung liefen die variablen Verträge mit nach oben, nicht gegen den Markt nach unten. Wer variabel mit automatisch billiger verwechselt, verfehlt den Lehrsatz zu den gestiegenen Zinszahlungen. Die Anhebung zielte auf Inflationsbekämpfung; der variable Kreditnehmer spürt sie in der Rate. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch.",
+      "Kette im Buch: variables Vereinbaren, gestiegenes Niveau, höhere Sätze, höhere Zahlungen der Schuldner. Der Autokäufer mit variablem Vertrag spürt die EZB-Anhebung in der Rate. Genau diese Wirkungskette begründet, warum die Unterscheidung fix gegen variabel hier Prüfungsstoff ist.\n\nDie Aussage ist wahr.",
+      "Fix bleibt in der vereinbarten Laufzeit gleich, auch wenn die EZB das Niveau anhebt. Automatisch mitlaufen würde den fixen Satz zum variablen machen. Der Text trennt beide Verläufe und zeigt in der Figur mögliche unterschiedliche Pfade der Zinszahlungen. Die Gleichsetzung nach einer EZB-Anhebung ist daher falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.29",
+    "title": "Nominal 5 Prozent und Gebühren",
+    "context": "Jemand nimmt einen Kredit von 10.000 € zu 5 % p.a. Nominalzinssatz auf und muss zusätzlich Bearbeitungsgebühren tragen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "5 % p.a. ist in diesem Beispiel der Nominalzinssatz.",
+      "Allein die Zinsen für ein Jahr wären 10.000 € × 0,05 = 500 €.",
+      "Weil Gebühren hinzukommen, bleibt der Kredit trotzdem genau so teuer wie 5 % pro Jahr und nie teurer.",
+      "Werden Bearbeitungsgebühren und andere Kosten bei der Zinssatzberechnung zusätzlich berücksichtigt, erhält man die Effektivverzinsung.",
+      "Mit zusätzlichen Kosten weicht die tatsächliche Verzinsung vom angegebenen Nominalzinssatz nach oben ab."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Das Buch setzt die Klammer selbst: 5 % p.a. gleich Nominalzinssatz. Nominal ist der angegebene Satz ohne die übrigen Vertragsbelastungen. Im Beispiel ist 5 % diese Zahl auf dem Kreditangebot, noch bevor Gebühren in die Rechnung kommen. Der Name Nominalverzinsung gehört genau zu dieser Angabe.\n\nDie Aussage ist wahr.",
+      "Satz mal Kapital für ein Jahr: 10.000 × 0,05 = 500. Das wären die reinen Jahreszinsen, wenn nichts außer den 5 % anfiele. Der Lehrtext braucht diese 5 %, um danach die Gebühren dagegenzuhalten. 500 € sind die nominale Zinslast dieses Jahres, nicht schon die gesamte Belastung des Geschäfts. Kommt auch nur ein Euro Gebühr hinzu, liegt die effektive Last über 500 € und damit über dem Nominalsatz von 5 % p.a.\n\nDie Aussage ist wahr.",
+      "Gebühren machen das Geschäft teurer als der Nominalsatz. Der Text sagt: Man muss Bearbeitungsgebühren und andere Kosten tragen, dann ist der Kredit teurer als 5 % pro Jahr. „Genau so teuer und nie teurer“ widerspricht diesem Satz. Zu den 500 € Zinsen treten weitere Eurobeträge; die Last liegt über 5 %.\n\nWer nur 500 € zählt und die Gebühr ignoriert, rechnet den Nominalzins, nicht die tatsächlichen Gesamtkosten. Das Buch führt die Effektivverzinsung gerade deshalb ein. 10.000 × 0,05 = 500 bleibt der Zinsanteil; jede Bearbeitungsgebühr erhöht die Summe darüber. Die Behauptung der Gleichheit mit 5 % ist falsch.\n\nDie Aussage ist falsch.",
+      "Effektiv heißt: Nominalsatz plus die übrigen Kosten im Zinssatz. Berücksichtigt man Bearbeitungsgebühren und andere Kosten zusätzlich, hat man laut Lehrtext die Effektivverzinsung ermittelt. Das ist dieselbe 5-%-Geschichte, nur vollständig gerechnet. Ohne diese Hinzunahme bleibt man beim Nominalwert 5 %.\n\nDie Aussage ist wahr.",
+      "Zusätzliche Kosten ändern Gesamtkosten oder Erträge, und dann weicht die tatsächliche Verzinsung vom angegebenen Satz ab. Beim Kreditnehmer ist die Abweichung nach oben: teurer als 5 %. 500 € Zinsen plus Gebühr sind mehr als 500 €. Genau diese Lücke trennt Nominal und Effektiv im Abschnitt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.30",
+    "title": "Kreditangebote vergleichen",
+    "context": "Zwei Banken bieten denselben Kreditbetrag an, die eine mit 5 % p.a. Nominalzins plus Gebühren, die andere mit anderem Nominalsatz und anderen Konditionen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Will man verschiedene Kreditangebote mit verschiedenen Konditionen vergleichen, ist es sinnvoller, die Effektiv- als die Nominalverzinsung zu vergleichen.",
+      "Zwei Angebote mit gleichem Nominalzinssatz von 5 % p.a. sind für den Kreditnehmer immer gleich teuer, unabhängig von Gebühren.",
+      "Ändern zusätzliche Kosten oder weitere Vertragsbedingungen die Gesamtkosten, weicht die tatsächliche Verzinsung vom angegebenen Zinssatz ab.",
+      "Die Effektivverzinsung bezieht sich im Lehrbeispiel auf den Kreditnehmer, für den Gebühren den Kredit verteuern.",
+      "Der Nominalzinssatz allein genügt stets als Vergleichsmaß, weil Bearbeitungsgebühren den Preis des Kredits nicht berühren."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Verschiedene Konditionen machen den Nominalsatz zum schlechten Maßstab. Das Buch rät ausdrücklich: Effektivverzinsung vergleichen, nicht nur Nominalverzinsung. Wer nur 5 % neben 4,9 % legt und Gebühren ignoriert, vergleicht unvollständige Preise. Der effektive Satz bündelt Zins und übrige Kosten in einer Zahl. Zwei Prospekte mit gleichem oder ähnlichem Nominalwert können für den Kreditnehmer weit auseinanderliegen, sobald Bearbeitungsgebühren und andere Bedingungen verschieden sind.\n\nDie Aussage ist wahr.",
+      "Gleicher Nominalwert 5 % sagt nichts über Gebühren, Spesen oder andere Bedingungen. Ein Angebot mit 5 % plus hoher Bearbeitungsgebühr kann teurer sein als 5 % mit geringer Gebühr. Der Text betont gerade, dass zusätzliche Kosten den Kredit teurer machen als den angegebenen Satz. Die Behauptung der immer gleichen Teuerung ist falsch.\n\nZwei Verträge, zwei Gesamtkosten. Nur der Nominalzins gleichzusetzen heißt, den Unterschied zu streichen, den die Effektivverzinsung sichtbar machen soll. Für den Kreditnehmer zählt die tatsächliche Last, nicht die gleiche Prozentzahl auf dem Prospekt.\n\nDie Aussage ist falsch.",
+      "Die Abweichung ist die Definitionslücke zwischen Angabe und Wirklichkeit. Zusätzliche Kosten oder weitere Vertragsbedingungen ändern Gesamtkosten oder Erträge. Dann ist die tatsächliche Verzinsung nicht mehr der aufgedruckte Satz. Genau deshalb braucht der Vergleich die Effektivgröße.\n\nDie Aussage ist wahr.",
+      "Abbildung und Text sprechen vom Unterschied zwischen Nominal- und Effektivverzinsung beim Kredit für den Kreditnehmer. Gebühren und andere Kosten tragen er oder sie, und sie machen den Kredit teurer als 5 % pro Jahr. Die Perspektive ist die des Zahlenden, nicht die einer abstrakten Marktstatistik.\n\nDie Aussage ist wahr.",
+      "Bearbeitungsgebühren berühren den Preis sehr wohl. Der Nominalsatz allein lässt sie außen vor. Deshalb genügt er nicht als Vergleichsmaß, sobald die Konditionen verschieden sind. Der Lehrtext empfiehlt den Effektivvergleich genau aus diesem Grund.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.31",
+    "title": "Kapitalertragsteuer auf Zinsen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kapitalertragsteuer auf Zinserträge in Österreich:",
+    "statements": [
+      "Zinserträge etwa für Guthaben auf Konten unterliegen in Österreich der Kapitalertragsteuer (KESt).",
+      "Die KESt ist eine Steuer, die der Staat auf Erträge aus Vermögen einhebt.",
+      "Die Bank darf Zinserträge niemals an das Finanzamt melden oder abführen.",
+      "Für Zinserträge auf Bankguthaben behält die Bank am Ende der Abrechnungsperiode die KESt ein und führt sie an das Finanzamt ab.",
+      "Abrechnungsperiode meint im Text zum Beispiel Quartalsende oder Jahresende."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Kontoguthaben können Zinsen tragen, und dieser Ertrag ist in Österreich steuerpflichtig. Der Abschnitt nennt die Kapitalertragsteuer mit der Abkürzung KESt. Es geht um Zinserträge, nicht um den bloßen Bestand des Guthabens. Wer den Zins bekommt, schuldet diese Abgabe dem Staat.\n\nDie Aussage ist wahr.",
+      "Vermögenserträge, nicht Arbeitslohn: So ordnet das Buch die KESt ein. Der Staat hebt sie auf Erträge aus Vermögen ein. Zinsen auf dem Konto sind ein solcher Ertrag. Die Definition sitzt direkt hinter der Nennung der Steuer und erklärt, warum ausgerechnet der Zins und nicht jeder Zahlungsfluss betroffen ist. Das Guthaben selbst wird hier nicht als Steuerobjekt beschrieben, sondern der Zinsertrag, den dieses Guthaben abwirft.\n\nDie Aussage ist wahr.",
+      "Einbehalten und abführen ist gerade die Aufgabe der Bank in diesem Text. Am Periodenende behält sie die KESt ein und leitet sie an das Finanzamt weiter. „Niemals melden oder abführen“ stellt diese Pflicht auf den Kopf. Der Bankkunde erhält den Zins bereits nach Steuer, weil die Bank den Staatsanteil abgezweigt hat.\n\nOhne diesen Abzug käme der volle Zins aufs Konto und die Steuer müsste anders erhoben werden. Der Lehrtext beschreibt den Quellenabzug durch die Bank am Quartals- oder Jahresende. Die Bank ist in Österreich für diese Zinserträge die Stelle, die die KESt einbehält. Deshalb ist das Verbot, an das Finanzamt abzuführen, falsch.\n\nDie Aussage ist falsch.",
+      "Quelle Bank, Ziel Finanzamt, Zeitpunkt Periodenende. So läuft der Einbehalt. Der Kunde muss die KESt auf diese Zinsen nicht extra überweisen, weil die Bank sie schon abgeführt hat. Der Satz gibt das Verfahren wieder, das der Abschnitt für Bankguthaben beschreibt.\n\nDie Aussage ist wahr.",
+      "Quartalsende und Jahresende stehen als Beispiele für die Abrechnungsperiode in Klammern. Gemeint ist der Stichtag, an dem die Bank den Zins abrechnet und die Steuer einbehält. Die Periode kann kürzer oder länger sein, der Text nennt genau diese beiden Enden. Ohne Periodenende gäbe es den beschriebenen Einbehalt so nicht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.32",
+    "title": "Zinseszinsen nach der KESt",
+    "context": "Am Jahresende schreibt die Bank Zinsen gut, behält die KESt ein und rechnet den Rest dem Guthaben zu. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der um die KESt verminderte Zinsertrag wird zum Guthaben am Bankkonto dazugerechnet.",
+      "In der nächsten Periode erhält man Zinsen nur auf das alte Kapital, niemals auf den bereits gutgeschriebenen Zinsbetrag.",
+      "Man erhält in der nächsten Periode auch für diesen (nach KESt) zugerechneten Zinsbetrag Zinsen; das Buch nennt das Zinseszinsen.",
+      "Zinseszinsen auf dem Konto laufen nach dem Steuerabzug weiter, weil nur der verbleibende Kapitalertrag dem Guthaben zuwächst.",
+      "Die KESt vernichtet jede weitere Verzinsung, weil nach dem Einbehalt kein Betrag mehr auf dem Konto liegen darf."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nach dem Abzug bleibt ein verminderter Zinsertrag, und genau dieser Rest kommt aufs Konto. Das Buch nennt ihn Kapitalertrag und sagt, er werde zum Guthaben dazugerechnet. Die Steuer fließt ans Finanzamt, der Nettozins bleibt beim Sparer als höhere Einlage. Ohne diese Zurechnung gäbe es im nächsten Schritt nichts, das man wieder verzinsen könnte. Bruttozins minus KESt, dann Addition zum alten Guthaben: so entsteht die Basis der folgenden Periode.\n\nDie Aussage ist wahr.",
+      "Nur das alte Kapital zu verzinsen würde den zweiten Teil des Satzes streichen. Der Text sagt, man erhalte in der nächsten Periode auch für diesen Zinsbetrag Zinsen. Der nach KESt gutgeschriebene Betrag gehört zur neuen Basis. Wer ihn aus der Verzinsung nimmt, rechnet gegen die beschriebene Zinseszinslogik.\n\nNetto heißt nicht unsichtbar. Was nach Steuer auf dem Konto landet, ist Guthaben und wird wie das übrige Guthaben verzinst. Die Bank hat die KESt bereits einbehalten; der Rest wächst dem Konto zu und trägt in der Folgeperiode selbst Zinsen. Die Behauptung, niemals der Zinsbetrag, ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Zinseszinsen nach Steuer: Das ist der Schlusssatz des Abschnitts. Der verminderte Zinsertrag wird zugerechnet, und in der nächsten Periode trägt auch er Zinsen. Die Anführungszeichen im Buch sitzen bei „Zinseszinsen“ genau hinter diesem Mechanismus. Der Steuerabzug ändert die Reihenfolge nicht, er mindert nur den Betrag, der aufzinst.\n\nDie Aussage ist wahr.",
+      "Weiterlaufen nach Abzug folgt aus der Zurechnung. Nur der verbleibende Ertrag wächst dem Guthaben zu, aber dieser Rest ist groß genug, um selbst Zinsen zu tragen. Bruttozins minus KESt, dann neue Basis, dann erneut Satz mal Basis. So verbindet der Text Steuertechnik und Zinseszins, ohne eine zweite Formel einzuführen.\n\nDie Aussage ist wahr.",
+      "Das Konto bleibt bestehen, der Nettozins wird zugerechnet, die nächste Periode verzinst auch diesen Rest. Die KESt mindert den Ertrag, sie räumt das Guthaben nicht. „Kein Betrag mehr“ widerspricht der Zurechnung zum Guthaben. Zinseszinsen wären dann unmöglich, obwohl das Buch sie ausdrücklich an diese Stelle setzt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

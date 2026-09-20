@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.17",
+    "title": "Anspruchsgruppen und Wechselwirkung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Anspruchsgruppen von Unternehmen:",
+    "statements": [
+      "Ein Unternehmen hat in vielfacher Hinsicht Einfluss auf mehrere Personengruppen und auf sein Umfeld und wird selbst auch von diesen beeinflusst.",
+      "Unternehmen haben viele Anspruchsgruppen (Stakeholder), die Erwartungen an das Unternehmen haben.",
+      "Als Anspruchsgruppen zählen ausschließlich die Eigentümerinnen und Eigentümer; Beschäftigte, Lieferanten und Kundschaft gehören nicht dazu.",
+      "Auch das Unternehmen hat Erwartungen an seine Anspruchsgruppen.",
+      "Der Einfluss verläuft nur vom Betrieb nach außen; Rückwirkungen der Gruppen auf das Unternehmen gibt es nach dem Abschnitt nicht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Einfluss ist keine Einbahnstraße. Der Abschnitt stellt zuerst fest, dass ein Unternehmen mehrere Personengruppen und sein Umfeld prägt, und fügt sofort hinzu, dass es selbst von diesen geprägt wird. Personal, Lieferkette, Abnehmer, Kapitalgeber und der Standort stehen in dieser Wechselwirkung, nicht als Kulisse ohne Rückkopplung. Wer nur die Innenleistung der Fabrik sieht, unterschlägt genau diese Einbettung. Die Formulierung „in vielfacher Hinsicht“ öffnet mehrere Kanäle: Arbeitsplätze, Zahlungsströme, Produktqualität, Abgaben, Umwelt. Dieselbe Liste wirkt zurück, etwa über Personalmangel, Lieferausfälle oder Kundenerwartungen. Der Satz gibt die Buchformel der wechselseitigen Beeinflussung wieder.\n\nDie Aussage ist wahr.",
+      "Anspruchsgruppen ist der Fachbegriff, Stakeholder die in Klammern gesetzte Entsprechung. Viele Gruppen haben Erwartungen an das Unternehmen, vom sicheren Arbeitsplatz bis zur pünktlichen Bezahlung. Der Text sammelt sie nicht als optionale Fußnote, sondern als Folge der Leistungserstellung und des Umfelds. Eine einzige Gruppe würde die Aufzählung zerstören. Mitarbeiterinnen, Lieferanten, Kundinnen, Eigentümer und die ansässige Gemeinde stehen nacheinander. Jede Zeile nennt Wünsche an den Betrieb. Genau diese Vielzahl macht aus Betroffenen Anspruchsgruppen im Sinne des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Die Liste ist länger als das Eigentum. Beschäftigte, Lieferantinnen, Kundinnen, Eigentümer, Gesellschafter, Geldgeber sowie Gemeinde und Land stehen nebeneinander. Eine Beschränkung auf Eigentümer streicht vier der fünf genannten Felder. Wer liefert oder kauft, hat trotzdem Erwartungen, auch ohne Anteilsschein. Bezahlung, Produktqualität und Standortabgaben wären sonst keine Stakeholderanliegen mehr. Der Abschnitt verwendet Anspruchsgruppen gerade als Oberbegriff über das Eigentum hinaus. Die Ausschließlichkeitsbehauptung widerspricht der Aufzählung.\n\nDie Aussage ist falsch.",
+      "Erwartungen laufen in beide Richtungen. Stakeholder richten Ansprüche an den Betrieb, und der Betrieb richtet Ansprüche an sie: zuverlässige Arbeit, lieferbare Ware, zahlende Kundschaft, bereitgestelltes Kapital, tragfähige Standortbedingungen. Der Schlusssatz des Abschnitts hält diese Gegenseitigkeit fest. Einseitig nur die Umwelt zu belasten oder nur Dividenden zu fordern, wäre eine Verkürzung. Pünktliche Lieferung ist ein Wunsch der Lieferanten an den Betrieb und zugleich ein Bedarf des Betriebs an die Lieferanten. Dieselbe Dualität gilt für Personal und Abnehmer. Der Satz trifft den letzten Halbsatz der Stakeholderpassage.\n\nDie Aussage ist wahr.",
+      "Rückwirkungen sind im selben Satz mitgedacht. Das Unternehmen wird „selbst auch von diesen beeinflusst“. Fehlt das Personal, stockt die Erstellung; bleiben Rechnungen liegen, endet die Lieferbeziehung; wandert die Kundschaft ab, fehlt der Absatz. Die Behauptung einer reinen Außenwirkung streicht genau dieses „auch“. Einfluss auf das Umfeld ohne Gegenrichtung wäre ein anderes Modell als das des Buches.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.18",
+    "title": "Erwartungen der Beschäftigten",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Erwartungen der Mitarbeiterinnen und Mitarbeiter:",
+    "statements": [
+      "Mitarbeiterinnen und Mitarbeiter wünschen sich einen sicheren, interessanten und gut bezahlten Arbeitsplatz.",
+      "Beschäftigte gehören zu den Anspruchsgruppen, weil das Unternehmen sie beeinflusst und von ihrer Arbeitsleistung abhängt.",
+      "Für das Personal zählt nach dem Abschnitt allein der möglichst hohe Preis der Endprodukte, nicht die eigene Stelle.",
+      "Sicherheit des Arbeitsplatzes steht neben Interesse an der Tätigkeit und neben der Bezahlung in derselben Erwartungsreihe.",
+      "Sobald jemand angestellt ist, entfällt jedes Interesse an der weiteren Entwicklung des Arbeitsplatzes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Wünsche, eine Zeile. Der Text nennt den sicheren, interessanten und gut bezahlten Arbeitsplatz als Erwartung der Beschäftigten. Sicherheit ohne Interesse wäre eine bloße Lohnstelle; Interesse ohne Bezahlung eine Berufung ohne Existenzgrundlage. Die Dreierkette bleibt zusammen. Genau so beschreibt der Abschnitt das Personal als Anspruchsgruppe. Know-how und Arbeitsleistung fließen in die Erstellung ein; umgekehrt wirkt der Betrieb auf Einkommen und Alltag der Beschäftigten. Der Satz wiederholt die Buchformulierung, ohne aus jedem Betrieb schon eine Garantie für unbefristete Spitzengehälter zu machen.\n\nDie Aussage ist wahr.",
+      "Personal ist Stakeholder und Einsatzfaktor zugleich. Arbeitskräfte, also die Arbeitsleistung des Personals, gehören zur Leistungserstellung; zugleich hat das Unternehmen Einfluss auf die Mitarbeiterinnen und wird von ihnen beeinflusst. Wer nur den Stundenplan sieht und die Erwartungen streicht, trennt, was der Text verbindet. Die Anspruchsgruppe sitzt innen im Betrieb, nicht erst an der Börse. Ohne diese Gruppe entfiele ein genannter Einsatz der Erstellung und eine genannte Erwartungsseite. Der Satz hält beide Rollen fest.\n\nDie Aussage ist wahr.",
+      "Der Produktpreis ist die Kundenerwartung, nicht die Personalzeile. Beschäftigte wünschen sich Stelle, Inhalt und Bezahlung. Den Endpreis der Ware als einziges Mitarbeiterinteresse auszugeben, vertauscht zwei Gruppen der Liste. Lieferanten wollen Bezahlung ihrer Lieferung, Kundschaft günstige Preise, Personal den Arbeitsplatz. Die Vermengung macht aus der Stakeholderliste eine einzige Preisspalte.\n\nDie Aussage ist falsch.",
+      "Die Reihung ist bewusst und, nicht oder. Sicher, interessant und gut bezahlt stehen als Bündel. Wer nur die Sicherheit zählt und die Tätigkeit langweilig hinnimmt, oder nur den Reiz der Aufgabe ohne Entgelt, verkürzt die Zeile. Der Abschnitt stellt die drei Adjektive nebeneinander als Wunsch an denselben Arbeitsplatz.\n\nDie Aussage ist wahr.",
+      "Anstellung beendet die Stakeholderrolle nicht. Der Wunsch nach einem sicheren, interessanten und gut bezahlten Platz bleibt, solange das Arbeitsverhältnis besteht und der Betrieb auf die Person wirkt. Eine einmalige Unterschrift löscht weder Unsicherheit bei Auftragsflauten noch das Interesse an der weiteren Entwicklung. Die absolute Formulierung „jedes Interesse entfällt“ widerspricht der fortlaufenden Erwartungslogik des Textes. Personal bleibt Anspruchsgruppe, nicht einmaliger Vertragsabschluss ohne Folge.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.19",
+    "title": "Lieferanten als Anspruchsgruppe",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Erwartungen der Lieferantinnen und Lieferanten:",
+    "statements": [
+      "Lieferantinnen und Lieferanten wünschen sich eine gute Geschäftsbeziehung.",
+      "Sie wünschen sich eine pünktliche und vollständige Bezahlung ihrer Lieferungen.",
+      "Weil Lieferanten ein Entgelt erhalten, sind sie keine Anspruchsgruppe.",
+      "Eine verspätete und nur teilweise Zahlung erfüllt den im Text genannten Wunsch der Lieferseite.",
+      "Das Unternehmen beeinflusst seine Lieferanten und wird selbst von der Lieferbeziehung beeinflusst."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Beziehung vor dem einzelnen Lieferschein. Der Abschnitt stellt die gute Geschäftsbeziehung an den Anfang der Lieferantenerwartung. Wer nur den letzten Preis drückt und die Beziehung zerstört, verfehlt diesen Wunsch, auch wenn einmal Ware ankommt. Die Formulierung sitzt in derselben Aufzählung wie Personal und Kundschaft. Zulieferer von Nüssen an Manner oder von Teilen an woom sind genau solche Partner. Der Satz gibt den ersten Halbsatz der Lieferzeile wieder.\n\nDie Aussage ist wahr.",
+      "Pünktlich und vollständig, beides. Die Bezahlung der Lieferungen soll nicht irgendwann und nicht gekürzt eintreffen. Offene Rechnungen belasten die Liquidität der Lieferseite und gefährden die Fortsetzung der Beziehung. Der Text koppelt diesen Zahlungswunsch an die Geschäftsbeziehung, nicht als höfliche Extra. Werkstoffe und Vorleistungen kommen von außen; ohne bezahlte Lieferung stockt die eigene Erstellung. Der Satz trifft den zweiten, konkreten Wunsch der Lieferzeile.\n\nDie Aussage ist wahr.",
+      "Entgelt schließt Stakeholderstatus nicht aus. Beschäftigte erhalten Lohn, Lieferanten den Kaufpreis, Eigentümer erhoffen eine Entwicklung ihres Geldes. Trotzdem stehen alle in der Liste. Wer Zahlung mit Ausschluss verwechselt, bliebe nur bei unbezahlten Dritten als Anspruchsgruppe, was der Aufzählung widerspricht. Gerade die pünktliche vollständige Bezahlung ist der genannte Anspruch, nicht der Beweis, dass keinerlei Anspruch bestehe.\n\nDie Aussage ist falsch.",
+      "Verspätet und teilweise ist das Gegenteil der Formulierung. Pünktlich und vollständig beschreibt den Wunsch; Verzug und Kürzung beschreiben dessen Verletzung. Eine Teillieferung der Zahlung kann die Geschäftsbeziehung belasten, von der der erste Halbsatz spricht. Der Satz behauptet eine Erfüllung, die der Wortlaut nicht hergibt. Note: Quantoren wie vollständig und pünktlich sind hier die Messlatte, nicht ein ungefähres Irgendwann.\n\nDie Aussage ist falsch.",
+      "Vorleistungen binden beide Seiten. Das Unternehmen braucht Werkstoffe und zugekaufte Bestandteile; die Lieferanten brauchen den fortgesetzten Auftrag und die Zahlung. Einfluss auf die Lieferanten über Bestellmengen und Zahlungsdisziplin und Einfluss der Lieferanten auf den Betrieb über Verfügbarkeit, Qualität und Termin gehören zur Wechselwirkung des Einleitungssatzes. Manner ohne Nüsse oder woom ohne zugekaufte Teile: die eigene Erstellung hängt an dieser Gruppe, und die Wertschöpfung zieht genau solche Vorleistungen später ab. Wer die Lieferbeziehung als einseitigen Befehl des Abnehmers liest, streicht die Rückwirkung, die der Text mit „wird selbst auch von diesen beeinflusst“ festhält. Der Satz zieht die allgemeine Einflussformel auf die Lieferzeile.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.20",
+    "title": "Kundenerwartungen an Leistung und Preis",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Erwartungen der Kundinnen und Kunden:",
+    "statements": [
+      "Kundinnen und Kunden wünschen sich gute Produkte und Dienstleistungen zu einem günstigen Preis.",
+      "Die Kundschaft zählt zu den Anspruchsgruppen, auch wenn sie keine Anteile am Unternehmen hält.",
+      "Nach dem Abschnitt wünschen Kundinnen vor allem teure Leistungen geringer Qualität, weil nur der hohe Preis Wert signalisiert.",
+      "Gute Leistung und günstiger Preis stehen in der Kundenerwartung nebeneinander, nicht als sich ausschließende Gegensätze.",
+      "Nur der Staat als Nachfrager gilt als Kundschaft; private Haushalte und andere Unternehmen fallen aus der Stakeholderrolle der Abnehmer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Qualität und Preis in einem Wunsch. Die Kundzeile verlangt gute Produkte und Dienstleistungen zu einem günstigen Preis. Weder die bloße Billigware ohne Güte noch die teure Leistung ohne Rücksicht auf das Entgelt trifft diese Kombination. Früher im Abschnitt hängt das Kaufinteresse daran, dass Wert und Nutzen erkannt werden; hier wird derselbe Abnehmerkreis als Stakeholder mit Preis-Leistungs-Erwartung geführt. Haushalte, andere Betriebe und der Staat können diese Kundrolle füllen, der Wunsch bleibt derselbe. Der Satz gibt die Buchzeile wieder, ohne aus günstig schon den niedrigsten Dumpingpreis der Branche zu machen.\n\nDie Aussage ist wahr.",
+      "Anteilsschein ist kein Eintrittsbillett in die Stakeholderliste. Kundinnen nehmen die Leistung ab und werden vom Angebot beeinflusst; der Betrieb hängt an ihrem Kauf. Eigentum steht in einer anderen Zeile. Wer Stakeholder auf Gesellschafter verengt, streicht die Abnehmer, obwohl der Text sie ausdrücklich nennt. Haushalte, andere Unternehmen und der Staat können diese Kundrolle füllen. Der Satz trennt Abnahme und Eigentum korrekt.\n\nDie Aussage ist wahr.",
+      "Teuer und schlecht ist nicht die Kundzeile. Günstig und gut stehen dort. Ein hoher Preis als alleiniges Wertsignal würde den Wunsch nach einem günstigen Preis streichen. Der Abschnitt koppelt Interesse am Kauf an erkannten Nutzen, nicht an Maximalpreise. Die Umkehrung verdreht beide Hälften der Erwartung.\n\nDie Aussage ist falsch.",
+      "Nebeneinander, nicht entweder oder. Gute Produkte bzw. Dienstleistungen und ein günstiger Preis bilden einen gemeinsamen Wunsch. Wer Qualität nur bei Höchstpreis für möglich hält oder Billigkeit nur bei Ausschuss, konstruiert einen Gegensatz, den die Zeile nicht enthält. Unternehmen sollen Wert und Nutzen schaffen und treffen damit genau diese doppelte Erwartung. Der Satz liest die Konjunktion richtig.\n\nDie Aussage ist wahr.",
+      "Drei Nachfragergruppen bleiben im Auftrag des Unternehmens: private Haushalte und/oder andere Unternehmen und/oder der Staat. Die Kundzeile der Stakeholder spricht allgemein von Kundinnen und Kunden, nicht nur von öffentlichen Stellen. Zulieferung an Betriebe und Verkäufe an Haushalte wären sonst keine Abnehmererwartungen mehr. Die Verengung auf den Staat als einzige Kundschaft widerspricht der Aufgabenbeschreibung am Anfang des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.21",
+    "title": "Eigentümer, Gesellschafter und Geldgeber",
+    "context": "Bewerten Sie die folgenden Aussagen zu Eigentümerinnen, Gesellschafterinnen und Geldgeberinnen:",
+    "statements": [
+      "Eigentümerinnen, Gesellschafterinnen und Geldgeberinnen erhoffen sich eine gute Entwicklung des Unternehmens.",
+      "Mit dem eingesetzten Geld verfolgen sie auch bestimmte Ziele.",
+      "Sobald Kapital eingebracht ist, haben diese Gruppen kein Interesse mehr am weiteren Verlauf des Betriebs.",
+      "Die Kapitalgeberzeile nennt Eigentum, Gesellschaftsanteile und sonstige Geldgeber nebeneinander, nicht nur eine der drei Rollen.",
+      "Nur die Beschäftigten setzen Geld ein und verfolgen damit Ziele; Eigentümer bleiben in der Aufzählung ungenannt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Entwicklung ist der gemeinsame Nenner der Kapitalzeile. Eigentümer, Gesellschafter und Geldgeber erhoffen sich eine gute Entwicklung des Unternehmens. Das trifft gewinnorientierte Fälle wie woom und Manner, ohne aus jeder NPO schon eine Ausschüttungsmaschine zu machen: eingesetztes Geld kann auch der Aufgabenerfüllung gelten. Der Satz bleibt bei der Buchhoffnung auf Entwicklung. Ohne diese Hoffnung fehlte der Grund, Kapital bereitzustellen. Der Betrieb beeinflusst diese Gruppen über den Verlauf ihres Einsatzes, und sie beeinflussen ihn über die Mittel.\n\nDie Aussage ist wahr.",
+      "Geld ist nicht zwecklos geparkt. Dieselben Personen verfolgen mit dem eingesetzten Betrag bestimmte Ziele. Bei gewinnorientierten Unternehmen kann das der Fortbestand über Reinvestition und Überschuss sein; bei Geldgebern können Verzinsung, Sicherheit oder Mitgestaltung hinzukommen. Der Text lässt die Ziele im Plural, ohne eine einzige gesetzliche Pflichtquote zu nennen. Der Satz hält genau diesen Zweckbezug des Kapitals fest.\n\nDie Aussage ist wahr.",
+      "Einbringung ist der Anfang der Stakeholderrolle, nicht das Ende. Die gute Entwicklung und die Ziele mit dem Geld bleiben an den weiteren Verlauf gebunden. Verluste, Zahlungsunfähigkeit oder stagnierendes Angebot treffen gerade diese Gruppen. Die Behauptung, Interesse entfalle mit der Überweisung, widerspricht der Erwartungszeile. Kapital bleibt Einsatz mit Risiko, wie die juristische Selbstständigkeit auf eigenes Risiko und die betriebswirtschaftliche Existenzgrenze der Zahlungsfähigkeit zeigen.\n\nDie Aussage ist falsch.",
+      "Drei Bezeichnungen, eine Zeile. Eigentümerinnen, Gesellschafterinnen und Geldgeberinnen stehen mit Schrägstrichen bzw. Aufzählung zusammen. Kreditgebende Banken oder andere Mittelgeber fallen damit nicht automatisch aus der Anspruchsgruppe, nur weil sie keine GmbH-Anteile halten. Wer nur Aktionäre zählt, verkürzt die Formulierung. Der Satz nimmt die Breite der Kapitalzeile ernst.\n\nDie Aussage ist wahr.",
+      "Personal setzt Arbeitsleistung ein, nicht primär das in der Kapitalzeile genannte Geld. Eigentümer, Gesellschafter und Geldgeber sind ausdrücklich genannt. Die Vertauschung würde die Stakeholderliste umdrehen: Lohnwunsch der Beschäftigten gegen Kapitalziele der Eigner. Der Abschnitt trennt beide Gruppen. Die Behauptung, nur Beschäftigte setzten Geld ein, streicht die Kapitalzeile und erfindet eine, die so nicht steht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.22",
+    "title": "Gemeinde, Land und Standort",
+    "context": "Bewerten Sie die folgenden Aussagen zu Gemeinden und zum Land als Anspruchsgruppen:",
+    "statements": [
+      "Gemeinde und Land, in denen das Unternehmen ansässig ist, profitieren von der Schaffung von Arbeitsplätzen und von den Abgaben, die das Unternehmen bezahlt.",
+      "Sie erwarten, dass das Unternehmen seinen finanziellen und anderen Verpflichtungen nachkommt.",
+      "Der Standort zählt nicht zu den Anspruchsgruppen, weil nur Marktparteien Stakeholder sein können.",
+      "Neben der Gemeinde ist auch das Land genannt, in dem der Betrieb ansässig ist.",
+      "Arbeitsplätze und Abgaben sind für den Standort nach dem Abschnitt ohne Bedeutung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Standortgewinne, klar benannt. Arbeitsplätze entstehen, wenn Personal beschäftigt wird; Abgaben fließen an die öffentliche Hand. Gemeinde und Land profitieren von beidem. Das knüpft die regionale Ebene an die Leistungserstellung, nicht nur an den privaten Gewinn. Manner in Wien oder woom als österreichischer Betrieb: die Logik gilt unabhängig von der Süßware oder dem Rad. Ohne Beschäftigung entfiele der erste Gewinn des Standorts, ohne gezahlte Abgaben der zweite. Der Satz gibt die Profitformel der Standortzeile wieder, bevor Pflichterfüllung, Umwelt und Gesellschaft folgen.\n\nDie Aussage ist wahr.",
+      "Verpflichtungen enden nicht beim Steuerbescheid. Finanziell und anders: der Text stellt beides nebeneinander. Offene Abgaben, unbezahlte Rechnungen oder ignorierte Auflagen verletzen genau diese Erwartung. Die öffentliche Hand ist damit Stakeholder mit Vollzugsinteresse, nicht nur mit Standortwerbung. Arbeitsplätze und Abgaben beschreiben den Nutzen für Gemeinde und Land; das Nachkommen der Verpflichtungen beschreibt, was sie im Gegenzug verlangen. Der Satz hält den Pflichtenteil der Zeile fest, bevor Umwelt und soziale Verantwortung folgen.\n\nDie Aussage ist wahr.",
+      "Markt ist nicht die Grenze der Liste. Nach Personal, Lieferanten, Kundschaft und Kapital folgen Gemeinde und Land. Wer Stakeholder auf Käufer und Verkäufer beschränkt, streicht die territoriale Zeile. Abgaben, Arbeitsplätze, Umwelt und Gesellschaft sitzen außerhalb eines reinen Marktvertrags und sind trotzdem genannt. Die Ausschlussbehauptung widerspricht der Aufzählung.\n\nDie Aussage ist falsch.",
+      "Gemeinde im Plural möglich, und das Land. Ansässigkeit kann mehrere Gemeinden berühren; der Text schreibt Gemeinde(n) und das Land. Ein Betrieb mit Werk und Verwaltung an zwei Orten bleibt in dieser Logik. Die nationale Ebene neben der lokalen gehört zur Formulierung, nicht als Schmuck. Der Satz nimmt beide Gebietskörperschaften auf.\n\nDie Aussage ist wahr.",
+      "Ohne Bedeutung wäre das Gegenteil von profitieren. Der Standort gewinnt durch Beschäftigung und durch Abgaben. Eine Irrelevanzbehauptung streicht den Grund, warum Gemeinde und Land überhaupt in der Stakeholderliste stehen. Der frühere Satz, dass Beschäftigung Arbeitsplätze schafft, bekommt hier seinen öffentlichen Adressaten. Die Verneinung hält der Abschnitt so nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.23",
+    "title": "Umwelt und soziale Verantwortung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Umwelt und gesellschaftlicher Verantwortung von Unternehmen:",
+    "statements": [
+      "Gemeinde und Land erwarten, dass das Unternehmen sorgsam und verantwortungsvoll mit der Umwelt umgeht.",
+      "Sie erwarten außerdem, dass das Unternehmen seine soziale Verantwortung gegenüber der Gesellschaft wahrnimmt.",
+      "Umweltumgang und soziale Verantwortung gehören nach dem Abschnitt nicht zu den Standorterwartungen.",
+      "Finanzielle Verpflichtungen und andere Verpflichtungen stehen in derselben Erwartungsreihe wie Umwelt und Gesellschaft.",
+      "Soziale Verantwortung richtet sich nach dem Text ausschließlich an die Gesellschafterinnen, nicht an die Gesellschaft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Umwelt ist Standortanspruch, nicht freiwillige Fußnote. Gemeinde und Land erwarten einen sorgsamen und verantwortungsvollen Umgang mit der Umwelt. Das folgt auf Arbeitsplätze, Abgaben und Pflichterfüllung in derselben Zeile. Ein Betrieb, der nur Lohnsumme und Steuern zählt und Natur ignoriert, erfüllt diese Erwartung nicht. Einfluss auf das Umfeld umfasst damit die physische Umwelt, nicht nur den Markt der Kundschaft. Der primäre Sektor spielt später für die Pflege der Natur eine wesentliche Rolle; hier ist der Anspruch an jedes ansässige Unternehmen adressiert. Der Satz gibt den Umweltteil der Standortzeile wieder.\n\nDie Aussage ist wahr.",
+      "Gesellschaft steht neben der Umwelt. Soziale Verantwortung gegenüber der Gesellschaft ist die nächste Erwartung derselben öffentlichen Anspruchsgruppen. Der Begriff bleibt im Abschnitt qualitativ, ohne eine einzelne Gesetzesnummer. Trotzdem ist er Teil der Stakeholderlogik, nicht ein Werbeslogan außerhalb des Lehrtextes. Der Satz ergänzt die Umwelt um genau diesen zweiten öffentlichen Anspruch.\n\nDie Aussage ist wahr.",
+      "Beide Themen sind in der Standortzeile enthalten. Wer sie streicht, behält nur Jobs und Abgaben und verfehlt den Schlussteil der Erwartungen. Sorgsam mit der Umwelt, sozial gegenüber der Gesellschaft: das sind genannte Wünsche, keine Erfindung. Die Verneinung widerspricht dem Absatzende vor der Legaldefinition.\n\nDie Aussage ist falsch.",
+      "Eine Reihe, mehrere Glieder. Zuerst Profit durch Jobs und Abgaben, dann Pflichterfüllung finanziell und anders, dann Umwelt, dann soziale Verantwortung. Die öffentliche Anspruchsgruppe bündelt das. Wer nur die Kasse der Gemeinde zählt, verkürzt; wer nur CSR-Sprache ohne Abgaben zählt, ebenfalls. Der Satz ordnet die Elemente derselben Zeile zu.\n\nDie Aussage ist wahr.",
+      "Gesellschaft, nicht nur Gesellschafter. Soziale Verantwortung gegenüber der Gesellschaft zielt auf das weitere Umfeld, während Eigentümer und Gesellschafter in der Kapitalzeile eigene Ziele mit eingesetztem Geld verfolgen. Die Verwechslung der Wörter Gesellschaft und Gesellschafter dreht den Adressaten um. Der Standort erwartet Wahrnehmung gegenüber der Gesellschaft insgesamt. Die Ausschließlichkeit auf Anteilseigner hält der Text so nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.24",
+    "title": "Wechselseitige Erwartungen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Gegenseitigkeit zwischen Unternehmen und Anspruchsgruppen:",
+    "statements": [
+      "Anspruchsgruppen haben Erwartungen an das Unternehmen, und das Unternehmen hat Erwartungen an die Anspruchsgruppen.",
+      "Sobald eine Gruppe als Stakeholder gilt, darf das Unternehmen keinerlei Gegenleistung mehr erwarten.",
+      "Die Wechselwirkung umfasst Personal, Lieferkette, Abnehmer, Kapitalgeber und den Standort zugleich, nicht nur eine einzige Gruppe.",
+      "Der Fachausdruck Anspruchsgruppen wird im Abschnitt mit Stakeholder gleichgesetzt.",
+      "Nur Großunternehmen ab 250 Beschäftigten haben Anspruchsgruppen; Kleinstunternehmen bleiben ohne solche Gruppen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Der Schlusssatz der Passage ist eine Zange. Viele Anspruchsgruppen haben Erwartungen an das Unternehmen, und an sie hat auch das Unternehmen Erwartungen. Pünktliche Arbeit, lieferbare Ware, zahlende Kundschaft, bereitgestelltes Kapital, tragfähige öffentliche Rahmen: das sind Gegenstücke zu Lohn, Bezahlung, günstigem Preis, Kapitalentwicklung und Standortqualität. Einseitig nur zu fordern, ohne zu leisten, sprengt diese Zange. Die Einleitung hatte denselben Gedanken schon als wechselseitige Beeinflussung formuliert; hier wird er als Erwartungslogik wiederholt. Der Satz gibt genau diese Gegenseitigkeit wieder.\n\nDie Aussage ist wahr.",
+      "Stakeholderstatus löscht die Gegenrichtung nicht. Der Betrieb erwartet von Beschäftigten Leistung, von Lieferanten Ware, von Kundinnen Abnahme, von Geldgebern Mittel, vom Standort verlässliche Bedingungen. Ein Verbot jeder Gegenleistung würde die Formulierung „an die auch das Unternehmen Erwartungen hat“ streichen. Anspruchsgruppe heißt Beziehung, nicht einseitige Alimentierung. Die absolute Sperre hält der Text nicht.\n\nDie Aussage ist falsch.",
+      "Die Aufzählung ist kumulativ gelesen die Landschaft der Stakeholder, nicht ein Menü mit nur einem Gang. Personal, Lieferanten, Kundschaft, Eigentümer samt Geldgebern, Gemeinde und Land stehen nacheinander. Einfluss auf mehrere Personengruppen und auf das Umfeld meint genau diese Breite. Wer nur die Kundschaft als Stakeholder zulässt, wiederholt die verengte Eigentümerfalle in anderer Gestalt. Der Satz nimmt die ganze Liste.\n\nDie Aussage ist wahr.",
+      "Klammern klären das Wort. Anspruchsgruppen (Stakeholder): der deutsche Begriff trägt die Bedeutung, die englische Entsprechung steht daneben. Der Abschnitt führt den Anglizismus nicht als Ersatztheorie ein, sondern als Synonym in Klammern. Prüfungsantworten dürfen beide verwenden, sofern sie dieselbe Gruppe meinen. Der Satz trifft diese Gleichsetzung.\n\nDie Aussage ist wahr.",
+      "Größe ändert die Existenz von Stakeholdern nicht. Die Passage steht vor der UGB-Definition und weit vor der KMU-Tabelle. Ein Kleinstbetrieb mit drei Personen hat trotzdem Personal oder zumindest Inhaberarbeit, Lieferanten, Kundschaft, oft eine Gemeinde. Die Schwelle 250 Beschäftigte sortiert Großunternehmen in der Größentabelle, nicht die Stakeholderdefinition. Die Verknüpfung beider Kapitelstellen ist eine Erfindung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.25",
+    "title": "Kleine Unternehmen in der Größentabelle",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kategorie der kleinen Unternehmen:",
+    "statements": [
+      "Kleine Unternehmen haben bis zu 49 Beschäftigte sowie Umsatz oder Bilanzsumme bis zu 10 Millionen Euro.",
+      "Ein Betrieb mit 8 Beschäftigten und 5 Millionen Euro Jahresumsatz bleibt nach der Tabelle ein Kleinstunternehmen.",
+      "Kleinstunternehmen und kleine Unternehmen sind in der Tabelle dieselbe Kategorie mit denselben Schwellen.",
+      "Ein Betrieb mit 40 Beschäftigten und 8 Millionen Euro Umsatz liegt innerhalb der Schwellen der kleinen Unternehmen.",
+      "Die finanziellen Größen der Kleinstzeile und der Kleinzeile unterscheiden sich: bis zu 2 Millionen Euro gegenüber bis zu 10 Millionen Euro bei Umsatz oder Bilanzsumme."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Die zweite Tabellenzeile nach den Kleinsten. Bis 49 Köpfe, Umsatz bis 10 Millionen Euro oder Bilanzsumme bis 10 Millionen Euro: das sind die kleinen Unternehmen. Darüber beginnt die mittlere Klasse mit höheren Schwellen. Die Kopplung Mitarbeiterzahl und finanzielle Größe gilt wie bei den Kleinsten: beide Dimensionen stehen in der Tabelle, verbunden über Umsatz oder Bilanzsumme. Steuerbestimmungen, Rechnungslegung und Förderung hängen an solchen Schwellen, deshalb ist die Zeile mehr als Statistik. Der Satz gibt die Kleinzeile wieder, ohne die EU-Empfehlung neu zu erzählen.\n\nDie Aussage ist wahr.",
+      "Acht Köpfe wären kleinstfähig, fünf Millionen Euro Umsatz nicht. Kleinst endet finanziell bei bis zu 2 Millionen Euro Umsatz oder Bilanzsumme. 5 Millionen sprengen diese Zeile und liegen in der Kleinzeile (bis 10 Millionen), sofern die übrigen Schwellen passen. Wer nur die Kopfzahl „bis 9“ liest, verfehlt die Oder-Spalte der Finanzen. Note: Mitarbeiterzahl allein klassifiziert in dieser Tabelle nicht.\n\nDie Aussage ist falsch.",
+      "Zwei Zeilen, zwei Schwellenbündel. Kleinst: bis 9 und bis 2 Millionen. Klein: bis 49 und bis 10 Millionen. Dieselbe Kategorie zu behaupten, würde Förder- und Rechnungslegungsschwellen, um derentwillen klassifiziert wird, unbrauchbar machen. Der Sammelbegriff KMU umfasst beide, die Tabelle trennt sie. Die Gleichsetzung widerspricht den Zeilen.\n\nDie Aussage ist falsch.",
+      "Vierzig Beschäftigte liegen unter 49, acht Millionen Euro unter 10 Millionen. Beides sitzt in der Kleinzeile, über den Kleinstgrenzen (9 Köpfe, 2 Millionen) und unter den Mittelgrenzen (249 Köpfe, 50 Millionen Umsatz bzw. 43 Millionen Bilanzsumme). Der Fall illustriert die kleine Kategorie ohne an die 250-Schwelle der Großen zu rühren. Der Satz ordnet die Zahlen der richtigen Zeile zu.\n\nDie Aussage ist wahr.",
+      "Zwei gegen zehn, das ist der finanzielle Sprung. Kleinstunternehmen bis 2 Millionen Euro Umsatz oder Bilanzsumme, kleine bis 10 Millionen. Die Mitarbeitergrenzen 9 gegen 49 laufen parallel. Wer die 2-Millionen-Grenze auf kleine Betriebe überträgt, stuft zu eng ein; wer 10 Millionen schon den Kleinsten gibt, stuft zu weit ein. Der Satz hält die Differenz der beiden Zeilen fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.26",
+    "title": "KMU in der EU und Umsatz unter einer Million",
+    "context": "Bewerten Sie die folgenden Aussagen zu KMU-Anteilen und zur Umsatzverteilung der Unternehmenszahl:",
+    "statements": [
+      "Rund 99 Prozent der Unternehmen in der EU sind KMU.",
+      "Ungefähr 85 Prozent der Unternehmen haben weniger als eine Million Euro Umsatz.",
+      "Aus der 85-Prozent-Angabe folgt, dass diese Betriebe über der Kleinstschwelle von 2 Millionen Euro Jahresumsatz liegen.",
+      "Die EU-Quote von rund 99 Prozent bedeutet, dass es in der Europäischen Union keine Großunternehmen gibt.",
+      "KMU als Sammelbegriff umfasst Kleinstunternehmen, kleine und mittlere Unternehmen unterhalb der Klasse der Großen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Europaweit dieselbe Anzahldominanz wie später in Österreich. Rund 99 Prozent der Unternehmen in der EU sind KMU, definiert in einer Empfehlung der Union. Das ist eine Aussage über die Zahl der Betriebe, nicht über 99 Prozent des Umsatzes oder der Beschäftigung. Große Konzerne bleiben die Ausnahme in der Zählung, nicht in jeder wirtschaftlichen Masse. Der Satz gibt die EU-Zahl des Abschnitts wieder. Österreichs ebenfalls rund 99 Prozent sitzen im nächsten Datenkasten und bestätigen das Bild für das Inland, ersetzen die europäische Angabe aber nicht.\n\nDie Aussage ist wahr.",
+      "Unter einer Million Euro Umsatz liegt die große Masse der Zählung. Ungefähr 85 Prozent der Unternehmen fallen in diese Umsatzklasse. Das ist enger als die Kleinstschwelle von 2 Millionen und beschreibt Kleinheit noch schärfer. Es ist eine Aussage über Anteile an der Unternehmenszahl, nicht über Anteile am gesamten Umsatz der gewerblichen Wirtschaft. Der Satz trifft die Buchangabe.\n\nDie Aussage ist wahr.",
+      "Weniger als eine Million liegt unter zwei Millionen, nicht darüber. Die 85 Prozent sind umsatzklein genug, um finanziell in die Kleinstzeile zu passen, sofern auch die Mitarbeitergrenze stimmt. Die Folgerung, sie lägen über der 2-Millionen-Kleinstschwelle, verdreht kleiner und größer. Wer 1 Million mit einem Überschreiten von 2 Millionen verwechselt, kann die Tabelle nicht anwenden. Die 85 Prozent messen die Zahl der Betriebe, nicht eine automatische Mittelklasse.\n\nDie Aussage ist falsch.",
+      "Rund 99 Prozent KMU lässt rund 1 Prozent Große. OMV, Strabag oder voestalpine existieren in Österreich und die Tabelle kennt die Klasse ab 250 Beschäftigten. Eine Welt ohne Großunternehmen folgt aus der Anzahldominanz nicht. Anzahl und Umsatzgewicht fallen auseinander, wie der österreichische Datenkasten mit dem Drittel der Großen am Umsatz zeigt. Die Absolute „keine Großunternehmen“ überzieht die 99-Prozent-Zahl.\n\nDie Aussage ist falsch.",
+      "Drei Klassen unter dem Dach KMU, die vierte heißt groß. Kleinst, klein, mittel ergeben das Kürzel; englisch SME bzw. MSME. Große beginnen in der Tabelle ab 250 Köpfen bzw. über den finanziellen Schwellen. Der Sammelbegriff ist genau deshalb nötig, weil Steuer, Rechnungslegung und Förderung an Größe hängen. Der Satz hält die Zusammensetzung fest, ohne die Schwellen neu auszurechnen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.27",
+    "title": "Umsatzstarke Großunternehmen in Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zu den umsatzgrößten Unternehmen Österreichs:",
+    "statements": [
+      "Zu den größten Unternehmen Österreichs gemessen am Umsatz zählen beispielsweise OMV AG, Porsche Holding GmbH und Strabag SE.",
+      "Die genannte Rangliste misst Größe am Umsatz, nicht an der bloßen Bekanntheit der Marke.",
+      "Weil KMU zahlenmäßig dominieren, können umsatzstarke Großunternehmen in Österreich nicht vorkommen.",
+      "Auch REWE International AG, Spar Österreichische Warenhandels AG, voestalpine AG, Mondi AG, ÖBB AG, Andritz AG und Red Bull GmbH nennt der Abschnitt in diesem Zusammenhang.",
+      "Die Zugehörigkeit zu dieser Umsatzspitze macht aus jedem genannten Konzern zwingend ein Kleinstunternehmen nach der EU-Tabelle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Namen als Illustration der Umsatzspitze, nicht als Pflicht, alle Firmennamen auswendig zu können. OMV, Porsche Holding und Strabag stehen am Beginn der Beispielreihe der größten Unternehmen Österreichs gemessen am Umsatz. Quelle im Text sind WKO und Statistik Austria für die umgebenden Relationen; die Namen konkretisieren, was größte am Umsatz heißt. Der Satz greift drei genannte Beispiele auf. Rechtsformen AG, GmbH und SE tauchen auf, gehören aber in den nächsten Abschnitt; hier zählt die Umsatzgröße, nicht die Eintragungstechnik und nicht die Markenwerbung.\n\nDie Aussage ist wahr.",
+      "Der Maßstab steht in der Klammer: gemessen am Umsatz. Bekanntheit, Mitarbeiterzahl oder Sektor allein ersetzen diese Messlatte in der Formulierung nicht. Ein kleiner Kultbetrieb kann bekannter sein als ein stiller Großhändler und trotzdem nicht in diese Spitze fallen. Der Datenkasten trennt Anzahldominanz der KMU von der Umsatzmasse der Großen. Der Satz hält den Maßstab fest.\n\nDie Aussage ist wahr.",
+      "99 Prozent der Anzahl lassen die restlichen Prozent als Große zu. Etwas mehr als ein Drittel der Umsatzerlöse erwirtschaften rund 1900 Großunternehmen. Genau deshalb können OMV oder Strabag umsatzstark sein, während fast alle Betriebe KMU bleiben. Die Folgerung „können nicht vorkommen“ vermengt Zählung der Firmen mit Existenz der Konzerne. Der Abschnitt stellt beide Beobachtungen nebeneinander.\n\nDie Aussage ist falsch.",
+      "Die Reihe geht weiter als drei Namen. REWE International, Spar, voestalpine, Mondi, ÖBB, Andritz und Red Bull stehen in derselben Aufzählung. Handel, Stahl, Papier, Bahn, Anlagenbau, Getränke: verschiedene Branchen, gemeinsames Merkmal Umsatzgröße. Der Satz bündelt die restlichen ausdrücklich genannten Beispiele, ohne eine nicht genannte Firma zu erfinden.\n\nDie Aussage ist wahr.",
+      "Kleinst heißt bis 9 Beschäftigte und bis 2 Millionen Euro Umsatz oder Bilanzsumme. Umsatzspitzen der österreichischen gewerblichen Wirtschaft liegen jenseits dieser Zeile und illustrieren Großunternehmen. Die EU-Tabelle und die Namensliste zusammenzulesen ergibt das Gegenteil von Kleinst. Die zwingende Kleinstetikettierung ist eine Verwechslung von Markenbekanntheit mit der untersten Größenklasse.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.28",
+    "title": "Nachfrage, Kosten und Gewinnabsicht",
+    "context": "Bewerten Sie die folgenden Aussagen zum Verhältnis von Einnahmen, Ausgaben und Gewinnabsicht:",
+    "statements": [
+      "Starke Kundennachfrage allein garantiert keinen Gewinn, wenn die Ausgaben die Einnahmen übersteigen.",
+      "woom und Manner werden durchaus mit einer Gewinnabsicht geführt, auch wenn sie das rechtlich nicht müssten, um als Unternehmen zu gelten.",
+      "Die übliche Leitlinie gewinnorientierter Betriebe ist nach dem Abschnitt allein die bloße Kostendeckung ohne jeden Überschuss.",
+      "Gewinne können reinvestiert werden und so die dauerhafte Leistungs- und Konkurrenzfähigkeit stützen.",
+      "Gewinn bedeutet buchhalterisch, Erträge und Aufwände stets exakt gleich hoch zu halten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gewinn ist eine Differenz, keine Besuchermenge. Mehr einnehmen als ausgeben, mehr Erträge als Aufwände: wenn die Kostenseite die Einnahmen überholt, bleibt trotz Andrang kein Gewinn. Wert und Nutzen können Kaufinteresse wecken und trotzdem die Rechnung nicht retten, sobald Betriebsmittel, Werkstoffe, Personal und Know-how teurer zu stehen kommen als die Erlöse. Starke Nachfrage erklärt Absatzchancen, nicht automatisch den Überschuss. Der Satz zieht die Vereinfachungsformel gegen die Falle, Nachfrage genüge. Note: Umsatz oder Absatzmenge sind nicht dieselbe Größe wie Gewinn.\n\nDie Aussage ist wahr.",
+      "Tatsächliche Absicht und rechtliche Pflicht fallen auseinander. Beide Beispielbetriebe werden mit Gewinnabsicht geführt; die UGB-Definition verlangt das nicht, weil die Tätigkeit nicht auf Gewinn gerichtet sein muss. Die Formulierung „auch wenn sie das nicht müssten“ ist die Pointe des Beispiels. Eine NPO kann Unternehmen sein, Manner bleibt trotzdem gewinnorientiert. Der Satz hält genau diese Doppelung fest.\n\nDie Aussage ist wahr.",
+      "Kostendeckung ist die primäre Orientierung der NPO, nicht die Leitlinie der Gewinnorientierten. woom und Manner sollen mehr einnehmen als ausgeben; Reinvestition von Gewinnen stützt Fortbestand und Konkurrenzfähigkeit. Bloße Deckung ohne Überschuss wäre die Untergrenze der Existenz (kostendeckend und zahlungsfähig), nicht das übliche Ziel der Gewinnabsicht. Die Verwechslung von NPO-Leitlinie und Gewinnbetrieb kehrt den Abschnitt um.\n\nDie Aussage ist falsch.",
+      "Wiederanlegen ist der Brückenmechanismus. Gewinne sind in der Regel wesentlich für den Fortbestand, weil sie ins Unternehmen zurückfließen können. So bleibt der Betrieb leistungs- und konkurrenzfähig und in Verlustphasen weniger überschuldungsgefährdet. Der Satz greift diese Verwendung, ohne zu behaupten, jeder Gewinn müsse zwingend vollständig innen bleiben. Ausschüttung und Reinvestition können nebeneinander stehen; der Text betont die zweite als Weg zum Fortbestand.\n\nDie Aussage ist wahr.",
+      "Gleichstand von Erträgen und Aufwänden ist Deckung, nicht Gewinn. Gewinn heißt mehr Erträge als Aufwände, also ein Überschuss. Exakte Gleichheit beschreibt die kostendeckende Grenze, an der betriebswirtschaftlich die Existenz noch tragen kann, aber kein Gewinn im Sinne der Vereinfachung entsteht. Die Gleichsetzung von Gewinn und Nullsaldo widerspricht „mehr … als“. Bei NPOs kann Kostendeckung die Leitlinie sein; das macht aus dem Nullsaldo trotzdem keinen Gewinnbegriff.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.29",
+    "title": "NPO zwischen Kostendeckung und Überschuss",
+    "context": "Eine als Non-Profit-Organisation geführte Beratungseinrichtung nimmt Spenden entgegen und legt gelegentliche Überschüsse wieder in das Angebot. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die primäre Orientierung bleibt die Kostendeckung, auch wenn buchhalterische Überschüsse entstehen und ins Angebot zurückfließen.",
+      "Spendengelder sind im Abschnitt ein Beispiel für Einnahmen, mit denen Ziele besser verfolgt werden können.",
+      "Ohne ausreichende Einnahmen verfolgt eine NPO ihre Ziele nach dem Text trotzdem stets gleich gut, weil Non-Profit jede Finanzierung überflüssig macht.",
+      "Reinvestierte Überschüsse können einer NPO helfen, das Angebot zu verbessern und auszubauen, ohne dass daraus zwingend Gewinnmaximierung als Zweck folgt.",
+      "Jeder Überschuss verwandelt die NPO rechtlich in ein Unternehmen, das auf Gewinnerzielung ausgerichtet sein muss."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Leitlinie und Buchungssaldo sind zwei Ebenen. Die NPO ist primär daran orientiert, kostendeckend zu arbeiten. Ein gelegentlicher Überschuss, der ins Angebot zurückfließt, ändert diese Orientierung nicht in Gewinnmaximierung. Der Abschnitt sagt ausdrücklich, NPOs profitierten von der Reinvestition von Gewinnen, weil sie Angebot verbessern und ausbauen. Gewinn meint hier den buchhalterischen Überschuss, nicht den Zweck der Organisation. Spenden können die Einnahmeseite tragen; der zurückgelegte Saldo trägt die Ausweitung der Aufgabe. Die Beratungseinrichtung bleibt NPO, solange Kostendeckung und Auftrag führen.\n\nDie Aussage ist wahr.",
+      "Spenden sind Zufluss, nicht Makel. Mit ausreichend Einnahmen, zum Beispiel Spendengeldern, verfolgt die NPO ihre Ziele besser und kommuniziert das Aufgabenspektrum besser an die Zielgruppe. Die Einrichtung im Fall darf also Spenden entgegennehmen, ohne deshalb Manner zu werden. Der Satz knüpft Handlungsfähigkeit an Mittel, wie der Text es tut.\n\nDie Aussage ist wahr.",
+      "Non-Profit heißt nicht finanzierungsfrei. Der Text koppelt bessere Zielverfolgung an ausreichende Einnahmen. Fehlen die Zuflüsse, bleibt Kostendeckung Theorie und die Kommunikation an die Zielgruppe schwächer. Die Behauptung, Non-Profit mache Finanzierung überflüssig und die Ziele blieben stets gleich gut erreichbar, widerspricht genau diesem Bedingungsgefüge. Ehrenamt ersetzt im Buchtext nicht die genannten Spendengelder als Beispiel.\n\nDie Aussage ist falsch.",
+      "Ausbauen ohne Zweckwechsel. Dieselbe Reinvestition, die gewinnorientierte Betriebe leistungsfähig hält, hilft NPOs beim Angebot. Der Zweck bleibt die Aufgabe gegenüber der Zielgruppe, nicht die maximale Ausschüttung. Deshalb kann die Beratungseinrichtung Überschüsse innen lassen, ohne die NPO-Konzeption aufzugeben. Der Satz trennt Mechanik (Zurücklegen) und Zweck (Non-Profit).\n\nDie Aussage ist wahr.",
+      "UGB verlangt keine Gewinnausrichtung. Ein Unternehmen ist jede auf Dauer angelegte Organisation selbständiger wirtschaftlicher Tätigkeit, mag sie auch nicht auf Gewinn gerichtet sein. Ein Überschuss ändert dieses dritte Merkmal nicht in eine Pflicht. Die NPO kann rechtlich Unternehmen bleiben und trotzdem nicht auf Gewinnerzielung ausgerichtet sein müssen. Die Verwandlungsbehauptung vermengt buchhalterischen Saldo und Legaldefinition.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.30",
+    "title": "Mehrere Sektoren, Energie und Handwerk",
+    "context": "Bewerten Sie die folgenden Aussagen zur Sektorzuordnung über die drei Kernbeispiele hinaus:",
+    "statements": [
+      "Ob ein Betrieb in einem oder in mehreren Wirtschaftssektoren tätig ist, richtet sich nach dem Unternehmensgegenstand.",
+      "Die Energiewirtschaft zählt der Abschnitt zum sekundären Sektor.",
+      "Das Handwerk gehört zusammen mit der gesamten Industrie zum sekundären Sektor.",
+      "Die Energiewirtschaft zählt zum primären Sektor, weil Strom aus natürlichen Ressourcen stammt.",
+      "Ein Unternehmen darf niemals in mehr als einem Wirtschaftssektor zugleich tätig sein."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Gegenstand vor Etikett, und der Plural ist erlaubt. In welchem Sektor bzw. in welchen Sektoren: die Formulierung lässt Mehrfachzugehörigkeit zu, wenn der Gegenstand das hergibt. Ein Betrieb kann fördern und verarbeiten oder herstellen und handeln. Rechtsform, Mitarbeiterzahl und Firmensitz ersetzen diese Prüfung nicht. Der Satz steht am Beginn des Sektorabschnitts und steuert alle folgenden Beispiele. woom bleibt sekundär wegen der Radproduktion, ein gemischter Gegenstand könnte zwei Sektoren tragen. Die spätere Branchenregel folgt derselben Logik des Tätigkeitsbereichs.\n\nDie Aussage ist wahr.",
+      "Energie neben Industrie und Handwerk. Der sekundäre Sektor produziert aus Rohstoffen Produkte und umfasst die gesamte Industrie, das Handwerk sowie die Energiewirtschaft. Stromerzeugung sitzt damit auf der Umwandlungsstufe, nicht bei der Erzgrube und nicht beim Beratungsbüro. Der Satz isoliert das dritte Element der sekundären Klammer, das in den Kernbeispielen woom und Manner leicht untergeht.\n\nDie Aussage ist wahr.",
+      "Handwerk ist sekundär, auch ohne Konzernformat. Tischlereien, Installateure, Elektriker und Schlosser erscheinen später als Branchenbeispiele des Handwerks; sektorlogisch bleiben sie bei der Herstellung aus Rohstoffen und Vorstoffen. Industrie plus Handwerk plus Energie bilden die sekundäre Klammer. Wer Handwerk in den Handel (tertiär) schiebt, verwechselt Werkstatt und Laden. Der Satz folgt der Sektordefinition.\n\nDie Aussage ist wahr.",
+      "Naturursprung macht noch keinen primären Sektor. Primär ist Rohstoffgewinnung: Land- und Forstwirtschaft, Fischerei, Bergbau. Sekundär ist die Umwandlung, und genau dort steht die Energiewirtschaft. Tourismus an der Landschaft ist tertiär; Energieerzeugung ist die andere Falle derselben Naturmetapher. Strom aus Wasser oder Wind bleibt in der Buchsystematik sekundär. Die Verschiebung ins Primäre vermischt Quelle und Umwandlung.\n\nDie Aussage ist falsch.",
+      "„Welchen Sektoren“ im Plural widerspricht dem Niemals. Der Gegenstand kann mehrere Sektoren füllen. Ein Unternehmen mit Sägewerk und Möbelfabrik oder mit Erzeugung und eigenem Handel wäre sonst gezwungen, eine Hälfte der Tätigkeit zu leugnen. Die Absolute ist eine Regel, die der Einleitungssatz nicht aufstellt. Branchenmehrfachzugehörigkeit folgt später derselben Logik des Tätigkeitsbereichs.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.31",
+    "title": "Forst, Fischerei, Bau und Handwerkssparten",
+    "context": "Bewerten Sie die folgenden Aussagen zu feineren Zuordnungen in Sektoren und Branchen:",
+    "statements": [
+      "Forstwirtschaft und Fischerei gehören zur Rohstoffgewinnung des primären Sektors.",
+      "Die Errichtung von Gebäuden illustriert die Baubranche.",
+      "Tischlereien, Installateure, Elektriker und Schlosser konkretisieren das Handwerk als Branche.",
+      "Großhandel und Einzelhandel nennt der Abschnitt als Ausprägungen der Handelsbranche.",
+      "Die Gastronomie zählt im Abschnitt zum Bergbau und damit zum primären Sektor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Vier Felder der Gewinnung, zwei davon oft übersehen. Neben Landwirtschaft und Bergbau stehen Forstwirtschaft und Fischerei in der Klammer des primären Sektors. Holz einschlagen und Fische fangen bleiben Rohstoffgewinnung, auch wenn später Möbel oder Filets entstehen. Die Weiterverarbeitung wandert erst dann in den sekundären Sektor, so wie Erzgewinnung primär und Metallerzeugung sekundär getrennt sind. Der Satz holt die beiden mittleren Glieder der Definition nach, ohne Anbau und Ernte von Früchten noch einmal als einzigen Beleg zu brauchen oder den Forst zur Möbelindustrie umzuetikettieren.\n\nDie Aussage ist wahr.",
+      "Bau ist Branche, nicht bloß ein Synonym für den sekundären Sektor insgesamt. Die Errichtung von Gebäuden steht als Klammerbeispiel der Baubranche. Innerhalb einer Branche ähneln sich Leistungen; Hoch- und verwandtes Bauen gehören zusammen. Sektoral liegt vieles davon im sekundären Bereich, die Branchenetikette ist trotzdem Bau. Der Satz trifft das erste Branchenbeispiel des Textes.\n\nDie Aussage ist wahr.",
+      "Vier Gewerke, eine Branche. Tischlereien, Installateure, Elektriker und Schlosser stehen in der Handwerksklammer. Ähnliche handwerkliche Leistungen binden sie, nicht dieselbe Rechtsform. Interessensvertretungen folgen oft genau solcher Branchenlogik, weil Herausforderungen sich ähneln. Der Satz füllt das Handwerk mit den genannten Sparten statt mit einer leeren Überschrift.\n\nDie Aussage ist wahr.",
+      "Handel spaltet sich im Text in Groß- und Einzelhandel. Beides bleibt tertiär als Dienstleistung der Vermittlung, nicht sekundär als Herstellung. Der Fahrradhändler mit woom im Sortiment war das Sektorbeispiel; hier wird die Branche intern differenziert. Der Satz gibt beide genannten Handelsstufen wieder. Pharma, Telekommunikation, Tourismus, Gastronomie, Verkehr und Logistik sowie Medien stehen als weitere Branchen daneben, ersetzen aber nicht diese Binnenteilung des Handels.\n\nDie Aussage ist wahr.",
+      "Gastronomie ist eine genannte Branche der Leistungen rund um Bewirtung, nicht Erzabbau. Bergbau bleibt primäre Rohstoffgewinnung. Wer Küche und Mine gleichsetzt, verwechselt zwei völlig getrennte Listen: Sektordefinition gegen Branchenbeispiele. Gastronomie sitzt neben Tourismus und Handel im Dienstleistungsfeld. Die Zuordnung zum Bergbau ist sachfremd zum Text.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.32",
+    "title": "Größe, Sektor und Standortansprüche",
+    "context": "Bewerten Sie die folgenden Aussagen, die Größenklassen, Sektoren und Anspruchsgruppen verknüpfen:",
+    "statements": [
+      "Die Anzahldominanz der KMU schließt nicht aus, dass umsatzstarke Betriebe wie die voestalpine AG den sekundären Sektor mitprägen.",
+      "Weil der tertiäre Sektor in Österreich rund 70 Prozent der Wirtschaftsleistung trägt, ist eine Stahlproduktion dem tertiären Sektor zuzurechnen.",
+      "Die Standortgemeinde erwartet Arbeitsplätze und Abgaben zugleich mit Pflichterfüllung, Umweltsorgfalt und sozialer Verantwortung.",
+      "Kleinstunternehmen nach der Tabelle und die umsatzgrößten Konzerne Österreichs fallen in dieselbe Größenklasse.",
+      "Ein Unternehmen kann mehreren Branchen zugeordnet werden, während die Sektorzugehörigkeit dem Unternehmensgegenstand folgt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Schnitte, ein Land. Fast alle Unternehmen sind KMU, doch voestalpine steht in der Liste der umsatzgrößten Betriebe und erzeugt Metalle, also sekundär. Anzahl der Firmen und wirtschaftliches Gewicht fallen auseinander; Sektor folgt dem Gegenstand, nicht dem KMU-Anteil. Stahl aus Erz ist die Buchbrücke vom primären Bergbau zur sekundären Hütte. Rund zwei Drittel der Erwerbstätigen in KMU und knapp unter zwei Drittel der Umsätze der gewerblichen Wirtschaft ändern diese Zuordnung nicht. Der Satz hält die Koexistenz von kleinbetrieblicher Zählung und industriellem Großbetrieb fest.\n\nDie Aussage ist wahr.",
+      "Makroanteil ist kein Firmenschild. Rund 70 Prozent tertiär beschreiben die österreichische Wirtschaftsleistung insgesamt. voestalpine bleibt Metallerzeugung, also sekundär, so wie Manner Waffeln backt und woom Räder baut. Der Durchschnitt der Volkswirtschaft etikettiert nicht jede einzelne Produktion um. Sonst wäre in einem dienstleistungsreichen Land jede Hütte ein Beratungsbüro. Die Verwechslung von Aggregat und Gegenstand ist dieselbe Falle wie bei woom und Manner, hier an der Stahlproduktion.\n\nDie Aussage ist falsch.",
+      "Die öffentliche Zeile ist ein Bündel, kein Einzelpunkt. Profit durch Jobs und Abgaben, Nachkommen finanzieller und anderer Verpflichtungen, sorgsamer Umweltumgang, soziale Verantwortung gegenüber der Gesellschaft: alles Erwartungen von Gemeinde und Land. Wer nur die Lohnsumme zählt oder nur eine Nachhaltigkeitsbroschüre, erfüllt die Liste nicht vollständig. Stakeholder am Standort sind damit breiter als die Steuerkasse. Der Satz liest die Zeile kumulativ, wie der Text sie schreibt.\n\nDie Aussage ist wahr.",
+      "Unterste und oberste Zeile der Größe. Kleinst: bis 9 Beschäftigte, bis 2 Millionen Euro Umsatz oder Bilanzsumme. Die Umsatzspitze mit OMV, Strabag oder Red Bull illustriert Großunternehmen, ab 250 Köpfen bzw. über 50 Millionen Euro Umsatz oder 43 Millionen Euro Bilanzsumme. Dieselbe Klasse zu behaupten, macht die Klassifizierung für Steuer, Rechnungslegung und Förderung wertlos. Anzahl der KMU erklärt nicht, warum die Tabelle vier Zeilen braucht. Die Gleichsetzung ist falsch.\n\nDie Aussage ist falsch.",
+      "Zwei Zuordnungsregeln, verwandt im Plural. Der Tätigkeitsbereich bestimmt die Branche oder die Branchen; der Unternehmensgegenstand bestimmt den Sektor oder die Sektoren. Ähnliche Produkte bzw. Leistungen binden den Wirtschaftszweig; Rohstoffgewinnung, Herstellung oder Dienstleistung binden den Sektor. Ein Handels- und Handwerksbetrieb kann zwei Branchen tragen und tertiär plus sekundär berühren. Der Satz koppelt beide Buchregeln, ohne Größe oder Rechtsform an ihre Stelle zu setzen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

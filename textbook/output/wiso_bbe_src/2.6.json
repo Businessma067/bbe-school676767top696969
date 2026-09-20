@@ -1,0 +1,1010 @@
+[
+  {
+    "title": "Markets as Exchange Mechanisms",
+    "statements": [
+      "Voluntary exchange in a market occurs when both parties expect to gain from the trade.",
+      "A market requires face-to-face bargaining and excludes nationwide online listings.",
+      "A market exists only where a government agency sets every transaction price.",
+      "Prices in a market serve only as receipts and carry no information about scarcity.",
+      "Repair workshops cannot form a market because their output is intangible advice."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.01",
+    "context": "Analyze how buyers and sellers interact through prices to allocate goods and services. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Vienna Naschmarkt Stallholders",
+    "statements": [
+      "Weekend crowds willing to pay more can raise equilibrium price for fresh herbs at the stall.",
+      "A wholesale cost increase may reduce quantity supplied at each price unless the stall raises its selling price.",
+      "A price above equilibrium clears the stall faster because buyers prefer costlier herbs.",
+      "Nearby competing stalls remove all price constraints because each seller sets prices independently.",
+      "Rising Saturday demand forces the stallholder to cut prices to attract more visitors."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.02",
+    "context": "Consider a Vienna Naschmarkt stallholder who adjusts herb prices as weekend foot traffic and wholesale costs shift. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "The Law of Demand",
+    "statements": [
+      "The demand curve slopes downward because marginal buyers drop out as price increases.",
+      "Ceteris paribus means other demand shifters such as income are held constant when price changes.",
+      "Higher concert ticket prices increase quantity demanded because buyers treat tickets as prestige goods.",
+      "Lower coat prices reduce quantity demanded because buyers expect inferior quality.",
+      "The law of demand states that quantity demanded rises whenever price rises."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.03",
+    "context": "Analyze the inverse relationship between a good's price and the quantity buyers are willing to purchase. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Demand Schedules and Curves",
+    "statements": [
+      "Quantity demanded refers to a specific amount at a specific price, not the entire curve.",
+      "Plotting a demand schedule yields an upward-sloping curve matching the law of supply.",
+      "A demand schedule lists quantities suppliers would offer at successive prices.",
+      "Movement along a demand curve results from a change in consumer income.",
+      "Quantity demanded remains fixed at every price because buyers must purchase essentials."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.04",
+    "context": "Review how a demand schedule maps prices to quantities and traces a downward-sloping demand curve. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Innsbruck Ski Equipment Hire",
+    "statements": [
+      "Heavy snowfall forecasts can shift demand rightward for hire equipment independently of the posted daily rate.",
+      "Higher rental rates increase quantity demanded because holiday visitors budget more for equipment.",
+      "Competing discounts nearby leave quantity demanded unchanged because customers ignore substitutes.",
+      "Charging above equilibrium clears inventory faster because customers prefer scarce rentals.",
+      "Peak-season demand shifts always lower equilibrium rental rates to attract tourists."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.05",
+    "context": "Consider an Innsbruck ski-hire shop that raises daily rental rates during peak holiday weeks. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "The Law of Supply",
+    "statements": [
+      "The law of supply states that, other things equal, quantity supplied rises when price rises.",
+      "The supply curve slopes upward because buyers demand more whenever sellers cut output.",
+      "At low prices producers supply maximum output to recover fixed costs quickly.",
+      "Movement along a supply curve reflects a change in technology holding price fixed.",
+      "Higher wheat prices reduce quantity supplied because farming costs rise with crop value."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.06",
+    "context": "Analyze the direct relationship between a good's price and the quantity producers are willing to offer. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Supply Schedules and Curves",
+    "statements": [
+      "Plotting a supply schedule yields an upward-sloping curve in price–quantity space.",
+      "Quantity supplied and supply are identical terms for the entire curve.",
+      "Producers supply less at higher prices because profit margins shrink on every unit.",
+      "A supply schedule lists quantities buyers would purchase at successive prices.",
+      "A price increase shifts the entire supply curve leftward without changing quantity supplied."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.07",
+    "context": "Review how a supply schedule maps prices to quantities and traces an upward-sloping supply curve. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Graz Bakery Morning Rush",
+    "statements": [
+      "When supply and demand intersect, the bakery neither systematically runs out nor piles up unsold rolls.",
+      "Early office meetings shift supply rightward because bakeries open earlier without demand changing.",
+      "A flour price spike shifts demand rightward because customers seek cheaper carbohydrates.",
+      "Pricing above equilibrium sells out faster because customers interpret higher price as higher quality.",
+      "Higher bread prices reduce morning output because expensive flour discourages baking."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.08",
+    "context": "Consider a Graz bakery that bakes extra bread before dawn when a nearby office tower schedules early meetings. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Market Equilibrium",
+    "statements": [
+      "Graphically, equilibrium occurs where the demand and supply curves intersect.",
+      "Equilibrium price is where quantity demanded equals quantity supplied in a market.",
+      "At equilibrium, there is no tendency for price to change from ongoing pressure of surplus or shortage.",
+      "Markets tend toward equilibrium as price adjustments reduce surplus or shortage.",
+      "The equilibrium quantity is the amount actually traded when supply matches demand."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.09",
+    "context": "Analyze the price and quantity at which quantity demanded equals quantity supplied. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Adjusting Toward Equilibrium",
+    "statements": [
+      "If price is below equilibrium, quantity demanded exceeds quantity supplied, creating shortage.",
+      "A shortage at the current price puts upward pressure on price as buyers compete for limited goods.",
+      "A surplus at the current price puts downward pressure on price as sellers compete to attract buyers.",
+      "If price is above equilibrium, quantity supplied exceeds quantity demanded, creating surplus.",
+      "Competitive markets use price changes to coordinate plans when quantities demanded and supplied diverge."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.10",
+    "context": "Review how surpluses and shortages prompt price changes that move markets toward equilibrium. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Linz Rental Housing Listings",
+    "statements": [
+      "At equilibrium rent, the number of vacant units neither grows nor shrinks persistently across weeks.",
+      "New apartment construction shifting supply rightward can lower equilibrium rent if demand stays fixed.",
+      "Cutting asking rent reduces quantity demanded because tenants prefer costlier apartments.",
+      "Vacant flats persisting for weeks prove asking rent is below equilibrium because tenants avoid cheap flats.",
+      "Heavy tenant competition always lowers equilibrium rent because landlords fear regulation."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.11",
+    "context": "Consider Linz landlords listing flats who cut asking rents when units sit vacant for several weeks. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Surplus in Product Markets",
+    "statements": [
+      "A surplus exists when quantity supplied exceeds quantity demanded at the prevailing price.",
+      "Surplus puts downward pressure on price because sellers compete to reduce excess stock.",
+      "Price above equilibrium is consistent with shortage because buyers crave expensive goods.",
+      "Rapid sell-outs and empty shelves typically signal a surplus at the current price.",
+      "A harvest bumper crop eliminates surplus because larger supply always matches demand exactly."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.12",
+    "context": "Analyze conditions where quantity supplied exceeds quantity demanded at a given price. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Shortage in Product Markets",
+    "statements": [
+      "Long queues and rapid sell-outs often signal a shortage at the posted price.",
+      "A price ceiling set below equilibrium can create persistent shortage in a competitive market.",
+      "At a price below equilibrium, quantity demanded exceeds quantity supplied until price adjusts.",
+      "Shortage puts upward pressure on price as buyers compete for limited available units.",
+      "A shortage exists when quantity supplied exceeds quantity demanded at the prevailing price."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.13",
+    "context": "Review conditions where quantity demanded exceeds quantity supplied at a given price. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Salzburg Festival Ticket Queue",
+    "statements": [
+      "Minutes-long sell-outs at the posted price suggest quantity demanded exceeds quantity supplied.",
+      "Overnight queues form when buyers expect shortage at the official price.",
+      "Persistent shortage forces resellers to cut prices below the sold-out official rate.",
+      "Adding extra performances shifts demand leftward because audiences dislike additional shows.",
+      "Raising the official ticket price increases shortage because fewer buyers withdraw."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.14",
+    "context": "Consider Salzburg festival-goers queuing overnight when discounted early-bird tickets sell out within minutes. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Income as a Demand Shifter",
+    "statements": [
+      "Income changes shift the entire demand curve rather than moving along it.",
+      "For inferior goods, rising income can shift demand leftward as buyers switch to higher-quality substitutes.",
+      "A recession reducing household income shifts demand rightward for discretionary electronics.",
+      "Higher consumer income shifts demand leftward for normal goods because buyers save everything.",
+      "A pay rise for office workers lowers equilibrium coffee price because richer buyers demand discounts."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.15",
+    "context": "Analyze how changes in consumer income shift demand for normal and inferior goods. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Tastes and Preferences",
+    "statements": [
+      "Advertising that increases brand preference shifts demand rightward for the advertised good.",
+      "Seasonal fashion trends shifting tastes can change equilibrium clothing prices within a year.",
+      "A health trend favouring oat milk can shift demand rightward for oat beverages at each price.",
+      "When substitutes become fashionable, demand for the original good may shift leftward.",
+      "Negative publicity about a product shifts supply leftward because producers feel discouraged."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.16",
+    "context": "Review how changing consumer tastes and preferences shift the demand curve. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Styrian Wine Tasting Boom",
+    "statements": [
+      "Surging visitor demand with limited tour slots can create shortage at the posted tasting price.",
+      "Award publicity can shift demand rightward for regional wine tastings at unchanged ticket prices.",
+      "Higher equilibrium tasting fees may result if demand shifts right while supply remains constrained.",
+      "Raising tasting fees can reduce shortage by lowering quantity demanded along the demand curve.",
+      "Expanded visiting hours shift demand leftward because tourists dislike longer schedules."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.17",
+    "context": "Consider a Styrian wine route that sees surging visitor numbers after international tasting awards. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Prices of Substitute Goods",
+    "statements": [
+      "Firms monitor substitute pricing because cross-price shifts alter their equilibrium sales.",
+      "Substitute price changes shift demand rather than causing movement along the demand curve.",
+      "Cheaper streaming subscriptions may shift demand leftward for cinema tickets.",
+      "Coffee shops see lower demand when nearby tea prices increase because beverages are complements.",
+      "A rise in petrol prices shifts demand leftward for public transport because travel becomes undesirable."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.18",
+    "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Prices of Complementary Goods",
+    "statements": [
+      "A rise in game console prices may shift demand leftward for compatible game titles.",
+      "When complements become costlier, equilibrium quantity of the paired good may fall.",
+      "Reduced air fares can shift demand rightward for airport parking and hotel rooms near terminals.",
+      "Lower printer prices can shift demand rightward for ink cartridges.",
+      "Complementary price changes shift demand for the related good, not supply directly."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.19",
+    "context": "Review how the price of complementary goods shifts demand for a related product. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Electric Bus Fleet Procurement",
+    "statements": [
+      "Higher diesel costs can shift demand rightward for electric buses as substitutes become costlier.",
+      "A subsidy lowering effective purchase price shifts demand rightward for electric buses.",
+      "Expanded battery production shifting supply rightward can reduce equilibrium electric bus prices.",
+      "If electric bus prices stay fixed while demand shifts right, surplus appears at current contract offers.",
+      "At equilibrium contract price, manufacturers deliver buses cities refuse to operate."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.20",
+    "context": "Consider a municipal transport office comparing electric bus bids after diesel fuel costs spike. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Input Costs and Supply",
+    "statements": [
+      "When energy costs surge, equilibrium price may rise if demand remains unchanged.",
+      "Higher wages paid to warehouse staff can shift supply leftward for distribution services.",
+      "Cheaper imported components can shift supply rightward and lower equilibrium price.",
+      "Input cost changes move producers along the supply curve without shifting it.",
+      "A drop in steel prices shifts demand leftward because buyers expect weaker furniture."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.21",
+    "context": "Analyze how changes in production costs shift the supply curve. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Technology and Productivity",
+    "statements": [
+      "Technological progress that cuts unit cost shifts supply rightward, not leftward.",
+      "Improved irrigation technology may shift supply rightward for orchard fruit at each market price.",
+      "Automated sorting equipment can shift supply rightward for parcel delivery services.",
+      "Technology changes are supply shifters distinct from movements caused by the good's own price.",
+      "Rightward supply shifts from technology raise equilibrium price when demand is unchanged."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.22",
+    "context": "Review how technological improvements shift supply by lowering production costs. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Plant Capacity Expansion",
+    "statements": [
+      "If demand stays fixed while supply shifts right, equilibrium price may fall.",
+      "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
+      "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
+      "Customers ordering the product face lower shortage risk after a successful supply expansion.",
+      "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.23",
+    "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Number of Sellers in a Market",
+    "statements": [
+      "New bakeries opening on the same street shift supply rightward for local bread.",
+      "Exit of several suppliers during a crisis can create shortage at previously stable prices.",
+      "Entry of low-cost online retailers can lower equilibrium prices for standardised goods.",
+      "Farmers exiting a crop after poor seasons shift supply leftward for that harvest.",
+      "Market supply equals the largest individual seller's supply ignoring smaller rivals."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.24",
+    "context": "Analyze how entry or exit of sellers shifts market supply. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Producer Expectations and Supply",
+    "statements": [
+      "If producers expect costs to fall next month, some may delay production, shifting current supply leftward.",
+      "Expected future shortages motivate producers to halt current output entirely.",
+      "Expectations of higher future wheat prices increase current supply as farmers dump inventory.",
+      "Expectations about future conditions move producers along today's supply curve only.",
+      "Storage decisions based on future price outlook leave current market supply unchanged."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.25",
+    "context": "Review how sellers' expectations about future prices influence current supply decisions. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Harvest Season Labour Contracts",
+    "statements": [
+      "Expectations of a large harvest can shift supply rightward for contract picker labour in August.",
+      "Timely contract signing before peak harvest can reduce later shortage when sugar levels spike.",
+      "If offered wages sit below equilibrium, vineyards may face shortage of available pickers.",
+      "Competing fruit regions raising wages may shift supply leftward for pickers in Styria.",
+      "Higher offered day rates typically increase the quantity of pickers willing to supply labour."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.26",
+    "context": "Consider Styrian vineyards signing seasonal picker contracts before grape sugar levels peak. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Simultaneous Demand and Supply Shifts",
+    "statements": [
+      "The net effect on equilibrium price depends on the relative size of demand and supply shifts.",
+      "Graphical analysis compares new intersection points to identify changed equilibrium outcomes.",
+      "If demand shifts right while supply shifts left, equilibrium price is likely to rise.",
+      "If demand shifts right and supply shifts right together, equilibrium quantity rises.",
+      "Supply and demand shifts can occur together after a natural disaster disrupts production and tastes."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.27",
+    "context": "Analyze how concurrent shifts in demand and supply affect equilibrium price and quantity. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Price Ceilings Below Equilibrium",
+    "statements": [
+      "Non-price rationing such as queues may appear when ceilings create persistent shortage.",
+      "A ceiling set above equilibrium is not binding because market price stays below the cap.",
+      "Rent controls set below market equilibrium can leave landlords with fewer units to lease.",
+      "At the ceiling price, quantity supplied typically exceeds quantity demanded.",
+      "A price ceiling below equilibrium prevents price from falling to eliminate surplus."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.28",
+    "context": "Review how a legal maximum price set below equilibrium creates shortage in competitive markets. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Graz Rent-Control Apartment Search",
+    "statements": [
+      "Long waiting lists for controlled units signal excess demand at the regulated rent.",
+      "Controlled rents below open-market levels can create persistent shortage of available flats.",
+      "Landlords may redirect maintenance spending when regulated rents cover rising costs poorly.",
+      "Tenants ignore non-price costs when money rents stay capped because flats are abundant.",
+      "Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.29",
+    "context": "Consider Graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Price Floors Above Equilibrium",
+    "statements": [
+      "A price floor above equilibrium prevents price from falling to eliminate surplus.",
+      "Government purchase programs sometimes accompany agricultural price floors to absorb surplus.",
+      "At the floor price, quantity supplied typically exceeds quantity demanded.",
+      "A floor set below equilibrium is not binding because market price stays above the minimum.",
+      "Minimum prices intended to help sellers eliminate all unsold stock immediately."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.30",
+    "context": "Analyze how a legal minimum price set above equilibrium creates surplus in competitive markets. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Minimum Wage in Labour Markets",
+    "statements": [
+      "Labour markets use wages as prices coordinating workers' supply and employers' demand.",
+      "Employers reduce quantity demanded of labour when mandatory wages rise above equilibrium.",
+      "A minimum wage set below equilibrium is not binding for market outcomes.",
+      "A minimum wage above the market-clearing wage eliminates all unemployment immediately.",
+      "At a binding minimum wage, every worker willing to work finds employment instantly."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.31",
+    "context": "Review how a wage floor above equilibrium can create surplus labour supplied. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Alpine Dairy Milk Quota Meeting",
+    "statements": [
+      "Higher feed costs can shift supply leftward for raw milk at each farmgate price.",
+      "Cutting quota levels after a glut can help move the market toward equilibrium by reducing surplus.",
+      "If farmgate price stays fixed while feed costs rise, farmers expand output to celebrate.",
+      "A cooperative quota limiting deliveries increases quantity supplied by forcing extra production.",
+      "Surging milk output without matching demand creates shortage at the old farmgate price."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.32",
+    "context": "Consider an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Inflation as Rising Price Levels",
+    "statements": [
+      "Inflation is measured using price indices that track many goods and services together.",
+      "Central banks often monitor inflation when setting policies that influence interest rates.",
+      "Households purchasing the same basket notice inflation when that basket costs more over time.",
+      "Moderate inflation reduces the real purchasing power of money held without interest.",
+      "Inflation describes a one-day sale discount on a single retail product."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.33",
+    "context": "Analyze inflation as a sustained increase in the overall price level across an economy. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Too Much Money Chasing Goods",
+    "statements": [
+      "Inflation from monetary expansion differs from a single crop failure raising one food price.",
+      "If everyone spends newly printed money quickly, aggregate demand can rise faster than supply.",
+      "Inflation may accelerate when money supply growth outpaces growth in real output.",
+      "Holding other factors fixed, larger money supply reduces spending pressure on limited goods.",
+      "Too much money chasing too few goods explains deflation in monetary economics."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.34",
+    "context": "Review the explanation that inflation can result when too much money pursues available goods and services. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Central Bank Note-Issuance Debate",
+    "statements": [
+      "Shopkeepers reporting broadly rising supplier invoices suggest upward pressure on the price level.",
+      "Inflation erodes the real value of cash savings when prices rise faster than interest earned.",
+      "Funding repairs through new money may increase spending before additional goods and services appear.",
+      "Rapid note issuance without matching output growth can contribute to inflationary pressure.",
+      "Policymakers weighing note issuance must consider whether output can absorb extra spending."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.35",
+    "context": "Consider policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Interest Rates and Inflation Control",
+    "statements": [
+      "Higher interest rates can reduce borrowing and spending, easing inflationary demand pressure.",
+      "Higher rates reward saving and can shift spending from today to later periods.",
+      "Interest rate increases operate partly by making loans for homes and equipment more expensive.",
+      "Monetary tightening through higher rates aims to align money growth with sustainable output.",
+      "Central banks may raise policy rates when inflation persistently exceeds target."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.36",
+    "context": "Analyze how raising interest rates can be used to reduce inflationary pressure. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Tightening Monetary Policy",
+    "statements": [
+      "Higher mortgage rates following policy tightening can reduce quantity demanded for new housing loans.",
+      "Central banks face a trade-off timing challenge because rate effects appear with lags.",
+      "Tightening monetary policy typically involves raising key interest rates or reducing money growth.",
+      "Business investment accelerates when higher rates raise the cost of financed equipment purchases.",
+      "Policy tightening can never reduce inflation because spending is fixed."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.37",
+    "context": "Review how central banks tighten policy by raising interest rates to combat inflation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Vienna Mortgage Rate Shopping",
+    "statements": [
+      "Higher saving returns after rate rises may shift some spending from consumption to deposits.",
+      "Postponing a flat purchase reduces current quantity demanded for housing credit.",
+      "Central bank rate rises aim to accelerate spending that contributes to inflation.",
+      "If many households delay purchases, equilibrium home prices rise because fewer buyers compete.",
+      "Higher mortgage reference rates reduce monthly borrowing costs for a given loan amount."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.38",
+    "context": "Consider a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Demand Increase at Equilibrium",
+    "statements": [
+      "Graphically, a demand shift right moves equilibrium up along an upward-sloping supply curve.",
+      "Producers respond to higher equilibrium price by reducing quantity supplied along the supply curve.",
+      "More buyers entering a market moves buyers along the demand curve without shifting it.",
+      "A rightward demand shift with unchanged supply lowers both equilibrium price and quantity.",
+      "After demand increases, quantity demanded stays below quantity supplied permanently."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.39",
+    "context": "Analyze how a rightward demand shift raises equilibrium price and quantity when supply is upward sloping. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Supply Decrease at Equilibrium",
+    "statements": [
+      "At the new equilibrium after supply falls, quantity demanded equals the reduced quantity supplied.",
+      "Buyers facing higher prices reduce quantity demanded along the demand curve after supply falls.",
+      "A leftward supply shift with unchanged demand typically raises equilibrium price and lowers quantity.",
+      "Production disruptions can shift supply leftward even when buyer preferences stay constant.",
+      "Graphically, a supply shift left moves equilibrium up along a downward-sloping demand curve."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.40",
+    "context": "Review how a leftward supply shift raises equilibrium price and lowers equilibrium quantity. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Population Growth and Market Demand",
+    "statements": [
+      "Markets adjust through price when population growth increases quantity demanded at old prices.",
+      "Population growth in a city can shift demand rightward for public transport services.",
+      "Immigration increasing local consumers can raise equilibrium apartment rents if housing supply is slow.",
+      "Demographic changes move buyers along the demand curve without shifting it.",
+      "A shrinking town population shifts demand rightward because remaining residents spend more."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.41",
+    "context": "Analyze how population changes shift market demand for goods and services. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Taxes on Producers and Supply",
+    "statements": [
+      "A per-unit tax on producers raises effective production cost and can shift supply leftward.",
+      "The statutory incidence on producers can reduce market quantity below the prior equilibrium.",
+      "After a producer tax, sellers require lower prices to supply the same quantity as before.",
+      "Equilibrium price paid by buyers falls when producer taxes reduce quantity supplied.",
+      "Producer taxes move sellers along the supply curve without shifting it."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.42",
+    "context": "Review how taxes levied on sellers can shift supply leftward. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Subsidies to Producers and Supply",
+    "statements": [
+      "Subsidised farmers may supply more output at each market price after receiving per-unit payments.",
+      "Rightward supply shifts from subsidies raise equilibrium price if demand stays unchanged.",
+      "Subsidies differ from price ceilings because both cap buyer prices identically.",
+      "Taxpayer-funded subsidies reduce quantity supplied at each price by confusing producers.",
+      "Production subsidies lowering effective costs shift demand leftward for the subsidised good."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.43",
+    "context": "Analyze how payments to producers can shift supply rightward. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Weather Shocks and Agricultural Supply",
+    "statements": [
+      "Drought reducing crop yields shifts supply leftward for affected harvests at each price.",
+      "Importers may partially offset domestic supply shifts by increasing quantity supplied from abroad.",
+      "Short-run food markets may show sharp price spikes after sudden supply leftward shifts.",
+      "Frost damaging orchards can raise equilibrium fruit prices if demand remains largely unchanged.",
+      "Weather shocks are demand-side events identical to changes in consumer tastes."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.44",
+    "context": "Review how adverse weather can shift agricultural supply leftward. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Consumer Expectations and Demand",
+    "statements": [
+      "If buyers expect prices to fall next month, current quantity demanded may decrease today.",
+      "Expectations of higher future petrol prices can shift current demand rightward as drivers stock up.",
+      "Expected future income growth may shift current demand rightward for durable goods like appliances.",
+      "Expectations about future conditions move buyers along the demand curve only.",
+      "Panic buying before announced rationing reflects a leftward demand shift at unchanged official prices."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.45",
+    "context": "Analyze how expectations about future prices or income shift current demand. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Labour Market Wage Adjustment",
+    "statements": [
+      "Labour market equilibrium occurs where quantity supplied of labour equals quantity demanded.",
+      "Competition among employers for scarce workers can bid wages up toward labour market equilibrium.",
+      "Higher wages typically reduce quantity supplied of labour as workers reject paid work.",
+      "Skill shortages in tech hiring resemble goods surpluses with downward wage pressure.",
+      "Employers hire more workers when wages rise above the value of marginal output at the margin."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.46",
+    "context": "Review how wages coordinate quantity supplied and demanded of labour like prices in goods markets. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Global Supply Chain Disruption",
+    "statements": [
+      "Domestic equilibrium price may rise when import supply falls while demand stays constant.",
+      "Global markets isolate domestic equilibrium from supply shocks abroad completely.",
+      "Firms may seek alternate suppliers over time, shifting demand leftward permanently.",
+      "Port closures delaying imports shift demand rightward for components used in domestic assembly.",
+      "Shortages of imported parts increase quantity supplied of finished goods domestically."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.47",
+    "context": "Analyze how international supply disruptions shift domestic market supply. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Integrated Market Mechanisms Review",
+    "statements": [
+      "Understanding markets requires separating movement along curves from shifts caused by other factors.",
+      "Inflation linked to excessive money growth may be addressed by tighter policy raising interest rates.",
+      "Price ceilings below equilibrium create shortage; price floors above equilibrium create surplus.",
+      "Demand shifters include income, tastes, and substitute prices; supply shifters include costs and technology.",
+      "Surplus and shortage signals guide competitive markets toward equilibrium through price adjustment."
+    ],
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.48",
+    "context": "Review how demand, supply, equilibrium, and policy tools interact in competitive markets. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

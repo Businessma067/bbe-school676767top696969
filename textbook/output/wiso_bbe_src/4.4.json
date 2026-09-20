@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Legal Personality and Business Classification",
+    "statements": [
+      "Unincorporated businesses are not legal entities of their own, whereas incorporated businesses are legal persons.",
+      "A partnership qualifies as an incorporated business because partners may contribute capital jointly.",
+      "Filing profits on personal income tax automatically makes a sole proprietorship a separate legal person.",
+      "Listing shares on a stock exchange is the only criterion that separates incorporated from unincorporated firms.",
+      "Because a limited liability company restricts owners' liability, it must be classified as unincorporated."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.01",
+    "context": "Analyze how Figure 9 divides forms of business ownership between unincorporated and incorporated structures. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Shareholders, Directors and Corporate Governance",
+    "statements": [
+      "Shareholders must personally manage daily operations in every corporation.",
+      "A sole trader typically employs directors who are distinct from the owner.",
+      "In incorporated businesses, owners and managers need not be the same persons because shareholders provide share capital and directors run the company.",
+      "Partnership agreements require that all partners remain passive investors while hired directors make every decision.",
+      "Unincorporated sole proprietorships routinely separate share ownership from board-level management."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.02",
+    "context": "Review how incorporated businesses separate ownership from management according to the overview of legal structures. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Neighbourhood Bakery Ownership Structure",
+    "statements": [
+      "Because the bakery trades regularly, it counts as an incorporated legal person distinct from its owner.",
+      "The bakery fits an unincorporated sole trader structure in which the owner and manager are typically the same person.",
+      "As an unincorporated business, the bakery is not a legal entity of its own separate from the proprietor.",
+      "Shareholders would normally provide share capital and appoint directors to run such a one-person retail operation.",
+      "Limited liability companies and corporations belong in the same unincorporated category as sole proprietorships."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.03",
+    "context": "Consider a neighbourhood bakery operated by one owner who bakes, serves customers, and keeps the accounts without forming a separate company. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Figure 9 Forms of Ownership Overview",
+    "statements": [
+      "Figure 9 places sole traders and partnerships among unincorporated businesses.",
+      "Figure 9 classifies corporations and limited liability companies as incorporated businesses.",
+      "Figure 9 treats every business with more than one owner as necessarily incorporated.",
+      "In unincorporated forms, owners and managers are typically the same persons according to the overview.",
+      "Shareholders provide share capital while directors run incorporated companies in the diagram's logic."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.04",
+    "context": "Review Figure 9 summarising unincorporated versus incorporated forms of business ownership and their typical governance patterns. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Sole Trader as Unincorporated Form",
+    "statements": [
+      "A sole trader or sole proprietor is an unincorporated form with typically one owner who also manages the business.",
+      "Sole traders are legal persons that can sue and be sued independently of the proprietor.",
+      "Incorporated limited liability companies merge into the sole trader category when they have only one shareholder.",
+      "Partnerships and sole traders share incorporated status because both can operate without listing shares.",
+      "Directors appointed by shareholders normally run a sole proprietorship on behalf of passive owners."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.05",
+    "context": "Analyze the position of the sole trader within the classification of business ownership structures. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Directors and Day-to-Day Management",
+    "statements": [
+      "Shareholders personally sign every supplier contract because they alone hold management authority in corporations.",
+      "Partners in a general partnership usually delegate all management to directors who do not own the firm.",
+      "Sole proprietors must hire external directors before they may legally trade as unincorporated businesses.",
+      "Limited liability companies are run by shareholders who cannot appoint separate managers under any circumstances.",
+      "Directors run incorporated companies, whereas unincorporated owners typically manage their own businesses directly."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.06",
+    "context": "Analyze who runs incorporated companies compared with unincorporated businesses in the ownership overview. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Share Capital and Corporate Control",
+    "statements": [
+      "Sole traders raise share capital by issuing stock to public investors on a regulated exchange.",
+      "Partnerships are incorporated when partners contribute capital because funding replaces legal personality.",
+      "Unincorporated businesses cannot have more than one owner under the ownership overview.",
+      "Shareholders provide share capital to incorporated businesses while directors run the company.",
+      "Incorporated businesses may have owners who do not manage operations because ownership and management can be separated."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.07",
+    "context": "Review how share capital and management roles differ between incorporated and unincorporated ownership forms. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Consultant Partnership Structure",
+    "statements": [
+      "Because both consultants invest time and capital, their practice must be classified as an incorporated corporation.",
+      "The practice is an unincorporated partnership in which owners and managers are typically the same persons.",
+      "As an unincorporated business, the partnership is not a legal entity of its own separate from the partners.",
+      "Shareholders would provide share capital while directors run this two-person consulting practice.",
+      "Limited liability companies and sole traders share the same incorporated legal status as stock corporations."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.08",
+    "context": "Consider two consultants who jointly found a practice, share profits, and manage client work themselves under a partnership agreement. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comprehensive Ownership Distinctions",
+    "statements": [
+      "Unincorporated businesses are not legal entities of their own.",
+      "Incorporated businesses are legal persons distinct from their owners.",
+      "In unincorporated sole traders and partnerships, owners and managers are typically the same persons.",
+      "Shareholders provide share capital and directors run incorporated companies.",
+      "Corporations and limited liability companies are examples of incorporated business forms."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.09",
+    "context": "Analyze the full contrast between unincorporated and incorporated forms of business ownership presented in the chapter overview. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Incorporated Businesses as Legal Persons",
+    "statements": [
+      "Incorporated businesses are legal persons that exist separately from their owners in law.",
+      "Every unincorporated partnership automatically becomes a legal person once it registers a trading name.",
+      "Sole proprietorships gain separate legal personality when the proprietor employs staff.",
+      "Unincorporated businesses and incorporated businesses share the same legal entity status under the overview.",
+      "A partnership agreement alone converts partners into shareholders of an incorporated company."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.10",
+    "context": "Review the meaning of incorporated status within the classification of business ownership structures. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Classifying Partnerships and Corporations",
+    "statements": [
+      "Partnerships are unincorporated businesses that may have more than one owner.",
+      "Corporations are incorporated businesses and legal persons in their own right.",
+      "Limited liability companies belong among incorporated forms alongside corporations.",
+      "A partnership becomes incorporated automatically when it employs non-partner managers.",
+      "Sole traders and partnerships both fall under unincorporated ownership in the overview."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.11",
+    "context": "Analyze how partnerships and corporations are grouped within unincorporated and incorporated categories. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Owner-Manager Overlap in Unincorporated Firms",
+    "statements": [
+      "In unincorporated businesses, owners and managers are typically the same persons.",
+      "Corporations require that every shareholder also serve as a director without exception.",
+      "A sole trader who manages daily operations illustrates the usual owner-manager overlap in unincorporated forms.",
+      "Partnerships are incorporated because each partner may specialise in different management tasks.",
+      "Shareholders always run incorporated companies personally rather than delegating to directors."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.12",
+    "context": "Review the typical relationship between ownership and management in unincorporated compared with incorporated businesses. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Family Farm Sole Proprietorship",
+    "statements": [
+      "Hiring seasonal workers converts the farm into an incorporated legal person with separate personality.",
+      "The farm operates as an unincorporated sole trader in which the owner and manager are typically the same person.",
+      "As an unincorporated business, the farm is not a legal entity of its own distinct from the proprietor.",
+      "Shareholders would normally supply share capital while directors manage this one-owner agricultural operation.",
+      "Limited liability companies belong with unincorporated forms because agriculture uses natural resources."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.13",
+    "context": "Consider a family farm run by one proprietor who owns the land, hires seasonal workers, and makes all business decisions personally. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Nuanced Legal Entity Distinctions",
+    "statements": [
+      "Only incorporated businesses possess legal personality as entities separate from their owners.",
+      "A partnership becomes a legal person once partners sign a formal partnership agreement.",
+      "Sole traders are incorporated because the proprietor's name appears on business stationery.",
+      "Limited liability companies lose incorporated status when their shares are not publicly traded.",
+      "Unincorporated and incorporated businesses differ only in tax treatment, not in legal entity status."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.14",
+    "context": "Analyze subtle claims about legal personality when comparing sole traders, partnerships, and incorporated companies. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Manufacturing Corporation Structure",
+    "statements": [
+      "Because directors manage the factory, the corporation must be classified as an unincorporated partnership.",
+      "The corporation is an incorporated legal person separate from its shareholders.",
+      "Shareholders must personally operate machinery because owners and managers cannot differ in incorporated firms.",
+      "Shareholders provide share capital while directors run this incorporated company.",
+      "Unincorporated sole traders follow the same shareholder-director split as this manufacturing corporation."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.15",
+    "context": "Consider a manufacturing corporation whose shareholders invest capital while a board of directors oversees factory operations and contracts. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Multiple Owners and Legal Structure",
+    "statements": [
+      "Partnerships may have more than one owner yet remain unincorporated businesses.",
+      "Sole traders typically have one owner who also manages the business.",
+      "Having multiple shareholders automatically means a firm is unincorporated.",
+      "Corporations are incorporated legal persons regardless of how many shareholders they have.",
+      "Unincorporated businesses are not legal entities of their own even when several partners co-own the firm."
+    ],
+    "subsection": "4.4",
+    "case_id": "CASE 4.4.16",
+    "context": "Review how the number of owners relates to incorporated versus unincorporated classification in the ownership overview. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.33",
+    "title": "Wert des Geldes im Zeitablauf",
+    "context": "Bewerten Sie die folgenden Aussagen zum Wert von Geld im Zeitablauf:",
+    "statements": [
+      "Für Geld als Zahlungsmittel, Wertmesser und Wertaufbewahrungsmittel ist wichtig, dass es im Zeitablauf seinen Wert behält.",
+      "Geld wird weniger wert, wenn man für denselben Betrag, etwa 100 Euro, wegen gestiegener Preise weniger Waren und Dienstleistungen kaufen kann als ein Jahr zuvor.",
+      "Bleibt der Nennbetrag 100 Euro unverändert, bleibt der Wert des Geldes immer unverändert, unabhängig von den Preisen.",
+      "Gestiegene Preise bedeuten, dass derselbe Geldbetrag weniger Waren und Dienstleistungen kauft.",
+      "Der Wert des Geldes hängt nur vom Aufdruck auf der Banknote ab, nicht davon, was man dafür kaufen kann."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Drei Funktionen, eine gemeinsame Bedingung. Zahlungsmittel, Wertmesser und Wertaufbewahrungsmittel greifen nur dann zuverlässig, wenn Geld über die Zeit hinweg Kaufmöglichkeiten trägt. Wer heute eine Note annimmt, will morgen noch damit einkaufen können. Wer Preise in Euro vergleicht, braucht eine Einheit, deren Tauschwert nicht von einem Tag auf den anderen zusammenbricht. Wer spart, legt Wert an, nicht bloß eine Ziffer. Genau deshalb betont der Abschnitt, dass Geld im Zeitablauf seinen Wert behalten muss, damit diese Eigenschaften tragfähig bleiben.\n\nDie Aussage ist wahr.",
+      "Hundert Euro heute und hundert Euro vor einem Jahr tragen denselben Aufdruck, nicht denselben Warenkorb. Sind die Preise vieler Güter gestiegen, kauft man mit dem Betrag weniger. Der Lehrtext nimmt genau dieses Beispiel: Ein fester Geldbetrag verliert an Wert, wenn man sich dafür weniger Waren und Dienstleistungen leisten kann als zum Vergleichszeitpunkt. Der Wertverlust sitzt in der Kaufmenge, nicht in einer geänderten Ziffer auf der Note.\n\nDie Aussage ist wahr.",
+      "Unveränderter Nennbetrag ist nicht unveränderter Wert. Der Abschnitt erklärt den Wertverlust gerade am festen Betrag von 100 Euro: Die Zahl bleibt, die Preise steigen, die kaufbare Menge sinkt. Wer den Wert mit dem Aufdruck gleichsetzt, verwechselt Nominalgröße und Kaufkraft. Der Satz behauptet eine Unveränderlichkeit, die der Text ausdrücklich widerlegt.\n\nDie Aussage ist falsch.",
+      "Preissteigerung und geringere Kaufmenge sind zwei Seiten derselben Bewegung. Wenn Waren und Dienstleistungen teurer werden, reicht derselbe Geldbetrag für weniger Stück, weniger Stunden Dienstleistung, weniger Füllung des Einkaufskorbs. Der Lehrtext knüpft den Wertverlust des Geldes genau an diese geringere Kaufmenge. Der Satz gibt diese Kopplung wieder.\n\nDie Aussage ist wahr.",
+      "Aufdruck ohne Kaufmöglichkeit erklärt den Geldwert nicht. Der Abschnitt bemisst den Wert daran, dass man für den Betrag Produkte und Dienstleistungen kaufen kann, und zeigt den Verlust, sobald gestiegene Preise diese Menge schmälern. Eine Banknote, mit der niemand mehr kaufen kann, trägt zwar eine Ziffer, aber nicht den Tauschwert, den die Geldfunktionen brauchen. Die Beschränkung auf den Aufdruck streicht genau diese Kaufseite.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.34",
+    "title": "Was Inflation bedeutet",
+    "context": "Bewerten Sie die folgenden Aussagen zum Begriff der Inflation:",
+    "statements": [
+      "Von Inflation spricht man, wenn der Wert des Geldes sinkt, weil die Preise vieler Waren und Dienstleistungen steigen und damit das allgemeine Preisniveau steigt.",
+      "Steigt nur der Preis eines einzelnen Produkts in einem Geschäft, liegt zwingend bereits Inflation vor.",
+      "Durch Inflation sinkt die Kaufkraft, weil man für einen bestimmten Geldbetrag am Ende eines Jahres weniger kaufen kann als am Beginn.",
+      "Durch Inflation sinkt der Binnenwert des Geldes.",
+      "Inflation liegt nur vor, wenn sämtliche Preise täglich um denselben Prozentsatz steigen."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Viele Preise, ein Niveau. Der Lehrtext bindet Inflation an den sinkenden Geldwert, der entsteht, weil die Preise vieler Waren und Dienstleistungen steigen und damit das allgemeine Preisniveau steigt. Es geht nicht um eine einzelne Preisetikette, sondern um die Breite der Bewegung. Genau diese Breite macht aus teurerem Brot oder teurerem Strom erst dann Inflation im Sinn des Abschnitts, wenn sie ins allgemeine Preisniveau eingeht. Ein isolierter Preissprung bleibt eine relative Änderung; die Definition verlangt den Anstieg vieler Preise und des Niveaus insgesamt. Der Satz wiederholt die Definition in ihrer Logik, ohne den Einzelfall zur Inflation zu erklären.\n\nDie Aussage ist wahr.",
+      "Ein einzelnes Produkt in einem einzelnen Geschäft kann teurer werden, ohne dass das allgemeine Preisniveau steigt. Inflation verlangt laut Text den Anstieg vieler Preise und des Niveaus insgesamt. Die Steigerung einer Position reicht als zwingender Nachweis nicht. Relative Preisänderungen gehören zum Alltag der Märkte; Inflation ist die allgemeine Bewegung. Die Absolute „zwingend bereits Inflation“ überdehnt den Einzelfall.\n\nDie Aussage ist falsch.",
+      "Kaufkraft ist die kaufbare Menge bei gegebenem Betrag. Steigt das Preisniveau über das Jahr, kauft derselbe Betrag am Jahresende weniger als am Jahresanfang. Der Abschnitt nennt genau diesen Vergleich als Folge der Inflation. Der Wertverlust des Geldes erscheint hier als geringere Kaufmenge, nicht als geänderte Ziffer auf dem Konto. Wer das übersieht, hält nominale Bestände für reale Kaufmöglichkeiten.\n\nDie Aussage ist wahr.",
+      "Binnenwert meint den Wert des Geldes im Inland, also die inländische Kaufkraft. Inflation senkt diese Kaufkraft, weil dasselbe Geld weniger Güter kauft. Der Text sagt ausdrücklich: Durch Inflation sinkt der Binnenwert des Geldes. Außenwert und Wechselkurs sind damit noch nicht entschieden; hier geht es um die inländische Seite. Der Satz trifft diese inländische Folge.\n\nDie Aussage ist wahr.",
+      "Gleichschritt aller Preise an jedem Tag verlangt der Text nicht. Gemessen wird ein allgemeines Preisniveau anhand eines Warenkorbs, dessen Positionen sich unterschiedlich entwickeln können. Manche Güter steigen stärker, andere schwächer oder gar nicht. Inflation bleibt der Anstieg des Niveaus, nicht die Forderung nach identischen Tagesprozenten auf jeder Etikette. Die Bedingung „nur wenn sämtliche Preise täglich gleich“ ist zu eng und falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.35",
+    "title": "Kaufkraft und fester Geldbetrag",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kaufkraft des Geldes:",
+    "statements": [
+      "Die Kaufkraft gibt an, wie viele Güter für einen bestimmten Geldbetrag gekauft werden können.",
+      "Durch Inflation kann man für denselben Geldbetrag am Ende eines Jahres weniger kaufen als zu Beginn des Jahres.",
+      "Steigt das allgemeine Preisniveau, steigt die Kaufkraft eines festen Geldbetrags.",
+      "Der Binnenwert einer Währung bezieht sich auf den Wert des Geldes im Inland, das heißt auf die Kaufkraft des Geldes.",
+      "Der Binnenwert einer Währung misst ausschließlich, wie viele Einheiten einer Fremdwährung man für einen Euro erhält."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Gütermenge je Geldbetrag ist die Kaufkraft. Der Abschnitt fragt ausdrücklich, wie viele Güter für einen bestimmten Betrag gekauft werden können, und nennt das die Kaufkraft des Geldes im Inland. Nicht die Ziffer auf der Note zählt hier, sondern die Menge an Waren und Dienstleistungen, die diese Ziffer noch bewegt. Wer 100 Euro hält, hat so viel Kaufkraft, wie der Warenkorb zu den geltenden Preisen hergibt. Diese Lesart macht aus einem Nominalbetrag eine reale Möglichkeit.\n\nDie Aussage ist wahr.",
+      "Jahresanfang und Jahresende mit demselben Betrag: Steigen die Preise im Jahresverlauf, schrumpft die kaufbare Menge. Der Lehrtext formuliert genau diesen Vergleich als Folge der Inflation. Die nominale Summe kann auf dem Konto stehen bleiben, die reale Füllung des Einkaufs geht zurück. Kaufkraftverlust und Inflation sind hier dieselbe Bewegung, nur von der Geldseite bzw. von der Preisseite gelesen.\n\nDie Aussage ist wahr.",
+      "Preisniveau und Kaufkraft eines festen Betrags bewegen sich gegensätzlich. Steigen viele Preise, kauft derselbe Betrag weniger, die Kaufkraft sinkt. Der Satz behauptet das Gegenteil: steigendes Niveau, steigende Kaufkraft. Das widerspricht der Definition im Abschnitt. Wer beides gleichsinnig denkt, verwechselt teurere Güter mit größerer Kaufmenge.\n\nEin fester Betrag von 100 Euro bleibt 100 Euro. Werden Brot, Energie und Miete teurer, reicht er für weniger. Genau das meint sinkende Kaufkraft. Die Behauptung einer steigenden Kaufkraft bei steigendem Preisniveau ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Inland, nicht Devisenschalter: Der Binnenwert bezieht sich auf den Wert des Geldes im Inland und damit auf die Kaufkraft, also darauf, wie viele Güter der Betrag im eigenen Währungsraum kauft. Der Text stellt diese inländische Lesart der außenwirtschaftlichen gegenüber. Wer Binnenwert sagt, spricht über inländische Preise und inländische Güter, nicht über Dollar oder Franken je Euro.\n\nDie Aussage ist wahr.",
+      "Fremdwährungseinheiten je Euro gehören zum Außenwert, nicht zum Binnenwert. Der Abschnitt trennt klar: Binnenwert ist inländische Kaufkraft, Außenwert ist, wie viele Einheiten einer Fremdwährung für eine Einheit der eigenen Währung gekauft werden können. Die Beschränkung des Binnenwerts auf den Devisenkurs vertauscht die beiden Seiten. Ein unveränderter Wechselkurs schließt einen gesunkenen Binnenwert bei Inlandsinflation nicht aus.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.36",
+    "title": "Binnenwert und Außenwert",
+    "context": "Bewerten Sie die folgenden Aussagen zum Binnenwert und zum Außenwert einer Währung:",
+    "statements": [
+      "Der Außenwert einer Währung meint, wie viele Einheiten einer Fremdwährung für eine Einheit der eigenen Währung gekauft werden können.",
+      "Binnenwert und Außenwert sind im Lehrtext zwei verschiedene Blickwinkel auf den Geldwert.",
+      "Binnenwert und Außenwert sind im Lehrtext dasselbe und immer zahlenmäßig identisch.",
+      "Steigt das inländische Preisniveau, sinkt der Binnenwert, auch wenn der Wechselkurs unverändert bleibt.",
+      "Der Binnenwert einer Währung ist ausschließlich der Wechselkurs gegenüber dem US-Dollar."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Außenwert fragt nach fremden Geldeinheiten je eigener Einheit. Dollar, Schweizer Franken oder andere Fremdwährungen: Wie viele davon kauft ein Euro, bzw. wie viele Einheiten der Fremdwährung werden für einen Euro gezahlt? Der Abschnitt setzt den Außenwert genau auf diese Relation. Es ist die außenwirtschaftliche Seite des Geldwerts, nicht die Frage, wie viele Brote der Euro im Inland kauft. Wer nur Inlandsgüter zählt, misst den Binnenwert, nicht den Außenwert.\n\nDie Aussage ist wahr.",
+      "Zwei Fragen, zwei Antworten. Inland: Wie viele Güter für den Betrag? Ausland: Wie viele Einheiten Fremdwährung für die eigene Einheit? Der Lehrtext stellt Binnenwert und Außenwert ausdrücklich gegenüber. Dieselbe Währung kann im Inland an Kaufkraft verlieren und gegenüber einer Fremdwährung gleichzeitig stärker oder schwächer notieren. Die Trennung der Blickwinkel ist der Punkt des Abschnitts, nicht ihre Verschmelzung.\n\nDie Aussage ist wahr.",
+      "Identisch sind die Maße nicht. Der Binnenwert hängt an inländischen Preisen und der Kaufkraft, der Außenwert an Wechselkursen gegenüber Fremdwährungen. Eine zahlenmäßige Gleichheit behauptet der Text nicht. Wer beide zu einem einzigen Wert zusammenzieht, macht die Gegenüberstellung im Abschnitt überflüssig. Inlandsinflation senkt den Binnenwert, ohne dass der Dollarkurs dafür identisch mitziehen müsste.\n\nDie Aussage ist falsch.",
+      "Inländische Preise steigen, der Euro kauft im Inland weniger: Der Binnenwert sinkt. Der Wechselkurs kann dabei unverändert bleiben, weil er eine andere Relation misst. Der Abschnitt knüpft den Binnenwert an die inländische Kaufkraft, nicht an den Devisenkurs. Genau deshalb kann Inlandsinflation den Binnenwert treffen, ohne dass der Außenwert dieselbe Bewegung zeigen muss. Die Unabhängigkeit der beiden Seiten trägt den Satz.\n\nWer Binnenwert und Kurs mechanisch koppelt, übersieht diese Trennung. Ein fester Kurs zum Dollar ändert nichts daran, dass teurere Inlandsgüter denselben Euro-Betrag entwerten. Der Lehrtext definiert den Binnenwert über Güter im Inland. Steigendes Preisniveau dort senkt ihn, Kursstillstand hin oder her.\n\nDie Aussage ist wahr.",
+      "Der Dollar ist ein Beispiel für eine Fremdwährung beim Außenwert, nicht die Definition des Binnenwerts. Binnenwert ist inländische Kaufkraft. Ein einziger bilateraler Kurs, noch dazu nur zum Dollar, ersetzt weder den Binnenwert noch den Außenwert als Korbmaß aus dem früheren Wechselkursabschnitt. Die Verengung auf den Dollarkurs als Binnenwert ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.37",
+    "title": "Geldmenge und Buchgeldschöpfung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Geldmengenwachstum als Inflationsursache:",
+    "statements": [
+      "Inflation wird begünstigt, wenn im Verhältnis zu den angebotenen Waren und Dienstleistungen zu viel Geld im Umlauf ist.",
+      "Buchgeld kann durch zusätzliche Kredite stark vermehrt werden; diese Zunahme heißt Buchgeldschöpfung.",
+      "Geldmengenwachstum spielt für mögliche Inflation nur dann eine Rolle, wenn das Mehr an Geld ausschließlich bei den Banken verbleibt.",
+      "Die Zunahme der Geldmenge wirkt vor allem, wenn sie rasch erfolgt und das Geld bei Haushalten und Unternehmen ankommt und für Investitionen und Konsum ausgegeben wird.",
+      "Notenbanken können laut Lehrtext niemals mehr Geld in Umlauf bringen, weil nur Bargeld zählt."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zu viel Geld, zu wenig Güter: Dann wird Inflation begünstigt. Der Abschnitt stellt die umlaufende Geldmenge ins Verhältnis zu den angebotenen Waren und Dienstleistungen. Wächst die Geldseite stärker als die Güterseite, drängt mehr Zahlungskraft auf dieselbe Angebotsmenge. Preise können steigen. Die Relativierung „im Verhältnis zu“ ist entscheidend: Nicht jede Gelderhöhung wirkt gleich, sondern das Missverhältnis zur angebotenen Menge.\n\nDie Aussage ist wahr.",
+      "Kredite schaffen Buchgeld. Vergeben Banken viele Kredite, nimmt das Giralgeld zu, ohne dass neue Scheine gedruckt werden müssen. Der Lehrtext nennt diese Zunahme an Buchgeld durch Kreditvergabe Buchgeldschöpfung. Zusammen mit der Erlaubnis, mehr Geld zu drucken, ist das ein Weg, die umlaufende Menge zu erhöhen. Buchgeld ist dabei ebenso Geld wie Bargeld, solange das Vertrauen in den Tauschwert trägt.\n\nDie Aussage ist wahr.",
+      "Verbleibt das zusätzliche Geld bei den Banken, kommt es nicht als Nachfrage bei Haushalten und Unternehmen an. Der Text sagt das Gegenteil der Behauptung: Die Zunahme spielt vor allem dann eine Rolle, wenn das Mehr an Geld nicht bei den Banken verbleibt, sondern für Investitionen und Konsum ausgegeben wird. Wer die Wirkung auf das Verbleiben bei den Banken beschränkt, dreht die Bedingung um.\n\nParkendes Buchgeld bei Kreditinstituten erzeugt noch keinen Nachfragesog nach Gütern. Erst Ausgabe für Konsum und Investitionen trifft auf das Güterangebot. Genau diese Ankunft bei Haushalten und Unternehmen macht Geldmengenwachstum inflationsrelevant. Die Einschränkung auf das Verbleiben bei den Banken ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Tempo und Ankunftsort zählen. Rasches Geldmengenwachstum, das bei Haushalten und Unternehmen ankommt und dort ausgegeben wird, trifft auf Waren und Dienstleistungen. Steigt das Angebot nicht im selben Maß, können Preise steigen. Der Abschnitt knüpft die Inflationsrelevanz genau an diese Kette, nicht an eine abstrakte Zahl in der Bankenstatistik allein. Wer nur die Bilanzsumme sieht, ohne die Ausgabe, sieht die halbe Geschichte.\n\nDie Aussage ist wahr.",
+      "Notenbanken können laut Text die Erlaubnis erhalten, mehr Geld zu drucken, und Banken vermehren Buchgeld durch Kredite. Beides zählt zur umlaufenden Menge. Die Behauptung, Notenbanken könnten niemals mehr Geld in Umlauf bringen, weil nur Bargeld zähle, widerspricht beiden Wegen. Buchgeld ist der bei weitem größere Teil des umlaufenden Geldes und inflationsrelevant, sobald es ausgegeben wird.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.38",
+    "title": "Nachfragesog",
+    "context": "Bewerten Sie die folgenden Aussagen zum Nachfragesog als Inflationsursache:",
+    "statements": [
+      "Verfügen Haushalte und Unternehmen über mehr Geld und steigt ihre Nachfrage stärker als das Angebot, steigen die Preise für Waren und Dienstleistungen.",
+      "Eine große Nachfrage treibt die Preise nach oben; der Lehrtext nennt das einen Nachfragesog.",
+      "Ein Nachfragesog entsteht nur, wenn das Angebot im selben Ausmaß mitsteigt wie die Nachfrage.",
+      "Steigende Preise können für Unternehmen unter Umständen steigende Kosten bedeuten und so zum Kostendruck führen.",
+      "Die Inflationsursachen sind vollständig unabhängig voneinander und können sich nicht gegenseitig bedingen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Mehr Geld in den Händen von Haushalten und Unternehmen kann die Nachfrage nach Waren und Dienstleistungen erhöhen. Hält das Angebot nicht Schritt, trifft mehr Kaufkraft auf knappere oder gleichbleibende Mengen. Der Lehrtext folgert daraus steigende Preise. Das Missverhältnis zwischen Nachfragezuwachs und Angebotszuwachs ist der Kern, nicht die bloße Existenz von Geld. Wer mehr ausgeben will und kann, als produziert oder angeboten wird, zieht die Preise nach oben.\n\nDie Aussage ist wahr.",
+      "Nachfragesog ist der Name für diese Zugkraft. Die große Nachfrage treibt die Preise nach oben. Der Abschnitt stellt den Sog neben Geldmengenwachstum und Kostendruck als wesentliche Ursache. Es ist dieselbe Geschichte wie im vorigen Satz, nur auf den Begriff gebracht: Die Nachfrageseite zieht, das Preisniveau folgt, sofern das Angebot nicht gleichzieht. Der Terminus sitzt genau auf diesem Mechanismus.\n\nDie Aussage ist wahr.",
+      "Gleichschritt von Angebot und Nachfrage würde den Sog gerade entschärfen. Der Text setzt den Nachfragesog daran, dass die Nachfrage steigt, das Angebot jedoch nicht im selben Ausmaß mitsteigt. Nur dann werden die Preise nach oben getrieben. Die Behauptung, der Sog entstehe nur bei gleichem Angebotszuwachs, kehrt die Bedingung um. Mitwachsendes Angebot fängt Nachfrage ab; fehlendes Mitwachsen lässt Preise steigen.\n\nDie Aussage ist falsch.",
+      "Preise und Kosten hängen in der Kette des Buchs zusammen. Steigende Preise können für Unternehmen unter Umständen steigende Kosten bedeuten, und das führt zum nächsten Punkt, dem Kostendruck. Der Nachfragesog bleibt also nicht isoliert: Teurere Vorleistungen, teurere Löhne, teurere Energie können die Kostenseite anschließen. Der Text sagt ausdrücklich, dass die Ursachen sich gegenseitig bedingen können. Der Satz trifft genau diese Brücke.\n\nDie Aussage ist wahr.",
+      "Unabhängigkeit behauptet der Abschnitt nicht. Die Erklärungsansätze sind nicht gänzlich unabhängig voneinander, vielmehr können sie sich gegenseitig bedingen. Geldmenge, Nachfrage und Kosten greifen ineinander, etwa wenn mehr Geld Nachfrage erzeugt und steigende Preise Kosten nachziehen. Aus dem Nachfragesog kann Kostendruck werden, aus Kostendruck die Lohn-Preis-Spirale. Wer vollständige Unabhängigkeit behauptet, streicht genau diesen Satz des Lehrtexts und zerschneidet die Kette, die der Überblick der Ursachen aufbaut. Die Absolute ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.39",
+    "title": "Kostendruck und importierte Inflation",
+    "context": "Bewerten Sie die folgenden Aussagen zum Kostendruck und zu importierter Inflation:",
+    "statements": [
+      "Steigende Rohstoffpreise, Lohnkosten oder teurere Importe können die Produktionskosten erhöhen.",
+      "Steigende Produktionskosten schlagen sich in steigenden Preisen nieder.",
+      "Importierte Inflation liegt vor, wenn sich Importe verteuern.",
+      "Wechselkursänderungen können Importe nicht verteuern, weil Preise nur im Inland entstehen.",
+      "Müssen für Importe mehr Euro für einen bestimmten Betrag einer Fremdwährung gezahlt werden, verteuern sich die Importe."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Drei Kostentreiber nennt der Text in einem Atemzug: Rohstoffe, Löhne und Importe. Steigen sie, steigen die Produktionskosten. Unternehmen produzieren dann teurer, noch bevor sie die Endpreise anpassen. Der Kostendruck setzt an dieser betrieblichen Kostenseite an, nicht erst an der Ladentheke. Rohstoff, Lohn und Import sind dabei gleichrangige Beispiele, keines davon ist optional für das Verständnis des Mechanismus.\n\nDie Aussage ist wahr.",
+      "Kosten müssen irgendwo landen. Der Abschnitt sagt: Steigende Produktionskosten schlagen sich in steigenden Preisen nieder. Unternehmen wälzen den Druck weiter, indem sie ihre Verkaufspreise erhöhen. Aus Kostendruck wird Preissteigerung, und Preissteigerung ist der Stoff der Inflation. Die Kette ist kurz und direkt: teurer produzieren, teurer verkaufen. Wer Kosten und Endpreise entkoppelt, unterbricht genau diesen Satz.\n\nDie Aussage ist wahr.",
+      "Importierte Inflation ist der Name für verteuerte Einfuhren. Der Lehrtext setzt das Ausrufezeichen hinter genau diese Formel: Importe verteuern sich, die inländischen Kosten steigen mit, die Preise folgen. Ursachen können ausländische Kostensteigerungen sein oder Wechselkursänderungen, die mehr Euro je Fremdwährungsbetrag verlangen. Der Begriff hängt an der Verteuerung der Importe, nicht an einem inländischen Nachfragesog allein.\n\nDie Aussage ist wahr.",
+      "Wechselkurse gehören ausdrücklich zur Importverteuerung. Ändert sich der Kurs so, dass für denselben Fremdwährungsbetrag mehr Euro zu zahlen sind, werden Einfuhren teurer. Preise entstehen also nicht nur im Inland; importierte Kosten und Kursänderungen tragen hinein. Die Behauptung, Wechselkursänderungen könnten Importe nicht verteuern, widerspricht dem Text. Inland und Ausland sind über den Importpreis verbunden.\n\nEin schwächerer Euro gegenüber der Lieferwährung heißt: mehr Euro für dieselbe Auslandrechnung. Diese Mehr-Euro sitzen in den Produktionskosten und können in Inlandpreise eingehen. Der Abschnitt nennt Wechselkursänderungen als eigenen Weg der Importverteuerung. Die Beschränkung aller Preise auf rein inländische Entstehung ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Mehr Euro je Fremdwährungsbetrag ist die Kursseite derselben Importgeschichte. Der Text formuliert genau das: Für Importe aus dem Ausland muss mehr bezahlt werden, weil mehr Euro für einen bestimmten Betrag einer Fremdwährung nötig sind. Die Importrechnung in Euro steigt, auch wenn der ausländische Preis in fremder Währung unverändert bleibt. Das ist importierte Inflation über den Wechselkurs.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.40",
+    "title": "Zinsen gegen Inflation",
+    "context": "Bewerten Sie die folgenden Aussagen zur Inflationsbekämpfung über Zinsen und Kreditvergabe:",
+    "statements": [
+      "Zur Inflationsbekämpfung werden häufig die Zinsniveaus durch die Zentralbanken erhöht.",
+      "Wird die Refinanzierung für die Banken teurer, heben auch sie die Kreditzinsen für ihre Kunden an.",
+      "Durch eine Einschränkung der Kreditvergabe und durch teurere Kredite wird die Geldmenge in der Regel wieder reduziert.",
+      "Höhere Zinsen der Zentralbanken sollen die Kreditvergabe unbegrenzt ausweiten, um Inflation zu beschleunigen.",
+      "Teurere Kredite erhöhen die Geldmenge immer, weil dann noch mehr Buchgeld entsteht."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Teureres Geld soll die Preissteigerung bremsen. Der Abschnitt nennt die Erhöhung der Zinsniveaus durch die Zentralbanken als häufiges Mittel der Inflationsbekämpfung. Höhere Zinsen machen Kredite teurer, dämpfen Nachfrage und Kreditausweitung und wirken so gegen den Nachfragesog und gegen rasche Buchgeldschöpfung. Das ist Geldpolitik über den Preis des Geldes, nicht über einen unmittelbaren Preisstopp im Laden. Der Satz trifft die im Text beschriebene Praxis.\n\nDie Aussage ist wahr.",
+      "Refinanzierung ist der Preis, zu dem sich Banken selbst Geld ausborgen. Wird dieser Preis teurer, geben Banken die Belastung weiter: Die Kreditzinsen für Kunden steigen. Der Lehrtext beschreibt genau diese Weitergabe. Die Zentralbank setzt am Refinanzierungssatz an, die Kundenzinsen folgen. Ohne diese Brücke bliebe die Leitzinserhöhung in der Bankenbilanz stecken und erreichte Haushalte und Unternehmen nicht.\n\nDie Aussage ist wahr.",
+      "Weniger und teurere Kredite drosseln die Buchgeldschöpfung. Der Text sagt: Durch eine Einschränkung der Kreditvergabe und durch teurere Kredite (höhere Zinsen) wird die Geldmenge in der Regel wieder reduziert. Weniger neues Buchgeld bedeutet weniger zusätzliche Nachfrage, sofern das Geld nicht ohnehin nur bei den Banken lag. Die Regelannahme des Abschnitts ist Reduktion, nicht Ausweitung. Genau das soll der Inflation entgegenwirken.\n\nDie Aussage ist wahr.",
+      "Ausweiten und beschleunigen ist die umgekehrte Absicht. Höhere Zentralbankzinsen sollen Kredite verteuern und die Geldmenge in der Regel reduzieren, nicht unbegrenzt ausweiten. Inflation zu beschleunigen wäre das Gegenteil der Inflationsbekämpfung, die der Text beschreibt. Die Behauptung verdreht Ziel und Instrument. Wer höhere Zinsen mit Kreditboom gleichsetzt, liest den Abschnitt gegen den Strich.\n\nDie Aussage ist falsch.",
+      "Teurere Kredite dämpfen die Nachfrage nach Krediten und damit die Buchgeldschöpfung, sie blähen sie nicht zwangsläufig auf. Der Lehrtext koppelt teurere Kredite an die Reduktion der Geldmenge. „Immer mehr Buchgeld“ widerspricht dieser Regel. Zwar entstehen Kredite weiterhin, aber der Impuls geht in Richtung weniger, nicht in Richtung unbegrenzter Vermehrung. Die Absolute ist falsch.\n\nNote: Buchgeldschöpfung läuft über Kreditvergabe. Höhere Zinsen sollen genau diese Vergabe verteuern und beschränken. Wer teurere Kredite mit immer mehr Buchgeld gleichsetzt, verwechselt den Entstehungsmechanismus mit der geldpolitischen Drosselung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.41",
+    "title": "Lohn-Preis-Spirale",
+    "context": "Bewerten Sie die folgenden Aussagen zur Lohn-Preis-Spirale:",
+    "statements": [
+      "Steigen die Preise, verlangen Arbeitnehmerinnen und Arbeitnehmer höhere Löhne und Gehälter, damit ihre Kaufkraft erhalten bleibt.",
+      "Steigen Löhne und Gehälter, steigen die Kosten für Unternehmen, die wiederum ihre Preise erhöhen.",
+      "Steigende Preise können erneut Forderungen nach höheren Löhnen und Gehältern auslösen.",
+      "Die Lohn-Preis-Spirale zeigt, dass Lohn- und Preissteigerungen einander niemals beeinflussen.",
+      "Wer höhere Löhne verlangt, um die Kaufkraft zu sichern, unterbricht die Spirale immer vollständig."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Kaufkraftschutz ist das Motiv der Lohnforderung. Steigen die Preise, kauft der bisherige Lohn weniger. Arbeitnehmerinnen und Arbeitnehmer verlangen höhere Löhne und Gehälter, damit ihre Kaufkraft erhalten bleibt. Der Lehrtext setzt genau diesen ersten Schritt an den Beginn der Spirale. Es ist dieselbe Kaufkraftlogik wie bei der Inflation: fester Nominallohn, steigende Preise, sinkende reale Menge. Die Lohnforderung antwortet darauf.\n\nDie Aussage ist wahr.",
+      "Löhne sind Kosten. Steigen sie, steigen die Kosten der Unternehmen, und die Unternehmen erhöhen wiederum ihre Preise. Der zweite Schritt der Spirale ist Kostendruck aus der Lohnseite. Der Abschnitt koppelt die Schritte ausdrücklich: Preissteigerung, Lohnforderung, Kostensteigerung, erneute Preissteigerung. Wer Löhne nur als Einkommen der Haushalte sieht und nicht als Kosten der Betriebe, sieht nur die halbe Spirale.\n\nDie Aussage ist wahr.",
+      "Die Schleife schließt sich. Steigende Preise verursachen wieder Forderungen nach höheren Löhnen und Gehältern. Der Text endet die Beschreibung mit genau dieser Wiederaufnahme, angedeutet durch die Fortsetzungspunkte. Aus zwei Schritten wird ein Kreislauf: Preise ziehen Löhne, Löhne ziehen Preise. Die Spirale ist diese Wechselwirkung, nicht ein einmaliger Lohnzuschlag ohne Folge.\n\nDie Aussage ist wahr.",
+      "Niemals beeinflussen ist das Gegenteil der Spirale. Der Lehrtext führt die Lohn-Preis-Spirale gerade ein, um Wechselwirkungen zwischen Inflationsursachen zu verdeutlichen. Preise und Löhne schieben einander. Die Absolute „niemals“ streicht den ganzen Mechanismus. Wer Unabhängigkeit behauptet, widerspricht der Definition im Abschnitt.\n\nDie Aussage ist falsch.",
+      "Die Lohnforderung um der Kaufkraft willen ist der Einstieg in die Spirale, nicht deren Abbruch. Höhere Löhne sichern Kaufkraft der Beschäftigten, erhöhen aber die Kosten und können die Preise weiter treiben, worauf neue Forderungen folgen. Der Text beschreibt keinen automatischen, vollständigen Abbruch durch die Forderung selbst. „Immer vollständig unterbrechen“ ist daher falsch.\n\nKaufkrafterhalt und Kostendruck laufen parallel. Derselbe Lohnzuschlag, der den Haushalt schützt, sitzt in der betrieblichen Kostenrechnung. Genau diese Doppelrolle hält die Spirale in Gang. Ein vollständiger Abbruch durch die Forderung allein steht so nicht im Lehrtext.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.42",
+    "title": "Inflationsrate und Verbraucherpreisindex",
+    "context": "Bewerten Sie die folgenden Aussagen zur Messung der Inflation:",
+    "statements": [
+      "Die Höhe der Inflation wird mit der Inflationsrate angegeben, die auf der Basis des Verbraucherpreisindex berechnet wird.",
+      "Jeden Monat werden die Preise bestimmter Waren und Dienstleistungen erhoben und mit dem Vormonat bzw. mit dem Vorjahr verglichen.",
+      "Jene Waren und Dienstleistungen, die bei der Messung berücksichtigt werden, bezeichnet man als Inhalt des Warenkorbs.",
+      "Die Inflationsrate misst ausschließlich den Preis eines einzigen Produkts im Warenkorb.",
+      "Der Verbraucherpreisindex vergleicht Preise niemals mit dem Vorjahr."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Rate und Index gehören zusammen. Die Inflationshöhe erscheint als Inflationsrate, und diese Rate wird auf der Basis des Verbraucherpreisindex berechnet. Der VPI verdichtet viele Preise zu einem Niveau, der Vergleich dieses Niveaus über die Zeit ergibt die Rate. Ohne Index keine vergleichbare Rate, ohne Rate keine Angabe der Höhe im Sinn des Abschnitts. Die Erhebung einzelner Preise allein genügt nicht; erst die Verdichtung im Index und der zeitliche Vergleich machen aus Preisen eine Inflationsrate. Der Satz gibt diese Reihenfolge wieder.\n\nDie Aussage ist wahr.",
+      "Monatliche Erhebung, zwei Vergleichsrichtungen. Die Preise bestimmter Waren und Dienstleistungen werden jeden Monat aufgenommen und dem Vormonat bzw. dem Vorjahr gegenübergestellt. Aus dem Vergleich erkennt man, um wie viel die Preise gestiegen sind. Der Lehrtext nennt beide Horizonte. Wer nur einen einzigen Stichtag ohne Vergleich hat, hat Preise, aber keine Inflationsrate. Der Vormonat zeigt die kurze Bewegung, das Vorjahr die übliche Jahresrate; beide sitzen auf derselben monatlichen Erhebung.\n\nDie Aussage ist wahr.",
+      "Warenkorb ist der Inhalt der Messung. Nicht alle Güter der Volkswirtschaft, sondern jene Waren und Dienstleistungen, die berücksichtigt werden, bilden den Korb. Der Abschnitt bezeichnet genau diese Auswahl als Inhalt des Warenkorbs. Brot, Wohnung, Energie, Freizeit: später wird der Korb konkretisiert, hier zählt zuerst die Idee der Auswahl. Ohne festgelegten Inhalt gäbe es keinen Index.\n\nDie Aussage ist wahr.",
+      "Ein einziges Produkt ergibt keinen Verbraucherpreisindex. Der Korb umfasst viele Positionen, rund 800 im späteren Satz des Buchs, und die Rate misst die Entwicklung dieses Bündels, nicht den Preis einer einzelnen Ware. Inflation ist der Anstieg des allgemeinen Niveaus. Die Verengung auf ein einziges Produkt widerspricht Erhebung, Korb und Vergleich. Ein teurer Apfel ist noch keine Inflationsrate.\n\nDie Aussage ist falsch.",
+      "Der Vorjahresvergleich steht ausdrücklich im Text. Die erhobenen Preise werden mit dem Vormonat bzw. mit dem Vorjahr verglichen. „Niemals mit dem Vorjahr“ streicht eine der beiden genannten Richtungen. Die Jahresrate, die alltagssprachlich oft gemeint ist, hängt gerade an diesem Vorjahresvergleich. Die Absolute ist falsch.\n\nMonat gegen Monat zeigt kurzfristige Bewegung, Jahr gegen Jahr die Inflationsrate im üblichen Sinn des Abschnitts. Beide Vergleiche gehören zur Messung. Wer den Vorjahresvergleich leugnet, lässt die Berechnung der Höhe auf der Basis des VPI unvollständig.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.43",
+    "title": "Warenkorb und HVPI",
+    "context": "Bewerten Sie die folgenden Aussagen zum Warenkorb und zum Harmonisierten Verbraucherpreisindex:",
+    "statements": [
+      "Der Warenkorb beinhaltet rund 800 verschiedene Produkte und Dienstleistungen, die ein durchschnittlicher Haushalt zum Leben benötigt.",
+      "Zum Warenkorb gehören neben Lebensmitteln auch Wohnunterkünfte und Energie sowie Kultur- und Freizeitangebote.",
+      "Die Produkte und Dienstleistungen im Warenkorb werden alle fünf Jahre den Konsumgewohnheiten der Bevölkerung angepasst.",
+      "Der Harmonisierte Verbraucherpreisindex ist die Grundlage für die vergleichbare Messung der Inflation in Europa und für die Bewertung der Geldwertstabilität innerhalb der Eurozone.",
+      "Der Warenkorb wird täglich neu zusammengestellt und niemals an veränderte Konsumgewohnheiten angepasst."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Durchschnittshaushalt, rund 800 Positionen. Der Lehrtext nennt diese Größenordnung und den Zweck: Was ein durchschnittlicher Haushalt zum Leben braucht, bildet den Korb. Es ist ein repräsentatives Bündel, nicht der Einkaufszettel einer einzelnen Person und nicht die Gesamtheit aller jemals gehandelten Güter. Rund 800 macht die Breite sichtbar, ohne dass die Prüfung die genaue Zählung jedes Jahres verlangen müsste. Die Aussage folgt dem Buch.\n\nDie Aussage ist wahr.",
+      "Leben heißt mehr als der tägliche Lebensmittelsack. Wohnen und Energie sitzen im Korb, ebenso Kultur und Freizeit. Der Abschnitt zählt diese Gruppen ausdrücklich neben den Lebensmitteln. Wer den Korb auf Nahrung verengt, unterschätzt Miete und Strom und verfehlt die Breite der Lebenshaltung. Die genannten Bereiche gehören zum Inhalt, den der VPI abbildet.\n\nDie Aussage ist wahr.",
+      "Konsum ändert sich, der Korb folgt mit Abstand. Alle fünf Jahre werden die Produkte und Dienstleistungen den Konsumgewohnheiten der Bevölkerung angepasst. Smartphones, Streaming, andere Ernährungsweisen: Was der Durchschnitt kauft, soll der Korb spiegeln, aber nicht jeden Tag neu. Fünf Jahre ist der im Text genannte Rhythmus. Ohne Anpassung würde der Index ein veraltetes Leben messen.\n\nDie Aussage ist wahr.",
+      "Europa braucht Vergleichbarkeit. Der HVPI ist die Grundlage für die vergleichbare Messung der Inflation in Europa und für die Bewertung der Geldwertstabilität innerhalb der Eurozone. Nationale VPIs allein reichen dafür nicht, weil Körbe und Verfahren sonst auseinanderlaufen. Der Harmonisierte Index macht Länder und die Zone lesbar. Geldwertstabilität in der Währungsunion hängt an diesem gemeinsamen Maß.\n\nDie Aussage ist wahr.",
+      "Täglich neu und niemals angepasst widerspricht beidem: dem Fünfjahresrhythmus der Anpassung und der Stabilität des Korbs zwischen den Anpassungen. Der Text kennt weder den täglichen Neuaufbau noch das Einfrieren ohne Anpassung. Mikrowarenkorb und Miniwarenkorb sind andere Indizes für kürzere Einkaufsrhythmen, nicht der tägliche Austausch des gesamten VPI-Korbs. Die Doppelbehauptung ist falsch.\n\nAnpassung alle fünf Jahre setzt voraus, dass der Korb dazwischen hält und danach an die Gewohnheiten herangeführt wird. Tägliche Neuzusammenstellung würde die Vergleichbarkeit zerstören, komplette Nichtanpassung würde den Durchschnittshaushalt veralten lassen. Der Lehrtext wählt den mittleren Weg. Der Satz trifft ihn nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.44",
+    "title": "VPI zur Wertsicherung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verwendung des Verbraucherpreisindex außerhalb der Statistik:",
+    "statements": [
+      "Der Verbraucherpreisindex dient nicht nur der Berechnung der Inflationshöhe, sondern auch der Wertsicherung von Geldbeträgen, zum Beispiel von Mieten und Unterhaltszahlungen.",
+      "Ist der Index zu einem bestimmten Zeitpunkt gegenüber einem vertraglich festgelegten Index gestiegen, wird die Zahlung, zum Beispiel die Miete, angepasst.",
+      "Bei Lohn- und Gehaltsverhandlungen wird der Verbraucherpreisindex als Grundlage für das Ausmaß der Erhöhung von Löhnen und Gehältern herangezogen.",
+      "Der Verbraucherpreisindex darf laut Lehrtext ausschließlich in der Statistik verwendet werden und niemals in Verträgen.",
+      "Unterhaltszahlungen können laut Lehrtext nicht an einen Index gebunden und wertgesichert werden."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Statistik und Vertrag nutzen denselben Index. Der VPI misst die Inflationshöhe und sichert Geldbeträge, etwa Mieten und Unterhaltszahlungen, gegen den Kaufkraftverlust. Steigen die Preise, soll der nominale Betrag nachziehen, damit die reale Leistung näher am vereinbarten Niveau bleibt. Der Abschnitt nennt diese Wertsicherung ausdrücklich neben der Berechnung der Inflationshöhe. Der Index verlässt das Statistikamt und steht in Verträgen.\n\nDie Aussage ist wahr.",
+      "Indexklausel heißt: Vergleich mit einem festgelegten Stand. Ist der Index später höher, wird die Zahlung angepasst, im Beispiel die Miete. Der Text beschreibt genau diesen Mechanismus. Ohne den Vergleich zum vertraglichen Referenzindex gäbe es keine automatische Anpassung. Die Miete folgt dem Index, weil der reale Wohnwert sonst mit der Inflation schwinden würde. Der Satz trifft die Wertsicherung am Mietbeispiel.\n\nDie Aussage ist wahr.",
+      "Löhne und Gehälter verhandeln über denselben Maßstab. Der VPI liefert die Grundlage für das Ausmaß der Erhöhung. Das knüpft an die Kaufkraft und an die Lohn-Preis-Spirale: Beschäftigte wollen den Preisniveauanstieg im Nominallohn sehen. Der Lehrtext stellt diese Verwendung neben Miete und Unterhalt. Verhandlungen bleiben Verhandlungen, aber die Indexzahl ist die genannte Grundlage für das Ausmaß.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Statistik und niemals Verträge widerspricht den Beispielen Miete, Unterhalt und Lohnverhandlung. Der Abschnitt hebt gerade hervor, dass der VPI nicht nur Berechnungsgrundlage der Inflationshöhe ist. Die Absolute „ausschließlich“ und „niemals“ streicht die Wertsicherung. Der Index ist öffentlich und vertragstauglich, so der Lehrtext.\n\nWertsicherung braucht denselben Index, den die Statistik berechnet. Miete und Unterhalt sind Geldbeträge im Vertrag, keine statistischen Fußnoten. Wer die Verwendung auf die Statistik beschränkt, macht die im Buch genannten Anpassungen unmöglich. Die Aussage ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Unterhalt steht ausdrücklich in der Klammer der Wertsicherung. Geldbeträge wie Mieten und Unterhaltszahlungen können über den Index angepasst werden, wenn der Index gegenüber dem vertraglich festgelegten Stand gestiegen ist. Die Behauptung, Unterhalt könne nicht indexgebunden sein, streicht ein Beispiel des Texts. Wertsicherung gilt für solche Zahlungen gerade deshalb, weil Inflation sonst den realen Unterhalt schmälert.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.45",
+    "title": "Mikro- und Miniwarenkorb",
+    "context": "Bewerten Sie die folgenden Aussagen zu weiteren Preisindizes neben dem Verbraucherpreisindex:",
+    "statements": [
+      "Nicht alle Positionen des Warenkorbs werden täglich oder wöchentlich gekauft.",
+      "Der Index des täglichen Bedarfs, der Mikrowarenkorb, spiegelt die Inflation eines täglichen Einkaufs wider.",
+      "Der Index des wöchentlichen Bedarfs, der Miniwarenkorb, spiegelt die Inflation eines wöchentlichen Großeinkaufs wider.",
+      "Die Schwankungen der Preise für die Positionen im Mikrowarenkorb sind im Schnitt größer ausgefallen als für jene Positionen, anhand derer der Verbraucherpreisindex berechnet wird.",
+      "Mikrowarenkorb und Verbraucherpreisindex müssen immer identische Verläufe zeigen, weil beide denselben täglichen Einkauf abbilden."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Miete, manche Dienstleistungen, langlebige Güter: Sie sitzen im VPI-Korb, werden aber nicht jeden Tag und nicht jede Woche gekauft. Der Abschnitt begründet damit, warum neben dem VPI weitere Indizes berechnet werden, die die Preisentwicklung für die laufenden Einkäufe besser wiedergeben. Der volle Korb misst Lebenshaltung insgesamt, nicht den Kassenbon des Tages. Genau diese Lücke füllen Mikro- und Miniwarenkorb.\n\nDie Aussage ist wahr.",
+      "Täglicher Einkauf hat einen eigenen Index. Der Mikrowarenkorb, Index des täglichen Bedarfs, soll die Inflation genau dieses täglichen Einkaufs spiegeln. Milch, Brot, Zeitung: Positionen mit hoher Kaufhäufigkeit. Wer jeden Tag einkauft, spürt diese Preise unmittelbarer als die seltenen Positionen des großen Korbs. Der Lehrtext gibt dem Mikrowarenkorb genau diese Aufgabe.\n\nDie Aussage ist wahr.",
+      "Wöchentlicher Großeinkauf ist der Miniwarenkorb, Index des wöchentlichen Bedarfs. Der Abschnitt stellt ihn neben den Mikrowarenkorb. Der Rhythmus ist die Woche, nicht der Tag und nicht das ganze Lebenshaltungsbündel des VPI. Wer samstags den Wagen füllt, folgt eher diesem Ausschnitt. Drei Indizes, drei Zeithorizonte des Kaufens: Tag, Woche, Lebenshaltung.\n\nDie Aussage ist wahr.",
+      "Größere Schwankungen im Mikrowarenkorb sind die Beobachtung der Grafik im Buch. Im Schnitt fielen die Preisbewegungen der täglichen Positionen stärker aus als jene, anhand derer der VPI berechnet wird. Der volle Korb glättet durch Mieten und andere ruhigere Positionen. Der tägliche Ausschnitt zittert stärker. Der Satz gibt diese im Text festgehaltene Auswertung wieder, ohne eine einzelne Prozentzahl zu verlangen.\n\nDie Aussage ist wahr.",
+      "Identische Verläufe immer und derselbe tägliche Einkauf: Beides trifft nicht zu. Der VPI umfasst Positionen, die nicht täglich gekauft werden; der Mikrowarenkorb ist der tägliche Ausschnitt. Die Grafik zeigt gerade, dass die Schwankungen im Schnitt größer waren als beim VPI. Müssten die Verläufe immer identisch sein, gäbe es keinen Grund für einen eigenen Index. Die Behauptung widerspricht Zweck und Befund.\n\nNote: VPI, Mikrowarenkorb und Miniwarenkorb messen verwandte, aber nicht dieselben Einkaufsrhythmen. Wer sie gleichsetzt, verliert genau den Grund, warum das Buch mehrere Indizes nebeneinander stellt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.46",
+    "title": "Persönliche Betroffenheit durch Inflation",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie stark einzelne Personen von der Inflation betroffen sind:",
+    "statements": [
+      "Die Preisentwicklung bei den einzelnen Produkten und Leistungen kann höchst unterschiedlich ausfallen.",
+      "Für jede einzelne Person kommt es sehr darauf an, was sie für gewöhnlich kauft, um beurteilen zu können, wie sehr sie von der Inflation betroffen ist.",
+      "Jede Person ist von der Inflation immer genau im Ausmaß der durchschnittlichen Rate des Verbraucherpreisindex betroffen, unabhängig von ihrem eigenen Einkauf.",
+      "Der Verbraucherpreisindex bildet einen durchschnittlichen Haushalt ab, nicht zwingend das Kaufverhalten jeder einzelnen Person.",
+      "Wer vor allem Güter kauft, deren Preise stark steigen, ist trotzdem nie stärker betroffen als der Durchschnitt des Warenkorbs."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Einzelne Positionen laufen auseinander. Der Lehrtext verweist auf Auswertungen der wichtigsten Preisänderungen bei einzelnen Produkten und Leistungen: Die Entwicklung kann höchst unterschiedlich ausfallen. Energie kann davoneilen, andere Güter kaum. Der Durchschnittsindex verdichtet diese Spreizung, löscht sie aber nicht. Wer nur die eine Rate sieht, sieht nicht die darunter liegende Vielfalt. Der Satz hält diese Vielfalt fest.\n\nDie Aussage ist wahr.",
+      "Eigener Korb, eigene Betroffenheit. Was jemand für gewöhnlich kauft, entscheidet, wie sehr die Preisänderungen diese Person treffen. Der Abschnitt sagt das ausdrücklich: Es kommt sehr darauf an. Heizt jemand mit dem Energieträger, der am stärksten steigt, spürt er mehr als jemand, dessen Ausgaben woanders liegen. Die amtliche Rate bleibt der Durchschnitt; das persönliche Gewicht der Positionen macht die individuelle Lage.\n\nDie Aussage ist wahr.",
+      "Immer genau die Durchschnittsrate, unabhängig vom Einkauf, widerspricht dem Satz über die individuelle Kaufstruktur. Der VPI gilt für den durchschnittlichen Haushalt. Weicht der eigene Warenkorb ab, weicht die gefühlte und tatsächliche Betroffenheit ab. Die Absolute „immer genau“ und „unabhängig“ streicht genau die Pointe des Abschnitts. Durchschnitt ist nicht Schicksal jeder Person.\n\nZwei Haushalte, dieselbe VPI-Rate, verschiedene Einkaufszettel: Der eine kauft stark gestiegene Positionen, der andere ruhigere. Ihre persönliche Inflation fällt auseinander. Der Lehrtext macht aus diesem Auseinanderlaufen den Schluss, dass es auf das gewöhnliche Kaufen ankommt. Die Behauptung der immer gleichen Betroffenheit ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Durchschnittlicher Haushalt ist die Bezugsgröße des Korbs. Rund 800 Positionen bilden, was dieser Haushalt zum Leben braucht, nicht jedes individuelle Muster. Wer kein Auto hat, trägt andere Gewichte als der Durchschnitt; wer viel Energie braucht, ebenfalls. Der Index bleibt gültig als Maß der allgemeinen Entwicklung und bleibt unvollständig als Maß jeder einzelnen Person. Der Satz hält diese Grenze.\n\nDie Aussage ist wahr.",
+      "Nie stärker betroffen als der Durchschnitt, obwohl man gerade die stark steigenden Güter kauft: Das kehrt die Logik um. Wer die davoneilenden Positionen übergewichtet, ist stärker betroffen als der gemittelte Korb. Der Text führt die unterschiedliche Entwicklung der Positionen gerade deshalb an, weil individuelle Gewichte die Betroffenheit verschieben. „Trotzdem nie stärker“ ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.47",
+    "title": "Preisstabilität bei zwei Prozent",
+    "context": "Bewerten Sie die folgenden Aussagen zum Inflationsziel der Europäischen Zentralbank:",
+    "statements": [
+      "Die Europäische Zentralbank sieht eine Inflationsrate von 2 Prozent pro Jahr als bestmöglich zum Erhalt der Preisstabilität an.",
+      "Bei einer höheren Inflationsrate ist die Steigerung des allgemeinen Preisniveaus zu hoch und wird von den Wirtschaftsteilnehmern auch deutlich wahrgenommen.",
+      "Für die stabile Entwicklung der Wirtschaft wird Preisstabilität, das heißt eine geringe Inflation, als förderlich angesehen.",
+      "Preisstabilität im Sinne der Europäischen Zentralbank verlangt laut Lehrtext eine Inflationsrate von genau 0 Prozent.",
+      "Eine Inflationsrate deutlich über 2 Prozent gilt im Lehrtext als ebenso ideal für die Preisstabilität wie 2 Prozent."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Zwei Prozent pro Jahr sind im Buch die Zielgröße der EZB für den Erhalt der Preisstabilität. Nicht null, nicht eine hohe Rate: bestmöglich zum Erhalt. Der Abschnitt überschreibt das ausdrücklich mit Preisstabilität bei einer Inflationsrate von 2 Prozent. Wer das Ziel aus anderen Quellen kennt, findet es hier im Lehrtext begründet, nicht als freie Erfindung. Die EZB steht für die Eurozone, deren Geldwertstabilität auch über den HVPI bewertet wird.\n\nDie Aussage ist wahr.",
+      "Höher als dieses Maß heißt: zu hohe Steigerung des allgemeinen Preisniveaus, und die Wirtschaftsteilnehmer nehmen sie deutlich wahr. Genau das macht eine höhere Rate für die Preisstabilität ungeeignet. Wahrnehmung und Höhe gehören zusammen: Eine schleichende, geringe Rate kann im Alltag untergehen, eine deutlich höhere nicht. Der Text koppelt beides an die Begründung, warum 2 Prozent und nicht mehr als bestmöglich gelten.\n\nDie Aussage ist wahr.",
+      "Geringe Inflation, nicht rasende, nicht zwingend null: Preisstabilität in diesem Sinn gilt als förderlich für die stabile Entwicklung der Wirtschaft. Der Abschnitt setzt Preisstabilität in Klammern mit geringer Inflation gleich. Stabilität der Wirtschaft und Stabilität des Geldwerts sind hier verbunden. Der Satz gibt diese Bewertung wieder, ohne daraus ein Gesetz über alle historischen Phasen zu machen.\n\nDie Aussage ist wahr.",
+      "Genau 0 Prozent verlangt der Lehrtext nicht. Im Gegenteil: Das 2-Prozent-Ziel bedeutet nicht, dass die Rate 0 Prozent betragen sollte. Null würde in die Nähe von Deflationserwartungen führen, die der nächste Gedanke ausführt. Preisstabilität ist hier geringe Inflation um 2 Prozent, nicht das Einfrieren aller Preise. Die Gleichsetzung mit genau null widerspricht der Überschrift und der Begründung der EZB im Text.\n\nWer 0 Prozent als EZB-Ziel setzt, verwechselt Preisstabilität mit unveränderten Etiketten. Der Abschnitt will eine geringe, wahrnehmungsarme Steigerung, nicht den Stillstand des Niveaus. Genau 0 Prozent ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Deutlich über 2 Prozent ist im Text zu hoch und wird deutlich wahrgenommen, also nicht ideal. Bestmöglich ist 2 Prozent pro Jahr. Die Behauptung, eine deutlich höhere Rate sei ebenso ideal, streicht den Abstand, den die EZB-Begründung zieht. Zu hohe Steigerung des allgemeinen Preisniveaus ist gerade der Grund, nicht mehr als Ziel zu nehmen. Der Satz ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.48",
+    "title": "Warum nicht null Prozent",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, warum die Inflationsrate nicht 0 Prozent betragen sollte:",
+    "statements": [
+      "Das Ziel einer Inflationsrate von 2 Prozent bedeutet nicht, dass die Inflationsrate 0 Prozent betragen sollte.",
+      "Ist die Inflationsrate deutlich niedriger als 2 Prozent, würden sich manche Wirtschaftsteilnehmer vermutlich sinkende Preise erwarten.",
+      "Deflation bedeutet, dass der Wert des Geldes wegen sinkender Preise steigt.",
+      "Wer sinkende Preise erwartet, könnte mit Anschaffungen und Käufen zuwarten, was für die Wirtschaft eine dämpfende Wirkung hätte.",
+      "Eine Inflationsrate von 0 Prozent ist laut Lehrtext das erklärte Ziel der Europäischen Zentralbank, weil Deflation die Nachfrage immer belebt."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Zwei Prozent sind nicht die Vorstufe zu null. Der Abschnitt sagt ausdrücklich, das Ziel bedeute nicht, dass die Rate 0 Prozent betragen sollte. Preisstabilität bleibt geringe Inflation, nicht das Verschwinden jeder Preissteigerung. Die folgenden Sätze begründen, warum null oder deutlich darunter gefährlich für die Nachfrage werden kann. Wer 2 Prozent als Umweg zu 0 Prozent liest, verfehlt die Pointe des Absatzes.\n\nDie Aussage ist wahr.",
+      "Deutlich unter 2 Prozent verschiebt Erwartungen. Manche Wirtschaftsteilnehmer würden sich vermutlich sinkende Preise erwarten, eine Deflation. Der Text formuliert das als Vermutung über Erwartungen, nicht als Naturgesetz, aber als den entscheidenden Mechanismus. Erwartete Preisrückgänge ändern das Kaufverhalten, noch bevor die Preise tatsächlich fallen müssen. Die Schwelle „deutlich niedriger als 2 Prozent“ sitzt genau in diesem Satz des Buchs.\n\nDie Aussage ist wahr.",
+      "Sinkende Preise, steigender Geldwert: Das ist Deflation in der Klammer des Lehrtexts. Der Wert des Geldes steigt, weil dieselbe Summe mehr Güter kauft, sobald die Preise fallen. Es ist die Umkehrung der Inflation, bei der der Binnenwert sinkt. Der Abschnitt setzt Deflation genau so: Wert des Geldes wegen sinkender Preise steigt. Kaufkraft steigt, das Preisniveau fällt. Der Satz trifft die Definition.\n\nDie Aussage ist wahr.",
+      "Warten lohnt, wenn morgen billiger ist. Wer sinkende Preise erwartet, schiebt Anschaffungen und Käufe auf. Heutige Nachfrage fällt aus, die Wirtschaft wird gedämpft. Der Lehrtext nennt diese dämpfende Wirkung ausdrücklich als Folge des Zuwartens. Genau deshalb soll die Rate nicht deutlich unter 2 Prozent und nicht bei 0 Prozent als Ziel liegen. Nachfrage heute braucht die Erwartung, dass Warten nicht belohnt wird.\n\nEin Haushalt, der das Auto oder die Maschine später günstiger erwartet, kauft nicht jetzt. Viele solche Haushalte und Unternehmen zugleich lassen Aufträge und Umsätze liegen. Die dämpfende Wirkung ist aggregierte Zurückhaltung, nicht die Sparsamkeit einer einzelnen Person. Der Abschnitt macht aus dieser Zurückhaltung das Argument gegen ein Nullziel.\n\nDie Aussage ist wahr.",
+      "Null Prozent als erklärtes EZB-Ziel steht so nicht im Text; bestmöglich sind 2 Prozent. Deflation belebt die Nachfrage nicht, sie dämpft sie, weil Käufe aufgeschoben werden. Die Begründung „weil Deflation die Nachfrage immer belebt“ ist doppelt falsch: Sie verdreht die Wirkungsrichtung und unterstellt der EZB das Nullziel. Der Abschnitt warnt vor dem Zuwarten, er feiert es nicht.\n\nNote: Inflation senkt den Binnenwert, Deflation hebt ihn, indem Preise sinken. Für die Güternachfrage kann genau dieser erwartete Anstieg des Geldwerts schädlich sein, weil Warten rational wird. Das 2-Prozent-Ziel hält Abstand zu dieser Falle, ohne hohe, deutlich wahrgenommene Inflation zu wollen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

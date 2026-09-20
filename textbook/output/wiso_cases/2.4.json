@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.01",
+    "title": "Kohlenstoffbudget als Leitgröße",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Wirtschaften innerhalb der Erdsystemgrenzen und Kohlenstoffbudget:",
+    "statements": [
+      "Unter expliziter Berücksichtigung der Erdsystemgrenzen zu wirtschaften bedeutet beispielsweise, innerhalb des verbleibenden Kohlenstoffbudgets zu bleiben.",
+      "Das Kohlenstoffbudget bezeichnet die maximale Menge an Kohlendioxid, die weltweit noch emittiert werden darf, ohne eine bestimmte Erwärmungsgrenze zu überschreiten.",
+      "Das Kohlenstoffbudget wird im Abschnitt in Kilogramm Methan angegeben, nicht in Gigatonnen CO2.",
+      "Als Erwärmungsgrenzen nennt der Text unter anderem die in den Pariser Klimazielen festgelegten 1,5 °C oder 2 °C über dem vorindustriellen Niveau.",
+      "Das Budget stützt sich laut Abschnitt nicht auf den Zusammenhang zwischen kumulierten Treibhausgasemissionen und der globalen Erwärmung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Grenzenbewusstes Wirtschaften bleibt abstrakt, solange niemand eine konkrete Restmenge nennt. Der Abschnitt macht das verbleibende Kohlenstoffbudget zum Beispiel: wer innerhalb der Erdsystemgrenzen wirtschaften will, bleibt innerhalb dieser Restmenge an noch zulässigem CO2. Das Budget ist damit eine Leitgröße für Reduktionsziele, nicht ein unverbindliches Etikett. Wer Grenzen achtet, ohne das Budget zu beachten, lässt genau dieses Beispiel weg.\n\nReduktionsziele ohne Restmenge bleiben Wunschlisten. Innerhalb des Budgets zu bleiben übersetzt die Erdsystemgrenze in eine noch verfügbare CO2-Menge, an der sich Maßnahmen ausrichten lassen. Das Beispiel ist bewusst operativ gewählt: nicht irgendein Umweltgefühl, sondern die Leitgröße in Gigatonnen.\n\nDie Aussage ist wahr.",
+      "Maximale Restmenge an Kohlendioxid weltweit, ohne eine gewählte Erwärmungsgrenze zu reißen: das ist die Definition im Text. Es geht nicht um den Ausstoß eines einzelnen Jahres in einem Land, sondern um die kumulierte, noch verfügbare Menge. Paris liefert mit 1,5 °C und 2 °C die Schwellen, an denen sich dieses Maximum festmachen lässt. Ohne diese Obergrenze wäre jedes weitere Emittieren mit demselben Wort vereinbar.\n\nLandesstatistiken eines Kalenderjahres ersetzen diese globale, kumulierte Obergrenze nicht. Sobald die gewählte Erwärmungsmarke festliegt, folgt daraus, wie viel CO2 weltweit noch Platz hat, nicht wie viel ein einzelner Betrieb im letzten Quartal ausgestoßen hat.\n\nDie Aussage ist wahr.",
+      "Kilogramm Methan als Einheit würde das Budget in ein anderes Gas und in eine andere Größenordnung verschieben. Der Text gibt Gigatonnen CO2 an, also Milliarden Tonnen Kohlendioxid. Die Leitgröße für Klimaschutzmaßnahmen hängt an dieser Einheit und an CO2, nicht an einer Methan-Kilogramm-Skala. Wer die Einheit austauscht, kann das genannte Restbudget nicht mehr lesen.\n\nGigatonnen CO2 als Angabe ist die Brücke zwischen Wissenschaft und Zielsetzung. Eine Methanskala in Kilogramm würde denselben Restvorrat weder vergleichbar machen noch zu den Pariser Gradzahlen passen, die der Text an das Budget bindet.\n\nDie Aussage ist falsch.",
+      "Vorindustrielles Niveau plus 1,5 °C oder plus 2 °C: so bindet der Abschnitt das Kohlenstoffbudget an die Pariser Klimaziele. Beide Schwellen stehen als Beispiele für die Erwärmungsgrenze, die nicht überschritten werden soll. Das Budget ist die Menge, die weltweit noch emittiert werden darf, ohne diese Marken zu reißen. Die Nennung beider Gradzahlen ist deshalb Teil der Definition, nicht Schmuck.\n\n1,5 °C und 2 °C sind die im Text genannten Marken über dem vorindustriellen Niveau, nicht frei erfundene Wunschtöne. Das Budget existiert als Maximum relativ zu einer solchen Grenze; ohne Paris-Bezug verlöre die Leitgröße im Abschnitt ihren konkreten Anker.\n\nDie Aussage ist wahr.",
+      "Kumulierte Treibhausgase und globale Erwärmung sind im Text die wissenschaftliche Grundlage des Budgets, nicht eine Randnotiz. Wer diesen Zusammenhang streicht, macht aus der Leitgröße eine reine Setzung ohne Emissionslogik. Genau umgekehrt argumentiert der Abschnitt: das Budget ruht auf diesem Zusammenhang und dient der Festlegung von Klimaschutz und Reduktionszielen. Die Verneinung trifft die Begründung nicht.\n\nLeitgröße für Klimaschutzmaßnahmen heißt: wer den kumulierten Zusammenhang leugnet, kann mit dem Budget keine Reduktionsziele mehr begründen. Der Abschnitt stellt Wissenschaft und Zielsetzung in eine Reihe, nicht gegeneinander.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.02",
+    "title": "Restbudget, Tempo und Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zum verbleibenden Kohlenstoffbudget und zu österreichischen Treibhausgasemissionen:",
+    "statements": [
+      "Das verbleibende Kohlenstoffbudget für 1,5 °C beträgt 380 Milliarden Tonnen CO2, bezogen auf eine Wahrscheinlichkeit von 50 Prozent, die Erwärmung darunter zu halten.",
+      "Bei der derzeitigen Emissionsrate wäre dieses Budget in nur neun Jahren aufgebraucht.",
+      "In Österreich begannen die Treibhausgasemissionen im Jahr 2022 erstmals zu sinken.",
+      "Die österreichische Reduktion entspricht bereits der Effort-Sharing-Verordnung.",
+      "Die Effort-Sharing-Verordnung verlangt keinen angemessenen Beitrag zur Reduktion der globalen Treibhausgase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "380 Milliarden Tonnen CO2 sind die Restmenge, die der Text für das 1,5-Grad-Ziel bei 50 Prozent Wahrscheinlichkeit nennt. Die Zahl ist an diese Schwelle und an diese Wahrscheinlichkeit gekoppelt, nicht an eine beliebige Wunschgrenze. Wer nur 1,5 °C hört und die 50 Prozent weglässt, unterschlägt die im Abschnitt angegebene Unsicherheit. Das Restbudget ist damit eine bedingte Leitgröße, keine Garantie.\n\n380 GtCO2 und 50 Prozent Wahrscheinlichkeit gehören zusammen. Eine höhere Sicherheit würde ein engeres Restbudget verlangen, der Text nennt jedoch genau diese Kombination für 1,5 °C. Die Leitgröße ist damit transparent unsicher, nicht scheingenau.\n\nDie Aussage ist wahr.",
+      "Neun Jahre bei heutiger Rate: so kurz ist der Zeithorizont, den der Text an das Restbudget hängt. Die Leitgröße schmilzt nicht in Jahrhunderten, sondern in einem knappen Jahrzehnt, wenn das Tempo bleibt. Klimaschutzmaßnahmen und Reduktionsziele bekommen dadurch Druck aus der Uhr, nicht nur aus der Tonnenangabe. Wer das Budget als fernen Vorrat liest, widerspricht diesem Tempo.\n\nNeun Jahre sind der Horizont bei unverändertem Tempo, kein politischer Wunschtermin. Wer das Restbudget als Vorrat für Generationen behandelt, unterschätzt die im Abschnitt genannte Aufbrauchgeschwindigkeit und den Druck auf Reduktionsziele.\n\nDie Aussage ist wahr.",
+      "2022 markiert im Text den ersten Rückgang der österreichischen Treibhausgasemissionen. Sinken ist damit ein beobachteter Richtungswechsel, kein Dauerzustand seit Jahrzehnten. Der Satz bleibt an dieses Jahr und an THG gebunden. Ein früherer, schon langer Abwärtstrend steht dort nicht.\n\nErstmals sinken 2022 heißt Richtungswechsel, nicht schon Erfüllung internationaler Lastenteilung. Der Satz bleibt an österreichische THG und an dieses Jahr gebunden; frühere, längst etablierte Rückgänge behauptet der Text nicht.\n\nDie Aussage ist wahr.",
+      "Erstmals sinken und die Effort-Sharing-Verordnung erfüllen sind zwei verschiedene Messlatten. Der Abschnitt sagt ausdrücklich, die Reduktion entspreche nicht dieser Verordnung, die einen angemessenen Beitrag zur globalen Minderung verlangt. Ein erster Rückgang 2022 reicht dafür nicht. Wer beides gleichsetzt, macht aus einem Anfang eine erfüllte Pflicht.\n\nEffort Sharing misst einen angemessenen Beitrag zur globalen Minderung, nicht bloß das Vorzeichen der nationalen Kurve. Ein erster Rückgang kann wahr sein und trotzdem hinter der Verordnung zurückbleiben, genau so beschreibt es der Abschnitt.\n\nDie Aussage ist falsch.",
+      "Angemessener Beitrag zur Reduktion der globalen Treibhausgase ist genau das, was die Effort-Sharing-Verordnung im Text verlangt. Die Verneinung streicht diese Anforderung. Österreichs bisherige Minderung wird daran gemessen und als unzureichend beschrieben. Ohne den geforderten Beitrag bleibt die Verordnung ein leerer Name.\n\nDie Verordnung ist im Text die Messlatte, an der Österreichs Reduktion scheitert, nicht ein beliebiges Etikett ohne Inhalt. Wer den angemessenen Beitrag streicht, macht aus der Diagnose eine leere Rechtsformel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.03",
+    "title": "1,5 Grad als politische Risikoschwelle",
+    "context": "Bewerten Sie die folgenden Aussagen zur 1,5-Grad-Grenze im Verhältnis zu den Erdsystemgrenzen:",
+    "statements": [
+      "Johan Rockström und andere Klimaforscher argumentieren, dass die 1,5-Grad-Grenze weniger eine feste Erdsystemgrenze als eine politische Willensbekundung darstellt.",
+      "Planetare Grenzen resultieren aus komplexen Wechselwirkungen zwischen biophysikalischen und gesellschaftlichen Prozessen.",
+      "Die 1,5-Grad-Zielsetzung basiert primär auf politischer Entscheidungsfindung und wissenschaftlichen Risikobewertungen.",
+      "Die 1,5-Grad-Grenze stellt nach dem Abschnitt eine absolute biophysikalische Grenze dar.",
+      "Die Klimakrise ist die einzige Erdsystemgrenze, die von Naturwissenschaftlerinnen und Naturwissenschaftlern definiert wurde."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Feste Erdsystemgrenze und politische Willensbekundung stehen bei Rockström und Kolleginnen sowie Kollegen nicht auf derselben Stufe. 1,5 °C wird häufig als kritische Schwelle des Klimawandels betrachtet, gilt in dieser Argumentation aber weniger als harte planetare Kante denn als politisch gesetztes Ziel. Die Unterscheidung verhindert, die Gradzahl mit den neun quantifizierten Grenzen zu verwechseln. Wer 1,5 °C zur einzigen Naturkonstante erklärt, übergeht genau diesen Einwand.\n\nWillensbekundung statt fester Erdsystemgrenze: Rockström und andere trennen die populäre 1,5-Grad-Schwelle von den neun quantifizierten planetaren Prozessen. Die Gradzahl bleibt wichtig als Risiko- und Politikmarke, sie wird dadurch aber nicht zur einzigen biophysikalischen Kante des Planeten.\n\nDie Aussage ist wahr.",
+      "Biophysik und Gesellschaft greifen ineinander, wenn planetare Grenzen entstehen. Der Text führt sie nicht als reine Laborwerte ohne Menschen, sondern als Ergebnis komplexer Wechselwirkungen. Politik und Nutzung sitzen damit in der Entstehung der Grenzen mit drin, nicht erst hinterher als Kommentar. Eine nur physikalische Lesart ohne gesellschaftliche Prozesse wäre zu schmal.\n\nWechselwirkungen zwischen Biophysik und Gesellschaft erklären, warum Grenzen nicht im Labor allein entstehen. Nutzung, Macht und Stoffströme sitzen in derselben Entstehung wie Eis, Chemie und Strömung. Eine rein technische Lesart ohne Gesellschaft wäre zu schmal für den Abschnitt.\n\nDie Aussage ist wahr.",
+      "Politische Entscheidung plus wissenschaftliche Risikobewertung: so erklärt der Abschnitt die Herkunft der 1,5-Grad-Zielsetzung. Primär heißt hier: nicht als unmittelbare Kopie einer einzelnen biophysikalischen Kante, sondern als gewählte Schwelle auf Basis von Risikoanalysen. IPCC-Befunde und Pariser Prozess gehören in diese Mischung. Wer nur Naturgesetz oder nur Willkür sieht, zerlegt die Doppelbasis.\n\nPolitische Entscheidung und Risikobewertung tragen die Zielsetzung gemeinsam. Der IPCC liefert Folgenabschätzung, Paris setzt die Marke; beides zusammen ist primär, nicht eine einzelne Naturkonstante, die man nur noch ablesen müsste.\n\nDie Aussage ist wahr.",
+      "Absolute biophysikalische Grenze wäre eine harte Kante im Erdsystem selbst. Der Text sagt das Gegenteil: die Schwelle markiert das Risiko schwerwiegender Klimaauswirkungen, ist aber keine absolute biophysikalische Grenze. Es handelt sich um eine politisch gewählte Risikoschwelle auf präventiven Erwägungen. Die Absolutheit hält der Abschnitt ausdrücklich nicht.\n\nPräventive Erwägungen begründen eine Risikoschwelle, keine absolute Kante im Erdsystem. Signifikante Schäden können schon vor einer harten biophysikalischen Grenze eintreten; genau deshalb warnt der Text vor der Verwechslung von Politikmarke und Naturgesetz.\n\nDie Aussage ist falsch.",
+      "Nur Klima zu nennen, streicht die übrigen acht der neun identifizierten Grenzen. Der Text stellt die Klimakrise als eine von mehreren Erdsystemgrenzen dar, die Naturwissenschaftlerinnen und Naturwissenschaftler definiert haben. Ozon, Biosphäre, Landnutzung und die anderen genannten Prozesse gehören dazu. Die Alleinstellung des Klimas widerspricht dieser Mehrzahl.\n\nMehrere Grenzen, nicht nur Klima: Ozon, Aerosole, Ozeane, Kreisläufe, Wasser, Land, Biosphäre und neue Substanzen stehen neben der Klimakrise. Die Alleinstellung einer einzigen Dimension widerspricht der im Text genannten Neunzahl.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.04",
+    "title": "Paris 2015 und der IPCC-Sonderbericht",
+    "context": "Bewerten Sie die folgenden Aussagen zur internationalen Festlegung der 1,5-Grad-Grenze:",
+    "statements": [
+      "Die Wahl der 1,5-Grad-Grenze als internationales Klimaziel geht auf das Pariser Abkommen von 2015 zurück.",
+      "Das Abkommen wurde maßgeblich durch den Druck besonders vulnerabler Staaten geprägt.",
+      "Wissenschaftliche Studien, insbesondere der IPCC-Sonderbericht von 2018, belegten, dass bereits eine Erwärmung von 1,5 °C signifikante negative Folgen für Mensch und Umwelt hätte.",
+      "Der IPCC-Sonderbericht von 2018 zeigte, dass 1,5 °C für Mensch und Umwelt ohne nennenswerte Folgen bleibt.",
+      "Meeresspiegelanstieg, Artensterben und Ernterückgänge nennt der Abschnitt nicht als mögliche Folgen bereits bei 1,5 °C."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "2015 und Paris sind die Datums- und Vertragsmarke für die internationale Wahl von 1,5 °C. Der Abschnitt hängt die Zielwahl nicht an ein beliebiges späteres Gipfeltreffen, sondern an dieses Abkommen. Ohne diese Herkunft wäre die Gradzahl nur eine Forscherpräferenz. Die Aussage gibt den historischen Anker wieder.\n\nParis 2015 ist der Vertragsort der internationalen Wahl, nicht ein späteres Forschungsjahr. Die 1,5-Grad-Marke als Klimaziel hängt an diesem Abkommen, bevor der IPCC-Sonderbericht die Folgen bei genau dieser Schwelle weiter schärft.\n\nDie Aussage ist wahr.",
+      "Besonders vulnerable Staaten übten den Druck, der das Abkommen maßgeblich prägte. Es war also nicht nur das Ergebnis der größten historischen Emittenten. Wer Paris nur als Deal der Industriestaaten unter sich liest, lässt genau diese Prägung weg. Vulnerabilität sitzt in der Entstehungsgeschichte des Ziels, nicht erst in den späteren Schadenslisten.\n\nVulnerabilität als treibender Druck bedeutet: Staaten, die besonders treffen können, haben die Zielwahl mitgeprägt. Das Abkommen ist damit nicht nur ein Kompromiss der größten historischen Emittenten unter sich.\n\nDie Aussage ist wahr.",
+      "Bereits 1,5 °C, nicht erst weit höhere Werte: der IPCC-Sonderbericht 2018 belegt signifikante negative Folgen für Mensch und Umwelt. Extremwetter, Meeresspiegel, Artensterben und Ernten stehen in dieser Belegliste. Die Schwelle ist damit risikobesetzt, auch wenn sie keine absolute biophysikalische Kante ist. Wer 1,5 °C als harmlos abstempelt, widerspricht diesem Bericht im Text.\n\nExtremwetter, Meeresspiegel, Artensterben und Ernten sind die konkreten Folgebilder zu 1,5 °C. Der Sonderbericht 2018 belegt signifikante Schäden für Mensch und Umwelt bereits an dieser Schwelle, nicht erst weit darüber.\n\nDie Aussage ist wahr.",
+      "Ohne nennenswerte Folgen wäre das Gegenteil dessen, was der Sonderbericht im Abschnitt belegt. Signifikante Schäden für Mensch und Umwelt sind der Kern der 2018er Aussage. Präventive Erwägungen und die politische Wahl der Schwelle setzen genau auf diesem Risiko auf. Folgenlosigkeit bei 1,5 °C hält der Text nicht.\n\nFolgenlosigkeit bei 1,5 °C würde den Sonderbericht und die präventive Wahl der Marke entwerten. Der Abschnitt stützt die Schwelle gerade auf belegte Risiken, nicht auf Harmlosigkeit.\n\nDie Aussage ist falsch.",
+      "Meeresspiegelanstieg, Artensterben und Ernterückgänge stehen ausdrücklich neben verstärkten Extremwetterereignissen. Der Abschnitt zählt sie als Folgen, die bereits bei 1,5 °C drohen. Die Behauptung, sie kämen im Text nicht vor, ist daher unzutreffend. Wer die Liste leert, nimmt der Schwelle genau die genannten Schadensbilder.\n\nDie Schadensliste ist im Text vollständig genug, um Meeresspiegel, Artensterben und Ernterückgänge zu enthalten. Wer behauptet, sie fehlten, leert genau die Begründung, warum 1,5 °C als kritische, politisch gewählte Risikoschwelle gilt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.05",
+    "title": "Kippelemente im Bereich 1,5 bis 2 Grad",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kippelementen des Erdsystems:",
+    "statements": [
+      "Zu den genannten Kippelementen gehören der grönländische und der westantarktische Eisschild, die atlantische Umwälzzirkulation sowie tropische Korallenriffe.",
+      "Diese Systeme können bei anhaltender Erwärmung irreversible Veränderungen erfahren.",
+      "Zahlreiche Studien deuten darauf hin, dass Kippelemente bereits im Bereich von 1,5 bis 2 °C in kritische Phasen eintreten können.",
+      "Die Unsicherheit über die genauen Schwellenwerte spricht laut Abschnitt gegen eine konservative Herangehensweise.",
+      "Alle genannten Kippelemente werden erst weit oberhalb von 3 °C instabil und nie im Bereich von 1,5 bis 2 °C."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Grönland, Westantarktis, atlantische Umwälzzirkulation und tropische Korallenriffe sind die Systeme, die der Text als Kippelemente nennt. Die 1,5-Grad-Grenze erhält besondere Bedeutung gerade im Kontext dieser Elemente. Es geht nicht um beliebige Wetterlagen, sondern um Systeme, die bei anhaltender Erwärmung umkippen können. Die Aufzählung ist vollständig so im Abschnitt angelegt.\n\nEis, Strömung und Riffe sind Systeme, die umkippen können, keine gewöhnlichen Wetterlagen. Die besondere Bedeutung von 1,5 °C liegt im Abschnitt genau in der Nähe zu diesen Kippelementen, nicht in einer isolierten Temperaturästhetik.\n\nDie Aussage ist wahr.",
+      "Irreversible Veränderungen sind die Gefahr, die der Text an anhaltende Erwärmung knüpft. Eis, Strömung und Riffe kehren danach nicht einfach in den Ausgangszustand zurück. Deshalb wiegt die Nähe zu 1,5 bis 2 °C so schwer. Wer nur vorübergehende Schwankungen sieht, unterschätzt die im Text genannte Unumkehrbarkeit.\n\nUnumkehrbarkeit unterscheidet Kippen von einem kalten Winter, der wieder wärmer wird. Anhaltende Erwärmung kann Zustände hinterlassen, die sich nicht zurückstellen lassen; deshalb wiegt die Schwelle so schwer.\n\nDie Aussage ist wahr.",
+      "Kritische Phasen schon zwischen 1,5 und 2 °C: so fassen zahlreiche Studien den Bereich laut Abschnitt. Manche Elemente mögen erst bei höheren Temperaturen instabil werden, der Text hält aber fest, dass der genannte Bereich bereits gefährlich sein kann. Die 1,5-Grad-Grenze als Maßstab für Klimaschutz folgt aus dieser Nähe. Wer den kritischen Bereich erst weit darüber ansetzt, widerspricht diesem Hinweis.\n\nManche Elemente mögen erst höher instabil werden, zahlreiche Studien rücken den kritischen Bereich trotzdem auf 1,5 bis 2 °C. Die konservative Wahl von 1,5 °C als Maßstab folgt aus dieser Nähe, nicht aus der Hoffnung auf höhere Schwellen allein.\n\nDie Aussage ist wahr.",
+      "Unsichere Schwellenwerte führen im Text zur konservativen Herangehensweise, nicht zu ihrer Ablehnung. Gerade weil die genauen Kippunkte unbekannt sind, wurde 1,5 °C als Maßstab gewählt. Unsicherheit ist hier Grund zur Vorsicht, nicht zur Entwarnung. Die Formulierung gegen konservatives Vorgehen dreht die Begründung um.\n\nUnsicherheit über exakte Schwellenwerte ist im Text der Grund für Vorsicht. Wer daraus ableitet, konservatives Handeln sei unnötig, dreht die Begründung um und macht Unkenntnis zur Entwarnung.\n\nDie Aussage ist falsch.",
+      "Erst weit über 3 °C und niemals 1,5 bis 2 °C: das streicht den Studienbefund aus dem Abschnitt. Der Text lässt höhere Schwellen für einzelne Elemente zu, betont aber den kritischen Bereich schon bei 1,5 bis 2 °C. Die Absolute nie in diesem Bereich hält nicht. Genau diese Nähe begründet die Wahl der 1,5-Grad-Grenze.\n\nNie im Bereich 1,5 bis 2 °C zu kippen wäre mit dem Studienhinweis unvereinbar. Der Abschnitt lässt höhere Temperaturen für einzelne Systeme zu, streicht den unteren Bereich aber nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.06",
+    "title": "Neun identifizierte Erdsystemgrenzen",
+    "context": "Bewerten Sie die folgenden Aussagen zu den von der Naturwissenschaft identifizierten Erdsystemgrenzen:",
+    "statements": [
+      "Neun Erdsystemgrenzen wurden identifiziert, quantifiziert und mit Grenzen versehen, deren Überschreitung zu erheblichen Risiken und möglichen Schäden für die Menschen führt.",
+      "Zu den genannten Grenzen gehören Klima, Landnutzungsänderung und Integrität der Biosphäre.",
+      "Die Einbringung neuer Substanzen und Organismen zählt zu den identifizierten Erdsystemgrenzen.",
+      "Nur Klima und das stratosphärische Ozon wurden als Erdsystemgrenzen definiert; biochemische Kreisläufe und die Verfügbarkeit von Oberflächen- und Grundwasser gehören nicht dazu.",
+      "Übersäuerung der Ozeane sowie Aerosolbelastung der Atmosphäre stehen in der Aufzählung der neun Grenzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Identifiziert, quantifiziert, Grenzen festgelegt: so beschreibt der Abschnitt die neun Erdsystemgrenzen. Überschreitung bedeutet erhebliche Risiken und mögliche Schäden für Menschen, nicht nur eine technische Markierung auf einer Grafik. Die Neunzahl ist die vollständige Liste dieses Konzepts im Text, keine offene Sammlung. Wer weniger Grenzen zählt, als der Abschnitt nennt, verkürzt das Raster.\n\nQuantifiziert und mit Grenzen versehen heißt: die neun Prozesse sind messbar gemacht, nicht nur benannt. Überschreitung übersetzt sich in Risiken für Menschen, von Wasserzugang bis Arbeitsplätzen, nicht in eine bloß akademische Farbskala.\n\nDie Aussage ist wahr.",
+      "Klima, Landnutzung und Biosphäre sind drei der neun ausdrücklich genannten Dimensionen. Sie stehen neben Ozon, Aerosolen, Ozeanversauerung, biochemischen Kreisläufen, Wasserverfügbarkeit und neuen Substanzen. Die drei Beispiele sind also keine Ersatzliste für das Ganze, aber sie gehören zweifelsfrei hinein. Wer sie aus der Neunzahl streicht, widerspricht der Aufzählung.\n\nKlima, Landnutzung und Biosphäre sind drei Namen aus derselben Liste, keine Ersatz-Dreifaltigkeit für das ganze Raster. Sie zeigen, dass die Klimakrise eine unter mehreren Dimensionen ist, die Naturwissenschaft definiert hat.\n\nDie Aussage ist wahr.",
+      "Neue Substanzen und Organismen sind in der ersten Aufzählung eine eigene Grenze, später als Einbringung neuartiger Substanzen mit Chemikalien, Mikroplastik und Pestiziden konkretisiert. Der Prozess zählt damit zu den neun, nicht zu einem Anhang außerhalb des Rasters. Wer nur Klima und Land zählt, lässt genau diese chemisch-biologische Dimension weg.\n\nEinbringung neuer Substanzen und Organismen bleibt eine eigene Dimension, später mit Chemikalien, Mikroplastik und Pestiziden in Umwelt und Nahrungsketten gefüllt. Sie darf nicht in Klima oder Landnutzung aufgelöst werden.\n\nDie Aussage ist wahr.",
+      "Zwei Grenzen statt neun wäre eine harte Verengung. Biochemische Kreisläufe sowie Oberflächen- und Grundwasser stehen ausdrücklich in der Liste. Ozon und Klima gehören dazu, erschöpfen sie aber nicht. Die Ausschlussformulierung nur Klima und Ozon ist daher falsch.\n\nBiochemische Kreisläufe und Wasserverfügbarkeit stehen ausdrücklich in der Neunerliste. Nur Klima plus Ozon zu belassen hieße, den größten Teil der identifizierten Prozesse zu streichen, einschließlich Übersäuerung und Aerosolen.\n\nDie Aussage ist falsch.",
+      "Übersäuerung der Ozeane und Aerosolbelastung der Atmosphäre stehen in derselben Neunerliste wie Klima und Biosphäre. Später erscheint die Ozeangrenze auch als Versauerung, die Aerosolgrenze als atmosphärische Aerosolbelastung; beides bleibt innerhalb der genannten neun Prozesse. Zusätzliche, im Text nicht genannte Grenzen braucht es dafür nicht. Die Aussage bleibt bei den vom Abschnitt verwendeten Namen.\n\nÜbersäuerung und Aerosolbelastung tragen dieselben Namen wie in der Eingangsliste; später heißt es Versauerung und atmosphärische Aerosolbelastung, ohne eine zehnte Grenze zu erfinden. Die Aussage bleibt innerhalb der vom Abschnitt verwendeten Prozesse.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.07",
+    "title": "Schäden, Erdsystem und Kopplung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Folgen überschrittener Grenzen und zur Verknüpfung im Erdsystem:",
+    "statements": [
+      "Zu den möglichen Schäden gehören der fehlende Zugang zu sauberem Wasser und eine geringere Ernährungssicherheit.",
+      "Instabilere Ökosysteme oder der Verlust von Arbeitsplätzen durch steigende Temperaturen oder Überschwemmungen werden als Folgen genannt.",
+      "Das Erdsystem umfasst viele miteinander verknüpfte Prozesse wie den globalen Kohlenstoffkreislauf, die biologische Vielfalt oder die chemische Zusammensetzung der Atmosphäre.",
+      "Werden bestimmte biophysikalische Schwellenwerte überschritten, kann das zu nicht umkehrbaren Veränderungen führen, die das Erdsystem in einen neuen, weniger stabilen Zustand versetzen.",
+      "Weil die Systeme eng verbunden sind, bleibt das Überschreiten einer Grenze stets isoliert und wirkt sich nie auf andere Bereiche aus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Sauberes Wasser und Ernährungssicherheit sind im Text menschliche Schäden, nicht nur ökologische Fußnoten. Überschrittene Grenzen treffen den Alltag über Trinkwasser und Nahrung, nicht erst über ferne Eisflächen. Die Liste der Risiken beginnt bewusst bei Zugang und Versorgung. Wer nur abstrakte ppm-Werte sieht, lässt diese Schadensbilder weg.\n\nWasserzugang und Ernährungssicherheit holen die Grenzen in den Alltag. Es sind Schäden für Menschen, die der Text neben instabileren Ökosystemen nennt, nicht nur ferne ppm-Verschiebungen ohne soziale Folge.\n\nDie Aussage ist wahr.",
+      "Instabile Ökosysteme und Jobverluste durch Hitze oder Flut binden Natur und Erwerbsarbeit an dieselbe Überschreitung. Der Abschnitt stellt beides nebeneinander, nicht als getrennte Welten. Arbeitsplätze sitzen damit in der Risikoliste der Erdsystemgrenzen. Die Nennung von Temperaturen und Überschwemmungen als Auslöser folgt dem Text.\n\nArbeitsplätze über Hitze und Flut zeigen, dass Erwerbsarbeit in der Risikoliste der Erdsystemgrenzen steht. Ökosysteme und Jobs kippen in derselben Überschreitungslogik, nicht in getrennten Kapiteln.\n\nDie Aussage ist wahr.",
+      "Kohlenstoffkreislauf, Vielfalt und Atmosphärenchemie sichern gemeinsam Stabilität und Bewohnbarkeit. Der Text denkt das Erdsystem als Verknüpfung, nicht als Summe getrennter Kästen. Wer einen der drei Prozesse isoliert zur ganzen Erde erklärt, verfehlt diese Gemeinsamkeit. Bewohnbarkeit hängt an dem Verbund.\n\nBewohnbarkeit sichern diese Prozesse gemeinsam. Kohlenstoff, Vielfalt und Atmosphärenchemie sind Beispiele für den Verbund, der Stabilität trägt; ein einzelner Prozess ersetzt das Erdsystem nicht.\n\nDie Aussage ist wahr.",
+      "Nicht umkehrbare Veränderungen und ein neuer, weniger stabiler Zustand: das ist die Schwellenlogik des Abschnitts. Überschreitung ist mehr als ein vorübergehendes Überschwingen. Der Planet kann in eine andere Betriebsart kippen, die weniger Halt bietet. Genau deshalb wiegt das Raster der Grenzen so schwer.\n\nEin neuer, weniger stabiler Zustand ist mehr als ein schlechtes Jahr. Nicht umkehrbare Veränderungen versetzen das Erdsystem laut Abschnitt in eine andere Betriebsart, sobald Schwellen fallen.\n\nDie Aussage ist wahr.",
+      "Eng verbunden heißt im Text: eine überschrittene Grenze wirkt oft auf andere Bereiche. Isolation und niemals Rückwirkung sind das Gegenteil dieser Kopplung. Klimakrise ohne intakte übrige Grenzen zu lösen, hält der Abschnitt deshalb für unzureichend. Die Absolute nie auf andere Bereiche trifft die beschriebene Vernetzung nicht.\n\nKopplung bedeutet Weitergabe, nicht Isolation. Eine gerissene Grenze wirkt oft auf andere Bereiche; Klimaschutz ohne intakte übrige Grenzen bleibt deshalb unvollständig. Die Absolute nie auf andere Bereiche hält nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.08",
+    "title": "Sicherer Handlungsraum nach Rockström",
+    "context": "Bewerten Sie die folgenden Aussagen zum Konzept der planetaren Grenzen und zum sicheren Handlungsraum:",
+    "statements": [
+      "Das von Johan Rockström und Kolleginnen sowie Kollegen entwickelte Konzept identifiziert neun zentrale Prozesse, die die Belastbarkeit des Erdsystems bestimmen.",
+      "Ziel ist, einen sicheren Handlungsraum für die Menschheit zu definieren, innerhalb dessen sich sozioökonomische Aktivitäten entwickeln können, ohne die Stabilität planetarer Systeme zu gefährden.",
+      "Um die Klimakrise zu bewältigen, müssen daher auch die übrigen planetaren Grenzen intakt bleiben.",
+      "Sozioökonomische Aktivitäten dürfen die Stabilität planetarer Systeme beliebig gefährden, solange das Wort Handlungsraum verwendet wird.",
+      "Aktuell ist die Erde in mehreren dieser Dimensionen bereits deutlich geschwächt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Neun zentrale Prozesse und die Belastbarkeit des Erdsystems: das ist der Kern des Konzepts, das der Text Rockström und dem Kreis der Kolleginnen und Kollegen zuschreibt. Planetary Boundaries ist der englische Name derselben Idee. Es geht um die Prozesse, die tragen, nicht um eine beliebige Umweltschutzliste. Die Neunzahl kehrt hier als Bestimmungsgrund der Belastbarkeit wieder.\n\nBelastbarkeit des Erdsystems ist der Fluchtpunkt der neun Prozesse. Rockström und Kolleginnen sowie Kollegen definieren nicht beliebige Umweltziele, sondern die zentralen Prozesse, ohne die der Planet den sicheren Raum verliert.\n\nDie Aussage ist wahr.",
+      "Sicherer Handlungsraum meint den Bereich, in dem sich Wirtschaft und Gesellschaft bewegen können, ohne planetare Stabilität zu gefährden. Der englische Ausdruck safe operating space steht im Text in Klammern daneben. Sozioökonomische Aktivitäten sind erlaubt, aber nicht grenzenlos. Das Ziel ist Definition dieses Raums, nicht seine Abschaffung zugunsten unbegrenzten Wachstums.\n\nSozioökonomische Aktivitäten dürfen sich im sicheren Handlungsraum entwickeln, solange sie planetare Stabilität nicht gefährden. Das ist Erlaubnis mit Grenze, nicht Wachstumsverbot und nicht Freibrief. Safe operating space meint genau diesen Korridor.\n\nDie Aussage ist wahr.",
+      "Klimakrise allein zu steuern, während andere Grenzen reißen, reicht nach dem Abschnitt nicht. Die übrigen planetaren Grenzen müssen intakt bleiben, weil die Systeme gekoppelt sind. Wer nur CO2 senkt und Biosphäre, Wasser oder Land opfert, bleibt im selben Risikoverbund. Intakt bleiben ist die Bedingung, nicht ein optionales Extra.\n\nIntakte übrige Grenzen sind Bedingung der Klimabewältigung, weil Rückkopplungen die Dimensionen verbinden. Wer nur eine Krise steuert und die anderen reißen lässt, bleibt im geschwächten Verbund.\n\nDie Aussage ist wahr.",
+      "Beliebig gefährden und trotzdem Handlungsraum sagen: das leert den Begriff. Der sichere Raum existiert gerade dadurch, dass sozioökonomische Aktivitäten die Stabilität nicht gefährden. Das Wort allein schützt keine Systeme. Die Aussage verdreht Zweck und Grenze des Konzepts.\n\nHandlungsraum als bloßes Wort ohne Schonung der Systeme wäre Etikettenschwindel. Der Abschnitt koppelt den Raum an das Nicht-Gefährden der Stabilität, nicht an die Rhetorik der Akteure.\n\nDie Aussage ist falsch.",
+      "Mehrere Dimensionen bereits deutlich geschwächt: so lautet der Befund vor der detaillierten 2023/2025-Liste. Die Erde sitzt nicht mehr komfortabel in der Mitte des sicheren Raums. Schwächung ist der Zustand, nicht nur eine Warnung für später. Der Satz bereitet die spätere Aussage vor, dass sieben von neun Grenzen überschritten sind.\n\nDeutliche Schwächung in mehreren Dimensionen ist der Zustand vor der Sieben-von-neun-Liste. Die Erde liegt nicht mehr bequem im grünen Inneren; der Satz bereitet den globalen Risiko-Bereich vor.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.09",
+    "title": "Sieben überschrittene Grenzen 2025",
+    "context": "Bewerten Sie die folgenden Aussagen zum Stand der planetaren Grenzen nach Rockström et al. 2023 und dem Planetary Health Check 2025:",
+    "statements": [
+      "Sieben der neun planetaren Grenzen sind mittlerweile überschritten.",
+      "Beim Klimasystem nennt der Stand eine globale Erwärmung von etwa 1,2 °C und eine CO2-Konzentration über 420 ppm.",
+      "Die Integrität der Biosphäre gilt als überschritten, unter anderem weil Artensterberaten mehr als das Hundertfache des natürlichen Niveaus erreichen.",
+      "Alle neun planetaren Grenzen gelten im Planetary Health Check 2025 als überschritten.",
+      "Zur überschrittenen Landnutzungsänderung zählt, dass über 40 Prozent der eisfreien Landfläche landwirtschaftlich genutzt werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Sieben von neun, nicht neun von neun: das ist die Synthese aus Science 2023 und Planetary Health Check 2025. Die Mehrheit der Prozesse liegt jenseits der Grenze, zwei bleiben im sicheren Bereich. Wer alle neun als gerissen darstellt, überzieht den Befund. Wer nur das Klima zählt, unterzieht ihn.\n\nSieben überschritten, zwei innen: das ist die Zählung aus Science 2023 und Planetary Health Check 2025. Die Mehrheit der Prozesse liegt jenseits der Grenze, Ozon und global aggregierte Aerosole bleiben die genannten Ausnahmen im sicheren Bereich. Die Zählung sieben zu zwei ist der Stand dieser Synthese, keine offene Prognose für alle künftigen Jahre.\n\nDie Aussage ist wahr.",
+      "Etwa 1,2 °C und mehr als 420 ppm CO2 sind die Klimazahlen der überschrittenen Klimasystemgrenze in dieser Übersicht. Sie beschreiben den aktuellen Stand, nicht das Restbudget von 380 GtCO2. Konzentration und Temperatur sitzen hier als Belege der Überschreitung. Die Aussage gibt genau dieses Paar wieder.\n\n1,2 °C und mehr als 420 ppm beschreiben den Klimastand dieser Übersicht, unabhängig vom Restbudget von 380 GtCO2. Temperatur und Konzentration belegen hier die überschrittene Klimasystemgrenze.\n\nDie Aussage ist wahr.",
+      "Massiver Verlust biologischer Vielfalt und Artensterben über dem Hundertfachen des natürlichen Niveaus begründen die überschrittene Biosphärenintegrität. Die Grenze ist damit nicht nur ein Flächenproblem, sondern ein Tempo des Verlusts. Natürliches Hintergrundsterben dient als Vergleichsmaß. Die Überschreitung folgt aus diesem Vielfachen.\n\nHundertfach über dem natürlichen Artensterben macht aus Biosphärenintegrität eine Tempofrage, nicht nur eine Flächenfrage. Massiver Vielfaltverlust und diese Rate tragen gemeinsam die Überschreitung.\n\nDie Aussage ist wahr.",
+      "Alle neun überschritten würde Ozon und Aerosole in dieselbe rote Kategorie zwingen. Der Text führt beide als innerhalb des sicheren Bereichs, mit der Einschränkung regional kritischer Aerosole. Sieben überschritten lässt zwei innen. Die Totalüberschreitung widerspricht der Zweiteilung der Liste.\n\nNeun von neun würde Regenerationserfolg beim Ozon und die globale Aerosol-Toleranz streichen. Der Text trennt überschrittene und innere Grenzen bewusst; die Totalriss-Behauptung vermischt beide Spalten.\n\nDie Aussage ist falsch.",
+      "Über 40 Prozent der eisfreien Fläche unter Landwirtschaft ist das quantitative Merkmal der überschrittenen Landnutzungsänderung. Eisflächen zählen in dieser Angabe nicht mit, der Druck liegt auf der eisfreien Fläche. Die Grenze ist damit eine Nutzungsgrenze, nicht nur ein Waldschutzslogan. Die Aussage trifft die Formulierung des Stands 2025.\n\nEisfreie Fläche unter Landwirtschaft über 40 Prozent ist das Maß der Landnutzungsänderung, nicht die gesamte Erdoberfläche inklusive Eisschilde. Die Grenze hängt an dieser Nutzungsquote.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.10",
+    "title": "Ozon, Aerosole und biochemische Kreisläufe",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, welche Grenzen 2025 überschritten sind und welche im sicheren Bereich liegen:",
+    "statements": [
+      "Das stratosphärische Ozon gilt dank erfolgreicher Regeneration durch internationale Politik, namentlich das Montreal-Protokoll, als innerhalb des sicheren Bereichs.",
+      "Die atmosphärische Aerosolbelastung liegt global aggregiert noch innerhalb des Toleranzbereichs, ist regional aber bereits kritisch.",
+      "Biochemische Kreisläufe von Stickstoff und Phosphor gelten als überschritten, unter anderem wegen weit verbreiteter Eutrophierung und Bodenversalzung.",
+      "Süßwasserverfügbarkeit bleibt 2025 unproblematisch, weil Entnahmen überall unter der regenerativen Kapazität liegen.",
+      "Die Versauerung der Ozeane mit einem pH-Abfall von mehr als 0,1 seit 1850 gilt weiterhin als innerhalb des sicheren Handlungsraums."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Montreal und Regeneration: der Text führt das stratosphärische Ozon als Erfolg internationaler Politik und als eine der zwei Grenzen innerhalb des sicheren Bereichs. Abbau des stratosphärischen Ozons bleibt eine der neun Dimensionen, der aktuelle Stand ist aber die Erholung. Politik kann eine Grenze also wieder ins Innere holen. Die Aussage verbindet Protokoll, Regeneration und sicheren Bereich so, wie der Abschnitt es tut.\n\nInternationale Politik kann eine Grenze zurück ins Innere holen: Montreal und die Ozonregeneration sind das Gegenbeispiel zur These, alle neun Prozesse seien unrettbar rot. Stratosphärisches Ozon bleibt eine der neun Dimensionen, der Stand 2025 ist der sichere Bereich.\n\nDie Aussage ist wahr.",
+      "Global aggregiert tolerierbar, regional bereits kritisch: so spaltet der Text die Aerosolgrenze. Wer nur die globale Aggregation sieht, unterschätzt regionale Belastung. Wer nur die regionale Kritik sieht, erklärt die Grenze fälschlich für global gerissen. Beide Hälften gehören zusammen.\n\nRegional kritisch und global noch tolerant zugleich: wer eine der beiden Hälften streicht, liest die Aerosolgrenze falsch. Aggregation über den Planeten verdeckt lokale Überschreitung, lokale Kritik erklärt die globale Grenze aber nicht automatisch für gerissen.\n\nDie Aussage ist wahr.",
+      "Stickstoff und Phosphor, Eutrophierung und Bodenversalzung: das sind die Stichworte der überschrittenen biochemischen Kreisläufe. Die Grenze liegt nicht im sicheren Kreis, sondern auf der Liste der sieben Überschreitungen. Weit verbreitet signalisiert keine lokale Ausnahme. Die Zuordnung überschritten folgt dem 2025er Stand.\n\nEutrophierung und Versalzung machen Stickstoff und Phosphor zu einer überschrittenen Kreislaufgrenze, nicht zu einem landwirtschaftlichen Randthema. Sie stehen auf der Sieben-Liste, nicht neben Ozon im Inneren.\n\nDie Aussage ist wahr.",
+      "Unproblematisch und überall unter der regenerativen Kapazität wäre das Gegenteil der Süßwassergrenze im Text. Globale und regionale Entnahmen liegen über der regenerativen Kapazität, die Grenze gilt als überschritten. Wasserverfügbarkeit ist eine der geschwächten Dimensionen, nicht die ruhige Ausnahme neben Ozon. Die Entwarnung hält nicht.\n\nEntnahmen über der regenerativen Kapazität, global und regional, begründen die überschrittene Süßwassergrenze. Unproblematisch wäre nur dann zutreffend, wenn der Text Entnahmen unter der Erneuerung verbuchen würde; das tut er nicht.\n\nDie Aussage ist falsch.",
+      "pH-Abfall von mehr als 0,1 seit 1850 ist genau das Merkmal, mit dem der Text die Ozeanversauerung als überschritten führt. Innerhalb des sicheren Handlungsraums steht diese Grenze 2025 nicht. Wer sie zu Ozon und globalen Aerosolen legt, vermischt die zwei inneren mit einer der sieben äußeren. Die Schwelle des sicheren Raums ist laut Abschnitt gerissen.\n\nSicherer Handlungsraum und pH-Abfall über 0,1 seit 1850 schließen sich in dieser Übersicht aus. Die Versauerung zählt zu den sieben Überschreitungen; sie mit Ozon in dieselbe grüne Kategorie zu legen, vermischt die Spalten des Stands 2025.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.11",
+    "title": "Konzentrische Kreise und Rückkopplung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Abbildung 16 und zum globalen Risiko-Bereich:",
+    "statements": [
+      "Abbildung 16 zeigt das System als konzentrische Kreise mit Grün für den sicheren Handlungsraum, Gelb für die Risiko-Zone und Rot für die Überschreitung.",
+      "Der aktuelle Stand verdeutlicht, dass sich die Erde im globalen Risiko-Bereich befindet, weil mehrere Systeme gleichzeitig kritische Schwellen überschreiten.",
+      "Ein genanntes Rückkopplungsbeispiel verläuft vom Klimawandel über Biodiversitätsverlust und geringere CO2-Speicherung zu weiterem Temperaturanstieg.",
+      "In Abbildung 16 steht Grün für die stärkste Überschreitung und Rot für den sicheren Handlungsraum.",
+      "Gleichzeitige Überschreitungen mehrerer Systeme können Rückkopplungseffekte nicht verstärken."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Konzentrische Kreise und die Farben Grün, Gelb, Rot ordnen Raum, Risiko und Riss. Grün ist der sichere Handlungsraum, Gelb die Risiko-Zone, Rot die Überschreitung. Die Grafik macht den Stand lesbar, ohne eine zehnte Grenze einzuführen. Wer die Farben tauscht, liest die Abbildung gegen den Text.\n\nFarblegende und Kreisform machen den Stand lesbar: innen grün sicher, dann gelb Risiko, außen rot gerissen. Planetary Health Check 2025 nutzt genau diese Ordnung; eine vertauschte Farbe würde den globalen Risiko-Bereich unkenntlich machen.\n\nDie Aussage ist wahr.",
+      "Globaler Risiko-Bereich heißt: mehrere Systeme überschreiten gleichzeitig kritische Schwellen. Die Erde sitzt damit nicht in einem einzelnen gerissenen Sektor bei sonst grüner Fläche. Gleichzeitigkeit ist der Befund, der Rückkopplungen wahrscheinlicher macht. Die Formulierung im Abschnitt trifft genau diese Lage.\n\nMehrere Systeme gleichzeitig über der Schwelle, nicht ein einzelner roter Keil: das definiert den globalen Risiko-Bereich. Gleichzeitigkeit erhöht die Chance auf Rückkopplung, weil die Prozesse verknüpft sind.\n\nDie Aussage ist wahr.",
+      "Klimawandel mindert Vielfalt, geringere Speicherung treibt die Temperatur weiter: das ist die Kette, die der Text als Beispiel für verstärkte Rückkopplung nennt. CO2-Speicherung sitzt als Bindeglied zwischen Biosphäre und Klima. Die Pfeile laufen in dieser Reihenfolge, nicht umgekehrt als Abkühlung durch Artenverlust. Das Beispiel erklärt, warum gekoppelte Risse gefährlicher sind als ein isolierter.\n\nGeringere CO2-Speicherung sitzt als Gelenk zwischen Artenverlust und weiterem Temperaturanstieg. Die Kette ist im Text ein Beispiel, keine vollständige Liste aller möglichen Rückkopplungen, aber sie reicht, um Verstärkung zu zeigen.\n\nDie Aussage ist wahr.",
+      "Grün als stärkste Überschreitung und Rot als Sicherheit kehrt die Legende um. Der sichere Handlungsraum ist grün, Rot markiert die Überschreitung. Eine solche Farbvertauschung würde den globalen Risiko-Bereich unlesbar machen. Der Abschnitt definiert die Farben eindeutig anders.\n\nRot als Sicherheit und Grün als stärkste Überschreitung wäre die Umkehr der Legende. Der sichere Handlungsraum bleibt grün, Überschreitung rot; Gelb dazwischen ist die Risiko-Zone.\n\nDie Aussage ist falsch.",
+      "Nicht verstärken wäre das Gegenteil der ausdrücklich genannten Möglichkeit. Gleichzeitige Schwellenüberschreitungen können Rückkopplungen verstärken, etwa in der Kette Klima, Vielfalt, Speicherung, Temperatur. Isolation der Risse unterstellt der Text gerade nicht. Die Verneinung der Verstärkung hält nicht.\n\nVerstärkung ist die im Abschnitt genannte Möglichkeit, nicht eine ausgeschlossene. Wer Gleichzeitigkeit als harmlos isoliert liest, streicht genau den Satz über Rückkopplungseffekte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.12",
+    "title": "Klimarisiken und der Globale Süden",
+    "context": "Bewerten Sie die folgenden Aussagen zu ungleich verteilten Klimarisiken und historischer Verantwortung:",
+    "statements": [
+      "Klimarisiken und Verantwortung sind weltweit ungleich verteilt.",
+      "Zu den Risiken zählen Starkniederschläge, Überschwemmungen, Dürren oder Lawinen.",
+      "Die Länder des Globalen Südens haben historisch nur wenig zum CO2-Ausstoß beigetragen, spüren aber heute die Folgen der Erderwärmung besonders stark.",
+      "Historische Verantwortung für Emissionen und heutige Betroffenheit durch Klimafolgen fallen weltweit deckungsgleich auf dieselben Länder.",
+      "Der Globale Süden trägt historisch den größten Teil der kumulierten Emissionen und bleibt von den Folgen der Erderwärmung weitgehend verschont."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Ungleiche Verteilung gilt für Risiken und für Verantwortung zugleich. Der Abschnitt Klima und Ungleichheit öffnet mit genau diesem Doppelbefund. Wer nur Schäden oder nur Schuld weltweit gleich verteilt sieht, verfehlt den Einstieg. Weltweit ungleich ist die Leitformel, bevor Zahlen und Gruppen folgen.\n\nVerantwortung und Risiko laufen nicht auf derselben Weltkarte. Der Einstieg trennt beides, bevor historische Prozentwerte und Einkommensgruppen die Ungleichheit zahlenförmig machen.\n\nDie Aussage ist wahr.",
+      "Starkregen, Flut, Dürre, Lawine: das sind die Risikobeispiele, keine vollständige Naturgefahrenkunde. Sie machen Klimarisiko konkret, bevor historische Anteile kommen. Lawinen zeigen, dass auch alpine Räume in der Liste stehen, nicht nur tropische Dürren. Die Aufzählung folgt dem Text wörtlich in der Sache.\n\nLawinen neben Dürre und Flut zeigen alpine und hydrologische Risiken in einer Liste. Klimarisiko ist hier kein einzelnes Tropenphänomen, sondern die im Text genannte Vielfalt von Extremen.\n\nDie Aussage ist wahr.",
+      "Wenig historischer Ausstoß und starke heutige Folgen: so beschreibt der Text den Globalen Süden. Verantwortung und Betroffenheit fallen auseinander. Wer den Süden zum Hauptverursacher erklärt, weil er heute leidet, verdreht diese Trennung. Der Satz hält beides in der vom Abschnitt genannten Richtung.\n\nWenig historischer Beitrag und starke heutige Folgen beschreiben den Globalen Süden in einer Richtung. Wer aus heutiger Betroffenheit auf historische Hauptschuld schließt, verdreht genau diese Trennung.\n\nDie Aussage ist wahr.",
+      "Deckungsgleich auf dieselben Länder würde bedeuten, wer viel emittiert hat, trage auch die Hauptlast der Folgen, und umgekehrt. Der Text beschreibt das Gegenteil am Globalen Süden: geringer historischer Beitrag, starke heutige Spürbarkeit. Ungleich verteilt widerspricht der Deckung. Die Annahme einer gerechten Spiegelung von Schuld und Schaden hält nicht.\n\nDeckungsgleichheit von Schuld und Schaden wäre eine gerechte Spiegelung, die der Abschnitt nicht behauptet. Der Süden illustriert das Auseinanderfallen, die späteren Anteile (8 Prozent historisch) stützen den geringen Verursacheranteil.\n\nDie Aussage ist falsch.",
+      "Größter historischer Anteil und weitgehende Verschonung kehrt beide Hälften um. Historisch wenig beigetragen und heute besonders stark betroffen ist die Richtung des Abschnitts. Die späteren Anteile weisen dem globalen Süden 8 Prozent der historischen Emissionen zu, nicht den Löwenanteil. Beides zusammen macht die Aussage falsch.\n\nGrößter historischer Anteil und Verschonung kehren beide Hälften um. 8 Prozent historisch und besonders starke heutige Spürbarkeit sind die Richtung des Textes, nicht Löwenanteil plus Ruhe.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.13",
+    "title": "Historische Emissionsanteile",
+    "context": "Bewerten Sie die folgenden Aussagen zu den historischen Anteilen an den globalen Emissionen:",
+    "statements": [
+      "Gemessen an den historischen Emissionen sind die USA für 40 Prozent verantwortlich.",
+      "Die EU-28 steht historisch für 29 Prozent der globalen Emissionen.",
+      "Der globale Süden ist historisch für 8 Prozent der globalen Emissionen verantwortlich.",
+      "Der übrige globale Norden steht historisch für 40 Prozent und die USA für 10 Prozent.",
+      "Das übrige Europa steht historisch für 13 Prozent, der übrige globale Norden für 10 Prozent."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Vierzig Prozent der historischen Emissionen weist der Kasten den USA zu. Das ist der größte Einzelblock in der genannten Aufteilung, vor der EU-28. Historisch meint hier den kumulierten Beitrag, nicht den Ausstoß eines einzelnen jüngeren Jahres. Die Zahl trägt die Ungleichheit der Verantwortung, die der Fließtext qualitativ vorbereitet.\n\n40 Prozent USA sind der größte Block der historischen Teilung im Zahlenkasten. Der Wert trägt die qualitative Aussage, Verantwortung sei ungleich, und steht vor EU-28, übrigem Europa, übrigem Norden und Süden. An diesem Block bemisst der Kasten den größten historischen Einzelanteil, nicht am globalen Süden.\n\nDie Aussage ist wahr.",
+      "Neunundzwanzig Prozent für die EU-28 folgen in derselben Aufzählung direkt nach den USA. EU-28 ist die im Text verwendete Abgrenzung, nicht eine beliebige spätere Mitgliederliste. Zusammen mit den USA liegt bereits ein großer Teil der historischen Last im globalen Norden. Die Aussage gibt diesen zweiten Block korrekt wieder.\n\nEU-28 mit 29 Prozent ist die zweitgrößte genannte Einheit. Zusammen mit den USA liegt bereits mehr als die Hälfte der historischen Emissionen in diesen beiden Blöcken, bevor Rest-Europa und Rest-Norden addiert werden.\n\nDie Aussage ist wahr.",
+      "Acht Prozent für den globalen Süden stehen am Ende der historischen Teilung. Der geringe Anteil stützt die Aussage, der Süden habe historisch nur wenig beigetragen. Wer dem Süden die Mehrheit der Vergangenheit zuschreibt, widerspricht dieser Zahl. 8 Prozent ist der im Kasten genannte Wert.\n\n8 Prozent globaler Süden schließen die Aufzählung und stützen den Fließtext: historisch wenig Beitrag, heute starke Folgen. Eine Mehrheit des Südens an der kumulierten Last steht dort nicht.\n\nDie Aussage ist wahr.",
+      "Vierzig Prozent für den übrigen globalen Norden und zehn Prozent für die USA vertauschen die Blöcke. Der Text gibt den USA 40 Prozent und dem übrigen globalen Norden 10 Prozent. Die Vertauschung würde die historische Last vom größten Einzelakteur auf eine Restkategorie schieben. Genau diese Zuordnung steht so nicht im Abschnitt.\n\nUSA 10 und übriger Norden 40 wäre die Vertauschung der genannten Anteile. Der Kasten gibt den USA 40 und dem übrigen globalen Norden 10; nur so bleibt die Summe mit EU-28, übrigem Europa und Süden stimmig.\n\nDie Aussage ist falsch.",
+      "Dreizehn Prozent übriges Europa und zehn Prozent übriger globaler Norden schließen die Aufteilung zwischen EU-28 und globalem Süden. 40 + 29 + 13 + 10 + 8 ergibt die vollständige historische Zuordnung des Kastens. Die Aussage nimmt die beiden mittleren Restblöcke korrekt auf. Ohne sie wäre die Summe der genannten Anteile unvollständig.\n\n13 plus 10 füllen die Lücke zwischen EU-28 und globalem Süden. 40+29+13+10+8 ist die vollständige historische Zuordnung; ohne die beiden Restblöcke wäre die vom Text angebotene Teilung unvollständig.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.14",
+    "title": "Das reichste Prozent und die obersten zehn",
+    "context": "Bewerten Sie die folgenden Aussagen zur Ungleichheit der Kohlendioxidemissionen zwischen Einkommensgruppen:",
+    "statements": [
+      "Das reichste Prozent der Weltbevölkerung ist für doppelt so viele Kohlendioxidemissionen verantwortlich wie die ärmsten 50 Prozent.",
+      "Die obersten 10 Prozent der Emittenten stießen 2021 im Durchschnitt 22 Tonnen CO2 pro Kopf aus.",
+      "22 Tonnen CO2 pro Kopf sind mehr als 200-mal so viel wie der Durchschnitt der untersten 10 Prozent.",
+      "Wenn die obersten 10 Prozent der Emittenten ihr derzeitiges Niveau beibehalten, überschreiten allein sie das verbleibende Kohlenstoffbudget im IEA-Szenario Netto-Null-Emissionen bis 2050 bis zum Jahr 2046.",
+      "Die reichsten 10 Prozent der Weltbevölkerung können ihr Emissionsniveau belassen, weil der übrige Teil der Welt das 1,5-Grad-Ziel allein tragen soll."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Doppelt so viel wie die ärmere Hälfte der Menschheit: so schwer wiegt das oberste Prozent. Der Vergleich ist global und historisch-aktuell im Sinne der IEA-Quelle des Kastens, nicht ein einzelnes Land. Verantwortung sitzt hier an der Spitze der Verteilung, nicht an der armen Mehrheit. Die Relation zwei zu eins gegenüber 50 Prozent ist die erste quantitative Pointe.\n\nDas oberste Prozent gegen die ärmere Hälfte: die Relation ist global und verteilt, nicht ein Staatsduell. Doppelte Verantwortung bei einem Hundertstel der Menschheit gegenüber der Hälfte macht die Spitze zum zentralen Hebel der Dekarbonisierung.\n\nDie Aussage ist wahr.",
+      "Zweiundzwanzig Tonnen CO2 je Kopf im Jahr 2021 sind der Durchschnitt der obersten 10 Prozent der Emittenten. Die Zahl macht den Abstand greifbar, bevor der Faktor 200 folgt. Pro-Kopf-Ausstoß, nicht nur der nationale Totalsatz, trägt diese Ungleichheit. Der Text datiert den Wert auf 2021.\n\n22 Tonnen je Kopf 2021 für die obersten 10 Prozent der Emittenten sind der Durchschnitt, an dem der Faktor 200 hängt. Ohne dieses Niveau wäre der Abstand zu den untersten 10 Prozent eine leere Metapher.\n\nDie Aussage ist wahr.",
+      "Mehr als das Zweihundertfache des Durchschnitts der untersten 10 Prozent: so groß ist der Abstand zu den 22 Tonnen. Der Vergleich bleibt innerhalb der Emittentenverteilung, nicht zwischen Staaten. Wer den Faktor als geringfügigen Unterschied liest, verfehlt die Größenordnung. Die Aussage gibt das im Kasten genannte Vielfache wieder.\n\nZweihundertfach gegenüber den untersten 10 Prozent bleibt ein Vergleich innerhalb der Emittenten, nicht zwischen Kontinenten. Die Größenordnung erklärt, warum Niveauhalten an der Spitze das Restbudget sprengen kann.\n\nDie Aussage ist wahr.",
+      "Allein die obersten 10 Prozent, Niveau gehalten, IEA-Pfad Netto-Null bis 2050, Überschreitung bis 2046: das ist die Budgetlogik des Kastens. Das verbleibende Kohlenstoffbudget reicht dann nicht bis zur Mitte des Jahrhunderts, wenn diese Gruppe nicht senkt. Die übrigen 90 Prozent müssten das Ziel nicht einmal verfehlen, die Spitze allein würde es reißen. 2046 ist das im Text genannte Jahr.\n\nIEA-Pfad Netto-Null bis 2050 und Jahr 2046 koppeln das Verhalten der obersten 10 Prozent direkt an das verbleibende Kohlenstoffbudget. Allein diese Gruppe reicht, das Budget zu überschreiten, wenn sie nicht senkt; die übrigen 90 Prozent müssen das nicht einmal verursachen.\n\nDie Aussage ist wahr.",
+      "Niveau belassen und die Last nach unten schieben widerspricht der Schlussfolgerung des Kastens. Die reichsten 10 Prozent müssen erheblich und schnell handeln, damit Dekarbonisierung rechtzeitig kommt und 1,5 °C haltbar bleibt. Der übrige Teil der Welt kann dieses Tempo der Spitze nicht ersetzen. Beibehalten wäre genau das Szenario, das 2046 das Restbudget sprengt.\n\nErheblich und schnell handeln ist die Schlussfolgerung für die reichsten 10 Prozent. Niveau belassen und die Last nach unten schieben ist genau das Szenario, das 2046 das Restbudget im genannten IEA-Pfad reißt und 1,5 °C gefährdet.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.15",
+    "title": "Ungleichheit innerhalb der Länder",
+    "context": "Bewerten Sie die folgenden Aussagen zu Emissionsungleichheit innerhalb von Ländern und zu mehrfach belasteten Gruppen:",
+    "statements": [
+      "Die Ungleichheiten bei den Emissionen sind inzwischen innerhalb einzelner Länder größer als zwischen ihnen.",
+      "Eine kleine, wohlhabende Bevölkerungsgruppe verursacht durch ihren Konsum und ihre Investitionen einen überproportional hohen Anteil der Treibhausgasemissionen.",
+      "Sozial benachteiligte Gruppen sind durch geringes Einkommen, unsichere Arbeitsverhältnisse oder mangelnde Bildung mehrfach belastet.",
+      "Benachteiligte Gruppen sind weniger von Klimarisiken betroffen und können sich leichter an veränderte Bedingungen anpassen.",
+      "Klimaschutzmaßnahmen wie eine CO2-Steuer können benachteiligte Gruppen überproportional treffen, weil sie einen größeren Teil ihres Einkommens für Energie und Grundversorgung ausgeben müssen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Innerhalb der Länder größer als zwischen ihnen: so verschiebt der Abschnitt die Landkarte der Emissionsungleichheit. Der Staatsvergleich allein unterschätzt die Spitze im Inneren. Eine kleine wohlhabende Gruppe kann den nationalen Durchschnitt nach oben ziehen, während die Mehrheit weniger ausstößt. Die Aussage gibt diesen Lagenschwenk wieder.\n\nStaatsvergleiche unterschätzen die innere Spitze. Wenn Ungleichheit innerhalb der Länder die zwischenstaatliche übersteigt, erklärt eine kleine wohlhabende Gruppe den nationalen Ausstoß besser als der Durchschnitt der Bevölkerung.\n\nDie Aussage ist wahr.",
+      "Konsum und Investitionen sind die beiden Kanäle, über die Wohlstand überproportional emittiert. Es reicht nicht, nur den Stromzähler der Wohnung zu sehen; Kapitalanlagen gehören dazu. Klein und wohlhabend beschreibt die Trägergruppe, nicht die Bevölkerungsmehrheit. Überproportional heißt: Anteil an den THG übersteigt den Bevölkerungsanteil.\n\nInvestitionen neben Konsum erweitern den Emissionskanal über den Haushaltsstrom hinaus. Wohlstand emittiert über Vermögen und Lebensstil; überproportional heißt, der THG-Anteil übersteigt den Bevölkerungsanteil deutlich.\n\nDie Aussage ist wahr.",
+      "Geringes Einkommen, unsichere Arbeit, mangelnde Bildung: das ist die Mehrfachbelastung, die der Text sozial benachteiligten Gruppen zuschreibt. Die drei Faktoren stehen nebeneinander, nicht als Ersatz füreinander. Wer nur Armut in Euro misst, lässt Beschäftigung und Bildung weg. Die Aufzählung folgt dem Abschnitt.\n\nEinkommen, Arbeit, Bildung stapeln sich als Mehrfachbelastung. Die drei Faktoren erklären gemeinsam, warum Anpassungskapazität fehlt, nicht als drei getrennte Sondergruppen ohne Überschneidung.\n\nDie Aussage ist wahr.",
+      "Weniger betroffen und leichter anpassbar wäre das Gegenteil der beschriebenen Lage. Stärker von Klimarisiken betroffen und schlechter anpassungsfähig ist die Richtung des Textes. Mehrfachbelastung mindert Puffer, sie erhöht sie nicht. Die Verharmlosung trifft die soziale Seite der Klimakrise nicht.\n\nStärker betroffen und schlechter anpassbar ist die Richtung des Textes. Weniger Risiko und leichtere Anpassung wären Puffer, die geringe Einkommen, unsichere Jobs und mangelnde Bildung gerade nicht liefern.\n\nDie Aussage ist falsch.",
+      "CO2-Steuer als Beispiel einer Maßnahme, die unten härter ankommen kann, weil Energie und Grundversorgung einen größeren Einkommensanteil binden. Klimaschutz und soziale Schieflage können sich hier überlagern. Der Abschnitt warnt vor dieser Überproportionalität, er streitet die Steuer nicht als Instrument ab. Wer Verteilungswirkung ignoriert, übersieht genau diesen Satz.\n\nGrößerer Einkommensanteil für Energie und Grundversorgung macht aus einer CO2-Steuer eine potenziell regressive Last. Der Abschnitt warnt vor dieser Überproportionalität, ohne Klimaschutz als solches zu streichen; Verteilungswirkung gehört zur Bewertung der Maßnahme.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "WISO 2.4.16",
+    "title": "Armut ist kein Nachhaltigkeitsideal",
+    "context": "Bewerten Sie die folgenden Aussagen zum ökologischen Fußabdruck armer Gruppen und zum Unterschied zwischen Mangel und Nachhaltigkeit:",
+    "statements": [
+      "Ärmere Bevölkerungsgruppen haben meist einen geringeren ökologischen Fußabdruck.",
+      "Armut ist nach dem Abschnitt ein Nachhaltigkeitsideal, weil niedriger Verbrauch automatisch nachhaltiges Leben bedeutet.",
+      "Ein niedriger Ressourcenverbrauch bedeutet oft eingeschränkte Lebensqualität und begrenzte gesellschaftliche Teilhabe.",
+      "Niedriger Ressourcenverbrauch darf daher nicht mit nachhaltigem Leben verwechselt werden.",
+      "Nachhaltiges Leben und Armut setzt der Abschnitt gleich, weil beides denselben erzwungenen Ressourcenmangel beschreibt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Meist geringerer Fußabdruck: das räumt der Text ärmeren Gruppen ein, bevor er die Gleichsetzung mit Nachhaltigkeit zurückweist. Weniger Tonnen folgen oft aus weniger Konsum, nicht aus gestalteter Suffizienz. Die Feststellung ist empirisch im Abschnitt, nicht als Lob der Not gemeint. Wer den kleineren Abdruck leugnet, braucht die spätere Warnung nicht; sie setzt ihn voraus.\n\nKleinerer Fußabdruck ist Voraussetzung der Warnung, nicht ihr Widerruf. Der Text räumt den geringeren Abdruck ein und trennt ihn sofort von einem Ideal; ohne die erste Feststellung wäre die zweite Verwechslung sinnlos.\n\nDie Aussage ist wahr.",
+      "Nachhaltigkeitsideal wäre Armut nur, wenn Mangel dasselbe wäre wie zukunftsfähiges Wirtschaften innerhalb der Erdsystemgrenzen bei gelingender Teilhabe. Der Abschnitt sagt ausdrücklich, Armut sei kein solches Ideal. Automatik zwischen niedrigem Verbrauch und nachhaltigem Leben weist er zurück. Die Idealisierung der Not widerspricht dem Schlusssatz des Kapitels.\n\nAutomatik zwischen Mangel und Nachhaltigkeit würde Not zum Leitbild machen. Der Abschnitt verweigert genau diese Idealisierung: Armut bleibt Armut, auch wenn Tonnen sinken, und ist kein Modell für Wirtschaften innerhalb der Erdsystemgrenzen bei gelingender Teilhabe.\n\nDie Aussage ist falsch.",
+      "Eingeschränkte Lebensqualität und begrenzte gesellschaftliche Teilhabe sind die oft mit niedrigem Verbrauch einhergehenden Kosten. Nachhaltigkeit im Sinne des Kapitels zielt auf Bedürfnisse auch in der Zukunft und auf Inklusion, nicht auf Entbehrung als Modell. Wer nur Tonnen senkt, indem er Teilhabe streicht, erfüllt diesen Maßstab nicht. Die Aussage trifft die vom Text genannte Bedeutung des Mangels.\n\nLebensqualität und Teilhabe sind die oft mit niedrigem Verbrauch einhergehenden Verluste. Nachhaltigkeit im Sinne des Kapitels zielt auf erfüllbare Bedürfnisse und Inklusion, nicht auf Entbehrung als Tugend. Wer Teilhabe streicht, um Tonnen zu senken, erfüllt diesen Maßstab nicht.\n\nDie Aussage ist wahr.",
+      "Nicht verwechseln ist die ausdrückliche Schlussregel: niedriger Verbrauch ist nicht schon nachhaltiges Leben. Verwechslung würde Armut zum Leitbild machen und den sicheren Handlungsraum mit Unterversorgung gleichsetzen. Der Abschnitt trennt beides, nachdem er den kleineren Fußabdruck anerkannt hat. Die Aussage gibt diese Trennlinie wieder.\n\nNicht verwechseln ist die Schlussregel nach dem Anerkennen des kleineren Abdrucks. Niedriger Verbrauch kann Not beschreiben; nachhaltiges Leben verlangt mehr als knappe Ressourcen, nämlich Teilhabe ohne Zerstörung der Lebensgrundlagen.\n\nDie Aussage ist wahr.",
+      "Gleichsetzen von nachhaltigem Leben und Armut ist genau die Verwechslung, die der Text verbietet. Erzwungener Ressourcenmangel beschreibt Not, nicht den sicheren Handlungsraum mit sozialer Teilhabe. Beides mag in Tonnen ähnlich aussehen und bleibt trotzdem begrifflich getrennt. Die Gleichsetzung hält der Abschnitt nicht.\n\nGleichsetzung von Armut und nachhaltigem Leben ist die vom Text verbotene Verwechslung. Ähnliche Tonnenwerte ändern nichts daran, dass erzwungener Mangel nicht der sichere Handlungsraum mit sozialer Teilhabe ist.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

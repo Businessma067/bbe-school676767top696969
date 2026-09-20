@@ -1,0 +1,674 @@
+[
+  {
+    "title": "Tax-funded lighthouse",
+    "statements": [
+      "Money's store-of-value function is strengthened when inflation is very high and unpredictable.",
+      "Free riders would benefit from the beam without paying if funding relied purely on voluntary donations.",
+      "Tax financing can overcome free-rider problems by compelling contributions from beneficiaries broadly.",
+      "Because ships are private businesses, lighthouse services cannot be public goods by definition.",
+      "Public goods must always be provided free with zero cost to any taxpayer."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.01",
+    "context": "A coastal town funds a lighthouse through general taxation rather than individual tolls. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Saving euros under low inflation",
+    "statements": [
+      "Money still stores value but slowly loses some purchasing power under positive inflation.",
+      "Slightly below 2% inflation means purchasing power rises every year for cash holders.",
+      "Store-of-value function is weaker when inflation is positive even if moderate.",
+      "ECB target near 2% contrasts with destabilising very high inflation rates.",
+      "Purchasing power of held cash depends on general price level changes domestically."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.02",
+    "context": "A worker holds 1,000 euros in a current account while inflation runs slightly below 2%. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Circular flow basics",
+    "statements": [
+      "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note.",
+      "A banknote's face value freezes its real purchasing power for decades.",
+      "Households can only appear on the spending side and never supply labour or capital to firms.",
+      "The circular flow shows how income earned from production returns as spending on output.",
+      "Government, banks, and foreign trade never appear in any circular-flow diagram."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.03",
+    "context": "Analyze the circular flow of income and spending: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Hyperinflation pocket money",
+    "statements": [
+      "Very rapid inflation sharply erodes purchasing power of nominally unchanged cash amounts.",
+      "Paying with a mobile transfer is exchange using money as medium of exchange.",
+      "Store-of-value function of money fails when inflation outpaces ability to spend or invest quickly.",
+      "ECB's slightly-below-2% target aims at stability far from such hyperinflation scenarios.",
+      "Purchasing power erosion under inflation affects households as well as firms holding cash."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.04",
+    "context": "In a country with very rapid price rises, a child's 20-euro note buys far less candy monthly. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "National park entry debate",
+    "statements": [
+      "Clean air and preserved landscape benefits may extend beyond paying visitors, suggesting public-good elements.",
+      "Pure gate fees may exclude low-income residents while still leaving non-visitors benefiting from ecosystem services.",
+      "Tax funding can address free-rider issues when many benefit without direct payment.",
+      "National parks are never public goods because trees are physical objects you can touch.",
+      "Free-rider problems occur only in foreign trade and never in domestic environmental policy."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.05",
+    "context": "Policals debate funding a national park via general tax versus gate fees only. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Money's three functions",
+    "statements": [
+      "High, erratic inflation makes cash a safer long-term store of value.",
+      "Inflation means any one product got dearer in a single aisle.",
+      "Street lighting never faces free riders because neighbours always chip in voluntarily.",
+      "Because money stores value, its purchasing power never changes over time.",
+      "Barter requires a double coincidence of wants, which money helps overcome as medium of exchange."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.06",
+    "context": "Analyze the three functions of money in a modern economy: Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Circular flow with government",
+    "statements": [
+      "Government collects taxes from households and firms and spends on public services and transfers.",
+      "Government spending and taxation appear in extended circular-flow models linking public sector to private actors.",
+      "Households never receive anything from government, so no return flow exists in the circular model.",
+      "Subsidies and transfers are channels through which government redistributes income in the flow.",
+      "The circular flow shows only barter with no role for money as medium of exchange."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.07",
+    "context": "Evaluate government's role in an extended circular flow: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Call centre task split",
+    "statements": [
+      "Division of labour by query type lets agents specialise and often resolve cases faster.",
+      "Specialisation can reduce training time per agent for their assigned task category.",
+      "Households supply factors to firms and receive income that returns as spending in the circular flow.",
+      "If the billing team is understaffed, technical agents cannot cover without cross-training gaps.",
+      "Dependency between teams can create bottlenecks when one queue overflows."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.08",
+    "context": "A support centre separates billing queries from technical troubleshooting across two teams. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Subsidy for rail commuters",
+    "statements": [
+      "Barter partners always want exactly the same items, so matching wants is automatic.",
+      "Call centres cannot specialise; only factory workers may divide tasks.",
+      "Subsidies are identical to public goods because both always require taxation.",
+      "Subsidised tickets can shift commuter choices toward rail without making rail a pure public good.",
+      "Transfers redistribute resources and can target policy goals such as mobility or environmental aims."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.09",
+    "context": "Government pays a per-trip subsidy lowering commuter rail tickets. Evaluate transfers and subsidies:. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Export subsidy debate",
+    "statements": [
+      "Export subsidies transfer public funds to support a specific industry or activity.",
+      "Subsidies differ from pure public goods because subsidised goods remain excludable and rival in consumption.",
+      "All government spending is automatically a public good regardless of what is funded.",
+      "Subsidies can alter producer incentives and prices without making the product non-excludable.",
+      "Tax revenue funding subsidies links government to firms in the circular flow."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.10",
+    "context": "Government considers export subsidies for dairy cooperatives. Evaluate subsidies versus public goods:. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Barter weekend market",
+    "statements": [
+      "Barter requires double coincidence of wants between each pair of traders.",
+      "Absence of money as medium of exchange makes multilateral trading chains harder to arrange.",
+      "Such swaps still constitute exchange under otherwise unchanged conditions.",
+      "Barter eliminates all comparison problems because traders always value goods equally.",
+      "Introducing money would add medium of exchange simplifying trades that barter complicates."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.11",
+    "context": "A hobby market allows only direct swaps: honey for bread, bread for pottery. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Purchasing power over decades",
+    "statements": [
+      "Only foreign trade creates free-rider problems; domestic public services never do.",
+      "Nominal euro amounts automatically preserve real purchasing power regardless of price changes.",
+      "Money's store-of-value function is weakened when inflation is positive over long periods.",
+      "Inflation slightly below 2% is the ECB's stability target, not a mandate for ever-rising prices without limit.",
+      "Purchasing power depends only on foreign exchange rates and never on domestic price levels."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.12",
+    "context": "A pensioner notes the same nominal 100 euros buys fewer groceries than thirty years ago. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Inflation and purchasing power",
+    "statements": [
+      "Barter requires no matching of wants because any trade partners automatically desire identical goods.",
+      "Inflation increases purchasing power because prices and money value always move together upward.",
+      "Money as a unit of account disappears the moment two currencies exist in tourism.",
+      "If prices rise faster than incomes, households can buy fewer goods with the same nominal cash.",
+      "Inflation affects only foreign trade and never domestic purchasing power of euro cash."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.13",
+    "context": "Review inflation, purchasing power, and price stability: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Voluntary donation park cleanup",
+    "statements": [
+      "Residents who enjoy cleaner paths without paying illustrate the free-rider problem.",
+      "Public-good-like benefits may be underprovided when funding depends on voluntary contributions alone.",
+      "Tax financing could reduce free riding by requiring contributions from beneficiaries broadly.",
+      "Free riders exist only when money functions as medium of exchange and never with public services.",
+      "Voluntary funding always delivers optimal public-good levels without any shortfall."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.14",
+    "context": "A river park cleanup relies on voluntary donations; many residents enjoy cleaner paths without donating. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Medium of exchange everyday",
+    "statements": [
+      "Using euros avoids barter's double coincidence of wants between bread and socks.",
+      "Money as medium of exchange separates the act of selling from the act of buying.",
+      "Street lighting financed by local tax can address free-rider problems of voluntary funding.",
+      "Medium of exchange is one of money's three core functions alongside unit of account and store of value.",
+      "Without medium of exchange, every purchase would require direct matching of wants."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.15",
+    "context": "Shoppers pay euros for bread instead of trading socks directly with the baker. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "ECB target recall",
+    "statements": [
+      "The ECB aims for inflation slightly below 2% as its price-stability objective.",
+      "ECB target requires inflation to be exactly zero forever with no deviation allowed.",
+      "Price stability supports predictable purchasing power compared with high volatile inflation.",
+      "Inflation slightly below 2% is identical to hyperinflation in economic effect.",
+      "Central bank targets relate to macroeconomic stability of the general price level."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.16",
+    "context": "Evaluate precise claims about ECB inflation targeting: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Student grant transfer",
+    "statements": [
+      "Student grants are government transfers redistributing income toward a targeted group.",
+      "Transfers move purchasing power to recipients without necessarily providing a pure public good.",
+      "A transport subsidy lowers user fares by covering part of cost from public funds.",
+      "Grant income enters the circular flow as household income later spent on goods and services.",
+      "Transfers can pursue equity goals while remaining distinct from tax-funded defence or street lighting."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.17",
+    "context": "Government pays living-cost grants to low-income students. Evaluate transfers:. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Factory specialisation drawback",
+    "statements": [
+      "Taxes never fund public goods; private firms always supply defence at market prices.",
+      "Circular flow stops when households save, because wages then cease to exist.",
+      "Specialisation always improves worker satisfaction with no possible downsides whatsoever.",
+      "Narrow task focus may limit workers' transferable skills if jobs disappear.",
+      "Despite drawbacks, specialisation often lowers average production cost per unit."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.18",
+    "context": "Workers on one repetitive bolt-tightening task report fatigue and cannot switch lines quickly. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Specialisation in hospitals",
+    "statements": [
+      "Division of labour by medical specialty raises skill depth and often treatment efficiency.",
+      "Specialisation creates interdependence: diagnostics delay can postpone surgery schedules.",
+      "Specialisation never occurs in healthcare because every doctor must do every task.",
+      "Drawbacks can include coordination costs and bottlenecks between departments.",
+      "Despite coordination needs, specialisation typically improves output per specialist hour."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.19",
+    "context": "Hospital splits surgery, diagnostics, and nursing into specialised departments. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Public goods and free riders",
+    "statements": [
+      "Specialisation removes all risk for a firm if it masters one narrow product forever.",
+      "Domestic police services never create free-rider incentives for non-payers.",
+      "Store-of-value works best when prices jump unpredictably every week.",
+      "Street lighting is excludable for every passer-by, so free-rider problems never arise in practice.",
+      "Transfers and subsidies redistribute income or support specific groups without always being pure public goods."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.20",
+    "context": "Assess public goods, taxation, and free-rider problems: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Assembly line shutdown",
+    "statements": [
+      "Fine division of labour increases vulnerability when one specialised input or stage fails.",
+      "Specialisation raises productivity but creates interdependence among sequential tasks.",
+      "Comparing barter ratios among many goods is harder without a unit of account.",
+      "Monotonous single-step work can be a human drawback of extreme specialisation.",
+      "Despite shutdown risk, specialisation often lowers average cost when all stages run smoothly."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.21",
+    "context": "A single missing chip halts an electronics assembly line where each worker performs one step. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Division of labour",
+    "statements": [
+      "Specialisation never occurs in service industries because only factories can divide tasks.",
+      "Transfer payments to households break circular flow permanently.",
+      "Division of labour never creates drawbacks such as monotonous work or dependency on other stages.",
+      "Specialisation applies only to agriculture and cannot occur in manufacturing or services.",
+      "Interdependent assembly stages mean a breakdown in one station can halt the whole line."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.22",
+    "context": "A car assembly line splits welding, painting, and electronics into separate tasks. Evaluate specialisation:. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Circular flow income loop",
+    "statements": [
+      "Factor payments from firms to households become household income in the circular flow.",
+      "Household spending on goods and services returns revenue to firms, completing the loop.",
+      "The circular flow assumes households never supply labour or capital to production.",
+      "Money facilitates exchange within the flow as medium of exchange linking sales and purchases.",
+      "Saving and taxes can withdraw spending temporarily in extended circular-flow models."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.23",
+    "context": "Evaluate how income and spending connect households and firms: Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Unit of account role",
+    "statements": [
+      "Without money, modern exchange is usually easier than with money.",
+      "Unit of account means money serves as common measure for quoting prices and recording debts.",
+      "Unit of account requires barter because prices cannot be listed without trading goods directly.",
+      "Without a unit of account, comparing bread and cinema ticket values becomes harder.",
+      "Medium of exchange and unit of account are identical functions with no distinction."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.24",
+    "context": "Prices in a supermarket are all labelled in euros. Evaluate money's unit-of-account function:. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Municipal snow clearing",
+    "statements": [
+      "Street clearing after snow benefits many residents and is hard to charge individually at moment of use.",
+      "Free-rider issues arise if clearing relied on voluntary payments from each household.",
+      "Tax funding spreads cost across taxpayers to provide the shared service reliably.",
+      "Snow clearing is a pure private good with perfect excludability at all times.",
+      "Public goods financed by tax never appear in circular-flow diagrams with households."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.25",
+    "context": "City clears snow from all residential streets using general taxation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Compare prices across aisles",
+    "statements": [
+      "Unit of account lets unlike products be priced in the same euro measure for comparison.",
+      "Unit of account function means euros physically store bread inside the coin itself.",
+      "Without common price units, barter ratios among many goods become complex quickly.",
+      "Medium of exchange and store of value are the only money functions; unit of account does not exist.",
+      "Inflation never affects unit-of-account function because price labels stay numeric."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.26",
+    "context": "Evaluate why a common currency unit matters for shopping: Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Free rider street concert",
+    "statements": [
+      "Listeners enjoying music without contributing resemble free riders when funding is voluntary.",
+      "Pure public-good logic applies fully only if the concert is non-excludable and non-rival for all listeners.",
+      "Tax-funded public events could reduce free riding compared with purely voluntary sponsor models alone.",
+      "Free-rider problems arise only when inflation erodes purchasing power of tickets.",
+      "Non-paying enjoyment never creates funding shortfalls for open-access events."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.27",
+    "context": "A free outdoor concert is funded by sponsors; passers-by listen without paying. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Barter limits",
+    "statements": [
+      "Inflation refers to one shop's single price hike only, never to the general price level.",
+      "Division of labour across countries is impossible because climate never differs.",
+      "Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all.",
+      "Without money, storing value from perishable eggs into future purchases is harder than holding currency.",
+      "Barter economies never face problems comparing relative values of unlike goods."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.28",
+    "context": "Two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Integrated public finance recap",
+    "statements": [
+      "Money functions as medium of exchange, unit of account, and store of value in the monetary economy.",
+      "Taxation can fund public goods and transfers when free riders would underfund voluntary provision.",
+      "Inflation erodes purchasing power; ECB aims for stability slightly below 2%.",
+      "Division of labour raises productivity but may create monotony and interdependence drawbacks.",
+      "Extended circular-flow models link households, firms, and government through income, spending, and tax."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.29",
+    "context": "Assess combined concepts from circular flow, money, public goods, and specialisation: Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Inflation versus single price hike",
+    "statements": [
+      "Inflation refers to a general rise in the price level, not every individual price change alone.",
+      "A single ten-cent latte rise automatically equals economy-wide inflation by definition.",
+      "Persistent general price rises erode purchasing power of money over time.",
+      "ECB targets inflation slightly below 2% for the general index, not each shop's menu.",
+      "Purchasing power depends on average prices faced by consumers broadly, not one item once."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.30",
+    "context": "One café raises latte price ten cents; national inflation stays near ECB target. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Factor Incomes in the Circular Flow",
+    "statements": [
+      "Factor payments from firms to households are income earned for supplying labour, land, or capital to production.",
+      "Household income in the circular flow is unrelated to any prior supply of productive inputs to firms.",
+      "Consumption spending returns revenue to firms that previously paid factor incomes to households.",
+      "Government tax receipts and transfer payments can appear in extended circular-flow diagrams.",
+      "Money as medium of exchange connects production, income, and spending in the monetary circuit."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.31",
+    "context": "Analyze how wages, rent, and profit link household supply of productive inputs to firm payments. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Levee Maintenance Levy",
+    "statements": [
+      "Flood protection benefits many residents simultaneously and is hard to exclude at the moment of need.",
+      "Voluntary donations alone may underfund levees because non-payers still benefit from protection.",
+      "Tax financing spreads levee costs across the community, reducing free-rider incentives.",
+      "Because levees are physical structures, they cannot exhibit public-good characteristics.",
+      "Disaster relief transfers to flooded households differ from levee provision but may complement policy."
+    ],
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.32",
+    "context": "A riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  }
+]

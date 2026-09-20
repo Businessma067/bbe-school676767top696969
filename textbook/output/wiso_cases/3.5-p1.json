@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.01",
+    "title": "Marketing ist mehr als Werbung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Begriff Marketing:",
+    "statements": [
+      "Marketing ist die systematische Orientierung des gesamten Unternehmens, also aller betrieblichen Bereiche, und seines Angebots an den Bedürfnissen und Wünschen der Kunden.",
+      "Marketing besteht hauptsächlich aus Werbung und betrifft sonst kaum den Rest des Unternehmens.",
+      "Wird am Markt vorbei produziert und das Angebot nicht nachgefragt, kann das Unternehmen seine Kosten nicht decken, kommt in Zahlungsschwierigkeiten und scheitert.",
+      "In einer Marktwirtschaft ist die Orientierung am Markt für den Unternehmenserfolg nebensächlich, weil sich die Nachfrage dem fertigen Angebot schon anpasst.",
+      "Die landläufige Vermutung, Marketing sei vor allem Werbung, greift zu kurz."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Alle Bereiche, nicht nur die Werbeabteilung. Das Buch definiert Marketing als systematische Orientierung des gesamten Unternehmens, das heißt aller betrieblichen Bereiche, und seines Angebots an den Bedürfnissen und Wünschen der Kunden. Planung, Produktion, Preis, Distribution und Verkauf gehören dazu. Wer Marketing auf Plakate und Spots verengt, beschreibt genau die landläufige Vermutung, der das Buch widerspricht. Ohne diese Ausrichtung am Kundenwunsch bleibt das Angebot ein Zufallsprodukt. Wer nur die Kommunikationsabteilung umstellt und Produktion sowie Absatz unberührt lässt, hat das gesamte Unternehmen noch nicht marktorientiert ausgerichtet und erfüllt die Definition daher nicht.\n\nDie Aussage ist wahr.",
+      "Werbung allein trägt den Begriff nicht. Die landläufige Vermutung, Marketing handle hauptsächlich von Werbung, wird ausdrücklich zurückgewiesen. Marketing ist die systematische Orientierung des ganzen Unternehmens und seines Angebots an Kundenbedürfnissen. Werbebotschaften sind später nur ein Teil der Kommunikationspolitik. Ein Betrieb, der nur wirbt, aber am Markt vorbei produziert, deckt seine Kosten nicht. Die Einengung auf Werbung macht den Satz falsch.\n\nDie Aussage ist falsch.",
+      "Nachfrageausfall zieht Zahlungsprobleme nach. Produziert ein Unternehmen am Markt vorbei und wird sein Angebot nicht nachgefragt, kann es seine Kosten nicht decken, kommt in Zahlungsschwierigkeiten und scheitert. In einer marktwirtschaftlich organisierten Wirtschaft entscheidet also die Marktorientierung über das Überleben, nicht der gute Wille der Produktion. Wer den Zusammenhang zwischen fehlender Nachfrage und Scheitern bestreitet, widerspricht dieser Kette.\n\nDie Aussage ist wahr.",
+      "Der Markt wartet nicht auf das fertige Lager. Die Orientierung am Markt ist für ein Unternehmen in einer Marktwirtschaft entscheidend. Passt das Angebot nicht zu Bedarf und Wunsch, bleibt es liegen, die Kosten bleiben ungedeckt. Die Vorstellung, die Nachfrage passe sich schon dem an, was intern gebaut wurde, kehrt die Logik um: zuerst Kundenbedürfnisse klären, dann das Angebot ausrichten. Nebensächlichkeit der Marktorientierung behauptet das Buch nicht.\n\nDie Aussage ist falsch.",
+      "Der Kurzschluss Werbung gleich Marketing hält nicht. Entgegen der landläufigen Vermutung, es gehe hauptsächlich um Werbung, ist Marketing die systematische Orientierung des gesamten Unternehmens und seines Angebots an den Kunden. Werbung bleibt ein kleiner Teilbereich der Kommunikationspolitik. Der Satz trifft genau diese Korrektur, ohne Werbung für unwichtig zu erklären.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.02",
+    "title": "Aufgaben gelungenen Marketings",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Aufgaben eines gelungenen Marketings:",
+    "statements": [
+      "Für gelungenes Marketing muss ein Unternehmen herausfinden, was bestehende und mögliche zukünftige Kundinnen und Kunden brauchen und sich wünschen.",
+      "Das Angebot darf unabhängig von den ermittelten Kundenwünschen intern festgelegt werden.",
+      "Sobald das Produkt fertig ist, darf auf die Kommunikation des Nutzens verzichtet werden, weil gute Ware sich von selbst verkauft.",
+      "Die Preise sind so zu gestalten, dass Kundinnen und Kunden das Angebot nachfragen können und wollen.",
+      "Ob das Angebot am richtigen Ort zur richtigen Zeit verfügbar ist, spielt für gelungenes Marketing keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Bestehende und künftige Kunden zählen beide. Gelungenes Marketing beginnt damit, herauszufinden, was bestehende und mögliche zukünftige Kundinnen und Kunden brauchen und sich wünschen. Marktforschung liefert dafür grundlegende Informationen. Wer nur heutige Stammkäufer fragt und potenzielle Käufergruppen ausblendet, verkürzt die erste Aufgabe. Die Bedarfsklärung ist der Ausgangspunkt, nicht ein optionaler Zusatz nach der Produktion. Ohne diese Klärung bleiben Preis, Ort und Botschaft Blindflug, weil niemand weiß, wessen Bedarf das Angebot treffen soll.\n\nDie Aussage ist wahr.",
+      "Internes Festlegen ohne Wunschbezug bricht die Reihenfolge. Nach der Klärung der Bedürfnisse ist das Angebot des Unternehmens entsprechend zu planen. Ein Programm, das unabhängig von den ermittelten Wünschen intern beschlossen wird, ist genau das Produzieren am Markt vorbei. Die zweite Aufgabe des gelungenen Marketings wäre dann verfehlt. Planung folgt dem Bedarf, nicht umgekehrt.\n\nDie Aussage ist falsch.",
+      "Unbekannte Ware bleibt im Lager. Zum gelungenen Marketing gehört, Angebot und Nutzen den Kundinnen und Kunden zu kommunizieren, damit sie davon erfahren. Das Fahrradbeispiel sagt klar: sind die Räder gut und erschwinglich, kennt sie aber niemand, weil nirgends darauf hingewiesen wird, wird ebenfalls wenig verkauft. Die Behauptung, Kommunikation sei überflüssig, sobald die Qualität stimmt, widerspricht diesem Schritt.\n\nDie Aussage ist falsch.",
+      "Preis muss Nachfrage ermöglichen. Die Preise sind so zu gestalten, dass Kundinnen und Kunden das Angebot nachfragen können und wollen. Können sie den Preis nicht tragen oder wollen sie ihn nicht zahlen, bleibt das sonst passende Produkt liegen. Preisgestaltung ist deshalb eine eigene Aufgabe des gelungenen Marketings, nicht nur eine interne Kostenrechnung ohne Blick auf die Zahlungsbereitschaft.\n\nDie Aussage ist wahr.",
+      "Ort und Zeitpunkt gehören zur Aufgabe. Gelungenes Marketing organisiert, dass das Angebot am richtigen Ort zur richtigen Zeit zur Verfügung steht. Die Distribution ist entscheidend, weil auch ein richtiges Produkt am falschen Ort nicht verkauft werden kann. Wer Verfügbarkeit für nebensächlich erklärt, streicht genau diesen fünften Punkt. Ohne den passenden Absatzweg bleibt der Nutzen theoretisch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.03",
+    "title": "Vier Bereiche und der Produktbegriff",
+    "context": "Bewerten Sie die folgenden Aussagen zu den marktorientierten Fragen und zum Produkt im Marketing:",
+    "statements": [
+      "Die Marketingmaßnahmen beziehen sich besonders auf Produkt- und Sortimentspolitik, Preis- und Konditionenpolitik, Distributionspolitik und Kommunikationspolitik.",
+      "Als Produkt gelten im Marketing nur greifbare Waren wie ein Fahrrad oder ein Packerl Kristallzucker.",
+      "Dienstleistungen, Organisationen, Kampagnen, Ideen, Personen und Orte können vermarktet werden und gelten im Marketing als Produkt.",
+      "Ein Fitnessstudio, eine Steuerberatungskanzlei oder ein Nachhilfeinstitut betreiben kein Marketing, weil sie keine greifbare Ware herstellen.",
+      "Bietet man rund um ein Produkt Beratung, Einschulung und laufende Betreuung an, umfasst das Produkt im Sinne des Marketing sowohl die Sache selbst als auch die verbundenen Dienstleistungen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Vier Fragen bündeln die Maßnahmen. Was wird angeboten, zu welchem Preis, wo und mit welcher Botschaft an wen: genau darauf beziehen sich die Marketingmaßnahmen besonders, in der Sprache des Buchs Product, Price, Place und Promotion. Produktprogramm und Sortiment, Preise und Konditionen, Absatzorganisation sowie Werbung, Verkaufsförderung und Öffentlichkeitsarbeit gehören dazu. Wer nur einen dieser Blöcke als Marketing gelten lässt, verkürzt die marktorientierten Fragen. Marktforschung liefert für genau diese vier Fragen die grundlegenden Informationen, damit die Bereiche nicht unabhängig voneinander entschieden werden.\n\nDie Aussage ist wahr.",
+      "Greifbarkeit ist keine Voraussetzung. In der Marketingsprache heißen nicht nur angreifbare Dinge wie ein Fahrrad oder ein Packerl Kristallzucker Produkt. Dienstleistungen, Organisationen, Kampagnen, Ideen, Personen und Orte können vermarktet werden und gelten ebenfalls als Produkt. Die Beschränkung auf Ware, die man in die Hand nehmen kann, widerspricht dieser Erweiterung. Ein Nachhilfeinstitut vermarktet dann ebenso ein Produkt wie ein Radhersteller.\n\nDie Aussage ist falsch.",
+      "Der erweiterte Produktbegriff ist ausdrücklich. Dienstleistungen, Organisationen, Kampagnen, Ideen, Personen und Orte können vermarktet werden und gelten im Marketing als Produkt. Hilfsorganisationen, Parteien, Initiativen, Städte, Regionen und Länder betreiben demnach Marketing. Die Aussage gibt diese Buchliste wieder, ohne jedes beliebige Thema schon zum vermarkteten Produkt zu erklären; entscheidend ist, dass es sich um ein Angebot handelt, das an Bedürfnissen ausgerichtet wird.\n\nDie Aussage ist wahr.",
+      "Dienstleister stehen nicht außerhalb. Auch ein Dienstleistungsunternehmen wie ein Fitnessstudio, eine Steuerberatungskanzlei oder ein Nachhilfeinstitut betreibt Marketing. Die Beispiele stehen im Buch gerade deshalb, weil Marketing nicht an die Herstellung greifbarer Ware gebunden ist. Wer diesen Betrieben Marketing abspricht, kehrt die Erweiterung des Produktbegriffs um.\n\nDie Aussage ist falsch.",
+      "Zusatzleistungen gehören zum vermarkteten Bündel. Rund um ein Produkt Beratung, Einschulung und laufende Betreuung anzubieten bedeutet, dass das Produkt im Sinne des Marketing sowohl die Sache selbst als auch die verbundenen Dienstleistungen umfasst. Produkt- und Sortimentspolitik bezieht sich deshalb auch auf Zusatzleistungen, nicht nur auf das Kernobjekt. Ein Rad ohne Einschulung kann dann ein anderes vermarktetes Produkt sein als dasselbe Rad mit Betreuung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.04",
+    "title": "Preis, Distribution und Kommunikation",
+    "context": "Bewerten Sie die folgenden Aussagen zu Preis-, Distributions- und Kommunikationspolitik:",
+    "statements": [
+      "Zur Preis- und Konditionenpolitik gehören neben der Höhe der Preise auch Rabatte, Aktionen und Sonderpreise sowie Liefer- und Zahlungsbedingungen.",
+      "Vor allem bei Lebensmitteln greifen viele Käufer hauptsächlich zum günstigsten Angebot.",
+      "Ein richtiges Produkt am falschen Ort lässt sich trotzdem zuverlässig verkaufen, weil die Distribution nachrangig ist.",
+      "Werbung ist nur ein kleiner Teilbereich des gesamten Marketing eines Unternehmens.",
+      "Kommunikationspolitik beschränkt sich auf klassische Werbung und schließt Verkaufsförderung sowie Öffentlichkeitsarbeit aus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Konditionen sind mehr als die Listenhöhe. Marketingmaßnahmen im Preisbereich beziehen sich auf Höhe und Gestaltung der Preise, auf Rabatte, Aktionen und Sonderpreise sowie auf Liefer- und Zahlungsbedingungen. Wer nur den Endbetrag auf dem Schild als Preispolitik denkt, lässt Rabatt, Aktion und Zahlungsziel weg, obwohl das Buch sie ausdrücklich dazuzählt. Die Zahlungsbereitschaft hängt oft genau an diesen Konditionen. Ein Aktionspreis ohne Zahlungsziel oder ein Listenpreis ohne Rabattpolitik wäre also nur ein Ausschnitt derselben Preis- und Konditionenpolitik.\n\nDie Aussage ist wahr.",
+      "Lebensmittelkauf folgt häufig dem günstigsten Angebot. Bei vielen Produkten reagieren Kundinnen und Kunden vorwiegend auf den Preis. Vor allem bei Lebensmitteln greifen viele Käufer hauptsächlich zum günstigsten Angebot; die Bereitschaft, für ein hochwertiges Produkt mehr zu zahlen, ist häufig begrenzt. Der Satz trifft diese Buchbeobachtung, ohne zu behaupten, Qualität spiele nirgends eine Rolle.\n\nDie Aussage ist wahr.",
+      "Falscher Ort stoppt auch das passende Produkt. Die Distributionspolitik organisiert den Absatz, damit Produkte zu den Kundinnen und Kunden kommen, etwa über Groß- und Einzelhandel, Internet, Filialen, Franchising oder Handelsvertreter. Die Distribution ist entscheidend, denn auch ein richtiges Produkt am falschen Ort kann dann nicht verkauft werden. Nachrangigkeit des Absatzwegs widerspricht genau diesem Satz.\n\nDie Aussage ist falsch.",
+      "Werbung trägt nicht das ganze Marketing. Kommunikationspolitik umfasst Werbung, Verkaufsförderung und Öffentlichkeitsarbeit. Werbung ist also nur ein kleiner Teilbereich des gesamten Marketing. Das schließt an die Definition an, wonach Marketing die Orientierung des ganzen Unternehmens ist, nicht die Summe der Inserate. Der Satz hält diese Gewichtung fest.\n\nDie Aussage ist wahr.",
+      "Verkaufsförderung und PR gehören dazu. Die Kommunikationspolitik bezieht sich auf Werbung, Verkaufsförderung und Öffentlichkeitsarbeit. Wer Verkaufsförderung und Öffentlichkeitsarbeit ausschließt, lässt zwei der drei genannten Blöcke weg. Klassische Werbung bleibt ein Teil, nicht die ganze Botschaftspolitik. Die Beschränkung macht den Satz falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.05",
+    "title": "Marktorientierung im ganzen Unternehmen",
+    "context": "Ein Fahrradhersteller richtet Angebot, Preis, Vertrieb und Hinweise an Eltern und Kindern aus. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Manche verstehen Marketing nicht nur als Managementprozess, sondern als Philosophie für das gesamte Unternehmen, das sich am Markt und am Unternehmensumfeld orientiert.",
+      "Marketing betrifft ausschließlich die Werbeabteilung und lässt Planung, Entwicklung, Produktion, Distribution und Verkauf unberührt.",
+      "Werden Fahrräder erzeugt, die Eltern oder Kindern nicht gefallen, sich nicht gut fahren, zu teuer sind oder nur umständlich erhältlich sind, kann das Unternehmen seine Produkte nicht verkaufen.",
+      "Sind die Räder gut und erschwinglich, verkaufen sie sich auch dann zuverlässig, wenn niemand auf sie hingewiesen wird.",
+      "Die Marketingmaßnahmen sollen nicht nur fall- oder phasenweise, sondern laufend systematisch aufeinander abgestimmt eingesetzt werden."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Philosophie reicht über den Prozess hinaus. Marketing betrifft viele Unternehmensbereiche, von der Planung und Entwicklung des Angebots über die Produktion bis zu Distribution und Verkauf. Manche verstehen es darüber hinaus als Philosophie für das gesamte Unternehmen, das sich in seinem Tun am Markt und am Unternehmensumfeld orientiert. Der Satz gibt genau diese zweite Lesart wieder, ohne die Prozesssicht zu streichen.\n\nDie Aussage ist wahr.",
+      "Vom Entwurf bis zum Verkauf ist Marketing betroffen. Das Marketing eines Unternehmens betrifft viele Bereiche, von der Planung und Entwicklung des Angebots, der Produktion bis hin zur Distribution und dem Verkauf. Eine Isolierung auf die Werbeabteilung widerspricht dieser Breite. Wer Produktion und Absatz ausklammert, behandelt Marketing wieder nur als Werbung.\n\nDie Aussage ist falsch.",
+      "Gefallen, Fahren, Preis und Erhältlichkeit entscheiden mit. Orientiert sich der Hersteller nicht an den Bedürfnissen von Eltern und Kindern, scheitert der Absatz: Räder, die nicht gefallen, sich nicht gut fahren, zu teuer sind oder nur umständlich erhältlich sind, lassen sich nicht verkaufen. Das Beispiel bündelt Produkt, Preis und Distribution. Der Satz trifft die Buchszene, ohne jedes einzelne Merkmal schon als alleiniges Ausschlusskriterium zu isolieren; zusammen machen sie den Verkauf unwahrscheinlich. Fehlt eines dieser Glieder, reicht guter Wille in der Werkstatt nicht: der Markt nimmt das Rad dann nicht ab, die Kosten bleiben ungedeckt.\n\nDie Aussage ist wahr.",
+      "Unsichtbare Qualität bleibt unsichtbar. Sind die Produkte zwar gut und erschwinglich, kennt sie aber niemand, weil nirgends auf diese Räder hingewiesen wird, wird ebenfalls wenig verkauft. Kommunikation des Nutzens gehört zum gelungenen Marketing. Die Behauptung, Hinweis sei überflüssig, sobald Qualität und Preis stimmen, widerspricht dem Beispiel.\n\nDie Aussage ist falsch.",
+      "Abstimmung ist Daueraufgabe. Die Maßnahmen sollen nicht nur fall- oder phasenweise eingesetzt werden, sondern laufend systematisch aufeinander abgestimmt zum Einsatz kommen. Diese Abstimmung ist nicht immer einfach; Daten aus der Marktforschung tragen dazu bei, die richtigen Entscheidungen zu treffen. Wer nur Kampagneninseln ohne laufende Koordination vorsieht, verfehlt genau diese Forderung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.06",
+    "title": "Abstimmung von Produkt, Preis, Ort und Botschaft",
+    "context": "Ein hochwertiges Fahrrad soll als exklusiv und qualitativ hochwertig wahrgenommen werden. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein hoher Preis wird von vielen Käuferinnen und Käufern als Indikator für Qualität und Exklusivität interpretiert.",
+      "Ist das Rad zu günstig, werden viele die Qualität anzweifeln oder es nicht mehr für exklusiv halten.",
+      "Ist das Rad zu teuer, werden mögliche Käuferinnen und Käufer vielleicht doch ein anderes Rad kaufen.",
+      "Bietet man das hochwertige Rad in vielen, auch nicht so spezialisierten Geschäften an, bleibt die Exklusivität unberührt.",
+      "Produkt und Preis müssen gut aufeinander abgestimmt werden, ebenso Ort der Verfügbarkeit und vermarktende Botschaft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Preis signalisiert oft Qualität. Ein hochwertiges Fahrrad hat einen hohen Preis, weil die Produktion teuer war und die Qualität hoch ist; vergleichbare Räder liegen ähnlich. Ein hoher Preis wird von vielen Käuferinnen und Käufern als Indikator für Qualität und Exklusivität interpretiert. Der Satz hält diese Deutung fest, ohne zu behaupten, jeder hohe Preis sei schon verdient. Signal und tatsächliche Qualität müssen zusammenpassen. Liegt der Preis deutlich unter vergleichbaren hochwertigen Rädern, kippt genau dieses Signal, obwohl das Produkt selbst teuer erzeugt wurde.\n\nDie Aussage ist wahr.",
+      "Zu billig untergräbt den Qualitätsverdacht positiv. Ist das Rad zu günstig, werden viele die Qualität anzweifeln oder es nicht mehr für exklusiv halten. Der Preis muss zum Produkt passen, sonst kippt die Wahrnehmung. Ein Dumpingpreis für ein angeblich hochwertiges Rad widerspricht der Abstimmung von Product und Price. Genau diese Zweifel beschreibt das Buch.\n\nDie Aussage ist wahr.",
+      "Überzogener Preis treibt zum Alternativkauf. Ist das Rad zu teuer, werden mögliche Käuferinnen und Käufer vielleicht doch ein anderes Rad kaufen. Hoher Preis als Qualitätsindikator hat also eine Obergrenze in der Zahlungsbereitschaft. Produkt und Preis müssen deshalb gut aufeinander abgestimmt werden. Der Satz gibt diese Gefahr wieder.\n\nDie Aussage ist wahr.",
+      "Breite Streuung weicht Exklusivität auf. Bietet man das Rad in vielen, auch nicht so spezialisierten Geschäften an, um möglichst viele Kunden zu erreichen, gilt es ebenfalls nicht mehr als exklusiv. Der Absatzort trägt die Positionierung mit. Wer behauptet, Exklusivität bleibe unberührt, ignoriert genau dieses Buchbeispiel. Fachgeschäfte und Massenregale senden verschiedene Signale. Wer Exklusivität halten will, muss den Absatzweg mitbedenken; Massenregale und Fachgeschäft senden nicht dasselbe Qualitätsversprechen.\n\nDie Aussage ist falsch.",
+      "Vier Stellschrauben müssen zusammenpassen. Produkt und Preis müssen gut aufeinander abgestimmt werden, ebenso der Ort, an dem das Produkt verfügbar ist, und die Botschaft, mit der es vermarktet wird. Werbung und andere verkaufsfördernde Maßnahmen sollen den Wunsch wecken, genau dieses Rad und kein anderes zu kaufen. Isolierte Optimierung einer Größe zerstört die Abstimmung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.07",
+    "title": "Ziele der Marketingmaßnahmen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Marketingzielen:",
+    "statements": [
+      "Die meisten Marketingmaßnahmen zielen darauf, die Zielgruppe zu erreichen, also genau die Personen, die man mit dem Angebot ansprechen will.",
+      "Ein häufiges Ziel ist ein hoher Bekanntheitsgrad und ein positives Bild, gegebenenfalls eine Imagekorrektur.",
+      "Mögliche Marketingziele sind, bestehende Kunden zu halten und neue Kunden zu gewinnen.",
+      "Umsatz halten oder steigern sowie Kosten decken oder Gewinn erzielen gehören nicht zu den möglichen Marketingzielen.",
+      "Mit gehaltenen und gewonnenen Kunden kann der Anteil am Gesamtmarkt gehalten oder erhöht werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zielgruppe ist der gemeinsame Kern. Die Ziele des Marketing sind vielfältig. Gemeinsam ist den meisten Maßnahmen, dass sie die Zielgruppe erreichen sollen, das heißt genau die Personen, die man mit dem Angebot erreichen und ansprechen will. Streuen ohne diese Personengruppe verfehlt den gemeinsamen Nenner. Der Satz gibt diese Buchformulierung wieder. Maßnahmen, die an ganz anderen Personen hängenbleiben, können Bekanntheit streuen und trotzdem die gemeinte Zielgruppe verfehlen.\n\nDie Aussage ist wahr.",
+      "Bekanntheit und Bild gehören zu den gemeinsamen Zielen. Neben dem Erreichen der Zielgruppe nennen die gemeinsamen Ziele einen hohen Bekanntheitsgrad und positives Gesehenwerden bzw. eine Imagekorrektur. Wer nur Absatzzahlen als Ziel zulässt, lässt diesen Block weg. Bekanntheit ohne positives Bild wäre unvollständig; Korrektur setzt voraus, dass das bisherige Bild nicht passt. Imagekorrektur setzt voraus, dass das bisherige Bild der Zielgruppe nicht zum Angebot passt; Bekanntheit allein heilt ein negatives Bild nicht. Positiv gesehen zu werden und bekannt zu sein sind deshalb zwei verbundene, aber nicht identische Ziele derselben Maßnahmen.\n\nDie Aussage ist wahr.",
+      "Halten und Gewinnen stehen nebeneinander. Weitere mögliche Marketingziele bestehen darin, bestehende Kunden zu halten und neue Kunden zu gewinnen. Beides zielt auf den Kundenstamm, nicht nur auf einmalige Erstkäufe. Wer nur Neukunden zählt und Stammkunden ignoriert, oder umgekehrt, verkürzt die Liste. Der Satz trifft beide Seiten.\n\nDie Aussage ist wahr.",
+      "Umsatz und Kostendeckung stehen auf derselben Liste. Weitere mögliche Ziele sind, den Umsatz zu halten oder zu steigern und damit zumindest die Kosten zu decken oder Gewinne zu erzielen. Die Behauptung, diese Größen gehörten nicht zu den Marketingzielen, streicht genau diese Fortsetzung. Marktorientierung soll am Ende wirtschaftlich tragen, nicht nur Botschaften senden.\n\nDie Aussage ist falsch.",
+      "Kundenstamm stützt den Marktanteil. Bestehende Kunden halten und neue gewinnen soll den Anteil am Gesamtmarkt halten oder sogar erhöhen. Marktanteil ist hier die Brücke zwischen Kundenarbeit und Position im Gesamtmarkt. Der Satz folgt dieser Kette des Buchs, ohne Marktanteil zum einzigen Ziel zu erklären.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.08",
+    "title": "Marketingkonzept und Kundenzufriedenheit",
+    "context": "Bewerten Sie die folgenden Aussagen zum Marketingkonzept:",
+    "statements": [
+      "Ein umfassendes Marketingkonzept orientiert sich am Markt, legt genau formulierte Ziele fest und koordiniert alle Maßnahmen der Marktorientierung, insbesondere Product, Price, Place und Promotion.",
+      "Ein solches Konzept sollte zu Kundenzufriedenheit führen, die die Voraussetzung für Unternehmenserfolg ist.",
+      "Ein Marketingkonzept braucht keine festgelegten Ziele, solange irgendwelche Maßnahmen laufen.",
+      "Kundenzufriedenheit ist für den Unternehmenserfolg nach dem Buch unerheblich.",
+      "Das Konzept wird entwickelt, um die Marketingziele zu erreichen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Markt, Ziele und die vier Bereiche gehören zusammen. Ein umfassendes Marketingkonzept wird entwickelt, um die Marketingziele zu erreichen. Es orientiert sich am Markt, legt genau formulierte Ziele fest und koordiniert alle Maßnahmen im Unternehmen, die der Marktorientierung dienen, insbesondere Product, Price, Place und Promotion. Fehlt eines dieser Elemente, ist das Konzept nicht das beschriebene umfassende. Koordination heißt Abstimmung, nicht parallele Einzelaktionen. Fehlt die Koordination, können ein hoher Preis und ein Massenvertrieb einander widersprechen, obwohl jedes Instrument für sich begründet wirkt.\n\nDie Aussage ist wahr.",
+      "Zufriedenheit trägt den Erfolg. Ein solches Konzept sollte zu Kundenzufriedenheit führen, die die Voraussetzung für Unternehmenserfolg ist. Ohne erfüllte Bedürfnisse bleibt der Absatz brüchig, selbst wenn kurzfristig Umsatz entsteht. Der Satz stellt die Buchverknüpfung her: Konzept, Zufriedenheit, Erfolg. Zufriedenheit ist hier Bedingung, nicht bloß ein weiches Extra. Unzufriedene Käuferinnen und Käufer tragen weder Wiederholungskäufe noch den Marktanteil, den die weiteren Marketingziele anstreben.\n\nDie Aussage ist wahr.",
+      "Ohne Ziele fehlt der Kern des Konzepts. Das Konzept legt genau formulierte Ziele fest und wird entwickelt, um die Marketingziele zu erreichen. Maßnahmen ohne diese Festlegung sind kein umfassendes Marketingkonzept im Sinne des Buchs. Beliebige Aktivität ersetzt weder Marktorientierung noch Koordination der vier Bereiche. Der Satz streicht genau die Zielfunktion.\n\nDie Aussage ist falsch.",
+      "Erfolg hängt an der Zufriedenheit. Kundenzufriedenheit ist ausdrücklich die Voraussetzung für Unternehmenserfolg. Unerheblichkeit würde diese Voraussetzung leugnen. Das Konzept soll gerade dorthin führen, weil unzufriedene Kundinnen und Kunden das Angebot nicht tragen. Der Satz kehrt die Buchrelation um.\n\nDie Aussage ist falsch.",
+      "Ziele sind der Anlass des Konzepts. Ein umfassendes Marketingkonzept wird entwickelt, um die Marketingziele zu erreichen. Es ist das Instrument, nicht ein Selbstzweck neben den Zielen. Orientierung am Markt und Koordination der Maßnahmen dienen derselben Erreichung. Der Satz trifft diese Zweckbestimmung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.09",
+    "title": "Marktbegriff im Marketing",
+    "context": "Bewerten Sie die folgenden Aussagen zum Markt und zur Marktforschung:",
+    "statements": [
+      "Im Allgemeinen bezeichnet der Markt das Zusammentreffen von Angebot von und Nachfrage nach einem bestimmten Gut.",
+      "Im Marketing bedeutet Markt die Summe der Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem angebotenen Produkt erfüllt werden kann.",
+      "Markt im Marketing umfasst nur die Personen, die das Produkt bereits gekauft haben.",
+      "Für die marktorientierten Fragen liefert unter anderem die Marktforschung die grundlegenden Informationen.",
+      "Der Markt ist für die Ausrichtung der Marketingmaßnahmen nebensächlich."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Allgemeine Definition bleibt Angebot trifft Nachfrage. Während der Markt im Allgemeinen das Zusammentreffen von Angebot von und Nachfrage nach einem bestimmten Gut bezeichnet, verwendet das Marketing einen engeren, bedürfnisbezogenen Begriff. Der Satz hält die allgemeine Seite fest. Ohne Angebot und Nachfrage gäbe es diesen Marktbegriff nicht; er ist der Ausgangspunkt, bevor die Marketingsprache umformuliert.\n\nDie Aussage ist wahr.",
+      "Marketing zählt Bedarfsträger, nicht nur Transaktionen. Markt bedeutet im Marketing die Summe der Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem angebotenen Produkt erfüllt werden kann. Das schließt auch jene ein, die noch nicht kaufen, deren Bedürfnis aber erfüllbar wäre. Genau darauf baut später das Marktpotenzial auf. Der Satz gibt diese Definition wieder.\n\nDie Aussage ist wahr.",
+      "Bereits gekauft ist zu eng. Die Marketingsumme umfasst Personen und Unternehmen mit erfüllbarem Bedürfnis, nicht nur bisherige Käufer. Marktpotenzial macht deutlich, wie groß der Markt wäre, wenn alle mit diesem Bedürfnis tatsächlich kauften; das setzt Nichtkäufer im Marktbegriff voraus. Wer den Markt auf vergangene Käufe begrenzt, verwechselt Marktvolumen mit dem weiteren Markt im Marketing.\n\nNote: Marktvolumen ist die tatsächlich verkaufte Menge; Markt im Marketing ist breiter. Marktpotenzial rechnet gerade mit jenen Bedarfsträgern, die noch nicht kaufen; wer sie aus dem Marktbegriff streicht, kann Sättigung nicht mehr vom ungenutzten Spielraum unterscheiden.\n\nDie Aussage ist falsch.",
+      "Marktforschung füttert die vier Fragen. Ein Unternehmen orientiert sich bei seinem Angebot an marktorientierten Fragen, für die unter anderem die Marktforschung die grundlegenden Informationen liefert. Ohne diese Daten bleibt die Abstimmung der Maßnahmen unsicher. Der Satz trifft die Hilfsfunktion, ohne Marktforschung mit dem ganzen Marketing gleichzusetzen.\n\nDie Aussage ist wahr.",
+      "Ausrichtung braucht den Markt. Der Markt ist für die Ausrichtung der Marketingmaßnahmen wesentlich. Nebensächlichkeit widerspricht diesem Satz und der ganzen Marktorientierung. Ziele, Konzept und Kennzahlen setzen voraus, dass klar ist, welcher Markt gemeint ist. Wer den Markt wegstreicht, lässt die Maßnahmen ohne Bezugspunkt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.10",
+    "title": "Marktpotenzial und Marktvolumen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Marktpotenzial und Marktvolumen:",
+    "statements": [
+      "Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes.",
+      "Das Marktvolumen ist die tatsächlich verkaufte Menge des Produkts.",
+      "Liegt das Marktvolumen nahe am Marktpotenzial, ist der Markt beinahe gesättigt.",
+      "Marktpotenzial und Marktvolumen sind denselben Betrag, weil jeder Bedarfsträger bereits kauft.",
+      "Gesättigte Märkte werden häufig durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten gemacht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Maximum aller denkbaren Käufe. Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes. Es macht deutlich, wie groß ein Markt wäre, wenn alle Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem Produkt erfüllt werden könnte, tatsächlich dieses Produkt kaufen würden. Die Größe ist also eine Obergrenze, keine verbuchte Ist-Menge. Wer Potenzial mit dem heutigen Absatz gleichsetzt, verfehlt genau dieses Maximum. Liegt das Volumen deutlich darunter, bleibt Raum; liegt es nahe daran, ist kaum noch zusätzlicher Absatz im bisherigen Markt möglich.\n\nDie Aussage ist wahr.",
+      "Ist-Absatz aller Anbieter. Das Marktvolumen ist die tatsächlich verkaufte Menge des Produkts. Es misst, was im Markt wirklich abgesetzt wurde, nicht was maximal möglich wäre. Die Differenz zum Potenzial zeigt ungenutzten Spielraum. Der Satz hält die Ist-Größe fest.\n\nDie Aussage ist wahr.",
+      "Enge Lücke heißt Sättigung. Ist das Marktvolumen nahe am Marktpotenzial, bedeutet das, dass der Markt beinahe gesättigt ist und kaum mehr verkauft werden könnte. Fast alle Bedarfsträger kaufen dann schon. Weite Lücke hieße ungesättigt. Der Satz trifft die Buchrelation von Nähe und Sättigung.\n\nDie Aussage ist wahr.",
+      "Gleichheit ist der Grenzfall, nicht die Regel. Potenzial ist die maximale Menge, Volumen die tatsächliche. Sie fallen nur zusammen, wenn wirklich alle mit erfüllbarem Bedürfnis kaufen. Die Behauptung, sie seien stets derselbe Betrag, weil jeder Bedarfsträger bereits kaufe, setzt Sättigung als Normalfall. Das Buch trennt die Begriffe gerade, weil das oft nicht gilt.\n\nDie Aussage ist falsch.",
+      "Neue Modelle oder neue Schichten öffnen den Markt. Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen, zum Beispiel durch neue Modelle mit neuen Funktionen. Dann steigt das relevante Potenzial bzw. die Nachfrage über das bisherige Volumen. Der Satz gibt diese Strategie wieder. Neue Funktionen oder neue Altersgruppen verschieben, wer ein erfüllbares Bedürfnis hat, und damit die Lücke zwischen Volumen und Potenzial.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.11",
+    "title": "Verkaufspotenzial, Verkaufsvolumen und Marktanteil",
+    "context": "Bewerten Sie die folgenden Aussagen zu unternehmensbezogenen Absatzkennzahlen:",
+    "statements": [
+      "Als Verkaufs- oder Absatzpotenzial eines Unternehmens bezeichnet man jene Absatzmenge, die das Unternehmen im besten Fall erreichen kann oder zu erreichen hofft.",
+      "Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein bestimmtes Produkt oder eine Produktgruppe.",
+      "Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden.",
+      "Verkaufspotenzial und Verkaufsvolumen eines Unternehmens sind begrifflich dieselbe Größe.",
+      "Das Absatzpotenzial der woom GmbH ist jene Absatzmenge von Fahrrädern, die sie im Idealfall verkaufen kann."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Bestfall der eigenen Menge. Als Verkaufs- oder Absatzpotenzial eines Unternehmens für ein Produkt oder eine Produktgruppe bezeichnet man jene Absatzmenge, die das Unternehmen im besten Fall erreichen kann oder zu erreichen hofft. Das ist die unternehmensbezogene Obergrenze, nicht das Marktpotenzial aller Anbieter. Hoffnung und Bestfall markieren, dass es sich nicht um den bereits realisierten Absatz handelt. Marktpotenzial bleibt die Obergrenze aller Anbieter; das Absatzpotenzial einer Firma kann darunter liegen, weil nicht jedes Unternehmen den ganzen Markt bedienen kann.\n\nDie Aussage ist wahr.",
+      "Ist-Absatz der eigenen Firma. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein bestimmtes Produkt oder eine Produktgruppe. Es entspricht auf Unternehmensebene dem, was das Marktvolumen auf Marktebene ist: die tatsächlich abgesetzte Menge, hier nur des einen Betriebs. Der Satz trennt diese Ist-Größe vom Potenzial.\n\nDie Aussage ist wahr.",
+      "Menge oder Wert sind beide zulässig. Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden. Stückzahlen und Umsätze können also denselben Anteilgedanken tragen, führen aber bei unterschiedlichen Preisen zu verschiedenen Prozenten. Das Buch lässt beide Wege zu. Wer nur eine der beiden Rechenarten anerkennt, verkürzt die Kennzahl.\n\nDie Aussage ist wahr.",
+      "Bestfall und Ist fallen auseinander. Potenzial ist die Menge im besten Fall bzw. die erhoffte Menge, Volumen der tatsächliche Absatz. Dieselbe Größe wären sie nur, wenn der Bestfall bereits vollständig realisiert wäre. Die begriffliche Gleichsetzung streicht genau den Unterschied, den das Buch mit zwei Termini zieht. woom kann im Idealfall mehr Räder verkaufen, als es aktuell absetzt. woom kann im Idealfall mehr Räder verkaufen als im laufenden Jahr, genau deshalb stehen zwei Kennzahlen nebeneinander.\n\nDie Aussage ist falsch.",
+      "woom illustriert den Bestfall. Das Absatzpotenzial der woom GmbH ist jene Absatzmenge von Fahrrädern, die sie im Idealfall verkaufen kann. Das Beispiel macht die Definition konkret: nicht der heutige Absatz, sondern die im besten Fall erreichbare Menge. Der Satz gibt das Buchbeispiel wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.12",
+    "title": "Absoluter und relativer Marktanteil",
+    "context": "Ein Fahrradhersteller setzt 15 Millionen Euro um, das Marktvolumen beträgt 100 Millionen Euro, der größte Mitbewerber setzt 30 Millionen Euro um. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an und wird als Unternehmensumsatz mal 100 geteilt durch das Marktvolumen berechnet.",
+      "Der relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größten Mitbewerbers.",
+      "Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist.",
+      "Im Zahlenbeispiel beträgt der absolute Marktanteil 15 Prozent.",
+      "Im Zahlenbeispiel beträgt der relative Marktanteil 2, das Unternehmen ist daher Marktführer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Formel bindet Umsatz an das Marktvolumen. Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an. Rechnerisch: Unternehmensumsatz mal 100, geteilt durch das Marktvolumen. So entsteht ein Prozentsatz am gesamten Ist-Markt, nicht ein Vergleich nur mit einem Rivalen. Wer den größten Mitbewerber in den Nenner setzt, berechnet bereits den relativen Anteil und verfehlt die absolute Formel.\n\nDie Aussage ist wahr.",
+      "Bezugspunkt ist der größte Mitbewerber. Der relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größten Mitbewerbers. Nenner ist also nicht das Marktvolumen, sondern der stärkste Rivale. Dadurch entsteht eine Kennzahl der Rangordnung, kein Prozent am Gesamtmarkt. Der Satz trifft diese Relation.\n\nDie Aussage ist wahr.",
+      "Über eins heißt vorn. Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist, weil der eigene Umsatz den des bisher größten Mitbewerbers übersteigt. Gleich eins hieße Gleichstand mit dem Größten, unter eins hieße Rückstand. Die Schwelle eins ist die Buchregel für die Führerschaft in dieser Kennzahl.\n\nDie Aussage ist wahr.",
+      "Fünfzehn durch hundert mal hundert. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen = 15 × 100 / 100 = 15. Der Hersteller hält also 15 Prozent des wertmäßigen Marktvolumens. 15 geteilt durch 30 wäre eine andere Rechnung und beträfe den relativen Anteil. Die 15 Prozent folgen allein aus Umsatz und Volumen.\n\nDie Aussage ist wahr.",
+      "Fünfzehn durch dreißig ist ein halb. Relativer Marktanteil = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 15 / 30 = 0,5. Das ist kleiner als eins, also kein Marktführer. Die Behauptung, der relative Anteil betrage 2, verdreht Zähler und Nenner (30 / 15 = 2 wäre der Vorsprung des Rivalen). 0,5 zeigt Rückstand gegenüber dem Größten, obwohl 15 Prozent absolut schon ein nennenswerter Brocken am Volumen sind.\n\nNote: Absolut 15 Prozent und relativ 0,5 können zusammenfallen; die eine Zahl ersetzt die andere nicht. Absolut 15 Prozent beschreiben den Brocken am Gesamtvolumen; relativ 0,5 beschreibt den Rückstand zum Größten. Beide Zahlen braucht man, weil die eine die andere nicht ersetzt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.13",
+    "title": "Segmentierung des Marktes",
+    "context": "Bewerten Sie die folgenden Aussagen zur Aufteilung des Marktes in Käufergruppen:",
+    "statements": [
+      "Es ist meist nicht sinnvoll, Produkte für den Gesamtmarkt zu entwickeln und für jedes Produkt auf allen Märkten Marketing zu betreiben.",
+      "Der Markt wird in Käufergruppen aufgeteilt, die Personen mit Gemeinsamkeiten bei bestimmten Merkmalen umfassen, zum Beispiel Alter, Einkommen oder Konsumgewohnheiten.",
+      "Durch die Segmentierung können Produktentwicklung, Preise, Absatzwege und Werbung gezielter ausgerichtet werden.",
+      "Zielgruppen sind ausschließlich die Personen, die Produkte nachfragen und kaufen.",
+      "Bedürfnisse und Kaufverhalten der verschiedenen Käufergruppen sind so ähnlich, dass eine Aufteilung entbehrlich ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Gesamtmarkt für jedes Produkt überfordert. Bedürfnisse und Kaufverhalten der verschiedenen Käufergruppen sind sehr unterschiedlich. Deshalb ist es meist nicht sinnvoll, Produkte für den Gesamtmarkt zu entwickeln und für jedes Produkt auf allen Märkten Marketing zu betreiben. Undifferenzierte Streuung verfehlt die Unterschiede. Der Satz gibt diese Ausgangskritik wieder. Ein Kinderrad für alle Alters- und Einkommensgruppen zugleich würde an genau diesen Unterschieden scheitern, deshalb teilt man den Markt. Gezieltere Preise und Absatzwege setzen voraus, dass man diese Gruppen vorher gebildet hat.\n\nDie Aussage ist wahr.",
+      "Merkmale bündeln Gruppen. Der Markt wird in Käufergruppen (Zielgruppen) aufgeteilt, segmentiert. Jede Gruppe umfasst Personen mit Gemeinsamkeiten bei bestimmten Merkmalen, zum Beispiel Alter, Einkommen, Konsumgewohnheiten. Homogenität bezieht sich auf diese Merkmale, nicht auf völlige Identität aller Personen. Der Satz trifft Definition und Beispiele.\n\nDie Aussage ist wahr.",
+      "Gezieltere Instrumente folgen der Teilung. Dadurch kann man die Produktentwicklung, die Preise, die Absatzwege und die Werbung gezielter ausrichten. Segmentierung ist also Mittel zur passenderen Marktbearbeitung, nicht Selbstzweck. Ohne Teilung bleiben die vier Bereiche grob. Der Satz hält diesen Nutzen fest.\n\nDie Aussage ist wahr.",
+      "Käuferkreis ist weiter als die Zahlenden. Zielgruppe sind nicht nur die Personen, die Produkte nachfragen und kaufen, sondern auch jene, die die Kaufentscheidung beeinflussen, oder jene, die zwar nicht kaufen, aber das Produkt dann nutzen. Die Beschränkung auf Nachfrager und Käufer streicht Beeinflusser und Nutzer. Gerade bei Kinderfahrrädern zählen Kinder und Eltern verschieden. Eltern zahlen, Kinder nutzen, Freundinnen empfehlen: drei Rollen, die das Buch ausdrücklich in den Zielkreis holt.\n\nDie Aussage ist falsch.",
+      "Unterschiede sind der Grund der Teilung. Bedürfnisse und Kaufverhalten sind sehr unterschiedlich, deshalb segmentiert man. Die Behauptung, die Gruppen seien so ähnlich, dass Aufteilung entbehrlich sei, kehrt die Buchprämisse um. Einheitliches Marketing für den Gesamtmarkt wäre dann wieder die abgelehnte Lösung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.14",
+    "title": "Zielgruppen jenseits der Käufer",
+    "context": "Eltern kaufen ein Kinderrad, das Kind fährt es, Freunde empfehlen das Modell. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Auch Personen, die die Kaufentscheidung beeinflussen, können zur Zielgruppe der Marketingaktivitäten gehören.",
+      "Auch Personen, die nicht kaufen, aber das Produkt nutzen, können zur Zielgruppe gehören.",
+      "Nur wer den Kaufpreis zahlt, kommt als Zielgruppe in Betracht.",
+      "Das Kind, das das Rad nutzt, ohne selbst zu zahlen, kann Zielgruppe sein.",
+      "Weil Freunde die Entscheidung beeinflussen können, darf das Unternehmen auf jede Segmentierung verzichten und alle Märkte gleich bearbeiten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Beeinflusser zählen zum Kreis. Zielgruppen sind nicht nur Nachfrager und Käufer, sondern auch jene, die die Kaufentscheidung beeinflussen. Freunde, die ein Modell empfehlen, gehören in diesen weiteren Kreis. Marketing, das nur die zahlende Person sieht, verfehlt Empfehlungen, die den Kauf erst auslösen. Der Satz folgt der Bucherweiterung. Eine Kampagne, die nur die zahlende Person sieht, lässt Empfehlungen und Nutzungswünsche außen vor, obwohl sie den Kauf auslösen. Das Buch nennt Käufer, Beeinflusser und Nutzer nebeneinander, nicht als Rangfolge, in der nur die zahlende Person zählt.\n\nDie Aussage ist wahr.",
+      "Nutzen ohne Kauf bleibt relevant. Zur Zielgruppe gehören auch jene, die zwar nicht kaufen, aber das Produkt dann nutzen. Zufriedenheit und Wunsch entstehen oft beim Nutzer, während eine andere Person zahlt. Wer Nutzer ausblendet, plant am Gebrauch vorbei. Der Satz hält diese zweite Erweiterung fest.\n\nDie Aussage ist wahr.",
+      "Zahlende allein sind zu wenig. Die Buchliste nennt Käufer, Beeinflusser und Nutzer. Nur den Kaufpreis zahlende Personen zuzulassen, streicht zwei der drei Rollen. Eltern zahlen, Kinder nutzen, Freunde beeinflussen: alle drei können Zielgruppe sein. Die Verengung auf den Zahlenden macht den Satz falsch.\n\nDie Aussage ist falsch.",
+      "Kind als Nutzer im Zielkreis. Wer nicht kauft, aber nutzt, kann Zielgruppe sein. Das Kind auf dem Rad fällt genau in diese Rolle, während die Eltern nachfragen und zahlen. Produktgestaltung und Botschaft dürfen das Kind deshalb nicht ignorieren. Der Satz wendet die Buchregel auf die Szene an.\n\nDie Aussage ist wahr.",
+      "Mehrere Rollen ersetzen die Teilung nicht. Unterschiedliche Käufergruppen bleiben der Grund zu segmentieren. Dass Freunde beeinflussen, erweitert die Zielgruppe, hebt aber nicht die Aussage auf, es sei meist nicht sinnvoll, für den Gesamtmarkt und auf allen Märkten gleich zu werben. Verzicht auf Segmentierung widerspricht der Marktbearbeitung in drei Phasen. Segmentierung bleibt nötig, weil Alter, Einkommen und Konsumgewohnheiten weiterhin Gruppen mit verschiedenem Kaufverhalten bilden.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.15",
+    "title": "Drei Phasen der Marktbearbeitung",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Phasen des zielgruppenorientierten Marketings:",
+    "statements": [
+      "In der ersten Phase wird der Markt segmentiert, in der zweiten wird festgelegt, welche Marktsegmente bearbeitet werden sollen, in der dritten positioniert das Unternehmen sein Angebot auf diesem Zielmarkt.",
+      "Die Positionierung des Angebots erfolgt vor der Segmentierung des Marktes.",
+      "Die Positionierung beschreibt, wie das Produkt in Hinblick auf wichtige Eigenschaften von den Konsumenten gesehen wird bzw. gesehen werden soll.",
+      "Nach der Segmentierung bearbeitet das Unternehmen zwingend jedes gebildete Segment, eine Auswahl findet nicht statt.",
+      "Der Zielmarkt, auf dem positioniert wird, ergibt sich aus der Auswahl der zu bearbeitenden Segmente."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Drei Schritte in fester Folge. Das zielgruppenorientierte Marketing erfolgt in drei Phasen: erst wird der Markt segmentiert, dann wird festgelegt, welche Marktsegmente bearbeitet werden sollen, danach positioniert das Unternehmen sein Angebot auf diesem Zielmarkt. Auswahl folgt der Teilung, Positionierung folgt der Auswahl. Wer die Reihenfolge dreht, verfehlt das Phasenschema. Überspringt man die Auswahl, positioniert man im ungefilterten Gesamtmarkt und verfehlt den Sinn der zweiten Phase. Erst nach dieser Folge hat das Unternehmen einen Zielmarkt, auf dem Unverwechselbarkeit und Wunsch der Zielgruppe Sinn ergeben.\n\nDie Aussage ist wahr.",
+      "Ohne Segmente fehlt der Zielmarkt. Positionierung ist die dritte Phase und setzt voraus, dass Segmente gebildet und zur Bearbeitung ausgewählt wurden. Vor der Segmentierung gäbe es keinen so bestimmten Zielmarkt für das Angebot. Die Behauptung, Positionierung komme zuerst, kehrt das Schema um. Bild und Unverwechselbarkeit zielen auf eine schon gewählte Gruppe. Ein Bild in den Köpfen ohne geklärte Segmente bleibt ungerichtet, weil unklar ist, wessen Wahrnehmung gestaltet werden soll.\n\nDie Aussage ist falsch.",
+      "Wahrnehmung wichtiger Eigenschaften. Die Positionierung des Produkts auf dem Markt beschreibt, wie das Produkt in Hinblick auf wichtige Eigenschaften von den Konsumenten gesehen wird bzw. gesehen werden soll. Soll- und Ist-Bild gehören beide dazu. Es geht um die Sicht der Konsumenten, nicht nur um interne Merkmalslisten. Der Satz trifft diese Definition.\n\nDie Aussage ist wahr.",
+      "Phase zwei ist Auswahl, nicht Automatik. In der zweiten Phase wird festgelegt, welche Marktsegmente bearbeitet werden sollen. Das schließt ein, dass nicht jedes gebildete Segment bearbeitet werden muss. Zwingende Bearbeitung aller Segmente streicht genau diese Festlegung. Ressourcen und Passung steuern die Auswahl.\n\nDie Aussage ist falsch.",
+      "Auswahl erzeugt den Zielmarkt der dritten Phase. Nach der Festlegung, welche Segmente bearbeitet werden, positioniert das Unternehmen auf diesem Zielmarkt. Der Zielmarkt ist also das Ergebnis der zweiten Phase, nicht der ungefilterte Gesamtmarkt. Der Satz schließt die Folge der Phasen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.16",
+    "title": "Positionierung und Unique Selling Proposition",
+    "context": "Die woom GmbH will sich mit besonders kindertauglichen, hochqualitativen Fahrrädern, die lange halten, abheben. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Produkt soll sich deutlich und unverwechselbar von der Konkurrenz abheben und für die Zielgruppe besonders wünschenswert sein.",
+      "Das Produkt soll eine Unique Selling Proposition erlangen.",
+      "Für die woom GmbH ist die Unique Selling Proposition besonders kindertaugliche hochqualitative Fahrräder, die lange halten.",
+      "Eine Unique Selling Proposition bedeutet, dass das Produkt in allen Merkmalen mit den Konkurrenzprodukten identisch ist.",
+      "Positionierung und Unique Selling Proposition zielen auf die Wahrnehmung in der gewählten Zielgruppe, nicht auf ein beliebiges Bild im Gesamtmarkt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unverwechselbar und wünschenswert. Das Produkt soll sich deutlich und unverwechselbar von der Konkurrenz abheben und für die Zielgruppe besonders wünschenswert sein. Beides zusammen ergibt die angestrebte Stellung nach der Auswahl des Zielmarkts. Abheben ohne Wunsch der Zielgruppe bliebe leer, Wunsch ohne Unterschied bliebe austauschbar. Der Satz hält beide Anforderungen fest. Kindertauglichkeit ohne Unterschied zur Konkurrenz wäre austauschbar; Unterschied ohne Wunsch der Zielgruppe bliebe technisches Beiwerk.\n\nDie Aussage ist wahr.",
+      "USP benennt den unverwechselbaren Vorteil. Das Produkt soll eine Unique Selling Proposition erlangen, also genau jene unverwechselbare Stellung, die es von der Konkurrenz abhebt und für die Zielgruppe besonders wünschenswert macht. Der englische Ausdruck steht im Buch als Ziel der Positionierung. Ohne USP bleibt das Angebot austauschbar.\n\nDie Aussage ist wahr.",
+      "woom konkretisiert die USP. Für die woom GmbH ist die Unique Selling Proposition besonders kindertaugliche hochqualitative Fahrräder, die lange halten. Kindertauglichkeit, Qualität und Haltbarkeit bündeln den Unterschied, den Eltern und Kinder suchen sollen. Der Satz gibt das Buchbeispiel wieder, ohne andere Hersteller auszuschließen; es ist die formulierte USP dieses Unternehmens.\n\nDie Aussage ist wahr.",
+      "Identität mit der Konkurrenz wäre das Gegenteil. Unverwechselbar abheben heißt gerade nicht, in allen Merkmalen identisch zu sein. Eine Unique Selling Proposition verlangt den Unterschied, den die Zielgruppe als Vorteil sieht. Vollständige Identität machte Positionierung überflüssig. Der Satz kehrt die Definition um.\n\nDie Aussage ist falsch.",
+      "Zielgruppe trägt das Bild. Positionierung beschreibt, wie das Produkt von den Konsumenten gesehen wird bzw. gesehen werden soll, und das Produkt soll für die Zielgruppe besonders wünschenswert sein. Nach den drei Phasen ist das der gewählte Zielmarkt, nicht ein beliebiges Bild für alle. woom formuliert die USP für kindertaugliche Räder, nicht für den gesamten Zweiradmarkt ohne Unterschied. Der Satz verbindet Phase drei mit der USP. Wer die USP in den Gesamtmarkt ohne gewählte Segmente stülpt, behandelt wieder jedes Produkt auf allen Märkten gleich, obwohl das Buch das meist ablehnt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

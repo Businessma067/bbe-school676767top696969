@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Marketing Objectives Overview",
+    "statements": [
+      "If customers are not satisfied with the product, they are unlikely to buy it again.",
+      "Satisfied customers often become loyal customers who may purchase the product again.",
+      "Customer satisfaction is unrelated to whether buyers purchase the product again.",
+      "Customer satisfaction as a marketing objective is interrelated with objectives such as sales and loyalty.",
+      "Meeting customer wishes and needs is a prerequisite for defining meaningful marketing objectives."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.01",
+    "context": "Analyze how businesses set marketing objectives after analysing the markets they wish to operate in. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Customer Satisfaction and Loyalty",
+    "statements": [
+      "A business that ignores customer satisfaction risks losing repeat sales from otherwise viable buyers.",
+      "A dissatisfied customer may still become a loyal repeat buyer without any change in the product.",
+      "Post-purchase satisfaction influences whether a customer considers the product for a future purchase.",
+      "Customer satisfaction is the only marketing objective and replaces sales and profit goals.",
+      "Businesses set marketing objectives without analysing customer wishes and needs."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.02",
+    "context": "Consider a sportswear manufacturer investing in distinctive product design, athlete endorsements, and loyalty programmes to stand apart from rivals. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Unique Selling Proposition Basics",
+    "statements": [
+      "Loyal customers who buy again help sustain sales volume over time.",
+      "Customer satisfaction supports retention rather than relying solely on one-off transactions.",
+      "Satisfied customers rarely buy the product again because loyalty is independent of satisfaction.",
+      "Satisfied customers may recommend the product to others, extending marketing impact beyond the original sale.",
+      "Customer satisfaction objectives apply only to service firms, not to goods producers."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.03",
+    "context": "Analyze how a unique selling proposition supports product differentiation and attracts loyal customers. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Market Share as Competitiveness",
+    "statements": [
+      "Repeat purchase behaviour proves that customer satisfaction objectives are unnecessary.",
+      "Marketing objectives include ensuring customers are content enough to consider repurchasing.",
+      "Dissatisfied customers are a signal that marketing and product delivery may be missing stated objectives.",
+      "Marketing objectives exclude customer satisfaction when profitability is prioritised.",
+      "Dissatisfied customers will still buy again if the price is reduced slightly."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.04",
+    "context": "Review why gaining and maintaining market share indicates a firm's relative competitiveness. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Sales Volume and Revenue",
+    "statements": [
+      "Customer satisfaction is measured only after profitability targets have been met.",
+      "Customer satisfaction surveys can inform how well a business is meeting its marketing objectives.",
+      "A firm pursuing loyalty must first address whether customers are satisfied with the core product.",
+      "Loyal customers emerge without any need for prior satisfaction with the product.",
+      "Repeat purchase behaviour is more likely when prior use met or exceeded customer expectations."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.05",
+    "context": "Consider a dairy cooperative that brands its organic milk line, measures shelf share in supermarkets, and reinvests surplus profit into processing equipment. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Profitability Objective Foundations",
+    "statements": [
+      "Customer satisfaction has no connection to market share or sales volume objectives.",
+      "A business can ignore wishes and needs analysis if it already has a strong brand.",
+      "Customer satisfaction is not separable from long-run sales performance in the marketing framework.",
+      "Satisfaction objectives mean customers must be delighted on every dimension or they will never return.",
+      "Customer complaints rising after a campaign indicate success on satisfaction objectives."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.06",
+    "context": "Review profitability as a marketing objective and its link to reimbursing owners and reinvestment. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Interrelated Marketing Goals",
+    "statements": [
+      "Businesses analyse customer wishes and needs because unsatisfied buyers will not sustain demand.",
+      "Satisfaction objectives aim to convert first-time buyers into customers who return.",
+      "A marketing plan that achieves high satisfaction can reinforce market share by retaining buyers.",
+      "Satisfied customers never recommend products to others, keeping satisfaction private.",
+      "Customer satisfaction is achieved solely by lowering prices below competitors."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.07",
+    "context": "Analyze how customer satisfaction interrelates with other marketing objectives such as sales and loyalty. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Differentiation Through Branding",
+    "statements": [
+      "Once a customer buys once, satisfaction objectives are automatically fulfilled.",
+      "Dissatisfied customers continue buying out of habit, so satisfaction objectives are optional.",
+      "Customer satisfaction objectives conflict with profitability and cannot coexist.",
+      "Customer complaints rising over time suggest the satisfaction objective is not being achieved.",
+      "Satisfaction surveys are irrelevant to assessing marketing objective performance."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.08",
+    "context": "Consider a hardware store chain comparing local market share, promotional sales spikes, and net profit after covering warehouse costs. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Satisfaction and Repeat Purchase",
+    "statements": [
+      "Satisfied customers provide a foundation for brand loyalty programmes to succeed.",
+      "If a product fails to meet needs, marketing objectives around sales growth become harder to reach.",
+      "A loyal customer is one who buys again regardless of whether they were satisfied.",
+      "Satisfaction with product quality can encourage customers to choose the same brand on the next occasion.",
+      "Marketing objectives treat customer satisfaction as linked to maintaining competitive sales."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.09",
+    "context": "Analyze why building a brand supports the creation of a unique selling proposition. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "USP and Loyal Customer Attraction",
+    "statements": [
+      "A business measuring repurchase rates is indirectly tracking success on satisfaction objectives.",
+      "Customers who feel their wishes were fulfilled are more willing to buy the product again.",
+      "Satisfaction objectives complement differentiation by ensuring the promised uniqueness is experienced.",
+      "Poor satisfaction can erode market share even when promotional spending remains high.",
+      "Satisfaction is an objective because unhappy customers simply will not buy the product again."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.10",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Relative Market Importance",
+    "statements": [
+      "Customer satisfaction applies only after market share targets have been reached.",
+      "Marketing objectives treat satisfaction as separate from loyalty with no connection.",
+      "Loyalty outcomes depend on customers having a satisfactory experience with prior purchases.",
+      "Businesses need not fulfil wishes and needs if differentiation is strong enough.",
+      "Businesses set satisfaction targets because loyal repeat buyers strengthen several other objectives."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.11",
+    "context": "Analyze the relationship between higher sales figures and profitability within stated limitations. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Sales Covering Production Costs",
+    "statements": [
+      "Satisfied customers buy again only when legally required to do so under contract.",
+      "Meeting needs analysed in the market helps a firm align its product with satisfaction goals.",
+      "Customer satisfaction is unrelated to sales because sales depend only on advertising spend.",
+      "A firm with high satisfaction can ignore market share because satisfied buyers guarantee success.",
+      "Dissatisfaction improves long-run sales by encouraging customers to try alternatives within the range."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.12",
+    "context": "Review why dissatisfied customers are unlikely to buy a product again. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Profit Reinvestment Rationale",
+    "statements": [
+      "Customer satisfaction objectives are met when promotional reach is high, regardless of product experience.",
+      "Satisfied customers never buy complementary products from the same firm.",
+      "A satisfied customer base reduces reliance on constant new-customer acquisition alone.",
+      "Customer satisfaction is irrelevant to USP objectives because differentiation is purely visual.",
+      "Repeat purchase rates falling while satisfaction scores rise always indicates data error only."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.13",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Dissatisfaction and Lost Sales",
+    "statements": [
+      "Customer satisfaction is one of several marketing objectives a business may pursue.",
+      "Satisfaction contributes to profitability indirectly by supporting repeat revenue streams.",
+      "When customers are satisfied, they are more likely to remain with the firm rather than switch.",
+      "Customer satisfaction means the product must be the cheapest in the market.",
+      "Marketing staff may track satisfaction scores alongside sales when reviewing objective performance."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.14",
+    "context": "Review the marketing objective of maintaining sales volume to generate revenue. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Perceived Product Uniqueness",
+    "statements": [
+      "Loyalty programmes eliminate the need to pursue customer satisfaction objectives.",
+      "Dissatisfied customers still generate loyal behaviour if enrolled in a rewards scheme.",
+      "A product that delights customers on first use is better positioned to achieve loyalty objectives.",
+      "Customer satisfaction is a financial accounting measure identical to gross profit.",
+      "Businesses set satisfaction objectives only in declining markets."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.15",
+    "context": "Analyze how retained profit from higher sales can be reinvested in the business. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Share Maintenance Strategies",
+    "statements": [
+      "A satisfied customer will never switch to a rival with a stronger USP.",
+      "Customer satisfaction objectives are fulfilled when production volume is maximised.",
+      "A unique selling proposition means the product is identical to all similar products on every feature.",
+      "Dissatisfaction after a promotional trial can undo short-term sales gains from the campaign.",
+      "Satisfaction objectives encourage firms to deliver what was promised in differentiation messaging."
+    ],
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.16",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  }
+]

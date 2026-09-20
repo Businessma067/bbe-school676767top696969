@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Labour as a Factor of Production",
+    "statements": [
+      "Managers who coordinate schedules supply labour as human resources alongside coordination duties.",
+      "Insurance claims handlers processing policies supply labour in a service firm.",
+      "Labour is restricted to manual shop-floor work and excludes planners or accountants.",
+      "Installing software is a want rather than labour because the service is intangible.",
+      "Seasonal pickers fall outside labour because their employment lasts only weeks."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.01",
+    "context": "Analyze how businesses classify human resources among the factors of production used to create goods and services. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Styrian Winemaker Harvest Season",
+    "statements": [
+      "The hillside vineyards represent the land factor as natural resources.",
+      "Seasonal pickers and the cellar master both supply labour for the winery.",
+      "The leased bottling line counts as capital even though the winery does not own it.",
+      "Fermentation knowledge applied to blending draws on knowledge as a production factor.",
+      "Barrel orders are capital decisions, so entrepreneurship is absent."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.02",
+    "context": "Consider a wine-growing business that uses hillside vineyards, seasonal pickers, leased bottling equipment, and specialist fermentation know-how. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Land and Natural Resources",
+    "statements": [
+      "River water used to irrigate crops represents a natural-resource land input.",
+      "Timber ready for milling is land because it originates from trees.",
+      "Mineral rights are capital because they can be bought and sold.",
+      "Oak barrels are land because oak comes from forests.",
+      "Land refers only to fenced factory sites and excludes forests or fisheries."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.03",
+    "context": "Analyze what the land factor includes in production. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Capital in Production",
+    "statements": [
+      "Leased diagnostic tools used by technicians still function as capital.",
+      "Spare parts inventory kept for same-day repairs is capital supporting service delivery.",
+      "Machinery, plant, vehicles, and financial resources used in operations are capital.",
+      "Cash reserves held to finance payroll between invoice cycles form part of capital.",
+      "A fleet of delivery vans used to ship finished goods is capital."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.04",
+    "context": "Review statements about capital as a factor of production. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Factory Production Shift",
+    "statements": [
+      "Production tools and testing equipment on the line are capital in secondary production.",
+      "Engineers monitoring product quality supply specialised labour.",
+      "Plant management coordinating materials, staff, and orders supplies entrepreneurship.",
+      "Materials are land because copper is extracted from the earth.",
+      "Knowledge is a consumer good unless the firm registers patents."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.05",
+    "context": "Consider a manufacturing plant running a shift while sourcing materials and scheduling engineers. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Entrepreneurship as a Factor of Production",
+    "statements": [
+      "Entrepreneurship brings land, labour, and capital together to organise production.",
+      "Uncertainty is borne by lenders alone, not by entrepreneurs.",
+      "Financial resources are entrepreneurship because both involve business decisions.",
+      "Hiring staff converts all coordination into labour with no entrepreneurship left.",
+      "Selecting equipment is capital allocation only, so entrepreneurship is absent."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.06",
+    "context": "Review entrepreneurship among the factors of production. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Knowledge and Technology as Factors",
+    "statements": [
+      "Diagnostic software licences used by repair technicians represent technology in services.",
+      "Experience with fermentation techniques contributes knowledge to winemaking output.",
+      "Technology used at a repair bench counts as a production factor in a service firm.",
+      "Technology counts as a factor only where a firm manufactures physical hardware.",
+      "Design know-how is capital because it is stored on servers."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.07",
+    "context": "Analyze knowledge and technology as production factors. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "A small IT-support venture Repair Weekend",
+    "statements": [
+      "Their venture combines knowledge, labour, technology, capital, and entrepreneurship.",
+      "Coordinating bookings, parts orders, and repairs supplies entrepreneurship.",
+      "Repair kits and licensed diagnostic apps form the technology layer of the service offer.",
+      "Spare screens and batteries held for repairs are capital inputs for the workshop.",
+      "Staff time spent diagnosing faults counts as the labour input for the repair venture."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.08",
+    "context": "Consider how a small IT-support venture refurbish laptops, install software, and bill for weekend support calls. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Combining Production Factors",
+    "statements": [
+      "Service firms combine labour with capital, technology, and entrepreneurial coordination.",
+      "A business combines factors of production to offer goods and/or services to customers.",
+      "Whichever factor is dominant replaces the need for any other factor.",
+      "Only manufacturing combines factors; services use labour alone.",
+      "Automated lines remove labour and knowledge from manufacturing entirely."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.09",
+    "context": "Analyze how businesses combine factors to create offerings. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Winemaker Integrated Factors",
+    "statements": [
+      "Oak barrels held for ageing wine are capital supporting the production process.",
+      "Experience with fermentation adds knowledge alongside other factors in winemaking.",
+      "A winemaker with large vineyards combines land, labour, capital, and entrepreneurship.",
+      "Vineyard soil fertility is land; bottling machinery at the same site is capital.",
+      "Only permanent employees supply labour; seasonal staff are excluded."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.10",
+    "context": "Review factor use in a winemaker's integrated operations. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Entrepreneurship versus Labour",
+    "statements": [
+      "Entrepreneurship and capital are different: capital is resources used; entrepreneurship organises them.",
+      "Every planning hour is capital because plans are stored digitally.",
+      "Performing repairs while owning the shop can include both labour and entrepreneurship.",
+      "Founder coordination of suppliers and staff supplies entrepreneurship separate from task work.",
+      "Risk-bearing is labour because it consumes working hours."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.11",
+    "context": "Analyze distinctions between entrepreneurship and labour. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Leased Equipment as Capital",
+    "statements": [
+      "A leased bottling line still functions as capital for a winery in production.",
+      "Leased warehouse robots used beside manual pickers are capital in a distribution hub.",
+      "Renting premises means no installed tools count as capital.",
+      "Hire-purchase machines are land because they stand in a workshop.",
+      "Seasonal leases turn machinery into land because work happens outdoors."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.12",
+    "context": "Analyze whether leased assets count as capital. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Forestry Crew and Harvesters",
+    "statements": [
+      "Crew members operating chainsaws and harvesters supply labour.",
+      "Supervision is labour only and never entrepreneurship in extraction.",
+      "Trees grow naturally, so logging uses land alone without other factors.",
+      "Harvesters are land because they operate on forest terrain.",
+      "Forests become capital once harvesters cut the first tree."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.13",
+    "context": "Consider a forestry crew fells timber using leased harvesters before winter closes mountain access. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Financial Resources as Capital",
+    "statements": [
+      "Working capital financing payroll between invoice cycles is a financial capital input.",
+      "Funds borrowed to purchase diagnostic tools are capital applied to production.",
+      "Capital includes both physical equipment and financial resources used in production.",
+      "Share capital is the only form of capital a manufacturer may use.",
+      "Emergency cash is land because it is stored on business premises."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.14",
+    "context": "Review whether financial resources belong to capital. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Human Skills in Services",
+    "statements": [
+      "Only manufacturing floor workers count as labour; service staff are excluded.",
+      "Technical support staff troubleshooting home networks supply labour.",
+      "Freelance trainers delivering coaching sessions supply labour to the organising studio.",
+      "Human skills used to install software for a client count as labour.",
+      "Labour covers specialists and general staff alike when human resources are deployed."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.15",
+    "context": "Review labour in knowledge-intensive service work. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Graz Tailor Workshop",
+    "statements": [
+      "Fabric purchased for client orders is a material input combined with labour and machines.",
+      "The tailor selecting machines and scheduling orders supplies entrepreneurship.",
+      "Apprentices cutting patterns and stitching garments supply labour.",
+      "Tailoring needs only labour because designs exist in the tailor's head.",
+      "Machines on hire-purchase are land because they occupy workshop space."
+    ],
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.16",
+    "context": "Consider a Graz tailor orders sewing machines on hire-purchase and hires two apprentices for a growing workshop. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  }
+]

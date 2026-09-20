@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.49",
+    "title": "Preis und angebotene Menge",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang zwischen Preis und angebotener Menge:",
+    "statements": [
+      "Je höher der Preis, umso höher ist gewöhnlich die angebotene Menge.",
+      "Hält man alle anderen Faktoren konstant (ceteris paribus), so ist bei fast allen Gütern die angebotene Menge umso höher, je höher der erzielbare Verkaufspreis ist.",
+      "Je geringer der erzielbare Verkaufspreis, umso höher ist die angebotene Menge.",
+      "Die angebotene Menge hängt auch davon ab, wieviel mit den vorhandenen Ressourcen überhaupt produziert werden kann.",
+      "Der erzielbare Verkaufspreis spielt für die angebotene Menge keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gewöhnlich, nicht als Naturgesetz ohne Ausnahme: Der Abschnitt stellt die Höhe des Preises an den Anfang der Marktmechanismen. Steigt der Preis, steigt gewöhnlich die Menge, die Anbieter verkaufen wollen. Das ist die eine der beiden Grundlinien, noch bevor Kurven, Gleichgewicht oder Verschiebungen folgen. Wer den Preis von der angebotenen Menge trennt, nimmt dem Markt genau diesen ersten Mechanismus.\n\nDie Aussage ist wahr.",
+      "Ceteris paribus heißt: alle anderen Faktoren bleiben fest. Unter dieser Bedingung zeigt sich bei fast allen Gütern, dass die angebotene Menge mit dem erzielbaren Verkaufspreis steigt. Ohne die Konstanz der übrigen Einflüsse könnte ein anderer Faktor die Bewegung überlagern. Der Lehrtext braucht genau diese Klausel, damit die Angebotsfunktion als Beziehung zwischen Preis und Menge lesbar wird.\n\nDie Aussage ist wahr.",
+      "Der Umkehrschluss steht im Lehrtext ausdrücklich anders herum. Ist der erzielbare Verkaufspreis geringer, ist die angebotene Menge umso niedriger, nicht umso höher. Wer bei sinkendem Preis mehr anbieten lässt, verdreht die Angebotsfunktion. Anbieter halten zurück oder produzieren weniger, wenn der Verkauf wenig einbringt.\n\nNiedriger Preis bedeutet geringere Bereitschaft, die vorhandene Menge auf den Markt zu bringen, und geringeren Anreiz, Kapazitäten auszulasten. Die Behauptung eines steigenden Angebots bei geringerem Preis widerspricht dieser Linie.\n\nDie Aussage ist falsch.",
+      "Bevor der Preis die Menge lockt, begrenzt die Produktionstechnik das Mögliche. Die angebotene Menge hängt natürlich davon ab, wieviel mit den vorhandenen Ressourcen überhaupt hergestellt werden kann. Davon abgesehen erst kommt der Verkaufspreis als zweiter Bestimmungsgrund. Wer nur den Preis sieht, übersieht die Ressourcengrenze; wer nur die Ressourcen sieht, übersieht den Preisanreiz. Der Abschnitt nennt beides.\n\nRessourcen und Preis sind also keine Ersatzbegriffe. Erst die verfügbaren Mittel setzen eine Obergrenze, dann entscheidet der erzielbare Preis, wie weit Anbieter innerhalb dieser Grenze gehen. Genau so baut der Text die Angebotsseite auf, ohne den Preis zur einzigen Ursache zu machen.\n\nDie Aussage ist wahr.",
+      "Der erzielbare Verkaufspreis ist der zweite Bestimmungsgrund der angebotenen Menge. Unter ceteris paribus steigt sie mit dem Preis und fällt mit ihm. Die Behauptung, der Preis spiele keine Rolle, streicht genau diese Beziehung und macht aus der Angebotsfunktion eine reine Ressourcenrechnung. Das ist nicht der Marktmechanismus des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.50",
+    "title": "Preis und nachgefragte Menge",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang zwischen Preis und nachgefragter Menge:",
+    "statements": [
+      "Je höher der Preis, umso geringer ist gewöhnlich die nachgefragte Menge.",
+      "Bei einem höheren Preis können sich immer weniger Personen diesen Preis leisten, die Nachfrage sinkt daher.",
+      "Die nachgefragte Menge steigt, wenn der Preis sinkt.",
+      "Ein höherer Preis erhöht im Normalfall die nachgefragte Menge.",
+      "Nachfrager versuchen bei hohem Preis, ein ähnliches Gut günstiger zu kaufen oder gänzlich darauf zu verzichten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Gewöhnlich und im Normalfall: Die zweite Grundlinie der Marktmechanismen koppelt den Preis an die nachgefragte Menge gegenläufig. Je höher der Preis, desto kleiner die Menge, die Käuferinnen und Käufer kaufen wollen und können. Das ist die Nachfragefunktion in einem Satz, noch ohne Verschiebungen durch Einkommen oder Trends. Wer den hohen Preis als Nachfragesog liest, hat die Richtung vertauscht.\n\nDie Aussage ist wahr.",
+      "Immer weniger Personen können sich den hohen Preis leisten. Genau das nennt der Text als Grund, warum die Nachfrage sinkt. Zahlungsfähigkeit und Kaufwille fallen zusammen: Wer den Preis nicht tragen kann, zählt nicht zur nachgefragten Menge. Die Formulierung ist die Alltagsübersetzung der Nachfragekurve, nicht eine Sonderregel für Luxusgüter.\n\nDie Aussage ist wahr.",
+      "Umgekehrt zum hohen Preis: Sinkt der Preis, steigt die nachgefragte Menge. Mehr Haushalte wollen und können kaufen. Der Abschnitt stellt diese Umkehrung ausdrücklich neben die erste Linie, damit die Nachfragefunktion in beide Richtungen gilt. Ein fallender Preis ist hier kein Qualitätsmakel, sondern ein Mengensignal nach oben.\n\nPreis runter, Menge rauf: Das ist dieselbe Beziehung wie in der Grafik zur nachgefragten Menge bei verschiedenen Preisen. Ohne diese Umkehrung gäbe es keine Kurve, die mit sinkendem Preis nach rechts zu höheren Mengen läuft. Der Satz hält sich an den Text.\n\nDie Aussage ist wahr.",
+      "Normalfall und Mechanismus zeigen das Gegenteil. Höherer Preis, geringere nachgefragte Menge, weil sich immer weniger den Preis leisten. Eine Erhöhung der nachgefragten Menge durch den höheren Preis wäre die Angebotsseite oder ein Ausnahmefall, den dieser Absatz nicht als Normalfall setzt. Die Aussage verdreht die Nachfragefunktion.\n\nDie Aussage ist falsch.",
+      "Ausweichen oder verzichten: Bei hohem Preis versuchen Nachfrager, ein ähnliches Gut zu einem günstigeren Preis zu kaufen oder gänzlich darauf zu verzichten. Beides senkt die nachgefragte Menge des ursprünglichen Gutes. Der Text nennt diese Reaktionen unmittelbar nach dem Leistbarkeitsargument. Substitution und Verzicht sind also Teil desselben Preis-Mengen-Zusammenhangs, nicht ein späteres Kapitel.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.51",
+    "title": "Angebotsfunktion am Getreidemarkt",
+    "context": "Bewerten Sie die folgenden Aussagen zur Angebotsfunktion, die der Lehrtext am Beispiel einer Getreidesorte darstellt:",
+    "statements": [
+      "Die Beziehung zwischen Preis und angebotener Menge wird als Angebotsfunktion bezeichnet.",
+      "In der zugehörigen Grafik steht die angebotene Menge auf der x-Achse und der Preis pro Kilogramm auf der y-Achse.",
+      "Diese Grafik zeigt ausschließlich die nachgefragte Menge und hat mit dem Angebot nichts zu tun.",
+      "Die angebotene Menge ist davon abhängig, zu welchem Preis das Gut verkauft werden kann.",
+      "Mit vorhandenen Ressourcen kann unbegrenzt jede Menge angeboten werden, unabhängig vom Preis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Angebotsfunktion ist der Name für die Beziehung zwischen Preis und angebotener Menge. Der Lehrtext setzt das Wort in Anführungszeichen genau an dieser Stelle, am Getreidebeispiel. Es geht nicht um eine Behörde, die Mengen zuteilt, sondern um die regelhafte Kopplung: höherer erzielbarer Preis, höhere angebotene Menge, ceteris paribus. Wer die Funktion mit der späteren Nachfragekurve verwechselt, hat die Achse der Anbieterseite verloren.\n\nDie Aussage ist wahr.",
+      "Menge nach rechts, Preis nach oben: Die Grafik zur angebotenen Menge einer Getreidesorte trägt die Menge auf der x-Achse und die Preise pro Kilogramm auf der y-Achse. Das ist die übliche Darstellung, die der Text beschreibt. Ohne diese Achsenzuordnung wäre die steigende Beziehung zwischen Preis und Menge in der Abbildung nicht lesbar.\n\nDie Aussage ist wahr.",
+      "Getreideangebot, nicht Nachfrage: Abbildung 3 gehört zur angebotenen Menge bei verschiedenen Preisen. Die Nachfragekurve folgt erst später als eigene Grafik. Wer diese erste Abbildung zur reinen Nachfrageseite erklärt, vertauscht die beiden Funktionen, die der Abschnitt nacheinander aufbaut.\n\nAngebotene Menge und Preis pro Kilogramm sind die beschrifteten Größen. Die nachgefragte Menge hat eine eigene Abbildung. Die Behauptung, die Grafik habe mit dem Angebot nichts zu tun, ist damit falsch.\n\nDie Aussage ist falsch.",
+      "Verkaufspreis als zweite Bedingung neben den Ressourcen: Davon abgesehen, wieviel produziert werden kann, hängt die angebotene Menge davon ab, zu welchem Preis das Gut verkauft werden kann. Genau das macht die Angebotsfunktion zur Preisfunktion und nicht zur reinen Kapazitätsliste. Am Getreidemarkt heißt das: Welcher Preis pro Kilogramm lockt welche Menge auf den Markt?\n\nOhne den Verkaufspreis bliebe nur die technische Obergrenze. Der Mechanismus des Abschnitts beginnt aber erst, wenn dieser Preis die angebotene Menge mitbestimmt. Der Satz gibt diese Abhängigkeit wieder.\n\nDie Aussage ist wahr.",
+      "Unbegrenztes Angebot unabhängig vom Preis streicht beide Grenzen des Textes. Erstens begrenzt, wieviel mit vorhandenen Ressourcen produziert werden kann. Zweitens sinkt die angebotene Menge, wenn der erzielbare Verkaufspreis gering ist. Wer jede Menge zum beliebigen Preis unterstellt, hebt Angebotsfunktion und Ressourcenbindung auf.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.52",
+    "title": "Hoher Preis und Opportunitätskosten",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, warum ein hoher Preis die angebotene Menge steigen lässt:",
+    "statements": [
+      "Ein hoher Preis bedeutet, dass einerseits mehr Anbieter bereit sind, zu diesem Preis zu verkaufen.",
+      "Würden Anbieter bei hohem Preis nicht verkaufen, hätten sie hohe Opportunitätskosten.",
+      "Der erzielbare Preis, den Anbieter nicht erzielen, weil sie nicht verkaufen, stellt ihre Opportunitätskosten dar.",
+      "Bei einem hohen Preis weigern sich alle Anbieter grundsätzlich zu verkaufen.",
+      "Ein hoher Preis kann es für vorhandene Anbieter sinnvoll machen, ihre Produktionskapazitäten zu erweitern, damit sie mehr produzieren können."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Mehr Anbieter am Markt: Ein hoher Preis bedeutet, dass einerseits mehr Verkäuferinnen und Verkäufer bereit sind, zu diesem Preis zu verkaufen. Der Anreiz ist der erzielbare Erlös, nicht eine Pflicht zur Abgabe. Wer bei hohem Preis weniger Verkaufsbereitschaft erwartet, hat die erste der beiden Angebotsreaktionen im Text verfehlt. Verkauf heißt hier: die vorhandene Menge tatsächlich auf den Markt bringen, weil Zurückhalten teuer würde. Genau so beginnt der Absatz die Begründung der Angebotsfunktion, noch bevor Kapazitäten erweitert werden.\n\nDie Aussage ist wahr.",
+      "Nichtverkauf wird teuer, sobald der Preis hoch ist. Würden sie nämlich nicht verkaufen, hätten sie hohe Opportunitätskosten. Das entgangene Geschäft ist der Maßstab, nicht eine buchhalterische Strafe von außen. Genau deshalb steigt die Bereitschaft zu verkaufen, wenn der Preis steigt.\n\nOpportunitätskosten messen hier, was der Anbieter aufgibt, indem er die Ware zurückhält. Bei hohem Preis ist dieses Aufgegebene groß. Der Satz des Lehrtexts verbindet Verkaufsbereitschaft und entgangenen Preis in einem Schritt.\n\nDie Aussage ist wahr.",
+      "Definition im selben Absatz: Der erzielbare Preis, den sie nicht erzielen, weil sie nicht verkaufen, stellt ihre Opportunitätskosten dar. Es ist also nicht irgendein anderer Verzicht, sondern genau dieser nicht realisierte Verkaufspreis. Wer Opportunitätskosten hier mit Produktionskosten oder Steuern verwechselt, liest den Abschnitt nicht zu Ende. Die Kosten der nächsten Tonne sind Grenzkosten; die Kosten des Nichtverkaufs bei hohem Preis sind der entgangene Erlös. Beide Begriffe stehen im selben Themenfeld, messen aber nicht dasselbe.\n\nGetreide, das im Lager bleibt, während der Kilopreis hoch ist, „kostet“ den Anbieter genau diesen nicht kassierten Preis. Deshalb steigt die Verkaufsbereitschaft mit dem Preis. Der Satz gibt die Definition wörtlich in der Logik des Mechanismus wieder.\n\nDie Aussage ist wahr.",
+      "Weigerung aller Anbieter bei hohem Preis kehrt den Mechanismus um. Der hohe Preis zieht Verkaufsbereitschaft und Kapazitätserweiterung nach sich, nicht einen Verkaufsstopp. Eine grundsätzliche Weigerung aller würde die Angebotsfunktion in ihr Gegenteil verwandeln.\n\nMehr Anbieter wollen verkaufen, vorhandene wollen oft mehr produzieren. Beides setzt Verkauf voraus. Die Behauptung einer allgemeinen Verkaufsverweigerung widerspricht beiden Reaktionen.\n\nDie Aussage ist falsch.",
+      "Kapazität als zweite Reaktion neben mehr Verkaufsbereitschaft: Ein hoher Preis bedeutet außerdem, dass es für vorhandene Anbieter sinnvoll sein kann, ihre Produktionskapazitäten zu erweitern, damit sie mehr produzieren können. Menge steigt also nicht nur, weil zusätzliche Firmen auftreten, sondern auch, weil die schon Anwesenden ausweiten. Getreideflächen, Maschinen, Personal: der Text hält diese Erweiterung an den hohen Preis.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.53",
+    "title": "Grenzkosten und Produktionsmenge",
+    "context": "Bewerten Sie die folgenden Aussagen zu Grenzkosten und zur Ausweitung der Produktion:",
+    "statements": [
+      "Die Kosten für die Herstellung einer zusätzlichen Einheit eines Guts werden auch Grenzkosten genannt.",
+      "Für viele Unternehmen gilt, dass ihre Grenzkosten mit steigender Produktionsmenge steigen.",
+      "Produktionssteigerungen sind oft nur mit mehr Kosten für Produktionsanlagen und Personal möglich.",
+      "Der erzielbare Preis muss höher oder zumindest gleich den Grenzkosten sein, damit es sinnvoll ist, die Produktionsmenge zu steigern.",
+      "Unternehmen steigern die Produktionsmenge unabhängig vom Preisniveau, weil Grenzkosten für diese Entscheidung keine Rolle spielen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zusätzliche Einheit, zusätzliche Kosten: Genau das nennt der Lehrtext Grenzkosten. Es geht nicht um die gesamten bisherigen Kosten der Produktion, sondern um die Kosten der nächsten hergestellten Einheit. Wer Grenzkosten mit den Fixkosten der ersten Anlage verwechselt, misst nicht den Anreiz, die Menge weiter zu steigern.\n\nDie Aussage ist wahr.",
+      "Viele Unternehmen, steigende Menge, steigende Grenzkosten: Der Text formuliert das als typischen Verlauf, nicht als Gesetz für jeden Betrieb. Mehr produzieren heißt oft teurer an der Grenze. Deshalb braucht es ein entsprechend hohes Preisniveau, bevor die nächste Einheit lohnt. Ohne diesen Anstieg der Grenzkosten wäre die Bindung der Mengenausweitung an den hohen Preis schwächer begründet.\n\nDie Aussage ist wahr.",
+      "Anlagen und Personal als Gründe: Produktionssteigerungen sind nur mit mehr Kosten für Produktionsanlagen und Personal möglich, so der Abschnitt für viele Unternehmen. Die nächste Tonne Getreide oder das nächste Stück kostet dann mehr als die vorherige. Das erklärt, warum Grenzkosten mit der Menge steigen und warum ein niedriger Preis die Ausweitung nicht trägt.\n\nMehr Hallen, mehr Schichten, mehr Beschäftigte: Das sind die konkreten Mehrkosten hinter dem Begriff. Der Satz gibt diese Begründung wieder, ohne aus jedem Kleinbetrieb eine Großfabrik zu machen. Der Text sagt „für viele Unternehmen“, und genau dort greift die Erklärung.\n\nDie Aussage ist wahr.",
+      "Mindestens so hoch wie die Grenze: Der erzielbare Preis muss höher oder zumindest gleich den Grenzkosten sein. Nur dann ist es sinnvoll, die Produktionsmenge zu steigern. Liegt der Preis darunter, deckt der Verkauf der zusätzlichen Einheit ihre Mehrkosten nicht. Der Vergleich ist die Schwelle der Mengenentscheidung, nicht eine Empfehlung, immer maximal zu produzieren.\n\nEntsprechend hohes Preisniveau und dieser Vergleich gehören zusammen. Wer die Menge ausweitet, obwohl der Preis hinter den Grenzkosten zurückbleibt, handelt gegen die Logik des Absatzes. Der Satz hält die Bedingung ein.\n\nDie Aussage ist wahr.",
+      "Preisniveau und Grenzkosten gehören zusammen. Nur bei entsprechend hohem Preisniveau für das produzierte Gut ist es sinnvoll, die Produktionsmenge zu steigern, und der erzielbare Preis muss mindestens den Grenzkosten entsprechen. Die Behauptung, Grenzkosten spielten keine Rolle und die Menge steige unabhängig vom Preis, streicht genau diese Schwelle.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.54",
+    "title": "Nachfragefunktion und Nutzen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Nachfragefunktion und zur Zahlungsbereitschaft:",
+    "statements": [
+      "Die Nachfrage ist die Menge, die Käuferinnen und Käufer bei einem bestimmten Preis kaufen wollen und können.",
+      "Die Beziehung zwischen Preis und nachgefragter Menge wird als Nachfragefunktion oder Nachfragekurve bezeichnet.",
+      "Die Bereitschaft, einen bestimmten Preis zu zahlen, hängt auch vom Nutzen oder vom Grad der Bedürfnisbefriedigung ab.",
+      "Ist der erwartete Nutzen hoch und gibt es kein vergleichbares Gut zu einem günstigeren Preis, ist die Bereitschaft, den Preis zu zahlen, eher gegeben.",
+      "Unter ceteris paribus-Bedingungen steigt die nachgefragte Menge, je höher der Preis ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wollen und können bei einem Preis: So definiert der Abschnitt die Nachfrage an dieser Stelle. Es ist nicht der Wunsch allein und nicht die Menge, die irgendwann einmal gekauft wurde, sondern die Menge, die Käuferinnen und Käufer bei diesem Preis erwerben wollen und können. Ohne das Können bleibt ein unbezahlbarer Wunsch, ohne das Wollen bleibt Kaufkraft ungenutzt. Die Nachfragefunktion baut auf genau dieser Menge auf, sobald der Preis variiert wird.\n\nDie Aussage ist wahr.",
+      "Zwei Namen, eine Beziehung: Nachfragefunktion oder Nachfragekurve bezeichnet die Kopplung von Preis und nachgefragter Menge. Die Grafik dazu trägt die nachgefragte Menge auf der x-Achse und die Preise auf der y-Achse. Wer die Kurve mit der Angebotsfunktion verwechselt, hat die fallende Linie der Käuferseite verloren. Abbildung 4 folgt im Text nach der Angebotsgrafik und gehört zur nachgefragten Menge bei verschiedenen Preisen pro Kilogramm, nicht zur angebotenen Menge.\n\nFunktion und Kurve sind hier dasselbe Verhältnis in Worten und als Zeichnung. Höherer Preis, kleinere nachgefragte Menge im Normalfall: Das ist die Linie, die die Abbildung sichtbar macht. Der Satz hält die Namensgebung des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Nutzen neben dem Preis: Die Bereitschaft, für ein Gut einen bestimmten Preis zu zahlen, hängt auch von dem Nutzen oder dem Grad der Bedürfnisbefriedigung ab, den das gekaufte Gut stiftet. Ein hoher erwarteter Nutzen stützt die Zahlung, ein geringer Nutzen lässt sie leichter entfallen. Der Preis allein erklärt die Nachfrage also nicht vollständig, auch wenn die Kurve ceteris paribus den Preis variiert.\n\nBedürfnisbefriedigung ist hier der Maßstab des Käufers, nicht eine amtliche Qualitätsnote. Wer den Nutzen aus der Nachfrage streicht, behält nur das Leistbarkeitsargument und verliert, warum jemand den Preis überhaupt tragen will.\n\nDie Aussage ist wahr.",
+      "Hoher Nutzen, kein günstigeres Vergleichsgut: Dann ist die Bereitschaft, den Preis zu bezahlen, eher gegeben. Der Text stellt beide Bedingungen nebeneinander. Fehlt ein billiger Ersatz und stiftet das Gut viel, bleibt der Käufer eher. Genau das verbindet Zahlungsbereitschaft mit der späteren Idee vergleichbarer Güter, ohne schon die Kurvenverschiebung auszuformulieren. Leistbarkeit allein erklärt nicht, warum jemand den genannten Preis trägt; der erwartete Nutzen muss mitspielen.\n\nDie Aussage ist wahr.",
+      "Ceteris paribus zeigt den umgekehrten Zusammenhang. Die nachgefragte Menge ist umso höher, je niedriger der Preis ist, und umgekehrt. Bei den meisten Gütern gilt das. Ein steigender Preis senkt im Normalfall die nachgefragte Menge, er erhöht sie nicht. Die Aussage verdreht die Nachfragekurve und verwechselt sie mit der Angebotsfunktion, bei der der höhere Preis die Menge hebt.\n\nUnter sonst gleichen Umständen bleibt Einkommen, Nutzen und Vergleichsgüter fest, nur der Preis des Gutes ändert sich. Dann kaufen weniger, nicht mehr, wenn das Kilogramm teurer wird. Genau deshalb fällt die Nachfragekurve.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.55",
+    "title": "Gleichgewichtspreis und Markträumung",
+    "context": "Im Lehrbeispiel treffen sich angebotene und nachgefragte Menge bei 3,50 Euro pro Kilogramm und 25 Tonnen. Bewerten Sie die folgenden Aussagen zum Gleichgewicht:",
+    "statements": [
+      "Im Gleichgewichtspreis entspricht die Menge, die die Anbieter verkaufen wollen und können, genau der Menge, die die Nachfrager kaufen wollen und können.",
+      "Im dargestellten Beispiel räumen 3,50 Euro pro Kilogramm den Markt bei 25 Tonnen.",
+      "Der Markt wird zum Gleichgewichtspreis vollkommen geräumt, weshalb dieser Preis auch Markträumungspreis genannt wird.",
+      "Beim Gleichgewichtspreis gibt es für gewöhnlich keine Preistendenzen nach oben oder nach unten.",
+      "Im Gleichgewicht wollen die Anbieter stets eine deutlich größere Menge verkaufen, als die Nachfrager kaufen wollen und können."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gleiche Mengen auf beiden Seiten: Das ist die Definition des Gleichgewichtspreises in diesem Abschnitt. Anbieter wollen und können verkaufen, Nachfrager wollen und können kaufen, und beide Mengen stimmen überein. Es ist kein Kompromiss einer Behörde, sondern der Preis, an dem diese beiden Absichten zusammenfallen. Weichen die Mengen voneinander ab, liegt kein Gleichgewicht vor. Fehlmenge oder Angebotsüberhang sind dann die Namen der Abweichung, nicht weitere Formen von Gleichgewicht.\n\nDie Aussage ist wahr.",
+      "Beispielzahlen aus dem Lehrtext: 3,50 Euro pro Kilogramm, 25 Tonnen angeboten und nachgefragt. Der Kontext nennt genau diese Stelle der Grafik. Zu diesem Preis ist der Markt im Beispiel geräumt. Wer andere Zahlen einsetzt, verlässt das dargestellte Beispiel; wer diese Zahlen übernimmt, bleibt im Text. Markträumung heißt hier: Diese 25 Tonnen werden angeboten und auch nachgefragt, nicht eine beliebige andere Menge zu einem anderen Preis.\n\nDie Aussage ist wahr.",
+      "Vollkommen geräumt und deshalb Markträumungspreis: Der Lehrtext gibt dem Gleichgewichtspreis diesen zweiten Namen, weil zu diesem Preis die angebotene Menge vollständig auf die nachgefragte Menge trifft. Es bleibt weder eine unverkäufte Überschussmenge noch eine unbefriedigte Fehlmenge im beschriebenen Sinne. Markträumung ist hier der Mengenausgleich, nicht die Schließung des Marktplatzes.\n\nAngebot und Nachfrage sind bei diesem Preis dieselben 25 Tonnen. Räumung heißt: Diese Menge wechselt den Besitzer, ohne dass eine Seite mit einem Überhang zurückbleibt. Der zweite Name unterstreicht genau das.\n\nDie Aussage ist wahr.",
+      "Keine Tendenz nach oben oder unten: Bei diesem Preis gibt es für gewöhnlich keine Preistendenzen in eine der beiden Richtungen. Der Anpassungsdruck entsteht erst, wenn der Preis vom Gleichgewicht abweicht. Solange die Mengen übereinstimmen, fehlt der Grund, den Preis zu drücken oder zu treiben. „Für gewöhnlich“ hält die Aussage am Text, ohne jeden Markt der Welt für still zu erklären. Unterhalb drückt die Fehlmenge nach oben, oberhalb der Überhang nach unten; am Ausgleich fehlen beide Drücke.\n\nDie Aussage ist wahr.",
+      "Deutlich größere Verkaufsmenge der Anbieter wäre ein Angebotsüberhang, also ein Ungleichgewicht bei zu hohem Preis. Im Gleichgewicht entsprechen sich die Mengen. Die Behauptung eines dauerhaften Überschusses der Anbieterseite verfehlt den Ausgleich, den der Markträumungspreis herstellt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.56",
+    "title": "Zu niedriger Preis und Fehlmenge",
+    "context": "Bewerten Sie die folgenden Aussagen zu einem Preis unterhalb des Gleichgewichts:",
+    "statements": [
+      "Ein niedrigerer Preis als der Gleichgewichtspreis führt zu einem Ungleichgewicht.",
+      "Bei einem zu niedrigen Preis steigt die Nachfrage und gleichzeitig sinkt das Angebot.",
+      "Es kommt zu einer überhöhten Nachfrage und zu einer Fehlmenge auf Grund der Knappheit des Gutes.",
+      "Ein Preis unter dem Gleichgewicht räumt den Markt noch vollkommener als der Markträumungspreis.",
+      "Die Fehlmenge entsteht, weil bei niedrigem Preis mehr gekauft werden will und kann, während weniger angeboten wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Abweichung nach unten ist Ungleichgewicht. Der Lehrtext sagt das direkt: Ein niedrigerer Preis führt zu einem Ungleichgewicht, weil die Nachfrage steigt und gleichzeitig das Angebot sinkt. Gleichgewicht hing an der Mengengleichheit. Diese Gleichheit ist hier gebrochen. Wer den niedrigeren Preis für eine noch bessere Räumung hält, verwechselt billig mit ausgeglichen. Der Markträumungspreis lag im Beispiel bei 3,50 Euro; darunter öffnet sich die Schere der Mengen.\n\nDie Aussage ist wahr.",
+      "Zwei Bewegungen zugleich: Nachfrage steigt, Angebot sinkt. Genau so beschreibt der Absatz die Lage unter dem Gleichgewichtspreis. Die Nachfrager wollen und können mehr, die Anbieter wollen und können weniger. Aus dieser Schere entsteht der Mangel, nicht aus einer einzigen Kurve allein. Die Angebotsfunktion liefert die kleinere Menge, die Nachfragefunktion die größere; zusammen sind sie die Fehlmenge.\n\nNiedriger Preis dämpft das Angebot, weil der erzielbare Verkaufspreis sinkt, und stimuliert die Nachfrage, weil mehr Haushalte den Preis tragen können. Beide Sätze des Mechanismus greifen gleichzeitig. Der Text braucht dieses „gleichzeitig“, sonst bliebe nur eine einseitige Geschichte.\n\nDie Aussage ist wahr.",
+      "Überhöhte Nachfrage und Fehlmenge: Der Text koppelt beides an die Knappheit des Gutes in dieser Preislage. Fehlmenge heißt, die nachgefragte Menge übersteigt die angebotene. Knappheit wird am zu niedrigen Preis sichtbar, weil der Preis seine Koordinierung nicht mehr im Gleichgewicht leistet. Das ist die Unterpreis-Seite des Mechanismus.\n\nWer nur „viele wollen kaufen“ sagt, ohne das gleichzeitig sinkende Angebot, hat die Fehlmenge nur halb erklärt. Der Absatz braucht beide Seiten, und die Aussage nennt beide Folgen.\n\nDie Aussage ist wahr.",
+      "Vollkommene Räumung gehört zum Gleichgewichtspreis, dem Markträumungspreis. Darunter klafft eine Fehlmenge: Die Marktseiten passen nicht mehr zusammen. Ein noch niedrigerer Preis räumt nicht besser, er vertieft das Ungleichgewicht. Die Aussage verdreht die Koordinierungsfunktion.\n\nDie Aussage ist falsch.",
+      "Mehr Kaufwille und Kaufkraft, weniger Angebot: So entsteht die Fehlmenge inhaltlich, auch wenn das Wort erst im nächsten Satz des Textes steht. Niedriger Preis stimuliert die Nachfrage und dämpft das Angebot. Die Differenz ist der ungedeckte Rest. Der Satz übersetzt die beiden Mengenbewegungen in den Mangel, ohne eine andere Ursache zu erfinden. Knappheit des Gutes wird in dieser Preislage sichtbar, weil mehr nachgefragt als angeboten wird.\n\nÜberhöhte Nachfrage ist dieselbe Lage mit dem Blick auf die Käuferseite. Fehlmenge benennt den Rest, der nicht bedient wird. Beides folgt aus der Schere, nicht aus einem Zufall außerhalb von Preis, Angebot und Nachfrage.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.57",
+    "title": "Zu hoher Preis und Angebotsüberhang",
+    "context": "Bewerten Sie die folgenden Aussagen zu einem Preis oberhalb des Gleichgewichts:",
+    "statements": [
+      "Ein höherer Preis als der Gleichgewichtspreis führt ebenfalls zu einem Ungleichgewicht.",
+      "Bei einem zu hohen Preis steigt das Angebot und gleichzeitig sinkt die Nachfrage.",
+      "Es kommt zu einem Angebotsüberhang.",
+      "Ein Preis über dem Gleichgewicht erzeugt in diesem Abschnitt eine Fehlmenge durch Knappheit.",
+      "Aus beiden Abweichungen wird die Koordinierungsfunktion des Preises erkennbar: Der Preis koordiniert die Entscheidungen von Anbietern und Nachfragern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Auch nach oben gerät der Markt aus dem Gleichgewicht. Der Lehrtext stellt den höheren Preis ausdrücklich neben den niedrigeren: ebenfalls ein Ungleichgewicht. Mengengleichheit ist wieder verloren, nur mit umgekehrtem Vorzeichen. Wer nur die Unterpreis-Lage als Störung gelten lässt, hat die zweite Hälfte des Absatzes nicht gelesen.\n\nDie Aussage ist wahr.",
+      "Angebot steigt, Nachfrage sinkt: Das ist die Mengenreaktion über dem Gleichgewichtspreis. Anbieter wollen und können mehr verkaufen, Nachfrager wollen und können weniger kaufen. Die Schere öffnet sich zur anderen Seite als bei der Fehlmenge. Beide Bewegungen laufen gleichzeitig, nicht nacheinander in beliebiger Reihenfolge.\n\nDie Aussage ist wahr.",
+      "Angebotsüberhang ist der Name dieser Lage. Mehr steht zum Verkauf, als gekauft werden will und kann. Der Überschuss liegt auf der Anbieterseite, nicht als Fehlmenge bei den Käufern. Der Begriff gehört fest zum zu hohen Preis in diesem Abschnitt.\n\nÜberhang und Fehlmenge sind Spiegelbilder. Wer sie vertauscht, hat den Preis relativ zum Gleichgewicht falsch zugeordnet. Hier ist der Preis zu hoch, also Überhang.\n\nDie Aussage ist wahr.",
+      "Fehlmenge und Knappheit in diesem Sinn gehören zum zu niedrigen Preis. Beim zu hohen Preis ist das Gut nicht zu knapp angeboten, sondern zu reichlich relativ zur Nachfrage: Angebotsüberhang. Die Aussage klebt die Unterpreis-Folgen an die Überpreis-Lage und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Koordinierung durch den Preis: Genau das liest der Text aus beiden Ungleichgewichten. Der Preis koordiniert die Entscheidungen von Anbietern und Nachfragern. Höhere Preise stimulieren das Angebot und dämpfen die Nachfrage, niedrige Preise tun das Umgekehrte. Ohne diese Funktion wären Abweichungen bloß Zahlen, kein Mechanismus.\n\nAnbieter entscheiden über Verkauf und Produktion, Nachfrager über Kauf und Verzicht. Der gemeinsame Signalgeber ist der Preis. Der Satz hält diese Rolle fest, ohne schon die Tendenz der Preisrückkehr auszuformulieren; die folgt im nächsten Schritt des Absatzes.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.58",
+    "title": "Preis als Koordinator",
+    "context": "Bewerten Sie die folgenden Aussagen zur Koordinierungsfunktion des Preises:",
+    "statements": [
+      "Höhere Preise stimulieren das Angebot und dämpfen die Nachfrage, sodass die Preise tendenziell wieder sinken.",
+      "Niedrige Preise stimulieren die Nachfrage und dämpfen das Angebot, sodass die Preise tendenziell wieder steigen.",
+      "Der Preis hat in diesem Abschnitt keine Koordinierungsfunktion.",
+      "Sowohl ein zu hoher als auch ein zu niedriger Preis führen zu einem Ungleichgewicht.",
+      "Nur die Nachfrager werden vom Preis koordiniert; Anbieter ignorieren den Preis immer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Stimulieren und dämpfen nach oben: Höhere Preise locken Angebot und bremsen Nachfrage. Die Folge ist ein Druck, der die Preise tendenziell wieder sinken lässt, in Richtung des Ausgleichs. Der Lehrtext beschreibt damit nicht nur die Lage, sondern die Rückkehrbewegung. Tendenziell heißt: Richtung, nicht eine Garantie für jede Woche. Angebotsüberhang entsteht zuerst; der Überhang selbst ist der Grund, warum der Preis nicht oben bleiben muss.\n\nMehr angebotene Menge bei kleinerer nachgefragter Menge lässt unverkäufte Ware oder ungenutzte Kapazität sichtbar werden. Anbieter unterbieten sich dann eher, der Preis gibt nach. So koordiniert der hohe Preis die Rückkehr, indem er die Mengen auseinanderzieht und genau dadurch den Gegendruck erzeugt.\n\nDie Aussage ist wahr.",
+      "Spiegelbild nach unten: Niedrige Preise wecken Nachfrage und dämpfen Angebot, sodass die Preise tendenziell wieder steigen. Fehlmenge und überhöhte Nachfrage erzeugen Aufwärtsdruck. Zusammen mit der anderen Tendenz schließt sich die Koordinierung zu einem Kreis um den Gleichgewichtspreis.\n\nDämpfen des Angebots bei niedrigem Preis folgt aus der Angebotsfunktion, Stimulieren der Nachfrage aus der Nachfragefunktion. Der Preis setzt beide gleichzeitig in Gang. Der Satz fasst genau diese Doppelwirkung und die steigende Preistendenz.\n\nDie Aussage ist wahr.",
+      "Keine Koordinierungsfunktion zu behaupten, streicht den Schlusssatz des Gleichgewichtsabschnitts. Der Preis koordiniert die Entscheidungen von Anbietern und Nachfragern. Höhere und niedrigere Preise lösen gegenläufige Mengenreaktionen und gegenläufige Preistendenzen aus. Ohne diese Funktion blieben Fehlmenge und Überhang folgenlos im Text.\n\nDie Aussage ist falsch.",
+      "Beide Abweichungen, ein Befund: Niedrigerer Preis und höherer Preis führen jeweils zu einem Ungleichgewicht, nur mit Fehlmenge hier und Angebotsüberhang dort. Der Markträumungspreis ist die Ausnahme ohne Preistendenz. Wer nur eine der beiden Lagen als Ungleichgewicht gelten lässt, halbiert den Mechanismus. Koordinierung braucht beide Spiegelbilder, sonst gäbe es nur eine Einbahn der Anpassung.\n\nDie Aussage ist wahr.",
+      "Anbieter ignorieren den Preis nicht. Die Angebotsfunktion und die Kapazitäts- wie Eintrittsreaktionen hängen am erzielbaren Preis, die Grenzkostenentscheidung ebenso. Koordinierung betrifft beide Seiten. Die Beschränkung auf Nachfrager und das „immer“ machen den Satz falsch.\n\nVerkaufsbereitschaft, Mengenausweitung, Markteintritt und -austritt in den umliegenden Absätzen sind Anbieterreaktionen auf den Preis. Wer sie leugnet, behält nur die Nachfragekurve und verliert die Hälfte der Koordinierung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.59",
+    "title": "Einkommen verschiebt die Nachfrage",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie das Einkommen der Nachfrager die Nachfragekurve beeinflusst:",
+    "statements": [
+      "Die Nachfrage wird unter anderem vom zur Verfügung stehenden Einkommen der Nachfrager beeinflusst.",
+      "Steigt das Einkommen und die Nachfrager können sich mehr leisten, steigt für gewöhnlich die nachgefragte Menge bei jedem gegebenen Preisniveau, und die Nachfragekurve verschiebt sich nach rechts.",
+      "Sinkt das Einkommen, verschiebt sich die Nachfragekurve nach links.",
+      "Ein höheres Einkommen verschiebt die Nachfragekurve für gewöhnlich nach links.",
+      "Bei sinkendem Einkommen können sich viele Nachfrager das Gut in dieser Menge nicht mehr leisten, die nachgefragte Menge sinkt daher bei jedem gegebenen Preisniveau."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Einkommen steht in der Liste der weiteren Einflussfaktoren neben Präferenzen, vergleichbaren Gütern und ergänzenden Gütern. Es geht nicht mehr um die Bewegung auf der Kurve bei anderem Preis, sondern um Faktoren, die die Nachfrage selbst verschieben. Wer das Einkommen nur als Privatangelegenheit ohne Marktbezug sieht, verfehlt diesen Absatz.\n\nDie Aussage ist wahr.",
+      "Mehr leisten, mehr Menge bei jedem Preis: Steigt das Einkommen, steigt für gewöhnlich die nachgefragte Menge bei jedem gegebenen Preisniveau. Grafisch ist das eine Verschiebung der Nachfragekurve nach rechts. Der Preis bleibt in dieser Betrachtung fest, die ganze Kurve wandert. Das ist etwas anderes als ein Rutschen auf derselben Kurve, weil der Preis des Gutes selbst fällt.\n\nFür gewöhnlich hält die Aussage am Text. Nicht jedes Gut muss so reagieren; der Lehrtext setzt die typische Richtung. Rechtsverschiebung heißt: Bei 3,50 Euro wie bei jedem anderen Preis wird mehr nachgefragt als zuvor.\n\nDie Aussage ist wahr.",
+      "Gegenteil bei Einkommensverlust: Sinkt das Einkommen, passiert genau das Gegenteil, sagt der Abschnitt. Die Kurve verschiebt sich nach links. Wieder bei jedem gegebenen Preisniveau, nicht nur an einem Punkt. Links bedeutet geringere nachgefragte Menge auf der ganzen Preisskala.\n\nDie Aussage ist wahr.",
+      "Nach links bei höherem Einkommen kehrt die beschriebene Richtung um. Höheres Einkommen verschiebt für gewöhnlich nach rechts, niedrigeres nach links. Die Aussage nimmt die falsche Seite und ist falsch.\n\nDie Aussage ist falsch.",
+      "Nicht mehr leisten in dieser Menge: Viele Nachfrager können sich das Gut dann nicht mehr leisten, die nachgefragte Menge sinkt bei jedem gegebenen Preisniveau. Der Text begründet die Linksverschiebung genau so. Es ist dieselbe Logik wie beim hohen Preis, nur dass hier das Einkommen fällt, während der Güterpreis in der Kurvenbetrachtung festgehalten wird.\n\nLeistbarkeit knüpft Nachfrage an Können. Weniger Einkommen, weniger Können, weniger Menge auf der ganzen Kurve. Der Satz bleibt innerhalb des Absatzes über Einkommensänderungen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.60",
+    "title": "Präferenzen und Fahrradnachfrage",
+    "context": "Während der Coronavirus-Pandemie stieg die Nachfrage nach Fahrrädern. Bewerten Sie die folgenden Aussagen zu Präferenzen und diesem Beispiel:",
+    "statements": [
+      "Die Präferenzen oder Vorlieben der Käufer spielen bei ihrer Nachfrage eine Rolle.",
+      "Gibt es einen Trend in Richtung eines bestimmten Produktes oder einer Dienstleistung, so steigt die Nachfrage danach.",
+      "Fahrräder waren in der Pandemie ein Fortbewegungsmittel mit geringerem Ansteckungsrisiko und eine Sportmöglichkeit, wenn Sportstätten geschlossen waren.",
+      "Präferenzen der Käufer spielen bei der Nachfrage keine Rolle.",
+      "Die Produktion konnte mit der gestiegenen Fahrradnachfrage nicht Schritt halten; viele Käuferinnen und Käufer mussten monatelang warten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Vorlieben zählen: Der Abschnitt nennt Präferenzen oder Vorlieben ausdrücklich als Einfluss auf die Nachfrage, neben Einkommen und anderen Gütern. Nachfrage ist damit nicht nur Preis und Geldbeutel, sondern auch, was Haushalte für erstrebenswert halten. Ein Trend kann diese Vorlieben bündeln und die Kurve verschieben, ohne dass der Preis des Gutes selbst der Auslöser sein muss.\n\nDie Aussage ist wahr.",
+      "Trend als Nachfrageschub: Gibt es einen Trend in Richtung eines bestimmten Produktes oder einer Dienstleistung, so steigt die Nachfrage danach. Das ist die allgemeine Regel, bevor das Fahrradbeispiel sie anschaulich macht. Steigende Nachfrage heißt hier die Verschiebung der ganzen Nachfrage, nicht bloß ein Punkt auf der alten Kurve.\n\nDie Aussage ist wahr.",
+      "Zwei Gründe im Lehrbeispiel: schwer anstecken beim Radfahren, und Sport, wenn Sportstätten schließen mussten. Beides sind veränderte Präferenzen und Nutzenerwartungen in der Pandemie, nicht ein fallender Fahrradpreis als einzige Ursache. Der Satz gibt die Begründung des Textes wieder.\n\nFortbewegung und Ersatzsport erklären, warum Haushalte plötzlich mehr Räder kaufen wollten und konnten. Die Präferenz verschob sich zum Rad. Genau so sitzt das Beispiel unter der Überschrift veränderter Vorlieben.\n\nDie Aussage ist wahr.",
+      "Keine Rolle der Präferenzen zu behaupten, streicht einen der genannten Einflussfaktoren. Vorlieben, Trends und das Fahrradbeispiel wären dann überflüssig. Der Absatz existiert gerade, weil Präferenzen die Nachfrage mitbestimmen. Die Aussage ist falsch.\n\nDie Aussage ist falsch.",
+      "Produktion hielt nicht Schritt: Viele Käufer mussten monatelang auf das bestellte Fahrrad warten. Das Beispiel zeigt eine Nachfrage, die dem Angebot davonläuft, also eine Art Fehlmenge in der kurzen Frist, ausgelöst durch den Präferenzschub, nicht durch einen administrativ zu niedrig festgesetzten Preis. Der Text hält diese Lieferverzögerung fest.\n\nWarten ist hier die sichtbare Form, dass die nachgefragte Menge die kurzfristig angebotene übersteigt. Die Regel der Präferenzen und das konkrete Beispiel greifen ineinander. Der Satz bleibt am Lehrtext.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.61",
+    "title": "Ergänzende und vergleichbare Güter",
+    "context": "Bewerten Sie die folgenden Aussagen zum Einfluss ergänzender und vergleichbarer Güter auf die Nachfrage:",
+    "statements": [
+      "Gibt es zusätzlich neue und sinnvolle ergänzende Produkte oder Dienstleistungen, kann die Nachfrage insgesamt steigen.",
+      "Gibt es vergleichbare Güter, die innovativer sind oder weniger kosten, sinkt die Nachfrage nach dem ursprünglichen Gut.",
+      "Können die Käuferinnen und Käufer auf ein anderes Produkt oder eine andere Dienstleistung ausweichen, sinkt die Nachfrage nach dem ursprünglichen Gut.",
+      "Ergänzende Güter senken in diesem Abschnitt stets die Nachfrage nach dem Ausgangsgut.",
+      "Vergleichbare günstigere Güter erhöhen stets die Nachfrage nach dem teureren ursprünglichen Gut."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Ergänzung als Nachfrageplus: Neue und sinnvolle ergänzende Produkte oder Dienstleistungen können die Nachfrage insgesamt steigen lassen. Das Rad braucht Schloss und Helm, das Smartphone eine Hülle: der Text bleibt allgemein, die Richtung ist klar. Ergänzung stützt oder weitet die Nachfrage aus, sie ersetzt das Ausgangsgut nicht. Genau das Gegenteil folgt im nächsten Satz für vergleichbare Güter. Wer beide in denselben Topf wirft, verliert den Unterschied zwischen Mitgebrauch und Ersatz.\n\nDie Aussage ist wahr.",
+      "Vergleichbar, innovativer, günstiger: Dann sinkt die Nachfrage nach dem ursprünglichen Gut. Das ist das Gegenteil der Ergänzung. Substitution zieht Kaufkraft ab. Wer nur Ergänzung kennt, versteht nicht, warum ein neues Modell das alte schwächt.\n\nInnovativer oder weniger kosten: Der Text nennt beides als Auslöser. Es muss nicht beides zugleich gelten. Schon eine der beiden Eigenschaften vergleichbarer Güter kann die ursprüngliche Nachfrage drücken.\n\nDie Aussage ist wahr.",
+      "Ausweichen ist der Mechanismus hinter der Substitution. Können Käuferinnen und Käufer auf ein anderes Produkt oder eine andere Dienstleistung umsteigen, sinkt die Nachfrage nach dem ursprünglichen Gut. Das knüpft an die frühere Reaktion auf hohe Preise an, gilt hier aber auch, weil die Alternative besser oder billiger geworden ist. Die Nachfragekurve des Ursprungsguts verschiebt sich dann nach links, nicht weil das Einkommen fiel, sondern weil ein Vergleichsgut attraktiver wurde.\n\nInnovativer, weniger kosten, oder beides: Der Absatz lässt diese Wege offen. Sobald Ausweichen möglich ist, trägt das ursprüngliche Gut nicht mehr dieselbe Nachfrage. Der Satz hält sich an diese Kausalität.\n\nDie Aussage ist wahr.",
+      "Ergänzung senkt nicht, sie kann steigern. Der Abschnitt stellt genau das Gegenteil zur Substitution fest. „Stets senken“ verdreht die Rolle ergänzender Güter und ist falsch.\n\nSchloss zum Fahrrad macht das Rad nicht überflüssig. Sinnvolle Ergänzung trägt die Nachfrage, sie zieht sie nicht ab. Die absolute Senkungsbehauptung verfehlt diese Richtung.\n\nDie Aussage ist falsch.",
+      "Günstigere Vergleichsgüter ziehen Nachfrage ab, sie erhöhen sie nicht für das teurere Ursprungsgut. Ausweichen senkt die ursprüngliche Nachfrage. „Stets erhöhen“ ist die umgekehrte Substitution und damit falsch. Der Lehrtext sagt das Gegenteil: vergleichbare Güter, die innovativer sind und/oder weniger kosten, drücken die Nachfrage nach dem Ausgangsgut.\n\nWer das Ursprungsgut teurer und das Vergleichsgut günstiger denkt, erwartet Abwanderung, nicht einen Nachfrageschub beim Teuren. Die absolute Erhöhungswortwahl kehrt die beschriebene Richtung um.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.62",
+    "title": "Markteintritt und Angebotskurve",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wodurch sich das Angebot verändert:",
+    "statements": [
+      "Treten mehr Anbieter in einen Markt ein, weil sie ihn als profitabel erachten, erhöht sich die angebotene Menge und die Angebotskurve verschiebt sich nach rechts.",
+      "Wenn das Angebot so hoch ist, dass die Preise beginnen zu fallen, werden keine weiteren Anbieter mehr auf den Markt drängen.",
+      "Technische Weiterentwicklungen und fallende Kosten für die notwendigen Ressourcen könnten mehr Anbieter veranlassen, in den Markt einzutreten.",
+      "Markteintritt zusätzlicher Anbieter verschiebt die Angebotskurve stets nach links.",
+      "Nur die Nachfragekurve kann sich verschieben; die Angebotskurve bleibt in diesem Abschnitt immer unbeweglich."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Profitabel, also eintreten, also mehr Menge: Die Angebotskurve verschiebt sich nach rechts. Das ist die Angebotsseite der Kurvenverschiebung, parallel zur Rechtsverschiebung der Nachfrage bei höherem Einkommen. Mehr Anbieter bedeuten eine größere angebotene Menge bei gegebenen Preisen, nicht bloß einen Punkt weiter oben auf derselben alten Kurve. Ceteris paribus entlang der Kurve wäre nur ein anderer Güterpreis; hier ändert sich die Zahl der Anbieter, also die ganze Kurve.\n\nDie Aussage ist wahr.",
+      "Fallende Preise als Stoppsignal: Ist das Angebot so hoch, dass die Preise beginnen zu fallen, drängen keine weiteren Anbieter mehr auf den Markt. Der Eintritt endet, wenn die Profitabilität schwindet. Der Text koppelt damit Mengenausweitung und Preisreaktion, bevor die Preiserwartungen als eigener Faktor folgen.\n\nRechtsverschiebung hat eine Grenze. Unendlich viele Neueinsteiger trotz sinkender Preise unterstellt der Absatz nicht. Der Satz gibt diese Grenze wieder.\n\nDie Aussage ist wahr.",
+      "Technik und billigere Ressourcen: Beides könnte mehr Anbieter veranlassen, in den Markt einzutreten. Niedrigere Kosten verbessern die Profitabilität, technische Weiterentwicklung ebenso. Das Angebot steigt dann nicht nur über den Güterpreis selbst, sondern über die Kostenseite der Produktion. Der Lehrtext stellt diese Faktoren an den Schluss der Angebotseinflüsse. Fallende Grenzkosten in einem weiteren Sinn machen die Mengenausweitung eher tragfähig, weil der erzielbare Preis die zusätzlichen Einheiten leichter deckt.\n\nEintritt aus dieser Richtung verschiebt die Angebotskurve nach rechts, solange der Markt als profitabel gilt. Das ist dieselbe grafische Bewegung wie beim Eintritt wegen hoher Preise, nur mit anderem Auslöser. Der Satz bleibt bei Technik und Ressourcenkosten.\n\nDie Aussage ist wahr.",
+      "Nach links bei Eintritt wäre weniger Angebot trotz mehr Firmen. Der Text verschiebt nach rechts. „Stets nach links“ ist die falsche Richtung der Angebotskurve und damit falsch.\n\nMehr Anbieter, höhere angebotene Menge, Kurve nach rechts: Das ist die Kette. Linksverschiebung würde Ausscheiden oder Kostenschocks nach oben bedeuten, nicht den beschriebenen Eintritt.\n\nDie Aussage ist falsch.",
+      "Unbewegliches Angebot zu behaupten, streicht den ganzen Absatz über Einflussfaktoren auf das Angebot. Eintritt, Preiserwartungen, Technik und Ressourcenkosten verschieben die Angebotskurve. Nachfrageverschiebungen existieren daneben, sie monopolisieren die Grafik nicht. Wer nur die Nachfrageseite wandern lässt, kann Markteintritt und fallende Kosten grafisch nicht mehr abbilden.\n\nRechts bei Eintritt, Stopp bei fallenden Preisen, Reaktion auf erwartete Preise: Das alles sind Bewegungen oder Haltungen der Angebotskurve. Die Behauptung dauerhafter Unbeweglichkeit ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.63",
+    "title": "Preiserwartungen der Anbieter",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle der Preiserwartungen auf der Angebotsseite:",
+    "statements": [
+      "Die Preiserwartungen spielen für das Angebot eine entschiedene Rolle.",
+      "Erwarten die Anbieter eher steigende Preise für ihr Gut, bleiben sie im Markt und erhöhen ihr Angebot.",
+      "Erwarten die Anbieter fallende Preise, ist das Gegenteil der Fall.",
+      "Preiserwartungen der Anbieter spielen für das Angebot keine Rolle.",
+      "Bei der Erwartung fallender Preise erhöhen die Anbieter ihr Angebot unweigerlich weiter."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Entschiedene Rolle: So formuliert der Lehrtext die Preiserwartungen, unmittelbar nach dem Stopp weiteren Eintritts bei fallenden Preisen. Es geht nicht nur um den heutigen Preis, sondern um den Preis, den Anbieter für die Zukunft erwarten. Diese Erwartung steuert Bleiben, Gehen und die angebotene Menge. Wer nur den aktuellen Marktpreis kennt, hat diesen Faktor noch nicht. Ceteris paribus der Angebotsfunktion hält andere Dinge fest; die Erwartung ist gerade ein weiterer Faktor, der die angebotene Menge verschieben kann.\n\nHeute niedriger Preis und trotzdem mehr Angebot wäre denkbar, wenn steigende Preise erwartet würden und gelagert oder investiert würde. Der Text bleibt bei der einfachen Regel: steigende Erwartung, bleiben und erhöhen; fallende Erwartung, das Gegenteil. Die entschiedene Rolle besteht genau in dieser Weichenstellung.\n\nDie Aussage ist wahr.",
+      "Steigende Preise erwartet: Dann bleiben die Anbieter im Markt und erhöhen ihr Angebot. Hoffnung auf höheren Erlös hält sie und weitet die Menge aus. Das verstärkt die rechte Seite der Angebotskurve, solange die Erwartung trägt. Der Satz ist die positive Hälfte des Erwartungsmechanismus.\n\nBleiben und erhöhen gehören zusammen. Es ist nicht nur ein Verzicht auf Austritt, sondern eine aktive Mengenreaktion. Der Text sagt beides.\n\nDie Aussage ist wahr.",
+      "Fallende Preise erwartet: Das Gegenteil. Anbieter bleiben dann nicht in derselben Weise und erhöhen das Angebot nicht; die Logik kehrt sich um. Der Absatz fasst das knapp als Gegenteil, nachdem er die steigende Erwartung ausformuliert hat. Wer bei erwarteter Preisbaisse trotzdem von Mengenausweitung ausgeht, hat das Gegenteil nicht gelesen. Austritt oder Mengenrücknahme passen zu fallenden Erlösen in der Zukunft, nicht zusätzlicher Eintritt.\n\nDie Aussage ist wahr.",
+      "Keine Rolle der Erwartungen zu behaupten, widerspricht dem Satz von der entschiedenen Rolle. Aktueller Preis, Eintritt und Kostenfaktoren reichten dann, die Zukunftserwartung fiele aus. Der Abschnitt nennt sie eigens. Die Aussage ist falsch, weil sie einen ausdrücklich genannten Einfluss streicht. Bleiben oder Gehen hängt auch daran, wohin der Preis nach Ansicht der Anbieter geht, nicht nur daran, wo er heute steht.\n\nDie Aussage ist falsch.",
+      "Unweigerlich weiter erhöhen bei erwarteten fallenden Preisen ist das Gegenteil der Textregel. Fallende Preiserwartung dämpft das Angebot, sie treibt es nicht an. „Unweigerlich“ macht die falsche Richtung zusätzlich starr.\n\nNote: Der Lehrtext spricht von einer „entschiedenen“ Rolle; gemeint ist die starke Bedeutung der Erwartung neben dem heutigen Preis, nicht ein anderer Fachbegriff.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.64",
+    "title": "Gleichgewicht, Verschiebungen, ceteris paribus",
+    "context": "Am Getreidemarkt des Lehrbeispiels liegt der Markträumungspreis bei 3,50 Euro pro Kilogramm. Bewerten Sie die folgenden Aussagen zum Zusammenspiel der Mechanismen:",
+    "statements": [
+      "Zum Markträumungspreis stimmen angebotene und nachgefragte Menge überein, und für gewöhnlich fehlen Preistendenzen nach oben oder unten.",
+      "Steigt das Einkommen der Nachfrager, verschiebt sich die Nachfragekurve für gewöhnlich nach rechts, also zu höherer Menge bei gegebenem Preisniveau.",
+      "Technische Weiterentwicklungen können mehr Anbieter zum Markteintritt bewegen und so das Angebot erhöhen.",
+      "Unter ceteris paribus-Bedingungen ist die nachgefragte Menge umso höher, je höher der Preis ist.",
+      "Sinnvolle ergänzende Güter können die Nachfrage insgesamt steigen lassen, während innovative oder günstigere Vergleichsgüter die Nachfrage nach dem ursprünglichen Gut senken."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Räumung und Ruhe: 3,50 Euro im Beispiel gleichen die Mengen aus. Der Markt ist vollkommen geräumt, der Preis heißt deshalb auch Markträumungspreis. Für gewöhnlich gibt es dann keine Preistendenzen nach oben oder unten. Das ist der Bezugspunkt, von dem aus Fehlmenge, Überhang und Kurvenverschiebungen erst verständlich werden.\n\n25 Tonnen auf beiden Seiten im Lehrbeispiel machen die Übereinstimmung greifbar. Ohne diese Mengengleichheit gäbe es die beschriebene Ruhe nicht. Der Satz verbindet Definition und gewöhnliche Preistendenz.\n\nDie Aussage ist wahr.",
+      "Einkommen nach rechts: Bei jedem gegebenen Preisniveau, also auch bei 3,50 Euro, wird für gewöhnlich mehr nachgefragt. Die Kurve wandert, der alte Gleichgewichtspreis ist dann nicht mehr selbstverständlich der neue Ausgleich. Der Absatz über weitere Einflussfaktoren trennt diese Verschiebung von der Bewegung auf der Kurve, die nur den Güterpreis ändert.\n\nDie Aussage ist wahr.",
+      "Technik lockt Eintritt: Technische Weiterentwicklungen und auch fallende Ressourcenkosten könnten mehr Anbieter veranlassen, in den Markt einzutreten. Mehr Anbieter erhöhen die angebotene Menge, die Angebotskurve verschiebt sich nach rechts. Am Getreidemarkt hieße das: Bei denselben Kilogrammpreisen steht mehr Getreide zum Verkauf. Der Satz hält sich an diesen Angebotskanal.\n\nEintritt aus Profitabilität und Eintritt aus günstigerer Technik sind verwandt. Beide weiten das Angebot. Der Lehrtext nennt die technische Seite eigens, damit Kosten und Innovation nicht mit dem Güterpreis selbst verwechselt werden.\n\nDie Aussage ist wahr.",
+      "Ceteris paribus auf der Nachfrageseite läuft umgekehrt: Die nachgefragte Menge ist umso höher, je niedriger der Preis ist. Ein höherer Preis senkt im Normalfall die nachgefragte Menge. Die Aussage verdreht die Nachfragefunktion und vermischt sie mit der Angebotsfunktion, bei der der höhere Preis die Menge hebt.\n\nNote: Bewegung auf der Kurve (Preis des Gutes selbst) ist nicht dieselbe Operation wie eine Verschiebung der Kurve durch Einkommen, Präferenzen oder andere Güter.\n\nDie Aussage ist falsch.",
+      "Ergänzung und Vergleich als Gegensätze: Neue sinnvolle ergänzende Produkte können die Nachfrage insgesamt steigern. Vergleichbare Güter, die innovativer sind oder weniger kosten, senken die Nachfrage nach dem Ursprungsgut, weil Käuferinnen und Käufer ausweichen. Der Schlussteil des Nachfrageabsatzes braucht beide Richtungen, sonst bliebe nur das Einkommen als Verschiebefaktor.\n\nFahrrad plus Schloss ist Ergänzung; ein billigeres E-Bike als Ersatz für das alte Rad ist Vergleich. Die Aussage hält diese Doppelung und bleibt im Lehrtext.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

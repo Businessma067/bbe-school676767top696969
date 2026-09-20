@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Elif: tutoring or unpaid internship",
+    "statements": [
+      "Accepting the internship means opportunity cost is 400 euros monthly tutoring income forgone.",
+      "Because the internship pays nothing, choosing it has no opportunity cost at all.",
+      "Keeping tutoring means giving up career experience and prospects from the internship.",
+      "Opportunity cost must always be expressed only in euros with no other dimensions allowed.",
+      "Elif still allocates scarce time between tutoring and internship despite being a student."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.01",
+    "context": "Consider elif can keep tutoring for 400 euros monthly or take an overlapping unpaid architecture internship. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Simon: car wash or volunteering",
+    "statements": [
+      "If Simon volunteers, the opportunity cost is the 45 euros forgone from the car wash shift.",
+      "Scarcity concerns only money, so Simon faces no real scarcity when choosing how to use his Saturday.",
+      "Personal satisfaction from volunteering cancels any opportunity cost that might otherwise exist.",
+      "Because Simon is a teenager, scarce-resource allocation concepts do not apply to his Saturday.",
+      "The shelter's dog food cost is part of Simon's opportunity cost when he chooses volunteering."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.02",
+    "context": "Consider simon can earn 45 euros at a car wash or volunteer at an animal shelter on the same Saturday. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Three actors, one week",
+    "statements": [
+      "Households, firms, and governments all allocate fixed budgets among competing uses this year.",
+      "The holiday's opportunity cost is the benefit of early loan repayment the Webers give up.",
+      "Hiring a sales rep means giving up the benefit of upgrading delivery vans instead.",
+      "Resurfacing the motorway means giving up the railway extension's benefit for residents.",
+      "A teenager's Saturday hours spent studying forfeit paid work income as opportunity cost."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.03",
+    "context": "Consider the Webers choose holiday versus loan repayment; a firm chooses hire versus vans; a ministry chooses motorway versus railway. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Misunderstanding opportunity cost",
+    "statements": [
+      "If Sara buys the laptop, opportunity cost is the washer's benefit forgone, not all rejected purchases combined.",
+      "Robin's sum-of-all-rejected definition matches the standard economic definition exactly.",
+      "Choosing between only two items involves no scarcity because scarcity requires many options.",
+      "If Sara buys the washer, opportunity cost is 1,200 euros, the combined price of both items.",
+      "Opportunity cost refers to the alternative forgone, not the price of the item actually purchased."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.04",
+    "context": "Consider robin claims opportunity cost is the sum of every rejected option's price. Sara chooses a 500-euro washer or 700-euro laptop. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Bergmann renovation savings",
+    "statements": [
+      "18,000 euros is a limited resource allocated between kitchen and bathroom projects.",
+      "Kitchen renovation means opportunity cost is the bathroom renovation's benefit forgone.",
+      "Bathroom renovation means opportunity cost is greater resale value forgone from the kitchen.",
+      "Identical 18,000-euro costs mean neither option can have opportunity cost.",
+      "As a household, the Bergmanns face the same allocation problem as firms and governments."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.05",
+    "context": "Consider the Bergmanns saved 18,000 euros for a full kitchen or full bathroom renovation, affordable only one this year. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Mila: bookstore or swimming academy",
+    "statements": [
+      "Saturday morning hours are scarce between the bookstore job and the academy.",
+      "Choosing the academy means opportunity cost is 60 euros bookstore earnings forgone.",
+      "Choosing the job means opportunity cost is training time and potential scholarship benefit forgone.",
+      "Uncertain scholarship benefit cannot count as any kind of opportunity cost.",
+      "Individuals face scarce-resource allocation, not only firms and governments."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.06",
+    "context": "Consider Mila can earn 60 euros at a bookstore or attend a free academy that might help a sports scholarship. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "City hall transport budget",
+    "statements": [
+      "The government must allocate its limited 500,000-euro budget between two transport projects.",
+      "Public projects funded by tax face no opportunity cost because they are not market-priced.",
+      "Because both projects improve transport, they cannot be compared using opportunity cost at all.",
+      "Choosing bike lanes means opportunity cost is the bus line's benefit for commuters forgone.",
+      "Governments are exempt from the basic scarce-resources problem that households and firms face."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.07",
+    "context": "Consider city hall has 500,000 euros for a new bus line or protected bike lanes, insufficient for both fully this year. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Ana: bakery job or market stall",
+    "statements": [
+      "Opportunity cost equals the sum of every rejected alternative's price added together.",
+      "Because the stall pays more, Ana's decision to leave carries zero opportunity cost.",
+      "If Ana stays, the opportunity cost is the 2,100 euros she could have earned from the stall.",
+      "Choosing between two jobs involves no scarcity because she selects between jobs rather than physical goods.",
+      "Paid holidays cannot factor into opportunity cost because only euro amounts count."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.08",
+    "context": "Consider ana earns 1,900 euros monthly at a supermarket bakery or could run a stall earning 2,100 euros without job security. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Nina: agency or freelance",
+    "statements": [
+      "Freelancing means opportunity cost is 2,700-euro agency salary forgone.",
+      "Higher freelance pay eliminates opportunity cost from Nina's decision entirely.",
+      "Staying at the agency means opportunity cost is potential 3,100-euro freelance income forgone.",
+      "Admin work should be added directly onto salary to calculate opportunity cost by definition.",
+      "Working time is limited, so Nina's choice reflects scarce-resource allocation."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.09",
+    "context": "Consider nina earns 2,700 euros at a design agency or could freelance for 3,100 euros with self-managed admin. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Almeida garden plot",
+    "statements": [
+      "Forty square metres is a limited resource allocated between vegetables and flowers.",
+      "Choosing flowers means opportunity cost is roughly 250 euros annual grocery savings forgone.",
+      "Choosing vegetables means giving up enjoyment of a flower garden even if that benefit is non-financial.",
+      "Allocating overtime hours to maintenance forgoes backlog revenue that those hours could have earned.",
+      "The household faces the same allocation problem as firms and governments with scarce resources."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.10",
+    "context": "Consider the Almeidas have forty square metres for vegetables saving 250 euros yearly or flowers they enjoy with no savings. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Mateo: salary versus freelancing",
+    "statements": [
+      "Mateo allocates limited working time between two competing income paths.",
+      "Taking freelance means giving up 3,600-euro salary and employer-paid benefits as opportunity cost.",
+      "Staying salaried means giving up potential 4,200-euro freelance income as opportunity cost.",
+      "Because he cannot do both full-time, working hours are a scarce resource forcing one choice.",
+      "Opportunity cost as the next-best alternative's benefit applies directly to Mateo's decision."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.11",
+    "context": "Consider mateo earns 3,600 euros monthly salaried or could freelance for 4,200 euros without employer health insurance. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Retail chain store location",
+    "statements": [
+      "Available capital this year is scarce and allocated between location A and B.",
+      "Opening at A means opportunity cost is 180,000-euro profit from B forgone.",
+      "Opening at B means opportunity cost is 400,000 euros, combined profit of both locations.",
+      "Large firms' expansion decisions never involve scarce resources because of their size.",
+      "This illustrates firms allocating limited resources among competing uses like households do."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.12",
+    "context": "Consider a chain can open one store: location A projects 220,000-euro profit, location B 180,000-euro profit. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Irrigation water: wheat or vegetables",
+    "statements": [
+      "Limited irrigation water is scarce and must be allocated between the two field types.",
+      "Irrigating vegetables means opportunity cost is 27,500 euros, the combined revenue of both fields.",
+      "Because Ilić is a farmer not a registered firm, his decisions involve no opportunity cost.",
+      "Irrigating wheat means opportunity cost is 15,500 euros vegetable revenue forgone.",
+      "Same-farm fields mean watering one does not count as allocating a scarce resource."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.13",
+    "context": "Consider farmer Ilić can fully irrigate wheat (12,000-euro revenue) or vegetables (15,500-euro revenue) this month, not both. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Factory overtime hours",
+    "statements": [
+      "Overtime hours are scarce and allocated between backlog clearance and maintenance.",
+      "Backlog overtime means opportunity cost is reduced breakdown risk benefit from maintenance forgone.",
+      "Maintenance overtime means opportunity cost is delayed-shipment revenue from backlog work forgone.",
+      "Overtime is unlimited if workers agree, so no allocation problem exists.",
+      "Opportunity cost helps compare competing uses of the same limited hour pool."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.14",
+    "context": "Consider a plant manager can assign limited overtime either to catch up order backlog or to preventive maintenance on Line 2. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Bergdorf council budget",
+    "statements": [
+      "Scarcity applies only to money, never to time, land, or labour hours.",
+      "Households never face opportunity cost because wants are unlimited and budgets do not constrain them.",
+      "Because councils can raise taxes in principle, this year's 90,000-euro budget is not scarce.",
+      "Opportunity cost exists only for registered companies, not for individuals or students.",
+      "Choosing the library means opportunity cost is the skate park's benefit, not both projects combined."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.15",
+    "context": "Consider bergdorf has 90,000 euros for either a skate park or a library renovation this year, not both. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Handwerk GmbH timber choice",
+    "statements": [
+      "Choosing the lower-return option means opportunity cost is zero because a better option existed.",
+      "Personal satisfaction from an activity eliminates any opportunity cost associated with it.",
+      "Economising means treating limited resources as if they were unlimited without any prioritisation.",
+      "Sharing the same timber means no opportunity cost exists because the wood is used either way.",
+      "Limited oak forces economising by selecting the more profitable product line."
+    ],
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.16",
+    "context": "Consider handwerk GmbH can use its oak batch for dining tables (40,000-euro profit) or bookshelves (28,000-euro profit), not both. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  }
+]

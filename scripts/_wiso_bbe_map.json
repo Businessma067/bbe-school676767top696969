@@ -1,0 +1,122 @@
+{
+  "1.1": {
+    "target_cases": 16,
+    "bbe_files": ["src/data/economics-cases-ch2-subtopics.json"],
+    "bbe_subsections": ["2.1"],
+    "note": "Translate/adapt BBE 2.1 (being part of the economy). Drop claims the WISO 1.1 extract does not support."
+  },
+  "1.2": {
+    "target_cases": 32,
+    "bbe_files": ["src/data/economics-cases-ch2-subtopics.json"],
+    "bbe_subsections": ["2.4"],
+    "note": "Use BBE 2.4 cases that are about division of labour / specialisation. Rephrase to Arbeitsteilung/Spezialisierung. Circular-flow-only cases belong in 1.4."
+  },
+  "1.3": {
+    "target_cases": 32,
+    "bbe_files": ["src/data/economics-cases-ch2-subtopics.json"],
+    "bbe_subsections": ["2.2", "2.3"],
+    "note": "BBE 2.2 scarcity/opportunity cost + 2.3 economics as study of decisions. Keep micro/macro only if the WISO 1.3 extract actually covers it; otherwise move leftover to 1.4."
+  },
+  "1.4": {
+    "target_cases": 80,
+    "bbe_files": ["src/data/economics-cases-ch2-subtopics.json"],
+    "bbe_subsections": ["2.4", "2.5", "2.6", "2.7"],
+    "note": "Circular flow, households/firms/state, supply and demand, economic systems, competition, GDP/BIP. Rephrase; generate extras for BIP, international trade, market mechanisms that the German book treats more fully."
+  },
+  "1.5": {
+    "target_cases": 48,
+    "bbe_files": ["src/data/economics-cases-ch2-subtopics.json"],
+    "bbe_subsections": ["2.4"],
+    "note": "Mostly NEW. Money functions, cash vs book money, interest, inflation, purchasing power. Reuse only BBE 2.4 money-function cases; generate the rest from the 1.5 extract."
+  },
+  "2.1": {
+    "target_cases": 16,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW from book: economy embedded in society and environment."
+  },
+  "2.2": {
+    "target_cases": 24,
+    "bbe_files": ["src/data/economics-cases-ch5-subtopics.json"],
+    "bbe_subsections": ["5.4"],
+    "note": "Some overlap with BBE 5.4 sustainability, but WISO 2.2 is broader (three pillars, Brundtland). Rephrase what fits; generate the rest."
+  },
+  "2.3": {
+    "target_cases": 24,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: decoupling growth and environmental harm."
+  },
+  "2.4": {
+    "target_cases": 24,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: planetary/Earth-system boundaries."
+  },
+  "2.5": {
+    "target_cases": 16,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: social well-being as a goal of sustainable economic activity."
+  },
+  "2.6": {
+    "target_cases": 16,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: societal preconditions for well-being and sustainability."
+  },
+  "3.1": {
+    "target_cases": 64,
+    "bbe_files": ["src/data/economics-cases-ch3-subtopics.json"],
+    "bbe_subsections": ["3.1", "3.2", "3.3", "3.4", "3.5", "3.6"],
+    "note": "Adapt BBE ch3. Drop or rephrase anything the WISO 3.1 extract does not cover (especially stakeholder detail if missing). Austrian/German firm types and sectors."
+  },
+  "3.2": {
+    "target_cases": 64,
+    "bbe_files": ["src/data/economics-cases-ch4-subtopics.json"],
+    "bbe_subsections": ["4.1", "4.2", "4.3", "4.4"],
+    "note": "HEAVY rephrase: BBE uses sole trader/partnership/corporation. WISO uses Einzelunternehmen, OG, KG, GmbH, AG, Genossenschaft. Do not keep UK/US legal labels unless the book compares them."
+  },
+  "3.3": {
+    "target_cases": 48,
+    "bbe_files": ["src/data/economics-cases-ch4-subtopics.json"],
+    "bbe_subsections": ["4.5", "4.6"],
+    "note": "Eigen-/Fremdfinanzierung, Innen-/Aussenfinanzierung. Adapt BBE 4.5–4.6 and generate extras from the longer German treatment."
+  },
+  "3.4": {
+    "target_cases": 80,
+    "bbe_files": ["src/data/economics-cases-ch6-subtopics.json"],
+    "bbe_subsections": ["6.1", "6.2", "6.3", "6.4", "6.5"],
+    "note": "Accounting. Keep BBE cases that match Finanzrechnung/Buchhaltung/Kostenrechnung and the book's statements. Drop ratios or formats the extract does not teach. Rephrase to German terms (Bilanz, GuV, Aktiva, Passiva)."
+  },
+  "3.5": {
+    "target_cases": 80,
+    "bbe_files": ["src/data/economics-cases-ch5-subtopics.json"],
+    "bbe_subsections": ["5.1", "5.2", "5.3", "5.5", "5.6", "5.7"],
+    "note": "Marketing. Adapt BBE ch5 to the WISO 3.5 extract (Marktorientierung, Marketing-Mix, Marktkennzahlen). Drop 5.4 sustainability here (it lives in WISO 2.2). Do not keep marketing-mix depth the German book does not have."
+  },
+  "4.1": {
+    "target_cases": 24,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: digitale Transformation."
+  },
+  "4.2": {
+    "target_cases": 32,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: new products, services, business models, revenue models."
+  },
+  "4.3": {
+    "target_cases": 24,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: internet as a platform for firms."
+  },
+  "4.4": {
+    "target_cases": 32,
+    "bbe_files": [],
+    "bbe_subsections": [],
+    "note": "NEW: Wirtschaftsinformatik, application and information systems."
+  }
+}

@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.01",
+    "title": "Aufgaben im Haushalt",
+    "context": "Bewerten Sie die folgenden Aussagen zur Arbeitsteilung innerhalb privater Haushalte:",
+    "statements": [
+      "Innerhalb von Haushalten werden viele verschiedene Aufgaben auf mehrere Personen aufgeteilt, die sich dann auf bestimmte Aufgaben konzentrieren können.",
+      "Arbeitsteilung kommt ausschließlich in Fabriken vor und niemals in privaten Haushalten.",
+      "Im Haushalt kann eine Person hauptsächlich die Essenszubereitung übernehmen, während eine andere für die Reinigung des Badezimmers zuständig ist.",
+      "Wer im Haushalt eine Aufgabe übernimmt, muss zugleich alle übrigen Haushaltsarbeiten in gleichem Umfang erledigen.",
+      "Personen im Haushalt können für bestimmte Aufgaben verantwortlich sein."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Kochen, Putzen, Einkaufen und Betreuung laufen nicht als ein einziges Paket. Das Lehrbuch beschreibt Arbeitsteilung innerhalb der Haushalte so, dass die vielen verschiedenen Aufgaben auf mehrere Personen aufgeteilt werden. Wer dann für eine Aufgabe verantwortlich ist, kann sich darauf konzentrieren, statt alles gleichzeitig zu tun. Genau diese innere Aufteilung ist eine Ebene, auf der Arbeitsteilung und Spezialisierung in einer modernen Wirtschaft stattfinden, neben der späteren Ebene in Unternehmen. Ohne solche Rollen bliebe der Alltag ein undifferenziertes Bündel; mit ihnen wird aus dem Zusammenleben eine erkennbare Verteilung von Zuständigkeit.\n\nDie Aussage ist wahr.",
+      "Fabrikhallen sind nicht der einzige Ort. Das Buch stellt Haushalte und Unternehmen nebeneinander: auch in Wohnungen und Häusern werden Aufgaben geteilt. Eine Person kocht, eine andere putzt das Bad. Die Behauptung, Arbeitsteilung beginne erst am Fließband, streicht die Haushaltsseite, die der Abschnitt ausdrücklich nennt.\n\nDie Aussage ist falsch.",
+      "Essenszubereitung und Badezimmerreinigung stehen als Alltagsbeispiel. Das Buch sagt nicht, jede Familie müsse genau so splitten, sondern zeigt, wie Verantwortung für einzelne Aufgaben aussehen kann. Die eine Person kümmert sich hauptsächlich ums Kochen, die andere ist fürs Bad zuständig. So wird die allgemeine Regel der inneren Arbeitsteilung greifbar, ohne dass der Haushalt zur Fabrik erklärt wird.\n\nDie Aussage ist wahr.",
+      "Verantwortung für eine Aufgabe heißt Konzentration, nicht die Pflicht, gleichzeitig den gesamten Haushalt zu führen. Wer hauptsächlich kocht, ist gerade nicht automatisch in gleichem Umfang für jede andere Arbeit zuständig. Die absolute Forderung, alle Aufgaben parallel in gleichem Umfang zu erledigen, hebt die beschriebene Aufteilung wieder auf und widerspricht dem Punkt, dass sich Personen auf bestimmte Aufgaben konzentrieren können.\n\nDie Aussage ist falsch.",
+      "Verantwortung und Konzentration gehören zusammen. Sobald Aufgaben auf mehrere Personen verteilt sind, können einzelne für bestimmte Arbeiten zuständig sein und sich darauf einlassen. Das Buch formuliert das für Haushalte und Unternehmen parallel. Ohne solche Zuständigkeit bliebe die Aufteilung ein bloßes Durcheinander ohne klare Rollen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.02",
+    "title": "Abteilungen im Unternehmen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Arbeitsteilung innerhalb von Unternehmen:",
+    "statements": [
+      "In Unternehmen gibt es für gewöhnlich Abteilungen, die sich bestimmten betrieblichen Bereichen und Funktionen widmen.",
+      "Einkauf, Produktion, Verkauf (Vertrieb), Marketing und Buchhaltung sind Beispiele solcher Abteilungen.",
+      "Innerhalb eines Unternehmens dürfen Aufgaben niemals auf mehrere Personen aufgeteilt werden.",
+      "Beschäftigte können für bestimmte Aufgaben verantwortlich sein und sich auf diese konzentrieren.",
+      "Als Abteilung zählt ausschließlich der Vertrieb; Einkauf und Buchhaltung gehören nicht dazu."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Betriebliche Organisation meint nicht Chaos an einem Schreibtisch. Das Buch hält fest, dass es in Unternehmen für gewöhnlich Abteilungen gibt, die sich bestimmten Bereichen und Funktionen widmen. Einkauf ist etwas anderes als Buchhaltung, Produktion etwas anderes als Marketing. Diese innere Gliederung ist die betriebliche Form der Arbeitsteilung, parallel zur Aufteilung von Aufgaben im Haushalt. Für gewöhnlich heißt typisch, nicht dass jedes Kleinstunternehmen zwingend jedes Schild führt; das Muster bleibt die funktionale Trennung.\n\nDie Aussage ist wahr.",
+      "Die Beispielreihe ist bewusst breit. Einkauf, Produktion, Verkauf bzw. Vertrieb, Marketing, Buchhaltung und weitere Funktionen stehen als typische Abteilungen. Keine davon ist bloßes Beiwerk: jede bündelt Aufgaben, auf die sich Personen konzentrieren können. Wer nur eine dieser Stellen kennt, hat die betriebliche Arbeitsteilung nur zur Hälfte gesehen. Das „usw.“ am Ende der Liste zeigt, dass weitere Funktionen denselben Sinn haben können, ohne die genannten Beispiele zu verdrängen.\n\nDie Aussage ist wahr.",
+      "Niemals interne Aufteilung zu erlauben, dreht den Abschnitt um. Gerade innerhalb der Unternehmen werden die vielen verschiedenen Aufgaben auf mehrere Personen verteilt. Abteilungen existieren, weil nicht jede Person alles zugleich tun soll. Ein Verbot innerbetrieblicher Teilung würde die beschriebene Organisation unmöglich machen.\n\nDie Aussage ist falsch.",
+      "Zuständigkeit ist der Kern der inneren Spezialisierung. Beschäftigte sind für bestimmte Aufgaben verantwortlich und können sich darauf konzentrieren, statt den gesamten Betrieb in einer Person abzubilden. Genau so beschreibt das Buch Arbeitsteilung innerhalb der Unternehmen. Konzentration ersetzt hier nicht Qualitätssicherung durch andere Stellen, sie macht Tiefe in einer Funktion erst möglich.\n\nOhne solche Rollen blieben Einkauf, Produktion und Vertrieb ein und dieselbe undifferenzierte Tätigkeit. Die Abteilung ist der organisatorische Rahmen dafür, dass Verantwortung an Personen gebunden werden kann.\n\nDie Aussage ist wahr.",
+      "Vertrieb ist ein Beispiel, nicht die einzige zulässige Abteilung. Einkauf, Produktion, Marketing und Buchhaltung stehen ausdrücklich daneben. Die Einschränkung auf den Verkauf streicht Funktionen, ohne die ein Betrieb weder Vorleistungen beschaffen noch Zahlen führen noch herstellen könnte. Die Liste im Buch ist offen und endet mit „usw.“, nicht mit einem Monopol des Vertriebs.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.03",
+    "title": "Viele Güter in bestimmter Qualität",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was Spezialisierung für das Angebot von Unternehmen bedeutet:",
+    "statements": [
+      "Spezialisierung verhindert, dass ein Bäcker eine große Vielfalt an Brot und Gebäck in brauchbarer Qualität anbieten kann.",
+      "Durch Spezialisierung und entsprechende betriebliche Organisation können Unternehmen eine große Zahl von Gütern in bestimmter Qualität anbieten.",
+      "Ein PKW-Hersteller produziert viele Autos, ein Frisör nimmt täglich viele verschiedene Haarschnitte und Behandlungen vor.",
+      "Es kommt nur auf die Menge an; eine bestimmte Qualität spielt bei diesem Zusammenhang keine Rolle.",
+      "Die große Vielfalt an Berufen zeigt den hohen Grad an Arbeitsteilung und Spezialisierung in unserer Wirtschaft."
+    ],
+    "answer_key": [false, true, true, false, true],
+    "tactical_explanations": [
+      "Der Bäcker ist das Gegenbeispiel. Gerade weil sich Betrieb und Beschäftigte auf Brot und Gebäck spezialisieren und den Ablauf organisieren, entsteht die bekannte Vielfalt in bestimmter Qualität, nicht trotz der Spezialisierung, sondern durch sie. Wer Spezialisierung als Verbot von Sortenvielfalt liest, verwechselt Konzentration auf ein Feld mit der Pflicht, nur ein einziges Stück zu backen.\n\nDie Aussage ist falsch.",
+      "Zwei Hebel wirken zusammen: Spezialisierung der Mitarbeiterinnen und Mitarbeiter auf bestimmte Produkte oder Dienstleistungen und die passende betriebliche Organisation. Daraus folgt nicht Armut im Sortiment, sondern die Fähigkeit, eine große Zahl von Gütern in bestimmter Qualität anzubieten. Menge ohne jede Qualitätsvorstellung wäre ein anderes Argument; das Buch koppelt beides.\n\nOrganisation heißt hier, dass Abläufe, Zuständigkeiten und Fertigkeiten so gebündelt werden, dass der Betrieb wiederholbar liefern kann. Ohne diese innere Ordnung bliebe Spezialisierung ein Label ohne Angebotskraft. Mit ihr wird aus Konzentration auf ein Feld gerade die beobachtbare Breite an Broten, Autos oder Behandlungen.\n\nDie Aussage ist wahr.",
+      "Drei Bilder, dieselbe Logik. Der Bäcker mit vielen Broten und Gebäckstücken, der PKW-Hersteller mit vielen Autos, der Frisör mit vielen Schnitten und Behandlungen: jeweils ein spezialisierter Betrieb, der nicht ein Einzelstück, sondern eine große Zahl bzw. Vielfalt in bestimmter Qualität bereitstellt. Dienstleistungen sind eingeschlossen, nicht nur körperliche Produkte.\n\nDie Aussage ist wahr.",
+      "„In bestimmter Qualität“ steht im selben Satz wie die große Zahl der Güter. Menge allein reicht der Buchaussage nicht. Ein Haufen misslungener Laibe oder unsachgemäß lackierter Autos wäre nicht das, was Spezialisierung und Organisation hier leisten sollen. Qualität aus dem Zusammenhang zu streichen, verkürzt den Satz unzulässig.\n\nDie Aussage ist falsch.",
+      "Nicht nur Betriebe, auch Berufsbilder sind spezialisiert. Die große Vielfalt an Berufen, die man ergreifen kann, gilt im Abschnitt als Zeichen für den hohen Grad an Arbeitsteilung und Spezialisierung. Wer nur Maschinen sieht und keine Berufe, übersieht diese gesellschaftliche Seite derselben Entwicklung.\n\nBerufliche Vielfalt entsteht, weil Menschen und Betriebe nicht alles zugleich tun, sondern Felder ausbilden. Das ist dieselbe Logik wie bei Abteilungen im Unternehmen, nur auf der Ebene der Erwerbsarbeit insgesamt. Der Abschnitt stellt diesen Hinweis direkt neben Bäcker, Autowerk und Frisör.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.04",
+    "title": "Innere Arbeitsteilung im Betrieb",
+    "context": "Ein Betrieb trennt Einkauf, Produktion und Verkauf auf verschiedene Personen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Innerhalb des Unternehmens findet Arbeitsteilung statt, indem Aufgaben auf mehrere Personen verteilt werden.",
+      "Die betroffenen Personen sind dann für bestimmte Aufgaben verantwortlich und können sich darauf konzentrieren.",
+      "Arbeitsteilung und Spezialisierung finden in einer modernen Wirtschaft nur zwischen Ländern statt, niemals innerhalb von Betrieben oder Haushalten.",
+      "Abteilungen wie Einkauf, Produktion und Verkauf (Vertrieb) entsprechen der betrieblichen Form dieser Aufteilung.",
+      "Sobald Abteilungen existieren, entfällt jede persönliche Verantwortung für einzelne Aufgaben."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Einkauf, Herstellung und Verkauf in einer Person zu belassen, wäre das Gegenteil der beschriebenen Organisation. Das Buch nennt ausdrücklich die Ebene innerhalb der Unternehmen: viele verschiedene Aufgaben werden auf mehrere Personen aufgeteilt. Der geschilderte Betrieb folgt genau diesem Muster, nicht einem Sonderweg.\n\nDie Aussage ist wahr.",
+      "Aufteilung ohne Rolle bleibt folgenlos. Wer den Einkauf übernimmt, kann sich darauf konzentrieren; wer produziert oder verkauft, ebenso. Verantwortung für bestimmte Aufgaben ist die Formulierung des Lehrbuchs, nicht bloß eine lose Empfehlung. Konzentration heißt hier Tiefe in einer Funktion, nicht Desinteresse am Rest des Betriebs.\n\nOhne diese Bindung an Personen gäbe es Abteilungen nur auf dem Papier. Die innere Arbeitsteilung lebt davon, dass jemand zuständig ist und den jeweiligen Bereich ausüben kann, statt alle Funktionen gleichzeitig mit halber Aufmerksamkeit zu bedienen.\n\nDie Aussage ist wahr.",
+      "Das Buch zählt mehrere Ebenen: innerhalb der Haushalte und der Unternehmen, zwischen Unternehmen und auch bei Ländern. Wer nur die Länderebene gelten lässt, streicht die ersten Stufen, obwohl sie zuerst genannt werden. „Nur zwischen Ländern“ und „niemals intern“ sind deshalb falsch, unabhängig davon, dass es später auch internationale Spezialisierung gibt.\n\nInnere und äußere Arbeitsteilung schließen einander nicht aus. Ein Betrieb mit Abteilungen kann zugleich Vorleistungen beziehen oder exportieren; das hebt die interne Aufteilung nicht auf. Der Absolutismus „nur Länder“ ist die Falle, nicht die Mehrstufigkeit selbst.\n\nDie Aussage ist falsch.",
+      "Einkauf, Produktion und Verkauf bzw. Vertrieb stehen in der Beispielreihe der Abteilungen. Sie widmen sich betrieblichen Bereichen und Funktionen. Der Fall mit getrennten Personen für diese Felder ist die alltägliche Umsetzung, nicht eine Erfindung außerhalb des Texts.\n\nDie Aussage ist wahr.",
+      "Abteilungen ersetzen Personen nicht durch ein anonymes Nichts. Im Gegenteil: Aufgaben werden Personen zugeordnet, die verantwortlich sind. Existenz von Abteilungen verstärkt Zuständigkeit, sie löscht sie nicht. Die Behauptung, mit der Abteilung entfalle Verantwortung, verdreht Organisation in Verantwortungslosigkeit.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.05",
+    "title": "Agrana und Rosenbauer",
+    "context": "Bewerten Sie die folgenden Aussagen zu österreichischen Beispielen spezialisierter Unternehmen:",
+    "statements": [
+      "Agrana ist ein Nahrungsmittel- und Industriegüterkonzern; der Wiener Zucker ist nur eines von vielen Produkten.",
+      "Die Rosenbauer International AG hat ihren Sitz in Leonding und erzeugt Feuerwehrfahrzeuge und -ausrüstung.",
+      "Agrana erzeugt ausschließlich Wiener Zucker und keinerlei andere Güter.",
+      "Die im Abschnitt genannten Unternehmen zeigen nur einen kleinen Ausschnitt aus der großen Unternehmensvielfalt.",
+      "Ein spezialisiertes Unternehmen darf seinen Sitz niemals in Österreich haben."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Wiener Zucker ist das bekannte Etikett, nicht das gesamte Sortiment. Agrana erzeugt daneben unter anderem Fruchtzubereitungen und Fruchtsaftkonzentrate, Stärke und Bioethanol. Spezialisierung heißt hier: der Konzern konzentriert sich mit seinen Beschäftigten auf bestimmte Felder der Nahrungsmittel- und Industriegüterherstellung, nicht auf ein einziges Markenprodukt. Sitz in Wien ändert an dieser Einordnung nichts.\n\nDie Aussage ist wahr.",
+      "Feuerwehrfahrzeuge und -ausrüstung markieren das Feld. Rosenbauer mit Sitz im oberösterreichischen Leonding steht als Beispiel eines Unternehmens, das sich auf bestimmte Produkte spezialisiert hat. Der Abschnitt führt solche Betriebe an, um Unternehmensvielfalt und Spezialisierung zu zeigen, nicht um Internetadressen abzufragen.\n\nSpezialisierung schließt aus, dass derselbe Betrieb beliebig jedes beliebige Gut herstellt. Sie schließt nicht aus, dass innerhalb des Feldes mehrere verwandte Erzeugnisse entstehen, hier Fahrzeuge und Ausrüstung für die Feuerwehr. Genau diese Konzentration illustriert der Fall.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Zucker zu behaupten, widerspricht der Produktliste. Fruchtzubereitungen, Konzentrate, Stärke und Bioethanol gehören dazu; Zucker ist ausdrücklich nur eines von vielen Produkten. Die Falle liegt im Wort „ausschließlich“, das aus einem bekannten Artikel das ganze Unternehmen macht.\n\nDie Aussage ist falsch.",
+      "Vier Namen ersetzen nicht die ganze Wirtschaft. Das Buch sagt klar, die folgenden Beispiele zeigten nur einen kleinen Ausschnitt aus der großen Unternehmensvielfalt. Agrana und Rosenbauer sind Illustrationen, keine vollständige Landkarte und keine Pflicht zur Kenntnis jeder Konzernwebsite.\n\nWer die Liste auswendig als Vollständigkeit liest, verfehlt den Zweck: sichtbar machen, dass sich Betriebe mit Beschäftigten auf bestimmte Produkte und Dienstleistungen spezialisieren. Der Ausschnittcharakter gehört zur Aussage, nicht als Fußnote hinterher.\n\nDie Aussage ist wahr.",
+      "Alle genannten Beispiele sind österreichische Unternehmen. Sitz in Wien, Leonding oder Linz ist mit Spezialisierung vereinbar. Ein Ortsverbot für Österreich kommt im Abschnitt nicht vor und würde die Illustrationen, um die es geht, unsichtbar machen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.06",
+    "title": "Voest und Do&Co",
+    "context": "Bewerten Sie die folgenden Aussagen zu Voest und Do&Co als spezialisierten Unternehmen:",
+    "statements": [
+      "Die Voest ist ein Stahl- und Technologiekonzern mit Hauptsitz in Linz.",
+      "Do&Co ist ein österreichisches Unternehmen mit Geschäftsfeldern wie Catering, Restaurants, Flughafenlounges und Hotels.",
+      "Spezialisierung bedeutet, dass ein Unternehmen immer nur ein einziges Geschäftsfeld haben darf.",
+      "Unternehmen spezialisieren sich mit ihren Mitarbeiterinnen und Mitarbeitern auf die Herstellung bestimmter Produkte und/oder Dienstleistungen.",
+      "Do&Co darf als spezialisiertes Unternehmen keine Dienstleistungen anbieten, sondern nur körperliche Industrieprodukte wie Stahl."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Stahl und Technologie, nicht beliebige Branchen. Die Voest zählt zu den bekannten österreichischen Unternehmen, der Hauptsitz liegt in Linz, das Feld sind Stahl und Metalle. So illustriert der Abschnitt Spezialisierung: Konzentration auf bestimmte Produkte, nicht auf die gesamte Güterwelt. Linz ist Ortsangabe zur Illustration, keine Prüfungsfrage nach einer Website.\n\nDie Aussage ist wahr.",
+      "Catering für Events und Flüge, Restaurants, Lounges und Hotels bilden das Bündel. Do&Co hat den Hauptsitz in Wien und steht für Spezialisierung im Bereich Gastronomie und verwandter Dienstleistungen. Mehrere Geschäftsfelder innerhalb dieses Feldes widersprechen der Spezialisierung nicht, sie beschreiben sie.\n\nWer nur Fabriken als spezialisiert gelten lässt, streicht genau dieses Dienstleistungsbeispiel. Das Buch stellt Do&Co neben Agrana, Rosenbauer und Voest als Ausschnitt der Unternehmensvielfalt.\n\nDie Aussage ist wahr.",
+      "Ein einziges Geschäftsfeld als Zwang steht so nicht im Text. Agrana bündelt Zucker, Frucht, Stärke und Bioethanol, Do&Co Catering, Restaurants, Lounges und Hotels. Spezialisierung heißt Konzentration auf bestimmte Produkte und/oder Dienstleistungen, nicht die Regel „immer nur eins“. Das Wort „immer“ macht aus einer Richtung eine falsche Enge.\n\nDie Aussage ist falsch.",
+      "Beschäftigte und Betrieb gehören zusammen. Spezialisierung ist keine abstrakte Branchenmarke, sondern die Ausrichtung mit den Mitarbeiterinnen und Mitarbeitern auf bestimmte Produkte und/oder Dienstleistungen. Deshalb können Betriebe anschließend eine große Zahl solcher Güter in bestimmter Qualität anbieten. Die Formel „und/oder“ lässt Industrie und Dienstleistung gleichermaßen zu.\n\nOhne die Menschen, die sich auf Aufgaben konzentrieren, bliebe Spezialisierung ein leeres Firmenschild. Innere Arbeitsteilung in Abteilungen und die Ausrichtung des ganzen Unternehmens auf ein Feld greifen ineinander. Genau diesen Einstieg wählt der Abschnitt, bevor er die österreichischen Beispiele nennt.\n\nDie Aussage ist wahr.",
+      "Stahl ist das Feld der Voest, nicht das Pflichtformat für jedes spezialisierte Unternehmen. Do&Co erstellt Dienstleistungen: Catering, Restaurantbetrieb, Lounges, Hotels. Produkte und Dienstleistungen stehen im Einleitungssatz nebeneinander. Wer Dienstleistungen verbietet, weil Spezialisierung „industriell“ klingen soll, ignoriert das explizite Beispiel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.07",
+    "title": "Dienstleistung und Abteilungen",
+    "context": "Eine Klinik gliedert Diagnostik, Pflege und Verwaltung analog zu betrieblichen Funktionen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Auch in einem Dienstleistungsbetrieb können Aufgaben auf mehrere Personen und Bereiche aufgeteilt werden, die sich auf bestimmte Funktionen konzentrieren.",
+      "Spezialisierung kommt in Dienstleistungsberufen nicht vor, weil nur Industriebetriebe Aufgaben teilen dürfen.",
+      "In Unternehmen gibt es für gewöhnlich Abteilungen für betriebliche Bereiche wie Einkauf, Produktion, Verkauf, Marketing oder Buchhaltung.",
+      "Ein Frisör, der täglich viele Schnitte und Behandlungen vornimmt, illustriert Spezialisierung bei Dienstleistungen.",
+      "Jede Abteilung muss sämtliche betrieblichen Funktionen gleichzeitig erfüllen, sonst liegt keine Organisation vor."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Diagnostik, Pflege und Verwaltung sind verschiedene Aufgaben. Das Buch beschränkt innere Arbeitsteilung nicht auf Fabriken: innerhalb der Unternehmen werden Aufgaben auf mehrere Personen verteilt, die verantwortlich sind und sich konzentrieren können. Ein Dienstleistungsbetrieb mit gegliederten Bereichen folgt derselben Logik wie Einkauf, Produktion und Vertrieb in einem Industrieunternehmen.\n\nOrganisation heißt hier, dass nicht jede Person jede Funktion zugleich ausübt. Konzentration auf Diagnostik oder auf Verwaltung ist Spezialisierung im Inneren, nicht ein Verstoß gegen den Unternehmensbegriff. Die Klinik ist eine Szene für genau diese innerbetriebliche Ebene.\n\nDie Aussage ist wahr.",
+      "Der Frisör im Einleitungsteil ist selbst ein Dienstleistungsbeispiel: viele verschiedene Haarschnitte und Behandlungen täglich, ermöglicht durch Spezialisierung und Organisation. Do&Co steht später für Catering und Gastronomie. Die Behauptung, nur Industrie dürfe teilen, streicht diese Fälle. Spezialisierung gilt für Produkte und/oder Dienstleistungen.\n\nDie Aussage ist falsch.",
+      "Die Abteilungsreihe ist das betriebliche Standardbild. Einkauf, Produktion, Verkauf bzw. Vertrieb, Marketing, Buchhaltung usw. widmen sich Bereichen und Funktionen. Eine Klinik kann analog gliedern, ohne dass die Namen identisch sein müssen; das Muster bleibt innere Arbeitsteilung nach Funktionen.\n\nFür gewöhnlich heißt: typisch, nicht dass jedes Kleinstunternehmen zwingend alle diese Schilder an die Tür heftet. Der Punkt ist die funktionale Trennung, nicht eine starre Pflichtliste von fünf Logos. In der Klinik entsprechen Verwaltung, Pflege und Diagnostik dieser Trennung nach Aufgaben.\n\nDie Aussage ist wahr.",
+      "Haarschnitte und Behandlungen sind Dienstleistungen, keine körperlichen Produkte wie Brot oder Autos. Trotzdem führt sie der Abschnitt als Beleg, dass Spezialisierung eine große Zahl von Leistungen in bestimmter Qualität ermöglicht. Der Frisör ist damit das Dienstleistungspendant zum Bäcker und zum PKW-Hersteller.\n\nDie Aussage ist wahr.",
+      "Organisation bedeutet Trennung nach Funktionen, nicht die Pflicht, in jeder Abteilung alles gleichzeitig zu tun. Würde jede Stelle Einkauf, Produktion, Verkauf, Marketing und Buchhaltung parallel erfüllen, entfiele der Sinn der Abteilung. Konzentration auf bestimmte Aufgaben wäre unmöglich. Die Absolute „sämtliche Funktionen gleichzeitig“ kippt die Definition ins Gegenteil.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.2",
+    "case_id": "WISO 1.2.08",
+    "title": "Ebenen innerer Spezialisierung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Arbeitsteilung in Haushalt und Unternehmen sowie zu den österreichischen Betriebsbeispielen:",
+    "statements": [
+      "In privaten Haushalten gibt es keinerlei Aufteilung von Aufgaben auf Personen.",
+      "Agrana, Rosenbauer, Voest und Do&Co dienen als Illustrationen spezialisierter österreichischer Unternehmen und nur als kleiner Ausschnitt der Vielfalt.",
+      "Durch Spezialisierung und betriebliche Organisation können Betriebe wie Bäckereien oder Autowerke eine große Zahl von Gütern in bestimmter Qualität anbieten.",
+      "Innerhalb von Unternehmen konzentrieren sich Abteilungen auf betriebliche Bereiche, etwa Marketing oder Buchhaltung.",
+      "Wer sich als Unternehmen spezialisiert, darf nur ein einziges Produkt ohne Qualitätsanspruch herstellen und niemals eine Dienstleistung."
+    ],
+    "answer_key": [false, true, true, true, false],
+    "tactical_explanations": [
+      "Keinerlei Aufteilung im Haushalt zu behaupten, widerspricht der ersten genannten Ebene. Aufgaben werden auf mehrere Personen verteilt; Kochen und Badputzen sind das Schulbeispiel. Haushalt und Unternehmen stehen als innere Arbeitsteilung nebeneinander. Die Absolute „keinerlei“ löscht genau diese Ebene.\n\nDie Aussage ist falsch.",
+      "Vier Betriebe, ein Zweck: sichtbar machen, dass sich Unternehmen mit Beschäftigten auf bestimmte Produkte und/oder Dienstleistungen spezialisieren. Agrana im Nahrungsmittel- und Industriegüterfeld, Rosenbauer bei Feuerwehrtechnik, Voest bei Stahl und Technologie, Do&Co bei Gastronomie und Catering. Das Buch nennt sie ausdrücklich als kleinen Ausschnitt, nicht als Vollständigkeit und nicht als Abfrage von Internetadressen.\n\nIllustration heißt: das Muster erkennen, nicht Konzernchroniken auswendig lernen. Sitzangaben und Felder helfen, Spezialisierung konkret zu sehen. Wer die Namen als Pflichtkatalog missversteht, verfehlt den Abschnitt; wer sie als Beispiele für Konzentration auf ein Feld liest, trifft ihn.\n\nDie Aussage ist wahr.",
+      "Bäcker und PKW-Hersteller sind die Leitbilder für Menge und Qualität. Spezialisierung der Beschäftigten plus Organisation des Betriebs ergeben nicht Armut im Angebot, sondern viele Güter in bestimmter Qualität. Autos in Serie, Brot und Gebäck in Vielfalt: dasselbe Prinzip, andere Güter.\n\nOhne die innere Ordnung, also Zuständigkeiten und Abläufe, bliebe die Ausrichtung auf ein Feld folgenarm. Mit ihr wird aus Konzentration gerade Lieferfähigkeit. Der Satz im Buch koppelt beide Bedingungen; wer nur das Firmenschild „Bäckerei“ sieht und keine Organisation, erklärt die sichtbare Sortenvielfalt nicht.\n\nDie Aussage ist wahr.",
+      "Marketing und Buchhaltung stehen in der Abteilungsreihe neben Einkauf, Produktion und Vertrieb. Sie sind betriebliche Funktionen, keine bloßen Labels. Innere Spezialisierung heißt, dass sich solche Einheiten einem Bereich widmen, statt jede Person alle Funktionen zugleich zu bedienen. Das gilt unabhängig davon, welches österreichische Beispiel man daneben stellt.\n\nDie Aussage ist wahr.",
+      "Drei Fehler in einem Satz. Spezialisierung erlaubt eine große Zahl von Gütern, nicht nur ein Einzelstück. Qualität ist mitgedacht, nicht gestrichen. Dienstleistungen sind eingeschlossen: Frisör, Do&Co, und der Einleitungssatz sagt Produkte und/oder Dienstleistungen. Die Kombination aus Einzigkeitszwang, Qualitätsverzicht und Dienstleistungsverbot hält keiner dieser Buchaussagen stand.\n\nEin einziges Stück ohne Qualitätsmaßstab wäre das Gegenteil dessen, was Bäcker, Autowerk und Frisör zeigen. Agrana mit mehreren Nahrungsmittelgütern und Do&Co mit mehreren Dienstleistungsfeldern widerlegen zusätzlich die Enge „nur ein Produkt, nie eine Leistung“. Spezialisierung ist Konzentration auf ein Feld mit Tiefe, nicht ein Produktionsverbot.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  }
+]

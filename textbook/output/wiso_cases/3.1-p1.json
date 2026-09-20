@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.01",
+    "title": "Aufgabe von Unternehmen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Aufgabe von Unternehmen:",
+    "statements": [
+      "Unternehmen sind wirtschaftlich selbstständige Organisationseinheiten, die Produkte und Dienstleistungen für andere erstellen.",
+      "Die Aufgabe von Unternehmen besteht darin, Bedürfnisse privater Haushalte, anderer Unternehmen oder des Staates zu erkennen oder zu wecken und anzubieten, was diese brauchen oder sich wünschen.",
+      "Kundinnen und Kunden kaufen ein Angebot auch dann zuverlässig, wenn sie darin weder Wert noch Nutzen erkennen.",
+      "Unternehmen erstellen Leistungen ausschließlich für private Haushalte; andere Unternehmen und der Staat gehören nicht zum Adressatenkreis.",
+      "Für Unternehmen ist es bedeutend, Wert und Nutzen für die Kundinnen und Kunden zu schaffen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Selbstständig und für andere, das ist der Ausgangspunkt. Unternehmen sind wirtschaftlich selbstständige Organisationseinheiten, die Produkte und Dienstleistungen für andere erstellen. Sie stehen nicht als Anhängsel eines Haushalts da und fertigen nicht nur für den Eigenbedarf. Die Leistung geht an Dritte: Haushalte, andere Betriebe oder den Staat. Genau diese Rolle macht aus einer Organisation ein Unternehmen im Sinne des Abschnitts, noch bevor Rechtsform oder Größe zur Sprache kommen.\n\nDie Aussage ist wahr.",
+      "Bedürfnisse sind der Auftrag, nicht ein Nebenprodukt. Unternehmen sollen erkennen oder wecken, was private Haushalte, andere Unternehmen oder der Staat brauchen oder sich wünschen, und genau das anbieten. Der Satz lässt alle drei Nachfragergruppen zu, verbunden durch ein Oder, nicht durch ein einziges Pflichtpublikum. Wer nur Endverbraucher zählt, streicht Zulieferung und öffentliche Nachfrage. Die Aufgabe ist das Treffen dieses Bedarfs, nicht das Herstellen um des Herstellens willen.\n\nDie Aussage ist wahr.",
+      "Ohne erkannten Wert bleibt das Angebot stehen. Nur wenn Kundinnen und Kunden im Angebotenen einen Wert und einen Nutzen erkennen, werden sie interessiert sein, es zu kaufen. Die Behauptung, der Kauf erfolge zuverlässig auch ohne diesen Eindruck, kehrt die Bedingung um. Dann wäre Marketing überflüssig und die Leistungserstellung unabhängig vom Urteil der Käuferseite. Der Abschnitt knüpft Interesse und Kauf gerade an diese Wahrnehmung. Ohne diese Wahrnehmung bleibt selbst ein technisch einwandfreies Produkt unverkäuflich, weil niemand einen Grund sieht, dafür zu zahlen. Der Abschnitt stellt Wert und Nutzen deshalb an den Anfang der Unternehmensaufgabe, nicht an den Rand der Werbung.\n\nDie Aussage ist falsch.",
+      "Drei Adressaten, nicht einer. Bedürfnisse von privaten Haushalten und/oder anderen Unternehmen und/oder dem Staat gehören in denselben Auftrag. Eine Beschränkung auf Haushalte allein streicht die beiden anderen Gruppen, obwohl der Text sie ausdrücklich nennt. Zulieferer, die an Betriebe verkaufen, und Anbieter öffentlicher Leistungen wären dann keine Unternehmen mehr, was der Definition widerspricht.\n\nDie Aussage ist falsch.",
+      "Wert und Nutzen sind der Hebel zum Kaufinteresse. Weil Kundinnen und Kunden nur bei erkanntem Wert und Nutzen kaufen wollen, ist es für Unternehmen bedeutend, genau diesen Wert und Nutzen zu schaffen. Die Leistungserstellung zielt darauf, nicht auf ein beliebiges Produkt, das niemand braucht. Der Satz hält diese Bedeutung fest, ohne zu behaupten, jedes Angebot gelinge automatisch. Betriebsmittel, Werkstoffe und Personal laufen ins Leere, wenn das Ergebnis für die Abnehmerseite keinen erkennbaren Nutzen hat. Genau deshalb folgt auf die Definition der Organisationseinheit sofort die Forderung, diesen Kundennutzen herzustellen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.02",
+    "title": "Einsatzfaktoren der Leistungserstellung",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was Unternehmen für die Leistungserstellung einsetzen:",
+    "statements": [
+      "Für die Leistungserstellung setzen Unternehmen unter anderem Betriebsmittel wie Maschinen und Geschäftsausstattung ein.",
+      "Werkstoffe, etwa Rohstoffe, gehören zu den eingesetzten Mitteln der Leistungserstellung.",
+      "Arbeitskräfte meint nur körperliche Arbeit am Band; Know-how und Information zählen nicht.",
+      "Beschäftigen Unternehmen Personal, schaffen sie Arbeitsplätze.",
+      "Wettbewerb kann Innovationen anstoßen, wenn Betriebe ihr Angebot laufend weiterentwickeln und Neues entwickeln."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Maschinen und Ausstattung sind Betriebsmittel, nicht Dekoration. Der Abschnitt zählt sie zu den Einsätzen der Leistungserstellung, zusammen mit Werkstoffen, Arbeitskräften sowie Know-how und Information. Ohne Geräte und Geschäftsausstattung käme die Erstellung von Produkten und Dienstleistungen oft nicht zustande. Der Satz trifft genau dieses erste Element der Aufzählung. Werkstoffe, Arbeitskräfte sowie Know-how und Information stehen in derselben Aufzählung daneben, ersetzen die Betriebsmittel aber nicht. Eine Tischlerei ohne Hobelbank oder ein Büro ohne Ausstattung könnte die genannte Erstellung kaum leisten. Der Satz isoliert das erste Element korrekt, ohne die übrigen Einsätze zu leugnen.\n\nDie Aussage ist wahr.",
+      "Rohstoffe sind das Beispiel, nicht die ganze Welt der Werkstoffe, aber sie gehören hinein. Verschiedene Werkstoffe fließen in die Leistungserstellung ein, Rohstoffe ausdrücklich als Illustration. Wer Werkstoffe aus dem Bild streicht, lässt die stoffliche Seite der Produktion weg, obwohl der Text sie neben Betriebsmitteln und Personal nennt.\n\nDie Aussage ist wahr.",
+      "Personal ist breiter als die Werkbank. Arbeitskräfte meint die Arbeitsleistung des Personals, und daneben stehen Know-how und Information als eigene Einsätze. Planende, beratende oder buchhalterische Tätigkeit fällt damit nicht aus der Leistungserstellung. Die Verengung auf körperliche Bandarbeit und das Streichen von Know-how widersprechen der Aufzählung. Know-how und Information stehen als eigenes Einsatzpaar, nicht als Schmuck der Fabrikhalle. Eine Steuerberatung oder eine Softwareleistung lebt gerade von diesen Einsätzen. Die Behauptung, nur das Band zähle, würde Dienstleister aus der Leistungserstellung streichen, obwohl der Unternehmensbegriff Produkte und Dienstleistungen umfasst.\n\nDie Aussage ist falsch.",
+      "Anstellung hat eine unmittelbare Folge im Text: Arbeitsplätze. Wenn Unternehmen Mitarbeiterinnen und Mitarbeiter beschäftigen, schaffen sie Arbeitsplätze. Das ist keine Nebenbemerkung zur Personalsuche, sondern ein benannter Effekt der Leistungserstellung. Der Satz gibt diese Verknüpfung wieder, ohne aus jeder Stelle schon eine unbefristete Vollzeitgarantie zu machen.\n\nDie Aussage ist wahr.",
+      "Wettbewerb und laufende Weiterentwicklung gehören zusammen. Vor allem wenn Unternehmen mit anderen im Wettbewerb stehen, schaffen sie auch Innovationen, indem sie ihr Angebot weiterentwickeln und Neues entwickeln. Innovation ist hier an diese Bewegung gekoppelt, nicht an ein einmaliges Gründungspatent. Der Satz folgt der Buchlogik. Stehen Betriebe nicht im Wettbewerb, kann das Angebot erstarren; der Text knüpft Innovationen vor allem an die Konkurrenzsituation und an die laufende Weiterentwicklung. Ein einmaliges Patent ohne weitere Entwicklung erfüllt diese Formulierung nicht. Der Satz hält die Bedingung fest, unter der Unternehmen Neues schaffen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.03",
+    "title": "Gesetzliche Definition im UGB",
+    "context": "Bewerten Sie die folgenden Aussagen zur gesetzlichen Definition von Unternehmen im Unternehmensgesetzbuch:",
+    "statements": [
+      "§1 Absatz 1 UGB bestimmt: Unternehmer ist, wer ein Unternehmen betreibt.",
+      "Nach §1 Absatz 2 UGB ist ein Unternehmen jede auf Dauer angelegte Organisation selbständiger wirtschaftlicher Tätigkeit, mag sie auch nicht auf Gewinn gerichtet sein.",
+      "Ein einmaliger Verkauf ohne dauerhafte Organisation erfüllt bereits die gesetzliche Unternehmensdefinition.",
+      "Die rechtliche Definition verlangt zwingend, dass jedes Unternehmen auf Gewinnerzielung ausgerichtet ist.",
+      "Zu den Merkmalen zählt eine selbstständige wirtschaftliche Tätigkeit, also das Erstellen von Produkten und/oder Dienstleistungen für Dritte auf eigenes Risiko."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Staat klärt den Unternehmerbegriff im UGB, nicht in einer Werbebroschüre. §1 Absatz 1 knüpft die Unternehmereigenschaft an den Betrieb eines Unternehmens: Unternehmer ist, wer ein Unternehmen betreibt. Ohne betriebenes Unternehmen fehlt diese rechtliche Stellung. Der Satz gibt die Bestimmung wieder, ohne schon die drei Merkmale des Absatzes 2 auszuführen. Absatz 2 beschreibt anschließend, was dieses Unternehmen ist; Absatz 1 klärt zuerst die Person, die es betreibt. Wer nur den Gewinnzweck oder nur die Mitarbeiterzahl prüft, überspringt diese gesetzliche Reihenfolge. Der Satz bleibt beim Wortlaut von §1 Absatz 1.\n\nDie Aussage ist wahr.",
+      "Absatz 2 füllt, was betrieben wird. Ein Unternehmen ist jede auf Dauer angelegte Organisation selbständiger wirtschaftlicher Tätigkeit, und das gilt auch dann, wenn sie nicht auf Gewinn gerichtet ist. Dauer, Selbstständigkeit und wirtschaftliche Tätigkeit für den Markt stehen vor der Gewinnfrage. Der Wortlaut lässt gemeinnützige Organisationen in derselben Definition zu, sofern die übrigen Merkmale passen.\n\nDie Aussage ist wahr.",
+      "Dauer ist das erste Merkmal, nicht ein optionales Extra. Auf Dauer angelegt heißt, das Unternehmen handelt nicht nur einmalig. Ein einzelner Verkauf ohne Organisation auf Dauer fällt damit aus der gesetzlichen Definition. Wer den Flohmarktstand von einem Nachmittag zum Unternehmen erklärt, streicht genau dieses Merkmal. Die drei Merkmale stehen kumulativ: Dauer, selbstständige wirtschaftliche Tätigkeit, und Gewinn ist optional. Fehlt die Dauer, hilft auch ein großer einzelner Umsatz nicht. Der Abschnitt stellt das einmalige Handeln dem Unternehmen gegenüber, nicht als dessen einfachste Form.\n\nDie Aussage ist falsch.",
+      "Gewinn ist erlaubt, aber nicht vorgeschrieben. Die Definition umfasst ausdrücklich Tätigkeiten, die nicht auf Gewinn gerichtet sein müssen. Das dritte Merkmal lautet: Unternehmen müssen nicht unbedingt auf Gewinnerzielung ausgerichtet sein. Eine Pflicht zur Gewinnabsicht würde Non-Profit-Organisationen aus dem Unternehmensbegriff werfen, obwohl der Gesetzestext sie offenlässt.\n\nDie Aussage ist falsch.",
+      "Selbstständig und für Dritte, auf eigenes Risiko. Die selbstständige wirtschaftliche Tätigkeit besteht darin, selbstständig und auf eigenes Risiko Produkte und/oder Dienstleistungen für Dritte zu erstellen. Eigenbedarf allein oder unselbstständige Ausführung im fremden Namen erfüllen dieses Merkmal nicht. Der Satz trifft die betriebliche und die juristische Lesart, die der Abschnitt zusammenzieht. Unselbstständige Arbeit im fremden Betrieb oder reiner Eigenverbrauch ohne Dritte erfüllen das nicht. Das unternehmerische Risiko bleibt bei der Organisation, die am Markt auftritt. Gewinnabsicht kann hinzukommen, ändert aber an diesem Tätigkeitskern nichts.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.04",
+    "title": "woom, Manner und die drei Merkmale",
+    "context": "Die woom GmbH erzeugt Fahrräder, die Josef Manner & Comp. AG Waffeln und andere Süßigkeiten. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beide Betriebe sind auf Dauer angelegt, weil Fahrräder und Waffeln nicht nur für ein paar Tage vorübergehend produziert werden.",
+      "Sie tragen unternehmerisches Risiko und produzieren für Dritte.",
+      "Ohne Gewinnabsicht könnten woom und Manner rechtlich nicht als Unternehmen gelten.",
+      "Aus betriebswirtschaftlicher Sicht ist ein Unternehmen wirtschaftlich tätig, indem es Leistungen für Dritte erbringt.",
+      "Verliert ein Unternehmen die Fähigkeit, zumindest kostendeckend zu arbeiten und zahlungsfähig zu bleiben, verliert es aus betriebswirtschaftlicher Sicht seine Existenzgrundlage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Fahrräder und Waffeln stehen hier als Dauerbetrieb, nicht als Messestand. Der Abschnitt nennt woom und Manner als auf Dauer angelegt, weil nicht nur für ein paar Tage vorübergehend produziert wird. Die Organisation bleibt über den einzelnen Verkaufstag hinaus bestehen. Genau dieses Merkmal der juristischen Definition wird am Beispiel festgemacht.\n\nDie Aussage ist wahr.",
+      "Risiko und Dritte gehören zu denselben Beispielen. Beide Unternehmen tragen unternehmerisches Risiko und produzieren für Dritte, nicht nur für die eigene Kantine. Kundinnen und Kunden außerhalb der Organisation nehmen die Räder und Süßigkeiten ab. Der Satz wiederholt die Zuordnung des Textes zu den gesetzlichen Merkmalen.\n\nDie Aussage ist wahr.",
+      "Gewinnabsicht ist bei woom und Manner vorhanden, aber nicht die Bedingung der Rechtsdefinition. Beide werden durchaus mit Gewinnabsicht geführt, auch wenn sie das nicht müssten, um als Unternehmen zu gelten. Die Behauptung, ohne Gewinnabsicht entfalle die Unternehmenseigenschaft, widerspricht genau diesem Nachsatz. Eine NPO mit Dauer, Selbstständigkeit und Leistung für Dritte bleibt im gesetzlichen Rahmen denkbar. Die Beispiele dienen gerade dazu, Gewinnabsicht und Legaldefinition zu trennen: vorhanden ja, zwingend nein. Eine auf Dauer angelegte, selbstständige Tätigkeit für Dritte bleibt Unternehmen, auch wenn sie als NPO kostendeckend denken will. Der Satz macht aus einer tatsächlichen Gewinnausrichtung eine rechtliche Pflicht, die der Text verneint.\n\nDie Aussage ist falsch.",
+      "Lechner, Egger und Schauer liefern die betriebswirtschaftliche Kurzformel: wirtschaftlich tätig, indem Leistungen für Dritte erbracht werden. Das trifft sich mit dem juristischen Merkmal der selbstständigen Tätigkeit für andere. Eigenverbrauch ohne Außenleistung wäre danach keine Unternehmenstätigkeit in diesem Sinn.\n\nDie Aussage ist wahr.",
+      "Kostendeckung und Zahlungsfähigkeit sind die betriebswirtschaftliche Untergrenze. Anerkannt wird, dass Gewinn nicht zwingend ist; betont wird zugleich, dass die Existenzgrundlage entfällt, wenn das Unternehmen nicht zumindest kostendeckend arbeiten kann und zahlungsfähig ist. Ohne Deckung der Kosten und ohne liquide Mittel endet der Fortbestand, auch wenn das UGB keine Gewinnpflicht kennt. Der Satz hält diese Grenze fest. Gewinnmaximierung ist dafür nicht vorgeschrieben, die laufende Zahlungsfähigkeit aber schon. Manner und woom illustrieren gewinnorientierte Fälle; die Existenzregel gilt allgemeiner. Wer nur die UGB-Offenheit für Non-Profit liest und Kostendeckung streicht, verfehlt die betriebswirtschaftliche Ergänzung des Abschnitts.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.05",
+    "title": "Gewinne und Fortbestand",
+    "context": "Bewerten Sie die folgenden Aussagen zu Gewinnen in Unternehmen:",
+    "statements": [
+      "Gewinne erzielen bedeutet vereinfacht, mehr einzunehmen als auszugeben, buchhalterisch also mehr Erträge als Aufwände zu haben.",
+      "Gewinne sind für den Fortbestand in der Regel wesentlich, weil sie reinvestiert werden können.",
+      "Reinvestierte Gewinne helfen, dauerhaft leistungs- und konkurrenzfähig zu bleiben und in Verlustphasen weniger überschuldungsgefährdet zu sein.",
+      "Sobald einmal Gewinn anfällt, entfällt jedes Risiko späterer Verluste.",
+      "Gewinne dürfen nach dem Abschnitt niemals im Unternehmen verbleiben, sondern müssen vollständig ausgeschüttet werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Mehr hinein als hinaus, das ist die Vereinfachung. Gewinne erzielen heißt, mehr einzunehmen als auszugeben; buchhalterisch: mehr Erträge als Aufwände. Die Differenz ist der Gewinn, nicht der Umsatz allein und nicht die Wertschöpfung. Wer nur die Einnahmeseite zählt, hat noch keinen Gewinn beschrieben. Umsatz ohne Blick auf die Aufwände wäre nur die Einnahmeseite. Ein hoher Erlös bei noch höheren Kosten ergibt keinen Gewinn. Die doppelte Formulierung Einnahmen gegen Ausgaben und Erträge gegen Aufwände verhindert genau dieses Missverständnis.\n\nDie Aussage ist wahr.",
+      "Fortbestand braucht in der Regel Substanz zum Wiederanlegen. Gewinne sind wesentlich, weil sie ins Unternehmen reinvestiert werden können. So bleibt der Betrieb leistungsfähig, statt jede Periode bei null zu starten. Der Text sagt „in der Regel“, nicht „ausnahmslos in jeder Rechtsform und jedem Jahr“. Die Richtung bleibt: Reinvestition stützt den Fortbestand. Ohne diese Rücklage müsste jede Periode neu von außen finanziert werden, sobald Maschinen, Know-how oder das Angebot erneuert werden sollen. Verlustphasen wären dann sofort existenzbedrohend. Der Text bindet den Fortbestand an diese Verwendung, nicht an das bloße Ausweisen eines Überschusses in der Werbung.\n\nDie Aussage ist wahr.",
+      "Zwei Wirkungen hängen an derselben Reinvestition. Dauerhafte Leistungs- und Konkurrenzfähigkeit auf der einen Seite, geringere Überschuldungsgefahr in Verlustzeiten auf der anderen. Zurückbehaltene Gewinne polstern, wenn später Aufwände die Erträge übersteigen. Der Satz fasst beide vom Buch genannten Folgen, ohne Verluste unmöglich zu machen.\n\nDie Aussage ist wahr.",
+      "Gewinn in einer Periode löscht Verlustphasen nicht aus. Der Text spricht ausdrücklich von Zeiten, in denen Verluste geschrieben werden, und von der Gefahr der Überschuldung. Ein einmaliger Überschuss ist kein Freibrief. Die Behauptung, jedes spätere Verlustrisiko entfalle, widerspricht genau dieser Vorsorgefunktion der Gewinne. Reinvestierte Gewinne mindern die Überschuldungsgefahr, sie schaffen keine Garantie gegen jede rote Zahl. Ein Unternehmen kann nach profitablen Jahren Verluste schreiben und trotzdem Unternehmen im gesetzlichen Sinn bleiben. Die absolute Formulierung „jedes Risiko entfällt“ überzieht die Buchaussage.\n\nDie Aussage ist falsch.",
+      "Reinvestition setzt voraus, dass Gewinne im Unternehmen bleiben können. Der Abschnitt stellt das Wiederanlegen als Weg zum Fortbestand dar, nicht eine Pflicht zur vollständigen Ausschüttung. Ein Verbot des Verbleibs würde die genannte Mechanik zerstören. Weder NPO noch gewinnorientierter Betrieb könnten dann aus Überschüssen das Angebot stärken.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.06",
+    "title": "Non-Profit-Organisationen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Non-Profit-Organisationen:",
+    "statements": [
+      "Eine als Non-Profit-Organisation konzipierte Einheit ist primär daran orientiert, kostendeckend zu arbeiten.",
+      "Ausreichende Einnahmen, etwa durch Spendengelder, helfen einer NPO, ihre Ziele besser zu verfolgen und das Aufgabenspektrum besser an die Zielgruppe zu kommunizieren.",
+      "NPOs dürfen keinerlei Einnahmen erzielen, weil sie sonst zu gewinnorientierten Unternehmen würden.",
+      "Auch NPOs profitieren von der Reinvestition von Gewinnen, weil sie Angebot verbessern und ausbauen können.",
+      "Kostendeckung als primäre Orientierung bedeutet, dass eine NPO rechtlich kein Unternehmen sein kann."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Non-Profit heißt hier zuerst Kostendeckung, nicht maximale Ausschüttung. Der Abschnitt beschreibt NPOs als primär daran orientiert, kostendeckend zu arbeiten. Das Ziel gegenüber der Zielgruppe bleibt im Vordergrund, die Zahlen sollen die Tätigkeit tragen. Gewinnmaximierung ist nicht die Leitlinie, Zahlungsfähigkeit aber schon.\n\nDie Aussage ist wahr.",
+      "Spenden sind im Text ein Beispiel für Einnahmen, nicht ein Makel. Mit ausreichend Mitteln verfolgt die NPO ihre Ziele besser und kommuniziert das Aufgabenspektrum besser an die Zielgruppe. Ohne Zuflüsse bleibt die Kostendeckung Theorie. Der Satz knüpft Handlungsfähigkeit an Einnahmen, ohne die Organisation deshalb zur Gewinnmaximiererin zu erklären.\n\nDie Aussage ist wahr.",
+      "Einnahmen und Unternehmensbegriff fallen nicht zusammen. NPOs können Spenden und andere Zuflüsse haben; der gesetzliche Unternehmensbegriff verlangt keine Gewinnausrichtung. Ein Verbot jeglicher Einnahmen würde die im Text genannten Spendengelder unmöglich machen. Die Umwandlung in ein gewinnorientiertes Unternehmen folgt daraus nicht. Der gesetzliche Unternehmensbegriff bleibt offen für nicht auf Gewinn gerichtete Tätigkeit. Spenden sind ein im Text genanntes Beispiel für Einnahmen, mit denen Ziele besser verfolgt werden. Wer Einnahmen mit Gewinnmaximierung gleichsetzt, vermengt Zufluss und Zweck der Organisation.\n\nDie Aussage ist falsch.",
+      "Überschüsse können auch ohne Gewinnmaximierung im Betrieb bleiben. NPOs profitieren von der Reinvestition von Gewinnen, weil sie damit Angebot verbessern und ausbauen. Der Begriff Gewinn ist hier der buchhalterische Überschuss, der wieder in die Aufgabe fließt. Genau diese Nutzung nennt der Abschnitt, nicht die Ausschüttung an Eigentümer als Zweck der NPO. Kostendeckung als Leitlinie und buchhalterischer Überschuss schließen einander nicht aus. Ein Überschuss, der in Beratung, Pflege oder Bildung zurückfließt, stärkt die NPO, ohne sie zur gewinnmaximierenden Kapitalgesellschaft umzudefinieren. Der Abschnitt stellt diese Nutzung ausdrücklich neben die Spendenlogik.\n\nDie Aussage ist wahr.",
+      "Kostendeckung schließt die UGB-Definition nicht aus. Unternehmen müssen nicht auf Gewinn gerichtet sein; Dauer, selbstständige wirtschaftliche Tätigkeit und Leistung für Dritte genügen. Eine NPO kann diese Merkmale erfüllen und trotzdem primär kostendeckend arbeiten. Der Satz verwechselt die betriebswirtschaftliche Leitlinie mit einem gesetzlichen Ausschluss. Manner und woom müssen Gewinn anstreben, um als Unternehmen zu gelten, sagt der Text gerade nicht; dasselbe gilt für NPOs. Dauer, selbstständige wirtschaftliche Tätigkeit und Leistung für Dritte bleiben die Merkmale. Kostendeckung ist die betriebswirtschaftliche Orientierung, kein Ausschlusskriterium des UGB.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.07",
+    "title": "Wertschöpfung im Produktionsprozess",
+    "context": "Bewerten Sie die folgenden Aussagen zur Wertschöpfung von Unternehmen:",
+    "statements": [
+      "Durch den Produktions- und/oder Dienstleistungsprozess entstehen Güter, die einen höheren Wert haben als jene, die ursprünglich in den Prozess eingeflossen sind.",
+      "Diese Wertdifferenz stellt aus betriebswirtschaftlicher Sicht die Wertschöpfung dar, die Unternehmen schaffen.",
+      "Wertschöpfung ist identisch mit dem Gewinn, weil beide die Differenz aus Umsatz und allen Kosten meinen.",
+      "Die Wertschöpfung ist die Differenz aus dem Wert des Endprodukts und dem Wert der eingesetzten Vorleistungen.",
+      "Vorleistungen sind Bestandteile und Materialien, die das Unternehmen nicht selbst produziert, sondern zukauft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Am Ende soll mehr Wert stehen als am Anfang der eingesetzten Güter. Der Produktions- oder Dienstleistungsprozess erstellt Güter, die wertvoller sind als das, was hineingeflossen ist. Ohne diesen Sprung gäbe es keine Wertschöpfung im Sinne des Abschnitts. Die Aussage beschreibt genau diesen Prozess, nicht den Gewinn nach Abzug von Löhnen und Abschreibungen. Kinderfahrräder als Endprodukt sind wertvoller als die hineingeflossenen Bestandteile; dasselbe Prinzip gilt für Dienstleistungen, deren Ergebnis für die Kundenseite mehr wert ist als die zugekauften Vorleistungen. Der Prozess, nicht der bloße Weiterverkauf zum Einkaufspreis, trägt den Namen Wertschöpfung.\n\nDie Aussage ist wahr.",
+      "Betriebswirtschaftlich trägt dieser Prozess den Namen Wertschöpfung. Unternehmen schaffen sie, indem sie aus Vorleistungen ein höherwertiges Endprodukt oder eine höherwertige Leistung machen. Der Begriff sitzt an der Entstehung von Wert, nicht an der Verteilung an Eigentümer. Der Satz hält die Zuordnung des Textes fest.\n\nDie Aussage ist wahr.",
+      "Wertschöpfung und Gewinn laufen nicht auf dieselbe Differenz. Wertschöpfung vergleicht Endproduktwert und Vorleistungen; Gewinn vergleicht Erträge und Aufwände und muss weitere Kosten decken. Das Fahrradbeispiel sagt ausdrücklich, die Wertschöpfung entspreche nicht dem Gewinn pro Stück. Wer beide gleichsetzt, streicht Löhne, Abschreibungen und übrige Aufwände aus dem Bild. Im Fahrradbeispiel bleiben nach 400 Euro Wertschöpfung weitere Kosten offen, bevor Gewinn entsteht. Löhne, Abschreibungen und übrige Aufwände sitzen in der Wertschöpfung oder werden daraus gedeckt, gehören aber nicht in die Vorleistungsdifferenz. Die Gleichsetzung beider Begriffe ist die zentrale Falle dieses Abschnitts.\n\nDie Aussage ist falsch.",
+      "Die Formel steht im Text ohne Umweg: Wert des Endprodukts minus Wert der eingesetzten Vorleistungen. Das ist die Wertschöpfung. Weder der bloße Verkaufspreis noch die Lohnsumme allein ersetzen diese Differenz. Der Satz gibt die Definition wieder.\n\nDie Aussage ist wahr.",
+      "Zukauf grenzt Vorleistungen vom selbst Erstellten. Bestandteile und Materialien, die das Unternehmen nicht selbst produziert, sondern von anderen bezieht, sind Vorleistungen. Was intern weiterverarbeitet wird, geht in die eigene Wertschöpfung ein. Die Unterscheidung ist nötig, damit die Differenz nicht den gesamten Marktpreis der Zulieferer mitzählt. Selbst erzeugte Zwischenschritte sind keine Vorleistungen in diesem Sinn. Zieht man sie fälschlich ab, unterschätzt man die eigene Wertschöpfung; lässt man fremde Teile im Endwert stehen, überschätzt man sie. Die Zukaufsgrenze hält die betriebliche Schöpfung sauber.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.08",
+    "title": "Kinderfahrrad und 400 Euro Wertschöpfung",
+    "context": "Ein Unternehmen fertigt ein Kinderfahrrad im Wert von 500 Euro. Die zugekauften Vorleistungen betragen rund 100 Euro. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Wertschöpfung durch die Produktion dieses Rades beträgt 400 Euro.",
+      "Die 400 Euro sind zugleich der Gewinn des Unternehmens pro Fahrrad.",
+      "Vom Endwert 500 Euro sind die Vorleistungen von 100 Euro abzuziehen, um die Wertschöpfung zu erhalten.",
+      "Weitere Kosten über die Vorleistungen hinaus müssen noch gedeckt werden, bevor von Gewinn die Rede sein kann.",
+      "Weil das fertige Rad 500 Euro wert ist, beträgt die Wertschöpfung 500 Euro, unabhängig von zugekauften Teilen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fünfhundert minus rund einhundert ergibt vierhundert. Der Text rechnet die Wertschöpfung am Kinderfahrrad genau so: Endwert 500 Euro, Vorleistungen rund 100 Euro, Wertschöpfung 400 Euro. Die Zahl misst den im Betrieb geschaffenen Wertzuwachs, nicht den Kassenüberschuss. Der Satz folgt der Beispielrechnung.\n\nDie Aussage ist wahr.",
+      "Vierhundert Euro Wertschöpfung sind nicht der Stückgewinn. Der Abschnitt warnt ausdrücklich: das entspricht nicht dem Gewinn pro Fahrrad, weil weitere Kosten zu decken sind. Löhne, Betriebsmittelverbrauch und andere Aufwände sitzen noch zwischen Wertschöpfung und Gewinn. Wer die 400 Euro als Gewinn verbucht, überspringt genau diesen Hinweis. Personal, Abnutzung der Betriebsmittel und weitere Aufwände stehen noch zwischen den 400 Euro und dem Gewinn. Ein Rad mit hoher Wertschöpfung kann Verlust bringen, wenn diese Kosten die 400 Euro übersteigen. Der Abschnitt trennt die beiden Differenzen bewusst an genau diesem Zahlenbeispiel.\n\nDie Aussage ist falsch.",
+      "Dieselbe Rechnung in der Definitionsrichtung: Endwert abzüglich Vorleistungen. 500 minus 100 liefert die 400 Euro Wertschöpfung. Ohne den Abzug der zugekauften Bestandteile würde der Wert der Zulieferer fälschlich der eigenen Schöpfung zugeschlagen. Der Satz beschreibt den Rechenschritt, den das Beispiel vorführt.\n\nDie Aussage ist wahr.",
+      "Vorleistungen sind nicht die einzigen Kosten. Nach Abzug der 100 Euro bleiben Aufwände für Personal, Maschinen und weiteres, die aus der Wertschöpfung noch zu tragen sind. Erst wenn Erträge über allen Aufwänden liegen, entsteht Gewinn. Der Text nennt diese weiteren Kosten als Grund, warum 400 Euro nicht Gewinn sind. Wertschöpfung 400 Euro ist der Zuwachs gegenüber dem Zukauf, Gewinn die Restgröße nach allen Aufwänden. Die 100 Euro Vorleistungen sind nur der erste Abzug. Wer nach diesem Abzug schon Gewinn verbucht, überspringt Löhne und übrige Kosten, vor denen der Text ausdrücklich warnt.\n\nDie Aussage ist wahr.",
+      "Der Endwert allein ist keine Wertschöpfung. Ohne Abzug der Vorleistungen würde man den zugekauften Rahmen, die Speichen und übrige Teile als eigene Schöpfung zählen. Die Definition verlangt die Differenz. 500 Euro als Wertschöpfung zu lesen, ignoriert die 100 Euro Zukauf und die Beispielrechnung. Vorleistungen von rund 100 Euro gehören nicht zur Schöpfung dieses Betriebs, sondern zur Schöpfung der Zulieferer. Die BIP-Logik später im Abschnitt zieht dieselben Vorleistungen ab, damit nichts doppelt zählt. 500 Euro als Wertschöpfung zu lesen, würde genau diese Doppelung festschreiben.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.09",
+    "title": "Wertschöpfung und Bruttoinlandsprodukt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenhang von Wertschöpfung und BIP:",
+    "statements": [
+      "Die Wertschöpfung ist für die Berechnung des Bruttoinlandsprodukts relevant, weil sie die Entstehung des BIP darstellt.",
+      "Als Basis der BIP-Berechnung dient der Gesamtwert aller innerhalb der Landesgrenzen hergestellten Güter aller Unternehmen abzüglich der Vorleistungen.",
+      "Das BIP misst in dieser Darstellung den Umsatz der Unternehmen ohne Abzug von Vorleistungen.",
+      "Würde man Vorleistungen nicht abziehen, würden Zulieferwerte mehrfach in die gesamtwirtschaftliche Größe eingehen.",
+      "Nur der Gewinn der Unternehmen, nicht ihre Wertschöpfung, bildet nach dem Abschnitt die Entstehung des BIP."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Entstehung des BIP und Wertschöpfung fallen in dieser Darstellung zusammen. Der Abschnitt macht die betriebliche Wertdifferenz zur Grundlage der gesamtwirtschaftlichen Rechnung. Ohne die geschaffene Wertschöpfung der Unternehmen gäbe es in diesem Bild keine BIP-Entstehung. Der Satz hält die Relevanz fest, die der Text ausdrücklich ausspricht. Aggregiert man die betrieblichen Differenzen aus Endwert minus Vorleistungen über alle Unternehmen im Inland, entsteht das Bild der gesamtwirtschaftlichen Leistung. Gewinnsummen allein würden Löhne und andere Bestandteile der Wertschöpfung weglassen. Der Satz trifft die vom Buch genannte Entstehungsseite, nicht die Verteilungsseite des BIP.\n\nDie Aussage ist wahr.",
+      "Die Basisformel ist aggregierte Wertschöpfung: Gesamtwert der im Inland hergestellten Güter aller Unternehmen minus Vorleistungen. Grenzen des Landes begrenzen den Raum, Vorleistungen verhindern das Mehrfachzählen von Zulieferungen. Der Satz gibt die Buchformulierung wieder.\n\nDie Aussage ist wahr.",
+      "Umsatz ohne Vorleistungsabzug wäre eine Brutto-Brutto-Größe, nicht die beschriebene BIP-Basis. Der Text zieht den Wert der Vorleistungen ab. Wer das BIP mit der ungekürzten Umsatzsumme gleichsetzt, zählt Stahl im Blech und im Auto doppelt. Genau das soll die Subtraktion verhindern.\n\nDie Aussage ist falsch.",
+      "Mehrfachzählung ist der Grund der Subtraktion, auch wenn das Wort so nicht in jeder Zeile steht. Zieht man Vorleistungen nicht ab, erscheint der Wert zugekaufter Teile beim Zulieferer und noch einmal im Endprodukt. Die Definition der Wertschöpfung und die BIP-Basis sind gebaut, diese Doppelung zu vermeiden. Der Satz macht den mechanischen Sinn der Abzugsregel sichtbar. Stahl beim Hüttenwerk und noch einmal in der Maschinenfabrik, Kakao beim Bauern und noch einmal in der Waffel: ohne Abzug würde dieselbe Vorleistung mehrfach in der Summe erscheinen. Deshalb subtrahiert die Definition den Wert der Vorleistungen. Die betriebliche Wertschöpfung und die BIP-Basis folgen derselben Differenz.\n\nDie Aussage ist wahr.",
+      "Entstehung des BIP ist an die Wertschöpfung gebunden, nicht an den Gewinn. Gewinn bleibt die Differenz aus Erträgen und Aufwänden nach weiteren Kosten. BIP-Basis ist Güterwert minus Vorleistungen. Die Verengung auf Gewinn würde Löhne und andere in der Wertschöpfung enthaltene Bestandteile aus der Entstehungsrechnung streichen. Löhne etwa liegen in der Wertschöpfung, nicht notwendig im Gewinn. Eine Volkswirtschaft ohne Unternehmensgewinne hätte trotzdem Entstehung von BIP, sofern Wert geschaffen wird. Der Abschnitt koppelt die Berechnung an Güterwert minus Vorleistungen, nicht an den buchhalterischen Überschuss.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.10",
+    "title": "Primärer Wirtschaftssektor",
+    "context": "Bewerten Sie die folgenden Aussagen zum primären Sektor:",
+    "statements": [
+      "Der primäre Sektor umfasst jegliche Art von Rohstoffgewinnung, insbesondere Land- und Forstwirtschaft, Fischerei und Bergbau.",
+      "Erze zu gewinnen, aus denen später Metalle entstehen können, zählt zum primären Sektor.",
+      "Anbau und Ernte von Früchten gehören zum primären Sektor.",
+      "Landwirtschaftliche Betriebe, die Nüsse an Manner liefern, sind im primären Sektor tätig.",
+      "Eine Steuerberaterin, die Bilanzen erstellt, arbeitet im primären Sektor, weil Zahlen Rohstoffe der Beratung sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Rohstoffgewinnung ist die Klammer des primären Sektors. Land- und Forstwirtschaft, Fischerei und Bergbau stehen als besondere Felder dieser Gewinnung. Es geht um das Holen und Ernten von Naturstoffen, noch nicht um die industrielle Umwandlung. Der Satz gibt die Sektordefinition des Abschnitts wieder. Industrie, Handwerk und Energie gehören nicht hierher, sondern in den sekundären Sektor, sobald aus den Rohstoffen Produkte entstehen. Dienstleistungen wie Handel oder Beratung sind tertiär. Die vier genannten Felder bleiben auf der Stufe der Gewinnung. Der Satz hält diese erste Stufe fest.\n\nDie Aussage ist wahr.",
+      "Bergbau bleibt primär, auch wenn das Erz später Metall wird. Die Gewinnung der Erze zählt der Text ausdrücklich zum primären Sektor. Die Weiterverarbeitung zu Metallen wandert erst danach in den sekundären Sektor. Wer die Mine schon zur Hütte erklärt, vermischt die beiden Stufen. Die Hütte, die aus denselben Erzen Metalle macht, wechselt den Sektor. Primär ist das Herausholen, sekundär das Umwandeln. Bergbau deshalb schon zur Industrie zu zählen, weil später Metall folgt, vermischt die Stufen, die der Text an Erz und Metall gerade trennt.\n\nDie Aussage ist wahr.",
+      "Früchte am Strauch und in der Kiste bleiben Landwirtschaft. Anbau und Ernte ordnet der Abschnitt dem primären Sektor zu. Die spätere Füllung aus Kakao und Nüssen in der Fabrik ist eine andere Stufe. Der Satz trifft die agrarische Seite der Definition.\n\nDie Aussage ist wahr.",
+      "Das Manner-Beispiel trennt Lieferanten und Fabrik. Betriebe, die Nüsse liefern, sind im primären Sektor tätig; Manner selbst verarbeitet und steht sekundär. Die Nussproduktion ist Rohstoffgewinnung bzw. Landwirtschaft, nicht Waffelindustrie. Der Satz folgt der Zuordnung im Text.\n\nDie Aussage ist wahr.",
+      "Steuerberatung ist Dienstleistung, also tertiär. Der Abschnitt nennt die Steuerberaterin, die Bilanzen erstellt, ausdrücklich als Beispiel des tertiären Sektors. Zahlen als „Rohstoff“ umzudeuten, verschiebt die Drei-Sektoren-Logik ins Metaphorische und widerspricht dem Beispiel. Rohstoffgewinnung meint Land, Wald, Fisch und Berg, nicht Buchhaltung. Handel mit Fahrrädern ist ebenfalls tertiär, Bergbau primär: die Drei-Sektoren-Teilung folgt der Art der Tätigkeit, nicht einer Metapher über Inputs. Wer jede geistige Vorleistung zur Rohstoffgewinnung erklärt, macht den tertiären Sektor leer. Das Buchbeispiel bleibt eindeutig bei der Beratung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.11",
+    "title": "Sekundärer Sektor und Verarbeitung",
+    "context": "Bewerten Sie die folgenden Aussagen zum sekundären Wirtschaftssektor:",
+    "statements": [
+      "Der sekundäre Sektor produziert aus Rohstoffen Produkte und umfasst die gesamte Industrie, das Handwerk sowie die Energiewirtschaft.",
+      "Unternehmen, die aus Erzen Metalle erzeugen oder aus Kakao und Haselnüssen eine Waffelfüllung herstellen, zählen zum sekundären Sektor.",
+      "Maschinenbau, Elektronikunternehmen und Produzenten chemischer Erzeugnisse gehören zum sekundären Sektor.",
+      "Die woom GmbH und die Manner AG sind im sekundären Sektor tätig, weil sie aus Rohstoffen und Bestandteilen Produkte erzeugen.",
+      "Ein Fahrradhändler mit woom-Rädern im Sortiment zählt zum sekundären Sektor, weil die Räder industrielle Güter sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Aus Rohstoff wird Produkt: das ist die sekundäre Stufe. Industrie, Handwerk und Energiewirtschaft fasst der Abschnitt darunter. Nicht die Gewinnung in der Mine und nicht der Verkauf im Laden, sondern die Umwandlung und Herstellung. Der Satz gibt diese Abgrenzung wieder. Erzgewinnung bleibt primär, der Verkauf fertiger Räder im Handel tertiär. Dazwischen liegt die Umwandlung, die woom, Manner, Maschinenbau und Chemie illustriert. Energiewirtschaft steht in derselben sekundären Klammer, obwohl Strom keine Waffel ist. Der Satz sammelt Industrie, Handwerk und Energie korrekt.\n\nDie Aussage ist wahr.",
+      "Metall aus Erz und Füllung aus Kakao sind Verarbeitungsbeispiele. Beide nennt der Text als sekundär, parallel zu Maschinenbau und Chemie. Die Rohstoffe kommen aus dem primären Sektor, das Erzeugnis entsteht hier. Der Satz folgt den genannten Illustrationen.\n\nDie Aussage ist wahr.",
+      "Drei weitere Industriezweige stehen in derselben Liste: Maschinenbau, Elektronik, chemische Erzeugnisse. Sie produzieren Güter aus Vorstoffen, nicht bloße Vermittlung. Die Zuordnung zum sekundären Sektor ist ausdrücklich. Der Satz erweitert die Erz- und Nussbeispiele um genau diese Branchen des Textes.\n\nDie Aussage ist wahr.",
+      "woom baut Räder, Manner backt Süßwaren: beides Herstellung aus Rohstoffen und Bestandteilen. Deshalb ordnet der Abschnitt beide dem sekundären Sektor zu. Dauer, Risiko und Dritte machen sie zu Unternehmen; der Gegenstand der Tätigkeit macht sie sekundär. Der Satz trifft die Beispielzuordnung. Landwirtschaftliche Nusslieferanten bleiben primär; der Fahrradhändler mit woom im Sortiment wird später tertiär zugeordnet. Die beiden Marken stehen für Herstellung, nicht für Gewinnung und nicht für Handel. Der Unternehmensgegenstand, nicht der Bekanntheitsgrad, entscheidet über den Sektor.\n\nDie Aussage ist wahr.",
+      "Handel ist Dienstleistung. Ein Fahrradhändler mit woom-Rädern im Sortiment zählt der Text zum tertiären Sektor, nicht zur Industrie, die die Räder erzeugt. Das industrielle Gut im Regal ändert den Sektor des Händlers nicht. Wer den Handel der Fabrik zuschlägt, verwechselt Produktart und Tätigkeit des Unternehmens. woom als Erzeugerin ist sekundär, der Händler tertiär: derselbe Gegenstand, zwei Tätigkeiten, zwei Sektoren. Tourismus und Steuerberatung zeigen dieselbe Dienstleistungslogik. Die industrielle Herkunft der Ware im Regal ändert den Sektor des Handelsbetriebs nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.12",
+    "title": "Tertiärer Sektor und Dienstleistungen",
+    "context": "Bewerten Sie die folgenden Aussagen zum tertiären Sektor:",
+    "statements": [
+      "Der tertiäre Sektor umfasst jegliche Dienstleistungen, darunter Handel, Tourismus, Rechts- und Steuerberatung, Banken und Versicherungen.",
+      "Pflege und Betreuung, Bildung sowie Coaching und Training zählen zu den tertiären Leistungen.",
+      "Eine Steuerberaterin, die Bilanzen für Unternehmen erstellt, ist im tertiären Sektor tätig.",
+      "Tourismus gehört zum primären Sektor, weil Landschaften natürliche Ressourcen sind.",
+      "Mit steigendem Grad wirtschaftlicher Entwicklung eines Landes steigt in der Regel der Anteil des tertiären Sektors an der Wirtschaftsleistung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Dienstleistung ist die Klammer, die Beispiele füllen sie. Handel, Tourismus, Rechtsberatung, Steuerberatung, Banken und Versicherungen stehen im Text unter dem tertiären Sektor. Es geht um das Anbieten von Leistungen, nicht um Rohstoffabbau oder industrielle Fertigung. Der Satz gibt die Öffnung und die ersten Branchen wieder. Industrie und Handwerk bleiben sekundär, auch wenn sie Kundenservice anbieten; der Kern der Tätigkeit entscheidet. Banken und Versicherungen sind hier Dienste, nicht Rohstoffgewinnung, auch wenn Kredite „grundlegend“ wirken. Der Satz hält die Dienstleistungsklammer und die ersten Beispiele.\n\nDie Aussage ist wahr.",
+      "Die Liste geht über Banken hinaus. Pflege, Betreuung, Bildung, Coaching und Training nennt der Abschnitt ebenfalls als tertiäre Leistungen. Soziale und bildungsbezogene Angebote sitzen damit in derselben Sektorlogik wie Handel und Tourismus. Der Satz ergänzt die erste Aufzählung um genau diese Felder.\n\nDie Aussage ist wahr.",
+      "Bilanzen schreiben ist Beratung, keine Fabrik. Die Steuerberaterin gilt im Beispiel als tertiär. Sie erstellt Leistungen für andere Unternehmen, ohne Erze zu gewinnen oder Waffeln zu backen. Der Satz folgt dem ausdrücklich genannten Fall.\n\nDie Aussage ist wahr.",
+      "Landschaft als Kulisse macht aus Hotels noch keinen Bergbau. Tourismus zählt der Text zu den Dienstleistungen des tertiären Sektors. Natürliche Umgebung erklärt nicht die Sektorzugehörigkeit der Leistung. Die Verschiebung ins Primäre verwechselt den Ort des Geschäfts mit der Art der Tätigkeit. Schipisten und Hotels verkaufen Leistungen, sie gewinnen keinen Erzabbau und backen keine Waffeln als Hauptgegenstand. Der tertiäre Sektor umfasst Tourismus ausdrücklich neben Handel und Beratung. Die Naturkulisse erklärt den Standort, nicht den Wirtschaftssektor.\n\nDie Aussage ist falsch.",
+      "Entwicklung und Dienstleistungsanteil laufen im Text parallel. In der Regel steigt mit dem Grad der wirtschaftlichen Entwicklung der Anteil des tertiären Sektors, weil mehr Dienstleistungen nachgefragt werden. Das ist eine Richtungsaussage, kein Naturgesetz für jedes einzelne Jahr. Der Satz gibt diese Regel wieder. Österreichs rund 70 Prozent tertiärer Anteil an der Wirtschaftsleistung passt zu dieser Regel, ohne dass jedes Land denselben Wert haben müsste. Primär kann trotzdem für Nahrung und Natur wesentlich bleiben. Die Aussage beschreibt die Entwicklungsrichtung, die der Abschnitt nennt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.13",
+    "title": "Sektoranteile in Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Anteilen der Wirtschaftssektoren in Österreich:",
+    "statements": [
+      "Der Anteil des tertiären Sektors an der Wirtschaftsleistung in Österreich beträgt rund 70 Prozent.",
+      "Der primäre Sektor trägt nur etwas über 1 Prozent der gesamten Wirtschaftsleistung bei.",
+      "Weil der primäre Anteil so klein ist, spielt er für Nahrungsmittelversorgung und Pflege der Natur keine Rolle.",
+      "woom und Manner sind trotz österreichischer Produktion dem tertiären Sektor zuzurechnen, weil Dienstleistungen rund 70 Prozent ausmachen.",
+      "Der Unternehmensgegenstand bestimmt, in welchem Sektor oder in welchen Sektoren ein Unternehmen tätig ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Rund siebzig Prozent, nicht die ganze Wirtschaft, aber der Löwenanteil. Der Abschnitt nennt diesen ungefähren Anteil des tertiären Sektors an der österreichischen Wirtschaftsleistung. Handel, Tourismus, Beratung und übrige Dienste tragen danach den Großteil. Die Zahl ist eine Größenordnung des Buches, kein Aufruf zum Auswendiglernen auf die Nachkommastelle. Der Rest verteilt sich auf sekundäre Industrie und den sehr kleinen primären Anteil. Die Zahl begründet, warum Dienstleistungsbeispiele im Alltag so häufig sind, ohne Industrieunternehmen umzuetikettieren. Rund heißt Größenordnung, nicht eine Prüfung auf 70,00 Prozent.\n\nDie Aussage ist wahr.",
+      "Etwas über ein Prozent beschreibt den primären Beitrag zur Wirtschaftsleistung, nicht die gesellschaftliche Bedeutung. Landwirtschaft, Forst, Fischerei und Bergbau bleiben klein in der Wertschöpfungsstatistik. Der Satz trifft die im Text genannte Relation zum Rest der Wirtschaft.\n\nDie Aussage ist wahr.",
+      "Kleine Quote und große Versorgungsrolle stehen nebeneinander. Der primäre Sektor spielt für Nahrungsmittel und für Erhaltung und Pflege der Natur eine wesentliche Rolle, obwohl sein Anteil an der Wirtschaftsleistung gering ist. Die Behauptung, er spiele keine Rolle, streicht genau diesen Vorbehalt. Statistikanteil und Funktion fallen hier auseinander. Der Text stellt die wesentliche Rolle für Nahrung und Natur gerade gegen die winzige Quote. Statistik misst Wirtschaftsleistung, nicht gesellschaftlichen Rang. Die Folgerung „keine Rolle“ ist der Fehlschluss aus dem Prozentwert, den der Abschnitt vermeiden will.\n\nDie Aussage ist falsch.",
+      "Der nationale Sektoranteil ändert nicht den Gegenstand einzelner Firmen. woom und Manner produzieren Güter und bleiben sekundär, auch wenn Österreich insgesamt dienstleistungsstark ist. Der Durchschnitt der Volkswirtschaft ist kein Etikett für jeden Betrieb. Wer Industrieunternehmen wegen der 70 Prozent tertiär nennt, verwechselt Makrostruktur und Unternehmensgegenstand. Sektorzugehörigkeit folgt dem Unternehmensgegenstand: Herstellung bleibt sekundär. Der makroökonomische Dienstleistungsanteil beschreibt die Volkswirtschaft, nicht Manner und woom. Sonst wäre in einem dienstleistungsreichen Land jede Fabrik tertiär, was die Drei-Sektoren-Logik zerstören würde.\n\nDie Aussage ist falsch.",
+      "Der Gegenstand der Tätigkeit weist den Sektor zu, nicht der Firmensitz und nicht die Rechtsform. Ein Unternehmen kann in einem Sektor oder in mehreren tätig sein. Herstellung, Gewinnung oder Dienstleistung entscheiden über die Einordnung. Der Satz gibt die Leitregel am Beginn des Sektorabschnitts wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.14",
+    "title": "Branchen und Wirtschaftszweige",
+    "context": "Bewerten Sie die folgenden Aussagen zur Branchenzugehörigkeit von Unternehmen:",
+    "statements": [
+      "Der Tätigkeitsbereich bestimmt, welcher Branche oder welchen Branchen ein Unternehmen zugeordnet wird.",
+      "Innerhalb einer Branche stellen Unternehmen sehr ähnliche Produkte her bzw. erstellen sehr ähnliche Leistungen.",
+      "Bau, Handwerk, Handel, Pharma und Gesundheit, Telekommunikation, Tourismus, Gastronomie, Verkehr und Logistik sowie Medien sind Beispiele für Branchen im Abschnitt.",
+      "Jedes Unternehmen darf nur genau einer Branche angehören; Mehrfachzugehörigkeit ist ausgeschlossen.",
+      "Interessensvertretungen sind oft nach Branchenlogik strukturiert, weil Betriebe einer Branche ähnliche Herausforderungen und Interessen haben."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Branche folgt der Tätigkeit, nicht dem Zufall des Firmennamens. Der Tätigkeitsbereich ordnet das Unternehmen einer oder mehreren Branchen zu. Wer denselben Leistungszuschnitt hat, landet im selben Wirtschaftszweig. Der Satz wiederholt die Zuordnungsregel des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Ähnliche Produkte oder ähnliche Leistungen machen den Wirtschaftszweig aus. Innerhalb der Branche ähneln sich die Angebote, ohne dass jedes Unternehmen identisch sein müsste. Tischlereien gehören ins Handwerk, weil sie holzverarbeitend leisten, nicht weil sie denselben Inhaber haben. Der Satz trifft die Definitionsklammer.\n\nDie Aussage ist wahr.",
+      "Die Beispielreihe ist lang und konkret: Baubranche, Handwerk mit Tischlereien und Installateuren, Handel als Groß- und Einzelhandel, Pharma und Gesundheit, Telekommunikation, Tourismus, Gastronomie, Verkehr und Logistik, Medien. Der Satz bündelt genau diese im Text genannten Felder, ohne eine neue Branche zu erfinden. Tischlereien, Installateure, Elektriker und Schlosser konkretisieren das Handwerk; Groß- und Einzelhandel den Handel; Errichtung von Gebäuden den Bau. Die Reihe zeigt Wirtschaftszweige unterhalb der drei Sektoren. Ähnliche Leistungen, nicht die Rechtsform, binden die Betriebe aneinander.\n\nDie Aussage ist wahr.",
+      "Eine oder mehrere Branchen, so steht es in der Überschriftenlogik und in der Zuordnungsformel. Ein Unternehmen kann mehreren Wirtschaftszweigen zugehören, wenn der Tätigkeitsbereich das hergibt. Das Verbot der Mehrfachzugehörigkeit widerspricht dem „welchen Branchen“ im Plural. Diversifizierte Betriebe wären sonst künstlich auf ein einziges Etikett gezwungen. Ein Betrieb kann Handel und Handwerk kombinieren oder mehrere Leistungsfelder führen. Die Formulierung „einer oder mehreren Branchen“ lässt das zu. Das Ausschließlichkeitsgebot ist eine Erfindung, die diversifizierte Unternehmen aus dem Schema fallen ließe, obwohl der Text sie mitdenkt.\n\nDie Aussage ist falsch.",
+      "Ähnliche Herausforderungen erzeugen gemeinsame Interessen. Deshalb sind Interessensvertretungen oft entlang der Branchenlogik gebaut. Kammern und Verbände bündeln Betriebe desselben Wirtschaftszweigs, nicht beliebig gemischte Firmenlisten. Der Satz verbindet die beiden vom Buch genannten Beobachtungen. Wer in derselben Branche steht, teilt oft Regulierung, Vorleistungspreise und Kundenerwartungen. Deshalb folgen Verbände der Branchenlogik und nicht einer zufälligen Firmenliste. Der Satz verbindet ähnliche Herausforderungen mit der Organisationsform der Interessenvertretung, wie der Abschnitt es beschreibt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.15",
+    "title": "KMU und Größenklassen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Klassifizierung von Unternehmen nach Größe:",
+    "statements": [
+      "Die Größenklassifizierung ist bedeutsam, weil Steuerbestimmungen, Rechnungslegungspflichten und Förderungsmöglichkeiten an eine bestimmte Unternehmensgröße gekoppelt sind.",
+      "KMU bedeutet Kleinstunternehmen, kleine und mittlere Unternehmen und entspricht dem englischen SME bzw. MSME; die Europäische Union hat den Begriff in einer Empfehlung definiert.",
+      "Kleinstunternehmen haben bis zu 9 Beschäftigte sowie Umsatz oder Bilanzsumme bis zu 2 Millionen Euro.",
+      "Ein Betrieb mit 250 Beschäftigten fällt nach der Tabelle noch unter die mittleren Unternehmen.",
+      "Mittlere Unternehmen reichen bis 249 Beschäftigte, bis zu 50 Millionen Euro Umsatz oder bis zu 43 Millionen Euro Bilanzsumme; große beginnen ab 250 Beschäftigten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Größe ist hier Rechts- und Förderkriterium, nicht nur Statistik. Steuer, Rechnungslegung und Förderung hängen an Schwellen, deshalb muss klassifiziert werden. Ein Kleinstbetrieb und ein Konzern stehen nicht unter denselben Pflichten. Der Satz nennt genau die drei Kopplungen des Abschnitts. Ohne Größenklassen ließen sich Schwellen für Bilanzierung oder Förderprogramme nicht anwenden. KMU als Sammelbegriff bekommt genau hier seinen praktischen Sinn. Die Klassifizierung ist deshalb mehr als eine statistische Neugier, sie steuert Pflichten und Chancen.\n\nDie Aussage ist wahr.",
+      "Die Abkürzung bündelt drei Klassen unterhalb der Großen. Kleinst, klein und mittel ergeben KMU; englisch SME oder MSME, definiert in einer EU-Empfehlung. Rund 99 Prozent der Unternehmen in der EU sind danach KMU. Der Satz trifft Begriff und Herkunft, ohne schon die Schwellen auszurechnen.\n\nDie Aussage ist wahr.",
+      "Die Tabelle setzt Kleinstunternehmen bei bis zu neun Mitarbeitenden an und bei Umsatz oder Bilanzsumme bis zu zwei Millionen Euro. Unter zehn Köpfen allein reicht nicht, wenn die finanziellen Schwellen gerissen werden; der Text stellt Mitarbeiterzahl und die finanziellen Größen nebeneinander. Der Satz gibt die Kleinstzeile wieder. Kleine Unternehmen liegen darüber: bis 49 Beschäftigte und bis zu 10 Millionen Euro Umsatz oder Bilanzsumme. Wer nur die Kopfzahl „bis 9“ liest und 3 Millionen Euro Umsatz ignoriert, verfehlt die Tabelle. Mitarbeiterzahl und finanzielle Größe stehen nebeneinander, verbunden über Umsatz oder Bilanzsumme.\n\nDie Aussage ist wahr.",
+      "Ab 250 Beschäftigten beginnt in der Tabelle die Klasse der großen Unternehmen, nicht mehr die der mittleren. Mittlere enden bei bis zu 249. Wer 250 noch mittel nennt, überschreitet die Mitarbeitergrenze der Tabelle. Zusätzlich gelten für Große Umsatz über 50 Millionen oder Bilanzsumme über 43 Millionen Euro. Kleine enden bei 49, mittlere bei 249; 250 ist die Schwelle zu den Großen. Umsatz über 50 Millionen oder Bilanzsumme über 43 Millionen Euro gehört in dieselbe Großzeile. Die Behauptung, 250 Köpfe seien noch mittel, widerspricht der Tabellengrenze „Ab 250“.\n\nDie Aussage ist falsch.",
+      "Die Mittelzeile und die Großzeile gehören zusammen gelesen. Bis 249 Köpfe, Umsatz bis 50 Millionen oder Bilanzsumme bis 43 Millionen: mittel. Ab 250 und über den finanziellen Schwellen: groß. Der Satz gibt beide Tabellenzeilen in der vom Buch genannten Form wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.16",
+    "title": "KMU in Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zur Bedeutung von KMU in Österreich:",
+    "statements": [
+      "Auch in Österreich dominieren KMU mit rund 99 Prozent Anteil an der Anzahl der Unternehmen die Landschaft.",
+      "Der Großteil der KMU sind Kleinstunternehmen mit weniger als zehn Mitarbeiterinnen und Mitarbeitern; sie machen rund 90 Prozent der Gesamtzahl der Unternehmen aus.",
+      "Rund zwei Drittel der Erwerbstätigen arbeiten in KMU, die knapp unter zwei Drittel der Umsatzerlöse der österreichischen gewerblichen Wirtschaft erarbeiten.",
+      "Etwas mehr als ein Drittel der Umsatzerlöse entfällt auf rund 1900 Großunternehmen.",
+      "Weil KMU zahlenmäßig dominieren, entfällt der überwiegende Teil der Umsatzerlöse zwingend vollständig auf Kleinstunternehmen mit weniger als einer Million Euro Umsatz."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Neunundneunzig Prozent sind die Dominanz der Anzahl, nicht automatisch des Umsatzes. In Österreich wie in der EU tragen KMU fast die gesamte Unternehmenszahl. Die Landschaft ist kleinbetrieblich gezählt. Der Satz gibt den im Text genannten Anteil wieder.\n\nDie Aussage ist wahr.",
+      "Unter zehn Beschäftigten sitzt der Massenkern. Kleinstunternehmen bilden den Großteil der KMU und rund 90 Prozent aller Unternehmen. Ungefähr 85 Prozent der Unternehmen haben außerdem weniger als eine Million Euro Umsatz; das ist eine weitere Kleinheitsaussage, nicht dieselbe Schwelle wie die EU-Kleinstdefinition. Der Satz trifft die Beschäftigtenrelation des Abschnitts. Die 90 Prozent beziehen sich auf die Anzahl der Unternehmen, nicht auf denselben Anteil an Umsatz oder Beschäftigung. KMU insgesamt stellen rund zwei Drittel der Erwerbstätigen. Anzahldominanz der Kleinsten und Umsatzgewicht der Großen laufen parallel durch denselben Abschnitt und dürfen nicht in eine einzige Quote zusammengeworfen werden.\n\nDie Aussage ist wahr.",
+      "Beschäftigung und Umsatz der KMU liegen knapp unter zwei Dritteln, nicht bei der 99-Prozent-Marke der Unternehmenszahl. Rund zwei Drittel der Erwerbstätigen arbeiten in KMU; sie erarbeiten knapp unter zwei Drittel der Umsatzerlöse der gewerblichen Wirtschaft. Anzahl und wirtschaftliche Masse fallen also auseinander: fast alle Firmen, aber nicht fast der ganze Umsatz. Der Satz hält beide Zweidrittel-Größen fest. Fast alle Unternehmen sind KMU, aber nicht fast der gesamte Umsatz. Rund 1900 Große tragen etwas mehr als ein Drittel der Umsatzerlöse. Die Zweidrittel-Größen beschreiben Masse bei Beschäftigung und Umsatz der KMU, während 99 Prozent nur die Zählung der Betriebe trifft.\n\nDie Aussage ist wahr.",
+      "Wenig Großunternehmen, spürbarer Umsatzanteil. Etwas mehr als ein Drittel der Umsatzerlöse erwirtschaften rund 1900 Großbetriebe, Quelle WKO und Statistik Austria. OMV, Porsche Holding, Strabag und weitere Namen illustriert der Text als umsatzstarke Große. Der Satz gibt die quantitativen Angaben wieder, ohne die Liste auswendig zu verlangen.\n\nDie Aussage ist wahr.",
+      "Anzahl und Umsatzanteil sind verschiedene Schnitte. KMU insgesamt liegen bei knapp unter zwei Dritteln der Umsätze; etwas über ein Drittel bleibt bei den Großen. Ungefähr 85 Prozent der Unternehmen liegen unter einer Million Euro Umsatz, das heißt nicht, dass dieser Masse auch der überwiegende Umsatz zufällt. Die Behauptung, der Umsatz entfalle zwingend vollständig auf diese Kleinstumsatzgruppe, vermengt die 85-Prozent-Zahl der Betriebe mit der Umsatzverteilung und widerspricht dem Drittel der Großen. Ungefähr 85 Prozent der Unternehmen liegen unter einer Million Euro Umsatz; das ist eine Aussage über die Zahl der Betriebe. Umsatzerlöse der gewerblichen Wirtschaft sitzen zu etwas mehr als einem Drittel bei den Großen und zu knapp unter zwei Dritteln bei den KMU insgesamt, nicht vollständig bei der Gruppe unter einer Million. Die absolute Verknüpfung von Anzahldominanz und Umsatzdominanz der Kleinsten hält der Text so nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  }
+]
