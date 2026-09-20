@@ -63,6 +63,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Schritt-für-Schritt-Vorbereitung auf deine WU-Prüfung 2027",
     "Step by step preparation for your 2027 WU WiSo exam":
       "Schritt-für-Schritt-Vorbereitung auf deine WU-WiSo-Prüfung 2027",
+    "Your 2027 WU WiSo exam, prepared one stage at a time":
+      "Deine WU-WiSo-Prüfung 2027, vorbereitet Stufe für Stufe",
     "WiSo and BBE": "WiSo und BBE",
     "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
       "Eine Plattform. Zwei Aufnahmeprüfungen. Wähle den Weg, der zu deinem Studium an der WU Wien passt.",
@@ -249,6 +251,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Покрокова підготовка до іспиту WU 2027",
     "Step by step preparation for your 2027 WU WiSo exam":
       "Покрокова підготовка до іспиту WU WiSo 2027",
+    "Your 2027 WU WiSo exam, prepared one stage at a time":
+      "Твій іспит WU WiSo 2027, підготовка крок за кроком",
     "WiSo and BBE": "WiSo та BBE",
     "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
       "Одна платформа. Два вступні іспити. Обери шлях, який відповідає тому, як ти хочеш навчатися у WU Vienna.",

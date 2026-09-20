@@ -6,7 +6,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
-import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
+import { WisoFaqAccordion, wisoFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/wiso/")({
   head: () => ({
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "WU Vienna WiSo Exam Prep — German Bachelor Entrance | BBE School" },
+      { title: "WU Vienna WiSo Exam Prep | German Bachelor Entrance | BBE School" },
       {
         name: "description",
         content:
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/wiso/")({
       {
         property: "og:description",
         content:
-          "Step-by-step WiSo Aufnahmeprüfung prep: Wirtschaft verstehen, math, German comprehension, scoring, and mocks.",
+          "WiSo Aufnahmeprüfung prep for Wirtschaft verstehen, math, German reading, scoring, and mocks.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/wiso/")({
       ...socialImageMetaForPath(PATH),
     ],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(homepageFaqs)) },
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(wisoFaqs)) },
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/wiso/")({
           name: "WU Vienna WiSo Exam Prep",
           url: "https://bbe-school.com/wiso",
           description:
-            "Independent preparation for the WU Vienna WiSo Aufnahmeprüfung: economics, mathematics, and German reading.",
+            "Preparation for the WU Vienna WiSo Aufnahmeprüfung: economics, mathematics, and German reading.",
           isPartOf: { "@type": "WebSite", name: "BBE School", url: "https://bbe-school.com" },
           about: {
             "@type": "EducationalOccupationalProgram",
@@ -92,12 +92,13 @@ export function WisoLandingPage() {
               </p>
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
-                Step by step preparation for your 2027 WU WiSo exam
+                Your 2027 WU WiSo exam, prepared one stage at a time
               </h1>
 
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Master wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis —
-                the three pillars of the WiSo Aufnahmeprüfung.
+                wirtschaftliche Grundkenntnisse, Mathematik, and deutsches Sprachverständnis sit at the
+                centre of the WiSo Aufnahmeprüfung, and this track is built around those three pillars
+                rather than around BBE English.
               </p>
 
               <div className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row">
@@ -105,14 +106,14 @@ export function WisoLandingPage() {
                   to={WISO_PRACTICE_ROUTES.demo}
                   className="inline-flex flex-col items-center justify-center rounded-sm bg-indigo-700 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
                 >
-                  <span>Try WiSo demo</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-white/80">Dedicated WiSo URL</span>
+                  <span>Try the WiSo demo</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">On WiSo URLs only</span>
                 </LocalizedLink>
                 <LocalizedLink
                   to={WISO_PRACTICE_ROUTES.products}
                   className="inline-flex flex-col items-center justify-center rounded-sm border border-indigo-700 bg-indigo-700/10 px-6 py-3.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-indigo-700/20 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 dark:text-indigo-100"
                 >
-                  <span>Explore WiSo courses</span>
+                  <span>See WiSo courses</span>
                   <span className="mt-0.5 text-[11px] font-medium opacity-70">Full WiSo Course</span>
                 </LocalizedLink>
               </div>
@@ -121,7 +122,7 @@ export function WisoLandingPage() {
                 to="/wiso/entrance-exam"
                 className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
               >
-                Read the WiSo entrance exam overview
+                Read how the WiSo entrance exam works
                 <ArrowRight className="h-3.5 w-3.5" />
               </LocalizedLink>
             </div>
@@ -133,7 +134,7 @@ export function WisoLandingPage() {
         </section>
 
         <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
-          <HowItWorksSection />
+          <HowItWorksSection track="wiso" />
         </Suspense>
 
         <section
@@ -146,11 +147,11 @@ export function WisoLandingPage() {
         >
           <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
-              Same WU campus. German-taught pathway.
+              Same WU campus, German-taught path
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
-              WiSo offers far more places than BBE — but the written exam still filters thousands of
-              applicants with the same partial-credit scoring pressure.
+              WiSo opens far more places than BBE, and yet the written exam still sorts thousands of
+              applicants under the same partial-credit pressure, so the hall feels no softer on the day.
             </p>
           </div>
         </section>
@@ -158,11 +159,11 @@ export function WisoLandingPage() {
         <section id="why-choose-us" className="px-6 py-16 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-              Built for the WiSo Aufnahmeprüfung
+              Made for the WiSo Aufnahmeprüfung
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Content areas follow WU&apos;s official FAQ: wirtschaftliche Grundkenntnisse, Mathematik,
-              and deutsches Sprachverständnis — not an English section.
+              The content areas follow WU&apos;s FAQ: wirtschaftliche Grundkenntnisse, Mathematik, and
+              deutsches Sprachverständnis, with no English section to lean on.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <LocalizedLink
@@ -203,7 +204,7 @@ export function WisoLandingPage() {
         >
           <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-14 lg:px-8 lg:py-16">
             <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
-              Voices from the WiSo exam floor.
+              Notes from people who sat WiSo
             </h2>
           </div>
         </section>
@@ -212,7 +213,7 @@ export function WisoLandingPage() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-10 max-w-3xl">
               <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                What students said after the WiSo Aufnahmeprüfung.
+                What students told us after the WiSo Aufnahmeprüfung
               </h2>
             </div>
             <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -224,7 +225,7 @@ export function WisoLandingPage() {
         </section>
 
         <div id="faq">
-          <FaqAccordion />
+          <WisoFaqAccordion />
         </div>
 
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
@@ -291,14 +292,14 @@ const wisoReports = [
     id: 1,
     name: "Nina, Linz",
     quote:
-      "I kept underestimating Sprachverständnis. The practice passages finally made me slow down and mark carefully instead of racing. Math was fine once I stopped second-guessing every statement.",
+      "I kept underestimating Sprachverständnis. The practice passages finally made me slow down and mark carefully instead of racing, and math felt fine once I stopped second-guessing every statement.",
     badge: "WiSo · accepted",
   },
   {
     id: 2,
     name: "Jonas, Vienna",
     quote:
-      "Wirtschaft verstehen felt endless until I drilled statement-style cases. Seeing the Teilpunktesystem in mocks changed how I guessed — I skipped more, and my score went up.",
+      "Wirtschaft verstehen felt endless until I drilled statement-style cases. Seeing the Teilpunktesystem in mocks changed how I guessed: I skipped more, and my score went up.",
     badge: "WiSo · accepted",
   },
   {
@@ -312,7 +313,7 @@ const wisoReports = [
     id: 4,
     name: "Matej, Brno",
     quote:
-      "I’m not a native speaker, so the German section scared me most. Short daily drills helped more than rereading textbooks. Not flashy — just consistent practice that stuck.",
+      "I’m not a native speaker, so the German section scared me most. Short daily drills helped more than rereading textbooks. Nothing flashy, just consistent practice that stuck.",
     badge: "WiSo · accepted",
   },
   {
@@ -326,7 +327,7 @@ const wisoReports = [
     id: 6,
     name: "David, Innsbruck",
     quote:
-      "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard — just not surprising.",
+      "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard, just not surprising.",
     badge: "WiSo · accepted",
   },
 ];

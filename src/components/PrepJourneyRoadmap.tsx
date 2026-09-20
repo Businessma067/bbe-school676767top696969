@@ -40,23 +40,23 @@ const BBE_MILESTONES: Milestone[] = [
 const WISO_MILESTONES: Milestone[] = [
   {
     title: "Kostenlose Demo",
-    label: "100+ Aufgaben, 1 Probeprüfung, alle 3 Fächer",
+    label: "WiSo-Aufgaben in Wirtschaft, Mathe und Deutsch",
     icon: "demo",
     youAreHere: true,
   },
   {
     title: "Grundlagen aufbauen",
-    label: "3000+ Fragen, im eigenen Tempo",
+    label: "Wirtschaft verstehen, Mathe und Leseübung",
     icon: "lite",
   },
   {
     title: "Vollsimulation",
-    label: "Interaktive Modi, individuelle Probeprüfungen und Timed Mode",
+    label: "Timed Practice, eigene Mocks und Prüfungstag-Tempo",
     icon: "full",
   },
   {
     title: "Prüfungstag",
-    label: "2027 Wiso, WU Wien",
+    label: "WiSo 2027 an der WU Wien",
     icon: "exam",
     destination: true,
   },

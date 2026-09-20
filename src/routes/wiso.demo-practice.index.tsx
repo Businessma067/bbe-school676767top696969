@@ -14,13 +14,13 @@ export const Route = createFileRoute("/wiso/demo-practice/")({
   head: () => ({
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "WiSo Demo Practice — BBE School" },
+      { title: "WiSo Demo Practice | BBE School" },
       {
         name: "description",
         content:
           "Try free WiSo demo tasks in Mathematik, Wirtschaft verstehen, and Deutsch for the WU Aufnahmeprüfung.",
       },
-      { property: "og:title", content: "WiSo Demo Practice — BBE School" },
+      { property: "og:title", content: "WiSo Demo Practice | BBE School" },
       {
         property: "og:description",
         content:
@@ -40,7 +40,7 @@ const subjects = [
     accent: "#3B82F6",
     tag: "Quantitative",
     description:
-      "Kostenlose Demo-Aufgaben aus den ersten Kapiteln — andere Fragen als im BBE-Demo, damit du beides ausprobieren kannst.",
+      "Kostenlose Demo-Aufgaben aus den ersten Kapiteln, andere Fragen als im BBE-Demo, damit du beides ausprobieren kannst.",
   },
   {
     id: "economics",
@@ -58,7 +58,7 @@ const subjects = [
     accent: "#2DD4A8",
     tag: "Sprachverständnis",
     description:
-      "Kostenlose Leseverständnis-Aufgaben aus den ersten beiden Texten — True/False wie in der Prüfung.",
+      "Kostenlose Leseverständnis-Aufgaben aus den ersten beiden Texten, True/False wie in der Prüfung.",
   },
 ] as const;
 
@@ -87,7 +87,7 @@ export function WisoDemoPractice() {
               Demo Practice
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Choose a subject to begin your free WiSo demo practice.
+              Pick a subject and start the free WiSo demo at your own pace.
             </p>
           </div>
 
