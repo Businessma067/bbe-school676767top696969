@@ -7,9 +7,9 @@
     "statements": [
       "Unter Digitalisierung versteht man die Anwendung digitaler Informations- und Kommunikationstechnologie.",
       "Digitale Transformation bezeichnet die durch Digitalisierung vorangetriebene Veränderung in Teilen von Wirtschaft, Verwaltung und privatem Bereich.",
-      "Digitalisierung beschränkt sich ausschließlich auf die Produktion materieller Güter und berührt weder Verwaltung noch Privatleben.",
-      "Ohne jede Anwendung digitaler Technologie kann dennoch von Digitalisierung im beschriebenen Sinne gesprochen werden.",
-      "Digitale Transformation bedeutet lediglich, dass ein Unternehmen eine Website besitzt, ohne dass sich Prozesse oder Angebote ändern."
+      "Digitalisierung betrifft ausschließlich die interne Kostenrechnung und lässt Kundenbeziehungen völlig unberührt.",
+      "Digitale Transformation ist erreicht, sobald ein Unternehmen irgendwelche Hardware anschafft – unabhängig davon, ob sich Abläufe oder Angebote ändern.",
+      "Informations- und Kommunikationstechnologie spielt bei vernetzten Alltagsszenarien wie Streaming oder smarter Haustechnik keine Rolle."
     ],
     "answer_key": [
       true,
@@ -20,10 +20,10 @@
     ],
     "tactical_explanations": [
       "Digitalisierung meint die Anwendung digitaler Informations- und Kommunikationstechnologie. Das ist der Ausgangspunkt: Technologie wird eingesetzt, und daraus können Veränderungen folgen.\n\nDie Aussage ist daher wahr.",
-      "Digitale Transformation ist die durch diese Anwendung vorangetriebene Veränderung – in Teilen der Wirtschaft, der Verwaltung und des privaten Bereichs. Transformation beschreibt also den Wandel, nicht bloß den bloßen Technikeinsatz als Selbstzweck.\n\nDie Aussage ist daher wahr.",
-      "Die Reichweite reicht über materielle Güterproduktion hinaus: ausdrücklich genannt werden Teile der Wirtschaft, der Verwaltung und des privaten Bereichs. Eine Beschränkung allein auf Güterproduktion ist zu eng.\n\nDie Aussage ist daher falsch.",
-      "Digitalisierung setzt gerade die Anwendung digitaler Informations- und Kommunikationstechnologie voraus. Ohne diese Anwendung fehlt der definitorische Kern; „Digitalisierung ohne digitale Technologie“ ist widersprüchlich.\n\nDie Aussage ist daher falsch.",
-      "Eine Website allein ist keine hinreichende Beschreibung digitaler Transformation. Es geht um Veränderung durch Technologieeinsatz in Prozessen, Kundenbeziehung und Angeboten – nicht um das bloße Vorhandensein einer digitalen Visitenkarte ohne inhaltlichen Wandel.\n\nDie Aussage ist daher falsch."
+      "Digitale Transformation ist die durch diese Anwendung vorangetriebene Veränderung – in Teilen der Wirtschaft, der Verwaltung und des privaten Bereichs. Transformation beschreibt den Wandel, nicht bloß Technikeinsatz als Selbstzweck.\n\nDie Aussage ist daher wahr.",
+      "Digitalisierung und digitale Transformation greifen auch in Kundenkontakt, Prozesse und Angebote ein – nicht nur in die Kostenrechnung. Die Verengung auf interne Kosten ist zu eng.\n\nDie Aussage ist daher falsch.",
+      "Maßgeblich ist die Anwendung digitaler Technologie und die dadurch angestoßene Veränderung. Bloße Hardwarebeschaffung ohne Wandel von Abläufen oder Angeboten erfüllt digitale Transformation nicht.\n\nDie Aussage ist daher falsch.",
+      "Vernetzte Alltagsszenarien setzen gerade Informations- und Kommunikationstechnologie voraus. Ohne sie wären Streaming, smarte Haustechnik und ähnliche Abläufe so nicht möglich.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -36,23 +36,23 @@
     "statements": [
       "Im Alltag kommen Menschen an vielen Stellen mit digitalen Systemen in Kontakt, etwa bei Streaming, smarter Haustechnik oder vernetzten Geräten.",
       "Der englische Begriff „ubiquitous computing“ beschreibt die Allgegenwärtigkeit von Rechensystemen.",
-      "Ohne Informations- und Kommunikationstechnologie wären viele der beschriebenen vernetzten Alltagsszenarien nicht möglich.",
+      "Im Handel können Systeme automatisch erfassen, wie viele Produkte noch lagernd sind, und Nachbestellungen anstoßen.",
       "Digitale Systeme spielen im Unternehmenskontext keinerlei Rolle; sie betreffen ausschließlich den privaten Haushalt.",
-      "Es fällt zunehmend schwer, Lebens- oder Arbeitsbereiche zu finden, in denen keinerlei Technologiekontakt stattfindet."
+      "In Produktionsanlagen sind digitale Systeme grundsätzlich ungeeignet, Prozessabläufe zu steuern oder Probleme zu erkennen."
     ],
     "answer_key": [
       true,
       true,
       true,
       false,
-      true
+      false
     ],
     "tactical_explanations": [
-      "Alltagsbeispiele wie Streaming-Dienste, intelligente Heizsysteme oder vernetzte Geräte illustrieren, dass digitale Systeme den Tagesablauf durchziehen. Der Kontakt mit Technologie ist allgegenwärtig.\n\nDie Aussage ist daher wahr.",
-      "„Ubiquitous computing“ wird ausdrücklich mit der Allgegenwärtigkeit von Rechensystemen übersetzt und als treffende Beschreibung der heutigen Lage verwendet.\n\nDie Aussage ist daher wahr.",
-      "Vernetzte Alltagsszenarien setzen Informations- und Kommunikationstechnologie voraus. Ohne sie wären die beschriebenen Abläufe so nicht möglich.\n\nDie Aussage ist daher wahr.",
-      "Auch in Unternehmen sind digitale Systeme im Einsatz – etwa zur Lagererfassung, Positionierung von Lieferungen oder Steuerung von Produktionsabläufen. Die Behauptung, Digitalisierung betreffe nur den privaten Haushalt, ist falsch.\n\nDie Aussage ist daher falsch.",
-      "Gerade weil Technologie so weit verbreitet ist, fällt es schwer, Bereiche ohne jeden Technologiekontakt zu identifizieren. Das unterstreicht die Allgegenwärtigkeit digitaler Systeme.\n\nDie Aussage ist daher wahr."
+      "Alltagsbeispiele wie Streaming-Dienste, intelligente Heizsysteme oder vernetzte Geräte zeigen, dass digitale Systeme den Tagesablauf durchziehen.\n\nDie Aussage ist daher wahr.",
+      "„Ubiquitous computing“ wird mit der Allgegenwärtigkeit von Rechensystemen übersetzt und als treffende Beschreibung der heutigen Lage verwendet.\n\nDie Aussage ist daher wahr.",
+      "Supermarkt- bzw. Handelssysteme zur Lagererfassung und möglichen Nachbestellung sind ein genanntes Unternehmensbeispiel digitaler Unterstützung.\n\nDie Aussage ist daher wahr.",
+      "Auch in Unternehmen sind digitale Systeme im Einsatz – etwa zur Lagererfassung, Positionierung von Lieferungen oder Steuerung von Produktionsabläufen. Die Beschränkung auf den privaten Haushalt ist falsch.\n\nDie Aussage ist daher falsch.",
+      "In der Produktion helfen Systeme gerade, Abläufe zu steuern und Probleme rasch zu erkennen und darauf zu reagieren. „Grundsätzlich ungeeignet“ widerspricht den Einsatzfeldern.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -66,22 +66,22 @@
       "Der Einsatz von Technologie verändert, wie Unternehmen betriebswirtschaftlich tätig werden.",
       "Dazu gehört unter anderem, wie Unternehmen interne Prozesse steuern, um möglichst effizient zu wirtschaften.",
       "Technologieeinsatz betrifft auch, wie Unternehmen mit Kunden in Kontakt bleiben und deren Anforderungen berücksichtigen.",
-      "Die Gestaltung und Markteinführung von Produkten und Dienstleistungen bleibt vom Technologiewandel unberührt.",
-      "Digitalisierung und digitale Transformation werden im Zusammenhang mit diesen Veränderungen häufig genannt."
+      "Digitalisierung und digitale Transformation werden im Zusammenhang mit diesen Veränderungen häufig genannt.",
+      "Die Gestaltung und Markteinführung von Produkten und Dienstleistungen bleibt vom Technologiewandel unberührt."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
       "Zentral ist: Technologie verändert die Art und Weise, wie Unternehmen betriebswirtschaftlich handeln – nicht nur einzelne Tools, sondern die Organisation des Wirtschaftens selbst.\n\nDie Aussage ist daher wahr.",
       "Explizit genannt wird die Steuerung interner Prozesse mit dem Ziel möglichst effizienter Wirtschaftlichkeit. Das ist die innengerichtete Seite des Wandels.\n\nDie Aussage ist daher wahr.",
       "Ebenso genannt wird der Kontakt zu Kunden sowie die Berücksichtigung von Anforderungen und Bedürfnissen. Digitalisierung betrifft also auch die Kundenschnittstelle.\n\nDie Aussage ist daher wahr.",
-      "Auch die Gestaltung und das Auf-den-Markt-Bringen von Produkten und Dienstleistungen gehören zu den genannten Veränderungsfeldern. Die Behauptung, dieser Bereich bleibe unberührt, widerspricht dem.\n\nDie Aussage ist daher falsch.",
-      "Im Zusammenhang mit genau diesen Veränderungen fallen häufig die Begriffe Digitalisierung bzw. digitale Transformation. Die Terminologie knüpft an den beobachtbaren Wandel an.\n\nDie Aussage ist daher wahr."
+      "Im Zusammenhang mit genau diesen Veränderungen fallen häufig die Begriffe Digitalisierung bzw. digitale Transformation. Die Terminologie knüpft an den beobachtbaren Wandel an.\n\nDie Aussage ist daher wahr.",
+      "Auch die Gestaltung und das Auf-den-Markt-Bringen von Produkten und Dienstleistungen gehören zu den genannten Veränderungsfeldern. Die Behauptung, dieser Bereich bleibe unberührt, widerspricht dem.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -95,22 +95,22 @@
       "Ein Geschäftsprozess ist ein komplexer Arbeitsablauf aus mehreren logisch zusammenhängenden Aktivitäten.",
       "Ein Geschäftsprozess leistet für das Unternehmen einen Beitrag (Wert) zu einem betriebswirtschaftlichen Ziel.",
       "Geschäftsprozesse können wiederholt durchgeführt werden.",
-      "Ein Geschäftsprozess hat weder einen definierten Anfang noch ein definiertes Ende.",
-      "Geschäftsprozesse bestehen definitionsgemäß aus einer einzigen isolierten Aktivität ohne logischen Zusammenhang zu anderen Schritten."
+      "Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden.",
+      "Ein Geschäftsprozess ist definitionsgemäß ein einmaliges Projektereignis ohne Bezug zu betriebswirtschaftlichen Zielen."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Die Definition stellt auf einen komplexen Arbeitsablauf ab, der aus mehreren logisch zusammenhängenden Aktivitäten besteht. Einzelne isolierte Handgriffe ohne Zusammenhang sind damit nicht gemeint.\n\nDie Aussage ist daher wahr.",
-      "Wesentlich ist der Wertbeitrag: Der Ablauf leistet einen Beitrag zu einem betriebswirtschaftlichen Ziel. Ohne diesen Zielbezug fehlt das betriebliche Kernmerkmal des Geschäftsprozesses.\n\nDie Aussage ist daher wahr.",
+      "Die Definition stellt auf einen komplexen Arbeitsablauf ab, der aus mehreren logisch zusammenhängenden Aktivitäten besteht.\n\nDie Aussage ist daher wahr.",
+      "Wesentlich ist der Wertbeitrag: Der Ablauf leistet einen Beitrag zu einem betriebswirtschaftlichen Ziel.\n\nDie Aussage ist daher wahr.",
       "Wiederholbarkeit wird ausdrücklich genannt. Geschäftsprozesse sind keine einmaligen Zufallsereignisse, sondern erneut ausführbare Abläufe.\n\nDie Aussage ist daher wahr.",
-      "Im Gegenteil: Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Die Behauptung, es gebe weder Anfang noch Ende, verdreht die Definition.\n\nDie Aussage ist daher falsch.",
-      "Gerade mehrere logisch zusammenhängende Aktivitäten sind definitionsbildend. Eine einzige isolierte Aktivität ohne Zusammenhang erfüllt die Geschäftsprozess-Definition nicht.\n\nDie Aussage ist daher falsch."
+      "Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Mehrere Enden sind also zulässig.\n\nDie Aussage ist daher wahr.",
+      "Geschäftsprozesse sind wiederholbare, zielbezogene Abläufe – kein einmaliges Projektereignis ohne betriebswirtschaftlichen Zielbezug. Die Aussage verdreht die Definition.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -124,22 +124,22 @@
       "Veränderungen durch Digitalisierung lassen sich im Unternehmenskontext anhand von drei Dimensionen veranschaulichen.",
       "Eine Dimension betrifft Geschäftsprozesse hinter den Kulissen (Backstage), die die Wertschöpfung unterstützen.",
       "Eine weitere Dimension betrifft die Verbindung zwischen Kunden und Unternehmen (Frontstage).",
-      "Die Digitalisierung von Produkten und Dienstleistungen bildet keine eigene Dimension und bleibt außen vor.",
-      "Unternehmen können sich gezielt auf eine oder mehrere dieser Dimensionen konzentrieren."
+      "Unternehmen können sich gezielt auf eine oder mehrere dieser Dimensionen konzentrieren.",
+      "Die Frontstage-Dimension meint vor allem die interne Lagersteuerung hinter den Kulissen und nicht die Kundenverbindung."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
-      true
+      true,
+      false
     ],
     "tactical_explanations": [
-      "Im Unternehmenskontext werden Möglichkeiten der Veränderung anhand von drei Dimensionen der Digitalisierung dargestellt. Das ist das strukturierende Raster für den Abschnitt.\n\nDie Aussage ist daher wahr.",
+      "Im Unternehmenskontext werden Möglichkeiten der Veränderung anhand von drei Dimensionen der Digitalisierung dargestellt.\n\nDie Aussage ist daher wahr.",
       "Die erste Dimension sind Geschäftsprozesse hinter den Kulissen (Backstage), die die Wertschöpfung unterstützen und zunehmend digital gesteuert bzw. erweitert werden.\n\nDie Aussage ist daher wahr.",
       "Die zweite Dimension – Frontstage – versteht sich als Verbindung zwischen Kunden und Unternehmen und bildet den externen Fokus.\n\nDie Aussage ist daher wahr.",
-      "Die dritte Dimension befasst sich gerade mit dem Ergebnis der Wertschöpfung: der Digitalisierung von Produkten und Dienstleistungen („smart“). Sie ist also eine eigene, zentrale Dimension.\n\nDie Aussage ist daher falsch.",
-      "Unternehmen können entlang der drei Dimensionen tätig werden und sich auf eine oder mehrere davon konzentrieren. Daraus lässt sich eine Digitalisierungsstrategie ableiten.\n\nDie Aussage ist daher wahr."
+      "Unternehmen können entlang der drei Dimensionen tätig werden und sich auf eine oder mehrere davon konzentrieren. Daraus lässt sich eine Digitalisierungsstrategie ableiten.\n\nDie Aussage ist daher wahr.",
+      "Frontstage ist der externe Fokus und die Kundenverbindung. Interne Lagersteuerung gehört zur Backstage. Die Aussage vertauscht die Dimensionen.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -152,8 +152,8 @@
     "statements": [
       "Der interne Fokus eines Unternehmens liegt auf der wirtschaftlichen Nutzung von Ressourcen, um Produkte und Dienstleistungen zu erstellen.",
       "Wertschöpfung bedeutet in diesem Zusammenhang, dass ein Wert geschaffen wird.",
-      "Geschäftsprozesse hinter den Kulissen unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.",
       "Wenn Arbeitsschritte digital unterstützt werden, entsteht ein digital unterstützter Geschäftsprozess.",
+      "Backstage-Geschäftsprozesse unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.",
       "Backstage-Digitalisierung meint vor allem die öffentliche Werbung gegenüber Endkunden und nicht die internen Abläufe."
     ],
     "answer_key": [
@@ -165,9 +165,9 @@
     ],
     "tactical_explanations": [
       "Intern geht es um die wirtschaftliche Nutzung von Ressourcen zur Erstellung von Produkten und Dienstleistungen. Das ist der innengerichtete Fokus der ersten Dimension.\n\nDie Aussage ist daher wahr.",
-      "Ausdrücklich formuliert: Es soll ein Wert geschaffen werden – anders gesagt findet Wertschöpfung statt. Wertschöpfung und Wertschaffung werden hier gleichgesetzt.\n\nDie Aussage ist daher wahr.",
-      "Backstage-Geschäftsprozesse unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert. Digitalisierung greift hier an den inneren Abläufen an.\n\nDie Aussage ist daher wahr.",
+      "Ausdrücklich formuliert: Es soll ein Wert geschaffen werden – anders gesagt findet Wertschöpfung statt.\n\nDie Aussage ist daher wahr.",
       "Durch digitale Unterstützung von Arbeitsschritten entsteht ein digital unterstützter Geschäftsprozess. Das ist die konkrete Ausprägung der ersten Dimension.\n\nDie Aussage ist daher wahr.",
+      "Backstage-Geschäftsprozesse unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.\n\nDie Aussage ist daher wahr.",
       "Backstage meint gerade die Prozesse hinter den Kulissen – intern, nicht die kundengerichtete Werbung. Kundengerichtetes liegt in der Frontstage-Dimension.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "2/5",
@@ -182,22 +182,22 @@
       "Die Frontstage-Dimension versteht sich als Verbindung zwischen Kunden und Unternehmen und bildet den externen Fokus.",
       "Im Vordergrund stehen die Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer.",
       "Als Kunde kommt je nach Umfeld eine Privatperson, ein Unternehmen oder auch eine öffentliche Institution infrage.",
-      "Digitalisierung bietet keinerlei neue Potenziale, Nutzerwünsche gezielter zu berücksichtigen.",
-      "Frontstage-Digitalisierung betrifft ausschließlich die interne Lagerverwaltung und hat keinen Kundenbezug."
+      "Digitalisierung bietet neue Potenziale, Nutzerwünsche effizienter und gezielter zu berücksichtigen.",
+      "Frontstage-Digitalisierung schließt Unternehmen und öffentliche Institutionen als Kunden begrifflich aus."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Frontstage wird ausdrücklich als Verbindung Kunde–Unternehmen und als externer Fokus beschrieben. Hier liegt die Orientierung rund um den Kunden.\n\nDie Aussage ist daher wahr.",
+      "Frontstage wird ausdrücklich als Verbindung Kunde–Unternehmen und als externer Fokus beschrieben.\n\nDie Aussage ist daher wahr.",
       "Bei der Gestaltung von Angeboten im Sinne des Kunden liegen Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer im Vordergrund.\n\nDie Aussage ist daher wahr.",
       "Wichtig: „Kunde“ ist nicht nur die Privatperson. Je nach Umfeld kann es eine Privatperson, ein Unternehmen oder eine öffentliche Institution sein.\n\nDie Aussage ist daher wahr.",
-      "Gerade das Gegenteil wird betont: Digitalisierung bietet neue Potenziale, Wünsche der Nutzer effizienter und gezielter zu berücksichtigen.\n\nDie Aussage ist daher falsch.",
-      "Lagerverwaltung und interne Abläufe gehören zur Backstage. Frontstage hat gerade den Kundenbezug; die Aussage vertauscht die Dimensionen.\n\nDie Aussage ist daher falsch."
+      "Digitalisierung bietet neue Potenziale, Wünsche der Nutzer effizienter und gezielter zu berücksichtigen.\n\nDie Aussage ist daher wahr.",
+      "Gerade das Gegenteil gilt: Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein. Frontstage schließt diese Kundenarten nicht aus – S3 benennt sie ausdrücklich, die Verengung ist falsch.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -211,22 +211,22 @@
       "Das Festhalten eines Geschäftsprozesses in einem digitalen System wird auch als Dokumentation bezeichnet.",
       "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren.",
       "Ein visuelles Abbild eines Prozesses wird auch Prozessmodell genannt.",
-      "Ein Prozessmodell ist für neue Mitarbeitende grundsätzlich nutzlos, weil visuelle Abbilder keine Orientierung geben können.",
-      "Digitale Dokumentation von Prozessen erschwert typischerweise den Überblick und verlangsamt Entscheidungen."
+      "Ein Prozessmodell kann neuen Mitarbeitenden – etwa im Praktikum – einen ersten Überblick über einen zentralen Ablauf liefern.",
+      "Ein Prozessmodell ist ausschließlich für externe Wirtschaftsprüfer gedacht und darf Mitarbeitenden im Unternehmen nicht gezeigt werden."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Das Festhalten eines Prozesses durch ein digitales System wird ausdrücklich als Dokumentation bezeichnet. Dokumentation ist also die digitale Abbildung des Ablaufs.\n\nDie Aussage ist daher wahr.",
+      "Das Festhalten eines Prozesses durch ein digitales System wird ausdrücklich als Dokumentation bezeichnet.\n\nDie Aussage ist daher wahr.",
       "Dokumentation hilft Mitarbeitenden im Unternehmen, den Prozess zu kommunizieren – sie macht den Ablauf teilbar und nachvollziehbar.\n\nDie Aussage ist daher wahr.",
       "Ein visuelles Abbild wird auch Prozessmodell genannt. Das ist die anschauliche Darstellungsform des dokumentierten Ablaufs.\n\nDie Aussage ist daher wahr.",
-      "Gerade das Gegenteil gilt: Ein Prozessmodell kann neuen Mitarbeitenden – etwa im Praktikum – einen ersten Überblick über einen zentralen Ablauf liefern.\n\nDie Aussage ist daher falsch.",
-      "Innerhalb eines digital gestützten Prozesses können Personen den Überblick leichter bewahren und Entscheidungen schneller und gezielter treffen. Die Aussage behauptet das Gegenteil.\n\nDie Aussage ist daher falsch."
+      "Gerade für neue Mitarbeitende – etwa im Praktikum – kann ein Prozessmodell einen ersten Überblick über einen zentralen Ablauf liefern.\n\nDie Aussage ist daher wahr.",
+      "Prozessmodelle dienen gerade der internen Kommunikation und Orientierung – etwa für neue Mitarbeitende. Eine Beschränkung auf externe Prüfer widerspricht dem Zweck.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -240,22 +240,22 @@
       "Die dritte Dimension der Digitalisierung befasst sich damit, wie das Ergebnis der Wertschöpfung durch Technologie erweitert werden kann.",
       "„Smart“ bezieht sich in diesem Zusammenhang auf die Digitalisierung von Produkten und Dienstleistungen.",
       "Digitalisierung eines Produkts kann im einfachsten Fall eine Ergänzung oder Erweiterung darstellen.",
-      "Digitalisierung eines Produkts kann niemals das Kundenerlebnis prägen; höchstens die interne Buchhaltung ändert sich.",
-      "Eine bloß digitale Anleitung als PDF zu einem analogen Produkt ist bereits die weitreichendste Form „smarter“ Erlebnisgestaltung."
+      "Im besten Fall kann Digitalisierung das Erlebnis des Kunden nachhaltig prägen und die Bindung zum Produkt steigern.",
+      "Die dritte Dimension betrifft ausschließlich die Gehaltsabrechnung der Mitarbeitenden und nicht Produkte oder Dienstleistungen."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
       "Die dritte Dimension richtet sich auf das Ergebnis der Wertschöpfung und dessen Erweiterung durch Technologie – also auf Produkte und Dienstleistungen selbst.\n\nDie Aussage ist daher wahr.",
-      "„Smart“ meint hier die Digitalisierung von Produkten und Dienstleistungen des Unternehmens, nicht bloß einen Marketingbegriff ohne Inhalt.\n\nDie Aussage ist daher wahr.",
+      "„Smart“ meint hier die Digitalisierung von Produkten und Dienstleistungen des Unternehmens.\n\nDie Aussage ist daher wahr.",
       "Im einfachsten Fall handelt es sich um eine Ergänzung oder Erweiterung – etwa eine digitale Anleitung als PDF zu einem analogen Produkt.\n\nDie Aussage ist daher wahr.",
-      "Im besten Fall kann Digitalisierung das Erlebnis des Kunden gerade nachhaltig prägen und die Bindung steigern. Die Behauptung, Kundenerlebnis sei nie betroffen und nur die Buchhaltung ändere sich, ist falsch.\n\nDie Aussage ist daher falsch.",
-      "Eine PDF-Anleitung ist ausdrücklich als einfache digitale Ergänzung beschrieben. Weitreichender ist etwa eine digitale Erkundungsmission, die das Erlebnis „smart“ erweitert. Die PDF ist nicht die weitreichendste Form.\n\nDie Aussage ist daher falsch."
+      "Im besten Fall kann Digitalisierung das Erlebnis des Kunden nachhaltig prägen und die Bindung steigern – ein positiv digitalisiertes Kundenerlebnis.\n\nDie Aussage ist daher wahr.",
+      "Die dritte Dimension richtet sich auf Produkte und Dienstleistungen als Ergebnis der Wertschöpfung – nicht auf die Gehaltsabrechnung.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -267,24 +267,24 @@
     "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
     "statements": [
       "Die Wirtschaftsinformatik beschäftigt sich damit, wie Technologie unterstützen kann und welche Auswirkungen das auf Gesellschaft, Wirtschaft und persönliches Leben hat.",
-      "Im Handel können Systeme automatisch erfassen, wie viele Produkte noch lagernd sind, und Nachbestellungen anstoßen.",
       "Lieferdienste können Positionierungs- und Benachrichtigungssysteme nutzen, um den Standort möglichst zeitnah mitzuteilen.",
-      "In Produktionsanlagen sind digitale Systeme grundsätzlich ungeeignet, Prozessabläufe zu steuern oder Probleme zu erkennen.",
+      "Digitale Systeme werden in Unternehmen eingesetzt, um Arbeitsschritte zu automatisieren, zu optimieren bzw. zu unterstützen.",
+      "Es fällt zunehmend schwer, Lebens- oder Arbeitsbereiche zu finden, in denen keinerlei Technologiekontakt stattfindet.",
       "Digitale Systeme dienen in Unternehmen ausschließlich der Unterhaltung der Belegschaft und haben keinen Bezug zu Automatisierung oder Optimierung."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
       "Genau diese Doppelfrage – Unterstützung durch Technologie und Auswirkungen auf Gesellschaft, Wirtschaft und persönliches Leben – umreißt das Themenfeld der Wirtschaftsinformatik.\n\nDie Aussage ist daher wahr.",
-      "Supermarkt- bzw. Handelssysteme zur Lagererfassung und möglichen Nachbestellung sind ein genanntes Unternehmensbeispiel digitaler Unterstützung.\n\nDie Aussage ist daher wahr.",
-      "Positionierungs- und Benachrichtigungssysteme bei Lieferdiensten sind ein weiteres Beispiel für den Einsatz digitaler Systeme im Betriebsalltag.\n\nDie Aussage ist daher wahr.",
-      "In der Produktion helfen Systeme gerade, Abläufe zu steuern und Probleme rasch zu erkennen und darauf zu reagieren. „Grundsätzlich ungeeignet“ widerspricht den genannten Einsatzfeldern.\n\nDie Aussage ist daher falsch.",
-      "Digitale Systeme werden gerade eingesetzt, um Arbeitsschritte zu automatisieren, zu optimieren bzw. zu unterstützen. „Nur Unterhaltung ohne Betriebsbezug“ ist das Gegenteil der Beschreibung.\n\nDie Aussage ist daher falsch."
+      "Positionierungs- und Benachrichtigungssysteme bei Lieferdiensten sind ein Beispiel für den Einsatz digitaler Systeme im Betriebsalltag.\n\nDie Aussage ist daher wahr.",
+      "Digitale Systeme werden gerade eingesetzt, um Arbeitsschritte zu automatisieren, zu optimieren bzw. zu unterstützen.\n\nDie Aussage ist daher wahr.",
+      "Gerade weil Technologie so weit verbreitet ist, fällt es schwer, Bereiche ohne jeden Technologiekontakt zu identifizieren.\n\nDie Aussage ist daher wahr.",
+      "Digitale Systeme werden gerade für Automatisierung, Optimierung und Unterstützung betrieblicher Abläufe eingesetzt. „Nur Unterhaltung ohne Betriebsbezug“ ist das Gegenteil der Beschreibung.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -298,22 +298,22 @@
       "Bei einer Online-Bestellung können im Hintergrund sofort Schritte veranlasst werden, damit das Produkt rasch zum Kunden kommt.",
       "Ein internes System kann die Bestellung zusammenfassen und eine freie Mitarbeiterin oder einen freien Mitarbeiter benachrichtigen.",
       "Detailschritte können Lagerposition abrufen, Produkt auswählen und die Bestellung für Abholung oder Versand vorbereiten umfassen.",
-      "Nach dem Absenden einer Online-Bestellung gibt es im Unternehmen keine weiteren Arbeitsschritte mehr; Lager und Versand spielen keine Rolle.",
-      "Ein digital gestützter Bestellprozess endet niemals; definierte Enden wie Lieferung oder Abholung sind ausgeschlossen."
+      "Je nach Lagerstand können intern weitere Prozesse angestoßen und der Kunde über den Status informiert werden.",
+      "Der digital gestützte Bestellprozess hat definitionsgemäß weder einen Anfang noch ein Ende."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Das Bestellbeispiel zeigt: Nach der Online-Aufgabe werden im Hintergrund Schritte angestoßen, um das Produkt möglichst rasch bereitzustellen. Der Kundenklick startet interne Prozessketten.\n\nDie Aussage ist daher wahr.",
-      "Ein internes System fasst die Bestellung zusammen und benachrichtigt die nächste freie Person, die sich um weitere Schritte kümmert – digitale Steuerung der Zuteilung.\n\nDie Aussage ist daher wahr.",
+      "Das Bestellbeispiel zeigt: Nach der Online-Aufgabe werden im Hintergrund Schritte angestoßen, um das Produkt möglichst rasch bereitzustellen.\n\nDie Aussage ist daher wahr.",
+      "Ein internes System fasst die Bestellung zusammen und benachrichtigt die nächste freie Person, die sich um weitere Schritte kümmert.\n\nDie Aussage ist daher wahr.",
       "Zu den Detailschritten zählen unter anderem Lagerposition abrufen, Produkt auswählen und Vorbereitung je nachdem, ob abgeholt oder versendet werden muss.\n\nDie Aussage ist daher wahr.",
-      "Gerade Lagerposition, Kommissionierung und Vorbereitung für Versand oder Abholung sind zentrale Folgeschritte. Die Behauptung, Lager und Versand spielten keine Rolle, ist falsch.\n\nDie Aussage ist daher falsch.",
-      "Der Prozess endet mit Lieferung oder Bereitstellung zur Abholung; danach markiert die bearbeitende Person den Abschluss im System. Definierte Enden sind Teil des Beispiels und der Prozessdefinition.\n\nDie Aussage ist daher falsch."
+      "Im Bestellbeispiel können je nach Lagerstand weitere Prozesse angestoßen und Statusinformationen an den Kunden gegeben werden.\n\nDie Aussage ist daher wahr.",
+      "Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Im Bestellbeispiel endet der Ablauf etwa mit Lieferung oder Abholung – nicht „weder Anfang noch Ende“.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -327,22 +327,22 @@
       "Beim Schuhkauf ist die passende Größe eine zentrale Anforderung der Nutzerinnen und Nutzer.",
       "Falsche Größen beim Onlinekauf können Zeit und Nerven kosten und frustrierend sein.",
       "Ein 3D-Fußscanner kann Anforderungen der Nutzer festhalten, indem er ein 3D-Bild der Füße erzeugt und online im Kundenkonto speichert.",
-      "Ein gespeicherter digitaler Fußabdruck darf beim späteren Kauf keinesfalls mit einem Schuhmodell abgeglichen werden.",
+      "Vor Ort und bei einer späteren Online-Bestellung kann der digitale Fußabdruck mit dem gewünschten Schuhmodell abgeglichen werden.",
       "Frontstage-Potenziale der Digitalisierung bestehen nur offline im Ladengeschäft und lassen sich online grundsätzlich nicht nutzen."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Die Schuhgröße und Passformfragen (größer/kleiner geschnitten, schmale/breite Füße) stehen als zentrale Nutzeranforderungen im Beispiel. Das ist Frontstage-Logik: Bedürfnisse zuerst.\n\nDie Aussage ist daher wahr.",
-      "Falsche Online-Größen werden ausdrücklich als zeit- und nervenraubend sowie frustrierend beschrieben. Genau dort setzt digitales Potenzial an.\n\nDie Aussage ist daher wahr.",
+      "Die Schuhgröße und Passformfragen stehen als zentrale Nutzeranforderungen im Beispiel. Das ist Frontstage-Logik: Bedürfnisse zuerst.\n\nDie Aussage ist daher wahr.",
+      "Falsche Online-Größen werden ausdrücklich als zeit- und nervenraubend sowie frustrierend beschrieben.\n\nDie Aussage ist daher wahr.",
       "Der 3D-Fußscanner erzeugt ein 3D-Bild und speichert es online im Kundenkonto – digitale Erfassung von Nutzeranforderungen.\n\nDie Aussage ist daher wahr.",
-      "Gerade der Abgleich des digitalen Fußabdrucks mit dem gewünschten Schuhmodell – vor Ort und online – ist der Zweck des Service, um die Passform zu prüfen.\n\nDie Aussage ist daher falsch.",
-      "Das Beispiel verbindet ausdrücklich Vor-Ort-Service und Smartphone-App bzw. Online-Bestellung. Frontstage-Potenziale sind also online und offline nutzbar, nicht nur im Laden.\n\nDie Aussage ist daher falsch."
+      "Gerade der Abgleich des digitalen Fußabdrucks mit dem gewünschten Schuhmodell – vor Ort und online – ist der Zweck des Service, um die Passform zu prüfen.\n\nDie Aussage ist daher wahr.",
+      "Das Beispiel verbindet ausdrücklich Vor-Ort-Service und Smartphone-App bzw. Online-Bestellung. Frontstage-Potenziale sind online und offline nutzbar.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -356,22 +356,22 @@
       "Aus der gezielten Konzentration auf eine oder mehrere Digitalisierungsdimensionen lässt sich eine Digitalisierungsstrategie ableiten.",
       "Eine Digitalisierungsstrategie kann dem Unternehmen helfen, zukünftige Entscheidungen an einer klaren Vision auszurichten.",
       "Im Gesamten führt dies zur Digitalisierung des Unternehmens – dem „Digital Business“.",
-      "Erfolgreiche digitale Transformation bedeutet, möglichst viele sinnlose Aspekte digital zu verdoppeln, ohne Nutzen zu prüfen.",
-      "Bei erfolgreicher Digitalisierung soll die Transformation dem Nutzen und Erlebnis möglichst im Weg stehen und Innovation verhindern."
+      "Erfolgreiche digitale Transformation erweitert sinnvolle Aspekte wie Arbeitsschrittfolgen, Kommunikation oder Kundenbedürfnisse durch digitale Technologien.",
+      "„Digital Business“ bedeutet lediglich, dass das Unternehmen eine Visitenkarten-Website besitzt, ohne dass Prozesse, Kundenbeziehung oder Angebote digital weiterentwickelt werden."
     ],
     "answer_key": [
       true,
       true,
       true,
-      false,
+      true,
       false
     ],
     "tactical_explanations": [
-      "Unternehmen können sich auf eine oder mehrere Dimensionen konzentrieren; daraus wird eine Digitalisierungsstrategie abgeleitet. Strategie folgt der dimensionalen Schwerpunktsetzung.\n\nDie Aussage ist daher wahr.",
-      "Die Strategie soll helfen, zukünftige Entscheidungen zu treffen und einer klaren Vision zu folgen – nicht bloß einzelne Technikprojekte ohne Richtung.\n\nDie Aussage ist daher wahr.",
-      "Im Gesamten führt das zur Digitalisierung des Unternehmens, bezeichnet als „Digital Business“. Das ist die unternehmensweite Perspektive.\n\nDie Aussage ist daher wahr.",
-      "Erfolg basiert darauf, sinnvolle Aspekte durch digitale Technologien zu erweitern – nicht darauf, sinnlose Aspekte unbesehen zu verdoppeln. Nutzenprüfung gehört zum Erfolgskriterium.\n\nDie Aussage ist daher falsch.",
-      "Gerade umgekehrt: Die Transformation soll nicht im Weg stehen; Nutzen und Erlebnis eines Produkts oder einer Dienstleistung sollen möglichst innovativ erweitert werden.\n\nDie Aussage ist daher falsch."
+      "Unternehmen können sich auf eine oder mehrere Dimensionen konzentrieren; daraus wird eine Digitalisierungsstrategie abgeleitet.\n\nDie Aussage ist daher wahr.",
+      "Die Strategie soll helfen, zukünftige Entscheidungen zu treffen und einer klaren Vision zu folgen.\n\nDie Aussage ist daher wahr.",
+      "Im Gesamten führt das zur Digitalisierung des Unternehmens, bezeichnet als „Digital Business“.\n\nDie Aussage ist daher wahr.",
+      "Erfolg basiert darauf, sinnvolle Aspekte durch digitale Technologien zu erweitern – etwa Abfolge von Arbeitsschritten, Kommunikation und Berücksichtigung von Kundenbedürfnissen.\n\nDie Aussage ist daher wahr.",
+      "Digital Business bezeichnet die Digitalisierung des Unternehmens entlang der Dimensionen und Strategie – nicht bloß eine Website ohne inhaltlichen Wandel von Prozessen, Kundenbeziehung oder Angeboten.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -386,7 +386,7 @@
       "Wiederholbarkeit gehört zu den Merkmalen von Geschäftsprozessen.",
       "Ohne Beitrag zu einem betriebswirtschaftlichen Ziel fehlt einem Ablauf das zentrale Wertmerkmal eines Geschäftsprozesses.",
       "Logisch zusammenhängende Aktivitäten sind ein Definitionsbestandteil des Geschäftsprozesses.",
-      "Ein einmaliger, zufälliger Handgriff ohne Zielbezug und ohne wiederholbaren Ablauf erfüllt die Geschäftsprozess-Definition vollständig."
+      "Dokumentation eines Prozesses dient vor allem dazu, Abläufe vor den Mitarbeitenden geheim zu halten."
     ],
     "answer_key": [
       false,
@@ -400,7 +400,7 @@
       "Geschäftsprozesse können wiederholt durchgeführt werden. Wiederholbarkeit ist Teil der Definition.\n\nDie Aussage ist daher wahr.",
       "Der Ablauf muss einen Beitrag (Wert) zu einem betriebswirtschaftlichen Ziel leisten. Fehlt dieser Ziel- und Wertbezug, fehlt das Kernmerkmal.\n\nDie Aussage ist daher wahr.",
       "Es handelt sich um mehrere logisch zusammenhängende Aktivitäten – der Zusammenhang ist definitionsbildend.\n\nDie Aussage ist daher wahr.",
-      "Ein einmaliger Zufallsgriff ohne Zielbezug, ohne Wiederholbarkeit und ohne klaren Anfang/Ende erfüllt die Definition nicht. Geschäftsprozesse sind strukturierte, wertbezogene, wiederholbare Abläufe.\n\nDie Aussage ist daher falsch."
+      "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren – nicht, Abläufe geheim zu halten. Kommunikation und Nachvollziehbarkeit sind der Zweck.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -415,7 +415,7 @@
       "Ein digital unterstützter Bestellprozess im Lager und in der Kommissionierung ist primär der Backstage-Dimension zuzuordnen.",
       "Ein Service, der Nutzeranforderungen per App und Scanner erfasst, um Passformwünsche gezielter zu erfüllen, gehört zur Frontstage-Logik.",
       "Die Erweiterung eines analogen Produkts um eine digitale Erkundungsmission betrifft die Dimension der Produkt- bzw. Dienstleistungsdigitalisierung.",
-      "Alle drei Dimensionen beschreiben ausschließlich die interne Kostenrechnung und haben keinen Bezug zu Kunden oder Produkten."
+      "Unternehmen müssen stets alle drei Dimensionen gleichzeitig und ohne Schwerpunktsetzung maximal ausbauen, sonst entsteht keine Digitalisierungsstrategie."
     ],
     "answer_key": [
       false,
@@ -428,8 +428,8 @@
       "Die Dimensionen ergänzen einander; Frontstage ersetzt Backstage nicht. Interne Prozesse bleiben für die Wertschöpfung nötig, auch wenn die Kundenschnittstelle digitalisiert wird.\n\nDie Aussage ist daher falsch.",
       "Lager, Kommissionierung und interne Bestellabwicklung sind Prozesse hinter den Kulissen – klassische Backstage-Unterstützung der Wertschöpfung.\n\nDie Aussage ist daher wahr.",
       "Erfassung und gezielte Berücksichtigung von Nutzeranforderungen ist externer Fokus und Kundenorientierung – Frontstage.\n\nDie Aussage ist daher wahr.",
-      "Die Erweiterung des Produkterlebnisses selbst (nicht nur des internen Ablaufs oder der reinen Kundenschnittstelle) ist die dritte Dimension: Digitalisierung von Produkt/Dienstleistung.\n\nDie Aussage ist daher wahr.",
-      "Die drei Dimensionen umfassen Backstage-Prozesse, Frontstage-Kundenverbindung und smarte Produkte/Dienstleistungen – weit mehr als interne Kostenrechnung. Die Verengung ist falsch.\n\nDie Aussage ist daher falsch."
+      "Die Erweiterung des Produkterlebnisses selbst ist die dritte Dimension: Digitalisierung von Produkt bzw. Dienstleistung.\n\nDie Aussage ist daher wahr.",
+      "Strategie kann aus der gezielten Konzentration auf eine oder mehrere Dimensionen abgeleitet werden. Zwang zu allen drei Dimensionen ohne Schwerpunkt ist nicht die beschriebene Logik.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -441,24 +441,24 @@
     "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
     "statements": [
       "Digitale Transformation umfasst Veränderungen nicht nur in der Wirtschaft, sondern auch in Verwaltung und privatem Bereich.",
-      "Digitalisierung meint nur die Anschaffung von Hardware; ob sich Abläufe oder Angebote ändern, ist für den Begriff unerheblich.",
       "Informations- und Kommunikationstechnologie ist Voraussetzung vieler vernetzter Alltags- und Unternehmensszenarien.",
-      "„Ubiquitous computing“ betont die Allgegenwärtigkeit von Rechensystemen, nicht deren vollständige Abwesenheit.",
-      "Wenn Technologie den Morgenablauf, den Handel und die Produktion durchzieht, spricht das gegen die Idee allgegenwärtiger digitaler Systeme."
+      "„Ubiquitous computing“ betont die Allgegenwärtigkeit von Rechensystemen.",
+      "Digitalisierung meint nur die Anschaffung von Hardware; ob sich Abläufe oder Angebote ändern, ist für den Begriff unerheblich.",
+      "Allgegenwärtigkeit digitaler Systeme gilt ausschließlich für Smartphones im Privatbesitz und nicht für Unternehmenssysteme."
     ],
     "answer_key": [
       true,
+      true,
+      true,
       false,
-      true,
-      true,
       false
     ],
     "tactical_explanations": [
       "Die Definition nennt ausdrücklich Teile der Wirtschaft, der Verwaltung und des privaten Bereichs als Orte der durch Digitalisierung vorangetriebenen Veränderung.\n\nDie Aussage ist daher wahr.",
-      "Digitalisierung ist die Anwendung digitaler IKT und die damit verbundene Veränderung. Bloße Hardwarebeschaffung ohne Bezug zu Anwendung und Wandel trifft den Begriff nicht.\n\nDie Aussage ist daher falsch.",
       "Ohne IKT wären die beschriebenen vernetzten Szenarien nicht möglich – IKT ist die technische Voraussetzung.\n\nDie Aussage ist daher wahr.",
-      "Der Begriff wird gerade als Allgegenwärtigkeit von Rechensystemen eingeführt und als treffend bewertet – das Gegenteil von Abwesenheit.\n\nDie Aussage ist daher wahr.",
-      "Wenn Technologie Alltag, Handel und Produktion durchzieht, stützt das die Allgegenwärtigkeit, widerspricht ihr nicht. Die Aussage dreht die Schlussfolgerung um.\n\nDie Aussage ist daher falsch."
+      "Der Begriff wird gerade als Allgegenwärtigkeit von Rechensystemen eingeführt und als treffend bewertet.\n\nDie Aussage ist daher wahr.",
+      "Digitalisierung ist die Anwendung digitaler IKT und die damit verbundene Veränderung. Bloße Hardwarebeschaffung ohne Bezug zu Anwendung und Wandel trifft den Begriff nicht.\n\nDie Aussage ist daher falsch.",
+      "Allgegenwärtigkeit bezieht sich auf Rechensysteme insgesamt – Alltag und Unternehmen. Die Verengung auf private Smartphones ist zu eng.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -473,7 +473,7 @@
       "Eine digitale Erkundungsmission, die je nach Verlauf unterschiedliche Bauweisen ermöglicht, kann das Erlebnis „smart“ erweitern.",
       "Eine smarte Erweiterung kann die Bindung zum Produkt steigern und ein positiv digitalisiertes Kundenerlebnis schaffen.",
       "Jede digitale Datei zu einem Produkt ist automatisch die maximale Form der Erlebnisdigitalisierung.",
-      "Die dritte Dimension betrifft ausschließlich die Gehaltsabrechnung der Mitarbeitenden und nicht Produkte oder Dienstleistungen."
+      "Wer ausschließlich Frontstage digitalisiert, hat damit zwingend auch Backstage-Prozesse und Produkt-Digitalisierung bereits vollständig abgedeckt."
     ],
     "answer_key": [
       true,
@@ -483,11 +483,11 @@
       false
     ],
     "tactical_explanations": [
-      "Die PDF-Anleitung wird ausdrücklich als einfache digitale Ergänzung zum analogen Produkt genannt – Digitalisierung im einfachsten Fall.\n\nDie Aussage ist daher wahr.",
+      "Die PDF-Anleitung wird ausdrücklich als einfache digitale Ergänzung zum analogen Produkt genannt.\n\nDie Aussage ist daher wahr.",
       "Die digitale Erkundungsmission mit unterschiedlichem Verlauf ist das Beispiel für eine Erweiterung, die sich „smart“ anfühlen kann.\n\nDie Aussage ist daher wahr.",
-      "Durch die smarte Erweiterung kann die Bindung steigen und ein positiv digitalisiertes Kundenerlebnis entstehen – der „beste Fall“ der Dimension.\n\nDie Aussage ist daher wahr.",
+      "Durch die smarte Erweiterung kann die Bindung steigen und ein positiv digitalisiertes Kundenerlebnis entstehen.\n\nDie Aussage ist daher wahr.",
       "Nicht jede digitale Datei ist die maximale Form. Die Stufung von einfacher Ergänzung bis erlebnisprägender Erweiterung zeigt Abstufungen; Maximum ist nicht automatisch erreicht.\n\nDie Aussage ist daher falsch.",
-      "Die dritte Dimension richtet sich auf Produkte und Dienstleistungen als Ergebnis der Wertschöpfung – nicht auf die Gehaltsabrechnung. Die Verengung ist falsch.\n\nDie Aussage ist daher falsch."
+      "Die Dimensionen sind unterscheidbar und nicht automatisch mitabgedeckt. Konzentration auf eine Dimension ersetzt nicht die anderen.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -498,25 +498,25 @@
     "title": "Prüfungsdruck: Dimensionen, Strategie und Erfolgskriterium",
     "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
     "statements": [
-      "Wer ausschließlich Frontstage digitalisiert, hat damit zwingend auch die Backstage-Prozesse und die Produkt-Digitalisierung bereits vollständig abgedeckt.",
       "Eine Digitalisierungsstrategie entsteht nur dann, wenn alle drei Dimensionen gleichzeitig und ohne Schwerpunktsetzung bearbeitet werden.",
       "Erfolgreiche digitale Transformation erweitert sinnvolle Aspekte wie Arbeitsschrittfolgen, Kommunikation oder Kundenbedürfnisse durch digitale Technologien.",
-      "Wenn die Transformation dem Nutzen und Erlebnis im Weg steht, widerspricht das dem beschriebenen Erfolgskriterium.",
-      "„Digital Business“ bezeichnet im Gesamten die Digitalisierung des Unternehmens infolge dieser strategischen Ausrichtung."
+      "„Digital Business“ bezeichnet im Gesamten die Digitalisierung des Unternehmens infolge dieser strategischen Ausrichtung.",
+      "Als Kunde im Frontstage-Sinn kommt ausschließlich eine Privatperson infrage; Unternehmen und öffentliche Institutionen scheiden aus.",
+      "Backstage, Frontstage und Produkt-Digitalisierung sind drei unterscheidbare Angriffsflächen für Digitalisierungsvorhaben; sie zu vermengen, erschwert eine klare Strategie."
     ],
     "answer_key": [
       false,
+      true,
+      true,
       false,
-      true,
-      true,
       true
     ],
     "tactical_explanations": [
-      "Die Dimensionen sind unterscheidbar und nicht automatisch mitabgedeckt. Konzentration auf eine Dimension ersetzt nicht die anderen; Strategie kann bewusst Schwerpunkte setzen.\n\nDie Aussage ist daher falsch.",
       "Strategie kann aus der gezielten Konzentration auf eine oder mehrere Dimensionen abgeleitet werden. Zwang zu allen drei Dimensionen ohne Schwerpunkt ist nicht die beschriebene Logik.\n\nDie Aussage ist daher falsch.",
       "Genannt werden unter anderem Abfolge von Arbeitsschritten, Kommunikation und Berücksichtigung von Kundenbedürfnissen als sinnvolle Erweiterungsfelder durch digitale Technologien.\n\nDie Aussage ist daher wahr.",
-      "Erfolg heißt: Die Transformation soll nicht im Weg stehen, sondern Nutzen und Erlebnis innovativ erweitern. Steht sie im Weg, verfehlt man dieses Kriterium.\n\nDie Aussage ist daher wahr.",
-      "Im Gesamten führt die dimensionale/strategische Arbeit zur Digitalisierung des Unternehmens – „Digital Business“.\n\nDie Aussage ist daher wahr."
+      "Im Gesamten führt die dimensionale/strategische Arbeit zur Digitalisierung des Unternehmens – „Digital Business“.\n\nDie Aussage ist daher wahr.",
+      "Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein. Die Verengung auf Privatpersonen ist falsch.\n\nDie Aussage ist daher falsch.",
+      "Die drei Dimensionen strukturieren gerade unterschiedliche Vorhaben. Vermengung ohne Unterscheidung macht Schwerpunktsetzung und Strategieableitung schwerer.\n\nDie Aussage ist daher wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -530,7 +530,7 @@
       "Weil Frontstage kundenorientiert ist, kann der Kunde begrifflich nur eine Privatperson sein; Unternehmen und öffentliche Institutionen scheiden aus.",
       "Ein Geschäftsprozess mit den alternativen Abschlüssen „Versand“ und „Abholung“ verletzt die Definition, weil nur ein Ende erlaubt wäre.",
       "Digitale Systeme können intern je nach Lagerstand weitere Prozesse anstoßen und den Kunden über den Status informieren.",
-      "Dokumentation und Prozessmodell dienen unter anderem der Kommunikation und dem Überblick, nicht der reinen Geheimhaltung aller Abläufe vor Mitarbeitenden.",
+      "Dokumentation und Prozessmodell dienen unter anderem der Kommunikation und dem Überblick.",
       "Wertschöpfung im internen Fokus meint, dass aus dem Ressourceneinsatz Produkte und Dienstleistungen erstellt und damit Wert geschaffen wird."
     ],
     "answer_key": [
@@ -543,8 +543,8 @@
     "tactical_explanations": [
       "Ausdrücklich: Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein. Die Verengung auf Privatpersonen ist falsch.\n\nDie Aussage ist daher falsch.",
       "Ein oder mehrere definierte Enden sind erlaubt. Versand und Abholung als alternative Enden passen zur Definition und verletzen sie nicht.\n\nDie Aussage ist daher falsch.",
-      "Im Bestellbeispiel können je nach Lagerstand weitere Prozesse angestoßen und Statusinformationen an den Kunden gegeben werden – digitale Steuerung über den Erstschritt hinaus.\n\nDie Aussage ist daher wahr.",
-      "Dokumentation hilft zu kommunizieren; Prozessmodelle geben Überblick. Das Gegenteil – Abläufe vor Mitarbeitenden geheim zu halten – ist nicht der Zweck.\n\nDie Aussage ist daher wahr.",
+      "Im Bestellbeispiel können je nach Lagerstand weitere Prozesse angestoßen und Statusinformationen an den Kunden gegeben werden.\n\nDie Aussage ist daher wahr.",
+      "Dokumentation hilft zu kommunizieren; Prozessmodelle geben Überblick. Das sind zentrale Zwecke der digitalen Prozessabbildung.\n\nDie Aussage ist daher wahr.",
       "Interner Fokus: wirtschaftliche Ressourcennutzung zur Erstellung von Produkten und Dienstleistungen; es soll Wert geschaffen werden (Wertschöpfung).\n\nDie Aussage ist daher wahr."
     ],
     "difficulty_level": "5/5",
@@ -557,24 +557,24 @@
     "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
     "statements": [
       "Technologieeinsatz verändert interne Prozesse, Kundenkontakt und die Gestaltung von Marktangeboten – diese Felder gemeinsam beschreiben den unternehmerischen Wandel der digitalen Transformation.",
-      "Eine Aussage der Form „Digitalisierung ist nur private Unterhaltungselektronik und berührt weder Unternehmensprozesse noch Verwaltung“ widerspricht der definierten Reichweite.",
-      "Backstage, Frontstage und Produkt-Digitalisierung sind drei unterscheidbare Angriffsflächen für Digitalisierungsvorhaben; sie zu vermengen, erschwert eine klare Strategie.",
       "Wenn ein Unternehmen sinnvolle Abläufe digital erweitert, die Kundenschnittstelle verbessert und Produkte erlebbarer macht, bewegt es sich entlang der drei Dimensionen Richtung Digital Business.",
-      "Erfolgreiche digitale Transformation besteht darin, Technologie um ihrer selbst willen einzuführen, auch wenn Nutzen und Kundenerlebnis dadurch sinken."
+      "Erfolgreiche digitale Transformation besteht darin, Technologie um ihrer selbst willen einzuführen, auch wenn Nutzen und Kundenerlebnis dadurch sinken.",
+      "Eine Verengung der Digitalisierung auf reine Unterhaltungselektronik ohne Bezug zu Unternehmensprozessen oder Verwaltung widerspricht der definierten Reichweite.",
+      "Ein digital unterstützter Geschäftsprozess entsteht erst dann, wenn Arbeitsschritte durch Systeme erweitert bzw. gesteuert werden – nicht schon durch bloße Absichtserklärungen ohne Technikeinsatz."
     ],
     "answer_key": [
       true,
       true,
+      false,
       true,
-      true,
-      false
+      true
     ],
     "tactical_explanations": [
-      "Genannt werden Steuerung interner Prozesse, Kundenkontakt/Bedürfnisse sowie Gestaltung und Markteinführung von Produkten und Dienstleistungen – die drei Veränderungsfelder des unternehmerischen Wandels.\n\nDie Aussage ist daher wahr.",
-      "Die Definition umfasst Wirtschaft, Verwaltung und privaten Bereich sowie Unternehmensbeispiele. Die Verengung auf reine Unterhaltungselektronik ohne Prozess- und Verwaltungsbezug ist unzutreffend.\n\nDie Aussage ist daher wahr.",
-      "Die drei Dimensionen strukturieren gerade unterschiedliche Vorhaben. Vermengung ohne Unterscheidung macht Schwerpunktsetzung und Strategieableitung schwerer.\n\nDie Aussage ist daher wahr.",
+      "Genannt werden Steuerung interner Prozesse, Kundenkontakt/Bedürfnisse sowie Gestaltung und Markteinführung von Produkten und Dienstleistungen – die Veränderungsfelder des unternehmerischen Wandels.\n\nDie Aussage ist daher wahr.",
       "Konzentration auf Dimensionen, Strategieableitung und Digitalisierung des Unternehmens (Digital Business) bilden den beschriebenen Gesamtbogen.\n\nDie Aussage ist daher wahr.",
-      "Erfolg heißt sinnvolle Erweiterung und innovatives Stärken von Nutzen und Erlebnis – nicht Technik um ihrer selbst willen bei sinkendem Nutzen. Die Aussage verfehlt das Erfolgskriterium.\n\nDie Aussage ist daher falsch."
+      "Erfolg heißt sinnvolle Erweiterung und innovatives Stärken von Nutzen und Erlebnis – nicht Technik um ihrer selbst willen bei sinkendem Nutzen.\n\nDie Aussage ist daher falsch.",
+      "Die Definition umfasst Wirtschaft, Verwaltung und privaten Bereich sowie Unternehmensbeispiele. Die Verengung auf reine Unterhaltungselektronik ohne Prozess- und Verwaltungsbezug ist unzutreffend.\n\nDie Aussage ist daher wahr.",
+      "Ein digital unterstützter Geschäftsprozess setzt voraus, dass Arbeitsschritte digital unterstützt und durch Systeme erweitert bzw. gesteuert werden. Bloße Absicht ohne Technikeinsatz genügt nicht.\n\nDie Aussage ist daher wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
