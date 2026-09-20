@@ -338,11 +338,11 @@ function CustomMockBuilderPage() {
                     const allOn = selectedInCh === ids.length && ids.length > 0;
                     return (
                       <li key={`${subject}-${ch.num}`} className="overflow-hidden rounded-xl border border-border">
-                        <div className="flex items-stretch bg-secondary/30">
+                        <div className="flex min-w-0 items-stretch bg-secondary/30">
                           <button
                             type="button"
                             onClick={() => setExpanded((e) => ({ ...e, [ch.num]: !open }))}
-                            className="flex flex-1 items-center gap-2 px-3 py-2.5 text-left sm:px-4"
+                            className="flex min-w-0 flex-1 items-center gap-2 px-3 py-2.5 text-left sm:px-4"
                           >
                             <ChevronDown
                               className={cn(
@@ -350,13 +350,17 @@ function CustomMockBuilderPage() {
                                 open ? "rotate-0" : "-rotate-90",
                               )}
                             />
-                            <span className="font-display text-sm font-semibold">{ch.heading}</span>
+                            <span className="shrink-0 whitespace-nowrap font-display text-sm font-semibold">
+                              {ch.heading}
+                            </span>
                             {ch.heading !== ch.title && (
-                              <span className="truncate text-xs text-muted-foreground">{ch.title}</span>
+                              <span className="min-w-0 flex-1 truncate text-xs text-muted-foreground">
+                                {ch.title}
+                              </span>
                             )}
                             {selectedInCh > 0 && (
                               <span
-                                className="ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold"
+                                className={`ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold`}
                                 style={{ backgroundColor: `color-mix(in oklab, ${accent} 18%, var(--card))`, color: accent }}
                               >
                                 {selectedInCh}/{ids.length}
