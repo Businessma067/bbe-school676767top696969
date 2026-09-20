@@ -8,6 +8,7 @@ import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
 import type { Lang } from "@/lib/i18n/dictionary";
 import {
   getLocaleFromPath,
+  isStudyContentPath,
   localizePath,
   stripLocalePrefix,
   type LocalePrefix,
@@ -113,9 +114,11 @@ export function normalizePathname(pathname: string): string {
   return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
 }
 
-function prettifySegment(segment: string, wiso = false): string {
+function prettifySegment(segment: string, wisoStudy = false): string {
   const decoded = decodeURIComponent(segment);
-  if (wiso && WISO_SEGMENT_LABELS[decoded]) return WISO_SEGMENT_LABELS[decoded];
+  // German WiSo labels only on study surfaces (PageTranslator is off there).
+  // Marketing /de|/uk WiSo pages keep English labels so PageTranslator can localize them.
+  if (wisoStudy && WISO_SEGMENT_LABELS[decoded]) return WISO_SEGMENT_LABELS[decoded];
   if (SEGMENT_LABELS[decoded]) return SEGMENT_LABELS[decoded];
   if (SUBJECT_TITLE[decoded]) return SUBJECT_TITLE[decoded];
   if (isCustomExamId(decoded)) return "Custom Mock";
@@ -132,14 +135,14 @@ function withLastFlags(crumbs: Omit<BreadcrumbCrumb, "isLast">[]): BreadcrumbCru
   }));
 }
 
-function labelForSegment(segment: string, ctx: BreadcrumbContext, wiso = false): string {
+function labelForSegment(segment: string, ctx: BreadcrumbContext, wisoStudy = false): string {
   const decoded = decodeURIComponent(segment);
   if (isCustomExamId(decoded)) {
     return ctx.customMockTitle ?? "Custom Mock";
   }
   const exam = getExamById(decoded);
   if (exam) return exam.title;
-  return prettifySegment(decoded, wiso);
+  return prettifySegment(decoded, wisoStudy);
 }
 
 function withLocale(to: string | null, locale: LocalePrefix | null): string | null {
@@ -195,7 +198,7 @@ export function buildBreadcrumbs(
   }
 
   const segments = path.split("/").filter(Boolean);
-  const isWiso = segments[0] === "wiso";
+  const wisoStudy = segments[0] === "wiso" && isStudyContentPath(path);
 
   // Flat BBE Exam hub URLs → Home / BBE Exam / Page
   if (segments.length === 1 && BBE_EXAM_HUB_SEGMENTS.has(segments[0]!)) {
@@ -209,7 +212,7 @@ export function buildBreadcrumbs(
 
   return withLastFlags(
     segments.map((seg, i) => ({
-      label: labelForSegment(seg, ctx, isWiso),
+      label: labelForSegment(seg, ctx, wisoStudy),
       to:
         i === segments.length - 1
           ? null

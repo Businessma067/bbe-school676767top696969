@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { ClientOnly, ScriptOnce } from "@tanstack/react-router";
+import { ClientOnly, ScriptOnce, useRouterState } from "@tanstack/react-router";
 
 import { cn } from "@/lib/utils";
+import { isWisoPath } from "@/lib/exam-track";
 
 /** Next BBE entrance exam — 30 June 2027, 15:00 CEST (Vienna). */
 const EXAM_AT_MS = new Date("2027-06-30T15:00:00+02:00").getTime();
@@ -46,10 +47,12 @@ function CountdownView({
   remaining,
   className,
   placeholder = false,
+  track = "bbe",
 }: {
   remaining: Remaining;
   className?: string;
   placeholder?: boolean;
+  track?: "bbe" | "wiso";
 }) {
   const units: { key: string; value: string; label: string }[] = [
     {
@@ -74,6 +77,13 @@ function CountdownView({
     },
   ];
 
+  const examName = track === "wiso" ? "WiSo" : "BBE";
+  const untilLabel =
+    track === "wiso"
+      ? "Until the 2027 WiSo exam · 30 June"
+      : "Until the 2027 BBE exam · 30 June";
+  const ariaCountdown = `Countdown to the 2027 ${examName} exam`;
+
   return (
     <div
       className={cn("flex flex-col items-center gap-2", className)}
@@ -83,16 +93,14 @@ function CountdownView({
       data-exam-at={String(EXAM_AT_MS)}
       aria-label={
         placeholder
-          ? "Countdown to the 2027 BBE exam"
+          ? ariaCountdown
           : remaining.done
             ? "Exam day has arrived"
-            : `Countdown to the 2027 BBE exam: ${remaining.days} days, ${remaining.hours} hours, ${remaining.minutes} minutes, ${remaining.seconds} seconds`
+            : `${ariaCountdown}: ${remaining.days} days, ${remaining.hours} hours, ${remaining.minutes} minutes, ${remaining.seconds} seconds`
       }
     >
       <p className="text-[11px] font-medium tracking-wide text-taupe sm:text-xs">
-        {remaining.done && !placeholder
-          ? "Exam day"
-          : "Until the 2027 BBE exam · 30 June"}
+        {remaining.done && !placeholder ? "Exam day" : untilLabel}
       </p>
       <div className="flex items-stretch gap-2 sm:gap-3">
         {units.map((u, i) => (
@@ -128,6 +136,8 @@ function CountdownView({
  * participates in an SSR text mismatch. Same pattern as the original working timer.
  */
 function ExamCountdownLive({ className }: { className?: string }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const track = isWisoPath(pathname) ? "wiso" : "bbe";
   const [remaining, setRemaining] = useState<Remaining>(() => getRemaining());
 
   useEffect(() => {
@@ -138,15 +148,18 @@ function ExamCountdownLive({ className }: { className?: string }) {
     return () => window.clearInterval(id);
   }, []);
 
-  return <CountdownView remaining={remaining} className={className} />;
+  return <CountdownView remaining={remaining} className={className} track={track} />;
 }
 
 function ExamCountdownFallback({ className }: { className?: string }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const track = isWisoPath(pathname) ? "wiso" : "bbe";
   return (
     <CountdownView
       remaining={PLACEHOLDER}
       className={className}
       placeholder
+      track={track}
     />
   );
 }
