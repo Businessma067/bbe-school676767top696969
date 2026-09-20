@@ -108,9 +108,10 @@ export function MatchingSubjectView({
     subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
   );
   const [round, setRound] = useState(1);
-  const [pairs, setPairs] = useState<Pair[]>(() =>
-    pickRound(poolFromSections(subject.sections, sectionId), ROUND_SIZE),
-  );
+  const [pairs, setPairs] = useState<Pair[]>(() => {
+    const pool = poolFromSections(subject.sections, sectionId);
+    return demoRevealLocked ? pool.slice(0, 1) : pickRound(pool, ROUND_SIZE);
+  });
   const [leftOrder, setLeftOrder] = useState<string[]>([]);
   const [rightOrder, setRightOrder] = useState<string[]>([]);
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
@@ -145,11 +146,14 @@ export function MatchingSubjectView({
   const startRound = useCallback(
     (nextSection: string | "all", nextRound?: number) => {
       const pool = poolFromSections(subject.sections, nextSection);
-      const picked = pickRound(pool, ROUND_SIZE);
+      // Demo: fixed first pair only — no shuffle / multi-card rounds.
+      const picked = demoRevealLocked
+        ? pool.slice(0, 1)
+        : pickRound(pool, ROUND_SIZE);
       const ids = picked.map((p) => p.id);
       setPairs(picked);
-      setLeftOrder(shuffleCopy(ids));
-      setRightOrder(shuffleCopy(ids));
+      setLeftOrder(demoRevealLocked ? ids : shuffleCopy(ids));
+      setRightOrder(demoRevealLocked ? ids : shuffleCopy(ids));
       setSelectedLeft(null);
       setSelectedRight(null);
       setMatched(new Set());
@@ -169,12 +173,18 @@ export function MatchingSubjectView({
       }
       if (nextRound != null) setRound(nextRound);
     },
-    [subject.sections],
+    [subject.sections, demoRevealLocked],
   );
 
   useEffect(() => {
     startRound(sectionId, 1);
   }, [sectionId, startRound]);
+
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
+  }, [demoRevealLocked]);
 
   const measureAnchors = useCallback(() => {
     const board = boardRef.current;
@@ -531,7 +541,10 @@ export function MatchingSubjectView({
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
@@ -539,7 +552,10 @@ export function MatchingSubjectView({
               </button>
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round + 1);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >
@@ -554,7 +570,10 @@ export function MatchingSubjectView({
               active={sectionId === "all"}
               label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
-              onClick={() => setSectionId("all")}
+              onClick={() => {
+                if (attemptDemoNav()) return;
+                setSectionId("all");
+              }}
             />
             {subject.sections.map((s) => (
               <SectionChip
@@ -562,7 +581,10 @@ export function MatchingSubjectView({
                 active={sectionId === s.id}
                 label={s.title}
                 accent={subject.accent}
-                onClick={() => setSectionId(s.id)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  setSectionId(s.id);
+                }}
               />
             ))}
           </div>
@@ -696,7 +718,10 @@ export function MatchingSubjectView({
               </p>
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round + 1);
+                }}
                 className="mt-4 inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 text-sm font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >

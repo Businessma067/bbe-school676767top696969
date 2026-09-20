@@ -117,13 +117,14 @@ export function FlashcardSubjectView({
   const [sectionId, setSectionId] = useState<string | "all">(() =>
     vocabularyModes ? (subject.sections[0]?.id ?? "all") : "all",
   );
-  const [deck, setDeck] = useState<DeckCard[]>(() =>
-    buildDeck(
+  const [deck, setDeck] = useState<DeckCard[]>(() => {
+    const built = buildDeck(
       progressKey,
       subject.sections,
       vocabularyModes ? (subject.sections[0]?.id ?? "all") : "all",
-    ),
-  );
+    );
+    return demoRevealLocked ? built.slice(0, 1) : built;
+  });
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [progress, setProgress] = useState<FlashcardProgressMap>({});
@@ -163,12 +164,14 @@ export function FlashcardSubjectView({
 
   useEffect(() => {
     const prevTerm = cardRef.current?.term;
-    const next = buildDeck(progressKey, subject.sections, sectionId);
+    let next = buildDeck(progressKey, subject.sections, sectionId);
+    // Demo: only the first card is available.
+    if (demoRevealLocked) next = next.slice(0, 1);
     setDeck(next);
 
     // English modes share the same words — stay on the current word when switching.
     let nextIndex = 0;
-    if (vocabularyModes && prevTerm) {
+    if (!demoRevealLocked && vocabularyModes && prevTerm) {
       const match = next.findIndex((c) => c.term === prevTerm);
       if (match >= 0) nextIndex = match;
     }
@@ -183,7 +186,7 @@ export function FlashcardSubjectView({
     exitLockRef.current = false;
     pointerIdRef.current = null;
     if (!vocabularyModes) setSeen(0);
-  }, [sectionId, subject.sections, progressKey, vocabularyModes]);
+  }, [sectionId, subject.sections, progressKey, vocabularyModes, demoRevealLocked]);
 
   const attemptFlip = useCallback(() => {
     if (exitLockRef.current) return;
@@ -192,6 +195,13 @@ export function FlashcardSubjectView({
       return;
     }
     setFlipped((f) => !f);
+  }, [demoRevealLocked]);
+
+  /** Demo: any navigation / mix-up beyond the first sample opens the unlock lock. */
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
   }, [demoRevealLocked]);
 
   const card = deck[index];
@@ -301,6 +311,7 @@ export function FlashcardSubjectView({
   );
 
   const goRelative = (delta: number) => {
+    if (attemptDemoNav()) return;
     if (!deck.length || exitLockRef.current) return;
     setFlipped(false);
     resetDragState();
@@ -313,6 +324,7 @@ export function FlashcardSubjectView({
   };
 
   const advanceWeighted = () => {
+    if (attemptDemoNav()) return;
     if (!deck.length || exitLockRef.current) return;
     const exclude = cardRef.current?.key;
     setFlipped(false);
@@ -533,7 +545,7 @@ export function FlashcardSubjectView({
               </h1>
               <p className="mt-2 text-sm text-muted-foreground">{subject.description}</p>
             </div>
-            {subject.downloadHref && (
+            {subject.downloadHref && !demoRevealLocked && (
               <a
                 href={subject.downloadHref}
                 download
@@ -568,7 +580,10 @@ export function FlashcardSubjectView({
                       <button
                         key={s.id}
                         type="button"
-                        onClick={() => setSectionId(s.id)}
+                        onClick={() => {
+                          if (attemptDemoNav()) return;
+                          setSectionId(s.id);
+                        }}
                         className={
                           "rounded-md border px-3 py-2 text-xs font-semibold transition-colors " +
                           (active
@@ -594,7 +609,10 @@ export function FlashcardSubjectView({
                 </label>
                 <select
                   value={sectionId}
-                  onChange={(e) => setSectionId(e.target.value)}
+                  onChange={(e) => {
+                    if (attemptDemoNav()) return;
+                    setSectionId(e.target.value);
+                  }}
                   className="min-w-0 w-full flex-1 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30 sm:min-w-[220px]"
                 >
                   {sectionOptions.map((o) => (
@@ -608,6 +626,7 @@ export function FlashcardSubjectView({
             <button
               type="button"
               onClick={() => {
+                if (attemptDemoNav()) return;
                 setDeck((prev) => shuffleCopy(prev));
                 queueRef.current = [];
                 setIndex(0);
@@ -621,6 +640,7 @@ export function FlashcardSubjectView({
             <button
               type="button"
               onClick={() => {
+                if (attemptDemoNav()) return;
                 clearProgress(progressKey);
                 setProgress({});
                 progressRef.current = {};
