@@ -94,6 +94,24 @@ export function trackHome(track: ExamTrack): string {
   return track === "wiso" ? WISO_HOME : BBE_HOME;
 }
 
+/** Default UI / URL language for each exam track (BBE → EN, WiSo → DE). */
+export function trackUiLang(track: ExamTrack): "en" | "de" {
+  return track === "wiso" ? "de" : "en";
+}
+
+/**
+ * When navigating into a track from outside it, return that track's default
+ * language (BBE → en, WiSo → de). Null when staying on the same track or
+ * targeting a neutral path.
+ */
+export function entryLangForDestination(to: string, fromPathname: string): "en" | "de" | null {
+  const toTrack = getExamTrackFromPath(to);
+  if (!toTrack) return null;
+  const fromTrack = getExamTrackFromPath(fromPathname);
+  if (fromTrack === toTrack) return null;
+  return trackUiLang(toTrack);
+}
+
 /**
  * Header / dashboard track when the URL is shared (`/dashboard`, `/account`).
  * Prefer the only course the account owns; for dual enrollments keep session.

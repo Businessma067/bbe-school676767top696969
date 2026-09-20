@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
-import { useRouterState } from "@tanstack/react-router";
+import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import {
   getExamTrackFromPath,
   pathForTrack,
   resolveNavTrack,
   storeExamTrack,
+  trackUiLang,
   type ExamTrack,
 } from "@/lib/exam-track";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
-import { cn } from "@/lib/utils";
+import { useLanguage } from "@/lib/i18n/context";
+import { getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { cn } from "@/lib/utils";
 
 export function ExamTrackSwitcher({ className }: { className?: string }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const search = useRouterState({ select: (s) => s.location.search });
-  const navigate = useLocalizedNavigate();
+  const navigate = useNavigate();
+  const { setLang } = useLanguage();
   const { hasLite, hasFull, hasWisoFull, ready } = useAccountNavTier();
   const [track, setTrack] = useState<ExamTrack>(() =>
     resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull }),
@@ -39,12 +42,16 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
     if (next === track) return;
     storeExamTrack(next);
     setTrack(next);
+    const lang = trackUiLang(next);
+    setLang(lang);
     const path = stripLocalePrefix(pathname);
     if (path === "/dashboard" || path.startsWith("/dashboard/")) {
       const tab = (search as { tab?: string } | undefined)?.tab;
+      const link = getLocaleLinkProps("/dashboard", lang);
       void navigate({
-        to: "/dashboard",
-        search: tab ? { tab } : {},
+        to: link.to as never,
+        params: link.params as never,
+        search: (tab ? { tab } : {}) as never,
         replace: true,
       });
       return;
@@ -53,7 +60,11 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
       return;
     }
     const target = pathForTrack(pathname, next);
-    void navigate({ to: target });
+    const link = getLocaleLinkProps(target, lang);
+    void navigate({
+      to: link.to as never,
+      params: link.params as never,
+    });
   };
 
   return (
@@ -108,6 +119,7 @@ export function TrackBrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <LocalizedLink
       to={home}
+      lang={trackUiLang(track)}
       aria-label={`${label} home`}
       className="group flex shrink-0 items-center gap-2 sm:gap-3"
       onClick={() => storeExamTrack(track)}
