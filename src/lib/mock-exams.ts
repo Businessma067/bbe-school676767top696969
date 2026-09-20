@@ -45,6 +45,12 @@ import {
   MOCK_EXAM_6_QUESTION_COUNT,
   buildMockExam6Questions,
 } from "@/lib/mock-exam-6-content";
+import {
+  WISO_MOCK_EXAM_1_CONTENT_REV,
+  WISO_MOCK_EXAM_1_POINTS_TOTAL,
+  WISO_MOCK_EXAM_1_QUESTION_COUNT,
+  buildWisoMockExam1Questions,
+} from "@/lib/wiso-mock-exam-1-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -153,13 +159,35 @@ export const MOCK_EXAMS: MockExamSummary[] = [
   },
 ];
 
+/** Curated WiSo Aufnahmeprüfung mocks (German track). */
+export const WISO_MOCK_EXAMS: MockExamSummary[] = [
+  {
+    id: "wiso-mock-1",
+    title: "WiSo Mock Exam 1",
+    questionCount: WISO_MOCK_EXAM_1_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: WISO_MOCK_EXAM_1_POINTS_TOTAL,
+    contentRev: WISO_MOCK_EXAM_1_CONTENT_REV,
+  },
+];
+
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
   // lite users see the first 2 exams, full users see all curated mocks
   return tier === "full" ? MOCK_EXAMS : MOCK_EXAMS.filter((e) => e.tier === "lite");
 }
 
+export function getWisoExamsForTier(tier: ProductTier | "none"): MockExamSummary[] {
+  if (tier !== "full") return [];
+  return WISO_MOCK_EXAMS;
+}
+
 export function getExamById(id: string): MockExamSummary | undefined {
-  return MOCK_EXAMS.find((e) => e.id === id);
+  return MOCK_EXAMS.find((e) => e.id === id) ?? WISO_MOCK_EXAMS.find((e) => e.id === id);
+}
+
+export function isWisoCuratedMockId(id: string): boolean {
+  return id.startsWith("wiso-mock-");
 }
 
 export function summaryFromCustomMock(row: CustomMockRow): MockExamSummary {
@@ -215,6 +243,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "mock-6") {
     return buildMockExam6Questions(examId);
+  }
+  if (examId === "wiso-mock-1") {
+    return buildWisoMockExam1Questions(examId);
   }
 
   const rand = makeRandom(examId);

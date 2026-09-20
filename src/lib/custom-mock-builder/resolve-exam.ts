@@ -12,6 +12,7 @@ import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
 import {
   buildExamQuestions,
   getExamById,
+  isWisoCuratedMockId,
   summaryFromCustomMock,
   type ExamQuestion,
   type MockExamSummary,
@@ -76,6 +77,6 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
     durationSeconds: EXAM_SECONDS,
     pointsTotal,
     isCustom: false,
-    track: "bbe",
+    track: isWisoCuratedMockId(examId) ? "wiso" : "bbe",
   };
 }
