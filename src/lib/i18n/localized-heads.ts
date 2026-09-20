@@ -20,7 +20,6 @@ import { Route as WisoWuViennaRoute } from "@/routes/wiso.wu-vienna";
 import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course";
 import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice.index";
 import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
-import { Route as WisoMockBuilderRoute } from "@/routes/wiso.mock-builder";
 import { Route as DemoPracticeRoute } from "@/routes/demo-practice.index";
 import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
 import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
@@ -77,7 +76,6 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/wiso/products/full-course": () => headFrom(WisoFullCourseRoute),
   "/wiso/demo-practice": () => headFrom(WisoDemoPracticeRoute),
   "/wiso/mock-exams": () => headFrom(WisoMockExamsRoute),
-  "/wiso/mock-builder": () => headFrom(WisoMockBuilderRoute),
   "/parents": () => headFrom(ParentsRoute),
   "/important-features": () => headFrom(ImportantFeaturesRoute),
   "/features/answer-sheet": () => headFrom(AnswerSheetRoute),

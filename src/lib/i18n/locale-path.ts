@@ -31,7 +31,6 @@ export const LOCALIZABLE_PATHS = [
   "/wiso/products/full-course",
   "/wiso/demo-practice",
   "/wiso/mock-exams",
-  "/wiso/mock-builder",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
@@ -89,8 +88,9 @@ export function isLocalizablePath(pathname: string): pathname is LocalizablePath
 }
 
 /**
- * Course study surfaces that must stay in English (exam content + study tools).
- * Marketing pages like `/products/full-course` are not included.
+ * Course study surfaces that skip marketing PageTranslator / locale URLs
+ * (exam content + study tools). Marketing pages like `/products/full-course`
+ * are not included. WiSo study UI is authored in German.
  */
 export const STUDY_CONTENT_PATH_PREFIXES = [
   "/products/full-course-subjects",
@@ -107,6 +107,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/products/lite-bbe-course-english",
   "/products/lite-bbe-course-economics",
   "/products/custom-mock-builder",
+  "/wiso/mock-builder",
   "/mock-exams",
   "/flashcards",
   "/matching",
