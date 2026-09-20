@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "What economics book does WiSo use?",
     answer:
-      "WU publishes Wirtschaft verstehen. Was Wirtschaften im Allgemeinen und für Unternehmen im Besonderen bedeutet — Lernunterlage für das Aufnahmeverfahren (authors include Feurstein M.S., Fuhrmann B., Lampe M., Prettner K., Stagl S., Strembeck M.). A new PDF is issued each cycle (e.g. 2026/27), usually around late February.",
+      "WU publishes Wirtschaft verstehen. Was Wirtschaften im Allgemeinen und für Unternehmen im Besonderen bedeutet (Lernunterlage für das Aufnahmeverfahren; authors include Feurstein M.S., Fuhrmann B., Lampe M., Prettner K., Stagl S., Strembeck M.). A new PDF is issued each cycle (e.g. 2026/27), usually around late February.",
   },
   {
     question: "Is there an English section on WiSo?",
@@ -58,7 +58,7 @@ const faqs = [
   {
     question: "Does Fuhrmann mean WiSo equals BBE economics?",
     answer:
-      "Same lead author family as BBE’s Introduction to Business and Economics, and chapters 1 and 3 overlap conceptually — but chapters 2 and 4 (sustainability / digitalisation) are WiSo-specific, and the language of the exam is German.",
+      "Same lead author family as BBE’s Introduction to Business and Economics, and chapters 1 and 3 overlap conceptually, but chapters 2 and 4 (sustainability / digitalisation) are WiSo-specific, and the language of the exam is German.",
   },
   {
     question: "Is German a grammar test?",
@@ -132,7 +132,7 @@ const germanSkills = [
   },
   {
     title: "Interpretation",
-    body: "Decide whether a statement is supported, contradicted, or simply not implied by the text — partial credit punishes over-claiming.",
+    body: "Decide whether a statement is supported, contradicted, or simply not implied by the text, since partial credit punishes over-claiming.",
   },
   {
     title: "Argument structure",
@@ -148,7 +148,7 @@ export function WisoEconomicsGermanPage() {
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Economics & German: What to Study"
-      lead="Economics follows WU’s official Wirtschaft verstehen guide. The language pillar is academic German reading — analogous in skill to BBE English, but not the same content or vocabulary."
+      lead="Economics follows WU’s official Wirtschaft verstehen guide. The language pillar is academic German reading, which is analogous in skill to BBE English but not the same content or vocabulary."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Open WiSo demo</WisoPrimaryButton>
@@ -162,7 +162,7 @@ export function WisoEconomicsGermanPage() {
             WiSo’s content areas are wirtschaftliche Grundkenntnisse, Mathematik, and deutsches
             Sprachverständnis. This page covers the two non-math pillars: the official economics
             Lernunterlage and German reading comprehension. Together they are where many applicants
-            accidentally study the wrong track — especially if they reuse BBE English materials.
+            accidentally study the wrong track, especially if they reuse BBE English materials.
           </p>
         </WisoSection>
 
@@ -181,10 +181,10 @@ export function WisoEconomicsGermanPage() {
           ]}
         />
 
-        <WisoSection id="economics" title="Economics — Wirtschaft verstehen">
+        <WisoSection id="economics" title="Economics: Wirtschaft verstehen">
           <p>
-            Work the guide chapter by chapter. Precision of definitions matters: a single qualifier in a
-            German statement can flip an option under Teilpunktesystem scoring.
+            Work the guide chapter by chapter. Precision of definitions matters, because a single
+            qualifier in a German statement can flip an option under Teilpunktesystem scoring.
           </p>
           <div className="mt-4 space-y-4">
             {WISO_ECONOMICS_CHAPTERS.map((ch, i) => {
@@ -224,7 +224,7 @@ export function WisoEconomicsGermanPage() {
           </div>
           <p className="mt-4">
             Chapters 1 and 3 overlap meaningfully with BBE economics concepts, so some question logic can
-            transfer if you rewrite stems in German. Chapters 2 and 4 need dedicated WiSo study —
+            transfer if you rewrite stems in German. Chapters 2 and 4 need dedicated WiSo study, because
             sustainability/wellbeing economics and digitalisation/Wirtschaftsinformatik have no BBE
             English twin.
           </p>
@@ -232,9 +232,9 @@ export function WisoEconomicsGermanPage() {
 
         <WisoSection id="german" title="German reading comprehension">
           <p>
-            Academic-level texts testing comprehension, interpretation, and argument formation — a skill
-            section rather than a content syllabus. There is no official reading list. Build transferable
-            strategies the same way BBE applicants build English reading stamina.
+            Academic-level texts testing comprehension, interpretation, and argument formation; this is a
+            skill section rather than a content syllabus. There is no official reading list. Build
+            transferable strategies the same way BBE applicants build English reading stamina.
           </p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {germanSkills.map((skill) => (
@@ -256,7 +256,7 @@ export function WisoEconomicsGermanPage() {
             <li>Deep-dive chapter 1 definitions with statement-style practice.</li>
             <li>Lock chapter 3 firm/accounting vocabulary in German.</li>
             <li>Allocate explicit weeks to chapters 2 and 4 (WiSo-only).</li>
-            <li>Run parallel German reading drills every week — do not backlog them.</li>
+            <li>Run parallel German reading drills every week; do not backlog them.</li>
           </ol>
         </WisoSection>
 

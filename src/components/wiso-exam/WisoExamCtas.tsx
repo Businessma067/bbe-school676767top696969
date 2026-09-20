@@ -126,8 +126,8 @@ export function WisoInfoCallout({
 
 export function WisoDemoCta({
   className,
-  title = "Try WiSo prep on dedicated URLs",
-  body = "Demo practice, mocks, and flashcards for WiSo live under /wiso/... so you stay off the BBE English track.",
+  title = "Try WiSo prep on its own URLs",
+  body = "Demo practice, mocks, and flashcards for WiSo live under /wiso/..., so you stay on the German track instead of drifting into BBE English drills.",
   cta = "Open WiSo demo",
 }: {
   className?: string;

@@ -28,7 +28,7 @@ export const Route = createFileRoute("/wiso/exam-preparation")({
       {
         property: "og:description",
         content:
-          "A practical WiSo study plan from diagnostics through mocks — without mixing up BBE English content.",
+          "A practical WiSo study plan from diagnostics through mocks, without mixing in BBE English content.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "Should I start with a diagnostic?",
     answer:
-      "Yes. An early timed set shows whether you leak points on language, definitions, calculation, or scoring behaviour — so your schedule is evidence-based.",
+      "Yes. An early timed set shows whether you leak points on language, definitions, calculation, or scoring behaviour, so you can build the schedule around what you actually need.",
   },
   {
     question: "When should I take full mock exams?",
@@ -70,13 +70,13 @@ const steps = [
   {
     id: "understand",
     title: "Understand the exam first",
-    body: "Learn the two-stage process, three content areas (no English), and gemischtes Teilpunktesystem before you grind volume. Format mistakes are expensive.",
+    body: "Learn the two-stage process, the three content areas (no English), and gemischtes Teilpunktesystem before you grind volume, because format mistakes are expensive.",
     link: { to: "/wiso/entrance-exam", label: "WiSo Entrance Exam Guide →" },
   },
   {
     id: "scoring",
     title: "Internalise scoring",
-    body: "Practice max/r and max/f mentally. Know when leaving an option unmarked protects points versus when you should mark confidently.",
+    body: "Practice max/r and max/f mentally until you know when leaving an option unmarked protects points and when you should mark confidently.",
     link: { to: "/wiso/exam-scoring", label: "Scoring explained →" },
   },
   {
@@ -88,25 +88,25 @@ const steps = [
   {
     id: "econ",
     title: "Cover Wirtschaft verstehen",
-    body: "Work all four chapters. Flag WiSo-only chapters 2 and 4 so they are not skipped because “BBE economics felt familiar.”",
+    body: "Work all four chapters, and flag WiSo-only chapters 2 and 4 so they are not skipped because BBE economics felt familiar.",
     link: { to: "/wiso/economics-german", label: "Economics & German guide →" },
   },
   {
     id: "german",
     title: "Build German reading stamina",
-    body: "Daily academic German passages with statement-style questions. Fluency applicants still lose points on scope and implication traps.",
+    body: "Read academic German passages most days with statement-style questions. Even fluent applicants still lose points on scope and implication traps.",
     link: { to: "/wiso/economics-german", label: "German section notes →" },
   },
   {
     id: "math",
     title: "Lock math fluency",
-    body: "Algebra first, then statistics/calculus/logic under time. Train German word-problem vocabulary early.",
+    body: "Start with algebra, then bring in statistics, calculus, and logic under time, and train German word-problem vocabulary early.",
     link: { to: "/wiso/mathematics", label: "Mathematics guide →" },
   },
   {
     id: "mocks",
     title: "Full mocks and builder",
-    body: "Finish with full timed mocks and custom sets on /wiso URLs so you never teleport into BBE English drills by accident.",
+    body: "Finish with full timed mocks and custom sets on /wiso URLs, so you stay on the WiSo track instead of drifting into BBE English drills.",
     link: { to: WISO_PRACTICE_ROUTES.mockBuilder, label: "Mock builder →" },
   },
 ];
@@ -149,7 +149,7 @@ export function WisoExamPreparationPage() {
   return (
     <WisoExamShell
       h1="How to Prepare for the WU WiSo Entrance Exam"
-      lead="A high-leverage sequence: learn the format and Teilpunktesystem, cover Wirtschaft verstehen, build German reading speed, lock math fluency, then add timed mocks on WiSo URLs."
+      lead="A sensible sequence looks like this: learn the format and Teilpunktesystem, cover Wirtschaft verstehen, build German reading speed, lock math fluency, then add timed mocks on WiSo URLs."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Start WiSo demo</WisoPrimaryButton>
@@ -162,8 +162,8 @@ export function WisoExamPreparationPage() {
           <p>
             WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping
             Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing
-            German reading. This page is a practical sequence you can adapt to your calendar before{" "}
-            {WISO_EXAM_FORMAT.cycle.examDate}.
+            German reading. This page lays out a practical sequence you can adapt to your calendar
+            before {WISO_EXAM_FORMAT.cycle.examDate}.
           </p>
         </WisoSection>
 
