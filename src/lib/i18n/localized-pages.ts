@@ -21,7 +21,7 @@ import { WisoAdmissionPage } from "@/routes/wiso.admission";
 import { WisoWuViennaPage } from "@/routes/wiso.wu-vienna";
 import { WisoFullCourseProduct } from "@/routes/wiso.products.full-course";
 import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
-import { WisoMockExamsPlaceholder } from "@/routes/wiso.mock-exams";
+import { WisoMockExamsPage } from "@/routes/wiso.mock-exams";
 import { ParentsPage } from "@/routes/parents";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
