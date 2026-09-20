@@ -50,14 +50,13 @@ import { BookOpen, ChevronDown, Clock, Loader2, PlayCircle } from "lucide-react"
 import { cn } from "@/lib/utils";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/mock-builder" as const;
 
 export const Route = createFileRoute("/wiso/mock-builder")({
   head: () => ({
-    links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
+    links: [{ rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "WiSo Mock-Builder | BBE School" },
       {
@@ -297,7 +296,7 @@ export function WisoMockBuilderPage() {
             to="/wiso/products/full-course-subjects"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Full Course
+            ← Zum Full Course
           </LocalizedLink>
         }
       />
@@ -309,7 +308,7 @@ export function WisoMockBuilderPage() {
               WiSo
             </p>
             <h1 className="mt-2 font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Mock Builder
+              Mock-Builder
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
               Themen und Unterkapitel wählen, Fragenanzahl festlegen und einen Mock aus dem WiSo
@@ -641,6 +640,3 @@ export function WisoMockBuilderPage() {
     </div>
   );
 }
-
-/** @deprecated Prefer WisoMockBuilderPage — kept for localized-pages import. */
-export const WisoMockBuilderPlaceholder = WisoMockBuilderPage;

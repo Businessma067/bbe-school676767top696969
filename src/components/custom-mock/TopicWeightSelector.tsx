@@ -51,6 +51,7 @@ function weightCopy(locale: UiLocale) {
       estMin: "ca.",
       minUnit: "Min.",
       mixerBadge: "Mixer",
+      questionsAbbrev: (n: number) => `${n} Fr.`,
     };
   }
   return {
@@ -75,6 +76,7 @@ function weightCopy(locale: UiLocale) {
     estMin: "Est.",
     minUnit: "min",
     mixerBadge: "Mixer",
+    questionsAbbrev: (n: number) => `${n}q`,
   };
 }
 
@@ -740,7 +742,7 @@ function PreviewList({
                 {Math.round(t.percent)}%
               </span>
               <span className="mx-1.5 text-border">·</span>
-              {t.questions}q
+              {copy.questionsAbbrev(t.questions)}
             </span>
           </li>
         ))}
