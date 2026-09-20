@@ -18,7 +18,7 @@ import { Route as WisoExamPreparationRoute } from "@/routes/wiso.exam-preparatio
 import { Route as WisoAdmissionRoute } from "@/routes/wiso.admission";
 import { Route as WisoWuViennaRoute } from "@/routes/wiso.wu-vienna";
 import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course";
-import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice";
+import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice.index";
 import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
 import { Route as WisoMockBuilderRoute } from "@/routes/wiso.mock-builder";
 import { Route as WisoFlashcardsRoute } from "@/routes/wiso.flashcards.index";

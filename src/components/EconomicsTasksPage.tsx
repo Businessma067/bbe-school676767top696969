@@ -29,11 +29,27 @@ import {
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 
-// Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
-const phantomCountFor = (_ch: number): number => 0;
-const freeLimitOf = (_ch: number | "revision" | null): number => Number.POSITIVE_INFINITY;
-const isLocked = (_chapter: number | "revision" | null, _idx: number) => false;
+// Full course: everything unlocked. Demo can pass freeLimitPerChapter (e.g. 8).
+const DEFAULT_PHANTOM_LOCKED_COUNT = 0;
 
+export type EconomicsChapterMeta = { num: number; title: string };
+
+export type EconomicsTasksPageProps = {
+  chapters: EconomicsChapterMeta[];
+  loadAllChapters: () => Promise<{ num: number; tasks: EconomicsTask[] }[]>;
+  storageKey: string;
+  backTo: string;
+  backLabel?: string;
+  /** Disable theory reader when WiSo theory markdown is not shipped yet. */
+  enableTheory?: boolean;
+  /**
+   * Demo unlock: first N tasks per chapter are free.
+   * Omit (or Infinity) for Full Course — everything unlocked.
+   */
+  freeLimitPerChapter?: number;
+  /** Extra locked teaser rows after real tasks (demo only). */
+  phantomLockedCount?: number;
+};
 
 type Case = {
   id: string;
@@ -47,20 +63,6 @@ type Case = {
   sort_order: number;
   /** Book subsection id, e.g. "2.1" (same local banks as Custom Mock Builder). */
   subsection?: string;
-};
-
-export type EconomicsChapterMeta = { num: number; title: string };
-
-export type EconomicsTasksPageProps = {
-  chapters: EconomicsChapterMeta[];
-  loadAllChapters: () => Promise<{ num: number; tasks: EconomicsTask[] }[]>;
-  storageKey: string;
-  backTo: string;
-  backLabel?: string;
-  /** Disable theory reader when WiSo theory markdown is not shipped yet. */
-  enableTheory?: boolean;
-  /** TheoryReader bank. Defaults to BBE economics. */
-  theorySubject?: "economics" | "math" | "wiso-economics";
 };
 
 
@@ -104,8 +106,16 @@ export function EconomicsTasksPage({
   backTo,
   backLabel = "← Back",
   enableTheory = true,
-  theorySubject = "economics",
+  freeLimitPerChapter = Number.POSITIVE_INFINITY,
+  phantomLockedCount = DEFAULT_PHANTOM_LOCKED_COUNT,
 }: EconomicsTasksPageProps) {
+  const phantomCountFor = (_ch: number): number => phantomLockedCount;
+  const freeLimitOf = (ch: number | "revision" | null): number => {
+    if (ch === "revision" || ch === null) return Number.POSITIVE_INFINITY;
+    return freeLimitPerChapter;
+  };
+  const isLocked = (chapter: number | "revision" | null, idx: number) =>
+    idx >= freeLimitOf(chapter);
   const [cases, setCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
@@ -565,7 +575,6 @@ export function EconomicsTasksPage({
             <TheoryReader
               chapter={theoryChapter}
               title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
-              subject={theorySubject}
               onGoToPractice={() => {
                 setTheoryChapter(null);
                 setActiveChapter(theoryChapter);
