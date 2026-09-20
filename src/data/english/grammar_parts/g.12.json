@@ -687,44 +687,6 @@
       "solution_overview": "An abruptly narrowing trail slows hikers to single file and tests how-clauses as noun objects.\n\n**Part 1: What to watch for.**\n\nAdvanced items use how-clauses as noun objects of because of / in spite of. Bare because still wants an ordinary subject–verb clause — do not drop of before how. Although can host a how-clause only when it sits inside a larger finite clause.\n\n**Part 2: How to decide.**\n\nIf how follows because of or in spite of, treat it as a noun. If how follows bare because, expect false. Then check that although's how-stretch still leaves a finite verb for although itself.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-12-19",
-      "case_id": "ENG G.12.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.",
-        "Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.",
-        "Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.",
-        "Owing to the delayed train, they walked the last kilometre along the canal.",
-        "Because of delayed trains were overcrowded, they walked the last kilometre along the canal."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A) Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.**\n\nDespite + \"the same delay\" in the second half is correctly formed as a noun concession, and the sentence stays grammatical. Friends still making the opening and refusing to skip the café both fit the contrast story. When two contrast tools appear, check each chunk separately — this despite use is fine.\n\nDespite + \"the same delay\" in the second chunk is a clean noun concession, so the sentence is **true**.\n",
-        "**B) Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.**\n\nDespite + \"delayed trains\" and semicolon + however are both well formed. Stacking two contrast tools is fine if each obeys its own rule: noun after despite, strong punctuation before however. They reach the gallery; several rooms have already closed.\n\nDespite + delayed trains and semicolon + however each obey their own rules, so the wording is **true**.\n",
-        "**C) Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.**\n\nAlthough lacks a clause (\"Although delayed trains\"), and however is joined with only a weak comma. Two linker errors can hide in one sentence — check each separately. Either fault alone would already force **false**.\n\n**Trap:** Dense double-linker fails are hard because one error can mask the other.\n\nAlthough lacks a clause and however sits after only a weak comma, so this is **false** — \"Although trains were delayed, they reached the gallery; however, several rooms had already closed for cleaning.\"\n",
-        "**D) Owing to the delayed train, they walked the last kilometre along the canal.**\n\nOwing to + \"the delayed train\" correctly states the reason for walking the last kilometre. Travel delays often pair with owing to in formal notices. The noun cause matches the linker.\n\nOwing to + \"the delayed train\" names the canal-walk cause cleanly, so the line is **true**.\n",
-        "**E) Because of delayed trains were overcrowded, they walked the last kilometre along the canal.**\n\nBecause of + finite clause is illegal. \"Because of delayed trains were overcrowded\" → \"Because delayed trains were overcrowded\" or \"Because of overcrowded delayed trains.\" If a verb like were sits after because of, rewrite immediately.\n\n**Trap:** Because of + were is the classic hybrid trap buried in a longer travel sentence.\n\nBecause of cannot stack onto a finite were-overcrowded clause, so the wording is **false** — \"Because delayed trains were overcrowded, they walked the last kilometre along the canal.\"\n"
-      ],
-      "highlights": [
-        "despite the same delay",
-        "however",
-        "Although delayed trains",
-        "Owing to the delayed train",
-        "Because of delayed trains were"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.12",
-      "solution_overview": "Delayed trains, a gallery opening, and a canal walk pack two linkers into some of the denser sentences.\n\n**Part 1: What to watch for.**\n\nDense sentences may contain two linkers. Score each linker on its own rule — noun versus clause, and however's punctuation — rather than judging the sentence by overall feel. Watch although + noun and because of + were as the clear fails.\n\n**Part 2: How to decide.**\n\nSplit the sentence mentally into linker chunks. Validate despite / owing to + noun, semicolon + however, and refuse although without a verb or because of glued to a finite clause.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
-    },
-    {
       "id": "en-g-12-20",
       "case_id": "ENG G.12.20",
       "title": "Task 20",

@@ -2,11 +2,28 @@ import {
   FlashcardMath,
   mergeContinuationDisplayParagraphs,
 } from "@/components/FlashcardMath";
+import { MathMarkdownTable, parsePipeTable } from "@/components/mock-exam/MathMarkdownTable";
 import { cn } from "@/lib/utils";
+
+/** Detect a GFM pipe table that lives in one blank-line paragraph. */
+function isMarkdownTablePara(block: string): boolean {
+  const lines = block
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  if (lines.length < 2) return false;
+  if (!lines.every((l) => l.includes("|"))) return false;
+  if (!lines.some((l) => /^\|?\s*:?-{3,}/.test(l) || /^(\|\s*:?-+:?\s*)+\|?$/.test(l))) {
+    // header + body without separator still ok if ≥2 pipe rows parse
+    return parsePipeTable(block).length >= 2;
+  }
+  return parsePipeTable(block).length >= 1;
+}
 
 /**
  * Tutorial prose (font-expl + Part/claim/Tip spacing).
  * Supports KaTeX via `$...$` / `$$...$$` (same as math explanations).
+ * Pipe truth tables render as real HTML tables (not crooked monospace).
  */
 export function ExplanationProse({
   text,
@@ -28,16 +45,21 @@ export function ExplanationProse({
     | { kind: "note"; body: string }
     | { kind: "close"; text: string }
     | { kind: "math"; text: string }
+    | { kind: "table"; text: string }
     | { kind: "para"; text: string };
 
   const chunks: Chunk[] = [];
   for (const p of paragraphs) {
+    if (isMarkdownTablePara(p)) {
+      chunks.push({ kind: "table", text: p });
+      continue;
+    }
     if (/^\$\$[\s\S]+\$\$$/.test(p) || /^\$\$[\s\S]+\$\$\s*$/.test(p)) {
       chunks.push({ kind: "math", text: p });
       continue;
     }
     const partOnly = p.match(/^\*\*([^*]+)\*\*\s*$/);
-    if (partOnly && /^(Part\b|Answer\b|Overview\b|Setup\b)/i.test(partOnly[1].trim())) {
+    if (partOnly && /^(Part\b|Answer\b|Overview\b|Setup\b|Truth table\b)/i.test(partOnly[1].trim())) {
       chunks.push({ kind: "part", title: partOnly[1].replace(/[.!:]+$/, "") });
       continue;
     }
@@ -61,7 +83,7 @@ export function ExplanationProse({
   // Final content paragraph is the natural verdict (after Tip/Trap notes / math).
   for (let i = chunks.length - 1; i >= 0; i--) {
     const c = chunks[i];
-    if (c.kind === "note" || c.kind === "math") continue;
+    if (c.kind === "note" || c.kind === "math" || c.kind === "table") continue;
     if (c.kind === "para") {
       chunks[i] = { kind: "close", text: c.text };
     }
@@ -71,8 +93,8 @@ export function ExplanationProse({
   return (
     <div
       className={cn(
-        "font-expl text-[15px] leading-[1.6] text-foreground sm:text-[15.5px]",
-        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-3.5",
+        "font-expl text-[15px] leading-[1.65] text-foreground sm:text-[15.5px]",
+        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-2 [&_.flashcard-math-display]:overflow-y-visible",
         className,
       )}
     >
@@ -109,17 +131,24 @@ export function ExplanationProse({
             </aside>
           );
         }
+        if (chunk.kind === "table") {
+          return (
+            <div key={idx} className="my-5 overflow-x-auto overflow-y-visible [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
+              <MathMarkdownTable markdown={chunk.text} />
+            </div>
+          );
+        }
         if (chunk.kind === "math") {
           const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
           const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
-          // Consecutive display lines need more air than prose-adjacent blocks.
+          // Old formula style: small gaps between consecutive centered $$ steps.
           return (
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-3" : "my-4",
-                prevMath && "mt-2.5",
-                nextMath && "mb-2.5",
+                prevMath || nextMath ? "my-1.5" : "my-3",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
               )}
             >
               <FlashcardMath text={chunk.text} displayPrefer />

@@ -1,16 +1,18 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useRouterState } from "@tanstack/react-router";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import {
   CourseLockedView,
   courseLockFeatureForPath,
 } from "@/components/CourseLockedView";
 import {
+  accessOwnsProduct,
   fetchAccessState,
   peekAccessState,
   tierAtLeast,
   type AccessTier,
 } from "@/lib/entitlements";
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { isWisoPath } from "@/lib/exam-track";
 
 function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
   if (!signedIn) return false;
@@ -28,21 +30,30 @@ type GateStatus = "checking" | "allowed" | "locked" | "login";
  *
  * Uses a short-lived in-memory entitlement cache so navigating between
  * flashcards / matching / tutor does not blank the page on every click.
+ *
+ * Pass `productSlug` for track-specific SKUs (e.g. `wiso-full-course`) so BBE
+ * Full does not unlock WiSo and vice versa.
  */
 export function RequireFullCourse({
   children,
   minTier = "lite",
+  productSlug,
 }: {
   children: ReactNode;
   /** "none" = any signed-in user, "lite" = Lite or Full, "full" = Full only. */
   minTier?: AccessTier;
+  /** When set, require enrollment in this product (admins still pass). */
+  productSlug?: string;
 }) {
-  const navigate = useLocalizedNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const de = productSlug === "wiso-full-course" || isWisoPath(pathname);
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
     if (!cached) return "checking";
     if (!cached.signedIn) return "login";
+    if (productSlug) {
+      return accessOwnsProduct(cached, productSlug) ? "allowed" : "locked";
+    }
     if (minTier !== "none" && !isAllowedForTier(cached.tier, minTier, cached.signedIn)) {
       return "locked";
     }
@@ -58,7 +69,10 @@ export function RequireFullCourse({
 
       if (!state.signedIn) {
         setStatus("login");
-        navigate({ to: "/login", replace: true });
+        return;
+      }
+      if (productSlug) {
+        setStatus(accessOwnsProduct(state, productSlug) ? "allowed" : "locked");
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
@@ -71,10 +85,33 @@ export function RequireFullCourse({
     return () => {
       cancelled = true;
     };
-  }, [navigate, minTier, pathname]);
+  }, [minTier, pathname, productSlug]);
 
   if (status === "allowed") {
     return <>{children}</>;
+  }
+
+  if (status === "login") {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-6">
+        <div className="max-w-sm text-center">
+          <h1 className="text-xl font-semibold tracking-tight text-foreground">
+            {de ? "Anmelden, um fortzufahren" : "Sign in to continue"}
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground">
+            {de
+              ? "Dieser Teil des Kurses ist für angemeldete Studierende verfügbar."
+              : "This part of the course is available to signed-in students."}
+          </p>
+          <LocalizedLink
+            to="/login"
+            className="mt-6 inline-flex rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+          >
+            {de ? "Anmelden" : "Sign in"}
+          </LocalizedLink>
+        </div>
+      </div>
+    );
   }
 
   if (status === "locked") {
@@ -82,13 +119,16 @@ export function RequireFullCourse({
       <CourseLockedView
         feature={courseLockFeatureForPath(pathname)}
         minTier={minTier}
+        productSlug={productSlug}
       />
     );
   }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6">
-      <p className="text-sm text-muted-foreground">Checking course access…</p>
+      <p className="text-sm text-muted-foreground">
+        {de ? "Kurszugang wird geprüft…" : "Checking course access…"}
+      </p>
     </div>
   );
 }

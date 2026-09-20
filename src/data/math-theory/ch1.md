@@ -143,11 +143,7 @@ Three basic operations combine two sets $A$ and $B$:
 In symbols:
 
 $$
-\begin{align*}
-A \cup B &= \{x : x \in A\ \text{or}\ x \in B\},\\
-A \cap B &= \{x : x \in A\ \text{and}\ x \in B\},\\
-A \setminus B &= \{x : x \in A\ \text{and}\ x \notin B\}.
-\end{align*}
+A \cup B = \{x : x \in A\ \text{or}\ x \in B\},,\quad A \cap B = \{x : x \in A\ \text{and}\ x \in B\},,\quad A \setminus B = \{x : x \in A\ \text{and}\ x \notin B\}.
 $$
 
 In mathematics the word “or” is **inclusive**: “$x \in A$ or $x \in B$” allows $x$ to sit in both.
@@ -218,11 +214,7 @@ With four or more sets the picture becomes unmanageable ($2^n$ regions for $n$ s
 From the definitions, or by shading Venn regions, you get identities that are true for every choice of sets. Two important distributive laws are
 
 $$
-A \cap (B \cup C) = (A \cap B) \cup (A \cap C),
-$$
-
-$$
-A \cup (B \cap C) = (A \cup B) \cap (A \cup C).
+A \cap (B \cup C) = (A \cap B) \cup (A \cap C),,\quad A \cup (B \cap C) = (A \cup B) \cap (A \cup C).
 $$
 
 [[FIGURE:venn-distributive|The shaded region is A ∩ (B ∪ C), which equals (A ∩ B) ∪ (A ∩ C) (Sydsaeter Fig. 1.1.2).]]
@@ -511,14 +503,24 @@ Exclusive “exactly one of X, Y” drops the both-buyers and leaves $25 + 20 = 
 Return to $x + 2 = \sqrt{4 - x}$. Marking implication arrows:
 
 $$
-\begin{align*}
 x + 2 = \sqrt{4 - x}
-&\Rightarrow (x + 2)^2 = 4 - x \\
-&\Rightarrow x^2 + 4x + 4 = 4 - x \\
-&\Rightarrow x^2 + 5x = 0 \\
-&\Rightarrow x(x + 5) = 0 \\
-&\Rightarrow (x = 0\ \text{or}\ x = -5).
-\end{align*}
+\Rightarrow (x + 2)^2 = 4 - x
+$$
+
+$$
+\Rightarrow x^2 + 4x + 4 = 4 - x
+$$
+
+$$
+\Rightarrow x^2 + 5x = 0
+$$
+
+$$
+\Rightarrow x(x + 5) = 0
+$$
+
+$$
+\Rightarrow (x = 0\ \text{or}\ x = -5).
 $$
 
 The first step uses $a = b \Rightarrow a^2 = b^2$, which is true but **not reversible**: $a^2 = b^2$ also allows $a = -b$. So the chain only proves that any real solution must be $0$ or $-5$. It does not prove that either value works. Substituting shows that only $x = 0$ survives. Separately, jumping from $x^2 + 5x = 0$ to $x + 5 = 0$ wrongly drops the root $x = 0$.

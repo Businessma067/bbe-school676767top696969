@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts on 2026-09-05. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-16. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bbe-school.com/</loc>
@@ -8,6 +8,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/bbe</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe"/>
   </url>
   <url>
     <loc>https://bbe-school.com/bbe-entrance-exam</loc>
@@ -72,6 +80,70 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/entrance-exam</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/entrance-exam"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/exam-scoring</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-scoring"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/mathematics</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/mathematics"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/economics-german</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/economics-german"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/exam-preparation</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-preparation"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/admission</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/admission"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/wiso/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/wu-vienna"/>
   </url>
   <url>
     <loc>https://bbe-school.com/parents</loc>
@@ -174,6 +246,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/bbe</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/bbe-entrance-exam</loc>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-entrance-exam"/>
@@ -236,6 +316,70 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/entrance-exam</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/entrance-exam"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/exam-scoring</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-scoring"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/mathematics</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/mathematics"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/economics-german</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/economics-german"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/exam-preparation</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-preparation"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/admission</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/admission"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wiso/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/wu-vienna"/>
   </url>
   <url>
     <loc>https://bbe-school.com/de/parents</loc>
@@ -326,6 +470,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/uk/bbe</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/uk/bbe-entrance-exam</loc>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-entrance-exam"/>
@@ -388,6 +540,70 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/entrance-exam</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/entrance-exam"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/entrance-exam"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/exam-scoring</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-scoring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-scoring"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/mathematics</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/mathematics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/mathematics"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/economics-german</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/economics-german"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/economics-german"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/exam-preparation</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/exam-preparation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/exam-preparation"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/admission</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/admission"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/admission"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wiso/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wiso/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wiso/wu-vienna"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/parents</loc>

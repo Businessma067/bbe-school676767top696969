@@ -180,12 +180,8 @@ export function BbeVsWisoPage() {
       lead="Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation — so you can decide which path fits you."
       heroActions={
         <>
-          <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>
-            Try the free BBE demo course
-          </BbePrimaryButton>
-          <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>
-            Take a diagnostic test
-          </BbeGhostButton>
+          <BbePrimaryButton to="/bbe">Enter BBE preparation</BbePrimaryButton>
+          <BbeGhostButton to="/wiso">Enter WiSo preparation</BbeGhostButton>
         </>
       }
     >
@@ -199,6 +195,14 @@ export function BbeVsWisoPage() {
             applicants are language of study, the language section on the exam, how many seats exist,
             and when you can start.
           </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <BbePrimaryButton to="/bbe">Go to BBE home →</BbePrimaryButton>
+            <BbeGhostButton to="/wiso">Go to WiSo home →</BbeGhostButton>
+          </div>
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
+            <BbeTextLink to="/bbe-entrance-exam">BBE exam overview →</BbeTextLink>
+            <BbeTextLink to="/wiso/entrance-exam">WiSo exam overview →</BbeTextLink>
+          </div>
           <BbeStatGrid
             items={[
               { label: "BBE places", value: String(BBE_PLACES) },
@@ -208,9 +212,9 @@ export function BbeVsWisoPage() {
             ]}
           />
           <BbeInfoCallout label="Independent guide" tone="official">
-            BBE School prepares applicants for the BBE entrance exam. Figures below summarise recent
-            public WU cycle information and can change. Always confirm dates, fees, and rules on the
-            official WU Vienna website.
+            BBE School now offers separate BBE and WiSo tracks on this site. Figures below summarise
+            recent public WU cycle information and can change. Always confirm dates, fees, and rules
+            on the official WU Vienna website.
           </BbeInfoCallout>
         </BbeSection>
 
@@ -219,7 +223,10 @@ export function BbeVsWisoPage() {
             Use this table as a decision snapshot. For BBE exam format details, see the BBE Entrance
             Exam Overview linked below.
           </p>
-          <BbeTextLink to="/bbe-entrance-exam">BBE Entrance Exam Guide →</BbeTextLink>
+          <div className="flex flex-wrap gap-4">
+            <BbeTextLink to="/bbe-entrance-exam">BBE Entrance Exam Guide →</BbeTextLink>
+            <BbeTextLink to="/wiso/entrance-exam">WiSo Entrance Exam Guide →</BbeTextLink>
+          </div>
           <div className="overflow-x-auto rounded-2xl border border-border">
             <table className="w-full min-w-[36rem] border-collapse text-left text-[0.95rem]">
               <thead>
@@ -327,9 +334,9 @@ export function BbeVsWisoPage() {
                 <BbeTextLink to="/bbe-exam-scoring">BBE scoring explained →</BbeTextLink>
               </div>
             </div>
-            <div className="rounded-2xl border border-teal-200/70 bg-teal-50/40 p-5 dark:border-teal-800/40 dark:bg-teal-950/25">
+            <div className="rounded-2xl border border-indigo-200/70 bg-indigo-50/40 p-5 dark:border-indigo-800/40 dark:bg-indigo-950/25">
               <div className="flex items-center gap-2">
-                <Languages className="h-5 w-5 text-teal-800" />
+                <Languages className="h-5 w-5 text-indigo-800" />
                 <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
                   How WISO questions usually differ
                 </h3>
@@ -557,7 +564,7 @@ function ExamStructureCharts() {
       label: "Economics",
       share: BBE_EXAM_FORMAT.scoreWeighting.economics,
       width: 37.5,
-      color: "#0F766E",
+      color: "#3730A3",
     },
     {
       label: "English",
@@ -618,7 +625,7 @@ function ExamStructureCharts() {
           <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 text-center text-sm font-semibold">
             <span className="rounded-lg bg-orange-100 px-3 py-3 text-[#C2410C] dark:bg-orange-950/50 dark:text-orange-300">BBE · English</span>
             <span className="text-xs font-medium text-muted-foreground">vs</span>
-            <span className="rounded-lg bg-teal-100 px-3 py-3 text-teal-900 dark:bg-teal-950/50 dark:text-teal-200">WISO · German</span>
+            <span className="rounded-lg bg-indigo-100 px-3 py-3 text-indigo-900 dark:bg-indigo-950/50 dark:text-indigo-200">WISO · German</span>
           </div>
           <div className="rounded-lg border border-dashed border-border bg-secondary/40 px-3 py-3 text-center text-sm font-medium text-foreground">
             Shared: mathematics + economics / business basics
@@ -627,7 +634,7 @@ function ExamStructureCharts() {
             <p className="rounded-md bg-orange-50/80 px-3 py-2 dark:bg-orange-950/40">
               Train English reading, grammar, and vocabulary under BBE statement style.
             </p>
-            <p className="rounded-md bg-teal-50/80 px-3 py-2 dark:bg-teal-950/40">
+            <p className="rounded-md bg-indigo-50/80 px-3 py-2 dark:bg-indigo-950/40">
               Train German comprehension for the WISO language section.
             </p>
           </div>
@@ -661,7 +668,7 @@ function PlacesAndSelectivityVisual() {
               label="WISO"
               valueLabel={`${WISO_PLACES.toLocaleString("en-US")} places`}
               widthPct={100}
-              color="#0F766E"
+              color="#3730A3"
               note="Larger intake"
             />
           </div>
@@ -688,7 +695,7 @@ function PlacesAndSelectivityVisual() {
               ratio={`~${WISO_PER_PLACE}`}
               subtitle="eligible applicants per place"
               dots={3}
-              color="#0F766E"
+              color="#3730A3"
               tone="wiso"
             />
           </div>
@@ -756,7 +763,7 @@ function CompetitionCard({
     <div
       className={cn(
         "rounded-xl border px-4 py-4",
-        tone === "bbe" ? "border-orange-200/80 bg-orange-50/50 dark:border-orange-800/40 dark:bg-orange-950/25" : "border-teal-200/80 bg-teal-50/50 dark:border-teal-800/40 dark:bg-teal-950/25",
+        tone === "bbe" ? "border-orange-200/80 bg-orange-50/50 dark:border-orange-800/40 dark:bg-orange-950/25" : "border-indigo-200/80 bg-indigo-50/50 dark:border-indigo-800/40 dark:bg-indigo-950/25",
       )}
     >
       <p className="text-sm font-semibold text-foreground">{title}</p>
@@ -798,14 +805,14 @@ function SubjectCard({
     <div
       className={cn(
         "rounded-2xl border bg-card p-5 shadow-sm",
-        accent === "bbe" ? "border-orange-200/70 dark:border-orange-800/40" : "border-teal-200/70 dark:border-teal-800/40",
+        accent === "bbe" ? "border-orange-200/70 dark:border-orange-800/40" : "border-indigo-200/70 dark:border-indigo-800/40",
       )}
     >
       <div className="flex items-center gap-2 text-foreground">
         <span
           className={cn(
             "inline-flex h-9 w-9 items-center justify-center rounded-full",
-            accent === "bbe" ? "bg-orange-100 text-[#E85D3A] dark:bg-orange-950/50 dark:text-orange-300" : "bg-teal-100 text-teal-800 dark:bg-teal-950/50 dark:text-teal-200",
+            accent === "bbe" ? "bg-orange-100 text-[#E85D3A] dark:bg-orange-950/50 dark:text-orange-300" : "bg-indigo-100 text-indigo-800 dark:bg-indigo-950/50 dark:text-indigo-200",
           )}
         >
           {icon}

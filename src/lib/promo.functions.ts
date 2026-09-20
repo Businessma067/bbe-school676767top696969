@@ -8,6 +8,7 @@ import {
   DISCOUNT_PCT,
   HARDCODED_DISCOUNT_PROMOS,
   isPaidProductSlug,
+  promoAppliesToProduct,
 } from "@/lib/checkout-catalog";
 
 const MAX_ATTEMPTS_PER_IP = 10;
@@ -18,6 +19,8 @@ const MIGRATION_HINT =
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),
+  /** Checkout SKU when redeeming from PaymentModal (e.g. wiso-full-course). */
+  productSlug: z.string().min(1).max(64).optional(),
 });
 
 const DiscountInput = z.object({
@@ -26,7 +29,7 @@ const DiscountInput = z.object({
 });
 
 export type PromoRedeemResult =
-  | { ok: true; href: string }
+  | { ok: true; href: string; productSlug: string; productName: string }
   | { ok: false; error: string; rateLimited?: boolean };
 
 export type DiscountValidateResult =
@@ -93,6 +96,33 @@ function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_
   return { slug: "full-course", meta: COURSE_CATALOG["full-course"] };
 }
 
+/**
+ * Map an unlock-code product_slug to the enrollment that should be granted.
+ * Full BBE unlock codes redeemed at WiSo checkout enroll WiSo (same parity as
+ * discount codes via promoAppliesToProduct), so My courses shows Full WiSo Course.
+ */
+export function resolveUnlockEnrollmentSlug(
+  codeProductSlug: string,
+  checkoutSlug?: string,
+): CourseSlug {
+  if (checkoutSlug === "wiso-full-course") {
+    if (
+      codeProductSlug === "wiso-full-course" ||
+      codeProductSlug === "full-course" ||
+      codeProductSlug === "any-paid" ||
+      !codeProductSlug
+    ) {
+      return "wiso-full-course";
+    }
+  }
+  if (checkoutSlug && checkoutSlug in COURSE_CATALOG) {
+    if (codeProductSlug === "any-paid" || codeProductSlug === checkoutSlug) {
+      return checkoutSlug as CourseSlug;
+    }
+  }
+  return resolveCatalog(codeProductSlug).slug;
+}
+
 function isMissingRelationError(error: { message?: string; code?: string; details?: string } | null) {
   if (!error) return false;
   const blob = `${error.code ?? ""} ${error.message ?? ""} ${error.details ?? ""}`.toLowerCase();
@@ -155,9 +185,9 @@ export async function lookupDiscountPromo(input: {
       if (data.kind !== "discount") {
         return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
       }
-      if (data.used_at && data.used_by !== input.userId) {
-        return { ok: false, error: "This promocode has already been used." };
-      }
+      // Discount codes are multi-use: `used_at` is not a block, only
+      // `max_uses` (counted from actual paid usages) limits them.
+
       if (isExpired(data.expires_at)) {
         return { ok: false, error: "This promocode has expired." };
       }
@@ -178,12 +208,7 @@ export async function lookupDiscountPromo(input: {
           return { ok: false, error: "This promocode has reached its use limit." };
         }
       }
-      const applies =
-        !data.product_slug ||
-        data.product_slug === "any-paid" ||
-        !input.productSlug ||
-        data.product_slug === input.productSlug;
-      if (!applies) {
+      if (!promoAppliesToProduct(data.product_slug, input.productSlug)) {
         return { ok: false, error: "This promocode does not apply to this course." };
       }
       return {
@@ -204,11 +229,7 @@ export async function lookupDiscountPromo(input: {
     if (isExpired(hardcoded.expiresAt)) {
       return { ok: false, error: "This promocode has expired." };
     }
-    const applies =
-      hardcoded.productSlug === "any-paid" ||
-      !input.productSlug ||
-      hardcoded.productSlug === input.productSlug;
-    if (!applies) {
+    if (!promoAppliesToProduct(hardcoded.productSlug, input.productSlug)) {
       return { ok: false, error: "This promocode does not apply to this course." };
     }
     return {
@@ -234,71 +255,9 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
-/**
- * Mark a discount promocode used as soon as it is entered/applied.
- * The same user may still check out with it; everyone else is blocked.
- */
-async function claimDiscountPromoOnApply(input: {
-  code: string;
-  userId: string;
-  userEmail: string | null;
-}): Promise<{ ok: true } | { ok: false; error: string }> {
-  const code = normalizeCode(input.code);
-  if (!code) return { ok: false, error: "Enter a promocode." };
+// Discount promocodes are multi-use and are never claimed at apply time.
+// Actual usage is recorded in `promo_usages` after a successful payment.
 
-  try {
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const usedAt = new Date().toISOString();
-
-    const { data: claimed, error } = await supabaseAdmin
-      .from("promocodes")
-      .update({
-        used_at: usedAt,
-        used_by: input.userId,
-        used_by_email: input.userEmail,
-      })
-      .eq("code", code)
-      .eq("kind", "discount")
-      .is("used_at", null)
-      .select("id")
-      .maybeSingle();
-
-    if (error) {
-      if (isMissingRelationError(error)) {
-        // No table yet — nothing to mute.
-        return { ok: true };
-      }
-      console.error("claimDiscountPromoOnApply", error);
-      return { ok: false, error: "Could not apply promocode. Try again." };
-    }
-
-    if (claimed) return { ok: true };
-
-    const { data: existing, error: existingError } = await supabaseAdmin
-      .from("promocodes")
-      .select("id, used_by, kind")
-      .eq("code", code)
-      .maybeSingle();
-
-    if (existingError) {
-      if (isMissingRelationError(existingError)) return { ok: true };
-      console.error("claimDiscountPromoOnApply existing", existingError);
-      return { ok: false, error: "Could not apply promocode. Try again." };
-    }
-
-    if (!existing || existing.kind !== "discount") {
-      // Hardcoded-only code (not in DB) — cannot mute; still allow apply.
-      return { ok: true };
-    }
-
-    if (existing.used_by === input.userId) return { ok: true };
-
-    return { ok: false, error: "This promocode has already been used." };
-  } catch (err) {
-    console.error("claimDiscountPromoOnApply", err);
-    return { ok: false, error: "Could not apply promocode. Try again." };
-  }
-}
 
 export async function recordPromoUsage(input: {
   code: string;
@@ -348,26 +307,14 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => DiscountInput.parse(d))
   .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
     const userId = context.userId;
-    const userEmail =
-      typeof context.claims.email === "string" ? context.claims.email : null;
 
-    const result = await lookupDiscountPromo({
+    return await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
       userId,
     });
-    if (!result.ok) return result;
-
-    // Mute the code as soon as it is entered/applied so nobody else can reuse it.
-    const claimed = await claimDiscountPromoOnApply({
-      code: result.code,
-      userId,
-      userEmail,
-    });
-    if (!claimed.ok) return claimed;
-
-    return result;
   });
+
 
 export const redeemPromocode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
@@ -379,6 +326,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
     const request = getRequest();
     const ip = clientIpFromHeaders(request.headers);
     const code = normalizeCode(data.code);
+    const checkoutSlug = data.productSlug;
     const userId = context.userId;
     const email =
       typeof context.claims.email === "string" ? context.claims.email : null;
@@ -478,7 +426,13 @@ export const redeemPromocode = createServerFn({ method: "POST" })
           error: "This promocode is invalid or has already been used.",
         };
       }
-      return await enrollFromClaim(supabaseAdmin, claimedLegacy, userId, attemptRow.id);
+      return await enrollFromClaim(
+        supabaseAdmin,
+        claimedLegacy,
+        userId,
+        attemptRow.id,
+        checkoutSlug,
+      );
     }
 
     if (!claimed) {
@@ -488,7 +442,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
       };
     }
 
-    return await enrollFromClaim(supabaseAdmin, claimed, userId, attemptRow.id);
+    return await enrollFromClaim(supabaseAdmin, claimed, userId, attemptRow.id, checkoutSlug);
   });
 
 async function enrollFromClaim(
@@ -497,21 +451,19 @@ async function enrollFromClaim(
   claimed: { id: string; code: string; product_slug: string },
   userId: string,
   attemptId: string,
+  checkoutSlug?: string,
 ): Promise<PromoRedeemResult> {
-  const { slug, meta } = resolveCatalog(claimed.product_slug);
+  const slug = resolveUnlockEnrollmentSlug(claimed.product_slug, checkoutSlug);
+  const meta = COURSE_CATALOG[slug];
 
-  const { error: enrollError } = await supabaseAdmin.from("enrollments").upsert(
-    {
-      user_id: userId,
-      product_slug: slug,
-      product_name: meta.name,
-      tier: meta.tier,
-    },
-    { onConflict: "user_id,product_slug" },
-  );
+  const { grantPaidEnrollment } = await import("@/lib/enrollment-grant.server");
+  const grant = await grantPaidEnrollment({
+    userId,
+    product: { slug, name: meta.name, tier: meta.tier },
+  });
 
-  if (enrollError) {
-    console.error("promo enroll", enrollError);
+  if (!grant.ok) {
+    console.error("promo enroll", grant.error);
     await supabaseAdmin
       .from("promocodes")
       .update({ used_at: null, used_by: null, used_by_email: null })
@@ -524,7 +476,7 @@ async function enrollFromClaim(
     .update({ success: true })
     .eq("id", attemptId);
 
-  return { ok: true, href: meta.href };
+  return { ok: true, href: meta.href, productSlug: slug, productName: meta.name };
 }
 
 export const adminListPromocodes = createServerFn({ method: "GET" })

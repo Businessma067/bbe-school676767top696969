@@ -23,7 +23,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
 import {
@@ -45,7 +45,10 @@ import {
   type MathChapter,
   type MathTask,
 } from "@/data/math-chapters";
-import { mathChapterHasTheory } from "@/data/math-course-theory";
+import {
+  getMathCourseTheory,
+  type MathCourseTheoryChapter,
+} from "@/data/math-course-theory";
 import {
   Check,
   X,
@@ -73,10 +76,10 @@ type Progress = {
 
 const STORAGE_KEY = "bbe.math.progress.v1";
 
-function loadProgress(): Progress {
+function loadProgress(storageKey: string = STORAGE_KEY): Progress {
   if (typeof window === "undefined") return { passed: [], revision: [] };
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return { passed: [], revision: [] };
     const p = JSON.parse(raw) as Progress;
     return { passed: p.passed ?? [], revision: p.revision ?? [] };
@@ -85,9 +88,9 @@ function loadProgress(): Progress {
   }
 }
 
-function saveProgress(p: Progress) {
+function saveProgress(p: Progress, storageKey: string = STORAGE_KEY) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
 function phantomCountFor(tier: MathTasksTier): number {
@@ -139,12 +142,30 @@ function prevUnlockedIdx(
 
 type Props = {
   tier: MathTasksTier;
-  backTo: string;
+  backTo?: string;
   backLabel?: string;
+  chapters?: MathChapter[];
+  loadChapterTasks?: (num: number) => Promise<MathTask[]>;
+  storageKey?: string;
+  /** Optional theory provider (WiSo German guides). Defaults to BBE English theory. */
+  getTheory?: (chapter: number) => MathCourseTheoryChapter | undefined;
+  /**
+   * Practice chrome language for verdict labels / statement table.
+   * WiSo Full Course uses German ("de" → Richtig/Falsch); BBE stays English.
+   */
+  contentLang?: "de" | "en";
 };
 
-export function MathTasksPage({ tier }: Props) {
-  const chapters = MATH_CHAPTERS;
+export function MathTasksPage({
+  tier,
+  chapters: chaptersProp,
+  loadChapterTasks = loadMathChapterTasks,
+  storageKey = STORAGE_KEY,
+  getTheory = getMathCourseTheory,
+  contentLang = "en",
+}: Props) {
+  const mathChapterHasTheory = (num: number) => getTheory(num) != null;
+  const chapters = chaptersProp ?? MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
@@ -165,8 +186,8 @@ export function MathTasksPage({ tier }: Props) {
   };
 
   useEffect(() => {
-    setProgress(loadProgress());
-  }, []);
+    setProgress(loadProgress(storageKey));
+  }, [storageKey]);
 
   /** Prefetch banks gradually so the first paint stays light. */
   useEffect(() => {
@@ -176,7 +197,7 @@ export function MathTasksPage({ tier }: Props) {
       for (const num of nums) {
         if (cancelled) return;
         try {
-          const tasks = await loadMathChapterTasks(num);
+          const tasks = await loadChapterTasks(num);
           if (cancelled) return;
           setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
         } catch {
@@ -196,7 +217,7 @@ export function MathTasksPage({ tier }: Props) {
     if (loadedTasksRef.current[num]) return;
     setLoadingChapters((prev) => (prev[num] ? prev : { ...prev, [num]: true }));
     try {
-      const tasks = await loadMathChapterTasks(num);
+      const tasks = await loadChapterTasks(num);
       setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
     } finally {
       setLoadingChapters((prev) => {
@@ -284,7 +305,7 @@ export function MathTasksPage({ tier }: Props) {
       };
       if (result.allCorrect) next.passed = [...next.passed, current.id];
       else next.revision = [...next.revision, current.id];
-      saveProgress(next);
+      saveProgress(next, storageKey);
       return next;
     });
     const chLabel =
@@ -414,7 +435,7 @@ export function MathTasksPage({ tier }: Props) {
         passed: prev.passed.filter((x) => !idSet.has(x)),
         revision: prev.revision.filter((x) => !idSet.has(x)),
       };
-      saveProgress(next);
+      saveProgress(next, storageKey);
       return next;
     });
   };
@@ -960,6 +981,7 @@ export function MathTasksPage({ tier }: Props) {
               subject="math"
               chapter={theoryChapter}
               title={chapters.find((c) => c.num === theoryChapter)?.title ?? ""}
+              theoryChapter={getTheory(theoryChapter)}
               onGoToPractice={() => {
                 setTheoryChapter(null);
                 setActiveChapter(theoryChapter);
@@ -1076,6 +1098,7 @@ export function MathTasksPage({ tier }: Props) {
                 onGraded={onGradedStable}
                 onResetProgress={onResetProgressStable}
                 onRetry={onRetryStable}
+                contentLang={contentLang}
               />
             ) : null}
           </div>
@@ -1144,6 +1167,7 @@ export function MathTasksPage({ tier }: Props) {
               task={activeCase}
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
+              contentLang={contentLang}
             />
           ) : null}
         </MathPracticeAside>
@@ -1561,7 +1585,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-1.5" : "my-5",
+                prevMath || nextMath ? "my-1.5" : "my-3.5",
                 prevMath && "mt-1",
                 nextMath && "mb-1",
               )}
@@ -1593,7 +1617,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
                     <div
                       key={j}
                       className={cn(
-                        prevMath || nextMath ? "my-1.5" : "my-5",
+                        prevMath || nextMath ? "my-1.5" : "my-3.5",
                         prevMath && "mt-1",
                         nextMath && "mb-1",
                       )}
@@ -1841,7 +1865,7 @@ function MathPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className="mt-4 w-full max-h-[min(70vh,32rem)] overflow-hidden lg:sticky lg:top-20 lg:mt-0 lg:block lg:h-[calc(100vh-6rem)] lg:max-h-none lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+    <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
       {children}
     </PracticeRightSlot>
   );
@@ -1862,24 +1886,46 @@ function AllExplanationsPanel({
   task,
   index,
   onClose,
+  contentLang = "en",
 }: {
   task: MathTask;
   index: number;
   onClose: () => void;
+  contentLang?: "de" | "en";
 }) {
   const letters = "ABCDEF";
+  const trueLabel = contentLang === "de" ? "Richtig" : "True";
+  const falseLabel = contentLang === "de" ? "Falsch" : "False";
   const body = [
     sharedSolutionOverview(task),
     "",
     ...task.statements.flatMap((_, i) => {
       const letter = letters[i] ?? String(i + 1);
-      const verdict = task.answer_key[i] ? "True" : "False";
+      const verdict = task.answer_key[i] ? trueLabel : falseLabel;
       let expl = (task.tactical_explanations[i] ?? "").trim();
       if (expl) {
-        // Always bind panel block i to statement i / answer_key[i], Ch4/Ch13 header.
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        // Always bind panel block i to statement i / answer_key[i].
+        // Strip EN or DE verdict headers so we never show True+Falsch twice.
+        expl = expl
+          .replace(
+            /^\*\*[A-F]\.\*\*\s*→\s*(?:True|False|Wahr|Falsch|Richtig)\s*/i,
+            "",
+          )
+          .trim();
         // Legacy Ch6 PDF headers: **A) full statement.**  (true)
-        expl = expl.replace(/^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false)\)\s*/i, "").trim();
+        expl = expl
+          .replace(
+            /^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false|wahr|falsch|richtig)\)\s*/i,
+            "",
+          )
+          .trim();
+        // Drop a leftover second verdict line if present
+        expl = expl
+          .replace(
+            /^(?:[A-F]\.\s*)?→\s*(?:True|False|Wahr|Falsch|Richtig)\s*\n+/i,
+            "",
+          )
+          .trim();
         return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
       }
       return [
@@ -1893,7 +1939,7 @@ function AllExplanationsPanel({
     .trim();
 
   return (
-    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
+    <div className="practice-fade-in flex h-auto min-h-0 flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:overflow-hidden" data-practice-surface>
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -1911,21 +1957,29 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
-        <MathAnswerKeyTable answerKey={task.answer_key} />
+      <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
+        <MathAnswerKeyTable answerKey={task.answer_key} contentLang={contentLang} />
         <MathProse text={body} />
       </div>
     </div>
   );
 }
 
-function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
+function MathAnswerKeyTable({
+  answerKey,
+  contentLang = "en",
+}: {
+  answerKey: boolean[];
+  contentLang?: "de" | "en";
+}) {
   const letters = "ABCDEF";
+  const trueLabel = contentLang === "de" ? "RICHTIG" : "TRUE";
+  const falseLabel = contentLang === "de" ? "FALSCH" : "FALSE";
 
   return (
     <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
       <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
-        Answer key
+        {contentLang === "de" ? "Antwortschlüssel" : "Answer key"}
       </p>
       <table className="w-full min-w-[16rem] border-collapse border border-foreground/20 text-center text-[14px] shadow-sm">
         <thead>
@@ -1947,7 +2001,7 @@ function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
                 key={i}
                 className="border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground"
               >
-                {isTrue ? "TRUE" : "FALSE"}
+                {isTrue ? trueLabel : falseLabel}
               </td>
             ))}
           </tr>
@@ -2041,6 +2095,7 @@ const MathTaskCard = memo(function MathTaskCard({
   requireAuth,
   reviewOnly = false,
   timerNote = null,
+  contentLang = "en",
 }: {
   task: MathTask;
   index: number;
@@ -2060,6 +2115,7 @@ const MathTaskCard = memo(function MathTaskCard({
   requireAuth?: () => boolean;
   reviewOnly?: boolean;
   timerNote?: string | null;
+  contentLang?: "de" | "en";
 }) {
   const calc = usePracticeCalcOptional();
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -2179,11 +2235,15 @@ const MathTaskCard = memo(function MathTaskCard({
         ) : null}
       </div>
 
-      <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+      <ol className="mt-6 divide-y divide-border overflow-visible rounded-xl border border-border bg-background">
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
           <span className="w-6 text-center">#</span>
-          <span className="flex-1">Statement</span>
-          <span className="w-11 text-center lg:w-14">True</span>
+          <span className="flex-1">
+            {contentLang === "de" ? "Aussage" : "Statement"}
+          </span>
+          <span className="w-11 text-center lg:w-14">
+            {contentLang === "de" ? "Richtig" : "True"}
+          </span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {task.statements.map((stmt, i) => {

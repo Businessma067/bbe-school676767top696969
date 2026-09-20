@@ -687,44 +687,6 @@
       "solution_overview": "Advanced possession after prepositions mixes with \"for who\" and \"that its\" traps, plus clean geography and contraction models.\n\n**Part 1: What to watch for.**\n\n\"On/in/at whose + noun\" works for inanimate heads too. Preposition + who is almost always wrong for people. \"That its\" is possession failure in disguise.\n\n**Part 2: How to decide.**\n\nFix person-preposition forms and replace broken \"that + possessive\" with \"whose.\" Expand \"who's waiting\" to confirm \"who is,\" and keep formal \"off which\" for place geography.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-6-19",
-      "case_id": "ENG G.6.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "The path along which we walked ends at the lighthouse.",
-        "A neighbour who's dog barks at dawn has apologised twice.",
-        "The committee members whom the mayor praised stayed for tea.",
-        "The oven, that overheats on the fan setting, needs a service.",
-        "Few of the routes by which hikers reach the summit stay open in winter."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) The path along which we walked ends at the lighthouse.**\n\n\"Along which\" correctly links a place after a preposition: we walked along the path. Path, road, and route phrases often use \"along/by which\" in formal relatives. Keep the preposition with \"which.\"\n\nPath relative \"along which\" correctly marks the route we walked, so the pattern fits.",
-        "**B) A neighbour who's dog barks at dawn has apologised twice.**\n\nPossession needs \"whose,\" not \"who's,\" before \"dog.\" \"Who's dog\" → \"who is dog,\" so reject it at once. A neighbour whose dog barks at dawn is the belonging reading.\n\n**Trap:** \"Who's + noun\" (dog/coat/keys) is almost always a whose-trap.\n\nBelonging needs \"whose,\" not the contraction \"who's,\" so the line is **false** — \"A neighbour whose dog barks at dawn has apologised twice.\"",
-        "**C) The committee members whom the mayor praised stayed for tea.**\n\nObject \"whom\" correctly refers to the committee members the mayor praised. Subject of the relative clause + object \"whom\" is a clean formal structure. The defining clause needs no commas.\n\nObject \"whom\" correctly marks the members the coach praised, so the wording is **true**.",
-        "**D) The oven, that overheats on the fan setting, needs a service.**\n\nCommas mark a non-restrictive clause about a known oven. Household nouns still obey the rule: non-restrictive wants \"which,\" not \"that.\" Swap the pronoun and keep the commas.\n\n**Trap:** Commas + \"that\" for an appliance is still a late-set near-miss.\n\nCommas plus \"that\" for a thing miss the non-restrictive rule, so this is **false** — \"The oven, which overheats on the fan setting, needs a service.\"",
-        "**E) Few of the routes by which hikers reach the summit stay open in winter.**\n\n\"By which\" correctly marks the means or route: hikers reach the summit by the routes. \"The X by which Y happens\" is a polished relative pattern. Keep the preposition with \"which.\"\n\n\"By which\" correctly marks the summit routes, so this line is **true**."
-      ],
-      "highlights": [
-        "along which",
-        "who's dog",
-        "whom the mayor",
-        "that overheats",
-        "by which"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.6",
-      "solution_overview": "Formal path relatives contrast with \"who's + noun\" and comma + \"that\" among trail, neighbour, committee, oven, and route sentences.\n\n**Part 1: What to watch for.**\n\nPath and route phrases love \"along/by which.\" \"Who's dog\" expands to \"who is dog\" and must become \"whose.\" Commas still ban \"that,\" even for household nouns like ovens.\n\n**Part 2: How to decide.**\n\nExpand contractions and check commas before you trust a late-set true. Keep object \"whom\" when the mayor praised the members, and reward \"by which\" for means or routes.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
-    },
-    {
       "id": "en-g-6-20",
       "case_id": "ENG G.6.20",
       "title": "Task 20",

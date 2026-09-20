@@ -54,7 +54,40 @@ export function friendlyAuthError(error: unknown, fallback = "Something went wro
   return fallback;
 }
 
-export async function getCurrentAuthState(): Promise<AuthState | null> {
+type AuthCache = { ready: boolean; auth: AuthState | null };
+
+let authCache: AuthCache = { ready: false, auth: null };
+let inflightAuth: Promise<AuthState | null> | null = null;
+let authListenerBound = false;
+
+function bindAuthCacheInvalidation() {
+  if (authListenerBound || typeof window === "undefined") return;
+  authListenerBound = true;
+  supabase.auth.onAuthStateChange((event) => {
+    if (event === "SIGNED_OUT") {
+      authCache = { ready: true, auth: null };
+      inflightAuth = null;
+      return;
+    }
+    if (event === "SIGNED_IN" || event === "USER_UPDATED") {
+      // Keep the last painted account chrome until the refresh finishes.
+      inflightAuth = null;
+      authCache = { ready: false, auth: authCache.auth };
+    }
+  });
+}
+
+/** Last known header auth — avoids Sign-in skeleton flash on every page remount. */
+export function peekAuthState(): AuthCache {
+  return authCache;
+}
+
+export function clearAuthStateCache(): void {
+  authCache = { ready: false, auth: null };
+  inflightAuth = null;
+}
+
+async function loadAuthState(): Promise<AuthState | null> {
   const sessionRes = await supabase.auth.getSession();
   if (!sessionRes.data.session) return null;
 
@@ -86,4 +119,20 @@ export async function getCurrentAuthState(): Promise<AuthState | null> {
     name: displayName || metadataName || email.split("@")[0] || "Account",
     role,
   };
+}
+
+export async function getCurrentAuthState(options?: {
+  refresh?: boolean;
+}): Promise<AuthState | null> {
+  bindAuthCacheInvalidation();
+  if (!options?.refresh && authCache.ready) return authCache.auth;
+  if (!options?.refresh && inflightAuth) return inflightAuth;
+
+  const request = loadAuthState().then((auth) => {
+    authCache = { ready: true, auth };
+    if (inflightAuth === request) inflightAuth = null;
+    return auth;
+  });
+  inflightAuth = request;
+  return request;
 }

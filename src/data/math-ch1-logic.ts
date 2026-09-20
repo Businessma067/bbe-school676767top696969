@@ -2969,10 +2969,11 @@ Let $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about ordered pairs f
 An ordered pair $(a,b)$ lands in $A\\times B$ only when the first slot is from $A$ and the second from $B$. Size is the product rule
 
 $$
-\begin{aligned}
-& 2\\cdot 3 \\
-&=6.
-\end{aligned}
+2\\cdot 3
+$$
+
+$$
+= 6.
 $$
 
 Turning the factors around produces $B\\times A$: the same count, different members.`,
@@ -3531,10 +3532,11 @@ Among $200$ customers, $\\lvert A\\rvert=120$ like Product A, $\\lvert B\\rvert=
 The $50$ dual-likers sit inside each headline, so inclusion-exclusion subtracts the overlap once:
 
 $$
-\begin{aligned}
-& 120+90-50 \\
-&=160.
-\end{aligned}
+120+90-50
+$$
+
+$$
+= 160.
 $$
 
 A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size minus the union.`,
@@ -4413,10 +4415,11 @@ The task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the 
 An ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$. Size is the product rule
 
 $$
-\begin{aligned}
-& 2\\cdot 3 \\
-&=6.
-\end{aligned}
+2\\cdot 3
+$$
+
+$$
+= 6.
 $$
 
 Turning the grid on its side produces $B\\times A$, same count, different members.`,
@@ -4511,10 +4514,11 @@ Pair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always 
 The product rule is $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives $B\\times A$: the same count, a different set.
 
 $$
-\begin{aligned}
-\\lvert A\\times B\\rvert &=3\\cdot 2 \\
-&=6.
-\end{aligned}
+\\lvert A\\times B\\rvert = 3\\cdot 2
+$$
+
+$$
+= 6.
 $$`,
   },
   {
@@ -4841,10 +4845,11 @@ Of $40$ students, $\\lvert A\\rvert=22$ play chess, $\\lvert B\\rvert=15$ play c
 Inclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:
 
 $$
-\begin{aligned}
-\\lvert A\\cup B\\rvert &=22+15-6 \\
-&=31.
-\end{aligned}
+\\lvert A\\cup B\\rvert = 22+15-6
+$$
+
+$$
+= 31.
 $$
 
 Chess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. Neither is the club total minus the union.`,
@@ -4937,10 +4942,11 @@ Inclusion-exclusion counts each student once:
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
 $$
-\begin{aligned}
-|A\\cup B| &=34+28-12 \\
-&=50
-\end{aligned}
+|A\\cup B| = 34+28-12
+$$
+
+$$
+= 50
 $$
 
 Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The intersection is a subset of the union.`,
@@ -5033,10 +5039,11 @@ Inclusion-exclusion counts each member once:
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
 $$
-\begin{aligned}
-|A\\cup B| &=20+18-5 \\
-&=33
-\end{aligned}
+|A\\cup B| = 20+18-5
+$$
+
+$$
+= 33
 $$
 
 Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The intersection is a subset of the union.`,
@@ -8944,10 +8951,11 @@ So the statement is False.`,
     solution_overview: `The original statement is $6 \\mid n \\Rightarrow 3 \\mid n$. If $6 \\mid n$, write
 
 $$
-\begin{aligned}
-n &=6k \\
-&=3(2k)
-\end{aligned}
+n = 6k
+$$
+
+$$
+= 3(2k)
 $$
 
 so $3 \\mid n$ automatically.
@@ -9297,10 +9305,11 @@ The claim says J is a liar. Test the opposite by assuming J is a truth-teller. J
 $$J = \\text{true},$$
 
 $$
-\begin{aligned}
-K &= L \\
-&= \\text{false}
-\end{aligned}
+K = L
+$$
+
+$$
+= \\text{false}
 $$
 
 K's sentence "J is lying" is false, which fits K being a liar. But L says that K and L are the same type. Under this assignment they are both liars, so L's sentence is true. A liar cannot make a true statement, and the J-truthful case fails.
@@ -9324,17 +9333,19 @@ The claim says L is a truth-teller. The shared forcing has J as a liar and K as 
 $$J = \\text{false},$$
 
 $$
-\begin{aligned}
-& K \\
-&= \\text{true},
-\end{aligned}
+K
 $$
 
 $$
-\begin{aligned}
-& L \\
-&= \\text{false}
-\end{aligned}
+= \\text{true},
+$$
+
+$$
+L
+$$
+
+$$
+= \\text{false}
 $$
 
 Then K would be the only truth-teller. That makes J's sentence, "Exactly one of us is a truth-teller," true. But J is already forced to be a liar, so this case is impossible.
@@ -9370,10 +9381,11 @@ If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now 
 $$J = \\text{liar},$$
 
 $$
-\begin{aligned}
-K &= L \\
-&= \\text{truth-teller}
-\end{aligned}
+K = L
+$$
+
+$$
+= \\text{truth-teller}
 $$
 
 In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment.
@@ -10258,137 +10270,6 @@ If $\\neg P$ holds, the contrapose of (6) gives $\\neg S$, and then (4) fails. S
 Then (1) gives $\\neg Q$, (3) gives $T$, (5) gives $\\neg R$, and (2) with Ravi out forces $S$. Rule (6) holds because Petra already reviews.
 
 The unique assignment is $\\{P,S,T\\}$.`,
-  },
-  {
-    id: `math-1-108`,
-    case_id: `MATH 1.108`,
-    title: `Seven Finalists and the Tournament Roster`,
-    subsection: `1.4`,
-    context: `Seven finalists - Uma, Victor, Wendy, Xavier, Yara, Zane, and Bianca - are deciding whether to compete in a tournament. Their participation follows these rules:
-
-1. Uma competes if and only if Victor competes.
-
-2. If Victor competes, then Wendy competes.
-
-3. Exactly one of Wendy or Xavier competes (never both, never neither).
-
-4. If Xavier competes, then Yara does not compete.
-
-5. At least one of Yara or Zane competes.
-
-6. Zane competes only if Bianca does not compete.
-
-7. If Bianca competes, then Uma competes.
-
-8. At least four of the seven finalists compete.`,
-    statements: [
-      `Victor must compete in every valid roster.`,
-      `It is possible for Xavier to compete in some valid roster.`,
-      `If Bianca competes, then Zane does not compete.`,
-      `There is exactly one valid way to build the roster, consistent with all eight rules.`,
-      `It is possible for exactly six of the seven finalists to compete.`,
-    ],
-    answer_key: [true, false, true, false, false],
-    tactical_explanations: [
-      `**A.** → True
-
-To decide whether Victor is forced in, try the opposite: assume Victor is out and see whether any roster can still meet all eight rules.
-
-Assume $\\neg V$. Rule (1) is the biconditional $U\\Leftrightarrow V$, so Uma is out as well:
-
-$$\\neg V \\implies \\neg U$$
-
-Rule (7) is $B\\Rightarrow U$. Its contrapose is $\\neg U\\Rightarrow\\neg B$, so Bianca is out too:
-
-$$\\neg U \\implies \\neg B$$
-
-Only Wendy, Xavier, Yara, and Zane remain as possible competitors. Rule (3) says exactly one of Wendy or Xavier competes, so there are two cases.
-
-**Case Wendy in, Xavier out.** Then the only people who can still enter are Wendy, Yara, and Zane — at most three competitors. Rule (8) needs at least four, so this case dies.
-
-**Case Xavier in, Wendy out.** Rule (4) is $X\\Rightarrow\\neg Y$, so Yara is out. Rule (5) needs $Y\\lor Z$, and with Yara gone Zane must enter. The roster is then only Xavier and Zane — size $2$, again below four.
-
-Both Victor-out branches break rule (8). Therefore every valid roster has Victor in.
-
-So the statement is True.`,
-      `**B.** → False
-
-From letter A (and the overview solve), Victor competes in every valid roster. Feed that fact forward through the later rules.
-
-Rule (2) is $V\\Rightarrow W$. With Victor in, Wendy must compete:
-
-$$V \\implies W$$
-
-Rule (3) says exactly one of Wendy or Xavier competes. Wendy is already in, so Xavier cannot be:
-
-$$W \\implies \\neg X$$
-
-Xavier is therefore out of every valid roster. The claim says some valid roster includes Xavier, which never happens.
-
-So the statement is False.`,
-      `**C.** → True
-
-Rule (6) says "Zane competes only if Bianca does not," which is the implication
-
-$$Z \\Rightarrow \\neg B$$
-
-The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$. Here $P=Z$ and $Q=\\neg B$, so
-
-$$\\neg(\\neg B) \\Rightarrow \\neg Z$$
-
-$$B \\Rightarrow \\neg Z$$
-
-That is exactly "If Bianca competes, then Zane does not compete." The claim restates a forced consequence of rule (6).
-
-So the statement is True.`,
-      `**D.** → False
-
-After Victor is forced in, the chain $V\\Rightarrow W$ and rule (3) also force Uma in, Wendy in, and Xavier out. The forced core is therefore
-
-$$\\{U,V,W\\}$$
-
-$$\\text{with }X\\text{ out}$$
-
-The free variables are only $Y,Z,B$, subject to (5) $Y\\lor Z$ and (6) $Z\\Rightarrow\\neg B$ (Zane and Bianca cannot both enter). Listing the legal extras:
-
-$$\\{Y\\},\\quad \\{Z\\},\\quad \\{Y,B\\},\\quad \\{Y,Z\\}$$
-
-(The triple $\\{Y,Z,B\\}$ is illegal by (6); $\\{B\\}$ alone fails (5); $\\{Z,B\\}$ fails (6).)
-
-Each legal extra produces a different full roster on the same core, so there are four valid rosters, not one. The claim of uniqueness fails.
-
-So the statement is False.`,
-      `**E.** → False
-
-A roster of size exactly six would need six of the seven finalists. With the forced core $\\{U,V,W\\}$ already in and Xavier forced out, the only way to reach size six is to add all three of Yara, Zane, and Bianca:
-
-$$\\{U,V,W,Y,Z,B\\}$$
-
-But rule (6) is $Z\\Rightarrow\\neg B$, so Zane and Bianca cannot both compete. The extra $\\{Y,Z,B\\}$ is illegal.
-
-The legal extras recovered above have size $1$ or $2$, so total roster sizes are only $4$ or $5$. Size six never appears.
-
-So the statement is False.`,
-    ],
-    difficulty_level: `5/5`,
-    sort_order: 30,
-    solution_overview: `**Part 1: Setup.**
-
-Write $U,V,W,X,Y,Z,B$ for Uma, Victor, Wendy, Xavier, Yara, Zane, Bianca competing. The stem is
-
-$$(1)\\ U\\Leftrightarrow V,\\qquad (2)\\ V\\Rightarrow W,\\qquad (3)\\ (W\\land\\neg X)\\lor(\\neg W\\land X),$$
-
-$$(4)\\ X\\Rightarrow\\neg Y,\\qquad (5)\\ Y\\lor Z,\\qquad (6)\\ Z\\Rightarrow\\neg B,\\qquad (7)\\ B\\Rightarrow U,$$
-
-and (8) at least four of the seven compete.
-
-"$P$ only if $Q$" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.
-
-**Part 2: Shared forcing (used by every letter).**
-
-Try $\\neg V$: then $\\neg U$ by (1) and $\\neg B$ by the contrapose of (7). Rule (3) splits into $W\\land\\neg X$ (at most $\\{W,Y,Z\\}$, size $\\le 3$) or $X\\land\\neg W$ (then $\\neg Y$ by (4) and $Z$ by (5), size $2$). Both break (8), so Victor is forced in. Then $U$ by (1), $W$ by (2), and $\\neg X$ by (3).
-
-Forced core: $\\{U,V,W\\}$ in, $X$ out. Among $Y,Z,B$, rules (5)–(6) allow only the extras $\\{Y\\}$, $\\{Z\\}$, $\\{Y,B\\}$, $\\{Y,Z\\}$.`,
   },
 ];
 

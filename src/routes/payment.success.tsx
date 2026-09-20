@@ -1,9 +1,11 @@
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
+import { useLayoutEffect } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
+import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
 
 type SuccessSearch = {
   product?: string;
@@ -38,7 +40,10 @@ function safeStartHref(href: string | undefined, productSlug: string | undefined
 export const Route = createFileRoute("/payment/success")({
   validateSearch: (search: Record<string, unknown>): SuccessSearch => parseSuccessSearch(search),
   head: () => ({
-    links: [...hreflangLinks("/payment/success"), { rel: "canonical", href: "https://bbe-school.com/payment/success" }],
+    links: [
+      ...hreflangLinks("/payment/success"),
+      { rel: "canonical", href: "https://bbe-school.com/payment/success" },
+    ],
     meta: [
       { name: "robots", content: "noindex, nofollow" },
       { title: "Purchase confirmed — BBE School" },
@@ -66,6 +71,9 @@ export function PaymentSuccessPage() {
   const { product, href, promo } = useRouterState({
     select: (s) => parseSuccessSearch(s.location.search as Record<string, unknown>),
   });
+  useLayoutEffect(() => {
+    breakOutOfIframe();
+  }, []);
   const productSlug =
     typeof product === "string" && isPaidProductSlug(product) ? product : undefined;
   const startHref = safeStartHref(href, productSlug);

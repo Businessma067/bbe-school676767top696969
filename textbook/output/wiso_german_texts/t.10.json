@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.10",
+    "title": "Plattformökonomie, Gig-Work und die Zukunft der Erwerbsarbeit",
+    "passage": "(1) Innerhalb weniger Jahre haben digitale Plattformen eine neue Form der Arbeitsvermittlung etabliert. Wer eine Fahrt bestellt, eine Mahlzeit liefern lässt oder eine Übersetzung beauftragt, tritt in der Regel nicht mit einem Arbeitgeber in Kontakt, sondern mit einer Software, die Angebot und Nachfrage in Sekunden zusammenführt. Die Internationale Arbeitsorganisation zählte in einem Bericht von 2021 mehr als achthundert aktive Plattformen weltweit und stellte fest, dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte.\n\n(2) Der Reiz für die Erwerbstätigen liegt in der Flexibilität. Befragungen zeigen regelmäßig, dass die freie Wahl der Arbeitszeit als wichtigster Vorteil genannt wird, gefolgt von einem niedrigschwelligen Einstieg ohne formale Bewerbungsverfahren. Für Menschen mit Betreuungspflichten, für Studierende oder für Zugewanderte mit nicht anerkannten Abschlüssen ist das häufig der einzige schnell zugängliche Verdienst.\n\n(3) Dem stehen strukturelle Nachteile gegenüber. Die meisten Plattformen stufen die Tätigen als selbstständig ein, was bedeutet: kein Mindestlohn, keine Lohnfortzahlung im Krankheitsfall, keine bezahlten Urlaubstage und in vielen Ländern keine Beiträge zur Arbeitslosen- oder Rentenversicherung. Betriebsmittel wie Fahrrad, Auto oder Smartphone stellen die Tätigen selbst, ebenso Reparatur und Versicherung. Rechnet man diese Kosten und die unbezahlten Wartezeiten zwischen den Aufträgen ein, liegt der effektive Stundenverdienst in mehreren Untersuchungen deutlich unter dem nominal versprochenen Betrag.\n\n(4) Umstritten ist vor allem der rechtliche Status. Die Plattformen argumentieren, sie seien technische Vermittler und keine Arbeitgeber; die Tätigen entschieden selbst, wann und ob sie arbeiten. Gerichte in mehreren Ländern sahen das anders. Der britische Supreme Court entschied 2021, dass Fahrerinnen und Fahrer von Uber als „workers“ gelten und damit Anspruch auf Mindestlohn und bezahlten Urlaub haben. Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte.\n\n(5) Im Zentrum der juristischen Auseinandersetzung steht die Frage der Kontrolle. Wer Preise setzt, Routen vorgibt, Ablehnungen sanktioniert und die Leistung über Bewertungen misst, verhält sich in der Sache wie ein Arbeitgeber, auch wenn kein Arbeitsvertrag unterschrieben wurde. Kritikerinnen und Kritiker sprechen von algorithmischem Management: Anweisungen kommen nicht von einer Person, sondern aus einem System, dessen Regeln die Betroffenen häufig nicht einsehen können.\n\n(6) Die Gegenposition ist nicht ohne Gewicht. Wird Plattformarbeit vollständig in reguläre Beschäftigung überführt, könnten Unternehmen Schichten planen, Zugänge beschränken und weniger Menschen beschäftigen; die viel gelobte Flexibilität wäre dahin. Nach der spanischen Regelung stellten mehrere Anbieter ihr Geschäftsmodell um, ein Unternehmen zog sich zeitweise ganz aus dem Markt zurück. Umfragen unter Tätigen zeigen zudem kein einheitliches Bild: Ein erheblicher Teil möchte den Status als Selbstständige behalten, sofern soziale Absicherung hinzukommt.\n\n(7) Genau hier setzt ein dritter Weg an. Vorgeschlagen wird, soziale Rechte nicht an einen Beschäftigungsstatus, sondern an die geleistete Arbeit zu knüpfen, sodass Ansprüche anteilig mit jedem Auftrag entstehen und über verschiedene Auftraggeber hinweg mitgenommen werden können. Die Europäische Union einigte sich 2024 auf eine Richtlinie zur Plattformarbeit, die eine Vermutung der Beschäftigung vorsieht und Regeln für algorithmische Steuerung setzt, deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt.\n\n(8) Offen ist, wie groß das Phänomen überhaupt ist. Schätzungen zum Anteil der Plattformarbeit an der Gesamtbeschäftigung schwanken je nach Definition erheblich, weil viele Menschen nur gelegentlich und ergänzend zu einem Hauptjob tätig sind. Manche Fachleute halten die Debatte deshalb für überproportional laut; andere entgegnen, die Bedeutung liege weniger in den heutigen Zahlen als in der Vorbildwirkung für Logistik, Pflege und Einzelhandel, wo ähnliche Steuerungsinstrumente bereits erprobt werden.\n\n(9) Die Plattformökonomie ist damit weniger eine Nische als ein Testfall. Sie führt vor, wie weit sich Erwerbsarbeit organisieren lässt, ohne jene Institutionen zu nutzen, die im zwanzigsten Jahrhundert um das Normalarbeitsverhältnis gebaut wurden. Ob daraus eine Modernisierung des Sozialstaats folgt oder seine schleichende Umgehung, wird sich weniger an Gerichtsurteilen als an der praktischen Umsetzung der neuen Regeln zeigen.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-10-01",
+      "case_id": "DE T.10.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das Verständnis von Verbreitung, Vorteilen und strukturellen Nachteilen der Plattformarbeit.",
+      "kind": "reading",
+      "statements": [
+        "Die Internationale Arbeitsorganisation zählte in einem Bericht von 2021 mehr als achthundert aktive Plattformen weltweit.",
+        "Laut Text ist die Zahl der Plattformen innerhalb eines Jahrzehnts weitgehend konstant geblieben.",
+        "Als wichtigster Vorteil wird in Befragungen laut Text die freie Wahl der Arbeitszeit genannt.",
+        "Die Betriebsmittel wie Fahrrad oder Smartphone stellen laut Text in der Regel die Plattformen.",
+        "Rechnet man Kosten und Wartezeiten ein, liegt der effektive Stundenverdienst laut mehreren Untersuchungen unter dem nominal versprochenen Betrag."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Die Internationale Arbeitsorganisation zählte in einem Bericht von 2021 mehr als achthundert aktive Plattformen weltweit.**\n\nAbsatz 1 nennt genau diese Zahl und datiert sie auf „in einem Bericht von 2021“.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „in einem Bericht von 2021\" darf die Behauptung nicht stehen.",
+        "**B) Laut Text ist die Zahl der Plattformen innerhalb eines Jahrzehnts weitgehend konstant geblieben.**\n\nAbsatz 1 stellt das Gegenteil fest, nämlich „dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte“.\n\nVervielfacht und konstant schließen einander aus; die Aussage löscht die Wachstumsdynamik.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 1 und ist daher falsch.",
+        "**C) Als wichtigster Vorteil wird in Befragungen laut Text die freie Wahl der Arbeitszeit genannt.**\n\nAbsatz 2 berichtet, „dass die freie Wahl der Arbeitszeit als wichtigster Vorteil genannt wird“, gefolgt vom niedrigschwelligen Einstieg.\n\nDie Aussage behält auch die Rangfolge korrekt bei.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**D) Die Betriebsmittel wie Fahrrad oder Smartphone stellen laut Text in der Regel die Plattformen.**\n\nAbsatz 3 sagt ausdrücklich: „Betriebsmittel wie Fahrrad, Auto oder Smartphone stellen die Tätigen selbst“, samt Reparatur und Versicherung.\n\nDie Aussage verschiebt die Kostenlast auf die falsche Seite.\n\n**Falle:** Wer die Mittel stellt, entscheidet im Text mit über den effektiven Verdienst.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 3 und ist daher falsch.",
+        "**E) Rechnet man Kosten und Wartezeiten ein, liegt der effektive Stundenverdienst laut mehreren Untersuchungen unter dem nominal versprochenen Betrag.**\n\nAbsatz 3 formuliert genau diese Rechnung und deren Ergebnis.\n\nDie Aussage gibt Bedingung und Befund unverändert wieder.\n\nIn Absatz 3 heißt es wörtlich: „liegt der effektive Stundenverdienst in mehreren Untersuchungen deutlich unter dem nominal versprochenen Betrag\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "in einem Bericht von 2021",
+        "dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte",
+        "dass die freie Wahl der Arbeitszeit als wichtigster Vorteil genannt wird",
+        "Betriebsmittel wie Fahrrad, Auto oder Smartphone stellen die Tätigen selbst",
+        "liegt der effektive Stundenverdienst in mehreren Untersuchungen deutlich unter dem nominal versprochenen Betrag"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-02",
+      "case_id": "DE T.10.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen die Statusfrage, die Gerichtsentscheidungen und die Gegenargumente zur Regulierung.",
+      "kind": "reading",
+      "statements": [
+        "Die Plattformen bezeichnen sich laut Text selbst als technische Vermittler und nicht als Arbeitgeber.",
+        "Der britische Supreme Court entschied 2021, dass Uber-Fahrerinnen und -Fahrer keinen Anspruch auf Mindestlohn haben.",
+        "Im Zentrum der juristischen Auseinandersetzung steht laut Text die Frage der Kontrolle.",
+        "Nach der spanischen Regelung zog sich laut Text ein Unternehmen zeitweise ganz aus dem Markt zurück.",
+        "Umfragen unter Tätigen zeigen laut Text ein einheitliches Bild zugunsten regulärer Beschäftigung."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Plattformen bezeichnen sich laut Text selbst als technische Vermittler und nicht als Arbeitgeber.**\n\nAbsatz 4 gibt ihre Position wieder: „sie seien technische Vermittler und keine Arbeitgeber“, weil die Tätigen selbst über ihre Einsätze entschieden.\n\nDie Aussage ordnet diese Selbstbeschreibung der richtigen Seite zu.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**B) Der britische Supreme Court entschied 2021, dass Uber-Fahrerinnen und -Fahrer keinen Anspruch auf Mindestlohn haben.**\n\nAbsatz 4 berichtet das Gegenteil: Das Gericht entschied, „dass Fahrerinnen und Fahrer von Uber als „workers“ gelten“ und damit Anspruch auf Mindestlohn und bezahlten Urlaub haben.\n\nGericht und Jahr stimmen, das Ergebnis ist umgekehrt.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nIn Absatz 4 heißt es wörtlich: „Der britische Supreme Court entschied 2021, dass Fahrerinnen und Fahrer von Uber als „workers“ gelten\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 4 und ist daher falsch.",
+        "**C) Im Zentrum der juristischen Auseinandersetzung steht laut Text die Frage der Kontrolle.**\n\nAbsatz 5 beginnt genau damit, dass dort „steht die Frage der Kontrolle“, und führt Preissetzung, Routen und Bewertungen an.\n\nDie Aussage benennt den Kern der Auseinandersetzung korrekt.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**D) Nach der spanischen Regelung zog sich laut Text ein Unternehmen zeitweise ganz aus dem Markt zurück.**\n\nAbsatz 6 nennt neben Umstellungen des Geschäftsmodells genau diesen Fall: „ein Unternehmen zog sich zeitweise ganz aus dem Markt zurück“.\n\nDie Aussage gibt das Beispiel unverändert wieder.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**E) Umfragen unter Tätigen zeigen laut Text ein einheitliches Bild zugunsten regulärer Beschäftigung.**\n\nAbsatz 6 sagt ausdrücklich, die Umfragen zeigten kein einheitliches Bild: „Ein erheblicher Teil möchte den Status als Selbstständige behalten, sofern soziale Absicherung hinzukommt.“\n\nDie Aussage vereinheitlicht eine im Text gespaltene Präferenz.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch."
+      ],
+      "highlights": [
+        "sie seien technische Vermittler und keine Arbeitgeber",
+        "Der britische Supreme Court entschied 2021, dass Fahrerinnen und Fahrer von Uber als „workers“ gelten",
+        "steht die Frage der Kontrolle",
+        "ein Unternehmen zog sich zeitweise ganz aus dem Markt zurück",
+        "Ein erheblicher Teil möchte den Status als Selbstständige behalten, sofern soziale Absicherung hinzukommt"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-03",
+      "case_id": "DE T.10.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen den dritten Weg, die EU-Richtlinie, die Größenfrage und den Schluss.",
+      "kind": "reading",
+      "statements": [
+        "Der dritte Weg schlägt vor, soziale Rechte an die geleistete Arbeit statt an einen Beschäftigungsstatus zu knüpfen.",
+        "Die EU-Richtlinie von 2024 regelt laut Text die Ausgestaltung im Detail und lässt den Mitgliedstaaten keinen Spielraum.",
+        "Schätzungen zum Anteil der Plattformarbeit schwanken laut Text je nach Definition erheblich.",
+        "Der Text bezeichnet die Plattformökonomie abschließend als reine Nische ohne weitere Bedeutung.",
+        "Laut Schluss entscheidet sich die Frage weniger an Gerichtsurteilen als an der praktischen Umsetzung der neuen Regeln."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der dritte Weg schlägt vor, soziale Rechte an die geleistete Arbeit statt an einen Beschäftigungsstatus zu knüpfen.**\n\nAbsatz 7 formuliert den Vorschlag wörtlich so, nämlich „soziale Rechte nicht an einen Beschäftigungsstatus, sondern an die geleistete Arbeit zu knüpfen“.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**B) Die EU-Richtlinie von 2024 regelt laut Text die Ausgestaltung im Detail und lässt den Mitgliedstaaten keinen Spielraum.**\n\nAbsatz 7 hält das Gegenteil fest: Die Richtlinie setzt Regeln, „deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt“.\n\nGenau dieser Spielraum ist im Text der Grund, warum die Wirkung noch offen bleibt.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**C) Schätzungen zum Anteil der Plattformarbeit schwanken laut Text je nach Definition erheblich.**\n\nAbsatz 8 begründet das damit, dass viele Menschen nur gelegentlich und ergänzend tätig sind, weshalb die Schätzungen „schwanken je nach Definition erheblich“.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „schwanken je nach Definition erheblich\" darf die Behauptung nicht stehen.",
+        "**D) Der Text bezeichnet die Plattformökonomie abschließend als reine Nische ohne weitere Bedeutung.**\n\nAbsatz 9 sagt das Gegenteil: Sie sei „weniger eine Nische als ein Testfall“ für die Organisation von Erwerbsarbeit.\n\nDie Aussage streicht damit die Schlussthese des Textes.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „weniger eine Nische als ein Testfall\" darf die Behauptung nicht stehen.",
+        "**E) Laut Schluss entscheidet sich die Frage weniger an Gerichtsurteilen als an der praktischen Umsetzung der neuen Regeln.**\n\nAbsatz 9 endet genau mit dieser Gewichtung, nämlich dass es sich „an der praktischen Umsetzung der neuen Regeln zeigen“ wird.\n\nDie Aussage gibt die Schlusspointe unverändert wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "soziale Rechte nicht an einen Beschäftigungsstatus, sondern an die geleistete Arbeit zu knüpfen",
+        "deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt",
+        "schwanken je nach Definition erheblich",
+        "weniger eine Nische als ein Testfall",
+        "an der praktischen Umsetzung der neuen Regeln zeigen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-04",
+      "case_id": "DE T.10.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen verlangen Inferenzen und die Deutung zentraler Begriffe im Kontext.",
+      "kind": "reading",
+      "statements": [
+        "„Algorithmisches Management“ meint im Kontext, dass Anweisungen aus einem System statt von einer Person kommen.",
+        "Aus der Kontrollfrage folgt, dass ein fehlender Arbeitsvertrag allein die Arbeitgeberrolle nicht ausschließt.",
+        "„Vermutung der Beschäftigung“ bedeutet im Kontext, dass Plattformarbeit grundsätzlich verboten wird.",
+        "Der Vorschlag mitnehmbarer Ansprüche zielt darauf, Absicherung unabhängig vom einzelnen Auftraggeber zu machen.",
+        "Weil viele Tätige die Flexibilität schätzen, folgt laut Text, dass sie soziale Absicherung ablehnen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) „Algorithmisches Management“ meint im Kontext, dass Anweisungen aus einem System statt von einer Person kommen.**\n\nAbsatz 5 erklärt den Begriff im selben Satz: Anweisungen kommen „aus einem System, dessen Regeln die Betroffenen häufig nicht einsehen können“.\n\nDie fehlende Einsehbarkeit ist dabei Teil der Definition, nicht ein zusätzlicher Vorwurf.\n\nDie Aussage trifft die Kontextbedeutung.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**B) Aus der Kontrollfrage folgt, dass ein fehlender Arbeitsvertrag allein die Arbeitgeberrolle nicht ausschließt.**\n\nAbsatz 5 formuliert genau das: Wer Preise, Routen und Bewertungen steuert, „verhält sich in der Sache wie ein Arbeitgeber, auch wenn kein Arbeitsvertrag unterschrieben wurde“.\n\nDie Aussage zieht diese Schlussfolgerung, ohne über den Text hinauszugehen.\n\nDie Aussage folgt dem Text korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**C) „Vermutung der Beschäftigung“ bedeutet im Kontext, dass Plattformarbeit grundsätzlich verboten wird.**\n\nAbsatz 4 beschreibt sie als gesetzliche Einordnung: „Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte.“\n\nEs geht also um den rechtlichen Status der Tätigen, nicht um ein Verbot der Tätigkeit.\n\nDie Aussage scheitert an dieser Fehldeutung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 4 und ist daher falsch.",
+        "**D) Der Vorschlag mitnehmbarer Ansprüche zielt darauf, Absicherung unabhängig vom einzelnen Auftraggeber zu machen.**\n\nAbsatz 7 beschreibt Ansprüche, die anteilig mit jedem Auftrag entstehen und „über verschiedene Auftraggeber hinweg mitgenommen werden können“.\n\nGenau darin liegt die Loslösung vom einzelnen Auftragsverhältnis.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**E) Weil viele Tätige die Flexibilität schätzen, folgt laut Text, dass sie soziale Absicherung ablehnen.**\n\nAbsatz 6 verbindet beides ausdrücklich: Viele wollen selbstständig bleiben, „sofern soziale Absicherung hinzukommt“.\n\nDie Bedingung im Nebensatz zeigt, dass Flexibilität und Absicherung hier gerade zusammen gewünscht werden.\n\nDie Aussage scheitert an dieser Inferenz.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch."
+      ],
+      "highlights": [
+        "aus einem System, dessen Regeln die Betroffenen häufig nicht einsehen können",
+        "verhält sich in der Sache wie ein Arbeitgeber, auch wenn kein Arbeitsvertrag unterschrieben wurde",
+        "Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte",
+        "über verschiedene Auftraggeber hinweg mitgenommen werden können",
+        "sofern soziale Absicherung hinzukommt"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-05",
+      "case_id": "DE T.10.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen den Aufbau der Argumentation über den gesamten Text hinweg.",
+      "kind": "reading",
+      "statements": [
+        "Der Text nennt Vorteile und Nachteile der Plattformarbeit, bevor er die Rechtsfrage entwickelt.",
+        "Die Gegenposition zur vollständigen Regulierung wird im Text als offensichtlich unhaltbar abgetan.",
+        "Absatz 7 stellt einen Vorschlag vor, der zwischen den beiden Statuslösungen vermitteln soll.",
+        "Der Text schließt mit einer eindeutigen Empfehlung für eines der diskutierten Modelle.",
+        "Der Text bezieht auch die Frage ein, wie groß das Phänomen überhaupt ist."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text nennt Vorteile und Nachteile der Plattformarbeit, bevor er die Rechtsfrage entwickelt.**\n\nAbsatz 2 behandelt die Flexibilität, Absatz 3 beginnt mit „Dem stehen strukturelle Nachteile gegenüber“, erst Absatz 4 wendet sich dem Status zu.\n\nDie Aussage beschreibt diese Reihenfolge korrekt.\n\nDie Aussage trifft den Textaufbau.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig.",
+        "**B) Die Gegenposition zur vollständigen Regulierung wird im Text als offensichtlich unhaltbar abgetan.**\n\nAbsatz 6 beginnt mit „Die Gegenposition ist nicht ohne Gewicht“ und stützt sie mit dem spanischen Beispiel und Umfragedaten.\n\nDie Aussage kehrt diese ausdrückliche Anerkennung um.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.",
+        "**C) Absatz 7 stellt einen Vorschlag vor, der zwischen den beiden Statuslösungen vermitteln soll.**\n\nAbsatz 7 liefert den Bezugspunkt für diese Aussage.\n\nDer Absatz beginnt mit „Genau hier setzt ein dritter Weg an“ und knüpft Rechte an die Arbeit statt an den Status.\n\nEr reagiert damit direkt auf die Pattsituation der Absätze 4 bis 6.\n\nDie Aussage beschreibt diese Funktion korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**D) Der Text schließt mit einer eindeutigen Empfehlung für eines der diskutierten Modelle.**\n\nAbsatz 9 formuliert stattdessen eine Alternative: „Ob daraus eine Modernisierung des Sozialstaats folgt oder seine schleichende Umgehung“, bleibt offen.\n\nEine Empfehlung wird an keiner Stelle ausgesprochen.\n\nDie Aussage scheitert am offenen Ende.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch.",
+        "**E) Der Text bezieht auch die Frage ein, wie groß das Phänomen überhaupt ist.**\n\nAbsatz 8 beginnt mit „Offen ist, wie groß das Phänomen überhaupt ist“ und referiert beide Einschätzungen dazu.\n\nDie Aussage benennt diesen eigenen Argumentschritt korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "Dem stehen strukturelle Nachteile gegenüber",
+        "Die Gegenposition ist nicht ohne Gewicht",
+        "Genau hier setzt ein dritter Weg an",
+        "Ob daraus eine Modernisierung des Sozialstaats folgt oder seine schleichende Umgehung",
+        "Offen ist, wie groß das Phänomen überhaupt ist"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-06",
+      "case_id": "DE T.10.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen Jahreszahlen, Größenangaben und Details zu den genannten Regelungen.",
+      "kind": "reading",
+      "statements": [
+        "Der Bericht der Internationalen Arbeitsorganisation stammt laut Text aus dem Jahr 2021.",
+        "Spanien verabschiedete sein Gesetz für Lieferdienste laut Text im selben Jahr wie das britische Urteil.",
+        "Die Europäische Union einigte sich laut Text 2024 auf eine Richtlinie zur Plattformarbeit.",
+        "Der Text nennt eine genaue und unstrittige Zahl für den Anteil der Plattformarbeit an der Gesamtbeschäftigung.",
+        "Laut Text zählte die Internationale Arbeitsorganisation weniger als hundert aktive Plattformen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Bericht der Internationalen Arbeitsorganisation stammt laut Text aus dem Jahr 2021.**\n\nAbsatz 1 datiert ihn ausdrücklich: „in einem Bericht von 2021“.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „in einem Bericht von 2021\" darf die Behauptung nicht stehen.",
+        "**B) Spanien verabschiedete sein Gesetz für Lieferdienste laut Text im selben Jahr wie das britische Urteil.**\n\nAbsatz 4 datiert das Urteil auf 2021 und schreibt dann: „Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte.“\n\nDie Formulierung „im selben Jahr“ stützt die Aussage direkt.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**C) Die Europäische Union einigte sich laut Text 2024 auf eine Richtlinie zur Plattformarbeit.**\n\nAbsatz 7 nennt genau dieses Jahr und diesen Gegenstand.\n\nDie Aussage übernimmt die Angabe unverändert.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 7 heißt es wörtlich: „Die Europäische Union einigte sich 2024 auf eine Richtlinie zur Plattformarbeit\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**D) Der Text nennt eine genaue und unstrittige Zahl für den Anteil der Plattformarbeit an der Gesamtbeschäftigung.**\n\nAbsatz 8 sagt das Gegenteil, weil die Schätzungen „schwanken je nach Definition erheblich“.\n\nGerade diese Unsicherheit ist im Text der Ausgangspunkt des Absatzes.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**E) Laut Text zählte die Internationale Arbeitsorganisation weniger als hundert aktive Plattformen.**\n\nAbsatz 1 nennt „mehr als achthundert aktive Plattformen weltweit“.\n\nDie Aussage verkleinert die Zahl um eine Größenordnung.\n\n**Falle:** Große Zahlen werden in Aussagen gern still halbiert oder gedrittelt.\n\nDie Aussage scheitert an der Zahl.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 1 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „mehr als achthundert aktive Plattformen weltweit\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "in einem Bericht von 2021",
+        "Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte",
+        "Die Europäische Union einigte sich 2024 auf eine Richtlinie zur Plattformarbeit",
+        "schwanken je nach Definition erheblich",
+        "mehr als achthundert aktive Plattformen weltweit"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-07",
+      "case_id": "DE T.10.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen Ursache-Wirkungs-Beziehungen zwischen Kostenlast, Regulierung und Verhalten der Anbieter.",
+      "kind": "reading",
+      "statements": [
+        "Weil Kosten und Wartezeiten bei den Tätigen liegen, fällt der effektive Stundenverdienst laut Text niedriger aus als der nominale.",
+        "Eine vollständige Überführung in reguläre Beschäftigung könnte laut Text dazu führen, dass weniger Menschen beschäftigt werden.",
+        "Die spanische Regelung blieb laut Text ohne jede Reaktion der Anbieter.",
+        "Preissetzung, Routenvorgabe und Bewertungen begründen laut Text den Verdacht auf eine Arbeitgeberfunktion.",
+        "Aus der EU-Richtlinie folgt laut Text unmittelbar eine einheitliche Praxis in allen Mitgliedstaaten."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Weil Kosten und Wartezeiten bei den Tätigen liegen, fällt der effektive Stundenverdienst laut Text niedriger aus als der nominale.**\n\nAbsatz 3 rechnet genau so: Berücksichtigt man Betriebsmittel und unbezahlte Wartezeiten, „liegt der effektive Stundenverdienst in mehreren Untersuchungen deutlich unter dem nominal versprochenen Betrag“.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig.",
+        "**B) Eine vollständige Überführung in reguläre Beschäftigung könnte laut Text dazu führen, dass weniger Menschen beschäftigt werden.**\n\nAbsatz 6 nennt als mögliche Folge, dass Unternehmen Schichten planen, „Zugänge beschränken und weniger Menschen beschäftigen“.\n\nDie Aussage behält den Möglichkeitscharakter bei und behauptet keine Gewissheit.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**C) Die spanische Regelung blieb laut Text ohne jede Reaktion der Anbieter.**\n\nAbsatz 6 berichtet zwei Reaktionen: „stellten mehrere Anbieter ihr Geschäftsmodell um“, und ein Unternehmen verließ den Markt zeitweise.\n\nDie Aussage löscht beide Folgen.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „stellten mehrere Anbieter ihr Geschäftsmodell um\" darf die Behauptung nicht stehen.",
+        "**D) Preissetzung, Routenvorgabe und Bewertungen begründen laut Text den Verdacht auf eine Arbeitgeberfunktion.**\n\nAbsatz 5 leitet genau daraus ab: „Wer Preise setzt, Routen vorgibt, Ablehnungen sanktioniert und die Leistung über Bewertungen misst“, handelt in der Sache wie ein Arbeitgeber.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**E) Aus der EU-Richtlinie folgt laut Text unmittelbar eine einheitliche Praxis in allen Mitgliedstaaten.**\n\nAbsatz 7 schränkt ausdrücklich ein, dass die Richtlinie die Ausgestaltung „weitgehend den Mitgliedstaaten überlässt“.\n\nEine einheitliche Praxis ist damit gerade nicht garantiert.\n\nDie Aussage scheitert an dieser Einschränkung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nIn Absatz 7 heißt es wörtlich: „deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch."
+      ],
+      "highlights": [
+        "liegt der effektive Stundenverdienst in mehreren Untersuchungen deutlich unter dem nominal versprochenen Betrag",
+        "Zugänge beschränken und weniger Menschen beschäftigen",
+        "stellten mehrere Anbieter ihr Geschäftsmodell um",
+        "Wer Preise setzt, Routen vorgibt, Ablehnungen sanktioniert und die Leistung über Bewertungen misst",
+        "deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-08",
+      "case_id": "DE T.10.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen die Gewichtung der Positionen und die Haltung des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt die Plattformarbeit ausschließlich als Nachteil für die Tätigen dar.",
+        "Der Text nimmt die Einwände gegen eine vollständige Regulierung ernst.",
+        "Der Text hält die Größe des Phänomens für umstritten und referiert beide Einschätzungen.",
+        "Der Text erklärt die Statusfrage durch die Gerichtsurteile für endgültig entschieden.",
+        "Der Schluss weist der Plattformökonomie über die Branche hinaus eine Testfunktion zu."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text stellt die Plattformarbeit ausschließlich als Nachteil für die Tätigen dar.**\n\nAbsatz 2 beginnt mit „Der Reiz für die Erwerbstätigen liegt in der Flexibilität“ und nennt den niedrigschwelligen Zugang als eigenen Vorteil.\n\nErst danach folgen die Nachteile; der Text wägt also ab.\n\nDie Aussage scheitert an dieser Einseitigkeit.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 2 und ist daher falsch.",
+        "**B) Der Text nimmt die Einwände gegen eine vollständige Regulierung ernst.**\n\nAbsatz 6 stellt ausdrücklich fest: „Die Gegenposition ist nicht ohne Gewicht“, und belegt sie mit Marktreaktionen und Umfragen.\n\nDie Aussage beschreibt diese Gewichtung korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**C) Der Text hält die Größe des Phänomens für umstritten und referiert beide Einschätzungen.**\n\nAbsatz 8 nennt Fachleute, die „halten die Debatte deshalb für überproportional laut“, und andere, die auf die Vorbildwirkung verweisen.\n\nBeide Seiten kommen zu Wort, ohne dass der Text eine entscheidet.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**D) Der Text erklärt die Statusfrage durch die Gerichtsurteile für endgültig entschieden.**\n\nAbsatz 9 gewichtet ausdrücklich anders: Es „wird sich weniger an Gerichtsurteilen als an der praktischen Umsetzung der neuen Regeln zeigen“.\n\nDie Urteile sind im Text ein Schritt, nicht der Abschluss.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch.",
+        "**E) Der Schluss weist der Plattformökonomie über die Branche hinaus eine Testfunktion zu.**\n\nAbsatz 9 nennt sie „weniger eine Nische als ein Testfall“ für die Organisation von Erwerbsarbeit insgesamt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „weniger eine Nische als ein Testfall\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "Der Reiz für die Erwerbstätigen liegt in der Flexibilität",
+        "Die Gegenposition ist nicht ohne Gewicht",
+        "halten die Debatte deshalb für überproportional laut",
+        "wird sich weniger an Gerichtsurteilen als an der praktischen Umsetzung der neuen Regeln zeigen",
+        "weniger eine Nische als ein Testfall"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 8,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-09",
+      "case_id": "DE T.10.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen Akteuren und Epochen.",
+      "kind": "reading",
+      "statements": [
+        "Das britische Urteil und das spanische Gesetz fallen laut Text in dasselbe Jahr.",
+        "Die EU-Richtlinie wurde laut Text vor dem britischen Urteil beschlossen.",
+        "Im Unterschied zur Selbstdarstellung der Plattformen bewerteten Gerichte in mehreren Ländern die Lage anders.",
+        "Der Text vergleicht die Institutionen des zwanzigsten Jahrhunderts mit der heutigen Organisation von Erwerbsarbeit.",
+        "Die Zahl der Plattformen war laut Text vor einem Jahrzehnt bereits ebenso hoch wie heute."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Das britische Urteil und das spanische Gesetz fallen laut Text in dasselbe Jahr.**\n\nAbsatz 4 datiert das Urteil auf 2021 und leitet das spanische Gesetz mit „im selben Jahr“ ein.\n\nDie Aussage trifft die Chronologie.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 4 heißt es wörtlich: „Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**B) Die EU-Richtlinie wurde laut Text vor dem britischen Urteil beschlossen.**\n\nAbsatz 7 datiert die Einigung auf 2024, Absatz 4 das Urteil auf 2021.\n\nDie Aussage dreht diese Reihenfolge um.\n\nDie Aussage scheitert an der Datierung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nIn Absatz 7 heißt es wörtlich: „Die Europäische Union einigte sich 2024 auf eine Richtlinie zur Plattformarbeit\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**C) Im Unterschied zur Selbstdarstellung der Plattformen bewerteten Gerichte in mehreren Ländern die Lage anders.**\n\nAbsatz 4 stellt beides direkt gegenüber und fasst zusammen: „Gerichte in mehreren Ländern sahen das anders.“\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Gerichte in mehreren Ländern sahen das anders\" darf die Behauptung nicht stehen.",
+        "**D) Der Text vergleicht die Institutionen des zwanzigsten Jahrhunderts mit der heutigen Organisation von Erwerbsarbeit.**\n\nAbsatz 9 fragt, wie weit sich Arbeit organisieren lässt, ohne jene Institutionen zu nutzen, „die im zwanzigsten Jahrhundert um das Normalarbeitsverhältnis gebaut wurden“.\n\nDie Aussage beschreibt genau diesen historischen Vergleich.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**E) Die Zahl der Plattformen war laut Text vor einem Jahrzehnt bereits ebenso hoch wie heute.**\n\nAbsatz 1 hält fest, „dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte“.\n\nDie Aussage widerspricht dieser Wachstumsangabe direkt.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 1 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "Spanien verabschiedete im selben Jahr ein Gesetz, das für Lieferdienste eine Vermutung der Beschäftigung einführte",
+        "Die Europäische Union einigte sich 2024 auf eine Richtlinie zur Plattformarbeit",
+        "Gerichte in mehreren Ländern sahen das anders",
+        "die im zwanzigsten Jahrhundert um das Normalarbeitsverhältnis gebaut wurden",
+        "dass sich ihre Zahl innerhalb eines Jahrzehnts vervielfacht hatte"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 9,
+      "subsection": "t.10"
+    },
+    {
+      "id": "de-t-10-10",
+      "case_id": "DE T.10.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen den Gesamtschluss und die offen bleibenden Fragen des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, ob die Entwicklung zu einer Modernisierung des Sozialstaats oder zu seiner Umgehung führt.",
+        "Laut Schluss entscheidet sich das weniger an Urteilen als an der praktischen Umsetzung der neuen Regeln.",
+        "Der Text kommt zu dem Ergebnis, dass die Statusfrage in allen Ländern einheitlich gelöst ist.",
+        "Eine zentrale offene Spannung besteht zwischen dem Wunsch nach Flexibilität und dem Bedarf an sozialer Absicherung.",
+        "Der Text hält eine Bedeutung der Plattformarbeit für andere Branchen für ausgeschlossen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, ob die Entwicklung zu einer Modernisierung des Sozialstaats oder zu seiner Umgehung führt.**\n\nAbsatz 9 stellt genau diese Alternative auf: „Ob daraus eine Modernisierung des Sozialstaats folgt oder seine schleichende Umgehung“.\n\nDie Aussage gibt die Offenheit wieder, ohne eine Seite zu wählen.\n\nDie Aussage trifft den Gesamtschluss.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**B) Laut Schluss entscheidet sich das weniger an Urteilen als an der praktischen Umsetzung der neuen Regeln.**\n\nAbsatz 9 endet mit genau dieser Gewichtung: Es wird sich „an der praktischen Umsetzung der neuen Regeln zeigen“.\n\nDie Aussage benennt den entscheidenden Maßstab korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**C) Der Text kommt zu dem Ergebnis, dass die Statusfrage in allen Ländern einheitlich gelöst ist.**\n\nAbsatz 7 betont, dass die Richtlinie die Ausgestaltung „weitgehend den Mitgliedstaaten überlässt“, und Absatz 4 zeigt unterschiedliche nationale Wege.\n\nEine einheitliche Lösung behauptet der Text an keiner Stelle.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nIn Absatz 7 heißt es wörtlich: „deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**D) Eine zentrale offene Spannung besteht zwischen dem Wunsch nach Flexibilität und dem Bedarf an sozialer Absicherung.**\n\nAbsatz 6 hält beides zugleich fest: „Ein erheblicher Teil möchte den Status als Selbstständige behalten, sofern soziale Absicherung hinzukommt.“\n\nAbsatz 7 versucht genau diese Spannung mit mitnehmbaren Ansprüchen aufzulösen, ohne dass der Text das Ergebnis vorwegnimmt.\n\nDie Aussage benennt die offene Konfliktlage korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**E) Der Text hält eine Bedeutung der Plattformarbeit für andere Branchen für ausgeschlossen.**\n\nAbsatz 8 nennt ausdrücklich das Gegenteil, nämlich dass „die Bedeutung liege weniger in den heutigen Zahlen als in der Vorbildwirkung für Logistik, Pflege und Einzelhandel“.\n\nDie Aussage streicht genau dieses Argument der zweiten Seite.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch."
+      ],
+      "highlights": [
+        "Ob daraus eine Modernisierung des Sozialstaats folgt oder seine schleichende Umgehung",
+        "an der praktischen Umsetzung der neuen Regeln zeigen",
+        "deren konkrete Ausgestaltung jedoch weitgehend den Mitgliedstaaten überlässt",
+        "Ein erheblicher Teil möchte den Status als Selbstständige behalten, sofern soziale Absicherung hinzukommt",
+        "die Bedeutung liege weniger in den heutigen Zahlen als in der Vorbildwirkung für Logistik, Pflege und Einzelhandel"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.10"
+    }
+  ]
+}

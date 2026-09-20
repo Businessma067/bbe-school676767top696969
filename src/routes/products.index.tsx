@@ -9,6 +9,7 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
+const WISO_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const LITE_COURSE_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_IMAGE = "/demo-practice-product-v2.png";
 
@@ -75,16 +76,17 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
-      { title: "Products — BBE School" },
+      { title: "Products — BBE & WiSo | BBE School" },
       {
         name: "description",
         content:
-          "Explore BBE School products: free Demo-Practice Package and the Full BBE Course for WU Vienna entrance exam prep.",
+          "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, and Full WiSo Course.",
       },
-      { property: "og:title", content: "Products — BBE School" },
+      { property: "og:title", content: "Products — BBE & WiSo | BBE School" },
       {
         property: "og:description",
-        content: "Explore BBE School products: free Demo-Practice Package and the Full BBE Course.",
+        content:
+          "BBE and WiSo prep products on one page: Demo-Practice, Full BBE Course, and Full WiSo Course.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -99,6 +101,7 @@ export const Route = createFileRoute("/products/")({
 });
 
 const ORANGE = "#C2643A";
+const INDIGO = "#3730A3";
 
 type Product = {
   title: string;
@@ -108,7 +111,7 @@ type Product = {
   to?: string;
   disabled?: boolean;
   badge?: string;
-  /** When set, CTA switches for Full Course owners. */
+  accent?: "bbe" | "wiso";
   ownedCta?: string;
   ownedTo?: string;
 };
@@ -121,17 +124,31 @@ const products: Product[] = [
       "A free trial with 50+ starter cases across all three subjects, with step by step explanations of the exam format.",
     cta: "Visit for free",
     to: "/products/demo-practice",
+    accent: "bbe",
   },
   {
     title: "Full BBE Course",
     image: FULL_COURSE_IMAGE,
     description:
-      "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.",
+      "1500+ practice cases across Economics, Mathematics and English — timing modules, full mocks, study assistant, and detailed task breakdowns.",
     cta: "Buy course · €449",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
     ownedTo: FULL_COURSE_HREF,
-    badge: "Best option",
+    badge: "BBE · Best option",
+    accent: "bbe",
+  },
+  {
+    title: "Full WiSo Course",
+    image: WISO_COURSE_IMAGE,
+    description:
+      "WiSo-track prep: Wirtschaft verstehen economics, mathematics, and German reading comprehension — on dedicated /wiso URLs, visually distinct from BBE.",
+    cta: "Buy course · €449",
+    to: "/wiso/products/full-course",
+    ownedCta: "Go to course",
+    ownedTo: "/wiso/products/full-course-subjects",
+    badge: "WiSo track",
+    accent: "wiso",
   },
   {
     title: "Lite BBE Course",
@@ -140,18 +157,19 @@ const products: Product[] = [
       "A 950+ question database with step by step logic under every statement. For self paced preparation.",
     cta: "Coming soon",
     disabled: true,
+    accent: "bbe",
   },
 ];
 
 export function ProductsPage() {
-  const { ready, ownsFullCourse } = useFullCourseAccess();
+  const { ready, ownsFullCourse, ownsWisoFullCourse } = useFullCourseAccess();
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         actions={
           <LocalizedLink
-            to="/"
+            to="/bbe"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
@@ -166,30 +184,33 @@ export function ProductsPage() {
               Our products
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Pick the path that fits where you are in your WU BBE prep.
+              BBE and WiSo full courses — pick the exam track you are preparing for.
             </p>
           </div>
 
-          <div className="grid items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">
             {products.map((p) => {
-              const isFull = p.title === "Full BBE Course";
-              const owned = isFull && ownsFullCourse;
+              const isFullBbe = p.title === "Full BBE Course";
+              const isFullWiso = p.title === "Full WiSo Course";
+              const owned =
+                (isFullBbe && ownsFullCourse) || (isFullWiso && ownsWisoFullCourse);
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
+              const accentColor = p.accent === "wiso" ? INDIGO : ORANGE;
 
               return (
                 <div
                   key={p.title}
                   className={`group relative flex flex-col overflow-visible rounded-2xl border bg-card transition-all hover:-translate-y-1 ${
                     p.badge
-                      ? "z-10 border-2 shadow-lg md:-my-2 md:scale-[1.03]"
+                      ? "z-10 border-2 shadow-lg md:-my-2 md:scale-[1.02]"
                       : "border-border shadow-sm hover:shadow-lg"
                   }`}
                   style={
                     p.badge
                       ? {
-                          borderColor: ORANGE,
-                          boxShadow: `0 12px 40px -12px ${ORANGE}55`,
+                          borderColor: accentColor,
+                          boxShadow: `0 12px 40px -12px ${accentColor}55`,
                         }
                       : undefined
                   }
@@ -197,10 +218,7 @@ export function ProductsPage() {
                   {p.badge && (
                     <span
                       className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide text-white ring-4 ring-background"
-                      style={{
-                        backgroundColor: ORANGE,
-                        boxShadow: `0 8px 24px -4px ${ORANGE}aa`,
-                      }}
+                      style={{ backgroundColor: accentColor }}
                     >
                       {p.badge}
                     </span>
@@ -222,31 +240,22 @@ export function ProductsPage() {
                     <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
                       {p.description}
                     </p>
-                    {!ready && isFull ? (
-                      <div
-                        className="mt-5 h-10 animate-pulse rounded-md bg-secondary"
-                        aria-hidden
-                      />
+                    {!ready && isFullBbe ? (
+                      <div className="mt-5 h-10 animate-pulse rounded-md bg-secondary" aria-hidden />
                     ) : to && !p.disabled ? (
                       isLocalizablePath(to) ? (
                         <LocalizedLink
                           to={to}
-                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                          style={{
-                            backgroundColor: ORANGE,
-                            boxShadow: `0 4px 14px -4px ${ORANGE}80`,
-                          }}
+                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                          style={{ backgroundColor: accentColor }}
                         >
                           {cta} →
                         </LocalizedLink>
                       ) : (
                         <Link
                           to={to}
-                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                          style={{
-                            backgroundColor: ORANGE,
-                            boxShadow: `0 4px 14px -4px ${ORANGE}80`,
-                          }}
+                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
+                          style={{ backgroundColor: accentColor }}
                         >
                           {cta} →
                         </Link>
@@ -254,8 +263,8 @@ export function ProductsPage() {
                     ) : (
                       <button
                         disabled
-                        className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-80 shadow-sm"
-                        style={{ backgroundColor: ORANGE }}
+                        className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-80"
+                        style={{ backgroundColor: accentColor }}
                       >
                         {cta}
                       </button>

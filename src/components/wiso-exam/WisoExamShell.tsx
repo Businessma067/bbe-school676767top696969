@@ -1,0 +1,130 @@
+import type { ReactNode } from "react";
+import { Clock } from "lucide-react";
+import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
+import { SiteHeader } from "@/components/SiteHeader";
+import { WisoExamSubnav } from "@/components/wiso-exam/WisoExamSubnav";
+import { WISO_EXAM_FORMAT } from "@/config/wiso-exam-hub";
+import { cn } from "@/lib/utils";
+
+type WisoExamShellProps = {
+  jsonLd?: object;
+  h1: string;
+  lead: string;
+  badges?: string[];
+  heroActions?: ReactNode;
+  children: ReactNode;
+  className?: string;
+};
+
+export function WisoExamShell({
+  jsonLd,
+  h1,
+  lead,
+  badges = [
+    "Independent, unofficial guide. Not affiliated with WU Vienna",
+    `Last updated: ${WISO_EXAM_FORMAT.cycle.lastUpdated}`,
+  ],
+  heroActions,
+  children,
+  className,
+}: WisoExamShellProps) {
+  return (
+    <div className={cn("min-h-screen bg-background font-sans text-foreground antialiased", className)}>
+      {jsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      ) : null}
+      <SiteHeader />
+      <WisoExamSubnav />
+
+      <section
+        className="relative overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.82), rgba(0,0,0,0.9)), url(${wuAsset.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+          <div className="flex flex-wrap gap-2">
+            {badges.map((badge) => (
+              <span
+                key={badge}
+                className="inline-flex max-w-full items-center rounded-full border border-indigo-300/40 bg-indigo-950/40 px-3 py-1 text-[11px] font-medium leading-snug text-white backdrop-blur-sm [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+          <h1 className="mt-5 font-display text-[1.65rem] font-bold leading-[1.15] tracking-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:mt-6 sm:text-4xl sm:leading-[1.1] lg:text-[2.75rem]">
+            {h1}
+          </h1>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
+            {lead}
+          </p>
+          {heroActions ? <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">{heroActions}</div> : null}
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">{children}</div>
+
+      <footer className="border-t border-border bg-card px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            Independent preparation guide. Not affiliated with WU Vienna. Dates and rules can change, so
+            always confirm details on the official WU website.
+          </p>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Clock className="h-3.5 w-3.5" />
+            Last updated {WISO_EXAM_FORMAT.cycle.lastUpdated}
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export function WisoSection({
+  id,
+  title,
+  children,
+}: {
+  id?: string;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <section id={id} className={cn(id && "scroll-mt-28")}>
+      <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+        {title}
+      </h2>
+      <div className="mt-4 space-y-4 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
+        {children}
+      </div>
+    </section>
+  );
+}
+
+export function WisoStatGrid({
+  items,
+}: {
+  items: { label: string; value: string }[];
+}) {
+  return (
+    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {items.map((item) => (
+        <div
+          key={item.label}
+          className="rounded-2xl border border-indigo-200/60 bg-card px-4 py-4 shadow-sm dark:border-indigo-800/40"
+        >
+          <p className="text-xs font-medium text-muted-foreground">{item.label}</p>
+          <p className="mt-2 font-display text-xl font-bold tracking-tight text-foreground">
+            {item.value}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}

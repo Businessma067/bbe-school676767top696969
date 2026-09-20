@@ -1,9 +1,24 @@
 /** Client-safe catalog of paid products and their prices. */
 
-export type PaidProductSlug = "full-course" | "lite-bbe-course";
+export type PaidProductSlug = "full-course" | "lite-bbe-course" | "wiso-full-course";
 
 /** ISO 4217 numeric code for EUR (Monobank `ccy`). */
 export const MONOBANK_CURRENCY_EUR = 978;
+
+/** ISO 4217 numeric code for UAH (Monobank `ccy`). */
+export const MONOBANK_CURRENCY_UAH = 980;
+
+/**
+ * Optional test charge override for Monobank acquiring tests.
+ * When enabled, every invoice is forced to this amount instead of the catalog price.
+ */
+export const MONOBANK_TEST_CHARGE = {
+  enabled: false,
+  /** 1.00 EUR in cents (only used when `enabled` is true). */
+  amountMinor: 100,
+  ccy: MONOBANK_CURRENCY_EUR,
+  label: "€1",
+} as const;
 
 export type PaidProduct = {
   slug: PaidProductSlug;
@@ -29,18 +44,43 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     priceEur: 279,
     href: "/products/lite-bbe-course-subjects",
   },
+  "wiso-full-course": {
+    slug: "wiso-full-course",
+    name: "Full WiSo Course",
+    tier: "full",
+    priceEur: 449,
+    href: "/wiso/products/full-course-subjects",
+  },
 };
 
 /** Promocode that takes 15% off the checkout price (validated server-side too). */
 export const DISCOUNT_CODE = "BBE-JfkDjt15";
 export const DISCOUNT_PCT = 15;
 
+export type PromoProductScope = PaidProductSlug | "any-paid";
+
+/**
+ * Whether a discount/unlock promocode scoped to `promoProductSlug` may be used
+ * when checking out `checkoutSlug`. Existing BBE Full codes also apply to WiSo.
+ */
+export function promoAppliesToProduct(
+  promoProductSlug: string | null | undefined,
+  checkoutSlug: string | undefined,
+): boolean {
+  if (!promoProductSlug || promoProductSlug === "any-paid") return true;
+  if (!checkoutSlug) return true;
+  if (promoProductSlug === checkoutSlug) return true;
+  // All Full BBE discount codes also unlock the same % off Full WiSo.
+  if (checkoutSlug === "wiso-full-course" && promoProductSlug === "full-course") return true;
+  return false;
+}
+
 /** Hardcoded discount fallbacks when Supabase `promocodes` table is missing / empty. (Lovable sync) */
 export type HardcodedDiscountPromo = {
   code: string;
   discountPct: number;
-  /** `full-course` | `lite-bbe-course` | `any-paid` */
-  productSlug: "full-course" | "lite-bbe-course" | "any-paid";
+  /** `full-course` | `lite-bbe-course` | `wiso-full-course` | `any-paid` */
+  productSlug: PromoProductScope;
   name: string;
   expiresAt: string | null;
 };

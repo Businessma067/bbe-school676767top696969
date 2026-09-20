@@ -192,12 +192,11 @@ which is called **vertex form**. Here $(h,k)$ is the vertex and $a$ is the same 
 One standard calculation is
 
 $$
-\begin{aligned}
-g(x)&=ax^{2}+bx+c\\
-&=a\left(x^{2}+\frac{b}{a}x\right)+c\\
-&=a\left(\left(x+\frac{b}{2a}\right)^{2}-\left(\frac{b}{2a}\right)^{2}\right)+c\\
-&=a\left(x+\frac{b}{2a}\right)^{2}+c-\frac{b^{2}}{4a}.
-\end{aligned}
+g(x) = ax^{2}+bx+c = a\left(x^{2}+\frac{b}{a}x\right)+c
+$$
+
+$$
+= a\left(\left(x+\frac{b}{2a}\right)^{2}-\left(\frac{b}{2a}\right)^{2}\right)+c = a\left(x+\frac{b}{2a}\right)^{2}+c-\frac{b^{2}}{4a}.
 $$
 
 So
@@ -219,12 +218,7 @@ The vertex is $(3,-4)$. The axis is $x=3$. Because $a=1>0$, the value $-4$ is a 
 **Example 2.** Take $g(x)=-2x^{2}+8x-3$.
 
 $$
-\begin{aligned}
-g(x)&=-2\left(x^{2}-4x\right)-3\\
-&=-2\left((x-2)^{2}-4\right)-3\\
-&=-2(x-2)^{2}+8-3\\
-&=-2(x-2)^{2}+5.
-\end{aligned}
+g(x) = -2\left(x^{2}-4x\right)-3,\quad = -2\left((x-2)^{2}-4\right)-3,\quad = -2(x-2)^{2}+8-3 = -2(x-2)^{2}+5.
 $$
 
 The vertex is $(2,5)$. The graph opens down, so $5$ is a maximum.
@@ -532,11 +526,7 @@ $f(g(x))$ means: first compute the parabola value, then feed that number into th
 **Example 1.** Let $f(x)=x+1$ and $g(x)=x^{2}$.
 
 $$
-g(f(x))=(x+1)^{2}=x^{2}+2x+1,
-$$
-
-$$
-f(g(x))=x^{2}+1.
+g(f(x))=(x+1)^{2}=x^{2}+2x+1,,\quad f(g(x))=x^{2}+1.
 $$
 
 Both results have highest power $x^{2}$. Nesting a line with a parabola does not create an $x^{3}$ term. The false claim “$1+2=3$, so there is an $x^{3}$ term” is a standard trap.
@@ -996,11 +986,7 @@ All five claims are true.
 The central formulas are
 
 $$
-f(x)=mx+c,
-$$
-
-$$
-g(x)=ax^{2}+bx+c\qquad(a\neq 0),
+f(x)=mx+c,,\quad g(x)=ax^{2}+bx+c\qquad(a\neq 0),
 $$
 
 $$

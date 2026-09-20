@@ -1,20 +1,10 @@
 /**
  * WISO Wirtschaft Full Course banks (Wirtschaft verstehen 2026, chapters 1–4).
- * Same case shape as BBE economics: 5 true/false statements + teacher explanations.
+ * German true/false cases with teacher explanations for all book subsections.
  */
 
-export type WisoEconomicsTask = {
-  id: string;
-  case_id: string;
-  title: string;
-  context: string;
-  statements: string[];
-  answer_key: boolean[];
-  tactical_explanations: string[];
-  difficulty_level: string;
-  sort_order: number;
-  subsection: string;
-};
+import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
+import type { EconomicsTask } from "@/data/economics-chapters";
 
 type RawWisoEconomicsCase = {
   subsection: string;
@@ -26,6 +16,8 @@ type RawWisoEconomicsCase = {
   tactical_explanations: string[];
   difficulty_level?: string;
   tier?: string;
+  source_bbe_subsection?: string;
+  source_bbe_case_id?: string;
 };
 
 const CHAPTER_LOADERS: Record<number, () => Promise<{ default: RawWisoEconomicsCase[] }>> = {
@@ -37,7 +29,7 @@ const CHAPTER_LOADERS: Record<number, () => Promise<{ default: RawWisoEconomicsC
 
 export const WISO_ECONOMICS_CHAPTER_NUMS = [1, 2, 3, 4] as const;
 
-function toTask(raw: RawWisoEconomicsCase): WisoEconomicsTask {
+function toTask(raw: RawWisoEconomicsCase): EconomicsTask {
   const sort = Number(raw.case_id.split(".").pop()) || 0;
   return {
     id: raw.case_id,
@@ -47,13 +39,13 @@ function toTask(raw: RawWisoEconomicsCase): WisoEconomicsTask {
     statements: raw.statements ?? [],
     answer_key: raw.answer_key ?? [],
     tactical_explanations: raw.tactical_explanations ?? [],
-    difficulty_level: raw.difficulty_level && raw.difficulty_level !== "—" ? raw.difficulty_level : "3/5",
+    difficulty_level: economicsDifficultyFor(raw.case_id, raw.difficulty_level),
     sort_order: sort,
     subsection: raw.subsection,
   };
 }
 
-function sortTasks(tasks: WisoEconomicsTask[]): WisoEconomicsTask[] {
+function sortTasks(tasks: EconomicsTask[]): EconomicsTask[] {
   return [...tasks].sort((a, b) => {
     const sub = a.subsection.localeCompare(b.subsection, "de", { numeric: true });
     if (sub !== 0) return sub;
@@ -61,7 +53,7 @@ function sortTasks(tasks: WisoEconomicsTask[]): WisoEconomicsTask[] {
   });
 }
 
-export async function loadWisoEconomicsChapterTasks(chapter: number): Promise<WisoEconomicsTask[]> {
+export async function loadWisoEconomicsChapterTasks(chapter: number): Promise<EconomicsTask[]> {
   const load = CHAPTER_LOADERS[chapter];
   if (!load) return [];
   const mod = await load();
@@ -70,7 +62,7 @@ export async function loadWisoEconomicsChapterTasks(chapter: number): Promise<Wi
 }
 
 export async function loadAllWisoEconomicsChapterTasks(): Promise<
-  { num: number; tasks: WisoEconomicsTask[] }[]
+  { num: number; tasks: EconomicsTask[] }[]
 > {
   return Promise.all(
     WISO_ECONOMICS_CHAPTER_NUMS.map(async (num) => ({

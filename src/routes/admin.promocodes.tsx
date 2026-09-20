@@ -15,9 +15,10 @@ export const Route = createFileRoute("/admin/promocodes")({
 });
 
 function courseLabel(slug: string): string {
-  if (slug === "any-paid") return "Lite + Full";
-  if (slug === "full-course") return "Full Course";
+  if (slug === "any-paid") return "Lite + Full + WiSo";
+  if (slug === "full-course") return "Full BBE Course";
   if (slug === "lite-bbe-course") return "Lite Course";
+  if (slug === "wiso-full-course") return "Full WiSo Course";
   return slug;
 }
 

@@ -7,7 +7,21 @@ import { Route as BbeExamPreparationRoute } from "@/routes/bbe-exam-preparation"
 import { Route as BbeExamScoringRoute } from "@/routes/bbe-exam-scoring";
 import { Route as BbeMathematicsRoute } from "@/routes/bbe-mathematics";
 import { Route as BbeVsWisoRoute } from "@/routes/bbe-vs-wiso";
+import { Route as BbeLandingRoute } from "@/routes/bbe";
 import { Route as WuViennaRoute } from "@/routes/wu-vienna";
+import { Route as WisoLandingRoute } from "@/routes/wiso.index";
+import { Route as WisoEntranceExamRoute } from "@/routes/wiso.entrance-exam";
+import { Route as WisoExamScoringRoute } from "@/routes/wiso.exam-scoring";
+import { Route as WisoMathematicsRoute } from "@/routes/wiso.mathematics";
+import { Route as WisoEconomicsGermanRoute } from "@/routes/wiso.economics-german";
+import { Route as WisoExamPreparationRoute } from "@/routes/wiso.exam-preparation";
+import { Route as WisoAdmissionRoute } from "@/routes/wiso.admission";
+import { Route as WisoWuViennaRoute } from "@/routes/wiso.wu-vienna";
+import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course";
+import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice";
+import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
+import { Route as WisoMockBuilderRoute } from "@/routes/wiso.mock-builder";
+import { Route as WisoFlashcardsRoute } from "@/routes/wiso.flashcards.index";
 import { Route as DemoPracticeRoute } from "@/routes/demo-practice.index";
 import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
 import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
@@ -32,7 +46,6 @@ type HeadFnResult = {
   scripts?: Array<Record<string, unknown>>;
 };
 
-/** Call an English route `head` option without fighting TanStack's deep head types. */
 function callHead(route: { options: { head?: (ctx: never) => unknown } }): HeadFnResult | undefined {
   const head = route.options.head;
   if (!head) return undefined;
@@ -43,11 +56,8 @@ function headFrom(route: unknown): HeadFnResult | undefined {
   return callHead(route as { options: { head?: (ctx: never) => unknown } });
 }
 
-/**
- * English route head for locale-prefixed marketing URLs (`/de/...`, `/uk/...`).
- * Keep in sync with LOCALIZABLE_PATHS (home `/` is handled by `/$lang/`).
- */
 const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult | undefined>> = {
+  "/bbe": () => headFrom(BbeLandingRoute),
   "/bbe-entrance-exam": () => headFrom(BbeEntranceExamRoute),
   "/bbe-exam-scoring": () => headFrom(BbeExamScoringRoute),
   "/bbe-mathematics": () => headFrom(BbeMathematicsRoute),
@@ -56,6 +66,20 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/bbe-admission": () => headFrom(BbeAdmissionRoute),
   "/bbe-vs-wiso": () => headFrom(BbeVsWisoRoute),
   "/wu-vienna": () => headFrom(WuViennaRoute),
+  "/wiso": () => headFrom(WisoLandingRoute),
+  "/wiso/entrance-exam": () => headFrom(WisoEntranceExamRoute),
+  "/wiso/exam-scoring": () => headFrom(WisoExamScoringRoute),
+  "/wiso/mathematics": () => headFrom(WisoMathematicsRoute),
+  "/wiso/economics-german": () => headFrom(WisoEconomicsGermanRoute),
+  "/wiso/exam-preparation": () => headFrom(WisoExamPreparationRoute),
+  "/wiso/admission": () => headFrom(WisoAdmissionRoute),
+  "/wiso/wu-vienna": () => headFrom(WisoWuViennaRoute),
+  "/wiso/products": () => headFrom(ProductsRoute),
+  "/wiso/products/full-course": () => headFrom(WisoFullCourseRoute),
+  "/wiso/demo-practice": () => headFrom(WisoDemoPracticeRoute),
+  "/wiso/mock-exams": () => headFrom(WisoMockExamsRoute),
+  "/wiso/mock-builder": () => headFrom(WisoMockBuilderRoute),
+  "/wiso/flashcards": () => headFrom(WisoFlashcardsRoute),
   "/parents": () => headFrom(ParentsRoute),
   "/important-features": () => headFrom(ImportantFeaturesRoute),
   "/features/answer-sheet": () => headFrom(AnswerSheetRoute),

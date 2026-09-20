@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CreditCard, Lock, Loader2, Ticket } from "lucide-react";
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -12,10 +13,25 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
-import { createCheckout } from "@/lib/payments.functions";
-import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import { createCheckout, getPaymentStatus } from "@/lib/payments.functions";
+import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import { navigateTopWindow } from "@/lib/break-out-of-iframe";
 
 const ORANGE = "#C2643A";
+
+function isMonoPayOrigin(origin: string): boolean {
+  try {
+    const host = new URL(origin).hostname;
+    return (
+      host === "pay.mbnk.biz" ||
+      host.endsWith(".mbnk.biz") ||
+      host === "pay.monobank.ua" ||
+      host.endsWith(".monobank.ua")
+    );
+  } catch {
+    return false;
+  }
+}
 
 type PaymentModalProps = {
   open: boolean;
@@ -41,13 +57,34 @@ export function PaymentModal({
   const [error, setError] = useState<string | null>(null);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [payPageUrl, setPayPageUrl] = useState<string | null>(null);
+  const [activeInvoiceId, setActiveInvoiceId] = useState<string | null>(null);
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
   const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
   const catalogEur = product.priceEur;
   const eurPrice = Math.round(catalogEur * priceFactor);
+  const chargeLabel = MONOBANK_TEST_CHARGE.enabled ? MONOBANK_TEST_CHARGE.label : `€${eurPrice}`;
   const showDiscountedTotal = method !== "promo" || discountApplied;
+
+  const goPaymentSuccess = (opts?: {
+    productName?: string | null;
+    productSlug?: string | null;
+    href?: string | null;
+  }) => {
+    const slug = opts?.productSlug?.trim() || productSlug;
+    const label = opts?.productName?.trim() || productName;
+    const href = opts?.href?.trim() || product.href;
+    onOpenChange(false);
+    const params = new URLSearchParams();
+    // Prefer slug so /payment/success can resolve the catalog href reliably.
+    if (slug) params.set("product", slug);
+    else if (label) params.set("product", label);
+    if (href) params.set("href", href);
+    const qs = params.toString();
+    navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -59,6 +96,8 @@ export function PaymentModal({
     setError(null);
     setPromoUnlocked(false);
     setAuthOpen(false);
+    setPayPageUrl(null);
+    setActiveInvoiceId(null);
 
     // Buying requires an account first.
     void (async () => {
@@ -69,6 +108,115 @@ export function PaymentModal({
       }
     })();
   }, [open, onOpenChange]);
+
+  // While the Monobank iframe is open, poll status and send paid buyers to
+  // /payment/success (same page as classic BBE checkout after /payment-result).
+  useEffect(() => {
+    if (!payPageUrl || !activeInvoiceId) return;
+
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
+    const check = async () => {
+      try {
+        const result = await getPaymentStatus({ data: { invoiceId: activeInvoiceId } });
+        if (cancelled) return;
+        if (result.ok && result.paid) {
+          const { clearAccessStateCache } = await import("@/lib/entitlements");
+          clearAccessStateCache();
+          goPaymentSuccess({
+            productSlug: result.productSlug,
+            productName: result.productName,
+            href: result.href,
+          });
+          return;
+        }
+        if (result.ok && ["failure", "reversed", "expired"].includes(result.status)) {
+          onOpenChange(false);
+          const reason = result.failureReason ?? "The payment was not completed.";
+          navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
+          return;
+        }
+        // Monobank success without enrollment — surface instead of polling forever.
+        if (result.ok && result.status === "success" && !result.enrolled) {
+          onOpenChange(false);
+          const reason =
+            result.failureReason ??
+            "Payment succeeded but course access could not be unlocked. Contact support.";
+          navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
+          return;
+        }
+      } catch {
+        // Keep polling — transient network / auth blips should not kill checkout.
+      }
+      if (!cancelled) timer = setTimeout(check, 2500);
+    };
+
+    timer = setTimeout(check, 2000);
+    return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
+    };
+    // goPaymentSuccess closes over stable product fields for this open session.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [payPageUrl, activeInvoiceId, onOpenChange]);
+
+  useEffect(() => {
+    if (!payPageUrl) return;
+
+    const onMessage = (event: MessageEvent) => {
+      if (!isMonoPayOrigin(event.origin)) return;
+      let payload: { message?: unknown; value?: unknown } | null = null;
+      try {
+        payload =
+          typeof event.data === "string"
+            ? (JSON.parse(event.data) as { message?: unknown; value?: unknown })
+            : (event.data as { message?: unknown; value?: unknown });
+      } catch {
+        return;
+      }
+      if (!payload || typeof payload.message !== "string") return;
+
+      if (payload.message === "close-button") {
+        // User dismissed the widget — if they already paid, still go to success.
+        const invoiceId = activeInvoiceId;
+        if (invoiceId) {
+          void (async () => {
+            try {
+              const result = await getPaymentStatus({ data: { invoiceId } });
+              if (result.ok && result.paid) {
+                const { clearAccessStateCache } = await import("@/lib/entitlements");
+                clearAccessStateCache();
+                goPaymentSuccess({
+                  productSlug: result.productSlug,
+                  productName: result.productName,
+                  href: result.href,
+                });
+                return;
+              }
+            } catch {
+              // fall through to dismiss
+            }
+            setPayPageUrl(null);
+            setActiveInvoiceId(null);
+            setLoading(false);
+          })();
+          return;
+        }
+        setPayPageUrl(null);
+        setLoading(false);
+        return;
+      }
+      // Mono app deep link on mobile — open outside the iframe.
+      if (payload.message === "monopay-link" && typeof payload.value === "string") {
+        window.location.href = payload.value;
+      }
+    };
+
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [payPageUrl, activeInvoiceId]);
 
   const handlePay = async () => {
     setError(null);
@@ -91,8 +239,10 @@ export function PaymentModal({
         setError(result.error);
         return;
       }
-      // Hand the user over to Monobank's secure checkout page.
-      window.location.href = result.pageUrl;
+      // Stay on our page: embed Monobank’s iframe widget (card + Apple Pay +
+      // Google Pay). Requires displayType:"iframe" on create + allow="payment *".
+      setActiveInvoiceId(result.invoiceId);
+      setPayPageUrl(result.pageUrl);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not start the payment.";
       setError(/unauthorized/i.test(message) ? "Sign in to continue to payment." : message);
@@ -189,7 +339,7 @@ export function PaymentModal({
       setAppliedPromoCode(null);
       setDiscountPct(0);
 
-      const result = await redeemPromocode({ data: { code } });
+      const result = await redeemPromocode({ data: { code, productSlug } });
       if (!result.ok) {
         setError(result.error);
         return;
@@ -201,7 +351,11 @@ export function PaymentModal({
         onOpenChange(false);
         navigate({
           to: "/payment/success",
-          search: { product: productName, href: result.href, promo: true },
+          search: {
+            product: result.productSlug || productSlug,
+            href: result.href,
+            promo: true,
+          },
         });
       }, 1200);
     } catch (err) {
@@ -217,14 +371,29 @@ export function PaymentModal({
     }
   };
 
+  void priceEuros;
+
   return (
     <>
-      <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
+      <Dialog
+        open={open}
+        onOpenChange={(next) => {
+          if (!next) setPayPageUrl(null);
+          onOpenChange(next);
+        }}
+      >
+        <DialogContent
+          className={cn(
+            "max-h-[95vh] overflow-y-auto overscroll-contain",
+            payPageUrl ? "w-[min(100vw-1rem,680px)] max-w-[680px]" : "sm:max-w-md",
+          )}
+        >
           <DialogHeader>
             <DialogTitle className="font-display text-xl">Payment</DialogTitle>
             <DialogDescription>
-              Complete your one-time purchase of {productName}, or redeem a promocode.
+              {payPageUrl
+                ? "Pay by card, Apple Pay, or Google Pay. You will return here after the payment."
+                : `Complete your one-time purchase of ${productName}, or redeem a promocode.`}
             </DialogDescription>
           </DialogHeader>
 
@@ -236,8 +405,9 @@ export function PaymentModal({
               </p>
               {showDiscountedTotal && (
                 <p className="mt-0.5 text-xs text-muted-foreground">
-                  Charged as €{eurPrice}
-                  {discountApplied ? ` (−${discountPct}%)` : ""}
+                  {MONOBANK_TEST_CHARGE.enabled
+                    ? `Test charge ${MONOBANK_TEST_CHARGE.label}`
+                    : `Charged as €${eurPrice}${discountApplied ? ` (−${discountPct}%)` : ""}`}
                 </p>
               )}
             </div>
@@ -246,16 +416,34 @@ export function PaymentModal({
                 <p className="font-display text-2xl font-bold text-foreground">Free</p>
               ) : (
                 <>
-                  {discountApplied && (
+                  {!MONOBANK_TEST_CHARGE.enabled && discountApplied && (
                     <p className="text-sm text-muted-foreground line-through">€{catalogEur}</p>
                   )}
-                  <p className="font-display text-2xl font-bold text-foreground">€{eurPrice}</p>
+                  <p className="font-display text-2xl font-bold text-foreground">{chargeLabel}</p>
                 </>
               )}
             </div>
           </div>
 
-          {promoUnlocked ? (
+          {payPageUrl ? (
+            <div className="iframe-container flex min-h-[576px] w-full flex-col items-center justify-center gap-3">
+              <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-[11px] font-medium text-muted-foreground">
+                <span>Card</span>
+                <span aria-hidden="true">·</span>
+                <span>Apple Pay</span>
+                <span aria-hidden="true">·</span>
+                <span>Google Pay</span>
+              </p>
+              <iframe
+                id="payFrame"
+                title="monopay"
+                src={payPageUrl}
+                allow="payment *; publickey-credentials-get *"
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="h-[min(640px,72vh)] w-full min-h-[576px] rounded-3xl border-0 bg-background"
+              />
+            </div>
+          ) : promoUnlocked ? (
             <div
               className="rounded-xl border p-4 text-center"
               style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10` }}
@@ -289,8 +477,8 @@ export function PaymentModal({
               <TabsContent value="card" className="mt-4">
                 <div className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Pay securely by card through Monobank. You will be taken to the bank&apos;s
-                    checkout page and returned here right after the payment.
+                    Pay securely through Monobank. The payment form opens here with card, Apple Pay,
+                    and Google Pay; you return automatically after the payment.
                   </p>
 
                   <form onSubmit={handleApplyDiscountOnCard} className="space-y-2">
@@ -326,8 +514,9 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of
-                      €{catalogEur}
+                      {MONOBANK_TEST_CHARGE.enabled
+                        ? `Discount noted (${appliedPromoCode}) — test charge remains ${MONOBANK_TEST_CHARGE.label}`
+                        : `${discountPct}% off applied (${appliedPromoCode}) — pay €${eurPrice} instead of €${catalogEur}`}
                     </p>
                   )}
 
@@ -349,14 +538,14 @@ export function PaymentModal({
                     ) : (
                       <>
                         <Lock className="h-4 w-4" />
-                        Proceed to payment · €{eurPrice}
+                        Proceed to payment · {chargeLabel}
                       </>
                     )}
                   </button>
 
                   <p className="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted-foreground">
                     <Lock className="h-3 w-3" />
-                    One-time payment · No subscription · Secured by Monobank
+                    Card · Apple Pay · Google Pay · Secured by Monobank
                   </p>
                 </div>
               </TabsContent>

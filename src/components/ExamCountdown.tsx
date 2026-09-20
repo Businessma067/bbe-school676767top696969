@@ -181,7 +181,6 @@ const POST_HYDRATION_TICK = `(function(){
     if(window.$_TSR&&window.$_TSR.hydrated){started=true;start();}
   }
   var iv=setInterval(function(){tryStart();if(started)clearInterval(iv);},50);
-  setTimeout(function(){if(!started){started=true;clearInterval(iv);start();}},2000);
 })();`;
 
 /**

@@ -1,0 +1,1048 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.2.04",
+      "title": "Misunderstanding opportunity cost",
+      "subsection": "2.2",
+      "chapter": 2,
+      "context": "Robin claims that opportunity cost is the sum of every rejected option's price. Sara chooses between a €500 washing machine and a €700 laptop. Evaluate the following economic assertions:",
+      "statements": [
+        "If Sara buys the laptop, opportunity cost is the washer's benefit forgone, not all rejected purchases combined.",
+        "Robin's sum-of-all-rejected definition matches the standard economic definition exactly.",
+        "Choosing between only two items involves no scarcity because scarcity requires many options.",
+        "If Sara buys the washer, opportunity cost is 1,200 euros, the combined price of both items.",
+        "Opportunity cost refers to the alternative forgone, not the price of the item actually purchased."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "If Sara buys the laptop, she forgoes the washer's benefit, the next-best use of that money. Opportunity cost is not the sum of every other rejected catalogue item. One leading alternative defines the cost.\n\nSo the statement is True.",
+        "Adding every rejected option's value invents a bloated total that is not the economic definition. Robin's sum-of-all-rejected rule mismatches the standard next-best-alternative idea.\n\nSo the statement is False.",
+        "Two options are enough for scarcity: the same euros cannot buy both the laptop and the washer. Scarcity does not require a long menu. Binary choice already forces ranking of limited means. Claiming scarcity appears only with many options would erase most textbook examples. Sara's two-item decision is scarce-resource allocation in full.\n\nSo the statement is False.",
+        "If she buys the washer, opportunity cost is the laptop's benefit forgone, not 1,200 euros as a combined price of both. Combining prices double-counts and misstates the forgone alternative.\n\nSo the statement is False.",
+        "Opportunity cost names the alternative forgone, not the cash price of what you actually buy. Purchase price is what you pay; opportunity cost is what you give up instead.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 2.6.18",
+      "title": "Prices of Substitute Goods",
+      "subsection": "2.6",
+      "chapter": 2,
+      "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:",
+      "statements": [
+        "Firms monitor substitute pricing because cross-price shifts alter their equilibrium sales.",
+        "Substitute price changes shift demand rather than causing movement along the demand curve.",
+        "Cheaper streaming subscriptions may shift demand leftward for cinema tickets.",
+        "Coffee shops see lower demand when nearby tea prices increase because beverages are complements.",
+        "A rise in petrol prices shifts demand leftward for public transport because travel becomes undesirable."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Substitute price moves change rival demand through cross-price effects, so firms watch those prices because their own equilibrium sales can shift when rivals reprice.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Prices of Substitute Goods, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
+        "A substitute’s price change shifts the demand curve for the related good; it is not a movement along that good’s demand curve caused by its own price. Cross-price events are shifters.\n\nSo the statement is True.",
+        "Cheaper streaming makes staying home more attractive relative to cinema, so demand for tickets can shift leftward. Lower substitute prices pull buyers away from the theatre.\n\nIncome, tastes, or related-goods prices rewrite willingness to buy at every own-price in Prices of Substitute Goods. That is a curve shift, not a slide along a fixed demand schedule.\n\nAfter the shift, the old equilibrium is generally wrong: a new intersection with supply sets both price and quantity. Comparative statics follow from which way the curve moved.\n\nOwn-price still governs movement along the new curve. Confusing a shifter with a movement along demand is the main geometry mistake to avoid here.\n\nSo the statement is True.",
+        "Tea and coffee are typically substitutes: higher nearby tea prices tend to raise coffee-shop demand, not lower it. Treating them as complements reverses the cross-price logic.\n\nSo the statement is False.",
+        "Higher petrol prices make driving costlier and often raise demand for public transport as a substitute, rather than shifting transport demand left because travel becomes undesirable overall. The relative-price channel points the other way.\n\nThe because-clause overreaches. Even if one fragment sounds familiar, the causal link or always/never stretch does not hold.\n\nPut the actors back in the correct category and the statement collapses without needing a new chapter of theory.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 3.2.04",
+      "title": "Secondary Manufacturing",
+      "subsection": "3.2",
+      "chapter": 3,
+      "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:",
+      "statements": [
+        "Retail sale of finished jackets is tertiary distribution or trade.",
+        "Warehousing steel before welding is a tertiary logistics service.",
+        "A car plant assembling vehicles operates in the tertiary sector because it serves customers.",
+        "A fashion label sewing jackets performs tertiary retail because jackets are sold later.",
+        "Smelters shaping metal remain primary because ore originates underground."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Selling finished jackets in a shop is retail trade, a tertiary service of distribution rather than the sewing stage that produced the garments.\n\nSo the statement is True.",
+        "Warehousing steel before it is welded is a logistics service. Holding and moving materials for others sits in the tertiary sector, separate from the welding itself.\n\nSo the statement is True.",
+        "A car plant that assembles vehicles transforms parts into finished cars. That manufacturing process is secondary, even though customers eventually drive the cars.\n\n\"Serving customers\" does not pull assembly into the tertiary sector. Almost every producer serves buyers; the sector test is the nature of the activity, not the existence of a customer.\n\nSo the statement is False.",
+        "Sewing jackets is manufacturing and therefore secondary. Later retail sale may be tertiary, but the sewing stage itself is not retail trade.\n\nSo the statement is False.",
+        "Smelters that shape metal perform secondary transformation of materials. Ore's underground origin does not keep the smelting stage in the primary sector.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "2/5"
+    },
+    {
+      "case_id": "CASE 4.2.05",
+      "title": "Partnership Financial Resources",
+      "subsection": "4.2",
+      "chapter": 4,
+      "context": "Analyze how the financial aspects of partnerships compare with those of sole proprietors when raising funds and offering collateral. Evaluate the following economic assertions:",
+      "statements": [
+        "All partners in a limited partnership share equal unlimited liability because the firm remains unincorporated.",
+        "In difficult situations partners can exchange ideas and perhaps make better decisions.",
+        "Managing partners in a limited partnership remain subject to unlimited liability for all firm debts.",
+        "Recording unequal ownership percentages in the agreement does not by itself cap each general partner's liability at that share of debt.",
+        "A partnership agreement that assigns sixty percent ownership to one partner caps that partner's liability at sixty percent of debts."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Limited partnerships distinguish managing partners with unlimited liability from limited partners capped at their contribution. Not everyone shares equal unlimited exposure.\n\nA silent capital partner who stays out of management is the counterexample: that partner's loss is normally limited to money put in. Claiming all partners share equal unlimited liability ignores the limited-partner role.\n\nSo the statement is False.",
+        "Partners can exchange ideas in tough situations and may reach better decisions than one person deciding alone under pressure without other viewpoints.\n\nSo the statement is True.",
+        "Managing partners in a limited partnership keep unlimited liability for firm debts. The limited-liability privilege belongs to the non-managing limited partner, not to those who run operations.\n\nSo the statement is True.",
+        "Unequal ownership percentages rearrange profit shares; they do not by themselves cap each general partner's liability at that debt fraction. Unlimited liability still allows full pursuit of a general partner.\n\nSo the statement is True.",
+        "Sixty percent ownership does not cap that partner's liability at sixty percent of debts. Unlimited liability can still reach the full shortfall against one partner.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 5.7.55",
+      "title": "Interaction of Price and Promotion",
+      "subsection": "5.7",
+      "chapter": 5,
+      "context": "Review product-mix decisions and portfolio labels for consumer brands. Evaluate the following economic assertions:",
+      "statements": [
+        "Refreshing skincare creams packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+        "Removing an underperforming skincare creams variant from the range reflects contraction in the product-mix strategy.",
+        "Removing an outdated travel backpacks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+        "A travel backpacks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+        "Promoting travel backpacks through social-media posts is a place decision because it chooses the warehouse where stock is stored."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Updating skincare creams pack colours while keeping the recipe fixed is the textbook relaunch move. Alteration refreshes appearance without inventing a separate product line. Recognition stays with the familiar offer, yet the shelf look feels current. Spelling out the category, the counterexample, and the mix element together keeps the verdict tied to this wording rather than to a neighbouring idea.\n\nSo the statement is True.",
+        "When a weak skincare creams variant is deleted after poor results, managers are contracting the mix rather than extending it. Contraction eliminates items whose relaunch prospects look poor. The statement correctly names that removal as contraction strategy, not expansion by another name.\n\nSo the statement is True.",
+        "Mix extension widens the portfolio. Deleting a failed travel backpacks model narrows it. Expansion wording therefore misstates the removal after failed relaunch.\n\nSo the statement is False.",
+        "A travel backpacks product dominating a stagnant market is typically milked as a cash cow. Question-mark treatment would assume low share and high growth. Both conditions fail in the statement's setup.\n\nSo the statement is False.",
+        "Place answers where customers can obtain travel backpacks. Social-media promotion answers how the firm talks to them. Treating posts as warehouse selection invents a false place test.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "2/5"
+    },
+    {
+      "case_id": "CASE 6.1.030",
+      "title": "Liquidity From the Balance Sheet 30",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | 977 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | 339 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | 638 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
+        "The current ratio exceeds 1.31.",
+        "Working capital of €117 thousand is positive on this balance sheet.",
+        "The equity ratio is below 42.8%.",
+        "Inventory make up more than 55.4% of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Intended use decides the line for the same physical object. An operator records a non-current tangible; a dealer records inventory. A dealer’s the item stays inventory until sold.\n\nSo the statement is True.",
+        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 152 + 68 + 44,\\quad \\text{CA} = 264,\\quad \\text{CL} = 120 + 27\n$$\n\n$$\n\\text{CL} = 147\n$$\n\n$$\n\\frac{264}{147} \\approx 1.7959 > 1.31\n$$\n\nCurrent ratio = 264 ÷ 147 ≈ 1.80.\n\nSo the statement is True.",
+        "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet. From the extract, current assets total 264 and current liabilities total 147:\n\n$$\n\\text{WC} = \\text{CA} - \\text{CL},\\quad \\text{CA} = 264, \\quad \\text{CL} = 147,\\quad \\text{WC} = 264 - 147\n$$\n\n$$\n\\text{WC} = 117\n$$\n\nWC = 264 − 147 = 117. The stem cites €117 thousand; the arithmetic supports that reading.\n\nSo the statement is True.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 339,\\quad \\text{Total assets} = 977\n$$\n\n$$\n\\frac{339}{977} \\approx 0.3470 \\approx 34.7\\%\n$$\n\n$$\n34.7\\% < 42.8\\%\n$$\n\nThe equity ratio is 34.7%, below the 42.8% benchmark. Equity ratio ≈ 339 ÷ 977 = 34.7%. Claim: is below 42.8%. 34.7% fits. The equity ratio places equity against total assets. Financing structure is read from that percentage, not from a single euro line alone. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is True.",
+        "From the extract, Inventory = 152 and current assets = 264.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{152}{264}\n$$\n\n$$\n\\text{Share} = 57.6\\%\n$$\n\nInventory / current assets ≈ 152 ÷ 264 = 57.6%. More than 55.4% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.3.003",
+      "title": "Return and Cash Flow Extract 3",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | 1235 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | 736 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | 499 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+        "Return on equity, exceeds 35.1%.",
+        "Cash flow from operating activities amounts to less than 78.6% of the operating result.",
+        "Inventory make up more than 25.7% of total assets.",
+        "Return on capital employed, exceeds 15.5%."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nPaying cash for software replaces one asset with another when the licence is capitalised, so total assets do not rise. If the outlay is expensed, cash falls and equity falls through profit — assets still do not increase.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$\\mathrm{ROE}=\\dfrac{192}{736}\\approx 0.261=26.1\\%$$\n\n$$26.1\\%<35.1\\%$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\dfrac{176}{192}\\approx 0.917=91.7\\%$$\n\n$$91.7\\%\\nless  78.6\\%$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$\\dfrac{223}{1235}\\approx 0.181=18.1\\%$$\n\n$$18.1\\%\\ngtr  25.7\\%$$\n\nSo the statement is False.",
+        "**E.** → True\n\nNon-current liabilities $=227+79=306$.\n\nCapital employed $=736+306=1042$.\n\n$$\\mathrm{ROCE}=\\dfrac{192}{1042}\\approx 0.184=18.4\\%$$\n\n$$18.4\\%>15.5\\%$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.031",
+      "title": "Short-Term Borrowing and Working Capital in Practice",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Review how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:",
+      "statements": [
+        "The equity ratio for a supermarket chain expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+        "If a supermarket chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+        "Working capital for a consulting firm is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+        "A consulting firm is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.",
+        "The current ratio for a consulting firm sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "What the object looks like does not pick the heading. On the chapter test the wording is accepted. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
+        "On the chapter test the wording is accepted. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. A current reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "Settlement timing and intended use matter more than physical shape for the item. Residual value reduces the depreciable base before the annual charge is calculated. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. A consulting reading of the extract supports this claim. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 6.2.045",
+      "title": "Cash Flow Mix Over Two Years 45",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
+        "Buying plant, machinery or another long-term asset for cash is classified as cash flow from investing activities.",
+        "Profit for the year appears in the income statement and raises retained earnings, but it is not shown as its own line in the cash flow statement.",
+        "Dividends paid to shareholders are recorded within cash flow from financing activities.",
+        "Paying dividends is classified as an investing cash outflow."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\\dfrac{354-305}{305}=\\dfrac{49}{305}\\approx 0.1607=16.07\\%$$\n\n$$16.07\\%\\ngtr  19.1\\%$$\n\nSo the statement is False.",
+        "**B.** → True\n\nCash spent on long-term productive assets is an investing outflow. Plant and machinery purchases sit in cash flow from investing activities.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe income statement reports profit and the balance sheet absorbs it in retained earnings. The cash flow statement tracks cash movements, not the accounting profit line itself.\n\nSo the statement is True.",
+        "**D.** → True\n\nDistributions to owners are financing outflows. Dividends paid are recorded in cash flow from financing activities.\n\nSo the statement is True.",
+        "**E.** → False\n\nDividends are a financing outflow to shareholders, not an investing outflow. Investing covers long-term asset deals, not owner distributions.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.STOCK",
+      "title": "Share Price Chart — Market Cap, P/E and Turnover",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "NordPeak AG is listed on the Vienna Stock Exchange. At the latest closing price the company has 12 million shares outstanding. Earnings for the last financial year were €18.0 million, and 4.8 million shares changed hands on the exchange over the same year.\n\n[[CHART type=\"line\" title=\"NordPeak AG closing share price (€)\"]]\nJan | Price=16.50\nFeb | Price=17.20\nMar | Price=18.40\nApr | Price=17.80\nMay | Price=19.10\nJun | Price=20.40\nJul | Price=21.00\nAug | Price=22.50\nSep | Price=21.80\nOct | Price=23.20\nNov | Price=24.00\nDec | Price=24.50\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Closing share price (Dec) | €24.50 |\n| Shares outstanding | 12,000,000 |\n| Annual earnings | €18,000,000 |\n| Annual shares traded | 4,800,000 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "At the December close, NordPeak's market capitalisation exceeds €290 million.",
+        "Earnings per share for the year are less than €1.40.",
+        "The price–earnings ratio at the December close exceeds 18.",
+        "Share turnover for the year is less than 35% of shares outstanding.",
+        "If the January close is taken instead of December, market capitalisation is below €200 million."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\\text{Market capitalisation}=24.50\\times 12{,}000{,}000=294{,}000{,}000$$\n\n$$294\\ \\text{million}>290\\ \\text{million}$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\\text{EPS}=\\dfrac{18{,}000{,}000}{12{,}000{,}000}=1.50$$\n\n$$1.50\\nless  1.40$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\text{P/E}=\\dfrac{24.50}{1.50}\\approx 16.33$$\n\n$$16.33\\ngtr  18$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$\\text{Share turnover}=\\dfrac{4{,}800{,}000}{12{,}000{,}000}=0.40=40\\%$$\n\n$$40\\%\\nless  35\\%$$\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\\text{Market capitalisation (Jan)}=16.50\\times 12{,}000{,}000=198{,}000{,}000$$\n\n$$198\\ \\text{million}<200\\ \\text{million}$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) Launched within weeks of each other in the late summer of 1977, Voyager 1 and Voyager 2 were designed initially as five-year missions to study Jupiter and Saturn, yet both probes remain operational nearly half a century later, making them by a wide margin the longest continuously functioning spacecraft in human history. Counterintuitively, Voyager 2 launched first, on 20 August 1977, roughly two weeks before Voyager 1's 5 September launch, but Voyager 1 was placed on a faster trajectory that allowed it to overtake its sibling and become, by most measures, the more distant of the two probes for the remainder of the mission.\n\n(2) Voyager 1 is currently travelling at roughly 17 kilometres per second relative to the Sun, a velocity that makes it the fastest human-made object ever launched, and one sufficiently rapid that it covers a distance equivalent to circling the Earth's equator in under forty minutes. Despite this extraordinary speed, the probe's immense head start means it is currently located more than 24 billion kilometres from Earth, a distance so vast that radio signals travelling at the speed of light now require approximately 22 hours to reach the spacecraft one way, meaning any single command-and-confirmation exchange with mission control necessarily spans nearly two full days.\n\n(3) Voyager 1 formally crossed into interstellar space in August 2012, a transition confirmed the following year through changes detected in surrounding plasma density rather than through any dramatic visual milestone, since the boundary in question is invisible and gradual rather than a sharply defined line. Voyager 2, travelling a slower, more southerly trajectory that had allowed it to conduct flybys of Uranus and Neptune unavailable to its sibling, did not reach this same interstellar threshold until November 2018, fully six years after Voyager 1 achieved the same milestone.\n\n(4) Both spacecraft are powered by radioisotope thermoelectric generators, compact devices that convert heat released by the steady radioactive decay of plutonium-238 directly into electricity without requiring any moving mechanical parts. Because plutonium-238 has a half-life of approximately 87.7 years, the generators' thermal output declines only gradually, yet mission engineers have nonetheless had to progressively shut down individual scientific instruments aboard each probe to conserve dwindling power, with current projections suggesting both spacecraft will lose the ability to operate any remaining instruments sometime between 2025 and 2030, at which point continuous scientific data collection will cease entirely even though the probes themselves will continue drifting indefinitely.\n\n(5) Each Voyager carries an identical golden record, a gold-plated copper phonograph disc containing 115 images, roughly 90 minutes of music drawn from cultures across the globe, natural sounds of Earth such as thunder and birdsong, and spoken greetings recorded in 55 different human languages, alongside a brief message from then-United Nations Secretary-General Kurt Waldheim. Engineers deliberately selected robust, non-digital analogue encoding for the record precisely because they anticipated that any civilisation eventually encountering it, whether human or otherwise, would need to reconstruct playback technology from first principles using only instructions etched directly onto the record's protective cover.\n\n(6) Carl Sagan, who chaired the committee responsible for selecting the record's contents, later remarked that the record's true audience was arguably less any hypothetical extraterrestrial recipient and more humanity itself, since the very act of choosing what best represented the species forced difficult, often contentious deliberations about which sounds, images, and languages could possibly stand in for the whole of human experience within such severely limited physical storage space.\n\n(7) Neither Voyager probe is presently aimed at any particular star system, and calculating precise future encounters remains difficult given the immense timescales and gradual gravitational influences involved; nonetheless, astronomers estimate that in roughly 40,000 years, Voyager 1 will pass within just under two light-years of a star currently catalogued as Gliese 445, a proximity that, while still enormous by any everyday standard, counts as a genuinely close stellar encounter across such vast interstellar distances.\n\n(8) Despite the probes' extraordinary age, both remain capable of transmitting scientific data back to Earth using radio transmitters generating only about 20 watts of power, roughly comparable to a dim household refrigerator bulb, a signal so faint by the time it reaches Earth's receiving antennas that specialised, extremely sensitive equipment operated by NASA's Deep Space Network is required merely to distinguish it from ambient background noise.\n\n(9) Whether either Voyager probe will remain even partially operational long enough to reach the fiftieth anniversary of its launch in the late 2020s, or whether dwindling power will silence both spacecraft before that milestone arrives, remains a matter engineers monitoring the mission continue to track closely, even as the probes themselves, regardless of their electronic fate, will continue drifting through interstellar space for many millions of years to come.",
+    "passageTitle": "Voyager — Humanity's Longest-Running Conversation with the Void",
+    "tasks": [
+      {
+        "case_id": "ENG T.16.01",
+        "id": "en-t-16-01",
+        "title": "Task 1",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Voyager 2 launched roughly two weeks before Voyager 1, yet Voyager 1 became the more distant probe.",
+          "Voyager 1's faster trajectory allowed it to overtake Voyager 2 after both were launched.",
+          "A single command-and-confirmation exchange with Voyager 1 currently spans nearly two full days.",
+          "Voyager 1's transition into interstellar space was confirmed primarily through a sudden, visually dramatic event.",
+          "Voyager 2 reached interstellar space before Voyager 1, owing to its more southerly trajectory."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Voyager 2 launched roughly two weeks before Voyager 1, yet Voyager 1 became the more distant probe.**\n\nParagraph 1 states that Voyager 2 launched first on 20 August 1977, \"roughly two weeks before Voyager 1's 5 September launch,\" yet Voyager 1 later became \"the more distant of the two probes.\" Launch order and eventual distance therefore run in opposite directions, exactly as the claim says. The statement is a compound one, so both halves have to be checked separately before you can accept it: the two-week gap is one fact, the distance ranking is another. Notice that the passage itself flags the oddity with \"Counterintuitively,\" which is your signal that the numbering of the probes does not track their launch sequence.\n\n**Tip:** Watch for \"yet\" or \"but\" linking an earlier launch to a later lead — both halves must match the text.\n\nThe launch-order and distance pairing matches Paragraph 1, so the claim is **true**.",
+          "**B) Voyager 1's faster trajectory allowed it to overtake Voyager 2 after both were launched.**\n\nParagraph 1 says Voyager 1 \"was placed on a faster trajectory that allowed it to overtake its sibling.\" The overtaking is framed as a direct result of that faster path after both craft were already aloft, which is what the statement reports. The verb \"allowed\" in the source carries the causal weight, so the statement's \"allowed it to overtake\" is not an added inference but a direct echo of the passage's own phrasing. The phrase \"after both were launched\" is also safe, since overtaking can only happen once the slower craft is already in flight.\n\nFaster trajectory as the cause of overtaking is stated outright in Paragraph 1, so the line is **true**.",
+          "**C) A single command-and-confirmation exchange with Voyager 1 currently spans nearly two full days.**\n\nParagraph 2 notes that one-way radio travel takes \"approximately 22 hours,\" so \"any single command-and-confirmation exchange with mission control necessarily spans nearly two full days.\" A full exchange is command plus confirmation — roughly double the one-way delay. The arithmetic is worth doing in your head as a check: about 22 hours out plus about 22 hours back lands near 44 hours, which is indeed close to two days. Because the passage spells out the conclusion itself, you do not even need the calculation — the words \"nearly two full days\" are already on the page.\n\n**Tip:** One-way time is not the same as round-trip exchange time; the passage names both.\n\nThe near-two-day exchange span is stated explicitly in Paragraph 2, so the claim is **true**.",
+          "**D) Voyager 1's transition into interstellar space was confirmed primarily through a sudden, visually dramatic event.**\n\nParagraph 3 says the August 2012 crossing was confirmed \"through changes detected in surrounding plasma density rather than through any dramatic visual milestone,\" and that the boundary is \"invisible and gradual.\" The statement invents a sudden visual spectacle the text explicitly rejects. The construction \"rather than\" is doing decisive work in the source: it names the real method and rules out the false one in the same breath. Note too that confirmation came \"the following year,\" which further undercuts any picture of an instant, observable moment of crossing.\n\n**Trap:** \"Crossed into interstellar space\" can tempt a cinematic image, but the confirmation method here is plasma density, not a visible flash.\n\nPlasma-density confirmation without a dramatic visual milestone overturns the claim, so it is **false**.",
+          "**E) Voyager 2 reached interstellar space before Voyager 1, owing to its more southerly trajectory.**\n\nParagraph 3 places Voyager 2's interstellar arrival in November 2018, \"fully six years after Voyager 1 achieved the same milestone.\" The southerly path enabled Uranus and Neptune flybys, but it did not make Voyager 2 first across the threshold — the chronology runs the other way. The passage in fact calls that trajectory \"slower,\" which explains the delay rather than any head start. When a statement bundles a real causal detail with a reversed sequence, the reversed sequence alone is enough to sink it.\n\n**Trap:** A true detail (southerly trajectory) is glued to a false chronology (Voyager 2 first).\n\nVoyager 2 arrived six years later, not earlier, so the statement is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.16.02",
+        "id": "en-t-16-02",
+        "title": "Task 2",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Plutonium-238 has a half-life of approximately 87.7 years.",
+          "Both probes are expected to lose the ability to operate remaining instruments sometime between 2025 and 2030.",
+          "Once instruments shut down, the probes themselves will immediately stop drifting through space entirely.",
+          "The golden record contains 115 images and roughly 90 minutes of music.",
+          "Sagan suggested the record's primary intended audience was extraterrestrial civilisations rather than humanity itself."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Plutonium-238 has a half-life of approximately 87.7 years.**\n\nParagraph 4 states that \"plutonium-238 has a half-life of approximately 87.7 years.\" The figure and the substance match the claim with no scaling or rounding distortion. Watch that the isotope number is also correct, since a swapped figure such as plutonium-239 would be a classic quiet substitution. The hedge \"approximately\" is preserved in the statement as well, so nothing has been hardened from an estimate into an exact value.\n\nThe half-life number is quoted directly from Paragraph 4, so the statement is **true**.",
+          "**B) Both probes are expected to lose the ability to operate remaining instruments sometime between 2025 and 2030.**\n\nParagraph 4 projects that \"both spacecraft will lose the ability to operate any remaining instruments sometime between 2025 and 2030.\" The window and the shared fate for both craft line up with the statement. The source calls this a projection — \"current projections suggesting\" — and the statement's \"are expected to\" keeps that same predictive footing rather than asserting a settled fact. Both date endpoints match exactly, which is the detail to verify whenever a range is offered.\n\nThe 2025–2030 instrument-loss projection is explicit in Paragraph 4, so the claim is **true**.",
+          "**C) Once instruments shut down, the probes themselves will immediately stop drifting through space entirely.**\n\nParagraph 4 separates power death from motion: after instruments cease, \"the probes themselves will continue drifting indefinitely.\" Stopping the electronics does not stop the coasting bodies. The passage marks this contrast with \"even though,\" a concessive link that exists precisely to keep the two outcomes apart. The word \"indefinitely\" is the direct opposite of the statement's \"immediately stop,\" so the two cannot both stand.\n\n**Trap:** \"Shut down\" for instruments is easy to misread as the whole spacecraft freezing in place.\n\nContinued indefinite drifting after instrument loss overturns the claim, so it is **false**.",
+          "**D) The golden record contains 115 images and roughly 90 minutes of music.**\n\nParagraph 5 lists \"115 images\" and \"roughly 90 minutes of music drawn from cultures across the globe\" among the record's contents. Both quantities appear together in that inventory. The paragraph goes on to list natural sounds and greetings in 55 languages, so the trap here would be a swapped number pulled from elsewhere in the same list. Since neither figure has been shifted or attached to the wrong item, the claim survives a close comparison.\n\nThe image count and music duration match Paragraph 5 exactly, so the statement is **true**.",
+          "**E) Sagan suggested the record's primary intended audience was extraterrestrial civilisations rather than humanity itself.**\n\nParagraph 6 reports Sagan's remark that the record's true audience was \"arguably less any hypothetical extraterrestrial recipient and more humanity itself.\" The statement reverses that priority. The comparative pair \"less … and more …\" is the structural giveaway, and flipping the two halves inverts Sagan's entire point. His reasoning also supports the humanity-first reading, since he stresses the deliberations the selection process forced on the people making it.\n\n**Trap:** Because the disc is a \"message to the stars,\" learners often flip Sagan's actual emphasis on humanity as the deeper audience.\n\nSagan privileges humanity over aliens as the truer audience, so the claim is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.16.03",
+        "id": "en-t-16-03",
+        "title": "Task 3",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "In roughly 40,000 years, Voyager 1 will pass within just under two light-years of Gliese 445.",
+          "Both probes are currently aimed precisely at specific, predetermined star systems.",
+          "Each probe's radio transmitter generates roughly 20 watts of power.",
+          "Specialised, highly sensitive equipment is required to detect the probes' signals amid background noise.",
+          "The passage concludes by presenting the probes' eventual fiftieth-anniversary status as fully certain and already confirmed."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In roughly 40,000 years, Voyager 1 will pass within just under two light-years of Gliese 445.**\n\nParagraph 7 estimates that \"in roughly 40,000 years, Voyager 1 will pass within just under two light-years of a star currently catalogued as Gliese 445.\" Timescale, distance, probe, and star name all match. Four separate data points travel together in this statement, and a single altered one — the other probe, a different star, a rounded distance — would be enough to make it false. Both hedges, \"roughly\" and \"just under,\" are also carried across intact rather than sharpened into precise claims.\n\nThe Gliese 445 encounter estimate is stated directly in Paragraph 7, so the claim is **true**.",
+          "**B) Both probes are currently aimed precisely at specific, predetermined star systems.**\n\nParagraph 7 opens with the opposite fact: \"Neither Voyager probe is presently aimed at any particular star system.\" A later probabilistic fly-by estimate is not the same as current deliberate aiming. The paragraph reinforces this by calling precise future encounters \"difficult\" to calculate, which is hard to square with predetermined targeting. Pay attention to the time marker \"presently\" as well, since the denial applies to the probes' current state, exactly the state the statement describes.\n\n**Trap:** A named future encounter (Gliese 445) can feel like a targeted destination even when the text denies present aiming.\n\nNo present aiming at any particular star overturns the claim, so it is **false**.",
+          "**C) Each probe's radio transmitter generates roughly 20 watts of power.**\n\nParagraph 8 says both craft transmit \"using radio transmitters generating only about 20 watts of power.\" The wattage is the proving detail; the refrigerator-bulb comparison is colour, not a different figure. The word \"both\" in the source licenses the statement's distributive \"each probe's,\" so the shift in wording does not change the claim. Resist reading \"only about 20 watts\" as a limitation that somehow contradicts the plain number — the qualifier is rhetorical emphasis, not a second measurement.\n\nThe ~20-watt transmitter power is explicit in Paragraph 8, so the statement is **true**.",
+          "**D) Specialised, highly sensitive equipment is required to detect the probes' signals amid background noise.**\n\nParagraph 8 explains that once the faint signal reaches Earth, \"specialised, extremely sensitive equipment operated by NASA's Deep Space Network is required merely to distinguish it from ambient background noise.\" Detection depends on that specialised gear. The statement's \"highly sensitive\" stands in for the passage's \"extremely sensitive,\" a synonym swap that leaves the meaning untouched. The word \"required\" appears in both, so the strength of the claim has not been softened or inflated.\n\nDeep Space Network–grade sensitivity as a detection requirement matches Paragraph 8, so the claim is **true**.",
+          "**E) The passage concludes by presenting the probes' eventual fiftieth-anniversary status as fully certain and already confirmed.**\n\nParagraph 9 frames the fiftieth-anniversary question as open: whether the craft stay operational that long \"remains a matter engineers monitoring the mission continue to track closely.\" Uncertainty is the tone, not confirmed certainty. The paragraph is built on a \"Whether … or whether …\" structure, which by design presents two live possibilities rather than a settled outcome. Absolutes such as \"fully certain\" and \"already confirmed\" almost never survive a passage that keeps its verbs in the language of monitoring and tracking.\n\n**Trap:** The probes' millions-of-years physical drift can feel like a settled destiny, but the anniversary status of electronics is left unresolved.\n\nEngineers still tracking an undecided anniversary outcome overturns \"fully certain,\" so the statement is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.16.04",
+        "id": "en-t-16-04",
+        "title": "Task 4",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "If one-way signal transit currently takes approximately 22 hours, it would be inaccurate to claim a full round-trip exchange takes under 24 hours total.",
+          "Since Voyager 1 launched later but travels faster, it cannot be assumed that launch order alone determines a probe's eventual distance from Earth.",
+          "Because the golden record uses analogue rather than digital encoding, it does not follow that this choice was accidental rather than deliberate.",
+          "Given plutonium-238's 87.7-year half-life, it would be an overstatement to claim the generators' power output collapses suddenly rather than gradually.",
+          "Since neither probe targets a specific star, it must be concluded that the 40,000-year Gliese 445 estimate is entirely fabricated and unsupported."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) If one-way signal transit currently takes approximately 22 hours, it would be inaccurate to claim a full round-trip exchange takes under 24 hours total.**\n\nParagraph 2 gives ~22 hours one way and says a command-and-confirmation exchange \"necessarily spans nearly two full days.\" Doubling ~22 hours yields far more than 24 hours, so calling a round trip \"under 24 hours\" would indeed be inaccurate — and the statement correctly flags that error. Work the logic in two steps: first decide whether the embedded claim is supported, then decide whether calling it inaccurate is therefore right. Here the embedded claim fails the text, so the rejection of it succeeds.\n\n**Tip:** Parse the double negative slowly: \"it would be inaccurate to claim X\" is true when X contradicts the passage.\n\nBecause a full exchange needs nearly two days, rejecting an under-24-hour claim fits the text, so the line is **true**.",
+          "**B) Since Voyager 1 launched later but travels faster, it cannot be assumed that launch order alone determines a probe's eventual distance from Earth.**\n\nParagraph 1 shows Voyager 2 launched first while Voyager 1, on a faster trajectory, overtook it and became more distant. That counterexample blocks any rule that treats launch order alone as destiny. The word \"alone\" keeps the inference modest, since the statement never denies that launch timing matters at all — only that it settles the outcome by itself. A single documented counterexample in the passage is sufficient to justify that kind of cautious refusal.\n\nLaunch-later-yet-farther in Paragraph 1 proves trajectory matters more than birth order, so the cautious inference is **true**.",
+          "**C) Because the golden record uses analogue rather than digital encoding, it does not follow that this choice was accidental rather than deliberate.**\n\nParagraph 5 says engineers \"deliberately selected robust, non-digital analogue encoding\" so future finders could rebuild playback from cover instructions. Analogue is intentional design, not an accident — so denying an \"accidental\" reading is fair. The passage even supplies the motive, \"precisely because they anticipated,\" which is the strongest possible evidence of intent. When the text names both the choice and the reasoning behind it, an accidental reading has nothing left to stand on.\n\n**Tip:** \"It does not follow that…\" is true when the passage supplies the opposite cause (here: deliberate selection).\n\nDeliberate analogue encoding in Paragraph 5 supports this carefully worded line, so it is **true**.",
+          "**D) Given plutonium-238's 87.7-year half-life, it would be an overstatement to claim the generators' power output collapses suddenly rather than gradually.**\n\nParagraph 4 notes the ~87.7-year half-life and that \"the generators' thermal output declines only gradually.\" Calling the decline a sudden collapse would overstate what the text allows; the statement correctly refuses that exaggeration. The word \"Because\" opens that sentence in the source, tying the long half-life directly to the gradual decline as cause and effect. A half-life measured in decades simply cannot produce the abrupt drop-off the rejected claim imagines.\n\nGradual decline from a multi-decade half-life makes \"sudden collapse\" an overstatement, so the claim is **true**.",
+          "**E) Since neither probe targets a specific star, it must be concluded that the 40,000-year Gliese 445 estimate is entirely fabricated and unsupported.**\n\nParagraph 7 denies present aiming at any star, yet still reports that \"astronomers estimate\" a Gliese 445 pass in ~40,000 years. No-target-now and estimated-future-proximity can coexist; \"fabricated\" leaps past the text. The connective \"nonetheless\" in the passage exists precisely to signal that the two ideas sit side by side without conflict. Absolute phrasing such as \"entirely fabricated\" and the forced \"it must be concluded\" are both far stronger than anything the paragraph supports.\n\n**Trap:** A true premise (no current targeting) is abused to erase an estimate the passage actually gives.\n\nThe Gliese 445 figure is an astronomers' estimate, not a fabrication, so the forced conclusion is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.16.05",
+        "id": "en-t-16-05",
+        "title": "Task 5",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The six-year gap between Voyager 1's and Voyager 2's interstellar crossings is consistent with Voyager 1's faster trajectory and earlier overtaking described earlier in the passage.",
+          "Because both probes rely on the same radioactive decay process, and because that decay is described as gradual, it follows that instrument shutdowns have likewise proceeded gradually rather than abruptly.",
+          "The deliberate choice of analogue encoding and the extreme faintness of the probes' current signal together imply Voyager's engineers anticipated all future detection and communication challenges precisely.",
+          "Sagan's reflection on the record's true audience is consistent with the passage's broader emphasis on human self-reflection rather than purely extraterrestrial contact as a mission theme.",
+          "The passage's uncertainty about reaching a fiftieth anniversary is presented as contradicting the earlier claim that both probes will keep drifting for millions of years."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The six-year gap between Voyager 1's and Voyager 2's interstellar crossings is consistent with Voyager 1's faster trajectory and earlier overtaking described earlier in the passage.**\n\nParagraph 1 establishes Voyager 1's faster path and overtaking; Paragraph 3 then places its interstellar crossing six years before Voyager 2's. The later chronology fits the earlier speed advantage rather than contradicting it. Consistency questions ask only whether two parts of the text can hold together, not whether one strictly proves the other. Paragraph 3 even calls Voyager 2's trajectory \"slower,\" which supplies the direct link back to the speed difference set up in Paragraph 1.\n\nEarlier overtaking plus a six-year interstellar lead form one coherent speed story, so the synthesis is **true**.",
+          "**B) Because both probes rely on the same radioactive decay process, and because that decay is described as gradual, it follows that instrument shutdowns have likewise proceeded gradually rather than abruptly.**\n\nParagraph 4 ties plutonium decay to output that \"declines only gradually\" and says engineers have had to \"progressively shut down individual scientific instruments\" to save power. Gradual decay and progressive shutdowns are presented as the same management logic. The adverb \"progressively\" and the phrase \"individual scientific instruments\" both point to a staged process rather than a single blackout. The passage also confirms the shared power source, since it describes both spacecraft as running on the same kind of generator.\n\nProgressive instrument cutoffs match the gradual-decay frame, so the linked claim is **true**.",
+          "**C) The deliberate choice of analogue encoding and the extreme faintness of the probes' current signal together imply Voyager's engineers anticipated all future detection and communication challenges precisely.**\n\nParagraph 5 gives a narrow rationale for analogue encoding (rebuildable playback), and Paragraph 8 separately describes today's faint signal and Deep Space Network detection. Nothing claims engineers foresaw \"all\" future challenges \"precisely.\" What Paragraph 5 says engineers anticipated is one specific thing: that a finder would need to reconstruct playback technology from first principles. Stretching that single anticipation into total foresight is a scope error, and the words \"all\" and \"precisely\" are where the statement breaks.\n\n**Trap:** Two real design facts are stretched into omniscient foresight the passage never asserts.\n\nTwo limited details cannot support comprehensive precise anticipation, so the synthesis is **false**.",
+          "**D) Sagan's reflection on the record's true audience is consistent with the passage's broader emphasis on human self-reflection rather than purely extraterrestrial contact as a mission theme.**\n\nParagraph 6 casts the record's harder work as choosing what represents humanity to itself. That human-facing deliberation aligns with reading the mission theme as self-reflection, not only alien contact. The paragraph describes \"difficult, often contentious deliberations\" about what could stand in for the whole of human experience, which is inward-looking work by definition. The word \"purely\" also keeps the statement moderate, since it never denies that extraterrestrial contact is part of the mission's framing.\n\nSagan's humanity-as-audience insight fits the passage's reflective frame, so the claim is **true**.",
+          "**E) The passage's uncertainty about reaching a fiftieth anniversary is presented as contradicting the earlier claim that both probes will keep drifting for millions of years.**\n\nParagraph 9 keeps electronic survival to ~50 years uncertain while stating the craft \"will continue drifting through interstellar space for many millions of years\" regardless of electronic fate. Uncertainty about power and long-term coasting are presented as compatible, not contradictory. The phrase \"regardless of their electronic fate\" is placed there specifically to prevent the reader from linking the two outcomes. Paragraph 4 makes the same separation with \"even though,\" so the passage draws this distinction twice rather than once.\n\n**Trap:** Mixing \"operational electronics\" with \"physical drift\" creates a fake clash.\n\nParagraph 9 treats anniversary doubt and million-year drifting as distinct, so the alleged contradiction is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.16.08",
+        "id": "en-t-16-08",
+        "title": "Task 8",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.",
+          "In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.",
+          "In Paragraph 4, \"dwindling\" means steadily increasing in quantity or strength.",
+          "In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.",
+          "In Paragraph 8, \"faint\" means weak or difficult to perceive clearly."
+        ],
+        "answer_key": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 1, \"counterintuitively\" means matching common expectations exactly.**\n\nParagraph 1 uses \"Counterintuitively\" to introduce the surprise that Voyager 2 launched first — against ordinary numbering expectations. The adverb means contrary to intuition, not \"matching expectations.\" The prefix counter- carries the sense of \"against\" or \"opposite,\" as in counterargument or counterweight. Its position at the head of the sentence is also functional: it warns the reader that what follows will upset the assumption they arrived with.\n\n**Trap:** The long Latinate word can feel \"neutral\" if you only hear \"intuitive\" and miss the counter- prefix.\n\nCounter- marks against expectation, so the claimed meaning is **false**.",
+          "**B) In Paragraph 3, \"gradual\" means occurring suddenly and abruptly, all at once.**\n\nParagraph 3 contrasts an \"invisible and gradual\" boundary with any \"dramatic visual milestone.\" Gradual means stepwise over time — the opposite of sudden and all-at-once. The sentence sets it against \"a sharply defined line,\" which is the clearest possible in-text contrast for the word. When a passage places a term directly opposite another idea, that opposition is usually the fastest route to its meaning.\n\nGradual versus abrupt are antonyms here, so the definition is **false**.",
+          "**C) In Paragraph 4, \"dwindling\" means steadily increasing in quantity or strength.**\n\nParagraph 4 speaks of \"dwindling power\" as engineers shut instruments to conserve what remains. Dwindling means shrinking or running down, not building up. The word \"conserve\" in the same clause only makes sense if the resource is being lost rather than gained. The surrounding logic of shutting instruments down points the same way, since nobody rations a supply that is growing.\n\n**Trap:** Context about generators can tempt \"still producing power,\" but dwindling tracks the decline, not growth.\n\nDwindling is decrease, not increase, so the meaning claim is **false**.",
+          "**D) In Paragraph 6, \"contentious\" means uncontroversial and easily agreed upon.**\n\nParagraph 6 describes \"difficult, often contentious deliberations\" about what could represent humanity. Contentious means disputed or apt to spark disagreement — the reverse of uncontroversial. It is paired with \"difficult\" in the same phrase, and coordinated adjectives usually pull in the same direction rather than opposite ones. The root is the same as in contend and contention, both of which involve struggle or dispute.\n\nContentious signals conflict, so equating it with easy agreement is **false**.",
+          "**E) In Paragraph 8, \"faint\" means weak or difficult to perceive clearly.**\n\nParagraph 8 calls the returning signal \"so faint\" that only specialised antennas can separate it from noise. That use matches \"weak / hard to perceive\" exactly. The \"so … that\" construction supplies its own definition, since the consequence it introduces is the need for extremely sensitive equipment. Nothing in the sentence points to the other sense of faint, such as losing consciousness, so the technical reading is the right one.\n\nFaint as weak and hard to detect fits Paragraph 8, so the meaning is **true**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.16.09",
+        "id": "en-t-16-09",
+        "title": "Task 9",
+        "subsection": "t.16",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.",
+          "In Paragraph 5, \"robust\" means fragile and easily damaged.",
+          "In Paragraph 7, \"proximity\" means the state of being nearby or close to something.",
+          "In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.",
+          "In Paragraph 1, \"overtake\" means to fall behind something rather than pass it."
+        ],
+        "answer_key": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 2, \"extraordinary\" means entirely ordinary and unremarkable.**\n\nParagraph 2 labels Voyager 1's speed \"extraordinary\" just after calling it the fastest human-made object. Extraordinary means exceptional or remarkable — not ordinary. The prefix extra- here means \"beyond,\" so the word literally points outside the ordinary rather than inside it. The concessive opener \"Despite this extraordinary speed\" also depends on the speed being impressive, since there would be nothing to concede otherwise.\n\nExtraordinary and ordinary are opposites, so the claimed gloss is **false**.",
+          "**B) In Paragraph 5, \"robust\" means fragile and easily damaged.**\n\nParagraph 5 says engineers chose \"robust, non-digital analogue encoding\" so the record could survive and be reconstructed later. Robust means sturdy and durable, not fragile. The stated purpose settles it: an encoding meant to outlast the mission and be decoded by unknown finders has to be resilient by design. A fragile format would defeat the very reason the passage gives for the choice.\n\n**Trap:** Analogue can sound \"old\" and therefore fragile, but the text pairs it with robustness on purpose.\n\nRobust means durable here, so fragile is **false**.",
+          "**C) In Paragraph 7, \"proximity\" means the state of being nearby or close to something.**\n\nParagraph 7 calls the Gliese 445 pass \"a proximity that, while still enormous by any everyday standard, counts as a genuinely close stellar encounter.\" Proximity is nearness — exactly the offered gloss. The concession \"while still enormous\" shows that nearness is being judged on an astronomical scale, not an everyday one. That relative framing does not change the word's meaning; it only changes the yardstick.\n\nProximity as nearness matches the stellar-encounter wording, so the meaning is **true**.",
+          "**D) In Paragraph 9, \"dwindling\" (as in \"dwindling power\") means power that is steadily decreasing.**\n\nParagraph 9 wonders whether \"dwindling power will silence both spacecraft\" before the fiftieth launch anniversary. That use is power steadily falling away — the definition given. The verb \"silence\" confirms the direction of travel, since only a shrinking supply could shut the probes down. The word carries the same sense here as it does in Paragraph 4, so the two uses reinforce each other.\n\nDwindling power as steadily decreasing fits Paragraph 9, so the claim is **true**.",
+          "**E) In Paragraph 1, \"overtake\" means to fall behind something rather than pass it.**\n\nParagraph 1 says Voyager 1's faster trajectory \"allowed it to overtake its sibling\" and become more distant. Overtake means to catch up and pass — the opposite of falling behind. The outcome clause seals the reading, since becoming \"the more distant of the two probes\" is only possible if Voyager 1 moved ahead. A faster trajectory as the stated cause points the same direction.\n\nOvertake is passing ahead, so \"fall behind\" is **false**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.16.06",
+        "id": "en-t-16-06",
+        "title": "Task 6",
+        "subsection": "t.16",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had the probes not been launched when they were, humanity would have lacked any interstellar spacecraft today.\"",
+          "\"Engineers recommended that the team monitors remaining power levels closely.\"",
+          "\"The number of active instruments continue to decline each year.\"",
+          "\"Neither the transmitter nor the antenna were sufficiently powerful for direct detection.\"",
+          "\"Having crossed into interstellar space, Voyager 1 continued transmitting data for years afterward.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had the probes not been launched when they were, humanity would have lacked any interstellar spacecraft today.\"**\n\nThis is an inverted third conditional: \"Had + past participle\" stands in for \"If … had …,\" and \"would have lacked\" supplies the unreal past result. The time frames line up (past launch condition → resulting past/present consequence expressed with would have). Note that the negative sits after the subject in the inverted form — \"Had the probes not been launched\" — which is exactly where it belongs. Rewriting it as \"If the probes had not been launched when they were\" produces the same meaning, confirming the inversion is doing its job.\n\n**Tip:** Inversion with Had + subject drops if and still keeps the same unreal past meaning.\n\nInverted third-conditional form is intact here, so the sentence is **true**.",
+          "**B) \"Engineers recommended that the team monitors remaining power levels closely.\"**\n\nAfter recommend + that, formal exam English wants the subjunctive base form: \"that the team monitor,\" not third-person \"monitors.\" The -s ending treats the clause like ordinary present simple and breaks the mandative pattern. The base form stays the same whatever the main verb's tense, so the past-tense \"recommended\" does not pull the subordinate verb backwards either. A useful check is that the subjunctive is invisible with plural subjects, which is why the singular \"the team\" exposes the error here.\n\n**Trap:** Recommend/insist/require + that often look like they need ordinary present agreement — they need the bare subjunctive instead.\n\nMandative subjunctive needs \"monitor,\" so \"monitors\" makes the line **false**; the repair is \"Engineers recommended that the team monitor remaining power levels closely.\"",
+          "**C) \"The number of active instruments continue to decline each year.\"**\n\nThe head noun is \"number,\" which is singular after \"the number of,\" so the verb must be \"continues,\" not plural \"continue.\" \"Instruments\" is only the of-phrase; it does not control agreement. Contrast this with \"a number of,\" which does take a plural verb because it functions as a quantifier meaning \"several.\" The definite article is therefore the deciding clue: \"the number\" is one quantity, \"a number\" is many things.\n\n**Trap:** A nearby plural noun often steals the verb from singular \"the number.\"\n\nSingular \"the number\" needs \"continues,\" so the sentence is **false**; write \"The number of active instruments continues to decline each year.\"",
+          "**D) \"Neither the transmitter nor the antenna were sufficiently powerful for direct detection.\"**\n\nWith neither…nor, many textbook keys still allow a plural verb when the writer treats the two failed devices as a combined subject. Here \"were\" presents both transmitter and antenna as jointly insufficient, which this item grades as acceptable agreement. The strict proximity rule would look to \"the antenna\" and call for \"was,\" so both forms circulate in exam materials. What matters for this key is that the joint reading is available and the sentence is otherwise well formed.\n\nReading neither…nor as a joint plural subject keeps \"were\" workable on this key, so the sentence is **true**.",
+          "**E) \"Having crossed into interstellar space, Voyager 1 continued transmitting data for years afterward.\"**\n\nThe participle clause \"Having crossed…\" correctly attaches to Voyager 1, the subject of the main clause, so there is no dangling modifier. Perfect participle marks the crossing as complete before the continued transmitting. The test for dangling is quick: ask who performed the crossing, and the answer must be the subject that follows the comma. Here Voyager 1 both crossed and transmitted, so the modifier lands on the right noun.\n\nThe -ing clause and main-clause subject match cleanly, so the wording is **true**."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.16.07",
+        "id": "en-t-16-07",
+        "title": "Task 7",
+        "subsection": "t.16",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the probe crossed the boundary than plasma readings began shifting.\"",
+          "\"The mission, along with several related projects, were funded for decades.\"",
+          "\"Each of the transmitted signals have required specialised detection equipment.\"",
+          "\"By the time the anniversary arrives, engineers will have already lost contact with one probe.\"",
+          "\"The readings, which were gathered over several decades, indicate a gradual power decline.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the probe crossed the boundary than plasma readings began shifting.\"**\n\n\"No sooner … than\" requires inversion in the first clause: Had + subject + past participle. \"No sooner had the probe crossed … than …\" follows that template exactly, with past simple in the than-clause for the resulting shift. The inversion is triggered because a negative adverbial opens the sentence, the same rule that governs \"Never had…\" and \"Rarely had…\". Tense sequencing also holds, since the past perfect marks the earlier crossing and the past simple marks what followed.\n\n**Tip:** No sooner pairs with than (not when), and the first clause inverts.\n\nCorrect no-sooner inversion plus than makes the sentence **true**.",
+          "**B) \"The mission, along with several related projects, were funded for decades.\"**\n\nThe true subject is singular \"The mission\"; \"along with several related projects\" is only a parenthetical add-on and does not turn the verb plural. Agreement therefore needs \"was funded,\" not \"were funded.\" The paired commas are the visual clue that the phrase is an interruption you can lift out entirely. Read the sentence without it — \"The mission … were funded\" — and the mismatch becomes obvious at once.\n\n**Trap:** Phrases after along with / as well as / together with look plural but leave the original singular head in charge.\n\nSingular mission demands \"was,\" so the line is **false**; repair to \"The mission, along with several related projects, was funded for decades.\"",
+          "**C) \"Each of the transmitted signals have required specialised detection equipment.\"**\n\n\"Each of\" takes a singular verb because each picks out one item at a time. The plural \"signals\" inside the of-phrase does not license \"have\"; the correct form is \"has required.\" The same rule governs the sibling quantifiers \"every one of,\" \"either of,\" and \"neither of,\" all of which stay singular. Strip the of-phrase and the skeleton reads \"Each … has required,\" which is the form the sentence should have taken.\n\n**Trap:** The plural noun after of is the loudest word, but \"each\" still owns the verb.\n\n\"Each of\" needs \"has required,\" so the sentence is **false**; write \"Each of the transmitted signals has required specialised detection equipment.\"",
+          "**D) \"By the time the anniversary arrives, engineers will have already lost contact with one probe.\"**\n\n\"By the time\" + future reference sets a deadline before which another action is complete, which is classic future perfect. \"Will have already lost\" places the loss earlier than the anniversary moment. Note the present simple \"arrives\" in the time clause, since English does not use will after \"by the time,\" \"when,\" or \"before\" in future contexts. The adverb \"already\" reinforces completion and sits correctly between the auxiliary and the participle.\n\nFuture perfect before a by-the-time future point fits cleanly, so the sentence is **true**.",
+          "**E) \"The readings, which were gathered over several decades, indicate a gradual power decline.\"**\n\nPlural subject \"readings\" agrees with both \"were gathered\" inside the relative clause and main-verb \"indicate.\" The non-restrictive which-clause is well formed and does not break number agreement. The commas around it are correctly paired, which is what a non-restrictive clause requires, and \"which\" is the right relative pronoun for that role. Removing the clause leaves \"The readings indicate a gradual power decline,\" a complete and correctly agreeing sentence.\n\nPlural readings with matching were/indicate keeps the grammar sound, so the line is **true**."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.16.10",
+        "id": "en-t-16-10",
+        "title": "Task 10",
+        "subsection": "t.16",
+        "context": "Consider this sentence from the Voyager passage: \"…meaning any single command-and-confirmation exchange with mission control necessarily spans nearly two full days.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "A complete round-trip exchange with mission control takes close to two entire days.",
+          "Sending and confirming a single command takes only a few brief minutes.",
+          "Any full exchange of a command and its confirmation requires almost two full days.",
+          "Mission control receives instant confirmation the moment any command is sent.",
+          "Communicating a command and receiving confirmation takes nearly two days combined."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) A complete round-trip exchange with mission control takes close to two entire days.**\n\nThe source line says a \"command-and-confirmation exchange … necessarily spans nearly two full days.\" \"Complete round-trip\" and \"close to two entire days\" keep the same exchange idea and the same near-two-day duration. Every substitution here is a synonym swap rather than a change of quantity: complete for full, close to for nearly, entire for full. A valid paraphrase may change the words freely so long as the measurable claim underneath stays fixed.\n\nThe paraphrase preserves both exchange and duration, so it is **true**.",
+          "**B) Sending and confirming a single command takes only a few brief minutes.**\n\n\"A few brief minutes\" collapses the passage's \"nearly two full days\" into a tiny interval. That is not a soft rewording — it contradicts the stated timescale outright. The first half of the statement is a faithful restatement of command-and-confirmation, which is what makes the swapped duration easy to miss. Always locate the number in a paraphrase item and compare it before judging the sentence as a whole.\n\n**Trap:** \"Single command\" can tempt a mini-second mental picture; the text's delay is light-travel distance, not laptop latency.\n\nMinutes replace nearly two days, so the paraphrase is **false**.",
+          "**C) Any full exchange of a command and its confirmation requires almost two full days.**\n\n\"Full exchange of a command and its confirmation\" restates command-and-confirmation, and \"almost two full days\" tracks \"nearly two full days.\" Scope and duration both survive. The quantifier \"any\" also matches the source's \"any single … exchange,\" so the breadth of the claim is unchanged. Neither the hedge nor the scope has been tightened or loosened in the rewrite.\n\nSame exchange-plus-duration claim in new clothes stays **true**.",
+          "**D) Mission control receives instant confirmation the moment any command is sent.**\n\n\"Instant confirmation the moment any command is sent\" erases the multi-hour one-way delay and the nearly two-day exchange. The passage's whole point is the opposite of instant feedback. The 22-hour one-way figure alone rules out instantaneity, before the round trip is even considered. Words like \"instant\" and \"the moment\" are absolute time markers, and absolutes rarely survive a passage built on enormous distances.\n\nInstantaneity contradicts the near-two-day exchange, so the paraphrase is **false**.",
+          "**E) Communicating a command and receiving confirmation takes nearly two days combined.**\n\n\"Communicating a command and receiving confirmation\" maps onto command-and-confirmation, and \"nearly two days combined\" keeps the same total span. No quantity or causality is flipped. The added word \"combined\" simply makes explicit what \"exchange\" already implies, namely that both legs of the journey are counted together. Making an implied element explicit is legitimate paraphrase, not a new claim.\n\nCombined near-two-day wording matches the original, so the paraphrase is **true**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.15.20",
+        "id": "en-g-15-20",
+        "title": "Task 20",
+        "subsection": "g.15",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Nowhere in the hiking leaflet does it mention the Monday trail closure.",
+          "Not only did the hostel refill the kettle, but it also left fresh towels.",
+          "Hardly had the blackout ended when the street lights flickered back on.",
+          "Under no circumstances the landlord will enter without written notice.",
+          "No sooner had the suitcases been labelled than the taxi pulled up."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Nowhere in the hiking leaflet does it mention the Monday trail closure.**\n\nNowhere in the hiking leaflet does it mention correctly inverts after a negative place adverbial. Does follows the nowhere phrase and precedes the subject. Nowhere / no place at the front always demand that auxiliary swap.\n\nNowhere… does + subject is already in question-style order, so the leaflet line is **true**.",
+          "**B) Not only did the hostel refill the kettle, but it also left fresh towels.**\n\nNot only did the hostel refill the kettle already invents did after the front. But it also left fresh towels keeps the second half parallel. Match verb forms across both halves of not only / but also — and both halves do.\n\nNot only did… but also… is inverted and parallel, so the hostel wording is **true**.",
+          "**C) Hardly had the blackout ended when the street lights flickered back on.**\n\nHardly had the blackout ended when the street lights flickered back on is standard. Had before the subject and when afterward are both required and both present. Do not borrow than from the no-sooner pair.\n\nHardly had… when… is correctly linked (not than), so the blackout line is **true**.",
+          "**D) Under no circumstances the landlord will enter without written notice.**\n\nUnder no circumstances opens the landlord notice, so will should come next. The landlord will still keeps subject before the modal. Final checklist on this opener: modal, then subject — \"Under no circumstances will the landlord enter without written notice.\"\n\nTrap: legal-sounding under no circumstances… will enter can still fail if the subject sits before will.\n\nUnder no circumstances needs will before the landlord, so this is **false** — \"Under no circumstances will the landlord enter without written notice.\"",
+          "**E) No sooner had the suitcases been labelled than the taxi pulled up.**\n\nNo sooner had the suitcases been labelled than the taxi pulled up closes the set cleanly. Passive past perfect still inverts had before the subject. Than after no sooner seals the correlative.\n\nNo sooner had… than… is complete, including passive past perfect, so this line is **true**."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.120",
+      "id": "math-1-120",
+      "title": "Exam-style tasks - 12",
+      "chapter": 1,
+      "subsection": "1.5",
+      "context": "A training center has 180 participants. Analytics has 105, budgeting has 92, and compliance has 80. The pairwise overlaps are 48 for analytics and budgeting, 41 for analytics and compliance, and 36 for budgeting and compliance; 20 participants take all three. Every participant is counted once in the center total, including those in none.",
+      "statements": [
+        "Exactly 8 participants take none of the three courses.",
+        "Exactly 56 take only analytics.",
+        "Exactly 65 take exactly two courses.",
+        "Exactly 65 take at least two courses.",
+        "Exactly 23 take only compliance."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nUse the three-set inclusion–exclusion formula for the union of analytics ($A$), budgeting ($B$), and compliance ($C$):\n\n$$\n|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\n$$\n\nSubstitute the given sizes:\n\n$$\n|A|+|B|+|C|=105+92+80=277\n$$\n\n$$\n|A\\cap B|+|A\\cap C|+|B\\cap C|=48+41+36=125\n$$\n\n$$\n|A\\cup B\\cup C|=277-125+20=172\n$$\n\nEveryone not in the union is outside all three courses:\n\n$$\n180-172=8\n$$\n\nSo exactly $8$ participants take none of the three courses.\n\nSo the statement is True.",
+        "**B.** → False\n\n“Only analytics” means in $A$ but not in $B$ and not in $C$:\n\n$$\n|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|\n$$\n\n$$\n105-48-41+20=36\n$$\n\nThe claim asserts $56$, which is not equal to $36$.\n\nSo the statement is False.",
+        "**C.** → True\n\nExactly two courses means the three pairwise-only regions (each pair minus the triple):\n\n$$\n|A\\cap B|-|A\\cap B\\cap C|=48-20=28\n$$\n\n$$\n|A\\cap C|-|A\\cap B\\cap C|=41-20=21\n$$\n\n$$\n|B\\cap C|-|A\\cap B\\cap C|=36-20=16\n$$\n\nAdd them:\n\n$$\n28+21+16=65\n$$\n\nSo exactly $65$ participants take exactly two courses.\n\nSo the statement is True.",
+        "**D.** → False\n\n“At least two courses” counts everyone in exactly two plus everyone in all three:\n\n$$\n65+20=85\n$$\n\n(using the exactly-two count from letter C). The claim asserts $65$, which is only the exactly-two layer and omits the $20$ who take all three.\n\nSo the statement is False.",
+        "**E.** → True\n\n“Only compliance” is in $C$ but not in $A$ and not in $B$:\n\n$$\n|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\n$$\n\n$$\n80-41-36+20=23\n$$\n\nCompute step by step: $80-41=39$, then $39-36=3$, then $3+20=23$. That matches the claim exactly.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Topics: 1.2.\n\nShared solution:\n1. Let the course sets be $A$, $B$, and $C$.\n2. Use $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n3. Substitute $105+92+80-48-41-36+20$.\n4. The union contains $172$ participants.\n5. Therefore the none region is $180-172=8$.\n6. Analytics only is $105-48-41+20=36$.\n7. Budgeting only is $92-48-36+20=28$.\n8. Compliance only is $80-41-36+20=23$.\n9. Analytics-budgeting only is $48-20=28$.\n10. Analytics-compliance only is $41-20=21$.\n11. Budgeting-compliance only is $36-20=16$.\n12. Exactly two courses total $28+21+16=65$.\n13. At least two courses total $65+20=85$."
+    },
+    {
+      "case_id": "MATH 2.142",
+      "id": "math-2-142",
+      "title": "Exam-style tasks - 6",
+      "chapter": 2,
+      "subsection": "2.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $abc\\neq0$ and $ab+bc+ca=0$, then $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
+        "For $s>0$, it holds that $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
+        "At $v=0$, $|v-1|=1<2$ and $0\\in(-1,3)$; at $v=4$, $|4-1|=3\\nless 2$.",
+        "If $s+t=u$, then $s^3+t^3+3stu=u^3$.",
+        "For $z>1$, it holds that $\\dfrac{z+1}{z-1}>1$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite the sum of reciprocals over the common denominator $abc$, then use $ab+bc+ca=0$.\n\nCombine:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}\n$$\n\nThe numerator is exactly $ab+bc+ca$, which vanishes by hypothesis, and $abc\\ne0$.\n\nHence the sum of reciprocals is $0$.\n\n$$\nabc\\neq0\n$$\n\n$$\nab+bc+ca=0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b+\\dfrac1c=0\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nRewrite the radicand as a square, then compare with the claimed right-hand side.\n\nFor $s>0$:\n\n$$\ns+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2\n$$\n\n$$\n\\sqrt{s+\\dfrac{1}{s}-2}=\\left|\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right|\n$$\n\nThe claim writes $\\sqrt{s}+\\dfrac{1}{\\sqrt{s}}$, which is strictly larger whenever $s\\neq1$. At $s=4$:\n\n$$\n\\left|2-\\tfrac12\\right|=\\tfrac32\\neq2+\\tfrac12\n$$\n\n$$\n\\tfrac52\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\nA strict absolute-value inequality $|v-c|<r$ describes the open interval of radius $r$ about $c$.\n\n$$\nv\n$$\n\n$$\nv=0\n$$\n\n$$\n|v-1|\n$$\n\n$$\n|v-1|=1<2\n$$\n\n$$\n0\\in(-1,3)\n$$\n\n$$\nv\n$$\n\n$$\nv=4\n$$\n\n$$\n|4-1|\n$$\n\n$$\n|4-1|=3\\nless 2\n$$\n\nUnfold about the center $1$:\n\n$$\n|v-1|<2\\Longleftrightarrow-2<v-1<2\n$$\n\nAdd $1$ through the chain:\n\n$$\n-1<v<3\n$$\n\nThat matches the claimed open interval exactly. Numeric check: at $v=0$, $|0-1|=1<2$; at $v=4$, $|4-1|=3\\nless2$.\n\nConcrete check for the rewritten claim. Solution set is $(-1,3)$.\n\nSo the statement is True.",
+        "**D.** → True\n\nExpand $(s+t)^{3}$ and identify the sum with the third letter $u$.\n\nCube the sum:\n\n$$\n(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}\n$$\n\n$$\n(s+t)^{3}=s^{3}+t^{3}+3st(s+t)\n$$\n\nReplace $s+t$ by $u$:\n\n$$\nu^{3}=s^{3}+t^{3}+3stu\n$$\n\nRearrange:\n\n$$\ns^{3}+t^{3}+3stu=u^{3}.\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nCompare the fraction with $1$ by subtracting on the domain $z>1$.\n\n$$\nz>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}\n$$\n\n$$\n\\dfrac{2}{z-1}\n$$\n\nFor $z>1$ the denominator is positive, so $\\dfrac{2}{z-1}>0$, hence $\\dfrac{z+1}{z-1}>1$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": ""
+    },
+    {
+      "case_id": "MATH 11.132",
+      "id": "math-11-132",
+      "title": "Exam-style tasks - 9",
+      "chapter": 3,
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An endowment rose from $50,000$ to $63,500$ in six years under continuous compounding. Its force of interest was 3.98\\%.",
+        "An acquisition earnout delivers $25,000$ after two years and $40,000$ after five years. With capital priced at $8.2\\%$, the buyer books a liability of USD 48,746.96.",
+        "A cooperative saves $2,500$ after its first harvest and lets deposits grow $8\\%$ annually while the account yields $4.5\\%$. Just after the seventh deposit, the cooperative has USD 25,211.60.",
+        "A film cooperative invests $1,200$ at each quarter-end for 20 quarters. Its quarterly yield is $1.1\\%$, giving USD 26,876.55 at quarter 20.",
+        "A farm's $360,000$ mortgage uses 288 payments and a $0.46\\%$ monthly rate. Immediately after installment 96, its balance is USD 287,526.80."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nUse both observed values to solve for the force of interest in the exponential model.\n\n$$63500.00=50000.00e^{r(6)}$$\n\n$$\ne^{6r} = \\frac{63500.00}{50000.00} = 1.27000000\n$$\n\n$$6r=\\ln(1.27000000)$$\n\n$$\nr = \\frac{\\ln(1.27000000)}{6} = 0.03983615\n$$\n\n$$100r=3.9836\\%$$\n\nThe computed continuous annual rate is 3.98\\%, matching the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nEach dated cash flow requires its own discount exponent before the values can be added.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{25000.00}{(1+0.0820)^2}+\\frac{40000.00}{(1+0.0820)^5}$$\n\n$$\nPV_2 = \\frac{25000.00}{(1+0.0820)^2} = 21354.307249\n$$\n\n$$\nPV_5 = \\frac{40000.00}{(1+0.0820)^5} = 26972.654379\n$$\n\n$$PV=21354.307249+26972.654379$$\n\n$$\n21354.307249 + 26972.654379 = 48326.961628\n$$\n\n$$PV=48326.961628$$\n\nThe computed present value is USD 48,326.96, not USD 48,746.96.\n\nSo the statement is False.",
+        "**C.** → True\n\nAt the final deposit date, each growing contribution has earned a different number of interest periods.\n\n$$\nFV = \\sum_{k=0}^{6}2500.00(1+0.0800)^k(1+0.0450)^{6-k}\n$$\n\n$$\nFV = 2500.00(1+0.0450)^{6}\\sum_{k=0}^{6}\\left(\\frac{1+0.0800}{1+0.0450}\\right)^k\n$$\n\n$$FV=2500.00(1+0.0450)^{6}\\frac{1-1.03349282^7}{1-1.03349282}$$\n\n$$FV=25211.602737$$\n\nThe computed accumulated balance is USD 25,211.60, matching the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nAn ordinary annuity accumulates every end-of-period payment to the date of the last payment.\n\n$$s_{\\overline{20}|}=\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=1200.00s_{\\overline{20}|}$$\n\n$$FV=1200.00\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=26681.546485$$\n\nThe computed annuity future value is USD 26,681.55, not USD 26,876.55.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe mortgage principal equals the present value of its level month-end payments.\n\n$$P=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PMT=360000.00\\frac{0.004600}{1-(1+0.004600)^{-288}}$$\n\n$$PMT=2258.176536$$\n\n$$\nn_{\\mathrm{remaining}} = 288-96\n$$\n\n$$\n288 - 96 = 192\n$$\n\n$$B_96=PMT\\frac{1-(1+i)^{-192}}{i}$$\n\n$$B_96=287526.799220$$\n\nThe computed balance after payment 96 is USD 287,526.80, matching the claim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Each letter is an independent financial claim. Name the matching formula, substitute the stem numbers, and compare with the stated figure.\n\nTopics: 3.2, 3.3, 3.4, 3.5, 3.6\n\nA. solve a continuous rate from two endowment balances.\nB. measure the present liability of an acquisition earnout.\nC. accumulate harvest deposits growing faster than interest.\nD. accumulate quarterly film-cooperative contributions.\nE. value the remaining farm-loan installments."
+    },
+    {
+      "case_id": "MATH 4.215",
+      "id": "math-4-215",
+      "title": "Exam-style tasks - 22",
+      "chapter": 4,
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. A classmate concludes that the son is now $18$ years old.",
+        "A $24$ cm by $16$ cm photograph is mounted with a uniform frame so that the outer area is twice the photograph. The frame is then $4$ cm wide.",
+        "A runner covers $9$ km at $6$ km/h and then $6$ km at $9$ km/h. The whole run therefore takes exactly $2$ hours.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A purse holds only $2$ EUR coins and $5$ EUR coins. There are $16$ coins in all, worth $53$ EUR. Then there are $7$ coins of $5$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet the son's present age be $s$ years. The father is then $s + 28$. In eight years:\n\n$$s + 28 + 8 = 2(s + 8)$$\n\n$$s + 36 = 2s + 16$$\n\n$$s = 20$$\n\nThe son is $20$, not $18$. Check: in eight years they are $28$ and $56$, and $56 = 2 \\cdot 28$.\n\nSubstituting the claimed figure into the governing equation fails to reproduce the data given in the story.\n\nIf the claimed figure is forced back into the original relation, the two sides of the equation no longer match the data in the story, which confirms that the claim fails.\n\nSo the statement is False.",
+        "**B.** → True\n\nPhotograph area $24 \\cdot 16 = 384$, so the outer area is $768$. With frame width $x$ cm:\n\n$$(24 + 2x)(16 + 2x) = 768$$\n\n$$4x^{2} + 80x + 384 = 768$$\n\n$$x^{2} + 20x - 96 = 0$$\n\n$$\\Delta = 400 + 384$$\n\n$$\n400 + 384 = 784 = 28^{2}\n$$\n\n$$\nx = \\dfrac{-20 + 28}{2} = 4\n$$\n\n(positive root). Check: outer sides $32$ by $24$ give area $768 = 2 \\cdot 384$.\n\nSubstituting the recovered value back into the governing equation confirms that the story data are reproduced exactly.\n\nVerify by substituting the recovered value into the original relation from the story: the left-hand side and the right-hand side match, so the claim survives.\n\nSo the statement is True.",
+        "**C.** → False\n\nSplit the run into two legs:\n\n$$\nt = \\frac{9}{6} + \\frac{6}{9} = 1.5 + \\frac{2}{3} = \\frac{13}{6}\n$$\n\nhours, that is $2$ hours and $10$ minutes, not exactly $2$ hours.\n\nExpress the travel time first as an exact fraction of an hour, then convert the fractional part into minutes before counting back from the arrival clock.\n\nSubstituting the claimed figure into the governing equation fails to reproduce the data given in the story.\n\nIf the claimed figure is forced back into the original relation, the two sides of the equation no longer match the data in the story, which confirms that the claim fails.\n\nSo the statement is False.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\frac{1}{3}L$$\n\n$$\n\\log\\frac{1}{x^{3}} = \\log\\bigl(x^{-3}\\bigr) = -3L\n$$\n\n$$\\log\\sqrt{x} = \\frac{1}{2}L$$\n\n$$\n\\log 10 = 1\n$$\n\nThe equation becomes\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\n\\frac{1}{3} - 3 - \\frac{1}{2} = \\frac{2}{6} - \\frac{18}{6} - \\frac{3}{6} = -\\frac{19}{6}\n$$\n\nso\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\nAdd $\\dfrac{19}{6}L$ to both sides:\n\n$$\n\\frac{11}{3} = \\frac{L}{2} + \\frac{19}{6}L = \\frac{3L}{6} + \\frac{19L}{6} = \\frac{22L}{6} = \\frac{11L}{3}\n$$\n\n$$L = 1$$\n\n$$\nx = 10^{1} = 10\n$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\nLet $x$ be the number of $5$ EUR coins. Then there are $16 - x$ coins of $2$ EUR:\n\n$$5x + 2(16 - x) = 53$$\n\n$$3x + 32 = 53$$\n\n$$3x = 53 - 32$$\n\n$$x = 7$$\n\nCheck:\n\n$$\n7 \\cdot 5 + 9 \\cdot 2 = 35 + 18\n$$\n\n$$\n35 + 18 = 53\n$$\n\n.\n\nSubstituting the recovered value back into the governing equation confirms that the story data are reproduced exactly.\n\nVerify by substituting the recovered value into the original relation from the story: the left-hand side and the right-hand side match, so the claim survives.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Independent claims: an age relation, a framed photograph, a two-speed run, a composite logarithm, and a two-coin purse.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter."
+    },
+    {
+      "case_id": "MATH 5.MOCK.WORK",
+      "id": "MATH 5.MOCK.WORK",
+      "title": "Two-person packing rates with an interrupted shift",
+      "chapter": 5,
+      "subsection": "5.5",
+      "context": "Two workshop owners, Mira and Leo, are packing gift boxes for a client order. If they had worked together the entire time, they would have finished the order in $8$ hours. After $4$ hours of joint work, Mira had to leave. Leo then needed another $6$ hours alone to finish the order.",
+      "statements": [
+        "If they had completed the entire order together, Mira would have completed exactly one third of the order.",
+        "If the order were twice as large as the original one, Leo would need $12$ hours to finish it after Mira left at the same moment.",
+        "If Mira worked alone the entire time, it would take her $24$ hours to finish the order.",
+        "If the order was for $120$ boxes, then the difference between the times Mira and Leo need to pack one box is more than $7$ minutes.",
+        "If the roles were reversed — Leo leaves after $4$ hours and Mira finishes alone — then Mira would need more than $14$ hours to finish the order."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe joint completion time is $8$ hours, so the combined work rate is\n\n$$\n\\dfrac{1}{8}\\quad\\text{(orders per hour)}\n$$\n\nIn the first $4$ hours they finish\n\n$$\n4\\cdot\\dfrac{1}{8}=\\dfrac{1}{2}\n$$\n\nof the order. Leo then finishes the remaining half alone in $6$ hours, so Leo’s rate is\n\n$$\n\\dfrac{1/2}{6}=\\dfrac{1}{12}\n$$\n\nMira’s rate is the difference of the combined rate and Leo’s rate:\n\n$$\n\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{3-2}{24}=\\dfrac{1}{24}\n$$\n\nOver a full joint run of $8$ hours Mira therefore completes\n\n$$\n\\dfrac{1}{24}\\cdot 8=\\dfrac{1}{3}\n$$\n\nof the order — exactly one third.\n\nSo the statement is True.",
+        "**B.** → False\n\nMeasure work in units of the enlarged (doubled) order. Leo’s original rate $\\dfrac{1}{12}$ of the old order per hour is only\n\n$$\n\\dfrac{1}{24}\n$$\n\nof the doubled order per hour. After the same $4$ joint hours they have completed $\\dfrac{1}{2}$ of the original order, which is only $\\dfrac{1}{4}$ of the doubled order. So $\\dfrac{3}{4}$ of the doubled order remains for Leo:\n\n$$\nt=\\dfrac{3/4}{1/24}=18\n$$\n\nhours. The claim says $12$ hours; $18\\ne 12$.\n\nSo the statement is False.",
+        "**C.** → True\n\nFrom A, Mira’s rate is $\\dfrac{1}{24}$ of the order per hour. Working alone she therefore needs\n\n$$\nT=\\dfrac{1}{1/24}=24\n$$\n\nhours to finish the whole order. That is exactly the claimed figure.\n\nSo the statement is True.",
+        "**D.** → False\n\nWith $120$ boxes, time per box is total solo time divided by $120$. Mira needs $24$ hours for the order, Leo needs $12$ hours (rate $\\dfrac{1}{12}$):\n\n$$\n\\text{Mira: }\\dfrac{24}{120}=0.2\\text{ h}=12\\text{ min per box}\n$$\n\n$$\n\\text{Leo: }\\dfrac{12}{120}=0.1\\text{ h}=6\\text{ min per box}\n$$\n\n$$\n12-6=6\\text{ min}\n$$\n\nThe claim says the difference is more than $7$ minutes. But $6\\ngtr 7$.\n\nSo the statement is False.",
+        "**E.** → False\n\nAfter $4$ joint hours half the order is done, so half remains. If Leo leaves and Mira finishes alone at rate $\\dfrac{1}{24}$,\n\n$$\nt=\\dfrac{1/2}{1/24}=12\n$$\n\nhours. The claim says more than $14$ hours. But $12\\ngtr 14$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "From the joint time and Leo's finishing stretch recover both rates: Mira $\\frac{1}{24}$, Leo $\\frac{1}{12}$. Every claim is then a direct comparison against those rates."
+    },
+    {
+      "case_id": "MATH 6.47",
+      "id": "math-6-47",
+      "title": "Compound & Special Inequalities — 10",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The solution set of the inequality $\\sqrt{x + 6} < \\sqrt{2x + 1} - 1$ is $x > 8 - 2\\sqrt{13}$.",
+        "The solution set of the inequality $|x^{2} - 2x - 3| > 4$ is $x < 1 - 2\\sqrt{2}$ or $x > 1 + 2\\sqrt{2}$.",
+        "The inequality $-2 \\le x^{2} - 4x + 1 \\le 6$ has solution set $[-1, 1] \\cup [3, 5]$.",
+        "The solution set of the inequality $\\sqrt{x^{2} - 5x + 4} > x - 2$ is $x < 1$.",
+        "The solution set of the inequality $\\bigl|\\, |x - 3| - 2\\bigr| < 1$ is $(0, 2) \\cup (4, 6)$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 6}<\\sqrt{2 x + 1} - 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 6\\ge 0\n$$\n\n$$\nx\\in [-6, \\infty)\n$$\n\n$$\n2 x + 1\\ge 0\n$$\n\n$$\nx\\in [- \\frac{1}{2}, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 6<2 x - 2 \\sqrt{2 x + 1} + 2\n$$\n\n$$\n- x + 2 \\sqrt{2 x + 1} + 4<0\n$$\n\n$$\nx=2 \\sqrt{13} + 8\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x + 2 \\sqrt{2 x + 1} + 4$ |\n| --- | --- |\n| $(-\\infty,2 \\sqrt{13} + 8)$ | $+$ |\n| $(2 \\sqrt{13} + 8,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(2 \\sqrt{13} + 8, \\infty)\n$$\n\nwhich does not match the claimed set $x > 8 - 2\\sqrt{13}$.\n\nSo the statement is False.",
+        "**B.** → True\n\nStart from the radical inequality.\n\n$$\nx<1 - 2 \\sqrt{2}\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n2\\ge 0\n$$\n\n$$\nx\\in \\mathbb{R}\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx^{2}<9 - 4 \\sqrt{2}\n$$\n\n$$\nx^{2} - 9 + 4 \\sqrt{2}<0\n$$\n\n$$\nx=- \\sqrt{9 - 4 \\sqrt{2}}\n$$\n\n$$\nx=\\sqrt{9 - 4 \\sqrt{2}}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 9 + 4 \\sqrt{2}$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{9 - 4 \\sqrt{2}})$ | $+$ |\n| $(- \\sqrt{9 - 4 \\sqrt{2}},\\sqrt{9 - 4 \\sqrt{2}})$ | $-$ |\n| $(\\sqrt{9 - 4 \\sqrt{2}},\\infty)$ | $+$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(-\\infty, 1 - 2 \\sqrt{2})\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**C.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-2\\le (x^{2} - 4 x) + 1\\le 6\n$$\n\n**Left piece.**\n\n$$\n-2\\le (x^{2} - 4 x) + 1\n$$\n\n$$\nx^{2} - 4 x + 3\\ge 0\n$$\n\n$$\n(x - 3) (x - 1)\\ge 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 4 x) + 1\\le 6\n$$\n\n$$\nx^{2} - 4 x - 5\\le 0\n$$\n\n$$\n(x - 5) (x + 1)\\le 0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x - 5$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[-1, 5]\n$$\n\nIntersect both pieces.\n\n$$\n[-1, 1] \\cup [3, 5]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**D.** → False\n\nStart from the radical inequality.\n\n$$\n\\sqrt{(x^{2} - 5 x) + 4}>x - 2\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx^{2} - 5 x + 4\\ge 0\n$$\n\n$$\nx\\in (-\\infty, 1] \\cup [4, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nA square root is always $\\ge 0$, so the inequality holds automatically on the part of the domain where the right side is negative.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx^{2} - 5 x + 4>x^{2} - 4 x + 4\n$$\n\n$$\n- x>0\n$$\n\n$$\nx=0\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(-\\infty, 1]\n$$\n\nwhich does not match the claimed set $x < 1$.\n\nSo the statement is False.",
+        "**E.** → True\n\nStart from the absolute-value inequality.\n\n$$\n|{|{x - 3}| - 2}|<1\n$$\n\nAn absolute value below a nonnegative constant unfolds to a compound inequality.\n\n$$\n-1<|{x - 3}| - 2<1\n$$\n\nSolve the left half.\n\n$$\n|{x - 3}| - 2>-1\n$$\n\n$$\nx\\in (-\\infty, 2) \\cup (4, \\infty)\n$$\n\nSolve the right half.\n\n$$\n|{x - 3}| - 2<1\n$$\n\n$$\nx\\in (0, 6)\n$$\n\nIntersect both halves.\n\n$$\n(0, 2) \\cup (4, 6)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Radical inequality (difference of two square roots, double squaring); Absolute value inequality (quadratic inside); Compound (double) quadratic inequality."
+    },
+    {
+      "case_id": "MATH 7.E03",
+      "id": "math-7-e3",
+      "title": "Ticket desk — rebuilt revenue",
+      "chapter": 7,
+      "subsection": "7.5",
+      "context": "A club sells tickets at price $p$ euros. The table records total revenue $R$ (in euros) observed at five prices. No formula is printed on the desk sheet. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Among the listed prices, the unique maximum occurs at the midpoint of the two prices where revenue equals $15$.",
+        "Rebuilding a quadratic from the constant second difference recovers leading coefficient $-1$.",
+        "Revenue increases at every listed step from $p=1$ to $p=5$.",
+        "The interpolating parabola has roots $0$ and $8$, so its axis is $p=4$.",
+        "Raising the price from $4$ to $5$ decreases the listed revenue by $1$ euro."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRead the five revenues in price order and note where the value $15$ appears.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(3)=15$$\n\n$$R(5)=15$$\n\nThose two prices sit equally far from $p=4$, and $R(4)=16$ is the unique listed maximum. The midpoint of the two $15$s is therefore the listed peak.\n\n$$x=\\frac{3+5}{2}$$\n\n$$x=\\frac{8}{2}$$\n\n$$x=4$$\n\nA downward interpolating parabola is symmetric about its axis, so equal revenues $15$ must sit equally far from the listed peak.\n\nThe unique maximum sits at that midpoint.\n\nSo the statement is True.",
+        "**B.** → True\n\nNeighbouring gaps of the revenue row are not constant; their own gaps are. Form the two difference layers from the listed heights $7,12,15,16,15$.\n\n$$\\Delta_{1}:\\ 5,\\ 3,\\ 1,\\ -1$$\n\n$$\\Delta_{2}:\\ -2,\\ -2,\\ -2$$\n\nFor unit spacing the second-difference constant equals $2a$, so the leading coefficient of the interpolating parabola is $-1$.\n\n$$2a=-2$$\n\n$$a=-1$$\n\nThe rebuilt leading coefficient is $-1$.\n\nSo the statement is True.",
+        "**C.** → False\n\nAn always-increasing sequence would have every first difference strictly positive. The last listed gap is not.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(5)-R(4)=15-16$$\n\n$$R(5)-R(4)=-1$$\n\n$$-1<0$$\n\nRevenue rises through $p=4$ and then falls on the last listed step. A single negative gap already kills a claim of increase at every step.\n\nThe first-difference row $5,3,1,-1$ already changes sign, which is the discrete form of a peak at $p=4$.\n\nRevenue falls on the last listed step.\n\nSo the statement is False.",
+        "**D.** → True\n\nSecond differences of the revenue row are constantly $-2$, so $2a=-2$ and $a=-1$. Matching $R(1)=7$ and $R(2)=12$ then fixes the remaining coefficients.\n\n$$R(p)=-p^{2}+8p$$\n\n$$R(p)=p(8-p)$$\n\nThe roots of that interpolant are $0$ and $8$, so the axis is their midpoint $p=4$, which is also the listed peak.\n\n$$p=\\frac{0+8}{2}$$\n\n$$p=\\frac{8}{2}$$\n\n$$p=4$$\n\nVieta's midpoint of the roots $0$ and $8$ is the same axis formula $p=-b/(2a)$ applied to $-p^{2}+8p$.\n\nThe interpolating parabola has those roots and that axis.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe last gap of the first-difference row is exactly the change from price $4$ to price $5$. Those two heights are listed as $16$ and $15$.\n\n$$R(4)=16$$\n\n$$R(5)=15$$\n\n$$h=15-16$$\n\n$$h=-1$$\n\nListed revenue therefore falls by $1$ euro on that step. The same drop is visible as the last first-difference of the table.\n\nOn a downward parabola past the axis, each extra unit of price lowers revenue; here that drop is the listed $1$ euro.\n\nRaising the price from $4$ to $5$ decreases the listed revenue by $1$ euro.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "The desk sheet prints only five prices and the corresponding revenues, so treat the table as a list of pairs and, behind the scenes, rebuild the hidden quadratic $R(p)=p(8-p)$ that generated them.\n\n$$(1,7),\\;(2,12),\\;(3,15),\\;(4,16),\\;(5,15)$$\n\nNeighbouring gaps of the revenue row are not constant, so the model is not a line; they decrease by $2$ each step, the second-difference signature of a downward parabola.\n\n$$\\mathrm{fir}:\\ 5,\\ 3,\\ 1,\\ -1\\qquad \\mathrm{sec}:\\ -2,\\ -2,\\ -2$$\n\nFor unit spacing that second-difference constant equals $2a$, hence $a=-1$. Matching $R(1)=7$ recovers the factored revenue rule.\n\n$$\nR(p) = p(8-p) = -p^{2}+8p\n$$\n\nA downward parabola has its largest listed value at the vertex, which sits at the midpoint of the roots $0$ and $8$.\n\n$$\n\\mathrm{ver} = \\left(4,16\\right),\\qquad R(3) = R(5) = 15,\\qquad R(2) = 12\n$$\n\nFrom $p=4$ to $p=5$ the listed revenue drops from $16$ to $15$. Revenue therefore does not increase at every step from $1$ to $5$.",
+      "tables_markdown": "| $p$ | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- |\n| $R$ | 7 | 12 | 15 | 16 | 15 |"
+    },
+    {
+      "case_id": "MATH 8.81",
+      "id": "math-8-81",
+      "title": "Drag and Sustained Power on a Velodrome",
+      "chapter": 8,
+      "subsection": "8",
+      "context": "Aerodynamic drag on a track cyclist follows $F(v)=A v^{r}$ newtons for speed $v>0$ metres per second, with both constants unknown. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Absorbed power grows faster than speed.",
+        "If the rider doubles speed, absorbed power doubles.",
+        "An extra metre per second of speed adds more watts at $12$ m/s than it does at $8$ m/s.",
+        "At $8$ m/s the rider is still under $300$ W.",
+        "At $12$ m/s the rider is still under $800$ W."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe overview recovered\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nPower outruns speed when the leftover exponent exceeds $1$.\n\n$$3>1$$\n\nA proportional law would have carried exponent $1$. Drag itself only has exponent $2$; multiplying by speed raises that to $3$.\n\nThe leftover exponent is $3$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe overview recovered power exponent $3$. Doubling speed multiplies absorbed power by\n\n$$2^{3}=8$$\n\nThe claim is a factor of $2$. Drag itself only quadrupled, because its exponent was $2$; multiplying by the doubled speed turns that $4$ into $8$.\n\nPower rises eightfold, not twofold.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe overview recovered\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\n Differentiating gives\n\n$$P'(v)=\\frac{3}{2}v^{2}$$\n\nAt $8$ m/s:\n\n$$P'(8)=\\frac{3}{2}\\cdot 64$$\n\n$$P'(8)=96$$\n\nAt $12$ m/s:\n\n$$P'(12)=\\frac{3}{2}\\cdot 144$$\n\n$$P'(12)=216$$\n\nThe claim needs $P'(12)>P'(8)$. We have $216>96$.\n\nSo the statement is True.",
+        "**D.** → True\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nAt $8$ m/s:\n\n$$P(8)=\\frac{1}{2}\\cdot 512$$\n\n$$P(8)=256$$\n\nThe claim is that this sits under $300$. Compare with the claim:\n\n$$256<300.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nAt $12$ m/s:\n\n$$P(12)=\\frac{1}{2}\\cdot 1728$$\n\n$$P(12)=864$$\n\nThe claim is that this sits under $800$. Compare with the claim:\n\n$$864>800.$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Aerodynamic drag on a track cyclist follows $F(v)=Av^{r}$ newtons for speed $v>0$. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by $40$ N. Absorbed power is $P=Fv$ watts.\n\n**Part 1: Building the model.**\n\nLet $v$ = speed in metres per second, $F$ = drag in newtons, and $P$ = absorbed power in watts. The doubling record is a ratio, so the coefficient cancels and isolates the exponent. The logged increase is a difference of two levels, which then pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2. Translate: the logged increase.**\n\n$$A\\bigl(12^{r}-8^{r}\\bigr)=40 \\tag{2}$$\n\n**3. Translate: power.**\n\n$$P(v)=Av^{r+1}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nThen $(2)$ becomes a difference of squares:\n\n$$A(144-64)=40$$\n\n$$80A=40$$\n\n$$A=\\frac{1}{2}$$\n\nThe recovered laws are $F(v)=\\frac{1}{2}v^{2}$ and $P(v)=\\frac{1}{2}v^{3}$.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$ | $P(v)=\\frac{1}{2}v^{3}$"
+    },
+    {
+      "case_id": "MATH 9.37",
+      "id": "math-9-37",
+      "title": "Bicycle Speed: Another Cubic and a Table",
+      "chapter": 9,
+      "subsection": "9",
+      "context": "A rider's speed in m/s is $$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$ A second rider's distances from the start are tabulated. The second rider finishes $90$ s after the start at $900$ m. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The first rider is decelerating at $t=60$.",
+        "The second rider's average speed is $36$ km/h.",
+        "The highest interval speed of the second rider is on $[0,15]$.",
+        "The first rider's acceleration $a(t)$ is a quadratic polynomial.",
+        "The second rider's interval speeds have only one local maximum."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDecelerating means negative acceleration, so differentiate the cubic speed and evaluate at $t=60$.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$a(t)=v'(t)$$\n\n$$v'(t)=0.00003t^{2}-0.006t+0.24$$\n\n$$a(60)=0.00003\\cdot 3600-0.006\\cdot 60+0.24$$\n\n$$0.00003\\cdot 3600-0.006\\cdot 60+0.24$$\n\n$$a(60)=-0.012$$\n\nThe acceleration is $-0.012$, hence negative. The first rider is slowing down at $t=60$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe second rider covers $900$ m in $90$ s. Average speed is distance over time, then convert metres per second into kilometres per hour by the factor $3.6$.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$\\frac{900}{90}$$\n\n$$v(t)=10$$\n\n$$10\\cdot 3.6$$\n\n$$v(t)=36$$\n\nTen metres per second is exactly $36$ km/h. The claimed whole-run average is that converted figure.\n\nSo the statement is True.",
+        "**C.** → False\n\nInterval speed is the jump in distance over each $15$ s block of the table.\n\n$$90,\\;120,\\;150,\\;180,\\;210,\\;150$$\n\nDivide by $15$:\n\n$$6,\\;8,\\;10,\\;12,\\;14,\\;10$$\n\nThe first interval $[0,15]$ has the smallest of these, $6$ m/s. The peak $14$ m/s sits on $[60,75]$. The highest interval speed is not on $[0,15]$.\n\nSo the statement is False.",
+        "**D.** → True\n\nAcceleration is the derivative of speed. Differentiating a cubic produces a quadratic.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$a(t)=0.00003t^{2}-0.006t+0.24$$\n\nThe $t^{2}$ coefficient $0.00003$ is nonzero, so $a(t)$ is genuinely quadratic rather than linear or constant. The first rider's acceleration is a quadratic polynomial in $t$.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe six interval speeds of the second rider, already computed from neighbouring distances, form the sequence\n\n$$6,\\;8,\\;10,\\;12,\\;14,\\;10$$\n\nReading left to right, the list climbs to $14$ and then drops once to $10$. That single peak sits at the fifth interval, larger than both neighbours $12$ and $10$. There is only one local maximum.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
+      "tables_markdown": "| Time $t$ in seconds | $0$ | $15$ | $30$ | $45$ | $60$ | $75$ | $90$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $90$ | $210$ | $360$ | $540$ | $750$ | $900$ |"
+    },
+    {
+      "case_id": "MATH 10.MOCK.EXP",
+      "id": "MATH 10.MOCK.EXP",
+      "title": "Population growth, force of interest, and GDP per capita",
+      "chapter": 10,
+      "subsection": "10.3",
+      "context": "Let $P(t)$ denote the population of a country (number of inhabitants) after $t$ years. The current population is $P(0)=15{,}000{,}000$, and it is assumed to grow by $2.4\\%$ per year.",
+      "statements": [
+        "It holds that $P(t)=15\\cdot 1.024^{t}$.",
+        "If a neighbouring country's population is $9\\cdot 10^{6}e^{0.028t}$, then that country's effective annual growth rate is smaller than $2.8\\%$.",
+        "After $25$ years the home population will have grown by more than $85\\%$.",
+        "The finance ministry forecasts that real GDP grows by $5.2\\%$ per year. Then real GDP per capita grows by more than $3\\%$ per year.",
+        "Assume that after $8$ years the home growth rate falls to $1.5\\%$ per year. Then a population of $22$ million is first attained at some $t>20$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe function $P(t)$ counts inhabitants, and the stem fixes\n\n$$\nP(0)=15{,}000{,}000\n$$\n\nWith discrete annual growth $2.4\\%$ the correct model is\n\n$$\nP(t)=15{,}000{,}000\\cdot 1.024^{t}\n$$\n\n(equivalently $15\\cdot 10^{6}\\cdot 1.024^{t}$). The claimed formula $P(t)=15\\cdot 1.024^{t}$ treats the initial level as $15$ instead of fifteen million, understating every future population by a factor of one million.\n\nSo the statement is False.",
+        "**B.** → False\n\nA continuous model $9\\cdot 10^{6}e^{0.028t}$ has force of growth $k=0.028$. The effective annual growth rate is\n\n$$\ne^{k}-1=e^{0.028}-1\n$$\n\nSince $e^{0.028}\\approx 1.02839$,\n\n$$\ne^{0.028}-1\\approx 0.02839=2.839\\%\n$$\n\nCompare with the claim “smaller than $2.8\\%$”:\n\n$$\n2.839\\%\\ngtr?\\quad 2.839\\%\\nless 2.8\\%\n$$\n\nThe effective rate is larger than $2.8\\%$, not smaller.\n\nSo the statement is False.",
+        "**C.** → False\n\nAfter $25$ years the growth factor is\n\n$$\n1.024^{25}=e^{25\\ln 1.024}\n$$\n\nWith $\\ln 1.024\\approx 0.023717$,\n\n$$\n25\\cdot 0.023717\\approx 0.5929,\\qquad e^{0.5929}\\approx 1.809\n$$\n\nSo the population multiplies by about $1.809$, a relative increase of about $80.9\\%$. The claim asks for more than $85\\%$:\n\n$$\n80.9\\%\\ngtr 85\\%\n$$\n\nSo the statement is False.",
+        "**D.** → False\n\nReal GDP grows by the factor $1.052$ each year while population grows by $1.024$. Real GDP per capita therefore grows by the quotient\n\n$$\n\\dfrac{1.052}{1.024}\\approx 1.02734\n$$\n\nwhich is about $2.734\\%$ per year. The claim says more than $3\\%$:\n\n$$\n2.734\\%\\ngtr 3\\%\n$$\n\n(The crude subtraction $5.2\\%-2.4\\%=2.8\\%$ is only an approximation and still fails the $3\\%$ threshold.)\n\nSo the statement is False.",
+        "**E.** → True\n\nFirst stage, eight years at $2.4\\%$:\n\n$$\nP(8)=15{,}000{,}000\\cdot 1.024^{8}\n$$\n\nSince $1.024^{8}\\approx 1.20913$,\n\n$$\nP(8)\\approx 15{,}000{,}000\\cdot 1.20913\\approx 18{,}136{,}950\n$$\n\nSecond stage at $1.5\\%$ until $22$ million:\n\n$$\n18{,}136{,}950\\cdot 1.015^{n}=22{,}000{,}000\n$$\n\n$$\n1.015^{n}=\\dfrac{22{,}000{,}000}{18{,}136{,}950}\\approx 1.21299\n$$\n\n$$\nn=\\dfrac{\\ln 1.21299}{\\ln 1.015}\\approx\\dfrac{0.19315}{0.014889}\\approx 12.97\n$$\n\nTotal time:\n\n$$\nt=8+12.97\\approx 20.97>20\n$$\n\nSo the population of $22$ million is first attained after more than $20$ years.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Keep units for $P(t)$ explicit, convert continuous force to effective annual growth via $e^{k}-1$, and for piecewise growth solve the second stage with logarithms."
+    },
+    {
+      "case_id": "MATH 11.174",
+      "id": "math-11-174",
+      "title": "Shipping line: capacity, cost, and a smooth loading rule",
+      "chapter": 11,
+      "subsection": "11.5",
+      "context": "A shipping line carries $x>0$ container loads per voyage. Revenue is $R(x)=150x-3x^{2}$ and cost is $C(x)=0.5x^{3}-9x^{2}+24x+500$. Loading-hours are\n$$L(x)=\\begin{cases}x^{2}+5x&\\text{if }x<20\\\\45x-400&\\text{if }x\\ge20.\\end{cases}$$\nExecutives are comparing an output that maximises profit with an output that maximises revenue, plus a subcontractor's marginal-revenue statement. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit is maximised at $x=14$ loads.",
+        "Revenue is maximised at an output above $20$ loads.",
+        "Average cost is rising at $x=10$.",
+        "The loading-hours rule has a derivative jump at $x=20$.",
+        "If a subcontractor starts with the same revenue at $x=10$ but has lower marginal revenue through $x=18$, it has lower revenue at $x=18$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nForm profit $P=R-C$, differentiate, and factor the quadratic $P^{\\prime}$. The positive critical point needs $P^{\\prime\\prime}<0$ to be a maximum.\n\nProfit $P=R-C$ has derivative\n\n$$\nP^{\\prime}(x) = 126+12x-1.5x^{2}\n$$\n\n$$\nP^{\\prime}(x) = -1.5(x-14)(x+6)\n$$\n\nAt $x=14$,\n\n$$\nP^{\\prime\\prime}(x) = 12-3x = 12-42 = -30<0\n$$\n\nSo $x=14$ maximises profit.\n\nSo the statement is True.",
+        "**B.** → True\n\nRevenue peaks where $R^{\\prime}=0$ and $R^{\\prime\\prime}<0$. Solve that critical load count and compare it with the threshold $20$.\n\nMarginal revenue is\n\n$$\nR^{\\prime}(x) = 150-6x = 0 \\implies x = 25\n$$\n\nAlso $R^{\\prime\\prime}=-6<0$, and $25>20$, so revenue peaks above twenty loads.\n\nCarry the derivative comparison all the way to the claimed number before deciding.\n\nSo the statement is True.",
+        "**C.** → False\n\nAverage cost rises only where $AC^{\\prime}>0$. Evaluate $AC^{\\prime}(10)$ — a negative value means $AC$ is still falling, contrary to the claim.\n\nAverage cost is\n\n$$\nAC(x) = 0.5x^{2}-9x+24+\\dfrac{500}{x}\n$$\n\n$$\nAC^{\\prime}(x) = x-9-\\dfrac{500}{x^{2}}\n$$\n\n$$\nAC^{\\prime}(10) = 10-9-5\n$$\n\n$$\n10 - 9 = 1\n$$\n\n$$\n1 - 5 = -4\n$$\n\n$$\nAC^{\\prime}(10) = -4\n$$\n\nThe derivative is negative, so average cost is falling at $x=10$, not rising. The intermediate algebra above contradicts the claim.\n\nSo the statement is False.",
+        "**D.** → False\n\nA derivative jump requires unequal one-sided slopes. Check both the common level and the left/right derivatives of loading hours at $x=20$.\n\nBoth loading-hour formulas give level $500$ at $x=20$. The one-sided slopes are\n\n$$\nL^{\\prime}_{-}(20) = 2\\cdot 20+5 = 45\n$$\n\n$$\nL^{\\prime}_{+}(20) = 45\n$$\n\nThe slopes agree, so there is no derivative jump at the threshold. The intermediate algebra above contradicts the claim.\n\nSo the statement is False.",
+        "**E.** → True\n\nLower subcontractor marginal revenue accumulates a smaller gain. Equal revenue at $x=10$ then forces lower subcontractor revenue at $x=18$.\n\nA subcontractor with lower marginal revenue from $10$ to $18$ accumulates a smaller revenue gain.\n\n$$\nR_{s}(18)-R_{s}(10)<R(18)-R(10)\n$$\n\nEqual starting revenues at $10$ therefore leave the subcontractor strictly lower at $18$.\n\n$$\nx = 10\n$$\n\n$$\nx = 18\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Revenue is $R(x)=150x-3x^{2}$ and cost is $C(x)=0.5x^{3}-9x^{2}+24x+500$. Profit has\n\n$$\nP^{\\prime}(x) = 126+12x-1.5x^{2} = -1.5(x-14)(x+6)\n$$\n\nso $x=14$ is a critical point with $P^{\\prime\\prime}(14)=-30<0$. Revenue peaks where $R^{\\prime}=150-6x=0$, namely at $x=25>20$. Average cost satisfies\n\n$$AC^{\\prime}(x)=x-9-\\dfrac{500}{x^{2}}$$\n\nand $AC^{\\prime}(10)=1-5=-4<0$, so average cost is still falling at $x=10$. Loading hours: $L(20^{-})=20^{2}+5\\cdot 20=500$ and $L(20^{+})=45\\cdot 20-400=500$; slopes $L^{\\prime}_{-}=2x+5$ giving $45$ at $20$, and $L^{\\prime}_{+}=45$, so no derivative jump. Integrating a strictly smaller subcontractor marginal revenue from a matched endpoint forces lower subcontractor revenue at the far end."
+    },
+    {
+      "case_id": "MATH 12.205",
+      "id": "math-12-205",
+      "title": "Exam-style tasks - 7",
+      "chapter": 12,
+      "subsection": "12.6",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A language school has 150 learners: 63 study Spanish, 57 French, and 18 both. Exactly $49$ learners study neither language.",
+        "Two independent fair coins are tossed. Given a head on the first toss, the probability of a head on the second is greater than $49\\%$.",
+        "An arcade challenge pays $10$ credits with probability $\\frac3{10}$ and loses $4$ credits otherwise. The mean payoff is greater than $0.3$ credits.",
+        "A condition has prevalence $5\\%$. A test always detects the condition but falsely tests positive for $10\\%$ of healthy people. After a positive result, the probability of the condition is greater than $34\\%$.",
+        "A laboratory jar contains ten white and ten black capsules. Three capsules are sampled without replacement. The probability that all three are white is greater than $10\\%$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nThis claim asks how many learners study neither Spanish nor French. First recover the union of the two language groups by inclusion-exclusion:\n\n$$\nN(S\\cup F) = 63+57-18\n$$\n\n$$\n63 + 57 = 120\n$$\n\n$$\n120 - 18 = 102\n$$\n\nAmong the $150$ learners, the complement is\n\n$$\nN(\\text{neither}) = 150-102\n$$\n\n$$\n150 - 102 = 48\n$$\n\nExactly $48$ study neither language. The claim states that the count is $49$.\n\nSo the statement is False.",
+        "**B.** → True\n\nThis claim asks for the probability of a head on the second toss given a head on the first. The coins are independent and fair, so the first outcome does not change the second:\n\n$$\nP(H_2\\mid H_1) = P(H_2) = \\frac{1}{2} = 0.5\n$$\n\nExpressed as a percentage, this is $50\\%$. The claim states that this probability is greater than $49\\%$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThis claim asks for the mean arcade payoff. With probability $\\frac{3}{10}$ the payoff is $10$ and otherwise it is $-4$:\n\n$$\nE(X) = 10\\cdot\\frac{3}{10}+(-4)\\cdot\\frac{7}{10} = 3-\\frac{28}{10} = \\frac{1}{5} = 0.2\n$$\n\nThe mean is $0.2$ credits. The claim states that it is greater than $0.3$.\n\nSo the statement is False.",
+        "**D.** → True\n\nLet $C$ be the condition and $+$ a positive test. Then $P(+\\mid C)=1$, $P(+\\mid C^c)=0.10$, $P(C)=0.05$:\n\n$$\nP(C\\mid +) = \\frac{1\\cdot 0.05}{1\\cdot 0.05+0.10\\cdot 0.95} = \\frac{0.05}{0.145} = \\frac{10}{29}\n$$\n\n$$\n\\approx 0.344828\n$$\n\nExpressed as a percentage, this is approximately $34.483\\%$. The claim states that this probability is greater than $34\\%$.\n\nSo the statement is True.",
+        "**E.** → True\n\nUnordered triples from twenty capsules give\n\n$$\nP(\\text{all white}) = \\frac{\\binom{10}{3}}{\\binom{20}{3}} = \\frac{120}{1140} = \\frac{2}{19}\n$$\n\n$$\n\\approx 0.105263\n$$\n\nExpressed as a percentage, this is approximately $10.526\\%$. The claim states that this probability is greater than $10\\%$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five separate checks. Letter A recovers a neither-language count. Letter B uses independence of successive coin tosses. Letter C computes an arcade mean payoff. Letter D applies Bayes' theorem after a positive medical test. Letter E counts all-white triple draws without replacement."
+    },
+    {
+      "case_id": "MATH 13.46",
+      "id": "math-13-46",
+      "title": "Bakery Quality Control",
+      "chapter": 13,
+      "subsection": "13",
+      "context": "A bakery runs a quality-control check on 18 pastries per batch. Baker A is a trainee (p = 0.45 of correctly shaping a pastry to spec). Baker B is an expert (p = 0.85). To pass the check, a baker must correctly shape at least 15 of the 18 pastries. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Baker A's probability of a flawless batch is less than 0.0001%.",
+        "The probability that Baker B passes the check is greater than the probability of exactly 15.",
+        "Baker B is more than 750 times as likely as Baker A to pass the check.",
+        "Baker A's variance in number of correctly shaped pastries is more than double Baker B's variance.",
+        "The mean number of correctly shaped pastries for Baker B is more than 90% higher than for Baker A."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA perfect run means every one of the $n$ trials succeeds. Independence lets us multiply the success probability across all trials, which is the binomial PMF at $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFor side A, $p = 0.45$ and $n = 18$:\n\n$$\nP(X = 18)\n$$\n\n$$\n(0.45)^{18} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n5.7257 \\times 10^{-5}\\%\n$$\n\nThe claim compares this with $0.0001\\%$. We got about $5.7257 \\times 10^{-5}\\%$, which is below the cutoff.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe named event covers every admissible count from 15 through 18, not only the single count 15. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=15)$.\n\nSo the statement is True.",
+        "**C.** → False\n\nClearing the cutoff means at least 15 successes out of 18. That event is the union of the mutually exclusive outcomes $X = 15, 16, \\ldots, 18$, so we add the individual binomial probabilities:\n\n$$\nP(X \\ge 15) = \\sum_{x = 15}^{18} \\binom{18}{x} p^{x} (1-p)^{18-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 18$, $p = 0.45$):\n\n$$\nP(X = 15) = \\binom{18}{15} (0.45)^{15} (0.55)^{3}\n$$\n\n$$\n\\binom{18}{15} = \\dfrac{18!}{15!(18-15)!}\n$$\n\n$$\n\\dfrac{18!}{15!(3)!} = \\dfrac{18 \\cdot 17 \\cdot 16}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n18 \\cdot 17 = 306\n$$\n\n$$\n306 \\cdot 16 = 4896\n$$\n\n$$\n\\dfrac{4896}{6} = 816\n$$\n\n$$\n\\binom{18}{15} = 816\n$$\n\n$$\n(0.45)^{15} = 6.283299 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{3}\n$$\n\n$$\n0.55 \\times 0.55 = 0.3025\n$$\n\n$$\n0.3025 \\times 0.55 = 0.166375\n$$\n\n$$\n(0.55)^{3} = 0.166375\n$$\n\n$$\n816 \\times 6.283299 \\times 10^{-6} = 0.005127171746\n$$\n\n$$\n0.005127171746 \\times 0.166375 = 0.000853033199\n$$\n\n$$\nP(X = 15) = 0.000853033199\n$$\n\n$$\nP(X = 16) = \\binom{18}{16} (0.45)^{16} (0.55)^{2}\n$$\n\n$$\n\\binom{18}{16} = \\dfrac{18!}{16!(18-16)!}\n$$\n\n$$\n\\dfrac{18!}{16!(2)!} = \\dfrac{18 \\cdot 17}{1 \\cdot 2}\n$$\n\n$$\n18 \\cdot 17 = 306\n$$\n\n$$\n\\dfrac{306}{2} = 153\n$$\n\n$$\n\\binom{18}{16} = 153\n$$\n\n$$\n(0.45)^{16} = 2.827484 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{2}\n$$\n\n$$\n0.55 \\times 0.55 = 0.3025\n$$\n\n$$\n(0.55)^{2} = 0.3025\n$$\n\n$$\n153 \\times 2.827484 \\times 10^{-6} = 0.000432605116\n$$\n\n$$\n0.000432605116 \\times 0.3025 = 0.000130863048\n$$\n\n$$\nP(X = 16) = 0.000130863048\n$$\n\n$$\nP(X = 17) = \\binom{18}{17} (0.45)^{17} (0.55)^{1}\n$$\n\n$$\n\\binom{18}{17} = \\dfrac{18!}{17!(18-17)!}\n$$\n\n$$\n\\binom{18}{17} = 18\n$$\n\n$$\n(0.45)^{17} = 1.272368 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{1} = 0.55\n$$\n\n$$\n18 \\times 1.272368 \\times 10^{-6} = 2.290262 \\times 10^{-5}\n$$\n\n$$\n2.290262 \\times 10^{-5} \\times 0.55 = 1.259644 \\times 10^{-5}\n$$\n\n$$\nP(X = 17) = 1.259644 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = \\binom{18}{18} (0.45)^{18} (0.55)^{0}\n$$\n\n$$\n\\binom{18}{18} = 1\n$$\n\n$$\n(0.45)^{18} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n(0.55)^{0} = 1\n$$\n\n$$\n1 \\times 5.725656 \\times 10^{-7} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n5.725656 \\times 10^{-7} \\times 1 = 5.725656 \\times 10^{-7}\n$$\n\n$$\nP(X = 18) = 5.725656 \\times 10^{-7}\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0009 + 0.0001 + 1.2596 \\times 10^{-5}\n$$\n\n$$\n+ 5.7257 \\times 10^{-7}\n$$\n\n$$\nP(X \\ge 15)\n$$\n\n$$\n0.001\n$$\n\n$$\n0.1\\%\n$$\n\nSide B ($n = 18$, $p = 0.85$):\n\n$$\nP(X = 15) = \\binom{18}{15} (0.85)^{15} (0.15)^{3}\n$$\n\n$$\n(0.85)^{15} = 0.087354219101\n$$\n\n$$\n(0.15)^{3}\n$$\n\n$$\n0.15 \\times 0.15 = 0.0225\n$$\n\n$$\n0.0225 \\times 0.15 = 0.003375\n$$\n\n$$\n(0.15)^{3} = 0.003375\n$$\n\n$$\n816 \\times 0.087354219101 = 71.281042786621\n$$\n\n$$\n71.281042786621 \\times 0.003375 = 0.240573519405\n$$\n\n$$\nP(X = 15) = 0.240573519405\n$$\n\n$$\nP(X = 16) = \\binom{18}{16} (0.85)^{16} (0.15)^{2}\n$$\n\n$$\n(0.85)^{16} = 0.074251086236\n$$\n\n$$\n(0.15)^{2}\n$$\n\n$$\n0.15 \\times 0.15 = 0.0225\n$$\n\n$$\n(0.15)^{2} = 0.0225\n$$\n\n$$\n153 \\times 0.074251086236 = 11.360416194118\n$$\n\n$$\n11.360416194118 \\times 0.0225 = 0.255609364368\n$$\n\n$$\nP(X = 16) = 0.255609364368\n$$\n\n$$\nP(X = 17) = \\binom{18}{17} (0.85)^{17} (0.15)^{1}\n$$\n\n$$\n(0.85)^{17} = 0.063113423301\n$$\n\n$$\n(0.15)^{1} = 0.15\n$$\n\n$$\n18 \\times 0.063113423301 = 1.136041619412\n$$\n\n$$\n1.136041619412 \\times 0.15 = 0.170406242912\n$$\n\n$$\nP(X = 17) = 0.170406242912\n$$\n\n$$\nP(X = 18) = \\binom{18}{18} (0.85)^{18} (0.15)^{0}\n$$\n\n$$\n(0.85)^{18} = 0.053646409806\n$$\n\n$$\n(0.15)^{0} = 1\n$$\n\n$$\n1 \\times 0.053646409806 = 0.053646409806\n$$\n\n$$\n0.053646409806 \\times 1 = 0.053646409806\n$$\n\n$$\nP(X = 18) = 0.053646409806\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.2406 + 0.2556 + 0.1704\n$$\n\n$$\n+ 0.0536\n$$\n\n$$\nP(X \\ge 15)\n$$\n\n$$\n0.7202\n$$\n\n$$\n72.02\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 15)}{P_A(X \\ge 15)}\n$$\n\n$$\n\\frac{72.02\\%}{0.1\\%}\n$$\n\n$$\n722.36\n$$\n\nSince $722.36 \\le 750$.\n\nSo the statement is False.",
+        "**D.** → False\n\nFor a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent Bernoulli trials with success probability $p$. Each trial has variance $p(1-p)$, and variances of independent summands add, so\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nThis is largest when $p$ is closest to $\\frac{1}{2}$, not when $p$ itself is largest.\n\nSide A with $n_A = 18$, $p_A = 0.45$:\n\n$$\n\\mathrm{Var}(A) = 18 \\cdot 0.45 \\cdot 0.55\n$$\n\n$$\n18 \\times 0.45 = 8.1\n$$\n\n$$\n8.1 \\times 0.55 = 4.455\n$$\n\nSide B with $n_B = 18$, $p_B = 0.85$:\n\n$$\n\\mathrm{Var}(B) = 18 \\cdot 0.85 \\cdot 0.15\n$$\n\n$$\n18 \\times 0.85 = 15.3\n$$\n\n$$\n15.3 \\times 0.15 = 2.295\n$$\n\nThe variance ratio is\n\n$$\n\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)} = \\frac{4.455}{2.295} \\approx 1.94\n$$\n\n.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 18 \\cdot 0.45\n$$\n\n$$\n18 \\times 0.45 = 8.1\n$$\n\n$$\nE[B] = 18 \\cdot 0.85\n$$\n\n$$\n18 \\times 0.85 = 15.3\n$$\n\nThe percent increase of B over A is\n\n$$\n100\\Big(\\frac{E[B]}{E[A]} - 1\\Big)\n$$\n\n$$\n88.89\\%\n$$\n\n.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "solution_overview": "A bakery runs a quality-control check on 18 pastries per batch. Baker A is a trainee (p = 0.45 of correctly shaping a pastry to spec). Baker B is an expert (p = 0.85). To pass the check, a baker must correctly shape at least 15 of the 18 pastries.\n\nWe model each side as a binomial count with $n = 18$ independent trials: side A has success probability $p_A = 0.45$, side B has $p_B = 0.85$.\n\nThe scenario’s success cutoff is at least $k = 15$ successes out of $n = 18$."
+    }
+  ]
+}

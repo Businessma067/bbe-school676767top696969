@@ -1,7 +1,9 @@
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
+import { useLayoutEffect } from "react";
 import { XCircle } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
 
 type FailedSearch = { reason?: string };
 
@@ -42,6 +44,9 @@ export function PaymentFailedPage() {
   const { reason } = useRouterState({
     select: (s) => parseFailedSearch(s.location.search as Record<string, unknown>),
   });
+  useLayoutEffect(() => {
+    breakOutOfIframe();
+  }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">

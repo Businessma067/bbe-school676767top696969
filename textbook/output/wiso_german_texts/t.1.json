@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.1",
+    "title": "Die Vier-Tage-Woche und die Produktivitätsdebatte",
+    "passage": "(1) Die Fünf-Tage-Woche mit vierzig Wochenstunden galt über weite Strecken des zwanzigsten Jahrhunderts als selbstverständliche Ordnung des Erwerbslebens. Sie wurde von Gewerkschaften erkämpft, in zahlreichen Staaten gesetzlich verankert und schließlich so tief in die Wirtschaftskultur eingeschrieben, dass kaum jemand fragte, ob diese Einteilung tatsächlich die produktivste sei. Seit etwa einem Jahrzehnt jedoch stellen Unternehmen, Forschungsinstitute und vereinzelt auch Regierungen diese Annahme offen infrage und erproben eine Vier-Tage-Woche, in der bei vollem Lohnausgleich weniger gearbeitet wird.\n\n(2) Die am häufigsten zitierte Untersuchung stammt aus dem Vereinigten Königreich, wo zwischen Juni und Dezember 2022 über sechzig Unternehmen mit rund dreitausend Beschäftigten auf eine Vier-Tage-Woche umstellten und dabei hundert Prozent des bisherigen Gehalts beibehielten. Am Ende des sechsmonatigen Versuchs entschied sich die große Mehrheit der teilnehmenden Betriebe, das verkürzte Modell fortzuführen; ein erheblicher Teil kündigte an, es dauerhaft einzuführen. Die Beschäftigten berichteten von geringerer Erschöpfung, besserem Schlaf und einer ausgeglicheneren Verbindung von Arbeit und Privatleben, während mehrere Firmen angaben, ihr Umsatz sei im Vergleich zum Vorjahreszeitraum stabil geblieben oder leicht gestiegen.\n\n(3) Befürworter argumentieren, die Vierzigstundenwoche sei nie um tatsächliche Produktivität herum entworfen worden, sondern um die Taktung einer Industriegesellschaft, die auf körperlicher Arbeit und Schichtbetrieb beruhte. In vielen Büroberufen, so ihre These, verschlinge ein beträchtlicher Teil des Arbeitstages geringwertige Tätigkeiten wie überflüssige Besprechungen, ausufernde E-Mail-Korrespondenz und allgemeine Ablenkung; eine kürzere Woche verdichte daher lediglich die eigentliche Leistung, ohne sie zu schmälern.\n\n(4) Kritiker warnen dagegen vor voreiligen Verallgemeinerungen. Sie verweisen darauf, dass an den meisten Versuchen ausschließlich Unternehmen teilnahmen, die sich freiwillig meldeten, sodass die Stichprobe zugunsten ohnehin flexibler und gut geführter Organisationen verzerrt ist. Branchen, die auf durchgehende körperliche Anwesenheit angewiesen sind, etwa Industrie, Pflege und Einzelhandel, ließen sich weit schwerer umstellen, weil dort eine Verkürzung der Arbeitszeit meist zusätzliche Einstellungen erfordert, um dieselben Öffnungs- und Betriebszeiten abzudecken, was die Kosten eher erhöht als senkt.\n\n(5) Auch Ökonominnen und Ökonomen melden Bedenken an, insbesondere mit Blick auf die Lohnentwicklung. Wenn Betriebe volle Gehälter für verkürzte Arbeitszeit zusagen, müssten die Mehrkosten langfristig irgendwo aufgefangen werden: durch schwächeres Lohnwachstum in den Folgejahren, durch zurückhaltende Neueinstellungen oder durch höhere Preise für Konsumenten. Das scheinbar kostenlose Versprechen, weniger zu arbeiten und gleich viel zu verdienen, könnte sich aus dieser Sicht über einen längeren Zeitraum in eine stille Umverteilung verwandeln, die in kurzen Pilotphasen noch gar nicht sichtbar wird.\n\n(6) Die staatliche Ebene zeigt, wie unterschiedlich das Etikett Vier-Tage-Woche gefüllt werden kann. Island führte zwischen 2015 und 2019 großangelegte Versuche im öffentlichen Dienst durch, an denen ein beachtlicher Teil der Erwerbstätigen beteiligt war; Belgien verabschiedete dagegen erst 2022 ein Gesetz, das Beschäftigten das Recht einräumt, ihre Wochenarbeitszeit auf vier Tage zu verteilen. Entscheidend ist dabei ein Unterschied, der in öffentlichen Debatten oft untergeht: Im belgischen Modell bleibt die Gesamtzahl der Arbeitsstunden gegenüber einer klassischen Fünf-Tage-Woche unverändert, sie wird lediglich verdichtet.\n\n(7) Aus dieser Unterscheidung folgt, dass Vergleiche zwischen Pilotprojekten mit Vorsicht zu lesen sind. Eine echte Arbeitszeitverkürzung bei vollem Lohn, eine Verdichtung derselben Stunden auf vier längere Tage und eine flexible Wahlmöglichkeit einzelner Beschäftigter sind drei verschiedene Eingriffe mit drei verschiedenen Kostenstrukturen. Wer Erfahrungen aus dem einen Modell als Beleg für ein anderes anführt, vergleicht Ergebnisse, die nicht auf derselben Grundlage entstanden sind.\n\n(8) Hinzu kommt ein methodisches Problem: Fast alle vorliegenden Studien beruhen auf Selbstauskünften der Unternehmen und laufen über wenige Monate. Kurzfristige Begeisterung und Neuheitseffekte können die Ergebnisse ebenso beeinflussen wie der Umstand, dass Betriebe in Pilotphasen besonders aufmerksam organisieren. Ob die berichteten Gewinne an Zufriedenheit und Konzentration auch nach mehreren Jahren Bestand haben, ist bislang nicht belegt, weil langfristige Kontrollstudien weitgehend fehlen.\n\n(9) Die Debatte bleibt daher offen. Unstrittig ist, dass die Fünf-Tage-Woche kein Naturgesetz, sondern ein historisches Arrangement ist, das verändert werden kann; strittig bleibt, unter welchen Bedingungen eine Verkürzung ohne Lohnverlust dauerhaft tragfähig ist und welche Branchen dabei zurückbleiben. Möglicherweise wird sich die Frage weniger in Grundsatzdebatten entscheiden als in der Summe einzelner betrieblicher Entscheidungen, und daran, ob sich die frühen Befunde bestätigen, wenn der Reiz des Neuen verflogen ist.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-1-01",
+      "case_id": "DE T.1.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das genaue Verständnis der einleitenden Absätze zur Geschichte und Begründung der Vier-Tage-Woche.",
+      "kind": "reading",
+      "statements": [
+        "Laut Text war die Fünf-Tage-Woche nie gesetzlich geregelt, sondern bestand ausschließlich als informelle Gewohnheit.",
+        "Der beschriebene britische Versuch erstreckte sich über ein volles Kalenderjahr von Januar bis Dezember 2022.",
+        "Die Beschäftigten im britischen Versuch behielten ihr bisheriges Gehalt in voller Höhe.",
+        "Nach Abschluss des britischen Versuchs kehrte die Mehrheit der beteiligten Betriebe zur alten Regelung zurück.",
+        "Befürworter führen an, ein beträchtlicher Teil des Arbeitstages entfalle auf geringwertige Tätigkeiten wie überflüssige Besprechungen."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Laut Text war die Fünf-Tage-Woche nie gesetzlich geregelt, sondern bestand ausschließlich als informelle Gewohnheit.**\n\nAbsatz 1 beschreibt die Fünf-Tage-Woche gerade nicht als bloße Gepflogenheit: Sie wurde von Gewerkschaften erkämpft und „in zahlreichen Staaten gesetzlich verankert“.\n\nDas Wort „ausschließlich“ richtet hier den Schaden an, weil es zwei im Text genannte Kräfte – gewerkschaftlicher Kampf und Gesetzgebung – auf eine einzige, schwächere reduziert.\n\n**Falle:** Formulierungen wie „nie gesetzlich“ kippen häufig einen Satz, der ausdrücklich von Gesetz oder Politik spricht.\n\nDie Aussage hält dem Text nicht stand, weil Absatz 1 die Arbeitszeitordnung ausdrücklich rechtlich verankert sieht.",
+        "**B) Der beschriebene britische Versuch erstreckte sich über ein volles Kalenderjahr von Januar bis Dezember 2022.**\n\nAbsatz 2 datiert den Versuch „zwischen Juni und Dezember 2022“ und nennt ihn anschließend einen sechsmonatigen Versuch. Das sind sechs Monate, nicht zwölf.\n\nDer Text liefert damit zwei unabhängige Prüfmöglichkeiten: die genannten Monate und die ausdrückliche Dauerangabe.\n\n**Tipp:** Wenn Anfangs- und Endpunkt zugleich mit einer Dauer genannt werden, rechne kurz nach, bevor du entscheidest.\n\nDie Aussage scheitert an der Chronologie, denn Juni bis Dezember ergibt kein volles Kalenderjahr.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 2 und ist daher falsch.",
+        "**C) Die Beschäftigten im britischen Versuch behielten ihr bisheriges Gehalt in voller Höhe.**\n\nAbsatz 2 hält fest, dass die Betriebe auf eine Vier-Tage-Woche umstellten und dabei „hundert Prozent des bisherigen Gehalts beibehielten“.\n\n„Hundert Prozent des bisherigen Gehalts“ und „in voller Höhe“ bezeichnen denselben Sachverhalt in anderen Worten – genau das leistet eine saubere Paraphrase.\n\nEntscheidend ist die gleichzeitige Verbindung von verkürzter Arbeitszeit und unverändertem Entgelt. Die Aussage trifft zu, weil der Text beides ausdrücklich zusammenführt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**D) Nach Abschluss des britischen Versuchs kehrte die Mehrheit der beteiligten Betriebe zur alten Regelung zurück.**\n\nAbsatz 2 berichtet das Gegenteil: „die große Mehrheit der teilnehmenden Betriebe“ entschied sich, das verkürzte Modell fortzuführen, ein erheblicher Teil sogar dauerhaft.\n\nDie Aussage übernimmt Subjekt, Mengenangabe und Zeitpunkt korrekt und dreht allein das Verb um – eine der häufigsten Manipulationen im Sprachverständnis.\n\n**Falle:** Prüfe bei Mehrheitsangaben immer das zugehörige Verb, nicht nur die Größe der Mehrheit.\n\nDie Aussage ist unzutreffend, weil im Text fortgeführt und nicht zurückgekehrt wird.",
+        "**E) Befürworter führen an, ein beträchtlicher Teil des Arbeitstages entfalle auf geringwertige Tätigkeiten wie überflüssige Besprechungen.**\n\nAbsatz 3 schreibt genau dies den Befürwortern zu: Es verschlinge ein beträchtlicher Teil des Arbeitstages „geringwertige Tätigkeiten wie überflüssige Besprechungen“, E-Mail-Korrespondenz und Ablenkung.\n\nDie Aussage bleibt auch in der Zuschreibung korrekt, weil sie die These den Befürwortern zuordnet und nicht als Urteil des Textes ausgibt.\n\nDass nur ein Beispiel aus der Aufzählung zitiert wird, ist unschädlich, da „wie“ eine offene Reihe einleitet. Die Aussage entspricht der in Absatz 3 referierten Position."
+      ],
+      "highlights": [
+        "in zahlreichen Staaten gesetzlich verankert",
+        "zwischen Juni und Dezember 2022",
+        "hundert Prozent des bisherigen Gehalts beibehielten",
+        "die große Mehrheit der teilnehmenden Betriebe, das verkürzte Modell fortzuführen",
+        "geringwertige Tätigkeiten wie überflüssige Besprechungen"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-02",
+      "case_id": "DE T.1.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen das Verständnis der Gegenargumente und der staatlichen Beispiele im Mittelteil des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Kritiker betonen, die teilnehmenden Unternehmen seien für alle Branchen repräsentativ gewesen, einschließlich Industrie und Einzelhandel.",
+        "Laut Text kann eine Arbeitszeitverkürzung in Branchen mit durchgehender Anwesenheitspflicht die Kosten eher erhöhen als senken.",
+        "Einige Ökonominnen und Ökonomen erwarten, dass Mehrkosten sich etwa in schwächerem Lohnwachstum oder höheren Verbraucherpreisen niederschlagen.",
+        "Islands Versuche im öffentlichen Dienst fanden nach dem belgischen Gesetz statt.",
+        "Im belgischen Modell sinkt die Gesamtzahl der Arbeitsstunden gegenüber einer klassischen Fünf-Tage-Woche."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Kritiker betonen, die teilnehmenden Unternehmen seien für alle Branchen repräsentativ gewesen, einschließlich Industrie und Einzelhandel.**\n\nAbsatz 4 sagt das Gegenteil: Die Stichprobe sei „zugunsten ohnehin flexibler und gut geführter Organisationen verzerrt“, weil nur freiwillige Betriebe teilnahmen.\n\nIndustrie, Pflege und Einzelhandel erscheinen im Text als die schwierigen Fälle, die sich gerade nicht ohne Weiteres umstellen lassen – sie als Beleg für Repräsentativität zu verwenden, kehrt ihre Rolle um.\n\n**Falle:** „Repräsentativ“ wird oft dort eingesetzt, wo der Text von Verzerrung oder Selbstauswahl spricht.\n\nDie Aussage ist unzutreffend, weil die Kritik genau auf die Einseitigkeit der Auswahl zielt.",
+        "**B) Laut Text kann eine Arbeitszeitverkürzung in Branchen mit durchgehender Anwesenheitspflicht die Kosten eher erhöhen als senken.**\n\nAbsatz 4 beschreibt den Mechanismus: Wo dieselben Öffnungs- und Betriebszeiten abgedeckt werden müssen, sind zusätzliche Einstellungen nötig, „was die Kosten eher erhöht als senkt“.\n\nDas Modalverb „kann“ hält die Aussage im sicheren Bereich, denn sie behauptet keine ausnahmslose Gesetzmäßigkeit, sondern eine im Text genannte Folge für bestimmte Branchen.\n\nDie Kausalkette lautet: weniger Stunden pro Person, dafür mehr Personal, also höhere Gesamtkosten. Die Aussage gibt Absatz 4 damit korrekt wieder.",
+        "**C) Einige Ökonominnen und Ökonomen erwarten, dass Mehrkosten sich etwa in schwächerem Lohnwachstum oder höheren Verbraucherpreisen niederschlagen.**\n\nAbsatz 5 nennt genau diese Kanäle: „durch schwächeres Lohnwachstum in den Folgejahren“, durch zurückhaltende Neueinstellungen oder durch höhere Preise für Konsumenten.\n\nDass die Aussage nur zwei der drei Möglichkeiten nennt, ist kein Fehler, denn das verknüpfende „oder“ wählt aus einer Reihe aus und behauptet keine Vollständigkeit.\n\nAuch die vorsichtige Formulierung „erwarten“ entspricht der zurückhaltenden Sprache des Textes. Die Aussage bildet die ökonomischen Bedenken aus Absatz 5 zutreffend ab.",
+        "**D) Islands Versuche im öffentlichen Dienst fanden nach dem belgischen Gesetz statt.**\n\nAbsatz 6 datiert die isländischen Versuche auf die Jahre 2015 bis 2019, das belgische Gesetz dagegen auf 2022. Island kam also zuerst.\n\nBeide Jahresangaben stehen im selben Absatz nur wenige Zeilen auseinander, sodass die Reihenfolge ohne jede Schlussfolgerung geklärt werden kann.\n\n**Tipp:** Markiere beim Lesen alle Jahreszahlen und vergleiche sie, bevor du ein „nach“ oder „vor“ bewertest.\n\nDie Aussage dreht die Chronologie um und ist deshalb nicht haltbar.\n\nIn Absatz 6 heißt es wörtlich: „Island führte zwischen 2015 und 2019 großangelegte Versuche im öffentlichen Dienst durch\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.",
+        "**E) Im belgischen Modell sinkt die Gesamtzahl der Arbeitsstunden gegenüber einer klassischen Fünf-Tage-Woche.**\n\nAbsatz 6 stellt ausdrücklich klar, dass im belgischen Modell „die Gesamtzahl der Arbeitsstunden gegenüber einer klassischen Fünf-Tage-Woche unverändert“ bleibt; sie wird lediglich verdichtet.\n\nDas Schlüsselwort ist „verdichtet“: Es verändert die Verteilung der Arbeit auf die Woche, nicht ihren Umfang.\n\n**Falle:** „Vier-Tage-Woche“ wird leicht als „weniger Stunden“ gelesen, obwohl der Text hier nur eine Umverteilung beschreibt.\n\nDie Aussage ist unzutreffend, weil in Belgien die Stundenzahl gleich bleibt und sich nur der Kalender ändert."
+      ],
+      "highlights": [
+        "zugunsten ohnehin flexibler und gut geführter Organisationen verzerrt",
+        "was die Kosten eher erhöht als senkt",
+        "durch schwächeres Lohnwachstum in den Folgejahren",
+        "Island führte zwischen 2015 und 2019 großangelegte Versuche im öffentlichen Dienst durch",
+        "bleibt die Gesamtzahl der Arbeitsstunden gegenüber einer klassischen Fünf-Tage-Woche unverändert"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 2,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-03",
+      "case_id": "DE T.1.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen das Verständnis der Modellunterscheidungen, der methodischen Einwände und des offenen Schlusses.",
+      "kind": "reading",
+      "statements": [
+        "Der Text behandelt echte Arbeitszeitverkürzung und bloße Verdichtung derselben Stunden als gleichwertige Eingriffe.",
+        "Fast alle vorliegenden Studien stützen sich laut Text auf Selbstauskünfte der Unternehmen.",
+        "Der Text hält es für belegt, dass die berichteten Zufriedenheitsgewinne auch nach mehreren Jahren Bestand haben.",
+        "Laut Schlussabsatz ist die Fünf-Tage-Woche ein historisches Arrangement und kein Naturgesetz.",
+        "Der Text endet mit der klaren Empfehlung, die Vier-Tage-Woche flächendeckend einzuführen."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text behandelt echte Arbeitszeitverkürzung und bloße Verdichtung derselben Stunden als gleichwertige Eingriffe.**\n\nAbsatz 7 tut genau das Gegenteil und nennt Verkürzung, Verdichtung und freie Wahlmöglichkeit „drei verschiedene Eingriffe mit drei verschiedenen Kostenstrukturen“.\n\nDie Unterscheidung ist für die Argumentation zentral, weil sie erklärt, warum Ergebnisse aus einem Modell nicht als Beleg für ein anderes taugen.\n\n**Tipp:** Wenn ein Absatz ausdrücklich trennt, ist eine Aussage, die gleichsetzt, fast immer falsch.\n\nDie Aussage widerspricht dem Text, der die Modelle bewusst auseinanderhält.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**B) Fast alle vorliegenden Studien stützen sich laut Text auf Selbstauskünfte der Unternehmen.**\n\nAbsatz 8 formuliert es wörtlich: Fast alle vorliegenden Studien „beruhen auf Selbstauskünften der Unternehmen“ und laufen über wenige Monate.\n\nDie Aussage übernimmt die Einschränkung „fast alle“ korrekt und verallgemeinert nicht zu „alle“, was den Satz angreifbar machen würde.\n\nGerade diese Quellenlage ist der Grund für die Zurückhaltung des Textes gegenüber den positiven Befunden. Die Aussage gibt den methodischen Einwand aus Absatz 8 richtig wieder.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.",
+        "**C) Der Text hält es für belegt, dass die berichteten Zufriedenheitsgewinne auch nach mehreren Jahren Bestand haben.**\n\nAbsatz 8 sagt ausdrücklich, dies sei „bislang nicht belegt, weil langfristige Kontrollstudien weitgehend fehlen“.\n\nDie Aussage macht aus einer offen gelassenen Frage ein gesichertes Ergebnis und dreht damit die Beweislage um.\n\n**Falle:** Fehlende Langzeitstudien bedeuten weder Bestätigung noch Widerlegung, sondern schlicht Unwissen.\n\nDie Aussage ist unzutreffend, weil der Text die Dauerhaftigkeit ausdrücklich als ungeklärt bezeichnet.\n\nIn Absatz 8 heißt es wörtlich: „ist bislang nicht belegt, weil langfristige Kontrollstudien weitgehend fehlen\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**D) Laut Schlussabsatz ist die Fünf-Tage-Woche ein historisches Arrangement und kein Naturgesetz.**\n\nAbsatz 9 hält als unstrittigen Punkt fest, die Fünf-Tage-Woche sei „kein Naturgesetz, sondern ein historisches Arrangement“, das verändert werden kann.\n\nDie Aussage übernimmt diese Gegenüberstellung wortgetreu im Sinn und fügt keine Wertung hinzu.\n\nWichtig ist, dass der Text diese Feststellung ausdrücklich als das Unstrittige markiert, im Unterschied zu den strittigen Fragen danach. Die Aussage entspricht dem Schlussabsatz.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**E) Der Text endet mit der klaren Empfehlung, die Vier-Tage-Woche flächendeckend einzuführen.**\n\nAbsatz 9 beginnt mit dem Satz „Die Debatte bleibt daher offen.“ und listet anschließend auf, was weiterhin strittig ist.\n\nEine Empfehlung würde voraussetzen, dass sich der Text auf eine Seite schlägt; stattdessen benennt er Bedingungen und offene Fragen.\n\n**Tipp:** Achte am Textende auf Signalwörter wie „offen“, „strittig“ oder „möglicherweise“ – sie schließen eindeutige Handlungsaufforderungen aus.\n\nDie Aussage überzeichnet den Schluss, der bewusst unentschieden bleibt.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch."
+      ],
+      "highlights": [
+        "drei verschiedene Eingriffe mit drei verschiedenen Kostenstrukturen",
+        "beruhen auf Selbstauskünften der Unternehmen",
+        "ist bislang nicht belegt, weil langfristige Kontrollstudien weitgehend fehlen",
+        "kein Naturgesetz, sondern ein historisches Arrangement",
+        "Die Debatte bleibt daher offen."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-04",
+      "case_id": "DE T.1.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen prüfen Schlussfolgerungen aus dem Gesamttext sowie die Bedeutung einzelner Ausdrücke in ihrem Zusammenhang.",
+      "kind": "reading",
+      "statements": [
+        "Das Wort „verdichtet“ bedeutet in Absatz 6, dass dieselbe Stundenzahl auf weniger Tage verteilt wird.",
+        "Der Ausdruck „verzerrt“ beschreibt in Absatz 4 eine einseitig zusammengesetzte Stichprobe.",
+        "Mit „stille Umverteilung“ meint Absatz 5 eine offen ausgewiesene Lohnerhöhung für alle Beschäftigten.",
+        "Aus Absatz 8 lässt sich schließen, dass die kurze Laufzeit der Studien ihre Aussagekraft begrenzt.",
+        "Die Wendung „Reiz des Neuen“ in Absatz 9 signalisiert, dass Gewöhnungseffekte bereits ausgeschlossen werden konnten."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Das Wort „verdichtet“ bedeutet in Absatz 6, dass dieselbe Stundenzahl auf weniger Tage verteilt wird.**\n\nAbsatz 6 stellt die Stundenzahl ausdrücklich als unverändert dar und ergänzt: „sie wird lediglich verdichtet“.\n\nVerdichtung meint hier also eine Umverteilung derselben Menge Arbeit auf weniger Tage, nicht deren Reduktion.\n\nDas Wort „lediglich“ betont zusätzlich, dass nichts wegfällt. Die Aussage trifft die Bedeutung des Ausdrucks im Kontext genau.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**B) Der Ausdruck „verzerrt“ beschreibt in Absatz 4 eine einseitig zusammengesetzte Stichprobe.**\n\nAbsatz 4 spricht davon, die Stichprobe sei „zugunsten ohnehin flexibler und gut geführter Organisationen verzerrt“, weil nur freiwillige Betriebe teilnahmen.\n\n„Verzerrt“ ist hier ein statistischer Begriff: Die Auswahl weicht systematisch von der Gesamtheit ab.\n\n**Tipp:** Fachbegriffe wie Verzerrung oder Selbstauswahl klären sich meist im selben Satz, in dem sie stehen.\n\nDie Aussage gibt die Bedeutung im Textzusammenhang zutreffend wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**C) Mit „stille Umverteilung“ meint Absatz 5 eine offen ausgewiesene Lohnerhöhung für alle Beschäftigten.**\n\nAbsatz 5 beschreibt, das scheinbar kostenlose Versprechen könne sich langfristig „in eine stille Umverteilung verwandeln“ – gemeint sind verdeckte Folgekosten, etwa schwächeres Lohnwachstum oder höhere Preise.\n\nDas Adjektiv „still“ markiert genau das Gegenteil von offen ausgewiesen, und von einer Erhöhung ist an keiner Stelle die Rede.\n\n**Falle:** Ein Begriff wird hier in sein Gegenteil verkehrt, obwohl das Substantiv „Umverteilung“ korrekt übernommen wurde.\n\nDie Aussage ist unzutreffend, weil der Text verdeckte Lasten und keine sichtbaren Gewinne meint.",
+        "**D) Aus Absatz 8 lässt sich schließen, dass die kurze Laufzeit der Studien ihre Aussagekraft begrenzt.**\n\nAbsatz 8 hält fest, die Studien „laufen über wenige Monate“, und nennt zusätzlich Neuheitseffekte und besondere Aufmerksamkeit in Pilotphasen als mögliche Störgrößen.\n\nDaraus folgt unmittelbar, dass kurze Beobachtungszeiträume nur begrenzte Schlüsse erlauben – der Text zieht diesen Schluss im letzten Satz des Absatzes selbst.\n\nEs handelt sich also um eine gedeckte Schlussfolgerung, nicht um eine freie Ergänzung. Die Aussage folgt korrekt aus Absatz 8.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**E) Die Wendung „Reiz des Neuen“ in Absatz 9 signalisiert, dass Gewöhnungseffekte bereits ausgeschlossen werden konnten.**\n\nAbsatz 9 fragt gerade, ob sich die frühen Befunde bestätigen, „wenn der Reiz des Neuen verflogen ist“ – die Frage ist damit ausdrücklich noch offen.\n\nDie Aussage macht aus einer Bedingung für künftige Prüfung ein bereits erzieltes Ergebnis.\n\n**Falle:** Konditionale Formulierungen im Schlussabsatz werden häufig zu vermeintlich gesicherten Befunden umgedeutet.\n\nDie Aussage ist unzutreffend, weil der Text Gewöhnungseffekte als offene Möglichkeit benennt.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch."
+      ],
+      "highlights": [
+        "sie wird lediglich verdichtet",
+        "zugunsten ohnehin flexibler und gut geführter Organisationen verzerrt",
+        "in eine stille Umverteilung verwandeln",
+        "laufen über wenige Monate",
+        "wenn der Reiz des Neuen verflogen ist"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 4,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-05",
+      "case_id": "DE T.1.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen, ob der Aufbau der Argumentation über mehrere Absätze hinweg richtig erfasst wird.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt Befunde der Befürworter und Einwände der Kritiker nebeneinander, ohne einer Seite abschließend Recht zu geben.",
+        "Die Kostenkritik in Absatz 4 und die Lohnkritik in Absatz 5 verfolgen denselben Grundgedanken: Mehrkosten tauchen an anderer Stelle wieder auf.",
+        "Der methodische Einwand in Absatz 8 richtet sich gegen die Belastbarkeit der in Absatz 2 referierten Ergebnisse.",
+        "Absatz 3 gibt die Position des Verfassers selbst wieder und nicht die von Befürwortern.",
+        "Absatz 6 dient dazu, die These zu stützen, alle staatlichen Modelle seien inhaltlich gleich."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text stellt Befunde der Befürworter und Einwände der Kritiker nebeneinander, ohne einer Seite abschließend Recht zu geben.**\n\nDie Absätze 2 und 3 tragen die Belege der Befürworter zusammen, die Absätze 4, 5 und 8 die Einwände; Absatz 9 beginnt mit „Die Debatte bleibt daher offen.“\n\nDiese Anordnung ist typisch für den akademischen Stil: Erst Evidenz, dann Gegenrede, dann ein bewusst unentschiedener Schluss.\n\n**Tipp:** Die Gesamtstruktur erkennst du am schnellsten an Absatz 9, wo der Text seine eigene Bilanz zieht.\n\nDie Aussage beschreibt den Aufbau des Textes zutreffend.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**B) Die Kostenkritik in Absatz 4 und die Lohnkritik in Absatz 5 verfolgen denselben Grundgedanken: Mehrkosten tauchen an anderer Stelle wieder auf.**\n\nAbsatz 4 zeigt Mehrkosten durch zusätzliche Einstellungen, Absatz 5 argumentiert, „die Mehrkosten langfristig irgendwo aufgefangen werden“ müssten.\n\nBeide Absätze bestreiten also nicht die positiven Erfahrungsberichte, sondern fragen, wer die Rechnung am Ende trägt.\n\nDer Unterschied liegt nur im Zeithorizont: unmittelbare Personalkosten gegenüber langfristiger Umverteilung. Die Aussage erfasst die gemeinsame Stoßrichtung beider Einwände richtig.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**C) Der methodische Einwand in Absatz 8 richtet sich gegen die Belastbarkeit der in Absatz 2 referierten Ergebnisse.**\n\nAbsatz 2 stützt sich auf Berichte der teilnehmenden Unternehmen; Absatz 8 hält dem entgegen, fast alle Studien „beruhen auf Selbstauskünften der Unternehmen und laufen über wenige Monate“.\n\nDamit greift der spätere Absatz genau die Quellenart an, auf der die früheren Befunde ruhen.\n\nDas ist keine Widerlegung der Zahlen, sondern eine Einschränkung ihrer Tragweite. Die Aussage beschreibt diesen Bezug korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**D) Absatz 3 gibt die Position des Verfassers selbst wieder und nicht die von Befürwortern.**\n\nAbsatz 3 beginnt mit „Befürworter argumentieren“ und schiebt zusätzlich „so ihre These“ ein – beides sind klare Zuschreibungssignale.\n\nDer Text referiert hier also eine fremde Position, ohne sie sich zu eigen zu machen.\n\n**Falle:** Wer solche Zuschreibungen überliest, hält referierte Thesen leicht für Behauptungen des Textes.\n\nDie Aussage ist unzutreffend, weil Absatz 3 ausdrücklich eine Fremdposition wiedergibt.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 3 und ist daher falsch.",
+        "**E) Absatz 6 dient dazu, die These zu stützen, alle staatlichen Modelle seien inhaltlich gleich.**\n\nAbsatz 6 beginnt mit der Feststellung, die staatliche Ebene zeige, „wie unterschiedlich das Etikett“ Vier-Tage-Woche gefüllt werden kann, und kontrastiert Island mit Belgien.\n\nDer Absatz belegt also Vielfalt und nicht Gleichheit; Absatz 7 zieht daraus ausdrücklich die Konsequenz für Vergleiche.\n\n**Tipp:** Der erste Satz eines Absatzes verrät meist seine Funktion im Argumentationsgang.\n\nDie Aussage kehrt die Funktion von Absatz 6 um und ist deshalb nicht haltbar.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch."
+      ],
+      "highlights": [
+        "Die Debatte bleibt daher offen.",
+        "die Mehrkosten langfristig irgendwo aufgefangen werden",
+        "beruhen auf Selbstauskünften der Unternehmen und laufen über wenige Monate",
+        "Befürworter argumentieren",
+        "wie unterschiedlich das Etikett"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 5,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-06",
+      "case_id": "DE T.1.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen, ob Zahlenangaben, Zeiträume und Einzelheiten des Textes genau erfasst wurden.",
+      "kind": "reading",
+      "statements": [
+        "Am britischen Versuch nahmen über sechzig Unternehmen mit rund dreitausend Beschäftigten teil.",
+        "Der britische Versuch erstreckte sich über sechs Monate.",
+        "Die isländischen Versuche liefen zwischen 2015 und 2019.",
+        "Belgien verabschiedete sein Gesetz zur Vier-Tage-Woche im Jahr 2019.",
+        "Mehrere Firmen berichteten laut Text von deutlich eingebrochenen Umsätzen während des Versuchs."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Am britischen Versuch nahmen über sechzig Unternehmen mit rund dreitausend Beschäftigten teil.**\n\nAbsatz 2 nennt genau diese Größenordnung: „über sechzig Unternehmen mit rund dreitausend Beschäftigten“.\n\nBeide Zahlen werden unverändert übernommen, auch die vorsichtigen Wörter „über“ und „rund“ bleiben erhalten.\n\n**Tipp:** Achte darauf, ob eine Aussage Näherungswörter streicht – das wäre bereits eine Verschärfung. Die Aussage entspricht den Angaben in Absatz 2.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**B) Der britische Versuch erstreckte sich über sechs Monate.**\n\nAbsatz 2 spricht ausdrücklich vom Ende „des sechsmonatigen Versuchs“ und stützt dies durch die Monatsangabe Juni bis Dezember 2022.\n\nDie Dauer wird im Text also doppelt abgesichert, einmal als Zeitraum und einmal als Zahlwort.\n\nSolche doppelten Angaben sind wertvoll, weil sie eine schnelle Gegenprobe erlauben. Die Aussage stimmt mit beiden Angaben überein.\n\nIn Absatz 2 heißt es wörtlich: „Am Ende des sechsmonatigen Versuchs\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**C) Die isländischen Versuche liefen zwischen 2015 und 2019.**\n\nAbsatz 6 datiert die großangelegten Versuche im öffentlichen Dienst auf den Zeitraum „zwischen 2015 und 2019“.\n\nDie Aussage übernimmt beide Jahreszahlen korrekt und ordnet sie dem richtigen Land zu.\n\nGerade bei zwei Länderbeispielen in einem Absatz lohnt sich die Zuordnungsprüfung. Die Aussage gibt die Datierung aus Absatz 6 richtig wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**D) Belgien verabschiedete sein Gesetz zur Vier-Tage-Woche im Jahr 2019.**\n\nAbsatz 6 nennt ein anderes Jahr: „Belgien verabschiedete dagegen erst 2022 ein Gesetz“.\n\n2019 ist im Text das Ende der isländischen Versuche, nicht das Datum des belgischen Gesetzes – die Aussage vertauscht also zwei benachbarte Zahlen.\n\n**Falle:** Wenn zwei Jahreszahlen dicht beieinanderstehen, prüfe immer, zu welchem Land oder Ereignis sie gehören.\n\nDie Aussage ist unzutreffend, weil das belgische Gesetz auf 2022 datiert ist.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.",
+        "**E) Mehrere Firmen berichteten laut Text von deutlich eingebrochenen Umsätzen während des Versuchs.**\n\nAbsatz 2 berichtet das Gegenteil: Der Umsatz sei im Vergleich zum Vorjahreszeitraum „stabil geblieben oder leicht gestiegen“.\n\nDie Aussage kehrt die Richtung der Entwicklung um und verschärft sie zusätzlich durch das Wort „deutlich“.\n\nWeder Einbruch noch Ausmaß finden im Text eine Grundlage. Die Aussage widerspricht der Umsatzangabe in Absatz 2.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 2 und ist daher falsch."
+      ],
+      "highlights": [
+        "über sechzig Unternehmen mit rund dreitausend Beschäftigten",
+        "Am Ende des sechsmonatigen Versuchs",
+        "zwischen 2015 und 2019",
+        "Belgien verabschiedete dagegen erst 2022 ein Gesetz",
+        "stabil geblieben oder leicht gestiegen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 6,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-07",
+      "case_id": "DE T.1.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen, ob die im Text genannten Ursachen und ihre Folgen korrekt zugeordnet werden.",
+      "kind": "reading",
+      "statements": [
+        "Laut Absatz 4 entstehen Mehrkosten in anwesenheitsgebundenen Branchen deshalb, weil zusätzliche Einstellungen nötig werden.",
+        "Nach Absatz 5 entstehen mögliche Folgekosten daraus, dass volle Gehälter bei verkürzter Arbeitszeit zugesagt werden.",
+        "Der Text führt die freiwillige Teilnahme der Betriebe als Ursache der verzerrten Stichprobe an.",
+        "Laut Absatz 8 sind Neuheitseffekte ausgeschlossen, weil Betriebe in Pilotphasen weniger aufmerksam organisieren.",
+        "Der Text erklärt die Entstehung der Vierzigstundenwoche damit, dass sie gezielt auf Grundlage von Produktivitätsmessungen entworfen wurde."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Laut Absatz 4 entstehen Mehrkosten in anwesenheitsgebundenen Branchen deshalb, weil zusätzliche Einstellungen nötig werden.**\n\nAbsatz 4 nennt genau diese Ursache: Eine Verkürzung der Arbeitszeit „meist zusätzliche Einstellungen erfordert“, um dieselben Öffnungs- und Betriebszeiten abzudecken.\n\nDie Aussage überträgt die Kausalrichtung unverändert: erst der Deckungsbedarf, dann das zusätzliche Personal, dann die höheren Kosten.\n\nWichtig ist das einschränkende „meist“, das der Text selbst setzt. Die Aussage gibt die Ursache-Wirkungs-Kette aus Absatz 4 korrekt wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**B) Nach Absatz 5 entstehen mögliche Folgekosten daraus, dass volle Gehälter bei verkürzter Arbeitszeit zugesagt werden.**\n\nAbsatz 5 setzt genau hier an: „Wenn Betriebe volle Gehälter für verkürzte Arbeitszeit zusagen“, müssten die Mehrkosten langfristig irgendwo aufgefangen werden.\n\nDer konditionale Anschluss markiert die Zusage als Auslöser, die Kanäle der Absorption als Folge.\n\nDie Aussage bleibt zudem im Modus der Möglichkeit und behauptet keinen eingetretenen Schaden. Sie entspricht damit der Argumentation in Absatz 5.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**C) Der Text führt die freiwillige Teilnahme der Betriebe als Ursache der verzerrten Stichprobe an.**\n\nAbsatz 4 verknüpft beides ausdrücklich: Es nahmen nur Unternehmen teil, „die sich freiwillig meldeten“, sodass die Stichprobe zugunsten flexibler Organisationen verzerrt sei.\n\nDas Wort „sodass“ ist der grammatische Scharnierpunkt, der Ursache und Folge verbindet.\n\n**Tipp:** Konjunktionen wie „sodass“, „weil“ oder „daher“ sind die zuverlässigsten Marker für Kausalfragen.\n\nDie Aussage folgt genau dieser im Text formulierten Verbindung.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**D) Laut Absatz 8 sind Neuheitseffekte ausgeschlossen, weil Betriebe in Pilotphasen weniger aufmerksam organisieren.**\n\nAbsatz 8 behauptet das Gegenteil in beiden Teilen: Neuheitseffekte können die Ergebnisse beeinflussen, und „Betriebe in Pilotphasen besonders aufmerksam organisieren“.\n\nDie Aussage dreht sowohl die Folge als auch die Begründung um – aus einer möglichen Störgröße wird ein Ausschluss, aus besonderer Aufmerksamkeit wird Nachlässigkeit.\n\n**Falle:** Doppelt gedrehte Aussagen wirken plausibel, weil sie Wörter aus dem Text übernehmen.\n\nDie Aussage ist unzutreffend, weil Absatz 8 gerade vor solchen Effekten warnt.",
+        "**E) Der Text erklärt die Entstehung der Vierzigstundenwoche damit, dass sie gezielt auf Grundlage von Produktivitätsmessungen entworfen wurde.**\n\nAbsatz 3 sagt ausdrücklich, die Vierzigstundenwoche „sei nie um tatsächliche Produktivität herum entworfen worden“, sondern folge der Taktung einer Industriegesellschaft.\n\nDie Aussage ersetzt diese historische Erklärung durch ihr Gegenteil.\n\nDass es sich dabei um eine Position der Befürworter handelt, ändert nichts daran, dass der Text keine produktivitätsbasierte Entstehung behauptet. Die Aussage widerspricht Absatz 3.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte."
+      ],
+      "highlights": [
+        "meist zusätzliche Einstellungen erfordert",
+        "Wenn Betriebe volle Gehälter für verkürzte Arbeitszeit zusagen",
+        "die sich freiwillig meldeten",
+        "Betriebe in Pilotphasen besonders aufmerksam organisieren",
+        "sei nie um tatsächliche Produktivität herum entworfen worden"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 7,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-08",
+      "case_id": "DE T.1.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie stark der Text einzelne Befunde gewichtet und welche Haltung er insgesamt einnimmt.",
+      "kind": "reading",
+      "statements": [
+        "Der Text bewertet die Ergebnisse des britischen Versuchs als abschließenden Beweis für die Übertragbarkeit des Modells.",
+        "Die Einwände der Kritiker werden im Text als ernst zu nehmende Vorbehalte dargestellt.",
+        "Der Text formuliert zurückhaltend, wenn er über langfristige Wirkungen spricht.",
+        "Der Text bezeichnet die Vier-Tage-Woche ausdrücklich als wirtschaftlichen Irrweg.",
+        "Der Text räumt ein, dass offen bleibt, welche Branchen bei einer Verkürzung zurückbleiben."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text bewertet die Ergebnisse des britischen Versuchs als abschließenden Beweis für die Übertragbarkeit des Modells.**\n\nUnmittelbar nach der Darstellung des Versuchs setzt Absatz 4 ein: „Kritiker warnen dagegen vor voreiligen Verallgemeinerungen.“\n\nDiese Platzierung ist selbst ein Gewichtungssignal – der Text stellt die positiven Befunde vor, relativiert sie aber sofort.\n\n**Tipp:** Wo unmittelbar nach einer Evidenz ein „dagegen“ folgt, ist kein abschließendes Urteil beabsichtigt.\n\nDie Aussage überschätzt die Verbindlichkeit, die der Text den britischen Ergebnissen beimisst.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 4 und ist daher falsch.",
+        "**B) Die Einwände der Kritiker werden im Text als ernst zu nehmende Vorbehalte dargestellt.**\n\nAbsatz 5 liefert den Bezugspunkt für diese Aussage.\n\nDer Text räumt der Gegenposition mehrere Absätze ein und leitet sie sachlich ein: „Auch Ökonominnen und Ökonomen melden Bedenken an“.\n\nDie Einwände werden weder ironisiert noch entkräftet, sondern mit eigenen Begründungen und Mechanismen dargestellt.\n\nAuch der Schlussabsatz greift sie wieder auf, indem er die strittigen Punkte benennt. Die Aussage beschreibt die Gewichtung im Text zutreffend.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**C) Der Text formuliert zurückhaltend, wenn er über langfristige Wirkungen spricht.**\n\nAbsatz 8 sagt ausdrücklich, die Dauerhaftigkeit der Gewinne sei „bislang nicht belegt“, und Absatz 5 arbeitet durchgehend mit Konjunktiv und Möglichkeitsformen.\n\nDiese Sprache markiert eine bewusst vorsichtige Haltung gegenüber allem, was über die kurzen Pilotphasen hinausreicht.\n\n**Tipp:** Wörter wie „könnte“, „möglicherweise“ oder „bislang“ sind verlässliche Hinweise auf die Haltung eines Textes.\n\nDie Aussage trifft den vorsichtigen Ton des Textes genau.\n\nIn Absatz 8 heißt es wörtlich: „ist bislang nicht belegt\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**D) Der Text bezeichnet die Vier-Tage-Woche ausdrücklich als wirtschaftlichen Irrweg.**\n\nAbsatz 9 wertet nicht in dieser Weise, sondern hält fest: „Unstrittig ist, dass die Fünf-Tage-Woche kein Naturgesetz“ sei, und lässt die Bedingungen einer Verkürzung offen.\n\nEine Verurteilung würde der gesamten Anlage des Textes widersprechen, der Belege und Einwände nebeneinanderstellt.\n\n**Falle:** Ausführliche Kritik ist noch keine Ablehnung – sie kann auch der Prüfung einer Idee dienen.\n\nDie Aussage unterstellt dem Text ein Urteil, das er nicht fällt.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch.",
+        "**E) Der Text räumt ein, dass offen bleibt, welche Branchen bei einer Verkürzung zurückbleiben.**\n\nAbsatz 9 nennt als strittigen Punkt ausdrücklich, „und welche Branchen dabei zurückbleiben“.\n\nDamit verweist der Schluss zurück auf die in Absatz 4 genannten Sektoren mit Anwesenheitspflicht, ohne die Frage zu entscheiden.\n\nDas Eingeständnis ist Teil der offenen Bilanz des Textes. Die Aussage gibt diese Selbsteinschränkung korrekt wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "Kritiker warnen dagegen vor voreiligen Verallgemeinerungen.",
+        "Auch Ökonominnen und Ökonomen melden Bedenken an",
+        "ist bislang nicht belegt",
+        "Unstrittig ist, dass die Fünf-Tage-Woche kein Naturgesetz",
+        "und welche Branchen dabei zurückbleiben"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 8,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-09",
+      "case_id": "DE T.1.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen den im Text genannten Modellen und Beispielen.",
+      "kind": "reading",
+      "statements": [
+        "Die isländischen Versuche begannen vor der Verabschiedung des belgischen Gesetzes.",
+        "Der Text gibt eindeutig an, ob der britische Versuch vor oder nach dem belgischen Gesetzesbeschluss lag.",
+        "Die Fünf-Tage-Woche prägte laut Absatz 1 weite Teile des zwanzigsten Jahrhunderts.",
+        "Der Text vergleicht das belgische Modell mit einer echten Arbeitszeitverkürzung und behandelt beide als denselben Eingriff.",
+        "Seit etwa einem Jahrzehnt wird die überkommene Arbeitszeitordnung laut Text offen infrage gestellt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Die isländischen Versuche begannen vor der Verabschiedung des belgischen Gesetzes.**\n\nAbsatz 6 datiert die isländischen Versuche auf den Zeitraum „zwischen 2015 und 2019“, das belgische Gesetz auf 2022.\n\nSelbst das späteste isländische Jahr liegt damit vor dem belgischen Beschluss, sodass die Reihenfolge eindeutig ist.\n\n**Tipp:** Vergleiche bei Reihenfolgefragen zuerst die Endpunkte der Zeiträume. Die Aussage gibt die Chronologie aus Absatz 6 korrekt wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**B) Der Text gibt eindeutig an, ob der britische Versuch vor oder nach dem belgischen Gesetzesbeschluss lag.**\n\nAbsatz 2 nennt Juni bis Dezember 2022 für den britischen Versuch, Absatz 6 lediglich das Jahr, in dem „Belgien verabschiedete dagegen erst 2022 ein Gesetz“.\n\nBeide Ereignisse fallen also in dasselbe Jahr, ohne dass der Text einen genauen Monat für den Gesetzesbeschluss nennt.\n\n**Falle:** Wo eine Angabe nur jahresgenau ist, lässt sich keine Reihenfolge innerhalb des Jahres behaupten.\n\nDie Aussage ist unzutreffend, weil der Text diese Abfolge gar nicht festlegt.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.",
+        "**C) Die Fünf-Tage-Woche prägte laut Absatz 1 weite Teile des zwanzigsten Jahrhunderts.**\n\nAbsatz 1 formuliert es fast wörtlich so: Die Fünf-Tage-Woche galt „über weite Strecken des zwanzigsten Jahrhunderts“ als selbstverständliche Ordnung.\n\nDie Aussage übernimmt sowohl den Zeitraum als auch die Reichweite ohne Verschärfung.\n\n„Über weite Strecken“ bedeutet nicht „durchgehend“, und die Aussage behauptet auch nichts anderes. Sie entspricht damit Absatz 1.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.",
+        "**D) Der Text vergleicht das belgische Modell mit einer echten Arbeitszeitverkürzung und behandelt beide als denselben Eingriff.**\n\nAbsatz 7 unterscheidet ausdrücklich „drei verschiedene Eingriffe“ mit unterschiedlichen Kostenstrukturen, darunter Verkürzung und Verdichtung.\n\nDer Vergleich findet also statt, aber gerade mit dem Ziel, die Modelle auseinanderzuhalten.\n\n**Tipp:** Ein Vergleich im Text bedeutet nicht Gleichsetzung – oft ist er die Grundlage einer Unterscheidung.\n\nDie Aussage kehrt die Absicht von Absatz 7 um und ist deshalb nicht haltbar.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**E) Seit etwa einem Jahrzehnt wird die überkommene Arbeitszeitordnung laut Text offen infrage gestellt.**\n\nAbsatz 1 datiert den Umbruch selbst: „Seit etwa einem Jahrzehnt jedoch stellen Unternehmen“, Forschungsinstitute und Regierungen die Annahme offen infrage.\n\nDie Aussage übernimmt sowohl die ungefähre Zeitangabe als auch die Offenheit der Infragestellung.\n\nDas Wort „etwa“ bleibt erhalten und verhindert eine unzulässige Präzisierung. Die Aussage entspricht der Zeitangabe in Absatz 1.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "zwischen 2015 und 2019",
+        "Belgien verabschiedete dagegen erst 2022 ein Gesetz",
+        "über weite Strecken des zwanzigsten Jahrhunderts",
+        "drei verschiedene Eingriffe",
+        "Seit etwa einem Jahrzehnt jedoch stellen Unternehmen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "t.1"
+    },
+    {
+      "id": "de-t-1-10",
+      "case_id": "DE T.1.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen, ob die Bilanz des Textes und die von ihm offen gelassenen Fragen richtig erfasst werden.",
+      "kind": "reading",
+      "statements": [
+        "Der Text schließt mit der Feststellung, dass die dauerhafte Tragfähigkeit einer Verkürzung ohne Lohnverlust strittig bleibt.",
+        "Laut Schluss könnte sich die Frage eher in vielen einzelnen betrieblichen Entscheidungen klären als in Grundsatzdebatten.",
+        "Der Text erklärt die Frage der langfristigen Wirkungen für abschließend geklärt.",
+        "Der Schlussabsatz fordert ein gesetzliches Verbot der Fünf-Tage-Woche.",
+        "Der Text hält fest, dass eine Bestätigung der frühen Befunde noch aussteht."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text schließt mit der Feststellung, dass die dauerhafte Tragfähigkeit einer Verkürzung ohne Lohnverlust strittig bleibt.**\n\nAbsatz 9 formuliert genau dies: „strittig bleibt, unter welchen Bedingungen eine Verkürzung ohne Lohnverlust dauerhaft tragfähig ist“.\n\nDie Aussage übernimmt sowohl die Einschränkung „ohne Lohnverlust“ als auch die Bedingung der Dauerhaftigkeit.\n\nBeide Elemente sind wichtig, weil der Text kurzfristige Erfolge ja durchaus berichtet. Die Aussage entspricht dem Schlussabsatz.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**B) Laut Schluss könnte sich die Frage eher in vielen einzelnen betrieblichen Entscheidungen klären als in Grundsatzdebatten.**\n\nAbsatz 9 vermutet, die Frage werde sich weniger in Grundsatzdebatten entscheiden als „in der Summe einzelner betrieblicher Entscheidungen“.\n\nDie Aussage behält das vorsichtige „könnte“ bei und entspricht damit dem Konjunktiv des Textes.\n\nEs handelt sich um eine Vermutung über den Ort der Entscheidung, nicht um eine Prognose des Ergebnisses. Die Aussage gibt den Schluss richtig wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**C) Der Text erklärt die Frage der langfristigen Wirkungen für abschließend geklärt.**\n\nAbsatz 8 stellt ausdrücklich fest, die Dauerhaftigkeit der berichteten Gewinne sei „bislang nicht belegt“, weil langfristige Kontrollstudien fehlen.\n\nEin abschließendes Urteil setzt Daten voraus, die der Text selbst als nicht vorhanden beschreibt.\n\n**Falle:** Viele Detailbefunde im Text verleiten dazu, Sicherheit zu unterstellen, wo der Text ausdrücklich Lücken benennt.\n\nDie Aussage widerspricht der methodischen Bilanz in Absatz 8.\n\nIn Absatz 8 heißt es wörtlich: „ist bislang nicht belegt\". Daran entscheidet sich die Bewertung der Aussage.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**D) Der Schlussabsatz fordert ein gesetzliches Verbot der Fünf-Tage-Woche.**\n\nAbsatz 9 beginnt mit „Die Debatte bleibt daher offen.“ und enthält keinerlei Forderung an den Gesetzgeber.\n\nDer Text stellt lediglich fest, dass die bestehende Ordnung historisch gewachsen und damit veränderbar ist – Veränderbarkeit ist keine Handlungsaufforderung.\n\n**Tipp:** Unterscheide streng zwischen „kann verändert werden“ und „soll verboten werden“.\n\nDie Aussage legt dem Schluss eine Forderung bei, die dort nicht steht.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch.",
+        "**E) Der Text hält fest, dass eine Bestätigung der frühen Befunde noch aussteht.**\n\nAbsatz 9 knüpft die weitere Entwicklung ausdrücklich daran, „ob sich die frühen Befunde bestätigen“, wenn der Reiz des Neuen verflogen ist.\n\nDamit markiert der Text die bisherigen Ergebnisse als vorläufig und nicht als gesichert.\n\nDas fügt sich nahtlos an den methodischen Vorbehalt aus Absatz 8. Die Aussage gibt diese offene Frage korrekt wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "strittig bleibt, unter welchen Bedingungen eine Verkürzung ohne Lohnverlust dauerhaft tragfähig ist",
+        "in der Summe einzelner betrieblicher Entscheidungen",
+        "ist bislang nicht belegt",
+        "Die Debatte bleibt daher offen.",
+        "ob sich die frühen Befunde bestätigen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.1"
+    }
+  ]
+}

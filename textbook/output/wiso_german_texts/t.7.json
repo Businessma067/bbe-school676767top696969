@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.7",
+    "title": "Antibiotikaresistenz und die Ökonomie der Entdeckungslücke",
+    "passage": "(1) Die moderne Medizin beruht auf einer stillen Voraussetzung: dass bakterielle Infektionen behandelbar bleiben. Hüftoperationen, Kaiserschnitte, Chemotherapien und Organtransplantationen sind nur deshalb vertretbar, weil sich die begleitenden Infektionsrisiken mit Antibiotika beherrschen lassen. Genau diese Voraussetzung wird brüchig. Eine im Fachjournal The Lancet veröffentlichte Analyse schätzte, dass im Jahr 2019 weltweit rund 1,27 Millionen Todesfälle unmittelbar auf antibiotikaresistente Erreger zurückzuführen waren und etwa fünf Millionen Todesfälle mit ihnen in Verbindung standen.\n\n(2) Resistenz ist kein Betriebsunfall, sondern Evolution unter Auswahldruck. Jede Anwendung eines Wirkstoffs begünstigt jene Bakterien, die ihn überstehen, und beschleunigt damit die Ausbreitung widerstandsfähiger Varianten. Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede vor genau diesem Mechanismus. Verschärft wird er durch unnötige Verschreibungen bei viralen Infekten, durch abgebrochene Therapien und durch den massenhaften Einsatz in der Tierhaltung, auf den in vielen Ländern ein erheblicher Teil des gesamten Antibiotikaverbrauchs entfällt.\n\n(3) Die naheliegende Antwort wären neue Wirkstoffe. Doch die Entwicklungspipeline ist dünn: Seit den 1980er-Jahren wurde keine wirklich neue Wirkstoffklasse gegen gramnegative Bakterien in die breite klinische Anwendung gebracht. Große Pharmaunternehmen haben ihre Antibiotikaforschung reihenweise eingestellt; Novartis, Sanofi und AstraZeneca gaben entsprechende Programme auf oder verkauften sie. Was bleibt, sind kleine, hoch spezialisierte Biotech-Firmen mit dünner Kapitaldecke.\n\n(4) Der Grund liegt weniger in der Biologie als in der Ökonomie. Ein neues Antibiotikum wird, wenn es gelingt, sofort in Reserve gelegt: Ärztinnen und Ärzte sollen es gerade nicht breit einsetzen, um Resistenzen hinauszuzögern. Der Marktwert eines Medikaments hängt aber am Absatz. Ein Krebsmedikament kann pro Behandlung Zehntausende Euro erlösen, ein Antibiotikum wird über wenige Tage gegeben und kostet oft weniger als eine Nacht im Krankenhaus. Das Ergebnis ist ein Markt, der genau die Produkte bestraft, die er am dringendsten braucht.\n\n(5) Wie brutal diese Rechnung ist, zeigte der Fall des US-Unternehmens Achaogen: Es erhielt 2018 die Zulassung für ein Antibiotikum gegen resistente Erreger und meldete weniger als ein Jahr später Insolvenz an. Ein zugelassenes, medizinisch wertvolles Produkt reichte nicht aus, um die Kosten der Entwicklung zu decken. Für Investoren war das ein Signal, das schwerer wog als jede politische Absichtserklärung.\n\n(6) Ökonominnen und Ökonomen sprechen deshalb von einem doppelten Marktversagen. Erstens ist Wirksamkeit ein Allgemeingut: Wer ein Antibiotikum zurückhaltend einsetzt, nützt allen, ohne dafür bezahlt zu werden. Zweitens ist der erwartete Ertrag einer Neuentwicklung so gering, dass rationale Unternehmen das Feld verlassen, obwohl der gesellschaftliche Nutzen enorm wäre. Vorgeschlagen werden daher sogenannte Pull-Anreize, die nicht den Verkauf, sondern die Verfügbarkeit belohnen.\n\n(7) Das bekannteste Modell ist das Abonnement. Das Vereinigte Königreich startete 2020 einen Pilotversuch, bei dem der Gesundheitsdienst Herstellern eine feste Jahressumme für den Zugang zu einem Reserveantibiotikum zahlt, unabhängig von der verordneten Menge. Das entkoppelt Erlös und Absatzmenge und macht Zurückhaltung wirtschaftlich tragbar. Kritische Stimmen halten die bisher gebotenen Beträge jedoch für zu niedrig, um die Entwicklungskosten eines neuen Wirkstoffs zu rechtfertigen, und verweisen darauf, dass ein nationaler Markt allein den globalen Bedarf nicht finanzieren kann.\n\n(8) Andere setzen weniger auf neue Moleküle als auf besseren Umgang mit den vorhandenen. Programme zur Verschreibungskontrolle, schnelle Diagnostik, die bakterielle von viralen Infekten unterscheidet, Impfungen, die Infektionen von vornherein verhindern, und strengere Hygiene in Kliniken gelten als vergleichsweise günstig. Die Niederlande und die skandinavischen Länder weisen seit Jahren niedrige Verbrauchs- und Resistenzraten auf, während in anderen Regionen Antibiotika teilweise ohne Rezept erhältlich sind. Kritisch angemerkt wird allerdings, dass sorgsamer Umgang den Zeitpunkt der nächsten Resistenzwelle verschiebt, aber nicht verhindert.\n\n(9) Damit steht eine Frage im Raum, die über die Medizin hinausweist: Wie finanziert eine Gesellschaft ein Gut, dessen Wert gerade darin besteht, möglichst selten gebraucht zu werden? Feuerwehren und Deiche werden nicht nach Einsatzstunden bezahlt. Ob sich dieses Prinzip auf die Arzneimittelentwicklung übertragen lässt und wer dafür aufkommt, wenn Erreger keine Grenzen kennen, ist bislang nicht entschieden.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-7-01",
+      "case_id": "DE T.7.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das Verständnis der Ausgangslage, der Entstehung von Resistenzen und der leeren Entwicklungspipeline.",
+      "kind": "reading",
+      "statements": [
+        "Laut Text sind Eingriffe wie Hüftoperationen und Chemotherapien nur vertretbar, weil sich die begleitenden Infektionsrisiken mit Antibiotika beherrschen lassen.",
+        "Die zitierte Analyse führt für 2019 rund fünf Millionen Todesfälle unmittelbar auf resistente Erreger zurück.",
+        "Resistenz entsteht laut Text durch Evolution unter Auswahldruck und nicht durch einen Betriebsunfall.",
+        "Die Gefahr der Resistenzbildung wurde laut Text erst in den 1980er-Jahren erstmals formuliert.",
+        "Große Pharmaunternehmen haben ihre Antibiotikaforschung dem Text zufolge reihenweise eingestellt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Laut Text sind Eingriffe wie Hüftoperationen und Chemotherapien nur vertretbar, weil sich die begleitenden Infektionsrisiken mit Antibiotika beherrschen lassen.**\n\nAbsatz 1 stellt der Diagnose eine Bedingung voran, die im Alltag niemand ausspricht: „dass bakterielle Infektionen behandelbar bleiben“. Erst daraus leitet der Text ab, warum Hüftoperationen, Kaiserschnitte, Chemotherapien und Organtransplantationen zu verantworten sind – nicht weil sie harmlos wären, sondern weil das begleitende Infektionsrisiko beherrschbar ist.\n\nDie Aussage übernimmt diese Richtung von Bedingung und Folge, ohne etwas hinzuzufügen: Sie behauptet keinen Rückgang der Eingriffe, sondern nur deren Abhängigkeit von wirksamen Wirkstoffen.\n\nGenau diese Abhängigkeit meint Absatz 1, wenn er die moderne Medizin auf „einer stillen Voraussetzung“ beruhen lässt – die Aussage liegt damit auf der Linie des Textes.",
+        "**B) Die zitierte Analyse führt für 2019 rund fünf Millionen Todesfälle unmittelbar auf resistente Erreger zurück.**\n\nAbsatz 1 führt zwei Zahlen mit klar getrennten Definitionen: „rund 1,27 Millionen Todesfälle unmittelbar auf antibiotikaresistente Erreger zurückzuführen waren“ und etwa fünf Millionen, die mit ihnen lediglich in Verbindung standen. Das eine ist eine Zuschreibung, das andere eine Assoziation.\n\nDie Aussage nimmt die große Zahl und schiebt sie in die engere Kategorie. Der Befund wird damit nicht neu erfunden, aber um das Vierfache verschärft.\n\n**Falle:** Wo ein Text zwei Größen mit „unmittelbar“ und „in Verbindung“ unterscheidet, prüfe zuerst, welches Etikett zu welcher Zahl gehört.\n\nDie Aussage hält dem Text nicht stand, weil Absatz 1 der unmittelbaren Ursache ausdrücklich 1,27 Millionen zuordnet.",
+        "**C) Resistenz entsteht laut Text durch Evolution unter Auswahldruck und nicht durch einen Betriebsunfall.**\n\nAbsatz 2 beginnt mit genau dieser Gegenüberstellung: „Resistenz ist kein Betriebsunfall, sondern Evolution unter Auswahldruck.“ Der Text erklärt anschließend auch, wie der Mechanismus arbeitet – jede Anwendung begünstigt die Bakterien, die sie überstehen, und beschleunigt deren Ausbreitung.\n\nDie Aussage übernimmt beide Hälften der Formulierung: die Verneinung des Zufalls und die positive Bestimmung als Evolution. Sie erklärt Resistenz damit nicht zum Fehler einzelner Ärzte, sondern zur Folge des Auswahldrucks, den jeder Einsatz erzeugt.\n\nDa Begriff und Abgrenzung dem Wortlaut von Absatz 2 folgen, gibt die Aussage die Ursachenerklärung des Textes korrekt wieder.",
+        "**D) Die Gefahr der Resistenzbildung wurde laut Text erst in den 1980er-Jahren erstmals formuliert.**\n\nAbsatz 2 datiert die Warnung deutlich früher: „Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede“ vor genau diesem Mechanismus. Das Problem war also bekannt, bevor die breite Anwendung überhaupt ihren Höhepunkt erreichte.\n\nDie 1980er-Jahre kommen im Text vor, aber in anderer Funktion: Absatz 3 nennt sie als Zeitpunkt, seit dem keine wirklich neue Wirkstoffklasse gegen gramnegative Bakterien mehr in die breite Anwendung kam. Die Aussage schiebt diese Jahreszahl an die Stelle der Erstwarnung.\n\n**Tipp:** Halte Jahreszahlen an ihren Absatz gebunden; Daten aus Nachbarabsätzen lassen sich leicht vertauschen.\n\nDie Aussage scheitert, weil Absatz 2 die Warnung ausdrücklich auf 1945 legt.",
+        "**E) Große Pharmaunternehmen haben ihre Antibiotikaforschung dem Text zufolge reihenweise eingestellt.**\n\nAbsatz 3 sagt es wörtlich: „Große Pharmaunternehmen haben ihre Antibiotikaforschung reihenweise eingestellt“, und belegt es mit Novartis, Sanofi und AstraZeneca, die Programme aufgaben oder verkauften. Übrig bleiben laut Text kleine Biotech-Firmen mit dünner Kapitaldecke.\n\nDie Aussage bleibt bei dieser Feststellung und behauptet weder ein Verbot noch ein vollständiges Ende aller Forschung. Genau in dieser Zurückhaltung liegt ihr Wert: Sie referiert den Rückzug der Großen, nicht das Verschwinden des Feldes.\n\nWeil Absatz 3 diesen Rückzug samt Beispielen ausformuliert, deckt der Text die Aussage vollständig."
+      ],
+      "highlights": [
+        "dass bakterielle Infektionen behandelbar bleiben",
+        "rund 1,27 Millionen Todesfälle unmittelbar auf antibiotikaresistente Erreger zurückzuführen waren",
+        "Resistenz ist kein Betriebsunfall, sondern Evolution unter Auswahldruck",
+        "Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede",
+        "Große Pharmaunternehmen haben ihre Antibiotikaforschung reihenweise eingestellt"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-02",
+      "case_id": "DE T.7.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen die Marktlogik, das Fallbeispiel und den Begriff des doppelten Marktversagens.",
+      "kind": "reading",
+      "statements": [
+        "Ein neues Antibiotikum soll laut Text nach der Zulassung möglichst breit eingesetzt werden, um die Entwicklungskosten zu decken.",
+        "Der Text sieht die Ursache der Entdeckungslücke eher in ökonomischen als in biologischen Gründen.",
+        "Achaogen meldete laut Text weniger als ein Jahr nach der Zulassung seines Antibiotikums Insolvenz an.",
+        "Das doppelte Marktversagen besteht laut Text darin, dass Wirksamkeit ein Allgemeingut ist und der erwartete Ertrag einer Neuentwicklung gering bleibt.",
+        "Pull-Anreize sollen laut Text vor allem das Verkaufsvolumen eines Antibiotikums belohnen."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Ein neues Antibiotikum soll laut Text nach der Zulassung möglichst breit eingesetzt werden, um die Entwicklungskosten zu decken.**\n\nAbsatz 4 beschreibt das Gegenteil: Ein neues Antibiotikum wird, wenn es gelingt, „sofort in Reserve gelegt“, und Ärztinnen und Ärzte sollen es gerade nicht breit einsetzen, um Resistenzen hinauszuzögern.\n\nDie Aussage macht daraus eine Vermarktungsstrategie und dreht damit die medizinische Logik um. Der Absatz baut seine Pointe aber genau auf diesem Konflikt auf: Der Marktwert hängt am Absatz, während der Wirkstoff aus fachlichen Gründen möglichst wenig verordnet werden soll.\n\nWer die Reserveregel streicht, löst den Widerspruch auf, der den ganzen Rest des Textes trägt – deshalb ist die Aussage mit Absatz 4 nicht vereinbar.",
+        "**B) Der Text sieht die Ursache der Entdeckungslücke eher in ökonomischen als in biologischen Gründen.**\n\nAbsatz 4 eröffnet mit dem Satz „Der Grund liegt weniger in der Biologie als in der Ökonomie“ und liefert anschließend die Belege: Reservestatus, kurze Anwendungsdauer, ein Preis unter dem einer Krankenhausnacht.\n\nDie Aussage gibt diese Gewichtung wieder, ohne sie zu übertreiben. Sie sagt „eher“ und nicht „ausschließlich“ – und trifft damit genau die Abstufung des Textes, der biologische Schwierigkeiten nicht leugnet, aber in den Hintergrund stellt.\n\nDass die folgenden Absätze mit Fallbeispiel und Marktversagensbegriff nachlegen, bestätigt die Lesart: Die Ökonomie ist im Text die tragende Erklärung.",
+        "**C) Achaogen meldete laut Text weniger als ein Jahr nach der Zulassung seines Antibiotikums Insolvenz an.**\n\nAbsatz 5 nennt beide Ereignisse in einem Satz: Das Unternehmen „erhielt 2018 die Zulassung für ein Antibiotikum gegen resistente Erreger und meldete weniger als ein Jahr später Insolvenz an“.\n\nDie Aussage übernimmt Reihenfolge und Abstand unverändert und fügt keine Erklärung hinzu, die der Text nicht gibt. Damit bleibt auch die Funktion des Beispiels erhalten: Es soll zeigen, wie schnell ein medizinisch wertvolles Produkt wirtschaftlich scheitern kann.\n\nGenau diese Abfolge macht den Fall im Text zum Signal, das für Investoren schwerer wog als jede politische Absichtserklärung – die Aussage referiert sie korrekt.",
+        "**D) Das doppelte Marktversagen besteht laut Text darin, dass Wirksamkeit ein Allgemeingut ist und der erwartete Ertrag einer Neuentwicklung gering bleibt.**\n\nAbsatz 6 zählt die beiden Bestandteile ausdrücklich auf: „Erstens ist Wirksamkeit ein Allgemeingut“, weil zurückhaltender Einsatz allen nützt, ohne vergütet zu werden. Und weiter: „Zweitens ist der erwartete Ertrag einer Neuentwicklung so gering, dass rationale Unternehmen das Feld verlassen“.\n\nDie Aussage fasst beide Punkte zusammen und erfindet keinen dritten hinzu. Das ist hier der entscheidende Test, denn „doppelt“ ist im Text eine Zählung und nicht bloß ein Verstärkungswort.\n\nWeil Zahl und Inhalt der beiden Versagensgründe mit Absatz 6 übereinstimmen, gibt die Aussage den Begriff korrekt wieder.",
+        "**E) Pull-Anreize sollen laut Text vor allem das Verkaufsvolumen eines Antibiotikums belohnen.**\n\nAbsatz 6 definiert sie am Ende genau umgekehrt: als „sogenannte Pull-Anreize, die nicht den Verkauf, sondern die Verfügbarkeit belohnen“. Die Formulierung ist als Kontrast gebaut, der Verkauf wird ausdrücklich ausgeschlossen.\n\nDie Aussage greift die verworfene Hälfte heraus. Damit würde das Instrument genau jenen Absatzanreiz verstärken, den Absatz 4 als Ursache des Problems beschreibt – aus dem Lösungsvorschlag wird die Krankheit.\n\n**Falle:** Bei „nicht A, sondern B“ steht die gesuchte Antwort immer hinter dem „sondern“.\n\nDie Aussage ist unzutreffend, weil Pull-Anreize im Text Verfügbarkeit und nicht Menge honorieren."
+      ],
+      "highlights": [
+        "sofort in Reserve gelegt",
+        "Der Grund liegt weniger in der Biologie als in der Ökonomie",
+        "erhielt 2018 die Zulassung für ein Antibiotikum gegen resistente Erreger und meldete weniger als ein Jahr später Insolvenz an",
+        "Wirksamkeit ein Allgemeingut",
+        "sogenannte Pull-Anreize, die nicht den Verkauf, sondern die Verfügbarkeit belohnen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-03",
+      "case_id": "DE T.7.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen das Abonnementmodell, die Alternative des sorgsamen Umgangs und den offenen Schluss.",
+      "kind": "reading",
+      "statements": [
+        "Das britische Abonnementmodell zahlt Herstellern eine feste Jahressumme unabhängig von der verordneten Menge.",
+        "Kritische Stimmen halten die im Pilotversuch gebotenen Beträge für großzügig bemessen.",
+        "Die Niederlande und die skandinavischen Länder weisen laut Text seit Jahren niedrige Verbrauchs- und Resistenzraten auf.",
+        "Sorgsamer Umgang mit vorhandenen Wirkstoffen verhindert laut Text die nächste Resistenzwelle vollständig.",
+        "Der Schlussabsatz vergleicht das Problem mit Gütern wie Feuerwehren und Deichen, die nicht nach Einsatzstunden bezahlt werden."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Das britische Abonnementmodell zahlt Herstellern eine feste Jahressumme unabhängig von der verordneten Menge.**\n\nAbsatz 7 beschreibt den britischen Pilotversuch als Zahlung, bei der der Gesundheitsdienst Herstellern „eine feste Jahressumme für den Zugang zu einem Reserveantibiotikum zahlt, unabhängig von der verordneten Menge“.\n\nDie Aussage gibt beide Merkmale wieder, die das Modell ausmachen: die feste Summe und die Unabhängigkeit vom Verordnungsvolumen. Sie behauptet dabei nicht, das Modell funktioniere – nur, wie es konstruiert ist.\n\nDass der Text den Zweck gleich anschließt – Erlös und Absatzmenge werden entkoppelt, Zurückhaltung wird wirtschaftlich tragbar –, stützt die Aussage zusätzlich: Sie beschreibt das Abonnement so, wie Absatz 7 es anlegt.",
+        "**B) Kritische Stimmen halten die im Pilotversuch gebotenen Beträge für großzügig bemessen.**\n\nAbsatz 7 berichtet das Gegenteil: Kritische Stimmen „halten die bisher gebotenen Beträge jedoch für zu niedrig“, um die Entwicklungskosten eines neuen Wirkstoffs zu rechtfertigen, und ergänzen, ein nationaler Markt allein könne den globalen Bedarf nicht finanzieren.\n\nAkteur und Gegenstand der Aussage stimmen, nur die Bewertungsrichtung ist gekippt. Solche Umkehrungen sind heimtückisch, weil der halbe Satz vertraut klingt und man die Wertung überliest.\n\nMit „großzügig“ verschwindet außerdem der Einwand, auf den Absatz 7 seine Skepsis gegenüber dem Abonnementmodell stützt – die Aussage widerspricht dem Text an der entscheidenden Stelle.",
+        "**C) Die Niederlande und die skandinavischen Länder weisen laut Text seit Jahren niedrige Verbrauchs- und Resistenzraten auf.**\n\nAbsatz 8 nennt genau diese Länder: „Die Niederlande und die skandinavischen Länder weisen seit Jahren niedrige Verbrauchs- und Resistenzraten auf“, und stellt ihnen Regionen gegenüber, in denen Antibiotika teils ohne Rezept zu haben sind.\n\nDie Aussage übernimmt beide Größen – Verbrauch und Resistenz – und auch die Dauerangabe „seit Jahren“. Sie behauptet keine Ursache und schreibt den Erfolg keinem einzelnen Programm zu.\n\nWeil sie damit nur referiert, was Absatz 8 als Beispiel für sorgsamen Umgang mit vorhandenen Wirkstoffen anführt, deckt der Text die Aussage.",
+        "**D) Sorgsamer Umgang mit vorhandenen Wirkstoffen verhindert laut Text die nächste Resistenzwelle vollständig.**\n\nAbsatz 8 endet mit einer ausdrücklichen Einschränkung: Sorgsamer Umgang verschiebt „den Zeitpunkt der nächsten Resistenzwelle …, aber nicht verhindert“ – der Text spricht also von Zeitgewinn, nicht von Lösung.\n\nDie Aussage streicht die zweite Hälfte dieses Satzes. Aus einem Aufschub wird damit eine Entwarnung, und der Grund, warum der Text trotz Hygiene- und Diagnostikprogrammen weiter neue Wirkstoffe diskutiert, fällt weg.\n\n**Tipp:** Bei „aber nicht …“ steht die eigentliche Aussage des Satzes fast immer im zweiten Teil.\n\nDie Aussage ist unzutreffend, weil Absatz 8 die Resistenzwelle nur zeitlich verschiebt.",
+        "**E) Der Schlussabsatz vergleicht das Problem mit Gütern wie Feuerwehren und Deichen, die nicht nach Einsatzstunden bezahlt werden.**\n\nAbsatz 9 zieht diesen Vergleich wörtlich: „Feuerwehren und Deiche werden nicht nach Einsatzstunden bezahlt.“ Er folgt unmittelbar auf die Frage, wie eine Gesellschaft ein Gut finanziert, dessen Wert darin besteht, möglichst selten gebraucht zu werden.\n\nDie Aussage benennt Bild und Zweck korrekt: Es geht um Vorhaltung, die vergütet wird, obwohl – oder weil – sie im Idealfall ungenutzt bleibt. Eine gelungene Übertragung auf Antibiotika behauptet die Aussage nicht, und der Text lässt sie ausdrücklich offen.\n\nWeil Beispiel und Funktion mit Absatz 9 übereinstimmen, trifft die Aussage die Schlussargumentation."
+      ],
+      "highlights": [
+        "eine feste Jahressumme für den Zugang zu einem Reserveantibiotikum zahlt, unabhängig von der verordneten Menge",
+        "halten die bisher gebotenen Beträge jedoch für zu niedrig",
+        "Die Niederlande und die skandinavischen Länder weisen seit Jahren niedrige Verbrauchs- und Resistenzraten auf",
+        "den Zeitpunkt der nächsten Resistenzwelle verschiebt, aber nicht verhindert",
+        "Feuerwehren und Deiche werden nicht nach Einsatzstunden bezahlt"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-04",
+      "case_id": "DE T.7.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen verlangen Inferenzen und die Deutung zentraler Ausdrücke im Zusammenhang.",
+      "kind": "reading",
+      "statements": [
+        "„In Reserve gelegt“ bedeutet im Kontext, dass ein Wirkstoff bewusst zurückhaltend eingesetzt wird, um Resistenzen hinauszuzögern.",
+        "Dass Wirksamkeit ein Allgemeingut ist, heißt im Text, dass zurückhaltender Einsatz allen nützt, ohne vergütet zu werden.",
+        "Aus dem Fall Achaogen folgt laut Text, dass eine Zulassung allein das wirtschaftliche Überleben sichert.",
+        "Der Vergleich mit Feuerwehren und Deichen legt nahe, dass Bereitschaft statt Nutzung vergütet werden sollte.",
+        "Weil ein nationales Abonnementmodell existiert, ist die globale Finanzierungsfrage laut Text gelöst."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) „In Reserve gelegt“ bedeutet im Kontext, dass ein Wirkstoff bewusst zurückhaltend eingesetzt wird, um Resistenzen hinauszuzögern.**\n\nAbsatz 4 erklärt den Ausdruck im selben Atemzug: Ärztinnen und Ärzte sollen den neuen Wirkstoff „gerade nicht breit einsetzen, um Resistenzen hinauszuzögern“. Gemeint ist eine Verschreibungsstrategie, keine Lagerhaltung und kein Vorrat im logistischen Sinn.\n\nDie Aussage übersetzt das Bild genau in diese Richtung: bewusste Zurückhaltung mit dem Ziel, den Auswahldruck aus Absatz 2 möglichst spät wirken zu lassen.\n\nDass der Reservestatus im Text zugleich das wirtschaftliche Problem auslöst, bestätigt die Lesart – nur wer wenig verkauft, braucht überhaupt ein anderes Vergütungsmodell.",
+        "**B) Dass Wirksamkeit ein Allgemeingut ist, heißt im Text, dass zurückhaltender Einsatz allen nützt, ohne vergütet zu werden.**\n\nAbsatz 6 liefert die Definition mit: Wer ein Antibiotikum zurückhaltend einsetzt, „nützt allen, ohne dafür bezahlt zu werden“. Der Nutzen fällt also der Allgemeinheit zu, die Kosten der Zurückhaltung trägt der Einzelne.\n\nDie Aussage überträgt genau diese Lücke zwischen Nutzen und Vergütung auf den Begriff Allgemeingut. Sie behauptet nicht, Antibiotika seien kostenlos oder gehörten niemandem – gemeint ist die Wirksamkeit als geteilte, endliche Ressource.\n\nWeil Absatz 6 diesen Punkt ausdrücklich als ersten Teil des doppelten Marktversagens führt, gibt die Aussage die Begriffsbestimmung des Textes wieder.",
+        "**C) Aus dem Fall Achaogen folgt laut Text, dass eine Zulassung allein das wirtschaftliche Überleben sichert.**\n\nAbsatz 5 zieht die umgekehrte Lehre: „Ein zugelassenes, medizinisch wertvolles Produkt reichte nicht aus, um die Kosten der Entwicklung zu decken.“ Achaogen hatte die Zulassung – und war weniger als ein Jahr später insolvent.\n\nDie Aussage macht aus dem Musterfall des Scheiterns einen Beleg für Sicherheit. Damit verliert das Beispiel seine Funktion, denn es steht im Text als Signal, das für Investoren schwerer wog als jede politische Absichtserklärung.\n\nDie Inferenz hält deshalb nicht: Absatz 5 zeigt gerade, dass eine Zulassung das wirtschaftliche Überleben nicht garantiert.",
+        "**D) Der Vergleich mit Feuerwehren und Deichen legt nahe, dass Bereitschaft statt Nutzung vergütet werden sollte.**\n\nAbsatz 9 stellt zunächst die Frage, wie man ein Gut finanziert, „dessen Wert gerade darin besteht, möglichst selten gebraucht zu werden“, und nennt dann Feuerwehren und Deiche, die nicht nach Einsatzstunden bezahlt werden.\n\nDie Aussage zieht daraus die naheliegende Folgerung: Vergütet werden soll die Vorhaltung, nicht der Verbrauch. Dieselbe Idee steckt im Abonnementmodell aus Absatz 7, das Erlös und Absatzmenge entkoppelt.\n\nDie Inferenz bleibt damit im Rahmen des Textes – sie beschreibt das Prinzip, ohne zu behaupten, der Text habe die Übertragung auf Arzneimittel schon entschieden.",
+        "**E) Weil ein nationales Abonnementmodell existiert, ist die globale Finanzierungsfrage laut Text gelöst.**\n\nAbsatz 7 sagt ausdrücklich das Gegenteil: Kritische Stimmen verweisen darauf, „dass ein nationaler Markt allein den globalen Bedarf nicht finanzieren kann“. Der britische Versuch ist dort ein Pilot, kein Endzustand.\n\nDie Aussage zieht aus einem Modell in einem Land eine Lösung für die Welt und überspringt genau den Einwand, den der Absatz gegen diese Verallgemeinerung formuliert. Absatz 9 verstärkt das noch mit der offenen Frage, wer aufkommt, wenn Erreger keine Grenzen kennen.\n\nDie Aussage ist deshalb unzutreffend: Der Text lässt die globale Finanzierung ausdrücklich ungelöst."
+      ],
+      "highlights": [
+        "um Resistenzen hinauszuzögern",
+        "nützt allen, ohne dafür bezahlt zu werden",
+        "Ein zugelassenes, medizinisch wertvolles Produkt reichte nicht aus, um die Kosten der Entwicklung zu decken",
+        "dessen Wert gerade darin besteht, möglichst selten gebraucht zu werden",
+        "dass ein nationaler Markt allein den globalen Bedarf nicht finanzieren kann"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-05",
+      "case_id": "DE T.7.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen den Aufbau der Argumentation über den gesamten Text hinweg.",
+      "kind": "reading",
+      "statements": [
+        "Der Text führt von der medizinischen Abhängigkeit über Ursachen und Marktlogik zu Lösungsvorschlägen und endet mit einer offenen Frage.",
+        "Der Text erklärt die Entdeckungslücke ausschließlich mit wissenschaftlichen Schwierigkeiten.",
+        "Absatz 5 dient als Fallbeispiel, das die zuvor beschriebene Marktlogik konkret belegt.",
+        "Der Text stellt neue Wirkstoffe und den besseren Umgang mit vorhandenen als zwei unterschiedliche Strategien nebeneinander.",
+        "Gegenargumente zu den vorgeschlagenen Lösungen fehlen im Text vollständig."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text führt von der medizinischen Abhängigkeit über Ursachen und Marktlogik zu Lösungsvorschlägen und endet mit einer offenen Frage.**\n\nDer Aufbau lässt sich Absatz für Absatz nachzeichnen: Absatz 1 zeigt die Abhängigkeit der Medizin von wirksamen Antibiotika, Absatz 2 erklärt die Entstehung von Resistenzen, Absatz 3 die leere Pipeline. Die Absätze 4 bis 6 liefern die Marktlogik, 7 und 8 die Lösungsvorschläge.\n\nAbsatz 9 schließt nicht mit einer Empfehlung, sondern mit der Frage „Wie finanziert eine Gesellschaft ein Gut“, dessen Wert im Nichtgebrauch liegt, und stellt fest, die Sache sei „bislang nicht entschieden“.\n\nDie Aussage beschreibt diesen Bogen in der richtigen Reihenfolge und trifft damit die Bauweise des Textes.",
+        "**B) Der Text erklärt die Entdeckungslücke ausschließlich mit wissenschaftlichen Schwierigkeiten.**\n\nAbsatz 4 setzt die Gewichtung anders: „Der Grund liegt weniger in der Biologie als in der Ökonomie.“ Wissenschaftliche Hürden werden damit nicht bestritten, aber ausdrücklich nachgeordnet.\n\nDie Aussage macht aus der nachrangigen Erklärung die einzige und muss dafür die Absätze 4 bis 6 übergehen – Reservestatus, Preisvergleich mit Krebsmedikamenten, den Fall Achaogen und das doppelte Marktversagen. Das Wort „ausschließlich“ kippt den Satz endgültig.\n\nWeil der Text die Entdeckungslücke überwiegend mit Anreizen erklärt, gibt die Aussage seine Argumentation falsch wieder.",
+        "**C) Absatz 5 dient als Fallbeispiel, das die zuvor beschriebene Marktlogik konkret belegt.**\n\nAbsatz 5 beginnt mit „Wie brutal diese Rechnung ist, zeigte der Fall des US-Unternehmens Achaogen“ und knüpft mit „diese Rechnung“ direkt an die Kalkulation aus Absatz 4 an.\n\nDie Aussage beschreibt genau diese Belegfunktion: Der Absatz führt kein neues Argument ein, sondern macht ein bereits formuliertes an einem konkreten Unternehmen sichtbar – Zulassung 2018, Insolvenz weniger als ein Jahr später.\n\nDass er mit der Wirkung auf Investoren endet, unterstreicht die Rolle als Beweisstück: Er verdichtet die Marktlogik zu einem Ereignis und stützt damit die Aussage.",
+        "**D) Der Text stellt neue Wirkstoffe und den besseren Umgang mit vorhandenen als zwei unterschiedliche Strategien nebeneinander.**\n\nAbsatz 8 eröffnet mit „Andere setzen weniger auf neue Moleküle als auf besseren Umgang mit den vorhandenen“ und markiert damit eine zweite Linie neben den Anreizmodellen der Absätze 6 und 7.\n\nDie Aussage erfasst diese Zweiteilung. Sie behauptet auch keine Rangfolge – und das ist richtig, denn der Text bewertet beide Wege getrennt und versieht jeden mit einem eigenen Einwand: zu niedrige Beträge beim Abonnement, bloßer Zeitgewinn beim sorgsamen Umgang.\n\nDamit gibt die Aussage die Struktur des Lösungsteils zutreffend wieder.",
+        "**E) Gegenargumente zu den vorgeschlagenen Lösungen fehlen im Text vollständig.**\n\nDer Text liefert die Einwände selbst mit. Absatz 7 nennt Stimmen, die „die bisher gebotenen Beträge jedoch für zu niedrig“ halten, und Absatz 8 setzt mit „Kritisch angemerkt wird allerdings“ nach, sorgsamer Umgang verschiebe die nächste Resistenzwelle nur.\n\nDie Aussage behauptet eine Lücke, die es nicht gibt, und übersieht dabei eine Bauweise, die für den ganzen Text typisch ist: Jeder Vorschlag bekommt seinen Gegeneinwand im selben Absatz, oft im letzten Satz.\n\nSchon eine dieser Stellen genügt zur Widerlegung – und der Text bietet für jeden der beiden Lösungswege eine eigene, ausdrücklich als Kritik markierte Passage."
+      ],
+      "highlights": [
+        "Wie finanziert eine Gesellschaft ein Gut",
+        "Der Grund liegt weniger in der Biologie als in der Ökonomie",
+        "Wie brutal diese Rechnung ist, zeigte der Fall des US-Unternehmens Achaogen",
+        "Andere setzen weniger auf neue Moleküle als auf besseren Umgang mit den vorhandenen",
+        "halten die bisher gebotenen Beträge jedoch für zu niedrig"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-06",
+      "case_id": "DE T.7.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen Jahreszahlen, Größenordnungen und benannte Akteure im Text.",
+      "kind": "reading",
+      "statements": [
+        "Die zitierte Analyse bezieht sich laut Text auf das Jahr 2019.",
+        "Etwa fünf Millionen Todesfälle standen laut Text mit resistenten Erregern in Verbindung.",
+        "Der britische Pilotversuch begann laut Text im Jahr 2020.",
+        "Fleming äußerte seine Warnung dem Text zufolge im Jahr 1985.",
+        "Der Text nennt Novartis, Sanofi und AstraZeneca als Unternehmen, die ihre Antibiotikaprogramme ausbauten."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die zitierte Analyse bezieht sich laut Text auf das Jahr 2019.**\n\nAbsatz 1 bindet die Analyse aus The Lancet ausdrücklich an ein Jahr: Sie schätzte, „dass im Jahr 2019 weltweit rund 1,27 Millionen Todesfälle“ unmittelbar auf antibiotikaresistente Erreger zurückzuführen waren.\n\nDie Aussage prüft nur dieses Bezugsjahr und lässt die Zahlen unangetastet. Das ist eine gute Gelegenheit, die Angaben des Absatzes zu sortieren: 2019 ist der Zeitpunkt, 1,27 Millionen die unmittelbar zugeschriebenen und etwa fünf Millionen die lediglich mit Resistenzen in Verbindung stehenden Todesfälle.\n\n**Tipp:** Notiere bei Statistikabsätzen Jahr, Quelle und Kategorie getrennt; die meisten Fallen entstehen aus deren Vermischung.\n\nDa der Text das Jahr 2019 wörtlich nennt, deckt er die Aussage ohne Einschränkung.",
+        "**B) Etwa fünf Millionen Todesfälle standen laut Text mit resistenten Erregern in Verbindung.**\n\nAbsatz 1 ordnet diese Größe der weiteren Kategorie zu: „etwa fünf Millionen Todesfälle mit ihnen in Verbindung standen“. Daneben stehen 1,27 Millionen Fälle, die unmittelbar auf resistente Erreger zurückgeführt werden.\n\nDie Aussage nimmt die richtige Hälfte des Satzes: Sie verbindet die fünf Millionen mit dem schwächeren Begriff „in Verbindung“ und behauptet gerade nicht, die Erreger seien in all diesen Fällen die Todesursache gewesen.\n\nGenau darin liegt der Unterschied zur verbreiteten Fehllesart, die beide Zahlen gleichsetzt. Der Text hält die Kategorien auseinander, und die Aussage tut es ihm nach – sie ist damit zutreffend.",
+        "**C) Der britische Pilotversuch begann laut Text im Jahr 2020.**\n\nAbsatz 7 datiert den Start eindeutig: „Das Vereinigte Königreich startete 2020 einen Pilotversuch“, bei dem der Gesundheitsdienst eine feste Jahressumme für den Zugang zu einem Reserveantibiotikum zahlt.\n\nDie Aussage übernimmt Jahr und Land korrekt und bleibt beim Wort „Pilotversuch“ – wichtig, weil der Text daraus kein abgeschlossenes Modell macht, sondern unmittelbar die Kritik an zu niedrigen Beträgen anschließt.\n\nAuch chronologisch passt die Angabe ins Bild: Die Insolvenz von Achaogen liegt kurz nach 2018, der britische Versuch folgt zwei Jahre später. Die Aussage gibt die Jahresangabe damit richtig wieder.",
+        "**D) Fleming äußerte seine Warnung dem Text zufolge im Jahr 1985.**\n\nAbsatz 2 nennt ein anderes Datum: „Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede“ vor dem Mechanismus der Resistenzbildung.\n\nDie Zahl 1985 steht nirgends im Text. Was ihr nahekommt, ist die Zeitangabe aus Absatz 3 – seit den 1980er-Jahren kam keine neue Wirkstoffklasse gegen gramnegative Bakterien in die breite Anwendung. Zwei Jahrzehnte aus verschiedenen Absätzen werden hier vermischt.\n\n**Falle:** Die vier Jahrzehnte Unterschied verändern die Pointe, denn der Text betont, dass die Gefahr von Anfang an bekannt war.\n\nDie Aussage scheitert an der Jahreszahl, weil Absatz 2 die Warnung auf 1945 festlegt.",
+        "**E) Der Text nennt Novartis, Sanofi und AstraZeneca als Unternehmen, die ihre Antibiotikaprogramme ausbauten.**\n\nAbsatz 3 sagt von Novartis, Sanofi und AstraZeneca, sie „gaben entsprechende Programme auf oder verkauften sie“. Die Namen in der Aussage stimmen also, die Handlung ist das genaue Gegenteil.\n\nAufgeben und Verkaufen sind im Text Belege für den Rückzug der Großen; danach bleiben nur kleine Biotech-Firmen mit dünner Kapitaldecke übrig. Von einem Ausbau der Antibiotikaforschung berichtet der Text an keiner Stelle.\n\n**Falle:** Richtige Eigennamen erzeugen Vertrauen; geprüft wird hier aber das Verb, nicht die Liste.\n\nDie Aussage ist unzutreffend, weil Absatz 3 genau den Ausstieg dieser Unternehmen dokumentiert."
+      ],
+      "highlights": [
+        "dass im Jahr 2019 weltweit rund 1,27 Millionen Todesfälle",
+        "etwa fünf Millionen Todesfälle mit ihnen in Verbindung standen",
+        "Das Vereinigte Königreich startete 2020 einen Pilotversuch",
+        "Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede",
+        "gaben entsprechende Programme auf oder verkauften sie"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-07",
+      "case_id": "DE T.7.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen Ursache-Wirkungs-Ketten von der Biologie bis zur Marktlogik.",
+      "kind": "reading",
+      "statements": [
+        "Jede Anwendung eines Wirkstoffs begünstigt laut Text jene Bakterien, die ihn überstehen.",
+        "Weil der Erlös eines Antibiotikums am Absatz hängt, wirkt die medizinisch gebotene Zurückhaltung wirtschaftlich nachteilig.",
+        "Das Abonnementmodell koppelt laut Text den Erlös enger an die verordnete Menge.",
+        "Unnötige Verschreibungen bei viralen Infekten verschärfen laut Text das Resistenzproblem.",
+        "Laut Text verlassen Unternehmen das Feld, obwohl die erwarteten Erträge hoch sind."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Jede Anwendung eines Wirkstoffs begünstigt laut Text jene Bakterien, die ihn überstehen.**\n\nAbsatz 2 beschreibt den Mechanismus in einem Satz: Jede Anwendung eines Wirkstoffs „begünstigt jene Bakterien, die ihn überstehen, und beschleunigt damit die Ausbreitung widerstandsfähiger Varianten“.\n\nDie Aussage gibt diesen ersten Schritt der Kausalkette unverändert wieder. Sie behauptet nicht, jede Anwendung sei falsch – davon unterscheidet der Text ausdrücklich die vermeidbaren Fälle wie Verschreibungen bei viralen Infekten oder abgebrochene Therapien.\n\nGerade diese Trennung macht das Problem im Text so hartnäckig: Auch der fachlich korrekte Einsatz erzeugt Auswahldruck. Die Aussage folgt damit genau der Erklärung aus Absatz 2.",
+        "**B) Weil der Erlös eines Antibiotikums am Absatz hängt, wirkt die medizinisch gebotene Zurückhaltung wirtschaftlich nachteilig.**\n\nAbsatz 4 liefert beide Prämissen: Der neue Wirkstoff wird „sofort in Reserve gelegt“, und zugleich gilt: „Der Marktwert eines Medikaments hängt aber am Absatz.“ Aus der Kombination folgt der wirtschaftliche Nachteil von selbst.\n\nDie Aussage zieht diesen Schluss, ohne über den Text hinauszugehen, und trifft den Kern des Absatzes: Was medizinisch geboten ist, mindert den Erlös. Der Preisvergleich unterstreicht es – ein Krebsmedikament erlöst pro Behandlung Zehntausende Euro, ein Antibiotikum oft weniger als eine Nacht im Krankenhaus.\n\nWeil der Text diese Ursache-Wirkungs-Kette selbst aufbaut, ist die Aussage zutreffend.",
+        "**C) Das Abonnementmodell koppelt laut Text den Erlös enger an die verordnete Menge.**\n\nAbsatz 7 formuliert das Ziel des Modells umgekehrt: „Das entkoppelt Erlös und Absatzmenge und macht Zurückhaltung wirtschaftlich tragbar.“ Bezahlt wird eine feste Jahressumme, unabhängig von der verordneten Menge.\n\nDie Aussage verkehrt den Zweck des Abonnements in sein Gegenteil. Sie beschreibt genau den Zustand, den der Text als Ursache des Problems ausweist – und ein Modell, das Menge belohnt, wäre gar kein Pull-Anreiz mehr.\n\n**Tipp:** Präfixe entscheiden: „entkoppelt“ und „koppelt“ unterscheiden sich um zwei Buchstaben und um die gesamte Aussage.\n\nDie Aussage hält dem Text nicht stand, weil Absatz 7 gerade die Entkopplung beschreibt.",
+        "**D) Unnötige Verschreibungen bei viralen Infekten verschärfen laut Text das Resistenzproblem.**\n\nAbsatz 2 nennt drei Verschärfungsfaktoren: „unnötige Verschreibungen bei viralen Infekten“, abgebrochene Therapien und den massenhaften Einsatz in der Tierhaltung.\n\nDie Aussage greift einen davon heraus und behauptet nicht, er sei der wichtigste. Das ist die saubere Lesart, denn der Text gewichtet die drei Faktoren nicht, sondern stellt sie nebeneinander – bei viralen Infekten kommt der Nutzen des Wirkstoffs ohnehin nicht zustande, der Auswahldruck aber schon.\n\nWeil die Aussage einen ausdrücklich genannten Faktor korrekt einordnet, deckt Absatz 2 sie vollständig.",
+        "**E) Laut Text verlassen Unternehmen das Feld, obwohl die erwarteten Erträge hoch sind.**\n\nAbsatz 6 begründet den Rückzug anders: „Zweitens ist der erwartete Ertrag einer Neuentwicklung so gering, dass rationale Unternehmen das Feld verlassen, obwohl der gesellschaftliche Nutzen enorm wäre.“\n\nDie Aussage tauscht „gering“ gegen „hoch“ und zerstört damit die Ursache. Zugleich verschiebt sie das Gegensatzpaar des Textes: Dort stehen niedriger betriebswirtschaftlicher Ertrag und enormer gesellschaftlicher Nutzen gegeneinander, nicht hoher Ertrag und Rückzug.\n\nWer die Aussage gelten ließe, müsste das Verhalten der Firmen für irrational erklären – der Text nennt es ausdrücklich rational. Sie ist damit unzutreffend."
+      ],
+      "highlights": [
+        "begünstigt jene Bakterien, die ihn überstehen",
+        "Der Marktwert eines Medikaments hängt aber am Absatz",
+        "Das entkoppelt Erlös und Absatzmenge und macht Zurückhaltung wirtschaftlich tragbar",
+        "unnötige Verschreibungen bei viralen Infekten",
+        "ist der erwartete Ertrag einer Neuentwicklung so gering, dass rationale Unternehmen das Feld verlassen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-08",
+      "case_id": "DE T.7.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen die Gewichtung der Argumente und die Haltung des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text behandelt Antibiotikaresistenz als Randproblem der modernen Medizin.",
+        "Der Text gewichtet ökonomische Anreizprobleme als zentrale Erklärung der Entdeckungslücke.",
+        "Auch die vorgeschlagenen Lösungen werden im Text mit Einwänden versehen.",
+        "Der Text stellt das Abonnementmodell als abschließend erprobte Lösung dar.",
+        "Der Schluss weitet das Problem ausdrücklich über die Medizin hinaus aus."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text behandelt Antibiotikaresistenz als Randproblem der modernen Medizin.**\n\nAbsatz 1 stellt das Gegenteil an den Anfang: „Die moderne Medizin beruht auf einer stillen Voraussetzung“, nämlich der Behandelbarkeit bakterieller Infektionen – und nennt Operationen, Kaiserschnitte, Chemotherapien und Transplantationen als das, was daran hängt.\n\nDie Aussage stuft dieses Fundament zur Randfrage herab. Dagegen stehen nicht nur die Todeszahlen aus Absatz 1, sondern auch der Bau des Textes: Acht weitere Absätze behandeln Ursachen, Marktlogik und Lösungswege.\n\nEine Randnotiz sieht anders aus – deshalb widerspricht die Aussage der Gewichtung, die der Text von der ersten Zeile an vornimmt.",
+        "**B) Der Text gewichtet ökonomische Anreizprobleme als zentrale Erklärung der Entdeckungslücke.**\n\nAbsatz 4 sagt es direkt: „Der Grund liegt weniger in der Biologie als in der Ökonomie.“ Danach folgt kein Nebensatz, sondern der Hauptteil des Textes – Reservestatus und Preisvergleich in Absatz 4, der Fall Achaogen in Absatz 5, das doppelte Marktversagen in Absatz 6.\n\nDie Aussage benennt genau diese Schwerpunktsetzung. Auch die Lösungsvorschläge sind ökonomischer Natur: Pull-Anreize und Abonnement zielen auf Anreize und Vergütung, nicht auf Laborprobleme oder molekulare Hürden.\n\nWeil der Text seine Erklärung durchgehend am Markt festmacht, trifft die Aussage seine Gewichtung.",
+        "**C) Auch die vorgeschlagenen Lösungen werden im Text mit Einwänden versehen.**\n\nDer Text hält auch bei seinen Lösungsvorschlägen Distanz. Absatz 7 nennt Stimmen, die die gebotenen Beträge für zu niedrig halten und auf die Grenzen eines nationalen Marktes verweisen; Absatz 8 setzt mit „Kritisch angemerkt wird allerdings“ nach.\n\nDie Aussage beschreibt dieses Muster korrekt. Beide Wege – neue Anreize und besserer Umgang mit vorhandenen Wirkstoffen – werden vorgestellt und noch im gleichen Absatz relativiert, nicht in einem gesonderten Kritikteil.\n\nDass der Text mit einer offenen Frage endet statt mit einer Empfehlung, passt zu dieser Haltung und stützt die Aussage zusätzlich.",
+        "**D) Der Text stellt das Abonnementmodell als abschließend erprobte Lösung dar.**\n\nAbsatz 7 spricht ausdrücklich von einem Versuch: Das Vereinigte Königreich startete 2020 „einen Pilotversuch“. Ein Pilot ist ein Test unter Beobachtung, kein Ergebnis.\n\nDie Aussage macht daraus eine abschließend erprobte Lösung und übergeht, was im selben Absatz folgt: die Kritik an zu niedrigen Beträgen und den Hinweis, ein nationaler Markt allein könne den globalen Bedarf nicht finanzieren.\n\n**Falle:** Wörter wie „Pilotversuch“, „Vorschlag“ oder „Modell“ markieren den Status einer Maßnahme; sie zu überlesen, erzeugt falsche Sicherheit.\n\nDie Aussage ist unzutreffend, weil der Text das Abonnement offen als Erprobung führt.",
+        "**E) Der Schluss weitet das Problem ausdrücklich über die Medizin hinaus aus.**\n\nAbsatz 9 kündigt die Ausweitung selbst an: Es stehe „eine Frage im Raum, die über die Medizin hinausweist“ – wie eine Gesellschaft ein Gut finanziert, dessen Wert im Nichtgebrauch liegt.\n\nDie Aussage beschreibt diesen Schritt korrekt, und die Beispiele bestätigen ihn: Feuerwehren und Deiche stammen aus der Infrastruktur, nicht aus der Medizin, und auch die Frage nach der Zuständigkeit bei grenzüberschreitenden Erregern ist eine politische.\n\nDamit verlagert der Schluss das Thema von der Pharmakologie in die Finanzierung öffentlicher Bereitschaft – genau das hält die Aussage fest."
+      ],
+      "highlights": [
+        "Die moderne Medizin beruht auf einer stillen Voraussetzung",
+        "Der Grund liegt weniger in der Biologie als in der Ökonomie",
+        "Kritisch angemerkt wird allerdings",
+        "einen Pilotversuch",
+        "eine Frage im Raum, die über die Medizin hinausweist"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 8,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-09",
+      "case_id": "DE T.7.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen Produkten, Ländern und Fällen.",
+      "kind": "reading",
+      "statements": [
+        "Flemings Warnung liegt zeitlich vor dem Versiegen neuer Wirkstoffklassen seit den 1980er-Jahren.",
+        "Die Insolvenz von Achaogen ereignete sich laut Text vor der Zulassung seines Antibiotikums.",
+        "Im Vergleich erlöst ein Krebsmedikament pro Behandlung deutlich mehr als ein Antibiotikum.",
+        "In allen im Text erwähnten Regionen sind Antibiotika gleichermaßen verschreibungspflichtig.",
+        "Der britische Pilotversuch startete nach der Insolvenz von Achaogen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Flemings Warnung liegt zeitlich vor dem Versiegen neuer Wirkstoffklassen seit den 1980er-Jahren.**\n\nAbsatz 2 datiert die Warnung auf 1945: „Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede“ vor dem Mechanismus der Resistenzbildung. Absatz 3 setzt das Versiegen neuer Wirkstoffklassen gegen gramnegative Bakterien in die 1980er-Jahre.\n\nDie Aussage vergleicht diese beiden Zeitpunkte richtig: Die Warnung liegt rund vier Jahrzehnte vor dem Stillstand in der Forschung.\n\nDer Text nutzt den Abstand auch argumentativ – die Gefahr war bekannt, lange bevor die Pipeline austrocknete. Die Aussage gibt die Chronologie korrekt wieder und trifft damit auch ihre Pointe.",
+        "**B) Die Insolvenz von Achaogen ereignete sich laut Text vor der Zulassung seines Antibiotikums.**\n\nAbsatz 5 legt die Reihenfolge fest: Das Unternehmen „erhielt 2018 die Zulassung für ein Antibiotikum gegen resistente Erreger und meldete weniger als ein Jahr später Insolvenz an“.\n\nDie Aussage dreht diese Abfolge um – und zerstört damit die Aussagekraft des Beispiels. Der Fall ist im Text ja gerade deshalb bemerkenswert, weil die Zulassung schon vorlag: „Ein zugelassenes, medizinisch wertvolles Produkt reichte nicht aus, um die Kosten der Entwicklung zu decken.“\n\nEine Insolvenz vor der Zulassung wäre ein gewöhnliches Forschungsrisiko und kein Marktversagen. Die Aussage scheitert deshalb an der Chronologie von Absatz 5.",
+        "**C) Im Vergleich erlöst ein Krebsmedikament pro Behandlung deutlich mehr als ein Antibiotikum.**\n\nAbsatz 4 stellt beide Größen direkt gegenüber: „Ein Krebsmedikament kann pro Behandlung Zehntausende Euro erlösen, ein Antibiotikum wird über wenige Tage gegeben und kostet oft weniger als eine Nacht im Krankenhaus.“\n\nDie Aussage gibt die Richtung dieses Vergleichs korrekt wieder und verzichtet auf eine Verhältniszahl, die der Text nicht liefert.\n\nDer Vergleich hat im Absatz eine klare Funktion: Er erklärt, warum ein medizinisch dringend gebrauchtes Mittel wirtschaftlich unattraktiv bleibt, und führt zum Bild des Marktes, der die nötigsten Produkte bestraft. Die Aussage referiert ihn zutreffend.",
+        "**D) In allen im Text erwähnten Regionen sind Antibiotika gleichermaßen verschreibungspflichtig.**\n\nAbsatz 8 nennt ausdrücklich einen Unterschied: Während die Niederlande und die skandinavischen Länder seit Jahren niedrige Verbrauchs- und Resistenzraten aufweisen, sind in anderen Regionen „Antibiotika teilweise ohne Rezept erhältlich“.\n\nDie Aussage löscht diesen Kontrast. Damit fällt auch die Erklärung weg, die der Text für die abweichenden Verbrauchsraten anbietet: Wo der Zugang unkontrolliert ist, steigt der Einsatz und mit ihm der Auswahldruck aus Absatz 2.\n\nDie Aussage ist unzutreffend, weil Absatz 8 seinen Ländervergleich gerade auf diese unterschiedliche Regulierung stützt.",
+        "**E) Der britische Pilotversuch startete nach der Insolvenz von Achaogen.**\n\nDer Text liefert beide Daten getrennt: Absatz 5 datiert Zulassung und Insolvenz von Achaogen auf 2018 und weniger als ein Jahr danach, Absatz 7 den Start des britischen Versuchs auf 2020 – „Das Vereinigte Königreich startete 2020 einen Pilotversuch“.\n\nDie Aussage verknüpft diese Angaben korrekt: Die Insolvenz fällt spätestens ins Jahr 2019, der Pilotversuch beginnt danach.\n\nDie Reihenfolge ist auch inhaltlich plausibel, weil Absatz 5 die Insolvenz als Investorensignal beschreibt, auf das die Politik mit neuen Vergütungsmodellen reagieren musste. Die Aussage trifft die Chronologie des Textes."
+      ],
+      "highlights": [
+        "Bereits Alexander Fleming warnte 1945 in seiner Nobelpreisrede",
+        "erhielt 2018 die Zulassung für ein Antibiotikum gegen resistente Erreger und meldete weniger als ein Jahr später Insolvenz an",
+        "Ein Krebsmedikament kann pro Behandlung Zehntausende Euro erlösen",
+        "Antibiotika teilweise ohne Rezept erhältlich sind",
+        "Das Vereinigte Königreich startete 2020 einen Pilotversuch"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 9,
+      "subsection": "t.7"
+    },
+    {
+      "id": "de-t-7-10",
+      "case_id": "DE T.7.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen den Gesamtschluss und die im Text bewusst offen gehaltenen Fragen.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, ob sich das Prinzip der Bereitschaftsfinanzierung auf die Arzneimittelentwicklung übertragen lässt.",
+        "Als ungelöst gilt laut Schluss auch die Frage, wer zahlt, wenn Erreger keine Grenzen kennen.",
+        "Der Text schließt mit der Feststellung, dass die Entdeckungslücke inzwischen geschlossen wurde.",
+        "Eine zentrale offene Spannung besteht darin, dass ein Gut umso wertvoller ist, je seltener es gebraucht wird, während der Markt Menge belohnt.",
+        "Der Text erklärt den sorgsamen Umgang mit vorhandenen Wirkstoffen für ausreichend, um neue Wirkstoffe entbehrlich zu machen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, ob sich das Prinzip der Bereitschaftsfinanzierung auf die Arzneimittelentwicklung übertragen lässt.**\n\nAbsatz 9 formuliert den Vorbehalt selbst: „Ob sich dieses Prinzip auf die Arzneimittelentwicklung übertragen lässt und wer dafür aufkommt, wenn Erreger keine Grenzen kennen, ist bislang nicht entschieden.“\n\nDie Aussage gibt diese Offenheit wieder, ohne eine Richtung zu unterstellen. Der Text hat das Prinzip zuvor mit Feuerwehren und Deichen anschaulich gemacht, die Übertragung aber ausdrücklich nicht vollzogen.\n\nWer hier ein Ja oder Nein hineinliest, überschreibt den einzigen Satz, mit dem der Text seine eigene Position markiert – nämlich Zurückhaltung. Die Aussage bleibt korrekt bei dieser Offenheit.",
+        "**B) Als ungelöst gilt laut Schluss auch die Frage, wer zahlt, wenn Erreger keine Grenzen kennen.**\n\nAbsatz 9 bündelt zwei offene Punkte in einem Satz. Neben der Übertragbarkeit des Prinzips steht die Frage, „wer dafür aufkommt, wenn Erreger keine Grenzen kennen“.\n\nDie Aussage benennt diesen zweiten Punkt korrekt. Er ist im Text kein Zusatz, sondern die Konsequenz aus Absatz 7: Wenn ein nationaler Markt allein den globalen Bedarf nicht finanzieren kann, muss die Zuständigkeit geklärt werden – und genau das bleibt ungeklärt.\n\nDa der Schluss die Frage stellt, ohne sie zu beantworten, gibt die Aussage die offene Lage des Textes zutreffend wieder.",
+        "**C) Der Text schließt mit der Feststellung, dass die Entdeckungslücke inzwischen geschlossen wurde.**\n\nDer Text behauptet nirgends einen Durchbruch. Absatz 3 stellt fest: „Seit den 1980er-Jahren wurde keine wirklich neue Wirkstoffklasse gegen gramnegative Bakterien in die breite klinische Anwendung gebracht“, und der Schluss nimmt davon nichts zurück.\n\nDie Aussage erfindet ein Ergebnis, das der Text gerade vermeidet. Absatz 9 endet mit einer Frage und dem Hinweis, die Sache sei „bislang nicht entschieden“ – das ist das Gegenteil eines gelösten Problems.\n\nDie Aussage ist deshalb unzutreffend: Weder Pipeline noch Finanzierung sind im Text repariert.",
+        "**D) Eine zentrale offene Spannung besteht darin, dass ein Gut umso wertvoller ist, je seltener es gebraucht wird, während der Markt Menge belohnt.**\n\nAbsatz 4 verdichtet den Widerspruch in einem Bild: „ein Markt, der genau die Produkte bestraft, die er am dringendsten braucht“. Absatz 9 greift ihn wieder auf und fragt nach der Finanzierung eines Gutes, „dessen Wert gerade darin besteht, möglichst selten gebraucht zu werden“.\n\nDie Aussage benennt diese Spannung zwischen Seltenheitswert und Mengenlogik korrekt. Der Text löst sie nicht auf, sondern stellt sie als Kernproblem aus – Abonnement und Pull-Anreize sind Versuche, nicht Antworten.\n\nDamit trifft die Aussage genau die Konfliktlage, die der Schluss offenhält.",
+        "**E) Der Text erklärt den sorgsamen Umgang mit vorhandenen Wirkstoffen für ausreichend, um neue Wirkstoffe entbehrlich zu machen.**\n\nAbsatz 8 zieht selbst die Grenze: Sorgsamer Umgang verschiebt „den Zeitpunkt der nächsten Resistenzwelle …, aber nicht verhindert“. Verschreibungskontrolle, schnelle Diagnostik, Impfungen und Hygiene gelten dort als günstig, nicht als hinreichend.\n\nDie Aussage macht aus dem Zeitgewinn einen Ersatz für neue Wirkstoffe. Dagegen steht die gesamte Anlage des Textes: Absatz 3 beklagt die leere Pipeline, die Absätze 6 und 7 suchen nach Anreizen, sie wieder zu füllen.\n\nWäre der sorgsame Umgang ausreichend, bräuchte es diese Debatte nicht – die Aussage überdehnt damit den Befund aus Absatz 8."
+      ],
+      "highlights": [
+        "ist bislang nicht entschieden",
+        "wer dafür aufkommt, wenn Erreger keine Grenzen kennen",
+        "Seit den 1980er-Jahren wurde keine wirklich neue Wirkstoffklasse gegen gramnegative Bakterien in die breite klinische Anwendung gebracht",
+        "ein Markt, der genau die Produkte bestraft, die er am dringendsten braucht",
+        "den Zeitpunkt der nächsten Resistenzwelle verschiebt, aber nicht verhindert"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.7"
+    }
+  ]
+}

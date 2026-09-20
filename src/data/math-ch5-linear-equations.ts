@@ -150,10 +150,11 @@ $$x = 360$$
 From (1):
 
 $$
-\begin{aligned}
-y &=620 - 360 \\
-&=260
-\end{aligned}
+y = 620 - 360
+$$
+
+$$
+= 260
 $$
 
 **Answer.** North = 360 crates | South = 260 crates`,
@@ -299,10 +300,11 @@ $$428 - 160y + 25y = 185$$
 $$-135y = -243$$
 
 $$
-\begin{aligned}
-y &=\\frac{243}{135} \\
-&=1.80
-\end{aligned}
+y = \\frac{243}{135}
+$$
+
+$$
+= 1.80
 $$
 
 Then
@@ -310,10 +312,11 @@ Then
 $$x = 10.70 - 4(1.80)$$
 
 $$
-\begin{aligned}
-x &=10.70 - 7.20 \\
-&=3.50
-\end{aligned}
+x = 10.70 - 7.20
+$$
+
+$$
+= 3.50
 $$
 
 **Answer.** Notebook = \\$3.50 | Pen = \\$1.80`,
@@ -457,10 +460,11 @@ $$90a + 8250 - 600a = 2130$$
 $$-510a = -6120$$
 
 $$
-\begin{aligned}
-a &=\\frac{6120}{510} \\
-&=12
-\end{aligned}
+a = \\frac{6120}{510}
+$$
+
+$$
+= 12
 $$
 
 Then
@@ -468,10 +472,11 @@ Then
 $$c = 55 - 4(12)$$
 
 $$
-\begin{aligned}
-c &=55 - 48 \\
-&=7
-\end{aligned}
+c = 55 - 48
+$$
+
+$$
+= 7
 $$
 
 **Answer.** Adult = \\$12.00 | Child = \\$7.00`,
@@ -745,19 +750,21 @@ $$400 - 0.04y + 0.07y = 520$$
 $$0.03y = 120$$
 
 $$
-\begin{aligned}
-y &=\\frac{120}{0.03} \\
-&=4000
-\end{aligned}
+y = \\frac{120}{0.03}
+$$
+
+$$
+= 4000
 $$
 
 Then
 
 $$
-\begin{aligned}
-x &=10000 - 4000 \\
-&=6000
-\end{aligned}
+x = 10000 - 4000
+$$
+
+$$
+= 6000
 $$
 
 **Answer.** Account A = \\$6,000 | Account B = \\$4,000`,
@@ -899,19 +906,21 @@ $$18x + 12x + 540 = 9660$$
 $$30x = 9120$$
 
 $$
-\begin{aligned}
-x &=\\frac{9120}{30} \\
-&=304
-\end{aligned}
+x = \\frac{9120}{30}
+$$
+
+$$
+= 304
 $$
 
 Then
 
 $$
-\begin{aligned}
-y &=304 + 45 \\
-&=349
-\end{aligned}
+y = 304 + 45
+$$
+
+$$
+= 349
 $$
 
 **Answer.** Standard = \\$304.00 | Premium = \\$349.00`,
@@ -1187,10 +1196,11 @@ $$d = 55$$
 Then
 
 $$
-\begin{aligned}
-s &=130 - 55 \\
-&=75
-\end{aligned}
+s = 130 - 55
+$$
+
+$$
+= 75
 $$
 
 **Answer.** Standard = 75 | Deluxe = 55`,
@@ -1322,10 +1332,11 @@ $$14x + 19800 - 44x = 9300$$
 $$-30x = -10500$$
 
 $$
-\begin{aligned}
-x &=\\frac{10500}{30} \\
-&=350
-\end{aligned}
+x = \\frac{10500}{30}
+$$
+
+$$
+= 350
 $$
 
 Then
@@ -1333,10 +1344,11 @@ Then
 $$y = 900 - 2(350)$$
 
 $$
-\begin{aligned}
-y &=900 - 700 \\
-&=200
-\end{aligned}
+y = 900 - 700
+$$
+
+$$
+= 200
 $$
 
 **Answer.** Sofa = \\$350.00 | Armchair = \\$200.00`,
@@ -1781,19 +1793,21 @@ $$400x + 220x + 1100 = 8540$$
 $$620x = 7440$$
 
 $$
-\begin{aligned}
-x &=\\frac{7440}{620} \\
-&=12
-\end{aligned}
+x = \\frac{7440}{620}
+$$
+
+$$
+= 12
 $$
 
 Then
 
 $$
-\begin{aligned}
-y &=12 + 5 \\
-&=17
-\end{aligned}
+y = 12 + 5
+$$
+
+$$
+= 17
 $$
 
 **Answer.** Paperback = \\$12.00 | Hardcover = \\$17.00`,
@@ -2115,10 +2129,11 @@ $$14x + 10080 - 45x = 5740$$
 $$-31x = -4340$$
 
 $$
-\begin{aligned}
-x &=\\frac{4340}{31} \\
-&=140
-\end{aligned}
+x = \\frac{4340}{31}
+$$
+
+$$
+= 140
 $$
 
 Then
@@ -2463,154 +2478,6 @@ The contract overtime rate is then
 $$1.5 \\times 14 = 21$$
 
 **Answer.** Regular wage = \\$14.00/hr | Overtime actually paid = \\$24.00/hr | Contract overtime = \\$21.00/hr`,
-  },
-  {
-    id: `math-5-17`,
-    case_id: `MATH 5.17`,
-    title: `Riverside Water Utility, Billing Dispute`,
-    context: `A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed \\$56.10  -  but May's bill also carried a 10% late penalty applied to the entire bill. In June she used 25 m³ with no penalty, billed \\$65.00. The billing office insists its fixed charge is \\$18.00 and its rate is \\$1.85 per m³.`,
-    statements: [
-      `The billing office's claim of an \\$18.00 fixed monthly charge is correct.`,
-      `The rate charged is \\$2.00 per cubic metre.`,
-      `After removing the late penalty, May's actual water charge was \\$51.00.`,
-      `A customer using 40 m³ in a month would be billed \\$85.00.`,
-      `Had the same 10% late penalty been applied to June's \\$65.00 bill, the total would have been \\$71.50.`,
-    ],
-    answer_key: [false, true, true, false, true],
-    tactical_explanations: [
-      `**A.** → False
-
-A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
-
-The shared solve isolates the fixed monthly charge:
-
-$$
-x=15
-$$
-
-The claim asserts
-
-$$
-x=18.00
-$$
-
-Those two displays do not agree.
-
-So the statement is False.`,
-      `**B.** → True
-
-Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
-
-From the overview solve, read the rate per cubic metre:
-
-$$
-y=2
-$$
-
-That figure matches the claim.
-
-So the statement is True.`,
-      `**C.** → True
-
-A transfer shifts one recovered holding into the other by the stated amount:
-
-$$
-x' = x - t,\\quad y' = y + t
-$$
-
-Substitute the stem numbers recovered in the overview:
-
-$$
-y = 51
-$$
-
-That computed value matches the claim.
-
-The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
-
-So the statement is True.`,
-      `**D.** → False
-
-An extended bill adds the recovered per-unit charge on top of the recovered fee:
-
-$$
-B = f + t\\cdot r
-$$
-
-Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim:
-
-Forty cubic metres would be billed
-
-$$
-40 \\times 2 = 80
-$$
-
-$$
-15 + 80 = 95
-$$
-
-The claim asserts
-
-$$85.00$$
-
-The computed figure does not match the claim.
-
-So the statement is False.`,
-      `**E.** → True
-
-Use the recovered values from the overview for this claim-specific check.
-
-June's printed bill is \\$65.00. A 10% late penalty on that total is
-
-$$
-65 \\times 1.10 = 71.50
-$$
-
-The claim asserts
-
-$$71.50$$
-
-.
-
-So the statement is True.`,
-    ],
-    difficulty_level: `\\frac{2}{5}`,
-    sort_order: 17,
-    solution_overview: `May used 18 m$^3$ and was billed \\$56.10 after a 10% late penalty on the whole bill. June used 25 m$^3$ with no penalty and was billed \\$65.00. The office claims a \\$18.00 fixed charge and \\$1.85 per m$^3$.
-
-**Part 1: Building the system.**
-
-Let $x$ = fixed monthly charge and $y$ = rate per cubic metre. Undo May's 10% penalty before writing the equation.
-
-May without penalty:
-
-$$\\frac{56.10}{1.10} = 51$$
-
-$$x + 18y = 51 \\tag{1}$$
-
-June:
-
-$$x + 25y = 65 \\tag{2}$$
-
-**Part 2: Solve.**
-
-Subtract (1) from (2):
-
-$$(x + 25y) - (x + 18y) = 65 - 51$$
-
-$$7y = 14$$
-
-$$y = 2$$
-
-Substitute into (1):
-
-$$x + 18(2) = 51$$
-
-$$x + 36 = 51$$
-
-$$x = 15$$
-
-**Answer.** Fixed charge = \\$15.00 | Rate = \\$2.00/m$^3$`,
   },
   {
     id: `math-5-18`,
@@ -2965,10 +2832,11 @@ $$9x_A = 81$$
 $$x_A = 9$$
 
 $$
-\begin{aligned}
-y_A &=30 - 12 \\
-&=18
-\end{aligned}
+y_A = 30 - 12
+$$
+
+$$
+= 18
 $$
 
 Vendor B, divide the first quote by $5$:
@@ -2986,10 +2854,11 @@ $$27x_B = 297$$
 $$x_B = 11$$
 
 $$
-\begin{aligned}
-y_B &=\\frac{92 - 44}{3} \\
-&=16
-\end{aligned}
+y_B = \\frac{92 - 44}{3}
+$$
+
+$$
+= 16
 $$
 
 **Answer.** Vendor A: X = \\$9, Y = \\$18 | Vendor B: X = \\$11, Y = \\$16`,
@@ -3153,10 +3022,11 @@ $$2B = 28200$$
 $$B = 14100$$
 
 $$
-\begin{aligned}
-A &=27200 - 14100 \\
-&=13100
-\end{aligned}
+A = 27200 - 14100
+$$
+
+$$
+= 13100
 $$
 
 The price system is then
@@ -4531,10 +4401,11 @@ $$
 Testing East at the recovered prices:
 
 $$
-\begin{aligned}
-65(29) + 50(24) &=1885 + 1200 \\
-&=3085
-\end{aligned}
+65(29) + 50(24) = 1885 + 1200
+$$
+
+$$
+= 3085
 $$
 
 East reported \\$3,200, so that row does not reconcile.
@@ -5431,11 +5302,15 @@ Let $x$ = price per Nitrogen-type cylinder, $y$ = price per Oxygen-type cylinder
 Invoice 2 versus Invoice 1:
 
 $$
-\begin{aligned}
-\\frac{9}{15} &=\\frac{12}{20} \\
-&=\\frac{419.40}{699.00} \\
-&=0.60
-\end{aligned}
+\\frac{9}{15} = \\frac{12}{20}
+$$
+
+$$
+= \\frac{419.40}{699.00}
+$$
+
+$$
+= 0.60
 $$
 
 **1. Translate: Invoice 1.**
@@ -6200,11 +6075,15 @@ $$
 **2.** Substitute back:
 
 $$
-\begin{aligned}
-y &=2(4800) + 4000 \\
-&=9600 + 4000 \\
-&=13600
-\end{aligned}
+y = 2(4800) + 4000
+$$
+
+$$
+= 9600 + 4000
+$$
+
+$$
+= 13600
 $$
 
 **Answer.** Fund A holds \\$4,800 and Fund B holds \\$13,600.`,
@@ -6337,20 +6216,25 @@ $$
 **3.** Then
 
 $$
-\begin{aligned}
-y &=92 - 5(16) \\
-&=92 - 80 \\
-&=12
-\end{aligned}
+y = 92 - 5(16)
+$$
+
+$$
+= 92 - 80
+$$
+
+$$
+= 12
 $$
 
 **4.** Audit Batch 3 (8 L at 1:3 is $2$ L of A and $6$ L of B):
 
 $$
-\begin{aligned}
-2(16) + 6(12) &=32 + 72 \\
-&=104
-\end{aligned}
+2(16) + 6(12) = 32 + 72
+$$
+
+$$
+= 104
 $$
 
 versus 109 g recorded, a 5 g discrepancy.
@@ -7042,11 +6926,15 @@ $$
 **3.** Substitute $y = 19$ into $x = 2y + 9$:
 
 $$
-\begin{aligned}
-x &=2(19) + 9 \\
-&=38 + 9 \\
-&=47
-\end{aligned}
+x = 2(19) + 9
+$$
+
+$$
+= 38 + 9
+$$
+
+$$
+= 47
 $$
 
 **Answer.** Elder employee = 47 years old | Younger employee = 19 years old.`,
@@ -7476,20 +7364,25 @@ $$
 **3.** Substitute $y = 11.4$ back:
 
 $$
-\begin{aligned}
-x &=41.8 - 3(11.4) \\
-&=41.8 - 34.2 \\
-&=7.6
-\end{aligned}
+x = 41.8 - 3(11.4)
+$$
+
+$$
+= 41.8 - 34.2
+$$
+
+$$
+= 7.6
 $$
 
 **4.** Audit Batch 3:
 
 $$
-\begin{aligned}
-9.5(7.6) + 6(11.4) &=72.2 + 68.4 \\
-&=140.6
-\end{aligned}
+9.5(7.6) + 6(11.4) = 72.2 + 68.4
+$$
+
+$$
+= 140.6
 $$
 
 versus 147.0 kg recorded, a 6.4 kg discrepancy.
@@ -7762,10 +7655,11 @@ $$
 **5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):
 
 $$
-\begin{aligned}
-320(8.4) + 450(15.6) &=2688 + 7020 \\
-&=9708
-\end{aligned}
+320(8.4) + 450(15.6) = 2688 + 7020
+$$
+
+$$
+= 9708
 $$
 
 versus 9,700 mg recorded, an 8 mg discrepancy.
@@ -8048,10 +7942,11 @@ $$
 **3.** Verification at reading $45.0$:
 
 $$
-\begin{aligned}
-45.0(3.50) + 13.50 &=157.50 + 13.50 \\
-&=171.00
-\end{aligned}
+45.0(3.50) + 13.50 = 157.50 + 13.50
+$$
+
+$$
+= 171.00
 $$
 
 versus recorded 172.20, a $1.20$ discrepancy.
@@ -8193,11 +8088,15 @@ $$
 **3.** Substitute $y = 4.85$ back:
 
 $$
-\begin{aligned}
-x &=9.11 - 0.6(4.85) \\
-&=9.11 - 2.91 \\
-&=6.20
-\end{aligned}
+x = 9.11 - 0.6(4.85)
+$$
+
+$$
+= 9.11 - 2.91
+$$
+
+$$
+= 6.20
 $$
 
 **Answer.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg.`,
@@ -8342,10 +8241,11 @@ $$
 **4.** Audit Route 3 ($155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km):
 
 $$
-\begin{aligned}
-2.5(32) + 4(18) &=80 + 72 \\
-&=152
-\end{aligned}
+2.5(32) + 4(18) = 80 + 72
+$$
+
+$$
+= 152
 $$
 
 versus 155 L recorded, a 3 L discrepancy.
@@ -8750,10 +8650,11 @@ $$
 **2.** Then
 
 $$
-\begin{aligned}
-x &=2(36) \\
-&=72
-\end{aligned}
+x = 2(36)
+$$
+
+$$
+= 72
 $$
 
 **3.** Year 6 populations:
@@ -8894,10 +8795,11 @@ $$
 **6.** Audit Day 3 ($1020$ min $= 17$ hrs):
 
 $$
-\begin{aligned}
-17(145) + 11(98) &=2465 + 1078 \\
-&=3543
-\end{aligned}
+17(145) + 11(98) = 2465 + 1078
+$$
+
+$$
+= 3543
 $$
 
 versus 3,553 MWh recorded, a 10 MWh discrepancy.

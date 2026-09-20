@@ -4,8 +4,14 @@
 //     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
+import { loadEnv } from "vite";
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { sitemapPlugin } from "./vite-plugin-sitemap";
+import { entitiesCompatPlugin } from "./vite-plugin-entities-compat";
+
+// Server routes (email webhooks) need non-VITE_ env vars in process.env.
+const serverEnv = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
+Object.assign(process.env, serverEnv);
 
 export default defineConfig({
   tanstackStart: {
@@ -14,7 +20,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
   vite: {
-    plugins: [sitemapPlugin()],
+    plugins: [sitemapPlugin(), entitiesCompatPlugin()],
     build: {
       rollupOptions: {
         output: {

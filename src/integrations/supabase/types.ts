@@ -938,6 +938,16 @@ export type Database = {
           user_id: string
         }[]
       }
+      grant_paid_enrollment: {
+        Args: {
+          p_user_id: string
+          p_product_slug: string
+          p_product_name: string
+          p_tier: string
+        }
+        Returns: undefined
+      }
+      has_paid_access: { Args: { _user_id: string }; Returns: boolean }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]

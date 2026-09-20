@@ -6,7 +6,7 @@ import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 import { BookOpen, Target, AlertTriangle, Download, Maximize2, Minimize2 } from "lucide-react";
 import { getEconomicsCourseTheory } from "@/data/economics-course-theory";
-import { getMathCourseTheory } from "@/data/math-course-theory";
+import { getMathCourseTheory, type MathCourseTheoryChapter } from "@/data/math-course-theory";
 import { getWisoEconomicsCourseTheory } from "@/data/wiso-economics-course-theory";
 import { TheoryFigure } from "@/components/theory/TheoryFigure";
 import { cn } from "@/lib/utils";
@@ -24,6 +24,8 @@ type Props = {
   onGoToPractice: () => void;
   /** Defaults to economics (existing Full Course behaviour). */
   subject?: "economics" | "math" | "wiso-economics";
+  /** Optional override (e.g. WiSo German math theory). */
+  theoryChapter?: MathCourseTheoryChapter;
 };
 
 type TocItem = { id: string; label: string; level: 2 | 3 };
@@ -272,8 +274,10 @@ export function TheoryReader({
   title,
   onGoToPractice,
   subject = "economics",
+  theoryChapter: theoryOverride,
 }: Props) {
-  const mathTheory = subject === "math" ? getMathCourseTheory(chapter) : undefined;
+  const mathTheory =
+    subject === "math" ? (theoryOverride ?? getMathCourseTheory(chapter)) : undefined;
   const economicsTheory = subject === "economics" ? getEconomicsCourseTheory(chapter) : undefined;
   const wisoTheory = subject === "wiso-economics" ? getWisoEconomicsCourseTheory(chapter) : undefined;
   const markdown =

@@ -12,9 +12,14 @@ const MONO_API = "https://api.monobank.ua/api/merchant";
 let cachedKey: { key: CryptoKey; fetchedAt: number } | null = null;
 const KEY_TTL_MS = 60 * 60 * 1000; // refresh hourly (Monobank may rotate)
 
-function monoToken(): string {
-  const token = process.env["MONOBANK_TOKEN"]?.trim();
-  if (!token) throw new Error("MONOBANK_TOKEN is not configured on the server.");
+async function monoToken(): Promise<string> {
+  const { getServerSecret } = await import("@/lib/server-secret.server");
+  const token = await getServerSecret("MONOBANK_TOKEN");
+  if (!token) {
+    throw new Error(
+      "MONOBANK_TOKEN is not configured on the server. Add a Cloud secret named exactly MONOBANK_TOKEN in Lovable (More → Cloud → Secrets).",
+    );
+  }
   return token;
 }
 
@@ -71,7 +76,7 @@ async function fetchPublicKey(force = false): Promise<CryptoKey> {
   if (!force && cachedKey && Date.now() - cachedKey.fetchedAt < KEY_TTL_MS) {
     return cachedKey.key;
   }
-  const res = await fetch(`${MONO_API}/pubkey`, { headers: { "X-Token": monoToken() } });
+  const res = await fetch(`${MONO_API}/pubkey`, { headers: { "X-Token": await monoToken() } });
   const text = await res.text();
   if (!res.ok) {
     console.error("[mono-webhook] pubkey fetch failed", res.status, text);
@@ -124,7 +129,25 @@ export type WebhookLog = {
   error?: string;
 };
 
-/** Persists every webhook hit (valid or not) for debugging. */
+const SENSITIVE_HEADERS = new Set([
+  "x-sign",
+  "x-token",
+  "authorization",
+  "cookie",
+  "set-cookie",
+  "x-api-key",
+]);
+
+/** Drops signature/credential headers so stored logs cannot leak them. */
+function redactHeaders(headers: Record<string, string>): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [key, value] of Object.entries(headers)) {
+    out[key] = SENSITIVE_HEADERS.has(key.toLowerCase()) ? "[redacted]" : value;
+  }
+  return out;
+}
+
+/** Persists every webhook hit (valid or not) for debugging, without secrets. */
 export async function logWebhook(entry: WebhookLog): Promise<void> {
   try {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -134,9 +157,10 @@ export async function logWebhook(entry: WebhookLog): Promise<void> {
       amount_minor: entry.amountMinor,
       currency_code: entry.currencyCode,
       signature_valid: entry.signatureValid,
-      headers: entry.headers,
+      headers: redactHeaders(entry.headers),
       payload: entry.payload as never,
-      raw_body: entry.rawBody.slice(0, 20000),
+      // Raw body is only useful when parsing/verification failed.
+      raw_body: entry.payload ? null : entry.rawBody.slice(0, 5000),
       error: entry.error ?? null,
     });
   } catch (err) {

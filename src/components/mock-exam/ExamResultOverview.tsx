@@ -26,6 +26,18 @@ const MUTED = "var(--muted-foreground)";
 const GRID = "var(--border)";
 const axisTick = { fill: MUTED, fontSize: 11 };
 
+/** Monochrome brand fills — no subject green/blue on mock results. */
+const BRAND_CHART = [
+  "var(--color-caramel-deep)",
+  "color-mix(in oklab, var(--color-caramel-deep) 70%, var(--foreground))",
+  "color-mix(in oklab, var(--color-caramel-deep) 45%, var(--muted-foreground))",
+  "color-mix(in oklab, var(--foreground) 55%, var(--muted-foreground))",
+];
+
+function brandFill(index: number) {
+  return BRAND_CHART[index % BRAND_CHART.length]!;
+}
+
 function tipStyle(): CSSProperties {
   return {
     background: "var(--popover)",
@@ -71,11 +83,12 @@ function Stat({
 }
 
 function Meter({ pct, color }: { pct: number; color: string }) {
+  void color;
   return (
     <div className="h-1.5 overflow-hidden rounded-full bg-secondary">
       <div
-        className="h-full rounded-full"
-        style={{ width: `${Math.min(100, Math.max(0, pct))}%`, backgroundColor: color }}
+        className="h-full rounded-full bg-caramel-deep"
+        style={{ width: `${Math.min(100, Math.max(0, pct))}%` }}
       />
     </div>
   );
@@ -134,8 +147,7 @@ function GroupTable({
                 <td className="px-5 py-4 sm:px-6">
                   <div className="flex items-center gap-2.5">
                     <span
-                      className="h-2 w-2 shrink-0 rounded-full"
-                      style={{ backgroundColor: row.color }}
+                      className="h-2 w-2 shrink-0 rounded-full bg-caramel-deep"
                       aria-hidden
                     />
                     <div className="min-w-0">
@@ -183,8 +195,8 @@ function StatementCells({ task }: { task: TaskAnalyticsRow }) {
           className={cn(
             "grid h-7 w-7 place-items-center rounded-md text-[11px] font-semibold",
             j.judgedOk
-              ? "bg-emerald-500/12 text-emerald-800 dark:text-emerald-300"
-              : "bg-red-500/12 text-red-800 dark:text-red-300",
+              ? "bg-caramel-deep/12 text-caramel-deep"
+              : "bg-secondary text-muted-foreground",
           )}
         >
           {j.letter}
@@ -301,11 +313,11 @@ export function ExamResultOverview({
 
   const subjectPie = useMemo(
     () =>
-      sections.map((s) => ({
+      sections.map((s, i) => ({
         name: s.label,
         value: Math.max(s.accuracyPct, 0.01),
         accuracy: s.accuracyPct,
-        color: s.color,
+        color: brandFill(i),
         earned: s.earned,
         max: s.max,
       })),
@@ -316,10 +328,10 @@ export function ExamResultOverview({
     () =>
       [...chapters]
         .sort((a, b) => a.accuracyPct - b.accuracyPct)
-        .map((c) => ({
+        .map((c, i) => ({
           name: c.label,
           accuracy: c.accuracyPct,
-          color: c.color,
+          color: brandFill(i),
         })),
     [chapters],
   );
@@ -462,7 +474,10 @@ export function ExamResultOverview({
                   <li key={row.name}>
                     <div className="mb-1 flex items-baseline justify-between gap-3 text-sm">
                       <span className="flex min-w-0 items-center gap-2">
-                        <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: row.color }} />
+                        <span
+                          className="h-2 w-2 shrink-0 rounded-full"
+                          style={{ backgroundColor: row.color }}
+                        />
                         <span className="truncate font-medium">{row.name}</span>
                       </span>
                       <span className="tabular-nums font-semibold">{row.accuracy}%</span>

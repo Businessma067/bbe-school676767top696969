@@ -1,10 +1,18 @@
 import type { ReactNode } from "react";
 import type { FlashcardSubjectId } from "@/data/flashcards";
+import {
+  WISO_MODE_ART_PREVIEW,
+  type StudyUiLocale,
+} from "@/lib/wiso-study-ui";
 
-const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
+/** Art keys for BBE + WiSo subjects (german reuses english book glyph). */
+export type StudyArtSubjectId = FlashcardSubjectId | "german";
+
+const SUBJECT_BG: Record<StudyArtSubjectId, string> = {
   economics: "var(--art-economics)",
   math: "var(--art-math)",
   english: "var(--art-english)",
+  german: "var(--art-english)",
 };
 
 /** Fixed square card — same size on every subject (matches English proportions). */
@@ -22,7 +30,7 @@ type Pair = [string, string];
 
 /** Per mode, per subject — short labels only, no repeats across modes. */
 const SUBJECT_PREVIEW: Record<
-  FlashcardSubjectId,
+  StudyArtSubjectId,
   {
     flashcard: string;
     matching: Pair[];
@@ -65,7 +73,26 @@ const SUBJECT_PREVIEW: Record<
       correct: 0,
     },
   },
+  german: {
+    flashcard: "Knappheit",
+    matching: [
+      ["Angebot", "Supply"],
+      ["Nachfrage", "Demand"],
+    ],
+    tutor: {
+      question: "Was sind Opportunitätskosten?",
+      options: ["Entgangener Nutzen", "Buchhalterische Kosten"],
+      correct: 0,
+    },
+  },
 };
+
+function previewFor(subject: StudyArtSubjectId, locale: StudyUiLocale) {
+  if (locale === "de" && subject in WISO_MODE_ART_PREVIEW) {
+    return WISO_MODE_ART_PREVIEW[subject as keyof typeof WISO_MODE_ART_PREVIEW];
+  }
+  return SUBJECT_PREVIEW[subject];
+}
 
 /** Dashboard mode tiles — one subject each, all different terms. */
 const DASHBOARD_MODE_PREVIEW = {
@@ -78,7 +105,7 @@ function SubjectPreviewShell({
   subject,
   children,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   children: ReactNode;
 }) {
   return (
@@ -97,7 +124,7 @@ function SubjectGlyph({
   subject,
   className = "h-7 w-7",
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   className?: string;
 }) {
   if (subject === "economics") {
@@ -169,7 +196,7 @@ function FlashcardPreviewCard({
   accent,
   term,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
   term: string;
 }) {
@@ -192,7 +219,7 @@ function MiniCard({
   label,
   sample,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   label: string;
   sample: string;
 }) {
@@ -210,13 +237,26 @@ function MiniCard({
 }
 
 /** Dashboard / tile banner for Flashcards. */
-export function FlashcardsModeArt({ className = "" }: { className?: string }) {
+export function FlashcardsModeArt({
+  className = "",
+  locale = "en",
+}: {
+  className?: string;
+  locale?: StudyUiLocale;
+}) {
+  const econ = previewFor("economics", locale).flashcard;
+  const math = previewFor("math", locale).flashcard;
+  const third =
+    locale === "de"
+      ? { subject: "german" as const, label: "Deu", sample: previewFor("german", locale).flashcard }
+      : { subject: "english" as const, label: "Eng", sample: SUBJECT_PREVIEW.english.flashcard };
+
   return (
     <div className={DASH_ART_FRAME + className}>
       <div className="flex h-full items-stretch justify-center gap-2.5">
-        <MiniCard subject="economics" label="Econ" sample="Inflation" />
-        <MiniCard subject="math" label="Math" sample="Discriminant" />
-        <MiniCard subject="english" label="Eng" sample="Arbitrage" />
+        <MiniCard subject="economics" label={locale === "de" ? "Wirt" : "Econ"} sample={econ} />
+        <MiniCard subject="math" label={locale === "de" ? "Mathe" : "Math"} sample={math} />
+        <MiniCard subject={third.subject} label={third.label} sample={third.sample} />
       </div>
     </div>
   );
@@ -226,16 +266,18 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
 export function FlashcardsSubjectArt({
   subject,
   accent,
+  locale = "en",
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
+  locale?: StudyUiLocale;
 }) {
   return (
     <SubjectPreviewShell subject={subject}>
       <FlashcardPreviewCard
         subject={subject}
         accent={accent}
-        term={SUBJECT_PREVIEW[subject].flashcard}
+        term={previewFor(subject, locale).flashcard}
       />
     </SubjectPreviewShell>
   );
@@ -299,17 +341,20 @@ function MatchingPairs({
 export function MatchingModeArt({
   accent = "#c8763a",
   className = "",
+  locale = "en",
 }: {
   accent?: string;
   className?: string;
+  locale?: StudyUiLocale;
 }) {
+  const pairs =
+    locale === "de"
+      ? previewFor("economics", "de").matching
+      : DASHBOARD_MODE_PREVIEW.matching;
+
   return (
     <div className={DASH_ART_FRAME + className}>
-      <MatchingPairs
-        fill
-        accent={accent}
-        pairs={DASHBOARD_MODE_PREVIEW.matching}
-      />
+      <MatchingPairs fill accent={accent} pairs={pairs} />
     </div>
   );
 }
@@ -405,11 +450,14 @@ function TutorQuizPreview({
 export function TutorModeArt({
   accent = "#c8763a",
   className = "",
+  locale = "en",
 }: {
   accent?: string;
   className?: string;
+  locale?: StudyUiLocale;
 }) {
-  const preview = DASHBOARD_MODE_PREVIEW.tutor;
+  const preview =
+    locale === "de" ? previewFor("math", "de").tutor : DASHBOARD_MODE_PREVIEW.tutor;
 
   return (
     <div className={DASH_ART_FRAME + "gap-3 " + className}>
@@ -426,7 +474,7 @@ export function TutorModeArt({
           className="mt-2 inline-flex rounded-md px-2.5 py-1 text-[10px] font-semibold text-white"
           style={{ backgroundColor: accent }}
         >
-          Start exam
+          {locale === "de" ? "Prüfung starten" : "Start exam"}
         </span>
       </div>
     </div>
@@ -437,13 +485,15 @@ export function TutorModeArt({
 export function MatchingSubjectArt({
   subject,
   accent,
+  locale = "en",
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
+  locale?: StudyUiLocale;
 }) {
   return (
     <SubjectPreviewShell subject={subject}>
-      <MatchingPairs accent={accent} pairs={SUBJECT_PREVIEW[subject].matching} />
+      <MatchingPairs accent={accent} pairs={previewFor(subject, locale).matching} />
     </SubjectPreviewShell>
   );
 }
@@ -452,11 +502,13 @@ export function MatchingSubjectArt({
 export function TutorSubjectArt({
   subject,
   accent,
+  locale = "en",
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
+  locale?: StudyUiLocale;
 }) {
-  const preview = SUBJECT_PREVIEW[subject].tutor;
+  const preview = previewFor(subject, locale).tutor;
 
   return (
     <SubjectPreviewShell subject={subject}>

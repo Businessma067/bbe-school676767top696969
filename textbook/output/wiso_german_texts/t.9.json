@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.9",
+    "title": "CO₂-Bepreisung und die Debatte um klimapolitische Instrumente",
+    "passage": "(1) Unter Ökonominnen und Ökonomen gilt die Bepreisung von Treibhausgasen seit Jahrzehnten als Standardinstrument der Klimapolitik. Die Begründung ist einfach: Wer Kohlendioxid ausstößt, verursacht Kosten, die bislang niemand trägt, sondern die Allgemeinheit übernimmt. Ein Preis macht diese externen Kosten sichtbar und überlässt es den Beteiligten, dort zu vermeiden, wo es am günstigsten ist. 2019 unterzeichneten mehr als dreitausend US-Ökonominnen und -Ökonomen, darunter zahlreiche Nobelpreisträger, eine gemeinsame Erklärung für eine CO₂-Steuer mit Rückerstattung an die Haushalte.\n\n(2) Zwei Grundformen stehen zur Wahl. Eine Steuer legt den Preis fest und lässt die Emissionsmenge offen; ein Emissionshandel legt die Menge fest und lässt den Preis durch den Markt bestimmen. Die Europäische Union entschied sich 2005 für den zweiten Weg und richtete das bis heute größte System dieser Art ein, zunächst für Kraftwerke und energieintensive Industrie.\n\n(3) Die Anfangsjahre verliefen ernüchternd. Weil zu viele Zertifikate ausgegeben und zusätzlich kostenlos zugeteilt wurden, fiel der Preis zeitweise unter fünf Euro je Tonne, ein Niveau, bei dem sich kaum eine Investition in saubere Technik rechnet. Erst nach mehreren Reformen, insbesondere der Einführung einer Marktstabilitätsreserve, stiegen die Preise deutlich und lagen in den frühen 2020er-Jahren zeitweise über achtzig Euro je Tonne.\n\n(4) Befürworterinnen und Befürworter verweisen auf die Treffsicherheit des Instruments. Ein Preis wirkt überall zugleich, bei der Wahl des Brennstoffs, bei der Sanierung eines Gebäudes, bei der Entscheidung über eine neue Anlage, und er benötigt keine Behörde, die für jede Branche eine eigene Vorschrift entwirft. Auswertungen des europäischen Systems kommen zu dem Ergebnis, dass es Emissionen in den erfassten Sektoren messbar gesenkt hat, ohne dass Beschäftigung oder Wertschöpfung der betroffenen Betriebe erkennbar eingebrochen wären.\n\n(5) Der schwierigste Einwand ist verteilungspolitischer Natur. Ärmere Haushalte geben einen größeren Anteil ihres Einkommens für Heizen und Mobilität aus, weshalb ein gleich hoher Preis sie relativ stärker trifft. Ökonominnen und Ökonomen halten das nicht für zwingend, sondern für eine Frage der Rückverteilung: Wird das Aufkommen als Pauschale pro Kopf ausgezahlt, stellen sich untere Einkommensgruppen im Durchschnitt besser als vorher. Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien, Kanada zahlte sie lange als Quartalsbetrag aus.\n\n(6) Politisch bleibt das Instrument dennoch anfällig. Die französischen Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer; die Regierung nahm sie zurück. Der Fall gilt seither als Lehrstück dafür, dass Sichtbarkeit und Gerechtigkeitsempfinden über die Akzeptanz entscheiden: Eine Belastung an der Zapfsäule ist unmittelbar spürbar, eine Rückerstattung auf dem Konto bleibt abstrakt. Kanada schaffte seine bundesweite Verbraucherabgabe 2025 nach anhaltender politischer Auseinandersetzung ab.\n\n(7) Ein weiterer Streitpunkt ist die Wettbewerbsfähigkeit. Wenn energieintensive Produktion in Länder ohne Preis abwandert, sinken die heimischen Emissionen, die globalen aber nicht; dieses Risiko wird als Verlagerung von Emissionen bezeichnet. Die Europäische Union antwortet mit einem Grenzausgleichsmechanismus, der ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erhebt. Handelspartner kritisieren das Vorhaben als verdeckten Protektionismus, während empirische Untersuchungen bislang wenig Belege für eine großflächige Abwanderung gefunden haben.\n\n(8) Schließlich melden sich Stimmen zu Wort, die den Preis für notwendig, aber nicht hinreichend halten. Netzausbau, Ladeinfrastruktur, Genehmigungsverfahren und Forschung reagieren träge auf Preissignale; wer kein Fernwärmenetz vor der Tür hat, ändert sein Heizsystem auch bei hohen Preisen nicht. Aus dieser Sicht wirkt ein CO₂-Preis am besten dort, wo Alternativen bereits verfügbar sind, und braucht sonst ergänzende Investitionen und Regeln.\n\n(9) Die Debatte hat sich damit verschoben. Sie dreht sich weniger um die Frage, ob ein Preis wirkt, als darum, wie hoch er sein darf, wie sein Aufkommen zurückfließt und welche Politik daneben treten muss. Ob Gesellschaften ein Instrument dauerhaft tragen, dessen Kosten sofort spürbar und dessen Nutzen zeitlich wie räumlich verteilt sind, ist die eigentlich offene Frage.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-9-01",
+      "case_id": "DE T.9.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen die ökonomische Begründung, die beiden Instrumentenformen und die Anfangsjahre des europäischen Systems.",
+      "kind": "reading",
+      "statements": [
+        "Laut Text macht ein CO₂-Preis externe Kosten sichtbar, die bislang die Allgemeinheit übernimmt.",
+        "Eine CO₂-Steuer legt laut Text die Emissionsmenge fest und lässt den Preis offen.",
+        "Die Europäische Union entschied sich 2005 für einen Emissionshandel.",
+        "In den Anfangsjahren des europäischen Systems lag der Preis laut Text stets deutlich über achtzig Euro je Tonne.",
+        "Die Erklärung von 2019 forderte eine CO₂-Steuer mit Rückerstattung an die Haushalte."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Laut Text macht ein CO₂-Preis externe Kosten sichtbar, die bislang die Allgemeinheit übernimmt.**\n\nAbsatz 1 beschreibt genau diesen Mechanismus: „Ein Preis macht diese externen Kosten sichtbar“, nachdem zuvor gesagt wurde, dass sie die Allgemeinheit trägt.\n\nDie Aussage verbindet beide Sätze, ohne etwas hinzuzufügen.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.",
+        "**B) Eine CO₂-Steuer legt laut Text die Emissionsmenge fest und lässt den Preis offen.**\n\nAbsatz 2 ordnet es umgekehrt zu: „Eine Steuer legt den Preis fest und lässt die Emissionsmenge offen“, während der Emissionshandel die Menge fixiert.\n\nDie Aussage vertauscht die beiden Instrumente genau in dem Punkt, der sie unterscheidet.\n\n**Falle:** Preis- und Mengensteuerung werden häufig verwechselt.\n\nDie Aussage scheitert an dieser Vertauschung.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 2 und ist daher falsch.",
+        "**C) Die Europäische Union entschied sich 2005 für einen Emissionshandel.**\n\nAbsatz 2 sagt, „Die Europäische Union entschied sich 2005 für den zweiten Weg“, also für die zuvor beschriebene Mengenlösung.\n\nDie Aussage benennt Jahr und Instrument korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Die Europäische Union entschied sich 2005 für den zweiten Weg\" darf die Behauptung nicht stehen.",
+        "**D) In den Anfangsjahren des europäischen Systems lag der Preis laut Text stets deutlich über achtzig Euro je Tonne.**\n\nAbsatz 3 berichtet für die Anfangsphase, es „fiel der Preis zeitweise unter fünf Euro je Tonne“; die achtzig Euro gehören in die frühen 2020er-Jahre.\n\nDie Aussage verschiebt einen späteren Wert in die Anfangszeit.\n\nDie Aussage scheitert an dieser zeitlichen Zuordnung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 3 und ist daher falsch.",
+        "**E) Die Erklärung von 2019 forderte eine CO₂-Steuer mit Rückerstattung an die Haushalte.**\n\nAbsatz 1 nennt „eine gemeinsame Erklärung für eine CO₂-Steuer mit Rückerstattung an die Haushalte“, unterzeichnet von über dreitausend Fachleuten.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „eine gemeinsame Erklärung für eine CO₂-Steuer mit Rückerstattung an die Haushalt…\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "Ein Preis macht diese externen Kosten sichtbar",
+        "Eine Steuer legt den Preis fest und lässt die Emissionsmenge offen",
+        "Die Europäische Union entschied sich 2005 für den zweiten Weg",
+        "fiel der Preis zeitweise unter fünf Euro je Tonne",
+        "eine gemeinsame Erklärung für eine CO₂-Steuer mit Rückerstattung an die Haushalte"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-02",
+      "case_id": "DE T.9.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen die Wirksamkeitsbefunde, den Verteilungseinwand und die politische Anfälligkeit.",
+      "kind": "reading",
+      "statements": [
+        "Auswertungen des europäischen Systems zeigen laut Text messbar gesunkene Emissionen in den erfassten Sektoren.",
+        "Laut Text brachen Beschäftigung und Wertschöpfung der betroffenen Betriebe erkennbar ein.",
+        "Ärmere Haushalte geben laut Text einen größeren Anteil ihres Einkommens für Heizen und Mobilität aus.",
+        "Bei einer Pauschale pro Kopf stellen sich untere Einkommensgruppen laut Text im Durchschnitt schlechter als zuvor.",
+        "Die Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Auswertungen des europäischen Systems zeigen laut Text messbar gesunkene Emissionen in den erfassten Sektoren.**\n\nAbsatz 4 hält fest, „dass es Emissionen in den erfassten Sektoren messbar gesenkt hat“.\n\nDie Aussage übernimmt die Einschränkung auf die erfassten Sektoren korrekt.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 4, deshalb ist sie richtig.",
+        "**B) Laut Text brachen Beschäftigung und Wertschöpfung der betroffenen Betriebe erkennbar ein.**\n\nAbsatz 4 sagt das Gegenteil: Die Senkung erfolgte, „ohne dass Beschäftigung oder Wertschöpfung der betroffenen Betriebe erkennbar eingebrochen wären“.\n\nDie Aussage streicht die Verneinung und verkehrt den Befund.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 4 und ist daher falsch.",
+        "**C) Ärmere Haushalte geben laut Text einen größeren Anteil ihres Einkommens für Heizen und Mobilität aus.**\n\nAbsatz 5 begründet damit, warum ein einheitlicher Preis diese Haushalte relativ stärker trifft.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 5 heißt es wörtlich: „Ärmere Haushalte geben einen größeren Anteil ihres Einkommens für Heizen und Mobilität aus\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.",
+        "**D) Bei einer Pauschale pro Kopf stellen sich untere Einkommensgruppen laut Text im Durchschnitt schlechter als zuvor.**\n\nAbsatz 5 sagt das Gegenteil: In diesem Fall „stellen sich untere Einkommensgruppen im Durchschnitt besser als vorher“.\n\nGerade dieser Punkt ist im Text die Entgegnung auf den Verteilungseinwand.\n\nDie Aussage scheitert an der umgekehrten Richtung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 5 und ist daher falsch.",
+        "**E) Die Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer.**\n\nAbsatz 6 datiert und begründet den Beginn genau so und ergänzt, dass die Regierung die Erhöhung zurücknahm.\n\nIn Absatz 6 heißt es wörtlich: „Die französischen Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "dass es Emissionen in den erfassten Sektoren messbar gesenkt hat",
+        "ohne dass Beschäftigung oder Wertschöpfung der betroffenen Betriebe erkennbar eingebrochen wären",
+        "Ärmere Haushalte geben einen größeren Anteil ihres Einkommens für Heizen und Mobilität aus",
+        "stellen sich untere Einkommensgruppen im Durchschnitt besser als vorher",
+        "Die französischen Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-03",
+      "case_id": "DE T.9.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen die Debatte um Verlagerung, Grenzausgleich, Begleitpolitik und den offenen Schluss.",
+      "kind": "reading",
+      "statements": [
+        "Als Verlagerung von Emissionen bezeichnet der Text das Risiko, dass heimische Emissionen sinken, globale aber nicht.",
+        "Der Grenzausgleichsmechanismus soll laut Text ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erheben.",
+        "Empirische Untersuchungen haben laut Text bereits eine großflächige Abwanderung nachgewiesen.",
+        "Einige Stimmen halten den Preis laut Text für notwendig, aber nicht hinreichend.",
+        "Der Schlussabsatz erklärt die Frage nach der dauerhaften gesellschaftlichen Tragfähigkeit für beantwortet."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Als Verlagerung von Emissionen bezeichnet der Text das Risiko, dass heimische Emissionen sinken, globale aber nicht.**\n\nAbsatz 7 definiert das Risiko genau so: Wandert Produktion ab, „sinken die heimischen Emissionen, die globalen aber nicht“.\n\nDie Aussage gibt die Definition unverändert wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**B) Der Grenzausgleichsmechanismus soll laut Text ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erheben.**\n\nAbsatz 7 nennt Startjahr und Warengruppen wörtlich in dieser Zusammensetzung.\n\nDie Aussage übernimmt beide Angaben korrekt.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 7 heißt es wörtlich: „der ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erhebt\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**C) Empirische Untersuchungen haben laut Text bereits eine großflächige Abwanderung nachgewiesen.**\n\nAbsatz 7 sagt, sie hätten „bislang wenig Belege für eine großflächige Abwanderung gefunden haben“.\n\nWenig Belege ist das Gegenteil eines Nachweises; das Risiko bleibt im Text theoretisch begründet, aber empirisch schwach belegt.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**D) Einige Stimmen halten den Preis laut Text für notwendig, aber nicht hinreichend.**\n\nAbsatz 8 führt genau diese Position ein, nämlich Stimmen, „die den Preis für notwendig, aber nicht hinreichend halten“.\n\nDie Aussage behält beide Teile der Formel bei.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „die den Preis für notwendig, aber nicht hinreichend halten\" darf die Behauptung nicht stehen.",
+        "**E) Der Schlussabsatz erklärt die Frage nach der dauerhaften gesellschaftlichen Tragfähigkeit für beantwortet.**\n\nAbsatz 9 nennt sie ausdrücklich das Gegenteil, nämlich das, was „ist die eigentlich offene Frage“.\n\nDie Aussage schließt, wo der Text bewusst offenlässt.\n\nDie Aussage scheitert am offenen Ende.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 9 und ist daher falsch."
+      ],
+      "highlights": [
+        "sinken die heimischen Emissionen, die globalen aber nicht",
+        "der ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erhebt",
+        "bislang wenig Belege für eine großflächige Abwanderung gefunden haben",
+        "die den Preis für notwendig, aber nicht hinreichend halten",
+        "ist die eigentlich offene Frage"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-04",
+      "case_id": "DE T.9.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen verlangen Inferenzen und die Deutung zentraler Fachbegriffe im Kontext.",
+      "kind": "reading",
+      "statements": [
+        "„Externe Kosten“ meint im Kontext Kosten, die der Verursacher nicht selbst trägt.",
+        "Aus dem Unterschied der beiden Instrumente folgt, dass beim Emissionshandel die Preishöhe nicht vorab feststeht.",
+        "Aus dem Fall der Gelbwesten folgt laut Text, dass die Sichtbarkeit der Belastung die Akzeptanz beeinflusst.",
+        "Weil das europäische System Emissionen gesenkt hat, hält der Text ergänzende Maßnahmen für überflüssig.",
+        "Der niedrige Anfangspreis zeigt laut Text, dass ein Emissionshandel grundsätzlich keine Lenkungswirkung entfalten kann."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) „Externe Kosten“ meint im Kontext Kosten, die der Verursacher nicht selbst trägt.**\n\nAbsatz 1 erklärt den Begriff im selben Satzzusammenhang: Wer ausstößt, „verursacht Kosten, die bislang niemand trägt, sondern die Allgemeinheit übernimmt“.\n\nExtern heißt hier also außerhalb der Rechnung des Verursachers.\n\nDie Aussage trifft die Kontextbedeutung.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.",
+        "**B) Aus dem Unterschied der beiden Instrumente folgt, dass beim Emissionshandel die Preishöhe nicht vorab feststeht.**\n\nAbsatz 2 sagt, „ein Emissionshandel legt die Menge fest und lässt den Preis durch den Markt bestimmen“.\n\nWenn der Markt den Preis bildet, kann er vorab nicht bekannt sein; Absatz 3 zeigt genau diese Schwankung.\n\nDie Aussage folgt dem Text korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**C) Aus dem Fall der Gelbwesten folgt laut Text, dass die Sichtbarkeit der Belastung die Akzeptanz beeinflusst.**\n\nAbsatz 6 zieht diese Lehre ausdrücklich: „Eine Belastung an der Zapfsäule ist unmittelbar spürbar, eine Rückerstattung auf dem Konto bleibt abstrakt.“\n\nDie Aussage gibt genau diese Asymmetrie der Wahrnehmung wieder.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.",
+        "**D) Weil das europäische System Emissionen gesenkt hat, hält der Text ergänzende Maßnahmen für überflüssig.**\n\nAbsatz 8 widerspricht dem mit einem konkreten Beispiel: „wer kein Fernwärmenetz vor der Tür hat, ändert sein Heizsystem auch bei hohen Preisen nicht“.\n\nDie Wirksamkeit in einem Bereich macht Infrastruktur und Regeln im Text also nicht entbehrlich.\n\nDie Aussage scheitert an dieser Inferenz.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**E) Der niedrige Anfangspreis zeigt laut Text, dass ein Emissionshandel grundsätzlich keine Lenkungswirkung entfalten kann.**\n\nAbsatz 3 erklärt den niedrigen Preis mit der Überausstattung und hält fest: „Erst nach mehreren Reformen“ stiegen die Preise deutlich.\n\nDer Text führt das Problem also auf die Ausgestaltung zurück, nicht auf das Instrument als solches.\n\nDie Aussage scheitert an dieser Verallgemeinerung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 3 und ist daher falsch."
+      ],
+      "highlights": [
+        "verursacht Kosten, die bislang niemand trägt, sondern die Allgemeinheit übernimmt",
+        "ein Emissionshandel legt die Menge fest und lässt den Preis durch den Markt bestimmen",
+        "Eine Belastung an der Zapfsäule ist unmittelbar spürbar, eine Rückerstattung auf dem Konto bleibt abstrakt",
+        "wer kein Fernwärmenetz vor der Tür hat, ändert sein Heizsystem auch bei hohen Preisen nicht",
+        "Erst nach mehreren Reformen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-05",
+      "case_id": "DE T.9.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen den Aufbau der Argumentation über den gesamten Text hinweg.",
+      "kind": "reading",
+      "statements": [
+        "Der Text entwickelt zuerst die ökonomische Begründung, dann die Praxis und anschließend mehrere Einwände.",
+        "Verteilungsfragen werden im Text nur beiläufig erwähnt.",
+        "Absatz 7 behandelt einen anderen Einwand als Absatz 5, nämlich Wettbewerbsfähigkeit statt Verteilung.",
+        "Der Text stellt Befürworter- und Kritikpositionen nebeneinander, ohne eine Seite für alternativlos zu erklären.",
+        "Konkrete Länderbeispiele fehlen im Text."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text entwickelt zuerst die ökonomische Begründung, dann die Praxis und anschließend mehrere Einwände.**\n\nAbsatz 1 setzt mit „Die Begründung ist einfach“ an, die Absätze 2 bis 4 schildern Ausgestaltung und Befunde, die Absätze 5 bis 8 bringen die Einwände.\n\nDie Aussage beschreibt diese Reihenfolge korrekt.\n\nDie Aussage trifft den Textaufbau.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.",
+        "**B) Verteilungsfragen werden im Text nur beiläufig erwähnt.**\n\nAbsatz 5 beginnt mit „Der schwierigste Einwand ist verteilungspolitischer Natur“ und widmet ihm einen ganzen Absatz samt Gegenargument und Länderbeispielen.\n\nDas ist das Gegenteil einer Nebenbemerkung.\n\nDie Aussage scheitert an der Gewichtung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 5 und ist daher falsch.",
+        "**C) Absatz 7 behandelt einen anderen Einwand als Absatz 5, nämlich Wettbewerbsfähigkeit statt Verteilung.**\n\nAbsatz 7 eröffnet mit „Ein weiterer Streitpunkt ist die Wettbewerbsfähigkeit“ und wendet sich damit einer neuen Ebene zu.\n\nDie Aussage unterscheidet die beiden Einwände korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 7, deshalb ist sie richtig.",
+        "**D) Der Text stellt Befürworter- und Kritikpositionen nebeneinander, ohne eine Seite für alternativlos zu erklären.**\n\nAbsatz 4 bringt die Argumente der Befürworterseite, Absatz 8 beginnt mit „Schließlich melden sich Stimmen zu Wort“, die ergänzende Politik fordern.\n\nDer Schluss urteilt nicht, sondern beschreibt eine Verschiebung der Debatte.\n\nDie Aussage trifft die Anlage des Textes.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**E) Konkrete Länderbeispiele fehlen im Text.**\n\nAbsatz 5 nennt unter anderem: „Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien“, Absatz 6 Frankreich und Kanada.\n\nDie Aussage ist damit mehrfach widerlegt.\n\nDie Aussage scheitert am Textbefund.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 5 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "Die Begründung ist einfach",
+        "Der schwierigste Einwand ist verteilungspolitischer Natur",
+        "Ein weiterer Streitpunkt ist die Wettbewerbsfähigkeit",
+        "Schließlich melden sich Stimmen zu Wort",
+        "Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-06",
+      "case_id": "DE T.9.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen Jahreszahlen, Preisangaben und Detailangaben zu den genannten Systemen.",
+      "kind": "reading",
+      "statements": [
+        "Mehr als dreitausend US-Ökonominnen und -Ökonomen unterzeichneten laut Text 2019 eine gemeinsame Erklärung.",
+        "Die Europäische Union entschied sich laut Text im Jahr 2005 für ihr Handelssystem.",
+        "Der Zertifikatspreis fiel laut Text zeitweise unter fünf Euro je Tonne.",
+        "Der Grenzausgleichsmechanismus greift laut Text bereits seit 2018.",
+        "Kanada baute seine bundesweite Verbraucherabgabe 2025 deutlich aus."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Mehr als dreitausend US-Ökonominnen und -Ökonomen unterzeichneten laut Text 2019 eine gemeinsame Erklärung.**\n\nAbsatz 1 nennt genau diese Zahl und dieses Jahr, samt Hinweis auf zahlreiche Nobelpreisträger.\n\nDie Aussage gibt die Angabe unverändert wieder.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 1 heißt es wörtlich: „unterzeichneten mehr als dreitausend US-Ökonominnen und -Ökonomen\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 1, deshalb ist sie richtig.",
+        "**B) Die Europäische Union entschied sich laut Text im Jahr 2005 für ihr Handelssystem.**\n\nAbsatz 2 datiert die Entscheidung ausdrücklich auf 2005.\n\nDie Aussage übernimmt Jahr und Bezug korrekt.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 2 heißt es wörtlich: „Die Europäische Union entschied sich 2005 für den zweiten Weg\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**C) Der Zertifikatspreis fiel laut Text zeitweise unter fünf Euro je Tonne.**\n\nAbsatz 3 nennt genau diesen Tiefstand und erklärt ihn mit der Überausstattung an Zertifikaten.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nIn Absatz 3 heißt es wörtlich: „fiel der Preis zeitweise unter fünf Euro je Tonne\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig.",
+        "**D) Der Grenzausgleichsmechanismus greift laut Text bereits seit 2018.**\n\nAbsatz 7 nennt den Mechanismus, „der ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erhebt“; 2018 ist im Text das Jahr der Gelbwesten.\n\nDie Aussage vertauscht zwei Jahreszahlen aus verschiedenen Zusammenhängen.\n\n**Falle:** Jahreszahlen aus benachbarten Absätzen werden gern vermischt.\n\nDie Aussage scheitert an der Datierung.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch.",
+        "**E) Kanada baute seine bundesweite Verbraucherabgabe 2025 deutlich aus.**\n\nAbsatz 6 berichtet das Gegenteil: „Kanada schaffte seine bundesweite Verbraucherabgabe 2025 nach anhaltender politischer Auseinandersetzung ab.“\n\nJahr und Land stimmen, die Richtung der Maßnahme nicht.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch."
+      ],
+      "highlights": [
+        "unterzeichneten mehr als dreitausend US-Ökonominnen und -Ökonomen",
+        "Die Europäische Union entschied sich 2005 für den zweiten Weg",
+        "fiel der Preis zeitweise unter fünf Euro je Tonne",
+        "der ab 2026 auf Importe von Stahl, Zement, Aluminium und Düngemitteln einen Preis erhebt",
+        "Kanada schaffte seine bundesweite Verbraucherabgabe 2025 nach anhaltender politischer Auseinandersetzung ab"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-07",
+      "case_id": "DE T.9.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen Ursache-Wirkungs-Beziehungen zwischen Ausgestaltung, Preis und Verhalten.",
+      "kind": "reading",
+      "statements": [
+        "Die Überausstattung mit Zertifikaten führte laut Text zu einem sehr niedrigen Preis.",
+        "Erst Reformen wie die Marktstabilitätsreserve ließen die Preise laut Text deutlich steigen.",
+        "Ein hoher CO₂-Preis führt laut Text zwangsläufig zum Wechsel des Heizsystems.",
+        "Die Rücknahme der geplanten Steuererhöhung in Frankreich erfolgte laut Text nach Protesten.",
+        "Laut Text senkt die Abwanderung energieintensiver Produktion auch die globalen Emissionen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Überausstattung mit Zertifikaten führte laut Text zu einem sehr niedrigen Preis.**\n\nAbsatz 3 stellt die Kausalkette her: „Weil zu viele Zertifikate ausgegeben und zusätzlich kostenlos zugeteilt wurden“, fiel der Preis unter fünf Euro je Tonne.\n\nDie Aussage gibt Ursache und Wirkung in der richtigen Richtung wieder.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig.",
+        "**B) Erst Reformen wie die Marktstabilitätsreserve ließen die Preise laut Text deutlich steigen.**\n\nAbsatz 3 nennt als Wendepunkt ausdrücklich „insbesondere der Einführung einer Marktstabilitätsreserve“.\n\nDie Aussage übernimmt diese Erklärung ohne Zusatz.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 3, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „insbesondere der Einführung einer Marktstabilitätsreserve\" darf die Behauptung nicht stehen.",
+        "**C) Ein hoher CO₂-Preis führt laut Text zwangsläufig zum Wechsel des Heizsystems.**\n\nAbsatz 8 widerlegt genau diesen Automatismus: „wer kein Fernwärmenetz vor der Tür hat, ändert sein Heizsystem auch bei hohen Preisen nicht“.\n\nOhne verfügbare Alternative bleibt das Preissignal wirkungslos.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**D) Die Rücknahme der geplanten Steuererhöhung in Frankreich erfolgte laut Text nach Protesten.**\n\nAbsatz 6 verbindet beides in einem Satz: Die Proteste begannen an der geplanten Erhöhung, „die Regierung nahm sie zurück“.\n\n**Tipp:** Bei Zahlen- und Datumsaussagen reicht oft ein exakter Treffer im Text — erfinde keine zusätzlichen Größenordnungen.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „die Regierung nahm sie zurück\" darf die Behauptung nicht stehen.",
+        "**E) Laut Text senkt die Abwanderung energieintensiver Produktion auch die globalen Emissionen.**\n\nAbsatz 7 sagt ausdrücklich, dabei „sinken die heimischen Emissionen, die globalen aber nicht“.\n\nGenau darin besteht das Problem, das der Grenzausgleich adressieren soll.\n\nDie Aussage scheitert an dieser Umkehrung.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch."
+      ],
+      "highlights": [
+        "Weil zu viele Zertifikate ausgegeben und zusätzlich kostenlos zugeteilt wurden",
+        "insbesondere der Einführung einer Marktstabilitätsreserve",
+        "wer kein Fernwärmenetz vor der Tür hat, ändert sein Heizsystem auch bei hohen Preisen nicht",
+        "die Regierung nahm sie zurück",
+        "sinken die heimischen Emissionen, die globalen aber nicht"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-08",
+      "case_id": "DE T.9.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen die Gewichtung der Argumente und die Haltung des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt den CO₂-Preis als politisch problemlos durchsetzbar dar.",
+        "Der Text bezeichnet den Verteilungseinwand als den schwierigsten.",
+        "Der Text räumt ein, dass ein Preis dort am besten wirkt, wo Alternativen bereits verfügbar sind.",
+        "Die Wirksamkeitsbefunde zum europäischen System werden im Text nicht genannt.",
+        "Der Schluss beschreibt eine Verschiebung der Debatte statt eines abschließenden Urteils."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text stellt den CO₂-Preis als politisch problemlos durchsetzbar dar.**\n\nAbsatz 6 beginnt mit „Politisch bleibt das Instrument dennoch anfällig“ und führt Frankreich und Kanada als Belege an.\n\nDie Aussage übergeht damit einen kompletten Absatz gegenteiliger Evidenz.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 6 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Politisch bleibt das Instrument dennoch anfällig\" darf die Behauptung nicht stehen.",
+        "**B) Der Text bezeichnet den Verteilungseinwand als den schwierigsten.**\n\nAbsatz 5 formuliert es wörtlich: „Der schwierigste Einwand ist verteilungspolitischer Natur.“\n\nDie Aussage gibt diese Gewichtung unverändert wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 5, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Der schwierigste Einwand ist verteilungspolitischer Natur\" darf die Behauptung nicht stehen.",
+        "**C) Der Text räumt ein, dass ein Preis dort am besten wirkt, wo Alternativen bereits verfügbar sind.**\n\nAbsatz 8 hält fest, es „wirkt ein CO₂-Preis am besten dort, wo Alternativen bereits verfügbar sind“, und fordert sonst ergänzende Investitionen.\n\nDie Aussage übernimmt dieses Zugeständnis korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 8, deshalb ist sie richtig.",
+        "**D) Die Wirksamkeitsbefunde zum europäischen System werden im Text nicht genannt.**\n\nAbsatz 4 berichtet ausdrücklich, „dass es Emissionen in den erfassten Sektoren messbar gesenkt hat“.\n\nDie Aussage streicht damit die zentrale empirische Stütze der Befürworterseite.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 4 und ist daher falsch.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „dass es Emissionen in den erfassten Sektoren messbar gesenkt hat\" darf die Behauptung nicht stehen.",
+        "**E) Der Schluss beschreibt eine Verschiebung der Debatte statt eines abschließenden Urteils.**\n\nAbsatz 9 beginnt mit „Die Debatte hat sich damit verschoben“ und endet mit einer offenen Frage.\n\nDie Aussage beschreibt diese Haltung korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.\n\nLies die Aussage als Anspruch auf den Textinhalt, nicht als freies Themawissen: Ohne Beleg wie „Die Debatte hat sich damit verschoben\" darf die Behauptung nicht stehen."
+      ],
+      "highlights": [
+        "Politisch bleibt das Instrument dennoch anfällig",
+        "Der schwierigste Einwand ist verteilungspolitischer Natur",
+        "wirkt ein CO₂-Preis am besten dort, wo Alternativen bereits verfügbar sind",
+        "dass es Emissionen in den erfassten Sektoren messbar gesenkt hat",
+        "Die Debatte hat sich damit verschoben"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 8,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-09",
+      "case_id": "DE T.9.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen Instrumenten und Ländern.",
+      "kind": "reading",
+      "statements": [
+        "Der Start des europäischen Handelssystems liegt zeitlich vor der Ökonomenerklärung von 2019.",
+        "Die Reformen des Systems gingen den sehr niedrigen Preisen laut Text voraus.",
+        "Im Vergleich der beiden Grundformen steht beim Emissionshandel die Menge fest, bei der Steuer der Preis.",
+        "Die Schweiz und Kanada wählten laut Text denselben Weg der Rückerstattung.",
+        "Die Proteste der Gelbwesten liegen zeitlich vor der Abschaffung der kanadischen Verbraucherabgabe."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Start des europäischen Handelssystems liegt zeitlich vor der Ökonomenerklärung von 2019.**\n\nAbsatz 2 datiert die Entscheidung auf 2005, Absatz 1 die Erklärung auf 2019.\n\nDie Reihenfolge der Aussage stimmt mit beiden Angaben überein.\n\nDie Aussage trifft die Chronologie.\n\nIn Absatz 2 heißt es wörtlich: „Die Europäische Union entschied sich 2005 für den zweiten Weg\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**B) Die Reformen des Systems gingen den sehr niedrigen Preisen laut Text voraus.**\n\nAbsatz 3 stellt die Abfolge klar: Zuerst der Preisverfall, dann „Erst nach mehreren Reformen“ der Anstieg.\n\nDie Aussage dreht diese Reihenfolge um und macht die Reform zur Ursache des Tiefstands.\n\nDie Aussage scheitert an der Chronologie.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 3 und ist daher falsch.",
+        "**C) Im Vergleich der beiden Grundformen steht beim Emissionshandel die Menge fest, bei der Steuer der Preis.**\n\nAbsatz 2 formuliert genau diese Gegenüberstellung: „Eine Steuer legt den Preis fest und lässt die Emissionsmenge offen“, beim Handel ist es umgekehrt.\n\nDie Aussage ordnet beide Instrumente richtig zu.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 2, deshalb ist sie richtig.",
+        "**D) Die Schweiz und Kanada wählten laut Text denselben Weg der Rückerstattung.**\n\nAbsatz 5 nennt zwei verschiedene Wege: „Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien, Kanada zahlte sie lange als Quartalsbetrag aus.“\n\nDie Aussage verwischt genau diesen Unterschied.\n\nDie Aussage scheitert am Ländervergleich.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 5 und ist daher falsch.",
+        "**E) Die Proteste der Gelbwesten liegen zeitlich vor der Abschaffung der kanadischen Verbraucherabgabe.**\n\nAbsatz 6 datiert die Proteste auf 2018 und die kanadische Abschaffung auf 2025.\n\nDie Reihenfolge der Aussage stimmt damit überein.\n\nIn Absatz 6 heißt es wörtlich: „Die französischen Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer\". Daran entscheidet sich die Bewertung der Aussage.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 6, deshalb ist sie richtig."
+      ],
+      "highlights": [
+        "Die Europäische Union entschied sich 2005 für den zweiten Weg",
+        "Erst nach mehreren Reformen",
+        "Eine Steuer legt den Preis fest und lässt die Emissionsmenge offen",
+        "Die Schweiz erstattet einen Teil der Abgabe über die Krankenversicherungsprämien, Kanada zahlte sie lange als Quartalsbetrag aus",
+        "Die französischen Proteste der Gelbwesten begannen 2018 an einer geplanten Erhöhung der Kraftstoffsteuer"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 9,
+      "subsection": "t.9"
+    },
+    {
+      "id": "de-t-9-10",
+      "case_id": "DE T.9.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen den Gesamtschluss und die bewusst offen gehaltenen Fragen.",
+      "kind": "reading",
+      "statements": [
+        "Laut Schluss dreht sich die Debatte weniger um das Ob der Wirkung als um Höhe, Rückfluss und Begleitpolitik.",
+        "Der Text nennt die dauerhafte gesellschaftliche Tragfähigkeit des Instruments als eigentlich offene Frage.",
+        "Der Text kommt zu dem Ergebnis, dass Preissignale in allen Bereichen sofort und vollständig wirken.",
+        "Eine offene Spannung besteht darin, dass die Kosten sofort spürbar sind, der Nutzen aber zeitlich und räumlich verteilt.",
+        "Der Text erklärt die Kritik am Grenzausgleichsmechanismus für ausgeräumt."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Laut Schluss dreht sich die Debatte weniger um das Ob der Wirkung als um Höhe, Rückfluss und Begleitpolitik.**\n\nAbsatz 9 formuliert genau diese Verschiebung: „weniger um die Frage, ob ein Preis wirkt, als darum, wie hoch er sein darf“, wie das Aufkommen zurückfließt und welche Politik daneben treten muss.\n\nDie Aussage fasst alle drei Punkte korrekt zusammen.\n\nDie Aussage trifft den Gesamtschluss.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**B) Der Text nennt die dauerhafte gesellschaftliche Tragfähigkeit des Instruments als eigentlich offene Frage.**\n\nAbsatz 9 schließt mit der Formulierung, ob Gesellschaften ein solches Instrument dauerhaft tragen, „ist die eigentlich offene Frage“.\n\nDie Aussage gibt diese Schlusspointe unverändert wieder.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**C) Der Text kommt zu dem Ergebnis, dass Preissignale in allen Bereichen sofort und vollständig wirken.**\n\nAbsatz 8 sagt ausdrücklich, Netzausbau, Ladeinfrastruktur, Genehmigungsverfahren und Forschung „reagieren träge auf Preissignale“.\n\nDie Aussage ignoriert diese ausdrückliche Grenze der Wirksamkeit.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 8 und ist daher falsch.",
+        "**D) Eine offene Spannung besteht darin, dass die Kosten sofort spürbar sind, der Nutzen aber zeitlich und räumlich verteilt.**\n\nAbsatz 9 benennt genau dieses Missverhältnis: ein Instrument, „dessen Kosten sofort spürbar und dessen Nutzen zeitlich wie räumlich verteilt sind“.\n\nAbsatz 6 hatte diese Asymmetrie bereits an der Zapfsäule illustriert.\n\nDie Aussage benennt die offene Konfliktlage korrekt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**E) Der Text erklärt die Kritik am Grenzausgleichsmechanismus für ausgeräumt.**\n\nAbsatz 7 lässt den Einwand stehen: Handelspartner „kritisieren das Vorhaben als verdeckten Protektionismus“, ohne dass der Text diese Kritik widerlegt.\n\nDie Aussage unterstellt eine Klärung, die nirgends erfolgt.\n\n**Falle:** Absolute Wörter wie „alle“, „nur“, „eindeutig“ oder vertauschte Jahreszahlen sind häufige Kipppunkte.\n\nSuche das Element, das kippt: oft ein ausgetauschtes Verb, eine falsche Zahl, eine vertauschte Reihenfolge oder ein Absolutwort, das der Text so nicht stützt.\n\nDie Aussage widerspricht dem Text in Absatz 7 und ist daher falsch."
+      ],
+      "highlights": [
+        "weniger um die Frage, ob ein Preis wirkt, als darum, wie hoch er sein darf",
+        "ist die eigentlich offene Frage",
+        "reagieren träge auf Preissignale",
+        "dessen Kosten sofort spürbar und dessen Nutzen zeitlich wie räumlich verteilt sind",
+        "kritisieren das Vorhaben als verdeckten Protektionismus"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.9"
+    }
+  ]
+}

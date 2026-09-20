@@ -1,0 +1,152 @@
+{
+  "removed": 21,
+  "items": [
+    {
+      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
+      "case_id": "CASE 2.6.29",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Graz Rent-Control Apartment Search"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
+      "case_id": "CASE 3.4.16",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Fifty staff boundary"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
+      "case_id": "CASE 4.3.20",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Listed Retail Corporation and Investor Gains"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
+      "case_id": "CASE 5.5.29",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Absolute Versus Relative Share Traps"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
+      "case_id": "CASE 6.1.011",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Two-Year Balance Sheet Review 11"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
+      "case_id": "CASE 6.1.019",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Gearing From Comparative Figures 19"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
+      "case_id": "CASE 6.3.008",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Two-Year Balance Sheet Review 8"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
+      "case_id": "CASE 6.3.017",
+      "mock": 6,
+      "subject": "econ",
+      "title": "Return and Cash Flow Extract 17"
+    },
+    {
+      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
+      "case_id": "CASE 6.5.022",
+      "mock": 6,
+      "subject": "econ",
+      "title": "The Acid-Test Liquidity Check Explained"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.01",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 1"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.02",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 2"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.03",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 3"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.04",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 4"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.05",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 5"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.06",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 6"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.07",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 7"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.08",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 8"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.09",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 9"
+    },
+    {
+      "file": "/workspace/src/data/english/texts.json",
+      "case_id": "ENG T.4.10",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 10"
+    },
+    {
+      "file": "/workspace/src/data/english/grammar.json",
+      "case_id": "ENG G.4.19",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 19"
+    },
+    {
+      "file": "/workspace/src/data/english/grammar_parts/g.4.json",
+      "case_id": "ENG G.4.19",
+      "mock": 6,
+      "subject": "eng",
+      "title": "Task 19"
+    }
+  ]
+}

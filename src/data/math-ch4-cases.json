@@ -5249,38 +5249,6 @@
       "placeholder": false
     },
     {
-      "id": "math-4-165",
-      "case_id": "MATH 4.165",
-      "title": "Round-Trip Average Speed and Algebraic Equation Forms",
-      "subsection": "4.3",
-      "context": "A logistics firm operates a delivery route between two hubs separated by a one-way distance of $d = 120\\text{ km}$. The delivery van travels outbound at a constant speed of $v\\text{ km/h}$ and returns along the same route at a reduced speed of $v - 20\\text{ km/h}$ due to recurring traffic. The overall average speed for the round trip is defined by the harmonic mean of the speeds on the two legs and is recorded as $\\bar{v} = 48\\text{ km/h}$. Analysts evaluate the rational equation governing this motion alongside related radical, substitution, and absolute-value equations derived from the operational parameters.",
-      "statements": [
-        "Multiplying the rational average-speed equation $\\frac{2}{\\frac{1}{v} + \\frac{1}{v-20}} = 48$ by its common denominator yields a quadratic equation whose roots sum to $68$, but exactly one of these roots is admissible under the domain restriction $v > 20$.",
-        "If the return speed $w = v - 20$ is modeled by the radical equation $\\sqrt{10w} = w - 20$, squaring both sides produces an algebraic equation with two distinct real solutions, both of which are valid solutions to the original radical equation.",
-        "The equation $\\frac{v}{v-20} - 3\\sqrt{\\frac{v}{v-20}} - 4 = 0$, which is reducible to a quadratic equation via the substitution $u = \\sqrt{\\frac{v}{v-20}}$, has no real solution in the physical domain $v > 20$.",
-        "The absolute-value equation $|v - 50| + |v - 70| = 30$ has exactly two real solutions, and their arithmetic mean is equal to the valid outbound speed $v = 60\\text{ km/h}$.",
-        "If the speed reduction on the return trip is represented by an arbitrary positive parameter $c > 0$, the rational equation for an average speed of $48\\text{ km/h}$, given by $\\frac{2v(v-c)}{2v-c} = 48$, possesses at least one physically meaningful solution $v > c$ if and only if $c < 48$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nTo find the sum of the algebraic roots and verify domain admissibility, we consider the quadratic equation obtained after clearing denominators.\n\nFrom the average speed model, clearing denominators gives:\n\n$$v^2 - 68v + 480 = 0$$\n\nBy Vieta's formulas, the sum of the roots of a quadratic $v^2 + bv + c = 0$ is $-b$:\n\n$$\nv_1 + v_2 = -(-68) = 68\n$$\n\nFactoring the polynomial yields the two roots:\n\n$$\nv_1 = 60, \\quad v_2 = 8\n$$\n\nThe physical domain requires positive travel times and speeds, so $v > 20$. Evaluating each root under this condition shows that $60 > 20$ is admissible, whereas $8 < 20$ produces a negative return speed $8 - 20 = -12\\text{ km/h}$ and is extraneous.\n\nSo the statement is True.",
-        "**B.** → False\n\nTo determine whether squaring creates extraneous solutions, we solve the radical equation by isolation and squaring.\n\nThe given radical equation is:\n\n$$\\sqrt{10w} = w - 20$$\n\nThe left-hand side is non-negative by definition of the principal square root, which imposes the domain restriction $w - 20 \\ge 0$, or $w \\ge 20$. Squaring both sides yields:\n\n$$10w = (w - 20)^2$$\n\n$$10w = w^2 - 40w + 400$$\n\n$$w^2 - 50w + 400 = 0$$\n\nFactoring this quadratic gives:\n\n$$(w - 40)(w - 10) = 0$$\n\nThe algebraic solutions are $w = 40$ and $w = 10$. Substituting $w = 40$ into the original radical equation gives $\\sqrt{400} = 20$ and $40 - 20 = 20$, which is valid. Substituting $w = 10$ gives $\\sqrt{100} = 10$ on the left side but $10 - 20 = -10$ on the right side, so $w = 10$ is extraneous. Therefore, not both solutions are valid solutions to the original radical equation.\n\nSo the statement is False.",
-        "**C.** → False\n\nTo solve an equation reducible to quadratic form by substitution, we define a new variable for the repeating radical term.\n\nLet $u = \\sqrt{\\frac{v}{v-20}}$, where $u \\ge 0$. Substituting $u$ into the equation gives:\n\n$$u^2 - 3u - 4 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(u - 4)(u + 1) = 0$$\n\nBecause $u \\ge 0$, we discard $u = -1$, leaving $u = 4$. Back-substituting into the definition of $u$ produces:\n\n$$\\sqrt{\\frac{v}{v-20}} = 4$$\n\n$$\\frac{v}{v-20} = 16$$\n\n$$v = 16(v - 20)$$\n\n$$v = 16v - 320$$\n\n$$15v = 320$$\n\n$$\nv = \\frac{64}{3} = 21\\frac{1}{3}\n$$\n\nSince $21\\frac{1}{3} > 20$, this solution lies strictly inside the physical domain $v > 20$. The equation therefore possesses a real solution in the domain.\n\nSo the statement is False.",
-        "**D.** → True\n\nTo solve the absolute-value equation $|v - 50| + |v - 70| = 30$, we perform case analysis across the critical points $v = 50$ and $v = 70$.\n\nFor $v \\ge 70$, both expressions inside the absolute values are non-negative:\n\n$$(v - 50) + (v - 70) = 30$$\n\n$$2v - 120 = 30$$\n\n$$2v = 150$$\n\n$$v = 75$$\n\nSince $75 \\ge 70$, this is a valid solution.\n\nFor $50 \\le v < 70$, the equation becomes:\n\n$$(v - 50) - (v - 70) = 30$$\n\n$$20 = 30$$\n\nThis is a contradiction, so no solutions exist in this interval.\n\nFor $v < 50$, both expressions are negative:\n\n$$-(v - 50) - (v - 70) = 30$$\n\n$$120 - 2v = 30$$\n\n$$2v = 90$$\n\n$$v = 45$$\n\nSince $45 < 50$, this is also a valid solution.\n\nThe equation has exactly two solutions, $v = 45$ and $v = 75$. Their arithmetic mean is:\n\n$$\n\\frac{45 + 75}{2} = \\frac{120}{2} = 60\n$$\n\nThis matches the valid outbound speed $v = 60\\text{ km/h}$.\n\nSo the statement is True.",
-        "**E.** → False\n\nTo test the parameter condition for the existence of a valid solution $v > c$, we solve the parameterized rational equation.\n\nClearing denominators in $\\frac{2v(v-c)}{2v-c} = 48$ yields:\n\n$$2v(v - c) = 48(2v - c)$$\n\n$$2v^2 - 2cv = 96v - 48c$$\n\n$$2v^2 - 2(c + 48)v + 48c = 0$$\n\n$$v^2 - (c + 48)v + 24c = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = (c + 48)^2 - 4(1)(24c)$$\n\n$$\\Delta = c^2 + 96c + 2304 - 96c$$\n\n$$\\Delta = c^2 + 2304$$\n\nSince $c^2 + 2304 > 0$ for every real number $c$, two real roots always exist. The larger root is:\n\n$$v_+ = \\frac{c + 48 + \\sqrt{c^2 + 2304}}{2}$$\n\nSubtracting $c$ from $v_+$ gives:\n\n$$v_+ - c = \\frac{48 - c + \\sqrt{c^2 + 2304}}{2}$$\n\nFor any $c > 0$, we have\n\n$$\n\\sqrt{c^2 + 2304} > \\sqrt{c^2 - 96c + 2304} = \\sqrt{(c - 48)^2} = |c - 48| \\ge c - 48\n$$\n\n. Therefore, $48 - c + \\sqrt{c^2 + 2304} > 0$ holds for all $c > 0$. A valid physical solution $v > c$ exists for every positive value of $c$, not only when $c < 48$.\n\nSo the statement is False."
-      ],
-      "solution_overview": "The average speed $\\bar{v}$ for a round trip of equal leg distances is the harmonic mean of the outbound speed $v$ and the return speed $v - 20$:\n\n$$\n\\bar{v} = \\frac{2}{\\frac{1}{v} + \\frac{1}{v - 20}} = \\frac{2v(v - 20)}{2v - 20} = \\frac{v(v - 20)}{v - 10}\n$$\n\nSetting $\\bar{v} = 48$ gives the rational equation:\n\n$$\\frac{v(v - 20)}{v - 10} = 48$$\n\nBecause physical speed on both legs must be strictly positive, the outbound speed must satisfy the domain condition $v > 20$. Clearing the denominator yields:\n\n$$v(v - 20) = 48(v - 10)$$\n\n$$v^2 - 20v = 48v - 480$$\n\n$$v^2 - 68v + 480 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(v - 60)(v - 8) = 0$$\n\nThe algebraic roots are $v = 60$ and $v = 8$. The value $v = 8$ produces a negative return speed $v - 20 = -12$ and is therefore extraneous. The unique admissible outbound speed is $v = 60\\text{ km/h}$, corresponding to a return speed of $w = 40\\text{ km/h}$.",
-      "difficulty_level": "5/5",
-      "sort_order": 165,
-      "placeholder": false
-    },
-    {
       "id": "math-4-166",
       "case_id": "MATH 4.166",
       "title": "Radical Break-Even Equation",
@@ -6846,38 +6814,6 @@
       "difficulty_level": "5/5",
       "sort_order": 214,
       "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
-      "placeholder": false
-    },
-    {
-      "id": "math-4-215",
-      "case_id": "MATH 4.215",
-      "title": "Exam-style tasks - 22",
-      "subsection": "4.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. A classmate concludes that the son is now $18$ years old.",
-        "A $24$ cm by $16$ cm photograph is mounted with a uniform frame so that the outer area is twice the photograph. The frame is then $4$ cm wide.",
-        "A runner covers $9$ km at $6$ km/h and then $6$ km at $9$ km/h. The whole run therefore takes exactly $2$ hours.",
-        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
-        "A purse holds only $2$ EUR coins and $5$ EUR coins. There are $16$ coins in all, worth $53$ EUR. Then there are $7$ coins of $5$ EUR."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nLet the son's present age be $s$ years. The father is then $s + 28$. In eight years:\n\n$$s + 28 + 8 = 2(s + 8)$$\n\n$$s + 36 = 2s + 16$$\n\n$$s = 20$$\n\nThe son is $20$, not $18$. Check: in eight years they are $28$ and $56$, and $56 = 2 \\cdot 28$.\n\nSubstituting the claimed figure into the governing equation fails to reproduce the data given in the story.\n\nIf the claimed figure is forced back into the original relation, the two sides of the equation no longer match the data in the story, which confirms that the claim fails.\n\nSo the statement is False.",
-        "**B.** → True\n\nPhotograph area $24 \\cdot 16 = 384$, so the outer area is $768$. With frame width $x$ cm:\n\n$$(24 + 2x)(16 + 2x) = 768$$\n\n$$4x^{2} + 80x + 384 = 768$$\n\n$$x^{2} + 20x - 96 = 0$$\n\n$$\\Delta = 400 + 384$$\n\n$$\n400 + 384 = 784 = 28^{2}\n$$\n\n$$\nx = \\dfrac{-20 + 28}{2} = 4\n$$\n\n(positive root). Check: outer sides $32$ by $24$ give area $768 = 2 \\cdot 384$.\n\nSubstituting the recovered value back into the governing equation confirms that the story data are reproduced exactly.\n\nVerify by substituting the recovered value into the original relation from the story: the left-hand side and the right-hand side match, so the claim survives.\n\nSo the statement is True.",
-        "**C.** → False\n\nSplit the run into two legs:\n\n$$\nt = \\frac{9}{6} + \\frac{6}{9} = 1.5 + \\frac{2}{3} = \\frac{13}{6}\n$$\n\nhours, that is $2$ hours and $10$ minutes, not exactly $2$ hours.\n\nExpress the travel time first as an exact fraction of an hour, then convert the fractional part into minutes before counting back from the arrival clock.\n\nSubstituting the claimed figure into the governing equation fails to reproduce the data given in the story.\n\nIf the claimed figure is forced back into the original relation, the two sides of the equation no longer match the data in the story, which confirms that the claim fails.\n\nSo the statement is False.",
-        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\frac{1}{3}L$$\n\n$$\n\\log\\frac{1}{x^{3}} = \\log\\bigl(x^{-3}\\bigr) = -3L\n$$\n\n$$\\log\\sqrt{x} = \\frac{1}{2}L$$\n\n$$\n\\log 10 = 1\n$$\n\nThe equation becomes\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\n\\frac{1}{3} - 3 - \\frac{1}{2} = \\frac{2}{6} - \\frac{18}{6} - \\frac{3}{6} = -\\frac{19}{6}\n$$\n\nso\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\nAdd $\\dfrac{19}{6}L$ to both sides:\n\n$$\n\\frac{11}{3} = \\frac{L}{2} + \\frac{19}{6}L = \\frac{3L}{6} + \\frac{19L}{6} = \\frac{22L}{6} = \\frac{11L}{3}\n$$\n\n$$L = 1$$\n\n$$\nx = 10^{1} = 10\n$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
-        "**E.** → True\n\nLet $x$ be the number of $5$ EUR coins. Then there are $16 - x$ coins of $2$ EUR:\n\n$$5x + 2(16 - x) = 53$$\n\n$$3x + 32 = 53$$\n\n$$3x = 53 - 32$$\n\n$$x = 7$$\n\nCheck:\n\n$$\n7 \\cdot 5 + 9 \\cdot 2 = 35 + 18\n$$\n\n$$\n35 + 18 = 53\n$$\n\n.\n\nSubstituting the recovered value back into the governing equation confirms that the story data are reproduced exactly.\n\nVerify by substituting the recovered value into the original relation from the story: the left-hand side and the right-hand side match, so the claim survives.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 215,
-      "solution_overview": "Independent claims: an age relation, a framed photograph, a two-speed run, a composite logarithm, and a two-coin purse.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {

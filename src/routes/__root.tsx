@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -15,7 +16,6 @@ import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
-import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider } from "../lib/i18n/context";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
@@ -55,7 +55,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -98,6 +98,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      // Allow Monobank's embedded checkout to use Payment Request / wallets.
+      { httpEquiv: "Permissions-Policy", content: "payment=*, publickey-credentials-get=*" },
       { title: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
       { name: "author", content: "BBE School" },
@@ -190,7 +192,6 @@ function RootComponent() {
           <IntroSplash />
           <HashScrollOnLoad />
           <ActivityTracker />
-          <SiteAccessGuard />
           <Breadcrumbs />
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />

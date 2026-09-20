@@ -1,0 +1,47 @@
+import { Link, useRouterState } from "@tanstack/react-router";
+import { WISO_EXAM_SUBNAV } from "@/config/wiso-exam-hub";
+import { useLanguage } from "@/lib/i18n/context";
+import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { cn } from "@/lib/utils";
+
+export function WisoExamSubnav() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { lang } = useLanguage();
+  const pathForActive = stripLocalePrefix(pathname);
+  const effective = effectiveLangFromLocation(pathname, lang);
+
+  return (
+    <nav
+      aria-label="WiSo Exam sections"
+      className="border-b border-border/70 bg-background/90 backdrop-blur"
+    >
+      <div className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8">
+        <ul className="-mx-0.5 flex gap-1 overflow-x-auto py-2.5 [scrollbar-width:none] sm:py-3 [&::-webkit-scrollbar]:hidden">
+          {WISO_EXAM_SUBNAV.map((item) => {
+            const active = pathForActive === item.href;
+            const link = getLocaleLinkProps(item.href, effective);
+            return (
+              <li key={item.href} className="shrink-0">
+                <Link
+                  to={link.to as never}
+                  params={link.params as never}
+                  className={cn(
+                    "inline-flex min-h-10 items-center rounded-md px-3 py-2 text-sm transition-colors",
+                    active
+                      ? "bg-secondary font-semibold text-foreground"
+                      : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground",
+                  )}
+                  aria-current={active ? "page" : undefined}
+                >
+                  <span className="sm:hidden">{item.shortLabel}</span>
+                  <span className="hidden sm:inline">{item.label}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
+  );
+}

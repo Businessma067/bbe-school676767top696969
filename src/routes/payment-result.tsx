@@ -1,7 +1,8 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { getPaymentStatus, listMyPayments } from "@/lib/payments.functions";
+import { breakOutOfIframe, navigateTopWindow } from "@/lib/break-out-of-iframe";
 
 export const Route = createFileRoute("/payment-result")({
   head: () => ({
@@ -25,21 +26,23 @@ export const Route = createFileRoute("/payment-result")({
   component: PaymentResultPage,
 });
 
-const ORANGE = "#C2643A";
-
 type View = { state: "checking" } | { state: "pending" };
 
 function PaymentResultPage() {
-  const navigate = useNavigate();
   const [view, setView] = useState<View>({ state: "checking" });
   const tries = useRef(0);
+
+  useLayoutEffect(() => {
+    breakOutOfIframe();
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
     let timer: ReturnType<typeof setTimeout>;
 
-    const goFailed = (reason: string) =>
-      navigate({ to: "/payment/failed", search: { reason }, replace: true });
+    const goFailed = (reason: string) => {
+      navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
+    };
 
     const check = async () => {
       try {
@@ -64,14 +67,21 @@ function PaymentResultPage() {
         if (result.paid) {
           const { clearAccessStateCache } = await import("@/lib/entitlements");
           clearAccessStateCache();
-          void navigate({
-            to: "/payment/success",
-            search: {
-              ...(result.productName ? { product: result.productName } : {}),
-              ...(result.href ? { href: result.href } : {}),
-            },
-            replace: true,
-          });
+          const paramsOut = new URLSearchParams();
+          // Prefer catalog slug so success page / dashboard identity stay consistent.
+          if (result.productSlug) paramsOut.set("product", result.productSlug);
+          else if (result.productName) paramsOut.set("product", result.productName);
+          if (result.href) paramsOut.set("href", result.href);
+          const qs = paramsOut.toString();
+          // Always leave the Monobank iframe and land on the shared success page.
+          navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
+          return;
+        }
+        if (result.status === "success" && !result.enrolled) {
+          void goFailed(
+            result.failureReason ??
+              "Payment succeeded but course access could not be unlocked. Contact support.",
+          );
           return;
         }
         if (["failure", "reversed", "expired"].includes(result.status)) {
@@ -94,7 +104,7 @@ function PaymentResultPage() {
       cancelled = true;
       clearTimeout(timer);
     };
-  }, [navigate]);
+  }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -123,7 +133,6 @@ function PaymentResultPage() {
             </p>
           </>
         )}
-
       </div>
     </div>
   );

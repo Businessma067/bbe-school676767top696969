@@ -2,21 +2,21 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
+ * Creating an invoice with `displayType: "iframe"` returns an embeddable
+ * widget URL. Embed it with `allow="payment *"` so buyers can pay by card,
+ * Apple Pay, or Google Pay on our site without a top-level redirect to
+ * pay.mbnk.biz.
+ *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
+ *  - https://monobank.ua/api-docs/acquiring/methods/ia/docs--widget-frame
  */
 
 const MONO_API = "https://api.monobank.ua/api/merchant";
 
 export type MonoInvoiceStatus =
-  | "created"
-  | "processing"
-  | "hold"
-  | "success"
-  | "failure"
-  | "reversed"
-  | "expired";
+  "created" | "processing" | "hold" | "success" | "failure" | "reversed" | "expired";
 
 export type MonoStatusResponse = {
   invoiceId: string;
@@ -28,10 +28,17 @@ export type MonoStatusResponse = {
   modifiedDate?: string;
 };
 
-function monoToken(): string {
-  const token = process.env["MONOBANK_TOKEN"]?.trim();
+function monoTokenSyncFallback(): string | undefined {
+  return process.env["MONOBANK_TOKEN"]?.trim() || undefined;
+}
+
+async function monoToken(): Promise<string> {
+  const { getServerSecret } = await import("@/lib/server-secret.server");
+  const token = (await getServerSecret("MONOBANK_TOKEN")) ?? monoTokenSyncFallback();
   if (!token) {
-    throw new Error("MONOBANK_TOKEN is not configured on the server.");
+    throw new Error(
+      "MONOBANK_TOKEN is not configured on the server. Add a Cloud secret named exactly MONOBANK_TOKEN in Lovable (More → Cloud → Secrets), then republish/update the preview. This is required for both on-site checkout and Monobank redirect.",
+    );
   }
   return token;
 }
@@ -49,10 +56,11 @@ export async function createMonoInvoice(input: {
   basketIconUrl?: string;
 }): Promise<{ invoiceId: string; pageUrl: string }> {
   const ccy = input.ccy ?? 978;
+  const token = await monoToken();
   const res = await fetch(`${MONO_API}/invoice/create`, {
     method: "POST",
     headers: {
-      "X-Token": monoToken(),
+      "X-Token": token,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
@@ -75,6 +83,9 @@ export async function createMonoInvoice(input: {
       ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
       validity: 3600,
       paymentType: "debit",
+      // Official embeddable widget (card + Apple Pay + Google Pay). Host iframe
+      // must set allow="payment *" per Monobank docs.
+      displayType: "iframe",
     }),
   });
 
@@ -92,10 +103,10 @@ export async function createMonoInvoice(input: {
 }
 
 export async function fetchMonoInvoiceStatus(invoiceId: string): Promise<MonoStatusResponse> {
-  const res = await fetch(
-    `${MONO_API}/invoice/status?invoiceId=${encodeURIComponent(invoiceId)}`,
-    { headers: { "X-Token": monoToken() } },
-  );
+  const token = await monoToken();
+  const res = await fetch(`${MONO_API}/invoice/status?invoiceId=${encodeURIComponent(invoiceId)}`, {
+    headers: { "X-Token": token },
+  });
   const text = await res.text();
   if (!res.ok) {
     console.error("monobank invoice/status failed", res.status, text);
@@ -112,10 +123,13 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
   status: MonoInvoiceStatus | "unknown";
   productSlug: string | null;
   href: string | null;
+  /** True only when Monobank reports success AND the enrollment row was written. */
+  enrolled: boolean;
   failureReason?: string;
 }> {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
   const { PAID_PRODUCTS, isPaidProductSlug } = await import("@/lib/checkout-catalog");
+  const { grantPaidEnrollment } = await import("@/lib/enrollment-grant.server");
 
   const { data: payment, error } = await supabaseAdmin
     .from("payments")
@@ -124,7 +138,9 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
     .maybeSingle();
 
   if (error) console.error("syncInvoice: payment lookup", error);
-  if (!payment) return { status: "unknown", productSlug: null, href: null };
+  if (!payment) {
+    return { status: "unknown", productSlug: null, href: null, enrolled: false };
+  }
 
   const mono = await fetchMonoInvoiceStatus(invoiceId);
   const status = mono.status;
@@ -141,24 +157,23 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
 
   const slug = payment.product_slug;
   const product = isPaidProductSlug(slug) ? PAID_PRODUCTS[slug] : null;
+  let enrolled = false;
 
   if (paid && product) {
-    const { error: enrollError } = await supabaseAdmin.from("enrollments").upsert(
-      {
-        user_id: payment.user_id,
-        product_slug: product.slug,
-        product_name: product.name,
-        tier: product.tier,
-      },
-      { onConflict: "user_id,product_slug" },
-    );
-    if (enrollError) console.error("syncInvoice: enrollment upsert", enrollError);
+    const grant = await grantPaidEnrollment({
+      userId: payment.user_id,
+      product,
+    });
+    enrolled = grant.ok;
+    if (!grant.ok) {
+      console.error("syncInvoice: enrollment upsert failed", slug, grant.error);
+    }
 
     const promoCode =
       typeof (payment as { promo_code?: string | null }).promo_code === "string"
         ? (payment as { promo_code: string }).promo_code
         : null;
-    if (promoCode) {
+    if (promoCode && enrolled) {
       const { recordPromoUsage } = await import("@/lib/promo.functions");
       await recordPromoUsage({
         code: promoCode,
@@ -174,6 +189,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
     status,
     productSlug: slug,
     href: product?.href ?? null,
+    enrolled,
     ...(mono.failureReason ? { failureReason: mono.failureReason } : {}),
   };
 }

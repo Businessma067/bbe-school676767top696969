@@ -52,11 +52,25 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
 
   const summary = getExamById(examId);
   if (!summary) return null;
+  let questions: ExamQuestion[];
+  try {
+    questions = buildExamQuestions(examId);
+  } catch (err) {
+    console.error("[resolveExam] failed to build questions", examId, err);
+    return null;
+  }
+  if (!questions.length) {
+    console.error("[resolveExam] empty question set", examId);
+    return null;
+  }
+  const pointsTotal =
+    summary.pointsTotal ??
+    questions.reduce((sum, q) => sum + q.maxPoints, 0);
   return {
     summary,
-    questions: buildExamQuestions(examId),
+    questions,
     durationSeconds: EXAM_SECONDS,
-    pointsTotal: 160,
+    pointsTotal,
     isCustom: false,
   };
 }

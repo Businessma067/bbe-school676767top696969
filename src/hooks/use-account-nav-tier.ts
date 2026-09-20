@@ -1,59 +1,60 @@
 import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import type { AccountNavAccess } from "@/config/site-nav";
-import { isAdminEmail } from "@/lib/admin-access";
-import { fetchEnrollments } from "@/lib/user-progress";
+import { supabase } from "@/integrations/supabase/client";
+import {
+  accessOwnsProduct,
+  accessOwnsWisoFull,
+  fetchAccessState,
+  peekAccessState,
+  type AccessState,
+} from "@/lib/entitlements";
 
 export type AccountNavState = AccountNavAccess & { ready: boolean };
 
+function accessFromState(state: AccessState): AccountNavAccess {
+  return {
+    hasLite: accessOwnsProduct(state, "lite-bbe-course"),
+    hasFull: accessOwnsProduct(state, "full-course"),
+    hasWisoFull: accessOwnsWisoFull(state),
+  };
+}
+
+const GUEST_ACCESS: AccountNavAccess = {
+  hasLite: false,
+  hasFull: false,
+  hasWisoFull: false,
+};
+
 /**
- * Header chrome depends only on whether the account owns Lite and/or Full.
+ * Header chrome depends on which SKUs the account owns.
  * Demo / signed-out / unpaid accounts keep the guest marketing nav on every page.
+ * BBE Lite/Full and WiSo Full are tracked separately so one track does not unlock the other.
+ *
+ * Uses the shared entitlements cache so remounting SiteHeader on navigation does not
+ * flash guest nav while enrollments reload.
  */
 export function useAccountNavTier(): AccountNavState {
-  const [ready, setReady] = useState(false);
-  const [access, setAccess] = useState<AccountNavAccess>({
-    hasLite: false,
-    hasFull: false,
-  });
+  const peeked = typeof window !== "undefined" ? peekAccessState() : null;
+  const [ready, setReady] = useState(() => peeked != null);
+  const [access, setAccess] = useState<AccountNavAccess>(() =>
+    peeked ? accessFromState(peeked) : GUEST_ACCESS,
+  );
 
   useEffect(() => {
     let cancelled = false;
 
-    const refresh = async () => {
-      const { data } = await supabase.auth.getSession();
-      const session = data.session;
-      if (!session) {
-        if (!cancelled) {
-          setAccess({ hasLite: false, hasFull: false });
-          setReady(true);
-        }
-        return;
-      }
-
-      const email = session.user?.email ?? null;
-      const admin = isAdminEmail(email);
-
-      let hasLite = false;
-      let hasFull = admin;
-
-      try {
-        const enrollments = await fetchEnrollments();
-        hasLite = enrollments.some((e) => e.tier === "lite");
-        hasFull = hasFull || enrollments.some((e) => e.tier === "full");
-      } catch {
-        /* keep admin flag / defaults */
-      }
-
+    const refresh = async (options?: { refresh?: boolean }) => {
+      const state = await fetchAccessState(options);
       if (cancelled) return;
-      setAccess({ hasLite, hasFull });
+      setAccess(accessFromState(state));
       setReady(true);
     };
 
     void refresh();
+
     const { data } = supabase.auth.onAuthStateChange((event) => {
       if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
-        void refresh();
+        void refresh({ refresh: true });
       }
     });
 

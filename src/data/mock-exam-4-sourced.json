@@ -1,0 +1,1046 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.6.14",
+      "title": "Salzburg Festival Ticket Queue",
+      "subsection": "2.6",
+      "chapter": 2,
+      "context": "Consider Salzburg festival-goers queuing overnight when discounted early-bird tickets sell out within minutes. Evaluate the following economic assertions:",
+      "statements": [
+        "Minutes-long sell-outs at the posted price suggest quantity demanded exceeds quantity supplied.",
+        "Overnight queues form when buyers expect shortage at the official price.",
+        "Persistent shortage forces resellers to cut prices below the sold-out official rate.",
+        "Adding extra performances shifts demand leftward because audiences dislike additional shows.",
+        "Raising the official ticket price increases shortage because fewer buyers withdraw."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Early-bird tickets vanishing in minutes at the posted price means quantity demanded exceeds quantity supplied at that price. Sell-out speed is shortage evidence.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nCeiling rules or sticky posted prices can freeze the shortage in place. Until the legal or listed price can move, quantity demanded stays above quantity supplied.\n\nIn Salzburg Festival Ticket Queue, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nSo the statement is True.",
+        "Overnight queues form when buyers expect that official allocation will not cover everyone at the printed rate. Queuing is rationing by waiting under shortage expectations.\n\nIn Salzburg Festival Ticket Queue, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nSo the statement is True.",
+        "Persistent shortage at the official rate typically pushes resale prices above, not below, the sold-out face value. Resellers cut below official only if surplus pressure exists, which is not the festival queue story.\n\nSo the statement is False.",
+        "Extra performances expand supply of seats; they do not shift demand leftward because audiences dislike more shows. More supply eases shortage rather than reducing willingness to attend.\n\nThe because-clause overreaches. Even if one fragment sounds familiar, the causal link or always/never stretch does not hold.\n\nPut the actors back in the correct category and the statement collapses without needing a new chapter of theory.\n\nA concrete counterexample from Salzburg Festival Ticket Queue is enough: the absolute wording fails as soon as an ordinary case sits on the other side.\n\nFor letter D, keep Adding, extra, performances in the foreground; those words already decide whether the mechanism holds.\n\nSo the statement is False.",
+        "Raising the official ticket price lowers quantity demanded and can shrink shortage; it does not increase shortage by making fewer buyers withdraw. Withdrawal of marginal buyers is how higher prices ease excess demand.\n\nIf quantity supplied exceeds quantity demanded, the right label is surplus, not shortage. Empty-shelf stories do not fit a glut at the posted price.\n\nRaising price usually eases shortage by cutting quantity demanded and inviting supply. Claiming the opposite reverses the adjustment logic.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 2.3.11",
+      "title": "Competition authority case",
+      "subsection": "2.3",
+      "chapter": 2,
+      "context": "Consider regulators investigate whether three mobile carriers colluded on text-message pricing nationally. Evaluate the following economic assertions:",
+      "statements": [
+        "Investigating pricing across an entire national mobile market can involve macro-style market-wide analysis.",
+        "One subscriber choosing a cheaper text plan for her own phone is microeconomics.",
+        "Economics builds theories to explain firm behaviour and market outcomes including competition issues.",
+        "Microeconomics studies individual firm pricing strategies when one carrier alone is analysed.",
+        "Economics excludes market competition because only government budgets matter."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "A national probe into whether three mobile carriers colluded on text pricing looks across an entire industry market. That market-wide frame can borrow the language of broad, system-level analysis even though the product is still messaging rather than GDP. The letter's careful wording (\"can involve macro-style market-wide analysis\") fits that scale of inquiry.\n\nSo the statement is True.",
+        "A single subscriber switching to a cheaper text plan is a household-level choice inside one product market. That is ordinary microeconomics of consumer choice among plans.\n\nThe case also mentions a national collusion probe among operators, which is a different market-structure question. Treating the personal plan switch as if it answered the whole phone-market probe overreaches, so the letter does not stand as written.\n\nSo the statement is False.",
+        "Competition cases are standard territory for economic theory: how firms set prices, whether parallel pricing looks like collusion, and how market structure shapes outcomes. Building those explanations and predictions is what the discipline does.\n\nNothing in the mobile probe sits outside economics merely because regulators are involved. Firm behaviour and market outcomes, including competition issues, are core content rather than a side topic reserved for lawyers alone.\n\nSo the statement is True.",
+        "When the analyst isolates one carrier's pricing strategy on its own, the unit is a single firm. Microeconomics is the branch that studies that firm's incentives, costs, and prices without requiring a simultaneous model of national GDP.\n\nSo the statement is True.",
+        "Market competition is central to economics, not excluded from it. Government budgets matter in public finance, but they do not crowd firms, prices, and rivalry out of the subject. The absolute exclusion fails immediately.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.2.11",
+      "title": "EU Services at Seventy-four Percent",
+      "subsection": "3.2",
+      "chapter": 3,
+      "context": "Consider a GDP report for an EU member state shows services at seventy-four percent of total output. Evaluate the following economic assertions:",
+      "statements": [
+        "Service share alone does not prove every component of GDP is environmentally sustainable.",
+        "Seventy-four percent services indicates tertiary dominance rather than primary leadership.",
+        "Such a share is typical for economically advanced EU countries.",
+        "Seventy-four percent service share fits a highly developed EU economy pattern.",
+        "That pattern reflects rising relative importance of tertiary activity with development."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "A high service share says nothing by itself about environmental sustainability of every GDP component. Composition and green impact are separate questions.\n\nSo the statement is True.",
+        "Seventy-four percent services means the tertiary sector leads output, not the primary sector. Primary leadership would require extraction and farming to dominate the total.\n\nSo the statement is True.",
+        "Service shares around three-quarters of output are typical for economically advanced EU countries. The reported seventy-four percent therefore fits the developed-economy pattern rather than an emerging primary-heavy structure.\n\nStudents should read that percentage as a development marker in the three-sector story, not as proof that industry or farming disappeared. Relative tertiary weight is what the figure signals.\n\nSo the statement is True.",
+        "Seventy-four percent services aligns with a highly developed EU economy pattern in the chapter's stylised facts. It is the expected ballpark for advanced members.\n\nSo the statement is True.",
+        "Rising relative importance of tertiary activity with development is exactly what a seventy-four percent service share illustrates in the sector model.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 3.4.03",
+      "title": "Micro balance sheet OR test",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Consider a design studio that reports eight staff, €2.4m turnover, and a €1.7m balance sheet. Evaluate the following economic assertions:",
+      "statements": [
+        "A firm fails the medium test because both financial figures must be below their respective caps.",
+        "Medium enterprises employ fewer than two hundred and fifty people under EU definitions.",
+        "Because turnover is within €50m, balance sheet size is irrelevant for medium classification.",
+        "Two hundred and forty employees exceed the medium staff ceiling.",
+        "Thirty-eight staff alone keeps a firm in the small category despite turnover above €10m."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Medium classification uses an OR on the financial side: turnover up to €50m or balance sheet up to €43m, plus fewer than 250 staff. Both financial figures need not sit under their caps at once.\n\nA firm can miss one financial ceiling and still pass medium if the other financial measure and staff tests hold. Demanding both financial figures below their caps invents an AND rule the definition does not use.\n\nSo the statement is False.",
+        "EU medium enterprises employ fewer than two hundred and fifty people. That staff ceiling is the employment half of the medium size tests used with the financial caps.\n\nSo the statement is True.",
+        "Turnover within €50m does not make balance sheet size irrelevant. A balance sheet above €43m can still fail medium status when that route is the one being relied on and the other financial test also fails.\n\nSo the statement is False.",
+        "Two hundred and forty employees sit under the medium staff ceiling of fewer than 250. That headcount clears rather than exceeds the official limit.\n\nSo the statement is False.",
+        "Thirty-eight staff fit the small employee band, yet turnover above €10m can knock the firm out of small status. Staff alone cannot keep the small label once financial caps break.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.49",
+      "title": "Voting Rights and Share Classes",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Analyze how common and preferred stock divide control and income rights among shareholders. Evaluate the following economic assertions:",
+      "statements": [
+        "At the annual stockholders' meeting, common stockholders ordinarily exercise voting rights on major resolutions.",
+        "Preferred shareholders always hold superior voting power over common shareholders at every meeting.",
+        "Preferred shares often trade voting rights for priority in dividend payments.",
+        "Investors may purchase shares partly to influence corporate decisions through those voting rights.",
+        "Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Common stockholders ordinarily cast votes at the annual meeting on major resolutions such as electing directors or approving structural changes. That voting role is the ordinary control channel attached to common equity, not a rare exception.\n\nSo the statement is True.",
+        "Preferred shares typically weaken or remove voting power in exchange for dividend priority. They do not always dominate common votes at every meeting. Treating preferred holders as perpetual vote superiors reverses the usual package: income preference often comes with less say, not more.\n\nSo the statement is False.",
+        "Preferred equity is frequently designed as a bargain: holders accept thinner voting rights and receive earlier claim on dividends when profits are distributed. Corporations sell that package to investors who want steadier income more than boardroom influence. Common stock keeps the primary AGM voice; preferred stock often sits closer to hybrid income paper. The trade is intentional, not accidental wording. When a firm needs capital without diluting control as sharply, preferred classes can raise money while voting remains concentrated among common shares. The statement correctly names that exchange of voice for dividend priority.\n\nSo the statement is True.",
+        "Buying shares can be partly about control. Voting rights let investors support or challenge board slates and major corporate acts, so some purchases are deliberate influence plays rather than pure portfolio bets.\n\nSo the statement is True.",
+        "Preferred dividend priority ranks claims when dividends are declared; it does not turn dividends into a legal certainty every year. Boards still decide whether and how much to distribute overall, so discretionary dividend policy survives the preferred preference rule.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.5.02",
+      "title": "Internal and External Finance Classification",
+      "subsection": "4.5",
+      "chapter": 4,
+      "context": "Consider a manufacturing corporation that combines share capital from outside investors, retained profits, and a multi-year bank loan to expand production capacity. Evaluate the following economic assertions:",
+      "statements": [
+        "Equity finance encompasses both internal sources such as retained earnings and external sources such as share capital.",
+        "Short-term bank loans used to cover working capital are classified as short-term debt finance.",
+        "Debt finance is always external because borrowed funds create obligations to outside creditors.",
+        "The balance sheet reveals the sources of finance that a business has used in building its assets.",
+        "Large businesses are obliged to draw up a balance sheet showing how operations have been funded."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Equity finance is not only new share issues from the market. Retained earnings supply internal equity while share capital supplies external equity under one equity heading.\n\nSo the statement is True.",
+        "Borrowing for a few months to bridge payroll or inventory is short-term debt finance. Working-capital loans of that kind do not become equity merely because production capacity expands afterward.\n\nSo the statement is True.",
+        "Borrowed money creates repayment obligations to creditors, so debt finance is treated as external in the overview. Even an owner loan is still debt owed outward from the entity's point of view when classed as credit. The manufacturing corporation's multi-year bank loan therefore sits with external debt beside share capital and retained profit. Internal equity and external equity remain separate from that borrowed slice.\n\nSo the statement is True.",
+        "Assets on one side of the balance sheet are funded by equity and liabilities on the other. Reading that statement of sources shows how the business has financed the plant and working capital it owns.\n\nSo the statement is True.",
+        "Large firms are required to present a balance sheet that discloses funding structure to readers. That obligation is why sources of finance appear in published statements rather than only in informal notes.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.4.14",
+      "title": "Repair Reuse and Longer Product Life",
+      "subsection": "5.4",
+      "chapter": 5,
+      "context": "Consider an event-styling firm offering premium garment rental so clients avoid buying single-use outfits for occasional occasions. Evaluate the following economic assertions:",
+      "statements": [
+        "Marketing responsibility includes recognising that promotional activity may encourage purchases beyond strict necessity.",
+        "Throwaway fashion is sustainable when garments are cheap because low price offsets short useful life.",
+        "Consumers who repair rather than replace functional goods reduce pressure on resources needed for new manufacturing.",
+        "Durable apparel that survives many seasons can circulate among several users before fibres are exhausted.",
+        "Budget plans are often exceeded when shoppers add non-essential items after exposure to targeted advertisements."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Promotions can nudge people past planned baskets into impulse extras. Marketing teams that ignore that effect treat budgets as someone else's problem. Recognising the risk of unnecessary purchases is part of responsible promotional practice, exactly as the statement says.\n\nSo the statement is True.",
+        "Cheap throwaway fashion still burns materials, logistics, and landfill space after a few wears. A low shelf price does not cancel short useful life. Calling that pattern sustainable because garments are inexpensive confuses price with resource impact.\n\nSo the statement is False.",
+        "Fixing a working coat zipper or resoleing boots keeps fabric and hardware in use instead of sending the item to disposal. New manufacturing then faces less replacement demand for the same wardrobe function. Resource pressure falls when repair displaces fresh production runs. Consumers who choose that path reduce the materials and energy that would have gone into another unit. The statement links repair to lower manufacturing pressure correctly.\n\nSo the statement is True.",
+        "A well-made jacket that lasts several seasons can be worn by one person, then passed or rented to others before fibres fail. Circulation multiplies wear per unit of cloth. Durability is what makes that multi-user path realistic.\n\nSo the statement is True.",
+        "Targeted ads often surface non-essential add-ons after the planned items are chosen. Shoppers then overrun the budget they set before entering the store or site. That pattern matches everyday impulse overspend under promotion.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.013",
+      "title": "Asset and Inventory Turnover 13",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,252 |\n| Cost of sales | 869 |\n| Total assets at the beginning of the year | 763 |\n| Total assets at the end of the year | 942 |\n| Inventory at the beginning of the year | 129 |\n| Inventory at the end of the year | 196 |\n| Trade receivables at the beginning of the year | 115 |\n| Trade receivables at the end of the year | 123 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 7.21 times per year.",
+        "Average inventory make up less than 19.7% of average total assets.",
+        "With inventory turnover of about 5.3 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+        "Inventory grew by more than 32.9% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A funds reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{115 + 123}{2} \\approx 119\n$$\n\n$$\n\\frac{1{,}252}{119} \\approx 10.5210\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,252119 = 10.5210 Threshold exceeds 7.21. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is True.",
+        "Average inventory and average assets are midpoints of the beginning and ending balances on the extract.\n\n$$\n\\frac{129 + 196}{2} \\approx 162.5\n$$\n\n$$\n\\frac{763 + 942}{2} \\approx 852.5 \\approx 19.1\\%\n$$\n\n$$\n\\frac{162.5}{852.5} \\approx 0.1906\n$$\n\nAverage inventory and average assets are midpoints of beginning and ending balances.\n\nSo the statement is True.",
+        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{129 + 196}{2} \\approx 162.5\n$$\n\n$$\n\\frac{869}{162.5} \\approx 5.35\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 869162.5 = 5.35 That interpretation matches the definition. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine.\n\nSo the statement is True.",
+        "What the object looks like does not pick the heading. On the chapter test the wording is accepted. Own use of the item for years makes it a tangible fixed asset. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.013",
+      "title": "Cash Flow Mix Over Two Years 13",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 367 | 397 |\n| Cash flow from investing activities | (242) | (285) |\n| Dividends paid | (41) | (65) |\n| Proceeds from new borrowing | 61 | 35 |\n| Cash flow from financing activities | 20 | (30) |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Cash flow from operating activities grew by more than 11.7% from Year 1 to Year 2.",
+        "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow statement.",
+        "Customer collections of receivables are classified as financing cash inflows.",
+        "After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost.",
+        "Cost of sales includes administration costs, shipping to customers and sales-staff costs."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 367, Y_2 = 397\n$$\n\n$$\nY_2 - Y_1 = 397 - 367 = 30\n$$\n\n$$\n\\frac{30}{367} \\approx 0.0817 \\approx 8.2\\%\n$$\n\n$$\n8.2\\% \\le 11.7\\%\n$$\n\nCash flow from operating activities changed by 8.2%, at or below the 11.7% threshold claimed. Operating cash moves from 367 to 397. Growth is about 8.2% against a claim of more than 11.7%. So the hurdle is not met. Operating cash is the trading-cycle bucket on the cash-flow statement.\n\nSo the statement is False.",
+        "Dividends paid are financing outflows, cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions. Counterexample: buying machinery is investing; paying a dividend is financing. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "Place the cash movement in operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Land is usually kept at cost without an annual write-down. Depreciation matches past spending on the asset, not a fresh cash bill. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
+        "Stock figures at a date and period flows must not be swapped. With that split the claim is wrong. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.CVP",
+      "title": "Contribution, Break-Even, Margin of Safety and Operating Leverage",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "NordTrail GmbH sells one standardised hiking jacket. Selling price is EUR 48 per unit; variable cost is EUR 30 per unit. Annual fixed costs are EUR 54,000. The chart records units sold each month; treat the twelve monthly figures as the full year’s volume.\n\n[[CHART type=\"line\" title=\"NordTrail GmbH jackets sold (units)\"]]\nJan | Units=210\nFeb | Units=195\nMar | Units=230\nApr | Units=250\nMay | Units=280\nJun | Units=310\nJul | Units=340\nAug | Units=325\nSep | Units=290\nOct | Units=270\nNov | Units=255\nDec | Units=245\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Selling price per jacket | EUR 48 |\n| Variable cost per jacket | EUR 30 |\n| Annual fixed costs | EUR 54,000 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "Contribution per jacket is strictly greater than EUR 15.",
+        "The annual break-even volume is strictly greater than 3,200 jackets.",
+        "Using the chart year’s total volume, the margin of safety is strictly less than 10% of that volume.",
+        "At the chart year’s total volume, the degree of operating leverage exceeds 12.",
+        "If volume next year rises by exactly 5% from the chart total while price, unit variable cost and fixed costs stay unchanged, operating profit rises by less than 40%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nContribution per unit is price minus variable cost. Keep the euro amounts in prose:\n\n$$\n\\text{Contribution}=48-30=18\n$$\n\n$$\n18>15\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nBreak-even volume divides fixed costs by contribution per unit:\n\n$$\n\\text{Break-even}=\\dfrac{54{,}000}{18}=3{,}000\n$$\n\n$$\n3{,}000\\ngtr 3{,}200\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\nSum the chart months:\n\n$$\n210+195+230+250+280+310+340+325+290+270+255+245=3{,}200\n$$\n\nMargin of safety as a share of actual volume:\n\n$$\n\\dfrac{3{,}200-3{,}000}{3{,}200}=\\dfrac{200}{3{,}200}=0.0625=6.25\\%\n$$\n\n$$\n6.25\\%<10\\%\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nAt $Q=3{,}200$:\n\n$$\nQ\\cdot\\mathrm{CM}=3{,}200\\cdot 18=57{,}600\n$$\n\n$$\n\\text{Operating profit}=57{,}600-54{,}000=3{,}600\n$$\n\n$$\n\\mathrm{DOL}=\\dfrac{57{,}600}{3{,}600}=16>12\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\nA $5\\%$ volume rise gives $Q=3{,}200\\cdot 1.05=3{,}360$. New profit:\n\n$$\n3{,}360\\cdot 18-54{,}000=60{,}480-54{,}000=6{,}480\n$$\n\n$$\n\\dfrac{6{,}480}{3{,}600}-1=0.80=80\\%\n$$\n\nThat is not less than $40\\%$. (Equivalently: $\\mathrm{DOL}\\times 5\\%=80\\%$.)\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) In West Antarctica sits a glacier roughly the size of Great Britain, its ice cliffs facing an ocean now consistently warmer than at any point in recorded history. Thwaites Glacier holds enough ice that, were it to disintegrate entirely, global sea levels would rise by roughly 65 centimetres, a shift that would redraw coastlines from Bangladesh to Florida.\n\n(2) What makes Thwaites especially alarming is not simply its size but its location. The glacier rests on bedrock that slopes downward inland, meaning that once retreat begins, warmer ocean water can flow ever deeper beneath the ice, accelerating melting rather than slowing it, a self-reinforcing process glaciologists call marine ice sheet instability.\n\n(3) In 2019, researchers using ice-penetrating radar discovered a cavity beneath the glacier roughly twothirds the size of Manhattan, large enough to have once contained approximately 14 billion tonnes of ice that had already melted away. The cavity's existence confirmed that warm water was reaching, and eroding, the glacier's underside far more extensively than surface observations alone had suggested.\n\n(4) Thwaites does not melt in isolation. Acting as a natural buttress, its ice shelf currently holds back a much larger mass of ice further inland; researchers estimate that if this buttressing effect were entirely lost, surrounding glaciers could eventually contribute an additional three metres of sea-level rise, unfolding over centuries rather than years.\n\n(5) Since the 1990s, satellite measurements show Thwaites has roughly doubled its rate of ice loss, though scientists caution that this acceleration has not proceeded smoothly; certain sections have periodically stabilised before resuming retreat, complicating efforts to extrapolate a single, simple future trajectory from past trends.\n\n(6) The International Thwaites Glacier Collaboration, a joint venture funded by the United States and United Kingdom beginning in 2018, has coordinated dozens of research expeditions to the glacier, deploying underwater robots, autonomous sensors, and specially reinforced ships capable of navigating waters that had previously been considered too hazardous to survey directly.\n\n(7) Model projections of Thwaites' future remain strikingly divergent. Some simulations suggest the glacier's most vulnerable sections could destabilise within several decades, while others project a substantially slower unfolding lasting multiple centuries, a divergence stemming partly from genuine scientific uncertainty and partly from the sheer difficulty of modelling ice behaviour deep beneath the ocean's surface.\n\n(8) This uncertainty carries real consequences for coastal planning. Engineers designing sea walls, city planners rezoning flood-prone districts, and insurers pricing coastal property all require some estimate of future sea-level rise, yet current projections span a range wide enough to make precise, decades-ahead planning genuinely difficult.\n\n(9) Whether Thwaites represents a slow-moving but ultimately containable hazard, or an early warning of instability capable of accelerating far faster than current models suggest, remains a question actively pursued by glaciologists studying the ice sheet's hidden underside.",
+    "passageTitle": "The Doomsday Glacier — Racing to Predict a Silent Collapse",
+    "tasks": [
+      {
+        "case_id": "ENG T.12.01",
+        "id": "en-t-12-01",
+        "title": "Task 1",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Thwaites Glacier is roughly the size of Great Britain.",
+          "Full disintegration would raise sea levels by 65 centimetres.",
+          "Retreat slows once warm water reaches inland bedrock.",
+          "The glacier's bedrock slopes upward as it moves inland.",
+          "Marine ice sheet instability describes a self-reinforcing melting process."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Thwaites Glacier is roughly the size of Great Britain.**\n\nParagraph 1 opens with a direct size comparison: a glacier \"roughly the size of Great Britain\" sits in West Antarctica. The statement simply repeats that explicit scale, without adding numbers or geography the text never gives. Do not confuse this Britain-scale analogy with the later Manhattan cavity or the 65-centimetre sea-level figure—those are separate measurements. The wording \"roughly the size of Great Britain\" is the exact anchor you need for a bare size claim.\n\n**Tip:** Treat bare size or place analogies as true when they echo the passage word-for-word or with a light paraphrase.\n\nThe size match is stated outright in Paragraph 1, so the claim is true.",
+          "**B) Full disintegration would raise sea levels by 65 centimetres.**\n\nStill in Paragraph 1, the text says that if Thwaites were to \"disintegrate entirely, global sea levels would rise by roughly 65 centimetres.\" The statement's \"full disintegration\" is just a clean rephrase of that total-collapse scenario, and the centimetre figure is unchanged. Watch that you do not swap this 65 cm Thwaites-only figure for Paragraph 4's additional three metres from surrounding glaciers. The phrase \"disintegrate entirely\" plus \"roughly 65 centimetres\" is the precise pairing the statement restates.\n\nThe 65-centimetre rise is the passage's own number for complete loss, so the claim matches.",
+          "**C) Retreat slows once warm water reaches inland bedrock.**\n\nParagraph 2 says the opposite: once retreat begins, warmer water can flow ever deeper beneath the ice, \"accelerating melting rather than slowing it.\" The statement flips that causal direction—from acceleration to slowing—so it fails against the stability mechanism the text names. The trap is the verb \"slows\": the passage insists the feedback speeds melt, not brakes it. Match the claim against the exact contrast \"accelerating melting rather than slowing it\" and the reverse becomes obvious.\n\n**Trap:** Watch for verbs that reverse the marine ice-sheet feedback; the passage insists melt speeds up, not cools down.\n\nThe claim reverses Paragraph 2's accelerating feedback, so it fails.",
+          "**D) The glacier's bedrock slopes upward as it moves inland.**\n\nParagraph 2 locates the danger in bedrock that \"slopes downward inland,\" not upward. An upward slope would block warm-water intrusion; a downward one enables the self-reinforcing retreat the paragraph describes. The statement simply swaps the slope direction. \"Upward\" is a one-word antonym trap of \"downward inland,\" so any slope claim must keep that direction intact. The passage's wording \"slopes downward inland\" is the fact that kills this rewrite.\n\nDownward inland, not upward, is the bedrock fact, so the claim is false.",
+          "**E) Marine ice sheet instability describes a self-reinforcing melting process.**\n\nParagraph 2 ends by labelling that self-reinforcing melt loop: \"a self-reinforcing process glaciologists call marine ice sheet instability.\" The statement faithfully restates that definition—name and mechanism line up. Nothing in the label invents a different process or a different technical name. The clause that equates \"self-reinforcing process\" with \"marine ice sheet instability\" is the definitional match the statement copies.\n\nThe term and the feedback process are equated in Paragraph 2, so the claim is true."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.12.02",
+        "id": "en-t-12-02",
+        "title": "Task 2",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The 2019 cavity was roughly two-thirds Manhattan's size.",
+          "The cavity once held about 14 billion tonnes of ice.",
+          "Surface observations alone had already revealed this cavity's full extent.",
+          "Losing the ice shelf's buttress could add three metres of sea-level rise.",
+          "That additional rise would unfold within a single decade."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The 2019 cavity was roughly two-thirds Manhattan's size.**\n\nParagraph 3 reports that in 2019 radar found a cavity \"roughly twothirds the size of Manhattan.\" The statement's hyphenated \"two-thirds\" is the same fraction; it does not invent a larger or later cavity. Spelling or hyphenation differences (\"two-thirds\" vs \"twothirds\") do not change the fraction the passage gives. Anchor on \"roughly twothirds the size of Manhattan\" as the cavity's stated scale.\n\nThe Manhattan-scale comparison is Paragraph 3's own measure, so the claim is true.",
+          "**B) The cavity once held about 14 billion tonnes of ice.**\n\nThe same sentence says the cavity was \"large enough to have once contained approximately 14 billion tonnes of ice that had already melted away.\" \"About\" fairly covers \"approximately,\" and the tonne count is unchanged. Softeners like \"about\" and \"approximately\" are interchangeable paraphrases, not new quantities. The figure \"approximately 14 billion tonnes of ice\" is the exact number the statement echoes.\n\nThe 14-billion-tonne figure is stated in Paragraph 3, so the claim matches.",
+          "**C) Surface observations alone had already revealed this cavity's full extent.**\n\nParagraph 3 stresses the opposite: warm-water erosion was \"far more extensively than surface observations alone had suggested.\" Radar, not surface surveys, revealed the cavity's scale. The statement credits surface data with a discovery the text withholds from them. The word \"already\" falsely pretends surface methods had finished the job before radar. Compare the claim with \"far more extensively than surface observations alone had suggested\" and the understatement becomes clear.\n\n**Trap:** \"Already\" + surface methods is a common flip—Paragraph 3 says surface data understated the problem.\n\nSurface observations alone missed this extent, so the claim fails.",
+          "**D) Losing the ice shelf's buttress could add three metres of sea-level rise.**\n\nParagraph 4 estimates that if the buttressing effect were entirely lost, surrounding glaciers \"could eventually contribute an additional three metres of sea-level rise.\" The statement correctly ties that three-metre add-on to loss of the ice shelf's buttress role. Do not confuse this additional three metres with Paragraph 1's roughly 65 centimetres for Thwaites alone. The wording \"additional three metres of sea-level rise\" after lost buttressing is the exact estimate restated here.\n\nThe three-metre estimate is Paragraph 4's figure for lost buttressing, so the claim is true.",
+          "**E) That additional rise would unfold within a single decade.**\n\nParagraph 4 immediately times the extra rise as \"unfolding over centuries rather than years.\" A single decade is far shorter than that multi-century window, so the statement invents a rapid timetable the text rejects. \"Years\" already rules out a decade-scale sprint; \"centuries\" stretches the window even further. Match any timing claim against \"unfolding over centuries rather than years\" before accepting a fast calendar.\n\nCenturies, not a decade, is the span given, so the claim is false."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.12.03",
+        "id": "en-t-12-03",
+        "title": "Task 3",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Since the 1990s, ice loss has roughly doubled.",
+          "This acceleration has proceeded smoothly without any pauses.",
+          "The joint research collaboration began in 2018.",
+          "All model projections agree closely on collapse timing.",
+          "Coastal planners currently face a genuinely wide projection range."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Since the 1990s, ice loss has roughly doubled.**\n\nParagraph 5 reports that satellite measurements show Thwaites \"has roughly doubled its rate of ice loss\" since the 1990s. The statement repeats that doubling without inventing a steeper surge or a different start year. \"Roughly doubled\" is already a softener, so do not treat the claim as demanding an exact 2.00 multiplier. The phrase \"roughly doubled its rate of ice loss\" since the 1990s is the statistic the statement copies.\n\nThe doubled-loss claim is Paragraph 5's own statistic, so it is true.",
+          "**B) This acceleration has proceeded smoothly without any pauses.**\n\nThe same paragraph cautions that acceleration \"has not proceeded smoothly\"; sections have \"periodically stabilised before resuming retreat.\" \"Without any pauses\" erases those temporary stabilisations the text explicitly records. Overall doubling and stop-start local behaviour can both be true; the trap is treating them as mutually exclusive. The wording \"has not proceeded smoothly\" plus periodic stabilisation directly kills a no-pause claim.\n\n**Trap:** Doubling overall does not mean a smooth, unbroken climb—Paragraph 5 flags stop-start behaviour.\n\nPauses and restabilisations contradict \"smoothly,\" so the claim fails.",
+          "**C) The joint research collaboration began in 2018.**\n\nParagraph 6 introduces the International Thwaites Glacier Collaboration as a U.S.–U.K. venture \"beginning in 2018.\" The statement names that start date accurately and invents no earlier founding year. A founding year is not a claim that all scientific uncertainty ended that year—later paragraphs still show divergent models. The exact anchor is \"beginning in 2018\" for the joint U.S.–U.K. collaboration.\n\nThe 2018 start is stated in Paragraph 6, so the claim is true.",
+          "**D) All model projections agree closely on collapse timing.**\n\nParagraph 7 opens with projections that \"remain strikingly divergent\"—decades in some runs, centuries in others. \"Agree closely\" is the exact opposite of that advertised mismatch. \"All\" plus \"agree closely\" is a unanimity rewrite the paragraph never supports. The opening line \"Model projections of Thwaites' future remain strikingly divergent\" is enough to reject close agreement.\n\nStriking divergence overturns close agreement, so the claim is false.",
+          "**E) Coastal planners currently face a genuinely wide projection range.**\n\nParagraph 8 says current projections \"span a range wide enough to make precise, decades-ahead planning genuinely difficult.\" Coastal engineers, planners, and insurers all work under that spread. The statement's \"genuinely wide\" tracks the passage's own wording. The difficulty is about the width of the range, not about planners ignoring sea-level risk altogether. Echo \"span a range wide enough\" and \"genuinely difficult\" when checking this synthesis of planning trouble.\n\nThe wide projection span for coastal planning is Paragraph 8's point, so the claim matches."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.12.04",
+        "id": "en-t-12-04",
+        "title": "Task 4",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Downward-sloping bedrock helps explain accelerating, self-reinforcing retreat.",
+          "If loss doubled since the 1990s, retreat has clearly worsened.",
+          "Divergent models imply scientists fully agree on collapse timing.",
+          "Buttressing loss implies inland glaciers depend partly on Thwaites.",
+          "Stabilised sections prove the glacier's overall retreat has ended."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Downward-sloping bedrock helps explain accelerating, self-reinforcing retreat.**\n\nParagraph 2 links bedrock that \"slopes downward inland\" to ever-deeper warm water and \"accelerating melting,\" which glaciologists call \"marine ice sheet instability.\" The inference is not a stretch: the slope is offered as the mechanism behind the self-reinforcing speed-up. \"Helps explain\" only asks for a causal link the paragraph already draws, not for a claim that slope is the sole cause of all ice loss. Re-read \"slopes downward inland, meaning that… accelerating melting\" as the mechanism chain the inference restates.\n\nThe bedrock geometry and the feedback are tied together in Paragraph 2, so the inference holds.",
+          "**B) If loss doubled since the 1990s, retreat has clearly worsened.**\n\nParagraph 5's doubling of the ice-loss rate since the 1990s is already framed as acceleration (even with intermittent pauses). A higher loss rate is a straightforward worsening of retreat intensity relative to that earlier baseline. Temporary local stabilisations do not cancel the overall rate increase the satellites show. \"Clearly worsened\" here means a worse ice-loss rate than the 1990s baseline, which \"roughly doubled\" supports.\n\n**Tip:** \"Clearly worsened\" here tracks rate of ice loss, not a claim that every section is always retreating at once.\n\nDoubled loss since the 1990s supports a worse retreat rate, so the inference is true.",
+          "**C) Divergent models imply scientists fully agree on collapse timing.**\n\nParagraph 7 calls the projections \"strikingly divergent\" and traces that gap to uncertainty and hard-to-model ice physics. Divergence is evidence of disagreement about timing, not of \"full agree[ment].\" The inference flips the logical force of the word. \"Imply…fully agree\" is an illicit leap from disagreement-language to unanimity. Keep \"strikingly divergent\" as proof that timing consensus is missing, not present.\n\n**Trap:** \"Divergent\" never licenses unanimous timing; it blocks it.\n\nDivergence contradicts full agreement, so the claim fails.",
+          "**D) Buttressing loss implies inland glaciers depend partly on Thwaites.**\n\nParagraph 4 says Thwaites' ice shelf \"holds back a much larger mass of ice further inland,\" and that losing that buttress could unlock metres of extra rise from surrounding glaciers. Dependence of inland ice on Thwaites' buttress is exactly what that relationship implies. \"Partly\" is the safe hedge: the shelf holds ice back, so inland mass is not wholly independent of Thwaites. The phrase \"holds back a much larger mass of ice further inland\" is the dependence clue the inference uses.\n\nThe inland buttressing role supports partial dependence, so the inference is true.",
+          "**E) Stabilised sections prove the glacier's overall retreat has ended.**\n\nParagraph 5 notes only that certain sections \"periodically stabilised before resuming retreat.\" Temporary pauses before restarting do not prove that overall retreat has ended; they complicate a simple future path while retreat continues. \"Prove…has ended\" overclaims from local, temporary pauses to a finished glacier-wide story. The sequence \"stabilised before resuming retreat\" shows pauses are interruptions, not an ending.\n\nStabilisation then \"resuming retreat\" overturns an \"ended\" verdict, so the claim is false."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.12.05",
+        "id": "en-t-12-05",
+        "title": "Task 5",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The 2019 cavity discovery helps explain the doubled loss rate since the 1990s.",
+          "Uncertain projections help explain why coastal planning remains genuinely difficult.",
+          "Because collaboration began in 2018, all uncertainty was fully resolved by then.",
+          "Buttressing loss and the three-metre estimate both concern ice beyond Thwaites itself.",
+          "Bedrock sloping downward is unrelated to the described instability process."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The 2019 cavity discovery helps explain the doubled loss rate since the 1990s.**\n\nParagraph 3's cavity shows warm water eroding the underside far more than surface clues suggested; Paragraph 5 records roughly doubled ice loss since the 1990s. Linking underside melt revealed in 2019 to that accelerated loss is a fair cross-section synthesis the text invites, even without a single sentence that pairs the two facts. \"Helps explain\" only needs a supporting mechanism, not a claim that the cavity is the sole cause of every tonne lost. Join basal erosion \"far more extensively than surface observations alone had suggested\" with the doubled-loss trend as the synthesis the item tests.\n\n**Tip:** Synthesis items can join mechanism (basal melt) to trend (doubled loss) when both are in the passage.\n\nBasal erosion and doubled loss fit together, so the synthesis holds.",
+          "**B) Uncertain projections help explain why coastal planning remains genuinely difficult.**\n\nParagraph 7–8 supply the causal chain: strikingly divergent models create wide projection ranges, and Paragraph 8 says that spread makes \"precise, decades-ahead planning genuinely difficult\" for coastal work. The statement restates the passage's own bridge from uncertainty to planning trouble. The difficulty is attributed to the width of the range, not to a claim that no planning is possible at all. Trace \"strikingly divergent\" models into the \"range wide enough\" that makes planning \"genuinely difficult.\"\n\nWide, uncertain projections are Paragraph 8's reason for planning difficulty, so the claim is true.",
+          "**C) Because collaboration began in 2018, all uncertainty was fully resolved by then.**\n\nParagraph 6 dates the collaboration to 2018; Paragraphs 7–9 still present divergent models and an open question about Thwaites' hazard. Launching research does not mean uncertainty vanished that year—the later paragraphs prove it remains. \"Because…fully resolved\" invents a causal finish line the founding date never supplies. Keep \"beginning in 2018\" as a start date and \"strikingly divergent\" projections as proof the unknowns continue.\n\n**Trap:** A start date is not a resolution date; later paragraphs keep the unknowns alive.\n\nOngoing divergent projections overturn \"fully resolved by 2018,\" so the claim fails.",
+          "**D) Buttressing loss and the three-metre estimate both concern ice beyond Thwaites itself.**\n\nParagraph 4's buttress holds back \"a much larger mass of ice further inland,\" and the three metres come from \"surrounding glaciers\" if that effect is lost. Both details point past Thwaites' own ice to the inland system it pins in place. The synthesis is about whose ice supplies the extra rise, not about whether Thwaites itself also melts. \"Further inland\" and \"surrounding glaciers\" are the beyond-Thwaites cues both halves of the claim share.\n\nInland ice and surrounding glaciers are beyond Thwaites alone, so the synthesis is true.",
+          "**E) Bedrock sloping downward is unrelated to the described instability process.**\n\nParagraph 2 presents downward-sloping bedrock as the setup that lets warm water deepen the retreat and feed \"marine ice sheet instability.\" Calling the slope \"unrelated\" severs the mechanism the paragraph exists to explain. \"Unrelated\" is a disconnect trap: the text uses \"meaning that\" to weld slope geometry to the named instability. Re-read the full chain from \"slopes downward inland\" through accelerating melt to \"marine ice sheet instability.\"\n\nThe slope is the instability's geometric cause, so the claim is false."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.12.08",
+        "id": "en-t-12-08",
+        "title": "Task 8",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 2, \"self-reinforcing\" means weakening over repeated cycles.",
+          "In Paragraph 3, \"eroding\" means gradually wearing something away.",
+          "In Paragraph 4, \"buttress\" means something that supports and holds back.",
+          "In Paragraph 6, \"hazardous\" means completely safe and risk-free.",
+          "In Paragraph 9, \"hidden\" means fully visible and easily observed."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 2, \"self-reinforcing\" means weakening over repeated cycles.**\n\nIn Paragraph 2 the process accelerates melt rather than slowing it—the loop strengthens itself. \"Weakening over repeated cycles\" is the opposite polarity of a self-reinforcing feedback. Context already pairs the label with accelerating melt, so a fade-out gloss cannot fit. Read \"self-reinforcing process\" next to \"accelerating melting rather than slowing it\" before accepting any antonym.\n\n**Trap:** \"Self-\" compounds often tempt antonym glosses; here the ice-sheet loop intensifies, it does not fade.\n\nAccelerating, not weakening, is the sense in Paragraph 2, so the gloss fails.",
+          "**B) In Paragraph 3, \"eroding\" means gradually wearing something away.**\n\nParagraph 3 says warm water was \"reaching, and eroding, the glacier's underside\"—progressive basal wear. \"Gradually wearing something away\" is exactly that geologic sense. Nothing in the sentence turns eroding into a sudden, one-time snap. The paired verbs \"reaching, and eroding\" describe ongoing underside damage by warm water.\n\nGradual wear matches how Paragraph 3 uses \"eroding,\" so the meaning holds.",
+          "**C) In Paragraph 4, \"buttress\" means something that supports and holds back.**\n\nParagraph 4 calls the ice shelf a \"natural buttress\" that \"holds back a much larger mass of ice further inland.\" Support-plus-restraint is the role the sentence assigns. The gloss does not invent a decorative or unrelated sense of the word. \"Natural buttress\" plus \"holds back\" is the contextual definition the statement restates.\n\nHolding inland ice back is the buttress function named there, so the gloss is true.",
+          "**D) In Paragraph 6, \"hazardous\" means completely safe and risk-free.**\n\nParagraph 6 describes waters once \"considered too hazardous to survey directly\"—dangerous enough to avoid. \"Completely safe and risk-free\" is the antonym of that risk label. \"Too hazardous to survey\" only makes sense if the waters were risky, not safe. Keep hazardous as a danger word tied to waters that needed special ships and robots.\n\nHazardous marks danger, not safety, so the claimed meaning fails.",
+          "**E) In Paragraph 9, \"hidden\" means fully visible and easily observed.**\n\nParagraph 9 closes on the ice sheet's \"hidden underside\"—material researchers still pursue because it is not in plain view. \"Fully visible\" reverses that sense. If the underside were easily observed, glaciologists would not still be chasing that open question. \"Hidden underside\" signals concealment, the opposite of fully visible.\n\nHidden means concealed, not visible, so the gloss is false."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.12.09",
+        "id": "en-t-12-09",
+        "title": "Task 9",
+        "subsection": "t.12",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 1, \"disintegrate\" means to break apart completely.",
+          "In Paragraph 5, \"extrapolate\" means to project forward from existing trends.",
+          "In Paragraph 7, \"divergent\" means closely matching one another.",
+          "In Paragraph 8, \"genuinely\" means falsely or only apparently.",
+          "In Paragraph 2, \"accelerating\" means slowing down gradually."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 1, \"disintegrate\" means to break apart completely.**\n\nParagraph 1 weighs what happens if Thwaites were to \"disintegrate entirely\"—total breakup releasing enough ice for a ~65 cm rise. \"Break apart completely\" tracks that total-collapse sense. The adverb \"entirely\" already pushes the verb toward total breakup, not a minor chip. Match \"disintegrate entirely\" with complete breaking apart as the contextual gloss.\n\nEntire breakup is how Paragraph 1 uses the verb, so the meaning holds.",
+          "**B) In Paragraph 5, \"extrapolate\" means to project forward from existing trends.**\n\nParagraph 5 says stop-start retreat complicates efforts \"to extrapolate a single, simple future trajectory from past trends.\" That is textbook projecting-forward from known data. The from-phrase \"from past trends\" is the clue that extrapolation starts with existing evidence. Keep that forward-projection sense rather than inventing a meaning like \"ignore past data.\"\n\nProjecting a future path from past trends is exactly the Paragraph 5 sense, so the gloss is true.",
+          "**C) In Paragraph 7, \"divergent\" means closely matching one another.**\n\nParagraph 7's projections \"remain strikingly divergent,\" with some runs on decades and others on centuries. \"Closely matching\" erases that split. Decades-versus-centuries timelines are concrete proof of separation, not alignment. Reject any synonym that turns \"strikingly divergent\" into agreement.\n\n**Trap:** Do not gloss divergent as \"aligned\"; the paragraph's decades-versus-centuries contrast proves separation.\n\nDivergent means differing, not matching, so the claim fails.",
+          "**D) In Paragraph 8, \"genuinely\" means falsely or only apparently.**\n\nParagraph 8 says planning is \"genuinely difficult\" because the projection range is wide—\"genuinely\" intensifies real difficulty, not fake or apparent difficulty. \"Falsely\" is an antonym gloss that would cancel the adverb's intensifying job. Read \"genuinely difficult\" as truly hard planning under a wide projection span.\n\nGenuinely means truly, not falsely, so the gloss is false.",
+          "**E) In Paragraph 2, \"accelerating\" means slowing down gradually.**\n\nParagraph 2 says warmer water leads to \"accelerating melting rather than slowing it.\" The text even pairs accelerating against slowing, so \"slowing down gradually\" is the denied opposite. When a sentence says X rather than Y, Y cannot be the meaning of X. Use \"accelerating melting rather than slowing it\" as the built-in antonym test.\n\nAccelerating is speeding melt, not slowing it, so the meaning fails."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.12.06",
+        "id": "en-t-12-06",
+        "title": "Task 6",
+        "subsection": "t.12",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had retreat not accelerated, sea levels would have risen slower.\"",
+          "\"Scientists recommended that the team monitors the cavity closely.\"",
+          "\"The number of research expeditions continue to grow yearly.\"",
+          "\"Neither the sensors nor the ship were fully reliable.\"",
+          "\"Having mapped the cavity, researchers revised their models.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had retreat not accelerated, sea levels would have risen slower.\"**\n\nThis is a third-conditional counterfactual with inverted Had + past participle (\"Had retreat not accelerated\") paired with \"would have risen.\" The comparative adverb \"slower\" is acceptable exam English beside \"more slowly\" when comparing rates. The structure is equivalent to \"If retreat had not accelerated, sea levels would have risen slower,\" just with fronted Had. Keep the pairing Had + past participle in the if-clause substitute and would have + past participle in the result.\n\n**Tip:** Inversion (Had + subject + past participle) is just another way to write If + past perfect.\n\nThe inverted third conditional is well formed, so the sentence stands.",
+          "**B) \"Scientists recommended that the team monitors the cavity closely.\"**\n\nAfter recommend + that, exam English wants the mandative subjunctive: base form monitor, not third-person monitors. The finite \"monitors\" treats the clause like an ordinary present indicative. Singular \"team\" tempts people into -s agreement, but the subjunctive still drops the -s. Fix the line by restoring the base verb after recommend that.\n\n**Trap:** Recommend/insist/require + that → base verb, even with a singular subject.\n\nThe subjunctive needs \"monitor,\" so this wording fails — \"Scientists recommended that the team monitor the cavity closely.\"",
+          "**C) \"The number of research expeditions continue to grow yearly.\"**\n\nThe head of the subject is \"number,\" which is singular, so the verb should be continues. \"Continue\" wrongly agrees with the plural noun inside the of-phrase (\"expeditions\"). Ignore the nearest plural noun when the head is \"the number of.\" Swap continue for continues to match singular number.\n\n**Tip:** The number of → singular; a number of → plural.\n\nSingular \"number\" needs \"continues,\" so the line fails — \"The number of research expeditions continues to grow yearly.\"",
+          "**D) \"Neither the sensors nor the ship were fully reliable.\"**\n\nNeither…nor joins a plural noun (\"sensors\") and a singular one (\"ship\"). In this bank's mixed-number reading, plural agreement is allowed because one member of the pair is plural, so \"were\" can stand. Do not force nearest-noun singular \"was\" when the bank treats a plural partner as licensing plural agreement. Here \"sensors\" in the neither…nor pair is what keeps \"were\" acceptable.\n\n**Tip:** When neither…nor mixes numbers, check which agreement rule the item expects—here the plural partner licenses \"were.\"\n\nWith a plural noun in the neither…nor pair, \"were\" fits, so the sentence is sound.",
+          "**E) \"Having mapped the cavity, researchers revised their models.\"**\n\nThe perfect participle \"Having mapped\" correctly sets mapping as earlier work by the same agents who then \"revised\"—researchers are both the mappers and the revisers, so there is no dangling modifier. Perfect participial openers mark prior action by the subject that follows, which is exactly this pattern. Confirm that \"researchers\" is the only logical subject of both \"Having mapped\" and \"revised.\"\n\nThe participial opener attaches cleanly to \"researchers,\" so the wording holds."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.12.07",
+        "id": "en-t-12-07",
+        "title": "Task 7",
+        "subsection": "t.12",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had radar scanned the ice than the cavity appeared.\"",
+          "\"The programme, along with related studies, were funded jointly.\"",
+          "\"Each of the models have projected differing timelines.\"",
+          "\"By the time data arrives, projections will have already shifted.\"",
+          "\"The readings, which were gathered yearly, show accelerating melt.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had radar scanned the ice than the cavity appeared.\"**\n\nNo sooner + inverted past perfect (\"had radar scanned\") pairs with than + past simple (\"appeared\"). That is the classic No sooner…than pattern for a near-immediate follow-on event. Do not replace than with when, and keep the Had-inversion after No sooner. The finished scan (past perfect) before the appearance (past simple) is the time order the idiom encodes.\n\nThe inversion and than-clause are correctly built, so the sentence stands.",
+          "**B) \"The programme, along with related studies, were funded jointly.\"**\n\nThe real subject is singular \"programme\"; the parenthetical \"along with related studies\" does not make the verb plural. Were should be was. Comma-wrapped add-ons after the head never rewrite subject–verb number. Restore singular agreement: was funded jointly.\n\n**Trap:** Along with / as well as / together with never turns a singular head into a plural subject.\n\nSingular \"programme\" needs \"was funded,\" so this fails — \"The programme, along with related studies, was funded jointly.\"",
+          "**C) \"Each of the models have projected differing timelines.\"**\n\nEach of + plural noun still takes a singular verb: has projected, not have. \"Each\" points one-by-one and keeps the head singular. The plural \"models\" after of is a distractor, not the agreement controller. Change have to has to satisfy Each.\n\n\"Each\" demands singular \"has,\" so the line fails — \"Each of the models has projected differing timelines.\"",
+          "**D) \"By the time data arrives, projections will have already shifted.\"**\n\n\"By the time\" + present (\"arrives\") sets a future reference point; \"will have already shifted\" places that change before data arrives—future perfect for prior completion. Present arrives is the usual tense after by the time when the main clause is future-oriented. Future perfect marks the shift as finished before that arrival moment.\n\nCompletion before a future \"by the time\" moment is exactly future perfect's job, so the wording is sound.",
+          "**E) \"The readings, which were gathered yearly, show accelerating melt.\"**\n\nPlural \"readings\" correctly takes \"were\" in the non-restrictive relative clause and \"show\" in the main clause. Number agreement is consistent throughout. The commas mark a non-restrictive which-clause, but that does not change plural agreement. Keep both were and show plural to match readings.\n\nPlural subject and plural verbs align, so the sentence holds."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.12.10",
+        "id": "en-t-12-10",
+        "title": "Task 10",
+        "subsection": "t.12",
+        "context": "Consider this sentence from the passage: \"Model projections of Thwaites' future remain strikingly divergent.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "Forecasts for the glacier's future differ sharply from one another.",
+          "Forecasts for the glacier's future agree closely with each other.",
+          "The glacier's future is no longer being modelled at all.",
+          "Predictions about the glacier's fate vary considerably between models.",
+          "Every model now predicts the exact same outcome confidently."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Forecasts for the glacier's future differ sharply from one another.**\n\nThe original line is \"Model projections of Thwaites' future remain strikingly divergent.\" \"Forecasts…differ sharply\" preserves both the modelling topic and the strong-disagreement sense of \"strikingly divergent.\" \"Differ sharply\" is a fair upgrade of \"divergent\" without inventing agreement or abandoned modelling. Keep the same subject (future forecasts/projections) and the same clash among them.\n\nSharp difference between forecasts is a faithful paraphrase, so the line matches.",
+          "**B) Forecasts for the glacier's future agree closely with each other.**\n\n\"Agree closely\" is the antonym of \"strikingly divergent.\" The paraphrase reverses the original's core claim about model disagreement. Synonym checks fail when the rewrite flips polarity while keeping the topic. Any close-agreement version of \"strikingly divergent\" must be rejected.\n\n**Trap:** Synonym traps often flip divergent ↔ agree; reject any close-agreement rewrite.\n\nClose agreement contradicts divergence, so this paraphrase fails.",
+          "**C) The glacier's future is no longer being modelled at all.**\n\nThe original asserts that model projections still exist and disagree; it never says modelling has stopped. \"No longer being modelled\" invents a cessation the sentence does not contain. Divergent projections presuppose active modelling, so a stop-modelling rewrite cannot be faithful. Stay inside \"Model projections…remain strikingly divergent\"—existence plus disagreement, not abandonment.\n\nAbandoned modelling is not in the original, so the paraphrase fails.",
+          "**D) Predictions about the glacier's fate vary considerably between models.**\n\n\"Vary considerably between models\" restates divergent projections without softening or reversing them. \"Fate\" and \"predictions\" stay within the same forecasting domain as \"model projections…future.\" Considerable variation is the same strong-difference idea as \"strikingly divergent,\" just in different words. Accept paraphrases that keep between-model disagreement intact.\n\nConsiderable between-model variation keeps the original meaning, so the paraphrase holds.",
+          "**E) Every model now predicts the exact same outcome confidently.**\n\nUnanimous, confident sameness cancels \"strikingly divergent.\" The paraphrase invents agreement and certainty the source line denies. \"Every…exact same…confidently\" stacks three overclaims the original never supports. Match the rewrite against \"remain strikingly divergent\" and the polarity flip is immediate.\n\nIdentical confident outcomes reverse the original, so this paraphrase is false."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.12.19",
+        "id": "en-g-12-19",
+        "title": "Task 19",
+        "subsection": "g.12",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.",
+          "Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.",
+          "Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.",
+          "Owing to the delayed train, they walked the last kilometre along the canal.",
+          "Because of delayed trains were overcrowded, they walked the last kilometre along the canal."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.**\n\nDespite + \"the same delay\" in the second half is correctly formed as a noun concession, and the sentence stays grammatical. Friends still making the opening and refusing to skip the café both fit the contrast story. When two contrast tools appear, check each chunk separately — this despite use is fine.\n\nDespite + \"the same delay\" in the second chunk is a clean noun concession, so the sentence is **true**.\n",
+          "**B) Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.**\n\nDespite + \"delayed trains\" and semicolon + however are both well formed. Stacking two contrast tools is fine if each obeys its own rule: noun after despite, strong punctuation before however. They reach the gallery; several rooms have already closed.\n\nDespite + delayed trains and semicolon + however each obey their own rules, so the wording is **true**.\n",
+          "**C) Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.**\n\nAlthough lacks a clause (\"Although delayed trains\"), and however is joined with only a weak comma. Two linker errors can hide in one sentence — check each separately. Either fault alone would already force **false**.\n\n**Trap:** Dense double-linker fails are hard because one error can mask the other.\n\nAlthough lacks a clause and however sits after only a weak comma, so this is **false** — \"Although trains were delayed, they reached the gallery; however, several rooms had already closed for cleaning.\"\n",
+          "**D) Owing to the delayed train, they walked the last kilometre along the canal.**\n\nOwing to + \"the delayed train\" correctly states the reason for walking the last kilometre. Travel delays often pair with owing to in formal notices. The noun cause matches the linker.\n\nOwing to + \"the delayed train\" names the canal-walk cause cleanly, so the line is **true**.\n",
+          "**E) Because of delayed trains were overcrowded, they walked the last kilometre along the canal.**\n\nBecause of + finite clause is illegal. \"Because of delayed trains were overcrowded\" → \"Because delayed trains were overcrowded\" or \"Because of overcrowded delayed trains.\" If a verb like were sits after because of, rewrite immediately.\n\n**Trap:** Because of + were is the classic hybrid trap buried in a longer travel sentence.\n\nBecause of cannot stack onto a finite were-overcrowded clause, so the wording is **false** — \"Because delayed trains were overcrowded, they walked the last kilometre along the canal.\"\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.MOCK.LIARS",
+      "id": "MATH 1.MOCK.LIARS",
+      "title": "Knights and knaves — Quinn, Remy, Sage",
+      "chapter": 1,
+      "subsection": "1.4",
+      "context": "On an island every inhabitant is either a knight (always tells the truth) or a knave (always lies).\n\nThree inhabitants — Quinn, Remy, and Sage — make these statements:\n\nQuinn: “Exactly one of Remy and Sage is a knight.”\n\nRemy: “Quinn is a knave.”\n\nSage: “Remy is a knight.”\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Quinn is a knave.",
+        "Remy and Sage are both knights.",
+        "There is exactly one typing of the three that satisfies all three statements.",
+        "Sage’s statement is false.",
+        "If Remy’s statement were false, then Quinn would have to be a knight."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nStart from Remy. Remy says “Quinn is a knave.”\n\n**Case Remy is a knight.** Then Quinn really is a knave. Quinn’s claim is therefore false, so it is not true that exactly one of Remy and Sage is a knight. Remy is already a knight, so the only way “exactly one” fails is if Sage is also a knight (two knights among Remy and Sage). Sage says “Remy is a knight,” which is true — consistent with Sage being a knight.\n\n**Case Remy is a knave.** Then Remy’s claim is false, so Quinn is a knight. Quinn’s true claim forces exactly one of Remy and Sage to be a knight. Remy is a knave, so Sage must be a knight. But Sage (a knight) would then say “Remy is a knight,” which is false — contradiction.\n\nSo only the first case survives, and Quinn is a knave.\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom letter A the only consistent typing is Quinn knave, Remy knight, Sage knight. Both Remy and Sage are knights.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe Remy-knave branch dies (letter A). The Remy-knight branch forces Sage knight and Quinn knave uniquely. No second typing works.\n\nSo the statement is True.",
+        "**D.** → False\n\nIn the unique consistent typing Sage is a knight, so Sage’s statement is true, not false.\n\nSo the statement is False.",
+        "**E.** → True\n\nRemy asserts “Quinn is a knave.” If that assertion were false, Quinn would not be a knave, hence Quinn would be a knight. That follows from the meaning of Remy’s sentence alone (independent of which typing is actual).\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "**Setup.** Knight ⇒ statement true; knave ⇒ statement false. Branch on Remy first (his claim names Quinn’s type), then check Quinn’s “exactly one” and Sage’s claim about Remy.\n\n**Forcing.** Remy-knave collapses. Remy-knight forces Quinn knave and Sage knight.\n\n**Case table (K = knight / truth-teller, N = knave / always lies).**\n\n| Quinn | Remy | Sage | Quinn's claim | Remy's claim | Sage's claim | Consistent? |\n| --- | --- | --- | --- | --- | --- | --- |\n| N | K | K | false (two knights among Remy/Sage) | true (Quinn is N) | true (Remy is K) | **yes** |\n| K | N | K | would need exactly one of Remy/Sage as K — Remy N and Sage K gives one K, but then Sage (K) says “Remy is K”, which is false | — | — | no |\n| other rows | | | | | | eliminated by the same forcing |\n\nOnly one consistent typing survives: Quinn knave, Remy knight, Sage knight."
+    },
+    {
+      "case_id": "MATH 2.MOCK.THRESH",
+      "id": "MATH 2.MOCK.THRESH",
+      "title": "Algebra — root counts and number types",
+      "chapter": 2,
+      "subsection": "2.4",
+      "context": "Decide whether each algebraic claim about the number and type of real solutions is true or false.",
+      "statements": [
+        "The equation $(2x-1)(x+3)=x(x-5)+11$ has exactly two distinct real roots, and neither root is an integer.",
+        "Over $x\\ne 0$ and $x\\ne -4$, the equation $\\dfrac{3}{x}+\\dfrac{2}{x+4}=1$ has exactly two distinct real solutions, and both of them are positive integers.",
+        "Over $x\\ne 0$ and $x\\ne -1$, the equation $\\dfrac{x}{x+1}+\\dfrac{x+1}{x}=\\dfrac{17}{4}$ has exactly two distinct real solutions, and both of them are integers.",
+        "The equation $\\sqrt{2x+5}=x-1$ has exactly two distinct real solutions, and both of them are irrational.",
+        "Over $x\\ne\\pm 2$, the equation $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{1}{3}$ has exactly two distinct real roots; their sum is an integer, but neither root is rational."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nExpand the left-hand side carefully:\n\n$$\n(2x-1)(x+3)=2x\\cdot x+2x\\cdot 3-1\\cdot x-1\\cdot 3=2x^{2}+6x-x-3=2x^{2}+5x-3\n$$\n\nExpand the right-hand side:\n\n$$\nx(x-5)+11=x^{2}-5x+11\n$$\n\nBring everything to one side:\n\n$$\n2x^{2}+5x-3=x^{2}-5x+11\n$$\n\n$$\n2x^{2}+5x-3-x^{2}+5x-11=0\n$$\n\n$$\nx^{2}+10x-14=0\n$$\n\nThe discriminant is\n\n$$\n\\Delta=10^{2}-4\\cdot 1\\cdot(-14)=100+56=156=4\\cdot 39\n$$\n\nso there are exactly two distinct real roots\n\n$$\nx=\\dfrac{-10\\pm\\sqrt{156}}{2}=\\dfrac{-10\\pm 2\\sqrt{39}}{2}=-5\\pm\\sqrt{39}.\n$$\n\nSince $\\sqrt{36}=6$ and $\\sqrt{49}=7$, one has $\\sqrt{39}\\approx 6.245$, so the roots are approximately $1.245$ and $-11.245$. Neither is an integer.\n\nSo the statement is True.",
+        "**B.** → False\n\nClear the denominators by multiplying through by $x(x+4)$ (valid on the stated domain):\n\n$$\n3(x+4)+2x=x(x+4)\n$$\n\n$$\n3x+12+2x=x^{2}+4x\n$$\n\n$$\n5x+12=x^{2}+4x\n$$\n\n$$\n0=x^{2}-x-12=(x-4)(x+3)\n$$\n\nThe candidate solutions are $x=4$ and $x=-3$. Both lie in the domain ($x\\ne 0$, $x\\ne -4$), so there are exactly two distinct real solutions. However $-3$ is not a positive integer, so the claim that both solutions are positive integers fails.\n\nSo the statement is False.",
+        "**C.** → False\n\nCombine the left-hand side over the common denominator $x(x+1)$:\n\n$$\n\\dfrac{x^{2}+(x+1)^{2}}{x(x+1)}=\\dfrac{17}{4}\n$$\n\n$$\nx^{2}+(x^{2}+2x+1)=2x^{2}+2x+1\n$$\n\nCross-multiply (denominators nonzero on the domain):\n\n$$\n4(2x^{2}+2x+1)=17x(x+1)\n$$\n\n$$\n8x^{2}+8x+4=17x^{2}+17x\n$$\n\n$$\n0=9x^{2}+9x-4\n$$\n\nDiscriminant:\n\n$$\n\\Delta=81+144=225=15^{2}\n$$\n\n$$\nx=\\dfrac{-9\\pm 15}{18}\n$$\n\n$$\nx=\\dfrac{6}{18}=\\dfrac{1}{3},\\qquad x=\\dfrac{-24}{18}=-\\dfrac{4}{3}\n$$\n\nBoth lie in the domain. There are exactly two distinct real solutions, but neither $\\tfrac{1}{3}$ nor $-\\tfrac{4}{3}$ is an integer. The claim that both are integers is wrong.\n\nSo the statement is False.",
+        "**D.** → False\n\nA square root is nonnegative, so the right-hand side forces the domain restriction\n\n$$\nx-1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge 1\n$$\n\n(and also $2x+5\\ge 0$, which is weaker once $x\\ge 1$). Square both sides:\n\n$$\n2x+5=(x-1)^{2}=x^{2}-2x+1\n$$\n\n$$\n0=x^{2}-4x-4\n$$\n\n$$\nx=\\dfrac{4\\pm\\sqrt{16+16}}{2}=\\dfrac{4\\pm\\sqrt{32}}{2}=\\dfrac{4\\pm 4\\sqrt{2}}{2}=2\\pm 2\\sqrt{2}.\n$$\n\nNow check the domain $x\\ge 1$:\n\n$$\n2+2\\sqrt{2}\\approx 4.828\\ge 1\\qquad\\text{(keep)},\n$$\n\n$$\n2-2\\sqrt{2}\\approx -0.828\\ngeq 1\\qquad\\text{(discard)}.\n$$\n\nVerification for the kept root: $\\sqrt{2(2+2\\sqrt{2})+5}=\\sqrt{4+4\\sqrt{2}+5}=\\sqrt{9+4\\sqrt{2}}$ and $2+2\\sqrt{2}-1=1+2\\sqrt{2}$; these match after squaring back. So there is exactly one real solution (irrational), not two. The claim fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nCombine the left-hand side:\n\n$$\n\\dfrac{(x+2)+(x-2)}{(x-2)(x+2)}=\\dfrac{2x}{x^{2}-4}=\\dfrac{1}{3}\n$$\n\n$$\n6x=x^{2}-4\\qquad\\Rightarrow\\qquad x^{2}-6x-4=0\n$$\n\n$$\nx=\\dfrac{6\\pm\\sqrt{36+16}}{2}=\\dfrac{6\\pm\\sqrt{52}}{2}=\\dfrac{6\\pm 2\\sqrt{13}}{2}=3\\pm\\sqrt{13}.\n$$\n\nBoth roots avoid $\\pm 2$ (since $\\sqrt{13}\\approx 3.606$, the roots are about $6.606$ and $-0.606$). Their sum is\n\n$$\n(3+\\sqrt{13})+(3-\\sqrt{13})=6,\n$$\n\nan integer. Neither root is rational, because $\\sqrt{13}$ is irrational.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve each equation fully (clear denominators, expand, or square with domain checks), then adjudicate the claimed root count and the integer/rational/irrational type of each root."
+    },
+    {
+      "case_id": "MATH 11.112",
+      "id": "math-11-112",
+      "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
+      "chapter": 3,
+      "subsection": "3.6",
+      "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules.\n\nSchedule I: pay USD 850,000 in cash immediately.\n\nSchedule II: pay USD 140,000 per year for 9 years, with the first instalment paid immediately.\n\nSchedule III: pay USD 300,000 in cash immediately, plus USD 80,000 per year for 11 years, with the first of these instalments paid one year later.\n\nThe hospital wants to know which schedule is cheapest in present-value terms at the stated annual discount rates.",
+      "statements": [
+        "At an 8% annual rate, the present value of Schedule II is approximately USD 944,529.45.",
+        "At an 8% annual rate, the present value of Schedule III is approximately USD 871,117.14.",
+        "At an 8% annual rate, Schedule I is the cheapest of the three schedules.",
+        "At a 12% annual rate, the present value of Schedule III is approximately USD 775,015.93.",
+        "At a 12% annual rate, Schedule II becomes the cheapest of the three schedules."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPresent value discounts a future payment through the accumulation factor:\n\n$$\n\\mathrm{PDV} = K(1+r)^{-t}\n$$\n\nSubstitute the stem numbers recovered in the overview:\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr]\n$$\n\n$$\\approx 944,529.45$$\n\nThe computed value is approximately USD 944,529.45, which matches the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nDiscount the future cash amount with the recovered factor.\n\n$$\n\\mathrm{PDV} = K(1+r)^{-t}\n$$\n\nSubstitute the stem numbers recovered in the overview:\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr]\n$$\n\n$$\\approx 871,117.14$$\n\nThe computed value is approximately USD 871,117.14, which matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nApply the financial identity that produces the quantity named in the claim:\n\nUsing the recovered solution values $PV_{\\mathrm{II}} \\approx 944,529$ and $PV_{\\mathrm{III}} \\approx 871,117$ at $8\\%$ as inputs for this claim:\n\nSchedule I is USD 850,000. Then\n\n$$850,000 < 871,117 < 944,529$$\n\nSchedule I is cheapest at $8\\%$.\n\nThe computed figure matches the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nWrite the present-value formula before substituting.\n\n$$\n\\mathrm{PDV} = K(1+r)^{-t}\n$$\n\nSubstitute the stem numbers recovered in the overview:\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr]\n$$\n\n$$\\approx 775,015.93$$\n\nThe computed value is approximately USD 775,015.93, which matches the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nApply the financial identity that produces the quantity named in the claim:\n\nUsing the recovered solution values $PV_{\\mathrm{III}} \\approx 775,016$ and $PV_{\\mathrm{II}} \\approx 835,470$ at $12\\%$ as inputs for this claim:\n\nThen\n\n$$775,016 < 835,470 < 850,000$$\n\nSchedule III is cheapest at $12\\%$, not II.\n\nThe computed figure does not match the claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "A hospital system is choosing among three payment schedules for an imaging center. Schedule I: USD 850,000 cash immediately. Schedule II: USD 140,000 per year for $9$ years, first instalment immediate. Schedule III: USD 300,000 cash immediately plus USD 80,000 per year for $11$ years, first of these instalments one year later. Compare present values at $8\\%$ and at $12\\%$.\n\n**Part 1: Setup.**\n\n$$\na_{\\mathrm{II}} = 140,000,\n$$\n\n$$\nn_{\\mathrm{II}} = 9\n$$\n\n$$\na_{\\mathrm{III}} = 80,000,\n$$\n\n$$\nn_{\\mathrm{III}} = 11\n$$\n\nThe rates are $r=0.08$ and $r=0.12$. Schedule I is USD 850,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\nSchedule III is cash plus an ordinary annuity:\n\nAt $8\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 944,529.45\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 871,117.14\n$$\n\nAt $12\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.12}\\bigl[1-(1.12)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 835,470\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 775,015.93\n$$"
+    },
+    {
+      "case_id": "MATH 4.MOCK.ANTIFILL",
+      "id": "MATH 4.MOCK.ANTIFILL",
+      "title": "Hard equations — ages, frame, trip, absolute value, log₂",
+      "chapter": 4,
+      "subsection": "4.5",
+      "context": "Decide whether each applied equation claim is true or false.",
+      "statements": [
+        "A courier is $28$ years older than a trainee. In $4$ years the courier will be twice as old as the trainee will be then. A planner concludes that the trainee is now strictly younger than $20$.",
+        "A $40\\ \\mathrm{cm}$ by $24\\ \\mathrm{cm}$ print is mounted with a uniform frame so that the framed outer area is $2.5$ times the print area. The frame width is then strictly less than $5\\ \\mathrm{cm}$.",
+        "A driver covers $18\\ \\mathrm{km}$ at $12\\ \\mathrm{km/h}$ and then $24\\ \\mathrm{km}$ at $16\\ \\mathrm{km/h}$. The whole trip therefore takes strictly less than $2.8$ hours.",
+        "Every real solution of $|2x-5|=x+4$ is strictly larger than $0$.",
+        "Over $x>2$, the equation $\\log_{2}(x)+\\log_{2}(x-2)=3$ has a solution strictly smaller than $3.5$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $t$ be the trainee’s present age in years. Then the courier is now $t+28$.\n\nIn $4$ years the trainee will be $t+4$ and the courier will be $t+28+4=t+32$. The planner’s age relation becomes the equation\n\n$$\nt+32=2(t+4)\n$$\n\nExpand the right-hand side:\n\n$$\nt+32=2t+8\n$$\n\nBring the $t$-terms to one side and the constants to the other:\n\n$$\n32-8=2t-t\\qquad\\Rightarrow\\qquad 24=t\n$$\n\nSo the trainee is now $24$ years old, which is not strictly younger than $20$. The planner’s conclusion is wrong.\n\nSo the statement is False.",
+        "**B.** → False\n\nLet $w>0$ be the uniform frame width in centimetres. The outer rectangle measures $(40+2w)$ by $(24+2w)$. Its area is $2.5$ times the print area $40\\cdot 24=960$:\n\n$$\n(40+2w)(24+2w)=2.5\\cdot 960=2400\n$$\n\nExpand the left-hand side:\n\n$$\n40\\cdot 24+40\\cdot 2w+2w\\cdot 24+2w\\cdot 2w=960+80w+48w+4w^{2}\n$$\n\n$$\n4w^{2}+128w+960=2400\n$$\n\n$$\n4w^{2}+128w-1440=0\n$$\n\nDivide by $4$:\n\n$$\nw^{2}+32w-360=0\n$$\n\nDiscriminant:\n\n$$\n\\Delta=32^{2}+4\\cdot 360=1024+1440=2464=16\\cdot 154\n$$\n\nAlternatively keep $\\Delta=1024+1440=2464$ and note $w=-16\\pm\\sqrt{256+360}=-16\\pm\\sqrt{616}$ after completing the square form $w^{2}+32w=360$. The positive root is\n\n$$\nw=-16+\\sqrt{616}.\n$$\n\nSince $\\sqrt{576}=24$ and $\\sqrt{625}=25$, one has $\\sqrt{616}\\approx 24.82$, so\n\n$$\nw\\approx -16+24.82=8.82\\nless 5\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\nTime equals distance divided by speed. First leg:\n\n$$\nt_{1}=\\dfrac{18\\ \\mathrm{km}}{12\\ \\mathrm{km/h}}=\\dfrac{18}{12}=\\dfrac{3}{2}=1.5\\ \\mathrm{h}\n$$\n\nSecond leg:\n\n$$\nt_{2}=\\dfrac{24\\ \\mathrm{km}}{16\\ \\mathrm{km/h}}=\\dfrac{24}{16}=\\dfrac{3}{2}=1.5\\ \\mathrm{h}\n$$\n\nTotal time:\n\n$$\nt=t_{1}+t_{2}=1.5+1.5=3\\ \\mathrm{h}\n$$\n\nCompare with the claimed threshold:\n\n$$\n3\\nless 2.8\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nSplit into the two absolute-value cases.\n\n**Case** $2x-5=x+4$: then $x=9$. Check $x+4=13\\ge 0$ (needed if one thinks of $|A|=B$ with $B\\ge 0$); the candidate satisfies the original equation because $|18-5|=13$ and $9+4=13$.\n\n**Case** $2x-5=-(x+4)$: then $2x-5=-x-4$, so $3x=1$ and $x=\\dfrac{1}{3}$. Check: $\\bigl|\\tfrac{2}{3}-5\\bigr|=\\bigl|-\\tfrac{13}{3}\\bigr|=\\tfrac{13}{3}$ and $\\tfrac{1}{3}+4=\\tfrac{13}{3}$. Valid.\n\nBoth real solutions satisfy $x>0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe logarithms are defined only when every argument is positive. Together with the stated restriction $x>2$, the domain is simply $x>2$.\n\nOn that domain the sum-to-product rule for base-$2$ logs turns the equation into\n\n$$\n\\log_{2}\\bigl(x(x-2)\\bigr)=3\n$$\n\nInjectivity of $\\log_{2}$ (or writing $2^{3}=8$) gives\n\n$$\nx(x-2)=8\\qquad\\Rightarrow\\qquad x^{2}-2x-8=0\\qquad\\Rightarrow\\qquad (x-4)(x+2)=0\n$$\n\nOnly $x=4$ lies in $x>2$. Compare with the threshold:\n\n$$\n4\\nless 3.5\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Set up and solve five independent equation stories, then accept or reject the claimed conclusion. Intermediate roots and quadratics are not printed in the claim text."
+    },
+    {
+      "case_id": "MATH 5.MOCK.BLEND",
+      "id": "MATH 5.MOCK.BLEND",
+      "title": "Three-stream octane blend with a policy ratio",
+      "chapter": 5,
+      "subsection": "5.5",
+      "context": "A refinery blends light distillate ($90\\%$ octane index), mid-grade ($70\\%$), and naphtha ($40\\%$) into a finished fuel that must be exactly $200$ litres at $72\\%$ octane.\n\nLight distillate costs EUR $2.40$ per litre, mid-grade EUR $1.80$ per litre, and naphtha EUR $1.20$ per litre.\n\nPolicy constraint: the blend must use exactly twice as much mid-grade as light distillate.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "In the unique blend that meets the volume, octane, and policy targets, more than $55$ litres of light distillate must be used.",
+        "That blend uses strictly less than $20$ litres of naphtha.",
+        "The total material cost of that $200$-litre blend exceeds EUR $370$.",
+        "If the policy were changed to equal volumes of light distillate and mid-grade (keeping the $200$-litre and $72\\%$ octane targets), the naphtha volume would increase.",
+        "Under the original policy, mid-grade accounts for more than $55\\%$ of the finished blend by volume."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $L$, $M$, $N$ be litres of light, mid-grade, and naphtha. The three conditions are\n\n$$\nL+M+N=200\n$$\n\n$$\n0.9L+0.7M+0.4N=0.72\\cdot 200=144\n$$\n\n$$\nM=2L\n$$\n\nSubstitute $M=2L$ into the mass balance: $3L+N=200$, so $N=200-3L$. Octane balance:\n\n$$\n0.9L+0.7(2L)+0.4(200-3L)=144\n$$\n\n$$\n0.9L+1.4L+80-1.2L=144\n$$\n\n$$\n(0.9+1.4-1.2)L+80=144\n$$\n\n$$\n1.1L=64\\qquad\\Rightarrow\\qquad L=\\dfrac{64}{1.1}=\\dfrac{640}{11}\\approx 58.18\n$$\n\nCompare with the threshold:\n\n$$\n58.18>55\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nFrom A, $N=200-3L=200-\\dfrac{1920}{11}=\\dfrac{2200-1920}{11}=\\dfrac{280}{11}\\approx 25.45$.\n\n$$\n25.45\\nless 20\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\nWith $L=\\dfrac{640}{11}$, $M=\\dfrac{1280}{11}$, $N=\\dfrac{280}{11}$:\n\n$$\n\\text{cost}=2.40L+1.80M+1.20N=\\dfrac{2.4\\cdot 640+1.8\\cdot 1280+1.2\\cdot 280}{11}\n$$\n\n$$\n=\\dfrac{1536+2304+336}{11}=\\dfrac{4176}{11}\\approx 379.64\n$$\n\n$$\n379.64>370\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nNow impose $M=L$ with the same volume and octane targets:\n\n$$\n2L+N=200,\\qquad 0.9L+0.7L+0.4N=144\n$$\n\n$$\n1.6L+0.4N=144\n$$\n\nMultiply by $5$ to clear decimals: $8L+2N=720$, or divide the displayed equation by $0.4$:\n\n$$\n4L+N=360\n$$\n\nSubtract $2L+N=200$:\n\n$$\n2L=160\\qquad\\Rightarrow\\qquad L=80,\\quad N=40,\\quad M=80\n$$\n\nOriginal naphtha was $\\dfrac{280}{11}\\approx 25.45$; the new naphtha is $40$. Naphtha volume increases.\n\nSo the statement is True.",
+        "**E.** → True\n\nMid-grade volume is $M=\\dfrac{1280}{11}$. As a share of $200$:\n\n$$\n\\dfrac{M}{200}=\\dfrac{1280}{11\\cdot 200}=\\dfrac{1280}{2200}=\\dfrac{32}{55}\\approx 0.5818=58.18\\%\n$$\n\n$$\n58.18\\%>55\\%\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve the $3\\times 3$ blend (volume, octane, $M=2L$), price materials in euros written outside math mode, then compare the equal-light/mid counterfactual and the mid-grade volume share."
+    },
+    {
+      "case_id": "MATH 6.55",
+      "id": "math-6-55",
+      "title": "Compound & Special Inequalities — 18",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Decide whether each inequality claim is true or false. Claims state full solution sets — check every boundary point and every compound piece carefully (absolute values, radicals, and quadratic sandwiches).",
+      "statements": [
+        "The solution set of the inequality $|4x - 1| \\ge |x + 5|$ is $x \\le -0.8$ or $x \\ge 2$.",
+        "The inequality $-4 \\le x^{2} - 2x - 3 < 5$ has solution set $(-2, 4)$.",
+        "The solution set of the inequality $\\sqrt{x + 4} < \\sqrt{3x + 7} - 1$ is $x > \\dfrac{-1 - \\sqrt{13}}{2}$.",
+        "The solution set of the inequality $|x^{2} - 5x + 2| > 4$ is $x < \\dfrac{5 - \\sqrt{33}}{2}$ or ${2 < x < 3}$ or $x > \\dfrac{5 + \\sqrt{33}}{2}$.",
+        "The inequality $-5 \\le x^{2} - 6x + 4 < 4$ has solution set $(0, 6)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nStart from the absolute-value inequality.\n\n$$\n|{4 x - 1}|\\ge |{x + 5}|\n$$\n\nBoth sides are nonnegative absolute values, so squaring is equivalence-preserving.\n\n$$\n(4 x - 1)^{2}\\ge (x + 5)^{2}\n$$\n\n$$\n15 x^{2} - 18 x - 24\\ge 0\n$$\n\n$$\n3 (x - 2) (5 x + 4)\\ge 0\n$$\n\n$$\nx=- \\frac{4}{5}\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $3 (5 x^{2} - 6 x - 8)$ |\n| --- | --- |\n| $(-\\infty,- \\frac{4}{5})$ | $+$ |\n| $(- \\frac{4}{5},2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, - \\frac{4}{5}] \\cup [2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**B.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-4\\le (x^{2} - 2 x) - 3<5\n$$\n\n**Left piece.**\n\n$$\n-4\\le (x^{2} - 2 x) - 3\n$$\n\n$$\nx^{2} - 2 x + 1\\ge 0\n$$\n\n$$\n(x - 1)^{2}\\ge 0\n$$\n\n$$\nx=1\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x + 1$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 2 x) - 3<5\n$$\n\n$$\nx^{2} - 2 x - 8<0\n$$\n\n$$\n(x - 4) (x + 2)<0\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(-2, 4)\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**C.** → False\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 4}<\\sqrt{3 x + 7} - 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 4\\ge 0\n$$\n\n$$\nx\\in [-4, \\infty)\n$$\n\n$$\n3 x + 7\\ge 0\n$$\n\n$$\nx\\in [- \\frac{7}{3}, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 4<3 x - 2 \\sqrt{3 x + 7} + 8\n$$\n\n$$\n- 2 x + 2 \\sqrt{3 x + 7} - 4<0\n$$\n\n$$\n- 2 (x - \\sqrt{3 x + 7} + 2)<0\n$$\n\n$$\nx=- \\frac{1}{2} + \\frac{\\sqrt{13}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $2 (- x + \\sqrt{3 x + 7} - 2)$ |\n| --- | --- |\n| $(-\\infty,- \\frac{1}{2} + \\frac{\\sqrt{13}}{2})$ | $+$ |\n| $(- \\frac{1}{2} + \\frac{\\sqrt{13}}{2},\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(- \\frac{1}{2} + \\frac{\\sqrt{13}}{2}, \\infty)\n$$\n\nwhich does not match the claimed set $x > \\dfrac{-1 - \\sqrt{13}}{2}$.\n\nSo the statement is False.",
+        "**D.** → True\n\nStart from the radical inequality.\n\n$$\nx<\\frac{5 - \\sqrt{33}}{2}\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n33\\ge 0\n$$\n\n$$\nx\\in \\mathbb{R}\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx^{2}<\\frac{29}{2} - \\frac{5 \\sqrt{33}}{2}\n$$\n\n$$\nx^{2} - \\frac{29}{2} + \\frac{5 \\sqrt{33}}{2}<0\n$$\n\n$$\n\\frac{2 x^{2} - 29 + 5 \\sqrt{33}}{2}<0\n$$\n\n$$\nx=- \\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2}\n$$\n\n$$\nx=\\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{2 x^{2} - 29 + 5 \\sqrt{33}}{2}$ |\n| --- | --- |\n| $(-\\infty,- \\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2})$ | $+$ |\n| $(- \\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2},\\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2})$ | $-$ |\n| $(\\frac{\\sqrt{58 - 10 \\sqrt{33}}}{2},\\infty)$ | $+$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(-\\infty, \\frac{5}{2} - \\frac{\\sqrt{33}}{2})\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**E.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-5\\le (x^{2} - 6 x) + 4<4\n$$\n\n**Left piece.**\n\n$$\n-5\\le (x^{2} - 6 x) + 4\n$$\n\n$$\nx^{2} - 6 x + 9\\ge 0\n$$\n\n$$\n(x - 3)^{2}\\ge 0\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 9$ |\n| --- | --- |\n| $(-\\infty,3)$ | $+$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 6 x) + 4<4\n$$\n\n$$\nx^{2} - 6 x<0\n$$\n\n$$\nx (x - 6)<0\n$$\n\n$$\nx=0\n$$\n\n$$\nx=6\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x - 6)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(0, 6)\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Absolute value vs. absolute value inequality; Compound (double) quadratic inequality; Radical inequality (difference of two square roots, double squaring)."
+    },
+    {
+      "case_id": "MATH 7.MOCK.TWOPT",
+      "id": "MATH 7.MOCK.TWOPT",
+      "title": "Reconstruct a parabola from two points and a horizontal tangent",
+      "chapter": 7,
+      "subsection": "7.3",
+      "context": "A quadratic $g(x)=ax^{2}+bx+c$ passes through the two points $A(0,5)$ and $B(6,-7)$.\n\nAt the abscissa $x=2$ the tangent to $y=g(x)$ is horizontal, i.e. $g'(2)=0$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "After recovering $a$, $b$, and $c$, the product of the two roots of $g(x)=0$ is strictly less than $-4$.",
+        "The maximum value of $g$ on $\\mathbb{R}$ is strictly larger than $8$.",
+        "The value $g(3)$ is a strictly positive integer.",
+        "The abscissa at which the tangent is horizontal is strictly smaller than $1.5$.",
+        "The absolute value of the slope of the chord through $A$ and $B$ is strictly larger than $3$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite $g(x)=ax^{2}+bx+c$. The point $A(0,5)$ forces\n\n$$\ng(0)=c=5.\n$$\n\nDifferentiate: $g'(x)=2ax+b$. The horizontal-tangent condition $g'(2)=0$ is\n\n$$\n4a+b=0\\qquad\\Rightarrow\\qquad b=-4a.\n$$\n\nThe point $B(6,-7)$ gives\n\n$$\ng(6)=36a+6b+5=-7\n$$\n\n$$\n36a+6b=-12\\qquad\\Rightarrow\\qquad 6a+b=-2.\n$$\n\nSubstitute $b=-4a$:\n\n$$\n6a-4a=-2\\qquad\\Rightarrow\\qquad 2a=-2\\qquad\\Rightarrow\\qquad a=-1.\n$$\n\nThen $b=-4(-1)=4$ and $c=5$, so\n\n$$\ng(x)=-x^{2}+4x+5.\n$$\n\nSolve $g(x)=0$:\n\n$$\n-x^{2}+4x+5=0\\qquad\\Rightarrow\\qquad x^{2}-4x-5=0\\qquad\\Rightarrow\\qquad (x-5)(x+1)=0.\n$$\n\nThe roots are $x=5$ and $x=-1$. Their product is\n\n$$\n5\\cdot(-1)=-5<-4.\n$$\n\n(Alternatively, for $-x^{2}+4x+5=0$ divide by $-1$ and use Vieta on $x^{2}-4x-5=0$: product $=-5$.)\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom A the recovered quadratic is $g(x)=-x^{2}+4x+5$. Complete the square:\n\n$$\ng(x)=-\\bigl(x^{2}-4x\\bigr)+5=-\\bigl((x-2)^{2}-4\\bigr)+5=-(x-2)^{2}+4+5\n$$\n\n$$\n=-(x-2)^{2}+9.\n$$\n\nThe squared term is always $\\ge 0$, and it carries a minus sign in front, so $g(x)\\le 9$ for every real $x$, with equality only at $x=2$. The global maximum value is therefore $9$. Compare with the claim:\n\n$$\n9>8.\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nSubstitute $x=3$ into the recovered formula from A:\n\n$$\ng(3)=-(3)^{2}+4\\cdot 3+5=-9+12+5=8.\n$$\n\nThe value $8$ is an integer, and $8>0$, so it is a strictly positive integer.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe setup already states that the tangent is horizontal at $x=2$, and letter A recovered $g'(x)=-2x+4$ with $g'(2)=0$ consistently. The claim asks whether that abscissa is strictly smaller than $1.5$:\n\n$$\n2\\nless 1.5.\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\nThe chord through the two given points $A(0,5)$ and $B(6,-7)$ has slope\n\n$$\nm_{AB}=\\dfrac{y_B-y_A}{x_B-x_A}=\\dfrac{-7-5}{6-0}=\\dfrac{-12}{6}=-2.\n$$\n\nIts absolute value is\n\n$$\n\\bigl|m_{AB}\\bigr|=\\lvert -2\\rvert=2.\n$$\n\nThe claim asks whether this absolute value is strictly larger than $3$:\n\n$$\n2\\ngtr 3.\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Recover $a,b,c$ from $g(0)=5$, $g(6)=-7$, and $g'(2)=0$, then adjudicate roots, vertex value, $g(3)$, the tangent abscissa, and the chord slope."
+    },
+    {
+      "case_id": "MATH 8.83",
+      "id": "math-8-83",
+      "title": "Oxygen Demand and Gill Area in a Hatchery",
+      "chapter": 8,
+      "subsection": "8",
+      "context": "A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. An $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Oxygen demand grows more slowly than body mass.",
+        "Oxygen demand per square centimetre of gill falls as the fish grows.",
+        "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+        "A $256$ g fish already demands more than $300$ millilitres per hour.",
+        "$16$ fish of $16$ g together still demand under $600$ millilitres per hour."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe overview recovered demand exponent\n\n$$\\frac{3}{4}$$\n\n. Demand lags mass when that exponent sits below $1$.\n\n$$\\frac{3}{4}<1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is\n\n.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nForm the ratio so the unknown positive coefficient cancels.\n\nOxygen demand per square centimetre of gill is the ratio of the two recovered laws:\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}$$\n\nThe leftover exponent\n\n$$\\frac{1}{12}$$\n\n is positive, so intensity rises as the fish grows, rather than falling.\n\nDemand per unit gill area climbs.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe overview recovered\n\n$$G(m)=3m^{\\frac{2}{3}}$$\n\n Two $16$ g fish have total gill area\n\n$$2G(16)=6\\cdot 16^{\\frac{2}{3}}$$\n\n$$2G(16)=96^{\\frac{2}{3}}$$\n\n$$2G(16)=24\\cdot 2^{\\frac{2}{3}}$$\n\nOne $32$ g fish has\n\n$$G(32)=3\\cdot 32^{\\frac{2}{3}}$$\n\n$$G(32)=96^{\\frac{2}{3}}$$\n\n$$G(32)=24\\cdot 2^{\\frac{1}{3}}$$\n\nBecause\n\n$$2^{\\frac{2}{3}}\\neq 2^{\\frac{1}{3}}$$\n\n, the two totals are not equal. The exponent\n\n$$\\frac{2}{3}<1$$\n\n makes splitting mass raise total area.\n\nTwo $16$ g fish out-area one $32$ g fish.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe overview recovered\n\n$$D(m)=5m^{\\frac{3}{4}}$$\n\nAt $256$ g:\n\n$$D(256)=5\\cdot 256^{\\frac{3}{4}}$$\n\n$$256^{\\frac{3}{4}}=\\bigl(256^{\\frac{1}{4}}\\bigr)^{3}$$\n\n$$256^{\\frac{1}{4}}=4$$\n\n$$4^{3}=64$$\n\n$$D(256)=5\\cdot 64$$\n\n$$D(256)=320$$\n\n$$D(256)=1280^{\\frac{3}{4}}$$\n\n$$256^{\\frac{1}{4}}=\\bigl(256^{\\frac{1}{4}}\\bigr)^{1}$$\n\n$$4^{1}=4$$\n\nThe claim is that this already sits above $300$. We have $320>300$.\n\nSo the statement is True.",
+        "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nA tank total adds individual demands. Sixteen fish of $16$ g each demand\n\n$$16\\cdot D(16)=16\\cdot 5\\cdot 16^{\\frac{3}{4}}$$\n\n$$16^{\\frac{3}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{3}$$\n\n$$16^{\\frac{1}{4}}=2$$\n\n$$2^{3}=8$$\n\n$$16\\cdot D(16)=16\\cdot 5\\cdot 8$$\n\n$$16\\cdot D(16)=80\\cdot 16^{\\frac{3}{4}}$$\n\n$$16\\cdot D(16)=1280^{\\frac{3}{4}}$$\n\n$$16^{\\frac{1}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{1}$$\n\n$$2^{1}=2$$\n\n$$16\\cdot D(16)=80\\cdot 8$$\n\n$$16\\cdot D(16)=640$$\n\n$$16\\cdot D(16)=16\\cdot 40$$\n\nThe claim is that this still sits under $600$. We have $640>600$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Oxygen demand follows $D(m)=Am^{\\frac{3}{4}}$ millilitres per hour and gill area follows $G(m)=Bm^{\\frac{2}{3}}$ square centimetres, for body mass $m>0$ grams. An $81$ g fish demands $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. Tank totals add individual demands.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand, and $G$ = gill area. Both exponents are given, so each law needs one record: a difference for demand and a level for gill area.\n\n**1. Translate: the demand gap.**\n\n$$A\\bigl(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\bigr)=95 \\tag{1}$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48 \\tag{2}$$\n\n**Part 2: Solve.**\n\nThe shape factors are exact:\n\n$$81^{\\frac{3}{4}}=27, \\qquad 16^{\\frac{3}{4}}=8$$\n\nso $(1)$ is $19A=95$ and $A=5$. Likewise\n\n$$64^{\\frac{2}{3}}=16$$\n\nso $(2)$ is $16B=48$ and $B=3$.\n\nThe recovered laws are $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$.\n\n**Answer.** $A=5$ | $B=3$ | $D(m)=5m^{\\frac{3}{4}}$ | $G(m)=3m^{\\frac{2}{3}}$"
+    },
+    {
+      "case_id": "MATH 9.MOCK.INV",
+      "id": "MATH 9.MOCK.INV",
+      "title": "Cubic inventory deviation — critical points and thresholds",
+      "chapter": 9,
+      "subsection": "9.3",
+      "context": "A warehouse inventory deviation (tonnes relative to target) is modelled by\n\n$$\np(t)=t^{3}-12t^{2}+36t-10\n$$\n\non the closed window $0\\le t\\le 10$, with $t$ in hours.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The product of the three real roots of $p(t)=0$ (allowing roots outside the window) is strictly positive.",
+        "On the open interval between the two critical points, the inventory deviation is strictly decreasing.",
+        "At $t=1$, the instantaneous slope $p'(1)$ is strictly larger than $15$.",
+        "The larger critical abscissa exceeds $5.5$, and the deviation there is strictly negative.",
+        "Over the closed window $[0,10]$, the highest deviation value exceeds $140$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite $p(t)=t^{3}-12t^{2}+36t-10$. Differentiate:\n\n$$\np'(t)=3t^{2}-24t+36=3(t^{2}-8t+12)=3(t-2)(t-6).\n$$\n\nThere are two critical points $t=2$ and $t=6$, with\n\n$$\np(2)=8-48+72-10=22>0,\\qquad p(6)=216-432+216-10=-10<0.\n$$\n\nCombined with $p(t)\\to-\\infty$ as $t\\to-\\infty$ and $p(t)\\to+\\infty$ as $t\\to+\\infty$, the cubic has three distinct real roots. For a monic cubic $t^{3}+At^{2}+Bt+C=0$ Vieta gives product of roots equal to $-C$. Here $C=-10$, so the product is $10>0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nBecause the leading coefficient of $p'$ is positive, $p'(t)<0$ strictly between the roots $t=2$ and $t=6$. Hence $p$ is strictly decreasing on $(2,6)$.\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\np'(1)=3(1)^{2}-24(1)+36=3-24+36=15.\n$$\n\nThe claim asks for a slope strictly larger than $15$, but $15\\ngtr 15$.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe larger critical abscissa is $t=6>5.5$, and from A one has $p(6)=-10<0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nEvaluate at the critical points and endpoints:\n\n$$\np(0)=-10,\\qquad p(2)=22,\\qquad p(6)=-10,\\qquad p(10)=1000-1200+360-10=150.\n$$\n\nThe highest value on $[0,10]$ is $150>140$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Differentiate the cubic, locate critical points by factoring $p'$, use Vieta for the product of roots, then compare slopes and endpoint values with the claimed thresholds."
+    },
+    {
+      "case_id": "MATH 10.MOCK.COOL",
+      "id": "MATH 10.MOCK.COOL",
+      "title": "Newton cooling — one model, long chained calculations",
+      "chapter": 10,
+      "subsection": "10.3",
+      "context": "A metal billet cools in a room held at $15^{\\circ}\\mathrm{C}$ according to Newton’s law\n\n$$\nT(t)=15+85\\,e^{-kt}\n$$\n\nwith $t$ in minutes. At $t=3$ the measured temperature is $T(3)=72^{\\circ}\\mathrm{C}$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The continuous cooling constant satisfies $k>0.12$.",
+        "The time needed for the temperature excess over $15^{\\circ}\\mathrm{C}$ to halve is strictly less than $5$ minutes.",
+        "After $9$ minutes the temperature is still strictly above $42^{\\circ}\\mathrm{C}$.",
+        "The billet first reaches $40^{\\circ}\\mathrm{C}$ at some time strictly larger than $9$ minutes.",
+        "The temperature at $t=6$ lies strictly between $52^{\\circ}\\mathrm{C}$ and $54^{\\circ}\\mathrm{C}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSubstitute the calibration $T(3)=72$ into the cooling law:\n\n$$\n15+85\\,e^{-3k}=72\n$$\n\n$$\n85\\,e^{-3k}=57\\qquad\\Rightarrow\\qquad e^{-3k}=\\dfrac{57}{85}\n$$\n\nTake the natural logarithm (and multiply by $-1/3$):\n\n$$\nk=\\dfrac{1}{3}\\ln\\dfrac{85}{57}.\n$$\n\nNumerically $85/57\\approx 1.4912$ and $\\ln 1.4912\\approx 0.3996$, so\n\n$$\nk\\approx\\dfrac{0.3996}{3}\\approx 0.1332>0.12.\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe temperature excess over $15^{\\circ}\\mathrm{C}$ is $85\\,e^{-kt}$. It halves when $e^{-kt}=\\tfrac{1}{2}$, i.e.\n\n$$\nt_{1/2}=\\dfrac{\\ln 2}{k}.\n$$\n\nUsing $k\\approx 0.1332$ from A and $\\ln 2\\approx 0.6931$,\n\n$$\nt_{1/2}\\approx\\dfrac{0.6931}{0.1332}\\approx 5.20.\n$$\n\nThe claim says this time is strictly less than $5$ minutes, but\n\n$$\n5.20\\nless 5.\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\nAfter $9=3\\cdot 3$ minutes the exponential factor is the cube of the three-minute factor $57/85$:\n\n$$\nT(9)=15+85\\,e^{-9k}=15+85\\left(e^{-3k}\\right)^{3}=15+85\\left(\\dfrac{57}{85}\\right)^{3}.\n$$\n\nCompute the power:\n\n$$\n\\left(\\dfrac{57}{85}\\right)^{2}=\\dfrac{3249}{7225},\\qquad \\left(\\dfrac{57}{85}\\right)^{3}=\\dfrac{3249\\cdot 57}{7225\\cdot 85}=\\dfrac{185193}{614125}.\n$$\n\nThen\n\n$$\n85\\left(\\dfrac{57}{85}\\right)^{3}=\\dfrac{185193}{7225}\\approx 25.632,\n$$\n\nso\n\n$$\nT(9)\\approx 15+25.632=40.632.\n$$\n\nCompare with the threshold $42$:\n\n$$\n40.632\\ngtr 42.\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve $T(t)=40$:\n\n$$\n15+85\\,e^{-kt}=40\\qquad\\Rightarrow\\qquad e^{-kt}=\\dfrac{25}{85}=\\dfrac{5}{17}\n$$\n\n$$\nt=\\dfrac{1}{k}\\ln\\dfrac{17}{5}.\n$$\n\nWith $\\ln(17/5)=\\ln 3.4\\approx 1.2238$ and $k\\approx 0.1332$,\n\n$$\nt\\approx\\dfrac{1.2238}{0.1332}\\approx 9.19>9.\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nAt $t=6=2\\cdot 3$ the exponential factor is the square of $57/85$:\n\n$$\nT(6)=15+85\\left(\\dfrac{57}{85}\\right)^{2}=15+85\\cdot\\dfrac{3249}{7225}=15+\\dfrac{3249}{85}.\n$$\n\n$$\n\\dfrac{3249}{85}=38.2235\\ldots\\qquad\\Rightarrow\\qquad T(6)\\approx 15+38.2235=53.2235.\n$$\n\nThis lies strictly between $52$ and $54$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Recover $k$ from the single calibration $T(3)=72$, then chain half-excess time, $T(9)$, the hitting time of $40^{\\circ}\\mathrm{C}$, and $T(6)$ from the same exponential factor $57/85$."
+    },
+    {
+      "case_id": "MATH 11.MOCK.CHAIN",
+      "id": "MATH 11.MOCK.CHAIN",
+      "title": "Intertwined ln–exp pair — product, chain, and quotient",
+      "chapter": 11,
+      "subsection": "11.4",
+      "context": "For $x>-\\tfrac{1}{2}$ define the intertwined pair\n\n$$\nf(x)=\\ln(2x+1)\\,e^{-x},\\qquad g(x)=\\dfrac{f(x)}{x^{2}+4}=\\dfrac{\\ln(2x+1)\\,e^{-x}}{x^{2}+4}.\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The function $f$ has a critical point in the open interval $(0.5,0.8)$.",
+        "That critical point of $f$ in $(0.5,0.8)$ is a local maximum of $f$.",
+        "The value $g(1)$ is strictly larger than $0.09$.",
+        "The derivative $g'(0)$ is strictly positive.",
+        "At every critical point of $f$, the function $g$ is automatically stationary as well (i.e. $g'=0$ wherever $f'=0$)."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDifferentiate $f$ with the product rule and the chain rule on $\\ln(2x+1)$:\n\n$$\nf'(x)=\\left(\\dfrac{2}{2x+1}\\right)e^{-x}+\\ln(2x+1)\\cdot\\bigl(-e^{-x}\\bigr)\n$$\n\n$$\n=e^{-x}\\left(\\dfrac{2}{2x+1}-\\ln(2x+1)\\right).\n$$\n\nSince $e^{-x}>0$ always, the sign of $f'$ matches the sign of $\\dfrac{2}{2x+1}-\\ln(2x+1)$.\n\nEvaluate at the endpoints of the claimed interval.\n\nAt $x=0.5$:\n\n$$\n\\dfrac{2}{2\\cdot 0.5+1}-\\ln(2\\cdot 0.5+1)=\\dfrac{2}{2}-\\ln 2=1-\\ln 2\\approx 1-0.693=0.307>0.\n$$\n\nAt $x=0.8$:\n\n$$\n\\dfrac{2}{2\\cdot 0.8+1}-\\ln(2\\cdot 0.8+1)=\\dfrac{2}{2.6}-\\ln 2.6\\approx 0.769-0.956=-0.187<0.\n$$\n\nBy the intermediate-value theorem the continuous expression $\\dfrac{2}{2x+1}-\\ln(2x+1)$ has a zero in $(0.5,0.8)$, hence so does $f'$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom A, the factor $\\dfrac{2}{2x+1}-\\ln(2x+1)$ (and therefore $f'$) is positive at $x=0.5$ and negative at $x=0.8$. So as $x$ increases through the unique zero in $(0.5,0.8)$, $f'$ changes from $+$ to $-$. That means $f$ itself changes from increasing to decreasing, which is the definition of a local maximum.\n\n(Equivalently: for small $h>0$ one has $f'(x_{0}-h)>0$ and $f'(x_{0}+h)<0$ at the critical point $x_{0}$, so $f(x_{0})$ is larger than the nearby values on both sides.)\n\nSo the statement is True.",
+        "**C.** → False\n\nSubstitute $x=1$ into $g$:\n\n$$\ng(1)=\\dfrac{\\ln(2\\cdot 1+1)\\,e^{-1}}{1^{2}+4}=\\dfrac{\\ln 3}{5e}.\n$$\n\nUse $\\ln 3\\approx 1.0986$ and $e\\approx 2.7183$:\n\n$$\ng(1)\\approx\\dfrac{1.0986}{5\\cdot 2.7183}=\\dfrac{1.0986}{13.5915}\\approx 0.0808.\n$$\n\nCompare with the threshold:\n\n$$\n0.0808\\ngtr 0.09.\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nDifferentiate $g$ with the quotient rule. Write $g=f/h$ with $h(x)=x^{2}+4$, so $h'=2x$:\n\n$$\ng'(x)=\\dfrac{f'(x)\\,h(x)-f(x)\\,h'(x)}{\\bigl(h(x)\\bigr)^{2}}=\\dfrac{f'(x)(x^{2}+4)-f(x)\\cdot 2x}{(x^{2}+4)^{2}}.\n$$\n\nAt $x=0$:\n\n$$\nf(0)=\\ln 1\\cdot e^{0}=0,\\qquad f'(0)=e^{0}\\left(\\dfrac{2}{1}-\\ln 1\\right)=2,\n$$\n\n$$\ng'(0)=\\dfrac{2\\cdot(0+4)-0\\cdot 0}{(0+4)^{2}}=\\dfrac{8}{16}=\\dfrac{1}{2}>0.\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSuppose $f'(x_{0})=0$ with $f(x_{0})\\ne 0$ (as at the interior maximum from A–B, where $\\ln(2x_{0}+1)>0$). The quotient formula from D collapses to\n\n$$\ng'(x_{0})=\\dfrac{0\\cdot(x_{0}^{2}+4)-f(x_{0})\\cdot 2x_{0}}{(x_{0}^{2}+4)^{2}}=\\dfrac{-2x_{0}\\,f(x_{0})}{(x_{0}^{2}+4)^{2}}.\n$$\n\nFor $x_{0}\\in(0.5,0.8)$ one has $x_{0}\\ne 0$ and $f(x_{0})>0$, so $g'(x_{0})\\ne 0$. Thus a critical point of $f$ need not be a critical point of $g$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Differentiate $f$ by product+chain and $g=f/(x^{2}+4)$ by the quotient rule; locate the sign-change critical point of $f$, evaluate $g(1)$ and $g'(0)$, and show $f'=0$ does not force $g'=0$."
+    },
+    {
+      "case_id": "MATH 12.MOCK.POKER",
+      "id": "MATH 12.MOCK.POKER",
+      "title": "Poker night — probabilities with hand definitions in the claims",
+      "chapter": 12,
+      "subsection": "12.2",
+      "context": "At a friend’s poker night, the host shuffles a standard, well-mixed $52$-card deck and deals a $5$-card poker hand uniformly at random (order within the hand does not matter).\n\nDecide whether each probability claim is true or false.",
+      "statements": [
+        "The total number of distinct $5$-card hands that could be dealt is greater than $2.5$ million.",
+        "A full house is three cards of one rank together with two cards of a different rank. A four of a kind is four cards of one rank plus any fifth card. The probability of a full house is more than $10$ times the probability of four of a kind.",
+        "A flush is five cards of one suit that do not form a straight. The probability of being dealt a flush is less than $1$ in $500$.",
+        "A ‘nothing’ (high-card) hand is a $5$-card hand with no pair, no three of a kind, no straight, and no flush. The probability that a random hand is not a nothing hand — i.e. contains at least a pair or better — is greater than $50\\%$.",
+        "A straight is five consecutive ranks that are not all the same suit (straight flushes excluded). Three of a kind is exactly three cards of one rank, with the other two cards of different ranks (not a full house). The probability of a straight is greater than the probability of three of a kind."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\binom{52}{5}=\\dfrac{52\\cdot 51\\cdot 50\\cdot 49\\cdot 48}{5!}=2{,}598{,}960>2{,}500{,}000.\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nFull-house count: choose the triple rank ($13$), choose $3$ of its $4$ suits ($\\binom{4}{3}$), choose the pair rank ($12$), choose $2$ of its $4$ suits ($\\binom{4}{2}$):\n\n$$\n13\\cdot\\binom{4}{3}\\cdot 12\\cdot\\binom{4}{2}=13\\cdot 4\\cdot 12\\cdot 6=3744.\n$$\n\nFour-of-a-kind count: $13$ choices for the quad rank, times $48$ choices for the kicker:\n\n$$\n13\\cdot 48=624.\n$$\n\nRatio of probabilities equals ratio of counts:\n\n$$\n\\dfrac{3744}{624}=6\\ngtr 10.\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\nFlush count excluding straight flushes:\n\n$$\n4\\binom{13}{5}-40=4\\cdot 1287-40=5148-40=5108.\n$$\n\n$$\n\\dfrac{5108}{2{,}598{,}960}\\approx 0.001965<\\dfrac{1}{500}=0.002.\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe number of nothing / high-card hands is $1{,}302{,}540$. Hence\n\n$$\nP(\\text{at least a pair or better})=1-\\dfrac{1{,}302{,}540}{2{,}598{,}960}\\approx 0.4988\\ngtr 0.5.\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\nStraight count (excluding straight flushes) is $10{,}200$. Three-of-a-kind count is\n\n$$\n13\\cdot\\binom{4}{3}\\cdot\\binom{12}{2}\\cdot 4\\cdot 4=13\\cdot 4\\cdot 66\\cdot 16=54{,}912.\n$$\n\nSince $10{,}200<54{,}912$, the straight probability is smaller, not greater.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Count $\\binom{52}{5}$ and the standard hand classes; every claim that names a hand also defines that hand before comparing probabilities."
+    },
+    {
+      "case_id": "MATH 13.18",
+      "id": "math-13-18",
+      "title": "Sales Call Conversions",
+      "chapter": 13,
+      "subsection": "13",
+      "context": "Two sales reps each make $25$ independent calls in a day. Rep A is new (probability $0.30$ of converting a call). Rep B is experienced (probability $0.68$).\n\nA “strong day” means at least $13$ conversions.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Rep A's probability of converting all 25 calls is greater than 0.0000001%.",
+        "The probability that Rep A has a strong day is greater than the probability of exactly 13.",
+        "Rep B is more than 50 times as likely as Rep A to have a strong day.",
+        "Rep A's variance in number of conversions is greater than Rep B's variance.",
+        "The expected number of conversions for Rep B is more than double that of Rep A."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA perfect run means every one of the $n$ trials succeeds. Independence lets us multiply the success probability across all trials, which is the binomial PMF at $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFor side A, $p = 0.3$ and $n = 25$:\n\n$$\nP(X = 25)\n$$\n\n$$\n(0.3)^{25} = 0\n$$\n\n$$\n8.4729 \\times 10^{-12}\\%\n$$\n\nThe claim compares this with $1 \\times 10^{-7}\\%$. We got about $8.4729 \\times 10^{-12}\\%$, which is below the cutoff.\n\nSo the statement is False.\n",
+        "**B.** → True\n\nThe named event covers every admissible count from 13 through 25, not only the single count 13. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=13)$.\n\nSo the statement is True.\n",
+        "**C.** → True\n\nClearing the cutoff means at least 13 successes out of 25. That event is the union of the mutually exclusive outcomes $X = 13, 14, \\ldots, 25$, so we add the individual binomial probabilities:\n\n$$\nP(X \\ge 13) = \\sum_{x = 13}^{25} \\binom{25}{x} p^{x} (1-p)^{25-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 25$, $p = 0.3$):\n\n$$\nP(X = 13) = \\binom{25}{13} (0.3)^{13} (0.7)^{12}\n$$\n\n$$\n\\binom{25}{13} = \\dfrac{25!}{13!(25-13)!}\n$$\n\n$$\n\\dfrac{25!}{13!(12)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16 \\cdot 15 \\cdot 14}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10 \\cdot 11 \\cdot 12}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n11861676288000 \\cdot 15 = 177925144320000\n$$\n\n$$\n177925144320000 \\cdot 14 = 2490952020480000\n$$\n\n$$\n\\dfrac{2490952020480000}{479001600} = 5200300\n$$\n\n$$\n\\binom{25}{13} = 5200300\n$$\n\n$$\n(0.3)^{13} = 1.594323 \\times 10^{-7}\n$$\n\n$$\n(0.7)^{12} = 0.013841287201\n$$\n\n$$\n5200300 \\times 1.594323 \\times 10^{-7} = 0.82909578969\n$$\n\n$$\n0.82909578969 \\times 0.013841287201 = 0.011475752942\n$$\n\n$$\nP(X = 13) = 0.011475752942\n$$\n\n$$\nP(X = 14) = \\binom{25}{14} (0.3)^{14} (0.7)^{11}\n$$\n\n$$\n\\binom{25}{14} = \\dfrac{25!}{14!(25-14)!}\n$$\n\n$$\n\\dfrac{25!}{14!(11)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16 \\cdot 15}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10 \\cdot 11}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n11861676288000 \\cdot 15 = 177925144320000\n$$\n\n$$\n\\dfrac{177925144320000}{39916800} = 4457400\n$$\n\n$$\n\\binom{25}{14} = 4457400\n$$\n\n$$\n(0.3)^{14} = 4.782969 \\times 10^{-8}\n$$\n\n$$\n(0.7)^{11} = 0.01977326743\n$$\n\n$$\n4457400 \\times 4.782969 \\times 10^{-8} = 0.213196060206\n$$\n\n$$\n0.213196060206 \\times 0.01977326743 = 0.004215582713\n$$\n\n$$\nP(X = 14) = 0.004215582713\n$$\n\n$$\nP(X = 15) = \\binom{25}{15} (0.3)^{15} (0.7)^{10}\n$$\n\n$$\n\\binom{25}{15} = \\dfrac{25!}{15!(25-15)!}\n$$\n\n$$\n\\dfrac{25!}{15!(10)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n\\dfrac{11861676288000}{3628800} = 3268760\n$$\n\n$$\n\\binom{25}{15} = 3268760\n$$\n\n$$\n(0.3)^{15} = 1.434891 \\times 10^{-8}\n$$\n\n$$\n(0.7)^{10}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n0.05764801 \\times 0.7 = 0.040353607\n$$\n\n$$\n0.040353607 \\times 0.7 = 0.0282475249\n$$\n\n$$\n(0.7)^{10} = 0.0282475249\n$$\n\n$$\n3268760 \\times 1.434891 \\times 10^{-8} = 0.046903133245\n$$\n\n$$\n0.046903133245 \\times 0.0282475249 = 0.001324897424\n$$\n\n$$\nP(X = 15) = 0.001324897424\n$$\n\n$$\nP(X = 16) = \\binom{25}{16} (0.3)^{16} (0.7)^{9}\n$$\n\n$$\n\\binom{25}{16} = \\dfrac{25!}{16!(25-16)!}\n$$\n\n$$\n\\dfrac{25!}{16!(9)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n\\dfrac{741354768000}{362880} = 2042975\n$$\n\n$$\n\\binom{25}{16} = 2042975\n$$\n\n$$\n(0.3)^{16} = 4.304672 \\times 10^{-9}\n$$\n\n$$\n(0.7)^{9}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n0.05764801 \\times 0.7 = 0.040353607\n$$\n\n$$\n(0.7)^{9} = 0.040353607\n$$\n\n$$\n2042975 \\times 4.304672 \\times 10^{-9} = 0.008794337483\n$$\n\n$$\n0.008794337483 \\times 0.040353607 = 0.000354883239\n$$\n\n$$\nP(X = 16) = 0.000354883239\n$$\n\n$$\nP(X = 17) = \\binom{25}{17} (0.3)^{17} (0.7)^{8}\n$$\n\n$$\n\\binom{25}{17} = \\dfrac{25!}{17!(25-17)!}\n$$\n\n$$\n\\dfrac{25!}{17!(8)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n\\dfrac{43609104000}{40320} = 1081575\n$$\n\n$$\n\\binom{25}{17} = 1081575\n$$\n\n$$\n(0.3)^{17} = 1.291402 \\times 10^{-9}\n$$\n\n$$\n(0.7)^{8}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n(0.7)^{8} = 0.05764801\n$$\n\n$$\n1081575 \\times 1.291402 \\times 10^{-9} = 0.001396747718\n$$\n\n$$\n0.001396747718 \\times 0.05764801 = 8.051973 \\times 10^{-5}\n$$\n\n$$\nP(X = 17) = 8.051973 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = \\binom{25}{18} (0.3)^{18} (0.7)^{7}\n$$\n\n$$\n\\binom{25}{18} = \\dfrac{25!}{18!(25-18)!}\n$$\n\n$$\n\\dfrac{25!}{18!(7)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n\\dfrac{2422728000}{5040} = 480700\n$$\n\n$$\n\\binom{25}{18} = 480700\n$$\n\n$$\n(0.3)^{18} = 0\n$$\n\n$$\n(0.7)^{7}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n(0.7)^{7} = 0.0823543\n$$\n\n$$\n480700 \\times 0 = 0.000186233029\n$$\n\n$$\n0.000186233029 \\times 0.0823543 = 1.533709 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = 1.533709 \\times 10^{-5}\n$$\n\n$$\nP(X = 19) = \\binom{25}{19} (0.3)^{19} (0.7)^{6}\n$$\n\n$$\n\\binom{25}{19} = \\dfrac{25!}{19!(25-19)!}\n$$\n\n$$\n\\dfrac{25!}{19!(6)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n\\dfrac{127512000}{720} = 177100\n$$\n\n$$\n\\binom{25}{19} = 177100\n$$\n\n$$\n(0.3)^{19} = 0\n$$\n\n$$\n(0.7)^{6}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n(0.7)^{6} = 0.117649\n$$\n\n$$\n177100 \\times 0 = 2.058365 \\times 10^{-5}\n$$\n\n$$\n2.058365 \\times 10^{-5} \\times 0.117649 = 2.421646 \\times 10^{-6}\n$$\n\n$$\nP(X = 19) = 2.421646 \\times 10^{-6}\n$$\n\n$$\nP(X = 20) = \\binom{25}{20} (0.3)^{20} (0.7)^{5}\n$$\n\n$$\n\\binom{25}{20} = \\dfrac{25!}{20!(25-20)!}\n$$\n\n$$\n\\dfrac{25!}{20!(5)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n\\dfrac{6375600}{120} = 53130\n$$\n\n$$\n\\binom{25}{20} = 53130\n$$\n\n$$\n(0.3)^{20} = 0\n$$\n\n$$\n(0.7)^{5}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n(0.7)^{5} = 0.16807\n$$\n\n$$\n53130 \\times 0 = 1.852529 \\times 10^{-6}\n$$\n\n$$\n1.852529 \\times 10^{-6} \\times 0.16807 = 3.113545 \\times 10^{-7}\n$$\n\n$$\nP(X = 20) = 3.113545 \\times 10^{-7}\n$$\n\n$$\nP(X = 21) = \\binom{25}{21} (0.3)^{21} (0.7)^{4}\n$$\n\n$$\n\\binom{25}{21} = \\dfrac{25!}{21!(25-21)!}\n$$\n\n$$\n\\dfrac{25!}{21!(4)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n\\dfrac{303600}{24} = 12650\n$$\n\n$$\n\\binom{25}{21} = 12650\n$$\n\n$$\n(0.3)^{21} = 0\n$$\n\n$$\n(0.7)^{4}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n(0.7)^{4} = 0.2401\n$$\n\n$$\n12650 \\times 0 = 1.323235 \\times 10^{-7}\n$$\n\n$$\n1.323235 \\times 10^{-7} \\times 0.2401 = 3.177086 \\times 10^{-8}\n$$\n\n$$\nP(X = 21) = 3.177086 \\times 10^{-8}\n$$\n\n$$\nP(X = 22) = \\binom{25}{22} (0.3)^{22} (0.7)^{3}\n$$\n\n$$\n\\binom{25}{22} = \\dfrac{25!}{22!(25-22)!}\n$$\n\n$$\n\\dfrac{25!}{22!(3)!} = \\dfrac{25 \\cdot 24 \\cdot 23}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n\\dfrac{13800}{6} = 2300\n$$\n\n$$\n\\binom{25}{22} = 2300\n$$\n\n$$\n(0.3)^{22} = 0\n$$\n\n$$\n(0.7)^{3}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n(0.7)^{3} = 0.343\n$$\n\n$$\n2300 \\times 0 = 7.217644 \\times 10^{-9}\n$$\n\n$$\n7.217644 \\times 10^{-9} \\times 0.343 = 2.475652 \\times 10^{-9}\n$$\n\n$$\nP(X = 22) = 2.475652 \\times 10^{-9}\n$$\n\n$$\nP(X = 23) = \\binom{25}{23} (0.3)^{23} (0.7)^{2}\n$$\n\n$$\n\\binom{25}{23} = \\dfrac{25!}{23!(25-23)!}\n$$\n\n$$\n\\dfrac{25!}{23!(2)!} = \\dfrac{25 \\cdot 24}{1 \\cdot 2}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n\\dfrac{600}{2} = 300\n$$\n\n$$\n\\binom{25}{23} = 300\n$$\n\n$$\n(0.3)^{23} = 0\n$$\n\n$$\n(0.7)^{2}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n(0.7)^{2} = 0.49\n$$\n\n$$\n300 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.49 = 0\n$$\n\n$$\nP(X = 23) = 0\n$$\n\n$$\nP(X = 24) = \\binom{25}{24} (0.3)^{24} (0.7)^{1}\n$$\n\n$$\n\\binom{25}{24} = \\dfrac{25!}{24!(25-24)!}\n$$\n\n$$\n\\binom{25}{24} = 25\n$$\n\n$$\n(0.3)^{24} = 0\n$$\n\n$$\n(0.7)^{1} = 0.7\n$$\n\n$$\n25 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.7 = 0\n$$\n\n$$\nP(X = 24) = 0\n$$\n\n$$\nP(X = 25) = \\binom{25}{25} (0.3)^{25} (0.7)^{0}\n$$\n\n$$\n\\binom{25}{25} = 1\n$$\n\n$$\n(0.3)^{25} = 0\n$$\n\n$$\n(0.7)^{0} = 1\n$$\n\n$$\n1 \\times 0 = 0\n$$\n\n$$\n0 \\times 1 = 0\n$$\n\n$$\nP(X = 25) = 0\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0115 + 0.0042 + 0.0013\n$$\n\n$$\n+ 0.0004 + 8.052 \\times 10^{-5} + 1.5337 \\times 10^{-5}\n$$\n\n$$\n+ 2.4216 \\times 10^{-6} + 3.1135 \\times 10^{-7} + 3.1771 \\times 10^{-8}\n$$\n\n$$\n+ 2.4757 \\times 10^{-9} + 1.3839 \\times 10^{-10} + 4.9425 \\times 10^{-12}\n$$\n\n$$\n+ 0\n$$\n\n$$\nP(X \\ge 13)\n$$\n\n$$\n0.0175\n$$\n\n$$\n1.75\\%\n$$\n\nSide B ($n = 25$, $p = 0.68$):\n\n$$\nP(X = 13) = \\binom{25}{13} (0.68)^{13} (0.32)^{12}\n$$\n\n$$\n(0.68)^{13} = 0.006646849802\n$$\n\n$$\n(0.32)^{12} = 1.152922 \\times 10^{-6}\n$$\n\n$$\n5200300 \\times 0.006646849802 = 34565.613024699538\n$$\n\n$$\n34565.613024699538 \\times 1.152922 \\times 10^{-6} = 0.039851438576\n$$\n\n$$\nP(X = 13) = 0.039851438576\n$$\n\n$$\nP(X = 14) = \\binom{25}{14} (0.68)^{14} (0.32)^{11}\n$$\n\n$$\n(0.68)^{14} = 0.004519857865\n$$\n\n$$\n(0.32)^{11} = 3.60288 \\times 10^{-6}\n$$\n\n$$\n4457400 \\times 0.004519857865 = 20146.81444868202\n$$\n\n$$\n20146.81444868202 \\times 3.60288 \\times 10^{-6} = 0.072586548835\n$$\n\n$$\nP(X = 14) = 0.072586548835\n$$\n\n$$\nP(X = 15) = \\binom{25}{15} (0.68)^{15} (0.32)^{10}\n$$\n\n$$\n(0.68)^{15} = 0.003073503348\n$$\n\n$$\n(0.32)^{10}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n0.000109951163 \\times 0.32 = 3.518437 \\times 10^{-5}\n$$\n\n$$\n3.518437 \\times 10^{-5} \\times 0.32 = 1.1259 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{10} = 1.1259 \\times 10^{-5}\n$$\n\n$$\n3268760 \\times 0.003073503348 = 10046.544805076102\n$$\n\n$$\n10046.544805076102 \\times 1.1259 \\times 10^{-5} = 0.113114038601\n$$\n\n$$\nP(X = 15) = 0.113114038601\n$$\n\n$$\nP(X = 16) = \\binom{25}{16} (0.68)^{16} (0.32)^{9}\n$$\n\n$$\n(0.68)^{16} = 0.002089982277\n$$\n\n$$\n(0.32)^{9}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n(0.32)^{9} = 3.518437 \\times 10^{-5}\n$$\n\n$$\n2042975 \\times 0.002089982277 = 4269.781542157343\n$$\n\n$$\n4269.781542157343 \\times 3.518437 \\times 10^{-5} = 0.150229582517\n$$\n\n$$\nP(X = 16) = 0.150229582517\n$$\n\n$$\nP(X = 17) = \\binom{25}{17} (0.68)^{17} (0.32)^{8}\n$$\n\n$$\n(0.68)^{17} = 0.001421187948\n$$\n\n$$\n(0.32)^{8}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n(0.32)^{8} = 0.000109951163\n$$\n\n$$\n1081575 \\times 0.001421187948 = 1537.121355176644\n$$\n\n$$\n1537.121355176644 \\times 0.000109951163 = 0.169008280332\n$$\n\n$$\nP(X = 17) = 0.169008280332\n$$\n\n$$\nP(X = 18) = \\binom{25}{18} (0.68)^{18} (0.32)^{7}\n$$\n\n$$\n(0.68)^{18} = 0.000966407805\n$$\n\n$$\n(0.32)^{7}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n(0.32)^{7} = 0.000343597384\n$$\n\n$$\n480700 \\times 0.000966407805 = 464.552231786719\n$$\n\n$$\n464.552231786719 \\times 0.000343597384 = 0.159618931425\n$$\n\n$$\nP(X = 18) = 0.159618931425\n$$\n\n$$\nP(X = 19) = \\binom{25}{19} (0.68)^{19} (0.32)^{6}\n$$\n\n$$\n(0.68)^{19} = 0.000657157307\n$$\n\n$$\n(0.32)^{6}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n(0.32)^{6} = 0.001073741824\n$$\n\n$$\n177100 \\times 0.000657157307 = 116.382559121304\n$$\n\n$$\n116.382559121304 \\times 0.001073741824 = 0.124964821313\n$$\n\n$$\nP(X = 19) = 0.124964821313\n$$\n\n$$\nP(X = 20) = \\binom{25}{20} (0.68)^{20} (0.32)^{5}\n$$\n\n$$\n(0.68)^{20} = 0.000446866969\n$$\n\n$$\n(0.32)^{5}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n(0.32)^{5} = 0.0033554432\n$$\n\n$$\n53130 \\times 0.000446866969 = 23.742042060746\n$$\n\n$$\n23.742042060746 \\times 0.0033554432 = 0.079665073587\n$$\n\n$$\nP(X = 20) = 0.079665073587\n$$\n\n$$\nP(X = 21) = \\binom{25}{21} (0.68)^{21} (0.32)^{4}\n$$\n\n$$\n(0.68)^{21} = 0.000303869539\n$$\n\n$$\n(0.32)^{4}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n(0.32)^{4} = 0.01048576\n$$\n\n$$\n12650 \\times 0.000303869539 = 3.843949666978\n$$\n\n$$\n3.843949666978 \\times 0.01048576 = 0.04030673366\n$$\n\n$$\nP(X = 21) = 0.04030673366\n$$\n\n$$\nP(X = 22) = \\binom{25}{22} (0.68)^{22} (0.32)^{3}\n$$\n\n$$\n(0.68)^{22} = 0.000206631286\n$$\n\n$$\n(0.32)^{3}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n(0.32)^{3} = 0.032768\n$$\n\n$$\n2300 \\times 0.000206631286 = 0.475251958826\n$$\n\n$$\n0.475251958826 \\times 0.032768 = 0.015573056187\n$$\n\n$$\nP(X = 22) = 0.015573056187\n$$\n\n$$\nP(X = 23) = \\binom{25}{23} (0.68)^{23} (0.32)^{2}\n$$\n\n$$\n(0.68)^{23} = 0.000140509275\n$$\n\n$$\n(0.32)^{2}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n(0.32)^{2} = 0.1024\n$$\n\n$$\n300 \\times 0.000140509275 = 0.042152782435\n$$\n\n$$\n0.042152782435 \\times 0.1024 = 0.004316444921\n$$\n\n$$\nP(X = 23) = 0.004316444921\n$$\n\n$$\nP(X = 24) = \\binom{25}{24} (0.68)^{24} (0.32)^{1}\n$$\n\n$$\n(0.68)^{24} = 9.554631 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{1} = 0.32\n$$\n\n$$\n25 \\times 9.554631 \\times 10^{-5} = 0.002388657671\n$$\n\n$$\n0.002388657671 \\times 0.32 = 0.000764370455\n$$\n\n$$\nP(X = 24) = 0.000764370455\n$$\n\n$$\nP(X = 25) = \\binom{25}{25} (0.68)^{25} (0.32)^{0}\n$$\n\n$$\n(0.68)^{25} = 6.497149 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{0} = 1\n$$\n\n$$\n1 \\times 6.497149 \\times 10^{-5} = 6.497149 \\times 10^{-5}\n$$\n\n$$\n6.497149 \\times 10^{-5} \\times 1 = 6.497149 \\times 10^{-5}\n$$\n\n$$\nP(X = 25) = 6.497149 \\times 10^{-5}\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0399 + 0.0726 + 0.1131\n$$\n\n$$\n+ 0.1502 + 0.169 + 0.1596\n$$\n\n$$\n+ 0.125 + 0.0797 + 0.0403\n$$\n\n$$\n+ 0.0156 + 0.0043 + 0.0008\n$$\n\n$$\n+ 6.4971 \\times 10^{-5}\n$$\n\n$$\nP(X \\ge 13)\n$$\n\n$$\n0.9701\n$$\n\n$$\n97.01\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 13)}{P_A(X \\ge 13)}\n$$\n\n$$\n\\frac{97.01\\%}{1.75\\%}\n$$\n\n$$\n55.53\n$$\n\nSince $55.53 > 50$.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nFor a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent Bernoulli trials with success probability $p$. Each trial has variance $p(1-p)$, and variances of independent summands add, so\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nThis is largest when $p$ is closest to $\\frac{1}{2}$, not when $p$ itself is largest.\n\nSide A with $n_A = 25$, $p_A = 0.3$:\n\n$$\n\\mathrm{Var}(A) = 25 \\cdot 0.3 \\cdot 0.7\n$$\n\n$$\n25 \\times 0.3 = 7.5\n$$\n\n$$\n7.5 \\times 0.7 = 5.25\n$$\n\nSide B with $n_B = 25$, $p_B = 0.68$:\n\n$$\n\\mathrm{Var}(B) = 25 \\cdot 0.68 \\cdot 0.32\n$$\n\n$$\n25 \\times 0.68 = 17\n$$\n\n$$\n17 \\times 0.32 = 5.44\n$$\n\nSo $\\mathrm{Var}(A) = 5.25$ and $\\mathrm{Var}(B) = 5.44$.\n\nThe claim’s comparison is incorrect.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 25 \\cdot 0.3\n$$\n\n$$\n25 \\times 0.3 = 7.5\n$$\n\n$$\nE[B] = 25 \\cdot 0.68\n$$\n\n$$\n25 \\times 0.68 = 17\n$$\n\nThe mean ratio (B relative to A) is\n\n$$\n\\frac{E[B]}{E[A]} = \\frac{17}{7.5}\n$$\n\n$$\n2.2667\n$$\n\n(Double would mean a ratio of $2$.).\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Two sales reps each make 25 calls in a day. Rep A is new (p = 0.30 of converting a call into a sale). Rep B is experienced (p = 0.68). A rep has a \"strong day\" if more than half of the 25 calls convert, i.e. at least 13 conversions.\n\nWe model each side as a binomial count with $n = 25$ independent trials: side A has success probability $p_A = 0.3$, side B has $p_B = 0.68$.\n\nThe scenario’s success cutoff is at least $k = 13$ successes out of $n = 25$."
+    }
+  ]
+}

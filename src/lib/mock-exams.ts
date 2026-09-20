@@ -9,6 +9,42 @@ import {
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
+import {
+  MOCK_EXAM_1_CONTENT_REV,
+  MOCK_EXAM_1_POINTS_TOTAL,
+  MOCK_EXAM_1_QUESTION_COUNT,
+  buildMockExam1Questions,
+} from "@/lib/mock-exam-1-content";
+import {
+  MOCK_EXAM_2_CONTENT_REV,
+  MOCK_EXAM_2_POINTS_TOTAL,
+  MOCK_EXAM_2_QUESTION_COUNT,
+  buildMockExam2Questions,
+} from "@/lib/mock-exam-2-content";
+import {
+  MOCK_EXAM_3_CONTENT_REV,
+  MOCK_EXAM_3_POINTS_TOTAL,
+  MOCK_EXAM_3_QUESTION_COUNT,
+  buildMockExam3Questions,
+} from "@/lib/mock-exam-3-content";
+import {
+  MOCK_EXAM_4_CONTENT_REV,
+  MOCK_EXAM_4_POINTS_TOTAL,
+  MOCK_EXAM_4_QUESTION_COUNT,
+  buildMockExam4Questions,
+} from "@/lib/mock-exam-4-content";
+import {
+  MOCK_EXAM_5_CONTENT_REV,
+  MOCK_EXAM_5_POINTS_TOTAL,
+  MOCK_EXAM_5_QUESTION_COUNT,
+  buildMockExam5Questions,
+} from "@/lib/mock-exam-5-content";
+import {
+  MOCK_EXAM_6_CONTENT_REV,
+  MOCK_EXAM_6_POINTS_TOTAL,
+  MOCK_EXAM_6_QUESTION_COUNT,
+  buildMockExam6Questions,
+} from "@/lib/mock-exam-6-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -20,6 +56,8 @@ export interface MockExamSummary {
   tier: ProductTier;
   /** Present for Custom Mock Builder exams — used for progress sync only. */
   pointsTotal?: number;
+  /** Optional content stamp (Mock 1) to verify Lovable/Git sync. */
+  contentRev?: string;
 }
 
 export interface CompletedExam {
@@ -57,22 +95,66 @@ export interface ExamQuestion {
   solutionOverview?: string;
 }
 
-const FULL_EXAM_QUESTION_COUNT =
-  SCORING_CONFIG.economics.taskCount +
-  SCORING_CONFIG.english.taskCount +
-  SCORING_CONFIG.math.taskCount;
-
-/** Available exams. Placeholder content until real questions are added. */
+/** Available exams. Mocks 1–6 use curated banks; Custom Mock Builder exams are separate. */
 export const MOCK_EXAMS: MockExamSummary[] = [
-  { id: "mock-1", title: "Mock Exam 1", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
-  { id: "mock-2", title: "Mock Exam 2", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
-  { id: "mock-3", title: "Mock Exam 3", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
-  { id: "mock-4", title: "Mock Exam 4", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
-  { id: "mock-5", title: "Mock Exam 5", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
+  {
+    id: "mock-1",
+    title: "Mock Exam 1",
+    questionCount: MOCK_EXAM_1_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "lite",
+    pointsTotal: MOCK_EXAM_1_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_1_CONTENT_REV,
+  },
+  {
+    id: "mock-2",
+    title: "Mock Exam 2",
+    questionCount: MOCK_EXAM_2_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "lite",
+    pointsTotal: MOCK_EXAM_2_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_2_CONTENT_REV,
+  },
+  {
+    id: "mock-3",
+    title: "Mock Exam 3",
+    questionCount: MOCK_EXAM_3_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_3_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_3_CONTENT_REV,
+  },
+  {
+    id: "mock-4",
+    title: "Mock Exam 4",
+    questionCount: MOCK_EXAM_4_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_4_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_4_CONTENT_REV,
+  },
+  {
+    id: "mock-5",
+    title: "Mock Exam 5",
+    questionCount: MOCK_EXAM_5_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_5_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_5_CONTENT_REV,
+  },
+  {
+    id: "mock-6",
+    title: "Mock Exam 6",
+    questionCount: MOCK_EXAM_6_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_6_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_6_CONTENT_REV,
+  },
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
-  // lite users see the first 2 exams, full users see all 5
+  // lite users see the first 2 exams, full users see all curated mocks
   return tier === "full" ? MOCK_EXAMS : MOCK_EXAMS.filter((e) => e.tier === "lite");
 }
 
@@ -112,10 +194,29 @@ function makeRandom(seed: string) {
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
 /**
- * Placeholder question set (full exam task counts, 5 statements each).
- * Real content will replace this; the shape stays identical.
+ * Exam question set. Mocks 1–6 are curated real content; unknown ids stay
+ * placeholders until their banks are authored (same ExamQuestion shape either way).
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
+  if (examId === "mock-1") {
+    return buildMockExam1Questions(examId);
+  }
+  if (examId === "mock-2") {
+    return buildMockExam2Questions(examId);
+  }
+  if (examId === "mock-3") {
+    return buildMockExam3Questions(examId);
+  }
+  if (examId === "mock-4") {
+    return buildMockExam4Questions(examId);
+  }
+  if (examId === "mock-5") {
+    return buildMockExam5Questions(examId);
+  }
+  if (examId === "mock-6") {
+    return buildMockExam6Questions(examId);
+  }
+
   const rand = makeRandom(examId);
   const questions: ExamQuestion[] = [];
   let index = 0;

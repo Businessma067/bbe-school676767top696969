@@ -21,6 +21,10 @@ export const FULL_COURSE_PATH_PREFIXES = [
   "/products/full-course-math",
   "/products/full-course-english",
   "/products/full-course-economics",
+  "/wiso/products/full-course-subjects",
+  "/wiso/products/full-course-math",
+  "/wiso/products/full-course-economics",
+  "/wiso/products/full-course-german",
 ] as const;
 
 /** Prefixes that require Lite or Full (paid study tools). */
@@ -28,6 +32,9 @@ export const PAID_SITE_PATH_PREFIXES = [
   "/flashcards",
   "/matching",
   "/tutor-exam",
+  "/wiso/flashcards",
+  "/wiso/matching",
+  "/wiso/tutor-exam",
   "/mock-exams",
   "/practice",
   "/products/custom-mock-builder",

@@ -3,6 +3,7 @@ import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import {
   MONOBANK_CURRENCY_EUR,
+  MONOBANK_TEST_CHARGE,
   PAID_PRODUCTS,
   isPaidProductSlug,
 } from "@/lib/checkout-catalog";
@@ -21,9 +22,15 @@ export type PaymentStatusResult =
       productName: string | null;
       href: string | null;
       amountEur: number | null;
+      enrolled: boolean;
       failureReason?: string;
     }
   | { ok: false; error: string };
+
+export type SyncMyEnrollmentsResult = {
+  ok: true;
+  granted: string[];
+};
 
 const CheckoutInput = z.object({
   productSlug: z.string().min(1).max(64),
@@ -32,19 +39,42 @@ const CheckoutInput = z.object({
 
 const StatusInput = z.object({ invoiceId: z.string().min(1).max(128) });
 
-function siteOrigin(request: Request): string {
+function stripTrailingSlash(url: string): string {
+  return url.replace(/\/$/, "");
+}
+
+/** Prefer the browser Origin so post-pay redirect returns to the same host the user is on. */
+function browserOrigin(request: Request): string {
+  const origin = request.headers.get("origin")?.trim();
+  if (origin) return stripTrailingSlash(origin);
+  const referer = request.headers.get("referer")?.trim();
+  if (referer) {
+    try {
+      return stripTrailingSlash(new URL(referer).origin);
+    } catch {
+      // ignore
+    }
+  }
+  return publicSiteOrigin(request);
+}
+
+/**
+ * Stable public origin for Monobank webhooks (must be reachable from Monobank).
+ * Falls back to the browser origin when PUBLIC_SITE_URL is unset.
+ */
+function publicSiteOrigin(request: Request): string {
   const envOrigin = process.env["PUBLIC_SITE_URL"]?.trim();
-  if (envOrigin) return envOrigin.replace(/\/$/, "");
-  const origin = request.headers.get("origin");
-  if (origin) return origin.replace(/\/$/, "");
+  if (envOrigin) return stripTrailingSlash(envOrigin);
+  const origin = request.headers.get("origin")?.trim();
+  if (origin) return stripTrailingSlash(origin);
   try {
-    return new URL(request.url).origin;
+    return stripTrailingSlash(new URL(request.url).origin);
   } catch {
     return "https://bbe-school.com";
   }
 }
 
-/** Creates a Monobank invoice and returns the hosted payment page URL. */
+/** Creates a Monobank iframe invoice and returns the embeddable payment page URL. */
 export const createCheckout = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => CheckoutInput.parse(d))
@@ -73,15 +103,21 @@ export const createCheckout = createServerFn({ method: "POST" })
       }
 
       // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
+      // MONOBANK_TEST_CHARGE can force a fixed amount for acquiring tests when enabled.
       const baseMinor = Math.round(product.priceEur * 100);
-      const amountMinor = Math.max(
-        1,
-        Math.round(baseMinor * (1 - discountPct / 100)),
-      );
+      const discountedMinor = Math.max(1, Math.round(baseMinor * (1 - discountPct / 100)));
+      const amountMinor = MONOBANK_TEST_CHARGE.enabled
+        ? MONOBANK_TEST_CHARGE.amountMinor
+        : discountedMinor;
+      const currencyCode = MONOBANK_TEST_CHARGE.enabled
+        ? MONOBANK_TEST_CHARGE.ccy
+        : MONOBANK_CURRENCY_EUR;
 
       const { getRequest } = await import("@tanstack/react-start/server");
       const request = getRequest();
-      const origin = siteOrigin(request);
+      // Return the buyer to the host they paid on; webhooks use a stable public URL.
+      const returnOrigin = browserOrigin(request);
+      const webhookOrigin = publicSiteOrigin(request);
 
       const { createMonoInvoice } = await import("@/lib/monobank.server");
       const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -91,11 +127,13 @@ export const createCheckout = createServerFn({ method: "POST" })
       // (course banners are landscape and get cropped badly there).
       const { invoiceId, pageUrl } = await createMonoInvoice({
         amountMinor,
-        ccy: MONOBANK_CURRENCY_EUR,
+        ccy: currencyCode,
         destination: product.name,
         reference,
-        redirectUrl: `${origin}/payment-result`,
-        webHookUrl: `${origin}/api/public/payment/webhook`,
+        // Intermediate result page verifies status then sends users to /payment/success
+        // (same as classic BBE checkout), including when the pay widget is iframed.
+        redirectUrl: `${returnOrigin}/payment-result`,
+        webHookUrl: `${webhookOrigin}/api/public/payment/webhook`,
         basketName: product.name,
         // Prefer the production host so Monobank can fetch the icon even from previews.
         basketIconUrl: "https://bbe-school.com/logo.png",
@@ -110,7 +148,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         tier: product.tier,
         invoice_id: invoiceId,
         amount_minor: amountMinor,
-        currency_code: MONOBANK_CURRENCY_EUR,
+        currency_code: currencyCode,
         status: "created",
         page_url: pageUrl,
         ...(appliedPromoCode ? { promo_code: appliedPromoCode } : {}),
@@ -120,7 +158,14 @@ export const createCheckout = createServerFn({ method: "POST" })
         return { ok: false, error: "Could not start the payment. Try again." };
       }
 
-      return { ok: true, pageUrl, invoiceId, amountEur: amountMinor / 100 };
+      return {
+        ok: true,
+        pageUrl,
+        invoiceId,
+        amountEur: MONOBANK_TEST_CHARGE.enabled
+          ? MONOBANK_TEST_CHARGE.amountMinor / 100
+          : amountMinor / 100,
+      };
     } catch (err) {
       console.error("createCheckout", err);
       const message = err instanceof Error ? err.message : "Could not start the payment.";
@@ -149,20 +194,42 @@ export const getPaymentStatus = createServerFn({ method: "POST" })
       const { syncInvoiceAndGrantAccess } = await import("@/lib/monobank.server");
       const result = await syncInvoiceAndGrantAccess(data.invoiceId);
 
+      // Paid + enrolled is what unlocks Dashboard → My courses.
+      const paid = result.status === "success" && result.enrolled;
+
       return {
         ok: true,
         status: result.status,
-        paid: result.status === "success",
+        paid,
         productSlug: row.product_slug,
         productName: row.product_name,
         href: result.href,
         amountEur: row.amount_minor / 100,
-        ...(result.failureReason ? { failureReason: result.failureReason } : {}),
+        enrolled: result.enrolled,
+        ...(result.failureReason
+          ? { failureReason: result.failureReason }
+          : result.status === "success" && !result.enrolled
+            ? { failureReason: "Payment succeeded but course access could not be unlocked. Contact support." }
+            : {}),
       };
     } catch (err) {
       console.error("getPaymentStatus", err);
       return { ok: false, error: "Could not check the payment status." };
     }
+  });
+
+/**
+ * Backfill enrollments from successful Monobank payments.
+ * Dashboard calls this so purchased WiSo/BBE courses always appear under My courses.
+ */
+export const syncMyPaidEnrollments = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }): Promise<SyncMyEnrollmentsResult> => {
+    const { ensureEnrollmentsFromSuccessfulPayments } = await import(
+      "@/lib/enrollment-grant.server"
+    );
+    const { granted } = await ensureEnrollmentsFromSuccessfulPayments(context.userId);
+    return { ok: true, granted };
   });
 
 /** Latest payments of the signed-in user (for the account/result screens). */

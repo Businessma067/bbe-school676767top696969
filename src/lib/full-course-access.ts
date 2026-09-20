@@ -1,10 +1,12 @@
-import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
-import { fetchEnrollments, highestTier } from "@/lib/user-progress";
+import { accessOwnsProduct, fetchAccessState, tierAtLeast } from "@/lib/entitlements";
+import { fetchEnrollments, ownsProductSlug } from "@/lib/user-progress";
 
 export const FULL_COURSE_HREF = "/products/full-course-subjects" as const;
 export const FULL_COURSE_PRODUCT_HREF = "/products/full-course" as const;
+export const WISO_FULL_COURSE_HREF = "/wiso/products/full-course-subjects" as const;
+export const WISO_FULL_COURSE_PRODUCT_HREF = "/wiso/products/full-course" as const;
 
-/** True when the account owns any paid course (Lite or Full) or is an admin. */
+/** True when the account owns any paid BBE course (Lite or Full) or is an admin. */
 export async function userOwnsPaidCourse(): Promise<boolean> {
   const state = await fetchAccessState();
   return tierAtLeast(state.tier, "lite");
@@ -18,14 +20,20 @@ export async function userOwnsFullCourse(): Promise<boolean> {
   return userOwnsPaidCourse();
 }
 
-/** Strict check: Full Course tier only (admins included). */
+/** Strict check: Full BBE Course enrollment (admins included). */
 export async function userOwnsFullTier(): Promise<boolean> {
   const state = await fetchAccessState();
-  return state.tier === "full";
+  return accessOwnsProduct(state, "full-course");
+}
+
+/** Strict check: Full WiSo Course enrollment (admins included). */
+export async function userOwnsWisoFullCourse(): Promise<boolean> {
+  const state = await fetchAccessState();
+  return accessOwnsProduct(state, "wiso-full-course");
 }
 
 /** @deprecated Prefer userOwnsFullTier. */
 export async function userOwnsFullCourseEnrollment(): Promise<boolean> {
   const enrollments = await fetchEnrollments();
-  return highestTier(enrollments) === "full";
+  return ownsProductSlug(enrollments, "full-course");
 }

@@ -1,0 +1,1047 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.6.29",
+      "title": "Graz Rent-Control Apartment Search",
+      "subsection": "2.6",
+      "chapter": 2,
+      "context": "Consider Graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Evaluate the following economic assertions:",
+      "statements": [
+        "Long waiting lists for controlled units signal excess demand at the regulated rent.",
+        "Controlled rents below open-market levels can create persistent shortage of available flats.",
+        "Landlords may redirect maintenance spending when regulated rents cover rising costs poorly.",
+        "Tenants ignore non-price costs when money rents stay capped because flats are abundant.",
+        "Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Long waiting lists for Graz rent-controlled flats mean more households want those units at the capped rent than landlords will lease.\n\nThat excess demand at the regulated price is exactly what shortage looks like when price cannot rise to clear the market.\n\nSo the statement is True.",
+        "When controlled rents sit below open-market leases for comparable flats, quantity demanded at the controlled rent exceeds quantity supplied of controlled units.\n\nThe gap shows up as queues, informal side payments, or years on a waiting list. Open-market rents can clear nearby, but the regulated segment remains short of available flats for as long as the cap binds below the would-be equilibrium. Persistence follows because the legal rent cannot climb to equate the two sides.\n\nSo the statement is True.",
+        "If regulated rents lag rising costs, landlords cut discretionary maintenance rather than lose money on each tenancy.\n\nRedirected spending is a predictable response when the rent ceiling squeezes the net return.\n\nSo the statement is True.",
+        "Capped money rents do not make flats abundant; they typically create shortage, so tenants still pay in time, search effort, and weaker housing quality.\n\nThose non-price costs matter precisely because the money price is not allowed to ration scarce controlled units.\n\nSo the statement is False.",
+        "Open-market leases posting higher monthly rates than controlled flats imply that the free-market equilibrium rent lies above the controlled cap, not below it.\n\nIf the equilibrium sat below the cap, uncontrolled landlords would already be advertising at or under the controlled level and the cap would not bind. Higher advertised open-market rents are evidence that the ceiling is holding regulated rents below what the uncontrolled market clears at. The statement flips that comparison.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.4.16",
+      "title": "Fifty staff boundary",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Analyze a logistics company employs exactly fifty people with €8m turnover. Evaluate the following economic assertions:",
+      "statements": [
+        "Leaving SME status can end eligibility for certain EU SME finance programmes.",
+        "Medium status holds because balance sheet is within €43m despite turnover above €50m.",
+        "Medium pairs sub-250 staff with a €10m turnover cap.",
+        "Thirty staff is within the small enterprise employee limit.",
+        "One hundred and eighty staff keeps a firm in the small category because turnover is below €50m."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Leaving SME status can cut eligibility for EU finance programmes reserved for SMEs. Crossing out of the bands is not only a label change; funding doors can close.\n\nSo the statement is True.",
+        "A balance sheet within €43m does not save medium status if turnover sits above €50m and that is the failing route. One breached financial ceiling can be enough to fail.\n\nSo the statement is False.",
+        "Medium status pairs fewer than 250 staff with a €50m turnover cap on the turnover route, not a €10m cap. The €10m figure belongs to small enterprises.\n\nAttaching a €10m turnover ceiling to medium classification mixes tiers. Medium financial room is much larger than the small band allows on that turnover measure for growing firms.\n\nSo the statement is False.",
+        "Thirty staff sit under the small enterprise employee limit of fewer than fifty. That headcount clears the employment half of the small tests.\n\nSo the statement is True.",
+        "One hundred and eighty staff already exceed the small ceiling of fewer than fifty. Turnover below €50m cannot keep the firm in the small category once headcount is that high.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.20",
+      "title": "Listed Retail Corporation and Investor Gains",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Consider a retail corporation whose shares jumped in price after strong holiday sales reports, while the firm made no new share issue. Evaluate the following economic assertions:",
+      "statements": [
+        "The holiday price surge increased the corporation's registered share capital by the full market value of the rise.",
+        "Existing shareholders who sold during the surge transferred their voting rights to the corporation itself.",
+        "Higher prices after issue reflect changed demand and supply among investors trading existing shares.",
+        "The corporation must issue bonus shares equal to every euro of secondary-market price increase.",
+        "Shareholders who sold at higher prices realise capital gains; the issuer does not receive those trading proceeds."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "A holiday-driven price jump on already issued shares does not raise the corporation's registered share capital by the full market value of that surge on the exchange.\n\nSo the statement is False.",
+        "Shareholders who sell during the surge transfer voting rights to the buyers of their stock, not back to the corporation as if the firm collected those votes for itself.\n\nSo the statement is False.",
+        "After issue, prices move with investor demand and supply for the shares already outstanding. Strong holiday results can shift that balance without any new equity leaving the treasury.\n\nThe retailer's secondary quote therefore reflects trading among investors, not a fresh capital subscription recorded as share capital for the issuer.\n\nSo the statement is True.",
+        "No rule forces the corporation to issue bonus shares equal to every euro of secondary-market price increase. Issuers are not obliged to match market moves with free stock.\n\nSo the statement is False.",
+        "Shareholders who sold at the higher prices realise capital gains for themselves. The issuer does not receive those secondary trading proceeds as corporate cash.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.5.29",
+      "title": "Absolute Versus Relative Share Traps",
+      "subsection": "5.5",
+      "chapter": 5,
+      "context": "Consider a food producer estimating market volume in tonnes for organic cereals and comparing that total with its own annual shipments. Evaluate the following economic assertions:",
+      "statements": [
+        "Sales potential of a business can exceed its current sales volume when gains from rivals or market growth are achievable.",
+        "Primary research is defined as any information taken from an annual report published last year.",
+        "Market research excludes information about industry conditions and focuses only on internal accounting.",
+        "Gains from competitors are excluded from the concept of sales potential.",
+        "A share in the increase of market potential is excluded from sales potential."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Sales volume is what the firm sells now. Sales potential can sit higher when customers can be won from rivals or when the whole market expands. Those achievable gains are part of potential, so potential may exceed current volume.\n\nSo the statement is True.",
+        "An annual report published last year is an existing document. Reusing it is secondary research. Primary research means collecting new data for the current question, not recycling last year's published pages.\n\nSo the statement is False.",
+        "Market research looks outward at customers, competitors, and industry conditions as well as supporting internal decisions. Limiting it to internal accounting would erase competitor tracking, segment sizing, and buyer studies. Industry development information is squarely inside the research scope. The claim that market research ignores industry conditions is therefore false.\n\nSo the statement is False.",
+        "Winning customers from rivals is a standard route to raising one firm's sales above today's volume. Those gains from competitors sit inside sales potential, not outside it. Excluding them contradicts the chapter's sales-potential breakdown.\n\nSo the statement is False.",
+        "A share of rising market potential is listed as a sales-potential component alongside current volume and gains from rivals. Excluding that growth share misstates how potential is built for one firm.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.017",
+      "title": "Return and Cash Flow Extract 17",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 329 |\n| Machinery | 139 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 257 |\n| Trade receivables | 104 |\n| Cash and cash equivalents | 87 |\n| Total assets | 1071 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 126 |\n| Retained earnings | 382 |\n| Total equity | 508 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 283 |\n| Bonds payable | 55 |\n| Trade payables | 197 |\n| Bank overdraft | 28 |\n| Total liabilities | 563 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 171 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 186 |\n| Cash flow from investing activities | (280) |\n| Cash flow from financing activities | 77 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
+        "Return on equity, the operating result taken as a percentage of total equity, exceeds 31.3%.",
+        "Inventory make up more than 10.2% of total assets.",
+        "Working capital is positive on this extract.",
+        "Cash flow from investing activities was an outflow this year."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Cash-flow headings split operating, investing, and financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "From the extract, Inventory = 257 and total assets = 1,071.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{257}{1{,}071}\n$$\n\n$$\n\\text{Share} = 24.0\\%\n$$\n\nInventory / total assets ≈ 257 ÷ 1,071 = 24.0%. More than 10.2% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "Read the claim against the chapter rule: Working capital is positive on this extract. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion hold. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.1.011",
+      "title": "Two-Year Balance Sheet Review 11",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 400 | 402 |\n| Machinery | 268 | 276 |\n| Office equipment | 69 | 72 |\n| Patents, trademarks and licences | 54 | 54 |\n| Inventory | 147 | 152 |\n| Trade receivables | 144 | 160 |\n| Cash and cash equivalents | 112 | 131 |\n| Total assets | **1194** | **1247** |\n| **EQUITY** | | |\n| Share capital | 124 | 124 |\n| Retained earnings | 400 | 426 |\n| Total equity | **524** | **550** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 357 | 374 |\n| Bonds payable | 71 | 73 |\n| Trade payables | 165 | 163 |\n| Bank overdraft | 77 | 87 |\n| Total liabilities | **670** | **697** |\n| Total equity and liabilities | **1194** | **1247** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Long-term assets should preferably be financed only with short-term trade credit.",
+        "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2.",
+        "Total equity grew by more than 16.9% between Year 1 and Year 2.",
+        "Total assets grew by more than 16.5% between Year 1 and Year 2.",
+        "Inventory grew by more than 21.8% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Long-term assets should be matched with long-term finance. Funding them only with short-term trade credit creates a maturity mismatch. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False.",
+        "Compare percentage growth in retained earnings with percentage growth in total equity over the same two years.\n\n$$\n\\text{RE}_{\\text{Y1}} = 400, \\quad \\text{RE}_{\\text{Y2}} = 426\n$$\n\n$$\n\\text{RE growth} = 6.5\\%,\\quad \\text{Equity growth} = 5.0\\%\n$$\n\n$$\n\\text{Equity}_{\\text{Y1}} = 524, \\quad \\text{Equity}_{\\text{Y2}} = 550\n$$\n\nRE growth ≈ 6.5%; equity growth ≈ 5.0%. RE does outpace equity. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct.\n\nSo the statement is True.",
+        "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 524, Y_2 = 550\n$$\n\n$$\nY_2 - Y_1 = 550 - 524 = 26\n$$\n\n$$\n\\frac{26}{524} \\approx 0.0496 \\approx 5.0\\%\n$$\n\n$$\n5.0\\% \\le 16.9\\%\n$$\n\nTotal equity changed by 5.0%, at or below the 16.9% threshold claimed.\n\nSo the statement is False.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}194, Y_2 = 1{,}247\n$$\n\n$$\nY_2 - Y_1 = 1{,}247 - 1{,}194 = 53\n$$\n\n$$\n\\frac{53}{1{,}194} \\approx 0.0444 \\approx 4.4\\%\n$$\n\n$$\n4.4\\% \\le 16.5\\%\n$$\n\nTotal assets changed by 4.4%, at or below the 16.5% threshold claimed.\n\nSo the statement is False.",
+        "Percentage growth for Inventory is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 147, Y_2 = 152\n$$\n\n$$\nY_2 - Y_1 = 152 - 147 = 5\n$$\n\n$$\n\\frac{5}{147} \\approx 0.0340 \\approx 3.4\\%\n$$\n\n$$\n3.4\\% \\le 21.8\\%\n$$\n\nInventory changed by 3.4%, at or below the 21.8% threshold claimed. Inventory runs 147 → 152 across the two years. Percentage change ≈ 3.4%, while the claim wants growth above 21.8%. 3.4% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1. Always read the extract’s own line labels before comparing the threshold.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.1.019",
+      "title": "Gearing From Comparative Figures 19",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 463 | 483 |\n| Machinery | 269 | 282 |\n| Office equipment | 39 | 42 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 212 | 239 |\n| Trade receivables | 109 | 131 |\n| Cash and cash equivalents | 78 | 77 |\n| Total assets | **1263** | **1347** |\n| **EQUITY** | | |\n| Share capital | 203 | 203 |\n| Retained earnings | 410 | 417 |\n| Total equity | **613** | **620** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 297 | 345 |\n| Bonds payable | 70 | 80 |\n| Trade payables | 204 | 216 |\n| Bank overdraft | 79 | 86 |\n| Total liabilities | **650** | **727** |\n| Total equity and liabilities | **1263** | **1347** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+        "Non-current liabilities amount to more than 50.2% of total equity in Year 1.",
+        "Non-current liabilities amount to less than 107.9% of total equity in Year 2.",
+        "Non-current assets make up more than 61.1% of total assets in Year 2.",
+        "Current liabilities are covered by current assets less than 1.57 times over in Year 2."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 297 + 70,\\quad \\text{NCL} = 367,\\quad \\text{Equity} = 613\n$$\n\n$$\n\\frac{367}{613} \\approx 0.5987 \\approx 59.9\\%\n$$\n\n$$\n59.9\\% > 50.2\\%\n$$\n\nYear-2 NCL/equity is 59.9%, above the 50.2% claim. Year 1 NCL 367 vs equity 613 → 59.9%. More than 50.2%? 59.9% yes. Non-current liabilities usually combine the long-term loan and bonds lines. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is True.",
+        "Year 2 NCL 425 vs equity 620 → 68.5%.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 345 + 80,\\quad \\text{NCL} = 425,\\quad \\text{Equity} = 620\n$$\n\n$$\n\\frac{425}{620} \\approx 0.6855 \\approx 68.5\\%\n$$\n\n$$\n68.5\\% < 107.9\\%\n$$\n\nYear-2 NCL/equity is 68.5%, below the 107.9% claim.\n\nSo the statement is True.",
+        "From the extract, Non-current assets = 900 and total assets in Year 2 = 1,347.\n\n$$\n\\text{Share} = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\n\\text{Share} = \\frac{900}{1{,}347}\n$$\n\n$$\n\\text{Share} = 66.8\\%\n$$\n\nNon-current assets / total assets in Year 2 ≈ 900 ÷ 1,347 = 66.8%. More than 61.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True.",
+        "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{447}{302} \\approx 1.4801\n$$\n\nYear 2 cover ≈ 1.48 times (447 ÷ 302). Less than 1.57 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. A times reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.3.008",
+      "title": "Two-Year Balance Sheet Review 8",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 486 | 532 |\n| Machinery | 185 | 214 |\n| Office equipment | 63 | 71 |\n| Patents, trademarks and licences | 84 | 84 |\n| Inventory | 152 | 182 |\n| Trade receivables | 98 | 103 |\n| Cash and cash equivalents | 117 | 126 |\n| Total assets | **1185** | **1312** |\n| **EQUITY** | | |\n| Share capital | 100 | 100 |\n| Retained earnings | 500 | 554 |\n| Total equity | **600** | **654** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 221 | 253 |\n| Bonds payable | 87 | 95 |\n| Trade payables | 201 | 228 |\n| Bank overdraft | 76 | 82 |\n| Total liabilities | **585** | **658** |\n| Total equity and liabilities | **1185** | **1312** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+        "Total assets grew by more than 10.6% between Year 1 and Year 2.",
+        "Non-current liabilities amount to less than 80.2% of total equity in Year 2.",
+        "Non-current assets make up more than 61.8% of total assets in Year 2.",
+        "Current liabilities are covered by current assets less than 2.01 times over in Year 2."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. A equity reading of the extract supports this claim.\n\nSo the statement is True.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}185, Y_2 = 1{,}312\n$$\n\n$$\nY_2 - Y_1 = 1{,}312 - 1{,}185 = 127\n$$\n\n$$\n\\frac{127}{1{,}185} \\approx 0.1072 \\approx 10.7\\%\n$$\n\n$$\n10.7\\% > 10.6\\%\n$$\n\nTotal assets rose or fell by 10.7%, clearing the 10.6% hurdle in the statement.\n\nSo the statement is True.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 253 + 95,\\quad \\text{NCL} = 348,\\quad \\text{Equity} = 654\n$$\n\n$$\n\\frac{348}{654} \\approx 0.5321 \\approx 53.2\\%\n$$\n\n$$\n53.2\\% < 80.2\\%\n$$\n\nYear-2 NCL/equity is 53.2%, below the 80.2% claim. Year 2 NCL 348 vs equity 654 → 53.2%. Less than 80.2%? 53.2% yes. Non-current liabilities usually combine the long-term loan and bonds lines. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is True.",
+        "From the extract, Non-current assets = 901 and total assets in Year 2 = 1,312.\n\n$$\n\\text{Share} = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\n\\text{Share} = \\frac{901}{1{,}312}\n$$\n\n$$\n\\text{Share} = 68.7\\%\n$$\n\nNon-current assets / total assets in Year 2 ≈ 901 ÷ 1,312 = 68.7%. More than 61.8% is true here. Composition shares are plain part ÷ whole from the extract. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{411}{310} \\approx 1.3258\n$$\n\nYear 2 cover ≈ 1.33 times (411 ÷ 310). Less than 2.01 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.5.022",
+      "title": "The Acid-Test Liquidity Check Explained",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Analyze why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:\n",
+      "statements": [
+        "A business carrying large seasonal inventories can show a materially lower acid-test ratio than its current ratio would suggest, even when its overall liquidity position is otherwise adequate.",
+        "Lenders sometimes write minimum liquidity or gearing requirements into loan agreements, using ratios such as the current ratio or the debt ratio to monitor ongoing risk.",
+        "Negative working capital is not automatically a sign of financial distress for a business that collects cash from customers well before it must pay its own suppliers.",
+        "A business can report a profit for the year and still face a liquidity squeeze if that profit is tied up in inventory or receivables rather than held as cash.",
+        "Return on equity and return on capital employed both start from profit before interest and tax but relate it to a different capital base, owners' equity in one case and total long-term capital in the other."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Being tangible is not enough by itself. On the chapter test the wording is accepted. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
+        "On the chapter test the wording is accepted. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. The threshold in the sentence is compared directly to the computed percentage. A ongoing reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "Read the claim against the chapter rule: Negative working capital is not automatically a sign of financial distress for a business that collects cash from customers well before i….\n\nSo the statement is True.",
+        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
+        "With that split the claim is fine. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.CCC",
+      "title": "Working capital chart — CCC band, current ratio and turnover",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "NordicForge AG reports opening and closing working-capital stocks plus a short P&L / balance extract (EUR thousands). Use a 365-day year. Inventory and payables days use cost of sales; receivables days use revenue. The cash-conversion cycle is inventory days plus receivables days minus payables days. Current ratio uses year-end stocks only.\n\n[[CHART type=\"grouped-bar\" title=\"NordicForge — opening vs closing stocks (EUR thousands)\"]]\nInventory | Opening=120 | Closing=160\nTrade receivables | Opening=95 | Closing=125\nTrade payables | Opening=70 | Closing=90\n[[/CHART]]\n\n| Extract (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1450 |\n| Cost of sales | 870 |\n| Cash and cash equivalents (year-end) | 40 |\n| Bank overdraft (year-end) | 25 |\n| Total assets at the beginning of the year | 920 |\n| Total assets at the end of the year | 1040 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "Average inventory exceeds average trade receivables by exactly EUR 30,000.",
+        "Inventory days lie strictly between 55 and 60.",
+        "The cash-conversion cycle is strictly longer than 50 days but strictly shorter than 55 days.",
+        "The year-end current ratio exceeds 2.5.",
+        "Asset turnover exceeds 1.5."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\dfrac{120+160}{2}=140,\\qquad \\dfrac{95+125}{2}=110,\\qquad 140-110=30\n$$\n\nIn euros that is EUR 30,000.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n365\\cdot\\dfrac{140}{870}\\approx 58.74\\in(55,60)\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\n\\text{AR days}=365\\cdot\\dfrac{110}{1450}\\approx 27.69,\\qquad \\text{AP days}=365\\cdot\\dfrac{80}{870}\\approx 33.56\n$$\n\n$$\n\\mathrm{CCC}\\approx 58.74+27.69-33.56\\approx 52.87\\in(50,55)\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nYear-end current assets $160+125+40=325$; current liabilities $90+25=115$:\n\n$$\n\\dfrac{325}{115}\\approx 2.83>2.5\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\n\\dfrac{1450}{(920+1040)/2}=\\dfrac{1450}{980}\\approx 1.48<1.5\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) The COVID-19 pandemic, which disrupted global commerce beginning in early 2020, exposed a structural vulnerability that had been building quietly for decades: many multinational manufacturers had organised their supply chains around globally dispersed, single-source suppliers operating under justin-time inventory models that minimised stockpiles in favour of efficiency. When factory closures, port congestion, and shipping bottlenecks struck simultaneously across multiple regions, this efficiency-first approach produced severe shortages of goods ranging from semiconductors to basic medical equipment, prompting a widespread reassessment of how, and where, production should take place.\n\n(2) A 2023 survey of manufacturing executives found that 62% reported having reshored or nearshored at least part of their production within the previous three years, a sharp rise from just 24% who reported the same in a comparable survey conducted in 2019. This shift has been widely interpreted as evidence of a broader retreat from the hyper-globalised production networks that characterised the preceding several decades.\n\n(3) Nearshoring, in particular, has disproportionately benefited Mexico as a destination for US manufacturers seeking geographic proximity without the full cost of domestic production. Foreign direct investment from US manufacturing firms into Mexico rose by roughly USD 35 billion between 2020 and 2023, an increase of approximately 45% over that period, driven partly by lower transportation costs and reduced exposure to transpacific shipping disruptions.\n\n(4) Economically, this shift has been made more feasible by a narrowing cost differential: the labour cost ratio between US and Chinese manufacturing fell from roughly 8:1 in 2010 to about 4:1 by 2023, driven by rising wages in China and by increased automation, which has steadily reduced the share of total production costs attributable to labour in domestic US facilities.\n\n(5) However, critics caution against taking announced reshoring intentions at face value. A separate survey tracking companies that publicly announced reshoring plans between 2020 and 2022 found that only 15% had actually completed the announced shift within their originally stated timeframe, with the remainder experiencing average delays of roughly 18 months beyond their initial targets, often due to permitting delays, skilled-labour shortages, and unexpected construction costs.\n\n(6) A further complication is that much of what is publicly labelled \"reshoring\" more accurately reflects diversification toward allied or trusted third countries, a practice sometimes termed \"friend-shoring,\" rather than a genuine return of production to the home country. Vietnam's share of US apparel imports, for instance, rose from roughly 13% in 2015 to nearly 20% by 2023, reflecting a rerouting of supply chains away from China rather than a repatriation of manufacturing to the United States itself.\n\n(7) Government policy has actively accelerated these shifts. The United States' CHIPS Act, passed in 2022, allocated USD 52 billion in subsidies to expand domestic semiconductor manufacturing capacity, while the European Union's own Chips Act set a target of doubling the EU's share of global semiconductor production from approximately 10% to 20% by 2030.\n\n(8) These shifts are not without cost. Reshored production has been estimated, on average, to cost between 20% and 25% more per unit than the offshored equivalent it replaces, reflecting higher domestic labour and compliance costs. Analysts estimate that only a modest fraction of this gap, roughly 3% to 5%, is ultimately passed on to consumers through higher retail prices for affected product categories, with the remainder typically absorbed through reduced profit margins or offset by automation-driven productivity gains.\n\n(9) Whether this reordering represents a durable, structural reversal of decades-long globalisation trends, or merely a temporary reaction to a specific and unusually severe shock, remains a matter of active debate among economists. The continued rise of manufacturing hubs such as Vietnam and India suggests that global production networks may be being rerouted and diversified rather than straightforwardly reversed.",
+    "passageTitle": "Reshoring, Nearshoring, and the Post-Pandemic Reordering of Global Supply Chains",
+    "tasks": [
+      {
+        "case_id": "ENG T.4.01",
+        "id": "en-t-4-01",
+        "title": "Task 1",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The just-in-time inventory model is described as having been newly invented in response to the pandemic's disruptions.",
+          "The pandemic is described as having exposed, rather than created, a vulnerability that had already been building for decades.",
+          "The 2023 survey found that 62% of executives reported reshoring/nearshoring activity, up from a 24% baseline reported in a comparable 2019 survey.",
+          "Mexico's appeal as a nearshoring destination is attributed in the passage to matching US wage levels rather than to geographic proximity and cost savings.",
+          "The passage attributes the entire FDI increase into Mexico solely to reduced exposure to transpacific shipping disruptions, excluding any other named cause."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The just-in-time inventory model is described as having been newly invented in response to the pandemic's disruptions.**\n\nParagraph 1 places just-in-time models in the past tense of long-standing practice: firms \"had organised\" supply chains around single-source suppliers using those models \"for decades.\" The pandemic is the shock that made the existing model fail, not the moment inventing it. The wording \"had been building quietly for decades\" locks the vulnerability — and the inventory practice behind it — into the pre-2020 timeline.\n\n**Trap:** A crisis that reveals a practice can feel like it created the practice — chronology here runs the other way. Watch for \"newly\" or \"in response to\" when the text only says a shock exposed what was already in place.\n\nThe claim invents a post-pandemic origin the text never gives, so it fails against the decades-old framing.",
+          "**B) The pandemic is described as having exposed, rather than created, a vulnerability that had already been building for decades.**\n\nThe opening sentence of Paragraph 1 says the pandemic \"exposed a structural vulnerability that had been building quietly for decades.\" \"Exposed\" is the key verb: the weakness pre-existed; COVID made it visible. \"Rather than created\" in the claim simply restates that contrast — the passage never says the pandemic invented the vulnerability.\n\nThat wording matches the claim exactly, so the statement tracks the passage. Anchor on the verb \"exposed\" plus the decades clause whenever the item asks created versus revealed.",
+          "**C) The 2023 survey found that 62% of executives reported reshoring/nearshoring activity, up from a 24% baseline reported in a comparable 2019 survey.**\n\nParagraph 2 pairs the figures and years without mixing them: 62% in the 2023 survey versus 24% in a comparable 2019 survey, for reshoring or nearshoring at least part of production. The phrase \"a sharp rise from just 24%\" is the passage's own up-from framing, so the claim's \"up from\" paraphrase stays faithful.\n\n**Tip:** Keep the year stuck to its percentage — swapping 62% onto 2019 is a common trap. Also keep \"comparable survey\" — the text does not invent a second, unrelated poll.\n\nBoth percentages and both years line up with the text, so the claim holds.",
+          "**D) Mexico's appeal as a nearshoring destination is attributed in the passage to matching US wage levels rather than to geographic proximity and cost savings.**\n\nParagraph 3 credits Mexico with \"geographic proximity without the full cost of domestic production,\" and ties FDI growth to lower transport costs and less transpacific disruption exposure. Wage parity with the US is never offered as the reason. The passage's \"without the full cost\" language is about staying cheaper than US domestic production, not about Mexican wages catching up to US wages.\n\nThe statement swaps in an invented wage-match motive, so it fails. If an item substitutes wage convergence for proximity and transport savings, reject it.",
+          "**E) The passage attributes the entire FDI increase into Mexico solely to reduced exposure to transpacific shipping disruptions, excluding any other named cause.**\n\nParagraph 3 says the rise was \"driven partly by lower transportation costs and reduced exposure to transpacific shipping disruptions.\" Two causes are named, and \"partly\" already blocks an exclusive single-cause reading. \"Lower transportation costs\" sits beside the shipping-disruption clause, so dropping that first driver is already a misquote.\n\n**Trap:** \"Solely\" / \"entirely\" items collapse a two-factor list into one. Absolute exclusivity words fail whenever the text uses \"partly\" or an \"and\" list.\n\nThe exclusivity claim contradicts the dual driver in the text, so the statement is false."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.4.02",
+        "id": "en-t-4-02",
+        "title": "Task 2",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The narrowing US-China labour cost ratio is attributed to a combination of rising Chinese wages and increased automation, not to automation alone.",
+          "The labour cost ratio narrowed from roughly 8:1 in 2010 to about 4:1 by 2023, a reduction of half the original gap.",
+          "A firm publicly announcing reshoring plans is treated in the passage as functionally equivalent to a firm that has already completed that shift.",
+          "The typical delay firms experienced beyond their original reshoring timeline is attributed mainly to falling demand for their products.",
+          "The passage treats \"friend-shoring\" as a more precise label for what is often loosely called \"reshoring,\" rather than as an identical process."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The narrowing US-China labour cost ratio is attributed to a combination of rising Chinese wages and increased automation, not to automation alone.**\n\nParagraph 4 names both drivers in one phrase: the ratio fell \"driven by rising wages in China and by increased automation.\" Automation is necessary but not sole. The coordinating \"and\" is the grammatical signal that the claim's \"combination…not…alone\" reading is correct.\n\nThe joint attribution matches the claim, so the statement is true. Do not let a later sentence about labour's shrinking share erase the wage half of the driver list.",
+          "**B) The labour cost ratio narrowed from roughly 8:1 in 2010 to about 4:1 by 2023, a reduction of half the original gap.**\n\nThe same paragraph gives \"roughly 8:1 in 2010\" and \"about 4:1 by 2023.\" Halving an 8:1 gap yields 4:1, so the arithmetic paraphrase is faithful. The hedge words \"roughly\" and \"about\" still support that simple half-gap reading; they do not invent a different ratio.\n\nThe figures and the half-gap reading both fit the passage, so the claim stands. Match both years to both ratios before accepting any numeric paraphrase.",
+          "**C) A firm publicly announcing reshoring plans is treated in the passage as functionally equivalent to a firm that has already completed that shift.**\n\nParagraph 5 separates announcement from completion: of companies that \"publicly announced reshoring plans,\" \"only 15% had actually completed the announced shift\" on the original timeline. Announcement and completion are precisely not treated as the same. The adverb \"actually\" in the passage is there to mark the gap the claim erases.\n\n**Trap:** Public intent language often masquerades as done facts in exam items. Treat \"announced\" and \"completed\" as different verbs unless the text equates them.\n\nThe equivalence claim erases that gap, so it fails.",
+          "**D) The typical delay firms experienced beyond their original reshoring timeline is attributed mainly to falling demand for their products.**\n\nDelays are pinned to \"permitting delays, skilled-labour shortages, and unexpected construction costs.\" Falling demand never appears. Those three causes are all supply-side or implementation frictions, not a demand collapse.\n\nThe statement invents a demand cause the text does not name, so it is false. If the item swaps in a market-demand story for the named permitting/labour/construction trio, reject it.",
+          "**E) The passage treats \"friend-shoring\" as a more precise label for what is often loosely called \"reshoring,\" rather than as an identical process.**\n\nParagraph 6 says much of what is \"publicly labelled 'reshoring'\" \"more accurately reflects\" moves to allied or trusted third countries, \"sometimes termed 'friend-shoring.'\" The passage corrects the label; it does not collapse the two into one process. \"More accurately\" is the precision cue that friend-shoring is the better description of that diversification pattern.\n\nThat precision frame matches the claim, so the statement holds. Keep home-country return separate from third-country ally diversification whenever both labels appear."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.4.03",
+        "id": "en-t-4-03",
+        "title": "Task 3",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The EU's Chips Act is described as targeting a doubling of the EU's own global semiconductor production share, not an absolute doubling of total global output.",
+          "The EU's Chips Act aims to raise the EU's share of global semiconductor production from approximately 20% to 40% by 2030.",
+          "Higher domestic labour and compliance costs are cited as the reason reshored production costs more per unit than its offshored equivalent.",
+          "The gap between reshored and offshored production costs is described as being absorbed primarily through higher consumer prices.",
+          "The continued growth of manufacturing hubs like Vietnam and India is presented as evidence against a simple, one-directional reversal of globalisation."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The EU's Chips Act is described as targeting a doubling of the EU's own global semiconductor production share, not an absolute doubling of total global output.**\n\nParagraph 7 aims at \"doubling the EU's share of global semiconductor production\" — a relative slice of the world total, not a doubling of all chips made worldwide. \"Share of global…production\" is the key noun phrase: the EU wants a bigger percentage of the pie, not a doubled world pie.\n\nShare versus absolute output is the distinction the claim gets right, so it matches the text. Whenever \"doubling\" appears, check what noun is being doubled — share or total volume.",
+          "**B) The EU's Chips Act aims to raise the EU's share of global semiconductor production from approximately 20% to 40% by 2030.**\n\nThe passage doubles \"from approximately 10% to 20% by 2030.\" The statement doubles the wrong baseline (20%→40%). Starting from the target instead of the baseline is the exact paraphrase error.\n\n**Trap:** Same \"doubling\" story, swapped percentages. A correct doubling must keep both endpoints: 10% and 20%, not a shifted pair.\n\nThe wrong start and end percentages overturn the claim.",
+          "**C) Higher domestic labour and compliance costs are cited as the reason reshored production costs more per unit than its offshored equivalent.**\n\nParagraph 8 estimates reshored units cost 20–25% more, \"reflecting higher domestic labour and compliance costs.\" That is exactly the reason named. The participle \"reflecting\" attaches those two cost types directly to the percentage premium.\n\nThe cost drivers line up with the statement, so it is true. Do not substitute consumer prices or automation for the named labour-and-compliance explanation of the premium itself.",
+          "**D) The gap between reshored and offshored production costs is described as being absorbed primarily through higher consumer prices.**\n\nOnly \"roughly 3% to 5%\" of the gap is passed to consumers; \"the remainder\" is absorbed via thinner margins or automation gains — so consumers are explicitly not the main sponge. \"Modest fraction\" already blocks any \"primarily\" reading that puts retail prices first.\n\nThe \"primarily through higher consumer prices\" reading reverses the text, so the claim fails. Match \"primarily\" only to whatever the passage treats as the larger share of absorption.",
+          "**E) The continued growth of manufacturing hubs like Vietnam and India is presented as evidence against a simple, one-directional reversal of globalisation.**\n\nParagraph 9 says those hubs' rise suggests networks \"may be being rerouted and diversified rather than straightforwardly reversed.\" Growth elsewhere is offered as a counter to a clean reverse-globalisation story. \"Rather than straightforwardly reversed\" is the passage's own rejection of a one-way unwind.\n\nThat use of the hubs matches the claim, so the statement stands. Treat Vietnam/India growth as diversification evidence, not as proof that nothing moved."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.4.04",
+        "id": "en-t-4-04",
+        "title": "Task 4",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Since automation is named as one factor narrowing the labour cost ratio, it can be concluded that automation alone fully explains the shift.",
+          "The labour cost ratio's narrowing from 8:1 to 4:1 is, by simple arithmetic, a reduction of exactly half the original gap.",
+          "A firm reporting it has \"reshored part of its production\" is not automatically the same, by the passage's own logic, as a firm that has completed a full transition.",
+          "Because nearshoring benefited Mexico, the passage implies Mexican labour costs converged with those in the United States.",
+          "Since reshored production costs more per unit, the passage implies that reduced profit margins are the only way firms can absorb that extra cost."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Since automation is named as one factor narrowing the labour cost ratio, it can be concluded that automation alone fully explains the shift.**\n\nParagraph 4 lists automation beside rising Chinese wages. Naming \"one factor\" never licences wiping out the other. The inference upgrades a joint \"driven by…and…\" list into a sole cause without any passage warrant.\n\n**Trap:** \"Since X is mentioned…\" leaps to \"X is the whole cause.\" Presence of a factor is not exclusivity of that factor.\n\nThe sole-cause leap overreaches the joint drivers, so the inference fails.",
+          "**B) The labour cost ratio's narrowing from 8:1 to 4:1 is, by simple arithmetic, a reduction of exactly half the original gap.**\n\nThe stated path from \"roughly 8:1\" to \"about 4:1\" is arithmetically a halving of the original gap; the claim stays inside that inference. No extra economic story is smuggled in — only the ratio arithmetic the numbers already imply.\n\nThe arithmetic follows the passage figures, so the statement is true. Accept half-gap paraphrases when both endpoints match the text; reject them when the endpoints are swapped or rounded into a different story.",
+          "**C) A firm reporting it has \"reshored part of its production\" is not automatically the same, by the passage's own logic, as a firm that has completed a full transition.**\n\nSurvey language of reshoring \"at least part\" of production (Paragraph 2) and the sharp drop from announced plans to completed shifts (Paragraph 5) both warn against equating partial or announced moves with a finished full transition. \"At least part\" already builds a partial-versus-full distinction into the reporting metric itself.\n\nThe caution matches the claim, so it holds. Keep partial reports and full completed transitions as separate statuses whenever the passage uses both framings.",
+          "**D) Because nearshoring benefited Mexico, the passage implies Mexican labour costs converged with those in the United States.**\n\nMexico's benefit is tied to proximity and cost savings versus full US domestic production — not to Mexican wages meeting US wages. Wage-ratio language elsewhere concerns US–China, not Mexico–US. The \"because…implies\" leap invents a wage-convergence claim the Mexico paragraph never makes.\n\nThe wage-convergence implication is unsupported, so the statement fails. Do not transplant Paragraph 4's US–China ratio onto Mexico's nearshoring appeal.",
+          "**E) Since reshored production costs more per unit, the passage implies that reduced profit margins are the only way firms can absorb that extra cost.**\n\nParagraph 8 lists remaining absorption via \"reduced profit margins or offset by automation-driven productivity gains\" — two paths, not one exclusive door. \"Or\" after margins is the grammatical block on any \"only way\" reading.\n\n**Trap:** \"Only way\" collapses an or-list. Extra cost does not automatically mean a single absorption mechanism.\n\nThe exclusivity twist contradicts the dual offset, so the inference is false."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.4.05",
+        "id": "en-t-4-05",
+        "title": "Task 5",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The gap between high reported reshoring intentions and low actual completion rates suggests some firms discuss reshoring more readily than they execute it.",
+          "The average delay of roughly 18 months beyond original targets is consistent with the passage's broader caution against taking announced reshoring intentions at face value.",
+          "Because friend-shoring is distinguished from genuine reshoring, and because Vietnam's import share grew, it follows that Vietnam itself has become a genuine reshoring destination for US manufacturers.",
+          "The narrowing labour cost ratio helps explain why reshoring has become more feasible, even though the passage still treats reshored production as costlier overall.",
+          "Because the passage raises genuine uncertainty about whether this shift is durable, it can be concluded that the statistical trends presented earlier must therefore be considered unreliable."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The gap between high reported reshoring intentions and low actual completion rates suggests some firms discuss reshoring more readily than they execute it.**\n\nParagraph 5 cautions against taking announced intentions \"at face value\" and shows only 15% finishing on the stated timeline. That gap between talk and finished relocation supports reading announcements as easier than execution. The face-value warning is the passage's own licence for this talk-versus-done inference.\n\nThe synthesis stays inside the passage's own caution, so the claim is true. Do not stretch it into a claim that no firm ever completes a move — only that announcement outruns timely completion.",
+          "**B) The average delay of roughly 18 months beyond original targets is consistent with the passage's broader caution against taking announced reshoring intentions at face value.**\n\nThe same paragraph pairs the face-value warning with \"average delays of roughly 18 months beyond their initial targets.\" The delay is concrete evidence for that caution, not a rival story. Firms missing the original timeframe by about a year and a half is exactly why announced plans should not be read as finished facts.\n\nThe numeric detail reinforces the warning, so the statement holds. Link the 18-month figure back to the caution sentence rather than treating it as a free-standing trivia fact.",
+          "**C) Because friend-shoring is distinguished from genuine reshoring, and because Vietnam's import share grew, it follows that Vietnam itself has become a genuine reshoring destination for US manufacturers.**\n\nVietnam's rising share illustrates \"a rerouting… away from China rather than a repatriation of manufacturing to the United States itself.\" Friend-shoring is third-country diversification; calling Vietnam \"genuine reshoring\" flips that distinction. The premises are true; the \"it follows\" conclusion renames diversification as home-country return.\n\n**Trap:** Rising third-country hubs ≠ home-country return. Growth of Vietnam's import share is evidence of rerouting, not of US reshoring.\n\nThe conclusion mislabels Vietnam as reshoring, so it fails.",
+          "**D) The narrowing labour cost ratio helps explain why reshoring has become more feasible, even though the passage still treats reshored production as costlier overall.**\n\nParagraph 4 presents the narrowed ratio as making the shift \"more feasible,\" while Paragraph 8 still prices reshored units 20–25% above the offshored equivalent. Feasible-er and still costlier can both be true. Narrower differentials reduce the penalty; they do not erase the remaining premium the later paragraph names.\n\nThe two claims coexist in the text, so the synthesis stands. Accept \"more feasible yet still costlier\" when each half is anchored in its paragraph.",
+          "**E) Because the passage raises genuine uncertainty about whether this shift is durable, it can be concluded that the statistical trends presented earlier must therefore be considered unreliable.**\n\nParagraph 9 debates durability — structural reversal versus temporary shock — without questioning whether the earlier survey percentages or FDI figures are accurate. Uncertain future is not the same as unreliable past data. The \"active debate\" is about interpretation of the reordering's lastingness, not about whether 62% or USD 35 billion were miscounted.\n\nThe leap from debate-about-future to \"statistics are unreliable\" invents a charge the text never makes, so the claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.4.08",
+        "id": "en-t-4-08",
+        "title": "Task 8",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "\"Despite of the higher costs involved, several firms proceeded with relocation plans.\"",
+          "\"Whoever oversees the transition should account for delays typically involved in construction.\"",
+          "\"The firm denied having deliberately overstated its reshoring progress.\"",
+          "\"There is several reasons why completion rates remained so low.\"",
+          "\"The initiative, which was funded over several years, aims to expand domestic capacity.\""
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Despite of the higher costs involved, several firms proceeded with relocation plans.\"**\n\n\"Despite\" never takes \"of\"; the paired idiom is \"in spite of.\" Written \"Despite of\" is a fusion error. The preposition belongs only with \"in spite,\" not with standalone \"despite.\"\n\n**Trap:** Cross-contamination from \"in spite of.\" If you hear \"of,\" you need the full \"in spite of\" phrase, not \"despite of.\"\n\nRepair to \"Despite the higher costs…\" or \"In spite of the higher costs…,\" so the line fails.",
+          "**B) \"Whoever oversees the transition should account for delays typically involved in construction.\"**\n\n\"Whoever\" correctly heads the subject clause; \"oversees\" agrees with that indefinite singular subject, and \"should account\" is a natural predicate for the whole clause. The free relative occupies subject position, so no extra pronoun (\"he who\") is required.\n\nThe free-relative subject is formed properly, so the sentence is sound. Keep singular verb agreement with \"whoever\" unless a clearly plural referent is forced.",
+          "**C) \"The firm denied having deliberately overstated its reshoring progress.\"**\n\nAfter \"denied,\" the perfect gerund \"having…overstated\" correctly marks a prior alleged act. Adverb placement (\"deliberately\") inside the gerund is natural. \"Denied\" + -ing (or having + past participle) is the standard pattern for rejecting a past accusation.\n\nThe verb pattern matches the meaning, so the wording holds. Prefer the gerund form after deny rather than a bare that-clause with the wrong tense.",
+          "**D) \"There is several reasons why completion rates remained so low.\"**\n\nExistential \"there\" agreement tracks the notional noun: plural \"reasons\" needs \"There are,\" not \"There is.\" The postponed subject \"several reasons\" controls the verb, not the dummy \"there.\"\n\n**Trap:** Habitual \"there's\" in speech before plural nouns. Formal writing restores \"there are\" before plural heads.\n\nRepair to \"There are several reasons…,\" so the sentence fails.",
+          "**E) \"The initiative, which was funded over several years, aims to expand domestic capacity.\"**\n\nSingular \"initiative\" takes singular verbs in both the relative clause (\"was funded\") and the main clause (\"aims\"). The non-restrictive clause is well attached. Commas around \"which was funded…\" mark extra information without changing the subject's number.\n\nAgreement stays consistent, so the sentence is true. Match both the relative verb and the main verb to the same singular head."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.4.09",
+        "id": "en-t-4-09",
+        "title": "Task 9",
+        "subsection": "t.4",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "\"The strategy aimed to strengthen resilience by concentrating production in a single overseas facility.\"",
+          "\"The narrowing cost gap made relocation more economically viable for several manufacturers.\"",
+          "\"Government funding was allocated to expand domestic production capacity in strategic sectors.\"",
+          "\"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"",
+          "\"Automation helped offset rising domestic costs by improving overall productivity.\""
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"The strategy aimed to strengthen resilience by concentrating production in a single overseas facility.\"**\n\nIn this bank's supply-chain sense, resilience is built by reducing single-source exposure, not by concentrating everything in one overseas plant. The sentence uses \"resilience\" with the opposite strategy. Paragraph 1's single-source justin-time model is exactly the vulnerability concentrating production recreates.\n\n**Trap:** Putting all eggs in one \"efficient\" basket looks decisive but is the vulnerability the passage describes. Resilience collocates with diversification, not with deeper single-facility concentration.\n\nThe collocation reverses the established meaning, so the wording fails.",
+          "**B) \"The narrowing cost gap made relocation more economically viable for several manufacturers.\"**\n\n\"Narrowing cost gap\" plus \"more economically viable\" tracks the passage logic that a smaller labour-cost differential makes relocation more feasible. The adjectives and nouns match ordinary usage. Paragraph 4's \"more feasible by a narrowing cost differential\" is the same idea in near-synonyms.\n\nThe meaning lines up with the established sense, so the sentence stands. Accept viable/feasible paraphrases when they stay tied to a narrower cost gap.",
+          "**C) \"Government funding was allocated to expand domestic production capacity in strategic sectors.\"**\n\n\"Allocated…to expand…capacity\" is the same natural funding collocation used for the CHIPS / Chips Acts. Nothing is twisted. The passage's \"USD 52 billion in subsidies to expand domestic semiconductor manufacturing capacity\" is the model for this wording.\n\nThe wording matches standard use, so it is true. Keep allocate/subsidise paired with expanding capacity, not with eliminating all cost gaps.",
+          "**D) \"The firm's diversification strategy left it wholly dependent on a single foreign supplier.\"**\n\nDiversification means spreading exposure across sources; \"wholly dependent on a single foreign supplier\" is concentration, the opposite outcome. The sentence forces contradictory poles into one strategy label. In the passage, diversification is the move toward allied third countries — the opposite of single-supplier dependence.\n\nThat clash of meanings overturns the claim. Reject any item that defines diversification as ending in sole dependence.",
+          "**E) \"Automation helped offset rising domestic costs by improving overall productivity.\"**\n\n\"Offset…by improving…productivity\" is a standard collocation and matches how the passage describes automation absorbing part of the reshoring cost gap. Paragraph 8's \"offset by automation-driven productivity gains\" is the direct text anchor.\n\nThe usage is natural and text-aligned, so the sentence holds. Treat offset + productivity as a valid cost-gap absorption phrase in this bank."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.4.06",
+        "id": "en-t-4-06",
+        "title": "Task 6",
+        "subsection": "t.4",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had firms not diversified their supplier base earlier, the disruption would have proven even more severe.\"",
+          "\"The board recommended that the company reassesses its exposure to single-source suppliers.\"",
+          "\"The number of manufacturers reconsidering their sourcing strategy continue to grow.\"",
+          "\"Neither the subsidy nor the tax credits were enough to fully offset the higher labour costs.\"",
+          "\"Having relocated part of its production, the firm reduced its exposure to shipping disruptions.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had firms not diversified their supplier base earlier, the disruption would have proven even more severe.\"**\n\nThis is a well-formed third conditional with inverted protasis: \"Had firms not diversified…\" stands for \"If firms had not diversified…,\" and the main clause correctly uses \"would have proven.\" No auxiliary is missing, and the time sequence (earlier diversification → past disruption counterfactual) is coherent. Inversion after omitted \"if\" is standard in formal written English for this pattern.\n\nThe inverted conditional is formed correctly, so the sentence is sound. Check that past perfect sits in the inverted clause and \"would have\" + past participle sits in the result clause.",
+          "**B) \"The board recommended that the company reassesses its exposure to single-source suppliers.\"**\n\nAfter \"recommended that,\" English prefers the subjunctive (or mandative) base form: \"reassess,\" not indicative \"reassesses.\" The plural-looking third-person -s marks the wrong mood. The board's recommendation is a demand-like clause, so present-indicative agreement is the wrong reflex.\n\n**Trap:** Normal present-tense agreement after recommend/suggest + that. The subject \"company\" still takes the bare verb in the mandative pattern.\n\nRepair to \"…that the company reassess…,\" so the line as written fails.",
+          "**C) \"The number of manufacturers reconsidering their sourcing strategy continue to grow.\"**\n\nThe grammatical subject is singular \"The number,\" so the verb must be \"continues,\" not plural \"continue.\" What follows \"of\" does not control agreement. \"Manufacturers\" is only the prepositional complement; it cannot license a plural verb.\n\nSubject–verb agreement collapses here; the sound version is \"…continues to grow,\" so the sentence fails. Train the eye on \"the number of\" → singular versus \"a number of\" → plural.",
+          "**D) \"Neither the subsidy nor the tax credits were enough to fully offset the higher labour costs.\"**\n\nWith \"neither…nor,\" the verb commonly agrees with the nearer noun. Here \"tax credits\" is plural, so \"were\" is the expected choice. Had the nearer noun been singular \"subsidy,\" \"was\" would be the matching form instead.\n\nProximity agreement is applied correctly, so the wording stands. Always check which noun sits immediately before the verb in a neither–nor pair.",
+          "**E) \"Having relocated part of its production, the firm reduced its exposure to shipping disruptions.\"**\n\nThe participial opener \"Having relocated…\" attaches to \"the firm,\" which is logically the relocator — no dangling modifier. Perfect participle plus past main clause is a clean sequence. The -ing phrase names an earlier completed action by the same subject that then \"reduced\" exposure.\n\nThe participle and subject line up, so the sentence is true. Reject the pattern only when the opener's implied agent differs from the main-clause subject."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.4.07",
+        "id": "en-t-4-07",
+        "title": "Task 7",
+        "subsection": "t.4",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the factory reopened than orders began to resume.\"",
+          "\"The subsidy, along with several tax incentives, were introduced to accelerate the transition.\"",
+          "\"Each of the surveyed manufacturers have reported some disruption to their supply chain.\"",
+          "\"By the time the program concludes, several new facilities will have already opened.\"",
+          "\"The data, which were gathered across multiple sectors, point to a broadly consistent pattern.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the factory reopened than orders began to resume.\"**\n\n\"No sooner…than\" correctly triggers inversion (\"had the factory reopened\") and pairs past perfect with a following simple past (\"began\"). The correlative \"than\" (not \"when\") is the right partner. Fronted \"No sooner\" forces the auxiliary before the subject, which this sentence does.\n\nThe correlative inversion pattern is intact, so the sentence holds. Memorise the pair as \"no sooner…than,\" never \"no sooner…when.\"",
+          "**B) \"The subsidy, along with several tax incentives, were introduced to accelerate the transition.\"**\n\n\"Along with several tax incentives\" is a parenthetical add-on; the head subject remains singular \"The subsidy,\" which needs \"was introduced,\" not \"were.\" Commas around the along-with phrase mark it as non-head material that cannot flip agreement.\n\n**Trap:** The nearest plural noun after the comma steals agreement. Ignore \"tax incentives\" for verb number; stay with \"subsidy.\"\n\nRepair to \"…was introduced…,\" so the written verb fails.",
+          "**C) \"Each of the surveyed manufacturers have reported some disruption to their supply chain.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows: \"has reported,\" not \"have reported.\" \"Each\" is the true subject head; \"manufacturers\" only completes the of-phrase.\n\nAgreement is wrong for \"each\"; the sentence does not stand. Same singular rule applies to \"every\" and \"either of\" in this exam bank.",
+          "**D) \"By the time the program concludes, several new facilities will have already opened.\"**\n\n\"By the time\" plus a future reference point calls for future perfect to mark completion before that point: \"will have…opened\" is the right shape, with \"already\" naturally sitting inside it. Simple future \"will open\" would not mark the before-deadline completion as clearly.\n\nThe future-perfect framing fits the deadline, so the wording is true. Use will have + past participle whenever completion is framed as finished by a future milestone.",
+          "**E) \"The data, which were gathered across multiple sectors, point to a broadly consistent pattern.\"**\n\nHere \"data\" is treated as plural throughout: \"were gathered\" and plural \"point\" agree with that choice. The relative clause and main verb stay consistent. Switching to singular \"was…points\" would also be a coherent house style, but mixing plural and singular would not.\n\nPlural treatment of \"data\" is applied cleanly, so the sentence stands. Consistency of number across clause and main verb is the test."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.4.10",
+        "id": "en-t-4-10",
+        "title": "Task 10",
+        "subsection": "t.4",
+        "context": "Consider this sentence from the passage: \"Reshoring moves production closer to final markets after firms reassess distant supply chains.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "\"Friend-shoring refers to relocating production entirely back to one's own home country.\"",
+          "\"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"",
+          "\"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"",
+          "\"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"",
+          "\"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\""
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Friend-shoring refers to relocating production entirely back to one's own home country.\"**\n\nIn the passage, friend-shoring is diversification toward allied or trusted third countries, expressly contrasted with a \"genuine return of production to the home country.\" Home-country return is reshoring proper, not friend-shoring. The definition in the claim erases that contrast and steals reshoring's meaning.\n\n**Trap:** Any \"-shoring\" word can be misread as \"bring it all home.\" Friend-shoring keeps production abroad among trusted partners.\n\nThe definition swaps friend-shoring for genuine reshoring, so the claim fails.",
+          "**B) \"The company's exposure to single-source risk was reduced after diversifying its supplier base.\"**\n\nDiversifying the supplier base and reducing single-source exposure are the paired meaning the passage builds from Paragraph 1's vulnerability. The causal link is ordinary and correct. Concentrated justin-time single sourcing was the fragile setup; spreading suppliers is the resilience move.\n\nThe wording matches established usage, so the sentence is true. Keep diversify and reduce single-source risk as matching collocations.",
+          "**C) \"The subsidy was described as sufficient to fully eliminate the cost gap between relocated and offshored production.\"**\n\nThe text never says subsidies wipe out the gap; reshored production still costs \"20% and 25% more per unit,\" with only a modest consumer share and margins/automation covering the rest. \"Fully eliminate\" invents a claim. Policy can accelerate capacity without erasing the unit-cost premium.\n\nThat absolute wipeout overstates what subsidies do in the passage, so the statement fails. Reject \"fully eliminate\" whenever the text still prices a 20–25% premium.",
+          "**D) \"Reshored production is generally described in the passage as costlier per unit than its offshored equivalent.\"**\n\nParagraph 8 states reshored production costs \"between 20% and 25% more per unit than the offshored equivalent.\" \"Costlier per unit\" is a faithful paraphrase. \"Generally\" here simply reflects that average estimate, not a claim that every product category matches the same exact percentage.\n\nThe cost comparison matches the text, so the claim holds. Anchor on the more-per-unit wording rather than on how much of the gap reaches consumers.",
+          "**E) \"The trend's long-term durability is treated in the passage as a matter of active, unresolved debate.\"**\n\nThe close of Paragraph 9 says whether the reordering is durable or temporary \"remains a matter of active debate among economists.\" \"Unresolved debate\" tracks that framing. The passage leaves structural reversal versus temporary shock open; it does not close the question.\n\nThe sentence mirrors the passage conclusion, so it stands. Do not upgrade the debate into a firm verdict that the shift is either permanent or finished."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.4.19",
+        "id": "en-g-4-19",
+        "title": "Task 19",
+        "subsection": "g.4",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "The chef must have been about to plate the dessert when the power cut hit.",
+          "You needn’t to have packed both jumpers and a heavy coat.",
+          "They could have been going to cycle the coastal path before the wind rose.",
+          "The map should not of omitted the footbridge over the creek.",
+          "We may as well have walked for all the good the crowded bus did."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The chef must have been about to plate the dessert when the power cut hit.**\n\n\"Must have been about to plate\" correctly deduces an imminent past plan interrupted by the power cut. \"Be about to\" can sit inside a modal perfect for near-future-in-the-past deductions. The when-clause supplies the interrupt that freezes the imminent action.\n\nA power cut freezing an imminent plating is exactly \"must have been about to,\" so the wording is **true**.\n",
+          "**B) You needn’t to have packed both jumpers and a heavy coat.**\n\n**Trap:** Drop the \"to\": write \"needn't have packed,\" not \"needn't to have packed.\" Modal \"need not / needn't\" never takes \"to\" before the verb chain, even in modal perfect. Unnecessary double packing is the meaning; the illicit \"to\" is the only fail.\n\nModal \"needn't\" never takes \"to\" before the perfect chain, so this is **false** — \"You needn't have packed both jumpers and a heavy coat.\"\n",
+          "**C) They could have been going to cycle the coastal path before the wind rose.**\n\n\"Could have been going to cycle\" hedges a past intention to ride the coastal path that never completed once the wind rose. \"Be going to\" nests under modal perfects for aborted plans. Soft force fits an intention that the wind cut short.\n\nWind cutting short a coastal plan nests under soft \"could have been going to,\" so the sentence is **true**.\n",
+          "**D) The map should not of omitted the footbridge over the creek.**\n\n**Trap:** \"Should not of omitted\" must be \"should not have omitted.\" Negation does not change the helper — still \"have,\" never \"of,\" after a modal. Past criticism of the map is clear; only the spelling fails.\n\nNegation does not turn the helper into \"of,\" so the wording is **false** — \"The map should not have omitted the footbridge over the creek.\"\n",
+          "**E) We may as well have walked for all the good the crowded bus did.**\n\n\"May as well have walked\" idiomatically means the crowded bus achieved nothing useful — walking would have made little difference. The ironic past idiom is standard. \"For all the good…\" cues the \"little difference\" reading.\n\n**Tip:** \"May as well have\" + past participle → ironic \"it would have made little difference.\"\n\nA pointless crowded bus is the ironic reading of \"may as well have,\" so this line is **true**.\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.MOCK.LOGICQ",
+      "id": "MATH 1.MOCK.LOGICQ",
+      "title": "Even–multiple sets — five unlike logic traps",
+      "chapter": 1,
+      "subsection": "1.3",
+      "context": "Let $U=\\{1,2,3,\\ldots,12\\}$. Define\n$A=\\{n\\in U: n\\text{ is even}\\}$,\n$B=\\{n\\in U: n\\text{ is a multiple of }3\\}$,\n$C=\\{n\\in U: n\\text{ is a multiple of }4\\}$,\nand let $P(n)$ mean “$n\\in A$” while $Q(n)$ means “$n\\in B$”.\n\nDecide whether each claim is true or false.",
+      "statements": [
+        "The set $A\\cup B$ contains exactly eight elements of $U$.",
+        "Every element of $C$ automatically belongs to $A$, but the converse fails: some element of $A$ lies outside $C$.",
+        "Every common element of $A$ and $B$ also belongs to $C$.",
+        "There exists an even element of $U$ that is a multiple of $4$ yet is not a multiple of $3$.",
+        "Whenever $P(n)$ and $Q(n)$ both hold, $n$ must lie in $C$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite down the two sets explicitly before counting. The even members of $U={1,\\ldots,12}$ are\n\n$$\nA={2,4,6,8,10,12},\n$$\n\nso $|A|=6$. The multiples of $3$ in the same universe are\n\n$$\nB={3,6,9,12},\n$$\n\nso $|B|=4$. Their overlap is only the multiples of $6$ inside $U$:\n\n$$\nA\\cap B={6,12},\\qquad |A\\cap B|=2.\n$$\n\nInclusion–exclusion then removes the double-count:\n\n$$\n|A\\cup B|=|A|+|B|-|A\\cap B|=6+4-2=8.\n$$\n\nYou can also list the union by hand — ${2,3,4,6,8,9,10,12}$ — and count eight elements the slow way; both routes agree. The claim that $A\\cup B$ contains exactly eight elements of $U$ is therefore correct.\n\nSo the statement is True.",
+        "**B.** → True\n\nEvery multiple of $4$ is even, so $C\\subseteq A$. The even number $2$ lies in $A$ but not in $C$, so the converse fails exactly as the claim says.\n\n$$\nC={4,8,12}\\subseteq A,\\qquad 2\\in A\\setminus C\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nCommon elements of $A$ and $B$ are the multiples of $6$ in $U$:\n\n$$\nA\\cap B={6,12}.\n$$\n\nAsk whether each of them also sits in $C={4,8,12}$. The element $12$ does, but $6$ does not:\n\n$$\n6\\in A\\cap B\\quad\\text{and}\\quad 6\\notin C.\n$$\n\nOne counterexample is enough to kill the inclusion $A\\cap B\\subseteq C$, so the claim is false.\n\nSo the statement is False.",
+        "**D.** → True\n\nAn existential claim needs one witness. Take $n=4$: even (in $A$), a multiple of $4$ (in $C$), and not a multiple of $3$ (outside $B$).\n\n$$\n4\\in A\\cap C,\\qquad 4\\notin B\n$$\n\nThat single example proves existence ($n=8$ works the same way).\n\nSo the statement is True.",
+        "**E.** → False\n\nTranslate the predicates carefully. $P(n)$ means $n\\in A$ and $Q(n)$ means $n\\in B$, so the hypothesis $P(n)\\wedge Q(n)$ is exactly membership in the intersection $A\\cap B$. The claim asserts the universal implication\n\n$$\n\\forall n\\in U:\\quad \\bigl(P(n)\\wedge Q(n)\\bigr)\\Rightarrow n\\in C,\n$$\n\nwhich is the same as $A\\cap B\\subseteq C$. We already know that inclusion fails: the intersection is ${6,12}$, and $6$ is not a multiple of $4$. Explicitly,\n\n$$\nP(6)\\text{ holds},\\quad Q(6)\\text{ holds},\\quad\\text{yet}\\quad 6\\notin C={4,8,12}.\n$$\n\nA single witness where the hypothesis is true and the conclusion is false falsifies a universal implication, so the statement does not hold.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$|A\\cup B|=8$. $C\\subseteq A\\neq$ converse. $6\\in A\\cap B\\setminus C$. Exists $4\\in A\\cap C\\setminus B$. $P\\wedge Q\\not\\Rightarrow$ in $C$."
+    },
+    {
+      "case_id": "MATH 2.MOCK.RATSIM",
+      "id": "MATH 2.MOCK.RATSIM",
+      "title": "Cubic cancellation chain — removable holes and derived $H$",
+      "chapter": 2,
+      "subsection": "2.2",
+      "context": "Define, wherever the expressions make sense,\n\n$$\nE(x)=\\dfrac{x^{3}-8}{x-2},\\qquad F(x)=x^{2}+2x+4,\\qquad H(x)=\\dfrac{E(x)-12}{x-2}.\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$E(x)=F(x)$ holds for every real number $x$.",
+        "For every $x\\neq 2$ one has $E(x)=F(x)$, and $\\lim_{x\\to 2}E(x)=F(2)$.",
+        "For every $x\\neq 2$ one has $H(x)=x+4$.",
+        "The original formula for $H$ is defined at $x=2$ and equals $6$.",
+        "$E(3)=19$ and $F(3)=19$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nFactor $x^{3}-8=(x-2)(x^{2}+2x+4)$. After cancelling, $E$ matches $F$ only for $x\\neq 2$. At $x=2$, $E$ is undefined while $F(2)=12$ is fine, so they are not identical on all of $\\mathbb{R}$.\n\n$$\nE(x)=F(x)\\quad\\text{only when }x\\neq 2\n$$\n\nSo the statement is False.",
+        "**B.** → True\n\nStart from the difference of cubes in the numerator of $E$:\n\n$$\nx^{3}-8=(x-2)(x^{2}+2x+4).\n$$\n\nFor every $x\\neq 2$ the factor $x-2$ cancels against the denominator, and what remains is exactly the quadratic $F$:\n\n$$\nE(x)=\\dfrac{(x-2)(x^{2}+2x+4)}{x-2}=x^{2}+2x+4=F(x)\\qquad(x\\neq 2).\n$$\n\nThat settles the first half of the claim. For the limit, the same cancellation shows that $E$ has a removable hole at $x=2$, and the continuous extension is the polynomial $F$ itself:\n\n$$\n\\lim_{x\\to 2}E(x)=F(2)=2^{2}+2\\cdot 2+4=4+4+4=12.\n$$\n\nBoth pieces — equality off $x=2$, and matching limit equal to $F(2)$ — hold, so the full statement is true.\n\nSo the statement is True.",
+        "**C.** → True\n\nWherever $x\\neq 2$, letter B already gives $E(x)=F(x)=x^{2}+2x+4$. Subtract $12$ from that polynomial:\n\n$$\nE(x)-12=x^{2}+2x+4-12=x^{2}+2x-8.\n$$\n\nFactor the quadratic as $(x-2)(x+4)$, then cancel the remaining $x-2$ in the definition of $H$:\n\n$$\nH(x)=\\dfrac{(x-2)(x+4)}{x-2}=x+4\\qquad(x\\neq 2).\n$$\n\nThus $H(x)=x+4$ for every $x$ at which the original formula for $H$ is defined.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe written formula still divides by $x-2$ (and refers to $E$, which is itself undefined at $2$). Algebraic cancellation is not the same as the original expression being defined there, so it does not equal $6$.\n\n$$\nH(x)=\\dfrac{E(x)-12}{x-2}\\quad\\text{undefined at }x=2\n$$\n\nSo the statement is False.",
+        "**E.** → True\n\nNeither formula has a domain problem at $x=3$, so evaluate them separately and compare.\n\nFor $E$, plug into the original rational expression:\n\n$$\nE(3)=\\dfrac{3^{3}-8}{3-2}=\\dfrac{27-8}{1}=\\dfrac{19}{1}=19.\n$$\n\nFor $F$, expand the quadratic at the same point:\n\n$$\nF(3)=3^{2}+2\\cdot 3+4=9+6+4=19.\n$$\n\nThe two values match, and both equal $19$, which is exactly what the claim asserts. (You could also invoke letter B and note that $3\\neq 2$ forces $E(3)=F(3)$ automatically, then only compute one of the two numbers — but a direct check of both sides is enough on its own.)\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E=F$ off $2$ with removable hole. $H=x+4$ off $2$, but original $H$ undefined at $2$. $E(3)=F(3)=19$."
+    },
+    {
+      "case_id": "MATH 3.MOCK.MORT5",
+      "id": "MATH 3.MOCK.MORT5",
+      "title": "Six-payment loan — staggered interest and half-life of principal",
+      "chapter": 3,
+      "subsection": "3.6",
+      "context": "A loan of EUR $87500$ is repaid by six equal year-end payments at annual effective rate $7.5\\%$. Let $A$ be the payment and $B_k$ the outstanding principal immediately after the year-$k$ payment ($B_0=87500$).\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The level payment $A$ lies strictly between EUR $18500$ and EUR $18800$.",
+        "Interest in year $1$ exceeds interest in year $2$ by strictly more than EUR $900$.",
+        "Immediately after the third payment, more than half of the original principal is still outstanding.",
+        "Interest charged in year $5$ is strictly less than EUR $2600$.",
+        "Total interest paid over the six years is strictly less than EUR $24000$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA six-payment level annuity that amortises principal $87500$ at effective annual rate $7.5%$ has payment\n\n$$\nA=87500\\cdot\\dfrac{0.075}{1-1.075^{-6}}.\n$$\n\nCompute the discount factor carefully. First raise $1.075$ to the sixth power:\n\n$$\n1.075^{2}=1.155625,\\qquad 1.075^{4}=(1.155625)^{2}\\approx 1.3355,\n$$\n\n$$\n1.075^{6}=1.075^{4}\\cdot 1.075^{2}\\approx 1.3355\\cdot 1.155625\\approx 1.5433,\n$$\n\nso $1.075^{-6}\\approx 1/1.5433\\approx 0.6480$. The annuity denominator is then\n\n$$\n1-1.075^{-6}\\approx 1-0.6480=0.3520,\n$$\n\nand\n\n$$\nA\\approx 87500\\cdot\\dfrac{0.075}{0.3520}\\approx 87500\\cdot 0.21307\\approx 18641.\n$$\n\nThe payment $18641$ lies strictly between $18500$ and $18800$, so the claim holds.\n\nSo the statement is True.",
+        "**B.** → True\n\nYear-$1$ interest is $0.075\\cdot 87500=6562.5$. After the first payment the balance is about $75421$, so year-$2$ interest is about $5657$. The gap is about $906>900$.\n\n$$\nI_{1}-I_{2}\\approx 905.9>900\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nRoll the outstanding principal forward payment by payment, starting from $B_{0}=87500$ and using the level payment $A\\approx 18641$ from letter A.\n\nAfter year $1$:\n\n$$\nB_{1}=87500\\cdot 1.075-A\\approx 94062.5-18641\\approx 75421.\n$$\n\nAfter year $2$:\n\n$$\nB_{2}=B_{1}\\cdot 1.075-A\\approx 81078-18641\\approx 62436.\n$$\n\nAfter year $3$:\n\n$$\nB_{3}=B_{2}\\cdot 1.075-A\\approx 67119-18641\\approx 48478.\n$$\n\nHalf of the original principal is\n\n$$\n\\tfrac12\\cdot 87500=43750.\n$$\n\nSince $48478>43750$, more than half of the original principal is still outstanding immediately after the third payment. The claim is therefore true.\n\nSo the statement is True.",
+        "**D.** → True\n\nInterest in year $5$ is charged on the balance just after the fourth payment. Continuing the amortization from letter C,\n\n$$\nB_{4}=B_{3}\\cdot 1.075-A\\approx 52114-18641\\approx 33472,\n$$\n\nand therefore\n\n$$\nI_{5}=0.075\\cdot B_{4}\\approx 0.075\\cdot 33472\\approx 2510.\n$$\n\nThe threshold in the claim is $2600$, and $2510<2600$, so year-$5$ interest is strictly less than EUR $2600$.\n\nSo the statement is True.",
+        "**E.** → False\n\nTotal interest is six payments minus principal: $6A-87500\\approx 111846-87500=24346>24000$.\n\n$$\n6A-87500\\approx 24349>24000\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$A\\approx 18641$. Interest gap year1−year2 $\\approx 906$. $B_3>43750$. Year-5 interest $\\approx 2510$. Total interest $\\approx 24349$."
+    },
+    {
+      "case_id": "MATH 4.MOCK.EQPACK",
+      "id": "MATH 4.MOCK.EQPACK",
+      "title": "Two easy linear equations — unique solution checks",
+      "chapter": 4,
+      "subsection": "4.1",
+      "context": "Consider the two linear equations\n\n$$\nx+y=7,\\qquad 2x-y=5.\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The pair $(x,y)=(4,3)$ solves both equations at once.",
+        "The system has exactly one real solution.",
+        "In the solution, $x$ is strictly larger than $y$.",
+        "The product of the two solution coordinates equals $12$.",
+        "There is a second distinct real solution besides $(4,3)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPlug $(4,3)$ into each equation separately. The first line gives $4+3=7$, and the second gives $2\\cdot 4-3=8-3=5$:\n\n$$\n4+3=7,\\qquad 8-3=5\n$$\n\nBoth hold at once, so the pair really is a joint solution.\n\nSo the statement is True.",
+        "**B.** → True\n\nTreat the pair as a genuine $2\\times 2$ linear system and solve it from scratch, without assuming the candidate from letter A.\n\nAdd the two equations so the $y$-terms cancel:\n\n$$\n(x+y)+(2x-y)=7+5,\n$$\n\nwhich simplifies at once to\n\n$$\n3x=12\\Rightarrow x=4.\n$$\n\nSubstitute $x=4$ back into the first equation:\n\n$$\n4+y=7\\Rightarrow y=3.\n$$\n\n(As a check, the second equation gives $2\\cdot 4-y=5$, so $8-y=5$ and again $y=3$.) The coefficient matrix has rows $(1,1)$ and $(2,-1)$; their determinant is\n\n$$\n1\\cdot(-1)-1\\cdot 2=-3\\neq 0,\n$$\n\nso the system is non-degenerate and this pair is the unique real solution. In particular there cannot be a continuum of solutions or a second distinct intersection point.\n\nSo the statement is True.",
+        "**C.** → True\n\nLetter B already forces the unique solution $(x,y)=(4,3)$. Comparing coordinates is then immediate:\n\n$$\nx=4>3=y\n$$\n\nUniqueness means no other candidate could reverse the inequality, so $x>y$ holds.\n\nSo the statement is True.",
+        "**D.** → True\n\nFrom the solution $(4,3)$ already forced in letter B, form the product of the two coordinates. No further equation-solving is needed — just multiply:\n\n$$\nx\\cdot y=4\\cdot 3=12.\n$$\n\nThe product equals $12$ on the nose, which is exactly the claim. (If you prefer a symmetric route: from $x+y=7$ and $xy=?$, the second equation $2x-y=5$ together with $x+y=7$ again yields $x=4$, $y=3$, and the same product.)\n\nSo the statement is True.",
+        "**E.** → False\n\nTwo distinct lines intersect in at most one point. These lines have slopes $-1$ and $2$, so they are not parallel, and their unique intersection is already $(4,3)$. There is no second distinct real solution.\n\n$$\n\\text{unique solution}=(4,3)\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "solution_overview": "Unique solution $(4,3)$. $x>y$, product $12$, no second root."
+    },
+    {
+      "case_id": "MATH 5.MOCK.LIN2",
+      "id": "MATH 5.MOCK.LIN2",
+      "title": "Verbal two-line schedule — feasibility without plugging pairs",
+      "chapter": 5,
+      "subsection": "5.10",
+      "context": "A planner allocates non-negative hours $x$ on line A and $y$ on line B. The brief is given only in words, with a real parameter $t$:\n\n- Twice the A-hours plus the B-hours must equal $t$.\n- The B-hours must equal the A-hours plus $2$.\n- Both hour totals must be at least $0$.\n\nDecide whether each statement is true or false. Do not treat the letters as invitations to guess a single numeric pair; reason from the structure.",
+      "statements": [
+        "For every real $t>0$ there exist feasible hours $x\\ge 0$, $y\\ge 0$ meeting both requirements.",
+        "Whenever a feasible pair exists, the B-hours strictly exceed the A-hours.",
+        "For a fixed $t$, at most one feasible pair $(x,y)$ can satisfy the brief.",
+        "The value $t=2$ admits a feasible schedule that uses no A-hours at all.",
+        "Raising the target $t$ by exactly $3$ increases each of $x$ and $y$ by exactly $1$, on the unique algebraic solution of the two equalities."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nTurn the two verbal requirements into equations first:\n\n$$\n2x+y=t,\\qquad y=x+2.\n$$\n\nEliminate $y$ by substituting the second into the first:\n\n$$\n2x+(x+2)=t\\qquad\\Rightarrow\\qquad 3x+2=t\\qquad\\Rightarrow\\qquad x=\\dfrac{t-2}{3}.\n$$\n\nThen\n\n$$\ny=x+2=\\dfrac{t-2}{3}+2=\\dfrac{t+4}{3}.\n$$\n\nNon-negativity $x\\ge 0$ forces $t\\ge 2$ (and then $y$ is automatically positive). The claim says every $t>0$ works. That is too wide: at $t=1$ one gets $x=-1/3<0$, so the schedule is not feasible. One counterexample is enough to kill a universal claim.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe brief itself already requires $y=x+2$. Adding $2$ to $x$ always produces a strictly larger B-total, so every feasible pair (in fact every algebraic pair) satisfies $y>x$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor a fixed target $t$, the two equalities are a $2\\times 2$ linear system with a unique algebraic solution $(x,y)$. The constraints $x\\ge 0$ and $y\\ge 0$ can only accept or reject that single pair — they never manufacture a second distinct solution. Hence at most one feasible schedule exists for each $t$.\n\nSo the statement is True.",
+        "**D.** → True\n\nFeed $t=2$ into the closed forms from letter A:\n\n$$\nx=\\dfrac{2-2}{3}=0,\\qquad y=\\dfrac{2+4}{3}=2.\n$$\n\nBoth hours are non-negative, and the A-line is idle ($x=0$). That is exactly a feasible zero-A schedule at $t=2$.\n\nSo the statement is True.",
+        "**E.** → True\n\nFrom\n\n$$\nx=\\dfrac{t-2}{3},\\qquad y=\\dfrac{t+4}{3},\n$$\n\nreplacing $t$ by $t+3$ adds $3$ to each numerator. Dividing by $3$ therefore adds exactly $1$ to both $x$ and $y$ on the unique algebraic solution of the two equalities.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Unique pair $x=(t-2)/3$, $y=(t+4)/3$. Feasible iff $t\\ge 2$. Always $y>x$. $+3$ in $t$ shifts both by $+1$."
+    },
+    {
+      "case_id": "MATH 6.MOCK.QUADRAT",
+      "id": "MATH 6.MOCK.QUADRAT",
+      "title": "Five unlike absolute-value and root claims",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Decide whether each claim is true or false. The five letters concern five different equations or inequalities.",
+      "statements": [
+        "The equation $|2x-1|=|x+3|$ has exactly two real solutions.",
+        "The equation $\\sqrt{x+3}=x-1$ has exactly two real solutions.",
+        "The inequality $|x-2|+|x+1|\\ge 3$ holds for every real number $x$.",
+        "The real number $x=7$ solves $\\sqrt[3]{x-1}=2$.",
+        "The inequality $|x^{2}-1|\\le 0$ has no real solution."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite $|2x-1|=|x+3|$ as the pair of linear cases $2x-1=x+3$ and $2x-1=-(x+3)$.\n\nFirst case: $x=4$. Second case: $2x-1=-x-3$, so $3x=-2$ and $x=-2/3$. Two distinct real roots — exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nBefore squaring, lock the domain. The square root needs $x+3\\ge 0$, and a principal square root is nonnegative, so the right-hand side must satisfy $x-1\\ge 0$. Altogether $x\\ge 1$.\n\nOn that half-line squaring is legitimate:\n\n$$\nx+3=(x-1)^{2}=x^{2}-2x+1\\qquad\\Rightarrow\\qquad x^{2}-3x-2=0.\n$$\n\nThe quadratic formula gives\n\n$$\nx=\\dfrac{3\\pm\\sqrt{17}}{2}.\n$$\n\nOnly the plus branch sits above $1$ (roughly $3.56$). The minus branch is negative, so it is outside the domain. Exactly one real solution survives — not two.\n\nSo the statement is False.",
+        "**C.** → True\n\nInterpret $|x-2|+|x+1|$ as the sum of distances from $x$ to the fixed points $2$ and $-1$. That sum is minimised on the closed segment joining those points, and on $[-1,2]$ it collapses to the constant\n\n$$\n(2-x)+(x+1)=3.\n$$\n\nOutside the segment the path is longer, so the sum exceeds $3$. Hence the inequality $\\ge 3$ holds for every real $x$.\n\nSo the statement is True.",
+        "**D.** → False\n\nCube both sides: $x-1=8$, so $x=9$. Cubing is bijective on $\\mathbb{R}$, so $x=9$ is the unique real root. The number $7$ is simply wrong.\n\nSo the statement is False.",
+        "**E.** → False\n\nAbsolute values are never negative, so $|u|\\le 0$ forces $u=0$. Here $u=x^{2}-1$, and $x^{2}-1=0$ yields $x=\\pm 1$. The solution set is nonempty, so the “no real solution” claim fails.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Abs eq: two roots. Radical eq: one root. Abs sum $\\ge 3$ always. Cube root needs $x=9$. $|x^{2}-1|\\le 0$ at $\\pm 1$."
+    },
+    {
+      "case_id": "MATH 7.MOCK.MEET",
+      "id": "MATH 7.MOCK.MEET",
+      "title": "Two-parameter line–parabola — tangency vs vertex conflict",
+      "chapter": 7,
+      "subsection": "7.6",
+      "context": "Let $f(x)=x^{2}-6x+k$ and $g(x)=2x+m$ with real parameters $k$ and $m$. Decide whether each statement is true or false.",
+      "statements": [
+        "The graphs are tangent if and only if $m=k-16$.",
+        "The vertex of $f$ lies on $g$ if and only if $m=k-15$.",
+        "There exist real $k$ and $m$ for which the graphs are tangent and the vertex of $f$ also lies on $g$.",
+        "If $k=10$ and $m=-6$, the graphs are tangent.",
+        "If $m=0$ and $k=20$, the equation $f(x)=g(x)$ has two distinct real roots."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nTangency of the parabola and the line means $f(x)=g(x)$ has a double root, so the discriminant of the difference must vanish. Form\n\n$$\nf(x)-g(x)=x^{2}-6x+k-(2x+m)=x^{2}-8x+(k-m).\n$$\n\nIts discriminant is\n\n$$\n\\Delta=64-4(k-m).\n$$\n\nSetting $\\Delta=0$ gives $k-m=16$, i.e. $m=k-16$. That is precisely the tangency criterion, both directions.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe axis of $f(x)=x^{2}-6x+k$ is $x=3$, so the vertex is the point $\\bigl(3,f(3)\\bigr)$ with $f(3)=k-9$. Asking that point to lie on $g$ means $g(3)=6+m$ equals $k-9$:\n\n$$\nk-9=6+m\\qquad\\Rightarrow\\qquad m=k-15.\n$$\n\nSo the vertex lies on the line if and only if $m=k-15$.\n\nSo the statement is True.",
+        "**C.** → False\n\nLetters A and B ask for $m=k-16$ and $m=k-15$ at once. Those two expressions for $m$ cannot agree for any real $k$. No such pair $(k,m)$ exists.\n\nSo the statement is False.",
+        "**D.** → True\n\nLetter A says tangency holds exactly when $m=k-16$. With $k=10$ that forces\n\n$$\nm=10-16=-6.\n$$\n\nThe given $m=-6$ matches, so the discriminant of $f-g$ vanishes and the graphs touch.\n\nSo the statement is True.",
+        "**E.** → False\n\nPlug $k=20$ and $m=0$ into the discriminant from letter A:\n\n$$\n\\Delta=64-4(20-0)=64-80=-16<0.\n$$\n\nNo real intersection at all, let alone two distinct roots of $f(x)=g(x)$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Tangent $\\Leftrightarrow m=k-16$. Vertex on line $\\Leftrightarrow m=k-15$. Cannot hold together. $k=10,m=-6$ tangent. $k=20,m=0$ misses."
+    },
+    {
+      "case_id": "MATH 8.MOCK.CALIB",
+      "id": "MATH 8.MOCK.CALIB",
+      "title": "Linked exponential rewrites — $f$, $g$, and composite $h$",
+      "chapter": 8,
+      "subsection": "8.4",
+      "context": "Define, for every real $t$,\n\n$$\nf(t)=2^{3t-1},\\qquad g(t)=\\dfrac{8^{t+1}}{4^{t-2}},\\qquad h(t)=\\bigl(f(t)\\bigr)^{2}\\cdot g(-t).\n$$\n\nDecide whether each statement is true or false. Work by rewriting every expression as a single power of $2$; do not guess from a single plugged-in number alone.",
+      "statements": [
+        "After rewriting, $g(t)=2^{t+7}$ holds for every real $t$, and therefore $f(t)=g(t)$ for every real $t$.",
+        "The identity $h(t)=2^{5t+5}$ holds for every real $t$.",
+        "The equation $f(t)=g(t)$ has exactly one real solution, namely $t=4$.",
+        "One has $f(2)>g(2)$.",
+        "The equation $h(t)=2^{10}$ has root $t=1$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nRewrite $g$ with base $2$:\n\n$$\ng(t)=\\dfrac{8^{t+1}}{4^{t-2}}=\\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=\\dfrac{2^{3t+3}}{2^{2t-4}}=2^{3t+3-(2t-4)}=2^{t+7}.\n$$\n\nThat confirms the first half of the claim. But $f(t)=2^{3t-1}$, and the exponents $3t-1$ and $t+7$ agree only when $2t=8$, i.e. only at $t=4$. The functions are not identical for every real $t$, so the “therefore $f\\equiv g$” leap is false.\n\nSo the statement is False.",
+        "**B.** → True\n\nUse $f(t)=2^{3t-1}$ and the rewrite $g(t)=2^{t+7}$ from A, but evaluate $g$ at $-t$:\n\n$$\nh(t)=\\bigl(2^{3t-1}\\bigr)^{2}\\cdot g(-t)=2^{6t-2}\\cdot 2^{-t+7}=2^{5t+5}.\n$$\n\nThe identity holds for every real $t$.\n\nSo the statement is True.",
+        "**C.** → True\n\nEquate the single-power forms: $2^{3t-1}=2^{t+7}$. Injectivity of the exponential forces $3t-1=t+7$, hence $t=4$. One real root only.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $t=2$, the single-power forms give $f(2)=2^{5}=32$ and $g(2)=2^{9}=512$:\n\n$$\n32<512\\qquad\\Rightarrow\\qquad f(2)<g(2).\n$$\n\nThe claim asserts $f(2)>g(2)$, which points the wrong way.\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom letter B, $h(t)=2^{5t+5}$. Set that equal to $2^{10}$:\n\n$$\n5t+5=10\\qquad\\Rightarrow\\qquad t=1.\n$$\n\nSo $t=1$ really is a root of $h(t)=2^{10}$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$g=2^{t+7}$, not identically $f$. $h=2^{5t+5}$. $f=g$ only at $t=4$. $f(2)<g(2)$. $h=2^{10}$ at $t=1$."
+    },
+    {
+      "case_id": "MATH 9.MOCK.FINDIF",
+      "id": "MATH 9.MOCK.FINDIF",
+      "title": "Four-row difference table — degree, leading term, false constancy",
+      "chapter": 9,
+      "subsection": "9.8",
+      "context": "A polynomial $f$ was sampled at consecutive integers. The table records the values together with the forward-difference rows already started by an analyst (blank cells were left empty on purpose).\n\nDecide whether each statement is true or false.",
+      "tables_markdown": "| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| $f(x)$ | $3$ | $3$ | $5$ | $15$ | $39$ | $83$ | $153$ |\n| $\\Delta f(x)$ | $0$ | $2$ | $10$ | $24$ | $44$ | $70$ |  |\n| $\\Delta^{2}f(x)$ | $2$ | $8$ | $14$ | $20$ | $26$ |  |  |\n| $\\Delta^{3}f(x)$ | $6$ | $6$ | $6$ | $6$ |  |  |  |",
+      "statements": [
+        "The third differences are constant, so $\\deg f=3$.",
+        "The leading coefficient of $f$ equals $1$.",
+        "$f(x)=x^{3}-2x^{2}+x+3$ reproduces every tabulated value of $f$.",
+        "The missing third-difference entry in the rightmost open slot must equal $6$ if $f$ stays cubic.",
+        "Because the first tabulated first-difference is $0$, the polynomial $f$ is constant on the whole real line."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLook at the difference table the way an analyst would: start at the bottom and ask which row first settles into a nonzero constant. The first-difference row wanders ($0,2,10,24,44,70$), and the second-difference row still climbs ($2,8,14,20,26$). Only the third-difference row locks:\n\n$$\n\\Delta^{3}f:\\quad 6,\\ 6,\\ 6,\\ 6.\n$$\n\nFor samples on consecutive integers, a constant nonzero $k$-th difference row means the underlying polynomial has degree exactly $k$. Here $k=3$, so $\\deg f=3$. If the degree were smaller, the third differences would already be zero; if it were larger, they would keep changing. Neither happens, so the degree claim is right.\n\nSo the statement is True.",
+        "**B.** → True\n\nOn unit steps, a constant third difference equals $3!$ times the leading coefficient. Letter A fixed that constant at $6$, so\n\n$$\n3!,a_{3}=6\\qquad\\Rightarrow\\qquad a_{3}=1.\n$$\n\nNo other leading coefficient would produce a row of sixes.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe proposed cubic is $f(x)=x^{3}-2x^{2}+x+3$. Check it against every tabulated abscissa rather than trusting the leading-term guess alone. At the left end,\n\n$$\nf(0)=3,\\qquad f(1)=1-2+1+3=3,\\qquad f(2)=8-8+2+3=5,\n$$\n\nand at $x=3$ one gets $27-18+3+3=15$. Continuing,\n\n$$\nf(4)=64-32+4+3=39,\\qquad f(5)=125-50+5+3=83,\\qquad f(6)=216-72+6+3=153.\n$$\n\nEach value matches the $f(x)$ row of the table exactly, so the identity claim holds for the whole sample.\n\nSo the statement is True.",
+        "**D.** → True\n\nA cubic’s third differences never drift: once they equal $6$, every later third difference equals $6$ as well. The blank rightmost slot is just the next term of that constant sequence, so it must be $6$ if $f$ remains cubic.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe first tabulated first-difference being $0$ only says the two neighbouring samples agree:\n\n$$\nf(1)=f(0)=3.\n$$\n\nThat is a local coincidence, not a global constancy theorem. The very next tabulated value already breaks constancy:\n\n$$\nf(2)=5\\neq 3,\n$$\n\nand later values keep climbing ($15,39,83,153$). A polynomial that is constant on the whole real line would have every first difference zero, not merely one of them. The leap from “one vanishing first difference” to “$f$ is constant everywhere” is therefore false.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Degree $3$, leading $1$, $f(x)=x^3-2x^2+x+3$. Next $\\Delta^3=6$. Not globally constant."
+    },
+    {
+      "case_id": "MATH 10.MOCK.EXPLOGEQ",
+      "id": "MATH 10.MOCK.EXPLOGEQ",
+      "title": "Mixed-base letter log equation — unique $a^{-3/2}$ root",
+      "chapter": 10,
+      "subsection": "10.4",
+      "context": "Fix a real parameter $a>1$. Consider the unknown $x>0$ in the long equation\n\n$$\n\\log_{a}(x^{2})+\\log_{a^{3}}(x)-\\log_{\\sqrt{a}}(x)=\\log_{a}\\bigl(a^{4}\\cdot x\\bigr)-3.\n$$\n\nWork from the definition $\\log_{t}(u)=v\\Leftrightarrow t^{v}=u$ (change-of-base through $\\ln$ is allowed only as a bridge). Leave every closed form in letters involving $a$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The equation has exactly one positive real solution, and that solution satisfies $\\log_{a}(x)=-\\dfrac32$.",
+        "The unique positive solution is the letter form $x=a^{3/2}$.",
+        "The unique positive solution is the letter form $x=a^{-3/2}$.",
+        "The number $x=1$ also solves the displayed equation when $a>1$.",
+        "At the unique positive solution one has $\\log_{a^{3}}(x)=-\\dfrac12$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe cleanest attack is to introduce a single unknown $L=\\log_{a}(x)$ and rewrite every logarithm through that letter. Change of base (or the power rule for logarithms) gives three left-hand pieces:\n\n$$\n\\log_{a}(x^{2})=2L,\\qquad \\log_{a^{3}}(x)=\\dfrac{L}{3},\\qquad \\log_{\\sqrt{a}}(x)=\\dfrac{L}{1/2}=2L.\n$$\n\nThe right-hand side expands just as easily:\n\n$$\n\\log_{a}(a^{4}\\cdot x)-3=\\log_{a}(a^{4})+\\log_{a}(x)-3=4+L-3=1+L.\n$$\n\nPutting the left-hand side together,\n\n$$\n2L+\\dfrac{L}{3}-2L=\\dfrac{L}{3},\n$$\n\nso the original equation collapses to the ordinary linear relation\n\n$$\n\\dfrac{L}{3}=1+L.\n$$\n\nClear the fraction: $L=3+3L$, hence $-2L=3$, and finally $L=-3/2$. Because the map $x\\mapsto\\log_{a}(x)$ is one-to-one on $(0,\\infty)$, this unique $L$ produces exactly one positive $x$, and that solution satisfies $\\log_{a}(x)=-3/2$ by definition. Domain checks are automatic under $a>1$ and $x>0$: every base is larger than $1$, and every argument stays positive.\n\nSo the statement is True.",
+        "**B.** → False\n\nLetter A already fixed $L=-3/2$. Exponentiating with base $a$ therefore yields\n\n$$\nx=a^{L}=a^{-3/2},\n$$\n\nwhich is the reciprocal power of the claimed form $a^{3/2}$. Those two letter expressions agree only if $a^{3}=1$, impossible under $a>1$.\n\nSo the statement is False.",
+        "**C.** → True\n\nExponentiate $L=-3/2$:\n\n$$\nx=a^{L}=a^{-3/2}.\n$$\n\nUniqueness follows because $L\\mapsto a^{L}$ is one-to-one for positive $x$, so this is the unique positive solution.\n\nSo the statement is True.",
+        "**D.** → False\n\nPlug in $x=1$. The left-hand side is a sum of logarithms of $1$, hence $0$. The right-hand side is $\\log_{a}(a^{4})-3=1$. Since $0\\neq 1$, the candidate fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nAt the unique positive root one already knows $L=\\log_{a}(x)=-3/2$ from letter A. The logarithm with the larger base $a^{3}$ is linked to $L$ by the change-of-base identity\n\n$$\n\\log_{a^{3}}(x)=\\dfrac{\\log_{a}(x)}{\\log_{a}(a^{3})}=\\dfrac{L}{3}.\n$$\n\nSubstitute the known value:\n\n$$\n\\dfrac{L}{3}=\\dfrac{-3/2}{3}=-\\dfrac{1}{2}.\n$$\n\nAs a quick consistency check, the defining relation $(a^{3})^{v}=x$ with $v=-1/2$ becomes $a^{-3/2}=x$, which is exactly the root from letter C. So the evaluation $\\log_{a^{3}}(x)=-1/2$ is confirmed two ways.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "With $L=\\log_a x$: $L/3=1+L\\Rightarrow L=-3/2$, so $x=a^{-3/2}$ uniquely. Not $a^{3/2}$; $x=1$ fails; $\\log_{a^3}x=-1/2$."
+    },
+    {
+      "case_id": "MATH 11.MOCK.MRMC",
+      "id": "MATH 11.MOCK.MRMC",
+      "title": "Taxed monopoly — MR=MC shift and price trap",
+      "chapter": 11,
+      "subsection": "11.3",
+      "context": "Inverse demand is $p=60-q$. Private cost is $C(q)=\\dfrac12 q^{2}+4q+20$. A specific tax of EUR $6$ per unit is added, so the firm maximises $\\pi(q)=pq-C(q)-6q$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "With the tax, the profit-maximising output lies strictly between $16$ and $17$.",
+        "Without the tax, the profit-maximising output would be strictly larger than with the tax.",
+        "At the taxed optimum, marginal revenue equals marginal cost including the tax.",
+        "At the taxed optimum, the market price is strictly below EUR $40$.",
+        "The tax reduces the optimal output by exactly $2$ units relative to the no-tax optimum."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite revenue from inverse demand as $R(q)=(60-q)q=60q-q^{2}$. Taxed profit subtracts both private cost and the specific tax $6q$:\n\n$$\n\\pi(q)=60q-q^{2}-\\bigl(\\tfrac12 q^{2}+4q+20\\bigr)-6q.\n$$\n\nCombine like terms:\n\n$$\n\\pi(q)=-\\tfrac32 q^{2}+(60-4-6)q-20=-\\tfrac32 q^{2}+50q-20.\n$$\n\nDifferentiate and set the derivative to zero:\n\n$$\n\\pi'(q)=-3q+50=0\\Rightarrow q=\\dfrac{50}{3}.\n$$\n\nNumerically $50/3\\approx 16.667$, which sits strictly between $16$ and $17$. The second derivative $\\pi''(q)=-3<0$ confirms a maximum, so the taxed profit-maximising output really does lie in that open interval.\n\nSo the statement is True.",
+        "**B.** → True\n\nDrop the tax term $-6q$ and repeat the first-order condition. Without the tax, marginal profit’s intercept rises by $6$:\n\n$$\n\\pi'_{\\mathrm{no\\ tax}}(q)=-3q+56=0\\Rightarrow q=\\dfrac{56}{3}\\approx 18.67.\n$$\n\nCompare with the taxed optimum $50/3\\approx 16.67$ from letter A: the untaxed critical point is strictly larger, as a per-unit tax always shifts a linear FOC leftward when marginal profit slopes downward.\n\nSo the statement is True.",
+        "**C.** → True\n\nAt an interior maximum, MR equals MC including the tax. With $MR=60-2q$ and taxed $MC=q+4+6=q+10$,\n\n$$\n60-2q=q+10\\Rightarrow q=\\dfrac{50}{3},\n$$\n\nmatching letter A.\n\nSo the statement is True.",
+        "**D.** → False\n\nFeed the taxed optimum into inverse demand:\n\n$$\np=60-\\dfrac{50}{3}=\\dfrac{130}{3}\\approx 43.33.\n$$\n\nThat market price is strictly above EUR $40$, not below. The inequality in the claim points the wrong way.\n\nSo the statement is False.",
+        "**E.** → True\n\nSubtract the two closed-form optima from letters A and B:\n\n$$\nq_{\\mathrm{no\\ tax}}-q_{\\mathrm{tax}}=\\dfrac{56}{3}-\\dfrac{50}{3}=\\dfrac{6}{3}=2.\n$$\n\nThe tax therefore cuts optimal output by exactly two units. The same gap can be read off the FOCs: the tax shifts the linear marginal-profit line parallel by $6$, and with slope $-3$ the horizontal displacement is $6/3=2$. Either route confirms the exact reduction of $2$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Taxed $q=50/3$; untaxed $56/3$; gap $2$. Price $130/3>40$. MR equals taxed MC."
+    },
+    {
+      "case_id": "MATH 12.MOCK.HYPER",
+      "id": "MATH 12.MOCK.HYPER",
+      "title": "Shared crate Regime H — hypergeometric means, variance, tails",
+      "chapter": 12,
+      "subsection": "12.6",
+      "context": "A sealed crate holds $9$ red, $6$ blue and $5$ green components (total $20$). Quality control draws components at random.\n\nTwo sampling regimes are compared later:\n- Regime H: five components are drawn without replacement (hypergeometric counts).\n- Regime B: five independent draws with replacement, recording whether each draw is red (binomial counts).\n\nFor Regime H, let $R$ be the number of red components among the five drawn, and let $G$ be the number of green components among the same five.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Under Regime H one has $E[R]=2.25$ and $E[G]=1.25$.",
+        "Under Regime H the variance $\\mathrm{Var}(R)$ is strictly less than $1$.",
+        "The probability of drawing five red components in Regime H is strictly less than $0.01$.",
+        "In Regime H, the probability of drawing no green component exceeds $0.25$.",
+        "In Regime H, the probability of drawing at least one red component is strictly less than $0.95$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nUnder sampling without replacement each draw has the same marginal success probability equal to the population share. Multiply by the sample size:\n\n$$\nE[R]=5\\cdot\\dfrac{9}{20}=2.25,\\qquad E[G]=5\\cdot\\dfrac{5}{20}=1.25.\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the hypergeometric variance formula with population $N=20$, $K=9$ red successes, and sample size $n=5$:\n\n$$\n\\mathrm{Var}(R)=n\\cdot\\dfrac{K}{N}\\cdot\\dfrac{N-K}{N}\\cdot\\dfrac{N-n}{N-1}.\n$$\n\nSubstitute the crate numbers:\n\n$$\n\\mathrm{Var}(R)=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}.\n$$\n\nFirst $9/20\\cdot 11/20=99/400=0.2475$, then $5\\cdot 0.2475=1.2375$, and finally\n\n$$\n1.2375\\cdot\\dfrac{15}{19}=\\dfrac{18.5625}{19}\\approx 0.977.\n$$\n\nBecause $0.977<1$, the variance of $R$ is strictly less than $1$. The finite-population correction factor $15/19<1$ is what pulls the variance below the corresponding binomial figure $1.2375$.\n\nSo the statement is True.",
+        "**C.** → True\n\nDrawing five reds means choosing all five sample slots from the nine red components inside the crate of twenty:\n\n$$\nP(R=5)=\\dfrac{\\binom{9}{5}}{\\binom{20}{5}}=\\dfrac{126}{15504}\\approx 0.00813<0.01.\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nNo green means all five draws come from the $15$ non-green components:\n\n$$\nP(G=0)=\\dfrac{\\binom{15}{5}}{\\binom{20}{5}}=\\dfrac{3003}{15504}\\approx 0.1937.\n$$\n\nThat probability is below $0.25$, so it does not exceed the claimed threshold.\n\nSo the statement is False.",
+        "**E.** → False\n\nWork through the complement: zero reds means all five draws come from the $11$ non-red components in the crate.\n\n$$\nP(R=0)=\\dfrac{\\binom{11}{5}}{\\binom{20}{5}}=\\dfrac{462}{15504}.\n$$\n\nTherefore\n\n$$\nP(R\\ge 1)=1-\\dfrac{462}{15504}=\\dfrac{15042}{15504}\\approx 0.9702.\n$$\n\nThe probability of at least one red is about $0.97$, which is larger than $0.95$, not strictly less. The claim reverses the inequality: with nine reds out of twenty and five draws, missing red entirely is rare, so the “at least one red” event is overwhelmingly likely.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E[R]=2.25$, $E[G]=1.25$, $\\mathrm{Var}(R)\\approx 0.977$. $P(R=5)\\approx 0.008$. $P(G=0)\\approx 0.194$. $P(R\\ge 1)\\approx 0.97$."
+    },
+    {
+      "case_id": "MATH 13.MOCK.TAILS",
+      "id": "MATH 13.MOCK.TAILS",
+      "title": "Shared crate Regime B — binomial score and false law-identity",
+      "chapter": 13,
+      "subsection": "13.5",
+      "context": "A sealed crate holds $9$ red, $6$ blue and $5$ green components (total $20$). Quality control draws components at random.\n\nTwo sampling regimes are compared later:\n- Regime H: five components are drawn without replacement (hypergeometric counts).\n- Regime B: five independent draws with replacement, recording whether each draw is red (binomial counts).\n\nFor Regime B, each of the five independent draws is scored as a “red hit” with success probability $p=9/20=0.45$. Let $X$ be the number of red hits and set $Y=4X-3$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The mean of $X$ is $2.25$ and the variance of $X$ is $1.2375$.",
+        "The mean of $Y$ is $6$ and the variance of $Y$ is $19.8$.",
+        "The probability $P(X=0)$ is strictly less than $0.05$.",
+        "The probability $P(X=5)$ is strictly less than $0.02$.",
+        "Because $E[X]$ equals the Regime-H mean $E[R]$, the random variables $X$ and $R$ necessarily share the same probability distribution."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$X\\sim\\mathrm{Bin}(5,0.45)$, so the ordinary binomial moments are\n\n$$\nE[X]=5\\cdot 0.45=2.25,\\qquad \\mathrm{Var}(X)=5\\cdot 0.45\\cdot 0.55=1.2375.\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nPush the affine map $Y=4X-3$ through the moments from letter A:\n\n$$\nE[Y]=4\\cdot 2.25-3=6,\\qquad \\mathrm{Var}(Y)=16\\cdot 1.2375=19.8.\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nZero red hits means five consecutive non-red draws, each with probability $0.55$:\n\n$$\nP(X=0)=0.55^{5}.\n$$\n\nCompute the fifth power carefully — this is a close numerical trap designed to catch anyone who rounds too early:\n\n$$\n0.55^{2}=0.3025,\\qquad 0.55^{3}=0.166375,\\qquad 0.55^{4}=0.09150625,\n$$\n\n$$\n0.55^{5}=0.0503284375.\n$$\n\nThe exact value sits slightly above $0.05$, so the strict inequality $P(X=0)<0.05$ fails. Rounding $0.55^{5}$ down to $0.05$ would hide the failure; keeping one extra digit exposes it.\n\nSo the statement is False.",
+        "**D.** → True\n\nFive red hits means five consecutive successes, each with probability $0.45$:\n\n$$\nP(X=5)=0.45^{5}=0.0184528125.\n$$\n\nThat fifth power sits comfortably below $0.02$, so the strict inequality holds.\n\nSo the statement is True.",
+        "**E.** → False\n\nEqual means do not force equal laws. Regime H draws without replacement (hypergeometric counts), while Regime B draws independently with replacement (binomial counts). The two sampling schemes share the same marginal success probability $9/20$, so their means for the red count agree:\n\n$$\nE[X]=E[R]=2.25.\n$$\n\nBut the dependence structure differs, and the variances already disagree:\n\n$$\n\\mathrm{Var}(X)=1.2375,\\qquad \\mathrm{Var}(R)=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}\\approx 0.977.\n$$\n\nIf two random variables shared the same probability distribution, every moment would match. Already $\\mathrm{Var}(X)\\neq\\mathrm{Var}(R)$, so $X$ and $R$ cannot be equal in law. Matching first moments is necessary but nowhere near sufficient.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E[X]=2.25$, $\\mathrm{Var}=1.2375$; $E[Y]=6$, $\\mathrm{Var}(Y)=19.8$. $P(X=0)\\approx 0.0503$, $P(X=5)\\approx 0.0185$. Binomial $\\neq$ hypergeometric."
+    }
+  ]
+}

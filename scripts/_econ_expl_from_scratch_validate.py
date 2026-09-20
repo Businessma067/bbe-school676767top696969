@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Validate from-scratch econ explanation rewrite (ch2–ch6)."""
+"""Validate statement-only econ explanation rewrite (ch2–ch5)."""
 from __future__ import annotations
 
 import argparse
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 CLOSER = re.compile(r"\s*So the statement is (True|False)\.?\s*$", re.I)
@@ -29,6 +30,25 @@ FORBIDDEN = [
     "the claim about ",
     "the claim fits the chapter",
     "the claim does not match the chapter",
+    "read against",
+    "nouns in play",
+    "never and only stretch",
+    "the claim uses only, never, or always",
+    "walk the claim",
+    "match each noun",
+    "settles the letter",
+    "stem tests",
+    "the stem tests",
+    "keyed false",
+    "keyed reading",
+    "keyed true",
+    "marked false in the bank",
+    "against that absolute wording",
+    "by the definitions here,",
+    "on the ground, ",
+    "from the coordination side,",
+    "in this market scene,",
+    "what the sentence says about",
 ]
 
 
@@ -49,17 +69,17 @@ def check_case(c: dict) -> list[str]:
         return [f"{c['case_id']}: expected 5 explanations/keys"]
     bodies = [body(e) for e in expl]
     lens = [len(b) for b in bodies]
-    notes = sum(1 for e in expl if re.search(r"(?m)^Note:", e))
-    if any(n < 150 for n in lens):
-        errs.append(f"{c['case_id']}: body under 150; lens={lens}")
-    if sum(1 for n in lens if n >= 400) < 2:
-        errs.append(f"{c['case_id']}: need ≥2 letters ≥400; lens={lens}")
-    if not any(n >= 550 for n in lens):
-        errs.append(f"{c['case_id']}: need ≥1 letter ≥550; lens={lens}")
-    if max(lens) - min(lens) < 250:
-        errs.append(f"{c['case_id']}: spread {max(lens)-min(lens)} < 250; lens={lens}")
+    notes = sum(1 for e in expl if re.search(r"(?m)^(Note|Tip|Trap):", e))
+    if any(n < 140 for n in lens):
+        errs.append(f"{c['case_id']}: body under 140; lens={lens}")
+    if max(lens) - min(lens) < 140:
+        errs.append(f"{c['case_id']}: spread {max(lens)-min(lens)} < 140; lens={lens}")
+    if not any(n >= 320 for n in lens):
+        errs.append(f"{c['case_id']}: need ≥1 letter ≥320; lens={lens}")
+    if not any(n <= 300 for n in lens):
+        errs.append(f"{c['case_id']}: need ≥1 compact ≤300; lens={lens}")
     if notes > 2:
-        errs.append(f"{c['case_id']}: too many Note: ({notes}); max 2")
+        errs.append(f"{c['case_id']}: too many Note/Tip/Trap ({notes}); max 2")
     opens = [b.split("\n")[0].strip().lower()[:40] for b in bodies]
     if len(set(opens)) < 5:
         errs.append(f"{c['case_id']}: duplicate openings")
@@ -74,7 +94,6 @@ def check_case(c: dict) -> list[str]:
                 errs.append(f"{c['case_id']} {chr(65+i)}: forbidden `{s}`")
         if "—" in e:
             errs.append(f"{c['case_id']} {chr(65+i)}: em dash")
-        # hollow meta: very short + no concrete nouns from statement
         if lens[i] < 200 and re.search(
             r"^(the sentence|the assertion|the wording|yes\.|no\.)", bodies[i], re.I
         ):
@@ -95,6 +114,7 @@ def main() -> int:
     ap.add_argument("file")
     ap.add_argument("--from-id")
     ap.add_argument("--to-id")
+    ap.add_argument("--max-opener", type=int, default=12)
     args = ap.parse_args()
     data = json.loads(Path(args.file).read_text())
     ids = [c["case_id"] for c in data]
@@ -105,12 +125,19 @@ def main() -> int:
     errs: list[str] = []
     for c in data:
         errs.extend(check_case(c))
+    opens: Counter[str] = Counter()
+    for c in data:
+        for e in c["tactical_explanations"]:
+            opens[body(e).split("\n")[0].strip().lower()[:48]] += 1
+    for o, n in opens.most_common():
+        if n > args.max_opener:
+            errs.append(f"opener x{n} (> {args.max_opener}): {o!r}")
     if errs:
         print(f"FAIL {len(errs)} issues")
-        for e in errs[:80]:
+        for e in errs[:100]:
             print(e)
-        if len(errs) > 80:
-            print(f"... +{len(errs)-80} more")
+        if len(errs) > 100:
+            print(f"... +{len(errs)-100} more")
         return 1
     print(f"OK {len(data)} cases")
     return 0
