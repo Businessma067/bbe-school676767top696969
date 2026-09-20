@@ -39,24 +39,24 @@ const BBE_MILESTONES: Milestone[] = [
 
 const WISO_MILESTONES: Milestone[] = [
   {
-    title: "Free Demo",
-    label: "WiSo tasks across economics, math, and German",
+    title: "Kostenlose Demo",
+    label: "100+ Aufgaben, 1 Probeprüfung, alle 3 Fächer",
     icon: "demo",
     youAreHere: true,
   },
   {
-    title: "Build the Fundamentals",
-    label: "Wirtschaft verstehen, math, and reading practice",
+    title: "Grundlagen aufbauen",
+    label: "3000+ Fragen, im eigenen Tempo",
     icon: "lite",
   },
   {
-    title: "Full Simulation",
-    label: "Interactive modes, customized mocks, and timed exam practice",
+    title: "Vollsimulation",
+    label: "Interaktive Modi, individuelle Probeprüfungen und Timed Mode",
     icon: "full",
   },
   {
-    title: "Exam Day",
-    label: "2027 WiSo, WU Vienna",
+    title: "Prüfungstag",
+    label: "2027 Wiso, WU Wien",
     icon: "exam",
     destination: true,
   },
@@ -161,11 +161,13 @@ function NodeCircle({
   index,
   size = "md",
   accent,
+  youAreHereLabel,
 }: {
   milestone: Milestone;
   index: number;
   size?: "sm" | "md" | "lg";
   accent: PrepRoadmapAccent;
+  youAreHereLabel: string;
 }) {
   const color = accentVar(accent);
   const dim =
@@ -227,7 +229,7 @@ function NodeCircle({
           }}
           aria-hidden
         >
-          you are here
+          {youAreHereLabel}
         </span>
       )}
     </div>
@@ -269,9 +271,11 @@ function NodeCaption({
 function SpreadDesktopRoadmap({
   milestones,
   accent,
+  youAreHereLabel,
 }: {
   milestones: Milestone[];
   accent: PrepRoadmapAccent;
+  youAreHereLabel: string;
 }) {
   const color = accentVar(accent);
   const glowId = accent === "wiso-blue" ? "prepGlowWiso" : "prepGlow";
@@ -348,7 +352,13 @@ function SpreadDesktopRoadmap({
                   <NodeCaption milestone={n.milestone} />
                 </div>
               )}
-              <NodeCircle milestone={n.milestone} index={i} size="lg" accent={accent} />
+              <NodeCircle
+                milestone={n.milestone}
+                index={i}
+                size="lg"
+                accent={accent}
+                youAreHereLabel={youAreHereLabel}
+              />
               {n.caption === "below" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
@@ -369,9 +379,11 @@ function SpreadDesktopRoadmap({
 function MobileRoadmap({
   milestones,
   accent,
+  youAreHereLabel,
 }: {
   milestones: Milestone[];
   accent: PrepRoadmapAccent;
+  youAreHereLabel: string;
 }) {
   return (
     <div className="relative mx-auto flex w-full max-w-md flex-col justify-center gap-0 px-1 py-2 md:hidden">
@@ -381,7 +393,13 @@ function MobileRoadmap({
       />
       {milestones.map((m, i) => (
         <div key={m.title} className="relative z-[1] flex items-start gap-3.5 py-2.5 sm:gap-4">
-          <NodeCircle milestone={m} index={i} size="sm" accent={accent} />
+          <NodeCircle
+            milestone={m}
+            index={i}
+            size="sm"
+            accent={accent}
+            youAreHereLabel={youAreHereLabel}
+          />
           <div className="min-w-0 flex-1 pt-1.5">
             <NodeCaption milestone={m} align="left" compact />
           </div>
@@ -402,9 +420,10 @@ export function PrepJourneyRoadmap({
   track?: "bbe" | "wiso";
 }) {
   const milestones = track === "wiso" ? WISO_MILESTONES : BBE_MILESTONES;
+  const youAreHereLabel = track === "wiso" ? "du bist hier" : "you are here";
   const ariaLabel =
     track === "wiso"
-      ? "Step by step WiSo preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day"
+      ? "Schritt-für-Schritt-Vorbereitung: Kostenlose Demo, Grundlagen aufbauen, Vollsimulation, Prüfungstag"
       : "Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day";
 
   return (
@@ -412,9 +431,18 @@ export function PrepJourneyRoadmap({
       className={cn("prep-roadmap relative w-full", className)}
       role="img"
       aria-label={ariaLabel}
+      {...(track === "wiso" ? { "data-no-i18n": true } : null)}
     >
-      <SpreadDesktopRoadmap milestones={milestones} accent={accent} />
-      <MobileRoadmap milestones={milestones} accent={accent} />
+      <SpreadDesktopRoadmap
+        milestones={milestones}
+        accent={accent}
+        youAreHereLabel={youAreHereLabel}
+      />
+      <MobileRoadmap
+        milestones={milestones}
+        accent={accent}
+        youAreHereLabel={youAreHereLabel}
+      />
     </div>
   );
 }
