@@ -1,0 +1,123 @@
+CASE MATH 11.67
+ANSWER [true, false, true, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+The extra sale adds $R'=11$ euros whichever plant produces it. Plant 1 has $C_1^{\prime}=9$, so
+$$P_1^{\prime}=11-9=2>0$$
+and producing there raises profit. Plant 2 has $C_2^{\prime}=13$, so
+$$P_2^{\prime}=11-13=-2<0$$
+and producing there lowers profit. The firm should prefer the lower-marginal-cost plant for that extra unit. Belonging to one firm does not force $C_1^{\prime}=C_2^{\prime}$. If instead $R'=8$, then both comparisons fail:
+$$8-9<0,\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 2 ($C'=13$) does not. If $R'=8$, neither plant should produce the unit.
+
+=== A ===
+**A.** → True
+
+Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and about $C_1^{\prime}=9$ euros of cost:
+
+$$
+P^{\prime}\text{ via Plant 1} = 11-9
+$$
+
+$$
+11 - 9 = 2
+$$
+
+$$
+P^{\prime}\text{ via Plant 1} = 2 = 2
+$$
+
+$$
+P^{\prime}\text{ via Plant 1} = 2>0
+$$
+
+That choice raises the firm's profit
+
+Plant 1 passes the expand-or-not test: extra revenue $11$ beats Plant 1's extra cost $9$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → False
+
+Both plants sell into the same market, so both face the same extra revenue $R'=11$.
+
+Plant 2's marginal cost is $13>11$, so producing there would lower profit:
+
+$$
+11-13 = -2<0
+$$
+
+Selling into the same market does not make Plant 2 the right plant
+
+Same market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ and should not take the unit.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R' = 11
+$$
+
+which does not match the claim.
+
+So the statement is False.
+
+=== C ===
+**C.** → True
+
+With the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.
+
+Plant 1 has $C_1^{\prime}=9<13=C_2^{\prime}$, and Plant 1 is preferred for that extra unit
+
+With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C_1^{\prime} = 9<13 = C_2^{\prime}
+$$
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Belonging to one firm does not force the two plants' current marginal costs to be equal.
+
+Here they are explicitly different, $9$ versus $13$
+
+In the short run, plants can — and here do — operate with different marginal costs; equality is an optimality target, not an identity.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+If instead $R'=8$, then both plant-level comparisons fail:
+
+$$
+8-9 = -1<0
+$$
+
+$$
+8-13 = -5<0
+$$
+
+Neither plant should produce the extra unit
+
+When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R' = 8
+$$
+
+which matches the claim.
+
+So the statement is True.
+

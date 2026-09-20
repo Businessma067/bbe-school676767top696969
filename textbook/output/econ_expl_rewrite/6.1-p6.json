@@ -1,0 +1,142 @@
+[
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.126",
+    "title": "Share Price and Market Capitalisation 126",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=22\nMarch | Price=20\nApril | Price=17\nMay | Price=16\nJune | Price=15\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=45000\nFebruary | Volume=79000\nMarch | Volume=78000\nApril | Volume=43000\nMay | Volume=85000\nJune | Volume=51000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 45,000 |\n| February | 22 | 79,000 |\n| March | 20 | 78,000 |\n| April | 17 | 43,000 |\n| May | 16 | 85,000 |\n| June | 15 | 51,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 230 |\n| Shares outstanding | 450,000 |\n| Total shares traded (six months) | 381,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
+      "Market capitalisation at the last month exceeds €6.2 million.",
+      "Earnings per share exceeds €0.38.",
+      "Highest closing price is more than 12.4% above the lowest.",
+      "Total shares traded over six months exceed 31.7% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Market capitalisation = shares × price; price can move for reasons unrelated to value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €6.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.51.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €15-€24. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 84.7% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.127",
+    "title": "Listed Company Performance Charts 127",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=32\nMarch | Price=34\nApril | Price=34\nMay | Price=33\nJune | Price=39\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=69000\nFebruary | Volume=67000\nMarch | Volume=22000\nApril | Volume=54000\nMay | Volume=70000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 69,000 |\n| February | 32 | 67,000 |\n| March | 34 | 22,000 |\n| April | 34 | 54,000 |\n| May | 33 | 70,000 |\n| June | 39 | 63,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 230 |\n| Shares outstanding | 420,000 |\n| Total shares traded (six months) | 345,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
+      "The closing share price rose by more than 16.2% from first to last month.",
+      "Market capitalisation at the last month exceeds €12.5 million.",
+      "Market capitalisation rose by more than 16.5% over the period.",
+      "Earnings per share exceeds €0.39."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Common shares vote; preferred shares usually emphasise dividend priority.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 25.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €16.4 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €13.0m → €16.4m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.55.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.128",
+    "title": "Earnings Per Share From Reported Figures 128",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=21\nApril | Price=17\nMay | Price=15\nJune | Price=13\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=73000\nMarch | Volume=51000\nApril | Volume=23000\nMay | Volume=79000\nJune | Volume=90000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 37,000 |\n| February | 24 | 73,000 |\n| March | 21 | 51,000 |\n| April | 17 | 23,000 |\n| May | 15 | 79,000 |\n| June | 13 | 90,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 317 |\n| Shares outstanding | 676,000 |\n| Total shares traded (six months) | 353,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Carrying value per share, together with closing share price, high and low prices, dividend per share, dividend yield, earnings per share and the price-earnings ratio, are figures that shareholders and potential investors typically use when evaluating a company's shares.",
+      "Market capitalisation at the last month exceeds €8.3 million.",
+      "Highest closing price is more than 42.4% above the lowest.",
+      "Total shares traded over six months exceed 19.1% of shares outstanding.",
+      "The closing share price rose by more than 28.5% from first to last month."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "These are the textbook's key stock figures.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €8.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €13-€24. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 52.2% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -45.8%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.129",
+    "title": "Share Price and Market Capitalisation 129",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=29\nMarch | Price=32\nApril | Price=33\nMay | Price=34\nJune | Price=38\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=59000\nMarch | Volume=61000\nApril | Volume=88000\nMay | Volume=79000\nJune | Volume=30000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 27,000 |\n| February | 29 | 59,000 |\n| March | 32 | 61,000 |\n| April | 33 | 88,000 |\n| May | 34 | 79,000 |\n| June | 38 | 30,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 276 |\n| Shares outstanding | 456,000 |\n| Total shares traded (six months) | 344,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 16% from first to last month.",
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
+      "Operating result is below €213 thousand.",
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Price change ≈ 40.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "There is no universal legal duty to pay a dividend every year.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Operating result = 276.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Listed price rises do not transfer cash to the issuer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.130",
+    "title": "Franchise Agreements as Intangibles",
+    "context": "Review how tangible non-current assets differ from intangible non-current assets in physical form. Evaluate the following economic assertions:",
+    "statements": [
+      "Because a development patent cannot be touched, it is recorded as an expense rather than as an asset on the balance sheet.",
+      "Non-current assets can never include a development patent because that section is reserved strictly for tangible items such as machinery.",
+      "A development patent is treated as inventory because it is intended for use rather than for display.",
+      "For a clothing retailer, a corporate debenture appears separately from current liabilities because it falls due after more than one year.",
+      "For a clothing retailer, the overdraft borrowings appear within current liabilities because settlement is expected within one year."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "A development patent with expected long-term benefit is recorded as an intangible non-current asset, not expensed immediately.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The non-current assets section includes intangible items such as a development patent alongside tangible assets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Long-term exclusive use, not physical display, places a development patent among non-current intangible assets, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A longer settlement horizon separates the corporate debenture from the current liabilities of a clothing retailer.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A short settlement horizon places the overdraft borrowings within the current liabilities of a clothing retailer.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

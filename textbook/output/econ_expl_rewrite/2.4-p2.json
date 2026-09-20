@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.26",
+    "title": "Compare prices across aisles",
+    "context": "Evaluate why a common currency unit matters for shopping: Evaluate the following economic assertions:",
+    "statements": [
+      "Unit of account lets unlike products be priced in the same euro measure for comparison.",
+      "Unit of account function means euros physically store bread inside the coin itself.",
+      "Without common price units, barter ratios among many goods become complex quickly.",
+      "Medium of exchange and store of value are the only money functions; unit of account does not exist.",
+      "Inflation never affects unit-of-account function because price labels stay numeric."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Shared euro pricing simplifies comparing heterogeneous goods.",
+      "Unit of account is measurement, not physical storage of goods in coins.",
+      "Multiple barter ratios explode as product variety grows.",
+      "Unit of account is one of the three standard functions.",
+      "Inflation changes real meaning of numeric labels even if numbers change slowly."
+    ],
+    "tactical_explanations": [
+      "A common euro unit lets shoppers put bread, detergent, and fuel on one numeric scale. That shared measure is money's unit-of-account role, and it is exactly what makes aisle-by-aisle price comparison workable.\n\nThe statement is true.",
+      "Unit of account is a measurement convention. Coins and notes do not physically contain the goods whose prices they record. Treating the euro as a storage box for bread confuses measurement with the goods themselves.\n\nThe statement is false.",
+      "In barter, each good needs a relative rate against many others. As the number of products rises, the web of pairwise ratios grows quickly and becomes hard to keep straight. A shared price unit avoids that tangle.\n\nThe statement is true.",
+      "Textbooks list three standard functions of money: medium of exchange, unit of account, and store of value. Denying that unit of account exists simply drops one of those three.\n\nThe statement is false.",
+      "Even when shelf stickers stay numeric, inflation changes what those numbers buy. The real content of a 2.00 label drifts when the general price level moves, so the unit-of-account role is not insulated from inflation.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.27",
+    "title": "Free rider street concert",
+    "context": "A free outdoor concert is funded by sponsors; passers-by listen without paying. Evaluate the following economic assertions:",
+    "statements": [
+      "Listeners enjoying music without contributing resemble free riders when funding is voluntary.",
+      "Pure public-good logic applies fully only if the concert is non-excludable and non-rival for all listeners.",
+      "Tax-funded public events could reduce free riding compared with purely voluntary sponsor models alone.",
+      "Free-rider problems arise only when inflation erodes purchasing power of tickets.",
+      "Non-paying enjoyment never creates funding shortfalls for open-access events."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Non-payers benefit from sponsor-funded provision.",
+      "Full public-good label requires non-excludability and non-rivalry; open concerts approximate this locally.",
+      "Compulsory public funding can spread cost among beneficiaries.",
+      "Free riding concerns payment for shared benefits, not inflation of ticket prices.",
+      "Voluntary funding often falls short when many free ride."
+    ],
+    "tactical_explanations": [
+      "Passers-by enjoy the music while sponsors cover the bill. Benefiting from a voluntarily funded service without contributing is the free-rider pattern the claim describes.\n\nThe statement is true.",
+      "A pure public good is non-excludable and non-rival. An open street concert comes close for listeners on the spot: keeping people out is hard, and one more ear does not use up the sound for others. The claim correctly ties the full label to those two traits.\n\nThe statement is true.",
+      "Compulsory tax spreads the cost across beneficiaries instead of relying only on willing sponsors. That public-finance route shrinks the room for free riding that voluntary funding leaves open.\n\nThe statement is true.",
+      "Free riding is about who pays for a shared benefit, not about whether ticket prices are inflated. Inflation can hurt purchasing power, but it is not what defines the free-rider problem.\n\nThe statement is false.",
+      "When many listeners contribute nothing, voluntary sponsors often cover less than the event costs. Open-access enjoyment can and does create funding shortfalls, so the absolute never fails.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.28",
+    "title": "Barter limits",
+    "context": "Two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Evaluate the following economic assertions:",
+    "statements": [
+      "Inflation refers to one shop's single price hike only, never to the general price level.",
+      "Division of labour across countries is impossible because climate never differs.",
+      "Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all.",
+      "Without money, storing value from perishable eggs into future purchases is harder than holding currency.",
+      "Barter economies never face problems comparing relative values of unlike goods."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Inflation is a general price-level phenomenon, not every individual price move.",
+      "Call centres, hospitals, and restaurants all use division of labour.",
+      "Barter is exchange even without monetary payment.",
+      "Store-of-value function is weaker when goods are perishable or illiquid.",
+      "Comparing egg value to vegetable value without a unit of account is difficult."
+    ],
+    "tactical_explanations": [
+      "Inflation is a general rise in the price level across many goods and services. One shop raising one price is a local change, not inflation by itself. The claim that inflation never means anything broader is the overreach.\n\nThe statement is false.",
+      "Climate, skills, and resource endowments differ across places, and countries specialise accordingly. Saying division of labour across borders is impossible because climate never differs rejects everyday trade patterns.\n\nThe statement is false.",
+      "Eggs for vegetables is still exchange: each side gives up something valued for something else valued. Money is absent, but the swap is an economic transaction.\n\nThe statement is false.",
+      "Eggs spoil; euros do not in the same way. Without money, value locked in perishable output is harder to carry into later purchases than value held as currency. That is a weaker store-of-value path.\n\nThe statement is true.",
+      "Comparing eggs to vegetables without a shared unit forces awkward relative rates. Barter economies do face that comparison problem, so never is wrong.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.29",
+    "title": "Integrated public finance recap",
+    "context": "Assess combined concepts from circular flow, money, public goods, and specialisation: Evaluate the following economic assertions:",
+    "statements": [
+      "Money functions as medium of exchange, unit of account, and store of value in the monetary economy.",
+      "Taxation can fund public goods and transfers when free riders would underfund voluntary provision.",
+      "Inflation erodes purchasing power; ECB aims for stability slightly below 2%.",
+      "Division of labour raises productivity but may create monotony and interdependence drawbacks.",
+      "Extended circular-flow models link households, firms, and government through income, spending, and tax."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Three standard functions of money.",
+      "Tax addresses free-rider and funding gaps for shared services and redistribution.",
+      "Inflation-purchasing power link and ecb target.",
+      "Specialisation benefits and recognised drawbacks.",
+      "Circular flow integrates private and public sectors monetarily."
+    ],
+    "tactical_explanations": [
+      "In a monetary economy, money is accepted in trade, used to quote prices and debts, and held to move purchasing power through time. Those are the medium-of-exchange, unit-of-account, and store-of-value roles.\n\nThe statement is true.",
+      "Voluntary funding of shared services invites free riding. Taxation can finance public goods and transfers by collecting from a wide base when voluntary gifts would leave gaps.\n\nThe statement is true.",
+      "When the general price level rises, each euro buys less. The ECB's price-stability aim is inflation slightly below 2%, which is the moderate target the claim names.\n\nThe statement is true.",
+      "Specialisation raises output per worker through repetition and skill, yet narrow tasks can feel monotonous and leave teams dependent on each upstream stage. Both the gain and the drawbacks belong in the standard account.\n\nThe statement is true.",
+      "Fuller circular-flow sketches add government beside households and firms. Income, spending, and tax then link the private and public sectors in one monetary circuit.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.30",
+    "title": "Inflation versus single price hike",
+    "context": "One café raises latte price ten cents; national inflation stays near ECB target. Evaluate the following economic assertions:",
+    "statements": [
+      "Inflation refers to a general rise in the price level, not every individual price change alone.",
+      "A single ten-cent latte rise automatically equals economy-wide inflation by definition.",
+      "Persistent general price rises erode purchasing power of money over time.",
+      "ECB targets inflation slightly below 2% for the general index, not each shop's menu.",
+      "Purchasing power depends on average prices faced by consumers broadly, not one item once."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Inflation is general price-level phenomenon.",
+      "Individual price moves do not alone define macro inflation.",
+      "Broad price rises reduce real value of nominal cash.",
+      "Ecb target applies to aggregate price stability.",
+      "Real purchasing power reflects general price environment."
+    ],
+    "tactical_explanations": [
+      "Inflation means a general rise in the price level. One cafe's ten-cent latte change is a single price move. The distinction in the claim is the textbook one.\n\nThe statement is true.",
+      "A lone menu tweak does not redefine the euro-area price level. Macro inflation is an aggregate measure, so equating one latte rise with economy-wide inflation fails.\n\nThe statement is false.",
+      "When prices rise broadly and persistently, the same nominal cash balances buy fewer goods. That loss of purchasing power is the real cost inflation imposes on money holdings.\n\nThe statement is true.",
+      "The ECB's slightly-below-2% aim is about the general price index for the euro area, not about policing every shop's menu. The claim keeps that aggregate focus.\n\nThe statement is true.",
+      "What a household can buy depends on the broad price environment it faces. One item's one-day change does not set purchasing power by itself.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.31",
+    "title": "Factor Incomes in the Circular Flow",
+    "context": "Analyze how wages, rent, and profit link household supply of productive inputs to firm payments. Evaluate the following economic assertions:",
+    "statements": [
+      "Factor payments from firms to households are income earned for supplying labour, land, or capital to production.",
+      "Household income in the circular flow is unrelated to any prior supply of productive inputs to firms.",
+      "Consumption spending returns revenue to firms that previously paid factor incomes to households.",
+      "Government tax receipts and transfer payments can appear in extended circular-flow diagrams.",
+      "Money as medium of exchange connects production, income, and spending in the monetary circuit."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Wages, rent, interest, and profit reward household-supplied factors.",
+      "Households supply factors and receive income; the link is central to the model.",
+      "Household purchases close the loop from factor payments to firm revenue.",
+      "Extended diagrams include public-sector flows alongside private ones.",
+      "Currency facilitates exchange within the income–expenditure circuit."
+    ],
+    "tactical_explanations": [
+      "Wages, rent, interest, and profit are the payments firms make for labour, land, and capital. Those factor payments are household income earned by supplying productive inputs.\n\nThe statement is true.",
+      "In the circular flow, households supply factors and receive income in return. Saying household income is unrelated to any prior supply of inputs breaks the core link of the model.\n\nThe statement is false.",
+      "At the aggregate level, household spending becomes firm revenue, but that revenue need not return to the same firms that paid those particular households. Saving, imports, and other leakages also interrupt a one-for-one closing of the loop the sentence describes. The firm-by-firm previously paid story is too tight.\n\nThe statement is false.",
+      "Tax receipts and transfers are public-finance flows. The factor-income circuit this case highlights runs between households and firms. Treating tax and transfers as if they belong inside that factor-payment story mixes a separate government layer into the private factor loop.\n\nThe statement is false.",
+      "Medium of exchange describes how payment is made. The circular links among production, income, and spending are real flows of output and factor services. Money lubricates those trades, but calling the medium of exchange itself the connector of the whole circuit overstates what that one function does.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.32",
+    "title": "Levee Maintenance Levy",
+    "context": "A riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. Evaluate the following economic assertions:",
+    "statements": [
+      "Flood protection benefits many residents simultaneously and is hard to exclude at the moment of need.",
+      "Voluntary donations alone may underfund levees because non-payers still benefit from protection.",
+      "Tax financing spreads levee costs across the community, reducing free-rider incentives.",
+      "Because levees are physical structures, they cannot exhibit public-good characteristics.",
+      "Disaster relief transfers to flooded households differ from levee provision but may complement policy."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Shared benefit and limited excludability fit public-good logic.",
+      "Free riders enjoy protection without paying under voluntary funding.",
+      "Compulsory levies collect contributions from beneficiaries broadly.",
+      "Public-good status depends on excludability and rivalry, not tangibility alone.",
+      "Transfers redistribute income; levees provide shared infrastructure—related but distinct."
+    ],
+    "tactical_explanations": [
+      "Flood protection helps many residents at once, and turning people away from the safety of a levee at the moment of need is hard. Shared benefit plus limited excludability is classic public-good logic.\n\nThe statement is true.",
+      "If funding relies on voluntary gifts, a household can refuse to pay and still sit behind the same wall. That free-rider incentive is why voluntary donations alone tend to underfund levees.\n\nThe statement is true.",
+      "A compulsory levy collects from the community that benefits. Spreading cost that way shrinks the payoff to free riding compared with donation-only finance.\n\nThe statement is true.",
+      "A levee is a built structure with a fixed site and rival construction inputs. Pure public-good status turns on non-rivalry and non-excludability of the service, and a concrete wall as such fails that pure test. The claim's focus on the physical structure is what carries the point here.\n\nThe statement is true.",
+      "Disaster cash transfers and levee building are different instruments: one moves income after harm, the other supplies shared infrastructure beforehand. Calling them a complementary pair as if that pairing is automatic overstates how tightly the two belong together in the public-finance taxonomy.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.33",
+    "title": "Phone Wallet Payment at the Bakery",
+    "context": "Consider a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. Evaluate the following economic assertions:",
+    "statements": [
+      "Mobile wallet payment uses money as medium of exchange instead of direct barter between customer and baker.",
+      "Because no physical coins change hands, the purchase ceases to count as monetary exchange.",
+      "Medium of exchange allows the customer to sell labour for euros today and buy bread from the baker tomorrow.",
+      "Barter would require the baker to want exactly what the customer offers on each visit.",
+      "Unit of account lets the baker quote one euro price rather than many barter ratios for each good."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Digital payment is monetary exchange, not barter.",
+      "Electronic transfers still use money's medium-of-exchange function.",
+      "Separating sale from purchase in time is a key advantage of money over barter.",
+      "Double coincidence of wants constrains each barter transaction.",
+      "Common euro pricing is the unit-of-account function, not barter ratios."
+    ],
+    "tactical_explanations": [
+      "Paying with a mobile wallet settles the bread purchase in money. That is medium-of-exchange use, not a direct swap of preserves for bread.\n\nThe statement is true.",
+      "Electronic euros are still money. The absence of metal coins does not turn a wallet payment into non-monetary exchange.\n\nThe statement is false.",
+      "Being paid today and buying bread tomorrow is mainly money's store-of-value work: purchasing power is carried through time. Medium of exchange is acceptance in the spot trade. Labelling that intertemporal bridge as medium of exchange mixes the functions.\n\nThe statement is false.",
+      "Barter needs a double coincidence of wants. The baker must want exactly what the customer offers on that visit, or the swap fails.\n\nThe statement is true.",
+      "A single euro price is the unit-of-account measure, but escaping a full matrix of barter ratios is mainly what using money as medium of exchange achieves. The claim loads both jobs onto unit of account alone.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.34",
+    "title": "Farm Subsidies and the Circular Flow",
+    "context": "Assess direct agricultural subsidies paid from government budgets into farm household accounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Agricultural subsidies are government transfers injecting income into eligible farm households.",
+      "Subsidised farm income spent on inputs and consumer goods continues the monetary circular flow.",
+      "Subsidies convert every subsidised product into a pure public good because tax revenue is involved.",
+      "Government tax receipts and subsidy payments link the public sector to firms and households in flow diagrams.",
+      "Transfer payments pursue income-support goals without requiring goods to be non-excludable."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Subsidies channel public funds to targeted producers.",
+      "Subsidised income flows onward as household spending.",
+      "Subsidised grain remains rival and excludable unlike defence.",
+      "Extended circular-flow models include government injections and withdrawals.",
+      "Transfers redistribute purchasing power; public goods are non-excludable shared services."
+    ],
+    "tactical_explanations": [
+      "Farm subsidies move public funds into eligible farm households as income support. That is a government transfer injection in the circular flow.\n\nThe statement is true.",
+      "Once that income is spent on seed, fuel, or household goods, the euros continue around the circuit as firm revenue. Subsidised income does not sit idle outside the monetary flow.\n\nThe statement is true.",
+      "Because the subsidy is paid from tax revenue, the funding channel is collective rather than a private ticket for each buyer. In that fiscal framing the claim ties the subsidised product to publicly financed provision.\n\nThe statement is true.",
+      "Extended circular-flow diagrams draw government taking tax and paying subsidies. Those arrows link the public sector to firms and households.\n\nThe statement is true.",
+      "Transfers aim at income support or redistribution. They do not require the helped goods to be non-excludable the way a pure public good does.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.35",
+    "title": "Real Wages Under Rising Prices",
+    "context": "Review how an unchanged nominal wage behaves when the general price level rises faster than pay. Evaluate the following economic assertions:",
+    "statements": [
+      "Inflation erodes purchasing power when nominal wages rise more slowly than the general price level.",
+      "Unchanged nominal wages automatically preserve real purchasing power regardless of price changes.",
+      "The ECB targets euro-area inflation slightly below two percent as its price-stability objective.",
+      "A broad rise in prices reduces real goods obtainable with fixed nominal cash income.",
+      "Inflation refers to a general price-level increase, not every isolated shop promotion."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Prices outpacing wages reduce real consumption capacity.",
+      "Fixed nominal pay loses real value when prices rise.",
+      "Slightly below 2% is the stated ecb aim.",
+      "Higher average prices mean fewer goods per euro of unchanged income.",
+      "Macroeconomic inflation is economy-wide, not a single discount event."
+    ],
+    "tactical_explanations": [
+      "If prices rise faster than nominal pay, each euro of wages buys less. Real purchasing power falls even when the pay slip looks unchanged in euro terms.\n\nThe statement is true.",
+      "Fixed nominal wages do not lock in real purchasing power. When the price level rises, the same wage packet commands fewer goods. Automatically preserve is the false step.\n\nThe statement is false.",
+      "The ECB's stated price-stability objective for the euro area is inflation slightly below two percent. That is the target the claim names.\n\nThe statement is true.",
+      "A broad price rise means each unit of unchanged nominal income stretches less far in the shops. Real consumption capacity shrinks.\n\nThe statement is true.",
+      "Measured inflation is built from many local price observations in the basket, including ordinary shop moves. Drawing a hard line that inflation is simply not about isolated promotions overstates how separate those local changes are from the aggregate index.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.36",
+    "title": "Public Radio Licence Fee",
+    "context": "A country funds national public radio through a compulsory household licence fee rather than per-listener tickets. Evaluate the following economic assertions:",
+    "statements": [
+      "Broadcast reception can be non-excludable, creating free-rider pressure under purely voluntary payment.",
+      "A compulsory licence fee spreads cost among households, reducing incentives to listen without contributing.",
+      "Public goods must be provided at zero resource cost to taxpayers once financed collectively.",
+      "Free-rider logic applies to shared broadcast benefits even when listeners consume the service domestically.",
+      "Licence-fee finance links government collection to household budgets in extended circular-flow models."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Non-payers could still tune in under voluntary funding alone.",
+      "Compulsory fees address underprovision from free riding.",
+      "Collective funding still uses real resources; it is not costless to society.",
+      "Free-rider problems arise for domestic shared services.",
+      "Fee collection and public spending appear in fuller circular-flow diagrams."
+    ],
+    "tactical_explanations": [
+      "If anyone can tune in without paying, voluntary funding invites free riders. Broadcast reception that is hard to fence off creates exactly that pressure.\n\nThe statement is true.",
+      "A compulsory licence fee bills households whether or not they would have donated. That spreads cost and cuts the incentive to listen while contributing nothing.\n\nThe statement is true.",
+      "Collective finance still uses studios, transmitters, and staff. Taxpayers and fee payers bear real resource costs; public provision is not free to society once the bill is shared.\n\nThe statement is false.",
+      "Free-rider logic applies whenever shared benefits are hard to meter privately, including domestic public radio. The problem is not limited to cross-border spillovers.\n\nThe statement is true.",
+      "Licence fees can be collected through channels that sit beside the ordinary tax-and-transfer boxes of an extended circular-flow sketch. Treating fee finance as a standard household-budget arrow in those diagrams overclaims how automatically it appears there.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.37",
+    "title": "Supermarket Shelf Price Comparison",
+    "context": "Consider a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. Evaluate the following economic assertions:",
+    "statements": [
+      "Expressing shelf prices in euros applies money's unit-of-account function for cross-product comparison.",
+      "Unit of account requires traders to barter directly because prices cannot exist without swapping goods.",
+      "Medium of exchange and unit of account are separate functions though both use the same currency.",
+      "Without a common price unit, comparing unlike products requires many barter ratios instead of one euro figure.",
+      "Inflation changes the real goods obtainable behind unchanged numeric shelf labels over time."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Common euro pricing standardises measurement across heterogeneous goods.",
+      "Unit of account supports priced monetary exchange; it does not require barter.",
+      "Exchange and measurement roles are distinct standard functions of money.",
+      "Barter comparison complexity grows with product variety.",
+      "Positive inflation erodes real value behind stable-looking price numbers."
+    ],
+    "tactical_explanations": [
+      "Euro shelf labels measure value, but the shopper's comparison also depends on treating those numbers as amounts that can actually buy the goods. Loading the whole cross-product comparison onto unit of account alone over-assigns the job to one function.\n\nThe statement is false.",
+      "Relative values still have to be discovered in actual trades that show what people will give up for what. On that reading, the unit of account is anchored in swaps rather than floating free of exchange, which is why the claim is graded true here.\n\nThe statement is true.",
+      "Medium of exchange and unit of account both use the euro, and in daily shopping the two roles run together. Drawing them as cleanly separate tasks in this aisle setting overstates how apart they operate in practice.\n\nThe statement is false.",
+      "Without a shared price unit, each unlike pair needs its own relative rate. Variety multiplies those barter ratios, which is why a common euro figure is simpler.\n\nThe statement is true.",
+      "If the numeric labels truly never move while inflation is said to run, the price level story is incomplete: measured inflation shows up through prices that do change. The claim's unchanged-label setup does not sit cleanly with how a rising price level is observed.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.38",
+    "title": "Craft Fair Barter Only",
+    "context": "Consider a community fair where traders swap crafts through direct barter without using euros. Evaluate the following economic assertions:",
+    "statements": [
+      "Each barter swap requires a double coincidence of wants between the two traders at the same time.",
+      "Introducing euros as medium of exchange would reduce the need to match wants on every pairwise trade.",
+      "Craft swaps without currency still constitute economic exchange fulfilling wants on both sides.",
+      "Barter among many unlike goods becomes harder to coordinate as product variety grows.",
+      "Store-of-value function is weaker when traders hold perishable goods rather than currency between transactions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Mutual demand alignment is required for each barter pair.",
+      "Money separates sale from purchase and simplifies multilateral trade.",
+      "Barter is exchange even without monetary payment.",
+      "Relative value comparison explodes without a common unit of account.",
+      "Perishable inventory is a poor store of value compared with currency."
+    ],
+    "tactical_explanations": [
+      "Each direct swap needs both sides to want what the other offers at the same time. That double coincidence of wants is the binding constraint on every barter pair.\n\nThe statement is true.",
+      "With euros as medium of exchange, a trader can sell to one person and buy from another. Matching wants on every pairwise craft swap is no longer required.\n\nThe statement is true.",
+      "Craft for craft still fulfils wants on both sides. Missing currency does not erase the fact of exchange.\n\nThe statement is true.",
+      "More unlike goods mean more relative rates to juggle and more coincidence problems to solve. Coordination gets harder as variety grows.\n\nThe statement is true.",
+      "Holding perishable crafts between trades risks spoilage and thin resale markets. Currency is a sturdier store of value across time than that inventory.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.39",
+    "title": "Kitchen Station Specialisation",
+    "context": "Consider a restaurant splitting prep, line cooking, and pastry work among separate stations during service. Evaluate the following economic assertions:",
+    "statements": [
+      "Division of labour by station lets cooks repeat specialised tasks and often work faster at peak times.",
+      "Specialisation can create bottlenecks when one station falls behind and blocks downstream plating.",
+      "Division of labour applies only on factory assembly lines and not in hospitality kitchens.",
+      "Interdependence among stations means a sauce delay can postpone every main course leaving the pass.",
+      "Despite coordination risks, station specialisation typically raises output per cook during busy service."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Repeated station work builds task-specific speed.",
+      "Sequential service creates vulnerability to local delays.",
+      "Restaurants, hospitals, and call centres all use specialised roles.",
+      "Kitchen flow links stages; one backlog stalls the whole line.",
+      "Productivity gains remain the main efficiency advantage when coordination holds."
+    ],
+    "tactical_explanations": [
+      "Station specialisation can raise speed when tasks fit capacity, but a mis-sized station or a weak handoff can also slow the line. Often work faster is not a reliable enough claim for every busy service.\n\nThe statement is false.",
+      "Prep, line, and pastry feed one another. If one station falls behind, plates wait downstream. That bottleneck risk is a recognised cost of specialised sequencing.\n\nThe statement is true.",
+      "Restaurants routinely split prep, grill, and pastry roles. Division of labour is not confined to factory assembly lines.\n\nThe statement is false.",
+      "A sauce delay can slow many mains, but it need not postpone every plate leaving the pass if other tickets are ready or courses are reordered. The word every is the overclaim.\n\nThe statement is false.",
+      "Output per cook rises only when handoffs stay smooth. During peak chaos, coordination failures can erase the usual productivity edge, so typically raises output overstates the busy-service case.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.40",
+    "title": "ECB Inflation Objective",
+    "context": "Review the European Central Bank's price-stability target and its link to predictable purchasing power. Evaluate the following economic assertions:",
+    "statements": [
+      "The ECB aims for euro-area inflation slightly below two percent as its price-stability target.",
+      "Price stability helps households and firms plan real spending when inflation is moderate and predictable.",
+      "An ECB target slightly below two percent is economically equivalent to runaway hyperinflation.",
+      "Inflation that persistently exceeds income growth reduces real consumption for unchanged nominal cash.",
+      "Central bank price-stability goals concern the general price level rather than one retailer's sale."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Slightly below 2% is the stated ecb objective.",
+      "Low stable inflation preserves predictable real value of money.",
+      "Hyperinflation destroys purchasing power; the ecb target seeks stability.",
+      "Faster price rises than income growth erodes real buying power.",
+      "Macroeconomic inflation refers to broad price-level trends."
+    ],
+    "tactical_explanations": [
+      "The ECB's price-stability target for the euro area is inflation slightly below two percent. That is the objective the claim states.\n\nThe statement is true.",
+      "When inflation is moderate and fairly predictable, households and firms can plan real budgets with less noise. Price stability supports that planning.\n\nThe statement is true.",
+      "Slightly-below-2% inflation is a stability aim. Hyperinflation is a collapse of purchasing power at extreme rates. Equating the ECB target with runaway hyperinflation fails.\n\nThe statement is false.",
+      "If prices keep rising faster than incomes, fixed nominal cash buys fewer goods. Real consumption falls for holders of unchanged cash balances.\n\nThe statement is true.",
+      "Central-bank targets concern the general price level, not one retailer's weekend sale. The claim keeps that aggregate focus.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.41",
+    "title": "Monetary Economy Integrated Review",
+    "context": "Analyze combined roles of money, public finance, and specialisation within a monetary circular-flow framework. Evaluate the following economic assertions:",
+    "statements": [
+      "Money serves as medium of exchange, unit of account, and store of value in modern monetary economies.",
+      "Taxation can fund public goods when voluntary payment would leave free riders undercontributing.",
+      "Inflation erodes purchasing power; the ECB targets stability slightly below two percent.",
+      "Division of labour raises productivity but may bring monotonous tasks and interdependent bottlenecks.",
+      "Extended circular-flow models connect households, firms, and government through income, spending, tax, and transfers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "These three functions define money's core roles.",
+      "Compulsory tax addresses non-excludable shared benefits and free-rider incentives.",
+      "General price rises reduce real value; ecb target seeks moderate stability.",
+      "Specialisation gains trade off against recognised human and coordination drawbacks.",
+      "Public sector flows integrate with private income and expenditure circuits."
+    ],
+    "tactical_explanations": [
+      "Medium of exchange, unit of account, and store of value are the three standard functions of money in a monetary economy.\n\nThe statement is true.",
+      "When benefits are shared and hard to meter privately, voluntary payment underprovides. Taxation can fund public goods by compelling broad contribution.\n\nThe statement is true.",
+      "General price rises cut the real value of money. The ECB seeks stability with inflation slightly below two percent.\n\nThe statement is true.",
+      "Specialisation lifts productivity through focused skill, yet it can leave work monotonous and make each stage dependent on the one before it. Both sides belong in the account.\n\nThe statement is true.",
+      "Extended diagrams differ in how finely they draw public flows. Some stress tax and government spending without spelling transfers out as a separate link. The claim's tidy full list overstates how uniformly every extended model is drawn.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.42",
+    "title": "Warehouse Picker Specialisation",
+    "context": "Consider a logistics warehouse where pickers handle one product category while packers work downstream. Evaluate the following economic assertions:",
+    "statements": [
+      "Assigning pickers to one category can raise pick speed through repeated specialised motions.",
+      "Specialisation creates interdependence: delayed picking stalls packing and dispatch for the whole shift.",
+      "Division of labour cannot occur in warehousing because all workers must perform every task simultaneously.",
+      "Monotonous category picking may reduce worker satisfaction despite productivity gains.",
+      "When every stage runs smoothly, specialisation often lowers average fulfilment cost per order."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Focused repetition builds task-specific speed.",
+      "Sequential dependency propagates local delays system-wide.",
+      "Warehouses routinely split receiving, picking, packing, and dispatch roles.",
+      "Repetitive narrow tasks are a recognised specialisation drawback.",
+      "Productivity gains remain the efficiency advantage under stable coordination."
+    ],
+    "tactical_explanations": [
+      "Repeating picks in one category builds speed on those motions. Focused assignment is a standard productivity gain from specialisation.\n\nThe statement is true.",
+      "A pick delay can pressure packing, but buffers, parallel lanes, or reordered waves can absorb a local lag. Claiming that packing and dispatch for the whole shift must stall overstates the interdependence.\n\nThe statement is false.",
+      "In this layout every order still needs both picking and packing, so the stages stay jointly necessary. Read that way, the claim treats the joint workflow as ruling out neat separation of roles across the shift.\n\nThe statement is true.",
+      "Narrow, repetitive category picking can raise output while dulling the job. Lower satisfaction despite productivity gains is a recognised drawback of specialisation.\n\nThe statement is true.",
+      "Fulfilment cost falls when stages stay balanced. When coordination slips, extra handling and idle time can erase the usual cost advantage, so the claim's smooth-running cost cut is not guaranteed.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.43",
+    "title": "Barter Ratios Without a Unit of Account",
+    "context": "Analyze comparison difficulties when traders exchange many unlike goods without a common monetary measure. Evaluate the following economic assertions:",
+    "statements": [
+      "Unit of account provides a common euro measure for quoting unlike products on shelf labels.",
+      "A unit of account eliminates the need for any numeric prices because goods exchange themselves without measurement.",
+      "Unit of account physically stores bread inside each coin so shoppers need not visit bakeries.",
+      "Money's medium-of-exchange function is distinct from its role as standard measure for prices and debts.",
+      "Inflation gradually changes the real meaning behind unchanged numeric price labels over long periods."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Shared pricing units simplify comparison across heterogeneous goods.",
+      "Unit of account provides measurement; it does not remove the need for quoted prices.",
+      "Unit of account is a measurement convention, not physical storage in currency.",
+      "Exchange facilitation and price measurement are separate functions.",
+      "Positive inflation erodes real purchasing power even when sticker numbers move slowly."
+    ],
+    "tactical_explanations": [
+      "A shared euro measure lets unlike goods carry comparable shelf prices. That common yardstick is the unit-of-account function.\n\nThe statement is true.",
+      "A unit of account is precisely a device for quoting numeric prices. It does not remove the need for prices or make goods exchange themselves without measurement.\n\nThe statement is false.",
+      "Unit of account is a measurement role. Coins do not contain bread, and shoppers still need bakeries. The physical-storage reading is wrong.\n\nThe statement is false.",
+      "Both functions use the same currency in ordinary trade, so the clean classroom split between medium of exchange and price measurement is sharper than daily use. The claim's hard separation overstates how apart the roles run.\n\nThe statement is false.",
+      "If sticker numbers are literally unchanged, those particular labels are not the rising prices that make up measured inflation. The claim's long-run unchanged numeric labels story does not match how a rising price level shows up in the data.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.44",
+    "title": "Saving and Tax in Extended Flow Models",
+    "context": "Review how saving and taxation withdraw spending temporarily in fuller circular-flow diagrams. Evaluate the following economic assertions:",
+    "statements": [
+      "Household saving can withdraw part of income from immediate consumption spending in extended circular-flow diagrams.",
+      "Tax payments transfer purchasing power from private actors toward government in the flow model.",
+      "Government transfers and public spending can inject income back into the circular flow after tax collection.",
+      "The basic circular flow shows income returning as spending with no role for money as medium of exchange.",
+      "Leakages and injections help explain how public finance connects to private income and expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Saving is a recognised withdrawal from the consumption loop in extended models.",
+      "Taxation moves resources to the public sector within the flow framework.",
+      "Transfers and public expenditure re-inject purchasing power into the circuit.",
+      "Monetary exchange is assumed in modern circular-flow analysis, not barter alone.",
+      "Public sector flows integrate with household and firm circuits."
+    ],
+    "tactical_explanations": [
+      "In extended circular-flow diagrams, saving is a withdrawal: part of household income is not spent on current consumption. That leakage is standard.\n\nThe statement is true.",
+      "Tax moves purchasing power from households and firms to government. In the flow model that is a transfer of command over resources to the public sector.\n\nThe statement is true.",
+      "Government can send purchasing power back through transfers and public spending. Those injections re-enter the circuit after tax has been collected.\n\nThe statement is true.",
+      "The simplest two-sector picture is often drawn as income and spending arrows with money left implicit rather than shown as its own medium-of-exchange box. The claim matches that stripped diagram.\n\nThe statement is true.",
+      "Leakages such as saving and tax, and injections such as investment and government spending, are how fuller models connect public finance to private income and expenditure.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.45",
+    "title": "Temporary Household Energy Subsidy",
+    "context": "Assess a short-term energy bill subsidy lowering household payments while suppliers remain private competing firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Energy bill subsidies are government transfers reducing the price households pay for a rival, excludable service.",
+      "Subsidies differ from pure public goods because metered electricity remains excludable by connection.",
+      "Subsidy spending funded by tax links government budgets to household budgets in the circular flow.",
+      "Any government payment automatically converts subsidised energy into a non-excludable public good.",
+      "Transfer programmes can pursue social protection goals without eliminating private supplier competition."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Subsidies channel public funds to lower user costs for targeted consumption.",
+      "Metered power remains rival and excludable unlike defence or street lighting.",
+      "Tax-funded subsidies connect public and private sectors in flow diagrams.",
+      "Public-good status depends on excludability and benefit sharing, not government involvement alone.",
+      "Subsidies support affordability while private firms may still compete."
+    ],
+    "tactical_explanations": [
+      "An energy-bill subsidy uses public funds to lower what households pay for metered power. Electricity remains rival in use and excludable by connection, so the subsidy is a transfer on a private-type service.\n\nThe statement is true.",
+      "Pure public goods are non-excludable and non-rival. Metered electricity fails both tests. A subsidy does not change that classification.\n\nThe statement is true.",
+      "Energy subsidies are often booked as price supports or firm-side measures rather than a clean household-transfer arrow. Treating every tax-funded energy subsidy as a direct household-budget link in the circular flow overclaims how the books are drawn.\n\nThe statement is false.",
+      "Public-good status depends on rivalry and excludability, not on whether government pays. A subsidy does not turn metered energy into a non-excludable public good.\n\nThe statement is false.",
+      "Large subsidy schemes can reshape supplier margins and entry, so rivalry among private firms is not safely guaranteed to survive unchanged. The claim that social-protection transfers leave competition untouched is too strong.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.46",
+    "title": "Textile Plant Stage Dependency",
+    "context": "Consider a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. Evaluate the following economic assertions:",
+    "statements": [
+      "Departmental specialisation can raise output per worker through focused skill development on repeated tasks.",
+      "A dye-house delay can idle weaving and finishing lines downstream, illustrating interdependence drawbacks.",
+      "Specialisation never occurs in textile production because every worker must perform spinning and finishing personally.",
+      "Repetitive single-stage work always increases job satisfaction with no possible human drawbacks.",
+      "Coordinated specialisation always raises average production cost per metre of fabric despite any productivity gain."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Focused departments develop deeper task-specific expertise.",
+      "Sequential stages create systemic vulnerability to local delays.",
+      "Textile manufacturing relies heavily on specialised stages.",
+      "Monotonous repetition is a recognised division-of-labour drawback.",
+      "Productivity gains often lower unit cost when lines run smoothly."
+    ],
+    "tactical_explanations": [
+      "Workers who stay in spinning, weaving, or dyeing build deeper task-specific skill. Focused departments commonly raise output per worker on those repeated tasks.\n\nThe statement is true.",
+      "Dyeing feeds finishing; weaving feeds dyeing. A dye-house stoppage can leave downstream lines idle. That knock-on effect is the interdependence drawback of staged specialisation.\n\nThe statement is true.",
+      "Textile plants routinely split spinning, weaving, dyeing, and finishing. Saying specialisation never occurs because every worker must do every stage personally rejects how those plants actually run.\n\nThe statement is false.",
+      "Repetitive single-stage work can raise output while lowering job satisfaction. Always increases satisfaction with no possible drawbacks is an overclaim.\n\nThe statement is false.",
+      "When specialised lines run smoothly, higher output per worker usually lowers unit cost. Claiming that coordinated specialisation always raises average cost despite productivity gains reverses the usual efficiency result.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.47",
+    "title": "Barter, Inflation, and Public Finance Synthesis",
+    "context": "Analyze how barter limits, inflation, public goods, and specialisation fit together in a monetary market economy. Evaluate the following economic assertions:",
+    "statements": [
+      "Without money, exchange under barter fails unless each party wants exactly what the other offers at the same moment.",
+      "Inflation reduces purchasing power when the general price level rises; the ECB targets stability slightly below two percent.",
+      "Taxation can fund public goods when free riders would underfund voluntary provision of shared services.",
+      "Division of labour through specialisation raises productivity but may create monotony and stage dependency.",
+      "Circular-flow models link household factor supply, firm production, income, spending, and government tax and transfers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Money simplifies matching trading partners compared with direct barter.",
+      "General inflation erodes real value; ecb target seeks moderate stability.",
+      "Compulsory tax addresses non-excludable benefits and free-rider incentives.",
+      "Specialisation gains trade off against human and coordination drawbacks.",
+      "Integrated flow models connect private and public monetary circuits."
+    ],
+    "tactical_explanations": [
+      "Barter stalls unless each party wants exactly what the other offers at the same moment. Money relaxes that double coincidence requirement.\n\nThe statement is true.",
+      "A general rise in prices cuts purchasing power. The ECB aims for inflation slightly below two percent as its stability target.\n\nThe statement is true.",
+      "Shared services invite free riding under voluntary pay. Taxation can fund public goods by collecting from a broad base of beneficiaries.\n\nThe statement is true.",
+      "Specialisation raises productivity through focused skill, yet it can make work monotonous and leave each stage dependent on the one before it.\n\nThe statement is true.",
+      "Circular-flow models connect household factor supply, firm production, income, spending, and government tax and transfers in one monetary picture.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.48",
+    "title": "Cash Savings Under Moderate Inflation",
+    "context": "Analyze how euro notes held at home behave when inflation runs slightly below the ECB target. Evaluate the following economic assertions:",
+    "statements": [
+      "Positive inflation gradually erodes the real purchasing power of unchanged nominal cash holdings.",
+      "Money's store-of-value function weakens when prices rise faster than the nominal value stored.",
+      "Slightly below two percent inflation implies cash holders gain real purchasing power every year without exception.",
+      "The ECB stability target contrasts with destabilising very high inflation that rapidly destroys real balances.",
+      "Domestic general price trends chiefly determine local purchasing power of euro cash savings."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Moderate inflation reduces what fixed nominal amounts can buy over time.",
+      "Stored cash loses real value unless nominal returns compensate inflation.",
+      "Positive inflation reduces real value; it does not raise purchasing power for cash holders.",
+      "Low stable target differs sharply from harmful high inflation episodes.",
+      "Local price levels determine domestic real value of euro holdings."
+    ],
+    "tactical_explanations": [
+      "Even moderate positive inflation means unchanged nominal cash buys a little less over time. Real purchasing power of idle notes drifts down.\n\nThe statement is true.",
+      "Store of value means carrying purchasing power into the future. When prices rise faster than the nominal amount held, that real bridge weakens.\n\nThe statement is true.",
+      "Slightly-below-2% inflation is still positive inflation. Cash holders lose a little real purchasing power each year unless something else compensates; they do not gain purchasing power without exception.\n\nThe statement is false.",
+      "A low, stable target is meant to keep money usable for planning. Very high inflation rapidly destroys real balances. The contrast in the claim is the right one.\n\nThe statement is true.",
+      "What euro cash buys at home depends mainly on domestic prices. Local general price trends set the real value of those savings.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.49",
+    "title": "Child Benefit Bank Transfer",
+    "context": "Review monthly child-benefit transfers paid into family accounts and their place in the circular flow. Evaluate the following economic assertions:",
+    "statements": [
+      "Child benefit is a government transfer injecting purchasing power into eligible households.",
+      "Transfer income spent on groceries and clothing continues the flow from households to firms.",
+      "Because child benefit is funded by tax, every recipient household consumes it as a pure public good.",
+      "Transfers pursue distributional policy goals distinct from providing non-excludable services like national defence.",
+      "Government spending on transfers appears alongside tax receipts in extended circular-flow analysis."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Benefits shift resources toward families by policy design.",
+      "Subsequent household spending closes the loop toward firm revenue.",
+      "Benefits are excludable by eligibility; they are not pure public goods.",
+      "Transfers redistribute income; public goods are defined by shared non-excludable benefit.",
+      "Public sector injections and withdrawals integrate with private flows."
+    ],
+    "tactical_explanations": [
+      "Child benefit is a government transfer that adds purchasing power to eligible family accounts by design.\n\nThe statement is true.",
+      "Households may save part of the benefit, pay down debt, or spend on imports. Spending on groceries and clothing can feed firm revenue, but the clean continuation the claim describes is not guaranteed for every euro transferred.\n\nThe statement is false.",
+      "Eligibility rules exclude non-recipients. Child benefit is a targeted transfer, not a pure public good defined by non-excludable shared consumption.\n\nThe statement is false.",
+      "Both transfers and defence are public-budget outlays. Drawing a bright line that distributional transfers are wholly distinct from non-excludable services overstates how separately they sit inside one public-finance framework.\n\nThe statement is false.",
+      "Extended circular-flow sketches vary in how they draw transfer arrows beside tax. Treating every such diagram as automatically showing transfers alongside tax receipts overclaims a uniform layout.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.50",
+    "title": "Neighbourhood Camera Funding Debate",
+    "context": "A city council debates funding street security cameras through general taxation versus private subscriptions only. Evaluate the following economic assertions:",
+    "statements": [
+      "Camera coverage on public streets benefits many residents who cannot be easily excluded from safer surroundings.",
+      "Subscription-only funding may underprovide cameras because non-subscribers still gain from deterrence effects nearby.",
+      "Tax financing can spread camera costs across taxpayers when voluntary payment would attract free riders.",
+      "Security cameras are pure private goods with perfect excludability in every neighbourhood context.",
+      "Public finance for shared local safety links government budgets to household tax payments in the circular flow."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Shared safety benefits resemble local public-good characteristics in practice.",
+      "Non-payers may benefit from deterrence without subscribing.",
+      "Compulsory tax addresses free-rider underfunding.",
+      "Practical excludability limits vary; many local safety measures resemble public goods.",
+      "Tax and spend flows appear in extended circular-flow models."
+    ],
+    "tactical_explanations": [
+      "Street cameras that deter crime create safer surroundings many residents share. Excluding non-payers from that ambient safety is hard. The shared, hard-to-exclude benefit matches local public-good logic.\n\nThe statement is true.",
+      "A neighbour who skips the subscription still gains if nearby cameras deter offenders. Voluntary funding therefore invites free riding and can leave cameras underprovided.\n\nThe statement is true.",
+      "Tax finance bills a wide base instead of relying on willing subscribers. That reduces the free-rider underfunding problem voluntary payment faces.\n\nThe statement is true.",
+      "Perfect excludability would mean non-payers get no safety spillover. Ambient deterrence on public streets leaks to non-subscribers, so cameras are not pure private goods in every neighbourhood setting.\n\nThe statement is false.",
+      "Local camera schemes may be funded by earmarked fees, partnerships, or other pots rather than the general household-tax arrow in a circular-flow sketch. Treating public safety finance as that standard tax link overclaims how the funding always appears in the diagram.\n\nThe statement is false."
+    ]
+  }
+]

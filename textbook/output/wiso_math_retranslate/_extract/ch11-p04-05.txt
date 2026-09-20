@@ -1,0 +1,142 @@
+CASE MATH 11.70
+ANSWER [true, true, true, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so
+$$R_N^{\prime}=30,\qquad C_N^{\prime}=18,\qquad P_N^{\prime}(Q)=30-18=12$$
+at every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only
+$$P_S^{\prime}(Q)=20-Q.$$
+At $Q=15$ one has $P_S^{\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\prime}$ say nothing about which firm currently has the larger stock of total profit. North has constant $P_N^{\prime}=12$; South has $P_S^{\prime}=20-Q$ (positive at $15$, negative at $25$). Slope shapes do not rank profit stocks.
+
+=== A ===
+**A.** → True
+
+North's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gives
+
+$$
+P_N^{\prime}(Q) = 12
+$$
+
+at every $Q$
+
+Equivalently $R_N^{\prime}-C_N^{\prime}=30-18=12$; North's marginal profit is the constant $12$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P_N'(Q) = 12
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+At $Q=15$, South's posted schedule gives
+
+$$
+P_S^{\prime}(15) = 20-15
+$$
+
+$$
+20 - 15 = 5
+$$
+
+$$
+P_S^{\prime}(15) = 5 = 5
+$$
+
+$$
+P_S^{\prime}(15) = 5>0
+$$
+
+A positive derivative means South's profit is still locally increasing at $Q=15$
+
+South should still expand a little at $15$ packs: extra profit is still positive on the margin.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+At $Q=25$,
+
+$$
+P_S^{\prime}(25) = 20-25
+$$
+
+$$
+20 - 25 = -5
+$$
+
+$$
+P_S^{\prime}(25) = -5 = -5
+$$
+
+$$
+P_S^{\prime}(25) = -5<0
+$$
+
+A negative derivative means South's profit is locally decreasing at $Q=25$
+
+Past $Q=20$, South's posted schedule has $P_S^{\prime}<0$, so at $25$ a small expansion lowers South's profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+The shape of $P_S^{\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
+
+South could currently earn more or less total profit; the claim that South must earn less does not follow
+
+North's stock is $P_N(15)=12\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\prime}$ alone — no forced ranking.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_N(15) = 12\cdot 15-40 = 140
+$$
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+North's marginal profit is
+
+$$
+P_N^{\prime}(Q) = R_N^{\prime}(Q)-C_N^{\prime}(Q)
+$$
+
+$$
+P_N^{\prime}(Q) = 30-18
+$$
+
+$$
+30 - 18 = 12
+$$
+
+$$
+P_N^{\prime}(Q) = 12 = 12
+$$
+
+$$
+P_N^{\prime}(Q) = 12
+$$
+
+The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\prime}-C_N^{\prime}$, not that intercept
+
+Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+

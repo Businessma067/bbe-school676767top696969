@@ -1,0 +1,31 @@
+**D.** → Falsch
+
+Diese Anweisung fragt, ob die Wahrscheinlichkeit, zwei Paare zu erhalten, größer als $5\%$ ist. Wir müssen zunächst die Anzahl der Möglichkeiten zur Bildung einer Hand mit zwei Paaren berechnen, $N_{\text{two pair}}$ , und diese dann durch die Gesamtzahl der möglichen Hände, $N_{\text{total}}$ , dividieren.
+
+Die Anzahl der Möglichkeiten, eine Zwei-Paar-Hand zu bilden, wird in der Lösungsübersicht berechnet: $$
+\binom{52}{5} = \dfrac{52!}{5!(52-5)!}
+$$ $$
+\dfrac{52!}{5!(47)!} = \dfrac{52 \cdot 51 \cdot 50 \cdot 49 \cdot 48}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}
+$$ $$
+52 \times 51 = 2652
+$$ $$
+2652 \times 50 = 132600
+$$ $$
+132600 \times 49 = 6497400
+$$ $$
+6497400 \times 48 = 311875200
+$$ $$
+\dfrac{311875200}{120} = 2598960
+$$ $$
+\binom{52}{5} = 2598960
+$$ $$
+N_{\text{two pair}} = 123,552
+$$ Die Gesamtzahl der verschiedenen 5-Karten-Hände, $N_{\text{total}}$ , wird in der Lösungsübersicht auch als $2,598,960$ angegeben. Die Wahrscheinlichkeit, zwei Paare zu bekommen, ist: $$
+P(\text{two pair}) = \frac{N_{\text{two pair}}}{N_{\text{total}}}
+$$ $$
+P(\text{two pair}) = \frac{123,552}{2,598,960}
+$$ $$
+P(\text{two pair}) \approx 0.047539
+$$ Wenn man dies in einen Prozentsatz umrechnet, beträgt die Wahrscheinlichkeit ungefähr $4.75\%$ . Die Aussage besagt, dass diese Wahrscheinlichkeit größer als $5\%$ ist.
+
+Die Aussage ist falsch.

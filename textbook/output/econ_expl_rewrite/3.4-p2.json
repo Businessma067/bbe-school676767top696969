@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.26",
+    "title": "Medium €50m turnover cap",
+    "context": "Analyze the EU medium enterprise turnover limit alongside other criteria. Evaluate the following economic assertions:",
+    "statements": [
+      "€2.1m turnover exceeds the €2m micro turnover cap.",
+      "€10.4m turnover exceeds the €10m small turnover cap.",
+      "€52m turnover exceeds the €50m medium turnover cap.",
+      "Firms skip the small tier whenever they hire a tenth employee.",
+      "A €44m balance sheet exceeds the €43m medium balance sheet cap."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "€2.1m breaks the micro turnover threshold.\n\nApplied carefully, \"€2.1m turnover exceeds the €2m micro turnover cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€10.4m breaks the small turnover threshold.\n\nApplied carefully, \"€10.4m turnover exceeds the €10m small turnover cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€52m breaks the medium turnover threshold.\n\nApplied carefully, \"€52m turnover exceeds the €50m medium turnover cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Ten employees fail micro but small requires further staff and turnover tests.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€44m breaks the medium balance sheet threshold.\n\nApplied carefully, \"A €44m balance sheet exceeds the €43m medium balance sheet cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.27",
+    "title": "Micro versus small confusion",
+    "context": "Analyze an examiner checks claims mixing micro and small staff ceilings. Evaluate the following economic assertions:",
+    "statements": [
+      "Eight employees fall short of the micro tier's fewer-than-ten staff threshold.",
+      "A seven-person workforce remains within micro staffing limits under EU rules.",
+      "Exactly ten staff satisfies the micro requirement of fewer than ten employees.",
+      "Exactly two hundred fifty staff satisfies the medium requirement of fewer than two hundred and fifty.",
+      "Exactly fifty staff satisfies the small enterprise requirement of fewer than fifty."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Eight is below the ten-person micro limit.\n\nApplied carefully, \"Eight employees fall short of the micro tier's fewer-than-ten staff threshold\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Seven is below the ten-person micro limit.\n\nApplied carefully, \"A seven-person workforce remains within micro staffing limits under EU rules\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Ten is not fewer than ten; the micro staff test fails.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "250 is not fewer than 250; the medium staff test fails.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Fifty is not fewer than fifty; the small staff test fails.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.28",
+    "title": "SME finance verification",
+    "context": "Analyze a medium-sized exporter seeks a bank loan with EU guarantee backing. Evaluate the following economic assertions:",
+    "statements": [
+      "One hundred and eighty employees remain within the medium staffing band below two hundred and fifty.",
+      "A medium exporter employing one hundred workers stays under the two-hundred-fifty employee ceiling.",
+      "€2.1m turnover still meets the micro turnover cap of €2m.",
+      "€10.4m turnover still meets the small turnover cap of €10m.",
+      "One hundred and twenty workers on payroll still qualifies as medium under the staff cap."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "180 is below the 250-person medium limit.\n\nApplied carefully, \"One hundred and eighty employees remain within the medium staffing band below two hundred and fifty\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "100 is below the 250-person medium limit.\n\nApplied carefully, \"A medium exporter employing one hundred workers stays under the two-hundred-fifty employee ceiling\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€2.1m exceeds the €2m micro turnover threshold.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€10.4m exceeds the €10m small turnover threshold.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "120 is below the 250-person medium limit.\n\nApplied carefully, \"One hundred and twenty workers on payroll still qualifies as medium under the staff cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.29",
+    "title": "Local repair shop profile",
+    "context": "Consider a technician who runs a repair shop with one apprentice, two staff total, and €180k turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "€52m turnover still meets the medium turnover cap of €50m.",
+      "A €44m balance sheet still meets the medium balance sheet cap of €43m.",
+      "Two workers on payroll automatically places the shop above the micro employee band.",
+      "Employing six people forces the business out of micro classification on headcount alone.",
+      "Two hundred staff fits the medium employee ceiling below two hundred and fifty."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "€52m exceeds the €50m medium turnover threshold.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€44m exceeds the €43m medium balance sheet threshold.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Two is below ten and fits the micro staff ceiling.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Six is below ten and fits the micro staff ceiling.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "200 is below the 250-person medium limit.\n\nApplied carefully, \"Two hundred staff fits the medium employee ceiling below two hundred and fifty\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.30",
+    "title": "Combined criteria requirement",
+    "context": "Analyze whether meeting one SME criterion alone guarantees overall SME status. Evaluate the following economic assertions:",
+    "statements": [
+      "Forty-five staff fits the small employee ceiling below fifty.",
+      "Thirty staff exceeds the small employee ceiling of fewer than fifty.",
+      "One hundred and eighty staff fits the small employee ceiling below fifty.",
+      "Two hundred staff fits the small employee ceiling below fifty.",
+      "Three thousand staff fits the medium employee ceiling below two hundred and fifty."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "45 is below the fifty-employee small limit.\n\nApplied carefully, \"Forty-five staff fits the small employee ceiling below fifty\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Thirty is below fifty and fits the small staff ceiling.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "180 exceeds the fifty-employee small limit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "200 exceeds the fifty-employee small limit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "3,000 far exceeds the 250-person medium limit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.31",
+    "title": "Three thousand staff group",
+    "context": "Consider a tech group that employs three thousand staff with €200m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "Turnover of €1.8m exceeds the micro turnover cap of €2m.",
+      "Micro firms are included in SME counts and MSME groupings.",
+      "Ten thousand a components manufacturer staff fits the medium employee ceiling below two hundred and fifty.",
+      "Turnover of €9.5m exceeds the small turnover cap of €10m.",
+      "Turnover of €49m exceeds the medium turnover cap of €50m."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "€1.8m is within the €2m micro turnover ceiling.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Micro enterprises form part of the sme category.\n\nApplied carefully, \"Micro firms are included in SME counts and MSME groupings\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "10,000 far exceeds the 250-person medium limit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€9.5m is within the €10m small turnover ceiling.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€49m is within the €50m medium turnover ceiling.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.32",
+    "title": "Architect turnover edge",
+    "context": "Analyze an architect practice has nine staff, €2.05m turnover, and a €1.6m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm with forty-five staff is micro because it employs fewer than fifty people.",
+      "Large firms face reporting duties rather than exemption from financial disclosure.",
+      "Because SMEs are numerous by count, SME-focused policy reaches most EU businesses.",
+      "Few large firms can still account for substantial employment despite being rare by count.",
+      "SME failures can still affect employees, suppliers, and local communities."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Forty-five staff exceeds the micro ceiling of fewer than ten.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Large classification brings reporting obligations.\n\nApplied carefully, \"Large firms face reporting duties rather than exemption from financial disclosure\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "High sme share by number shapes eu business policy.\n\nApplied carefully, \"Because SMEs are numerous by count, SME-focused policy reaches most EU businesses\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Large employers can be few in number yet significant in jobs.\n\nApplied carefully, \"Few large firms can still account for substantial employment despite being rare by count\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sme insolvency has stakeholder effects beyond firm count statistics.\n\nApplied carefully, \"SME failures can still affect employees, suppliers, and local communities\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.33",
+    "title": "SME count statistic meaning",
+    "context": "Analyze what the ninety-nine percent SME figure implies about EU business structure. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm with thirty-eight staff is micro because it employs fewer than fifty people.",
+      "Small status requires fewer than fifty staff plus turnover at or below €10m.",
+      "Medium status requires fewer than two hundred and fifty staff plus a qualifying financial test.",
+      "EU support programmes use standard SME thresholds to verify applicant eligibility.",
+      "A firm with nine staff still needs turnover or balance sheet data to confirm micro status."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Thirty-eight staff exceeds the micro ceiling of fewer than ten.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Small combines staff ceiling with the €10m turnover cap.\n\nApplied carefully, \"Small status requires fewer than fifty staff plus turnover at or below €10m\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Medium combines staff ceiling with turnover or balance sheet caps.\n\nApplied carefully, \"Medium status requires fewer than two hundred and fifty staff plus a qualifying financial test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Finance schemes rely on official size criteria.\n\nApplied carefully, \"EU support programmes use standard SME thresholds to verify applicant eligibility\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Financial caps must be verified alongside headcount.\n\nApplied carefully, \"A firm with nine staff still needs turnover or balance sheet data to confirm micro status\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.34",
+    "title": "Medium turnover breach path",
+    "context": "Analyze a firm has one hundred twenty staff, €52m turnover, and a €40m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "Medium status follows from international operations regardless of headcount.",
+      "A components manufacturer is classified as large under EU thresholds because headcount far exceeds medium limits.",
+      "Micro status requires fewer than ten staff plus turnover at or below €2m or balance sheet at or below €2m.",
+      "a neighbourhood bakery with six staff meets the micro headcount test.",
+      "A firm with eight staff still needs turnover or balance sheet data to confirm micro status."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Medium status depends on eu thresholds, not geographic scope.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "A components manufacturer's ~10,000 staff exceeds the 250-person medium ceiling.\n\nApplied carefully, \"A components manufacturer is classified as large under EU thresholds because headcount far exceeds medium limits\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Micro combines staff ceiling with one financial cap.\n\nApplied carefully, \"Micro status requires fewer than ten staff plus turnover at or below €2m or balance sheet at or below €2m\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Six employees is below the ten-person micro limit.\n\nApplied carefully, \"a neighbourhood bakery with six staff meets the micro headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Financial caps must be verified alongside headcount.\n\nApplied carefully, \"A firm with eight staff still needs turnover or balance sheet data to confirm micro status\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.35",
+    "title": "Small to medium transition",
+    "context": "Analyze a family manufacturer grows to one hundred eighty staff and €45m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "A village craft business with four staff meets the micro headcount test.",
+      "Micro status follows from supplying larger manufacturers regardless of headcount.",
+      "A local repair shop with two staff meets the micro headcount test.",
+      "A retailer with thirty staff meets the small headcount test.",
+      "SME classification is optional for firms seeking EU support programmes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Four employees is below the ten-person micro limit.\n\nApplied carefully, \"A village craft business with four staff meets the micro headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Supplier relationships do not determine eu size classification.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Two employees is below the ten-person micro limit.\n\nApplied carefully, \"A local repair shop with two staff meets the micro headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Thirty employees is below the fifty-person small limit.\n\nApplied carefully, \"A retailer with thirty staff meets the small headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Official sme criteria gate access to many support schemes.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.36",
+    "title": "EU table tier pairing",
+    "context": "Analyze each enterprise tier with its paired EU threshold logic. Evaluate the following economic assertions:",
+    "statements": [
+      "An architect practice with nine staff meets the micro headcount test.",
+      "A family firm with exactly ten staff fails the micro headcount test.",
+      "A textile plant with exactly two hundred fifty staff fails the medium headcount test.",
+      "A wholesaler with thirty-eight staff meets the small headcount test.",
+      "A logistics company with exactly fifty staff fails the small headcount test."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Nine employees is below the ten-person micro limit.\n\nApplied carefully, \"An architect practice with nine staff meets the micro headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Ten is not fewer than ten, so micro staff test fails.\n\nApplied carefully, \"A family firm with exactly ten staff fails the micro headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "250 is not fewer than 250, so medium staff test fails.\n\nApplied carefully, \"A textile plant with exactly two hundred fifty staff fails the medium headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Thirty-eight employees is below the fifty-person small limit.\n\nApplied carefully, \"A wholesaler with thirty-eight staff meets the small headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Fifty is not fewer than fifty, so small staff test fails.\n\nApplied carefully, \"A logistics company with exactly fifty staff fails the small headcount test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.37",
+    "title": "Small bakery versus large manufacturer",
+    "context": "Compare a neighbourhood bakery with a large components manufacturer when discussing business size. Evaluate the following economic assertions:",
+    "statements": [
+      "The medium financial test treats €43m as the upper balance sheet bound.",
+      "Micro eligibility includes balance sheet totals that do not exceed €2m.",
+      "Small-enterprise turnover qualification allows figures up to the €10m ceiling.",
+      "Micro turnover qualification permits annual sales up to €2m under EU tables.",
+      "Medium turnover qualification permits figures up to €50m when other criteria hold."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "€43m is the medium balance sheet ceiling.\n\nApplied carefully, \"The medium financial test treats €43m as the upper balance sheet bound\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€2m is the micro balance sheet ceiling.\n\nApplied carefully, \"Micro eligibility includes balance sheet totals that do not exceed €2m\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€10m is the small turnover ceiling.\n\nApplied carefully, \"Small-enterprise turnover qualification allows figures up to the €10m ceiling\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€2m is the micro turnover ceiling.\n\nApplied carefully, \"Micro turnover qualification permits annual sales up to €2m under EU tables\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€50m is the medium turnover ceiling.\n\nApplied carefully, \"Medium turnover qualification permits figures up to €50m when other criteria hold\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.38",
+    "title": "Incomplete application data",
+    "context": "Analyze an agency reviews an applicant with nine staff but incomplete turnover data. Evaluate the following economic assertions:",
+    "statements": [
+      "Fifty-one employees instantly relegate a firm to large-enterprise status with no intermediate tier.",
+      "Both turnover and balance sheet must fail for medium status to be denied.",
+      "The ninety-nine percent SME statistic refers to business numbers, not GDP share.",
+      "Meeting the turnover threshold for medium size does not let the firm ignore the balance-sheet criterion entirely.",
+      "Eleven employees immediately push a business into the large-firm category skipping SME tiers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Fifty staff fails small but medium tier may still apply.\n\nThe absolute wording \"instantly\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Breaching either financial cap can block medium classification.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "The statistic measures business counts rather than gdp share.\n\nApplied carefully, \"The ninety-nine percent SME statistic refers to business numbers, not GDP share\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Either financial cap can disqualify medium status when breached.\n\nThe absolute wording \"entirely\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Ten staff fails micro but small and medium tiers still exist.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.39",
+    "title": "Medium turnover-only breach",
+    "context": "Analyze a firm has two hundred staff, €55m turnover, and a €42m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "Passing the balance-sheet test alone does not drop the turnover test from the medium-size classification.",
+      "Grant schemes ignore official micro thresholds when the applicant is a local shop.",
+      "A firm with nine staff is confirmed micro without turnover documentation.",
+      "Both turnover and balance sheet must pass for micro status to be granted.",
+      "Definitions actively shape finance access and regulatory treatment of firms."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Either financial cap can disqualify medium status when breached.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Support programmes use standard eu micro criteria.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Financial thresholds are mandatory for micro confirmation.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Only one financial measure must qualify for micro status.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Sme labels affect support and reporting, not just description.\n\nApplied carefully, \"Definitions actively shape finance access and regulatory treatment of firms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.40",
+    "title": "SME employment nuance",
+    "context": "Analyze claims linking SME business counts with employment patterns. Evaluate the following economic assertions:",
+    "statements": [
+      "Meeting one SME criterion alone does not guarantee overall SME status in a tier.",
+      "Micro enterprises dominate EU business counts as part of the broader SME group.",
+      "A firm with eight staff is confirmed micro without turnover documentation.",
+      "Progression through SME tiers follows successive threshold crossings as firms grow.",
+      "The EU micro cap for turnover is €10m rather than €2m."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Each tier requires joint staff and financial tests.\n\nApplied carefully, \"Meeting one SME criterion alone does not guarantee overall SME status in a tier\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Micro firms contribute to the ~99% sme majority by number.\n\nApplied carefully, \"Micro enterprises dominate EU business counts as part of the broader SME group\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Financial thresholds are mandatory for micro confirmation.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Firms can move from micro to small to medium with growth.\n\nApplied carefully, \"Progression through SME tiers follows successive threshold crossings as firms grow\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€10m is the small turnover cap, not the micro cap.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.41",
+    "title": "Financial cap literacy",
+    "context": "Analyze students must recall EU financial caps. Evaluate the following economic assertions:",
+    "statements": [
+      "Small enterprises must satisfy staff limits and the €10m turnover cap.",
+      "Classification review requires both headcount and financial figures for EU SME tiers.",
+      "A firm crossing medium limits becomes ineligible for certain EU SME finance programmes.",
+      "Medium enterprises must satisfy staff limits and at least one financial cap.",
+      "A tech group with three thousand staff is treated as large under EU size rules."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Small uses combined staff and turnover criteria.\n\nApplied carefully, \"Small enterprises must satisfy staff limits and the €10m turnover cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Incomplete data prevents reliable sme verification.\n\nApplied carefully, \"Classification review requires both headcount and financial figures for EU SME tiers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sme-tied support excludes firms above medium thresholds.\n\nApplied carefully, \"A firm crossing medium limits becomes ineligible for certain EU SME finance programmes\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Medium uses combined staff and financial criteria.\n\nApplied carefully, \"Medium enterprises must satisfy staff limits and at least one financial cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "3,000 employees exceeds all SME staff ceilings.\n\nApplied carefully, \"A tech group with three thousand staff is treated as large under EU size rules\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.42",
+    "title": "Micro local economy role",
+    "context": "Analyze the economic role of micro firms such as local shops and workshops. Evaluate the following economic assertions:",
+    "statements": [
+      "Accounting rule sets can differ between micro firms and large groups such as a components manufacturer.",
+      "EU SME tables pair each tier with distinct staff and financial ceilings.",
+      "The EU medium cap for balance sheet is €50m rather than €43m.",
+      "Labeling €10m as the medium turnover ceiling misstates the EU threshold for that tier.",
+      "Calling €2m the small turnover cap incorrectly swaps micro and small financial limits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Size classification affects applicable accounting rules.\n\nApplied carefully, \"Accounting rule sets can differ between micro firms and large groups such as a components manufacturer\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Micro, small, and medium each have separate threshold rows.\n\nApplied carefully, \"EU SME tables pair each tier with distinct staff and financial ceilings\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "€43m is the medium balance sheet cap in the EU table.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€10m is the small turnover cap, not the medium cap.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€2m is the micro turnover cap, not the small cap.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.43",
+    "title": "Staff-only exam trap",
+    "context": "Analyze a case lists eight staff and asks whether SME status is certain. Evaluate the following economic assertions:",
+    "statements": [
+      "A small IT-support venture count as a large enterprise because their bakery supplies many customers.",
+      "One hundred and twenty staff with €52m turnover fails the medium turnover test.",
+      "About ninety-nine percent of EU employees work in SMEs because ninety-nine percent of firms are SMEs.",
+      "A components manufacturer counts as a medium enterprise because its Austrian headquarters defines EU size.",
+      "Two hundred staff with €55m turnover fails the medium turnover test."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A small IT-support venture illustrate micro-scale operations, not large enterprise status.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€52m exceeds the €50m medium turnover cap.\n\nApplied carefully, \"One hundred and twenty staff with €52m turnover fails the medium turnover test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The statistic refers to business numbers, not employment share.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "A components manufacturer's ~10,000 staff exceeds medium limits.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€55m exceeds the €50m medium turnover cap.\n\nApplied carefully, \"Two hundred staff with €55m turnover fails the medium turnover test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.44",
+    "title": "Leaving SME status effects",
+    "context": "Analyze a firm crosses medium limits and becomes large. Evaluate the following economic assertions:",
+    "statements": [
+      "An engineering firm with two hundred staff can meet the medium staff test.",
+      "Grant eligibility for micro enterprises requires meeting official micro thresholds.",
+      "SME verification for bank loans may require proof of headcount and turnover bands.",
+      "A manufacturer with two hundred forty staff can meet the medium staff test.",
+      "One hundred and eighty staff with €45m turnover can meet medium staff and turnover tests."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "200 is below the 250-person medium limit.\n\nApplied carefully, \"An engineering firm with two hundred staff can meet the medium staff test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Micro grants use standard eu micro criteria.\n\nApplied carefully, \"Grant eligibility for micro enterprises requires meeting official micro thresholds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Lenders check official sme thresholds for guarantee schemes.\n\nApplied carefully, \"SME verification for bank loans may require proof of headcount and turnover bands\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "240 is below the 250-person medium limit.\n\nApplied carefully, \"A manufacturer with two hundred forty staff can meet the medium staff test\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "180 staff and €45m turnover fit medium ceilings.\n\nApplied carefully, \"One hundred and eighty staff with €45m turnover can meet medium staff and turnover tests\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.45",
+    "title": "Small retailer headroom",
+    "context": "Consider a retailer that has thirty staff and €9.9m turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "Medium turnover of €49m stays within the €50m medium cap.",
+      "Micro enterprises are omitted from the ninety-nine percent SME business count.",
+      "Small turnover of €9.5m stays within the €10m small cap.",
+      "A firm at eight staff is not confirmed as micro without financial verification.",
+      "A firm becomes large immediately upon employing a tenth worker."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "€49m meets the medium turnover threshold.\n\nApplied carefully, \"Medium turnover of €49m stays within the €50m medium cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Micro firms are included in sme counts.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€9.5m meets the small turnover threshold.\n\nApplied carefully, \"Small turnover of €9.5m stays within the €10m small cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Headcount alone does not confirm micro status.\n\nApplied carefully, \"A firm at eight staff is not confirmed as micro without financial verification\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Ten staff fails micro but further tiers depend on additional tests.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.46",
+    "title": "Medium mid-range profile",
+    "context": "Analyze medium classification for a firm with one hundred twenty-five staff, €25m turnover, and €30m balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm at nine staff is not confirmed as micro without financial verification.",
+      "A firm becomes large immediately upon reaching €2.1m turnover.",
+      "Micro turnover of €1.5m stays within the €2m micro cap.",
+      "One criterion alone is enough for small status when staff are forty-five.",
+      "One criterion alone is enough for medium status when turnover is €40m."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Headcount alone does not confirm micro status.\n\nApplied carefully, \"A firm at nine staff is not confirmed as micro without financial verification\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Turnover above €2m removes micro status but small or medium may apply.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€1.5m meets the micro turnover threshold.\n\nApplied carefully, \"Micro turnover of €1.5m stays within the €2m micro cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Small requires turnover at or below €10m as well.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Medium requires sub-250 staff plus financial tests.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.47",
+    "title": "SME synthesis review",
+    "context": "Analyze EU SME classification principles for exam review. Evaluate the following economic assertions:",
+    "statements": [
+      "Headcount alone confirms small status for a fifty-employee logistics company.",
+      "Incomplete turnover data still proves micro status when staff are nine.",
+      "Micro turnover of €1.6m balance sheet context still allows €1.6m balance sheet under €2m cap.",
+      "Supplier status to phone makers determines a components manufacturer size classification.",
+      "Headcount alone confirms micro status for a ten-employee family firm."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Fifty staff fails the below-fifty small staff test.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Financial thresholds are mandatory for micro confirmation.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "€1.6m meets the micro balance sheet threshold.\n\nApplied carefully, \"Micro turnover of €1.6m balance sheet context still allows €1.6m balance sheet under €2m cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Headcount and financial thresholds determine eu size classification.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Ten staff fails the below-ten micro staff test.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.48",
+    "title": "Turnover-only student error",
+    "context": "Analyze a student argues a firm is medium because turnover is €40m. Evaluate the following economic assertions:",
+    "statements": [
+      "Micro turnover of €1.7m balance sheet total stays within the €2m micro balance sheet cap.",
+      "A small IT-support venture serve as micro-scale examples alongside a components manufacturer as a large firm.",
+      "SME classification principles combine staff ceilings with turnover and/or balance sheet caps.",
+      "About ninety-nine percent of EU businesses are SMEs by number rather than by employment share alone.",
+      "Medium balance sheet of €42m stays within the €43m medium cap."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "€1.7m meets the micro balance sheet threshold.\n\nApplied carefully, \"Micro turnover of €1.7m balance sheet total stays within the €2m micro balance sheet cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Course examples contrast micro local ventures with a components manufacturer scale.\n\nApplied carefully, \"A small IT-support venture serve as micro-scale examples alongside a components manufacturer as a large firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Combined criteria define eu sme tiers in the official table.\n\nApplied carefully, \"SME classification principles combine staff ceilings with turnover and/or balance sheet caps\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The statistic measures business counts.\n\nApplied carefully, \"About ninety-nine percent of EU businesses are SMEs by number rather than by employment share alone\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "€42m meets the medium balance sheet threshold.\n\nApplied carefully, \"Medium balance sheet of €42m stays within the €43m medium cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.49",
+    "title": "Village craft micro profile",
+    "context": "Analyze a village craft business has four staff and €600k turnover. Evaluate the following economic assertions:",
+    "statements": [
+      "An SME may lose access to certain guarantee schemes after reclassification as large.",
+      "Micro enterprises remain part of MSME groupings alongside small and medium firms.",
+      "Crossing the medium employee or financial ceiling moves classification toward large enterprise status.",
+      "Village craft workshops are exempt from EU micro turnover caps.",
+      "Official size categories matter for EU-backed finance and support programme access."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Sme-tied finance programmes typically exclude large firms.\n\nApplied carefully, \"An SME may lose access to certain guarantee schemes after reclassification as large\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Msme terminology covers micro, small, and medium categories together.\n\nApplied carefully, \"Micro enterprises remain part of MSME groupings alongside small and medium firms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Exceeding medium thresholds exits sme bands.\n\nApplied carefully, \"Crossing the medium employee or financial ceiling moves classification toward large enterprise status\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Official staff and financial tests determine micro status.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Definitions gate eligibility for sme support.\n\nApplied carefully, \"Official size categories matter for EU-backed finance and support programme access\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.50",
+    "title": "SME ladder progression",
+    "context": "Analyze a growing firm on the SME ladder as it adds staff and sales. Evaluate the following economic assertions:",
+    "statements": [
+      "EU SME definitions apply equally regardless of whether a firm operates locally or nationally.",
+      "Balance sheet totals can disqualify medium status even when turnover appears moderate.",
+      "Staff headcount alone cannot confirm small status without checking the turnover cap.",
+      "Medium status requires both turnover and balance sheet below their caps simultaneously.",
+      "Small status ignores turnover when staff remain below fifty."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Geographic scope does not replace official eu size thresholds.\n\nApplied carefully, \"EU SME definitions apply equally regardless of whether a firm operates locally or nationally\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The medium balance sheet cap is binding alongside staff limits.\n\nApplied carefully, \"Balance sheet totals can disqualify medium status even when turnover appears moderate\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Small classification requires both staff and turnover tests.\n\nApplied carefully, \"Staff headcount alone cannot confirm small status without checking the turnover cap\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Only one financial measure must qualify alongside staff for medium status.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Small classification requires turnover at or below €10m.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  }
+]

@@ -1,0 +1,199 @@
+CASE MATH 12.35
+ANSWER [true, false, true, false, true]
+TITLE_DE Das Designstudio-Wichteln
+CONTEXT_DE Sieben Personen ziehen zufällig Namen (zufällige Permutation). Eigenen Namen ziehen = Fixpunkt.
+STATEMENTS_DE:
+  A. Die Gesamtzahl der Verteilungen beträgt 5.040.
+  B. Die Wahrscheinlichkeit, dass niemand den eigenen Namen zieht, ist größer als 40%.
+  C. Die Wahrscheinlichkeit, dass genau zwei den eigenen Namen ziehen, ist größer als 15%.
+  D. Die Wahrscheinlichkeit, dass genau sechs den eigenen Namen ziehen, ist größer als 0.
+  E. Die Wahrscheinlichkeit, dass mindestens einer den eigenen Namen zieht, ist größer als 60%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of ways the seven slips can be dealt. This is equivalent to finding the total number of permutations of $n=7$ distinct items. The number of permutations of $n$ distinct items is given by $n!$.
+
+For $n=7$ people, the number of ways to deal the slips is:
+
+$$
+7!
+$$
+
+$$
+7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1
+$$
+
+$$
+7 \times 6 = 42
+$$
+
+$$
+42 \times 5 = 210
+$$
+
+$$
+210 \times 4 = 840
+$$
+
+$$
+840 \times 3 = 2520
+$$
+
+$$
+2520 \times 2 = 5040
+$$
+
+$$
+5040 \times 1 = 5040
+$$
+
+$$
+7! = 5040
+$$
+
+There are $5040$ ways to deal the slips. The statement asserts that the total number of ways is $5,040$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → False
+
+This claim asks for the probability that nobody draws their own name. This is the probability of a derangement of $n=7$ items. To find this probability, we divide the number of derangements of 7 items by the total number of permutations of 7 items.
+
+The number of derangements of 7 items, denoted $!7$, is given in the overview as $1854$.
+The total number of permutations of 7 items is $7! = 5040$.
+
+So, the probability that nobody draws their own name is:
+
+$$
+P(\text{nobody draws own name}) = \frac{!7}{7!}
+$$
+
+$$
+P(\text{nobody draws own name}) = \frac{1854}{5040}
+$$
+
+$$
+P(\text{nobody draws own name}) \approx 0.367857
+$$
+
+As a percentage, this is approximately $36.79\%$. The claim states this probability is greater than $40\%$.
+
+So the statement is False.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This claim asks for the probability that exactly two people draw their own names. To calculate this, we use the formula for permutations with exactly $k$ fixed points: $\frac{\binom{n}{k} \cdot !(n-k)}{n!}$.
+
+For $n=7$ people and exactly $k=2$ fixed points, the number of ways is:
+
+$$
+N(\text{exactly } 2 \text{ fixed points}) = \binom{7}{2} \cdot !(7-2)
+$$
+
+$$
+N(\text{exactly } 2 \text{ fixed points}) = \binom{7}{2} \cdot !5
+$$
+
+First, we calculate $\binom{7}{2}$:
+
+$$
+\binom{7}{2} = \dfrac{7!}{2!(7-2)!}
+$$
+
+$$
+\dfrac{7!}{2!(5)!} = \dfrac{7 \cdot 6}{1 \cdot 2}
+$$
+
+$$
+7 \times 6 = 42
+$$
+
+$$
+\dfrac{42}{2} = 21
+$$
+
+$$
+\binom{7}{2} = 21
+$$
+
+$$
+N(\text{exactly } 2 \text{ fixed points}) = 21 \times 44
+$$
+
+From the overview, the number of derangements of 5 items, $!5$, is $44$.
+
+So, the number of ways for exactly two people to draw their own names is:
+
+$$
+21 \times 44 = 924
+$$
+
+The total number of ways to deal the slips is $7! = 5040$. Thus, the probability is:
+
+$$
+P(\text{exactly } 2 \text{ fixed points}) = \frac{924}{5040}
+$$
+
+$$
+P(\text{exactly } 2 \text{ fixed points}) \approx 0.183333
+$$
+
+As a percentage, this is approximately $18.33\%$. The claim states this probability is greater than $15\%$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This claim asks for the probability that exactly six people draw their own names. Consider a situation where exactly $k$ people draw their own names from $n$ people. If $k = n-1$, it means $n-1$ people have drawn their own names. This leaves only one person and one slip remaining. For the permutation to be complete, the last person must necessarily draw the last slip, which must be their own name if everyone else has drawn theirs. Therefore, it is impossible to have exactly $n-1$ fixed points; if $n-1$ are fixed, then all $n$ must be fixed.
+
+In this problem, $n=7$. The claim suggests that exactly six people ($n-1$) draw their own names. As explained, this event is impossible. The number of ways for exactly 6 people to draw their own names is $0$.
+
+Therefore, the probability of this event is:
+
+$$
+P(\text{exactly } 6 \text{ fixed points}) = \frac{0}{7!}
+$$
+
+$$
+P(\text{exactly } 6 \text{ fixed points}) = 0
+$$
+
+The probability is $0$. The claim states this probability is greater than $0$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This claim asks for the probability that at least one person draws their own name. This event is the complement of 'nobody draws their own name'. We can calculate this using the formula for complementary events:
+
+$$
+P(\text{at least one draws own name}) = 1 - P(\text{nobody draws own name})
+$$
+
+From the calculation in statement B, the probability that nobody draws their own name is approximately $0.367857$. We use this value:
+
+$$
+P(\text{at least one draws own name}) = 1 - 0.367857
+$$
+
+$$
+1 - 0.367857 = 0.632143
+$$
+
+$$
+P(\text{at least one draws own name}) \approx 0.632143
+$$
+
+As a percentage, this is approximately $63.21\%$. The claim states this probability is greater than $60\%$.
+
+So the statement is True.
+

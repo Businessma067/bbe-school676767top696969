@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.17",
+    "title": "Laufzeit in Tabelle 3",
+    "context": "Tab. 3 fasst die Merkmale von Eigen- und Fremdkapital zusammen. Bewerten Sie die folgenden Aussagen zur Laufzeit:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Eigenkapital steht dem Unternehmen langfristig, in der Regel unbefristet, zur Verfügung.",
+      "Fremdkapital kann nach der Tabelle ausschließlich kurzfristig bereitstehen.",
+      "Fremdkapital kann kurzfristig und langfristig zur Verfügung stehen, je nach Vereinbarung.",
+      "Eigenkapital muss in der Regel nach einem festgelegten Enddatum vollständig an die Geber zurückgezahlt werden.",
+      "Die Laufzeit von Fremdkapital richtet sich nach der Vereinbarung, nicht nach einer einzigen festen Frist für alle Kredite."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Unbefristet ist die Regelzelle der Eigenkapitalsäule. Die Tabelle antwortet auf die Frage, wie lange das Kapital zur Verfügung steht, mit langfristig, in der Regel unbefristet. Das folgt daraus, dass Eigenkapital nicht zurückgezahlt werden muss und sich deshalb für langfristige Investitionen eignet. Eine befristete Tilgungspflicht würde die Einlage wie einen Kredit behandeln. Die Formulierung \"in der Regel\" lässt seltene vertragliche Sonderwege offen, ändert die Buchregel aber nicht. Wer Eigenmittel wie einen Dreimonatskredit denkt, liest die falsche Spalte.\n\nDie Aussage ist wahr.",
+      "Ausschließlich kurz ist nicht die Fremdzelle. Dort steht: kurzfristig und langfristig möglich, je nach Vereinbarung. Lieferverbindlichkeiten können Wochen decken, Bankkredite und Anleihen Jahre. Wer nur die kurze Frist gelten lässt, streicht die zweite Hälfte der Zelle. Eigenkapital bleibt unbefristet; die Fremdspalte ist gerade die flexible. Die absolute Behauptung \"ausschließlich kurzfristig\" widerspricht der Tabelle.\n\nDie Aussage ist falsch.",
+      "Vereinbarung setzt die Frist auf der Fremdseite. Dieselbe Tabellenzeile nennt kurzfristig und langfristig als mögliche Formen, abhängig von der Abrede mit der Gläubigerin oder dem Gläubiger. Damit ist ein mehrjähriger Investitionskredit ebenso Fremdkapital wie ein Zahlungsziel. Die Aussage wiederholt die Buchzelle, ohne aus jedem Kredit automatisch eine ewige Einlage zu machen. Eigenkapital bleibt daneben in der Regel ohne Enddatum.\n\nDie Aussage ist wahr.",
+      "Rückzahlungspflicht wäre Kreditlehre, nicht Eigenkapital. Die Tabelle stellt der unbefristeten Einlage die Rückzahlung des Kapitals selbst auf der Fremdseite gegenüber. Ein festgelegtes Enddatum, zu dem alles an die Geber zurückfließen muss, würde die Eigenspalte in die Fremdspalte kippen. Genau das geschieht in der Regel nicht. Der Satz kehrt das Laufzeitmerkmal um und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Keine Einheitslaufzeit für alle Kredite. Weil die Fremdzelle \"je nach Vereinbarung\" lautet, gibt es nicht eine gesetzlich starre Frist, die jeden Bankkredit, jede Lieferverbindlichkeit und jede Anleihe gleich lang macht. Kurz und lang stehen nebeneinander. Die Aussage hält diese Abhängigkeit fest, ohne die Rückzahlungspflicht selbst aufzuheben. Eigenkapital bleibt davon getrennt: langfristig, in der Regel unbefristet.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.18",
+    "title": "Entgelt in Tabelle 3",
+    "context": "Tab. 3 stellt gegenüber, was für Eigen- und Fremdkapital zu bezahlen ist. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Für Eigenkapital können Gewinnanteile an die Eigenkapitalgeber gezahlt werden; eine Verpflichtung dazu folgt aus der Tabelle nicht.",
+      "Für Fremdkapital sind Zinsen zu zahlen, und das Kapital selbst muss zurückgezahlt werden.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber erhalten stets denselben festen Zins wie Gläubiger, unabhängig vom Gewinn.",
+      "Die Rückzahlung des Kapitals selbst steht in der Entgeltzeile auf der Fremdkapitalseite, nicht auf der Eigenkapitalseite.",
+      "Eigenkapital muss ebenso zwingend verzinst und getilgt werden wie ein Bankkredit."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Eventuell heißt möglich, nicht zwingend. Die Eigenspalte nennt Gewinnanteile an die Eigenkapitalgeber, und das Wort \"eventuell\" in der Buchzelle schließt eine Pflicht aus. Werden Gewinne erwirtschaftet, dürfen Auszahlungen folgen; belassen erhöht das Eigenkapital. In Verlustjahren entfällt der feste Zinsanspruch, den Gläubiger typischerweise haben. Die Fremdzelle daneben verlangt Zinsen plus Rückzahlung des Kapitals selbst, unabhängig vom Jahresergebnis. Genau dieser Kontrast macht aus Gewinnanteilen keine Kreditzinsen. Die Aussage hält Option und fehlende Verpflichtung fest, ohne Ausschüttungen zu verbieten.\n\nDie Aussage ist wahr.",
+      "Zins und Tilgung gehören zusammen zur Fremdspalte. Die Entgeltzeile sagt: Zinsen für das Fremdkapital, und das Kapital selbst muss auch zurückgezahlt werden. Beides, nicht nur eines von beiden. Am Ende der Laufzeit geht die Schuldsumme zurück, während der Laufzeit laufen meist Zinsen, unabhängig davon, ob das Unternehmen Gewinn ausweist. Eigenkapital kennt diese Doppelbelastung nicht: dort stehen nur eventuelle Gewinnanteile. Die Aussage gibt genau die Fremdzelle wieder.\n\nDie Aussage ist wahr.",
+      "Fester Zins unabhängig vom Gewinn ist Gläubigerlogik. Eigenkapital verlangt in Zeiten ohne Gewinn keine solchen Zinsen; Auszahlungen an die Geber können bei Gewinn erfolgen, müssen aber nicht. Die Gleichsetzung mit einem festen Kreditzins unabhängig vom Ergebnis liest die Fremdzelle in die Eigenspalte. \"Stets derselbe feste Zins\" ist die Umkehrung der Tabelle und daher falsch.\n\nDie Aussage ist falsch.",
+      "Die Entgeltzeile trennt Einlage und Schuld. Rückzahlung des Kapitals selbst steht ausdrücklich in der Fremdzelle. Eigenkapital muss nicht zurückgezahlt werden, deshalb fehlt dort diese Pflicht. Wer Tilgung in beide Spalten schreibt, macht aus Gesellschaftern Gläubiger. Die Aussage ordnet die Tilgung der richtigen Spalte zu, ohne Zinsen zu leugnen.\n\nDie Aussage ist wahr.",
+      "Gleichsetzung beider Spalten verfehlt das Entgelt. Ein Bankkredit trägt Zinsen und Tilgung. Eigenkapital trägt eventuell Gewinnanteile und keine Rückzahlungspflicht. Wer beides \"ebenso zwingend\" verzinst und tilgt, streicht \"eventuell\" und die fehlende Tilgung. Die Tabelle ist gerade der Kontrast, nicht die Identität der Lasten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.19",
+    "title": "Jahresabschreibung 200.000 Euro",
+    "context": "Ein Unternehmen hat 200.000 Euro in Sachanlagen investiert, die zehn Jahre genutzt werden. Die Abschreibung wird linear verteilt. Bewerten Sie die folgenden Aussagen:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Die jährliche Abschreibung beträgt 20.000 Euro, weil 200.000 Euro durch 10 Jahre geteilt werden.",
+      "Nach einem Jahr beträgt der Restbuchwert 180.000 Euro.",
+      "Die jährliche Abschreibung steigt von Jahr zu Jahr, weil der Restbuchwert fällt.",
+      "Nach zwei Jahren beträgt der Restbuchwert 160.000 Euro.",
+      "Jedes Nutzungsjahr stehen 200.000 Euro aus dieser Abschreibung zur Verfügung."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Anschaffung geteilt durch Nutzungsdauer ergibt den Jahresbetrag.\n\nJahresabschreibung = Anschaffung / Nutzungsdauer\n= 200.000 / 10\n= 20.000 Euro je Jahr.\n\nDas Buchbeispiel verteilt 200.000 Euro linear auf zehn Jahre. In jeder Planzeile steht deshalb 20.000 als Jahresabschreibung, nicht 200.000. Wer den Kaufpreis jedes Jahr als Abschreibung ansetzt, würde denselben Betrag zehnmal verdienen wollen. Nach einem Jahr wäre der Restbuchwert dann nicht 180.000, sondern unsinnig negativ, wenn man 200.000 nochmals abzöge. Die Division 200.000 / 10 = 20.000 trifft Tabellenzeile und Buchzahl zugleich.\n\nDie Aussage ist wahr.",
+      "Ein Jahresbetrag mindert den Anfangswert einmal.\n\nRestbuchwert nach 1 Jahr = 200.000 − 1 × 20.000\n= 200.000 − 20.000\n= 180.000 Euro.\n\nDie Planzeile \"nach 1 Jahr\" zeigt denselben Restbuchwert. Die Abschreibung selbst bleibt 20.000; nur der noch nicht verteilte Anschaffungsbetrag sinkt. Die Aussage liest die Tabelle richtig.\n\nDie Aussage ist wahr.",
+      "Fallender Restbuchwert ändert den linearen Jahresbetrag nicht. 200.000 / 10 bleibt 20.000 in Jahr 1 wie in Jahr 5. Die Spalte Jahresabschreibung bleibt in jeder Zeile 20.000. Steigen würde eine andere Methode bedeuten, die das Buchbeispiel nicht verwendet. Weil der Restbuchwert fällt, könnte jemand meinen, die Abschreibung müsse steigen; linear heißt aber konstanter Jahresbetrag bei sinkendem Buchwert. Die Behauptung widerspricht Division und Tabelle.\n\nDie Aussage ist falsch.",
+      "Zwei Jahre heißen zwei Jahresbeträge.\n\nRestbuchwert nach 2 Jahren = 200.000 − 2 × 20.000\n= 200.000 − 40.000\n= 160.000 Euro.\n\nKumuliert stehen 40.000 in der Tabelle, Restbuchwert 160.000. Das ist nicht 180.000 (nur ein Jahr) und nicht 100.000 (fünf Jahre). Die Rechnung bestätigt die Planzeile.\n\nDie Aussage ist wahr.",
+      "Jährlich stehen 20.000 Euro, nicht 200.000. Werden die Erzeugnisse zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung. 200.000 ist die einmalige Anschaffung. 200.000 / 10 = 20.000. Wer jedes Jahr die volle Investitionssumme als Abschreibungszufluss erwartet, verzehnfacht das Beispiel. Die Planzeilen mit 20.000 je Jahr widersprechen der Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.20",
+    "title": "Restbuchwert nach fünf Jahren",
+    "context": "Dieselbe Anschaffung von 200.000 Euro wird zehn Jahre linear mit 20.000 Euro je Jahr abgeschrieben. Bewerten Sie die folgenden Aussagen zum Plan:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Nach fünf Jahren beträgt die kumulierte Abschreibung 100.000 Euro.",
+      "Nach fünf Jahren beträgt der Restbuchwert 100.000 Euro.",
+      "Nach fünf Jahren beträgt der Restbuchwert 20.000 Euro, weil nur noch ein Jahresbetrag offen ist.",
+      "Nach zehn Jahren ist der Restbuchwert 0 Euro, wenn linear über die gesamte Nutzungsdauer verteilt wird.",
+      "Die Abschreibung ist in jedem Nutzungsjahr eine Auszahlung von 20.000 Euro vom Bankkonto."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Fünf gleiche Jahresbeträge addieren sich zur Hälfte der Anschaffung.\n\nKumulierte Abschreibung nach 5 Jahren = 5 × 20.000\n= 100.000 Euro.\n\nProbe: 200.000 / 10 = 20.000, fünfmal genommen. Die Tabellenzeile \"nach 5 Jahren\" zeigt 100.000 in der Kumulationsspalte. Das ist nicht 20.000 (ein Jahr) und nicht 200.000 (die volle Anschaffung auf einmal). Die Aussage trifft Summe und Plan.\n\nDie Aussage ist wahr.",
+      "Restbuchwert ist Anschaffung minus bisherige Abschreibung.\n\nRestbuchwert nach 5 Jahren = 200.000 − 5 × 20.000\n= 200.000 − 100.000\n= 100.000 Euro.\n\nHalbzeit der zehn Jahre, halber Buchwert bei linearer Verteilung ohne Restwert. Die Planzeile bestätigt 100.000. Wer 180.000 (Jahr 1) oder 0 (Jahr 10) einsetzt, greift die falsche Zeile.\n\nDie Aussage ist wahr.",
+      "Offen sind nach fünf Jahren nicht ein, sondern fünf Jahresbeträge.\n\nVerbleibende Jahre = 10 − 5 = 5\nverbleibender Buchwert = 5 × 20.000 = 100.000 Euro,\nnicht 1 × 20.000 = 20.000.\n\nDie Falle verwechselt den konstanten Jahresbetrag mit dem Restbuchwert. 20.000 ist die Abschreibung eines einzelnen Jahres, nicht der Wert nach fünf Jahren. Nach einem Jahr bleiben 180.000, nach zwei Jahren 160.000, nach fünf Jahren die Hälfte: 100.000. Nur nach neun Jahren stünde 20.000 als Restbuchwert, weil 200.000 − 9 × 20.000 = 20.000. Fünf Jahre sind nicht neun. Die Tabelle zeigt Restbuchwert 100.000. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "Am Ende der Nutzungsdauer ist der Anschaffungsbetrag verteilt.\n\nRestbuchwert nach 10 Jahren = 200.000 − 10 × 20.000\n= 200.000 − 200.000\n= 0 Euro.\n\nKumuliert stehen 200.000, Restbuchwert 0. Das Buchbeispiel nutzt die Anlagen zehn Jahre und verteilt 200.000 linear; ohne genannten Restwert bleibt am Schluss nichts in der Anlage. Die Aussage folgt der letzten Planzeile.\n\nDie Aussage ist wahr.",
+      "Buchung ist nicht Abfluss. Der Wertverlust stellt keine Auszahlung dar; das Geld bleibt vorerst im Unternehmen. Genau darin liegt die Abschreibungsfinanzierung: 20.000 Euro Aufwand je Jahr, ohne dass 20.000 vom Konto an einen Maschinenhändler gehen. Die Anschaffungsauszahlung von 200.000 lag im Investitionsjahr. Wer jedes Nutzungsjahr 20.000 als Überweisung behandelt, streicht den Innenfinanzierungseffekt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.21",
+    "title": "Mitsprache und Sicherheit in Tabelle 3",
+    "context": "Tab. 3 beantwortet, ob Kapitalgeber mitreden und ob sie eine Sicherheit für die Rückzahlung haben. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben abhängig von der Rechtsform Mitspracherechte in unterschiedlichem Ausmaß.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben laut Tabelle eine Sicherheit für die Rückzahlung ihres Kapitals.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber können eine Sicherheit haben, wenn der Kredit ausreichend besichert ist.",
+      "Ein Bankkredit und eine Gesellschaftereinlage gewähren denselben Einfluss auf die Unternehmensführung."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Rechtsform steuert die Stimme der Eigenen. Die Mitsprachezeile ordnet Eigenkapitalgebern Mitspracherechte zu, aber nicht in einheitlicher Stärke: das Ausmaß hängt von der Rechtsform ab. In einer Personengesellschaft greifen andere Mitwirkungsregeln als in einer GmbH oder AG. Unterschiedlich heißt nicht beliebig null und nicht überall gleich. Fremdkapitalgeber bleiben in der Regel außen vor. Der Satz gibt die Eigenspalte der Tabelle wieder.\n\nDie Aussage ist wahr.",
+      "Gläubiger führen den Betrieb in der Regel nicht. Die Fremdzelle der Mitsprachezeile lautet: in der Regel kein Mitspracherecht bei der Unternehmensführung. Banken und Lieferanten stellen befristete Mittel, verlangen Zinsen und Tilgung, sitzen aber nicht anstelle der Gesellschafter in der Leitung. \"In der Regel\" lässt besondere Vertragsbindungen offen, ändert die Grundregel aber nicht. Eigenkapitalgeber reden je nach Rechtsform mit, Gläubiger sichern Rückzahlung, wenn der Kredit ausreichend besichert ist. Wer der Bank denselben Einfluss wie den Eigentümern zuschreibt, liest die falsche Spalte und vermengt Mitsprache mit Sicherheit.\n\nDie Aussage ist wahr.",
+      "Rückzahlungssicherheit steht bei Eigenkapital auf nein. Die Tabelle fragt, ob Kapitalgeber eine Sicherheit für die Rückzahlung haben, und antwortet für Eigenkapital mit nein. Das folgt daraus, dass Eigenkapital nicht zurückgezahlt werden muss. Eine ständige Sicherheit für Rückzahlung würde Eigenmittel wie einen besicherten Kredit behandeln. Der Satz behauptet das Gegenteil der Buchzelle.\n\nDie Aussage ist falsch.",
+      "Besicherung entscheidet auf der Fremdseite. Für Fremdkapital gilt: wenn der Kredit ausreichend besichert ist, ja. Hypothek, Pfand oder vergleichbare Sicherheiten geben Gläubigern Zugriff, falls nicht gezahlt wird. Ohne ausreichende Besicherung fehlt diese Sicherheit. Die Aussage wiederholt die bedingte Tabellenantwort, ohne aus jedem Kredit automatisch eine Vollbesicherung zu machen.\n\nDie Aussage ist wahr.",
+      "Einfluss folgt der Rechtsstellung, nicht dem Geldbetrag. Die Einlage trägt Mitsprache je nach Rechtsform; der Bankkredit trägt in der Regel keines. Dieselbe Tabelle trennt die Spalten gerade hier. Wer Kredit und Einlage denselben Einfluss zuschreibt, macht aus Gläubigern Gesellschafter. Zinsen, Tilgung und mögliche Besicherung bleiben Fremdmerkmale und ersetzen die Stimme in der Führung nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.22",
+    "title": "Merkmalstabelle und Abschreibungsplan",
+    "context": "Eine Werkstatt finanziert Maschinen sowohl über Gesellschaftereinlagen als auch über einen Bankkredit. Dieselbe Werkstatt hat 200.000 Euro Sachanlagen mit zehnjähriger Nutzung. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Ein Bankkredit ist Fremdkapital: er wird verzinst, zurückgezahlt und gibt in der Regel kein Mitspracherecht.",
+      "Die Gesellschaftereinlage ist Eigenkapital: unbefristet, ohne Rückzahlungssicherheit, mit Mitsprache je nach Rechtsform.",
+      "Die jährliche Abschreibung von 20.000 Euro verwandelt die Sachanlagen in Fremdkapital.",
+      "Nach einem Jahr beträgt der Restbuchwert 180.000 Euro; die verdiente Abschreibung bleibt Innenfinanzierung, kein Kredit.",
+      "Weil Eigenkapital unbefristet ist, muss die Abschreibung zwingend 200.000 Euro pro Jahr betragen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Drei Fremdzellen treffen den Kredit. Entgelt: Zinsen und Rückzahlung des Kapitals selbst. Mitsprache: in der Regel keines bei der Führung. Sicherheit: möglich, wenn ausreichend besichert. Laufzeit: je nach Vereinbarung kurz oder lang, also auch ein mehrjähriger Investitionskredit. Die Bank ist Dritte, nicht Gesellschafterin kraft Darlehen. Die Aussage bündelt die Fremdspalte am alltäglichsten Beispiel, ohne die Einlage zu leugnen.\n\nDie Aussage ist wahr.",
+      "Vier Eigenzellen treffen die Einlage. Laufzeit langfristig, in der Regel unbefristet. Entgelt eventuell Gewinnanteile, keine Tilgungspflicht. Mitsprache abhängig von der Rechtsform. Sicherheit für Rückzahlung: nein. Das ist die Gegenspalte zum Kredit. Wer die Einlage als besicherten Kredit mit festem Zins liest, vertauscht die Tabelle. Die Aussage hält die Eigenspalte zusammen.\n\nDie Aussage ist wahr.",
+      "Abschreibung ändert die Kapitalart der Anlage nicht. 200.000 / 10 = 20.000 Euro Aufwand je Jahr verteilt den Wertverlust. Sachanlagen bleiben Betriebsmittel; ihre Finanzierung kann eigen oder fremd sein, je nachdem ob Einlage oder Kredit den Kauf trug. Der Jahresbetrag 20.000 schafft keinen Gläubiger und keine Tilgungspflicht. Innenfinanzierung durch verdiente Abschreibung ist kein Umschreiben in Fremdkapital. Die Behauptung vermengt Plan und Merkmalstabelle.\n\nDie Aussage ist falsch.",
+      "Ein Jahr linear und die Innenquelle fallen zusammen.\n\nRestbuchwert nach 1 Jahr = 200.000 − 20.000 = 180.000 Euro.\n\nDie 20.000 sind Aufwand ohne Auszahlung, verdient wenn die Preise die Abschreibung enthalten. Das Geld bleibt vorerst im Unternehmen und kann andere Investitionen tragen: Abschreibungsfinanzierung, Quelle im Umsatz, nicht Kredit von Dritten. 180.000 Restbuchwert und 20.000 Innenmittel sind dieselbe Rechnung, nicht ein Bankvertrag. Ein Kredit stünde in der Merkmalstabelle mit Zins, Tilgung und in der Regel ohne Mitsprache; die verdiente Abschreibung erzeugt keinen solchen Gläubiger. Die Aussage trennt Plan und Kapitalart korrekt.\n\nDie Aussage ist wahr.",
+      "Unbefristetes Eigenkapital setzt den Jahresbetrag nicht auf 200.000. Die Abschreibung folgt der Nutzungsdauer der Anlagen:\n\n200.000 / 10 = 20.000 Euro je Jahr,\nzehn Jahre lang, nicht 200.000 jedes Jahr.\n\nDie Merkmalstabelle erklärt, wie lange Einlagen stehen, nicht wie schnell Maschinen abgeschrieben werden. Wer beide Tabellen kreuzt und den Kaufpreis zur Jahresabschreibung macht, verzehnfacht das Buchbeispiel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.23",
+    "title": "Verdiente Abschreibung und konstanter Jahresbetrag",
+    "context": "Die Abschreibung von 200.000 Euro Anschaffung über zehn Jahre geht in die kalkulierten Preise ein. Bewerten Sie die folgenden Aussagen zu Plan und Finanzierungseffekt:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Die Jahresabschreibung beträgt in jedem dargestellten Nutzungsjahr 20.000 Euro.",
+      "Werden die Erzeugnisse zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung.",
+      "Der Finanzierungseffekt entsteht, weil die Abschreibung Aufwand ist, aber keine Auszahlung darstellt.",
+      "Nach zwei Jahren stehen kumuliert 400.000 Euro aus dieser einen Anschaffung als jährliche Abschreibung bereit.",
+      "Sinkt der Restbuchwert, verdoppelt sich automatisch die Jahresabschreibung in der Tabelle."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Konstante Spalte heißt konstanter Jahresbetrag. Nach 1, 2 und 5 Jahren steht jeweils 20.000, weil 200.000 / 10 = 20.000. Die Tabelle wiederholt denselben Jahresbetrag in jeder Nutzungszeile. Eine steigende oder fallende Jahresabschreibung würde eine andere Verteilung zeigen, die das Beispiel nicht verwendet. Die Aussage liest die Spalte richtig, ohne den fallenden Restbuchwert mit der Jahresabschreibung zu verwechseln.\n\nDie Aussage ist wahr.",
+      "Verdient ist der kalkulierte Jahresbetrag. Das Buch rechnet: Anschaffung 200.000 Euro, Nutzung zehn Jahre, Abschreibung 20.000 Euro pro Jahr, einkalkuliert in die Preise. Werden die Erzeugnisse zu diesen Preisen verkauft, wird die Abschreibung verdient. Dann stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung, nicht 200.000. Die Identität 200.000 / 10 = 20.000 ist dieselbe wie im Plan. Die Aussage gibt den Finanzierungssatz des Beispiels wieder.\n\nDie Aussage ist wahr.",
+      "Aufwand ohne Abfluss schafft den Spielraum. Bei der Preisbildung zählt der Wertverlust von Maschinen, Computern und Fahrzeugen zu den Aufwänden. Wird er verdient, fließt trotzdem in diesem Schritt kein Geld in Höhe der Abschreibung ab. Das Geld bleibt vorerst im Unternehmen und kann andere Investitionen tragen, damit Betriebsmittel aktuell bleiben. Wäre die Abschreibung eine Auszahlung von 20.000 Euro je Jahr, ginge genau der verdiente Betrag wieder vom Konto und der Innenfinanzierungseffekt entfiele. 200.000 / 10 = 20.000 bleibt Aufwand, nicht Überweisung. Die Aussage trifft den Mechanismus, nicht eine zweite Kreditsumme.\n\nDie Aussage ist wahr.",
+      "Zwei Jahre mal 20.000 sind 40.000, nicht 400.000.\n\nKumulierte Abschreibung nach 2 Jahren = 2 × 20.000 = 40.000 Euro.\nRestbuchwert = 200.000 − 40.000 = 160.000 Euro.\n\n400.000 wäre 2 × 200.000, also zweimal die volle Anschaffung als Jahresabschreibung. Die Tabelle zeigt kumuliert 40.000. Wer 400.000 liest, verdoppelt den Kaufpreis statt den Jahresbetrag. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "Restbuchwert und Jahresabschreibung laufen nicht spiegelbildlich. Der Restbuchwert fällt (180.000, 160.000, 100.000), die Jahresabschreibung bleibt 20.000. Verdopplung auf 40.000 stünde in keiner Planzeile. Linear heißt: konstanter Jahresbetrag, sinkender Buchwert. Die Behauptung koppelt beide Spalten falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.24",
+    "title": "Tabellenlesen mit Zahlen- und Merkmalsfallen",
+    "context": "Lesen Sie Merkmalstabelle und Abschreibungsplan gemeinsam. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Nach fünf Jahren beträgt der Restbuchwert 100.000 Euro, weil 200.000 minus 5 mal 20.000 gerechnet wird.",
+      "Fremdkapital kann nur kurzfristig sein, weil die Sachanlagen zehn Jahre abgeschrieben werden.",
+      "Nach zwei Jahren beträgt der Restbuchwert 160.000 Euro.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben laut Tabelle eine Sicherheit für die Rückzahlung und müssen die 200.000 Euro nach zehn Jahren tilgen.",
+      "Die jährliche Abschreibung von 20.000 Euro ist verdienter Aufwand ohne Auszahlung; nach fünf Jahren bleiben 100.000 Euro Buchwert, nicht fünfmal 200.000 Euro verdient."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Halbzeit der Nutzungsdauer, halber Buchwert bei linearer Verteilung.\n\nJahresabschreibung = 200.000 / 10 = 20.000\nRestbuchwert nach 5 Jahren = 200.000 − 5 × 20.000\n= 200.000 − 100.000\n= 100.000 Euro.\n\nDieselbe 100.000 stehen als kumulierte Abschreibung. Die Jahresabschreibung bleibt 20.000; nur der Restbuchwert ist halbiert. Die Aussage setzt Formel, Zahlen und Planzeile gleich.\n\nDie Aussage ist wahr.",
+      "Nutzungsdauer der Anlage setzt nicht die Kapitalfrist. Fremdkapital kann nach Tabelle kurzfristig und langfristig zur Verfügung stehen, je nach Vereinbarung. Ein zehnjähriger Bankkredit wäre weiterhin Fremdkapital mit Zins, Tilgung und in der Regel ohne Mitsprache. Die zehn Jahre im Abschreibungsplan beschreiben, wie der Wertverlust von 200.000 verteilt wird, nicht dass Gläubiger nur kurze Mittel geben dürften. Die Kopplung \"nur kurzfristig, weil Abschreibung zehn Jahre\" vermengt beide Tabellen und ist falsch.\n\nDie Aussage ist falsch.",
+      "Zwei Jahresbeträge vom Anfangswert abziehen.\n\nRestbuchwert nach 2 Jahren = 200.000 − 2 × 20.000\n= 200.000 − 40.000\n= 160.000 Euro.\n\nKumuliert 40.000 in der Tabelle, Jahresabschreibung weiter 20.000. Das ist nicht 180.000 (ein Jahr) und nicht 100.000 (fünf Jahre). Die Rechnung bestätigt die Planzeile.\n\nDie Aussage ist wahr.",
+      "Zwei falsche Eigenmerkmale auf einmal. Sicherheit für Rückzahlung steht in der Eigenspalte auf nein. Tilgung des Kapitals selbst steht in der Fremd-Entgeltzelle, nicht bei der Einlage. Die 200.000 Euro im Plan sind Anschaffungskosten der Sachanlagen, die über zehn Jahre mit 20.000 abgeschrieben werden, keine Pflicht der Gesellschafter, denselben Betrag am Ende der Nutzungsdauer an sich selbst zurückzuzahlen. Wer Sicherheit plus Tilgung auf Eigenkapital legt, liest die Fremdspalte und verwechselt außerdem Abschreibungsende mit Kreditfälligkeit.\n\nDie Aussage ist falsch.",
+      "Jahresbetrag, Innenfinanzierung und Restbuchwert gehören zusammen, ohne den Kaufpreis zu verfünffachen.\n\n5 × 20.000 = 100.000 kumulierte Abschreibung,\nRestbuchwert = 200.000 − 100.000 = 100.000 Euro.\n5 × 200.000 = 1.000.000 wäre fünfmal die Anschaffung und steht nirgends.\n\nJede Planzeile mit 20.000 ist Aufwand ohne Auszahlung, verdient über die Preise, zehn Jahre lang derselbe Jahresbetrag. Nach fünf Jahren bleibt halber Buchwert, nicht fünf volle Investitionssummen in der Kasse. Fremdkapital tilgt man an Gläubiger; diese 20.000 verlassen das Unternehmen in der Buchung nicht. Die Aussage hält Tabelle, Division und Merkmal \"keine Auszahlung\" zusammen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

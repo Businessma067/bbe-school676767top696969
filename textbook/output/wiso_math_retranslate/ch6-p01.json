@@ -1,0 +1,940 @@
+[
+  {
+    "case_id": "MATH 6.26",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Quadratic Sign Inequalities — 6",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The inequality $x^{2} - 2x + 2 \\ge 0$ holds for all real x, and is never equal to 0.",
+      "The inequality $x^{2} + 5x - 14 > 0$ has solution set $x < -7$ or $x > 2$.",
+      "The inequality $x^{2} - 4x + 5 > 0$ holds for all real x.",
+      "The inequality $x^{2} - 11x + 30 < 0$ has solution set $(5, 6)$.",
+      "The inequality $x^{2} + 14x + 49 \\ge 0$ holds for all real x, with equality at both $x = 7$ and $x = -7$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 2 x) + 2\\ge 0\n$$\n\nBring every term to one side.\n\n$$\nx^{2} - 2 x + 2\\ge 0\n$$\n\nThe discriminant is $-4$, so there are no real roots.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} + 5 x) - 14>0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 7)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-7\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x + 5) - 14$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, -7) \\cup (2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 4 x) + 5>0\n$$\n\nBring every term to one side.\n\n$$\nx^{2} - 4 x + 5>0\n$$\n\nThe discriminant is $-4$, so there are no real roots.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nFactor the quadratic, mark the roots, and test the sign on each interval. The claim starts from\n\n$$\nx^{2} - 11x + 30 < 0\n$$\n\nFactoring first:\n\n$$\nx^{2} - 11x + 30 = (x - 5)(x - 6)\n$$\n\nThe critical points are the roots of the quadratic:\n\n$$\nx = 5,\\quad x = 6\n$$\n\nThe inequality is strict ($<$), so keep the middle region without its endpoints:\n\n$$\n(5, 6)\n$$\n\nReading the signs on the open intervals made by the critical points:\n\n| Interval | Sign |\n| --- | --- |\n| $(-\\infty, 5)$ | $+$ |\n| $(5, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 5.5$: 30.25 - 60.5 + 30 = -0.25 < 0, confirming it belongs.\n\nSo the statement is True.",
+      "**E.** → False\n\nStart from the claimed inequality.\n\n$$\n(x^{2} + 14 x) + 49\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 7)^{2}\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-7\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x + 14) + 49$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, \\infty)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nFactor the quadratic (or read the discriminant), mark the roots, and test the sign on each interval. A non-strict inequality keeps the roots; a strict one drops them. A quadratic that opens upward is non-negative outside its roots and non-positive between them.\n\nTypes in this set: Quadratic sign inequality (discriminant test); Quadratic sign inequality; Quadratic inequality (perfect square).",
+    "title_de_existing": "Quadratische Vorzeichenungleichungen — 6",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Ungleichung $x^{2} - 2x + 2 \\ge 0$ gilt für alle reellen $x$ und ist niemals gleich $0$.",
+      "Die Ungleichung $x^{2} + 5x - 14 > 0$ hat die Lösungsmenge $x < -7$ oder $x > 2$.",
+      "Die Ungleichung $x^{2} - 4x + 5 > 0$ gilt für alle reellen $x$.",
+      "Die Ungleichung $x^{2} - 11x + 30 < 0$ hat die Lösungsmenge $(5, 6)$.",
+      "Die Ungleichung $x^{2} + 14x + 49 \\ge 0$ gilt für alle reellen $x$, mit Gleichheit sowohl bei $x = 7$ als auch bei $x = -7$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 2\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 2\\ge 0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln. Die nach oben geöffnete Parabel bleibt stets positiv und trifft die Achse nie; Gleichheit tritt nie ein.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-\\infty, \\infty)$, und die Ungleichung ist niemals Gleichheit.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 5 x) - 14>0\n$$\n\nFaktorisiere.\n\n$$\n(x - 2) (x + 7)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte $x=-7$ und $x=2$.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-\\infty, -7) \\cup (2, \\infty)$ und stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{2} - 4 x + 5>0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln. Die Parabel liegt stets oberhalb der Achse.\n\nDie Lösungsmenge ist $(-\\infty, \\infty)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nFaktorisiere die Quadratische, markiere die Wurzeln und prüfe das Vorzeichen.\n\n$$\nx^{2} - 11x + 30 < 0\n$$\n\n$$\nx^{2} - 11x + 30 = (x - 5)(x - 6)\n$$\n\nDie kritischen Punkte sind $x = 5$ und $x = 6$. Die Ungleichung ist streng ($<$), also bleibt das mittlere Gebiet ohne Endpunkte:\n\n$$\n(5, 6)\n$$\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty, 5)$ | $+$ |\n| $(5, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nProbe bei $x = 5{,}5$: $30{,}25 - 60{,}5 + 30 = -0{,}25 < 0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 14 x) + 49\\ge 0\n$$\n\nFaktorisiere.\n\n$$\n(x + 7)^{2}\\ge 0\n$$\n\nGleichheit gilt nur bei $x=-7$, nicht zugleich bei $x=7$ und $x=-7$. Die Lösungsmenge ist $(-\\infty, \\infty)$, aber die Gleichheitsbehauptung ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nTypen in diesem Satz: Quadratische Vorzeichenungleichung (Diskriminantentest); Quadratische Vorzeichenungleichung; Quadratische Ungleichung (vollständiges Quadrat)."
+  },
+  {
+    "case_id": "MATH 6.43",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 6",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The inequality $-8 \\le x^{2} - 12x + 30 \\le 4$ has solution set $[6 - \\sqrt{10}, 6 + \\sqrt{10}]$.",
+      "The inequality $-11 \\le x^{2} - 14x + 40 \\le 3$ has solution set $[7 - 2\\sqrt{3}, 7 + 2\\sqrt{3}]$.",
+      "The inequality $-12 \\le x^{2} - 14x + 42 \\le 3$ has solution set $[7 - \\sqrt{10}, 7 + \\sqrt{10}]$.",
+      "The solution set of the inequality $\\sqrt{x + 5} > x - 1$ is $[-5, 4)$.",
+      "The solution set of the inequality $|x - 2| + |x + 3| \\le 7$ is $[-4, 3]$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-8\\le (x^{2} - 12 x) + 30\\le 4\n$$\n\n**Left piece.**\n\n$$\n-8\\le (x^{2} - 12 x) + 30\n$$\n\n$$\nx^{2} - 12 x + 38\\ge 0\n$$\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 12 x) + 30\\le 4\n$$\n\n$$\nx^{2} - 12 x + 26\\le 0\n$$\n\n$$\nx=6 - \\sqrt{10}\n$$\n\n$$\nx=\\sqrt{10} + 6\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 12 x + 26$ |\n| --- | --- |\n| $(-\\infty,6 - \\sqrt{10})$ | $+$ |\n| $(6 - \\sqrt{10},\\sqrt{10} + 6)$ | $-$ |\n| $(\\sqrt{10} + 6,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[6 - \\sqrt{10}, \\sqrt{10} + 6]\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-11\\le (x^{2} - 14 x) + 40\\le 3\n$$\n\n**Left piece.**\n\n$$\n-11\\le (x^{2} - 14 x) + 40\n$$\n\n$$\nx^{2} - 14 x + 51\\ge 0\n$$\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 14 x) + 40\\le 3\n$$\n\n$$\nx^{2} - 14 x + 37\\le 0\n$$\n\n$$\nx=7 - 2 \\sqrt{3}\n$$\n\n$$\nx=2 \\sqrt{3} + 7\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 14 x + 37$ |\n| --- | --- |\n| $(-\\infty,7 - 2 \\sqrt{3})$ | $+$ |\n| $(7 - 2 \\sqrt{3},2 \\sqrt{3} + 7)$ | $-$ |\n| $(2 \\sqrt{3} + 7,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[7 - 2 \\sqrt{3}, 2 \\sqrt{3} + 7]\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-12\\le (x^{2} - 14 x) + 42\\le 3\n$$\n\n**Left piece.**\n\n$$\n-12\\le (x^{2} - 14 x) + 42\n$$\n\n$$\nx^{2} - 14 x + 54\\ge 0\n$$\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 14 x) + 42\\le 3\n$$\n\n$$\nx^{2} - 14 x + 39\\le 0\n$$\n\n$$\nx=7 - \\sqrt{10}\n$$\n\n$$\nx=\\sqrt{10} + 7\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 14 x + 39$ |\n| --- | --- |\n| $(-\\infty,7 - \\sqrt{10})$ | $+$ |\n| $(7 - \\sqrt{10},\\sqrt{10} + 7)$ | $-$ |\n| $(\\sqrt{10} + 7,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[7 - \\sqrt{10}, \\sqrt{10} + 7]\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 5}>x - 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nA square root is always $\\ge 0$, so the inequality holds automatically on the part of the domain where the right side is negative.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 5>x^{2} - 2 x + 1\n$$\n\n$$\n- x^{2} + 3 x + 4>0\n$$\n\n$$\n- (x - 4) (x + 1)>0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 3 x + 4$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[-5, 4)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x - 2|+|x + 3|\\le 7\n$$\n\nThe expression changes formula at the kink points $x=-3$ and $x=2$.\n\nOn $x\\le -3$:\n\n$$\n|x - 2|+|x + 3|=- 2 x - 1\n$$\n\nSolving $- 2 x - 1\\le 7$ on this piece gives\n\n$$\n[-4, -3]\n$$\n\nOn $-3\\le x\\le 2$:\n\n$$\n|x - 2|+|x + 3|=5\n$$\n\nSolving $5\\le 7$ on this piece gives\n\n$$\n[-3, 2]\n$$\n\nOn $x\\ge 2$:\n\n$$\n|x - 2|+|x + 3|=2 x + 1\n$$\n\nSolving $2 x + 1\\le 7$ on this piece gives\n\n$$\n[2, 3]\n$$\n\nUnion of the admissible pieces:\n\n$$\n[-4, 3]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Compound (double) quadratic inequality; Radical (square root) inequality; Absolute value inequality (sum of two distances).",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 6",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Ungleichung $-8 \\le x^{2} - 12x + 30 \\le 4$ hat die Lösungsmenge $[6 - \\sqrt{10}, 6 + \\sqrt{10}]$.",
+      "Die Ungleichung $-11 \\le x^{2} - 14x + 40 \\le 3$ hat die Lösungsmenge $[7 - 2\\sqrt{3}, 7 + 2\\sqrt{3}]$.",
+      "Die Ungleichung $-12 \\le x^{2} - 14x + 42 \\le 3$ hat die Lösungsmenge $[7 - \\sqrt{10}, 7 + \\sqrt{10}]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} > x - 1$ ist $[-5, 4)$.",
+      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 7$ ist $[-4, 3]$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-8\\le (x^{2} - 12 x) + 30\\le 4\n$$\n\n**Linkes Teilstück.**\n\n$$\n-8\\le (x^{2} - 12 x) + 30,\\quad x^{2} - 12 x + 38\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 12 x) + 30\\le 4,\\quad x^{2} - 12 x + 26\\le 0,\\quad x=6 - \\sqrt{10} = \\sqrt{10} + 6\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 12 x + 26$ |\n| --- | --- |\n| $(-\\infty,6 - \\sqrt{10})$ | $+$ |\n| $(6 - \\sqrt{10},\\sqrt{10} + 6)$ | $-$ |\n| $(\\sqrt{10} + 6,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[6 - \\sqrt{10}, \\sqrt{10} + 6]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-11\\le (x^{2} - 14 x) + 40\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n-11\\le (x^{2} - 14 x) + 40,\\quad x^{2} - 14 x + 51\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 14 x) + 40\\le 3,\\quad x^{2} - 14 x + 37\\le 0,\\quad x=7 - 2 \\sqrt{3} = 2 \\sqrt{3} + 7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 14 x + 37$ |\n| --- | --- |\n| $(-\\infty,7 - 2 \\sqrt{3})$ | $+$ |\n| $(7 - 2 \\sqrt{3},2 \\sqrt{3} + 7)$ | $-$ |\n| $(2 \\sqrt{3} + 7,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[7 - 2 \\sqrt{3}, 2 \\sqrt{3} + 7]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-12\\le (x^{2} - 14 x) + 42\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n-12\\le (x^{2} - 14 x) + 42,\\quad x^{2} - 14 x + 54\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 14 x) + 42\\le 3,\\quad x^{2} - 14 x + 39\\le 0,\\quad x=7 - \\sqrt{10} = \\sqrt{10} + 7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 14 x + 39$ |\n| --- | --- |\n| $(-\\infty,7 - \\sqrt{10})$ | $+$ |\n| $(7 - \\sqrt{10},\\sqrt{10} + 7)$ | $-$ |\n| $(\\sqrt{10} + 7,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[7 - \\sqrt{10}, \\sqrt{10} + 7]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 5}>x - 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 5\\ge 0,\\quad x\\in [-5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichung automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 5>x^{2} - 2 x + 1,\\quad - x^{2} + 3 x + 4>0,\\quad - (x - 4) (x + 1)>0,\\quad x=-1 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 3 x + 4$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[-5, 4)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x - 2|+|x + 3|\\le 7\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-3$ und $x=2$.\n\nAuf $x\\le -3$:\n\n$$\n|x - 2|+|x + 3|=- 2 x - 1 \\Rightarrow [-4, -3]\n$$\n\nAuf $-3\\le x\\le 2$:\n\n$$\n|x - 2|+|x + 3|=5 \\Rightarrow [-3, 2]\n$$\n\nAuf $x\\ge 2$:\n\n$$\n|x - 2|+|x + 3|=2 x + 1 \\Rightarrow [2, 3]\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[-4, 3]\n$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen dieser Reihe: Kommentar Zusammen Nachbar (dreifache quadratische Ungleichung; Radikale (Quadratwurzel) Ungleichung; Absolutwertungleichheit (Summe zweier Entfernungen)."
+  },
+  {
+    "case_id": "MATH 6.46",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 9",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $\\sqrt{x - 1} + \\sqrt{x - 4} \\le 3$ is $[4, 5]$.",
+      "The solution set of the inequality $|x^{2} - 4| < 5$ is $(-\\sqrt{5}, \\sqrt{5})$.",
+      "The solution set of the inequality $\\sqrt{2x + 7} - \\sqrt{x + 4} > 1$ is $x > 2\\sqrt{3}$.",
+      "The solution set of the inequality $|2x - 5| \\ge 3x - 1$ is $x \\le \\frac{5}{6}$.",
+      "The inequality $-3 < x^{2} - 2x - 3 < 5$ has solution set $(-2, 0) \\cup (2, 4)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the two-radical inequality.\n\n$$\n\\sqrt{x - 1}+\\sqrt{x - 4}\\le 3\n$$\n\nRequire both radicands to be nonnegative.\n\n$$\nx - 1\\ge 0\n$$\n\n$$\nx - 4\\ge 0\n$$\n\n$$\nx\\in [4, \\infty)\n$$\n\nIsolate one radical (right side must stay nonnegative), then square twice.\n\n$$\n\\sqrt{x - 1}\\le 3-\\sqrt{x - 4}\n$$\n\n$$\n\\sqrt{x - 4}\\le 3\n$$\n\n$$\nx - 4\\le 9\n$$\n\nAfter the first squaring, isolate the remaining radical and square again.\n\n$$\n2\\cdot 3\\sqrt{x - 4}\\le 3^2+x - 4-x - 1\n$$\n\nIntersecting every domain and squared condition gives\n\n$$\n[4, 5]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → False\n\nStart from the absolute-value inequality.\n\n$$\n|x^{2}-4|<5\n$$\n\nAn absolute value below a nonnegative constant unfolds to a compound inequality.\n\n$$\n-5<x^{2}-4<5\n$$\n\n**Left piece.**\n\n$$\n-5<x^{2}-4\n$$\n\n$$\nx^{2}>-1\n$$\n\nwhich is true for every real $x$.\n\n**Right piece.**\n\n$$\nx^{2}-4<5\n$$\n\n$$\nx^{2}<9\n$$\n\n$$\n-3<x<3\n$$\n\nIntersecting both pieces gives\n\n$$\n(-3,3)\n$$\n\nwhich does not match the claimed set $(-\\sqrt{5}, \\sqrt{5})$.\n\nSo the statement is False.",
+      "**C.** → True\n\nStart from the radical inequality.\n\n$$\n- \\sqrt{x + 4} + \\sqrt{2 x + 7}>1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n2 x + 7\\ge 0\n$$\n\n$$\nx\\in [- \\frac{7}{2}, \\infty)\n$$\n\n$$\nx + 4\\ge 0\n$$\n\n$$\nx\\in [-4, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nA square root is always $\\ge 0$, so the inequality holds automatically on the part of the domain where the right side is negative.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 11>1\n$$\n\n$$\n3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 10>0\n$$\n\n$$\nx=2 \\sqrt{3}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 10$ |\n| --- | --- |\n| $(-\\infty,2 \\sqrt{3})$ | $-$ |\n| $(2 \\sqrt{3},\\infty)$ | $+$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(2 \\sqrt{3}, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n|2x - 5| \\ge 3x - 1\n$$\n\n$$\n3x-1<0\n$$\n\n$$\nx<\\dfrac{1}{3}\n$$\n\n$$\n|2x - 5| \\ge\n$$\n\n$$\n3x-1\\ge 0\n$$\n\n$$\nx\\ge\\dfrac{1}{3}\n$$\n\n$$\n{2x - 5 \\ge 3x - 1}\n$$\n\n$$\nx \\le -4\n$$\n\n$$\n{2x - 5 \\le -(3x - 1)}\n$$\n\n$$\n5x\\le 6\n$$\n\n$$\nx\\le\\dfrac{6}{5}\n$$\n\n$$\n\\le x \\le\n$$\n\n$$\nx \\le\n$$\n\n$$\nx = 1\n$$\n\n$$\n|2-5| = 3\n$$\n\n$$\n\\ge\n$$\n\n$$\nx \\le \\frac{5}{6}\n$$\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect. The claim is **Case 1** — (i.e. ): The right side is negative, so (negative number) holds automatically. **Case 2** — (i.e. ): Splitting the absolute value into branches: (giving , impossible here) or (giving , i.e. ). So this case contributes . Combining both cases: — not as stated (the fraction is inverted). A quick check: plug in (between and ): , and 3(1)-1 = 2; is 3 2? Yes — so is a solution, disproving the claim that the set stops at .\n\nSo the statement is False.",
+      "**E.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-3<(x^{2} - 2 x) - 3<5\n$$\n\n**Left piece.**\n\n$$\n-3<(x^{2} - 2 x) - 3\n$$\n\n$$\nx^{2} - 2 x>0\n$$\n\n$$\nx (x - 2)>0\n$$\n\n$$\nx=0\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x - 2)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 0) \\cup (2, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 2 x) - 3<5\n$$\n\n$$\nx^{2} - 2 x - 8<0\n$$\n\n$$\n(x - 4) (x + 2)<0\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(-2, 4)\n$$\n\nIntersect both pieces.\n\n$$\n(-2, 0) \\cup (2, 4)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Radical inequality (sum of two square roots); Absolute value inequality (quadratic inside); Radical inequality (difference of two square roots).",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 9",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 1} + \\sqrt{x - 4} \\le 3$ ist $[4, 5]$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 4| < 5$ ist $(-\\sqrt{5}, \\sqrt{5})$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 7} - \\sqrt{x + 4} > 1$ ist $x > 2\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 5| \\ge 3x - 1$ ist $x \\le \\frac{5}{6}$.",
+      "Die Ungleichung $-3 < x^{2} - 2x - 3 < 5$ hat die Lösungsmenge $(-2, 0) \\cup (2, 4)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeginnen wir mit der Zwei-Rennen-ibel\n\n$$\n\\sqrt{x - 1}+\\sqrt{x - 4}\\le 3\n$$\n\nUndlauf auf daß es auf zu auf : . .\n\n$$\nx - 1\\ge 0,\\quad x - 4\\ge 0,\\quad x\\in [4, \\infty)\n$$\n\nIsolieren Sie ein Radikal (rechte Seite soll nicht negativ bleiben), dann zweimal der beidenerpunkt.\n\n$$\n\\sqrt{x - 1}\\le 3-\\sqrt{x - 4},\\quad \\sqrt{x - 4}\\le 3,\\quad x - 4\\le 9\n$$\n\nNach der ersten der Hinweisung wird sei dem Verbleibenden radikal und dem Verlassen des Verdächtigen derwecken wieder.\n\n$$\n2\\cdot 3\\sqrt{x - 4}\\le 3^2+x - 4-x - 1\n$$\n\nEine , jede Domainschle, die sich kreuzt, und eine Quadratur ergibt\n\n$$\n[4, 5]\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nStarte von der Betragsungleichung.\n\n$$\n|x^{2}-4|<5\n$$\n\nEin absoluter Wert unterhalb einer nicht negativen Konstante entfaltet sich zu einer zusammengesetzten Ungleichung.\n\n$$\n-5<x^{2}-4<5\n$$\n\n**Linkes Teilstück.**\n\n$$\n-5<x^{2}-4,\\quad x^{2}>-1\n$$\n\nUnsere ausbe Lehreen aus- $x$.\n\n**Rechtes Teilstück.**\n\n$$\nx^{2}-4<5,\\quad x^{2}<9,\\quad -3<x<3\n$$\n\nDurch die Kreuzung beider Teile ergibt sich\n\n$$\n(-3,3)\n$$\n\nmit dem Preiswert: $(-\\sqrt{5}, \\sqrt{5})$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n- \\sqrt{x + 4} + \\sqrt{2 x + 7}>1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n2 x + 7\\ge 0,\\quad x\\in [- \\frac{7}{2}, \\infty),\\quad x + 4\\ge 0,\\quad x\\in [-4, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichung automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 11>1,\\quad 3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 10>0,\\quad x=2 \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $3 x - 2 \\sqrt{x + 4} \\sqrt{2 x + 7} + 10$ |\n| --- | --- |\n| $(-\\infty,2 \\sqrt{3})$ | $-$ |\n| $(2 \\sqrt{3},\\infty)$ | $+$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(2 \\sqrt{3}, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n|2x - 5| \\ge 3x - 1,\\quad 3x-1<0,\\quad x<\\dfrac{1}{3}\n$$\n\n$$\n|2x - 5| \\ge,\\quad 3x-1\\ge 0,\\quad x\\ge\\dfrac{1}{3},\\quad {2x - 5 \\ge 3x - 1}\n$$\n\n$$\nx \\le -4,\\quad {2x - 5 \\le -(3x - 1)},\\quad 5x\\le 6,\\quad x\\le\\dfrac{6}{5} \\le x \\le\n$$\n\n$$\nx \\le\n$$\n\n$$\nx = 1,\\quad |2-5| = 3 \\ge,\\quad x \\le \\frac{5}{6}\n$$\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge. Die Behauptung betrifft Fall 1 bzw. Fall 2 der Betragsauflösung; die kombinierte Lösungsmenge stimmt nicht mit der behaupteten Menge überein (der Bruch ist vertauscht). Eine schnelle Probe: setze $x=1$ ein — die Ungleichung bleibt erfüllt, was die Behauptung widerlegt, die Menge ende früher.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-3<(x^{2} - 2 x) - 3<5\n$$\n\n**Linkes Teilstück.**\n\n$$\n-3<(x^{2} - 2 x) - 3,\\quad x^{2} - 2 x>0,\\quad x (x - 2)>0,\\quad x=0 = 2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x (x - 2)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 0) \\cup (2, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 2 x) - 3<5,\\quad x^{2} - 2 x - 8<0,\\quad (x - 4) (x + 2)<0,\\quad x=-2 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(-2, 4)\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(-2, 0) \\cup (2, 4)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie als richtig oder falsch.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei einer Quadratwurzel, teile an den Stellen, an denen Ausdrücke das Vorzeichen wechseln, und kombiniere die Bedingungen."
+  },
+  {
+    "case_id": "MATH 6.48",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 11",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The inequality ${0 \\le x^{2} - 6x + 8 \\le 3}$ has solution set $[1, 2] \\cup [4, 5]$.",
+      "The solution set of the inequality $\\sqrt{x + 2} < x$ is $x > 2$.",
+      "The solution set of the inequality $|x - 1| + |x + 2| \\le 5$ is $[-3, 2]$.",
+      "The inequality ${0 \\le x^{2} - 4x + 3 \\le 3}$ has solution set $(0, 1) \\cup (3, 4)$.",
+      "The solution set of the inequality $\\sqrt{3x - 2} > x - 2$ is $[\\frac{2}{3}, 6)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n0\\le (x^{2} - 6 x) + 8\\le 3\n$$\n\n**Left piece.**\n\n$$\n0\\le (x^{2} - 6 x) + 8\n$$\n\n$$\nx^{2} - 6 x + 8\\ge 0\n$$\n\n$$\n(x - 4) (x - 2)\\ge 0\n$$\n\n$$\nx=2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 8$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 2] \\cup [4, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 6 x) + 8\\le 3\n$$\n\n$$\nx^{2} - 6 x + 5\\le 0\n$$\n\n$$\n(x - 5) (x - 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[1, 5]\n$$\n\nIntersect both pieces.\n\n$$\n[1, 2] \\cup [4, 5]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 2}<x\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 2\\ge 0\n$$\n\n$$\nx\\in [-2, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 2<x^{2}\n$$\n\n$$\n- x^{2} + x + 2<0\n$$\n\n$$\n- (x - 2) (x + 1)<0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + x + 2$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,2)$ | $+$ |\n| $(2,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x - 1|+|x + 2|\\le 5\n$$\n\nThe expression changes formula at the kink points $x=-2$ and $x=1$.\n\nOn $x\\le -2$:\n\n$$\n|x - 1|+|x + 2|=- 2 x - 1\n$$\n\nSolving $- 2 x - 1\\le 5$ on this piece gives\n\n$$\n[-3, -2]\n$$\n\nOn $-2\\le x\\le 1$:\n\n$$\n|x - 1|+|x + 2|=3\n$$\n\nSolving $3\\le 5$ on this piece gives\n\n$$\n[-2, 1]\n$$\n\nOn $x\\ge 1$:\n\n$$\n|x - 1|+|x + 2|=2 x + 1\n$$\n\nSolving $2 x + 1\\le 5$ on this piece gives\n\n$$\n[1, 2]\n$$\n\nUnion of the admissible pieces:\n\n$$\n[-3, 2]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n0\\le (x^{2} - 4 x) + 3\\le 3\n$$\n\n**Left piece.**\n\n$$\n0\\le (x^{2} - 4 x) + 3\n$$\n\n$$\nx^{2} - 4 x + 3\\ge 0\n$$\n\n$$\n(x - 3) (x - 1)\\ge 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 4 x) + 3\\le 3\n$$\n\n$$\nx^{2} - 4 x\\le 0\n$$\n\n$$\nx (x - 4)\\le 0\n$$\n\n$$\nx=0\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (x - 4)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[0, 4]\n$$\n\nIntersect both pieces.\n\n$$\n[0, 1] \\cup [3, 4]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{3 x - 2}>x - 2\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n3 x - 2\\ge 0\n$$\n\n$$\nx\\in [\\frac{2}{3}, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nA square root is always $\\ge 0$, so the inequality holds automatically on the part of the domain where the right side is negative.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n3 x - 2>x^{2} - 4 x + 4\n$$\n\n$$\n- x^{2} + 7 x - 6>0\n$$\n\n$$\n- (x - 6) (x - 1)>0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=6\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 7 x - 6$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,6)$ | $+$ |\n| $(6,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[\\frac{2}{3}, 6)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Compound (double) quadratic inequality; Radical (square root) inequality; Absolute value inequality (sum of two distances).",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 11",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Ungleichung ${0 \\le x^{2} - 6x + 8 \\le 3}$ hat die Lösungsmenge $[1, 2] \\cup [4, 5]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 2} < x$ ist $x > 2$.",
+      "Die Lösungsmenge der Ungleichung $|x - 1| + |x + 2| \\le 5$ ist $[-3, 2]$.",
+      "Die Ungleichung ${0 \\le x^{2} - 4x + 3 \\le 3}$ hat die Lösungsmenge $(0, 1) \\cup (3, 4)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{3x - 2} > x - 2$ ist $[\\frac{2}{3}, 6)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n0\\le (x^{2} - 6 x) + 8\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n0\\le (x^{2} - 6 x) + 8,\\quad x^{2} - 6 x + 8\\ge 0,\\quad (x - 4) (x - 2)\\ge 0,\\quad x=2 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 6 x + 8$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 2] \\cup [4, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 6 x) + 8\\le 3,\\quad x^{2} - 6 x + 5\\le 0,\\quad (x - 5) (x - 1)\\le 0,\\quad x=1 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[1, 5]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[1, 2] \\cup [4, 5]\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 2}<x\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 2\\ge 0,\\quad x\\in [-2, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 2<x^{2},\\quad - x^{2} + x + 2<0,\\quad - (x - 2) (x + 1)<0,\\quad x=-1 = 2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + x + 2$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,2)$ | $+$ |\n| $(2,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(2, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x - 1|+|x + 2|\\le 5\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-2$ und $x=1$.\n\nAuf $x\\le -2$:\n\n$$\n|x - 1|+|x + 2|=- 2 x - 1 \\Rightarrow [-3, -2]\n$$\n\nAuf $-2\\le x\\le 1$:\n\n$$\n|x - 1|+|x + 2|=3 \\Rightarrow [-2, 1]\n$$\n\nAuf $x\\ge 1$:\n\n$$\n|x - 1|+|x + 2|=2 x + 1 \\Rightarrow [1, 2]\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[-3, 2]\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n0\\le (x^{2} - 4 x) + 3\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n0\\le (x^{2} - 4 x) + 3,\\quad x^{2} - 4 x + 3\\ge 0,\\quad (x - 3) (x - 1)\\ge 0,\\quad x=1 = 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 4 x) + 3\\le 3,\\quad x^{2} - 4 x\\le 0,\\quad x (x - 4)\\le 0,\\quad x=0 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x (x - 4)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[0, 4]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[0, 1] \\cup [3, 4]\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{3 x - 2}>x - 2\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n3 x - 2\\ge 0,\\quad x\\in [\\frac{2}{3}, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichung automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n3 x - 2>x^{2} - 4 x + 4,\\quad - x^{2} + 7 x - 6>0,\\quad - (x - 6) (x - 1)>0,\\quad x=1 = 6\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 7 x - 6$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,6)$ | $+$ |\n| $(6,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[\\frac{2}{3}, 6)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen dieser Reihe: Kommentar Zusammen Nachbar (dreifache quadratische Ungleichung; Radikale (Quadratwurzel) Ungleichung; Absolutwertungleichheit (Summe zweier Entfernungen)."
+  },
+  {
+    "case_id": "MATH 6.49",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Compound & Special Inequalities — 12",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $|x + 3| - |x - 1| \\ge 2$ is $x \\ge 0$.",
+      "The inequality $-1 \\le x^{2} - 4x + 2 \\le 4$ has solution set $[2 - \\sqrt{6}, 2 + \\sqrt{6}]$.",
+      "The solution set of the inequality $\\sqrt{x^{2} - 2x - 3} \\le x + 1$ is $\\{-1\\} \\cup [3, \\infty)$.",
+      "The solution set of the inequality $|2x - 1| < |x + 4|$ is $(-1, 5)$.",
+      "The inequality ${1 < x^{2} + 2x - 2 < 6}$ has solution set $(-4, 2)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the absolute-value difference inequality.\n\n$$\n|x + 3|-|x - 1|\\ge 2\n$$\n\nThe expression changes formula at the kink points $x=-3$ and $x=1$.\n\nOn $x\\le -3$:\n\n$$\n|x + 3|-|x - 1|=-4\n$$\n\nSolving $-4\\ge 2$ on this piece gives\n\n$$\n\\emptyset\n$$\n\nOn $-3\\le x\\le 1$:\n\n$$\n|x + 3|-|x - 1|=2 x + 2\n$$\n\nSolving $2 x + 2\\ge 2$ on this piece gives\n\n$$\n[0, 1]\n$$\n\nOn $x\\ge 1$:\n\n$$\n|x + 3|-|x - 1|=4\n$$\n\nSolving $4\\ge 2$ on this piece gives\n\n$$\n[1, \\infty)\n$$\n\nUnion of the admissible pieces:\n\n$$\n[0, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-1\\le (x^{2} - 4 x) + 2\\le 4\n$$\n\n**Left piece.**\n\n$$\n-1\\le (x^{2} - 4 x) + 2\n$$\n\n$$\nx^{2} - 4 x + 3\\ge 0\n$$\n\n$$\n(x - 3) (x - 1)\\ge 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 4 x) + 2\\le 4\n$$\n\n$$\nx^{2} - 4 x - 2\\le 0\n$$\n\n$$\nx=2 - \\sqrt{6}\n$$\n\n$$\nx=2 + \\sqrt{6}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x - 2$ |\n| --- | --- |\n| $(-\\infty,2 - \\sqrt{6})$ | $+$ |\n| $(2 - \\sqrt{6},2 + \\sqrt{6})$ | $-$ |\n| $(2 + \\sqrt{6},\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[2 - \\sqrt{6}, 2 + \\sqrt{6}]\n$$\n\nIntersect both pieces.\n\n$$\n[2 - \\sqrt{6}, 1] \\cup [3, 2 + \\sqrt{6}]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{(x^{2} - 2 x) - 3}\\le x + 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx^{2} - 2 x - 3\\ge 0\n$$\n\n$$\nx\\in (-\\infty, -1] \\cup [3, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx^{2} - 2 x - 3\\le x^{2} + 2 x + 1\n$$\n\n$$\n- 4 x - 4\\le 0\n$$\n\n$$\n- 4 (x + 1)\\le 0\n$$\n\n$$\nx=-1\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $4 (- x - 1)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n\\{-1\\} \\cup [3, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the absolute-value inequality.\n\n$$\n|{2 x - 1}|<|{x + 4}|\n$$\n\nBoth sides are nonnegative absolute values, so squaring is equivalence-preserving.\n\n$$\n(2 x - 1)^{2}<(x + 4)^{2}\n$$\n\n$$\n3 x^{2} - 12 x - 15<0\n$$\n\n$$\n3 (x - 5) (x + 1)<0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $3 (x^{2} - 4 x - 5)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-1, 5)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n1<(x^{2} + 2 x) - 2<6\n$$\n\n**Left piece.**\n\n$$\n1<(x^{2} + 2 x) - 2\n$$\n\n$$\nx^{2} + 2 x - 3>0\n$$\n\n$$\n(x - 1) (x + 3)>0\n$$\n\n$$\nx=-3\n$$\n\n$$\nx=1\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} + 2 x - 3$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, -3) \\cup (1, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} + 2 x) - 2<6\n$$\n\n$$\nx^{2} + 2 x - 8<0\n$$\n\n$$\n(x - 2) (x + 4)<0\n$$\n\n$$\nx=-4\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} + 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(-4, 2)\n$$\n\nIntersect both pieces.\n\n$$\n(-4, -3) \\cup (1, 2)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Absolute value inequality (difference of two distances); Compound (double) quadratic inequality; Radical (square root) inequality.",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 12",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $|x + 3| - |x - 1| \\ge 2$ ist $x \\ge 0$.",
+      "Die Ungleichung $-1 \\le x^{2} - 4x + 2 \\le 4$ hat die Lösungsmenge $[2 - \\sqrt{6}, 2 + \\sqrt{6}]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 2x - 3} \\le x + 1$ ist $\\{-1\\} \\cup [3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 1| < |x + 4|$ ist $(-1, 5)$.",
+      "Die Ungleichung ${1 < x^{2} + 2x - 2 < 6}$ hat die Lösungsmenge $(-4, 2)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der Betragsdifferenz-Ungleichung.\n\n$$\n|x + 3|-|x - 1|\\ge 2\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-3$ und $x=1$.\n\nAuf $x\\le -3$:\n\n$$\n|x + 3|-|x - 1|=-4 \\Rightarrow \\emptyset\n$$\n\nAuf $-3\\le x\\le 1$:\n\n$$\n|x + 3|-|x - 1|=2 x + 2 \\Rightarrow [0, 1]\n$$\n\nAuf $x\\ge 1$:\n\n$$\n|x + 3|-|x - 1|=4 \\Rightarrow [1, \\infty)\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[0, \\infty)\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-1\\le (x^{2} - 4 x) + 2\\le 4\n$$\n\n**Linkes Teilstück.**\n\n$$\n-1\\le (x^{2} - 4 x) + 2,\\quad x^{2} - 4 x + 3\\ge 0,\\quad (x - 3) (x - 1)\\ge 0,\\quad x=1 = 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 4 x) + 2\\le 4,\\quad x^{2} - 4 x - 2\\le 0,\\quad x=2 - \\sqrt{6} = 2 + \\sqrt{6}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x - 2$ |\n| --- | --- |\n| $(-\\infty,2 - \\sqrt{6})$ | $+$ |\n| $(2 - \\sqrt{6},2 + \\sqrt{6})$ | $-$ |\n| $(2 + \\sqrt{6},\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[2 - \\sqrt{6}, 2 + \\sqrt{6}]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[2 - \\sqrt{6}, 1] \\cup [3, 2 + \\sqrt{6}]\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{(x^{2} - 2 x) - 3}\\le x + 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx^{2} - 2 x - 3\\ge 0,\\quad x\\in (-\\infty, -1] \\cup [3, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx^{2} - 2 x - 3\\le x^{2} + 2 x + 1,\\quad - 4 x - 4\\le 0,\\quad - 4 (x + 1)\\le 0,\\quad x=-1\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $4 (- x - 1)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n\\{-1\\} \\cup [3, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nStarte von der Betragsungleichung.\n\n$$\n|{2 x - 1}|<|{x + 4}|\n$$\n\nBeide Seiten sind nicht-negative Absolutwerte, also ist die Quadratierung ist äquivalenzerhaltend.\n\n$$\n(2 x - 1)^{2}<(x + 4)^{2}\n$$\n\n$$\n3 x^{2} - 12 x - 15<0\n$$\n\n$$\n3 (x - 5) (x + 1)<0\n$$\n\n$$\nx=-1 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $3 (x^{2} - 4 x - 5)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-1, 5)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n1<(x^{2} + 2 x) - 2<6\n$$\n\n**Linkes Teilstück.**\n\n$$\n1<(x^{2} + 2 x) - 2,\\quad x^{2} + 2 x - 3>0,\\quad (x - 1) (x + 3)>0,\\quad x=-3 = 1\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} + 2 x - 3$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, -3) \\cup (1, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} + 2 x) - 2<6,\\quad x^{2} + 2 x - 8<0,\\quad (x - 2) (x + 4)<0,\\quad x=-4 = 2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} + 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(-4, 2)\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(-4, -3) \\cup (1, 2)\n$$\n\neignet euch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen in diesem Satz: Absolutwertungleichheit (Differenz von zwei Distanzen); Verbindung (doppel) quadratische Ungleichheit;"
+  },
+  {
+    "case_id": "MATH 6.52",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Compound & Special Inequalities — 15",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $|x^{2} - 3x - 1| > 3$ is $x < -1$ or $x > 4$.",
+      "The inequality $-3 \\le x^{2} - 6x + 7 \\le 2$ has solution set $[1, 5]$.",
+      "The solution set of the inequality $\\sqrt{x - 3} < x - 3$ is $x > 4$.",
+      "The solution set of the inequality $|x + 1| + |x - 4| \\le 7$ is $[-2, 5]$.",
+      "The inequality ${0 < x^{2} - 2x - 3 \\le 5}$ has solution set $(-2, -1) \\cup (3, 4)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nStart from the absolute-value inequality.\n\n$$\n|{(x^{2} - 3 x) - 1}|>3\n$$\n\nAn absolute value above a constant splits into two outer cases.\n\n**Case 1.**\n\n$$\n(x^{2} - 3 x) - 1>3\n$$\n\n$$\nx\\in (-\\infty, -1) \\cup (4, \\infty)\n$$\n\n**Case 2.**\n\n$$\n(x^{2} - 3 x) - 1<-3\n$$\n\n$$\nx\\in (1, 2)\n$$\n\nUnion of the two cases:\n\n$$\n(-\\infty, -1) \\cup (1, 2) \\cup (4, \\infty)\n$$\n\nwhich does not match the claimed set $x < -1$.\n\nSo the statement is False.",
+      "**B.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-3\\le (x^{2} - 6 x) + 7\\le 2\n$$\n\n**Left piece.**\n\n$$\n-3\\le (x^{2} - 6 x) + 7\n$$\n\n$$\nx^{2} - 6 x + 10\\ge 0\n$$\n\nSo the left piece gives\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 6 x) + 7\\le 2\n$$\n\n$$\nx^{2} - 6 x + 5\\le 0\n$$\n\n$$\n(x - 5) (x - 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[1, 5]\n$$\n\nIntersect both pieces.\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x - 3}<x - 3\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx - 3\\ge 0\n$$\n\n$$\nx\\in [3, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx - 3<x^{2} - 6 x + 9\n$$\n\n$$\n- x^{2} + 7 x - 12<0\n$$\n\n$$\n- (x - 4) (x - 3)<0\n$$\n\n$$\nx=3\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 7 x - 12$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(4, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x + 1|+|x - 4|\\le 7\n$$\n\nThe expression changes formula at the kink points $x=-1$ and $x=4$.\n\nOn $x\\le -1$:\n\n$$\n|x + 1|+|x - 4|=3 - 2 x\n$$\n\nSolving $3 - 2 x\\le 7$ on this piece gives\n\n$$\n[-2, -1]\n$$\n\nOn $-1\\le x\\le 4$:\n\n$$\n|x + 1|+|x - 4|=5\n$$\n\nSolving $5\\le 7$ on this piece gives\n\n$$\n[-1, 4]\n$$\n\nOn $x\\ge 4$:\n\n$$\n|x + 1|+|x - 4|=2 x - 3\n$$\n\nSolving $2 x - 3\\le 7$ on this piece gives\n\n$$\n[4, 5]\n$$\n\nUnion of the admissible pieces:\n\n$$\n[-2, 5]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n0<(x^{2} - 2 x) - 3\\le 5\n$$\n\n**Left piece.**\n\n$$\n0<(x^{2} - 2 x) - 3\n$$\n\n$$\nx^{2} - 2 x - 3>0\n$$\n\n$$\n(x - 3) (x + 1)>0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x - 3$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, -1) \\cup (3, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 2 x) - 3\\le 5\n$$\n\n$$\nx^{2} - 2 x - 8\\le 0\n$$\n\n$$\n(x - 4) (x + 2)\\le 0\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[-2, 4]\n$$\n\nIntersect both pieces.\n\n$$\n[-2, -1) \\cup (3, 4]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Absolute value inequality (quadratic inside); Compound (double) quadratic inequality; Radical (square root) inequality.",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 15",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 3x - 1| > 3$ ist $x < -1$ oder $x > 4$.",
+      "Die Ungleichung $-3 \\le x^{2} - 6x + 7 \\le 2$ hat die Lösungsmenge $[1, 5]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 3} < x - 3$ ist $x > 4$.",
+      "Die Lösungsmenge der Ungleichung $|x + 1| + |x - 4| \\le 7$ ist $[-2, 5]$.",
+      "Die Ungleichung ${0 < x^{2} - 2x - 3 \\le 5}$ hat die Lösungsmenge $(-2, -1) \\cup (3, 4)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nStarte von der Betragsungleichung.\n\n$$\n|{(x^{2} - 3 x) - 1}|>3\n$$\n\nEin absoluter Wert über einer Konst bzw. zweis auf dies ist in zwei äußere Fälle.\n\n**Case 1.**\n\n$$\n(x^{2} - 3 x) - 1>3\n$$\n\n$$\nx\\in (-\\infty, -1) \\cup (4, \\infty)\n$$\n\n**Case 2.**\n\n$$\n(x^{2} - 3 x) - 1<-3\n$$\n\n$$\nx\\in (1, 2)\n$$\n\nUnion der beiden Fälle:\n\n$$\n(-\\infty, -1) \\cup (1, 2) \\cup (4, \\infty)\n$$\n\nmit dem Preiswert: $x < -1$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-3\\le (x^{2} - 6 x) + 7\\le 2\n$$\n\n**Linkes Teilstück.**\n\n$$\n-3\\le (x^{2} - 6 x) + 7,\\quad x^{2} - 6 x + 10\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 6 x) + 7\\le 2,\\quad x^{2} - 6 x + 5\\le 0,\\quad (x - 5) (x - 1)\\le 0,\\quad x=1 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[1, 5]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x - 3}<x - 3\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx - 3\\ge 0,\\quad x\\in [3, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx - 3<x^{2} - 6 x + 9,\\quad - x^{2} + 7 x - 12<0,\\quad - (x - 4) (x - 3)<0,\\quad x=3 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 7 x - 12$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(4, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x + 1|+|x - 4|\\le 7\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-1$ und $x=4$.\n\nAuf $x\\le -1$:\n\n$$\n|x + 1|+|x - 4|=3 - 2 x \\Rightarrow [-2, -1]\n$$\n\nAuf $-1\\le x\\le 4$:\n\n$$\n|x + 1|+|x - 4|=5 \\Rightarrow [-1, 4]\n$$\n\nAuf $x\\ge 4$:\n\n$$\n|x + 1|+|x - 4|=2 x - 3 \\Rightarrow [4, 5]\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[-2, 5]\n$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n0<(x^{2} - 2 x) - 3\\le 5\n$$\n\n**Linkes Teilstück.**\n\n$$\n0<(x^{2} - 2 x) - 3,\\quad x^{2} - 2 x - 3>0,\\quad (x - 3) (x + 1)>0,\\quad x=-1 = 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x - 3$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, -1) \\cup (3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 2 x) - 3\\le 5,\\quad x^{2} - 2 x - 8\\le 0,\\quad (x - 4) (x + 2)\\le 0,\\quad x=-2 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[-2, 4]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[-2, -1) \\cup (3, 4]\n$$\n\neignet euch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nZu-Wiss ist die „Diskussions“ („Absolus-Diskussions-“ (quadratisches Innensystem)) „Verbundene“-Diskussionen, „Diskussen“ und „Diskussen“-Diskuss"
+  },
+  {
+    "case_id": "MATH 6.56",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 19",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $\\sqrt{x + 5} < x + 1$ is $x > \\dfrac{-1 + \\sqrt{17}}{2}$.",
+      "The solution set of the inequality $|x - 2| + |x + 3| \\le 9$ is $[-5, 4]$.",
+      "The inequality ${0 \\le x^{2} - 6x + 8 \\le 3}$ has solution set $(1, 2) \\cup (4, 5)$.",
+      "The solution set of the inequality $\\sqrt{5x - 4} \\le x$ is $[0.8, 1] \\cup [4, \\infty)$.",
+      "The solution set of the inequality $|3x + 2| < |x - 6|$ is $(-4, 1)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 5}<x + 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 5<x^{2} + 2 x + 1\n$$\n\n$$\n- x^{2} - x + 4<0\n$$\n\n$$\nx=- \\frac{\\sqrt{17}}{2} - \\frac{1}{2}\n$$\n\n$$\nx=- \\frac{1}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} - x + 4$ |\n| --- | --- |\n| $(-\\infty,- \\frac{\\sqrt{17}}{2} - \\frac{1}{2})$ | $-$ |\n| $(- \\frac{\\sqrt{17}}{2} - \\frac{1}{2},- \\frac{1}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2}, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x - 2|+|x + 3|\\le 9\n$$\n\nThe expression changes formula at the kink points $x=-3$ and $x=2$.\n\nOn $x\\le -3$:\n\n$$\n|x - 2|+|x + 3|=- 2 x - 1\n$$\n\nSolving $- 2 x - 1\\le 9$ on this piece gives\n\n$$\n[-5, -3]\n$$\n\nOn $-3\\le x\\le 2$:\n\n$$\n|x - 2|+|x + 3|=5\n$$\n\nSolving $5\\le 9$ on this piece gives\n\n$$\n[-3, 2]\n$$\n\nOn $x\\ge 2$:\n\n$$\n|x - 2|+|x + 3|=2 x + 1\n$$\n\nSolving $2 x + 1\\le 9$ on this piece gives\n\n$$\n[2, 4]\n$$\n\nUnion of the admissible pieces:\n\n$$\n[-5, 4]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n0\\le (x^{2} - 6 x) + 8\\le 3\n$$\n\n**Left piece.**\n\n$$\n0\\le (x^{2} - 6 x) + 8\n$$\n\n$$\nx^{2} - 6 x + 8\\ge 0\n$$\n\n$$\n(x - 4) (x - 2)\\ge 0\n$$\n\n$$\nx=2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 8$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 2] \\cup [4, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 6 x) + 8\\le 3\n$$\n\n$$\nx^{2} - 6 x + 5\\le 0\n$$\n\n$$\n(x - 5) (x - 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n[1, 5]\n$$\n\nIntersect both pieces.\n\n$$\n[1, 2] \\cup [4, 5]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{5 x - 4}\\le x\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n5 x - 4\\ge 0\n$$\n\n$$\nx\\in [\\frac{4}{5}, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n5 x - 4\\le x^{2}\n$$\n\n$$\n- x^{2} + 5 x - 4\\le 0\n$$\n\n$$\n- (x - 4) (x - 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 5 x - 4$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[\\frac{4}{5}, 1] \\cup [4, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the absolute-value inequality.\n\n$$\n|{3 x + 2}|<|{x - 6}|\n$$\n\nBoth sides are nonnegative absolute values, so squaring is equivalence-preserving.\n\n$$\n(3 x + 2)^{2}<(x - 6)^{2}\n$$\n\n$$\n8 x^{2} + 24 x - 32<0\n$$\n\n$$\n8 (x - 1) (x + 4)<0\n$$\n\n$$\nx=-4\n$$\n\n$$\nx=1\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $8 (x^{2} + 3 x - 4)$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-4, 1)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Radical (square root) inequality; Absolute value inequality (sum of two distances); Compound (double) quadratic inequality.",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 19",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} < x + 1$ ist $x > \\dfrac{-1 + \\sqrt{17}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 9$ ist $[-5, 4]$.",
+      "Die Ungleichung ${0 \\le x^{2} - 6x + 8 \\le 3}$ hat die Lösungsmenge $(1, 2) \\cup (4, 5)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{5x - 4} \\le x$ ist $[0.8, 1] \\cup [4, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|3x + 2| < |x - 6|$ ist $(-4, 1)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 5}<x + 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 5<x^{2} + 2 x + 1\n$$\n\n$$\n- x^{2} - x + 4<0\n$$\n\n$$\nx=- \\frac{\\sqrt{17}}{2} - \\frac{1}{2} = - \\frac{1}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} - x + 4$ |\n| --- | --- |\n| $(-\\infty,- \\frac{\\sqrt{17}}{2} - \\frac{1}{2})$ | $-$ |\n| $(- \\frac{\\sqrt{17}}{2} - \\frac{1}{2},- \\frac{1}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2}, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x - 2|+|x + 3|\\le 9\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-3$ und $x=2$.\n\nAuf $x\\le -3$:\n\n$$\n|x - 2|+|x + 3|=- 2 x - 1 \\Rightarrow [-5, -3]\n$$\n\nAuf $-3\\le x\\le 2$:\n\n$$\n|x - 2|+|x + 3|=5 \\Rightarrow [-3, 2]\n$$\n\nAuf $x\\ge 2$:\n\n$$\n|x - 2|+|x + 3|=2 x + 1 \\Rightarrow [2, 4]\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[-5, 4]\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n0\\le (x^{2} - 6 x) + 8\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n0\\le (x^{2} - 6 x) + 8,\\quad x^{2} - 6 x + 8\\ge 0,\\quad (x - 4) (x - 2)\\ge 0,\\quad x=2 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 6 x + 8$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 2] \\cup [4, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 6 x) + 8\\le 3,\\quad x^{2} - 6 x + 5\\le 0,\\quad (x - 5) (x - 1)\\le 0,\\quad x=1 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[1, 5]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[1, 2] \\cup [4, 5]\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{5 x - 4}\\le x\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n5 x - 4\\ge 0,\\quad x\\in [\\frac{4}{5}, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n5 x - 4\\le x^{2},\\quad - x^{2} + 5 x - 4\\le 0,\\quad - (x - 4) (x - 1)\\le 0,\\quad x=1 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 5 x - 4$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,4)$ | $+$ |\n| $(4,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[\\frac{4}{5}, 1] \\cup [4, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nStarte von der Betragsungleichung.\n\n$$\n|{3 x + 2}|<|{x - 6}|\n$$\n\nBeide Seiten sind nicht-negative Absolutwerte, also ist die Quadratierung ist äquivalenzerhaltend.\n\n$$\n(3 x + 2)^{2}<(x - 6)^{2}\n$$\n\n$$\n8 x^{2} + 24 x - 32<0\n$$\n\n$$\n8 (x - 1) (x + 4)<0\n$$\n\n$$\nx=-4 = 1\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $8 (x^{2} + 3 x - 4)$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-4, 1)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen in diesem Satz: Radikale (Quadratwurzel) Ungleichheit; Absolutwertungleichheit (Summe von zwei Entfernungen); Verbindung (doppelte) quadratische Ungleichheit."
+  },
+  {
+    "case_id": "MATH 6.59",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 22",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $\\sqrt{2x + 9} - \\sqrt{x + 5} > 1$ is $x > -1 - 2\\sqrt{3}$.",
+      "The solution set of the inequality $|x^{2} - 4x - 1| > 4$ is $x < -1$ or ${1 < x < 3}$ or $x > 5$.",
+      "The inequality $-6 \\le x^{2} - 4x - 3 < 5$ has solution set $(2 - 2\\sqrt{3}, 2 + 2\\sqrt{3})$.",
+      "The solution set of the inequality $\\sqrt{x + 3} < x - 1$ is $x > \\dfrac{3 + \\sqrt{17}}{2}$.",
+      "The solution set of the inequality $|x + 2| + |x - 5| \\le 10$ is $[-3.5, 6.5]$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nStart from the radical inequality.\n\n$$\n- \\sqrt{x + 5} + \\sqrt{2 x + 9}>1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n2 x + 9\\ge 0\n$$\n\n$$\nx\\in [- \\frac{9}{2}, \\infty)\n$$\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nA square root is always $\\ge 0$, so the inequality holds automatically on the part of the domain where the right side is negative.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 14>1\n$$\n\n$$\n3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13>0\n$$\n\n$$\nx=-1 + 2 \\sqrt{3}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13$ |\n| --- | --- |\n| $(-\\infty,-1 + 2 \\sqrt{3})$ | $-$ |\n| $(-1 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(-1 + 2 \\sqrt{3}, \\infty)\n$$\n\nwhich does not match the claimed set $x > -1 - 2\\sqrt{3}$.\n\nSo the statement is False.",
+      "**B.** → True\n\nStart from the absolute-value inequality.\n\n$$\n|{(x^{2} - 4 x) - 1}|>4\n$$\n\nAn absolute value above a constant splits into two outer cases.\n\n**Case 1.**\n\n$$\n(x^{2} - 4 x) - 1>4\n$$\n\n$$\nx\\in (-\\infty, -1) \\cup (5, \\infty)\n$$\n\n**Case 2.**\n\n$$\n(x^{2} - 4 x) - 1<-4\n$$\n\n$$\nx\\in (1, 3)\n$$\n\nUnion of the two cases:\n\n$$\n(-\\infty, -1) \\cup (1, 3) \\cup (5, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → False\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-6\\le (x^{2} - 4 x) - 3<5\n$$\n\n**Left piece.**\n\n$$\n-6\\le (x^{2} - 4 x) - 3\n$$\n\n$$\nx^{2} - 4 x + 3\\ge 0\n$$\n\n$$\n(x - 3) (x - 1)\\ge 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} - 4 x) - 3<5\n$$\n\n$$\nx^{2} - 4 x - 8<0\n$$\n\n$$\nx=2 - 2 \\sqrt{3}\n$$\n\n$$\nx=2 + 2 \\sqrt{3}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 4 x - 8$ |\n| --- | --- |\n| $(-\\infty,2 - 2 \\sqrt{3})$ | $+$ |\n| $(2 - 2 \\sqrt{3},2 + 2 \\sqrt{3})$ | $-$ |\n| $(2 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(2 - 2 \\sqrt{3}, 2 + 2 \\sqrt{3})\n$$\n\nIntersect both pieces.\n\n$$\n(2 - 2 \\sqrt{3}, 1] \\cup [3, 2 + 2 \\sqrt{3})\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{x + 3}<x - 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 3\\ge 0\n$$\n\n$$\nx\\in [-3, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx + 3<x^{2} - 2 x + 1\n$$\n\n$$\n- x^{2} + 3 x + 2<0\n$$\n\n$$\nx=\\frac{3}{2} - \\frac{\\sqrt{17}}{2}\n$$\n\n$$\nx=\\frac{3}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 3 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\frac{3}{2} - \\frac{\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{3}{2} - \\frac{\\sqrt{17}}{2},\\frac{3}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{3}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n(\\frac{3}{2} + \\frac{\\sqrt{17}}{2}, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x + 2|+|x - 5|\\le 10\n$$\n\nThe expression changes formula at the kink points $x=-2$ and $x=5$.\n\nOn $x\\le -2$:\n\n$$\n|x + 2|+|x - 5|=3 - 2 x\n$$\n\nSolving $3 - 2 x\\le 10$ on this piece gives\n\n$$\n[- \\frac{7}{2}, -2]\n$$\n\nOn $-2\\le x\\le 5$:\n\n$$\n|x + 2|+|x - 5|=7\n$$\n\nSolving $7\\le 10$ on this piece gives\n\n$$\n[-2, 5]\n$$\n\nOn $x\\ge 5$:\n\n$$\n|x + 2|+|x - 5|=2 x - 3\n$$\n\nSolving $2 x - 3\\le 10$ on this piece gives\n\n$$\n[5, \\frac{13}{2}]\n$$\n\nUnion of the admissible pieces:\n\n$$\n[- \\frac{7}{2}, \\frac{13}{2}]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Radical inequality (difference of two square roots, double squaring); Absolute value inequality (quadratic inside); Compound (double) quadratic inequality.",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 22",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 9} - \\sqrt{x + 5} > 1$ ist $x > -1 - 2\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 4x - 1| > 4$ ist $x < -1$ oder ${1 < x < 3}$ oder $x > 5$.",
+      "Die Ungleichung $-6 \\le x^{2} - 4x - 3 < 5$ hat die Lösungsmenge $(2 - 2\\sqrt{3}, 2 + 2\\sqrt{3})$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < x - 1$ ist $x > \\dfrac{3 + \\sqrt{17}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $|x + 2| + |x - 5| \\le 10$ ist $[-3.5, 6.5]$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n- \\sqrt{x + 5} + \\sqrt{2 x + 9}>1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n2 x + 9\\ge 0,\\quad x\\in [- \\frac{9}{2}, \\infty),\\quad x + 5\\ge 0,\\quad x\\in [-5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichung automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 14>1,\\quad 3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13>0,\\quad x=-1 + 2 \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13$ |\n| --- | --- |\n| $(-\\infty,-1 + 2 \\sqrt{3})$ | $-$ |\n| $(-1 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(-1 + 2 \\sqrt{3}, \\infty)\n$$\n\nmit dem Preiswert: $x > -1 - 2\\sqrt{3}$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nStarte von der Betragsungleichung.\n\n$$\n|{(x^{2} - 4 x) - 1}|>4\n$$\n\nEin absoluter Wert über einer Konst bzw. zweis auf dies ist in zwei äußere Fälle.\n\n**Case 1.**\n\n$$\n(x^{2} - 4 x) - 1>4\n$$\n\n$$\nx\\in (-\\infty, -1) \\cup (5, \\infty)\n$$\n\n**Case 2.**\n\n$$\n(x^{2} - 4 x) - 1<-4\n$$\n\n$$\nx\\in (1, 3)\n$$\n\nUnion der beiden Fälle:\n\n$$\n(-\\infty, -1) \\cup (1, 3) \\cup (5, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-6\\le (x^{2} - 4 x) - 3<5\n$$\n\n**Linkes Teilstück.**\n\n$$\n-6\\le (x^{2} - 4 x) - 3,\\quad x^{2} - 4 x + 3\\ge 0,\\quad (x - 3) (x - 1)\\ge 0,\\quad x=1 = 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 4 x) - 3<5,\\quad x^{2} - 4 x - 8<0,\\quad x=2 - 2 \\sqrt{3} = 2 + 2 \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x - 8$ |\n| --- | --- |\n| $(-\\infty,2 - 2 \\sqrt{3})$ | $+$ |\n| $(2 - 2 \\sqrt{3},2 + 2 \\sqrt{3})$ | $-$ |\n| $(2 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(2 - 2 \\sqrt{3}, 2 + 2 \\sqrt{3})\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(2 - 2 \\sqrt{3}, 1] \\cup [3, 2 + 2 \\sqrt{3})\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 3}<x - 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 3\\ge 0\n$$\n\n$$\nx\\in [-3, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 3<x^{2} - 2 x + 1\n$$\n\n$$\n- x^{2} + 3 x + 2<0\n$$\n\n$$\nx=\\frac{3}{2} - \\frac{\\sqrt{17}}{2} = \\frac{3}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 3 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\frac{3}{2} - \\frac{\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{3}{2} - \\frac{\\sqrt{17}}{2},\\frac{3}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{3}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(\\frac{3}{2} + \\frac{\\sqrt{17}}{2}, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x + 2|+|x - 5|\\le 10\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-2$ und $x=5$.\n\nAuf $x\\le -2$:\n\n$$\n|x + 2|+|x - 5|=3 - 2 x \\Rightarrow [- \\frac{7}{2}, -2]\n$$\n\nAuf $-2\\le x\\le 5$:\n\n$$\n|x + 2|+|x - 5|=7 \\Rightarrow [-2, 5]\n$$\n\nAuf $x\\ge 5$:\n\n$$\n|x + 2|+|x - 5|=2 x - 3 \\Rightarrow [5, \\frac{13}{2}]\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[- \\frac{7}{2}, \\frac{13}{2}]\n$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen in diesem Satz: Radikale Ungleichheit (Unterschied von zwei unterschiedlichen Quadratwurzeln, doppelte Quadrat ungleich) Absolutwertungleichheit (quadratisch innen), zusammengesetzte (doppelte) quadratische Ungleichheit."
+  },
+  {
+    "case_id": "MATH 6.61",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Compound & Special Inequalities — 24",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solution set of the inequality $\\sqrt{x^{2} - 4x - 5} \\le x + 2$ is $[\\frac{-9}{8}, -1] \\cup [5, \\infty)$.",
+      "The solution set of the inequality $|x - 3| - |x + 1| \\ge -2$ is $(-\\infty, 2)$.",
+      "The inequality ${3 < x^{2} + 2x - 1 < 11}$ has solution set $(-1 - \\sqrt{13}, -1 - \\sqrt{5}) \\cup (-1 + \\sqrt{5}, -1 + \\sqrt{13})$.",
+      "The solution set of the inequality $\\sqrt{x + 3} + \\sqrt{x + 8} \\le 5$ is $[-3, 1]$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{(x^{2} - 4 x) - 5}\\le x + 2\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx^{2} - 4 x - 5\\ge 0\n$$\n\n$$\nx\\in (-\\infty, -1] \\cup [5, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nx^{2} - 4 x - 5\\le x^{2} + 4 x + 4\n$$\n\n$$\n- 8 x - 9\\le 0\n$$\n\n$$\nx=- \\frac{9}{8}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- 8 x - 9$ |\n| --- | --- |\n| $(-\\infty,- \\frac{9}{8})$ | $+$ |\n| $(- \\frac{9}{8},\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[- \\frac{9}{8}, -1] \\cup [5, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → False\n\nStart from the absolute-value difference inequality.\n\n$$\n|x - 3|-|x + 1|\\ge -2\n$$\n\nThe expression changes formula at the kink points $x=-1$ and $x=3$.\n\nOn $x\\le -1$:\n\n$$\n|x - 3|-|x + 1|=4\n$$\n\nSolving $4\\ge -2$ on this piece gives\n\n$$\n(-\\infty, -1]\n$$\n\nOn $-1\\le x\\le 3$:\n\n$$\n|x - 3|-|x + 1|=2 - 2 x\n$$\n\nSolving $2 - 2 x\\ge -2$ on this piece gives\n\n$$\n[-1, 2]\n$$\n\nOn $x\\ge 3$:\n\n$$\n|x - 3|-|x + 1|=-4\n$$\n\nSolving $-4\\ge -2$ on this piece gives\n\n$$\n\\emptyset\n$$\n\nUnion of the admissible pieces:\n\n$$\n(-\\infty, 2]\n$$\n\nwhich does not match the claimed set $(-\\infty, 2)$.\n\nSo the statement is False.",
+      "**C.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n3<(x^{2} + 2 x) - 1<11\n$$\n\n**Left piece.**\n\n$$\n3<(x^{2} + 2 x) - 1\n$$\n\n$$\nx^{2} + 2 x - 4>0\n$$\n\n$$\nx=- \\sqrt{5} - 1\n$$\n\n$$\nx=-1 + \\sqrt{5}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} + 2 x - 4$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{5} - 1)$ | $+$ |\n| $(- \\sqrt{5} - 1,-1 + \\sqrt{5})$ | $-$ |\n| $(-1 + \\sqrt{5},\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-\\infty, - \\sqrt{5} - 1) \\cup (-1 + \\sqrt{5}, \\infty)\n$$\n\n**Right piece.**\n\n$$\n(x^{2} + 2 x) - 1<11\n$$\n\n$$\nx^{2} + 2 x - 12<0\n$$\n\n$$\nx=- \\sqrt{13} - 1\n$$\n\n$$\nx=-1 + \\sqrt{13}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} + 2 x - 12$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{13} - 1)$ | $+$ |\n| $(- \\sqrt{13} - 1,-1 + \\sqrt{13})$ | $-$ |\n| $(-1 + \\sqrt{13},\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(- \\sqrt{13} - 1, -1 + \\sqrt{13})\n$$\n\nIntersect both pieces.\n\n$$\n(- \\sqrt{13} - 1, - \\sqrt{5} - 1) \\cup (-1 + \\sqrt{5}, -1 + \\sqrt{13})\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the two-radical inequality.\n\n$$\n\\sqrt{x + 3}+\\sqrt{x + 8}\\le 5\n$$\n\nRequire both radicands to be nonnegative.\n\n$$\nx + 3\\ge 0\n$$\n\n$$\nx + 8\\ge 0\n$$\n\n$$\nx\\in [-3, \\infty)\n$$\n\nIsolate one radical (right side must stay nonnegative), then square twice.\n\n$$\n\\sqrt{x + 3}\\le 5-\\sqrt{x + 8}\n$$\n\n$$\n\\sqrt{x + 8}\\le 5\n$$\n\n$$\nx + 8\\le 25\n$$\n\nAfter the first squaring, isolate the remaining radical and square again.\n\n$$\n2\\cdot 5\\sqrt{x + 8}\\le 5^2+x + 8-x + 3\n$$\n\nIntersecting every domain and squared condition gives\n\n$$\n[-3, 1]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Evaluate each statement. Mark it TRUE or FALSE.\n\nIdentify the type (compound, absolute value, or radical), write the domain when a square root is present, split at the points where expressions change sign, and intersect every condition. Boundary points follow the strictness of the piece that produced them.\n\nTypes in this set: Radical (square root) inequality; Absolute value inequality (difference of two distances); Compound (double) quadratic inequality.",
+    "title_de_existing": "Zusammengesetzte und spezielle Ungleichungen — 24",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 4x - 5} \\le x + 2$ ist $[\\frac{-9}{8}, -1] \\cup [5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|x - 3| - |x + 1| \\ge -2$ ist $(-\\infty, 2)$.",
+      "Die Ungleichung ${3 < x^{2} + 2x - 1 < 11}$ hat die Lösungsmenge $(-1 - \\sqrt{13}, -1 - \\sqrt{5}) \\cup (-1 + \\sqrt{5}, -1 + \\sqrt{13})$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} + \\sqrt{x + 8} \\le 5$ ist $[-3, 1]$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{(x^{2} - 4 x) - 5}\\le x + 2\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx^{2} - 4 x - 5\\ge 0\n$$\n\n$$\nx\\in (-\\infty, -1] \\cup [5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx^{2} - 4 x - 5\\le x^{2} + 4 x + 4\n$$\n\n$$\n- 8 x - 9\\le 0\n$$\n\n$$\nx=- \\frac{9}{8}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- 8 x - 9$ |\n| --- | --- |\n| $(-\\infty,- \\frac{9}{8})$ | $+$ |\n| $(- \\frac{9}{8},\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[- \\frac{9}{8}, -1] \\cup [5, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nStarte von der Betragsdifferenz-Ungleichung.\n\n$$\n|x - 3|-|x + 1|\\ge -2\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-1$ und $x=3$.\n\nAuf $x\\le -1$:\n\n$$\n|x - 3|-|x + 1|=4 \\Rightarrow (-\\infty, -1]\n$$\n\nAuf $-1\\le x\\le 3$:\n\n$$\n|x - 3|-|x + 1|=2 - 2 x \\Rightarrow [-1, 2]\n$$\n\nAuf $x\\ge 3$:\n\n$$\n|x - 3|-|x + 1|=-4 \\Rightarrow \\emptyset\n$$\n\nVereinigung der Teilstücke:\n\n$$\n(-\\infty, 2]\n$$\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n3<(x^{2} + 2 x) - 1<11\n$$\n\n**Linkes Teilstück.**\n\n$$\n3<(x^{2} + 2 x) - 1,\\quad x^{2} + 2 x - 4>0,\\quad x=- \\sqrt{5} - 1 = -1 + \\sqrt{5}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} + 2 x - 4$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{5} - 1)$ | $+$ |\n| $(- \\sqrt{5} - 1,-1 + \\sqrt{5})$ | $-$ |\n| $(-1 + \\sqrt{5},\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, - \\sqrt{5} - 1) \\cup (-1 + \\sqrt{5}, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} + 2 x) - 1<11,\\quad x^{2} + 2 x - 12<0,\\quad x=- \\sqrt{13} - 1 = -1 + \\sqrt{13}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} + 2 x - 12$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{13} - 1)$ | $+$ |\n| $(- \\sqrt{13} - 1,-1 + \\sqrt{13})$ | $-$ |\n| $(-1 + \\sqrt{13},\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(- \\sqrt{13} - 1, -1 + \\sqrt{13})\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(- \\sqrt{13} - 1, - \\sqrt{5} - 1) \\cup (-1 + \\sqrt{5}, -1 + \\sqrt{13})\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeginnen wir mit der Zwei-Rennen-ibel\n\n$$\n\\sqrt{x + 3}+\\sqrt{x + 8}\\le 5\n$$\n\nUndlauf auf daß es auf zu auf : . .\n\n$$\nx + 3\\ge 0,\\quad x + 8\\ge 0,\\quad x\\in [-3, \\infty)\n$$\n\nIsolieren Sie ein Radikal (rechte Seite soll nicht negativ bleiben), dann zweimal der beidenerpunkt.\n\n$$\n\\sqrt{x + 3}\\le 5-\\sqrt{x + 8},\\quad \\sqrt{x + 8}\\le 5,\\quad x + 8\\le 25\n$$\n\nNach der ersten der Hinweisung wird sei dem Verbleibenden radikal und dem Verlassen des Verdächtigen derwecken wieder.\n\n$$\n2\\cdot 5\\sqrt{x + 8}\\le 5^2+x + 8-x + 3\n$$\n\nEine , jede Domainschle, die sich kreuzt, und eine Quadratur ergibt\n\n$$\n[-3, 1]\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nEinbe üßer eheh zugeordneten besseress liege üßer üpp."
+  },
+  {
+    "case_id": "MATH 6.65",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Store Membership Savings",
+    "context_en": "A store membership costs \\$40 per year. Members get a flat 20% discount on all purchases. Let s represent the total sticker price (non-member price) of a shopper's purchases over a year. The shopper wants to know when membership actually saves money — that is, when (membership fee + discounted total) is less than paying the sticker price with no membership.",
+    "statements_en": [
+      "If a shopper spends \\$250 (sticker price) in a year, membership saves them money.",
+      "If a shopper spends \\$150, membership saves them money.",
+      "At exactly \\$200 spent, membership costs the same as not joining.",
+      "The minimum amount a shopper must spend for membership to be worthwhile is more than \\$200.",
+      "The inequality that models “membership saves money” is correctly written as ${40 + 0.8s > s}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n0.8\\cdot250=200\n$$\n\n$$\n40+200=240\n$$\n\n$$\ns=250\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.8\\cdot150=120\n$$\n\n$$\n40+120=160\n$$\n\n$$\ns=150\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.8\\cdot200=160\n$$\n\n$$\n40+160=200\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n40<0.2s\n$$\n\n$$\ns>200\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n0.8 s + 40>s\n$$\n\n$$\n40 - 0.2 s>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{40 + 0.8s > s}\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A store membership costs \\$40 per year. Members get a flat 20% discount on all purchases. Let s represent the total sticker price (non-member price) of a shopper's purchases over a year. The shopper wants to know when membership actually saves money — that is, when (membership fee + discounted total) is less than paying the sticker price with no membership.",
+    "title_de_existing": "Ersparnis durch Ladenmitgliedschaft",
+    "context_de_existing": "Eine Ladenmitgliedschaft kostet \\$40 pro Jahr. Mitglieder erhalten einen pauschalen Rabatt von $20\\%$ auf alle Einkäufe. Es sei $s$ der gesamte Listenpreis (Nichtmitgliederpreis) der Einkäufe eines Käufers über ein Jahr. Der Käufer möchte wissen, wann die Mitgliedschaft tatsächlich Geld spart — also wann (Mitgliedsgebühr + rabattierter Gesamtbetrag) kleiner ist als der Listenpreis ohne Mitgliedschaft.",
+    "statements_de_existing": [
+      "Wenn ein Käufer in einem Jahr \\$250 (Listenpreis) ausgibt, spart ihm die Mitgliedschaft Geld.",
+      "Wenn ein Käufer \\$150 ausgibt, spart ihm die Mitgliedschaft Geld.",
+      "Bei genau \\$200 Ausgaben kostet die Mitgliedschaft dasselbe wie ohne Beitritt.",
+      "Der Mindestbetrag, den ein Käufer ausgeben muss, damit die Mitgliedschaft lohnt, liegt über \\$200.",
+      "Die Ungleichung, die „Mitgliedschaft spart Geld“ modelliert, lautet korrekt ${40 + 0{,}8s > s}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n0.8\\cdot250=200\n$$\n\n$$\n40+200=240\n$$\n\n$$\ns=250\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.8\\cdot150=120\n$$\n\n$$\n40+120=160\n$$\n\n$$\ns=150\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.8\\cdot200=160\n$$\n\n$$\n40+160=200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n40<0.2s\n$$\n\n$$\ns>200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n0.8 s + 40>s\n$$\n\n$$\n40 - 0.2 s>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{40 + 0.8s > s}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mitgliedschaft kostet \\$40; Mitglieder zahlen $0{,}8s$. Sparen heißt $40 + 0{,}8s < s$, also $40 < 0{,}2s$, also $s > 200$. Bei $s=200$ sind die Kosten gleich. Die Ungleichung ${40 + 0{,}8s > s}$ hat die falsche Richtung."
+  },
+  {
+    "case_id": "MATH 6.66",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Greenhouse Temperature Safety",
+    "context_en": "A greenhouse's automated cooling system monitors temperature in Fahrenheit $(F)$, converted to Celsius using $C = \\frac{5}{9}(F - 32)$. For plant safety, the Celsius reading must stay at or below 30°C.",
+    "statements_en": [
+      "A reading of 86°F keeps the greenhouse at exactly 30°C.",
+      "A reading of 90°F is within the safe range.",
+      "A reading of 80°F is within the safe range.",
+      "The maximum safe Fahrenheit reading is 86°F.",
+      "Since the safety limit is 30°C, the equivalent Fahrenheit safety limit is also 30°F."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nC=\\frac{5}{9}(86-32)\n$$\n\n$$\nC=30\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nC=\\frac{5}{9}(90-32)\n$$\n\n$$\nC\\approx 32.2\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nC=\\frac{5}{9}(80-32)\n$$\n\n$$\nC\\approx 26.7\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{5}{9}(F-32)\\le 30\n$$\n\n$$\nF-32\\le 54\n$$\n\n$$\nF\\le 86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n30=\\frac{5}{9}(F-32)\n$$\n\n$$\n54=F-32\n$$\n\n$$\nF=86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A greenhouse's automated cooling system monitors temperature in Fahrenheit $(F)$, converted to Celsius using $C = \\frac{5}{9}(F - 32)$. For plant safety, the Celsius reading must stay at or below 30°C.",
+    "title_de_existing": "Sicherheitstemperatur im Gewächshaus",
+    "context_de_existing": "Die automatische Kühlung eines Gewächshauses überwacht die Temperatur in Fahrenheit $(F)$, umgerechnet in Celsius mit $C = \\frac{5}{9}(F - 32)$. Zur Pflanzensicherheit muss der Celsiuswert bei höchstens $30^{\\circ}\\mathrm{C}$ bleiben.",
+    "statements_de_existing": [
+      "Ein Messwert von $86^{\\circ}\\mathrm{F}$ hält das Gewächshaus genau bei $30^{\\circ}\\mathrm{C}$.",
+      "Ein Messwert von $90^{\\circ}\\mathrm{F}$ liegt im sicheren Bereich.",
+      "Ein Messwert von $80^{\\circ}\\mathrm{F}$ liegt im sicheren Bereich.",
+      "Der maximal sichere Fahrenheit-Messwert beträgt $86^{\\circ}\\mathrm{F}$.",
+      "Weil die Sicherheitsgrenze $30^{\\circ}\\mathrm{C}$ beträgt, ist die äquivalente Fahrenheit-Grenze ebenfalls $30^{\\circ}\\mathrm{F}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(86-32)\n$$\n\n$$\nC=30\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(90-32)\n$$\n\n$$\nC\\approx 32.2\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(80-32)\n$$\n\n$$\nC\\approx 26.7\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{5}{9}(F-32)\\le 30\n$$\n\n$$\nF-32\\le 54\n$$\n\n$$\nF\\le 86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n30=\\frac{5}{9}(F-32)\n$$\n\n$$\n54=F-32\n$$\n\n$$\nF=86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Aus $C=\\frac{5}{9}(F-32)\\le 30$ folgt $F-32\\le 54$, also $F\\le 86$. Celsius und Fahrenheit sind nicht zahlenmäßig austauschbar."
+  },
+  {
+    "case_id": "MATH 6.67",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Paying Off a Loan",
+    "context_en": "Jordan borrowed \\$2,400 with no interest. He already made an initial payment of \\$300, and now plans to pay \\$150 per month. Let m represent the number of additional monthly payments he makes. He wants to know when the remaining balance reaches \\$0 or less (fully paid off).",
+    "statements_en": [
+      "After 14 additional monthly payments, the loan is fully paid off.",
+      "After 13 additional monthly payments, the loan is fully paid off.",
+      "After 15 additional monthly payments, Jordan will have overpaid (the balance is negative).",
+      "The minimum number of additional months needed is 14.",
+      "Solving the inequality 2100 - 150m $\\le$ 0 by dividing both sides by -150 gives m $\\le$ 14."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm=14\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n150\\cdot13=1950\n$$\n\n$$\n2100-1950=150\n$$\n\n$$\n150\\le 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n150\\cdot15=2250\n$$\n\n$$\n2100-2250=-150\n$$\n\n$$\n2250\\le 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm\\le 14\n$$\n\n$$\n\\le\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Jordan borrowed \\$2,400 with no interest. He already made an initial payment of \\$300, and now plans to pay \\$150 per month. Let m represent the number of additional monthly payments he makes. He wants to know when the remaining balance reaches \\$0 or less (fully paid off).",
+    "title_de_existing": "Tilgung eines Darlehens",
+    "context_de_existing": "Jordan hat \\$2{,}400 zinsfrei geliehen. Er hat bereits eine Anfangszahlung von \\$300 geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei $m$ die Anzahl zusätzlicher Monatszahlungen. Er möchte wissen, wann der Restsaldo \\$0 oder weniger erreicht (vollständig getilgt).",
+    "statements_de_existing": [
+      "Nach $14$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
+      "Nach $13$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
+      "Nach $15$ zusätzlichen Monatszahlungen hat Jordan überzahlt (der Saldo ist negativ).",
+      "Die minimale Anzahl zusätzlicher Monate beträgt $14$.",
+      "Löst man die Ungleichung $2100 - 150m \\le 0$ durch Division beider Seiten durch $-150$, so erhält man $m \\le 14$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm=14\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n150\\cdot13=1950\n$$\n\n$$\n2100-1950=150\n$$\n\n$$\n150\\le 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n150\\cdot15=2250\n$$\n\n$$\n2100-2250=-150\n$$\n\n$$\n2250\\le 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm\\le 14\n$$\n\n$$\n\\le\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Restschuld $2100 - 150m \\le 0$ liefert $m \\ge 14$. Division durch eine negative Zahl dreht das Ungleichheitszeichen um; $m \\le 14$ wäre falsch."
+  },
+  {
+    "case_id": "MATH 6.69",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Basketball Scoring Average",
+    "context_en": "A basketball player wants a season average of at least 20 points per game across her first 5 games. Her scores in the first 4 games were 18, 22, 19, and 17 points. Let x represent her score in the 5th game.",
+    "statements_en": [
+      "Scoring 24 points in the 5th game meets the average goal exactly.",
+      "Scoring 23 points in the 5th game meets the average goal.",
+      "The minimum score she needs in the 5th game is 20 points.",
+      "Scoring 30 points in the 5th game would raise her average above 20.",
+      "Clearing the fraction in $\\dfrac{18+22+19+17+x}{5} \\ge 20$ gives ${76 + x \\ge 100}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{18+22+19+17+x}{5}\\ge 20\n$$\n\n$$\n18+22+19+17+x\\ge 100\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\n$$\nx=24\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{76+23}{5}=19.8\n$$\n\n$$\n19.8\\le 20\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{76+x}{5}\\ge 20\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{76+30}{5}=21.2\n$$\n\n$$\n21.2\\le 20\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x + (17 + (19 + (18 + 22)))}{5}\\ge 20\n$$\n\n$$\n\\frac{x + (17 + (19 + (18 + 22)))}{5}-20\\ge 0\n$$\n\n$$\n\\frac{x}{5} - \\frac{24}{5}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n\\frac{x}{5} - \\frac{24}{5}=0\\Rightarrow x=24\n$$\n\nThere is no excluded pole.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 24}{5}$ |\n| --- | --- |\n| $(-\\infty,24)$ | $-$ |\n| $(24,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n[24, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A basketball player wants a season average of at least 20 points per game across her first 5 games. Her scores in the first 4 games were 18, 22, 19, and 17 points. Let x represent her score in the 5th game.",
+    "title_de_existing": "Basketball-Punktedurchschnitt",
+    "context_de_existing": "Eine Basketballspielerin möchte über ihre ersten $5$ Spiele einen Saisondurchschnitt von mindestens $20$ Punkten pro Spiel. Ihre Punktzahlen in den ersten $4$ Spielen waren $18$, $22$, $19$ und $17$. Es sei $x$ ihre Punktzahl im $5$. Spiel.",
+    "statements_de_existing": [
+      "Mit 24 Punkten im 5. Spiel erreicht sie den Durchschnittszielwert genau.",
+      "Mit 23 Punkten im 5. Spiel erreicht sie den Durchschnittszielwert.",
+      "Die Mindestpunktzahl, die sie im 5. Spiel braucht, beträgt 20 Punkte.",
+      "Mit 30 Punkten im 5. Spiel läge ihr Durchschnitt über 20.",
+      "Das Freimachen des Bruchs in $\\dfrac{18+22+19+17+x}{5} \\ge 20$ liefert ${76 + x \\ge 100}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{18+22+19+17+x}{5}\\ge 20\n$$\n\n$$\n18+22+19+17+x\\ge 100\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\n$$\nx=24\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{76+23}{5}=19.8\n$$\n\n$$\n19.8\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{76+x}{5}\\ge 20\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{76+30}{5}=21.2\n$$\n\n$$\n21.2\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nStarte von der behaupteten Ungleichung und multipliziere mit dem positiven Nenner $5$:\n\n$$\n\\dfrac{18+22+19+17+x}{5} \\ge 20\n$$\n\n$$\n18+22+19+17+x \\ge 100\n$$\n\n$$\n76 + x \\ge 100\n$$\n\nDas ist genau die freigemachte Form aus der Behauptung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $\\dfrac{76+x}{5}\\ge 20$ folgt $76+x\\ge 100$, also $x\\ge 24$. Das Minimum ist $24$, nicht $20$."
+  },
+  {
+    "case_id": "MATH 6.70",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Manufacturing Quality Control",
+    "context_en": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were ${340g}$, ${355g}$, ${345g}$, ${360g}$, and ${338g}$. Let x represent the weight of the 6th box.",
+    "statements_en": [
+      "A 6th box weighing ${362g}$ meets the regulation exactly.",
+      "A 6th box weighing ${360g}$ meets the regulation.",
+      "The minimum weight needed for the 6th box is ${350g}$.",
+      "A 6th box weighing ${400g}$ results in a batch average above ${350g}$.",
+      "Multiplying both sides of $\\dfrac{1738+x}{6} \\ge 350$ by 6 gives ${1738 + x \\ge 2100}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1738+360=2098\n$$\n\n$$\n\\frac{2098}{6}\n$$\n\n$$\n\\approx 349.67\n$$\n\n$$\n349.67<350\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1738+400=2138\n$$\n\n$$\n\\frac{2138}{6}\n$$\n\n$$\n\\approx 356.33\n$$\n\n$$\n356.33>350\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x + 1738}{6}\\ge 350\n$$\n\n$$\n\\frac{x + 1738}{6}-350\\ge 0\n$$\n\n$$\n\\frac{x}{6} - \\frac{181}{3}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n\\frac{x}{6} - \\frac{181}{3}=0\\Rightarrow x=362\n$$\n\nThere is no excluded pole.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 362}{6}$ |\n| --- | --- |\n| $(-\\infty,362)$ | $-$ |\n| $(362,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n[362, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were ${340g}$, ${355g}$, ${345g}$, ${360g}$, and ${338g}$. Let x represent the weight of the 6th box.",
+    "title_de_existing": "Fertigungsqualität – Durchschnittsgewicht",
+    "context_de_existing": "Eine Getreidefabrik muss eine Charge von $6$ Packungen mit einem Durchschnittsgewicht von mindestens $350$ Gramm abpacken, um Vorschriften zu erfüllen. Die Gewichte der ersten $5$ Packungen waren ${340g}$, ${355g}$, ${345g}$, ${360g}$ und ${338g}$. Es sei $x$ das Gewicht der $6$. Packung.",
+    "statements_de_existing": [
+      "Eine $6$. Packung mit ${362g}$ erfüllt die Vorschrift genau.",
+      "Eine $6$. Packung mit ${360g}$ erfüllt die Vorschrift.",
+      "Das Mindestgewicht für die $6$. Packung beträgt ${350g}$.",
+      "Eine $6$. Packung mit ${400g}$ ergibt einen Chargendurchschnitt über ${350g}$.",
+      "Multipliziert man beide Seiten von $\\dfrac{1738+x}{6} \\ge 350$ mit $6$, so erhält man ${1738 + x \\ge 2100}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1738+360=2098\n$$\n\n$$\n\\frac{2098}{6}\n$$\n\n$$\n\\approx 349.67\n$$\n\n$$\n349.67<350\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1738+400=2138\n$$\n\n$$\n\\frac{2138}{6}\n$$\n\n$$\n\\approx 356.33\n$$\n\n$$\n356.33>350\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nMultipliziere beide Seiten der Ungleichung mit dem positiven Faktor $6$:\n\n$$\n\\dfrac{1738+x}{6} \\ge 350\n$$\n\n$$\n1738 + x \\ge 2100\n$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Summe der ersten fünf: $1738$. Aus $\\dfrac{1738+x}{6}\\ge 350$ folgt $x\\ge 362$. Das Minimum ist $362$ g, nicht $350$ g."
+  },
+  {
+    "case_id": "MATH 6.71",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Rideshare Surge Pricing",
+    "context_en": "A rideshare app normally charges a \\$2.50 base fee plus \\$1.75 per mile. During surge pricing, the entire fare (base fee plus mileage charge) is multiplied by 1.5. Let m represent the number of miles. A rider wants a surge-priced trip to cost no more than \\$30.",
+    "statements_en": [
+      "A 10-mile trip during surge pricing costs exactly \\$30.",
+      "A 12-mile trip during surge pricing stays within the \\$30 limit.",
+      "The maximum number of miles that keeps a surge-priced trip at or under \\$30 is 10 miles.",
+      "Distributing the 1.5 multiplier across the parentheses first gives 3.75 + 2.625m $\\le$ 30.",
+      "Multiplying only the \\$2.50 base fee by 1.5 (and leaving the \\$1.75 per-mile rate unmultiplied) also produces the correct maximum number of miles."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\n$$\nm=10\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.5\\bigl(2.5+1.75\\cdot 12\\bigr)\n$$\n\n$$\n1.75\\cdot 12=21\n$$\n\n$$\n2.5+21=23.5\n$$\n\n$$\n1.5\\cdot 23.5=35.25\n$$\n\n$$\n35.25>30\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n\\le\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n3.75+1.75m\\le 30\n$$\n\n$$\n1.75m\\le 26.25\n$$\n\n$$\nm\\le 15\n$$\n\n$$\nm\\le 10\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A rideshare app normally charges a \\$2.50 base fee plus \\$1.75 per mile. During surge pricing, the entire fare (base fee plus mileage charge) is multiplied by 1.5. Let m represent the number of miles. A rider wants a surge-priced trip to cost no more than \\$30.",
+    "title_de_existing": "Fahrdienst mit Surge-Preis",
+    "context_de_existing": "Eine Fahrdienst-App berechnet normalerweise \\$2{,}50 Grundgebühr plus \\$1{,}75 pro Meile. Während der Surge-Preisbildung wird der gesamte Fahrpreis (Grundgebühr plus Kilometerpreis) mit $1{,}5$ multipliziert. Es sei $m$ die Anzahl der Meilen. Ein Fahrgast möchte, dass eine Surge-Fahrt höchstens \\$30 kostet.",
+    "statements_de_existing": [
+      "Eine $10$-Meilen-Fahrt während der Surge-Preisbildung kostet genau \\$30.",
+      "Eine $12$-Meilen-Fahrt während der Surge-Preisbildung bleibt innerhalb der Grenze von \\$30.",
+      "Die maximale Meilenzahl, die eine Surge-Fahrt bei höchstens \\$30 hält, beträgt $10$ Meilen.",
+      "Das Ausmultiplizieren des Faktors $1{,}5$ über die Klammern liefert zuerst $3{,}75 + 2{,}625m \\le 30$.",
+      "Nur die Grundgebühr von \\$2{,}50 mit $1{,}5$ zu multiplizieren (und den Meilenpreis \\$1{,}75 unmultipliziert zu lassen) liefert ebenfalls die korrekte maximale Meilenzahl."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\n$$\nm=10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1.5\\bigl(2.5+1.75\\cdot 12\\bigr)\n$$\n\n$$\n1.75\\cdot 12=21\n$$\n\n$$\n2.5+21=23.5\n$$\n\n$$\n1.5\\cdot 23.5=35.25\n$$\n\n$$\n35.25>30\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n\\le\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n3.75+1.75m\\le 30\n$$\n\n$$\n1.75m\\le 26.25\n$$\n\n$$\nm\\le 15\n$$\n\n$$\nm\\le 10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Surge-Preis: $1{,}5(2{,}50 + 1{,}75m)\\le 30$. Ausmultiplizieren: $3{,}75 + 2{,}625m \\le 30$, also $m\\le 10$. Beide Tarifteile müssen multipliziert werden."
+  },
+  {
+    "case_id": "MATH 6.73",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Average Cycling Speed",
+    "context_en": "A cyclist wants her average speed to be at least 15 mph over a 2-hour trip, where she rides at a constant speed during each 1-hour segment. In the first hour, she rode at 12 mph. Let x represent her speed, in mph, during the second hour.",
+    "statements_en": [
+      "Riding at 18 mph in the second hour meets the average goal exactly.",
+      "Riding at 17 mph in the second hour meets the average goal.",
+      "The minimum speed she needs in the second hour is 15 mph.",
+      "Riding at 20 mph in the second hour results in an average above 15 mph.",
+      "The inequality $\\dfrac{12+x}{2} \\ge 15$ correctly models the average-speed requirement."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\n$$\nx=18\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n14.5\\le 15\n$$\n\n$$\n\\frac{12+17}{2}=14.5\n$$\n\n$$\n14.5\\le 15\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n16\\le 15\n$$\n\n$$\n\\frac{12+20}{2}=16\n$$\n\n$$\n16\\le 15\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x + 12}{2}\\ge 15\n$$\n\n$$\n\\frac{x + 12}{2}-15\\ge 0\n$$\n\n$$\n\\frac{x}{2} - 9\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n\\frac{x}{2} - 9=0\\Rightarrow x=18\n$$\n\nThere is no excluded pole.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 18}{2}$ |\n| --- | --- |\n| $(-\\infty,18)$ | $-$ |\n| $(18,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n[18, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A cyclist wants her average speed to be at least 15 mph over a 2-hour trip, where she rides at a constant speed during each 1-hour segment. In the first hour, she rode at 12 mph. Let x represent her speed, in mph, during the second hour.",
+    "title_de_existing": "Durchschnittliche Radgeschwindigkeit",
+    "context_de_existing": "Eine Radfahrerin möchte über eine $2$-Stunden-Tour eine Durchschnittsgeschwindigkeit von mindestens $15$ mph erreichen, wobei sie in jeder $1$-Stunden-Etappe mit konstanter Geschwindigkeit fährt. In der ersten Stunde fuhr sie $12$ mph. Es sei $x$ ihre Geschwindigkeit in mph in der zweiten Stunde.",
+    "statements_de_existing": [
+      "Mit $18$ mph in der zweiten Stunde erreicht sie das Durchschnittsziel genau.",
+      "Mit $17$ mph in der zweiten Stunde erreicht sie das Durchschnittsziel.",
+      "Die minimale Geschwindigkeit, die sie in der zweiten Stunde braucht, beträgt $15$ mph.",
+      "Mit $20$ mph in der zweiten Stunde liegt der Durchschnitt über $15$ mph.",
+      "Die Ungleichung $\\dfrac{12+x}{2} \\ge 15$ modelliert die Durchschnittsgeschwindigkeits-Anforderung korrekt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\n$$\nx=18\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n14.5\\le 15\n$$\n\n$$\n\\frac{12+17}{2}=14.5\n$$\n\n$$\n14.5\\le 15\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n16\\le 15\n$$\n\n$$\n\\frac{12+20}{2}=16\n$$\n\n$$\n16\\le 15\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDer Durchschnitt über zwei gleich lange Stundenabschnitte ist das arithmetische Mittel der beiden Geschwindigkeiten:\n\n$$\n\\dfrac{12+x}{2} \\ge 15\n$$\n\nDas ist genau das korrekte Modell der Anforderung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $\\dfrac{12+x}{2}\\ge 15$ folgt $x\\ge 18$. Das Minimum ist $18$ mph, nicht $15$ mph."
+  },
+  {
+    "case_id": "MATH 6.77",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Simple Interest Savings",
+    "context_en": "Emma invests \\$2,000 in an account earning 4% simple annual interest, so the balance after t years is ${2000 + 80t}$. She wants the balance to exceed \\$2,600.",
+    "statements_en": [
+      "After 7.5 years, the balance is exactly \\$2,600.",
+      "After 7 full years, the balance exceeds \\$2,600.",
+      "After 8 full years, the balance exceeds \\$2,600.",
+      "Since interest is credited once per full year, the minimum number of full years needed for the balance to exceed \\$2,600 is 8 years.",
+      "The inequality modeling this situation is correctly written as ${2000 + 80t > 2600}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n80\\cdot7.5=600\n$$\n\n$$\n2000+600=2600\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n80\\cdot7=560\n$$\n\n$$\n2000+560=2560\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n80\\cdot8=640\n$$\n\n$$\n2000+640=2640\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n2000+80t>2600\n$$\n\n$$\n80t>600\n$$\n\n$$\nt>7.5\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n80 t + 2000>2600\n$$\n\n$$\n80 t - 600>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{2000 + 80t > 2600}\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Emma invests \\$2,000 in an account earning 4% simple annual interest, so the balance after t years is ${2000 + 80t}$. She wants the balance to exceed \\$2,600.",
+    "title_de_existing": "Einfache Zinsen auf dem Sparkonto",
+    "context_de_existing": "Emma legt \\$2{,}000 auf ein Konto mit $4\\%$ einfachem Jahreszins an, sodass der Saldo nach $t$ Jahren ${2000 + 80t}$ beträgt. Sie möchte, dass der Saldo \\$2{,}600 übersteigt.",
+    "statements_de_existing": [
+      "Nach $7{,}5$ Jahren beträgt der Saldo genau \\$2{,}600.",
+      "Nach $7$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
+      "Nach $8$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
+      "Weil Zinsen einmal pro vollem Jahr gutgeschrieben werden, beträgt die minimale Anzahl voller Jahre, damit der Saldo \\$2{,}600 übersteigt, $8$ Jahre.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${2000 + 80t > 2600}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot7.5=600\n$$\n\n$$\n2000+600=2600\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot7=560\n$$\n\n$$\n2000+560=2560\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot8=640\n$$\n\n$$\n2000+640=2640\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2000+80t>2600\n$$\n\n$$\n80t>600\n$$\n\n$$\nt>7.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n80 t + 2000>2600\n$$\n\n$$\n80 t - 600>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{2000 + 80t > 2600}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $2000 + 80t > 2600$ folgt $t > 7{,}5$. Bei jährlicher Gutschrift sind $8$ volle Jahre nötig."
+  },
+  {
+    "case_id": "MATH 6.78",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Sales Tax Budget",
+    "context_en": "A shopper's state charges 8% sales tax on top of the listed price. She has \\$54 total to spend, including tax. Let p represent the pre-tax listed price of the items she buys.",
+    "statements_en": [
+      "A pre-tax total of \\$50 keeps her within budget after tax.",
+      "A pre-tax total of \\$52 keeps her within budget after tax.",
+      "The maximum pre-tax amount she can spend is \\$50.",
+      "If the tax rate were 10% instead of 8%, the maximum pre-tax amount she could spend would be lower than \\$50.",
+      "The inequality modeling this situation is correctly written as $p + 0.08 \\le 54$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n54\\le 55\n$$\n\n$$\n1.08\\cdot 50 =54\n$$\n\n$$\n54\\le 55\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n56.16>55\n$$\n\n$$\n1.08\\cdot 52 =56.16\n$$\n\n$$\n56.16>55\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.08p\\le 54\n$$\n\n$$\np\\le 50\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.10p\\le 54\n$$\n\n$$\np\\le 49.09\\ldots\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\np + 0.08\\le 54\n$$\n\n$$\np - 53.92\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\np + 0.08 \\le 54\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A shopper's state charges 8% sales tax on top of the listed price. She has \\$54 total to spend, including tax. Let p represent the pre-tax listed price of the items she buys.",
+    "title_de_existing": "Umsatzsteuer und Budget",
+    "context_de_existing": "Der Bundesstaat einer Käuferin erhebt $8\\%$ Umsatzsteuer auf den Listenpreis. Sie hat insgesamt \\$54 zum Ausgeben, einschließlich Steuer. Es sei $p$ der Vorsteuer-Listenpreis der gekauften Artikel.",
+    "statements_de_existing": [
+      "Ein Vorsteuerbetrag von \\$50 hält sie nach Steuer im Budget.",
+      "Ein Vorsteuerbetrag von \\$52 hält sie nach Steuer im Budget.",
+      "Der maximale Vorsteuerbetrag, den sie ausgeben kann, beträgt \\$50.",
+      "Wäre der Steuersatz $10\\%$ statt $8\\%$, läge der maximale Vorsteuerbetrag unter \\$50.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt $p + 0{,}08 \\le 54$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n54\\le 55\n$$\n\n$$\n1.08\\cdot 50 =54\n$$\n\n$$\n54\\le 55\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n56.16>55\n$$\n\n$$\n1.08\\cdot 52 =56.16\n$$\n\n$$\n56.16>55\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.08p\\le 54\n$$\n\n$$\np\\le 50\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.10p\\le 54\n$$\n\n$$\np\\le 49.09\\ldots\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\np + 0.08\\le 54\n$$\n\n$$\np - 53.92\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\np + 0.08 \\le 54\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Korrekt ist $1{,}08p \\le 54$, also $p \\le 50$. Die Form $p + 0{,}08 \\le 54$ addiert fälschlich $0{,}08$ statt $0{,}08p$."
+  },
+  {
+    "case_id": "MATH 6.79",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Overtime Pay",
+    "context_en": "An employee earns \\$18/hour for the first 40 hours worked in a week, and time-and-a-half (\\$27/hour) for each hour beyond 40. Let h represent total hours worked in a week $(h > 40)$. She wants her weekly pay to be at least \\$850.",
+    "statements_en": [
+      "Working 45 hours results in pay of at least \\$850.",
+      "Working 44 hours results in pay of at least \\$850.",
+      "The minimum number of whole hours needed to earn at least \\$850 is 44.",
+      "Working 50 hours results in pay of more than \\$900.",
+      "Calculating pay for 45 hours as simply 18 $\\times$ 45 (ignoring the higher overtime rate for hours beyond 40) gives the same total as the correct formula."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n(h > 40)\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\n$$\n(h > 40)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n(h > 40)\n$$\n\n$$\n44-40=4\n$$\n\n$$\n27\\cdot4=108\n$$\n\n$$\n720+108=828\n$$\n\n$$\n(h > 40)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\n27h-360\\ge 850\n$$\n\n$$\n27h\\ge 1210\n$$\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\nh>40\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n(h > 40)\n$$\n\n$$\n50-40=10\n$$\n\n$$\n27\\cdot10=270\n$$\n\n$$\n720+270=990\n$$\n\n$$\n(h > 40)\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n18\\cdot45=810\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "An employee earns \\$18/hour for the first 40 hours worked in a week, and time-and-a-half (\\$27/hour) for each hour beyond 40. Let h represent total hours worked in a week $(h > 40)$. She wants her weekly pay to be at least \\$850.",
+    "title_de_existing": "Überstundenlohn",
+    "context_de_existing": "Eine Angestellte verdient \\$18/Stunde für die ersten $40$ Stunden einer Woche und anderthalb (\\$27/Stunde) für jede Stunde darüber hinaus. Es sei $h$ die Gesamtstundenzahl in einer Woche $(h > 40)$. Sie möchte einen Wochenlohn von mindestens \\$850.",
+    "statements_de_existing": [
+      "Bei $45$ Stunden beträgt der Lohn mindestens \\$850.",
+      "Bei $44$ Stunden beträgt der Lohn mindestens \\$850.",
+      "Die minimale Anzahl ganzer Stunden für mindestens \\$850 beträgt $44$.",
+      "Bei $50$ Stunden beträgt der Lohn mehr als \\$900.",
+      "Den Lohn für $45$ Stunden einfach als $18 \\times 45$ zu berechnen (ohne den höheren Überstundensatz für Stunden über $40$) liefert denselben Gesamtbetrag wie die korrekte Formel."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n44-40=4\n$$\n\n$$\n27\\cdot4=108\n$$\n\n$$\n720+108=828\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\n27h-360\\ge 850\n$$\n\n$$\n27h\\ge 1210\n$$\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\nh>40\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n50-40=10\n$$\n\n$$\n27\\cdot10=270\n$$\n\n$$\n720+270=990\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n18\\cdot45=810\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Lohn: $40\\cdot 18 + (h-40)\\cdot 27 = 720 + 27(h-40)$. Aus $\\ge 850$ folgt $h\\ge 44{,}\\overline{8}$, also mindestens $45$ ganze Stunden."
+  },
+  {
+    "case_id": "MATH 6.81",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Currency Conversion Budget",
+    "context_en": "A traveler converts euros to US dollars at a rate of \\$1.08 per €1, with a flat \\$15 conversion fee subtracted after the exchange. Let E represent the number of euros converted (a whole number). She wants to receive at least \\$500 USD.",
+    "statements_en": [
+      "Converting 477 euros results in at least \\$500 USD.",
+      "Converting 476 euros results in at least \\$500 USD.",
+      "The minimum whole number of euros needed is 476.",
+      "Converting 500 euros results in more than \\$520 USD.",
+      "The inequality modeling this situation is correctly written as ${1.08E - 15 \\ge 500}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n500.16\\le 500\n$$\n\n$$\n1.08(477)-15=500.16\n$$\n\n$$\n500.16\\le 500\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n499.08\\le 500\n$$\n\n$$\n1.08(476)-15=499.08\n$$\n\n$$\n499.08\\le 500\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nE\\ge 476.85\\ldots\n$$\n\n$$\n1.08E-15\\ge 500\n$$\n\n$$\n1.08E\\ge 515\n$$\n\n$$\nE\\ge 476.85\\ldots\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n525\\le 500\n$$\n\n$$\n1.08(500)-15=525\n$$\n\n$$\n525\\le 500\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n1.08 E - 15\\ge 500\n$$\n\n$$\n1.08 E - 515\\ge 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{1.08E - 15 \\ge 500}\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A traveler converts euros to US dollars at a rate of \\$1.08 per €1, with a flat \\$15 conversion fee subtracted after the exchange. Let E represent the number of euros converted (a whole number). She wants to receive at least \\$500 USD.",
+    "title_de_existing": "Währungsumtausch und Budget",
+    "context_de_existing": "Eine Reisende tauscht Euro in US-Dollar zum Kurs \\$1{,}08 je €$1$ um, mit einer pauschalen Umtauschgebühr von \\$15, die nach dem Wechsel abgezogen wird. Es sei $E$ die Anzahl umgetauschter Euro (eine ganze Zahl). Sie möchte mindestens \\$500 USD erhalten.",
+    "statements_de_existing": [
+      "Der Umtausch von $477$ Euro ergibt mindestens \\$500 USD.",
+      "Der Umtausch von $476$ Euro ergibt mindestens \\$500 USD.",
+      "Die minimale ganze Anzahl benötigter Euro beträgt $476$.",
+      "Der Umtausch von $500$ Euro ergibt mehr als \\$520 USD.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${1{,}08E - 15 \\ge 500}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n500.16\\le 500\n$$\n\n$$\n1.08(477)-15=500.16\n$$\n\n$$\n500.16\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n499.08\\le 500\n$$\n\n$$\n1.08(476)-15=499.08\n$$\n\n$$\n499.08\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nE\\ge 476.85\\ldots\n$$\n\n$$\n1.08E-15\\ge 500\n$$\n\n$$\n1.08E\\ge 515\n$$\n\n$$\nE\\ge 476.85\\ldots\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n525\\le 500\n$$\n\n$$\n1.08(500)-15=525\n$$\n\n$$\n525\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.08 E - 15\\ge 500\n$$\n\n$$\n1.08 E - 515\\ge 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{1.08E - 15 \\ge 500}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $1{,}08E - 15 \\ge 500$ folgt $E \\ge \\dfrac{515}{1{,}08}\\approx 476{,}85$, also mindestens $477$ ganze Euro."
+  }
+]

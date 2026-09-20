@@ -1,0 +1,118 @@
+CASE MATH 11.83
+ANSWER [true, true, true, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Daily operating cost is the upward-opening parabola
+
+$$C(Q)=Q^{2}-10Q+40,\qquad Q\ge 0.$$
+
+Differentiate twice:
+
+$$C'(Q)=2Q-10,\qquad C''(Q)=2>0.$$
+
+The only flat-slope fleet is $Q=5$. Because $C''>0$, five vans is a local cost *trough* (not a peak). Evaluating the level gives
+
+$$C(5)=25-50+40=15,$$
+
+and since the parabola opens upward with its vertex already inside $Q\ge 0$, that local trough is also the global cost minimum on the domain. Flat slope alone never decides peak versus trough — the bend does.
+
+=== A ===
+**A.** → True
+
+To find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:
+
+$$
+C'(Q) = 2Q-10 = 0
+$$
+
+$$
+2Q = 10
+$$
+
+$$
+Q = 5.
+$$
+
+This linear equation has exactly one root, and that root lies in $Q\ge 0$. So the only flat-slope fleet size is five vans.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Classify the critical fleet with the second derivative. Differentiating the slope once more gives a constant bend:
+
+$$
+C''(Q) = 2>0
+$$
+
+everywhere, including at $Q=5$. A positive second derivative means the cost curve bends upward through the flat spot, which is the second-derivative test for a local minimum. Therefore five vans is a local cost trough.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+Evaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:
+
+$$
+C(5) = 5^{2}-10\cdot 5+40
+$$
+
+$$
+C(5) = 25-50+40
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15 = 15
+$$
+
+$$
+C(5) = 15.
+$$
+
+The trough cost is $15$ (hundreds of euros), matching the claim.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
+
+A flat slope alone does not decide peak versus trough — that is the classic trap. Here the bend is upward:
+
+$$
+C''(5) = 2>0,
+$$
+
+so five vans is a local *minimum* of cost, not a local maximum. Claiming a local cost peak reverses the correct second-derivative label.
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+On $Q\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally.
+
+$$
+C'' = 2>0
+$$
+
+$$
+Q = 5\ge 0
+$$
+
+So the statement is True.
+

@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.001",
+    "title": "Short Balance Sheet Extract 1",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=173\nTotal liabilities=147\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 200 |\n| Inventory | 65 |\n| Cash and cash equivalents | 55 |\n| Total assets | **320** |\n| **EQUITY** | |\n| Share capital | 150 |\n| Retained earnings | 23 |\n| Total equity | **173** |\n| **LIABILITIES** | |\n| Long-term bank loan | 115 |\n| Trade payables | 32 |\n| Total liabilities | **147** |\n| Total equity and liabilities | **320** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.",
+      "The current ratio exceeds 1.27.",
+      "Inventory of €65 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €320 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Depreciation is non-cash; the cash was usually paid when the asset was bought.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets gather the short-term asset lines:\n\nInventory (65) + Cash and cash equivalents (55)\n= 120\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 32\n\nCurrent ratio = 120 / 32 ≈ 3.75\n\nThe claim says the ratio exceeds 1.27. We have about 3.75, which matches that comparison.\n\nThe statement is true.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.002",
+    "title": "Financial Accounting and External Users",
+    "context": "Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Owners sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Financial accounting statements reach external users such as owners on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal users such as managers can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.003",
+    "title": "Short Depreciation Extract 3",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=12667\nAsset B=3800\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €76,000 purchase price, 6-year useful life, no residual value |\n| Asset B | €23,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
+      "Residual value reduces the amount of Asset B's cost that is spread as depreciation.",
+      "Asset A will be fully written down to nil residual value at the end of its useful life.",
+      "Because the extract above (the combined asset cost of €99,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €99,000 thousand) must follow the identical statutory format shown here."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Land is normally excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Depreciable amount = cost minus residual value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset A has no residual value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.004",
+    "title": "Management Accounting for Internal Users",
+    "context": "Review how owners, lenders, tax authorities and investors are generally classified as external users of accounting information. Evaluate the following economic assertions:",
+    "statements": [
+      "Management accounting reports prepared for managers of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Lenders of a manufacturer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Employees of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Managers of a manufacturer work inside the business and can be given management accounting reports designed around their own questions."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Lenders sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as lenders on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Internal users such as employees can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Managers are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.005",
+    "title": "Owners Weighing Return Against Risk",
+    "context": "Analyze why managers and employees are generally classified as internal users of accounting information. Evaluate the following economic assertions:",
+    "statements": [
+      "Management accounting reports prepared for employees of a manufacturer must use exactly the same statutory format as the published financial statements.",
+      "Managers of a manufacturer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a manufacturer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Employees of a manufacturer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Owners of a manufacturer look at accounting information mainly to judge the return earned on the capital they have invested."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Management accounting can reach internal users such as managers far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employees are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners focus on the return earned on the capital they have invested when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.006",
+    "title": "Liquidity From the Balance Sheet 6",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=409\nCurrent liabilities=205\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 292 |\n| Machinery | 176 |\n| Office equipment | 42 |\n| Patents, trademarks and licences | 45 |\n| Inventory | 192 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 102 |\n| Total assets | **964** |\n| **EQUITY** | |\n| Share capital | 149 |\n| Retained earnings | 116 |\n| Total equity | **265** |\n| **LIABILITIES** | |\n| Long-term bank loan | 436 |\n| Bonds payable | 58 |\n| Trade payables | 170 |\n| Bank overdraft | 35 |\n| Total liabilities | **699** |\n| Total equity and liabilities | **964** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.",
+      "The current ratio exceeds 1.34.",
+      "Working capital of €204 thousand is positive on this balance sheet.",
+      "The equity ratio is below 20%.",
+      "The debt ratio exceeds 63.6%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Management accounting serves internal decision makers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 409\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 205\n\nCurrent ratio = 409 / 205 ≈ 2.00\n\nThe claim says the ratio exceeds 1.34. We have about 2.00, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n409 - 205 = 204\n\nThe claim cites 204. We have 204, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n265 / 964 ≈ 27.5%\n\nThe claim says the ratio below 20%. We have about 27.5%, which does not match that comparison.\n\nThe statement is false.",
+      "From the figures or classification rule involved, debt ratio ≈ 72.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.007",
+    "title": "Lenders and Repayment Capacity",
+    "context": "Review why owners weigh the return on their investment against the risk they are taking. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a manufacturer look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a manufacturer look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a manufacturer look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a manufacturer look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a manufacturer look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders focus on whether the business will be able to repay what it owes when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities focus on how much tax is due on the business's profit when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors focus on the likely return and risk before committing further capital when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers focus on controlling costs and choosing between courses of action when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.008",
+    "title": "Short Balance Sheet Extract 8",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=290\nTotal liabilities=221\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 348 |\n| Inventory | 116 |\n| Cash and cash equivalents | 47 |\n| Total assets | **511** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 172 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 172 |\n| Trade payables | 49 |\n| Total liabilities | **221** |\n| Total equity and liabilities | **511** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.",
+      "Inventory of €116 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €511 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the total assets of €511 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses total assets of €511 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Management accounting serves internal decision makers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reports aimed at external parties fall under financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.009",
+    "title": "Short Depreciation Extract 9",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9286\nAsset B=4200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €65,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.",
+      "Asset A's annual depreciation charge is more than 29.9% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation is a non-cash expense.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset A ≈ €9,286 a year versus Asset B ≈ €4,200 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reports aimed at external parties fall under financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.010",
+    "title": "Asset Composition Chart 10",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=356\nCurrent liabilities=223\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+      "Working capital of €133 thousand is positive on this balance sheet.",
+      "The debt ratio exceeds 56%.",
+      "Trade receivables make up less than 48.5% of current assets.",
+      "Cash and cash equivalents make up more than 23.1% of current assets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Financial accounting serves external as well as internal users.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n356 - 223 = 133\n\nThe claim cites 133. We have 133, so the figures line up.\n\nThe statement is true.",
+      "Apply the case evidence: Debt ratio ≈ 59.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade receivables are about 22.8% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cash and cash equivalents are about 33.4% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.011",
+    "title": "Short Balance Sheet Extract 11",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=319\nTotal liabilities=198\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 347 |\n| Inventory | 116 |\n| Cash and cash equivalents | 54 |\n| Total assets | **517** |\n| **EQUITY** | |\n| Share capital | 94 |\n| Retained earnings | 225 |\n| Total equity | **319** |\n| **LIABILITIES** | |\n| Long-term bank loan | 120 |\n| Trade payables | 78 |\n| Total liabilities | **198** |\n| Total equity and liabilities | **517** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The equity ratio is below 29.8%.",
+      "A published version of the extract above, showing total assets of €517 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "The long-term bank loan of €120 thousand is correctly classified within equity.",
+      "Because the extract above (total assets of €517 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Internal users include owners, managers and employees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n319 / 517 ≈ 61.7%\n\nThe claim says the ratio below 29.8%. We have about 61.7%, which does not match that comparison.\n\nThe statement is false.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.012",
+    "title": "Tax Authorities and Filed Accounts",
+    "context": "Analyze why lenders focus on a business's ability to repay what it owes. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners of a manufacturer have no interest in the return earned on the capital they have invested when they look at accounting information.",
+      "Lenders of a manufacturer have no interest in whether the business will be able to repay what it owes when they look at accounting information.",
+      "Owners of a retailer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Tax authorities of a manufacturer have no interest in how much tax is due on the business's profit when they look at accounting information."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Owners are typically concerned with the return earned on the capital they have invested.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Lenders are typically concerned with whether the business will be able to repay what it owes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Owners sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as owners on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities are typically concerned with how much tax is due on the business's profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.013",
+    "title": "Short Depreciation Extract 13",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9250\nAsset B=4400\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €74,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Asset A's annual depreciation charge is more than 39.5% higher than Asset B's annual depreciation charge.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.",
+      "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Management accounting primarily supports internal decisions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Asset a ≈ €9,250 a year versus asset b ≈ €4,400 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Figures such as this are routinely published for external users like tax authorities and shareholders.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.014",
+    "title": "Balance Sheet Structure Review 14",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=467\nCurrent liabilities=263\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 510 |\n| Machinery | 167 |\n| Office equipment | 75 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 263 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 38 |\n| Total assets | **1313** |\n| **EQUITY** | |\n| Share capital | 204 |\n| Retained earnings | 419 |\n| Total equity | **623** |\n| **LIABILITIES** | |\n| Long-term bank loan | 361 |\n| Bonds payable | 66 |\n| Trade payables | 237 |\n| Bank overdraft | 26 |\n| Total liabilities | **690** |\n| Total equity and liabilities | **1313** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The current ratio exceeds 1.35.",
+      "The current ratio is below 0.9.",
+      "The debt ratio exceeds 47.9%.",
+      "Inventory make up more than 54% of current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Internal users include owners, managers and employees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 467\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 263\n\nCurrent ratio = 467 / 263 ≈ 1.78\n\nThe claim says the ratio exceeds 1.35. We have about 1.78, which matches that comparison.\n\nThe statement is true.",
+      "Current assets = 467\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 263\n\nCurrent ratio = 467 / 263 ≈ 1.78\n\nThe claim says the ratio below 0.9. We have about 1.78, which does not match that comparison.\n\nThe statement is false.",
+      "Apply the case evidence: Debt ratio ≈ 52.6%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory are about 56.3% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.015",
+    "title": "Short Balance Sheet Extract 15",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=279\nTotal liabilities=137\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 255 |\n| Inventory | 85 |\n| Cash and cash equivalents | 76 |\n| Total assets | **416** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 117 |\n| Total equity | **279** |\n| **LIABILITIES** | |\n| Long-term bank loan | 101 |\n| Trade payables | 36 |\n| Total liabilities | **137** |\n| Total equity and liabilities | **416** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
+      "The current ratio exceeds 1.3.",
+      "The equity ratio is below 25.2%.",
+      "Inventory of €85 thousand is correctly classified as a current asset.",
+      "The long-term bank loan of €101 thousand is correctly classified within equity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Land is normally excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (85) + Cash and cash equivalents (76)\n= 161\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 36\n\nCurrent ratio = 161 / 36 ≈ 4.47\n\nThe claim says the ratio exceeds 1.3. We have about 4.47, which matches that comparison.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n279 / 416 ≈ 67.1%\n\nThe claim says the ratio below 25.2%. We have about 67.1%, which does not match that comparison.\n\nThe statement is false.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.016",
+    "title": "Short Depreciation Extract 16",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=9750\nAsset B=7000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €78,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €39,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "Asset A's annual depreciation charge is more than 32.4% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €117,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €117,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €117,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Management accounting primarily supports internal decisions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Asset A ≈ €9,750 a year versus Asset B ≈ €7,000 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reports aimed at external parties fall under financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.017",
+    "title": "Balance Sheet Structure Review 17",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=335\nCurrent liabilities=252\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 480 |\n| Machinery | 214 |\n| Office equipment | 38 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 82 |\n| Trade receivables | 161 |\n| Cash and cash equivalents | 92 |\n| Total assets | **1132** |\n| **EQUITY** | |\n| Share capital | 239 |\n| Retained earnings | 279 |\n| Total equity | **518** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 48 |\n| Trade payables | 227 |\n| Bank overdraft | 25 |\n| Total liabilities | **614** |\n| Total equity and liabilities | **1132** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.",
+      "The current ratio is below 0.83.",
+      "The current ratio exceeds 1.14.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.17 times over.",
+      "Working capital of €83 thousand is positive on this balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation is a non-cash expense.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 335\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 252\n\nCurrent ratio = 335 / 252 ≈ 1.33\n\nThe claim says the ratio below 0.83. We have about 1.33, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets = 335\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 252\n\nCurrent ratio = 335 / 252 ≈ 1.33\n\nThe claim says the ratio exceeds 1.14. We have about 1.33, which matches that comparison.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.00.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n335 - 252 = 83\n\nThe claim cites 83. We have 83, so the figures line up.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.018",
+    "title": "Short Balance Sheet Extract 18",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=288\nTotal liabilities=216\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 312 |\n| Inventory | 145 |\n| Cash and cash equivalents | 47 |\n| Total assets | **504** |\n| **EQUITY** | |\n| Share capital | 118 |\n| Retained earnings | 170 |\n| Total equity | **288** |\n| **LIABILITIES** | |\n| Long-term bank loan | 144 |\n| Trade payables | 72 |\n| Total liabilities | **216** |\n| Total equity and liabilities | **504** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Auditing is the independent checking of accounts for authenticity by an auditing company.",
+      "The equity ratio is below 31.3%.",
+      "The long-term bank loan of €144 thousand is correctly classified within equity.",
+      "Because the extract above (total assets of €504 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Inventory of €145 thousand is correctly classified as a current asset."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Auditing is an independent verification of the accounts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n288 / 504 ≈ 57.1%\n\nThe claim says the ratio below 31.3%. We have about 57.1%, which does not match that comparison.\n\nThe statement is false.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.019",
+    "title": "Investors and Published Statements",
+    "context": "Review why tax authorities depend on financial accounting records when assessing liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a retailer are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a retailer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Lenders sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as lenders on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting can reach internal users such as managers far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.020",
+    "title": "Short Depreciation Extract 20",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=22500\nAsset B=4000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €90,000 purchase price, 4-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "Asset A's annual depreciation charge is more than 17.2% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €114,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €114,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above (the combined asset cost of €114,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Internal users include owners, managers and employees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Asset a ≈ €22,500 a year versus asset b ≈ €4,000 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.021",
+    "title": "Managers Controlling Costs Internally",
+    "context": "Analyze why investors study published financial statements before committing further capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a retailer work inside the business and can be given management accounting reports designed around their own questions.",
+      "Investors of a manufacturer have no interest in the likely return and risk before committing further capital when they look at accounting information.",
+      "Employees of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for employees of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a retailer look at accounting information mainly to judge the return earned on the capital they have invested."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Employees are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors are typically concerned with the likely return and risk before committing further capital.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Management accounting can reach internal users such as employees far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners focus on the return earned on the capital they have invested when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.022",
+    "title": "Asset Composition Chart 22",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=324\nCurrent liabilities=193\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 348 |\n| Machinery | 138 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 68 |\n| Inventory | 175 |\n| Trade receivables | 83 |\n| Cash and cash equivalents | 66 |\n| Total assets | **929** |\n| **EQUITY** | |\n| Share capital | 292 |\n| Retained earnings | 87 |\n| Total equity | **379** |\n| **LIABILITIES** | |\n| Long-term bank loan | 278 |\n| Bonds payable | 79 |\n| Trade payables | 141 |\n| Bank overdraft | 52 |\n| Total liabilities | **550** |\n| Total equity and liabilities | **929** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "The current ratio exceeds 1.63.",
+      "Working capital of €131 thousand is positive on this balance sheet.",
+      "The equity ratio is below 39.8%.",
+      "The debt ratio exceeds 48.3%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Management accounting primarily supports internal decisions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 324\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 193\n\nCurrent ratio = 324 / 193 ≈ 1.68\n\nThe claim says the ratio exceeds 1.63. We have about 1.68, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n324 - 193 = 131\n\nThe claim cites 131. We have 131, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n379 / 929 ≈ 40.8%\n\nThe claim says the ratio below 39.8%. We have about 40.8%, which does not match that comparison.\n\nThe statement is false.",
+      "From the figures or classification rule involved, debt ratio ≈ 59.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.023",
+    "title": "Short Balance Sheet Extract 23",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=359\nTotal liabilities=166\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 349 |\n| Inventory | 121 |\n| Cash and cash equivalents | 55 |\n| Total assets | **525** |\n| **EQUITY** | |\n| Share capital | 131 |\n| Retained earnings | 228 |\n| Total equity | **359** |\n| **LIABILITIES** | |\n| Long-term bank loan | 96 |\n| Trade payables | 70 |\n| Total liabilities | **166** |\n| Total equity and liabilities | **525** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The equity ratio is below 39.6%.",
+      "The current ratio exceeds 1.43.",
+      "Inventory of €121 thousand is correctly classified as a current asset.",
+      "The long-term bank loan of €96 thousand is correctly classified within equity."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Internal users include owners, managers and employees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n359 / 525 ≈ 68.4%\n\nThe claim says the ratio below 39.6%. We have about 68.4%, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets gather the short-term asset lines:\n\nInventory (121) + Cash and cash equivalents (55)\n= 176\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 70\n\nCurrent ratio = 176 / 70 ≈ 2.51\n\nThe claim says the ratio exceeds 1.43. We have about 2.51, which matches that comparison.\n\nThe statement is true.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.024",
+    "title": "Short Depreciation Extract 24",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=16400\nAsset B=7200\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €82,000 purchase price, 5-year useful life, no residual value |\n| Asset B | €38,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+      "Asset A's annual depreciation charge is more than 38.4% higher than Asset B's annual depreciation charge.",
+      "Because the extract above (the combined asset cost of €120,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "A published version of the extract above, showing the combined asset cost of €120,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "Internal management reports covering the same period as the extract above (the combined asset cost of €120,000 thousand) must follow the identical statutory format shown here."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Management accounting primarily supports internal decisions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Asset A ≈ €16,400 a year versus Asset B ≈ €7,200 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.025",
+    "title": "Employees and Job Security",
+    "context": "Review why employees may take an interest in accounting information about job security and pay. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a retailer look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a retailer look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a retailer look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a manufacturer have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Managers of a retailer look at accounting information mainly to judge controlling costs and choosing between courses of action."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders focus on whether the business will be able to repay what it owes when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities focus on how much tax is due on the business's profit when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors focus on the likely return and risk before committing further capital when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers are typically concerned with controlling costs and choosing between courses of action.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Managers focus on controlling costs and choosing between courses of action when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

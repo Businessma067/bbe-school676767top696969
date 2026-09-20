@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.26",
+    "title": "Collateral and Credit Pricing",
+    "context": "Analyze how administration costs affect the comparison between issuing shares and taking a bank loan. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal funds or investors can reduce insolvency risk when loan capital is already high.",
+      "Elevated gearing points the firm toward retained funds or new investors rather than stacking another major loan.",
+      "Administration costs of issuing shares or bonds belong to the cost criterion alongside loan interest.",
+      "A finance decision based only on loan interest ignores flotation and related costs of market issues.",
+      "Revenue expenditure on weekly ingredients requires bond finance maturing after fifteen years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Non-debt finance avoids adding repayable obligations when debt is heavy.\n\nApplied carefully, \"Internal funds or investors can reduce insolvency risk when loan capital is already high\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "High loan capital makes internal equity or outside investors preferable.\n\nApplied carefully, \"Elevated gearing points the firm toward retained funds or new investors rather than stacking another major loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Issuance fees are part of the cost criterion next to borrowing interest.\n\nApplied carefully, \"Administration costs of issuing shares or bonds belong to the cost criterion alongside loan interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Total cost of bond or share finance includes non-interest fees.\n\nApplied carefully, \"A finance decision based only on loan interest ignores flotation and related costs of market issues\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Long-term bonds mismatch the quick consumption of production materials.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.27",
+    "title": "Balancing Cost Use and Position",
+    "context": "Review the link between loan repayment obligations and the risk of insolvency in highly geared businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Intended use still requires matching long-term finance to capital expenditure on multi-year assets.",
+      "When several sources of finance are available, decision-making most probably weighs costs, intended use, and financial situation.",
+      "Financial funds for capital expenditures require long-term finance because benefits extend over years.",
+      "Revenue expenditures on production inputs can safely use short-term sources.",
+      "High gearing may mean credit is offered only at higher interest and/or with collateral."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Asset life determines finance maturity regardless of nominal coupon or dividend.\n\nApplied carefully, \"Intended use still requires matching long-term finance to capital expenditure on multi-year assets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "All three criteria jointly determine appropriate finance.\n\nApplied carefully, \"When several sources of finance are available, decision-making most probably weighs costs, intended use, and financial situation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Asset spending with extended life needs long-term funding.\n\nApplied carefully, \"Financial funds for capital expenditures require long-term finance because benefits extend over years\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Materials consumed in the cycle fit short-term finance.\n\nApplied carefully, \"Revenue expenditures on production inputs can safely use short-term sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Lenders price and secure new loans more strictly when debt is heavy.\n\nApplied carefully, \"High gearing may mean credit is offered only at higher interest and/or with collateral\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.28",
+    "title": "Long-Term Finance for Plant Assets",
+    "context": "Consider a dental practice choosing between a multi-year premises loan, supplier credit for consumables, and funds from new investor-partners. Evaluate the following economic assertions:",
+    "statements": [
+      "Capital expenditure on machinery, plant, or vehicles used over many years should be matched with long-term finance.",
+      "Capital expenditure on a warehouse used for decades should be funded exclusively through thirty-day trade credit.",
+      "High gearing means intended use no longer influences whether finance should be short or long term.",
+      "Matching finance maturity to expenditure type is optional when the quoted loan interest rate is low.",
+      "A business should finance ten-year equipment and weekly materials from the same thirty-day overdraft without distinction."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Long-lived assets require finance whose term spans years of service.\n\nApplied carefully, \"Capital expenditure on machinery, plant, or vehicles used over many years should be matched with long-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Long-lived buildings are capital expenditure needing long-term finance.\n\nThe absolute wording \"exclusively\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Intended use remains a core criterion regardless of gearing level.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Intended use and gearing still matter even when nominal interest appears attractive.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Different expenditure types require different finance maturities.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.29",
+    "title": "Overdraft Misuse for Capital Spending",
+    "context": "Review why trade credit and overdrafts suit revenue-type spending better than multi-year asset projects. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing means lenders will always match the lowest market interest rate on new loans.",
+      "Costs include interest on loans and administration costs when issuing shares or bonds.",
+      "Costs of finance exclude interest because lenders provide credit without charge.",
+      "Collateral requirements prove that revenue expenditure must always be financed through long-term bonds.",
+      "Insolvency risk arises only from equity finance because shareholders can withdraw capital overnight without notice."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Heavy debt often leads to higher pricing or refusal, not automatic low rates.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Both interest and issuance fees enter cost comparisons.\n\nApplied carefully, \"Costs include interest on loans and administration costs when issuing shares or bonds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Interest on loans and credit is explicitly part of the cost criterion.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Revenue spending still suits short-term finance; collateral relates to lender risk on new debt.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Share capital is not repayable like loans; insolvency risk is tied to debt service.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.30",
+    "title": "Interest Alone Fallacy",
+    "context": "Analyze how a firm's current financial situation shapes whether further loan capital is prudent. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest is irrelevant to finance choice because lenders never charge for credit.",
+      "A business with high gearing may prefer internal funds or investors over additional large loans.",
+      "Revenue expenditure on materials must be financed through share issues because equity has no administration costs.",
+      "Because loans must be repaid, heavy loan capital raises insolvency risk.",
+      "High gearing automatically makes bond interest zero for any new borrowing."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Interest on loans is explicitly part of the cost criterion.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Further debt is often unwise when repayment obligations are already substantial.\n\nApplied carefully, \"A business with high gearing may prefer internal funds or investors over additional large loans\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Share issues carry administration costs and materials suit short-term finance, not equity raises.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Debt service burden threatens solvency when loan capital is high.\n\nApplied carefully, \"Because loans must be repaid, heavy loan capital raises insolvency risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bond and loan interest remain part of the cost criterion at any gearing level.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.31",
+    "title": "Trade Credit for Revenue Spending",
+    "context": "Consider a software startup weighing share issuance costs against a short-term credit line for routine operating expenses. Evaluate the following economic assertions:",
+    "statements": [
+      "When gearing is elevated, internal finance or investors may be preferable to stacking on more repayable debt.",
+      "Share issuance is costless, so only bond coupons need comparison with bank interest.",
+      "Capital expenditure on long-lived assets requires long-term finance.",
+      "Businesses choose finance using costs, intended use, and current financial situation when several sources are available.",
+      "Interest on loans and administration costs of share or bond issues belong to the cost criterion."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Equity and retained funds avoid new mandatory debt service when loan capital is already high.\n\nApplied carefully, \"When gearing is elevated, internal finance or investors may be preferable to stacking on more repayable debt\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Share issues involve administration costs that enter finance comparisons.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Multi-year assets call for long-term funding.\n\nApplied carefully, \"Capital expenditure on long-lived assets requires long-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The chapter's trio of criteria frames finance decisions.\n\nApplied carefully, \"Businesses choose finance using costs, intended use, and current financial situation when several sources are available\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cost includes both interest and issuance administration expenses.\n\nApplied carefully, \"Interest on loans and administration costs of share or bond issues belong to the cost criterion\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.32",
+    "title": "Asset Life and Repayment Schedules",
+    "context": "Analyze why issuance costs for bonds must be weighed alongside interest when comparing debt sources. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing may push a firm toward internal funds or investors and raises insolvency risk from loan repayment.",
+      "Revenue expenditure on weekly supplies should be funded through twenty-year loans.",
+      "Lenders may require collateral before extending further credit to a business with a high proportion of loan capital.",
+      "Capital expenditure on assets used over years requires long-term finance.",
+      "Internal funds or investors can be preferable when loan capital is already high because loans must be repaid."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Heavy debt limits further borrowing and repayment risk favours non-debt finance.\n\nApplied carefully, \"High gearing may push a firm toward internal funds or investors and raises insolvency risk from loan repayment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Short-cycle revenue spending suits short-term sources, not long-term loans.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Security is commonly demanded when existing loan capital is already substantial.\n\nApplied carefully, \"Lenders may require collateral before extending further credit to a business with a high proportion of loan capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multi-year assets call for long-term funding.\n\nApplied carefully, \"Capital expenditure on assets used over years requires long-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Avoiding new debt reduces repayment burden and insolvency risk when gearing is high.\n\nApplied carefully, \"Internal funds or investors can be preferable when loan capital is already high because loans must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.33",
+    "title": "Gearing and Investor Alternatives",
+    "context": "Review how intended use and gearing interact when a business selects among internal and external finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest on loans is the only cost element in finance selection.",
+      "A business with several finance sources will most probably decide using costs, intended use, and current financial situation.",
+      "Capital expenditure requires long-term finance; revenue expenditure can safely use short-term sources.",
+      "Matching long-term funding to multi-year assets spreads repayment over the period benefits are earned.",
+      "Capital expenditure and revenue expenditure both require identical long-term bond funding."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Administration costs for shares and bonds also count toward total finance cost.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "All three criteria jointly guide realistic finance selection.\n\nApplied carefully, \"A business with several finance sources will most probably decide using costs, intended use, and current financial situation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Expenditure type determines appropriate finance maturity.\n\nApplied carefully, \"Capital expenditure requires long-term finance; revenue expenditure can safely use short-term sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Aligning repayment with years of service reduces cash-flow mismatch.\n\nApplied carefully, \"Matching long-term funding to multi-year assets spreads repayment over the period benefits are earned\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Revenue spending suits short-term finance; capital spending needs long-term funding.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.34",
+    "title": "Working Capital Versus Fixed Assets",
+    "context": "Analyze how short-term credit for materials avoids locking repayment schedules to long-lived assets. Evaluate the following economic assertions:",
+    "statements": [
+      "Interest on loans and credit forms part of the cost comparison among finance options.",
+      "Revenue expenditure on production materials can safely use short-term finance such as trade credit.",
+      "High gearing may force a firm toward internal funds or investors rather than another large loan.",
+      "Once loan capital is high, a business may ignore intended use and select finance solely by the lowest advertised interest rate.",
+      "Funding a multi-year production facility exclusively through short-term overdraft drawings mismatches short-term finance to capital expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Borrowing interest is an explicit element of the cost criterion.\n\nApplied carefully, \"Interest on loans and credit forms part of the cost comparison among finance options\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Short-cycle inputs align with short-term credit without long repayment tails.\n\nApplied carefully, \"Revenue expenditure on production materials can safely use short-term finance such as trade credit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Further debt is often costly or unavailable when loan capital is already high.\n\nApplied carefully, \"High gearing may force a firm toward internal funds or investors rather than another large loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Intended use and gearing still matter even when one source quotes a low interest rate.\n\nApplied carefully, \"Once loan capital is high, a business may ignore intended use and select finance solely by the lowest advertised interest rate\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance.\n\nApplied carefully, \"Funding a multi-year production facility exclusively through short-term overdraft drawings mismatches short-term finance to capital expenditure\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.35",
+    "title": "Full Criteria Synthesis",
+    "context": "Consider a textile producer already highly geared when deciding how to finance new machinery versus weekly raw-material deliveries. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of bond issues belong in the cost comparison with loan interest for highly geared borrowers.",
+      "High gearing has no effect on whether lenders demand collateral for new credit.",
+      "Revenue expenditure on inputs for current production can safely be financed through short-term sources.",
+      "Intended use is secondary to picking whichever source has the lowest administration cost alone.",
+      "Loan repayment risk disappears if a business funds capital expenditure through additional long-term loans regardless of gearing."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Issuance costs are part of the cost criterion alongside borrowing interest.\n\nApplied carefully, \"Administration costs of bond issues belong in the cost comparison with loan interest for highly geared borrowers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Collateral demands commonly rise when loan capital is already high.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Short-cycle spending fits short-term credit without locking repayment to long asset lives.\n\nApplied carefully, \"Revenue expenditure on inputs for current production can safely be financed through short-term sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Intended use and gearing matter alongside cost; lowest admin cost alone is insufficient.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "More long-term debt when gearing is high worsens repayment pressure rather than removing risk.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.36",
+    "title": "Collateral Demand Signal",
+    "context": "Analyze how capital expenditure on long-lived assets illustrates the need for long-term funding. Evaluate the following economic assertions:",
+    "statements": [
+      "A high proportion of loan capital can make lenders reluctant to extend further credit except on stricter terms.",
+      "Comparing share finance with a bank loan requires weighing issuance administration costs against loan interest.",
+      "Short-term credit suits revenue spending on inputs consumed quickly because it avoids locking the firm into long repayment schedules.",
+      "A business with several finance options will most probably weigh costs, intended use, and current financial situation together.",
+      "Revenue expenditure on materials consumed in current production can safely be financed by short-term sources."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "High gearing often leads to higher interest, collateral demands, or refusal of new loans.\n\nApplied carefully, \"A high proportion of loan capital can make lenders reluctant to extend further credit except on stricter terms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Equity raising carries administration costs that must enter the finance comparison.\n\nApplied carefully, \"Comparing share finance with a bank loan requires weighing issuance administration costs against loan interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Short-term credit matches quickly consumed revenue expenditure.\n\nApplied carefully, \"Short-term credit suits revenue spending on inputs consumed quickly because it avoids locking the firm into long repayment schedules\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "All three criteria jointly guide realistic finance selection.\n\nApplied carefully, \"A business with several finance options will most probably weigh costs, intended use, and current financial situation together\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Production materials used within the cycle fit short-term credit such as supplier terms.\n\nApplied carefully, \"Revenue expenditure on materials consumed in current production can safely be financed by short-term sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.37",
+    "title": "Finance Selection Overview",
+    "context": "Review how revenue expenditure on working-capital inputs illustrates safe use of short-term finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of issuing shares or bonds also enter that cost comparison.",
+      "Intended use of funds distinguishes long-term finance for assets from short-term finance for working capital.",
+      "Retained earnings and new investors can strengthen finance choice when external credit is costly.",
+      "Collateral may be required before lenders extend additional loans to a high geared firm.",
+      "Share capital from investors is preferable to loans when gearing is high because loans must be repaid."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Capital market issues involve administration expenses beyond any coupon or dividend.\n\nApplied carefully, \"Administration costs of issuing shares or bonds also enter that cost comparison\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Expenditure type determines appropriate finance maturity.\n\nApplied carefully, \"Intended use of funds distinguishes long-term finance for assets from short-term finance for working capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Non-debt finance becomes attractive when lenders tighten terms.\n\nApplied carefully, \"Retained earnings and new investors can strengthen finance choice when external credit is costly\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Security requirements commonly accompany new lending to highly geared borrowers.\n\nApplied carefully, \"Collateral may be required before lenders extend additional loans to a high geared firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Investor funds avoid new mandatory repayment streams when debt is already heavy.\n\nApplied carefully, \"Share capital from investors is preferable to loans when gearing is high because loans must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.38",
+    "title": "Decision Framework Recap",
+    "context": "Review how businesses choose among available sources of finance when costs, intended use, and current financial position all matter. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit for weekly ingredients aligns revenue expenditure with short-term finance sources.",
+      "Long-term bank loans suit capital expenditure on vehicles used over many years.",
+      "Total finance cost includes both loan interest and share-issue administration expenses.",
+      "A firm's current financial situation influences whether further loan capital is prudent.",
+      "Bond flotation costs should be weighed alongside coupon interest when comparing debt sources."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brief supplier credit suits inputs consumed within the operating cycle.\n\nApplied carefully, \"Trade credit for weekly ingredients aligns revenue expenditure with short-term finance sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Fleet renewal calls for finance whose maturity spans years of service.\n\nApplied carefully, \"Long-term bank loans suit capital expenditure on vehicles used over many years\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cost comparison spans recurring interest and one-off issuance fees.\n\nApplied carefully, \"Total finance cost includes both loan interest and share-issue administration expenses\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Gearing shapes whether additional debt is wise alongside cost and intended use.\n\nApplied carefully, \"A firm's current financial situation influences whether further loan capital is prudent\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Issuance expenses belong in the cost criterion for bond finance.\n\nApplied carefully, \"Bond flotation costs should be weighed alongside coupon interest when comparing debt sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.39",
+    "title": "Maturity Matching Essentials",
+    "context": "Consider a catering business using supplier credit for ingredients while owners consider whether retained earnings should fund a delivery van. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal equity from retained earnings avoids adding repayable debt when gearing is already elevated.",
+      "Revenue expenditure on materials should be financed exclusively through equity issues to eliminate interest.",
+      "Capital expenditure on a production line used for ten years requires long-term finance.",
+      "High gearing eliminates the need to match finance maturity to expenditure type.",
+      "A highly geared business may ignore repayment risk when selecting the lowest-interest long-term loan available."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Reinvested profit does not create new fixed repayment schedules like loans.\n\nApplied carefully, \"Internal equity from retained earnings avoids adding repayable debt when gearing is already elevated\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Materials for current production suit short-term finance; equity is not required for every revenue item.\n\nThe absolute wording \"exclusively\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Multi-year assets should not rely on short-term overdraft facilities alone.\n\nApplied carefully, \"Capital expenditure on a production line used for ten years requires long-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Expenditure type still determines appropriate finance maturity regardless of gearing.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Gearing and repayment risk still matter even when a loan quotes a low interest rate.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.40",
+    "title": "Gearing and Short-Term Credit",
+    "context": "Review how capital expenditures on long-lived assets should be matched with the term of finance chosen. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing means revenue expenditure must be financed only through long-term bonds.",
+      "Administration costs of share issues are excluded when comparing finance sources.",
+      "Both capital and revenue expenditure should be funded from identical thirty-day trade credit regardless of asset life.",
+      "Revenue spending on packaging consumed within weeks can safely use supplier trade credit.",
+      "High gearing may leave lenders offering credit only at a higher price in the form of interest."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Materials for current production still suit short-term finance regardless of gearing.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Share issuance costs remain part of the cost criterion.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Different expenditure types require different finance maturities.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Short-cycle inputs align with brief credit terms.\n\nApplied carefully, \"Revenue spending on packaging consumed within weeks can safely use supplier trade credit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Risk pricing rises when loan capital is already substantial.\n\nApplied carefully, \"High gearing may leave lenders offering credit only at a higher price in the form of interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.41",
+    "title": "Debt Burden and Solvency",
+    "context": "Analyze how revenue expenditures on materials and other short-cycle inputs relate to short-term finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Investor or partner funds can substitute for additional loans when repayment risk is already high.",
+      "High gearing eliminates the need to consider intended use when selecting finance.",
+      "Administration costs apply only to bond issues and never to share issuance.",
+      "Matching finance maturity to expenditure type reduces repayment pressure on routine operations.",
+      "Interest payments for loans and credit are part of the cost criterion in finance selection."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Equity injections reduce reliance on repayable debt under high gearing.\n\nApplied carefully, \"Investor or partner funds can substitute for additional loans when repayment risk is already high\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Intended use remains central even when gearing is elevated.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Both shares and bonds carry administration costs in the cost criterion.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Aligning term to use keeps debt service proportional to benefit periods.\n\nApplied carefully, \"Matching finance maturity to expenditure type reduces repayment pressure on routine operations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Borrowing interest enters the cost comparison among sources.\n\nApplied carefully, \"Interest payments for loans and credit are part of the cost criterion in finance selection\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.42",
+    "title": "Use Cost and Gearing Together",
+    "context": "Review the concept of a high geared business and its implications for further borrowing. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs for issuing shares form part of the cost criterion alongside loan interest.",
+      "Purchasing raw materials for current production is revenue expenditure suited to short-term finance.",
+      "Intended use is irrelevant once a business becomes highly geared.",
+      "High gearing requires that all spending, including weekly materials, be funded through new fifteen-year bank loans.",
+      "Purchasing machinery used over many years is capital expenditure requiring long-term finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Equity issuance is not cost-free in the finance comparison.\n\nApplied carefully, \"Administration costs for issuing shares form part of the cost criterion alongside loan interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Inputs used within the cycle fit trade credit or overdrafts.\n\nApplied carefully, \"Purchasing raw materials for current production is revenue expenditure suited to short-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Intended use remains central to matching finance maturity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Revenue expenditure should not be forced into long-term loans merely because gearing is high.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Long-lived equipment calls for multi-year funding sources.\n\nApplied carefully, \"Purchasing machinery used over many years is capital expenditure requiring long-term finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.43",
+    "title": "Issuance Fees and Loan Interest",
+    "context": "Consider a municipal supplier drawing on an overdraft for cash-flow gaps while issuing bonds to expand its warehouse. Evaluate the following economic assertions:",
+    "statements": [
+      "When gearing is already high, management should prefer internal funds or new equity investors over another major loan.",
+      "Because loans must be repaid, heavy loan capital can increase insolvency risk.",
+      "Costs, intended use, and financial situation are weighed together when several finance sources exist.",
+      "Short-term finance for revenue expenditure avoids locking repayment to long-lived assets.",
+      "Long-term finance for capital expenditure spreads repayment over years of asset use."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "High gearing makes internal finance or investors preferable to additional large borrowing.\n\nApplied carefully, \"When gearing is already high, management should prefer internal funds or new equity investors over another major loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Debt service on substantial loans threatens solvency if cash flow falls.\n\nApplied carefully, \"Because loans must be repaid, heavy loan capital can increase insolvency risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "No single criterion alone determines the appropriate finance choice.\n\nApplied carefully, \"Costs, intended use, and financial situation are weighed together when several finance sources exist\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Working-capital credit suits inputs consumed within the operating cycle.\n\nApplied carefully, \"Short-term finance for revenue expenditure avoids locking repayment to long-lived assets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Asset life governs the appropriate maturity of funding.\n\nApplied carefully, \"Long-term finance for capital expenditure spreads repayment over years of asset use\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.44",
+    "title": "Complete Subsection Synthesis",
+    "context": "Review how administration costs of issuing shares or bonds enter the cost comparison among finance sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Administration costs of share or bond issues are excluded from the cost comparison because only interest on loans counts as a cost.",
+      "Lenders may be reluctant to offer more funds when loan capital is already a high proportion of finance.",
+      "Intended use of funds is irrelevant when comparing a bank loan with a bond for buying production materials.",
+      "Funding a multi-year production plant exclusively through short-term overdraft drawings matches finance maturity correctly.",
+      "Even under high gearing, managers should still prefer repeating large bank borrowings over seeking equity investors."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Administration costs for shares and bonds are part of the cost criterion alongside loan interest.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Heavy debt makes creditors cautious about increasing exposure.\n\nApplied carefully, \"Lenders may be reluctant to offer more funds when loan capital is already a high proportion of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Materials are revenue expenditure suited to short-term finance regardless of debt instrument.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance.\n\nThe absolute wording \"exclusively\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Further large loans raise insolvency risk; internal funds or investors are safer options.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.45",
+    "title": "Administration Cost Neglect",
+    "context": "Analyze the insolvency risk that arises when loan capital must be repaid while the business already carries heavy debt. Evaluate the following economic assertions:",
+    "statements": [
+      "Choosing among finance sources requires comparing only administration costs, not intended use or gearing.",
+      "Share issues involve no administration costs, so only bond coupons need comparison with bank interest.",
+      "High gearing guarantees that lenders will always match the lowest market interest rate on new loans.",
+      "Revenue expenditure on packaging consumed within weeks must be financed exclusively through fifteen-year bond issues.",
+      "Collateral demands may accompany new credit offers to highly geared borrowers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Costs, intended use, and financial situation are all weighed when several finance sources exist.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Share issues involve administration costs that enter finance comparisons.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Heavy debt often leads to higher pricing or refusal, not automatic low rates.\n\nThe absolute wording \"guarantees\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Short-cycle packaging is revenue expenditure suited to short-term finance, not long-term bonds.\n\nThe absolute wording \"exclusively\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Security requirements often tighten when gearing is elevated.\n\nApplied carefully, \"Collateral demands may accompany new credit offers to highly geared borrowers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.46",
+    "title": "Insolvency and Repayment Pressure",
+    "context": "Consider a family-owned workshop where heavy loan capital already burdens the balance sheet before owners seek finance for replacement equipment. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal sources of finance reduce insolvency risk relative to stacking on more loan capital.",
+      "The absolute interest rate alone does not determine the best finance source.",
+      "Revenue expenditure on production inputs aligns with short-term credit such as trade credit.",
+      "Capital expenditure on plant and machinery aligns with long-term loans or bond finance.",
+      "Administration costs of bond issues must be compared with loan interest when choosing debt finance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Retained earnings avoid new mandatory debt service.\n\nApplied carefully, \"Internal sources of finance reduce insolvency risk relative to stacking on more loan capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cost must be weighed with intended use and current financial situation.\n\nApplied carefully, \"The absolute interest rate alone does not determine the best finance source\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Short-cycle spending fits brief credit facilities.\n\nApplied carefully, \"Revenue expenditure on production inputs aligns with short-term credit such as trade credit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multi-year assets call for long-term funding sources.\n\nApplied carefully, \"Capital expenditure on plant and machinery aligns with long-term loans or bond finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Flotation costs belong in the total cost of bond finance.\n\nApplied carefully, \"Administration costs of bond issues must be compared with loan interest when choosing debt finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.47",
+    "title": "Criteria Integration for Expansion",
+    "context": "Analyze why lenders may demand collateral or charge higher interest when extending credit to a highly geared firm. Evaluate the following economic assertions:",
+    "statements": [
+      "High gearing does not prevent appropriate short-term finance for routine revenue expenditure.",
+      "Whether materials are bought with a bank loan or a bond issue does not by itself decide which source is suitable; matching maturity and conditions still matters.",
+      "Expecting owners to earn a return on equity does not turn equity providers into creditors of the business.",
+      "Bank overdrafts are long-term debt finance because overdraft limits may remain available across several years.",
+      "Customer payments that later become retained profit transform those earnings into external equity finance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Short-term credit for materials remains suitable even when long-term debt is high.\n\nApplied carefully, \"High gearing does not prevent appropriate short-term finance for routine revenue expenditure\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Materials are revenue expenditure suited to short-term finance regardless of debt instrument.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Investor equity remains equity finance even when investors seek financial return.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdrafts are classified as short-term credit despite renewable facilities.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Retained earnings stay internal equity after profit is kept in the firm.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.48",
+    "title": "Plant Funding Mismatch Trap",
+    "context": "Review the three main decision criteria when several sources of finance are available to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "A business with high loan capital may obtain further credit only on stricter terms.",
+      "Trade credit from suppliers is equity finance because suppliers share commercial risk with the buyer.",
+      "Investors willing to provide funds can be preferable to another large loan when gearing is high.",
+      "Insolvency risk rises when a business carries a high proportion of loan capital that must be repaid.",
+      "Transferability of bonds on secondary markets turns long-term bond finance into short-term equity finance."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders tighten pricing or demand collateral when gearing is elevated.\n\nApplied carefully, \"A business with high loan capital may obtain further credit only on stricter terms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Supplier trade credit is short-term debt finance, not equity shared with suppliers.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Equity-type finance avoids new repayable debt obligations.\n\nApplied carefully, \"Investors willing to provide funds can be preferable to another large loan when gearing is high\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mandatory repayment threatens solvency if revenues fall short.\n\nApplied carefully, \"Insolvency risk rises when a business carries a high proportion of loan capital that must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bond financing remains long-term debt for the issuer regardless of secondary trading.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.49",
+    "title": "Gearing Cost and Use Combined",
+    "context": "Analyze how matching finance maturity to expenditure type reduces repayment pressure on routine operations. Evaluate the following economic assertions:",
+    "statements": [
+      "Finance choice considers costs, intended use, and the firm's current financial situation together.",
+      "Share issues involve administration costs that enter the cost comparison with bank loans.",
+      "A business with high gearing should ignore issuance administration costs when comparing share finance with bonds.",
+      "Overdraft facilities may fund revenue expenditure but are unsuitable alone for multi-year capital projects.",
+      "High gearing automatically converts revenue expenditure into capital expenditure for finance-matching purposes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "All three criteria jointly shape realistic finance decisions.\n\nApplied carefully, \"Finance choice considers costs, intended use, and the firm's current financial situation together\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Equity issuance fees belong alongside borrowing interest in the cost criterion.\n\nApplied carefully, \"Share issues involve administration costs that enter the cost comparison with bank loans\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Administration costs for shares and bonds remain part of the cost criterion regardless of gearing.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Long-lived capital spending requires long-term finance beyond rolling overdraft use.\n\nApplied carefully, \"Overdraft facilities may fund revenue expenditure but are unsuitable alone for multi-year capital projects\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Expenditure classification depends on use and asset life, not on the firm's debt ratio.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.6",
+    "case_id": "CASE 4.6.50",
+    "title": "Finance Maturity Distinctions",
+    "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Once loan capital is high, intended use no longer influences whether finance should be short or long term.",
+      "Day-to-day materials spend should not be funded only by ultra-long mortgage borrowing; financing maturity should fit the use of funds.",
+      "Retained earnings provide internal finance that does not add new loan repayment obligations.",
+      "Bond coupon payments and flotation costs together determine the price of bond finance.",
+      "Capital expenditure on assets used over many years can safely rely on weekly trade credit alone."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Intended use remains a core criterion regardless of gearing level.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Short-cycle materials suit short-term finance, not long-term mortgage loans.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Internal equity avoids mandatory debt service when gearing is already high.\n\nApplied carefully, \"Retained earnings provide internal finance that does not add new loan repayment obligations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Total bond cost includes both interest and issuance administration expenses.\n\nApplied carefully, \"Bond coupon payments and flotation costs together determine the price of bond finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multi-year assets require long-term finance, not brief supplier credit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  }
+]

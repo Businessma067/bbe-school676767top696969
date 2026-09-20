@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.076",
+    "title": "Gearing From Comparative Figures 76",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=594 | Total assets=1222\nYear 2 | Equity=686 | Total assets=1380\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 520 | 604 |\n| Machinery | 157 | 184 |\n| Office equipment | 33 | 36 |\n| Patents, trademarks and licences | 63 | 63 |\n| Inventory | 266 | 281 |\n| Trade receivables | 84 | 93 |\n| Cash and cash equivalents | 99 | 119 |\n| Total assets | **1222** | **1380** |\n| **EQUITY** | | |\n| Share capital | 188 | 188 |\n| Retained earnings | 406 | 498 |\n| Total equity | **594** | **686** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 273 | 293 |\n| Bonds payable | 66 | 71 |\n| Trade payables | 203 | 232 |\n| Bank overdraft | 86 | 98 |\n| Total liabilities | **628** | **694** |\n| Total equity and liabilities | **1222** | **1380** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Total equity grew by more than 14.4% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 54.8% of total equity in Year 1.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 10.5% in Year 1.",
+      "Trade payables of €232 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "These are textbook advantages of equity finance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total equity changed by about 15.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 57.1% of equity in Year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term financing covers non-current assets by about 20.7% in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade payables are a current liability regardless of the amount.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.077",
+    "title": "Balance Sheet Structure Review 77",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=325\nMachinery=168\nPatents, trademarks and licences=77\nInventory=83\nTrade receivables=99\nCash and cash equivalents=39\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 325 |\n| Machinery | 168 |\n| Office equipment | 33 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 83 |\n| Trade receivables | 99 |\n| Cash and cash equivalents | 39 |\n| Total assets | **824** |\n| **EQUITY** | |\n| Share capital | 190 |\n| Retained earnings | 73 |\n| Total equity | **263** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 63 |\n| Trade payables | 155 |\n| Bank overdraft | 29 |\n| Total liabilities | **561** |\n| Total equity and liabilities | **824** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Current liabilities are debts that must be repaid after more than one year.",
+      "The current ratio exceeds 1.02.",
+      "The current ratio is below 0.77.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.27 times over.",
+      "The debt ratio exceeds 70.9%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Current liabilities are due within one year; longer debts are non-current.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets gather the short-term asset lines:\n\nInventory (83) + Trade receivables (99) + Cash and cash equivalents (39)\n= 221\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (155) + Bank overdraft (29)\n= 184\n\nCurrent ratio = 221 / 184 ≈ 1.20\n\nThe claim says the ratio exceeds 1.02. We have about 1.20, which matches that comparison.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (83) + Trade receivables (99) + Cash and cash equivalents (39)\n= 221\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (155) + Bank overdraft (29)\n= 184\n\nCurrent ratio = 221 / 184 ≈ 1.20\n\nThe claim says the ratio below 0.77. We have about 1.20, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.75.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, debt ratio ≈ 68.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.078",
+    "title": "Raising Equity Versus Taking on Debt",
+    "context": "Analyze how a vehicle can be a fixed asset for one business and inventory for a dealer. Evaluate the following economic assertions:",
+    "statements": [
+      "A development patent is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "An espresso machine acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "An espresso machine used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "Once a dealer sells an espresso machine from its stock, the buyer must continue to record it as inventory.",
+      "A printing press used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Intangible and tangible non-current assets, including a development patent, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Resale intent keeps the espresso machine in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Continued operational use makes the espresso machine a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A buyer intending to use the espresso machine in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term operational use makes the printing press a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.079",
+    "title": "Asset Composition Chart 79",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=367\nCurrent liabilities=231\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 454 |\n| Machinery | 160 |\n| Office equipment | 69 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 222 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 49 |\n| Total assets | **1080** |\n| **EQUITY** | |\n| Share capital | 185 |\n| Retained earnings | 307 |\n| Total equity | **492** |\n| **LIABILITIES** | |\n| Long-term bank loan | 273 |\n| Bonds payable | 84 |\n| Trade payables | 171 |\n| Bank overdraft | 60 |\n| Total liabilities | **588** |\n| Total equity and liabilities | **1080** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Current liabilities are debts that must be repaid after more than one year.",
+      "The current ratio is below 1.05.",
+      "The current ratio exceeds 1.29.",
+      "Working capital of €136 thousand is positive on this balance sheet.",
+      "The debt ratio exceeds 51.5%."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Current liabilities are due within one year; longer debts are non-current.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 367\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 231\n\nCurrent ratio = 367 / 231 ≈ 1.59\n\nThe claim says the ratio below 1.05. We have about 1.59, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets = 367\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 231\n\nCurrent ratio = 367 / 231 ≈ 1.59\n\nThe claim says the ratio exceeds 1.29. We have about 1.59, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n367 − 231 = 136\n\nThe claim cites 136. We have 136, so the figures line up.\n\nThe statement is true.",
+      "From the figures or classification rule involved, debt ratio ≈ 54.4%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.080",
+    "title": "Two-Year Balance Sheet Review 80",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=343 | Total assets=944\nYear 2 | Equity=319 | Total assets=999\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 292 | 307 |\n| Machinery | 170 | 182 |\n| Office equipment | 52 | 56 |\n| Patents, trademarks and licences | 98 | 98 |\n| Inventory | 142 | 156 |\n| Trade receivables | 144 | 155 |\n| Cash and cash equivalents | 46 | 45 |\n| Total assets | **944** | **999** |\n| **EQUITY** | | |\n| Share capital | 161 | 161 |\n| Retained earnings | 182 | 158 |\n| Total equity | **343** | **319** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 367 | 418 |\n| Bonds payable | 43 | 47 |\n| Trade payables | 123 | 138 |\n| Bank overdraft | 68 | 77 |\n| Total liabilities | **601** | **680** |\n| Total equity and liabilities | **944** | **999** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
+      "Total assets grew by more than 19% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 102.2% of total equity in Year 1.",
+      "Inventory grew by more than 20.1% between Year 1 and Year 2.",
+      "Non-current assets make up more than 64.2% of total assets in Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Classification follows intended use, not physical form alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 5.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current liabilities are about 119.5% of equity in Year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory changed by about 9.9% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current assets are about 64.4% of total assets in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.081",
+    "title": "Comparative Balance Sheet Analysis 81",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=866 | Total assets=1381\nYear 2 | Equity=987 | Total assets=1546\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 516 | 575 |\n| Machinery | 247 | 293 |\n| Office equipment | 71 | 78 |\n| Patents, trademarks and licences | 94 | 94 |\n| Inventory | 274 | 300 |\n| Trade receivables | 85 | 96 |\n| Cash and cash equivalents | 94 | 110 |\n| Total assets | **1381** | **1546** |\n| **EQUITY** | | |\n| Share capital | 211 | 211 |\n| Retained earnings | 655 | 776 |\n| Total equity | **866** | **987** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 235 | 256 |\n| Bonds payable | 87 | 97 |\n| Trade payables | 116 | 125 |\n| Bank overdraft | 77 | 81 |\n| Total liabilities | **515** | **559** |\n| Total equity and liabilities | **1381** | **1546** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Current liabilities are debts that must be repaid after more than one year.",
+      "Total assets grew by more than 15.2% between Year 1 and Year 2.",
+      "Trade payables grew by more than 10.1% between Year 1 and Year 2.",
+      "Cash and cash equivalents fell by more than 23.2% between Year 1 and Year 2.",
+      "Total equity grew by more than 13.1% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Current liabilities are due within one year; longer debts are non-current.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Total assets changed by about 11.9% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Trade payables changed by about 7.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Cash and cash equivalents changed by about 17.0% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Total equity changed by about 14.0% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.082",
+    "title": "Asset Composition Chart 82",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=310\nMachinery=152\nPatents, trademarks and licences=35\nInventory=83\nTrade receivables=138\nCash and cash equivalents=88\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 310 |\n| Machinery | 152 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 35 |\n| Inventory | 83 |\n| Trade receivables | 138 |\n| Cash and cash equivalents | 88 |\n| Total assets | **845** |\n| **EQUITY** | |\n| Share capital | 189 |\n| Retained earnings | 115 |\n| Total equity | **304** |\n| **LIABILITIES** | |\n| Long-term bank loan | 239 |\n| Bonds payable | 41 |\n| Trade payables | 211 |\n| Bank overdraft | 50 |\n| Total liabilities | **541** |\n| Total equity and liabilities | **845** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
+      "Working capital of €48 thousand is positive on this balance sheet.",
+      "The equity ratio is below 37.5%.",
+      "Cash and cash equivalents make up more than 15.2% of current assets.",
+      "Inventory of €83 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Equity equals assets minus liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n309 − 261 = 48\n\nThe claim cites 48. We have 48, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n304 / 845 ≈ 36.0%\n\nThe claim says the ratio below 37.5%. We have about 36.0%, which matches that comparison.\n\nThe statement is true.",
+      "Cash and cash equivalents are about 28.5% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory is always a current asset.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.083",
+    "title": "Balance Sheet as a Point in Time",
+    "context": "Review how a piece of equipment used in daily operations differs in classification from an identical item held for resale. Evaluate the following economic assertions:",
+    "statements": [
+      "A printing press held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "The same printing press must always be classified identically on every balance sheet regardless of how it is held.",
+      "The absence of physical form does not prevent a development patent from being classified as a non-current asset.",
+      "A development patent acquired to protect or support a business's operations over several years is grouped with intangible non-current assets.",
+      "A development patent is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Resale intent, not the dealer's status as a business, places the printing press in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Classification of the printing press depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Physical form is not a requirement for classifying a development patent as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Multi-year protective or operational value groups a development patent with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Because a development patent is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.084",
+    "title": "Share Price and Market Capitalisation 84",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=24\nApril | Price=23\nMay | Price=20\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=78000\nFebruary | Volume=29000\nMarch | Volume=92000\nApril | Volume=18000\nMay | Volume=83000\nJune | Volume=50000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 29 | 78,000 |\n| February | 28 | 29,000 |\n| March | 24 | 92,000 |\n| April | 23 | 18,000 |\n| May | 20 | 83,000 |\n| June | 17 | 50,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 279 |\n| Shares outstanding | 641,000 |\n| Total shares traded (six months) | 350,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
+      "Market capitalisation at the last month exceeds €9 million.",
+      "Earnings per share exceeds €0.33.",
+      "Highest closing price is more than 17.1% above the lowest.",
+      "Total shares traded over six months exceed 25.2% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Market capitalisation = shares × price; price can move for reasons unrelated to value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €10.9 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.44.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €17-€29. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 54.6% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.085",
+    "title": "Listed Company Performance Charts 85",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=38\nMarch | Price=38\nApril | Price=40\nMay | Price=42\nJune | Price=48\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=26000\nMarch | Volume=83000\nApril | Volume=53000\nMay | Volume=68000\nJune | Volume=77000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 19,000 |\n| February | 38 | 26,000 |\n| March | 38 | 83,000 |\n| April | 40 | 53,000 |\n| May | 42 | 68,000 |\n| June | 48 | 77,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 234 |\n| Shares outstanding | 692,000 |\n| Total shares traded (six months) | 326,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
+      "The closing share price rose by more than 26% from first to last month.",
+      "Market capitalisation at the last month exceeds €31.5 million.",
+      "Earnings per share exceeds €0.28.",
+      "Total shares traded over six months exceed 17.9% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Common shares vote; preferred shares usually emphasise dividend priority.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 26.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €33.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.34.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 47.1% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.086",
+    "title": "Total Equity and Liabilities Identity",
+    "context": "Analyze how a licence held for long-term use is classified as an intangible non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a printing press as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A printing press acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "A trading permit lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a trading permit cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A printing press used daily in a business's own operations should be recorded as inventory because it wears out over time."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Intended use, not purchase price, drives the non-current classification of the printing press.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent keeps the printing press in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term expected benefit, not physical form, justifies classifying a trading permit as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term value places an intangible trading permit among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Continued operational use makes the printing press a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.087",
+    "title": "Share Price and Market Capitalisation 87",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=25\nMarch | Price=25\nApril | Price=24\nMay | Price=24\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=58000\nMarch | Volume=66000\nApril | Volume=73000\nMay | Volume=24000\nJune | Volume=44000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 25 | 34,000 |\n| February | 25 | 58,000 |\n| March | 25 | 66,000 |\n| April | 24 | 73,000 |\n| May | 24 | 24,000 |\n| June | 29 | 44,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 252 |\n| Shares outstanding | 408,000 |\n| Total shares traded (six months) | 299,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers.",
+      "Market capitalisation at the last month exceeds €9.9 million.",
+      "Earnings per share exceeds €0.53.",
+      "Total shares traded over six months exceed 23.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 46,844 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Comparative context matters for return ratios.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €11.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.62.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 73.3% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 73,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.088",
+    "title": "Physical Form and Asset Classification",
+    "context": "Review how a customer relationship acquired in a takeover can be recognised as an intangible non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a dealer sells a printing press from its stock, the buyer must continue to record it as inventory.",
+      "A trading permit is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a trading permit from being classified as a non-current asset.",
+      "A conveyor belt used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A trading permit acquired to protect or support a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "A buyer intending to use the printing press in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Intangible and tangible non-current assets, including a trading permit, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Physical form is not a requirement for classifying a trading permit as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term operational use makes the conveyor belt a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Multi-year protective or operational value groups a trading permit with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.089",
+    "title": "Earnings Per Share From Reported Figures 89",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=26\nMarch | Price=27\nApril | Price=29\nMay | Price=31\nJune | Price=31\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=89000\nFebruary | Volume=59000\nMarch | Volume=72000\nApril | Volume=20000\nMay | Volume=65000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 89,000 |\n| February | 26 | 59,000 |\n| March | 27 | 72,000 |\n| April | 29 | 20,000 |\n| May | 31 | 65,000 |\n| June | 31 | 52,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 249 |\n| Shares outstanding | 559,000 |\n| Total shares traded (six months) | 357,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital.",
+      "Market capitalisation rose by more than 34.2% over the period.",
+      "The closing share price rose by more than 19.6% from first to last month.",
+      "Share turnover peaked in the same month as the highest closing price.",
+      "The last closing price is below the first."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary-market transfers do not bring cash into the corporation.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €13.4m → €17.3m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, price change ≈ 29.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak price month vs peak volume month.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: 24 → 31. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.090",
+    "title": "Share Price and Market Capitalisation 90",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=33\nMarch | Price=31\nApril | Price=29\nMay | Price=29\nJune | Price=29\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=26000\nFebruary | Volume=48000\nMarch | Volume=44000\nApril | Volume=45000\nMay | Volume=84000\nJune | Volume=22000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 26,000 |\n| February | 33 | 48,000 |\n| March | 31 | 44,000 |\n| April | 29 | 45,000 |\n| May | 29 | 84,000 |\n| June | 29 | 22,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 193 |\n| Shares outstanding | 718,000 |\n| Total shares traded (six months) | 269,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A corporation is not obliged to pay a dividend every year regardless of performance; unpaid dividends over a longer period may make the shares less attractive, but payment is not legally required every year.",
+      "Market capitalisation at the last month exceeds €16.7 million.",
+      "Earnings per share exceeds €0.19.",
+      "Total shares traded over six months exceed 12.6% of shares outstanding.",
+      "Peak monthly share turnover exceeds 51,097 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividends are not a mandatory annual cash outflow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €20.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.27.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 37.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 84,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.091",
+    "title": "Listed Company Performance Charts 91",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=20\nMarch | Price=20\nApril | Price=19\nMay | Price=19\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=45000\nMarch | Volume=51000\nApril | Volume=67000\nMay | Volume=49000\nJune | Volume=93000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 27,000 |\n| February | 20 | 45,000 |\n| March | 20 | 51,000 |\n| April | 19 | 67,000 |\n| May | 19 | 49,000 |\n| June | 24 | 93,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 231 |\n| Shares outstanding | 501,000 |\n| Total shares traded (six months) | 332,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
+      "The closing share price rose by more than 22.1% from first to last month.",
+      "Market capitalisation rose by more than 29.7% over the period.",
+      "Market capitalisation at the last month exceeds €9.4 million.",
+      "Highest closing price is more than 39.9% above the lowest."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Textbook motives for buying shares include dividends, growth, voting and real-value motives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 14.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €10.5m → €12.0m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €12.0 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €19-€24. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.092",
+    "title": "Earnings Per Share From Reported Figures 92",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=37\nMarch | Price=37\nApril | Price=41\nMay | Price=41\nJune | Price=42\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=71000\nMarch | Volume=50000\nApril | Volume=81000\nMay | Volume=89000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 29,000 |\n| February | 37 | 71,000 |\n| March | 37 | 50,000 |\n| April | 41 | 81,000 |\n| May | 41 | 89,000 |\n| June | 42 | 74,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 305 |\n| Shares outstanding | 703,000 |\n| Total shares traded (six months) | 394,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account.",
+      "The closing share price rose by more than 11.5% from first to last month.",
+      "Market capitalisation at the last month exceeds €22.8 million.",
+      "Market capitalisation rose by more than 12.1% over the period.",
+      "Earnings per share exceeds €0.32."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Listed price rises do not transfer cash to the issuer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 20.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €29.5 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €24.6m → €29.5m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.43.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.093",
+    "title": "Operating Cycle and Current Assets",
+    "context": "Analyze how a mortgage on business premises is classified as a non-current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A trading permit is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.",
+      "A service mark lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a service mark cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A service mark is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a service mark from being classified as a non-current asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Because a trading permit is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term expected benefit, not physical form, justifies classifying a service mark as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term value places an intangible service mark among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible and tangible non-current assets, including a service mark, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Physical form is not a requirement for classifying a service mark as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.094",
+    "title": "Benefit Period and Non-Current Assets",
+    "context": "Review how a bank overdraft is classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A service mark acquired to protect or support a business's operations over several years is grouped with intangible non-current assets.",
+      "A service mark is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.",
+      "A proprietary formula lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a proprietary formula cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A conveyor belt held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Multi-year protective or operational value groups a service mark with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Because a service mark is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term expected benefit, not physical form, justifies classifying a proprietary formula as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term value places an intangible proprietary formula among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Resale intent, not the dealer's status as a business, places the conveyor belt in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.095",
+    "title": "Earnings Per Share From Reported Figures 95",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=41\nFebruary | Price=41\nMarch | Price=39\nApril | Price=40\nMay | Price=42\nJune | Price=49\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=49000\nFebruary | Volume=70000\nMarch | Volume=63000\nApril | Volume=44000\nMay | Volume=66000\nJune | Volume=47000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 41 | 49,000 |\n| February | 41 | 70,000 |\n| March | 39 | 63,000 |\n| April | 40 | 44,000 |\n| May | 42 | 66,000 |\n| June | 49 | 47,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 265 |\n| Shares outstanding | 646,000 |\n| Total shares traded (six months) | 339,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A share buyback reduces the number of shares outstanding, which can raise earnings per share even if total profit stays exactly the same.",
+      "The closing share price rose by more than 10.2% from first to last month.",
+      "Market capitalisation at the last month exceeds €28.7 million.",
+      "Market capitalisation rose by more than 22.4% over the period.",
+      "Total shares traded over six months exceed 27.6% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Fewer shares increase earnings per share for an unchanged profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 19.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €31.7 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €26.5m → €31.7m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 52.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.096",
+    "title": "Share Price and Market Capitalisation 96",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=35\nMarch | Price=36\nApril | Price=38\nMay | Price=37\nJune | Price=44\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=58000\nFebruary | Volume=41000\nMarch | Volume=60000\nApril | Volume=92000\nMay | Volume=85000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 58,000 |\n| February | 35 | 41,000 |\n| March | 36 | 60,000 |\n| April | 38 | 92,000 |\n| May | 37 | 85,000 |\n| June | 44 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 270 |\n| Shares outstanding | 598,000 |\n| Total shares traded (six months) | 372,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
+      "The closing share price rose by more than 26.1% from first to last month.",
+      "Market capitalisation at the last month exceeds €22.2 million.",
+      "Highest closing price is more than 44% above the lowest.",
+      "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "There is no universal legal duty to pay a dividend every year.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 25.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €26.3 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €35-€44. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "That reverses the usual voting rights of common versus preferred shares.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.097",
+    "title": "Listed Company Performance Charts 97",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=25\nFebruary | Price=23\nMarch | Price=23\nApril | Price=23\nMay | Price=22\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=59000\nFebruary | Volume=52000\nMarch | Volume=30000\nApril | Volume=33000\nMay | Volume=37000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 25 | 59,000 |\n| February | 23 | 52,000 |\n| March | 23 | 30,000 |\n| April | 23 | 33,000 |\n| May | 22 | 37,000 |\n| June | 28 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 225 |\n| Shares outstanding | 602,000 |\n| Total shares traded (six months) | 247,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "After shares are already trading, any rise in the market price automatically provides new cash funds to the issuing corporation.",
+      "The closing share price rose by more than 13.1% from first to last month.",
+      "Highest closing price is more than 35.6% above the lowest.",
+      "Market capitalisation at the last month exceeds €12.7 million.",
+      "Closing price rose in more than half of the month-to-month steps."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Secondary trading does not raise new company funds.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 12.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €22-€28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €16.9 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, rose in 1 of 5 steps. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.098",
+    "title": "Supplier Credit and Payables",
+    "context": "Analyze how wages payable to employees are classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "The same conveyor belt must always be classified identically on every balance sheet regardless of how it is held.",
+      "A proprietary formula is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a proprietary formula from being classified as a non-current asset.",
+      "Classifying a conveyor belt as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A conveyor belt acquired for resale still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Classification of the conveyor belt depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Intangible and tangible non-current assets, including a proprietary formula, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Physical form is not a requirement for classifying a proprietary formula as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intended use, not purchase price, drives the non-current classification of the conveyor belt.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent keeps the conveyor belt in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.099",
+    "title": "Comparing Payables and Receivables",
+    "context": "Review how tax payable to the authorities is classified as a current liability. Evaluate the following economic assertions:",
+    "statements": [
+      "A conveyor belt used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "Once a dealer sells a conveyor belt from its stock, the buyer must continue to record it as inventory.",
+      "An operating licence is excluded from non-current assets because it has no physical substance.",
+      "A proprietary formula acquired to protect or support a business's operations over several years is grouped with intangible non-current assets.",
+      "A proprietary formula is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Continued operational use makes the conveyor belt a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A buyer intending to use the conveyor belt in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Physical substance is not required for non-current classification; an operating licence qualifies through its long-term value.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Multi-year protective or operational value groups a proprietary formula with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Because a proprietary formula is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.100",
+    "title": "Listed Company Performance Charts 100",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=16\nFebruary | Price=15\nMarch | Price=14\nApril | Price=13\nMay | Price=12\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=61000\nFebruary | Volume=33000\nMarch | Volume=56000\nApril | Volume=54000\nMay | Volume=77000\nJune | Volume=55000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 16 | 61,000 |\n| February | 15 | 33,000 |\n| March | 14 | 56,000 |\n| April | 13 | 54,000 |\n| May | 12 | 77,000 |\n| June | 11 | 55,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 184 |\n| Shares outstanding | 464,000 |\n| Total shares traded (six months) | 336,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.",
+      "Market capitalisation at the last month exceeds €4 million.",
+      "Earnings per share exceeds €0.29.",
+      "Highest closing price is more than 30.4% above the lowest.",
+      "Total shares traded over six months exceed 39.2% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Textbook motives for buying shares include dividends, growth, voting and real-value motives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €5.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.40.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €11-€16. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 72.4% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

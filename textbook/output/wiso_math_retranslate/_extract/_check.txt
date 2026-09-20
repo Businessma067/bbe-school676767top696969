@@ -1,0 +1,5 @@
+Erloslogik False
+has_cyrillic True
+**C.** → Falsch
+
+Die Managerregel nutzt explizit Kosten über $C^{\prime}(Q)$; es ist eine Gewinnlogik, keine reine Erlös

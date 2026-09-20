@@ -1,0 +1,1042 @@
+[
+  {
+    "case_id": "MATH 11.105",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Delivery shifts: cost min on a closed interval",
+    "context_en": "A courier can schedule any number of daily shifts in the closed interval $0\\le Q\\le 8$. Daily operating cost is $C(Q)=Q^{2}-10Q+40$. Management wants the cost-minimising schedule on that interval. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The only interior flat-slope schedule is five shifts.",
+      "At five shifts the cost curve bends upward, so that schedule is a local cost trough.",
+      "Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$.",
+      "On $[0,8]$, the global cost minimum is at the endpoint of eight shifts.",
+      "On $[0,8]$, the global cost minimum is at the interior trough of five shifts."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate cost and set the slope to zero inside $(0,8)$:\n\n$$\nC'(Q) = 2Q-10 = 0\n$$\n\n$$\nQ = 5.\n$$\n\nThe unique root $Q=5$ lies strictly inside $(0,8)$. There is no other interior critical schedule.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify five shifts with the second derivative:\n\n$$\nC''(Q) = 2>0\n$$\n\n$$\nC''(5) = 2>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five shifts is a local cost trough.\n\nSo the statement is True.",
+      "**C.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nEvaluate cost at both endpoints and at the interior trough:\n\n$$\nC(0) = 40,\n$$\n\n$$\nC(5) = 25-50+40\n$$\n\n$$\n25 - 50 = -25\n$$\n\n$$\n-25 + 40 = 15\n$$\n\n$$\nC(5) = 15 = 15\n$$\n\n$$\nC(5) = 15,\n$$\n\n$$\nC(8) = 64-80+40\n$$\n\n$$\n64 - 80 = -16\n$$\n\n$$\n-16 + 40 = 24\n$$\n\n$$\nC(8) = 24 = 24\n$$\n\n$$\nC(8) = 24.\n$$\n\nEndpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nComparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The endpoint of eight shifts is *not* the global cost minimum on $[0,8]$. The claim picks the wrong candidate.\n\n$$\nC(0) = 40\n$$\n\n$$\nC(5) = 15\n$$\n\n$$\nC(8) = 24\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nAmong $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints\n\n$$\nC(0) = 40\n$$\n\n$$\nC(5) = 15\n$$\n\n$$\nC(8) = 24\n$$\n\n$$\nf'' = 0\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Delivery cost on the closed shift interval $[0,8]$ is\n\n$$C(Q)=Q^{2}-10Q+40.$$\n\nDifferentiate twice:\n\n$$C'(Q)=2Q-10,\\qquad C''(Q)=2>0.$$\n\nThe only interior flat-slope schedule is $Q=5$, and the upward bend marks a local cost trough with $C(5)=15$. Endpoint costs are $C(0)=40$ and $C(8)=24$. Comparing all three candidates, the global cost minimum on $[0,8]$ is the interior trough at five shifts, not the endpoint at eight. On a closed interval one must always compare critical values with endpoint values.",
+    "title_de_existing": "Lieferschichten: Kostenminimum auf einem abgeschlossenen Intervall",
+    "context_de_existing": "Ein Kurier kann jede Anzahl täglicher Schichten im Intervall $0\\le Q\\le 8$ planen. Die täglichen Betriebskosten sind $C(Q)=Q^{2}-10Q+40$. Management will den kostenminimierenden Plan auf diesem Intervall. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der einzige innere flache Plan sind fünf Schichten.",
+      "Bei fünf Schichten biegt die Kostenkurve nach oben, also ist dieser Plan ein lokales Kostental.",
+      "Die Endpunktkosten sind $40$ bei null Schichten und $24$ bei acht Schichten, während die Kosten bei fünf Schichten $15$ betragen.",
+      "Auf $[0,8]$ liegt das globale Kostenminimum am Endpunkt von acht Schichten.",
+      "Auf $[0,8]$ liegt das globale Kostenminimum am inneren Tal von fünf Schichten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=2Q-10=0\\Rightarrow Q=5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C''=2>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$C(0)=40$, $C(8)=24$, $C(5)=15$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$15<24$ — nicht der Endpunkt.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nUnter allen Kandidaten ist $C(5)=15$ am kleinsten.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Inneres Tal bei $Q=5$ mit $C=15$ ist global auf $[0,8]$ minimal."
+  },
+  {
+    "case_id": "MATH 11.106",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Community garden: stretch 40 m of fence as far as possible",
+    "context_en": "A community garden committee has exactly $40$ metres of fencing for one rectangular bed. They can choose the side lengths freely so long as all of the fencing is used, and they want the bed to enclose as much planting area as possible. Let one side be $x$ metres. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Using the fencing fully, planting area can be written as a function of one side alone for $0<x<20$.",
+      "The area is maximised when the bed is a $10$ by $10$ metre square.",
+      "That maximum planting area is $100$ square metres.",
+      "At that square the area curve bends downward, confirming a local maximum.",
+      "Because every layout uses the same $40$ metres of fence, every layout gives the same area, so no optimisation is needed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nUsing the fencing fully, the perimeter constraint is $2x+2y=40$, so $x+y=20$ and $y=20-x$. Enclosed area becomes a function of one side alone:\n\n$$\nA(x) = x(20-x) = 20x-x^{2}\n$$\n\n$$\n0<x<20.\n$$\n\nThat reduction to a single-variable calculus problem is exactly what the claim asserts\n\nUnder a linear or product constraint, eliminate one variable, write a single-variable objective, then run ordinary critical-point calculus on the reduced function.\n\nSo the statement is True.",
+      "**B.** → True\n\nMaximise the reduced area by setting its slope to zero:\n\n$$\nA'(x) = 20-2x = 0\n$$\n\n$$\nx = 10\n$$\n\nhence $y=20-10=10$. The area-maximising bed is the $10$ by $10$ metre square. The critical-point calculation matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nEvaluate area at the critical square:\n\n$$\nA(10) = 10\\cdot 10\n$$\n\n$$\n10\\times 10 = 100\n$$\n\n$$\nA(10) = 100.\n$$\n\nMaximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nRead the bend of area at the square layout:\n\n$$\nA''(x) = -2\n$$\n\n$$\nA''(10) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. The square therefore maximises area locally (and, on $(0,20)$, globally)\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nEvery feasible layout uses the same $40$ metres of fence, but different shapes enclose different areas: a $1\\times 19$ rectangle has area $19$, while the $10\\times 10$ square has area $100$. Equal perimeter does not force equal area. Optimisation is needed.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "With a fixed $40$ m fence for a rectangular bed, if one side is $x$ then the adjacent side is $20-x$ (semi-perimeter $20$), so area is\n\n$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20.$$\n\nDifferentiate twice:\n\n$$A'(x)=20-2x,\\qquad A''(x)=-2<0.$$\n\nFlat slope at $x=10$ gives the square $10\\times 10$ with $A(10)=100$. The downward bend confirms a local (and on $(0,20)$, global) maximum. Equal fence length does not force equal area — shape still matters. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Gemeinschaftsgarten: 40 m Zaun möglichst weit spannen",
+    "context_de_existing": "Ein Gemeinschaftsgarten-Komitee hat genau $40$ Meter Zaun für ein rechteckiges Beet. Die Seitenlängen sind frei wählbar, solange der gesamte Zaun genutzt wird, und das Beet soll möglichst große Fläche umschließen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei voller Zaunnutzung lässt sich die Pflanzfläche als Funktion einer Seite allein für $0<x<20$ schreiben.",
+      "Die Fläche wird maximiert, wenn das Beet ein $10$ mal $10$ Meter großes Quadrat ist.",
+      "Diese maximale Pflanzfläche beträgt $100$ Quadratmeter.",
+      "An diesem Quadrat biegt die Flächenkurve nach unten und bestätigt ein lokales Maximum.",
+      "Weil jedes Layout dieselben $40$ Meter Zaun nutzt, liefert jedes Layout dieselbe Fläche, also ist keine Optimierung nötig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSeite $x$, Nachbarseite $20-x$, Fläche $A=x(20-x)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$A'=20-2x=0\\Rightarrow x=10$, also $10\\times 10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$A(10)=100$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$A''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGleicher Umfang erzwingt nicht gleiche Fläche — das Quadrat maximiert.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit Umfang $40$: $A=x(20-x)$, Maximum beim Quadrat $10\\times 10$ mit Fläche $100$."
+  },
+  {
+    "case_id": "MATH 11.107",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Poster margins: minimise paper for a fixed printed area",
+    "context_en": "A designer needs a rectangular printed region of area exactly $36$ cm$^{2}$. A blank margin of $1$ cm is added on every side, and the total sheet of paper (print plus margins) should be as small as possible. Let $x>0$ be the printed width in centimetres. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "If the printed width is $x$, the printed height must be $\\dfrac{36}{x}$, and total paper area is $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$.",
+      "Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.",
+      "Paper area has a flat slope at printed width $x=6$ (taking $x>0$).",
+      "At that width the printed region is a $6\\times 6$ square, total paper area is $64$, and the area curve bends upward, confirming a local minimum.",
+      "Any printed rectangle of area $36$ already minimises paper use; the margins do not create a real optimisation problem."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nPrinted area $36$ forces printed height $36/x$ when width is $x$. Adding a $1$ cm margin on every side enlarges each dimension by $2$, so total paper area is\n\n$$\nA(x) = (x+2)\\left(\\dfrac{36}{x}+2\\right).\n$$\n\nThat is exactly the claimed one-variable formula for $x>0$\n\nSo the statement is True.",
+      "**B.** → True\n\nExpand the product carefully:\n\n$$\nA(x) = (x+2)\\left(\\dfrac{36}{x}+2\\right)\n$$\n\n$$\nA(x) = x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4\n$$\n\n$$\nA(x) = 36+2x+\\dfrac{72}{x}+4.\n$$\n\nCollecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate the expanded area and set the slope to zero for $x>0$:\n\n$$\nA'(x) = 2-\\dfrac{72}{x^{2}} = 0\n$$\n\n$$\n2 = \\dfrac{72}{x^{2}}\n$$\n\n$$\nx^{2} = 36\n$$\n\n$$\nx = 6\n$$\n\n(the positive root). Paper area has a flat slope at printed width $x=6$\n\nSo the statement is True.",
+      "**D.** → True\n\nAt $x=6$ the printed height is $36/6=6$, so the printed region is a $6\\times 6$ square. Total paper area is\n\n$$\nA(6) = 40+12+\\dfrac{72}{6}\n$$\n\n$$\nA(6) = 40+12+12\n$$\n\n$$\n40 + 12 = 52\n$$\n\n$$\n52 + 12 = 64\n$$\n\n$$\nA(6) = 64 = 64\n$$\n\n$$\nA(6) = 64.\n$$\n\nThe bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nAny printed rectangle of area $36$ keeps the *printed* region fixed in area, but different aspect ratios change the outer paper once margins are added. A long thin print forces large outer dimensions; the square print minimises paper. The margins create a genuine optimisation problem.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Printed area is fixed at $36$, so if printed width is $x>0$ then printed height is $36/x$. With a $1$ cm margin on every side, total paper area is\n\n$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=40+2x+\\dfrac{72}{x}.$$\n\nDifferentiate:\n\n$$A'(x)=2-\\dfrac{72}{x^{2}},\\qquad A''(x)=\\dfrac{144}{x^{3}}.$$\n\nFlat slope at $x=6$ (taking $x>0$) gives a $6\\times 6$ printed square with total paper $A(6)=64$, and $A''(6)>0$ confirms a local minimum. Fixed printed area alone does not minimise paper — the margins create a real trade-off.",
+    "title_de_existing": "Posterränder: Papier für feste Druckfläche minimieren",
+    "context_de_existing": "Ein Designer braucht eine rechteckige Druckregion mit Fläche genau $36$ cm$^{2}$. Ein leerer Rand von $1$ cm wird an jeder Seite hinzugefügt, und das gesamte Papierblatt (Druck plus Ränder) soll so klein wie möglich sein. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Wenn die Druckbreite $x$ ist, muss die Druckhöhe $\\dfrac{36}{x}$ sein, und die gesamte Papierfläche ist $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$.",
+      "Ausklappen liefert $A(x)=40+2x+\\dfrac{72}{x}$.",
+      "Die Papierfläche hat bei Druckbreite $x=6$ flache Steigung (mit $x>0$).",
+      "Bei dieser Breite ist die Druckregion ein $6\\times 6$-Quadrat, die gesamte Papierfläche $64$, und die Flächenkurve biegt nach oben.",
+      "Jedes Druckrechteck der Fläche $36$ minimiert bereits den Papierverbrauch; die Ränder erzeugen kein echtes Optimierungsproblem."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nFeste Druckfläche und $1$-cm-Rand an jeder Seite.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nAusmultiplizieren bestätigt die Formel.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$A'=2-72/x^{2}=0\\Rightarrow x=6$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nHöhe $36/6=6$, $A(6)=64$, $A''>0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Ränder machen die Gesamtfläche abhängig von der Form — Optimierung nötig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Papier $A=40+2x+72/x$, Minimum bei $x=6$ (Quadrat) mit $A=64$."
+  },
+  {
+    "case_id": "MATH 11.109",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Budget line: maximise U=xy without a pre-built substitute",
+    "context_en": "A consumer has utility $U(x,y)=xy$ and must spend the entire budget on the constraint $2x+y=20$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Solving the budget for $y$ and substituting gives a one-variable utility on $0<x<10$.",
+      "That reduced utility has a flat slope at $x=5$.",
+      "At $x=5$ one has $y=10$ and utility level $50$.",
+      "At $x=5$ the utility curve bends downward, so that bundle maximises utility locally on the budget line.",
+      "After substitution, one may skip checking the bend of utility because a budget constraint automatically guarantees a maximum."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nSolve the budget $2x+y=20$ for $y=20-2x$. Positivity $y>0$ forces $x<10$, and $x>0$ is already required, so the feasible open interval is $0<x<10$. Substituting into $U=xy$ gives the one-variable utility\n\n$$\nu(x) = x(20-2x)\n$$\n\n$$\nu(x) = 20x-2x^{2}.\n$$\n\nThat reduction matches the claim.\n\n$$\n2x+y = 20\n$$\n\n$$\ny = 20-2x\n$$\n\n$$\nU = xy\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nDifferentiate the reduced utility and set the slope to zero:\n\n$$\nu'(x) = 20-4x = 0\n$$\n\n$$\n4x = 20\n$$\n\n$$\nx = 5.\n$$\n\nThe unique critical point in $(0,10)$ is $x=5$. The reduced utility therefore has a flat slope at $x=5$\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $x=5$ the budget gives\n\n$$\ny = 20-2\\cdot 5 = 10\n$$\n\n, and utility is the product\n\n$$\nU = xy\n$$\n\n$$\nU = 5\\cdot 10\n$$\n\n$$\n5\\times 10 = 50\n$$\n\n$$\nU = 50.\n$$\n\n(Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nRead the bend of reduced utility at $x=5$:\n\n$$\nu''(x) = -4\n$$\n\n$$\nu''(5) = -4<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. That bundle therefore maximises utility locally on the budget line\n\n$$\nx = 5\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nAfter substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished.\n\n$$\nu'' = -4<0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Utility $U=xy$ on the budget $2x+y=20$ with $x>0$, $y>0$. Solve for $y=20-2x$ (requiring $0<x<10$) and substitute:\n\n$$u(x)=x(20-2x)=20x-2x^{2}.$$\n\nDifferentiate twice:\n\n$$u'(x)=20-4x,\\qquad u''(x)=-4<0.$$\n\nFlat slope at $x=5$ gives $y=10$ and $U=50$. The downward bend confirms a local (and on $(0,10)$, global) utility maximum on the budget line. A budget constraint alone does not guarantee a maximum without the bend (or endpoint) check — substitution creates an ordinary one-variable problem that still needs classification.",
+    "title_de_existing": "Budgetgerade: U=xy maximieren ohne vorgefertigte Substitution",
+    "context_de_existing": "Ein Konsument hat Nutzen $U(x,y)=xy$ und muss das gesamte Budget auf der Nebenbedingung $2x+y=20$ ausgeben, mit $x>0$ und $y>0$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Das Budget nach $y$ auflösen und einsetzen liefert einen Einvariablen-Nutzen auf $0<x<10$.",
+      "Dieser reduzierte Nutzen hat bei $x=5$ flache Steigung.",
+      "Bei $x=5$ gilt $y=10$ und Nutzenniveau $50$.",
+      "Bei $x=5$ biegt die Nutzenkurve nach unten, also maximiert dieses Bündel den Nutzen lokal auf der Budgetgeraden.",
+      "Nach der Substitution darf man die Nutzenkrümmung überspringen, weil eine Budgetnebenbedingung automatisch ein Maximum garantiert."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$y=20-2x$, $u(x)=x(20-2x)$ auf $(0,10)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$u'=20-4x=0\\Rightarrow x=5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$y=10$, $U=50$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$u''=-4<0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Nebenbedingung allein garantiert kein Maximum — Krümmung/Endpunkte prüfen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Substitution $y=20-2x$ liefert Peak bei $x=5$, $y=10$, $U=50$."
+  },
+  {
+    "case_id": "MATH 11.110",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two inputs on x+y=10: maximise output Q=xy",
+    "context_en": "A firm produces output $Q=xy$ using inputs that must satisfy the resource constraint $x+y=10$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Substituting the resource constraint gives output as a function of $x$ alone, with slope $10-2x$.",
+      "The only positive flat-slope candidate is $x=5$, with $y=5$ and output $25$.",
+      "At that split the output curve bends downward, confirming a local maximum.",
+      "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
+      "The constraint $x+y=10$ already forces output $25$ for every feasible pair $(x,y)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nSubstitute $y=10-x$ into $Q=xy$ to get a function of $x$ alone:\n\n$$\nq(x) = x(10-x) = 10x-x^{2}\n$$\n\n$$\n0<x<10.\n$$\n\nDifferentiate:\n\n$$\nq'(x) = 10-2x.\n$$\n\nThe reduced output has slope $10-2x$, matching the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSet the slope to zero inside $(0,10)$:\n\n$$\nq'(x) = 10-2x = 0\n$$\n\n$$\nx = 5\n$$\n\nhence $y=5$ and $Q=5\\cdot 5=25$. That is the unique positive flat-slope candidate, with output $25$\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the bend at the equal split:\n\n$$\nq''(x) = -2\n$$\n\n$$\nq''(5) = -2<0.\n$$\n\nA downward bend at a flat slope confirms a local maximum of output. The equal split maximises $Q$ locally on the constraint.\n\nSo the statement is True.",
+      "**D.** → True\n\nFor any other split with $x+y=10$ and $x\\neq 5$, the reduced area satisfies\n\n$$\nq(x) = 10x-x^{2}\n$$\n\n$$\nq(x) = 25-(x-5)^{2}<25.\n$$\n\nEquivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every other feasible pair yields strictly smaller output than $25$\n\n$$\nx+y = 10\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nThe constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives\n\n$$\nQ = 9\n$$, while $5+5$ gives\n\n$$\n25\n$$. The constraint does not force output $25$ for every feasible pair\n\n$$\nx+y = 10\n$$\n\n$$\nQ = xy\n$$\n\n$$\nQ = 9\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Output $Q=xy$ on the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$:\n\n$$q(x)=x(10-x)=10x-x^{2},\\qquad 0<x<10,$$\n\nwith slope $q'(x)=10-2x$ and bend $q''(x)=-2<0$. Flat slope at $x=5$ gives $y=5$ and output $25$. The downward bend confirms a local maximum, and for every other split with $x+y=10$ one has $q(x)<25$ (equivalently $(x-y)^{2}>0$ unless $x=y$). The constraint does not force output $25$ for every feasible pair — only for the equal split. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Zwei Inputs auf x+y=10: Output Q=xy maximieren",
+    "context_de_existing": "Eine Firma produziert Output $Q=xy$ mit Inputs, die die Ressourcenbeschränkung $x+y=10$ erfüllen müssen, mit $x>0$ und $y>0$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Einsetzen der Ressourcenbeschränkung liefert den Output als Funktion von $x$ allein, mit Steigung $10-2x$.",
+      "Der einzige positive flache Kandidat ist $x=5$, mit $y=5$ und Output $25$.",
+      "An dieser Aufteilung biegt die Outputkurve nach unten und bestätigt ein lokales Maximum.",
+      "Jede andere Aufteilung mit $x+y=10$ liefert streng kleineren Output als $25$.",
+      "Die Beschränkung $x+y=10$ erzwingt bereits Output $25$ für jedes zulässige Paar $(x,y)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$q(x)=x(10-x)$, $q'=10-2x$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$q'=0\\Rightarrow x=5$, $q=25$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$q''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nStrenges Maximum einer nach unten geöffneten Parabel.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVerschiedene Paare auf der Geraden haben verschiedene Produkte.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Auf $x+y=10$ maximiert $Q=xy$ bei $x=y=5$ mit $Q=25$."
+  },
+  {
+    "case_id": "MATH 11.111",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "City bike hire: when does a price rise help revenue?",
+    "context_en": "A city bike-hire firm estimates that if the daily rental price is $p$ euros (with $0<p<50$), the number of bikes hired that day is $D(p)=100-2p$. Managers want to know how price changes affect revenue and how sensitive demand is to price. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Daily revenue, as a function of price, is $R(p)=100p-2p^{2}$.",
+      "Revenue is maximised at a daily price of $25$ euros, and that peak revenue is $1250$ euros.",
+      "At the $25$-euro price, demand is unit elastic.",
+      "At a price of $20$ euros, a small further price increase would still raise the firm's daily revenue.",
+      "At the $25$-euro price demand is perfectly inelastic, because elasticity has absolute value $1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nDaily revenue is price times quantity demanded:\n\n$$\nR(p) = p\\cdot D(p)\n$$\n\n$$\nR(p) = p(100-2p)\n$$\n\n$$\nR(p) = 100p-2p^{2}.\n$$\n\nThat quadratic in $p$ matches the claim exactly\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**B.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nMaximise revenue by setting its slope to zero:\n\n$$\nR'(p) = 100-4p = 0\n$$\n\n$$\np = 25.\n$$\n\nThe bend $R''(p)=-4<0$ confirms a peak. Peak revenue is\n\n$$\nR(25) = 100\\cdot 25-2\\cdot 625\n$$\n\n$$\nR(25) = 2500-1250\n$$\n\n$$\n2500 - 1250 = 1250\n$$\n\n$$\nR(25) = 1250 = 1250\n$$\n\n$$\nR(25) = 1250.\n$$\n\nBoth the maximising price and the peak revenue match the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nPoint price elasticity of demand is\n\n$$\n\\varepsilon(p) = \\dfrac{-2\\cdot p}{100-2p}.\n$$\n\nAt $p=25$,\n\n$$\n\\varepsilon(25) = \\dfrac{-50}{100-50}\n$$\n\n$$\n\\varepsilon(25) = \\dfrac{-50}{50}\n$$\n\n$$\n\\varepsilon(25) = -1.\n$$\n\nDemand is unit elastic at the revenue-maximising price\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**D.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nAt $p=20$, marginal revenue is still positive:\n\n$$\nR'(20) = 100-80\n$$\n\n$$\n100 - 80 = 20\n$$\n\n$$\nR'(20) = 20 = 20\n$$\n\n$$\nR'(20) = 20>0.\n$$\n\nA positive slope means a small further price increase raises daily revenue. (Equivalently $|\\varepsilon(20)|=40/60=2/3<1$, so demand is inelastic and a price rise helps revenue.)\n\nSo the statement is True.",
+      "**E.** → False\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nUnit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity.\n\n$$\n|\\varepsilon| = 1\n$$\n\n$$\n\\varepsilon = 0\n$$\n\n$$\np = 25\n$$\n\n$$\n\\varepsilon = -1\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Demand is $D(p)=100-2p$ for $0<p<50$. Revenue as a function of price is\n\n$$R(p)=p\\cdot D(p)=100p-2p^{2}.$$\n\nDifferentiate twice:\n\n$$R'(p)=100-4p,\\qquad R''(p)=-4<0.$$\n\nFlat revenue at $p=25$ gives peak revenue $R(25)=1250$. Point elasticity is\n\n$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2p}{100-2p},$$\n\nso $\\varepsilon(25)=-1$ (unit elastic). At $p=20$, $|\\varepsilon|<1$ (inelastic) and $R'(20)=20>0$, so a small price rise still raises revenue. Unit elasticity is not perfect inelasticity ($|\\varepsilon|=0$).",
+    "title_de_existing": "Stadtradverleih: wann hilft eine Preiserhöhung dem Umsatz?",
+    "context_de_existing": "Eine städtische Fahrradverleihfirma schätzt: Bei Tagesmietpreis $p$ Euro (mit $0<p<50$) ist die Zahl gemieteter Räder $D(p)=100-2p$. Manager wollen wissen, wie Preisänderungen den Erlös beeinflussen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Tageserlös als Funktion des Preises ist $R(p)=100p-2p^{2}$.",
+      "Der Erlös wird bei einem Tagespreis von $25$ Euro maximiert, und dieser Maximalerlös beträgt $1250$ Euro.",
+      "Beim $25$-Euro-Preis ist die Nachfrage einheitselastisch.",
+      "Bei einem Preis von $20$ Euro würde eine kleine weitere Preiserhöhung den Tageserlös der Firma noch steigern.",
+      "Beim $25$-Euro-Preis ist die Nachfrage vollkommen unelastisch, weil der Betrag der Elastizität $1$ ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R=p(100-2p)=100p-2p^{2}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$R'=100-4p=0\\Rightarrow p=25$, $R=1250$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$\\varepsilon=-2p/D$; bei $p=25$, $D=50$, $\\varepsilon=-1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $p=20$ ist $R'>0$ — Preiserhöhung steigert Erlös.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$|\\varepsilon|=1$ ist einheitselastisch, nicht vollkommen unelastisch ($\\varepsilon=0$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erlöspeak bei $p=25$ mit $R=1250$ und $|\u000barepsilon|=1$. Einheitselastisch $\\neq$ vollkommen unelastisch."
+  },
+  {
+    "case_id": "MATH 11.112",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Theatre tickets: match the revenue peak to unit elasticity",
+    "context_en": "A small theatre sells tickets at price $p$ euros, with $0<p<40$. Audience size that evening is $D(p)=120-3p$. The box office wants the price that maximises ticket revenue and wants to see how that price relates to demand sensitivity. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Ticket revenue expands to $R(p)=120p-3p^{2}$, and revenue has a flat slope at $20$ euros.",
+      "At $20$ euros, demand is unit elastic.",
+      "At $20$ euros the revenue curve bends downward, so that fare is a local revenue peak.",
+      "At $20$ euros the theatre sells $60$ tickets and earns $1200$ euros.",
+      "For this demand curve, the price that flattens revenue can differ from the unit-elastic price."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTicket revenue is price times audience:\n\n$$\nR(p) = p(120-3p)\n$$\n\n$$\nR(p) = 120p-3p^{2}.\n$$\n\nSet the slope to zero:\n\n$$\nR'(p) = 120-6p = 0\n$$\n\n$$\np = 20.\n$$\n\nRevenue expands to the claimed quadratic and has a flat slope at $20$ euros.\n\nSo the statement is True.",
+      "**B.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nPoint elasticity at the critical fare is\n\n$$\n\\varepsilon(p) = \\dfrac{-3p}{120-3p}.\n$$\n\nAt $p=20$,\n\n$$\n\\varepsilon(20) = \\dfrac{-60}{120-60}\n$$\n\n$$\n\\varepsilon(20) = \\dfrac{-60}{60}\n$$\n\n$$\n\\varepsilon(20) = -1.\n$$\n\nDemand is unit elastic at $20$ euros.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the bend of revenue at $20$ euros:\n\n$$\nR''(p) = -6\n$$\n\n$$\nR''(20) = -6<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. That fare is a local revenue peak.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt $p=20$, audience size and revenue are\n\n$$\nD(20) = 120-60\n$$\n\n$$\n120 - 60 = 60\n$$\n\n$$\nD(20) = 60 = 60\n$$\n\n$$\nR(20) = 20\\cdot 60\n$$\n\n$$\n20\\times 60 = 1200 = 1200.\n$$\n\nThe theatre sells $60$ tickets and earns $1200$ euros, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nFor this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ.\n\n$$\nR'(p) = 0\n$$\n\n$$\n|\\varepsilon(p)| = 1\n$$\n\n$$\np = 20\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Theatre demand is $D(p)=120-3p$ for $0<p<40$. Revenue is\n\n$$R(p)=120p-3p^{2},$$\n\nwith $R'(p)=120-6p$ and $R''(p)=-6<0$. Flat revenue at $p=20$ is a local peak. Elasticity\n\n$$\\varepsilon(p)=\\dfrac{-3p}{120-3p}$$\n\ngives $\\varepsilon(20)=-1$, so the revenue-flattening price and the unit-elastic price coincide. At $p=20$ the theatre sells $D(20)=60$ tickets and earns $R(20)=1200$. For linear demand, those two prices are the same point — they cannot differ. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Theatertickets: Umsatzmaximum an Einheitselastizität koppeln",
+    "context_de_existing": "Ein kleines Theater verkauft Tickets zum Preis $p$ Euro, mit $0<p<40$. Die Abendzuschauerzahl ist $D(p)=120-3p$. Die Kasse will den erlösmaximierenden Preis und den Zusammenhang zur Elastizität. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Ticketerlös expandiert zu $R(p)=120p-3p^{2}$, und der Erlös hat bei $20$ Euro flache Steigung.",
+      "Bei $20$ Euro ist die Nachfrage einheitselastisch.",
+      "Bei $20$ Euro biegt die Erlöskurve nach unten, also ist dieser Tarif ein lokales Erlösmaximum.",
+      "Bei $20$ Euro verkauft das Theater $60$ Tickets und verdient $1200$ Euro.",
+      "Bei dieser Nachfragekurve kann der Preis, der den Erlös flacht, vom einheitselastischen Preis abweichen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R'=120-6p=0\\Rightarrow p=20$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$\\varepsilon=-3p/D$; bei $p=20$, $D=60$, $\\varepsilon=-1$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$R''=-6<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$D(20)=60$, $R=1200$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nBei linearer Nachfrage fallen Erlöspeak und $|\u000barepsilon|=1$ zusammen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erlöspeak bei $p=20$ mit $|\u000barepsilon|=1$, $60$ Tickets, $R=1200$."
+  },
+  {
+    "case_id": "MATH 11.113",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Online shop: two ways to read marginal revenue at one price",
+    "context_en": "An online shop faces demand $Q=D(p)=100-2p$ for a gadget. Analysts sometimes work with price $p$ and sometimes with quantity $Q$. Today the posted price is $p=20$ euros. Managers care about revenue and about how sensitive demand is to price. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "At $20$ euros the shop sells $60$ gadgets, and demand is inelastic with elasticity $-\\dfrac{2}{3}$.",
+      "Using the elasticity route, marginal revenue at that point equals $-10$ euros per extra gadget.",
+      "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at sixty gadgets.",
+      "The two calculations agree, so the elasticity shortcut matches direct differentiation of revenue with respect to quantity.",
+      "Because that marginal revenue is not zero, the $20$-euro price does not maximise the shop's revenue."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nAt $p=20$, quantity sold is $D(20)=100-40=60$. Point elasticity is\n\n$$\n\\varepsilon = \\dfrac{-2\\cdot 20}{60}\n$$\n\n$$\n\\varepsilon = -\\dfrac{2}{3}.\n$$\n\nAbsolute elasticity $2/3<1$, so demand is inelastic at that price. Both the quantity and the elasticity match the claim.\n\n$$\np = 20\n$$\n\n$$\nD(20) = 100-40 = 60\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nThe elasticity route to marginal revenue uses\n\n$$\nMR = p\\left(1+\\dfrac{1}{\\varepsilon}\\right).\n$$\n\nWith $p=20$ and $\\varepsilon=-2/3$,\n\n$$\nMR = 20\\left(1+\\dfrac{1}{-2/3}\\right)\n$$\n\n$$\nMR = 20\\left(1-\\dfrac{3}{2}\\right)\n$$\n\n$$\nMR = 20\\left(-\\dfrac{1}{2}\\right)\n$$\n\n$$\nMR = -10.\n$$\n\nMarginal revenue equals $-10$ euros per extra gadget.\n\nSo the statement is True.",
+      "**C.** → True\n\nInvert demand to $p=(100-Q)/2$ and write revenue as a function of quantity:\n\n$$\nR(Q) = p(Q)\\cdot Q\n$$\n\n$$\nR(Q) = \\dfrac{100-Q}{2}\\cdot Q\n$$\n\n$$\nR(Q) = 50Q-\\dfrac{Q^{2}}{2}.\n$$\n\nDifferentiate:\n\n$$\nR'(Q) = 50-Q\n$$\n\n$$\nR'(60) = 50-60\n$$\n\n$$\n50 - 60 = -10\n$$\n\n$$\nR'(60) = -10 = -10\n$$\n\n$$\n50 - 60 = -10 = -10.\n$$\n\nDirect differentiation also gives marginal revenue $-10$ at sixty gadgets.\n\nSo the statement is True.",
+      "**D.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nThe elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue\n\nMatching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.\n\n$$\nMR = -10\n$$\n\n$$\nR'(60) = -10\n$$\n\n$$\nR' = C'\n$$\n\n$$\nP' = 0\n$$\n\n$$\nP' = R'-C'\n$$\n\nSo the statement is True.",
+      "**E.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nRevenue is maximised where marginal revenue is zero (and the bend of $R$ is downward). Here $MR=-10\\neq 0$ at the $20$-euro price, so that price is not a revenue maximum. (Indeed $R'(Q)=0$ at $Q=50$, i.e. $p=25$.) The claim correctly refuses to call $p=20$ optimal.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Demand $Q=100-2p$ at posted price $p=20$ gives $Q=60$. Elasticity is\n\n$$\\varepsilon=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}$$\n\n(inelastic). The elasticity shortcut for marginal revenue is\n\n$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=-10.$$\n\nWriting $p=(100-Q)/2$ and $R(Q)=50Q-Q^{2}/2$ gives $R'(Q)=50-Q$, so $R'(60)=-10$ as well. The two routes agree. Because $MR\\neq 0$, the $20$-euro price is not a revenue maximum (revenue peaks where $MR=0$, at $Q=50$, $p=25$). Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Onlineshop: zwei Arten, Grenzerlös bei einem Preis zu lesen",
+    "context_de_existing": "Ein Online-Shop sieht Nachfrage $Q=D(p)=100-2p$ für ein Gadget. Analysten arbeiten manchmal mit Preis $p$, manchmal mit Menge $Q$. Heute beträgt der ausgehängte Preis $p=20$ Euro. Manager interessieren sich für Erlös und Grenzerlös. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $20$ Euro verkauft der Shop $60$ Gadgets, und die Nachfrage ist unelastisch mit Elastizität $-\\dfrac{2}{3}$.",
+      "Über die Elastizitätsroute gleicht der Grenzerlös an diesem Punkt $-10$ Euro pro Extra-Gadget.",
+      "Erlös als Funktion der Menge zu schreiben und zu differenzieren liefert ebenfalls Grenzerlös $-10$ bei sechzig Gadgets.",
+      "Die beiden Rechnungen stimmen überein, also passt der Elastizitäts-Shortcut zur direkten Differenzierung des Erlöses nach der Menge.",
+      "Weil dieser Grenzerlös nicht null ist, maximiert der $20$-Euro-Preis den Shop-Erlös nicht."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$Q=60$, $\\varepsilon=-2\\cdot 20/60=-2/3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$MR=p(1+1/\\varepsilon)=20(1-3/2)=-10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$p=(100-Q)/2$, $R=Q p$, $R'(60)=-10$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeide Wege liefern $-10$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nErlösmaximum braucht $MR=0$; hier $MR=-10\\neq 0$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bei $p=20$: $Q=60$, $\\varepsilon=-2/3$, $MR=-10$ auf beiden Wegen — kein Erlösmaximum."
+  },
+  {
+    "case_id": "MATH 11.114",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two coffee carts: which market is more price-sensitive?",
+    "context_en": "Two coffee carts charge the same cup price $p=20$ euros on a festival day. Cart A faces demand $D_A(p)=80-p$. Cart B faces demand $D_B(p)=120-2p$. Both owners care about cup revenue and about how price-sensitive their customers are. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "At $20$ euros, Cart A expects $60$ cups and has inelastic demand with elasticity $-\\dfrac{1}{3}$.",
+      "At $20$ euros, Cart B expects $80$ cups and has inelastic demand with elasticity $-\\dfrac{1}{2}$.",
+      "At this common price, Cart B's customers are more price-sensitive than Cart A's (larger absolute elasticity).",
+      "For Cart A, a small price increase from $20$ euros would still raise its revenue.",
+      "Because Cart A's demand is inelastic at $20$ euros, that price already maximises Cart A's revenue."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nAt $p=20$, Cart A expects $D_A(20)=80-20=60$ cups. Elasticity is\n\n$$\n\\varepsilon_A = \\dfrac{-1\\cdot 20}{60}\n$$\n\n$$\n\\varepsilon_A = -\\dfrac{1}{3}.\n$$\n\nAbsolute elasticity $1/3<1$, so demand is inelastic. Quantity and elasticity match the claim\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\n$$\np = 20\n$$\n\n$$\nD_A(20) = 80-20 = 60\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nAt $p=20$, Cart B expects $D_B(20)=120-40=80$ cups. Elasticity is\n\n$$\n\\varepsilon_B = \\dfrac{-2\\cdot 20}{80}\n$$\n\n$$\n\\varepsilon_B = -\\dfrac{40}{80}\n$$\n\n$$\n\\varepsilon_B = -\\dfrac{1}{2}.\n$$\n\nAbsolute elasticity $1/2<1$, so demand is inelastic. Quantity and elasticity match the claim\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**C.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nCompare absolute elasticities at the common price:\n\n$$\n|\\varepsilon_B| = \\dfrac{1}{2}>\\dfrac{1}{3}\n$$\n\n$$\n|\\varepsilon_B| = |\\varepsilon_A|.\n$$\n\nLarger absolute elasticity means greater price sensitivity. Cart B's customers are more price-sensitive than Cart A's at $p=20$\n\n$$\np = 20\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nFor Cart A, revenue $R_A(p)=p(80-p)=80p-p^{2}$ has slope\n\n$$\nR_A'(p) = 80-2p\n$$\n\n$$\nR_A'(20) = 40>0.\n$$\n\nA positive marginal revenue means a small price increase from $20$ euros still raises A's cup revenue (consistent with inelastic demand).\n\n$$\nR_A(p) = p(80-p) = 80p-p^{2}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nInelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving\n\n$$\np = 40\n$$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap.\n\n$$\np = 20\n$$\n\n$$\nR_A'(p) = 0\n$$\n\n$$\np = 40\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "At the common cup price $p=20$:\n\nCart A: $D_A=80-20=60$, $\\varepsilon_A=\\dfrac{-20}{60}=-\\dfrac{1}{3}$ (inelastic).\n\nCart B: $D_B=120-40=80$, $\\varepsilon_B=\\dfrac{-2\\cdot 20}{80}=-\\dfrac{1}{2}$ (inelastic).\n\n$|\\varepsilon_B|=1/2>|\\varepsilon_A|=1/3$, so B's customers are more price-sensitive. For A, revenue $R_A=80p-p^{2}$ has $R_A'(20)=40>0$, so a small price rise still raises A's revenue. Inelasticity at a price means a local price *increase* helps revenue — it does not mean that price already maximises revenue (A's peak is at $p=40$).",
+    "title_de_existing": "Zwei Kaffeewagen: welcher Markt ist preissensibler?",
+    "context_de_existing": "Zwei Kaffeewagen verlangen am Festivaltag denselben Tassenpreis $p=20$ Euro. Wagen A sieht Nachfrage $D_A(p)=80-p$. Wagen B sieht $D_B(p)=120-2p$. Beide Besitzer interessieren sich für Tassenerlös und Preissensitivität. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $20$ Euro erwartet Wagen A $60$ Tassen und hat unelastische Nachfrage mit Elastizität $-\\dfrac{1}{3}$.",
+      "Bei $20$ Euro erwartet Wagen B $80$ Tassen und hat unelastische Nachfrage mit Elastizität $-\\dfrac{1}{2}$.",
+      "Bei diesem gemeinsamen Preis sind B's Kunden preissensibler als A's (größerer Betrag der Elastizität).",
+      "Für Wagen A würde eine kleine Preiserhöhung ab $20$ Euro den Erlös noch steigern.",
+      "Weil A's Nachfrage bei $20$ Euro unelastisch ist, maximiert dieser Preis bereits A's Erlös."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$D_A=60$, $\\varepsilon_A=-20/60=-1/3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$D_B=80$, $\\varepsilon_B=-40/80=-1/2$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$1/2>1/3$ — B sensibler.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nUnelastisch $\\Rightarrow$ Preiserhöhung steigert Erlös.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nUnelastisch heißt nicht schon Maximum — Maximum bei $|\u000barepsilon|=1$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bei $p=20$: A unelastischer ($1/3$) als B ($1/2$). Unelastisch $\\Rightarrow$ Preiserhöhung steigert noch den Erlös."
+  },
+  {
+    "case_id": "MATH 11.115",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two products, one resource: reduce then maximise profit",
+    "context_en": "A workshop makes two products in amounts $x$ and $y$. Profit is $P=30x+20y-x^{2}-y^{2}$, and a single resource constraint requires $x+y=10$ with $x\\ge 0$, $y\\ge 0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Substituting the resource constraint into profit gives a one-variable profit in $x$.",
+      "That reduced profit has a flat slope at $x=7.5$.",
+      "At that candidate one has $y=2.5$, and the profit curve bends downward, confirming a local profit peak.",
+      "The maximised constrained profit equals $212.5$.",
+      "Ignoring the constraint and treating $x$ and $y$ as unrelated would automatically give the same answer."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nSubstitute $y=10-x$ into profit and expand:\n\n$$\np(x) = 30x+20(10-x)-x^{2}-(10-x)^{2}\n$$\n\n$$\np(x) = 30x+200-20x-x^{2}-(100-20x+x^{2}).\n$$\n\nSimplifying, $p(x)=10x+100+20x-2x^{2}=30x+100-2x^{2}$ (equivalently $200-100+30x-2x^{2}$). Either way, profit reduces to a genuine one-variable function of $x$.\n\n$$\ny = 10-x\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nDifferentiate the reduced profit and set the slope to zero:\n\n$$\np'(x) = 30-4x = 0\n$$\n\n$$\n4x = 30\n$$\n\n$$\nx = 7.5.\n$$\n\n(The critical point lies in $[0,10]$.) The reduced profit has a flat slope at $x=7.5$\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $x=7.5$ one has $y=10-7.5=2.5$. The bend of reduced profit is\n\n$$\np''(x) = -4<0,\n$$\n\nso the flat spot is a local profit peak by the second-derivative test. Both the complementary output and the downward bend match the claim\n\n$$\ny = 2.5\n$$\n\n$$\nx = 7.5\n$$\n\n$$\ny = 10-7.5 = 2.5\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate reduced profit at the peak:\n\n$$\np(7.5) = 30\\cdot 7.5+100-2\\cdot(7.5)^{2}\n$$\n\n$$\np(7.5) = 225+100-2\\cdot 56.25\n$$\n\n$$\np(7.5) = 325-112.5 = 212.5\n$$\n\n$$\n325 - 112.5 = 212.5\n$$\n\n$$\np(7.5) = 212.5.\n$$\n\nMaximised constrained profit equals $212.5$, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nIgnoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving\n\n$$\n(x,y) = (15,10)\n$$\n\n, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.\n\n$$\n\\partial P/\\partial x = 30-2x = 0\n$$\n\n$$\n\\partial P/\\partial y = 20-2y = 0\n$$\n\n$$\n(x,y) = (15,10)\n$$\n\n$$\nx+y = 10\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:\n\n$$\np(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=10x+200-x^{2}-(100-20x+x^{2})=30x+100-2x^{2}\n$$\n\nThen $p'(x)=30-4x$ vanishes at $x=7.5$, with $y=2.5$ and $p''=-4<0$ (local peak). Maximised constrained profit is\n\n$$p(7.5)=30\\cdot 7.5+100-2\\cdot(7.5)^{2}=225+100-112.5=212.5.$$\n\nIgnoring the constraint and optimising $x,y$ separately yields a different unconstrained critical point — not the same answer. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Zwei Produkte, eine Ressource: reduzieren, dann Gewinn maximieren",
+    "context_de_existing": "Eine Werkstatt fertigt zwei Produkte in Mengen $x$ und $y$. Gewinn $P=30x+20y-x^{2}-y^{2}$, eine Ressourcenbeschränkung verlangt $x+y=10$ mit $x\\ge 0$, $y\\ge 0$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Einsetzen der Ressourcenbeschränkung in den Gewinn liefert einen Einvariablen-Gewinn in $x$.",
+      "Dieser reduzierte Gewinn hat bei $x=7{,}5$ flache Steigung.",
+      "An diesem Kandidaten gilt $y=2{,}5$, und die Gewinnkurve biegt nach unten und bestätigt ein lokales Gewinnmaximum.",
+      "Der maximierte beschränkte Gewinn beträgt $212{,}5$.",
+      "Die Beschränkung zu ignorieren und $x$, $y$ als unabhängig zu behandeln würde automatisch dieselbe Antwort liefern."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$y=10-x$ einsetzen.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$p'=30-4x=0\\Rightarrow x=7{,}5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$y=2{,}5$, $p''=-4<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nEinsetzen liefert $212{,}5$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nOhne Beschränkung anderes Optimum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Auf $x+y=10$: Peak bei $x=7{,}5$, $y=2{,}5$, $P=212{,}5$."
+  },
+  {
+    "case_id": "MATH 11.116",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "River paddock: three-sided fence maximises area",
+    "context_en": "A farmer fences a rectangular riverside paddock using $40$ metres of fence for three sides only (the river forms the fourth side). Let $x$ be the length of each side perpendicular to the river. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "With three sides fenced, enclosed area can be written as a function of the perpendicular side alone.",
+      "Area has a flat slope when each perpendicular side is $10$ metres.",
+      "Then the riverside side is $20$ metres, and the area curve bends downward, so that layout maximises area locally.",
+      "Maximal area is $200$ square metres.",
+      "The same dimensions would also maximise area if all four sides had to be fenced with the same $40$ metres."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWith the river as one side, fencing covers two perpendicular sides $x$ and the parallel side $40-2x$. Enclosed area becomes a function of the perpendicular side alone:\n\n$$\nA(x) = x(40-2x) = 40x-2x^{2}\n$$\n\n$$\n0<x<20.\n$$\n\nThat single-variable reduction is exactly what the claim asserts.\n\nSo the statement is True.",
+      "**B.** → True\n\nMaximise area by setting its slope to zero:\n\n$$\nA'(x) = 40-4x = 0\n$$\n\n$$\nx = 10.\n$$\n\nArea has a flat slope when each perpendicular side is $10$ metres.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $x=10$ the riverside side is $40-20=20$ metres. The bend\n\n$$\nA''(x) = -4\n$$\n\n$$\nA''(10) = -4<0\n$$\n\nconfirms a local maximum. Layout $10$–$20$–$10$ maximises area locally, matching the claim\n\n$$\nx = 10\n$$\n\n$$\n40-20 = 20\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate area at the critical layout:\n\n$$\nA(10) = 10\\cdot 20\n$$\n\n$$\n10\\times 20 = 200\n$$\n\n$$\nA(10) = 200.\n$$\n\nMaximal area is $200$ square metres, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nIf all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, so $y=20-x$ and $A=x(20-x)$, maximised at the $10\\times 10$ square of area $100$ — not at $10\\times 20$. The three-sided optimum is a different problem with different dimensions. The claim is false.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Three-sided riverside fence of $40$ m: two perpendicular sides $x$ and riverside side $40-2x$, so area is\n\n$$A(x)=x(40-2x)=40x-2x^{2},\\qquad 0<x<20.$$\n\nDifferentiate twice:\n\n$$A'(x)=40-4x,\\qquad A''(x)=-4<0.$$\n\nFlat slope at $x=10$ gives riverside length $20$ and $A(10)=200$. The downward bend confirms a local maximum. If all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, yielding a different optimum (a $10\\times 10$ square of area $100$) — not the same dimensions.",
+    "title_de_existing": "Flusskoppel: dreiseitiger Zaun maximiert die Fläche",
+    "context_de_existing": "Ein Landwirt zäunt ein rechteckiges Flusspaddock mit $40$ Metern Zaun nur für drei Seiten (der Fluss bildet die vierte Seite). Es sei $x$ die Länge jeder Seite senkrecht zum Fluss. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Mit drei gezäunten Seiten lässt sich die umschlossene Fläche als Funktion der senkrechten Seite allein schreiben.",
+      "Die Fläche hat flache Steigung, wenn jede senkrechte Seite $10$ Meter lang ist.",
+      "Dann ist die Flussseite $20$ Meter, und die Flächenkurve biegt nach unten, also maximiert dieses Layout die Fläche lokal.",
+      "Die Maximalfläche beträgt $200$ Quadratmeter.",
+      "Dieselben Maße würden die Fläche auch maximieren, wenn alle vier Seiten mit denselben $40$ Metern gezäunt werden müssten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$A=x(40-2x)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$A'=40-4x=0\\Rightarrow x=10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nFlussseite $20$, $A''=-4<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$A(10)=200$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVier Seiten mit $40$ m ergeben ein anderes Optimum (Quadrat $10\\times 10$ mit Fläche $100$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Dreiseitig: Maximum bei $x=10$, Flussseite $20$, Fläche $200$ — anders als beim Vierseitenzaun."
+  },
+  {
+    "case_id": "MATH 11.117",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Fixed output xy=16: minimise cost by substitution",
+    "context_en": "A firm must produce exactly $16$ units with production $Q=xy$, using inputs that cost $C=2x+8y$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Substituting $y=\\dfrac{16}{x}$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.",
+      "Cost has a flat slope at $x=8$.",
+      "Then $y=2$, total cost is $32$, and the cost curve bends upward, confirming a local cost trough.",
+      "Along $xy=16$, the cost-minimising point balances the input prices against the trade-off $\\dfrac{y}{x}$, which holds at $(x,y)=(8,2)$.",
+      "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nFrom $xy=16$ one has $y=16/x$ for $x>0$. Substitute into cost:\n\n$$\nC(x) = 2x+8\\cdot\\dfrac{16}{x}\n$$\n\n$$\nC(x) = 2x+\\dfrac{128}{x}.\n$$\n\nThat is exactly the claimed one-variable cost function\n\n$$\ny = \\dfrac{16}{x}\n$$\n\n$$\nC(x) = 2x+\\dfrac{128}{x}\n$$\n\n$$\nxy = 16\n$$\n\n$$\ny = 16/x\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nDifferentiate and set the slope to zero for $x>0$:\n\n$$\nC'(x) = 2-\\dfrac{128}{x^{2}} = 0\n$$\n\n$$\n2 = \\dfrac{128}{x^{2}}\n$$\n\n$$\nx^{2} = 64\n$$\n\n$$\nx = 8.\n$$\n\nCost has a flat slope at $x=8$\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $x=8$ one has $y=16/8=2$ and total cost\n\n$$\nC(8) = 2\\cdot 8+\\dfrac{128}{8}\n$$\n\n$$\nC(8) = 16+16\n$$\n\n$$\n16 + 16 = 32\n$$\n\n$$\nC(8) = 32 = 32\n$$\n\n$$\nC(8) = 32.\n$$\n\nThe bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold.\n\nSo the statement is True.",
+      "**D.** → True\n\nAlong $xy=16$, a cost-minimising interior point balances relative input prices against the technical trade-off. Here $C_x=2$, $C_y=8$, so $C_x/C_y=1/4$, and at $(8,2)$ one has $y/x=2/8=1/4$. The balance condition holds at that point, matching the claim\n\n$$\nxy = 16\n$$\n\n$$\nC_x = 2\n$$\n\n$$\nC_y = 8\n$$\n\n$$\nC_x/C_y = 1/4\n$$\n\n$$\ny/x = 2/8 = 1/4\n$$\n\n$$\nf'' = 0\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nReduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.\n\nOther pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary.\n\n$$\nxy = 16\n$$\n\n$$\nC = 8+32\n$$\n\n$$\n8 + 32 = 40\n$$\n\n$$\nC = 40 = 40>32\n$$\n\n$$\n32+8 = 40>32\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Fixed output $xy=16$ with cost $C=2x+8y$. Substitute $y=16/x$:\n\n$$C(x)=2x+\\dfrac{128}{x},\\qquad x>0.$$\n\nDifferentiate twice:\n\n$$C'(x)=2-\\dfrac{128}{x^{2}},\\qquad C''(x)=\\dfrac{256}{x^{3}}.$$\n\nFlat slope at $x=8$ gives $y=2$, total cost $C(8)=16+16=32$, and $C''(8)>0$ confirms a local cost trough. At $(8,2)$ the input-price trade-off balances: $\\dfrac{C_x}{C_y}=\\dfrac{2}{8}=\\dfrac{1}{4}$ matches $\\dfrac{y}{x}=\\dfrac{2}{8}$. Other pairs on $xy=16$ have different costs — substitution is essential. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Fester Output xy=16: Kosten durch Substitution minimieren",
+    "context_de_existing": "Eine Firma muss genau $16$ Einheiten mit Produktion $Q=xy$ erzeugen, mit Inputkosten $C=2x+8y$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Einsetzen von $y=\\dfrac{16}{x}$ in die Kosten liefert $C(x)=2x+\\dfrac{128}{x}$ für $x>0$.",
+      "Die Kosten haben bei $x=8$ flache Steigung.",
+      "Dann $y=2$, Gesamtkosten $32$, und die Kostenkurve biegt nach oben und bestätigt ein lokales Kostental.",
+      "Entlang $xy=16$ gleicht der kostenminimierende Punkt die Inputpreise gegen den Trade-off $\\dfrac{y}{x}$ ab, was hier zum Verhältnis $x/y=4$ passt.",
+      "Jedes andere Paar mit $xy=16$ hat dieselben Kosten $32$, also ist Substitution unnötig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C=2x+8\\cdot 16/x=2x+128/x$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C'=2-128/x^{2}=0\\Rightarrow x=8$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$y=2$, $C=32$, $C''>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$x/y=4$ entspricht dem Preisverhältnis $8/2$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAndere Paare haben andere Kosten.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Auf $xy=16$: Kostenmin bei $x=8$, $y=2$, $C=32$."
+  },
+  {
+    "case_id": "MATH 11.118",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Ferry tickets: story of revenue and demand sensitivity",
+    "context_en": "A coastal ferry sells day-return tickets at price $p$ euros. For prices between $0$ and $90$ euros, passenger demand that day is $D(p)=90-p$. The operator cares about ticket revenue and about how sensitive passenger numbers are to the fare. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Ticket revenue as a function of the fare is $R(p)=90p-p^{2}$, and revenue is maximised at a fare of $45$ euros, where revenue equals $2025$ euros.",
+      "At the $45$-euro fare, demand is unit elastic.",
+      "If the ferry instead charges $30$ euros, a small fare increase would raise ticket revenue.",
+      "If the ferry charges $60$ euros, a small fare increase would lower ticket revenue.",
+      "Whenever demand is elastic (absolute elasticity greater than $1$), that fare already maximises revenue."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTicket revenue is fare times passengers:\n\n$$\nR(p) = p(90-p)\n$$\n\n$$\nR(p) = 90p-p^{2}.\n$$\n\nSet the slope to zero:\n\n$$\nR'(p) = 90-2p = 0\n$$\n\n$$\np = 45.\n$$\n\nPeak revenue is $R(45)=90\\cdot 45-45^{2}=4050-2025=2025$. Fare, revenue function, and peak level all match the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nPoint elasticity at the critical fare is\n\n$$\n\\varepsilon(p) = \\dfrac{-p}{90-p}.\n$$\n\nAt $p=45$,\n\n$$\n\\varepsilon(45) = \\dfrac{-45}{90-45}\n$$\n\n$$\n\\varepsilon(45) = \\dfrac{-45}{45}\n$$\n\n$$\n\\varepsilon(45) = -1.\n$$\n\nDemand is unit elastic at the $45$-euro fare\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $p=30$, marginal revenue is still positive:\n\n$$\nR'(30) = 90-60\n$$\n\n$$\n90 - 60 = 30\n$$\n\n$$\nR'(30) = 30 = 30\n$$\n\n$$\nR'(30) = 30>0.\n$$\n\nA positive slope means a small fare increase raises ticket revenue. (Equivalently $|\\varepsilon(30)|=30/60=1/2<1$, inelastic.) The statement is True\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt $p=60$, marginal revenue is already negative:\n\n$$\nR'(60) = 90-120\n$$\n\n$$\n90 - 120 = -30\n$$\n\n$$\nR'(60) = -30 = -30\n$$\n\n$$\nR'(60) = -30<0.\n$$\n\nA negative slope means a small fare increase lowers ticket revenue. (Equivalently $|\\varepsilon(60)|=60/30=2>1$, elastic.) The statement is True\n\nFor ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.\n\nSo the statement is True.",
+      "**E.** → False\n\nRelate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.\n\nElastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand.\n\n$$\n|\\varepsilon| = 1\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Ferry demand is $D(p)=90-p$ for $0<p<90$. Revenue is\n\n$$R(p)=90p-p^{2},$$\n\nwith $R'(p)=90-2p$ and $R''(p)=-2<0$. Flat revenue at $p=45$ gives $R(45)=2025$. Elasticity $\\varepsilon(p)=-p/(90-p)$ yields $\\varepsilon(45)=-1$. At $p=30$, $R'(30)=30>0$ so a small fare rise raises revenue; at $p=60$, $R'(60)=-30<0$ so a small fare rise lowers revenue. Elastic demand ($|\\varepsilon|>1$) means a price *cut* raises revenue — it does not mean the fare already maximises revenue. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Fährtickets: Geschichte von Umsatz und Nachfragesensitivität",
+    "context_de_existing": "Eine Küstenfähre verkauft Tagesrückfahrkarten zum Preis $p$ Euro. Für Preise zwischen $0$ und $90$ Euro ist die Tagespassagiernachfrage $D(p)=90-p$. Der Betreiber interessiert sich für Ticketerlös und Sensitivität. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Ticketerlös als Funktion des Tarifs ist $R(p)=90p-p^{2}$, und der Erlös wird bei einem Tarif von $45$ Euro maximiert.",
+      "Beim $45$-Euro-Tarif ist die Nachfrage einheitselastisch.",
+      "Wenn die Fähre stattdessen $30$ Euro verlangt, würde eine kleine Tariferhöhung den Ticketerlös steigern.",
+      "Wenn die Fähre $60$ Euro verlangt, würde eine kleine Tariferhöhung den Ticketerlös senken.",
+      "Wann immer die Nachfrage elastisch ist (Betrag der Elastizität größer als $1$), maximiert dieser Tarif bereits den Erlös."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R'=90-2p=0\\Rightarrow p=45$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$\\varepsilon=-p/(90-p)=-1$ bei $p=45$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei $p=30$ unelastisch/$R'>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $p=60$ elastisch/$R'<0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nElastisch bedeutet: Preissenkung steigert Erlös — das Maximum liegt bei $|\u000barepsilon|=1$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erlöspeak bei $p=45$ mit $|\u000barepsilon|=1$. Elastisch $\\Rightarrow$ nicht schon Maximum."
+  },
+  {
+    "case_id": "MATH 11.119",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Open box from a sheet: reduce volume then prove the peak",
+    "context_en": "A square sheet of side $12$ cm has equal squares of side $x$ cut from each corner, and the edges are folded up to make an open box. The volume of the box should be maximised for $0<x<6$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The box has height $x$ and base side $12-2x$, so volume is $V(x)=x(12-2x)^{2}$.",
+      "Expanding and differentiating gives a cubic volume whose slope is a quadratic in $x$.",
+      "Inside $(0,6)$ the only flat-slope cut size is $x=2$.",
+      "At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally.",
+      "Finding the flat-slope cut alone, without checking the bend or the ends of the interval, already proves the global maximum on $(0,6)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAfter cutting squares of side $x$ from each corner and folding, the box has height $x$ and square base of side $12-2x$. Volume is therefore\n\n$$\nV(x) = x(12-2x)^{2}\n$$\n\n$$\n0<x<6.\n$$\n\nThat geometric description matches the claim exactly.\n\nSo the statement is True.",
+      "**B.** → True\n\nExpand and differentiate. First\n\n$$\nV(x) = x(144-48x+4x^{2})\n$$\n\n$$\nV(x) = 144x-48x^{2}+4x^{3}.\n$$\n\nThe derivative is the quadratic\n\n$$\nV'(x) = 144-96x+12x^{2}.\n$$\n\nExpanding produces a cubic volume whose slope is a quadratic in $x$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nFactor the slope and find roots inside $(0,6)$:\n\n$$\nV'(x) = 12(x^{2}-8x+12)\n$$\n\n$$\nV'(x) = 12(x-2)(x-6).\n$$\n\nThe roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is the excluded right endpoint where the base collapses. The only interior flat-slope cut is $x=2$\n\n$$\nx = 2\n$$\n\n$$\nx = 6\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt $x=2$, volume and bend are\n\n$$\nV(2) = 2\\cdot 8^{2}\n$$\n\n$$\nV(2) = 128,\n$$\n\nand differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives\n\n$$\nV''(2) = -48<0\n$$. Downward bend plus volume $128$ means that cut maximises volume locally.\n\nSo the statement is True.",
+      "**E.** → False\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nFinding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument.\n\n$$\nV'(x) = 0\n$$\n\n$$\nx = 2\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Open box from a $12$ cm square sheet: cut squares of side $x$ from each corner ($0<x<6$). Height is $x$ and base side is $12-2x$, so\n\n$$V(x)=x(12-2x)^{2}=4x(6-x)^{2}.$$\n\nExpanding, $V(x)=144x-48x^{2}+4x^{3}$, with slope the quadratic\n\n$$V'(x)=144-96x+12x^{2}=12(x-2)(x-6).$$\n\nInside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint of the open interval). At $x=2$, $V''(2)<0$ and $V(2)=128$, so that cut maximises volume locally. Finding the flat-slope cut alone, without bend or endpoint comparison, does not finish a global-max proof on $(0,6)$.",
+    "title_de_existing": "Offene Schachtel aus einem Blatt: Volumen reduzieren, Maximum beweisen",
+    "context_de_existing": "Ein quadratisches Blatt der Seite $12$ cm hat gleiche Quadrate der Seite $x$ aus jeder Ecke ausgeschnitten, und die Ränder werden hochgeklappt zu einer offenen Schachtel. Das Volumen der Schachtel soll für $0<x<6$ maximiert werden. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Schachtel hat Höhe $x$ und Grundseite $12-2x$, also Volumen $V(x)=x(12-2x)^{2}$.",
+      "Ausklappen und Differenzieren liefert ein kubisches Volumen, dessen Steigung eine Quadratform in $x$ ist.",
+      "Im Inneren von $(0,6)$ ist die einzige flache Schnittgröße $x=2$.",
+      "Bei $x=2$ biegt die Volumenkurve nach unten und das Volumen gleicht $128$, also maximiert dieser Schnitt das Volumen lokal.",
+      "Allein die flache Schnittgröße zu finden, ohne Krümmung oder Intervallenden zu prüfen, beweist bereits das globale Maximum auf $(0,6)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKlassische Schachtelgeometrie.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$V$ kubisch, $V'$ quadratisch.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$V'=0$ in $(0,6)$ nur bei $x=2$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$V''<0$ bei $x=2$, $V(2)=128$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nKrümmung und/oder Endverhalten gehören zum Beweis.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Offene Schachtel: $V=x(12-2x)^{2}$, lokales Maximum bei $x=2$ mit $V=128$."
+  },
+  {
+    "case_id": "MATH 11.121",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Classic downward f′: signs on (1,5)",
+    "context_en": "The figure shows $f'$. Zeros are marked at $x=1$ and $x=5$; the peak is at $(3,4)$. Decide TRUE or FALSE using only the figure.",
+    "statements_en": [
+      "On $(1,5)$ the curve is above the axis, so $f$ is increasing on $(1,5)$.",
+      "At $x=5$, $f'$ changes from positive to negative, so $f$ has a local maximum at $x=5$.",
+      "At $x=3$, $f'(3)=4$, so $x=3$ is a local minimum of $f$.",
+      "On $(0,1)$ the curve is below the axis, so $f$ is decreasing there.",
+      "The steepest climb of $f$ in the window is at $x=3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the open interval $(1,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nThe figure plots the derivative $f'$, not $f$ itself. Between the marked zeros the curve sits clearly above the horizontal axis, so the slope of $f$ is positive on that open interval.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(1,5)\n$$\n\nA positive derivative means $f$ is strictly increasing on $(1,5)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nTo decide whether $f$ has a local maximum at $x=5$, apply the first-derivative test on the figure of $f'$: you need $f'(5)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nA local maximum of $f$ occurs at a zero of $f'$ where the sign of the derivative flips from positive to negative. On the figure, left of $x=5$ the curve is above the axis and just right of $x=5$ it drops below.\n\n$$\nf'(5) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 5\n$$\n\nThat is exactly the first-derivative test for a local maximum of $f$ at $x=5$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nA local minimum of $f$ requires a critical point $f'=0$ together with a $-$ to $+$ sign change. At the marked peak of the derivative graph one reads\n\n$$\nf'(3) = 4\\neq 0\n$$\n\nso $x=3$ is not even a critical point of $f$. That nonzero peak of $f'$ is where $f$ climbs most steeply in the window, not a local minimum of $f$\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\n$$\nf'(3) = 4\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**D.** → True\n\nOn the open interval $(0,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nLeft of the first zero the plotted derivative lies below the axis, so the slope of $f$ is negative on that stretch.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(0,1)\n$$\n\nA negative derivative means $f$ is decreasing on $(0,1)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nThe steepest climb of $f$ is where its slope $f'$ attains its largest positive height. On the figure that peak is marked at\n\n$$\n(3,4)\n$$\n\nso among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The figure plots the derivative $f'$, not $f$ itself. Marked zeros sit at $x=1$ and $x=5$, and the curve attains a labelled peak at\n\n$$(3,4)$$\n\nReading heights against the axis yields the sign chart of $f'$:\n\n$$f'<0\\text{ on }(0,1),\\qquad f'>0\\text{ on }(1,5),\\qquad f'<0\\text{ just right of }5$$\n\nHence $f$ decreases on $(0,1)$ and increases on $(1,5)$. The $+$ to $-$ crossing at $x=5$ is a local maximum of $f$ by the first-derivative test. At the peak of $f'$ one still has $f'(3)=4\\neq 0$, so $x=3$ is not a critical point of $f$ — it is where the upward slope of $f$ is largest in the window.",
+    "title_de_existing": "Klassisches fallendes f′: Vorzeichen auf (1,5)",
+    "context_de_existing": "Die Figur zeigt $f'$. Nullstellen sind bei $x=1$ und $x=5$ markiert; der Peak liegt bei $(3,4)$. Entscheide Wahr oder Falsch nur anhand der Figur.",
+    "statements_de_existing": [
+      "Auf $(1,5)$ liegt die Kurve über der Achse, also ist $f$ auf $(1,5)$ steigend.",
+      "Bei $x=5$ wechselt $f'$ von positiv zu negativ, also hat $f$ bei $x=5$ ein lokales Maximum.",
+      "Bei $x=3$ gilt $f'(3)=4$, also ist $x=3$ ein lokales Minimum von $f$.",
+      "Auf $(0,1)$ liegt die Kurve unter der Achse, also ist $f$ dort fallend.",
+      "Der steilste Anstieg von $f$ im Fenster liegt bei $x=3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $f'$ bedeutet steigendes $f$. Zwischen den Nullstellen liegt $f'$ über der Achse.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichenwechsel $+\\to -$ von $f'$ kennzeichnet ein lokales Maximum von $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$f'(3)=4\\neq 0$ — $x=3$ ist kein kritischer Punkt von $f$, sondern die steilste Steigung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNegatives $f'$ bedeutet fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDas Maximum von $f'$ (Höhe $4$ bei $x=3$) ist die steilste positive Steigung von $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die Figur zeigt $f'$, nicht $f$. Nullstellen bei $1$ und $5$; Peak von $f'$ bei $(3,4)$. Vorzeichen von $f'$ steuern Monotonie von $f$; der Peak von $f'$ ist die steilste Steigung, kein Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.122",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Upward f′: local max then local min of f",
+    "context_en": "The figure shows $f'$ with zeros at $x=2$ and $x=4$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=2$, $f'$ changes from positive to negative, so $f$ has a local maximum at $x=2$.",
+      "At $x=4$, $f'$ changes from negative to positive, so $f$ has a local minimum at $x=4$.",
+      "On $(2,4)$ the curve is below the axis, so $f$ is decreasing on $(2,4)$.",
+      "At $x=3$, the height of $f'$ is about $-1$.",
+      "Because $f'(3)<0$, the point $x=3$ is a local minimum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo decide whether $f$ has a local maximum at $x=2$, apply the first-derivative test on the figure of $f'$: you need $f'(2)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nThe figure shows $f'$ with a zero at $x=2$. Just left of that crossing the curve is above the axis, and just right it is below, so the sign of $f'$ flips from $+$ to $-$.\n\n$$\nf'(2) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 2\n$$\n\nBy the first-derivative test that crossing is a local maximum of $f$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nTo decide whether $f$ has a local minimum at $x=4$, apply the first-derivative test on the figure: you need $f'(4)=0$ together with a sign change from negative to positive across that zero.\n\nAt the second marked zero the figure shows the opposite flip: the curve arrives from below the axis and leaves above it.\n\n$$\nf'(4) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 4\n$$\n\nA $-$ to $+$ change of $f'$ is a local minimum of $f$ at $x=4$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the open interval $(2,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nBetween the two zeros the plotted derivative dips below the horizontal axis, so the slope of $f$ is negative on that open interval.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(2,4)\n$$\n\nHence $f$ is decreasing on $(2,4)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nThe valley of the $f'$ curve sits near $x=3$. Reading the vertical scale there, the height is about $-1$.\n\n$$\nf'(3)\n$$\n\n$$\n-1\n$$\n\nThat matches the claim's reading of the figure\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nA local minimum of $f$ needs a zero of $f'$ with a $-$ to $+$ sign change. At $x=3$ the figure only shows a negative height\n\n$$\nf'(3)\n$$\n\n$$\n-1\\neq 0\n$$\n\nso $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f'$ with two axis crossings, at $x=2$ and $x=4$. Just left of $x=2$ the curve is above the axis and just right it is below; between the zeros it dips below; at $x=4$ it returns from below to above. The sign chart is therefore\n\n$$f'>0\\text{ on }(0,2),\\qquad f'<0\\text{ on }(2,4),\\qquad f'>0\\text{ just right of }4$$\n\nso $f$ has a local maximum at $x=2$ and a local minimum at $x=4$. The valley of the $f'$ graph sits near $x=3$ with height about $-1$:\n\n$$f'(3)\\approx -1\\neq 0$$\n\nThat lowest point of $f'$ is not a critical point of $f$.",
+    "title_de_existing": "Steigendes f′: lokales Max, dann lokales Min von f",
+    "context_de_existing": "Die Figur zeigt $f'$ mit Nullstellen bei $x=2$ und $x=4$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=2$ wechselt $f'$ von positiv zu negativ, also hat $f$ bei $x=2$ ein lokales Maximum.",
+      "Bei $x=4$ wechselt $f'$ von negativ zu positiv, also hat $f$ bei $x=4$ ein lokales Minimum.",
+      "Auf $(2,4)$ liegt die Kurve unter der Achse, also ist $f$ auf $(2,4)$ fallend.",
+      "Bei $x=3$ beträgt die Höhe von $f'$ etwa $-1$.",
+      "Weil $f'(3)<0$, ist der Punkt $x=3$ ein lokales Minimum von $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVorzeichenwechsel $+\\to -$ → lokales Maximum von $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichenwechsel $-\\to +$ → lokales Minimum von $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAblesen der Skala bestätigt etwa $-1$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f'(3)<0$ bedeutet nur fallendes $f$ bei $x=3$, kein Extremum (kein Vorzeichenwechsel dort).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$f'$ wechselt bei $2$ von $+$ zu $-$ (lokales Max von $f$) und bei $4$ von $-$ zu $+$ (lokales Min). Negatives $f'$ allein macht kein Extremum."
+  },
+  {
+    "case_id": "MATH 11.123",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Easy reading of f: rise between x=1 and x=5",
+    "context_en": "The figure shows $f$. Decide TRUE or FALSE from the shape alone.",
+    "statements_en": [
+      "The graph has a local minimum near $x=1$.",
+      "The graph has a local maximum near $x=5$.",
+      "Between those turning points the graph is rising.",
+      "Near $x=3$ the graph is steepest upward in this window.",
+      "Because the graph crosses the axis near $x=0$, one must have $f'(0)=0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nHere the figure shows the level curve $f$ itself. Reading the shape, the graph bottoms out near $x=1$:\n\n$$\n\\text{local minimum of }f\\text{ near }x = 1\n$$\n\nThat lowest neighbourhood point is exactly a local minimum\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nA local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.\n\nOn the same graph of $f$, the curve reaches a local highest point near $x=5$:\n\n$$\n\\text{local maximum of }f\\text{ near }x = 5\n$$\n\nThat peak in a neighbourhood is a local maximum\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nBetween the local minimum near $x=1$ and the local maximum near $x=5$, the graph of $f$ climbs steadily:\n\n$$\nf\\text{ increasing between those turning points}\n$$\n\nA rising stretch means $f$ is increasing there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nOn the rising stretch between the turning points, the steepest climb is where the tangent looks steepest upward. On the figure that occurs near the middle of the climb:\n\n$$\n\\text{steepest upward tangent near }x = 3\n$$\n\nSo the steepest upward stretch in the window is near $x=3$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nAn axis crossing of the graph of $f$ is a root, not a critical point:\n\n$$\nf(0) = 0\n$$\n\n$$\n\\text{does not force}\n$$\n\n$$\nf'(0) = 0\n$$\n\nRoots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Here the figure shows the level curve $f$ itself, not its derivative. Reading turning points and slopes directly from the shape:\n\n- near $x=1$ the graph bottoms out (a local minimum);\n- near $x=5$ it reaches a local highest point (a local maximum);\n- between those turning points the curve climbs steadily;\n- midway on that climb, near $x=3$, the tangent looks steepest upward in the window.\n\nAn axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geometric fact from a critical point $f'=0$, so the crossing alone does not force a horizontal tangent.",
+    "title_de_existing": "Einfaches Ablesen von f: Anstieg zwischen x=1 und x=5",
+    "context_de_existing": "Die Figur zeigt $f$. Entscheide Wahr oder Falsch allein aus der Form.",
+    "statements_de_existing": [
+      "Der Graph hat nahe $x=1$ ein lokales Minimum.",
+      "Der Graph hat nahe $x=5$ ein lokales Maximum.",
+      "Zwischen diesen Wendepunkten steigt der Graph.",
+      "Nahe $x=3$ ist der Graph in diesem Fenster am steilsten aufwärts.",
+      "Weil der Graph nahe $x=0$ die Achse kreuzt, muss $f'(0)=0$ gelten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nTiefster Punkt in einer Umgebung nahe $x=1$ — lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nHöchster Punkt in einer Umgebung nahe $x=5$ — lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nZwischen Min und Max steigt die Kurve.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSteilster Anstieg im Fenster nahe $x=3$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAchsenkreuzung von $f$ erzwingt nicht $f'=0$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Am Graphen von $f$: lokales Min nahe $1$, lokales Max nahe $5$, Anstieg dazwischen. Achsenkreuzung $\\neq$ flache Steigung."
+  },
+  {
+    "case_id": "MATH 11.124",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Linear P′: expand left of the zero",
+    "context_en": "The figure shows marginal profit $P'$. It crosses the axis once near $x=4.2$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "On $(0,4)$ one has $P'>0$, so a little more output raises profit.",
+      "On $(5,6)$ one has $P'<0$, so a little more output lowers profit.",
+      "A local profit peak occurs at the marked zero of $P'$.",
+      "At $x=1$, reading the scale, $P'$ is greater than $1$.",
+      "Because $P'$ is a straight line, profit $P$ itself must be a straight line."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nMarginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.\n\nThe figure shows marginal profit $P'$ as a line that crosses the axis once near $x=4.2$. On $(0,4)$, which lies entirely left of that zero, the line sits above the axis.\n\n$$\nP'(x)>0\\quad\\text{for }x\\in(0,4)\n$$\n\nPositive marginal profit means a little more output raises profit\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nMarginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.\n\nRight of the zero, on $(5,6)$, the same line lies below the axis.\n\n$$\nP'(x)<0\\quad\\text{for }x\\in(5,6)\n$$\n\nNegative marginal profit means a little more output lowers profit\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nThe marked zero of marginal profit $P'$ is where the falling line crosses the axis near $x\\approx 4.2$. Left of that zero $P'>0$ and right of it $P'<0$:\n\n$$\nP'\\text{ changes }+\\to-\\text{ at the marked zero}\n$$\n\nThat first-derivative test is a local maximum of total profit $P$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=1$ the line is still well above the axis. Reading the shared vertical scale, the height of $P'$ there is visibly greater than $1$.\n\n$$\nP'(1)>1\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nEasy trap: the figure shows a derivative as a straight line. Integrating a nonconstant line produces a quadratic, so the original function need not itself be linear.\n\nA non-constant linear graph of $P'$ means $P''$ is a nonzero constant, so integrating once gives a quadratic total profit:\n\n$$\nP'\\text{ linear and non-constant}\\\n$$\n\n$$\nP\\text{ quadratic}\n$$\n\nProfit $P$ is therefore a parabola, not a straight line\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows marginal profit $P'$ as a falling straight line that crosses the axis once near\n\n$$x\\approx 4.2$$\n\nSo the sign chart of $P'$ is\n\n$$P'>0\\text{ on }(0,4.2),\\qquad P'<0\\text{ on }(4.2,6)$$\n\nA little more output therefore raises profit left of the zero and lowers profit right of it. The $+$ to $-$ crossing of $P'$ is a local maximum of total profit $P$. Reading the vertical scale at $x=1$ gives a height near $1.9$, hence greater than $1$. Because $P'$ is linear and non-constant, integrating once makes $P$ quadratic (a parabola), not a straight line.",
+    "title_de_existing": "Lineares P′: Expansion links der Nullstelle",
+    "context_de_existing": "Die Figur zeigt den Grenzgewinn $P'$. Er kreuzt die Achse einmal nahe $x=4{,}2$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Auf $(0,4)$ gilt $P'>0$, also erhöht etwas mehr Output den Gewinn.",
+      "Auf $(5,6)$ gilt $P'<0$, also senkt etwas mehr Output den Gewinn.",
+      "Ein lokales Gewinnmaximum liegt an der markierten Nullstelle von $P'$.",
+      "Bei $x=1$ ist $P'$ nach der Skala größer als $1$.",
+      "Weil $P'$ eine Gerade ist, muss der Gewinn $P$ selbst eine Gerade sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $P'$ → Expansion erhöht den Gewinn.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $P'$ → Expansion senkt den Gewinn.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVorzeichenwechsel $+\\to -$ an der Nullstelle → lokales Gewinnmaximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSkalenablesung bestätigt $P'(1)>1$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nLineares $P'$ bedeutet quadratisches $P$, nicht lineares $P$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P'>0$ links der Nullstelle (expandieren), $P'<0$ rechts (kontrahieren). Lineares $P'$ $\\Rightarrow$ quadratisches $P$."
+  },
+  {
+    "case_id": "MATH 11.125",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Straight f′: one critical point at x=3",
+    "context_en": "The figure shows a straight-line $f'$ crossing the axis at $x=3$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "On $(0,3)$, $f'>0$, so $f$ is increasing.",
+      "On $(3,5)$, $f'<0$, so $f$ is decreasing.",
+      "The function $f$ has a local maximum at $x=3$.",
+      "At $x=1$, $f'$ equals $2$ on the scale.",
+      "Because $f'$ is decreasing, $f$ is concave down throughout the window."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nThe figure is a straight-line graph of $f'$ that crosses the axis at $x=3$. Left of that zero the line sits above the axis.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(0,3)\n$$\n\nso $f$ is increasing on $(0,3)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(3,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nRight of the marked zero at $x=3$, the straight-line graph of $f'$ sits below the horizontal axis, so the slope of $f$ is negative on that stretch.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(3,5)\n$$\n\nA negative derivative means $f$ is decreasing on $(3,5)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo decide whether $f$ has a local maximum at $x=3$, apply the first-derivative test on the figure of $f'$: you need $f'(3)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nThe falling straight-line graph of $f'$ crosses the axis at $x=3$ from above to below:\n\n$$\nf'(3) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 3\n$$\n\nThat is the first-derivative test for a local maximum of $f$ at $x=3$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim leaps from one figure fact to a stronger conclusion. Check whether the figure actually forces that conclusion, or only supplies a weaker related reading.\n\nThe figure is a straight line for $f'$. At the abscissa $x=1$, reading the shared vertical scale gives height exactly $2$.\n\n$$\nf'(1) = 2\n$$\n\nThat coordinate reading matches the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nThe graph of $f'$ itself is a falling straight line, so its slope — the second derivative — is constantly negative:\n\n$$\nf''(x)<0\\quad\\text{throughout the window}\n$$\n\nNegative $f''$ means $f$ is concave down everywhere in view\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows a falling straight-line graph of $f'$ that crosses the axis at $x=3$. The sign chart is\n\n$$f'>0\\text{ on }(0,3),\\qquad f'<0\\text{ on }(3,5)$$\n\nso $f$ increases then decreases, and the $+$ to $-$ crossing at $x=3$ is a local maximum of $f$. At $x=1$ the vertical scale reads height $2$:\n\n$$f'(1)=2$$\n\nBecause the graph of $f'$ itself is strictly decreasing, one has $f''<0$ throughout the window, so $f$ is concave down everywhere in view.",
+    "title_de_existing": "Gerades f′: ein kritischer Punkt bei x=3",
+    "context_de_existing": "Die Figur zeigt eine geradlinige $f'$, die die Achse bei $x=3$ kreuzt. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Auf $(0,3)$ gilt $f'>0$, also ist $f$ steigend.",
+      "Auf $(3,5)$ gilt $f'<0$, also ist $f$ fallend.",
+      "Die Funktion $f$ hat bei $x=3$ ein lokales Maximum.",
+      "Bei $x=1$ gleicht $f'$ auf der Skala $2$.",
+      "Weil $f'$ fallend ist, ist $f$ im gesamten Fenster konkav nach unten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel $+\\to -$ bei $x=3$ → lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSkalenablesung: $f'(1)=2$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nFallendes $f'$ bedeutet $f''<0$ — konkav nach unten.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gerade $f'$ kreuzt bei $x=3$: links steigendes $f$, rechts fallendes $f$, lokales Maximum bei $3$. Fallendes $f'$ $\\Rightarrow$ konkav nach unten."
+  },
+  {
+    "case_id": "MATH 11.126",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Graph of f: local min at the origin and rising sides",
+    "context_en": "The figure shows $f$ itself. The curve has a lowest point at the origin and rises on both sides. Decide TRUE or FALSE.",
+    "statements_en": [
+      "The function $f$ has a local minimum at $x=0$, where $f(0)=0$.",
+      "On $(-3,0)$ the graph is falling toward the origin, so $f$ is decreasing there.",
+      "On $(0,3)$ the graph is rising, so $f$ is increasing there.",
+      "At $x=2$, reading the vertical scale, $f(2)$ is strictly greater than $2$.",
+      "An axis crossing of $f$ at $x=0$ forces $f'(0)=0$ for every differentiable $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo decide whether $f$ has a local minimum at $x=0$, apply the first-derivative test on the figure: you need $f'(0)=0$ together with a sign change from negative to positive across that zero.\n\nThe figure shows $f$ itself with a lowest point at the origin. At that turning point the height is zero.\n\n$$\nf(0) = 0\n$$\n\nand nearby points on both sides sit higher, so $x=0$ is a local minimum of $f$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nOn $(-3,0)$ the graph of $f$ falls toward the origin from the left:\n\n$$\nf\\text{ decreasing on }(-3,0)\n$$\n\nA falling stretch means $f$ is decreasing there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nOn $(0,3)$ the graph of $f$ rises away from the origin:\n\n$$\nf\\text{ increasing on }(0,3)\n$$\n\nA rising stretch means $f$ is increasing there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=2$ the curve of $f$ has already climbed past the horizontal line $y=2$ on the shared vertical scale.\n\n$$\nf(2)>2\n$$\n\nso the height is strictly greater than $2$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nAn axis crossing is only a root. Differentiability alone does not force a horizontal tangent at every root:\n\n$$\nf(0) = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\nf'(0) = 0\\text{ for every differentiable }f\n$$\n\nRoots and critical points are different geometric facts\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f$ itself: a curve with a lowest point at the origin and arms rising on both sides. So\n\n$$f(0)=0\\qquad\\text{is a local minimum of }f$$\n\nOn $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ it rises ($f$ increasing). At $x=2$ the vertical scale puts the height strictly above $2$ (visibly near $6$ or higher). The axis crossing at $x=0$ is a root $f(0)=0$; that does not by itself force a horizontal tangent for every differentiable $f$, even though in this particular picture the local min happens to sit there with a flat look.",
+    "title_de_existing": "Graph von f: lokales Min im Ursprung und steigende Seiten",
+    "context_de_existing": "Die Figur zeigt $f$ selbst. Die Kurve hat den tiefsten Punkt im Ursprung und steigt zu beiden Seiten. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Funktion $f$ hat bei $x=0$ ein lokales Minimum mit $f(0)=0$.",
+      "Auf $(-3,0)$ fällt der Graph zum Ursprung, also ist $f$ dort fallend.",
+      "Auf $(0,3)$ steigt der Graph, also ist $f$ dort steigend.",
+      "Bei $x=2$ ist $f(2)$ nach der vertikalen Skala streng größer als $2$.",
+      "Eine Achsenkreuzung von $f$ bei $x=0$ erzwingt $f'(0)=0$ für jedes differenzierbare $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nTiefster Punkt bei $0$ mit Wert $0$ — lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nFallend auf $(-3,0)$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSteigend auf $(0,3)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSkalenablesung: $f(2)>2$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAchsenkreuzung erzwingt nicht flache Steigung — hier gilt $f'(0)=0$ aus der Form, aber nicht für jedes $f$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Lokales Minimum im Ursprung; fallend links, steigend rechts. Achsenkreuzung allein erzwingt nicht $f'=0$."
+  }
+]

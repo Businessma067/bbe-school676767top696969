@@ -1,0 +1,216 @@
+CASE MATH 12.34
+ANSWER [true, true, false, true, true]
+TITLE_DE Die Konservatoriums-Bühnenkante
+CONTEXT_DE Neun Musiker — drei Geiger, drei Cellisten, zwei Flötisten, ein Pianist — sitzen zufällig in einer Reihe. Personen innerhalb einer Gruppe bleiben unterscheidbar.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher Sitzordnungen beträgt 362.880.
+  B. Die Wahrscheinlichkeit, dass alle drei Geiger auf drei aufeinanderfolgenden Stühlen sitzen, beträgt genau 1/12.
+  C. Die Wahrscheinlichkeit, dass die beiden Flötisten benachbart sitzen, ist größer als 25%.
+  D. Die Wahrscheinlichkeit, dass der Pianist auf einem Endplatz sitzt, beträgt genau 2/9.
+  E. Die Wahrscheinlichkeit, dass zugleich Geiger und Cellisten als Blöcke sitzen, ist kleiner als 2%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible seating arrangements for the nine distinct musicians. Since there are $9$ distinct musicians and $9$ distinct chairs, the number of ways to arrange them in a single row is given by the factorial of the number of musicians.
+
+The calculation for the total number of arrangements is:
+
+$$
+N = 9!
+$$
+
+$$
+N = 362\,880
+$$
+
+This result indicates there are $362,880$ possible seating arrangements. The statement claims this number is $362,880$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the probability that all three violinists sit in three consecutive chairs. To calculate this, we use the technique of treating the group of violinists as a single block. First, consider the three violinists ($V_1, V_2, V_3$) as one unit. Along with the remaining six musicians (three cellists, two flutists, and one pianist), there are effectively $1 + 6 = 7$ units to arrange in the $9$ chairs. These $7$ units can be arranged in $7!$ ways.
+
+Within the block of three violinists, the violinists themselves are distinct individuals and can be arranged in $3!$ ways.
+
+The number of arrangements where all three violinists sit together is:
+
+$$
+N_{\text{violinists together}} = 7! \times 3!
+$$
+
+$$
+N_{\text{violinists together}} = 5040 \times 6
+$$
+
+$$
+5040 \times 6 = 30240
+$$
+
+$$
+N_{\text{violinists together}} = 30\,240
+$$
+
+To find the probability, we divide this number by the total number of arrangements, $N = 9!$, calculated in the overview.
+
+$$
+P(\text{all three violinists together}) = \frac{7! \times 3!}{9!}
+$$
+
+$$
+P(\text{all three violinists together}) = \frac{7! \times 6}{9 \times 8 \times 7!}
+$$
+
+$$
+P(\text{all three violinists together}) = \frac{6}{72}
+$$
+
+$$
+P(\text{all three violinists together}) = \frac{1}{12}
+$$
+
+This probability is exactly $1/12$. The statement claims the probability is exactly $1/12$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This statement concerns the probability that the two flutists sit adjacent to each other. Similar to the previous claim, we treat the two flutists ($F_1, F_2$) as a single block. This block, along with the remaining seven musicians (three violinists, three cellists, and one pianist), forms a set of $1 + 7 = 8$ units to arrange. These $8$ units can be arranged in $8!$ ways.
+
+Within the block of two flutists, the flutists are distinct and can be arranged in $2!$ ways.
+
+The number of arrangements where the two flutists sit adjacent is:
+
+$$
+N_{\text{flutists adjacent}} = 8! \times 2!
+$$
+
+$$
+N_{\text{flutists adjacent}} = 40\,320 \times 2
+$$
+
+$$
+N_{\text{flutists adjacent}} = 80\,640
+$$
+
+To find the probability, we divide this by the total number of arrangements, $N = 9!$.
+
+$$
+P(\text{flutists adjacent}) = \frac{8! \times 2!}{9!}
+$$
+
+$$
+P(\text{flutists adjacent}) = \frac{8! \times 2}{9 \times 8!}
+$$
+
+$$
+P(\text{flutists adjacent}) = \frac{2}{9}
+$$
+
+To compare this with the claim of greater than $25\%$, we convert the fraction to a percentage.
+
+$$
+\approx 0.2222
+$$
+
+This is approximately $22.22\%$. The statement claims this probability is greater than $25\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This statement asks for the probability that the pianist sits in one of the two end chairs. There are two end chairs available (the first or the ninth chair). If the pianist occupies one of these two positions, the remaining $8$ musicians can be arranged in the remaining $8$ chairs in $8!$ ways. Since there are $2$ choices for the pianist's end chair, we multiply by $2$.
+
+The number of arrangements where the pianist sits in an end chair is:
+
+$$
+N_{\text{pianist at end}} = 2 \times 8!
+$$
+
+$$
+N_{\text{pianist at end}} = 2 \times 40\,320
+$$
+
+$$
+N_{\text{pianist at end}} = 80\,640
+$$
+
+To find the probability, we divide this by the total number of arrangements, $N = 9!$.
+
+$$
+P(\text{pianist at end}) = \frac{2 \times 8!}{9!}
+$$
+
+$$
+P(\text{pianist at end}) = \frac{2 \times 8!}{9 \times 8!}
+$$
+
+$$
+P(\text{pianist at end}) = \frac{2}{9}
+$$
+
+This probability is exactly $2/9$. The statement claims this probability is exactly $2/9$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This statement requires calculating the probability that all three violinists sit together as a block AND all three cellists sit together as a block simultaneously. We treat the three violinists as one block and the three cellists as another block. These two blocks, along with the remaining three individual musicians (two flutists and one pianist), form a set of $1 + 1 + 3 = 5$ units to arrange. These $5$ units can be arranged in $5!$ ways.
+
+Within the block of three violinists, the violinists are distinct and can be arranged in $3!$ ways. Within the block of three cellists, the cellists are distinct and can be arranged in $3!$ ways.
+
+The number of arrangements where both blocks sit together is:
+
+$$
+N_{\text{both blocks}} = 5! \times 3! \times 3!
+$$
+
+$$
+N_{\text{both blocks}} = 120 \times 6 \times 6
+$$
+
+$$
+120 \times 6 = 720
+$$
+
+$$
+720 \times 6 = 4320
+$$
+
+$$
+N_{\text{both blocks}} = 4320
+$$
+
+To find the probability, we divide this by the total number of arrangements, $N = 9!$.
+
+$$
+P(\text{violinists together AND cellists together}) = \frac{5! \times 3! \times 3!}{9!}
+$$
+
+$$
+P(\text{violinists together AND cellists together}) = \frac{4320}{362\,880}
+$$
+
+$$
+P(\text{violinists together AND cellists together}) = \frac{1}{84}
+$$
+
+To compare this with the claim of less than $2\%$, we convert the fraction to a percentage.
+
+$$
+\approx 0.0119047
+$$
+
+This is approximately $1.190\%$. The statement claims this probability is less than $2\%$.
+
+So the statement is True.
+

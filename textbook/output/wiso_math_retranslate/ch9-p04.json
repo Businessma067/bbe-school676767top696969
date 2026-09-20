@@ -1,0 +1,397 @@
+[
+  {
+    "case_id": "MATH 9.E17",
+    "short_letters": [
+      0,
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Two even maps nested both ways",
+    "context_en": "Two even maps $p(x)=x^{2} - 1$ and $q(x)=x^{2} + 1$ are nested both ways. Track highest powers, sample values, real roots, and parity of the nestings. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Both $q(p(x))$ and $p(q(x))$ have highest power $x^{4}$.",
+      "$q(p(0))=2$.",
+      "$p(q(0))=0$.",
+      "$q(p(x))$ has no real root.",
+      "Both nestings are even functions."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNesting multiplies highest powers. Each map has degree $2$, so both orders have degree $4$. Expand to confirm nothing cancels.\n\n$$q(p(x))=(x^{2}-1)^{2}+1$$\n\n$$(x^{2}-1)^{2}+1=x^{4}-2x^{2}+2$$\n\n$$p(q(x))=(x^{2}+1)^{2}-1$$\n\n$$(x^{2}+1)^{2}-1=x^{4}+2x^{2}$$\n\n$$2\\cdot 2$$\n\n$$(x^{2}+1)^{2}-1=4$$\n\n$$p(x)=x^{2}-1$$\n\nEach expansion begins with $x^{4}$. Both nested highest powers are $x^{4}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nA nested value is computed inside-out: evaluate $p$ at $0$, then feed that number into $q$.\n\n$$p(0)=-1$$\n\n$$q(p(0))=q(-1)$$\n\n$$q(p(0))=1+1$$\n\n$$q(p(0))=2$$\n\nExpanding $q(p(x))=x^{4}-2x^{2}+2$ and substituting $x=0$ gives the same $2$.\n\n$$p(x)=x^{2}-1$$\n\nThe composite highest power is the product of the two individual highest powers.\n\nThe nested value is $2$. Expanding $q(p(x))=x^{4}-2x^{2}+2$ and substituting $x=0$ gives the same $2$. The named value matches.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe other order at the same input is a different composition. Evaluate $q$ at $0$, then feed that number into $p$.\n\n$$q(0)=1$$\n\n$$p(q(0))=p(1)$$\n\n$$p(q(0))=1-1$$\n\n$$p(q(0))=0$$\n\n$$p(q(x))=x^{4}+2x^{2}$$\n\nAt $x=0$ that expansion is $0$ as well.\n\n$$p(x)=x^{2}-1$$\n\nThe nested value is $0$. Expanding $p(q(x))=x^{2}(x^{2}+2)$ displays a factor $x^{2}$, which vanishes at the origin. The named value matches.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe outer map $q(u)=u^{2}+1$ is at least $1$ for every real $u$, so composing it with anything never hits height $0$.\n\n$$q(p(x))=(x^{2}-1)^{2}+1\\ge 1$$\n\n$$(x^{2}-1)^{2}+1\\ge 1>0$$\n\n$$p(x)=x^{2}-1$$\n\nEquivalently $x^{4}-2x^{2}+2=(x^{2}-1)^{2}+1$ has no real root. There is no real root.\n\nSo the statement is True.",
+      "**E.** → True\n\nAn even inner map makes any outer function of it even, and an even outer map composed with anything even in $x$ is even as well.\n\n$$q(p(-x))=q(p(x))$$\n\n$$p(q(-x))=p(q(x))$$\n\n$$\nq(p(-x))=q(p(x))\\qquad p(q(-x)) = p(q(x))\n$$\n\n$$p(x)=x^{2}-1$$\n\nThe composite highest power is the product of the two individual highest powers.\n\nBoth expansions contain only even powers. Both nestings are even functions.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Both maps are even quadratics.\n\n$$\np(x) = x^{2}-1,\\qquad q(x) = x^{2}+1\n$$\n\nNesting multiplies degrees: $2\\cdot 2=4$ in either order. Expanding gives different quartics. An even inner map makes any outer function of it even.",
+    "title_de_existing": "Zwei gerade Abbildungen beiderseits verschachtelt",
+    "context_de_existing": "Zwei sogar Karten $p(x)=x^{2} - 1$ und $q(x)=x^{2} + 1$ sind in beiden Richtungen verschachtelt. Verfolgen Sie höchste Kräfte, Probenwerte, reelle Nullstellen und Parität der Nestungen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Sowohl $q(p(x))$ als auch $p(q(x))$ haben höchste Leistung $x^{4}$.",
+      "$q(p(0))=2$.",
+      "$p(q(0))=0$.",
+      "$q(p(x))$ hat keine reelle Nullstelle.",
+      "Beide Nestungen sind sogar Funktionen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSchachtelung multipliziert die höchsten Potenzen. Jede Abbildung hat Grad $2$, daher haben beide Zusammensetzungen Grad $4$. Ausmultiplizieren bestätigt das.\n\n$$q(p(x))=(x^{2}-1)^{2}+1=x^{4}-2x^{2}+2$$\n\n$$p(q(x))=(x^{2}+1)^{2}-1=x^{4}+2x^{2}$$\n\nBeide Grade sind $4$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nEinen geschachtelten Wert berechnet man von innen nach außen: werte $p$ bei $0$ aus und setze das Ergebnis in $q$ ein.\n\n$$p(0)=-1$$\n\n$$q(p(0))=q(-1)$$\n\n$$q(p(0))=1+1$$\n\n$$q(p(0))=2$$\n\nAusmultiplizieren von $q(p(x))=x^{4}-2x^{2}+2$ und Einsetzen von $x=0$ liefert dieselbe $2$.\n\nDer geschachtelte Wert ist $2$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie andere Reihenfolge an der gleichen Eingabe ist eine andere Zusammensetzung. Bewerten Sie $q$ bei $0$, dann geben Sie diese Zahl in $p$ ein. $$q(0)=1$$ $$p(q(0))=p(1)$$ $$p(q(0))=1-1$$ $$p(q(0))=0$$ $$p(q(x))=x^{4}+2x^{2}$$ Bei $x=0$ ist diese Erweiterung auch $0$. $$p(x)=x^{2}-1$$ Der verschachtelte Wert ist $0$. Die Erweiterung von $p(q(x))=x^{2}(x^{2}+2)$ zeigt einen Faktor $x^{2}$, der beim Ursprung verschwindet. Der benannte Wert stimmt überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDie äußere Karte $q(u)=u^{2}+1$ ist mindestens $1$ für jede echte $u$, so dass es mit etwas nie trifft Höhe $0$ komponieren. $$q(p(x))=(x^{2}-1)^{2}+1\\ge 1$$ $$(x^{2}-1)^{2}+1\\ge 1>0$$ $$p(x)=x^{2}-1$$ Entsprechend hat $x^{4}-2x^{2}+2=(x^{2}-1)^{2}+1$ keine reelle Nullstelle. Es gibt keine reelle Nullstelle.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nEine gleichmäßige innere Karte macht jede äußere Funktion von ihr gleichmäßig, und eine gleichmäßige äußere Karte, die mit allem selbst in $x$ zusammengesetzt ist, ist auch gleich. $$q(p(-x))=q(p(x))$$ $$p(q(-x))=p(q(x))$$ $$\nq(p(-x))=q(p(x))\\qquad p(q(-x)) = p(q(x))\n$$ $$p(x)=x^{2}-1$$ Die höchste Verbundleistung ist das Produkt der beiden individuellen Höchstleistungen.\n\nBeide Erweiterungen enthalten nur gleichmäßige Kräfte. Beide Nestungen sind sogar Funktionen.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Beide Abbildungen sind gerade Quadratfunktionen.\n\n$$\np(x) = x^{2}-1,\\qquad q(x) = x^{2}+1\n$$\n\nSchachtelung multipliziert die Grade: $2\\cdot 2=4$ in beiden Reihenfolgen. Ausmultiplizieren liefert verschiedene Quartiken. Eine gerade innere Abbildung macht jede äußere Funktion davon ebenfalls gerade."
+  },
+  {
+    "case_id": "MATH 9.E18",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Three simple linear factors",
+    "context_en": "A cubic is written $p(x)=(x-1)(x+1)(x-2)$. Test distinct zeros, $p'$ at a simple root, parity, Vieta, and the intercept. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p$ has exactly three distinct real zeros.",
+      "$p'(1)=0$.",
+      "$p$ is an odd function.",
+      "By Vieta, the sum of the three roots is $0$.",
+      "$p(0)=0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThree distinct linear factors, each to the first power, give three distinct real zeros.\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$x=-1,\\ 1,\\ 2$$\n\n$$p(-1)=p(1)$$\n\n$$p(-1)=p(2)$$\n\n$$p(-1)=0$$\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nNone of the factors repeats, so none of the zeros is multiple. The count is three.\n\nSo the statement is True.",
+      "**B.** → False\n\nA simple root need not flatten the derivative. Differentiate the product and substitute $x=1$.\n\n$$p(x)=(x+1)(x-1)(x-2)$$\n\n$$p'(x)=3x^{2}-2x-2$$\n\n$$p'(1)=3-2-2$$\n\n$$p'(1)= -1\\neq 0$$\n\nThe crossing at $x=1$ is not stationary. The claimed vanishing of $p'$ fails.\n\nSo the statement is False.",
+      "**C.** → False\n\nOddness requires $p(0)=0$ and $p(-x)=-p(x)$. The intercept is the constant term of the expansion.\n\n$$p(0)=2\\neq 0$$\n\nA nonzero intercept already kills oddness.\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nA nonzero intercept kills oddness. The zeros $\\{-1,1,2\\}$ are not symmetric about the origin either. The cubic is not odd.\n\nSo the statement is False.",
+      "**D.** → False\n\nVieta for a monic cubic reads the sum of the roots as minus the coefficient of $x^{2}$. Add the three simple roots.\n\n$$-1+1=0$$\n\n$$\n0+2=2 =2\n$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\n$$-b=2\\neq 0$$\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nMinus the $x^{2}$ coefficient is $-(-2)=2$, not $0$. A vanishing $x^{2}$ term would have been needed for sum $0$. The root sum is $2$, not $0$.\n\nSo the statement is False.",
+      "**E.** → False\n\nSubstitute $x=0$ into the named polynomial and simplify each power before combining.\n\n$$p(x)=x^{3} - 2 x^{2} - x + 2$$\n\n$$0^{3}=0$$\n\n$$0^{2}=0$$\n\n$$-2\\cdot 0=0$$\n\n$$0^{1}=0$$\n\n$$-(0)=0$$\n\n$$p(0)=0+0+0+2$$\n\n$$0+0=0$$\n\n$$0+2=2$$\n\n$$p(0)=2$$\n\nThe computed height is $2$, which does not match the claimed $0$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The cubic is already a product of three distinct monic linear factors.\n\n$$\np(x) = (x-1)(x+1)(x-2) = x^{3}-2x^{2}-x+2\n$$\n\nSimple roots are crossings, not stationary points. Vieta reads the root sum as minus the $x^{2}$ coefficient. A nonzero intercept kills oddness.",
+    "title_de_existing": "Drei einfache Linearfaktoren",
+    "context_de_existing": "Ein Kubikpolynom ist geschrieben als $p(x)=(x-1)(x+1)(x-2)$. Prüfe verschiedene Nullstellen, $p'$ an einer einfachen Nullstelle, Parität, Vieta und den Achsenabschnitt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p$ hat genau drei verschiedene reale Nullstellen.",
+      "$p'(1)=0$.",
+      "$p$ is an odd function. Die Aussage ist zu prüfen.",
+      "$0$ .",
+      "$p(0)=0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$x=-1,\\ 1,\\ 2$$\n\n$$p(-1)=p(1)$$\n\n$$p(-1)=p(2)$$\n\n$$p(-1)=0$$\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$x=1$ .\n\n$$p(x)=(x+1)(x-1)(x-2)$$\n\n$$p'(x)=3x^{2}-2x-2$$\n\n$$p'(1)=3-2-2$$\n\n$$p'(1)= -1\\neq 0$$\n\nThe crossing at $x=1$ $p'$ fails.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nOddness requires $p(0)=0$ and $p(-x)=-p(x)$\n\n$$p(0)=2\\neq 0$$\n\nA nonzero intercept already kills oddness.\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nA nonzero intercept kills oddness. The Nullstellen $\\{-1,1,2\\}$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$x^{2}$ . Add the three simple Nullstellen.\n\n$$-1+1=0$$\n\n$$\n0+2=2 =2\n$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\n$$-b=2\\neq 0$$\n\n$$p(x)=(x-1)(x+1)(x-2)$$\n\n$$p(x)=x^{3}-2x^{2}-x+2$$\n\nMinus $x^{2}$ Koeffizient ist $-(-2)=2$, nicht $0$. Ein verschwindender $x^{2}$ Term wäre für die Summe $0$ notwendig gewesen. Die Nullstellen-Summe ist $2$, nicht $0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nSubstitute $x=0$\n\n$$\n\\begin{aligned}\np(x)=x^{3} - 2 x^{2} - x + 2 \\\\\n0^{3}=0 \\\\\n0^{2}=0 \\\\\n-2\\cdot 0=0 \\\\\n0^{1}=0 \\\\\n-(0)=0 \\\\\np(0)=0+0+0+2 \\\\\n0+0=0 \\\\\n0+2=2 \\\\\np(0)=2\n\\end{aligned}\n$$\n\n$2$ $0$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$\np(x) = (x-1)(x+1)(x-2) = x^{3}-2x^{2}-x+2\n$$\n\n$x^{2}$ Koeffizient. A nonzero intercept kills oddness."
+  },
+  {
+    "case_id": "MATH 9.E24",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "An odd cubic: factors, Vieta, nesting",
+    "context_en": "A cubic is given by $p(x)=x \\left(x^{2} - 4\\right)$. Test parity, the factor theorem, Vieta, nested degree, and the distinct-zero count. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p$ is an odd function.",
+      "The factor $x-2$ divides $p$.",
+      "By Vieta, the multiplicity-weighted sum of real roots of $p$ is $0$.",
+      "The highest power in $p(x^{2})$ is $x^{6}$.",
+      "$p$ has three distinct real zeros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOddness is the identity $p(-x)=-p(x)$, which holds as soon as only odd powers appear.\n\n$$p(x)=x^{3}-4x$$\n\n$$p(-x)=-x^{3}+4x$$\n\n$$-x^{3}+4x=-p(x)$$\n\n$$p(-x)=(-x)^{3}-4(-x)$$\n\n$$p(-x)=-x^{3}+4x$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThere is no even-power term and no leftover constant. The cubic is odd.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe factor theorem at $x=2$ is immediate from the given product, or from substituting.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(2)=2\\cdot 0\\cdot 4$$\n\n$$2\\cdot 0=0$$\n\n$$0\\cdot 4=0$$\n\n$$p(2)=0$$\n\n$$2\\cdot 0\\cdot 4$$\n\n$$p(2)=2\\cdot 0\\cdot 4$$\n\n$$2\\cdot 0=0$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThe factor $x-2$ is visible before any expansion. So $x-2$ divides $p$.\n\nSo the statement is True.",
+      "**C.** → True\n\nVieta for a monic cubic reads the multiplicity-weighted root sum as minus the $x^{2}$ coefficient. Add the three simple roots.\n\n$$-2+0=-2$$\n\n$$\n-2+2=0 =0\n$$\n\n$$p(x)=x^{3}-4x$$\n\n$$-b=0$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThe $x^{2}$ coefficient is already $0$, matching the sum. The multiplicity-weighted root sum is $0$.\n\nSo the statement is True.",
+      "**D.** → True\n\nNesting multiplies highest powers: substituting $x^{2}$ into a cubic produces degree $3\\cdot 2=6$.\n\n$$p(x^{2})=x^{2}((x^{2})^{2}-4)$$\n\n$$x^{2}((x^{2})^{2}-4)=x^{6}-4x^{2}$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThe leading coefficient remains $1$, so the degree does not drop. The nested highest power is $x^{6}$.\n\nSo the statement is True.",
+      "**E.** → True\n\nThree distinct linear factors display three distinct real zeros. Write the product and list the roots.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$\nx=-2,\\qquad x = 0,\\qquad x = 2\n$$\n\n$$p(-2)=p(0)$$\n\n$$p(-2)=p(2)$$\n\n$$p(-2)=0$$\n\nNone of the factors repeats, and each substitution confirms a zero. The count is three.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The cubic is given as a product, which already displays the three real linear factors.\n\n$$\np(x) = x(x^{2}-4) = x(x-2)(x+2) = x^{3}-4x\n$$\n\nOnly odd powers appear, so $p$ is odd. Vieta reads the root sum as minus the $x^{2}$ coefficient. Nesting multiplies degrees: substituting $x^{2}$ produces $x^{6}$.",
+    "title_de_existing": "Eine ungerade Kubik: Faktoren, Vieta, Verschachtelung",
+    "context_de_existing": "Ein Kubikpolynom ist gegeben durch $p(x)=x \\left(x^{2} - 4\\right)$. Prüfe Parität, den Faktorensatz, Vieta, den verschachtelten Grad und die Anzahl verschiedener Nullstellen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p$ is an odd function. Die Aussage ist zu prüfen.",
+      "The factor $x-2$ divides $p$. Die Aussage ist zu prüfen.",
+      "$p$ is $0$ . Die Aussage ist zu prüfen.",
+      "$p(x^{2})$ is $x^{6}$ . Die Aussage ist zu prüfen.",
+      "$p$ has three distinct real Nullstellen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nUngeradheit ist die Identität $p(-x)=-p(x)$, die gilt, sobald nur ungerade Potenzen vorkommen.\n\n$$\n\\begin{aligned}\np(x)=x^{3}-4x \\\\\np(-x)=-x^{3}+4x \\\\\n-x^{3}+4x=-p(x) \\\\\np(-x)=(-x)^{3}-4(-x) \\\\\np(-x)=-x^{3}+4x \\\\\np(x)=x(x^{2}-4) \\\\\np(x)=x(x-2)(x+2) \\\\\np(x)=x^{3}-4x\n\\end{aligned}\n$$\n\nEs gibt keinen Term mit gerader Potenz und keine übrig gebliebene Konstante. Die Kubik ist ungerade.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nThe factor theorem at $x=2$\n\n$$\n\\begin{aligned}\np(x)=x(x-2)(x+2) \\\\\np(2)=2\\cdot 0\\cdot 4 \\\\\n2\\cdot 0=0 \\\\\n0\\cdot 4=0 \\\\\np(2)=0 \\\\\n2\\cdot 0\\cdot 4 \\\\\np(2)=2\\cdot 0\\cdot 4 \\\\\n2\\cdot 0=0 \\\\\np(x)=x(x^{2}-4) \\\\\np(x)=x(x-2)(x+2) \\\\\np(x)=x^{3}-4x\n\\end{aligned}\n$$\n\nThe factor $x-2$ $x-2$ divides $p$ .\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\n$x^{2}$ Koeffizient. Add the three simple Nullstellen.\n\n$$-2+0=-2$$\n\n$$\n-2+2=0 =0\n$$\n\n$$p(x)=x^{3}-4x$$\n\n$$-b=0$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nDer $x^{2}$ Koeffizient ist bereits $0$ $0$.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nMultipliziert höchste Potenzen verschachteln: Das Ersetzen von $x^{2}$ in ein Kubikum erzeugt Grad $3\\cdot 2=6$.\n\n$$p(x^{2})=x^{2}((x^{2})^{2}-4)$$\n\n$$x^{2}((x^{2})^{2}-4)=x^{6}-4x^{2}$$\n\n$$p(x)=x(x^{2}-4)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThe Leitkoeffizient remains $1$ $x^{6}$ .\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$\nx=-2,\\qquad x = 0,\\qquad x = 2\n$$\n\n$$p(-2)=p(0)$$\n\n$$p(-2)=p(2)$$\n\n$$p(-2)=0$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$\np(x) = x(x^{2}-4) = x(x-2)(x+2) = x^{3}-4x\n$$\n\nEs erscheinen nur ungerade Potenzen, also $p$ $x^{2}$ Koeffizient. Verschachtelung multiplizierter Grade: Ersetzen von $x^{2}$ erzeugt $x^{6}$."
+  },
+  {
+    "case_id": "MATH 9.E25",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "title_en": "A double root fixed at the origin",
+    "context_en": "A monic cubic family is given by $h_{k}(x)=x^{2}(x-k)$. The double root is pinned at the origin; the simple root slides with $k$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "For every real $k$, $h_{k}$ is an odd function of $x$.",
+      "If $k=2$, then $h_{k}$ has exactly two distinct real zeros.",
+      "If $k=2$, then $h_{k}'(0)\\neq 0$.",
+      "If $k=2$, then as $x\\to+\\infty$, $h_{k}(x)\\to-\\infty$.",
+      "If $k=2$, the $y$-intercept of $h_{k}$ equals $2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nOddness requires only odd powers. Expanding the family shows an $x^{2}$ term as soon as $k\\neq 0$.\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\n$$h_{1}(-x)=-x^{3}-x^{2}$$\n\n$$-h_{1}(x)=-x^{3}+x^{2}$$\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nThat even-power term survives for every $k\\neq 0$, so $h_{k}(-x)\\neq -h_{k}(x)$ in general. Only the special case $k=0$ gives the odd map $x^{3}$. Oddness fails as soon as $k\\neq 0$.\n\nSo the statement is False.",
+      "**B.** → True\n\nDistinct zeros ignore multiplicity. For $k=2$ the factors are $x^{2}$ and $x-2$.\n\n$$h_{2}(x)=x^{2}(x-2)$$\n\n$$\nx=0,\\qquad x = 2\n$$\n\n$$\nh_{2}(0)=0\\qquad h_{2}(2) = 0\n$$\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThose are two distinct abscissas: a double root at the origin and a simple root at $2$. Exactly two distinct real zeros occur.\n\nSo the statement is True.",
+      "**C.** → False\n\nA double root flattens the derivative. For $k=2$ the double root is pinned at the origin, so differentiate and substitute.\n\n$$h_{2}'(x)=3x^{2}-4x$$\n\n$$3x^{2}-4x=x(3x-4)$$\n\n$$h_{2}'(0)=0$$\n\n$$h_{2}'(x)=x(3x-4)$$\n\nThe double-root rule forces $h_{2}'(0)=0$.\n\nThe claimed inequality is the wrong way around: the derivative does vanish at $0$. The double-root rule applies.\n\nSo the statement is False.",
+      "**D.** → False\n\nEvery member is monic of odd degree, so the right end follows $x^{3}$ upward. For the named parameter,\n\n$$h_{2}(x)=x^{3}-2x^{2}$$\n\n$$\\lim_{x\\to+\\infty}h_{2}(x)=+\\infty$$\n\n$$h_{2}(10)=1000-200$$\n\n$$h_{2}(10)=800>0$$\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nCompare the expanded formula at $-x$ with the negative of the original.\n\n$$p(-x)\\stackrel{?}{=}-p(x)$$\n\nThe leading term $x^{3}$ is positive for large positive $x$. The right end rises, not falls.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe double factor $x^{2}$ forces every graph through the origin, independently of $k$.\n\n$$h_{2}(0)=0$$\n\n$$h_{k}(0)=0$$\n\nThe family never has a leftover constant term.\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nRead the intercept as the value at the origin.\n\n$$p(0)$$\n\nThe intercept is $0$, not $2$. A claimed intercept $2$ would have needed a leftover constant term, which the family never has. The intercept is $0$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The family keeps a double root at the origin and lets the simple root slide with $k$.\n\n$$\nh_{k}(x) = x^{2}(x-k) = x^{3}-kx^{2}\n$$\n\nEvery member is a monic cubic, so the right end always rises. An $x^{2}$ term destroys oddness as soon as $k\\neq 0$. The intercept is $0$ for every $k$.",
+    "title_de_existing": "Eine Doppelwurzel fest am Ursprung",
+    "context_de_existing": "Eine normierte Kubikfamilie ist gegeben durch $h_{k}(x)=x^{2}(x-k)$. Die doppelte Nullstelle ist am Ursprung fixiert; die einfache Nullstelle wandert mit $k$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "For every real $k$ , $h_{k}$ is an odd function of $x$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "If $k=2$ , then $h_{k}$ has exactly two distinct real Nullstellen. Die Aussage wird anhand der Übersicht geprüft.",
+      "If $k=2$, then $h_{k}'(0)\\neq 0$.",
+      "If $k=2$, then as $x\\to+\\infty$, $h_{k}(x)\\to-\\infty$. Die Aussage ist zu prüfen.",
+      "If $k=2$, the $y$-intercept of $h_{k}$ equals $2$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nUngeradekeit erfordert nur ungeradee Kräfte. Die Erweiterung der Familie zeigt einen $x^{2}$ Begriff, sobald $k\\neq 0$.\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\n$$h_{1}(-x)=-x^{3}-x^{2}$$\n\n$$-h_{1}(x)=-x^{3}+x^{2}$$\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\n$k\\neq 0$, also $h_{k}(-x)\\neq -h_{k}(x)$ im Allgemeinen. Nur der Sonderfall $k=0$ gibt die ungerade Abbildung $x^{3}$. Oddness scheitert, sobald $k\\neq 0$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nVerschiedene Nullstellen zählen ohne Vielfachheit. Für $k=2$ sind die Faktoren $x^{2}$ und $x-2$.\n\n$$h_{2}(x)=x^{2}(x-2)$$\n\n$$x=0,\\qquad x=2$$\n\n$$h_{2}(0)=0,\\qquad h_{2}(2)=0$$\n\nDas sind zwei verschiedene Abszissen: eine Doppelwurzel im Ursprung und eine einfache Wurzel bei $2$. Es gibt genau zwei verschiedene reelle Nullstellen.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nEine doppelte Nullstelle lässt die Ableitung verschwinden. Für $k=2$ gilt\n\n$$\nh_{2}'(x)=3x^{2}-4x=x(3x-4),\\qquad h_{2}'(0)=0.\n$$\n\nDie Behauptung hat die Ungleichung falsch herum: die Ableitung verschwindet bei $0$. Die Aussage ist falsch.",
+      "**D.** → Falsch\n\n$x^{3}$\n\n$$h_{2}(x)=x^{3}-2x^{2}$$\n\n$$\\lim_{x\\to+\\infty}h_{2}(x)=+\\infty$$\n\n$$h_{2}(10)=1000-200$$\n\n$$h_{2}(10)=800>0$$\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nvergleichen Sie die erweiterte Formel bei $-x$\n\n$$p(-x)\\stackrel{?}{=}-p(x)$$\n\nDer führende Begriff $x^{3}$ ist positiv für große positive $x$. Das rechte Ende steigt, nicht fällt.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDer Doppelfaktor $x^{2}$ zwingt jeden Graphen unabhängig von $k$ durch den Ursprung.\n\n$$h_{2}(0)=0$$\n\n$$h_{k}(0)=0$$\n\nDie Familie hat nie einen Rest konstantes Glied.\n\n$$h_{k}(x)=x^{2}(x-k)$$\n\n$$h_{k}(x)=x^{3}-kx^{2}$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p(0)$$\n\nThe intercept is $0$ , not $2$ . A claimed intercept $2$ $0$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$k$ . $$\nh_{k}(x) = x^{2}(x-k) = x^{3}-kx^{2}\n$$ $x^{2}$ term destroys oddness as soon as $k\\neq 0$ . The intercept is $0$ for every $k$ . Die Aussage wird anhand der Übersicht geprüft."
+  },
+  {
+    "case_id": "MATH 9.E26",
+    "short_letters": [
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Three simple zeros force a monic cubic",
+    "context_en": "A monic cubic has simple zeros at $x=-2$, $x=1$ and $x=3$. Rebuild $p$ from those three simple roots, then test Vieta, parity, and $p'$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p(x)=(x+2)(x-1)(x-3)$.",
+      "By Vieta, the sum of the three roots equals $2$.",
+      "$p(0)=-6$.",
+      "$p$ is an even function.",
+      "The derivative $p'$ vanishes at each of the three zeros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe unique monic cubic with simple zeros at $-2$, $1$ and $3$ is the product of those three monic linear factors.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nEach factor is monic and to the first power. That product is the displayed factorisation.\n\nSo the statement is True.",
+      "**B.** → True\n\nVieta for a monic cubic reads the sum of the roots as minus the coefficient of $x^{2}$. Add the three simple roots.\n\n$$-2+1=-1$$\n\n$$\n-1+3=2 =2\n$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nMinus the $x^{2}$ coefficient is $-(-2)=2$, matching the sum.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nFor a monic cubic the Vieta sum equals minus the coefficient of $x^{2}$.\n\n$$r_{1}+r_{2}+r_{3}=-b$$\n\nMinus the $x^{2}$ coefficient is $-(-2)=2$. The two readings agree. The Vieta sum is $2$.\n\nSo the statement is True.",
+      "**C.** → False\n\nSubstitute $x=0$ into the named polynomial and simplify each power before combining.\n\n$$p(x)=x^{3} - 2 x^{2} - 5 x + 6$$\n\n$$0^{3}=0$$\n\n$$0^{2}=0$$\n\n$$-2\\cdot 0=0$$\n\n$$0^{1}=0$$\n\n$$-5\\cdot 0=0$$\n\n$$p(0)=0+0+0+6$$\n\n$$0+0=0$$\n\n$$0+6=6$$\n\n$$p(0)=6$$\n\nThe computed height is $6$, which does not match the claimed $-6$.\n\nSo the statement is False.",
+      "**D.** → False\n\nEvenness requires $p(-x)=p(x)$ and a zero set symmetric about the origin. The zeros $-2,1,3$ are not symmetric about $0$.\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(-x)=-x^{3}-2x^{2}+5x+6$$\n\n$$p(-x)\\neq p(x)$$\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nThe expansion mixes even and odd powers. A surviving $x^{3}$ term kills evenness. The rebuilt cubic is not even.\n\nSo the statement is False.",
+      "**E.** → False\n\nSimple roots are crossings, not stationary points. Differentiate and substitute each zero.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p'(x)=3x^{2}-4x-5$$\n\n$$\np'(1)=-6\\qquad p'(-2) = 15,\\qquad p'(3) = 10\n$$\n\nNone of those three derivative values is zero. The derivative does not vanish at the three zeros.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Three distinct simple zeros and a monic leading term force the product of the three monic linear factors.\n\n$$\np(x) = (x+2)(x-1)(x-3) = x^{3}-2x^{2}-5x+6\n$$\n\nVieta reads the root sum as minus the $x^{2}$ coefficient. Simple roots are crossings, not stationary points. Mixed even and odd powers kill evenness.",
+    "title_de_existing": "Drei einfache Nullstellen erzwingen eine normiertes Kubikpolynom",
+    "context_de_existing": "Eine normiertes Kubikpolynom hat einfache Nullstellen bei $x=-2$, $x=1$ und $x=3$. Rebuild $p$ von diesen drei einfachen Nullstellen, dann testen Vieta, Parität und $p'$. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p(x)=(x+2)(x-1)(x-3)$.",
+      "$2$ .",
+      "$p(0)=-6$.",
+      "$p$ is an even function. Die Aussage ist zu prüfen.",
+      "The derivative $p'$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie eindeutige normiertes Kubikpolynom mit einfachen Nullstellen bei $-2$, $1$ und $3$\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nVieta für ein normiertes Kubikpolynom liest die Wurzelsumme als Minus den Koeffizienten von $x^{2}$. Addiere die drei einfachen Wurzeln.\n\n$$-2+1+4=3$$\n\n$$p(x)=(x+2)(x-1)(x-4)=x^{3}-3x^{2}-6x+8$$\n\nMinus der $x^{2}$-Koeffizient ist $-(-3)=3$. Summe und Vieta stimmen überein.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nSubstitute $x=0$\n\n$$\n\\begin{aligned}\np(x)=x^{3} - 2 x^{2} - 5 x + 6 \\\\\n0^{3}=0 \\\\\n0^{2}=0 \\\\\n-2\\cdot 0=0 \\\\\n0^{1}=0 \\\\\n-5\\cdot 0=0 \\\\\np(0)=0+0+0+6 \\\\\n0+0=0 \\\\\n0+6=6 \\\\\np(0)=6\n\\end{aligned}\n$$\n\n$6$ $-6$ .\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nEvenness requires $p(-x)=p(x)$ $-2,1,3$ are not symmetric about $0$ .\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(-x)=-x^{3}-2x^{2}+5x+6$$\n\n$$p(-x)\\neq p(x)$$\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\nDie Erweiterung mischt gerade und ungerade Kräfte. Ein überlebender $x^{3}$ Begriff tötet Gleichmäßigkeit. Die wieder aufgebaute kubische ist nicht gerade.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\n$$p'(x)=3x^{2}-4x-5$$\n\n$$\np'(1)=-6\\qquad p'(-2) = 15,\\qquad p'(3) = 10\n$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$\np(x) = (x+2)(x-1)(x-3) = x^{3}-2x^{2}-5x+6\n$$\n\n$x^{2}$ Koeffizient. Einfache Nullstellen sind Kreuzungen, keine stationären Punkte. Gemischte gerade und ungeradee Kräfte töten Gleichmäßigkeit."
+  },
+  {
+    "case_id": "MATH 9.E27",
+    "short_letters": [
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "A cubic around a shift: factors of the nest",
+    "context_en": "Inner shift $p(x)=x - 1$ feeds the outer cubic $q(x)=x^{3} - x$. Compare nested degrees, factors of $q(p(x))$, and whether the two nestings agree. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Both $q(p(x))$ and $p(q(x))$ have highest power $x^{3}$.",
+      "The factor $x-1$ divides $q(p(x))$.",
+      "The factor $x$ divides $q(p(x))$.",
+      "$q(p(x))=p(q(x))$ as an identity of polynomials.",
+      "$p(q(0))=0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNesting multiplies highest powers: $3\\cdot 1=3$ in either order. Expand both nestings to confirm nothing drops degree.\n\n$$q(p(x))=(x-1)^{3}-(x-1)$$\n\n$$(x-1)^{3}-(x-1)=x(x-1)(x-2)$$\n\n$$p(q(x))=x^{3}-x-1$$\n\n$$p(x)=x-1$$\n\nEach expansion is cubic. Both nested highest powers are $x^{3}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe factor theorem at $x=1$ asks whether $q(p(1))$ vanishes. The inner shift vanishes at $1$, and $q(0)=0$.\n\n$$q(p(1))=q(0)$$\n\n$$q(0)=0$$\n\n$$q(p(x))=x(x-1)(x-2)$$\n\n$$p(x)=x-1$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThe linear factor $x-1$ is visible in the factorisation. So $x-1$ divides the nesting.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe same theorem at $x=0$ asks whether $q(p(0))$ vanishes.\n\n$$q(p(0))=q(-1)$$\n\n$$q(-1)=0$$\n\n$$q(p(x))=x(x-1)(x-2)$$\n\n$$p(x)=x-1$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThe factorisation $x(x-1)(x-2)$ already displays the factor $x$. So $x$ divides $q(p(x))$.\n\nSo the statement is True.",
+      "**D.** → False\n\nEqual nested degree does not make the two compositions the same polynomial. Compare the expansions at a single point.\n\n$$q(p(x))=x(x-1)(x-2)$$\n\n$$p(q(x))=x^{3}-x-1$$\n\n$$\nq(p(0))=0\\qquad p(q(0)) = -1\n$$\n\n$$p(x)=x-1$$\n\nThe composite highest power is the product of the two individual highest powers.\n\nThey already disagree at $x=0$: $0$ versus $-1$. Nesting does not commute.\n\nSo the statement is False.",
+      "**E.** → False\n\nA nested value is computed inside-out: evaluate $q$ at $0$, then feed that number into $p$.\n\n$$q(0)=0$$\n\n$$p(q(0))=p(0)$$\n\n$$p(0)=-1$$\n\n$$p(q(0))= -1\\neq 0$$\n\n$$p(x)=x-1$$\n\nThe composite highest power is the product of the two individual highest powers.\n\nThe nested value is $-1$, not $0$. The other order $q(p(0))$ does vanish, which is a different composition. The nested value is $-1$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The inner map is an affine shift and the outer map is an odd cubic.\n\n$$\np(x) = x-1,\\qquad q(x) = x^{3}-x\n$$\n\nDegree $3$ times degree $1$ is $3$ in either order. Expanding gives different cubics, so the compositions do not commute. The factor theorem is a substitution into the nesting.",
+    "title_de_existing": "Eine Kubik um eine Verschiebung: Faktoren der Verschachtelung",
+    "context_de_existing": "Die innere Verschiebung $p(x)=x - 1$ speist das äußere Kubikpolynom $q(x)=x^{3} - x$. Vergleiche verschachtelte Grade, Faktoren von $q(p(x))$ und ob die beiden Verschachtelungen übereinstimmen. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Both $q(p(x))$ and $p(q(x))$ $x^{3}$ . Die Aussage ist zu prüfen.",
+      "The factor $x-1$ divides $q(p(x))$. Die Aussage ist zu prüfen.",
+      "The factor $x$ divides $q(p(x))$. Die Aussage ist zu prüfen.",
+      "$q(p(x))=p(q(x))$ as an identity of polynomials. Die Aussage ist zu prüfen.",
+      "$p(q(0))=0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVerschachtelung multipliziert höchste Potenzen: $3\\cdot 1=3$ in beiden Reihenfolgen. Erweitern Sie beide Nestings, um zu bestätigen, dass nichts fällt Grad.\n\n$$q(p(x))=(x-1)^{3}-(x-1)$$\n\n$$(x-1)^{3}-(x-1)=x(x-1)(x-2)$$\n\n$$p(q(x))=x^{3}-x-1$$\n\n$$p(x)=x-1$$\n\n$x^{3}$ .\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDer Faktorsatz bei $x=1$ fragt, ob $q(p(1))$ verschwindet. Die innere Verschiebung verschwindet bei $1$, und $q(0)=0$.\n\n$$q(p(1))=q(0)=0$$\n\n$$q(p(x))=x(x-1)(x-2),\\qquad p(x)=x-1$$\n\nDer Linearfaktor $x-1$ ist in der Zerlegung sichtbar. Also teilt $x-1$ die Verkettung.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nDerselbe Menge bei $x=0$ fragt, ob $q(p(0))$ verschwindet.\n\n$$q(p(0))=q(-1)$$\n\n$$q(-1)=0$$\n\n$$q(p(x))=x(x-1)(x-2)$$\n\n$$p(x)=x-1$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDie Faktorisierung $x(x-1)(x-2)$ zeigt bereits den Faktor $x$ an. Also $x$ teilt $q(p(x))$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$q(p(x))=x(x-1)(x-2)$$\n\n$$p(q(x))=x^{3}-x-1$$\n\n$$\nq(p(0))=0\\qquad p(q(0)) = -1\n$$\n\n$$p(x)=x-1$$\n\nDie Rechnung widerspricht der Behauptung.\n\nThey already disagree at $x=0$: $0$ versus $-1$. Nesting does not commute.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$q$ at $0$ , then feed that number into $p$ .\n\n$$q(0)=0$$\n\n$$p(q(0))=p(0)$$\n\n$$p(0)=-1$$\n\n$$p(q(0))= -1\\neq 0$$\n\n$$p(x)=x-1$$\n\nDie Rechnung widerspricht der Behauptung.\n\n$-1$ , not $0$ . The other order $q(p(0))$ $-1$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$\np(x) = x-1,\\qquad q(x) = x^{3}-x\n$$\n\nDegree $3$ times Grad $1$ is $3$"
+  },
+  {
+    "case_id": "MATH 9.E28",
+    "short_letters": [
+      0,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Simple at 0, double at 2",
+    "context_en": "A cubic factors as $p(x)=x(x-2)^{2}$. Separate the simple root from the double root, then apply Vieta. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The origin is a simple root of $p$.",
+      "$p'(2)=0$.",
+      "$p$ has exactly two distinct real zeros.",
+      "$p$ is an odd function.",
+      "By Vieta, the multiplicity-weighted root sum equals $4$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe factor $x$ appears to the first power only, so the origin is a simple root. Confirm by checking that $p'$ does not vanish there.\n\n$$p'(x)=3x^{2}-8x+4$$\n\n$$3x^{2}-8x+4=(3x-2)(x-2)$$\n\n$$p'(0)=4\\neq 0$$\n\n$$p(x)=x(x-2)^{2}$$\n\nThe factor $x$ appears to the first power only.\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nA simple root is a crossing, not a stationary point. The origin is simple.\n\nSo the statement is True.",
+      "**B.** → True\n\nA double root is a root of the derivative. The squared factor is $(x-2)^{2}$, so $x=2$ must flatten $p'$.\n\n$$p'(x)=(3x-2)(x-2)$$\n\n$$p'(2)=0$$\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThe factor $x-2$ survives in $p'$. The double root is stationary.\n\nSo the statement is True.",
+      "**C.** → True\n\nDistinct zeros ignore the exponent on $(x-2)^{2}$. The cubic vanishes only where a linear piece vanishes.\n\n$$p(x)=x(x-2)^{2}$$\n\n$$\nx=0,\\qquad x = 2\n$$\n\n$$\np(0)=0\\qquad p(2) = 0\n$$\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nThose are two distinct abscissas, not three. Exactly two distinct real zeros occur.\n\nSo the statement is True.",
+      "**D.** → False\n\nOddness requires only odd powers. Expanding produces an $x^{2}$ term from the double root off the origin.\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\n$$\np(1)=1\\qquad -p(-1) = 9\n$$\n\n$$p(-x)=-x^{3}-4x^{2}-4x$$\n\n$$-p(x)=-x^{3}+4x^{2}-4x$$\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nThose two sample values disagree, so $p(-x)\\neq -p(x)$. A zero intercept is not enough for oddness. The cubic is not odd.\n\nSo the statement is False.",
+      "**E.** → True\n\nVieta for a monic cubic reads the multiplicity-weighted root sum as minus the $x^{2}$ coefficient. Count the double root twice.\n\n$$0+2=2$$\n\n$$\n2+2=4 =4\n$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nMinus the $x^{2}$ coefficient is $-(-4)=4$, matching the weighted sum.\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nFor a monic cubic the Vieta sum equals minus the coefficient of $x^{2}$.\n\n$$r_{1}+r_{2}+r_{3}=-b$$\n\nMinus the $x^{2}$ coefficient is $-(-4)=4$. The two readings agree. The multiplicity-weighted root sum is $4$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The cubic is already factored, so the simple root and the double root are visible before expanding.\n\n$$\np(x) = x(x-2)^{2} = x^{3}-4x^{2}+4x\n$$\n\nA double root flattens $p'$; a simple root does not. Vieta counts the double root twice. An $x^{2}$ term destroys oddness.",
+    "title_de_existing": "Einfach bei 0, doppelt bei 2",
+    "context_de_existing": "Ein Kubikpolynom faktorisiert als $p(x)=x(x-2)^{2}$. Trenne die einfache Nullstelle von der doppelten Nullstelle und wende dann Vieta an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p$ .",
+      "$p'(2)=0$.",
+      "$p$ hat genau zwei verschiedene reale Nullstellen.",
+      "$p$ is an odd function. Die Aussage ist zu prüfen.",
+      "By Vieta, the multiplicity-weighted Nullstellen sum equals $4$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDer Faktor $x$ $p'$ verschwindet dort nicht.\n\n$$p'(x)=3x^{2}-8x+4$$\n\n$$3x^{2}-8x+4=(3x-2)(x-2)$$\n\n$$p'(0)=4\\neq 0$$\n\n$$p(x)=x(x-2)^{2}$$\n\nThe factor $x$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$(x-2)^{2}$ , so $x=2$ must flatten $p'$ .\n\n$$p'(x)=(3x-2)(x-2)$$\n\n$$p'(2)=0$$\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDer Faktor $x-2$ überlebt in $p'$. Die doppelte Nullstellen ist stationär.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nVerschiedene Nullstellen ignorieren den Exponenten auf $(x-2)^{2}$. Das Kubikpolynom verschwindet nur dort, wo ein Linearfaktor verschwindet.\n\n$$p(x)=x(x-2)^{2}=x^{3}-4x^{2}+4x$$\n\n$$x=0,\\qquad x=2$$\n\nDas sind zwei verschiedene Abszissen, nicht drei. Es gibt genau zwei verschiedene reelle Nullstellen.\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nUngeradekeit erfordert nur ungeradee Kräfte. Expansion erzeugt ein $x^{2}$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\n$$\np(1)=1\\qquad -p(-1) = 9\n$$\n\n$$p(-x)=-x^{3}-4x^{2}-4x$$\n\n$$-p(x)=-x^{3}+4x^{2}-4x$$\n\n$$p(x)=x(x-2)^{2}$$\n\n$$p(x)=x^{3}-4x^{2}+4x$$\n\n$p(-x)\\neq -p(x)$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nVieta für ein normiertes Kubikpolynom liest die mit Vielfachheit gewichtete Wurzelsumme als Minus den $x^{2}$-Koeffizienten. Die Doppelwurzel zählt zweifach.\n\n$$0+2+2=4$$\n\n$$p(x)=x^{3}-4x^{2}+4x=x(x-2)^{2}$$\n\nMinus der $x^{2}$-Koeffizient ist $-(-4)=4$, passend zur gewichteten Summe.\n\n$$r_{1}+r_{2}+r_{3}=-b$$\n\nBeide Lesarten stimmen überein. Die mit Vielfachheit gewichtete Wurzelsumme ist $4$.\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$\np(x) = x(x-2)^{2} = x^{3}-4x^{2}+4x\n$$\n\nEine doppelte Nullstellen flacht $p'$; eine einfache Nullstellen nicht. Vieta zählt die doppelte Nullstellen zweimal. Ein $x^{2}$ Begriff zerstört die Ungeradekeit."
+  },
+  {
+    "case_id": "MATH 9.E30",
+    "short_letters": [
+      0,
+      1,
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Meetings, interpolation, and far-field sign",
+    "context_en": "Five standalone polynomial micro-scenarios — no shared formula across letters. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Meeting points of $y=x^{3}$ and $y=3x$ solve $x^{3}-3x=0$.",
+      "$p(x)=x^{3}+x^{2}-x-1$ satisfies $p(-1)=2$.",
+      "If a polynomial satisfies $p(n)=n^{3}+n$ at $n=0,1,2$ only, then $p$ is necessarily cubic.",
+      "For $k=8$, the cubic $x^{3}+k$ has three distinct real roots.",
+      "If $p$ has degree $3$ and leading coefficient $-1$, then $p(x)\\to-\\infty$ as $x\\to-\\infty$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nMeeting points of two graphs are the solutions of $f=g$, brought to one side. Set $x^{3}$ equal to $3x$ and rearrange.\n\n$$x^{3}-3x=0$$\n\n$$x(x^{2}-3)=0$$\n\n$$\nx=0,\\qquad x = \\pm\\sqrt{3}\n$$\n\nThat is exactly the identity named in the claim. The meeting equation is $x^{3}-3x=0$.\n\nSo the statement is True.",
+      "**B.** → False\n\nA claimed evaluation is a substitution, not a guess. Group $p(x)=x^{3}+x^{2}-x-1$ to expose a factor.\n\n$$p(x)=(x^{3}-x)+(x^{2}-1)$$\n\n$$(x^{3}-x)+(x^{2}-1)=(x+1)^{2}(x-1)$$\n\n$$p(-1)=0$$\n\n$$p(-1)=0\\neq 2$$\n\n$$x^{3}-3x=0$$\n\nThe value is $0$, not $2$. Mixing up the leftover constant with the value at $-1$ is how $2$ appears. The actual height is $0$.\n\nSo the statement is False.",
+      "**C.** → False\n\nThree samples never pin the degree. The cubic $x^{3}+x$ interpolates $p(n)=n^{3}+n$ at $n=0,1,2$, but so does any extra multiple of the three nodal factors.\n\n$$r(x)=x^{3}+x+c\\,x(x-1)(x-2)$$\n\nFor $c\\neq 0$ the degree is $4$ while the three samples stay fixed.\n\n$$x^{3}-3x=0$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nWhenever $c\\neq 0$ that interpolant has degree $4$ and still matches the three samples. A cubic interpolant exists, but it is not forced.\n\nSo the statement is False.",
+      "**D.** → False\n\nThe map $x^{3}$ is strictly increasing, so $x^{3}+8=0$ has the unique real solution $x=-2$. Factor to see the other two roots are not real.\n\n$$x^{3}+8=(x+2)(x^{2}-2x+4)$$\n\n$$x^{2}-2x+4=0$$\n\nDiscriminant $4-16<0$, so no further real roots.\n\nThe factor test succeeds only when that substitution returns zero.\n\nThe quadratic has discriminant $4-16<0$, so it never vanishes. Three distinct real roots do not occur.\n\nSo the statement is False.",
+      "**E.** → False\n\nOdd degree with negative lead sends the left end up, not down. Track the sign of $-x^{3}$ as $x\\to-\\infty$.\n\n$$x\\to-\\infty$$\n\n$$x^{3}\\to-\\infty$$\n\n$$-x^{3}\\to+\\infty$$\n\n$$x = -10$$\n\n$$\n-x^{3} = 1000>0\n$$\n\nCompare the expanded formula at $-x$ with the negative of the original.\n\n$$p(-x)\\stackrel{?}{=}-p(x)$$\n\nMultiplying a large negative cube by $-1$ flips it to $+\\infty$. The left end rises.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The five letters do not share a polynomial. Each micro-scenario is settled in its own letter: a meeting equation, a substitution, an interpolation degree, the real roots of $x^{3}+8$, and the left-end sign of a cubic with negative lead.\n\n$$x^{3}-3x=0\\qquad (x+1)^{2}(x-1)\\qquad x^{3}+8$$\n\nThree samples never force a degree: extra nodal factors can raise it while keeping the same values.",
+    "title_de_existing": "Treffen, Interpolation und Fernzeichen",
+    "context_de_existing": "Five standalone Polynom micro-scenarios — no shared formula across letters. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Meeting points of $y=x^{3}$ and $y=3x$ solve $x^{3}-3x=0$. Die Aussage ist zu prüfen.",
+      "$p(x)=x^{3}+x^{2}-x-1$ satisfies $p(-1)=2$.",
+      "If a Polynom satisfies $p(n)=n^{3}+n$ at $n=0,1,2$ only, then $p$ is necessarily cubic. Die Aussage ist zu prüfen.",
+      "For $k=8$ , the cubic $x^{3}+k$ has three distinct real Nullstellen. Die Aussage wird anhand der Übersicht geprüft.",
+      "If $p$ has Grad $3$ and Leitkoeffizient $-1$ , then $p(x)\\to-\\infty$ as $x\\to-\\infty$ . Die Aussage wird anhand der Übersicht geprüft."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f=g$, zur Seite gebracht. Menge $x^{3}$ gleich $3x$ und neu anordnen.\n\n$$x^{3}-3x=0$$\n\n$$x(x^{2}-3)=0$$\n\n$$\nx=0,\\qquad x = \\pm\\sqrt{3}\n$$\n\n$x^{3}-3x=0$ .\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$p(x)=x^{3}+x^{2}-x-1$ to expose a factor.\n\n$$p(x)=(x^{3}-x)+(x^{2}-1)$$\n\n$$(x^{3}-x)+(x^{2}-1)=(x+1)^{2}(x-1)$$\n\n$$p(-1)=0$$\n\n$$p(-1)=0\\neq 2$$\n\n$$x^{3}-3x=0$$\n\n$0$, nicht $2$ $-1$ ist, wie $2$ erscheint. Die tatsächliche Höhe ist $0$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDrei Proben nie pin die Grad. Der kubische $x^{3}+x$ interpoliert $p(n)=n^{3}+n$ bei $n=0,1,2$\n\n$$r(x)=x^{3}+x+c\\,x(x-1)(x-2)$$\n\nFür $c\\neq 0$ ist der Grad $4$, während die drei Proben fixiert bleiben.\n\n$$x^{3}-3x=0$$\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nWhenever $c\\neq 0$ that interpolant has Grad $4$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Karte $x^{3}$ ist stark erhöht, also $x^{3}+8=0$ $x=-2$\n\n$$x^{3}+8=(x+2)(x^{2}-2x+4)$$\n\n$$x^{2}-2x+4=0$$\n\nDiscriminant $4-16<0$, so no further real Nullstellen.\n\nDer Faktortest gelingt nur, wenn diese Substitution null ergibt.\n\nDas Quadrat hat diskriminant $4-16<0$, so dass es nie verschwindet. Drei verschiedene reale Nullstellen treten nicht auf.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$-x^{3}$ as $x\\to-\\infty$ .\n\n$$x\\to-\\infty$$\n\n$$x^{3}\\to-\\infty$$\n\n$$-x^{3}\\to+\\infty$$\n\n$$x = -10$$\n\n$$\n-x^{3} = 1000>0\n$$\n\nvergleichen Sie die erweiterte Formel bei $-x$\n\n$$p(-x)\\stackrel{?}{=}-p(x)$$\n\nMultiplying a large negativ cube by $-1$ flips it to $+\\infty$ . The left end rises.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$x^{3}+8$\n\n$$x^{3}-3x=0\\qquad (x+1)^{2}(x-1)\\qquad x^{3}+8$$\n\nSiehe die Übersicht und die Rechnungsschritte."
+  }
+]

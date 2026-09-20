@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.101",
+    "title": "Asset Turnover and Revenue Generation Across Sectors",
+    "context": "Assess why short-term borrowing can raise a business's cash balance while simultaneously weakening its working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio for a pharmaceutical distributor sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Working capital for a utility company is calculated by subtracting current assets from current liabilities.",
+      "Return on equity for a pharmaceutical distributor relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "A return on capital employed figure for a pharmaceutical distributor carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "Asset turnover for a pharmaceutical distributor relates revenue earned during the period to the average total assets employed to generate that revenue."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current ratio analysis for a pharmaceutical distributor compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital is current assets minus current liabilities, not the reverse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Return on equity for a pharmaceutical distributor links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed for a pharmaceutical distributor is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover measures how much revenue a pharmaceutical distributor generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.102",
+    "title": "Share Price and Market Capitalisation 102",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=37\nMarch | Price=38\nApril | Price=36\nMay | Price=37\nJune | Price=45\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=86000\nFebruary | Volume=73000\nMarch | Volume=36000\nApril | Volume=23000\nMay | Volume=77000\nJune | Volume=28000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 86,000 |\n| February | 37 | 73,000 |\n| March | 38 | 36,000 |\n| April | 36 | 23,000 |\n| May | 37 | 77,000 |\n| June | 45 | 28,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 318 |\n| Shares outstanding | 758,000 |\n| Total shares traded (six months) | 323,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €27.7 million.",
+      "Market capitalisation rose by more than 10.4% over the period.",
+      "Total shares traded over six months exceed 34% of shares outstanding.",
+      "Peak monthly share turnover exceeds 61,167 shares.",
+      "Shares outstanding equal 758,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €34.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €28.8m → €34.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 42.6% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 86,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shares outstanding = 758,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.103",
+    "title": "Listed Company Performance Charts 103",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=21\nMarch | Price=21\nApril | Price=21\nMay | Price=20\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=39000\nMarch | Volume=24000\nApril | Volume=55000\nMay | Volume=24000\nJune | Volume=38000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 27,000 |\n| February | 21 | 39,000 |\n| March | 21 | 24,000 |\n| April | 21 | 55,000 |\n| May | 20 | 24,000 |\n| June | 25 | 38,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 243 |\n| Shares outstanding | 572,000 |\n| Total shares traded (six months) | 207,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 22.5% from first to last month.",
+      "Highest closing price is more than 15.7% above the lowest.",
+      "Market capitalisation rose by more than 26.1% over the period.",
+      "Total shares traded over six months exceed 21.4% of shares outstanding.",
+      "Peak monthly share turnover exceeds 49,902 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "From the figures or classification rule involved, price change ≈ 19.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €20-€25. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €12.0m → €14.3m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 36.2% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 55,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.104",
+    "title": "Earnings Per Share From Reported Figures 104",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=23\nMarch | Price=25\nApril | Price=26\nMay | Price=28\nJune | Price=28\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=86000\nFebruary | Volume=31000\nMarch | Volume=61000\nApril | Volume=25000\nMay | Volume=33000\nJune | Volume=75000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 86,000 |\n| February | 23 | 31,000 |\n| March | 25 | 61,000 |\n| April | 26 | 25,000 |\n| May | 28 | 33,000 |\n| June | 28 | 75,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 317 |\n| Shares outstanding | 635,000 |\n| Total shares traded (six months) | 311,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Highest closing price is more than 41.1% above the lowest.",
+      "Operating result is below €244 thousand.",
+      "The closing share price rose by more than 23.7% from first to last month.",
+      "Total shares traded over six months exceed 36% of shares outstanding.",
+      "Peak monthly share turnover exceeds 54,076 shares."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Range €21-€28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 317.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 33.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 49.0% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 86,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.105",
+    "title": "Share Price and Market Capitalisation 105",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=35\nMarch | Price=36\nApril | Price=36\nMay | Price=37\nJune | Price=39\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=91000\nFebruary | Volume=84000\nMarch | Volume=50000\nApril | Volume=68000\nMay | Volume=29000\nJune | Volume=50000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 91,000 |\n| February | 35 | 84,000 |\n| March | 36 | 50,000 |\n| April | 36 | 68,000 |\n| May | 37 | 29,000 |\n| June | 39 | 50,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 299 |\n| Shares outstanding | 444,000 |\n| Total shares traded (six months) | 372,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation rose by more than 29.3% over the period.",
+      "Earnings per share exceeds €0.63.",
+      "Highest closing price is more than 43.1% above the lowest.",
+      "Operating result is below €237 thousand.",
+      "Peak monthly share turnover exceeds 62,783 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Apply the case evidence: €13.8m → €17.3m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Earnings per share ≈ €0.67.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €31-€39. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 299.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 91,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.106",
+    "title": "Asset Turnover and Revenue Generation in Context",
+    "context": "Assess how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "A utility company reporting negative working capital always holds more cash than it needs for its daily operations.",
+      "The equity ratio for a pharmaceutical distributor expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+      "The acid-test ratio for a utility company includes inventory within current assets before comparing the total with current liabilities.",
+      "If a pharmaceutical distributor draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "A single return on capital employed figure for a utility company is always fully meaningful on its own, without any need to compare it against other years or similar businesses."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Negative working capital means current liabilities exceed current assets and does not imply excess cash.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Equity ratio analysis for a pharmaceutical distributor expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The acid-test ratio excludes inventory to provide a stricter liquidity test.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Short-term borrowing can boost cash yet reduce working capital for a pharmaceutical distributor.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed gains meaning chiefly from comparisons over time or with peers.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.107",
+    "title": "Earnings Per Share From Reported Figures 107",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=21\nMarch | Price=21\nApril | Price=22\nMay | Price=24\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=78000\nFebruary | Volume=36000\nMarch | Volume=57000\nApril | Volume=39000\nMay | Volume=77000\nJune | Volume=51000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 78,000 |\n| February | 21 | 36,000 |\n| March | 21 | 57,000 |\n| April | 22 | 39,000 |\n| May | 24 | 77,000 |\n| June | 25 | 51,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 186 |\n| Shares outstanding | 446,000 |\n| Total shares traded (six months) | 338,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €8.5 million.",
+      "Market capitalisation rose by more than 23.9% over the period.",
+      "Total shares traded over six months exceed 33.7% of shares outstanding.",
+      "Peak monthly share turnover exceeds 70,887 shares.",
+      "Operating result is below €269 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €11.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €8.9m → €11.2m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 75.8% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 78,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operating result = 186.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.108",
+    "title": "Inventory Turnover and Stock Rotation in Practice",
+    "context": "Assess how return on capital employed relates profit before interest and tax to the long-term capital financing a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Return on equity for a utility company is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.",
+      "Working capital for a transport operator is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+      "Inventory turnover for a utility company is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
+      "The current ratio and the acid-test ratio for a utility company always produce identical results, regardless of how much inventory the business holds.",
+      "Working capital for a wholesaler is calculated by subtracting current assets from current liabilities."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Return on equity relates profit before interest and tax to equity, not cash to liabilities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The standard working capital definition applies to a transport operator: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory turnover uses cost of sales relative to average inventory, not revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "When inventory is material, the acid-test ratio differs from the current ratio.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Working capital is current assets minus current liabilities, not the reverse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.109",
+    "title": "Listed Company Performance Charts 109",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=26\nApril | Price=24\nMay | Price=23\nJune | Price=22\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=74000\nFebruary | Volume=47000\nMarch | Volume=33000\nApril | Volume=56000\nMay | Volume=92000\nJune | Volume=80000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 29 | 74,000 |\n| February | 28 | 47,000 |\n| March | 26 | 33,000 |\n| April | 24 | 56,000 |\n| May | 23 | 92,000 |\n| June | 22 | 80,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 291 |\n| Shares outstanding | 817,000 |\n| Total shares traded (six months) | 382,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 18.4% from first to last month.",
+      "Market capitalisation rose by more than 27.5% over the period.",
+      "Highest closing price is more than 37% above the lowest.",
+      "Peak monthly share turnover exceeds 96,324 shares.",
+      "Shares outstanding equal 817,000."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Price change ≈ -24.1%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €23.7m → €18.0m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, range €22-€29. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 92,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Shares outstanding = 817,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.110",
+    "title": "Earnings Per Share From Reported Figures 110",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=30\nMarch | Price=31\nApril | Price=29\nMay | Price=26\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=26000\nFebruary | Volume=73000\nMarch | Volume=58000\nApril | Volume=34000\nMay | Volume=69000\nJune | Volume=75000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 26,000 |\n| February | 30 | 73,000 |\n| March | 31 | 58,000 |\n| April | 29 | 34,000 |\n| May | 26 | 69,000 |\n| June | 25 | 75,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 297 |\n| Shares outstanding | 708,000 |\n| Total shares traded (six months) | 335,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 10.3% from first to last month.",
+      "Market capitalisation rose by more than 9.7% over the period.",
+      "Highest closing price is more than 35.1% above the lowest.",
+      "Operating result is below €276 thousand.",
+      "Peak monthly share turnover exceeds 69,773 shares."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Price change ≈ -19.4%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €21.9m → €17.7m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €25-€31. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 297.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 75,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.111",
+    "title": "Inventory Turnover and Stock Rotation Explained",
+    "context": "Assess why a single return on capital employed figure is best interpreted alongside comparable years or similar businesses rather than in isolation. Evaluate the following economic assertions:",
+    "statements": [
+      "A transport operator is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.",
+      "The current ratio for a transport operator sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Return on equity for a transport operator relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "A return on capital employed figure for a transport operator carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "Asset turnover for a transport operator relates revenue earned during the period to the average total assets employed to generate that revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Positive working capital is generally preferable for a transport operator as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current ratio analysis for a transport operator compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on equity for a transport operator links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed for a transport operator is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover measures how much revenue a transport operator generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.112",
+    "title": "Listed Company Performance Charts 112",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=39\nFebruary | Price=42\nMarch | Price=45\nApril | Price=45\nMay | Price=49\nJune | Price=52\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=38000\nFebruary | Volume=70000\nMarch | Volume=24000\nApril | Volume=38000\nMay | Volume=26000\nJune | Volume=61000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 39 | 38,000 |\n| February | 42 | 70,000 |\n| March | 45 | 24,000 |\n| April | 45 | 38,000 |\n| May | 49 | 26,000 |\n| June | 52 | 61,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 314 |\n| Shares outstanding | 819,000 |\n| Total shares traded (six months) | 257,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €33.4 million.",
+      "The closing share price rose by more than 34.3% from first to last month.",
+      "Total shares traded over six months exceed 17.6% of shares outstanding.",
+      "Highest closing price is more than 43.9% above the lowest.",
+      "Operating result is below €299 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €42.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 33.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 31.4% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €39-€52. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 314.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.113",
+    "title": "Earnings Per Share From Reported Figures 113",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=20\nMarch | Price=21\nApril | Price=21\nMay | Price=21\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=30000\nFebruary | Volume=21000\nMarch | Volume=42000\nApril | Volume=71000\nMay | Volume=86000\nJune | Volume=83000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 30,000 |\n| February | 20 | 21,000 |\n| March | 21 | 42,000 |\n| April | 21 | 71,000 |\n| May | 21 | 86,000 |\n| June | 24 | 83,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 285 |\n| Shares outstanding | 546,000 |\n| Total shares traded (six months) | 333,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation rose by more than 33.1% over the period.",
+      "Market capitalisation at the last month exceeds €11.9 million.",
+      "Earnings per share exceeds €0.48.",
+      "Total shares traded over six months exceed 30% of shares outstanding.",
+      "Peak monthly share turnover exceeds 85,316 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "From the figures or classification rule involved, €10.4m → €13.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €13.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.52.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 61.0% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 86,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.114",
+    "title": "Share Price and Market Capitalisation 114",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=29\nFebruary | Price=28\nMarch | Price=27\nApril | Price=23\nMay | Price=20\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=78000\nMarch | Volume=27000\nApril | Volume=34000\nMay | Volume=30000\nJune | Volume=73000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 29 | 40,000 |\n| February | 28 | 78,000 |\n| March | 27 | 27,000 |\n| April | 23 | 34,000 |\n| May | 20 | 30,000 |\n| June | 17 | 73,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 294 |\n| Shares outstanding | 622,000 |\n| Total shares traded (six months) | 282,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €10 million.",
+      "Earnings per share exceeds €0.43.",
+      "Highest closing price is more than 13% above the lowest.",
+      "Total shares traded over six months exceed 15.4% of shares outstanding.",
+      "Peak monthly share turnover exceeds 65,329 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €10.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.47.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €17-€29. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 45.3% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 78,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.115",
+    "title": "Inventory Turnover and Stock Rotation for Analysts",
+    "context": "Assess how asset turnover links revenue generated during a period to the average total assets employed to produce it. Evaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio for a transport operator expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+      "A wholesaler reporting negative working capital always holds more cash than it needs for its daily operations.",
+      "If a transport operator draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "The acid-test ratio for a wholesaler includes inventory within current assets before comparing the total with current liabilities.",
+      "Working capital for a software subscription business is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Equity ratio analysis for a transport operator expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Negative working capital means current liabilities exceed current assets and does not imply excess cash.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Short-term borrowing can boost cash yet reduce working capital for a transport operator.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The acid-test ratio excludes inventory to provide a stricter liquidity test.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The standard working capital definition applies to a software subscription business: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.116",
+    "title": "Inventory Turnover and Stock Rotation Across Sectors",
+    "context": "Assess how inventory turnover links cost of sales to average inventory, and what a rising figure typically indicates. Evaluate the following economic assertions:",
+    "statements": [
+      "A software subscription business is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.",
+      "A single return on capital employed figure for a wholesaler is always fully meaningful on its own, without any need to compare it against other years or similar businesses.",
+      "Return on equity for a wholesaler is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.",
+      "The current ratio for a software subscription business sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Inventory turnover for a wholesaler is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Positive working capital is generally preferable for a software subscription business as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed gains meaning chiefly from comparisons over time or with peers.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Return on equity relates profit before interest and tax to equity, not cash to liabilities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current ratio analysis for a software subscription business compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory turnover uses cost of sales relative to average inventory, not revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.117",
+    "title": "Share Price and Market Capitalisation 117",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=17\nApril | Price=17\nMay | Price=17\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=43000\nFebruary | Volume=73000\nMarch | Volume=40000\nApril | Volume=90000\nMay | Volume=87000\nJune | Volume=95000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 43,000 |\n| February | 18 | 73,000 |\n| March | 17 | 40,000 |\n| April | 17 | 90,000 |\n| May | 17 | 87,000 |\n| June | 20 | 95,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 271 |\n| Shares outstanding | 433,000 |\n| Total shares traded (six months) | 428,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €7.2 million.",
+      "The closing share price rose by more than 22.8% from first to last month.",
+      "Market capitalisation rose by more than 20.8% over the period.",
+      "Highest closing price is more than 23.9% above the lowest.",
+      "Earnings per share exceeds €0.52."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €8.7 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 5.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €8.2m → €8.7m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, range €17-€20. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Earnings per share ≈ €0.63.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.118",
+    "title": "Listed Company Performance Charts 118",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=37\nFebruary | Price=35\nMarch | Price=33\nApril | Price=34\nMay | Price=35\nJune | Price=41\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=89000\nMarch | Volume=68000\nApril | Volume=35000\nMay | Volume=30000\nJune | Volume=91000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 37 | 40,000 |\n| February | 35 | 89,000 |\n| March | 33 | 68,000 |\n| April | 34 | 35,000 |\n| May | 35 | 30,000 |\n| June | 41 | 91,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 256 |\n| Shares outstanding | 480,000 |\n| Total shares traded (six months) | 353,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 18.7% from first to last month.",
+      "Market capitalisation rose by more than 30.5% over the period.",
+      "Market capitalisation at the last month exceeds €14.8 million.",
+      "Total shares traded over six months exceed 8.4% of shares outstanding.",
+      "Peak monthly share turnover exceeds 92,825 shares."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Price change ≈ 10.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €17.8m → €19.7m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €19.7 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 73.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 91,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.119",
+    "title": "Earnings Per Share From Reported Figures 119",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=18\nApril | Price=17\nMay | Price=17\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=37000\nFebruary | Volume=40000\nMarch | Volume=58000\nApril | Volume=81000\nMay | Volume=28000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 37,000 |\n| February | 18 | 40,000 |\n| March | 18 | 58,000 |\n| April | 17 | 81,000 |\n| May | 17 | 28,000 |\n| June | 20 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 302 |\n| Shares outstanding | 420,000 |\n| Total shares traded (six months) | 264,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 12.4% from first to last month.",
+      "Market capitalisation rose by more than 10.6% over the period.",
+      "Highest closing price is more than 25.8% above the lowest.",
+      "Operating result is below €261 thousand.",
+      "Market capitalisation at the last month exceeds €7.6 million."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Price change ≈ 5.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €8.0m → €8.4m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, range €17-€20. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 302.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €8.4 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.120",
+    "title": "Inventory Turnover and Stock Rotation in Context",
+    "context": "Assess how the equity ratio and the debt ratio together describe the way a business finances its total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "Return on equity for a software subscription business relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "The current ratio and the acid-test ratio for a wholesaler always produce identical results, regardless of how much inventory the business holds.",
+      "A return on capital employed figure for a software subscription business carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "Asset turnover for a software subscription business relates revenue earned during the period to the average total assets employed to generate that revenue.",
+      "The equity ratio for a software subscription business expresses the proportion of total assets financed by owners' equity rather than by borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Return on equity for a software subscription business links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "When inventory is material, the acid-test ratio differs from the current ratio.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Return on capital employed for a software subscription business is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover measures how much revenue a software subscription business generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio analysis for a software subscription business expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.121",
+    "title": "Listed Company Performance Charts 121",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=26\nMarch | Price=24\nApril | Price=22\nMay | Price=20\nJune | Price=18\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=68000\nFebruary | Volume=33000\nMarch | Volume=31000\nApril | Volume=31000\nMay | Volume=90000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 30 | 68,000 |\n| February | 26 | 33,000 |\n| March | 24 | 31,000 |\n| April | 22 | 31,000 |\n| May | 20 | 90,000 |\n| June | 18 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 304 |\n| Shares outstanding | 480,000 |\n| Total shares traded (six months) | 289,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €7.7 million.",
+      "The closing share price rose by more than 27.3% from first to last month.",
+      "Highest closing price is more than 25.6% above the lowest.",
+      "Market capitalisation rose by more than 24.6% over the period.",
+      "Total shares traded over six months exceed 38.9% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €8.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -40.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €18-€30. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €14.4m → €8.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 60.2% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.122",
+    "title": "The Equity Ratio in Financial Structure in Practice",
+    "context": "Assess why comparing ratios with industry peers or with a business's own history over time improves interpretation. Evaluate the following economic assertions:",
+    "statements": [
+      "The debt ratio for a software subscription business expresses the proportion of total assets financed through liabilities rather than through owners' equity.",
+      "Working capital for an online retailer is calculated by subtracting current assets from current liabilities.",
+      "If a software subscription business draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "Working capital for a medical-device maker is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+      "A medical-device maker is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Debt ratio analysis for a software subscription business expresses total liabilities relative to total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital is current assets minus current liabilities, not the reverse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Short-term borrowing can boost cash yet reduce working capital for a software subscription business.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The standard working capital definition applies to a medical-device maker: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Positive working capital is generally preferable for a medical-device maker as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.123",
+    "title": "The Equity Ratio in Financial Structure Explained",
+    "context": "Assess how the four broad areas of liquidity, profitability, financial efficiency and financial structure fit together in a rounded analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio for a medical-device maker sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Return on equity for a medical-device maker relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "A return on capital employed figure for a medical-device maker carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "Asset turnover for a medical-device maker relates revenue earned during the period to the average total assets employed to generate that revenue.",
+      "The equity ratio for a medical-device maker expresses the proportion of total assets financed by owners' equity rather than by borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current ratio analysis for a medical-device maker compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on equity for a medical-device maker links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed for a medical-device maker is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover measures how much revenue a medical-device maker generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio analysis for a medical-device maker expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.124",
+    "title": "Listed Company Performance Charts 124",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=37\nMarch | Price=36\nApril | Price=38\nMay | Price=37\nJune | Price=45\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=32000\nFebruary | Volume=79000\nMarch | Volume=90000\nApril | Volume=52000\nMay | Volume=45000\nJune | Volume=53000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 32,000 |\n| February | 37 | 79,000 |\n| March | 36 | 90,000 |\n| April | 38 | 52,000 |\n| May | 37 | 45,000 |\n| June | 45 | 53,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 202 |\n| Shares outstanding | 403,000 |\n| Total shares traded (six months) | 351,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 8.4% from first to last month.",
+      "Market capitalisation at the last month exceeds €14.5 million.",
+      "Market capitalisation rose by more than 13.5% over the period.",
+      "Earnings per share exceeds €0.47.",
+      "Highest closing price is more than 12% above the lowest."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Price change ≈ 25.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €18.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €14.5m → €18.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.50.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €36-€45. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.125",
+    "title": "The Equity Ratio in Financial Structure for Analysts",
+    "context": "Assess why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:",
+    "statements": [
+      "A online retailer reporting negative working capital always holds more cash than it needs for its daily operations.",
+      "The acid-test ratio for an online retailer includes inventory within current assets before comparing the total with current liabilities.",
+      "The debt ratio for a medical-device maker expresses the proportion of total assets financed through liabilities rather than through owners' equity.",
+      "If a medical-device maker draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "A single return on capital employed figure for an online retailer is always fully meaningful on its own, without any need to compare it against other years or similar businesses."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Negative working capital means current liabilities exceed current assets and does not imply excess cash.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The acid-test ratio excludes inventory to provide a stricter liquidity test.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Debt ratio analysis for a medical-device maker expresses total liabilities relative to total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Short-term borrowing can boost cash yet reduce working capital for a medical-device maker.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed gains meaning chiefly from comparisons over time or with peers.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  }
+]

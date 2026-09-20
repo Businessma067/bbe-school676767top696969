@@ -1,0 +1,232 @@
+CASE MATH 12.38
+ANSWER [true, true, false, true, false]
+TITLE_DE Die Zwillings-Erstsemester-Prüfungsreihe
+CONTEXT_DE Zehn Erstsemester einschließlich der Zwillinge Anya und Boris sowie Clara, David und Elena sitzen zufällig in einer Reihe.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher Sitzordnungen beträgt 3.628.800.
+  B. Die Wahrscheinlichkeit, dass die Zwillinge benachbart sitzen, beträgt genau 1/5.
+  C. Die Wahrscheinlichkeit, dass die Zwillinge nicht benachbart sitzen, ist kleiner als 75%.
+  D. Die Wahrscheinlichkeit der Reihenfolge Clara-David-Elena von links nach rechts (nicht notwendig benachbart) beträgt genau 1/6.
+  E. Die Wahrscheinlichkeit, dass die Zwillinge die beiden Endplätze belegen, ist größer als 5%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible seating arrangements for the ten first-year students. Since each student is distinct and each position is unique, the number of ways to arrange $N$ distinct items in a row is given by $N!$ (N factorial).
+
+Here, there are $N=10$ students.
+
+$$
+\text{Total arrangements} = 10!
+$$
+
+$$
+10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1
+$$
+
+$$
+10 \times 9 = 90
+$$
+
+$$
+90 \times 8 = 720
+$$
+
+$$
+720 \times 7 = 5040
+$$
+
+$$
+5040 \times 6 = 30240
+$$
+
+$$
+30240 \times 5 = 151200
+$$
+
+$$
+151200 \times 4 = 604800
+$$
+
+$$
+604800 \times 3 = 1814400
+$$
+
+$$
+1814400 \times 2 = 3628800
+$$
+
+$$
+3628800 \times 1 = 3628800
+$$
+
+$$
+10! = 3,628,800
+$$
+
+This calculated value matches the number stated in the claim.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This claim asks for the probability that the twins, Anya and Boris, sit in adjacent desks. To calculate this, we use the technique of treating the pair of twins as a single unit. This effectively reduces the number of items to arrange.
+
+First, consider the twins (Anya and Boris) as one block. This block, along with the remaining $10-2=8$ individual students, makes a total of $1+8=9$ items to arrange. The number of ways to arrange these 9 items is $9!$.
+
+$$
+\text{Arrangements of (Twins Block) and 8 others} = 9!
+$$
+
+Within the twins' block, Anya and Boris can be arranged in two ways: Anya-Boris or Boris-Anya. This gives $2!$ internal arrangements for the block.
+
+$$
+\text{Internal arrangements for twins} = 2!
+$$
+
+To find the total number of arrangements where the twins sit together, we multiply the number of ways to arrange the 9 items by the number of ways to arrange the twins within their block.
+
+$$
+\text{Favorable arrangements} = 9! \times 2!
+$$
+
+$$
+\text{Favorable arrangements} = 362,880 \times 2 = 725,760
+$$
+
+The probability is the ratio of favorable arrangements to the total number of arrangements, which is $10!$ from the overview.
+
+$$
+P(\text{twins adjacent}) = \frac{9! \times 2!}{10!}
+$$
+
+We can simplify this expression:
+
+$$
+P(\text{twins adjacent}) = \frac{9! \times 2}{10 \times 9!}
+$$
+
+$$
+P(\text{twins adjacent}) = \frac{2}{10}
+$$
+
+$$
+P(\text{twins adjacent}) = \frac{1}{5}
+$$
+
+The probability is exactly $1/5$. The claim states this probability is exactly $1/5$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This claim asks for the probability that the twins do not sit in adjacent desks. This event is the complement of the event that they do sit in adjacent desks. We can calculate this probability using the complement rule: $P(\text{not A}) = 1 - P(A)$.
+
+From the previous calculation for Statement B, the probability that the twins sit in adjacent desks is $P(\text{twins adjacent}) = 1/5$.
+
+$$
+P(\text{twins not adjacent}) = 1 - P(\text{twins adjacent})
+$$
+
+$$
+P(\text{twins not adjacent}) = 1 - \frac{1}{5}
+$$
+
+$$
+P(\text{twins not adjacent}) = \frac{4}{5}
+$$
+
+As a decimal, this is $0.8$. As a percentage, this is $80\%$.
+
+The claim states that the probability that the twins do not sit adjacent is less than $75\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This claim concerns the relative order of three specific friends: Clara, David, and Elena. We are asked for the probability that they appear in the specific left-to-right order Clara-David-Elena, not necessarily adjacent. For any set of $k$ distinct items, the probability that they appear in a particular relative order, when all permutations are equally likely, is $1/k!$.
+
+In this case, we have $k=3$ friends. Regardless of their absolute positions, any specific ordering of these three friends (e.g., Clara before David before Elena) among the $3!$ possible orderings is equally likely. For any selection of three positions out of ten, there are $3!$ ways to arrange these three friends in those positions, and only one of these arrangements matches the specified order.
+
+$$
+P(\text{Clara-David-Elena specific order}) = \frac{1}{3!}
+$$
+
+$$
+P(\text{Clara-David-Elena specific order}) = \frac{1}{3 \times 2 \times 1}
+$$
+
+$$
+P(\text{Clara-David-Elena specific order}) = \frac{1}{6}
+$$
+
+This probability is exactly $1/6$. The claim states this probability is exactly $1/6$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This claim asks for the probability that the twins, Anya and Boris, occupy the two end desks of the row, with either twin at either end. We need to count the number of arrangements where this condition is met.
+
+There are two end desks. First, we place the twins in these two desks. Anya can be at the left end and Boris at the right end, or Boris can be at the left end and Anya at the right end. This gives $2!$ ways to arrange the twins in the end seats.
+
+$$
+\text{Ways to place twins at ends} = 2! = 2
+$$
+
+The remaining $10-2=8$ students must be seated in the $10-2=8$ middle desks. The number of ways to arrange these 8 students is $8!$.
+
+$$
+\text{Ways to arrange remaining 8 students} = 8!
+$$
+
+To find the total number of favorable arrangements where the twins occupy the end desks, we multiply these possibilities.
+
+$$
+\text{Favorable arrangements} = 2! \times 8!
+$$
+
+$$
+\text{Favorable arrangements} = 2 \times 40,320 = 80,640
+$$
+
+The probability is the ratio of these favorable arrangements to the total number of arrangements, which is $10!$ from the overview.
+
+$$
+P(\text{twins at ends}) = \frac{2! \times 8!}{10!}
+$$
+
+We can simplify this expression:
+
+$$
+P(\text{twins at ends}) = \frac{2 \times 8!}{10 \times 9 \times 8!}
+$$
+
+$$
+P(\text{twins at ends}) = \frac{2}{10 \times 9}
+$$
+
+$$
+P(\text{twins at ends}) = \frac{2}{90} = \frac{1}{45}
+$$
+
+To compare with the claim, we convert this fraction to a percentage.
+
+$$
+\frac{1}{45} \approx 0.02222 \ldots
+$$
+
+Expressed as a percentage, this is approximately $2.22\%$.
+
+The claim states that this probability is greater than $5\%$.
+
+So the statement is False.
+

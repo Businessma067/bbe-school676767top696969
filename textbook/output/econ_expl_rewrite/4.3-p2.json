@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.26",
+    "title": "Private Limited Company Characteristics",
+    "context": "Review how private limited companies combine incorporation with restrictions on public share trading. Evaluate the following economic assertions:",
+    "statements": [
+      "Private limited companies are unincorporated businesses because their shares are not publicly traded.",
+      "Shares in a private limited company may be sold freely to the general public on any stock exchange.",
+      "Private limited companies are incorporated businesses with limited liability for shareholders.",
+      "Private limited companies need not list shares on a stock exchange to exist as legal persons.",
+      "Shareholders in a private limited company are typically not liable beyond the capital they invested."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "They remain incorporated legal persons despite private ownership.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Private shares are not freely sold to the public on exchanges.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Private limited firms combine incorporation with limited liability.\n\nApplied carefully, \"Private limited companies are incorporated businesses with limited liability for shareholders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Listing is not required for incorporated status.\n\nApplied carefully, \"Private limited companies need not list shares on a stock exchange to exist as legal persons\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Liability is generally capped at invested capital.\n\nApplied carefully, \"Shareholders in a private limited company are typically not liable beyond the capital they invested\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.27",
+    "title": "Minimum Capital Requirements for Incorporation",
+    "context": "Analyze incorporation rules that require registered capital before certain corporate forms may begin trading. Evaluate the following economic assertions:",
+    "statements": [
+      "Sole proprietorships and partnerships must satisfy the same minimum capital requirements as large listed corporations.",
+      "Some incorporated forms face minimum capital requirements that must be met when the company is established.",
+      "Minimum capital rules aim to protect creditors by ensuring a base equity buffer in the corporation.",
+      "Meeting minimum capital requirements guarantees that shareholders will receive annual dividend payments.",
+      "Corporations remain more difficult to set up than unincorporated businesses partly because of formal capital and registration rules."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Minimum capital rules target certain incorporated forms, not sole traders or partnerships.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Some corporations must meet capital thresholds at formation.\n\nApplied carefully, \"Some incorporated forms face minimum capital requirements that must be met when the company is established\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Minimum capital provides a creditor protection buffer.\n\nApplied carefully, \"Minimum capital rules aim to protect creditors by ensuring a base equity buffer in the corporation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Dividends remain discretionary even after capital requirements are met.\n\nThe absolute wording \"guarantees\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Formal capital and registration add setup complexity versus unincorporated firms.\n\nApplied carefully, \"Corporations remain more difficult to set up than unincorporated businesses partly because of formal capital and registration rules\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.28",
+    "title": "Food Processing Corporation and Bond Finance",
+    "context": "Consider a food processing corporation planning a new plant and weighing a bond issue against a long-term bank loan. Evaluate the following economic assertions:",
+    "statements": [
+      "Corporations planning large projects may use only share capital and cannot issue bonds or borrow from banks.",
+      "Issuing bonds may offer a lower interest rate than a comparable bank loan for large-scale investment.",
+      "Bonds, like shares, may be securities traded on regulated financial markets subject to authority oversight.",
+      "Bond finance adds debt obligations, whereas share capital does not create a contractual repayment like a loan.",
+      "The corporation remains a legal person that can contract for the plant independently of bondholders' personal assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Corporations may combine equity with bonds and bank loans.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Bond interest may undercut comparable bank rates.\n\nApplied carefully, \"Issuing bonds may offer a lower interest rate than a comparable bank loan for large-scale investment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bonds can trade on regulated markets alongside shares.\n\nApplied carefully, \"Bonds, like shares, may be securities traded on regulated financial markets subject to authority oversight\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Debt must be repaid; equity does not carry the same obligation.\n\nApplied carefully, \"Bond finance adds debt obligations, whereas share capital does not create a contractual repayment like a loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "The incorporated firm contracts in its own name with limited owner exposure.\n\nApplied carefully, \"The corporation remains a legal person that can contract for the plant independently of bondholders' personal assets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.29",
+    "title": "Annual Stockholders' Meeting and Control",
+    "context": "Review how common shareholders exercise influence despite not managing daily operations. Evaluate the following economic assertions:",
+    "statements": [
+      "Shareholders who do not sit on the board are barred from attending the annual stockholders' meeting.",
+      "Investors may buy shares partly to attend the annual stockholders' meeting and vote on major decisions.",
+      "Preferred shareholders usually trade stronger dividend claims for reduced or no voting rights at that meeting.",
+      "Voting at the stockholders' meeting legally obliges shareholders to perform the chief executive officer's daily duties.",
+      "Electing directors removes shareholders' ownership stake because management and ownership must be identical."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Shareholders may attend meetings even if they are not directors.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Voting rights motivate attendance at the annual meeting.\n\nApplied carefully, \"Investors may buy shares partly to attend the annual stockholders' meeting and vote on major decisions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Preferred stock often limits voting in return for dividend priority.\n\nApplied carefully, \"Preferred shareholders usually trade stronger dividend claims for reduced or no voting rights at that meeting\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Voting does not require shareholders to manage daily operations.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Ownership persists even when management is delegated.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.30",
+    "title": "Comprehensive Corporate Legal Status",
+    "context": "Analyze the integrated features that define corporations within the spectrum of business ownership forms. Evaluate the following economic assertions:",
+    "statements": [
+      "Corporations are incorporated businesses that are legal entities separate from their owners.",
+      "Shareholders' liability is usually limited to the amount invested when purchasing shares.",
+      "Share capital divided into shares can raise large sums when investors buy newly issued stock.",
+      "Corporations may list shares on a regulated stock exchange but are not required to do so.",
+      "Management by a board of directors allows separation of ownership and control within the corporation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Separate legal personality defines incorporation.\n\nApplied carefully, \"Corporations are incorporated businesses that are legal entities separate from their owners\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Limited liability caps owner exposure at invested capital.\n\nApplied carefully, \"Shareholders' liability is usually limited to the amount invested when purchasing shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Primary share sales can mobilise substantial equity.\n\nApplied carefully, \"Share capital divided into shares can raise large sums when investors buy newly issued stock\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Listing facilitates trading but remains optional.\n\nApplied carefully, \"Corporations may list shares on a regulated stock exchange but are not required to do so\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Boards run operations while shareholders may remain passive owners.\n\nApplied carefully, \"Management by a board of directors allows separation of ownership and control within the corporation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.31",
+    "title": "Share Purchase Channels",
+    "context": "Review the two main ways investors acquire corporate stock after incorporation. Evaluate the following economic assertions:",
+    "statements": [
+      "Investors may only acquire shares by purchasing them from the corporation at the annual stockholders' meeting.",
+      "Once shares are issued, no further investor may buy stock unless the corporation executes a new IPO each year.",
+      "Investors may acquire shares directly from the corporation at issue or purchase them later from an existing shareholder.",
+      "Buying at initial issue provides share capital to the corporation; buying later transfers ownership between investors.",
+      "Persons who buy shares become shareholders regardless of whether purchase occurs at issue or on the secondary market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Shares trade at issue and on secondary markets, not only at meetings.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Secondary trading continues without repeating an ipo annually.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Shares trade at initial issue or on the secondary market between shareholders.\n\nApplied carefully, \"Investors may acquire shares directly from the corporation at issue or purchase them later from an existing shareholder\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Only primary sales fund the issuer; later trades swap owners.\n\nApplied carefully, \"Buying at initial issue provides share capital to the corporation; buying later transfers ownership between investors\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Any share purchase confers shareholder status.\n\nApplied carefully, \"Persons who buy shares become shareholders regardless of whether purchase occurs at issue or on the secondary market\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.32",
+    "title": "Engineering Firm Share Price Rally",
+    "context": "Consider an engineering firm whose shares rallied after a contract win, though the firm issued no new equity during the rally. Evaluate the following economic assertions:",
+    "statements": [
+      "The contract win obliged the firm to register the rally amount as new share capital on its books.",
+      "Expectations of higher future profits from the contract can increase demand and push up share prices.",
+      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices.",
+      "The corporation receives the full trading profit whenever existing shareholders sell to new buyers on the exchange.",
+      "Rising prices after issue force the board to pay immediate dividends equal to the price increase."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary rallies do not increase registered share capital.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Profit expectations can lift investor demand and prices.\n\nApplied carefully, \"Expectations of higher future profits from the contract can increase demand and push up share prices\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Holders may realise capital growth on later sales.\n\nApplied carefully, \"Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Trade proceeds flow between investors, not to the issuer.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Dividends remain discretionary and are not tied to price spikes.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.33",
+    "title": "Exchange Regulation and Securities Trading",
+    "context": "Analyze the institutional setting in which shares and bonds change hands after a corporation lists. Evaluate the following economic assertions:",
+    "statements": [
+      "A stock exchange is regulated by the authorities as a financial market for securities.",
+      "Corporations seeking a listing must comply with certain rules and fulfil listing requirements.",
+      "Shares introduced on an exchange at the IPO are thereafter priced largely by demand and supply.",
+      "Bonds as well as shares may be bought and sold on such regulated markets.",
+      "Listing facilitates trading among many people and businesses but does not oblige the issuer to receive later trade proceeds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Authority oversight defines regulated exchanges.\n\nApplied carefully, \"A stock exchange is regulated by the authorities as a financial market for securities\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Listing demands compliance with exchange rules.\n\nApplied carefully, \"Corporations seeking a listing must comply with certain rules and fulfil listing requirements\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Post-ipo prices reflect market demand and supply.\n\nApplied carefully, \"Shares introduced on an exchange at the IPO are thereafter priced largely by demand and supply\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bond trading may occur alongside share trading.\n\nApplied carefully, \"Bonds as well as shares may be bought and sold on such regulated markets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Later trades benefit transacting investors, not the issuer's capital account.\n\nApplied carefully, \"Listing facilitates trading among many people and businesses but does not oblige the issuer to receive later trade proceeds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.34",
+    "title": "Limited Liability Scope",
+    "context": "Review what limited shareholder liability protects and what it does not guarantee. Evaluate the following economic assertions:",
+    "statements": [
+      "Limited liability means shareholders are personally liable for all corporation tax debts without limit.",
+      "Shareholders' liability is usually confined to the money they invested when buying shares.",
+      "Limited liability protects shareholders from ever losing the market value of their shares when prices fall.",
+      "Managers who are not shareholders always enjoy the same limited liability cap as investors who bought stock.",
+      "Limited liability distinguishes corporations from many unincorporated forms where owners face broader personal exposure."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Shareholders are not generally liable for all corporate tax debts beyond investment.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Exposure is usually capped at subscribed capital.\n\nApplied carefully, \"Shareholders' liability is usually confined to the money they invested when buying shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Market losses on share values can still occur.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Non-shareholder managers do not automatically share the same liability shield as investors.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Unlimited or broader owner liability marks many unincorporated structures.\n\nApplied carefully, \"Limited liability distinguishes corporations from many unincorporated forms where owners face broader personal exposure\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.35",
+    "title": "Dividends Versus Mandatory Profit Distribution",
+    "context": "Analyze the discretionary nature of dividend policy and its link to investor demand. Evaluate the following economic assertions:",
+    "statements": [
+      "Every corporation must distribute the entire annual profit as dividends to keep its legal personality.",
+      "Shareholders may sue to force dividend payments equal to the latest market price of their shares.",
+      "Omitting dividends always leaves share prices unchanged because investors care only about capital growth.",
+      "Dividends are interest payments on share capital that the corporation must pay regardless of profit.",
+      "Dividends are discretionary profit distributions; prolonged omission can reduce share attractiveness and demand."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Legal personality does not require distributing all profit as dividends.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Dividends are not fixed to market prices nor strictly mandatory.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Omitted dividends can weaken demand and affect prices.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Dividends come from profits, not mandatory interest on capital.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Discretionary dividends affect attractiveness when withheld too long.\n\nApplied carefully, \"Dividends are discretionary profit distributions; prolonged omission can reduce share attractiveness and demand\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.36",
+    "title": "Family-Owned Private Limited Manufacturer",
+    "context": "Consider a family-owned private limited manufacturer that meets minimum capital requirements but keeps all shares within the family. Evaluate the following economic assertions:",
+    "statements": [
+      "Private limited status removes limited liability because shares are not publicly traded on an exchange.",
+      "The manufacturer remains an incorporated legal person able to own equipment and hire workers.",
+      "Minimum capital requirements apply only to corporations that immediately list on a stock exchange.",
+      "Family shareholders must personally manage production because private companies forbid elected boards.",
+      "Shares need not be sold to the general public on an exchange for the firm to operate as a private limited company."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Private limited firms retain limited liability without public listing.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Incorporation gives separate legal personality for assets and hiring.\n\nApplied carefully, \"The manufacturer remains an incorporated legal person able to own equipment and hire workers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Minimum capital can apply at formation regardless of listing plans.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Private firms may still elect boards and delegate management.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Private limited companies operate without public share sales.\n\nApplied carefully, \"Shares need not be sold to the general public on an exchange for the firm to operate as a private limited company\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.37",
+    "title": "Interest Rates and Share Investment Alternatives",
+    "context": "Analyze how relative returns on interest-bearing assets shape demand for corporate equity. Evaluate the following economic assertions:",
+    "statements": [
+      "Comparatively low interest rates can increase share demand by making other investments less attractive.",
+      "Comparatively high interest rates can pull investors toward interest-bearing alternatives and away from shares.",
+      "Economic growth indicators form part of the wider set of factors influencing share demand.",
+      "High interest rates always increase share prices because corporations earn more from bank deposits.",
+      "Demand shifts from such conditions affect market prices but do not by themselves add share capital to the issuer after issue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Low rates raise the relative appeal of equity.\n\nApplied carefully, \"Comparatively low interest rates can increase share demand by making other investments less attractive\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "High rates favour fixed-return alternatives over shares.\n\nApplied carefully, \"Comparatively high interest rates can pull investors toward interest-bearing alternatives and away from shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Growth signals are among demand influences cited for shares.\n\nApplied carefully, \"Economic growth indicators form part of the wider set of factors influencing share demand\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "High rates tend to reduce share demand rather than automatically lift prices.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Price effects from demand do not fund the issuer after shares are issued.\n\nApplied carefully, \"Demand shifts from such conditions affect market prices but do not by themselves add share capital to the issuer after issue\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.38",
+    "title": "Inflation Expectations and Equity Demand",
+    "context": "Review links between inflation, investor behaviour, and secondary-market share prices. Evaluate the following economic assertions:",
+    "statements": [
+      "Comparatively higher inflation may support share demand when investors expect share prices to rise with general prices.",
+      "Inflation is among the economic indicators that can influence demand for corporate shares.",
+      "Thriving economic conditions with available investable funds can coincide with stronger share demand.",
+      "Higher inflation obliges the issuing corporation to inflate its registered share capital whenever consumer prices rise.",
+      "Price changes driven by inflation expectations benefit trading shareholders rather than financing the issuer anew."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Inflation may lift expected share values and demand.\n\nApplied carefully, \"Comparatively higher inflation may support share demand when investors expect share prices to rise with general prices\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Inflation appears among cited demand influences.\n\nApplied carefully, \"Inflation is among the economic indicators that can influence demand for corporate shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Prosperity can coincide with stronger equity demand.\n\nApplied carefully, \"Thriving economic conditions with available investable funds can coincide with stronger share demand\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Registered share capital is not automatically adjusted with inflation.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Market gains from inflation expectations accrue to shareholders, not issuer finance.\n\nApplied carefully, \"Price changes driven by inflation expectations benefit trading shareholders rather than financing the issuer anew\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.39",
+    "title": "Chief Executive Officer and Board Structure",
+    "context": "Analyze executive roles within the board that runs a corporation on shareholders' behalf. Evaluate the following economic assertions:",
+    "statements": [
+      "The management board's highest-ranking officer is the Chief Executive Officer who leads corporate execution.",
+      "The Chief Financial Officer must be the largest shareholder before overseeing finance and accounting functions.",
+      "The Chief Operating Officer may manage operations as a member of the board of directors.",
+      "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves.",
+      "Separation of ownership and management is a defining feature of corporate organisation."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The ceo heads the management board.\n\nApplied carefully, \"The management board's highest-ranking officer is the Chief Executive Officer who leads corporate execution\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cfo duties do not require holding the largest share block.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "The coo may sit on the board managing operations.\n\nApplied carefully, \"The Chief Operating Officer may manage operations as a member of the board of directors\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Capital providers need not run daily operations.\n\nApplied carefully, \"Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Corporations separate owners from professional managers.\n\nApplied carefully, \"Separation of ownership and management is a defining feature of corporate organisation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.40",
+    "title": "Startup Corporation IPO Proceeds",
+    "context": "Consider a startup corporation that raised funds through an initial public offering and later saw its share price double on the exchange. Evaluate the following economic assertions:",
+    "statements": [
+      "Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue.",
+      "Doubling of the secondary-market price after the IPO doubled the cash share capital available inside the firm.",
+      "The startup must surrender half of trading gains on the exchange to regulators as additional equity.",
+      "Existing shareholders who hold stock after the IPO owe the corporation the difference between issue price and market price.",
+      "A higher post-IPO market price creates an automatic right for the corporation to issue unlimited new debt free of interest."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Primary ipo sales raise share capital inside the firm.\n\nApplied carefully, \"Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Secondary doubling does not double internal cash capital.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Regulators do not capture trading gains as issuer equity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Holders are not obliged to pay market premiums back to the firm.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Higher prices do not grant unlimited interest-free debt rights.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.41",
+    "title": "Corporate Property Ownership and Litigation",
+    "context": "Review legal capacities that flow from treating the corporation as a person under the law. Evaluate the following economic assertions:",
+    "statements": [
+      "A corporation may own land and property in its own name rather than in shareholders' personal names.",
+      "Because shareholders have limited liability, the corporation itself cannot be sued for breach of contract.",
+      "Hiring employees requires each shareholder to sign every employment contract personally.",
+      "The corporation may sue and be sued as a legal entity independent of individual owners.",
+      "Legal personality allows the business to close contracts that bind the corporation, not shareholders personally."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Incorporated firms hold assets in the corporate name.\n\nApplied carefully, \"A corporation may own land and property in its own name rather than in shareholders' personal names\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "The legal entity remains suable despite owners' limited liability.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "The corporation hires staff under its own legal personality.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Litigation runs against or by the firm itself.\n\nApplied carefully, \"The corporation may sue and be sued as a legal entity independent of individual owners\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Contracts bind the corporation rather than each owner personally.\n\nApplied carefully, \"Legal personality allows the business to close contracts that bind the corporation, not shareholders personally\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.42",
+    "title": "Nuanced IPO and Capital Accounting",
+    "context": "Analyze accounting for equity when shares move from primary issue to secondary trading. Evaluate the following economic assertions:",
+    "statements": [
+      "The full amount investors pay on the exchange after the IPO is credited to the corporation's share capital account.",
+      "Secondary-market buyers pay share capital directly to the issuer unless the board approves a private sale.",
+      "Market premiums above issue price during secondary trading increase the corporation's permanent equity base.",
+      "Only proceeds from shares bought at initial issue from the corporation typically increase its share capital.",
+      "Redemption of share capital is required whenever secondary-market prices fall below the IPO price."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary payments go to selling shareholders, not share capital.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Exchange trades normally occur between investors, not as issuer capital inflows.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Trading premiums do not expand permanent registered equity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Primary issue proceeds are what raise issuer share capital.\n\nApplied carefully, \"Only proceeds from shares bought at initial issue from the corporation typically increase its share capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Price falls do not force capital redemption.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.43",
+    "title": "Founding Shareholders and Management Roles",
+    "context": "Review whether owners who establish a corporation must also run it. Evaluate the following economic assertions:",
+    "statements": [
+      "People who found the corporation and own shares need not manage the business themselves.",
+      "Managers running the corporation need not own shares of the business.",
+      "Shareholders may elect directors to represent their interests while remaining passive investors.",
+      "The board of directors, not every shareholder, makes major business decisions in typical corporations.",
+      "Founders who sell all their shares immediately lose the corporation's legal personality and incorporation status."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Founders may remain investors without managing.\n\nApplied carefully, \"People who found the corporation and own shares need not manage the business themselves\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Managers may be non-owners appointed to the board.\n\nApplied carefully, \"Managers running the corporation need not own shares of the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Passive shareholders elect representatives to the board.\n\nApplied carefully, \"Shareholders may elect directors to represent their interests while remaining passive investors\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Major decisions sit with the board rather than each owner.\n\nApplied carefully, \"The board of directors, not every shareholder, makes major business decisions in typical corporations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Incorporation persists; ownership can change without losing legal personality.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.44",
+    "title": "Logistics Corporation Dividend Decision",
+    "context": "Consider a logistics corporation that retained all profits for expansion and skipped dividend payments for several years. Evaluate the following economic assertions:",
+    "statements": [
+      "The corporation was not legally obliged to pay dividends despite shareholders' wish for annual income.",
+      "Retaining all profits guarantees rising share prices even when no dividends are paid.",
+      "Shareholders' limited liability disappears in years when dividends are omitted.",
+      "Prolonged omission of dividends may make shares less attractive and weaken investor demand.",
+      "Dividends, when paid, represent part of the corporation's profits distributed to shareholders."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Dividends are discretionary, not legally guaranteed each year.\n\nApplied carefully, \"The corporation was not legally obliged to pay dividends despite shareholders' wish for annual income\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Retention alone does not guarantee price rises.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Limited liability is unaffected by dividend policy.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Long non-payment can reduce attractiveness and demand.\n\nApplied carefully, \"Prolonged omission of dividends may make shares less attractive and weaken investor demand\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Dividends distribute a portion of profits to owners.\n\nApplied carefully, \"Dividends, when paid, represent part of the corporation's profits distributed to shareholders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.45",
+    "title": "Basic Features of Share Capital",
+    "context": "Analyze how equity funding is organised when a corporation divides ownership into tradable units. Evaluate the following economic assertions:",
+    "statements": [
+      "Share capital is the capital of a corporation divided into shares.",
+      "Each share, also called stock, represents a portion of the total share capital.",
+      "Selling newly issued shares to investors can raise substantial funds for the corporation.",
+      "Share capital is generally long-term capital that the company usually does not redeem.",
+      "Shareholders are persons who buy shares and thereby own a stake in the corporation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Share capital is capital split into shares.\n\nApplied carefully, \"Share capital is the capital of a corporation divided into shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Stock represents a fraction of total share capital.\n\nApplied carefully, \"Each share, also called stock, represents a portion of the total share capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Primary sales can raise large sums.\n\nApplied carefully, \"Selling newly issued shares to investors can raise substantial funds for the corporation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Equity is typically permanent and unredeemed.\n\nApplied carefully, \"Share capital is generally long-term capital that the company usually does not redeem\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Share buyers become owners of the corporation.\n\nApplied carefully, \"Shareholders are persons who buy shares and thereby own a stake in the corporation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.46",
+    "title": "Integrated Share Market Mechanics",
+    "context": "Analyze primary issuance, exchange listing, and investor motives as one corporate finance system. Evaluate the following economic assertions:",
+    "statements": [
+      "Initial share sales can raise large amounts of share capital for the corporation.",
+      "Later exchange trading transfers shares among investors without adding finance to the issuer.",
+      "Demand and supply on the exchange determine prices after the initial introduction of shares.",
+      "Investors may seek dividends, capital growth, or voting influence when buying stock.",
+      "Economic growth, inflation, and interest rates can all influence demand for shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Primary issues fund the corporation through share capital.\n\nApplied carefully, \"Initial share sales can raise large amounts of share capital for the corporation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Secondary trades move ownership without issuer finance.\n\nApplied carefully, \"Later exchange trading transfers shares among investors without adding finance to the issuer\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Post-introduction prices follow market forces.\n\nApplied carefully, \"Demand and supply on the exchange determine prices after the initial introduction of shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Motives include income, growth, and voting rights.\n\nApplied carefully, \"Investors may seek dividends, capital growth, or voting influence when buying stock\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multiple macro indicators shape share demand.\n\nApplied carefully, \"Economic growth, inflation, and interest rates can all influence demand for shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.47",
+    "title": "Corporate Debt and Equity Mix",
+    "context": "Review the main external funding sources highlighted for incorporated businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Share capital is a principal financial fund available to corporations alongside borrowing.",
+      "Loans and credit also form part of the financial funds corporations may use.",
+      "Corporations typically have more funding options than sole proprietors or partnerships.",
+      "Bonds may be issued as an alternative to bank loans for raising debt finance.",
+      "Share capital differs from debt because it does not create the same contractual repayment obligation as a loan."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Equity and debt both fund corporations.\n\nApplied carefully, \"Share capital is a principal financial fund available to corporations alongside borrowing\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Borrowing complements share capital.\n\nApplied carefully, \"Loans and credit also form part of the financial funds corporations may use\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Incorporated firms access broader finance channels.\n\nApplied carefully, \"Corporations typically have more funding options than sole proprietors or partnerships\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bonds compete with bank loans as debt sources.\n\nApplied carefully, \"Bonds may be issued as an alternative to bank loans for raising debt finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Equity lacks the fixed repayment duty of debt.\n\nApplied carefully, \"Share capital differs from debt because it does not create the same contractual repayment obligation as a loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.48",
+    "title": "Pharmaceutical Corporation Listing Choice",
+    "context": "Consider a pharmaceutical corporation that remains unlisted while still issuing shares privately to institutional investors. Evaluate the following economic assertions:",
+    "statements": [
+      "A corporation cannot raise share capital unless its stock is listed on a public stock exchange.",
+      "An unlisted corporation may still be a legal person owning laboratories and hiring researchers.",
+      "Private share placements can supply equity without an initial public offering on an exchange.",
+      "Shareholders in such a corporation retain limited liability tied to their investment.",
+      "Listing remains optional; exchange trading mainly facilitates secondary transfers among many market participants."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Private placements can raise equity without listing.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Unlisted firms remain incorporated legal persons.\n\nApplied carefully, \"An unlisted corporation may still be a legal person owning laboratories and hiring researchers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Equity can be raised off-exchange through private sales.\n\nApplied carefully, \"Private share placements can supply equity without an initial public offering on an exchange\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Limited liability applies to private shareholders.\n\nApplied carefully, \"Shareholders in such a corporation retain limited liability tied to their investment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Listing is optional and mainly aids broad secondary trading.\n\nApplied carefully, \"Listing remains optional; exchange trading mainly facilitates secondary transfers among many market participants\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.49",
+    "title": "Voting Rights and Share Classes",
+    "context": "Analyze how common and preferred stock divide control and income rights among shareholders. Evaluate the following economic assertions:",
+    "statements": [
+      "At the annual stockholders' meeting, common stockholders ordinarily exercise voting rights on major resolutions.",
+      "Preferred shareholders always hold superior voting power over common shareholders at every meeting.",
+      "Preferred shares often trade voting rights for priority in dividend payments.",
+      "Investors may purchase shares partly to influence corporate decisions through those voting rights.",
+      "Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Common stock usually carries meeting votes.\n\nApplied carefully, \"At the annual stockholders' meeting, common stockholders ordinarily exercise voting rights on major resolutions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Preferred holders typically forgo voting for dividend priority.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Preferred shares exchange votes for income preference.\n\nApplied carefully, \"Preferred shares often trade voting rights for priority in dividend payments\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Voting rights motivate some equity purchases.\n\nApplied carefully, \"Investors may purchase shares partly to influence corporate decisions through those voting rights\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Even preferred priority leaves dividends discretionary overall.\n\nApplied carefully, \"Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.50",
+    "title": "Construction Corporation Capital Structure",
+    "context": "Consider a construction corporation combining share capital from investors with a long-term bank loan for equipment. Evaluate the following economic assertions:",
+    "statements": [
+      "The corporation may finance operations through both share capital and loans.",
+      "Using bank loans prevents the corporation from also issuing shares to raise equity.",
+      "Loan capital and share capital are identical because both eliminate shareholder liability completely.",
+      "Shareholders' liability generally remains limited to their invested capital despite additional borrowing.",
+      "Bond issues are unavailable to corporations that already owe money to a commercial bank."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Corporations mix equity with debt finance.\n\nApplied carefully, \"The corporation may finance operations through both share capital and loans\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bank loans do not block subsequent share issues.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Debt and equity differ; neither removes limited liability for shareholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Borrowing does not expand shareholders' personal liability beyond investment.\n\nApplied carefully, \"Shareholders' liability generally remains limited to their invested capital despite additional borrowing\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bond issues may still be used alongside existing bank debt.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  }
+]

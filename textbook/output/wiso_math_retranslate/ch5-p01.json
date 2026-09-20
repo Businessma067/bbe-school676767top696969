@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "MATH 5.44",
+    "short_letters": [
+      2,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Greenfield Landscaping  -  Redundant Project Reconciliation",
+    "context_en": "Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new.",
+    "statements_en": [
+      "If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.",
+      "The per-meter price gap between wood and wire is more than 145% of the wire price per meter.",
+      "Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.",
+      "If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.",
+      "Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe overview recovered wood at \\$27 per m and wire at \\$11 per m. Project 3 with $20$ m of wood and $40$ m of wire costs\n\n$$\n20 \\times 27 = 540\n$$\n\n$$\n40 \\times 11 = 440\n$$\n\n$$\n540 + 440 = 980\n$$\n\nSince $980 > 950$, the total would exceed \\$950.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe overview recovered wood $x = 27$ and wire $y = 11$. The per-meter gap as a share of the wire price is\n\n$$\n27 - 11 = 16\n$$\n\n$$\\frac{16}{11}$$\n\n$$approx 1.4545$$\n\nSince $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.\n\nSo the statement is True.",
+      "**C.** → False\n\nStart from the overview’s recovered unknowns, then test the named figure.\n\nAt fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.\n\n$$28\\cdot 27 = 756$$\n\n$$64\\cdot 11 = 704$$\n\n$$756 + 704 = 1460$$\n\n$$\n750 + 710 = 1460\n$$\n\nThe combined project costs the same as the two projects separately, not less.\n\nSo the statement is False.",
+      "**D.** → False\n\nFor this claim, use the recovered values from the overview for this claim-specific check.\n\nProject 1 has $24$ m of wire. A \\$2 per-meter rise on that wire, as a share of the printed \\$750, is\n\n$$\n24 \\times 2 = 48\n$$\n\n$$\n\\frac{48}{750} = 0.064\n$$\n\n$6.4\\%$ is not more than $15\\%$.\n\nSo the statement is False.",
+      "**E.** → False\n\nNext, use the recovered values from the overview for this claim-specific check.\n\nProject 3 installed $10 + 40 = 50$ m for \\$710. Project 1 installed $18 + 24 = 42$ m for \\$750.\n\n$$\n\\frac{710}{50} = 14.20\n$$\n\n$$\\frac{750}{42}$$\n\n$$approx 17.86$$\n\nSince $14.20 < 17.86$, Project 3's cost per meter is lower, not higher.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Greenfield installs cedar wood fencing and galvanized wire fencing at fixed prices per meter. One of three projects turns out to be a scaled repeat of another and adds nothing new. Project 1: 18 m wood, 24 m wire, \\$750.00. Project 2: 27 m wood, 36 m wire, \\$1,125.00. Project 3: 10 m wood, 40 m wire, \\$710.00.\n\n**Part 1: Building the system.**\n\nLet $x$ = price per meter of cedar wood fencing, $y$ = price per meter of galvanized wire fencing.\n\n**1. Translate: Project 1.** That observation becomes:\n\n$$18x + 24y = 750 \\tag{1}$$\n\n**2. Translate: Project 3, independent of Project 1.** That observation becomes:\n\n$$10x + 40y = 710 \\tag{2}$$\n\n**Part 2: Solve.**\n\n**1.** Check Project 2 against Project 1:\n\n$$\n(27, 36) = 1.5(18, 24), \\qquad 1.5(750) = 1125\n$$\n\nThat matches Project 2 exactly, so Project 2 is redundant.\n\n**2.** Divide Project 1 by 6 and Project 3 by 10:\n\n$$\n3x + 4y = 125, \\qquad x + 4y = 71\n$$\n\n**3.** Subtract:\n\n$$\n(3x + 4y) - (x + 4y) = 125 - 71 \\Rightarrow 2x = 54 \\Rightarrow x = 27\n$$\n\n**4.** Substitute $x = 27$ into $x + 4y = 71$:\n\n$$\n27 + 4y = 71 \\Rightarrow 4y = 44 \\Rightarrow y = 11\n$$\n\n**Answer.** Cedar wood costs \\$27/m and galvanized wire costs \\$11/m.",
+    "title_de_existing": "Greenfield Landschaftsbau – Redundantes Projekt",
+    "context_de_existing": "Greenfield installiert Zaun aus Zedernholz und verzinkten Drahtzaun zu festen Preisen pro Meter. Eines von drei Projekten stellt sich als skalierte Wiederholung eines anderen heraus und liefert keine neue Information.",
+    "statements_de_existing": [
+      "Hätte Projekt 3 stattdessen $20$ m Holz verwendet, so hätte die Gesamtkosten \\$950{,}00 überschritten.",
+      "Der Preisunterschied pro Meter zwischen Holz und Draht beträgt mehr als $145\\%$ des Drahtpreises pro Meter.",
+      "Das Zusammenlegen der Materialien von Projekt 1 und Projekt 3 zu einem hypothetischen Projekt würde weniger kosten als die Summe ihrer Einzelkosten.",
+      "Steigt der Drahtzaun um \\$2{,}00 pro Meter, so steigen die Gesamtkosten von Projekt 1 um mehr als $15\\%$.",
+      "Die Kosten von Projekt 3 pro installiertem Gesamtmeter sind höher als die von Projekt 1 pro installiertem Gesamtmeter."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus der Übersicht folgen Holz zu \\$27/m und Draht zu \\$11/m. Projekt 3 mit $20$ m Holz und $40$ m Draht kostet\n\n$$\n20 \\times 27 = 540\n$$\n\n$$\n40 \\times 11 = 440\n$$\n\n$$\n540 + 440 = 980\n$$\n\nWegen $980 > 950$ würden die Kosten \\$950 überschreiten.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nHolz $x = 27$, Draht $y = 11$. Der Meterpreisabstand als Anteil am Drahtpreis:\n\n$$\n27 - 11 = 16\n$$\n\n$$\\frac{16}{11}\\approx 1{,}4545$$\n\nWegen $1{,}4545 > 1{,}45$ beträgt der Abstand mehr als $145\\%$ des Drahtpreises.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nBei festen Meterpreisen ist das Zusammenlegen linear. Zusammen: $28$ m Holz und $64$ m Draht.\n\n$$28\\cdot 27 = 756$$\n\n$$64\\cdot 11 = 704$$\n\n$$756 + 704 = 1460$$\n\n$$\n750 + 710 = 1460\n$$\n\nDas kombinierte Projekt kostet dasselbe wie die beiden einzeln, nicht weniger.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nProjekt 1 hat $24$ m Draht. Ein Anstieg um \\$2 pro Meter, bezogen auf die angegebenen \\$750:\n\n$$\n24 \\times 2 = 48\n$$\n\n$$\n\\frac{48}{750} = 0{,}064\n$$\n\n$6{,}4\\%$ sind nicht mehr als $15\\%$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nProjekt 3: $10 + 40 = 50$ m für \\$710. Projekt 1: $18 + 24 = 42$ m für \\$750.\n\n$$\n\\frac{710}{50} = 14{,}20\n$$\n\n$$\\frac{750}{42}\\approx 17{,}86$$\n\nWegen $14{,}20 < 17{,}86$ sind die Kosten pro Meter bei Projekt 3 niedriger, nicht höher.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Greenfield installiert Zedernholzzaun und verzinkten Drahtzaun zu festen Preisen pro Meter. Eines von drei Projekten ist eine skalierte Wiederholung und liefert nichts Neues. Projekt 1: $18$ m Holz, $24$ m Draht, \\$750{,}00. Projekt 2: $27$ m Holz, $36$ m Draht, \\$1{,}125{,}00. Projekt 3: $10$ m Holz, $40$ m Draht, \\$710{,}00.\n\n**Teil 1: Aufstellen des Systems.**\n\nEs seien $x$ der Preis pro Meter Zedernholz und $y$ der Preis pro Meter verzinkter Draht.\n\n**1. Übersetzung: Projekt 1.**\n\n$$18x + 24y = 750 \\tag{1}$$\n\n**2. Übersetzung: Projekt 3, unabhängig von Projekt 1.**\n\n$$10x + 40y = 710 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n**1.** Prüfe Projekt 2 gegen Projekt 1:\n\n$$\n(27, 36) = 1{,}5(18, 24), \\qquad 1{,}5(750) = 1125\n$$\n\nDas passt genau, also ist Projekt 2 redundant.\n\n**2.** Teile Projekt 1 durch $6$ und Projekt 3 durch $10$:\n\n$$\n3x + 4y = 125, \\qquad x + 4y = 71\n$$\n\n**3.** Subtrahiere:\n\n$$\n(3x + 4y) - (x + 4y) = 125 - 71 \\Rightarrow 2x = 54 \\Rightarrow x = 27\n$$\n\n**4.** Setze $x = 27$ in $x + 4y = 71$ ein:\n\n$$\n27 + 4y = 71 \\Rightarrow 4y = 44 \\Rightarrow y = 11\n$$\n\n**Ergebnis.** Zedernholz kostet \\$27/m und verzinkter Draht \\$11/m."
+  }
+]

@@ -1,0 +1,281 @@
+CASE MATH 12.26
+ANSWER [true, true, true, false, false]
+TITLE_DE Die Peer-Review-Kommission
+CONTEXT_DE Eine Forschungsgruppe hat 6 Senior- und 8 Juniorforscher (14 Personen). Zufällig werden 5 der 14 für eine Peer-Review-Kommission gewählt.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 5-Personen-Kommissionen beträgt 2.002.
+  B. Die Wahrscheinlichkeit für genau 2 Senior- und 3 Juniorforscher ist größer als 40%.
+  C. Die Wahrscheinlichkeit, dass alle 5 Juniors sind, ist kleiner als 5%.
+  D. Die Wahrscheinlichkeit für mindestens einen Senior ist kleiner als 90%.
+  E. Die Wahrscheinlichkeit einer Senior-Mehrheit (3–5) ist größer als die für genau 2 Seniorplätze.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible 5-person panels that can be formed from the 14 researchers. This is a combination problem, as the order of selection does not matter. The number of ways to choose $k$ items from a set of $N$ items is given by the combination formula $\binom{N}{k}$.
+
+In this case, $N=14$ total researchers and $k=5$ panel members.
+
+$$
+\binom{14}{5} = \dfrac{14!}{5!(14-5)!}
+$$
+
+$$
+\dfrac{14!}{5!(9)!} = \dfrac{14 \cdot 13 \cdot 12 \cdot 11 \cdot 10}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}
+$$
+
+$$
+14 \times 13 = 182
+$$
+
+$$
+182 \times 12 = 2184
+$$
+
+$$
+2184 \times 11 = 24024
+$$
+
+$$
+24024 \times 10 = 240240
+$$
+
+$$
+\dfrac{240240}{120} = 2002
+$$
+
+$$
+\binom{14}{5} = 2002
+$$
+
+The calculated total number of possible panels is $2,002$. The statement claims that the total number of possible 5-person panels is $2,002$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the probability that the panel contains exactly 2 senior researchers and 3 junior researchers. We use the hypergeometric probability formula for selecting $x$ senior researchers from $S$ available senior researchers and $k-x$ junior researchers from $J$ available junior researchers, divided by the total number of ways to form the panel.
+
+Here, $S=6$ senior researchers, $J=8$ junior researchers, $k=5$ panel members, and we are interested in $x=2$ senior researchers (which implies $5-2=3$ junior researchers).
+
+First, calculate the number of ways to choose 2 senior researchers from 6:
+
+$$
+\binom{6}{2} = \dfrac{6!}{2!(6-2)!}
+$$
+
+$$
+\dfrac{6!}{2!(4)!} = \dfrac{6 \cdot 5}{1 \cdot 2}
+$$
+
+$$
+6 \times 5 = 30
+$$
+
+$$
+\dfrac{30}{2} = 15
+$$
+
+$$
+\binom{6}{2} = 15
+$$
+
+Next, calculate the number of ways to choose 3 junior researchers from 8:
+
+$$
+\binom{8}{3} = \dfrac{8!}{3!(8-3)!}
+$$
+
+$$
+\dfrac{8!}{3!(5)!} = \dfrac{8 \cdot 7 \cdot 6}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+\dfrac{336}{6} = 56
+$$
+
+$$
+\binom{8}{3} = 56
+$$
+
+Now, we find the number of ways to have exactly 2 senior and 3 junior researchers:
+
+$$
+\binom{6}{2}\binom{8}{3} = 15 \times 56
+$$
+
+$$
+15 \times 56 = 840
+$$
+
+The total number of possible panels was calculated in the overview as $2,002$. The probability is then:
+
+$$
+P(X = 2) = \frac{\binom{6}{2}\binom{8}{3}}{\binom{14}{5}} = \frac{840}{2002}
+$$
+
+$$
+\approx 0.41958
+$$
+
+Expressed as a percentage, this is approximately $41.96\%$. The claim states this probability is greater than $40\%$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This statement asks for the probability that all 5 panel members are junior researchers. This means that $x=0$ senior researchers are selected. We apply the hypergeometric probability formula for $x=0$ senior researchers.
+
+Here, $S=6$ senior researchers, $J=8$ junior researchers, $k=5$ panel members, and we are interested in $x=0$ senior researchers (which implies $5-0=5$ junior researchers).
+
+First, calculate the number of ways to choose 0 senior researchers from 6:
+
+$$
+\binom{6}{0} = 1
+$$
+
+Next, calculate the number of ways to choose 5 junior researchers from 8:
+
+$$
+\binom{8}{5} = \dfrac{8!}{5!(8-5)!}
+$$
+
+$$
+\dfrac{8!}{5!(3)!} = \dfrac{8 \cdot 7 \cdot 6}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+\dfrac{336}{6} = 56
+$$
+
+$$
+\binom{8}{5} = 56
+$$
+
+Now, we find the number of ways to have exactly 0 senior and 5 junior researchers:
+
+$$
+\binom{6}{0}\binom{8}{5} = 1 \times 56
+$$
+
+$$
+1 \times 56 = 56
+$$
+
+The total number of possible panels is $2,002$. The probability is then:
+
+$$
+P(X = 0) = \frac{\binom{6}{0}\binom{8}{5}}{\binom{14}{5}} = \frac{56}{2002}
+$$
+
+$$
+\approx 0.02797
+$$
+
+Expressed as a percentage, this is approximately $2.80\%$. The claim states this probability is less than $5\%$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that at least one senior researcher is on the panel. It is easier to calculate the complement of this event, which is that *no* senior researchers are on the panel, meaning all 5 members are junior researchers. We then subtract this probability from 1.
+
+From the calculation for Statement C, the probability of having 0 senior researchers ($P(X=0)$) is:
+
+$$
+P(X = 0) = \frac{56}{2002}
+$$
+
+Therefore, the probability of having at least one senior researcher is:
+
+$$
+P(X \ge 1) = 1 - P(X = 0)
+$$
+
+$$
+P(X \ge 1) = 1 - \frac{56}{2002}
+$$
+
+$$
+P(X \ge 1) = \frac{2002 - 56}{2002} = \frac{1946}{2002}
+$$
+
+$$
+P(X \ge 1) \approx 0.97203
+$$
+
+Expressed as a percentage, this is approximately $97.20\%$. The claim states this probability is less than $90\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement compares two probabilities: the probability that senior researchers form a majority of the panel (meaning 3, 4, or 5 senior researchers) and the probability that exactly 2 senior researchers are on the panel. We will calculate both and compare them.
+
+First, the probability of exactly 2 senior researchers ($P(X=2)$) was calculated in Statement B:
+
+$$
+P(X = 2) = \frac{840}{2002} \approx 0.41958
+$$
+
+Next, we calculate the probability that senior researchers form a majority. This means $X=3$, $X=4$, or $X=5$ senior researchers.
+For $X=3$ senior researchers (and $5-3=2$ junior researchers):
+
+$$
+P(X = 3) = \frac{\binom{6}{3}\binom{8}{2}}{\binom{14}{5}} = \frac{\left(\frac{6 \times 5 \times 4}{3 \times 2 \times 1}\right)\left(\frac{8 \times 7}{2 \times 1}\right)}{2002} = \frac{20 \times 28}{2002} = \frac{560}{2002}
+$$
+
+For $X=4$ senior researchers (and $5-4=1$ junior researcher):
+
+$$
+P(X = 4) = \frac{\binom{6}{4}\binom{8}{1}}{\binom{14}{5}} = \frac{\left(\frac{6 \times 5}{2 \times 1}\right)\left(8\right)}{2002} = \frac{15 \times 8}{2002} = \frac{120}{2002}
+$$
+
+For $X=5$ senior researchers (and $5-5=0$ junior researchers):
+
+$$
+P(X = 5) = \frac{\binom{6}{5}\binom{8}{0}}{\binom{14}{5}} = \frac{\left(6\right)\left(1\right)}{2002} = \frac{6}{2002}
+$$
+
+Now, we sum these probabilities to find the probability of a senior majority:
+
+$$
+P(\text{senior majority}) = P(X = 3) + P(X = 4) + P(X = 5)
+$$
+
+$$
+P(\text{senior majority}) = \frac{560}{2002} + \frac{120}{2002} + \frac{6}{2002} = \frac{686}{2002}
+$$
+
+$$
+P(\text{senior majority}) \approx 0.34266
+$$
+
+Expressed as percentages, $P(X=2) \approx 41.96\%$ and $P(\text{senior majority}) \approx 34.27\%$. The claim states that the probability of a senior majority ($34.27\%$) is greater than the probability of exactly 2 senior researchers ($41.96\%$).
+
+So the statement is False.
+

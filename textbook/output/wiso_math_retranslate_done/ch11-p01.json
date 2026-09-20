@@ -1,0 +1,349 @@
+[
+  {
+    "case_id": "MATH 11.04",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nErlös ist Preis mal verkaufte Menge. Expandiere das Produkt mit dem linearen Preisplan:\n\n$$\nR(q) = q\\cdot(80-2q)\n$$\n\n$$\nR(q) = 80q-2q^{2}\n$$\n\nLass den Ausdruck nicht als $q(80-2q)$ stehen, wenn die Behauptung die expandierte Quadratform verlangt. Genau diese expandierte Form ist genannt.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGrenzerlös ist die Ableitung der gesamten Erlösfunktion, nicht die Ableitung des Preises allein. Termweises Differenzieren von $R(q)=80q-2q^{2}$ liefert\n\n$$\nR'(q) = 80-4q\n$$\n\nEine Falle ist, $R'(q)=-2$ aus der Preissteigung zu schreiben. Die behauptete Formel stimmt mit der korrekten Ableitung überein.\n\n$$\nR(q) = 80q-2q^{2}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze die genannte Absatzmenge $q=10$ in den Grenzerlös ein:\n\n$$\nR'(10) = 80-4\\cdot 10\n$$\n\n$$\nR'(10) = 80-40\n$$\n\n$$\n80 - 40 = 40\n$$\n\n$$\nR'(10) = 40 = 40\n$$\n\n$$\nR'(10) = 40\n$$\n\nVerwechsle dies nicht mit dem Preis $p(10)=60$ oder dem Erlös $R(10)=600$. Die Steigungsrechnung stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDer Preisplan allein hat die Steigung $p'(q)=-2$, während die Ableitung des Erlöses\n\n$$\nR'(q) = 80-4q\n$$\n\nist. Das sind für jedes $q>0$ verschiedene Funktionen. $R'$ mit $p'$ gleichzusetzen vergisst, dass der Erlös das Produkt $q\\,p(q)$ ist. Die Identifikation in der Behauptung ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nR'(q) = p'(q)\n$$\n\n$$\np'(q) = -2\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nZuerst Höhe und Steigung bei $q=10$ auswerten:\n\n$$\nR(10) = 80\\cdot 10-2\\cdot 100 = 600\n$$\n\n$$\nR'(10) = 40\n$$\n\nDie Punkt-Steigungs-Form liefert dann die Tangente\n\n$$\ny = 600+40(q-10)\n$$\n\ngenau wie behauptet. $600$ durch $p(10)$ zu ersetzen würde die Tangentengleichung zerstören. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.05",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nStückkosten sind Gesamtkosten geteilt durch Output. Spalte den Quotienten termweise:\n\n$$\nA(q) = \\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}\n$$\n\n$$\nA(q) = \\dfrac{300}{q}+6+\\dfrac{3}{100}q\n$$\n\nJeder Term von $C$ trägt getrennt bei: die Fixkosten werden $\\dfrac{300}{q}$, der lineare Teil bleibt $6$, und der quadratische Teil wird proportional zu $q$. Das ist die behauptete Vereinfachung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDifferenziere den Stückkostenausdruck termweise mit $\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr)=-q^{-2}$ und behandle die Konstante $6$ unter dem Differenzieren als null:\n\n$$\nA'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}\n$$\n\nEine Falle ist, $\\dfrac{3}{100}q$ wie $\\dfrac{3}{100}q^{2}$ abzuleiten. Die behauptete Ableitung stimmt.\n\n$$\n\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr) = -q^{-2}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze $q=100$ in die Stückkostenableitung ein:\n\n$$\nA'(100) = -\\dfrac{300}{10000}+\\dfrac{3}{100}\n$$\n\n$$\nA'(100) = -0.03+0.03\n$$\n\n$$\nA'(100) = 0\n$$\n\nDie beiden Beiträge heben sich an dieser Menge genau auf. Die Ableitung verschwindet dort und passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGrenzkosten sind die Ableitung $C'(q)$ der Gesamtkosten, während\n\n$$\nA'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}\n$$\n\ndie Änderungsrate der Stückkosten ist. Das sind verschiedene Größen: die eine verfolgt die Steigung von $C$, die andere die Steigung von $C/q$. $A'$ mit Grenzkosten gleichzusetzen ist falsch. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEine verschwindende erste Ableitung bedeutet eine horizontale Tangente am Graphen von $A$. Wegen\n\n$$\nA'(100) = 0\n$$\n\nsind die Stückkosten bei $q=100$ lokal flach. Ob Minimum oder Maximum, sagt das allein noch nicht, aber lokale Flachheit ist genau das, was die Behauptung aussagt.\n\n$$\nq = 100\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.07",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Response-Index ist das Produkt $S(x)=x^{2}\\cdot e^{-x}$. Wende die Produktregel an und klammere $x\\,e^{-x}$ aus:\n\nSchreibe das Produkt als zwei Faktoren und differenziere jeden Faktor, bevor du zusammenfasst.\n\n$$\nS(x) = x^{2} \\cdot e^{-x}\n$$\n\n$$\nu(x) = x^{2}\n$$\n\n$$\nv(x) = e^{- x}\n$$\n\n$$\nu'(x) = 2 x\n$$\n\n$$\nv'(x) = - e^{- x}\n$$\n\n$$\nS'(x) = (2 x)\\cdot(e^{- x}) + (x^{2})\\cdot(- e^{- x})\n$$\n\nErst nach dieser Produktregel-Entwicklung vereinfachen wir zur behaupteten Form.\n\n$$\nS'(x) = 2x\\,e^{-x}+x^{2}(-e^{-x})\n$$\n\n$$\nS'(x) = x\\,e^{-x}(2-x)\n$$\n\nEine Falle ist, das Kettenregel-Minus von $e^{-x}$ zu vergessen. Die faktorisierte Form stimmt genau mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $x=2$ in die faktorisierte Ableitung ein:\n\n$$\nS'(2) = 2\\cdot e^{-2}\\cdot(2-2)\n$$\n\n$$\nS'(2) = 0\n$$\n\nDer Faktor $(2-x)$ verschwindet, daher ist das ganze Produkt null, obwohl $e^{-2}\\neq 0$. Die Ableitung verschwindet bei dieser Intensität und passt zur Behauptung.\n\n$$\nx = 2\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $S'(x)=x\\,e^{-x}(2-x)$ erneut mit der Produktregel. Ausklappen und Potenzen von $x$ sammeln liefert\n\n$$\nS''(x) = e^{-x}(x^{2}-4x+2)\n$$\n\nBleibe nicht bei einem unvereinfachten Drei-Faktor-Produkt stehen: der kompakte Polynomfaktor ist entscheidend. Mit dieser Form:\n\n$$\nS''(x) = e^{-x}\\cdot (x^{2}-4x+2)\n$$\n\n$$\nS'(x) = x\\,e^{-x}(2-x)\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze $x=1$ in die erste Ableitung ein:\n\n$$\nS'(1) = 1\\cdot e^{-1}\\cdot(2-1)\n$$\n\n$$\nS'(1) = e^{-1}\n$$\n\nHier ist der Faktor $(2-x)$ gleich $1$, daher reduziert sich die Ableitung sauber auf $e^{-1}$. Der berechnete Wert passt zur Behauptung.\n\n$$\nx = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nEine horizontale Tangente bedeutet genau Steigung null. Aus der Auswertung bei $x=2$ folgt\n\n$$\nS'(2) = 0\n$$\n\nalso ist die Tangente am Graphen dort horizontal. Verwechsle „horizontale Tangente“ nicht mit „horizontale Asymptote“: hier geht es um eine lokal flache Steigung.\n\n$$\nx = 2\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.08",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nSchreibe die Nachfrage als $D(a)=7(a+9)^{\\frac{1}{2}}$ und wende die Kettenregel an; multipliziere mit der inneren Steigung $1$:\n\n$$\nD'(a) = 7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}\n$$\n\n$$\nD'(a) = \\dfrac{7}{2\\sqrt{a+9}}\n$$\n\nEine Falle ist, den Faktor $\\dfrac{1}{2}$ aus der Wurzelpotenz zu vergessen. Die vereinfachte Formel passt zur Behauptung.\n\n$$\nD(a) = 7(a+9)^{\\frac{1}{2}}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $a=7$ ein; beachte $a+9=16$ und $\\sqrt{16}=4$:\n\n$$\nD'(7) = \\dfrac{7}{2\\cdot 4}\n$$\n\n$$\nD'(7) = \\dfrac{7}{8}\n$$\n\nBerechne nicht $D(7)=7\\cdot 4=28$, wenn die Behauptung die Ableitung verlangt. Die Steigung stimmt.\n\n$$\na = 7\n$$\n\n$$\na+9 = 16\n$$\n\n$$\n\\sqrt{16} = 4\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $D'(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ noch einmal:\n\n$$\nD''(a) = \\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}\n$$\n\n$$\nD''(a) = -\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}\n$$\n\nDas Minuszeichen zeigt abnehmende Grenzerträge. Mit der behaupteten zweiten Ableitung:\n\n$$\nD'(a) = \\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nNahe $a=7$ sagt das Modell einen Zuwachs von etwa\n\n$$\nD'(7) = \\dfrac{7}{8}\n$$\n\nNachfrageeinheiten pro zusätzlicher Werbeeinheit voraus, nicht $7$. Den Koeffizienten $7$ in $D(a)$ mit dem Grenzertrag bei $a=7$ zu verwechseln überschätzt die Steigung stark. Die Behauptung überschätzt den Grenzertrag.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\na = 7\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nVergleiche die Ableitung bei den beiden Werbeniveaus:\n\n$$\nD'(16) = \\dfrac{7}{2\\sqrt{25}} = \\dfrac{7}{10}\n$$\n\n$$\nD'(0) = \\dfrac{7}{2\\sqrt{9}} = \\dfrac{7}{6}\n$$\n\nWegen $\\dfrac{7}{10}<\\dfrac{7}{6}$ ist die Ableitung bei $a=16$ kleiner als bei $a=0$. Das sind abnehmende Erträge in Aktion.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.09",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Erlös ist das Produkt $R(n)=(20-3n)\\sqrt{2n+1}$. Wende die Produktregel an und fasse über den gemeinsamen Nenner $\\sqrt{2n+1}$ zusammen:\n\nSchreibe das Produkt als zwei Faktoren und differenziere jeden Faktor, bevor du zusammenfasst.\n\n$$\nR(n) = (20-3n) \\cdot \\sqrt{2n+1}\n$$\n\n$$\nu(n) = (20-3n)\n$$\n\n$$\nv(n) = \\sqrt{2n+1}\n$$\n\n$$\nR'(n) = u'(n)\\,v(n) + u(n)\\,v'(n)\n$$\n\nErst nach dieser Produktregel-Entwicklung vereinfachen wir zur behaupteten Form.\n\n$$\nR'(n) = \\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}\n$$\n\n$$\nR'(n) = \\dfrac{17-9n}{\\sqrt{2n+1}}\n$$\n\nDie Zähleralgebra $ -6n-3+20-3n=17-9n $ ist der heikle Schritt. Mit der behaupteten vereinfachten Formel:\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $n=1$ in die zusammengefasste Ableitung ein:\n\n$$\nR'(1) = \\dfrac{17-9}{\\sqrt{2+1}}\n$$\n\n$$\nR'(1) = \\dfrac{8}{\\sqrt{3}}\n$$\n\nRationalisiere nicht von $\\dfrac{8}{\\sqrt{3}}$ weg, wenn nicht gefordert: die Behauptung behält diese Form. Der berechnete Wert stimmt.\n\n$$\nn = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBevor man einen gemeinsamen Nenner bildet, schreibt die Produktregel die beiden Stücke getrennt: differenziere den Preisfaktor und den Nachfragefaktor der Reihe nach,\n\n$$\nR'(n) = -3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}\n$$\n\ngenau die in der Behauptung genannte Zwischenform. Unzusammengefasst zu lassen ist hier Absicht.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nEine kritische Stelle löst $R'(n)=0$. Bei positivem Nenner $\\sqrt{2n+1}$ muss der Zähler verschwinden:\n\n$$\n17-9n = 0\n$$\n\n$$\nn = \\dfrac{17}{9}\n$$\n\ndas passt zur behaupteten Nullstelle. Setze nicht versehentlich $17-9n=\\sqrt{2n+1}$. Vergleich mit der Behauptung:\n\n$$\nR'(n) = 0\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Ableitung wechselt das Vorzeichen an der kritischen Stelle\n\n$$\nn = \\dfrac{17}{9}\n$$\n\nund $\\dfrac{17}{9}<2$. Der Erlös steigt also auf einem Teil von $(0,2)$ und fällt auf dem Rest, er ist nicht auf dem ganzen Intervall steigend. Die Behauptung überschätzt die Monotonie. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "MATH 11.10",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDie Wartungszeit pro effektiver Einheit ist der Quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Wende die Quotientenregel mit Zähler $u=2n^{2}+8n$ und Nenner $v=n+1$ an:\n\n$$\nT(n) = \\dfrac{2n^{2}+8n}{n+1}\n$$\n\n$$\nu(n) = 2n^{2}+8n\n$$\n\n$$\nv(n) = n+1\n$$\n\n$$\nu'(n) = 4 n + 8\n$$\n\n$$\nv'(n) = 1\n$$\n\n$$\nT'(n) = \\dfrac{(4 n + 8)(n+1) - (2n^{2}+8n)(1)}{(n+1)^{2}}\n$$\n\n$$\nT'(n) = \\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}\n$$\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}\n$$\n\ndas passt zur behaupteten Formel.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $n=1$ in diese Ableitung ein:\n\n$$\nT'(1) = \\dfrac{2+4+8}{2^{2}}\n$$\n\n$$\nT'(1) = \\dfrac{14}{4}\n$$\n\n$$\nT'(1) = \\dfrac{7}{2}\n$$\n\nBerechne nicht $T(1)=\\dfrac{10}{2}=5$, wenn die Behauptung die Steigung verlangt. Die berechnete Ableitung stimmt.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nFür $n>0$ ist der Zähler $2n^{2}+4n+8=2(n^{2}+2n+4)$ eine Summe positiver Terme (Diskriminante $4-16<0$), und der Nenner $(n+1)^{2}$ ist positiv. Daher\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0\n$$\n\nfür jedes $n>0$. Eine positive Ableitung bedeutet: $T$ ist streng steigend.\n\n$$\n2n^{2}+4n+8 = 2(n^{2}+2n+4)\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nFalsches Kürzen würde $\\dfrac{2n+8}{n+1}$ liefern, aber die echte Ableitung nach der Quotientenregel ist\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}\n$$\n\nDiese Ausdrücke sind nicht identisch: der falsche lässt sowohl die quadratische Zählerstruktur als auch den quadrierten Nenner weg. Die Aussage ist falsch. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nT'(n) = \\dfrac{2n+8}{n+1}\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nFür $n>0$ verschwindet der Zähler $2n^{2}+4n+8$ nie (Diskriminante $4-16<0$), und der Nenner bleibt positiv, also\n\n$$\nT'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0\n$$\n\ndurchgängig. Eine streng positive Ableitung trifft nie null, daher existiert keine solche Nullstelle und\n\n$$\nT'(n) = 0\n$$\n\npasst nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "MATH 11.11",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDifferenziere den Log-Nutzen $U(x)=40\\ln(x+1)-x$ termweise. Die Kettenregel am Logarithmus liefert $\\dfrac{40}{x+1}$, die lineare Strafe $-1$:\n\n$$\nU'(x) = \\dfrac{40}{x+1}-1\n$$\n\ndas passt zur behaupteten ersten Ableitung. Schreibe nicht $\\dfrac{40}{x}$ und vergesse die Verschiebung $+1$.\n\n$$\nU(x) = 40\\ln(x+1)-x\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze die genannte Lernzeit $x=3$ in die erste Ableitung ein:\n\n$$\nU'(3) = \\dfrac{40}{3+1}-1\n$$\n\n$$\nU'(3) = \\dfrac{40}{4}-1\n$$\n\n$$\nU'(3) = 9\n$$\n\nEine Falle wäre, bei $\\dfrac{40}{4}=10$ stehenzubleiben und das Subtrahieren von $1$ zu vergessen. Die volle Rechnung passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $U'(x)=40(x+1)^{-1}-1$ noch einmal. Die Konstante $-1$ verschwindet, und die Potenzregel an $(x+1)^{-1}$ liefert\n\n$$\nU''(x) = -40(x+1)^{-2}\n$$\n\n$$\nU''(x) = -\\dfrac{40}{(x+1)^{2}}\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Das Minuszeichen zeigt abnehmenden Grenznutzen.\n\n$$\nU'(x) = 40(x+1)^{-1}-1\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie erste Ableitung bei $x=0$ ergibt den gewöhnlichen endlichen Wert\n\n$$\nU'(0) = \\dfrac{40}{1}-1\n$$\n\n$$\nU'(0) = 39\n$$\n\nalso ist die Ableitung bei $x=0$ definiert. Das Argument des Logarithmus ist $x+1$, gleich $1$ bei $x=0$: keine Division durch null. Die Behauptung ist falsch.\n\n$$\nx = 0\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie erste Ableitung misst die momentane Nutzenänderung pro zusätzlicher Lernstunde. Bei $x=3$ beträgt diese Rate\n\n$$\nU'(3) = 9\n$$\n\nalso ändert eine zusätzliche Stunde nahe diesem Niveau den Nutzen um ungefähr $9$ Nutzeneinheiten. Die Näherungssprache passt zur Ableitungsinterpretation.\n\n$$\nx = 3\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.12",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nWende die Potenzregel auf die Lernkurven-Kosten $c(N)=1000N^{-\\frac{1}{2}}$ an: multipliziere mit dem Exponenten $-\\tfrac{1}{2}$ und senke die Potenz:\n\n$$\nc'(N) = 1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}\n$$\n\n$$\nc'(N) = -500N^{-\\frac{3}{2}}\n$$\n\ndas passt zur behaupteten Formel. Behalte das Minus: Lernkurven fallen.\n\n$$\nc(N) = 1000N^{-\\frac{1}{2}}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $N=4$ ein und nutze $4^{-\\frac{3}{2}}=\\dfrac{1}{8}$:\n\n$$\nc'(4) = -500\\cdot\\dfrac{1}{8}\n$$\n\n$$\nc'(4) = -\\dfrac{125}{2}\n$$\n\nEine Falle wäre $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ statt $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. Der korrekte Wert passt zur Behauptung.\n\n$$\nN = 4\n$$\n\n$$\n4^{-\\frac{3}{2}} = \\dfrac{1}{8}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nFür jedes $N>0$ ist die Potenz $N^{-\\frac{3}{2}}$ positiv, der Leitkoeffizient $-500$ negativ. Daher\n\n$$\nc'(N)<0\n$$\n\ndurchgängig im Definitionsbereich. Eine negative Ableitung bedeutet: die Stückkosten fallen weiter, wenn der kumulierte Output steigt.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie Ableitung $c'(N)$ misst Euro Stückkosten, die man pro zusätzlicher Einheit kumulierten Outputs gewinnt (oder verliert). Bei $N=4$ beträgt diese Rate\n\n$$\nc'(4) = -\\dfrac{125}{2}\n$$\n\nalso senkt eine zusätzliche Einheit die Stückkosten um ungefähr $\\dfrac{125}{2}$ Euro. Der Betrag der negativen Ableitung ist die Größe der Verringerung.\n\n$$\nN = 4\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVergleiche die Beträge bei den beiden kumulierten Outputs:\n\n$$\n\\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}\n$$\n\n$$\n\\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{1}{2\\sqrt{2}}\\neq 2\n$$\n\nWeil $c'$ wie $N^{-\\frac{3}{2}}$ skaliert, multipliziert eine Verdopplung von $N$ den Betrag mit $2^{-\\frac{3}{2}}$, nicht mit $2$. Die Behauptung ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "MATH 11.13",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGrenzerlös ist die Ableitung der quadratischen Erlösregel $R(q)=50q-q^{2}$. Termweises Differenzieren liefert\n\n$$\nR'(q) = 50-2q\n$$\n\ndas passt zur behaupteten Formel. Schreibe nicht nur $-2q$ und lasse die $50$ weg.\n\n$$\nR(q) = 50q-q^{2}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze die genannte Menge $q=20$ in den Grenzerlös ein:\n\n$$\nR'(20) = 50-2\\cdot 20\n$$\n\n$$\nR'(20) = 50-40\n$$\n\n$$\n50 - 40 = 10\n$$\n\n$$\nR'(20) = 10 = 10\n$$\n\n$$\nR'(20) = 10\n$$\n\nEine Falle wäre $50-20=30$ ohne den Faktor $2$ bei $q$. Die korrekte Steigung ist $10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWerte die Erlösfunktion selbst bei $q=20$ aus:\n\n$$\nR(20) = 50\\cdot 20-20^{2}\n$$\n\n$$\nR(20) = 1000-400\n$$\n\n$$\n1000 - 400 = 600\n$$\n\n$$\nR(20) = 600 = 600\n$$\n\n$$\nR(20) = 600\n$$\n\nDas ist die Höhe auf der Kurve, nicht die Steigung. Die Höhe passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nMit dem Punkt $(20,600)$ und der Steigung $R'(20)=10$ liefert die Punkt-Steigungs-Form\n\n$$\ny-600 = 10(q-20)\n$$\n\n$$\ny = 600+10(q-20)\n$$\n\ndie behauptete Tangente. $600$ durch $R'(20)$ zu ersetzen würde die Gleichung zerstören.\n\n$$\nq = 20\n$$\n\n$$\nR'(20) = 10\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Steigung der Tangente bei $q=20$ ist der Ableitungswert\n\n$$\nR'(20) = 10>0\n$$\n\nalso steigt die Tangente von links nach rechts, sie fällt nicht. Der Erlös nimmt bei $q=20$ noch zu, weil das Maximum $R'(q)=0$ erst später bei $q=25$ liegt.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nq = 20\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Der Tageserlös wird durch die konkave Quadratfunktion modelliert\n\n$$R(q)=50q-q^{2}$$\n\nTermweises Differenzieren liefert den Grenzerlös\n\n$$R'(q)=50-2q$$\n\nBei der genannten Menge wertet man sowohl die Steigung als auch die Höhe auf der Kurve aus:\n\n$$R'(20)=10\\qquad R(20)=600$$\n\nDie Punkt-Steigungs-Form baut dann die Tangente\n\n$$y=600+10(q-20)$$\n\nInsbesondere ist die Tangentensteigung bei $q=20$ die positive Zahl $10$, keine negative Steigung: das Erlösmaximum liegt bei $q=25$, daher liegt $q=20$ noch auf der steigenden Seite.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.14",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Zuverlässigkeitswert ist die verschachtelte fünfte Potenz $G(x)=(3x^{2}+4)^{5}$. Die Kettenregel multipliziert die äußere Potenz mit der inneren Ableitung $6x$:\n\nBenenne die äußere Potenz und den inneren Ausdruck, dann multipliziere mit der inneren Ableitung, bevor du vereinfachst.\n\n$$\nG(x) = (3x^{2}+4)^{5}\n$$\n\n$$\n\\text{outer: }w^{5}\\quad\\text{with }w = 3x^{2}+4\n$$\n\n$$\n\\dfrac{d}{dx}(3x^{2}+4) = 6 x\n$$\n\n$$\nG'(x) = 5(3x^{2}+4)^{4} \\cdot (6 x)\n$$\n\n$$\nG'(x) = 5(3x^{2}+4)^{4}\\cdot 6x\n$$\n\n$$\nG'(x) = 30x(3x^{2}+4)^{4}\n$$\n\ndas passt zur behaupteten Formel. Die innere $6x$ zu vergessen ist hier die klassische Kettenregel-Falle. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei $x=1$ gilt $3x^{2}+4=7$ und $7^{4}=2401$, also\n\n$$\nG'(1) = 30\\cdot 1\\cdot 7^{4}\n$$\n\n$$\nG'(1) = 30\\cdot 2401\n$$\n\n$$\n30\\times 2401 = 72030\n$$\n\n$$\nG'(1) = 72030\n$$\n\nBerechne nicht versehentlich $7^{5}$: die äußere Potenz ist bereits auf $4$ abgesenkt. Der berechnete Wert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $G'(x)=30x(3x^{2}+4)^{4}$ erneut mit der Produktregel und klammere die gemeinsame Potenz $(3x^{2}+4)^{3}$ aus:\n\n$$\nG''(x) = 30(3x^{2}+4)^{3}(27x^{2}+4)\n$$\n\nDer Faktor $27x^{2}+4$ entsteht aus dem Zusammenfassen der beiden Produktregel-Stücke. Mit der behaupteten zweiten Ableitung:\n\n$$\nG'(x) = 30x(3x^{2}+4)^{4}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze $x=0$ in die zweite Ableitung ein:\n\n$$\nG''(0) = 30\\cdot 4^{3}\\cdot 4\n$$\n\n$$\nG''(0) = 30\\cdot 64\\cdot 4\n$$\n\n$$\n30\\times 64 = 1920\n$$\n\n$$\n1920\\times 4 = 7680\n$$\n\n$$\nG''(0) = 7680\n$$\n\nHier ist $3(0)^{2}+4=4$ und $27(0)^{2}+4=4$. Der berechnete Wert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie erste Ableitung trägt einen expliziten Faktor $x$:\n\n$$\nG'(0) = 30\\cdot 0\\cdot 4^{4}\n$$\n\n$$\nG'(0) = 0\n$$\n\nnicht $30$. Eine Falle ist, den Leitkoeffizienten $30$ abzulesen und das verschwindende $x$ zu ignorieren. Der Wert in der Behauptung ist falsch. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nG'(0) = 30\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "MATH 11.15",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nGrenzkosten sind die erste Ableitung des kubischen Kostenplans. Termweises Differenzieren liefert\n\n$$\nC'(q) = 12q^{2}-36q+40\n$$\n\ngenau die behauptete Grenzkostenformel. Die Konstante $100$ verschwindet, wie Konstanten beim Differenzieren stets.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDifferenziere das Grenzkostenpolynom noch einmal:\n\n$$\nC''(q) = 24q-36\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Sie misst, wie schnell sich die Grenzkosten selbst ändern. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze $q=\\dfrac{3}{2}$ in die zweite Ableitung ein:\n\n$$\nC''\\!\\left(\\dfrac{3}{2}\\right) = 24\\cdot\\dfrac{3}{2}-36\n$$\n\n$$\n24\\cdot\\dfrac{3}{2}-36 = 36-36 = 0\n$$\n\n$$\n36 - 36 = 0\n$$\n\nalso verschwindet die zweite Ableitung dort. Das ist der natürliche Kandidat für einen Wendepunkt von $C$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nWerte die zweite Ableitung bei $q=1$ aus:\n\n$$\nC''(1) = 24-36\n$$\n\n$$\n24 - 36 = -12\n$$\n\n$$\nC''(1) = -12 = -12\n$$\n\n$$\nC''(1) = -12\n$$\n\ndas ist negativ, nicht positiv. Das Vorzeichen in der Behauptung ist falsch: links von $q=\\tfrac{3}{2}$ ist die Kostenkurve noch konkav nach unten. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWerte die zweite Ableitung bei $q=2$ aus:\n\n$$\nC''(2) = 48-36\n$$\n\n$$\n48 - 36 = 12\n$$\n\n$$\nC''(2) = 12 = 12\n$$\n\n$$\nC''(2) = 12>0\n$$\n\nalso ist die zweite Ableitung dort positiv. Rechts von der Nullstelle bei $q=\\tfrac{3}{2}$ hat die Krümmung nach oben gewechselt.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.16",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Beschwerdeindex ist der Quotient $K(t)=\\dfrac{t+4}{t+1}$. Die Quotientenregel vereinfacht sofort zu\n\n$$\nK(t) = \\dfrac{t+4}{t+1}\n$$\n\n$$\nu(t) = t+4\n$$\n\n$$\nv(t) = t+1\n$$\n\n$$\nu'(t) = 1\n$$\n\n$$\nv'(t) = 1\n$$\n\n$$\nK'(t) = \\dfrac{(1)(t+1) - (t+4)(1)}{(t+1)^{2}}\n$$\n\n$$\nK'(t) = \\dfrac{(t+1)-(t+4)}{(t+1)^{2}}\n$$\n\n$$\nK'(t) = -\\dfrac{3}{(t+1)^{2}}\n$$\n\nDie Zählerdifferenz $1-4=-3$ ist die ganze Geschichte.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze die genannte Trainingszeit $t=2$ ein:\n\n$$\nK'(2) = -\\dfrac{3}{(2+1)^{2}}\n$$\n\n$$\nK'(2) = -\\dfrac{3}{9}\n$$\n\n$$\nK'(2) = -\\dfrac{1}{3}\n$$\n\nBehalte das Minus: mehr Training senkt den Beschwerdeindex. Der berechnete Wert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nFür jedes $t>0$ ist der Zählerfaktor $-3$ negativ und der Nenner $(t+1)^{2}$ positiv, also\n\n$$\nK'(t)<0\n$$\n\ndurchgängig. Eine negative Ableitung bedeutet: der Index fällt streng in der Trainingszeit.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie Ableitung misst die momentane Indexänderung pro zusätzlicher Trainingsstunde. Bei $t=2$ beträgt diese Rate\n\n$$\nK'(2) = -\\dfrac{1}{3}\n$$\n\nalso ändert eine zusätzliche Stunde den Index um ungefähr $-\\dfrac{1}{3}$. Die vorzeichenbehaftete Rate ist genau das, was die Behauptung berichtet.\n\n$$\nt = 2\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDifferenziere $K'(t)=-3(t+1)^{-2}$ noch einmal:\n\n$$\nK''(t) = (-3)\\cdot(-2)(t+1)^{-3}\n$$\n\n$$\nK''(t) = \\dfrac{6}{(t+1)^{3}}\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Das positive Vorzeichen bedeutet: die Abnahme von $K$ wird mit wachsendem $t$ flacher. Vergleich mit der Behauptung:\n\n$$\nK'(t) = -3(t+1)^{-2}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr."
+    ]
+  },
+  {
+    "case_id": "MATH 11.17",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Sicherheitswert ist die verschachtelte vierte Potenz $S(x)=(2x+5)^{4}$. Die Kettenregel multipliziert mit der inneren Steigung $2$:\n\nBenenne die äußere Potenz und den inneren Ausdruck, dann multipliziere mit der inneren Ableitung, bevor du vereinfachst.\n\n$$\nS(x) = (2x+5)^{4}\n$$\n\n$$\n\\text{outer: }w^{4}\\quad\\text{with }w = 2x+5\n$$\n\n$$\n\\dfrac{d}{dx}(2x+5) = 2\n$$\n\n$$\nS'(x) = 4(2x+5)^{3} \\cdot (2)\n$$\n\n$$\nS'(x) = 4(2x+5)^{3}\\cdot 2\n$$\n\n$$\nS'(x) = 8(2x+5)^{3}\n$$\n\ndas passt zur behaupteten Formel. Die innere $2$ aus dem linearen Term zu vergessen ist die übliche Falle. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $x=0$ ein und nutze $2\\cdot 0+5=5$:\n\n$$\nS'(0) = 8\\cdot 5^{3}\n$$\n\n$$\nS'(0) = 8\\cdot 125\n$$\n\n$$\n8\\times 125 = 1000\n$$\n\n$$\nS'(0) = 1000\n$$\n\nVerwechsle dies nicht mit $S(0)=5^{4}=625$. Der Ableitungswert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $S'(x)=8(2x+5)^{3}$ erneut, wieder multipliziert mit der inneren Steigung $2$:\n\n$$\nS''(x) = 8\\cdot 3(2x+5)^{2}\\cdot 2\n$$\n\n$$\nS''(x) = 48(2x+5)^{2}\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Das Koeffizientenmuster $8\\to 48$ ist konsistent mit $4\\cdot 3\\cdot 2^{2}$.\n\n$$\nS'(x) = 8(2x+5)^{3}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze $x=0$ in die zweite Ableitung ein:\n\n$$\nS''(0) = 48\\cdot 5^{2}\n$$\n\n$$\nS''(0) = 48\\cdot 25\n$$\n\n$$\n48\\times 25 = 1200\n$$\n\n$$\nS''(0) = 1200\n$$\n\nDer berechnete Wert passt zur Behauptung. Behalte $5^{2}=25$, nicht $5^{3}$. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDifferenziere $S''(x)=48(2x+5)^{2}$ noch einmal:\n\n$$\nS'''(x) = 48\\cdot 2(2x+5)\\cdot 2\n$$\n\n$$\nS'''(x) = 192(2x+5)\n$$\n\ndas passt zur behaupteten dritten Ableitung. Noch ein Differenzieren würde die Konstante $384$ hinterlassen.\n\n$$\nS''(x) = 48(2x+5)^{2}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview": "Der Verpackungs-Sicherheitswert ist die verschachtelte vierte Potenz\n\n$$S(x)=(2x+5)^{4}$$\n\nWiederholte Kettenregel, stets multipliziert mit der inneren Steigung $2$, liefert\n\n$$S'(x)=8(2x+5)^{3}\\qquad S''(x)=48(2x+5)^{2}\\qquad S'''(x)=192(2x+5)$$\n\nDie Auswertung der ersten beiden Ableitungen am Ursprung gibt die konkreten Werte\n\n$$S'(0)=8\\cdot 5^{3}=1000\\qquad S''(0)=48\\cdot 25=1200$$\n\nJedes Differenzieren multipliziert sowohl mit der fallenden äußeren Potenz als auch mit der konstanten inneren Steigung $2$.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.18",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Engagement-Index ist das Produkt $E(t)=t\\cdot\\ln(t+1)$. Wende die Produktregel an: differenziere $t$ und $\\ln(t+1)$ der Reihe nach,\n\nSchreibe das Produkt als zwei Faktoren und differenziere jeden Faktor, bevor du zusammenfasst.\n\n$$\nE(t) = t \\cdot \\ln(t+1)\n$$\n\n$$\nu(t) = t\n$$\n\n$$\nv(t) = \\ln{(t + 1 )}\n$$\n\n$$\nu'(t) = 1\n$$\n\n$$\nv'(t) = \\frac{1}{t + 1}\n$$\n\n$$\nE'(t) = (1)\\cdot(\\ln{(t + 1 )}) + (t)\\cdot(\\frac{1}{t + 1})\n$$\n\nErst nach dieser Produktregel-Entwicklung vereinfachen wir zur behaupteten Form.\n\n$$\nE'(t) = \\ln(t+1)+t\\cdot\\dfrac{1}{t+1}\n$$\n\n$$\nE'(t) = \\ln(t+1)+\\dfrac{t}{t+1}\n$$\n\ndas passt zur behaupteten Formel. Behalte beide Summanden: keiner allein ist die volle Ableitung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $t=1$ in die erste Ableitung ein:\n\n$$\nE'(1) = \\ln(1+1)+\\dfrac{1}{1+1}\n$$\n\n$$\nE'(1) = \\ln 2+\\dfrac{1}{2}\n$$\n\nErsetze $\\dfrac{1}{2}$ nicht durch $1$. Der berechnete Wert passt zur Behauptung.\n\n$$\nt = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$ erneut. Schreibe $\\dfrac{t}{t+1}=1-\\dfrac{1}{t+1}$ um und differenziere dann:\n\n$$\nE''(t) = \\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}\n$$\n\ndas passt zur behaupteten zweiten Ableitung.\n\n$$\nE'(t) = \\ln(t+1)+\\dfrac{t}{t+1}\n$$\n\n$$\n\\dfrac{t}{t+1} = 1-\\dfrac{1}{t+1}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze $t=1$ in die zweite Ableitung ein:\n\n$$\nE''(1) = \\dfrac{1}{2}+\\dfrac{1}{4}\n$$\n\n$$\nE''(1) = \\dfrac{3}{4}\n$$\n\nDie beiden positiven Beiträge addieren sich sauber. Der berechnete Wert passt zur Behauptung.\n\n$$\nt = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie korrekte Produktregel-Ableitung ist\n\n$$\nE'(t) = \\ln(t+1)+\\dfrac{t}{t+1}\n$$\n\nDen zweiten Summanden durch die Konstante $1$ zu ersetzen lässt den Faktor $\\dfrac{t}{t+1}$ weg und erzeugt eine andere Funktion. Dieser Shortcut ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nE'(t) = \\ln(t+1)+1\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Der Engagement-Index ist das Produkt\n\n$$E(t)=t\\cdot\\ln(t+1)\\qquad(t>0)$$\n\nDie Produktregel liefert\n\n$$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$\n\nalso $E'(1)=\\ln 2+\\dfrac{1}{2}$. Nochmaliges Differenzieren ergibt\n\n$$E''(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$\n\nund daher $E''(1)=\\dfrac{3}{4}$. Der falsche Shortcut $E'(t)=\\ln(t+1)+1$ lässt den Faktor $\\dfrac{t}{t+1}$ weg: ein klassischer Produktregel-Fehler.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.19",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nSchreibe den Verarbeitungsindex um, indem du die Wurzel im Nenner in eine negative Potenz verwandelst:\n\n$$\nM(x) = \\dfrac{x^{2}+1}{\\sqrt{x+3}}\n$$\n\n$$\nM(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}\n$$\n\ngenau die in der Behauptung genannte Produktform. Diese Umschreibung bereitet die Produktregel sauber vor.\n\n$$\nM(x) = (x^{2}+1)\\cdot (x+3)^{-\\frac{1}{2}}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWende die Produktregel auf $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ an und fasse über einen Nenner zusammen. Die Zählerrechnung\n\n$$\n2x(x+3)-\\tfrac{1}{2}(x^{2}+1) = \\tfrac{1}{2}(3x^{2}+12x-1)\n$$\n\nliefert\n\n$$\nM'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}\n$$\n\ndas passt zur behaupteten Formel.\n\n$$\nM(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze $x=1$ ein; beachte $x+3=4$ und $4^{\\frac{3}{2}}=8$:\n\n$$\nM'(1) = \\dfrac{3+12-1}{2\\cdot 8}\n$$\n\n$$\nM'(1) = \\dfrac{14}{16}\n$$\n\n$$\nM'(1) = \\dfrac{7}{8}\n$$\n\nZähler $14$ und Nenner $16$ kürzen sich durch $2$. Der berechnete Wert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Auswertung bei $x=1$ hat bereits\n\n$$\nM'(1) = \\dfrac{7}{8}\n$$\n\ngeliefert, was nicht gleich $\\dfrac{13}{8}$ ist. Eine Falle ist, den Zähler als $3+12+1=16$ oder $12-1=11$ falsch zu berechnen. Der Wert in der Behauptung ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nM'(1) = \\dfrac{13}{8}\n$$\n\n$$\nx = 1\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Ableitungsformel\n\n$$\nM'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}\n$$\n\nhängt noch in Zähler und Nenner von $x$ ab. Sie ist daher keine konstante Funktion. Umformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Schreibe den Verarbeitungsindex als Potenzprodukt um:\n\n$$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$\n\nDie Produktregel, über einen Nenner gebracht, liefert\n\n$$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$\n\nBei $x=1$ wertet das zu\n\n$$M'(1)=\\dfrac{14}{2\\cdot 8}=\\dfrac{7}{8}$$\n\naus, nicht $\\dfrac{13}{8}$. Die Ableitung hängt noch in Zähler und Nenner von $x$ ab, sie ist also keine Konstante.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.20",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDer Leistungsindex ist das Produkt $F(t)=(t^{2}+1)\\ln(t+1)$. Wende die Produktregel an: differenziere die Quadratfunktion und den Logarithmus der Reihe nach,\n\nSchreibe das Produkt als zwei Faktoren und differenziere jeden Faktor, bevor du zusammenfasst.\n\n$$\nF(t) = (t^{2}+1) \\cdot \\ln(t+1)\n$$\n\n$$\nu(t) = t^{2} + 1\n$$\n\n$$\nv(t) = \\ln{(t + 1 )}\n$$\n\n$$\nu'(t) = 2 t\n$$\n\n$$\nv'(t) = \\frac{1}{t + 1}\n$$\n\n$$\nF'(t) = (2 t)\\cdot(\\ln{(t + 1 )}) + (t^{2} + 1)\\cdot(\\frac{1}{t + 1})\n$$\n\nErst nach dieser Produktregel-Entwicklung vereinfachen wir zur behaupteten Form.\n\n$$\nF'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}\n$$\n\ndas passt zur behaupteten Formel. Beide Summanden sind nötig.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $t=1$ in die erste Ableitung ein:\n\n$$\nF'(1) = 2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}\n$$\n\n$$\nF'(1) = 2\\ln 2+1\n$$\n\nDer zweite Summand vereinfacht sich an dieser Stelle zu $1$, aber das ist speziell für $t=1$, keine allgemeine Regel.\n\n$$\nt = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere $F'$ erneut: die Produktregel an $2t\\ln(t+1)$ und die Quotientenregel an $\\dfrac{t^{2}+1}{t+1}$ ordnen sich um zu\n\n$$\nF''(t) = 2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}\n$$\n\ndas passt zur behaupteten zweiten Ableitung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze $t=1$ in die zweite Ableitung ein:\n\n$$\nF''(1) = 2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}\n$$\n\n$$\nF''(1) = 2\\ln 2+2-\\dfrac{1}{2}\n$$\n\n$$\nF''(1) = 2\\ln 2+\\dfrac{3}{2}\n$$\n\nAchte auf die Arithmetik $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. Der berechnete Wert passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie echte Produktregel-Ableitung ist\n\n$$\nF'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}\n$$\n\nDen Logarithmus-Term wegzulassen erzeugt $2t+\\dfrac{t^{2}+1}{t+1}$, dem der Summand $2t\\ln(t+1)$ fehlt. Dieser Shortcut ist falsch.\n\n$$\nF'(t) = 2t+\\dfrac{t^{2}+1}{t+1}\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ]
+  },
+  {
+    "case_id": "MATH 11.21",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDifferenziere den kubischen Gewinnplan $\\pi(q)=-q^{3}+12q^{2}-21q$ termweise:\n\n$$\n\\pi'(q) = -3q^{2}+24q-21\n$$\n\ndas passt zur behaupteten ersten Ableitung. Achte auf die Vorzeichen: der Leitterm liefert $-3q^{2}$, nicht $+3q^{2}$.\n\n$$\n\\pi(q) = -q^{3}+12q^{2}-21q\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $q=1$ in die erste Ableitung ein:\n\n$$\n\\pi'(1) = -3+24-21\n$$\n\n$$\n-3 + 24 = 21\n$$\n\n$$\n21 - 21 = 0\n$$\n\n$$\n\\pi'(1) = 0\n$$\n\nalso verschwindet die Ableitung an dieser Menge. Die drei Terme heben sich genau auf: $-3+24=21$, dann $21-21=0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere das erste Ableitungspolynom noch einmal:\n\n$$\n\\pi''(q) = -6q+24\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Sie verfolgt, wie sich der Grenzgewinn selbst mit dem Output ändert. Vergleich mit der Behauptung:\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nSetze $q=3$ in die zweite Ableitung ein:\n\n$$\n\\pi''(3) = -6\\cdot 3+24\n$$\n\n$$\n\\pi''(3) = -18+24\n$$\n\n$$\n-18 + 24 = 6\n$$\n\n$$\n\\pi''(3) = 6\n$$\n\n$$\n\\pi''(3) = 6\\neq 0\n$$\n\nDie zweite Ableitung verschwindet bei $q=4$, nicht bei $q=3$. Die Auswertung in der Behauptung ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Tangentensteigung bei $q=1$ ist genau der erste Ableitungswert\n\n$$\n\\pi'(1) = 0\n$$\n\nalso null, nicht streng positiv. Eine horizontale Tangente ist keine streng steigende.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nq = 1\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Der Tagesgewinn folgt dem kubischen Plan\n\n$$\\pi(q)=-q^{3}+12q^{2}-21q$$\n\nEin- und zweifaches Differenzieren liefert die ersten beiden Ableitungen\n\n$$\\pi'(q)=-3q^{2}+24q-21\\qquad \\pi''(q)=-6q+24$$\n\nAn den genannten Stellen gelten die konkreten Werte\n\n$$\\pi'(1)=0\\qquad \\pi''(3)=6\\neq 0$$\n\nInsbesondere ist die Tangentensteigung bei $q=1$ genau null, diese Steigung ist also nicht streng positiv. Die Nullstelle der zweiten Ableitung würde $-6q+24=0$ lösen, also $q=4$, nicht $q=3$.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.22",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nDie Versandkosten sind der lineare Plan $C(q)=45+9q$. Ihre Ableitung ist die konstante Steigung\n\n$$\nC'(q) = 9\n$$\n\ngenau die behaupteten konstanten Grenzkosten. Die Fixkosten $45$ verschwinden unter dem Differenzieren.\n\n$$\nC(q) = 45+9q\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWeil die Grenzkosten konstant $9$ sind, liefert jede besondere Menge (einschließlich $q=20$) denselben Wert\n\n$$\nC'(20) = 9\n$$\n\nAn $q=20$ ist für eine konstante Ableitung nichts Besonderes.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nStückkosten sind der separate Quotient\n\n$$\n\\dfrac{C(q)}{q} = \\dfrac{45}{q}+9\n$$\n\nder den konstanten Grenzkosten $9$ nur im Grenzfall $q\\to\\infty$ gleicht, nicht für jedes endliche $q>0$. Der Fixkostenbeitrag $\\dfrac{45}{q}$ hält sie auseinander. Die Identifikation in der Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nEine lineare Funktion ist bereits ihre eigene Tangente. Mit Steigung $9$ und Achsenabschnitt $45$ ist die Tangente bei $q=10$ (und an jedem anderen $q$) einfach\n\n$$\ny = 45+9q\n$$\n\ndas passt zur Behauptung. Die Punkt-Steigungs-Form mit $C(10)=135$ liefert dieselbe Gerade.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDifferenzieren der konstanten Grenzkosten noch einmal liefert\n\n$$\nC''(q) = 0\n$$\n\nfür jedes $q$. Ein linearer Kostenplan hat überall Krümmung null.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview": "Die Versandkosten folgen dem linearen Plan\n\n$$C(q)=45+9q$$\n\nIhre Ableitungen sind die Konstanten\n\n$$C'(q)=9\\qquad C''(q)=0$$\n\nalso sind die Grenzkosten an jeder Menge $9$, einschließlich $q=20$. Stückkosten sind der separate Quotient\n\n$$\\dfrac{C(q)}{q}=\\dfrac{45}{q}+9$$\n\nder den Grenzkosten nur im Grenzfall $q\\to\\infty$ gleicht, nicht für jedes endliche $q>0$. Weil $C$ bereits linear mit Steigung $9$ ist, ist die Tangente an jedem Punkt (insbesondere bei $q=10$) die Gerade $y=45+9q$ selbst.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.23",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nWende die Potenzregel auf $Q(L)=4L^{\\frac{5}{2}}$ an: multipliziere mit $\\tfrac{5}{2}$ und senke den Exponenten:\n\n$$\nQ'(L) = 4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}\n$$\n\n$$\nQ'(L) = 10L^{\\frac{3}{2}}\n$$\n\ndas passt zum behaupteten Grenzprodukt. Lasse den Exponenten nicht bei $\\tfrac{5}{2}$.\n\n$$\nQ(L) = 4L^{\\frac{5}{2}}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $L=1$ in die Grenzprodukt-Regel ein:\n\n$$\nQ'(1) = 10\\cdot 1^{\\frac{3}{2}}\n$$\n\n$$\nQ'(1) = 10\n$$\n\nJede positive Potenz von $1$ bleibt $1$, daher ist die Auswertung unmittelbar.\n\n$$\nL = 1\n$$\n\ndas passt zur Behauptung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze $L=4$ ein und nutze $4^{\\frac{3}{2}}=(\\sqrt{4})^{3}=2^{3}=8$:\n\n$$\nQ'(4) = 10\\cdot 8\n$$\n\n$$\n10\\times 8 = 80\n$$\n\n$$\nQ'(4) = 80\n$$\n\nEine Falle wäre $4^{\\frac{5}{2}}=32$ (das originale $Q$) statt $4^{\\frac{3}{2}}=8$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDifferenziere das Grenzprodukt noch einmal:\n\n$$\nQ''(L) = 10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}\n$$\n\n$$\nQ''(L) = 15L^{\\frac{1}{2}}\n$$\n\ndas passt zur behaupteten zweiten Ableitung. Der positive Koeffizient zeigt: das Grenzprodukt steigt selbst noch.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nWeil der Exponent $\\dfrac{3}{2}$ positiv ist,\n\n$$\nQ'(L) = 10L^{\\frac{3}{2}}\n$$\n\nsteigt mit $L$. Der Vergleich $Q'(1)=10$ mit $Q'(4)=80$ bestätigt den Anstieg. Die Behauptung, es falle, ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview": "Der Output folgt der Fünf-Halbe-Produktionsregel\n\n$$Q(L)=4L^{\\frac{5}{2}}\\qquad(L>0)$$\n\nZwei Anwendungen der Potenzregel liefern\n\n$$Q'(L)=10L^{\\frac{3}{2}}\\qquad Q''(L)=15L^{\\frac{1}{2}}$$\n\nDie Auswertung des Grenzprodukts ergibt\n\n$$Q'(1)=10\\qquad Q'(4)=10\\cdot 8=80$$\n\nWeil der Exponent $\\dfrac{3}{2}$ positiv ist, steigt $Q'(L)$ mit $L$ statt zu fallen: hier wachsendes (nicht abnehmendes) Grenzprodukt bei der gegebenen Potenz.\n\nNutze diesen Ableitungsaufbau für jeden Buchstaben: zuerst vereinfachen, an genannten Stellen auswerten, dann jede Behauptung annehmen oder verwerfen."
+  },
+  {
+    "case_id": "MATH 11.24",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "**A.** → Richtig\n\nErlös ist Preis mal verkaufte Tickets. Expandiere mit dem linearen Tarif:\n\n$$\nR(q) = q\\cdot\\Bigl(60-\\dfrac{1}{2}q\\Bigr)\n$$\n\n$$\nR(q) = 60q-\\dfrac{1}{2}q^{2}\n$$\n\ndas passt zur behaupteten Erlösfunktion. Behalte den Koeffizienten $\\tfrac{1}{2}$ bei $q^{2}$, nicht $1$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDifferenziere die Erlös-Quadratfunktion termweise:\n\n$$\nR'(q) = 60-q\n$$\n\ndas passt zum behaupteten Grenzerlös. Die Ableitung von $-\\tfrac{1}{2}q^{2}$ ist $-q$, nicht $-\\tfrac{1}{2}q$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSetze $q=20$ in den Grenzerlös ein:\n\n$$\nR'(20) = 60-20\n$$\n\n$$\n60 - 20 = 40\n$$\n\n$$\nR'(20) = 40 = 40\n$$\n\n$$\nR'(20) = 40\n$$\n\nDer berechnete Wert passt zur Behauptung. Verwechsle dies nicht mit $p(20)=50$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGrenzerlös ist $R'(q)=60-q$, während der Tarif\n\n$$\np(q) = 60-\\dfrac{1}{2}q\n$$\n\nist. Sie unterscheiden sich um den Faktor bei $q$: $R'$ fällt doppelt so steil wie $p$. Sie gleichzusetzen vergisst, dass der Erlös das Produkt $q\\,p(q)$ ist. Die Behauptung ist falsch.\n\nUmformulieren der Behauptung kann einen algebraischen Widerspruch nicht reparieren.\n\n$$\nR'(q) = p(q)\n$$\n\ndas passt nicht zur Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nZuerst Höhe und Steigung bei $q=20$ auswerten:\n\n$$\nR(20) = 60\\cdot 20-\\dfrac{1}{2}\\cdot 400 = 1000\n$$\n\n$$\nR'(20) = 40\n$$\n\nDie Punkt-Steigungs-Form liefert dann die Tangente\n\n$$\ny = 1000+40(q-20)\n$$\n\ngenau wie behauptet.\n\nDie Aussage ist wahr."
+    ]
+  }
+]

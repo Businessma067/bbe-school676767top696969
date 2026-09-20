@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.026",
+    "title": "Book Value After Depreciation",
+    "context": "Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:",
+    "statements": [
+      "Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.",
+      "When a garage makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "The depreciation that a hotel chain charges on its kitchen equipment each year is a non-cash expense, since the related cash was already paid out when the kitchen equipment was originally purchased.",
+      "A complete financial statement for a business typically brings together a balance sheet, a statement of profit and loss and a cash flow statement.",
+      "When a furniture maker earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loss lowers retained earnings and reduces equity; it does not increase it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "These three statements together give a fuller picture of financial position, performance and cash movements than any single statement alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit adds to retained earnings and increases equity; it does not reduce it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.027",
+    "title": "Annual Depreciation Chart 27",
+    "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation by asset\"]]\nMachinery | Annual depreciation=21250\nDelivery truck | Annual depreciation=7500\nComputer equipment | Annual depreciation=6667\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €170,000 purchase price, 8-year useful life, no residual value |\n| Asset B – Delivery truck | €52,000 purchase price, 6-year useful life, €7,000 residual value |\n| Asset C – Computer equipment | €20,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operations shows how well a business generates cash from its core business and is the most important part of the cash flow statement.",
+      "Combined annual depreciation for the three assets is €32,858.",
+      "After three years, the delivery truck's carrying value is €33,574.",
+      "Residual value of the €52,000 delivery truck is ignored when calculating its annual depreciation.",
+      "After three years, the computer equipment, originally costing €20,000, is fully written down to nil."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "This matches the textbook emphasis on operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sum of annual charges ≈ €35,417.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Carrying value ≈ €29,500.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Residual value is deducted from cost before spreading the remainder.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Useful life is 3 years with no residual value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.028",
+    "title": "Cash Flow Statement Over Two Years 28",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=388 | Investing=-330\nYear 2 | Operating=437 | Investing=-402\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 388 | 437 |\n| Cash flow from investing activities | (330) | (402) |\n| Dividends paid | (49) | (62) |\n| Proceeds from new borrowing | 87 | 74 |\n| Cash flow from financing activities | 38 | 12 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operating activities grew by more than 28% from Year 1 to Year 2.",
+      "Gross profit shows earnings after deducting the direct costs of producing the goods, before operating expenses are deducted.",
+      "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
+      "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.",
+      "A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Operating cash flow rose by about 12.6%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Gross profit comes before operating expenses.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Depreciation spreads the cost of use over time.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investing outflows frequently reflect growth spending.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.029",
+    "title": "Land and Non-Depreciable Assets",
+    "context": "Review why profit for the year and the change in cash and cash equivalents are not usually the same figure. Evaluate the following economic assertions:",
+    "statements": [
+      "When a brewery makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "The balance sheet is drawn up at a single point in time, whereas the statement of profit and loss and the cash flow statement each summarise activity across an accounting period.",
+      "When a textile mill earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "Turnover for the year is reported in the statement of profit and loss rather than in the balance sheet.",
+      "Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "A loss lowers retained earnings and reduces equity; it does not increase it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Only the balance sheet is dated at one moment; the other two statements report on a period of trading.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit adds to retained earnings and increases equity; it does not reduce it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The balance sheet does not show sales made during the year; that figure belongs in the statement of profit and loss.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.030",
+    "title": "Liquidity From the Balance Sheet 30",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=475\nCurrent liabilities=139\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 393 |\n| Machinery | 265 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 81 |\n| Inventory | 276 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 103 |\n| Total assets | **1257** |\n| **EQUITY** | |\n| Share capital | 217 |\n| Retained earnings | 618 |\n| Total equity | **835** |\n| **LIABILITIES** | |\n| Long-term bank loan | 220 |\n| Bonds payable | 63 |\n| Trade payables | 76 |\n| Bank overdraft | 63 |\n| Total liabilities | **422** |\n| Total equity and liabilities | **1257** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cost of sales includes administration costs, shipping to customers and sales-staff costs.",
+      "The current ratio exceeds 1.65.",
+      "Working capital of €336 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.96 times over.",
+      "The equity ratio is below 42.5%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Those sit outside cost of sales as operating expenses.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 475\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 139\n\nCurrent ratio = 475 / 139 ≈ 3.42\n\nThe claim says the ratio exceeds 1.65. We have about 3.42, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n475 − 139 = 336\n\nThe claim cites 336. We have 336, so the figures line up.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.43.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n835 / 1257 ≈ 66.4%\n\nThe claim says the ratio below 42.5%. We have about 66.4%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.031",
+    "title": "Cash Flow Mix Over Two Years 31",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=388 | Investing=-252\nYear 2 | Operating=416 | Investing=-307\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 388 | 416 |\n| Cash flow from investing activities | (252) | (307) |\n| Dividends paid | (45) | (65) |\n| Proceeds from new borrowing | 78 | 69 |\n| Cash flow from financing activities | 33 | 4 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
+      "Cash flow from operating activities grew by more than 23.2% from Year 1 to Year 2.",
+      "If revenues exceed costs and expenses, the company has a profit; if costs and expenses exceed revenue, it suffers a loss.",
+      "Land is depreciated on a straight-line basis just like buildings and machinery.",
+      "Purchase of office equipment for cash is classified as an operating cash outflow."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operating cash flow rose by about 7.2%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit is the residual of revenues over costs and expenses.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land is not depreciated.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term equipment purchases are investing activities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.032",
+    "title": "Profit Raises Equity",
+    "context": "Consider the following cash flow statement extract (€) for a fitness club chain.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 50000 |\n| Cash flow from investing activities | (36000) |\n| Dividends paid | (11500) |\n| Proceeds from new borrowing | 5000 |\n| Cash flow from financing activities | (6500) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this fitness club chain, the dividends paid line of (11500) euros belongs in investing activities.",
+      "For this fitness club chain, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this fitness club chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
+      "For this fitness club chain, the investing outflow of 36,000 euros means the business must be failing.",
+      "For this fitness club chain, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investing and financing are recorded separately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Negative investing cash flow often just means assets were purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Customer collections belong in operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.033",
+    "title": "Loss Reduces Equity",
+    "context": "Review the three sections of a cash flow statement: operating, investing and financing activities. Evaluate the following economic assertions:",
+    "statements": [
+      "Under the straight-line method, the depreciable amount of an asset, its cost less any expected residual value, is spread evenly over its useful life.",
+      "Land is generally treated differently from buildings, machinery and vehicles because it does not wear out through use and is normally not depreciated.",
+      "A profit earned during the year increases the equity reported on the balance sheet, usually because it is added to retained earnings.",
+      "A loss incurred during the year reduces the equity reported on the balance sheet.",
+      "Profit for the year and the net change in cash and cash equivalents for the year are different measures that will not usually be equal."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Straight-line depreciation divides cost minus residual value by the number of years of useful life to give an equal annual charge.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "An unlimited useful life is the usual reason land is excluded from a depreciation schedule.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit raises the owners' stake in the business by boosting retained earnings within equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loss lowers retained earnings and therefore reduces total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-cash items and timing differences mean profit and cash movement typically diverge.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.034",
+    "title": "Profit and Loss Over Two Years 34",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=805 | Operating result=256\nYear 2 | Revenue=972 | Operating result=314\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 805 | 972 |\n| Cost of sales | (477) | (568) |\n| Gross profit | 328 | 404 |\n| Distribution costs | (36) | (49) |\n| General and administrative costs | (33) | (44) |\n| Other operating result | (3) | 3 |\n| Operating result | 256 | 314 |\n| Finance costs | (15) | (18) |\n| Finance costs – net | (12) | (12) |\n| Profit before tax | 244 | 302 |\n| Income taxes | (49) | (61) |\n| Profit for the year | 195 | 241 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs.",
+      "Revenue grew by more than 20.7% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 9.1% between Year 1 and Year 2.",
+      "The operating result covers finance costs more than 9.29 times over in Year 1.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 2.5 percentage points higher in Year 2 than in Year 1."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Cost of sales excludes admin and distribution.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Revenue changed by about 20.7% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit for the year changed by about 23.6% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interest coverage in year 1 ≈ 17.1 times.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 40.7% then 41.6%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.035",
+    "title": "Annual Depreciation Chart 35",
+    "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation by asset\"]]\nMachinery | Annual depreciation=11273\nDelivery truck | Annual depreciation=7000\nComputer equipment | Annual depreciation=6000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €124,000 purchase price, 11-year useful life, no residual value |\n| Asset B – Delivery truck | €46,000 purchase price, 6-year useful life, €4,000 residual value |\n| Asset C – Computer equipment | €18,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operations shows how well a business generates cash from its core business and is the most important part of the cash flow statement.",
+      "Combined annual depreciation for the three assets is €24,273.",
+      "After three years, the computer equipment, originally costing €18,000, is fully written down to nil.",
+      "After three years, the combined carrying value of all three assets exceeds €106,072.",
+      "After three years, the delivery truck's carrying value is €28,880."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "This matches the textbook emphasis on operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sum of annual charges ≈ €24,273.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Useful life is 3 years with no residual value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Combined carrying value ≈ €115,182.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Carrying value ≈ €25,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.036",
+    "title": "Cash Flow Statement Over Two Years 36",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=325 | Investing=-254\nYear 2 | Operating=367 | Investing=-321\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 325 | 367 |\n| Cash flow from investing activities | (254) | (321) |\n| Dividends paid | (70) | (92) |\n| Proceeds from new borrowing | 96 | 63 |\n| Cash flow from financing activities | 26 | (29) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operating activities grew by more than 24.7% from Year 1 to Year 2.",
+      "Purchase of office equipment for cash is classified as an operating cash outflow.",
+      "The income statement reports assets, liabilities and equity on a single reporting date.",
+      "Cash flow from operations shows how well a business generates cash from its core business and is the most important part of the cash flow statement.",
+      "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Operating cash flow rose by about 12.9%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term equipment purchases are investing activities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "That is the balance sheet's job; the income statement covers a period.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "This matches the textbook emphasis on operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost of sales excludes admin and distribution.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.037",
+    "title": "Profit Versus Cash Flow",
+    "context": "Analyze which section of the cash flow statement reflects cash movements from core trading activities. Evaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operating activities reflects cash movements arising from the core trading activities of a business during the period.",
+      "The depreciation that a hotel chain charges on its kitchen equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
+      "Cash flow from investing activities reflects cash movements arising from buying or selling long-term assets during the period.",
+      "Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use.",
+      "Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, raising share capital or paying dividends during the period."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Day-to-day trading, such as receipts from customers and payments to suppliers and employees, is captured in the operating section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Depreciation does not itself cause a cash payment; the related cash was already paid when the kitchen equipment was purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Spending on or proceeds from long-term assets such as equipment or property sit in the investing section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Transactions with lenders and owners are grouped in the financing section of the cash flow statement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.038",
+    "title": "Turnover and the Balance Sheet",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 54800 |\n| Cash flow from investing activities | (41400) |\n| Dividends paid | (16600) |\n| Proceeds from new borrowing | 26060 |\n| Cash flow from financing activities | 9460 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this publishing house, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this publishing house, the dividends paid line of (16600) euros belongs in investing activities.",
+      "For this publishing house, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
+      "For this publishing house, the investing outflow of 41,400 euros means the business must be failing.",
+      "For this publishing house, repayments of borrowed money count as operating cash outflows."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Investing and financing are recorded separately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Negative investing cash flow often just means assets were purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loan repayments are financing, not operating.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.039",
+    "title": "Liquidity From the Balance Sheet 39",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=276\nCurrent liabilities=132\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.35 times over.",
+      "The current ratio exceeds 1.28.",
+      "Working capital of €144 thousand is positive on this balance sheet.",
+      "Buildings make up more than 47.1% of total assets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Straight-line yields equal annual charges.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.19.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 276\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 132\n\nCurrent ratio = 276 / 132 ≈ 2.09\n\nThe claim says the ratio exceeds 1.28. We have about 2.09, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n276 − 132 = 144\n\nThe claim cites 144. We have 144, so the figures line up.\n\nThe statement is true.",
+      "Buildings are about 35.7% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.040",
+    "title": "Cash Flow Statement Over Two Years 40",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=391 | Investing=-317\nYear 2 | Operating=441 | Investing=-368\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 391 | 441 |\n| Cash flow from investing activities | (317) | (368) |\n| Dividends paid | (50) | (57) |\n| Proceeds from new borrowing | 86 | 53 |\n| Cash flow from financing activities | 36 | (4) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operating activities grew by more than 7.2% between Year 1 and Year 2.",
+      "The income statement reports assets, liabilities and equity on a single reporting date.",
+      "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs.",
+      "Land is depreciated on a straight-line basis just like buildings and machinery.",
+      "Customer collections of receivables are classified as financing cash inflows."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Cash flow from operating activities changed by about 12.8% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "That is the balance sheet's job; the income statement covers a period.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Cost of sales excludes admin and distribution.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land is not depreciated.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "They are operating inflows.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.041",
+    "title": "Revenue and Operating Result Chart 41",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=913 | Operating result=268\nYear 2 | Revenue=1073 | Operating result=310\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 913 | 1073 |\n| Cost of sales | (564) | (665) |\n| Gross profit | 349 | 408 |\n| Distribution costs | (51) | (56) |\n| General and administrative costs | (33) | (42) |\n| Other operating result | 3 | 0 |\n| Operating result | 268 | 310 |\n| Finance costs | (18) | (23) |\n| Finance costs – net | (13) | (21) |\n| Profit before tax | 255 | 289 |\n| Income taxes | (57) | (66) |\n| Profit for the year | 198 | 223 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 6 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 22.2% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 29.8% between Year 1 and Year 2.",
+      "The effective tax rate rose by more than 1.3 percentage points between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 38.2% then 38.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The operating result changed by about 15.7% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit for the year changed by about 12.6% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Effective tax rate moved from 22.4% to 22.8%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.042",
+    "title": "Depreciable Amount and Residual Value",
+    "context": "Analyze which section of the cash flow statement reflects cash movements from borrowing, repaying loans or transactions with owners. Evaluate the following economic assertions:",
+    "statements": [
+      "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.",
+      "The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to summarise an entire accounting period rather than one specific date.",
+      "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value.",
+      "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.",
+      "A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "It is only the balance sheet that is dated at a single point in time; the other two statements cover a period.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Carrying value equals original cost less the depreciation built up against the asset since it was acquired.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.043",
+    "title": "Bakery Oven Depreciation Charge",
+    "context": "Review why a negative cash flow from investing activities does not necessarily indicate financial distress. Evaluate the following economic assertions:",
+    "statements": [
+      "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.",
+      "Turnover for the year is reported in the balance sheet rather than in the statement of profit and loss.",
+      "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.",
+      "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.",
+      "When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales for the year appear in the statement of profit and loss, not the balance sheet.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.044",
+    "title": "Depreciation Schedule Review 44",
+    "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation by asset\"]]\nMachinery | Annual depreciation=11091\nDelivery truck | Annual depreciation=6833\nComputer equipment | Annual depreciation=7000\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €122,000 purchase price, 11-year useful life, no residual value |\n| Asset B – Delivery truck | €48,000 purchase price, 6-year useful life, €7,000 residual value |\n| Asset C – Computer equipment | €21,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.",
+      "After three years, the delivery truck's carrying value is €27,500.",
+      "After three years, the computer equipment, originally costing €21,000, is fully written down to nil.",
+      "After three years, the combined carrying value of all three assets exceeds €101,344.",
+      "Without recording depreciation on the €122,000 machinery, non-current assets on the balance sheet would be overstated."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Snapshot versus period statement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Carrying value ≈ €27,500.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Useful life is 3 years with no residual value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Combined carrying value ≈ €116,227.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Assets would stay at historical cost without write-downs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.045",
+    "title": "Cash Flow Mix Over Two Years 45",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=305 | Investing=-346\nYear 2 | Operating=354 | Investing=-392\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
+      "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
+      "Profit for the year is reported in the income statement and increases retained earnings on the balance sheet, but it does not appear as a separate line item in the cash flow statement, which instead records actual cash inflows and outflows.",
+      "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
+      "Paying dividends is classified as an investing cash outflow because it uses cash belonging to shareholders."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Operating cash flow rose by about 16.1%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term asset purchases are investing outflows.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The three statements serve different purposes and link through retained earnings and cash, not by repeating profit as a cash-flow line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.046",
+    "title": "Courier Van Fleet Cash Outflow",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 59600 |\n| Cash flow from investing activities | (46800) |\n| Dividends paid | (21700) |\n| Proceeds from new borrowing | 13720 |\n| Cash flow from financing activities | (7980) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this catering company, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this catering company, the dividends paid line of (21700) euros belongs in investing activities.",
+      "For this catering company, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
+      "For this catering company, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "For this catering company, buying new catering vans is classified as an investing cash outflow."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Investing and financing are recorded separately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customer collections belong in operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term asset purchases are investing outflows.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.047",
+    "title": "Balance Sheet Structure Review 47",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=368\nCurrent liabilities=313\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 508 |\n| Machinery | 145 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 190 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 82 |\n| Total assets | **1145** |\n| **EQUITY** | |\n| Share capital | 195 |\n| Retained earnings | 204 |\n| Total equity | **399** |\n| **LIABILITIES** | |\n| Long-term bank loan | 370 |\n| Bonds payable | 63 |\n| Trade payables | 227 |\n| Bank overdraft | 86 |\n| Total liabilities | **746** |\n| Total equity and liabilities | **1145** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Land is depreciated on a straight-line basis just like buildings and machinery.",
+      "The current ratio exceeds 1.58.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.15 times over.",
+      "The debt ratio exceeds 66.8%.",
+      "Working capital of €55 thousand is positive on this balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Land is not depreciated.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 368\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 313\n\nCurrent ratio = 368 / 313 ≈ 1.18\n\nThe claim says the ratio exceeds 1.58. We have about 1.18, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.57.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, debt ratio ≈ 65.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n368 − 313 = 55\n\nThe claim cites 55. We have 55, so the figures line up.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.048",
+    "title": "Construction Firm Machinery Financing",
+    "context": "Review how repaying a long-term loan is classified within the cash flow statement. Evaluate the following economic assertions:",
+    "statements": [
+      "The balance sheet of a courier firm shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole accounting period.",
+      "When a bakery earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "When a courier firm makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "Land owned by a bakery is normally left out of the depreciation schedule because, unlike its commercial ovens, land does not wear out through ordinary use.",
+      "A fixed asset that is never depreciated will automatically show a reduced value in the accounts that reflects its true worth after years of use."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit for the year raises retained earnings, which in turn increases total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loss for the year lowers retained earnings, which in turn reduces total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Without depreciation, an asset stays at its original cost in the accounts, overstating rather than reflecting its real worth.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.049",
+    "title": "Cash Flow Mix Over Two Years 49",
+    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Operating and investing cash flows\"]]\nYear 1 | Operating=398 | Investing=-253\nYear 2 | Operating=427 | Investing=-291\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 398 | 427 |\n| Cash flow from investing activities | (253) | (291) |\n| Dividends paid | (48) | (53) |\n| Proceeds from new borrowing | 75 | 50 |\n| Cash flow from financing activities | 27 | (3) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A positive cash flow is not identical with a profit, because profit includes non-cash charges and accruals that cash flow does not.",
+      "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.",
+      "If revenues exceed costs and expenses, the company has a profit; if costs and expenses exceed revenue, it suffers a loss.",
+      "Gross profit shows earnings after deducting the direct costs of producing the goods, before operating expenses are deducted.",
+      "Repaying a bank loan is classified as a financing cash outflow, not an operating cash outflow."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Profit and cash movement are different concepts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Snapshot versus period statement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit is the residual of revenues over costs and expenses.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross profit comes before operating expenses.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Debt repayments sit in financing activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.050",
+    "title": "Hotel Chain Kitchen Equipment Depreciation",
+    "context": "Analyze how the net change in cash and cash equivalents is calculated from the three cash flow sections. Evaluate the following economic assertions:",
+    "statements": [
+      "Depreciation is a cash expense in the statement of profit and loss that triggers an actual cash payment in the year it is recorded.",
+      "Under the straight-line method, the depreciable amount of an asset is spread unevenly across its useful life, producing a different charge each year.",
+      "Land is depreciated in exactly the same way as buildings, machinery and vehicles because all fixed assets wear out identically through use.",
+      "The depreciation that a courier firm charges on its delivery vans each year is a non-cash expense, since the related cash was already paid out when the delivery vans was originally purchased.",
+      "A profit earned during the year reduces the equity reported on the balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation does not itself cause a cash payment in the year it is charged; the cash was paid when the asset was bought.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Straight-line depreciation produces an equal annual charge across the useful life, not a varying one.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Land is generally excluded from depreciation because it does not wear out through use the way other fixed assets do.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit increases equity, typically through retained earnings, rather than reducing it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

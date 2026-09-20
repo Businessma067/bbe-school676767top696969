@@ -1,0 +1,5 @@
+fixed=1
+left=0
+snippet=reine Erlöslogik.
+
+Sie ist nicht äq

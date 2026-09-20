@@ -1,0 +1,204 @@
+CASE MATH 12.24
+ANSWER [true, true, true, true, true]
+TITLE_DE Das Statistikmesse-Banner
+CONTEXT_DE Zehn Buchstabenplättchen des Wortes STATISTICS werden zufällig zu einem Banner angeordnet. Drei S, drei T, zwei I, je ein A und C; gleiche Buchstaben ununterscheidbar.
+STATEMENTS_DE:
+  A. Die Gesamtzahl verschiedener Banner beträgt 50.400.
+  B. Die Wahrscheinlichkeit, dass alle drei S benachbart sind, beträgt 1/15.
+  C. Die Wahrscheinlichkeit, dass alle drei T benachbart sind, ist gleich der für alle drei S.
+  D. Die Wahrscheinlichkeit, dass die beiden I benachbart sind, ist größer als 1/6.
+  E. Die Wahrscheinlichkeit, dass zugleich beide I und alle drei S benachbart sind, ist kleiner als 2%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of distinct banners that can be formed from the given letters. This is the total number of permutations of the multiset of letters $\{\text{S, T, A, T, I, S, T, I, C, S}\}$. The word contains $n=10$ letters, with three S's, three T's, two I's, one A, and one C. The formula for permutations of a multiset is used here.
+
+The total number of distinct banners, denoted $N$, is calculated as:
+
+$$
+N = \frac{10!}{3! \cdot 3! \cdot 2! \cdot 1! \cdot 1!}
+$$
+
+$$
+N = \frac{3,628,800}{6 \cdot 6 \cdot 2 \cdot 1 \cdot 1}
+$$
+
+$$
+N = \frac{3,628,800}{72}
+$$
+
+$$
+N = 50,400
+$$
+
+Thus, the total number of distinct banners is $50,400$. The statement claims this number is $50,400$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the probability that all three S's end up adjacent to each other. To find this, we first count the number of arrangements where the three S's are grouped together. We treat the block of 'SSS' as a single unit. This effectively means we are arranging $10 - 3 + 1 = 8$ items: (SSS), T, T, T, I, I, A, C. The repeated letters among these $8$ items are three T's and two I's.
+
+The number of arrangements where the three S's are adjacent, $N_{\text{S-adj}}$, is:
+
+$$
+N_{\text{S-adj}} = \frac{8!}{3! \cdot 2! \cdot 1! \cdot 1!}
+$$
+
+$$
+N_{\text{S-adj}} = \frac{40,320}{6 \cdot 2}
+$$
+
+$$
+N_{\text{S-adj}} = \frac{40,320}{12}
+$$
+
+$$
+N_{\text{S-adj}} = 3,360
+$$
+
+To find the probability, we divide the number of favorable arrangements by the total number of distinct banners, $N = 50,400$, as calculated in the overview:
+
+$$
+P(\text{S-adjacent}) = \frac{N_{\text{S-adj}}}{N}
+$$
+
+$$
+P(\text{S-adjacent}) = \frac{3,360}{50,400}
+$$
+
+$$
+P(\text{S-adjacent}) = \frac{1}{15}
+$$
+
+The calculated probability is $\frac{1}{15}$. The statement claims this probability is $\frac{1}{15}$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This statement compares the probability that all three T's are adjacent with the probability that all three S's are adjacent. We need to calculate the probability for the T's. Similar to the S's, we treat the block of 'TTT' as a single unit. This means we are arranging $10 - 3 + 1 = 8$ items: (TTT), S, S, S, I, I, A, C. The repeated letters among these $8$ items are three S's and two I's.
+
+The number of arrangements where the three T's are adjacent, $N_{\text{T-adj}}$, is:
+
+$$
+N_{\text{T-adj}} = \frac{8!}{3! \cdot 2! \cdot 1! \cdot 1!}
+$$
+
+$$
+N_{\text{T-adj}} = \frac{40,320}{6 \cdot 2}
+$$
+
+$$
+N_{\text{T-adj}} = \frac{40,320}{12}
+$$
+
+$$
+N_{\text{T-adj}} = 3,360
+$$
+
+To find the probability, we divide the number of favorable arrangements by the total number of distinct banners, $N = 50,400$:
+
+$$
+P(\text{T-adjacent}) = \frac{N_{\text{T-adj}}}{N}
+$$
+
+$$
+P(\text{T-adjacent}) = \frac{3,360}{50,400}
+$$
+
+$$
+P(\text{T-adjacent}) = \frac{1}{15}
+$$
+
+The probability that all three T's end up adjacent is $\frac{1}{15}$. From statement B, the probability that all three S's end up adjacent is also $\frac{1}{15}$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This statement asks for the probability that the two I's end up adjacent to each other. To count arrangements where the two I's are adjacent, we treat the block of 'II' as a single unit. This means we are arranging $10 - 2 + 1 = 9$ items: (II), S, S, S, T, T, T, A, C. The repeated letters among these $9$ items are three S's and three T's.
+
+The number of arrangements where the two I's are adjacent, $N_{\text{I-adj}}$, is:
+
+$$
+N_{\text{I-adj}} = \frac{9!}{3! \cdot 3! \cdot 1! \cdot 1!}
+$$
+
+$$
+N_{\text{I-adj}} = \frac{362,880}{6 \cdot 6}
+$$
+
+$$
+N_{\text{I-adj}} = \frac{362,880}{36}
+$$
+
+$$
+N_{\text{I-adj}} = 10,080
+$$
+
+To find the probability, we divide the number of favorable arrangements by the total number of distinct banners, $N = 50,400$:
+
+$$
+P(\text{I-adjacent}) = \frac{N_{\text{I-adj}}}{N}
+$$
+
+$$
+P(\text{I-adjacent}) = \frac{10,080}{50,400}
+$$
+
+$$
+P(\text{I-adjacent}) = \frac{1}{5}
+$$
+
+The calculated probability is $\frac{1}{5}$. The claim states this probability is greater than $\frac{1}{6}$. Since $\frac{1}{5} = 0.2$ and $\frac{1}{6} \approx 0.1667$, we have $0.2 > 0.1667$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This statement asks for the probability that both the two I's are adjacent AND all three S's are adjacent simultaneously. To count such arrangements, we treat 'II' as one block and 'SSS' as another block. This means we are arranging $10 - 2 - 3 + 2 = 7$ items: (II), (SSS), T, T, T, A, C. The only repeated letters among these $7$ items are three T's.
+
+The number of arrangements where both conditions are met, $N_{\text{I-adj and S-adj}}$, is:
+
+$$
+N_{\text{I-adj and S-adj}} = \frac{7!}{3! \cdot 1! \cdot 1!}
+$$
+
+$$
+N_{\text{I-adj and S-adj}} = \frac{5,040}{6}
+$$
+
+$$
+N_{\text{I-adj and S-adj}} = 840
+$$
+
+To find the probability, we divide the number of favorable arrangements by the total number of distinct banners, $N = 50,400$:
+
+$$
+P(\text{I-adjacent and S-adjacent}) = \frac{840}{50,400}
+$$
+
+$$
+P(\text{I-adjacent and S-adjacent}) = \frac{1}{60}
+$$
+
+To compare this with the claim, we convert $\frac{1}{60}$ to a percentage:
+
+$$
+\frac{1}{60} \approx 0.01666...
+$$
+
+This is approximately $1.667\%$. The statement claims this probability is less than $2\%$.
+
+So the statement is True.
+

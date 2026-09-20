@@ -1,0 +1,118 @@
+CASE MATH 11.69
+ANSWER [true, false, false, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Average cost is currently $A(Q)=12$ and falling. Differentiating $A=\dfrac{C}{Q}$ yields
+$$A^{\prime}(Q)=\dfrac{C^{\prime}(Q)-A(Q)}{Q},$$
+so $A^{\prime}<0$ implies only
+$$C^{\prime}(Q)<A(Q)=12.$$
+Sales reports $R^{\prime}(Q)=10$. That upper bound on $C^{\prime}$ does not force $C^{\prime}<10$, nor $P^{\prime}=R^{\prime}-C^{\prime}>0$: one could still have, for instance, $C^{\prime}=11$, which satisfies $C^{\prime}<12$ while $C^{\prime}>R^{\prime}$. Differentiating $A$ produces $A^{\prime}$, not marginal cost $C^{\prime}$. Falling $A=12$ gives only $C^{\prime}<12$, not $C^{\prime}<R^{\prime}=10$ and not $P^{\prime}>0$. Differentiating $A$ yields $A^{\prime}$, not $C^{\prime}$.
+
+=== A ===
+**A.** → True
+
+Average cost falls when marginal cost lies below average cost: $A^{\prime}(Q)<0$ is equivalent to $C^{\prime}(Q)<A(Q)$.
+
+With $A(Q)=12$, falling average cost therefore implies $C^{\prime}(Q)<12$
+
+From $A^{\prime}=(C^{\prime}-A)/Q$, the sign $A^{\prime}<0$ is exactly the inequality $C^{\prime}<A=12$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A(Q) = 12
+$$
+
+$$
+A^{\prime} = (C^{\prime}-A)/Q
+$$
+
+$$
+C^{\prime}<A = 12
+$$
+
+So the statement is True.
+
+=== B ===
+**B.** → False
+
+The reports give $C^{\prime}(Q)<12$ and $R^{\prime}(Q)=10$, but they do not pin $C^{\prime}$ below $10$.
+
+Marginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\prime}(Q)<10$
+
+The open interval $(10,12)$ is still available for $C^{\prime}$: average cost falls while $C^{\prime}>R^{\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 10
+$$
+
+So the statement is False.
+
+=== C ===
+**C.** → False
+
+Profit rises locally only when $R^{\prime}>C^{\prime}$. Here $R^{\prime}=10$ while $C^{\prime}$ is known only to satisfy $C^{\prime}<12$.
+
+If $C^{\prime}$ lies between $10$ and $12$, then $P^{\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\prime}(Q)>0$
+
+Falling AC is not an expand signal; only $R^{\prime}>C^{\prime}$ is, and that comparison is not settled by $C^{\prime}<12$ alone.
+
+$$
+R^{\prime} = 10
+$$
+
+So the statement is False.
+
+=== D ===
+**D.** → True
+
+Falling average cost only forces $C^{\prime}<A=12$; it does not force $C^{\prime}<R^{\prime}=10$.
+
+Marginal cost could still exceed marginal revenue (for instance $C^{\prime}=11$) while average cost is falling
+
+Example: $C^{\prime}=11$ satisfies $C^{\prime}<12=A$ (AC falling) and $C^{\prime}>10=R^{\prime}$ (MR below MC).
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C^{\prime}<A = 12
+$$
+
+$$
+C^{\prime}<R^{\prime} = 10
+$$
+
+$$
+C^{\prime} = 11
+$$
+
+$$
+C^{\prime}<12 = A
+$$
+
+$$
+C^{\prime}>10 = R^{\prime}
+$$
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+Differentiating average cost $A(Q)=\dfrac{C(Q)}{Q}$ produces $A^{\prime}(Q)$, which tracks how the average moves.
+
+Marginal cost is $C^{\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost
+
+The object $A^{\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A(Q) = \dfrac{C(Q)}{Q}
+$$
+
+So the statement is False.
+

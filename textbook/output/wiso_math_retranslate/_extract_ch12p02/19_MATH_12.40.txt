@@ -1,0 +1,314 @@
+CASE MATH 12.40
+ANSWER [true, true, true, false, false]
+TITLE_DE Kombinatorische Wahrscheinlichkeit 40
+CONTEXT_DE Ein Ausschuss von 4 wird zufällig aus 12 Personen gewählt (5 Frauen, 7 Männer).
+STATEMENTS_DE:
+  A. Die Wahrscheinlichkeit für genau 2 Frauen und 2 Männer ist größer als 42%.
+  B. Die Wahrscheinlichkeit für mindestens eine Frau ist gleich 1 minus der Wahrscheinlichkeit eines rein männlichen Ausschusses.
+  C. Die Wahrscheinlichkeit, dass eine bestimmte Person gewählt wird, beträgt 4/12.
+  D. Die Wahrscheinlichkeit eines rein männlichen Ausschusses ist kleiner als 7%.
+  E. Die Wahrscheinlichkeit für genau 2 Frauen und 2 Männer ist mehr als 6-mal so groß wie die eines rein männlichen Ausschusses.
+
+=== EXPL 0 A ===
+**A.** → True
+
+This statement asks for the probability that the committee has exactly 2 women and 2 men. To find this, we first calculate the number of ways to choose 2 women from the 5 available women and 2 men from the 7 available men. Then we divide this by the total number of possible committees.
+
+The number of ways to choose 2 women from 5 is:
+
+$$
+\binom{12}{4} = \dfrac{12!}{4!(12-4)!}
+$$
+
+$$
+\dfrac{12!}{4!(8)!} = \dfrac{12 \cdot 11 \cdot 10 \cdot 9}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+12 \times 11 = 132
+$$
+
+$$
+132 \times 10 = 1320
+$$
+
+$$
+1320 \times 9 = 11880
+$$
+
+$$
+\dfrac{11880}{24} = 495
+$$
+
+$$
+\binom{12}{4} = 495
+$$
+
+$$
+\binom{5}{2} = \dfrac{5!}{2!(5-2)!}
+$$
+
+$$
+\dfrac{5!}{2!(3)!} = \dfrac{5 \cdot 4}{1 \cdot 2}
+$$
+
+$$
+5 \times 4 = 20
+$$
+
+$$
+\dfrac{20}{2} = 10
+$$
+
+$$
+\binom{5}{2} = 10
+$$
+
+The number of ways to choose 2 men from 7 is:
+
+$$
+\binom{7}{2} = \dfrac{7!}{2!(7-2)!}
+$$
+
+$$
+\dfrac{7!}{2!(5)!} = \dfrac{7 \cdot 6}{1 \cdot 2}
+$$
+
+$$
+7 \times 6 = 42
+$$
+
+$$
+\dfrac{42}{2} = 21
+$$
+
+$$
+\binom{7}{2} = 21
+$$
+
+The number of committees with exactly 2 women and 2 men is the product of these two numbers:
+
+$$
+N_{\text{2 women, 2 men}} = \binom{5}{2} \times \binom{7}{2} = 10 \times 21
+$$
+
+$$
+10 \times 21 = 210 = 210
+$$
+
+The probability of such a committee composition is this number divided by the total number of committees, which is $495$ from the overview:
+
+$$
+P(\text{2 women, 2 men}) = \frac{210}{495}
+$$
+
+$$
+P(\text{2 women, 2 men}) \approx 0.424242
+$$
+
+Expressed as a percentage, this is approximately $42.42\%$. The claim states this probability is greater than $42\%$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement relates the probability that the committee includes at least one woman to the probability that the committee is entirely men. The event 'at least one woman' is the complement of the event 'no women'. If a committee has no women, it must be composed entirely of men, since all committee members must be selected from the group of 12 people comprising men and women.
+
+According to the rule of complementary events, for any event $E$, the probability of $E$ occurring is $P(E) = 1 - P(E^c)$, where $E^c$ is the complement of $E$. In this case, if $E$ is the event 'at least one woman', then $E^c$ is the event 'no women'.
+
+Therefore, the probability that the committee includes at least one woman is $1$ minus the probability that it includes no women, which means it is composed entirely of men.
+
+$$
+P(\text{at least one woman}) = 1 - P(\text{no women})
+$$
+
+$$
+P(\text{at least one woman}) = 1 - P(\text{entirely men})
+$$
+
+This relation is a fundamental principle of probability.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This statement asks for the probability that a specific person in the group is selected onto the committee. Let's consider a particular individual from the group of 12 people. If this specific person is on the committee, then the remaining $4-1 = 3$ committee members must be chosen from the remaining $12-1 = 11$ people in the group.
+
+The number of ways to choose these 3 remaining members from 11 people is:
+
+$$
+\binom{12}{4} = \dfrac{12!}{4!(12-4)!}
+$$
+
+$$
+\dfrac{12!}{4!(8)!} = \dfrac{12 \cdot 11 \cdot 10 \cdot 9}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+12 \times 11 = 132
+$$
+
+$$
+132 \times 10 = 1320
+$$
+
+$$
+1320 \times 9 = 11880
+$$
+
+$$
+\dfrac{11880}{24} = 495
+$$
+
+$$
+\binom{12}{4} = 495
+$$
+
+$$
+\binom{11}{3} = \dfrac{11!}{3!(11-3)!}
+$$
+
+$$
+\dfrac{11!}{3!(8)!} = \dfrac{11 \cdot 10 \cdot 9}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+11 \times 10 = 110
+$$
+
+$$
+110 \times 9 = 990
+$$
+
+$$
+\dfrac{990}{6} = 165
+$$
+
+$$
+\binom{11}{3} = 165
+$$
+
+So, there are $165$ committees that include this specific person. The probability that this specific person is selected is the ratio of these favorable outcomes to the total number of possible committees, which is $495$ from the overview:
+
+$$
+P(\text{specific person selected}) = \frac{165}{495}
+$$
+
+$$
+P(\text{specific person selected}) = \frac{1}{3}
+$$
+
+The claim states this probability equals $\frac{4}{12}$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that the committee is entirely men. For this to occur, all 4 members of the committee must be chosen from the 7 available men. The number of ways to select these members is found using the combination formula.
+
+The number of ways to choose 4 men from 7 is:
+
+$$
+\binom{12}{4} = \dfrac{12!}{4!(12-4)!}
+$$
+
+$$
+\dfrac{12!}{4!(8)!} = \dfrac{12 \cdot 11 \cdot 10 \cdot 9}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+12 \times 11 = 132
+$$
+
+$$
+132 \times 10 = 1320
+$$
+
+$$
+1320 \times 9 = 11880
+$$
+
+$$
+\dfrac{11880}{24} = 495
+$$
+
+$$
+\binom{12}{4} = 495
+$$
+
+$$
+\binom{7}{4} = \dfrac{7!}{4!(7-4)!}
+$$
+
+$$
+\dfrac{7!}{4!(3)!} = \dfrac{7 \cdot 6 \cdot 5}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+7 \times 6 = 42
+$$
+
+$$
+42 \times 5 = 210
+$$
+
+$$
+\dfrac{210}{6} = 35
+$$
+
+$$
+\binom{7}{4} = 35
+$$
+
+So, there are $35$ committees consisting entirely of men. The probability of such a committee composition is this number divided by the total number of committees, which is $495$ from the overview:
+
+$$
+P(\text{entirely men}) = \frac{35}{495}
+$$
+
+$$
+P(\text{entirely men}) \approx 0.070707
+$$
+
+Expressed as a percentage, this is approximately $7.07\%$. The claim states this probability is less than $7\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement compares two probabilities: the probability that the committee has exactly 2 women and 2 men, and the probability that the committee is entirely men. It asks if the first probability is more than 6 times the second.
+
+From the calculation for Statement A, the probability of having exactly 2 women and 2 men is:
+
+$$
+P(\text{2 women, 2 men}) = \frac{210}{495}
+$$
+
+From the calculation for Statement D, the probability of having an entirely male committee is:
+
+$$
+P(\text{entirely men}) = \frac{35}{495}
+$$
+
+To determine how many times greater the first probability is than the second, we calculate their ratio:
+
+$$
+\frac{P(\text{2 women, 2 men})}{P(\text{entirely men})} = \dfrac{210}{495}\cdot\dfrac{495}{35}=\dfrac{210}{35}
+$$
+
+$$
+\frac{P(\text{2 women, 2 men})}{P(\text{entirely men})} = 6
+$$
+
+This means that the probability of the committee having exactly 2 women and 2 men is exactly 6 times the probability of the committee being entirely men. The claim states that it is more than 6 times.
+
+So the statement is False.
+

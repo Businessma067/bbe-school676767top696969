@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.51",
+    "title": "Single-Use Outfit Alternatives",
+    "context": "Review how preference for durable apparel supports sustainability compared with frequent purchases of inexpensive clothing. Evaluate the following economic assertions:",
+    "statements": [
+      "For home-decor boutiques in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For electronics retailers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.",
+      "For florist networks in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For fashion labels among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For cleaning-product makers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for home-decor boutiques in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for electronics retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for florist networks in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.52",
+    "title": "Continuous Product Development Effects",
+    "context": "Analyze the economic behaviour described when shoppers buy more than intended because promotions trigger additional wants. Evaluate the following economic assertions:",
+    "statements": [
+      "For cleaning-product makers in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For mobile-accessory sellers in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For home-decor boutiques in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For fashion labels in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For electronics retailers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in apparel retailing.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for mobile-accessory sellers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for home-decor boutiques in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.53",
+    "title": "Financial Stress From Excess Spending",
+    "context": "Review how businesses contribute to sustainability when they support longer product life and responsible promotion. Evaluate the following economic assertions:",
+    "statements": [
+      "For fashion labels where repair services remain available, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For furniture workshops in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For appliance manufacturers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For electronics retailers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For cosmetics brands when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for furniture workshops in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for appliance manufacturers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.54",
+    "title": "Reuse Instead of Landfill Disposal",
+    "context": "Consider a student renting a formal suit for a graduation ceremony rather than buying low-quality clothing that would rarely be worn again. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetics brands during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For sporting-goods stores in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For book publishers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For electronics retailers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for sporting-goods stores in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for book publishers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.55",
+    "title": "High-Quality Rental for Occasions",
+    "context": "Review the environmental logic of reusing computers instead of replacing them at the first sign of malfunction. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For electronics retailers when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when seasonal campaigns intensify.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.56",
+    "title": "Unethical Campaign Recognition",
+    "context": "Analyze how created needs through advertising differ from needs customers already held before exposure to campaigns. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors where repair services remain available, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For garden-centre chains in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For pharmacy groups in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For hotel operators when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For car-hire firms in apparel retailing, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for garden-centre chains in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pharmacy groups in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for hotel operators when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.57",
+    "title": "Affordability Risks and Responsible Consumption",
+    "context": "Review why sustainable consumption requires questioning whether each purchase will be used meaningfully over time. Evaluate the following economic assertions:",
+    "statements": [
+      "For car-hire firms, spending beyond affordable limits under promotional pressure is one of the consumption risks that responsible businesses and consumers should recognise.",
+      "For tool-rental businesses in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For organic grocers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For bicycle shops during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For jewellery retailers among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for tool-rental businesses in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for organic grocers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for bicycle shops during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.58",
+    "title": "Durable Goods Sharing Networks",
+    "context": "Consider shoppers who accumulate unworn garments in wardrobes after impulse purchases driven by persuasive promotional messages. Evaluate the following economic assertions:",
+    "statements": [
+      "For jewellery retailers in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For electronics retailers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For stationery wholesalers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For pet-supply stores in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in communities promoting reuse.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for stationery wholesalers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.59",
+    "title": "Sustainability in Marketing Responsibility",
+    "context": "Review the business case for ethical advertising as part of a broader responsibility and sustainability agenda. Evaluate the following economic assertions:",
+    "statements": [
+      "For electronics retailers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pet-supply stores when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For electronics retailers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.60",
+    "title": "Wardrobes Filled With Unused Items",
+    "context": "Analyze how sharing quality garments among acquaintances reduces parallel purchases of new low-cost alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "For electronics retailers where sustainability awareness is rising, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For fashion labels in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For fashion labels when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For fashion labels where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pet-supply stores during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where sustainability awareness is rising.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.61",
+    "title": "Rental Quality Versus Cheap Ownership",
+    "context": "Review how marketing-driven product cycles can encourage replacement before the end of a product's useful life. Evaluate the following economic assertions:",
+    "statements": [
+      "For fashion labels when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pet-supply stores among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For kitchen-equipment firms in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For footwear brands in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For eyewear retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for kitchen-equipment firms in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for footwear brands in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.62",
+    "title": "Business Conduct and Consumer Trust",
+    "context": "Consider a fashion label that advertises seasonal collections aggressively while some shoppers prefer durable garments they can pass on to friends after years of wear. Evaluate the following economic assertions:",
+    "statements": [
+      "For fashion labels among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For eyewear retailers during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For music-instrument dealers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For fashion labels in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For furniture workshops in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.63",
+    "title": "Overconsumption Environmental Costs",
+    "context": "Review how refurbishment and repair markets support circular use of durable consumer goods. Evaluate the following economic assertions:",
+    "statements": [
+      "For furniture workshops in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For music-instrument dealers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For camping-gear suppliers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For appliance manufacturers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For baby-product retailers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for camping-gear suppliers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.64",
+    "title": "Component Replacement and Repair",
+    "context": "Analyze how formal-wear rental services target consumers seeking quality without long-term ownership. Evaluate the following economic assertions:",
+    "statements": [
+      "For baby-product retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For art-supply stores in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For wine merchants in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For florist networks during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For cleaning-product makers among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for art-supply stores in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for wine merchants in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for florist networks during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.65",
+    "title": "Social Exchange of Quality Clothes",
+    "context": "Review the societal costs associated with consuming more goods than are needed or sustainably supportable. Evaluate the following economic assertions:",
+    "statements": [
+      "For cleaning-product makers in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For mobile-accessory sellers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.",
+      "For home-decor boutiques in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.",
+      "For electronics retailers in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.",
+      "For fashion labels among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for mobile-accessory sellers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for home-decor boutiques in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for electronics retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.66",
+    "title": "Stimulating Demand Beyond Necessity",
+    "context": "Consider a clothing swap event where participants exchange good-quality garments instead of discarding inexpensive items after a few months of use. Evaluate the following economic assertions:",
+    "statements": [
+      "For fashion labels in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For fashion labels where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For furniture workshops in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels where rental platforms operate alongside retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for furniture workshops in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.67",
+    "title": "Consumer Protection and Advertising",
+    "context": "Review how extending the service life of electronics through repair reduces premature disposal and new purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "For appliance manufacturers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cosmetics brands in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For sporting-goods stores among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For book publishers where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers where rental platforms operate alongside retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for cosmetics brands in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for sporting-goods stores among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.68",
+    "title": "Premature Replacement Avoidance",
+    "context": "Analyze how quality clothing exchanged among friends embodies reuse rather than single-user discard. Evaluate the following economic assertions:",
+    "statements": [
+      "For book publishers when credit makes impulse buying easier, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For appliance manufacturers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For garden-centre chains in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers when credit makes impulse buying easier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for toy distributors in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.69",
+    "title": "Occasion Wear Rental Benefits",
+    "context": "Review the marketing responsibility theme that businesses should not rely solely on stimulating ever-greater consumption. Evaluate the following economic assertions:",
+    "statements": [
+      "For garden-centre chains when seasonal campaigns intensify, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pharmacy groups in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.70",
+    "title": "Created Wishes Through Campaigns",
+    "context": "Consider a retailer whose loyalty programme nudges customers toward additional purchases beyond their initial shopping list and budget. Evaluate the following economic assertions:",
+    "statements": [
+      "For appliance manufacturers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pharmacy groups in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For appliance manufacturers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For car-hire firms in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in communities promoting reuse.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for hotel operators among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.71",
+    "title": "Joint Action for Sustainable Markets",
+    "context": "Review how rental of high-quality products for temporary needs complements sustainability-oriented consumer choice. Evaluate the following economic assertions:",
+    "statements": [
+      "For car-hire firms when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For tool-rental businesses in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For organic grocers in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For bicycle shops during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For jewellery retailers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for tool-rental businesses in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for organic grocers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for bicycle shops during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.72",
+    "title": "Infrequently Used Goods and Rental",
+    "context": "Analyze the difference between ethical promotion that informs consumers and practices regarded as unethical persuasion. Evaluate the following economic assertions:",
+    "statements": [
+      "For jewellery retailers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For jewellery retailers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For stationery wholesalers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For pet-supply stores in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For kitchen-equipment firms among younger budget-conscious shoppers, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers where rental platforms operate alongside retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for stationery wholesalers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pet-supply stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.73",
+    "title": "Spending More Than Affordable",
+    "context": "Review how affordability limits should inform consumption when advertising encourages spending above planned amounts. Evaluate the following economic assertions:",
+    "statements": [
+      "For appliance manufacturers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For kitchen-equipment firms in formal-wear and occasion-dress markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cosmetics brands in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.74",
+    "title": "Longer Use Through Repair Reuse",
+    "context": "Consider an event-styling firm offering premium garment rental so clients avoid buying single-use outfits for occasional occasions. Evaluate the following economic assertions:",
+    "statements": [
+      "For kitchen-equipment firms where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For cosmetics brands in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For footwear brands in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For eyewear retailers in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For music-instrument dealers when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for footwear brands in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for eyewear retailers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.75",
+    "title": "Rejecting Throwaway Fashion Norms",
+    "context": "Review the trend toward rejecting cheap clothes discarded after a few months in favour of longer-lasting alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "For music-instrument dealers during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For camping-gear suppliers in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For baby-product retailers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For art-supply stores in household durable-goods sectors, shoppers may leave with a higher bill than planned once promotions add extras.",
+      "For cosmetics brands in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for camping-gear suppliers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for baby-product retailers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for art-supply stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  }
+]

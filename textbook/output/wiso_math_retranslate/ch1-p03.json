@@ -1,0 +1,995 @@
+[
+  {
+    "case_id": "MATH 1.67",
+    "short_letters": [
+      0,
+      1,
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "A contract penalty clause",
+    "context_en": "A contract clause states: “If the contractor fails to complete the project by the deadline, then a penalty fee applies.”",
+    "statements_en": [
+      "Failing to complete the project by the deadline is sufficient for a penalty fee to apply.",
+      "The converse, “If a penalty fee applies, then the contractor missed the deadline,” must also be true simply because the original clause is true.",
+      "The contrapositive, “If no penalty fee applies, then the contractor did not fail to complete by the deadline,” is logically guaranteed by the original clause.",
+      "The inverse, “If the contractor does not fail to complete by the deadline, then no penalty fee applies,” must also be true given the original clause.",
+      "The inverse of a conditional statement is always logically equivalent to its converse, even though neither is generally equivalent to the original."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n“Fails deadline $\\Rightarrow$ penalty” makes missing the deadline sufficient for a penalty.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe converse is not forced by an implication.\n\nSo the statement is False.",
+      "**C.** → True\n\nContrapositive:\n\n$$\\neg\\mathrm{Penalty}\\Rightarrow\\neg\\mathrm{Missed}$$\n\nequivalent to the original.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe inverse is not forced by the original.\n\nSo the statement is False.",
+      "**E.** → True\n\nInverse $\\Leftrightarrow$ converse always, and neither needs to match the original.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $F$ for “the contractor misses the deadline” and $P$ for “a penalty fee applies.” The clause is\n\n$$F \\Rightarrow P$$\n\nThe original and its contrapositive form one equivalent pair:\n\n$$F \\Rightarrow P \\equiv \\neg P \\Rightarrow \\neg F$$\n\nThe converse and the inverse form a second pair:\n\n$$P \\Rightarrow F \\equiv \\neg F \\Rightarrow \\neg P$$\n\nThe second pair need not share a truth value with the clause. The antecedent of a conditional is a sufficient condition for the consequent.",
+    "title_de_existing": "Eine Vertragsklausel zur Vertragsstrafe",
+    "context_de_existing": "Eine Vertragsklausel besagt: „Wenn die Auftragnehmerin das Projekt nicht bis zur Frist fertigstellt, fällt eine Strafgebühr an.“",
+    "statements_de_existing": [
+      "Das Verfehlen der Frist ist hinreichend dafür, dass eine Strafgebühr anfällt.",
+      "Die Umkehrung „Wenn eine Strafgebühr anfällt, dann hat die Auftragnehmerin die Frist verfehlt“ muss allein wegen der Originalklausel ebenfalls wahr sein.",
+      "Die Kontraposition „Wenn keine Strafgebühr anfällt, dann hat die Auftragnehmerin die Frist nicht verfehlt“ ist durch die Originalklausel logisch garantiert.",
+      "Die Form „Wenn die Auftragnehmerin die Frist nicht verfehlt, fällt keine Strafgebühr an“ muss wegen der Originalklausel ebenfalls wahr sein.",
+      "Die Form $\\neg F\\Rightarrow\\neg P$ einer Implikation ist stets logisch äquivalent zu ihrer Umkehrung, auch wenn keine von beiden im Allgemeinen zum Original äquivalent ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nHinreichend bedeutet genau $F\\Rightarrow P$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Umkehrung folgt nicht aus der Originalimplikation.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nKontraposition ist äquivalent zur Originalklausel.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$\\neg F\\Rightarrow\\neg P$ ist die zur Umkehrung äquivalente Form, nicht zum Original.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$\\neg F\\Rightarrow\\neg P$ und $P\\Rightarrow F$ sind äquivalent zueinander, aber nicht zu $F\\Rightarrow P$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $F$: Frist verfehlt und $P$: Strafgebühr ist die Klausel $F\\Rightarrow P$. Kontraposition ja; Umkehrung und $\\neg F\\Rightarrow\\neg P$ nein."
+  },
+  {
+    "case_id": "MATH 1.68",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "A scholarship eligibility rule with a waiver",
+    "context_en": "A scholarship rule: a student is eligible only if they have a GPA of at least 3.5 AND have completed at least 60 credit hours - unless the Dean grants a written waiver of the credit-hour requirement, in which case only the GPA condition needs to be met. Student M has a GPA of 3.7, has completed 50 credit hours, and has NOT received a waiver. Student N has a GPA of 3.6, has completed 45 credit hours, and HAS received a waiver.",
+    "statements_en": [
+      "Student M is eligible for the scholarship.",
+      "Student N is eligible for the scholarship.",
+      "If Student M were to receive a Dean's waiver (keeping the same GPA and credit hours), M would become eligible.",
+      "The Dean's waiver, by itself, is sufficient for eligibility, regardless of GPA.",
+      "It is possible for a student with a GPA below 3.5 to be eligible, provided they have a waiver and sufficient credit hours."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nWithout a waiver, need GPA $\\ge 3.5$ and credits $\\ge 60$. For M:\n\n$$3.7\\ge 3.5$$\n\n$$50\\ge 60$$\n\nis false, and there is no waiver. M is not eligible.\n\nSo the statement is False.",
+      "**B.** → True\n\nN has a waiver, so only GPA is required:\n\n$$3.6\\ge 3.5$$\n\nN is eligible.\n\nSo the statement is True.",
+      "**C.** → True\n\nIf M received a waiver with the same GPA $3.7\\ge 3.5$, only the GPA gate remains, so M would be eligible.\n\nSo the statement is True.",
+      "**D.** → False\n\nA waiver drops only the credit-hour requirement. GPA below $3.5$ still blocks eligibility.\n\nSo the statement is False.",
+      "**E.** → False\n\nEven with a waiver, GPA $\\ge 3.5$ is still required. A GPA below $3.5$ cannot be eligible.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The default scholarship rule is GPA at least $3.5$ and at least $60$ credit hours. The Dean may waive only the credit-hour half. Write $G$ for the GPA test, $C$ for the credit test, and $W$ for a written waiver. Eligibility holds exactly when\n\n$$G \\land (C \\lor W)$$\n\nThe GPA condition sits outside the bracket, so a waiver cannot replace it. Inside the bracket, credits and a waiver are alternatives.",
+    "title_de_existing": "Stipendienberechtigung mit Ausnahme",
+    "context_de_existing": "Stipendienregel: Eine Studierende ist nur dann berechtigt, wenn sie einen GPA von mindestens 3,5 UND mindestens 60 Credit Hours hat — es sei denn, die Dekanin erteilt einen schriftlichen Verzicht auf die Credit-Hours-Anforderung; dann reicht die GPA-Bedingung. Studierende M hat GPA 3,7, 50 Credit Hours und keinen Verzicht. Studierende N hat GPA 3,6, 65 Credit Hours.",
+    "statements_de_existing": [
+      "Studierende M ist für das Stipendium berechtigt.",
+      "Studierende N ist für das Stipendium berechtigt.",
+      "Erhielte M einen Dekanatsverzicht (bei gleichem GPA und gleichen Hours), würde M berechtigt.",
+      "Der Dekanatsverzicht allein ist unabhängig vom GPA hinreichend für die Berechtigung.",
+      "Eine Studierende mit GPA unter 3,5 kann berechtigt sein, sofern sie einen Verzicht und genügend Credit Hours hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nOhne Verzicht braucht M GPA und Hours. M hat Hours $50<60$, also keine Berechtigung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nN erfüllt GPA $3{,}6\\ge 3{,}5$ und Hours $65\\ge 60$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nMit Verzicht entfällt die Hours-Hälfte; GPA $3{,}7$ reicht dann.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDer Verzicht ersetzt nur Hours, nicht GPA.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nGPA bleibt stets erforderlich; unter $3{,}5$ gibt es keine Berechtigung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Standard: GPA und Hours. Der Verzicht ersetzt nur Hours. M scheitert an Hours; N erfüllt beides. GPA bleibt immer nötig."
+  },
+  {
+    "case_id": "MATH 1.69",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Travel insurance payout",
+    "context_en": "A travel insurance policy pays out for trip cancellation if and only if [ (the traveler cancels due to a documented medical emergency) OR (the airline cancels the flight) ] AND (the traveler purchased the policy at least 14 days before departure). Traveler M cancelled due to a documented medical emergency and purchased the policy 20 days before departure. Traveler N's flight was cancelled by the airline, but N purchased the policy only 5 days before departure.",
+    "statements_en": [
+      "M's claim will be paid out.",
+      "N's claim will be paid out.",
+      "If a traveler purchases the policy fewer than 14 days before departure, their claim will never be paid out, regardless of the reason for cancellation.",
+      "Purchasing the policy at least 14 days in advance is, by itself, sufficient for a claim to be paid out.",
+      "It is possible for a claim to be paid out without a documented medical emergency AND without the policy being purchased at least 14 days in advance, provided the airline cancelled the flight."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nPayout iff $(\\mathrm{Med}\\vee\\mathrm{Airline})\\wedge\\mathrm{Early}$. For M:\n\n$$\\mathrm{Med}=\\mathrm{T}$$\n\n$$\\mathrm{Early}=\\mathrm{T}$$\n\n$$(\\mathrm{Med}\\vee\\mathrm{Airline})=\\mathrm{T}$$\n\n$$\\mathrm{T}\\wedge\\mathrm{T}=\\mathrm{T}$$\n\nM is paid.\n\nSo the statement is True.",
+      "**B.** → False\n\nFor N:\n\n$$\\mathrm{Airline}=\\mathrm{T}$$\n\n$$\\mathrm{Early}=\\mathrm{F}$$\n\n$$(\\mathrm{Med}\\vee\\mathrm{Airline})=\\mathrm{T}$$\n\n$$\\mathrm{T}\\wedge\\mathrm{F}=\\mathrm{F}$$\n\nN is not paid.\n\nSo the statement is False.",
+      "**C.** → True\n\nIf $\\mathrm{Early}$ fails, the outer conjunction fails no matter what the cancellation reason is. No payout.\n\nSo the statement is True.",
+      "**D.** → False\n\nEarly purchase alone leaves $(\\mathrm{Med}\\vee\\mathrm{Airline})$ possibly false. Not sufficient.\n\nSo the statement is False.",
+      "**E.** → False\n\nWithout Med and without Early, need Airline for the first disjunct, but Early still fails, so the conjunction fails. Impossible.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The policy pays if and only if an accepted cancellation reason holds and the policy was bought at least $14$ days before departure. Write $M$ for a documented medical emergency, $A$ for an airline cancellation, and $T$ for the timing test. A payout holds exactly when\n\n$$(M \\lor A) \\land T$$\n\nInside the bracket the two reasons are alternatives. Outside it, $T$ is required of every claim.",
+    "title_de_existing": "Auszahlung einer Reiseversicherung",
+    "context_de_existing": "Eine Reiseversicherung zahlt bei Reiseabsage genau dann, wenn [(die Reisende wegen dokumentiertem medizinischem Notfall absagt) ODER (die Airline den Flug streicht)] UND (die Police mindestens 14 Tage vor Abflug gekauft wurde). Reisende M sagte wegen dokumentiertem medizinischem Notfall ab und kaufte die Police 20 Tage vorher. Reisende N sagte wegen dokumentiertem medizinischem Notfall ab, kaufte die Police aber erst 5 Tage vorher.",
+    "statements_de_existing": [
+      "Der Anspruch von M wird ausgezahlt.",
+      "Der Anspruch von N wird ausgezahlt.",
+      "Kauft eine Reisende die Police weniger als 14 Tage vor Abflug, wird der Anspruch unabhängig vom Absagegrund nie ausgezahlt.",
+      "Der Kauf mindestens 14 Tage im Voraus ist für sich genommen hinreichend für eine Auszahlung.",
+      "Eine Auszahlung ist möglich ohne dokumentierten medizinischen Notfall und ohne Kauf mindestens 14 Tage vorher, sofern die Airline den Flug gestrichen hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nM hat medizinischen Grund und Kauf 20 Tage vorher. Beide Seiten der Regel gelten.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nN hat den medizinischen Grund, aber Kauf erst nach 5 Tagen — die 14-Tage-Seite fehlt.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nOhne die 14-Tage-Bedingung scheitert die Konjunktion immer.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nEs braucht zusätzlich einen anerkannten Absagegrund.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nSelbst mit Airline-Streichung fehlt ohne 14-Tage-Kauf die zweite Hälfte; Auszahlung ist unmöglich.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Auszahlung genau dann, wenn (medizinischer Notfall oder Airline-Streichung) und Kauf $\\ge 14$ Tage vorher. M erfüllt beides; N scheitert an der Frist. Die Frist allein reicht nicht; ohne Frist hilft auch die Airline-Streichung nicht."
+  },
+  {
+    "case_id": "MATH 1.70",
+    "short_letters": [
+      0,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Contrapositive Reasoning in a Citizenship Voting Law",
+    "context_en": "An election law states: \"If a person is a citizen, they are eligible to vote.\"",
+    "statements_en": [
+      "The negation of this law is: \"A person is a citizen and is not eligible to vote.\"",
+      "John is not eligible to vote; by the contrapositive, we may conclude that John is not a citizen. This reasoning is logically valid.",
+      "Maria is a citizen who chooses not to register and therefore does not cast a vote in one election. This is a counterexample disproving the law.",
+      "The converse, \"If a person is eligible to vote, they are a citizen,\" could be false in a country that grants voting rights to certain non-citizen long-term residents.",
+      "The inverse, \"If a person is not a citizen, they are not eligible to vote,\" always has the same truth value as the converse."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNegation of $C\\Rightarrow V$:\n\n$$C\\wedge\\neg V$$\n\nSo the statement is True.",
+      "**B.** → True\n\nContrapositive $\\neg V\\Rightarrow\\neg C$ is valid reasoning from ineligibility to non-citizenship.\n\nSo the statement is True.",
+      "**C.** → False\n\nNot casting a vote is not the same as being ineligible. Maria can be a citizen and eligible yet not vote. Not a counterexample to $C\\Rightarrow V$.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe converse $V\\Rightarrow C$ can fail if non-citizens are granted voting rights.\n\nSo the statement is True.",
+      "**E.** → True\n\nInverse $\\neg C\\Rightarrow\\neg V$ is equivalent to the converse, so they share a truth value.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “the person is a citizen” and $Q$ for “the person is eligible to vote.” The law is\n\n$$P \\Rightarrow Q$$\n\nHere $Q$ is the right to vote, not the act of casting a ballot. The negation of the law is $P \\land \\neg Q$. The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are equivalent to each other and not, in general, to the original.",
+    "title_de_existing": "Kontrapositions-Schluss in einem Wahlrecht für Staatsangehörige",
+    "context_de_existing": "Ein Wahlgesetz besagt: „Wenn eine Person Staatsbürgerin ist, ist sie wahlberechtigt.“",
+    "statements_de_existing": [
+      "Die Negation dieses Gesetzes lautet: „Eine Person ist Staatsbürgerin und nicht wahlberechtigt.“",
+      "John ist nicht wahlberechtigt; über die Kontraposition dürfen wir schließen, dass John keine Staatsbürgerin/kein Staatsbürger ist. Diese Argumentation ist logisch gültig.",
+      "Maria ist Staatsbürgerin, registriert sich aber nicht und gibt in einer Wahl keine Stimme ab. Das ist ein Gegenbeispiel, das das Gesetz widerlegt.",
+      "Die Umkehrung „Wenn eine Person wahlberechtigt ist, ist sie Staatsbürgerin“ könnte in einem Land falsch sein, das bestimmten langfristig ansässigen Nicht-Staatsbürgerinnen Wahlrecht gibt.",
+      "Die Form „Wenn eine Person keine Staatsbürgerin ist, ist sie nicht wahlberechtigt“ hat stets denselben Wahrheitswert wie die Umkehrung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation von $P\\Rightarrow Q$ ist $P\\land\\neg Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nKontraposition $\\neg Q\\Rightarrow\\neg P$: keine Wahlberechtigung erzwingt keine Staatsbürgerschaft.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nWahlberechtigung ist das Recht, nicht die Stimmabgabe. Nicht wählen trotz Recht widerlegt $P\\Rightarrow Q$ nicht.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Umkehrung ist unabhängig und kann falsch sein, wenn Nicht-Staatsbürgerinnen wählen dürfen.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung $Q\\Rightarrow P$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Staatsbürgerschaft und $Q$: Wahlberechtigung (Recht, nicht Akt) gilt $P\\Rightarrow Q$. Negation und Kontraposition wie üblich; Umkehrung und $\\neg P\\Rightarrow\\neg Q$ sind ein Paar für sich."
+  },
+  {
+    "case_id": "MATH 1.71",
+    "short_letters": [
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "A business memo's reasoning",
+    "context_en": "A company memo reasons: “If we increase our marketing budget, then sales will increase. Sales have increased this quarter. Therefore, we must have increased our marketing budget.”",
+    "statements_en": [
+      "The memo's argument is logically valid.",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. We did NOT increase our marketing budget. Therefore, sales did not increase.”",
+      "The argument would become valid if restated as: “If we increase our marketing budget, then sales will increase. Sales did NOT increase. Therefore, we did not increase our marketing budget.”",
+      "For the original memo's conclusion to be validly drawn, the premise would need to be strengthened to a biconditional: “We increase our marketing budget if and only if sales increase.”",
+      "The fallacy in the original memo is the same type as concluding “It is raining” from the premises “If it rains, the ground gets wet” and “The ground is wet.”"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe memo uses $M\\Rightarrow S$ and $S$ to conclude $M$. That affirms the consequent and is invalid.\n\nSo the statement is False.",
+      "**B.** → False\n\nThe restatement uses $M\\Rightarrow S$ and $\\neg M$ to conclude $\\neg S$. That denies the antecedent and is also invalid.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe restatement uses $M\\Rightarrow S$ and $\\neg S$ to conclude $\\neg M$. That is modus tollens (contrapositive form) and is valid.\n\nSo the statement is True.",
+      "**D.** → True\n\nA biconditional $M\\Leftrightarrow S$ would let $S$ recover $M$.\n\nSo the statement is True.",
+      "**E.** → True\n\nSame affirming-the-consequent pattern as inferring rain from “if rain then wet” and “ground is wet.”\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “we increased the marketing budget” and $Q$ for “sales increased.” The memo argues from\n\n$$P \\Rightarrow Q, \\qquad Q$$\n\nto the conclusion $P$. That form is affirming the consequent. The premise licenses $P$ to $Q$, not the reverse. A competitor leaving the market can raise sales while the budget never moves: $Q$ true and $P$ false, with $P \\Rightarrow Q$ still true.",
+    "title_de_existing": "Die Argumentation eines Geschäftsmemos",
+    "context_de_existing": "Ein Firmenmemo argumentiert: „Wenn wir das Marketingbudget erhöhen, dann steigen die Verkäufe. Die Verkäufe sind in diesem Quartal gestiegen. Daher müssen wir das Marketingbudget erhöht haben.“",
+    "statements_de_existing": [
+      "Das Argument des Memos ist logisch gültig.",
+      "Das Argument würde gültig, wenn man umformuliert: „Wenn wir das Marketingbudget erhöhen, steigen die Verkäufe. Wir haben das Marketingbudget NICHT erhöht. Daher sind die Verkäufe nicht gestiegen.“",
+      "Das Argument würde gültig, wenn man umformuliert: „Wenn wir das Marketingbudget erhöhen, steigen die Verkäufe. Die Verkäufe sind NICHT gestiegen. Daher haben wir das Marketingbudget nicht erhöht.“",
+      "Damit die Originalschlussfolgerung gültig wäre, müsste die Prämisse zur Äquivalenz gestärkt werden: „Wir erhöhen das Marketingbudget genau dann, wenn die Verkäufe steigen.“",
+      "Der Fehlschluss im Originalmemo ist derselbe Typ wie der Schluss „Es regnet“ aus „Wenn es regnet, wird der Boden nass“ und „Der Boden ist nass“."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAus $P\\Rightarrow Q$ und $Q$ auf $P$ zu schließen ist der Fehlschluss der Bejahung der Konklusion.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nAus $P\\Rightarrow Q$ und $\\neg P$ folgt nicht $\\neg Q$ (Verneinung der Prämisse).\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nAus $P\\Rightarrow Q$ und $\\neg Q$ folgt $\\neg P$ per Kontraposition / Modus Tollens.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nMit $P\\Leftrightarrow Q$ und $Q$ folgt $P$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBeides ist Bejahung der Konklusion.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Das Memo schließt von $P\\Rightarrow Q$ und $Q$ auf $P$ (Bejahung der Konklusion). Gültig wäre der Schluss aus $\\neg Q$ auf $\\neg P$, oder mit einer Äquivalenz $P\\Leftrightarrow Q$."
+  },
+  {
+    "case_id": "MATH 1.72",
+    "short_letters": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "A Counterexample to \"The Sum of Two Irrationals Is Irrational\"",
+    "context_en": "Consider the claim: \"The sum of two irrational numbers is always irrational,\" and the classical proof that there is no largest prime number.",
+    "statements_en": [
+      "√2 + (-√2) = 0 is a valid counterexample to \"the sum of two irrational numbers is always irrational,\" since √2 and -√2 are irrational but their sum, 0, is rational",
+      "Finding this one counterexample is enough to show the claim is not a true universal statement",
+      "A proof by contradiction that there is no largest prime begins by assuming there IS a largest prime, say p, and then derives a contradiction",
+      "To prove a universal statement, it suffices to check it for $x=1$ and $x=2$.",
+      "To prove an existential statement, it suffices to exhibit one value for which the stated property holds."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBoth $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and\n\n$$\\sqrt{2}+(-\\sqrt{2})=0$$\n\nZero is rational, so the pair counters the universal claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOne counterexample falsifies a universal.\n\nSo the statement is True.",
+      "**C.** → True\n\nContradiction proofs assume a largest prime $p$ and derive a larger prime.\n\nSo the statement is True.",
+      "**D.** → False\n\nChecking $x=1$ and $x=2$ does not prove a universal.\n\nSo the statement is False.",
+      "**E.** → True\n\nOne witness proves an existential.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A universal claim $\\forall x\\, P(x)$ is proved by an argument that covers every $x$ and is disproved by one counterexample. An existential claim $\\exists x\\, P(x)$ is proved by one witness.\n\nThe stem’s claim “the sum of two irrationals is always irrational” is universal. A proof by contradiction of “there is no largest prime” begins by assuming the negation of that target.",
+    "title_de_existing": "Ein Gegenbeispiel zu „Die Summe zweier Irrationaler ist irrational“",
+    "context_de_existing": "Betrachte die Behauptung: „Die Summe zweier irrationaler Zahlen ist stets irrational“, sowie den klassischen Beweis, dass es keine größte Primzahl gibt.",
+    "statements_de_existing": [
+      "$\\sqrt{2}+(-\\sqrt{2})=0$ ist ein gültiges Gegenbeispiel zu „die Summe zweier irrationaler Zahlen ist stets irrational“, denn $\\sqrt{2}$ und $-\\sqrt{2}$ sind irrational, ihre Summe $0$ aber rational.",
+      "Dieses eine Gegenbeispiel genügt, um zu zeigen, dass die Behauptung keine wahre Allaussage ist.",
+      "Ein Widerspruchsbeweis, dass es keine größte Primzahl gibt, beginnt mit der Annahme, es gebe eine größte Primzahl $p$, und leitet daraus einen Widerspruch ab.",
+      "Um eine Allaussage zu beweisen, genügt es, sie für $x=1$ und $x=2$ zu prüfen.",
+      "Um eine Existenzaussage zu beweisen, genügt es, einen Wert anzugeben, für den die genannte Eigenschaft gilt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide Summanden sind irrational, die Summe rational — ein klassisches Gegenbeispiel.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nEine Allaussage fällt mit einem Gegenbeispiel.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWiderspruch startet mit der Negation der Behauptung (es gebe ein Maximum) und führt zum Widerspruch.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nZwei Stichproben ersetzen keinen allgemeinen Beweis.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nExistenz braucht genau ein Zeugenbeispiel.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Allaussagen brauchen allgemeine Beweise und fallen mit einem Gegenbeispiel; Existenzaussagen brauchen einen Zeugen. $\\sqrt{2}+(-\\sqrt{2})=0$ widerlegt die Summenbehauptung."
+  },
+  {
+    "case_id": "MATH 1.73",
+    "short_letters": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Converse and Contrapositive of a Fish-Habitat Rule",
+    "context_en": "A biology rule states: \"If an animal is a fish, then it lives in water.\"",
+    "statements_en": [
+      "\"This dolphin lives in water, so it must be a fish\" uses the converse of the rule and is an invalid argument.",
+      "\"This lizard does not live in water, so it is not a fish\" uses the contrapositive of the rule and is a valid argument.",
+      "\"This snake is not a fish, so it does not live in water\" uses the inverse of the rule, and inverse-based reasoning is always guaranteed to be valid.",
+      "The negation of the broader claim \"All fish live in water\" is \"There exists a fish that does not live in water.\"",
+      "The fact that dolphins live in water without being fish is, by itself, a valid counterexample disproving \"All fish live in water.\""
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n“Lives in water $\\Rightarrow$ fish” is the converse of “fish $\\Rightarrow$ lives in water.” Affirming the consequent is invalid.\n\nSo the statement is True.",
+      "**B.** → True\n\n“Not in water $\\Rightarrow$ not a fish” is the contrapositive — valid.\n\nSo the statement is True.",
+      "**C.** → False\n\n“Not a fish $\\Rightarrow$ not in water” is the inverse and is not valid reasoning from the rule.\n\nSo the statement is False.",
+      "**D.** → True\n\nNegation of $\\forall x\\,(F(x)\\Rightarrow W(x))$ is $\\exists x\\,(F(x)\\wedge\\neg W(x))$.\n\nSo the statement is True.",
+      "**E.** → False\n\nDolphins live in water without being fish; that counters the converse, not “all fish live in water.”\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $P(x)$ for “$x$ is a fish” and $Q(x)$ for “$x$ lives in water.” The rule is\n\n$$P(x) \\Rightarrow Q(x)$$\n\nThe converse is $Q(x) \\Rightarrow P(x)$, the inverse is $\\neg P(x) \\Rightarrow \\neg Q(x)$, and the contrapositive is $\\neg Q(x) \\Rightarrow \\neg P(x)$. Only the contrapositive is equivalent to the original. The universal “all fish live in water” is $\\forall x\\,(P(x) \\Rightarrow Q(x))$, and its negation is $\\exists x\\,(P(x) \\land \\neg Q(x))$.",
+    "title_de_existing": "Umkehrung und Kontraposition einer Fischhabitat-Regel",
+    "context_de_existing": "Eine biologische Regel besagt: „Wenn ein Tier ein Fisch ist, dann lebt es im Wasser.“",
+    "statements_de_existing": [
+      "„Dieser Delfin lebt im Wasser, also muss er ein Fisch sein“ benutzt die Umkehrung der Regel und ist ein ungültiges Argument.",
+      "„Diese Eidechse lebt nicht im Wasser, also ist sie kein Fisch“ benutzt die Kontraposition der Regel und ist ein gültiges Argument.",
+      "„Diese Schlange ist kein Fisch, also lebt sie nicht im Wasser“ benutzt die Form $\\neg P\\Rightarrow\\neg Q$; solches Schließen ist stets gültig garantiert.",
+      "Die Negation der breiteren Behauptung „Alle Fische leben im Wasser“ lautet „Es gibt einen Fisch, der nicht im Wasser lebt.“",
+      "Dass Delfine im Wasser leben, ohne Fische zu sein, ist für sich ein gültiges Gegenbeispiel gegen „Alle Fische leben im Wasser“."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nUmkehrung $Q\\Rightarrow P$ folgt nicht aus $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nKontraposition $\\neg Q\\Rightarrow\\neg P$ ist gültig.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist nicht äquivalent zum Original und nicht stets gültig.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNegation der Allaussage ist die Existenz eines Gegenbeispiels.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEin Nicht-Fisch im Wasser widerlegt nicht „jeder Fisch lebt im Wasser“.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Fisch und $Q$: lebt im Wasser gilt $P\\Rightarrow Q$. Umkehrung ungültig, Kontraposition gültig. Ein Delfin widerlegt die Allaussage über Fische nicht."
+  },
+  {
+    "case_id": "MATH 1.74",
+    "short_letters": [
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Negating a Store's Early-Payment Discount Policy",
+    "context_en": "A store policy states: \"If a customer pays within 30 days, they receive a 5% discount.\"",
+    "statements_en": [
+      "The negation of the policy is: \"A customer paid within 30 days and received the discount.\"",
+      "The converse, \"If a customer receives the discount, they paid within 30 days,\" is necessarily true given the policy.",
+      "Alex paid on day 45 (after 30 days) and did not receive the discount. This is consistent with the original policy and does NOT serve as a counterexample.",
+      "The inverse, \"If a customer does not pay within 30 days, they do not receive the discount,\" is logically guaranteed to be true by the original policy.",
+      "The contrapositive, \"If a customer does not receive the discount, they did not pay within 30 days,\" is NOT guaranteed to be true, since only the original conditional itself carries any real guarantee."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nNegation of $P\\Rightarrow D$ is $P\\wedge\\neg D$, not $P\\wedge D$.\n\nSo the statement is False.",
+      "**B.** → False\n\nThe converse is not forced.\n\nSo the statement is False.",
+      "**C.** → True\n\nAlex: $\\neg P$ and $\\neg D$. The original $P\\Rightarrow D$ is vacuously safe.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe inverse is not forced by the original.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe contrappositive $\\neg D\\Rightarrow\\neg P$ is equivalent to the original, so it is guaranteed.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $P$ for “the customer pays within $30$ days” and $Q$ for “the customer receives a $5\\%$ discount.” The policy is\n\n$$P \\Rightarrow Q$$\n\nIts negation is $P \\land \\neg Q$, a punctual payer who got no discount. The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are not.",
+    "title_de_existing": "Negation der Skonto-Politik eines Geschäfts",
+    "context_de_existing": "Eine Ladenregel besagt: „Wenn eine Kundin innerhalb von 30 Tagen zahlt, erhält sie 5% Rabatt.“",
+    "statements_de_existing": [
+      "Die Negation der Regel lautet: „Eine Kundin zahlte innerhalb von 30 Tagen und erhielt den Rabatt.“",
+      "Die Umkehrung „Wenn eine Kundin den Rabatt erhält, dann hat sie innerhalb von 30 Tagen gezahlt“ ist wegen der Regel notwendig wahr.",
+      "Alex zahlte am Tag 45 (nach 30 Tagen) und erhielt keinen Rabatt. Das ist mit der Originalregel vereinbar und dient NICHT als Gegenbeispiel.",
+      "Die Form „Wenn eine Kundin nicht innerhalb von 30 Tagen zahlt, erhält sie keinen Rabatt“ ist durch die Originalregel logisch garantiert.",
+      "Die Kontraposition „Wenn eine Kundin den Rabatt nicht erhält, dann hat sie nicht innerhalb von 30 Tagen gezahlt“ ist NICHT garantiert wahr, weil nur die Originalbedingung selbst eine echte Garantie trägt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nNegation ist $P\\land\\neg Q$: pünktlich gezahlt und keinen Rabatt erhalten — nicht die bejahende Variante.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDie Umkehrung folgt nicht.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nSpäte Zahlung ohne Rabatt ist $\\neg P\\land\\neg Q$ und verletzt $P\\Rightarrow Q$ nicht.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ folgt nicht aus $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Kontraposition ist äquivalent und damit ebenfalls garantiert.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Zahlung binnen 30 Tagen und $Q$: 5%-Rabatt ist die Regel $P\\Rightarrow Q$. Negation ist $P\\land\\neg Q$. Umkehrung und $\\neg P\\Rightarrow\\neg Q$ folgen nicht; Kontraposition folgt."
+  },
+  {
+    "case_id": "MATH 1.75",
+    "short_letters": [
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Negating a Revenue-Based Audit Regulation",
+    "context_en": "A regulation states: \"If a company's annual revenue exceeds \\$1 million, then it must file an annual audit.\"",
+    "statements_en": [
+      "The negation of this statement is: \"If a company's revenue exceeds \\$1 million, then it does not file an audit.\"",
+      "The converse, \"If a company files an annual audit, then its revenue exceeds \\$1 million,\" is guaranteed true whenever the original regulation holds.",
+      "The inverse, \"If a company's revenue does not exceed \\$1 million, then it does not file an audit,\" is logically equivalent to the original statement.",
+      "The contrapositive, \"If a company does not file an audit, then its revenue does not exceed \\$1 million,\" is equivalent to the original and must also be true.",
+      "Company X has revenue of \\$2 million but did not file an audit. This is a valid counterexample that would prove the original regulation false."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nNegation of $R\\Rightarrow A$ is $R\\wedge\\neg A$, not another implication.\n\nSo the statement is False.",
+      "**B.** → False\n\nConverse not forced.\n\nSo the statement is False.",
+      "**C.** → False\n\nInverse not equivalent to the original.\n\nSo the statement is False.",
+      "**D.** → True\n\nContrapositive $\\neg A\\Rightarrow\\neg R$ is equivalent.\n\nSo the statement is True.",
+      "**E.** → True\n\nCompany X: revenue $\\$2$M and no audit is $R\\wedge\\neg A$, which falsifies $R\\Rightarrow A$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “annual revenue exceeds \\$1 million” and $Q$ for “the company files an annual audit.” The regulation is\n\n$$P \\Rightarrow Q$$\n\nIts negation is a single offender, not a rival if-then:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are not. A firm below the cutoff may still file voluntarily.",
+    "title_de_existing": "Negation einer umsatzbasierten Prüfungsvorschrift",
+    "context_de_existing": "Eine Vorschrift besagt: „Wenn der Jahresumsatz eines Unternehmens \\$1 Million übersteigt, dann muss es eine Jahresprüfung einreichen.“",
+    "statements_de_existing": [
+      "Die Negation lautet: „Wenn der Umsatz \\$1 Million übersteigt, dann reicht das Unternehmen keine Prüfung ein.“",
+      "Die Umkehrung „Wenn ein Unternehmen eine Jahresprüfung einreicht, dann übersteigt sein Umsatz \\$1 Million“ ist garantiert wahr, sobald die Originalvorschrift gilt.",
+      "Die Form „Wenn der Umsatz \\$1 Million nicht übersteigt, dann wird keine Prüfung eingereicht“ ist logisch äquivalent zur Originalaussage.",
+      "Die Kontraposition „Wenn ein Unternehmen keine Prüfung einreicht, dann übersteigt sein Umsatz \\$1 Million nicht“ ist äquivalent zum Original und muss ebenfalls wahr sein.",
+      "Unternehmen X hat Umsatz \\$2 Millionen, reichte aber keine Prüfung ein. Das ist ein gültiges Gegenbeispiel, das die Originalvorschrift als falsch erweisen würde."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nNegation einer Implikation ist keine rivalisierende Implikation, sondern $P\\land\\neg Q$.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDie Umkehrung folgt nicht.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist nicht äquivalent zu $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nKontraposition ist äquivalent.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nUnternehmen X: Umsatz $\\$2$ Millionen und keine Prüfung ist $P\\land\\neg Q$, was $P\\Rightarrow Q$ widerlegt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Umsatz $>\\$1$ Mio. und $Q$: Jahresprüfung gilt $P\\Rightarrow Q$. Negation ist ein Verstoß $P\\land\\neg Q$. Nur die Kontraposition ist äquivalent."
+  },
+  {
+    "case_id": "MATH 1.76",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Commercial pilot license",
+    "context_en": "To be granted a commercial pilot license, it is necessary to have logged at least 250 flight hours; the license is granted if and only if the pilot has logged at least 250 flight hours AND has passed the FAA written exam AND has passed a practical flight test. Pilot A has logged 300 flight hours, passed the written exam, but failed the practical flight test. Pilot B has logged 240 flight hours, and passed both the written exam and the practical flight test.",
+    "statements_en": [
+      "Pilot A is granted the license.",
+      "Pilot B is granted the license.",
+      "Having logged at least 250 flight hours, by itself, guarantees that a pilot is granted the license.",
+      "If a pilot fails the practical flight test, they cannot be granted the license, even if they have more than 250 hours and passed the written exam.",
+      "There exists a pilot with more than 250 flight hours who is not granted the license."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nLicense iff hours and written and practical. Pilot A failed practical:\n\n$$\\mathrm{Practical}=\\mathrm{F}$$\n\nso the conjunction fails. A is not granted.\n\nSo the statement is False.",
+      "**B.** → False\n\nPilot B has only $240$ hours:\n\n$$240\\ge 250$$\n\nis false. B is not granted.\n\nSo the statement is False.",
+      "**C.** → False\n\nHours alone omit written and practical. Not sufficient.\n\nSo the statement is False.",
+      "**D.** → True\n\nFailing practical falsifies one conjunct, so the license cannot be granted.\n\nSo the statement is True.",
+      "**E.** → True\n\nPilot A has $300>250$ hours yet is not granted — such a pilot exists.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The license is granted if and only if three tests all hold. Write $H$ for at least $250$ flight hours, $W$ for passing the written exam, and $T$ for passing the practical test. The license is granted exactly when\n\n$$H \\land W \\land T$$\n\nIn a conjunction every conjunct is necessary and no conjunct is sufficient on its own. The stem also records that $H$ is necessary, which the formula already encodes.",
+    "title_de_existing": "Verkehrspilotenlizenz",
+    "context_de_existing": "Für eine Verkehrspilotenlizenz sind mindestens 250 Flugstunden notwendig; die Lizenz wird nur erteilt, wenn diese Stundenbedingung erfüllt ist, weitere Bedingungen können aber hinzukommen. Pilot A hat 300 Stunden und erhält die Lizenz nicht. Pilot B hat 240 Stunden.",
+    "statements_de_existing": [
+      "Pilot A erfüllt alle notwendigen Bedingungen für die Lizenz.",
+      "Pilot B kann die Lizenz erhalten haben.",
+      "250 Flugstunden sind hinreichend für die Erteilung der Lizenz.",
+      "Wenn ein Pilot weniger als 250 Stunden hat, erhält er die Lizenz nicht.",
+      "Es ist möglich, 250 oder mehr Stunden zu haben und trotzdem die Lizenz nicht zu erhalten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nA hat die Stunden, erhält die Lizenz aber nicht. Also fehlt mindestens eine weitere notwendige Bedingung; A erfüllt nicht alle notwendigen Bedingungen.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nB hat nur $240$ Stunden:\n\n$$240\\ge 250$$\n\ngilt nicht. Die Stundenbedingung ist notwendig; ohne sie keine Lizenz.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nHinreichend würde bedeuten, dass 250 Stunden die Lizenz erzwingen. Der Fall A zeigt das Gegenteil.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNotwendigkeit der Stundenbedingung bedeutet: ohne sie keine Lizenz. Das ist die Kontraposition.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nPilot A hat $300>250$ Stunden und erhält die Lizenz nicht — genau dieser Fall existiert.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mindestens 250 Stunden sind notwendig, nicht hinreichend. Unter 250 Stunden folgt keine Lizenz. Über 250 Stunden ohne Lizenz ist möglich, wie Pilot A zeigt."
+  },
+  {
+    "case_id": "MATH 1.77",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Bank loan approval",
+    "context_en": "A bank's loan approval rule states: an applicant is approved if and only if [(credit score is at least 700) OR (has a qualified co-signer)] AND (debt-to-income ratio is below 40%). Applicant P has a credit score of 650, has a qualified co-signer, and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720, no co-signer, and a debt-to-income ratio of 45%.",
+    "statements_en": [
+      "Applicant P, with a credit score of 650, a qualified co-signer, and a debt-to-income ratio of 35%, is NOT approved for the loan because their credit score alone is below 700.",
+      "Applicant Q is approved for the loan.",
+      "If an applicant's credit score is at least 700, they are always approved, regardless of their debt-to-income ratio.",
+      "If an applicant's debt-to-income ratio is 40% or above, they can never be approved, even with a high credit score or a co-signer.",
+      "It is possible for an applicant with a credit score below 700 to be approved, provided they have a co-signer and a debt-to-income ratio below 40%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nApproval iff $(\\mathrm{score}\\ge 700\\vee\\mathrm{cosign})\\wedge(\\mathrm{DTI}<40\\%)$. For P:\n\n$$650\\ge 700$$\n\nis false, but\n\n$$\\mathrm{cosign}=\\mathrm{T}$$\n\n$$35<40$$\n\nso\n\n$$(\\mathrm{F}\\vee\\mathrm{T})\\wedge\\mathrm{T}=\\mathrm{T}$$\n\nP is approved. The claim that P is not approved is false.\n\nSo the statement is False.",
+      "**B.** → False\n\nFor Q:\n\n$$720\\ge 700$$\n\n$$45<40$$\n\nis false. The conjunction fails. Q is not approved.\n\nSo the statement is False.",
+      "**C.** → False\n\nScore $\\ge 700$ still needs $\\mathrm{DTI}<40\\%$. Not always approved.\n\nSo the statement is False.",
+      "**D.** → True\n\nIf $\\mathrm{DTI}\\ge 40\\%$, the second conjunct fails, so approval is impossible.\n\nSo the statement is True.",
+      "**E.** → True\n\nP is exactly such an applicant: score below $700$, co-signer, $\\mathrm{DTI}<40\\%$, and approved.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $S$ for credit score at least $700$, $C$ for a qualified co-signer, and $D$ for a debt-to-income ratio below $40\\%$. Approval holds exactly when\n\n$$(S \\lor C) \\land D$$\n\nInside the bracket, score and co-signer are alternatives. Outside it, $D$ is required of every applicant and cannot be offset.",
+    "title_de_existing": "Bankkreditbewilligung",
+    "context_de_existing": "Die Kreditgenehmigungsregel einer Bank besagt: Ein Antragsteller wird genehmigt, wenn und nur [(Kredit-Score ist mindestens 700) ODER (hat einen qualifizierten Mitunterzeichner)] UND B.S wirrm.sp.,rm.emkwm., ESsermingem. Antragsteller Q hat eine Kreditwürdigkeit von 720, kein Mitunterzeichner und ein Schulden-Einkommens-Verhältnis von 45.",
+    "statements_de_existing": [
+      "Der Antragsteller P, mit einem Kredit-Score von 650, einem qualifizierten Mit-Unternehmer und einem Verschuldungsverhältnis von 35%, wird für das Darlehen genehmigt, weil sein Kredit-Score allein unter 700 liegt.",
+      "Antragsteller Q ist für das Darlehen genehmigt.",
+      "Wennlag der Mindestgewinn eines Antragstellers bei mindestens um als solche amtlich anerkannten 700, wird er unabhängig von seinem Verhältnis zu den prozentualen Einkünften im Verhältnis zu den prozentualen Einkünften im Verhältnis zu den amtlich anerkannten Einkünften amtlich anerkannt.",
+      "Wenn die Schuldenquote eines Antragstellers 40% oder mehr beträgt, können sie niemals genehmigt werden, auch nicht mit einem hohen Kredit-Score oder einem Mitunterzeichner.",
+      "Es ist möglich, dass ein Antragsteller mit einem Kredit-Score unter 700 genehmigt wird, vorausgesetzt, er hat einen Mitunterzeichner und ein Schulden-Einkommens-Verhältnis unter 40%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nGenehmigung iff $(\\mathrm{score}\\ge 700\\vee\\mathrm{cosign})\\wedge(\\mathrm{DTI}<40\\%)$. Für P:\n\n$$650\\ge 700$$\n\nist falsch, aber\n\n$$\\mathrm{cosign}=\\mathrm{T}$$\n\n$$35<40$$\n\nso\n\n$$(\\mathrm{F}\\vee\\mathrm{T})\\wedge\\mathrm{T}=\\mathrm{T}$$\n\nP ist genehmigt. Die Behauptung, dass P nicht akzeptiert ist, ist falsch.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nFür Q:\n\n$$720\\ge 700$$\n\n$$45<40$$\n\nist falsch. Die Konjunktion scheitert. Q ist nicht genehmigt.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nScore $\\ge 700$ still needs $\\mathrm{DTI}<40\\%$. Not always approved.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nWenn $\\mathrm{DTI}\\ge 40\\%$, scheitert das zweite Konjunkt, also ist Bewilligung unmöglich.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nP ist genau eine solche Antragstellerin: Note unter $700$, Mithaftende, $\\mathrm{DTI}<40\\%$, und bewilligt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Schreibe $S$ für Bonität mindestens $700$, $C$ für eine qualifizierte Mithaftende und $D$ für ein Schulden-Einkommens-Verhältnis unter $40\\%$. Bewilligung gilt genau dann, wenn\n\n$$(S \\lor C) \\land D$$\n\nInnerhalb der Klammer sind Note und Mithaftende Alternativen. Außerhalb ist $D$ für jede Antragstellerin erforderlich und kann nicht ausgeglichen werden."
+  },
+  {
+    "case_id": "MATH 1.78",
+    "short_letters": [
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Sam's Loyalty Point and the Converse of a Dessert Rule",
+    "context_en": "A restaurant policy states: \"If a customer orders dessert, they receive one loyalty point.\" Diner Sam received a loyalty point despite not ordering dessert; he got one as part of a birthday promotion.",
+    "statements_en": [
+      "Sam's case is exactly what's needed to disprove the converse, \"If a customer receives a loyalty point, they ordered dessert.\"",
+      "A proof by contradiction of \"not every point-earning diner ordered dessert\" would begin by assuming the opposite - \"every diner who received a point ordered dessert\" - and then show Sam's case violates that assumption.",
+      "Sam's case also disproves the policy that ordering dessert guarantees a loyalty point.",
+      "The correctly formed negation of the original policy would require finding a diner who ordered dessert and did NOT receive a point - a completely different scenario from Sam's.",
+      "The inverse, \"If a customer does not order dessert, they do not receive a point,\" is directly contradicted by Sam's case."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSam: $\\neg\\mathrm{Dessert}$ and $\\mathrm{Point}$. That falsifies the converse $\\mathrm{Point}\\Rightarrow\\mathrm{Dessert}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nContradiction proof of “not every point-earner ordered dessert” assumes every point-earner ordered dessert.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe original $D\\Rightarrow\\mathrm{Point}$ is not falsified by getting a point without dessert.\n\nSo the statement is False.",
+      "**D.** → True\n\nNegation of $D\\Rightarrow\\mathrm{Point}$ needs a diner with dessert and no point.\n\nSo the statement is True.",
+      "**E.** → True\n\nSam directly falsifies the inverse $\\neg D\\Rightarrow\\neg\\mathrm{Point}$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “the diner orders dessert” and $Q$ for “the diner receives a loyalty point.” The policy is\n\n$$P \\Rightarrow Q$$\n\nSam received a birthday point without ordering dessert, so $P$ is false and $Q$ is true. A conditional is refuted only by a true antecedent and a false consequent.",
+    "title_de_existing": "Sams Treuepunkte und die Umkehrung einer Dessert-Regel",
+    "context_de_existing": "Eine Restaurantregel besagt: „Wenn eine Kundin Dessert bestellt, erhält sie einen Treuepunkt.“ Gast Sam erhielt einen Treuepunkt, bestellte aber kein Dessert.",
+    "statements_de_existing": [
+      "Sams Fall ist ein Gegenbeispiel zur Umkehrung der Regel.",
+      "Sams Fall widerlegt die Originalregel nicht.",
+      "Sams Fall widerlegt die Originalregel.",
+      "Die Negation der Originalregel lautet: „Eine Kundin bestellt Dessert und erhält keinen Treuepunkt.“",
+      "Die Kontraposition der Regel lautet: „Wenn eine Kundin keinen Treuepunkt erhält, dann hat sie kein Dessert bestellt.“"
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSam: kein Dessert, aber Punkt. Das widerlegt die Umkehrung „Punkt $\\Rightarrow$ Dessert“.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Originalregel $D\\Rightarrow$ Punkt scheitert nur bei Dessert ohne Punkt. Sams Fall ist Punkt ohne Dessert.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nWie in B: Original bleibt unberührt.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNegation von $D\\Rightarrow$ Punkt ist $D\\land\\neg$Punkt.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nKontraposition: kein Punkt $\\Rightarrow$ kein Dessert.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $D$: Dessert und Punkt-Erhalt ist die Regel $D\\Rightarrow$ Punkt. Sam (Punkt ohne Dessert) trifft die Umkehrung, nicht das Original. Negation und Kontraposition wie üblich."
+  },
+  {
+    "case_id": "MATH 1.79",
+    "short_letters": [
+      0,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Nested quantifiers with a product equation",
+    "context_en": "Consider the statement: “For every positive integer m, there exists a positive integer n such that $m \\cdot n = 100$.”",
+    "statements_en": [
+      "The statement holds when m = 4 (there exists n with 4n = 100).",
+      "The statement holds when m = 3 (there exists n with 3n = 100).",
+      "The overall statement (“for every m, there exists n...”) is true.",
+      "The correct negation of the overall statement is: “There exists a positive integer m such that for every positive integer n, $m \\cdot n \\neq 100$.”",
+      "Reversing the quantifiers to “There exists n such that for every m, $m \\cdot n = 100$” would also produce a false statement."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFor $m=4$:\n\n$$4\\cdot n=100$$\n\n$$n=\\frac{100}{4}$$\n\n$$n=25$$\n\n$$25\\in\\mathbb{Z}^{+}$$\n\nso a witness exists.\n\nSo the statement is True.",
+      "**B.** → False\n\nFor $m=3$:\n\n$$3\\cdot n=100$$\n\n$$n=\\frac{100}{3}$$\n\nwhich is not an integer. No positive integer $n$ works.\n\nSo the statement is False.",
+      "**C.** → False\n\nSince $m=3$ fails, the universal “for every $m$” is false.\n\nSo the statement is False.",
+      "**D.** → True\n\nNegation of $\\forall m\\,\\exists n\\,(mn=100)$ is\n\n$$\\exists m\\,\\forall n\\,(mn\\neq 100)$$\n\nSo the statement is True.",
+      "**E.** → True\n\nA single $n$ cannot satisfy $m\\cdot n=100$ for every positive $m$. The reversed quantifiers are also false.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The statement is $\\forall m\\, \\exists n$ such that $m \\cdot n = 100$, with $m$ and $n$ positive integers. The order matters: $n$ is allowed to depend on $m$. For a fixed $m$ the equation forces\n\n$$n = \\frac{100}{m}$$\n\nand that $n$ is legal only when $m$ divides $100$. Negation flips each quantifier and negates the equation. Reversing the quantifiers asks for one $n$ that works for every $m$ at once.",
+    "title_de_existing": "Verschachtelte Quantoren mit einer Produktgleichung",
+    "context_de_existing": "Betrachte die Aussage: „Zu jeder positiven ganzen Zahl $m$ gibt es eine positive ganze Zahl $n$ mit $m\\cdot n=100$.“",
+    "statements_de_existing": [
+      "Die Aussage behauptet: $\\forall m\\in\\mathbb{Z}^{+}\\,\\exists n\\in\\mathbb{Z}^{+}\\,(m\\cdot n=100)$.",
+      "Die Aussage ist wahr.",
+      "Für $m=3$ existiert ein solches positives ganzzahliges $n$.",
+      "Die Aussage mit vertauschten Quantoren „Es gibt ein positives ganzzahliges $n$, sodass für jedes positive ganze $m$ gilt $m\\cdot n=100$“ ist falsch.",
+      "Ein einziges $n$ kann nicht für jedes positive $m$ die Gleichung $m\\cdot n=100$ erfüllen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie umgangssprachliche Formulierung ist genau die All-Existenz-Aussage.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nFür $m=3$ müsste $n=100/3$ positiv ganz sein — ist es nicht. Die Allaussage scheitert.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$100/3$ ist nicht ganzzahlig.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Existenz-All-Variante verlangt ein festes $n$ für alle $m$ und ist erst recht falsch.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nEin festes $n$ kann nicht zugleich $1\\cdot n=100$ und $2\\cdot n=100$ erfüllen.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die All-Existenz-Form verlangt zu jedem $m$ ein passendes $n$. Schon $m=3$ scheitert. Die vertauschte Quantorenreihenfolge ist ebenfalls falsch."
+  },
+  {
+    "case_id": "MATH 1.80",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A theft investigation",
+    "context_en": "A theft occurred, and exactly one of four suspects - Ann, Ben, Cara, Dan - is guilty. It is known that:\n\n(1) If Ann is guilty, then Dan is innocent.\n\n(2) If Ben is innocent, then Cara is innocent.\n\n(3) Dan is guilty.\n\n(4) If Cara is guilty, then Ann is guilty.",
+    "statements_en": [
+      "Dan is guilty.",
+      "Ann is guilty.",
+      "Clue (2) is essential to determine that Cara is innocent - without it, Cara's innocence could not be established.",
+      "Clue (1) provides no additional information here, since its antecedent (Ann is guilty) is false.",
+      "Even without knowing that exactly one suspect is guilty, clue (3) alone already tells us Dan is guilty."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nClue (3) states Dan is guilty. With exactly one guilty party, Dan is the culprit.\n\nSo the statement is True.",
+      "**B.** → False\n\nIf Ann were guilty, (1) would force Dan innocent, contradicting (3). So Ann is not guilty.\n\nSo the statement is False.",
+      "**C.** → False\n\nFrom (3) and exactly one guilty, Cara is already innocent without (2). So (2) is not essential for Cara’s innocence.\n\nSo the statement is False.",
+      "**D.** → True\n\nAnn is innocent, so (1)’s antecedent is false and (1) is vacuously true — it adds no new constraint once Ann is cleared.\n\nSo the statement is True.",
+      "**E.** → True\n\nClue (3) alone asserts Dan is guilty, even without the uniqueness premise.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Exactly one of Ann, Ben, Cara, and Dan is guilty. Write $A,B,C,D$ for the four guilt atoms. The clues are\n\n$$A \\Rightarrow \\neg D, \\qquad \\neg B \\Rightarrow \\neg C, \\qquad D, \\qquad C \\Rightarrow A$$\n\nClue (3) is a plain assertion that Dan is guilty. Combined with uniqueness, Ann, Ben, and Cara are innocent.",
+    "title_de_existing": "Eine Diebstahlsermittlung",
+    "context_de_existing": "Es gab einen Diebstahl, und genau eine von vier Verdächtigen — Ann, Ben, Cara, Dan — ist schuldig. Bekannt ist:\n\n(1) Wenn Ann schuldig ist, dann ist Ben unschuldig.\n\n(2) Wenn Ben schuldig ist, dann ist Cara schuldig.\n\n(3) Cara ist unschuldig.\n\n(4) Entweder Ann oder Dan ist schuldig (nicht beide, nicht keine).",
+    "statements_de_existing": [
+      "Ben ist unschuldig.",
+      "Ann ist schuldig.",
+      "Dan ist unschuldig.",
+      "Aussage (1) ist wahr, unabhängig davon, ob Ann schuldig ist.",
+      "Genau eine der vier Personen ist schuldig, und diese Person ist Dan."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus (3) Cara unschuldig und (2) $B\\Rightarrow C$ folgt per Kontraposition $\\neg B$. Ben ist unschuldig.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nAus (4) XOR zwischen Ann und Dan sowie $\\neg B$ und $\\neg C$ bleibt Dan als Schuldige — nicht Ann.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDan ist die Schuldige; „Dan ist unschuldig“ ist falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAnn ist unschuldig, also ist die Prämisse von (1) falsch und die Implikation (1) wahr.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nGenau eine ist schuldig, und die Kette erzwingt Dan.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus Caras Unschuld und $B\\Rightarrow C$ folgt Bens Unschuld. Mit XOR zwischen Ann und Dan und den übrigen Unschuldsfolgerungen bleibt Dan als einzige Schuldige."
+  },
+  {
+    "case_id": "MATH 1.81",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "An island of truth-tellers and liars",
+    "context_en": "On an island, every inhabitant either always tells the truth or always lies. Two inhabitants make statements: X says, “Y always lies.” Y says, “X and I are both liars.”",
+    "statements_en": [
+      "X is a truth-teller.",
+      "Y is a truth-teller.",
+      "Y's statement (“X and I are both liars”) is false.",
+      "There are two equally valid solutions for the types of X and Y.",
+      "If X were a liar, this would lead to a logical contradiction."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nIf Y were a truth-teller, then “X and I are both liars” would be true, forcing Y to be a liar — contradiction. So Y is a liar. Then X’s “Y always lies” is true, so X is a truth-teller.\n\nSo the statement is True.",
+      "**B.** → False\n\nFrom letter A, Y is a liar.\n\nSo the statement is False.",
+      "**C.** → True\n\nY’s sentence claims both are liars, but X is a truth-teller, so the sentence is false.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe unique consistent assignment is X truth-teller, Y liar.\n\nSo the statement is False.",
+      "**E.** → True\n\nIf X were a liar, then “Y always lies” is false, so Y is a truth-teller. Then Y’s sentence is true, forcing both liars — contradiction.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nEvery inhabitant is a truth-teller or a liar. Write $x$ for X being a truth-teller and $y$ for Y being a truth-teller. X claims $\\neg y$. Y claims $\\neg x \\land \\neg y$. A truth-teller's sentence is true. A liar's sentence is false.\n\n**Part 2: Solve.**\n\nIf $x$ is false, then X's sentence is false, so $y$ is true. Then Y's sentence is true, which forces $\\neg y$. Y cannot be both a truth-teller and a liar, so X cannot be a liar.\n\nThe surviving assignment is $x$ true and $y$ false: X is a truth-teller and Y is a liar.",
+    "title_de_existing": "Eine Insel der Wahrheitssager und Lügner",
+    "context_de_existing": "Verehrte sich dichsprachen- \"Kresetzungen Bund--------.\" Y sagt: \"X und ich sind beide Lügner.\"",
+    "statements_de_existing": [
+      "X ist ein Wahrsager.",
+      "Der ist ann .",
+      ";; Weil davon; ;; ;;",
+      "Es gibt zwei gleichermaßen gültige Lösungen für die Arten von Xhas und Y.",
+      "Es ist nicht, ob man mit-B. Kohäsion."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAn einem an luftverbind, ener/ bestimmungsgemäßen Position verbindert. Es ist dies so, die Kohäsion befache be:\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nAus dem Buchstaben A ist Y ein Lügner.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDer Menge von Y behauptet, beide seien Lügner, aber X ist ein aber eines, Tischeristen.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie einzigartige konsistente Zuordnung ist X Wahrheitserzähler, Y Lügner.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWenn X ein Lügner wäre, dann ist \"Y immer lügen\" falsch, also ist Y ein Wahrheitserzähler. Dann ist der Menge von Y. wahr, der beides lügt, der Widerspruch.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Aufbau.**\n\nJeder Bewohner ist Wahrheitssager oder Lügner. Schreibe $x$ dafür, dass X Wahrheitssager ist, und $y$ dafür, dass Y Wahrheitssager ist. X behauptet $\\neg y$. Y behauptet $\\neg x \\land \\neg y$. Der Satz eines Wahrheitssagers ist wahr. Der Satz eines Lügners ist falsch.\n\n**Teil 2: Lösung.**\n\nWenn $x$ falsch ist, dann ist Xs Satz falsch, also ist $y$ wahr. Dann ist Ys Satz wahr, was $\\neg y$ erzwingt. Y kann nicht zugleich Wahrheitssager und Lügner sein, also kann X kein Lügner sein.\n\nDie überlebende Belegung ist $x$ wahr und $y$ falsch: X ist Wahrheitssager und Y ist Lügner."
+  },
+  {
+    "case_id": "MATH 1.82",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Quantifier order: exam scores",
+    "context_en": "Compare two statements about a class of students and several exams: Statement 1: “There exists a student who scored above 90 on every exam.” Statement 2: “For every exam, there exists a student who scored above 90.”",
+    "statements_en": [
+      "Statement 1 logically implies Statement 2.",
+      "Statement 2 logically implies Statement 1.",
+      "The two statements are logically equivalent.",
+      "If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.",
+      "If there is only one exam, the two statements become logically equivalent."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStatement 1 supplies an existential witness $s_0$ before any exam is chosen:\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,G(s_0,e)$$\n\nFor each exam $e$, choose that same $s_0$ as the witness to $\\exists s\\,G(s,e)$. Therefore\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,\\exists s\\,G(s,e)$$\n\nStatement 1 implies Statement 2.\n\nSo the statement is True.",
+      "**B.** → False\n\nDisprove the implication with a quantifier countermodel. Use students $X,Y$ and exams $e_1,e_2$, with\n\n$$\nG(X,e_1) = \\mathrm{T},\\quad G(X,e_2) = \\mathrm{F},\n$$\n\n$$\nG(Y,e_1) = \\mathrm{F},\\quad G(Y,e_2) = \\mathrm{T}\n$$\n\nEvery exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model.\n\nSo the statement is False.",
+      "**C.** → False\n\nLogical equivalence requires both implications. The forward direction holds by reusing Statement 1’s witness:\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,\\exists s\\,G(s,e)$$\n\nFor the reverse direction, let $X$ clear only $e_1$ and $Y$ clear only $e_2$. Then\n\n$$\\forall e\\,\\exists s\\,G(s,e) = \\mathrm{T},$$\n\n$$\n\\exists s\\,\\forall e\\,G(s,e) = \\mathrm{F}\n$$\n\nOne direction fails in this concrete model, so the formulas are not equivalent.\n\nSo the statement is False.",
+      "**D.** → True\n\nThis is an existence claim, so one class is enough. Take two exams and two students: $X$ scores above $90$ only on $e_1$, while $Y$ scores above $90$ only on $e_2$. Then\n\n$$\\underbrace{G(X,e_1)}_{X\\text{ witnesses }e_1},$$\n\n$$\\underbrace{G(Y,e_2)}_{Y\\text{ witnesses }e_2}$$\n\nThus every exam has some high scorer. But $X$ fails $e_2$ and $Y$ fails $e_1$, so no single student is a witness for every exam. This class realizes Statement 2 without Statement 1.\n\nSo the statement is True.",
+      "**E.** → True\n\nLet the exam domain be the singleton $\\{e_1\\}$. A universal over that one value has only one case, so Statement 1 becomes\n\n$$\\exists s\\,\\forall e\\in\\{e_1\\}\\,G(s,e) \\equiv \\exists s\\,G(s,e_1)$$\n\nStatement 2 becomes\n\n$$\\forall e\\in\\{e_1\\}\\,\\exists s\\,G(s,e) \\equiv \\exists s\\,G(s,e_1)$$\n\nBoth quantifier orders reduce to the same formula.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $G(s,e)$ for student $s$ scoring above $90$ on exam $e$.\n\nStatement 1 picks the student first:\n\n$$\\exists s\\,\\forall e\\, G(s,e)$$\n\nStatement 2 picks the exam first:\n\n$$\\forall e\\,\\exists s\\, G(s,e)$$\n\nIn Statement 1 one student must clear every exam. In Statement 2 a different student may cover each exam.",
+    "title_de_existing": "Quantorenreihenfolge: Prüfungspunkte",
+    "context_de_existing": "Vergleiche zwei Aussagen über eine Klasse und mehrere Prüfungen: Aussage 1: „Es gibt eine Studierende, die in jeder Prüfung über 90 Punkte erreicht hat.“ Aussage 2: „Für jede Prüfung gibt es eine Studierende, die darin über 90 Punkte erreicht hat.“",
+    "statements_de_existing": [
+      "Aussage 1 impliziert logisch Aussage 2.",
+      "Aussage 2 impliziert logisch Aussage 1.",
+      "Die beiden Aussagen sind logisch äquivalent.",
+      "Wenn die Bestnote in jeder Prüfung von einer anderen Person kommt (keine einzelne Studierende in allen Prüfungen Spitze ist), dann ist Aussage 1 falsch, während Aussage 2 wahr sein kann.",
+      "Gibt es nur eine Prüfung, werden die beiden Aussagen logisch äquivalent."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage 1 liefert eine Zeugin $s_0$, die in jeder Prüfung über 90 liegt. Dieselbe Person dient in Aussage 2 für jede Prüfung als Zeugin.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nAussage 2 erlaubt je Prüfung eine andere Zeugin. Das erzwingt keine einzige Person für alle Prüfungen.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nWegen B sind sie nicht äquivalent.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nWechselnde Spitzen brechen Aussage 1, können Aussage 2 aber erfüllen.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBei nur einer Prüfung fallen „eine für alle“ und „für jede eine“ zusammen.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Quantorenreihenfolge: $\\exists\\forall$ impliziert $\\forall\\exists$, aber nicht umgekehrt. Bei einer einzigen Prüfung fallen beide zusammen."
+  },
+  {
+    "case_id": "MATH 1.83",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "A hiring committee's voting rule",
+    "context_en": "A hiring committee of four reviewers (R1, R2, R3, R4) approves a candidate if at least three of the four vote yes, OR if exactly two vote yes and R1 is one of the two yes-votes (R1 has tie-breaking authority in that specific case only). For one candidate, R1 and R2 voted yes, while R3 and R4 voted no.",
+    "statements_en": [
+      "The candidate is approved.",
+      "If instead R2 and R3 had voted yes (with R1 and R4 voting no), the candidate would be approved under the same rule.",
+      "If exactly three reviewers vote yes, the candidate is always approved, regardless of which three they are.",
+      "R1's yes-vote is necessary for approval in every possible voting scenario.",
+      "There exists a scenario with exactly 2 yes-votes where the candidate is not approved."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nYes votes: R1, R2 — exactly two, and R1 is among them. The tie-break clause approves.\n\nSo the statement is True.",
+      "**B.** → False\n\nYes votes R2, R3 — exactly two, but R1 is not among them. Neither clause fires. Not approved.\n\nSo the statement is False.",
+      "**C.** → True\n\nAny three yes votes meet the “at least three” clause.\n\nSo the statement is True.",
+      "**D.** → False\n\nThree yes votes among R2,R3,R4 approve without R1. So R1’s yes is not always necessary.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe R2+R3 scenario has exactly two yes votes and no approval.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A candidate is approved if at least one of two gates opens. Let $Y$ be the number of yes-votes.\n\nGate 1: $Y \\ge 3$, names ignored.\n\nGate 2: $Y = 2$ and R1 is one of the two yes-votes.\n\nThe given votes are R1 yes, R2 yes, R3 no, R4 no.",
+    "title_de_existing": "Die Abstimmungsregel eines Einstellungskomitees",
+    "context_de_existing": "Ein Einstellungskomitee von vier Rezensenten (R1, R 2, R 3, R 4) genehmigt einen Kandidaten, wenn mindestens drei der vier Stimmen ja sind, ODER wenn genau zwei Stimmen ja sind und R 1 eine der beiden beiden Jastimmen ist, (R 1 hat nur in diesem speziellen Fall eine unentschiedene Befugnis). Der erbenste, wie erbittert und als erbitteter",
+    "statements_de_existing": [
+      "Der Kandidat ist zugelassen.",
+      "Wenn stattdessen R2 und R3 mit Ja gestimmt hätten (mit R1 und R4 mit Nein), würde der Kandidat nach derselben Regel genehmigt.",
+      "Wenn genau direkt drei gewählt werden, wird der Kandidat immer gewählt, und zwar auf der anderen Seite.",
+      "Die Ja-Abstimmung von R1 ist für die Genehmigung in jedem möglichen Abstimmungsszenarien notwendig.",
+      "Es gibt ein Szenario mit genau 2 Ja-Swahlen, in dem der Kandidat nicht- Kommentar wird erreicht."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nJa Exemplar und zweier, und zwar aus dem Zweiten und Zweiten, die mit dem Zweiten zufolge.leicht aufrere kommtms zum:o:treten können\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nJa, R2 – R3 – genau zwei, aber R1 ist nicht unter strukturiert. Bebetauscht. Be dorte Bette.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNichter:\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDrei Ja-Stimmen unter R2,R3,R4 stimmen ohne R1 zu. R1 Ja ist nicht immer notwendig.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDer inkniren inkund inn\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Eine Kandidatin wird zugelassen, wenn mindestens eines von zwei Toren öffnet. Es sei $Y$ die Anzahl der Ja-Stimmen.\n\nTor 1: $Y \\ge 3$, Namen egal.\n\nTor 2: $Y = 2$ und R1 ist eine der beiden Ja-Stimmen.\n\nDie gegebenen Stimmen sind R1 ja, R2 ja, R3 nein, R4 nein."
+  },
+  {
+    "case_id": "MATH 1.84",
+    "short_letters": [
+      1,
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "A warranty voiding clause",
+    "context_en": "A product warranty: “The warranty is void if the product is used commercially, except if the manufacturer has explicitly approved commercial use in writing, in which case the warranty remains valid provided the product is serviced annually.” Company Z uses the product commercially, has written approval from the manufacturer, but has never had the product serviced.",
+    "statements_en": [
+      "Company Z's warranty is void.",
+      "Having written approval from the manufacturer alone is sufficient to keep the warranty valid despite commercial use.",
+      "The rule's exception requires both approval AND annual servicing to keep the warranty valid under commercial use - satisfying only one of the two is not enough.",
+      "If a company uses the product commercially without any manufacturer approval at all, the warranty could still remain valid provided they service it annually.",
+      "If Company Z had never used the product commercially at all, the annual-servicing requirement mentioned in the clause would still apply to it."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCommercial use with approval but no annual service fails the exception’s servicing requirement. Warranty is void.\n\nSo the statement is True.",
+      "**B.** → False\n\nApproval alone is not enough — annual servicing is also required.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe exception needs both approval and annual servicing.\n\nSo the statement is True.",
+      "**D.** → False\n\nWithout approval, commercial use voids the warranty; annual service does not replace approval.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe servicing clause appears only inside the commercial-use exception. Non-commercial use does not trigger it.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $C$ for commercial use, $W$ for written manufacturer approval, and $S$ for annual servicing.\n\nIf $C$ is false the voiding clause never fires. If $C$ is true the warranty is void unless $W$ and $S$ both hold.\n\nCompany Z has $C$ true, $W$ true, and $S$ false.",
+    "title_de_existing": "Eine Garantie-Verfallsklausel",
+    "context_de_existing": "Produktgarantie: „Die Garantie erlischt, wenn das Produkt gewerblich genutzt wird — es sei denn, der Hersteller hat die gewerbliche Nutzung schriftlich genehmigt; in diesem Fall bleibt die Garantie gültig, sofern das Produkt jährlich gewartet wird.“ Firma Z nutzt das Produkt gewerblich, hat schriftliche Genehmigung, lässt aber nicht jährlich warten.",
+    "statements_de_existing": [
+      "Die Garantie von Firma Z ist erloschen.",
+      "Allein die schriftliche Genehmigung des Herstellers reicht aus, die Garantie gültig zu halten.",
+      "Die Ausnahme der Regel verlangt Genehmigung UND jährliche Wartung, damit die Garantie bei gewerblicher Nutzung gültig bleibt.",
+      "Nutzt eine Firma das Produkt gewerblich ganz ohne Herstellergenehmigung, kann die Garantie durch jährliche Wartung trotzdem gültig bleiben.",
+      "Hätte Firma Z das Produkt nie gewerblich genutzt, wäre die jährliche Wartung trotzdem für die Gültigkeit der Garantie erforderlich."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nZ nutzt gewerblich, hat Genehmigung, aber keine jährliche Wartung. Die Ausnahme greift nicht vollständig; die Garantie erlischt.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Ausnahme verlangt zusätzlich jährliche Wartung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nGenau so ist die Ausnahme formuliert: Genehmigung und Wartung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nOhne Genehmigung greift die Ausnahme nicht; Wartung allein rettet die Garantie nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nOhne gewerbliche Nutzung greift die Erlöschensklausel nicht; die Wartungsbedingung der Ausnahme ist dann irrelevant.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Gewerbliche Nutzung lässt die Garantie erlöschen, außer bei schriftlicher Genehmigung und jährlicher Wartung. Fehlt die Wartung, erlischt sie trotz Genehmigung. Ohne gewerbliche Nutzung entfällt die Klausel."
+  },
+  {
+    "case_id": "MATH 1.85",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Five Independent Checks on Proof and Negation Technique",
+    "context_en": "Several independent mini-scenarios testing whether a proof or negation is correctly constructed.",
+    "statements_en": [
+      "Proving \"there is no smallest positive real number\" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.",
+      "A \"proof\" of \"√3 is irrational\" that begins \"Assume √3 is irrational.\" and proceeds from there is a valid proof by contradiction.",
+      "The negation of \"All flights are delayed and all trains are on time\" is \"No flight is delayed and no train is on time.\"",
+      "For \"Some employee always arrives late\" (some employee is late every day), the correct negation is \"All employees are never late.\"",
+      "One satisfying value proves an existential claim; a universal claim needs an argument for an arbitrary value, not a finite check."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAssuming a least positive $x$ and forming $x/2$ yields a smaller positive — a correct contradiction setup.\n\nSo the statement is True.",
+      "**B.** → False\n\nAssuming the claim (“√3 irrational”) begs the question; contradiction proofs assume the opposite.\n\nSo the statement is False.",
+      "**C.** → False\n\nNegation of $A\\wedge B$ is $\\neg A\\vee\\neg B$, not $\\neg A\\wedge\\neg B$.\n\nSo the statement is False.",
+      "**D.** → False\n\nNegation of “some employee is always late” is “every employee is on time on some day,” not a swapped quantifier mess.\n\nSo the statement is False.",
+      "**E.** → True\n\nOne witness proves $\\exists$; a universal needs a general argument.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A proof by contradiction opens by assuming the opposite of the target. Negating a sentence flips \"for all\" into \"there exists\" and \"and\" into \"or\".\n\nAn existential $\\exists x\\, P(x)$ is settled by one witness. A universal $\\forall x\\, P(x)$ needs an argument that runs for an arbitrary $x$, not a finite list of successes.",
+    "title_de_existing": "Fünf unabhängige Prüfungen zu Beweis- und Negationstechnik",
+    "context_de_existing": "Mehrere unabhängige Miniszenarien prüfen, ob ein Beweis oder eine Negation korrekt aufgebaut ist.",
+    "statements_de_existing": [
+      "Der Beweis von „es gibt keine kleinste positive reelle Zahl“ durch Annahme einer solchen Zahl $x$ und Bildung von $x/2$ als noch kleinerer positiven Zahl ist korrekt aufgebaut.",
+      "Ein „Beweis“ von „$\\sqrt{3}$ ist irrational“, der mit „Angenommen, $\\sqrt{3}$ ist irrational“ beginnt und von dort fortfährt, ist korrekt aufgebaut.",
+      "Die Negation von „Alle Flüge sind verspätet und alle Züge sind pünktlich“ lautet „Kein Flug ist verspätet oder kein Zug ist pünktlich“ — das ist die korrekte Negation.",
+      "Für „Manche Mitarbeitende kommen immer zu spät“ (eine Mitarbeitende ist an jedem Tag zu spät) lautet die korrekte Negation „Keine Mitarbeitende kommt jemals zu spät“.",
+      "Ein erfüllender Wert beweist eine Existenzaussage; eine Allaussage braucht ein Argument für jedes Element."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nWiderspruch: Annahme eines Minimums $x>0$, dann $0<x/2<x$ — Widerspruch. Korrekt.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nMan muss das Gegenteil annehmen ($\\sqrt{3}$ sei rational), nicht die Behauptung selbst.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nNegation von $A\\land B$ ist $\\neg A\\lor\\neg B$: „mindestens ein Flug nicht verspätet oder mindestens ein Zug nicht pünktlich“ — nicht die behauptete starke Form mit „kein“.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nNegation von „es gibt jemanden, der jeden Tag zu spät kommt“ ist „jede Person hat mindestens einen Tag ohne Verspätung“ — nicht „niemand kommt je zu spät“.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nExistenz braucht einen Zeugen; Allquantor braucht allgemeine Abdeckung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Widerspruchsbeweise starten mit der Negation der Behauptung. De Morgan und Quantornegation müssen die Struktur erhalten: $\\neg(A\\land B)=\\neg A\\lor\\neg B$, und $\\neg\\exists\\forall$ wird zu $\\forall\\exists\\neg$."
+  },
+  {
+    "case_id": "MATH 1.86",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Validity versus soundness",
+    "context_en": "Consider the argument: Premise 1: All economists study human behavior. Premise 2: Some economists specialize in game theory. Conclusion: Therefore, some people who specialize in game theory study human behavior.",
+    "statements_en": [
+      "The argument is logically valid (the conclusion necessarily follows from the premises).",
+      "The argument would still be valid if Premise 2 were changed to “No economists specialize in game theory.” 39",
+      "Validity means the conclusion is guaranteed true whenever the premises are true - it does not require the premises to actually be true in reality.",
+      "If Premise 1 were false in reality, the argument could still be considered valid, even though it would then be unsound.",
+      "This argument is an example of the fallacy of “affirming the consequent.”"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom “all economists study behavior” and “some economists do game theory,” those game theorists study behavior. Valid.\n\nSo the statement is True.",
+      "**B.** → False\n\nChanging Premise 2 to “no economists do game theory” removes the existential witness; the conclusion no longer follows.\n\nSo the statement is False.",
+      "**C.** → True\n\nValidity is about form, not whether premises are true in the real world.\n\nSo the statement is True.",
+      "**D.** → True\n\nValidity can hold with false premises; soundness would fail.\n\nSo the statement is True.",
+      "**E.** → False\n\nThis is a valid categorical syllogism, not affirming the consequent.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $E(x)$ for \"$x$ is an economist\", $H(x)$ for \"$x$ studies human behavior\", and $G(x)$ for \"$x$ specializes in game theory\". The argument is\n\nP1: $\\forall x\\,(E(x) \\Rightarrow H(x))$.\n\nP2: $\\exists x\\,(E(x) \\land G(x))$.\n\nConclusion: $\\exists x\\,(G(x) \\land H(x))$.\n\nValidity asks whether the conclusion must be true whenever the premises are true. Soundness adds that the premises are in fact true. Affirming the consequent is the invalid pattern $P \\Rightarrow Q$, $Q$, therefore $P$.",
+    "title_de_existing": "Gültigkeit versus Schlüssigkeit",
+    "context_de_existing": "Betrachte das Argument: Prämisse 1: Alle Ökonominnen studieren menschliches Verhalten. Prämisse 2: Manche Ökonominnen spezialisieren sich auf Spieltheorie. Schluss: Daher studieren manche Menschen, die sich auf Spieltheorie spezialisieren, menschliches Verhalten.",
+    "statements_de_existing": [
+      "Das Argument ist logisch gültig (die Konklusion folgt notwendig aus den Prämissen).",
+      "Das Argument bliebe gültig, wenn Prämisse 2 zu „Keine Ökonomin spezialisiert sich auf Spieltheorie“ geändert würde.",
+      "Gültigkeit bedeutet, dass die Konklusion garantiert wahr ist, sobald die Prämissen wahr sind — sie verlangt nicht, dass die Prämissen in der Realität wahr sind.",
+      "Wäre Prämisse 1 in der Realität falsch, könnte das Argument trotzdem als gültig gelten, auch wenn es dann nicht schlüssig (sound) wäre.",
+      "Dieses Argument ist ein Beispiel für den Fehlschluss der Bejahung der Konklusion."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus „alle Ökonominnen studieren Verhalten“ und „manche Ökonominnen machen Spieltheorie“ folgt, dass manche Spieltheorie-Spezialistinnen Verhalten studieren.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nMit „keine Ökonomin in Spieltheorie“ fehlt die Brücke zur Konklusion; die Form wäre ungültig.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nGültigkeit ist eine Formeigenschaft, unabhängig von der faktischen Wahrheit der Prämissen.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nGültig aber nicht schlüssig, wenn eine Prämisse falsch ist.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nHier liegt ein kategorischer Syllogismus vor, keine Bejahung der Konklusion einer Implikation.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Gültigkeit betrifft die Form: wahre Prämissen erzwingen die Konklusion. Schlüssigkeit verlangt zusätzlich wahre Prämissen. Das Argument ist gültig; eine geänderte zweite Prämisse zerstört die Form."
+  }
+]

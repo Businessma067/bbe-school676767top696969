@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.26",
+    "title": "Business Innovation and Overconsumption",
+    "context": "Consider a community repair café where volunteers fix small appliances so residents reuse products instead of sending them to landfill. Evaluate the following economic assertions:",
+    "statements": [
+      "For furniture workshops in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For appliance manufacturers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cosmetics brands in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pet-supply stores when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For kitchen-equipment firms in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for furniture workshops in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for appliance manufacturers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cosmetics brands in household durable-goods sectors.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for pet-supply stores when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for kitchen-equipment firms in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.27",
+    "title": "Quality Over Quantity in Apparel",
+    "context": "Review how reuse of durable goods reduces the resource intensity of satisfying similar needs over time. Evaluate the following economic assertions:",
+    "statements": [
+      "For kitchen-equipment firms in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For cosmetics brands when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For footwear brands in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For cosmetics brands where rental platforms operate alongside retail, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For sporting-goods stores in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for kitchen-equipment firms in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cosmetics brands when seasonal campaigns intensify.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for footwear brands in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cosmetics brands where rental platforms operate alongside retail.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for sporting-goods stores in consumer electronics markets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.28",
+    "title": "Temporary Access Rental Models",
+    "context": "Analyze how quality-focused clothing choices support longer use and informal sharing rather than rapid disposal. Evaluate the following economic assertions:",
+    "statements": [
+      "For sporting-goods stores in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For book publishers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For toy distributors when seasonal campaigns intensify, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For eyewear retailers in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for sporting-goods stores in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for book publishers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors when seasonal campaigns intensify.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for footwear brands when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for eyewear retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.29",
+    "title": "Malfunction Repair Not Immediate Replacement",
+    "context": "Review the contrast between cheap short-lived products and higher-quality items suited to repair, reuse, or rental. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors during online promotional events, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For eyewear retailers in apparel retailing, successive introductions and ads can enlarge demand beyond needs already on record.",
+      "For music-instrument dealers in household durable-goods sectors, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors when credit makes impulse buying easier, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers when seasonal campaigns intensify, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors during online promotional events.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for eyewear retailers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for music-instrument dealers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors when credit makes impulse buying easier.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for camping-gear suppliers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.30",
+    "title": "Promotional Influence on Spending Plans",
+    "context": "Consider a technology firm balancing product launches with a service programme that repairs and reuses equipment to support longer product life. Evaluate the following economic assertions:",
+    "statements": [
+      "For camping-gear suppliers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For baby-product retailers in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors in communities promoting reuse, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For art-supply stores in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For wine merchants in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for camping-gear suppliers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for baby-product retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors in communities promoting reuse.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for art-supply stores in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for wine merchants in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.31",
+    "title": "Consumer and Producer Sustainability Duties",
+    "context": "Review why consuming too much poses economic and environmental risks that responsible actors should recognise. Evaluate the following economic assertions:",
+    "statements": [
+      "For wine merchants when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For toy distributors where rental platforms operate alongside retail, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For toy distributors when firms launch frequent product updates, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For florist networks in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For cleaning-product makers in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for wine merchants when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors where rental platforms operate alongside retail.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors when firms launch frequent product updates.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for florist networks in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for cleaning-product makers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.32",
+    "title": "Short-Lived Purchases and Regret",
+    "context": "Analyze how garment rental markets respond to consumers who want quality without permanent ownership of occasional-wear items. Evaluate the following economic assertions:",
+    "statements": [
+      "For cleaning-product makers when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For mobile-accessory sellers in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For home-decor boutiques in apparel retailing, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For electronics retailers in consumer electronics markets, advertising is sometimes carried out in ways that are regarded as unethical when it manipulates consumers rather than informing them fairly.",
+      "For fashion labels in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for cleaning-product makers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for mobile-accessory sellers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for home-decor boutiques in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for electronics retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for fashion labels in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.33",
+    "title": "Circular Use of Durable Goods",
+    "context": "Review how repair services for electronic equipment embody a more sustainable approach than automatic replacement. Evaluate the following economic assertions:",
+    "statements": [
+      "For fashion labels when seasonal campaigns intensify, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For furniture workshops in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For appliance manufacturers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For toy distributors among households tracking monthly budgets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For cosmetics brands during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for fashion labels when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for furniture workshops in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for appliance manufacturers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors among households tracking monthly budgets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.34",
+    "title": "Formal Wear Rental Economics",
+    "context": "Consider a wardrobe-rental service that lends high-quality outfits for formal events instead of customers buying cheap garments worn only once. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors in second-hand and exchange networks, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For garden-centre chains in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cosmetics brands among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For cosmetics brands in formal-wear and occasion-dress markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For cosmetics brands where rental platforms operate alongside retail, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for toy distributors in second-hand and exchange networks.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for garden-centre chains in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands where rental platforms operate alongside retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.35",
+    "title": "Manipulative Advertising Traps",
+    "context": "Review the shared duty of businesses and households to adopt more sustainable production and consumption habits. Evaluate the following economic assertions:",
+    "statements": [
+      "For garden-centre chains in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pharmacy groups in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For hotel operators in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For hotel operators when credit makes impulse buying easier, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For cosmetics brands when firms launch frequent product updates, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for garden-centre chains in apparel retailing.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for pharmacy groups in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for hotel operators in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for hotel operators when credit makes impulse buying easier.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands when firms launch frequent product updates.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.36",
+    "title": "Budget Strain From Extra Wants",
+    "context": "Analyze how passing on usable clothes to others extends product life and reduces demand for new cheap garments. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetics brands among households tracking monthly budgets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For hotel operators in communities promoting reuse, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For sporting-goods stores in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For car-hire firms in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For tool-rental businesses in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cosmetics brands among households tracking monthly budgets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for hotel operators in communities promoting reuse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for sporting-goods stores in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for car-hire firms in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for tool-rental businesses in apparel retailing.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.37",
+    "title": "Refurbishment and Environmental Goals",
+    "context": "Review how advertising ethics intersect with broader responsibility for sustainable market outcomes. Evaluate the following economic assertions:",
+    "statements": [
+      "For sporting-goods stores in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For tool-rental businesses in household durable-goods sectors, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For tool-rental businesses when credit makes impulse buying easier, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For organic grocers in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For book publishers in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for sporting-goods stores in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for tool-rental businesses in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for tool-rental businesses when credit makes impulse buying easier.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for organic grocers in consumer electronics markets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for book publishers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.38",
+    "title": "Rejecting Cheap Disposable Clothing",
+    "context": "Consider a family choosing between repairing a washing machine and purchasing a discounted replacement advertised as a limited-time offer. Evaluate the following economic assertions:",
+    "statements": [
+      "For book publishers in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For toy distributors in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For garden-centre chains in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For pharmacy groups during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For hotel operators among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for book publishers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for toy distributors in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for garden-centre chains in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for pharmacy groups during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for hotel operators among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.39",
+    "title": "Needs Versus Marketing-Created Wants",
+    "context": "Review how responsible businesses balance innovation with awareness of overconsumption and waste. Evaluate the following economic assertions:",
+    "statements": [
+      "For organic grocers in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For hotel operators in formal-wear and occasion-dress markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For bicycle shops in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For jewellery retailers in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For hotel operators where repair services remain available, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for organic grocers in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for hotel operators in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for bicycle shops in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for jewellery retailers in household durable-goods sectors.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for hotel operators where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.40",
+    "title": "Household Overconsumption Patterns",
+    "context": "Analyze how event-oriented clothing rental can lower the incentive to buy low-quality outfits for one-off use. Evaluate the following economic assertions:",
+    "statements": [
+      "For hotel operators when credit makes impulse buying easier, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For jewellery retailers when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For jewellery retailers where rental platforms operate alongside retail, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For stationery wholesalers in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For pet-supply stores in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for hotel operators when credit makes impulse buying easier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for jewellery retailers when seasonal campaigns intensify.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for jewellery retailers where rental platforms operate alongside retail.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for stationery wholesalers in consumer electronics markets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for pet-supply stores in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.41",
+    "title": "Responsible Promotion Practices",
+    "context": "Review the mechanism by which new product launches and campaigns can stimulate demand beyond existing requirements. Evaluate the following economic assertions:",
+    "statements": [
+      "For hotel operators in communities promoting reuse, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For car-hire firms in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For pet-supply stores in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For kitchen-equipment firms in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for hotel operators in communities promoting reuse.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for car-hire firms in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for pet-supply stores in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for kitchen-equipment firms in consumer electronics markets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.42",
+    "title": "Electronics Longevity Through Maintenance",
+    "context": "Consider a business promoting sustainable production while critics question whether its advertising still stimulates unnecessary consumption. Evaluate the following economic assertions:",
+    "statements": [
+      "For car-hire firms in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For tool-rental businesses in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For organic grocers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For bicycle shops when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For jewellery retailers during online promotional events, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for car-hire firms in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for tool-rental businesses in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for organic grocers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for bicycle shops when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for jewellery retailers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.43",
+    "title": "Passing On Usable Garments",
+    "context": "Review the sustainability rationale for keeping equipment in service through maintenance and component replacement. Evaluate the following economic assertions:",
+    "statements": [
+      "For jewellery retailers among younger budget-conscious shoppers, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For footwear brands in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For footwear brands when credit makes impulse buying easier, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For footwear brands where rental platforms operate alongside retail, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For jewellery retailers in formal-wear and occasion-dress markets, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for jewellery retailers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands when credit makes impulse buying easier.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands where rental platforms operate alongside retail.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for jewellery retailers in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.44",
+    "title": "Limited-Use Clothing Disposal",
+    "context": "Analyze how social exchange of quality clothing offers an alternative to discarding still-usable garments. Evaluate the following economic assertions:",
+    "statements": [
+      "For jewellery retailers where repair services remain available, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For stationery wholesalers in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For pet-supply stores in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For kitchen-equipment firms in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For footwear brands when firms launch frequent product updates, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for jewellery retailers where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for stationery wholesalers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for pet-supply stores in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for kitchen-equipment firms in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands when firms launch frequent product updates.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.45",
+    "title": "Marketing Cycles and Early Replacement",
+    "context": "Review why both supply-side marketing conduct and demand-side purchasing choices matter for sustainable consumption. Evaluate the following economic assertions:",
+    "statements": [
+      "For footwear brands among households tracking monthly budgets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For eyewear retailers in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For music-instrument dealers in apparel retailing, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers in household durable-goods sectors, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For kitchen-equipment firms when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for footwear brands among households tracking monthly budgets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for eyewear retailers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for music-instrument dealers in apparel retailing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for camping-gear suppliers in household durable-goods sectors.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for kitchen-equipment firms when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.46",
+    "title": "Affordable Spending Limits",
+    "context": "Consider an electronics retailer that promotes frequent upgrades while a nearby workshop repairs laptops so customers keep devices longer instead of replacing them immediately. Evaluate the following economic assertions:",
+    "statements": [
+      "For kitchen-equipment firms during online promotional events, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For footwear brands in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For eyewear retailers in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For music-instrument dealers in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For camping-gear suppliers when seasonal campaigns intensify, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for kitchen-equipment firms during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for footwear brands in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for eyewear retailers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for music-instrument dealers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for camping-gear suppliers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.47",
+    "title": "Access-Based Consumption Models",
+    "context": "Review how short product-use periods signal overconsumption when items were bought without lasting purpose. Evaluate the following economic assertions:",
+    "statements": [
+      "For camping-gear suppliers when seasonal campaigns intensify, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For baby-product retailers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For art-supply stores in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For camping-gear suppliers during online promotional events, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For wine merchants in household durable-goods sectors, advertising and new launches leave customer wishes unchanged and add no stimulated wants."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for camping-gear suppliers when seasonal campaigns intensify.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for baby-product retailers in consumer electronics markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for art-supply stores in apparel retailing.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for camping-gear suppliers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for wine merchants in household durable-goods sectors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.48",
+    "title": "Awareness of Consumption Risks",
+    "context": "Analyze how rental models can align firm revenue with temporary access rather than ownership of rarely used goods. Evaluate the following economic assertions:",
+    "statements": [
+      "For wine merchants when seasonal campaigns intensify, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For camping-gear suppliers among younger budget-conscious shoppers, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For wine merchants where rental platforms operate alongside retail, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For baby-product retailers in consumer electronics markets, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For art-supply stores in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for wine merchants when seasonal campaigns intensify.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for camping-gear suppliers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for wine merchants where rental platforms operate alongside retail.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for baby-product retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for art-supply stores in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.49",
+    "title": "Ethical Limits on Persuasive Advertising",
+    "context": "Review the consumer-protection dimension when advertising encourages spending beyond what households can afford. Evaluate the following economic assertions:",
+    "statements": [
+      "For art-supply stores in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For wine merchants when firms launch frequent product updates, advertising and new launches leave customer wishes unchanged and add no stimulated wants.",
+      "For wine merchants in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For florist networks when seasonal campaigns intensify, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For cleaning-product makers in apparel retailing, manipulative persuasion in advertising can fall outside ethical marketing conduct."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for art-supply stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for wine merchants when firms launch frequent product updates.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for wine merchants in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for florist networks when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cleaning-product makers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.50",
+    "title": "Repair Markets and Sustainability",
+    "context": "Consider a computer refurbishment business that extends machine life through repair and reuse rather than encouraging immediate replacement when faults appear. Evaluate the following economic assertions:",
+    "statements": [
+      "For wine merchants among households tracking monthly budgets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.",
+      "For cleaning-product makers in household durable-goods sectors, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly.",
+      "For florist networks in consumer electronics markets, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.",
+      "For mobile-accessory sellers in consumer electronics markets, manipulative persuasion in advertising can fall outside ethical marketing conduct.",
+      "For home-decor boutiques in apparel retailing, some promotional practices are judged unethical when they manipulate buyers instead of informing them fairly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for wine merchants among households tracking monthly budgets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for cleaning-product makers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for florist networks in consumer electronics markets.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for mobile-accessory sellers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for home-decor boutiques in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

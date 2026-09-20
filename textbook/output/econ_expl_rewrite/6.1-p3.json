@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.051",
+    "title": "Liquidity From the Balance Sheet 51",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=369\nCurrent liabilities=151\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 407 |\n| Machinery | 133 |\n| Office equipment | 47 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 160 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1018** |\n| **EQUITY** | |\n| Share capital | 209 |\n| Retained earnings | 383 |\n| Total equity | **592** |\n| **LIABILITIES** | |\n| Long-term bank loan | 202 |\n| Bonds payable | 73 |\n| Trade payables | 85 |\n| Bank overdraft | 66 |\n| Total liabilities | **426** |\n| Total equity and liabilities | **1018** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
+      "The current ratio exceeds 1.67.",
+      "Working capital of €218 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.67 times over.",
+      "The current ratio is below 0.62."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The income statement links to the balance sheet via retained earnings.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 369\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 151\n\nCurrent ratio = 369 / 151 ≈ 2.44\n\nThe claim says the ratio exceeds 1.67. We have about 2.44, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n369 − 151 = 218\n\nThe claim cites 218. We have 218, so the figures line up.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.38.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 369\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 151\n\nCurrent ratio = 369 / 151 ≈ 2.44\n\nThe claim says the ratio below 0.62. We have about 2.44, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.052",
+    "title": "Gearing From Comparative Figures 52",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=364 | Total assets=1046\nYear 2 | Equity=419 | Total assets=1160\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 419 | 463 |\n| Machinery | 228 | 264 |\n| Office equipment | 38 | 41 |\n| Patents, trademarks and licences | 53 | 53 |\n| Inventory | 102 | 105 |\n| Trade receivables | 148 | 169 |\n| Cash and cash equivalents | 58 | 65 |\n| Total assets | **1046** | **1160** |\n| **EQUITY** | | |\n| Share capital | 160 | 160 |\n| Retained earnings | 204 | 259 |\n| Total equity | **364** | **419** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 446 | 483 |\n| Bonds payable | 52 | 59 |\n| Trade payables | 137 | 148 |\n| Bank overdraft | 47 | 51 |\n| Total liabilities | **682** | **741** |\n| Total equity and liabilities | **1046** | **1160** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
+      "Non-current liabilities amount to more than 63.6% of total equity in Year 1.",
+      "Total equity grew by more than 23.7% between Year 1 and Year 2.",
+      "Non-current assets make up more than 56.2% of total assets in Year 2.",
+      "Trade payables of €148 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The income statement links to the balance sheet via retained earnings.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 136.8% of equity in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total equity changed by about 15.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current assets are about 70.8% of total assets in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade payables are a current liability regardless of the amount.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.053",
+    "title": "Two-Year Balance Sheet Review 53",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=705 | Total assets=1050\nYear 2 | Equity=784 | Total assets=1176\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 315 | 344 |\n| Machinery | 218 | 245 |\n| Office equipment | 31 | 35 |\n| Patents, trademarks and licences | 70 | 70 |\n| Inventory | 240 | 283 |\n| Trade receivables | 130 | 151 |\n| Cash and cash equivalents | 46 | 48 |\n| Total assets | **1050** | **1176** |\n| **EQUITY** | | |\n| Share capital | 183 | 183 |\n| Retained earnings | 522 | 601 |\n| Total equity | **705** | **784** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 181 | 208 |\n| Bonds payable | 69 | 79 |\n| Trade payables | 65 | 73 |\n| Bank overdraft | 30 | 32 |\n| Total liabilities | **345** | **392** |\n| Total equity and liabilities | **1050** | **1176** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Non-current liabilities amount to less than 60.5% of total equity in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 23.1% in Year 1.",
+      "Trade payables of €73 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "These are textbook advantages of equity finance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 36.6% of equity in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term financing covers non-current assets by about 50.6% in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade payables are a current liability regardless of the amount.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity equals assets minus liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.054",
+    "title": "Liquidity From the Balance Sheet 54",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=354\nMachinery=239\nPatents, trademarks and licences=39\nInventory=209\nTrade receivables=100\nCash and cash equivalents=80\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 239 |\n| Office equipment | 71 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 209 |\n| Trade receivables | 100 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1092** |\n| **EQUITY** | |\n| Share capital | 166 |\n| Retained earnings | 406 |\n| Total equity | **572** |\n| **LIABILITIES** | |\n| Long-term bank loan | 314 |\n| Bonds payable | 72 |\n| Trade payables | 85 |\n| Bank overdraft | 49 |\n| Total liabilities | **520** |\n| Total equity and liabilities | **1092** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Current liabilities are debts that must be repaid after more than one year.",
+      "The current ratio exceeds 1.76.",
+      "Working capital of €255 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.09 times over.",
+      "The current ratio is below 0.61."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current liabilities are due within one year; longer debts are non-current.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets gather the short-term asset lines:\n\nInventory (209) + Trade receivables (100) + Cash and cash equivalents (80)\n= 389\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (85) + Bank overdraft (49)\n= 134\n\nCurrent ratio = 389 / 134 ≈ 2.90\n\nThe claim says the ratio exceeds 1.76. We have about 2.90, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n389 − 134 = 255\n\nThe claim cites 255. We have 255, so the figures line up.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.34.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (209) + Trade receivables (100) + Cash and cash equivalents (80)\n= 389\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (85) + Bank overdraft (49)\n= 134\n\nCurrent ratio = 389 / 134 ≈ 2.90\n\nThe claim says the ratio below 0.61. We have about 2.90, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.055",
+    "title": "Equity as a Buffer for Creditors",
+    "context": "Review why settlement timing, rather than the size of a debt, determines its current or non-current classification. Evaluate the following economic assertions:",
+    "statements": [
+      "When a printing press is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "A printing press bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A laptop computer used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A laptop computer held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "A printing press that a dealer displays for sale is not a fixed asset of that dealer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Resale intent places the printing press in inventory, a current-asset category.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Multi-period operational benefit qualifies the printing press as a tangible fixed asset.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term operational use makes the laptop computer a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent, not the dealer's status as a business, places the laptop computer in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.056",
+    "title": "Why Equity Does Not Require Repayment",
+    "context": "Analyze how partial repayment due within a year moves part of a long-term loan into current liabilities. Evaluate the following economic assertions:",
+    "statements": [
+      "A conveyor belt kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "The same laptop computer must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a laptop computer as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A conveyor belt held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.",
+      "A laptop computer acquired for resale still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Continued operational use beyond one year makes the conveyor belt a non-current tangible asset.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Classification of the laptop computer depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Intended use, not purchase price, drives the non-current classification of the laptop computer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Held for resale rather than use, the conveyor belt counts as inventory within current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Resale intent keeps the laptop computer in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.057",
+    "title": "Liquidity From the Balance Sheet 57",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=454\nCurrent liabilities=277\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 433 |\n| Machinery | 172 |\n| Office equipment | 77 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 222 |\n| Trade receivables | 143 |\n| Cash and cash equivalents | 89 |\n| Total assets | **1183** |\n| **EQUITY** | |\n| Share capital | 195 |\n| Retained earnings | 473 |\n| Total equity | **668** |\n| **LIABILITIES** | |\n| Long-term bank loan | 187 |\n| Bonds payable | 51 |\n| Trade payables | 205 |\n| Bank overdraft | 72 |\n| Total liabilities | **515** |\n| Total equity and liabilities | **1183** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "The current ratio exceeds 1.74.",
+      "The current ratio is below 1.03.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.78 times over.",
+      "The equity ratio is below 40.1%."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "That portion is liabilities; equity is the residual not financed by debt.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 454\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 277\n\nCurrent ratio = 454 / 277 ≈ 1.64\n\nThe claim says the ratio exceeds 1.74. We have about 1.64, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets = 454\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 277\n\nCurrent ratio = 454 / 277 ≈ 1.64\n\nThe claim says the ratio below 1.03. We have about 1.64, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.84.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n668 / 1183 ≈ 56.5%\n\nThe claim says the ratio below 40.1%. We have about 56.5%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.058",
+    "title": "Gearing From Comparative Figures 58",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=289 | Total assets=995\nYear 2 | Equity=383 | Total assets=1149\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 460 | 537 |\n| Machinery | 147 | 167 |\n| Office equipment | 39 | 43 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 157 | 187 |\n| Trade receivables | 85 | 91 |\n| Cash and cash equivalents | 83 | 100 |\n| Total assets | **995** | **1149** |\n| **EQUITY** | | |\n| Share capital | 111 | 111 |\n| Retained earnings | 178 | 272 |\n| Total equity | **289** | **383** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 388 | 427 |\n| Bonds payable | 47 | 52 |\n| Trade payables | 212 | 223 |\n| Bank overdraft | 59 | 64 |\n| Total liabilities | **706** | **766** |\n| Total equity and liabilities | **995** | **1149** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Total equity grew by more than 21.4% between Year 1 and Year 2.",
+      "Total assets grew by more than 9% between Year 1 and Year 2.",
+      "Inventory grew by more than 30.4% between Year 1 and Year 2.",
+      "Trade payables grew by more than 16.3% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Cash falls by the same amount as the software rises, so total assets stay unchanged.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Total equity changed by about 32.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 15.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory changed by about 19.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Trade payables changed by about 5.2% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.059",
+    "title": "Two-Year Balance Sheet Review 59",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=393 | Total assets=1064\nYear 2 | Equity=436 | Total assets=1168\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 337 | 372 |\n| Machinery | 170 | 197 |\n| Office equipment | 33 | 38 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 176 | 203 |\n| Trade receivables | 149 | 159 |\n| Cash and cash equivalents | 106 | 106 |\n| Total assets | **1064** | **1168** |\n| **EQUITY** | | |\n| Share capital | 127 | 127 |\n| Retained earnings | 266 | 309 |\n| Total equity | **393** | **436** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 339 | 366 |\n| Bonds payable | 55 | 60 |\n| Trade payables | 193 | 221 |\n| Bank overdraft | 84 | 85 |\n| Total liabilities | **671** | **732** |\n| Total equity and liabilities | **1064** | **1168** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "Total equity grew by more than 22.8% between Year 1 and Year 2.",
+      "Trade payables grew by more than 10.4% between Year 1 and Year 2.",
+      "Total assets grew by more than 10.2% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 78.1% of total equity in Year 1."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "That portion is liabilities; equity is the residual not financed by debt.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Total equity changed by about 10.9% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Trade payables changed by about 14.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 9.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current liabilities are about 100.3% of equity in Year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.060",
+    "title": "Asset Swaps and the Balance Sheet",
+    "context": "Review how a business's equity ratio changes when new equity is raised from its owners. Evaluate the following economic assertions:",
+    "statements": [
+      "A laptop computer used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "Once a dealer sells a laptop computer from its stock, the buyer must continue to record it as inventory.",
+      "The same conveyor belt may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "A refrigerated van used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A refrigerated van held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Continued operational use makes the laptop computer a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A buyer intending to use the laptop computer in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Intended use versus resale intent, not physical form, decides whether the conveyor belt is non-current or current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term operational use makes the refrigerated van a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent, not the dealer's status as a business, places the refrigerated van in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.061",
+    "title": "Asset Composition Chart 61",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=420\nMachinery=274\nPatents, trademarks and licences=26\nInventory=83\nTrade receivables=165\nCash and cash equivalents=85\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 420 |\n| Machinery | 274 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 83 |\n| Trade receivables | 165 |\n| Cash and cash equivalents | 85 |\n| Total assets | **1131** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 600 |\n| Total equity | **798** |\n| **LIABILITIES** | |\n| Long-term bank loan | 181 |\n| Bonds payable | 64 |\n| Trade payables | 61 |\n| Bank overdraft | 27 |\n| Total liabilities | **333** |\n| Total equity and liabilities | **1131** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "The current ratio exceeds 1.88.",
+      "Working capital of €245 thousand is positive on this balance sheet.",
+      "The current ratio is below 1.11.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.37 times over."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "This matches the textbook distinction between non-current and current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (83) + Trade receivables (165) + Cash and cash equivalents (85)\n= 333\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (61) + Bank overdraft (27)\n= 88\n\nCurrent ratio = 333 / 88 ≈ 3.78\n\nThe claim says the ratio exceeds 1.88. We have about 3.78, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n333 − 88 = 245\n\nThe claim cites 245. We have 245, so the figures line up.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (83) + Trade receivables (165) + Cash and cash equivalents (85)\n= 333\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (61) + Bank overdraft (27)\n= 88\n\nCurrent ratio = 333 / 88 ≈ 3.78\n\nThe claim says the ratio below 1.11. We have about 3.78, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 2.84.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.062",
+    "title": "Credit Purchases and Balance Sheet Balance",
+    "context": "Analyze how a business's equity ratio changes when additional debt is taken on without new equity. Evaluate the following economic assertions:",
+    "statements": [
+      "Classifying a conveyor belt as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "The same refrigerated van must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a refrigerated van as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A refrigerated van acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "A refrigerated van used daily in a business's own operations should be recorded as inventory because it wears out over time."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "An intention to use the conveyor belt over the long term is the deciding factor for non-current classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Classification of the refrigerated van depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Intended use, not purchase price, drives the non-current classification of the refrigerated van.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent keeps the refrigerated van in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Continued operational use makes the refrigerated van a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.063",
+    "title": "Liquidity From the Balance Sheet 63",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=478\nCurrent liabilities=217\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 463 |\n| Machinery | 229 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 28 |\n| Inventory | 210 |\n| Trade receivables | 152 |\n| Cash and cash equivalents | 116 |\n| Total assets | **1264** |\n| **EQUITY** | |\n| Share capital | 178 |\n| Retained earnings | 574 |\n| Total equity | **752** |\n| **LIABILITIES** | |\n| Long-term bank loan | 231 |\n| Bonds payable | 64 |\n| Trade payables | 142 |\n| Bank overdraft | 75 |\n| Total liabilities | **512** |\n| Total equity and liabilities | **1264** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "The current ratio is below 0.67.",
+      "The equity ratio is below 21.2%.",
+      "The current ratio exceeds 1.17.",
+      "Working capital of €261 thousand is positive on this balance sheet."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "That portion is liabilities; equity is the residual not financed by debt.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 478\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 217\n\nCurrent ratio = 478 / 217 ≈ 2.20\n\nThe claim says the ratio below 0.67. We have about 2.20, which does not match that comparison.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n752 / 1264 ≈ 59.5%\n\nThe claim says the ratio below 21.2%. We have about 59.5%, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets = 478\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 217\n\nCurrent ratio = 478 / 217 ≈ 2.20\n\nThe claim says the ratio exceeds 1.17. We have about 2.20, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n478 − 217 = 261\n\nThe claim cites 261. We have 261, so the figures line up.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.064",
+    "title": "Cash Purchases Versus Credit Purchases",
+    "context": "Review why the balance sheet reports figures at a single point in time rather than over a period. Evaluate the following economic assertions:",
+    "statements": [
+      "When a conveyor belt is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "Once a dealer sells a refrigerated van from its stock, the buyer must continue to record it as inventory.",
+      "A conveyor belt bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A conveyor belt that a dealer displays for sale is not a fixed asset of that dealer.",
+      "An operating licence lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Resale intent places the conveyor belt in inventory, a current-asset category.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A buyer intending to use the refrigerated van in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Multi-period operational benefit qualifies the conveyor belt as a tangible fixed asset.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term expected benefit, not physical form, justifies classifying an operating licence as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.065",
+    "title": "Reclassifying Assets by Intended Use",
+    "context": "Analyze how total equity and liabilities together must equal total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "A woodworking lathe used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "Although an operating licence cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "An operating licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "A woodworking lathe held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "The absence of physical form does not prevent an operating licence from being classified as a non-current asset."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Long-term operational use makes the woodworking lathe a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term value places an intangible operating licence among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible and tangible non-current assets, including an operating licence, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Resale intent, not the dealer's status as a business, places the woodworking lathe in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Physical form is not a requirement for classifying an operating licence as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.066",
+    "title": "Dealer Stock Versus Operating Assets",
+    "context": "Review why physical form is not a requirement for an item to qualify as a non-current asset. Evaluate the following economic assertions:",
+    "statements": [
+      "The same woodworking lathe must always be classified identically on every balance sheet regardless of how it is held.",
+      "An operating licence acquired to protect or support a business's operations over several years is grouped with intangible non-current assets.",
+      "Classifying a woodworking lathe as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A woodworking lathe acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "An operating licence is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Classification of the woodworking lathe depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Multi-year protective or operational value groups an operating licence with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intended use, not purchase price, drives the non-current classification of the woodworking lathe.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Resale intent keeps the woodworking lathe in inventory as a current asset regardless of how long it stays unsold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Because an operating licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.067",
+    "title": "Same Item Different Classification",
+    "context": "Analyze how the operating cycle helps define which assets are classified as current. Evaluate the following economic assertions:",
+    "statements": [
+      "A woodworking lathe used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "A brand name lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Once a dealer sells a woodworking lathe from its stock, the buyer must continue to record it as inventory.",
+      "Although a brand name cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "An espresso machine used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Continued operational use makes the woodworking lathe a non-current asset; inventory is reserved for goods held for resale.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term expected benefit, not physical form, justifies classifying a brand name as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A buyer intending to use the woodworking lathe in operations records it as a non-current asset, not inventory, after purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term value places an intangible brand name among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term operational use makes the espresso machine a non-current tangible asset, not inventory.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.068",
+    "title": "Two-Year Balance Sheet Review 68",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=570 | Total assets=1104\nYear 2 | Equity=610 | Total assets=1175\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 353 | 360 |\n| Machinery | 155 | 162 |\n| Office equipment | 53 | 56 |\n| Patents, trademarks and licences | 86 | 86 |\n| Inventory | 231 | 256 |\n| Trade receivables | 147 | 164 |\n| Cash and cash equivalents | 79 | 91 |\n| Total assets | **1104** | **1175** |\n| **EQUITY** | | |\n| Share capital | 260 | 260 |\n| Retained earnings | 310 | 350 |\n| Total equity | **570** | **610** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 322 | 339 |\n| Bonds payable | 76 | 85 |\n| Trade payables | 71 | 73 |\n| Bank overdraft | 65 | 68 |\n| Total liabilities | **534** | **565** |\n| Total equity and liabilities | **1104** | **1175** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Non-current liabilities amount to more than 47.7% of total equity in Year 1.",
+      "Total equity grew by more than 24% between Year 1 and Year 2.",
+      "Total assets grew by more than 9.5% between Year 1 and Year 2.",
+      "Inventory grew by more than 32.1% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Long-term assets should be financed with long-term financial resources.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current liabilities are about 69.8% of equity in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total equity changed by about 7.0% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Total assets changed by about 6.4% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory changed by about 10.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.069",
+    "title": "Comparative Balance Sheet Analysis 69",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=487 | Total assets=1091\nYear 2 | Equity=536 | Total assets=1177\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 284 | 326 |\n| Machinery | 270 | 288 |\n| Office equipment | 52 | 56 |\n| Patents, trademarks and licences | 75 | 75 |\n| Inventory | 235 | 253 |\n| Trade receivables | 138 | 141 |\n| Cash and cash equivalents | 37 | 38 |\n| Total assets | **1091** | **1177** |\n| **EQUITY** | | |\n| Share capital | 213 | 213 |\n| Retained earnings | 274 | 323 |\n| Total equity | **487** | **536** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 241 | 250 |\n| Bonds payable | 52 | 56 |\n| Trade payables | 229 | 245 |\n| Bank overdraft | 82 | 90 |\n| Total liabilities | **604** | **641** |\n| Total equity and liabilities | **1091** | **1177** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Total equity grew by more than 16% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 103.8% of total equity in Year 2.",
+      "Non-current assets make up more than 61.9% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.94 times over in Year 2."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Cash falls by the same amount as the software rises, so total assets stay unchanged.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Total equity changed by about 10.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current liabilities are about 57.1% of equity in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets are about 63.3% of total assets in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current ratio in year 2 is about 1.29.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.070",
+    "title": "Settlement Timing for Liabilities",
+    "context": "Review the benefit-period concept underlying non-current asset classification. Evaluate the following economic assertions:",
+    "statements": [
+      "An espresso machine held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "A brand name is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a brand name from being classified as a non-current asset.",
+      "The same espresso machine must always be classified identically on every balance sheet regardless of how it is held.",
+      "A brand name acquired to protect or support a business's operations over several years is grouped with intangible non-current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Resale intent, not the dealer's status as a business, places the espresso machine in inventory rather than among non-current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Intangible and tangible non-current assets, including a brand name, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Physical form is not a requirement for classifying a brand name as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Classification of the espresso machine depends on whether it is used or held for resale, so identical items can differ across balance sheets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Multi-year protective or operational value groups a brand name with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.071",
+    "title": "Balance Sheet Structure Review 71",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=467\nMachinery=166\nPatents, trademarks and licences=65\nInventory=183\nTrade receivables=162\nCash and cash equivalents=76\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 467 |\n| Machinery | 166 |\n| Office equipment | 72 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 183 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 76 |\n| Total assets | **1191** |\n| **EQUITY** | |\n| Share capital | 175 |\n| Retained earnings | 380 |\n| Total equity | **555** |\n| **LIABILITIES** | |\n| Long-term bank loan | 304 |\n| Bonds payable | 78 |\n| Trade payables | 178 |\n| Bank overdraft | 76 |\n| Total liabilities | **636** |\n| Total equity and liabilities | **1191** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Working capital of €167 thousand is positive on this balance sheet.",
+      "The current ratio exceeds 1.66.",
+      "The current ratio is below 1.25.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.11 times over."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Cash falls by the same amount as the software rises, so total assets stay unchanged.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n421 − 254 = 167\n\nThe claim cites 167. We have 167, so the figures line up.\n\nThe statement is true.",
+      "Current assets gather the short-term asset lines:\n\nInventory (183) + Trade receivables (162) + Cash and cash equivalents (76)\n= 421\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (178) + Bank overdraft (76)\n= 254\n\nCurrent ratio = 421 / 254 ≈ 1.66\n\nThe claim says the ratio exceeds 1.66. We have about 1.66, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets gather the short-term asset lines:\n\nInventory (183) + Trade receivables (162) + Cash and cash equivalents (76)\n= 421\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (178) + Bank overdraft (76)\n= 254\n\nCurrent ratio = 421 / 254 ≈ 1.66\n\nThe claim says the ratio below 1.25. We have about 1.66, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.94.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.072",
+    "title": "Liquidity From the Balance Sheet 72",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=333\nCurrent liabilities=315\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 440 |\n| Machinery | 259 |\n| Office equipment | 72 |\n| Patents, trademarks and licences | 75 |\n| Inventory | 140 |\n| Trade receivables | 120 |\n| Cash and cash equivalents | 73 |\n| Total assets | **1179** |\n| **EQUITY** | |\n| Share capital | 235 |\n| Retained earnings | 344 |\n| Total equity | **579** |\n| **LIABILITIES** | |\n| Long-term bank loan | 214 |\n| Bonds payable | 71 |\n| Trade payables | 242 |\n| Bank overdraft | 73 |\n| Total liabilities | **600** |\n| Total equity and liabilities | **1179** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "The current ratio is below 0.65.",
+      "Working capital of €18 thousand is positive on this balance sheet.",
+      "Inventory make up more than 32.6% of current assets.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.72 times over."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "That portion is liabilities; equity is the residual not financed by debt.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 333\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 315\n\nCurrent ratio = 333 / 315 ≈ 1.06\n\nThe claim says the ratio below 0.65. We have about 1.06, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n333 − 315 = 18\n\nThe claim cites 18. We have 18, so the figures line up.\n\nThe statement is true.",
+      "Inventory are about 42.0% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 0.61.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.073",
+    "title": "Partial Repayment and Reclassification",
+    "context": "Analyze how amounts owed to suppliers arise from receiving goods or services before paying for them. Evaluate the following economic assertions:",
+    "statements": [
+      "A brand name is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.",
+      "A registered design lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Although a registered design cannot be touched, it appears among non-current assets rather than current assets because of its long-term value.",
+      "A registered design is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery.",
+      "The absence of physical form does not prevent a registered design from being classified as a non-current asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Because a brand name is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term expected benefit, not physical form, justifies classifying a registered design as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term value places an intangible registered design among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible and tangible non-current assets, including a registered design, sit within the same balance sheet section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Physical form is not a requirement for classifying a registered design as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.074",
+    "title": "Two-Year Balance Sheet Review 74",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=685 | Total assets=1115\nYear 2 | Equity=679 | Total assets=1140\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 414 | 416 |\n| Machinery | 196 | 193 |\n| Office equipment | 46 | 49 |\n| Patents, trademarks and licences | 51 | 51 |\n| Inventory | 234 | 259 |\n| Trade receivables | 66 | 71 |\n| Cash and cash equivalents | 108 | 101 |\n| Total assets | **1115** | **1140** |\n| **EQUITY** | | |\n| Share capital | 286 | 286 |\n| Retained earnings | 399 | 393 |\n| Total equity | **685** | **679** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 200 | 214 |\n| Bonds payable | 80 | 87 |\n| Trade payables | 94 | 96 |\n| Bank overdraft | 56 | 64 |\n| Total liabilities | **430** | **461** |\n| Total equity and liabilities | **1115** | **1140** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Cash and cash equivalents fell by more than 5.4% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 96.3% of total equity in Year 2.",
+      "Non-current assets make up more than 57.1% of total assets in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 27.8% in Year 1."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Cash falls by the same amount as the software rises, so total assets stay unchanged.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Cash and cash equivalents changed by about -6.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 44.3% of equity in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets are about 62.2% of total assets in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term financing covers non-current assets by about 36.5% in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.075",
+    "title": "Equity Ratio and Lender Risk",
+    "context": "Review how comparing amounts owed to suppliers with amounts owed by customers reveals net short-term obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "A registered design acquired to protect or support a business's operations over several years is grouped with intangible non-current assets.",
+      "A registered design is not classified as a current asset because it is not expected to convert into cash within the normal operating cycle.",
+      "A development patent lacks physical substance but is classified as a non-current intangible asset because it provides expected long-term benefit.",
+      "Classifying an espresso machine as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "Although a development patent cannot be touched, it appears among non-current assets rather than current assets because of its long-term value."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Multi-year protective or operational value groups a registered design with intangible non-current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Because a registered design is not expected to convert into cash within the operating cycle, it is excluded from current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term expected benefit, not physical form, justifies classifying a development patent as non-current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intended use, not purchase price, drives the non-current classification of the espresso machine.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term value places an intangible development patent among non-current rather than current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

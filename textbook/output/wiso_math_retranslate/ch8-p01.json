@@ -1,0 +1,676 @@
+[
+  {
+    "case_id": "MATH 8.10",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A Braking Energy Index and the Ten Percent Trap",
+    "context_en": "A braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "At $v=10$ the index reads $50$.",
+      "Raising $v$ from $10$ to $20$ multiplies the index by $4$.",
+      "At $v=20$ the index reads $200$.",
+      "The index is never negative for $v>0$.",
+      "Raising $v$ by $10\\%$ raises the index by $10\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSquare the speed, then apply the coefficient:\n\n$$E(10)=0.5\\cdot 10^{2}$$\n\n$$10^{2}=100$$\n\n$$E(10)=0.5\\cdot 100$$\n\n$$E(10)=0.500$$\n\n$$E(10)=50$$\n\nThe index at\n\n$$v=10$$\n\n is $50$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nRaising the speed from $10$ to $20$ is the multiplier $k=2$. The coefficient cancels in the ratio:\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$\n\n$$20^{2}=400$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.5\\cdot 100}$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.500}$$\n\n$$\\frac{E(20)}{E(10)}=2^{2}$$\n\n$$\\frac{E(20)}{E(10)}=4$$\n\nDoubling the speed multiplies the index by $4$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nAt the higher standard speed, square first:\n\n$$E(20)=0.5\\cdot 20^{2}$$\n\n$$20^{2}=400$$\n\n$$E(20)=0.5\\cdot 400$$\n\n$$E(20)=0.2000$$\n\n$$E(20)=200$$\n\nThe index reads $200$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the calibrated closed form in the overview.\n\nA square of a nonzero real number is positive, and the coefficient $0.5$ is positive. Their product is therefore positive for every $v>0$.\n\nThe index is never negative.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nA ten percent overspeed is the speed multiplier\n\n$$k=1.1,$$ and the exponent acts on the whole multiplier:\n\n$$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$\n\n$$1^{2}=1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.21$$\n\nThe index is multiplied by $1.21$, a twenty-one percent rise rather than ten.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A braking energy index is $E(v)=0.5v^{2}$ points for an approach speed $v>0$ in kilometres per hour.\n\nThe rule is a power function with coefficient $0.5$ and exponent $2$. A level squares the speed, then halves it. A speed multiplier $k$ multiplies the index by $k^{2}$, because the coefficient cancels:\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$",
+    "title_de_existing": "Bremsenergie-Index und die Zehn-Prozent-Falle",
+    "context_de_existing": "Ein Bremsenergie-Index lautet $E(v)=0.5v^{2}$ Punkte für eine Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Bei $v=10$ zeigt der Index $50$.",
+      "Raising $v$ from $10$ to $20$ multipliziert the index by $4$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "Bei $v=20$ zeigt der Index $200$.",
+      "$v>0$ .",
+      "Raising $v$ by $10\\%$ raises the index by $10\\%$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$E(10)=0.5\\cdot 10^{2}$$\n\n$$10^{2}=100$$\n\n$$E(10)=0.5\\cdot 100$$\n\n$$E(10)=0.500$$\n\n$$E(10)=50$$\n\nThe index at\n\n$$v=10$$\n\n is $50$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positiv Koeffizient wegfällt.\n\nRaising the speed from $10$ to $20$ is the multiplier $k=2$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$\n\n$$20^{2}=400$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.5\\cdot 100}$$\n\n$$\\frac{E(20)}{E(10)}=\\frac{0.2000}{0.500}$$\n\n$$\\frac{E(20)}{E(10)}=2^{2}$$\n\n$$\\frac{E(20)}{E(10)}=4$$\n\nVerdopplung the speed multipliziert the index by $4$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nAt the higher standard speed, square first:\n\n$$E(20)=0.5\\cdot 20^{2}$$\n\n$$20^{2}=400$$\n\n$$E(20)=0.5\\cdot 400$$\n\n$$E(20)=0.2000$$\n\n$$E(20)=200$$\n\nThe index reads $200$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\n$0.5$ $v>0$ .\n\nThe index is never negativ.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nA ten percent overspeed is the speed multiplier\n\n$$k=1.1,$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$\n\n$$1^{2}=1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.1$$\n\n$$\\frac{E(1.1v)}{E(v)}=1.21$$\n\nThe index is multiplied by $1.21$, a twenty-one percent rise rather than ten.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Ein Bremsenergie-Index lautet $E(v)=0.5v^{2}$ Punkte für eine Annäherungsgeschwindigkeit $v>0$ in Kilometern pro Stunde.\n\nDie Regel ist eine Potenzfunktion mit Koeffizient $0.5$ und Exponent $2$. A level squares the speed, then halves it. A speed multiplier $k$ multipliziert the index by $k^{2}$, because the Koeffizient cancels:\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$"
+  },
+  {
+    "case_id": "MATH 8.13",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Leah's Well and Omar's Well",
+    "context_en": "Leah and Omar pump at the same depth $d>0$ metres. Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, and at $9$ metres she gets $12$ litres a minute. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, and at $4$ metres he gets $4$ litres a minute. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "At $4$ metres Leah already pumps more than $7$ litres a minute.",
+      "Omar overtakes Leah before they reach $10$ metres.",
+      "Once Omar is ahead, he stays ahead at every greater depth.",
+      "The two wells together still follow a single power of depth.",
+      "Omar's flow grows faster than depth."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe overview recovered\n\n$$a=4$$\n\n At $4$ metres the square root is $2$:\n\n$$Q_{L}(4)=4\\cdot 4^{\\frac{1}{2}}$$\n\n$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$4^{\\frac{1}{2}}=2$$\n\n$$2^{1}=2$$\n\n$$Q_{L}(4)=4\\cdot 2$$\n\n$$Q_{L}(4)=8$$\n\n$$Q_{L}(4)=16^{\\frac{1}{2}}$$\n\n$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$16^{\\frac{1}{2}}=4$$\n\n$$4^{1}=4$$\n\n$$Q_{L}(4)=4$$\n\nEight litres a minute is more than $7$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe overview recovered the ratio\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$\n\n. They meet when that ratio equals $1$:\n\n$$\\frac{d}{8}=1$$\n\n$$d=8$$\n\nEight metres is shallower than $10$. That matches the claim.\n\nKeep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe overview recovered\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$\n\nPast\n\n$$d=8$$\n\n that leftover factor exceeds $1$ and keeps climbing, because it is a positive power of $d$. A second crossing would need the ratio to return through $1$, which a strictly increasing leftover cannot do.\n\nOmar stays ahead at every greater depth.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nThe joint flow is the sum of two powers with distinct exponents:\n\n$$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$\n\nA sum of two powers is a power only when the exponents match. These exponents are\n\n$$\\frac{1}{2}$$\n\n and\n\n$$\\frac{3}{2}$$\n\n.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe overview recovered Omar's exponent\n\n$$\\frac{3}{2}$$\n\n. Flow outruns depth whenever the exponent exceeds one: multiplying depth by $k$ multiplies Omar's flow by $k^{\\frac{3}{2}}$, a larger factor than $k$.\n\nOmar's flow grows faster than depth.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Leah's well follows $Q_{L}(d)=a d^{\\frac{1}{2}}$, with $12$ litres a minute at $9$ metres. Omar's well follows $Q_{O}(d)=k d^{\\frac{3}{2}}$, with $4$ litres a minute at $4$ metres.\n\nEach well has a known exponent and one level, so each coefficient is recoverable:\n\n$$a\\cdot 9^{\\frac{1}{2}}=12$$\n\n$$3a=12$$\n\n$$a=4$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8k=4$$\n\n$$k=\\frac{1}{2}$$\n\nThe recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. Their ratio simplifies to $\\frac{d}{8}$.",
+    "title_de_existing": "Leahs Brunnen und Omars Brunnen",
+    "context_de_existing": "Leah und Omar pumpen in derselben Tiefe $d>0$ Meter. Leahs Brunnen folgt $Q_{L}(d)=a d^{\\frac{1}{2}}$; bei $9$ Metern fördert sie $12$ Liter pro Minute. Omars Brunnen folgt $Q_{O}(d)=k d^{\\frac{3}{2}}$; bei $4$ Metern fördert er $4$ Liter pro Minute. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Bei $4$ Metern pumpt Leah bereits mehr als $7$ Liter pro Minute.",
+      "Omar überholt Leah, bevor sie $10$ Meter erreichen.",
+      "Sobald Omar voraus ist, bleibt er in jeder größeren Tiefe vor ihm.",
+      "Die beiden Brunnen zusammen folgen immer noch einer einzigen Kraft der Tiefe.",
+      "Omars Durchfluss wächst schneller als die Tiefe."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Übersicht liefert $$a=4$$ Bei $4$ Meter ist die Quadratwurzel $2$: $$\n\\begin{aligned}\nQ_{L}(4)=4\\cdot 4^{\\frac{1}{2}} \\\\\n4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1} \\\\\n4^{\\frac{1}{2}}=2 \\\\\n2^{1}=2 \\\\\nQ_{L}(4)=4\\cdot 2 \\\\\nQ_{L}(4)=8 \\\\\nQ_{L}(4)=16^{\\frac{1}{2}} \\\\\n16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1} \\\\\n16^{\\frac{1}{2}}=4 \\\\\n4^{1}=4 \\\\\nQ_{L}(4)=4\n\\end{aligned}\n$$ Acht Liter pro Minute ist mehr als $7$.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Übersicht liefert das Verhältnis $$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$. Sie erfüllen sich, wenn dieses Verhältnis $1$ entspricht: $$\\frac{d}{8}=1$$ $$d=8$$ Acht Meter ist flacher als $10$. Das entspricht dem Anspruch.\n\nHalte den rekonstruierten Koeffizienten und Exponenten fest; nur die behauptete Eingabe (oder Schwelle) ändert sich.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie Übersicht liefert $$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$ Past $$d=8$$ Dieser Restfaktor übersteigt $1$ und steigt weiter, weil er eine positive Leistung von $d$ ist. Eine zweite Kreuzung würde das Verhältnis benötigen, um durch $1$ zurückzukehren, was ein streng steigender Rest nicht tun kann.\n\nOmar bleibt in jeder größeren Tiefe vorne.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDer gemeinsame Fluss ist die Summe von zwei Kräften mit unterschiedlichen Exponenten: $$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$ Eine Summe von zwei Mächten ist nur eine Macht, wenn die Exponenten übereinstimmen. Diese Exponenten sind $$\\frac{1}{2}$$ und $$\\frac{3}{2}$$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie Übersicht liefert Omars Exponenten\n\n$$\\frac{3}{2}$$\n\nDer Durchfluss wächst schneller als die Tiefe, wenn dieser Exponent größer als eins ist:\n\n$$\\frac{3}{2}>1$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Leahs Brunnen folgt $Q_{L}(d)=a d^{\\frac{1}{2}}$, mit $12$ Litern pro Minute bei $9$ Metern. Omars Brunnen folgt $Q_{O}(d)=k d^{\\frac{3}{2}}$, mit $4$ Litern pro Minute bei $4$ Metern.\n\nJeder Brunnen hat einen bekannten Exponenten und ein Niveau, daher ist jeder Koeffizient rekonstruierbar:\n\n$$a\\cdot 9^{\\frac{1}{2}}=12$$\n\n$$3a=12$$\n\n$$a=4$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8k=4$$\n\n$$k=\\frac{1}{2}$$\n\nDie rekonstruierten Durchflüsse sind $Q_{L}(d)=4d^{\\frac{1}{2}}$ und $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. Ihr Verhältnis vereinfacht sich zu $\\frac{d}{8}$."
+  },
+  {
+    "case_id": "MATH 8.15",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "A Refinery Against a Linear Quote",
+    "context_en": "A refinery turns ore of purity $u>0$ into metal $M(u)=A u^{\\frac{3}{2}}$ tonnes. Raising purity from $9$ to $16$ increased metal output by $296$ tonnes. That metal is then converted to alloy strength $S=\\frac{1}{2}M^{\\frac{2}{3}}$. A rival mill quotes strength directly as $1.8u+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "After both stages, the refinery's strength is proportional to purity.",
+      "The two quotes never meet.",
+      "The rival's quote is a power function of purity.",
+      "On ore of purity $36$, the refinery's strength is more than $70$.",
+      "On ore of purity $9$, the refinery's strength is already above $20$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe overview recovered\n\n$$S(u)=2u$$\n\nThe inner exponent\n\n$$\\frac{3}{2}$$\n\n and the outer exponent\n\n$$\\frac{2}{3}$$\n\n multiply to $1$, so strength is a linear monomial in purity.\n\nThat is proportionality.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → False\n\nCompare the recovered figure with the value named in the claim.\n\nThe overview recovered\n\n$$S(u)=2u$$\n\n Set that equal to the rival quote:\n\n$$2u=1.8u+5$$\n\n$$0.2u=5$$\n\n$$u=25$$\n\nThe quotes meet at purity $25$.\n\nSo the statement is False.",
+      "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nThe rival quote is $1.8u+5$. At purity zero the rival still equals $5$, so there is a leftover constant. A power of purity cannot carry an intercept.\n\nThe rival is affine, not a power.\n\nSo the statement is False.",
+      "**D.** → True\n\nUse the recovered constants; do not rebuild the calibration.\n\nThe overview recovered\n\n$$S(u)=2u$$\n\nAt purity $36$:\n\n$$S(36)=2\\cdot 36$$\n\n$$S(36)=72$$\n\nSeventy-two sits above $70$.\n\nSo the statement is True.",
+      "**E.** → False\n\nForm the comparison so only this claim’s extra arithmetic remains.\n\nThe overview recovered\n\n$$S(u)=2u$$\n\nAt purity $9$:\n\n$$S(9)=2\\cdot 9$$\n\n$$S(9)=18$$\n\nEighteen does not sit above $20$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Metal follows $M(u)=A u^{\\frac{3}{2}}$, and raising purity from $9$ to $16$ added $296$ tonnes. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\nThe audited gain is a difference of two metal outputs:\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nComposing the strength stage with $M(u)=8u^{\\frac{3}{2}}$ multiplies the exponents $\\frac{3}{2}$ and $\\frac{2}{3}$ to $1$:\n\n$$S(u)=2u$$",
+    "title_de_existing": "Eine Raffinerie gegen ein lineares Angebot",
+    "context_de_existing": "Eine Raffinerie wandelt Erz der Reinheit $u>0$ in Metall $M(u)=A u^{\\frac{3}{2}}$ Tonnen um. Eine Erhöhung der Reinheit von $9$ auf $16$ steigerte die Metallausbeute um $296$ Tonnen. Dieses Metall wird anschließend in die Legierungsfestigkeit $S=\\frac{1}{2}M^{\\frac{2}{3}}$ umgerechnet. Ein rivalisierendes Werk gibt die Festigkeit direkt als $1.8u+5$ an. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "The two quotes never meet. Die Aussage ist zu prüfen.",
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "On ore of purity $36$ $70$ . Die Aussage ist zu prüfen.",
+      "On ore of purity $9$ $20$ . Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nThe inner Exponent\n\n$$\\frac{3}{2}$$\n\nDie Rechnung bestätigt die Behauptung.\n\n$$\\frac{2}{3}$$\n\nmultiply to $1$\n\nThat is proportionality.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nDie Rechnung widerspricht der Behauptung.\n\n$$2u=1.8u+5$$\n\n$$0.2u=5$$\n\n$$u=25$$\n\nThe quotes meet at purity $25$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\n$1.8u+5$ $5$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nVerwende die rekonstruierten Konstanten; baue die Kalibrierung nicht neu auf.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nAt purity $36$:\n\n$$S(36)=2\\cdot 36$$\n\n$$S(36)=72$$\n\nSeventy-two sits above $70$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nBilde den Vergleich so, dass nur die zusätzliche Rechnung dieser Behauptung übrig bleibt.\n\nDie Übersicht liefert\n\n$$S(u)=2u$$\n\nAt purity $9$:\n\n$$S(9)=2\\cdot 9$$\n\n$$S(9)=18$$\n\nEighteen does not sit above $20$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Metal follows $M(u)=A u^{\\frac{3}{2}}$ $9$ to $16$ added $296$ Tonnen. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$ . The rival quotes $1.8u+5$ .\n\nSiehe die Übersicht und die Rechnungsschritte.\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\n$M(u)=8u^{\\frac{3}{2}}$ multipliziert the Exponenten $\\frac{3}{2}$ and $\\frac{2}{3}$ to $1$ :\n\n$$S(u)=2u$$"
+  },
+  {
+    "case_id": "MATH 8.30",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Calibrated Demand, Derived Revenue, and a Fixed Charge",
+    "context_en": "A niche publisher faces demand $q(p)=A p^{-\\frac{3}{2}}$ copies a month at a price $p>0$. A price of $4$ euros sells $250$ copies. Revenue is $R=pq$, and the operation carries a fixed monthly charge of $400$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The price needed for a given revenue is itself a power of that revenue.",
+      "Doubling the price halves revenue.",
+      "Revenue falls as the price rises.",
+      "At a price of $25$, monthly revenue is already under $450$.",
+      "The fixed charge is covered only at prices below $16$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nSolving for the positive price,\n\n$$p=\\left(\\frac{2000}{R}\\right)^{2}$$\n\nThat is a monomial in revenue.\n\nSo the statement is True.",
+      "**B.** → False\n\nForm the ratio so the unknown positive coefficient cancels.\n\nDoubling the price on\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\n multiplies revenue by\n\n$$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}$$\n\nNow\n\n$$\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$$\n\n, so doubling price does not halve revenue.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe overview recovered\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:\n\n$$R(4)=1000\n$$\n\n$$R(16)=500$$\n\nand $500<1000$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nAt a price of $25$:\n\n$$R(25)=\\frac{2000}{5}$$\n\n$$R(25)=400$$\n\nThe claim compares this with $450$. Compare with the claim:\n\n$$400<450.$$\n\nSo the statement is True.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nThe charge is covered when $R(p)\\ge 400$:\n\n$$2000 p^{-\\frac{1}{2}}\\ge 400$$\n\n$$\\sqrt{p}\\le 5\n$$\n\n$$p\\le 25$$\n\nThe claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Demand is $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$. Revenue is $R=pq$, and a fixed monthly charge of $400$ must be covered.\n\n**Part 1: Translate.**\n\nThe priced observation fixes $A$:\n\n$$A\\cdot 4^{-\\frac{3}{2}}=250 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$4^{\\frac{3}{2}}=8, \\qquad A=250\\cdot 8=2000$$\n\nThe recovered demand and revenue are\n\n$$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$",
+    "title_de_existing": "Kalibrierte Nachfrage, abgeleiteter Umsatz und Fixgebühr",
+    "context_de_existing": "Ein Nischenverlag steht der Nachfrage $q(p)=A p^{-\\frac{3}{2}}$ Exemplare pro Monat zum Preis $p>0$ gegenüber. Ein Preis von $4$ Euro verkauft $250$ Exemplare. Der Umsatz ist $R=pq$, und der Betrieb trägt eine feste monatliche Gebühr von $400$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "Verdopplung the price halves revenue. Die Aussage ist zu prüfen.",
+      "Revenue falls as the price rises. Die Aussage ist zu prüfen.",
+      "Bei a price of $25$, monthly revenue is already under $450$. Die Aussage ist zu prüfen.",
+      "The fixed charge is covered only at prices below $16$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nSolving for the positiv price,\n\n$$p=\\left(\\frac{2000}{R}\\right)^{2}$$\n\nThat is a monomial in revenue.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positiv Koeffizient wegfällt.\n\nVerdopplung the price on\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\n multipliziert revenue by\n\n$$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}$$\n\nNow\n\n$$\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$$\n\n, so Verdopplung price does not halve revenue.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\n$16$ :\n\n$$R(4)=1000\n$$\n\n$$R(16)=500$$\n\nand $500<1000$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nAt a price of $25$:\n\n$$R(25)=\\frac{2000}{5}$$\n\n$$R(25)=400$$\n\nThe Behauptung compares this with $450$. Compare with the Behauptung:\n\n$$400<450.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\n$R(p)\\ge 400$ :\n\n$$2000 p^{-\\frac{1}{2}}\\ge 400$$\n\n$$\\sqrt{p}\\le 5\n$$\n\n$$p\\le 25$$\n\n$16$ . The rekonstruiert cutoff is $p=25$ , which is not $16$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Demand is $q(p)=A p^{-\\frac{3}{2}}$ with $q(4)=250$ . Revenue is $R=pq$ , and a fixed monthly charge of $400$ must be covered.\n\n**Teil 1: Übersetzung.**\n\nThe priced observation fixes $A$:\n\n$$A\\cdot 4^{-\\frac{3}{2}}=250 \\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$4^{\\frac{3}{2}}=8, \\qquad A=250\\cdot 8=2000$$\n\nSiehe die Übersicht und die Rechnungsschritte.\n\n$$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$"
+  },
+  {
+    "case_id": "MATH 8.34",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Kiln Output Under a Licensed Ceiling",
+    "context_en": "A kiln's daily output follows $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed of $x>0$ cubic metres. A test firing at a feed of $27$ produced $324$ tonnes. The site licence forbids shipping more than $1024$ tonnes a day, so any extra firing is wasted. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "To double the test-firing output, the fuel feed must more than double.",
+      "Output per cubic metre of fuel rises as the feed increases.",
+      "Once the licence binds, daily shipped output is no longer a power function of the feed.",
+      "A feed of $8$ produces more than $50$ tonnes.",
+      "The licensed ceiling binds before a feed of $50$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nTo double the test-firing output, the feed factor $k$ must satisfy\n\n$$k^{\\frac{4}{3}}=2$$\n\n$$k=2^{\\frac{3}{4}}$$\n\nNow\n\n$$2^{\\frac{3}{4}}<2$$\n\n, so the feed need not more than double.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nOutput per cubic metre of fuel is\n\n$$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$\n\nThe leftover exponent is positive, so the average rises as the feed increases. At $8$ and $27$:\n\n$$4\\cdot 8^{\\frac{1}{3}}$$\n\n$$8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1}$$\n\n$$8^{\\frac{1}{3}}=2$$\n\n$$2^{1}=2$$\n\n$$\n\\frac{y(x)}{x}=8, ,qquad 4\\cdot 27^{\\frac{1}{3}} = \\bigl(27^{\\frac{1}{3}}\\bigr)^{1}\n$$\n\n$$27^{\\frac{1}{3}}=3$$\n\n$$3^{1}=3$$\n\n$$\\frac{y(x)}{x}=8, \\qquad 4\\cdot 3$$\n\n$$\\frac{y(x)}{x}=8, \\qquad 108^{\\frac{1}{3}}$$\n\n$$\\frac{y(x)}{x}=8, \\qquad 12$$\n\n$$\\frac{y(x)}{x}=12$$\n\nand $12>8$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nThe licence binds once\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x^{\\frac{4}{3}}=256\n$$\n\n$$x=64$$\n\nPast that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nA feed of $8$ produces\n\n$$y(8)=4\\cdot 8^{\\frac{4}{3}}$$\n\n$$8^{\\frac{4}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{4}$$\n\n$$8^{\\frac{1}{3}}=2$$\n\n$$2^{4}=16$$\n\n$$y(8)=4\\cdot 16$$\n\n$$y(8)=64$$\n\n$$y(8)=32^{\\frac{4}{3}}$$\n\n$$8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1}$$\n\n$$2^{1}=2$$\n\nThe claim compares this with $50$. Compare with the claim:\n\n$$64>50.$$\n\nSo the statement is True.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nFrom the shared solve, the feed level where the licence binds:\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x=64$$\n\nThe claim asserts that the licence binds before a feed of $50$. Compare:\n\n$$64>50$$\n\nThe binding feed sits above $50$, not before it. The claim fails.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Kiln output is $y(x)=A x^{\\frac{4}{3}}$ tonnes for a fuel feed $x>0$, with $y(27)=324$. The licence forbids shipping more than $1024$ tonnes a day.\n\n**Part 1: Translate.**\n\nThe test firing is a perfect cube:\n\n$$A\\cdot 27^{\\frac{4}{3}}=324 \\tag{1}$$\n\n**Part 2: Solve.**\n\n$$27^{\\frac{4}{3}}=81, \\qquad A=4$$\n\nThe recovered firing, before the licence clips it, is\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nShipped output is $\\min(y(x),1024)$.",
+    "title_de_existing": "Ofenleistung unter einer lizenzierten Obergrenze",
+    "context_de_existing": "Die Tagesleistung eines Ofens folgt $y(x)=A x^{\\frac{4}{3}}$ Tonnen bei einem Brennstoffeinsatz $x>0$ Kubikmeter. Ein Testbrand mit Einsatz $27$ lieferte $324$ Tonnen. Die Standortlizenz verbietet den Versand von mehr als $1024$ Tonnen pro Tag, sodass jede zusätzliche Produktion verfällt. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "A feed of $8$ produces more than $50$ Tonnen. Die Aussage ist zu prüfen.",
+      "$50$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\n$k$ must satisfy\n\n$$k^{\\frac{4}{3}}=2$$\n\n$$k=2^{\\frac{3}{4}}$$\n\nNow\n\n$$2^{\\frac{3}{4}}<2$$\n\n, so the feed need not more than double.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie Leistung je Kubikmeter Brennstoff ist\n\n$$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$\n\nDer verbleibende Exponent ist positiv, daher steigt der Durchschnitt mit dem Einsatz. Bei $8$ und $27$:\n\n$$\n\\begin{aligned}\n4\\cdot 8^{\\frac{1}{3}} \\\\\n8^{\\frac{1}{3}}=2 \\\\\n4\\cdot 2=8 \\\\\n4\\cdot 27^{\\frac{1}{3}} \\\\\n27^{\\frac{1}{3}}=3 \\\\\n4\\cdot 3=12\n\\end{aligned}\n$$\n\nund $12>8$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nThe licence binds once\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x^{\\frac{4}{3}}=256\n$$\n\n$$x=64$$\n\n$1024$ , which is not a monomial in $x$ .\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nA feed of $8$ produces\n\n$$\n\\begin{aligned}\ny(8)=4\\cdot 8^{\\frac{4}{3}} \\\\\n8^{\\frac{4}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{4} \\\\\n8^{\\frac{1}{3}}=2 \\\\\n2^{4}=16 \\\\\ny(8)=4\\cdot 16 \\\\\ny(8)=64 \\\\\ny(8)=32^{\\frac{4}{3}} \\\\\n8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1} \\\\\n2^{1}=2\n\\end{aligned}\n$$\n\nThe Behauptung compares this with $50$. Compare with the Behauptung:\n\n$$64>50.$$\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDie Rechnung widerspricht der Behauptung.\n\n$$4 x^{\\frac{4}{3}}=1024$$\n\n$$x=64$$\n\n$50$ . Compare:\n\n$$64>50$$\n\nThe binding feed sits above $50$ , not before it. The Behauptung fails.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Kiln output is $y(x)=A x^{\\frac{4}{3}}$ Tonnen for a fuel feed $x>0$ , with $y(27)=324$ . The licence forbids shipping more than $1024$ Tonnen a day.\n\n**Teil 1: Übersetzung.**\n\nSiehe die Übersicht und die Rechnungsschritte.\n\n$$A\\cdot 27^{\\frac{4}{3}}=324 \\tag{1}$$\n\n**Teil 2: Lösung.**\n\n$$27^{\\frac{4}{3}}=81, \\qquad A=4$$\n\nSiehe die Übersicht und die Rechnungsschritte.\n\n$$y(x)=4 x^{\\frac{4}{3}}$$\n\nShipped output is $\\min(y(x),1024)$."
+  },
+  {
+    "case_id": "MATH 8.42",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Average Product of a Square-Root Technology",
+    "context_en": "A workshop's output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from $9$ hours to $36$ hours added exactly $60$ units. Management tracks average product $\\frac{Y}{L}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Average product falls as the shift lengthens.",
+      "A $36$-hour shift already produces more than $100$ units.",
+      "An extra hour adds more output after $36$ hours than it does after $9$.",
+      "To double the $9$-hour output, labour hours must more than double.",
+      "At $25$ hours, average product is still above $5$ units per hour."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAverage product is output per labour hour. The overview recovered\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$$\n\n The leftover exponent is negative, so average product falls as the shift lengthens. At the two logged shifts:\n\n$$\\frac{Y(9)}{9}=\\frac{20}{3}$$\n\n$$\\frac{Y(36)}{36}=\\frac{10}{3}$$\n\nThe later average is smaller.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level of output at $36$ hours. The overview recovered\n\n$$Y(L)=20 L^{\\frac{1}{2}}$$\n\n$$Y(36)=20\\cdot 36^{\\frac{1}{2}}$$\n\n$$36^{\\frac{1}{2}}=\\bigl(36^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$36^{\\frac{1}{2}}=6$$\n\n$$6^{1}=6$$\n\n$$Y(36)=20\\cdot 6$$\n\n$$Y(36)=120$$\n\n$$Y(36)=720^{\\frac{1}{2}}$$\n\n$$36^{\\frac{1}{2}}$$\n\n$$Y(36)=6$$\n\nOne hundred and twenty sits above $100$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nAn extra hour is the derivative of output. The overview recovered\n\n$$Y(L)=20 L^{\\frac{1}{2}}$$\n\n, so\n\n$$Y'(L)=10 L^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative. At nine hours:\n\n$$Y'(9)=\\frac{10}{3}$$\n\nAt thirty-six hours:\n\n$$Y'(36)=\\frac{10}{6}$$\n\nAn extra hour adds less after $36$ hours than after $9$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the calibrated closed form in the overview.\n\nThe nine-hour output is\n\n$$Y(9)=20\\cdot 3$$\n\n$$Y(9)=60$$\n\nDoubling that output means\n\n$$Y(L)=120$$\n\n. The overview recovered\n\n$$Y(L)=20 L^{\\frac{1}{2}}$$\n\n, so\n\n$$20 L^{\\frac{1}{2}}=120$$\n\n$$L^{\\frac{1}{2}}=6$$\n\n$$L=36$$\n\nHours must go from $9$ to $36$, which is more than a doubling.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nThis is a level of average product at $25$ hours. The overview recovered\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$$\n\n$$\\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}$$\n\n$$\\frac{Y(25)}{25}=500^{-\\frac{1}{2}}$$\n\n$$25^{-\\frac{1}{2}}=\\frac{1}{5}$$\n\n$$\\frac{Y(25)}{25}=4$$\n\nFour sits below $5$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Output follows $Y(L)=A L^{\\frac{1}{2}}$ units for $L>0$ labour hours. Extending a shift from $9$ hours to $36$ hours added $60$ units. Average product is $\\frac{Y}{L}$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the recorded jump is a difference of square roots and pins $A$:\n\n$$A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60$$\n\n$$A(6-3)=60$$\n\n**Part 2: Solve.**\n\n$$A=20$$\n\nThe recovered output is $Y(L)=20 L^{\\frac{1}{2}}$. Average product then lowers the exponent by one:\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$",
+    "title_de_existing": "Durchschnittsprodukt einer Quadratwurzel-Technologie",
+    "context_de_existing": "Der Ausstoß einer Werkstatt folgt $Y(L)=A L^{\\frac{1}{2}}$ Einheiten für $L>0$ Arbeitsstunden. Die Verlängerung einer Schicht von $9$ auf $36$ Stunden brachte $60$ zusätzliche Einheiten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Das Durchschnittsprodukt fällt, wenn die Schicht länger wird.",
+      "Eine Schicht von $36$ Stunden produziert bereits mehr als $100$ Einheiten.",
+      "Eine zusätzliche Stunde bringt nach $36$ Stunden mehr Ausstoß als nach $9$ Stunden.",
+      "Um den Ausstoß der $9$-Stunden-Schicht zu verdoppeln, müssen die Arbeitsstunden mehr als verdoppelt werden.",
+      "Bei $25$ Stunden liegt der Durchschnittsprodukt noch über dem $5$ -Einheiten pro Stunde."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDas Durchschnittsprodukt ist der Ausstoß pro Arbeitsstunde. Die Übersicht liefert\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$$\n\nDieser Ausdruck fällt in $L$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist eine Ausgabestufe bei $36$ Stunden. Die Übersicht liefert $$\n\\begin{aligned}\nY(L)=20 L^{\\frac{1}{2}} \\\\\nY(36)=20\\cdot 36^{\\frac{1}{2}} \\\\\n36^{\\frac{1}{2}}=\\bigl(36^{\\frac{1}{2}}\\bigr)^{1} \\\\\n36^{\\frac{1}{2}}=6 \\\\\n6^{1}=6 \\\\\nY(36)=20\\cdot 6 \\\\\nY(36)=120 \\\\\nY(36)=720^{\\frac{1}{2}} \\\\\n36^{\\frac{1}{2}} \\\\\nY(36)=6\n\\end{aligned}\n$$ Einhundertzwanzig sitzt über $100$.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nEine Extra-Stunde ist die Ableitung des Outputs. Die Übersicht liefert $$Y(L)=20 L^{\\frac{1}{2}}$$, so $$Y'(L)=10 L^{-\\frac{1}{2}}$$ Der übrig gebliebene Exponent ist negativ. At nine Stunden: $$Y'(9)=\\frac{10}{3}$$ At thirty-six Stunden: $$Y'(36)=\\frac{10}{6}$$ Eine zusätzliche Stunde fügt weniger nach $36$ Stunden als nach $9$ hinzu.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDie neun-Stunde-Ausgabe ist $$Y(9)=20\\cdot 3$$ $$Y(9)=60$$ Verdoppelung der Ausgabe bedeutet $$Y(L)=120$$. Die Übersicht liefert $$Y(L)=20 L^{\\frac{1}{2}}$$, so $$20 L^{\\frac{1}{2}}=120$$ $$L^{\\frac{1}{2}}=6$$ $$L=36$$ Stunden müssen von $9$ zu $36$ gehen, was mehr als eine Verdoppelung ist.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDies ist ein Niveau von Durchschnittsprodukt bei $25$ Stunden. Die Übersicht liefert $$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$$ $$\\frac{Y(25)}{25}=20\\cdot 25^{-\\frac{1}{2}}$$ $$\\frac{Y(25)}{25}=500^{-\\frac{1}{2}}$$ $$25^{-\\frac{1}{2}}=\\frac{1}{5}$$ $$\\frac{Y(25)}{25}=4$$ Four sits below $5$.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Ausstoß folgt $Y(L)=A L^{\\frac{1}{2}}$ Einheiten für $L>0$ Arbeitsstunden. Die Verlängerung einer Schicht von $9$ auf $36$ Stunden brachte $60$ Einheiten. Das Durchschnittsprodukt ist $\\frac{Y}{L}$.\n\n**Teil 1: Übersetzung.**\n\nDer Exponent ist gegeben, daher ist der aufgezeichnete Sprung eine Differenz von Quadratwurzeln und bestimmt $A$:\n\n$$A\\bigl(36^{\\frac{1}{2}}-9^{\\frac{1}{2}}\\bigr)=60$$\n\n$$A(6-3)=60$$\n\n**Teil 2: Lösung.**\n\n$$A=20$$\n\nDer rekonstruierte Ausstoß lautet $Y(L)=20 L^{\\frac{1}{2}}$. Das Durchschnittsprodukt senkt den Exponenten um eins:\n\n$$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$$"
+  },
+  {
+    "case_id": "MATH 8.54",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Market Impact of a Block Trade",
+    "context_en": "A broker models price impact as $I(v)=A v^{0.5}$ basis points, where $v>0$ is order size as a fraction of average daily volume. Increasing an order from $0.04$ ADV to $0.09$ ADV adds exactly $6$ basis points of impact. The scaled impact charge is $vI(v)$, while a notional fee is $F(v)=30v$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Impact grows more slowly than order size.",
+      "Doubling order size doubles the scaled impact charge.",
+      "At $0.16$ ADV, impact is already above $20$ basis points.",
+      "Once the scaled charge overtakes the notional fee, it stays larger at every bigger order.",
+      "At $0.25$ ADV the scaled charge is already above $10$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.\n\nThe overview recovered\n\n$$I(v)=60 v^{\\frac{1}{2}}$$\n\nThe exponent on order size is\n\n$$\\frac{1}{2}$$\n\n.\n\n$$\\frac{1}{2}<1$$\n\nImpact grows more slowly than order size.\n\nSo the statement is True.",
+      "**B.** → False\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThe scaled impact charge is $vI(v)$. The overview recovered\n\n$$vI(v)=60 v^{\\frac{3}{2}}$$\n\n, so doubling order size multiplies the scaled charge by\n\n$$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}$$\n\n$$2^{\\frac{3}{2}}\\approx 2.828$$\n\nThat is not $2$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nThis is a level of impact at $0.16$ ADV. The overview recovered\n\n$$I(v)=60 v^{\\frac{1}{2}}$$\n\n$$I(0.16)=60\\cdot 0.16^{\\frac{1}{2}}$$\n\n$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$16^{\\frac{1}{2}}=4$$\n\n$$4^{1}=4$$\n\n$$I(0.16)=60\\cdot 0.4$$\n\n$$I(0.16)=0.16^{\\frac{1}{2}}$$\n\n$$I(0.16)=0.4$$\n\n$$0.16^{\\frac{1}{2}}$$\n\n$$I(0.16)=24$$\n\nTwenty-four sits above $20$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the calibrated closed form in the overview.\n\nThe scaled charge overtakes the notional fee where\n\n$$60 v^{\\frac{3}{2}}=30v$$\n\n. The overview recovered those two curves, so for $v>0$\n\n$$2 v^{\\frac{1}{2}}=1$$\n\n$$v=\\frac{1}{4}$$\n\nThe leftover exponent on the scaled charge is\n\n$$\\frac{3}{2}>1$$\n\n, so past\n\n the scaled charge stays larger at every bigger order.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nThis is a level of the scaled charge at $0.25$ ADV. The overview recovered\n\n$$vI(v)=60 v^{\\frac{3}{2}}$$\n\n$$0.25\\cdot I(0.25)=60\\cdot 0.25^{\\frac{3}{2}}$$\n\n$$25^{\\frac{3}{2}}=\\bigl(25^{\\frac{1}{2}}\\bigr)^{3}$$\n\n$$25^{\\frac{1}{2}}=5$$\n\n$$5^{3}=125$$\n\n$$0.25\\cdot I(0.25)=60\\cdot 0.125$$\n\n$$0.25\\cdot I(0.25)=0.25^{\\frac{3}{2}}$$\n\n$$25^{\\frac{1}{2}}=\\bigl(25^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$5^{1}=5$$\n\n$$0.25\\cdot I(0.25)=0.125$$\n\n$$0.25^{\\frac{3}{2}}$$\n\n$$60\\cdot 0.125$$\n\n$$0.25\\cdot I(0.25)=7.5$$\n\nSeven point five does not sit above $10$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Price impact is $I(v)=A v^{0.5}$ basis points for order size $v>0$. Increasing an order from $0.04$ ADV to $0.09$ ADV adds $6$ basis points. The scaled impact charge is $vI(v)$, and a notional fee is $F(v)=30v$.\n\n**Part 1: Translate.**\n\nThe exponent is given, so the recorded rise pins $A$:\n\n$$A\\bigl(0.09^{\\frac{1}{2}}-0.04^{\\frac{1}{2}}\\bigr)=6$$\n\n$$A(0.3-0.2)=6$$\n\n**Part 2: Solve.**\n\n$$0.1A=6, \\qquad A=60$$\n\nThe recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. The scaled charge is then\n\n$$vI(v)=60 v^{\\frac{3}{2}}.$$",
+    "title_de_existing": "Marktwirkung eines Blocktrades",
+    "context_de_existing": "Ein Broker-Modell Preiswirkung als $I(v)=A v^{0.5}$ Basispunkte, wobei $v>0$ als Bruchteil des durchschnittlichen Tagesvolumens die Auftragsgröße ist. Die Erhöhung einer Bestellung von $0.04$ ADV auf $0.09$ ADV fügt genau $6$ Basispunkte des Aufpralls hinzu. Die skalierte Aufprallgebühr beträgt $vI(v)$, während eine Nominalgebühr $F(v)=30v$ ist. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Die Kurswirkung wächst langsamer als die Auftragsgröße.",
+      "Doppelte Auftragsgröße verdoppelt die skalierte Aufprallladung.",
+      "Bei $0.16$ ADV liegt die Kurswirkung bereits über $20$ Basispunkten.",
+      "Sobald die skalierte Gebühr die Nominalgebühr übertrifft, bleibt sie bei jeder größeren Bestellung größer.",
+      "Bei $0.25$ ADV ist die skalierte Ladung bereits über $10$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGehe von der in der Übersicht rekonstruierten geschlossenen Form aus und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert den Exponenten $0.5<1$. Multipliziert man die Auftragsgröße mit $k$, so multipliziert sich die Kurswirkung nur mit $k^{0.5}$.\n\nDie Kurswirkung wächst langsamer als die Auftragsgröße.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDie skalierte Aufprallladung ist $vI(v)$. Die Übersicht liefert $$vI(v)=60 v^{\\frac{3}{2}}$$, so verdoppelt Auftragsgröße multipliziert die skalierte Ladung durch $$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}$$ $$2^{\\frac{3}{2}}\\approx 2.828$$ Das ist nicht $2$.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDies ist ein Grad der Wirkung bei $0.16$ ADV. Die Übersicht liefert $$\n\\begin{aligned}\nI(v)=60 v^{\\frac{1}{2}} \\\\\nI(0.16)=60\\cdot 0.16^{\\frac{1}{2}} \\\\\n16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1} \\\\\n16^{\\frac{1}{2}}=4 \\\\\n4^{1}=4 \\\\\nI(0.16)=60\\cdot 0.4 \\\\\nI(0.16)=0.16^{\\frac{1}{2}} \\\\\nI(0.16)=0.4 \\\\\n0.16^{\\frac{1}{2}} \\\\\nI(0.16)=24\n\\end{aligned}\n$$ Twenty-four sits above $20$.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nDie skalierte Gebühr übertrifft die Nominalgebühr, wenn $$60 v^{\\frac{3}{2}}=30v$$. Die Übersicht liefert diese beiden Kurven, also für $v>0$ $$2 v^{\\frac{1}{2}}=1$$ $$v=\\frac{1}{4}$$ Der übrig gebliebene Exponent auf der skalierten Ladung ist $$\\frac{3}{2}>1$$, so past\n\ndie skalierte Ladung bleibt bei jeder größeren Bestellung größer.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nGesucht ist das Niveau der skalierten Belastung bei $0.25$ ADV. Die Übersicht liefert\n\n$$vI(v)=60 v^{\\frac{3}{2}}$$\n\n$$0.25\\cdot I(0.25)=60\\cdot 0.25^{\\frac{3}{2}}$$\n\n$$0.25^{\\frac{3}{2}}=\\bigl(0.25^{\\frac{1}{2}}\\bigr)^{3}=0.5^{3}=0.125$$\n\n$$0.25\\cdot I(0.25)=60\\cdot 0.125$$\n\n$$0.25\\cdot I(0.25)=7.5$$\n\nDer Wert $7{,}5$ liegt nicht über $10$.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Auswirkungen auf den Preis sind $I(v)=A v^{0.5}$ Basispunkte für die Auftragsgröße $v>0$. Die Erhöhung einer Bestellung von $0.04$ ADV auf $0.09$ ADV fügt $6$ Basispunkte hinzu. Die skalierte Aufprallgebühr beträgt $vI(v)$ und eine Nominalgebühr ist $F(v)=30v$.\n\n**Teil 1: Übersetzung.**\n\nDer Exponent ist gegeben, so dass die aufgezeichneten Anstieg Pins $A$: $$A\\bigl(0.09^{\\frac{1}{2}}-0.04^{\\frac{1}{2}}\\bigr)=6$$ $$A(0.3-0.2)=6$$ **Teil 2: Lösung.** $$0.1A=6, \\qquad A=60$$ Der zurückgewonnene Aufprall ist $I(v)=60 v^{\\frac{1}{2}}$. Die skalierte Ladung ist dann $$vI(v)=60 v^{\\frac{3}{2}}.$$"
+  },
+  {
+    "case_id": "MATH 8.70",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Warehouse Forklift Throughput Under a Staffing Cap",
+    "context_en": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "To double the logged throughput the yard must more than double the crew.",
+      "With $36$ drivers the model already predicts more than $110$ pallets per hour.",
+      "Throughput per driver rises as the crew grows.",
+      "Reaching $150$ pallets per hour stays inside the safety cap.",
+      "Because throughput rises with crew, the safety cap on drivers is also a cap on pallets moved per hour."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDoubling the logged $80$ pallets means $T=160$. Invert the recovered law:\n\n$$20\\sqrt{s}=160$$\n\n$$\\sqrt{s}=8$$\n\n$$s=64$$\n\nThe logged crew is $16$ drivers, and $64=4\\cdot 16$, which is more than a doubling.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level at the safety cap\n\n$$s=36$$\n\nThe overview recovered\n\n$$T(s)=20\\sqrt{s},$$ so\n\n$$T(36)=20\\cdot 6$$\n\n$$T(36)=120$$\n\nThe claim needs more than $110$ pallets per hour. We have $120>110$.\n\nSo the statement is True.",
+      "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nThroughput per driver is the recovered law divided by $s$:\n\n$$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so intensity falls as the crew grows. It does not rise.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nReaching $150$ pallets per hour is an inversion of the recovered law:\n\n$$20\\sqrt{s}=150$$\n\n$$\\sqrt{s}=7.5$$\n\n$$s=56.25$$\n\nThe safety cap is $36$ drivers, and $56.25>36$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nKeep the stated domain in force while you evaluate the model.\n\nThe recovered exponent $0.5$ is positive, so $T(s)$ rises with $s$. The largest legal crew is therefore the largest legal throughput. The driver cap is also a cap on pallets moved per hour.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Forklift throughput follows $T(s)=As^{0.5}$ pallets per hour for $s>0$ drivers. A logged shift recorded $T(16)=80$.\n\n**Part 1: Building the model.**\n\nLet $s$ = drivers on shift and $T$ = pallets moved per hour. The exponent $0.5$ is given, so the logged shift fixes $A$.\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80$$\n\n**Part 2: Solve.**\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nThe recovered law is\n\n$$T(s)=20\\sqrt{s}$$",
+    "title_de_existing": "Staplerdurchsatz im Lager unter Personalobergrenze",
+    "context_de_existing": "Der Gabelstapler-Durchsatz folgt $T(s)=A s^{0.5}$ Paletten pro Stunde, wobei $s>0$ die Anzahl der Fahrer in der Schicht ist. Eine protokollierte Schicht mit $16$ Fahrern bewegte $80$ Paletten pro Stunde. Sicherheitsregeln begrenzen die Schicht auf $36$ Fahrer. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "With $36$ drivers the model already predicts more than $110$ pallets per hour. Die Aussage wird anhand der Übersicht geprüft.",
+      "Siehe die Übersicht und die Rechnungsschritte.",
+      "Reaching $150$ pallets per hour stays inside the safety cap. Die Aussage ist zu prüfen.",
+      "Siehe die Übersicht und die Rechnungsschritte."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVerdopplung the logged $80$ pallets means $T=160$. Invert the rekonstruiert law:\n\n$$20\\sqrt{s}=160$$\n\n$$\\sqrt{s}=8$$\n\n$$s=64$$\n\nThe logged crew is $16$ drivers, and $64=4\\cdot 16$ , which is more than a Verdopplung.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positiv Koeffizient wegfällt.\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=36$$\n\nDie Übersicht liefert\n\n$$T(s)=20\\sqrt{s},$$ so\n\n$$T(36)=20\\cdot 6$$\n\n$$T(36)=120$$\n\nThe Behauptung needs more than $110$ pallets per hour. We have $120>110$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nThroughput per driver is the rekonstruiert law divided by $s$:\n\n$$\\frac{T(s)}{s}=20s^{-\\frac{1}{2}}$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nReaching $150$\n\n$$20\\sqrt{s}=150$$\n\n$$\\sqrt{s}=7.5$$\n\n$$s=56.25$$\n\nThe safety cap is $36$ drivers, and $56.25>36$ .\n\nDer berechnete Wert stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nThe rekonstruiert Exponent $0.5$ is positiv, so $T(s)$ rises with $s$\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Forklift throughput follows $T(s)=As^{0.5}$ pallets per hour for $s>0$ drivers. A logged shift recorded $T(16)=80$.\n\n**Teil 1: Modellaufbau.**\n\nLet $s$ = drivers on shift and $T$ = pallets moved per hour. The Exponent $0.5$ $A$ .\n\n**1. Translate: the logged shift.**\n\n$$A\\cdot 16^{0.5}=80$$\n\n**Teil 2: Lösung.**\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nThe rekonstruiert law is\n\n$$T(s)=20\\sqrt{s}$$ Die Übersicht und die Behauptung werden damit geprüft."
+  },
+  {
+    "case_id": "MATH 8.72",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Fixed Retainer Plus a Square-Root Monitoring Fee",
+    "context_en": "A compliance-monitoring platform bills $C(n)=F+A n^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches, with both constants unknown. $100$ branches cost $700$ euros, and $400$ branches cost $1000$ euros. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Because of the retainer, the monthly bill is not a power function of the branch count.",
+      "Monitoring $900$ branches costs more than $1200$ euros a month.",
+      "A larger network is cheaper per branch.",
+      "Quadrupling the branch count doubles the whole bill.",
+      "At $36$ branches the bill already exceeds the $100$-branch invoice."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe overview recovered a nonzero retainer\n\n$$F=400$$\n\nA power function of $n$ would be a single monomial $An^{r}$. Adding a positive constant means $C$ is not a power of the branch count.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level at\n\n$$n=900$$\n\nThe overview recovered\n\n$$C(n)=400+30n^{\\frac{1}{2}},$$ so\n\n$$C(900)=400+30\\cdot 30$$\n\n$$C(900)=400+900$$\n\n$$C(900)=1300$$\n\nThe claim needs more than $1200$ euros. We have $1300>1200$.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nCost per branch is the recovered bill divided by $n$:\n\n$$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}}$$\n\nBoth terms fall as $n$ grows. A larger network is cheaper per branch.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nQuadrupling the recorded $100$ branches lands on the second invoice, $400$ branches at $1000$ euros:\n\n$$\\frac{1000}{700}=\\frac{10}{7}\\approx 1.429$$\n\nThe whole bill is multiplied by about $1.429$, not by $2$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nThis is a level at\n\n$$n=36$$\n\nThe overview recovered\n\n$$C(n)=400+30n^{\\frac{1}{2}},$$ so\n\n$$C(36)=400+30\\cdot 6$$\n\n$$C(36)=400+180$$\n\n$$C(36)=580$$\n\nThe $100$-branch invoice is $700$ euros, and $580<700$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The bill is $C(n)=F+An^{\\frac{1}{2}}$ euros a month for $n\\ge 1$ branches. One hundred branches cost $700$ euros and four hundred cost $1000$.\n\n**Part 1: Building the model.**\n\nLet $n$ = branches and $C$ = monthly euros. Two levels recover $F$ and $A$, because the square roots $10$ and $20$ are known.\n\n**1. Translate: the two invoices.**\n\n$$F+10A=700$$\n\n$$F+20A=1000$$\n\n**Part 2: Solve.**\n\n$$10A=300$$\n\n$$A=30$$\n\n$$F+300=700$$\n\n$$F=400$$\n\nThe recovered law is\n\n$$C(n)=400+30n^{\\frac{1}{2}}$$",
+    "title_de_existing": "Fixes Retainer plus Quadratwurzel-Überwachungsgebühr",
+    "context_de_existing": "Eine Compliance-Monitoring-Plattform berechnet $C(n)=F+A n^{\\frac{1}{2}}$ Euro pro Monat für $n\\ge 1$ -Zweige, beide Konstanten sind unbekannt. $100$ Filialen kosten $700$ Euro und $400$ Filialen kosten $1000$ Euro. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Wegen des Retainers ist die monatliche Rechnung keine Machtfunktion des Zweigs.",
+      "Die Überwachung von $900$ Filialen kostet mehr als $1200$ Euro pro Monat.",
+      "Ein größeres Netz ist pro Filiale günstiger.",
+      "Vervierfacht man die Filialzahl, so verdoppelt sich die Rechnung.",
+      "Bei $36$ Filialen übersteigt die Rechnung bereits die $100$ -Zweigrechnung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Übersicht liefert einen nicht Null-Retainer $$F=400$$ Eine Leistungsfunktion von $n$ wäre eine einzelne monomiale $An^{r}$. Das Hinzufügen einer positiven Konstante bedeutet, dass $C$ keine Macht der Zweigzahl ist.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Niveau auf $$n=900$$ Die Übersicht liefert $$C(n)=400+30n^{\\frac{1}{2}},$$ so $$C(900)=400+30\\cdot 30$$ $$C(900)=400+900$$ $$C(900)=1300$$ Der Anspruch benötigt mehr als $1200$ Euro. Wir haben $1300>1200$.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nKosten pro Zweig ist die wiedergewonnene Rechnung geteilt durch $n$: $$\\frac{C(n)}{n}=\\frac{400}{n}+30n^{-\\frac{1}{2}}$$ Beide Begriffe fallen mit dem Wachstum von $n$. Ein größeres Netz ist pro Filiale günstiger.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nVervierfacht man $n$, so wird nur der Wurzelterm verdoppelt; der Fixanteil $F$ bleibt. Die Gesamtrechnung verdoppelt sich daher nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDies ist ein Niveau auf $$n=36$$ Die Übersicht liefert $$C(n)=400+30n^{\\frac{1}{2}},$$ so $$C(36)=400+30\\cdot 6$$ $$C(36)=400+180$$ $$C(36)=580$$ Die $100$ -Zweigrechnung ist $700$ Euro und $580<700$.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Rechnung ist $C(n)=F+An^{\\frac{1}{2}}$ Euro pro Monat für $n\\ge 1$ Filialen. Hundert Filialen kosten $700$ Euro und vierhundert kostet $1000$.\n\n**Teil 1: Modellaufbau.** $n$ = Filialen und $C$ = monatlicher Euro. Zwei Ebenen erholen $F$ und $A$, weil die Quadratwurzeln $10$ und $20$ bekannt sind.\n\n**1. Übersetzen: die beiden Rechnungen.** $$F+10A=700$$ $$F+20A=1000$$ **Teil 2: Lösung.** $$10A=300$$ $$A=30$$ $$F+300=700$$ $$F=400$$ Das wiedererlangte Gesetz ist $$C(n)=400+30n^{\\frac{1}{2}}$$"
+  },
+  {
+    "case_id": "MATH 8.80",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Geometrically Similar Bells Cast From One Pattern",
+    "context_en": "A foundry casts geometrically similar bronze bells from a single pattern, so mass follows $M(h)=A h^{3}$ kilograms, where $h>0$ is height in metres. The pattern book omits the coefficient; it records only that a finished bell of height $0.5$ metres was weighed at $30$ kilograms. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Mass grows faster than height.",
+      "A bell of height $1.5$ m already weighs more than $700$ kg.",
+      "Doubling a bell's height doubles its mass.",
+      "Mass per metre of height is the same at every height.",
+      "A one-metre bell already weighs more than $200$ kg."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe given exponent is $3$. Mass grows faster than height when that exponent is larger than one:\n\n$$3>1$$\n\nKeep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level at height $1.5$ m. The overview recovered\n\n$$M(h)=240h^{3}$$\n\n, so\n\n$$(1.5)^{3}=\\frac{27}{8}$$\n\n$$(1.5)^{3}=3.375$$\n\n$$M(1.5)=240\\cdot 3.375$$\n\n$$M(1.5)=720.375$$\n\n$$M(1.5)=810$$\n\nThe claim needs more than $700$ kg. We have $810>700$.\n\nSo the statement is True.",
+      "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nDoubling height multiplies mass by $2$ only if the exponent is $1$. The given exponent is $3$, so\n\n$$\\frac{M(2h)}{M(h)}=2^{3}$$\n\n$$\\frac{M(2h)}{M(h)}=8$$\n\n$$2^{3}=8$$\n\nDoubling a bell's height multiplies its mass by $8$, not by $2$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nMass per metre of height is the recovered law divided by $h$:\n\n$$\\frac{M(h)}{h}=240h^{2}$$\n\nThat quantity still depends on $h$. It is not the same at every height.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nKeep the stated domain in force while you evaluate the model.\n\nThis is a level at height $1$ m. The overview recovered\n\n$$M(h)=240h^{3}$$\n\n, so\n\n$$M(1)=240$$\n\nThe claim needs more than $200$ kg. We have $240>200$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Similar bells obey $M(h)=Ah^{3}$ kilograms for height $h>0$ metres. A finished bell of height $0.5$ metres weighed $30$ kilograms.\n\n**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; the weighing pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**Part 2: Solve.**\n\n$$(0.5)^{3}=\\frac{1}{8}$$\n\n$$\\frac{A}{8}=30$$\n\n$$A=240$$\n\nThe recovered law is\n\n$$M(h)=240h^{3}$$",
+    "title_de_existing": "Geometrisch ähnliche Glocken aus einer Form",
+    "context_de_existing": "Eine Gießerei fertigt geometrisch ähnliche Bronzeglocken nach einem einzigen Muster, daher folgt die Masse $M(h)=A h^{3}$ Kilogramm bei Höhe $h>0$ Meter. Das Musterbuch lässt den Koeffizienten weg; es hält nur fest, dass eine fertige Glocke der Höhe $0.5$ Meter mit $30$ Kilogramm gewogen wurde. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Die Masse wächst schneller als die Höhe.",
+      "Eine Glocke der Höhe $1.5$ m wiegt bereits mehr als $700$ kg.",
+      "Die Verdoppelung der Höhe einer Glocke verdoppelt ihre Masse.",
+      "Die Masse pro Meter Höhe ist auf jeder Höhe gleich.",
+      "Eine ein Meter hohe Glocke wiegt bereits mehr als $200$ kg."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDer gegebene Exponent ist $3$. Die Masse wächst schneller als die Höhe, wenn dieser Exponent größer als eins ist:\n\n$$3>1$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nBilde das Verhältnis, sodass der unbekannte positive Koeffizient wegfällt.\n\nDies ist ein Level in der Höhe $1.5$ m. Die Übersicht liefert $$M(h)=240h^{3}$$, so $$(1.5)^{3}=\\frac{27}{8}$$ $$(1.5)^{3}=3.375$$ $$M(1.5)=240\\cdot 3.375$$ $$M(1.5)=720.375$$ $$M(1.5)=810$$ Der Anspruch benötigt mehr als $700$ kg. Wir haben $810>700$.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie Verdoppelungshöhe vervielfacht die Masse durch $2$ nur, wenn der Exponent $1$ ist. Der angegebene Exponent ist $3$, also $$\\frac{M(2h)}{M(h)}=2^{3}$$ $$\\frac{M(2h)}{M(h)}=8$$ $$2^{3}=8$$ Die Verdoppelung der Höhe einer Glocke vervielfacht ihre Masse durch $8$, nicht durch $2$.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nMasse pro Meter Höhe ist das wiedergewonnene Gesetz geteilt durch $h$: $$\\frac{M(h)}{h}=240h^{2}$$ Diese Menge hängt immer noch von $h$ ab. Es ist nicht auf jeder Höhe dasselbe.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHalte die angegebene Definitionsmenge ein, während du das Modell auswertest.\n\nDies ist ein Level in der Höhe $1$ m. Die Übersicht liefert $$M(h)=240h^{3}$$, so $$M(1)=240$$ Der Anspruch benötigt mehr als $200$ kg. Wir haben $240>200$.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Ähnliche Glocken gehorchen $M(h)=Ah^{3}$ Kilogramm für die Höhe $h>0$ Meter. Eine fertige Glocke der Höhe $0.5$ Meter wog $30$ Kilogramm.\n\n**Teil 1: Modellaufbau.** $h$ = Höhe in Meter und $M$ = Masse in Kilogramm. Die geometrische Ähnlichkeit behebt den Exponenten bei $3$; die Wägestifte $A$.\n\n**1. Übersetzen: der gewogene Glocke.** $$A(0.5)^{3}=30$$ **Teil 2: Lösung.** $$(0.5)^{3}=\\frac{1}{8}$$ $$\\frac{A}{8}=30$$ $$A=240$$ Das wiedererlangte Gesetz ist $$M(h)=240h^{3}$$"
+  },
+  {
+    "case_id": "MATH 8.90",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Two Shuttle Fare Timers Under a Wait Cap",
+    "context_en": "Two municipal shuttle apps quote wait time for a trip of distance $d>0$ kilometres. App L follows $L(d)=a d^{\\frac{1}{2}}$ minutes and App Q follows $Q(d)=k d$ minutes, with both coefficients unpublished. A logged $25$ km trip on App L quoted $20$ minutes, and a logged $100$ km trip on App Q quoted $20$ minutes. A service-level agreement caps wait at $20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The two apps quote the same wait at two different positive distances.",
+      "Once App L quotes a shorter wait than App Q, App Q never catches up.",
+      "App L's wait per kilometre falls as the trip gets longer.",
+      "Under the $20$-minute cap, App L can serve trips longer than $30$ kilometres.",
+      "At $400$ kilometres both apps already quote more than $70$ minutes."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe two apps quote the same wait when\n\n$$L(d)=Q(d)$$\n\n. The overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\n, so\n\n$$4d^{\\frac{1}{2}}=\\frac{1}{5}d$$\n\n$$d-20d^{\\frac{1}{2}}=0$$\n\n$$d^{\\frac{1}{2}}\\bigl(d^{\\frac{1}{2}}-20\\bigr)=0$$\n\nThe roots are\n\n$$d=0$$\n\n and\n\n$$d=400$$\n\n. On $d>0$ they meet only once.\n\nThey do not quote the same wait at two different positive distances.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**B.** → True\n\nThe overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\nTheir ratio is\n\n$$\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}$$\n\nwhich is strictly increasing for $d>0$. Once the ratio passes $1$, it cannot return to $1$, so App Q cannot catch App L again.\n\nAfter App L is shorter, App Q stays longer.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the exponent from the overview before comparing growth rates.\n\nApp L's wait per kilometre is the recovered law divided by distance:\n\n$$\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$$\n\nThe leftover exponent is negative, so that ratio falls as the trip gets longer.\n\nWait per kilometre on App L falls.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nUnder the $20$-minute cap, App L can serve distances with $L(d)\\le 20$. The overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n, so\n\n$$4d^{\\frac{1}{2}}=20$$\n\n$$d=25$$\n\nThe longest legal App L trip is $25$ km, which is not longer than $30$ km.\n\nApp L cannot serve trips longer than $30$ kilometres under the cap.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe overview recovered\n\n$$L(d)=4d^{\\frac{1}{2}}$$\n\n and\n\n$$Q(d)=\\frac{1}{5}d$$\n\n. At $400$ kilometres:\n\n$$L(400)=4\\cdot 20$$\n\n$$L(400)=80$$\n\n$$Q(400)=\\frac{400}{5}$$\n\n$$Q(400)=80$$\n\nThe claim is that both already sit above $70$. We have $80>70$ on each app.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "App L quotes $L(d)=ad^{\\frac{1}{2}}$ minutes and App Q quotes $Q(d)=kd$ minutes, for trip distance $d>0$ kilometres. A $25$ km trip on App L quoted $20$ minutes, and a $100$ km trip on App Q quoted $20$ minutes. Wait is capped at $20$ minutes.\n\n**Part 1: Building the model.**\n\nLet $d$ = trip distance in kilometres. Each log pins one coefficient, because each exponent is given.\n\n**1. Translate: App L.**\n\n$$a\\cdot 25^{\\frac{1}{2}}=20 \\tag{1}$$\n\n**2. Translate: App Q.**\n\n$$k\\cdot 100=20 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$, $5a=20$ and $a=4$. From $(2)$, $k=\\frac{1}{5}$.\n\nThe recovered waits are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$.\n\n**Answer.** $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$",
+    "title_de_existing": "Zwei Shuttle-Tariftimer unter einer Warte-Obergrenze",
+    "context_de_existing": "Zwei städtische Shuttle-Apps zitieren Wartezeit für eine Reise der Entfernung $d>0$ Kilometer. App L folgt $L(d)=a d^{\\frac{1}{2}}$ Minuten und App Q folgt $Q(d)=k d$ Minuten, wobei beide Koeffizienten unveröffentlicht sind. Eine protokollierte $25$ km Reise auf App L zitierte $20$ Minuten, und eine protokollierte $100$ km Reise auf App Q zitierte $20$ Minuten. Eine Service-Level-Vereinbarungs-Caps warten bei $20$ Minuten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Die beiden Apps zitieren das gleiche Warten auf zwei verschiedene positive Entfernungen.",
+      "Sobald App L eine kürzere Wartezeit meldet als App Q, holt App Q nie wieder auf.",
+      "Die Wartezeit von App L pro Kilometer fällt, wenn die Fahrt länger wird.",
+      "Unter der $20$ -Minute Kappe kann App L Reisen länger als $30$ Kilometer bedienen.",
+      "Bei $400$ Kilometer zitieren beide Apps bereits mehr als $70$ Minuten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nDie beiden Apps zitieren die gleiche Wartezeit, wenn $$L(d)=Q(d)$$. Die Übersicht liefert $$L(d)=4d^{\\frac{1}{2}}$$ und $$Q(d)=\\frac{1}{5}d$$, so $$\n\\begin{aligned}\n4d^{\\frac{1}{2}}=\\frac{1}{5}d \\\\\nd-20d^{\\frac{1}{2}}=0 \\\\\nd^{\\frac{1}{2}}\\bigl(d^{\\frac{1}{2}}-20\\bigr)=0\n\\end{aligned}\n$$ Die Wurzeln sind $$d=0$$ und $$d=400$$. Auf $d>0$ treffen sie sich nur einmal.\n\nSie zitieren nicht dasselbe Warten in zwei verschiedenen positiven Entfernungen.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nDie Übersicht liefert $$L(d)=4d^{\\frac{1}{2}}$$ und $$Q(d)=\\frac{1}{5}d$$ Ihr Verhältnis ist $$\\frac{Q(d)}{L(d)}=\\frac{1}{20}d^{\\frac{1}{2}}$$ die für $d>0$ stark ansteigt. Sobald das Verhältnis $1$ passiert, kann es nicht mehr zu $1$ zurückkehren, daher kann App Q App L nicht mehr fangen.\n\nNachdem App L kürzer ist, bleibt App Q länger.\n\nDer berechnete Wert bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLies den Exponenten aus der Übersicht, bevor du Wachstumsraten vergleichst.\n\nDie Wartezeit von App L pro Kilometer ist\n\n$$\\frac{L(d)}{d}=4 d^{-\\frac{1}{2}}$$\n\nDieser Ausdruck fällt in $d$.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nGehe von der kalibrierten geschlossenen Form in der Übersicht aus.\n\nUnter der $20$ -Minute Kappe kann App L Distanzen mit $L(d)\\le 20$ bedienen. Die Übersicht liefert $$L(d)=4d^{\\frac{1}{2}}$$, so $$4d^{\\frac{1}{2}}=20$$ $$d=25$$ Die längste legale App L Fahrt ist $25$ km, die nicht länger als $30$ km ist.\n\nApp L kann Reisen nicht länger als $30$ Kilometer unter der Kappe bedienen.\n\nDie berechnete Zahl widerspricht dem Anspruch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie Übersicht liefert $$L(d)=4d^{\\frac{1}{2}}$$ und $$Q(d)=\\frac{1}{5}d$$. At $400$ Kilometer: $$L(400)=4\\cdot 20$$ $$L(400)=80$$ $$Q(400)=\\frac{400}{5}$$ $$Q(400)=80$$ Die Behauptung ist, dass beide bereits über $70$ sitzen. Wir haben $80>70$ auf jeder App.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "App L zitiert $L(d)=ad^{\\frac{1}{2}}$ Minuten und App Q zitiert $Q(d)=kd$ Minuten, für die Reisedistanz $d>0$ Kilometer. Eine $25$ km Reise auf App L zitierte $20$ Minuten, und eine $100$ km Reise auf App Q zitierte $20$ Minuten. Die Wartezeit ist bei $20$ Minuten begrenzt.\n\n**Teil 1: Modellaufbau.**\n\nLet $d$ = trip distance in Kilometer. Jedes Protokoll pins ein Koeffizient, weil jeder Exponent gegeben ist.\n\n**1. Translate: App L.** $$a\\cdot 25^{\\frac{1}{2}}=20 \\tag{1}$$ **2. Translate: App Q.** $$k\\cdot 100=20 \\tag{2}$$ **Teil 2: Lösung.**\n\nAus $(1)$, $5a=20$ und $a=4$. Aus $(2)$, $k=\\frac{1}{5}$.\n\nDie wiederhergestellten Wartezeiten sind $L(d)=4d^{\\frac{1}{2}}$ und $Q(d)=\\frac{1}{5}d$.\n\n**Antwort.** $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$"
+  },
+  {
+    "case_id": "MATH 8.108",
+    "short_letters": [
+      0,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 11",
+    "context_en": "A kiln uses the power model $M(s)=3s^3$ grams for positive mold scale $s$. The same calibration is used at $s=1$, $s=2$, and $s=4$, with no rounding. Technicians must evaluate the model directly and compare outputs from these three settings.",
+    "statements_en": [
+      "$M(1)=3$.",
+      "$M(2)=24$.",
+      "$M(4)=192$.",
+      "$M(4)=2M(2)$.",
+      "$M(s)$ is positive for every allowed $s$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe kiln is calibrated to the cubic power law\n\n$$M(s)=3s^{3}$$\n\nfor every positive mold scale $s$. Substitute the claimed unit scale:\n\n$$M(1)=3\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=3\\cdot 1$$\n\n$$M(1)=3$$\n\nThe computed mass matches the claimed reading $3$.\n\nSo the statement is True.",
+      "**B.** → True\n\nKeep the same calibrated model from the overview and evaluate at\n\n$$s=2$$\n\n$$M(s)=3s^{3}$$\n\n$$M(2)=3\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=3\\cdot 8$$\n\n$$M(2)=24$$\n\nComparing with the claimed reading $24$ gives\n\n$$24=24.$$\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute the claimed scale and evaluate the calibrated model.\n\n$$s=4$$\n\n$$M(s)=3s^{3}$$\n\n$$M(4)=3\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=3\\cdot 64$$\n\n$$M(4)=192$$\n\nComparing with the claimed reading $192$ gives\n\n$$192=192.$$\n\nSo the statement is True.",
+      "**D.** → False\n\nForm the output ratio so the positive coefficient cancels:\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 4^{3}}{3\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{3\\cdot 64}{3\\cdot 8}$$\n\n$$\\frac{4}{2}$$\n\n$$\\frac{M(4)}{M(2)}=2$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nThe claim asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$. The true ratio is $8$, so\n\n$$8\\neq 2.$$\n\nSo the statement is False.",
+      "**E.** → True\n\nThe shared model is a product of a positive coefficient and a positive power on $s>0$:\n\n$$M(s)=3s^{3}$$\n\n$$3>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\nTherefore every allowed input yields\n\n$$M(s)=3s^{3}$$\n\n$$3s^{3}>0$$\n\nThe model output is positive for every allowed scale.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A kiln uses the cubic power model $M(s)=3s^{3}$ grams for mold scale $s>0$. The same calibration is evaluated at $s=1$, $s=2$, and $s=4$ with no rounding.\n\n**Answer.** The shared model is $M(s)=3s^{3}$. Levels keep the coefficient $3$; scale ratios cancel it and leave only a power of the input ratio. Each letter only checks its extra evaluation or comparison.",
+    "title_de_existing": "Prüfungsaufgaben – 11",
+    "context_de_existing": "$M(s)=3s^3$ Gramm for positiv mold scale $s$ $s=1$ , $s=2$ , and $s=4$ Die Übersicht stützt die Prüfung.",
+    "statements_de_existing": [
+      "$M(1)=3$.",
+      "$M(2)=24$.",
+      "$M(4)=192$.",
+      "$M(4)=2M(2)$.",
+      "$M(s)$ is positiv für jedes allowed $s$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$M(s)=3s^{3}$$\n\nfor every positiv mold scale $s$\n\n$$M(1)=3\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=3\\cdot 1$$\n\n$$M(1)=3$$\n\n$3$ .\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=2$$\n\n$$M(s)=3s^{3}$$\n\n$$M(2)=3\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=3\\cdot 8$$\n\n$$M(2)=24$$\n\n$24$ gives\n\n$$24=24.$$\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=4$$\n\n$$M(s)=3s^{3}$$\n\n$$M(4)=3\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=3\\cdot 64$$\n\n$$M(4)=192$$\n\n$192$ gives\n\n$$192=192.$$\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$\n\\begin{aligned}\n\\frac{M(4)}{M(2)}=\\frac{3\\cdot 4^{3}}{3\\cdot 2^{3}} \\\\\n4^{3}=64 \\\\\n\\frac{M(4)}{M(2)}=\\frac{3\\cdot 64}{3\\cdot 8} \\\\\n\\frac{4}{2} \\\\\n\\frac{M(4)}{M(2)}=2 \\\\\n\\left(\\frac{4}{2}\\right)^{3} \\\\\n\\frac{M(4)}{M(2)}=2^{3} \\\\\n\\frac{M(4)}{M(2)}=8 \\\\\n2^{3}=8\n\\end{aligned}\n$$\n\nThe Behauptung asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$ $8$ , so\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$s>0$ :\n\n$$M(s)=3s^{3}$$\n\n$$3>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\nDaher every allowed input yields\n\n$$M(s)=3s^{3}$$\n\n$$3s^{3}>0$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "$M(s)=3s^{3}$ Gramm for mold scale $s>0$ $s=1$ , $s=2$ , and $s=4$ with no rounding. $M(s)=3s^{3}$ . Levels keep the Koeffizient $3$ Die Aussage wird anhand der Übersicht geprüft."
+  },
+  {
+    "case_id": "MATH 8.113",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 16",
+    "context_en": "A kiln uses the power model $M(s)=4s^3$ grams for positive mold scale $s$. The same calibration is used at $s=1$, $s=2$, and $s=4$, with no rounding. Technicians must evaluate the model directly and compare outputs from these three settings.",
+    "statements_en": [
+      "$M(1)=4$.",
+      "$M(2)=32$.",
+      "$M(4)=256$.",
+      "$M(4)=2M(2)$.",
+      "$M(s)$ is positive for every allowed $s$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe kiln follows the cubic model\n\n$$M(s)=4s^{3}$$\n\nSubstitute the claimed scale\n\n$$s=1$$\n\n$$M(1)=4\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=4\\cdot 1$$\n\n$$M(1)=4$$\n\nComparing with the claimed reading $4$ gives\n\n$$4=4.$$\n\nSo the statement is True.",
+      "**B.** → True\n\nKeep the same calibrated model and evaluate at\n\n$$s=2$$\n\n$$M(s)=4s^{3}$$\n\n$$M(2)=4\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=4\\cdot 8$$\n\n$$M(2)=32$$\n\nComparing with the claimed reading $32$ gives\n\n$$32=32$$\n\nMatching the computed figure with the claim shows agreement.\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute the claimed scale and evaluate the calibrated model.\n\n$$s=4$$\n\n$$M(s)=4s^{3}$$\n\n$$M(4)=4\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=4\\cdot 64$$\n\n$$M(4)=256$$\n\nComparing with the claimed reading $256$ gives\n\n$$256=256$$\n\nMatching the computed figure with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → False\n\nForm the output ratio so the coefficient cancels:\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 4^{3}}{4\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 64}{4\\cdot 8}$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nThe claim asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$. The true ratio is $8$, so\n\n$$8\\neq 2.$$\n\nSo the statement is False.",
+      "**E.** → True\n\nThe shared model is a product of a positive coefficient and a positive power on $s>0$:\n\n$$M(s)=4s^{3}$$\n\n$$4>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\nTherefore every allowed input yields\n\n$$M(s)=4s^{3}$$\n\n$$4s^{3}>0$$\n\nThe model stays positive on its domain.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A kiln uses the cubic power model $M(s)=4s^{3}$ grams for mold scale $s>0$. The same calibration is evaluated at $s=1$, $s=2$, and $s=4$ with no rounding.\n\n**Answer.** The shared model is $M(s)=4s^{3}$. Levels keep the coefficient $4$; scale ratios cancel it and leave only a power of the input ratio. Each letter only checks its extra evaluation or comparison.",
+    "title_de_existing": "Prüfungsaufgaben – 16",
+    "context_de_existing": "$M(s)=4s^3$ Gramm for positiv mold scale $s$ $s=1$ , $s=2$ , and $s=4$ Die Übersicht stützt die Prüfung.",
+    "statements_de_existing": [
+      "$M(1)=4$.",
+      "$M(2)=32$.",
+      "$M(4)=256$.",
+      "$M(4)=2M(2)$.",
+      "$M(s)$ is positiv für jedes allowed $s$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$M(s)=4s^{3}$$\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=1$$\n\n$$M(1)=4\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=4\\cdot 1$$\n\n$$M(1)=4$$\n\n$4$ gives\n\n$$4=4.$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=2$$\n\n$$M(s)=4s^{3}$$\n\n$$M(2)=4\\cdot 2^{3}$$\n\n$$2^{3}=8$$\n\n$$M(2)=4\\cdot 8$$\n\n$$M(2)=32$$\n\n$32$ gives\n\n$$32=32$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$s=4$$\n\n$$M(s)=4s^{3}$$\n\n$$M(4)=4\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=4\\cdot 64$$\n\n$$M(4)=256$$\n\n$256$ gives\n\n$$256=256$$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$\n\\begin{aligned}\n\\frac{M(4)}{M(2)}=\\frac{4\\cdot 4^{3}}{4\\cdot 2^{3}} \\\\\n4^{3}=64 \\\\\n\\frac{M(4)}{M(2)}=\\frac{4\\cdot 64}{4\\cdot 8} \\\\\n\\left(\\frac{4}{2}\\right)^{3} \\\\\n\\frac{M(4)}{M(2)}=2^{3} \\\\\n\\frac{M(4)}{M(2)}=8 \\\\\n2^{3}=8\n\\end{aligned}\n$$\n\nThe Behauptung asserts\n\n$$M(4)=2M(2)$$\n\n, which would mean the ratio equals $2$ $8$ , so\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$s>0$ :\n\n$$M(s)=4s^{3}$$\n\n$$4>0$$\n\n$$s>0$$\n\n$$s^{3}>0$$\n\nDaher every allowed input yields\n\n$$M(s)=4s^{3}$$\n\n$$4s^{3}>0$$\n\nThe model stays positiv on its Definitionsmenge.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "$M(s)=4s^{3}$ Gramm for mold scale $s>0$ $s=1$ , $s=2$ , and $s=4$ with no rounding. $M(s)=4s^{3}$ . Levels keep the Koeffizient $4$ Die Aussage wird anhand der Übersicht geprüft."
+  },
+  {
+    "case_id": "MATH 8.115",
+    "short_letters": [
+      2,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 18",
+    "context_en": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$. The controller accepts only the positive real setting, and its verification routine first isolates the power before raising both sides to the reciprocal exponent. All displayed values are exact.",
+    "statements_en": [
+      "$x^{3/2}=64$.",
+      "$x=16$.",
+      "$x=-16$ is also allowed.",
+      "$x^{1/2}=4$.",
+      "The equation has two positive solutions."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the controller equation and isolate the power:\n\n$$5x^{3/2}=320$$\n\nDivide both sides by the coefficient $5$:\n\n$$\\frac{5x^{3/2}}{5}=\\frac{320}{5}$$\n\n$$x^{3/2}=64$$\n\nThe isolated power matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe overview already isolated\n\n$$x^{3/2}=64$$\n\n. Raise both sides to the reciprocal exponent $\\dfrac{2}{3}$:\n\n$$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$\n\n$$x=64^{2/3}$$\n\n$$64^{1/3}$$\n\n$$x=4$$\n\n$$64^{2/3}=(64^{1/3})^{2}$$\n\n$$64^{2/3}$$\n\n$$64^{2/3}=4^{2}$$\n\n$$4^{2}=16$$\n\n$$64^{2/3}=16$$\n\nThe unique positive solution is\n\n$$x=16$$\n\n.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe stem restricts the setting to the positive reals:\n\n$$x>0$$\n\nThe real map\n\n$$x\\mapsto x^{3/2}$$\n\n is built from the positive square root. A negative candidate such as\n\n$$x=-16$$\n\n therefore lies outside the allowed domain and is not an accepted solution.\n\nSo the statement is False.",
+      "**D.** → True\n\nFrom the shared solve the unique positive root is\n\n$$x=16$$\n\n. The claim asks for the positive square root of that root, which is the factor needed by the real $3/2$ power:\n\n$$x^{1/2}=\\sqrt{16}$$\n\n$$\\sqrt{16}=4$$\n\n$$x^{1/2}=4$$\n\nThat square-root identity matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nOn $x>0$ the map\n\n$$x\\mapsto x^{3/2}$$\n\n is strictly increasing. After isolating the power,\n\n$$x^{3/2}=64$$\n\na continuous strictly increasing map meets any positive target value exactly once. The positive root is\n\n$$x=16$$\n\n, so there are not two positive solutions.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$. The controller accepts only the positive real root and isolates the power before raising both sides to the reciprocal exponent.\n\n**Answer.** Isolating gives $x^{3/2}=64$, then $x=64^{2/3}=16$. On $x>0$ the map $x\\mapsto x^{3/2}$ is strictly increasing, so the positive root is unique. Each letter only checks its isolation, root, domain, square-root, or uniqueness claim.",
+    "title_de_existing": "Prüfungsaufgaben – 18",
+    "context_de_existing": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$ Die Übersicht stützt die Prüfung.",
+    "statements_de_existing": [
+      "$x^{3/2}=64$.",
+      "$x=16$.",
+      "$x=-16$ is also allowed. Die Aussage ist zu prüfen.",
+      "$x^{1/2}=4$.",
+      "The equation has two positiv solutions. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$5x^{3/2}=320$$\n\nDivide both sides by the Koeffizient $5$:\n\n$$\\frac{5x^{3/2}}{5}=\\frac{320}{5}$$\n\n$$x^{3/2}=64$$\n\nDie isolierte Potenz stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nThe Übersicht already isolated\n\n$$x^{3/2}=64$$\n\n$\\dfrac{2}{3}$ :\n\n$$\n\\begin{aligned}\nx=\\bigl(x^{3/2}\\bigr)^{2/3} \\\\\nx=64^{2/3} \\\\\n64^{1/3} \\\\\nx=4 \\\\\n64^{2/3}=(64^{1/3})^{2} \\\\\n64^{2/3} \\\\\n64^{2/3}=4^{2} \\\\\n4^{2}=16 \\\\\n64^{2/3}=16\n\\end{aligned}\n$$\n\nThe unique positiv solution is\n\n$$x=16$$\n\n.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$x>0$$\n\nThe real map\n\n$$x\\mapsto x^{3/2}$$\n\nDie Rechnung widerspricht der Behauptung.\n\n$$x=-16$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$x=16$$\n\n$3/2$ power:\n\n$$x^{1/2}=\\sqrt{16}$$\n\n$$\\sqrt{16}=4$$\n\n$$x^{1/2}=4$$\n\nThat square-Nullstelle(n) identity matches the Behauptung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nOn $x>0$ the map\n\n$$x\\mapsto x^{3/2}$$\n\nDie Rechnung widerspricht der Behauptung.\n\n$$x^{3/2}=64$$\n\nDie Rechnung widerspricht der Behauptung.\n\n$$x=16$$\n\n, so there are not two positiv solutions.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "A pressure setting $x>0$ must satisfy $5x^{3/2}=320$\n\n**Antwort.** Isolating gives $x^{3/2}=64$, then $x=64^{2/3}=16$. On $x>0$ the map $x\\mapsto x^{3/2}$ is streng steigend, so the positiv Nullstelle(n) is unique. Each letter only checks its isolation, Nullstelle(n), Definitionsmenge, square-Nullstelle(n), or uniqueness Behauptung. Die Übersicht und die Behauptung werden damit geprüft."
+  }
+]

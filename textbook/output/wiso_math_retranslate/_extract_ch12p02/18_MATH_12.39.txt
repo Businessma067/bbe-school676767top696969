@@ -1,0 +1,267 @@
+CASE MATH 12.39
+ANSWER [true, true, false, false, false]
+TITLE_DE Die Regionalpokal-Schau
+CONTEXT_DE 16 Vereine, davon 6 gesetzt und 10 ungesetzt. Zufällig werden 4 für eine Exhibition gewählt.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 4-Vereins-Felder beträgt 1.820.
+  B. Die Wahrscheinlichkeit für genau 2 gesetzte Vereine ist größer als 35%.
+  C. Die Wahrscheinlichkeit, dass alle 4 gesetzt sind, ist größer als 1%.
+  D. Die Wahrscheinlichkeit für keinen gesetzten Verein ist kleiner als 10%.
+  E. Die Wahrscheinlichkeit für mindestens 3 gesetzte ist größer als die für genau 2.
+
+=== EXPL 0 A ===
+**A.** → True
+
+This statement asks for the total number of possible 4-club exhibition fields. This is equivalent to finding the total number of ways to choose $4$ clubs from the $16$ available clubs, without regard to order. This is a combination problem, represented by $\binom{16}{4}$.
+
+$$
+\binom{16}{4} = \dfrac{16!}{4!(16-4)!}
+$$
+
+$$
+\dfrac{16!}{4!(12)!} = \dfrac{16 \cdot 15 \cdot 14 \cdot 13}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+16 \times 15 = 240
+$$
+
+$$
+240 \times 14 = 3360
+$$
+
+$$
+3360 \times 13 = 43680
+$$
+
+$$
+\dfrac{43680}{24} = 1820
+$$
+
+$$
+\binom{16}{4} = 1820
+$$
+
+We find that there are $1,820$ possible combinations of $4$ clubs. The claim states that the total number of possible 4-club exhibition fields is $1,820$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the probability that the exhibition contains exactly $2$ seeded clubs. This means we need to select $2$ seeded clubs from the $6$ available seeded clubs and $2$ unseeded clubs from the $10$ available unseeded clubs. The probability is calculated as the ratio of the number of favorable outcomes to the total number of possible outcomes.
+
+The number of ways to choose exactly $2$ seeded clubs and $2$ unseeded clubs is $\binom{6}{2} \binom{10}{2}$. From the overview, this value is $675$.
+The total number of ways to choose $4$ clubs from $16$ is $\binom{16}{4}$. From the overview, this value is $1,820$.
+
+So, the probability $P(k=2)$ is:
+
+$$
+\binom{16}{4} = \dfrac{16!}{4!(16-4)!}
+$$
+
+$$
+\dfrac{16!}{4!(12)!} = \dfrac{16 \cdot 15 \cdot 14 \cdot 13}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+16 \times 15 = 240
+$$
+
+$$
+240 \times 14 = 3360
+$$
+
+$$
+3360 \times 13 = 43680
+$$
+
+$$
+\dfrac{43680}{24} = 1820
+$$
+
+$$
+\binom{16}{4} = 1820
+$$
+
+$$
+P(k = 2) = \frac{\binom{6}{2} \binom{10}{2}}{\binom{16}{4}} = \frac{675}{1,820}
+$$
+
+$$
+\approx 0.370879
+$$
+
+As a percentage, this is approximately $37.09\%$. The claim states that this probability is greater than $35\%$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This statement asks for the probability that all $4$ exhibition clubs are seeded. This means we need to select $4$ seeded clubs from the $6$ available seeded clubs and $0$ unseeded clubs from the $10$ available unseeded clubs. The probability is calculated using the ratio of favorable outcomes to total outcomes.
+
+The number of ways to choose exactly $4$ seeded clubs and $0$ unseeded clubs is $\binom{6}{4} \binom{10}{0}$. From the overview, this value is $15$.
+The total number of ways to choose $4$ clubs from $16$ is $\binom{16}{4}$. From the overview, this value is $1,820$.
+
+So, the probability $P(k=4)$ is:
+
+$$
+\binom{16}{4} = \dfrac{16!}{4!(16-4)!}
+$$
+
+$$
+\dfrac{16!}{4!(12)!} = \dfrac{16 \cdot 15 \cdot 14 \cdot 13}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+16 \times 15 = 240
+$$
+
+$$
+240 \times 14 = 3360
+$$
+
+$$
+3360 \times 13 = 43680
+$$
+
+$$
+\dfrac{43680}{24} = 1820
+$$
+
+$$
+\binom{16}{4} = 1820
+$$
+
+$$
+P(k = 4) = \frac{\binom{6}{4} \binom{10}{0}}{\binom{16}{4}} = \frac{15}{1,820}
+$$
+
+$$
+\approx 0.0082417
+$$
+
+As a percentage, this is approximately $0.82\%$. The claim states that this probability is greater than $1\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that the exhibition contains no seeded clubs. This means we need to select $0$ seeded clubs from the $6$ available seeded clubs and $4$ unseeded clubs from the $10$ available unseeded clubs. The probability is found by dividing the number of such selections by the total number of possible selections.
+
+The number of ways to choose exactly $0$ seeded clubs and $4$ unseeded clubs is $\binom{6}{0} \binom{10}{4}$. From the overview, this value is $210$.
+The total number of ways to choose $4$ clubs from $16$ is $\binom{16}{4}$. From the overview, this value is $1,820$.
+
+So, the probability $P(k=0)$ is:
+
+$$
+\binom{16}{4} = \dfrac{16!}{4!(16-4)!}
+$$
+
+$$
+\dfrac{16!}{4!(12)!} = \dfrac{16 \cdot 15 \cdot 14 \cdot 13}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+16 \times 15 = 240
+$$
+
+$$
+240 \times 14 = 3360
+$$
+
+$$
+3360 \times 13 = 43680
+$$
+
+$$
+\dfrac{43680}{24} = 1820
+$$
+
+$$
+\binom{16}{4} = 1820
+$$
+
+$$
+P(k = 0) = \frac{\binom{6}{0} \binom{10}{4}}{\binom{16}{4}} = \frac{210}{1,820}
+$$
+
+$$
+\approx 0.115385
+$$
+
+As a percentage, this is approximately $11.54\%$. The claim states that this probability is less than $10\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement compares two probabilities: the probability that the exhibition contains at least $3$ seeded clubs and the probability that it contains exactly $2$ seeded clubs. To find the probability of at least $3$ seeded clubs, we sum the probabilities of having exactly $3$ seeded clubs ($P(k=3)$) and exactly $4$ seeded clubs ($P(k=4)$), as these events are mutually exclusive.
+
+First, we calculate $P(k=3)$. The number of ways to choose $3$ seeded clubs from $6$ and $1$ unseeded club from $10$ is $\binom{6}{3} \binom{10}{1}$. From the overview, this value is $200$.
+
+$$
+\binom{16}{4} = \dfrac{16!}{4!(16-4)!}
+$$
+
+$$
+\dfrac{16!}{4!(12)!} = \dfrac{16 \cdot 15 \cdot 14 \cdot 13}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+16 \times 15 = 240
+$$
+
+$$
+240 \times 14 = 3360
+$$
+
+$$
+3360 \times 13 = 43680
+$$
+
+$$
+\dfrac{43680}{24} = 1820
+$$
+
+$$
+\binom{16}{4} = 1820
+$$
+
+$$
+P(k = 3) = \frac{\binom{6}{3} \binom{10}{1}}{\binom{16}{4}} = \frac{200}{1,820}
+$$
+
+From the explanation for statement C, the probability of exactly $4$ seeded clubs is:
+
+$$
+P(k = 4) = \frac{15}{1,820}
+$$
+
+Now, we find the probability of at least $3$ seeded clubs:
+
+$$
+P(k \ge 3) = P(k = 3) + P(k = 4) = \frac{200}{1,820} + \frac{15}{1,820}
+$$
+
+$$
+P(k \ge 3) = \frac{215}{1,820}
+$$
+
+$$
+\approx 0.118132
+$$
+
+As a percentage, $P(k \ge 3)$ is approximately $11.81\%$. From the explanation for statement B, the probability of exactly $2$ seeded clubs is $P(k=2) \approx 0.370879$, or $37.09\%$.
+
+The claim states that $P(k \ge 3)$ is greater than $P(k=2)$. Comparing the values, $11.81\% \not> 37.09\%$.
+
+So the statement is False.
+

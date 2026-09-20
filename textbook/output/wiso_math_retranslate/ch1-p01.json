@@ -1,0 +1,968 @@
+[
+  {
+    "case_id": "MATH 1.09",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Complements of Overlapping Skill Sets",
+    "context_en": "Among U = 12 employees (numbered 1-12), let $X = \\{1,2,3,4,5,6\\}$ be those who know Python, and $Y = \\{4,5,6,7,8,9\\}$ be those who know SQL. Complements are taken relative to U.",
+    "statements_en": [
+      "$X^{c} = \\{7, 8, 9, 10, 11, 12\\}$",
+      "$(X \\cup Y)^{c} = \\{10, 11, 12\\}$",
+      "$X^{c} \\cap Y^{c} = \\{10, 11, 12\\}$",
+      "$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$",
+      "$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe universe is $U=\\{1,2,\\ldots,12\\}$ and\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\nComplement keeps the members of $U$ that miss $X$:\n\n$$7\\notin X$$\n\n$$8\\notin X$$\n\n$$9\\notin X$$\n\n$$10\\notin X$$\n\n$$11\\notin X$$\n\n$$12\\notin X$$\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nFirst form the union:\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$\n\nComplement relative to $U=\\{1,2,\\ldots,12\\}$:\n\n$$10\\notin X\\cup Y$$\n\n$$11\\notin X\\cup Y$$\n\n$$12\\notin X\\cup Y$$\n\n$$(X\\cup Y)^{c}=\\{10,11,12\\}$$\n\nSo the statement is True.",
+      "**C.** → True\n\nForm each complement, then intersect:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\nShared members:\n\n$$10\\in X^{c}$$\n\n$$10\\in Y^{c}$$\n\n$$11\\in X^{c}$$\n\n$$11\\in Y^{c}$$\n\n$$12\\in X^{c}$$\n\n$$12\\in Y^{c}$$\n\n$$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$\n\nSo the statement is True.",
+      "**D.** → True\n\nDe Morgan’s law for complements says\n\n$$(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$$\n\nVerify by computing both sides. First the intersection:\n\n$$X\\cap Y=\\{4,5,6\\}$$\n\n$$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nFrom earlier,\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**E.** → False\n\nFrom earlier,\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\nUnite them:\n\n$$1\\in Y^{c}$$\n\n$$2\\in Y^{c}$$\n\n$$3\\in Y^{c}$$\n\n$$7\\in X^{c}$$\n\n$$8\\in X^{c}$$\n\n$$9\\in X^{c}$$\n\n$$10\\in X^{c}$$\n\n$$11\\in X^{c}$$\n\n$$12\\in X^{c}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nThe claim lists $\\{1,2,3,10,11,12\\}$, which drops $7,8,9$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Among $U=\\{1,2,\\ldots,12\\}$, Python knowers are $X=\\{1,2,3,4,5,6\\}$ and SQL knowers are $Y=\\{4,5,6,7,8,9\\}$. Complements are taken in $U$.\n\nThe complement of a set is everyone in $U$ that the set leaves out:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}, \\qquad Y^{c}=\\{1,2,3,10,11,12\\}.$$\n\nDe Morgan's laws: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ and $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Escaping a union means missing both skills.",
+    "title_de_existing": "Komplemente überlappender Kompetenzmengen",
+    "context_de_existing": "Unter $U = 12$ Mitarbeitern (nummeriert 1–12) seien $X = \\{1,2,3,4,5,6\\}$ diejenigen, die Python können, und $Y = \\{4,5,6,7,8,9\\}$ diejenigen, die SQL können. Komplemente werden relativ zu $U$ gebildet.",
+    "statements_de_existing": [
+      "$X^{c} = \\{7, 8, 9, 10, 11, 12\\}$",
+      "$(X \\cup Y)^{c} = \\{10, 11, 12\\}$",
+      "$X^{c} \\cap Y^{c} = \\{10, 11, 12\\}$",
+      "$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$",
+      "$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$"
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Grundmenge ist $U=\\{1,2,\\ldots,12\\}$ und\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\nDas Komplement enthält die Elemente von $U$, die nicht in $X$ liegen:\n\n$$\n\\begin{aligned}\n7\\notin X,\\quad 8\\notin X\\\\\n9\\notin X,\\quad 10\\notin X\\\\\n11\\notin X,\\quad 12\\notin X\n\\end{aligned}\n$$\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nZuerst die Vereinigung:\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,12\\}$:\n\n$$(X\\cup Y)^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nNach De Morgan gilt $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Explizit:\n\n$$X\\cap Y=\\{4,5,6\\}$$\n\n$$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nDie Behauptung listet $\\{1,2,3,10,11,12\\}$ und lässt $7,8,9$ weg.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Unter $U=\\{1,2,\\ldots,12\\}$ sind Python-Könner $X=\\{1,2,3,4,5,6\\}$ und SQL-Könner $Y=\\{4,5,6,7,8,9\\}$. Komplemente werden in $U$ gebildet.\n\nDas Komplement einer Menge sind alle Elemente in $U$, die die Menge nicht enthält:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}, \\qquad Y^{c}=\\{1,2,3,10,11,12\\}.$$\n\nDie De-Morganschen Regeln: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ und $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Außerhalb der Vereinigung zu liegen bedeutet, beide Kompetenzen zu verfehlen."
+  },
+  {
+    "case_id": "MATH 1.10",
+    "short_letters": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Union and Intersection Complements for Two Overlapping Sets",
+    "context_en": "Let the universal set be $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{4, 5, 6, 7, 8\\}$, with complements taken relative to U.",
+    "statements_en": [
+      "$(A \\cup B)^{c} = \\{8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$",
+      "$A^{c} \\cap B^{c} = \\{6, 7, 8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$",
+      "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nFirst form the union:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nComplement relative to $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nThe claim lists $\\{8,9,10\\}$. But\n\n$$8\\in B$$\n\n$$8\\in A\\cup B$$\n\n$$8\\notin(A\\cup B)^{c}$$\n\nSo the statement is False.",
+      "**B.** → True\n\nDe Morgan’s law for complements states\n\n$$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$\n\nCompute both sides. Intersection:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nComplements:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nThe two sides agree.\n\nSo the statement is True.",
+      "**C.** → False\n\nForm the complements, then intersect:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$6\\in A^{c}$$\n\n$$6\\notin B^{c}$$\n\n$$7\\in A^{c}$$\n\n$$7\\notin B^{c}$$\n\n$$8\\in A^{c}$$\n\n$$8\\notin B^{c}$$\n\n$$9\\in A^{c}$$\n\n$$9\\in B^{c}$$\n\n$$10\\in A^{c}$$\n\n$$10\\in B^{c}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nThe claim lists $\\{6,7,8,9,10\\}$, which is $A^{c}$ rather than the intersection.\n\nSo the statement is False.",
+      "**D.** → True\n\nIntersection first:\n\n$$A\\cap B=\\{4,5\\}$$\n\nComplement in $U=\\{1,2,\\ldots,10\\}$ removes $4$ and $5$:\n\n$$1\\notin A\\cap B$$\n\n$$2\\notin A\\cap B$$\n\n$$3\\notin A\\cap B$$\n\n$$6\\notin A\\cap B$$\n\n$$7\\notin A\\cap B$$\n\n$$8\\notin A\\cap B$$\n\n$$9\\notin A\\cap B$$\n\n$$10\\notin A\\cap B$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nSo the statement is True.",
+      "**E.** → False\n\nUnite the complements:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$1\\in B^{c}$$\n\n$$2\\in B^{c}$$\n\n$$3\\in B^{c}$$\n\n$$6\\in A^{c}$$\n\n$$7\\in A^{c}$$\n\n$$8\\in A^{c}$$\n\n$$9\\in A^{c}$$\n\n$$10\\in A^{c}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nThe claim lists $\\{1,2,3,9,10\\}$, which drops $6,7,8$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Let $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. Complements are taken in $U$.\n\nThe complement of a set is everyone in $U$ that the set leaves out:\n\n$$A^{c}=\\{6,7,8,9,10\\}, \\qquad B^{c}=\\{1,2,3,9,10\\}.$$\n\nDe Morgan's laws: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\cup B^{c}$.",
+    "title_de_existing": "Vereinigungs- und Schnittkomplemente zweier überlappender Mengen",
+    "context_de_existing": "Es sei die Grundmenge $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Es seien $A = \\{1, 2, 3, 4, 5\\}$ und $B = \\{4, 5, 6, 7, 8\\}$, wobei Komplemente relativ zu $U$ gebildet werden.",
+    "statements_de_existing": [
+      "$(A \\cup B)^{c} = \\{8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = A^{c} \\cup B^{c}$",
+      "$A^{c} \\cap B^{c} = \\{6, 7, 8, 9, 10\\}$",
+      "$(A \\cap B)^{c} = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$",
+      "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$"
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{8,9,10\\}$ und behält fälschlich $8\\in A\\cup B$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nDas ist eine De-Morgansche Regel: $(A\\cap B)^{c}=A^{c}\\cup B^{c}$. Explizit:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{6,7,8,9,10\\}$, was $A^{c}$ ist, nicht die Schnittmenge der Komplemente.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Behauptung listet $\\{1,2,3,9,10\\}$ und lässt $6,7,8$ weg.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Es seien $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$ und $B=\\{4,5,6,7,8\\}$. Komplemente werden in $U$ gebildet.\n\nDas Komplement einer Menge sind alle Elemente in $U$, die die Menge nicht enthält:\n\n$$A^{c}=\\{6,7,8,9,10\\}, \\qquad B^{c}=\\{1,2,3,9,10\\}.$$\n\nDie De-Morganschen Regeln: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ und $(A\\cap B)^{c}=A^{c}\\cup B^{c}$."
+  },
+  {
+    "case_id": "MATH 1.11",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Partitions of a set",
+    "context_en": "Let $A = \\{1, 2, 3, 4, 5, 6\\}$. A partition of A is a collection of nonempty, pairwise disjoint subsets whose union is A.",
+    "statements_en": [
+      "$P = \\{\\{1,2\\}, \\{3,4\\}, \\{5,6\\}\\}$ is a partition of A.",
+      "Every partition of a set must have exactly the same number of blocks as the set has elements.",
+      "$Q = \\{\\{1,2,3\\}, \\{3,4,5,6\\}\\}$ is a partition of A.",
+      "$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$ is a partition of A.",
+      "A set with $n \\ge 2$ elements always has more than one possible partition."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCheck the three partition axioms for\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\non $A=\\{1,2,3,4,5,6\\}$. Nonempty blocks:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\nPairwise disjoint:\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\nUnion covers $A$:\n\n$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$\n\n$$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$\n\nAll three axioms hold.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim says every partition must have exactly $n$ blocks when $|A|=n$. But the partition\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\nof a $6$-element set has only $3$ blocks. Another valid partition is the single-block collection\n\n$$\\{A\\}$$\n\nwhich has $1$ block, not $6$. So the number of blocks need not equal $|A|$.\n\nSo the statement is False.",
+      "**C.** → False\n\nFor\n\n$$Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$$\n\ncheck pairwise disjointness:\n\n$$\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}$$\n\n$$\\{3\\}\\neq\\emptyset$$\n\nThe blocks share $3$, so $Q$ is not a partition.\n\nSo the statement is False.",
+      "**D.** → False\n\nFor\n\n$$R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$$\n\nthe union is\n\n$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$\n\n$$\\{1,2,3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$\n\nBut\n\n$$A=\\{1,2,3,4,5,6\\}$$\n\n$$6\\notin\\{1,2,3,4,5\\}$$\n\nso the union misses $6$ and $R$ is not a partition.\n\nSo the statement is False.",
+      "**E.** → True\n\nFor $n\\ge 2$, at least two partitions exist. One is the single block\n\n$$\\{A\\}$$\n\nAnother splits off one element:\n\n$$\\{\\{a\\},A\\setminus\\{a\\}\\}$$\n\nfor any fixed $a\\in A$. These are distinct because one has $1$ block and the other has $2$. Hence more than one partition exists.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Let $A=\\{1,2,3,4,5,6\\}$. A collection partitions $A$ only when all three hold: every block nonempty, blocks pairwise disjoint, and union equal to $A$.\n\nBlock count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is an $n$-block partition. Those two constructions are different whenever $n\\ge 2$.",
+    "title_de_existing": "Partitionen einer Menge",
+    "context_de_existing": "Es sei $A = \\{1, 2, 3, 4, 5, 6\\}$. Eine Partition von A ist eine Sammlung nichtleerer, paarweise disjunkter Teilmengen, deren Vereinigung A ist.",
+    "statements_de_existing": [
+      "$P = \\{\\{1,2\\}, \\{3,4\\}, \\{5,6\\}\\}$ ist eine Partition von A.",
+      "Jede Partition einer Menge muss genau so viele Blöcke haben, wie die Menge Elemente hat.",
+      "$Q = \\{\\{1,2,3\\}, \\{3,4,5,6\\}\\}$ ist eine Partition von A.",
+      "$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$ ist eine Partition von A.",
+      "Eine Menge mit $n \\ge 2$ Elementen hat stets mehr als eine mögliche Partition."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Blöcke von $P$ sind nichtleer, paarweise disjunkt und vereinigen sich zu $A=\\{1,2,3,4,5,6\\}$. Also ist $P$ eine Partition.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Blockanzahl ist frei: $\\{A\\}$ ist eine 1-Block-Partition, und $n$ Einelementmengen bilden eine $n$-Block-Partition. Nicht jede Partition hat genau $n$ Blöcke.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$Q$ hat überlappende Blöcke: $3$ liegt in beiden. Paarweise Disjunktheit scheitert, also ist $Q$ keine Partition.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Vereinigung von $R$ ist $\\{1,2,3,4,5\\}$ und lässt $6$ weg. Die Vereinigung ist nicht gleich $A$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nFür $n\\ge 2$ sind $\\{A\\}$ und die Sammlung aller Einelementmengen zwei verschiedene Partitionen.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Es sei $A=\\{1,2,3,4,5,6\\}$. Eine Sammlung partitioniert $A$ nur, wenn alle drei Bedingungen gelten: jeder Block nichtleer, Blöcke paarweise disjunkt, und Vereinigung gleich $A$.\n\nDie Blockanzahl ist frei: $\\{A\\}$ ist eine 1-Block-Partition, und $n$ Einelementmengen bilden eine $n$-Block-Partition. Diese beiden Konstruktionen unterscheiden sich, sobald $n\\ge 2$."
+  },
+  {
+    "case_id": "MATH 1.22",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "An Object and Its Singleton in the Same Set",
+    "context_en": "Let a be an object and let $K = \\{a, \\{a\\}\\}$.",
+    "statements_en": [
+      "$a \\in K$.",
+      "$\\{a\\} \\in K$.",
+      "$\\{a\\} \\subseteq K$.",
+      "$\\{\\{a\\}\\} \\subseteq K$.",
+      "$\\lvert K\\rvert = 2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRead the roster of $K$:\n\n$$K=\\{a,\\{a\\}\\}$$\n\nThe first listed object is $a$ itself:\n\n$$a\\in K$$\n\nSo the statement is True.",
+      "**B.** → True\n\nRead the second listed object on the roster:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$\\{a\\}\\in K$$\n\nSo the statement is True.",
+      "**C.** → True\n\nSubsethood of $\\{a\\}$ needs its only member to sit in $K$:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$a\\in K$$\n\n$$\\{a\\}\\subseteq K$$\n\nSo the statement is True.",
+      "**D.** → True\n\nThe set $\\{\\{a\\}\\}$ has the single member $\\{a\\}$. From letter B,\n\n$$\\{a\\}\\in K$$\n\nso\n\n$$\\{\\{a\\}\\}\\subseteq K$$\n\nSo the statement is True.",
+      "**E.** → True\n\nThe two listed objects are distinct:\n\n$$a\\neq\\{a\\}$$\n\n(one is an object, the other is a set containing that object). Therefore\n\n$$|K|=2$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nThe roster $K=\\{a,\\{a\\}\\}$ lists two objects: the bare object $a$, and the singleton set $\\{a\\}$. Those are different: one is an element, the other is a set containing that element.\n\n**Part 2: The operations.**\n\nMembership $x\\in K$ asks whether $x$ is one of those two listed objects. Subsethood $S\\subseteq K$ asks whether every member of $S$ is one of those two. Cardinality counts distinct listed objects.",
+    "title_de_existing": "Ein Objekt und seine Einelementmenge in derselben Menge",
+    "context_de_existing": "Es sei a ein Objekt und $K = \\{a, \\{a\\}\\}$.",
+    "statements_de_existing": [
+      "$a \\in K$.",
+      "$\\{a\\} \\in K$.",
+      "$\\{a\\} \\subseteq K$.",
+      "$\\{\\{a\\}\\} \\subseteq K$.",
+      "$\\lvert K\\rvert = 2$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nLies die Aufzählung von $K$:\n\n$$K=\\{a,\\{a\\}\\}$$\n\nDas erste gelistete Objekt ist $a$ selbst:\n\n$$a\\in K$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nLies das zweite gelistete Objekt:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$\\{a\\}\\in K$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nTeilmengenschaft von $\\{a\\}$ verlangt, dass ihr einziges Element in $K$ liegt:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$a\\in K$$\n\n$$\\{a\\}\\subseteq K$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie Menge $\\{\\{a\\}\\}$ hat das einzige Element $\\{a\\}$. Nach Aussage B gilt\n\n$$\\{a\\}\\in K$$\n\nalso\n\n$$\\{\\{a\\}\\}\\subseteq K$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDie beiden gelisteten Objekte sind verschieden:\n\n$$a\\neq\\{a\\}$$\n\n(eines ist ein Objekt, das andere eine Menge, die dieses Objekt enthält). Daher\n\n$$|K|=2$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nDie Aufzählung $K=\\{a,\\{a\\}\\}$ listet zwei Objekte: das nackte Objekt $a$ und die Einelementmenge $\\{a\\}$. Die sind verschieden: eines ist ein Element, das andere eine Menge, die dieses Element enthält.\n\n**Teil 2: Die Operationen.**\n\nZugehörigkeit $x\\in K$ fragt, ob $x$ eines dieser beiden gelisteten Objekte ist. Teilmengenschaft $S\\subseteq K$ fragt, ob jedes Element von $S$ eines dieser beiden ist. Die Mächtigkeit zählt verschiedene gelistete Objekte."
+  },
+  {
+    "case_id": "MATH 1.26",
+    "short_letters": [
+      0,
+      1,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Symmetric difference",
+    "context_en": "For two sets, define the symmetric difference $A\\triangle B = (A \\setminus B) \\cup (B \\setminus A)$, the elements belonging to exactly one of the two sets. Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{3, 4, 5, 6\\}$.",
+    "statements_en": [
+      "$A\\triangle B = \\{1, 2, 5, 6\\}$.",
+      "The symmetric difference can also be written as $A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$.",
+      "$A \\cap B \\subseteq A\\triangle B$.",
+      "If A and B are disjoint, then $A\\triangle B = A \\cup B$.",
+      "$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCompute each difference, then unite:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$B=\\{3,4,5,6\\}$$\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$A\\setminus B=\\{1,2\\}$$\n\n$$5\\in B$$\n\n$$5\\notin A$$\n\n$$6\\in B$$\n\n$$6\\notin A$$\n\n$$B\\setminus A=\\{5,6\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nSo the statement is True.",
+      "**B.** → False\n\nSymmetric difference is defined with a union of differences, not an intersection:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$$\n\nIntersecting the differences would give\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nalways, which is not the symmetric difference. The claimed rewrite is false.\n\nSo the statement is False.",
+      "**C.** → False\n\nThe intersection and the symmetric difference are disjoint by construction. Here\n\n$$A\\cap B=\\{3,4\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\n$$3\\notin A\\triangle B$$\n\nso\n\n$$A\\cap B\\not\\subseteq A\\triangle B$$\n\nSo the statement is False.",
+      "**D.** → True\n\nIf $A\\cap B=\\emptyset$, then\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nSo the statement is True.",
+      "**E.** → True\n\nCount with the formula. First the ingredients:\n\n$$|A|=4$$\n\n$$|B|=4$$\n\n$$|A\\cap B|=2$$\n\n$$2\\cdot|A\\cap B|=2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$|A|+|B|=4+4$$\n\n$$4+4=8$$\n\n$$|A\\triangle B|=8-4$$\n\n$$8-4=4$$\n\nAlternatively from the roster $\\{1,2,5,6\\}$:\n\n$$|A\\triangle B|=4$$\n\nThe identity holds.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nSymmetric difference keeps what sits in exactly one of the two sets:\n\nLet $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$.\n\n**Part 2: The operations.**\n\nThe shared pieces are\n\n$$A\\cap B=\\{3,4\\},\\qquad A\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5,6\\}.$$\n\nJoining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.",
+    "title_de_existing": "Symmetrische Differenz",
+    "context_de_existing": "Für zwei Mengen sei die symmetrische Differenz $A\\triangle B = (A \\setminus B) \\cup (B \\setminus A)$ definiert: die Elemente, die zu genau einer der beiden Mengen gehören. Es seien $A = \\{1, 2, 3, 4\\}$ und $B = \\{3, 4, 5, 6\\}$.",
+    "statements_de_existing": [
+      "$A\\triangle B = \\{1, 2, 5, 6\\}$.",
+      "Die symmetrische Differenz lässt sich auch als $A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$ schreiben.",
+      "$A \\cap B \\subseteq A\\triangle B$.",
+      "Wenn A und B disjunkt sind, dann gilt $A\\triangle B = A \\cup B$.",
+      "$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBerechne jede Differenz:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$B=\\{3,4,5,6\\}$$\n\n$$A\\setminus B=\\{1,2\\}$$\n\n$$B\\setminus A=\\{5,6\\}$$\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,2,5,6\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Definition verwendet die Vereinigung der Differenzen, nicht ihre Schnittmenge. Die Schnittmenge der Differenzen ist leer:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nwährend\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$$A\\cap B=\\{3,4\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nGemeinsame Elemente der Schnittmenge liegen in beiden Mengen und gehören daher nicht zur symmetrischen Differenz:\n\n$$3\\notin A\\triangle B$$\n\n$$A\\cap B\\not\\subseteq A\\triangle B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nWenn $A$ und $B$ disjunkt sind, gilt $A\\cap B=\\emptyset$, also $A\\setminus B=A$ und $B\\setminus A=B$. Dann\n\n$$A\\triangle B=A\\cup B$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nMit $|A|=4$, $|B|=4$, $|A\\cap B|=2$:\n\n$$|A|+|B|-2|A\\cap B|=4+4-2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$4+4=8$$\n\n$$8-4=4$$\n\nUnd aus der Liste $\\{1,2,5,6\\}$:\n\n$$|A\\triangle B|=4$$\n\nDie Identität gilt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nDie symmetrische Differenz enthält, was in genau einer der beiden Mengen liegt:\n\nEs seien $A=\\{1,2,3,4\\}$ und $B=\\{3,4,5,6\\}$.\n\n**Teil 2: Die Operationen.**\n\nDie gemeinsamen Stücke sind\n\n$$A\\cap B=\\{3,4\\},\\qquad A\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5,6\\}.$$\n\nDas Vereinigen der Restmengen liefert $A\\triangle B=\\{1,2,5,6\\}$."
+  },
+  {
+    "case_id": "MATH 1.32",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Set Operations with Letters",
+    "context_en": "Let $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$, and $C = \\{x, y\\}$.",
+    "statements_en": [
+      "$A \\cup B = \\{a, b, c, d, e\\}$.",
+      "$A \\cap B = \\{c, d\\}$.",
+      "$A \\setminus B = \\{a, b\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A and C are disjoint sets."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nUnite the two rosters.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A\\cup B$$\n\n$$b\\in A\\cup B$$\n\n$$c\\in A\\cup B$$\n\n$$d\\in A\\cup B$$\n\n$$e\\in A\\cup B$$\n\n$$A\\cup B={a,b,c,d,e}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nTest membership in both sets.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A$$\n\n$$a\\notin B$$\n\n$$b\\in A$$\n\n$$b\\notin B$$\n\n$$c\\in A$$\n\n$$c\\in B$$\n\n$$d\\in A$$\n\n$$d\\in B$$\n\n$$A\\cap B={c,d}$$\n\nSo the statement is True.",
+      "**C.** → True\n\nDifference keeps members of $A$ that miss $B$.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A$$\n\n$$a\\notin B$$\n\n$$b\\in A$$\n\n$$b\\notin B$$\n\n$$c\\in A$$\n\n$$c\\in B$$\n\n$$d\\in A$$\n\n$$d\\in B$$\n\n$$A\\setminus B={a,b}$$\n\nSo the statement is True.",
+      "**D.** → False\n\nDifference keeps members of $B$ that miss $A$.\n\n$$B={c,d,e}$$\n\n$$A={a,b,c,d}$$\n\n$$c\\in B$$\n\n$$c\\in A$$\n\n$$d\\in B$$\n\n$$d\\in A$$\n\n$$e\\in B$$\n\n$$e\\notin A$$\n\n$$B\\setminus A={e}$$\n\nFrom the previous letter,\n\n$$A\\setminus B=\\{a,b\\}$$\n\n$$\\{e\\}\\neq\\{a,b\\}$$\n\nSo the statement is False.",
+      "**E.** → True\n\nTest membership in both sets.\n\n$$A={a,b,c,d}$$\n\n$$C={x,y}$$\n\n$$a\\in A$$\n\n$$a\\notin C$$\n\n$$b\\in A$$\n\n$$b\\notin C$$\n\n$$c\\in A$$\n\n$$c\\notin C$$\n\n$$d\\in A$$\n\n$$d\\notin C$$\n\n$$A\\cap C=\\emptyset$$\n\nThe intersection is empty, so $A$ and $C$ are disjoint.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nThree letter lists $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, and $C=\\{x,y\\}$.\n\n**Part 2: The operations.**\n\nShared letters give the intersection. The combined list is the union, each letter once. Leftovers after a difference are the private letters. An empty overlap is disjointness. Lining $A$ up against $B$: $c$ and $d$ appear in both, $a$ and $b$ only in $A$, and $e$ only in $B$. The third set $C=\\{x,y\\}$ shares no letter with $A$.",
+    "title_de_existing": "Mengenoperationen mit Buchstaben",
+    "context_de_existing": "Es seien $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$ und $C = \\{x, y\\}$.",
+    "statements_de_existing": [
+      "$A \\cup B = \\{a, b, c, d, e\\}$.",
+      "$A \\cap B = \\{c, d\\}$.",
+      "$A \\setminus B = \\{a, b\\}$.",
+      "$B \\setminus A = A \\setminus B$.",
+      "A und C sind disjunkte Mengen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVereinige die beiden Listen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A\\cup B,\\quad b\\in A\\cup B\\\\\nc\\in A\\cup B,\\quad d\\in A\\cup B\\\\\ne\\in A\\cup B\n\\end{aligned}\n$$\n\n$$A\\cup B={a,b,c,d,e}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin B\\\\\nb\\in A,\\quad b\\notin B\\\\\nc\\in A,\\quad c\\in B\\\\\nd\\in A,\\quad d\\in B\n\\end{aligned}\n$$\n\n$$A\\cap B={c,d}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDie Differenz enthält Elemente von $A$ , die nicht in $B$ liegen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin B\\\\\nb\\in A,\\quad b\\notin B\\\\\nc\\in A,\\quad c\\in B\\\\\nd\\in A,\\quad d\\in B\n\\end{aligned}\n$$\n\n$$A\\setminus B={a,b}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Differenz enthält Elemente von $B$ , die nicht in $A$ liegen.\n\n$$\n\\begin{aligned}\nB&={c,d,e}\\\\\nA&={a,b,c,d}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nc\\in B,\\quad c\\in A\\\\\nd\\in B,\\quad d\\in A\\\\\ne\\in B,\\quad e\\notin A\n\\end{aligned}\n$$\n\n$$B\\setminus A={e}$$\n\nAus der vorherigen Aussage\n\n$$\n\\begin{aligned}\nA\\setminus B&=\\{a,b\\}\\\\\n\\{e\\}\\neq\\{a,b\\}\n\\end{aligned}\n$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nC&={x,y}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin C\\\\\nb\\in A,\\quad b\\notin C\\\\\nc\\in A,\\quad c\\notin C\\\\\nd\\in A,\\quad d\\notin C\n\\end{aligned}\n$$\n\n$$A\\cap C=\\emptyset$$\n\nDie Schnittmenge ist leer, also sind $A$ und $C$ disjunkt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nDrei Buchstabenlisten $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$ und $C=\\{x,y\\}$.\n\n**Teil 2: Die Operationen.**\n\nGemeinsame Buchstaben ergeben die Schnittmenge. Die kombinierte Liste ist die Vereinigung, jeder Buchstabe einmal. Reste nach einer Differenz sind die privaten Buchstaben. Leere Überlappung ist Disjunktheit."
+  },
+  {
+    "case_id": "MATH 1.33",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "De Morgan's Laws with a Ten-Element Universe",
+    "context_en": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ be the universal set, $A = \\{1, 2, 3, 4, 5\\}$, and $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements_en": [
+      "$(A \\cup B)^c = \\{9, 10\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{6, 7, 8, 9, 10\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFirst form the union:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nComplement in $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nDe Morgan for unions. Left side from letter A:\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nComplements:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**C.** → True\n\nIntersection first:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**D.** → True\n\nComplement of $A$ in $U=\\{1,2,\\ldots,10\\}$:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$6\\notin A$$\n\n$$7\\notin A$$\n\n$$8\\notin A$$\n\n$$9\\notin A$$\n\n$$10\\notin A$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\nSo the statement is True.",
+      "**E.** → True\n\nIntersection:\n\n$$A\\cap B=\\{4,5\\}$$\n\nComplement in $U=\\{1,2,\\ldots,10\\}$ removes $4$ and $5$:\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nLet $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. A complement $X^c$ is everything in $U$ that $X$ leaves out.\n\n**Part 2: The operations.**\n\nDe Morgan's laws say taking complements swaps union and intersection:\n\nEscaping a union means escaping both sets at once. Escaping an intersection takes only escaping one of them. The shared pieces are\n\n$$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$$",
+    "title_de_existing": "De-Morgansche Regeln mit einer zehn-elementigen Grundmenge",
+    "context_de_existing": "Es sei $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$ die Grundmenge, $A = \\{1, 2, 3, 4, 5\\}$ und $B = \\{4, 5, 6, 7, 8\\}$.",
+    "statements_de_existing": [
+      "$(A \\cup B)^c = \\{9, 10\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{6, 7, 8, 9, 10\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nZuerst die Vereinigung bilden:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite aus A:\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nKomplemente:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nZuerst die Schnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKomplement von $A$ in $U=\\{1,2,\\ldots,10\\}$:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$6\\notin A$$\n\n$$7\\notin A$$\n\n$$8\\notin A$$\n\n$$9\\notin A$$\n\n$$10\\notin A$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$ entfernt $4$ und $5$:\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$ und $B=\\{4,5,6,7,8\\}$.\n\n**Teil 2: Die Operationen.**\n\nKomplement $X^c$ ist $U\\setminus X$. Die De-Morganschen Regeln: $(A\\cup B)^c=A^c\\cap B^c$ und $(A\\cap B)^c=A^c\\cup B^c$."
+  },
+  {
+    "case_id": "MATH 1.34",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Complements of Disjoint Odd and Even Sets",
+    "context_en": "Let $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ be the universal set, $A = \\{1, 3, 5, 7, 9, 11\\}$, and $B = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements_en": [
+      "$(A \\cup B)^c = \\emptyset$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{2, 4, 6, 8, 10, 12\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n$A$ is the odds and $B$ the evens in $U=\\{1,2,\\ldots,12\\}$:\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\n$$A\\cup B=U$$\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nSo the statement is True.",
+      "**B.** → True\n\nDe Morgan for unions. Left side:\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nComplements:\n\n$$A^{c}=B=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cap B^{c}=\\emptyset$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**C.** → True\n\nOdds and evens are disjoint:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cup B^{c}=U$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**D.** → True\n\nComplement of the odds is the evens:\n\n$$A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\nSo the statement is True.",
+      "**E.** → True\n\nFrom letter C,\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nThis pair is a partition of $U=\\{1,2,\\ldots,12\\}$: $A=\\{1,3,5,7,9,11\\}$ holds every odd and $B=\\{2,4,6,8,10,12\\}$ holds every even. No overlap, no gaps.\n\n**Part 2: The operations.**\n\nNo whole number is odd and even at once, so $A\\cap B=\\emptyset$. Every whole number is one or the other, so $A\\cup B=U$. Complement of a partition block is the other block. Complementing the empty set relative to $U$ restores $U$. De Morgan's laws come through these extreme cases untouched.",
+    "title_de_existing": "Komplemente disjunkter gerader und ungerader Mengen",
+    "context_de_existing": "Es sei $U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$ die Grundmenge, $A = \\{1, 3, 5, 7, 9, 11\\}$ und $B = \\{2, 4, 6, 8, 10, 12\\}$.",
+    "statements_de_existing": [
+      "$(A \\cup B)^c = \\emptyset$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{2, 4, 6, 8, 10, 12\\}$.",
+      "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$A$ enthält die ungeraden und $B$ die geraden Zahlen in $U=\\{1,2,\\ldots,12\\}$:\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\n$$A\\cup B=U$$\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite:\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nKomplemente:\n\n$$A^{c}=B=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cap B^{c}=\\emptyset$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nUngerade und gerade Zahlen sind disjunkt:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cup B^{c}=U$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDas Komplement der ungeraden Zahlen sind die geraden:\n\n$$A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nAus C:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\n$A$ sind die ungeraden und $B$ die geraden Zahlen in $U=\\{1,\\ldots,12\\}$. Sie partitionieren $U$.\n\n**Teil 2: Die Operationen.**\n\n$A\\cup B=U$, also $(A\\cup B)^c=\\emptyset$. $A\\cap B=\\emptyset$, also $(A\\cap B)^c=U$. $A^c=B$."
+  },
+  {
+    "case_id": "MATH 1.35",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "De Morgan's Laws with Letter Sets",
+    "context_en": "Let $U = \\{p, q, r, s, t, u\\}$ be the universal set, $A = \\{p, q, r\\}$, and $B = \\{r, s\\}$.",
+    "statements_en": [
+      "$(A \\cup B)^c = \\{t, u\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{s, t, u\\}$.",
+      "$(A \\cap B)^c = \\{p, q, s, t, u\\}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nUnion first:\n\n$$A=\\{p,q,r\\}$$\n\n$$B=\\{r,s\\}$$\n\n$$A\\cup B=\\{p,q,r,s\\}$$\n\nComplement in $U=\\{p,q,r,s,t,u\\}$:\n\n$$t\\notin A\\cup B$$\n\n$$u\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nLeft side from letter A:\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cap B^{c}=\\{t,u\\}$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**C.** → True\n\nIntersection:\n\n$$A\\cap B=\\{r\\}$$\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cup B^{c}=\\{p,q,s,t,u\\}$$\n\nThe two sides match.\n\nSo the statement is True.",
+      "**D.** → True\n\nComplement of $A=\\{p,q,r\\}$ in $U$:\n\n$$s\\notin A$$\n\n$$t\\notin A$$\n\n$$u\\notin A$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\nSo the statement is True.",
+      "**E.** → True\n\nIntersection:\n\n$$A\\cap B=\\{r\\}$$\n\nComplement in $U=\\{p,q,r,s,t,u\\}$ removes $r$:\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nSix letters make up the universe $U=\\{p,q,r,s,t,u\\}$, and $A=\\{p,q,r\\}$ overlaps $B=\\{r,s\\}$ in the single letter $r$.\n\n**Part 2: The operations.**\n\nA letter is outside a union when it is outside both sets, and outside an intersection when it is outside at least one of them. Those are De Morgan's laws in plain words. The shared pieces are\n\n$$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qquad B^c=\\{p,q,t,u\\}.$$",
+    "title_de_existing": "De-Morgansche Regeln mit Buchstabenmengen",
+    "context_de_existing": "Es sei $U = \\{p, q, r, s, t, u\\}$ die Grundmenge, $A = \\{p, q, r\\}$ und $B = \\{r, s\\}$.",
+    "statements_de_existing": [
+      "$(A \\cup B)^c = \\{t, u\\}$.",
+      "$(A \\cup B)^c = A^c \\cap B^c$.",
+      "$(A \\cap B)^c = A^c \\cup B^c$.",
+      "$A^c = \\{s, t, u\\}$.",
+      "$(A \\cap B)^c = \\{p, q, s, t, u\\}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nZuerst die Vereinigung:\n\n$$A=\\{p,q,r\\}$$\n\n$$B=\\{r,s\\}$$\n\n$$A\\cup B=\\{p,q,r,s\\}$$\n\nKomplement in $U=\\{p,q,r,s,t,u\\}$:\n\n$$t\\notin A\\cup B$$\n\n$$u\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nLinke Seite aus A:\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cap B^{c}=\\{t,u\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cup B^{c}=\\{p,q,s,t,u\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKomplement von $A=\\{p,q,r\\}$ in $U$:\n\n$$s\\notin A$$\n\n$$t\\notin A$$\n\n$$u\\notin A$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\nKomplement in $U=\\{p,q,r,s,t,u\\}$ entfernt $r$:\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $U=\\{p,q,r,s,t,u\\}$, $A=\\{p,q,r\\}$ und $B=\\{r,s\\}$.\n\n**Teil 2: Die Operationen.**\n\nDe Morgan vertauscht Vereinigung und Schnitt unter Komplementen. $A\\cup B=\\{p,q,r,s\\}$, also $(A\\cup B)^c=\\{t,u\\}$."
+  },
+  {
+    "case_id": "MATH 1.36",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Cartesian Products and Ordered Pairs",
+    "context_en": "Let $A = \\{1, 2\\}$ and $B = \\{x, y, z\\}$.",
+    "statements_en": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(1, x) \\in A \\times B$.",
+      "$(x, 1) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCartesian-product size:\n\n$$|A|=2$$\n\n$$|B|=3$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$2\\cdot 3=6$$\n\n$$|A\\times B|=6$$\n\nSo the statement is True.",
+      "**B.** → True\n\nCheck coordinates:\n\n$$1\\in A$$\n\n$$x\\in B$$\n\n$$(1,x)\\in A\\times B$$\n\nSo the statement is True.",
+      "**C.** → False\n\nFirst coordinate must sit in $A$:\n\n$$x\\notin A$$\n\n$$(x,1)\\notin A\\times B$$\n\nSo the statement is False.",
+      "**D.** → False\n\nSample pair:\n\n$$(1,x)\\in A\\times B$$\n\n$$1\\notin B$$\n\n$$(1,x)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nSo the statement is False.",
+      "**E.** → True\n\nReversed product size:\n\n$$|B|=3$$\n\n$$|A|=2$$\n\n$$3\\cdot 2=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nso the sizes agree.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nThe task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the ordered pairs formed from those two sets.\n\n**Part 2: The operations.**\n\nAn ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$. Size is the product rule\n\n$$\n2\\cdot 3\n$$\n\n$$\n= 6.\n$$\n\nTurning the grid on its side produces $B\\times A$, same count, different members.",
+    "title_de_existing": "Kartesische Produkte und geordnete Paare",
+    "context_de_existing": "Es seien $A = \\{1, 2\\}$ und $B = \\{x, y, z\\}$.",
+    "statements_de_existing": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(1, x) \\in A \\times B$.",
+      "$(x, 1) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGröße des kartesischen Produkts:\n\n$$|A|=2$$\n\n$$|B|=3$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$2\\cdot 3=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPrüfe die Koordinaten:\n\n$$1\\in A$$\n\n$$x\\in B$$\n\n$$(1,x)\\in A\\times B$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nFirst coordinate must liegen in $A$:\n\n$$x\\notin A$$\n\n$$(x,1)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nSample pair:\n\n$$(1,x)\\in A\\times B$$\n\n$$1\\notin B$$\n\n$$(1,x)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGröße des vertauschten Produkts:\n\n$$|B|=3$$\n\n$$|A|=2$$\n\n$$3\\cdot 2=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nDie Mächtigkeiten stimmen überein.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{1,2\\}$ und $B=\\{x,y,z\\}$.\n\n**Teil 2: Die Operationen.**\n\nEin geordnetes Paar $(a,b)$ liegt in $A\\times B$, wenn $a\\in A$ und $b\\in B$. Die Größe ist $|A|\\cdot|B|=6$. Vertauschen liefert $B\\times A$: gleiche Anzahl, andere Elemente."
+  },
+  {
+    "case_id": "MATH 1.37",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Cartesian Product Size vs. Pair Membership",
+    "context_en": "Let $A = \\{m, n, p\\}$ and $B = \\{1, 2\\}$.",
+    "statements_en": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(m, 1) \\in A \\times B$.",
+      "$(1, m) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCartesian-product size:\n\n$$|A|=3$$\n\n$$|B|=2$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$3\\cdot 2=6$$\n\n$$|A\\times B|=6$$\n\nSo the statement is True.",
+      "**B.** → True\n\nCheck coordinates:\n\n$$m\\in A$$\n\n$$1\\in B$$\n\n$$(m,1)\\in A\\times B$$\n\nSo the statement is True.",
+      "**C.** → False\n\nFirst coordinate must sit in $A=\\{m,n,p\\}$:\n\n$$1\\notin A$$\n\n$$(1,m)\\notin A\\times B$$\n\nSo the statement is False.",
+      "**D.** → False\n\nSample pair:\n\n$$(m,1)\\in A\\times B$$\n\n$$m\\notin B$$\n\n$$(m,1)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nSo the statement is False.",
+      "**E.** → True\n\nReversed product size:\n\n$$|B|=2$$\n\n$$|A|=3$$\n\n$$2\\cdot 3=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nPair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always keeping the letter first.\n\n**Part 2: The operations.**\n\nThe product rule is $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives $B\\times A$: the same count, a different set.\n\n$$\n\\lvert A\\times B\\rvert = 3\\cdot 2\n$$\n\n$$\n= 6.\n$$",
+    "title_de_existing": "Kartesisches Produkt: Größe und Paarzugehörigkeit",
+    "context_de_existing": "Es seien $A = \\{m, n, p\\}$ und $B = \\{1, 2\\}$.",
+    "statements_de_existing": [
+      "$\\lvert A \\times B\\rvert = 6$.",
+      "$(m, 1) \\in A \\times B$.",
+      "$(1, m) \\in A \\times B$.",
+      "$A \\times B = B \\times A$.",
+      "$\\lvert A \\times B\\rvert = \\lvert B \\times A\\rvert$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGröße des kartesischen Produkts:\n\n$$|A|=3$$\n\n$$|B|=2$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$3\\cdot 2=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPrüfe die Koordinaten:\n\n$$m\\in A$$\n\n$$1\\in B$$\n\n$$(m,1)\\in A\\times B$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nFirst coordinate must liegen in $A=\\{m,n,p\\}$:\n\n$$1\\notin A$$\n\n$$(1,m)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nSample pair:\n\n$$(m,1)\\in A\\times B$$\n\n$$m\\notin B$$\n\n$$(m,1)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGröße des vertauschten Produkts:\n\n$$|B|=2$$\n\n$$|A|=3$$\n\n$$2\\cdot 3=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{m,n,p\\}$ und $B=\\{1,2\\}$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\times B|=3\\cdot 2=6$. Die Reihenfolge im Paar zählt: $(m,1)\\in A\\times B$, aber $(1,m)\\notin A\\times B$."
+  },
+  {
+    "case_id": "MATH 1.38",
+    "short_letters": [
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Symmetric Difference of Two Odd-Number Sets",
+    "context_en": "Let $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{3, 5, 7, 11, 13\\}$.",
+    "statements_en": [
+      "$A \\setminus B = \\{1, 9\\}$.",
+      "$B \\setminus A = \\{11, 13\\}$.",
+      "$A \\triangle B = \\{1, 9, 11, 13\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifference keeps members of $A$ that miss $B$.\n\n$$A={1,3,5,7,9}$$\n\n$$B={3,5,7,11,13}$$\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$5\\in A$$\n\n$$5\\in B$$\n\n$$7\\in A$$\n\n$$7\\in B$$\n\n$$9\\in A$$\n\n$$9\\notin B$$\n\n$$A\\setminus B={1,9}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nDifference keeps members of $B$ that miss $A$.\n\n$$B={3,5,7,11,13}$$\n\n$$A={1,3,5,7,9}$$\n\n$$3\\in B$$\n\n$$3\\in A$$\n\n$$5\\in B$$\n\n$$5\\in A$$\n\n$$7\\in B$$\n\n$$7\\in A$$\n\n$$11\\in B$$\n\n$$11\\notin A$$\n\n$$13\\in B$$\n\n$$13\\notin A$$\n\n$$B\\setminus A={11,13}$$\n\nSo the statement is True.",
+      "**C.** → True\n\nSymmetric difference unites the two differences:\n\n$$A\\setminus B=\\{1,9\\}$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\nSo the statement is True.",
+      "**D.** → True\n\nIntersect the differences:\n\n$$A\\setminus B=\\{1,9\\}$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\n$$1\\notin\\{11,13\\}$$\n\n$$9\\notin\\{11,13\\}$$\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nSo the statement is True.",
+      "**E.** → False\n\nThe union is larger because it still contains the overlap:\n\n$$A\\cup B=\\{1,3,5,7,9,11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\n$$3\\in A\\cup B$$\n\n$$3\\notin A\\triangle B$$\n\n$$A\\triangle B\\neq A\\cup B$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nThe symmetric difference $A\\triangle B$ keeps the numbers belonging to exactly one of the two sets. Let $A=\\{1,3,5,7,9\\}$ and $B=\\{3,5,7,11,13\\}$.\n\n**Part 2: The operations.**\n\nSort every number into one of three buckets: only in $A$, in both, only in $B$. Symmetric difference is the two outer buckets joined. Union takes all three buckets. The outer buckets can never overlap. The shared pieces are\n\n$$A\\setminus B=\\{1,9\\},\\qquad A\\cap B=\\{3,5,7\\},\\qquad B\\setminus A=\\{11,13\\}.$$",
+    "title_de_existing": "Symmetrische Differenz zweier Mengen ungerader Zahlen",
+    "context_de_existing": "Es seien $A = \\{1, 3, 5, 7, 9\\}$ und $B = \\{3, 5, 7, 11, 13\\}$.",
+    "statements_de_existing": [
+      "$A \\setminus B = \\{1, 9\\}$.",
+      "$B \\setminus A = \\{11, 13\\}$.",
+      "$A \\triangle B = \\{1, 9, 11, 13\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Differenz behält Elemente von $A$, die nicht in $B$ liegen:\n\n$$A=\\{1,3,5,7,9\\}$$\n\n$$B=\\{3,5,7,11,13\\}$$\n\n$$1\\in A,\\ 1\\notin B$$\n\n$$9\\in A,\\ 9\\notin B$$\n\n$$A\\setminus B=\\{1,9\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Differenz behält Elemente von $B$, die nicht in $A$ liegen:\n\n$$11\\in B,\\ 11\\notin A$$\n\n$$13\\in B,\\ 13\\notin A$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDie symmetrische Differenz vereinigt die beiden Differenzen:\n\n$$A\\setminus B=\\{1,9\\}$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie beiden Differenzen sind nach Definition disjunkt:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Vereinigung ist größer, weil sie die Schnittmenge noch enthält:\n\n$$A\\cup B=\\{1,3,5,7,9,11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\n$$A\\triangle B\\neq A\\cup B$$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{1,3,5,7,9\\}$ und $B=\\{3,5,7,11,13\\}$.\n\n**Teil 2: Die Operationen.**\n\n$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$. Gemeinsam sind $\\{3,5,7\\}$; die symmetrische Differenz ist $\\{1,9,11,13\\}$, nicht die volle Vereinigung."
+  },
+  {
+    "case_id": "MATH 1.39",
+    "short_letters": [
+      0,
+      1
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Symmetric Difference of Disjoint Sets",
+    "context_en": "Let $A = \\{2, 4, 6\\}$ and $B = \\{1, 3, 5\\}$.",
+    "statements_en": [
+      "$A \\setminus B = \\{2, 4, 6\\}$.",
+      "$B \\setminus A = \\{1, 3, 5\\}$.",
+      "$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifference keeps members of $A$ that miss $B$.\n\n$$A={2,4,6}$$\n\n$$B={1,3,5}$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$4\\in A$$\n\n$$4\\notin B$$\n\n$$6\\in A$$\n\n$$6\\notin B$$\n\n$$A\\setminus B={2,4,6}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nDifference keeps members of $B$ that miss $A$.\n\n$$B={1,3,5}$$\n\n$$A={2,4,6}$$\n\n$$1\\in B$$\n\n$$1\\notin A$$\n\n$$3\\in B$$\n\n$$3\\notin A$$\n\n$$5\\in B$$\n\n$$5\\notin A$$\n\n$$B\\setminus A={1,3,5}$$\n\nSo the statement is True.",
+      "**C.** → True\n\nUnite the differences:\n\n$$A\\setminus B=\\{2,4,6\\}$$\n\n$$B\\setminus A=\\{1,3,5\\}$$\n\n$$A\\triangle B=\\{1,2,3,4,5,6\\}$$\n\nSo the statement is True.",
+      "**D.** → True\n\nIntersect the differences:\n\n$$\\{2,4,6\\}\\cap\\{1,3,5\\}=\\emptyset$$\n\nSo the statement is True.",
+      "**E.** → True\n\nBecause $A\\cap B=\\emptyset$,\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nand both equal $\\{1,2,3,4,5,6\\}$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\n$A=\\{2,4,6\\}$ contains only even numbers and $B=\\{1,3,5\\}$ only odd ones, so no number can belong to both: the sets are disjoint, $A\\cap B=\\emptyset$.\n\n**Part 2: The operations.**\n\nDisjointness makes the subtractions do nothing: there is no shared member to delete, so $A\\setminus B=A$ and $B\\setminus A=B$. Symmetric difference joins the two leftovers. Union keeps every member of either set.",
+    "title_de_existing": "Symmetrische Differenz disjunkter Mengen",
+    "context_de_existing": "Es seien $A = \\{2, 4, 6\\}$ und $B = \\{1, 3, 5\\}$.",
+    "statements_de_existing": [
+      "$A \\setminus B = \\{2, 4, 6\\}$.",
+      "$B \\setminus A = \\{1, 3, 5\\}$.",
+      "$A \\triangle B = \\{1, 2, 3, 4, 5, 6\\}$.",
+      "$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$.",
+      "$A \\triangle B = A \\cup B$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDa $A$ und $B$ disjunkt sind, bleibt $A$ beim Abziehen von $B$ unverändert:\n\n$$A\\setminus B=A=\\{2,4,6\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nEbenso bleibt $B$ beim Abziehen von $A$ unverändert:\n\n$$B\\setminus A=B=\\{1,3,5\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVereinige die Differenzen:\n\n$$A\\setminus B=\\{2,4,6\\}$$\n\n$$B\\setminus A=\\{1,3,5\\}$$\n\n$$A\\triangle B=\\{1,2,3,4,5,6\\}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie beiden Differenzen sind disjunkt:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nWeil $A\\cap B=\\emptyset$,\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{2,4,6\\}$ und $B=\\{1,3,5\\}$, disjunkt.\n\n**Teil 2: Die Operationen.**\n\nBei Disjunktheit gilt $A\\setminus B=A$, $B\\setminus A=B$, also $A\\triangle B=A\\cup B$."
+  },
+  {
+    "case_id": "MATH 1.40",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Chess and Checkers Club Overlap",
+    "context_en": "Of $40$ students in a games club, $22$ play chess (A) and $15$ play checkers (B); $6$ students play both.",
+    "statements_en": [
+      "$\\lvert A \\cup B\\rvert = 31$.",
+      "Exactly $16$ people are in A only (not B).",
+      "Exactly $9$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $9$ people are in B only (not A)."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInclusion-exclusion:\n\n$$|A|=22$$\n\n$$|B|=15$$\n\n$$|A\\cap B|=6$$\n\n$$|A|+|B|=22+15$$\n\n$$22+15=37$$\n\n$$37-6=31$$\n\n$$|A\\cup B|=31$$\n\nSo the statement is True.",
+      "**B.** → True\n\nOnly $A$ is $A$ minus the overlap:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$22-6=16$$\n\n$$|A\\setminus B|=16$$\n\nSo the statement is True.",
+      "**C.** → True\n\nNeither club:\n\n$$|U|-|A\\cup B|=40-31$$\n\n$$40-31=9$$\n\nSo the statement is True.",
+      "**D.** → False\n\nCompare intersection and union sizes:\n\n$$|A\\cap B|=6$$\n\n$$|A\\cup B|=31$$\n\n$$6>31$$\n\nis false.\n\nSo the statement is False.",
+      "**E.** → True\n\nOnly $B$ is $B$ minus the overlap:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$15-6=9$$\n\n$$|B\\setminus A|=9$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: The sets.**\n\nOf $40$ students, $\\lvert A\\rvert=22$ play chess, $\\lvert B\\rvert=15$ play checkers, and $\\lvert A\\cap B\\rvert=6$ play both.\n\n**Part 2: The operations.**\n\nInclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:\n\n$$\n\\lvert A\\cup B\\rvert = 22+15-6\n$$\n\n$$\n= 31.\n$$\n\nChess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. Neither is the club total minus the union.",
+    "title_de_existing": "Schach- und Dameclub-Überlappung",
+    "context_de_existing": "Von $40$ Studierenden in einem Spieleclub spielen $22$ Schach (A) und $15$ Dame (B); $6$ spielen beides.",
+    "statements_de_existing": [
+      "$\\lvert A \\cup B\\rvert = 31$.",
+      "Genau $16$ Personen sind nur in A (nicht B).",
+      "Genau $9$ Personen sind weder in A noch in B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Genau $9$ Personen sind nur in B (nicht A)."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=22+15-6$$\n\n$$|A\\cup B|=31$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=22-6$$\n\n$$|A\\setminus B|=16$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=40-31$$\n\n$$=9$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=6$$\n\n$$|A\\cup B|=31$$\n\n$$6>31$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=15-6$$\n\n$$|B\\setminus A|=9$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nUnter $40$ Studierenden: $|A|=22$, $|B|=15$, $|A\\cap B|=6$.\n\n**Teil 2: Die Operationen.**\n\nInklusion-Exklusion: $|A\\cup B|=22+15-6=31$. Nur-A ist $22-6=16$. Keines: $40-31=9$. Nur-B: $15-6=9$."
+  },
+  {
+    "case_id": "MATH 1.41",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Two Language Courses in One Cohort",
+    "context_en": "Of $60$ students, $34$ are enrolled in Spanish (A) and $28$ in French (B); $12$ students are enrolled in both.",
+    "statements_en": [
+      "$\\lvert A \\cup B\\rvert = 50$.",
+      "Exactly $22$ people are in A only (not B).",
+      "Exactly $10$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $16$ people are in B only (not A)."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInclusion-exclusion:\n\n$$|A|=34$$\n\n$$|B|=28$$\n\n$$|A\\cap B|=12$$\n\n$$|A|+|B|=34+28$$\n\n$$34+28=62$$\n\n$$62-12=50$$\n\n$$|A\\cup B|=50$$\n\nSo the statement is True.",
+      "**B.** → True\n\nOnly $A$ is $A$ minus the overlap:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$34-12=22$$\n\n$$|A\\setminus B|=22$$\n\nSo the statement is True.",
+      "**C.** → True\n\nNeither club:\n\n$$|U|-|A\\cup B|=60-50$$\n\n$$60-50=10$$\n\nSo the statement is True.",
+      "**D.** → False\n\nCompare intersection and union sizes:\n\n$$|A\\cap B|=12$$\n\n$$|A\\cup B|=50$$\n\n$$12>50$$\n\nis false.\n\nSo the statement is False.",
+      "**E.** → True\n\nOnly $B$ is $B$ minus the overlap:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$28-12=16$$\n\n$$|B\\setminus A|=16$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Of $60$ students, $|A|=34$ take Spanish, $|B|=28$ take French, and $|A\\cap B|=12$ take both.\n\nInclusion-exclusion counts each student once:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$\n|A\\cup B| = 34+28-12\n$$\n\n$$\n= 50\n$$\n\nSpanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The intersection is a subset of the union.",
+    "title_de_existing": "Zwei Sprachkurse in einer Kohorte",
+    "context_de_existing": "Von $60$ Studierenden sind $34$ in Spanisch (A) und $28$ in Französisch (B) eingeschrieben; $12$ in beiden.",
+    "statements_de_existing": [
+      "$\\lvert A \\cup B\\rvert = 50$.",
+      "Genau $22$ Personen sind nur in A (nicht B).",
+      "Genau $10$ Personen sind weder in A noch in B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Genau $16$ Personen sind nur in B (nicht A)."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=34+28-12$$\n\n$$|A\\cup B|=50$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=34-12$$\n\n$$|A\\setminus B|=22$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=60-50$$\n\n$$=10$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=12$$\n\n$$|A\\cup B|=50$$\n\n$$12>50$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=28-12$$\n\n$$|B\\setminus A|=16$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nUnter $60$ Studierenden: $|A|=34$, $|B|=28$, $|A\\cap B|=12$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\cup B|=34+28-12=50$. Nur-A: $22$. Keines: $10$. Nur-B: $16$."
+  },
+  {
+    "case_id": "MATH 1.42",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Gym Members Using Two Facilities",
+    "context_en": "Of $50$ gym members, $20$ use the pool (A) and $18$ use the sauna (B); $5$ members use both.",
+    "statements_en": [
+      "$\\lvert A \\cup B\\rvert = 33$.",
+      "Exactly $15$ people are in A only (not B).",
+      "Exactly $17$ people are in neither A nor B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Exactly $13$ people are in B only (not A)."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInclusion-exclusion:\n\n$$|A|=20$$\n\n$$|B|=18$$\n\n$$|A\\cap B|=5$$\n\n$$|A|+|B|=20+18$$\n\n$$20+18=38$$\n\n$$38-5=33$$\n\n$$|A\\cup B|=33$$\n\nSo the statement is True.",
+      "**B.** → True\n\nOnly $A$ is $A$ minus the overlap:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$20-5=15$$\n\n$$|A\\setminus B|=15$$\n\nSo the statement is True.",
+      "**C.** → True\n\nNeither club:\n\n$$|U|-|A\\cup B|=50-33$$\n\n$$50-33=17$$\n\nSo the statement is True.",
+      "**D.** → False\n\nCompare intersection and union sizes:\n\n$$|A\\cap B|=5$$\n\n$$|A\\cup B|=33$$\n\n$$5>33$$\n\nis false.\n\nSo the statement is False.",
+      "**E.** → True\n\nOnly $B$ is $B$ minus the overlap:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$18-5=13$$\n\n$$|B\\setminus A|=13$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Of $50$ gym members, $|A|=20$ use the pool, $|B|=18$ use the sauna, and $|A\\cap B|=5$ use both.\n\nInclusion-exclusion counts each member once:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$\n|A\\cup B| = 20+18-5\n$$\n\n$$\n= 33\n$$\n\nPool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The intersection is a subset of the union.",
+    "title_de_existing": "Fitnessstudio-Mitglieder mit zwei Einrichtungen",
+    "context_de_existing": "Von $50$ Fitnessstudio-Mitgliedern nutzen $20$ den Pool (A) und $18$ die Sauna (B); $5$ nutzen beides.",
+    "statements_de_existing": [
+      "$\\lvert A \\cup B\\rvert = 33$.",
+      "Genau $15$ Personen sind nur in A (nicht B).",
+      "Genau $17$ Personen sind weder in A noch in B.",
+      "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
+      "Genau $13$ Personen sind nur in B (nicht A)."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=20+18-5$$\n\n$$|A\\cup B|=33$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=20-5$$\n\n$$|A\\setminus B|=15$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=50-33$$\n\n$$=17$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=5$$\n\n$$|A\\cup B|=33$$\n\n$$5>33$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=18-5$$\n\n$$|B\\setminus A|=13$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\nUnter $50$ Mitgliedern: $|A|=20$, $|B|=18$, $|A\\cap B|=5$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\cup B|=20+18-5=33$. Nur-A: $15$. Keines: $17$. Nur-B: $13$."
+  },
+  {
+    "case_id": "MATH 1.43",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Three Overlapping Hobby Clubs",
+    "context_en": "In a survey of hobby-club members: $30$ do photography (A), $25$ do hiking (B), and $20$ do cooking (C). $10$ do both photography and hiking, $8$ do both photography and cooking, $7$ do both hiking and cooking, and $3$ do all three.",
+    "statements_en": [
+      "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
+      "Every member who does all three activities is counted in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$, and $\\lvert B \\cap C\\rvert$.",
+      "The number who do photography and hiking but not cooking is $7$.",
+      "$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.",
+      "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThree-set inclusion-exclusion:\n\n$$|A|=30$$\n\n$$|B|=25$$\n\n$$|C|=20$$\n\n$$|A|+|B|=30+25$$\n\n$$30+25=55$$\n\n$$55+20=75$$\n\n$$|A\\cap B|=10$$\n\n$$75-10=65$$\n\n$$|A\\cap C|=8$$\n\n$$65-8=57$$\n\n$$|B\\cap C|=7$$\n\n$$57-7=50$$\n\n$$|A\\cap B\\cap C|=3$$\n\n$$50+3=53$$\n\n$$|A\\cup B\\cup C|=53$$\n\nSo the statement is True.",
+      "**B.** → True\n\nThe triple intersection sits inside every pairwise intersection by definition:\n\n$$A\\cap B\\cap C\\subseteq A\\cap B$$\n\n$$A\\cap B\\cap C\\subseteq A\\cap C$$\n\n$$A\\cap B\\cap C\\subseteq B\\cap C$$\n\nSo every all-three member is counted in each pairwise count.\n\nSo the statement is True.",
+      "**C.** → True\n\nExactly photography and hiking but not cooking:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$10-3=7$$\n\nSo the statement is True.",
+      "**D.** → True\n\nThe triple cannot exceed any pairwise count:\n\n$$|A\\cap B\\cap C|=3$$\n\n$$|A\\cap B|=10$$\n\n$$|A\\cap C|=8$$\n\n$$|B\\cap C|=7$$\n\n$$\\min(10,8,7)=7$$\n\n$$3\\le 7$$\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare the union to the raw sum:\n\n$$|A\\cup B\\cup C|=53$$\n\n$$|A|+|B|+|C|=30+25+20$$\n\n$$30+25=55$$\n\n$$55+20=75$$\n\n$$53>75$$\n\nis false. The union is smaller than the raw sum because overlaps are subtracted.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Three hobby groups overlap: $|A|=30$ photography, $|B|=25$ hiking, $|C|=20$ cooking, with pairwise totals $|A\\cap B|=10$, $|A\\cap C|=8$, $|B\\cap C|=7$, and triple overlap $|A\\cap B\\cap C|=3$.\n\nThree-set inclusion-exclusion counts each person once:\n\n$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$30+25+20=75$$\n\n$$10+8+7=25$$\n\n$$75-25+3=53$$\n\nAn exact-pair region is the pairwise total minus the triple. The triple group sits inside every pair.",
+    "title_de_existing": "Drei überlappende Hobbyclubs",
+    "context_de_existing": "In einer Umfrage unter Hobbyclub-Mitgliedern: $30$ machen Fotografie (A), $25$ Wandern (B) und $20$ Kochen (C). $10$ machen sowohl Fotografie als auch Wandern, $8$ sowohl Fotografie als auch Kochen, $6$ sowohl Wandern als auch Kochen, und $3$ alle drei Aktivitäten.",
+    "statements_de_existing": [
+      "$\\lvert A \\cup B \\cup C\\rvert = 53$.",
+      "Jedes Mitglied, das alle drei Aktivitäten ausübt, wird in $\\lvert A \\cap B\\rvert$, $\\lvert A \\cap C\\rvert$ und $\\lvert B \\cap C\\rvert$ mitgezählt.",
+      "Die Anzahl der Personen, die Fotografie und Wandern, aber nicht Kochen betreiben, beträgt $7$.",
+      "$\\lvert A \\cap B \\cap C\\rvert \\le \\min(\\lvert A \\cap B\\rvert, \\lvert A \\cap C\\rvert, \\lvert B \\cap C\\rvert)$.",
+      "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInklusion-Exklusion für drei Mengen:\n\n$$\n\\begin{aligned}\n|A|&=30\\\\\n|B|&=25\\\\\n|C|&=20\\\\\n|A|+|B|+|C|&=75\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n|A\\cap B|&=10\\\\\n|A\\cap C|&=8\\\\\n|B\\cap C|&=7\\\\\n|A\\cap B\\cap C|&=3\n\\end{aligned}\n$$\n\n$$|A\\cup B\\cup C|=30+25+20-10-8-7+3 = 53$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Dreifach-Schnittmenge liegt in jeder paarweisen Schnittmenge:\n\n$$A\\cap B\\cap C\\subseteq A\\cap B$$\n\n$$A\\cap B\\cap C\\subseteq A\\cap C$$\n\n$$A\\cap B\\cap C\\subseteq B\\cap C$$\n\nWer alle drei Aktivitäten macht, wird daher in jeder paarweisen Zählung mitgezählt.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nGenau Fotografie und Wandern, aber nicht Kochen:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$|A\\cap B\\setminus C|=10-3$$\n\n$$|A\\cap B\\setminus C|=7$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie Dreifach-Schnittmenge ist in jeder paarweisen enthalten, also\n\n$$|A\\cap B\\cap C|\\le\\min(|A\\cap B|,|A\\cap C|,|B\\cap C|)$$\n\n$$3\\le\\min(10,8,7)=7$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVergleiche die Vereinigung mit der Rohsumme:\n\n$$|A\\cup B\\cup C|=53$$\n\n$$|A|+|B|+|C|=75$$\n\n$$53>75$$\n\nist falsch. Die Vereinigung ist höchstens so groß wie die Summe.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Die Mengen.**\n\n$|A|=30$, $|B|=25$, $|C|=20$, paarweise $10$, $8$, $6$, dreifach $3$.\n\n**Teil 2: Die Operationen.**\n\nInklusion-Exklusion für drei Mengen: $30+25+20-10-8-6+3=54$. Genau A und B ohne C: $10-3=7$."
+  },
+  {
+    "case_id": "MATH 1.44",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Prime and even properties of the number 7",
+    "context_en": "The number 7 is prime and is not even.",
+    "statements_en": [
+      "7 is both prime and even.",
+      "7 is prime or even.",
+      "It is not true that 7 is both prime and even.",
+      "7 is neither prime nor even.",
+      "It is not true that 7 is prime or even."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nLet $P$ mean “$7$ is prime” and $E$ mean “$7$ is even”. Given facts:\n\n$$P$$\n\n$$\\neg E$$\n\nThe conjunction requires both:\n\n$$P\\wedge E$$\n\nBut $\\neg E$ holds, so $P\\wedge E$ is false.\n\nSo the statement is False.",
+      "**B.** → True\n\nThe disjunction $P\\vee E$ is true whenever at least one disjunct is true. Here\n\n$$P$$\n\nholds, so\n\n$$P\\vee E$$\n\nis true.\n\nSo the statement is True.",
+      "**C.** → True\n\nNegation of the conjunction:\n\n$$\\neg(P\\wedge E)$$\n\nFrom letter A, $P\\wedge E$ is false, so its negation is true. Equivalently by De Morgan:\n\n$$\\neg P\\vee\\neg E$$\n\nand $\\neg E$ holds.\n\nSo the statement is True.",
+      "**D.** → False\n\n“Neither prime nor even” is\n\n$$\\neg P\\wedge\\neg E$$\n\nBut $P$ is true, so $\\neg P$ is false, and the conjunction fails.\n\nSo the statement is False.",
+      "**E.** → False\n\nNegation of the disjunction:\n\n$$\\neg(P\\vee E)$$\n\nFrom letter B, $P\\vee E$ is true, so the negation is false. Equivalently:\n\n$$\\neg P\\wedge\\neg E$$\n\nwhich fails because $P$ holds.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The number $7$ is prime and is not even. Write $P$ for \"$7$ is prime\" and $Q$ for \"$7$ is even\". Then $P$ is true and $Q$ is false.\n\nConjunction $P\\land Q$ is true only when both parts are true. Inclusive disjunction $P\\lor Q$ is true when at least one part is true. Negation $\\neg$ flips a truth value.\n\nDe Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P\\lor Q)$ with $\\neg P\\land\\neg Q$.",
+    "title_de_existing": "Prim- und Gerade-Eigenschaften der Zahl 7",
+    "context_de_existing": "Die Zahl 7 ist prim und nicht gerade.",
+    "statements_de_existing": [
+      "7 ist sowohl prim als auch gerade.",
+      "7 ist prim oder gerade.",
+      "Es ist nicht wahr, dass 7 sowohl prim als auch gerade ist.",
+      "7 ist weder prim noch gerade.",
+      "Es ist nicht wahr, dass 7 prim oder gerade ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\n7 ist prim ($P$), aber nicht gerade ($\\neg E$). Die Konjunktion verlangt beides:\n\n$$P\\wedge E$$\n\nAber $\\neg E$, also ist die Konjunktion falsch.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nDie Disjunktion $P\\vee E$ ist wahr, sobald eine Hälfte gilt. $P$ gilt, also ist die Disjunktion wahr.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDie Negation von $P\\wedge E$ ist $\\neg(P\\wedge E)$, äquivalent zu $\\neg P\\vee\\neg E$. Da $\\neg E$ gilt, ist die Negation wahr.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n„Weder prim noch gerade“ bedeutet $\\neg P\\wedge\\neg E$. Aber $P$ gilt, also ist das falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Negation von $P\\vee E$ ist $\\neg P\\wedge\\neg E$. Da $P$ gilt, ist die Negation falsch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Aufbau.**\n\n7 ist prim und nicht gerade.\n\n**Teil 2: Lösung.**\n\nKonjunktion „prim und gerade“ ist falsch. Disjunktion „prim oder gerade“ ist wahr, weil die Prim-Hälfte gilt. Die Negation der Konjunktion ist wahr. „Weder noch“ ist falsch. Die Negation der Disjunktion ist falsch."
+  },
+  {
+    "case_id": "MATH 1.45",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Primes greater than 2",
+    "context_en": "Consider the statement: “For every prime number p greater than 2, p is an odd number.”",
+    "statements_en": [
+      "The statement is true.",
+      "The number 2 is a counterexample to the statement.",
+      "The correct negation of the statement is: “There exists a prime number p greater than 2 such that p is even.”",
+      "Since all primes greater than 2 are odd, it follows that all odd numbers greater than 2 are prime.",
+      "There are infinitely many primes greater than 2."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe universal claim is: every prime $p>2$ is odd. The only even prime is $2$, which is excluded by $p>2$. Every larger prime is odd, so the claim holds.\n\nSo the statement is True.",
+      "**B.** → False\n\nA counterexample would be a prime $p>2$ that is even. The number $2$ fails the hypothesis $p>2$:\n\n$$2>2$$\n\nis false. So $2$ is outside the quantified domain and is not a counterexample.\n\nSo the statement is False.",
+      "**C.** → True\n\nNegating $\\forall p\\,(p\\text{ prime }\\wedge p>2\\Rightarrow p\\text{ odd})$ yields\n\n$$\\exists p\\,(p\\text{ prime }\\wedge p>2\\wedge p\\text{ even})$$\n\nwhich is exactly the claimed negation.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe converse would say every odd $n>2$ is prime. A counterexample is\n\n$$n=9$$\n\n$$9>2$$\n\n$$9\\text{ is odd}$$\n\n$$9=3\\cdot 3$$\n\nso $9$ is not prime. The converse fails.\n\nSo the statement is False.",
+      "**E.** → True\n\nEuclid’s theorem supplies infinitely many primes. Removing the single prime $2$ still leaves infinitely many primes, all of which are greater than $2$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The statement is: for every prime $p>2$, $p$ is odd.\n\nA prime has exactly two positive divisors, $1$ and itself. An even integer larger than $2$ is also divisible by $2$, so it has at least three divisors and cannot be prime. The only even prime is $2$, and the domain $p>2$ excludes it.\n\nA counterexample must sit in that domain and fail the conclusion. Negating a universal swaps $\\forall$ for $\\exists$ and negates the predicate, keeping $p>2$. The converse swaps the two halves.",
+    "title_de_existing": "Primzahlen größer als 2",
+    "context_de_existing": "Betrachte die Aussage: „Für jede Primzahl p größer als 2 ist p eine ungerade Zahl.“",
+    "statements_de_existing": [
+      "Die Aussage ist wahr.",
+      "Die Zahl 2 ist ein Gegenbeispiel zur Aussage.",
+      "Die korrekte Negation der Aussage lautet: „Es gibt eine Primzahl p größer als 2, sodass p gerade ist.“",
+      "Da alle Primzahlen größer als 2 ungerade sind, folgt, dass alle ungeraden Zahlen größer als 2 prim sind.",
+      "Es gibt unendlich viele Primzahlen größer als 2."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Allaussage lautet: Jede Primzahl $p>2$ ist ungerade. Die einzige gerade Primzahl ist $2$, die durch $p>2$ ausgeschlossen wird. Jede größere Primzahl ist ungerade, also gilt die Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nEin Gegenbeispiel müsste eine Primzahl $p>2$ sein, die gerade ist. Die Zahl $2$ ist prim und gerade, aber sie erfüllt nicht $p>2$. Also ist $2$ kein Gegenbeispiel zu dieser Aussage.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Negation einer Allaussage $\\forall p\\,(p>2\\wedge\\mathrm{prim}(p)\\Rightarrow\\mathrm{ungerade}(p))$ ist die Existenzaussage: Es gibt eine Primzahl $p>2$, die gerade ist.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAus „alle Primzahlen $>2$ sind ungerade“ folgt nicht die Umkehrung „alle ungeraden Zahlen $>2$ sind prim“. Gegenbeispiel: $9$ ist ungerade und $>2$, aber nicht prim.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEs gibt unendlich viele Primzahlen, und nur eine davon ist $2$. Also gibt es unendlich viele Primzahlen größer als $2$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "**Teil 1: Aufbau.**\n\nDie Aussage behauptet: Jede Primzahl $p>2$ ist ungerade.\n\n**Teil 2: Lösung.**\n\nDie Aussage ist wahr. 2 ist keine Gegenbeispiel, weil die Aussage nur Primzahlen größer als 2 betrifft. Die Negation ist eine Existenzaussage mit gerader Primzahl $>2$. Die Umkehrung (alle ungeraden $>2$ sind prim) folgt nicht."
+  },
+  {
+    "case_id": "MATH 1.46",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "University prerequisite chain",
+    "context_en": "A university's rules state:\n\n(1) A student may enrol in Advanced Macroeconomics only if they have passed Intermediate Macroeconomics.\n\n(2) A student may enrol in Intermediate Macroeconomics only if they have passed Principles of Economics.\n\nMaria is currently enrolled in Advanced Macroeconomics.",
+    "statements_en": [
+      "Maria has passed Intermediate Macroeconomics.",
+      "Maria has passed Principles of Economics.",
+      "Passing Principles of Economics is a necessary condition for enrolling in Advanced Macroeconomics.",
+      "Passing Principles of Economics is a sufficient condition for enrolling in Advanced Macroeconomics.",
+      "We may conclude that Maria passed Principles of Economics with a perfect grade."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nLet $A$ mean that Maria is enrolled in Advanced and $I$ mean that she passed Intermediate. “Advanced only if Intermediate” gives\n\n$$A\\Rightarrow I$$\n\nMaria's enrolment makes $A=\\mathrm{T}$. Modus ponens evaluates the required consequence:\n\n$$A = \\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I = \\mathrm{T}$$\n\nMaria has passed Intermediate.\n\nSo the statement is True.",
+      "**B.** → True\n\nLet $P$ mean that Maria passed Principles. The two prerequisite rules form\n\n$$A\\Rightarrow I,$$\n\n$$I\\Rightarrow P$$\n\nSince Maria has $A=\\mathrm{T}$, apply the implications in order:\n\n$$A = \\mathrm{T}\\Longrightarrow I = \\mathrm{T}\\Longrightarrow P = \\mathrm{T}$$\n\nThe second rule therefore forces Maria to have passed Principles.\n\nSo the statement is True.",
+      "**C.** → True\n\nCompose the prerequisite implications:\n\n$$A\\Rightarrow I,\\quad I\\Rightarrow P \\quad\\Longrightarrow\\quad A\\Rightarrow P$$\n\nThe resulting arrow says that whenever Advanced enrolment is true, passing Principles must also be true:\n\n$$A = \\mathrm{T}\\quad\\Longrightarrow\\quad P = \\mathrm{T}$$\n\nThat makes Principles a necessary condition for Advanced enrolment.\n\nSo the statement is True.",
+      "**D.** → False\n\nCalling Principles sufficient for Advanced would reverse the established chain and require\n\n$$P\\Rightarrow A$$\n\nConsider a student who passed Principles but never passed Intermediate and is not enrolled in Advanced:\n\n$$P = \\mathrm{T},$$\n\n$$I = \\mathrm{F},$$\n\n$$A = \\mathrm{F}$$\n\nBoth original rules hold vacuously because their antecedents are false, but the proposed reverse implication evaluates as\n\n$$P\\Rightarrow A = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nPassing Principles alone is not sufficient for Advanced enrolment.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe rules permit only the pass/fail chain\n\n$$A(M) = \\mathrm{T}\\Longrightarrow I(M) = \\mathrm{T}\\Longrightarrow P(M) = \\mathrm{T}$$\n\nHere $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not encode any numerical grade:\n\n$$P(M) = \\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M) = 100\\%$$\n\nMaria could have earned any passing mark. A perfect grade cannot be inferred.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "\"You may enrol in $X$ only if you have passed $Y$\" is $X\\Rightarrow Y$: $Y$ is necessary for $X$, not sufficient.\n\nWrite $A$ for enrolling in Advanced Macroeconomics, $I$ for passing Intermediate, and $P$ for passing Principles. The two rules form the chain\n\n$$A\\Rightarrow I\\Rightarrow P$$\n\nMaria is enrolled in Advanced, so both arrows fire: she has passed Intermediate, and therefore Principles. The reverse arrow $P\\Rightarrow A$ is not supplied. The rules speak only of passing and enrolling; they record no marks.",
+    "title_de_existing": "Universitäre Voraussetzungen-Kette",
+    "context_de_existing": "Die Regeln einer Universität besagen:\n\n(1) Eine Studierende darf sich nur dann in Advanced Macroeconomics einschreiben, wenn sie Intermediate Macroeconomics bestanden hat.\n\n(2) Eine Studierende darf sich nur dann in Intermediate Macroeconomics einschreiben, wenn sie Principles of Economics bestanden hat.\n\nMaria ist in Advanced Macroeconomics eingeschrieben.",
+    "statements_de_existing": [
+      "Maria hat Intermediate Macroeconomics bestanden.",
+      "Maria hat Principles of Economics bestanden.",
+      "Das Bestehen von Principles of Economics ist eine notwendige Bedingung für die Einschreibung in Advanced Macroeconomics.",
+      "Das Bestehen von Principles of Economics ist eine hinreichende Bedingung für die Einschreibung in Advanced Macroeconomics.",
+      "Daraus folgt, dass Maria Principles of Economics mit Bestnote bestanden hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSei $A$: Maria ist in Advanced eingeschrieben, und $I$: sie hat Intermediate bestanden. „Advanced nur wenn Intermediate“ bedeutet\n\n$$A\\Rightarrow I$$\n\nMarias Einschreibung liefert $A=\\mathrm{T}$. Die Abtrennungsregel erzwingt die Konsequenz:\n\n$$A=\\mathrm{T}\\quad\\Longrightarrow\\quad I=\\mathrm{T}$$\n\nMaria hat Intermediate bestanden.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSei $P$: Maria hat Principles bestanden. Die beiden Voraussetzungen ergeben\n\n$$A\\Rightarrow I$$\n\n$$I\\Rightarrow P$$\n\nAus A ist $I=\\mathrm{T}$. Mit $I\\Rightarrow P$ folgt $P=\\mathrm{T}$.\n\nMaria hat Principles bestanden.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVerkette die Implikationen:\n\n$$A\\Rightarrow I,\\quad I\\Rightarrow P\\quad\\Longrightarrow\\quad A\\Rightarrow P$$\n\n„$P$ ist notwendig für $A$“ ist genau $A\\Rightarrow P$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n„Principles sei hinreichend für Advanced“ würde die wesentliche Pfeilrichtung umkehren:\n\n$$P\\Rightarrow A$$\n\nGegeben ist aber nur $A\\Rightarrow P$. Hinreichend und notwendig sind hier nicht vertauschbar.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nAus den Regeln folgt nur, dass Principles bestanden wurde — nicht mit welcher Note. Eine Bestnote ist in den Prämissen nicht enthalten.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "„Du darfst dich nur dann in $X$ einschreiben, wenn du $Y$ bestanden hast“ ist $X\\Rightarrow Y$: $Y$ ist notwendig für $X$, nicht hinreichend.\n\nSchreibe $A$ für die Einschreibung in Advanced Macroeconomics, $I$ für das Bestehen von Intermediate und $P$ für Principles. Die Regeln liefern $A\\Rightarrow I$ und $I\\Rightarrow P$, also $A\\Rightarrow P$. Marias Einschreibung erzwingt $I$ und $P$, aber weder die Umkehrung $P\\Rightarrow A$ noch eine Aussage über die Note."
+  }
+]

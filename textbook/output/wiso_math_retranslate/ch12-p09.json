@@ -1,0 +1,981 @@
+[
+  {
+    "case_id": "MATH 12.162",
+    "short_letters": [
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Grade Appeals by Professor",
+    "context_en": "At a university, final-exam grade appeals are filed by students across three professors' sections. Professor X grades 50% of all exams and receives an appeal on 3% of them. Professor Y grades 30% of all exams and receives an appeal on 5% of them. Professor Z grades the remaining 20% and receives an appeal on 7% of them. An exam is appealed.",
+    "statements_en": [
+      "The probability that a randomly selected exam is appealed is greater than 4.3%.",
+      "The probability that the exam was graded by Professor X, given that it was appealed, is greater than the probability that the exam was graded by Professor Y, given that it was appealed.",
+      "The probability that the exam was graded by Professor Z, given that it was appealed, is less than 32%.",
+      "The probability that the exam was graded by Professor X, given that it was appealed, is greater than 35%.",
+      "The probability that the exam was graded by Professor Y, given that it was appealed, is more than 1.05 times the probability that the exam was graded by Professor Z, given that it was appealed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly selected exam being appealed, $P(A)$, is calculated using the Law of Total Probability.\n\n$$\nP(A) = P(A \\mid X)P(X) + P(A \\mid Y)P(Y) + P(A \\mid Z)P(Z)\n$$\n\nUsing the values established in the overview:\n\n$$\nP(A) = 0.0150 + 0.0150 + 0.0140\n$$\n\n$$\n0.015 + 0.015 = 0.03\n$$\n\n$$\n0.03 + 0.014 = 0.044\n$$\n\n$$\nP(A) = 0.0440 = 4.4\\%\n$$\n\nThe claim is that $P(A)$ is greater than $4.3\\%$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nThe conditional probability that the exam was graded by Professor X, given that it was appealed, is found using Bayes' Theorem:\n\n$$\nP(X \\mid A) = \\frac{P(A \\cap X)}{P(A)}\n$$\n\nSimilarly for Professor Y:\n\n$$\nP(Y \\mid A) = \\frac{P(A \\cap Y)}{P(A)}\n$$\n\nFrom the overview, $P(A \\cap X) = 0.0150$ and $P(A \\cap Y) = 0.0150$. The total probability of an appeal is $P(A) = 0.0440$.\n\n$$\nP(X \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\n\\approx 0.3409\n$$\n\n$$\nP(Y \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\n\\approx 0.3409\n$$\n\nSince $P(X \\mid A) \\approx 0.3409$ and $P(Y \\mid A) \\approx 0.3409$, these two probabilities are equal. The claim states that $P(X \\mid A)$ is *greater than* $P(Y \\mid A)$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nThe conditional probability that the exam was graded by Professor Z, given that it was appealed, is found using Bayes' Theorem:\n\n$$\nP(Z \\mid A) = \\frac{P(A \\cap Z)}{P(A)}\n$$\n\nFrom the overview, $P(A \\cap Z) = 0.0140$ and $P(A) = 0.0440$.\n\n$$\nP(Z \\mid A) = \\frac{0.0140}{0.0440}\n$$\n\n$$\nP(Z \\mid A) \\approx 0.31818\n$$\n\nThis means $P(Z \\mid A) \\approx 31.818\\%$. The claim states that this probability is less than $32\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe conditional probability that the exam was graded by Professor X, given that it was appealed, is $P(X \\mid A)$.\n\nFrom the calculations in part B, we have:\n\n$$\nP(X \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\nP(X \\mid A) \\approx 0.3409\n$$\n\nThis means $P(X \\mid A) \\approx 34.09\\%$. The claim states that this probability is greater than $35\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nWe need to compare $P(Y \\mid A)$ with $1.05 \\times P(Z \\mid A)$.\n\nUsing the values from the overview and previous parts:\n\n$$\nP(Y \\mid A) = \\frac{P(A \\cap Y)}{P(A)} = \\frac{0.0150}{0.0440}\n$$\n\n$$\nP(Z \\mid A) = \\frac{P(A \\cap Z)}{P(A)} = \\frac{0.0140}{0.0440}\n$$\n\nWe are comparing $\\frac{0.0150}{0.0440}$ with $1.05 \\times \\frac{0.0140}{0.0440}$. Since the denominators are the same, we can compare the numerators directly:\n\nCompare $0.0150$ with $1.05 \\times 0.0140$.\n\n$$\n1.05 \\times 0.0140\n$$\n\n$$\n1.05 \\times 0.014 = 0.0147 = 0.0147\n$$\n\nSince $0.0150 > 0.0147$, it follows that $P(Y \\mid A) > 1.05 \\times P(Z \\mid A)$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "At a university, final-exam grade appeals are filed by students across three professors' sections. Professor X grades 50% of all exams and receives an appeal on 3% of them. Professor Y grades 30% of all exams and receives an appeal on 5% of them. Professor Z grades the remaining 20% and receives an appeal on 7% of them. We are given that an exam is appealed.\n\nLet $X$, $Y$, and $Z$ be the events that an exam is graded by Professor X, Y, or Z, respectively. Let $A$ be the event that an exam is appealed.\n\nWe are given the prior probabilities of an exam being graded by each professor:\n$$P(X) = 0.50$$\n$$P(Y) = 0.30$$\n$$P(Z) = 0.20$$\n\nWe are also given the conditional probabilities of an appeal, given which professor graded the exam:\n$$P(A \\mid X) = 0.03$$\n$$P(A \\mid Y) = 0.05$$\n$$P(A \\mid Z) = 0.07$$\n\nTo find the overall probability of an exam being appealed, $P(A)$, we use the Law of Total Probability:\n$$P(A) = P(A \\mid X)P(X) + P(A \\mid Y)P(Y) + P(A \\mid Z)P(Z)$$\n\n$$P(A) = (0.03)(0.50) + (0.05)(0.30) + (0.07)(0.20)$$\n$$P(A) = 0.0150 + 0.0150 + 0.0140$$\n$$P(A) = 0.0440$$\n\nThis means that $P(A) = 4.40\\%$. We can also calculate the joint probabilities $P(A \\cap X)$, $P(A \\cap Y)$, and $P(A \\cap Z)$:\n$$\nP(A \\cap X) = P(A \\mid X)P(X) = 0.03 \\cdot 0.50 = 0.0150\n$$\n$$\nP(A \\cap Y) = P(A \\mid Y)P(Y) = 0.05 \\cdot 0.30 = 0.0150\n$$\n$$\nP(A \\cap Z) = P(A \\mid Z)P(Z) = 0.07 \\cdot 0.20 = 0.0140\n$$",
+    "title_de_existing": "Notenwidersprüche nach Professor",
+    "context_de_existing": "An einer Universität werden Widersprüche zu Abschlussprüfungen bei drei Professoren eingereicht. Professor X bewertet 50% aller Prüfungen und erhält in 3% einen Widerspruch. Professor Y bewertet 30% und erhält in 5% einen Widerspruch. Professor Z bewertet die restlichen 20% und erhält in 7% einen Widerspruch. Eine Prüfung wird angefochten.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine zufällig ausgewählte Prüfung angefochten wird, ist größer als 4,3%.",
+      "Die Wahrscheinlichkeit, dass Professor X bewertet hat, gegeben Widerspruch, ist größer als die für Professor Y gegeben Widerspruch.",
+      "Die Wahrscheinlichkeit, dass Professor Z bewertet hat, gegeben Widerspruch, ist kleiner als 32%.",
+      "Die Wahrscheinlichkeit, dass Professor X bewertet hat, gegeben Widerspruch, ist größer als 35%.",
+      "Die Wahrscheinlichkeit, dass Professor Y bewertet hat, gegeben Widerspruch, ist mehr als das 1,05-Fache der Wahrscheinlichkeit für Professor Z gegeben Widerspruch."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine zufällig ausgewählte Prüfung angefochten wird, ist größer als 4,3%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A) = P(A \\mid X)P(X) + P(A \\mid Y)P(Y) + P(A \\mid Z)P(Z)\n$$\n\n$$\nP(A) = 0.0150 + 0.0150 + 0.0140\n$$\n\n$$\n0.015 + 0.015 = 0.03\n$$\n\n$$\n0.03 + 0.014 = 0.044\n$$\n\n$$\nP(A) = 0.0440 = 4.4\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Die Wahrscheinlichkeit, dass Professor X bewertet hat, gegeben Widerspruch, ist größer als die für Professor Y gegeben Widerspruch. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X \\mid A) = \\frac{P(A \\cap X)}{P(A)}\n$$\n\n$$\nP(Y \\mid A) = \\frac{P(A \\cap Y)}{P(A)}\n$$\n\n$$\nP(X \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\n\\approx 0.3409\n$$\n\n$$\nP(Y \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\n\\approx 0.3409\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass Professor Z bewertet hat, gegeben Widerspruch, ist kleiner als 32%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(Z \\mid A) = \\frac{P(A \\cap Z)}{P(A)}\n$$\n\n$$\nP(Z \\mid A) = \\frac{0.0140}{0.0440}\n$$\n\n$$\nP(Z \\mid A) \\approx 0.31818\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass Professor X bewertet hat, gegeben Widerspruch, ist größer als 35%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(X \\mid A) = \\frac{0.0150}{0.0440}\n$$\n\n$$\nP(X \\mid A) \\approx 0.3409\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass Professor Y bewertet hat, gegeben Widerspruch, ist mehr als das 1,05-Fache der Wahrscheinlichkeit für Professor Z gegeben Widerspruch. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(Y \\mid A) = \\frac{P(A \\cap Y)}{P(A)} = \\frac{0.0150}{0.0440}\n$$\n\n$$\nP(Z \\mid A) = \\frac{P(A \\cap Z)}{P(A)} = \\frac{0.0140}{0.0440}\n$$\n\n$$\n1.05 \\times 0.0140\n$$\n\n$$\n1.05 \\times 0.014 = 0.0147 = 0.0147\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "An einer Universität werden Widersprüche zu Abschlussprüfungen bei drei Professoren eingereicht. Professor X bewertet 50% aller Prüfungen und erhält in 3% einen Widerspruch. Professor Y bewertet 30% und erhält in 5% einen Widerspruch. Professor Z bewertet die restlichen 20% und erhält in 7% einen Widerspruch. Eine Prüfung wird angefochten. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(X) = 0.50$$\n\n$$P(Y) = 0.30$$\n\n$$P(Z) = 0.20$$\n\n$$P(A \\mid X) = 0.03$$\n\n$$P(A \\mid Y) = 0.05$$\n\n$$P(A \\mid Z) = 0.07$$\n\n$$P(A) = P(A \\mid X)P(X) + P(A \\mid Y)P(Y) + P(A \\mid Z)P(Z)$$\n\n$$P(A) = (0.03)(0.50) + (0.05)(0.30) + (0.07)(0.20)$$\n\n$$P(A) = 0.0150 + 0.0150 + 0.0140$$\n\n$$P(A) = 0.0440$$\n\n$$\nP(A \\cap X) = P(A \\mid X)P(X) = 0.03 \\cdot 0.50 = 0.0150\n$$\n\n$$\nP(A \\cap Y) = P(A \\mid Y)P(Y) = 0.05 \\cdot 0.30 = 0.0150\n$$\n\n$$\nP(A \\cap Z) = P(A \\mid Z)P(Z) = 0.07 \\cdot 0.20 = 0.0140\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.163",
+    "short_letters": [
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Priority Letters in Four Bins",
+    "context_en": "A mail sorting center has four bins, each equally likely to receive a randomly selected letter (probability 1/4 per bin). Bin 1 contains 3 priority letters out of 10 total. Bin 2 contains 1 priority letter out of 8 total. Bin 3 contains 4 priority letters out of 16 total. Bin 4 contains 2 priority letters out of 5 total. A clerk picks a bin at random, then picks a letter from it at random. The letter is a priority letter.",
+    "statements_en": [
+      "The probability that a randomly selected letter is a priority letter is greater than 26.5%.",
+      "The probability that the letter came from Bin 4, given that it is a priority letter, is greater than 37%.",
+      "The probability that the letter came from Bin 1, given that it is a priority letter, is greater than the probability that the letter came from Bin 3, given that it is a priority letter.",
+      "The probability that the letter came from Bin 2, given that it is a priority letter, is greater than 12%.",
+      "The probability that the letter came from Bin 4, given that it is a priority letter, is more than 3.2 times the probability that the letter came from Bin 2, given that it is a priority letter."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly selected letter is a priority letter is $P(P)$, calculated using the Law of Total Probability in the overview.\n\n$$\nP(P) = 0.26875\n$$\n\nConverting this to a percentage:\n\n$$\n0.26875 = 26.875\\%\n$$\n\nThe claim states that this probability is greater than $26.5\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nWe need to find the posterior probability that the letter came from Bin 4, given that it is a priority letter, $P(B_4 \\mid P)$. This is computed using Bayes' Theorem:\n\n$$\nP(B_4 \\mid P) = \\frac{P(B_4 \\cap P)}{P(P)}\n$$\n\nFrom the overview, $P(B_4 \\cap P) = 0.1$ and $P(P) = 0.26875$. Substituting these values:\n\n$$\nP(B_4 \\mid P) = \\frac{0.1}{0.26875}\n$$\n\n$$\nP(B_4 \\mid P) \\approx 0.372093\n$$\n\nAs a percentage, this is approximately $37.2093\\%$. The claim states that $P(B_4 \\mid P)$ is greater than $37\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim compares the posterior probabilities of the letter coming from Bin 1 versus Bin 3, given it is a priority letter. We calculate both $P(B_1 \\mid P)$ and $P(B_3 \\mid P)$ using Bayes' Theorem.\nFor Bin 1:\n\n$$\nP(B_1 \\mid P) = \\frac{P(B_1 \\cap P)}{P(P)}\n$$\n\nFrom the overview, $P(B_1 \\cap P) = 0.075$ and $P(P) = 0.26875$. Substituting:\n\n$$\nP(B_1 \\mid P) = \\frac{0.075}{0.26875}\n$$\n\n$$\nP(B_1 \\mid P) \\approx 0.27907\n$$\n\nFor Bin 3:\n\n$$\nP(B_3 \\mid P) = \\frac{P(B_3 \\cap P)}{P(P)}\n$$\n\nFrom the overview, $P(B_3 \\cap P) = 0.0625$ and $P(P) = 0.26875$. Substituting:\n\n$$\nP(B_3 \\mid P) = \\frac{0.0625}{0.26875}\n$$\n\n$$\nP(B_3 \\mid P) \\approx 0.23256\n$$\n\nComparing the two probabilities: $0.27907 > 0.23256$. The claim states that $P(B_1 \\mid P)$ is greater than $P(B_3 \\mid P)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nWe calculate the posterior probability that the letter came from Bin 2, given that it is a priority letter, $P(B_2 \\mid P)$, using Bayes' Theorem:\n\n$$\nP(B_2 \\mid P) = \\frac{P(B_2 \\cap P)}{P(P)}\n$$\n\nFrom the overview, $P(B_2 \\cap P) = 0.03125$ and $P(P) = 0.26875$. Substituting these values:\n\n$$\nP(B_2 \\mid P) = \\frac{0.03125}{0.26875}\n$$\n\n$$\nP(B_2 \\mid P) \\approx 0.11628\n$$\n\nConverting this to a percentage:\n\n$$\n0.11628 \\approx 11.628\\%\n$$\n\nThe claim states that $P(B_2 \\mid P)$ is greater than $12\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim compares $P(B_4 \\mid P)$ and $P(B_2 \\mid P)$ by examining their ratio. The ratio can be simplified because the denominator $P(P)$ cancels out:\n\n$$\n\\frac{P(B_4 \\mid P)}{P(B_2 \\mid P)} = \\frac{P(B_4 \\cap P) / P(P)}{P(B_2 \\cap P) / P(P)} = \\frac{P(B_4 \\cap P)}{P(B_2 \\cap P)}\n$$\n\nFrom the overview, $P(B_4 \\cap P) = 0.1$ and $P(B_2 \\cap P) = 0.03125$. The ratio is:\n\n$$\n\\frac{0.1}{0.03125} = 3.2\n$$\n\nThe claim states that $P(B_4 \\mid P)$ is *more than* $3.2$ times $P(B_2 \\mid P)$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "This scenario involves a two-stage random process: first, a bin is chosen uniformly at random, and then a letter is chosen uniformly at random from that bin. We are interested in probabilities related to whether the chosen letter is a priority letter.\n\nLet $B_i$ be the event that Bin $i$ is selected, for $i=1, 2, 3, 4$. Since each bin is equally likely to be chosen, the probability of selecting any specific bin is:\n$$P(B_i) = \\frac{1}{4}$$\nLet $P$ be the event that the selected letter is a priority letter. The conditional probability of drawing a priority letter, given that a specific bin was chosen, is determined by the composition of that bin:\n\nBin 1 contains 3 priority letters out of 10 total: $P(P \\mid B_1) = \\frac{3}{10} = 0.3$\nBin 2 contains 1 priority letter out of 8 total: $P(P \\mid B_2) = \\frac{1}{8} = 0.125$\nBin 3 contains 4 priority letters out of 16 total: $P(P \\mid B_3) = \\frac{4}{16} = 0.25$\nBin 4 contains 2 priority letters out of 5 total: $P(P \\mid B_4) = \\frac{2}{5} = 0.4$\n\nTo find the overall probability that a randomly selected letter is a priority letter, $P(P)$, we apply the Law of Total Probability:\n$$\nP(P) = \\sum_{i = 1}^{4} P(P \\mid B_i) P(B_i)\n$$\n$$P(P) = P(P \\mid B_1)P(B_1) + P(P \\mid B_2)P(B_2) + P(P \\mid B_3)P(B_3) + P(P \\mid B_4)P(B_4)$$\nSubstituting the calculated values:\n$$P(P) = (0.3)\\left(\\frac{1}{4}\\right) + (0.125)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right) + (0.4)\\left(\\frac{1}{4}\\right)$$\n$$P(P) = \\frac{1}{4} (0.3 + 0.125 + 0.25 + 0.4)$$\n$$P(P) = \\frac{1}{4} (1.075)$$\n$$P(P) = 0.26875$$\n\nTo compute the conditional probabilities of the form $P(B_i \\mid P)$, we will use Bayes' Theorem. The numerators $P(B_i \\cap P)$ (the probability that Bin $i$ was chosen AND the letter was priority) are:\n$$\nP(B_1 \\cap P) = P(P \\mid B_1)P(B_1) = 0.3 \\times \\frac{1}{4} = 0.075\n$$\n$$\nP(B_2 \\cap P) = P(P \\mid B_2)P(B_2) = 0.125 \\times \\frac{1}{4} = 0.03125\n$$\n$$\nP(B_3 \\cap P) = P(P \\mid B_3)P(B_3) = 0.25 \\times \\frac{1}{4} = 0.0625\n$$\n$$\nP(B_4 \\cap P) = P(P \\mid B_4)P(B_4) = 0.4 \\times \\frac{1}{4} = 0.1\n$$\nThese are the individual contributions to $P(P)$, so their sum is $0.075 + 0.03125 + 0.0625 + 0.1 = 0.26875$, which matches our $P(P)$ calculation.",
+    "title_de_existing": "Prioritätsbriefe in vier Fächern",
+    "context_de_existing": "Ein Postsortierzentrum hat vier Fächer, jeweils gleichwahrscheinlich (1/4). Fach 1: 3 Prioritätsbriefe von 10. Fach 2: 1 von 8. Fach 3: 4 von 16. Fach 4: 2 von 5. Ein Fach wird zufällig gewählt, dann ein Brief daraus. Der Brief ist ein Prioritätsbrief.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig ausgewählter Brief ein Prioritätsbrief ist, ist größer als 26,5%.",
+      "Die Wahrscheinlichkeit für Fach 4 gegeben Priorität ist größer als 37%.",
+      "Die Wahrscheinlichkeit für Fach 1 gegeben Priorität ist größer als die für Fach 3 gegeben Priorität.",
+      "Die Wahrscheinlichkeit für Fach 2 gegeben Priorität ist größer als 12%.",
+      "Die Wahrscheinlichkeit für Fach 4 gegeben Priorität ist mehr als das 3,2-Fache der Wahrscheinlichkeit für Fach 2 gegeben Priorität."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig ausgewählter Brief ein Prioritätsbrief ist, ist größer als 26,5%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P) = 0.26875\n$$\n\n$$\n0.26875 = 26.875\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Fach 4 gegeben Priorität ist größer als 37%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B_4 \\mid P) = \\frac{P(B_4 \\cap P)}{P(P)}\n$$\n\n$$\nP(B_4 \\mid P) = \\frac{0.1}{0.26875}\n$$\n\n$$\nP(B_4 \\mid P) \\approx 0.372093\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Fach 1 gegeben Priorität ist größer als die für Fach 3 gegeben Priorität. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B_1 \\mid P) = \\frac{P(B_1 \\cap P)}{P(P)}\n$$\n\n$$\nP(B_1 \\mid P) = \\frac{0.075}{0.26875}\n$$\n\n$$\nP(B_1 \\mid P) \\approx 0.27907\n$$\n\n$$\nP(B_3 \\mid P) = \\frac{P(B_3 \\cap P)}{P(P)}\n$$\n\n$$\nP(B_3 \\mid P) = \\frac{0.0625}{0.26875}\n$$\n\n$$\nP(B_3 \\mid P) \\approx 0.23256\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Fach 2 gegeben Priorität ist größer als 12%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(B_2 \\mid P) = \\frac{P(B_2 \\cap P)}{P(P)}\n$$\n\n$$\nP(B_2 \\mid P) = \\frac{0.03125}{0.26875}\n$$\n\n$$\nP(B_2 \\mid P) \\approx 0.11628\n$$\n\n$$\n0.11628 \\approx 11.628\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Fach 4 gegeben Priorität ist mehr als das 3,2-Fache der Wahrscheinlichkeit für Fach 2 gegeben Priorität. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\frac{P(B_4 \\mid P)}{P(B_2 \\mid P)} = \\frac{P(B_4 \\cap P) / P(P)}{P(B_2 \\cap P) / P(P)} = \\frac{P(B_4 \\cap P)}{P(B_2 \\cap P)}\n$$\n\n$$\n\\frac{0.1}{0.03125} = 3.2\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Postsortierzentrum hat vier Fächer, jeweils gleichwahrscheinlich (1/4). Fach 1: 3 Prioritätsbriefe von 10. Fach 2: 1 von 8. Fach 3: 4 von 16. Fach 4: 2 von 5. Ein Fach wird zufällig gewählt, dann ein Brief daraus. Der Brief ist ein Prioritätsbrief. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(B_i) = \\frac{1}{4}$$\n\n$$\nP(P) = \\sum_{i = 1}^{4} P(P \\mid B_i) P(B_i)\n$$\n\n$$P(P) = P(P \\mid B_1)P(B_1) + P(P \\mid B_2)P(B_2) + P(P \\mid B_3)P(B_3) + P(P \\mid B_4)P(B_4)$$\n\n$$P(P) = (0.3)\\left(\\frac{1}{4}\\right) + (0.125)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right) + (0.4)\\left(\\frac{1}{4}\\right)$$\n\n$$P(P) = \\frac{1}{4} (0.3 + 0.125 + 0.25 + 0.4)$$\n\n$$P(P) = \\frac{1}{4} (1.075)$$\n\n$$P(P) = 0.26875$$\n\n$$\nP(B_1 \\cap P) = P(P \\mid B_1)P(B_1) = 0.3 \\times \\frac{1}{4} = 0.075\n$$\n\n$$\nP(B_2 \\cap P) = P(P \\mid B_2)P(B_2) = 0.125 \\times \\frac{1}{4} = 0.03125\n$$\n\n$$\nP(B_3 \\cap P) = P(P \\mid B_3)P(B_3) = 0.25 \\times \\frac{1}{4} = 0.0625\n$$\n\n$$\nP(B_4 \\cap P) = P(P \\mid B_4)P(B_4) = 0.4 \\times \\frac{1}{4} = 0.1\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.164",
+    "short_letters": [
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Tagged Fish in Four Lakes",
+    "context_en": "A fishing tournament has four lakes, and each boat is assigned to a lake completely at random (probability 1/4 per lake). Lake North has 2 tagged fish out of 9 total fish. Lake South has 5 tagged fish out of 25 total. Lake East has 3 tagged fish out of 12 total. Lake West has 4 tagged fish out of 10 total. A boat catches one fish at random from its assigned lake. The fish is tagged.",
+    "statements_en": [
+      "The probability that a randomly caught fish is tagged is greater than 26.5%.",
+      "The probability that the fish came from Lake West, given that it is tagged, is greater than 38%.",
+      "The probability that the fish came from Lake East, given that it is tagged, is greater than the probability that the fish came from Lake South, given that it is tagged.",
+      "The probability that the fish came from Lake North, given that it is tagged, is greater than 21%.",
+      "The probability that the fish came from Lake West, given that it is tagged, is more than 1.5 times the probability that the fish came from Lake East, given that it is tagged."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly caught fish is tagged is $P(T)$. From the overview calculation:\n\n$$\nP(T) = \\frac{193}{720}\n$$\n\n$$\nP(T) \\approx 0.268055\n$$\n\nTo compare this with the claim of $26.5\\%$, we convert to a percentage:\n\n$$\nP(T) \\approx 26.8055\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nThe probability that the fish came from Lake West, given that it is tagged, is found using Bayes' theorem:\n\n$$\nP(L_W \\mid T) = \\frac{P(T \\cap L_W)}{P(T)}\n$$\n\nUsing the values from the overview:\n\n$$\nP(L_W \\mid T) = \\frac{0.1}{\\frac{193}{720}}\n$$\n\n$$\nP(L_W \\mid T) = \\frac{0.1 \\cdot 720}{193} = \\frac{72}{193}\n$$\n\n$$\nP(L_W \\mid T) \\approx 0.373057\n$$\n\nConverting to a percentage, $P(L_W \\mid T) \\approx 37.3057\\%$. The claim states this probability is greater than $38\\%$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nWe need to compare $P(L_E \\mid T)$ and $P(L_S \\mid T)$. Since both probabilities share the same denominator $P(T)$, we only need to compare their numerators $P(T \\cap L_E)$ and $P(T \\cap L_S)$.\n\nFrom the overview, for Lake East:\n\n$$\nP(T \\cap L_E) = \\frac{1}{16} = 0.0625\n$$\n\nAnd for Lake South:\n\n$$\nP(T \\cap L_S) = \\frac{1}{20} = 0.05\n$$\n\nSince $0.0625 > 0.05$, it follows that $P(L_E \\mid T) > P(L_S \\mid T)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe probability that the fish came from Lake North, given that it is tagged, is found using Bayes' theorem:\n\n$$\nP(L_N \\mid T) = \\frac{P(T \\cap L_N)}{P(T)}\n$$\n\nUsing the values from the overview:\n\n$$P(L_N \\mid T) = \\dfrac{1}{18}\\cdot\\dfrac{720}{193} = \\dfrac{40}{193} \\approx 0.207254$$\n\nConverting to a percentage, $P(L_N \\mid T) \\approx 20.7254\\%$. The claim states this probability is greater than $21\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThe claim asks to compare $P(L_W \\mid T)$ and $1.5 \\times P(L_E \\mid T)$. Again, both conditional probabilities have the same denominator $P(T)$, so we can compare their numerators $P(T \\cap L_W)$ and $1.5 \\times P(T \\cap L_E)$.\n\nFrom the overview:\n\n$$\nP(T \\cap L_W) = 0.1\n$$\n\n$$\nP(T \\cap L_E) = 0.0625\n$$\n\nWe calculate $1.5$ times $P(T \\cap L_E)$:\n\n$$\n1.5 \\times P(T \\cap L_E) = 1.5 \\times 0.0625\n$$\n\n$$\n1.5 \\times 0.0625 = 0.09375\n$$\n\nComparing $P(T \\cap L_W)$ with $1.5 \\times P(T \\cap L_E)$:\n\n$$\n0.1 > 0.09375\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A fishing tournament assigns each boat to one of four lakes completely at random, so the probability of a boat being assigned to any specific lake is $P(L_N) = P(L_S) = P(L_E) = P(L_W) = \\frac{1}{4}$.\n\nEach lake has a different proportion of tagged fish. Let $T$ denote the event that a caught fish is tagged. The conditional probability of catching a tagged fish given the lake assignment is:\n\nFor Lake North ($L_N$): $P(T \\mid L_N) = \\frac{2}{9}$\nFor Lake South ($L_S$): $P(T \\mid L_S) = \\frac{5}{25} = \\frac{1}{5} = 0.2$\nFor Lake East ($L_E$): $P(T \\mid L_E) = \\frac{3}{12} = \\frac{1}{4} = 0.25$\nFor Lake West ($L_W$): $P(T \\mid L_W) = \\frac{4}{10} = \\frac{2}{5} = 0.4$\n\nTo find the overall probability of catching a tagged fish, $P(T)$, we use the law of total probability, summing the probabilities of catching a tagged fish from each lake, weighted by the probability of being assigned to that lake:\n\n$$P(T) = P(T \\mid L_N)P(L_N) + P(T \\mid L_S)P(L_S) + P(T \\mid L_E)P(L_E) + P(T \\mid L_W)P(L_W)$$\n\n$$P(T) = \\left(\\frac{2}{9}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{5}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{4}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{2}{5}\\right)\\left(\\frac{1}{4}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{2}{9} + \\frac{1}{5} + \\frac{1}{4} + \\frac{2}{5}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{2}{9} + \\frac{3}{5} + \\frac{1}{4}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{40}{180} + \\frac{108}{180} + \\frac{45}{180}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{193}{180}\\right) = \\frac{193}{720}$$\n\n$$P(T) \\approx 0.268055\\dots$$\n\nTo find the probability that the fish came from a specific lake, given that it is tagged, we use Bayes' theorem:\n\n$$P(L_i \\mid T) = \\frac{P(T \\mid L_i)P(L_i)}{P(T)}$$\n\nWe will use the term $P(T \\mid L_i)P(L_i)$ as the 'numerator' for each lake when applying Bayes' theorem.\n\nFor Lake North: $P(T \\cap L_N) = P(T \\mid L_N)P(L_N) = \\frac{2}{9} \\cdot \\frac{1}{4} = \\frac{2}{36} = \\frac{1}{18} \\approx 0.055556$\nFor Lake South: $P(T \\cap L_S) = P(T \\mid L_S)P(L_S) = \\frac{1}{5} \\cdot \\frac{1}{4} = \\frac{1}{20} = 0.05$\nFor Lake East: $P(T \\cap L_E) = P(T \\mid L_E)P(L_E) = \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{1}{16} = 0.0625$\nFor Lake West: $P(T \\cap L_W) = P(T \\mid L_W)P(L_W) = \\frac{2}{5} \\cdot \\frac{1}{4} = \\frac{2}{20} = \\frac{1}{10} = 0.1$",
+    "title_de_existing": "Markierte Fische in vier Seen",
+    "context_de_existing": "Ein Angelturnier hat vier Seen; jedes Boot wird völlig zufällig einem See zugewiesen (jeweils 1/4). Nord: 2 markierte von 9. Süd: 5 von 25. Ost: 3 von 12. West: 4 von 10. Ein Boot fängt zufällig einen Fisch. Der Fisch ist markiert.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig gefangener Fisch markiert ist, ist größer als 26,5%.",
+      "Die Wahrscheinlichkeit für den Westsee gegeben Markierung ist größer als 38%.",
+      "Die Wahrscheinlichkeit für den Ostsee gegeben Markierung ist größer als die für den Südsee gegeben Markierung.",
+      "Die Wahrscheinlichkeit für den Nordsee gegeben Markierung ist größer als 21%.",
+      "Die Wahrscheinlichkeit für den Westsee gegeben Markierung ist mehr als das 1,5-Fache der Wahrscheinlichkeit für den Ostsee gegeben Markierung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig gefangener Fisch markiert ist, ist größer als 26,5%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T) = \\frac{193}{720}\n$$\n\n$$\nP(T) \\approx 0.268055\n$$\n\n$$\nP(T) \\approx 26.8055\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Die Wahrscheinlichkeit für den Westsee gegeben Markierung ist größer als 38%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_W \\mid T) = \\frac{P(T \\cap L_W)}{P(T)}\n$$\n\n$$\nP(L_W \\mid T) = \\frac{0.1}{\\frac{193}{720}}\n$$\n\n$$\nP(L_W \\mid T) = \\frac{0.1 \\cdot 720}{193} = \\frac{72}{193}\n$$\n\n$$\nP(L_W \\mid T) \\approx 0.373057\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für den Ostsee gegeben Markierung ist größer als die für den Südsee gegeben Markierung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T \\cap L_E) = \\frac{1}{16} = 0.0625\n$$\n\n$$\nP(T \\cap L_S) = \\frac{1}{20} = 0.05\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für den Nordsee gegeben Markierung ist größer als 21%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_N \\mid T) = \\frac{P(T \\cap L_N)}{P(T)}\n$$\n\n$$P(L_N \\mid T) = \\dfrac{1}{18}\\cdot\\dfrac{720}{193} = \\dfrac{40}{193} \\approx 0.207254$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit für den Westsee gegeben Markierung ist mehr als das 1,5-Fache der Wahrscheinlichkeit für den Ostsee gegeben Markierung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T \\cap L_W) = 0.1\n$$\n\n$$\nP(T \\cap L_E) = 0.0625\n$$\n\n$$\n1.5 \\times P(T \\cap L_E) = 1.5 \\times 0.0625\n$$\n\n$$\n1.5 \\times 0.0625 = 0.09375\n$$\n\n$$\n0.1 > 0.09375\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Angelturnier hat vier Seen; jedes Boot wird völlig zufällig einem See zugewiesen (jeweils 1/4). Nord: 2 markierte von 9. Süd: 5 von 25. Ost: 3 von 12. West: 4 von 10. Ein Boot fängt zufällig einen Fisch. Der Fisch ist markiert. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(T) = P(T \\mid L_N)P(L_N) + P(T \\mid L_S)P(L_S) + P(T \\mid L_E)P(L_E) + P(T \\mid L_W)P(L_W)$$\n\n$$P(T) = \\left(\\frac{2}{9}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{5}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{4}\\right)\\left(\\frac{1}{4}\\right) + \\left(\\frac{2}{5}\\right)\\left(\\frac{1}{4}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{2}{9} + \\frac{1}{5} + \\frac{1}{4} + \\frac{2}{5}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{2}{9} + \\frac{3}{5} + \\frac{1}{4}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{40}{180} + \\frac{108}{180} + \\frac{45}{180}\\right)$$\n\n$$P(T) = \\frac{1}{4} \\left(\\frac{193}{180}\\right) = \\frac{193}{720}$$\n\n$$P(T) \\approx 0.268055\\dots$$\n\n$$P(L_i \\mid T) = \\frac{P(T \\mid L_i)P(L_i)}{P(T)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.165",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Golden Gumballs by Machine",
+    "context_en": "A carnival has four gumball machines, and a customer picks a machine completely at random (probability 1/4 per machine). Machine 1 has 3 golden (prize) gumballs out of 12 total. Machine 2 has 1 golden gumball out of 20 total. Machine 3 has 5 golden gumballs out of 10 total. Machine 4 has 2 golden gumballs out of 16 total. The customer dispenses one gumball at random. The gumball is golden.",
+    "statements_en": [
+      "The probability that a randomly dispensed gumball is golden is greater than 23%.",
+      "The probability that the gumball came from Machine 3, given that it is golden, is greater than 54%.",
+      "The probability that the gumball came from Machine 1, given that it is golden, is greater than the probability that the gumball came from Machine 4, given that it is golden.",
+      "The probability that the gumball came from Machine 2, given that it is golden, is greater than 6%.",
+      "The probability that the gumball came from Machine 3, given that it is golden, is more than 4 times the probability that the gumball came from Machine 4, given that it is golden."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly dispensed gumball being golden is $P(G)$. We calculated this using the Law of Total Probability by summing the joint probabilities of choosing each machine and drawing a golden gumball from it.\n\n$$\nP(G) = 0.23125\n$$\n\nTo compare this with the claim of $23\\%$, we convert our probability to a percentage:\n\n$$\n0.23125 = 23.125\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the gumball came from Machine 3, given that it is golden, is $P(M_3 \\mid G)$. This is calculated using Bayes' Theorem:\n\n$$\nP(M_3 \\mid G) = \\frac{P(G \\cap M_3)}{P(G)}\n$$\n\nWe found $P(G \\cap M_3) = 0.125$ and $P(G) = 0.23125$ in the solution overview.\n\n$$\nP(M_3 \\mid G) = \\frac{0.125}{0.23125}\n$$\n\n$$\n\\approx 0.5405405\n$$\n\nConverting to a percentage, this is approximately $54.054\\%$. The claim states this probability is greater than $54\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe need to compare $P(M_1 \\mid G)$ and $P(M_4 \\mid G)$. Both are conditional probabilities given that the gumball is golden. We use Bayes' Theorem for each:\n\n$$\nP(M_1 \\mid G) = \\frac{P(G \\cap M_1)}{P(G)}\n$$\n\n$$\nP(M_4 \\mid G) = \\frac{P(G \\cap M_4)}{P(G)}\n$$\n\nFrom the solution overview, we have $P(G \\cap M_1) = 0.0625$ and $P(G \\cap M_4) = 0.03125$. The denominator $P(G)$ is the same for both. Therefore, we can compare the numerators directly:\n\n$$\nP(M_1 \\mid G) \\propto P(G \\cap M_1) = 0.0625\n$$\n\n$$\nP(M_4 \\mid G) \\propto P(G \\cap M_4) = 0.03125\n$$\n\nSince $0.0625 > 0.03125$, it follows that $P(M_1 \\mid G) > P(M_4 \\mid G)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nWe need to calculate $P(M_2 \\mid G)$ and compare it to $6\\%$. Using Bayes' Theorem:\n\n$$\nP(M_2 \\mid G) = \\frac{P(G \\cap M_2)}{P(G)}\n$$\n\nFrom the solution overview, $P(G \\cap M_2) = 0.0125$ and $P(G) = 0.23125$.\n\n$$\nP(M_2 \\mid G) = \\frac{0.0125}{0.23125}\n$$\n\n$$\n\\approx 0.05405405\n$$\n\nConverting to a percentage, this is approximately $5.405\\%$. The claim is that $P(M_2 \\mid G)$ is greater than $6\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nWe need to compare $P(M_3 \\mid G)$ with $4 \\times P(M_4 \\mid G)$. We've already calculated the components for these conditional probabilities. The ratio of $P(M_3 \\mid G)$ to $P(M_4 \\mid G)$ is:\n\n$$\n\\frac{P(M_3 \\mid G)}{P(M_4 \\mid G)} = \\frac{P(G \\cap M_3) / P(G)}{P(G \\cap M_4) / P(G)} = \\frac{P(G \\cap M_3)}{P(G \\cap M_4)}\n$$\n\nFrom the solution overview, $P(G \\cap M_3) = 0.125$ and $P(G \\cap M_4) = 0.03125$.\n\n$$\n\\frac{0.125}{0.03125} = 4\n$$\n\nThis means $P(M_3 \\mid G) = 4 \\times P(M_4 \\mid G)$. The claim states that $P(M_3 \\mid G)$ is *more than* 4 times $P(M_4 \\mid G)$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A customer randomly selects one of four gumball machines and then dispenses one gumball. The chosen gumball turns out to be golden. We want to evaluate various probabilities related to this event.\n\nLet $M_i$ denote the event that Machine $i$ is chosen, for $i \\in \\{1, 2, 3, 4\\}$. Since the customer picks a machine completely at random, the probability of selecting any machine is uniform:\n\n$$\nP(M_1) = P(M_2) = P(M_3) = P(M_4) = \\frac{1}{4}\n$$\n\nLet $G$ be the event that the dispensed gumball is golden. We are given the conditional probabilities of drawing a golden gumball from each machine:\n\nMachine 1: 3 golden out of 12 total, so $P(G \\mid M_1) = \\frac{3}{12} = \\frac{1}{4} = 0.25$\nMachine 2: 1 golden out of 20 total, so $P(G \\mid M_2) = \\frac{1}{20} = 0.05$\nMachine 3: 5 golden out of 10 total, so $P(G \\mid M_3) = \\frac{5}{10} = \\frac{1}{2} = 0.5$\nMachine 4: 2 golden out of 16 total, so $P(G \\mid M_4) = \\frac{2}{16} = \\frac{1}{8} = 0.125$\n\nWe can find the probability of observing a golden gumball, $P(G)$, using the Law of Total Probability:\n\n$$\nP(G) = \\sum_{i = 1}^{4} P(G \\mid M_i) P(M_i)\n$$\n\nEach term $P(G \\mid M_i) P(M_i)$ represents the joint probability of choosing Machine $i$ and dispensing a golden gumball from it. Let's calculate these joint probabilities:\n\n$P(G \\cap M_1) = P(G \\mid M_1) P(M_1) = 0.25 \\times \\frac{1}{4} = 0.0625$\n$P(G \\cap M_2) = P(G \\mid M_2) P(M_2) = 0.05 \\times \\frac{1}{4} = 0.0125$\n$P(G \\cap M_3) = P(G \\mid M_3) P(M_3) = 0.5 \\times \\frac{1}{4} = 0.125$\n$P(G \\cap M_4) = P(G \\mid M_4) P(M_4) = 0.125 \\times \\frac{1}{4} = 0.03125$\n\nSumming these joint probabilities gives $P(G)$:\n\n$$\nP(G) = 0.0625 + 0.0125 + 0.125 + 0.03125 = 0.23125\n$$\n\nNow, we have all the components needed for Bayes' Theorem, which will be used in subsequent statements to find the probability that the gumball came from a specific machine, given that it is golden: $P(M_i \\mid G) = \\frac{P(G \\cap M_i)}{P(G)}$.",
+    "title_de_existing": "Goldene Kaugummis nach Automat",
+    "context_de_existing": "Ein Jahrmarkt hat vier Kaugummiautomaten; ein Kunde wählt völlig zufällig (jeweils 1/4). Automat 1: 3 goldene von 12. Automat 2: 1 von 20. Automat 3: 5 von 10. Automat 4: 2 von 16. Der Kunde erhält zufällig einen Kaugummi. Er ist golden.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig ausgegebener Kaugummi golden ist, ist größer als 23%.",
+      "Die Wahrscheinlichkeit für Automat 3 gegeben golden ist größer als 54%.",
+      "Die Wahrscheinlichkeit für Automat 1 gegeben golden ist größer als die für Automat 4 gegeben golden.",
+      "Die Wahrscheinlichkeit für Automat 2 gegeben golden ist größer als 6%.",
+      "Die Wahrscheinlichkeit für Automat 3 gegeben golden ist mehr als das 4-Fache der Wahrscheinlichkeit für Automat 4 gegeben golden."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig ausgegebener Kaugummi golden ist, ist größer als 23%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G) = 0.23125\n$$\n\n$$\n0.23125 = 23.125\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Automat 3 gegeben golden ist größer als 54%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_3 \\mid G) = \\frac{P(G \\cap M_3)}{P(G)}\n$$\n\n$$\nP(M_3 \\mid G) = \\frac{0.125}{0.23125}\n$$\n\n$$\n\\approx 0.5405405\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Automat 1 gegeben golden ist größer als die für Automat 4 gegeben golden. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_1 \\mid G) = \\frac{P(G \\cap M_1)}{P(G)}\n$$\n\n$$\nP(M_4 \\mid G) = \\frac{P(G \\cap M_4)}{P(G)}\n$$\n\n$$\nP(M_1 \\mid G) \\propto P(G \\cap M_1) = 0.0625\n$$\n\n$$\nP(M_4 \\mid G) \\propto P(G \\cap M_4) = 0.03125\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Automat 2 gegeben golden ist größer als 6%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(M_2 \\mid G) = \\frac{P(G \\cap M_2)}{P(G)}\n$$\n\n$$\nP(M_2 \\mid G) = \\frac{0.0125}{0.23125}\n$$\n\n$$\n\\approx 0.05405405\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Automat 3 gegeben golden ist mehr als das 4-Fache der Wahrscheinlichkeit für Automat 4 gegeben golden. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\frac{P(M_3 \\mid G)}{P(M_4 \\mid G)} = \\frac{P(G \\cap M_3) / P(G)}{P(G \\cap M_4) / P(G)} = \\frac{P(G \\cap M_3)}{P(G \\cap M_4)}\n$$\n\n$$\n\\frac{0.125}{0.03125} = 4\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Jahrmarkt hat vier Kaugummiautomaten; ein Kunde wählt völlig zufällig (jeweils 1/4). Automat 1: 3 goldene von 12. Automat 2: 1 von 20. Automat 3: 5 von 10. Automat 4: 2 von 16. Der Kunde erhält zufällig einen Kaugummi. Er ist golden. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(M_1) = P(M_2) = P(M_3) = P(M_4) = \\frac{1}{4}\n$$\n\n$$\nP(G) = \\sum_{i = 1}^{4} P(G \\mid M_i) P(M_i)\n$$\n\n$$\nP(G) = 0.0625 + 0.0125 + 0.125 + 0.03125 = 0.23125\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.166",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Damaged Packages by Warehouse",
+    "context_en": "A logistics company routes each outgoing package to one of four warehouses completely at random (probability 1/4 per warehouse). Warehouse A ships out 2 damaged packages out of every 14 it handles. Warehouse B ships out 3 damaged packages out of every 12. Warehouse C ships out 1 damaged package out of every 20. Warehouse D ships out 5 damaged packages out of every 10. A customer receives a damaged package.",
+    "statements_en": [
+      "The probability that a randomly shipped package is damaged is greater than 23%.",
+      "The probability that the package came from Warehouse D, given that it is damaged, is greater than 53%.",
+      "The probability that the package came from Warehouse B, given that it is damaged, is greater than the probability that the package came from Warehouse A, given that it is damaged.",
+      "The probability that the package came from Warehouse C, given that it is damaged, is greater than 5.5%.",
+      "The probability that the package came from Warehouse D, given that it is damaged, is more than 3.5 times the probability that the package came from Warehouse A, given that it is damaged."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly shipped package being damaged is $P(D)$. Using the Law of Total Probability as derived in the overview:\n\n$$\nP(D) = \\frac{33}{140}\n$$\n\n$$\nP(D) \\approx 0.235714\n$$\n\nThe claim states this is greater than $23\\% = 0.23$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nWe need the conditional probability $P(W_D \\mid D)$. Using Bayes' Theorem:\n\n$$\nP(W_D \\mid D) = \\frac{P(D \\cap W_D)}{P(D)}\n$$\n\n$$\nP(W_D \\mid D) = \\frac{1/8}{33/140}\n$$\n\n$$\nP(W_D \\mid D) = \\frac{1}{8} \\cdot \\frac{140}{33} = \\frac{140}{264} = \\frac{35}{66}\n$$\n\n$$\nP(W_D \\mid D) \\approx 0.530303\n$$\n\nThe claim states this is greater than $53\\% = 0.53$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe compare $P(W_B \\mid D)$ and $P(W_A \\mid D)$. Since both probabilities share the same denominator $P(D)$, we can compare their numerators $P(D \\cap W_B)$ and $P(D \\cap W_A)$.\n\n$$\nP(D \\cap W_B) = \\frac{1}{16}\n$$\n\n$$\nP(D \\cap W_A) = \\frac{1}{28}\n$$\n\nSince $\\frac{1}{16} > \\frac{1}{28}$, it implies $P(W_B \\mid D) > P(W_A \\mid D)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nWe need the conditional probability $P(W_C \\mid D)$. Using Bayes' Theorem:\n\n$$\nP(W_C \\mid D) = \\frac{P(D \\cap W_C)}{P(D)}\n$$\n\n$$\nP(W_C \\mid D) = \\frac{1/80}{33/140}\n$$\n\n$$\nP(W_C \\mid D) = \\frac{1}{80} \\cdot \\frac{140}{33} = \\frac{140}{2640} = \\frac{7}{132}\n$$\n\n$$\nP(W_C \\mid D) \\approx 0.053030\n$$\n\nThe claim states this is greater than $5.5\\% = 0.055$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nWe need to compare $P(W_D \\mid D)$ with $3.5 \\times P(W_A \\mid D)$.\n\n$$\nP(W_D \\mid D) = \\frac{P(D \\cap W_D)}{P(D)} = \\frac{1/8}{33/140} = \\frac{35}{66}\n$$\n\n$$\nP(W_A \\mid D) = \\frac{P(D \\cap W_A)}{P(D)} = \\frac{1/28}{33/140} = \\frac{1}{28} \\cdot \\frac{140}{33} = \\frac{5}{33}\n$$\n\nNow we calculate $3.5 \\times P(W_A \\mid D)$:\n\n$$\n3.5 \\times P(W_A \\mid D) = \\frac{7}{2} \\times \\frac{5}{33} = \\frac{35}{66}\n$$\n\nSince $P(W_D \\mid D) = \\frac{35}{66}$ and $3.5 \\times P(W_A \\mid D) = \\frac{35}{66}$, the two values are equal. The claim states that $P(W_D \\mid D)$ is *more than* $3.5$ times $P(W_A \\mid D)$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A logistics company routes each outgoing package to one of four warehouses completely at random, meaning the prior probability of a package going to any specific warehouse is $P(W_i) = \\frac{1}{4}$ for $i \\in \\{A, B, C, D\\}$. We are given the conditional probabilities of a package being damaged, given its originating warehouse:\n\n$P(D \\mid W_A) = \\frac{2}{14} = \\frac{1}{7} \\approx 0.142857$\n$P(D \\mid W_B) = \\frac{3}{12} = \\frac{1}{4} = 0.25$\n$P(D \\mid W_C) = \\frac{1}{20} = 0.05$\n$P(D \\mid W_D) = \\frac{5}{10} = \\frac{1}{2} = 0.5$\n\nTo find the overall probability of a randomly shipped package being damaged, $P(D)$, we use the Law of Total Probability, summing the joint probabilities for each warehouse:\n\n$$P(D) = \\sum_{i} P(D \\mid W_i) P(W_i)$$\n\n$$P(D) = P(D \\mid W_A) P(W_A) + P(D \\mid W_B) P(W_B) + P(D \\mid W_C) P(W_C) + P(D \\mid W_D) P(W_D)$$\n\n$$P(D) = \\frac{1}{7} \\cdot \\frac{1}{4} + \\frac{1}{4} \\cdot \\frac{1}{4} + \\frac{1}{20} \\cdot \\frac{1}{4} + \\frac{1}{2} \\cdot \\frac{1}{4}$$\n\n$$P(D) = \\frac{1}{28} + \\frac{1}{16} + \\frac{1}{80} + \\frac{1}{8}$$\n\nTo sum these, we find a common denominator, which is $2^4 \\cdot 5 \\cdot 7 = 16 \\cdot 35 = 560$:\n\n$$\nP(D) = \\frac{20}{560} + \\frac{35}{560} + \\frac{7}{560} + \\frac{70}{560} = \\frac{20 + 35 + 7 + 70}{560} = \\frac{132}{560}\n$$\n\n$$P(D) = \\frac{33}{140} \\approx 0.235714$$\n\nTo find the posterior probability that a damaged package came from a specific warehouse $W_i$, $P(W_i \\mid D)$, we use Bayes' Theorem:\n\n$$P(W_i \\mid D) = \\frac{P(D \\mid W_i) P(W_i)}{P(D)}$$\n\nWe calculate the numerators $P(D \\mid W_i) P(W_i)$ which are $P(D \\cap W_i)$:\n\n$P(D \\cap W_A) = \\frac{1}{28} \\approx 0.035714$\n$P(D \\cap W_B) = \\frac{1}{16} = 0.0625$\n$P(D \\cap W_C) = \\frac{1}{80} = 0.0125$\n$P(D \\cap W_D) = \\frac{1}{8} = 0.125$\n\nThese joint probabilities sum to $P(D) = \\frac{33}{140}$.",
+    "title_de_existing": "Beschädigte Pakete nach Lager",
+    "context_de_existing": "Ein Logistikunternehmen leitet jedes ausgehende Paket völlig zufällig an eines von vier Lagern (jeweils 1/4). Lager A: 2 beschädigte von 14. Lager B: 3 von 12. Lager C: 1 von 20. Lager D: 5 von 10. Ein Kunde erhält ein beschädigtes Paket.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig versandtes Paket beschädigt ist, ist größer als 23%.",
+      "Die Wahrscheinlichkeit für Lager D gegeben beschädigt ist größer als 53%.",
+      "Die Wahrscheinlichkeit für Lager B gegeben beschädigt ist größer als die für Lager A gegeben beschädigt.",
+      "Die Wahrscheinlichkeit für Lager C gegeben beschädigt ist größer als 5,5%.",
+      "Die Wahrscheinlichkeit für Lager D gegeben beschädigt ist mehr als das 3,5-Fache der Wahrscheinlichkeit für Lager A gegeben beschädigt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig versandtes Paket beschädigt ist, ist größer als 23%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(D) = \\frac{33}{140}\n$$\n\n$$\nP(D) \\approx 0.235714\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Lager D gegeben beschädigt ist größer als 53%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(W_D \\mid D) = \\frac{P(D \\cap W_D)}{P(D)}\n$$\n\n$$\nP(W_D \\mid D) = \\frac{1/8}{33/140}\n$$\n\n$$\nP(W_D \\mid D) = \\frac{1}{8} \\cdot \\frac{140}{33} = \\frac{140}{264} = \\frac{35}{66}\n$$\n\n$$\nP(W_D \\mid D) \\approx 0.530303\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Lager B gegeben beschädigt ist größer als die für Lager A gegeben beschädigt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(D \\cap W_B) = \\frac{1}{16}\n$$\n\n$$\nP(D \\cap W_A) = \\frac{1}{28}\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Lager C gegeben beschädigt ist größer als 5,5%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(W_C \\mid D) = \\frac{P(D \\cap W_C)}{P(D)}\n$$\n\n$$\nP(W_C \\mid D) = \\frac{1/80}{33/140}\n$$\n\n$$\nP(W_C \\mid D) = \\frac{1}{80} \\cdot \\frac{140}{33} = \\frac{140}{2640} = \\frac{7}{132}\n$$\n\n$$\nP(W_C \\mid D) \\approx 0.053030\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Lager D gegeben beschädigt ist mehr als das 3,5-Fache der Wahrscheinlichkeit für Lager A gegeben beschädigt. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(W_D \\mid D) = \\frac{P(D \\cap W_D)}{P(D)} = \\frac{1/8}{33/140} = \\frac{35}{66}\n$$\n\n$$\nP(W_A \\mid D) = \\frac{P(D \\cap W_A)}{P(D)} = \\frac{1/28}{33/140} = \\frac{1}{28} \\cdot \\frac{140}{33} = \\frac{5}{33}\n$$\n\n$$\n3.5 \\times P(W_A \\mid D) = \\frac{7}{2} \\times \\frac{5}{33} = \\frac{35}{66}\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Logistikunternehmen leitet jedes ausgehende Paket völlig zufällig an eines von vier Lagern (jeweils 1/4). Lager A: 2 beschädigte von 14. Lager B: 3 von 12. Lager C: 1 von 20. Lager D: 5 von 10. Ein Kunde erhält ein beschädigtes Paket. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(D) = \\sum_{i} P(D \\mid W_i) P(W_i)$$\n\n$$P(D) = P(D \\mid W_A) P(W_A) + P(D \\mid W_B) P(W_B) + P(D \\mid W_C) P(W_C) + P(D \\mid W_D) P(W_D)$$\n\n$$P(D) = \\frac{1}{7} \\cdot \\frac{1}{4} + \\frac{1}{4} \\cdot \\frac{1}{4} + \\frac{1}{20} \\cdot \\frac{1}{4} + \\frac{1}{2} \\cdot \\frac{1}{4}$$\n\n$$P(D) = \\frac{1}{28} + \\frac{1}{16} + \\frac{1}{80} + \\frac{1}{8}$$\n\n$$\nP(D) = \\frac{20}{560} + \\frac{35}{560} + \\frac{7}{560} + \\frac{70}{560} = \\frac{20 + 35 + 7 + 70}{560} = \\frac{132}{560}\n$$\n\n$$P(D) = \\frac{33}{140} \\approx 0.235714$$\n\n$$P(W_i \\mid D) = \\frac{P(D \\mid W_i) P(W_i)}{P(D)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.167",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Scholarships by Admissions Office",
+    "context_en": "A university's central admissions system routes each application to one of four regional offices completely at random (probability 1/4 per office). Office 1 awards a scholarship to 4 applicants out of every 16 it reviews. Office 2 awards a scholarship to 3 out of every 24. Office 3 awards a scholarship to 5 out of every 10. Office 4 awards a scholarship to 2 out of every 20. An applicant is awarded a scholarship.",
+    "statements_en": [
+      "The probability that a randomly reviewed applicant is awarded a scholarship is greater than 24%.",
+      "The probability that the applicant's file went to Office 3, given that they were awarded a scholarship, is greater than 51%.",
+      "The probability that the applicant's file went to Office 1, given that they were awarded a scholarship, is greater than the combined probability that it went to Office 2 or Office 4, given that they were awarded a scholarship.",
+      "The probability that the applicant's file went to Office 4, given that they were awarded a scholarship, is greater than 11%.",
+      "The probability that the applicant's file went to Office 3, given that they were awarded a scholarship, is more than 5 times the probability that the applicant's file went to Office 4, given that they were awarded a scholarship."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly reviewed applicant is awarded a scholarship is the total probability of event $S$. We calculated this in the overview using the Law of Total Probability:\n\n$$\nP(S) = 0.24375\n$$\n\nComparing this with $24\\%$:\n\n$$\n0.24375 = 24.375\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the applicant's file went to Office 3, given that they were awarded a scholarship, is a conditional probability $P(O_3 \\mid S)$. We use Bayes' Theorem:\n\n$$\nP(O_3 \\mid S) = \\frac{P(S \\cap O_3)}{P(S)}\n$$\n\nUsing the values from the overview:\n\n$$\nP(O_3 \\mid S) = \\frac{0.125}{0.24375}\n$$\n\n$$\nP(O_3 \\mid S) \\approx 0.51282\n$$\n\nComparing this with $51\\%$:\n\n$$\n0.51282 = 51.282\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nFirst, we find the conditional probability that the file went to Office 1, given a scholarship. Using Bayes' Theorem and values from the overview:\n\n$$\nP(O_1 \\mid S) = \\frac{P(S \\cap O_1)}{P(S)} = \\frac{0.0625}{0.24375}\n$$\n\n$$\nP(O_1 \\mid S) \\approx 0.25641\n$$\n\nNext, we find the conditional probabilities for Office 2 and Office 4:\n\n$$\nP(O_2 \\mid S) = \\frac{P(S \\cap O_2)}{P(S)} = \\frac{0.03125}{0.24375}\n$$\n\n$$\nP(O_2 \\mid S) \\approx 0.12821\n$$\n\n$$\nP(O_4 \\mid S) = \\frac{P(S \\cap O_4)}{P(S)} = \\frac{0.025}{0.24375}\n$$\n\n$$\nP(O_4 \\mid S) \\approx 0.10256\n$$\n\nThe combined probability that it went to Office 2 or Office 4, given a scholarship, is the sum of these mutually exclusive events:\n\n$$\nP(O_2 \\cup O_4 \\mid S) = P(O_2 \\mid S) + P(O_4 \\mid S)\n$$\n\n$$\nP(O_2 \\cup O_4 \\mid S) \\approx 0.12821 + 0.10256\n$$\n\n$$\nP(O_2 \\cup O_4 \\mid S) \\approx 0.23077\n$$\n\nThe claim compares $P(O_1 \\mid S)$ with $P(O_2 \\cup O_4 \\mid S)$. We have $0.25641$ and $0.23077$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe probability that the applicant's file went to Office 4, given that they were awarded a scholarship, is $P(O_4 \\mid S)$. From the calculation in statement C:\n\n$$\nP(O_4 \\mid S) \\approx 0.10256\n$$\n\nComparing this with $11\\%$:\n\n$$\n0.10256 = 10.256\\%\n$$\n\n.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nWe need to compare $P(O_3 \\mid S)$ with $5 \\times P(O_4 \\mid S)$. We have the individual probabilities from statements B and C:\n\n$P(O_3 \\mid S) \\approx 0.51282$\n\n$P(O_4 \\mid S) \\approx 0.10256$\n\nWe calculate $5 \\times P(O_4 \\mid S)$:\n\n$$\n5 \\times P(O_4 \\mid S) \\approx 5 \\times 0.10256\n$$\n\n$$\n5 \\times P(O_4 \\mid S) \\approx 0.51280\n$$\n\nComparing $P(O_3 \\mid S)$ with this value:\n\n$$\n0.51282 \\not> 0.51280\n$$\n\nMore precisely, we can compare the ratios of the joint probabilities since the denominator $P(S)$ cancels:\n\n$$\n\\frac{P(O_3 \\mid S)}{P(O_4 \\mid S)} = \\frac{P(S \\cap O_3) / P(S)}{P(S \\cap O_4) / P(S)} = \\frac{P(S \\cap O_3)}{P(S \\cap O_4)}\n$$\n\nUsing values from the overview:\n\n$$\n\\frac{0.125}{0.025} = 5\n$$\n\nThis means $P(O_3 \\mid S)$ is exactly 5 times $P(O_4 \\mid S)$. The claim states it is *more than* 5 times.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A university's central admissions system routes each applicant's file to one of four regional offices completely at random. We model this as each office $O_i$ having an equal prior probability of receiving a file, $P(O_i) = \\frac{1}{4}$.\n\nEach office has a different scholarship award rate. Let $S$ denote the event that an applicant is awarded a scholarship. The conditional probabilities of awarding a scholarship, given the office, are:\n\n$P(S \\mid O_1) = \\frac{4}{16} = 0.25$\n\n$P(S \\mid O_2) = \\frac{3}{24} = 0.125$\n\n$P(S \\mid O_3) = \\frac{5}{10} = 0.5$\n\n$P(S \\mid O_4) = \\frac{2}{20} = 0.1$\n\nThe overall probability that a randomly reviewed applicant is awarded a scholarship, $P(S)$, is found using the Law of Total Probability:\n\n$$\nP(S) = \\sum_{i = 1}^{4} P(S \\mid O_i)P(O_i)\n$$\n\n$$P(S) = P(S \\mid O_1)P(O_1) + P(S \\mid O_2)P(O_2) + P(S \\mid O_3)P(O_3) + P(S \\mid O_4)P(O_4)$$\n\n$$P(S) = (0.25)\\left(\\frac{1}{4}\\right) + (0.125)\\left(\\frac{1}{4}\\right) + (0.5)\\left(\\frac{1}{4}\\right) + (0.1)\\left(\\frac{1}{4}\\right)$$\n\n$$P(S) = \\frac{1}{4}(0.25 + 0.125 + 0.5 + 0.1)$$\n\n$$P(S) = \\frac{1}{4}(0.975)$$\n\n$$P(S) = 0.24375$$\n\nTo apply Bayes' Theorem for probabilities conditional on receiving a scholarship, we calculate the joint probabilities $P(S \\cap O_i) = P(S \\mid O_i)P(O_i)$:\n\n$$\nP(S \\cap O_1) = 0.25 \\cdot \\frac{1}{4} = 0.0625\n$$\n\n$$\nP(S \\cap O_2) = 0.125 \\cdot \\frac{1}{4} = 0.03125\n$$\n\n$$\nP(S \\cap O_3) = 0.5 \\cdot \\frac{1}{4} = 0.125\n$$\n\n$$\nP(S \\cap O_4) = 0.1 \\cdot \\frac{1}{4} = 0.025\n$$",
+    "title_de_existing": "Stipendien nach Zulassungsbüro",
+    "context_de_existing": "Das zentrale Zulassungssystem einer Universität leitet jede Bewerbung völlig zufällig an eines von vier Regionalbüros (jeweils 1/4). Büro 1: Stipendium an 4 von 16. Büro 2: 3 von 24. Büro 3: 5 von 10. Büro 4: 2 von 20. Ein Bewerber erhält ein Stipendium.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig geprüfter Bewerber ein Stipendium erhält, ist größer als 24%.",
+      "Die Wahrscheinlichkeit für Büro 3 gegeben Stipendium ist größer als 51%.",
+      "Die Wahrscheinlichkeit für Büro 1 gegeben Stipendium ist größer als die Summe der Wahrscheinlichkeiten für Büro 2 oder 4 gegeben Stipendium.",
+      "Die Wahrscheinlichkeit für Büro 4 gegeben Stipendium ist größer als 11%.",
+      "Die Wahrscheinlichkeit für Büro 3 gegeben Stipendium ist mehr als das 5-Fache der Wahrscheinlichkeit für Büro 4 gegeben Stipendium."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig geprüfter Bewerber ein Stipendium erhält, ist größer als 24%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(S) = 0.24375\n$$\n\n$$\n0.24375 = 24.375\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Büro 3 gegeben Stipendium ist größer als 51%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(O_3 \\mid S) = \\frac{P(S \\cap O_3)}{P(S)}\n$$\n\n$$\nP(O_3 \\mid S) = \\frac{0.125}{0.24375}\n$$\n\n$$\nP(O_3 \\mid S) \\approx 0.51282\n$$\n\n$$\n0.51282 = 51.282\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Büro 1 gegeben Stipendium ist größer als die Summe der Wahrscheinlichkeiten für Büro 2 oder 4 gegeben Stipendium. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(O_1 \\mid S) = \\frac{P(S \\cap O_1)}{P(S)} = \\frac{0.0625}{0.24375}\n$$\n\n$$\nP(O_1 \\mid S) \\approx 0.25641\n$$\n\n$$\nP(O_2 \\mid S) = \\frac{P(S \\cap O_2)}{P(S)} = \\frac{0.03125}{0.24375}\n$$\n\n$$\nP(O_2 \\mid S) \\approx 0.12821\n$$\n\n$$\nP(O_4 \\mid S) = \\frac{P(S \\cap O_4)}{P(S)} = \\frac{0.025}{0.24375}\n$$\n\n$$\nP(O_4 \\mid S) \\approx 0.10256\n$$\n\n$$\nP(O_2 \\cup O_4 \\mid S) = P(O_2 \\mid S) + P(O_4 \\mid S)\n$$\n\n$$\nP(O_2 \\cup O_4 \\mid S) \\approx 0.12821 + 0.10256\n$$\n\n$$\nP(O_2 \\cup O_4 \\mid S) \\approx 0.23077\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Büro 4 gegeben Stipendium ist größer als 11%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(O_4 \\mid S) \\approx 0.10256\n$$\n\n$$\n0.10256 = 10.256\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Büro 3 gegeben Stipendium ist mehr als das 5-Fache der Wahrscheinlichkeit für Büro 4 gegeben Stipendium. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n5 \\times P(O_4 \\mid S) \\approx 5 \\times 0.10256\n$$\n\n$$\n5 \\times P(O_4 \\mid S) \\approx 0.51280\n$$\n\n$$\n0.51282 \\not> 0.51280\n$$\n\n$$\n\\frac{P(O_3 \\mid S)}{P(O_4 \\mid S)} = \\frac{P(S \\cap O_3) / P(S)}{P(S \\cap O_4) / P(S)} = \\frac{P(S \\cap O_3)}{P(S \\cap O_4)}\n$$\n\n$$\n\\frac{0.125}{0.025} = 5\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Das zentrale Zulassungssystem einer Universität leitet jede Bewerbung völlig zufällig an eines von vier Regionalbüros (jeweils 1/4). Büro 1: Stipendium an 4 von 16. Büro 2: 3 von 24. Büro 3: 5 von 10. Büro 4: 2 von 20. Ein Bewerber erhält ein Stipendium. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(S) = \\sum_{i = 1}^{4} P(S \\mid O_i)P(O_i)\n$$\n\n$$P(S) = P(S \\mid O_1)P(O_1) + P(S \\mid O_2)P(O_2) + P(S \\mid O_3)P(O_3) + P(S \\mid O_4)P(O_4)$$\n\n$$P(S) = (0.25)\\left(\\frac{1}{4}\\right) + (0.125)\\left(\\frac{1}{4}\\right) + (0.5)\\left(\\frac{1}{4}\\right) + (0.1)\\left(\\frac{1}{4}\\right)$$\n\n$$P(S) = \\frac{1}{4}(0.25 + 0.125 + 0.5 + 0.1)$$\n\n$$P(S) = \\frac{1}{4}(0.975)$$\n\n$$P(S) = 0.24375$$\n\n$$\nP(S \\cap O_1) = 0.25 \\cdot \\frac{1}{4} = 0.0625\n$$\n\n$$\nP(S \\cap O_2) = 0.125 \\cdot \\frac{1}{4} = 0.03125\n$$\n\n$$\nP(S \\cap O_3) = 0.5 \\cdot \\frac{1}{4} = 0.125\n$$\n\n$$\nP(S \\cap O_4) = 0.1 \\cdot \\frac{1}{4} = 0.025\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.168",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Abnormal Results by Test Machine",
+    "context_en": "A diagnostic lab has four testing machines, and each blood sample is processed by a machine chosen completely at random (probability 1/4 per machine). Machine 1 returns an abnormal result on 5 out of every 10 samples. Machine 2 returns one on 3 out of every 12. Machine 3 returns one on 4 out of every 8. Machine 4 returns one on 1 out of every 20. A sample comes back with an abnormal result.",
+    "statements_en": [
+      "The probability that a randomly selected sample comes back abnormal is greater than 30%.",
+      "The probability that the sample came from Machine 1, given that it is abnormal, equals the probability that the sample came from Machine 3, given that it is abnormal.",
+      "The probability that the sample came from Machine 2, given that it is abnormal, is greater than the probability that the sample came from Machine 4, given that it is abnormal.",
+      "The probability that the sample came from Machine 1, given that it is abnormal, is more than 9 times the probability that the sample came from Machine 4, given that it is abnormal.",
+      "The probability that the sample came from Machine 4, given that it is abnormal, is less than 5%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly selected sample coming back abnormal is $P(A)$. We calculated this in the overview using the Law of Total Probability:\n\n$$\nP(A) = 0.325\n$$\n\nConverting this to a percentage gives $32.5\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the sample came from Machine 1, given that it is abnormal, is found using Bayes' Theorem:\n\n$$\nP(M_1|A) = \\frac{P(M_1)P(A|M_1)}{P(A)}\n$$\n\n$$\nP(M_1|A) = \\frac{(\\frac{1}{4})(0.5)}{0.325} = \\frac{0.125}{0.325} \\approx 0.384615\n$$\n\nSimilarly, for Machine 3:\n\n$$\nP(M_3|A) = \\frac{P(M_3)P(A|M_3)}{P(A)}\n$$\n\n$$\nP(M_3|A) = \\frac{(\\frac{1}{4})(0.5)}{0.325} = \\frac{0.125}{0.325} \\approx 0.384615\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe need to compare the posterior probabilities for Machine 2 and Machine 4. Using Bayes' Theorem:\n\n$$\nP(M_2|A) = \\frac{P(M_2)P(A|M_2)}{P(A)}\n$$\n\n$$\nP(M_2|A) = \\frac{(\\frac{1}{4})(0.25)}{0.325} = \\frac{0.0625}{0.325} \\approx 0.1923\n$$\n\nFor Machine 4:\n\n$$\nP(M_4|A) = \\frac{P(M_4)P(A|M_4)}{P(A)}\n$$\n\n$$\nP(M_4|A) = \\frac{(\\frac{1}{4})(0.05)}{0.325} = \\frac{0.0125}{0.325} \\approx 0.0385\n$$\n\nSince $P(M_2|A) \\approx 0.1923$ and $P(M_4|A) \\approx 0.0385$, we have $P(M_2|A) > P(M_4|A)$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nWe need to compare $P(M_1|A)$ with $9 \\times P(M_4|A)$. We already calculated the individual posterior probabilities in previous statements.\n\nFrom **B.**, $P(M_1|A) = \\frac{0.125}{0.325}$.\nFrom **C.**, $P(M_4|A) = \\frac{0.0125}{0.325}$.\n\nComparing their ratio is equivalent to comparing the ratio of their numerators since they share the same denominator $P(A)$:\n\n$$\n\\frac{P(M_1|A)}{P(M_4|A)} = \\dfrac{0.125}{0.325}\\cdot\\dfrac{0.325}{0.0125}=\\dfrac{0.125}{0.0125}=10\n$$\n\n.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThe probability that the sample came from Machine 4, given that it is abnormal, is $P(M_4|A)$. We calculated this in **C.**:\n\n$$\nP(M_4|A) = \\frac{0.0125}{0.325}\n$$\n\n$$\n\\approx 0.03846\n$$\n\nConverting this to a percentage gives approximately $3.846\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A diagnostic lab has four testing machines. Each blood sample is processed by a machine chosen completely at random, meaning the prior probability of a sample coming from any specific machine is equal: $P(M_1) = P(M_2) = P(M_3) = P(M_4) = \\frac{1}{4}$.\n\nThe machines have different rates of returning an abnormal result, which we can denote as $P(A|M_i)$.\n\nMachine 1: $P(A|M_1) = \\frac{5}{10} = 0.5$\nMachine 2: $P(A|M_2) = \\frac{3}{12} = 0.25$\nMachine 3: $P(A|M_3) = \\frac{4}{8} = 0.5$\nMachine 4: $P(A|M_4) = \\frac{1}{20} = 0.05$\n\nWe are given that a sample comes back with an abnormal result. We need to evaluate statements about the overall probability of an abnormal result and the posterior probabilities that the sample came from a particular machine given that it was abnormal. These are calculated using the Law of Total Probability for $P(A)$ and Bayes' Theorem for $P(M_i|A)$.\n\nThe probability of a randomly selected sample coming back abnormal, $P(A)$, is the sum of the probabilities of an abnormal result from each machine, weighted by the probability of using that machine:\n\n$$P(A) = P(M_1)P(A|M_1) + P(M_2)P(A|M_2) + P(M_3)P(A|M_3) + P(M_4)P(A|M_4)$$\n\nSubstituting the given values:\n\n$$P(A) = \\left(\\frac{1}{4}\\right)(0.5) + \\left(\\frac{1}{4}\\right)(0.25) + \\left(\\frac{1}{4}\\right)(0.5) + \\left(\\frac{1}{4}\\right)(0.05)$$\n\n$$P(A) = 0.125 + 0.0625 + 0.125 + 0.0125$$\n\n$$P(A) = 0.325$$\n\nThis is the total probability of an abnormal result, $P(A)$.",
+    "title_de_existing": "Auffällige Ergebnisse nach Testmaschine",
+    "context_de_existing": "Ein Diagnostiklabor hat vier Testmaschinen; jede Blutprobe wird völlig zufällig einer Maschine zugewiesen (jeweils 1/4). Maschine 1: auffällig in 5 von 10. Maschine 2: 3 von 12. Maschine 3: 4 von 8. Maschine 4: 1 von 20. Eine Probe ist auffällig.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine zufällig ausgewählte Probe auffällig ist, ist größer als 30%.",
+      "Die Wahrscheinlichkeit für Maschine 1 gegeben auffällig ist gleich der für Maschine 3 gegeben auffällig.",
+      "Die Wahrscheinlichkeit für Maschine 2 gegeben auffällig ist größer als die für Maschine 4 gegeben auffällig.",
+      "Die Wahrscheinlichkeit für Maschine 1 gegeben auffällig ist mehr als das 9-Fache der Wahrscheinlichkeit für Maschine 4 gegeben auffällig.",
+      "Die Wahrscheinlichkeit für Maschine 4 gegeben auffällig ist kleiner als 5%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine zufällig ausgewählte Probe auffällig ist, ist größer als 30%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A) = 0.325\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Maschine 1 gegeben auffällig ist gleich der für Maschine 3 gegeben auffällig. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_1|A) = \\frac{P(M_1)P(A|M_1)}{P(A)}\n$$\n\n$$\nP(M_1|A) = \\frac{(\\frac{1}{4})(0.5)}{0.325} = \\frac{0.125}{0.325} \\approx 0.384615\n$$\n\n$$\nP(M_3|A) = \\frac{P(M_3)P(A|M_3)}{P(A)}\n$$\n\n$$\nP(M_3|A) = \\frac{(\\frac{1}{4})(0.5)}{0.325} = \\frac{0.125}{0.325} \\approx 0.384615\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Maschine 2 gegeben auffällig ist größer als die für Maschine 4 gegeben auffällig. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_2|A) = \\frac{P(M_2)P(A|M_2)}{P(A)}\n$$\n\n$$\nP(M_2|A) = \\frac{(\\frac{1}{4})(0.25)}{0.325} = \\frac{0.0625}{0.325} \\approx 0.1923\n$$\n\n$$\nP(M_4|A) = \\frac{P(M_4)P(A|M_4)}{P(A)}\n$$\n\n$$\nP(M_4|A) = \\frac{(\\frac{1}{4})(0.05)}{0.325} = \\frac{0.0125}{0.325} \\approx 0.0385\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit für Maschine 1 gegeben auffällig ist mehr als das 9-Fache der Wahrscheinlichkeit für Maschine 4 gegeben auffällig. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\frac{P(M_1|A)}{P(M_4|A)} = \\dfrac{0.125}{0.325}\\cdot\\dfrac{0.325}{0.0125}=\\dfrac{0.125}{0.0125}=10\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit für Maschine 4 gegeben auffällig ist kleiner als 5%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_4|A) = \\frac{0.0125}{0.325}\n$$\n\n$$\n\\approx 0.03846\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Diagnostiklabor hat vier Testmaschinen; jede Blutprobe wird völlig zufällig einer Maschine zugewiesen (jeweils 1/4). Maschine 1: auffällig in 5 von 10. Maschine 2: 3 von 12. Maschine 3: 4 von 8. Maschine 4: 1 von 20. Eine Probe ist auffällig. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(A) = P(M_1)P(A|M_1) + P(M_2)P(A|M_2) + P(M_3)P(A|M_3) + P(M_4)P(A|M_4)$$\n\n$$P(A) = \\left(\\frac{1}{4}\\right)(0.5) + \\left(\\frac{1}{4}\\right)(0.25) + \\left(\\frac{1}{4}\\right)(0.5) + \\left(\\frac{1}{4}\\right)(0.05)$$\n\n$$P(A) = 0.125 + 0.0625 + 0.125 + 0.0125$$\n\n$$P(A) = 0.325$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.169",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Mechanical Issues by Car Lot",
+    "context_en": "A used-car dealership has four lots, and each car sold is drawn from a lot chosen completely at random (probability 1/4 per lot). Lot 1 has 2 cars with a mechanical issue out of every 20. Lot 2 has 1 out of every 10. Lot 3 has 3 out of every 15. Lot 4 has 1 out of every 25. A sold car turns out to have a mechanical issue.",
+    "statements_en": [
+      "The probability that a randomly sold car has a mechanical issue is greater than 10%.",
+      "The probability that the car came from Lot 1, given that it has an issue, is greater than the probability that the car came from Lot 2, given that it has an issue.",
+      "The probability that the car came from Lot 3, given that it has an issue, is greater than 46%.",
+      "The probability that the car came from Lot 4, given that it has an issue, is greater than 10%.",
+      "The probability that the car came from Lot 3, given that it has an issue, is more than 5 times the probability that the car came from Lot 4, given that it has an issue."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly sold car has a mechanical issue is $P(I)$. From the solution overview, we calculated this using the Law of Total Probability:\n\n$$\nP(I) = 0.110\n$$\n\nComparing this to $10\\% = 0.10$, we see that $0.110 > 0.10$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nWe need to compare the posterior probabilities $P(L_1 \\mid I)$ and $P(L_2 \\mid I)$. We use Bayes' Theorem for each:\n\n$$\nP(L_i \\mid I) = \\frac{P(L_i)P(I \\mid L_i)}{P(I)}\n$$\n\nFor Lot 1:\n\n$$\nP(L_1 \\mid I) = \\frac{0.025}{0.110}\n$$\n\nFor Lot 2:\n\n$$\nP(L_2 \\mid I) = \\frac{0.025}{0.110}\n$$\n\nSince the numerator terms $P(L_1)P(I \\mid L_1)$ and $P(L_2)P(I \\mid L_2)$ are both $0.025$, and the denominator $P(I)$ is common, $P(L_1 \\mid I) = P(L_2 \\mid I)$. The claim states $P(L_1 \\mid I) > P(L_2 \\mid I)$, which is false.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nWe calculate the posterior probability $P(L_3 \\mid I)$ using Bayes' Theorem:\n\n$$\nP(L_3 \\mid I) = \\frac{P(L_3)P(I \\mid L_3)}{P(I)}\n$$\n\n$$\nP(L_3 \\mid I) = \\frac{0.050}{0.110}\n$$\n\n$$\nP(L_3 \\mid I) \\approx 0.45455\n$$\n\nComparing this to $46\\% = 0.46$, we see that $0.45455 < 0.46$.\n\nSo the statement is False.\n",
+      "**D.** → False\n\nWe calculate the posterior probability $P(L_4 \\mid I)$ using Bayes' Theorem:\n\n$$\nP(L_4 \\mid I) = \\frac{P(L_4)P(I \\mid L_4)}{P(I)}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.010}{0.110}\n$$\n\n$$\nP(L_4 \\mid I) \\approx 0.09091\n$$\n\nComparing this to $10\\% = 0.10$, we see that $0.09091 < 0.10$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nWe need to compare $P(L_3 \\mid I)$ and $5 \\times P(L_4 \\mid I)$.\n\nFrom previous calculations:\n\n$$\nP(L_3 \\mid I) = \\frac{0.050}{0.110}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.010}{0.110}\n$$\n\nNow we calculate $5 \\times P(L_4 \\mid I)$:\n\n$$\n5 \\times P(L_4 \\mid I) = 5 \\times \\frac{0.010}{0.110} = \\frac{0.050}{0.110}\n$$\n\nWe find that $P(L_3 \\mid I) = \\frac{0.050}{0.110}$ and $5 \\times P(L_4 \\mid I) = \\frac{0.050}{0.110}$. Thus, $P(L_3 \\mid I)$ is exactly equal to $5 \\times P(L_4 \\mid I)$, not more than 5 times.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A used-car dealership has four lots, and each car sold is drawn from a lot chosen completely at random. We define $L_i$ as the event that a car is drawn from Lot $i$, so $P(L_1) = P(L_2) = P(L_3) = P(L_4) = \\frac{1}{4}$.\n\nLet $I$ be the event that a sold car has a mechanical issue. The probability of a car having an issue, given it came from a specific lot, is:\n\nLot 1: $P(I \\mid L_1) = \\frac{2}{20} = 0.10$\nLot 2: $P(I \\mid L_2) = \\frac{1}{10} = 0.10$\nLot 3: $P(I \\mid L_3) = \\frac{3}{15} = 0.20$\nLot 4: $P(I \\mid L_4) = \\frac{1}{25} = 0.04$\n\nTo find the overall probability that a randomly sold car has a mechanical issue, we use the Law of Total Probability:\n\n$$\nP(I) = \\sum_{i = 1}^{4} P(L_i) P(I \\mid L_i)\n$$\n\n$$P(I) = P(L_1)P(I \\mid L_1) + P(L_2)P(I \\mid L_2) + P(L_3)P(I \\mid L_3) + P(L_4)P(I \\mid L_4)$$\n\n$$P(I) = \\frac{1}{4}(0.10) + \\frac{1}{4}(0.10) + \\frac{1}{4}(0.20) + \\frac{1}{4}(0.04)$$\n\n$$P(I) = 0.025 + 0.025 + 0.050 + 0.010$$\n\n$$P(I) = 0.110$$",
+    "title_de_existing": "Mechanische Mängel nach Autohof",
+    "context_de_existing": "Ein Gebrauchtwagenhändler hat vier Höfe; jedes verkaufte Auto stammt aus einem völlig zufällig gewählten Hof (Wahrscheinlichkeit jeweils 1/4). Hof 1: 2 von 20 Autos mit mechanischem Mangel. Hof 2: 1 von 10. Hof 3: 3 von 15. Hof 4: 1 von 25. Ein verkauftes Auto hat einen mechanischen Mangel.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig verkauftes Auto einen mechanischen Mangel hat, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass das Auto aus Hof 1 stammt, gegeben Mangel, ist größer als die Wahrscheinlichkeit für Hof 2 gegeben Mangel.",
+      "Die Wahrscheinlichkeit, dass das Auto aus Hof 3 stammt, gegeben Mangel, ist größer als 46%.",
+      "Die Wahrscheinlichkeit, dass das Auto aus Hof 4 stammt, gegeben Mangel, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass das Auto aus Hof 3 stammt, gegeben Mangel, ist mehr als das 5-Fache der Wahrscheinlichkeit für Hof 4 gegeben Mangel."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig verkauftes Auto einen mechanischen Mangel hat, ist größer als 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(I) = 0.110\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Die Wahrscheinlichkeit, dass das Auto aus Hof 1 stammt, gegeben Mangel, ist größer als die Wahrscheinlichkeit für Hof 2 gegeben Mangel. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_i \\mid I) = \\frac{P(L_i)P(I \\mid L_i)}{P(I)}\n$$\n\n$$\nP(L_1 \\mid I) = \\frac{0.025}{0.110}\n$$\n\n$$\nP(L_2 \\mid I) = \\frac{0.025}{0.110}\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass das Auto aus Hof 3 stammt, gegeben Mangel, ist größer als 46%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_3 \\mid I) = \\frac{P(L_3)P(I \\mid L_3)}{P(I)}\n$$\n\n$$\nP(L_3 \\mid I) = \\frac{0.050}{0.110}\n$$\n\n$$\nP(L_3 \\mid I) \\approx 0.45455\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass das Auto aus Hof 4 stammt, gegeben Mangel, ist größer als 10%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_4 \\mid I) = \\frac{P(L_4)P(I \\mid L_4)}{P(I)}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.010}{0.110}\n$$\n\n$$\nP(L_4 \\mid I) \\approx 0.09091\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass das Auto aus Hof 3 stammt, gegeben Mangel, ist mehr als das 5-Fache der Wahrscheinlichkeit für Hof 4 gegeben Mangel. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_3 \\mid I) = \\frac{0.050}{0.110}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.010}{0.110}\n$$\n\n$$\n5 \\times P(L_4 \\mid I) = 5 \\times \\frac{0.010}{0.110} = \\frac{0.050}{0.110}\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Gebrauchtwagenhändler hat vier Höfe; jedes verkaufte Auto stammt aus einem völlig zufällig gewählten Hof (Wahrscheinlichkeit jeweils 1/4). Hof 1: 2 von 20 Autos mit mechanischem Mangel. Hof 2: 1 von 10. Hof 3: 3 von 15. Hof 4: 1 von 25. Ein verkauftes Auto hat einen mechanischen Mangel. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(I) = \\sum_{i = 1}^{4} P(L_i) P(I \\mid L_i)\n$$\n\n$$P(I) = P(L_1)P(I \\mid L_1) + P(L_2)P(I \\mid L_2) + P(L_3)P(I \\mid L_3) + P(L_4)P(I \\mid L_4)$$\n\n$$P(I) = \\frac{1}{4}(0.10) + \\frac{1}{4}(0.10) + \\frac{1}{4}(0.20) + \\frac{1}{4}(0.04)$$\n\n$$P(I) = 0.025 + 0.025 + 0.050 + 0.010$$\n\n$$P(I) = 0.110$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.170",
+    "short_letters": [
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Failed Room Inspections by Dorm",
+    "context_en": "A university has four dorms, and each room inspected is chosen completely at random (probability 1/4 per dorm). Dorm 1 fails 3 inspections out of every 15. Dorm 2 fails 5 out of every 20. Dorm 3 fails 2 out of every 16. Dorm 4 fails 4 out of every 10. A randomly inspected room fails.",
+    "statements_en": [
+      "The probability that a randomly inspected room fails is greater than 24%.",
+      "The probability that the room is in Dorm 4, given that it failed, is greater than 40%.",
+      "The probability that the room is in Dorm 2, given that it failed, is greater than the probability that the room is in Dorm 1, given that it failed.",
+      "The probability that the room is in Dorm 3, given that it failed, is greater than 13%.",
+      "The probability that the room is in Dorm 4, given that it failed, is more than 3 times the probability that the room is in Dorm 3, given that it failed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly inspected room fails, $P(F)$, is found using the Law of Total Probability, as calculated in the solution overview:\n\n$$\nP(F) = 0.24375\n$$\n\nThe claim states that $P(F)$ is greater than $24\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that a failed room is from Dorm 4 requires Bayes' Theorem:\n\n$$\nP(D_4 \\mid F) = \\frac{P(F \\mid D_4) P(D_4)}{P(F)}\n$$\n\nUsing the values $P(F \\mid D_4) = 0.4$, $P(D_4) = 0.25$, and $P(F) = 0.24375$ from the solution overview:\n\n$$\nP(D_4 \\mid F) = \\frac{(0.4)(0.25)}{0.24375}\n$$\n\n$$\nP(D_4 \\mid F) = \\frac{0.1}{0.24375}\n$$\n\n$$\nP(D_4 \\mid F) \\approx 0.410256\n$$\n\nThe claim states this probability is greater than $40\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe need to compare $P(D_2 \\mid F)$ and $P(D_1 \\mid F)$. Both are calculated using Bayes' Theorem with the same denominator $P(F)$. We need to evaluate the numerators $P(F \\mid D_i) P(D_i)$ for $i=1$ and $i=2$.\n\nFor Dorm 2:\n\n$$\nP(F \\mid D_2) P(D_2) = (0.25)(0.25) = 0.0625\n$$\n\nSo, $P(D_2 \\mid F) = \\frac{0.0625}{0.24375} \\approx 0.25641$.\n\nFor Dorm 1:\n\n$$\nP(F \\mid D_1) P(D_1) = (0.2)(0.25) = 0.05\n$$\n\nSo, $P(D_1 \\mid F) = \\frac{0.05}{0.24375} \\approx 0.20513$.\n\nThe claim states that $P(D_2 \\mid F)$ is greater than $P(D_1 \\mid F)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe probability that a failed room is from Dorm 3 requires Bayes' Theorem:\n\n$$\nP(D_3 \\mid F) = \\frac{P(F \\mid D_3) P(D_3)}{P(F)}\n$$\n\nUsing the values $P(F \\mid D_3) = 0.125$, $P(D_3) = 0.25$, and $P(F) = 0.24375$ from the solution overview:\n\n$$\nP(D_3 \\mid F) = \\frac{(0.125)(0.25)}{0.24375}\n$$\n\n$$\nP(D_3 \\mid F) = \\frac{0.03125}{0.24375}\n$$\n\n$$\nP(D_3 \\mid F) \\approx 0.128205\n$$\n\nThe claim states this probability is greater than $13\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nWe need to compare $P(D_4 \\mid F)$ with $3 \\times P(D_3 \\mid F)$. Both posterior probabilities share the same denominator $P(F)$. This means we can compare their numerators $P(F \\mid D_i) P(D_i)$.\n\nFrom previous calculations (or re-calculating):\n\n$$\nP(F \\mid D_4) P(D_4) = (0.4)(0.25) = 0.1\n$$\n\n$$\nP(F \\mid D_3) P(D_3) = (0.125)(0.25) = 0.03125\n$$\n\nSo we are comparing $\\frac{0.1}{P(F)}$ with $3 \\times \\frac{0.03125}{P(F)}$. The $P(F)$ terms cancel in a ratio:\n\n$$\n\\frac{P(D_4 \\mid F)}{P(D_3 \\mid F)} = \\frac{0.1}{0.03125} = 3.2\n$$\n\nThis means $P(D_4 \\mid F) = 3.2 \\times P(D_3 \\mid F)$. The claim states that $P(D_4 \\mid F)$ is more than 3 times $P(D_3 \\mid F)$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A university has four dorms. An inspected room is chosen completely at random, meaning the prior probability of selecting a room from any given dorm is uniform. Let $D_i$ denote the event that a randomly inspected room is from Dorm $i$, for $i=1, 2, 3, 4$. Then, the prior probabilities are:\n\n$$\nP(D_1) = P(D_2) = P(D_3) = P(D_4) = \\frac{1}{4} = 0.25\n$$\n\nLet $F$ be the event that a randomly inspected room fails inspection. The problem provides the conditional probabilities of a room failing given which dorm it is from:\n\n$$\nP(F \\mid D_1) = \\frac{3}{15} = 0.2\n$$\n$$\nP(F \\mid D_2) = \\frac{5}{20} = 0.25\n$$\n$$\nP(F \\mid D_3) = \\frac{2}{16} = 0.125\n$$\n$$\nP(F \\mid D_4) = \\frac{4}{10} = 0.4\n$$\n\nTo find the overall probability that a randomly inspected room fails, we use the Law of Total Probability:\n\n$$\nP(F) = \\sum_{i = 1}^{4} P(F \\mid D_i) P(D_i)\n$$\n\n$$P(F) = (0.2)(0.25) + (0.25)(0.25) + (0.125)(0.25) + (0.4)(0.25)$$\n\n$$P(F) = 0.05 + 0.0625 + 0.03125 + 0.1$$\n\n$$P(F) = 0.24375$$\n\nThis value of $P(F)$ is used to calculate posterior probabilities $P(D_i \\mid F)$ via Bayes' Theorem in subsequent statements.",
+    "title_de_existing": "Durchgefallene Zimmerkontrollen nach Wohnheim",
+    "context_de_existing": "Eine Universität hat vier Wohnheime; jedes kontrollierte Zimmer wird völlig zufällig gewählt (jeweils 1/4). Wohnheim 1: 3 von 15 Kontrollen durchgefallen. Wohnheim 2: 5 von 20. Wohnheim 3: 2 von 16. Wohnheim 4: 4 von 10. Ein zufällig kontrolliertes Zimmer fällt durch.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig kontrolliertes Zimmer durchfällt, ist größer als 24%.",
+      "Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 4 liegt, gegeben Durchfallen, ist größer als 40%.",
+      "Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 2 liegt, gegeben Durchfallen, ist größer als die Wahrscheinlichkeit für Wohnheim 1 gegeben Durchfallen.",
+      "Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 3 liegt, gegeben Durchfallen, ist größer als 13%.",
+      "Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 4 liegt, gegeben Durchfallen, ist mehr als das 3-Fache der Wahrscheinlichkeit für Wohnheim 3 gegeben Durchfallen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig kontrolliertes Zimmer durchfällt, ist größer als 24%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F) = 0.24375\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 4 liegt, gegeben Durchfallen, ist größer als 40%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(D_4 \\mid F) = \\frac{P(F \\mid D_4) P(D_4)}{P(F)}\n$$\n\n$$\nP(D_4 \\mid F) = \\frac{(0.4)(0.25)}{0.24375}\n$$\n\n$$\nP(D_4 \\mid F) = \\frac{0.1}{0.24375}\n$$\n\n$$\nP(D_4 \\mid F) \\approx 0.410256\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 2 liegt, gegeben Durchfallen, ist größer als die Wahrscheinlichkeit für Wohnheim 1 gegeben Durchfallen. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F \\mid D_2) P(D_2) = (0.25)(0.25) = 0.0625\n$$\n\n$$\nP(F \\mid D_1) P(D_1) = (0.2)(0.25) = 0.05\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 3 liegt, gegeben Durchfallen, ist größer als 13%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(D_3 \\mid F) = \\frac{P(F \\mid D_3) P(D_3)}{P(F)}\n$$\n\n$$\nP(D_3 \\mid F) = \\frac{(0.125)(0.25)}{0.24375}\n$$\n\n$$\nP(D_3 \\mid F) = \\frac{0.03125}{0.24375}\n$$\n\n$$\nP(D_3 \\mid F) \\approx 0.128205\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass das Zimmer in Wohnheim 4 liegt, gegeben Durchfallen, ist mehr als das 3-Fache der Wahrscheinlichkeit für Wohnheim 3 gegeben Durchfallen. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F \\mid D_4) P(D_4) = (0.4)(0.25) = 0.1\n$$\n\n$$\nP(F \\mid D_3) P(D_3) = (0.125)(0.25) = 0.03125\n$$\n\n$$\n\\frac{P(D_4 \\mid F)}{P(D_3 \\mid F)} = \\frac{0.1}{0.03125} = 3.2\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Eine Universität hat vier Wohnheime; jedes kontrollierte Zimmer wird völlig zufällig gewählt (jeweils 1/4). Wohnheim 1: 3 von 15 Kontrollen durchgefallen. Wohnheim 2: 5 von 20. Wohnheim 3: 2 von 16. Wohnheim 4: 4 von 10. Ein zufällig kontrolliertes Zimmer fällt durch. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(D_1) = P(D_2) = P(D_3) = P(D_4) = \\frac{1}{4} = 0.25\n$$\n\n$$\nP(F \\mid D_1) = \\frac{3}{15} = 0.2\n$$\n\n$$\nP(F \\mid D_2) = \\frac{5}{20} = 0.25\n$$\n\n$$\nP(F \\mid D_3) = \\frac{2}{16} = 0.125\n$$\n\n$$\nP(F \\mid D_4) = \\frac{4}{10} = 0.4\n$$\n\n$$\nP(F) = \\sum_{i = 1}^{4} P(F \\mid D_i) P(D_i)\n$$\n\n$$P(F) = (0.2)(0.25) + (0.25)(0.25) + (0.125)(0.25) + (0.4)(0.25)$$\n\n$$P(F) = 0.05 + 0.0625 + 0.03125 + 0.1$$\n\n$$P(F) = 0.24375$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.171",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Lost Packages by Warehouse",
+    "context_en": "A shipping company has four warehouses, and each package shipped is routed through a warehouse chosen completely at random (probability 1/4 per warehouse). Warehouse 1 loses 4 packages out of every 16. Warehouse 2 loses 2 out of every 25. Warehouse 3 loses 3 out of every 12. Warehouse 4 loses 1 out of every 8. A shipped package is lost.",
+    "statements_en": [
+      "The probability that a randomly shipped package is lost is greater than 18%.",
+      "The probability that the package went through Warehouse 1, given that it is lost, equals the probability that the package went through Warehouse 3, given that it is lost.",
+      "The probability that the package went through Warehouse 4, given that it is lost, is greater than the probability that the package went through Warehouse 2, given that it is lost.",
+      "The probability that the package went through Warehouse 2, given that it is lost, is greater than 12%.",
+      "The probability that the package went through Warehouse 1, given that it is lost, is more than 2 times the probability that the package went through Warehouse 4, given that it is lost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability that a randomly shipped package is lost is $P(L)$. From the overview, we calculated this using the Law of Total Probability:\n\n$$\nP(L) = 0.17625 = 17.625\\%\n$$\n\nThe claim states this probability is greater than $18\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThis claim compares two posterior probabilities: $P(W_1 \\mid L)$ and $P(W_3 \\mid L)$. We use Bayes' Theorem for each:\n\n$$\nP(W_i \\mid L) = \\frac{P(W_i \\cap L)}{P(L)}\n$$\n\nFrom the overview:\n*   $P(W_1 \\cap L) = 0.0625$\n*   $P(W_3 \\cap L) = 0.0625$\n*   $P(L) = 0.17625$\n\nSo, for Warehouse 1:\n\n$$\nP(W_1 \\mid L) = \\frac{0.0625}{0.17625} = 0.3546099\n$$\n\n$$\n\\approx 35.461\\%\n$$\n\nAnd for Warehouse 3:\n\n$$\nP(W_3 \\mid L) = \\frac{0.0625}{0.17625} = 0.3546099\n$$\n\n$$\n\\approx 35.461\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim compares $P(W_4 \\mid L)$ and $P(W_2 \\mid L)$. We use Bayes' Theorem for each:\n\n$$\nP(W_i \\mid L) = \\frac{P(W_i \\cap L)}{P(L)}\n$$\n\nFrom the overview:\n*   $P(W_2 \\cap L) = 0.02$\n*   $P(W_4 \\cap L) = 0.03125$\n*   $P(L) = 0.17625$\n\nFor Warehouse 4:\n\n$$\nP(W_4 \\mid L) = \\frac{0.03125}{0.17625} = 0.1773049\n$$\n\n$$\n\\approx 17.730\\%\n$$\n\nFor Warehouse 2:\n\n$$\nP(W_2 \\mid L) = \\frac{0.02}{0.17625} = 0.1134803\n$$\n\n$$\n\\approx 11.348\\%\n$$\n\nSince $17.730\\% > 11.348\\%$, $P(W_4 \\mid L) > P(W_2 \\mid L)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim concerns $P(W_2 \\mid L)$. From the calculation in the previous part:\n\n$$\nP(W_2 \\mid L) = \\frac{0.02}{0.17625} = 0.1134803\n$$\n\n$$\n\\approx 11.348\\%\n$$\n\nThe claim states that this probability is greater than $12\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim compares $P(W_1 \\mid L)$ and $P(W_4 \\mid L)$. We need to determine if $P(W_1 \\mid L) > 2 \\cdot P(W_4 \\mid L)$.\nFrom previous calculations:\n*   $P(W_1 \\mid L) = \\frac{0.0625}{0.17625}$\n*   $P(W_4 \\mid L) = \\frac{0.03125}{0.17625}$\n\nWe can compare the ratio of these probabilities directly by canceling out the common denominator $P(L)$:\n\n$$\n\\frac{P(W_1 \\mid L)}{P(W_4 \\mid L)} = \\frac{P(W_1 \\cap L)}{P(W_4 \\cap L)}\n$$\n\nUsing the joint probabilities from the overview:\n\n$$\n\\frac{0.0625}{0.03125} = 2\n$$\n\nSo, $P(W_1 \\mid L) = 2 \\cdot P(W_4 \\mid L)$. The claim states that $P(W_1 \\mid L)$ is *more than* 2 times $P(W_4 \\mid L)$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A shipping company routes each package through one of four warehouses, chosen uniformly at random. Let $W_i$ denote the event that a package goes through Warehouse $i$. Since the choice is uniform, the prior probability for each warehouse is $P(W_i) = \\frac{1}{4}$ for $i=1, 2, 3, 4$.\n\nLet $L$ be the event that a shipped package is lost. The problem provides the conditional probabilities of a package being lost, given the warehouse it went through:\n*   Warehouse 1: $P(L \\mid W_1) = \\frac{4}{16} = \\frac{1}{4} = 0.25$\n*   Warehouse 2: $P(L \\mid W_2) = \\frac{2}{25} = 0.08$\n*   Warehouse 3: $P(L \\mid W_3) = \\frac{3}{12} = \\frac{1}{4} = 0.25$\n*   Warehouse 4: $P(L \\mid W_4) = \\frac{1}{8} = 0.125$\n\nTo find the overall probability of a package being lost, $P(L)$, we use the Law of Total Probability:\n$$\nP(L) = \\sum_{i = 1}^{4} P(W_i) P(L \\mid W_i)\n$$\nSince $P(W_i) = \\frac{1}{4}$ for all $i$, we can factor this out:\n$$\nP(L) = \\frac{1}{4} \\sum_{i = 1}^{4} P(L \\mid W_i)\n$$\nCalculating each term $P(W_i) P(L \\mid W_i)$:\n*   $P(W_1 \\cap L) = P(W_1) P(L \\mid W_1) = \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{1}{16} = 0.0625$\n*   $P(W_2 \\cap L) = P(W_2) P(L \\mid W_2) = \\frac{1}{4} \\cdot \\frac{2}{25} = \\frac{2}{100} = 0.02$\n*   $P(W_3 \\cap L) = P(W_3) P(L \\mid W_3) = \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{1}{16} = 0.0625$\n*   $P(W_4 \\cap L) = P(W_4) P(L \\mid W_4) = \\frac{1}{4} \\cdot \\frac{1}{8} = \\frac{1}{32} = 0.03125$\n\nSumming these joint probabilities gives the total probability of a package being lost:\n$$\nP(L) = 0.0625 + 0.02 + 0.0625 + 0.03125 = 0.17625\n$$",
+    "title_de_existing": "Verlorene Pakete nach Lager",
+    "context_de_existing": "Ein Versandunternehmen hat vier Lager; jedes versandte Paket wird durch ein völlig zufällig gewähltes Lager geleitet (jeweils 1/4). Lager 1: 4 von 16 Paketen verloren. Lager 2: 2 von 25. Lager 3: 3 von 12. Lager 4: 1 von 8. Ein versandtes Paket geht verloren.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig versandtes Paket verloren geht, ist größer als 18%.",
+      "Die Wahrscheinlichkeit, dass das Paket durch Lager 1 ging, gegeben Verlust, ist gleich der Wahrscheinlichkeit für Lager 3 gegeben Verlust.",
+      "Die Wahrscheinlichkeit, dass das Paket durch Lager 4 ging, gegeben Verlust, ist größer als die Wahrscheinlichkeit für Lager 2 gegeben Verlust.",
+      "Die Wahrscheinlichkeit, dass das Paket durch Lager 2 ging, gegeben Verlust, ist größer als 12%.",
+      "Die Wahrscheinlichkeit, dass das Paket durch Lager 1 ging, gegeben Verlust, ist mehr als das 2-Fache der Wahrscheinlichkeit für Lager 4 gegeben Verlust."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig versandtes Paket verloren geht, ist größer als 18%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L) = 0.17625 = 17.625\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Paket durch Lager 1 ging, gegeben Verlust, ist gleich der Wahrscheinlichkeit für Lager 3 gegeben Verlust. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(W_i \\mid L) = \\frac{P(W_i \\cap L)}{P(L)}\n$$\n\n$$\nP(W_1 \\mid L) = \\frac{0.0625}{0.17625} = 0.3546099\n$$\n\n$$\n\\approx 35.461\\%\n$$\n\n$$\nP(W_3 \\mid L) = \\frac{0.0625}{0.17625} = 0.3546099\n$$\n\n$$\n\\approx 35.461\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass das Paket durch Lager 4 ging, gegeben Verlust, ist größer als die Wahrscheinlichkeit für Lager 2 gegeben Verlust. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(W_i \\mid L) = \\frac{P(W_i \\cap L)}{P(L)}\n$$\n\n$$\nP(W_4 \\mid L) = \\frac{0.03125}{0.17625} = 0.1773049\n$$\n\n$$\n\\approx 17.730\\%\n$$\n\n$$\nP(W_2 \\mid L) = \\frac{0.02}{0.17625} = 0.1134803\n$$\n\n$$\n\\approx 11.348\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass das Paket durch Lager 2 ging, gegeben Verlust, ist größer als 12%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(W_2 \\mid L) = \\frac{0.02}{0.17625} = 0.1134803\n$$\n\n$$\n\\approx 11.348\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass das Paket durch Lager 1 ging, gegeben Verlust, ist mehr als das 2-Fache der Wahrscheinlichkeit für Lager 4 gegeben Verlust. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\frac{P(W_1 \\mid L)}{P(W_4 \\mid L)} = \\frac{P(W_1 \\cap L)}{P(W_4 \\cap L)}\n$$\n\n$$\n\\frac{0.0625}{0.03125} = 2\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Versandunternehmen hat vier Lager; jedes versandte Paket wird durch ein völlig zufällig gewähltes Lager geleitet (jeweils 1/4). Lager 1: 4 von 16 Paketen verloren. Lager 2: 2 von 25. Lager 3: 3 von 12. Lager 4: 1 von 8. Ein versandtes Paket geht verloren. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(L) = \\sum_{i = 1}^{4} P(W_i) P(L \\mid W_i)\n$$\n\n$$\nP(L) = \\frac{1}{4} \\sum_{i = 1}^{4} P(L \\mid W_i)\n$$\n\n$$\nP(L) = 0.0625 + 0.02 + 0.0625 + 0.03125 = 0.17625\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.172",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Health Violations by Restaurant",
+    "context_en": "A restaurant chain has four locations, and each health inspection is conducted at a location chosen completely at random (probability 1/4 per location). Location 1 receives a violation on 6 inspections out of every 24. Location 2 receives one on 3 out of every 10. Location 3 receives one on 5 out of every 20. Location 4 receives one on 2 out of every 16. An inspection turns up a violation.",
+    "statements_en": [
+      "The probability that a randomly conducted inspection turns up a violation is greater than 23%.",
+      "The probability that the inspection was at Location 2, given that it found a violation, is greater than 32%.",
+      "The probability that the inspection was at Location 1, given that it found a violation, equals the probability that the inspection was at Location 3, given that it found a violation.",
+      "The probability that the inspection was at Location 4, given that it found a violation, is greater than 14%.",
+      "The probability that the inspection was at Location 2, given that it found a violation, is more than 2.5 times the probability that the inspection was at Location 4, given that it found a violation."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly conducted inspection turning up a violation, $P(V)$, is calculated using the Law of Total Probability. From the overview, we have:\n\n$$\nP(V) = 0.23125\n$$\n\nThis value is $23.125\\%$. The claim states this probability is greater than $23\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the inspection was at Location 2, given that it found a violation, $P(L_2 \\mid V)$, is given by Bayes' Theorem:\n\n$$\nP(L_2 \\mid V) = \\frac{P(L_2) P(V \\mid L_2)}{P(V)}\n$$\n\nUsing the values from the overview:\n\n$$\nP(L_2 \\mid V) = \\frac{0.075}{0.23125}\n$$\n\n$$\nP(L_2 \\mid V) \\approx 0.32432\n$$\n\nThis is approximately $32.432\\%$. The claim states this probability is greater than $32\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe claim compares $P(L_1 \\mid V)$ and $P(L_3 \\mid V)$. Using Bayes' Theorem:\n\n$$\nP(L_1 \\mid V) = \\frac{P(L_1) P(V \\mid L_1)}{P(V)}\n$$\n\n$$\nP(L_3 \\mid V) = \\frac{P(L_3) P(V \\mid L_3)}{P(V)}\n$$\n\nFrom the overview, $P(L_1) P(V \\mid L_1) = 0.0625$ and $P(L_3) P(V \\mid L_3) = 0.0625$. The denominators are also identical, both $P(V) = 0.23125$. Therefore:\n\n$$\nP(L_1 \\mid V) = \\frac{0.0625}{0.23125}\n$$\n\n$$\n\\approx 0.27027\n$$\n\n$$\nP(L_3 \\mid V) = \\frac{0.0625}{0.23125}\n$$\n\n$$\n\\approx 0.27027\n$$\n\nSince their numerators and denominators are exactly equal, $P(L_1 \\mid V) = P(L_3 \\mid V)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe probability that the inspection was at Location 4, given that it found a violation, $P(L_4 \\mid V)$, is given by Bayes' Theorem:\n\n$$\nP(L_4 \\mid V) = \\frac{P(L_4) P(V \\mid L_4)}{P(V)}\n$$\n\nUsing the values from the overview:\n\n$$\nP(L_4 \\mid V) = \\frac{0.03125}{0.23125}\n$$\n\n$$\nP(L_4 \\mid V) \\approx 0.13514\n$$\n\nThis is approximately $13.514\\%$. The claim states this probability is greater than $14\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThe claim compares $P(L_2 \\mid V)$ and $P(L_4 \\mid V)$. From the previous calculations:\n\n$$\nP(L_2 \\mid V) \\approx 0.32432\n$$\n\n$$\nP(L_4 \\mid V) \\approx 0.13514\n$$\n\nWe need to check if $P(L_2 \\mid V) > 2.5 \\times P(L_4 \\mid V)$.\n\nLet's calculate the ratio of the two probabilities directly:\n\n$$\n\\frac{P(L_2 \\mid V)}{P(L_4 \\mid V)} = \\dfrac{P(L_2) P(V \\mid L_2)}{P(V)}\\cdot\\dfrac{P(V)}{P(L_4) P(V \\mid L_4)}=\\dfrac{P(L_2) P(V \\mid L_2)}{P(L_4) P(V \\mid L_4)}\n$$\n\nUsing the individual numerators from the overview:\n\n$$\n\\frac{0.075}{0.03125} = 2.4\n$$\n\nThe probability $P(L_2 \\mid V)$ is $2.4$ times $P(L_4 \\mid V)$. The claim states it is more than $2.5$ times.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A restaurant chain has four locations. An inspection is conducted at a location chosen uniformly at random, so the prior probability of selecting any given location is $P(L_i) = \\frac{1}{4}$ for $i=1, 2, 3, 4$.\n\nEach location $L_i$ has a specific probability of receiving a violation, $P(V \\mid L_i)$.\n\nFor Location 1: $P(V \\mid L_1) = \\frac{6}{24} = \\frac{1}{4} = 0.25$\nFor Location 2: $P(V \\mid L_2) = \\frac{3}{10} = 0.3$\nFor Location 3: $P(V \\mid L_3) = \\frac{5}{20} = \\frac{1}{4} = 0.25$\nFor Location 4: $P(V \\mid L_4) = \\frac{2}{16} = \\frac{1}{8} = 0.125$\n\nThe probability of an inspection turning up a violation, $P(V)$, is found using the Law of Total Probability:\n\n$$\nP(V) = \\sum_{i = 1}^{4} P(L_i) P(V \\mid L_i)\n$$\n\n$$P(V) = P(L_1)P(V \\mid L_1) + P(L_2)P(V \\mid L_2) + P(L_3)P(V \\mid L_3) + P(L_4)P(V \\mid L_4)$$\n\n$$P(V) = \\frac{1}{4} \\cdot 0.25 + \\frac{1}{4} \\cdot 0.3 + \\frac{1}{4} \\cdot 0.25 + \\frac{1}{4} \\cdot 0.125$$\n\n$$P(V) = 0.0625 + 0.075 + 0.0625 + 0.03125$$\n\n$$P(V) = 0.23125$$\n\nTo find the posterior probability that the inspection was at a specific location $L_i$ given that a violation $V$ was found, we use Bayes' Theorem:\n\n$$P(L_i \\mid V) = \\frac{P(L_i) P(V \\mid L_i)}{P(V)}$$\n\nThe numerators $P(L_i) P(V \\mid L_i)$ are the individual terms from the Law of Total Probability calculation:\n\n$P(L_1) P(V \\mid L_1) = 0.0625$\n$P(L_2) P(V \\mid L_2) = 0.075$\n$P(L_3) P(V \\mid L_3) = 0.0625$\n$P(L_4) P(V \\mid L_4) = 0.03125$",
+    "title_de_existing": "Hygieneverstöße nach Restaurant",
+    "context_de_existing": "Eine Restaurantkette hat vier Standorte; jede Hygieneprüfung erfolgt völlig zufällig (jeweils 1/4). Standort 1: Verstoß in 6 von 24. Standort 2: 3 von 10. Standort 3: 5 von 20. Standort 4: 2 von 16. Eine Prüfung findet einen Verstoß.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit eines Verstoßes ist größer als 23%.",
+      "Die Wahrscheinlichkeit für Standort 2 gegeben Verstoß ist größer als 32%.",
+      "Die Wahrscheinlichkeit für Standort 1 gegeben Verstoß ist gleich der für Standort 3 gegeben Verstoß.",
+      "Die Wahrscheinlichkeit für Standort 4 gegeben Verstoß ist größer als 14%.",
+      "Die Wahrscheinlichkeit für Standort 2 gegeben Verstoß ist mehr als das 2,5-Fache der Wahrscheinlichkeit für Standort 4 gegeben Verstoß."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit eines Verstoßes ist größer als 23%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(V) = 0.23125\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Standort 2 gegeben Verstoß ist größer als 32%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_2 \\mid V) = \\frac{P(L_2) P(V \\mid L_2)}{P(V)}\n$$\n\n$$\nP(L_2 \\mid V) = \\frac{0.075}{0.23125}\n$$\n\n$$\nP(L_2 \\mid V) \\approx 0.32432\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Standort 1 gegeben Verstoß ist gleich der für Standort 3 gegeben Verstoß. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_1 \\mid V) = \\frac{P(L_1) P(V \\mid L_1)}{P(V)}\n$$\n\n$$\nP(L_3 \\mid V) = \\frac{P(L_3) P(V \\mid L_3)}{P(V)}\n$$\n\n$$\nP(L_1 \\mid V) = \\frac{0.0625}{0.23125}\n$$\n\n$$\n\\approx 0.27027\n$$\n\n$$\nP(L_3 \\mid V) = \\frac{0.0625}{0.23125}\n$$\n\n$$\n\\approx 0.27027\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Standort 4 gegeben Verstoß ist größer als 14%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_4 \\mid V) = \\frac{P(L_4) P(V \\mid L_4)}{P(V)}\n$$\n\n$$\nP(L_4 \\mid V) = \\frac{0.03125}{0.23125}\n$$\n\n$$\nP(L_4 \\mid V) \\approx 0.13514\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Standort 2 gegeben Verstoß ist mehr als das 2,5-Fache der Wahrscheinlichkeit für Standort 4 gegeben Verstoß. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_2 \\mid V) \\approx 0.32432\n$$\n\n$$\nP(L_4 \\mid V) \\approx 0.13514\n$$\n\n$$\n\\frac{P(L_2 \\mid V)}{P(L_4 \\mid V)} = \\dfrac{P(L_2) P(V \\mid L_2)}{P(V)}\\cdot\\dfrac{P(V)}{P(L_4) P(V \\mid L_4)}=\\dfrac{P(L_2) P(V \\mid L_2)}{P(L_4) P(V \\mid L_4)}\n$$\n\n$$\n\\frac{0.075}{0.03125} = 2.4\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Restaurantkette hat vier Standorte; jede Hygieneprüfung erfolgt völlig zufällig (jeweils 1/4). Standort 1: Verstoß in 6 von 24. Standort 2: 3 von 10. Standort 3: 5 von 20. Standort 4: 2 von 16. Eine Prüfung findet einen Verstoß. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(V) = \\sum_{i = 1}^{4} P(L_i) P(V \\mid L_i)\n$$\n\n$$P(V) = P(L_1)P(V \\mid L_1) + P(L_2)P(V \\mid L_2) + P(L_3)P(V \\mid L_3) + P(L_4)P(V \\mid L_4)$$\n\n$$P(V) = \\frac{1}{4} \\cdot 0.25 + \\frac{1}{4} \\cdot 0.3 + \\frac{1}{4} \\cdot 0.25 + \\frac{1}{4} \\cdot 0.125$$\n\n$$P(V) = 0.0625 + 0.075 + 0.0625 + 0.03125$$\n\n$$P(V) = 0.23125$$\n\n$$P(L_i \\mid V) = \\frac{P(L_i) P(V \\mid L_i)}{P(V)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.173",
+    "short_letters": [
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Prescription Errors by Pharmacy",
+    "context_en": "A pharmacy chain has four locations, and each filled prescription is processed at a location chosen completely at random (probability 1/4 per location). Location 1 makes an error on 3 prescriptions out of every 12. Location 2 makes one on 2 out of every 16. Location 3 makes one on 5 out of every 20. Location 4 makes one on 1 out of every 5. A filled prescription contains an error.",
+    "statements_en": [
+      "The probability that a randomly filled prescription contains an error is greater than 20%.",
+      "The probability that the prescription came from Location 1, given that it has an error, equals the probability that the prescription came from Location 3, given that it has an error.",
+      "The probability that the prescription came from Location 4, given that it has an error, is greater than the probability that the prescription came from Location 2, given that it has an error.",
+      "The probability that the prescription came from Location 1, given that it has an error, is greater than 32%.",
+      "The probability that the prescription came from Location 1, given that it has an error, is more than 1.3 times the probability that the prescription came from Location 4, given that it has an error."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly filled prescription contains an error is the overall probability $P(E)$. We computed this using the Law of Total Probability in the overview:\n\n$$\nP(E) = 0.20625\n$$\n\nThe claim states that $P(E)$ is greater than $20\\%$. We compare $0.20625$ with $0.20$:\n\n$$\n0.20625 > 0.20\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe claim compares the posterior probability of coming from Location 1 given an error, $P(L_1 \\mid E)$, with the posterior probability of coming from Location 3 given an error, $P(L_3 \\mid E)$. We calculate both using Bayes' Theorem.\n\nFrom the overview, $P(L_1)P(E \\mid L_1) = 0.0625$ and $P(L_3)P(E \\mid L_3) = 0.0625$. The total error probability is $P(E) = 0.20625$.\n\n$$\nP(L_1 \\mid E) = \\frac{P(L_1)P(E \\mid L_1)}{P(E)} = \\frac{0.0625}{0.20625}\n$$\n\n$$\nP(L_3 \\mid E) = \\frac{P(L_3)P(E \\mid L_3)}{P(E)}\n$$\n\nSince both probabilities are represented by the exact same fraction, they are equal.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe need to compare $P(L_4 \\mid E)$ and $P(L_2 \\mid E)$. We apply Bayes' Theorem for each.\n\nFrom the overview, $P(L_4)P(E \\mid L_4) = 0.05$ and $P(L_2)P(E \\mid L_2) = 0.03125$. The common denominator is $P(E) = 0.20625$.\n\n$$\nP(L_4 \\mid E) = \\frac{P(L_4)P(E \\mid L_4)}{P(E)} = \\frac{0.05}{0.20625} \\approx 0.2424\n$$\n\n$$\nP(L_2 \\mid E) = \\frac{P(L_2)P(E \\mid L_2)}{P(E)} = \\frac{0.03125}{0.20625} \\approx 0.1515\n$$\n\nComparing the calculated probabilities:\n\n$$\n0.2424 > 0.1515\n$$\n\n.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nWe determine the probability that the prescription came from Location 1 given that it has an error, $P(L_1 \\mid E)$.\n\nFrom the overview, $P(L_1)P(E \\mid L_1) = 0.0625$ and $P(E) = 0.20625$. Using Bayes' Theorem:\n\n$$\nP(L_1 \\mid E) = \\frac{0.0625}{0.20625}\n$$\n\n$$\n\\approx 0.30303\n$$\n\nThis probability is approximately $30.303\\%$. The claim states it is greater than $32\\%$. Comparing the values:\n\n$$\n30.303\\% \\not> 32\\%\n$$\n\n.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nWe compare $P(L_1 \\mid E)$ with $P(L_4 \\mid E)$ by calculating their ratio. The claim asserts that the ratio $P(L_1 \\mid E) / P(L_4 \\mid E)$ is more than $1.3$.\n\nFrom previous calculations:\n\n$$\nP(L_1 \\mid E) = \\frac{0.0625}{0.20625}\n$$\n\n$$\nP(L_4 \\mid E) = \\frac{0.05}{0.20625}\n$$\n\nThe ratio is:\n\n$$\\frac{P(L_1 \\mid E)}{P(L_4 \\mid E)} = \\dfrac{0.0625}{0.20625}\\cdot\\dfrac{0.20625}{0.05} = \\dfrac{0.0625}{0.05} = 1.25$$\n\nThe calculated ratio is $1.25$. The claim is that this ratio is more than $1.3$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A pharmacy chain has four locations. Each prescription is assigned to a location completely at random, which means the prior probability for each location is uniform. We define $L_i$ as the event that a prescription came from Location $i$, and $E$ as the event that a prescription contains an error.\n\nThe prior probability of a prescription coming from any specific location is $P(L_i) = \\frac{1}{4}$ for $i \\in \\{1, 2, 3, 4\\}$.\n\nThe conditional probabilities of an error given the location are:\n\n*   $P(E \\mid L_1) = \\frac{3}{12} = 0.25$\n*   $P(E \\mid L_2) = \\frac{2}{16} = 0.125$\n*   $P(E \\mid L_3) = \\frac{5}{20} = 0.25$\n*   $P(E \\mid L_4) = \\frac{1}{5} = 0.20$\n\nTo find the overall probability of a prescription containing an error, $P(E)$, we use the Law of Total Probability. This states that the total probability of an event is the sum of its conditional probabilities, weighted by the prior probabilities of the conditions:\n\n$$\nP(E) = \\sum_{i = 1}^{4} P(L_i)P(E \\mid L_i)\n$$\n\nWe calculate each term:\n\n$$P(L_1)P(E \\mid L_1) = \\frac{1}{4} \\cdot 0.25 = 0.0625$$\n\n$$P(L_2)P(E \\mid L_2) = \\frac{1}{4} \\cdot 0.125 = 0.03125$$\n\n$$P(L_3)P(E \\mid L_3) = \\frac{1}{4} \\cdot 0.25 = 0.0625$$\n\n$$P(L_4)P(E \\mid L_4) = \\frac{1}{4} \\cdot 0.20 = 0.05$$\n\nSumming these products gives the total probability of an error:\n\n$$P(E) = 0.0625 + 0.03125 + 0.0625 + 0.05 = 0.20625$$\n\nTo find the posterior probability that a prescription came from a specific location $L_i$, given that it has an error $E$, we use Bayes' Theorem:\n\n$$P(L_i \\mid E) = \\frac{P(L_i)P(E \\mid L_i)}{P(E)}$$\n\nThis formula divides the specific contribution of location $i$ to the total error probability by the total error probability itself. We have already calculated the numerator $P(L_i)P(E \\mid L_i)$ for each location, and the denominator $P(E)$ is $0.20625$.",
+    "title_de_existing": "Rezeptfehler nach Apotheke",
+    "context_de_existing": "Eine Apothekenkette hat vier Standorte; jedes ausgestellte Rezept wird an einem völlig zufällig gewählten Standort bearbeitet (jeweils 1/4). Standort 1: Fehler bei 3 von 12 Rezepten. Standort 2: 2 von 16. Standort 3: 5 von 20. Standort 4: 1 von 5. Ein ausgestelltes Rezept enthält einen Fehler.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein zufällig ausgestelltes Rezept einen Fehler enthält, ist größer als 20%.",
+      "Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist gleich der Wahrscheinlichkeit für Standort 3 gegeben Fehler.",
+      "Die Wahrscheinlichkeit, dass das Rezept von Standort 4 stammt, gegeben Fehler, ist größer als die Wahrscheinlichkeit für Standort 2 gegeben Fehler.",
+      "Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist größer als 32%.",
+      "Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist mehr als das 1,3-Fache der Wahrscheinlichkeit für Standort 4 gegeben Fehler."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein zufällig ausgestelltes Rezept einen Fehler enthält, ist größer als 20%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E) = 0.20625\n$$\n\n$$\n0.20625 > 0.20\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist gleich der Wahrscheinlichkeit für Standort 3 gegeben Fehler. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_1 \\mid E) = \\frac{P(L_1)P(E \\mid L_1)}{P(E)} = \\frac{0.0625}{0.20625}\n$$\n\n$$\nP(L_3 \\mid E) = \\frac{P(L_3)P(E \\mid L_3)}{P(E)}\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass das Rezept von Standort 4 stammt, gegeben Fehler, ist größer als die Wahrscheinlichkeit für Standort 2 gegeben Fehler. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_4 \\mid E) = \\frac{P(L_4)P(E \\mid L_4)}{P(E)} = \\frac{0.05}{0.20625} \\approx 0.2424\n$$\n\n$$\nP(L_2 \\mid E) = \\frac{P(L_2)P(E \\mid L_2)}{P(E)} = \\frac{0.03125}{0.20625} \\approx 0.1515\n$$\n\n$$\n0.2424 > 0.1515\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist größer als 32%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_1 \\mid E) = \\frac{0.0625}{0.20625}\n$$\n\n$$\n\\approx 0.30303\n$$\n\n$$\n30.303\\% \\not> 32\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass das Rezept von Standort 1 stammt, gegeben Fehler, ist mehr als das 1,3-Fache der Wahrscheinlichkeit für Standort 4 gegeben Fehler. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_1 \\mid E) = \\frac{0.0625}{0.20625}\n$$\n\n$$\nP(L_4 \\mid E) = \\frac{0.05}{0.20625}\n$$\n\n$$\\frac{P(L_1 \\mid E)}{P(L_4 \\mid E)} = \\dfrac{0.0625}{0.20625}\\cdot\\dfrac{0.20625}{0.05} = \\dfrac{0.0625}{0.05} = 1.25$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Apothekenkette hat vier Standorte; jedes ausgestellte Rezept wird an einem völlig zufällig gewählten Standort bearbeitet (jeweils 1/4). Standort 1: Fehler bei 3 von 12 Rezepten. Standort 2: 2 von 16. Standort 3: 5 von 20. Standort 4: 1 von 5. Ein ausgestelltes Rezept enthält einen Fehler. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(E) = \\sum_{i = 1}^{4} P(L_i)P(E \\mid L_i)\n$$\n\n$$P(L_1)P(E \\mid L_1) = \\frac{1}{4} \\cdot 0.25 = 0.0625$$\n\n$$P(L_2)P(E \\mid L_2) = \\frac{1}{4} \\cdot 0.125 = 0.03125$$\n\n$$P(L_3)P(E \\mid L_3) = \\frac{1}{4} \\cdot 0.25 = 0.0625$$\n\n$$P(L_4)P(E \\mid L_4) = \\frac{1}{4} \\cdot 0.20 = 0.05$$\n\n$$P(E) = 0.0625 + 0.03125 + 0.0625 + 0.05 = 0.20625$$\n\n$$P(L_i \\mid E) = \\frac{P(L_i)P(E \\mid L_i)}{P(E)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.174",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Complaints by Call-Centre Team",
+    "context_en": "A call center has four teams, and each customer call is routed to a team chosen completely at random (probability 1/4 per team). Team 1 has calls escalated to a supervisor on 4 out of every 10. Team 2 has calls escalated on 1 out of every 8. Team 3 has calls escalated on 2 out of every 25. Team 4 has calls escalated on 3 out of every 6. A call is escalated to a supervisor.",
+    "statements_en": [
+      "The probability that a randomly routed call is escalated is greater than 28%.",
+      "The probability that the call was handled by Team 4, given that it is escalated, is greater than 45%.",
+      "The probability that the call was handled by Team 1, given that it is escalated, is greater than the probability that the call was handled by Team 2, given that it is escalated.",
+      "The probability that the call was handled by Team 3, given that it is escalated, is greater than 8%.",
+      "The probability that the call was handled by Team 4, given that it is escalated, is more than 6 times the probability that the call was handled by Team 3, given that it is escalated."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability that a randomly routed call is escalated, $P(E)$, is calculated using the Law of Total Probability by summing the products of the prior probability of choosing each team and that team's escalation rate.\n\n$$\nP(E) = 0.27625\n$$\n\nConverting to percentage:\n\n$$\nP(E) = 27.625\\%\n$$\n\nThe claim states that $P(E)$ is greater than $28\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe probability that the call was handled by Team 4, given that it was escalated, is found using Bayes' Theorem:\n\n$$\nP(T_4 \\mid E) = \\frac{P(E \\cap T_4)}{P(E)}\n$$\n\nUsing the pre-calculated values for the numerator $P(E \\cap T_4) = 0.125$ and the denominator $P(E) = 0.27625$:\n\n$$\nP(T_4 \\mid E) = \\frac{0.125}{0.27625}\n$$\n\n$$\nP(T_4 \\mid E) \\approx 0.45249\n$$\n\nConverting to percentage:\n\n$$\nP(T_4 \\mid E) \\approx 45.249\\%\n$$\n\nThe claim states this probability is greater than $45\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nWe need to compare the conditional probabilities $P(T_1 \\mid E)$ and $P(T_2 \\mid E)$. Using Bayes' Theorem for each:\n\n$$\nP(T_1 \\mid E) = \\frac{P(E \\cap T_1)}{P(E)}\n$$\n\n$$\nP(T_1 \\mid E) = \\frac{0.1}{0.27625}\n$$\n\n$$\n\\approx 0.36199\n$$\n\nAnd for Team 2:\n\n$$\nP(T_2 \\mid E) = \\frac{P(E \\cap T_2)}{P(E)}\n$$\n\n$$\nP(T_2 \\mid E) = \\frac{0.03125}{0.27625}\n$$\n\n$$\n\\approx 0.11312\n$$\n\nSince $P(T_1 \\mid E) \\approx 0.36199$ and $P(T_2 \\mid E) \\approx 0.11312$, we have $P(T_1 \\mid E) > P(T_2 \\mid E)$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe probability that the call was handled by Team 3, given that it was escalated, is given by Bayes' Theorem:\n\n$$\nP(T_3 \\mid E) = \\frac{P(E \\cap T_3)}{P(E)}\n$$\n\nUsing the pre-calculated values for $P(E \\cap T_3) = 0.02$ and $P(E) = 0.27625$:\n\n$$\nP(T_3 \\mid E) = \\frac{0.02}{0.27625}\n$$\n\n$$\nP(T_3 \\mid E) \\approx 0.07240\n$$\n\nConverting to percentage:\n\n$$\nP(T_3 \\mid E) \\approx 7.240\\%\n$$\n\nThe claim states this probability is greater than $8\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nWe need to compare $P(T_4 \\mid E)$ with $6 \\times P(T_3 \\mid E)$. We have the following conditional probabilities:\n\n$$\nP(T_4 \\mid E) = \\frac{0.125}{0.27625}\n$$\n\n$$\nP(T_3 \\mid E) = \\frac{0.02}{0.27625}\n$$\n\nTo determine if $P(T_4 \\mid E)$ is more than 6 times $P(T_3 \\mid E)$, we can check the ratio:\n\n$$\\frac{P(T_4 \\mid E)}{P(T_3 \\mid E)} = \\dfrac{0.125}{0.27625}\\cdot\\dfrac{0.27625}{0.02} = \\dfrac{0.125}{0.02} = 6.25$$\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A call center distributes incoming calls randomly and uniformly among four teams. Each team has a specific probability of escalating a call to a supervisor. Let $T_i$ denote the event that a call is handled by Team $i$, and $E$ be the event that a call is escalated.\n\nSince calls are routed completely at random to one of four teams, the prior probability for each team is:\n$$P(T_1) = P(T_2) = P(T_3) = P(T_4) = \\frac{1}{4}$$\n\nThe conditional probabilities of escalation for each team are given:\n$$P(E \\mid T_1) = \\frac{4}{10} = 0.4$$\n$$P(E \\mid T_2) = \\frac{1}{8} = 0.125$$\n$$P(E \\mid T_3) = \\frac{2}{25} = 0.08$$\n$$P(E \\mid T_4) = \\frac{3}{6} = 0.5$$\n\nTo find the overall probability that a randomly routed call is escalated, $P(E)$, we use the Law of Total Probability:\n$$P(E) = P(E \\mid T_1)P(T_1) + P(E \\mid T_2)P(T_2) + P(E \\mid T_3)P(T_3) + P(E \\mid T_4)P(T_4)$$\nSince $P(T_i) = \\frac{1}{4}$ for all $i$, this simplifies to:\n$$P(E) = \\frac{1}{4} (P(E \\mid T_1) + P(E \\mid T_2) + P(E \\mid T_3) + P(E \\mid T_4))$$\n$$P(E) = \\frac{1}{4} (0.4 + 0.125 + 0.08 + 0.5)$$\n$$P(E) = \\frac{1}{4} (1.105)$$\n$$P(E) = 0.27625$$\nThis is the marginal probability of a call being escalated.\n\nFor conditional probabilities $P(T_i \\mid E)$, Bayes' Theorem states:\n$$P(T_i \\mid E) = \\frac{P(E \\mid T_i)P(T_i)}{P(E)}$$\nWe can compute the numerator $P(E \\cap T_i) = P(E \\mid T_i)P(T_i)$ for each team first:\n$$P(E \\cap T_1) = 0.4 \\cdot \\frac{1}{4} = 0.1$$\n$$P(E \\cap T_2) = 0.125 \\cdot \\frac{1}{4} = 0.03125$$\n$$P(E \\cap T_3) = 0.08 \\cdot \\frac{1}{4} = 0.02$$\n$$P(E \\cap T_4) = 0.5 \\cdot \\frac{1}{4} = 0.125$$",
+    "title_de_existing": "Eskalationen nach Callcenter-Team",
+    "context_de_existing": "Ein Callcenter hat vier Teams; jeder Anruf wird völlig zufällig weitergeleitet (jeweils 1/4). Team 1: Eskalation in 4 von 10. Team 2: 1 von 8. Team 3: 2 von 25. Team 4: 3 von 6. Ein Anruf wird an einen Vorgesetzten eskaliert.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit einer Eskalation ist größer als 28%.",
+      "Die Wahrscheinlichkeit für Team 4 gegeben Eskalation ist größer als 45%.",
+      "Die Wahrscheinlichkeit für Team 1 gegeben Eskalation ist größer als die für Team 2 gegeben Eskalation.",
+      "Die Wahrscheinlichkeit für Team 3 gegeben Eskalation ist größer als 8%.",
+      "Die Wahrscheinlichkeit für Team 4 gegeben Eskalation ist mehr als das 6-Fache der Wahrscheinlichkeit für Team 3 gegeben Eskalation."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit einer Eskalation ist größer als 28%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(E) = 0.27625\n$$\n\n$$\nP(E) = 27.625\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Team 4 gegeben Eskalation ist größer als 45%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T_4 \\mid E) = \\frac{P(E \\cap T_4)}{P(E)}\n$$\n\n$$\nP(T_4 \\mid E) = \\frac{0.125}{0.27625}\n$$\n\n$$\nP(T_4 \\mid E) \\approx 0.45249\n$$\n\n$$\nP(T_4 \\mid E) \\approx 45.249\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Team 1 gegeben Eskalation ist größer als die für Team 2 gegeben Eskalation. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T_1 \\mid E) = \\frac{P(E \\cap T_1)}{P(E)}\n$$\n\n$$\nP(T_1 \\mid E) = \\frac{0.1}{0.27625}\n$$\n\n$$\n\\approx 0.36199\n$$\n\n$$\nP(T_2 \\mid E) = \\frac{P(E \\cap T_2)}{P(E)}\n$$\n\n$$\nP(T_2 \\mid E) = \\frac{0.03125}{0.27625}\n$$\n\n$$\n\\approx 0.11312\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Team 3 gegeben Eskalation ist größer als 8%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(T_3 \\mid E) = \\frac{P(E \\cap T_3)}{P(E)}\n$$\n\n$$\nP(T_3 \\mid E) = \\frac{0.02}{0.27625}\n$$\n\n$$\nP(T_3 \\mid E) \\approx 0.07240\n$$\n\n$$\nP(T_3 \\mid E) \\approx 7.240\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit für Team 4 gegeben Eskalation ist mehr als das 6-Fache der Wahrscheinlichkeit für Team 3 gegeben Eskalation. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T_4 \\mid E) = \\frac{0.125}{0.27625}\n$$\n\n$$\nP(T_3 \\mid E) = \\frac{0.02}{0.27625}\n$$\n\n$$\\frac{P(T_4 \\mid E)}{P(T_3 \\mid E)} = \\dfrac{0.125}{0.27625}\\cdot\\dfrac{0.27625}{0.02} = \\dfrac{0.125}{0.02} = 6.25$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Callcenter hat vier Teams; jeder Anruf wird völlig zufällig weitergeleitet (jeweils 1/4). Team 1: Eskalation in 4 von 10. Team 2: 1 von 8. Team 3: 2 von 25. Team 4: 3 von 6. Ein Anruf wird an einen Vorgesetzten eskaliert. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(T_1) = P(T_2) = P(T_3) = P(T_4) = \\frac{1}{4}$$\n\n$$P(E \\mid T_1) = \\frac{4}{10} = 0.4$$\n\n$$P(E \\mid T_2) = \\frac{1}{8} = 0.125$$\n\n$$P(E \\mid T_3) = \\frac{2}{25} = 0.08$$\n\n$$P(E \\mid T_4) = \\frac{3}{6} = 0.5$$\n\n$$P(E) = P(E \\mid T_1)P(T_1) + P(E \\mid T_2)P(T_2) + P(E \\mid T_3)P(T_3) + P(E \\mid T_4)P(T_4)$$\n\n$$P(E) = \\frac{1}{4} (P(E \\mid T_1) + P(E \\mid T_2) + P(E \\mid T_3) + P(E \\mid T_4))$$\n\n$$P(E) = \\frac{1}{4} (0.4 + 0.125 + 0.08 + 0.5)$$\n\n$$P(E) = \\frac{1}{4} (1.105)$$\n\n$$P(E) = 0.27625$$\n\n$$P(T_i \\mid E) = \\frac{P(E \\mid T_i)P(T_i)}{P(E)}$$\n\n$$P(E \\cap T_1) = 0.4 \\cdot \\frac{1}{4} = 0.1$$\n\n$$P(E \\cap T_2) = 0.125 \\cdot \\frac{1}{4} = 0.03125$$\n\n$$P(E \\cap T_3) = 0.08 \\cdot \\frac{1}{4} = 0.02$$\n\n$$P(E \\cap T_4) = 0.5 \\cdot \\frac{1}{4} = 0.125$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.175",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Injuries by Gym Location",
+    "context_en": "A gym chain has four locations, and each reported injury is traced back to a location chosen completely at random (probability 1/4 per location). Location 1 has 2 equipment-related injuries out of every 40 visits reviewed. Location 2 has 3 out of every 15. Location 3 has 1 out of every 20. Location 4 has 4 out of every 16. A reviewed visit involves an equipment-related injury.",
+    "statements_en": [
+      "The probability that a randomly reviewed visit involves an injury is greater than 13%.",
+      "The probability that the visit was at Location 1, given that it involved an injury, equals the probability that the visit was at Location 3, given that it involved an injury.",
+      "The probability that the visit was at Location 4, given that it involved an injury, is greater than 45%.",
+      "The probability that the visit was at Location 2, given that it involved an injury, is greater than 36%.",
+      "The probability that the visit was at Location 4, given that it involved an injury, is more than 5 times the probability that the visit was at Location 1, given that it involved an injury."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly reviewed visit involving an injury, $P(I)$, was calculated using the Law of Total Probability.\n\n$$\nP(I) = 0.1375\n$$\n\nConverting this to a percentage gives $13.75\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe conditional probability of a visit being at Location 1, given an injury, is $P(L_1 \\mid I)$. Similarly for Location 3, it is $P(L_3 \\mid I)$. Both are calculated using Bayes' Theorem.\n\n$$\nP(L_1 \\mid I) = \\frac{P(I \\cap L_1)}{P(I)} = \\frac{0.0125}{0.1375}\n$$\n\n$$\nP(L_3 \\mid I) = \\frac{P(I \\cap L_3)}{P(I)}\n$$\n\nSince both probabilities evaluate to exactly the same fraction, $P(L_1 \\mid I) = P(L_3 \\mid I)$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe conditional probability of a visit being at Location 4, given an injury, is $P(L_4 \\mid I)$. We apply Bayes' Theorem.\n\n$$\nP(L_4 \\mid I) = \\frac{P(I \\cap L_4)}{P(I)}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.0625}{0.1375}\n$$\n\n$$\nP(L_4 \\mid I) \\approx 0.4545\n$$\n\nConverting this to a percentage gives $45.45\\%$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThe conditional probability of a visit being at Location 2, given an injury, is $P(L_2 \\mid I)$. We apply Bayes' Theorem.\n\n$$\nP(L_2 \\mid I) = \\frac{P(I \\cap L_2)}{P(I)}\n$$\n\n$$\nP(L_2 \\mid I) = \\frac{0.0500}{0.1375}\n$$\n\n$$\nP(L_2 \\mid I) \\approx 0.3636\n$$\n\nConverting this to a percentage gives $36.36\\%$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis statement compares $P(L_4 \\mid I)$ and $P(L_1 \\mid I)$. We have already calculated the necessary values.\n\n$$\nP(L_4 \\mid I) = \\frac{0.0625}{0.1375}\n$$\n\n$$\nP(L_1 \\mid I) = \\frac{0.0125}{0.1375}\n$$\n\nThe ratio of these two probabilities is:\n\n$$\n\\frac{P(L_4 \\mid I)}{P(L_1 \\mid I)} = \\dfrac{0.0625}{0.1375}\\cdot\\dfrac{0.1375}{0.0125}=\\dfrac{0.0625}{0.0125}\n$$\n\n$$\n\\frac{P(L_4 \\mid I)}{P(L_1 \\mid I)} = 5\n$$\n\nThe probability is exactly 5 times, not more than 5 times. Therefore.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A gym chain has four locations, and each reported injury is traced back to a location chosen completely at random. This means the prior probability of an injury originating from any specific location is uniform: $P(L_1) = P(L_2) = P(L_3) = P(L_4) = \\frac{1}{4}$.\n\nThe conditional probability of an injury given the location is determined by the reported rates:\n*   Location 1: $P(I \\mid L_1) = \\frac{2}{40} = \\frac{1}{20} = 0.05$\n*   Location 2: $P(I \\mid L_2) = \\frac{3}{15} = \\frac{1}{5} = 0.20$\n*   Location 3: $P(I \\mid L_3) = \\frac{1}{20} = 0.05$\n*   Location 4: $P(I \\mid L_4) = \\frac{4}{16} = \\frac{1}{4} = 0.25$\n\nTo find the overall probability of an injury, $P(I)$, we use the Law of Total Probability:\n$$\nP(I) = \\sum_{i = 1}^{4} P(I \\mid L_i) P(L_i)\n$$\nSince $P(L_i)$ is constant for all $i$, this simplifies to:\n$$\nP(I) = P(L_i) \\sum_{i = 1}^{4} P(I \\mid L_i)\n$$\n$$P(I) = \\frac{1}{4} (0.05 + 0.20 + 0.05 + 0.25)$$\n$$P(I) = \\frac{1}{4} (0.55)$$\n$$P(I) = 0.1375$$\n\nTo find the posterior probability of a location given an injury, $P(L_i \\mid I)$, we use Bayes' Theorem:\n$$P(L_i \\mid I) = \\frac{P(I \\mid L_i) P(L_i)}{P(I)}$$\n\nWe compute the numerator $P(I \\cap L_i) = P(I \\mid L_i) P(L_i)$ for each location:\n*   $P(I \\cap L_1) = 0.05 \\times \\frac{1}{4} = 0.0125$\n*   $P(I \\cap L_2) = 0.20 \\times \\frac{1}{4} = 0.0500$\n*   $P(I \\cap L_3) = 0.05 \\times \\frac{1}{4} = 0.0125$\n*   $P(I \\cap L_4) = 0.25 \\times \\frac{1}{4} = 0.0625$",
+    "title_de_existing": "Verletzungen nach Fitnessstudio-Standort",
+    "context_de_existing": "Eine Fitnessstudio-Kette hat vier Standorte; jede gemeldete Verletzung wird völlig zufällig einem Standort zugeordnet (jeweils 1/4). Standort 1: 2 gerätebezogene Verletzungen von 40 geprüften Besuchen. Standort 2: 3 von 15. Standort 3: 1 von 20. Standort 4: 4 von 20. Ein geprüfter Besuch involviert eine Verletzung.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit einer Verletzung ist größer als 13%.",
+      "Die Wahrscheinlichkeit für Standort 1 gegeben Verletzung ist gleich der für Standort 3 gegeben Verletzung.",
+      "Die Wahrscheinlichkeit für Standort 4 gegeben Verletzung ist größer als 45%.",
+      "Die Wahrscheinlichkeit für Standort 2 gegeben Verletzung ist größer als 36%.",
+      "Die Wahrscheinlichkeit für Standort 4 gegeben Verletzung ist mehr als das 5-Fache der Wahrscheinlichkeit für Standort 1 gegeben Verletzung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit einer Verletzung ist größer als 13%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(I) = 0.1375\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Standort 1 gegeben Verletzung ist gleich der für Standort 3 gegeben Verletzung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_1 \\mid I) = \\frac{P(I \\cap L_1)}{P(I)} = \\frac{0.0125}{0.1375}\n$$\n\n$$\nP(L_3 \\mid I) = \\frac{P(I \\cap L_3)}{P(I)}\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Standort 4 gegeben Verletzung ist größer als 45%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_4 \\mid I) = \\frac{P(I \\cap L_4)}{P(I)}\n$$\n\n$$\nP(L_4 \\mid I) = \\frac{0.0625}{0.1375}\n$$\n\n$$\nP(L_4 \\mid I) \\approx 0.4545\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit für Standort 2 gegeben Verletzung ist größer als 36%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L_2 \\mid I) = \\frac{P(I \\cap L_2)}{P(I)}\n$$\n\n$$\nP(L_2 \\mid I) = \\frac{0.0500}{0.1375}\n$$\n\n$$\nP(L_2 \\mid I) \\approx 0.3636\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Standort 4 gegeben Verletzung ist mehr als das 5-Fache der Wahrscheinlichkeit für Standort 1 gegeben Verletzung. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(L_4 \\mid I) = \\frac{0.0625}{0.1375}\n$$\n\n$$\nP(L_1 \\mid I) = \\frac{0.0125}{0.1375}\n$$\n\n$$\n\\frac{P(L_4 \\mid I)}{P(L_1 \\mid I)} = \\dfrac{0.0625}{0.1375}\\cdot\\dfrac{0.1375}{0.0125}=\\dfrac{0.0625}{0.0125}\n$$\n\n$$\n\\frac{P(L_4 \\mid I)}{P(L_1 \\mid I)} = 5\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Fitnessstudio-Kette hat vier Standorte; jede gemeldete Verletzung wird völlig zufällig einem Standort zugeordnet (jeweils 1/4). Standort 1: 2 gerätebezogene Verletzungen von 40 geprüften Besuchen. Standort 2: 3 von 15. Standort 3: 1 von 20. Standort 4: 4 von 20. Ein geprüfter Besuch involviert eine Verletzung. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(I) = \\sum_{i = 1}^{4} P(I \\mid L_i) P(L_i)\n$$\n\n$$\nP(I) = P(L_i) \\sum_{i = 1}^{4} P(I \\mid L_i)\n$$\n\n$$P(I) = \\frac{1}{4} (0.05 + 0.20 + 0.05 + 0.25)$$\n\n$$P(I) = \\frac{1}{4} (0.55)$$\n\n$$P(I) = 0.1375$$\n\n$$P(L_i \\mid I) = \\frac{P(I \\mid L_i) P(L_i)}{P(I)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.176",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Misprints by Printer",
+    "context_en": "A print shop has four printers, and each print job is assigned to a printer chosen completely at random (probability 1/4 per printer). Printer 1 produces a defective print on 5 out of every 25 jobs. Printer 2 produces one on 2 out of every 8. Printer 3 produces one on 3 out of every 20. Printer 4 produces one on 1 out of every 4. A completed print job is defective.",
+    "statements_en": [
+      "The probability that a randomly completed print job is defective is greater than 22%.",
+      "The probability that the job was printed on Printer 2, given that it is defective, equals the probability that the job was printed on Printer 4, given that it is defective.",
+      "The probability that the job was printed on Printer 1, given that it is defective, is greater than the probability that the job was printed on Printer 3, given that it is defective.",
+      "The probability that the job was printed on Printer 2, given that it is defective, is greater than 30%.",
+      "The probability that the job was printed on Printer 2, given that it is defective, is more than 1.7 times the probability that the job was printed on Printer 3, given that it is defective."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability that a randomly completed print job is defective is $P(D)$. From the solution overview, we calculated this using the Law of Total Probability:\n\n$$\nP(D) = 0.2125\n$$\n\nConverting this to a percentage gives $21.25\\%$.\n\nThe statement claims $P(D)$ is greater than $22\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe claim compares the posterior probabilities $P(P_2 \\mid D)$ and $P(P_4 \\mid D)$. Using Bayes' Theorem, these are given by:\n\n$$\nP(P_2 \\mid D) = \\frac{P(D \\mid P_2) P(P_2)}{P(D)}\n$$\n\n$$\nP(P_4 \\mid D) = \\frac{P(D \\mid P_4) P(P_4)}{P(D)}\n$$\n\nFrom the solution overview, the numerators are:\n\n$P(D \\mid P_2) P(P_2) = 0.0625$\n$P(D \\mid P_4) P(P_4) = 0.0625$\n\nSince both numerators are equal to $0.0625$ and the denominator $P(D) = 0.2125$ is common to both expressions, their values must be equal:\n\n$$\nP(P_2 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\n$$\nP(P_4 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\nThus, $P(P_2 \\mid D) = P(P_4 \\mid D)$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe claim compares the posterior probabilities $P(P_1 \\mid D)$ and $P(P_3 \\mid D)$. Using Bayes' Theorem, these are:\n\n$$\nP(P_1 \\mid D) = \\frac{P(D \\mid P_1) P(P_1)}{P(D)}\n$$\n\n$$\nP(P_3 \\mid D) = \\frac{P(D \\mid P_3) P(P_3)}{P(D)}\n$$\n\nFrom the solution overview, the numerators are:\n\n$P(D \\mid P_1) P(P_1) = 0.0500$\n$P(D \\mid P_3) P(P_3) = 0.0375$\n\nThe common denominator is $P(D) = 0.2125$. Calculating the posterior probabilities:\n\n$$\nP(P_1 \\mid D) = \\frac{0.0500}{0.2125}\n$$\n\n$$\n\\approx 0.2353\n$$\n\n$$\nP(P_3 \\mid D) = \\frac{0.0375}{0.2125}\n$$\n\n$$\n\\approx 0.1765\n$$\n\nComparing these values, $0.2353 > 0.1765$, so $P(P_1 \\mid D) > P(P_3 \\mid D)$, and.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe claim is about the posterior probability $P(P_2 \\mid D)$. We calculated this in the explanation for statement B:\n\n$$\nP(P_2 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\nAs a percentage, this is approximately $29.41\\%$.\n\nThe statement claims this probability is greater than $30\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim compares $P(P_2 \\mid D)$ and $P(P_3 \\mid D)$. From the calculations in statements B and C:\n\n$P(P_2 \\mid D) \\approx 0.2941$\n$P(P_3 \\mid D) \\approx 0.1765$\n\nThe claim states that $P(P_2 \\mid D)$ is more than $1.7$ times $P(P_3 \\mid D)$. We need to calculate the ratio:\n\n$$\n\\frac{P(P_2 \\mid D)}{P(P_3 \\mid D)} = \\frac{0.2941}{0.1765}\n$$\n\n$$\n\\approx 1.6663\n$$\n\n.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A print shop has four printers, and each print job is assigned to a printer chosen completely at random, meaning $P(P_1) = P(P_2) = P(P_3) = P(P_4) = \\frac{1}{4}$. Each printer has a specific defect rate. Let $D$ be the event that a print job is defective. We are given the conditional probabilities of a defect for each printer:\n\n$P(D \\mid P_1) = \\frac{5}{25} = 0.20$\n$P(D \\mid P_2) = \\frac{2}{8} = 0.25$\n$P(D \\mid P_3) = \\frac{3}{20} = 0.15$\n$P(D \\mid P_4) = \\frac{1}{4} = 0.25$\n\nTo find the overall probability that a randomly completed job is defective, $P(D)$, we use the Law of Total Probability, summing over the mutually exclusive and exhaustive events of a job being assigned to each printer:\n\n$$\nP(D) = \\sum_{i = 1}^{4} P(D \\mid P_i) P(P_i)\n$$\n\n$$P(D) = P(D \\mid P_1) P(P_1) + P(D \\mid P_2) P(P_2) + P(D \\mid P_3) P(P_3) + P(D \\mid P_4) P(P_4)$$\n\nSubstituting the given values:\n\n$$P(D) = (0.20)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right) + (0.15)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right)$$\n\n$$P(D) = \\frac{1}{4} (0.20 + 0.25 + 0.15 + 0.25)$$\n\n$$P(D) = \\frac{1}{4} (0.85)$$\n\n$$P(D) = 0.2125$$\n\nThis is the overall probability of a defective job, $P(D)$.\n\nFor conditional probabilities of the form $P(P_i \\mid D)$, we use Bayes' Theorem:\n\n$$P(P_i \\mid D) = \\frac{P(D \\mid P_i) P(P_i)}{P(D)}$$\n\nWe calculate the numerator for each printer first:\n\n$P(D \\mid P_1) P(P_1) = (0.20)\\left(\\frac{1}{4}\\right) = 0.0500$\n$P(D \\mid P_2) P(P_2) = (0.25)\\left(\\frac{1}{4}\\right) = 0.0625$\n$P(D \\mid P_3) P(P_3) = (0.15)\\left(\\frac{1}{4}\\right) = 0.0375$\n$P(D \\mid P_4) P(P_4) = (0.25)\\left(\\frac{1}{4}\\right) = 0.0625$\n\nNote that the sum of these numerators is $0.0500 + 0.0625 + 0.0375 + 0.0625 = 0.2125$, which correctly equals $P(D)$.",
+    "title_de_existing": "Fehldrucke nach Drucker",
+    "context_de_existing": "Eine Druckerei hat vier Drucker; jeder Auftrag wird völlig zufällig zugewiesen (jeweils 1/4). Drucker 1: defekt in 5 von 25. Drucker 2: 2 von 8. Drucker 3: 3 von 20. Drucker 4: 4 von 16. Ein abgeschlossener Druckauftrag ist defekt.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit eines defekten Drucks ist größer als 22%.",
+      "Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist gleich der für Drucker 4 gegeben defekt.",
+      "Die Wahrscheinlichkeit für Drucker 1 gegeben defekt ist größer als die für Drucker 3 gegeben defekt.",
+      "Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist größer als 30%.",
+      "Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist mehr als das 1,7-Fache der Wahrscheinlichkeit für Drucker 3 gegeben defekt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit eines defekten Drucks ist größer als 22%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(D) = 0.2125\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist gleich der für Drucker 4 gegeben defekt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P_2 \\mid D) = \\frac{P(D \\mid P_2) P(P_2)}{P(D)}\n$$\n\n$$\nP(P_4 \\mid D) = \\frac{P(D \\mid P_4) P(P_4)}{P(D)}\n$$\n\n$$\nP(P_2 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\n$$\nP(P_4 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit für Drucker 1 gegeben defekt ist größer als die für Drucker 3 gegeben defekt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P_1 \\mid D) = \\frac{P(D \\mid P_1) P(P_1)}{P(D)}\n$$\n\n$$\nP(P_3 \\mid D) = \\frac{P(D \\mid P_3) P(P_3)}{P(D)}\n$$\n\n$$\nP(P_1 \\mid D) = \\frac{0.0500}{0.2125}\n$$\n\n$$\n\\approx 0.2353\n$$\n\n$$\nP(P_3 \\mid D) = \\frac{0.0375}{0.2125}\n$$\n\n$$\n\\approx 0.1765\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist größer als 30%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(P_2 \\mid D) = \\frac{0.0625}{0.2125}\n$$\n\n$$\n\\approx 0.2941\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Drucker 2 gegeben defekt ist mehr als das 1,7-Fache der Wahrscheinlichkeit für Drucker 3 gegeben defekt. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\frac{P(P_2 \\mid D)}{P(P_3 \\mid D)} = \\frac{0.2941}{0.1765}\n$$\n\n$$\n\\approx 1.6663\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Druckerei hat vier Drucker; jeder Auftrag wird völlig zufällig zugewiesen (jeweils 1/4). Drucker 1: defekt in 5 von 25. Drucker 2: 2 von 8. Drucker 3: 3 von 20. Drucker 4: 4 von 16. Ein abgeschlossener Druckauftrag ist defekt. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(D) = \\sum_{i = 1}^{4} P(D \\mid P_i) P(P_i)\n$$\n\n$$P(D) = P(D \\mid P_1) P(P_1) + P(D \\mid P_2) P(P_2) + P(D \\mid P_3) P(P_3) + P(D \\mid P_4) P(P_4)$$\n\n$$P(D) = (0.20)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right) + (0.15)\\left(\\frac{1}{4}\\right) + (0.25)\\left(\\frac{1}{4}\\right)$$\n\n$$P(D) = \\frac{1}{4} (0.20 + 0.25 + 0.15 + 0.25)$$\n\n$$P(D) = \\frac{1}{4} (0.85)$$\n\n$$P(D) = 0.2125$$\n\n$$P(P_i \\mid D) = \\frac{P(D \\mid P_i) P(P_i)}{P(D)}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.177",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Theft Reports by Parking Garage",
+    "context_en": "A parking garage company operates four garages, and each reported security incident is traced back to a garage chosen completely at random (probability 1/4 per garage). Garage 1 has 3 thefts out of every 6 incidents reviewed. Garage 2 has 1 out of every 16. Garage 3 has 2 out of every 10. Garage 4 has 4 out of every 32. A reviewed incident is a theft.",
+    "statements_en": [
+      "The probability that a randomly reviewed incident is a theft is greater than 23%.",
+      "The probability that the incident was at Garage 1, given that it is a theft, is greater than 55%.",
+      "The probability that the incident was at Garage 4, given that it is a theft, is greater than the probability that the incident was at Garage 3, given that it is a theft.",
+      "The probability that the incident was at Garage 2, given that it is a theft, is greater than 8%.",
+      "The probability that the incident was at Garage 1, given that it is a theft, is more than 8 times the probability that the incident was at Garage 2, given that it is a theft."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability of a randomly reviewed incident being a theft is $P(T)$. From the overview calculation:\n\n$$\nP(T) = 0.221875\n$$\n\nThis can be expressed as $22.1875\\%$. The claim states this probability is greater than $23\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe probability that the incident was at Garage 1, given that it is a theft, is $P(G_1 \\mid T)$. Using Bayes' Theorem and values from the overview:\n\n$$\nP(G_1 \\mid T) = \\frac{P(T \\cap G_1)}{P(T)}\n$$\n\n$$\nP(G_1 \\mid T) = \\frac{0.125}{0.221875}\n$$\n\n$$\nP(G_1 \\mid T) \\approx 0.56338\n$$\n\nThis means $P(G_1 \\mid T) \\approx 56.338\\%$. The claim states this is greater than $55\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim compares two conditional probabilities. First, find $P(G_4 \\mid T)$:\n\n$$\nP(G_4 \\mid T) = \\frac{P(T \\cap G_4)}{P(T)}\n$$\n\n$$\nP(G_4 \\mid T) = \\frac{0.03125}{0.221875}\n$$\n\n$$\nP(G_4 \\mid T) \\approx 0.14085\n$$\n\nNext, find $P(G_3 \\mid T)$:\n\n$$\nP(G_3 \\mid T) = \\frac{P(T \\cap G_3)}{P(T)}\n$$\n\n$$\nP(G_3 \\mid T) = \\frac{0.05}{0.221875}\n$$\n\n$$\nP(G_3 \\mid T) \\approx 0.22535\n$$\n\nThe claim states $P(G_4 \\mid T) > P(G_3 \\mid T)$.\n\nSo the statement is False.\n",
+      "**D.** → False\n\nThe probability that the incident was at Garage 2, given that it is a theft, is $P(G_2 \\mid T)$. Using Bayes' Theorem and values from the overview:\n\n$$\nP(G_2 \\mid T) = \\frac{P(T \\cap G_2)}{P(T)}\n$$\n\n$$\nP(G_2 \\mid T) = \\frac{0.015625}{0.221875}\n$$\n\n$$\nP(G_2 \\mid T) \\approx 0.07042\n$$\n\nThis means $P(G_2 \\mid T) \\approx 7.042\\%$. The claim states this is greater than $8\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThe claim compares $P(G_1 \\mid T)$ to $P(G_2 \\mid T)$. We need to calculate the ratio $\\frac{P(G_1 \\mid T)}{P(G_2 \\mid T)}$.\n\n$$\nP(G_1 \\mid T) = \\frac{0.125}{0.221875}\n$$\n\n$$\nP(G_2 \\mid T) = \\frac{0.015625}{0.221875}\n$$\n\nThe ratio is:\n\n$$\n\\frac{P(G_1 \\mid T)}{P(G_2 \\mid T)} = \\dfrac{0.125}{0.221875}\\cdot\\dfrac{0.221875}{0.015625}=\\dfrac{0.125}{0.015625}\n$$\n\n$$\n\\frac{P(G_1 \\mid T)}{P(G_2 \\mid T)} = 8\n$$\n\nThe claim states that $P(G_1 \\mid T)$ is more than 8 times $P(G_2 \\mid T)$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A parking garage company operates four garages, and each reported security incident is traced back to a garage chosen completely at random. We define $G_i$ as the event that an incident occurred at Garage $i$, for $i = 1, 2, 3, 4$. Thus, $P(G_i) = \\frac{1}{4}$ for all $i$. Let $T$ be the event that a reviewed incident is a theft.\n\nWe are given the conditional probabilities of a theft occurring at each garage:\n$P(T \\mid G_1) = \\frac{3}{6} = \\frac{1}{2} = 0.5$\n$P(T \\mid G_2) = \\frac{1}{16} = 0.0625$\n$P(T \\mid G_3) = \\frac{2}{10} = \\frac{1}{5} = 0.2$\n$P(T \\mid G_4) = \\frac{4}{32} = \\frac{1}{8} = 0.125$\n\nTo find the overall probability of a randomly reviewed incident being a theft, $P(T)$, we use the Law of Total Probability:\n$$\nP(T) = \\sum_{i = 1}^4 P(T \\mid G_i) P(G_i)\n$$\nSince $P(G_i) = \\frac{1}{4}$ for all $i$, this simplifies to:\n$$\nP(T) = \\frac{1}{4} \\sum_{i = 1}^4 P(T \\mid G_i)\n$$\n$$P(T) = \\frac{1}{4} \\left(0.5 + 0.0625 + 0.2 + 0.125\\right)$$\n$$P(T) = \\frac{1}{4} \\left(0.8875\\right)$$\n$$P(T) = 0.221875$$\n\nTo find the probability that an incident was at a specific garage, given it was a theft, $P(G_i \\mid T)$, we use Bayes' Theorem:\n$$P(G_i \\mid T) = \\frac{P(T \\mid G_i) P(G_i)}{P(T)}$$\n\nWe can calculate the numerator $P(T \\cap G_i) = P(T \\mid G_i) P(G_i)$ for each garage:\n$P(T \\cap G_1) = 0.5 \\cdot \\frac{1}{4} = 0.125$\n$P(T \\cap G_2) = 0.0625 \\cdot \\frac{1}{4} = 0.015625$\n$P(T \\cap G_3) = 0.2 \\cdot \\frac{1}{4} = 0.05$\n$P(T \\cap G_4) = 0.125 \\cdot \\frac{1}{4} = 0.03125$\n\nWe note that the sum of these joint probabilities is $0.125 + 0.015625 + 0.05 + 0.03125 = 0.221875$, which matches $P(T)$.",
+    "title_de_existing": "Diebstahlmeldungen nach Parkhaus",
+    "context_de_existing": "Ein Parkhausbetreiber betreibt vier Parkhäuser; jeder gemeldete Sicherheitsvorfall wird völlig zufällig einem Parkhaus zugeordnet (Wahrscheinlichkeit $1/4$ je Parkhaus). Parkhaus 1: $3$ Diebstähle von $6$ geprüften Vorfällen. Parkhaus 2: $1$ von $16$. Parkhaus 3: $2$ von $10$. Parkhaus 4: $4$ von $32$. Ein geprüfter Vorfall ist ein Diebstahl.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Vorfall ein Diebstahl ist, ist größer als 23%.",
+      "Die Wahrscheinlichkeit für Parkhaus 1 gegeben Diebstahl ist größer als 55%.",
+      "Die Wahrscheinlichkeit für Parkhaus 4 gegeben Diebstahl ist größer als die für Parkhaus 3 gegeben Diebstahl.",
+      "Die Wahrscheinlichkeit für Parkhaus 2 gegeben Diebstahl ist größer als 8%.",
+      "Die Wahrscheinlichkeit für Parkhaus 1 gegeben Diebstahl ist mehr als das 8-Fache der Wahrscheinlichkeit für Parkhaus 2 gegeben Diebstahl."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit, dass ein Vorfall ein Diebstahl ist, ist größer als 23%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(T) = 0.221875\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für Parkhaus 1 gegeben Diebstahl ist größer als 55%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G_1 \\mid T) = \\frac{P(T \\cap G_1)}{P(T)}\n$$\n\n$$\nP(G_1 \\mid T) = \\frac{0.125}{0.221875}\n$$\n\n$$\nP(G_1 \\mid T) \\approx 0.56338\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit für Parkhaus 4 gegeben Diebstahl ist größer als die für Parkhaus 3 gegeben Diebstahl. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(G_4 \\mid T) = \\frac{P(T \\cap G_4)}{P(T)}\n$$\n\n$$\nP(G_4 \\mid T) = \\frac{0.03125}{0.221875}\n$$\n\n$$\nP(G_4 \\mid T) \\approx 0.14085\n$$\n\n$$\nP(G_3 \\mid T) = \\frac{P(T \\cap G_3)}{P(T)}\n$$\n\n$$\nP(G_3 \\mid T) = \\frac{0.05}{0.221875}\n$$\n\n$$\nP(G_3 \\mid T) \\approx 0.22535\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für Parkhaus 2 gegeben Diebstahl ist größer als 8%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(G_2 \\mid T) = \\frac{P(T \\cap G_2)}{P(T)}\n$$\n\n$$\nP(G_2 \\mid T) = \\frac{0.015625}{0.221875}\n$$\n\n$$\nP(G_2 \\mid T) \\approx 0.07042\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit für Parkhaus 1 gegeben Diebstahl ist mehr als das 8-Fache der Wahrscheinlichkeit für Parkhaus 2 gegeben Diebstahl. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(G_1 \\mid T) = \\frac{0.125}{0.221875}\n$$\n\n$$\nP(G_2 \\mid T) = \\frac{0.015625}{0.221875}\n$$\n\n$$\n\\frac{P(G_1 \\mid T)}{P(G_2 \\mid T)} = \\dfrac{0.125}{0.221875}\\cdot\\dfrac{0.221875}{0.015625}=\\dfrac{0.125}{0.015625}\n$$\n\n$$\n\\frac{P(G_1 \\mid T)}{P(G_2 \\mid T)} = 8\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Vier Parkhäuser $G_i$ mit $P(G_i)=1/4$. Sei $T$ das Ereignis „Diebstahl“.\n\n$$\nP(T\\mid G_1)=3/6=1/2,\\quad P(T\\mid G_2)=1/16,\\quad P(T\\mid G_3)=2/10=1/5,\\quad P(T\\mid G_4)=4/32=1/8\n$$\n\n$$\nP(T)=\\sum_{i=1}^{4} P(T\\mid G_i)P(G_i)=\\frac14\\bigl(0{,}5+0{,}0625+0{,}2+0{,}125\\bigr)=0{,}221875\n$$\n\nBayes: $P(G_i\\mid T)=\\dfrac{P(T\\mid G_i)P(G_i)}{P(T)}$."
+  },
+  {
+    "case_id": "MATH 12.178",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Trail Closures and the Weather",
+    "context_en": "A mountain hiking trail is affected by daily weather. Of all days, 55% are Sunny, 30% are Rainy, and 15% are Snowy. The trail is closed for safety on 2% of Sunny days, 10% of Rainy days, and 40% of Snowy days. Today, the trail is closed.",
+    "statements_en": [
+      "The probability that the trail is closed on a random day is greater than 8%.",
+      "The probability that the day is Snowy AND the trail is closed equals 6%.",
+      "The probability that the day is Snowy, given the trail is closed is greater than 65%.",
+      "The probability that the trail is open equals 1 minus the probability that the trail is closed.",
+      "The probability that the day is Rainy, given the trail is closed is greater than the probability that the day is Sunny, given the trail is closed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that the trail is closed on a random day is $P(C)$. From the solution overview, we calculated this using the Law of Total Probability:\n\n$$\nP(C) = 0.101\n$$\n\nThe claim states that $P(C)$ is greater than $8\\%$. Comparing our calculated value to the claim:\n\n$$\n0.101 = 10.1\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the day is Snowy AND the trail is closed is the joint probability $P(W \\cap C)$. This can be found directly from the given prior probability of a Snowy day and the conditional probability of closure on a Snowy day:\n\n$$\nP(W \\cap C) = P(C \\mid W) P(W)\n$$\n\n$$\nP(W \\cap C) = (0.40)(0.15)\n$$\n\n$$\nP(W \\cap C) = 0.06\n$$\n\nThe claim states that this probability equals $6\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the day is Snowy, given the trail is closed, is a conditional probability $P(W \\mid C)$. This is calculated using Bayes' Theorem, which states that:\n\n$$\nP(W \\mid C) = \\frac{P(W \\cap C)}{P(C)}\n$$\n\nWe have $P(W \\cap C) = 0.06$ from statement B's explanation and $P(C) = 0.101$ from the solution overview. Substituting these values:\n\n$$\nP(W \\mid C) = \\frac{0.06}{0.101}\n$$\n\n$$\nP(W \\mid C) \\approx 0.594059\n$$\n\n$$\nP(W \\mid C) \\approx 59.41\\%\n$$\n\nThe claim states that $P(W \\mid C)$ is greater than $65\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nFor any event $E$, its complement event $E^c$ represents all outcomes where $E$ does not occur. The sum of the probabilities of an event and its complement is always 1:\n\n$$\nP(E) + P(E^c) = 1\n$$\n\nIn this scenario, the trail is either closed ($C$) or open ($O$). These two events are complementary. Therefore, the probability of the trail being open, $P(O)$, is simply $1 - P(C)$.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nWe need to compare the conditional probability of a Rainy day given closure, $P(R \\mid C)$, with the conditional probability of a Sunny day given closure, $P(S \\mid C)$. Both are calculated using Bayes' Theorem.\n\nFirst, for a Rainy day:\n\n$$\nP(R \\cap C) = P(C \\mid R) P(R)\n$$\n\n$$\nP(R \\cap C) = (0.10)(0.30) = 0.030\n$$\n\nUsing Bayes' Theorem with $P(C) = 0.101$:\n\n$$\nP(R \\mid C) = \\frac{P(R \\cap C)}{P(C)} = \\frac{0.030}{0.101} \\approx 0.29703\n$$\n\nNext, for a Sunny day:\n\n$$\nP(S \\cap C) = P(C \\mid S) P(S)\n$$\n\n$$\nP(S \\cap C) = (0.02)(0.55) = 0.011\n$$\n\nUsing Bayes' Theorem with $P(C) = 0.101$:\n\n$$\nP(S \\mid C) = \\frac{P(S \\cap C)}{P(C)} = \\frac{0.011}{0.101} \\approx 0.10891\n$$\n\nComparing the two probabilities: $P(R \\mid C) \\approx 0.29703$ and $P(S \\mid C) \\approx 0.10891$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A mountain hiking trail's status is affected by daily weather conditions. We are given the prior probabilities of the three weather states: $P(S) = 0.55$ for Sunny days, $P(R) = 0.30$ for Rainy days, and $P(W) = 0.15$ for Snowy days. These three states form a partition of the sample space, meaning they are mutually exclusive and collectively exhaustive.\n\nWe are also given the conditional probabilities of the trail being closed, denoted as $C$, for each weather state: $P(C \\mid S) = 0.02$, $P(C \\mid R) = 0.10$, and $P(C \\mid W) = 0.40$.\n\nThe probability of the trail being closed on any given day, $P(C)$, is calculated using the Law of Total Probability by summing the probabilities of the trail being closed under each weather condition:\n\n$$P(C) = P(C \\mid S)P(S) + P(C \\mid R)P(R) + P(C \\mid W)P(W)$$\n\n$$P(C) = (0.02)(0.55) + (0.10)(0.30) + (0.40)(0.15)$$\n\n$$P(C) = 0.011 + 0.030 + 0.060$$\n\n$$P(C) = 0.101$$\n\nThis means the trail is closed on $10.1\\%$ of all days. This overall probability $P(C)$ will be used as the denominator for calculating posterior probabilities using Bayes' Theorem.",
+    "title_de_existing": "Wegsperrungen und Wetter",
+    "context_de_existing": "Ein Bergwanderweg hängt vom täglichen Wetter ab. Von allen Tagen sind 55% sonnig, 30% regnerisch und 15% schneereich. Der Weg wird aus Sicherheitsgründen an 2% der sonnigen, 10% der regnerischen und 40% der schneereichen Tage gesperrt. Heute ist der Weg gesperrt.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass der Weg an einem zufälligen Tag gesperrt ist, ist größer als 8%.",
+      "Die Wahrscheinlichkeit, dass der Tag schneereich und der Weg gesperrt ist, beträgt 6%.",
+      "Die Wahrscheinlichkeit, dass der Tag schneereich ist, gegeben Sperrung, ist größer als 65%.",
+      "Die Wahrscheinlichkeit, dass der Weg offen ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er gesperrt ist.",
+      "Die Wahrscheinlichkeit, dass der Tag regnerisch ist, gegeben Sperrung, ist größer als die Wahrscheinlichkeit, dass er sonnig ist, gegeben Sperrung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass der Weg an einem zufälligen Tag gesperrt ist, ist größer als 8%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(C) = 0.101\n$$\n\n$$\n0.101 = 10.1\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Tag schneereich und der Weg gesperrt ist, beträgt 6%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(W \\cap C) = P(C \\mid W) P(W)\n$$\n\n$$\nP(W \\cap C) = (0.40)(0.15)\n$$\n\n$$\nP(W \\cap C) = 0.06\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Tag schneereich ist, gegeben Sperrung, ist größer als 65%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(W \\mid C) = \\frac{P(W \\cap C)}{P(C)}\n$$\n\n$$\nP(W \\mid C) = \\frac{0.06}{0.101}\n$$\n\n$$\nP(W \\mid C) \\approx 0.594059\n$$\n\n$$\nP(W \\mid C) \\approx 59.41\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Weg offen ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er gesperrt ist. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E) + P(E^c) = 1\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Tag regnerisch ist, gegeben Sperrung, ist größer als die Wahrscheinlichkeit, dass er sonnig ist, gegeben Sperrung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(R \\cap C) = P(C \\mid R) P(R)\n$$\n\n$$\nP(R \\cap C) = (0.10)(0.30) = 0.030\n$$\n\n$$\nP(R \\mid C) = \\frac{P(R \\cap C)}{P(C)} = \\frac{0.030}{0.101} \\approx 0.29703\n$$\n\n$$\nP(S \\cap C) = P(C \\mid S) P(S)\n$$\n\n$$\nP(S \\cap C) = (0.02)(0.55) = 0.011\n$$\n\n$$\nP(S \\mid C) = \\frac{P(S \\cap C)}{P(C)} = \\frac{0.011}{0.101} \\approx 0.10891\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Bergwanderweg hängt vom täglichen Wetter ab. Von allen Tagen sind 55% sonnig, 30% regnerisch und 15% schneereich. Der Weg wird aus Sicherheitsgründen an 2% der sonnigen, 10% der regnerischen und 40% der schneereichen Tage gesperrt. Heute ist der Weg gesperrt. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(C) = P(C \\mid S)P(S) + P(C \\mid R)P(R) + P(C \\mid W)P(W)$$\n\n$$P(C) = (0.02)(0.55) + (0.10)(0.30) + (0.40)(0.15)$$\n\n$$P(C) = 0.011 + 0.030 + 0.060$$\n\n$$P(C) = 0.101$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.179",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Fungus Across Three Tree Species",
+    "context_en": "A forest is made up of three tree species: Oak (50% of all trees), Pine (35%), and Birch (15%). A certain fungus infects 2% of Oaks, 5% of Pines, and 12% of Birches. A randomly examined tree is found to be infected with the fungus.",
+    "statements_en": [
+      "The probability that a tree is infected is greater than 4%.",
+      "The probability that the tree is a Birch AND is infected equals 1.8%.",
+      "The probability that the tree is a Birch, given it is infected is greater than 45%.",
+      "The probability that the tree is not infected equals 1 minus the probability that the tree is infected.",
+      "The probability that the tree is a Pine, given it is infected is greater than the probability that the tree is an Oak, given it is infected."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly selected tree is infected, $P(I)$, is calculated using the Law of Total Probability. From the solution overview:\n\n$$\nP(I) = 0.0455\n$$\n\nThe claim states this probability is greater than $4\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that a tree is a Birch AND is infected, $P(B \\cap I)$, is found by multiplying the probability of being a Birch by the conditional probability of being infected given it is a Birch:\n\n$$\nP(B \\cap I) = P(I \\mid B)P(B)\n$$\n\n$$\nP(B \\cap I) = (0.12)(0.15)\n$$\n\n$$\nP(B \\cap I) = 0.018\n$$\n\nThis probability, $0.018$, is exactly $1.8\\%$. The claim states it equals $1.8\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the tree is a Birch, given it is infected, $P(B \\mid I)$, is calculated using Bayes' theorem:\n\n$$\nP(B \\mid I) = \\frac{P(B \\cap I)}{P(I)}\n$$\n\nWe found $P(B \\cap I) = 0.018$ in explanation B, and $P(I) = 0.0455$ in the solution overview. Substituting these values:\n\n$$\nP(B \\mid I) = \\frac{0.018}{0.0455}\n$$\n\n$$\nP(B \\mid I) \\approx 0.3956\n$$\n\nThis means $P(B \\mid I) \\approx 39.56\\%$. The claim states this probability is greater than $45\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nFor any event $A$, the event that $A$ does not occur, denoted $A^c$, is complementary to $A$. The sum of their probabilities is $1$. For a tree to be either infected ($I$) or not infected ($I^c$), these two events are mutually exclusive and exhaustive. Therefore:\n\n$$\nP(I^c) = 1 - P(I)\n$$\n\nThis relationship is precisely what the claim states.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nTo compare $P(P \\mid I)$ and $P(O \\mid I)$, we calculate each using Bayes' theorem:\n\n$$\nP(P \\mid I) = \\frac{P(P \\cap I)}{P(I)}\n$$\n\nThe joint probability $P(P \\cap I)$ is:\n\n$$\nP(P \\cap I) = P(I \\mid P)P(P)\n$$\n\n$$\nP(P \\cap I) = (0.05)(0.35)\n$$\n\n$$\nP(P \\cap I) = 0.0175\n$$\n\nUsing $P(I) = 0.0455$ from the solution overview:\n\n$$\nP(P \\mid I) = \\frac{0.0175}{0.0455}\n$$\n\n$$\nP(P \\mid I) \\approx 0.3846\n$$\n\nFor $P(O \\mid I)$:\n\n$$\nP(O \\mid I) = \\frac{P(O \\cap I)}{P(I)}\n$$\n\nThe joint probability $P(O \\cap I)$ is:\n\n$$\nP(O \\cap I) = P(I \\mid O)P(O)\n$$\n\n$$\nP(O \\cap I) = (0.02)(0.50)\n$$\n\n$$\nP(O \\cap I) = 0.010\n$$\n\nUsing $P(I) = 0.0455$:\n\n$$\nP(O \\mid I) = \\frac{0.010}{0.0455}\n$$\n\n$$\nP(O \\mid I) \\approx 0.2198\n$$\n\nComparing the two conditional probabilities, $P(P \\mid I) \\approx 0.3846$ and $P(O \\mid I) \\approx 0.2198$. Since $0.3846 > 0.2198$, $P(\\text{the tree is a Pine, given it is infected})$ is greater than $P(\\text{the tree is an Oak, given it is infected})$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A forest consists of three tree species: Oak (O), Pine (P), and Birch (B). A certain fungus infects trees with different probabilities depending on the species. We are examining a randomly selected tree that is found to be infected.\n\nLet $O, P, B$ denote the event that a tree is Oak, Pine, or Birch, respectively. Let $I$ denote the event that a tree is infected. The problem provides the following probabilities:\n\nPrior probabilities of species:\n$$P(O) = 0.50$$\n$$P(P) = 0.35$$\n$$P(B) = 0.15$$\n\nConditional probabilities of infection:\n$$P(I \\mid O) = 0.02$$\n$$P(I \\mid P) = 0.05$$\n$$P(I \\mid B) = 0.12$$\n\nTo find the overall probability that a randomly chosen tree is infected, $P(I)$, we use the Law of Total Probability by summing the probabilities of being infected within each species:\n\n$$P(I) = P(I \\mid O)P(O) + P(I \\mid P)P(P) + P(I \\mid B)P(B)$$\n$$P(I) = (0.02)(0.50) + (0.05)(0.35) + (0.12)(0.15)$$\n$$P(I) = 0.010 + 0.0175 + 0.018$$\n$$P(I) = 0.0455$$\n\nThis means the probability of a randomly examined tree being infected is $4.55\\%$. This value will be used in several statements.",
+    "title_de_existing": "Pilzbefall bei drei Baumarten",
+    "context_de_existing": "Ein Wald besteht aus drei Baumarten: Eiche (50% aller Bäume), Kiefer (35%) und Birke (15%). Ein bestimmter Pilz befällt 2% der Eichen, 5% der Kiefern und 12% der Birken. Ein zufällig untersuchter Baum ist mit dem Pilz befallen.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Baum befallen ist, ist größer als 4%.",
+      "Die Wahrscheinlichkeit, dass der Baum eine Birke und befallen ist, beträgt 1,8%.",
+      "Die Wahrscheinlichkeit, dass der Baum eine Birke ist, gegeben Befall, ist größer als 45%.",
+      "Die Wahrscheinlichkeit, dass der Baum nicht befallen ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er befallen ist.",
+      "Die Wahrscheinlichkeit, dass der Baum eine Kiefer ist, gegeben Befall, ist größer als die Wahrscheinlichkeit, dass er eine Eiche ist, gegeben Befall."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein Baum befallen ist, ist größer als 4%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(I) = 0.0455\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Baum eine Birke und befallen ist, beträgt 1,8%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B \\cap I) = P(I \\mid B)P(B)\n$$\n\n$$\nP(B \\cap I) = (0.12)(0.15)\n$$\n\n$$\nP(B \\cap I) = 0.018\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Baum eine Birke ist, gegeben Befall, ist größer als 45%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(B \\mid I) = \\frac{P(B \\cap I)}{P(I)}\n$$\n\n$$\nP(B \\mid I) = \\frac{0.018}{0.0455}\n$$\n\n$$\nP(B \\mid I) \\approx 0.3956\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Baum nicht befallen ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er befallen ist. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(I^c) = 1 - P(I)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Baum eine Kiefer ist, gegeben Befall, ist größer als die Wahrscheinlichkeit, dass er eine Eiche ist, gegeben Befall. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P \\mid I) = \\frac{P(P \\cap I)}{P(I)}\n$$\n\n$$\nP(P \\cap I) = P(I \\mid P)P(P)\n$$\n\n$$\nP(P \\cap I) = (0.05)(0.35)\n$$\n\n$$\nP(P \\cap I) = 0.0175\n$$\n\n$$\nP(P \\mid I) = \\frac{0.0175}{0.0455}\n$$\n\n$$\nP(P \\mid I) \\approx 0.3846\n$$\n\n$$\nP(O \\mid I) = \\frac{P(O \\cap I)}{P(I)}\n$$\n\n$$\nP(O \\cap I) = P(I \\mid O)P(O)\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Ein Wald besteht aus drei Baumarten: Eiche (50% aller Bäume), Kiefer (35%) und Birke (15%). Ein bestimmter Pilz befällt 2% der Eichen, 5% der Kiefern und 12% der Birken. Ein zufällig untersuchter Baum ist mit dem Pilz befallen. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(O) = 0.50$$\n\n$$P(P) = 0.35$$\n\n$$P(B) = 0.15$$\n\n$$P(I \\mid O) = 0.02$$\n\n$$P(I \\mid P) = 0.05$$\n\n$$P(I \\mid B) = 0.12$$\n\n$$P(I) = P(I \\mid O)P(O) + P(I \\mid P)P(P) + P(I \\mid B)P(B)$$\n\n$$P(I) = (0.02)(0.50) + (0.05)(0.35) + (0.12)(0.15)$$\n\n$$P(I) = 0.010 + 0.0175 + 0.018$$\n\n$$P(I) = 0.0455$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.180",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Tagged Fish in a Lake",
+    "context_en": "A lake contains three fish species: Bass (50% of all fish), Trout (30%), and Catfish (20%). Researchers have tagged 3% of Bass, 5% of Trout, and 8% of Catfish. A fisherman catches a fish and finds it is tagged.",
+    "statements_en": [
+      "The probability that a caught fish is tagged is greater than 4%.",
+      "The probability that the fish is a Catfish AND is tagged equals 1.6%.",
+      "The probability that the fish is a Bass, given it is tagged equals the probability that the fish is a Trout, given it is tagged.",
+      "The probability that the fish is not tagged equals 1 minus the probability that the fish is tagged.",
+      "The probability that the fish is a Catfish, given it is tagged is greater than 40%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a caught fish is tagged is the overall proportion of tagged fish in the lake. We calculate this using the Law of Total Probability, summing the products of each species' proportion and its tagging rate.\n\n$$\nP(G) = 0.046\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the fish is a Catfish AND is tagged is the joint probability $P(C \\cap G)$. This is calculated by multiplying the proportion of Catfish in the lake by the probability that a Catfish is tagged:\n\n$$\nP(C \\cap G) = P(G \\mid C)P(C)\n$$\n\n$$\nP(C \\cap G) = (0.08)(0.20)\n$$\n\n$$\nP(C \\cap G) = 0.016\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim compares the posterior probabilities $P(B \\mid G)$ and $P(T \\mid G)$. Using Bayes' Theorem, these are given by:\n\n$$\nP(B \\mid G) = \\frac{P(G \\mid B)P(B)}{P(G)}\n$$\n\n$$\nP(T \\mid G) = \\frac{P(G \\mid T)P(T)}{P(G)}\n$$\n\nTo compare $P(B \\mid G)$ and $P(T \\mid G)$, we only need to compare their numerators, as the denominator $P(G)$ is the same for both. The numerator for Bass is:\n\n$$\nP(G \\mid B)P(B) = (0.03)(0.50) = 0.015\n$$\n\nThe numerator for Trout is:\n\n$$\nP(G \\mid T)P(T) = (0.05)(0.30)\n$$\n\n.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThe event that a fish is not tagged, $G^c$, is the complement of the event that a fish is tagged, $G$. For any event, the probability of its complement is 1 minus the probability of the event itself.\n\n$$\nP(G^c) = 1 - P(G)\n$$\n\n.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThe probability that the fish is a Catfish, given it is tagged, is a conditional probability calculated using Bayes' Theorem:\n\n$$\nP(C \\mid G) = \\frac{P(G \\mid C)P(C)}{P(G)}\n$$\n\nFrom the overview, $P(G) = 0.046$. From statement B, $P(G \\mid C)P(C) = 0.016$. Therefore,\n\n$$\nP(C \\mid G) = \\frac{0.016}{0.046}\n$$\n\n$$\nP(C \\mid G) \\approx 0.3478\n$$\n\n.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A lake contains three fish species: Bass (50% of all fish), Trout (30%), and Catfish (20%). Researchers have tagged 3% of Bass, 5% of Trout, and 8% of Catfish. A fisherman catches a fish and finds it is tagged.\n\nLet $B$, $T$, and $C$ denote the events that the caught fish is a Bass, Trout, or Catfish, respectively. Let $G$ denote the event that the caught fish is tagged. We are given the following probabilities:\n\n$$P(B) = 0.50$$\n$$P(T) = 0.30$$\n$$P(C) = 0.20$$\n\nAnd the conditional probabilities of a fish being tagged, given its species:\n\n$$P(G \\mid B) = 0.03$$\n$$P(G \\mid T) = 0.05$$\n$$P(G \\mid C) = 0.08$$\n\nTo calculate the overall probability that a caught fish is tagged, $P(G)$, we use the Law of Total Probability:\n\n$$P(G) = P(G \\mid B)P(B) + P(G \\mid T)P(T) + P(G \\mid C)P(C)$$\n$$P(G) = (0.03)(0.50) + (0.05)(0.30) + (0.08)(0.20)$$\n$$P(G) = 0.015 + 0.015 + 0.016$$\n$$P(G) = 0.046$$\n\nThis means $4.6\\%$ of all fish in the lake are tagged.",
+    "title_de_existing": "Markierte Fische in einem See",
+    "context_de_existing": "Ein See enthält drei Fischarten: Barsch (50%), Forelle (30%) und Wels (20%). Forscher haben 3% der Barsche, 5% der Forellen und 8% der Welse markiert. Ein Angler fängt einen markierten Fisch.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein gefangener Fisch markiert ist, ist größer als 4%.",
+      "Die Wahrscheinlichkeit, dass der Fisch ein Wels und markiert ist, beträgt 1,6%.",
+      "Die Wahrscheinlichkeit, dass der Fisch ein Barsch ist, gegeben Markierung, ist gleich der Wahrscheinlichkeit für Forelle gegeben Markierung.",
+      "Die Wahrscheinlichkeit, dass der Fisch unmarkiert ist, ist gleich 1 minus der Markierungswahrscheinlichkeit.",
+      "Die Wahrscheinlichkeit, dass der Fisch ein Wels ist, gegeben Markierung, ist größer als 40%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein gefangener Fisch markiert ist, ist größer als 4%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G) = 0.046\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Fisch ein Wels und markiert ist, beträgt 1,6%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(C \\cap G) = P(G \\mid C)P(C)\n$$\n\n$$\nP(C \\cap G) = (0.08)(0.20)\n$$\n\n$$\nP(C \\cap G) = 0.016\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass der Fisch ein Barsch ist, gegeben Markierung, ist gleich der Wahrscheinlichkeit für Forelle gegeben Markierung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B \\mid G) = \\frac{P(G \\mid B)P(B)}{P(G)}\n$$\n\n$$\nP(T \\mid G) = \\frac{P(G \\mid T)P(T)}{P(G)}\n$$\n\n$$\nP(G \\mid B)P(B) = (0.03)(0.50) = 0.015\n$$\n\n$$\nP(G \\mid T)P(T) = (0.05)(0.30)\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Fisch unmarkiert ist, ist gleich 1 minus der Markierungswahrscheinlichkeit. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G^c) = 1 - P(G)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass der Fisch ein Wels ist, gegeben Markierung, ist größer als 40%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(C \\mid G) = \\frac{P(G \\mid C)P(C)}{P(G)}\n$$\n\n$$\nP(C \\mid G) = \\frac{0.016}{0.046}\n$$\n\n$$\nP(C \\mid G) \\approx 0.3478\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein See enthält drei Fischarten: Barsch (50%), Forelle (30%) und Wels (20%). Forscher haben 3% der Barsche, 5% der Forellen und 8% der Welse markiert. Ein Angler fängt einen markierten Fisch. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(B) = 0.50$$\n\n$$P(T) = 0.30$$\n\n$$P(C) = 0.20$$\n\n$$P(G \\mid B) = 0.03$$\n\n$$P(G \\mid T) = 0.05$$\n\n$$P(G \\mid C) = 0.08$$\n\n$$P(G) = P(G \\mid B)P(B) + P(G \\mid T)P(T) + P(G \\mid C)P(C)$$\n\n$$P(G) = (0.03)(0.50) + (0.05)(0.30) + (0.08)(0.20)$$\n\n$$P(G) = 0.015 + 0.015 + 0.016$$\n\n$$P(G) = 0.046$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.181",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A Commuter Running Late",
+    "context_en": "On a given workday, a commuter walks to work 20% of the time, bikes 30% of the time, and drives 50% of the time. They arrive late 15% of the time when walking, 8% of the time when biking, and 5% of the time when driving. Today, the commuter arrives late.",
+    "statements_en": [
+      "The probability that the commuter arrives late is greater than 7%.",
+      "The probability that the commuter walked AND arrived late equals 3%.",
+      "The probability that the commuter walked, given they arrived late is greater than 40%.",
+      "The probability that the commuter arrives on time equals 1 minus the probability that the commuter arrives late.",
+      "The probability that the commuter biked, given they arrived late is less than the probability that the commuter drove, given they arrived late."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that the commuter arrives late is calculated using the Law of Total Probability, summing the weighted probabilities of being late for each mode of transport.\n\n$$\nP(\\text{Late}) = 0.079\n$$\n\nThe claim states that $P(\\text{Late})$ is greater than $7\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the commuter walked and arrived late is a joint probability. We compute this using the definition of conditional probability: $P(A \\cap B) = P(A)P(B \\mid A)$.\n\nWe are given $P(\\text{Wa}) = 0.20$ and $P(\\text{Late} \\mid \\text{Wa}) = 0.15$.\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = P(\\text{Wa}) \\cdot P(\\text{Late} \\mid \\text{Wa})\n$$\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = (0.20)(0.15)\n$$\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = 0.030\n$$\n\nThe claim states this probability equals $3\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the commuter walked, given they arrived late, is a conditional probability. We calculate this using Bayes' Theorem, which states $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$.\n\nWe need $P(\\text{Wa} \\mid \\text{Late})$. We have $P(\\text{Wa} \\cap \\text{Late}) = 0.030$ from statement B, and $P(\\text{Late}) = 0.079$ from the solution overview.\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) = \\frac{P(\\text{Wa} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) = \\frac{0.030}{0.079}\n$$\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) \\approx 0.3797\n$$\n\nThe claim states that this probability is greater than $40\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event of arriving on time and the event of arriving late are complementary. This means that one or the other must occur, and they cannot both occur simultaneously. Therefore, their probabilities sum to 1.\n\n$$\nP(\\text{on time}) + P(\\text{Late}) = 1\n$$\n\n$$\nP(\\text{on time}) = 1 - P(\\text{Late})\n$$\n\nThis is the definition of complementary events.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis statement compares two conditional probabilities: $P(\\text{Bi} \\mid \\text{Late})$ and $P(\\text{Dr} \\mid \\text{Late})$. We need to calculate both using Bayes' Theorem.\n\nFor biking, given late:\n\n$$\nP(\\text{Bi} \\mid \\text{Late}) = \\frac{P(\\text{Bi} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\nFirst, calculate the joint probability $P(\\text{Bi} \\cap \\text{Late})$:\n\n$$\nP(\\text{Bi} \\cap \\text{Late}) = P(\\text{Bi}) \\cdot P(\\text{Late} \\mid \\text{Bi})\n$$\n\n$$\nP(\\text{Bi} \\cap \\text{Late}) = (0.30)(0.08) = 0.024\n$$\n\nThen, substitute into Bayes' Theorem:\n\n$$\nP(\\text{Bi} \\mid \\text{Late}) = \\frac{0.024}{0.079}\n$$\n\n$$\n\\approx 0.3038\n$$\n\nFor driving, given late:\n\n$$\nP(\\text{Dr} \\mid \\text{Late}) = \\frac{P(\\text{Dr} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\nFirst, calculate the joint probability $P(\\text{Dr} \\cap \\text{Late})$:\n\n$$\nP(\\text{Dr} \\cap \\text{Late}) = P(\\text{Dr}) \\cdot P(\\text{Late} \\mid \\text{Dr})\n$$\n\n$$\nP(\\text{Dr} \\cap \\text{Late}) = (0.50)(0.05) = 0.025\n$$\n\nThen, substitute into Bayes' Theorem:\n\n$$\nP(\\text{Dr} \\mid \\text{Late}) = \\frac{0.025}{0.079}\n$$\n\n$$\n\\approx 0.3165\n$$\n\nThe claim is $P(\\text{Bi} \\mid \\text{Late}) < P(\\text{Dr} \\mid \\text{Late})$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A commuter chooses among three modes of transport: walking (Wa), biking (Bi), or driving (Dr). Each mode has a given probability of being chosen, and a conditional probability of the commuter arriving late (Late) when that mode is used. We are also given that the commuter has arrived late.\n\nWe define the given probabilities:\n$P(\\text{Wa}) = 0.20$\n$P(\\text{Bi}) = 0.30$\n$P(\\text{Dr}) = 0.50$\n\nConditional probabilities of arriving late:\n$P(\\text{Late} \\mid \\text{Wa}) = 0.15$\n$P(\\text{Late} \\mid \\text{Bi}) = 0.08$\n$P(\\text{Late} \\mid \\text{Dr}) = 0.05$\n\nTo find the overall probability of arriving late, $P(\\text{Late})$, we use the Law of Total Probability:\n$$P(\\text{Late}) = P(\\text{Wa})P(\\text{Late} \\mid \\text{Wa}) + P(\\text{Bi})P(\\text{Late} \\mid \\text{Bi}) + P(\\text{Dr})P(\\text{Late} \\mid \\text{Dr})$$\n$$P(\\text{Late}) = (0.20)(0.15) + (0.30)(0.08) + (0.50)(0.05)$$\n$$P(\\text{Late}) = 0.030 + 0.024 + 0.025$$\n$$P(\\text{Late}) = 0.079$$\n\nThis overall probability of arriving late, $0.079$, will be used in subsequent calculations involving conditional probabilities given that the commuter arrived late.",
+    "title_de_existing": "Ein verspäteter Pendler",
+    "context_de_existing": "An einem Arbeitstag geht ein Pendler zu 20% zu Fuß, fährt zu 30% mit dem Fahrrad und zu 50% mit dem Auto. Er kommt zu Fuß in 15%, mit dem Fahrrad in 8% und mit dem Auto in 5% der Fälle zu spät. Heute kommt der Pendler zu spät.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass der Pendler zu spät kommt, ist größer als 7%.",
+      "Die Wahrscheinlichkeit, dass der Pendler zu Fuß ging und zu spät kam, beträgt 3%.",
+      "Die Wahrscheinlichkeit, dass der Pendler zu Fuß ging, gegeben Verspätung, ist größer als 40%.",
+      "Die Wahrscheinlichkeit, dass der Pendler pünktlich ankommt, ist gleich 1 minus der Wahrscheinlichkeit der Verspätung.",
+      "Die Wahrscheinlichkeit, dass der Pendler mit dem Fahrrad fuhr, gegeben Verspätung, ist kleiner als die Wahrscheinlichkeit, dass er mit dem Auto fuhr, gegeben Verspätung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass der Pendler zu spät kommt, ist größer als 7%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{Late}) = 0.079\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Pendler zu Fuß ging und zu spät kam, beträgt 3%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = P(\\text{Wa}) \\cdot P(\\text{Late} \\mid \\text{Wa})\n$$\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = (0.20)(0.15)\n$$\n\n$$\nP(\\text{Wa} \\cap \\text{Late}) = 0.030\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Pendler zu Fuß ging, gegeben Verspätung, ist größer als 40%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) = \\frac{P(\\text{Wa} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) = \\frac{0.030}{0.079}\n$$\n\n$$\nP(\\text{Wa} \\mid \\text{Late}) \\approx 0.3797\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Pendler pünktlich ankommt, ist gleich 1 minus der Wahrscheinlichkeit der Verspätung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{on time}) + P(\\text{Late}) = 1\n$$\n\n$$\nP(\\text{on time}) = 1 - P(\\text{Late})\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Pendler mit dem Fahrrad fuhr, gegeben Verspätung, ist kleiner als die Wahrscheinlichkeit, dass er mit dem Auto fuhr, gegeben Verspätung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{Bi} \\mid \\text{Late}) = \\frac{P(\\text{Bi} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\n$$\nP(\\text{Bi} \\cap \\text{Late}) = P(\\text{Bi}) \\cdot P(\\text{Late} \\mid \\text{Bi})\n$$\n\n$$\nP(\\text{Bi} \\cap \\text{Late}) = (0.30)(0.08) = 0.024\n$$\n\n$$\nP(\\text{Bi} \\mid \\text{Late}) = \\frac{0.024}{0.079}\n$$\n\n$$\n\\approx 0.3038\n$$\n\n$$\nP(\\text{Dr} \\mid \\text{Late}) = \\frac{P(\\text{Dr} \\cap \\text{Late})}{P(\\text{Late})}\n$$\n\n$$\nP(\\text{Dr} \\cap \\text{Late}) = P(\\text{Dr}) \\cdot P(\\text{Late} \\mid \\text{Dr})\n$$\n\n$$\nP(\\text{Dr} \\cap \\text{Late}) = (0.50)(0.05) = 0.025\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "An einem Arbeitstag geht ein Pendler zu 20% zu Fuß, fährt zu 30% mit dem Fahrrad und zu 50% mit dem Auto. Er kommt zu Fuß in 15%, mit dem Fahrrad in 8% und mit dem Auto in 5% der Fälle zu spät. Heute kommt der Pendler zu spät. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(\\text{Late}) = P(\\text{Wa})P(\\text{Late} \\mid \\text{Wa}) + P(\\text{Bi})P(\\text{Late} \\mid \\text{Bi}) + P(\\text{Dr})P(\\text{Late} \\mid \\text{Dr})$$\n\n$$P(\\text{Late}) = (0.20)(0.15) + (0.30)(0.08) + (0.50)(0.05)$$\n\n$$P(\\text{Late}) = 0.030 + 0.024 + 0.025$$\n\n$$P(\\text{Late}) = 0.079$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  }
+]

@@ -1,0 +1,114 @@
+CASE MATH 11.84
+ANSWER [true, true, true, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+The two campaign scores near intensity zero are pure fourth powers of opposite sign:
+
+$$A(x)=x^{4},\qquad B(x)=-x^{4}.$$
+
+Differentiate each twice:
+
+$$A'(x)=4x^{3},\quad A''(x)=12x^{2},$$
+
+$$B'(x)=-4x^{3},\quad B''(x)=-12x^{2}.$$
+
+At $x=0$ both first and second derivatives vanish for each score, so the usual second-derivative bend test is inconclusive. Nearby comparison still classifies the points: for every $x\neq 0$,
+
+$$A(x)=x^{4}>0=A(0),\qquad B(x)=-x^{4}<0=B(0),$$
+
+so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishing of $A''$ and $B''$ does not forbid those extrema.
+
+=== A ===
+**A.** → True
+
+Differentiate each score twice and evaluate at intensity zero. For $A(x)=x^{4}$:
+
+$$
+A'(x) = 4x^{3}
+$$
+
+$$
+A''(x) = 12x^{2}
+$$
+
+so $A'(0)=0$ and $A''(0)=0$. For $B(x)=-x^{4}$:
+
+$$
+B'(x) = -4x^{3}
+$$
+
+$$
+B''(x) = -12x^{2}
+$$
+
+so $B'(0)=0$ and $B''(0)=0$. Both scores therefore have a flat slope *and* a flat second derivative at zero.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+The usual second-derivative test needs a strictly negative bend (local peak) or a strictly positive bend (local trough). Here
+
+$$
+A''(0) = 0
+$$
+
+$$
+B''(0) = 0
+$$
+
+so neither bend is strictly signed. The bend test alone therefore cannot classify either critical point — the check is inconclusive for both scores.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+Even though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\neq 0$,
+
+$$
+A(x) = x^{4}>0
+$$
+
+$$
+A(x) = A(0).
+$$
+
+So nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison.
+
+$$
+A''(0) = 0
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== D ===
+**D.** → True
+
+Likewise for the opposite-sign fourth power: for every $x\neq 0$,
+
+$$
+B(x) = -x^{4}<0
+$$
+
+$$
+B(x) = B(0).
+$$
+
+Nearby values sit strictly below the value at zero, so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there. Direct comparison classifies what the bend test could not.
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”.
+
+So the statement is False.
+

@@ -1,0 +1,67 @@
+[
+  {
+    "ch": 1,
+    "cases_need": 99,
+    "packs": 5
+  },
+  {
+    "ch": 2,
+    "cases_need": 4,
+    "packs": 1
+  },
+  {
+    "ch": 3,
+    "cases_need": 4,
+    "packs": 1
+  },
+  {
+    "ch": 4,
+    "cases_need": 11,
+    "packs": 1
+  },
+  {
+    "ch": 5,
+    "cases_need": 1,
+    "packs": 1
+  },
+  {
+    "ch": 6,
+    "cases_need": 38,
+    "packs": 2
+  },
+  {
+    "ch": 7,
+    "cases_need": 4,
+    "packs": 1
+  },
+  {
+    "ch": 8,
+    "cases_need": 14,
+    "packs": 1
+  },
+  {
+    "ch": 9,
+    "cases_need": 68,
+    "packs": 4
+  },
+  {
+    "ch": 10,
+    "cases_need": 3,
+    "packs": 1
+  },
+  {
+    "ch": 11,
+    "cases_need": 198,
+    "packs": 10
+  },
+  {
+    "ch": 12,
+    "cases_need": 212,
+    "packs": 11
+  },
+  {
+    "ch": 13,
+    "cases_need": 62,
+    "packs": 4
+  }
+]

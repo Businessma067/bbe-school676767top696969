@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.51",
+    "title": "Orientation Starting Points in Marketing",
+    "context": "Review product versus market orientation as competing starting points within the same broader marketing framework. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at furniture manufacturers requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "CRM programmes may use posted coupon mailings to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to foster continuity rather than one-off sales among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Posted coupon mailings within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.52",
+    "title": "Mailing Tailored Product Information",
+    "context": "Consider a dental practice that emails appointment reminders and oral-care product information to patients who joined its membership scheme. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use loyalty-card discount alerts to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Loyalty-card discount alerts within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.53",
+    "title": "Loyalty Mechanisms and Identifiable Data",
+    "context": "Review loyalty mechanisms through which customers exchange identifiable data for discounts and preferential offers. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use loyalty-card discount alerts to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use loyalty-card discount alerts to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Loyalty-card discount alerts within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty-card discount alerts within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.54",
+    "title": "Personalised Promotions From Behaviour Data",
+    "context": "Analyze tailoring promotional content to personal preferences after collecting behavioural purchase data. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use personalised product-information emails to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "Loyalty programmes at furniture manufacturers preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use personalised product-information emails to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Personalised product-information emails within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personalised product-information emails within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.55",
+    "title": "Specifications Before Selling Plans",
+    "context": "Review the product-oriented sequence of defining specifications before considering how the offering will be sold. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use personalised product-information emails to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use personalised product-information emails to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Personalised product-information emails within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personalised product-information emails within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Registered-account promotional messages within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.56",
+    "title": "Customer Analysis Before Design Choices",
+    "context": "Consider a catering business that prioritises recipe refinement and portion consistency before surveying corporate clients about menu preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "furniture manufacturers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "CRM programmes may use registered-account promotional messages to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Market-oriented furniture manufacturers always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use registered-account promotional messages to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to support repeat purchasing behaviour among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Registered-account promotional messages within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Registered-account promotional messages within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Registered-account promotional messages within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.57",
+    "title": "Later Response by Product-Oriented Rivals",
+    "context": "Review competitive dynamics when product-oriented rivals respond later to shifts already anticipated by market-oriented firms. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "Product-oriented furniture manufacturers never rely on feature quality and depend only on coupons without strong offerings.",
+      "online grocery platforms using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "online grocery platforms practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "online grocery platforms with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Registered-account promotional messages within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.58",
+    "title": "Profitability Targets Across Orientations",
+    "context": "Analyze identical objective sets—such as profitability targets—across firms with different orientation starting points. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM at online grocery platforms requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "CRM programmes may use registered-account promotional messages to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use registered-account promotional messages to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "Loyalty programmes at online grocery platforms preserve complete customer anonymity while still delivering personalised coupons."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Registered-account promotional messages within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Registered-account promotional messages within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Registered-account promotional messages within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.59",
+    "title": "Product and Competitor Orientation Factors",
+    "context": "Review orientation suitability judgments tied to product characteristics and competitive market structure. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use registered-account promotional messages to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "online grocery platforms cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "CRM programmes may use repeat-stay offer notifications to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Market-oriented online grocery platforms always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Registered-account promotional messages within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repeat-stay offer notifications within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Repeat-stay offer notifications within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.60",
+    "title": "CRM Beyond Immediate Transactions",
+    "context": "Consider a travel agency that records family holiday preferences so it can propose tailored package deals when school vacations approach. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use repeat-stay offer notifications to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "Product-oriented online grocery platforms never rely on feature quality and depend only on coupons without strong offerings.",
+      "fitness studio operators using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use repeat-stay offer notifications to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat-stay offer notifications within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repeat-stay offer notifications within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Repeat-stay offer notifications within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.61",
+    "title": "Personal Data in Identifiable CRM Systems",
+    "context": "Review personal data sensitivity as an indispensable concern when CRM systems store identifiable customer information. Evaluate the following economic assertions:",
+    "statements": [
+      "fitness studio operators practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use repeat-stay offer notifications to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "fitness studio operators with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at fitness studio operators requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at fitness studio operators preserve complete customer anonymity while still delivering personalised coupons."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Repeat-stay offer notifications within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.62",
+    "title": "Account Registration for Loyalty Benefits",
+    "context": "Analyze customer willingness to register personal accounts when loyalty benefits offset reduced anonymity. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use repeat-stay offer notifications to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "CRM programmes may use repeat-stay offer notifications to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "fitness studio operators cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented fitness studio operators always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use repeat-stay offer notifications to foster continuity rather than one-off sales among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat-stay offer notifications within CRM can build durable commercial relationships with buyers when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repeat-stay offer notifications within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Repeat-stay offer notifications within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.63",
+    "title": "Behavioural Records for Offer Design",
+    "context": "Review behavioural data collection practices that support customised offers aligned with prior purchasing patterns. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use membership-scheme communications to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "Product-oriented fitness studio operators never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use membership-scheme communications to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use membership-scheme communications to support repeat purchasing behaviour among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Membership-scheme communications within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Membership-scheme communications within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Membership-scheme communications within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Membership-scheme communications within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.64",
+    "title": "Internal Feature Priorities in Production",
+    "context": "Consider a fashion retailer that surveys changing style preferences each season before commissioning new garment lines from suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "corporate catering firms using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use membership-scheme communications to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "corporate catering firms practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "corporate catering firms with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Membership-scheme communications within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Membership-scheme communications within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.65",
+    "title": "External Requirements in Market Orientation",
+    "context": "Review market orientation focus on external customer requirements when shaping product and service bundles. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at corporate catering firms requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at corporate catering firms preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use membership-scheme communications to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "corporate catering firms cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented corporate catering firms always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Membership-scheme communications within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.66",
+    "title": "Universal Market Expectation Attention",
+    "context": "Analyze the marketing assertion that markets and customer expectations should not be neglected by any orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented corporate catering firms never rely on feature quality and depend only on coupons without strong offerings.",
+      "independent bookshops using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "independent bookshops practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use membership-scheme communications to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "independent bookshops with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Membership-scheme communications within CRM can build durable commercial relationships with buyers when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.67",
+    "title": "Newsletter-Led Repeat Purchase Encouragement",
+    "context": "Review CRM-enabled repeat purchase encouragement through ongoing newsletters and targeted coupon distribution. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use membership-scheme communications to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM at independent bookshops requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at independent bookshops preserve complete customer anonymity while still delivering personalised coupons.",
+      "CRM programmes may use membership-scheme communications to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "independent bookshops cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Membership-scheme communications within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Membership-scheme communications within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.68",
+    "title": "Sensitive Data Rules for Loyalty Programmes",
+    "context": "Consider a furniture workshop that invests in craftsmanship and material quality before researching whether buyers want modular or traditional designs. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use targeted coupon distributions to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Targeted coupon distributions within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.69",
+    "title": "Preference-Matched Promotional Targeting",
+    "context": "Review tailored offer logic when businesses match promotions to recorded individual customer preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use targeted coupon distributions to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use targeted coupon distributions to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "Market-oriented independent bookshops always respond later to changing wants because they wait for finished specifications."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Targeted coupon distributions within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Targeted coupon distributions within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.70",
+    "title": "Feature Superiority Beliefs in Product Orientation",
+    "context": "Analyze product-oriented belief that superior features reduce the need for extensive customer adaptation. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use seasonal reminder mailings to keep customers informed about relevant products among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Seasonal reminder mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal reminder mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal reminder mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal reminder mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal reminder mailings within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.71",
+    "title": "Evolving Needs and Offer Adjustment",
+    "context": "Review market-oriented practice of adjusting offerings when evidence shows evolving customer needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "Product-oriented independent bookshops never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use seasonal reminder mailings to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "vehicle service garages using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use seasonal reminder mailings to prompt additional visits through informed contact among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Seasonal reminder mailings within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Seasonal reminder mailings within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Seasonal reminder mailings within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.72",
+    "title": "CRM Data for Customer Communication",
+    "context": "Consider a bookshop that analyses reading-category sales data before deciding which new titles to stock for the coming quarter. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use seasonal reminder mailings to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "vehicle service garages practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use tailored upgrade suggestions to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to strengthen long-term customer relationships among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Seasonal reminder mailings within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Tailored upgrade suggestions within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored upgrade suggestions within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored upgrade suggestions within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.73",
+    "title": "Identification for Discount Access",
+    "context": "Review personal data trade-offs where customers accept identification for discounts and special promotional access. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use tailored upgrade suggestions to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly.",
+      "vehicle service garages with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at vehicle service garages requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Tailored upgrade suggestions within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored upgrade suggestions within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored upgrade suggestions within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.74",
+    "title": "Buying Patterns in Marketing Tailoring",
+    "context": "Analyze buying-behaviour records as a basis for personalised marketing communication and offer design. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at vehicle service garages preserve complete customer anonymity while still delivering personalised coupons.",
+      "vehicle service garages cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented vehicle service garages always respond later to changing wants because they wait for finished specifications.",
+      "CRM programmes may use tailored upgrade suggestions to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "Product-oriented vehicle service garages never rely on feature quality and depend only on coupons without strong offerings."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Tailored upgrade suggestions within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.75",
+    "title": "Decades of Orientation Movement",
+    "context": "Review decades-long business movement from specification-led product orientation towards needs-led market orientation. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use tailored upgrade suggestions to build durable commercial relationships with buyers among customers whose data the business retains responsibly.",
+      "CRM programmes may use tailored upgrade suggestions to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "cosmetics producers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "cosmetics producers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "cosmetics producers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Tailored upgrade suggestions within CRM can build durable commercial relationships with buyers when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored upgrade suggestions within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

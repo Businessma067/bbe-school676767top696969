@@ -1,0 +1,138 @@
+CASE MATH 11.81
+ANSWER [true, true, true, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Daily profit is the concrete quadratic
+
+$$P(Q)=-Q^{2}+12Q-20,\qquad Q\ge 0.$$
+
+Differentiate once for the slope of profit and again for the bend:
+
+$$P'(Q)=-2Q+12,\qquad P''(Q)=-2.$$
+
+An interior candidate solves the flat-slope equation $P'(Q)=0$, which forces the unique non-negative root $Q=6$. Because $P''=-2<0$ everywhere, that flat point is a strict local profit peak. Substituting the peak output into the *level* (not the slope) gives
+
+$$P(6)=-36+72-20=16,$$
+
+so six lamps yield $16$ euros of daily profit. A zero slope never forces the profit level itself to be zero — slope and height are different objects.
+
+=== A ===
+**A.** → True
+
+To read how profit changes with lamps sold, differentiate the given daily-profit rule term by term. Starting from
+
+$$
+P(Q) = -Q^{2}+12Q-20,
+$$
+
+the power rule yields
+
+$$
+P'(Q) = -2Q+12.
+$$
+
+That derivative *is* the slope of daily profit (marginal profit). It matches the claimed formula exactly — no extra constant term appears.
+
+$$
+P'(Q) = -2Q+12
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+An interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:
+
+$$
+P'(Q) = -2Q+12 = 0
+$$
+
+$$
+2Q = 12
+$$
+
+$$
+Q = 6.
+$$
+
+On the domain $Q\ge 0$ this linear equation has exactly one root. There is no second candidate hiding at another positive output, so six lamps is the unique flat-slope daily output.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+A flat slope alone does not yet say peak versus trough. The second derivative reads the bend of the profit curve at that critical output:
+
+$$
+P''(Q) = -2
+$$
+
+$$
+P''(6) = -2<0.
+$$
+
+A strictly negative second derivative means the curve bends strictly downward through the flat spot, which is the second-derivative test for a local maximum. Therefore $Q=6$ is a local profit peak.
+
+$$
+Q = 6
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== D ===
+**D.** → True
+
+Once the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:
+
+$$
+P(6) = -6^{2}+12\cdot 6-20
+$$
+
+$$
+P(6) = -36+72-20
+$$
+
+$$
+-36 + 72 = 36
+$$
+
+$$
+36 - 20 = 16
+$$
+
+$$
+P(6) = 16
+$$
+
+Daily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for.
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+A flat slope describes how profit *changes* at that output, not how large profit *is*. The first-order condition $P'(6)=0$ only says the tangent is horizontal; it says nothing about the height $P(6)$. Evaluating the level separately gives
+
+$$
+P(6) = 16\neq 0.
+$$
+
+Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —.
+
+$$
+P'(6) = 0
+$$
+
+which does not match the claim.
+
+So the statement is False.
+

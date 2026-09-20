@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.01",
+    "title": "Sole Proprietorship Ownership and Management",
+    "context": "Analyze how a sole proprietorship concentrates ownership and operational control in a single individual. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship is a business owned by one person who also manages and runs the business.",
+      "The sole proprietor can make all management decisions without necessarily having to consider other opinions.",
+      "Because the business is not a legal entity of its own, profits are reported on the owner's personal income tax statement.",
+      "A sole proprietorship is a separate legal person that files corporate income tax independently of the owner.",
+      "Retirement or long-term illness of the sole proprietor may create continuity problems for the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Ownership and day-to-day management rest with a single proprietor.\n\nApplied carefully, \"A sole proprietorship is a business owned by one person who also manages and runs the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Centralised control allows the proprietor to decide without mandatory consultation.\n\nApplied carefully, \"The sole proprietor can make all management decisions without necessarily having to consider other opinions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Without separate legal personality, business profits are taxed as personal income.\n\nApplied carefully, \"Because the business is not a legal entity of its own, profits are reported on the owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "A sole proprietorship lacks separate legal personality and is not taxed as a corporation.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Dependence on one manager creates continuity risk when the proprietor retires or falls ill.\n\nApplied carefully, \"Retirement or long-term illness of the sole proprietor may create continuity problems for the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.02",
+    "title": "Establishment Requirements and Liability Exposure",
+    "context": "Consider a neighbourhood bakery operated as a sole proprietorship with one owner-manager and a small team of assistants. Evaluate the following economic assertions:",
+    "statements": [
+      "Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business.",
+      "Limited liability protects the sole proprietor's private assets so creditors may claim only assets formally recorded as business property.",
+      "Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid.",
+      "Incorporating as a sole proprietorship grants the owner limited liability equal to the capital originally invested.",
+      "Trade credit from suppliers eliminates the sole proprietor's liability for those purchase obligations."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "No minimum capital requirement makes sole proprietorships straightforward to set up.\n\nApplied carefully, \"Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietors face unlimited liability; private assets are also at stake.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Personal assets can be used to satisfy creditors when business funds fall short.\n\nApplied carefully, \"Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietorships remain unincorporated and carry unlimited, not limited, liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Trade credit is a liability the sole proprietor must repay according to the supplier agreement.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.03",
+    "title": "Legal Status and Tax Treatment",
+    "context": "Review the legal and fiscal position of a sole proprietorship compared with incorporated business forms. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship is not a legal entity of its own separate from the business owner.",
+      "The owner pays tax on the profits that are earned from the business through the personal income tax statement.",
+      "Management of the business largely depends on the sole proprietor, who retains responsibility for the most important decisions.",
+      "Because profits pass directly to the owner for tax purposes, the business cannot hire employees or enter supplier contracts.",
+      "If the sole proprietor needs support, he or she can hire personnel while still bearing the central management role."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The firm lacks independent legal personality distinct from its owner.\n\nApplied carefully, \"A sole proprietorship is not a legal entity of its own separate from the business owner\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Business profits are assessed as the proprietor's personal taxable income.\n\nApplied carefully, \"The owner pays tax on the profits that are earned from the business through the personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Key strategic and management choices remain with the sole proprietor.\n\nApplied carefully, \"Management of the business largely depends on the sole proprietor, who retains responsibility for the most important decisions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Lack of separate legal personality does not prevent hiring staff or contracting with suppliers.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Personnel may be employed, yet the proprietor keeps ultimate decision authority and risk.\n\nApplied carefully, \"If the sole proprietor needs support, he or she can hire personnel while still bearing the central management role\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.04",
+    "title": "Single Owner Control and Staffing",
+    "context": "Analyze management authority within a sole proprietorship when the owner employs assistants for daily operations. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor may hire personnel when additional support is required to run the business.",
+      "Hiring staff transfers unlimited liability for business debts entirely to the employees rather than the owner.",
+      "Even with hired personnel, it remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "The sole proprietor can make all management decisions and does not necessarily have to consider other opinions.",
+      "Continuity of the business may be disrupted when the sole proprietor cannot continue managing due to long-term illness."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Sole proprietors may recruit employees to support operations.\n\nApplied carefully, \"The sole proprietor may hire personnel when additional support is required to run the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Employees do not assume the proprietor's unlimited liability for business obligations.\n\nThe absolute wording \"entirely\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Ultimate decisions and business risk stay with the sole proprietor despite hired help.\n\nApplied carefully, \"Even with hired personnel, it remains the sole proprietor's task to make the most important management decisions and take all the risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Centralised authority allows unilateral management choices.\n\nApplied carefully, \"The sole proprietor can make all management decisions and does not necessarily have to consider other opinions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reliance on one manager creates continuity risk during prolonged absence.\n\nApplied carefully, \"Continuity of the business may be disrupted when the sole proprietor cannot continue managing due to long-term illness\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.05",
+    "title": "Misconceptions About Sole Trader Status",
+    "context": "Review common claims about what sole proprietorship status implies for liability, taxation, and legal personality. Evaluate the following economic assertions:",
+    "statements": [
+      "Registering a business name as a sole proprietorship converts the firm into an incorporated legal person with its own tax identity.",
+      "Profits earned by a sole proprietorship are directly reported on the business owner's personal income tax statement.",
+      "A sole proprietorship requires substantial minimum share capital before the owner may begin trading legally.",
+      "Limited liability protects a sole proprietor's private home from creditors when business debts exceed available firm assets.",
+      "Two persons who wish to share tasks and risk equally should choose a sole proprietorship rather than a partnership."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "A sole proprietorship remains unincorporated and is not a separate legal entity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Without corporate personality, profits are taxed as the owner's personal income.\n\nApplied carefully, \"Profits earned by a sole proprietorship are directly reported on the business owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "There are no financial requirements to start a sole proprietorship.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Sole proprietors face unlimited liability; private assets are also at stake.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Shared ownership and equal responsibilities align with a partnership structure, not sole tradership.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.06",
+    "title": "Continuity Risk and Decision Authority",
+    "context": "Consider operational continuity when a sole trader plans retirement after years of running a local repair workshop. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship automatically continues unchanged when the owner retires without any transfer arrangement.",
+      "Continuity problems may occur if the sole proprietor wants to retire or suffers a long-term illness.",
+      "Because one person owns and manages the firm, succession planning is always simpler than in structures with transferable shares.",
+      "Retirement of the sole proprietor has no effect on business continuity because staff can legally assume ownership without transfer.",
+      "The management of the business largely depends on the sole proprietor, who retains the most important decision rights."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Business continuity depends on the proprietor; retirement creates continuity problems without transfer.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Single-person dependence creates vulnerability at retirement or prolonged illness.\n\nApplied carefully, \"Continuity problems may occur if the sole proprietor wants to retire or suffers a long-term illness\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Lack of separate shares or partners can complicate orderly succession.\n\nThe absolute wording \"always\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Staff cannot automatically become owners; ownership rests with the sole proprietor.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Central management authority remains with the sole proprietor throughout operations.\n\nApplied carefully, \"The management of the business largely depends on the sole proprietor, who retains the most important decision rights\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.07",
+    "title": "Unlimited Liability in Practice",
+    "context": "Analyze how creditor claims against a failing sole proprietorship may extend beyond business assets. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor is liable for all debts and obligations of the business under unlimited liability.",
+      "Unlimited liability applies only to short-term trade credit and not to long-term bank loans secured by property.",
+      "Creditors usually ask for assets that can serve as collateral, especially for long-term credit.",
+      "Private assets of the sole proprietor are also at stake if the business fails and debts need to be repaid.",
+      "Pledging collateral for a bank loan fully exempts all remaining private assets from any further creditor claims."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Unlimited liability makes the proprietor responsible for all business debts.\n\nApplied carefully, \"The sole proprietor is liable for all debts and obligations of the business under unlimited liability\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability covers all debts and obligations, including long-term secured credit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Long-term lenders commonly demand collateral such as land or property.\n\nApplied carefully, \"Creditors usually ask for assets that can serve as collateral, especially for long-term credit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Creditors may reach personal property when business funds are insufficient.\n\nApplied carefully, \"Private assets of the sole proprietor are also at stake if the business fails and debts need to be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Collateral reduces lender risk but does not remove broader unlimited liability exposure.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.08",
+    "title": "Personal Taxation of Business Profits",
+    "context": "Review how fiscal treatment links sole proprietorship earnings to the owner's personal tax affairs. Evaluate the following economic assertions:",
+    "statements": [
+      "Because the sole proprietorship is not a legal entity, profits are reported on the owner's personal income tax statement.",
+      "Operating as a sole proprietorship exempts the owner from income tax on business profits entirely.",
+      "The owner pays tax on the profits earned from the business rather than through a separate corporate tax return.",
+      "Business profits and the proprietor's other personal income may appear on the same personal tax assessment.",
+      "Separate legal personality is required before profits can be taxed as personal income of the owner."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Absence of corporate personality routes profits to personal taxation.\n\nApplied carefully, \"Because the sole proprietorship is not a legal entity, profits are reported on the owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Business profits remain taxable as the owner's personal income.\n\nThe absolute wording \"entirely\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "The proprietor pays income tax on business earnings as personal income.\n\nApplied carefully, \"The owner pays tax on the profits earned from the business rather than through a separate corporate tax return\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Combined personal reporting reflects the unincorporated structure.\n\nApplied carefully, \"Business profits and the proprietor's other personal income may appear on the same personal tax assessment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietorships lack separate legal personality yet profits are taxed personally.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.09",
+    "title": "Core Features of Sole Trader Businesses",
+    "context": "Analyze the defining characteristics of sole proprietorship as described in business ownership theory. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners.",
+      "Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start.",
+      "The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement.",
+      "Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid.",
+      "If the sole proprietor needs support, personnel may be hired while the proprietor retains key management decisions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "One person owns and runs the business in a sole proprietorship.\n\nApplied carefully, \"A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Minimal formal capital requirements facilitate establishment.\n\nApplied carefully, \"Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Profits flow to the owner's personal tax without corporate separation.\n\nApplied carefully, \"The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Creditors may reach personal property under unlimited liability.\n\nApplied carefully, \"Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Staff may assist operations but the proprietor keeps decisive authority.\n\nApplied carefully, \"If the sole proprietor needs support, personnel may be hired while the proprietor retains key management decisions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.10",
+    "title": "Legal Personality and Liability Distinctions",
+    "context": "Review distinctions between unincorporated sole traders and incorporated companies regarding legal status and creditor protection. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name.",
+      "Profits of a sole proprietorship are reported on the business owner's personal income tax statement.",
+      "Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid.",
+      "Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses.",
+      "Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Without incorporation, the business is not an independent legal person.\n\nApplied carefully, \"A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Taxation follows the owner personally because there is no separate entity.\n\nApplied carefully, \"Profits of a sole proprietorship are reported on the business owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability exposes personal wealth to business failure.\n\nApplied carefully, \"Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "No minimum capital requirement lowers barriers to starting a sole tradership.\n\nApplied carefully, \"Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Dependence on one manager creates continuity risk.\n\nApplied carefully, \"Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.11",
+    "title": "Management Concentration and Risk Bearing",
+    "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor can make all management decisions without necessarily consulting other owners.",
+      "It remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "Management of the business largely depends on the sole proprietor rather than on a separate board of directors.",
+      "Even when administrative tasks are delegated, the proprietor retains authority over the most important management decisions.",
+      "Hiring personnel means the employees rather than the proprietor decide the firm's strategic direction."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "No co-owners require consultation for management choices.\n\nApplied carefully, \"The sole proprietor can make all management decisions without necessarily consulting other owners\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Ultimate decisions and risk remain with the sole proprietor.\n\nApplied carefully, \"It remains the sole proprietor's task to make the most important management decisions and take all the risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "There is no corporate board; the proprietor directs the firm.\n\nApplied carefully, \"Management of the business largely depends on the sole proprietor rather than on a separate board of directors\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Delegation of routine work does not remove the proprietor's decisive role.\n\nApplied carefully, \"Even when administrative tasks are delegated, the proprietor retains authority over the most important management decisions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Employees execute tasks; strategic authority stays with the proprietor.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.12",
+    "title": "Establishment Ease and Business Continuity",
+    "context": "Analyze why sole proprietorships appeal for small start-ups yet pose succession challenges over time. Evaluate the following economic assertions:",
+    "statements": [
+      "Sole proprietorships are easy to establish because there are no financial requirements to start this kind of business.",
+      "A sole proprietorship is owned and managed by one person who bears the central operational responsibility.",
+      "Stepping away through retirement or prolonged illness may interrupt continuity in a sole proprietorship.",
+      "Extra money can be sought from investors and/or from banks when personal funds prove insufficient.",
+      "Because the firm is not a legal entity, profits are taxed on the owner's personal income tax statement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Minimal entry barriers make sole tradership accessible for small ventures.\n\nApplied carefully, \"Sole proprietorships are easy to establish because there are no financial requirements to start this kind of business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Single ownership and management define the structure.\n\nApplied carefully, \"A sole proprietorship is owned and managed by one person who bears the central operational responsibility\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reliance on one individual creates succession and continuity risk.\n\nApplied carefully, \"Stepping away through retirement or prolonged illness may interrupt continuity in a sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Investors and banks can supply finance when personal resources are insufficient.\n\nApplied carefully, \"Extra money can be sought from investors and/or from banks when personal funds prove insufficient\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unincorporated status routes profits to personal taxation.\n\nApplied carefully, \"Because the firm is not a legal entity, profits are taxed on the owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.13",
+    "title": "Creditor Claims and Collateral Exposure",
+    "context": "Review how secured and unsecured borrowing affects a sole proprietor when revenue falls short of repayment obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "Listing a trading name transforms a sole proprietorship into a corporation with its own legal personality.",
+      "A sole proprietorship remains unincorporated even when the owner registers for tax and hires multiple employees.",
+      "The sole proprietor pays personal income tax on business profits because the business is not a legal entity of its own.",
+      "All kinds of credit, short-term as well as long-term, are liabilities for the sole proprietor.",
+      "Collateral requirements apply only to internal sources of finance such as retained profit."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Registration of a name does not create separate legal personality.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Hiring staff and tax registration do not incorporate the business.\n\nApplied carefully, \"A sole proprietorship remains unincorporated even when the owner registers for tax and hires multiple employees\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unincorporated status routes profits to personal income tax.\n\nApplied carefully, \"The sole proprietor pays personal income tax on business profits because the business is not a legal entity of its own\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Every credit arrangement creates a repayment liability for the proprietor.\n\nApplied carefully, \"All kinds of credit, short-term as well as long-term, are liabilities for the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Retained profit is internal finance and involves no creditor collateral.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.14",
+    "title": "Ownership Structure Compared With Partnership",
+    "context": "Analyze when sole proprietorship is appropriate versus partnership for persons planning a jointly managed venture. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship suits one owner who both manages the business and accepts the associated risk.",
+      "A sole proprietorship allows two equal co-owners to divide management rights without a partnership agreement.",
+      "A sole proprietorship is the appropriate structure when several investors seek limited liability through transferable shares.",
+      "Two persons who want to share tasks and risk with equal rights would better realise their business as a partnership.",
+      "Partnerships are unnecessary when two founders can rely on sole proprietorship rules to share ownership equally."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Single ownership and management align with sole tradership.\n\nApplied carefully, \"A sole proprietorship suits one owner who both manages the business and accepts the associated risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietorship has one owner; co-ownership requires a different structure.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Limited liability and share transfer belong to incorporated forms, not sole tradership.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Shared tasks, risk, and equal rights fit a partnership rather than sole ownership.\n\nApplied carefully, \"Two persons who want to share tasks and risk with equal rights would better realise their business as a partnership\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Joint founding with equal rights requires a partnership agreement, not sole tradership.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.15",
+    "title": "Tax Reporting Without Corporate Personality",
+    "context": "Review fiscal consequences when a business lacks separate legal personality from its owner. Evaluate the following economic assertions:",
+    "statements": [
+      "Business profits of an unincorporated sole trader flow directly onto the owner's personal income tax statement.",
+      "The owner pays tax on profits earned from the business because the firm is not a separate legal entity.",
+      "Personal income tax treatment means the sole proprietorship must issue dividends to the owner before tax is due.",
+      "Operating without corporate personality does not exempt the proprietor from tax on business profits.",
+      "A separate corporate tax return is required for every sole proprietorship regardless of legal status."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Unincorporated profits flow to the owner's personal tax.\n\nApplied carefully, \"Business profits of an unincorporated sole trader flow directly onto the owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Absence of legal separation links business profit to personal taxation.\n\nApplied carefully, \"The owner pays tax on profits earned from the business because the firm is not a separate legal entity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Dividends are a corporate concept; sole traders report profits directly as personal income.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Business profits remain taxable even without incorporation.\n\nApplied carefully, \"Operating without corporate personality does not exempt the proprietor from tax on business profits\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietorships report through personal income tax, not a corporate return.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.16",
+    "title": "Liability Scope Across Credit Types",
+    "context": "Consider a sole trader using supplier trade credit, a bank overdraft, and a property-backed long-term loan simultaneously. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit from a supplier never requires repayment because deferred payment is a grant from the supplier.",
+      "Trade credit from a supplier creates a short-term liability that the sole proprietor must honour.",
+      "Long-term bank loans secured by land are excluded from unlimited liability because collateral protects the owner completely.",
+      "If the business fails, private assets are also at stake when debts need to be repaid beyond available business funds.",
+      "All kinds of credit, whether short-term or long-term, remain obligations of the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Trade credit must be repaid within the agreed supplier credit period.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Supplier credit is a payable liability under the agreed terms.\n\nApplied carefully, \"Trade credit from a supplier creates a short-term liability that the sole proprietor must honour\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Collateral reduces lender risk but unlimited liability still exposes the proprietor broadly.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Personal assets can satisfy creditors when business assets are insufficient.\n\nApplied carefully, \"If the business fails, private assets are also at stake when debts need to be repaid beyond available business funds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Every credit form creates proprietor liability.\n\nApplied carefully, \"All kinds of credit, whether short-term or long-term, remain obligations of the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.17",
+    "title": "Single-Owner Misclassification Traps",
+    "context": "Review assertions that confuse sole proprietorship with incorporated or partnership structures. Evaluate the following economic assertions:",
+    "statements": [
+      "Registering a commercial trading name automatically gives a sole proprietorship separate corporate legal personality.",
+      "Two friends planning equal management shares should form a sole proprietorship rather than a partnership.",
+      "Because the firm lacks separate legal personality, business profits are assessed as the proprietor's personal income.",
+      "Incorporated limited liability automatically applies once a sole trader opens a business bank account.",
+      "Hiring several employees automatically incorporates a sole proprietorship as a limited liability company."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Registration of a name does not create separate legal personality.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Equal shared management requires a partnership or other multi-owner form.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Unincorporated status routes profits to personal income tax.\n\nApplied carefully, \"Because the firm lacks separate legal personality, business profits are assessed as the proprietor's personal income\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "A bank account alone does not confer limited liability or incorporation.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Employment does not change legal structure or liability status.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.18",
+    "title": "Basic Establishment and Tax Facts",
+    "context": "Analyze foundational facts about starting and taxing a sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Mandatory minimum share capital must be deposited before any sole proprietorship may legally commence trading.",
+      "A sole proprietorship is a separate legal person that must file corporate income tax independently of the owner.",
+      "Limited liability protects the sole proprietor when business debts exceed assets held in the business name.",
+      "The owner pays tax on profits earned from the business through personal income taxation.",
+      "Corporate income tax is assessed on sole proprietorship profits in a separate return from the owner's personal affairs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "No financial requirements apply to starting a sole proprietorship.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Sole proprietorships lack separate legal personality and are not taxed as corporations.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Sole proprietors carry unlimited liability extending to private assets.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Business earnings are taxed as the proprietor's personal income.\n\nApplied carefully, \"The owner pays tax on profits earned from the business through personal income taxation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "There is no separate corporate tax entity for a sole trader.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.19",
+    "title": "Integrated Sole Trader Profile",
+    "context": "Review the combined legal, managerial, and fiscal profile of a typical sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "One person owns, manages, and runs the business while retaining the most important decision authority.",
+      "Without separate legal personality, business profits are assessed on the owner's personal income tax statement.",
+      "No minimum capital requirement applies when establishing a sole proprietorship for a small business.",
+      "Unlimited liability means private assets are also at stake if business debts must be repaid.",
+      "Continuity problems may occur when the sole proprietor retires or suffers long-term illness."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Ownership and management converge in one individual.\n\nApplied carefully, \"One person owns, manages, and runs the business while retaining the most important decision authority\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unincorporated profits are personal taxable income.\n\nApplied carefully, \"Without separate legal personality, business profits are assessed on the owner's personal income tax statement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "No minimum capital is required to begin trading.\n\nApplied carefully, \"No minimum capital requirement applies when establishing a sole proprietorship for a small business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Creditors may reach beyond business assets under unlimited liability.\n\nApplied carefully, \"Unlimited liability means private assets are also at stake if business debts must be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Single-person dependence creates continuity risk.\n\nApplied carefully, \"Continuity problems may occur when the sole proprietor retires or suffers long-term illness\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.20",
+    "title": "Finance Classification Nuances",
+    "context": "Analyze how internal and external sources of finance apply to a sole proprietorship funding expansion. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit reinvested in the business counts as an internal source of finance for the sole proprietorship.",
+      "The owner's initial investment from personal savings is classified as an external source of finance.",
+      "Retained earnings and sale of unused assets are external sources because they originate outside the business.",
+      "Bank credit is internal finance for a sole proprietorship because borrowed money is deposited in the business bank account.",
+      "Internal sources of finance avoid financial charges such as interest that apply to borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profit kept in the firm supplies internal finance once operations generate surplus.\n\nApplied carefully, \"Retained profit reinvested in the business counts as an internal source of finance for the sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Owner investment from outside the operating cycle is external finance.\n\nApplied carefully, \"The owner's initial investment from personal savings is classified as an external source of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Retained profit and asset sales are internal sources generated within the business.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Bank credit is external finance regardless of which account receives the funds.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Internal funds do not carry interest charges unlike creditor finance.\n\nApplied carefully, \"Internal sources of finance avoid financial charges such as interest that apply to borrowed funds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.21",
+    "title": "Short-Term and Long-Term Credit Instruments",
+    "context": "Review credit instruments commonly available to sole proprietors from banks and suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "A bank overdraft is a flexible short-term credit instrument once a business bank account has been opened.",
+      "Trade credit allows a business to defer payment for purchases according to an agreement with the supplier.",
+      "Interest on a bank overdraft is paid only when the account is overdrawn.",
+      "Long-term bank loans are often based on land and property serving as collateral through a mortgage arrangement.",
+      "Trade credit from suppliers is classified as long-term debt finance because payment is deferred."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Overdraft facilities provide flexible short-term withdrawal beyond the account balance.\n\nApplied carefully, \"A bank overdraft is a flexible short-term credit instrument once a business bank account has been opened\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Suppliers may grant a credit period before payment is due.\n\nApplied carefully, \"Trade credit allows a business to defer payment for purchases according to an agreement with the supplier\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Overdraft interest accrues when the account balance falls below zero.\n\nApplied carefully, \"Interest on a bank overdraft is paid only when the account is overdrawn\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Property-backed mortgages commonly secure long-term bank lending.\n\nApplied carefully, \"Long-term bank loans are often based on land and property serving as collateral through a mortgage arrangement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Trade credit typically covers short-term purchase obligations, not long-term finance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.22",
+    "title": "Starting Capital and Owner Savings",
+    "context": "Consider a new sole trader who funds start-up costs primarily from personal savings before seeking bank support. Evaluate the following economic assertions:",
+    "statements": [
+      "Most sole proprietors invest their own savings in their business as an external source of finance.",
+      "If the sole proprietor lacks financial funds, setting up the business will be very difficult.",
+      "Personal savings invested at start-up are internal finance because they are generated from earlier business profits.",
+      "No financial requirements to start a sole proprietorship mean the owner never contributes personal capital.",
+      "Financial capability of the sole proprietor has no bearing on funds available to the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Owner savings are a common external funding source at establishment.\n\nApplied carefully, \"Most sole proprietors invest their own savings in their business as an external source of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Limited personal funds constrain the ability to launch and operate.\n\nApplied carefully, \"If the sole proprietor lacks financial funds, setting up the business will be very difficult\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Start-up savings are owner investment (external), not retained operating profit (internal).\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Voluntary owner investment from savings is common despite no minimum rule.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Available funds largely reflect the proprietor's financial capacity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.23",
+    "title": "Internal Versus External Finance Boundaries",
+    "context": "Analyze classification of finance sources once a sole proprietorship is operating and generating revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Sale of assets that are no longer needed is classified as external finance provided by creditors.",
+      "The owner's investment from savings is internal finance because the owner and the business are the same legal person.",
+      "Retained profit that is reinvested rather than withdrawn by the proprietor supplies internal finance.",
+      "Investor funds and creditor loans from banks are internal sources because they are deposited in the business account.",
+      "Internal sources of finance require paying market interest rates to the proprietor acting as a lender."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Proceeds from disposing unused assets are internal funds, not external creditor finance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Owner investment is external finance even though ownership is unified.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Reinvested profit remains inside the business as internal finance.\n\nApplied carefully, \"Retained profit that is reinvested rather than withdrawn by the proprietor supplies internal finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Investors and banks provide external finance regardless of the receiving account.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Internal finance avoids interest charges; it is not a loan from the owner-as-creditor.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.24",
+    "title": "Comprehensive Finance and Liability Picture",
+    "context": "Review how sole proprietors combine internal funds, owner investment, and creditor finance while bearing personal liability. Evaluate the following economic assertions:",
+    "statements": [
+      "The owner's investment and funds from investors and creditors are external sources of finance.",
+      "Retained profit and sale of unneeded assets are internal sources of finance once operations generate surplus.",
+      "All kinds of credit, short-term and long-term, are liabilities for the sole proprietor.",
+      "If revenues exceed expenses, profit can be retained and reinvested unless the sole proprietor withdraws it.",
+      "Unlimited liability still applies to the sole proprietor whether finance is sourced internally or externally."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Owner, investor, and creditor funds enter from outside accumulated internal surplus.\n\nApplied carefully, \"The owner's investment and funds from investors and creditors are external sources of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Retained earnings and asset sales fund the firm from within.\n\nApplied carefully, \"Retained profit and sale of unneeded assets are internal sources of finance once operations generate surplus\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Every credit arrangement creates repayment obligations for the proprietor.\n\nApplied carefully, \"All kinds of credit, short-term and long-term, are liabilities for the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Surplus profit may be reinvested or taken by the proprietor.\n\nApplied carefully, \"If revenues exceed expenses, profit can be retained and reinvested unless the sole proprietor withdraws it\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability persists regardless of whether finance is internal or external.\n\nApplied carefully, \"Unlimited liability still applies to the sole proprietor whether finance is sourced internally or externally\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.25",
+    "title": "Easy Start-Up and Operating Finance Mix",
+    "context": "Analyze how low entry barriers interact with later financing choices for a small sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Entry as a sole trader is straightforward because no financial requirements must be met before starting this type of business.",
+      "Most sole proprietors invest their own savings when launching the venture.",
+      "Extra money can be sought from investors and/or from banks when personal funds are insufficient.",
+      "Once operating, internal sources such as retained profit may supplement external borrowing.",
+      "Lenders extending long-term credit commonly require assets that can serve as collateral."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "No minimum capital requirement simplifies start-up.\n\nApplied carefully, \"Entry as a sole trader is straightforward because no financial requirements must be met before starting this type of business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Personal savings commonly seed the business.\n\nApplied carefully, \"Most sole proprietors invest their own savings when launching the venture\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Investors and banks provide additional external funds when needed.\n\nApplied carefully, \"Extra money can be sought from investors and/or from banks when personal funds are insufficient\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Operating surplus can be reinvested alongside external finance.\n\nApplied carefully, \"Once operating, internal sources such as retained profit may supplement external borrowing\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Long-term lenders commonly demand security such as land or property.\n\nApplied carefully, \"Lenders extending long-term credit commonly require assets that can serve as collateral\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  }
+]

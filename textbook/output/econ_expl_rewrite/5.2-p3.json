@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.51",
+    "title": "Mature Market Share Defence",
+    "context": "Analyze differentiation based on how customers perceive the product after promotional exposure. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is unchanged when a firm's sales double and all rivals' sales double.",
+      "Market share maintenance is harder when differentiated rivals win satisfied loyal buyers.",
+      "Maintaining share is unnecessary when absolute sales targets are met.",
+      "Share objectives encourage attention to competitor actions, not only internal sales.",
+      "A market leader's share position signals its relative importance among industry firms."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Equal proportional growth leaves share unchanged.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Rival differentiation and loyalty challenge share maintenance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share adds relative competitiveness information beyond absolute sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share focus requires competitor awareness.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Leaders' share shows relative industry importance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.52",
+    "title": "Fixed and Variable Cost Coverage",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing plans may set share targets alongside volume and profit goals.",
+      "Market share is measured in currency of production costs rather than sales.",
+      "Competitiveness improves automatically when a firm reduces its market share.",
+      "Market share objectives apply only when the firm is the smallest competitor.",
+      "Declining share despite rising sales can occur if the overall market grows faster."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Share sits alongside volume and profit in planning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share relates to portion of market sales, not production cost currency.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share decline indicates weakened relative competitiveness.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Firms of any size may pursue share objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Fast market growth can lower share even as sales rise.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.53",
+    "title": "Capital Providers and Profit",
+    "context": "Analyze the revenue requirement that sales must meet or exceed production costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Competitiveness indicators include whether share is holding steady against key rivals.",
+      "A rising share always results from improved customer dissatisfaction among rivals' buyers.",
+      "Businesses analyse markets partly to estimate achievable share objectives.",
+      "Market share is unrelated to sales because share excludes revenue entirely.",
+      "Gaining share requires exiting the market temporarily."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Steady share against rivals indicates competitive holding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share gains typically reflect competitive success, not rivals' dissatisfaction alone.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market analysis informs realistic share targets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share derives from sales within the defined market.\n\nThe absolute wording \"entirely\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share is gained by competing within the market.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.54",
+    "title": "Post-Purchase Satisfaction Predictors",
+    "context": "Review owner reimbursement through profit distributions and retained earnings. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share indicators are irrelevant when the firm sells only one product.",
+      "Relative market position is assessed through share compared with competitors' positions.",
+      "Market share objectives mean the firm must acquire every competitor.",
+      "A new entrant's share gain comes at the expense of incumbents' relative positions.",
+      "A stable share in a growing market implies falling absolute sales."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Single-product firms still compete for share in their market.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share comparisons with rivals assess relative position.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share objectives do not require acquiring all competitors.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Entrant gains redistribute relative share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Stable share in a growing market can coincide with rising absolute sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.55",
+    "title": "Mental Product Classification",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is compared among firms serving the same customer base.",
+      "Market share is a profitability measure identical to net margin.",
+      "Sales are unimportant to businesses because production costs are funded from share capital alone.",
+      "Holding share in a declining market may require gaining sales while the total shrinks.",
+      "Maintaining or increasing sales is excluded from marketing objectives."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share comparisons use the same market boundary.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share indicates relative sales position, not profit margin.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales revenue is needed to cover production costs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Shrinking markets make share defence demanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales maintenance and growth are listed marketing objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.56",
+    "title": "Share Sales Profit Trends",
+    "context": "Review product uniqueness claims that distinguish an offering from similar substitutes. Evaluate the following economic assertions:",
+    "statements": [
+      "Share objectives motivate firms to monitor rival promotional and pricing moves.",
+      "A firm's relative importance falls when its market share declines.",
+      "Revenue from sales is unnecessary for covering production costs if the brand is strong.",
+      "Higher sales always guarantee higher profit with no limitations whatsoever.",
+      "Marketing staff may present share charts to show competitiveness trends to management."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Rival moves matter for share objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share decline reduces indicated relative importance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales provide revenues that must cover production costs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The text notes limitations on the sales-profit relationship.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share charts communicate competitiveness trends.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.57",
+    "title": "Cash Inflow From Volume",
+    "context": "Analyze defensive marketing aimed at holding share against aggressive rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales objectives are met when promotional impressions reach a target audience count.",
+      "Gaining share can strengthen negotiating power with distributors in some industries.",
+      "A business can cover production costs without any sales if inventory is high.",
+      "Increasing sales is unrelated to marketing objectives on profitability.",
+      "Sales volume objectives apply only to firms that do not pursue market share."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Sales objectives concern units or revenue sold, not impressions alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Higher share can improve channel negotiating position.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Costs are covered from sales revenue, not inventory holdings alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales and profit objectives are interrelated.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales and share objectives can coexist.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.58",
+    "title": "Discounting Offsetting Volume Gains",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue from sales exceeds production costs automatically at any positive unit price.",
+      "Marketing campaigns targeting awareness alone fulfil sales volume objectives without selling.",
+      "Share is an objective because it summarises standing versus competitors.",
+      "Sales are important only to not-for-profit organisations, not to profit-seeking firms.",
+      "Satisfied loyal customers help a firm maintain its market share against rivals."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Costs must be compared to revenue; low prices may fail to cover costs.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Sales objectives require actual sales, not awareness alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share summarises competitive standing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales matter to businesses needing revenue to cover costs and profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyal satisfied buyers support share maintenance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.59",
+    "title": "Lifecycle Marketing Objectives",
+    "context": "Analyze profit objectives within the broader set of marketing aims a business may pursue. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales volume means keeping production output constant regardless of demand.",
+      "A USP that attracts loyal buyers can support market share objectives.",
+      "Market share data is used to benchmark performance against the competitive set.",
+      "A decline in unit sales indicates success on sales growth objectives.",
+      "Sales revenue and production costs are unrelated in the marketing framework."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Sales maintenance concerns customer purchases, not production output alone.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp-driven loyalty can underpin share gains or defence.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share benchmarks performance within the competitive set.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Declining unit sales indicate failure on sales objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales revenue must cover production costs before profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.60",
+    "title": "Buy-Again Loyalty Outcomes",
+    "context": "Review how wishes and needs analysis precedes selecting measurable marketing objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Increasing sales requires reducing customer satisfaction to push quick transactions.",
+      "Relative share comparisons matter more than isolated internal sales figures for competitiveness.",
+      "A business may sacrifice short-term profit to invest in share gains.",
+      "Share erosion to a rival with a stronger USP signals differentiation weakness.",
+      "Maintaining share is a marketing objective distinct from merely raising absolute sales."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Satisfaction supports sustainable sales; cutting satisfaction undermines repeat purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competitiveness assessment uses relative share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share investment may temporarily reduce profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share loss to a differentiated rival signals competitive pressure.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share maintenance differs from absolute sales growth alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.61",
+    "title": "Better Than the Rest Positioning",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share reflects how much of the market's total sales the firm captures.",
+      "Competitiveness improves when a firm gains share while rivals lose ground.",
+      "Share targets are set after analysing the market the business wants to operate in.",
+      "A firm with declining satisfaction may see market share fall as customers switch.",
+      "Marketing objectives on share align with wanting a certain portion of market sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Captured portion of market sales defines share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Relative share shift indicates improved competitiveness.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market analysis precedes share objective setting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dissatisfaction-driven switching reduces share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share objectives express desired market portion.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.62",
+    "title": "Relative Not Absolute Share",
+    "context": "Review relative share metrics when comparing firms of different absolute sales sizes. Evaluate the following economic assertions:",
+    "statements": [
+      "Industry reports ranking firms by share illustrate relative importance.",
+      "Sales objectives are independent of market analysis of wishes and needs.",
+      "A firm with rising sales never needs to monitor production costs.",
+      "Sales volume objectives are achieved when warehouse stock levels peak.",
+      "Revenue coverage of costs is irrelevant when pursuing differentiation objectives."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Share rankings show relative importance among firms.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market analysis informs realistic sales objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Rising sales still require cost monitoring for profit objectives.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Stock levels do not equal sales to customers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales revenue remains necessary to cover costs alongside differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.63",
+    "title": "Ongoing Revenue From Sales",
+    "context": "Analyze the sales-profit relationship subject to cost and pricing constraints. Evaluate the following economic assertions:",
+    "statements": [
+      "Defensive marketing aims to stop share loss to aggressive competitors.",
+      "Share and sales objectives together give absolute and relative performance views.",
+      "A competitiveness review typically examines market share alongside rival trends.",
+      "Gaining share in a mature market often requires taking customers from established rivals.",
+      "Market share is an indicator, not a substitute for profitability analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Defensive efforts target share stabilisation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales and share provide complementary performance lenses.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Competitiveness reviews include share and rival data.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mature markets require share taken from incumbents.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share indicates competitiveness but does not replace profit analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.64",
+    "title": "Internal Fund Retention",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales growth from dissatisfied one-time buyers is a sustainable long-run strategy.",
+      "Businesses monitor share because it shows position relative to competitors' positions.",
+      "Unit sales targets are unrelated to quarterly marketing planning.",
+      "Sales are unconnected to profitability because profit comes only from asset sales.",
+      "Maintaining sales means prices must rise every month regardless of demand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dissatisfied buyers will not sustain long-run sales through repeat purchase.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share shows position relative to rivals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Quarterly plans commonly include unit sales targets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit in the framework comes from sales revenue minus costs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales maintenance concerns volume sold, not mandatory monthly price rises.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.65",
+    "title": "Single Objective Trap Cases",
+    "context": "Analyze unique selling propositions that rest on delivery speed, design, or service elements. Evaluate the following economic assertions:",
+    "statements": [
+      "A marketing objective to grow share implies outperforming rivals in relative terms.",
+      "A promotional campaign that raises awareness but not purchases meets sales objectives.",
+      "Sales volume is measured by the number of employees rather than customer purchases.",
+      "Share maintenance can be supported by customer loyalty built through satisfaction.",
+      "Relative importance in the market is the concept market share is meant to convey."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share growth means relative outperformance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales objectives require purchases generating revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales volume reflects customer purchases, not headcount.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyalty from satisfaction aids share defence.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share conveys relative market importance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.66",
+    "title": "USP Misclassification Traps",
+    "context": "Review market share erosion as a signal of weakened competitive position. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining or increasing sales is a marketing objective because sales generate revenue.",
+      "Increasing sales is impossible when pursuing customer satisfaction objectives.",
+      "Sales revenue cannot fund production costs if the product is differentiated.",
+      "Sales are important to businesses because revenues must cover production costs.",
+      "A business with zero sales can still meet sales volume objectives through forecasts."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Sales objectives exist because sales produce revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction supports repeat sales; the objectives interrelate.\n\nThe absolute wording \"impossible\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Differentiated products still require sales revenue to cover costs.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Revenue from sales must cover production costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Objectives require actual sales performance, not forecasts alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.67",
+    "title": "Share Versus Absolute Sales",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales revenue contributes to the ability to make a profit after costs are met.",
+      "A business pursuing higher sales aims to strengthen its revenue inflow.",
+      "Marketing campaigns often target a sales volume increase in a defined period.",
+      "Sales objectives replace the need for any profitability analysis.",
+      "Sales objectives may be stated in units sold or in revenue terms."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "After covering costs, sales revenue enables profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Higher sales strengthen revenue inflow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Campaigns commonly set period sales volume targets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales support but do not replace profitability objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Volume can be measured in units or revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.68",
+    "title": "Profit Without Sales Trap",
+    "context": "Review profit reinvestment as a strategic use of earnings retained in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Without adequate sales, a business cannot cover its production costs from revenue.",
+      "Increasing sales is listed among marketing objectives businesses may pursue.",
+      "Seasonal sales peaks may still align with an overall objective to increase annual volume.",
+      "Revenue from exports does not count toward sales volume objectives.",
+      "Sales growth supports cash inflows needed for day-to-day operations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Insufficient sales leave costs uncovered by revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales growth is a recognised marketing objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal peaks contribute to annual volume objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Export sales contribute to total sales volume.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Higher sales improve operational cash inflows.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.69",
+    "title": "Satisfaction Isolation Errors",
+    "context": "Analyze the objective hierarchy in which satisfaction supports loyalty and subsequent sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher sales figures always reduce production costs per unit to zero.",
+      "A promotional discount may be used to lift short-term sales volume.",
+      "Sales growth objectives are unrelated to customer loyalty from satisfaction.",
+      "A temporary sales spike from a failed product satisfies long-term sales objectives.",
+      "Sales targets are set after analysing the market the firm wishes to serve."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Higher sales do not automatically eliminate unit costs.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Discounts can temporarily raise sales volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyal satisfied customers contribute to sales growth.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Failed products with unsatisfied buyers do not sustain long-term sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market analysis informs sales target setting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.70",
+    "title": "Differentiation Definition Traps",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Revenue from sales must exceed production costs for profit to be possible.",
+      "Maintaining sales volume can be an objective when a market matures.",
+      "Sales performance is monitored to assess progress toward marketing objectives.",
+      "A decline in unit sales may signal failure on sales-related marketing objectives.",
+      "Higher sales figures usually support profitability, subject to stated limitations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profit requires sales revenue above production costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mature markets may emphasise volume maintenance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales monitoring tracks objective progress.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Falling unit sales indicate missed sales objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Higher sales generally support profit with noted limitations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.71",
+    "title": "Market Share Purpose Errors",
+    "context": "Analyze share maintenance when entering mature markets with established competitors. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales objectives interrelate with customer satisfaction because repeat buyers add volume.",
+      "Distribution expansion may be pursued to increase sales to new geographic areas.",
+      "A firm may set quarterly sales targets as part of its marketing plan.",
+      "Sales are important because they allow the firm to ignore market share completely.",
+      "Sales volume growth in a new product launch is a common marketing objective."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Repeat buyers from satisfaction add to sales volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Geographic expansion can raise sales volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Quarterly targets operationalise sales objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales complement share objectives; they do not eliminate share relevance.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Launch campaigns often target volume growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.72",
+    "title": "Sales Alone Sufficiency Traps",
+    "context": "Review revenue growth objectives tied to covering fixed and variable production costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales requires shutting down marketing expenditure entirely.",
+      "Sales volume and revenue are unrelated concepts in the marketing objectives framework.",
+      "Production costs are covered from government grants rather than sales revenue.",
+      "Revenue coverage of costs is why sales matter beyond mere activity measures.",
+      "Wholesale and retail channels both contribute to the firm's total sales volume."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Sales maintenance typically requires continued marketing activity.\n\nThe absolute wording \"entirely\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Revenue derives from volume and price together.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales revenue covers production costs in the standard business model described.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales matter because they fund cost coverage.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Channel sales aggregate into total volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.73",
+    "title": "Profitability Link Misstatements",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Increasing sales means profitability objectives become unnecessary.",
+      "A sales objective to maintain volume may apply when supply constraints cap growth.",
+      "Sales objectives are fulfilled when distribution centres are built, regardless of sell-through.",
+      "Marketing spend on advertising may aim to raise sales of a specific product line.",
+      "A firm can make a profit without any sales if customer satisfaction is high."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Profit remains a distinct objective even with rising sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Supply limits can shift focus to maintenance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sell-through to customers defines sales achievement.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can target line-level sales increases.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit requires sales revenue exceeding costs; satisfaction alone does not replace sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.74",
+    "title": "Loyalty Without Satisfaction",
+    "context": "Review post-purchase satisfaction as a predictor of whether customers return. Evaluate the following economic assertions:",
+    "statements": [
+      "Unit sales growth contributes to the revenue pool from which costs are paid.",
+      "Profitability is unrelated to sales because profits come only from borrowed funds.",
+      "Higher sales always reduce profit because production costs rise infinitely with volume.",
+      "Profits cannot be retained in the business for reinvestment under any circumstances.",
+      "Sales data helps managers see whether marketing objectives are being achieved."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Unit growth enlarges the revenue pool for costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profits arise from sales revenue relative to costs, not borrowing alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Higher sales usually increase profit subject to limitations, not infinite cost rises.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profits can be retained and reinvested per the text.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Sales data indicates objective achievement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.75",
+    "title": "Brand Versus USP Confusion",
+    "context": "Analyze promotional differentiation that shapes how customers classify the product mentally. Evaluate the following economic assertions:",
+    "statements": [
+      "A business with rising sales but rising costs may still miss profit objectives.",
+      "Profitability objectives exclude owner reimbursement for invested capital.",
+      "Marketing objectives never include profitability because marketing only targets awareness.",
+      "A firm with falling sales can always increase profit without any cost changes.",
+      "Retained profit is identical to short-term trade credit from suppliers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Sales growth does not guarantee profit if costs rise.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profits reimburse owners for invested money.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profitability is listed among marketing objectives.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profit typically depends on sales and cost performance together.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Retained profit is internal equity from undistributed profit, not supplier credit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

@@ -1,0 +1,973 @@
+[
+  {
+    "case_id": "MATH 9.27",
+    "short_letters": [
+      1,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Nested Polynomials Without Cancelling the Top Power",
+    "context_en": "Let $p(x)=x^{2}+1$ and $q(x)=x^{3}-x$. Write $r(x)=q(p(x))$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The highest power of $x$ in $r$ is $x^{6}$.",
+      "$r(0)=0$.",
+      "$r$ is a cubic function.",
+      "The leading coefficient of $r$ is $1$.",
+      "$r(x)=q(x)\\cdot p(x)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nComposition multiplies the two highest powers: $q$ contributes $x^{3}$ and $p$ contributes $x^{2}$.\n\n$$p(x)=x^{2}+1$$\n\n$$r(x)=q(p(x))$$\n\n$$q(p(x))=(x^{2}+1)^{3}-(x^{2}+1)$$\n\nThe cube of $x^{2}$ is $x^{6}$, and subtracting $p(x)$ cannot cancel that top term.\n\n$$(x^{2})^{3}=x^{6}$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nNo higher power appears, so the highest power of $x$ in $r$ is $x^{6}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSend $x=0$ through $p$ first, then through $q$.\n\n$$p(0)=1$$\n\n$$r(0)=q(1)$$\n\n$$r(0)=1^{3}-1$$\n\n$$r(0)=0$$\n\nThe nested value is $0$. Expanding gives\n\n$$r(x)=x^{6}+3x^{4}+2x^{2}$$\n\n, which has no constant term, so substituting $x=0$ recovers the same height $0$. The composition $q(1)$ is the same computation as $r(0)$ at the origin $x=0$.\n\nSo the statement is True.",
+      "**C.** → False\n\nA cubic would have highest power $x^{3}$, but the composition already produced $x^{6}$.\n\n$$p(x)=x^{2}+1$$\n\n$$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$$\n\n$$(x^{2}+1)^{3}-(x^{2}+1)=x^{6}+3x^{4}+2x^{2}$$\n\nThe $x^{6}$ term has coefficient $1\\neq 0$. Calling $r$ cubic would require that term to vanish.\n\n$$x^{6}$$\n\nThe nested polynomial is degree six, not three, so calling it cubic fails.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe leading term of $q(p(x))$ is the product of the two leading terms, each of which is $1$.\n\n$$p(x)=x^{2}+1$$\n\n$$p(x)=x^{2}+\\cdots$$\n\n$$q(u)=u^{3}+\\cdots$$\n\n$$q(p(x))=(x^{2})^{3}+\\cdots$$\n\n$$(x^{2})^{3}+\\cdots=x^{6}+\\cdots$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe coefficient of $x^{6}$ is $1$. Expanding $r(x)=x^{6}+3x^{4}+2x^{2}$ confirms the same leading $1$, not a larger number.\n\nSo the statement is True.",
+      "**E.** → False\n\nNesting $q$ after $p$ is not the same operation as multiplying the two formulas.\n\n$$p(x)=x^{2}+1$$\n\n$$q(p(x))=(x^{2}+1)^{3}-(x^{2}+1)$$\n\n$$(x^{2}+1)^{3}-(x^{2}+1)=x^{6}+3x^{4}+2x^{2}$$\n\n$$q(x)p(x)=(x^{3}-x)(x^{2}+1)$$\n\n$$(x^{3}-x)(x^{2}+1)=x^{5}-x$$\n\nThose two polynomials are different: one begins with $x^{6}$ and the other with $x^{5}$. Composition is not the product of the two rules.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2}+1$$\n\n$$p(x)=x^{2} + 1$$\n\n$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$. The highest power is $x^{6}$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+    "title_de_existing": "Verschachtelte Polynome ohne Wegfall der höchsten Potenz",
+    "context_de_existing": "Let $p(x)=x^{2}+1$ and $q(x)=x^{3}-x$. Write $r(x)=q(p(x))$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$x$ in $r$ is $x^{6}$ . Die Aussage ist zu prüfen.",
+      "$r(0)=0$.",
+      "$r$ is a cubic function. Die Aussage ist zu prüfen.",
+      "The Leitkoeffizient of $r$ is $1$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "$r(x)=q(x)\\cdot p(x)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBei der Verkettung multiplizieren sich die beiden höchsten Potenzen: $q$ trägt $x^{3}$ bei, $p$ trägt $x^{2}$ bei.\n\n$$p(x)=x^{2}+1,\\qquad r(x)=q(p(x))=(x^{2}+1)^{3}-(x^{2}+1)$$\n\nDer Kubus von $x^{2}$ ist $x^{6}$; Subtrahieren von $p(x)$ kann diesen Leitterm nicht kürzen.\n\n$$(x^{2})^{3}=x^{6}$$\n\nKeine höhere Potenz erscheint, also ist die höchste Potenz von $x$ in $r$ gleich $x^{6}$.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nSchicke zuerst $x=0$ durch $p$, dann durch $q$.\n\n$$p(0)=1,\\qquad r(0)=q(1)=1^{3}-1=0$$\n\nAusmultiplizieren liefert $r(x)=x^{6}+3x^{4}+2x^{2}$; bei $x=0$ erhält man dieselbe Höhe $0$. Die Verkettung $q(p(0))$ ist $r(0)$ im Ursprung.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\n$x^{3}$ , but the composition already produced $x^{6}$ .\n\n$$p(x)=x^{2}+1$$\n\n$$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$$\n\n$$(x^{2}+1)^{3}-(x^{2}+1)=x^{6}+3x^{4}+2x^{2}$$\n\nDer Begriff $1\\neq 0$ hat Koeffizient $1\\neq 0$. Der Aufruf von $r$ cubic würde erfordern, dass dieser Begriff verschwindet.\n\n$$x^{6}$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDer Leitterm von $q(p(x))$ ist das Produkt der beiden Leitterme, jeweils mit Koeffizient $1$.\n\n$$p(x)=x^{2}+\\cdots,\\qquad q(u)=u^{3}+\\cdots$$\n\n$$q(p(x))=(x^{2})^{3}+\\cdots=x^{6}+\\cdots$$\n\nDer Koeffizient von $x^{6}$ ist $1$. Die Entwicklung $r(x)=x^{6}+3x^{4}+2x^{2}$ bestätigt denselben Leitkoeffizienten $1$.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nNesting $q$ after $p$\n\n$$p(x)=x^{2}+1$$\n\n$$q(p(x))=(x^{2}+1)^{3}-(x^{2}+1)$$\n\n$$(x^{2}+1)^{3}-(x^{2}+1)=x^{6}+3x^{4}+2x^{2}$$\n\n$$q(x)p(x)=(x^{3}-x)(x^{2}+1)$$\n\n$$(x^{3}-x)(x^{2}+1)=x^{5}-x$$\n\nDiese beiden Polynome sind unterschiedlich: eines beginnt mit $x^{6}$ $x^{5}$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Aufgabentext nennt das Polynom, auf das sich jede spätere Rechnung bezieht.\n\n$$p(x)=x^{2}+1$$\n\n$$p(x)=x^{2} + 1$$\n\n$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$ $x^{6}$ .\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen."
+  },
+  {
+    "case_id": "MATH 9.29",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Canal Lock: Height as a Cubic in Time",
+    "context_en": "The water height in metres is $h(t)=0.002t^{3}-0.09t^{2}+t$ for $0\\le t\\le 30$ minutes after opening a valve. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$h(0)=0$.",
+      "$h(10)=3$.",
+      "The instantaneous rate $h'(10)$ is positive.",
+      "The highest power of $t$ in $h$ is $t^{3}$.",
+      "$h(30)=h(0)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSubstitute $t=0$ into the named polynomial and simplify each power before combining.\n\n$$h(t)=0.002 t^{3} - 0.09 t^{2} + t$$\n\n$$0^{3}=0$$\n\n$$0.002\\cdot 0=0$$\n\n$$0^{2}=0$$\n\n$$-0.09\\cdot 0=0$$\n\n$$0^{1}=0$$\n\n$$1.0\\cdot 0=0$$\n\n$$h(0)=0+0+0+0.0$$\n\n$$0+0=0$$\n\n$$0+0.0=0$$\n\n$$h(0)=0$$\n\nThe computed height is $0$, matching the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $t=10$ into the named polynomial and simplify each power before combining.\n\n$$h(t)=0.002 t^{3} - 0.09 t^{2} + t$$\n\n$$10^{3}=1000$$\n\n$$0.002\\cdot 1000=2.0$$\n\n$$10^{2}=100$$\n\n$$-0.09\\cdot 100=-9.0$$\n\n$$10^{1}=10$$\n\n$$1.0\\cdot 10=10.0$$\n\n$$h(10)=2.0-9.0+10.0+0.0$$\n\n$$2.0-9.0=-7.0$$\n\n$$-7.0+10.0=3.0$$\n\n$$3.0+0.0=3.0$$\n\n$$h(10)=3.0$$\n\nThe computed height is $3.0$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nInstantaneous rate is the derivative; differentiate the cubic and evaluate at $t=10$.\n\n$$h(t)=t \\left(0.002 t^{2} - 0.09 t + 1\\right)$$\n\n$$h'(t)=0.006t^{2}-0.18t+1$$\n\n$$h'(10)=0.006\\cdot 100-0.18\\cdot 10+1$$\n\n$$h'(10)=0.6-1.8+1$$\n\n$$h'(10)=-0.2$$\n\nThat value is negative, not positive. The water is falling through at $t=10$ rather than still rising. A positive $h'(10)$ would have required $0.6-1.8+1>0$.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe written rule begins with a nonzero multiple of $t^{3}$, and no higher power appears.\n\n$$h(t)=t \\left(0.002 t^{2} - 0.09 t + 1\\right)$$\n\n$$h(t)=0.002t^{3}-0.09t^{2}+t$$\n\nThe coefficient $0.002$ of $t^{3}$ is not zero. Factoring out $t$ leaves a quadratic whose $t^{2}$ term still produces $t^{3}$ overall.\n\n$$h(t)=t(0.002t^{2}-0.09t+1)$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe highest power of $t$ in $h$ is $t^{3}$.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare the two endpoint heights by evaluating the cubic at $t=30$ and at $t=0$.\n\n$$h(0)=0$$\n\n$$h(30)=0.002\\cdot 27000-0.09\\cdot 900+30$$\n\n$$h(30)=54-81+30$$\n\n$$h(30)=3$$\n\nThe right-hand height is $3$ m, not $0$. The two endpoints disagree: the lock does not return to its starting level at $t=30$ minutes after opening the valve.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=t \\left(0.002 t^{2} - 0.09 t + 1\\right)$$\n\nEvaluate $h$ and $h'=v$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+    "title_de_existing": "Kanalschleuse: Höhe als Kubik der Zeit",
+    "context_de_existing": "Die Wasserhöhe in Meter ist $h(t)=0.002t^{3}-0.09t^{2}+t$ für $0\\le t\\le 30$ Minuten nach dem Öffnen eines Ventils. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$h(0)=0$.",
+      "$h(10)=3$.",
+      "The instantaneous rate $h'(10)$ is positiv. Die Aussage ist zu prüfen.",
+      "$t$ in $h$ is $t^{3}$ . Die Aussage ist zu prüfen.",
+      "$h(30)=h(0)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSubstitute $t=0$\n\n$$\n\\begin{aligned}\nh(t)=0.002 t^{3} - 0.09 t^{2} + t \\\\\n0^{3}=0 \\\\\n0.002\\cdot 0=0 \\\\\n0^{2}=0 \\\\\n-0.09\\cdot 0=0 \\\\\n0^{1}=0 \\\\\n1.0\\cdot 0=0 \\\\\nh(0)=0+0+0+0.0 \\\\\n0+0=0 \\\\\n0+0.0=0 \\\\\nh(0)=0\n\\end{aligned}\n$$\n\nThe computed height is $0$, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nSubstitute $t=10$\n\n$$\n\\begin{aligned}\nh(t)=0.002 t^{3} - 0.09 t^{2} + t \\\\\n10^{3}=1000 \\\\\n0.002\\cdot 1000=2.0 \\\\\n10^{2}=100 \\\\\n-0.09\\cdot 100=-9.0 \\\\\n10^{1}=10 \\\\\n1.0\\cdot 10=10.0 \\\\\nh(10)=2.0-9.0+10.0+0.0 \\\\\n2.0-9.0=-7.0 \\\\\n-7.0+10.0=3.0 \\\\\n3.0+0.0=3.0 \\\\\nh(10)=3.0\n\\end{aligned}\n$$\n\nThe computed height is $3.0$, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$t=10$ .\n\n$$h(t)=t \\left(0.002 t^{2} - 0.09 t + 1\\right)$$\n\n$$h'(t)=0.006t^{2}-0.18t+1$$\n\n$$h'(10)=0.006\\cdot 100-0.18\\cdot 10+1$$\n\n$$h'(10)=0.6-1.8+1$$\n\n$$h'(10)=-0.2$$\n\n$t=10$ statt immer noch zu steigen. Ein positiver $h'(10)$ hätte $0.6-1.8+1>0$ benötigt.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie geschriebene Vorschrift beginnt mit einem von null verschiedenen Vielfachen von $t^{3}$, und keine höhere Potenz erscheint.\n\n$$h(t)=0{,}002t^{3}-0{,}09t^{2}+t=t(0{,}002t^{2}-0{,}09t+1)$$\n\nDer Koeffizient $0{,}002$ von $t^{3}$ ist nicht null. Ausklammern von $t$ lässt eine Quadratik, deren $t^{2}$-Term insgesamt wieder $t^{3}$ liefert. Die höchste Potenz von $t$ in $h$ ist $t^{3}$.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nvergleichen Sie die beiden Endpunkthöhen, indem Sie die Kubik bei $t=30$ und bei $t=0$ auswerten.\n\n$$h(0)=0$$\n\n$$h(30)=0.002\\cdot 27000-0.09\\cdot 900+30$$\n\n$$h(30)=54-81+30$$\n\n$$h(30)=3$$\n\nDie rechte Höhe ist $3$ m, nicht $0$ $t=30$ Minuten nach dem Öffnen des Ventils.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$h(t)=t \\left(0.002 t^{2} - 0.09 t + 1\\right)$$\n\nBewerten Sie $h$ und $h'=v$ zu den benannten Zeiten.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen."
+  },
+  {
+    "case_id": "MATH 9.31",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Degree of a Sum, Symbolically",
+    "context_en": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The highest power of $x$ in $p+q$ is $x^{n}$.",
+      "The highest power of $x$ in $p-q$ is $x^{n}$.",
+      "The highest power of $x$ in $p\\cdot q$ is $x^{n+m}$.",
+      "The highest power of $x$ in $p+q$ is always $x^{n+m}$.",
+      "If the two leading coefficients are opposite, the highest power of $p+q$ must drop below $n$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhen the highest powers differ, they cannot cancel in a sum. Here $n>m$, so $x^{n}$ has no partner in $q$.\n\n$$p(x)=ax^{n}+\\cdots$$\n\n$$q(x)=bx^{m}+\\cdots$$\n\n$$p(x)+q(x)=ax^{n}+\\cdots$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe coefficient $a$ of $x^{n}$ is nonzero by assumption, so it survives. A concrete pair: $x^{3}+x$ still has highest power $x^{3}$. The highest power of $p+q$ is $x^{n}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubtracting $q$ only changes the sign of $q$'s coefficients. The top term of $p$ is still unmatched.\n\n$$p(x)-q(x)=ax^{n}+\\cdots$$\n\nBecause $n>m$, the power $x^{n}$ does not appear in $q$, so it cannot be cancelled by $-q$. With $p(x)=x^{3}$ and $q(x)=x$,\n\n$$x^{3}-x$$\n\nThat difference still has highest power $x^{3}$. The highest power of $p-q$ is $x^{n}$.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe highest power of a product is the product of the two highest powers, equivalently the sum of the two exponents.\n\n$$(ax^{n})(bx^{m})=ab\\,x^{n+m}$$\n\nThe coefficient $ab$ is a product of nonzero numbers, hence nonzero. Taking $p(x)=x^{3}$ and $q(x)=x^{2}$ gives $x^{5}$, and $3+2=5$.\n\n$$x^{3}\\cdot x^{2}=x^{5}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe highest power of $p\\cdot q$ is $x^{n+m}$.\n\nSo the statement is True.",
+      "**D.** → False\n\nAdding polynomials never adds their exponents. The sum keeps the larger of the two highest powers.\n\n$$p+q=ax^{n}+\\cdots\\qquad n>m$$\n\nThe exponent $n+m$ would appear in a product, not in a sum. With $n=3$ and $m=1$,\n\n$$x^{3}+x$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact. That example has highest power $x^{3}$, not $x^{4}$. The claimed $x^{n+m}$ is the wrong operation.\n\nSo the statement is False.",
+      "**E.** → False\n\nOpposite leading coefficients can cancel only when they sit on the same power of $x$.\n\n$$n>m$$\n\nThe top term $ax^{n}$ of $p$ has no counterpart in $q$, whatever the sign of $b$. Opposite signs would matter if $n=m$, but here the degrees differ.\n\n$$x^{3}+(-x^{2})=x^{3}-x^{2}$$\n\nThat sum still has highest power $x^{3}$. The degree of $p+q$ cannot drop below $n$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nWhen the highest powers differ, they cannot cancel in the sum.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nNo coefficients are fixed, so the reasoning runs on the structure of a general polynomial instead of on a single numerical example.",
+    "title_de_existing": "Grad einer Summe, symbolisch",
+    "context_de_existing": "Sei $p$ von höchster Potenz $x^{n}$ und $q$ von höchster Potenz $x^{m}$, mit $n>m\\ge 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n",
+    "statements_de_existing": [
+      "$x$ in $p+q$ is $x^{n}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p-q$ is $x^{n}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p\\cdot q$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p+q$ is always $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "$p+q$ must drop below $n$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nUnterscheiden sich die höchsten Potenzen, können sie in einer Summe nicht kürzen. Hier $n>m$, also hat $x^{n}$ keinen Partner in $q$.\n\n$$p(x)=ax^{n}+\\cdots,\\qquad q(x)=bx^{m}+\\cdots$$\n\n$$p(x)+q(x)=ax^{n}+\\cdots$$\n\nDer Koeffizient $a$ von $x^{n}$ ist nach Voraussetzung ungleich null und überlebt. Konkret: $x^{3}+x$ hat weiterhin höchste Potenz $x^{3}$. Die höchste Potenz von $p+q$ ist $x^{n}$.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nSubtrahieren von $q$ ändert nur die Vorzeichen der Koeffizienten von $q$. Der Leitterm von $p$ bleibt unangetastet.\n\n$$p(x)-q(x)=ax^{n}+\\cdots$$\n\nWegen $n>m$ kommt die Potenz $x^{n}$ in $q$ nicht vor und kann durch $-q$ nicht gekürzt werden. Mit $p(x)=x^{3}$ und $q(x)=x$ bleibt\n\n$$x^{3}-x$$\n\nmit höchster Potenz $x^{3}$. Die höchste Potenz von $p-q$ ist $x^{n}$.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$(ax^{n})(bx^{m})=ab\\,x^{n+m}$$\n\nDer Koeffizient $ab$ $p(x)=x^{3}$ und $q(x)=x^{2}$ ergibt $x^{5}$ und $3+2=5$.\n\n$$x^{3}\\cdot x^{2}=x^{5}$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$p\\cdot q$ is $x^{n+m}$ .\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p+q=ax^{n}+\\cdots\\qquad n>m$$\n\nDer Exponent $n+m$ würde in einem Produkt erscheinen, nicht in einer Summe. Mit $n=3$ und $m=1$\n\n$$x^{3}+x$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin von null verschiedener Koeffizient dieser höchsten Potenz macht den Grad genau. Dieses Beispiel hat die höchste Leistung $x^{3}$, nicht $x^{4}$. Die behauptete $x^{n+m}$ ist die falsche Operation.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$x$ .\n\n$$n>m$$\n\nDer obere Term $ax^{n}$ von $p$ hat kein Gegenstück in $q$, unabhängig vom Vorzeichen von $b$. Gegensätzliche Zeichen wären wichtig, wenn $n=m$, aber hier unterscheiden sich die Grade.\n\n$$x^{3}+(-x^{2})=x^{3}-x^{2}$$\n\nDer Grad von $p+q$ kann nicht unter $n$ fallen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nSiehe die Übersicht und die Rechnungsschritte.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nSiehe die Übersicht und die Rechnungsschritte."
+  },
+  {
+    "case_id": "MATH 9.33",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Even and Odd Parts of a Polynomial",
+    "context_en": "Let $p$ be any polynomial. Write $p_{\\mathrm{e}}(x)=\\frac{p(x)+p(-x)}{2}$ and $p_{\\mathrm{o}}(x)=\\frac{p(x)-p(-x)}{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p_{\\mathrm{e}}$ is always an even function.",
+      "$p_{\\mathrm{o}}$ is always an odd function.",
+      "$p=p_{\\mathrm{e}}+p_{\\mathrm{o}}$.",
+      "If $p$ contains only even powers, then $p_{\\mathrm{o}}$ is the zero polynomial.",
+      "$p_{\\mathrm{e}}$ is always a constant polynomial."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nReplacing $x$ by $-x$ in the even-part formula swaps the two summands and leaves the average unchanged.\n\n$$p_{\\mathrm{e}}(-x)=\\frac{p(-x)+p(x)}{2}$$\n\n$$p_{\\mathrm{e}}(-x)=p_{\\mathrm{e}}(x)$$\n\nEquivalently, every surviving power in the expansion must be even.\n\nThat identity is the definition of an even function, and it holds for every polynomial $p$. No extra assumption on the coefficients is required.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe odd-part formula changes sign under $x\\mapsto -x$, which is exactly the oddness identity.\n\n$$p_{\\mathrm{o}}(-x)=\\frac{p(-x)-p(x)}{2}$$\n\n$$p_{\\mathrm{o}}(-x)=-\\frac{p(x)-p(-x)}{2}$$\n\n$$p_{\\mathrm{o}}(-x)=-p_{\\mathrm{o}}(x)$$\n\nEquivalently, every surviving power in the expansion must be odd.\n\nThe two sides match for every $p$. An odd part built this way is always an odd function, independently of the coefficients of $p$.\n\nSo the statement is True.",
+      "**C.** → True\n\nAdd the two halves: the $p(-x)$ terms cancel and the $p(x)$ terms double, then the $2$ cancels.\n\n$$p_{\\mathrm{e}}(x)+p_{\\mathrm{o}}(x)=\\frac{p(x)+p(-x)}{2}+\\frac{p(x)-p(-x)}{2}$$\n\n$$p_{\\mathrm{e}}(x)+p_{\\mathrm{o}}(x)=p(x)$$\n\nThe reconstruction is an identity, not a special case. Every polynomial is the sum of its even part and its odd part.\n\nSo the statement is True.",
+      "**D.** → True\n\nA polynomial of only even powers satisfies $p(-x)=p(x)$, so the odd-part numerator vanishes identically.\n\n$$p(-x)=p(x)$$\n\n$$p_{\\mathrm{o}}(x)=\\frac{p(x)-p(-x)}{2}$$\n\n$$p_{\\mathrm{o}}(x)=0$$\n\nEquivalently, every surviving power in the expansion must be even.\n\nThe odd part is the zero polynomial. For a concrete check, $p(x)=x^{2}$ has $p_{\\mathrm{o}}=0$, and the same holds for any even-powered $p$, including $x^{4}$.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe even part keeps every even power of $p$, so $x^{2}$ already produces a non-constant even part.\n\n$$p(x)=x^{2}$$\n\n$$p_{\\mathrm{e}}(x)=\\frac{x^{2}+(-x)^{2}}{2}$$\n\n$$p_{\\mathrm{e}}(x)=x^{2}$$\n\nThat even part is quadratic, not a constant. The construction $p_{\\mathrm{e}}$ retains all even powers of the original $p$, not merely the constant term.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nEvery polynomial splits uniquely into an even part and an odd part.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Gerader und ungerader Anteil eines Polynoms",
+    "context_de_existing": "Let $p$ be any polynomial. Schreiben Sie $p_{\\mathrm{e}}(x)=\\frac{p(x)+p(-x)}{2}$ und $p_{\\mathrm{o}}(x)=\\frac{p(x)-p(-x)}{2}$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p_{\\mathrm{e}}$ ist immer eine gerade Funktion.",
+      "$p_{\\mathrm{o}}$ ist immer eine ungerade Funktion.",
+      "$p=p_{\\mathrm{e}}+p_{\\mathrm{o}}$.",
+      "Wenn $p$ nur gleich starke Kräfte enthält, dann ist $p_{\\mathrm{o}}$ das Nullpolynom.",
+      "$p_{\\mathrm{e}}$ ist immer ein konstantes Polynom."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig $x$ wird durch $-x$ in der geraden Formel ersetzt, indem die beiden Summands getauscht werden und der Durchschnitt unverändert bleibt. $$p_{\\mathrm{e}}(-x)=\\frac{p(-x)+p(x)}{2}$$ $$p_{\\mathrm{e}}(-x)=p_{\\mathrm{e}}(x)$$ Entsprechend muss jede überlebende Macht in der Expansion ausgeglichen sein.\n\nDiese Identität ist die Definition einer geraden Funktion, und sie hält für jedes Polynom $p$. Es ist keine zusätzliche Annahme der Koeffizienten erforderlich.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Formel für den ungeraden Anteil wechselt unter $x\\mapsto -x$ das Vorzeichen:\n\n$$p_{\\mathrm{o}}(-x)=\\frac{p(-x)-p(x)}{2}$$\n\n$$p_{\\mathrm{o}}(-x)=-\\frac{p(x)-p(-x)}{2}$$\n\n$$p_{\\mathrm{o}}(-x)=-p_{\\mathrm{o}}(x)$$\n\nDas ist genau die Ungeradheitsbedingung. Der ungerade Anteil ist stets ungerade.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nFügen Sie die beiden Hälften hinzu: die $p(-x)$ -Bedingungen stornieren und die $p(x)$ -Bedingungen verdoppeln sich, dann storniert die $2$. $$p_{\\mathrm{e}}(x)+p_{\\mathrm{o}}(x)=\\frac{p(x)+p(-x)}{2}+\\frac{p(x)-p(-x)}{2}$$ $$p_{\\mathrm{e}}(x)+p_{\\mathrm{o}}(x)=p(x)$$ Die Rekonstruktion ist eine Identität, kein besonderer Fall. Jedes Polynom ist die Summe seines ebenen Teils und seines ungeraden Teils.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nEin Polynom von nur ebenen Kräften erfüllt $p(-x)=p(x)$, so dass der ungerade Zähler identisch verschwindet. $$p(-x)=p(x)$$ $$p_{\\mathrm{o}}(x)=\\frac{p(x)-p(-x)}{2}$$ $$p_{\\mathrm{o}}(x)=0$$ Entsprechend muss jede überlebende Macht in der Expansion ausgeglichen sein.\n\nDer ungerade Teil ist das Nullpolynomial. Für eine Betonprüfung hat $p(x)=x^{2}$ $p_{\\mathrm{o}}=0$, und das gleiche gilt für alle gleichmäßigen $p$, einschließlich $x^{4}$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDas gleichmäßige Teil hält jede gleichmäßige Leistung von $p$, so dass $x^{2}$ produziert ein nicht konstantes gleichmäßiges Teil. $$p(x)=x^{2}$$ $$p_{\\mathrm{e}}(x)=\\frac{x^{2}+(-x)^{2}}{2}$$ $$p_{\\mathrm{e}}(x)=x^{2}$$ Dieser Teil ist quadratisch, keine Konstante. Die Konstruktion $p_{\\mathrm{e}}$ behält alle gleichmäßigen Kräfte des ursprünglichen $p$, nicht nur den konstanten Begriff.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Alles ist für ein allgemeines Polynom angegeben, so dass die Argumentation läuft auf höchste Kräfte, Parität und der Faktor Theorem statt auf einem einzigen numerischen Beispiel.\n\nJedes Polynom spaltet sich einzigartig in einen gleichmäßigen Teil und einen ungeraden Teil.\n\nParity ist ein Koeffizient, der liest: nur ungerade Kräfte machen eine ungerade Karte, nur sogar Kräfte machen eine ebene Karte.\n\nDer Faktor Theorem ist eine Substitution: $x-r$ teilt ein Polynom, wenn und nur, wenn der Wert bei $r$ Null ist."
+  },
+  {
+    "case_id": "MATH 9.34",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Composition Multiplies the Highest Powers",
+    "context_en": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n,m\\ge 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The highest power of $x$ in $q(p(x))$ is $x^{nm}$.",
+      "The highest power of $x$ in $q(p(x))$ is $x^{n+m}$.",
+      "The highest power of $x$ in $p(q(x))$ is also $x^{nm}$.",
+      "$p(q(x))$ and $q(p(x))$ are always the same polynomial.",
+      "If $p$ is non-constant, then $q(p(x))$ cannot be a non-zero constant."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nIf $p$ begins $a_n x^{n}$ and $q$ begins $b_m x^{m}$, then $q(p(x))$ begins $b_m(a_n x^{n})^{m}$.\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nThe product $a_n^{m}b_m$ is nonzero because both leading coefficients are nonzero. The highest power is therefore $x^{nm}$, not a lower leftover.\n\n$$x^{nm}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nComposition multiplies the two exponents.\n\nSo the statement is True.",
+      "**B.** → False\n\nAdding the two exponents would describe a product $p(x)q(x)$, not a composition.\n\n$$p(x)q(x)=a_n b_m x^{n+m}+\\cdots$$\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nRead the highest written power whose coefficient is nonzero.\n\nNesting multiplies highest powers rather than adding them.\n\nThose top powers $x^{n+m}$ and $x^{nm}$ agree only in special cases such as\n\n$$n=m$$\n\n$$n=2$$\n\n. In general the composition is not of highest power $x^{n+m}$, so the claim fails.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe same leading-term arithmetic with the roles reversed still multiplies the exponents.\n\n$$p(q(x))=a_n(b_m x^{m})^{n}+\\cdots$$\n\n$$a_n(b_m x^{m})^{n}+\\cdots=a_n b_m^{n} x^{mn}+\\cdots$$\n\nSince $mn=nm$, the highest power is again $x^{nm}$. A concrete pair $p(x)=x^{2}$, $q(x)=x^{3}$ gives\n\n$$p(q(x))=x^{6}$$\n\n.\n\n$$x^{mn}=x^{nm}$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nConfirm by expanding the leading term of the composite and checking it does not cancel.\n\nBoth nestings share that top power.\n\nSo the statement is True.",
+      "**D.** → False\n\nA linear shift composed with a square already fails to commute.\n\n$$p(x)=x+1$$\n\n$$q(x)=x^{2}$$\n\n$$p(q(x))=x^{2}+1$$\n\n$$q(p(x))=(x+1)^{2}$$\n\n$$q(p(x))=x^{2}+2x+1$$\n\nNesting multiplies highest powers rather than adding them.\n\nThose two results differ by the middle term $2x$. Composition of two polynomials, one of them shifted, is not commutative in general, as this pair already shows.\n\nSo the statement is False.",
+      "**E.** → True\n\nNon-constant $p$ has $n\\ge 1$ and the stem already forces $m\\ge 1$, so the composition has highest power $x^{nm}$ with $nm\\ge 1$.\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nA non-zero constant would require every positive power to vanish, but $nm\\ge 1$ and $b_m a_n^{m}\\neq 0$.\n\n$$nm\\ge 1$$\n\nRead the highest written power whose coefficient is nonzero.\n\nNesting multiplies highest powers rather than adding them.\n\nThe nested polynomial cannot be a non-zero constant.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nThe highest power of $q(p(x))$ is $x^{nm}$, not $x^{n+m}$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Verkettung multipliziert die höchsten Potenzen",
+    "context_de_existing": "Sei $p$ von höchster Potenz $x^{n}$ und $q$ von höchster Potenz $x^{m}$, mit $n,m\\ge 1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.\n",
+    "statements_de_existing": [
+      "$x$ in $q(p(x))$ is $x^{nm}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $q(p(x))$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p(q(x))$ is also $x^{nm}$ . Die Aussage ist zu prüfen.",
+      "$p(q(x))$ and $q(p(x))$ are always the same Polynom. Die Aussage wird anhand der Übersicht geprüft.",
+      "If $p$ is non-constant, then $q(p(x))$ cannot be a non-Nullstellen constant. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nIf $p$ begins $a_n x^{n}$ and $q$ begins $b_m x^{m}$, then $q(p(x))$ begins $b_m(a_n x^{n})^{m}$.\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nThe product $a_n^{m}b_m$ $x^{nm}$ , not a lower leftover.\n\n$$x^{nm}$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nComposition multipliziert the two Exponenten.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nAdding the two Exponenten would describe a product $p(x)q(x)$, not a composition.\n\n$$p(x)q(x)=a_n b_m x^{n+m}+\\cdots$$\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nMultipliziert höchste Mächte verschachteln, anstatt sie hinzuzufügen.\n\nDiese Spitzenkräfte $x^{n+m}$ und $x^{nm}$ stimmen nur in Sonderfällen wie\n\n$$n=m$$\n\n$$n=2$$\n\n$x^{n+m}$ , so the Behauptung fails.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p(q(x))=a_n(b_m x^{m})^{n}+\\cdots$$\n\n$$a_n(b_m x^{m})^{n}+\\cdots=a_n b_m^{n} x^{mn}+\\cdots$$\n\nSince $mn=nm$ $x^{nm}$ . A concrete pair $p(x)=x^{2}$ , $q(x)=x^{3}$ gives\n\n$$p(q(x))=x^{6}$$\n\n.\n\n$$x^{mn}=x^{nm}$$\n\nEin von null verschiedener Koeffizient dieser höchsten Potenz macht den Grad exakt.\n\nDie Rechnung bestätigt die Behauptung.\n\nBeide Nestings teilen sich diese Top-Power.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nEine lineare Verschiebung, die sich aus einem Quadrat zusammensetzt, kann bereits nicht pendeln.\n\n$$p(x)=x+1$$\n\n$$q(x)=x^{2}$$\n\n$$p(q(x))=x^{2}+1$$\n\n$$q(p(x))=(x+1)^{2}$$\n\n$$q(p(x))=x^{2}+2x+1$$\n\nMultipliziert höchste Mächte verschachteln, anstatt sie hinzuzufügen.\n\nDiese beiden Ergebnisse unterscheiden sich durch die mittlere Laufzeit $2x$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNichtkonstantes $p$ hat $n\\ge 1$, und die Angabe erzwingt bereits $m\\ge 1$; die Verkettung hat also höchste Potenz $x^{nm}$ mit $nm\\ge 1$.\n\n$$q(p(x))=b_m a_n^{m} x^{nm}+\\cdots$$\n\nEine von null verschiedene Konstante würde verlangen, dass jede positive Potenz verschwindet; aber $nm\\ge 1$ und $b_m a_n^{m}\\neq 0$. Verketten multipliziert die höchsten Potenzen statt sie zu addieren. Das verkettete Polynom kann keine von null verschiedene Konstante sein.\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$q(p(x))$ is $x^{nm}$ , not $x^{n+m}$ .\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.39",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Quartic End Behaviour Against a Cubic",
+    "context_en": "Let $p(x)=x^{4}-4x^{2}$ and $q(x)=-x^{3}+x$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "As $x\\to\\pm\\infty$, $p(x)\\to +\\infty$.",
+      "As $x\\to +\\infty$, $q(x)\\to +\\infty$.",
+      "$p$ is even.",
+      "The roots of $p$ are $0$, $2$ and $-2$.",
+      "$p$ and $q$ have the same highest power of $x$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nEven degree with a positive leading coefficient sends both ends of the graph upward.\n\n$$p(x)=x^{4}-4x^{2}$$\n\nThe leading term is $x^{4}$. As $x\\to\\pm\\infty$, that fourth power tends to $+\\infty$ and dominates $-4x^{2}$.\n\n$$p(x)=x^{4}\\left(1-\\frac{4}{x^{2}}\\right)\\to+\\infty$$\n\nEvenness requires the expanded formula to survive $x\\mapsto -x$.\n\n$$p(-x)=p(x)$$\n\nRead the highest written power whose coefficient is nonzero.\n\nBoth ends lift, matching the claim for $x\\to\\pm\\infty$.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe cubic $q$ has leading term $-x^{3}$, which dives on the far right.\n\n$$p(x)=x^{4}-4x^{2}$$\n\n$$q(x)=-x^{3}+x$$\n\n$$q(x)=x^{3}\\left(-1+\\frac{1}{x^{2}}\\right)$$\n\nAs $x\\to+\\infty$ the bracket tends to $-1$ while $x^{3}\\to+\\infty$, so $q(x)\\to-\\infty$. The graph dives on that side rather than rising toward $+\\infty$ as claimed here.\n\nSo the statement is False.",
+      "**C.** → True\n\nOnly even powers appear in $p$, so replacing $x$ by $-x$ changes nothing.\n\n$$p(x)=x^{4}-4x^{2}$$\n\n$$p(-x)=(-x)^{4}-4(-x)^{2}$$\n\n$$(-x)^{4}-4(-x)^{2}=x^{4}-4x^{2}$$\n\n$$p(-x)=p(x)$$\n\nEquivalently, every surviving power in the expansion must be even.\n\nThe identity holds for every $x$. A single odd power would have broken evenness; none is present in $x^{4}-4x^{2}$. Evenness is the identity $p(-x)=p(x)$, which holds here identically.\n\nSo the statement is True.",
+      "**D.** → True\n\nFactor $p$ by pulling out $x^{2}$, then factor the remaining difference of squares.\n\n$$p(x)=x^{4}-4x^{2}$$\n\n$$p(x)=x^{2}(x^{2}-4)$$\n\n$$x^{2}(x^{2}-4)=x^{2}(x-2)(x+2)$$\n\nThe distinct real roots are $x=0$, $x=2$ and $x=-2$. Multiplicity two at the origin does not add a new root.\n\n$$p(0)=p(2)$$\n\n$$p(0)=p(-2)$$\n\n$$p(0)=0$$\n\nThose three numbers are exactly the listed roots, counting $0$ once even though it is a double root.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare the two leading terms: $x^{4}$ against $-x^{3}$.\n\n$$p(x)=x^{4}-4x^{2}$$\n\n$$q(x)=-x^{3}+x$$\n\nThe highest power of $p$ is $x^{4}$ and the highest power of $q$ is $x^{3}$. Those exponents are different.\n\n$$4\\neq 3$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe two polynomials do not share a highest power of $x$: one is quartic and the other is cubic.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4}-4x^{2}$$\n\n$$p(x)=x^{2} \\left(x^{2} - 4\\right)$$\n\nEven highest power with positive leading coefficient lifts both ends of $p$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+    "title_de_existing": "Quartik-Endverhalten gegen eine Kubik",
+    "context_de_existing": "Es seien $p(x)=x^{4}-4x^{2}$ und $q(x)=-x^{3}+x$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "As $x\\to\\pm\\infty$, $p(x)\\to +\\infty$.",
+      "As $x\\to +\\infty$, $q(x)\\to +\\infty$.",
+      "$p$ ist gerade.",
+      "Die Wurzeln von $p$ sind $0$, $2$ und $-2$.",
+      "$p$ und $q$ haben dieselbe höchste Potenz von $x$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGerader Grad mit positivem Leitkoeffizienten lässt beide Enden des Graphen nach oben laufen.\n\n$$p(x)=x^{4}-4x^{2}$$\n\nDer Leitterm ist $x^{4}$. Für $x\\to\\pm\\infty$ strebt diese vierte Potenz gegen $+\\infty$ und dominiert $-4x^{2}$.\n\n$$p(x)=x^{4}\\left(1-\\frac{4}{x^{2}}\\right)\\to+\\infty$$\n\nDie Geradheit verlangt, dass die ausgeschriebene Formel $x\\mapsto -x$ übersteht.\n\n$$p(-x)=p(x)$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient ungleich null ist.\n\nBeide Enden heben sich, passend zur Behauptung für $x\\to\\pm\\infty$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nDie kubische $q$ hat den Leitbegriff $-x^{3}$, der ganz rechts abtaucht.\n\n $$p(x)=x^{4}-4x^{2}$$\n\n $$q(x)=-x^{3}+x$$\n\n $$q(x)=x^{3}\\left(-1+\\frac{1}{x^{2}}\\right)$$\n\nAls $x\\to+\\infty$ neigt die Klammer zu $-1$, während $x^{3}\\to+\\infty$, so $q(x)\\to-\\infty$. Der Graph taucht auf dieser Seite anstatt in Richtung $+\\infty$ zu steigen, wie hier behauptet.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nIn $p$ erscheinen nur noch Kräfte, so dass das Ersetzen von $x$ durch $-x$ nichts ändert.\n\n $$p(x)=x^{4}-4x^{2}$$\n\n $$p(-x)=(-x)^{4}-4(-x)^{2}$$\n\n $$(-x)^{4}-4(-x)^{2}=x^{4}-4x^{2}$$\n\n $$p(-x)=p(x)$$\n\nGleichwertig muss jede überlebende Potenz in der Entwicklung gerade sein.\n\nist, daß jede $x$. eine einzelne ungeztliche Macht hätte die Gleichmäßigkeit gebrochen; keine ist vorhanden in $x^{4}-4x^{2}$. Gleichheit ist die Identität $p(-x)=p(x)$, die hier gleich bleibt.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nFaktoriere $p$ durch Ausklammern von $x^{2}$ und Zerlegung der verbleibenden Quadratdifferenz.\n\n$$p(x)=x^{4}-4x^{2}=x^{2}(x^{2}-4)=x^{2}(x-2)(x+2)$$\n\nDie verschiedenen reellen Nullstellen sind $x=0$, $x=2$ und $x=-2$. Vielfachheit zwei im Ursprung fügt keine neue Nullstelle hinzu.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nVergleichen Sie die beiden wichtigsten Begriffe: $x^{4}$ gegen $-x^{3}$.\n\n $$p(x)=x^{4}-4x^{2}$$\n\n $$q(x)=-x^{3}+x$$\n\nDie höchste Leistung von $p$ ist $x^{4}$ und die höchste Leistung von $q$ ist $x^{3}$. Diese Exponenten sind unterschiedlich.\n\n $$4\\neq 3$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin von null verschiedener Koeffizient dieser höchsten Potenz macht den Grad exakt.\n\nGesetze, die die beiden Polynome nicht teilen, sind die höchste Macht von $x$: das eine ist Quartic und das andere ist kubisch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Aufgabentext nennt das Polynom, auf das sich jede spätere Rechnung bezieht.\n\n $$p(x)=x^{4}-4x^{2}$$\n\n $$p(x)=x^{2} \\left(x^{2} - 4\\right)$$\n\nSelbst höchste Leistung mit positivem Leitwertwertn hebt beide Enden von $p$.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nDie Parität liest man an den Koeffizienten ab: nur ungerade Potenzen ergeben eine ungerade Abbildung, nur gerade Potenzen eine gerade."
+  },
+  {
+    "case_id": "MATH 9.40",
+    "short_letters": [
+      1,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Parameter Window for Three Real Roots",
+    "context_en": "Let $g_k(x)=x^{3}-kx$ with real $k$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "If $k>0$, then $g_k$ has three distinct real roots.",
+      "If $k=0$, then $g_k$ has three distinct real roots.",
+      "If $k<0$, then $g_k$ has only one real root.",
+      "The leading coefficient of $g_k$ depends on $k$.",
+      "$g_k$ is an odd function for every $k$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFactor out $x$ and read the remaining quadratic.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{k}(x)=x^{3}-kx$$\n\n$$x^{3}-kx=x(x^{2}-k)$$\n\nIf $k>0$ then $x^{2}=k$ has two real solutions $\\pm\\sqrt{k}$, distinct from $0$ and from each other.\n\n$$\nx=0,\\qquad x = \\pm\\sqrt{k}\n$$\n\nThose three numbers are distinct precisely when $k$ is positive. For $k=4$ they are $-2,0,2$. Three distinct real roots appear.\n\nSo the statement is True.",
+      "**B.** → False\n\nAt $k=0$ the family collapses to a pure cube.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{0}(x)=x^{3}$$\n\nThe only real root is $x=0$, of multiplicity three. Distinct roots are different numbers, and here there is only one number.\n\n$$\nx^{3} = 0\\qquad\\Longrightarrow\\qquad x = 0\n$$\n\nDistinct zeros ignore multiplicity: a squared factor still counts as one abscissa.\n\nThree distinct real roots would need three different solutions. They do not exist for $k=0$.\n\nSo the statement is False.",
+      "**C.** → True\n\nIf $k$ is negative then $x^{2}-k=x^{2}+|k|$ is always positive, so it contributes no real root.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{k}(x)=x(x^{2}-k)$$\n\nThe product is zero only when $x=0$. For $k=-1$,\n\n$$g_{-1}(x)=x^{3}+x$$\n\n$$x^{3}+x=x(x^{2}+1)$$\n\nand $x^{2}+1\\ge 1$ for every real $x$. No extra real root appears from the quadratic factor. A single real root remains.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe leading coefficient is the number in front of $x^{3}$, and $k$ multiplies only the linear term.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{k}(x)=x^{3}-kx$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe top term is $1\\cdot x^{3}$ for every real $k$. Changing $k$ opens or closes the side roots but never rescales $x^{3}$. The leading coefficient is $1$, independent of $k$.\n\nSo the statement is False.",
+      "**E.** → True\n\nOddness is $g_{k}(-x)=-g_{k}(x)$. Every term here has odd degree, and $k$ is only a coefficient of $x$.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{k}(-x)=(-x)^{3}-k(-x)$$\n\n$$(-x)^{3}-k(-x)=-x^{3}+kx$$\n\n$$-g_{k}(x)=-(x^{3}-kx)$$\n\n$$-(x^{3}-kx)=-x^{3}+kx$$\n\nEquivalently, every surviving power in the expansion must be odd.\n\nThe two sides agree for every real $k$, including $k=0$ where $g_{0}(x)=x^{3}$ is the standard odd cube. The family is odd for every $k$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The family is given explicitly, with the parameter sitting on a lower term, so the leading term never sees it.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g(x)=x \\left(- k + x^{2}\\right)$$\n\n$g_k(x)=x(x^{2}-k)$. Three distinct real roots precisely when $k>0$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+    "title_de_existing": "Parameterfenster für drei reelle Wurzeln",
+    "context_de_existing": "Let $g_k(x)=x^{3}-kx$ with real $k$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "If $k>0$ , then $g_k$ has three distinct real Nullstellen. Die Aussage wird anhand der Übersicht geprüft.",
+      "If $k=0$ , then $g_k$ has three distinct real Nullstellen. Die Aussage wird anhand der Übersicht geprüft.",
+      "If $k<0$ , then $g_k$ has only one real Nullstellen. Die Aussage wird anhand der Übersicht geprüft.",
+      "The Leitkoeffizient of $g_k$ depends on $k$. Die Aussage ist zu prüfen.",
+      "$g_k$ is an odd function für jedes $k$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKlammere $x$ aus und lies die verbleibende Quadratik.\n\n$$g_{k}(x)=x^{3}-kx=x(x^{2}-k)$$\n\nFür $k>0$ hat $x^{2}=k$ zwei reelle Lösungen $\\pm\\sqrt{k}$, verschieden von $0$ und voneinander.\n\n$$x=0,\\qquad x=\\pm\\sqrt{k}$$\n\nGenau dann sind die drei Zahlen verschieden. Für $k=4$ sind es $-2,0,2$. Es gibt drei verschiedene reelle Nullstellen.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAt $k=0$\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g_{0}(x)=x^{3}$$\n\n$x=0$\n\n$$\nx^{3} = 0\\qquad\\Longrightarrow\\qquad x = 0\n$$\n\nDistinct Nullstellen ignorieren Multiplizität: ein quadrierter Faktor zählt immer noch als eine Abszisse.\n\nThree distinct real Nullstellen would need three different solutions. They do not exist for $k=0$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nIst $k$ negativ, so ist $x^{2}-k=x^{2}+|k|$ stets positiv und liefert keine reelle Nullstelle.\n\n$$g_{k}(x)=x(x^{2}-k)$$\n\nDas Produkt ist nur bei $x=0$ null. Für $k=-1$:\n\n$$g_{-1}(x)=x^{3}+x=x(x^{2}+1)$$\n\nund $x^{2}+1\\ge 1$ für jedes reelle $x$. Der quadratische Faktor liefert keine weitere reelle Nullstelle. Es bleibt genau eine reelle Nullstelle.\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nDer Term $x^{3}$ steht fest, und $k$ multipliziert nur den linearen Term.\n\n$$g_{k}(x)=x^{3}-kx$$\n\nLies die höchste geschriebene Potenz mit von null verschiedenem Koeffizient. Der Leitkoeffizient ist $1$, unabhängig von $k$. Der Parameter ändert nie den Leitterm.\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nUngeradheit bedeutet $g_{k}(-x)=-g_{k}(x)$. Jeder Term hat hier ungeraden Grad; $k$ ist nur Koeffizient von $x$.\n\n$$g_{k}(-x)=(-x)^{3}-k(-x)=-x^{3}+kx=-(x^{3}-kx)=-g_{k}(x)$$\n\nGleichwertig: In der Entwicklung bleiben nur ungerade Potenzen. Die beiden Seiten stimmen für jedes reelle $k$ überein, auch für $k=0$ mit $g_{0}(x)=x^{3}$. Die Familie ist für jedes $k$ ungerade.\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$g_k(x)=x^{3}-kx$$\n\n$$g(x)=x \\left(- k + x^{2}\\right)$$\n\n$g_k(x)=x(x^{2}-k)$. Three distinct real Nullstellen precisely when $k>0$.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nParität liest man am Koeffizienten: nur ungerade Potenzen ergeben eine ungerade Abbildung, nur gerade Potenzen eine gerade."
+  },
+  {
+    "case_id": "MATH 9.41",
+    "short_letters": [
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "How Many Times Can Two Polynomials Meet?",
+    "context_en": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The graphs of $p$ and $q$ meet in at most $n$ points, unless $p=q$.",
+      "The graphs of $p$ and $q$ can meet in $n+1$ distinct points without $p$ coinciding with $q$.",
+      "If $p-q$ has highest power $x^{n}$, the graphs cannot be the same.",
+      "Translating $q$ vertically can create more than $n$ meetings with $p$.",
+      "If $m=n$ and the leading coefficients differ, the meeting bound is still $n$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nMeetings are roots of $p-q$. Because $n>m$ the difference still has highest power $x^{n}$, hence at most $n$ roots unless it is identically zero.\n\n$$p(x)-q(x)=a_n x^{n}+\\cdots$$\n\nA nonzero polynomial of highest power $x^{n}$ has at most $n$ distinct real roots. The zero polynomial is the case $p=q$.\n\n$$p-q\\equiv 0\\iff p=q$$\n\nRead the highest written power whose coefficient is nonzero.\n\nSo the graphs meet in at most $n$ points unless they coincide.\n\nSo the statement is True.",
+      "**B.** → False\n\nA nonzero polynomial of highest power $x^{n}$ cannot have $n+1$ distinct roots.\n\n$$p-q=a_n x^{n}+\\cdots,\\qquad a_n\\neq 0$$\n\nIf $p\\neq q$, then $p-q$ has at most $n$ zeros. Listing $n+1$ distinct meetings would force $p-q$ to vanish identically, hence $p=q$.\n\n$$n+1>n$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe extra meeting is impossible without coincidence.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe zero polynomial has no highest power at all; a surviving $x^{n}$ term means $p-q$ is not identically zero.\n\n$$p-q=c_n x^{n}+\\cdots,\\qquad c_n\\neq 0$$\n\nTwo graphs coincide precisely when their difference is the zero polynomial. A nonzero leading term forbids that.\n\n$$c_n\\neq 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe graphs therefore cannot be the same.\n\nSo the statement is True.",
+      "**D.** → False\n\nReplacing $q$ by $q+c$ leaves $p-(q+c)$ still of highest power $x^{n}$, so the meeting bound does not rise.\n\n$$p(x)-(q(x)+c)=a_n x^{n}+\\cdots$$\n\nA vertical shift changes only the constant term of the difference. The top power $x^{n}$ survives, and at most $n$ roots remain.\n\n$$p-(q+c)\\not\\equiv 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nTranslating $q$ cannot create more than $n$ meetings.\n\nSo the statement is False.",
+      "**E.** → True\n\nUnequal leading coefficients stop the $x^{n}$ terms from cancelling, so $p-q$ still has highest power $x^{n}$.\n\n$$p(x)-q(x)=(a_n-b_n)x^{n}+\\cdots,\\qquad a_n\\neq b_n$$\n\nThe coefficient $a_n-b_n$ is nonzero, so the difference is not of lower order. At most $n$ distinct roots remain.\n\n$$a_n-b_n\\neq 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe meeting bound is still $n$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nMeetings are roots of $p-q$, whose highest power is $x^{n}$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nNo coefficients are fixed, so the reasoning runs on the structure of a general polynomial instead of on a single numerical example.",
+    "title_de_existing": "Wie oft können sich zwei Polynome schneiden?",
+    "context_de_existing": "Lassen Sie $p$ die höchste Leistung $x^{n}$ und $q$ die höchste Leistung $x^{m}$ haben, mit $n>m\\ge 0$. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "The graphs of $p$ and $q$ meet in at most $n$ points, unless $p=q$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "The graphs of $p$ and $q$ can meet in $n+1$ distinct points without $p$ coinciding with $q$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "If $p-q$ $x^{n}$ , the graphs cannot be the same. Die Aussage ist zu prüfen.",
+      "Translating $q$ vertically can create more than $n$ meetings with $p$. Die Aussage ist zu prüfen.",
+      "If $m=n$ $n$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSitzungen sind Nullstellen von $p-q$. Weil $n>m$ $x^{n}$, daher höchstens $n$ Nullstellen, es sei denn, es ist identisch Nullstellen.\n\n$$p(x)-q(x)=a_n x^{n}+\\cdots$$\n\n$x^{n}$ has at most $n$ $p=q$ .\n\n$$p-q\\equiv 0\\iff p=q$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nSo the graphs meet in at most $n$ points unless they coincide.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$x^{n}$ kann nicht $n+1$ verschiedene Nullstellen haben.\n\n$$p-q=a_n x^{n}+\\cdots,\\qquad a_n\\neq 0$$\n\nWenn $p\\neq q$, dann hat $p-q$ höchstens $n$ Nullstellen. Die Auflistung $n+1$ verschiedener Meetings würde $p-q$ dazu zwingen, identisch zu verschwinden, daher $p=q$.\n\n$$n+1>n$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$x^{n}$ term means $p-q$ is not identically Nullstellen.\n\n$$p-q=c_n x^{n}+\\cdots,\\qquad c_n\\neq 0$$\n\nDie Rechnung bestätigt die Behauptung.\n\n$$c_n\\neq 0$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nReplacing $q$ by $q+c$ leaves $p-(q+c)$ $x^{n}$\n\n$$p(x)-(q(x)+c)=a_n x^{n}+\\cdots$$\n\n$x^{n}$ survives, and at most $n$ Nullstellen remain.\n\n$$p-(q+c)\\not\\equiv 0$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nTranslating $q$ cannot create more than $n$ meetings.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nUngleiche Leitkoeffizienten verhindern, dass die Terme $x^{n}$ abgebrochen werden, also $p-q$ $x^{n}$.\n\n$$p(x)-q(x)=(a_n-b_n)x^{n}+\\cdots,\\qquad a_n\\neq b_n$$\n\nThe Koeffizient $a_n-b_n$ $n$ distinct Nullstellen remain.\n\n$$a_n-b_n\\neq 0$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$n$ .\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nMeetings are Nullstellen of $p-q$ $x^{n}$ .\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nSiehe die Übersicht und die Rechnungsschritte."
+  },
+  {
+    "case_id": "MATH 9.42",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Multiple Roots and the Derivative",
+    "context_en": "Let $p$ be a non-constant polynomial and let $a$ be a real number. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "If $x-a$ is a repeated factor of $p$, then $p(a)=0$ and $p'(a)=0$.",
+      "If $p(a)=0$ and $p'(a)=0$, then $x-a$ is a repeated factor of $p$.",
+      "Every root of $p'$ is a root of $p$.",
+      "A cubic can have a repeated root and a third distinct simple root.",
+      "If $p'$ is identically zero, then $p$ is a non-constant polynomial."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA repeated linear factor means $p(x)=(x-a)^{2}q(x)$ for some polynomial $q$. Substituting $x=a$ gives\n\n$$p(a)=0$$\n\n at once.\n\n$$p(x)=(x-a)^{2}q(x)$$\n\nDifferentiate by the product rule:\n\n$$p'(x)=2(x-a)q(x)+(x-a)^{2}q'(x)$$\n\n$$p'(a)=0$$\n\nA vanishing sample at the candidate root is necessary and sufficient.\n\nBoth $p$ and $p'$ vanish at $a$. A repeated factor always produces a common root of $p$ and $p'$.\n\nSo the statement is True.",
+      "**B.** → True\n\nFor polynomials the converse also holds. If $p(a)=0$ then $x-a$ is already a factor, say $p(x)=(x-a)q(x)$. Differentiating and using $p'(a)=0$ forces $q(a)=0$ as well.\n\n$$p'(x)=q(x)+(x-a)q'(x)$$\n\n$$p'(a)=q(a)$$\n\n$$q(a)=0$$\n\nA vanishing sample at the candidate root is necessary and sufficient.\n\nSo $x-a$ divides $q$, hence $(x-a)^{2}$ divides $p$. A common root of $p$ and $p'$ is a repeated root of $p$.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe derivative's zeros are stationary points, not automatically roots of $p$. A cubic such as $x^{3}-x$ is flat where\n\n$$p'=3x^{2}-1$$\n\n$$p'=0$$\n\n, namely at $x=\\pm 1/\\sqrt{3}$.\n\n$$p'(x)=3x^{2}-1$$\n\n$$p\\left(\\frac{1}{\\sqrt{3}}\\right)=\\frac{1}{3\\sqrt{3}}-\\frac{1}{\\sqrt{3}}\\neq 0$$\n\nThose turning points sit off the axis. Not every root of $p'$ is a root of $p$.\n\nSo the statement is False.",
+      "**D.** → True\n\nSpend two of the three factors on a repeated root and the last on a different simple root.\n\n$$p(x)=(x-1)^{2}(x-2)$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nThen $x=1$ is repeated and $x=2$ is a distinct simple root. Expanding gives $x^{3}-4x^{2}+5x-2$, a genuine cubic. The graph touches at $1$ and crosses at $2$. A cubic can carry that pattern.\n\nSo the statement is True.",
+      "**E.** → False\n\nIf $p'$ is the zero polynomial then $p$ has no $x$ in it at all: $p$ is a constant.\n\n$$p'(x)\\equiv 0\\qquad\\Longrightarrow\\qquad p(x)=c$$\n\nA constant is not a non-constant polynomial. The stem already assumed $p$ non-constant, which forces $p'$ to be nonzero. The implication in the claim runs the wrong way.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nA multiple root of $p$ is a common root of $p$ and $p'$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Mehrfache Wurzeln und die Ableitung",
+    "context_de_existing": "Let $p$ be a non-constant Polynom and let $a$ be a reelle Zahl. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "If $x-a$ $p$ , then $p(a)=0$ and $p'(a)=0$ . Die Aussage ist zu prüfen.",
+      "If $p(a)=0$ and $p'(a)=0$ , then $x-a$ $p$ . Die Aussage ist zu prüfen.",
+      "Every Nullstellen of $p'$ is a Nullstellen of $p$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "Ein Kubikum kann eine wiederholte Nullstellen und eine dritte eindeutige einfache Nullstellen haben. Die Aussage ist zu prüfen.",
+      "If $p'$ is identically Nullstellen, then $p$ is a non-constant Polynom. Die Aussage wird anhand der Übersicht geprüft."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSowohl $p$ als auch $p'$ verschwinden bei der Doppelwurzel.\n\nEine wiederholte Nullstelle erzeugt stets eine gemeinsame Nullstelle von $p$ und $p'$. Die Ableitung teilt den Linearfaktor der Doppelwurzel.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nBei einer Doppelwurzel und einer einfachen Nullstelle gibt es genau zwei verschiedene reelle Nullstellen.\n\nDie Vielfachheitssumme ist drei, aber die Anzahl verschiedener Abszissen ist zwei.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\n$p$ . A cubic such as $x^{3}-x$ is flat where\n\n$$p'=3x^{2}-1$$\n\n$$p'=0$$\n\n, namely at $x=\\pm 1/\\sqrt{3}$.\n\n$$p'(x)=3x^{2}-1$$\n\n$$p\\left(\\frac{1}{\\sqrt{3}}\\right)=\\frac{1}{3\\sqrt{3}}-\\frac{1}{\\sqrt{3}}\\neq 0$$\n\nDiese Extremstellen sitzen abseits der Achse. Nicht jede Nullstellen von $p'$ ist eine Nullstellen von $p$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDann wird eine Nullstelle wiederholt und die andere ist eine verschiedene einfache Nullstelle. Ausmultiplizieren liefert ein echtes Kubikpolynom. Der Graph berührt an der Doppelwurzel und schneidet an der einfachen Nullstelle.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nIf $p'$ $p$ has no $x$ in it at all: $p$ is a constant.\n\n$$p'(x)\\equiv 0\\qquad\\Longrightarrow\\qquad p(x)=c$$\n\n„Denn ein Nicht-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-Denn-D Der Stiel wurde bereits angenommen $p$ nicht konstant, was $p'$ erzwingt\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nEin Vielfaches Nullstellen von $p$ ist eine gemeinsame Nullstellen von $p$ und $p'$.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.43",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Bounds on Turning Points",
+    "context_en": "Let $p$ have highest power $x^{n}$ with $n\\ge 2$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p$ has at most $n-1$ stationary points, unless $p'$ is identically zero.",
+      "Every polynomial of highest power $x^{n}$ has exactly $n-1$ stationary points.",
+      "A vertical stretch $kp$ with $k\\neq 0$ keeps the same stationary abscissas.",
+      "A horizontal shift $p(x-h)$ can increase the number of stationary points.",
+      "If $n$ is even, $p'$ has odd highest power, so $p'$ has at least one real root."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStationary points are the real roots of $p'$. Differentiating drops the highest power by one.\n\n$$\np(x) = ax^{n}+\\cdots\\qquad\\Longrightarrow\\qquad p'(x) = nax^{n-1}+\\cdots\n$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero polynomial of highest power $x^{n-1}$ has at most $n-1$ distinct real roots, unless it is identically zero (which cannot happen for genuine degree $n\\ge 2$). So $p$ has at most $n-1$ stationary points.\n\nSo the statement is True.",
+      "**B.** → False\n\n\"At most $n-1$\" is not \"exactly $n-1$\". The cubic $x^{3}$ has derivative $3x^{2}$, whose only real root is $x=0$.\n\n$$p(x)=x^{3}$$\n\n$$p'(x)=3x^{2}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nHere $n=3$, so $n-1=2$, but there is only one stationary point. Multiple roots of $p'$, or complex roots, reduce the count. Not every degree-$n$ polynomial has exactly $n-1$ stationary points.\n\nSo the statement is False.",
+      "**C.** → True\n\nA vertical stretch multiplies $p$ by a nonzero constant $k$, and the chain rule (or factoring $k$) leaves the zeros of the derivative unchanged.\n\n$$(kp)'(x)=k\\,p'(x)$$\n\nBecause $k\\neq 0$, one has $(kp)'(x)=0$ if and only if $p'(x)=0$. The stationary abscissas are the same set.\n\n$$\nkp'(x) = 0\\qquad\\Longleftrightarrow\\qquad p'(x) = 0\n$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nA vertical stretch keeps the same stationary $x$-values.\n\nSo the statement is True.",
+      "**D.** → False\n\nReplacing $x$ by $x-h$ slides the graph horizontally. Every stationary point moves by $h$, but none is created or destroyed.\n\n$$\nq(x) = p(x-h)\\qquad\\Longrightarrow\\qquad q'(x) = p'(x-h)\n$$\n\nThe equation $q'(x)=0$ is $p'(x-h)=0$, which has as many solutions as $p'(u)=0$. A shift cannot increase the count.\n\n$$p(x)=x^{3}$$\n\n$$p(x-1)=(x-1)^{3}$$\n\nstill has a single stationary point. The number of stationary points is invariant.\n\nSo the statement is False.",
+      "**E.** → True\n\nIf $n$ is even then $n-1$ is odd, so $p'$ has odd highest power.\n\n$$p'(x)=nax^{n-1}+\\cdots$$\n\nAn odd-degree real polynomial always has at least one real root, by the same end-behaviour argument as for cubics. That real root of $p'$ is a stationary point of $p$. For $p(x)=x^{4}-x$ one has\n\n$$p'(x)=4x^{3}-1$$\n\nOddness requires the expanded formula to flip under $x\\mapsto -x$.\n\n$$p(-x)=-p(x)$$\n\nThe derivative $4x^{3}-1$ vanishes at $x=4^{-1/3}$. Even degree forces at least one stationary point.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\n$p'$ has highest power $x^{n-1}$, so at most $n-1$ stationary points.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+    "title_de_existing": "Schranken für Extremstellen",
+    "context_de_existing": "Let $p$ have highest power $x^{n}$ with $n\\ge 2$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p$ has at most $n-1$ stationary points, unless $p'$ is identically Nullstellen. Die Aussage ist zu prüfen.",
+      "$x^{n}$ has exactly $n-1$ stationary points.",
+      "A vertical stretch $kp$ with $k\\neq 0$ keeps the same stationary abscissas. Die Aussage ist zu prüfen.",
+      "A horizontal shift $p(x-h)$ can increase the number of stationary points. Die Aussage ist zu prüfen.",
+      "If $n$ is even, $p'$ $p'$ has at least one real Nullstellen. Die Aussage wird anhand der Übersicht geprüft."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$p'$\n\n$$\np(x) = ax^{n}+\\cdots\\qquad\\Longrightarrow\\qquad p'(x) = nax^{n-1}+\\cdots\n$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$x^{n-1}$ has at most $n-1$ $n\\ge 2$ ). So $p$ has at most $n-1$ stationary points.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n„Höchstens $n-1$“ ist nicht „genau $n-1$“. Das Kubikpolynom $x^{3}$ hat die Ableitung $3x^{2}$ mit einziger reeller Nullstelle $x=0$.\n\n$$p(x)=x^{3},\\qquad p'(x)=3x^{2}$$\n\nHier ist $n=3$, also $n-1=2$, aber es gibt nur eine Extremstelle. Mehrfache oder komplexe Nullstellen von $p'$ verringern die Anzahl. Nicht jedes Polynom vom Grad $n$ hat genau $n-1$ Extremstellen.\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nA vertical stretch multipliziert $p$ by a nonzero constant $k$ $k$\n\n$$(kp)'(x)=k\\,p'(x)$$\n\nWeil $k\\neq 0$, hat man $(kp)'(x)=0$ wenn und nur wenn $p'(x)=0$\n\n$$\nkp'(x) = 0\\qquad\\Longleftrightarrow\\qquad p'(x) = 0\n$$\n\nDer Faktortest ist die Substitution, die fragt, ob die Höhe an dieser Abszisse verschwindet.\n\nA vertical stretch keeps the same stationary $x$-values.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nDurch Ersetzen von $x$ durch $x-h$ wird der Graph horizontal verschoben. Jeder stationäre Punkt bewegt sich um $h$, aber keiner wird erzeugt oder zerstört.\n\n$$\nq(x) = p(x-h)\\qquad\\Longrightarrow\\qquad q'(x) = p'(x-h)\n$$\n\nDie Gleichung $q'(x)=0$ ist $p'(x-h)=0$ $p'(u)=0$. Eine Verschiebung kann die Zählung nicht erhöhen.\n\n$$p(x)=x^{3}$$\n\n$$p(x-1)=(x-1)^{3}$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nIst $n$ gerade, so ist $n-1$ ungerade; $p'$ hat also ungerade höchste Potenz.\n\n$$p'(x)=nax^{n-1}+\\cdots$$\n\nEin reelles Polynom ungeraden Grades hat stets mindestens eine reelle Nullstelle (gleiches Endverhalten-Argument wie bei Kubiken). Diese Nullstelle von $p'$ ist eine Extremstelle von $p$. Für $p(x)=x^{4}-x$ gilt\n\n$$p'(x)=4x^{3}-1=0\\quad\\text{bei}\\quad x=4^{-1/3}.$$\n\nGerader Grad erzwingt also mindestens eine Extremstelle.\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$p'$ $x^{n-1}$ , so at most $n-1$ stationary points.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nParität liest man am Koeffizienten: nur ungerade Potenzen ergeben eine ungerade Abbildung, nur gerade Potenzen eine gerade."
+  },
+  {
+    "case_id": "MATH 9.45",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Integer Coefficients and Integer Roots",
+    "context_en": "Let $p$ be a monic polynomial with integer coefficients. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Every integer root of $p$ divides the constant term $p(0)$.",
+      "If $p(0)=6$, then the only possible integer roots are the divisors of $6$.",
+      "Every monic integer polynomial has at least one integer root.",
+      "If $a$ is an integer root, then $x-a$ is a factor of $p$ in the integer-coefficient polynomials.",
+      "A monic cubic $x^{3}+x+1$ has $x=-1$ as a root."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWrite $p(x)=x^{n}+\\cdots+a_0$. If $p(k)=0$ for an integer $k$, rearrange to show $k$ divides $a_0$.\n\n$$k^{n}+a_{n-1}k^{n-1}+\\cdots+a_1 k+a_0=0$$\n\n$$a_0=-k(k^{n-1}+\\cdots+a_1)$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nThe parenthesis is an integer because every coefficient is an integer. Thus $k$ divides $p(0)=a_0$. The same argument works for a negative integer root.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe integer-root test lists only the divisors of the constant term as candidates.\n\n$$p(0)=6$$\n\nAny integer root must divide $6$, so it lies in $\\{\\pm 1,\\pm 2,\\pm 3,\\pm 6\\}$. No other integer can be a root.\n\n$$\\pm 1,\\pm 2,\\pm 3,\\pm 6$$\n\nThe same number is the constant term of the expanded formula.\n\nThose are precisely the divisors of $6$, including the negative ones required by the integer-root test.\n\nSo the statement is True.",
+      "**C.** → False\n\nA single counter-example kills a universal claim: $x^{2}+1$ never vanishes at an integer.\n\n$$p(x)=x^{2}+1$$\n\nThis polynomial is monic with integer coefficients, yet $p(n)=n^{2}+1\\ge 1$ for every integer $n$.\n\n$$p(0)=1\\neq 0$$\n\nNo integer root exists, so not every monic integer polynomial has one. The claim is universal and this cubic-free quadratic already kills it.\n\nSo the statement is False.",
+      "**D.** → True\n\nDividing a monic integer polynomial by the monic linear factor $x-a$ keeps integer coefficients.\n\n$$p(x)=(x-a)q(x)$$\n\nSynthetic division of a monic integer polynomial by $x-a$ produces a monic $q$ with integer coefficients: each running total stays integral.\n\n$$q(x)\\in\\mathbb{Z}[x]$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nThus $x-a$ is a factor in the integer-coefficient polynomials.\n\nSo the statement is True.",
+      "**E.** → False\n\nEvaluate the named cubic at $x=-1$; the value is not zero.\n\n$$p(x)=x^{3}+x+1$$\n\n$$p(-1)=-1-1+1$$\n\n$$-1-1=-2$$\n\n$$-2+1=-1$$\n\n$$p(-1)=-1$$\n\nA root would require $p(-1)=0$. The leftover $-1$ shows $x+1$ is not a factor. Among the candidates $\\pm 1$, neither works: $p(1)=3\\neq 0$ either, so $-1$ is not a root of this cubic polynomial at all, as claimed.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nAny integer root of a monic integer polynomial divides the constant term.\n\nA value is obtained by substituting the named number and collecting powers.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Ganzzahlige Koeffizienten und ganzzahlige Wurzeln",
+    "context_de_existing": "Let $p$ be a monic Polynom with integer Koeffizienten. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Every integer Nullstellen of $p$ divides the konstantes Glied $p(0)$. Die Aussage ist zu prüfen.",
+      "If $p(0)=6$ $6$ .",
+      "Every monic integer Polynom has at least one integer Nullstellen. Die Aussage ist zu prüfen.",
+      "If $a$ is an integer Nullstellen, then $x-a$ $p$ in the integer-Koeffizient polynomials. Die Aussage wird anhand der Übersicht geprüft.",
+      "A normiertes Kubikpolynom $x^{3}+x+1$ has $x=-1$ as a Nullstellen. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNach dem Faktorsatz teilt $x-a$ das Polynom genau dann, wenn $p(a)=0$. Die Voraussetzung $p(a)=0$ ist genau diese Bedingung.\n\n$$p(a)=0\\qquad\\Rightarrow\\qquad x-a\\mid p(x)$$\n\nDer Linearfaktor existiert in $\\mathbb{R}[x]$.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p(0)=6$$\n\nAny integer Nullstellen must divide $6$, so it lies in $\\{\\pm 1,\\pm 2,\\pm 3,\\pm 6\\}$. No other integer can be a Nullstellen.\n\n$$\\pm 1,\\pm 2,\\pm 3,\\pm 6$$\n\nDie Rechnung bestätigt die Behauptung.\n\n$6$\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nA single counter-example kills a universal Behauptung: $x^{2}+1$ never vanishes at an integer.\n\n$$p(x)=x^{2}+1$$\n\n$p(n)=n^{2}+1\\ge 1$ for every integer $n$ .\n\n$$p(0)=1\\neq 0$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDivision eines normierten ganzzahligen Polynoms durch den normierten Linearfaktor $x-a$ erhält ganzzahlige Koeffizienten.\n\n$$p(x)=(x-a)q(x)$$\n\nSynthetische Division eines normierten Polynoms aus $\\mathbb{Z}[x]$ durch $x-a$ liefert ein normiertes $q$ mit ganzzahligen Koeffizienten: Jede Zwischensumme bleibt ganzzahlig.\n\n$$q(x)\\in\\mathbb{Z}[x]$$\n\nAlso ist $x-a$ ein Faktor in den Polynomen mit ganzzahligen Koeffizienten.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\n$x=-1$\n\n$$p(x)=x^{3}+x+1$$\n\n$$p(-1)=-1-1+1$$\n\n$$-1-1=-2$$\n\n$$-2+1=-1$$\n\n$$p(-1)=-1$$\n\nA Nullstellen would require $p(-1)=0$ . The leftover $-1$ shows $x+1$ $\\pm 1$ , neither works: $p(1)=3\\neq 0$ either, so $-1$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nJede ganzzahlige Nullstellen eines monischen ganzzahligen Polynoms teilt den konstanten Glied.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.49",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Crossing a Quartic and a Line Three Times",
+    "context_en": "Let $p(x)=x^{4}-5x^{2}+4$ and $\\ell(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The graphs meet at four distinct real points.",
+      "$p$ is even.",
+      "$\\ell$ is a cubic function.",
+      "The highest power of $x$ in $p-\\ell$ is $x^{4}$.",
+      "$p(0)=\\ell(0)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe graphs meet where $p-\\ell=0$. Subtract the two rules.\n\n$$p(x)-\\ell(x)=x^{4}-5x^{2}+4-(x^{2}-1)$$\n\n$$x^{4}-5x^{2}+4-(x^{2}-1)=x^{4}-6x^{2}+5$$\n\n$$x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$$\n\nThe zeros are $x=\\pm 1$ and $x=\\pm\\sqrt{5}$, four distinct real numbers. Each is a genuine intersection because $\\ell$ is defined everywhere. The graphs meet at four distinct real points.\n\nSo the statement is True.",
+      "**B.** → True\n\nEvenness is $p(-x)=p(x)$. Every exponent in $p$ is even.\n\n$$p(-x)=(-x)^{4}-5(-x)^{2}+4$$\n\n$$(-x)^{4}-5(-x)^{2}+4=x^{4}-5x^{2}+4$$\n\nThat is $p(x)$ again. Equivalently, $p$ contains only even powers, so the graph is symmetric about the $y$-axis.\n\n$$p(-2)=16-20+4$$\n\n$$p(-2)=0$$\n\n$$p(-2)=p(2)$$\n\nThe identity holds for every $x$. A quartic of only even powers is a quadratic in $x^{2}$, which is automatically even. The polynomial $p$ is even.\n\nSo the statement is True.",
+      "**C.** → False\n\nA cubic function has highest power $x^{3}$. The second map is\n\n$$p(x)=x^{4}-5x^{2}+4$$\n\n$$\\ell(x)=x^{2}-1$$\n\nThe highest power is $x^{2}$, with no $x^{3}$ term at all. It is a quadratic (a parabola), not a cubic.\n\n$$\\ell(x)=0\\cdot x^{3}+x^{2}-1$$\n\nCalling $\\ell$ cubic confuses it with the quartic $p$. Highest power $x^{2}$ makes $\\ell$ a quadratic.\n\nSo the statement is False.",
+      "**D.** → True\n\nSubtracting $\\ell$ cannot cancel the $x^{4}$ term of $p$, because $\\ell$ has no $x^{4}$.\n\n$$p(x)-\\ell(x)=x^{4}-6x^{2}+5$$\n\nThe coefficient of $x^{4}$ is $1\\neq 0$, so the highest power of the difference is $x^{4}$.\n\n$$(x^{2}-1)(x^{2}-5)=x^{4}+\\cdots$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe top power survives. A cancellation would have needed $\\ell$ to contain $x^{4}$ as well, which it does not. The highest power of $p-\\ell$ is $x^{4}$.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare the two values at the origin, which are the two constant terms.\n\n$$p(0)=4$$\n\n$$\\ell(0)=-1$$\n\nThe same number is the constant term of the expanded formula.\n\nThose numbers differ. Equivalently $p(0)-\\ell(0)=5\\neq 0$, so $x=0$ is not among the four meeting points $\\pm 1,\\pm\\sqrt{5}$. A meeting at the origin would have required equal constant terms. The graphs miss each other at $x=0$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4}-5x^{2}+4$$\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\n$p-\\ell=x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+    "title_de_existing": "Quartik und Gerade schneiden sich dreimal",
+    "context_de_existing": "Let $p(x)=x^{4}-5x^{2}+4$ and $\\ell(x)=x^{2}-1$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "The graphs meet at four distinct real points. Die Aussage ist zu prüfen.",
+      "$p$ is even. Die Aussage ist zu prüfen.",
+      "$\\ell$ is a cubic function. Die Aussage ist zu prüfen.",
+      "$x$ in $p-\\ell$ is $x^{4}$ . Die Aussage ist zu prüfen.",
+      "$p(0)=\\ell(0)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Graphen treffen sich, wo $p-\\ell=0$. Subtrahiere die beiden Vorschriften.\n\n$$p(x)-\\ell(x)=x^{4}-5x^{2}+4-(x^{2}-1)=x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$$\n\nDie Nullstellen sind $x=\\pm 1$ und $x=\\pm\\sqrt{5}$, vier verschiedene reelle Zahlen. Jede ist ein echter Schnittpunkt, weil $\\ell$ überall definiert ist. Die Graphen treffen sich in vier verschiedenen reellen Punkten.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nGeradheit bedeutet $p(-x)=p(x)$. Jeder Exponent in $p$ ist gerade.\n\n$$p(-x)=(-x)^{4}-5(-x)^{2}+4=x^{4}-5x^{2}+4=p(x)$$\n\nGleichwertig: $p$ enthält nur gerade Potenzen, der Graph ist symmetrisch zur $y$-Achse.\n\n$$p(-2)=16-20+4=0=p(2)$$\n\nDie Identität gilt für jedes $x$. Ein Quartikum nur aus geraden Potenzen ist eine Quadratik in $x^{2}$ und damit automatisch gerade.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nDie zweite Karte ist\n\n$$p(x)=x^{4}-5x^{2}+4$$\n\n$$\\ell(x)=x^{2}-1$$\n\n$x^{2}$, ohne $x^{3}$ Begriff überhaupt. Es ist eine quadratische (eine Parabel), nicht eine kubische.\n\n$$\\ell(x)=0\\cdot x^{3}+x^{2}-1$$\n\nAufrufen $\\ell$ kubisch verwechselt es mit dem Quartik $p$. Die höchste Leistung $x^{2}$ macht $\\ell$ zu einem Quadrat.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDas Subtrahieren von $\\ell$ kann den $x^{4}$ -Begriff von $p$ nicht abbrechen, da $\\ell$ kein $x^{4}$ hat.\n\n$$p(x)-\\ell(x)=x^{4}-6x^{2}+5$$\n\nDer Koeffizient von $x^{4}$ ist $1\\neq 0$ $x^{4}$.\n\n$$(x^{2}-1)(x^{2}-5)=x^{4}+\\cdots$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$\\ell$ to contain $x^{4}$ $p-\\ell$ is $x^{4}$ .\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p(0)=4$$\n\n$$\\ell(0)=-1$$\n\nDie Rechnung widerspricht der Behauptung.\n\nDiese Zahlen unterscheiden sich. Entsprechend $p(0)-\\ell(0)=5\\neq 0$, also $x=0$ ist nicht unter den vier Treffpunkten $\\pm 1,\\pm\\sqrt{5}$ $x=0$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Aufgabentext nennt das Polynom, auf das sich jede spätere Rechnung bezieht.\n\n$$p(x)=x^{4}-5x^{2}+4$$\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\n$p-\\ell=x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen."
+  },
+  {
+    "case_id": "MATH 9.52",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Sketch Reading: Three Crossings and a Turn Between Them",
+    "context_en": "The figure shows a monic cubic $p$ whose graph meets the $x$-axis at $-2$, $1$ and $3$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p(x)=(x+2)(x-1)(x-3)$.",
+      "$p(0)=6$.",
+      "As $x\\to +\\infty$, $p(x)\\to -\\infty$.",
+      "$p$ has a turning point strictly between $1$ and $3$.",
+      "$x=2$ is a root of $p$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA monic cubic that meets the axis at three listed abscissas is the product of those three linear factors.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\nMultiply the last pair first:\n\n$$(x-1)(x-3)=x^{2}-4x+3$$\n\nThen distribute the remaining factor:\n\n$$(x+2)(x^{2}-4x+3)=x^{3}-2x^{2}-5x+6$$\n\nThe lead is $1$, matching the monic sketch.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=0$ into the named polynomial and simplify each power before combining.\n\n$$p(x)=x^{3} - 2 x^{2} - 5 x + 6$$\n\n$$0^{3}=0$$\n\n$$0^{2}=0$$\n\n$$-2\\cdot 0=0$$\n\n$$0^{1}=0$$\n\n$$-5\\cdot 0=0$$\n\n$$p(0)=0+0+0+6$$\n\n$$0+0=0$$\n\n$$0+6=6$$\n\n$$p(0)=6$$\n\nThe computed height is $6$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nFar to the right, only the highest power survives, and this cubic is monic.\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(x)=x^{3}\\left(1-\\frac{2}{x}-\\frac{5}{x^{2}}+\\frac{6}{x^{3}}\\right)$$\n\nRead the highest written power whose coefficient is nonzero.\n\nAs $x\\to+\\infty$ the bracket tends to $1$, so $p(x)$ tends to $+\\infty$ rather than to $-\\infty$. An odd power with a positive lead rises on the right.\n\nSo the statement is False.",
+      "**D.** → True\n\nBetween consecutive roots a cubic must flatten once. The consecutive zeros named here are $1$ and $3$.\n\n$$p'(x)=3x^{2}-4x-5$$\n\n$$x=\\frac{2\\pm\\sqrt{19}}{3}$$\n\nThose stationary abscissas are about $-0.79$ and $2.12$. The second sits strictly inside $(1,3)$, which Rolle's theorem already required.\n\nA sign check agrees:\n\n$$p'(1)=3-4-5$$\n\n$$p'(1)=-6<0$$\n\n while\n\n$$p'(3)=27-12-5$$\n\n$$p'(3)=10>0$$\n\n, so a root of $p'$ must sit in $(1,3)$.\n\nSo the statement is True.",
+      "**E.** → False\n\nA root is an input where the graph meets the axis, so test the candidate $x=2$ in the factored cubic.\n\n$$p(2)=(4)(1)(-1)$$\n\n$$p(2)=-4$$\n\nThe height is $-4$, not $0$. The three marked crossings are $-2$, $1$ and $3$, and $2$ is none of them.\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nExpanding is the same test: $p(2)=8-8-10+6=-4\\neq 0$. The figure's crossings never include $x=2$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure prints no expanded formula, so the polynomial is recovered from the ticks: zeros, intercept, and the far-field sign.\n\n$p(x)=(x+2)(x-1)(x-3)$ expands to a cubic with three real roots.\n\nA value is obtained by substituting the named number and collecting powers.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Skizze lesen: drei Schnittpunkte und eine Wendung dazwischen",
+    "context_de_existing": "Die Abbildung zeigt ein normiertes Kubikpolynom $p$, dessen Graph die $x$-Achse bei $-2$, $1$ und $3$ trifft. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p(x)=(x+2)(x-1)(x-3)$.",
+      "$p(0)=6$.",
+      "Für $x\\to +\\infty$, $p(x)\\to -\\infty$. Die Aussage ist zu prüfen.",
+      "$p$ has a Extremstelle strictly between $1$ and $3$ . Die Aussage wird anhand der Übersicht geprüft.",
+      "$x=2$ is a Nullstellen of $p$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie drei markierten Achsenschnitte sind die Nullstellen; bilde das normierte Produkt der Linearfaktoren.\n\n$$p(x)=(x+2)(x-1)(x-3)$$\n\nAusmultiplizieren bestätigt die Koeffizienten der angegebenen Formel. Figur und Formel beschreiben dasselbe Kubikpolynom.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nSubstitute $x=0$\n\n$$\n\\begin{aligned}\np(x)=x^{3} - 2 x^{2} - 5 x + 6 \\\\\n0^{3}=0 \\\\\n0^{2}=0 \\\\\n-2\\cdot 0=0 \\\\\n0^{1}=0 \\\\\n-5\\cdot 0=0 \\\\\np(0)=0+0+0+6 \\\\\n0+0=0 \\\\\n0+6=6 \\\\\np(0)=6\n\\end{aligned}\n$$\n\nThe computed height is $6$, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p(x)=x^{3}-2x^{2}-5x+6$$\n\n$$p(x)=x^{3}\\left(1-\\frac{2}{x}-\\frac{5}{x^{2}}+\\frac{6}{x^{3}}\\right)$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nDa $x\\to+\\infty$ die Halterung zu $1$ neigt, neigt $p(x)$ eher zu $+\\infty$ als zu $-\\infty$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nZwischen aufeinanderfolgenden Nullstellen muss ein Kubikpolynom einmal abflachen. Die hier genannten aufeinanderfolgenden Nullstellen sind $1$ und $3$.\n\n$$p'(x)=3x^{2}-4x-5,\\qquad x=\\frac{2\\pm\\sqrt{19}}{3}$$\n\nDie Extremstellen-Abszissen liegen bei etwa $-0{,}79$ und $2{,}12$. Die zweite liegt strikt in $(1,3)$, wie der Satz von Rolle verlangt.\n\nVorzeichenprobe:\n\n$$p'(1)=-6<0,\\qquad p'(3)=10>0$$\n\nAlso liegt eine Nullstelle von $p'$ in $(1,3)$.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nEine Nullstelle ist eine Stelle, an der der Graph die Achse trifft; teste den Kandidaten $x=2$ im faktorisierten Kubikpolynom.\n\n$$p(2)=(4)(1)(-1)=-4$$\n\nDie Höhe ist $-4$, nicht $0$. Die drei markierten Schnitte sind $-2$, $1$ und $3$; $2$ gehört nicht dazu.\n\nAusmultiplizieren ist derselbe Test: $p(2)=8-8-10+6=-4\\neq 0$. Die Figuren-Schnitte enthalten nie $x=2$.\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$p(x)=(x+2)(x-1)(x-3)$\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.56",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Canal Gate: Water Height as a Cubic in Minutes",
+    "context_en": "Water height in metres is\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nfor $0\\le t\\le 30$ minutes after opening a sluice. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$h(0)=0$.",
+      "$h(10)=3$.",
+      "The instantaneous rate $h'(10)$ is negative.",
+      "The highest power of $t$ in $h$ is $t^{3}$.",
+      "$h(30)=h(0)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nEach term of the height rule has a positive power of $t$, so the sluice starts at height zero.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\n$$h(0)=0$$\n\nThere is no constant term. The claimed opening height $0$ is exactly $h(0)$. Factoring $h(t)=t\\bigl(\\frac{1}{500}t^{2}-\\frac{9}{100}t+1\\bigr)$ shows the same vanishing.\n\nSo the statement is True.",
+      "**B.** → True\n\nInsert $t=10$ into the three-term rule and simplify the arithmetic.\n\n$$h(10)=\\frac{1000}{500}-\\frac{9}{100}\\cdot 100+10$$\n\n$$h(10)=2-9+10$$\n\n$$2-9=-7$$\n\n$$-7+10=3$$\n\n$$h(10)=3$$\n\nThe height is $3$ m, matching the claim. The same evaluation in decimals is $0.002\\cdot 1000-0.09\\cdot 100+10=3$, confirming the fractional arithmetic at $t=10$ minutes.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate the cubic height and evaluate the quadratic rate at $t=10$.\n\n$$h'(t)=\\frac{3}{500}t^{2}-\\frac{18}{100}t+1$$\n\n$$h'(10)=\\frac{300}{500}-\\frac{180}{100}+1$$\n\n$$h'(10)=0.6-1.8+1$$\n\n$$h'(10)=-0.2$$\n\nThat value is negative. The instantaneous rate at $t=10$ is therefore negative, not zero and not positive, matching the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe coefficient $\\frac{1}{500}$ of $t^{3}$ is not zero, and no $t^{4}$ or higher is present.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nThe written leading term is a nonzero multiple of $t^{3}$. Rewriting as $0.002t^{3}-0.09t^{2}+t$ does not cancel that cubic.\n\n$$\\frac{1}{500}\\neq 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe highest power of $t$ in $h$ is $t^{3}$.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompute the height at the right endpoint $t=30$ and compare it with the opening height $0$.\n\n$$h(0)=0$$\n\n$$h(30)=\\frac{27000}{500}-\\frac{9}{100}\\cdot 900+30$$\n\n$$h(30)=54-81+30$$\n\n$$h(30)=3$$\n\nThe two heights are $3$ and $0$, which are not equal. The sluice does not return to its starting level at $t=30$ minutes after opening the gate.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nEvaluate $h$ and $h'$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+    "title_de_existing": "Kanaltor: Wasserhöhe als Kubik in Minuten",
+    "context_de_existing": "Water height in Meter is\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nfor $0\\le t\\le 30$ Minuten after opening a sluice. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$h(0)=0$.",
+      "$h(10)=3$.",
+      "The instantaneous rate $h'(10)$ is negativ. Die Aussage ist zu prüfen.",
+      "$t$ in $h$ is $t^{3}$ . Die Aussage ist zu prüfen.",
+      "$h(30)=h(0)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nJeder Term der Höhenvorschrift hat eine positive Potenz von $t$, die Schleuse startet also bei Höhe null.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\n$$h(0)=0$$\n\nEs gibt kein konstantes Glied. Die behauptete Anfangshöhe $0$ ist genau $h(0)$. Ausklammern\n\n$$h(t)=t\\Bigl(\\frac{1}{500}t^{2}-\\frac{9}{100}t+1\\Bigr)$$\n\nzeigt dasselbe Verschwinden.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nSetze $t=10$ in die dreigliedrige Vorschrift ein und vereinfache.\n\n$$h(10)=\\frac{1000}{500}-\\frac{9}{100}\\cdot 100+10=2-9+10=3$$\n\nDie Höhe ist $3$ m und stimmt mit der Behauptung überein. Dieselbe Auswertung in Dezimalen: $0{,}002\\cdot 1000-0{,}09\\cdot 100+10=3$.\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nDifferenziere die kubische Höhe und werte die quadratische Rate bei $t=10$ aus.\n\n$$h'(t)=\\frac{3}{500}t^{2}-\\frac{18}{100}t+1$$\n\n$$h'(10)=\\frac{300}{500}-\\frac{180}{100}+1=0{,}6-1{,}8+1=-0{,}2$$\n\nDieser Wert ist negativ. Die momentane Rate bei $t=10$ ist daher negativ — weder null noch positiv — und stimmt mit der Behauptung überein.\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nDer Koeffizient $\\frac{1}{500}$ von $t^{3}$ ist nicht Nullstellen, und es ist kein $t^{4}$ oder höher vorhanden.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\n$t^{3}$ . Rewriting as $0.002t^{3}-0.09t^{2}+t$ does not cancel that cubic.\n\n$$\\frac{1}{500}\\neq 0$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$t$ in $h$ is $t^{3}$ .\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\n$t=30$ $0$ .\n\n$$h(0)=0$$\n\n$$h(30)=\\frac{27000}{500}-\\frac{9}{100}\\cdot 900+30$$\n\n$$h(30)=54-81+30$$\n\n$$h(30)=3$$\n\nDie beiden Höhen sind $3$ und $0$ $t=30$ Minuten nach dem Öffnen des Tores.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nBewerten Sie $h$ und $h'$ zu den benannten Zeiten.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen."
+  },
+  {
+    "case_id": "MATH 9.59",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Workshop Output Cost and a Recorded Total Table",
+    "context_en": "Total daily cost in euros is $C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$ for output $q$ in units. A second line records totals in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$C(0)=10$.",
+      "$C(10)=100$.",
+      "The second line's average cost per unit over $0$ to $20$ is $12$ €.",
+      "The highest interval average on the table is on $[10,15]$.",
+      "The highest power of $q$ in $C$ is $q^{3}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe constant term of the cost polynomial is the cost of producing nothing. Substitute $q=0$ into the given rule.\n\n$$C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$$\n\n$$C(0)=10$$\n\nThe table's first column records the same $10$ €. Both readings agree with the card.\n\nEvery other term of $C$ has a positive power of $q$ and vanishes at the origin, so the workshop's idle cost is the written $+10$.\n\nSo the statement is True.",
+      "**B.** → False\n\nKeep the cubic rule, not a round number. Substitute $q=10$.\n\n$$C(10)=\\frac{1000}{50}-\\frac{3}{5}\\cdot 100+40+10$$\n\n$$C(10)=20-60+40+10$$\n\n$$20-60=-40$$\n\n$$-40+40=0$$\n\n$$0+10=10$$\n\n$$C(10)=10$$\n\nThe cost is $10$ €, not $100$ €. (The table's second line lists $90$ at $q=10$, which is a different recording and is still not $100$.) The value $100$ is wrong.\n\nA misread $\\frac{1}{50}\\cdot 10^{3}=200$ would already be too large; the genuine arithmetic is $20-60+40+10=10$.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe second line is the recorded totals $10,45,90,155,250$. The average cost per unit from $q=0$ to $q=20$ is the whole-run rise divided by $20$.\n\n$$\n250-10 =240\n$$\n\n$$\n\\frac{240}{20} =12\n$$\n\nThat average is $12$ € per unit.\n\nIn euros per unit that is $\\frac{250-10}{20}=12$. The polynomial itself is a different recording and is not what the card asked for.\n\nSo the statement is True.",
+      "**D.** → False\n\nInterval averages on the table are first differences of the totals, each over a block of $5$ units.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\n$$\n\\frac{35}{5}=7,\\quad \\frac{45}{5}=9,\\quad \\frac{65}{5}=13,\\quad \\frac{95}{5}=19\n$$\n\nThe four averages are $7,9,13,19$ on $[0,5]$, $[5,10]$, $[10,15]$, $[15,20]$. The peak is $19$ on $[15,20]$, not $13$ on $[10,15]$.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe highest power is the largest exponent whose coefficient is nonzero. The given rule opens with a cubic term.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\n$$C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$$\n\nThe coefficient $\\frac{1}{50}$ is not zero, and no $q^{4}$ appears. The top power is $q^{3}$.\n\nRead the highest written power whose coefficient is nonzero.\n\nExpanding is unnecessary: the written rule already begins with $\\frac{1}{50}q^{3}$. No $q^{4}$ term is present to steal the top place.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\nInterval average costs are $\\Delta C/\\Delta q$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nOn equally spaced samples, a frozen difference layer diagnoses the degree.",
+    "title_de_existing": "Werkstatt-Outputkosten und dokumentierte Summentabelle",
+    "context_de_existing": "Die täglichen Gesamtkosten in Euro sind $C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$ für die Ausbringung $q$ in Stück. Eine zweite Zeile erfasst Summen in der Tabelle. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$C(0)=10$.",
+      "$C(10)=100$.",
+      "The second line's average cost per unit over $0$ to $20$ is $12$ €. Die Aussage wird anhand der Übersicht geprüft.",
+      "$[10,15]$ .",
+      "$q$ in $C$ is $q^{3}$ . Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$q=0$\n\n$$C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$$\n\n$$C(0)=10$$\n\n$10$ €. Beide Messwerte stimmen mit der Karte überein.\n\nJeder andere Term von $C$ $q$ $+10$.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\n$q=10$ .\n\n$$C(10)=\\frac{1000}{50}-\\frac{3}{5}\\cdot 100+40+10$$\n\n$$C(10)=20-60+40+10$$\n\n$$20-60=-40$$\n\n$$-40+40=0$$\n\n$$0+10=10$$\n\n$$C(10)=10$$\n\nDie Kosten sind $10$ €, nicht $100$ €. (Die zweite Zeile der Tabelle listet $90$ bei $q=10$ $100$.) Der Wert $100$ ist falsch.\n\nEine Fehlinterpretation $\\frac{1}{50}\\cdot 10^{3}=200$ wäre bereits zu groß; die echte Arithmetik ist $20-60+40+10=10$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie zweite Zeile sind die erfassten Summen $10,45,90,155,250$. Die durchschnittlichen Kosten pro Einheit von $q=0$ bis $q=20$ sind der Gesamtanstieg geteilt durch $20$.\n\n$$250-10=240,\\qquad \\frac{240}{20}=12$$\n\nDer Durchschnitt beträgt $12$ € pro Einheit, also $\\frac{250-10}{20}=12$. Das Polynom selbst ist eine andere Aufzeichnung und nicht das, wonach die Karte fragt.\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\n$5$ units.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\n$$\n\\frac{35}{5}=7,\\quad \\frac{45}{5}=9,\\quad \\frac{65}{5}=13,\\quad \\frac{95}{5}=19\n$$\n\nDie vier Mittelwerte sind $7,9,13,19$ auf $[0,5]$, $[5,10]$, $[10,15]$, $[15,20]$. Der Peak ist $19$ auf $[15,20]$, nicht $13$ auf $[10,15]$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie höchste Potenz ist der größte Exponent, dessen Koeffizient ungleich Null ist. Die gegebene Regel beginnt mit einem kubischen Begriff.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\n$$C(q)=\\frac{1}{50}q^{3}-\\frac{3}{5}q^{2}+4q+10$$\n\nDer Koeffizient $\\frac{1}{50}$ ist nicht Nullstelle (n), und kein $q^{4}$ $q^{3}$.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\n$\\frac{1}{50}q^{3}$ . No $q^{4}$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$$C(q)=\\frac{q^{3}}{50} - \\frac{3 q^{2}}{5} + 4 q + 10$$\n\nInterval average costs are $\\Delta C/\\Delta q$.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nOn equally spaced samples, a frozen difference layer diagnoses the Grad."
+  },
+  {
+    "case_id": "MATH 9.60",
+    "short_letters": [
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Touching the Axis at Two, Crossing at Negative One",
+    "context_en": "The figure shows a monic cubic that touches the $x$-axis at $x=2$ and crosses at $x=-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$p(x)=(x-2)^{2}(x+1)$.",
+      "$p(0)=4$.",
+      "$p'(2)=0$.",
+      "$p$ has exactly two distinct real zeros.",
+      "As $x\\to +\\infty$, $p(x)\\to -\\infty$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA touch at $x=2$ spends an even exponent on $(x-2)$; a crossing at $x=-1$ spends an odd exponent on $(x+1)$. Degree three and a monic lead leave only one possibility.\n\n$$p(x)=(x-2)^{2}(x+1)$$\n\n$$(x^{2}-4x+4)(x+1)=x^{3}-3x^{2}+4$$\n\nThe reconstruction is the stated product.\n\nNear $x=2$ the squared factor does not change sign, so the graph touches and turns back; near $x=-1$ a single factor changes sign and the graph crosses.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=0$ into the named polynomial and simplify each power before combining.\n\n$$p(x)=x^{3} - 3 x^{2} + 4$$\n\n$$0^{3}=0$$\n\n$$0^{2}=0$$\n\n$$-3\\cdot 0=0$$\n\n$$p(0)=0+0+4$$\n\n$$0+0=0$$\n\n$$0+4=4$$\n\n$$p(0)=4$$\n\nThe computed height is $4$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nA double root is automatically a stationary point. Differentiate the reconstruction and evaluate at the touch.\n\n$$p'(x)=3x^{2}-6x$$\n\n$$3x^{2}-6x=3x(x-2)$$\n\n$$p'(2)=0$$\n\nThe factor $(x-2)$ in $p'$ is inherited from the squared factor in $p$, so the tangent at $x=2$ is horizontal.\n\nThe other root of $p'$ is $x=0$, a stationary point that is not on the axis, since $p(0)=4\\neq 0$.\n\nSo the statement is True.",
+      "**D.** → True\n\nDistinct zeros are the distinct numbers at which $p$ vanishes, ignoring how often each factor is repeated.\n\n$$p(x)=(x-2)^{2}(x+1)$$\n\nThe zero set is $\\{2,-1\\}$. Multiplicity accounts for three roots in total, but only two of those roots are different numbers. Exactly two distinct real zeros appear.\n\nA multiplicity total of three is what made the cubic; it does not manufacture a third distinct abscissa. The figure shows a touch and a cross, two axis points.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe cubic is monic, so the far-right end rises.\n\n$$p(x)=x^{3}-3x^{2}+4$$\n\n$$p(x)=x^{3}\\left(1-\\frac{3}{x}+\\frac{4}{x^{3}}\\right)$$\n\nAs $x\\to+\\infty$ the bracket tends to $1$ and $x^{3}\\to+\\infty$, so $p(x)\\to+\\infty$, not to $-\\infty$. The claimed dive contradicts the positive lead.\n\nA leading coefficient of $-1$ would dive on the right, but this reconstruction is monic. The far-right end of the figure must rise.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure prints no expanded formula, so the polynomial is recovered from the ticks: zeros, intercept, and the far-field sign.\n\n$p(x)=(x-2)^{2}(x+1)$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Achse bei zwei berühren, bei minus eins schneiden",
+    "context_de_existing": "Die Abbildung zeigt ein normiertes Kubikpolynom, das die $x$-Achse bei $x=2$ berührt und bei $x=-1$ schneidet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$p(x)=(x-2)^{2}(x+1)$.",
+      "$p(0)=4$.",
+      "$p'(2)=0$.",
+      "$p$ hat genau zwei verschiedene reale Nullstellen.",
+      "Für $x\\to +\\infty$, $p(x)\\to -\\infty$. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine Berührung bei $x=2$ verbringt einen geraden Exponenten auf $(x-2)$; eine Kreuzung bei $x=-1$ verbringt einen ungeraden Exponenten auf $(x+1)$. Grad drei und eine monische Führung lassen nur eine Möglichkeit.\n\n$$p(x)=(x-2)^{2}(x+1)$$\n\n$$(x^{2}-4x+4)(x+1)=x^{3}-3x^{2}+4$$\n\nDie Rechnung bestätigt die Behauptung.\n\nNear $x=2$ $x=-1$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nSubstitute $x=0$\n\n$$\n\\begin{aligned}\np(x)=x^{3} - 3 x^{2} + 4 \\\\\n0^{3}=0 \\\\\n0^{2}=0 \\\\\n-3\\cdot 0=0 \\\\\np(0)=0+0+4 \\\\\n0+0=0 \\\\\n0+4=4 \\\\\np(0)=4\n\\end{aligned}\n$$\n\nThe computed height is $4$, übereinstimmend mit der Behauptung.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nEine Doppelwurzel ist automatisch eine Extremstelle. Differenziere die Rekonstruktion und werte an der Berührstelle aus.\n\n$$p'(x)=3x^{2}-6x=3x(x-2)$$\n\n$$p'(2)=0$$\n\nDer Faktor $(x-2)$ in $p'$ stammt vom Quadratfaktor in $p$, also ist die Tangente bei $x=2$ horizontal. Die andere Nullstelle von $p'$ ist $x=0$, eine Extremstelle nicht auf der Achse, denn $p(0)=4\\neq 0$.\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\n$p$\n\n$$p(x)=(x-2)^{2}(x+1)$$\n\nThe Nullstellen set is $\\{2,-1\\}$\n\nDie Rechnung bestätigt die Behauptung.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Rechnung widerspricht der Behauptung.\n\n$$p(x)=x^{3}-3x^{2}+4$$\n\n$$p(x)=x^{3}\\left(1-\\frac{3}{x}+\\frac{4}{x^{3}}\\right)$$\n\nWie $x\\to+\\infty$ neigt die Klammer zu $1$ und $x^{3}\\to+\\infty$, also $p(x)\\to+\\infty$, nicht zu $-\\infty$\n\nA Leitkoeffizient of $-1$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$p(x)=(x-2)^{2}(x+1)$.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.62",
+    "short_letters": [
+      0,
+      1,
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Degree of a Sum When $n>m$ (Set 1)",
+    "context_en": "Set 1. Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The highest power of $x$ in $p+q$ is $x^{n}$.",
+      "The highest power of $x$ in $p\\cdot q$ is $x^{n+m}$.",
+      "The highest power of $x$ in $p+q$ is $x^{n+m}$.",
+      "If $a_n$ and $b_m$ are both positive, $p+q$ has positive leading coefficient.",
+      "$p-q$ always has highest power $x^{n}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhen the highest powers are unequal, the taller one has nothing of the same degree to cancel against. Write $p=a_{n}x^{n}+\\cdots$ and $q=b_{m}x^{m}+\\cdots$ with $n>m$ and $a_{n}\\neq 0$.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe term $a_{n}x^{n}$ survives, and no higher power is present. The highest power in the sum is $x^{n}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nLeading terms multiply, and the exponents add. With $a_{n}\\neq 0$ and $b_{m}\\neq 0$ the product of the leads cannot vanish.\n\n$$p\\cdot q=a_{n}b_{m}x^{n+m}+\\cdots$$\n\nNo cancellation of the top term is possible, so the highest power in the product is $x^{n+m}$.\n\nRead the highest written power whose coefficient is nonzero.\n\nA concrete pair $p(x)=x^{3}$ and $q(x)=x^{2}$ produces $p\\cdot q=x^{5}$ with $n+m=5$, and the coefficient $1\\cdot 1$ cannot cancel.\n\nSo the statement is True.",
+      "**C.** → False\n\nAdding polynomials never adds the exponents; that is the product rule. A concrete pair with $n=3$ and $m=1$ separates the two operations.\n\n$$p(x)=x^{3}$$\n\n$$q(x)=x$$\n\n$$p+q=x^{3}+x$$\n\nThe highest power in the sum is $x^{3}=x^{n}$, not $x^{4}=x^{n+m}$. The claimed exponent $n+m$ belongs to $p\\cdot q$.\n\nThe same pair still has top power $x^{3}$. The exponent $n+m$ never appears in a sum.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe leading coefficient of $p+q$ is the leading coefficient of $p$, because $q$ has no $x^{n}$ term to mix with it.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nIf $a_{n}>0$, that surviving lead is positive (the sign of $b_{m}$ is irrelevant). So $p+q$ has a positive leading coefficient.\n\nRead the highest written power whose coefficient is nonzero.\n\nThe hypothesis also names $b_{m}>0$, but that lower-degree lead sits below $x^{n}$ and cannot flip the sign of $a_{n}$.\n\nSo the statement is True.",
+      "**E.** → True\n\nSubtracting $q$ still cannot touch the $x^{n}$ term of $p$, because $q$ has no such term.\n\n$$p-q=a_{n}x^{n}+\\cdots$$\n\nThe coefficient $a_{n}$ is unchanged and nonzero, so the highest power of $p-q$ remains $x^{n}$ for every such pair.\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nTaking $p(x)=x^{3}+1$ and $q(x)=x$ gives\n\n$$p-q=x^{3}-x+1$$\n\n, still of highest power $x^{3}$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nUnequal top powers cannot cancel in a sum.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nNo coefficients are fixed, so the reasoning runs on the structure of a general polynomial instead of on a single numerical example.",
+    "title_de_existing": "Grad einer Summe wenn $n>m$ (Satz 1)",
+    "context_de_existing": "Menge 1. Lasst $p$ die höchste Leistung $x^{n}$ und $q$ die höchste Leistung $x^{m}$ haben, mit $n>m\\ge 0$. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$x$ in $p+q$ is $x^{n}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p\\cdot q$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p+q$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "If $a_n$ and $b_m$ are both positiv, $p+q$ has positiv Leitkoeffizient. Die Aussage wird anhand der Übersicht geprüft.",
+      "$p-q$ $x^{n}$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$p=a_{n}x^{n}+\\cdots$ und $q=b_{m}x^{m}+\\cdots$ mit $n>m$ und $a_{n}\\neq 0$.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin von null verschiedener Koeffizient dieser höchsten Potenz macht den Grad exakt.\n\nThe term $a_{n}x^{n}$ $x^{n}$ .\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\n$a_{n}\\neq 0$ and $b_{m}\\neq 0$\n\n$$p\\cdot q=a_{n}b_{m}x^{n+m}+\\cdots$$\n\n$x^{n+m}$ .\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin konkretes Paar $p(x)=x^{3}$ und $q(x)=x^{2}$ erzeugt $p\\cdot q=x^{5}$ mit $n+m=5$, und der Koeffizient $1\\cdot 1$ kann sich nicht aufheben.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\n$n=3$ and $m=1$ separates the two operations.\n\n$$p(x)=x^{3}$$\n\n$$q(x)=x$$\n\n$$p+q=x^{3}+x$$\n\n$x^{3}=x^{n}$ , not $x^{4}=x^{n+m}$ $n+m$ belongs to $p\\cdot q$ .\n\n$x^{3}$ . The Exponent $n+m$ never appears in a sum.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDer Leitkoeffizient von $p+q$ $p$, weil $q$ keinen $x^{n}$ Term hat, um ihn zu mischen.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nIf $a_{n}>0$ $b_{m}$ is irrelevant). So $p+q$ has a positiv Leitkoeffizient.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nThe hypothesis also names $b_{m}>0$ , but that lower-Grad lead sits below $x^{n}$ $a_{n}$ .\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nSubtrahieren $q$ kann immer noch nicht den $x^{n}$ Term von $p$ berühren, weil $q$ keinen solchen Term hat.\n\n$$p-q=a_{n}x^{n}+\\cdots$$\n\nDer Koeffizient $a_{n}$ $p-q$ bleibt $x^{n}$ für jedes solche Paar.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin von null verschiedener Koeffizient dieser höchsten Potenz macht den Grad exakt.\n\nTaking $p(x)=x^{3}+1$ and $q(x)=x$ gives\n\n$$p-q=x^{3}-x+1$$\n\n$x^{3}$ .\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nUnequal top powers cannot cancel in a sum.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nSiehe die Übersicht und die Rechnungsschritte."
+  },
+  {
+    "case_id": "MATH 9.65",
+    "short_letters": [
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Inverted Cubic with Three Zeros",
+    "context_en": "The figure shows a cubic with leading coefficient $-1$ and zeros $-1$, $1$ and $3$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "As $x\\to +\\infty$, $p(x)\\to -\\infty$.",
+      "$p(1)=0$.",
+      "$p$ has two turning points.",
+      "$p(0)>0$.",
+      "The product of the zeros equals $0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA cubic whose leading coefficient is $-1$ dives on the far right, regardless of the three zeros.\n\n$$p(x)=-(x+1)(x-1)(x-3)$$\n\n$$p(x)=-x^{3}+3x^{2}+x-3$$\n\n$$p(x)=-x^{3}\\left(1-\\frac{3}{x}-\\frac{1}{x^{2}}+\\frac{3}{x^{3}}\\right)$$\n\nAs $x\\to+\\infty$ the bracket tends to $1$, so $p(x)\\to-\\infty$.\n\nThe three zeros do not affect the lead. Whether one expands $-(x^{2}-1)(x-3)$ or not, the $x^{3}$ coefficient remains $-1$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=1$ into the named polynomial and simplify each power before combining.\n\n$$p(x)=- x^{3} - 3 x^{2} - x + 3$$\n\n$$1^{3}=1$$\n\n$$-(1)=-1$$\n\n$$1^{2}=1$$\n\n$$-3\\cdot 1=-3$$\n\n$$1^{1}=1$$\n\n$$-(1)=-1$$\n\n$$p(1)=-1-3-1+3$$\n\n$$-1-3=-4$$\n\n$$-4-1=-5$$\n\n$$-5+3=-2$$\n\n$$p(1)=-2$$\n\nThe computed height is $-2$, which does not match the claimed $0$.\n\nSo the statement is True.",
+      "**C.** → True\n\nA generic cubic has two turning points, located where the derivative (a quadratic) has two distinct real roots.\n\n$$p'(x)=-3x^{2}+6x+1$$\n\nThe discriminant of that quadratic is $36+12=48>0$, so there are two distinct real stationary abscissas. Two turning points appear.\n\nA cubic derivative is a quadratic. Discriminant $48>0$ means two distinct real roots, hence two distinct turning abscissas.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe $y$-intercept is the product of the three zeros, with a minus from the leading coefficient $-1$.\n\n$$p(0)=-(1)(-1)(-3)$$\n\n$$p(0)=-3$$\n\nThe intercept is negative, so the comparison $p(0)>0$ fails. The graph sits three units below the origin.\n\nRead the highest written power whose coefficient is nonzero.\n\nThe expanded form $-x^{3}+3x^{2}+x-3$ ends with $-3$, the same intercept. The graph sits below the origin.\n\nSo the statement is False.",
+      "**E.** → False\n\nMultiply the three listed zeros.\n\n$$\n(-1)\\cdot(1)\\cdot(3) =-3\n$$\n\nThe product is $-3$, not $0$. A product of zeros is zero only when one of the zeros itself is $0$, and $0$ is not among $-1$, $1$, $3$.\n\nVieta's product for lead $-1$ is $p(0)=-3$, not $0$. A zero product would have required a factor $x$, which this cubic does not have.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure prints no expanded formula, so the polynomial is recovered from the ticks: zeros, intercept, and the far-field sign.\n\n$p(x)=-x^{3} - 3 x^{2} - x + 3$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nThe factor theorem is a substitution: $x-r$ divides a polynomial if and only if the value at $r$ is zero.",
+    "title_de_existing": "Invertierte Kubik mit drei Nullstellen",
+    "context_de_existing": "Die Abbildung zeigt ein Kubikpolynom mit Leitkoeffizient $-1$ und Nullstellen $-1$, $1$ und $3$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "Für $x\\to +\\infty$, $p(x)\\to -\\infty$. Die Aussage ist zu prüfen.",
+      "$p(1)=0$.",
+      "$p$ has two Extremstellen.",
+      "$p(0)>0$.",
+      "$0$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEin Kubikpolynom mit Leitkoeffizient $-1$ fällt rechts außen ab, unabhängig von den drei Nullstellen.\n\n$$p(x)=-(x+1)(x-1)(x-3)=-x^{3}+3x^{2}+x-3$$\n\n$$p(x)=-x^{3}\\Bigl(1-\\frac{3}{x}-\\frac{1}{x^{2}}+\\frac{3}{x^{3}}\\Bigr)$$\n\nFür $x\\to+\\infty$ geht die Klammer gegen $1$, also $p(x)\\to-\\infty$.\n\nDie drei Nullstellen ändern den Leitterm nicht; der Koeffizient von $x^{3}$ bleibt $-1$.\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nSubstitute $x=1$\n\n$$\n\\begin{aligned}\np(x)=- x^{3} - 3 x^{2} - x + 3 \\\\\n1^{3}=1 \\\\\n-(1)=-1 \\\\\n1^{2}=1 \\\\\n-3\\cdot 1=-3 \\\\\n1^{1}=1 \\\\\n-(1)=-1 \\\\\np(1)=-1-3-1+3 \\\\\n-1-3=-4 \\\\\n-4-1=-5 \\\\\n-5+3=-2 \\\\\np(1)=-2\n\\end{aligned}\n$$\n\n$-2$ $0$ .\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p'(x)=-3x^{2}+6x+1$$\n\n$36+12=48>0$\n\nEine kubische Ableitung ist eine quadratische. Diskriminant $48>0$ bedeutet zwei verschiedene reale Nullstellen, daher zwei verschiedene Abszissen.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nThe $y$ $-1$ .\n\n$$p(0)=-(1)(-1)(-3)$$\n\n$$p(0)=-3$$\n\n$p(0)>0$\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nThe expanded form $-x^{3}+3x^{2}+x-3$ ends with $-3$\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nMultiply the three listed Nullstellen.\n\n$$\n(-1)\\cdot(1)\\cdot(3) =-3\n$$\n\nDas Produkt ist $-3$, nicht $0$ $0$, und $0$ ist nicht unter $-1$, $1$, $3$.\n\nVietas Produkt für Blei $-1$ ist $p(0)=-3$, nicht $0$. Ein Nullstellen Produkt hätte einen Faktor $x$ benötigt.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\n$p(x)=-x^{3} - 3 x^{2} - x + 3$.\n\nEinen Wert erhält man durch Einsetzen der genannten Zahl und Zusammenfassen der Potenzen.\n\n$x-r$ $r$ is Nullstellen."
+  },
+  {
+    "case_id": "MATH 9.67",
+    "short_letters": [
+      0,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "W: Warehouse Throughput",
+    "context_en": "A model gives $W(t)=\\frac{t \\left(t^{2} - 30 t + 200\\right)}{100}$ for $t\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$W'(5)>0$.",
+      "$W(5)=\\frac{15}{4}$.",
+      "The highest power of $t$ in $W$ is $t^{3}$.",
+      "$W(0)=0$.",
+      "$W$ is a quadratic function."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nDifferentiate the throughput cubic and evaluate the derivative at $t=5$. Expand first to make the powers visible.\n\n$$W(t)=\\frac{t^{3}}{100}-\\frac{3}{10}t^{2}+2t$$\n\n$$W'(t)=\\frac{3t^{2}}{100}-\\frac{3}{5}t+2$$\n\n$$W'(5)=\\frac{75}{100}-3+2$$\n\n$$W'(5)=-\\frac{1}{4}$$\n\nThe slope is negative, so $W'(5)>0$ fails.\n\nAn equivalent derivative from the unexpanded rule is $W'(t)=\\frac{3t^{2}-60t+200}{100}$, and at $t=5$ the numerator is $75-300+200=-25$.\n\nSo the statement is False.",
+      "**B.** → True\n\nSubstitute $t=5$ into the factored rule.\n\n$$W(5)=\\frac{5(25-150+200)}{100}$$\n\n$$W(5)=\\frac{5\\cdot 75}{100}$$\n\n$$W(5)=\\frac{375}{100}$$\n\n$$W(5)=\\frac{15}{4}$$\n\nThe value is exactly $\\frac{15}{4}$.\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nClearing the same fraction another way:\n\n$$W(5)=\\frac{5\\cdot 75}{100}$$\n\n$$W(5)=\\frac{375}{100}$$\n\n$$W(5)=3.75$$\n\n, which is $\\frac{15}{4}$. Expanding first gives\n\n$$\\frac{125}{100}-\\frac{75}{10}+10$$\n\n$$W(5)=\\frac{5}{4}-7.5+10$$\n\n$$\\frac{125}{100}-\\frac{75}{10}+10$$\n\n$$W(5)=\\frac{15}{4}$$\n\n.\n\nSo the statement is True.",
+      "**C.** → True\n\nClear the denominator and read the largest exponent whose coefficient survives.\n\n$$W(t)=\\frac{1}{100}t^{3}-\\frac{3}{10}t^{2}+2t$$\n\nThe coefficient of $t^{3}$ is $\\frac{1}{100}\\neq 0$, and no higher power appears. The highest power of $t$ in $W$ is $t^{3}$.\n\nRead the highest written power whose coefficient is nonzero.\n\nThe expanded numerator $t^{3}-30t^{2}+200t$ already shows the cubic term. Dividing by $100$ does not lower the degree.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe factored model has a factor of $t$ in the numerator, so the origin is a root.\n\n$$W(0)=\\frac{0\\cdot(0-0+200)}{100}$$\n\n$$W(0)=0$$\n\nProducing nothing at time $0$ records throughput $0$. The value is $0$.\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nEvery term of $W$ has a factor $t$, so the zero-output at time $0$ is built into the formula, not an extra assumption.\n\nSo the statement is True.",
+      "**E.** → False\n\nA quadratic function has highest power $t^{2}$. This model has a genuine cubic term.\n\n$$W(t)=\\frac{1}{100}t^{3}-\\frac{3}{10}t^{2}+2t$$\n\nThe $t^{3}$ coefficient $\\frac{1}{100}$ is not zero, so $W$ is cubic, not quadratic. Letter C already identified the top power as $t^{3}$.\n\nA quadratic would have vanishing third differences on a uniform sample; this $W$ has a genuine $t^{3}$ coefficient $\\frac{1}{100}$.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\nDifferentiate $W$ and evaluate at the named input.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.",
+    "title_de_existing": "W: Lagerdurchsatz",
+    "context_de_existing": "A model gives $W(t)=\\frac{t \\left(t^{2} - 30 t + 200\\right)}{100}$ for $t\\ge 0$. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$W'(5)>0$.",
+      "$W(5)=\\frac{15}{4}$.",
+      "$t$ in $W$ is $t^{3}$ . Die Aussage ist zu prüfen.",
+      "$W(0)=0$.",
+      "$W$ is a quadratic function. Die Aussage ist zu prüfen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nErweitern Sie zuerst, um die Kräfte sichtbar zu machen.\n\n$$W(t)=\\frac{t^{3}}{100}-\\frac{3}{10}t^{2}+2t$$\n\n$$W'(t)=\\frac{3t^{2}}{100}-\\frac{3}{5}t+2$$\n\n$$W'(5)=\\frac{75}{100}-3+2$$\n\n$$W'(5)=-\\frac{1}{4}$$\n\n$W'(5)>0$ fails.\n\n$W'(t)=\\frac{3t^{2}-60t+200}{100}$, und bei $t=5$ ist der Zähler $75-300+200=-25$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nSubstitute $t=5$ into the factored rule.\n\n$$\n\\begin{aligned}\nW(5)=\\frac{5(25-150+200)}{100} \\\\\nW(5)=\\frac{5\\cdot 75}{100} \\\\\nW(5)=\\frac{375}{100} \\\\\nW(5)=\\frac{15}{4}\n\\end{aligned}\n$$\n\n$\\frac{15}{4}$ .\n\nDer Faktortest ist die Substitution, die fragt, ob die Höhe an dieser Abszisse verschwindet.\n\nClearing the same fraction another way:\n\n$$\n\\begin{aligned}\nW(5)=\\frac{5\\cdot 75}{100} \\\\\nW(5)=\\frac{375}{100} \\\\\nW(5)=3.75\n\\end{aligned}\n$$\n\n, was $\\frac{15}{4}$ ist. Erweiterung der First Gives\n\n$$\n\\begin{aligned}\n\\frac{125}{100}-\\frac{75}{10}+10 \\\\\nW(5)=\\frac{5}{4}-7.5+10 \\\\\n\\frac{125}{100}-\\frac{75}{10}+10 \\\\\nW(5)=\\frac{15}{4}\n\\end{aligned}\n$$\n\n.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nLöschen Sie den Nenner und lesen Sie den größten Exponenten, dessen Koeffizient überlebt.\n\n$$W(t)=\\frac{1}{100}t^{3}-\\frac{3}{10}t^{2}+2t$$\n\nDer Koeffizient von $t^{3}$ ist $\\frac{1}{100}\\neq 0$ $t$ in $W$ ist $t^{3}$.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nDer erweiterte Zähler $t^{3}-30t^{2}+200t$ zeigt bereits den kubischen Term. Das Teilen durch $100$ senkt den Grad nicht.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nDas faktorisierte Modell hat im Zähler einen Faktor $t$, also ist der Ursprung eine Nullstelle.\n\n$$W(0)=\\frac{0\\cdot(0-0+200)}{100}=0$$\n\nProduktion null zur Zeit $0$ bedeutet Durchsatz $0$. Der Wert ist $0$. Jeder Term von $W$ trägt einen Faktor $t$; die Null-Ausgabe zur Zeit $0$ steckt in der Formel.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\n$t^{2}$\n\n$$W(t)=\\frac{1}{100}t^{3}-\\frac{3}{10}t^{2}+2t$$\n\nThe $t^{3}$ Koeffizient $\\frac{1}{100}$ is not Nullstellen, so $W$ $t^{3}$ .\n\n$W$ has a genuine $t^{3}$ Koeffizient $\\frac{1}{100}$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nDifferentiate $W$\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist."
+  },
+  {
+    "case_id": "MATH 9.73",
+    "short_letters": [
+      1,
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Degree of a Sum When $n>m$ (Set 2)",
+    "context_en": "Set 2. Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The highest power of $x$ in $p+q$ is $x^{n}$.",
+      "The highest power of $x$ in $p\\cdot q$ is $x^{n+m}$.",
+      "The highest power of $x$ in $p+q$ is $x^{n+m}$.",
+      "If $a_n$ and $b_m$ are both positive, $p+q$ has positive leading coefficient.",
+      "$p-q$ always has highest power $x^{n}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nUnequal top powers cannot cancel in a sum. With $n>m$ the $x^{n}$ term of $p$ has no partner in $q$.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nThe coefficient $a_{n}$ is nonzero and no higher power appears, so the highest power in $p+q$ is $x^{n}$.\n\nRead the highest written power whose coefficient is nonzero.\n\nA working pair: $p(x)=x^{4}$ and $q(x)=x$ give\n\n$$p+q=x^{4}+x$$\n\n, whose highest power is $x^{4}=x^{n}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nLeading terms multiply and exponents add. Neither lead is zero, so the top term of the product survives.\n\n$$p\\cdot q=a_{n}b_{m}x^{n+m}+\\cdots$$\n\nA concrete check: $x^{3}\\cdot x^{2}=x^{5}$ with $n+m=5$. The highest power in the product is $x^{n+m}$.\n\nRead the highest written power whose coefficient is nonzero.\n\nThe coefficient $a_{n}b_{m}$ is a product of two nonzero numbers, hence nonzero. No cancellation of $x^{n+m}$ can occur.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe exponent $n+m$ is the product rule, not the sum rule. Take $n=2$ and $m=1$.\n\n$$p(x)=x^{2}$$\n\n$$q(x)=x$$\n\n$$p+q=x^{2}+x$$\n\nThe highest power in the sum is $x^{2}=x^{n}$, not $x^{3}=x^{n+m}$. Adding never adds the exponents.\n\nRead the highest written power whose coefficient is nonzero.\n\nThe same pair has product $x^{3}$, which is $x^{n+m}$, a different polynomial from the sum. Mixing the two rules is the error.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe leading coefficient of the sum is $a_{n}$, because $q$ contributes nothing at degree $n$.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nIf $a_{n}>0$ that surviving lead is positive, whatever the sign of $b_{m}$. So $p+q$ has a positive leading coefficient.\n\nRead the highest written power whose coefficient is nonzero.\n\nA numerical pair $p(x)=2x^{3}$ and $q(x)=5x$ has $a_{n}=2>0$ and $b_{m}=5>0$, and $p+q=2x^{3}+5x$ still opens with $+2$.\n\nSo the statement is True.",
+      "**E.** → True\n\nSubtracting a strictly lower-degree polynomial leaves the top term of $p$ untouched.\n\n$$p-q=a_{n}x^{n}+\\cdots$$\n\nSince $a_{n}\\neq 0$, the highest power of $p-q$ is always $x^{n}$ under the hypothesis $n>m$.\n\nRead the highest written power whose coefficient is nonzero.\n\nWith $p(x)=x^{3}-1$ and $q(x)=x^{2}$ one gets $p-q=x^{3}-x^{2}-1$, still of highest power $x^{3}$. The $x^{n}$ coefficient of $p$ is never touched by a strictly lower-degree $q$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything is stated for a general polynomial, so the reasoning runs on highest powers, parity, and the factor theorem instead of on a single numerical example.\n\nUnequal top powers cannot cancel in a sum.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nNo coefficients are fixed, so the reasoning runs on the structure of a general polynomial instead of on a single numerical example.",
+    "title_de_existing": "Grad einer Summe wenn $n>m$ (Satz 2)",
+    "context_de_existing": "Menge 2. Lassen Sie $p$ die höchste Leistung $x^{n}$ und $q$ die höchste Leistung $x^{m}$ haben, mit $n>m\\ge 0$. Bewertete jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$x$ in $p+q$ is $x^{n}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p\\cdot q$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "$x$ in $p+q$ is $x^{n+m}$ . Die Aussage ist zu prüfen.",
+      "If $a_n$ and $b_m$ are both positiv, $p+q$ has positiv Leitkoeffizient. Die Aussage wird anhand der Übersicht geprüft.",
+      "$p-q$ $x^{n}$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nUngleiche Obermächte können nicht in einer Summe abbrechen. Mit $n>m$ hat der $x^{n}$ Term von $p$ keinen Partner in $q$.\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nThe Koeffizient $a_{n}$ $p+q$ is $x^{n}$ .\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nA working pair: $p(x)=x^{4}$ and $q(x)=x$ give\n\n$$p+q=x^{4}+x$$\n\n$x^{4}=x^{n}$ .\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nDie Rechnung bestätigt die Behauptung.\n\n$$p\\cdot q=a_{n}b_{m}x^{n+m}+\\cdots$$\n\nA concrete check: $x^{3}\\cdot x^{2}=x^{5}$ with $n+m=5$ $x^{n+m}$ .\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nThe Koeffizient $a_{n}b_{m}$ $x^{n+m}$ can occur.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nThe Exponent $n+m$ $n=2$ and $m=1$ .\n\n$$p(x)=x^{2}$$\n\n$$q(x)=x$$\n\n$$p+q=x^{2}+x$$\n\n$x^{2}=x^{n}$ , not $x^{3}=x^{n+m}$ . Adding never adds the Exponenten.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nDas gleiche Paar hat Produkt $x^{3}$, das ist $x^{n+m}$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$a_{n}$ , because $q$ contributes nothing at Grad $n$ .\n\n$$p+q=a_{n}x^{n}+\\cdots$$\n\nIf $a_{n}>0$ $b_{m}$ . So $p+q$ has a positiv Leitkoeffizient.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nEin numerisches Paar $p(x)=2x^{3}$ und $q(x)=5x$ hat $a_{n}=2>0$ und $b_{m}=5>0$ und $p+q=2x^{3}+5x$ öffnet sich immer noch mit $+2$.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\n$p$ untouched.\n\n$$p-q=a_{n}x^{n}+\\cdots$$\n\nDa $a_{n}\\neq 0$ $p-q$ immer $x^{n}$ unter der Hypothese $n>m$ ist.\n\nLies die höchste geschriebene Potenz, deren Koeffizient nicht null ist.\n\nMit $p(x)=x^{3}-1$ und $q(x)=x^{2}$ erhält man $p-q=x^{3}-x^{2}-1$ $x^{3}$. Der $x^{n}$ Koeffizient von $p$ wird nie von einem strikt niedrigeren Grad $q$ berührt.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Siehe die Übersicht und die Rechnungsschritte.\n\nUnequal top powers cannot cancel in a sum.\n\nGrad und Leitkoeffizient liest man aus der höchsten geschriebenen Potenz ab, deren Koeffizient nicht null ist.\n\nSiehe die Übersicht und die Rechnungsschritte."
+  }
+]

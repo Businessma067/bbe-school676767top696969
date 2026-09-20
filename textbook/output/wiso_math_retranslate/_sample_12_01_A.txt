@@ -1,0 +1,21 @@
+**A.** → Falsch
+
+Diese Aussage fragt nach der Gesamtzahl der möglichen Ausschüsse. Wie in der Lösungsübersicht festgelegt, wird die Gesamtzahl der Möglichkeiten, ein Ausschuss aus $4$ -Personen aus $12$ -Mitgliedern auszuwählen, durch die Kombinationsformel $\binom{12}{4}$ angegeben. $$
+N(\text{total committees}) = \binom{12}{4}
+$$ $$
+\binom{12}{4} = \dfrac{12!}{4!(12-4)!}
+$$ $$
+\dfrac{12!}{4!(8)!} = \dfrac{12 \cdot 11 \cdot 10 \cdot 9}{1 \cdot 2 \cdot 3 \cdot 4}
+$$ $$
+12 \cdot 11 = 132
+$$ $$
+132 \cdot 10 = 1320
+$$ $$
+1320 \cdot 9 = 11880
+$$ $$
+\dfrac{11880}{24} = 495
+$$ $$
+\binom{12}{4} = 495
+$$ Die Behauptung besagt, dass die Gesamtzahl der möglichen Ausschüsse $792$ beträgt.
+
+Die Aussage ist falsch.

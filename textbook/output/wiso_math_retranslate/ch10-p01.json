@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "MATH 10.1.9",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Piecewise continuous force — switch at letter $T$",
+    "context_en": "A fund follows the piecewise continuous-exponential rule $$P(t)=\\begin{cases}P_0 e^{k_1 t},&0\\le t\\le T,\\\\[4pt]P_0 e^{k_1 T}e^{k_2(t-T)},&t>T,\\end{cases}$$ with letters $P_0>0$, $T>0$, and forces $k_1,k_2\\in\\mathbb{R}$ (not necessarily equal). Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$P$ jumps discontinuously at the switch time $t=T$.",
+      "If $k_1\\neq k_2$, then $P$ fails to be continuous at $t=T$.",
+      "For $t>T$, $\\ln P(t)=\\ln P_0+k_1 T+k_2(t-T)$.",
+      "The average force on $[0,T]$ recovered from $\\dfrac{1}{T}\\ln\\dfrac{P(T)}{P_0}$ equals $k_2$.",
+      "One may replace the whole path by the single force $k_1$ for all $t\\ge 0$ without changing any value, even when $k_2\\neq k_1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nEvaluate the left- and right-hand limits at the switch.\n\n$$P(T) = P_0 e^{k_1 T}$$\n\n$$\n\\lim_{t\\downarrow T}P(t) = P_0 e^{k_1 T}e^{k_2\\cdot 0} = P_0 e^{k_1 T}\n$$\n\nThe two sides agree, so $P$ is continuous at $t=T$ and does not jump.\n\nA single generic counter-example under the stem letters is enough to reject statement A.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nContinuity at $T$ uses only the matching factor $P_0 e^{k_1 T}$, which appears in both pieces. Whether $k_1$ equals $k_2$ affects the later slope, not the common value at the switch.\n\n$$\nP(T^{-}) = P(T^{+}) = P_0 e^{k_1 T}\n$$\n\nUnequal forces therefore do not create a discontinuity.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nFor $t>T$ insert the second piece and take the natural log.\n\n$$P(t) = P_0 e^{k_1 T}e^{k_2(t-T)}$$\n\n$$\\ln P(t) = \\ln P_0+k_1 T+k_2(t-T)$$\n\nThat is exactly the claimed affine expression.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nOn the first piece the average force over $[0,T]$ is the log increment divided by the length.\n\n$$\n\\frac{1}{T}\\ln\\frac{P(T)}{P_0} = \\frac{1}{T}\\ln\\frac{P_0 e^{k_1 T}}{P_0} = k_1\n$$\n\nThe recovered average equals $k_1$, not the later force $k_2$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nA global force $k_1$ would produce\n\n$$P_{\\mathrm{global}}(t) = P_0 e^{k_1 t}$$\n\nfor every $t\\ge 0$. After the switch the true path uses $k_2$ instead.\n\n$$P(t) = P_0 e^{k_1 T}e^{k_2(t-T)}\\qquad(t>T)$$\n\nWhenever $k_2\\neq k_1$ these formulas disagree for $t>T$, so the global replacement changes later levels.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "The piecewise fund matches values at the switch so the path stays continuous.\n\n$$\nP(T^{-}) = P_0 e^{k_1 T} = P(T^{+})\n$$\n\nAfter $T$ the log is affine with slope $k_2$, while the average force on $[0,T]$ recovers $k_1$. A single global force $k_1$ cannot replace a genuine later switch.",
+    "title_de_existing": "Stückweise stetige Intensität — Wechsel bei Buchstabe $T$",
+    "context_de_existing": "Ein Fonds folgt der steckweise stetig-exponentiell Regel $$ P(t)=\\begin{cases}P_0 e^{k_1 t},&0\\le t\\le T,\\\\[4pt]P_0 e^{k_1 T}e^{k_2(t-T)},&t>T,\\end{cases}$$ mit Buchstaben $ P_0>0$, $ T>0$, und zwingt $ k_1,k_2\\in\\mathbb{R}$ (nicht unbedingt gleich).",
+    "statements_de_existing": [
+      "$ P $ Strategien springen diskontinuierlich zur Schaltzeit $ t=T $.",
+      "Wenn $ k_1\\neq k_2$ site, dann ist $ P $ nicht kontinuierlich bei $ t=T $. decision,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Produktivität Debates,,,,,,,,,,,, civil,,,,,,,,,,,",
+      "Für $ t>T $, $\\ln P(t)=\\ln P_0+k_1 T+k_2(t-T)$.",
+      "Die durchschnittliche Intensität auf Strategien $[0,T]$, die aus $\\dfrac{1}{T}\\ln\\dfrac{P(T)}{P_0}$ gewonnen wurde, entspricht $ k_2$. Dienstleistungsbelebung",
+      "Man kann den gesamten Pfad Strategien für $ t\\ge 0$ durch die einzige Intensität $ k_1$ für alle $ t\\ge 0$ ersetzen, Dienstleistungsbelebungen ohne einen Wert zu ändern, auch wenn $ k_2\\neq k_1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nBewertet die linken Strategien und die Rechte am Schalter.\n\n $$ P(T) = P_0 e^{k_1 T}$$\n\n $$\n\\lim_{t\\downarrow T}P(t) = P_0 e^{k_1 T}e^{k_2\\cdot 0} = P_0 e^{k_1 T}\n$$\n\nDie beiden Seiten stimmen überein Strategien $ P $ ist kontinuierlich bei $ t=T $ und nicht springen.\n\nEin einziges generisches Gegenspiel unter den Buchstaben der Auflage reicht aus, um Verbriefungsaussage A zu verwerfen.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDie Kontinuität bei $ T $ verwendet nur betreffende Faktoren $ P_0 e^{k_1 T}$, die in beiden Teilen erscheinen. Ob MA endete, ist nicht der übliche Wert am Schalter, sondern der Faktor, der auf der späteren Steigung beruht.\n\n $$\nP(T^{-}) = P(T^{+}) = P_0 e^{k_1 T}\n$$\n\nUngleiche Kräfte erzeugen daher keine Diskontinuität.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $ t>T $ das zweite Stück einfügen und das natürliche Log protected nehmen.\n\n $$ P(t) = P_0 e^{k_1 T}e^{k_2(t-T)}$$\n\n $$\\ln P(t) = \\ln P_0+k_1 T+k_2(t-T)$$\n\nDas ist genau der beanspruchte affine Ausdruck.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nAuf dem ersten Stück ist die durchschnittliche Intensität lo $[0,T]$ der durch die Länge geteilte Block-Schritt.\n\n $$\n\\frac{1}{T}\\ln\\frac{P(T)}{P_0} = \\frac{1}{T}\\ln\\frac{P_0 e^{k_1 T}}{P_0} = k_1\n$$\n\nDer wiedergewonnene Durchschnitt entspricht $ k_1$, nicht protected-Wert $ k_2$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nEine globale Intensität $ k_1$ würde produzieren\n\n $$ P_{\\mathrm{global}}(t) = P_0 e^{k_1 t}$$\n\nfür jeden $ t\\ge 0$. Nach dem Schalter verwendet der protected-Pfad stattdessen $ k_2$.\n\n $$ P(t) = P_0 e^{k_1 T}e^{k_2(t-T)}\\qquad(t>T)$$\n\nWann immer $ k_2\\neq k_1$ diese Formeln für $ t>T $ nicht übereinstimmen, so ändert sich der globale Ersatz später.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Stückweiser Strategienfonds entspricht den Werten am Schalter, so dass der Pfad kontinuierlich bleibt.\n\n $$\nP(T^{-}) = P_0 e^{k_1 T} = P(T^{+})\n$$\n\nNach $ T $ ist das Log mit der Steigung $ k_2$ affin"
+  },
+  {
+    "case_id": "MATH 10.2.23",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Symbolic false-friend identities among logarithms",
+    "context_en": "Let $a>0$, $b>0$, $b\\neq 1$, and $c\\in\\mathbb{R}$. Decide which identities are universal. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$\\log_{b}(a^{c})=c\\log_{b}a$.",
+      "$\\log_{b}(a)+\\log_{b}(a)=\\log_{b}(a^{2})$.",
+      "$\\log_{b}(a)+\\log_{b}(a)=(\\log_{b}a)^{2}$.",
+      "$\\log_{b}(1/a)=-\\log_{b}a$.",
+      "With $a=4$, $b=4$ and base $2$, both $\\log(a+b)$ and $\\log a+\\log b$ equal $3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe power law moves a real exponent across a logarithm.\n\n$$\\log_{b}(a^{c}) = c\\log_{b}a\\qquad(a>0)$$\n\nIt follows from $b^{c\\log_{b}a}=(b^{\\log_{b}a})^{c}=a^{c}$. The claim is exactly this identity.\n\nThe identity holds for every real exponent $c$, including negative and non-integer values.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nAdd the same logarithm to itself and invoke the power law.\n\n$$\n\\log_{b}a+\\log_{b}a = 2\\log_{b}a = \\log_{b}(a^{2})\n$$\n\nThe two sides agree for every $a>0$, so the claim holds.\n\nBoth sides equal $2\\log_{b}a$, so the identity is the power law in additive disguise.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe left side is twice the log, while the right side is the square of the log.\n\n$$\\log_{b}a+\\log_{b}a = 2\\log_{b}a$$\n\n$$(\\log_{b}a)^{2}$$\n\nThese agree only for special values of $\\log_{b}a$, not universally. The claimed identity fails.\n\nFor $\\log_{b}a=3$ one would need $6=9$, which fails.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nRewrite the reciprocal as a power and apply the power law.\n\n$$\n\\log_{b}\\!\\left(\\frac{1}{a}\\right) = \\log_{b}(a^{-1}) = -1\\cdot\\log_{b}a = -\\log_{b}a\n$$\n\nThe identity holds for every $a>0$.\n\nThe reciprocal identity is the power law at the exponent $-1$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nAddition inside a logarithm is not an identity. Counter-example:\n\n$$\n\\log(1+1) = \\log 2\\neq 0 = \\log 1+\\log 1\n$$\n\nNo universal law $\\log(a+b)=\\log a+\\log b$ exists on $a,b>0$.\n\nProduct, quotient, and power survive; addition inside does not.\n\nConcrete check for the rewritten claim. Left $\\log_2 8=3$, right $2+2=4$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Keep $a>0$, $b>0$ with $b\\neq 1$, and real $c$. The power and reciprocal laws hold, and doubling a log is the log of a square. Squaring the log value is a false friend, and addition inside a logarithm is not a law.",
+    "title_de_existing": "Symbolische Scheinidentitäten bei Logarithmen",
+    "context_de_existing": "$a>0$, $b>0$, $b\\neq 1$, und $c\\in\\mathbb{R}$. Entscheiden Sie, welche Identitäten universell sind. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "statements_de_existing": [
+      "$\\log_{b}(a^{c})=c\\log_{b}a$.",
+      "$\\log_{b}(a)+\\log_{b}(a)=\\log_{b}(a^{2})$.",
+      "$\\log_{b}(a)+\\log_{b}(a)=(\\log_{b}a)^{2}$.",
+      "$\\log_{b}(1/a)=-\\log_{b}a$.",
+      "Mit $a=4$, $b=4$ und Basis $2$ sind sowohl $\\log(a+b)$ als auch $\\log a+\\log b$ gleich $3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDas Machtgesetz bewegt einen echten Exponenten über einen Logarithmus. $$\\log_{b}(a^{c}) = c\\log_{b}a\\qquad(a>0)$$ Es folgt aus $b^{c\\log_{b}a}=(b^{\\log_{b}a})^{c}=a^{c}$. Der Anspruch ist genau diese Identität.\n\nDie Identität hält für jeden echten Exponenten $c$, einschließlich negativer und nicht-integer Werte.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nFügen Sie den gleichen Logarithmus zu sich und rufen Sie das Machtgesetz. $$\n\\log_{b}a+\\log_{b}a = 2\\log_{b}a = \\log_{b}(a^{2})\n$$ Die beiden Seiten stimmen für jeden $a>0$ überein, so dass der Anspruch gilt.\n\nBeide Seiten sind gleich $2\\log_{b}a$, also ist die Identität das Machtgesetz in additiver Verkleidung.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nDie linke Seite ist doppelt so groß wie das Logbuch, während die rechte Seite das Quadrat des Logbuches ist. $$\\log_{b}a+\\log_{b}a = 2\\log_{b}a$$ $$(\\log_{b}a)^{2}$$ Diese stimmen nur für spezielle Werte von $\\log_{b}a$ zu, nicht universell. Die beanspruchte Identität versagt.\n\nFür $\\log_{b}a=3$ würde man $6=9$ brauchen, was fehlschlägt.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nSchreibt das Gegenseitige als Macht um und wendet das Machtgesetz an. $$\n\\log_{b}\\!\\left(\\frac{1}{a}\\right) = \\log_{b}(a^{-1}) = -1\\cdot\\log_{b}a = -\\log_{b}a\n$$ Die Identität hält für jeden $a>0$.\n\nDie gegenseitige Identität ist das Machtgesetz des Exponenten $-1$.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nAddition innerhalb eines Logarithmus ist keine Identität. Gegenbeispiel:\n\n$$\n\\log_2(4+4)=\\log_2 8=3,\\qquad \\log_2 4+\\log_2 4=2+2=4.\n$$\n\nDie beiden Seiten stimmen nicht überein.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Halten Sie $a>0$, $b>0$ mit $b\\neq 1$ und echte $c$. Die Macht und die wechselseitigen Gesetze halten, und das Verdoppeln eines Logs ist das Log eines Quadrats. Der Logwert ist ein Falk-Freund, und die Ergänzung innerhalb eines Logarithmus ist kein Gesetz."
+  },
+  {
+    "case_id": "MATH 10.2.43",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Symbolic substitution preparing a quadratic in $u=\\ln x$",
+    "context_en": "Consider $$(\\ln x)^{2}-(\\ln x)-2=0$$ for $x>0$. Set $u=\\ln x$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The quadratic is $(u-2)(u+1)=0$.",
+      "The solutions are $u=2$ and $u=-1$.",
+      "The corresponding $x$-values are $x=e^{2}$ and $x=e^{-1}$.",
+      "Elasticity in $Q=AP^{-\\beta}$ equals $-A$.",
+      "$x=1$ is also a root because $\\ln 1=0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nExpand the proposed factorisation.\n\n$$(u-2)(u+1) = u^{2}-u-2$$\n\nThat matches the quadratic obtained after $u=\\ln x$, so the factorisation is correct.\n\nThe middle term $-u$ matches $-2u+u$ from the expansion of $(u-2)(u+1)$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nSet each factor equal to zero.\n\n$$u-2 = 0$$\n\n$$u = 2$$\n\n$$u+1 = 0$$\n\n$$u = -1$$\n\nThose are the two solutions in the $u$-variable.\n\nNo other roots exist for a quadratic that already factors completely over the reals.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nReturn to $x$ through the exponential inverse $x=e^{u}$.\n\n$$u = 2$$\n\n$$\nx = e^{2}\n$$\n\n$$u = -1$$\n\n$$\nx = e^{-1}\n$$\n\nThose are the corresponding positive $x$-roots.\n\nBoth $e^{2}$ and $e^{-1}$ are positive, so they lie in the domain of $\\ln$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nIsoelastic demand gives $E=-\\beta$ after differentiating $\\ln Q=\\ln A-\\beta\\ln P$. Elasticity equals $-\\beta$, not $-A$.\n\nAfter $\\ln Q=\\ln A-\\beta\\ln P$, the slope in $\\ln P$ is $-\\beta$ alone.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nAt $x=1$ one has $\\ln 1=0$. Substitute $u=0$ into the quadratic.\n\n$$0^{2}-0-2 = -2\\neq 0$$\n\nSo $x=1$ is not a root of the original equation.\n\nThe quadratic at $u=0$ returns $-2$, not $0$, so $x=1$ is extraneous to the solve.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Substitute $u=\\ln x$ into $(\\ln x)^{2}-(\\ln x)-2=0$ to obtain $u^{2}-u-2=0$. Factoring gives $(u-2)(u+1)=0$, so $u=2$ or $u=-1$, hence $x=e^{2}$ or $x=e^{-1}$. The candidate $x=1$ gives $u=0$, which is not a root. Elasticity remains $-\\beta$, not $-A$.",
+    "title_de_existing": "Symbolische Substitution für eine Quadratik in $u=\\ln x$",
+    "context_de_existing": "Betracht alleiniges $$(\\ln x)^{2}-(\\ln x)-2=0$$ für $ x>0$. Setze $ u=\\ln x $.",
+    "statements_de_existing": [
+      "Der Quadratisch ist $(u-2)(u+1)=0$.",
+      "Die. Lösungen sind $ u=2$ und MATH Gesamtmenge1.",
+      "Die entsprechenden $ x $ -Werte sind $ x=e^{2}$ und $ x=e^{-1}$ Berechnung.",
+      "Elastizität in $ Q=AP^{-\\beta}$ entspricht $-A $.",
+      "$ x=1$ ist auch eine Wurzel, weil $\\ln 1=0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nErweiterung der vorgeschlagenen Factorisierung.\n\n $$(u-2)(u+1) = u^{2}-u-2$$\n\nDas entspricht dem nach $ u=\\ln x $ erhaltenen Quadrat, also ist die Faktorisierung korrekt.\n\nDer Mittelbegriff $-u $ entspricht $-2u+u $ aus der Erweiterung von $(u-2)(u+1)$.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nJeder Faktor ist gleich Null.\n\n $$ u-2 = 0$$\n\n $$ u = 2$$\n\n $$ u+1 = 0$$\n\n $$ u = -1$$\n\nDas sind die beiden Lösungen in der $ u $ -variable.\n\nFür einen Quadratic gibt es keine anderen Wurzeln, die schon über die Realen völlig faktoren.\n\nDie Aussage ist richtig.",
+      "**C.** → Richtig\n\nRückkehr zu $ x $ durch die exponentielle inverse $ x=e^{u}$.\n\n $$ u = 2$$\n\n $$\nx = e^{2}\n$$\n\n $$ u = -1$$\n\n $$\nx = e^{-1}\n$$\n\nDas sind die entsprechenden positiven $ x $ -roots.\n\nSowohl $ e^{2}$ als auch $ e^{-1}$ sind positiv, so dass sie in der Definitionsmenge von $\\ln $ liegen.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nIsoelastische Nachfrage gibt $ E=-\\beta $ nach der Unterscheidung $\\ln Q=\\ln A-\\beta\\ln P $. Elastizität gleich $-\\beta $, nicht $-A $.\n\nNach $\\ln Q=\\ln A-\\beta\\ln P $, die Steigung in $\\ln P $ ist Bezugnahme auf $-\\beta $ allein.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nBei $ x=1$ hat man $\\ln 1=0$. Ersetzt $ u=0$ in den Quadratischen.\n\n $$0^{2}-0-2 = -2\\neq 0$$\n\n $ x=1$ ist also keine Wurzel der ursprünglichen Gleichung.\n\nDas Quadratische bei $ u=0$ gibt $-2$, nicht $0$, also ist $ x=1$ außer der Lösung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die $ x=1$ gibt $ u=0$, was keine Wurzel ist. Elastizität bleibt $-\\beta $, nicht $-A $."
+  }
+]

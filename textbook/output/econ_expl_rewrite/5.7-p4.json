@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.76",
+    "title": "Introduction Losses Before Sales",
+    "context": "Analyze how place and promotion together influence whether customers encounter the product offer. Evaluate the following economic assertions:",
+    "statements": [
+      "Home delivery belongs to promotion because it communicates advertising messages to households.",
+      "A promotional message tailored to families with young children should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for families with young children supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Sales events set the permanent list price for all future years of the product.",
+      "Brand trust is especially valuable for families with young children who rely on familiar names when choosing among competing offers."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Home delivery relates to customer access within the place element.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Segment-focused promotion must align with product, price, and place for families with young children.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for families with young children fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales events functions as a promotional communication tool in the mix.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Familiar brands provide reassurance valued by families with young children.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.77",
+    "title": "Promotional Message Communication",
+    "context": "Review how price and product quality signals interact in customer perceptions of value. Evaluate the following economic assertions:",
+    "statements": [
+      "Selective distribution may suit premium offers targeted at families with young children when service quality must be controlled.",
+      "Personal selling may be effective for families with young children when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among families with young children without launching an entirely new product line.",
+      "Line extension with a budget variant can attract families with young children within an existing product line without widening the whole mix.",
+      "Market research on retirees can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Selective outlets can protect quality when targeting families with young children.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to families with young children can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging relaunch can renew interest among families with young children within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for families with young children deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on retirees informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.78",
+    "title": "Place and Promotion Customer Reach",
+    "context": "Analyze how altering an existing product range differs from eliminating it from the portfolio. Evaluate the following economic assertions:",
+    "statements": [
+      "Promotional messages aimed at retirees should remain consistent with the product features, price level, and distribution channels selected.",
+      "Affordable pricing for retirees supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brochure advertising determines which factory machine produces each product unit.",
+      "Brand trust is especially valuable for retirees who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at retirees when service quality must be controlled."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Promotion must align with product, price, and place decisions for the retiree segment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for retirees fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brochure advertising functions as a promotional communication tool in the mix.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Familiar brands provide reassurance valued by retirees.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting retirees.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.79",
+    "title": "Price Quality Perception Link",
+    "context": "Review how a business unit portfolio may address different segments with distinct product characteristics. Evaluate the following economic assertions:",
+    "statements": [
+      "Window displays replace the need for any product or price decision in the marketing mix.",
+      "Sales force visits are classified as place tools because they transport goods to retailers.",
+      "Personal selling may be effective for retirees when the product requires detailed explanation before purchase.",
+      "Social-media campaigns are product-mix contraction because they remove old lines from sale.",
+      "Market research on students informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Window displays functions as a promotional communication tool in the mix.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales force visits functions as a promotional communication tool in the mix.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Complex offers to retirees can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Social-media campaigns functions as a promotional communication tool in the mix.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market research underpins decisions across all four ps, including for students.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.80",
+    "title": "Alteration Versus Elimination",
+    "context": "Analyze how the marketing mix provides goods at affordable prices in convenient places with clear messages. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to students because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at students is classified as product-mix contraction because it reduces revenue per unit.",
+      "A relaunch with updated packaging can refresh appeal among retirees without launching an entirely new product line.",
+      "Selling through channels preferred by students is a promotion activity because it communicates advertising slogans only.",
+      "Adding a budget variant within an existing line can attract retiree buyers without expanding the full product mix width."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brands support product differentiation and can reassure students, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Packaging relaunch can renew interest among retirees within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Channel choice for students is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Line extension adds variants within a line rather than widening the whole mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.81",
+    "title": "Business Units and Segments",
+    "context": "Review how relative market share is plotted against market growth in the BCG matrix framework. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to students is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at students must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on fitness enthusiasts can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to fitness enthusiasts should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for fitness enthusiasts supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A product line contains similar products, even when targeting students.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Research on fitness enthusiasts informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment-focused promotion must align with product, price, and place for fitness enthusiasts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for fitness enthusiasts fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.82",
+    "title": "Affordable Accessible Communicated Offer",
+    "context": "Analyze how low introductory prices and heavy promotion can accompany the launch phase. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand trust is especially valuable for fitness enthusiasts who rely on familiar names when choosing among competing offers.",
+      "Market research on retirees informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Selective distribution may suit premium offers targeted at fitness enthusiasts when service quality must be controlled.",
+      "A familiar brand offers no reassurance to retirees because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at retirees is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Familiar brands provide reassurance valued by fitness enthusiasts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market research underpins decisions across all four ps, including for retirees.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Selective outlets can protect quality when targeting fitness enthusiasts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands support product differentiation and can reassure retirees, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.83",
+    "title": "BCG Axes Share and Growth",
+    "context": "Review how channel partners extend place reach when a firm chooses indirect distribution. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling through channels preferred by retirees is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling may be effective for fitness enthusiasts when the product requires detailed explanation before purchase.",
+      "Personal selling to retirees is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at retirees must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on premium buyers informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Channel choice for retirees is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Complex offers to fitness enthusiasts can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A product line contains similar products, even when targeting retirees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market research underpins decisions across all four ps, including for premium buyers.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.84",
+    "title": "Launch Pricing and Promotion Mix",
+    "context": "Analyze how brand loyalty encourages repeat purchase within the product element of the mix. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to premium buyers because brands belong exclusively to the promotion P.",
+      "A relaunch with updated packaging can refresh appeal among fitness enthusiasts without launching an entirely new product line.",
+      "Low introductory pricing aimed at premium buyers is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by premium buyers is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to premium buyers is a price tool because sales staff set the permanent list price for all future years."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brands support product differentiation and can reassure premium buyers, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Packaging relaunch can renew interest among fitness enthusiasts within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Channel choice for premium buyers is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.85",
+    "title": "Indirect Channels Extend Place",
+    "context": "Review how contraction removes underperforming lines when alteration and relaunch are insufficient. Evaluate the following economic assertions:",
+    "statements": [
+      "A product line aimed at premium buyers must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on budget shoppers informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Line extension with a budget variant can attract fitness enthusiasts within an existing product line without widening the whole mix.",
+      "Market research on home-office workers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A familiar brand offers no reassurance to budget shoppers because brands belong exclusively to the promotion P."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "A product line contains similar products, even when targeting premium buyers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market research underpins decisions across all four ps, including for budget shoppers.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Budget variants for fitness enthusiasts deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on home-office workers informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands support product differentiation and can reassure budget shoppers, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.86",
+    "title": "Brand Loyalty and Repeat Purchase",
+    "context": "Analyze how the four Ps must be coordinated to meet the targeted market's needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "A promotional message tailored to home-office workers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for home-office workers supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for home-office workers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at home-office workers when service quality must be controlled.",
+      "Personal selling may be effective for home-office workers when the product requires detailed explanation before purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Segment-focused promotion must align with product, price, and place for home-office workers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for home-office workers fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Familiar brands provide reassurance valued by home-office workers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting home-office workers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to home-office workers can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.87",
+    "title": "Contraction When Relaunch Fails",
+    "context": "Review the marketing mix as a harmonised blend of product, price, place, and promotion tools. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among home-office workers without launching an entirely new product line.",
+      "Line extension with a budget variant can attract home-office workers within an existing product line without widening the whole mix.",
+      "Market research on budget-conscious shoppers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to budget-conscious shoppers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for budget-conscious shoppers supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Packaging relaunch can renew interest among home-office workers within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for home-office workers deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on budget-conscious shoppers informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment-focused promotion must align with product, price, and place for budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for budget-conscious shoppers fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.88",
+    "title": "Coordinated Four Ps for Targets",
+    "context": "Analyze how the four Ps of the marketing mix support meeting targeted customers' needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing aimed at budget shoppers is classified as product-mix contraction because it reduces revenue per unit.",
+      "Brand trust is especially valuable for budget-conscious shoppers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at budget-conscious shoppers when service quality must be controlled.",
+      "Personal selling may be effective for budget-conscious shoppers when the product requires detailed explanation before purchase.",
+      "Selling through channels preferred by budget shoppers is a promotion activity because it communicates advertising slogans only."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Familiar brands provide reassurance valued by budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to budget-conscious shoppers can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Channel choice for budget shoppers is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.89",
+    "title": "Product Portfolio Three Units",
+    "context": "Review Figure 15 on the four elements of the marketing mix based on market research. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among budget-conscious shoppers without launching an entirely new product line.",
+      "Line extension with a budget variant can attract budget-conscious shoppers within an existing product line without widening the whole mix.",
+      "Market research on premium buyers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to premium buyers should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for premium buyers supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Packaging relaunch can renew interest among budget-conscious shoppers within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for budget-conscious shoppers deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on premium buyers informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment-focused promotion must align with product, price, and place for premium buyers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for premium buyers fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.90",
+    "title": "Fad Withdrawal Within One Year",
+    "context": "Analyze the product element of the marketing mix as the first P covering goods and services offered. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to budget shoppers is a price tool because sales staff set the permanent list price for all future years.",
+      "Brand trust is especially valuable for premium buyers who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at premium buyers when service quality must be controlled.",
+      "Personal selling may be effective for premium buyers when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among premium buyers without launching an entirely new product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Familiar brands provide reassurance valued by premium buyers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting premium buyers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to premium buyers can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging relaunch can renew interest among premium buyers within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.91",
+    "title": "Detergent Indefinite Maturity Trap",
+    "context": "Review how product lines and product-mix width relate to a business's product strategy. Evaluate the following economic assertions:",
+    "statements": [
+      "Line extension with a budget variant can attract premium buyers within an existing product line without widening the whole mix.",
+      "Market research on rural households can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A product line aimed at budget shoppers must contain unrelated categories such as food and machinery to count as one line.",
+      "A promotional message tailored to rural households should align with the product and price offered through chosen place channels.",
+      "Market research on rural customers informs only promotion decisions and cannot influence product, price, or place choices."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Budget variants for premium buyers deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on rural households informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A product line contains similar products, even when targeting budget shoppers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Segment-focused promotion must align with product, price, and place for rural households.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market research underpins decisions across all four ps, including for rural customers.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.92",
+    "title": "Question Mark Becomes Star Path",
+    "context": "Analyze the role of brands in product differentiation, recognition, and loyalty within the product P. Evaluate the following economic assertions:",
+    "statements": [
+      "Affordable pricing for rural households supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for rural households who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at rural households when service quality must be controlled.",
+      "A familiar brand offers no reassurance to rural customers because brands belong exclusively to the promotion P.",
+      "Personal selling may be effective for rural households when the product requires detailed explanation before purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Affordable price for rural households fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Familiar brands provide reassurance valued by rural households.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting rural households.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands support product differentiation and can reassure rural customers, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Complex offers to rural households can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.93",
+    "title": "Cash Cow Becomes Poor Dog Shift",
+    "context": "Review minor packaging and colour changes as a relaunch within product-mix alteration. Evaluate the following economic assertions:",
+    "statements": [
+      "A relaunch with updated packaging can refresh appeal among rural households without launching an entirely new product line.",
+      "Line extension with a budget variant can attract rural households within an existing product line without widening the whole mix.",
+      "Market research on urban commuters can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A promotional message tailored to urban commuters should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for urban commuters supports the marketing-mix goal of offering value at a convenient place with clear communication."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Packaging relaunch can renew interest among rural households within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for rural households deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on urban commuters informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment-focused promotion must align with product, price, and place for urban commuters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for urban commuters fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.94",
+    "title": "Mix Extension Yogurt Ice Cream",
+    "context": "Analyze line extension versus mix extension within product-mix expansion strategies. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand trust is especially valuable for urban commuters who rely on familiar names when choosing among competing offers.",
+      "Selective distribution may suit premium offers targeted at urban commuters when service quality must be controlled.",
+      "Personal selling may be effective for urban commuters when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among urban commuters without launching an entirely new product line.",
+      "Low introductory pricing aimed at rural customers is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Familiar brands provide reassurance valued by urban commuters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective outlets can protect quality when targeting urban commuters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to urban commuters can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging relaunch can renew interest among urban commuters within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.95",
+    "title": "Line Extension New Ice Flavours",
+    "context": "Review product-mix strategies of expansion, alteration, and contraction in Figure 16. Evaluate the following economic assertions:",
+    "statements": [
+      "Line extension with a budget variant can attract urban commuters within an existing product line without widening the whole mix.",
+      "Selling through channels preferred by rural customers is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to rural customers is a price tool because sales staff set the permanent list price for all future years.",
+      "Market research on small-business owners can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.",
+      "A product line aimed at rural customers must contain unrelated categories such as food and machinery to count as one line."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Budget variants for urban commuters deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Channel choice for rural customers is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Research on small-business owners informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A product line contains similar products, even when targeting rural customers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.96",
+    "title": "Relaunch Packaging Colour Change",
+    "context": "Analyze the product life cycle model of introduction, growth, maturity, and decline stages. Evaluate the following economic assertions:",
+    "statements": [
+      "Market research on business clients informs only promotion decisions and cannot influence product, price, or place choices.",
+      "A promotional message tailored to small-business owners should align with the product and price offered through chosen place channels.",
+      "A familiar brand offers no reassurance to business clients because brands belong exclusively to the promotion P.",
+      "Low introductory pricing aimed at business clients is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by business clients is a promotion activity because it communicates advertising slogans only."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Market research underpins decisions across all four ps, including for business clients.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Segment-focused promotion must align with product, price, and place for small-business owners.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands support product differentiation and can reassure business clients, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Channel choice for business clients is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.97",
+    "title": "Wholesaler Bakery Supermarket Supply",
+    "context": "Review how sales volume and profit patterns differ across product life cycle stages. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling to business clients is a price tool because sales staff set the permanent list price for all future years.",
+      "A product line aimed at business clients must contain unrelated categories such as food and machinery to count as one line.",
+      "Affordable pricing for small-business owners supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Market research on young families informs only promotion decisions and cannot influence product, price, or place choices.",
+      "Brand trust is especially valuable for small-business owners who rely on familiar names when choosing among competing offers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A product line contains similar products, even when targeting business clients.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Affordable price for small-business owners fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market research underpins decisions across all four ps, including for young families.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Familiar brands provide reassurance valued by small-business owners.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.98",
+    "title": "Charm Pricing Supermarket Shelves",
+    "context": "Analyze the Boston Consulting Group matrix using relative market share and market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "A familiar brand offers no reassurance to young families because brands belong exclusively to the promotion P.",
+      "Selective distribution may suit premium offers targeted at small-business owners when service quality must be controlled.",
+      "Low introductory pricing aimed at young families is classified as product-mix contraction because it reduces revenue per unit.",
+      "Selling through channels preferred by young families is a promotion activity because it communicates advertising slogans only.",
+      "Personal selling to young families is a price tool because sales staff set the permanent list price for all future years."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brands support product differentiation and can reassure young families, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Selective outlets can protect quality when targeting small-business owners.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Channel choice for young families is a place decision about customer access.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personal selling is promotional contact, not the sole determinant of list price.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.99",
+    "title": "Showroom Delivery Finance Place Mix",
+    "context": "Review BCG categories of stars, question marks, cash cows, and poor dogs. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal selling may be effective for small-business owners when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among small-business owners without launching an entirely new product line.",
+      "Line extension with a budget variant can attract small-business owners within an existing product line without widening the whole mix.",
+      "A separate business unit supplying mobile-device components may address a distinct segment with its own product characteristics and cycle.",
+      "Portfolio analysis may classify mobile-device components as a question mark, star, cash cow, or poor dog depending on share and growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Complex offers to small-business owners can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging relaunch can renew interest among small-business owners within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for small-business owners deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mobile-device components units can target different segments with tailored products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mobile-device components can map to different BCG categories by market conditions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.100",
+    "title": "Doctor Personal Selling Promotion",
+    "context": "Analyze how a question mark arises from low relative share in a rapidly growing market. Evaluate the following economic assertions:",
+    "statements": [
+      "A product line aimed at young families must contain unrelated categories such as food and machinery to count as one line.",
+      "Market research on commuters informs only promotion decisions and cannot influence product, price, or place choices.",
+      "A familiar brand offers no reassurance to commuters because brands belong exclusively to the promotion P.",
+      "Technical support services related to mobile-device components count as products within the product element of the marketing mix.",
+      "Low introductory pricing aimed at commuters is classified as product-mix contraction because it reduces revenue per unit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A product line contains similar products, even when targeting young families.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market research underpins decisions across all four ps, including for commuters.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Brands support product differentiation and can reassure commuters, not only promotion.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Support for mobile-device components is a product offering, not merely promotion.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Introductory low pricing is a price decision, not product-mix contraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

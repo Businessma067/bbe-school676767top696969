@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.26",
+    "title": "Harvest Season Labour Contracts",
+    "context": "Consider Styrian vineyards signing seasonal picker contracts before grape sugar levels peak. Evaluate the following economic assertions:",
+    "statements": [
+      "Expectations of a large harvest can shift supply rightward for contract picker labour in August.",
+      "Timely contract signing before peak harvest can reduce later shortage when sugar levels spike.",
+      "If offered wages sit below equilibrium, vineyards may face shortage of available pickers.",
+      "Competing fruit regions raising wages may shift supply leftward for pickers in Styria.",
+      "Higher offered day rates typically increase the quantity of pickers willing to supply labour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Anticipated output needs increase quantity of labour supplied at each wage.",
+      "Early secured supply eases imbalance when demand for pickers surges.",
+      "Below-equilibrium wage leaves quantity demanded above quantity supplied.",
+      "Higher wages elsewhere reduce quantity supplied locally at each wage.",
+      "Higher own-price of labour raises quantity supplied along the supply curve."
+    ],
+    "tactical_explanations": [
+      "A large expected harvest raises how many pickers vineyards want under contract at each wage. That non-wage change increases labour offered into the August contract market, which is a rightward supply shift for seasonal picker labour.\n\nThe statement is true.",
+      "Contracts locked in early fix some labour before sugar levels spike and demand for pickers jumps. With more workers already secured, the gap between quantity demanded and quantity supplied at the rush is smaller, so shortage risk falls.\n\nThe statement is true.",
+      "At a wage below the market-clearing level, employers want more labour than workers are willing to supply. Quantity demanded exceeds quantity supplied, so vineyards can fail to fill all picker slots.\n\nThe statement is true.",
+      "Higher wages in competing fruit regions pull workers away from Styria. At each Styrian wage, fewer pickers remain available locally, which is a leftward shift of Styrian labour supply.\n\nThe statement is true.",
+      "The wage is the own-price of labour. Along an upward-sloping labour supply curve, a higher offered day rate raises the quantity of pickers willing to work, other things equal.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.27",
+    "title": "Simultaneous Demand and Supply Shifts",
+    "context": "Analyze how concurrent shifts in demand and supply affect equilibrium price and quantity. Evaluate the following economic assertions:",
+    "statements": [
+      "The net effect on equilibrium price depends on the relative size of demand and supply shifts.",
+      "Graphical analysis compares new intersection points to identify changed equilibrium outcomes.",
+      "If demand shifts right while supply shifts left, equilibrium price is likely to rise.",
+      "If demand shifts right and supply shifts right together, equilibrium quantity rises.",
+      "Supply and demand shifts can occur together after a natural disaster disrupts production and tastes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Ambiguous price outcomes require comparing shift magnitudes.",
+      "New curve positions determine updated equilibrium price and quantity.",
+      "Stronger demand with reduced supply pushes price upward.",
+      "Both shifts increase equilibrium quantity though price change is ambiguous.",
+      "Real events can move both curves in the same period."
+    ],
+    "tactical_explanations": [
+      "When demand and supply both move, each shift pushes price in its own direction. The final price change is therefore ambiguous until you compare how large the two shifts are.\n\nThe statement is true.",
+      "Equilibrium is the intersection of demand and supply. After simultaneous shifts, the new curves cross at a different point, and that new intersection is what you read for the changed price and quantity.\n\nThe statement is true.",
+      "A rightward demand shift raises willingness to pay at each quantity. A leftward supply shift cuts quantity offered at each price. Both forces push the clearing price up, so equilibrium price is likely to rise.\n\nThe statement is true.",
+      "A rightward demand shift raises quantity traded at the new equilibrium. A rightward supply shift does the same. Together they raise equilibrium quantity even if the price change remains ambiguous.\n\nThe statement is true.",
+      "A disaster can destroy capacity (supply left) while also changing what people want to buy (demand). Both curves can therefore move in the same period, not only one at a time.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.28",
+    "title": "Price Ceilings Below Equilibrium",
+    "context": "Review how a legal maximum price set below equilibrium creates shortage in competitive markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Non-price rationing such as queues may appear when ceilings create persistent shortage.",
+      "A ceiling set above equilibrium is not binding because market price stays below the cap.",
+      "Rent controls set below market equilibrium can leave landlords with fewer units to lease.",
+      "At the ceiling price, quantity supplied typically exceeds quantity demanded.",
+      "A price ceiling below equilibrium prevents price from falling to eliminate surplus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Scarce goods at capped prices may be allocated by waiting.",
+      "Non-binding caps do not constrain market-clearing prices.",
+      "Shortage may reduce maintenance incentives though quantity demanded exceeds supplied.",
+      "Binding ceilings create shortage, not surplus.",
+      "Below-equilibrium caps block price rises that would reduce shortage."
+    ],
+    "tactical_explanations": [
+      "A binding ceiling keeps price below the clearing level, so quantity demanded exceeds quantity supplied. When money price cannot allocate the scarce units, waiting lists, queues, or other non-price devices often appear.\n\nThe statement is true.",
+      "If the legal maximum sits above the market-clearing price, sellers and buyers still meet below the cap. The ceiling never binds, so it does not change the equilibrium outcome.\n\nThe statement is true.",
+      "Controlled rents below the open-market clearing level reduce the return on letting. Over time landlords may withdraw units or cut maintenance that keeps flats lettable, so fewer units remain available to lease.\n\nThe statement is true.",
+      "A ceiling below equilibrium creates shortage: at the capped price, quantity demanded exceeds quantity supplied. The claim reverses that imbalance by saying supply exceeds demand.\n\nThe statement is false.",
+      "A below-equilibrium ceiling blocks price from rising to clear shortage. Surplus is the opposite imbalance (excess supply), and the binding problem here is shortage, not surplus that needs a falling price.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.29",
+    "title": "Graz Rent-Control Apartment Search",
+    "context": "Consider Graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Long waiting lists for controlled units signal excess demand at the regulated rent.",
+      "Controlled rents below open-market levels can create persistent shortage of available flats.",
+      "Landlords may redirect maintenance spending when regulated rents cover rising costs poorly.",
+      "Tenants ignore non-price costs when money rents stay capped because flats are abundant.",
+      "Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Queues indicate quantity demanded exceeds quantity supplied at that price.",
+      "Binding low rents leave quantity demanded above quantity supplied.",
+      "Low regulated returns can affect supply quality and availability over time.",
+      "Scarcity at capped rents often imposes search and waiting costs.",
+      "Higher unregulated rents indicate the cap sits below market equilibrium."
+    ],
+    "tactical_explanations": [
+      "A long waiting list means more households want controlled flats than are available at the regulated rent. That is excess demand: quantity demanded exceeds quantity supplied at that price.\n\nThe statement is true.",
+      "When the controlled rent sits below the open-market clearing rent, the cap binds. Quantity demanded exceeds quantity supplied, so available controlled flats remain scarce over time.\n\nThe statement is true.",
+      "If regulated rents lag rising costs, landlords earn a weaker return on upkeep. They may cut or redirect maintenance spending toward uses that pay better, which can worsen quality and availability.\n\nThe statement is true.",
+      "At a binding low rent, flats are scarce, not abundant. Tenants still face search time, waiting lists, and other non-price costs even though the money rent is capped.\n\nThe statement is false.",
+      "Open-market leases at higher rates show that the uncontrolled clearing rent lies above the controlled cap, not below it. The higher free-market ads place the equilibrium above the regulated rent.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.30",
+    "title": "Price Floors Above Equilibrium",
+    "context": "Analyze how a legal minimum price set above equilibrium creates surplus in competitive markets. Evaluate the following economic assertions:",
+    "statements": [
+      "A price floor above equilibrium prevents price from falling to eliminate surplus.",
+      "Government purchase programs sometimes accompany agricultural price floors to absorb surplus.",
+      "At the floor price, quantity supplied typically exceeds quantity demanded.",
+      "A floor set below equilibrium is not binding because market price stays above the minimum.",
+      "Minimum prices intended to help sellers eliminate all unsold stock immediately."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Legal minimums block downward adjustment that would clear excess supply.",
+      "Official buying can offset excess supply created by high minimum prices.",
+      "Binding high minimums leave excess supply relative to quantity demanded.",
+      "Non-binding floors do not constrain market-clearing prices.",
+      "Floors above equilibrium can produce unsold surplus despite seller protection intent."
+    ],
+    "tactical_explanations": [
+      "A floor above the clearing price leaves quantity supplied larger than quantity demanded. Price cannot legally fall to wipe out that excess supply, so the surplus persists.\n\nThe statement is true.",
+      "Agricultural floors often create unsold output. Official purchase schemes buy the excess at the support price so the surplus is absorbed rather than left on the private market.\n\nThe statement is true.",
+      "At a binding high minimum, sellers offer more than buyers want at that price. Quantity supplied exceeds quantity demanded, which is surplus.\n\nThe statement is true.",
+      "If the legal minimum sits below the market-clearing price, trade still occurs above the floor. The floor never constrains the price, so it is not binding.\n\nThe statement is true.",
+      "A floor meant to help sellers can leave stock unsold because the high price creates surplus. Intent to protect sellers does not clear inventories immediately; the imbalance can remain.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.31",
+    "title": "Minimum Wage in Labour Markets",
+    "context": "Review how a wage floor above equilibrium can create surplus labour supplied. Evaluate the following economic assertions:",
+    "statements": [
+      "Labour markets use wages as prices coordinating workers' supply and employers' demand.",
+      "Employers reduce quantity demanded of labour when mandatory wages rise above equilibrium.",
+      "A minimum wage set below equilibrium is not binding for market outcomes.",
+      "A minimum wage above the market-clearing wage eliminates all unemployment immediately.",
+      "At a binding minimum wage, every worker willing to work finds employment instantly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Wage adjustment balances quantity supplied and demanded of labour.",
+      "Higher mandated wages reduce hiring along the labour demand curve.",
+      "Non-binding wage floors do not alter market-clearing employment.",
+      "Binding floors can produce surplus labour, often appearing as unemployment.",
+      "Shortage of jobs relative to willing workers reflects labour surplus at the floor."
+    ],
+    "tactical_explanations": [
+      "Wages are the price of labour. They balance how much work people offer with how much employers want to hire, just as prices coordinate goods markets.\n\nThe statement is true.",
+      "Labour demand slopes downward in the wage. When a mandated wage rises above the clearing level, employers move up that demand curve and hire fewer hours or workers.\n\nThe statement is true.",
+      "If the legal minimum sits below the market-clearing wage, actual wages can still clear above the floor. The floor does not bind, so employment and wage outcomes stay at the market equilibrium.\n\nThe statement is true.",
+      "A wage floor above the clearing wage creates surplus labour: more people want jobs than employers hire at that wage. That imbalance often shows up as unemployment, not the elimination of unemployment.\n\nThe statement is false.",
+      "At a binding minimum wage, quantity supplied of labour exceeds quantity demanded. Not every willing worker finds a job; some remain unmatched at the floor.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.32",
+    "title": "Alpine Dairy Milk Quota Meeting",
+    "context": "Consider an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher feed costs can shift supply leftward for raw milk at each farmgate price.",
+      "Cutting quota levels after a glut can help move the market toward equilibrium by reducing surplus.",
+      "If farmgate price stays fixed while feed costs rise, farmers expand output to celebrate.",
+      "A cooperative quota limiting deliveries increases quantity supplied by forcing extra production.",
+      "Surging milk output without matching demand creates shortage at the old farmgate price."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Rising input costs reduce quantity supplied at each price.",
+      "Restricting supply eases excess supply at unchanged prices.",
+      "Higher costs at fixed price typically reduce profitable supply.",
+      "Quotas restrict supply rather than expand it.",
+      "Output surges at fixed demand tend toward surplus, not shortage."
+    ],
+    "tactical_explanations": [
+      "Feed is an input. When feed costs jump, producing each litre is less profitable at a given farmgate price, so farmers offer less milk at each price. That is a leftward supply shift.\n\nThe statement is true.",
+      "A glut means quantity supplied exceeds quantity demanded at the prevailing price. Tightening the quota cuts deliveries, shrinks the excess supply, and moves the market closer to balance.\n\nThe statement is true.",
+      "With farmgate price fixed and feed costs higher, margins shrink. Farmers typically cut output that is no longer profitable; they do not expand production to celebrate.\n\nThe statement is false.",
+      "A quota that limits deliveries caps how much milk may enter the market. It restricts quantity supplied; it does not force extra production or raise supply.\n\nThe statement is false.",
+      "Extra milk at an unchanged demand and old farmgate price leaves more milk than buyers want. That imbalance is surplus (excess supply), not shortage.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.33",
+    "title": "Inflation as Rising Price Levels",
+    "context": "Analyze inflation as a sustained increase in the overall price level across an economy. Evaluate the following economic assertions:",
+    "statements": [
+      "Inflation is measured using price indices that track many goods and services together.",
+      "Central banks often monitor inflation when setting policies that influence interest rates.",
+      "Households purchasing the same basket notice inflation when that basket costs more over time.",
+      "Moderate inflation reduces the real purchasing power of money held without interest.",
+      "Inflation describes a one-day sale discount on a single retail product."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Broad indices capture general price level changes.",
+      "Policy makers respond to inflation trends with monetary tools.",
+      "Rising cost of a typical basket signals higher general prices.",
+      "Higher price levels buy fewer goods per currency unit.",
+      "Single-product price cuts are not economy-wide inflation."
+    ],
+    "tactical_explanations": [
+      "Inflation is a rise in the general price level, not one item alone. Price indices average many goods and services so the measure tracks that broad movement.\n\nThe statement is true.",
+      "Interest-rate and related monetary choices often respond to inflation data. Central banks therefore watch price indices when setting those policies.\n\nThe statement is true.",
+      "If the same typical basket costs more month after month, households experience a higher general price level. That is how inflation shows up in everyday purchases.\n\nThe statement is true.",
+      "When prices rise and cash earns no interest, each unit of money buys fewer goods. Real purchasing power of idle balances falls even under moderate inflation.\n\nThe statement is true.",
+      "A one-day discount on a single product is a relative price cut, not a sustained rise in the overall price level. Inflation is economy-wide and persistent, not a shop-floor sale.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.34",
+    "title": "Too Much Money Chasing Goods",
+    "context": "Review the explanation that inflation can result when too much money pursues available goods and services. Evaluate the following economic assertions:",
+    "statements": [
+      "Inflation from monetary expansion differs from a single crop failure raising one food price.",
+      "If everyone spends newly printed money quickly, aggregate demand can rise faster than supply.",
+      "Inflation may accelerate when money supply growth outpaces growth in real output.",
+      "Holding other factors fixed, larger money supply reduces spending pressure on limited goods.",
+      "Too much money chasing too few goods explains deflation in monetary economics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "General inflation differs from isolated relative price spikes.",
+      "Spending surges can bid up prices when supply responds slowly.",
+      "Excess money relative to goods tends to raise general prices.",
+      "Greater money supply typically increases nominal spending pressure.",
+      "That phrase describes inflationary pressure, not deflation."
+    ],
+    "tactical_explanations": [
+      "A crop failure can spike one food price while other prices stay put. Monetary expansion that lifts spending across many markets raises the general price level. Those are different phenomena.\n\nThe statement is true.",
+      "New money spent promptly adds to aggregate demand. If real supply cannot keep pace, that extra spending bids up prices across goods and services.\n\nThe statement is true.",
+      "When money grows faster than real output, more nominal spending chases a slower-growing volume of goods. That imbalance tends to push the general price level up faster.\n\nThe statement is true.",
+      "Holding other factors fixed, a larger money supply raises, not reduces, nominal spending power against limited goods. Spending pressure rises with the money stock in that setting.\n\nThe statement is false.",
+      "\"Too much money chasing too few goods\" describes inflationary pressure from excess money relative to output. Deflation is a falling general price level, the opposite idea.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.35",
+    "title": "Central Bank Note-Issuance Debate",
+    "context": "Consider policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. Evaluate the following economic assertions:",
+    "statements": [
+      "Shopkeepers reporting broadly rising supplier invoices suggest upward pressure on the price level.",
+      "Inflation erodes the real value of cash savings when prices rise faster than interest earned.",
+      "Funding repairs through new money may increase spending before additional goods and services appear.",
+      "Rapid note issuance without matching output growth can contribute to inflationary pressure.",
+      "Policymakers weighing note issuance must consider whether output can absorb extra spending."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Widespread input price rises can feed general inflation.",
+      "Higher price levels reduce what saved money buys.",
+      "Spending can rise ahead of supply when money supply expands.",
+      "Excess money growth relative to goods can raise general prices.",
+      "Supply capacity matters when evaluating inflation risk from monetary expansion."
+    ],
+    "tactical_explanations": [
+      "Supplier invoices rising across many shops point to a broad increase in costs and prices, not one isolated item. That pattern is upward pressure on the general price level.\n\nThe statement is true.",
+      "Cash earns little or nothing while goods cost more. When prices rise faster than any interest on idle balances, each euro of savings buys less in real terms.\n\nThe statement is true.",
+      "Financing repairs with newly issued notes puts spending power into the economy. That spending can arrive before bridges and related output expand, so demand may lead supply temporarily.\n\nThe statement is true.",
+      "Fast note growth without matching real output growth means more money chasing a similar volume of goods. That gap feeds inflationary pressure on the price level.\n\nThe statement is true.",
+      "Extra money raises spending only if goods can absorb it without large price jumps. Policymakers therefore ask whether capacity and output can meet the extra demand.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.36",
+    "title": "Interest Rates and Inflation Control",
+    "context": "Analyze how raising interest rates can be used to reduce inflationary pressure. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher interest rates can reduce borrowing and spending, easing inflationary demand pressure.",
+      "Higher rates reward saving and can shift spending from today to later periods.",
+      "Interest rate increases operate partly by making loans for homes and equipment more expensive.",
+      "Monetary tightening through higher rates aims to align money growth with sustainable output.",
+      "Central banks may raise policy rates when inflation persistently exceeds target."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Costlier credit dampens spending that bids up prices.",
+      "Increased return on saving reduces current consumption demand.",
+      "Costlier loans reduce quantity demanded for credit-sensitive purchases.",
+      "Policy seeks to prevent excess money from outpacing real production.",
+      "Tighter monetary policy responds to sustained price level increases."
+    ],
+    "tactical_explanations": [
+      "Costlier credit discourages borrowing for consumption and investment. Weaker spending cools the demand that was bidding prices up, so inflationary pressure eases.\n\nThe statement is true.",
+      "Higher deposit and bond returns make saving more attractive relative to spending now. Households and firms often postpone purchases, shifting demand toward later periods.\n\nThe statement is true.",
+      "Mortgages and equipment loans become more expensive when policy rates rise. That higher financing cost is one channel through which rate increases restrain spending.\n\nThe statement is true.",
+      "Tightening seeks to slow nominal spending growth so money and credit do not outrun what the economy can produce sustainably. Aligning money growth with real capacity is the stabilising aim.\n\nThe statement is true.",
+      "When inflation stays above target for a sustained stretch, central banks often raise policy rates to cool demand. That response is standard monetary practice against persistent overshoots.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.37",
+    "title": "Tightening Monetary Policy",
+    "context": "Review how central banks tighten policy by raising interest rates to combat inflation. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher mortgage rates following policy tightening can reduce quantity demanded for new housing loans.",
+      "Central banks face a trade-off timing challenge because rate effects appear with lags.",
+      "Tightening monetary policy typically involves raising key interest rates or reducing money growth.",
+      "Business investment accelerates when higher rates raise the cost of financed equipment purchases.",
+      "Policy tightening can never reduce inflation because spending is fixed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Costlier mortgages reduce borrowing for home purchases.",
+      "Monetary policy influences inflation gradually, not instantly.",
+      "Tighter policy restricts monetary conditions to cool inflation.",
+      "Higher financing costs typically discourage investment spending.",
+      "Cooling demand through tighter policy can lower inflation over time."
+    ],
+    "tactical_explanations": [
+      "Tighter policy lifts mortgage rates. At higher borrowing costs, fewer households take new housing loans, so quantity demanded for those loans falls.\n\nThe statement is true.",
+      "Rate changes alter spending only after firms and households adjust plans. Because those effects arrive with lags, central banks must weigh timing carefully when they tighten.\n\nThe statement is true.",
+      "Tightening means making monetary conditions stricter. Raising key policy rates or slowing money growth are the usual tools for that stance.\n\nThe statement is true.",
+      "Higher financing costs make equipment loans more expensive, which typically discourages investment. Investment slows rather than accelerates when rates rise.\n\nThe statement is false.",
+      "Spending is not fixed with respect to interest rates. Tightening can cool demand over time and thereby reduce inflationary pressure.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.38",
+    "title": "Vienna Mortgage Rate Shopping",
+    "context": "Consider a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher saving returns after rate rises may shift some spending from consumption to deposits.",
+      "Postponing a flat purchase reduces current quantity demanded for housing credit.",
+      "Central bank rate rises aim to accelerate spending that contributes to inflation.",
+      "If many households delay purchases, equilibrium home prices rise because fewer buyers compete.",
+      "Higher mortgage reference rates reduce monthly borrowing costs for a given loan amount."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Better deposit rates encourage saving over immediate spending.",
+      "Delayed buying lowers loan demand at present rates.",
+      "Rate increases cool spending to fight inflation.",
+      "Reduced demand typically eases upward price pressure.",
+      "Higher rates increase loan costs, not reduce them."
+    ],
+    "tactical_explanations": [
+      "When deposit rates rise with policy rates, saving earns more relative to spending today. Some household funds move into deposits instead of immediate consumption.\n\nThe statement is true.",
+      "Delaying the flat purchase means the household does not take a mortgage now. Current quantity demanded for housing credit therefore falls.\n\nThe statement is true.",
+      "Rate rises are used to cool spending that feeds inflation, not to accelerate it. The policy aim is restraint, not a spending boom.\n\nThe statement is false.",
+      "Fewer competing buyers weaken demand for homes. Weaker demand typically eases upward pressure on equilibrium prices; it does not push prices higher.\n\nThe statement is false.",
+      "A higher reference rate raises the interest charged on a given loan size. Monthly borrowing costs rise, they do not fall.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.39",
+    "title": "Demand Increase at Equilibrium",
+    "context": "Analyze how a rightward demand shift raises equilibrium price and quantity when supply is upward sloping. Evaluate the following economic assertions:",
+    "statements": [
+      "Graphically, a demand shift right moves equilibrium up along an upward-sloping supply curve.",
+      "Producers respond to higher equilibrium price by reducing quantity supplied along the supply curve.",
+      "More buyers entering a market moves buyers along the demand curve without shifting it.",
+      "A rightward demand shift with unchanged supply lowers both equilibrium price and quantity.",
+      "After demand increases, quantity demanded stays below quantity supplied permanently."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "New intersection lies up and to the right along supply.",
+      "Higher prices incentivise greater quantity supplied along supply.",
+      "More participants shift demand; own-price changes move along the curve.",
+      "Demand increases with stable supply tend to raise price and quantity.",
+      "New equilibrium restores equality between quantity demanded and supplied."
+    ],
+    "tactical_explanations": [
+      "With supply fixed and upward sloping, a rightward demand shift creates a new intersection higher and farther right on the supply curve. Equilibrium price and quantity both rise along that supply path.\n\nThe statement is true.",
+      "A higher equilibrium price makes extra units profitable. Along the supply curve, quantity supplied rises with price; producers do not cut quantity when price rises.\n\nThe statement is false.",
+      "More buyers at each price is a demand shifter: the whole demand curve moves right. Movement along the curve is caused by a change in the good's own price, not by entry of new buyers.\n\nThe statement is false.",
+      "Stronger demand with unchanged supply raises both equilibrium price and quantity. The claim that both fall reverses the standard comparative-static result.\n\nThe statement is false.",
+      "After the shift, price adjusts until quantity demanded again equals quantity supplied at the new equilibrium. The imbalance is temporary, not permanent excess supply.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.40",
+    "title": "Supply Decrease at Equilibrium",
+    "context": "Review how a leftward supply shift raises equilibrium price and lowers equilibrium quantity. Evaluate the following economic assertions:",
+    "statements": [
+      "At the new equilibrium after supply falls, quantity demanded equals the reduced quantity supplied.",
+      "Buyers facing higher prices reduce quantity demanded along the demand curve after supply falls.",
+      "A leftward supply shift with unchanged demand typically raises equilibrium price and lowers quantity.",
+      "Production disruptions can shift supply leftward even when buyer preferences stay constant.",
+      "Graphically, a supply shift left moves equilibrium up along a downward-sloping demand curve."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Market clears at lower quantity with higher price.",
+      "Price rise reduces quantity demanded along downward-sloping demand.",
+      "Reduced supply at each price raises price and cuts quantity traded.",
+      "Supply shifters change seller offerings independent of demand.",
+      "New intersection lies up and to the left along demand."
+    ],
+    "tactical_explanations": [
+      "Equilibrium always equates quantity demanded and quantity supplied. After supply falls, that common quantity is simply lower, cleared at a higher price.\n\nThe statement is true.",
+      "The leftward supply shift raises the clearing price. Along a downward-sloping demand curve, buyers then take a smaller quantity at that higher price.\n\nThe statement is true.",
+      "Less supply at each price, with demand unchanged, pushes the intersection up and left. Equilibrium price rises and equilibrium quantity falls.\n\nThe statement is true.",
+      "Disruptions cut what sellers can offer at each price. That is a supply shift even if tastes and other demand factors stay fixed.\n\nThe statement is true.",
+      "With demand fixed and downward sloping, a leftward supply shift creates a new intersection higher on the demand curve. Price rises and quantity falls along that demand path.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.41",
+    "title": "Population Growth and Market Demand",
+    "context": "Analyze how population changes shift market demand for goods and services. Evaluate the following economic assertions:",
+    "statements": [
+      "Markets adjust through price when population growth increases quantity demanded at old prices.",
+      "Population growth in a city can shift demand rightward for public transport services.",
+      "Immigration increasing local consumers can raise equilibrium apartment rents if housing supply is slow.",
+      "Demographic changes move buyers along the demand curve without shifting it.",
+      "A shrinking town population shifts demand rightward because remaining residents spend more."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Excess demand at old price pushes equilibrium upward.",
+      "More residents increase quantity demanded at each price.",
+      "Demand shift with limited short-run supply raises equilibrium price.",
+      "Population is a non-price shifter that shifts the demand curve.",
+      "Population decline typically reduces demand, not increases it automatically."
+    ],
+    "tactical_explanations": [
+      "More people raise quantity demanded at the old price, creating excess demand. Price then rises toward a new equilibrium that clears the larger demand.\n\nThe statement is true.",
+      "Extra residents want more rides at each fare. That non-price change shifts the demand curve for public transport to the right.\n\nThe statement is true.",
+      "More local renters shift housing demand right. If supply responds slowly, the new intersection has a higher equilibrium rent.\n\nThe statement is true.",
+      "Population is a non-price determinant of demand. Demographic change shifts the demand curve; movement along the curve comes from a change in the good's own price.\n\nThe statement is false.",
+      "Fewer residents typically mean less demand at each price, a leftward shift. A shrinking town does not automatically shift demand right just because some people remain.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.42",
+    "title": "Taxes on Producers and Supply",
+    "context": "Review how taxes levied on sellers can shift supply leftward. Evaluate the following economic assertions:",
+    "statements": [
+      "A per-unit tax on producers raises effective production cost and can shift supply leftward.",
+      "The statutory incidence on producers can reduce market quantity below the prior equilibrium.",
+      "After a producer tax, sellers require lower prices to supply the same quantity as before.",
+      "Equilibrium price paid by buyers falls when producer taxes reduce quantity supplied.",
+      "Producer taxes move sellers along the supply curve without shifting it."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Taxes increase costs and reduce quantity supplied at each price.",
+      "Leftward supply shift lowers equilibrium quantity traded.",
+      "Higher costs require higher prices to maintain the same quantity supplied.",
+      "Lower supply with stable demand typically raises equilibrium price.",
+      "Cost-changing taxes shift supply; own-price moves along the curve."
+    ],
+    "tactical_explanations": [
+      "A per-unit tax adds to the cost of each unit sold. At any given market price, sellers keep less after tax, so they offer less. That is a leftward supply shift.\n\nThe statement is true.",
+      "A leftward supply shift with demand unchanged lowers the equilibrium quantity traded. Legal liability on producers therefore can shrink market volume below the old equilibrium.\n\nThe statement is true.",
+      "Higher after-tax costs mean sellers need a higher market price to cover the same quantity as before, not a lower one. The claim reverses the cost logic.\n\nThe statement is false.",
+      "Less supply with stable demand typically raises the price buyers pay. Buyer price does not fall when producer taxes cut quantity supplied.\n\nThe statement is false.",
+      "A cost-changing tax shifts the supply curve. Movement along supply comes from a change in the good's own price, not from the tax itself.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.43",
+    "title": "Subsidies to Producers and Supply",
+    "context": "Analyze how payments to producers can shift supply rightward. Evaluate the following economic assertions:",
+    "statements": [
+      "Subsidised farmers may supply more output at each market price after receiving per-unit payments.",
+      "Rightward supply shifts from subsidies raise equilibrium price if demand stays unchanged.",
+      "Subsidies differ from price ceilings because both cap buyer prices identically.",
+      "Taxpayer-funded subsidies reduce quantity supplied at each price by confusing producers.",
+      "Production subsidies lowering effective costs shift demand leftward for the subsidised good."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Lower effective costs raise quantity supplied at given prices.",
+      "More supply at unchanged demand tends to lower equilibrium price.",
+      "Subsidies affect supply-side costs; ceilings limit legal prices.",
+      "Improved margins from subsidies typically expand supply.",
+      "Producer subsidies affect supply costs, not buyer demand directly."
+    ],
+    "tactical_explanations": [
+      "A per-unit subsidy lowers the net cost of producing each unit. At any given market price, farmers keep more, so they are willing to supply more output. That is a rightward supply shift.\n\nThe statement is true.",
+      "More supply with demand unchanged typically lowers the equilibrium price and raises quantity. Subsidies do not raise equilibrium price through a rightward supply shift alone.\n\nThe statement is false.",
+      "A subsidy is a payment that changes producers' net costs. A price ceiling is a legal maximum on the price buyers may pay. They are different tools and do not both cap buyer prices identically.\n\nThe statement is false.",
+      "Better margins from subsidies encourage more output at each price, expanding supply. They do not cut quantity supplied by confusing producers.\n\nThe statement is false.",
+      "Production subsidies act on sellers' costs and shift supply. They do not shift buyer demand left for the subsidised good.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.44",
+    "title": "Weather Shocks and Agricultural Supply",
+    "context": "Review how adverse weather can shift agricultural supply leftward. Evaluate the following economic assertions:",
+    "statements": [
+      "Drought reducing crop yields shifts supply leftward for affected harvests at each price.",
+      "Importers may partially offset domestic supply shifts by increasing quantity supplied from abroad.",
+      "Short-run food markets may show sharp price spikes after sudden supply leftward shifts.",
+      "Frost damaging orchards can raise equilibrium fruit prices if demand remains largely unchanged.",
+      "Weather shocks are demand-side events identical to changes in consumer tastes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Lower output at each price reflects reduced supply.",
+      "External supply can shift total market supply rightward.",
+      "Rapid supply cuts with sticky demand raise equilibrium price quickly.",
+      "Leftward supply with stable demand raises equilibrium price.",
+      "Weather affects supply conditions; tastes are demand shifters."
+    ],
+    "tactical_explanations": [
+      "Drought cuts yields, so less of the crop is available at each price. That reduction in seller offerings is a leftward supply shift for the affected harvest.\n\nThe statement is true.",
+      "Imports add another source of the good. Extra foreign shipments can raise total quantity supplied at each price and partially offset a domestic leftward shift.\n\nThe statement is true.",
+      "When supply drops suddenly and demand cannot adjust at once, the clearing price jumps. Short-run food markets often show sharp spikes after such leftward supply shocks.\n\nThe statement is true.",
+      "Frost that damages orchards cuts fruit supply. With demand largely unchanged, the new equilibrium has a higher fruit price.\n\nThe statement is true.",
+      "Weather changes what producers can harvest; it is a supply-side shock. Changes in tastes are demand shifters. The two are not the same.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.45",
+    "title": "Consumer Expectations and Demand",
+    "context": "Analyze how expectations about future prices or income shift current demand. Evaluate the following economic assertions:",
+    "statements": [
+      "If buyers expect prices to fall next month, current quantity demanded may decrease today.",
+      "Expectations of higher future petrol prices can shift current demand rightward as drivers stock up.",
+      "Expected future income growth may shift current demand rightward for durable goods like appliances.",
+      "Expectations about future conditions move buyers along the demand curve only.",
+      "Panic buying before announced rationing reflects a leftward demand shift at unchanged official prices."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Expected future price cuts reduce current purchasing incentive.",
+      "Anticipating future price rises increases current quantity demanded.",
+      "Anticipated higher income raises willingness to buy now.",
+      "Expectations shift demand; own-price changes move along the curve.",
+      "Panic buying increases current demand before prices change."
+    ],
+    "tactical_explanations": [
+      "If buyers expect a lower price soon, waiting looks better than buying now. Current quantity demanded can therefore fall even before today's price changes.\n\nThe statement is true.",
+      "Expecting higher petrol prices later encourages filling tanks and cans today. At today's price, quantity demanded rises, which is a rightward shift of current demand.\n\nThe statement is true.",
+      "Anticipated higher income raises willingness to commit to durables now. Demand for appliances and similar goods can shift right before the income actually arrives.\n\nThe statement is true.",
+      "Expectations are a non-price demand shifter. They move the whole demand curve; movement along the curve comes from a change in the good's own price.\n\nThe statement is false.",
+      "Panic buying means more purchases at the current official price, a rightward demand shift. It is not a leftward shift that would cut demand.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.46",
+    "title": "Labour Market Wage Adjustment",
+    "context": "Review how wages coordinate quantity supplied and demanded of labour like prices in goods markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Labour market equilibrium occurs where quantity supplied of labour equals quantity demanded.",
+      "Competition among employers for scarce workers can bid wages up toward labour market equilibrium.",
+      "Higher wages typically reduce quantity supplied of labour as workers reject paid work.",
+      "Skill shortages in tech hiring resemble goods surpluses with downward wage pressure.",
+      "Employers hire more workers when wages rise above the value of marginal output at the margin."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Market-clearing wage balances worker and employer plans.",
+      "Employer bidding raises wages when quantity demanded exceeds supplied.",
+      "Higher wages generally increase labour quantity supplied, ceteris paribus.",
+      "Labour shortage implies excess demand and upward wage pressure.",
+      "Higher wages raise labour costs and reduce quantity demanded."
+    ],
+    "tactical_explanations": [
+      "As in goods markets, labour market equilibrium is the wage at which the quantity of labour workers offer equals the quantity employers want to hire.\n\nThe statement is true.",
+      "When workers are scarce relative to hiring needs, employers compete for them. That bidding raises wages toward the level that clears the labour market.\n\nThe statement is true.",
+      "Higher wages usually draw more people into work or extra hours along the labour supply curve. Quantity supplied of labour typically rises, not falls, when wages rise, other things equal.\n\nThe statement is false.",
+      "A skill shortage is excess demand for labour, like a goods shortage. It creates upward wage pressure, not a surplus with downward pressure.\n\nThe statement is false.",
+      "Firms hire up to where the wage matches the value of marginal product. If the wage rises above that marginal value, hiring becomes less profitable and quantity demanded falls, not rises.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.47",
+    "title": "Global Supply Chain Disruption",
+    "context": "Analyze how international supply disruptions shift domestic market supply. Evaluate the following economic assertions:",
+    "statements": [
+      "Domestic equilibrium price may rise when import supply falls while demand stays constant.",
+      "Global markets isolate domestic equilibrium from supply shocks abroad completely.",
+      "Firms may seek alternate suppliers over time, shifting demand leftward permanently.",
+      "Port closures delaying imports shift demand rightward for components used in domestic assembly.",
+      "Shortages of imported parts increase quantity supplied of finished goods domestically."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Leftward supply with fixed demand raises equilibrium price.",
+      "Trade links domestic markets to foreign supply disruptions.",
+      "Alternate suppliers affect supply recovery, not demand destruction.",
+      "Import delays affect supply availability, not buyer demand directly.",
+      "Missing inputs reduce feasible output and supply of finished goods."
+    ],
+    "tactical_explanations": [
+      "Fewer imports cut total domestic supply at each price. With demand unchanged, the new equilibrium typically has a higher price.\n\nThe statement is true.",
+      "Trade links domestic markets to foreign supply. Shocks abroad can raise domestic prices and cut quantities; global markets do not fully isolate domestic equilibrium.\n\nThe statement is false.",
+      "Finding alternate suppliers restores or rebuilds supply over time. That is a supply-side recovery, not a permanent leftward shift of demand.\n\nThe statement is false.",
+      "Port closures delay the arrival of components, reducing supply available for assembly. That is a supply disruption, not a rightward demand shift for those parts.\n\nThe statement is false.",
+      "Missing imported parts constrain production. Quantity supplied of finished goods falls when key inputs are scarce; it does not rise.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.48",
+    "title": "Integrated Market Mechanisms Review",
+    "context": "Review how demand, supply, equilibrium, and policy tools interact in competitive markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Understanding markets requires separating movement along curves from shifts caused by other factors.",
+      "Inflation linked to excessive money growth may be addressed by tighter policy raising interest rates.",
+      "Price ceilings below equilibrium create shortage; price floors above equilibrium create surplus.",
+      "Demand shifters include income, tastes, and substitute prices; supply shifters include costs and technology.",
+      "Surplus and shortage signals guide competitive markets toward equilibrium through price adjustment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Own-price changes differ from shifters on demand and supply sides.",
+      "Monetary tightening cools spending that outpaces output.",
+      "Binding caps and minimums produce predictable imbalances.",
+      "Non-price determinants shift curves on each side of the market.",
+      "Price changes coordinate divergent buyer and seller plans."
+    ],
+    "tactical_explanations": [
+      "A change in the good's own price moves buyers or sellers along an existing curve. Changes in income, costs, tastes, and similar factors shift the curves. Keeping those ideas separate is basic market analysis.\n\nThe statement is true.",
+      "When money growth outpaces real output, spending pressure can raise the price level. Raising interest rates tightens policy, cools that spending, and can ease the inflation.\n\nThe statement is true.",
+      "A ceiling below equilibrium leaves quantity demanded above quantity supplied (shortage). A floor above equilibrium leaves quantity supplied above quantity demanded (surplus). Those are the standard binding outcomes.\n\nThe statement is true.",
+      "Income, tastes, and related-goods prices shift demand. Input costs and technology shift supply. Those lists match the usual non-price determinants on each side.\n\nThe statement is true.",
+      "Surplus puts downward pressure on price; shortage puts upward pressure. Price adjustment continues until quantity demanded and quantity supplied meet again at equilibrium.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.49",
+    "title": "Capstone Scenarios in Market Analysis",
+    "context": "Review applied combinations of demand shifts, supply shifts, and inflation policy in everyday economic settings. Evaluate the following economic assertions:",
+    "statements": [
+      "Raising interest rates to fight inflation may slow housing demand by increasing mortgage costs.",
+      "Too much money relative to output can raise general prices even when one industry's supply expands.",
+      "A café facing higher coffee bean costs and rising commuter demand may see ambiguous price change.",
+      "Markets coordinate plans through prices, while policy may alter incentives via taxes, subsidies, or rates.",
+      "When festival demand surges but venue capacity is fixed, equilibrium ticket price tends to fall."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Tighter credit reduces quantity demanded for rate-sensitive purchases.",
+      "Monetary inflation is economy-wide beyond single-market supply gains.",
+      "Concurrent supply left and demand right make price outcome depend on magnitudes.",
+      "Private coordination and public policy both influence outcomes.",
+      "Demand increase with fixed supply typically raises equilibrium price."
+    ],
+    "tactical_explanations": [
+      "Higher policy rates feed into higher mortgage rates. Costlier loans reduce quantity demanded for housing, so housing demand slows as part of the anti-inflation stance.\n\nThe statement is true.",
+      "Economy-wide inflation comes from excess money relative to overall output. One industry expanding supply does not cancel that general price pressure across many markets.\n\nThe statement is true.",
+      "Higher bean costs shift café supply left while rising commuter traffic shifts demand right. Both forces push the clearing price up, but how far it moves depends on the relative size of the two shifts, so the price change is ambiguous without knowing those magnitudes.\n\nThe statement is true.",
+      "Markets use prices to coordinate buyers and sellers. Taxes, subsidies, and interest rates are policy tools that change incentives and can alter those market outcomes.\n\nThe statement is true.",
+      "A festival surge shifts demand right while venue capacity stays fixed. With more buyers competing for the same seats, equilibrium ticket price tends to rise, not fall.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.50",
+    "title": "Saving, Spending, and Price Stability",
+    "context": "Analyze how household saving and spending choices respond to interest rates and connect to inflation pressure. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher deposit interest rates may shift some household spending toward saving rather than immediate purchases.",
+      "Reduced current spending from higher rates can ease demand-side pressure on the general price level.",
+      "Lower interest rates may encourage borrowing for homes and cars, shifting demand rightward for those goods.",
+      "Central banks lowering rates to stimulate spending may accept some upward price pressure if output is idle.",
+      "Households comparing mortgage and deposit rates operate outside markets with no price signals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Better saving returns reduce current consumption demand.",
+      "Cooler consumption demand helps moderate inflationary pressure.",
+      "Cheaper credit raises quantity demanded for interest-sensitive purchases.",
+      "Policy trade-offs arise when stimulating demand near capacity limits.",
+      "Credit and deposit markets use interest rates as coordinating prices."
+    ],
+    "tactical_explanations": [
+      "Higher deposit rates make saving more attractive relative to spending today. Some household funds shift into deposits instead of immediate purchases.\n\nThe statement is true.",
+      "When current spending cools after rate rises, fewer bids chase goods and services. That eases demand-side pressure on the general price level.\n\nThe statement is true.",
+      "Cheaper credit raises quantity demanded for interest-sensitive purchases such as homes and cars. Demand for those goods can shift right when rates fall.\n\nThe statement is true.",
+      "Lower rates stimulate borrowing and spending. If spare capacity exists, output can rise, but policymakers may still accept some upward price pressure as part of that stimulus trade-off.\n\nThe statement is true.",
+      "Mortgage and deposit rates are market prices for credit and saving. Households comparing those rates are using price signals inside those markets, not operating outside them.\n\nThe statement is false."
+    ]
+  }
+]

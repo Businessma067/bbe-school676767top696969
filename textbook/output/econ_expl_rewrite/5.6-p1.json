@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.01",
+    "title": "Customer Characteristics in Market Research",
+    "context": "Consider a household detergent producer that promotes one standard formula nationwide without tailoring messages to regional income differences. Evaluate the following economic assertions:",
+    "statements": [
+      "Market segmentation divides a market into relatively homogeneous subgroups of customers who share relevant characteristics.",
+      "Geographic segmentation groups customers according to where they live or operate, such as a city and its surrounding area.",
+      "Demographic segmentation uses measurable social characteristics such as age, gender, education level, and income level.",
+      "Psychographic segmentation reflects attitudes, values, lifestyle interests, and willingness to pay for particular product philosophies.",
+      "Market segmentation requires every customer in a subgroup to be identical in all personal characteristics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Segmentation creates subgroups that are relatively homogeneous with respect to relevant customer characteristics.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Location-based grouping such as city and surrounding area is geographic segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Age, gender, education, and income are textbook demographic segmentation variables.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Attitudes, values, and lifestyle interests underpin psychographic segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segmentation creates relatively homogeneous subgroups, not perfectly identical individuals.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.02",
+    "title": "Geographic Segmentation by Location",
+    "context": "Analyze geographic segmentation based on location such as city and surrounding area. Evaluate the following economic assertions:",
+    "statements": [
+      "Geographic segmentation classifies customers by income level and education rather than by location.",
+      "Demographic segmentation is defined by lifestyle attitudes and values rather than age or income.",
+      "Psychographic segmentation is defined solely by postal district and city boundaries.",
+      "Behavioural segmentation ignores how customers buy or use products and focuses only on gender.",
+      "Behavioural segmentation distinguishes customers by how they buy or use products, such as occasional versus heavy use."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Income and education are demographic variables; geographic segmentation uses location.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Attitudes and values belong to psychographic segmentation; demographics use age, income, and similar traits.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Location defines geographic segmentation, not psychographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Behavioural segmentation uses buying and usage patterns; gender is demographic.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Buying and usage patterns such as occasional versus heavy use define behavioural segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.03",
+    "title": "Demographic Segmentation Variables",
+    "context": "Review demographic segmentation using age, gender, education level, and income level. Evaluate the following economic assertions:",
+    "statements": [
+      "A useful segment should be measurable so that its size and purchasing power can be estimated.",
+      "A useful segment should be profitable so that serving it is worthwhile for the business.",
+      "A useful segment should be accessible through communication channels and distribution channels that can reach it.",
+      "A segment is measurable only when every member has been individually interviewed.",
+      "A segment is profitable whenever it is large, even if serving it costs more than the revenue gained."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Measurability requires that segment size and purchasing power can be estimated.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profitability means the segment must be worth serving commercially.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Accessibility requires reachable communication and distribution channels.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Measurability requires estimable size and purchasing power, not interviewing every member.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profitability requires worthwhile returns; size alone does not guarantee profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.04",
+    "title": "Psychographic Segmentation and Values",
+    "context": "Analyze psychographic segmentation reflecting attitudes, values, and lifestyle interests. Evaluate the following economic assertions:",
+    "statements": [
+      "A useful segment should be durable in the sense that it does not change too quickly to support planning.",
+      "A segment is accessible if it is profitable, regardless of whether communication or distribution can reach it.",
+      "Targeting is the process of evaluating each segment's attractiveness and selecting one or more segments to enter.",
+      "A target market is a group of people or businesses toward whom a firm markets goods, services, or ideas with a strategy designed for their specific needs and preferences.",
+      "Positioning is the process by which marketers try to create an image or identity in the minds of their target market."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Durability means the segment should remain stable enough for planning rather than vanishing immediately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Accessibility is separate from profitability and requires reachable channels.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Targeting evaluates attractiveness and chooses segment(s) to enter.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The target market receives a tailored strategy aimed at its specific needs and preferences.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Positioning builds an image or identity in the target market's minds.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.05",
+    "title": "Behavioural Segmentation Patterns",
+    "context": "Consider a sportswear brand offering distinct product lines for occasional joggers and for competitive athletes based on usage intensity. Evaluate the following economic assertions:",
+    "statements": [
+      "A durable segment must never change over time in order to qualify for targeting.",
+      "After segments are identified and a target market is chosen, positioning clarifies which product meets the demands of the targeted subgroup.",
+      "Targeting means dividing the market into subgroups, while segmentation means choosing which subgroup to enter.",
+      "Mass marketing ignores different market segments and offers the same product to all customers.",
+      "Positioning occurs before segmentation and targeting in the marketing strategy sequence."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Durability means not changing too quickly, not permanent immutability.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Positioning links the chosen target subgroup to the product that meets its demands.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segmentation divides the market; targeting selects segment(s) to enter.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Mass marketing treats the market as undifferentiated with one product for all.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segmentation and targeting precede positioning in the stp sequence.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.06",
+    "title": "Homogeneous Subgroups in Segmentation",
+    "context": "Analyze how segmentation divides relatively homogeneous subgroups within a broader market. Evaluate the following economic assertions:",
+    "statements": [
+      "Under mass marketing, a product is promoted to all segments in almost the same way.",
+      "Mass marketing is often applied to everyday products such as pens, pencils, soaps, personal hygiene products, and detergents.",
+      "Mass marketing offers different tailored products to each identified market segment.",
+      "Mass marketing allows a business to produce a relatively large number of identical products and sell them to a relatively large market.",
+      "Economies of scale arise when a large number of identical products is produced and some costs do not increase in direct proportion to output."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Mass marketing uses nearly identical promotion across segments.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Universal staples like pens, soaps, and detergents commonly suit mass marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mass marketing offers the same product broadly; tailored segment products are segment marketing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "High-volume identical output sold broadly is characteristic of mass marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Scale economies occur because some costs are shared across a larger identical output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.07",
+    "title": "Measurable Segment Criterion",
+    "context": "Review the criterion that market segments should be measurable in size and purchasing power. Evaluate the following economic assertions:",
+    "statements": [
+      "Mass marketing promotes the same product differently to every segment with highly customised campaigns.",
+      "Economies of scale mean that every cost rises in direct proportion to output as production increases.",
+      "Increased total output of an identical product can reduce cost per unit because shared costs are divided across more units.",
+      "Economies of scale always raise cost per unit when total identical output increases.",
+      "Grouping buyers by adult men and women of all ages alone is geographic segmentation because demographics describe place."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Mass marketing promotes to all segments in almost the same way.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Scale economies arise because some costs do not rise in direct proportion to output.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Higher identical output spreads costs and lowers average cost per unit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Increased identical output can reduce cost per unit by spreading shared costs.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Adult men and women of all ages are demographic, not geographic segmentation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.08",
+    "title": "Profitable Segment Criterion",
+    "context": "Analyze the criterion that market segments should be profitable for the business to serve. Evaluate the following economic assertions:",
+    "statements": [
+      "Mass marketing can be inflexible and make it harder to react to particular changes in some target markets.",
+      "Segment marketing means offering different products to one or more segments after some segmentation.",
+      "Grouping buyers in an Austrian city and its surrounding commuter area is psychographic segmentation because location reflects personal values.",
+      "Targeting buyers unwilling to pay the full price of a brand-new device is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "Distinguishing occasional users rather than intensive daily operators is demographic segmentation because usage is a social characteristic like age."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Uniform mass coverage reduces flexibility when specific segments shift preferences.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment marketing tailors different products to chosen segment(s).\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buyers in an austrian city and its surrounding commuter area illustrate geographic, not psychographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Buyers unwilling to pay the full price of a brand-new device reflect psychographic, not purely behavioural segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Occasional users rather than intensive daily operators illustrate behavioural, not demographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.09",
+    "title": "Accessible Segment Criterion",
+    "context": "Consider a craft brewery selling specialised seasonal ales only to enthusiasts willing to pay premium prices in a narrow taste category. Evaluate the following economic assertions:",
+    "statements": [
+      "Segment marketing focuses limited resources on segments where the firm has strategic fit with customer needs and wants.",
+      "Niche marketing focuses on particular segments and often on subgroups within broader segments through more segmentation.",
+      "Many small businesses employ niche marketing because they cannot produce the quantity required for a mass market.",
+      "A business specialising in a certain field may target only selected segments of a market rather than the whole market.",
+      "A niche specialist that serves a segment well can become a market leader regardless of firm size."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Resource focus on well-understood segments with strategic fit defines segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Niche marketing concentrates on narrower subgroups within segments.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Limited production capacity leads many small firms toward niche marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Specialisation supports targeting selected segments instead of full-market coverage.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong niche performance can yield market leadership despite small scale.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.10",
+    "title": "Durable Segment Criterion",
+    "context": "Analyze the criterion that market segments should be durable rather than changing too quickly. Evaluate the following economic assertions:",
+    "statements": [
+      "Targeting is the first step toward an effective marketing strategy before the marketing mix is applied to serve the target market.",
+      "The marketing mix is applied as a second step to serve the needs of the chosen target market.",
+      "Grouping buyers in an Austrian city and its surrounding commuter area illustrates geographic segmentation because location defines the subgroup.",
+      "A segment of an Austrian city and its surrounding commuter area is automatically profitable whenever it can be named on a map.",
+      "Describing customers as adult men and women of all ages illustrates demographic segmentation using measurable population characteristics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Targeting precedes the marketing mix in building an effective strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "After targeting, the marketing mix serves the selected target market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers in an austrian city and its surrounding commuter area form a geographic segment based on place.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Naming an austrian city and its surrounding commuter area does not make the segment profitable; costs and revenue still matter.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Adult men and women of all ages exemplify demographic segmentation variables.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.11",
+    "title": "Targeting Selected Segments",
+    "context": "Review targeting as the selection of segment or segments a business chooses to enter. Evaluate the following economic assertions:",
+    "statements": [
+      "A segment of adult men and women of all ages is accessible whenever it is measurable, even if no channel reaches them.",
+      "A segment of buyers unwilling to pay the full price of a brand-new device is durable only if preferences never shift, making short-term trends irrelevant.",
+      "Targeting buyers unwilling to pay the full price of a brand-new device reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Distinguishing occasional users rather than intensive daily operators is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "Mass marketing to an Austrian city and its surrounding commuter area requires a different product formula for every neighbourhood street."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Measurability does not guarantee accessible communication and distribution for adult men and women of all ages.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Durability allows some change; it requires stability for planning, not zero change forever.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Buyers unwilling to pay the full price of a brand-new device illustrate psychographic segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Occasional users rather than intensive daily operators illustrate behavioural segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mass marketing uses one product broadly, not a different formula for every street in an austrian city and its surrounding commuter area.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.12",
+    "title": "Evaluating Segment Attractiveness",
+    "context": "Analyze how targeting evaluates each segment's attractiveness before commitment. Evaluate the following economic assertions:",
+    "statements": [
+      "Niche marketing to buyers unwilling to pay the full price of a brand-new device means selling one identical product to the entire national market.",
+      "Segment marketing to adult men and women of all ages means ignoring subgroup differences and promoting one undifferentiated offer.",
+      "Positioning toward occasional users rather than intensive daily operators is unnecessary if the firm already completed geographic segmentation.",
+      "A segment defined for an Austrian city and its surrounding commuter area is measurable when survey and sales data reveal its size and average purchasing power.",
+      "A segment of adult men and women of all ages is profitable only if expected revenue from serving them exceeds the cost of tailored offers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Niche marketing narrows focus; one identical national product is mass marketing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Segment marketing tailors to adult men and women of all ages; ignoring differences describes mass marketing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Positioning still creates identity for the chosen subgroup after segmentation and targeting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Data on an austrian city and its surrounding commuter area can make the geographic segment measurable in size and purchasing power.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profitability for adult men and women of all ages requires revenue to cover the cost of serving that demographic subgroup.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.13",
+    "title": "Positioning and Market Identity",
+    "context": "Consider a cleaning-products company unable to react quickly when one regional segment shifts toward eco-certified alternatives under a single mass-market formula. Evaluate the following economic assertions:",
+    "statements": [
+      "Targeting occasional users rather than intensive daily operators means listing every possible subgroup without evaluating attractiveness.",
+      "Economies of scale for a niche offer to buyers unwilling to pay the full price of a brand-new device are identical to those for undifferentiated mass production.",
+      "A segment of buyers unwilling to pay the full price of a brand-new device is accessible when advertising and retail channels can reach those customers effectively.",
+      "A firm serving adult men and women of all ages with strategic fit should spread resources evenly across every segment in the economy.",
+      "Producing a tiny customised batch for buyers unwilling to pay the full price of a brand-new device always yields lower unit cost than mass production of identical units."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Targeting evaluates attractiveness before selecting occasional users rather than intensive daily operators or any subgroup.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Niche focus on buyers unwilling to pay the full price of a brand-new device typically lacks the very large identical output that drives scale economies.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Accessible channels must reach buyers unwilling to pay the full price of a brand-new device for viable targeting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strategic fit implies focus on chosen segments such as adult men and women of all ages, not equal coverage of all segments.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Small customised batches for buyers unwilling to pay the full price of a brand-new device do not automatically enjoy mass-production scale economies.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.14",
+    "title": "Segmentation Targeting Positioning Sequence",
+    "context": "Analyze the sequence from segmentation through targeting to positioning in marketing strategy. Evaluate the following economic assertions:",
+    "statements": [
+      "Grouping buyers by employed wage earners and retired pensioners alone is geographic segmentation because demographics describe place.",
+      "Grouping buyers in a coastal region and neighbouring inland towns is psychographic segmentation because location reflects personal values.",
+      "A segment of occasional users rather than intensive daily operators is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Targeting customers who value environmental reuse of second-hand goods is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "Distinguishing seasonal purchasers rather than year-round repeat buyers is demographic segmentation because usage is a social characteristic like age."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Employed wage earners and retired pensioners are demographic, not geographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Buyers in a coastal region and neighbouring inland towns illustrate geographic, not psychographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Durability for occasional users rather than intensive daily operators means the behavioural pattern persists long enough for planning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers who value environmental reuse of second-hand goods reflect psychographic, not purely behavioural segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Seasonal purchasers rather than year-round repeat buyers illustrate behavioural, not demographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.15",
+    "title": "Mass Marketing Definition",
+    "context": "Review mass marketing as offering the same product to all customers while ignoring segment differences. Evaluate the following economic assertions:",
+    "statements": [
+      "A segment of a coastal region and neighbouring inland towns is automatically profitable whenever it can be named on a map.",
+      "Mass marketing of a universal staple to an Austrian city and its surrounding commuter area and other areas uses one offer promoted in almost the same way everywhere.",
+      "A segment of employed wage earners and retired pensioners is accessible whenever it is measurable, even if no channel reaches them.",
+      "Segment marketing to adult men and women of all ages would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "A segment of customers who value environmental reuse of second-hand goods is durable only if preferences never shift, making short-term trends irrelevant."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Naming a coastal region and neighbouring inland towns does not make the segment profitable; costs and revenue still matter.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A single staple promoted uniformly across an austrian city and its surrounding commuter area and elsewhere fits mass marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Measurability does not guarantee accessible communication and distribution for employed wage earners and retired pensioners.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Differentiated products for adult men and women of all ages reflect segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Durability allows some change; it requires stability for planning, not zero change forever.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.16",
+    "title": "Uniform Promotion in Mass Marketing",
+    "context": "Analyze how mass marketing promotes a product to all segments in almost the same way. Evaluate the following economic assertions:",
+    "statements": [
+      "Niche marketing to buyers unwilling to pay the full price of a brand-new device concentrates on a narrow subgroup whose specialised preferences justify a focused offer.",
+      "Mass marketing to a coastal region and neighbouring inland towns requires a different product formula for every neighbourhood street.",
+      "Targeting occasional users rather than intensive daily operators means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria.",
+      "Positioning toward buyers unwilling to pay the full price of a brand-new device aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "Producing millions of identical units for an Austrian city and its surrounding commuter area can spread fixed factory costs and support economies of scale."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "A focused offer for buyers unwilling to pay the full price of a brand-new device reflects niche marketing within a broader market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Mass marketing uses one product broadly, not a different formula for every street in a coastal region and neighbouring inland towns.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Choosing occasional users rather than intensive daily operators as a focus group is targeting after segment evaluation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "An identity showing the right product for buyers unwilling to pay the full price of a brand-new device is positioning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High identical volume for an austrian city and its surrounding commuter area can lower unit cost through scale economies.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.17",
+    "title": "Mass Marketing for Everyday Products",
+    "context": "Consider a regional bakery chain that groups customers by city and surrounding commuter towns when planning delivery routes and store openings. Evaluate the following economic assertions:",
+    "statements": [
+      "Niche marketing to customers who value environmental reuse of second-hand goods means selling one identical product to the entire national market.",
+      "A firm with strategic fit serving adult men and women of all ages should concentrate resources on that segment rather than undifferentiated mass coverage.",
+      "Grouping buyers in a coastal region and neighbouring inland towns illustrates geographic segmentation because location defines the subgroup.",
+      "Describing customers as employed wage earners and retired pensioners illustrates demographic segmentation using measurable population characteristics.",
+      "Targeting customers who value environmental reuse of second-hand goods reflects psychographic segmentation based on attitudes and preferences rather than location alone."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Niche marketing narrows focus; one identical national product is mass marketing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Strategic fit with adult men and women of all ages supports focused segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers in a coastal region and neighbouring inland towns form a geographic segment based on place.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employed wage earners and retired pensioners exemplify demographic segmentation variables.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers who value environmental reuse of second-hand goods illustrate psychographic segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.18",
+    "title": "Economies of Scale in Production",
+    "context": "Analyze economies of scale arising when large identical output spreads some costs across more units. Evaluate the following economic assertions:",
+    "statements": [
+      "Distinguishing seasonal purchasers rather than year-round repeat buyers is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "Segment marketing to employed wage earners and retired pensioners means ignoring subgroup differences and promoting one undifferentiated offer.",
+      "A segment defined for a coastal region and neighbouring inland towns is measurable when survey and sales data reveal its size and average purchasing power.",
+      "Positioning toward seasonal purchasers rather than year-round repeat buyers is unnecessary if the firm already completed geographic segmentation.",
+      "Targeting seasonal purchasers rather than year-round repeat buyers means listing every possible subgroup without evaluating attractiveness."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Seasonal purchasers rather than year-round repeat buyers illustrate behavioural segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment marketing tailors to employed wage earners and retired pensioners; ignoring differences describes mass marketing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Data on a coastal region and neighbouring inland towns can make the geographic segment measurable in size and purchasing power.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Positioning still creates identity for the chosen subgroup after segmentation and targeting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Targeting evaluates attractiveness before selecting seasonal purchasers rather than year-round repeat buyers or any subgroup.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.19",
+    "title": "Cost Per Unit and Total Output",
+    "context": "Review how mass marketing can reduce cost per unit through increased total output. Evaluate the following economic assertions:",
+    "statements": [
+      "Economies of scale for a niche offer to customers who value environmental reuse of second-hand goods are identical to those for undifferentiated mass production.",
+      "A segment of employed wage earners and retired pensioners is profitable only if expected revenue from serving them exceeds the cost of tailored offers.",
+      "A firm serving employed wage earners and retired pensioners with strategic fit should spread resources evenly across every segment in the economy.",
+      "Producing a tiny customised batch for customers who value environmental reuse of second-hand goods always yields lower unit cost than mass production of identical units.",
+      "A segment of customers who value environmental reuse of second-hand goods is accessible when advertising and retail channels can reach those customers effectively."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Niche focus on customers who value environmental reuse of second-hand goods typically lacks the very large identical output that drives scale economies.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profitability for employed wage earners and retired pensioners requires revenue to cover the cost of serving that demographic subgroup.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strategic fit implies focus on chosen segments such as employed wage earners and retired pensioners, not equal coverage of all segments.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Small customised batches for customers who value environmental reuse of second-hand goods do not automatically enjoy mass-production scale economies.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Accessible channels must reach customers who value environmental reuse of second-hand goods for viable targeting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.20",
+    "title": "Mass Marketing Inflexibility",
+    "context": "Analyze the inflexibility of mass marketing when particular target markets change. Evaluate the following economic assertions:",
+    "statements": [
+      "A segment of seasonal purchasers rather than year-round repeat buyers is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Grouping buyers by self-employed professionals and salaried staff alone is geographic segmentation because demographics describe place.",
+      "Mass marketing of a universal staple to a coastal region and neighbouring inland towns and other areas uses one offer promoted in almost the same way everywhere.",
+      "Segment marketing to employed wage earners and retired pensioners would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "Niche marketing to customers who value environmental reuse of second-hand goods concentrates on a narrow subgroup whose specialised preferences justify a focused offer."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Durability for seasonal purchasers rather than year-round repeat buyers means the behavioural pattern persists long enough for planning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Self-employed professionals and salaried staff are demographic, not geographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A single staple promoted uniformly across a coastal region and neighbouring inland towns and elsewhere fits mass marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiated products for employed wage earners and retired pensioners reflect segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A focused offer for customers who value environmental reuse of second-hand goods reflects niche marketing within a broader market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.21",
+    "title": "Segment Marketing Differentiation",
+    "context": "Consider a national soap manufacturer producing millions of identical bars to spread fixed factory costs across a very large output. Evaluate the following economic assertions:",
+    "statements": [
+      "Targeting seasonal purchasers rather than year-round repeat buyers means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria.",
+      "Positioning toward customers who value environmental reuse of second-hand goods aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "Producing millions of identical units for a coastal region and neighbouring inland towns can spread fixed factory costs and support economies of scale.",
+      "A firm with strategic fit serving employed wage earners and retired pensioners should concentrate resources on that segment rather than undifferentiated mass coverage.",
+      "Grouping buyers in a capital district and peripheral suburbs illustrates geographic segmentation because location defines the subgroup."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Choosing seasonal purchasers rather than year-round repeat buyers as a focus group is targeting after segment evaluation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "An identity showing the right product for customers who value environmental reuse of second-hand goods is positioning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High identical volume for a coastal region and neighbouring inland towns can lower unit cost through scale economies.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strategic fit with employed wage earners and retired pensioners supports focused segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers in a capital district and peripheral suburbs form a geographic segment based on place.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.22",
+    "title": "Strategic Fit in Segment Marketing",
+    "context": "Analyze how segment marketing focuses limited resources on segments with strategic fit. Evaluate the following economic assertions:",
+    "statements": [
+      "Describing customers as self-employed professionals and salaried staff illustrates demographic segmentation using measurable population characteristics.",
+      "Grouping buyers in a capital district and peripheral suburbs is psychographic segmentation because location reflects personal values.",
+      "Targeting users wanting hands-on help when starting equipment reflects psychographic segmentation based on attitudes and preferences rather than location alone.",
+      "Distinguishing light users of software licences rather than power users is behavioural segmentation because purchase and usage patterns differ within the product category.",
+      "A segment defined for a capital district and peripheral suburbs is measurable when survey and sales data reveal its size and average purchasing power."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Self-employed professionals and salaried staff exemplify demographic segmentation variables.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buyers in a capital district and peripheral suburbs illustrate geographic, not psychographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Users wanting hands-on help when starting equipment illustrate psychographic segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Light users of software licences rather than power users illustrate behavioural segmentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Data on a capital district and peripheral suburbs can make the geographic segment measurable in size and purchasing power.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.23",
+    "title": "Niche Marketing Focus",
+    "context": "Review niche marketing as concentrating on particular segments or subgroups within segments. Evaluate the following economic assertions:",
+    "statements": [
+      "A segment of self-employed professionals and salaried staff is profitable only if expected revenue from serving them exceeds the cost of tailored offers.",
+      "A segment of users wanting hands-on help when starting equipment is accessible when advertising and retail channels can reach those customers effectively.",
+      "Targeting users wanting hands-on help when starting equipment is behavioural segmentation because attitudes are the same as purchase frequency.",
+      "A segment of light users of software licences rather than power users is durable when usage patterns remain stable enough to justify product and promotion planning.",
+      "Mass marketing of a universal staple to a capital district and peripheral suburbs and other areas uses one offer promoted in almost the same way everywhere."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profitability for self-employed professionals and salaried staff requires revenue to cover the cost of serving that demographic subgroup.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Accessible channels must reach users wanting hands-on help when starting equipment for viable targeting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Users wanting hands-on help when starting equipment reflect psychographic, not purely behavioural segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Durability for light users of software licences rather than power users means the behavioural pattern persists long enough for planning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A single staple promoted uniformly across a capital district and peripheral suburbs and elsewhere fits mass marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.24",
+    "title": "Small Business Niche Preference",
+    "context": "Analyze why many small businesses favour niche marketing over mass-market volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Segment marketing to self-employed professionals and salaried staff would offer differentiated products matching the subgroup's identified needs rather than one identical item.",
+      "Distinguishing light users of software licences rather than power users is demographic segmentation because usage is a social characteristic like age.",
+      "Niche marketing to users wanting hands-on help when starting equipment concentrates on a narrow subgroup whose specialised preferences justify a focused offer.",
+      "A segment of a capital district and peripheral suburbs is automatically profitable whenever it can be named on a map.",
+      "Targeting light users of software licences rather than power users means selecting that behavioural subgroup after judging its attractiveness against segmentation criteria."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Differentiated products for self-employed professionals and salaried staff reflect segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Light users of software licences rather than power users illustrate behavioural, not demographic segmentation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A focused offer for users wanting hands-on help when starting equipment reflects niche marketing within a broader market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Naming a capital district and peripheral suburbs does not make the segment profitable; costs and revenue still matter.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Choosing light users of software licences rather than power users as a focus group is targeting after segment evaluation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.6",
+    "case_id": "CASE 5.6.25",
+    "title": "More Segmentation in Niche Marketing",
+    "context": "Consider a supermarket group analysing age, employment status, and household income before designing loyalty offers for different shopper profiles. Evaluate the following economic assertions:",
+    "statements": [
+      "A segment of self-employed professionals and salaried staff is accessible whenever it is measurable, even if no channel reaches them.",
+      "Positioning toward users wanting hands-on help when starting equipment aims to create a distinct image of which product best serves that attitude-based subgroup.",
+      "A segment of users wanting hands-on help when starting equipment is durable only if preferences never shift, making short-term trends irrelevant.",
+      "Producing millions of identical units for a capital district and peripheral suburbs can spread fixed factory costs and support economies of scale.",
+      "A firm with strategic fit serving self-employed professionals and salaried staff should concentrate resources on that segment rather than undifferentiated mass coverage."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Measurability does not guarantee accessible communication and distribution for self-employed professionals and salaried staff.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "An identity showing the right product for users wanting hands-on help when starting equipment is positioning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Durability allows some change; it requires stability for planning, not zero change forever.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "High identical volume for a capital district and peripheral suburbs can lower unit cost through scale economies.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strategic fit with self-employed professionals and salaried staff supports focused segment marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

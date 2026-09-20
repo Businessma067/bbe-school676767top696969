@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.51",
+    "title": "Specialisation Versus Diversification",
+    "context": "Review how major product changes differ from minor relaunches when customer needs shift. Evaluate the following economic assertions:",
+    "statements": [
+      "A LED light bulbs product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Low introductory pricing for a new garden tools product can attract first buyers during the introduction life-cycle stage.",
+      "Selling garden tools through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting garden tools are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing pet food range is a line extension that deepens the product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "High share in a low-growth market is a cash cow, not a question mark.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Launch pricing for new garden tools can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Website plus retailer partners blend online place with indirect distribution for garden tools.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal events for garden tools are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New variants within one pet food line illustrate line extension deepening the line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.52",
+    "title": "Increasing Depth of a Product Line",
+    "context": "Analyze how the product P remains at the heart of marketing as the most important decision. Evaluate the following economic assertions:",
+    "statements": [
+      "Promoting LED light bulbs through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Listing LED light bulbs at €9.99 means the firm has left the price element unused and relied only on promotion.",
+      "Because travel backpacks are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "Introducing an entirely new pet food product line alongside an existing range is a mix extension widening the portfolio.",
+      "A global travel backpacks brand guarantees that product quality may vary sharply between countries without affecting brand recognition."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Social-media promotion is a promotional tool, not a place or warehouse decision.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Charm pricing is a psychological pricing tool within the price p.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The product p includes services as well as goods offered by the business.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A separate pet food line added to the portfolio is mix extension increasing width.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands serve as a guarantee of stable quality maintained across markets.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.53",
+    "title": "Major Changes Beyond Relaunch",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing pet food packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Selling travel backpacks exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new travel backpacks is an example of price skimming aimed only at early luxury buyers.",
+      "Removing an underperforming pet food variant from the range reflects contraction in the product-mix strategy.",
+      "A pet food brand symbol and consistent label design support differentiation and recognition in the product P."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Packaging colour changes for pet food exemplify minor relaunch alteration.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Wholesaler channels indicate indirect distribution, not direct.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Low introductory pricing aligns with penetration or launch pricing, not skimming.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Eliminating a weak pet food variant is product-mix contraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand symbols on pet food support differentiation within the product element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.54",
+    "title": "Product as Most Important P",
+    "context": "Analyze how place convenience supports the marketing-mix goal of accessible purchase locations. Evaluate the following economic assertions:",
+    "statements": [
+      "Low introductory pricing for a new pet food product can attract first buyers during the introduction life-cycle stage.",
+      "Selling pet food through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting pet food are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing skincare creams range is a line extension that deepens the product line.",
+      "Introducing an entirely new skincare creams product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Launch pricing for new pet food can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Website plus retailer partners blend online place with indirect distribution for pet food.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal events for pet food are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New variants within one skincare creams line illustrate line extension deepening the line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A separate skincare creams line added to the portfolio is mix extension increasing width.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.55",
+    "title": "Interaction of Price and Promotion",
+    "context": "Review how promotional messages should align with the targeted segment's needs identified in research. Evaluate the following economic assertions:",
+    "statements": [
+      "Refreshing skincare creams packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming skincare creams variant from the range reflects contraction in the product-mix strategy.",
+      "Removing an outdated travel backpacks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A travel backpacks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
+      "Promoting travel backpacks through social-media posts is a place decision because it chooses the warehouse where stock is stored."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Packaging colour changes for skincare creams exemplify minor relaunch alteration.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Eliminating a weak skincare creams variant is product-mix contraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Elimination after failed relaunch is contraction, not expansion.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "High share in a low-growth market is a cash cow, not a question mark.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Social-media promotion is a promotional tool, not a place or warehouse decision.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.56",
+    "title": "Place Convenience for Customers",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "A skincare creams brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new skincare creams product can attract first buyers during the introduction life-cycle stage.",
+      "Selling skincare creams through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting skincare creams are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing kitchen appliances range is a line extension that deepens the product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Brand symbols on skincare creams support differentiation within the product element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Launch pricing for new skincare creams can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Website plus retailer partners blend online place with indirect distribution for skincare creams.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal events for skincare creams are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New variants within one kitchen appliances line illustrate line extension deepening the line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.57",
+    "title": "Promotion Aligned With Segments",
+    "context": "Review how line extension increases depth while mix extension increases the number of product lines. Evaluate the following economic assertions:",
+    "statements": [
+      "Introducing an entirely new kitchen appliances product line alongside an existing range is a mix extension widening the portfolio.",
+      "Refreshing kitchen appliances packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an underperforming kitchen appliances variant from the range reflects contraction in the product-mix strategy.",
+      "A kitchen appliances brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Low introductory pricing for a new kitchen appliances product can attract first buyers during the introduction life-cycle stage."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "A separate kitchen appliances line added to the portfolio is mix extension increasing width.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging colour changes for kitchen appliances exemplify minor relaunch alteration.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Eliminating a weak kitchen appliances variant is product-mix contraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand symbols on kitchen appliances support differentiation within the product element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Launch pricing for new kitchen appliances can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.58",
+    "title": "Harmonised Mix Not Single P",
+    "context": "Analyze how elimination of a product line reflects contraction within the product-mix strategy. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling kitchen appliances through both a company website and partner retailers combines online and indirect place channels.",
+      "Seasonal sales events promoting kitchen appliances are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing children's toys range is a line extension that deepens the product line.",
+      "Introducing an entirely new children's toys product line alongside an existing range is a mix extension widening the portfolio.",
+      "Refreshing children's toys packaging colours without changing the core formula is a relaunch within product-mix alteration."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Website plus retailer partners blend online place with indirect distribution for kitchen appliances.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Seasonal events for kitchen appliances are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New variants within one children's toys line illustrate line extension deepening the line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A separate children's toys line added to the portfolio is mix extension increasing width.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging colour changes for children's toys exemplify minor relaunch alteration.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.59",
+    "title": "Line Depth Versus Mix Width",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "A €9.99 charm price for travel backpacks is classified exclusively under promotion rather than the price mix element.",
+      "Removing an underperforming children's toys variant from the range reflects contraction in the product-mix strategy.",
+      "A children's toys brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Because frozen pizzas are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "Low introductory pricing for a new children's toys product can attract first buyers during the introduction life-cycle stage."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Charm pricing is a psychological pricing tool within the price p.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Eliminating a weak children's toys variant is product-mix contraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand symbols on children's toys support differentiation within the product element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The product p includes services as well as goods offered by the business.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Launch pricing for new children's toys can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.60",
+    "title": "Contraction Eliminating Product Lines",
+    "context": "Analyze how stars require continued investment in promotion and production facilities. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling children's toys through both a company website and partner retailers combines online and indirect place channels.",
+      "A global frozen pizzas brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Seasonal sales events promoting children's toys are sales-promotion tools within the promotion element of the mix.",
+      "Adding a new flavour variant within an existing bicycle accessories range is a line extension that deepens the product line.",
+      "Introducing an entirely new bicycle accessories product line alongside an existing range is a mix extension widening the portfolio."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Website plus retailer partners blend online place with indirect distribution for children's toys.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brands serve as a guarantee of stable quality maintained across markets.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Seasonal events for children's toys are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New variants within one bicycle accessories line illustrate line extension deepening the line.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A separate bicycle accessories line added to the portfolio is mix extension increasing width.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.61",
+    "title": "Decline Stage Low Growth Pattern",
+    "context": "Review how cash cows generate high revenues with lower investment as market growth slows. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling frozen pizzas exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "Setting a low introductory price for new frozen pizzas is an example of price skimming aimed only at early luxury buyers.",
+      "Refreshing bicycle accessories packaging colours without changing the core formula is a relaunch within product-mix alteration.",
+      "Removing an outdated frozen pizzas model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A frozen pizzas product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Wholesaler channels indicate indirect distribution, not direct.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Low introductory pricing aligns with penetration or launch pricing, not skimming.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Packaging colour changes for bicycle accessories exemplify minor relaunch alteration.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Elimination after failed relaunch is contraction, not expansion.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "High share in a low-growth market is a cash cow, not a question mark.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.62",
+    "title": "Star Investment Requirements",
+    "context": "Consider a regional ice-cream producer adding new flavours within its existing range and later introducing a yogurt line. Evaluate the following economic assertions:",
+    "statements": [
+      "Removing an underperforming bicycle accessories variant from the range reflects contraction in the product-mix strategy.",
+      "A bicycle accessories brand symbol and consistent label design support differentiation and recognition in the product P.",
+      "Promoting frozen pizzas through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Low introductory pricing for a new bicycle accessories product can attract first buyers during the introduction life-cycle stage.",
+      "Selling bicycle accessories through both a company website and partner retailers combines online and indirect place channels."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Eliminating a weak bicycle accessories variant is product-mix contraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand symbols on bicycle accessories support differentiation within the product element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Social-media promotion is a promotional tool, not a place or warehouse decision.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Launch pricing for new bicycle accessories can support introduction-stage customer acquisition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Website plus retailer partners blend online place with indirect distribution for bicycle accessories.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.63",
+    "title": "Cash Cow Revenue With Lower Spend",
+    "context": "Review price differentiation that charges different prices to distinct customer groups or channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Seasonal sales events promoting bicycle accessories are sales-promotion tools within the promotion element of the mix.",
+      "During the introduction stage of the product life cycle, development costs can exceed early revenues.",
+      "Charm pricing of frozen pizzas at €9.99 is treated only as advertising copy and never as a price decision.",
+      "During the introduction stage of the product life cycle, heavy advertising may accompany the first sales period.",
+      "During the growth stage of the product life cycle, sales rise faster than costs as output expands."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Seasonal events for bicycle accessories are promotional sales-promotion activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Introduction can show losses while development and launch costs dominate.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Charm pricing is a psychological pricing tool within the price p.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Introductory promotion spending supports early awareness building.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Growth-stage sales growth can outpace cost increases.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.64",
+    "title": "Poor Dog Low Share Low Growth",
+    "context": "Analyze list price and trade discounts as components of the overall price decision. Evaluate the following economic assertions:",
+    "statements": [
+      "Because mobile phone cases are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global mobile phone cases brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling mobile phone cases exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
+      "During the growth stage of the product life cycle, economies of scale may reduce average unit costs.",
+      "During the maturity stage of the product life cycle, profit often reaches its peak relative to earlier stages."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The product p includes services as well as goods offered by the business.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Brands serve as a guarantee of stable quality maintained across markets.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Wholesaler channels indicate indirect distribution, not direct.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Higher output in growth can lower average costs per unit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Maturity is commonly the profit peak in the plc model.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.65",
+    "title": "Price Differentiation Across Groups",
+    "context": "Consider a start-up launching an innovative fitness tracker with heavy advertising, low introductory prices, and online-only sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Setting a low introductory price for new mobile phone cases is an example of price skimming aimed only at early luxury buyers.",
+      "During the maturity stage of the product life cycle, competition may force lower prices and higher promotion spending.",
+      "Removing an outdated mobile phone cases model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "During the decline stage of the product life cycle, sales volume tends to fall as customer interest wanes.",
+      "A mobile phone cases product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Low introductory pricing aligns with penetration or launch pricing, not skimming.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Mature markets face competitive price and promotion pressure.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Elimination after failed relaunch is contraction, not expansion.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Decline features declining sales as demand weakens.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High share in a low-growth market is a cash cow, not a question mark.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.66",
+    "title": "List Price and Trade Discounts",
+    "context": "Analyze intensive distribution that places products in many outlets to maximise customer convenience. Evaluate the following economic assertions:",
+    "statements": [
+      "Promoting mobile phone cases through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "During the decline stage of the product life cycle, profits usually fall alongside shrinking sales volume.",
+      "In the BCG matrix, a question mark has low relative market share in a market with high market growth.",
+      "Cost-plus pricing involves adding a standard markup to unit production costs within the price P.",
+      "Penetration pricing involves setting a deliberately low launch price to build share within the price P."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Social-media promotion is a promotional tool, not a place or warehouse decision.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Declining sales in the final stage typically reduce profits.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Question marks combine low share with high growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost-plus pricing is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Penetration pricing is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.67",
+    "title": "Selective Distribution Strategy",
+    "context": "Review exclusive distribution through a limited number of specialised retail partners. Evaluate the following economic assertions:",
+    "statements": [
+      "Listing mobile phone cases at €9.99 means the firm has left the price element unused and relied only on promotion.",
+      "Price skimming involves charging a high price initially before gradual reductions within the price P.",
+      "Because washing powders are physical goods, services such as installation or support cannot be counted in the product P for that business.",
+      "A global washing powders brand guarantees that product quality may vary sharply between countries without affecting brand recognition.",
+      "Selling washing powders exclusively through wholesalers means the business uses direct distribution with no intermediaries."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Charm pricing is a psychological pricing tool within the price p.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Price skimming is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The product p includes services as well as goods offered by the business.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Brands serve as a guarantee of stable quality maintained across markets.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Wholesaler channels indicate indirect distribution, not direct.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.68",
+    "title": "Intensive Distribution Coverage",
+    "context": "Consider a beverage company using charm pricing on supermarket shelves and trade discounts for large retailers. Evaluate the following economic assertions:",
+    "statements": [
+      "Setting a low introductory price for new washing powders is an example of price skimming aimed only at early luxury buyers.",
+      "Competitive pricing involves matching or responding to rival price levels within the price P.",
+      "Psychological pricing involves using charm prices that appear slightly below round numbers within the price P.",
+      "Removing an outdated washing powders model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
+      "A washing powders product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Low introductory pricing aligns with penetration or launch pricing, not skimming.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competitive pricing is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Psychological pricing is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Elimination after failed relaunch is contraction, not expansion.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "High share in a low-growth market is a cash cow, not a question mark.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.69",
+    "title": "Exclusive Distribution Partners",
+    "context": "Review how packaging and labelling form part of the product P alongside the core good or service. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade discounts involves reducing the list price for bulk channel purchasers within the price P.",
+      "Promoting washing powders through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
+      "Loyalty discounts involves rewarding repeat purchasers with preferential prices within the price P.",
+      "Instalment terms involves allowing customers to pay the price over several periods within the price P.",
+      "A €9.99 charm price for washing powders is classified exclusively under promotion rather than the price mix element."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Trade discounts is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Social-media promotion is a promotional tool, not a place or warehouse decision.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyalty discounts is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Instalment terms is a recognised price tool in the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Charm pricing is a psychological pricing tool within the price p.\n\nThe absolute wording \"exclusively\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.70",
+    "title": "Sales Force in Promotion Mix",
+    "context": "Analyze how services such as technical support count as products within the first P. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade discounts raise the list price for small retail buyers compared with large chains.",
+      "Direct distribution means selling without intermediaries to the final buyer within the place element.",
+      "Loyalty discounts eliminate the need for any promotional communication with customers.",
+      "Instalment terms remove the price element because payment is deferred to future periods.",
+      "Competitive pricing sets price without reference to any rival products in the market."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Trade discounts is a price tool with a distinct role described in the marketing-mix framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Direct distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty discounts is a price tool with a distinct role described in the marketing-mix framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Instalment terms is a price tool with a distinct role described in the marketing-mix framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competitive pricing is a price tool with a distinct role described in the marketing-mix framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.71",
+    "title": "Packaging Within Product P",
+    "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
+    "statements": [
+      "Indirect distribution means using wholesalers and retailers to reach customers within the place element.",
+      "Cost-plus pricing sets price by copying competitor advertisements rather than adding markup to costs.",
+      "Intensive distribution means placing the product in many convenient outlets within the place element.",
+      "Selective distribution means limiting outlets to protect service quality and image within the place element.",
+      "Exclusive distribution means appointing only a few specialised selling partners within the place element."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Indirect distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost-plus pricing is a price tool with a distinct role described in the marketing-mix framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Intensive distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exclusive distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.72",
+    "title": "Services Counted as Products",
+    "context": "Analyze how product portfolio decisions map onto BCG categories across different market conditions. Evaluate the following economic assertions:",
+    "statements": [
+      "Online distribution means making the product purchasable through digital channels within the place element.",
+      "Advertising serves as paid mass communication to inform and persuade buyers in the promotion P.",
+      "Sales promotion serves as short-term incentives such as coupons or sales events in the promotion P.",
+      "Intensive distribution restricts a product to a single exclusive outlet in each city.",
+      "Personal selling serves as direct sales contact tailored to individual customers in the promotion P."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Online distribution describes a place or distribution approach in the mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales promotion is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intensive distribution relates to customer access within the place element.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personal selling is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.73",
+    "title": "Brand Symbols and Global USP",
+    "context": "Review how profits tend to peak in the maturity stage of the product life cycle. Evaluate the following economic assertions:",
+    "statements": [
+      "Public relations serves as building favourable publicity and corporate image in the promotion P.",
+      "Window displays serves as in-store visual promotion at the point of sale in the promotion P.",
+      "Social-media campaigns serves as digital communication reaching targeted online audiences in the promotion P.",
+      "Selective distribution places the product in every possible outlet without limitation.",
+      "Market research on students can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Public relations is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Window displays is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Social-media campaigns is a promotional tool within the marketing mix.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Selective distribution relates to customer access within the place element.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Research on students informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.74",
+    "title": "Portfolio Mapping on BCG Matrix",
+    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
+    "statements": [
+      "A promotional message tailored to students should align with the product and price offered through chosen place channels.",
+      "Affordable pricing for students supports the marketing-mix goal of offering value at a convenient place with clear communication.",
+      "Brand trust is especially valuable for students who rely on familiar names when choosing among competing offers.",
+      "Exclusive distribution requires selling through as many supermarkets as possible nationwide.",
+      "Online distribution prevents customers from purchasing because it only displays product photographs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Segment-focused promotion must align with product, price, and place for students.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Affordable price for students fits the core marketing-mix objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Familiar brands provide reassurance valued by students.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exclusive distribution relates to customer access within the place element.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Online distribution relates to customer access within the place element.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.7",
+    "case_id": "CASE 5.7.75",
+    "title": "Profit Peaking in Maturity",
+    "context": "Review how promotional tools communicate the intended message behind the marketing mix. Evaluate the following economic assertions:",
+    "statements": [
+      "Selective distribution may suit premium offers targeted at students when service quality must be controlled.",
+      "Personal selling may be effective for students when the product requires detailed explanation before purchase.",
+      "A relaunch with updated packaging can refresh appeal among students without launching an entirely new product line.",
+      "Line extension with a budget variant can attract students within an existing product line without widening the whole mix.",
+      "Market research on families with young children can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Selective outlets can protect quality when targeting students.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Complex offers to students can benefit from personal selling.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging relaunch can renew interest among students within alteration strategy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Budget variants for students deepen the line through line extension.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Research on families with young children informs coordinated decisions across all four ps.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

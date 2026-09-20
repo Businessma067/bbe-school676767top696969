@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.76",
+    "title": "Competitor Share Comparisons",
+    "context": "Review competitive benchmarking through market share alongside sales and profit trends. Evaluate the following economic assertions:",
+    "statements": [
+      "Maintaining sales is essential for ongoing revenue to fund business activity.",
+      "Profitability and sales objectives are completely unrelated measures.",
+      "Sales objectives complement share objectives by measuring absolute performance.",
+      "Owners are reimbursed through sales volume alone without any profit calculation.",
+      "Promotional bundles may be introduced to stimulate higher sales volume quickly."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Ongoing activity requires maintained sales revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Higher sales usually support profit with stated limitations.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Absolute sales complement relative share measures.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners are reimbursed through profits, not unit volume alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Bundles can stimulate short-term volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.77",
+    "title": "Cost Coverage Misunderstandings",
+    "context": "Analyze sales volume increases that strengthen cash inflows before profit is calculated. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment is prohibited when a firm pursues USP objectives.",
+      "Sales revenue flows from customers purchasing the product in the market.",
+      "There are no limitations on the link between higher sales and higher profit.",
+      "A marketing plan without sales targets would omit a core objective category.",
+      "Profitability is achieved when market share reaches fifty percent regardless of costs."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Profit can be reinvested including in brand and differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Customer purchases generate sales revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The text explicitly notes certain limitations on the sales-profit link.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales targets belong in comprehensive marketing plans.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit requires revenue exceeding costs, not share alone.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.78",
+    "title": "Reinvestment Objective Errors",
+    "context": "Review limitations on the sales-profit link when discounting or costs offset volume gains. Evaluate the following economic assertions:",
+    "statements": [
+      "Volume sold through online channels counts toward overall sales objectives.",
+      "Sales growth from loyal repeat customers is a sustainable volume source.",
+      "Production must be aligned with sales objectives to avoid unmet demand or excess stock.",
+      "A temporary sales spike from a campaign still counts toward period volume objectives.",
+      "Sales cover variable and fixed production costs when revenue is sufficient."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Online channel sales count in total volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyal repeat buyers sustainably add volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operations align with sales objective levels.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Campaign spikes contribute to period volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sufficient revenue covers both cost types.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.79",
+    "title": "Repeat Purchase Denials",
+    "context": "Analyze interrelated marketing objectives that reinforce one another across the customer lifecycle. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits are unimportant because owners require no return on invested money.",
+      "A discounting strategy that maximises unit sales always maximises profit simultaneously.",
+      "Profitability objectives conflict with customer satisfaction and cannot coexist.",
+      "Marketing staff may compare actual sales to targeted sales each month.",
+      "Retained earnings from profit cannot finance marketing campaigns."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profits are important to reimburse owners for invested capital.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Discount-driven volume can reduce unit profitability.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Objectives interrelate and can coexist within marketing planning.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Monthly actual-versus-target comparison tracks sales objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained profit can fund marketing and reinvestment.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.80",
+    "title": "Promotion-Only Differentiation",
+    "context": "Review loyalty as an outcome when satisfaction leads customers to buy the product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher sales figures never contribute to profit under any market condition.",
+      "Increasing sales in export markets can be a marketing objective for growth.",
+      "Sales volume objectives may be adjusted after market analysis reveals demand limits.",
+      "Profit is recorded before sales revenue is earned from customers.",
+      "A price reduction might raise unit sales while affecting revenue per unit."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Higher sales usually mean more profit with certain limitations.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Export growth is a valid sales objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Demand analysis can revise volume targets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Revenue from sales precedes profit calculation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Price cuts can raise units while changing revenue per unit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.81",
+    "title": "Share Maintenance Denials",
+    "context": "Analyze unique selling propositions that position a product as better than the rest in buyers' minds. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing success is judged only by share gains with no regard to profit.",
+      "Profit reinvestment means paying all revenue to suppliers immediately.",
+      "Profitability requires sales to fall so that costs can be eliminated.",
+      "Owners' invested money is reimbursed through promotional reach metrics.",
+      "Sales are important because they provide the funds to cover production costs and profit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Profitability is a recognised marketing objective alongside share.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Reinvestment retains profit in the business for future use.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profit generally benefits from adequate sales covering costs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Owners are reimbursed through profits, not reach metrics.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales fund costs and enable profit per the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.82",
+    "title": "Volume Profit Assumptions",
+    "context": "Review market share as a relative measure rather than an absolute sales total alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Volume targets at retail level roll up to manufacturer sales objectives.",
+      "A USP guarantees profit without regard to sales volume or costs.",
+      "A business may prioritise sales growth when entering a new customer segment.",
+      "Profitability objectives apply only when the firm has no competitors.",
+      "Retained profit must be distributed entirely to creditors each year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Retail volume aggregates to supplier sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp supports marketing but profit still depends on sales and costs.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "New segments often trigger sales growth focus.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit objectives apply in competitive markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit can be retained in the business rather than paid to creditors.\n\nThe absolute wording \"entirely\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.83",
+    "title": "Objective Hierarchy Mistakes",
+    "context": "Analyze maintaining sales as essential for ongoing revenue to fund business activity. Evaluate the following economic assertions:",
+    "statements": [
+      "Limitations on the sales-profit link mean higher sales always lower profit.",
+      "Sales performance relative to plan indicates marketing effectiveness.",
+      "Revenue objectives are closely tied to sales volume and selling price.",
+      "Profitability is unrelated to marketing because marketing generates only costs.",
+      "Maintaining sales during an economic downturn can be a demanding marketing objective."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Limitations qualify the positive link; they do not reverse it always.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Plan variance shows marketing effectiveness.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Revenue depends on volume and price together.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing aims contribute to profitable sales outcomes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Downturns make sales maintenance challenging.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.84",
+    "title": "Customer Needs Neglect",
+    "context": "Review profitability enabling owners to be reimbursed and the firm to retain funds internally. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales from repeat purchases reduce dependence on costly new customer acquisition.",
+      "A marketing objective to double sales implies a substantial volume increase target.",
+      "Sales growth supports the broader aim of making a profit after covering costs.",
+      "Trade promotions to retailers may aim to lift sell-through sales volume.",
+      "A firm with high customer satisfaction cannot pursue profitability objectives."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat sales lower acquisition reliance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Doubling sales is an explicit volume ambition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Volume growth supports profit after cost coverage.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade promos target sell-through volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction and profitability objectives can be pursued together.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.85",
+    "title": "Perceived Uniqueness Denials",
+    "context": "Analyze how businesses set marketing objectives after analysing the markets they wish to operate in. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales monitoring by region helps allocate marketing resources effectively.",
+      "Volume sold is a direct measure of progress on sales-related marketing objectives.",
+      "Sales revenue must be earned before profit can be distributed or retained.",
+      "A firm may accept lower margin temporarily to achieve a sales volume milestone.",
+      "Marketing objectives on sales recognise that businesses need revenues to operate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Regional sales data guides resource allocation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Units sold directly measure sales progress.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit follows earned sales revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Volume milestones may justify temporary margin sacrifice.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales objectives reflect revenue necessity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.86",
+    "title": "Competitiveness Indicator Traps",
+    "context": "Review the role of customer satisfaction as a marketing objective linked to repeat purchase and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment is the same as issuing new share capital to investors.",
+      "Higher sales from satisfied loyal customers illustrate interrelated marketing objectives.",
+      "Sales targets for a new store opening reflect geographic expansion objectives.",
+      "Volume growth without cost control may fail to improve profitability.",
+      "Sales covering production costs is sufficient for profit with no margin required."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Reinvestment uses retained profit internally, unlike new share issues.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyalty-driven sales show objective interrelation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "New store targets express geographic sales aims.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Uncosted volume growth may not improve profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit requires revenue above costs, not mere cost coverage alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.87",
+    "title": "Revenue Flow Assertions",
+    "context": "Analyze how a unique selling proposition supports product differentiation and attracts loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability is a marketing objective because profits reimburse owners for invested money.",
+      "Profits can be retained and reinvested in the business for future growth.",
+      "Usually the higher the sales figures are, the more profit a business will make, with certain limitations.",
+      "Profitability objectives sit alongside satisfaction, differentiation, share, and sales goals.",
+      "Marketing success ultimately contributes to profit when revenues exceed relevant costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profits return value to owners for their investment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained profits fund reinvestment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Higher sales generally raise profit subject to limitations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit is one objective among several.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit arises when revenue exceeds costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.88",
+    "title": "Owner Return Misconceptions",
+    "context": "Review why gaining and maintaining market share indicates a firm's relative competitiveness. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability is measured by customer satisfaction scores rather than financial surplus.",
+      "Owners expect profits as compensation for the capital they invested in the firm.",
+      "Retained profit can finance new equipment without raising external finance.",
+      "A profitability target may be expressed as a margin percentage on sales.",
+      "Higher sales support profitability when unit margins and costs remain favourable."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Profit is a financial surplus; satisfaction is a separate objective.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Owner reimbursement is a stated profit rationale.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained profit funds internal investment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Margin percentages operationalise profit targets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Favourable margins make higher sales support profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.89",
+    "title": "Satisfaction Sales Interlink",
+    "context": "Analyze the importance of maintaining or increasing sales to cover production costs and earn profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit objectives acknowledge that sales alone do not guarantee profit in every case.",
+      "Marketing campaigns are assessed partly on whether they improve profitable sales.",
+      "Reinvestment of profit supports long-term marketing and production capacity.",
+      "Profitability is important because it sustains the business for owners and reinvestment.",
+      "Higher sales always eliminate the need to reinvest profit in the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Limitations on the sales-profit link are recognised.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Campaigns should contribute to profitable sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reinvested profit builds future capacity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit sustains the business for owners and growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reinvestment remains valuable even when sales rise.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.90",
+    "title": "USP Loyalty Connection",
+    "context": "Review profitability as a marketing objective and its link to reimbursing owners and reinvestment. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm may reject unprofitable volume that fails margin thresholds.",
+      "Profit objectives are met when advertising spending equals total revenue.",
+      "Owners receive reimbursement only through wages, never through profit.",
+      "Cost increases can offset sales growth and limit profit improvement.",
+      "Profit retained in the business reduces dependence on external borrowing for expansion."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Unprofitable volume may be rejected.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Matching ad spend to revenue does not define profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profits reimburse owners for invested money per the text.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Rising costs can cap profit despite sales growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retention lowers borrowing needs for expansion.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.91",
+    "title": "Relative Importance Measures",
+    "context": "Analyze how customer satisfaction interrelates with other marketing objectives such as sales and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing objectives include profitability because owners need returns on investment.",
+      "Discounting that raises sales volume may reduce profitability per unit sold.",
+      "Profit measurement follows revenue from sales minus the costs of production and marketing.",
+      "A profitability review examines whether marketing spend generated adequate returns.",
+      "Profitability and market share move in opposite directions in every case."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Owner returns motivate profit objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Discount-driven volume can cut unit profitability.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit is revenue minus relevant costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing roi forms part of profit review.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share and profit can both improve or require trade-offs depending on strategy.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.92",
+    "title": "Production Cost Coverage",
+    "context": "Review how product differentiation can rest on product characteristics or on promotion and customer perception. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied loyal customers who buy repeatedly can improve lifetime profitability.",
+      "Profit reinvestment may fund brand-building that supports future differentiation.",
+      "Higher sales figures usually mean more profit, though limitations such as rising costs apply.",
+      "Profitability objectives encourage attention to cost coverage, not only gross revenue.",
+      "Owners may withdraw part of profit as income while retaining the rest in the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat loyal buyers can raise lifetime profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit can fund brand investment for usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The text notes the usual sales-profit link with limitations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit focus requires cost awareness beyond revenue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit can be distributed or retained.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.93",
+    "title": "Profit Limitation Awareness",
+    "context": "Analyze why building a brand supports the creation of a unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "A marketing plan should consider whether sales targets are profit-compatible.",
+      "Profit from one product line can subsidise marketing investment in another line.",
+      "Profitability is linked to sales because sales provide the revenue base for profit calculation.",
+      "Retained earnings from profit strengthen the firm's internal finance for marketing.",
+      "A firm pursuing share at the expense of margin may temporarily reduce profitability."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Targets should align with profit compatibility.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cross-line profit can fund marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales revenue forms the profit calculation base.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained profit supports marketing finance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share pursuit can temporarily lower profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.94",
+    "title": "Integrated Marketing Objective Review",
+    "context": "Review how market share reflects a business position relative to competitors in the same market. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit objectives motivate efficient use of marketing budgets.",
+      "Limitations on the sales-profit link include unfavourable changes in unit costs.",
+      "Profitability allows owners to be compensated while the firm retains funds for growth.",
+      "Marketing staff may track gross profit by product to align with profitability objectives.",
+      "A USP supporting premium pricing can improve profitability if costs are controlled."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Profit aims encourage marketing efficiency.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unit cost changes limit the sales-profit relationship.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit serves both owner compensation and retention.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product-level gross profit tracks objective progress.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Premium usp can lift profit with cost control.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.95",
+    "title": "Closing Objective Distinctions",
+    "context": "Analyze the relationship between higher sales figures and profitability within stated limitations. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit reinvestment in production capacity can support future sales growth.",
+      "Profitability is a stated marketing objective in the textbook marketing overview.",
+      "Sales must cover production costs before any profit can be recorded.",
+      "Owners reinvest profit when they expect future returns from expanded operations.",
+      "A decline in profitability despite stable sales may reflect higher input costs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Capacity investment links profit retention to sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit is explicitly listed as a marketing objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost coverage precedes profit recording.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reinvestment reflects expected future returns.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Stable sales with falling profit may mean higher costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.96",
+    "title": "Final Marketing Goals Assessment",
+    "context": "Review why dissatisfied customers are unlikely to buy a product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit targets may be set annually alongside sales and share objectives.",
+      "Marketing that attracts profitable customer segments supports profitability objectives.",
+      "Retained profit is internally generated finance for marketing initiatives.",
+      "The relationship between sales and profit is positive in general but not without exceptions.",
+      "Profitability objectives remind managers that revenue growth must exceed cost growth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Annual profit targets accompany other objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment choice affects profit outcomes.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retention provides internal marketing finance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "General positive link with exceptions is stated.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit requires revenue growth to beat cost growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.97",
+    "title": "Comprehensive Objective Assertions",
+    "context": "Analyze how a unique selling proposition makes a product seem special, unique, or better than alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit cannot support production capacity expansion.",
+      "A profitability objective is fulfilled when the firm has the most employees.",
+      "A business may analyse contribution margin per unit to support profit objectives.",
+      "Marketing that raises sales with rising costs always increases profit.",
+      "Profitability is excluded when businesses analyse customer wishes and needs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Retained profit can be reinvested in the business including capacity.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profit relates to financial surplus, not headcount.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Contribution margin analysis aids profit planning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Rising costs can offset sales growth and limit profit gains.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profit is one objective set alongside market analysis.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.98",
+    "title": "Late-Stage USP and Share Cases",
+    "context": "Review the marketing objective of maintaining sales volume to generate revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits reimburse owners and can be ploughed back into the business per the text.",
+      "Marketing objectives on profit recognise limitations when discounting erodes margins.",
+      "Higher sales volume increases the revenue pool from which profit is calculated after costs.",
+      "Profit retention funds improvements that may later support customer satisfaction.",
+      "Profits are important only for tax purposes and not for reinvestment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Owner reimbursement and reinvestment are both noted.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Discount erosion is a profit limitation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Larger revenue pool supports profit after costs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reinvestment can later improve satisfaction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profits can be retained and reinvested in the business.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.99",
+    "title": "Terminal Profit and Sales Review",
+    "context": "Analyze how retained profit from higher sales can be reinvested in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability assessment includes whether marketing achieved cost-effective sales growth.",
+      "Owners' invested money is reimbursed through profits earned from successful operations.",
+      "A firm may delay profit growth while investing heavily in brand and USP development.",
+      "Profit reinvestment is a strategic use of earnings kept within the business.",
+      "Limitations on sales-driven profit include simultaneous increases in marketing expenditure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Cost-effective growth matters for profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operations generate profit that reimburses owners.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand investment may defer near-term profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained earnings serve strategic reinvestment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Higher marketing spend can limit profit from sales growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.100",
+    "title": "Marketing Case 100",
+    "context": "Review the interdependence of customer satisfaction, differentiation, market share, sales, and profitability objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Profitability and sales objectives are interrelated but not identical measures.",
+      "Marketing performance should ultimately contribute to sustainable profitability.",
+      "Retained profit strengthens the balance sheet for future marketing campaigns.",
+      "Profit per unit may fall even when total sales volume rises if prices are cut sharply.",
+      "Marketing objectives exclude profitability whenever sales volume targets are set."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Sales and profit relate but differ.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sustainable profit is the long-run marketing contribution.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Balance sheet strength supports future campaigns.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sharp price cuts can reduce unit profit despite volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profitability remains a valid objective alongside sales volume targets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

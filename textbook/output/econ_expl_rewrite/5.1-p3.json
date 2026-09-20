@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.51",
+    "title": "Mixed Producer and Consumer Lines",
+    "context": "Review the introductory marketing framework for classifying products by customer type and exchange. Evaluate the following economic assertions:",
+    "statements": [
+      "A cleaning contract sold to a hospital trust is a consumer product because every sale ultimately serves human needs.",
+      "A cleaning contract sold to a private buyer is a producer product because the seller is a business firm.",
+      "A catering tray sold to a household member is a consumer product because the purchaser is a private household or individual consumer.",
+      "The same catering tray may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.",
+      "The same cleaning contract must keep one fixed product label for all buyers because the design never changes."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Sales to a business customer classify the cleaning contract as a b2b producer product, not a consumer product.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Sales to a household customer classify the cleaning contract as a b2c consumer product, not a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales to household customers classify the catering tray as a b2c consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical catering tray models shift between producer and consumer labels with the customer, not the design.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical cleaning contract models can be producer or consumer products depending on the buyer.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.52",
+    "title": "Materials and Finished Goods",
+    "context": "Consider a cleaning company contracted by office blocks for nightly janitorial work and by households for weekly domestic visits. Evaluate the following economic assertions:",
+    "statements": [
+      "A cleaning contract is not a product unless it is a manufactured physical good.",
+      "When a firm exchanges a catering tray with a warehouse operator, the transaction is business-to-business and the item is a producer product.",
+      "Exchange is irrelevant to whether a cleaning contract counts as a product if customers desire it strongly enough.",
+      "Marketing classifies a catering tray sold for commercial operations to a warehouse operator as a producer product rather than a consumer product.",
+      "Marketing excludes a cleaning contract from products when sold to a hospital trust because businesses do not have wishes or needs."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "A cleaning contract can be a product when exchanged as a good or service to fulfil customer wishes and needs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2b exchange with a business buyer makes the catering tray a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exchange is required for a cleaning contract to count as a product in marketing terminology.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Commercial use by a business purchaser defines the catering tray as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Business customers have operational wishes and needs that exchanged cleaning contract offerings can fulfil as products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.53",
+    "title": "Paid Services as Products",
+    "context": "Review why both raw materials sold to manufacturers and finished items sold to shoppers can be products. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing classifies a catering tray sold for personal or domestic use to a household member as a consumer product rather than a producer product.",
+      "Marketing excludes a cleaning contract from products when sold to a private buyer because households only receive gifts, not products.",
+      "A cleaning contract transferred internally between branches of one corporation remains a marketed product.",
+      "B2B classification of a cleaning contract depends on the seller's industry rather than on the hospital trust purchaser.",
+      "A catering tray exchanged to fulfil the operational needs of a warehouse operator counts as a product in the producer category."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Personal or domestic use by a household purchaser defines the catering tray as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Household customers acquire consumer products such as a cleaning contract through b2c exchange.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal transfers not offered for external exchange are not products in the marketing sense.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2b classification depends on the business purchaser, not solely on the seller's industry.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operational needs of a business buyer place an exchanged catering tray among producer products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.54",
+    "title": "Buyer Identity and Product Type",
+    "context": "Analyze how exchange with payment underpins product status for services as well as for goods. Evaluate the following economic assertions:",
+    "statements": [
+      "B2C classification of a cleaning contract depends on colourful retail branding rather than on the private buyer purchaser.",
+      "A catering tray exchanged to fulfil the personal wishes of a household member counts as a product in the consumer category.",
+      "A cleaning contract sold to a hospital trust is B2C because money changes hands in the transaction.",
+      "Producer products include a catering tray when it is sold from one business to a warehouse operator for further commercial activity.",
+      "A cleaning contract sold to a private buyer is B2B because the seller is a registered company."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "B2c classification depends on the household purchaser, not on retail branding alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Personal wishes of a household buyer place an exchanged catering tray among consumer products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inter-business sale of a catering tray to a warehouse operator is a textbook producer product case.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The seller's company status does not make a household sale b2b; it remains b2c with a consumer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.55",
+    "title": "Customer Decisive Classification",
+    "context": "Review how business buyers and household buyers anchor the producer versus consumer distinction. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumer products include a catering tray when it is sold to a household member for private consumption or domestic use.",
+      "Producer products include only raw materials, so a finished cleaning contract sold to a hospital trust cannot be a producer product.",
+      "The marketing term product covers a catering tray whether the exchange is B2B with a warehouse operator or B2C with a household member.",
+      "A consultancy may list a catering tray under producer products when invoicing a warehouse operator and under consumer products when invoicing a household member.",
+      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged catering tray a product in marketing terminology."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Household sale of a catering tray to a household member is a textbook consumer product case.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Producer products include goods and services sold to businesses, including a finished cleaning contract for a hospital trust.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A catering tray remains a product in either channel; only the producer versus consumer label changes with the buyer.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customer identity on the invoice determines whether the same catering tray is recorded as producer or consumer.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Wishes and needs give the exchanged catering tray its role as a product rather than a non-market item.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.56",
+    "title": "Identical Design Different Category",
+    "context": "Consider a chemical distributor delivering industrial solvents to factories and smaller containers of garden treatments to retail customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumer products include only luxury items, so a routine cleaning contract sold to a private buyer cannot be a consumer product.",
+      "A cleaning contract becomes a product only after advertising creates demand rather than when it is exchanged.",
+      "A training course sold to a local authority is a consumer product because every sale ultimately serves human needs.",
+      "Exchange value arises when a catering tray is traded with a warehouse operator or a household member to satisfy identifiable customer demand.",
+      "A training course sold to a home user is a producer product because the seller is a business firm."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Consumer products include ordinary goods and services sold to households, including a cleaning contract for a private buyer.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A cleaning contract is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales to a business customer classify the training course as a b2b producer product, not a consumer product.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Traded catering tray offerings create exchange value whether the buyer is a business or a household.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales to a household customer classify the training course as a b2c consumer product, not a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.57",
+    "title": "Enterprise Technical Support",
+    "context": "Review how identical equipment may shift between producer and consumer categories with no change in design. Evaluate the following economic assertions:",
+    "statements": [
+      "Network maintenance sold to a insurance company is a producer product because the service is exchanged business-to-business.",
+      "The same training course must keep one fixed product label for all buyers because the design never changes.",
+      "Network maintenance sold to a retired couple is a consumer product because the service is exchanged business-to-consumer.",
+      "An exchanged network maintenance contract with a insurance company fulfils business needs and therefore counts as a product in marketing terms.",
+      "An exchanged network maintenance visit for a retired couple fulfils household wishes and therefore counts as a product in marketing terms."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "B2b network maintenance for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical training course models can be producer or consumer products depending on the buyer.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "B2c network maintenance for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Business-need fulfilment through exchanged network maintenance makes the service a product sold b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Household-wish fulfilment through exchanged network maintenance makes the service a product sold b2c.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.58",
+    "title": "Residential Technical Support",
+    "context": "Analyze how technical support sold to enterprises fits the producer-product and B2B pattern. Evaluate the following economic assertions:",
+    "statements": [
+      "A training course is not a product unless it is a manufactured physical good.",
+      "Exchange is irrelevant to whether a training course counts as a product if customers desire it strongly enough.",
+      "Marketing excludes a training course from products when sold to a local authority because businesses do not have wishes or needs.",
+      "Producer products encompass network maintenance when one firm provides it to a insurance company under a commercial contract.",
+      "Marketing excludes a training course from products when sold to a home user because households only receive gifts, not products."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "A training course can be a product when exchanged as a good or service to fulfil customer wishes and needs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Exchange is required for a training course to count as a product in marketing terminology.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Business customers have operational wishes and needs that exchanged training course offerings can fulfil as products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Network maintenance under a commercial contract to a insurance company is a producer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Household customers acquire consumer products such as a training course through b2c exchange.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.59",
+    "title": "Services Satisfying Demand",
+    "context": "Review how technical support sold to residents fits the consumer-product and B2C pattern. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumer products encompass network maintenance when a firm provides it to a retired couple for personal or domestic benefit.",
+      "A training course transferred internally between branches of one corporation remains a marketed product.",
+      "B2B classification of a training course depends on the seller's industry rather than on the local authority purchaser.",
+      "The same firm may sell network maintenance as a B2B producer product to a insurance company and as a B2C consumer product to a retired couple.",
+      "Marketing treats network maintenance as a product whenever it is exchanged, whether the buyer is a insurance company or a retired couple."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Network maintenance for personal or domestic benefit to a retired couple is a consumer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Internal transfers not offered for external exchange are not products in the marketing sense.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2b classification depends on the business purchaser, not solely on the seller's industry.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dual-channel network maintenance sales illustrate producer and consumer labels driven by customer type.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exchange of network maintenance with either business or household buyers keeps it within the product concept.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.60",
+    "title": "Goods Satisfying Demand",
+    "context": "Consider a print shop fulfilling bulk brochure orders for marketing agencies and single-copy document services for private customers. Evaluate the following economic assertions:",
+    "statements": [
+      "A insurance company purchasing network maintenance engages in business-to-business exchange for a producer product service.",
+      "B2C classification of a training course depends on colourful retail branding rather than on the home user purchaser.",
+      "A training course sold to a local authority is B2C because money changes hands in the transaction.",
+      "A retired couple purchasing network maintenance engages in business-to-consumer exchange for a consumer product service.",
+      "Network maintenance illustrates that intangible offerings can be products when traded to satisfy customer needs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "B2b purchase of network maintenance by a insurance company yields a producer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c classification depends on the household purchaser, not on retail branding alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2c purchase of network maintenance by a retired couple yields a consumer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible network maintenance counts as a product once exchanged to satisfy needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.61",
+    "title": "Trade Capability Requirement",
+    "context": "Review the marketing principle that products encompass goods capable of satisfying customer demand. Evaluate the following economic assertions:",
+    "statements": [
+      "A training course sold to a home user is B2B because the seller is a registered company.",
+      "Exchange of network maintenance creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.",
+      "Producer products include only raw materials, so a finished training course sold to a local authority cannot be a producer product.",
+      "Payroll processing sold to a accounting partnership is a producer product because the service is exchanged business-to-business.",
+      "Consumer products include only luxury items, so a routine training course sold to a home user cannot be a consumer product."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The seller's company status does not make a household sale b2b; it remains b2c with a consumer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Paid transfer of network maintenance to a customer with unmet wishes or needs defines a marketing product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Producer products include goods and services sold to businesses, including a finished training course for a local authority.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "B2b payroll processing for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Consumer products include ordinary goods and services sold to households, including a training course for a home user.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.62",
+    "title": "Producer Products for Operations",
+    "context": "Analyze how exchanged offerings must be capable of trade to qualify as products. Evaluate the following economic assertions:",
+    "statements": [
+      "Payroll processing sold to a young professional is a consumer product because the service is exchanged business-to-consumer.",
+      "A training course becomes a product only after advertising creates demand rather than when it is exchanged.",
+      "An exchanged payroll processing contract with a accounting partnership fulfils business needs and therefore counts as a product in marketing terms.",
+      "A broadband package sold to a export buyer is a consumer product because every sale ultimately serves human needs.",
+      "An exchanged payroll processing visit for a young professional fulfils household wishes and therefore counts as a product in marketing terms."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "B2c payroll processing for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A training course is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Business-need fulfilment through exchanged payroll processing makes the service a product sold b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales to a business customer classify the broadband package as a b2b producer product, not a consumer product.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Household-wish fulfilment through exchanged payroll processing makes the service a product sold b2c.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.63",
+    "title": "Consumer Products for Personal Use",
+    "context": "Review how producer products serve production or operational needs of business purchasers. Evaluate the following economic assertions:",
+    "statements": [
+      "Producer products encompass payroll processing when one firm provides it to a accounting partnership under a commercial contract.",
+      "Consumer products encompass payroll processing when a firm provides it to a young professional for personal or domestic benefit.",
+      "The same firm may sell payroll processing as a B2B producer product to a accounting partnership and as a B2C consumer product to a young professional.",
+      "Marketing treats payroll processing as a product whenever it is exchanged, whether the buyer is a accounting partnership or a young professional.",
+      "A broadband package sold to a personal customer is a producer product because the seller is a business firm."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Payroll processing under a commercial contract to a accounting partnership is a producer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Payroll processing for personal or domestic benefit to a young professional is a consumer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dual-channel payroll processing sales illustrate producer and consumer labels driven by customer type.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exchange of payroll processing with either business or household buyers keeps it within the product concept.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales to a household customer classify the broadband package as a b2c consumer product, not a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.64",
+    "title": "B2B Producer B2C Consumer Pairing",
+    "context": "Consider a commercial bakery selling bulk flour sacks to restaurants while packaging smaller bags for supermarket shoppers. Evaluate the following economic assertions:",
+    "statements": [
+      "The same broadband package must keep one fixed product label for all buyers because the design never changes.",
+      "A broadband package is not a product unless it is a manufactured physical good.",
+      "Exchange is irrelevant to whether a broadband package counts as a product if customers desire it strongly enough.",
+      "Marketing excludes a broadband package from products when sold to a export buyer because businesses do not have wishes or needs.",
+      "A accounting partnership purchasing payroll processing engages in business-to-business exchange for a producer product service."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Identical broadband package models can be producer or consumer products depending on the buyer.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A broadband package can be a product when exchanged as a good or service to fulfil customer wishes and needs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Exchange is required for a broadband package to count as a product in marketing terminology.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Business customers have operational wishes and needs that exchanged broadband package offerings can fulfil as products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2b purchase of payroll processing by a accounting partnership yields a producer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.65",
+    "title": "Exchange Emphasis in Definition",
+    "context": "Review the textbook pairing of B2B with producer products and B2C with consumer products. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing excludes a broadband package from products when sold to a personal customer because households only receive gifts, not products.",
+      "A broadband package transferred internally between branches of one corporation remains a marketed product.",
+      "A young professional purchasing payroll processing engages in business-to-consumer exchange for a consumer product service.",
+      "Payroll processing illustrates that intangible offerings can be products when traded to satisfy customer needs.",
+      "Exchange of payroll processing creates a marketing product because payment transfers the service to a customer with unmet wishes or needs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Household customers acquire consumer products such as a broadband package through b2c exchange.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal transfers not offered for external exchange are not products in the marketing sense.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2c purchase of payroll processing by a young professional yields a consumer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible payroll processing counts as a product once exchanged to satisfy needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Paid transfer of payroll processing to a customer with unmet wishes or needs defines a marketing product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.66",
+    "title": "Multi-Channel Transaction Labels",
+    "context": "Analyze why marketing definitions emphasise exchange rather than ownership transfer alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Equipment leasing sold to a shipping line is a producer product because the service is exchanged business-to-business.",
+      "B2B classification of a broadband package depends on the seller's industry rather than on the export buyer purchaser.",
+      "Equipment leasing sold to a suburban family is a consumer product because the service is exchanged business-to-consumer.",
+      "B2C classification of a broadband package depends on colourful retail branding rather than on the personal customer purchaser.",
+      "A broadband package sold to a export buyer is B2C because money changes hands in the transaction."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "B2b equipment leasing for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2b classification depends on the business purchaser, not solely on the seller's industry.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2c equipment leasing for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c classification depends on the household purchaser, not on retail branding alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.67",
+    "title": "B2B and B2C Revenue Lines",
+    "context": "Review how multi-channel sellers may classify each transaction by the customer involved. Evaluate the following economic assertions:",
+    "statements": [
+      "An exchanged equipment leasing contract with a shipping line fulfils business needs and therefore counts as a product in marketing terms.",
+      "An exchanged equipment leasing visit for a suburban family fulfils household wishes and therefore counts as a product in marketing terms.",
+      "Producer products encompass equipment leasing when one firm provides it to a shipping line under a commercial contract.",
+      "Consumer products encompass equipment leasing when a firm provides it to a suburban family for personal or domestic benefit.",
+      "The same firm may sell equipment leasing as a B2B producer product to a shipping line and as a B2C consumer product to a suburban family."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Business-need fulfilment through exchanged equipment leasing makes the service a product sold b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Household-wish fulfilment through exchanged equipment leasing makes the service a product sold b2c.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equipment leasing under a commercial contract to a shipping line is a producer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equipment leasing for personal or domestic benefit to a suburban family is a consumer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dual-channel equipment leasing sales illustrate producer and consumer labels driven by customer type.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.68",
+    "title": "Combined Goods and Service Set",
+    "context": "Consider a textile mill shipping fabric rolls to garment manufacturers and remnant bundles to craft buyers at a market stall. Evaluate the following economic assertions:",
+    "statements": [
+      "A broadband package sold to a personal customer is B2B because the seller is a registered company.",
+      "Marketing treats equipment leasing as a product whenever it is exchanged, whether the buyer is a shipping line or a suburban family.",
+      "A shipping line purchasing equipment leasing engages in business-to-business exchange for a producer product service.",
+      "A suburban family purchasing equipment leasing engages in business-to-consumer exchange for a consumer product service.",
+      "Equipment leasing illustrates that intangible offerings can be products when traded to satisfy customer needs."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The seller's company status does not make a household sale b2b; it remains b2c with a consumer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Exchange of equipment leasing with either business or household buyers keeps it within the product concept.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2b purchase of equipment leasing by a shipping line yields a producer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c purchase of equipment leasing by a suburban family yields a consumer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible equipment leasing counts as a product once exchanged to satisfy needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.69",
+    "title": "Explicit Household Customers",
+    "context": "Review how goods and services together form the product set in marketing terminology. Evaluate the following economic assertions:",
+    "statements": [
+      "Producer products include only raw materials, so a finished broadband package sold to a export buyer cannot be a producer product.",
+      "Exchange of equipment leasing creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.",
+      "Staff training sold to a engineering plant is a producer product because the service is exchanged business-to-business.",
+      "Staff training sold to a student renter is a consumer product because the service is exchanged business-to-consumer.",
+      "An exchanged staff training contract with a engineering plant fulfils business needs and therefore counts as a product in marketing terms."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Producer products include goods and services sold to businesses, including a finished broadband package for a export buyer.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Paid transfer of equipment leasing to a customer with unmet wishes or needs defines a marketing product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2b staff training for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c staff training for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Business-need fulfilment through exchanged staff training makes the service a product sold b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.70",
+    "title": "Explicit Business Customers",
+    "context": "Analyze why private households are explicit customers within the product definition. Evaluate the following economic assertions:",
+    "statements": [
+      "An exchanged staff training visit for a student renter fulfils household wishes and therefore counts as a product in marketing terms.",
+      "Producer products encompass staff training when one firm provides it to a engineering plant under a commercial contract.",
+      "Consumer products encompass staff training when a firm provides it to a student renter for personal or domestic benefit.",
+      "The same firm may sell staff training as a B2B producer product to a engineering plant and as a B2C consumer product to a student renter.",
+      "Marketing treats staff training as a product whenever it is exchanged, whether the buyer is a engineering plant or a student renter."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Household-wish fulfilment through exchanged staff training makes the service a product sold b2c.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Staff training under a commercial contract to a engineering plant is a producer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Staff training for personal or domestic benefit to a student renter is a consumer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dual-channel staff training sales illustrate producer and consumer labels driven by customer type.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exchange of staff training with either business or household buyers keeps it within the product concept.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.71",
+    "title": "Office Use Producer Reclassification",
+    "context": "Review why other businesses are explicit customers within the product definition. Evaluate the following economic assertions:",
+    "statements": [
+      "A engineering plant purchasing staff training engages in business-to-business exchange for a producer product service.",
+      "A student renter purchasing staff training engages in business-to-consumer exchange for a consumer product service.",
+      "Staff training illustrates that intangible offerings can be products when traded to satisfy customer needs.",
+      "Exchange of staff training creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.",
+      "Security monitoring sold to a data centre operator is a producer product because the service is exchanged business-to-business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "B2b purchase of staff training by a engineering plant yields a producer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c purchase of staff training by a student renter yields a consumer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible staff training counts as a product once exchanged to satisfy needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Paid transfer of staff training to a customer with unmet wishes or needs defines a marketing product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2b security monitoring for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.72",
+    "title": "Home Use Consumer Reclassification",
+    "context": "Consider a training academy offering compliance workshops to company staff and evening language courses to individual learners. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumer products include only luxury items, so a routine broadband package sold to a personal customer cannot be a consumer product.",
+      "Security monitoring sold to a self-employed artisan is a consumer product because the service is exchanged business-to-consumer.",
+      "An exchanged security monitoring contract with a data centre operator fulfils business needs and therefore counts as a product in marketing terms.",
+      "An exchanged security monitoring visit for a self-employed artisan fulfils household wishes and therefore counts as a product in marketing terms.",
+      "Producer products encompass security monitoring when one firm provides it to a data centre operator under a commercial contract."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Consumer products include ordinary goods and services sold to households, including a broadband package for a personal customer.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "B2c security monitoring for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Business-need fulfilment through exchanged security monitoring makes the service a product sold b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Household-wish fulfilment through exchanged security monitoring makes the service a product sold b2c.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Security monitoring under a commercial contract to a data centre operator is a producer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.73",
+    "title": "Purchaser Not Factory Origin",
+    "context": "Review how home-use purchases reclassify otherwise identical goods as consumer products. Evaluate the following economic assertions:",
+    "statements": [
+      "A broadband package becomes a product only after advertising creates demand rather than when it is exchanged.",
+      "A catering tray sold to a warehouse operator is a consumer product because every sale ultimately serves human needs.",
+      "A catering tray sold to a household member is a producer product because the seller is a business firm.",
+      "Consumer products encompass security monitoring when a firm provides it to a self-employed artisan for personal or domestic benefit.",
+      "The same firm may sell security monitoring as a B2B producer product to a data centre operator and as a B2C consumer product to a self-employed artisan."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A broadband package is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales to a business customer classify the catering tray as a b2b producer product, not a consumer product.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Sales to a household customer classify the catering tray as a b2c consumer product, not a producer product.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Security monitoring for personal or domestic benefit to a self-employed artisan is a consumer product service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dual-channel security monitoring sales illustrate producer and consumer labels driven by customer type.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.74",
+    "title": "Intangible B2B and B2C Examples",
+    "context": "Analyze the marketing logic that separates product type by purchaser rather than by factory origin. Evaluate the following economic assertions:",
+    "statements": [
+      "Marketing treats security monitoring as a product whenever it is exchanged, whether the buyer is a data centre operator or a self-employed artisan.",
+      "A data centre operator purchasing security monitoring engages in business-to-business exchange for a producer product service.",
+      "The same catering tray must keep one fixed product label for all buyers because the design never changes.",
+      "A self-employed artisan purchasing security monitoring engages in business-to-consumer exchange for a consumer product service.",
+      "Security monitoring illustrates that intangible offerings can be products when traded to satisfy customer needs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Exchange of security monitoring with either business or household buyers keeps it within the product concept.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2b purchase of security monitoring by a data centre operator yields a producer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical catering tray models can be producer or consumer products depending on the buyer.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "B2c purchase of security monitoring by a self-employed artisan yields a consumer product classification.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Intangible security monitoring counts as a product once exchanged to satisfy needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.75",
+    "title": "Product Concept Before Branding",
+    "context": "Review how exchanged computer-support hours illustrate intangible products in both B2B and B2C settings. Evaluate the following economic assertions:",
+    "statements": [
+      "Exchange of security monitoring creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.",
+      "A catering tray is not a product unless it is a manufactured physical good.",
+      "Document printing sold to a advertising agency is a producer product because the service is exchanged business-to-business.",
+      "Exchange is irrelevant to whether a catering tray counts as a product if customers desire it strongly enough.",
+      "Document printing sold to a weekend gardener is a consumer product because the service is exchanged business-to-consumer."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Paid transfer of security monitoring to a customer with unmet wishes or needs defines a marketing product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A catering tray can be a product when exchanged as a good or service to fulfil customer wishes and needs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2b document printing for a business customer is classified as a producer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exchange is required for a catering tray to count as a product in marketing terminology.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "B2c document printing for a household customer is classified as a consumer product.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

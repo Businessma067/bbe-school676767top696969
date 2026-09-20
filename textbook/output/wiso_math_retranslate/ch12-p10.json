@@ -1,0 +1,989 @@
+[
+  {
+    "case_id": "MATH 12.182",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Meteors Spotted Under Cloud Cover",
+    "context_en": "During a meteor shower, the sky is Clear on 40% of nights, Partly Cloudy on 35% of nights, and Overcast on 25% of nights. An observer spots at least one meteor on 25% of Clear nights, 10% of Partly Cloudy nights, and 2% of Overcast nights. Tonight, the observer spots a meteor.",
+    "statements_en": [
+      "The probability that a meteor is spotted on a random night is greater than 12%.",
+      "The probability that the sky is Clear AND a meteor is spotted equals 10%.",
+      "The probability that the sky is Clear, given a meteor is spotted is greater than 75%.",
+      "The probability that no meteor is spotted equals 1 minus the probability that a meteor is spotted.",
+      "The probability that the sky is Partly Cloudy, given a meteor is spotted is greater than the probability that the sky is Overcast, given a meteor is spotted."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of spotting a meteor on a random night is the total probability calculated in the overview. This is $P(M)$.\n\n$$\nP(M) = 0.140\n$$\n\nThe claim states that $P(M)$ is greater than $12\\%$. Converting $0.140$ to a percentage gives $14\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the sky is Clear AND a meteor is spotted is the joint probability $P(C \\cap M)$. This can be calculated using the definition of conditional probability:\n\n$$\nP(C \\cap M) = P(M \\mid C)P(C)\n$$\n\nUsing the given values:\n\n$$\nP(C \\cap M) = (0.25)(0.40)\n$$\n\n$$\nP(C \\cap M) = 0.100\n$$\n\nConverting this to a percentage gives $10\\%$. The claim states this probability equals $10\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the sky is Clear, given a meteor is spotted, is a conditional probability $P(C \\mid M)$. We can calculate this using Bayes' Theorem:\n\n$$\nP(C \\mid M) = \\frac{P(C \\cap M)}{P(M)}\n$$\n\nFrom the overview, $P(M) = 0.140$. From statement B, $P(C \\cap M) = 0.100$.\n\n$$\nP(C \\mid M) = \\frac{0.100}{0.140}\n$$\n\n$$\nP(C \\mid M) \\approx 0.71428\n$$\n\nConverting to a percentage, $P(C \\mid M) \\approx 71.43\\%$. The claim states this is greater than $75\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event \"no meteor is spotted\" is the complement of the event \"a meteor is spotted.\" For any event $E$, the probability of its complement $E^c$ is given by:\n\n$$\nP(E^c) = 1 - P(E)\n$$\n\nHere, $E$ is the event $M$ (a meteor is spotted). So, $P(\\text{no meteor is spotted}) = P(M^c)$.\n\n$$\nP(M^c) = 1 - P(M)\n$$\n\nThis exactly matches the claim.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nWe need to compare two conditional probabilities: $P(PC \\mid M)$ and $P(O \\mid M)$. Both can be calculated using Bayes' Theorem.\n\nFirst, calculate $P(PC \\cap M)$:\n\n$$\nP(PC \\cap M) = P(M \\mid PC)P(PC)\n$$\n\n$$\nP(PC \\cap M) = (0.10)(0.35)\n$$\n\n$$\nP(PC \\cap M) = 0.035\n$$\n\nThen, calculate $P(PC \\mid M)$:\n\n$$\nP(PC \\mid M) = \\frac{P(PC \\cap M)}{P(M)}\n$$\n\n$$\nP(PC \\mid M) = \\frac{0.035}{0.140}\n$$\n\n$$\nP(PC \\mid M) = 0.25\n$$\n\nNext, calculate $P(O \\cap M)$:\n\n$$\nP(O \\cap M) = P(M \\mid O)P(O)\n$$\n\n$$\nP(O \\cap M) = (0.02)(0.25)\n$$\n\n$$\nP(O \\cap M) = 0.005\n$$\n\nThen, calculate $P(O \\mid M)$:\n\n$$\nP(O \\mid M) = \\frac{P(O \\cap M)}{P(M)}\n$$\n\n$$\nP(O \\mid M) = \\frac{0.005}{0.140}\n$$\n\n$$\nP(O \\mid M) \\approx 0.0357\n$$\n\nConverting these to percentages, $P(PC \\mid M) = 25\\%$ and $P(O \\mid M) \\approx 3.57\\%$. The claim states that $P(PC \\mid M)$ is greater than $P(O \\mid M)$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes a scenario where an observer spots meteors under different sky conditions: Clear, Partly Cloudy, and Overcast. We are given the prior probabilities for each sky condition and the conditional probabilities of spotting a meteor given each condition. We need to evaluate several statements related to these probabilities.\n\nLet $C$, $PC$, and $O$ denote the events that the sky is Clear, Partly Cloudy, and Overcast, respectively. Let $M$ be the event that an observer spots a meteor.\n\nWe are given the following prior probabilities for the sky conditions:\n$$P(C) = 0.40$$\n$$P(PC) = 0.35$$\n$$P(O) = 0.25$$\n\nAnd the conditional probabilities of spotting a meteor:\n$$P(M \\mid C) = 0.25$$\n$$P(M \\mid PC) = 0.10$$\n$$P(M \\mid O) = 0.02$$\n\nTo find the overall probability of spotting a meteor on a random night, $P(M)$, we use the Law of Total Probability. This sums the probabilities of spotting a meteor under each sky condition, weighted by the probability of that sky condition:\n$$P(M) = P(M \\mid C)P(C) + P(M \\mid PC)P(PC) + P(M \\mid O)P(O)$$\n$$P(M) = (0.25)(0.40) + (0.10)(0.35) + (0.02)(0.25)$$\n$$P(M) = 0.100 + 0.035 + 0.005$$\n$$P(M) = 0.140$$",
+    "title_de_existing": "Meteorensichtungen bei Bewölkung",
+    "context_de_existing": "Während eines Meteorstroms ist der Himmel an 40% der Nächte klar, an 35% teilweise bewölkt und an 25% bedeckt. Ein Beobachter sieht mindestens einen Meteor an 25% der klaren, 10% der teilweise bewölkten und 2% der bedeckten Nächte. Heute Nacht sieht der Beobachter einen Meteor.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass an einer zufälligen Nacht ein Meteor gesehen wird, ist größer als 12%.",
+      "Die Wahrscheinlichkeit, dass der Himmel klar ist und ein Meteor gesehen wird, beträgt 10%.",
+      "Die Wahrscheinlichkeit, dass der Himmel klar ist, gegeben Meteorsichtung, ist größer als 75%.",
+      "Die Wahrscheinlichkeit, dass kein Meteor gesehen wird, ist gleich 1 minus der Wahrscheinlichkeit einer Sichtung.",
+      "Die Wahrscheinlichkeit, dass der Himmel teilweise bewölkt ist, gegeben Sichtung, ist größer als die Wahrscheinlichkeit, dass er bedeckt ist, gegeben Sichtung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass an einer zufälligen Nacht ein Meteor gesehen wird, ist größer als 12%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M) = 0.140\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Himmel klar ist und ein Meteor gesehen wird, beträgt 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(C \\cap M) = P(M \\mid C)P(C)\n$$\n\n$$\nP(C \\cap M) = (0.25)(0.40)\n$$\n\n$$\nP(C \\cap M) = 0.100\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Himmel klar ist, gegeben Meteorsichtung, ist größer als 75%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(C \\mid M) = \\frac{P(C \\cap M)}{P(M)}\n$$\n\n$$\nP(C \\mid M) = \\frac{0.100}{0.140}\n$$\n\n$$\nP(C \\mid M) \\approx 0.71428\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass kein Meteor gesehen wird, ist gleich 1 minus der Wahrscheinlichkeit einer Sichtung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E^c) = 1 - P(E)\n$$\n\n$$\nP(M^c) = 1 - P(M)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Himmel teilweise bewölkt ist, gegeben Sichtung, ist größer als die Wahrscheinlichkeit, dass er bedeckt ist, gegeben Sichtung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(PC \\cap M) = P(M \\mid PC)P(PC)\n$$\n\n$$\nP(PC \\cap M) = (0.10)(0.35)\n$$\n\n$$\nP(PC \\cap M) = 0.035\n$$\n\n$$\nP(PC \\mid M) = \\frac{P(PC \\cap M)}{P(M)}\n$$\n\n$$\nP(PC \\mid M) = \\frac{0.035}{0.140}\n$$\n\n$$\nP(PC \\mid M) = 0.25\n$$\n\n$$\nP(O \\cap M) = P(M \\mid O)P(O)\n$$\n\n$$\nP(O \\cap M) = (0.02)(0.25)\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Während eines Meteorstroms ist der Himmel an 40% der Nächte klar, an 35% teilweise bewölkt und an 25% bedeckt. Ein Beobachter sieht mindestens einen Meteor an 25% der klaren, 10% der teilweise bewölkten und 2% der bedeckten Nächte. Heute Nacht sieht der Beobachter einen Meteor. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(C) = 0.40$$\n\n$$P(PC) = 0.35$$\n\n$$P(O) = 0.25$$\n\n$$P(M \\mid C) = 0.25$$\n\n$$P(M \\mid PC) = 0.10$$\n\n$$P(M \\mid O) = 0.02$$\n\n$$P(M) = P(M \\mid C)P(C) + P(M \\mid PC)P(PC) + P(M \\mid O)P(O)$$\n\n$$P(M) = (0.25)(0.40) + (0.10)(0.35) + (0.02)(0.25)$$\n\n$$P(M) = 0.100 + 0.035 + 0.005$$\n\n$$P(M) = 0.140$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.183",
+    "short_letters": [
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Two Days Without a Crane Sighting",
+    "context_en": "A birder visits one of three habitats to look for a rare crane: Wetland (40% of visits), Grassland (35%), or Forest (25%). On any given day, the probability of spotting the crane is 20% in the Wetland, 8% in the Grassland, and 3% in the Forest, independently from day to day. The birder visits the same habitat on two consecutive days and does NOT spot the crane on either day.",
+    "statements_en": [
+      "The probability that no crane is spotted on either of the two days, overall is greater than 75%.",
+      "The probability that the habitat is Wetland AND no crane is spotted on either day equals 25.6%.",
+      "The probability that the habitat is Wetland, given no crane was spotted on either day is greater than 35%.",
+      "The probability that the crane is spotted on at least one of the two days equals 1 minus the probability that no crane is spotted on either day.",
+      "The probability that the habitat is Grassland, given no crane was spotted on either day is greater than the probability that the habitat is Forest, given no crane was spotted on either day."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that no crane is spotted on either of the two days, overall, is $P(E)$.\n\n$$\nP(E) = 0.787465\n$$\n\nTo compare this with $75\\%$, we convert $P(E)$ to a percentage:\n\n$$\nP(E) = 78.7465\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the joint probability that the habitat is Wetland and no crane is spotted on either day, which is $P(H=\\text{Wetland} \\cap E)$. This is found using the general multiplication rule:\n\n$$\nP(H = \\text{Wetland} \\cap E) = P(H = \\text{Wetland}) \\cdot P(E \\mid H\n$$\n\nUsing the calculated values:\n\nAs a percentage, this is $25.6\\%$. The claim states this probability equals $25.6\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the habitat is Wetland, given that no crane was spotted on either day, is a conditional probability $P(H=\\text{Wetland} \\mid E)$. This is found using Bayes' Theorem:\n\n$$\nP(H = \\text{Wetland} \\mid E) = \\frac{P(H = \\text{Wetland} \\cap E)}{P(E)}\n$$\n\nFrom the overview and statement B, $P(H=\\text{Wetland} \\cap E) = 0.256$ and $P(E) = 0.787465$.\n\n$$\nP(H = \\text{Wetland} \\mid E) = \\frac{0.256}{0.787465}\n$$\n\n$$\n\\approx 0.3251\n$$\n\nAs a percentage, this is approximately $32.51\\%$. The claim states this probability is greater than $35\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event \"the crane is spotted on at least one of the two days\" is the complement of the event \"no crane is spotted on either day.\" If we let $E_{\\text{spot}}$ be the event that the crane is spotted on at least one day, then $E_{\\text{spot}}$ and $E$ are complementary events.\n\nFor any event $A$ and its complement $A^c$, $P(A) = 1 - P(A^c)$. Applying this definition:\n\n$$\nP(E_{\\text{spot}}) = 1 - P(E)\n$$\n\nThis relationship is fundamental to probability theory and holds true by definition of complementary events.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis claim compares two posterior probabilities: $P(H=\\text{Grassland} \\mid E)$ and $P(H=\\text{Forest} \\mid E)$. We use Bayes' Theorem for each.\n\nFor Grassland:\n\n$$\nP(H = \\text{Grassland} \\mid E) = \\frac{P(H = \\text{Grassland}) \\cdot P(E \\mid H = \\text{Grassland})}{P(E)}\n$$\n\n$$\nP(H = \\text{Grassland} \\mid E) = \\frac{(0.35)(0.8464)}{0.787465} = \\frac{0.29624}{0.787465}\n$$\n\n$$\nP(H = \\text{Grassland} \\mid E)\n$$\n\n$$\n\\approx 0.37617\n$$\n\nFor Forest:\n\n$$\nP(H = \\text{Forest} \\mid E) = \\frac{P(H = \\text{Forest}) \\cdot P(E \\mid H = \\text{Forest})}{P(E)}\n$$\n\n$$\nP(H = \\text{Forest} \\mid E) = \\frac{(0.25)(0.9409)}{0.787465} = \\frac{0.235225}{0.787465}\n$$\n\n$$\nP(H = \\text{Forest} \\mid E)\n$$\n\n$$\n\\approx 0.29871\n$$\n\nComparing the two calculated posterior probabilities:\n\n$$\nP(H = \\text{Grassland} \\mid E)\n$$\n\n$$\n\\approx 0.37617\n$$\n\n$$\nP(H = \\text{Forest} \\mid E)\n$$\n\n$$\n\\approx 0.29871\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A birder visits one of three habitats: Wetland, Grassland, or Forest. Let $H$ be the random variable for the habitat chosen, with initial probabilities $P(H=\\text{Wetland}) = 0.40$, $P(H=\\text{Grassland}) = 0.35$, and $P(H=\\text{Forest}) = 0.25$. The probability of spotting a crane, $P(S)$, depends on the habitat:\n\n$$\nP(S \\mid H = \\text{Wetland}) = 0.20\n$$\n$$\nP(S \\mid H = \\text{Grassland}) = 0.08\n$$\n$$\nP(S \\mid H = \\text{Forest}) = 0.03\n$$\n\nThe birder visits the same habitat for two days, and spotting events are independent from day to day given the habitat. Let $E$ be the event that no crane is spotted on either of the two days. The probability of not spotting a crane on a single day, given the habitat $H$, is $P(\\neg S \\mid H) = 1 - P(S \\mid H)$.\n\nSince the events are independent over two days, the probability of not spotting a crane on two consecutive days, given the habitat, is $P(E \\mid H) = (P(\\neg S \\mid H))^2$. We calculate these conditional probabilities for each habitat:\n\nFor Wetland:\n$$\nP(\\neg S \\mid H = \\text{Wetland}) = 1 - 0.20 = 0.80\n$$\n$$\nP(E \\mid H = \\text{Wetland}) = (0.80)^2 = 0.64\n$$\n\nFor Grassland:\n$$\nP(\\neg S \\mid H = \\text{Grassland}) = 1 - 0.08 = 0.92\n$$\n$$\nP(E \\mid H = \\text{Grassland}) = (0.92)^2 = 0.8464\n$$\n\nFor Forest:\n$$\nP(\\neg S \\mid H = \\text{Forest}) = 1 - 0.03 = 0.97\n$$\n$$\nP(E \\mid H = \\text{Forest}) = (0.97)^2 = 0.9409\n$$\n\nTo find the overall probability of event $E$ (no crane spotted on either day), we use the Law of Total Probability by summing over the possible habitats:\n\n$$\nP(E) = P(E \\mid H = \\text{Wetland})P(H = \\text{Wetland}) + P(E \\mid H = \\text{Grassland})P(H = \\text{Grassland}) + P(E \\mid H = \\text{Forest})P(H = \\text{Forest})\n$$\n$$P(E) = (0.64)(0.40) + (0.8464)(0.35) + (0.9409)(0.25)$$\n$$P(E) = 0.256 + 0.29624 + 0.235225$$\n$$P(E) = 0.787465$$",
+    "title_de_existing": "Zwei Tage ohne Kranichsichtung",
+    "context_de_existing": "Ein Vogelbeobachter besucht eines von drei Habitaten auf der Suche nach einem seltenen Kranich: Feuchtgebiet (40% der Besuche), Grasland (35%) oder Wald (25%). An einem Tag beträgt die Sichtungswahrscheinlichkeit 20% im Feuchtgebiet, 8% im Grasland und 3% im Wald, unabhängig von Tag zu Tag. Der Beobachter besucht an zwei aufeinanderfolgenden Tagen dasselbe Habitat und sieht an keinem der beiden Tage den Kranich.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass an keinem der beiden Tage ein Kranich gesehen wird, insgesamt, ist größer als 75%.",
+      "Die Wahrscheinlichkeit, dass das Habitat Feuchtgebiet ist und an keinem Tag ein Kranich gesehen wird, beträgt 25,6%.",
+      "Die Wahrscheinlichkeit, dass das Habitat Feuchtgebiet ist, gegeben keine Sichtung an beiden Tagen, ist größer als 35%.",
+      "Die Wahrscheinlichkeit, dass der Kranich an mindestens einem der beiden Tage gesehen wird, ist gleich 1 minus der Wahrscheinlichkeit keiner Sichtung an beiden Tagen.",
+      "Die Wahrscheinlichkeit, dass das Habitat Grasland ist, gegeben keine Sichtung an beiden Tagen, ist größer als die Wahrscheinlichkeit für Wald gegeben keine Sichtung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass an keinem der beiden Tage ein Kranich gesehen wird, insgesamt, ist größer als 75%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E) = 0.787465\n$$\n\n$$\nP(E) = 78.7465\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Habitat Feuchtgebiet ist und an keinem Tag ein Kranich gesehen wird, beträgt 25,6%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(H = \\text{Wetland} \\cap E) = P(H = \\text{Wetland}) \\cdot P(E \\mid H\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass das Habitat Feuchtgebiet ist, gegeben keine Sichtung an beiden Tagen, ist größer als 35%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(H = \\text{Wetland} \\mid E) = \\frac{P(H = \\text{Wetland} \\cap E)}{P(E)}\n$$\n\n$$\nP(H = \\text{Wetland} \\mid E) = \\frac{0.256}{0.787465}\n$$\n\n$$\n\\approx 0.3251\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass der Kranich an mindestens einem der beiden Tage gesehen wird, ist gleich 1 minus der Wahrscheinlichkeit keiner Sichtung an beiden Tagen. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E_{\\text{spot}}) = 1 - P(E)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass das Habitat Grasland ist, gegeben keine Sichtung an beiden Tagen, ist größer als die Wahrscheinlichkeit für Wald gegeben keine Sichtung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(H = \\text{Grassland} \\mid E) = \\frac{P(H = \\text{Grassland}) \\cdot P(E \\mid H = \\text{Grassland})}{P(E)}\n$$\n\n$$\nP(H = \\text{Grassland} \\mid E) = \\frac{(0.35)(0.8464)}{0.787465} = \\frac{0.29624}{0.787465}\n$$\n\n$$\nP(H = \\text{Grassland} \\mid E)\n$$\n\n$$\n\\approx 0.37617\n$$\n\n$$\nP(H = \\text{Forest} \\mid E) = \\frac{P(H = \\text{Forest}) \\cdot P(E \\mid H = \\text{Forest})}{P(E)}\n$$\n\n$$\nP(H = \\text{Forest} \\mid E) = \\frac{(0.25)(0.9409)}{0.787465} = \\frac{0.235225}{0.787465}\n$$\n\n$$\nP(H = \\text{Forest} \\mid E)\n$$\n\n$$\n\\approx 0.29871\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Ein Vogelbeobachter besucht eines von drei Habitaten auf der Suche nach einem seltenen Kranich: Feuchtgebiet (40% der Besuche), Grasland (35%) oder Wald (25%). An einem Tag beträgt die Sichtungswahrscheinlichkeit 20% im Feuchtgebiet, 8% im Grasland und 3% im Wald, unabhängig von Tag zu Tag. Der Beobachter besucht an zwei aufeinanderfolgenden Tagen dasselbe Habitat und sieht an keinem der beiden Tage den Kranich. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(S \\mid H = \\text{Wetland}) = 0.20\n$$\n\n$$\nP(S \\mid H = \\text{Grassland}) = 0.08\n$$\n\n$$\nP(S \\mid H = \\text{Forest}) = 0.03\n$$\n\n$$\nP(\\neg S \\mid H = \\text{Wetland}) = 1 - 0.20 = 0.80\n$$\n\n$$\nP(E \\mid H = \\text{Wetland}) = (0.80)^2 = 0.64\n$$\n\n$$\nP(\\neg S \\mid H = \\text{Grassland}) = 1 - 0.08 = 0.92\n$$\n\n$$\nP(E \\mid H = \\text{Grassland}) = (0.92)^2 = 0.8464\n$$\n\n$$\nP(\\neg S \\mid H = \\text{Forest}) = 1 - 0.03 = 0.97\n$$\n\n$$\nP(E \\mid H = \\text{Forest}) = (0.97)^2 = 0.9409\n$$\n\n$$\nP(E) = P(E \\mid H = \\text{Wetland})P(H = \\text{Wetland}) + P(E \\mid H = \\text{Grassland})P(H = \\text{Grassland}) + P(E \\mid H = \\text{Forest})P(H = \\text{Forest})\n$$\n\n$$P(E) = (0.64)(0.40) + (0.8464)(0.35) + (0.9409)(0.25)$$\n\n$$P(E) = 0.256 + 0.29624 + 0.235225$$\n\n$$P(E) = 0.787465$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.184",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Coral Bleaching Across Four Reefs",
+    "context_en": "A marine biologist surveys coral across four reef zones: North (35% of all coral), South (30%), East (20%), and West (15%). The observed coral-bleaching rate is 10% in the North, 15% in the South, 25% in the East, and 40% in the West. A randomly sampled piece of coral shows signs of bleaching.",
+    "statements_en": [
+      "The probability that a coral sample shows bleaching is greater than 15%.",
+      "The probability that the coral is from the West Reef AND shows bleaching equals 6%.",
+      "The probability that the coral is from the West Reef, given it shows bleaching is greater than 35%.",
+      "The probability that the coral shows no bleaching equals 1 minus the probability that the coral shows bleaching.",
+      "The probability that the coral is from the East Reef, given it shows bleaching AND is known not to be from the West Reef is greater than 35%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a coral sample showing bleaching, $P(B)$, is calculated using the Law of Total Probability, summing the weighted bleaching rates from all reef zones. This value was determined in the overview.\n\n$$\nP(B) = 0.19\n$$\n\nThe claim is that this probability is greater than $15\\% = 0.15$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that the coral is from the West Reef AND shows bleaching is a joint probability, $P(W \\cap B)$. This is calculated by multiplying the probability of being from the West Reef by the conditional probability of bleaching in the West Reef.\n\n$$\nP(W \\cap B) = P(B \\mid W)P(W)\n$$\n\n$$\nP(W \\cap B) = (0.40)(0.15)\n$$\n\n$$\nP(W \\cap B) = 0.06\n$$\n\nThe claim states this probability equals $6\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the coral is from the West Reef, given it shows bleaching, is a conditional probability $P(W \\mid B)$. We compute this using the definition of conditional probability:\n\n$$\nP(W \\mid B) = \\frac{P(W \\cap B)}{P(B)}\n$$\n\nUsing the joint probability $P(W \\cap B) = 0.06$ and the total probability of bleaching $P(B) = 0.19$ from the overview:\n\n$$\nP(W \\mid B) = \\frac{0.06}{0.19}\n$$\n\n$$\nP(W \\mid B) \\approx 0.3158\n$$\n\nThe claim states this probability is greater than $35\\% = 0.35$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event 'the coral shows no bleaching' is the complement of the event 'the coral shows bleaching', which we can denote as $B^c$. The probability of a complementary event is $1$ minus the probability of the original event.\n\n$$\nP(B^c) = 1 - P(B)\n$$\n\nThe claim explicitly states this relationship.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis claim considers the probability of a coral being from the East Reef, given that it shows bleaching AND is known not to be from the West Reef. This is a conditional probability where the sample space has been further restricted to corals not from the West Reef. Let $W^c$ denote the event 'not from the West Reef'. We want to find $P(E \\mid B \\cap W^c)$.\n\nUsing the definition of conditional probability:\n\n$$\nP(E \\mid B \\cap W^c) = \\frac{P(E \\cap B \\cap W^c)}{P(B \\cap W^c)}\n$$\n\nSince the East Reef is distinct from the West Reef, the event $E \\cap W^c$ is simply $E$. Thus, $P(E \\cap B \\cap W^c) = P(E \\cap B)$. This joint probability was calculated in the overview:\n\n$$\nP(E \\cap B) = 0.050\n$$\n\nThe denominator $P(B \\cap W^c)$ represents the probability of bleaching for corals that are NOT from the West Reef. This is the sum of the joint probabilities of bleaching from the North, South, and East reefs:\n\n$$\nP(B \\cap W^c) = P(N \\cap B) + P(S \\cap B) + P(E \\cap B)\n$$\n\n$$\nP(B \\cap W^c) = 0.035 + 0.045 + 0.050\n$$\n\n$$\n0.035 + 0.045 = 0.08\n$$\n\n$$\n0.08 + 0.05 = 0.13\n$$\n\n$$\nP(B \\cap W^c) = 0.130\n$$\n\nNow we can compute the conditional probability:\n\n$$\nP(E \\mid B \\cap W^c) = \\frac{0.050}{0.130}\n$$\n\n$$\nP(E \\mid B \\cap W^c) \\approx 0.3846\n$$\n\nThe claim states this probability is greater than $35\\% = 0.35$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A marine biologist surveys coral across four reef zones: North (N), South (S), East (E), and West (W). We are given the prior probabilities of a coral coming from each reef zone and the conditional probabilities of coral bleaching (event B) within each zone.\n\nThe distribution of coral across the reefs is:\n$$P(N) = 0.35$$\n$$P(S) = 0.30$$\n$$P(E) = 0.20$$\n$$P(W) = 0.15$$\n\nThe conditional bleaching rates for each zone are:\n$$P(B \\mid N) = 0.10$$\n$$P(B \\mid S) = 0.15$$\n$$P(B \\mid E) = 0.25$$\n$$P(B \\mid W) = 0.40$$\n\nTo find the overall probability of a randomly sampled piece of coral showing bleaching, $P(B)$, we use the Law of Total Probability by summing the joint probabilities of bleaching from each reef:\n$$P(B) = P(B \\mid N)P(N) + P(B \\mid S)P(S) + P(B \\mid E)P(E) + P(B \\mid W)P(W)$$\n$$P(B) = (0.10)(0.35) + (0.15)(0.30) + (0.25)(0.20) + (0.40)(0.15)$$\n$$P(B) = 0.035 + 0.045 + 0.050 + 0.060$$\n$$P(B) = 0.19$$\n\nThe joint probabilities of a coral being from a specific reef and showing bleaching, $P(\\text{Reef} \\cap B)$, are:\n$$P(N \\cap B) = 0.035$$\n$$P(S \\cap B) = 0.045$$\n$$P(E \\cap B) = 0.050$$\n$$P(W \\cap B) = 0.060$$",
+    "title_de_existing": "Korallenbleiche an vier Riffen",
+    "context_de_existing": "Eine Meeresbiologin untersucht Korallen in vier Riffzonen: Nord (35% aller Korallen), Süd (30%), Ost (20%) und West (15%). Die beobachtete Bleichrate beträgt 10% im Norden, 15% im Süden, 25% im Osten und 40% im Westen. Eine zufällig entnommene Korallenprobe zeigt Anzeichen von Bleiche.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine Korallenprobe Bleiche zeigt, ist größer als 15%.",
+      "Die Wahrscheinlichkeit, dass die Koralle vom West-Riff stammt und Bleiche zeigt, beträgt 6%.",
+      "Die Wahrscheinlichkeit, dass die Koralle vom West-Riff stammt, gegeben Bleiche, ist größer als 35%.",
+      "Die Wahrscheinlichkeit, dass die Koralle keine Bleiche zeigt, ist gleich 1 minus der Wahrscheinlichkeit für Bleiche.",
+      "Die Wahrscheinlichkeit, dass die Koralle vom Ost-Riff stammt, gegeben Bleiche und bekannt nicht vom West-Riff, ist größer als 35%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine Korallenprobe Bleiche zeigt, ist größer als 15%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B) = 0.19\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass die Koralle vom West-Riff stammt und Bleiche zeigt, beträgt 6%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(W \\cap B) = P(B \\mid W)P(W)\n$$\n\n$$\nP(W \\cap B) = (0.40)(0.15)\n$$\n\n$$\nP(W \\cap B) = 0.06\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass die Koralle vom West-Riff stammt, gegeben Bleiche, ist größer als 35%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(W \\mid B) = \\frac{P(W \\cap B)}{P(B)}\n$$\n\n$$\nP(W \\mid B) = \\frac{0.06}{0.19}\n$$\n\n$$\nP(W \\mid B) \\approx 0.3158\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass die Koralle keine Bleiche zeigt, ist gleich 1 minus der Wahrscheinlichkeit für Bleiche. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B^c) = 1 - P(B)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass die Koralle vom Ost-Riff stammt, gegeben Bleiche und bekannt nicht vom West-Riff, ist größer als 35%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E \\mid B \\cap W^c) = \\frac{P(E \\cap B \\cap W^c)}{P(B \\cap W^c)}\n$$\n\n$$\nP(E \\cap B) = 0.050\n$$\n\n$$\nP(B \\cap W^c) = P(N \\cap B) + P(S \\cap B) + P(E \\cap B)\n$$\n\n$$\nP(B \\cap W^c) = 0.035 + 0.045 + 0.050\n$$\n\n$$\n0.035 + 0.045 = 0.08\n$$\n\n$$\n0.08 + 0.05 = 0.13\n$$\n\n$$\nP(B \\cap W^c) = 0.130\n$$\n\n$$\nP(E \\mid B \\cap W^c) = \\frac{0.050}{0.130}\n$$\n\n$$\nP(E \\mid B \\cap W^c) \\approx 0.3846\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Eine Meeresbiologin untersucht Korallen in vier Riffzonen: Nord (35% aller Korallen), Süd (30%), Ost (20%) und West (15%). Die beobachtete Bleichrate beträgt 10% im Norden, 15% im Süden, 25% im Osten und 40% im Westen. Eine zufällig entnommene Korallenprobe zeigt Anzeichen von Bleiche. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(N) = 0.35$$\n\n$$P(S) = 0.30$$\n\n$$P(E) = 0.20$$\n\n$$P(W) = 0.15$$\n\n$$P(B \\mid N) = 0.10$$\n\n$$P(B \\mid S) = 0.15$$\n\n$$P(B \\mid E) = 0.25$$\n\n$$P(B \\mid W) = 0.40$$\n\n$$P(B) = P(B \\mid N)P(N) + P(B \\mid S)P(S) + P(B \\mid E)P(E) + P(B \\mid W)P(W)$$\n\n$$P(B) = (0.10)(0.35) + (0.15)(0.30) + (0.25)(0.20) + (0.40)(0.15)$$\n\n$$P(B) = 0.035 + 0.045 + 0.050 + 0.060$$\n\n$$P(B) = 0.19$$\n\n$$P(N \\cap B) = 0.035$$\n\n$$P(S \\cap B) = 0.045$$\n\n$$P(E \\cap B) = 0.050$$\n\n$$P(W \\cap B) = 0.060$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.185",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A Failed Night at the Observatory",
+    "context_en": "An observatory classifies nights into five cloud-cover bands: Band 1, 0–20% cover (15% of nights); Band 2, 20–40% (25%); Band 3, 40–60% (30%); Band 4, 60–80% (20%); Band 5, 80–100% (10%). The probability of a SUCCESSFUL imaging session is 90% in Band 1, 70% in Band 2, 40% in Band 3, 15% in Band 4, and 3% in Band 5. Tonight's imaging session FAILS.",
+    "statements_en": [
+      "The probability that an imaging session fails is greater than 50%.",
+      "The probability that the night is Band 3 AND the session fails equals 18%.",
+      "The probability that the night is Band 4, given the session fails is greater than the probability that the night is Band 3, given the session fails.",
+      "The probability that an imaging session succeeds equals 1 minus the probability that an imaging session fails.",
+      "The probability that the night is Band 1, given the session fails is less than 5%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim is about the overall probability of a failed imaging session, $P(F)$. We have already calculated this value using the law of total probability in the overview.\n\n$$\nP(F) = 0.537\n$$\n\nComparing this with the claim's value:\n\n$$\n0.537 > 0.50\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis statement refers to the joint probability of the night being Band 3 and the session failing, $P(B_3 \\cap F)$. This is calculated by multiplying the prior probability of Band 3 by the conditional probability of failure given Band 3:\n\n$$\nP(B_3 \\cap F) = P(B_3) \\times P(F \\mid B_3)\n$$\n\n$$\nP(B_3 \\cap F) = 0.30 \\times 0.60\n$$\n\n$$\n0.3 \\times 0.6 = 0.18\n$$\n\n$$\nP(B_3 \\cap F) = 0.18\n$$\n\nThis is exactly $18\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe claim compares two conditional probabilities: $P(B_4 \\mid F)$ and $P(B_3 \\mid F)$. We use Bayes' theorem to find each, given the total probability of failure $P(F) = 0.537$ and the joint probabilities $P(B_4 \\cap F) = 0.17$ and $P(B_3 \\cap F) = 0.18$.\n\n$$\nP(B_4 \\mid F) = \\frac{P(B_4 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_4 \\mid F) = \\frac{0.17}{0.537}\n$$\n\n$$\n\\approx 0.31657\n$$\n\n$$\nP(B_3 \\mid F) = \\frac{P(B_3 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_3 \\mid F) = \\frac{0.18}{0.537}\n$$\n\n$$\n\\approx 0.33519\n$$\n\nThe claim is that $P(B_4 \\mid F) > P(B_3 \\mid F)$. We compare the calculated values:\n\n$$\n0.31657 \\not> 0.33519\n$$\n\n.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe events \"an imaging session succeeds\" and \"an imaging session fails\" are complementary. This means that if one occurs, the other cannot, and together they cover all possible outcomes for an imaging session. For any two complementary events $E$ and $E^c$, the sum of their probabilities is $1$. Therefore, $P(S) = 1 - P(F)$.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis statement refers to the conditional probability $P(B_1 \\mid F)$. We use Bayes' theorem, with $P(F) = 0.537$ and $P(B_1 \\cap F) = 0.015$.\n\n$$\nP(B_1 \\mid F) = \\frac{P(B_1 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_1 \\mid F) = \\frac{0.015}{0.537}\n$$\n\n$$\nP(B_1 \\mid F) \\approx 0.02793\n$$\n\nThis value is approximately $2.793\\%$. The claim is that $P(B_1 \\mid F) < 5\\%$.\n\n$$\n0.02793 < 0.05\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "An observatory classifies nights into five cloud-cover bands: $B_1, B_2, B_3, B_4, B_5$. The prior probabilities for these bands are given as $P(B_1) = 0.15$, $P(B_2) = 0.25$, $P(B_3) = 0.30$, $P(B_4) = 0.20$, and $P(B_5) = 0.10$. Let $S$ denote a successful imaging session and $F$ denote a failed imaging session. The problem states the probability of a successful imaging session for each band:\n$P(S \\mid B_1) = 0.90$\n$P(S \\mid B_2) = 0.70$\n$P(S \\mid B_3) = 0.40$\n$P(S \\mid B_4) = 0.15$\n$P(S \\mid B_5) = 0.03$\n\nThe event of interest in the problem is a failed imaging session. The conditional probability of failure for each band is the complement of the success probability, $P(F \\mid B_i) = 1 - P(S \\mid B_i)$:\n$P(F \\mid B_1) = 1 - 0.90 = 0.10$\n$P(F \\mid B_2) = 1 - 0.70 = 0.30$\n$P(F \\mid B_3) = 1 - 0.40 = 0.60$\n$P(F \\mid B_4) = 1 - 0.15 = 0.85$\n$P(F \\mid B_5) = 1 - 0.03 = 0.97$\n\nThe total probability of a failed imaging session, $P(F)$, is found using the law of total probability, summing the joint probabilities of failure for each band:\n$$\nP(F) = \\sum_{i = 1}^{5} P(F \\mid B_i) P(B_i)\n$$\n$$P(F) = (0.10)(0.15) + (0.30)(0.25) + (0.60)(0.30) + (0.85)(0.20) + (0.97)(0.10)$$\n$$P(F) = 0.015 + 0.075 + 0.18 + 0.17 + 0.097$$\n$$P(F) = 0.537$$\nSo, the overall probability of a failed imaging session is $0.537$ or $53.7\\%$.\n\nWe will also need the joint probabilities $P(B_i \\cap F)$ for some statements, calculated as $P(B_i \\cap F) = P(F \\mid B_i) P(B_i)$:\n$P(B_1 \\cap F) = 0.015$\n$P(B_2 \\cap F) = 0.075$\n$P(B_3 \\cap F) = 0.18$\n$P(B_4 \\cap F) = 0.17$\n$P(B_5 \\cap F) = 0.097$",
+    "title_de_existing": "Ein Failed Night bei die Observatory",
+    "context_de_existing": "Ein observatory classifies nights in five cloud-cover bands: Band 1, 0–20% cover (15% von nights); Band 2, 20–40% (25%); Band 3, 40–60% (30%); Band 4, 60–80% (20%); Band 5, 80–100% (10%). die Wahrscheinlichkeit von ein SUCCESSFUL imaging session ist 90% in Band 1, 70% in Band 2, 40% in Band 3, 15% in Band 4, und 3% in Band 5. Tonight's imaging session FAILS.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein imaging session fails, ist größer als 50%.",
+      "Die Wahrscheinlichkeit, dass die night ist Band 3 und die session fails, ist gleich 18%.",
+      "Die Wahrscheinlichkeit, dass die night ist Band 4, gegeben die session fails, ist größer als die Wahrscheinlichkeit, dass die night ist Band 3, gegeben die session fails.",
+      "Die Wahrscheinlichkeit, dass ein imaging session succeeds, ist gleich 1 minus die Wahrscheinlichkeit, dass ein imaging session fails.",
+      "Die Wahrscheinlichkeit, dass die night ist Band 1, gegeben die session fails, ist kleiner als 5%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein imaging session fails, ist größer als 50%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F) = 0.537\n$$\n\n$$\n0.537 > 0.50\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass die night ist Band 3 und die session fails, ist gleich 18%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B_3 \\cap F) = P(B_3) \\times P(F \\mid B_3)\n$$\n\n$$\nP(B_3 \\cap F) = 0.30 \\times 0.60\n$$\n\n$$\n0.3 \\times 0.6 = 0.18\n$$\n\n$$\nP(B_3 \\cap F) = 0.18\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass die night ist Band 4, gegeben die session fails, ist größer als die Wahrscheinlichkeit, dass die night ist Band 3, gegeben die session fails. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(B_4 \\mid F) = \\frac{P(B_4 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_4 \\mid F) = \\frac{0.17}{0.537}\n$$\n\n$$\n\\approx 0.31657\n$$\n\n$$\nP(B_3 \\mid F) = \\frac{P(B_3 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_3 \\mid F) = \\frac{0.18}{0.537}\n$$\n\n$$\n\\approx 0.33519\n$$\n\n$$\n0.31657 \\not> 0.33519\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass ein imaging session succeeds, ist gleich 1 minus die Wahrscheinlichkeit, dass ein imaging session fails. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass die night ist Band 1, gegeben die session fails, ist kleiner als 5%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B_1 \\mid F) = \\frac{P(B_1 \\cap F)}{P(F)}\n$$\n\n$$\nP(B_1 \\mid F) = \\frac{0.015}{0.537}\n$$\n\n$$\nP(B_1 \\mid F) \\approx 0.02793\n$$\n\n$$\n0.02793 < 0.05\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein observatory classifies nights in five cloud-cover bands: Band 1, 0–20% cover (15% von nights); Band 2, 20–40% (25%); Band 3, 40–60% (30%); Band 4, 60–80% (20%); Band 5, 80–100% (10%). die Wahrscheinlichkeit von ein SUCCESSFUL imaging session ist 90% in Band 1, 70% in Band 2, 40% in Band 3, 15% in Band 4, und 3% in Band 5. Tonight's imaging session FAILS.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung.\n\n$$\nP(F) = \\sum_{i = 1}^{5} P(F \\mid B_i) P(B_i)\n$$\n\n$$P(F) = (0.10)(0.15) + (0.30)(0.25) + (0.60)(0.30) + (0.85)(0.20) + (0.97)(0.10)$$\n\n$$P(F) = 0.015 + 0.075 + 0.18 + 0.17 + 0.097$$\n\n$$P(F) = 0.537$$"
+  },
+  {
+    "case_id": "MATH 12.187",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A Positive Test in a Deer Population",
+    "context_en": "In a wild deer population, 60% are Subspecies A, 25% are Subspecies B, and 15% are Subspecies C. A certain prion disease is present in 2% of Subspecies A, 6% of Subspecies B, and 15% of Subspecies C. A field test for the disease has a 90% sensitivity (probability of a positive result if the deer truly has the disease) and a 4% false-positive rate (probability of a positive result if the deer does not have the disease), regardless of subspecies. A randomly tested deer receives a POSITIVE result.",
+    "statements_en": [
+      "The probability that a tested deer receives a positive result is greater than 7%.",
+      "The probability that the deer is Subspecies A AND receives a positive result is greater than 3.4%.",
+      "The probability that the deer is Subspecies A, given a positive result is greater than 45%.",
+      "The probability that a tested deer receives a negative result equals 1 minus the probability that a tested deer receives a positive result.",
+      "The probability that the deer is Subspecies C, given a positive result is greater than the probability that the deer is Subspecies B, given a positive result."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a tested deer receives a positive result, $P(T^+)$, was calculated in the overview using the Law of Total Probability, considering the prevalence of each subspecies and their respective probabilities of a positive test:\n\n$$\nP(T^+) = 0.08257\n$$\n\nThe claim states that this probability is greater than $7\\% = 0.07$. We have:\n\n$$\n0.08257 > 0.07\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the joint probability that the deer is Subspecies A AND receives a positive result, $P(S_A \\cap T^+)$. This can be found using the conditional probability $P(T^+ \\mid S_A)$ and the prior probability $P(S_A)$:\n\n$$\nP(S_A \\cap T^+) = P(T^+ \\mid S_A) P(S_A)\n$$\n\nFrom the overview, $P(T^+ \\mid S_A) = 0.0572$ and $P(S_A) = 0.60$. Substituting these values:\n\n$$\nP(S_A \\cap T^+) = (0.0572)(0.60)\n$$\n\n$$\nP(S_A \\cap T^+) = 0.03432\n$$\n\nThe claim states that this probability is greater than $3.4\\% = 0.034$. We have:\n\n$$\n0.03432 > 0.034\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim asks for the posterior probability that the deer is Subspecies A, given a positive test result, $P(S_A \\mid T^+)$. This requires Bayes' Theorem:\n\n$$\nP(S_A \\mid T^+) = \\frac{P(S_A \\cap T^+)}{P(T^+)}\n$$\n\nFrom the calculations above, $P(S_A \\cap T^+) = 0.03432$ and $P(T^+) = 0.08257$. Substituting these values:\n\n$$\nP(S_A \\mid T^+) = \\frac{0.03432}{0.08257}\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 0.415647\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 41.56\\%\n$$\n\nThe claim states that this probability is greater than $45\\% = 0.45$. We have:\n\n$$\n0.415647 \\not> 0.45\n$$\n\n.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe events of a tested deer receiving a positive result ($T^+$) and a negative result ($T^-$) are complementary events. This means that if a test is not positive, it must be negative, and vice-versa. For any two complementary events, their probabilities sum to 1:\n\n$$\nP(T^-) = 1 - P(T^+)\n$$\n\nThis is a fundamental property of probability for complementary events.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis claim compares the posterior probabilities of Subspecies C and Subspecies B, given a positive test result: $P(S_C \\mid T^+)$ versus $P(S_B \\mid T^+)$. We calculate each using Bayes' Theorem.\n\nFor Subspecies C, given a positive test result:\n\n$$\nP(S_C \\mid T^+) = \\frac{P(S_C \\cap T^+)}{P(T^+)}\n$$\n\nWe need $P(S_C \\cap T^+)$. From the overview:\n\n$$\nP(S_C \\cap T^+) = P(T^+ \\mid S_C)P(S_C) = (0.169)(0.15) = 0.02535\n$$\n\nUsing $P(T^+) = 0.08257$:\n\n$$\nP(S_C \\mid T^+) = \\frac{0.02535}{0.08257}\n$$\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069\n$$\n\nFor Subspecies B, given a positive test result:\n\n$$\nP(S_B \\mid T^+) = \\frac{P(S_B \\cap T^+)}{P(T^+)}\n$$\n\nWe need $P(S_B \\cap T^+)$. From the overview:\n\n$$\nP(S_B \\cap T^+) = P(T^+ \\mid S_B)P(S_B) = (0.0916)(0.25) = 0.0229\n$$\n\nUsing $P(T^+) = 0.08257$:\n\n$$\nP(S_B \\mid T^+) = \\frac{0.0229}{0.08257}\n$$\n\n$$\nP(S_B \\mid T^+) \\approx 0.2773\n$$\n\nComparing the two probabilities:\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069 \\quad \\text{and} \\quad P(S_B \\mid T^+) \\approx 0.2773\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes a population of deer composed of three subspecies, each with a different prevalence of a certain prion disease. A field test for the disease has a known sensitivity and false-positive rate. We are testing a randomly selected deer and observing a positive result.\n\nLet $S_A$, $S_B$, and $S_C$ be the events that a randomly selected deer belongs to Subspecies A, B, or C, respectively. Their prior probabilities are:\n$$P(S_A) = 0.60$$\n$$P(S_B) = 0.25$$\n$$P(S_C) = 0.15$$\n\nLet $D$ be the event that a deer has the prion disease. The prevalence rates for each subspecies are:\n$$P(D \\mid S_A) = 0.02$$\n$$P(D \\mid S_B) = 0.06$$\n$$P(D \\mid S_C) = 0.15$$\n\nLet $T^+$ be the event of a positive test result and $T^-$ be the event of a negative test result. The test characteristics are:\nSensitivity: $P(T^+ \\mid D) = 0.90$\nFalse-positive rate: $P(T^+ \\mid D^c) = 0.04$\n\nThis means:\n$P(T^- \\mid D) = 1 - P(T^+ \\mid D) = 1 - 0.90 = 0.10$\n$P(T^- \\mid D^c) = 1 - P(T^+ \\mid D^c) = 1 - 0.04 = 0.96$\n\nTo evaluate the probabilities involving test results, we first need to find the probability of a positive test result for a deer from each subspecies, considering its specific disease prevalence. This uses the Law of Total Probability for each subspecies:\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\nSince the test characteristics are independent of subspecies, $P(T^+ \\mid D, S_i) = P(T^+ \\mid D)$ and $P(T^+ \\mid D^c, S_i) = P(T^+ \\mid D^c)$.\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\nFor Subspecies A:\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\nFor Subspecies B:\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\nFor Subspecies C:\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\nNow, to find the overall probability that a randomly tested deer receives a positive result, we use the Law of Total Probability over the subspecies:\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n$$P(T^+) = 0.08257$$\nThis is the base probability for many subsequent calculations.",
+    "title_de_existing": "Positiver Test in einer Wildpopulation",
+    "context_de_existing": "In einer Wildpopulation sind 60% Unterart A, 25% B und 15% C. Eine Prionenkrankheit betrifft 2% von A, 6% von B und 15% von C. Ein Feldtest hat 90% Sensitivität und 4% Falsch-Positiv-Rate, unabhängig von der Unterart. Ein zufällig getestetes Tier ist POSITIV.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit eines positiven Ergebnisses ist größer als 7%.",
+      "Die Wahrscheinlichkeit, dass das Tier Unterart A ist und positiv ist, ist größer als 3,4%.",
+      "Die Wahrscheinlichkeit für Unterart A gegeben positiv ist größer als 45%.",
+      "Die Wahrscheinlichkeit eines negativen Ergebnisses ist gleich 1 minus der Wahrscheinlichkeit eines positiven Ergebnisses.",
+      "Die Wahrscheinlichkeit für Unterart C gegeben positiv ist größer als die für Unterart B gegeben positiv."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit eines positiven Ergebnisses ist größer als 7%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T^+) = 0.08257\n$$\n\n$$\n0.08257 > 0.07\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Tier Unterart A ist und positiv ist, ist größer als 3,4%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(S_A \\cap T^+) = P(T^+ \\mid S_A) P(S_A)\n$$\n\n$$\nP(S_A \\cap T^+) = (0.0572)(0.60)\n$$\n\n$$\nP(S_A \\cap T^+) = 0.03432\n$$\n\n$$\n0.03432 > 0.034\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit für Unterart A gegeben positiv ist größer als 45%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S_A \\mid T^+) = \\frac{P(S_A \\cap T^+)}{P(T^+)}\n$$\n\n$$\nP(S_A \\mid T^+) = \\frac{0.03432}{0.08257}\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 0.415647\n$$\n\n$$\nP(S_A \\mid T^+) \\approx 41.56\\%\n$$\n\n$$\n0.415647 \\not> 0.45\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit eines negativen Ergebnisses ist gleich 1 minus der Wahrscheinlichkeit eines positiven Ergebnisses. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T^-) = 1 - P(T^+)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit für Unterart C gegeben positiv ist größer als die für Unterart B gegeben positiv. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(S_C \\mid T^+) = \\frac{P(S_C \\cap T^+)}{P(T^+)}\n$$\n\n$$\nP(S_C \\cap T^+) = P(T^+ \\mid S_C)P(S_C) = (0.169)(0.15) = 0.02535\n$$\n\n$$\nP(S_C \\mid T^+) = \\frac{0.02535}{0.08257}\n$$\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069\n$$\n\n$$\nP(S_B \\mid T^+) = \\frac{P(S_B \\cap T^+)}{P(T^+)}\n$$\n\n$$\nP(S_B \\cap T^+) = P(T^+ \\mid S_B)P(S_B) = (0.0916)(0.25) = 0.0229\n$$\n\n$$\nP(S_B \\mid T^+) = \\frac{0.0229}{0.08257}\n$$\n\n$$\nP(S_B \\mid T^+) \\approx 0.2773\n$$\n\n$$\nP(S_C \\mid T^+) \\approx 0.3069 \\quad \\text{und} \\quad P(S_B \\mid T^+) \\approx 0.2773\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "In einer Wildpopulation sind 60% Unterart A, 25% B und 15% C. Eine Prionenkrankheit betrifft 2% von A, 6% von B und 15% von C. Ein Feldtest hat 90% Sensitivität und 4% Falsch-Positiv-Rate, unabhängig von der Unterart. Ein zufällig getestetes Tier ist POSITIV. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(S_A) = 0.60$$\n\n$$P(S_B) = 0.25$$\n\n$$P(S_C) = 0.15$$\n\n$$P(D \\mid S_A) = 0.02$$\n\n$$P(D \\mid S_B) = 0.06$$\n\n$$P(D \\mid S_C) = 0.15$$\n\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D, S_i) P(D \\mid S_i) + P(T^+ \\mid D^c, S_i) P(D^c \\mid S_i)$$\n\n$$P(T^+ \\mid S_i) = P(T^+ \\mid D) P(D \\mid S_i) + P(T^+ \\mid D^c) (1 - P(D \\mid S_i))$$\n\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(1 - 0.02)$$\n\n$$P(T^+ \\mid S_A) = (0.90)(0.02) + (0.04)(0.98)$$\n\n$$\nP(T^+ \\mid S_A) = 0.018 + 0.0392 = 0.0572\n$$\n\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(1 - 0.06)$$\n\n$$P(T^+ \\mid S_B) = (0.90)(0.06) + (0.04)(0.94)$$\n\n$$\nP(T^+ \\mid S_B) = 0.054 + 0.0376 = 0.0916\n$$\n\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(1 - 0.15)$$\n\n$$P(T^+ \\mid S_C) = (0.90)(0.15) + (0.04)(0.85)$$\n\n$$\nP(T^+ \\mid S_C) = 0.135 + 0.034 = 0.169\n$$\n\n$$P(T^+) = P(T^+ \\mid S_A)P(S_A) + P(T^+ \\mid S_B)P(S_B) + P(T^+ \\mid S_C)P(S_C)$$\n\n$$P(T^+) = (0.0572)(0.60) + (0.0916)(0.25) + (0.169)(0.15)$$\n\n$$P(T^+) = 0.03432 + 0.0229 + 0.02535$$\n\n$$P(T^+) = 0.08257$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.188",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Wildfires That Escaped Containment",
+    "context_en": "Over a 12-year monitoring period, forestry officials in a remote mountain region tracked the origin of every wildfire ignition in the area, ultimately logging 640 separate incidents across the study. Investigators found a consistent pattern in the split between causes: for every 2 wildfires traced to faulty equipment (downed power lines, sparking machinery, and the like), there were 3 ignited by lightning strikes during dry summer storms, and 5 that were ultimately attributed to human activity, such as unattended campfires or discarded cigarettes. (This 2:3:5 split describes the relative proportion of causes, not the total count of fires in any given year — the actual number of fires varied considerably from year to year depending on drought conditions and did not affect the overall proportions.) Separately, fire behavior analysts studied how often a fire escaped initial containment and grew into a large, out-of-control blaze, broken down by original cause. Records show that lightning- sparked fires spread out of control in 18 of the 300 such fires closely studied by the analysts. Human-caused fires escaped containment somewhat more often — in 40 of 500 documented cases — while equipment-caused fires, despite being the rarest category overall, proved the most dangerous once ignited, spreading out of control in 27 of just 180 studied cases. This year, a fire that dominated national headlines for weeks was confirmed, after the fact, to have spread completely out of control before firefighters could contain it.",
+    "statements_en": [
+      "The probability that a wildfire spreads out of control is greater than 8%.",
+      "The probability that the fire was caused by faulty equipment AND spread out of control equals 3%.",
+      "The probability that the fire was caused by faulty equipment, given it spread out of control is greater than 40%.",
+      "The probability that a wildfire is contained equals 1 minus the probability that a wildfire spreads out of control.",
+      "The probability that the fire was human-caused, given it spread out of control is greater than the probability that the fire was lightning-caused, given it spread out of control."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a wildfire spreads out of control, $P(OOC)$, is calculated using the Law of Total Probability, combining the likelihood of each cause and its specific out-of-control rate.\n\nFrom the setup:\n\n$$\nP(OOC) = 0.088\n$$\n\nWe compare this to the claim that $P(OOC)$ is greater than $8\\%$.\n\n$$\n0.088 = 8.8\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim concerns the joint probability that a fire was caused by faulty equipment AND spread out of control, $P(E \\cap OOC)$. This is calculated by multiplying the prior probability of an equipment fire by the conditional probability of an equipment fire spreading out of control:\n\n$$\nP(E \\cap OOC) = P(OOC \\mid E)P(E)\n$$\n\nUsing the values from the setup:\n\n$$\nP(E \\cap OOC) = (0.15)(0.20)\n$$\n\n$$\nP(E \\cap OOC) = 0.03\n$$\n\nThis means the probability is $3\\%$. The claim states this probability equals $3\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim asks for the conditional probability that the fire was caused by faulty equipment, GIVEN that it spread out of control, $P(E \\mid OOC)$. This is found using Bayes' Theorem:\n\n$$\nP(E \\mid OOC) = \\frac{P(E \\cap OOC)}{P(OOC)}\n$$\n\nWe use the joint probability $P(E \\cap OOC) = 0.03$ from statement B and the overall probability $P(OOC) = 0.088$ from the setup:\n\n$$\nP(E \\mid OOC) = \\frac{0.03}{0.088}\n$$\n\n$$\nP(E \\mid OOC) \\approx 0.3409\n$$\n\nSo $P(E \\mid OOC)$ is approximately $34.09\\%$. The claim states this probability is greater than $40\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nFires can either spread out of control (OOC) or be contained (C). These are complementary events, meaning that if a fire does not spread out of control, it must be contained, and vice versa. The sum of their probabilities must be 1:\n\n$$\nP(C) + P(OOC) = 1\n$$\n\nTherefore, the probability of a wildfire being contained is:\n\n$$\nP(C) = 1 - P(OOC)\n$$\n\nThis matches the relationship described in the claim.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis claim compares two conditional probabilities: $P(H \\mid OOC)$ and $P(L \\mid OOC)$. We calculate each using Bayes' Theorem.\n\nFirst, for human-caused fires given they spread out of control:\n\n$$\nP(H \\mid OOC) = \\frac{P(H \\cap OOC)}{P(OOC)}\n$$\n\nThe joint probability $P(H \\cap OOC) = P(OOC \\mid H)P(H)$ from the setup is $(0.08)(0.50) = 0.040$. The overall $P(OOC) = 0.088$.\n\n$$\nP(H \\mid OOC) = \\frac{0.040}{0.088}\n$$\n\n$$\nP(H \\mid OOC) \\approx 0.4545\n$$\n\nNext, for lightning-caused fires given they spread out of control:\n\n$$\nP(L \\mid OOC) = \\frac{P(L \\cap OOC)}{P(OOC)}\n$$\n\nThe joint probability $P(L \\cap OOC) = P(OOC \\mid L)P(L)$ from the setup is $(0.06)(0.30) = 0.018$. The overall $P(OOC) = 0.088$.\n\n$$\nP(L \\mid OOC) = \\frac{0.018}{0.088}\n$$\n\n$$\nP(L \\mid OOC) \\approx 0.2045\n$$\n\nComparing the two probabilities: $P(H \\mid OOC) \\approx 45.45\\%$ and $P(L \\mid OOC) \\approx 20.45\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes three causes of wildfires: faulty equipment (E), lightning strikes (L), and human activity (H). These causes occur in a fixed proportion, and each cause has a specific probability of leading to a fire that spreads out of control (OOC).\n\nFirst, we establish the prior probabilities for each cause based on the given 2:3:5 ratio. The total parts are $2+3+5=10$. Therefore:\n$$\nP(E) = \\frac{2}{10} = 0.20\n$$\n$$\nP(L) = \\frac{3}{10} = 0.30\n$$\n$$\nP(H) = \\frac{5}{10} = 0.50\n$$\n\nNext, we determine the conditional probabilities of a fire spreading out of control for each cause. These are calculated from the provided study data:\nFor lightning-sparked fires: 18 out of 300 spread out of control.\n$$\nP(OOC \\mid L) = \\frac{18}{300} = 0.06\n$$\nFor human-caused fires: 40 out of 500 spread out of control.\n$$\nP(OOC \\mid H) = \\frac{40}{500} = 0.08\n$$\nFor equipment-caused fires: 27 out of 180 spread out of control.\n$$\nP(OOC \\mid E) = \\frac{27}{180} = 0.15\n$$\n\nTo find the overall probability that a wildfire spreads out of control, $P(OOC)$, we use the Law of Total Probability:\n$$P(OOC) = P(OOC \\mid E)P(E) + P(OOC \\mid L)P(L) + P(OOC \\mid H)P(H)$$\n$$P(OOC) = (0.15)(0.20) + (0.06)(0.30) + (0.08)(0.50)$$\n$$P(OOC) = 0.030 + 0.018 + 0.040$$\n$$P(OOC) = 0.088$$\nThus, the overall probability of a wildfire spreading out of control is $0.088$, or $8.8\\%$. This value will be used in subsequent calculations.",
+    "title_de_existing": "Wildfeuer außerhalb der Eindämmung",
+    "context_de_existing": "Über 12 Jahre erfassten Forstbehörden Wildfeuerursachen im Verhältnis 2:3:5 für fehlerhafte Ausrüstung : Blitz : menschliche Aktivität. Von genau untersuchten Fällen gerieten 27 von 180 ausrüstungsbedingten, 18 von 300 Blitz- und 40 von 500 menschlich verursachten Feuern außer Kontrolle. Ein Feuer ist außer Kontrolle geraten.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Wildfeuer außer Kontrolle gerät, ist größer als 8%.",
+      "Die Wahrscheinlichkeit, dass das Feuer durch fehlerhafte Ausrüstung verursacht wurde und außer Kontrolle geriet, beträgt 3%.",
+      "Die Wahrscheinlichkeit, dass das Feuer durch fehlerhafte Ausrüstung verursacht wurde, gegeben außer Kontrolle, ist größer als 40%.",
+      "Die Wahrscheinlichkeit, dass ein Wildfeuer eingedämmt wird, ist gleich 1 minus der Wahrscheinlichkeit, dass es außer Kontrolle gerät.",
+      "Die Wahrscheinlichkeit, dass das Feuer menschlich verursacht wurde, gegeben außer Kontrolle, ist größer als die Wahrscheinlichkeit für Blitzursache gegeben außer Kontrolle."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein Wildfeuer außer Kontrolle gerät, ist größer als 8%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(OOC) = 0.088\n$$\n\n$$\n0.088 = 8.8\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Feuer durch fehlerhafte Ausrüstung verursacht wurde und außer Kontrolle geriet, beträgt 3%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(E \\cap OOC) = P(OOC \\mid E)P(E)\n$$\n\n$$\nP(E \\cap OOC) = (0.15)(0.20)\n$$\n\n$$\nP(E \\cap OOC) = 0.03\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass das Feuer durch fehlerhafte Ausrüstung verursacht wurde, gegeben außer Kontrolle, ist größer als 40%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(E \\mid OOC) = \\frac{P(E \\cap OOC)}{P(OOC)}\n$$\n\n$$\nP(E \\mid OOC) = \\frac{0.03}{0.088}\n$$\n\n$$\nP(E \\mid OOC) \\approx 0.3409\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass ein Wildfeuer eingedämmt wird, ist gleich 1 minus der Wahrscheinlichkeit, dass es außer Kontrolle gerät. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(C) + P(OOC) = 1\n$$\n\n$$\nP(C) = 1 - P(OOC)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass das Feuer menschlich verursacht wurde, gegeben außer Kontrolle, ist größer als die Wahrscheinlichkeit für Blitzursache gegeben außer Kontrolle. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(H \\mid OOC) = \\frac{P(H \\cap OOC)}{P(OOC)}\n$$\n\n$$\nP(H \\mid OOC) = \\frac{0.040}{0.088}\n$$\n\n$$\nP(H \\mid OOC) \\approx 0.4545\n$$\n\n$$\nP(L \\mid OOC) = \\frac{P(L \\cap OOC)}{P(OOC)}\n$$\n\n$$\nP(L \\mid OOC) = \\frac{0.018}{0.088}\n$$\n\n$$\nP(L \\mid OOC) \\approx 0.2045\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Über 12 Jahre erfassten Forstbehörden Wildfeuerursachen im Verhältnis 2:3:5 für fehlerhafte Ausrüstung : Blitz : menschliche Aktivität. Von genau untersuchten Fällen gerieten 27 von 180 ausrüstungsbedingten, 18 von 300 Blitz- und 40 von 500 menschlich verursachten Feuern außer Kontrolle. Ein Feuer ist außer Kontrolle geraten. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(E) = \\frac{2}{10} = 0.20\n$$\n\n$$\nP(L) = \\frac{3}{10} = 0.30\n$$\n\n$$\nP(H) = \\frac{5}{10} = 0.50\n$$\n\n$$\nP(OOC \\mid L) = \\frac{18}{300} = 0.06\n$$\n\n$$\nP(OOC \\mid H) = \\frac{40}{500} = 0.08\n$$\n\n$$\nP(OOC \\mid E) = \\frac{27}{180} = 0.15\n$$\n\n$$P(OOC) = P(OOC \\mid E)P(E) + P(OOC \\mid L)P(L) + P(OOC \\mid H)P(H)$$\n\n$$P(OOC) = (0.15)(0.20) + (0.06)(0.30) + (0.08)(0.50)$$\n\n$$P(OOC) = 0.030 + 0.018 + 0.040$$\n\n$$P(OOC) = 0.088$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.189",
+    "short_letters": [
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Tagged Whales in Three Feeding Grounds",
+    "context_en": "A marine research station has spent the last several seasons cataloguing humpback whale activity across three feeding grounds along a stretch of coastline: the Northern Strait, the Middle Channel, and the Southern Bay. The station's lead biologist, reviewing five seasons of sighting logs comprising several thousand individual observations, noted that the whales are not evenly distributed across the three grounds: for every 4 whales logged in the Southern Bay, researchers logged 7 in the Middle Channel, and 9 in the Northern Strait, a pattern that has held steady across all five seasons despite year-to-year changes in water temperature and krill abundance. As part of a long-term tracking program, the station has also fitted a number of whales in each feeding ground with satellite tags, though budget constraints mean the tagging rate differs by location. Of the whales that frequent the Northern Strait, researchers have tagged 27 out of every 300 individually identified. In the Middle Channel, the tagging rate is somewhat higher, at 44 out of every 400 identified whales. The Southern Bay, despite having the smallest whale population of the three grounds, has seen the most concentrated tagging effort, reaching 18 out of every 120 identified whales. On a routine survey flight today, the research team spots a whale carrying a visible satellite tag.",
+    "statements_en": [
+      "The probability that a whale is tagged is greater than 10%.",
+      "The probability that the whale is from the Northern Strait AND is tagged equals 4.05%.",
+      "The probability that the whale is from the Southern Bay, given it is tagged is greater than 30%.",
+      "The probability that a whale is untagged equals 1 minus the probability that a whale is tagged.",
+      "The probability that the whale is from the Northern Strait, given it is tagged is greater than the probability that the whale is from the Middle Channel, given it is tagged."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly selected whale is tagged is calculated using the Law of Total Probability, summing the contributions from each feeding ground. We found this value in the setup.\n\n$$\nP(T) = 0.109\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that a whale is from the Northern Strait AND is tagged is a joint probability. We calculate it by multiplying the prior probability of a whale being from the Northern Strait by the conditional probability of it being tagged, given it is from the Northern Strait:\n\n$$\nP(N \\cap T) = P(T \\mid N)P(N)\n$$\n\nUsing the values established in the setup:\n\n$$\nP(N \\cap T) = (0.09)(0.45)\n$$\n\n$$\nP(N \\cap T) = 0.0405\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim asks for the conditional probability that a tagged whale is from the Southern Bay. We use Bayes' Theorem, which states that this probability is the joint probability of a whale being from the Southern Bay and tagged, divided by the total probability of a whale being tagged:\n\n$$\nP(S \\mid T) = \\frac{P(S \\cap T)}{P(T)}\n$$\n\nThe joint probability $P(S \\cap T)$ is calculated as $P(T \\mid S)P(S)$. From the setup:\n\n$$\nP(S \\cap T) = (0.15)(0.20) = 0.0300\n$$\n\nAnd the total probability $P(T)$ is $0.109$. Therefore:\n\n$$\nP(S \\mid T) = \\frac{0.0300}{0.109}\n$$\n\n$$\nP(S \\mid T) \\approx 0.2752\n$$\n\n.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe events \"a whale is tagged\" and \"a whale is untagged\" are complementary. This means that if a whale is not tagged, it must be untagged, and vice versa. The sum of the probabilities of complementary events is 1:\n\n$$\nP(\\text{untagged}) = 1 - P(\\text{tagged})\n$$\n\nThis is a fundamental property of probability.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nWe need to compare two conditional probabilities: $P(N \\mid T)$ and $P(M \\mid T)$. We calculate each using Bayes' Theorem.\n\nFor Northern Strait:\n\n$$\nP(N \\mid T) = \\frac{P(N \\cap T)}{P(T)}\n$$\n\nFrom the setup and statement B, $P(N \\cap T) = 0.0405$, and $P(T) = 0.109$. So,\n\n$$\nP(N \\mid T) = \\frac{0.0405}{0.109}\n$$\n\n$$\n\\approx 0.3716\n$$\n\nFor Middle Channel:\n\n$$\nP(M \\mid T) = \\frac{P(M \\cap T)}{P(T)}\n$$\n\nThe joint probability $P(M \\cap T)$ is $P(T \\mid M)P(M) = (0.11)(0.35) = 0.0385$. So,\n\n$$\nP(M \\mid T) = \\frac{0.0385}{0.109}\n$$\n\n$$\n\\approx 0.3532\n$$\n\nComparing the two probabilities, $P(N \\mid T) \\approx 0.3716$ and $P(M \\mid T) \\approx 0.3532$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes the distribution of humpback whales across three feeding grounds: the Northern Strait (N), the Middle Channel (M), and the Southern Bay (S). The relative populations are given as a ratio of $9:7:4$ for N:M:S. The total number of parts is $9+7+4 = 20$. From this ratio, we can establish the prior probabilities for a randomly selected whale being from each ground:\n$$\nP(N) = \\frac{9}{20} = 0.45\n$$\n$$\nP(M) = \\frac{7}{20} = 0.35\n$$\n$$\nP(S) = \\frac{4}{20} = 0.20\n$$\nWe are also given the tagging rates for identified whales in each region. Let $T$ denote the event that a whale is tagged. These are conditional probabilities:\n$$\nP(T \\mid N) = \\frac{27}{300} = 0.09\n$$\n$$\nP(T \\mid M) = \\frac{44}{400} = 0.11\n$$\n$$\nP(T \\mid S) = \\frac{18}{120} = 0.15\n$$\nWe use the Law of Total Probability to find the overall probability that a randomly selected whale is tagged:\n$$P(T) = P(T \\mid N)P(N) + P(T \\mid M)P(M) + P(T \\mid S)P(S)$$\n$$P(T) = (0.09)(0.45) + (0.11)(0.35) + (0.15)(0.20)$$\n$$P(T) = 0.0405 + 0.0385 + 0.0300$$\n$$P(T) = 0.109$$\nThis value, $P(T) = 0.109$, will be used in subsequent calculations.",
+    "title_de_existing": "Markierte Wale in drei Futtergründen",
+    "context_de_existing": "Buckelwale verteilen sich auf drei Futtergründe im Verhältnis 9:7:4 für Nördliche Meerenge : Mittlerer Kanal : Südliche Bucht. Markierungsraten: 27 von 300 in der Nördlichen Meerenge, 44 von 400 im Mittleren Kanal, 18 von 120 in der Südlichen Bucht. Ein Wal mit sichtbarer Satellitenmarkierung wird gesichtet.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Wal markiert ist, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass der Wal aus der Nördlichen Meerenge stammt und markiert ist, beträgt 4,05%.",
+      "Die Wahrscheinlichkeit, dass der Wal aus der Südlichen Bucht stammt, gegeben Markierung, ist größer als 30%.",
+      "Die Wahrscheinlichkeit, dass ein Wal unmarkiert ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er markiert ist.",
+      "Die Wahrscheinlichkeit, dass der Wal aus der Nördlichen Meerenge stammt, gegeben Markierung, ist größer als die Wahrscheinlichkeit für den Mittleren Kanal gegeben Markierung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein Wal markiert ist, ist größer als 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(T) = 0.109\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Wal aus der Nördlichen Meerenge stammt und markiert ist, beträgt 4,05%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(N \\cap T) = P(T \\mid N)P(N)\n$$\n\n$$\nP(N \\cap T) = (0.09)(0.45)\n$$\n\n$$\nP(N \\cap T) = 0.0405\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Wal aus der Südlichen Bucht stammt, gegeben Markierung, ist größer als 30%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S \\mid T) = \\frac{P(S \\cap T)}{P(T)}\n$$\n\n$$\nP(S \\cap T) = (0.15)(0.20) = 0.0300\n$$\n\n$$\nP(S \\mid T) = \\frac{0.0300}{0.109}\n$$\n\n$$\nP(S \\mid T) \\approx 0.2752\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass ein Wal unmarkiert ist, ist gleich 1 minus der Wahrscheinlichkeit, dass er markiert ist. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{untagged}) = 1 - P(\\text{tagged})\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Wal aus der Nördlichen Meerenge stammt, gegeben Markierung, ist größer als die Wahrscheinlichkeit für den Mittleren Kanal gegeben Markierung. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(N \\mid T) = \\frac{P(N \\cap T)}{P(T)}\n$$\n\n$$\nP(N \\mid T) = \\frac{0.0405}{0.109}\n$$\n\n$$\n\\approx 0.3716\n$$\n\n$$\nP(M \\mid T) = \\frac{P(M \\cap T)}{P(T)}\n$$\n\n$$\nP(M \\mid T) = \\frac{0.0385}{0.109}\n$$\n\n$$\n\\approx 0.3532\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Buckelwale verteilen sich auf drei Futtergründe im Verhältnis 9:7:4 für Nördliche Meerenge : Mittlerer Kanal : Südliche Bucht. Markierungsraten: 27 von 300 in der Nördlichen Meerenge, 44 von 400 im Mittleren Kanal, 18 von 120 in der Südlichen Bucht. Ein Wal mit sichtbarer Satellitenmarkierung wird gesichtet. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(N) = \\frac{9}{20} = 0.45\n$$\n\n$$\nP(M) = \\frac{7}{20} = 0.35\n$$\n\n$$\nP(S) = \\frac{4}{20} = 0.20\n$$\n\n$$\nP(T \\mid N) = \\frac{27}{300} = 0.09\n$$\n\n$$\nP(T \\mid M) = \\frac{44}{400} = 0.11\n$$\n\n$$\nP(T \\mid S) = \\frac{18}{120} = 0.15\n$$\n\n$$P(T) = P(T \\mid N)P(N) + P(T \\mid M)P(M) + P(T \\mid S)P(S)$$\n\n$$P(T) = (0.09)(0.45) + (0.11)(0.35) + (0.15)(0.20)$$\n\n$$P(T) = 0.0405 + 0.0385 + 0.0300$$\n\n$$P(T) = 0.109$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.190",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A Genuine Meteorite in Three Search Areas",
+    "context_en": "An amateur meteorite-hunting club has spent a decade combing three search areas after a well-documented meteor shower: a Dry Lakebed, a Rocky Plateau, and a Grassy Basin, all within the same debris field roughly 40 miles across. Club records, kept meticulously in a shared logbook since the group's founding, show that fragment discoveries are not evenly split among the three areas: for every 5 fragments found on the Rocky Plateau, members found 3 in the Dry Lakebed, and 2 in the Grassy Basin — a ratio that has stayed remarkably consistent even as the club's membership has grown from a handful of founders to well over 200 active hunters today. Not every fragment collected turns out to be a genuine meteorite, of course; many are simply oddly shaped terrestrial rocks (informally called 'meteor-wrongs' by the club). When fragments are sent to a university lab for verification, the confirmation rate varies noticeably by search area. Of the fragments collected from the Dry Lakebed and sent in for testing, 21 out of 300 were confirmed as genuine meteorites. Fragments from the Rocky Plateau fared better, with 60 out of 500 confirmed genuine. The Grassy Basin, though it produces the fewest total fragments of the three areas, had the highest confirmation rate: 34 out of 200 tested fragments were confirmed genuine. At this month's club meeting, a member excitedly announces that a fragment they collected this week has just come back from the lab confirmed as a genuine meteorite.",
+    "statements_en": [
+      "The probability that a fragment is confirmed genuine is greater than 10%.",
+      "The probability that the fragment is from the Rocky Plateau AND is confirmed genuine equals 6%.",
+      "The probability that the fragment is from the Rocky Plateau, given it is confirmed genuine is greater than 55%.",
+      "The probability that a fragment is not genuine equals 1 minus the probability that a fragment is confirmed genuine.",
+      "The probability that the fragment is from the Grassy Basin, given it is confirmed genuine is greater than the probability that the fragment is from the Dry Lakebed, given it is confirmed genuine."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly selected fragment is confirmed genuine is the overall probability $P(G)$ calculated in the setup.\n\n$$\nP(G) = 0.115\n$$\n\nThe claim states this probability is greater than $10\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis statement asks for the joint probability that a fragment is from the Rocky Plateau *and* is confirmed genuine. This is found by multiplying the prior probability of a fragment being from the Rocky Plateau by the conditional probability of it being genuine given that origin.\n\n$$\nP(P \\cap G) = P(G \\mid P)P(P)\n$$\n\nUsing the values from the setup:\n\n$$\nP(P \\cap G) = (0.12)(0.5)\n$$\n\n$$\nP(P \\cap G) = 0.06\n$$\n\nThe claim states this probability equals $6\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis statement asks for the posterior probability that a fragment came from the Rocky Plateau, given that it has been confirmed genuine. We apply Bayes' Theorem:\n\n$$\nP(P \\mid G) = \\frac{P(P \\cap G)}{P(G)}\n$$\n\nWe use the joint probability $P(P \\cap G) = 0.06$ from statement B, and the total probability $P(G) = 0.115$ from the setup.\n\n$$\nP(P \\mid G) = \\frac{0.06}{0.115}\n$$\n\n$$\nP(P \\mid G) \\approx 0.5217\n$$\n\nThis means the probability is approximately $52.17\\%$. The claim states this probability is greater than $55\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event 'a fragment is not genuine' is the complement of the event 'a fragment is confirmed genuine'. For any event $A$, the probability of its complement $A^c$ is given by $P(A^c) = 1 - P(A)$.\n\nHere, the event is 'genuine' ($G$), so the complementary event is 'not genuine' ($G^c$).\n\n$$\nP(G^c) = 1 - P(G)\n$$\n\n.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis statement requires comparing the posterior probabilities of two origin areas, given that the fragment is genuine. We need to calculate $P(B \\mid G)$ and $P(L \\mid G)$.\n\nFor $P(B \\mid G)$:\n\n$$\nP(B \\mid G) = \\frac{P(B \\cap G)}{P(G)}\n$$\n\nFirst, calculate $P(B \\cap G) = P(G \\mid B)P(B)$:\n\n$$\nP(B \\cap G) = (0.17)(0.2) = 0.034\n$$\n\nThen, using $P(G) = 0.115$:\n\n$$\nP(B \\mid G) = \\frac{0.034}{0.115}\n$$\n\n$$\n\\approx 0.2957\n$$\n\nFor $P(L \\mid G)$:\n\n$$\nP(L \\mid G) = \\frac{P(L \\cap G)}{P(G)}\n$$\n\nFirst, calculate $P(L \\cap G) = P(G \\mid L)P(L)$:\n\n$$\nP(L \\cap G) = (0.07)(0.3) = 0.021\n$$\n\nThen, using $P(G) = 0.115$:\n\n$$\nP(L \\mid G) = \\frac{0.021}{0.115}\n$$\n\n$$\n\\approx 0.1826\n$$\n\nThe claim states $P(B \\mid G) > P(L \\mid G)$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes a scenario where an amateur meteorite-hunting club has identified fragment discovery rates from three different search areas (Dry Lakebed, Rocky Plateau, Grassy Basin) and confirmation rates for genuine meteorites from each area. We are given the relative frequency of fragment discoveries across the areas, and the conditional probabilities of a fragment being genuine given its origin area.\n\nLet $L$ denote a fragment from the Dry Lakebed, $P$ from the Rocky Plateau, and $B$ from the Grassy Basin. Let $G$ denote a fragment that is confirmed genuine. The problem provides the following information:\n\n1.  **Prior probabilities of origin:** The ratio of fragments found is $5$ (Plateau) : $3$ (Lakebed) : $2$ (Basin). The total parts are $5+3+2=10$. We can derive the prior probabilities:\n*   $P(L) = \\frac{3}{10} = 0.3$\n*   $P(P) = \\frac{5}{10} = 0.5$\n*   $P(B) = \\frac{2}{10} = 0.2$\n\n2.  **Conditional probabilities of being genuine given origin (likelihoods):** These are derived from the given testing results:\n*   For Dry Lakebed: $P(G \\mid L) = \\frac{21}{300} = 0.07$\n*   For Rocky Plateau: $P(G \\mid P) = \\frac{60}{500} = 0.12$\n*   For Grassy Basin: $P(G \\mid B) = \\frac{34}{200} = 0.17$\n\nThe total probability of a fragment being confirmed genuine, $P(G)$, is calculated using the Law of Total Probability:\n\n$$P(G) = P(G \\mid L)P(L) + P(G \\mid P)P(P) + P(G \\mid B)P(B)$$\n\n$$P(G) = (0.07)(0.3) + (0.12)(0.5) + (0.17)(0.2)$$\n\n$$P(G) = 0.021 + 0.06 + 0.034$$\n\n$$P(G) = 0.115$$\n\nThis means the overall probability of a fragment being genuine is $11.5\\%$. These values will be used in the subsequent statements.",
+    "title_de_existing": "Echter Meteorit in drei Suchgebieten",
+    "context_de_existing": "Meteoritenjäger finden Fragmente in drei Gebieten im Verhältnis 3:5:2 für Trockensee : Felsplateau : Grasbecken. Bestätigungsraten: Trockensee 21 von 300, Felsplateau 60 von 500, Grasbecken 34 von 200. Ein Fragment wird als echter Meteorit bestätigt.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Fragment als echt bestätigt wird, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass das Fragment vom Felsplateau stammt und echt ist, beträgt 6%.",
+      "Die Wahrscheinlichkeit für das Felsplateau gegeben echt ist größer als 55%.",
+      "Die Wahrscheinlichkeit, dass ein Fragment nicht echt ist, ist gleich 1 minus der Wahrscheinlichkeit für echt.",
+      "Die Wahrscheinlichkeit für das Grasbecken gegeben echt ist größer als die für den Trockensee gegeben echt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass ein Fragment als echt bestätigt wird, ist größer als 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G) = 0.115\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass das Fragment vom Felsplateau stammt und echt ist, beträgt 6%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P \\cap G) = P(G \\mid P)P(P)\n$$\n\n$$\nP(P \\cap G) = (0.12)(0.5)\n$$\n\n$$\nP(P \\cap G) = 0.06\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit für das Felsplateau gegeben echt ist größer als 55%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(P \\mid G) = \\frac{P(P \\cap G)}{P(G)}\n$$\n\n$$\nP(P \\mid G) = \\frac{0.06}{0.115}\n$$\n\n$$\nP(P \\mid G) \\approx 0.5217\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass ein Fragment nicht echt ist, ist gleich 1 minus der Wahrscheinlichkeit für echt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(G^c) = 1 - P(G)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit für das Grasbecken gegeben echt ist größer als die für den Trockensee gegeben echt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B \\mid G) = \\frac{P(B \\cap G)}{P(G)}\n$$\n\n$$\nP(B \\cap G) = (0.17)(0.2) = 0.034\n$$\n\n$$\nP(B \\mid G) = \\frac{0.034}{0.115}\n$$\n\n$$\n\\approx 0.2957\n$$\n\n$$\nP(L \\mid G) = \\frac{P(L \\cap G)}{P(G)}\n$$\n\n$$\nP(L \\cap G) = (0.07)(0.3) = 0.021\n$$\n\n$$\nP(L \\mid G) = \\frac{0.021}{0.115}\n$$\n\n$$\n\\approx 0.1826\n$$\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Meteoritenjäger finden Fragmente in drei Gebieten im Verhältnis 3:5:2 für Trockensee : Felsplateau : Grasbecken. Bestätigungsraten: Trockensee 21 von 300, Felsplateau 60 von 500, Grasbecken 34 von 200. Ein Fragment wird als echter Meteorit bestätigt. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(G) = P(G \\mid L)P(L) + P(G \\mid P)P(P) + P(G \\mid B)P(B)$$\n\n$$P(G) = (0.07)(0.3) + (0.12)(0.5) + (0.17)(0.2)$$\n\n$$P(G) = 0.021 + 0.06 + 0.034$$\n\n$$P(G) = 0.115$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.191",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "A Lake Trout Across Three Ice-Fishing Zones",
+    "context_en": "A frozen lake popular with ice fishermen is informally divided by locals into three fishing zones: the North Cove, the Mid- Lake Flats, and the South Channel, each requiring a different style of auger and bait due to differences in ice thickness and water depth. A local fishing guide, who has kept a detailed personal logbook of hut placements over many winters primarily to settle friendly bets with other guides, notes that anglers set up their huts in a fairly predictable pattern each season: for every 6 huts placed in the South Channel, there are 9 placed in the Mid-Lake Flats, and 5 placed in the North Cove — even though the South Channel actually requires drilling through nearly two feet of additional ice compared to the other zones. The guide is most interested, however, in tracking a prized and elusive catch: the Lake Trout, which is far less common than the panfish anglers usually reel in. According to the logbook, anglers fishing the North Cove land a Lake Trout on 14 out of every 200 fishing days. In the Mid-Lake Flats, the rate is 33 out of every 300 fishing days, and in the South Channel — widely considered the most productive zone among local anglers despite the extra drilling effort — the rate climbs to 38 out of every 200 fishing days. Today, a very excited angler radios the guide to report that they have just landed a Lake Trout.",
+    "statements_en": [
+      "The probability that a Lake Trout is caught on a given fishing day is greater than 10%.",
+      "The probability that the catch is from the South Channel AND is a Lake Trout equals 5.7%.",
+      "The probability that the catch is from the South Channel, given it is a Lake Trout is greater than 50%.",
+      "The probability that no Lake Trout is caught on a given day equals 1 minus the probability that a Lake Trout is caught.",
+      "The probability that the catch is from the Mid-Lake Flats, given it is a Lake Trout is greater than the probability that the catch is from the North Cove, given it is a Lake Trout."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of catching a Lake Trout on a given fishing day, $P(L)$, was calculated in the overview by summing the probabilities of catching a Lake Trout in each of the three zones, weighted by the proportion of fishing activity in each zone.\n\n$$\nP(L) = 0.124\n$$\n\nThe claim states that $P(L)$ is greater than $10\\%$. We have $0.124 = 12.4\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that a catch is from the South Channel AND is a Lake Trout is the joint probability $P(S \\cap L)$. This is calculated by multiplying the prior probability of fishing in the South Channel by the conditional probability of catching a Lake Trout in that channel.\n\n$$\nP(S \\cap L) = P(L \\mid S)P(S)\n$$\n\nUsing the values from the overview:\n\n$$\nP(S \\cap L) = (0.19)(0.30)\n$$\n\n$$\nP(S \\cap L) = 0.057\n$$\n\nThe claim states this probability equals $5.7\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the catch came from the South Channel, given that it is a Lake Trout, is the posterior probability $P(S \\mid L)$. This requires Bayes' Theorem.\n\n$$\nP(S \\mid L) = \\frac{P(S \\cap L)}{P(L)}\n$$\n\nFrom previous calculations, $P(S \\cap L) = 0.057$ and $P(L) = 0.124$. Substituting these values:\n\n$$\nP(S \\mid L) = \\frac{0.057}{0.124}\n$$\n\n$$\nP(S \\mid L) \\approx 0.459677\n$$\n\nThis result means $P(S \\mid L) \\approx 45.97\\%$. The claim states this probability is greater than $50\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event 'no Lake Trout is caught on a given day' is the complement of the event 'a Lake Trout is caught on a given day'. The probability of a complementary event is $1$ minus the probability of the event itself.\n\n$$\nP(\\text{no Lake Trout caught}) = 1 - P(\\text{Lake Trout caught})\n$$\n\nThis is a fundamental property of probability for any event and its complement.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThis statement requires comparing the conditional probability of the catch being from the Mid-Lake Flats given it is a Lake Trout, $P(M \\mid L)$, with the conditional probability of it being from the North Cove given it is a Lake Trout, $P(N \\mid L)$. Both are calculated using Bayes' Theorem.\n\nFirst, for the Mid-Lake Flats:\n\n$$\nP(M \\mid L) = \\frac{P(M \\cap L)}{P(L)}\n$$\n\nThe joint probability $P(M \\cap L) = P(L \\mid M)P(M) = (0.11)(0.45) = 0.0495$.\n\n$$\nP(M \\mid L) = \\frac{0.0495}{0.124}\n$$\n\n$$\nP(M \\mid L) \\approx 0.39919\n$$\n\nNext, for the North Cove:\n\n$$\nP(N \\mid L) = \\frac{P(N \\cap L)}{P(L)}\n$$\n\nThe joint probability $P(N \\cap L) = P(L \\mid N)P(N) = (0.07)(0.25) = 0.0175$.\n\n$$\nP(N \\mid L) = \\frac{0.0175}{0.124}\n$$\n\n$$\nP(N \\mid L) \\approx 0.14113\n$$\n\nComparing the two probabilities: $P(M \\mid L) \\approx 0.39919$ and $P(N \\mid L) \\approx 0.14113$. The claim is $P(M \\mid L) > P(N \\mid L)$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A local fishing guide tracks ice-fishing activity across three distinct zones: the North Cove ($N$), the Mid-Lake Flats ($M$), and the South Channel ($S$). Anglers place huts in these zones in a predictable pattern, and the guide's logbook records Lake Trout ($L$) catch rates for each zone.\n\nThe distribution of huts determines the prior probability of an angler being in a particular zone. The given ratio of huts is 5 in the North Cove, 9 in the Mid-Lake Flats, and 6 in the South Channel. The total number of ratio parts is $5+9+6 = 20$. We define the prior probabilities for each zone as:\n\n$$\nP(N) = \\frac{5}{20} = 0.25\n$$\n\n$$\nP(M) = \\frac{9}{20} = 0.45\n$$\n\n$$\nP(S) = \\frac{6}{20} = 0.30\n$$\n\nThe logbook provides the conditional probabilities of catching a Lake Trout, given the zone:\n\n$$\nP(L \\mid N) = \\frac{14}{200} = 0.07\n$$\n\n$$\nP(L \\mid M) = \\frac{33}{300} = 0.11\n$$\n\n$$\nP(L \\mid S) = \\frac{38}{200} = 0.19\n$$\n\nTo find the overall probability of catching a Lake Trout on any given day, $P(L)$, we use the Law of Total Probability by summing the products of the prior probabilities of being in each zone and the conditional probability of catching a Lake Trout in that zone:\n\n$$P(L) = P(L \\mid N)P(N) + P(L \\mid M)P(M) + P(L \\mid S)P(S)$$\n\n$$P(L) = (0.07)(0.25) + (0.11)(0.45) + (0.19)(0.30)$$\n\n$$P(L) = 0.0175 + 0.0495 + 0.0570$$\n\n$$P(L) = 0.124$$\n\nThis overall probability $P(L) = 0.124$ will be used in subsequent statements.",
+    "title_de_existing": "Seeforelle in drei Eisangelzonen",
+    "context_de_existing": "Ein zugefrorener See ist in drei Angelzonen unterteilt. Hütten stehen im Verhältnis 5:9:6 für Nordbucht : Mittelsee-Flachwasser : Südkanal. Seeforellen-Fangraten: 14 von 200 Angeltagen in der Nordbucht, 33 von 300 im Mittelsee, 38 von 200 im Südkanal. Heute wird eine Seeforelle gemeldet.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass an einem Angeltag eine Seeforelle gefangen wird, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass der Fang aus dem Südkanal stammt und eine Seeforelle ist, beträgt 5,7%.",
+      "Die Wahrscheinlichkeit, dass der Fang aus dem Südkanal stammt, gegeben Seeforelle, ist größer als 50%.",
+      "Die Wahrscheinlichkeit, dass an einem Tag keine Seeforelle gefangen wird, ist gleich 1 minus der Wahrscheinlichkeit eines Seeforellenfangs.",
+      "Die Wahrscheinlichkeit, dass der Fang aus dem Mittelsee stammt, gegeben Seeforelle, ist größer als die Wahrscheinlichkeit für die Nordbucht gegeben Seeforelle."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass an einem Angeltag eine Seeforelle gefangen wird, ist größer als 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L) = 0.124\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass der Fang aus dem Südkanal stammt und eine Seeforelle ist, beträgt 5,7%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(S \\cap L) = P(L \\mid S)P(S)\n$$\n\n$$\nP(S \\cap L) = (0.19)(0.30)\n$$\n\n$$\nP(S \\cap L) = 0.057\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Fang aus dem Südkanal stammt, gegeben Seeforelle, ist größer als 50%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S \\mid L) = \\frac{P(S \\cap L)}{P(L)}\n$$\n\n$$\nP(S \\mid L) = \\frac{0.057}{0.124}\n$$\n\n$$\nP(S \\mid L) \\approx 0.459677\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass an einem Tag keine Seeforelle gefangen wird, ist gleich 1 minus der Wahrscheinlichkeit eines Seeforellenfangs. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{no Lake Trout caught}) = 1 - P(\\text{Lake Trout caught})\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass der Fang aus dem Mittelsee stammt, gegeben Seeforelle, ist größer als die Wahrscheinlichkeit für die Nordbucht gegeben Seeforelle. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M \\mid L) = \\frac{P(M \\cap L)}{P(L)}\n$$\n\n$$\nP(M \\mid L) = \\frac{0.0495}{0.124}\n$$\n\n$$\nP(M \\mid L) \\approx 0.39919\n$$\n\n$$\nP(N \\mid L) = \\frac{P(N \\cap L)}{P(L)}\n$$\n\n$$\nP(N \\mid L) = \\frac{0.0175}{0.124}\n$$\n\n$$\nP(N \\mid L) \\approx 0.14113\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein zugefrorener See ist in drei Angelzonen unterteilt. Hütten stehen im Verhältnis 5:9:6 für Nordbucht : Mittelsee-Flachwasser : Südkanal. Seeforellen-Fangraten: 14 von 200 Angeltagen in der Nordbucht, 33 von 300 im Mittelsee, 38 von 200 im Südkanal. Heute wird eine Seeforelle gemeldet. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(N) = \\frac{5}{20} = 0.25\n$$\n\n$$\nP(M) = \\frac{9}{20} = 0.45\n$$\n\n$$\nP(S) = \\frac{6}{20} = 0.30\n$$\n\n$$\nP(L \\mid N) = \\frac{14}{200} = 0.07\n$$\n\n$$\nP(L \\mid M) = \\frac{33}{300} = 0.11\n$$\n\n$$\nP(L \\mid S) = \\frac{38}{200} = 0.19\n$$\n\n$$P(L) = P(L \\mid N)P(N) + P(L \\mid M)P(M) + P(L \\mid S)P(S)$$\n\n$$P(L) = (0.07)(0.25) + (0.11)(0.45) + (0.19)(0.30)$$\n\n$$P(L) = 0.0175 + 0.0495 + 0.0570$$\n\n$$P(L) = 0.124$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.192",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Mildew Across Four Vineyard Blocks",
+    "context_en": "A family-run vineyard is laid out across four distinct blocks that climb a gentle hillside: Block A on the lower slope, Block B at mid-slope, Block C on the upper slope where the sun exposure is most intense, and Block D on the flat valley floor near a small creek. The vineyard's longtime manager, who has kept meticulous planting records since first taking over the property, reports that the blocks are not equal in size: for every 3 rows of vines in Block D, there are 4 rows in Block A, 6 rows in Block B, and 7 rows in Block C. This season, an outbreak of powdery mildew — a fungal disease that thrives in specific combinations of humidity and sun exposure — has prompted the manager to inspect a sample of rows from each block and record infection counts, separate from the routine pest-monitoring the vineyard also performs for an unrelated insect species. In Block A, inspectors found mildew in 8 of the 200 rows examined. In Block B, 27 of 300 rows examined showed signs of mildew. Block C, with its intense upper-slope sun exposure, had the highest infection count: 70 of 350 rows examined. Block D, nearest the creek and therefore more humid, still showed a meaningful rate: 21 of 150 rows examined. During today's inspection round, a randomly selected row is found to show clear signs of powdery mildew. ● (a) Find the probability that this infected row is in Block C. ● (b) Suppose the vineyard manager later confirms — from the row's marker tag — that this infected row is definitely NOT in Block C. Given both this and the fact that it is infected, find the probability that the row is in Block B.",
+    "statements_en": [
+      "The probability that a row shows mildew is greater than 10%.",
+      "The probability that the row is in Block C AND shows mildew equals 7%.",
+      "The probability that the row is in Block C, given it shows mildew is greater than 60%.",
+      "The probability that a row shows no mildew equals 1 minus the probability that a row shows mildew.",
+      "The probability that the row is in Block B, given it shows mildew AND is known not to be in Block C is greater than 45%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a randomly selected row showing mildew is $P(M)$. This was calculated using the Law of Total Probability in the overview.\n\n$$\nP(M) = 0.126\n$$\n\nTo compare with the claim, we express this as a percentage:\n\n$$\n0.126 = 12.6\\%\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe probability that a row is in Block C and shows mildew is the joint probability $P(C \\cap M)$. This is found by multiplying the prior probability of being in Block C by the conditional probability of showing mildew given it's in Block C, $P(M \\mid C)$.\n\n$$\nP(C \\cap M) = P(C) \\times P(M \\mid C)\n$$\n\nUsing the values from the overview, $P(C) = 0.35$ and $P(M \\mid C) = 0.20$.\n\n$$\nP(C \\cap M) = 0.35 \\times 0.20\n$$\n\n$$\n0.35 \\times 0.2 = 0.07\n$$\n\n$$\nP(C \\cap M) = 0.07\n$$\n\nThis is exactly $7\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the row is in Block C, given it shows mildew, is the conditional probability $P(C \\mid M)$. We apply the definition of conditional probability:\n\n$$\nP(C \\mid M) = \\frac{P(C \\cap M)}{P(M)}\n$$\n\nFrom the overview, $P(C \\cap M) = 0.070$ and $P(M) = 0.126$.\n\n$$\nP(C \\mid M) = \\frac{0.070}{0.126}\n$$\n\n$$\nP(C \\mid M) \\approx 0.5556\n$$\n\nExpressed as a percentage, this is approximately $55.56\\%$. The claim states this probability is greater than $60\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event that a row shows no mildew is the complement of the event that a row shows mildew. Let $M^c$ be the event that a row shows no mildew. For any event $E$, the probability of its complement $E^c$ is given by $P(E^c) = 1 - P(E)$.\n\nTherefore, the probability of a row showing no mildew is $P(M^c) = 1 - P(M)$. This matches the formula given in the claim.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThe probability of the row being in Block B, given it shows mildew AND is known not to be in Block C, can be written as $P(B \\mid M \\cap C^c)$. Let $C^c$ be the event that the row is not in Block C. By definition of conditional probability:\n\n$$\nP(B \\mid M \\cap C^c) = \\frac{P(B \\cap M \\cap C^c)}{P(M \\cap C^c)}\n$$\n\nIf a row is in Block B, it cannot also be in Block C. Thus, the event $B \\cap C^c$ is simply the event $B$. So, the numerator $P(B \\cap M \\cap C^c)$ simplifies to $P(B \\cap M)$. From the overview, $P(B \\cap M) = 0.027$.\n\nThe denominator $P(M \\cap C^c)$ represents the probability that a row shows mildew and is not in Block C. This is the sum of the joint probabilities of mildew occurring in Blocks A, B, and D:\n\n$$\nP(M \\cap C^c) = P(A \\cap M) + P(B \\cap M) + P(D \\cap M)\n$$\n\nUsing the joint probabilities from the overview:\n\n$$\nP(M \\cap C^c) = 0.008 + 0.027 + 0.021\n$$\n\n$$\n0.008 + 0.027 = 0.035\n$$\n\n$$\n0.035 + 0.021 = 0.056\n$$\n\n$$\nP(M \\cap C^c) = 0.056\n$$\n\nNow we compute the conditional probability:\n\n$$\nP(B \\mid M \\cap C^c) = \\frac{0.027}{0.056}\n$$\n\n$$\nP(B \\mid M \\cap C^c) \\approx 0.4821\n$$\n\nExpressed as a percentage, this is approximately $48.21\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "This problem describes a vineyard with four blocks (A, B, C, D), each with a specific proportion of the total rows and a distinct rate of powdery mildew infection. We are given relative block sizes and observed infection rates from samples within each block. A row is randomly selected and found to be infected, and we must evaluate various probabilities related to this event.\n\nFirst, we establish the prior probabilities for a randomly chosen row belonging to each block. The problem states that for every 3 rows in Block D, there are 4 rows in Block A, 6 rows in Block B, and 7 rows in Block C. The total number of relative parts is $4+6+7+3 = 20$. Let $A, B, C, D$ denote the events that a row is from the respective block.\n\n$$\nP(A) = \\frac{4}{20} = 0.20\n$$\n$$\nP(B) = \\frac{6}{20} = 0.30\n$$\n$$\nP(C) = \\frac{7}{20} = 0.35\n$$\n$$\nP(D) = \\frac{3}{20} = 0.15\n$$\n\nNext, we calculate the conditional probabilities of a row showing mildew, given its block. Let $M$ denote the event that a row shows mildew. These are derived from the sample data provided for each block.\n\n$P(M \\mid A) = \\frac{8}{200} = 0.04$\n$P(M \\mid B) = \\frac{27}{300} = 0.09$\n$P(M \\mid C) = \\frac{70}{350} = 0.20$\n$P(M \\mid D) = \\frac{21}{150} = 0.14$\n\nTo find the overall probability of a randomly selected row showing mildew, $P(M)$, we apply the Law of Total Probability, summing the joint probabilities for each block:\n\n$$P(M) = P(M \\mid A)P(A) + P(M \\mid B)P(B) + P(M \\mid C)P(C) + P(M \\mid D)P(D)$$\n\n$$P(M) = (0.04)(0.20) + (0.09)(0.30) + (0.20)(0.35) + (0.14)(0.15)$$\n$$P(M) = 0.008 + 0.027 + 0.070 + 0.021$$\n$$P(M) = 0.126$$\n\nThe joint probabilities for a row being in a specific block and showing mildew are:\n\n$$\nP(A \\cap M) = P(M \\mid A)P(A) = 0.008\n$$\n$$\nP(B \\cap M) = P(M \\mid B)P(B) = 0.027\n$$\n$$\nP(C \\cap M) = P(M \\mid C)P(C) = 0.070\n$$\n$$\nP(D \\cap M) = P(M \\mid D)P(D) = 0.021\n$$\n\nNote that the sum of these joint probabilities equals $P(M)$: $0.008 + 0.027 + 0.070 + 0.021 = 0.126$.",
+    "title_de_existing": "Mehltau in vier Weinbergsblöcken",
+    "context_de_existing": "Ein Weinberg hat vier Blöcke im Reihenverhältnis 4:6:7:3 für A:B:C:D. Mehltau-Befall: Block A 8 von 200 Reihen, B 27 von 300, C 70 von 350, D 21 von 150. Eine zufällig ausgewählte Reihe zeigt Mehltau.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine Reihe Mehltau zeigt, ist größer als 10%.",
+      "Die Wahrscheinlichkeit, dass die Reihe in Block C liegt und Mehltau zeigt, beträgt 7%.",
+      "Die Wahrscheinlichkeit, dass die Reihe in Block C liegt, gegeben Mehltau, ist größer als 60%.",
+      "Die Wahrscheinlichkeit, dass eine Reihe keinen Mehltau zeigt, ist gleich 1 minus der Wahrscheinlichkeit für Mehltau.",
+      "Die Wahrscheinlichkeit, dass die Reihe in Block B liegt, gegeben Mehltau und bekannt nicht in Block C, ist größer als 45%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine Reihe Mehltau zeigt, ist größer als 10%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M) = 0.126\n$$\n\n$$\n0.126 = 12.6\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit, dass die Reihe in Block C liegt und Mehltau zeigt, beträgt 7%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(C \\cap M) = P(C) \\times P(M \\mid C)\n$$\n\n$$\nP(C \\cap M) = 0.35 \\times 0.20\n$$\n\n$$\n0.35 \\times 0.2 = 0.07\n$$\n\n$$\nP(C \\cap M) = 0.07\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass die Reihe in Block C liegt, gegeben Mehltau, ist größer als 60%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(C \\mid M) = \\frac{P(C \\cap M)}{P(M)}\n$$\n\n$$\nP(C \\mid M) = \\frac{0.070}{0.126}\n$$\n\n$$\nP(C \\mid M) \\approx 0.5556\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass eine Reihe keinen Mehltau zeigt, ist gleich 1 minus der Wahrscheinlichkeit für Mehltau. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass die Reihe in Block B liegt, gegeben Mehltau und bekannt nicht in Block C, ist größer als 45%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B \\mid M \\cap C^c) = \\frac{P(B \\cap M \\cap C^c)}{P(M \\cap C^c)}\n$$\n\n$$\nP(M \\cap C^c) = P(A \\cap M) + P(B \\cap M) + P(D \\cap M)\n$$\n\n$$\nP(M \\cap C^c) = 0.008 + 0.027 + 0.021\n$$\n\n$$\n0.008 + 0.027 = 0.035\n$$\n\n$$\n0.035 + 0.021 = 0.056\n$$\n\n$$\nP(M \\cap C^c) = 0.056\n$$\n\n$$\nP(B \\mid M \\cap C^c) = \\frac{0.027}{0.056}\n$$\n\n$$\nP(B \\mid M \\cap C^c) \\approx 0.4821\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Weinberg hat vier Blöcke im Reihenverhältnis 4:6:7:3 für A:B:C:D. Mehltau-Befall: Block A 8 von 200 Reihen, B 27 von 300, C 70 von 350, D 21 von 150. Eine zufällig ausgewählte Reihe zeigt Mehltau. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(A) = \\frac{4}{20} = 0.20\n$$\n\n$$\nP(B) = \\frac{6}{20} = 0.30\n$$\n\n$$\nP(C) = \\frac{7}{20} = 0.35\n$$\n\n$$\nP(D) = \\frac{3}{20} = 0.15\n$$\n\n$$P(M) = P(M \\mid A)P(A) + P(M \\mid B)P(B) + P(M \\mid C)P(C) + P(M \\mid D)P(D)$$\n\n$$P(M) = (0.04)(0.20) + (0.09)(0.30) + (0.20)(0.35) + (0.14)(0.15)$$\n\n$$P(M) = 0.008 + 0.027 + 0.070 + 0.021$$\n\n$$P(M) = 0.126$$\n\n$$\nP(A \\cap M) = P(M \\mid A)P(A) = 0.008\n$$\n\n$$\nP(B \\cap M) = P(M \\mid B)P(B) = 0.027\n$$\n\n$$\nP(C \\cap M) = P(M \\mid C)P(C) = 0.070\n$$\n\n$$\nP(D \\cap M) = P(M \\mid D)P(D) = 0.021\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.193",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Irregular Blankets from Two Makers",
+    "context_en": "Two manufacturers supply blankets to emergency relief organizations. Manufacturer A supplies 3,000 blankets, of which 4% are irregular in workmanship. Manufacturer B supplies 2,400 blankets, of which 7% are found to be irregular. A blanket is selected at random and found to be irregular.",
+    "statements_en": [
+      "The probability that a blanket is irregular is greater than 5%.",
+      "The number of irregular blankets from Manufacturer B is greater than the number of irregular blankets from Manufacturer A.",
+      "The probability that the blanket came from Manufacturer B, given it is irregular is greater than 60%.",
+      "The probability that the blanket came from Manufacturer A, given it is irregular equals 1 minus the probability that the blanket came from Manufacturer B, given it is irregular.",
+      "The probability that a randomly chosen blanket, irregular or not, came from Manufacturer A is less than 50%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability that a randomly selected blanket is irregular is found using the law of total probability, summing the probabilities of being irregular from each manufacturer, weighted by the proportion of blankets from that manufacturer. The event $I$ (irregular) can occur either by selecting a blanket from A and it being irregular, or from B and it being irregular.\n\n$$\nP(I) = P(I \\mid M_A)P(M_A) + P(I \\mid M_B)P(M_B)\n$$\n\nAlternatively, it is the total number of irregular blankets divided by the total number of blankets:\n\n$$\nP(I) = \\frac{N_I}{N}\n$$\n\n$$\nP(I) = \\frac{288}{5400}\n$$\n\n$$\nP(I) = \\frac{288 \\div 72}{5400 \\div 72} = \\frac{4}{75}\n$$\n\n$$\nP(I) \\approx 0.05333 = 5.333\\%\n$$\n\nThe claim is that $P(I) > 5\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nTo compare the number of irregular blankets from each manufacturer, we use the pre-calculated number of irregular blankets for each. The number of irregular blankets from Manufacturer A is $N_I(M_A) = 120$. The number of irregular blankets from Manufacturer B is $N_I(M_B) = 168$. Comparing these values directly:\n\n$$\nN_I(M_B) = 168\n$$\n\n$$\nN_I(M_A) = 120\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe probability that the blanket came from Manufacturer B, given it is irregular, is a conditional probability $P(M_B \\mid I)$. This can be calculated using Bayes' Theorem, which states:\n\n$$\nP(M_B \\mid I) = \\frac{P(I \\mid M_B)P(M_B)}{P(I)}\n$$\n\nWe have $P(I \\mid M_B) = 0.07$, $P(M_B) = \\frac{4}{9}$, and $P(I) = \\frac{4}{75}$.\n\n$$\nP(M_B \\mid I) = \\frac{0.07 \\times \\frac{4}{9}}{\\frac{4}{75}}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{0.07 \\times 75}{9}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{5.25}{9}\n$$\n\n$$\nP(M_B \\mid I) \\approx 0.58333 = 58.333\\%\n$$\n\nAlternatively, this is the proportion of irregular blankets that come from Manufacturer B:\n\n$$\nP(M_B \\mid I) = \\frac{N_I(M_B)}{N_I}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{168}{288}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{168 \\div 24}{288 \\div 24} = \\frac{7}{12}\n$$\n\n$$\nP(M_B \\mid I) \\approx 0.58333 = 58.333\\%\n$$\n\nThe claim states that $P(M_B \\mid I) > 60\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe event that a blanket came from Manufacturer A, given it is irregular ($M_A \\mid I$), and the event that it came from Manufacturer B, given it is irregular ($M_B \\mid I$), are complementary events because a blanket must come from either Manufacturer A or Manufacturer B, and these are mutually exclusive sources. Therefore, their probabilities must sum to 1.\n\n$$\nP(M_A \\mid I) + P(M_B \\mid I) = 1\n$$\n\nRearranging this equation gives the relationship in the claim:\n\n$$\nP(M_A \\mid I) = 1 - P(M_B \\mid I)\n$$\n\n.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThe probability that a randomly chosen blanket (irregular or not) came from Manufacturer A is the prior probability $P(M_A)$. This is the proportion of all blankets that were supplied by Manufacturer A.\n\n$$\nP(M_A) = \\frac{3000}{5400}\n$$\n\n$$\nP(M_A) = \\frac{5}{9}\n$$\n\n$$\nP(M_A) \\approx 0.5556 = 55.56\\%\n$$\n\nThe claim is that $P(M_A) < 50\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Two manufacturers, A and B, supply blankets. Manufacturer A provides 3,000 blankets with a 4% irregularity rate. Manufacturer B provides 2,400 blankets with a 7% irregularity rate. A blanket is selected at random and found to be irregular. This is a problem involving conditional probability and Bayes' Theorem. We define $M_A$ as the event that a blanket comes from Manufacturer A, and $M_B$ as the event that a blanket comes from Manufacturer B. Let $I$ be the event that a blanket is irregular.\n\nFirst, we determine the total number of blankets and the prior probabilities for each manufacturer.\n\nTotal number of blankets: $N = 3000 + 2400 = 5400$\n\nPrior probability of selecting a blanket from Manufacturer A:\n$$\nP(M_A) = \\frac{3000}{5400} = \\frac{5}{9} \\approx 0.5556\n$$\n\nPrior probability of selecting a blanket from Manufacturer B:\n$$\nP(M_B) = \\frac{2400}{5400} = \\frac{4}{9} \\approx 0.4444\n$$\n\nNext, we calculate the number of irregular blankets from each manufacturer:\n\nNumber of irregular blankets from A: $N_I(M_A) = 3000 \\times 0.04 = 120$\n\nNumber of irregular blankets from B: $N_I(M_B) = 2400 \\times 0.07 = 168$\n\nTotal number of irregular blankets: $N_I = N_I(M_A) + N_I(M_B) = 120 + 168 = 288$\n\nThis gives us the conditional probabilities of irregularity given the manufacturer:\n$$P(I \\mid M_A) = 0.04$$\n$$P(I \\mid M_B) = 0.07$$",
+    "title_de_existing": "Unregelmäßige Decken von zwei Herstellern",
+    "context_de_existing": "Zwei Hersteller liefern Decken an Hilfsorganisationen. Hersteller A liefert 3000 Decken, davon 4% unregelmäßig. Hersteller B liefert 2400, davon 7% unregelmäßig. Eine Decke wird zufällig ausgewählt und ist unregelmäßig.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine Decke unregelmäßig ist, ist größer als 5%.",
+      "Die Zahl unregelmäßiger Decken von Hersteller B ist größer als die von Hersteller A.",
+      "Die Wahrscheinlichkeit für Hersteller B gegeben unregelmäßig ist größer als 60%.",
+      "Die Wahrscheinlichkeit für Hersteller A gegeben unregelmäßig ist gleich 1 minus der Wahrscheinlichkeit für Hersteller B gegeben unregelmäßig.",
+      "Die Wahrscheinlichkeit, dass eine zufällig gewählte Decke, unregelmäßig oder nicht, von Hersteller A stammt, ist kleiner als 50%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine Decke unregelmäßig ist, ist größer als 5%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(I) = P(I \\mid M_A)P(M_A) + P(I \\mid M_B)P(M_B)\n$$\n\n$$\nP(I) = \\frac{N_I}{N}\n$$\n\n$$\nP(I) = \\frac{288}{5400}\n$$\n\n$$\nP(I) = \\frac{288 \\div 72}{5400 \\div 72} = \\frac{4}{75}\n$$\n\n$$\nP(I) \\approx 0.05333 = 5.333\\%\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Zahl unregelmäßiger Decken von Hersteller B ist größer als die von Hersteller A. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN_I(M_B) = 168\n$$\n\n$$\nN_I(M_A) = 120\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit für Hersteller B gegeben unregelmäßig ist größer als 60%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(M_B \\mid I) = \\frac{P(I \\mid M_B)P(M_B)}{P(I)}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{0.07 \\times \\frac{4}{9}}{\\frac{4}{75}}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{0.07 \\times 75}{9}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{5.25}{9}\n$$\n\n$$\nP(M_B \\mid I) \\approx 0.58333 = 58.333\\%\n$$\n\n$$\nP(M_B \\mid I) = \\frac{N_I(M_B)}{N_I}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{168}{288}\n$$\n\n$$\nP(M_B \\mid I) = \\frac{168 \\div 24}{288 \\div 24} = \\frac{7}{12}\n$$\n\n$$\nP(M_B \\mid I) \\approx 0.58333 = 58.333\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit für Hersteller A gegeben unregelmäßig ist gleich 1 minus der Wahrscheinlichkeit für Hersteller B gegeben unregelmäßig. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(M_A \\mid I) + P(M_B \\mid I) = 1\n$$\n\n$$\nP(M_A \\mid I) = 1 - P(M_B \\mid I)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass eine zufällig gewählte Decke, unregelmäßig oder nicht, von Hersteller A stammt, ist kleiner als 50%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(M_A) = \\frac{3000}{5400}\n$$\n\n$$\nP(M_A) = \\frac{5}{9}\n$$\n\n$$\nP(M_A) \\approx 0.5556 = 55.56\\%\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Zwei Hersteller liefern Decken an Hilfsorganisationen. Hersteller A liefert 3000 Decken, davon 4% unregelmäßig. Hersteller B liefert 2400, davon 7% unregelmäßig. Eine Decke wird zufällig ausgewählt und ist unregelmäßig. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(M_A) = \\frac{3000}{5400} = \\frac{5}{9} \\approx 0.5556\n$$\n\n$$\nP(M_B) = \\frac{2400}{5400} = \\frac{4}{9} \\approx 0.4444\n$$\n\n$$P(I \\mid M_A) = 0.04$$\n\n$$P(I \\mid M_B) = 0.07$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.195",
+    "short_letters": [
+      0,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Face Masks That Failed the Filtration Test",
+    "context_en": "A hospital network distributed 5,000 face masks this month. Of these, 3,200 came from Producer X and the remaining 1,800 came from Producer Y. A quality audit found that 2% of Producer X's masks and 6% of Producer Y's masks failed to meet filtration standards. A mask is pulled from the audit records and found to have failed.",
+    "statements_en": [
+      "The probability that a mask fails to meet filtration standards is greater than 3%.",
+      "More than 100 of Producer Y's masks failed the filtration standard.",
+      "The probability that a failing mask came from Producer Y is greater than 60%.",
+      "The probability that a failing mask came from Producer X equals 1 minus the probability that a failing mask came from Producer Y.",
+      "The probability that a randomly distributed mask, regardless of quality, came from Producer X is greater than 60%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe probability of a mask failing to meet filtration standards is the overall failure rate $P(F)$ for any randomly chosen mask from the total supply. From the overview, we calculated this probability:\n\n$$\nP(F) = 0.0344\n$$\n\nThe claim states this probability is greater than $3\\% = 0.03$.\n\n$$\n0.0344 > 0.03\n$$\n\n.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe number of masks from Producer Y that failed the filtration standard is the product of the total masks from Producer Y and its failure rate. From the overview, this calculation was performed:\n\n$$\n\\text{Failed}_Y = N_Y \\cdot P(F|Y)\n$$\n\n$$\n\\text{Failed}_Y = 1800 \\cdot 0.06\n$$\n\n$$\n1800 \\times 0.06 = 108\n$$\n\nThe claim states this number is greater than 100.\n\n$$\n108 > 100\n$$\n\n.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe probability that a failing mask came from Producer Y is a conditional probability, $P(Y|F)$, which we calculated using Bayes' theorem in the overview:\n\n$$\nP(Y|F) \\approx 0.6279\n$$\n\nThe claim states this probability is greater than $60\\% = 0.60$.\n\n$$\n0.6279 > 0.60\n$$\n\n.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThe event that a mask failed, $F$, partitions the sample space of masks into those from Producer X and those from Producer Y. Since these are the only two producers, a mask that failed must have come from either Producer X or Producer Y, and these two sources are mutually exclusive. Therefore, the conditional probabilities of origin given failure must sum to 1:\n\n$$\nP(X|F) + P(Y|F) = 1\n$$\n\nRearranging this equation gives:\n\n$$\nP(X|F) = 1 - P(Y|F)\n$$\n\n.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nThe probability that a randomly distributed mask, regardless of its quality, came from Producer X is simply the proportion of masks supplied by Producer X to the total supply, $P(X)$. From the overview, this proportion was calculated:\n\n$$\nP(X) = \\frac{N_X}{N} = 0.64\n$$\n\nThe claim states this probability is greater than $60\\% = 0.60$.\n\n$$\n0.64 > 0.60\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A hospital network received masks from two producers: Producer X supplied $N_X = 3200$ masks and Producer Y supplied $N_Y = 1800$ masks. The total number of masks is $N = N_X + N_Y = 3200 + 1800 = 5000$. A quality audit found that a proportion of masks from each producer failed filtration standards: $P(F|X) = 0.02$ for Producer X and $P(F|Y) = 0.06$ for Producer Y. We want to evaluate statements about these failure rates and origins.\n\nFirst, we establish the proportion of masks from each producer in the total supply:\n$$\nP(X) = \\frac{N_X}{N} = \\frac{3200}{5000} = 0.64\n$$\n$$\nP(Y) = \\frac{N_Y}{N} = \\frac{1800}{5000} = 0.36\n$$\n\nThe total number of failed masks from each producer are:\n$$\n\\text{Failed}_X = N_X \\cdot P(F|X) = 3200 \\cdot 0.02 = 64\n$$\n$$\n\\text{Failed}_Y = N_Y \\cdot P(F|Y) = 1800 \\cdot 0.06 = 108\n$$\n\nThe total number of failed masks in the entire batch is $\\text{Failed}_{Total} = \\text{Failed}_X + \\text{Failed}_Y = 64 + 108 = 172$.\n\nUsing the law of total probability, the overall probability that a randomly chosen mask fails ($P(F)$) is the sum of the probabilities of failing from each producer, weighted by their proportions:\n$$P(F) = P(F|X)P(X) + P(F|Y)P(Y)$$\n$$P(F) = (0.02)(0.64) + (0.06)(0.36)$$\n$$P(F) = 0.0128 + 0.0216$$\n$$P(F) = 0.0344$$\nThis can also be expressed as the total failed masks divided by the total masks:\n$$\nP(F) = \\frac{\\text{Failed}_{Total}}{N} = \\frac{172}{5000} = 0.0344\n$$\n\nTo find the conditional probability that a failing mask came from a specific producer, we use Bayes' theorem:\n$$P(Y|F) = \\frac{P(F|Y)P(Y)}{P(F)}$$\n$$\nP(Y|F) = \\frac{(0.06)(0.36)}{0.0344} = \\frac{0.0216}{0.0344} \\approx 0.6279\n$$\nSimilarly for Producer X:\n$$P(X|F) = \\frac{P(F|X)P(X)}{P(F)}$$\n$$\nP(X|F) = \\frac{(0.02)(0.64)}{0.0344} = \\frac{0.0128}{0.0344} \\approx 0.3721\n$$\nNote that $P(X|F) + P(Y|F) = 0.3721 + 0.6279 = 1$.",
+    "title_de_existing": "Masken, die den Filtertest nicht bestanden",
+    "context_de_existing": "Ein Klinikverbund verteilte diesen Monat 5000 Gesichtsmasken. Davon kamen 3200 von Hersteller X und 1800 von Hersteller Y. Eine Qualitätsprüfung ergab, dass 2% der Masken von X und 6% der Masken von Y die Filterstandards nicht erfüllten. Eine Maske aus den Prüfungsunterlagen hat den Test nicht bestanden.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass eine Maske die Filterstandards nicht erfüllt, ist größer als 3%.",
+      "Mehr als 100 Masken von Hersteller Y haben den Filterstandard nicht erfüllt.",
+      "Die Wahrscheinlichkeit, dass eine durchgefallene Maske von Hersteller Y stammt, ist größer als 60%.",
+      "Die Wahrscheinlichkeit, dass eine durchgefallene Maske von Hersteller X stammt, ist gleich 1 minus der Wahrscheinlichkeit für Hersteller Y.",
+      "Die Wahrscheinlichkeit, dass eine zufällig verteilte Maske, unabhängig von der Qualität, von Hersteller X stammt, ist größer als 60%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit, dass eine Maske die Filterstandards nicht erfüllt, ist größer als 3%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F) = 0.0344\n$$\n\n$$\n0.0344 > 0.03\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Mehr als 100 Masken von Hersteller Y haben den Filterstandard nicht erfüllt. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\text{Failed}_Y = N_Y \\cdot P(F|Y)\n$$\n\n$$\n\\text{Failed}_Y = 1800 \\cdot 0.06\n$$\n\n$$\n1800 \\times 0.06 = 108\n$$\n\n$$\n108 > 100\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit, dass eine durchgefallene Maske von Hersteller Y stammt, ist größer als 60%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(Y|F) \\approx 0.6279\n$$\n\n$$\n0.6279 > 0.60\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass eine durchgefallene Maske von Hersteller X stammt, ist gleich 1 minus der Wahrscheinlichkeit für Hersteller Y. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X|F) + P(Y|F) = 1\n$$\n\n$$\nP(X|F) = 1 - P(Y|F)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass eine zufällig verteilte Maske, unabhängig von der Qualität, von Hersteller X stammt, ist größer als 60%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(X) = \\frac{N_X}{N} = 0.64\n$$\n\n$$\n0.64 > 0.60\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Klinikverbund verteilte diesen Monat 5000 Gesichtsmasken. Davon kamen 3200 von Hersteller X und 1800 von Hersteller Y. Eine Qualitätsprüfung ergab, dass 2% der Masken von X und 6% der Masken von Y die Filterstandards nicht erfüllten. Eine Maske aus den Prüfungsunterlagen hat den Test nicht bestanden. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(X) = \\frac{N_X}{N} = \\frac{3200}{5000} = 0.64\n$$\n\n$$\nP(Y) = \\frac{N_Y}{N} = \\frac{1800}{5000} = 0.36\n$$\n\n$$\n\\text{Failed}_X = N_X \\cdot P(F|X) = 3200 \\cdot 0.02 = 64\n$$\n\n$$\n\\text{Failed}_Y = N_Y \\cdot P(F|Y) = 1800 \\cdot 0.06 = 108\n$$\n\n$$P(F) = P(F|X)P(X) + P(F|Y)P(Y)$$\n\n$$P(F) = (0.02)(0.64) + (0.06)(0.36)$$\n\n$$P(F) = 0.0128 + 0.0216$$\n\n$$P(F) = 0.0344$$\n\n$$\nP(F) = \\frac{\\text{Failed}_{Total}}{N} = \\frac{172}{5000} = 0.0344\n$$\n\n$$P(Y|F) = \\frac{P(F|Y)P(Y)}{P(F)}$$\n\n$$\nP(Y|F) = \\frac{(0.06)(0.36)}{0.0344} = \\frac{0.0216}{0.0344} \\approx 0.6279\n$$\n\n$$P(X|F) = \\frac{P(F|X)P(X)}{P(F)}$$\n\n$$\nP(X|F) = \\frac{(0.02)(0.64)}{0.0344} = \\frac{0.0128}{0.0344} \\approx 0.3721\n$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.196",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Underweight Flour Sacks from Two Mills",
+    "context_en": "A bakery chain sources flour from two mills. Mill Northgate delivered 900 sacks last quarter, and inspectors found 36 of them underweight. Mill Riverside delivered 600 sacks, and inspectors found 54 of them underweight. A sack from last quarter's deliveries is chosen at random and found to be underweight.",
+    "statements_en": [
+      "The probability that a sack is underweight is greater than 8%.",
+      "The underweight rate at Mill Riverside is more than three times the underweight rate at Mill Northgate.",
+      "The probability that the sack came from Mill Riverside, given it is underweight is greater than 65%.",
+      "The probability that the sack came from Mill Northgate, given it is underweight is greater than the probability that the sack came from Mill Riverside, given it is underweight.",
+      "The probability that a sack, underweight or not, was delivered by Mill Northgate is greater than 55%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability of a sack being underweight is the overall rate across all deliveries. We calculate this using the law of total probability, summing the contribution from each mill.\n\n$$\nP(U) = P(U \\mid N)P(N) + P(U \\mid R)P(R)\n$$\n\n$$\nP(U) = (0.04)(0.6) + (0.09)(0.4)\n$$\n\n$$\nP(U) = 0.024 + 0.036\n$$\n\n$$\n0.024 + 0.036 = 0.06 = 6\\%\n$$\n\n.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nThe underweight rate at Mill Riverside is $P(U \\mid R) = 0.09$. The underweight rate at Mill Northgate is $P(U \\mid N) = 0.04$. The claim compares these rates.\n\nWe calculate the ratio of the two rates:\n\n$$\n\\frac{P(U \\mid R)}{P(U \\mid N)} = \\frac{0.09}{0.04} = 2.25\n$$\n\n.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nThis is a conditional probability, asking for the probability that the sack came from Mill Riverside, given that it is underweight. We use Bayes' Theorem for this:\n\n$$\nP(R \\mid U) = \\frac{P(U \\mid R)P(R)}{P(U)}\n$$\n\nUsing the values calculated in the overview:\n\n$$\nP(R \\mid U) = \\frac{(0.09)(0.4)}{0.06}\n$$\n\n$$\nP(R \\mid U) = \\frac{0.036}{0.06}\n$$\n\n$$\nP(R \\mid U) = 0.6 = 60\\%\n$$\n\n.\n\nSo the statement is False.\n",
+      "**D.** → False\n\nThe claim compares two conditional probabilities given that a sack is underweight. We need to calculate $P(N \\mid U)$ and $P(R \\mid U)$. We already have $P(R \\mid U) = 0.6$ from part C.\n\nFor $P(N \\mid U)$, we use Bayes' Theorem:\n\n$$\nP(N \\mid U) = \\frac{P(U \\mid N)P(N)}{P(U)}\n$$\n\nUsing the values calculated in the overview:\n\n$$\nP(N \\mid U) = \\frac{(0.04)(0.6)}{0.06}\n$$\n\n$$\nP(N \\mid U) = \\frac{0.024}{0.06}\n$$\n\n$$\nP(N \\mid U) = 0.4 = 40\\%\n$$\n\nWe compare $P(N \\mid U) = 40\\%$ with $P(R \\mid U) = 60\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis statement refers to the prior probability of a sack being from Mill Northgate, without any information about its weight. This is simply the proportion of sacks delivered by Mill Northgate out of the total.\n\n$$\nP(N) = \\frac{\\text{sacks from Northgate}}{\\text{total sacks}} = \\frac{900}{1500}\n$$\n\n$$\nP(N) = 0.6 = 60\\%\n$$\n\n.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A bakery chain sources flour from two mills, Northgate (N) and Riverside (R). The total number of sacks delivered last quarter was $900$ from Northgate and $600$ from Riverside, for a grand total of $900 + 600 = 1500$ sacks. Out of these, $36$ sacks from Northgate and $54$ sacks from Riverside were found to be underweight (U).\n\nWe define the following probabilities for choosing a sack at random from the total delivery:\n\nThe probability that a randomly chosen sack came from Mill Northgate is:\n$$\nP(N) = \\frac{\\text{sacks from Northgate}}{\\text{total sacks}} = \\frac{900}{1500} = 0.6\n$$\n\nThe probability that a randomly chosen sack came from Mill Riverside is:\n$$\nP(R) = \\frac{\\text{sacks from Riverside}}{\\text{total sacks}} = \\frac{600}{1500} = 0.4\n$$\n\nThese are the prior probabilities for the source of a sack. Next, we determine the conditional probabilities of a sack being underweight, given its source:\n\nThe underweight rate for Mill Northgate is:\n$$\nP(U \\mid N) = \\frac{\\text{underweight sacks from Northgate}}{\\text{sacks from Northgate}} = \\frac{36}{900} = 0.04\n$$\n\nThe underweight rate for Mill Riverside is:\n$$\nP(U \\mid R) = \\frac{\\text{underweight sacks from Riverside}}{\\text{sacks from Riverside}} = \\frac{54}{600} = 0.09\n$$\n\nUsing the law of total probability, the overall probability that a randomly chosen sack is underweight is:\n$$P(U) = P(U \\mid N)P(N) + P(U \\mid R)P(R)$$\n$$P(U) = (0.04)(0.6) + (0.09)(0.4)$$\n$$P(U) = 0.024 + 0.036$$\n$$P(U) = 0.06$$",
+    "title_de_existing": "Untergewichtige Mehlsäcke aus zwei Mühlen",
+    "context_de_existing": "Eine Bäckereikette bezieht Mehl aus zwei Mühlen. Mühle Northgate lieferte im letzten Quartal 900 Säcke, davon 36 untergewichtig. Mühle Riverside lieferte 600 Säcke, davon 54 untergewichtig. Ein Sack aus den Lieferungen des letzten Quartals wird zufällig gewählt und ist untergewichtig.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Sack untergewichtig ist, ist größer als 8%.",
+      "Die Untergewichtsrate bei Mühle Riverside ist mehr als dreimal so groß wie bei Mühle Northgate.",
+      "Die Wahrscheinlichkeit, dass der Sack von Mühle Riverside stammt, gegeben untergewichtig, ist größer als 65%.",
+      "Die Wahrscheinlichkeit, dass der Sack von Mühle Northgate stammt, gegeben untergewichtig, ist größer als die Wahrscheinlichkeit für Mühle Riverside gegeben untergewichtig.",
+      "Die Wahrscheinlichkeit, dass ein Sack, untergewichtig oder nicht, von Mühle Northgate geliefert wurde, ist größer als 55%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit, dass ein Sack untergewichtig ist, ist größer als 8%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(U) = P(U \\mid N)P(N) + P(U \\mid R)P(R)\n$$\n\n$$\nP(U) = (0.04)(0.6) + (0.09)(0.4)\n$$\n\n$$\nP(U) = 0.024 + 0.036\n$$\n\n$$\n0.024 + 0.036 = 0.06 = 6\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Falsch\n\nAussage B: Die Untergewichtsrate bei Mühle Riverside ist mehr als dreimal so groß wie bei Mühle Northgate. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\frac{P(U \\mid R)}{P(U \\mid N)} = \\frac{0.09}{0.04} = 2.25\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der Sack von Mühle Riverside stammt, gegeben untergewichtig, ist größer als 65%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(R \\mid U) = \\frac{P(U \\mid R)P(R)}{P(U)}\n$$\n\n$$\nP(R \\mid U) = \\frac{(0.09)(0.4)}{0.06}\n$$\n\n$$\nP(R \\mid U) = \\frac{0.036}{0.06}\n$$\n\n$$\nP(R \\mid U) = 0.6 = 60\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass der Sack von Mühle Northgate stammt, gegeben untergewichtig, ist größer als die Wahrscheinlichkeit für Mühle Riverside gegeben untergewichtig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(N \\mid U) = \\frac{P(U \\mid N)P(N)}{P(U)}\n$$\n\n$$\nP(N \\mid U) = \\frac{(0.04)(0.6)}{0.06}\n$$\n\n$$\nP(N \\mid U) = \\frac{0.024}{0.06}\n$$\n\n$$\nP(N \\mid U) = 0.4 = 40\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Die Wahrscheinlichkeit, dass ein Sack, untergewichtig oder nicht, von Mühle Northgate geliefert wurde, ist größer als 55%. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(N) = \\frac{\\text{Säcke von Northgate}}{\\text{gesamt sacks}} = \\frac{900}{1500}\n$$\n\n$$\nP(N) = 0.6 = 60\\%\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Eine Bäckereikette bezieht Mehl aus zwei Mühlen. Mühle Northgate lieferte im letzten Quartal 900 Säcke, davon 36 untergewichtig. Mühle Riverside lieferte 600 Säcke, davon 54 untergewichtig. Ein Sack aus den Lieferungen des letzten Quartals wird zufällig gewählt und ist untergewichtig. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(N) = \\frac{\\text{Säcke von Northgate}}{\\text{gesamt sacks}} = \\frac{900}{1500} = 0.6\n$$\n\n$$\nP(R) = \\frac{\\text{Säcke von Riverside}}{\\text{gesamt sacks}} = \\frac{600}{1500} = 0.4\n$$\n\n$$\nP(U \\mid N) = \\frac{\\text{untergewichtige Säcke von Northgate}}{\\text{Säcke von Northgate}} = \\frac{36}{900} = 0.04\n$$\n\n$$\nP(U \\mid R) = \\frac{\\text{underweight Säcke von Riverside}}{\\text{Säcke von Riverside}} = \\frac{54}{600} = 0.09\n$$\n\n$$P(U) = P(U \\mid N)P(N) + P(U \\mid R)P(R)$$\n\n$$P(U) = (0.04)(0.6) + (0.09)(0.4)$$\n\n$$P(U) = 0.024 + 0.036$$\n\n$$P(U) = 0.06$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.197",
+    "short_letters": [
+      0,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Aircraft Repairs Across Two Fleets",
+    "context_en": "A regional airline's fleet is made up of 50 aircraft from Manufacturer Falconix and 40 aircraft from Manufacturer Aerotown. Maintenance logs show that 8% of Falconix aircraft required unscheduled repairs last year, compared to 15% of Aerotown aircraft. An aircraft is selected from the maintenance log and did require an unscheduled repair.",
+    "statements_en": [
+      "The probability that an aircraft required an unscheduled repair is greater than 12%.",
+      "More Aerotown aircraft required repairs than Falconix aircraft did, in absolute number.",
+      "The probability that the aircraft is from Aerotown, given it needed a repair is greater than 65%.",
+      "The probability that the aircraft is from Falconix, given it needed a repair equals 1 minus the probability that the aircraft is from Aerotown, given it needed a repair.",
+      "The probability that an aircraft in the fleet, repaired or not, is from Falconix is greater than 60%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability that an aircraft required an unscheduled repair, $P(R)$, represents the overall rate of repairs across the entire fleet. We calculated this using the Law of Total Probability in the overview:\n\n$$\nP(R) = \\frac{1}{9}\n$$\n\nAs a percentage, this is:\n\n$$\nP(R) \\approx 0.1111 = 11.11\\%\n$$\n\nThe claim is that this probability is greater than $12\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nTo compare the absolute numbers, we multiply the count of aircraft from each manufacturer by their respective repair rates. For Falconix:\n\n$$\n\\text{Number of Falconix repairs} = 50 \\times 0.08\n$$\n\n$$\n50 \\times 0.08 = 4\n$$\n\n$$\n\\text{Number of Aerotown repairs} = 40 \\times 0.15\n$$\n\nFor Aerotown:\n\n$$\n40 \\times 0.15 = 6\n$$\n\nThe claim states that more Aerotown aircraft required repairs than Falconix aircraft.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim is about the conditional probability that an aircraft is from Aerotown, given that it needed a repair, which is $P(A \\mid R)$. We use Bayes' Theorem to calculate this:\n\n$$\nP(A \\mid R) = \\frac{P(R \\mid A) P(A)}{P(R)}\n$$\n\nWe substitute the values from the overview: $P(R \\mid A) = 0.15$, $P(A) = \\frac{4}{9}$, and $P(R) = \\frac{1}{9}$:\n\n$$\nP(A \\mid R) = \\frac{0.15 \\times \\frac{4}{9}}{\\frac{1}{9}}\n$$\n\n$$\nP(A \\mid R) = 0.15 \\times 4\n$$\n\n$$\n0.15 \\times 4 = 0.6\n$$\n\n$$\nP(A \\mid R) = 0.60\n$$\n\nThis means $P(A \\mid R) = 60\\%$. The claim states this probability is greater than $65\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nWhen an aircraft is selected from the maintenance log and it needed a repair, it must belong to either the Falconix fleet or the Aerotown fleet. These are mutually exclusive and exhaustive categories for the source of the aircraft. Therefore, the sum of their conditional probabilities, given that a repair occurred, must be 1:\n\n$$\nP(F \\mid R) + P(A \\mid R) = 1\n$$\n\nThis implies:\n\n$$\nP(F \\mid R) = 1 - P(A \\mid R)\n$$\n\nThe claim makes this exact statement.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThe probability that an aircraft (repaired or not) is from Falconix refers to the proportion of Falconix aircraft in the entire fleet. This is $P(F)$. From the problem setup in the overview:\n\n$$\nP(F) = \\frac{50}{90} = \\frac{5}{9}\n$$\n\nAs a percentage, this is:\n\n$$\nP(F) \\approx 0.5556 = 55.56\\%\n$$\n\nThe claim states that this probability is greater than $60\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A regional airline has two fleets: 50 aircraft from Manufacturer Falconix (F) and 40 from Manufacturer Aerotown (A). The total fleet size is $50 + 40 = 90$ aircraft.\n\nWe define $R$ as the event that an aircraft required unscheduled repairs. The problem provides conditional probabilities for repairs:\n*   $P(R \\mid F) = 0.08$ (8% of Falconix aircraft required repairs)\n*   $P(R \\mid A) = 0.15$ (15% of Aerotown aircraft required repairs)\n\nThe probabilities of an aircraft being from a specific manufacturer, when selected uniformly at random from the entire fleet, are:\n$$\nP(F) = \\frac{50}{90} = \\frac{5}{9}\n$$\n$$\nP(A) = \\frac{40}{90} = \\frac{4}{9}\n$$\n\nUsing the Law of Total Probability, the overall probability that a randomly selected aircraft (from the entire fleet) required an unscheduled repair is:\n$$P(R) = P(R \\mid F) P(F) + P(R \\mid A) P(A)$$\n$$P(R) = (0.08) \\left(\\frac{5}{9}\\right) + (0.15) \\left(\\frac{4}{9}\\right)$$\n$$P(R) = \\frac{0.40}{9} + \\frac{0.60}{9}$$\n$$P(R) = \\frac{1.00}{9}$$\n$$P(R) = \\frac{1}{9} \\approx 0.1111$$\n\nTo find the number of aircraft that required repairs from each manufacturer, we multiply the number of aircraft by their respective repair rates:\n*   Number of Falconix repairs: $50 \\times 0.08 = 4$\n*   Number of Aerotown repairs: $40 \\times 0.15 = 6$\n\nThe total number of repaired aircraft is $4 + 6 = 10$.",
+    "title_de_existing": "Flugzeugreparaturen in zwei Flotten",
+    "context_de_existing": "Die Flotte einer Regionalairline besteht aus 50 Flugzeugen von Hersteller Falconix und 40 von Hersteller Aerotown. Wartungsprotokolle zeigen: 8% der Falconix-Flugzeuge benötigten ungeplante Reparaturen im letzten Jahr, gegenüber 15% der Aerotown-Flugzeuge. Ein Flugzeug aus dem Wartungsprotokoll benötigte eine ungeplante Reparatur.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Flugzeug eine ungeplante Reparatur benötigte, ist größer als 12%.",
+      "Mehr Aerotown-Flugzeuge benötigten Reparaturen als Falconix-Flugzeuge (absolute Zahl).",
+      "Die Wahrscheinlichkeit, dass das Flugzeug von Aerotown stammt, gegeben Reparaturbedarf, ist größer als 65%.",
+      "Die Wahrscheinlichkeit, dass das Flugzeug von Falconix stammt, gegeben Reparaturbedarf, ist gleich 1 minus der Wahrscheinlichkeit für Aerotown gegeben Reparaturbedarf.",
+      "Die Wahrscheinlichkeit, dass ein Flugzeug in der Flotte, repariert oder nicht, von Falconix stammt, ist größer als 60%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit, dass ein Flugzeug eine ungeplante Reparatur benötigte, ist größer als 12%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(R) = \\frac{1}{9}\n$$\n\n$$\nP(R) \\approx 0.1111 = 11.11\\%\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Mehr Aerotown-Flugzeuge benötigten Reparaturen als Falconix-Flugzeuge (absolute Zahl). Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\text{Anzahl Falconix repairs} = 50 \\times 0.08\n$$\n\n$$\n50 \\times 0.08 = 4\n$$\n\n$$\n\\text{Anzahl Aerotown repairs} = 40 \\times 0.15\n$$\n\n$$\n40 \\times 0.15 = 6\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass das Flugzeug von Aerotown stammt, gegeben Reparaturbedarf, ist größer als 65%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(A \\mid R) = \\frac{P(R \\mid A) P(A)}{P(R)}\n$$\n\n$$\nP(A \\mid R) = \\frac{0.15 \\times \\frac{4}{9}}{\\frac{1}{9}}\n$$\n\n$$\nP(A \\mid R) = 0.15 \\times 4\n$$\n\n$$\n0.15 \\times 4 = 0.6\n$$\n\n$$\nP(A \\mid R) = 0.60\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit, dass das Flugzeug von Falconix stammt, gegeben Reparaturbedarf, ist gleich 1 minus der Wahrscheinlichkeit für Aerotown gegeben Reparaturbedarf. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(F \\mid R) + P(A \\mid R) = 1\n$$\n\n$$\nP(F \\mid R) = 1 - P(A \\mid R)\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass ein Flugzeug in der Flotte, repariert oder nicht, von Falconix stammt, ist größer als 60%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(F) = \\frac{50}{90} = \\frac{5}{9}\n$$\n\n$$\nP(F) \\approx 0.5556 = 55.56\\%\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Die Flotte einer Regionalairline besteht aus 50 Flugzeugen von Hersteller Falconix und 40 von Hersteller Aerotown. Wartungsprotokolle zeigen: 8% der Falconix-Flugzeuge benötigten ungeplante Reparaturen im letzten Jahr, gegenüber 15% der Aerotown-Flugzeuge. Ein Flugzeug aus dem Wartungsprotokoll benötigte eine ungeplante Reparatur. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(F) = \\frac{50}{90} = \\frac{5}{9}\n$$\n\n$$\nP(A) = \\frac{40}{90} = \\frac{4}{9}\n$$\n\n$$P(R) = P(R \\mid F) P(F) + P(R \\mid A) P(A)$$\n\n$$P(R) = (0.08) \\left(\\frac{5}{9}\\right) + (0.15) \\left(\\frac{4}{9}\\right)$$\n\n$$P(R) = \\frac{0.40}{9} + \\frac{0.60}{9}$$\n\n$$P(R) = \\frac{1.00}{9}$$\n\n$$P(R) = \\frac{1}{9} \\approx 0.1111$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.198",
+    "short_letters": [
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "title_en": "Defective Sheets from Two Paper Vendors",
+    "context_en": "A print shop received two large paper orders this month: 7,500 sheets from Vendor Ridgeline and 4,500 sheets from Vendor Somerset. Random sampling revealed that 3% of Ridgeline's sheets and 5% of Somerset's sheets had printing defects. A defective sheet is pulled from the sample.",
+    "statements_en": [
+      "The probability that a sheet has a printing defect is greater than 4%.",
+      "The number of defective sheets from Vendor Somerset is greater than the number of defective sheets from Vendor Ridgeline.",
+      "The probability that the defective sheet came from Vendor Ridgeline is greater than 55%.",
+      "The probability that the defective sheet came from Vendor Somerset is less than the probability that the defective sheet came from Vendor Ridgeline.",
+      "The probability that a sheet in the order, defective or not, came from Vendor Somerset is greater than 40%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability that a sheet has a printing defect is $P(D)$. From the solution overview, we calculated this using the Law of Total Probability:\n\n$$\nP(D) = 0.0375\n$$\n\nThis is $3.75\\%$. The statement claims this probability is greater than $4\\%$.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nTo compare the number of defective sheets from each vendor, we multiply each vendor's total sheets by their respective defect rate. The number of defective sheets from Vendor Ridgeline is:\n\n$$\n7,500 \\times 0.03 = 225\n$$\n\nThe number of defective sheets from Vendor Somerset is:\n\n$$\n4,500 \\times 0.05\n$$\n\nSince $225 \\not> 225$, the number of defective sheets from Vendor Somerset is not greater than the number of defective sheets from Vendor Ridgeline.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nWe need to find the probability that a defective sheet came from Vendor Ridgeline, $P(R \\mid D)$. This is a conditional probability calculated using Bayes' Theorem:\n\n$$\nP(R \\mid D) = \\frac{P(D \\mid R)P(R)}{P(D)}\n$$\n\nUsing the values calculated in the solution overview:\n\n$$\nP(R \\mid D) = \\frac{(0.03)(0.625)}{0.0375}\n$$\n\n$$\nP(R \\mid D) = \\frac{0.01875}{0.0375}\n$$\n\n$$\nP(R \\mid D) = 0.5\n$$\n\nThis probability is $50\\%$. The statement claims $P(R \\mid D)$ is greater than $55\\%$.\n\nSo the statement is False.\n",
+      "**D.** → False\n\nWe need to compare $P(S \\mid D)$ with $P(R \\mid D)$. We already calculated $P(R \\mid D) = 0.5$ in statement C. Now we calculate $P(S \\mid D)$:\n\n$$\nP(S \\mid D) = \\frac{P(D \\mid S)P(S)}{P(D)}\n$$\n\nUsing the values calculated in the solution overview:\n\n$$\nP(S \\mid D) = \\frac{(0.05)(0.375)}{0.0375}\n$$\n\n$$\nP(S \\mid D) = \\frac{0.01875}{0.0375}\n$$\n\n$$\nP(S \\mid D) = 0.5\n$$\n\nSo $P(S \\mid D) = 0.5$ and $P(R \\mid D) = 0.5$. The statement claims $P(S \\mid D) < P(R \\mid D)$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThe probability that a sheet came from Vendor Somerset, irrespective of its defect status, is $P(S)$. This is a prior probability, representing the proportion of sheets from Somerset in the entire order. From the solution overview:\n\n$$\nP(S) = \\frac{4,500}{12,000} = 0.375\n$$\n\nThis probability is $37.5\\%$. The statement claims this probability is greater than $40\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A print shop received 7,500 sheets from Vendor Ridgeline and 4,500 sheets from Vendor Somerset. The defect rates are $3\\%$ for Ridgeline sheets and $5\\%$ for Somerset sheets. We define the following events:\n\n*   $R$: a randomly selected sheet came from Vendor Ridgeline.\n*   $S$: a randomly selected sheet came from Vendor Somerset.\n*   $D$: a randomly selected sheet has a printing defect.\n\nThe total number of sheets received is $7,500 + 4,500 = 12,000$. The prior probabilities of a sheet coming from each vendor are:\n\n$$\nP(R) = \\frac{7,500}{12,000} = \\frac{15}{24} = \\frac{5}{8} = 0.625\n$$\n\n$$\nP(S) = \\frac{4,500}{12,000} = \\frac{9}{24} = \\frac{3}{8} = 0.375\n$$\n\nThe conditional probabilities of a sheet having a defect, given its vendor, are:\n\n$$P(D \\mid R) = 0.03$$\n\n$$P(D \\mid S) = 0.05$$\n\nTo find the overall probability of a sheet having a defect, $P(D)$, we use the Law of Total Probability:\n\n$$P(D) = P(D \\mid R)P(R) + P(D \\mid S)P(S)$$\n\n$$P(D) = (0.03)(0.625) + (0.05)(0.375)$$\n\n$$P(D) = 0.01875 + 0.01875$$\n\n$$P(D) = 0.0375$$\n\nSo, the overall probability of a sheet having a defect is $3.75\\%$. This also means the total number of defective sheets is $12,000 \\times 0.0375 = 450$.\n\nFrom Ridgeline, the number of defective sheets is $7,500 \\times 0.03 = 225$. From Somerset, the number of defective sheets is $4,500 \\times 0.05 = 225$. The total number of defective sheets is $225 + 225 = 450$.",
+    "title_de_existing": "Defekte Bögen von zwei Papierlieferanten",
+    "context_de_existing": "Eine Druckerei erhielt diesen Monat zwei große Papierlieferungen: 7500 Bögen von Lieferant Ridgeline und 4500 von Lieferant Somerset. Stichproben zeigten Druckfehler bei 3% der Ridgeline- und 5% der Somerset-Bögen. Ein defekter Bogen wird aus der Stichprobe gezogen.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit, dass ein Bogen einen Druckfehler hat, ist größer als 4%.",
+      "Die Zahl defekter Bögen von Lieferant Somerset ist größer als die von Lieferant Ridgeline.",
+      "Die Wahrscheinlichkeit, dass der defekte Bogen von Lieferant Ridgeline stammt, ist größer als 55%.",
+      "Die Wahrscheinlichkeit, dass der defekte Bogen von Lieferant Somerset stammt, ist kleiner als die Wahrscheinlichkeit für Lieferant Ridgeline.",
+      "Die Wahrscheinlichkeit, dass ein Bogen in der Lieferung, defekt oder nicht, von Lieferant Somerset stammt, ist größer als 40%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Die Wahrscheinlichkeit, dass ein Bogen einen Druckfehler hat, ist größer als 4%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(D) = 0.0375\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Falsch\n\nAussage B: Die Zahl defekter Bögen von Lieferant Somerset ist größer als die von Lieferant Ridgeline. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n7,500 \\times 0.03 = 225\n$$\n\n$$\n4,500 \\times 0.05\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Die Wahrscheinlichkeit, dass der defekte Bogen von Lieferant Ridgeline stammt, ist größer als 55%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(R \\mid D) = \\frac{P(D \\mid R)P(R)}{P(D)}\n$$\n\n$$\nP(R \\mid D) = \\frac{(0.03)(0.625)}{0.0375}\n$$\n\n$$\nP(R \\mid D) = \\frac{0.01875}{0.0375}\n$$\n\n$$\nP(R \\mid D) = 0.5\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit, dass der defekte Bogen von Lieferant Somerset stammt, ist kleiner als die Wahrscheinlichkeit für Lieferant Ridgeline. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S \\mid D) = \\frac{P(D \\mid S)P(S)}{P(D)}\n$$\n\n$$\nP(S \\mid D) = \\frac{(0.05)(0.375)}{0.0375}\n$$\n\n$$\nP(S \\mid D) = \\frac{0.01875}{0.0375}\n$$\n\n$$\nP(S \\mid D) = 0.5\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die Wahrscheinlichkeit, dass ein Bogen in der Lieferung, defekt oder nicht, von Lieferant Somerset stammt, ist größer als 40%. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S) = \\frac{4,500}{12,000} = 0.375\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Druckerei erhielt diesen Monat zwei große Papierlieferungen: 7500 Bögen von Lieferant Ridgeline und 4500 von Lieferant Somerset. Stichproben zeigten Druckfehler bei 3% der Ridgeline- und 5% der Somerset-Bögen. Ein defekter Bogen wird aus der Stichprobe gezogen. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\nP(R) = \\frac{7,500}{12,000} = \\frac{15}{24} = \\frac{5}{8} = 0.625\n$$\n\n$$\nP(S) = \\frac{4,500}{12,000} = \\frac{9}{24} = \\frac{3}{8} = 0.375\n$$\n\n$$P(D \\mid R) = 0.03$$\n\n$$P(D \\mid S) = 0.05$$\n\n$$P(D) = P(D \\mid R)P(R) + P(D \\mid S)P(S)$$\n\n$$P(D) = (0.03)(0.625) + (0.05)(0.375)$$\n\n$$P(D) = 0.01875 + 0.01875$$\n\n$$P(D) = 0.0375$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.199",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 1",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A casino dealer draws three cards from a standard deck without replacement. The probability that exactly two are aces is greater than $1.3\\%$.",
+      "A beverage survey finds 40 tea drinkers, 50 coffee drinkers, and 70 who drink at least one. The survey team says more than $20$ people drink both.",
+      "A courier audit covers 96 deliveries: 44 used premium service, 37 arrived late, and 13 were both. Among premium deliveries, the probability of a late arrival is greater than $29\\%$.",
+      "A charity ticket has net returns $-4$, $3$, and $12$ euros with probabilities $\\frac12$, $\\frac13$, and $\\frac16$. Its expected net return is greater than $1.5$ euros.",
+      "Factory A supplies $\\frac35$ of parts with defect rate $\\frac1{50}$; factory B supplies the rest with rate $\\frac1{20}$. Given a defect, the probability it came from A is greater than $37\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the probability that a three-card hand contains exactly two aces when cards are drawn without replacement from a standard deck. Every unordered three-card hand is equally likely, so the probability is the ratio of favorable hands to all hands.\n\n$$\nP(\\text{exactly two aces}) = \\frac{\\binom{4}{2}\\binom{48}{1}}{\\binom{52}{3}}\n$$\n\nThe total number of three-card hands is\n\n$$\n\\binom{52}{3} = \\dfrac{52!}{3!(52-3)!}\n$$\n\n$$\n\\dfrac{52!}{3!(49)!} = \\dfrac{52 \\cdot 51 \\cdot 50}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n52 \\cdot 51 = 2652\n$$\n\n$$\n2652 \\cdot 50 = 132600\n$$\n\n$$\n\\dfrac{132600}{6} = 22100\n$$\n\n$$\n\\binom{52}{3} = 22100\n$$\n\nThe favorable count chooses $2$ of the $4$ aces and $1$ of the $48$ non-aces:\n\n$$\n\\binom{4}{2}\\binom{48}{1}\n$$\n\n$$\n\\binom{4}{2} = \\dfrac{4!}{2!(4-2)!}\n$$\n\n$$\n\\dfrac{4!}{2!(2)!} = \\dfrac{4 \\cdot 3}{1 \\cdot 2}\n$$\n\n$$\n4 \\cdot 3 = 12\n$$\n\n$$\n\\dfrac{12}{2} = 6\n$$\n\n$$\n\\binom{4}{2} = 6\n$$\n\n$$\n\\binom{48}{1} = \\dfrac{48!}{1!(48-1)!}\n$$\n\n$$\n\\binom{48}{1} = 48 = 6\\times 48\n$$\n\n$$\n6 \\times 48 = 288\n$$\n\n$$\nP = \\frac{288}{22100} = \\frac{72}{5525}\n$$\n\n$$\n\\approx 0.013032\n$$\n\nExpressed as a percentage, this is approximately $1.303\\%$. The claim states that this probability is greater than $1.3\\%$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nThis claim asks how many surveyed people drink both tea and coffee. With $N(T)=40$, $N(C)=50$, and $N(T\\cup C)=70$, inclusion-exclusion recovers the intersection:\n\n$$\nN(T\\cup C) = N(T)+N(C)-N(T\\cap C)\n$$\n\n$$\n70 = 40+50-N(T\\cap C)\n$$\n\n$$\nN(T\\cap C) = 20\n$$\n\nExactly $20$ people drink both. The claim says more than $20$ drink both.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nThis claim asks for the conditional probability that a delivery arrived late given that it used premium service. Conditioning replaces the full sample space by the premium deliveries:\n\n$$\nP(L\\mid P) = \\frac{N(P\\cap L)}{N(P)}\n$$\n\nHere $N(P\\cap L)=13$ and $N(P)=44$, so\n\n$$\nP(L\\mid P) = \\frac{13}{44}\n$$\n\n$$\n\\approx 0.295455\n$$\n\nExpressed as a percentage, this is approximately $29.545\\%$. The claim states that this probability is greater than $29\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks for the expected net return of the charity ticket. The expectation is the probability-weighted sum of the three outcomes:\n\n$$\nE(X) = (-4)\\cdot\\frac{1}{2}+3\\cdot\\frac{1}{3}+12\\cdot\\frac{1}{6}\n$$\n\n$$\nE(X) = -2+1+2 = 1\n$$\n\nThe expected net return is $1$ euro. The claim states that it is greater than $1.5$ euros.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem normalizes each factory's joint weight by the total probability of a defect.\n\n$$\nP(A\\mid D) = \\frac{P(A)P(D\\mid A)}{P(D)}\n$$\n\nThe joint weights are\n\n$$\nP(A)P(D\\mid A) = \\frac{3}{5}\\cdot\\frac{1}{50} = \\frac{3}{250}\n$$\n\n$$\nP(B)P(D\\mid B) = \\frac{2}{5}\\cdot\\frac{1}{20} = \\frac{1}{50}\n$$\n\nBy the law of total probability,\n\n$$\nP(D) = \\frac{3}{250}+\\frac{1}{50} = \\frac{4}{125}\n$$\n\n$$\nP(A\\mid D) = \\frac{3/250}{4/125} = \\frac{3}{8} = 0.375\n$$\n\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Each letter is a separate mini-scenario from Chapter 12. Letter A counts three-card hands with exactly two aces. Letter B recovers a tea-and-coffee intersection by inclusion-exclusion. Letter C conditions late arrivals on premium deliveries. Letter D computes the expected net return of a discrete charity ticket. Letter E applies Bayes' theorem after a defective part is observed.",
+    "title_de_existing": "Klausuraufgabe 1",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Ein Casinodealer zieht drei Karten aus einem Standarddeck ohne Zurücklegen. Die Wahrscheinlichkeit, dass genau zwei Asse sind, ist größer als $1{,}3\\%$.",
+      "Eine Getränkeumfrage findet 40 Tee- und 50 Kaffeetrinker sowie 70, die mindestens eines trinken. Das Team sagt, mehr als $20$ Personen trinken beides.",
+      "Eine Kurierprüfung umfasst 96 Lieferungen: 44 Premium, 37 verspätet, 13 beides. Unter den Premium-Lieferungen ist die Verspätungswahrscheinlichkeit größer als $29\\%$.",
+      "Ein Wohltätigkeitslos hat Nettoerträge $-4$, $3$ und $12$ Euro mit Wahrscheinlichkeiten $\\frac12$, $\\frac13$ und $\\frac16$. Der erwartete Nettoertrag ist größer als $1{,}5$ Euro.",
+      "Werk A liefert $\\frac35$ der Teile mit Fehlerquote $\\frac1{50}$; Werk B den Rest mit $\\frac1{20}$. Gegeben ein Defekt ist die Wahrscheinlichkeit, dass er von A stammt, größer als $37\\%$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Ein Casinodealer zieht drei Karten aus einem Standarddeck ohne Zurücklegen. Die Wahrscheinlichkeit, dass genau zwei Asse sind, ist größer als $1{,}3\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{Genau zwei aces}) = \\frac{\\binom{4}{2}\\binom{48}{1}}{\\binom{52}{3}}\n$$\n\n$$\n\\binom{52}{3} = 22100\n$$\n\n$$\n\\binom{4}{2}\\binom{48}{1}\n$$\n\n$$\n\\binom{4}{2} = 6\n$$\n\n$$\n\\binom{48}{1} = 48 = 6\\times 48\n$$\n\n$$\nP = \\frac{288}{22100} = \\frac{72}{5525}\n$$\n\n$$\n\\approx 0.013032\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nAussage B: Eine Getränkeumfrage findet 40 Tee- und 50 Kaffeetrinker sowie 70, die mindestens eines trinken. Das Team sagt, mehr als $20$ Personen trinken beides. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(T\\cup C) = N(T)+N(C)-N(T\\cap C)\n$$\n\n$$\n70 = 40+50-N(T\\cap C)\n$$\n\n$$\nN(T\\cap C) = 20\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Eine Kurierprüfung umfasst 96 Lieferungen: 44 Premium, 37 verspätet, 13 beides. Unter den Premium-Lieferungen ist die Verspätungswahrscheinlichkeit größer als $29\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L\\mid P) = \\frac{N(P\\cap L)}{N(P)}\n$$\n\n$$\nP(L\\mid P) = \\frac{13}{44}\n$$\n\n$$\n\\approx 0.295455\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Ein Wohltätigkeitslos hat Nettoerträge $-4$, $3$ und $12$ Euro mit Wahrscheinlichkeiten $\\frac12$, $\\frac13$ und $\\frac16$. Der erwartete Nettoertrag ist größer als $1{,}5$ Euro. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE(X) = (-4)\\cdot\\frac{1}{2}+3\\cdot\\frac{1}{3}+12\\cdot\\frac{1}{6}\n$$\n\n$$\nE(X) = -2+1+2 = 1\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Werk A liefert $\\frac35$ der Teile mit Fehlerquote $\\frac1{50}$; Werk B den Rest mit $\\frac1{20}$. Gegeben ein Defekt ist die Wahrscheinlichkeit, dass er von A stammt, größer als $37\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A\\mid D) = \\frac{P(A)P(D\\mid A)}{P(D)}\n$$\n\n$$\nP(A)P(D\\mid A) = \\frac{3}{5}\\cdot\\frac{1}{50} = \\frac{3}{250}\n$$\n\n$$\nP(B)P(D\\mid B) = \\frac{2}{5}\\cdot\\frac{1}{20} = \\frac{1}{50}\n$$\n\n$$\nP(D) = \\frac{3}{250}+\\frac{1}{50} = \\frac{4}{125}\n$$\n\n$$\nP(A\\mid D) = \\frac{3/250}{4/125} = \\frac{3}{8} = 0.375\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch. Bewerten Sie jede Aussage mit Wahr oder Falsch.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.200",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Exam-style tasks - 2",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "At a library, 58 members borrow fiction, 46 borrow nonfiction, and 17 borrow both. More than $85$ members borrow at least one genre.",
+      "A streaming survey of 104 homes finds 47 premium accounts, 41 download users, and 14 homes with both features. The survey calls the two features independent.",
+      "A raffle produces net outcomes $-5$, $3$, and $13$ euros with probabilities $\\frac25$, $\\frac25$, and $\\frac15$. The variance of the net outcome is greater than $44$ square euros.",
+      "A disease affects $1\\%$ of patients. A screen is $99\\%$ sensitive and falsely flags $2\\%$ of healthy patients. After a positive result, the probability of disease is greater than $34\\%$.",
+      "At a school fair, an urn holds five red and seven blue balls; two are selected together. The probability of two red balls is greater than $16\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks how many members borrow at least one genre. With $N(F)=58$, $N(N)=46$, and $N(F\\cap N)=17$,\n\n$$\nN(F\\cup N) = N(F)+N(N)-N(F\\cap N) = 58+46-17\n$$\n\n$$\n58 + 46 = 104\n$$\n\n$$\n104 - 17 = 87\n$$\n\nExactly $87$ members borrow at least one genre. The claim states that more than $85$ do so.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nIndependence of premium service ($A$) and download use ($B$) would require $P(A\\cap B)=P(A)P(B)$. From the survey,\n\n$$\nP(A\\cap B) = \\frac{14}{104}\n$$\n\n$$\nP(A)P(B) = \\frac{47}{104}\\cdot\\frac{41}{104}\n$$\n\nCross-multiplying avoids rounding error:\n\n$$\n14 \\times 104 = 1456\n$$\n\n$$\n47 \\times 41 = 1927\n$$\n\n.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nThis claim asks for the variance of the raffle payoff $X$. First compute the mean and the second moment:\n\n$$\nE(X) = (-5)\\cdot\\frac{2}{5}+3\\cdot\\frac{2}{5}+13\\cdot\\frac{1}{5} = \\frac{9}{5}\n$$\n\n$$\nE(X^2) = 25\\cdot\\frac{2}{5}+9\\cdot\\frac{2}{5}+169\\cdot\\frac{1}{5} = \\frac{237}{5}\n$$\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2 = \\frac{237}{5}-\\left(\\frac{9}{5}\\right)^2 = \\frac{1104}{25} = 44.16\n$$\n\nThe variance is $44.16$ square euros. The claim states that it is greater than $44$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks for the posterior probability of disease after a positive screen. Let $D$ be the event of disease and $+$ a positive result. Bayes' theorem gives\n\n$$\nP(D\\mid +) = \\frac{P(+\\mid D)P(D)}{P(+\\mid D)P(D)+P(+\\mid D^c)P(D^c)}\n$$\n\nSubstitute $P(D)=0.01$, $P(+\\mid D)=0.99$, $P(D^c)=0.99$, and $P(+\\mid D^c)=0.02$:\n\n$$\nP(D\\mid +) = \\frac{0.01\\cdot 0.99}{0.01\\cdot 0.99+0.99\\cdot 0.02} = \\frac{0.0099}{0.0297} = \\frac{1}{3}\n$$\n\n$$\n\\approx 0.333333\n$$\n\nExpressed as a percentage, this is approximately $33.333\\%$. The claim states that this probability is greater than $34\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim asks for the probability of drawing two red balls from five red and seven blue without replacement. Unordered pairs form the sample space:\n\n$$\nP(\\text{two red}) = \\frac{\\binom{5}{2}}{\\binom{12}{2}} = \\frac{10}{66} = \\frac{5}{33}\n$$\n\n$$\n\\approx 0.151515\n$$\n\nExpressed as a percentage, this is approximately $15.152\\%$. The claim states that this probability is greater than $16\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Five independent exam checks. Letter A recovers a library union by inclusion-exclusion. Letter B tests independence of two streaming features. Letter C computes the variance of a three-point raffle payoff. Letter D applies Bayes' theorem after a positive disease screen. Letter E counts unordered pairs of red balls from a twelve-ball urn.",
+    "title_de_existing": "Klausuraufgabe 2",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "In einer Bibliothek leihen 58 Mitglieder Belletristik, 46 Sachbücher und 17 beides. Mehr als $85$ Mitglieder leihen mindestens ein Genre.",
+      "Eine Streaming-Umfrage unter 104 Haushalten findet 47 Premium-Konten, 41 Download-Nutzer und 14 mit beiden Funktionen. Die Umfrage nennt die beiden Funktionen unabhängig.",
+      "Eine Verlosung liefert Nettoergebnisse $-5$, $3$ und $13$ Euro mit Wahrscheinlichkeiten $\\frac25$, $\\frac25$ und $\\frac15$. Die Varianz des Nettoergebnisses ist größer als $44$ Quadrat-Euro.",
+      "Eine Krankheit betrifft $1\\%$ der Patienten. Ein Test ist $99\\%$ sensitiv und markiert fälschlich $2\\%$ Gesunder. Nach positivem Ergebnis ist die Krankheitswahrscheinlichkeit größer als $34\\%$.",
+      "Auf einem Schulfest enthält eine Urne fünf rote und sieben blaue Kugeln; zwei werden gemeinsam gezogen. Die Wahrscheinlichkeit für zwei rote Kugeln ist größer als $16\\%$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: In einer Bibliothek leihen 58 Mitglieder Belletristik, 46 Sachbücher und 17 beides. Mehr als $85$ Mitglieder leihen mindestens ein Genre. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(F\\cup N) = N(F)+N(N)-N(F\\cap N) = 58+46-17\n$$\n\n$$\n58 + 46 = 104\n$$\n\n$$\n104 - 17 = 87\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Eine Streaming-Umfrage unter 104 Haushalten findet 47 Premium-Konten, 41 Download-Nutzer und 14 mit beiden Funktionen. Die Umfrage nennt die beiden Funktionen unabhängig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(A\\cap B) = \\frac{14}{104}\n$$\n\n$$\nP(A)P(B) = \\frac{47}{104}\\cdot\\frac{41}{104}\n$$\n\n$$\n14 \\times 104 = 1456\n$$\n\n$$\n47 \\times 41 = 1927\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Eine Verlosung liefert Nettoergebnisse $-5$, $3$ und $13$ Euro mit Wahrscheinlichkeiten $\\frac25$, $\\frac25$ und $\\frac15$. Die Varianz des Nettoergebnisses ist größer als $44$ Quadrat-Euro. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X) = (-5)\\cdot\\frac{2}{5}+3\\cdot\\frac{2}{5}+13\\cdot\\frac{1}{5} = \\frac{9}{5}\n$$\n\n$$\nE(X^2) = 25\\cdot\\frac{2}{5}+9\\cdot\\frac{2}{5}+169\\cdot\\frac{1}{5} = \\frac{237}{5}\n$$\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2 = \\frac{237}{5}-\\left(\\frac{9}{5}\\right)^2 = \\frac{1104}{25} = 44.16\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Eine Krankheit betrifft $1\\%$ der Patienten. Ein Test ist $99\\%$ sensitiv und markiert fälschlich $2\\%$ Gesunder. Nach positivem Ergebnis ist die Krankheitswahrscheinlichkeit größer als $34\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(D\\mid +) = \\frac{P(+\\mid D)P(D)}{P(+\\mid D)P(D)+P(+\\mid D^c)P(D^c)}\n$$\n\n$$\nP(D\\mid +) = \\frac{0.01\\cdot 0.99}{0.01\\cdot 0.99+0.99\\cdot 0.02} = \\frac{0.0099}{0.0297} = \\frac{1}{3}\n$$\n\n$$\n\\approx 0.333333\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Auf einem Schulfest enthält eine Urne fünf rote und sieben blaue Kugeln; zwei werden gemeinsam gezogen. Die Wahrscheinlichkeit für zwei rote Kugeln ist größer als $16\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{two red}) = \\frac{\\binom{5}{2}}{\\binom{12}{2}} = \\frac{10}{66} = \\frac{5}{33}\n$$\n\n$$\n\\approx 0.151515\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch. Bewerten Sie jede Aussage mit Wahr oder Falsch.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.201",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 3",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "An insurance file has 50 collision policies, 45 theft policies, and 15 carrying both covers. Conditional on having at least one cover, the probability of exactly one cover is greater than $81\\%$.",
+      "A prize game returns $-6$, $3$, or $14$ euros with probabilities $\\frac14$, $\\frac12$, and $\\frac14$. Its variance is greater than $51$ square euros.",
+      "Machines A, B, and C make $50\\%$, $30\\%$, and $20\\%$ of output with defect rates $1\\%$, $3\\%$, and $4\\%$. Given a defective item, the probability it came from C is greater than $36\\%$.",
+      "A research committee of four is chosen from six men and five women. The probability that the selection has exactly two women is greater than $45\\%$.",
+      "A commuter census records 72 bus users, 55 rail users, and 21 who use both. Exactly $86$ people use exactly one of the two services."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the probability of exactly one cover among those with at least one cover. The union size is\n\n$$\nN(C\\cup T) = 50+45-15\n$$\n\n$$\n50 + 45 = 95\n$$\n\n$$\n95 - 15 = 80\n$$\n\nand the exactly-one count is\n\n$$\nN(\\text{exactly one}) = 50+45-2\\cdot 15 = 65\n$$\n\nConditioning on at least one cover,\n\n$$\nP(\\text{exactly one}\\mid \\text{at least one}) = \\frac{65}{80} = \\frac{13}{16} = 0.8125\n$$\n\nExpressed as a percentage, this is $81.25\\%$. The claim states that this probability is greater than $81\\%$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nThis claim asks for $\\operatorname{Var}(X)$ of the prize game. Compute the mean and second moment:\n\n$$\nE(X) = (-6)\\cdot\\frac{1}{4}+3\\cdot\\frac{1}{2}+14\\cdot\\frac{1}{4} = \\frac{7}{2}\n$$\n\n$$\nE(X^2) = 36\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{2}+196\\cdot\\frac{1}{4} = \\frac{125}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{125}{2}-\\left(\\frac{7}{2}\\right)^2 = \\frac{201}{4} = 50.25\n$$\n\nThe variance is $50.25$ square euros. The claim states that it is greater than $51$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nThis claim asks for the posterior probability that a defective item came from machine C. The joint defect weights are\n\n$$\nw_A = 0.50\\cdot 0.01\n$$\n\n$$\n0.5 \\times 0.01 = 0.005\n$$\n\n$$\nw_B = 0.30\\cdot 0.03\n$$\n\n$$\n0.3 \\times 0.03 = 0.009\n$$\n\n$$\nw_C = 0.20\\cdot 0.04\n$$\n\n$$\n0.2 \\times 0.04 = 0.008\n$$\n\n$$\nP(D) = 0.005+0.009+0.008\n$$\n\n$$\n0.005 + 0.009 = 0.014\n$$\n\n$$\n0.014 + 0.008 = 0.022\n$$\n\nBayes' theorem then gives\n\n$$\nP(C\\mid D) = \\frac{0.008}{0.022} = \\frac{4}{11}\n$$\n\n$$\n\\approx 0.363636\n$$\n\nExpressed as a percentage, this is approximately $36.364\\%$. The claim states that this probability is greater than $36\\%$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThis claim asks for the probability that a four-person committee chosen from six men and five women contains exactly two women. Equally likely committees give\n\n$$\nP = \\frac{\\binom{5}{2}\\binom{6}{2}}{\\binom{11}{4}} = \\frac{10\\cdot 15}{330} = \\frac{150}{330} = \\frac{5}{11}\n$$\n\n$$\n\\approx 0.454545\n$$\n\nExpressed as a percentage, this is approximately $45.455\\%$. The claim states that this probability is greater than $45\\%$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis claim asks how many people use exactly one of the two services. With $N(B)=72$, $N(R)=55$, and $N(B\\cap R)=21$,\n\n$$\nN(\\text{exactly one}) = N(B)+N(R)-2N(B\\cap R) = 72+55-42\n$$\n\n$$\n72 + 55 = 127\n$$\n\n$$\n127 - 42 = 85\n$$\n\nExactly $85$ people use exactly one service. The claim states that the count is $86$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A conditions on the insured union of collision and theft covers. Letter B computes the variance of a three-outcome prize game. Letter C uses Bayes' theorem across three machines after a defect. Letter D counts committees with exactly two women. Letter E recovers an \"exactly one service\" count by inclusion-exclusion.",
+    "title_de_existing": "Klausuraufgabe 3",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Eine Versicherungsdatei hat 50 Kollisions- und 45 Diebstahlpolicen sowie 15 mit beiden Deckungen. Bedingt auf mindestens eine Deckung ist die Wahrscheinlichkeit genau einer Deckung größer als $81\\%$.",
+      "Ein Preis-Spiel liefert $-6$, $3$ oder $14$ Euro mit Wahrscheinlichkeiten $\\frac14$, $\\frac12$ und $\\frac14$. Seine Varianz ist größer als $51$ Quadrat-Euro.",
+      "Maschinen A, B und C erzeugen $50\\%$, $30\\%$ und $20\\%$ der Produktion mit Fehlerquoten $1\\%$, $3\\%$ und $4\\%$. Gegeben defekt ist die Wahrscheinlichkeit für C größer als $36\\%$.",
+      "Ein Forschungsausschuss von vier Personen wird aus sechs Männern und fünf Frauen gewählt. Die Wahrscheinlichkeit für genau zwei Frauen ist größer als $45\\%$.",
+      "Eine Pendlerzählung erfasst 72 Bus- und 55 Bahnnutzer sowie 21, die beides nutzen. Genau $86$ Personen nutzen genau einen der beiden Dienste."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Eine Versicherungsdatei hat 50 Kollisions- und 45 Diebstahlpolicen sowie 15 mit beiden Deckungen. Bedingt auf mindestens eine Deckung ist die Wahrscheinlichkeit genau einer Deckung größer als $81\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(C\\cup T) = 50+45-15\n$$\n\n$$\n50 + 45 = 95\n$$\n\n$$\n95 - 15 = 80\n$$\n\n$$\nN(\\text{Genau eins}) = 50+45-2\\cdot 15 = 65\n$$\n\n$$\nP(\\text{Genau eins}\\mid \\text{mindestens eins}) = \\frac{65}{80} = \\frac{13}{16} = 0.8125\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Ein Preis-Spiel liefert $-6$, $3$ oder $14$ Euro mit Wahrscheinlichkeiten $\\frac14$, $\\frac12$ und $\\frac14$. Seine Varianz ist größer als $51$ Quadrat-Euro. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE(X) = (-6)\\cdot\\frac{1}{4}+3\\cdot\\frac{1}{2}+14\\cdot\\frac{1}{4} = \\frac{7}{2}\n$$\n\n$$\nE(X^2) = 36\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{2}+196\\cdot\\frac{1}{4} = \\frac{125}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{125}{2}-\\left(\\frac{7}{2}\\right)^2 = \\frac{201}{4} = 50.25\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Maschinen A, B und C erzeugen $50\\%$, $30\\%$ und $20\\%$ der Produktion mit Fehlerquoten $1\\%$, $3\\%$ und $4\\%$. Gegeben defekt ist die Wahrscheinlichkeit für C größer als $36\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nw_A = 0.50\\cdot 0.01\n$$\n\n$$\nw_B = 0.30\\cdot 0.03\n$$\n\n$$\nw_C = 0.20\\cdot 0.04\n$$\n\n$$\nP(D) = 0.005+0.009+0.008\n$$\n\n$$\n0.005 + 0.009 = 0.014\n$$\n\n$$\n0.014 + 0.008 = 0.022\n$$\n\n$$\nP(C\\mid D) = \\frac{0.008}{0.022} = \\frac{4}{11}\n$$\n\n$$\n\\approx 0.363636\n$$\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nAussage D: Ein Forschungsausschuss von vier Personen wird aus sechs Männern und fünf Frauen gewählt. Die Wahrscheinlichkeit für genau zwei Frauen ist größer als $45\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP = \\frac{\\binom{5}{2}\\binom{6}{2}}{\\binom{11}{4}} = \\frac{10\\cdot 15}{330} = \\frac{150}{330} = \\frac{5}{11}\n$$\n\n$$\n\\approx 0.454545\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Eine Pendlerzählung erfasst 72 Bus- und 55 Bahnnutzer sowie 21, die beides nutzen. Genau $86$ Personen nutzen genau einen der beiden Dienste. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(\\text{Genau eins}) = N(B)+N(R)-2N(B\\cap R) = 72+55-42\n$$\n\n$$\n72 + 55 = 127\n$$\n\n$$\n127 - 42 = 85\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch. Bewerten Sie jede Aussage mit Wahr oder Falsch.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.202",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 4",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A school booth gives one-play net returns $-4$, $6$, and $18$ with probabilities $\\frac38$, $\\frac38$, and $\\frac14$. For two independent plays, the total variance is greater than $145$.",
+      "Messages are spam with prior $20\\%$. A filter flags $95\\%$ of spam and $5\\%$ of ordinary mail. The probability that a flagged message is spam is greater than $83\\%$.",
+      "Five actors take random positions in a publicity line. The probability that two named actors stand next to each other is greater than $41\\%$.",
+      "Among 140 phones, 64 have app A, 59 have app B, and 23 have both. Exactly $40$ phones have neither app.",
+      "A warehouse starts with 114 orders, 49 requiring a signature. One known signature order is removed; the probability that the next order also requires a signature is greater than $43\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the variance of the sum of two independent plays. For one play,\n\n$$\nE(X) = (-4)\\cdot\\frac{3}{8}+6\\cdot\\frac{3}{8}+18\\cdot\\frac{1}{4} = \\frac{21}{4}\n$$\n\n$$\nE(X^2) = 16\\cdot\\frac{3}{8}+36\\cdot\\frac{3}{8}+324\\cdot\\frac{1}{4} = \\frac{201}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{201}{2}-\\left(\\frac{21}{4}\\right)^2 = \\frac{1167}{16}\n$$\n\nIndependence lets variances add:\n\n$$\n\\operatorname{Var}(X_1+X_2) = 2\\cdot\\frac{1167}{16} = \\frac{1167}{8} = 145.875\n$$\n\nThe total variance is $145.875$. The claim states that it is greater than $145$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nThis claim asks for $P(\\text{spam}\\mid\\text{flag})$. Bayes' theorem uses the prior and the two flag rates:\n\n$$\nP(S\\mid F) = \\frac{P(F\\mid S)P(S)}{P(F\\mid S)P(S)+P(F\\mid S^c)P(S^c)}\n$$\n\n$$\nP(S\\mid F) = \\frac{0.95\\cdot 0.20}{0.95\\cdot 0.20+0.05\\cdot 0.80} = \\frac{0.19}{0.23} = \\frac{19}{23}\n$$\n\n$$\n\\approx 0.826087\n$$\n\nExpressed as a percentage, this is approximately $82.609\\%$. The claim states that this probability is greater than $83\\%$.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nThis claim asks for the probability that two named actors stand next to each other in a random line of five. Treat the named pair as a block: there are $2$ internal orders and $4!$ arrangements of the block with the other three actors, against $5!$ total lines:\n\n$$\nP = \\frac{2\\cdot 4!}{5!} = \\frac{2}{5} = 0.4\n$$\n\nExpressed as a percentage, this is $40\\%$. The claim states that this probability is greater than $41\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThis claim asks how many of the $140$ phones have neither app A nor app B. First form the union by inclusion-exclusion:\n\n$$\nN(A\\cup B) = 64+59-23\n$$\n\n$$\n64 + 59 = 123\n$$\n\n$$\n123 - 23 = 100\n$$\n\nThen the complement relative to the full stock is\n\n$$\nN(\\text{neither}) = 140-100\n$$\n\n$$\n140 - 100 = 40\n$$\n\nExactly $40$ phones have neither app. The claim states that the count is $40$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nAfter one known signature order is removed, $48$ signature orders remain among $113$ orders. The next-order probability is therefore\n\n$$\nP = \\frac{48}{113}\n$$\n\n$$\n\\approx 0.424779\n$$\n\nExpressed as a percentage, this is approximately $42.478\\%$. The claim states that this probability is greater than $43\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A doubles the variance of an independent booth game. Letter B applies Bayes' theorem to a spam filter. Letter C counts permutations with two named actors adjacent. Letter D recovers a \"neither app\" count. Letter E updates a without-replacement signature probability after one removal.",
+    "title_de_existing": "Klausuraufgabe 4",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Ein Schulstand liefert Nettoerträge $-4$, $6$ und $18$ mit Wahrscheinlichkeiten $\\frac38$, $\\frac38$ und $\\frac14$. Für zwei unabhängige Spiele ist die Gesamtvarianz größer als $145$.",
+      "Nachrichten sind mit A-priori $20\\%$ Spam. Ein Filter markiert $95\\%$ des Spams und $5\\%$ der normalen Post. Die Wahrscheinlichkeit, dass eine markierte Nachricht Spam ist, ist größer als $83\\%$.",
+      "Fünf Schauspieler nehmen zufällige Positionen in einer Werbelinie ein. Die Wahrscheinlichkeit, dass zwei genannte Schauspieler nebeneinander stehen, ist größer als $41\\%$.",
+      "Unter 140 Telefonen haben 64 App A, 59 App B und 23 beide. Genau $40$ Telefone haben keine der beiden Apps.",
+      "Ein Lager startet mit 114 Aufträgen, davon 49 mit Unterschriftspflicht. Ein bekannter Unterschriftsauftrag wird entfernt; die Wahrscheinlichkeit, dass der nächste Auftrag ebenfalls Unterschrift braucht, ist größer als $43\\%$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Ein Schulstand liefert Nettoerträge $-4$, $6$ und $18$ mit Wahrscheinlichkeiten $\\frac38$, $\\frac38$ und $\\frac14$. Für zwei unabhängige Spiele ist die Gesamtvarianz größer als $145$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X) = (-4)\\cdot\\frac{3}{8}+6\\cdot\\frac{3}{8}+18\\cdot\\frac{1}{4} = \\frac{21}{4}\n$$\n\n$$\nE(X^2) = 16\\cdot\\frac{3}{8}+36\\cdot\\frac{3}{8}+324\\cdot\\frac{1}{4} = \\frac{201}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{201}{2}-\\left(\\frac{21}{4}\\right)^2 = \\frac{1167}{16}\n$$\n\n$$\n\\operatorname{Var}(X_1+X_2) = 2\\cdot\\frac{1167}{16} = \\frac{1167}{8} = 145.875\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Falsch\n\nAussage B: Nachrichten sind mit A-priori $20\\%$ Spam. Ein Filter markiert $95\\%$ des Spams und $5\\%$ der normalen Post. Die Wahrscheinlichkeit, dass eine markierte Nachricht Spam ist, ist größer als $83\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(S\\mid F) = \\frac{P(F\\mid S)P(S)}{P(F\\mid S)P(S)+P(F\\mid S^c)P(S^c)}\n$$\n\n$$\nP(S\\mid F) = \\frac{0.95\\cdot 0.20}{0.95\\cdot 0.20+0.05\\cdot 0.80} = \\frac{0.19}{0.23} = \\frac{19}{23}\n$$\n\n$$\n\\approx 0.826087\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nAussage C: Fünf Schauspieler nehmen zufällige Positionen in einer Werbelinie ein. Die Wahrscheinlichkeit, dass zwei genannte Schauspieler nebeneinander stehen, ist größer als $41\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP = \\frac{2\\cdot 4!}{5!} = \\frac{2}{5} = 0.4\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Unter 140 Telefonen haben 64 App A, 59 App B und 23 beide. Genau $40$ Telefone haben keine der beiden Apps. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(A\\cup B) = 64+59-23\n$$\n\n$$\n64 + 59 = 123\n$$\n\n$$\n123 - 23 = 100\n$$\n\n$$\nN(\\text{neither}) = 140-100\n$$\n\n$$\n140 - 100 = 40\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Ein Lager startet mit 114 Aufträgen, davon 49 mit Unterschriftspflicht. Ein bekannter Unterschriftsauftrag wird entfernt; die Wahrscheinlichkeit, dass der nächste Auftrag ebenfalls Unterschrift braucht, ist größer als $43\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP = \\frac{48}{113}\n$$\n\n$$\n\\approx 0.424779\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch. Bewerten Sie jede Aussage mit Wahr oder Falsch.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.203",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 5",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Suppliers A, B, and C provide $50\\%$, $30\\%$, and $20\\%$ of stock; their good-item rates are $98\\%$, $95\\%$, and $90\\%$. Given a good item, the probability it came from supplier B is greater than $29\\%$.",
+      "A card club deals a five-card hand and calls any hand from a single suit a flush, including straight flushes. The probability of a flush is greater than $0.19\\%$.",
+      "A clinic logs 48 patients with symptom A, 42 with symptom B, and 73 with at least one symptom. Exactly $18$ patients have both symptoms.",
+      "A fair die is rolled. Given that the face is at least four, the probability that it is even is greater than $66\\%$.",
+      "A fair four-sided die pays its face value in tokens. The payoff variance is greater than $1.3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nLet $G$ be a good item. The joint good weights are\n\n$$\nw_A = 0.50\\cdot 0.98\n$$\n\n$$\n0.5 \\times 0.98 = 0.49\n$$\n\n$$\nw_B = 0.30\\cdot 0.95\n$$\n\n$$\n0.3 \\times 0.95 = 0.285\n$$\n\n$$\nw_C = 0.20\\cdot 0.90\n$$\n\n$$\n0.2 \\times 0.9 = 0.18\n$$\n\n$$\nP(G) = 0.49+0.285+0.18\n$$\n\n$$\n0.49 + 0.285 = 0.775\n$$\n\n$$\n0.775 + 0.18 = 0.955\n$$\n\nBayes' theorem gives\n\n$$\nP(B\\mid G) = \\frac{0.285}{0.955} = \\frac{57}{191}\n$$\n\n$$\n\\approx 0.298429\n$$\n\nExpressed as a percentage, this is approximately $29.843\\%$. The claim states that this probability is greater than $29\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nA flush here means all five cards from one suit, including straight flushes. There are $4$ suits and $\\binom{13}{5}$ five-card subsets per suit, against $\\binom{52}{5}$ hands:\n\n$$\nP = \\frac{4\\binom{13}{5}}{\\binom{52}{5}} = \\frac{4\\cdot 1287}{2598960} = \\frac{5148}{2598960} = \\frac{33}{16660}\n$$\n\n$$\n\\approx 0.001980\n$$\n\nExpressed as a percentage, this is approximately $0.198\\%$. The claim states that this probability is greater than $0.19\\%$.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThis claim asks how many patients have both symptoms. Inclusion-exclusion recovers the intersection from the given union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n73 = 48+42-N(A\\cap B)\n$$\n\n$$\nN(A\\cap B) = 17\n$$\n\nExactly $17$ patients have both symptoms. The claim states that the count is $18$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nGiven that the face is in $\\{4,5,6\\}$, the even faces in that set are $\\{4,6\\}$. With a fair die,\n\n$$\nP(\\text{even}\\mid \\ge 4) = \\frac{2}{3}\n$$\n\n$$\n\\approx 0.666667\n$$\n\nExpressed as a percentage, this is approximately $66.667\\%$. The claim states that this probability is greater than $66\\%$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nFor a fair four-sided die paying face value $X\\in\\{1,2,3,4\\}$ with equal probability $1/4$,\n\n$$\nE(X) = \\frac{1+2+3+4}{4} = \\frac{10}{4} = \\frac{5}{2}\n$$\n\n$$\nE(X^2) = \\frac{1+4+9+16}{4} = \\frac{30}{4} = \\frac{15}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{15}{2}-\\left(\\frac{5}{2}\\right)^2 = \\frac{15}{2}-\\frac{25}{4} = \\frac{5}{4} = 1.25\n$$\n\nThe variance is $1.25$. The claim states that it is greater than $1.3$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A applies Bayes' theorem after observing a good item from three suppliers. Letter B counts five-card flushes in a $52$-card deck. Letter C recovers a two-symptom intersection. Letter D conditions an even face on rolling at least four. Letter E computes the variance of a fair four-sided payoff.",
+    "title_de_existing": "Klausuraufgabe 203",
+    "context_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.",
+    "statements_de_existing": [
+      "Suppliers ein, B, und C provide $50%, $30%, und $20% von stock; ihre good-item rates sind $98%, $95%, und $90%. gegeben ein good item, die Wahrscheinlichkeit it came aus supplier B ist größer als $29%.",
+      "Ein card club deals ein five-card hand und calls any hand aus ein single suit ein flush, including straight flushes. die Wahrscheinlichkeit von ein flush ist größer als $0.19%.",
+      "Ein clinic logs 48 patients mit symptom ein, 42 mit symptom B, und 73 mit mindestens one symptom. genau $18$ patients haben both symptoms.",
+      "Ein fair die ist rolled. gegeben dass die face ist mindestens four, die Wahrscheinlichkeit, dass it ist even ist größer als $66%.",
+      "Ein fair four-sided die pays its face value in tokens. die payoff variance ist größer als $1.3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Suppliers ein, B, und C provide $50\\%$, $30\\%$, und $20\\%$ von stock; ihre good-Items rates sind $98\\%$, $95\\%$, und $90\\%$. gegeben ein good Items, die Wahrscheinlichkeit it came aus supplier B ist größer als $29\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nw_A = 0.50\\cdot 0.98\n$$\n\n$$\nw_B = 0.30\\cdot 0.95\n$$\n\n$$\nw_C = 0.20\\cdot 0.90\n$$\n\n$$\nP(G) = 0.49+0.285+0.18\n$$\n\n$$\n0.49 + 0.285 = 0.775\n$$\n\n$$\n0.775 + 0.18 = 0.955\n$$\n\n$$\nP(B\\mid G) = \\frac{0.285}{0.955} = \\frac{57}{191}\n$$\n\n$$\n\\approx 0.298429\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nAussage B: Ein card club deals ein five-card hand und calls any hand aus ein single suit ein flush, including straight flushes. die Wahrscheinlichkeit von ein flush ist größer als $0.19\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP = \\frac{4\\binom{13}{5}}{\\binom{52}{5}} = \\frac{4\\cdot 1287}{2598960} = \\frac{5148}{2598960} = \\frac{33}{16660}\n$$\n\n$$\n\\approx 0.001980\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Ein clinic logs 48 patients mit symptom ein, 42 mit symptom B, und 73 mit mindestens one symptom. genau $18$ patients haben both symptoms. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n73 = 48+42-N(A\\cap B)\n$$\n\n$$\nN(A\\cap B) = 17\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Ein fair die ist rolled. gegeben dass die face ist mindestens four, die Wahrscheinlichkeit, dass it ist even ist größer als $66\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{even}\\mid \\ge 4) = \\frac{2}{3}\n$$\n\n$$\n\\approx 0.666667\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Ein fair four-sided die pays its face value in tokens. die payoff variance ist größer als $1.3$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE(X) = \\frac{1+2+3+4}{4} = \\frac{10}{4} = \\frac{5}{2}\n$$\n\n$$\nE(X^2) = \\frac{1+4+9+16}{4} = \\frac{30}{4} = \\frac{15}{2}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{15}{2}-\\left(\\frac{5}{2}\\right)^2 = \\frac{15}{2}-\\frac{25}{4} = \\frac{5}{4} = 1.25\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung."
+  }
+]

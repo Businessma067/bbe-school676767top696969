@@ -1,0 +1,398 @@
+CASE MATH 12.31
+ANSWER [true, false, true, false, true]
+TITLE_DE Die Hafen-Wohltätigkeitsverlosung
+CONTEXT_DE Von 40 Losen sind 8 goldene Hauptpreis-Lose und 32 gewöhnliche. Es werden 5 Lose zufällig ohne Zurücklegen gezogen.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 5-Los-Ziehungen ist größer als 650.000.
+  B. Die Wahrscheinlichkeit für genau 2 Goldlose ist größer als 25%.
+  C. Die Wahrscheinlichkeit für gar kein Goldlos ist größer als 30%.
+  D. Die Wahrscheinlichkeit für mindestens ein Goldlos ist kleiner als 65%.
+  E. Die Wahrscheinlichkeit einer Gold-Mehrheit (3–5 von 5) ist kleiner als 5%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible ways to draw $5$ tickets from the $40$ available tickets. Since the tickets are drawn without replacement and the order of selection does not matter, this is a combination problem. We use the combination formula $\binom{N}{n}$ with $N=40$ total tickets and $n=5$ tickets to be drawn.
+
+The general formula for combinations is:
+
+$$
+\binom{N}{n} = \frac{N!}{n!(N-n)!}
+$$
+
+Substituting the given values:
+
+$$
+\binom{40}{5} = \dfrac{40!}{5!(40-5)!}
+$$
+
+$$
+\dfrac{40!}{5!(35)!} = \dfrac{40 \cdot 39 \cdot 38 \cdot 37 \cdot 36}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}
+$$
+
+$$
+40 \times 39 = 1560
+$$
+
+$$
+1560 \times 38 = 59280
+$$
+
+$$
+59280 \times 37 = 2193360
+$$
+
+$$
+2193360 \times 36 = 78960960
+$$
+
+$$
+\dfrac{78960960}{120} = 658008
+$$
+
+$$
+\binom{40}{5} = 658008
+$$
+
+The total number of possible $5$-ticket draws is $658\,008$. The statement claims that this number is greater than $650\,000$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → False
+
+This statement asks for the probability that the draw contains exactly $2$ gold tickets. This is a hypergeometric probability problem where we want to find $P(X=2)$. Here, $N=40$ total tickets, $K=8$ gold tickets, $N-K=32$ white tickets, $n=5$ tickets drawn, and we are interested in $k=2$ gold tickets.
+
+Using the hypergeometric probability formula:
+
+$$
+P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+Substituting the specific values for this case:
+
+$$
+P(X = 2) = \frac{\binom{8}{2} \binom{32}{5-2}}{\binom{40}{5}} = \frac{\binom{8}{2} \binom{32}{3}}{658\,008}
+$$
+
+We calculate the combinations:
+
+$$
+\binom{8}{2} = \dfrac{8!}{2!(8-2)!}
+$$
+
+$$
+\dfrac{8!}{2!(6)!} = \dfrac{8 \cdot 7}{1 \cdot 2}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+\dfrac{56}{2} = 28
+$$
+
+$$
+\binom{8}{2} = 28
+$$
+
+$$
+\binom{32}{3} = \dfrac{32!}{3!(32-3)!}
+$$
+
+$$
+\dfrac{32!}{3!(29)!} = \dfrac{32 \cdot 31 \cdot 30}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+32 \times 31 = 992
+$$
+
+$$
+992 \times 30 = 29760
+$$
+
+$$
+\dfrac{29760}{6} = 4960
+$$
+
+$$
+\binom{32}{3} = 4960
+$$
+
+Now substitute these values into the probability formula:
+
+$$
+P(X = 2) = \frac{28 \times 4960}{658\,008} = \frac{138\,880}{658\,008} \approx 0.211059
+$$
+
+Expressed as a percentage, the probability of drawing exactly $2$ gold tickets is approximately $21.11\%$. The claim states that this probability is greater than $25\%$.
+
+So the statement is False.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This statement asks for the probability that the draw contains no gold tickets at all. This means we are looking for $P(X=0)$, where $k=0$ gold tickets are drawn. The parameters for the hypergeometric distribution are $N=40$, $K=8$, $N-K=32$, and $n=5$.
+
+Using the hypergeometric probability formula:
+
+$$
+P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+Substituting the specific values for this case:
+
+$$
+P(X = 0) = \frac{\binom{8}{0} \binom{32}{5-0}}{\binom{40}{5}} = \frac{\binom{8}{0} \binom{32}{5}}{658\,008}
+$$
+
+We calculate the combinations:
+
+$$
+\binom{8}{0} = 1
+$$
+
+$$
+\binom{32}{5} = \dfrac{32!}{5!(32-5)!}
+$$
+
+$$
+\dfrac{32!}{5!(27)!} = \dfrac{32 \cdot 31 \cdot 30 \cdot 29 \cdot 28}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}
+$$
+
+$$
+32 \times 31 = 992
+$$
+
+$$
+992 \times 30 = 29760
+$$
+
+$$
+29760 \times 29 = 863040
+$$
+
+$$
+863040 \times 28 = 24165120
+$$
+
+$$
+\dfrac{24165120}{120} = 201376
+$$
+
+$$
+\binom{32}{5} = 201376
+$$
+
+Now substitute these values into the probability formula:
+
+$$
+P(X = 0) = \frac{1 \times 201\,376}{658\,008} = \frac{201\,376}{658\,008} \approx 0.306037
+$$
+
+Expressed as a percentage, the probability of drawing no gold tickets is approximately $30.60\%$. The claim states that this probability is greater than $30\%$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that the draw contains at least one gold ticket, which is $P(X \ge 1)$. This can be most easily calculated using the complementary event: the probability of drawing no gold tickets, $P(X=0)$.
+
+The relationship between these probabilities is:
+
+$$
+P(X \ge 1) = 1 - P(X = 0)
+$$
+
+From the calculation in Statement C, we found the probability of drawing no gold tickets:
+
+$$
+P(X = 0)
+$$
+
+$$
+\approx 0.306037
+$$
+
+Now, we can calculate $P(X \ge 1)$:
+
+$$
+P(X \ge 1) = 1 - 0.306037
+$$
+
+$$
+1 - 0.306037 = 0.693963
+$$
+
+$$
+P(X \ge 1) \approx 0.693963
+$$
+
+Expressed as a percentage, the probability of drawing at least one gold ticket is approximately $69.40\%$. The claim states that this probability is less than $65\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This statement asks for the probability that gold tickets form a majority of the draw. This means that the number of gold tickets drawn is $3$, $4$, or $5$ out of the $5$ drawn. We need to calculate $P(X=3)$, $P(X=4)$, and $P(X=5)$ using the hypergeometric formula, then sum these probabilities.
+
+First, for $k=3$ gold tickets:
+
+$$
+P(X = 3) = \frac{\binom{8}{3} \binom{32}{5-3}}{\binom{40}{5}} = \frac{\binom{8}{3} \binom{32}{2}}{658\,008}
+$$
+
+$$
+\binom{8}{3} = \dfrac{8!}{3!(8-3)!}
+$$
+
+$$
+\dfrac{8!}{3!(5)!} = \dfrac{8 \cdot 7 \cdot 6}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+\dfrac{336}{6} = 56
+$$
+
+$$
+\binom{8}{3} = 56
+$$
+
+$$
+\binom{32}{2} = \dfrac{32!}{2!(32-2)!}
+$$
+
+$$
+\dfrac{32!}{2!(30)!} = \dfrac{32 \cdot 31}{1 \cdot 2}
+$$
+
+$$
+32 \times 31 = 992
+$$
+
+$$
+\dfrac{992}{2} = 496
+$$
+
+$$
+\binom{32}{2} = 496
+$$
+
+$$
+P(X = 3) = \frac{56 \times 496}{658\,008} = \frac{27\,776}{658\,008} \approx 0.042211
+$$
+
+Next, for $k=4$ gold tickets:
+
+$$
+P(X = 4) = \frac{\binom{8}{4} \binom{32}{5-4}}{\binom{40}{5}} = \frac{\binom{8}{4} \binom{32}{1}}{658\,008}
+$$
+
+$$
+\binom{8}{4} = \dfrac{8!}{4!(8-4)!}
+$$
+
+$$
+\dfrac{8!}{4!(4)!} = \dfrac{8 \cdot 7 \cdot 6 \cdot 5}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+336 \times 5 = 1680
+$$
+
+$$
+\dfrac{1680}{24} = 70
+$$
+
+$$
+\binom{8}{4} = 70
+$$
+
+$$
+\binom{32}{1} = \dfrac{32!}{1!(32-1)!}
+$$
+
+$$
+\binom{32}{1} = 32
+$$
+
+$$
+P(X = 4) = \frac{70 \times 32}{658\,008} = \frac{2\,240}{658\,008} \approx 0.003404
+$$
+
+Finally, for $k=5$ gold tickets:
+
+$$
+P(X = 5) = \frac{\binom{8}{5} \binom{32}{5-5}}{\binom{40}{5}} = \frac{\binom{8}{5} \binom{32}{0}}{658\,008}
+$$
+
+$$
+\binom{8}{5} = \dfrac{8!}{5!(8-5)!}
+$$
+
+$$
+\dfrac{8!}{5!(3)!} = \dfrac{8 \cdot 7 \cdot 6}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+\dfrac{336}{6} = 56
+$$
+
+$$
+\binom{8}{5} = 56 = \binom{8}{3}
+$$
+
+$$
+\binom{32}{0} = 1
+$$
+
+$$
+P(X = 5) = \frac{56 \times 1}{658\,008} = \frac{56}{658\,008} \approx 0.000085
+$$
+
+The probability of gold tickets forming a majority is $P(X \ge 3) = P(X=3) + P(X=4) + P(X=5)$:
+
+$$
+P(X \ge 3) \approx 0.042211 + 0.003404 + 0.000085
+$$
+
+$$
+P(X \ge 3) \approx 0.045700
+$$
+
+Expressed as a percentage, the probability is approximately $4.57\%$. The claim states that this probability is less than $5\%$.
+
+So the statement is True.
+

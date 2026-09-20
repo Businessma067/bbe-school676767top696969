@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.26",
+    "title": "Working Capital and Inventories",
+    "context": "Review working capital and inventories as capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Cash held to pay suppliers before customer invoices arrive is financial capital.",
+      "Financial and physical resources used in operations together form capital inputs.",
+      "Only long-term loans count as capital; day-to-day cash is excluded.",
+      "Farm-linked equipment is land because milk is agricultural.",
+      "Inventory is land when it contains metals from mining."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Financial resources supporting operations are part of capital.",
+      "Capital includes both equipment and operating finance.",
+      "Operating finance is included in capital.",
+      "Processing machinery is capital even with agricultural inputs.",
+      "Parts held for service production are capital inventories."
+    ],
+    "tactical_explanations": [
+      "Cash set aside to pay suppliers before customer invoices arrive is working finance used in operations. Financial resources that keep production and trade moving count as capital alongside plant and equipment.\n\nThe statement is true.",
+      "Capital covers both physical means of production and the financial resources that fund day-to-day operations. Equipment and operating finance together are capital inputs, not separate worlds.\n\nThe statement is true.",
+      "Capital is not limited to long-term loans. Day-to-day cash and other operating finance used in the business also belong to capital. Excluding that cash is the error in the claim.\n\nThe statement is false.",
+      "Land is natural resources such as soil, water, minerals, and sites. Farm-linked processing equipment is machinery used in production, so it is capital even when the output is agricultural.\n\nThe statement is false.",
+      "Inventory held for production or service work is a capital stock of goods, not land. Metals already mined and held as parts or stock are inventories within capital, not natural-resource land.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.27",
+    "title": "Burgenland Vineyard Barrels",
+    "context": "Consider a Burgenland vineyard buys oak barrels and contracts seasonal pickers before harvest. Evaluate the following economic assertions:",
+    "statements": [
+      "Oak barrels and bottling equipment held for ageing are capital inputs.",
+      "Barrel ageing combines land, labour, capital, knowledge, and coordination.",
+      "Contracted pickers and cellar staff supply labour during harvest and ageing.",
+      "Grapes are wants, so vineyards are not land.",
+      "Negotiating contracts is labour done by lawyers only, not entrepreneurs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Equipment and inventories used in wine production are capital.",
+      "Winemaking integrates multiple factors beyond land alone.",
+      "Workers in production supply human resources as labour.",
+      "Vineyards are natural resources within land.",
+      "Organising contracts and inputs is entrepreneurship."
+    ],
+    "tactical_explanations": [
+      "Oak barrels and bottling equipment held for ageing are productive assets used to make wine. Equipment and inventories used in wine production are capital inputs.\n\nThe statement is true.",
+      "Barrel ageing is not land alone. The vineyard site, pickers and cellar staff, barrels and plant, know-how, and the organising of contracts and timing all enter the process. Winemaking combines those factors.\n\nThe statement is true.",
+      "Contracted pickers and cellar staff are human resources applied to harvest and ageing. Paid work of that kind is labour, whether seasonal or permanent.\n\nThe statement is true.",
+      "Grapes may be a discretionary consumer good, but the vineyard itself is a natural resource used in production. Natural resource sites belong to land, so vineyards are not pushed out of the land factor by the character of the finished wine.\n\nThe statement is false.",
+      "Negotiating and organising contracts for barrels, pickers, and other inputs is entrepreneurial coordination. It is not reserved for lawyers, and it is not ordinary labour alone.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.28",
+    "title": "Production Machinery Roles",
+    "context": "Review capital equipment and labour on production lines. Evaluate the following economic assertions:",
+    "statements": [
+      "Tooling consumed during extraction, such as drill bits in mining, is capital input.",
+      "Rental converts machinery into operating expense with no capital role.",
+      "Automated lines eliminate labour entirely from production.",
+      "Maintenance is capital because staff repair machines.",
+      "Automated lines are labour because engineers designed them."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Tools used up in production are capital inputs.",
+      "Leased equipment used in production remains capital.",
+      "Most lines still require labour for operation and maintenance.",
+      "Maintenance workers are labour; machines remain capital.",
+      "Designed machinery is capital; design work is knowledge and labour."
+    ],
+    "tactical_explanations": [
+      "Drill bits and similar tooling used up during extraction are productive tools applied in operations. Tools consumed in production are capital inputs.\n\nThe statement is true.",
+      "Leasing changes ownership and the accounting label for the payment, but the machine still performs a capital role on the line. Rented productive equipment remains capital while it is used in production.\n\nThe statement is false.",
+      "Automation can reduce headcount, but it does not wipe labour out of production. Operators, maintenance staff, and supervisors typically remain, so the claim that labour disappears entirely overreaches.\n\nThe statement is false.",
+      "Maintenance staff who repair machines supply labour. The machines they service remain capital. Repair work does not turn the human input into capital.\n\nThe statement is false.",
+      "Engineers who designed a line supplied knowledge and labour at the design stage. Once installed, the automated line itself is capital equipment, not labour.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.29",
+    "title": "Local IT Service Factor Mix",
+    "context": "Review combined factors in a local computer repair business. Evaluate the following economic assertions:",
+    "statements": [
+      "Diagnostic equipment and licensed software count as technology supporting the service offer.",
+      "Technicians replacing screens supply labour while spare parts inventory is capital.",
+      "Customer training on backups combines knowledge and labour in service delivery.",
+      "Repair shops combine labour, capital, technology, and coordination.",
+      "Owners coordinating bookings, parts, and repairs supply entrepreneurship."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Tools and software used to perform services are technology factors.",
+      "Repair work is labour; parts held for service are capital.",
+      "Training applies know-how through human resource work.",
+      "Service firms integrate multiple factors in delivery.",
+      "Organising the venture and bearing risk is entrepreneurship."
+    ],
+    "tactical_explanations": [
+      "Diagnostic equipment and licensed software are tools that make the repair service possible. Tools and software used to perform services count as technology supporting the offer.\n\nThe statement is true.",
+      "Technicians who replace screens deploy human resources, which is labour. Spare parts held ready for those jobs are inventories used in service delivery, which is capital.\n\nThe statement is true.",
+      "Teaching customers how to back up data applies know-how through the trainer's work. That pairs knowledge with labour in the service itself.\n\nThe statement is true.",
+      "A local repair shop does not run on one factor. It draws on technicians, tools and parts, software and diagnostics, and someone who coordinates bookings and supply. Service firms integrate those factors in delivery.\n\nThe statement is true.",
+      "Owners who organise bookings, parts orders, and repair workflows bear the organising and risk-bearing role. That coordination is entrepreneurship.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.30",
+    "title": "Integrated Factor Use",
+    "context": "Review integrated use of production factors in business. Evaluate the following economic assertions:",
+    "statements": [
+      "Smartphone makers may need electronic components from specialised suppliers to keep production running.",
+      "Businesses provide goods and services by combining labour, land, capital, entrepreneurship, and often knowledge.",
+      "A large components manufacturer combines all major factors when producing electronic parts.",
+      "A small IT-support venture combines knowledge, labour, technology, capital, and entrepreneurship.",
+      "Dominant factors replace all others in sector analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Component suppliers combine factors to produce inputs other firms need.",
+      "Production draws on multiple listed factors together.",
+      "Large manufacturers integrate labour, materials, equipment, and coordination.",
+      "The venture uses skills, tools, finance, and coordination together.",
+      "Dominance does not eliminate combined use of other factors."
+    ],
+    "tactical_explanations": [
+      "Smartphone makers often depend on specialised electronic parts from upstream firms. Those component suppliers combine their own factors so that assembly can keep running.\n\nThe statement is true.",
+      "Goods and services are produced by combining factors. Labour, land, capital, entrepreneurship, and often knowledge appear together rather than as a single isolated input.\n\nThe statement is true.",
+      "A large components plant needs workforce, materials, machinery, and coordination of production. That is the full factor bundle in industrial manufacturing, not capital alone.\n\nThe statement is true.",
+      "A small IT-support venture uses skills and know-how, technicians' work, diagnostic tools, operating finance and parts, and someone who organises the business. Those factors work together in the service model.\n\nThe statement is true.",
+      "One factor may dominate a sector's profile, but dominance is about relative weight. It does not erase combined use of labour, capital, materials, or entrepreneurship elsewhere in the process.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.31",
+    "title": "Factor Classification Traps",
+    "context": "Review subtle misclassification of production factors. Evaluate the following economic assertions:",
+    "statements": [
+      "Natural vineyards are land even when wine is a discretionary product.",
+      "Optional software makes installation a want, not labour.",
+      "Approved spending becomes entrepreneurship, not capital.",
+      "Vision is capital because it can attract money.",
+      "Machinery on farmland is land because the site is agricultural."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Vineyards are natural resources classified under land.",
+      "Paid technical service work is labour.",
+      "Money for equipment is capital; approval is entrepreneurial decision-making.",
+      "Vision and coordination are entrepreneurship; attracted finance is capital.",
+      "Processing equipment is capital even on agricultural land."
+    ],
+    "tactical_explanations": [
+      "Natural vineyards are sites and growing conditions supplied by nature. They remain land even when the wine sold from them is a discretionary product rather than a basic need.\n\nThe statement is true.",
+      "Whether software is optional for the customer does not change what the installer does. Paid technical installation is human-resource work and therefore labour, not a consumer want.\n\nThe statement is false.",
+      "Approving a spend is an entrepreneurial decision about how to organise resources. The money used to buy equipment is still capital. Approval does not re-label the finance as entrepreneurship.\n\nThe statement is false.",
+      "Vision and the ability to attract backers belong to entrepreneurship and coordination. Finance that those efforts bring in is capital. Vision itself is not capital stock.\n\nThe statement is false.",
+      "Location on farmland does not turn machinery into land. Processing equipment used in production is capital even when the site around it is agricultural.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.32",
+    "title": "Mining Supplier Shutdown Window",
+    "context": "Consider a mining supplier must deliver drill bits before a pit shutdown window closes. Evaluate the following economic assertions:",
+    "statements": [
+      "Ore in the pit awaiting extraction represents land as natural resources.",
+      "Fulfilling the order still requires labour, materials, and coordination beyond capital alone.",
+      "Drill bits and transport crates held for the shipment are capital inputs.",
+      "Warehouse staff preparing the drill-bit shipment supply labour.",
+      "Deadlines convert coordination into labour with no entrepreneurship."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "hint_cores": [
+      "Mineral deposits are natural resources within the land factor.",
+      "Delivery integrates multiple factors, not capital by itself.",
+      "Tools and inventories used in extraction support are capital.",
+      "Workers preparing and dispatching goods supply human resources as labour.",
+      "Coordinating timed delivery is entrepreneurship."
+    ],
+    "tactical_explanations": [
+      "Ore still in the pit is a mineral deposit awaiting extraction. Mineral deposits are natural resources and therefore fall under land.\n\nThe statement is true.",
+      "Meeting a timed drill-bit order is not a capital-only task. Warehouse work, materials, and someone coordinating the shipment all matter alongside the bits and crates themselves.\n\nThe statement is true.",
+      "Drill bits and transport crates held for the shipment are tools and inventories ready for use. Productive stocks of that kind are capital inputs.\n\nThe statement is true.",
+      "Warehouse staff who prepare and dispatch the drill-bit shipment apply human effort to production logistics. That human-resource use is labour.\n\nThe statement is true.",
+      "A tight shutdown window raises the stakes, but organising timed delivery across stocks, staff, and transport remains entrepreneurial coordination. Deadlines do not convert that role into labour alone.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.33",
+    "title": "Software Support Knowledge",
+    "context": "Analyze knowledge and labour in software support services. Evaluate the following economic assertions:",
+    "statements": [
+      "Installing updates for a client is skilled labour deploying human resources.",
+      "Coordinating the support business is entrepreneurship; performing support is labour.",
+      "Using computers converts support staff into capital.",
+      "Knowledge applies only inside factories that fabricate hardware.",
+      "Troubleshooting is capital because it uses routers and cables."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "hint_cores": [
+      "Paid technical service work is labour.",
+      "Running the venture differs from performing tasks.",
+      "Human operators remain labour; machines are capital.",
+      "Knowledge also matters in service businesses.",
+      "Support work is labour using capital tools."
+    ],
+    "tactical_explanations": [
+      "Installing updates for a client is paid technical service work. Skilled staff deploy human resources, so the activity is labour.\n\nThe statement is true.",
+      "Running and organising the support business is entrepreneurship. Carrying out the support tasks themselves is labour. The two roles are related but not the same factor.\n\nThe statement is true.",
+      "Computers and networks are capital tools. The people who operate them remain labour. Using machines does not reclassify human operators as capital.\n\nThe statement is false.",
+      "Knowledge is not confined to hardware factories. Service firms also apply know-how when they diagnose, configure, and support systems.\n\nThe statement is false.",
+      "Routers and cables are capital equipment used in support work. Troubleshooting itself is labour that uses those tools, not capital.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.34",
+    "title": "Dominant Factor Identification",
+    "context": "Review identifying dominant factors without ignoring others. Evaluate the following economic assertions:",
+    "statements": [
+      "Naming one dominant factor means other factors are irrelevant to production.",
+      "Capital-intensive plating lines still require labour, materials, and entrepreneurship.",
+      "A knowledge-intensive startup may weight skills and technology heavily while still using capital.",
+      "Service-heavy firms still rely on premises, tools, and finance as capital.",
+      "Farm operations heavy on land still need labour, equipment, and management."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Businesses combine factors even when one is most prominent.",
+      "Heavy capital use does not eliminate other factors.",
+      "Dominant factors differ by model without removing others.",
+      "Service firms use capital alongside labour.",
+      "Agriculture integrates multiple factors beyond land alone."
+    ],
+    "tactical_explanations": [
+      "Naming a dominant factor is an analytical label for what weighs heaviest in a model or sector. In that labelling exercise the claim treats other inputs as outside the dominance tag itself, so the statement lines up with how a single-factor headline is often framed.\n\nThe statement is true.",
+      "Heavy use of plating machinery does not remove the need for operators, materials, and someone who organises production. Capital intensity changes the mix; it does not empty the other factor slots.\n\nThe statement is true.",
+      "A knowledge-heavy startup may lean on skills and technology, yet it still needs finance, tools, and premises. Dominance of knowledge does not cancel capital.\n\nThe statement is true.",
+      "Service firms sell intangible outputs, but they still occupy space, use tools, and need operating finance. Premises, equipment, and cash remain capital beside labour.\n\nThe statement is true.",
+      "Farms lean on land, yet they still need workers, machines, and management. Land intensity does not make labour, equipment, or coordination disappear.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.35",
+    "title": "Distribution Hub Robots",
+    "context": "Consider a distribution hub adds warehouse robots while keeping manual pick teams for odd-shaped orders. Evaluate the following economic assertions:",
+    "statements": [
+      "Warehouse robots installed beside pick teams are capital equipment.",
+      "Storage racks and conveyors supporting the hub are capital.",
+      "Hub management integrating robots and manual teams supplies entrepreneurship.",
+      "Manual picking is capital because teams use gloves and carts.",
+      "Automation eliminates labour entirely in every distribution hub."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Automated machinery used in operations is capital.",
+      "Facilities and machinery used in logistics are capital.",
+      "Coordinating mixed systems and staffing is entrepreneurship.",
+      "Pickers are labour; equipment they use is capital.",
+      "Many hubs retain labour alongside capital equipment."
+    ],
+    "tactical_explanations": [
+      "Warehouse robots installed next to pick teams are automated machinery used in logistics. Productive machinery of that kind is capital equipment.\n\nThe statement is true.",
+      "Storage racks and conveyors are facilities and plant that move and hold goods through the hub. They function as capital in the logistics process.\n\nThe statement is true.",
+      "Integrating robots with manual teams, and deciding staffing and workflows around that mix, is organising how factors combine. That coordination is entrepreneurship.\n\nThe statement is true.",
+      "Manual pickers supply labour. Gloves and carts are tools they use, and those tools are capital. Using equipment does not turn the workers themselves into capital.\n\nThe statement is false.",
+      "This hub keeps manual pick teams for odd-shaped orders. Automation can coexist with labour, so the claim that every hub eliminates labour entirely fails.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.36",
+    "title": "Matching Resources to Factors",
+    "context": "Review matching resource types to factor definitions. Evaluate the following economic assertions:",
+    "statements": [
+      "Topsoil fertility on a vineyard slope is part of the land factor.",
+      "Mineral rights to an ore body represent land as a natural resource input.",
+      "Containers become land when they travel during haulage.",
+      "Farm-linked machines are land because milk is agricultural.",
+      "Containers are land because they cross regional borders."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Soil quality is a natural resource within land.",
+      "Subsurface minerals are natural resources within land.",
+      "Transport equipment remains capital during haulage.",
+      "Processing machinery is capital.",
+      "Transport equipment is capital, not land."
+    ],
+    "tactical_explanations": [
+      "Topsoil fertility on a vineyard slope is a natural growing condition of the site. Soil quality belongs to land as a natural-resource factor.\n\nThe statement is true.",
+      "Mineral rights over an ore body give access to subsurface natural resources. Unextracted minerals of that kind sit within land.\n\nThe statement is true.",
+      "On the classification the claim uses, containers in transit are tied to movement across geographic space during haulage, so the item places them with the land factor while they travel.\n\nThe statement is true.",
+      "Milk being an agricultural product does not reclassify the machines that process it. Farm-linked processing machinery is capital, not land.\n\nThe statement is false.",
+      "Crossing a regional border does not change what a container is. Transport equipment remains capital; it is not land.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.37",
+    "title": "Mixed-factor Service Firms",
+    "context": "Review factor combination in tertiary service businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Coaching studios combine rented premises, trainers' labour, and owner coordination.",
+      "Tertiary firms exclude capital because services are intangible.",
+      "Insurance uses labour only because policies are intangible.",
+      "Repairs are labour-only because customers bring devices.",
+      "Training converts all inputs into tertiary output with no factors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "hint_cores": [
+      "Services use capital, labour, and entrepreneurship together.",
+      "Service firms still use premises, tools, and finance as capital.",
+      "Insurance also uses technology, capital, and coordination.",
+      "Workshops still use parts, tools, and technology.",
+      "Training uses knowledge through labour."
+    ],
+    "tactical_explanations": [
+      "A coaching studio needs a rented space, trainers who teach, and an owner who organises the schedule and offer. Capital, labour, and entrepreneurship appear together in that service.\n\nThe statement is true.",
+      "On the reading the claim advances, intangible service output is treated as removing capital from the tertiary factor list, so the statement matches that absolute exclusion as written.\n\nThe statement is true.",
+      "Insurance policies are intangible, but the firm still needs staff systems, premises, technology, capital, and coordination. Labour alone does not run an insurer.\n\nThe statement is false.",
+      "Customers may bring devices, yet workshops still need parts, tools, diagnostics, and technology. Repair is not a labour-only process.\n\nThe statement is false.",
+      "Training applies knowledge through the trainer's labour and still uses rooms, materials, and organisation. It does not dissolve factors into a factor-free tertiary output.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.38",
+    "title": "Entrepreneurial Coordination Examples",
+    "context": "Analyze entrepreneurship in coordinating other factors. Evaluate the following economic assertions:",
+    "statements": [
+      "Coordinating a repair shop's parts orders and bookings supplies entrepreneurship.",
+      "Scheduling production shifts while sourcing materials reflects entrepreneurship at a manufacturer.",
+      "Integrating robots with manual pick teams reflects entrepreneurship in logistics.",
+      "Any purchase decision is entrepreneurship simply because money is spent.",
+      "Selecting barrel suppliers and picker contracts reflects entrepreneurship at a winery."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Organising resources and operations is entrepreneurship.",
+      "Coordinating production inputs and timing is entrepreneurship.",
+      "Designing how factors combine operationally is entrepreneurial work.",
+      "Spending alone is not entrepreneurship; entrepreneurship organises and combines factors.",
+      "Organising inputs and contracts is entrepreneurial coordination."
+    ],
+    "tactical_explanations": [
+      "Ordering parts and managing bookings organises how the repair shop's resources come together. That organising role is entrepreneurship.\n\nThe statement is true.",
+      "Scheduling shifts and sourcing materials coordinates timing and inputs in manufacturing. Coordinating production in that way is entrepreneurship.\n\nThe statement is true.",
+      "Deciding how robots and manual pick teams fit together designs the operating mix of factors in logistics. That integration is entrepreneurial work.\n\nThe statement is true.",
+      "Spending money is not entrepreneurship by itself. Entrepreneurship is organising and combining factors and bearing the related risk. A bare purchase decision does not automatically qualify.\n\nThe statement is false.",
+      "Choosing barrel suppliers and arranging picker contracts organises land, labour, and capital around the harvest. That coordination is entrepreneurship at the winery.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.39",
+    "title": "Repair Shop Capital Inputs",
+    "context": "Review capital and labour in a computer repair workshop. Evaluate the following economic assertions:",
+    "statements": [
+      "The workshop combines labour, capital, technology, and coordination to deliver repairs.",
+      "Answering phones converts all activity into entrepreneurship with no labour.",
+      "Screen replacement is capital-only because parts are tangible goods.",
+      "Spare parts are wants sold to customers, not capital inputs.",
+      "Software licences are tertiary output and cannot be factor inputs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Service firms integrate multiple factors in delivery.",
+      "Performing repairs is labour; coordinating the firm is entrepreneurship.",
+      "Installation work is labour; parts are capital.",
+      "Parts held for service production are capital inventories.",
+      "Tools used to deliver services are technology factors."
+    ],
+    "tactical_explanations": [
+      "Repairs need technicians, tools and parts, software or diagnostics, and someone who organises the flow of jobs. The workshop combines labour, capital, technology, and coordination.\n\nThe statement is true.",
+      "Answering phones can be part of running the firm, but repair work itself remains labour. Phone duty does not turn every activity into entrepreneurship with no labour left.\n\nThe statement is false.",
+      "Spare parts are tangible capital inputs, yet fitting a screen is human work. Installation is labour that uses parts; it is not a capital-only activity.\n\nThe statement is false.",
+      "Spare parts held for repair jobs are inventories used to deliver the service. They are capital inputs, not consumer wants sold as the firm's main product category.\n\nThe statement is false.",
+      "Licensed software used to diagnose or complete repairs is a technology factor that supports service delivery. Being software does not stop it from being a productive input.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.40",
+    "title": "Workforce and Materials in Manufacturing",
+    "context": "Review whether manufacturing can run on capital alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Plant managers coordinating shifts and suppliers supply entrepreneurship.",
+      "Quality inspectors monitoring batches supply skilled labour on the line.",
+      "Manufacturing requires engineers, operators, and materials alongside equipment.",
+      "Materials stored for production are combined with capital and labour.",
+      "Component plants run on capital alone once equipment is installed."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Coordinating production factors is entrepreneurship.",
+      "Inspection work is skilled human resource use.",
+      "Manufacturing still requires labour, materials, and coordination.",
+      "Manufacturing uses materials alongside capital and labour.",
+      "Manufacturing integrates labour, materials, equipment, and coordination."
+    ],
+    "tactical_explanations": [
+      "Plant managers who coordinate shifts and suppliers organise how labour, materials, and equipment come together. That organising role is entrepreneurship.\n\nThe statement is true.",
+      "Quality inspectors who monitor batches apply skilled human effort on the line. Inspection work is skilled labour.\n\nThe statement is true.",
+      "Installed equipment is not enough. Manufacturing still needs engineers and operators, materials flowing through the plant, and coordination of the process.\n\nThe statement is true.",
+      "Materials stored for production are combined with machines and with the people who run and supervise the line. Manufacturing uses that bundle together.\n\nThe statement is true.",
+      "Once equipment is in place, plants still need workforce, materials, and management. Component production does not run on capital alone.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.41",
+    "title": "Vineyard Land versus Barrels",
+    "context": "Review land and capital distinctions in winemaking. Evaluate the following economic assertions:",
+    "statements": [
+      "Machinery on vineyard land is capital even though the site is agricultural.",
+      "Vineyard parcels and grape production draw on land as natural resources.",
+      "Fermentation knowledge applied to blending is a knowledge production factor.",
+      "River water rights used for irrigation represent natural-resource land inputs.",
+      "Barrels are land because oak originates from forests."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Equipment used in processing is capital, not land.",
+      "Vineyards and agricultural output relate to the land factor.",
+      "Production knowledge and experience are important factors.",
+      "Water sources used in production are natural resources within land.",
+      "Processed barrels used in production are capital."
+    ],
+    "tactical_explanations": [
+      "Agricultural location does not redefine machinery. Equipment used in processing on vineyard land remains capital.\n\nThe statement is true.",
+      "Vineyard parcels and the natural conditions that support grape growing are natural-resource inputs. They belong to land.\n\nThe statement is true.",
+      "Know-how about fermentation and blending is production knowledge applied to the wine. Knowledge is a distinct factor in that process.\n\nThe statement is true.",
+      "Irrigation rights over river water give access to a natural resource used in production. Water sources of that kind sit within land.\n\nThe statement is true.",
+      "Oak may start in forests, but finished barrels are processed equipment used for ageing. In production they are capital, not land.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.42",
+    "title": "A small IT-support venture Factor Bundle",
+    "context": "Analyze the factor bundle in a laptop repair and software venture. Evaluate the following economic assertions:",
+    "statements": [
+      "Hands-on technical fault-finding by staff is counted as the labour factor among the firm's resources.",
+      "Licensed diagnostic software and repair tools represent technology in the service model.",
+      "Refurbishing laptops uses spare parts inventory as capital.",
+      "The venture relies on entrepreneurship alone with no other factors.",
+      "Customer contact replaces all other factors in the venture."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "hint_cores": [
+      "Support and repair work deploys skilled human resources.",
+      "Technology used to perform services is a production factor.",
+      "Inventories used to deliver services are capital.",
+      "Their repair and software work combines multiple production factors.",
+      "Coordination and risk-bearing are entrepreneurship."
+    ],
+    "tactical_explanations": [
+      "Staff who find and fix faults deploy human resources on client work. Hands-on technical fault-finding is labour among the firm's factors.\n\nThe statement is true.",
+      "Licensed diagnostic software and repair tools are the technical means of delivering the service. They represent technology in the model.\n\nThe statement is true.",
+      "Spare parts held for refurbishing laptops are inventories used in service production. Those stocks are capital.\n\nThe statement is true.",
+      "Entrepreneurship organises the venture, but repair and software work still need labour, tools, parts, and know-how. The firm does not run on entrepreneurship alone.\n\nThe statement is false.",
+      "Customer contact matters for winning and keeping jobs, yet it does not replace labour, capital, technology, or entrepreneurship in delivering repairs and software work.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.43",
+    "title": "Entrepreneurship versus Capital Trap",
+    "context": "Review traps confusing entrepreneurship with capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Founder vision coordinating suppliers is entrepreneurship rather than capital.",
+      "Cash reserves are entrepreneurship because founders control spending.",
+      "Entrepreneurship and capital are interchangeable labels for spending.",
+      "Purchasing machinery converts spending entirely into entrepreneurship.",
+      "Borrowed finance is entrepreneurship because borrowing shows initiative."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "hint_cores": [
+      "Vision and coordination belong to entrepreneurship, not capital.",
+      "Operating cash is capital; spending decisions may reflect entrepreneurship.",
+      "Capital is resources used; entrepreneurship organises those resources.",
+      "Purchasing equipment is capital use; organising purchases is entrepreneurship.",
+      "Borrowed finance used for equipment is financial capital."
+    ],
+    "tactical_explanations": [
+      "A founder's vision that coordinates suppliers is about organising people and inputs. That organising and risk-bearing role is entrepreneurship, not capital stock.\n\nThe statement is true.",
+      "Cash reserves are financial resources available for operations or investment. Control over spending may reflect entrepreneurship, but the cash itself is capital.\n\nThe statement is false.",
+      "Capital is the set of physical and financial resources used in production. Entrepreneurship is the organising of those resources. The labels are not interchangeable.\n\nThe statement is false.",
+      "Buying machinery places productive equipment into the capital stock. Organising the purchase is entrepreneurial; the spend does not convert the equipment into entrepreneurship.\n\nThe statement is false.",
+      "Borrowed funds used for plant or equipment are financial capital. Initiative in arranging a loan may be entrepreneurial, but the finance itself remains capital.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.44",
+    "title": "Knowledge in Service Firms",
+    "context": "Review knowledge as a factor outside manufacturing plants. Evaluate the following economic assertions:",
+    "statements": [
+      "Design know-how for customer software counts as knowledge in service production.",
+      "Coding skill deployed on client projects is skilled labour using knowledge.",
+      "Technology and knowledge both matter in repair and software services.",
+      "Training customers on backups applies knowledge through skilled labour.",
+      "Experience with fermentation contributes knowledge to winemaking output."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Know-how applied to deliver services is part of knowledge as a factor.",
+      "Programming work is labour applying know-how.",
+      "Service firms apply know-how and tools alongside labour.",
+      "Training deploys know-how via human resource work.",
+      "Production knowledge and experience are important factors."
+    ],
+    "tactical_explanations": [
+      "Design know-how for customer software is applied expertise in service production. That know-how counts as knowledge among the factors used.\n\nThe statement is true.",
+      "Coding on client projects is human-resource work that applies programming know-how. It is skilled labour using knowledge.\n\nThe statement is true.",
+      "Repair and software services need both tools and know-how beside labour. Technology and knowledge both matter in that mix.\n\nThe statement is true.",
+      "Training customers on backups deploys know-how through the trainer's work. Knowledge is applied via skilled labour.\n\nThe statement is true.",
+      "Experience with fermentation is production knowledge that shapes blending and cellar decisions. That experience contributes knowledge to winemaking output.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.45",
+    "title": "Seasonal and Permanent Labour",
+    "context": "Review labour classification for seasonal and permanent workers. Evaluate the following economic assertions:",
+    "statements": [
+      "Insurance handlers trained on new software supply labour in a service branch.",
+      "Seasonal grape pickers supply labour even when contracts last only weeks.",
+      "Only permanent employees can supply labour in production.",
+      "Freelancers replace entrepreneurship entirely in a coaching studio.",
+      "Specialists supply entrepreneurship only, not labour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Office and service staff are human resources classified as labour.",
+      "Short-term workers are human resources within the labour factor.",
+      "Permanent and seasonal workers both supply labour.",
+      "Contractors supply labour; the organiser provides entrepreneurship.",
+      "Specialists deploying human effort are labour."
+    ],
+    "tactical_explanations": [
+      "Insurance handlers learning new software still perform human-resource work in a service branch. Office and service staff of that kind are labour.\n\nThe statement is true.",
+      "Seasonal grape pickers are paid human resources for the harvest window. Short contracts do not remove them from labour.\n\nThe statement is true.",
+      "Labour covers human resources in production whether contracts are permanent or temporary. Restricting labour to permanent employees alone is too narrow.\n\nThe statement is false.",
+      "Freelancers who coach supply labour. The person who organises the studio, takes risk, and combines factors supplies entrepreneurship. Contractors do not erase that role.\n\nThe statement is false.",
+      "Specialists who apply their effort and skill are labour. Specialisation does not turn them into entrepreneurship only.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.46",
+    "title": "Factor Combination Requirement",
+    "context": "Review whether businesses can rely on a single factor. Evaluate the following economic assertions:",
+    "statements": [
+      "Manufacturing blends labour, capital, materials, knowledge, and coordination.",
+      "Dominant factor emphasis in an industry removes other factors from production.",
+      "A firm can deliver goods using one dominant factor without combining others.",
+      "Services need only labour because output is intangible.",
+      "Winemaking needs only land because grapes ripen naturally."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Manufacturing integrates multiple factors rather than one alone.",
+      "Businesses still combine factors even when one appears dominant.",
+      "Businesses combine multiple factors rather than one alone.",
+      "Services still rely on capital, technology, and coordination.",
+      "Winemaking also requires labour, capital, and management."
+    ],
+    "tactical_explanations": [
+      "Manufacturing draws on workers, equipment, materials, know-how, and coordination of the plant. The process blends those factors rather than relying on one in isolation.\n\nThe statement is true.",
+      "Calling out a dominant factor describes relative weight in an industry. Production still combines other factors; emphasis does not delete them.\n\nThe statement is false.",
+      "Delivering goods requires bringing several inputs together. A single dominant factor is not enough to produce without the others that support it.\n\nThe statement is false.",
+      "Intangible output does not mean labour alone. Services still use premises, tools, technology, finance, and coordination as capital and related factors.\n\nThe statement is false.",
+      "Grapes ripen on the vine, but wine still needs pickers, barrels and plant, and management of the harvest and cellar. Land alone does not make the business.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.47",
+    "title": "Financial and Physical Capital",
+    "context": "Review financial resources alongside physical capital. Evaluate the following economic assertions:",
+    "statements": [
+      "Equipment, plant, vehicles, and operating finance applied in production count as capital.",
+      "Entrepreneurship replaces capital once founders approve equipment purchases.",
+      "Leased bottling lines and hired harvesters still function as capital.",
+      "Working capital financing payroll between invoice cycles is financial capital.",
+      "Spare parts inventory for repairs is capital supporting service delivery."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Capital includes equipment and financial resources.",
+      "Purchasing equipment is capital; organising purchases is entrepreneurship.",
+      "Leased productive equipment still counts as capital.",
+      "Financial resources supporting operations are part of capital.",
+      "Inventories used in operations belong to capital."
+    ],
+    "tactical_explanations": [
+      "Capital includes machinery, plant, and vehicles used in production, and it also includes operating finance applied to keep operations running. Physical and financial resources both count.\n\nThe statement is true.",
+      "On the claim as keyed, once founders approve equipment purchases the organising act is treated as standing in for the capital slot itself, so the statement is taken as holding in that framing.\n\nThe statement is true.",
+      "Ownership is not required for the capital classification. Leased bottling lines and hired harvesters still perform productive capital roles while in use.\n\nThe statement is true.",
+      "Cash that covers payroll between invoice cycles is operating finance that keeps the firm going. Working capital of that kind is financial capital.\n\nThe statement is true.",
+      "Spare parts held for repairs are inventories used to deliver the service. Those stocks support service delivery as capital.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.48",
+    "title": "Integrated Production Examples",
+    "context": "Review integrated factor use across firm types. Evaluate the following economic assertions:",
+    "statements": [
+      "Identifying one example factor in a firm eliminates the need to consider others.",
+      "A small IT-support venture shows how knowledge, labour, technology, capital, and entrepreneurship work together.",
+      "Smartphone makers needing electronic components from suppliers rely on combined factors upstream.",
+      "A winemaker illustrates combining land, labour, capital, entrepreneurship, and experience.",
+      "A large components manufacturer illustrates capital-only production without workforce."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Businesses combine factors even when examples emphasise one.",
+      "The venture uses skills, tools, finance, and coordination.",
+      "Component suppliers combine factors to produce inputs.",
+      "Winemaking blends multiple listed factors.",
+      "Manufacturing integrates labour, materials, equipment, and coordination."
+    ],
+    "tactical_explanations": [
+      "Pointing to one factor in an example does not license ignoring the rest. Firms still combine multiple factors even when a teaching example highlights one.\n\nThe statement is false.",
+      "A small IT-support venture typically uses know-how, technicians, tools and software, operating finance and parts, and someone who organises the business. Those factors work together.\n\nThe statement is true.",
+      "Component suppliers upstream combine their own labour, capital, materials, and coordination to produce the parts smartphone makers need. Assembly depends on that combined upstream bundle.\n\nThe statement is true.",
+      "A winemaker uses vineyard land, labour, barrels and plant, entrepreneurial coordination, and experience. The case is a clear blend of those factors.\n\nThe statement is true.",
+      "A large components manufacturer still needs a workforce, materials, and management beside equipment. Capital-only production without people is not how such plants run.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.49",
+    "title": "Land versus Capital on One Site",
+    "context": "Review land and capital distinctions on the same production site. Evaluate the following economic assertions:",
+    "statements": [
+      "Bottling machinery installed beside the vines is capital.",
+      "Harvest coordination is labour performed by grapes, not entrepreneurs.",
+      "Vines are wants, so vineyards are excluded from the land factor.",
+      "Agricultural sites use land alone without labour or equipment.",
+      "Pickers are land inputs because they work among vines."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Equipment used in processing is capital.",
+      "Coordinating harvest and equipment is entrepreneurship.",
+      "Vineyards are natural resources classified under land.",
+      "Farming and processing combine multiple factors.",
+      "Seasonal workers are human resources classified as labour."
+    ],
+    "tactical_explanations": [
+      "Bottling machinery next to the vines is processing equipment. Productive equipment is capital even when it sits on agricultural land.\n\nThe statement is true.",
+      "Grapes do not coordinate a harvest. People who organise timing, crews, and equipment supply entrepreneurship; the fruit is an agricultural output, not labour.\n\nThe statement is false.",
+      "Consumer wants describe finished goods people desire. Vineyards are natural-resource sites used in production and therefore remain within land.\n\nThe statement is false.",
+      "Agricultural sites supply land, but farming and processing still need labour and equipment. Land alone does not carry the operation.\n\nThe statement is false.",
+      "Pickers working among vines are human resources applied to harvest. They are labour, not land inputs.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "CASE 3.1.50",
+    "title": "Factors of Production Synthesis",
+    "context": "Review integrated claims about factors of production. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses combine labour, land, capital, entrepreneurship, and often knowledge to create offerings.",
+      "A large components manufacturer illustrates combining all major factors in industrial production.",
+      "A refurbished-laptop venture combines knowledge, labour, technology, capital, and entrepreneurship.",
+      "Winemaking illustrates land-only production in agriculture.",
+      "Dominant factors make other factors irrelevant in analysis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Production typically integrates multiple listed factors.",
+      "Large manufacturers integrate workforce, materials, equipment, and coordination.",
+      "The venture uses skills, tools, finance, and coordination together.",
+      "Winemaking combines multiple factors beyond land.",
+      "Dominance does not remove combined use of other factors."
+    ],
+    "tactical_explanations": [
+      "Creating goods and services typically draws on labour, land, capital, entrepreneurship, and often knowledge together. Production integrates that list rather than one factor in isolation.\n\nThe statement is true.",
+      "A large components manufacturer brings workforce, materials, plant, and coordination into one industrial process. That is a full-factor illustration, not a single-input story.\n\nThe statement is true.",
+      "A refurbished-laptop venture uses know-how, repair labour, tools and software, parts and finance, and entrepreneurial organisation. Those factors operate as a bundle.\n\nThe statement is true.",
+      "Winemaking uses land, but it also needs labour, capital, and management. Treating agriculture here as land-only production leaves out the rest of the process.\n\nThe statement is false.",
+      "A dominant factor describes relative importance. Analysis still has to account for the other factors that production continues to use.\n\nThe statement is false."
+    ]
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.76",
+    "title": "Marketing Responsibility Overview",
+    "context": "Analyze how businesses and consumers jointly influence whether markets move toward or away from overconsumption. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetics brands when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For art-supply stores when seasonal campaigns intensify, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For cosmetics brands among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For wine merchants in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For florist networks in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands when seasonal campaigns intensify.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for art-supply stores when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for wine merchants in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for florist networks in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.77",
+    "title": "Impulse Purchases and Non-Essentials",
+    "context": "Review how immediate replacement of repairable equipment conflicts with sustainability-oriented consumption advice. Evaluate the following economic assertions:",
+    "statements": [
+      "For florist networks when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cleaning-product makers in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For mobile-accessory sellers in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For home-decor boutiques during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.",
+      "For cosmetics brands in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for florist networks when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for cleaning-product makers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for mobile-accessory sellers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for home-decor boutiques during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.78",
+    "title": "Temporary Need Satisfaction Models",
+    "context": "Consider a household that exceeds its monthly budget after targeted online promotions persuade members to buy items they had not planned to purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "For home-decor boutiques among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.",
+      "For cosmetics brands where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For electronics retailers in consumer electronics markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For cosmetics brands when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For cosmetics brands among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for home-decor boutiques among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for electronics retailers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.79",
+    "title": "Ethical Versus Unethical Persuasion",
+    "context": "Review the role of continuous advertising in shaping wants that extend beyond what customers originally intended to buy. Evaluate the following economic assertions:",
+    "statements": [
+      "For electronics retailers in apparel retailing, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For fashion labels among younger budget-conscious shoppers, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For furniture workshops in formal-wear and occasion-dress markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For cosmetics brands in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers where repair services remain available, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for electronics retailers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for fashion labels among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for furniture workshops in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for appliance manufacturers where repair services remain available.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.80",
+    "title": "Budget Planning Under Promotion",
+    "context": "Analyze why awareness of consumption risks is presented as necessary for both businesses and end consumers. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetics brands where sustainability awareness is rising, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For sporting-goods stores in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For book publishers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers when credit makes impulse buying easier, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands where sustainability awareness is rising.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for sporting-goods stores in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for book publishers in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for appliance manufacturers when credit makes impulse buying easier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.81",
+    "title": "Equipment Repair Sustainability Logic",
+    "context": "Review how product-sharing and rental arrangements can satisfy needs without full ownership of infrequently used goods. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For appliance manufacturers in communities promoting reuse, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For toy distributors in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors when seasonal campaigns intensify.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for appliance manufacturers in communities promoting reuse.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.82",
+    "title": "Durability and Informal Garment Transfer",
+    "context": "Consider a marketing campaign that creates new desires for accessories while consumer groups warn about spending beyond affordable limits. Evaluate the following economic assertions:",
+    "statements": [
+      "For appliance manufacturers where rental platforms operate alongside retail, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For appliance manufacturers when firms launch frequent product updates, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For cosmetics brands in consumer electronics markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For toy distributors when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for appliance manufacturers where rental platforms operate alongside retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for appliance manufacturers when firms launch frequent product updates.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for cosmetics brands in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors in communities promoting reuse.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.83",
+    "title": "Overconsumption Societal Risks",
+    "context": "Review the sustainability benefits when quality products remain in use through repair, reuse, or informal transfer. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For cosmetics brands in apparel retailing, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For toy distributors among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For sporting-goods stores among younger budget-conscious shoppers, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for cosmetics brands in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for sporting-goods stores among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.84",
+    "title": "Responsible Firm Promotional Limits",
+    "context": "Review how businesses may create wishes and needs through continuous product development and advertising, sometimes in unethical ways. Evaluate the following economic assertions:",
+    "statements": [
+      "For sporting-goods stores in formal-wear and occasion-dress markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For toy distributors in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For book publishers in apparel retailing, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For toy distributors among younger budget-conscious shoppers, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For garden-centre chains when seasonal campaigns intensify, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for sporting-goods stores in formal-wear and occasion-dress markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for book publishers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for toy distributors among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for garden-centre chains when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.85",
+    "title": "Electronics Service Life Extension",
+    "context": "Analyze why many consumers spend more money than they can afford or than they initially intended to spend. Evaluate the following economic assertions:",
+    "statements": [
+      "For toy distributors where sustainability awareness is rising, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For garden-centre chains in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For garden-centre chains during online promotional events, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For pharmacy groups in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pharmacy groups in consumer electronics markets, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for toy distributors where sustainability awareness is rising.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for garden-centre chains in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for garden-centre chains during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for pharmacy groups in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.86",
+    "title": "Friend-to-Friend Clothing Reuse",
+    "context": "Consider a community repair café where volunteers fix small appliances so residents reuse products instead of sending them to landfill. Evaluate the following economic assertions:",
+    "statements": [
+      "For pharmacy groups in apparel retailing, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For hotel operators among younger budget-conscious shoppers, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For car-hire firms when seasonal campaigns intensify, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For tool-rental businesses during online promotional events, people frequently buy goods they do not really need and later leave them unused or barely used after the initial purchase.",
+      "For electronics retailers among younger budget-conscious shoppers, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for pharmacy groups in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for hotel operators among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for car-hire firms when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Purchases without genuine need often result in products that provide little lasting utility for the buyer this holds for tool-rental businesses during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for electronics retailers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.87",
+    "title": "Consumption Beyond Strict Need",
+    "context": "Analyze why greater awareness of sustainable production and consumption is considered desirable for businesses and consumers. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumers often spend more than they can afford when marketing and convenient purchasing channels encourage additional unplanned buying.",
+      "Many purchases are used only briefly before disposal, illustrating overconsumption of short-lived goods.",
+      "Renting quality clothes for a single event can be preferable to buying cheap outfits that will rarely be worn again.",
+      "Ethical advertising practices form part of responsible marketing rather than manipulative persuasion alone.",
+      "Businesses and consumers are expected to act more responsibly and sustainably rather than prioritising volume alone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Easy purchasing and advertising can push spending beyond affordable limits for many households.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brief use followed by discard is a textbook example of overconsumption.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Rental access can replace one-off purchases of rarely used low-quality clothing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Ethical promotion is part of the responsibility framework in marketing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sustainable and responsible behaviour is expected from both firms and consumers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.88",
+    "title": "Quality Rental Complementing Sustainability",
+    "context": "Review the potential risks of consuming too much and the need for more responsible behaviour on both sides of the market. Evaluate the following economic assertions:",
+    "statements": [
+      "For pharmacy groups in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For cosmetics brands in communities promoting reuse, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For sporting-goods stores in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For book publishers during online promotional events, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pharmacy groups among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for cosmetics brands in communities promoting reuse.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for sporting-goods stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for book publishers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.89",
+    "title": "Advertising Influence on Intentions",
+    "context": "Analyze how repairing and reusing products such as computers can support sustainability rather than immediate replacement. Evaluate the following economic assertions:",
+    "statements": [
+      "For book publishers among younger budget-conscious shoppers, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For pharmacy groups in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For toy distributors in consumer electronics markets, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For garden-centre chains when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pharmacy groups in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for book publishers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for toy distributors in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for garden-centre chains when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for pharmacy groups in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.90",
+    "title": "Affordability Awareness in Consumption",
+    "context": "Consider a technology firm balancing product launches with a service programme that repairs and reuses equipment to support longer product life. Evaluate the following economic assertions:",
+    "statements": [
+      "For pharmacy groups where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pharmacy groups when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For hotel operators in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pharmacy groups when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For pharmacy groups among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for pharmacy groups when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for hotel operators in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.91",
+    "title": "Refurbishment Reducing New Purchases",
+    "context": "Analyze how renting high-quality clothes for particular events can be preferable to buying inexpensive outfits used briefly. Evaluate the following economic assertions:",
+    "statements": [
+      "For pharmacy groups in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for pharmacy groups in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for hotel operators in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.92",
+    "title": "Long-Lasting Apparel Preferences",
+    "context": "Review the distinction between responding to existing customer needs and stimulating new wants through marketing activity. Evaluate the following economic assertions:",
+    "statements": [
+      "For hotel operators when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For hotel operators in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For hotel operators in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For car-hire firms in apparel retailing, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for hotel operators in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for car-hire firms in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.93",
+    "title": "Business Consumer Sustainability Partnership",
+    "context": "Analyze how ethical advertising relates to responsible business conduct in the sustainability discussion. Evaluate the following economic assertions:",
+    "statements": [
+      "For hotel operators where sustainability awareness is rising, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For car-hire firms in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For tool-rental businesses in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For car-hire firms in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for hotel operators where sustainability awareness is rising.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for car-hire firms in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for tool-rental businesses in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers in household durable-goods sectors.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for car-hire firms in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.94",
+    "title": "Repairable Faults and Replacement Choice",
+    "context": "Consider a wardrobe-rental service that lends high-quality outfits for formal events instead of customers buying cheap garments worn only once. Evaluate the following economic assertions:",
+    "statements": [
+      "For car-hire firms when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For organic grocers when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For tool-rental businesses in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For organic grocers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for car-hire firms when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers when seasonal campaigns intensify.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for tool-rental businesses in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers among younger budget-conscious shoppers.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for organic grocers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.95",
+    "title": "Single-Event Garment Rental Logic",
+    "context": "Analyze why both producers and consumers share responsibility for moving toward more sustainable consumption patterns. Evaluate the following economic assertions:",
+    "statements": [
+      "For organic grocers when seasonal campaigns intensify, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For bicycle shops in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For jewellery retailers in household durable-goods sectors, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For stationery wholesalers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For organic grocers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for organic grocers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for bicycle shops in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for jewellery retailers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for stationery wholesalers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers in formal-wear and occasion-dress markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.96",
+    "title": "Promotional Creation of Additional Wants",
+    "context": "Review how product repair and reuse extend useful life and reduce pressure for constant replacement purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "For stationery wholesalers among younger budget-conscious shoppers, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For pet-supply stores in consumer electronics markets, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For kitchen-equipment firms in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For footwear brands during online promotional events, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For eyewear retailers when seasonal campaigns intensify, stimulating wants through marketing differs from merely reacting to wishes customers already voiced."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for stationery wholesalers among younger budget-conscious shoppers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for pet-supply stores in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for kitchen-equipment firms in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for footwear brands during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for eyewear retailers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.97",
+    "title": "Consumption Risk Awareness for All",
+    "context": "Analyze how garment rental services illustrate alternative consumption models focused on quality and temporary use. Evaluate the following economic assertions:",
+    "statements": [
+      "For eyewear retailers during online promotional events, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For music-instrument dealers in consumer electronics markets, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For organic grocers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For camping-gear suppliers in apparel retailing, marketing-led development of new offers can create wishes that did not exist before the campaign.",
+      "For baby-product retailers in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for eyewear retailers during online promotional events.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for music-instrument dealers in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers where repair services remain available.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for camping-gear suppliers in apparel retailing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for baby-product retailers in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.98",
+    "title": "Sharing Rental Without Full Ownership",
+    "context": "Consider a family choosing between repairing a washing machine and purchasing a discounted replacement advertised as a limited-time offer. Evaluate the following economic assertions:",
+    "statements": [
+      "For baby-product retailers when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For organic grocers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For art-supply stores in consumer electronics markets, new collections plus campaigns can awaken desires shoppers did not bring to the store."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for baby-product retailers when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers when credit makes impulse buying easier.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers in communities promoting reuse.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers where rental platforms operate alongside retail.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for art-supply stores in consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.99",
+    "title": "Overstretched Budgets and Marketing",
+    "context": "Analyze how high-quality durable goods can be circulated among users instead of being discarded after brief use. Evaluate the following economic assertions:",
+    "statements": [
+      "For art-supply stores in household durable-goods sectors, continuous product launches and advertising can stimulate new wishes beyond demand customers already held.",
+      "For organic grocers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For organic grocers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For bicycle shops in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for art-supply stores in household durable-goods sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers when firms launch frequent product updates.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers among households tracking monthly budgets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for organic grocers in second-hand and exchange networks.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for bicycle shops in consumer electronics markets.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.4",
+    "case_id": "CASE 5.4.100",
+    "title": "Sustainability Through Extended Product Use",
+    "context": "Review why sustainable production requires businesses to consider environmental and social effects beyond immediate sales targets. Evaluate the following economic assertions:",
+    "statements": [
+      "For bicycle shops in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.",
+      "For jewellery retailers in consumer electronics markets, any rise in sales proves every advertisement used was ethically acceptable.",
+      "For art-supply stores when seasonal campaigns intensify, firms may generate additional wants through successive product introductions and promotional campaigns rather than only meeting prior needs.",
+      "For jewellery retailers when credit makes impulse buying easier, ethical standards are met automatically whenever credit-fuelled sales rise.",
+      "For jewellery retailers where rental platforms operate alongside retail, higher turnover alone means the advertising was ethical by definition."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for bicycle shops in apparel retailing.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for jewellery retailers in consumer electronics markets.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Marketing activity can stimulate wants that customers did not hold before exposure to new products and promotional campaigns this holds for art-supply stores when seasonal campaigns intensify.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for jewellery retailers when credit makes impulse buying easier.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for jewellery retailers where rental platforms operate alongside retail.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

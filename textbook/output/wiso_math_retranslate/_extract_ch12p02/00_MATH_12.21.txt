@@ -1,0 +1,330 @@
+CASE MATH 12.21
+ANSWER [true, true, true, false, false]
+TITLE_DE Das studentische Projektteam
+CONTEXT_DE Eine Vorlesungsgruppe hat 10 Informatik- und 8 Wirtschaftsstudierende (18 insgesamt). Die Lehrkraft wählt zufällig 4 der 18 für ein Projektteam.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 4-Personen-Teams beträgt 3.060.
+  B. Die Wahrscheinlichkeit für genau 2 Informatik- und 2 Wirtschaftsstudierende ist größer als 40%.
+  C. Die Wahrscheinlichkeit, dass alle 4 Teammitglieder Wirtschaftsstudierende sind, ist kleiner als 3%.
+  D. Die Wahrscheinlichkeit für mindestens einen Informatikstudierenden im Team ist kleiner als 95%.
+  E. Die Wahrscheinlichkeit, dass Informatikstudierende die Mehrheit bilden (3 oder 4 von 4), ist größer als die für genau 2 Informatikplätze.
+
+=== EXPL 0 A ===
+**A.** → True
+
+This statement asks for the total number of possible 4-person teams that can be formed from the 18 students. This is a direct application of combinations, as the order of selection does not matter and students are selected without replacement.
+
+The number of ways to choose $k=4$ students from a total of $N=18$ students is given by $\binom{N}{k}$.
+
+$$
+\binom{18}{4} = \dfrac{18!}{4!(18-4)!}
+$$
+
+$$
+\dfrac{18!}{4!(14)!} = \dfrac{18 \cdot 17 \cdot 16 \cdot 15}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+18 \times 17 = 306
+$$
+
+$$
+306 \times 16 = 4896
+$$
+
+$$
+4896 \times 15 = 73440
+$$
+
+$$
+\dfrac{73440}{24} = 3060
+$$
+
+$$
+\binom{18}{4} = 3060
+$$
+
+There are $3060$ possible 4-person teams. The claim states that the total number of possible 4-person teams is $3060$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the probability that the team contains exactly 2 CS students and 2 business students. To calculate this, we use the hypergeometric probability formula, where we need to select $x=2$ CS students from $N_C=10$ and $k-x=2$ business students from $N_B=8$. The total number of ways to form such a team is $\binom{10}{2} \binom{8}{2}$.
+
+The number of ways to choose 2 CS students from 10 is:
+
+$$
+\binom{10}{2} = \dfrac{10!}{2!(10-2)!}
+$$
+
+$$
+\dfrac{10!}{2!(8)!} = \dfrac{10 \cdot 9}{1 \cdot 2}
+$$
+
+$$
+10 \times 9 = 90
+$$
+
+$$
+\dfrac{90}{2} = 45
+$$
+
+$$
+\binom{10}{2} = 45
+$$
+
+The number of ways to choose 2 business students from 8 is:
+
+$$
+\binom{8}{2} = \dfrac{8!}{2!(8-2)!}
+$$
+
+$$
+\dfrac{8!}{2!(6)!} = \dfrac{8 \cdot 7}{1 \cdot 2}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+\dfrac{56}{2} = 28
+$$
+
+$$
+\binom{8}{2} = 28
+$$
+
+The number of teams with exactly 2 CS and 2 business students is the product of these combinations:
+
+$$
+\text{Number of favorable teams} = \binom{10}{2} \times \binom{8}{2} = 45 \times 28
+$$
+
+$$
+45 \times 28 = 1260 = 1260
+$$
+
+The probability of this event is the ratio of favorable teams to the total number of possible teams, which is $3060$ as calculated in the overview.
+
+$$
+P(X = 2) = \frac{1260}{3060}
+$$
+
+$$
+\approx 0.41176
+$$
+
+Expressed as a percentage, this is approximately $41.18\%$. The claim states that this probability is greater than $40\%$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → True
+
+This statement asks for the probability that all 4 team members are business students. This means there are $x=0$ CS students selected from $N_C=10$ and $k-x=4$ business students selected from $N_B=8$. The number of ways to form such a team is $\binom{10}{0} \binom{8}{4}$.
+
+The number of ways to choose 0 CS students from 10 is:
+
+$$
+\binom{10}{0} = 1
+$$
+
+The number of ways to choose 4 business students from 8 is:
+
+$$
+\binom{8}{4} = \dfrac{8!}{4!(8-4)!}
+$$
+
+$$
+\dfrac{8!}{4!(4)!} = \dfrac{8 \cdot 7 \cdot 6 \cdot 5}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+8 \times 7 = 56
+$$
+
+$$
+56 \times 6 = 336
+$$
+
+$$
+336 \times 5 = 1680
+$$
+
+$$
+\dfrac{1680}{24} = 70
+$$
+
+$$
+\binom{8}{4} = 70
+$$
+
+The number of teams with all 4 business students is the product of these combinations:
+
+$$
+\text{Number of favorable teams} = \binom{10}{0} \times \binom{8}{4} = 1 \times 70
+$$
+
+$$
+1 \times 70 = 70 = 70
+$$
+
+The probability of this event is the ratio of favorable teams to the total number of possible teams, $3060$.
+
+$$
+P(X = 0) = \frac{70}{3060}
+$$
+
+$$
+\approx 0.02288
+$$
+
+Expressed as a percentage, this is approximately $2.29\%$. The claim states that this probability is less than $3\%$.
+
+So the statement is True.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that at least one CS student is on the team. It is often easier to calculate the probability of the complementary event and subtract it from 1. The complement of "at least one CS student" is "no CS students", which means all 4 team members are business students.
+
+From the calculation for Statement C, we found the probability of no CS students ($X=0$) to be:
+
+$$
+P(X = 0) = \frac{70}{3060} \approx 0.02288
+$$
+
+Now, we can find the probability of at least one CS student:
+
+$$
+P(\text{at least 1 CS}) = 1 - P(X = 0)
+$$
+
+$$
+P(\text{at least 1 CS}) = 1 - \frac{70}{3060}
+$$
+
+$$
+P(\text{at least 1 CS}) = 1 - 0.022879...
+$$
+
+$$
+P(\text{at least 1 CS}) \approx 0.97712
+$$
+
+Expressed as a percentage, this is approximately $97.71\%$. The claim states that this probability is less than $95\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement compares two probabilities: the probability that CS students form a majority (3 or 4 CS students) and the probability that exactly 2 CS students are on the team. We need to calculate $P(X=3)$, $P(X=4)$, and then $P(X \ge 3)$. We already calculated $P(X=2)$ in Statement B.
+
+First, calculate the probability of exactly 3 CS students ($X=3$). This means choosing 3 CS students from 10 and 1 business student from 8.
+
+$$
+\binom{10}{3} = \dfrac{10!}{3!(10-3)!}
+$$
+
+$$
+\dfrac{10!}{3!(7)!} = \dfrac{10 \cdot 9 \cdot 8}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+10 \times 9 = 90
+$$
+
+$$
+90 \times 8 = 720
+$$
+
+$$
+\dfrac{720}{6} = 120
+$$
+
+$$
+\binom{10}{3} = 120
+$$
+
+$$
+\binom{8}{1} = \dfrac{8!}{1!(8-1)!}
+$$
+
+$$
+\binom{8}{1} = 8
+$$
+
+$$
+P(X = 3) = \frac{\binom{10}{3} \binom{8}{1}}{3060} = \frac{120 \times 8}{3060} = \frac{960}{3060} \approx 0.31373
+$$
+
+Next, calculate the probability of exactly 4 CS students ($X=4$). This means choosing 4 CS students from 10 and 0 business students from 8.
+
+$$
+\binom{10}{4} = \dfrac{10!}{4!(10-4)!}
+$$
+
+$$
+\dfrac{10!}{4!(6)!} = \dfrac{10 \cdot 9 \cdot 8 \cdot 7}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+10 \times 9 = 90
+$$
+
+$$
+90 \times 8 = 720
+$$
+
+$$
+720 \times 7 = 5040
+$$
+
+$$
+\dfrac{5040}{24} = 210
+$$
+
+$$
+\binom{10}{4} = 210
+$$
+
+$$
+\binom{8}{0} = 1
+$$
+
+$$
+P(X = 4) = \frac{\binom{10}{4} \binom{8}{0}}{3060} = \frac{210 \times 1}{3060} = \frac{210}{3060} \approx 0.06863
+$$
+
+The probability that CS students form a majority is $P(X=3) + P(X=4)$.
+
+$$
+P(\text{majority CS}) = P(X = 3) + P(X = 4)
+$$
+
+$$
+P(\text{majority CS}) = \frac{960}{3060} + \frac{210}{3060} = \frac{1170}{3060}
+$$
+
+$$
+P(\text{majority CS}) \approx 0.38235
+$$
+
+Now we compare this to the probability that exactly 2 CS students are on the team, $P(X=2)$, which we found in Statement B:
+
+$$
+P(X = 2) = \frac{1260}{3060} \approx 0.41176
+$$
+
+The statement claims that $P(\text{majority CS})$ is greater than $P(X=2)$. We compare $0.38235$ with $0.41176$.
+
+So the statement is False.
+

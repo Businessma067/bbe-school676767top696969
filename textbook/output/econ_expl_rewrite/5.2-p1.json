@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.01",
+    "title": "Marketing Objectives Overview",
+    "context": "Analyze how businesses set marketing objectives after analysing the markets they wish to operate in. Evaluate the following economic assertions:",
+    "statements": [
+      "If customers are not satisfied with the product, they are unlikely to buy it again.",
+      "Satisfied customers often become loyal customers who may purchase the product again.",
+      "Customer satisfaction is unrelated to whether buyers purchase the product again.",
+      "Customer satisfaction as a marketing objective is interrelated with objectives such as sales and loyalty.",
+      "Meeting customer wishes and needs is a prerequisite for defining meaningful marketing objectives."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dissatisfied customers typically withhold repeat purchases, which is why satisfaction is a core marketing objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction frequently leads to loyalty and repeat buying behaviour.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction is explicitly interrelated with repeat purchase and loyalty objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The text links satisfaction to other marketing goals rather than treating it in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses analyse wishes and needs before clarifying the objectives they pursue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.02",
+    "title": "Customer Satisfaction and Loyalty",
+    "context": "Consider a sportswear manufacturer investing in distinctive product design, athlete endorsements, and loyalty programmes to stand apart from rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "A business that ignores customer satisfaction risks losing repeat sales from otherwise viable buyers.",
+      "A dissatisfied customer may still become a loyal repeat buyer without any change in the product.",
+      "Post-purchase satisfaction influences whether a customer considers the product for a future purchase.",
+      "Customer satisfaction is the only marketing objective and replaces sales and profit goals.",
+      "Businesses set marketing objectives without analysing customer wishes and needs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Unsatisfied customers tend not to return, undermining sales and loyalty objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dissatisfied customers are unlikely to buy again per the marketing framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Future purchase intent is tied to how satisfied the customer felt after buying.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction is one of several objectives, not the sole aim.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The text requires market and wishes/needs analysis before setting objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.03",
+    "title": "Unique Selling Proposition Basics",
+    "context": "Analyze how a unique selling proposition supports product differentiation and attracts loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyal customers who buy again help sustain sales volume over time.",
+      "Customer satisfaction supports retention rather than relying solely on one-off transactions.",
+      "Satisfied customers rarely buy the product again because loyalty is independent of satisfaction.",
+      "Satisfied customers may recommend the product to others, extending marketing impact beyond the original sale.",
+      "Customer satisfaction objectives apply only to service firms, not to goods producers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat purchases from loyal customers support the sales objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction aims at ongoing relationships, not isolated single purchases.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfied customers often become loyal and may buy again.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Positive satisfaction can generate word-of-mouth that supports sales growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction is a general marketing objective for businesses fulfilling customer needs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.04",
+    "title": "Market Share as Competitiveness",
+    "context": "Review why gaining and maintaining market share indicates a firm's relative competitiveness. Evaluate the following economic assertions:",
+    "statements": [
+      "Repeat purchase behaviour proves that customer satisfaction objectives are unnecessary.",
+      "Marketing objectives include ensuring customers are content enough to consider repurchasing.",
+      "Dissatisfied customers are a signal that marketing and product delivery may be missing stated objectives.",
+      "Marketing objectives exclude customer satisfaction when profitability is prioritised.",
+      "Dissatisfied customers will still buy again if the price is reduced slightly."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Repeat purchase is evidence satisfaction objectives matter, not that they are redundant.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Repurchase potential is linked to satisfaction in the marketing objectives framework.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Persistent dissatisfaction indicates objectives around satisfaction are not being met.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profitability does not remove satisfaction from the set of possible objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The text states dissatisfied customers will not buy again, not merely resist until a small discount.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.05",
+    "title": "Sales Volume and Revenue",
+    "context": "Consider a dairy cooperative that brands its organic milk line, measures shelf share in supermarkets, and reinvests surplus profit into processing equipment. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is measured only after profitability targets have been met.",
+      "Customer satisfaction surveys can inform how well a business is meeting its marketing objectives.",
+      "A firm pursuing loyalty must first address whether customers are satisfied with the core product.",
+      "Loyal customers emerge without any need for prior satisfaction with the product.",
+      "Repeat purchase behaviour is more likely when prior use met or exceeded customer expectations."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Satisfaction is an objective in its own right, not a post-profit afterthought.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Feedback instruments help assess progress toward satisfaction goals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty generally builds on satisfaction with what was purchased.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty in the framework builds on satisfied customers who may buy again.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Expectations met through satisfactory experience encourage buying again.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.06",
+    "title": "Profitability Objective Foundations",
+    "context": "Review profitability as a marketing objective and its link to reimbursing owners and reinvestment. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction has no connection to market share or sales volume objectives.",
+      "A business can ignore wishes and needs analysis if it already has a strong brand.",
+      "Customer satisfaction is not separable from long-run sales performance in the marketing framework.",
+      "Satisfaction objectives mean customers must be delighted on every dimension or they will never return.",
+      "Customer complaints rising after a campaign indicate success on satisfaction objectives."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Satisfaction is interrelated with other marketing objectives including sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Wishes and needs analysis precedes clear marketing objectives regardless of brand strength.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The text presents satisfaction as interrelated with sales and other objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The text requires satisfaction, not impossible perfection on every dimension.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Rising complaints signal failure on satisfaction objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.07",
+    "title": "Interrelated Marketing Goals",
+    "context": "Analyze how customer satisfaction interrelates with other marketing objectives such as sales and loyalty. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses analyse customer wishes and needs because unsatisfied buyers will not sustain demand.",
+      "Satisfaction objectives aim to convert first-time buyers into customers who return.",
+      "A marketing plan that achieves high satisfaction can reinforce market share by retaining buyers.",
+      "Satisfied customers never recommend products to others, keeping satisfaction private.",
+      "Customer satisfaction is achieved solely by lowering prices below competitors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Understanding needs helps avoid the outcome where buyers refuse repeat purchase.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The satisfaction objective supports turning initial purchases into repeat business.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained satisfied buyers help maintain share against competitors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfied customers may recommend products, extending marketing impact.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Price cuts alone do not define satisfaction in the marketing objectives framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.08",
+    "title": "Differentiation Through Branding",
+    "context": "Consider a hardware store chain comparing local market share, promotional sales spikes, and net profit after covering warehouse costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a customer buys once, satisfaction objectives are automatically fulfilled.",
+      "Dissatisfied customers continue buying out of habit, so satisfaction objectives are optional.",
+      "Customer satisfaction objectives conflict with profitability and cannot coexist.",
+      "Customer complaints rising over time suggest the satisfaction objective is not being achieved.",
+      "Satisfaction surveys are irrelevant to assessing marketing objective performance."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A single purchase does not prove satisfaction objectives are met.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Dissatisfied customers will not buy again according to the text.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Objectives are interrelated and can coexist within a marketing plan.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Elevated complaints indicate failure relative to the satisfaction goal.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Surveys help assess whether satisfaction objectives are being achieved.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.09",
+    "title": "Satisfaction and Repeat Purchase",
+    "context": "Analyze why building a brand supports the creation of a unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied customers provide a foundation for brand loyalty programmes to succeed.",
+      "If a product fails to meet needs, marketing objectives around sales growth become harder to reach.",
+      "A loyal customer is one who buys again regardless of whether they were satisfied.",
+      "Satisfaction with product quality can encourage customers to choose the same brand on the next occasion.",
+      "Marketing objectives treat customer satisfaction as linked to maintaining competitive sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Loyalty initiatives work best when underlying satisfaction is already present.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unmet needs undermine sales because buyers avoid repeat purchase.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty is linked to satisfied customers who possibly buy again.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Quality satisfaction supports brand-level repeat choice.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction and sales objectives are presented as interrelated.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.10",
+    "title": "USP and Loyal Customer Attraction",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "A business measuring repurchase rates is indirectly tracking success on satisfaction objectives.",
+      "Customers who feel their wishes were fulfilled are more willing to buy the product again.",
+      "Satisfaction objectives complement differentiation by ensuring the promised uniqueness is experienced.",
+      "Poor satisfaction can erode market share even when promotional spending remains high.",
+      "Satisfaction is an objective because unhappy customers simply will not buy the product again."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Repurchase frequency reflects whether customers remain satisfied.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Fulfilled wishes support the repeat purchase outcome described in the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers must be satisfied with the differentiated offer for loyalty to follow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Dissatisfied customers may switch to rivals, reducing relative share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The text states dissatisfied customers will not buy again.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.11",
+    "title": "Relative Market Importance",
+    "context": "Analyze the relationship between higher sales figures and profitability within stated limitations. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction applies only after market share targets have been reached.",
+      "Marketing objectives treat satisfaction as separate from loyalty with no connection.",
+      "Loyalty outcomes depend on customers having a satisfactory experience with prior purchases.",
+      "Businesses need not fulfil wishes and needs if differentiation is strong enough.",
+      "Businesses set satisfaction targets because loyal repeat buyers strengthen several other objectives."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Satisfaction is not deferred until share targets are met.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Satisfaction and loyalty are explicitly linked in the framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyalty in the framework follows from satisfactory prior buying experiences.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Fulfilling wishes and needs remains central even with differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyal repeat buyers support sales, share, and profitability aims.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.12",
+    "title": "Sales Covering Production Costs",
+    "context": "Review why dissatisfied customers are unlikely to buy a product again. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfied customers buy again only when legally required to do so under contract.",
+      "Meeting needs analysed in the market helps a firm align its product with satisfaction goals.",
+      "Customer satisfaction is unrelated to sales because sales depend only on advertising spend.",
+      "A firm with high satisfaction can ignore market share because satisfied buyers guarantee success.",
+      "Dissatisfaction improves long-run sales by encouraging customers to try alternatives within the range."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Repeat purchase from satisfaction is voluntary customer behaviour.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market analysis of wishes and needs supports satisfaction objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction interrelates with sales through repeat purchase and loyalty.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Satisfaction supports but does not replace other objectives like share.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dissatisfaction leads customers not to buy again, harming sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.13",
+    "title": "Profit Reinvestment Rationale",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction objectives are met when promotional reach is high, regardless of product experience.",
+      "Satisfied customers never buy complementary products from the same firm.",
+      "A satisfied customer base reduces reliance on constant new-customer acquisition alone.",
+      "Customer satisfaction is irrelevant to USP objectives because differentiation is purely visual.",
+      "Repeat purchase rates falling while satisfaction scores rise always indicates data error only."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Reach alone does not satisfy; experience with the product matters.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Satisfied customers may buy other products from the firm.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Retention of satisfied buyers supplements acquisition in meeting sales goals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp and satisfaction interrelate when customers experience the differentiated offer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Falling repurchase despite claimed satisfaction may reflect real objective failure.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.14",
+    "title": "Dissatisfaction and Lost Sales",
+    "context": "Review the marketing objective of maintaining sales volume to generate revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is one of several marketing objectives a business may pursue.",
+      "Satisfaction contributes to profitability indirectly by supporting repeat revenue streams.",
+      "When customers are satisfied, they are more likely to remain with the firm rather than switch.",
+      "Customer satisfaction means the product must be the cheapest in the market.",
+      "Marketing staff may track satisfaction scores alongside sales when reviewing objective performance."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The text lists satisfaction among multiple possible marketing objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repeat revenue from satisfied customers can support profit objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction reduces switching, helping maintain share and sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction concerns meeting wishes and needs, not being cheapest.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Satisfaction metrics complement sales data in objective review.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.15",
+    "title": "Perceived Product Uniqueness",
+    "context": "Analyze how retained profit from higher sales can be reinvested in the business. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes eliminate the need to pursue customer satisfaction objectives.",
+      "Dissatisfied customers still generate loyal behaviour if enrolled in a rewards scheme.",
+      "A product that delights customers on first use is better positioned to achieve loyalty objectives.",
+      "Customer satisfaction is a financial accounting measure identical to gross profit.",
+      "Businesses set satisfaction objectives only in declining markets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Loyalty programmes complement but do not replace satisfaction objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dissatisfaction undermines loyalty even with rewards enrolment.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Positive first-use experience supports subsequent loyalty.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction is a marketing objective distinct from gross profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Satisfaction is a general objective across market conditions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.16",
+    "title": "Share Maintenance Strategies",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "A satisfied customer will never switch to a rival with a stronger USP.",
+      "Customer satisfaction objectives are fulfilled when production volume is maximised.",
+      "A unique selling proposition means the product is identical to all similar products on every feature.",
+      "Dissatisfaction after a promotional trial can undo short-term sales gains from the campaign.",
+      "Satisfaction objectives encourage firms to deliver what was promised in differentiation messaging."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Satisfaction helps retention but does not make switching impossible.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Maximising production volume does not equate to customer satisfaction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp means the product is or is considered different from similar products.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Temporary sales spikes fail if buyers are dissatisfied and do not return.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Delivering on promises links satisfaction to credible usp claims.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.17",
+    "title": "Revenue Growth Objectives",
+    "context": "Analyze how loyal customers who buy again strengthen both sales and competitive position. Evaluate the following economic assertions:",
+    "statements": [
+      "Repeat visits to a retailer by the same household suggest satisfaction objectives are being met.",
+      "Customer satisfaction is interrelated with profitability because loyal buyers generate recurring revenue.",
+      "Product differentiation requires the product to be objectively unique in every technical respect.",
+      "Building a brand has no role in creating a unique selling proposition.",
+      "Firms that prioritise satisfaction still pursue other objectives such as market share and sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Household repeat visits indicate ongoing satisfaction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Recurring revenue from loyal buyers can support profit aims.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation can be based on perception and promotion as well as characteristics.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Building a brand supports creating a usp per the text.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Satisfaction is one objective among several, not the only one.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.18",
+    "title": "Sales-Profit Relationship Limits",
+    "context": "Review why businesses analyse customer wishes and needs before defining marketing objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "A decline in satisfaction ratings may precede a fall in relative market share.",
+      "Satisfied customers are more receptive to extensions of a product line from the same business.",
+      "The marketing objectives framework assumes satisfied customers may buy again.",
+      "Businesses failing on satisfaction will struggle to build the loyal customer base a USP aims to attract.",
+      "Customer wishes and needs analysis helps set realistic satisfaction targets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Falling satisfaction can foreshadow share loss to rivals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Satisfaction with the core offer supports acceptance of related products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repeat purchase from satisfied customers is explicitly noted.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp objectives assume satisfaction sustains the loyalty usp is meant to create.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Understanding needs informs what satisfaction should look like.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.19",
+    "title": "Customer Needs Analysis First",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfaction with after-sales service can reinforce overall marketing objective achievement.",
+      "A USP is achieved only when the firm holds one hundred percent market share.",
+      "Product differentiation and unique selling proposition refer to unrelated marketing concepts.",
+      "A loyal customer who buys again reduces the average cost of acquiring each unit sold.",
+      "Marketing objectives on satisfaction aim to prevent customers from abandoning the product."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Service satisfaction supports broader objective success.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp concerns differentiation, not total market dominance.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Differentiation is also called product differentiation in the usp context.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Repeat buyers lower effective acquisition cost, aiding profitability.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Preventing abandonment through satisfaction supports retention.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.20",
+    "title": "Promotion-Based Differentiation",
+    "context": "Review market share as an indicator of relative importance compared with rival firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Promotion and customer perception cannot contribute to a product's unique selling proposition.",
+      "A USP means the product is worse than rivals but cheaper.",
+      "Businesses avoid creating a USP because it attracts too many one-time buyers only.",
+      "High satisfaction can stabilise sales when competitors launch aggressive price promotions.",
+      "Brand-building undermines differentiation by making all products appear the same."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Differentiation can arise from promotion and how customers perceive the product.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp positions the product as special, unique, or better than the rest.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp helps attract many loyal customers, not only one-time buyers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loyal satisfied buyers may resist switching on price alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand-building supports rather than undermines usp creation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.21",
+    "title": "Competitive Share Indicators",
+    "context": "Analyze why sales revenues must cover production costs before profit can be earned. Evaluate the following economic assertions:",
+    "statements": [
+      "Satisfaction measurement helps a business know whether differentiation claims match customer experience.",
+      "A unique selling proposition eliminates the need for any customer satisfaction efforts.",
+      "Differentiation objectives apply only to luxury goods and never to everyday products.",
+      "A USP based on promotion alone is not recognised as product differentiation.",
+      "If two products share a brand, they cannot each have distinct unique selling propositions."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Feedback reveals whether perceived differentiation is experienced as satisfactory.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp interrelates with satisfaction when customers experience the offer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp and differentiation are general marketing objectives.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Promotion-based perception is explicitly valid for differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Product lines may carry distinct usps within a brand.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.22",
+    "title": "Owner Reimbursement Through Profit",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers not satisfied with one product in a range may avoid other products from the same firm.",
+      "A product without a USP can still attract many loyal customers without any differentiation effort.",
+      "Satisfaction objectives align with the idea that marketing must fulfil wishes and needs.",
+      "Product differentiation means copying the market leader's features exactly.",
+      "A USP is defined solely by the lowest price in the product category."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Dissatisfaction can spread wariness across the firm's offerings.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp aims to attract loyal customers through perceived difference.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Fulfilling wishes and needs is the broader aim satisfaction supports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation requires difference from similar products, not exact copying.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp concerns uniqueness or perceived superiority, not price alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.23",
+    "title": "Loyalty From Satisfied Buyers",
+    "context": "Analyze the objective of creating differentiation so customers view a product as unlike similar offerings. Evaluate the following economic assertions:",
+    "statements": [
+      "A satisfied customer is a candidate for becoming a loyal customer in the textbook framework.",
+      "Repeat purchase is a behavioural sign that satisfaction and loyalty objectives are progressing.",
+      "Satisfaction supports market share maintenance by keeping existing buyers from leaving.",
+      "Businesses treat satisfaction as strategically linked to sales volume over multiple periods.",
+      "Without satisfactory delivery, differentiation claims may fail to produce loyal customers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Satisfaction often precedes loyalty in the described relationship.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repurchase signals progress on satisfaction-linked loyalty.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retained buyers help hold share against competitors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Multi-period sales benefit when satisfaction drives repeat buying.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp attraction of loyal customers assumes satisfactory product experience.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.24",
+    "title": "Characteristic-Based USP Claims",
+    "context": "Review satisfied customers as a foundation for loyalty and further purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer satisfaction is presented as interrelated with the objective of increasing sales.",
+      "A firm improving satisfaction may see improved retention metrics in subsequent quarters.",
+      "A unique selling proposition means a product is or is considered different from similar products.",
+      "Product differentiation can be based on a characteristic of the product itself.",
+      "Building a brand is a financial objective unrelated to marketing differentiation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Satisfaction and sales objectives reinforce each other in the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Better satisfaction can show up as higher retention over time.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp is defined as actual or perceived difference from similar offerings.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation may rest on tangible product features.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand-building supports usp within marketing objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.25",
+    "title": "Market Position Relative to Rivals",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "Product differentiation can also arise from the way a product is promoted and perceived by customers.",
+      "Customers cannot perceive a USP when products are functionally similar.",
+      "A unique selling proposition guarantees unlimited market share without further effort.",
+      "Differentiation through packaging is excluded from the USP concept.",
+      "Building a brand supports creating a unique selling proposition for the product."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Promotion and perception are valid bases for differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers may consider a product different even when functional similarities exist.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp supports competitiveness but does not alone guarantee share.\n\nThe absolute wording \"guarantees\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Packaging and presentation can contribute to perceived differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Brand-building is explicitly linked to usp creation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

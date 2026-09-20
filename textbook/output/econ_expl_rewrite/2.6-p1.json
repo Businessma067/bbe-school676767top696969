@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.01",
+    "title": "Markets as Exchange Mechanisms",
+    "context": "Analyze how buyers and sellers interact through prices to allocate goods and services. Evaluate the following economic assertions:",
+    "statements": [
+      "Voluntary exchange in a market occurs when both parties expect to gain from the trade.",
+      "A market requires face-to-face bargaining and excludes nationwide online listings.",
+      "A market exists only where a government agency sets every transaction price.",
+      "Prices in a market serve only as receipts and carry no information about scarcity.",
+      "Repair workshops cannot form a market because their output is intangible advice."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Mutual expected benefit underpins voluntary market transactions.",
+      "Markets can operate through digital platforms linking dispersed buyers and sellers.",
+      "Markets can operate through negotiated prices, not only through direct government price setting.",
+      "Prices communicate scarcity and influence buyer and seller choices.",
+      "Services are traded in markets even when output is not a physical good."
+    ],
+    "tactical_explanations": [
+      "A trade is voluntary only when each side expects to be better off after exchanging. That mutual expected gain is what brings buyers and sellers into a market transaction in the first place.\n\nThe statement is true.",
+      "A market is any arrangement that brings willing buyers and sellers together. Online listings that connect people across a country still count, even when nobody bargains face to face.\n\nThe statement is false.",
+      "Markets can clear through negotiated or posted prices set by private parties. Government agencies sometimes regulate or set prices, but that is not a requirement for a market to exist.\n\nThe statement is false.",
+      "Prices do more than record a sale. They signal how scarce a good is relative to demand and guide how much buyers want and how much sellers offer.\n\nThe statement is false.",
+      "Services such as repairs are traded for money just like goods. Intangibility does not stop buyers and sellers from forming a market.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.02",
+    "title": "Vienna Naschmarkt Stallholders",
+    "context": "Consider a Vienna Naschmarkt stallholder who adjusts herb prices as weekend foot traffic and wholesale costs shift. Evaluate the following economic assertions:",
+    "statements": [
+      "Weekend crowds willing to pay more can raise equilibrium price for fresh herbs at the stall.",
+      "A wholesale cost increase may reduce quantity supplied at each price unless the stall raises its selling price.",
+      "A price above equilibrium clears the stall faster because buyers prefer costlier herbs.",
+      "Nearby competing stalls remove all price constraints because each seller sets prices independently.",
+      "Rising Saturday demand forces the stallholder to cut prices to attract more visitors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Higher willingness to pay shifts demand and can raise equilibrium price.",
+      "Higher input costs shift supply left unless offset by a price increase.",
+      "Surplus arises when price exceeds the quantity buyers willingly purchase.",
+      "Competition from substitutes limits sustained pricing above what buyers accept.",
+      "Higher demand typically supports higher prices, not automatic price cuts."
+    ],
+    "tactical_explanations": [
+      "Larger weekend crowds raise willingness to pay for herbs, which shifts demand right. With supply unchanged, the new intersection sits at a higher equilibrium price.\n\nThe statement is true.",
+      "Higher wholesale costs make each bunch less profitable at the old selling price, so the stall offers fewer herbs at each price, a leftward supply shift. Raising the selling price can restore some of that incentive to sell.\n\nThe statement is true.",
+      "A price above equilibrium leaves quantity supplied larger than quantity demanded, so stock piles up rather than clearing faster. Buyers do not prefer a higher price for its own sake.\n\nThe statement is false.",
+      "Rival stalls give buyers substitutes. That competition constrains how high any one seller can push price, even when each stall posts its own list.\n\nThe statement is false.",
+      "Stronger Saturday demand typically supports a higher equilibrium price, not an automatic cut. Cutting price would be the response to weak demand or surplus, not to a demand boom.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.03",
+    "title": "The Law of Demand",
+    "context": "Analyze the inverse relationship between a good's price and the quantity buyers are willing to purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "The demand curve slopes downward because marginal buyers drop out as price increases.",
+      "Ceteris paribus means other demand shifters such as income are held constant when price changes.",
+      "Higher concert ticket prices increase quantity demanded because buyers treat tickets as prestige goods.",
+      "Lower coat prices reduce quantity demanded because buyers expect inferior quality.",
+      "The law of demand states that quantity demanded rises whenever price rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Higher prices exclude some buyers, reducing quantity demanded along the curve.",
+      "Isolating price effects requires holding other demand determinants fixed.",
+      "Higher prices generally reduce quantity demanded unless a separate shifter changes tastes.",
+      "Lower prices typically increase quantity demanded when other factors stay fixed.",
+      "The law of demand links higher prices with lower quantity demanded, ceteris paribus."
+    ],
+    "tactical_explanations": [
+      "As price rises, some buyers who were just willing to buy at the old price stop buying. Fewer buyers remain active, so quantity demanded falls and the demand curve slopes down.\n\nThe statement is true.",
+      "To isolate the effect of own price on quantity demanded, other determinants such as income, tastes, and related prices must be held fixed. That is what ceteris paribus means in the law of demand.\n\nThe statement is true.",
+      "Holding other factors fixed, a higher ticket price reduces quantity demanded along the demand curve. Prestige or taste changes would be separate demand shifters, not the own-price effect itself.\n\nThe statement is false.",
+      "Other things equal, a lower coat price raises quantity demanded. Quality concerns would be a taste or information shift, not the usual own-price movement along demand.\n\nThe statement is false.",
+      "The law of demand says that, other things equal, quantity demanded falls when price rises, and rises when price falls. The claim reverses that relationship.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.04",
+    "title": "Demand Schedules and Curves",
+    "context": "Review how a demand schedule maps prices to quantities and traces a downward-sloping demand curve. Evaluate the following economic assertions:",
+    "statements": [
+      "Quantity demanded refers to a specific amount at a specific price, not the entire curve.",
+      "Plotting a demand schedule yields an upward-sloping curve matching the law of supply.",
+      "A demand schedule lists quantities suppliers would offer at successive prices.",
+      "Movement along a demand curve results from a change in consumer income.",
+      "Quantity demanded remains fixed at every price because buyers must purchase essentials."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Quantity demanded is a point; demand is the whole relationship across prices.",
+      "Demand curves slope downward; upward slopes describe supply relationships.",
+      "Supply schedules describe seller behaviour; demand schedules describe buyer behaviour.",
+      "Income changes shift demand; own-price changes move along the curve.",
+      "Even necessities see lower quantity demanded at sufficiently high prices."
+    ],
+    "tactical_explanations": [
+      "Quantity demanded is one price-quantity pair on the curve. Demand names the whole schedule of those pairs across prices.\n\nThe statement is true.",
+      "A demand schedule plots as a downward-sloping curve: higher price, lower quantity demanded. An upward slope is the usual shape of supply, not demand.\n\nThe statement is false.",
+      "A demand schedule records how much buyers would purchase at each price. What sellers would offer belongs on a supply schedule.\n\nThe statement is false.",
+      "A change in income shifts the entire demand curve. Movement along the curve comes from a change in the good's own price, holding other determinants fixed.\n\nThe statement is false.",
+      "Even for essentials, quantity demanded typically falls if price rises enough. Buyers economise, substitute, or buy less when the good becomes dearer.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.05",
+    "title": "Innsbruck Ski Equipment Hire",
+    "context": "Consider an Innsbruck ski-hire shop that raises daily rental rates during peak holiday weeks. Evaluate the following economic assertions:",
+    "statements": [
+      "Heavy snowfall forecasts can shift demand rightward for hire equipment independently of the posted daily rate.",
+      "Higher rental rates increase quantity demanded because holiday visitors budget more for equipment.",
+      "Competing discounts nearby leave quantity demanded unchanged because customers ignore substitutes.",
+      "Charging above equilibrium clears inventory faster because customers prefer scarce rentals.",
+      "Peak-season demand shifts always lower equilibrium rental rates to attract tourists."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Non-price factors such as conditions can shift the demand curve.",
+      "Higher prices generally reduce quantity demanded unless a separate shifter boosts demand.",
+      "Lower-priced substitutes typically reduce quantity demanded at unchanged own prices.",
+      "Surplus means quantity supplied exceeds quantity demanded at that price.",
+      "Stronger seasonal demand generally supports higher equilibrium prices."
+    ],
+    "tactical_explanations": [
+      "Snowfall forecasts change how valuable skiing looks this week. That non-price factor raises quantity demanded at each rental rate, shifting the demand curve right without needing a change in the posted price itself.\n\nThe statement is true.",
+      "Holding other factors fixed, a higher rental rate reduces quantity demanded along the demand curve. Holiday budgets may shift demand, but that is a separate change, not the own-price effect of a rate increase.\n\nThe statement is false.",
+      "Cheaper rivals are substitutes. At the shop's unchanged rate, some customers switch away, so quantity demanded at that shop falls.\n\nThe statement is false.",
+      "A price above equilibrium creates surplus: more gear offered than customers take at that rate. Stock sits, it does not clear faster.\n\nThe statement is false.",
+      "A rightward peak-season demand shift with limited supply raises equilibrium rental rates. Lower rates are not the usual result of stronger demand.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.06",
+    "title": "The Law of Supply",
+    "context": "Analyze the direct relationship between a good's price and the quantity producers are willing to offer. Evaluate the following economic assertions:",
+    "statements": [
+      "The law of supply states that, other things equal, quantity supplied rises when price rises.",
+      "The supply curve slopes upward because buyers demand more whenever sellers cut output.",
+      "At low prices producers supply maximum output to recover fixed costs quickly.",
+      "Movement along a supply curve reflects a change in technology holding price fixed.",
+      "Higher wheat prices reduce quantity supplied because farming costs rise with crop value."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Higher price increases quantity supplied when other factors remain unchanged.",
+      "Upward supply slope reflects producer responses to price, not buyer demand shifts.",
+      "Unprofitable low prices typically reduce quantity supplied rather than maximise it.",
+      "Technology changes shift supply; own-price changes trace movement along it.",
+      "Higher prices incentivise greater quantity supplied, ceteris paribus."
+    ],
+    "tactical_explanations": [
+      "Other things equal, a higher market price makes extra production more rewarding, so producers offer a larger quantity. That direct price-quantity link is the law of supply.\n\nThe statement is true.",
+      "The upward slope comes from sellers offering more when price rises. Buyer demand behaviour belongs on the demand side and does not define why supply slopes up.\n\nThe statement is false.",
+      "At very low prices, covering variable costs becomes harder, so quantity supplied tends to be small, not maximal. Producers do not pour out maximum output when the selling price is unattractive.\n\nThe statement is false.",
+      "A technology change shifts the whole supply curve. Movement along the curve comes from a change in the good's own price, with other supply determinants held fixed.\n\nThe statement is false.",
+      "Other things equal, higher wheat prices raise quantity supplied. Cost rises that track input prices are a separate supply shift, not the own-price law of supply.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.07",
+    "title": "Supply Schedules and Curves",
+    "context": "Review how a supply schedule maps prices to quantities and traces an upward-sloping supply curve. Evaluate the following economic assertions:",
+    "statements": [
+      "Plotting a supply schedule yields an upward-sloping curve in price–quantity space.",
+      "Quantity supplied and supply are identical terms for the entire curve.",
+      "Producers supply less at higher prices because profit margins shrink on every unit.",
+      "A supply schedule lists quantities buyers would purchase at successive prices.",
+      "A price increase shifts the entire supply curve leftward without changing quantity supplied."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "The supply curve reflects greater quantity supplied at higher prices.",
+      "Supply names the relationship; quantity supplied names one price–quantity pair.",
+      "Higher prices generally widen incentive to supply additional units, ceteris paribus.",
+      "Buyer purchase intentions belong to demand schedules, not supply schedules.",
+      "Own-price changes move along supply; shifts change the curve at every price."
+    ],
+    "tactical_explanations": [
+      "A supply schedule pairs higher prices with larger quantities offered. Plotted, those pairs trace an upward-sloping supply curve.\n\nThe statement is true.",
+      "Quantity supplied is one point on the curve at a given price. Supply names the whole relationship across prices. The terms are not interchangeable.\n\nThe statement is false.",
+      "Other things equal, higher prices raise the incentive to offer more units, so quantity supplied rises. Margins typically improve with price when costs are unchanged.\n\nThe statement is false.",
+      "Buyer purchase plans belong on a demand schedule. A supply schedule lists how much producers are willing to offer at each price.\n\nThe statement is false.",
+      "A rise in the good's own price moves the market along the existing supply curve to a larger quantity supplied. A leftward shift would require a change in a non-price supply determinant.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.08",
+    "title": "Graz Bakery Morning Rush",
+    "context": "Consider a Graz bakery that bakes extra bread before dawn when a nearby office tower schedules early meetings. Evaluate the following economic assertions:",
+    "statements": [
+      "When supply and demand intersect, the bakery neither systematically runs out nor piles up unsold rolls.",
+      "Early office meetings shift supply rightward because bakeries open earlier without demand changing.",
+      "A flour price spike shifts demand rightward because customers seek cheaper carbohydrates.",
+      "Pricing above equilibrium sells out faster because customers interpret higher price as higher quality.",
+      "Higher bread prices reduce morning output because expensive flour discourages baking."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Equilibrium coordinates quantity supplied with quantity demanded.",
+      "Demand shifters change buyer willingness; opening hours alone do not shift demand.",
+      "Input cost rises affect supply, not buyer demand directly.",
+      "Surplus means quantity supplied exceeds quantity demanded at that price.",
+      "Higher prices generally increase quantity supplied unless costs shift supply leftward."
+    ],
+    "tactical_explanations": [
+      "At the intersection, quantity demanded equals quantity supplied. Plans match, so the bakery is not systematically short of rolls or left with a lasting pile of unsold ones.\n\nThe statement is true.",
+      "Early meetings raise office workers' willingness to buy morning bread, which is a demand shift. Opening earlier may help meet that demand, but the driver is not a supply shift with demand unchanged.\n\nThe statement is false.",
+      "Dearer flour raises bakers' costs and shifts supply left. Customer demand for bread does not jump right simply because an input got costlier.\n\nThe statement is false.",
+      "A price above equilibrium creates surplus: more baked than customers buy at that price. Stock lingers instead of selling out faster.\n\nThe statement is false.",
+      "Other things equal, a higher bread price raises quantity supplied along the supply curve. Costlier flour is a separate leftward supply shift, not the own-price effect of dearer bread.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.09",
+    "title": "Market Equilibrium",
+    "context": "Analyze the price and quantity at which quantity demanded equals quantity supplied. Evaluate the following economic assertions:",
+    "statements": [
+      "Graphically, equilibrium occurs where the demand and supply curves intersect.",
+      "Equilibrium price is where quantity demanded equals quantity supplied in a market.",
+      "At equilibrium, there is no tendency for price to change from ongoing pressure of surplus or shortage.",
+      "Markets tend toward equilibrium as price adjustments reduce surplus or shortage.",
+      "The equilibrium quantity is the amount actually traded when supply matches demand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Curve intersection identifies the equilibrium price and quantity.",
+      "Market equilibrium balances buyer and seller plans at one price–quantity pair.",
+      "Balanced quantities remove immediate pressure for price adjustment.",
+      "Price movements help eliminate imbalances between quantity demanded and supplied.",
+      "Traded volume at equilibrium equals both quantity demanded and quantity supplied."
+    ],
+    "tactical_explanations": [
+      "The demand and supply curves cross at one price-quantity pair. That intersection is the graphical picture of market equilibrium.\n\nThe statement is true.",
+      "Equilibrium price is defined as the price at which buyers want exactly as much as sellers offer. Quantity demanded equals quantity supplied there.\n\nThe statement is true.",
+      "With no surplus or shortage at that price, there is no immediate force from excess stock or unmet demand pushing price up or down.\n\nThe statement is true.",
+      "When quantity demanded and quantity supplied diverge, price tends to rise or fall. Those adjustments shrink the gap and move the market toward equilibrium.\n\nThe statement is true.",
+      "At equilibrium, the traded amount equals both quantity demanded and quantity supplied. That common quantity is the equilibrium quantity.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.10",
+    "title": "Adjusting Toward Equilibrium",
+    "context": "Review how surpluses and shortages prompt price changes that move markets toward equilibrium. Evaluate the following economic assertions:",
+    "statements": [
+      "If price is below equilibrium, quantity demanded exceeds quantity supplied, creating shortage.",
+      "A shortage at the current price puts upward pressure on price as buyers compete for limited goods.",
+      "A surplus at the current price puts downward pressure on price as sellers compete to attract buyers.",
+      "If price is above equilibrium, quantity supplied exceeds quantity demanded, creating surplus.",
+      "Competitive markets use price changes to coordinate plans when quantities demanded and supplied diverge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Low price generates excess demand relative to quantity supplied.",
+      "Excess demand encourages price rises toward equilibrium.",
+      "Unsold stock encourages price cuts toward equilibrium.",
+      "High price generates excess supply relative to quantity demanded.",
+      "Price adjustment is a coordination mechanism toward equilibrium."
+    ],
+    "tactical_explanations": [
+      "Below the equilibrium price, buyers want more than sellers offer at that price. The gap is a shortage.\n\nThe statement is true.",
+      "When goods are scarce relative to demand at the posted price, buyers bid against each other. That competition pushes price up toward equilibrium.\n\nThe statement is true.",
+      "Unsold stock means sellers are offering more than buyers take. To clear inventory, sellers cut price, which puts downward pressure toward equilibrium.\n\nThe statement is true.",
+      "Above the equilibrium price, sellers offer more than buyers willingly purchase. The excess is a surplus.\n\nThe statement is true.",
+      "When plans diverge, rising or falling prices change quantity demanded and quantity supplied until they meet again. Price is the coordination device.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.11",
+    "title": "Linz Rental Housing Listings",
+    "context": "Consider Linz landlords listing flats who cut asking rents when units sit vacant for several weeks. Evaluate the following economic assertions:",
+    "statements": [
+      "At equilibrium rent, the number of vacant units neither grows nor shrinks persistently across weeks.",
+      "New apartment construction shifting supply rightward can lower equilibrium rent if demand stays fixed.",
+      "Cutting asking rent reduces quantity demanded because tenants prefer costlier apartments.",
+      "Vacant flats persisting for weeks prove asking rent is below equilibrium because tenants avoid cheap flats.",
+      "Heavy tenant competition always lowers equilibrium rent because landlords fear regulation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Balanced market clears listings without ongoing surplus or shortage.",
+      "Increased supply at each price can reduce equilibrium price.",
+      "Lower rents generally increase quantity demanded for rental housing.",
+      "Long vacancies typically signal price above equilibrium, not below it.",
+      "Strong demand typically supports higher equilibrium rents unless supply expands."
+    ],
+    "tactical_explanations": [
+      "At equilibrium rent, quantity demanded matches quantity supplied. Listings neither accumulate week after week nor vanish into persistent shortage.\n\nThe statement is true.",
+      "New construction adds rental units at each rent, shifting supply right. With demand fixed, the new intersection is at a lower equilibrium rent.\n\nThe statement is true.",
+      "A lower asking rent raises quantity demanded along the demand curve. Tenants do not prefer higher rents for their own sake.\n\nThe statement is false.",
+      "Flats sitting vacant for weeks mean quantity supplied exceeds quantity demanded at the asking rent. That is a surplus, which points to rent above equilibrium, not below it.\n\nThe statement is false.",
+      "Strong tenant competition is excess demand at the current rent, which tends to push equilibrium rent up unless supply expands enough to offset it. Fear of regulation is not the standard market mechanism here.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.12",
+    "title": "Surplus in Product Markets",
+    "context": "Analyze conditions where quantity supplied exceeds quantity demanded at a given price. Evaluate the following economic assertions:",
+    "statements": [
+      "A surplus exists when quantity supplied exceeds quantity demanded at the prevailing price.",
+      "Surplus puts downward pressure on price because sellers compete to reduce excess stock.",
+      "Price above equilibrium is consistent with shortage because buyers crave expensive goods.",
+      "Rapid sell-outs and empty shelves typically signal a surplus at the current price.",
+      "A harvest bumper crop eliminates surplus because larger supply always matches demand exactly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Surplus means sellers offer more than buyers purchase at that price.",
+      "Competition among sellers with unsold goods tends to lower price.",
+      "High price tends to reduce quantity demanded and can leave unsold supply.",
+      "Empty shelves signal shortage; surplus appears as unsold stock.",
+      "Larger supply at fixed price can create surplus unless demand shifts too."
+    ],
+    "tactical_explanations": [
+      "Surplus is defined by that imbalance: at the going price, sellers offer more than buyers take.\n\nThe statement is true.",
+      "Unsold stock leads sellers to shade price to attract buyers. That competition exerts downward pressure on price.\n\nThe statement is true.",
+      "A price above equilibrium leaves quantity supplied larger than quantity demanded, which is surplus, not shortage. Buyers do not create shortage by craving higher prices.\n\nThe statement is false.",
+      "Empty shelves and instant sell-outs mean buyers want more than is available at the posted price. That pattern signals shortage, while surplus shows up as lingering unsold stock.\n\nThe statement is false.",
+      "A bumper harvest shifts supply right. At the old price, that can create surplus unless demand rises enough to match. Larger supply does not automatically clear the market.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.13",
+    "title": "Shortage in Product Markets",
+    "context": "Review conditions where quantity demanded exceeds quantity supplied at a given price. Evaluate the following economic assertions:",
+    "statements": [
+      "Long queues and rapid sell-outs often signal a shortage at the posted price.",
+      "A price ceiling set below equilibrium can create persistent shortage in a competitive market.",
+      "At a price below equilibrium, quantity demanded exceeds quantity supplied until price adjusts.",
+      "Shortage puts upward pressure on price as buyers compete for limited available units.",
+      "A shortage exists when quantity supplied exceeds quantity demanded at the prevailing price."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Excess demand at a price appears as queues and quick stock depletion.",
+      "Legally capped low prices can leave quantity demanded above quantity supplied.",
+      "Low price generates excess demand relative to quantity supplied.",
+      "Competition among buyers for scarce goods tends to raise price.",
+      "That description defines surplus; shortage is excess demand."
+    ],
+    "tactical_explanations": [
+      "Queues and goods vanishing quickly mean more people want to buy at the posted price than sellers can provide. That is the visible face of shortage.\n\nThe statement is true.",
+      "A ceiling below equilibrium keeps price from rising to clear the market. Quantity demanded stays above quantity supplied, so shortage can persist.\n\nThe statement is true.",
+      "Below equilibrium, buyers want more than is offered. The excess demand lasts until price rises (or some other adjustment restores balance).\n\nThe statement is true.",
+      "When units are scarce relative to demand, buyers bid against each other. That competition pushes price upward.\n\nThe statement is true.",
+      "Quantity supplied exceeding quantity demanded is surplus. Shortage is the opposite imbalance: quantity demanded exceeds quantity supplied.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.14",
+    "title": "Salzburg Festival Ticket Queue",
+    "context": "Consider Salzburg festival-goers queuing overnight when discounted early-bird tickets sell out within minutes. Evaluate the following economic assertions:",
+    "statements": [
+      "Minutes-long sell-outs at the posted price suggest quantity demanded exceeds quantity supplied.",
+      "Overnight queues form when buyers expect shortage at the official price.",
+      "Persistent shortage forces resellers to cut prices below the sold-out official rate.",
+      "Adding extra performances shifts demand leftward because audiences dislike additional shows.",
+      "Raising the official ticket price increases shortage because fewer buyers withdraw."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Quick sell-outs indicate shortage at the ticket price.",
+      "Queues signal excess demand relative to tickets available at that price.",
+      "Scarcity at low official prices often supports higher resale prices.",
+      "Extra performances increase supply, not reduce buyer demand directly.",
+      "Higher prices generally reduce quantity demanded, easing shortage pressure."
+    ],
+    "tactical_explanations": [
+      "Tickets vanishing in minutes at the posted price means many more buyers want seats than the organiser is offering at that price. Quantity demanded exceeds quantity supplied.\n\nThe statement is true.",
+      "People line up overnight because they expect seats to run out at the official price. Queues are a response to anticipated shortage.\n\nThe statement is true.",
+      "When official tickets are scarce at a low posted price, resale markets usually clear at higher prices, not below the sold-out rate. Scarcity supports a premium, not a forced cut.\n\nThe statement is false.",
+      "Extra performances add seats, which is a rightward supply shift. Audience dislike of more shows is not the usual story, and demand does not shift left just because capacity expands.\n\nThe statement is false.",
+      "A higher official price lowers quantity demanded along the demand curve and typically eases shortage. It does not enlarge the gap by keeping more buyers in the market.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.15",
+    "title": "Income as a Demand Shifter",
+    "context": "Analyze how changes in consumer income shift demand for normal and inferior goods. Evaluate the following economic assertions:",
+    "statements": [
+      "Income changes shift the entire demand curve rather than moving along it.",
+      "For inferior goods, rising income can shift demand leftward as buyers switch to higher-quality substitutes.",
+      "A recession reducing household income shifts demand rightward for discretionary electronics.",
+      "Higher consumer income shifts demand leftward for normal goods because buyers save everything.",
+      "A pay rise for office workers lowers equilibrium coffee price because richer buyers demand discounts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Non-price income effects shift demand; own-price changes move along the curve.",
+      "Higher income may reduce demand for some lower-quality goods.",
+      "Lower income typically reduces demand for discretionary purchases.",
+      "Normal goods see higher demand when income rises.",
+      "Stronger demand with fixed supply typically raises equilibrium price."
+    ],
+    "tactical_explanations": [
+      "Income is a non-price determinant of demand. When income changes, quantity demanded at each price changes, so the whole curve shifts. Own-price changes alone move along a fixed curve.\n\nThe statement is true.",
+      "Inferior goods lose buyers when incomes rise, as people trade up. Demand at each price falls, which is a leftward shift.\n\nThe statement is true.",
+      "Discretionary electronics are typically normal goods. Lower household income reduces demand for them, shifting demand left, not right.\n\nThe statement is false.",
+      "For normal goods, higher income raises demand at each price, a rightward shift. Buyers do not automatically save every extra euro and abandon the good.\n\nThe statement is false.",
+      "A pay rise that raises coffee demand with supply fixed pushes equilibrium price up. Richer buyers do not force discounts through stronger demand alone.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.16",
+    "title": "Tastes and Preferences",
+    "context": "Review how changing consumer tastes and preferences shift the demand curve. Evaluate the following economic assertions:",
+    "statements": [
+      "Advertising that increases brand preference shifts demand rightward for the advertised good.",
+      "Seasonal fashion trends shifting tastes can change equilibrium clothing prices within a year.",
+      "A health trend favouring oat milk can shift demand rightward for oat beverages at each price.",
+      "When substitutes become fashionable, demand for the original good may shift leftward.",
+      "Negative publicity about a product shifts supply leftward because producers feel discouraged."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Stronger preference raises quantity demanded at each price.",
+      "Demand shifts from taste changes alter equilibrium when supply responds.",
+      "Preference changes shift demand independently of own-price movements.",
+      "Changing preferences toward substitutes reduce demand for the original.",
+      "Publicity affects buyer willingness; it is a demand shifter, not a supply shifter."
+    ],
+    "tactical_explanations": [
+      "Stronger brand preference raises how much buyers want at each price. That is a rightward demand shift for the advertised good.\n\nThe statement is true.",
+      "Taste shifts move demand, and with a given supply that changes the intersection. Seasonal fashion can therefore move clothing equilibrium prices within a year.\n\nThe statement is true.",
+      "A health-driven preference for oat milk raises quantity demanded at each price, shifting demand for oat beverages right.\n\nThe statement is true.",
+      "If rivals become fashionable, some buyers leave the original good. Demand for it falls at each price, a leftward shift.\n\nThe statement is true.",
+      "Negative publicity changes buyer willingness to purchase, which is a demand shift. Producer feelings do not turn publicity into a supply shifter by themselves.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.17",
+    "title": "Styrian Wine Tasting Boom",
+    "context": "Consider a Styrian wine route that sees surging visitor numbers after international tasting awards. Evaluate the following economic assertions:",
+    "statements": [
+      "Surging visitor demand with limited tour slots can create shortage at the posted tasting price.",
+      "Award publicity can shift demand rightward for regional wine tastings at unchanged ticket prices.",
+      "Higher equilibrium tasting fees may result if demand shifts right while supply remains constrained.",
+      "Raising tasting fees can reduce shortage by lowering quantity demanded along the demand curve.",
+      "Expanded visiting hours shift demand leftward because tourists dislike longer schedules."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Excess demand at a fixed price produces shortage.",
+      "Improved tastes and awareness shift demand at each price.",
+      "Rightward demand shift with limited supply raises equilibrium price.",
+      "Higher own-price reduces quantity demanded and can ease excess demand.",
+      "More tour capacity shifts supply; schedule length alone does not shift demand."
+    ],
+    "tactical_explanations": [
+      "If many more visitors want slots than the route can offer at the posted fee, quantity demanded exceeds quantity supplied. That imbalance is a shortage.\n\nThe statement is true.",
+      "Awards raise awareness and preference for Styrian tastings. At the same ticket prices, more people want to book, so demand shifts right.\n\nThe statement is true.",
+      "A rightward demand shift with constrained supply moves the intersection to a higher equilibrium fee. Stronger demand meets limited capacity.\n\nThe statement is true.",
+      "A higher fee reduces quantity demanded along the demand curve. That shrinks excess demand and can ease the shortage at the old low price.\n\nThe statement is true.",
+      "Longer opening hours expand how many tours can be sold, which is a supply increase. Tourists do not typically demand fewer tastings simply because hours stretch.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.18",
+    "title": "Prices of Substitute Goods",
+    "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:",
+    "statements": [
+      "Firms monitor substitute pricing because cross-price shifts alter their equilibrium sales.",
+      "Substitute price changes shift demand rather than causing movement along the demand curve.",
+      "Cheaper streaming subscriptions may shift demand leftward for cinema tickets.",
+      "Coffee shops see lower demand when nearby tea prices increase because beverages are complements.",
+      "A rise in petrol prices shifts demand leftward for public transport because travel becomes undesirable."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Substitute prices affect demand and therefore market outcomes.",
+      "Cross-price effects shift demand; own-price changes move along the curve.",
+      "Lower substitute prices reduce demand for the original good at each price.",
+      "Tea and coffee are substitutes; costlier tea can boost coffee demand.",
+      "Higher petrol cost often raises demand for substitute transport options."
+    ],
+    "tactical_explanations": [
+      "When a substitute's price changes, demand for the firm's own product can shift, changing equilibrium quantity and price. Watching rival prices is therefore commercially relevant.\n\nThe statement is true.",
+      "The substitute's price is a related-goods determinant. Its change shifts the demand curve. Movement along the curve comes only from the good's own price.\n\nThe statement is true.",
+      "Streaming is a substitute for cinema visits. Cheaper subscriptions pull some viewers away, lowering demand for tickets at each cinema price.\n\nThe statement is true.",
+      "Tea and coffee are substitutes, not complements. Dearer tea typically raises coffee demand as some drinkers switch, rather than lowering it.\n\nThe statement is false.",
+      "Petrol and public transport are often substitutes for getting around. Higher petrol prices typically raise demand for buses and trains, a rightward shift, not a leftward one driven by travel becoming undesirable in general.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.19",
+    "title": "Prices of Complementary Goods",
+    "context": "Review how the price of complementary goods shifts demand for a related product. Evaluate the following economic assertions:",
+    "statements": [
+      "A rise in game console prices may shift demand leftward for compatible game titles.",
+      "When complements become costlier, equilibrium quantity of the paired good may fall.",
+      "Reduced air fares can shift demand rightward for airport parking and hotel rooms near terminals.",
+      "Lower printer prices can shift demand rightward for ink cartridges.",
+      "Complementary price changes shift demand for the related good, not supply directly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Costlier complements reduce demand for the paired good at each price.",
+      "Higher complement prices shift demand left and can lower equilibrium quantity.",
+      "Cheaper travel boosts demand for complementary services.",
+      "Cheaper complements raise demand for the paired good at each price.",
+      "Cross-price complement effects operate through demand shifts."
+    ],
+    "tactical_explanations": [
+      "Consoles and compatible games are used together. Dearer consoles mean fewer platforms in homes, so demand for matching titles falls at each game price.\n\nThe statement is true.",
+      "A leftward demand shift for the paired good, with supply unchanged, lowers the equilibrium quantity traded. Costlier complements can produce that outcome.\n\nThe statement is true.",
+      "Cheaper flights encourage more travel, which raises demand for complementary services such as airport parking and nearby hotels.\n\nThe statement is true.",
+      "Printers and ink are complements. Cheaper printers put more devices in use, raising demand for cartridges at each ink price.\n\nThe statement is true.",
+      "Cross-price effects for complements change how much buyers want of the related good. That is a demand shift. It does not directly move the supply curve of the related good.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.20",
+    "title": "Electric Bus Fleet Procurement",
+    "context": "Consider a municipal transport office comparing electric bus bids after diesel fuel costs spike. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher diesel costs can shift demand rightward for electric buses as substitutes become costlier.",
+      "A subsidy lowering effective purchase price shifts demand rightward for electric buses.",
+      "Expanded battery production shifting supply rightward can reduce equilibrium electric bus prices.",
+      "If electric bus prices stay fixed while demand shifts right, surplus appears at current contract offers.",
+      "At equilibrium contract price, manufacturers deliver buses cities refuse to operate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Costlier diesel vehicles raise demand for electric alternatives.",
+      "Lower effective buyer price increases quantity demanded at each market price.",
+      "Greater supply at each price lowers equilibrium when demand is unchanged.",
+      "Rightward demand at fixed price tends toward shortage, not surplus.",
+      "Equilibrium coordinates plans; refused deliveries imply imbalance, not equilibrium."
+    ],
+    "tactical_explanations": [
+      "Diesel buses become more expensive to run when fuel spikes, so electric buses look relatively more attractive. Demand for electric buses rises at each purchase price.\n\nThe statement is true.",
+      "A purchase subsidy lowers the effective price buyers face, so municipalities want more electric buses at each market list price. That is a rightward demand shift.\n\nThe statement is true.",
+      "More battery capacity lowers production costs and increases quantity supplied at each bus price. With demand unchanged, equilibrium price falls.\n\nThe statement is true.",
+      "If demand shifts right while price is stuck, quantity demanded exceeds quantity supplied at that price. The imbalance is shortage, not surplus.\n\nThe statement is false.",
+      "At an equilibrium contract price, quantity demanded equals quantity supplied. Systematic delivery of buses cities refuse to run would mean plans do not match, which is not equilibrium.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.21",
+    "title": "Input Costs and Supply",
+    "context": "Analyze how changes in production costs shift the supply curve. Evaluate the following economic assertions:",
+    "statements": [
+      "When energy costs surge, equilibrium price may rise if demand remains unchanged.",
+      "Higher wages paid to warehouse staff can shift supply leftward for distribution services.",
+      "Cheaper imported components can shift supply rightward and lower equilibrium price.",
+      "Input cost changes move producers along the supply curve without shifting it.",
+      "A drop in steel prices shifts demand leftward because buyers expect weaker furniture."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Leftward supply shift with fixed demand raises equilibrium price.",
+      "Rising input costs reduce quantity supplied at each price.",
+      "Lower costs increase supply and can reduce equilibrium price.",
+      "Production costs are supply shifters that shift the curve.",
+      "Cheaper inputs shift supply; buyer expectations are a separate demand factor."
+    ],
+    "tactical_explanations": [
+      "Higher energy costs shift supply left. With demand fixed, the new intersection is typically at a higher equilibrium price.\n\nThe statement is true.",
+      "Wages are an input cost for distribution. Higher wages reduce quantity supplied at each service price, shifting supply left.\n\nThe statement is true.",
+      "Cheaper components lower unit costs, so producers offer more at each price. Supply shifts right and, with demand unchanged, equilibrium price falls.\n\nThe statement is true.",
+      "Input costs are supply shifters. They move the whole curve. Movement along the curve comes from a change in the product's own selling price.\n\nThe statement is false.",
+      "Cheaper steel lowers producers' costs and shifts furniture supply right. It does not, by itself, shift demand left through weaker expected quality.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.22",
+    "title": "Technology and Productivity",
+    "context": "Review how technological improvements shift supply by lowering production costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Technological progress that cuts unit cost shifts supply rightward, not leftward.",
+      "Improved irrigation technology may shift supply rightward for orchard fruit at each market price.",
+      "Automated sorting equipment can shift supply rightward for parcel delivery services.",
+      "Technology changes are supply shifters distinct from movements caused by the good's own price.",
+      "Rightward supply shifts from technology raise equilibrium price when demand is unchanged."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Lower costs per unit increase quantity supplied at each price.",
+      "Productivity gains increase quantity supplied at given prices.",
+      "Technology lowering costs increases quantity supplied at each price.",
+      "Productivity affects supply curve position; own-price moves along it.",
+      "More supply at unchanged demand tends to lower equilibrium price."
+    ],
+    "tactical_explanations": [
+      "Lower unit costs make production more profitable at each market price, so quantity supplied rises. That is a rightward supply shift, not a leftward one.\n\nThe statement is true.",
+      "Better irrigation raises orchard productivity, so growers can offer more fruit at each price. Supply shifts right.\n\nThe statement is true.",
+      "Automation that sorts parcels more cheaply raises quantity of delivery services offered at each price. Supply shifts right.\n\nThe statement is true.",
+      "Technology changes the position of the supply curve. A change in the good's own price alone traces movement along a given curve.\n\nThe statement is true.",
+      "With demand fixed, a rightward supply shift lowers equilibrium price. Technology-driven abundance does not raise the clearing price by itself.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.23",
+    "title": "Plant Capacity Expansion",
+    "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
+    "statements": [
+      "If demand stays fixed while supply shifts right, equilibrium price may fall.",
+      "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
+      "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
+      "Customers ordering the product face lower shortage risk after a successful supply expansion.",
+      "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Greater supply with unchanged demand lowers equilibrium price.",
+      "Rightward supply shift with fixed demand raises equilibrium quantity.",
+      "Rising material costs reduce quantity supplied at each price.",
+      "Increased quantity supplied reduces excess demand at prior prices.",
+      "Expanded efficient capacity increases quantity supplied at each price."
+    ],
+    "tactical_explanations": [
+      "A rightward supply shift with demand unchanged moves the intersection down the demand curve. Equilibrium price can fall.\n\nThe statement is true.",
+      "The same rightward supply shift raises the equilibrium quantity when demand is fixed. More is traded at the new clearing point.\n\nThe statement is true.",
+      "Dearer raw materials raise costs and shift supply left. That leftward push can partially cancel the rightward effect of the new line.\n\nThe statement is true.",
+      "More capacity increases quantity available at prior prices, so excess demand is less likely. Shortage risk falls after a successful expansion.\n\nThe statement is true.",
+      "Extra efficient capacity lowers unit cost and raises quantity supplied at each price. That is precisely a rightward supply shift.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.24",
+    "title": "Number of Sellers in a Market",
+    "context": "Analyze how entry or exit of sellers shifts market supply. Evaluate the following economic assertions:",
+    "statements": [
+      "New bakeries opening on the same street shift supply rightward for local bread.",
+      "Exit of several suppliers during a crisis can create shortage at previously stable prices.",
+      "Entry of low-cost online retailers can lower equilibrium prices for standardised goods.",
+      "Farmers exiting a crop after poor seasons shift supply leftward for that harvest.",
+      "Market supply equals the largest individual seller's supply ignoring smaller rivals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "More sellers increase market quantity supplied at each price.",
+      "Leftward supply shift can leave quantity demanded above quantity supplied.",
+      "Rightward supply shift with stable demand reduces equilibrium price.",
+      "Fewer sellers reduce market quantity supplied at each price.",
+      "Market supply aggregates all sellers, not only the dominant firm."
+    ],
+    "tactical_explanations": [
+      "Each new bakery adds loaves at each price. Market quantity supplied rises, so market supply shifts right.\n\nThe statement is true.",
+      "When several suppliers leave, market supply shifts left. At the old stable prices, quantity demanded can exceed the smaller quantity supplied, producing shortage.\n\nThe statement is true.",
+      "Low-cost entrants expand market supply. With demand roughly stable for standardised goods, equilibrium price tends to fall.\n\nThe statement is true.",
+      "Fewer farmers growing the crop reduces market quantity supplied at each harvest price. That is a leftward supply shift.\n\nThe statement is true.",
+      "Market supply aggregates every seller's offers at each price. Ignoring smaller rivals understates total supply.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.6",
+    "case_id": "CASE 2.6.25",
+    "title": "Producer Expectations and Supply",
+    "context": "Review how sellers' expectations about future prices influence current supply decisions. Evaluate the following economic assertions:",
+    "statements": [
+      "If producers expect costs to fall next month, some may delay production, shifting current supply leftward.",
+      "Expected future shortages motivate producers to halt current output entirely.",
+      "Expectations of higher future wheat prices increase current supply as farmers dump inventory.",
+      "Expectations about future conditions move producers along today's supply curve only.",
+      "Storage decisions based on future price outlook leave current market supply unchanged."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Expected future cost declines can reduce current quantity supplied.",
+      "Expectations of future scarcity can encourage greater current production.",
+      "Expecting higher future prices can encourage holding stock back from current market.",
+      "Expectations shift supply; own-price changes move along the curve.",
+      "Stored goods are not currently supplied; storage affects available supply."
+    ],
+    "tactical_explanations": [
+      "If next month's costs look lower, producing later can be cheaper. Some output is postponed, so current quantity supplied falls at today's prices, a leftward shift.\n\nThe statement is true.",
+      "Expecting future scarcity often encourages producers to produce more now, or at least keep supplying, rather than shut down entirely. Halting all current output is not the standard response.\n\nThe statement is false.",
+      "If tomorrow's wheat price is expected to be higher, farmers often hold grain back for later sale. Current market supply tends to fall, not rise through dumping.\n\nThe statement is false.",
+      "Expectations are a supply shifter. They change how much is offered at today's prices. Movement along today's curve comes from a change in today's own price.\n\nThe statement is false.",
+      "Goods placed in storage are withheld from today's market. That storage choice reduces current supply relative to releasing the stock now.\n\nThe statement is false."
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+CASE MATH 11.77
+ANSWER [true, true, true, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Weekday cost is $C_{\mathrm{wd}}(Q)=12Q$, so
+$$C_{\mathrm{wd}}^{\prime}(Q)=12.$$
+Weekend overtime cost is $C_{\mathrm{we}}(Q)=20Q$, so
+$$C_{\mathrm{we}}^{\prime}(Q)=20.$$
+The overtime gap is $20-12=8$ euros on an extra sale. Marginal revenue is $R^{\prime}(Q)=15$ on both kinds of day. Weekday marginal profit is
+$$P_{\mathrm{wd}}^{\prime}=15-12=3>0,$$
+while weekend marginal profit is
+$$P_{\mathrm{we}}^{\prime}=15-20=-5\neq 3.$$
+The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\prime}$. Weekday $C^{\prime}=12$ gives $P^{\prime}=15-12=3>0$; weekend $C^{\prime}=20$ gives $P^{\prime}=15-20=-5$. Same $R^{\prime}$, different cost piece.
+
+=== A ===
+**A.** → True
+
+Weekday cost is $C_{\mathrm{wd}}(Q)=12Q$. Differentiating gives
+
+$$
+C_{\mathrm{wd}}^{\prime}(Q) = 12
+$$
+
+On a weekday each extra sale adds $12$ euros of cost
+
+Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+C_{\mathrm{wd}}'(Q) = 12
+$$
+
+$$
+C_{\mathrm{wd}}(Q) = 12Q
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Weekend cost is $C_{\mathrm{we}}(Q)=20Q$, so $C_{\mathrm{we}}^{\prime}(Q)=20$. The weekday slope was $12$, and
+
+$$
+20-12 = 8
+$$
+
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule
+
+Weekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+On a weekday,
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C_{\mathrm{wd}}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 15-12
+$$
+
+$$
+15 - 12 = 3
+$$
+
+$$
+P^{\prime}(Q) = 3 = 3
+$$
+
+$$
+P^{\prime}(Q) = 3>0
+$$
+
+A positive marginal profit means a small extra sale raises weekday profit
+
+Weekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Weekend marginal profit uses the weekend cost slope, not the weekday one:
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C_{\mathrm{we}}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 15-20
+$$
+
+$$
+15 - 20 = -5
+$$
+
+$$
+P^{\prime}(Q) = -5 = -5
+$$
+
+$$
+P^{\prime}(Q) = -5
+$$
+
+That is not equal to the weekday figure $3$. Same $R^{\prime}$ with a higher $C^{\prime}$ changes the profit slope
+
+Weekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\prime}$ with a higher $C^{\prime}$ flips the advice.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+$R^{\prime}(Q)=15$ is the same number both days.
+
+What changes is which cost schedule supplies $C^{\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change
+
+Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 15
+$$
+
+So the statement is True.
+

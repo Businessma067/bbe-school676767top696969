@@ -1,0 +1,1016 @@
+[
+  {
+    "case_id": "MATH 1.47",
+    "short_letters": [
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Primes and Even Numbers Below Fifteen",
+    "context_en": "Let $P = \\{2, 3, 5, 7, 11, 13\\}$ (the primes less than 15) and $E = \\{2, 4, 6, 8, 10, 12, 14\\}$ (the even numbers less than 15).",
+    "statements_en": [
+      "$P \\cap E = \\{2\\}$",
+      "$P \\setminus E = \\{3, 5, 7, 11, 13\\}$",
+      "\"$\\forall x \\in P$, x is odd\" is a true statement",
+      "For every $x$, if $x \\in P$ and $x \\neq 2$, then $x$ is odd.",
+      "$P \\subseteq E$"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nIntersection keeps only elements that sit in both $P$ and $E$.\n\n$$P=\\{2,3,5,7,11,13\\}$$\n\n$$E=\\{2,4,6,8,10,12,14\\}$$\n\n$$2\\in P,\\ 2\\in E$$\n\n$$3\\in P,\\ 3\\notin E$$\n\n$$5\\in P,\\ 5\\notin E$$\n\n$$7\\in P,\\ 7\\notin E$$\n\n$$11\\in P,\\ 11\\notin E$$\n\n$$13\\in P,\\ 13\\notin E$$\n\n$$P\\cap E=\\{2\\}$$\n\n$$\\{2\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nDifference $P\\setminus E$ keeps members of $P$ that miss $E$.\n\n$$P=\\{2,3,5,7,11,13\\}$$\n\n$$E=\\{2,4,6,8,10,12,14\\}$$\n\n$$2\\in P,\\ 2\\in E$$\n\n$$3\\in P,\\ 3\\notin E$$\n\n$$5\\in P,\\ 5\\notin E$$\n\n$$7\\in P,\\ 7\\notin E$$\n\n$$11\\in P,\\ 11\\notin E$$\n\n$$13\\in P,\\ 13\\notin E$$\n\n$$P\\setminus E=\\{3,5,7,11,13\\}$$\n\n$$\\{3,5,7,11,13\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nA universal claim over $P$ must work for every listed prime. Test the member $x=2$:\n\n$$2\\in P$$\n\n$$\\mathrm{Odd}(2)=\\mathrm{F}$$\n\nEquivalently, its universal implication has the false row\n\n$$2\\in P\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nThis one counterexample disproves “every $x\\in P$ is odd,”.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe antecedent restricts attention to members of $P$ other than $2$:\n\n$$\\{x\\in P:x\\ne2\\}=\\{3,5,7,11,13\\}$$\n\nEvery number in that set has the form $2k+1$, so each makes the conclusion “$x$ is odd” true. At $x=2$, the extra condition is false:\n\n$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{F}\\Rightarrow\\mathrm{F} = \\mathrm{T}$$\n\nThus no $x$ gives a true antecedent and false conclusion. The universal implication is True.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe subset claim means\n\n$$P\\subseteq E\\quad\\Longleftrightarrow\\quad \\forall x\\,(x\\in P\\Rightarrow x\\in E)$$\n\nChoose $x=3$. The membership values are\n\n$$3\\in P = \\mathrm{T}$$\n\n$$3\\in E = \\mathrm{F}$$\n\nso the required implication evaluates as\n\n$$3\\in P\\Rightarrow3\\in E = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nOne member of $P$ outside $E$ disproves the subset claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Let $P=\\{2,3,5,7,11,13\\}$ be the primes less than $15$ and $E=\\{2,4,6,8,10,12,14\\}$ the evens less than $15$.\n\nIntersection keeps numbers in both lists. Difference $P\\setminus E$ keeps members of $P$ missing from $E$. A sentence $\\forall x\\in P$ makes a promise about all six members. A subset claim $P\\subseteq E$ fails as soon as one member of $P$ sits outside $E$.",
+    "title_de_existing": "Primzahlen und gerade Zahlen unter fünfzehn",
+    "context_de_existing": "Es seien $P = \\{2, 3, 5, 7, 11, 13\\}$ (die Primzahlen kleiner als 15) und $E = \\{2, 4, 6, 8, 10, 12, 14\\}$ (die geraden Zahlen kleiner als 15).",
+    "statements_de_existing": [
+      "$P \\cap E = \\{2\\}$",
+      "$P \\setminus E = \\{3, 5, 7, 11, 13\\}$",
+      "„$\\forall x \\in P$, x ist ungerade“ ist eine wahre Aussage",
+      "Für jedes $x$ gilt: Wenn $x \\in P$ und $x \\neq 2$, dann ist $x$ ungerade.",
+      "$P \\subseteq E$"
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Schnittmenge enthält nur Elemente, die sowohl in $P$ als auch in $E$ liegen.\n\n$$\n\\begin{aligned}\nP&=\\{2,3,5,7,11,13\\}\\\\\nE&=\\{2,4,6,8,10,12,14\\}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n2\\in P,\\ 2\\in E,\\quad 3\\in P,\\ 3\\notin E\\\\\n5\\in P,\\ 5\\notin E,\\quad 7\\in P,\\ 7\\notin E\\\\\n11\\in P,\\ 11\\notin E,\\quad 13\\in P,\\ 13\\notin E\n\\end{aligned}\n$$\n\n$$P\\cap E=\\{2\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Differenz $P\\setminus E$ enthält Elemente von $P$, die nicht in $E$ liegen:\n\n$$P\\setminus E=\\{3,5,7,11,13\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEine Allaussage über $P$ muss für jede gelistete Primzahl gelten. Prüfe das Element $x=2$:\n\n$$2\\in P$$\n\n$$\\mathrm{Odd}(2)=\\mathrm{F}$$\n\nGleichwertig liefert die universelle Implikation die falsche Zeile\n\n$$2\\in P\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nDieses eine Gegenbeispiel widerlegt „jedes $x\\in P$ ist ungerade“.\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nDie Voraussetzung beschränkt sich auf Mitglieder von $P$ außer $2$:\n\n$$x\\in P\\land x\\neq 2\\quad\\Longrightarrow\\quad x\\text{ ungerade}$$\n\nDie verbleibenden Primzahlen $3,5,7,11,13$ sind alle ungerade.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Teilmengenbehauptung bedeutet\n\n$$P\\subseteq E\\quad\\Longleftrightarrow\\quad P\\setminus E=\\emptyset$$\n\nAber $P\\setminus E=\\{3,5,7,11,13\\}\\neq\\emptyset$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Es seien $P=\\{2,3,5,7,11,13\\}$ die Primzahlen kleiner als $15$ und $E=\\{2,4,6,8,10,12,14\\}$ die geraden Zahlen kleiner als $15$.\n\nDie Schnittmenge enthält Zahlen in beiden Listen. Die Differenz $P\\setminus E$ enthält Primzahlen, die nicht gerade sind. Die Allaussage „jede Primzahl in $P$ ist ungerade“ scheitert an $2$."
+  },
+  {
+    "case_id": "MATH 1.48",
+    "short_letters": [
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Comparing the conditions x > 10 and x > 5",
+    "context_en": "Let x be a real number. Compare the conditions $x>10$ and $x>5$.",
+    "statements_en": [
+      "The condition $x>10$ is sufficient for $x>5$.",
+      "The condition $x>10$ is necessary for $x>5$.",
+      "The condition $x>5$ is necessary for $x>10$.",
+      "The conditions $x>10$ and $x>5$ are equivalent.",
+      "$x=7$ is a counterexample to the claim that $x>5$ implies $x>10$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nLet $P$ be $x>10$ and $Q$ be $x>5$. If $P$ is true, then subtracting $5$ from $x>10$ gives\n\n$$x>10\\quad\\Longrightarrow\\quad x-5>5>0\\quad\\Longrightarrow\\quad x>5$$\n\nThus\n\n$$P\\Rightarrow Q$$\n\nholds for every real $x$. Since a sufficient condition is the antecedent of a guaranteed implication, $x>10$ is sufficient for $x>5$.\n\nSo the statement is True.",
+      "**B.** → False\n\nNecessity of $x>10$ for $x>5$ would require $Q\\Rightarrow P$. Test $x=7$ in the hypothesis:\n\n$$7>5$$\n\nNow test the required conclusion:\n\n$$7\\not>10$$\n\nThis witness makes $Q$ true and $P$ false. The implication $Q\\Rightarrow P$ fails.\n\nSo the statement is False.",
+      "**C.** → True\n\n“$x>5$ is necessary for $x>10$” means that whenever $x>10$ holds, $x>5$ must hold:\n\n$$x>10\\Rightarrow x>5$$\n\nThere is no real number with the forbidden truth pattern\n\n$$x>10 = \\mathrm{T},$$\n\n$$\nx>5 = \\mathrm{F}\n$$\n\nbecause every number above $10$ is automatically above $5$. Therefore $x>5$ is a necessary condition for $x>10$.\n\nSo the statement is True.",
+      "**D.** → False\n\nEquivalence requires both implications to hold:\n\n$$P\\Leftrightarrow Q\\quad\\Longleftrightarrow\\quad(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$\n\nThe overview recovered $P\\Rightarrow Q$. For the reverse direction, use $x=7$:\n\n$$7>5,$$\n\n$$7\\not>10$$\n\nThus $Q\\Rightarrow P$ fails. The two conditions are not equivalent.\n\nSo the statement is False.",
+      "**E.** → True\n\nA counterexample to $Q\\Rightarrow P$ must satisfy $Q\\land\\neg P$. For $x=7$,\n\n$$7>5$$\n\nbut\n\n$$7\\not>10$$\n\nThe named value makes the hypothesis true and the conclusion false. It is a counterexample.\n\nThat matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Two conditions on a real number: $P$ says $x>10$ and $Q$ says $x>5$.\n\n\"$P$ is sufficient for $Q$\" is the arrow $P\\Rightarrow Q$. \"$Q$ is necessary for $P$\" is the same arrow read from the other end. Equivalence $P\\Leftrightarrow Q$ needs both arrows. A counterexample to $Q\\Rightarrow P$ is a number that satisfies $Q$ and fails $P$.\n\nIf $x>10$, then $x>5$ automatically because $10>5$, so $P\\Rightarrow Q$ holds.",
+    "title_de_existing": "Vergleich der Bedingungen x > 10 und x > 5",
+    "context_de_existing": "Es sei x eine reelle Zahl. Vergleiche die Bedingungen $x>10$ und $x>5$.",
+    "statements_de_existing": [
+      "Die Bedingung $x>10$ ist hinreichend für $x>5$.",
+      "Die Bedingung $x>10$ ist notwendig für $x>5$.",
+      "Die Bedingung $x>5$ ist notwendig für $x>10$.",
+      "Die Bedingungen $x>10$ und $x>5$ sind äquivalent.",
+      "$x=7$ ist ein Gegenbeispiel zur Behauptung, dass aus $x>5$ folgt $x>10$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSei $P$ die Aussage $x>10$ und $Q$ die Aussage $x>5$. Wenn $P$ wahr ist, folgt durch Abziehen von $5$:\n\n$$x>10\\quad\\Longrightarrow\\quad x-5>5>0\\quad\\Longrightarrow\\quad x>5$$\n\nSomit gilt\n\n$$P\\Rightarrow Q$$\n\nfür jede reelle Zahl $x$. Eine hinreichende Bedingung ist genau die Prämisse einer Implikation.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nNotwendigkeit von $x>10$ für $x>5$ würde $Q\\Rightarrow P$ verlangen. Gegenbeispiel $x=7$:\n\n$$7>5\\quad(\\text{wahr}),\\qquad 7>10\\quad(\\text{falsch})$$\n\nDamit ist $Q\\Rightarrow P$ falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n„$x>5$ ist notwendig für $x>10$“ bedeutet: Wenn $x>10$ gilt, muss auch $x>5$ gelten — also wieder $P\\Rightarrow Q$, was in A gezeigt wurde.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nÄquivalenz verlangt beide Richtungen:\n\n$$P\\Leftrightarrow Q\\quad\\Longleftrightarrow\\quad (P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$\n\n$P\\Rightarrow Q$ gilt, $Q\\Rightarrow P$ nicht (siehe B).\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$x=7$ erfüllt $x>5$, aber nicht $x>10$. Das widerlegt $Q\\Rightarrow P$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Zwei Bedingungen an eine reelle Zahl: $P$ sagt $x>10$ und $Q$ sagt $x>5$.\n\n„$P$ ist hinreichend für $Q$“ ist der Pfeil $P\\Rightarrow Q$. „$Q$ ist notwendig für $P$“ ist derselbe Pfeil von der anderen Seite gelesen. Äquivalenz bräuchte beide Richtungen."
+  },
+  {
+    "case_id": "MATH 1.49",
+    "short_letters": [
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Loan approval",
+    "context_en": "A bank approves a loan only if the applicant's credit score is at least 700 AND their debt-to-income ratio is below 40%. Applicant P has a credit score of 750 and a debt-to-income ratio of 35%. Applicant Q has a credit score of 720 and a debt-to-income ratio of 45%.",
+    "statements_en": [
+      "Applicant P satisfies both required conditions.",
+      "We may conclude that P's loan will be approved.",
+      "Applicant Q does not satisfy both required conditions.",
+      "Since Q fails one of the required conditions, Q's loan will not be approved.",
+      "If an applicant's debt-to-income ratio is below 40%, their loan will definitely be approved, regardless of credit score."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nConjunction requires both bank tests to hold. Applicant P satisfies the score test and the ratio test:\n\n$$750\\ge 700$$\n\n$$35\\%<40\\%$$\n\nTherefore\n\n$$\nR(P) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}\n$$\n\nThe claim says P satisfies both required conditions.\n\nSo the statement is True.",
+      "**B.** → False\n\nLet $L$ mean “the loan is approved” and $R$ mean “both required tests hold.” The bank gives only\n\n$$L\\Rightarrow R$$\n\nApplicant P has $R(P)=\\mathrm{T}$, but that truth value does not determine $L(P)$. Both rows\n\n$$\nL(P) = \\mathrm{T},\\ R(P) = \\mathrm{T}\n$$\n\n$$\\text{and}$$\n\n$$\nL(P) = \\mathrm{F},\\ R(P) = \\mathrm{T}\n$$\n\nsatisfy $L\\Rightarrow R$. Concluding approval would use the unsupported converse\n\n$$R\\Rightarrow L$$\n\nso P's approval cannot be concluded and.\n\nSo the statement is False.",
+      "**C.** → True\n\nConjunction fails when either required test fails. Applicant Q clears the score test:\n\n$$720\\ge 700$$\n\nThe ratio test fails:\n\n$$45\\%\\not<40\\%$$\n\nThus\n\n$$\nR(Q) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}\n$$\n\nThe claim says Q does not satisfy both required conditions.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe contrapositive gives a valid inference from a failed necessary condition:\n\n$$L\\Rightarrow R\\quad\\Longleftrightarrow\\quad\\neg R\\Rightarrow\\neg L$$\n\nApplicant Q fails the ratio test, so the full requirement is false:\n\n$$\nR(Q) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}\n$$\n\nApplying the contrapositive gives\n\n$$\\neg R(Q)\\Rightarrow\\neg L(Q)$$\n\nQ's loan is therefore not approved.\n\nSo the statement is True.",
+      "**E.** → False\n\nA ratio below $40\\%$ is only one part of the required conjunction. Consider an applicant with score $650$ and ratio $30\\%$:\n\n$$650\\ge700 = \\mathrm{F},$$\n\n$$\n30\\%<40\\% = \\mathrm{T}\n$$\n\nThe full requirement evaluates to\n\n$$\nR = \\mathrm{F}\\land\\mathrm{T} = \\mathrm{F}\n$$\n\nThe contrapositive of $L\\Rightarrow R$ then gives $\\neg R\\Rightarrow\\neg L$, so this applicant cannot be approved. A low ratio does not guarantee approval.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $R$ for the bank's requirement (credit score at least $700$ and debt-to-income ratio below $40\\%$) and $L$ for \"the loan is approved.\" The wording is \"approved only if $R$,\" which is the arrow\n\n$$L\\Rightarrow R$$\n\nSo $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in the rule. The contrapositive $\\neg R\\Rightarrow\\neg L$ is guaranteed: fail $R$ and the loan is refused. Because $R$ joins its two tests with \"and\", a single failure sinks the whole requirement.",
+    "title_de_existing": "Kreditbewilligung",
+    "context_de_existing": "Eine Bank bewilligt einen Kredit nur dann, wenn die Bonitätsnote der Antragstellerin mindestens 700 beträgt UND das Schulden-Einkommens-Verhältnis unter 40% liegt. Antragstellerin P hat eine Bonitätsnote von 750 und ein Schulden-Einkommens-Verhältnis von 35%. Antragstellerin Q hat eine Bonitätsnote von 720 und ein Schulden-Einkommens-Verhältnis von 45%.",
+    "statements_de_existing": [
+      "Antragstellerin P erfüllt beide geforderten Bedingungen.",
+      "Daraus folgt, dass der Kredit von P bewilligt wird.",
+      "Antragstellerin Q erfüllt nicht beide geforderten Bedingungen.",
+      "Da Q eine der geforderten Bedingungen verfehlt, wird der Kredit von Q nicht bewilligt.",
+      "Wenn das Schulden-Einkommens-Verhältnis einer Antragstellerin unter 40% liegt, wird der Kredit unabhängig von der Bonitätsnote auf jeden Fall bewilligt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Konjunktion verlangt, dass beide Bankprüfungen gelten. Antragstellerin P erfüllt den Bonitätsprüfung und den Ratio-Prüfung:\n\n$$750\\ge 700$$\n\n$$35\\%<40\\%$$\n\nDaher\n\n$$\nR(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}\n$$\n\nDie Behauptung sagt, P erfülle beide geforderten Bedingungen — das stimmt.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Bankregel lautet „Bewilligung nur wenn $R$“, also\n\n$$L\\Rightarrow R$$\n\nnicht die Umkehrung $R\\Rightarrow L$. Dass P beide Prüfungen erfüllt, erzwingt die Bewilligung nicht. Beide Wahrheitswerte von $L$ wären mit $R=\\mathrm{T}$ verträglich.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nQ scheitert, sobald einer der Prüfungen scheitert. Antragstellerin Q besteht den Bonitätsprüfung:\n\n$$720\\ge 700$$\n\nDer Ratio-Prüfung scheitert:\n\n$$45\\%<40\\%$$\n\nist falsch. Daher gilt nicht beides.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAus $L\\Rightarrow R$ folgt die Kontraposition\n\n$$\\neg R\\Rightarrow\\neg L$$\n\nQ hat $\\neg R$, also folgt $\\neg L$: der Kredit wird nicht bewilligt.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Bank verlangt die Konjunktion beider Bedingungen. Ein gutes Ratio allein ohne ausreichende Bonität erfüllt $R$ nicht und erzwingt daher keine Bewilligung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Schreibe $R$ für die Bankanforderung (Bonität mindestens $700$ und Schulden-Einkommens-Verhältnis unter $40\\%$) und $L$ für „der Kredit wird bewilligt“. Die Formulierung ist „bewilligt nur wenn $R$“, also $L\\Rightarrow R$. Das ist notwendig, nicht hinreichend. P erfüllt $R$; Q nicht. Aus $\\neg R$ folgt $\\neg L$, aber aus $R$ folgt nicht $L$."
+  },
+  {
+    "case_id": "MATH 1.50",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "The universe of discourse is the set of real numbers, ℝ",
+    "context_en": "The universe of discourse is the set of real numbers, ℝ.",
+    "statements_en": [
+      "The negation of \"$\\forall x\\, (x^2 \\ge 0)$\" is \"$\\exists x\\, (x^2 < 0)$.\"",
+      "The statement \"$\\exists x\\, (x^2 = -1)$\" is true.",
+      "The negation of \"$\\exists x\\, (x > 100)$\" is \"$\\forall x\\, (x \\le 100)$.\"",
+      "\"$\\forall x > 0\\, \\exists y\\, (y > x)$\" is a true statement.",
+      "\"$\\exists y\\, \\forall x > 0\\, (y > x)$\" is a true statement."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNegating a universal produces an existential of the negated predicate. The inequality $\\ge$ flips to $<$:\n\n$$\\neg\\forall x\\,(x^{2}\\ge 0)\\equiv\\exists x\\,(x^{2}<0)$$\n\nThe quoted sentence is that negation.\n\nThat matches the claim.\n\n$$\\forall x\\, (x^2 \\ge 0)$$\n\n$$\\exists x\\, (x^2 < 0)$$\n\nSo the statement is True.",
+      "**B.** → False\n\nFor every real number, squaring produces a nonnegative result:\n\n$$\\forall x\\in\\mathbb R,$$\n\n$$x^{2}\\ge0$$\n\nBut the proposed witness would have to satisfy\n\n$$x^{2}=-1<0$$\n\nwhich contradicts that fact. Hence the real solution set is empty:\n\n$$\n\\{x\\in\\mathbb R:x^{2} = -1\\} = \\varnothing\n$$\n\nThe existential statement has no real witness, so it is False.\n\nSo the statement is False.",
+      "**C.** → True\n\nNegating an existential produces a universal of the negated predicate. The inequality $>$ flips to $\\le$, including the boundary $100$:\n\n$$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100)$$\n\nThe quoted sentence is that negation.\n\nThat matches the claim.\n\n$$\\exists x\\, (x > 100)$$\n\n$$\\forall x\\, (x \\le 100)$$\n\nSo the statement is True.",
+      "**D.** → True\n\nBecause $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every $x>0$:\n\n$$x+1>x$$\n\nEach $x$ gets its own $y$.\n\nThat matches the claim.\n\n$$\\forall x > 0\\, \\exists y\\, (y > x)$$\n\nSo the statement is True.",
+      "**E.** → False\n\nNow a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered,\n\n$$x=\\max(y+1,1)$$\n\nis a positive number bigger than it. No champion exists.\n\nThat conflicts with the claim.\n\n$$\\exists y\\, \\forall x > 0\\, (y > x)$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The universe is $\\mathbb R$.\n\nNegation of quantifiers follows the mirror rules\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$$\n\nSquares of reals are never negative. Quantifier order matters: whichever variable is written first is chosen first, and later choices may depend on it. $\\forall x\\,\\exists y$ lets $y$ be built from $x$; $\\exists y\\,\\forall x$ freezes one $y$ that must work for every $x$.",
+    "title_de_existing": "Der Diskursuniversum ist die Menge der reellen Zahlen",
+    "context_de_existing": "Die Grundmenge (Universe of Discourse) ist die Menge der reellen Zahlen $\\mathbb{R}$.",
+    "statements_de_existing": [
+      "Die Negation von \"$\\forall x\\, (x^2 \\ge 0)$\" ist \"$\\exists x\\, (x^2 < 0)$\".",
+      "Die Aussage \"$\\exists x\\, (x^2 = -1)$\" ist wahr.",
+      "Die Negation von \"$\\exists x\\, (x > 100)$\" ist \"$\\forall x\\, (x \\le 100)$\".",
+      "\"$\\forall x > 0\\, \\exists y\\, (y > x)$\" ist eine wahre Aussage.",
+      "\"$\\exists y\\, \\forall x > 0\\, (y > x)$\" ist eine wahre Aussage."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation vertauscht All- und Existenzquantor und verneint den Kern:\n\n$$\\neg\\forall x\\,(x^{2}\\ge 0)\\equiv\\exists x\\,(x^{2}<0)$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nIn $\\mathbb{R}$ gibt es keine Zahl mit negativem Quadrat:\n\n$$x^{2}=-1$$\n\nhat keine reelle Lösung. Die Existenzaussage ist falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNegation einer Existenzaussage ergibt eine Allaussage mit verneintem Kern:\n\n$$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100)$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nZu jedem positiven $x$ wähle etwa $y=x+1$:\n\n$$y>x$$\n\nDie All-Existenz-Aussage gilt in $\\mathbb{R}$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nHier soll ein festes $y$ alle positiven $x$ übertreffen. Zu jedem Kandidaten $y$ wähle $x=y+1>0$: dann gilt nicht $y>x$. Die Quantorenreihenfolge macht den Unterschied zu D.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Grundmenge ist $\\mathbb{R}$. Negation von Quantoren folgt den Spiegelregeln $\\neg\\forall x\\,P\\equiv\\exists x\\,\\neg P$ und $\\neg\\exists x\\,P\\equiv\\forall x\\,\\neg P$. In $\\mathbb{R}$ ist jedes Quadrat nichtnegativ; $x^{2}=-1$ ist unmöglich. Die Reihenfolge $\\forall\\exists$ versus $\\exists\\forall$ ist wesentlich: zu jedem $x$ ein größeres $y$ existiert, ein einziges $y$ über allen positiven $x$ dagegen nicht."
+  },
+  {
+    "case_id": "MATH 1.51",
+    "short_letters": [
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "A medical diagnostic criterion",
+    "context_en": "A doctor's criterion: a patient is diagnosed with condition X only if they exhibit both symptom A and symptom B; however, exhibiting both symptoms does not guarantee the diagnosis, since other conditions must also be ruled out. Patient R has been diagnosed with condition X. Patient S exhibits symptom A but not symptom B.",
+    "statements_en": [
+      "Patient R might have been diagnosed with condition X despite exhibiting only symptom A (not symptom B).",
+      "Patient S can be diagnosed with condition X.",
+      "Exhibiting both symptoms A and B is a sufficient condition for diagnosis with condition X.",
+      "If a patient does not exhibit symptom A, they cannot be diagnosed with condition X, regardless of other symptoms.",
+      "It is impossible for a patient to exhibit both symptoms A and B without being diagnosed with condition X."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe criterion makes both symptoms necessary for a diagnosis:\n\n$$D\\Rightarrow(A\\land B)$$\n\nPatient R has $D$ true, so modus ponens gives\n\n$$A(R)\\land B(R)=\\mathrm{T}$$\n\nThe claim allows R to have symptom A without symptom B, which contradicts the required conjunction.\n\nSo the statement is False.",
+      "**B.** → False\n\nThe contrapositive blocks diagnosis when the required symptom conjunction fails. Patient S has A but not B, so\n\n$$\nA(S)\\land B(S) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}\n$$\n\nFrom the criterion,\n\n$$\\neg(A\\land B)\\Rightarrow\\neg D$$\n\nPatient S therefore cannot be diagnosed with condition X.\n\nSo the statement is False.",
+      "**C.** → False\n\nLet $S=A\\land B$ mean that both symptoms are present. Calling $S$ sufficient would require the reverse implication\n\n$$S\\Rightarrow D$$\n\nThe doctor explicitly allows a patient whose two symptoms are present but whose diagnosis is withheld while other conditions are checked:\n\n$$S = \\mathrm{T},$$\n\n$$D = \\mathrm{F}$$\n\nFor that allowed case,\n\n$$S\\Rightarrow D = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nBoth symptoms are necessary but not sufficient for diagnosis.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe contrapositive blocks diagnosis whenever the required conjunction is false. If symptom A is absent, then for either truth value of B,\n\n$$\nA\\land B = \\mathrm{F}\\land B = \\mathrm{F}\n$$\n\nTherefore\n\n$$\\neg(A\\land B)\\Rightarrow\\neg D$$\n\nNo other symptom can repair the missing A requirement.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe criterion gives $D\\Rightarrow(A\\land B)$, but it explicitly denies the converse. A patient may have both symptoms while another condition prevents diagnosis:\n\n$$A\\land B = \\mathrm{T},$$\n\n$$D = \\mathrm{F}$$\n\nThis possibility satisfies the doctor's one-way rule because\n\n$$D\\Rightarrow(A\\land B) = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$\n\nyet it directly refutes the claim that such a patient is impossible. Therefore.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Let $D$ mean diagnosed with condition X, and let $S$ mean the patient shows symptom A and symptom B.\n\n\"Diagnosed only if $S$\" is the arrow $D\\Rightarrow S$: no diagnosis without both symptoms, which makes $S$ necessary. The doctor also says both symptoms do not guarantee the diagnosis, so the reverse arrow $S\\Rightarrow D$ is refused. The contrapositive $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis the moment either symptom is missing.\n\nPatient R holds the diagnosis. Patient S has A but not B.",
+    "title_de_existing": "Ein medizinisches Diagnosekriterium",
+    "context_de_existing": "Kriterium einer Ärztin: Eine Patientin wird nur dann mit der Krankheit X diagnostiziert, wenn sie sowohl Symptom A als auch Symptom B zeigt; das Vorliegen beider Symptome garantiert die Diagnose jedoch nicht, da andere Bedingungen ebenfalls erfüllt sein müssen. Patientin R zeigt nur Symptom A. Patientin S zeigt beide Symptome.",
+    "statements_de_existing": [
+      "Patientin R könnte trotz nur Symptom A (ohne Symptom B) mit Krankheit X diagnostiziert worden sein.",
+      "Patientin S kann mit Krankheit X diagnostiziert werden.",
+      "Das Vorliegen beider Symptome A und B ist eine hinreichende Bedingung für die Diagnose mit Krankheit X.",
+      "Wenn eine Patientin Symptom A nicht zeigt, kann sie unabhängig von anderen Faktoren nicht mit Krankheit X diagnostiziert werden.",
+      "Es ist unmöglich, dass eine Patientin beide Symptome A und B zeigt, ohne mit Krankheit X diagnostiziert zu werden."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nDie Regel macht beide Symptome notwendig für die Diagnose:\n\n$$D\\Rightarrow (A\\land B)$$\n\nPatientin R hat nur Symptom A, also $\\neg(A\\land B)$. Die Abtrennungsregel auf die Kontraposition liefert $\\neg D$. Eine Diagnose trotz nur A ist unmöglich.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nWenn die Patientin beide Symptome hat, gilt $A\\land B$. Die Regel $D\\Rightarrow (A\\land B)$ erzwingt daraus nicht $D$. Beide Symptome sind notwendig, nicht hinreichend; S kann diagnostiziert sein oder nicht.\n\nDie Behauptung „kann diagnostiziert werden“ als gesicherte Folgerung ist falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nHinreichend wäre $(A\\land B)\\Rightarrow D$. Gegeben ist nur die umgekehrte Richtung $D\\Rightarrow (A\\land B)$. Der Text nennt ausdrücklich, dass beide Symptome die Diagnose nicht garantieren.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nOhne Symptom A gilt $\\neg A$, also $\\neg(A\\land B)$. Aus $D\\Rightarrow (A\\land B)$ folgt $\\neg D$. Ohne A ist keine Diagnose möglich.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGenau das schließt der Text aus: beide Symptome ohne Diagnose sind möglich, weil weitere Bedingungen fehlen können.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Sei $D$ die Diagnose mit Krankheit X und $S$ das Vorliegen beider Symptome A und B. „Diagnose nur wenn $S$“ ist $D\\Rightarrow S$: $S$ ist notwendig, nicht hinreichend. Fehlt ein Symptom, folgt $\\neg D$. Beide Symptome allein erzwingen $D$ nicht."
+  },
+  {
+    "case_id": "MATH 1.52",
+    "short_letters": [
+      0,
+      2,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Existential and Universal Claims Over Integers 1 to 20",
+    "context_en": "The universe is the set of integers from 1 to 20, i.e. $\\{1, 2..., 20\\}$.",
+    "statements_en": [
+      "\"$\\exists x \\in \\{1,\\ldots,20\\}$ such that x is divisible by both 3 and 5\" is true",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 4, then x is divisible by 2\" is true",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$, if x is divisible by 2, then x is divisible by 4\" is true",
+      "The negation of \"$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$\" is \"$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\mathrm{Even}(x))$\"",
+      "The negated statement in (d) is itself true"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNeed a multiple of both $3$ and $5$ in $\\{1,\\ldots,20\\}$:\n\n$$3\\cdot 5=15$$\n\n$$15\\in\\{1,\\ldots,20\\}$$\n\n$$15\\div 3=5$$\n\n$$15\\div 5=3$$\n\nso $15$ is divisible by both. The existential holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nIf $4\\mid x$, write\n\n$$x=4k$$\n\n$$4k=2\\cdot(2k)$$\n\n$$2\\mid x$$\n\nThe implication holds for every $x$ in the universe.\n\nSo the statement is True.",
+      "**C.** → False\n\nCounterexample:\n\n$$x=2$$\n\n$$2\\div 2=1$$\n\nso $2\\mid 2$. But\n\n$$2\\div 4$$\n\nis not an integer, so $4\\nmid 2$. The implication fails.\n\nSo the statement is False.",
+      "**D.** → True\n\nNegate the universal implication:\n\n$$\\neg\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$$\n\n$$\\equiv\\exists x\\,\\neg(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$$\n\n$$\\equiv\\exists x\\,(\\mathrm{Prime}(x)\\wedge\\neg\\mathrm{Odd}(x))$$\n\n$$\\equiv\\exists x\\,(\\mathrm{Prime}(x)\\wedge\\mathrm{Even}(x))$$\n\nSo the statement is True.",
+      "**E.** → True\n\nWitness:\n\n$$x=2$$\n\n$$\\mathrm{Prime}(2)$$\n\n$$\\mathrm{Even}(2)$$\n\n$$2\\in\\{1,\\ldots,20\\}$$\n\nso the existential negation holds.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The universe is the finite set $\\{1,2,\\ldots,20\\}$.\n\nAn existential sentence needs one working example. A universal sentence is destroyed by one counterexample. An implication $P\\Rightarrow Q$ fails only where $P$ holds and $Q$ fails, so its negation is an existential $P\\land\\neg Q$.",
+    "title_de_existing": "Existenz- und Allaussagen über die ganzen Zahlen 1 bis 20",
+    "context_de_existing": "Die Grundmenge ist die Menge der ganzen Zahlen von 1 bis 20, also $\\{1, 2, \\ldots, 20\\}$.",
+    "statements_de_existing": [
+      "\"$\\exists x \\in \\{1,\\ldots,20\\}$ mit der Eigenschaft, dass $x$ durch 3 und durch 5 teilbar ist\" ist wahr.",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$: wenn $x$ durch 4 teilbar ist, dann ist $x$ durch 2 teilbar\" ist wahr.",
+      "\"$\\forall x \\in \\{1,\\ldots,20\\}$: wenn $x$ durch 2 teilbar ist, dann ist $x$ durch 4 teilbar\" ist wahr.",
+      "Die Negation von \"$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$\" ist \"$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\neg\\mathrm{Odd}(x))$\".",
+      "Die negierte Aussage in (D) ist selbst wahr."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEin Existenzbeispiel genügt: $x=15$ liegt in $\\{1,\\ldots,20\\}$ und ist durch $3$ und durch $5$ teilbar.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nJede durch $4$ teilbare Zahl ist durch $2$ teilbar. Im endlichen Universum gibt es kein Gegenbeispiel.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nGegenbeispiel $x=2$: durch $2$ teilbar, aber nicht durch $4$. Die Allaussage scheitert.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNegation vertauscht den Allquantor und verneint den Kern einer Implikation:\n\n$$\\neg\\forall x\\,(P(x)\\Rightarrow O(x))\\equiv\\exists x\\,(P(x)\\land\\neg O(x))$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nIn $\\{1,\\ldots,20\\}$ ist $2$ eine gerade Primzahl. Damit gilt die Existenzaussage aus D.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Das Universum ist die endliche Menge $\\{1,2,\\ldots,20\\}$. Eine Existenzaussage braucht ein Beispiel; eine Allaussage scheitert an einem Gegenbeispiel. Teilbarkeit durch $4$ impliziert Teilbarkeit durch $2$, aber nicht umgekehrt. Die Negation von „jede Primzahl ist ungerade“ ist die Existenz einer geraden Primzahl — hier $2$."
+  },
+  {
+    "case_id": "MATH 1.53",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "A club membership rule",
+    "context_en": "A club's rule: “A person is a member if and only if they are not on the banned list.” The banned list contains exactly the people with 3 or more rule violations. Person T has 2 violations. Person U has 4 violations.",
+    "statements_en": [
+      "Person T is a member of the club.",
+      "Person U is a member of the club.",
+      "The banned list and the membership list are complementary (every person is in exactly one of the two).",
+      "If a person has exactly 3 violations, they could either be a member or banned, depending on additional unstated factors.",
+      "There exists some number of violations for which it is genuinely ambiguous, from the given rule alone, whether a person is banned."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWrite $B(v)$ for “the person is banned” and $M(v)$ for “the person is a member.” The rules say\n\n$$B(v)\\Leftrightarrow(v\\ge3),$$\n\n$$M(v)\\Leftrightarrow\\neg B(v)$$\n\nFor Person T, $v=2$, so\n\n$$\nB(2) = (2\\ge3) = \\mathrm{F}\n$$\n\nand therefore\n\n$$\nM(2) = \\neg B(2) = \\neg\\mathrm{F} = \\mathrm{T}\n$$\n\nPerson T is a member.\n\nSo the statement is True.",
+      "**B.** → False\n\nPerson U has four violations. Evaluate the banned-list test first:\n\n$$\nB(4) = (4\\ge3) = \\mathrm{T}\n$$\n\nMembership is exactly the negation of banned status, so\n\n$$\nM(4) = \\neg B(4) = \\neg\\mathrm{T} = \\mathrm{F}\n$$\n\nU is not a member. The claim that U is a member is therefore False.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe biconditional gives, for every person $x$,\n\n$$M(x)\\Leftrightarrow\\neg B(x)$$\n\nIf $B(x)=\\mathrm{T}$, then $M(x)=\\mathrm{F}$; if $B(x)=\\mathrm{F}$, then $M(x)=\\mathrm{T}$. Thus\n\n$$M\\cap B = \\varnothing,$$\n\n$$\nM\\cup B = U\n$$\n\nwhere $U$ is the set of all people under the rule. Those two equations say the membership and banned lists are complementary.\n\nSo the statement is True.",
+      "**D.** → False\n\nAt the boundary value $v=3$, “three or more” is already satisfied:\n\n$$\nB(3) = (3\\ge3) = \\mathrm{T}\n$$\n\nThe membership biconditional then gives\n\n$$\nM(3) = \\neg B(3) = \\neg\\mathrm{T} = \\mathrm{F}\n$$\n\nThere is no second allowed outcome depending on unstated factors: exactly three violations forces banned status.\n\nSo the statement is False.",
+      "**E.** → False\n\nEvery possible integer violation count lies on exactly one side of the cutoff:\n\n$$v<3\\quad\\text{or}\\quad v\\ge3$$\n\nThe resulting classifications are\n\n$$v<3\\Rightarrow B(v) = \\mathrm{F},\\ M(v) = \\mathrm{T}$$\n\n$$v\\ge3\\Rightarrow B(v) = \\mathrm{T},\\ M(v) = \\mathrm{F}$$\n\nNo count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The club rule is a biconditional: a person is a member if and only if they are not on the banned list. The banned list is the people with $3$ or more rule violations. Writing $v$ for the violation count, banned means $v\\ge 3$, and membership is the exact opposite.\n\nBecause the two conditions are exact opposites, the two lists never overlap and never leave a gap. For each integer $v$, the test $v\\ge 3$ returns a definite yes or no.",
+    "title_de_existing": "Eine Clubmitgliedschaftsregel",
+    "context_de_existing": "Clubregel: „Eine Person ist genau dann Mitglied, wenn sie nicht auf der Sperrliste steht.“ Die Sperrliste enthält genau die Personen mit 3 oder mehr Regelverstößen. Person T hat 2 Verstöße. Person U hat 4 Verstöße.",
+    "statements_de_existing": [
+      "Person T ist Mitglied des Clubs.",
+      "Person U ist Mitglied des Clubs.",
+      "Sperrliste und Mitgliederliste sind komplementär (jede Person steht in genau einer der beiden Listen).",
+      "Wenn eine Person genau 3 Verstöße hat, könnte sie je nach weiteren Faktoren Mitglied oder gesperrt sein.",
+      "Es gibt eine Verstoßzahl, bei der allein aus der gegebenen Regel nicht entscheidbar ist, ob Mitgliedschaft vorliegt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nT hat $2$ Verstöße, also weniger als $3$, und steht nicht auf der Sperrliste. Die Bikonditional-Regel liefert die Mitgliedschaft.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nU hat $4\\ge 3$ Verstöße und steht auf der Sperrliste. Die Regel schließt Mitgliedschaft aus.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Regel lautet Mitgliedschaft $\\Leftrightarrow$ nicht gesperrt. Jede Person ist genau in einer der beiden Listen.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGenau $3$ Verstöße bedeuten Sperre. Weitere Faktoren kommen in der Regel nicht vor; die Person ist gesperrt und kein Mitglied.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Sperrschwelle und die Bikonditional trennen die Fälle vollständig. Es bleibt keine Mehrdeutigkeit.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Clubregel ist eine Bikonditional: Mitglied genau dann, wenn nicht gesperrt. Gesperrt sind Personen mit mindestens $3$ Verstößen. T mit $2$ ist Mitglied; U mit $4$ nicht. Die beiden Listen bilden eine Partition."
+  },
+  {
+    "case_id": "MATH 1.54",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "One Counterexample Against \"All Primes Are Odd\"",
+    "context_en": "Consider the universal claim: \"All prime numbers are odd,\" and the irrationality of √2.",
+    "statements_en": [
+      "To disprove the universal statement \"all prime numbers are odd,\" it suffices to give one counterexample.",
+      "The number 2 is a valid counterexample to \"all prime numbers are odd.\"",
+      "A contradiction proof of an implication assumes that its condition holds while its conclusion fails, then derives a contradiction.",
+      "A proof by contradiction that √2 is irrational begins by assuming that √2 IS irrational.",
+      "If a statement is confirmed true for one specific example, this proves it is true for all cases."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe negation of a universal statement is an existential counterexample:\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x)$$\n\nFor “all primes are odd,” a counterexample must satisfy\n\n$$\\mathrm{Prime}(x)\\land\\neg\\mathrm{Odd}(x)$$\n\nExhibiting one such $x$ makes the existential negation true and the original universal false. Therefore one counterexample is sufficient.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to\n\n$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}$$\n\nEquivalently, the universal implication fails at $2$:\n\n$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nThus $2$ is a valid counterexample.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo prove an implication by contradiction, negate the implication:\n\n$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$\n\nThus the proof assumes both\n\n$$P = \\mathrm{T},$$\n\n$$\nQ = \\mathrm{F}\n$$\n\nand derives a contradiction. That shows the only truth assignment that could make $P\\Rightarrow Q$ false is impossible, so the implication must hold. The described method is correct, making the statement True.\n\nSo the statement is True.",
+      "**D.** → False\n\nLet $R$ be the target “$\\sqrt2$ is irrational.” A contradiction proof starts from its negation:\n\n$$\\neg R:\\quad \\sqrt2\\in\\mathbb Q$$\n\nThat means assuming integers $a,b$ with $b\\ne0$ and\n\n$$\\sqrt2=\\frac{a}{b}$$\n\nusually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong.\n\nSo the statement is False.",
+      "**E.** → False\n\nOne favourable example proves only an existential statement:\n\n$$P(a)=\\mathrm{T}\\quad\\Longrightarrow\\quad\\exists x\\,P(x)$$\n\nIt does not establish the universal\n\n$$\\forall x\\,P(x)$$\n\nFor example, $3$ is prime and odd, but that successful check leaves $2$ untested, and $2$ is prime but not odd. A single confirming case cannot rule out a counterexample elsewhere.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A universal claim $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. One counterexample is a complete disproof. The reverse does not work: a pile of confirming examples never proves a universal.\n\nA contradiction proof of an implication assumes the unique failure case $P\\land\\neg Q$ and derives an impossibility. To prove a claim by contradiction, assume its negation, not the claim itself.",
+    "title_de_existing": "Ein Gegenbeispiel gegen „Alle Primzahlen sind ungerade“",
+    "context_de_existing": "Betrachte die Allaussage „Alle Primzahlen sind ungerade“ und die Irrationalität von $\\sqrt{2}$.",
+    "statements_de_existing": [
+      "Um die Allaussage „alle Primzahlen sind ungerade“ zu widerlegen, genügt ein Gegenbeispiel.",
+      "Die Zahl 2 ist ein gültiges Gegenbeispiel zu „alle Primzahlen sind ungerade“.",
+      "Ein Widerspruchsbeweis einer Implikation nimmt an, dass die Voraussetzung gilt und die Folgerung scheitert.",
+      "Ein Widerspruchsbeweis, dass $\\sqrt{2}$ irrational ist, beginnt mit der Annahme, dass $\\sqrt{2}$ irrational ist.",
+      "Wenn eine Aussage für ein konkretes Beispiel bestätigt wird, ist sie damit für alle Fälle bewiesen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine Allaussage $\\forall x\\,P(x)$ ist falsch, sobald ein $x$ mit $\\neg P(x)$ existiert. Ein Gegenbeispiel ist ein vollständiger Widerlegung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$2$ ist prim und gerade, also ein Gegenbeispiel zu „alle Primzahlen sind ungerade“.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBeim Widerspruchsbeweis von $P\\Rightarrow Q$ nimmt man $P\\land\\neg Q$ an und leitet einen Widerspruch ab.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nMan nimmt das Gegenteil der Behauptung an: $\\sqrt{2}$ sei rational. Die Irrationalität ist das Ziel, nicht die Annahme.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nEin Beispiel bestätigt eine Existenzaussage, nicht eine Allaussage. Induktion oder ein allgemeiner Beweis wären nötig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Eine Allaussage $\\forall x\\,P(x)$ fällt mit einem Gegenbeispiel. $2$ widerlegt „jede Primzahl ist ungerade“. Widerspruch zu $P\\Rightarrow Q$ startet mit $P\\land\\neg Q$; Widerspruch zur Irrationalität startet mit der Annahme der Rationalität. Ein einzelnes positives Beispiel beweist keine Allaussage."
+  },
+  {
+    "case_id": "MATH 1.55",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "An event organizer's rule is : \"If it rains, the picnic is cancelled.\"",
+    "context_en": "An event organizer states: \"If it rains, the picnic is cancelled.\"",
+    "statements_en": [
+      "The negation of this rule is: \"It rains and the picnic is not cancelled.\"",
+      "The converse, \"If the picnic is cancelled, then it rained,\" is guaranteed true whenever the organizer's rule holds.",
+      "The inverse, \"If it does not rain, the picnic is not cancelled,\" is logically equivalent to the original rule.",
+      "Suppose it did not rain, yet the picnic was cancelled due to a venue conflict. This contradicts the inverse statement but does not contradict the organizer's rule.",
+      "The contrapositive, \"If the picnic was not cancelled, then it did not rain,\" is logically equivalent to the original rule and must also hold."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWrite $P$ for “it rains” and $Q$ for “the picnic is cancelled.” The organizer's rule is $P\\Rightarrow Q$. Negating it gives\n\n$$\\neg(P\\Rightarrow Q) \\equiv\\neg(\\neg P\\lor Q) \\equiv P\\land\\neg Q$$\n\nThis formula is true exactly when it rains and the picnic is not cancelled:\n\n$$\nP\\land\\neg Q = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}\n$$\n\nThe quoted sentence is precisely the negation.\n\nSo the statement is True.",
+      "**B.** → False\n\nOne truth assignment separates an implication from its converse.\n\n$$(p,q)=(F,T)$$\n\n$$\np\\rightarrow q = F\\rightarrow T = T\n$$\n\n$$\nq\\rightarrow p = T\\rightarrow F = F\n$$\n\nThe two implications disagree on this assignment.\n\nSo the statement is False.",
+      "**C.** → False\n\nThe inverse $\\neg P\\Rightarrow\\neg Q$ fails on a dry day when the picnic is cancelled for another reason. For the venue-conflict day,\n\n$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nThe original remains true:\n\n$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$\n\nOne situation separates their truth values. The inverse is not equivalent to the original.\n\nSo the statement is False.",
+      "**D.** → True\n\nAn implication is false only when its hypothesis is true and its conclusion is false. On the venue-conflict day, $P$ is false and $Q$ is true, so\n\n$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nwhile\n\n$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$\n\nThe day contradicts the inverse but not the organizer's rule.\n\nSo the statement is True.",
+      "**E.** → True\n\nForm the contrapositive by swapping the two propositions and negating both:\n\n$$P\\Rightarrow Q \\quad\\Longleftrightarrow\\quad \\neg Q\\Rightarrow\\neg P$$\n\nHere this becomes\n\n$$\\text{picnic not cancelled}\\Rightarrow\\text{no rain}$$\n\nThe equivalence can also be checked algebraically:\n\n$$\\neg Q\\Rightarrow\\neg P \\equiv Q\\lor\\neg P \\equiv\\neg P\\lor Q \\equiv P\\Rightarrow Q$$\n\nThe quoted contrapositive is guaranteed whenever the original rule holds.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for \"it rains\" and $Q$ for \"the picnic is cancelled\". The organizer's rule is $P\\Rightarrow Q$.\n\nAn implication fails only when the hypothesis holds and the conclusion fails:\n\n$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$\n\nThe contrapositive $\\neg Q\\Rightarrow\\neg P$ is equivalent to the original. The converse $Q\\Rightarrow P$ and the inverse $\\neg P\\Rightarrow\\neg Q$ are not.\n\nOn a dry venue-conflict day, $P$ is false and $Q$ is true. The original holds because $P$ is false.",
+    "title_de_existing": "Regel einer Veranstalterin: „Wenn es regnet, fällt das Picknick aus.“",
+    "context_de_existing": "Eine Veranstalterin sagt: „Wenn es regnet, wird das Picknick abgesagt.“",
+    "statements_de_existing": [
+      "Die Negation dieser Regel lautet: „Es regnet und das Picknick wird nicht abgesagt.“",
+      "Die Umkehrung „Wenn das Picknick abgesagt wird, dann hat es geregnet“ ist garantiert wahr, sobald die Regel der Veranstalterin gilt.",
+      "Die Formulierung „Wenn es nicht regnet, wird das Picknick nicht abgesagt“ ist logisch äquivalent zur ursprünglichen Regel.",
+      "Angenommen, es hat nicht geregnet, das Picknick wurde aber wegen eines Raumkonflikts abgesagt. Das widerspricht der Regel der Veranstalterin nicht.",
+      "Die Kontraposition „Wenn das Picknick nicht abgesagt wurde, dann hat es nicht geregnet“ ist logisch äquivalent zur ursprünglichen Regel."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSei $P$: es regnet, $Q$: das Picknick wird abgesagt. Die Regel ist $P\\Rightarrow Q$. Ihre Negation ist\n\n$$P\\land\\neg Q$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Umkehrung $Q\\Rightarrow P$ folgt nicht aus $P\\Rightarrow Q$. Absage ohne Regen ist mit der Regel verträglich.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie Form $\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung, nicht zur Originalimplikation.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nKein Regen und trotzdem Absage ist $Q\\land\\neg P$. Die Originalregel $P\\Rightarrow Q$ scheitert nur bei $P\\land\\neg Q$. Der Fall widerspricht der Regel nicht.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDie Kontraposition $\\neg Q\\Rightarrow\\neg P$ ist logisch äquivalent zu $P\\Rightarrow Q$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Schreibe $P$ für „es regnet“ und $Q$ für „das Picknick wird abgesagt“. Die Regel ist $P\\Rightarrow Q$. Eine Implikation scheitert nur bei wahrer Prämisse und falscher Konklusion. Umkehrung und die Form $\\neg P\\Rightarrow\\neg Q$ sind nicht äquivalent; die Kontraposition ist es."
+  },
+  {
+    "case_id": "MATH 1.56",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Inclusive Or in a Two-Product Purchase Survey",
+    "context_en": "A market survey of 100 consumers found that 40 bought product X, 35 bought product Y, and 15 bought both X and Y.",
+    "statements_en": [
+      "In mathematical logic, the statement \"a consumer bought X or Y\" includes consumers who bought both.",
+      "The number of consumers who bought X or Y (in the inclusive sense) is 60.",
+      "If \"or\" were interpreted exclusively (XOR: exactly one of X, Y), the count of consumers satisfying \"X or Y\" would be 45.",
+      "A biconditional means that its two components always have the same truth value.",
+      "A biconditional is true whenever at least one of its two components is true."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInclusive disjunction $X\\vee Y$ is true when $X$ holds, when $Y$ holds, and when both hold. For a both-buyer:\n\n$$X=\\mathrm{T}$$\n\n$$Y=\\mathrm{T}$$\n\n$$X\\vee Y=\\mathrm{T}\\vee\\mathrm{T}$$\n\n$$X\\vee Y=\\mathrm{T}$$\n\nSo all $15$ both-buyers satisfy “bought X or Y.”\n\nSo the statement is True.",
+      "**B.** → True\n\nInclusive union count:\n\n$$|X|=40$$\n\n$$|Y|=35$$\n\n$$|X\\cap Y|=15$$\n\n$$|X|+|Y|=40+35$$\n\n$$40+35=75$$\n\n$$75-15=60$$\n\n$$|X\\cup Y|=60$$\n\nSo the statement is True.",
+      "**C.** → True\n\nExclusive or keeps only the outer regions:\n\n$$40-15=25$$\n\n$$35-15=20$$\n\n$$25+20=45$$\n\nSo the statement is True.",
+      "**D.** → True\n\nA biconditional is true exactly on matching truth values:\n\n$$\\mathrm{T}\\Leftrightarrow\\mathrm{T}=\\mathrm{T}$$\n\n$$\\mathrm{F}\\Leftrightarrow\\mathrm{F}=\\mathrm{T}$$\n\n$$\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F}$$\n\n$$\\mathrm{F}\\Leftrightarrow\\mathrm{T}=\\mathrm{F}$$\n\nSo the statement is True.",
+      "**E.** → False\n\n“At least one true” is disjunction, not a biconditional. On\n\n$$P=\\mathrm{T}$$\n\n$$Q=\\mathrm{F}$$\n\n$$P\\vee Q=\\mathrm{T}$$\n\nbut\n\n$$P\\Leftrightarrow Q=\\mathrm{F}$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A market survey of $100$ consumers found $|X|=40$, $|Y|=35$, and $|X\\cap Y|=15$.\n\nInclusive \"or\" means at least one, so both-buyers stay inside. Exclusive \"or\" keeps exactly one. A biconditional is true when both parts agree and false the moment their truth values differ.\n\nX-only is $|X|-|X\\cap Y|$. Y-only is $|Y|-|X\\cap Y|$.",
+    "title_de_existing": "Inklusives Oder in einer Zwei-Produkt-Kaufumfrage",
+    "context_de_existing": "Eine Marktumfrage unter 100 Konsumentinnen ergab: 40 kauften Produkt X, 35 Produkt Y und 15 beide.",
+    "statements_de_existing": [
+      "In der mathematischen Logik schließt die Aussage „eine Konsumentin kaufte X oder Y“ auch jene ein, die beides kauften.",
+      "Die Anzahl der Konsumentinnen, die X oder Y kauften (im inklusiven Sinn), beträgt 60.",
+      "Würde „oder“ exklusiv gelesen (XOR: genau eines von X, Y), wäre die Anzahl der erfüllenden Konsumentinnen 60 − 15 = 45.",
+      "Eine Bikonditional bedeutet, dass ihre beiden Komponenten stets denselben Wahrheitswert haben.",
+      "Eine Bikonditional ist wahr, sobald mindestens eine ihrer beiden Komponenten wahr ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInklusives Oder bedeutet „mindestens eines“. Wer beides kauft, zählt mit.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$|X\\cup Y|=|X|+|Y|-|X\\cap Y|=40+35-15=60$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nExklusives Oder zählt nur die Einzelseiten:\n\n$$|X\\triangle Y|=|X\\cup Y|-|X\\cap Y|=60-15=45$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$A\\Leftrightarrow B$ ist genau dann wahr, wenn $A$ und $B$ denselben Wahrheitswert haben.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEine Bikonditional ist keine Disjunktion. Wahr/Falsch und Falsch/Wahr machen sie falsch; „mindestens eine Komponente wahr“ reicht nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $|X|=40$, $|Y|=35$, $|X\\cap Y|=15$ liefert inklusives Oder $|X\\cup Y|=60$. Exklusives Oder entfernt die Schnittmenge und liefert $45$. Eine Bikonditional verlangt gleiche Wahrheitswerte, nicht bloß „mindestens eine wahr“."
+  },
+  {
+    "case_id": "MATH 1.57",
+    "short_letters": [
+      1,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Passing a course: attendance and the final exam",
+    "context_en": "A university rule: a student passes the course if and only if they attended at least 80% of classes AND scored at least 50 on the final exam. Student K attended 85% of classes and scored 48 on the final. Student L attended 75% of classes and scored 90 on the final.",
+    "statements_en": [
+      "Student K passes the course.",
+      "Student L passes the course.",
+      "A high score on the final exam can compensate for insufficient attendance, allowing a student to still pass.",
+      "If a student attends at least 80% of classes but scores below 50 on the final, they will not pass, no matter how close their score is to 50.",
+      "There could exist a student who passes despite having a lower combined average performance than another student who fails, since the rule checks each threshold separately rather than an overall average."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nPass iff attendance and exam both meet thresholds. For K:\n\n$$85\\ge 80$$\n\n$$48\\ge 50$$\n\nis false. The conjunction fails, so K does not pass.\n\nSo the statement is False.",
+      "**B.** → False\n\nFor L:\n\n$$75\\ge 80$$\n\nis false, even though\n\n$$90\\ge 50$$\n\nThe conjunction fails, so L does not pass.\n\nSo the statement is False.",
+      "**C.** → False\n\nThe rule is a biconditional with a conjunction — both conjuncts are required. A high exam score cannot replace missing attendance.\n\nSo the statement is False.",
+      "**D.** → True\n\nIf attendance holds but the exam fails the cutoff, the conjunction is false, so the student does not pass.\n\nSo the statement is True.",
+      "**E.** → True\n\nCompare Student X (attendance $80$, exam $50$) with Student Y (attendance $79$, exam $100$).\n\n$$80\\ge 80$$\n\n$$50\\ge 50$$\n\n$$\\mathrm{Pass}(X)=\\mathrm{T}$$\n\n$$79\\ge 80$$\n\nis false, so\n\n$$\\mathrm{Pass}(Y)=\\mathrm{F}$$\n\nCombined averages:\n\n$$80+50=130$$\n\n$$\\frac{130}{2}=65$$\n\n$$79+100=179$$\n\n$$\\frac{179}{2}=89.5$$\n\n$$65<89.5$$\n\nYet X passes and Y fails, so a lower combined average can still pass.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Passing is governed by an and: attendance of at least $80\\%$ and a final score of at least $50$. Writing $A$ and $F$ for those two conditions, pass holds exactly when $A\\land F$ holds.\n\nThe words \"if and only if\" mean the list is complete. Conjunction $\\land$ is unforgiving: one false part sinks the whole condition. The rule never adds the two numbers together.",
+    "title_de_existing": "Kursbestehen: Anwesenheit und Abschlussprüfung",
+    "context_de_existing": "Universitätsregel: Eine Studierende besteht den Kurs genau dann, wenn sie mindestens 80% der Lehrveranstaltungen besucht UND im Final zumindest 50 Punkte erreicht. Studierende K besuchte 85% und erzielte 48 Punkte. Studierende L besuchte 70% und erzielte 90 Punkte.",
+    "statements_de_existing": [
+      "Studierende K besteht den Kurs.",
+      "Studierende L besteht den Kurs.",
+      "Eine hohe Finalnote kann unzureichende Anwesenheit ausgleichen, sodass die Studierende trotzdem besteht.",
+      "Wenn eine Studierende mindestens 80% besucht, aber unter 50 Finalpunkten bleibt, besteht sie nicht — unabhängig von sonstigen Leistungen.",
+      "Es könnte eine Studierende geben, die besteht, obwohl sie im kombinierten Schnitt schlechter abschneidet als eine andere, die nicht besteht."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nBestehen verlangt Anwesenheit und Finalnote. K hat $85\\%\\ge 80\\%$, aber $48<50$. Die Konjunktion scheitert.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nL hat $90\\ge 50$, aber $70\\%<80\\%$. Wieder scheitert die Konjunktion.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie Regel ist eine Bikonditional mit Konjunktion; Ausgleich ist nicht vorgesehen. Hohe Finalnote ohne Anwesenheit genügt nicht.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nOhne ausreichende Finalnote fehlt ein Konjunkt; die Bikonditional liefert Nichtbestehen.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDie Regel bewertet nur die beiden Schwellen, nicht einen Gesamtschnitt. K und L können in anderen Maßen anders rangieren als beim Bestehen.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bestehen ist an die Konjunktion „Anwesenheit $\\ge 80\\%$ und Final $\\ge 50$“ gebunden. Fehlt eine Seite, folgt Nichtbestehen. Ein Ausgleich über den Schnitt ist nicht vorgesehen."
+  },
+  {
+    "case_id": "MATH 1.58",
+    "short_letters": [
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Online store filter (De Morgan)",
+    "context_en": "An online store's \"clearance-free, in-stock only\" filter displays an item exactly when NOT (the item is on sale OR the item is out of stock). Item M is on sale and is in stock. Item N is not on sale and is out of stock. Item K is not on sale and is in stock.",
+    "statements_en": [
+      "Item M is displayed by the filter.",
+      "Item N is displayed by the filter.",
+      "The filter condition \"NOT (on sale OR out of stock)\" is logically equivalent to \"NOT on sale OR NOT out of stock.\"",
+      "The filter condition is logically equivalent to \"NOT on sale AND NOT out of stock,\" meaning an item is displayed only if it is neither on sale nor out of stock.",
+      "Item K is displayed by the filter."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nFilter displays iff $\\neg(S\\vee O)$. Item M is on sale and in stock:\n\n$$S=\\mathrm{T}$$\n\n$$O=\\mathrm{F}$$\n\n$$S\\vee O=\\mathrm{T}\\vee\\mathrm{F}$$\n\n$$S\\vee O=\\mathrm{T}$$\n\n$$\\neg(S\\vee O)=\\mathrm{F}$$\n\nM is not displayed.\n\nSo the statement is False.",
+      "**B.** → False\n\nItem N is not on sale and out of stock:\n\n$$S=\\mathrm{F}$$\n\n$$O=\\mathrm{T}$$\n\n$$S\\vee O=\\mathrm{F}\\vee\\mathrm{T}$$\n\n$$S\\vee O=\\mathrm{T}$$\n\n$$\\neg(S\\vee O)=\\mathrm{F}$$\n\nN is not displayed.\n\nSo the statement is False.",
+      "**C.** → False\n\nDe Morgan expands a negated disjunction as a conjunction:\n\n$$\\neg(S\\vee O)\\equiv\\neg S\\wedge\\neg O$$\n\nThe claim writes $\\neg S\\vee\\neg O$ instead. Those are not equivalent: on $S=\\mathrm{T}$, $O=\\mathrm{F}$,\n\n$$\\neg(S\\vee O)=\\mathrm{F}$$\n\n$$\\neg S\\vee\\neg O=\\mathrm{F}\\vee\\mathrm{T}=\\mathrm{T}$$\n\nSo the statement is False.",
+      "**D.** → True\n\nCorrect De Morgan form:\n\n$$\\neg(S\\vee O)\\equiv\\neg S\\wedge\\neg O$$\n\nDisplayed items are neither on sale nor out of stock.\n\nSo the statement is True.",
+      "**E.** → True\n\nItem K: not on sale and in stock:\n\n$$S=\\mathrm{F}$$\n\n$$O=\\mathrm{F}$$\n\n$$\\neg S=\\mathrm{T}$$\n\n$$\\neg O=\\mathrm{T}$$\n\n$$\\neg S\\wedge\\neg O=\\mathrm{T}$$\n\nso K is displayed.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Let $S$ mean the item is on sale and $O$ mean the item is out of stock. The filter displays an item when $\\neg(S\\lor O)$ is true.\n\nDe Morgan's law turns a negated OR into an AND of the two negations:\n\n$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$\n\nThe connective flips as the NOT moves in. Keeping the OR would be the wrong rewrite.",
+    "title_de_existing": "Online-Shop-Filter (De Morgan)",
+    "context_de_existing": "Der Filter „ohne Sale, nur lagernd“ eines Onlineshops zeigt einen Artikel genau dann, wenn NICHT (der Artikel ist im Sale ODER der Artikel ist nicht lagernd). Artikel M ist im Sale und lagernd. Artikel N ist nicht im Sale und nicht lagernd. Artikel K ist nicht im Sale und lagernd.",
+    "statements_de_existing": [
+      "Artikel M wird vom Filter angezeigt.",
+      "Artikel N wird vom Filter angezeigt.",
+      "Die Filterbedingung „NICHT (Sale ODER nicht lagernd)“ ist logisch äquivalent zu „NICHT Sale ODER NICHT (nicht lagernd)“.",
+      "Die Filterbedingung ist logisch äquivalent zu „NICHT Sale UND lagernd“.",
+      "Artikel K wird vom Filter angezeigt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nSei $S$: im Sale, $O$: nicht lagernd. Der Filter zeigt bei $\\neg(S\\lor O)$. Für M gilt $S=\\mathrm{T}$, also $S\\lor O=\\mathrm{T}$ und die Negation ist falsch. M wird nicht angezeigt.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nFür N gilt $O=\\mathrm{T}$, also wiederum $S\\lor O=\\mathrm{T}$. Der Filter zeigt N nicht.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDe Morgan liefert $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$, nicht eine Oder-Verknüpfung der Negationen in der behaupteten Form.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$\n\n$\\neg O$ bedeutet lagernd. Also: nicht im Sale und lagernd.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nK ist nicht im Sale und lagernd: $\\neg S\\land\\neg O$ gilt. Der Filter zeigt K.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $S$ für Sale und $O$ für „nicht lagernd“ zeigt der Filter bei $\\neg(S\\lor O)$. De Morgan macht daraus $\\neg S\\land\\neg O$: kein Sale und lagernd. M und N verfehlen je eine Seite; K erfüllt beide."
+  },
+  {
+    "case_id": "MATH 1.59",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Inflation and central-bank interest rates",
+    "context_en": "If a country's inflation rate exceeds 10%, the central bank raises interest rates.",
+    "statements_en": [
+      "The contrapositive is: \"If the central bank does not raise interest rates, then inflation is at most 10%.\"",
+      "The converse, \"If the central bank raises interest rates, then inflation exceeds 10%,\" is logically equivalent to the original statement.",
+      "Inflation above 10% is sufficient for the central bank to raise interest rates.",
+      "Inflation above 10% is necessary for the central bank to raise interest rates.",
+      "If the bank raised interest rates, we may validly conclude that inflation exceeded 10%."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nLet $P$ mean “inflation exceeds $10\\%$” and $Q$ mean “the bank raises rates.” Form the contrapositive by swapping and negating:\n\n$$P\\Rightarrow Q \\quad\\Longleftrightarrow\\quad \\neg Q\\Rightarrow\\neg P$$\n\nThe negation of the strict inequality is\n\n$$\\neg(\\mathrm{inflation}>10\\%)\\equiv \\mathrm{inflation}\\le10\\%$$\n\nTherefore the contrapositive says “if rates are not raised, inflation is at most $10\\%$,” exactly as claimed.\n\nSo the statement is True.",
+      "**B.** → False\n\nOne truth assignment separates an implication from its converse.\n\n$$(p,q)=(F,T)$$\n\n$$\np\\rightarrow q = F\\rightarrow T = T\n$$\n\n$$\nq\\rightarrow p = T\\rightarrow F = F\n$$\n\nThe two implications disagree on this assignment.\n\nSo the statement is False.",
+      "**C.** → True\n\n\"$P$ is sufficient for $Q$\" means that every time $P$ is true, $Q$ must be true:\n\n$$P\\Rightarrow Q$$\n\nHere $P$ is the event $\\mathrm{inflation}>10\\%$ and $Q$ is the bank raising rates. The given rule is exactly\n\n$$P\\Longrightarrow Q$$\n\nThus the truth pattern $P=\\mathrm{T},Q=\\mathrm{F}$ is ruled out by the premise. Inflation above $10\\%$ is sufficient for a rate rise.\n\nSo the statement is True.",
+      "**D.** → False\n\nCalling high inflation necessary for a rate rise would require\n\n$$Q\\Rightarrow P$$\n\nThat is the converse of the given rule. A rate rise for currency defence at $4\\%$ inflation has\n\n$$Q = \\mathrm{T},$$\n\n$$P = \\mathrm{F}$$\n\nso the proposed necessity evaluates as\n\n$$Q\\Rightarrow P = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nThe original $P\\Rightarrow Q$ remains true on this row because $P$ is false. High inflation is not established as necessary.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe attempted inference has the form\n\n$$P\\Rightarrow Q,$$\n\n$$Q,$$\n\n$$\\therefore P$$\n\nwhich affirms the consequent. Use a possible currency-defence rise at $4\\%$ inflation:\n\n$$P = \\mathrm{F},$$\n\n$$Q = \\mathrm{T}$$\n\nThen both premises are true,\n\n$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T},$$\n\n$$Q = \\mathrm{T},$$\n\nwhile the conclusion $P$ is false. The conclusion does not follow.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $P$ for \"inflation exceeds $10\\%$\" and $Q$ for \"the central bank raises interest rates.\" The given rule is $P\\Rightarrow Q$.\n\nHigh inflation forces a rate rise. The contrapositive $\\neg Q\\Rightarrow\\neg P$ always carries the same truth value. The converse $Q\\Rightarrow P$ is a different claim. In $P\\Rightarrow Q$, $P$ is sufficient for $Q$ and $Q$ is necessary for $P$.",
+    "title_de_existing": "Inflation und Leitzinsen der Zentralbank",
+    "context_de_existing": "Wenn die Inflationsrate eines Landes 10% übersteigt, erhöht die Zentralbank die Zinsen.",
+    "statements_de_existing": [
+      "Die Kontraposition lautet: „Wenn die Zentralbank die Zinsen nicht erhöht, dann beträgt die Inflation höchstens 10%.“",
+      "Die Umkehrung „Wenn die Zentralbank die Zinsen erhöht, dann übersteigt die Inflation 10%“ ist logisch äquivalent zur gegebenen Regel.",
+      "Inflation über 10% ist hinreichend dafür, dass die Zentralbank die Zinsen erhöht.",
+      "Inflation über 10% ist notwendig dafür, dass die Zentralbank die Zinsen erhöht.",
+      "Wenn die Bank die Zinsen erhöht hat, darf man gültig schließen, dass die Inflation 10% überstiegen hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSei $P$: Inflation $>10\\%$, $Q$: Zinserhöhung. Die Regel ist $P\\Rightarrow Q$. Die Kontraposition $\\neg Q\\Rightarrow\\neg P$ ist die behauptete Formulierung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Umkehrung $Q\\Rightarrow P$ ist nicht äquivalent zu $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n„Hinreichend“ bedeutet: wenn $P$, dann $Q$ — genau die gegebene Implikation.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n„Notwendig“ wäre $Q\\Rightarrow P$. Zinserhöhungen aus anderen Gründen bleiben mit der Regel verträglich.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDas wäre wiederum der Schluss $Q\\Rightarrow P$, der aus $P\\Rightarrow Q$ nicht folgt.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $P$ für Inflation $>10\\%$ und $Q$ für Zinserhöhung ist die Regel $P\\Rightarrow Q$. Hohe Inflation ist hinreichend, nicht notwendig. Kontraposition ja, Umkehrung nein."
+  },
+  {
+    "case_id": "MATH 1.60",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A chain of biconditionals",
+    "context_en": "Three propositions have matching truth values: the first matches the second, and the second matches the third. The first proposition is true.",
+    "statements_en": [
+      "The second proposition is true.",
+      "The third proposition is true.",
+      "The first and third propositions must also have the same truth value.",
+      "If the third proposition were false, the first would also be false.",
+      "Knowing only that the first and third propositions match is enough to conclude that the second always matches them."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe first link says that $P$ and $Q$ have equal truth values:\n\n$$P\\Leftrightarrow Q$$\n\nSince $P=\\mathrm{T}$, the biconditional can be true only on its TT row:\n\n$$P\\Leftrightarrow Q = \\mathrm{T}\\Leftrightarrow Q = \\mathrm{T} \\quad\\Longrightarrow\\quad Q = \\mathrm{T}$$\n\nThe second proposition is therefore true.\n\nSo the statement is True.",
+      "**B.** → True\n\nLetter A gives $Q=\\mathrm{T}$. The second biconditional forces $R$ to match $Q$:\n\n$$\nQ\\Leftrightarrow R = \\mathrm{T}\\Leftrightarrow R = \\mathrm{T}\n$$\n\nThe only matching value is\n\n$$R=\\mathrm{T}$$\n\nThus the truth of the first proposition travels through both links to the third proposition.\n\nSo the statement is True.",
+      "**C.** → True\n\nBiconditional agreement is transitive: matching through the same middle truth value makes the endpoints match. Thus\n\n$$(P\\Leftrightarrow Q)\\land(Q\\Leftrightarrow R)\\Rightarrow(P\\Leftrightarrow R)$$\n\nThe premises provide both links. The first and third propositions must have the same truth value.\n\nSo the statement is True.",
+      "**D.** → True\n\nBiconditionals force equal truth values in either direction. If $R$ were false, the second link gives\n\n$$Q\\Leftrightarrow R,\\quad R = \\mathrm{F}\\quad\\Longrightarrow\\quad Q = \\mathrm{F}$$\n\nThe first link then gives\n\n$$P\\Leftrightarrow Q,\\quad Q = \\mathrm{F}\\quad\\Longrightarrow\\quad P = \\mathrm{F}$$\n\nThus a false third proposition would force the first false.\n\nSo the statement is True.",
+      "**E.** → False\n\nA claim of sufficiency is disproved by one assignment that satisfies the known condition and fails the conclusion. Choose\n\n$$P = \\mathrm{T},$$\n\n$$\nQ = \\mathrm{F},\n$$\n\n$$\nR = \\mathrm{T}\n$$\n\nThen\n\n$$P\\Leftrightarrow R=\\mathrm{T}$$\n\nbut $Q$ does not match either endpoint. Knowing only that $P$ and $R$ match leaves $Q$ free.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A biconditional $A\\Leftrightarrow B$ is a two-way link: $A$ and $B$ must always carry the same truth value. Here two links are given, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$, so the three propositions are welded into one chain\n\n$$P\\Leftrightarrow Q\\Leftrightarrow R$$\n\nand the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true through the first link, and a true $Q$ forces $R$ true through the second. The unstated link $P\\Leftrightarrow R$ holds as well, but on its own it leaves $Q$ free.",
+    "title_de_existing": "Eine Kette von Bikonditionalen",
+    "context_de_existing": "Drei Aussagen haben übereinstimmende Wahrheitswerte: die erste stimmt mit der zweiten überein, und die zweite mit der dritten. Die erste Aussage ist wahr.",
+    "statements_de_existing": [
+      "Die zweite Aussage ist wahr.",
+      "Die dritte Aussage ist wahr.",
+      "Die erste und die dritte Aussage müssen denselben Wahrheitswert haben.",
+      "Wäre die dritte Aussage falsch, so wäre auch die erste falsch.",
+      "Allein aus der Übereinstimmung von erster und dritter Aussage folgt, dass die zweite stets wahr ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie erste Verknüpfung sagt, dass $P$ und $Q$ denselben Wahrheitswert haben:\n\n$$P\\Leftrightarrow Q$$\n\nWegen $P=\\mathrm{T}$ bleibt nur die Zeile TT:\n\n$$Q=\\mathrm{T}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nEbenso $Q\\Leftrightarrow R$ und $Q=\\mathrm{T}$ erzwingen $R=\\mathrm{T}$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nAus $P\\Leftrightarrow Q$ und $Q\\Leftrightarrow R$ folgt $P\\Leftrightarrow R$ durch Transitivität der Gleichheit der Wahrheitswerte.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAus $P\\Leftrightarrow R$ und $R=\\mathrm{F}$ folgt $P=\\mathrm{F}$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$P\\Leftrightarrow R$ allein sagt nichts über $Q$. Ohne die mittleren Verknüpfungen kann $Q$ beliebig sein.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Eine Bikonditional $A\\Leftrightarrow B$ verlangt gleiche Wahrheitswerte. Mit $P\\Leftrightarrow Q$, $Q\\Leftrightarrow R$ und $P=\\mathrm{T}$ folgen $Q=R=\\mathrm{T}$. Die Kette liefert auch $P\\Leftrightarrow R$. Nur $P\\Leftrightarrow R$ bestimmt $Q$ nicht."
+  },
+  {
+    "case_id": "MATH 1.61",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Cancelling a concert",
+    "context_en": "A rule states: the outdoor concert will be cancelled unless the rain stops before 6 PM. Let C: “the concert is cancelled”, S: “the rain stops before 6 PM.”",
+    "statements_en": [
+      "The rule translates to: $\\neg S \\Rightarrow C$.",
+      "The rule is logically equivalent to: $S \\Rightarrow \\neg C$.",
+      "The rule is logically equivalent to: $C \\lor S$.",
+      "If the rain stops before 6 PM, the concert is guaranteed to happen (not be cancelled).",
+      "If the concert is not cancelled, then the rain must have stopped before 6 PM."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n“Cancelled unless rain stops” means cancellation occurs when the stop fails:\n\n$$\\neg S\\Rightarrow C$$\n\nSo the statement is True.",
+      "**B.** → False\n\nThe converse of $\\neg S\\Rightarrow C$ is $C\\Rightarrow\\neg S$, not $S\\Rightarrow\\neg C$. Check $S\\Rightarrow\\neg C$: that would say a stop forces the concert to run, which the rule never promises.\n\nSo the statement is False.",
+      "**C.** → True\n\nMaterial implication rewrite:\n\n$$\\neg S\\Rightarrow C\\equiv S\\vee C$$\n\n(or $C\\vee S$). The two forms are equivalent.\n\nSo the statement is True.",
+      "**D.** → False\n\nIf $S$ holds, $\\neg S\\Rightarrow C$ is vacuously true whether or not $C$ holds. The concert might still be cancelled for other reasons. So a stop does not guarantee the concert happens.\n\nSo the statement is False.",
+      "**E.** → True\n\nContrapositive of $\\neg S\\Rightarrow C$:\n\n$$\\neg C\\Rightarrow\\neg(\\neg S)$$\n\n$$\\neg C\\Rightarrow S$$\n\nIf the concert is not cancelled, the rain must have stopped before 6 PM.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The outdoor concert is cancelled unless the rain stops before 6 PM. Write $C$ for cancellation and $S$ for a stop before 6 PM.\n\n“$C$ unless $S$” is a one-way promise: if the escape fails, cancellation is required,\n\n$$\\neg S \\Rightarrow C$$\n\nAn implication rewrites as a disjunction,\n\n$$X \\Rightarrow Y \\equiv \\neg X \\lor Y$$\n\nWhen $S$ is true the antecedent $\\neg S$ is false, so the implication is silent: a power failure can still cancel the concert after the rain stops.",
+    "title_de_existing": "Absage eines Konzerts",
+    "context_de_existing": "Eine Regel besagt: Das Open-Air-Konzert wird abgesagt, es sei denn, der Regen hört vor 18 Uhr auf. Sei $C$: „das Konzert wird abgesagt“, $S$: „der Regen hört vor 18 Uhr auf“.",
+    "statements_de_existing": [
+      "Die Regel übersetzt sich zu: $\\neg S \\Rightarrow C$.",
+      "Die Regel ist logisch äquivalent zu: $S \\Rightarrow \\neg C$.",
+      "Die Regel ist logisch äquivalent zu: $C \\lor S$.",
+      "Wenn der Regen vor 18 Uhr aufhört, findet das Konzert garantiert statt (wird nicht abgesagt).",
+      "Wenn das Konzert nicht abgesagt wird, dann muss der Regen vor 18 Uhr aufgehört haben."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n„$C$, es sei denn $S$“ bedeutet: scheitert die Ausnahme $S$, so folgt die Absage $C$. Das ist $\\neg S\\Rightarrow C$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$S\\Rightarrow\\neg C$ wäre „wenn der Regen aufhört, keine Absage“. Das folgt nicht aus $\\neg S\\Rightarrow C$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$\\neg S\\Rightarrow C$ ist äquivalent zu $S\\lor C$ (Materialimplikation).\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Regel erzwingt Absage ohne Regenstopp, aber nicht das Stattfinden bei Regenstopp. Andere Absagegründe bleiben möglich.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAus $\\neg S\\Rightarrow C$ folgt die Kontraposition $\\neg C\\Rightarrow S$: keine Absage erzwingt Regenstopp vor 18 Uhr.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "„Absage, es sei denn Regenstopp“ ist $\\neg S\\Rightarrow C$, äquivalent zu $C\\lor S$. Die Umkehrung $S\\Rightarrow\\neg C$ folgt nicht. Keine Absage erzwingt per Kontraposition den Regenstopp."
+  },
+  {
+    "case_id": "MATH 1.62",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "A senior transit discount rule",
+    "context_en": "A transit discount applies to riders who are at least 65 years old AND (have a qualifying disability OR have an annual income below \\$20,000). Rider P is 70, has no disability, and earns \\$18,000. Rider Q is 67, has a qualifying disability, and earns \\$50,000.",
+    "statements_en": [
+      "Rider P qualifies for the discount.",
+      "Rider Q, who is 67, has a qualifying disability, but earns \\$50,000, does NOT qualify for the discount because the income exceeds \\$20,000.",
+      "Having an income above \\$20,000 automatically disqualifies a senior rider from the discount, even if they have a qualifying disability.",
+      "There exists a scenario where a 70-year-old rider with no disability and an income of \\$25,000 would NOT qualify for the discount.",
+      "Age alone (being at least 65) is a sufficient condition for receiving the discount, regardless of disability or income status."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDiscount requires age and (disability or low income). For P:\n\n$$70\\ge 65$$\n\n$$\\mathrm{disability}=\\mathrm{F}$$\n\n$$18000<20000$$\n\n$$\n\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}\\vee\\mathrm{T} =\\mathrm{T}\n$$\n\n$$\\mathrm{age}\\wedge(\\mathrm{disability}\\vee\\mathrm{low\\ income})=\\mathrm{T}$$\n\nP qualifies.\n\nSo the statement is True.",
+      "**B.** → False\n\nFor Q: age and disability hold, income is high. The inner disjunction is\n\n$$\n\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{T}\\vee\\mathrm{F} =\\mathrm{T}\n$$\n\nso the full conjunction still holds. Q does qualify; the claim is false.\n\nSo the statement is False.",
+      "**C.** → False\n\nA senior with disability and income above $\\$20{,}000$ still satisfies the inner disjunction via disability. High income alone does not disqualify.\n\nSo the statement is False.",
+      "**D.** → True\n\nTake age $70$, no disability, income $\\$25{,}000$:\n\n$$70\\ge 65$$\n\n$$\\mathrm{disability}=\\mathrm{F}$$\n\n$$25000<20000$$\n\nis false, so\n\n$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}$$\n\nThe conjunction fails, so the rider does not qualify. Such a scenario exists.\n\nSo the statement is True.",
+      "**E.** → False\n\nAge alone is not sufficient: the second conjunct may still fail. The previous letter’s rider is a counterexample.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A transit discount requires age at least $65$ and at least one hardship condition. Write $A$ for the age test, $D$ for a qualifying disability, and $L$ for income below \\$20,000. The discount holds exactly when\n\n$$A \\land (D \\lor L)$$\n\nThe age test sits outside the bracket. Inside the bracket, $D$ and $L$ are joined by or, so either token alone fills it.",
+    "title_de_existing": "Senioren-Transitrabatt: Regel",
+    "context_de_existing": "Ein Transitrabatt gilt für Fahrgäste, die mindestens 65 Jahre alt sind UND (eine anerkannte Behinderung haben ODER ein Jahreseinkommen unter \\$20.000 haben). Fahrgast P ist 70, hat keine Behinderung und verdient \\$18.000. Fahrgast Q ist 67, hat eine anerkannte Behinderung und verdient \\$50.000. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "statements_de_existing": [
+      "Fahrgast P erfüllt die Voraussetzungen für den Rabatt.",
+      "Fahrgast Q (67 Jahre, anerkannte Behinderung, Einkommen \\$50.000) erfüllt die Voraussetzungen für den Rabatt NICHT, weil das Einkommen zu hoch ist.",
+      "Ein Einkommen über \\$20.000 disqualifiziert einen Senioren-Fahrgast automatisch vom Rabatt, auch wenn er eine anerkannte Behinderung hat.",
+      "Es gibt ein Szenario, in dem ein 70-jähriger Fahrgast ohne Behinderung und mit einem Einkommen von \\$25.000 den Rabatt NICHT erhält.",
+      "Allein das Alter (mindestens 65) ist eine hinreichende Bedingung für den Rabatt, unabhängig von Behinderung oder Einkommen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Regel verlangt Alter $\\ge 65$ und zusätzlich Behinderung oder Einkommen unter $\\$20.000$.\n\nP ist $70\\ge 65$, hat keine Behinderung, verdient aber $\\$18.000<\\$20.000$.\n\nDamit gilt der zweite Teil der ODER-Klausel. P erfüllt die Regel.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nQ ist $67\\ge 65$ und hat eine anerkannte Behinderung. Die ODER-Klausel ist damit bereits erfüllt, auch wenn das Einkommen $\\$50.000$ beträgt.\n\nQ erfüllt die Voraussetzungen.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie Einkommensgrenze steht in einer ODER-Verknüpfung mit der Behinderung. Wer eine anerkannte Behinderung hat, braucht kein niedriges Einkommen.\n\nEin hohes Einkommen allein disqualifiziert also nicht.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAlter $70\\ge 65$, keine Behinderung, Einkommen $\\$25.000\\ge\\$20.000$: weder Behinderung noch niedriges Einkommen.\n\nDie UND-Regel scheitert. Der Fahrgast erhält den Rabatt nicht.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAlter $\\ge 65$ ist notwendig, aber nicht hinreichend. Zusätzlich braucht man Behinderung oder Einkommen unter $\\$20.000$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Rabattregel ist eine Konjunktion: Alter $\\ge 65$ und (Behinderung oder Einkommen $<\\$20.000$). Prüfe jede Aussage an dieser logischen Form."
+  },
+  {
+    "case_id": "MATH 1.63",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Proving the Triangular-Number Formula by Induction",
+    "context_en": "Consider the claim: \"For all positive integers n, 1 + 2 +.. + n = n(n+1)/2.\"",
+    "statements_en": [
+      "The base case to verify is n = 1, giving 1 = 1(2)/2 = 1, which holds",
+      "The inductive step assumes the formula holds for n = k and proves it for n = k + 1",
+      "Checking the formula for n = 1, 2, 3, 4, 5 constitutes a complete proof by induction",
+      "If 1+2+...+k = k(k+1)/2, then 1+2+...+k+(k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2, which confirms the inductive step",
+      "For n = 10, the formula gives 1+2+...+10 = 55"
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBase case $n=1$. Left side is $1$. Right side:\n\n$$1+1=2$$\n\n$$1\\cdot 2=2$$\n\n$$\\frac{2}{2}=1$$\n\n$$\\frac{1\\cdot(1+1)}{2}=1$$\n\nThe two sides agree.\n\nSo the statement is True.",
+      "**B.** → True\n\nWrite\n\n$$P(n):\\quad 1+2+\\cdots+n=\\frac{n(n+1)}{2}$$\n\nThe inductive step is the implication\n\n$$P(k)\\Rightarrow P(k+1)$$\n\nfor arbitrary $k\\ge 1$. Together with the base case, that implication propagates the formula through every positive integer.\n\nSo the statement is True.",
+      "**C.** → False\n\nChecking five values only establishes\n\n$$P(1)\\land P(2)\\land P(3)\\land P(4)\\land P(5)$$\n\nA complete induction also needs\n\n$$\\forall k\\ge 1,\\quad P(k)\\Rightarrow P(k+1)$$\n\nWithout that bridge, $P(6)$ is unproved.\n\nSo the statement is False.",
+      "**D.** → True\n\nAssume $P(k)$:\n\n$$1+2+\\cdots+k=\\frac{k(k+1)}{2}$$\n\nAdd $k+1$:\n\n$$\\frac{k(k+1)}{2}+(k+1)$$\n\n$$k+1=\\frac{2(k+1)}{2}$$\n\n$$\\frac{k(k+1)}{2}+\\frac{2(k+1)}{2}=\\frac{k(k+1)+2(k+1)}{2}$$\n\n$$k(k+1)+2(k+1)=(k+1)(k+2)$$\n\n$$\\frac{(k+1)(k+2)}{2}$$\n\nwhich is $P(k+1)$.\n\nSo the statement is True.",
+      "**E.** → True\n\nSubstitute $n=10$:\n\n$$10+1=11$$\n\n$$10\\cdot 11=110$$\n\n$$\\frac{110}{2}=55$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The claim is that for every positive integer $n$,\n\n$$1 + 2 + \\cdots + n = \\frac{n(n+1)}{2}$$\n\nA proof by induction has two moves. The base case checks one starting value, here $n=1$. The inductive step assumes the formula at $n=k$ and proves it at $n=k+1$. Checking finitely many values by hand is not a complete induction.",
+    "title_de_existing": "Beweis der Dreieckszahl-Formel per Induktion",
+    "context_de_existing": "Betrachte die Behauptung: „Für alle positiven ganzen Zahlen $n$ gilt $1+2+\\cdots+n=n(n+1)/2$.“",
+    "statements_de_existing": [
+      "Der zu prüfende Induktionsanfang ist $n=1$ und liefert $1=1\\cdot 2/2=1$, was gilt.",
+      "Der Induktionsschritt nimmt die Formel für $n=k$ an und beweist sie für $n=k+1$.",
+      "Das Prüfen der Formel für $n=1,2,3,4,5$ bildet einen vollständigen Induktionsbeweis.",
+      "Aus $1+2+\\cdots+k=k(k+1)/2$ folgt $1+2+\\cdots+k+(k+1)=k(k+1)/2+(k+1)=(k+1)(k+2)/2$, was den Induktionsschritt bestätigt.",
+      "Für $n=10$ liefert die Formel $1+2+\\cdots+10=55$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nInduktionsanfang $n=1$:\n\n$$1=\\frac{1\\cdot 2}{2}=1$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDer Induktionsschritt nimmt die Aussage für $k$ an und zeigt sie für $k+1$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEndlich viele Stichproben ersetzen keinen Induktionsbeweis über alle positiven ganzen Zahlen.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$\\frac{k(k+1)}{2}+(k+1)=(k+1)\\left(\\frac{k}{2}+1\\right)=\\frac{(k+1)(k+2)}{2}$$\n\nDas ist der Induktionsschritt.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$$\\frac{10\\cdot 11}{2}=55$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die Formel $1+\\cdots+n=n(n+1)/2$ wird per Induktion bewiesen: Anfang $n=1$, Schritt von $k$ nach $k+1$. Stichproben allein genügen nicht."
+  },
+  {
+    "case_id": "MATH 1.64",
+    "short_letters": [
+      0,
+      1,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Logical Equivalents of an Inflation-Unemployment Claim",
+    "context_en": "Consider the economic claim: \"If inflation increases, then unemployment decreases.\" Decide whether each statement is logically equivalent to this claim.",
+    "statements_en": [
+      "\"For unemployment to decrease, inflation must increase\" is equivalent to the original claim.",
+      "\"A sufficient condition for unemployment to decrease is that inflation increases\" is equivalent to the original claim.",
+      "\"Unemployment can only decrease if inflation increases\" is equivalent to the original claim.",
+      "\"If unemployment does not decrease, then inflation does not increase\" is equivalent to the original claim.",
+      "\"A necessary condition for inflation to increase is that unemployment decreases\" is equivalent to the original claim."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nOriginal: $I\\Rightarrow U$ (inflation up $\\Rightarrow$ unemployment down). The claim “for $U$, inflation must increase” is $U\\Rightarrow I$, the converse. Not equivalent.\n\nSo the statement is False.",
+      "**B.** → True\n\n“Sufficient for $U$ that $I$” means $I\\Rightarrow U$, which is exactly the original.\n\nSo the statement is True.",
+      "**C.** → False\n\n“$U$ only if $I$” means $U\\Rightarrow I$, again the converse. Not equivalent.\n\nSo the statement is False.",
+      "**D.** → True\n\nContrapositive of $I\\Rightarrow U$:\n\n$$\\neg U\\Rightarrow\\neg I$$\n\nwhich matches the claim. Equivalent.\n\nSo the statement is True.",
+      "**E.** → True\n\n“Necessary for $I$ that $U$” means $I\\Rightarrow U$, the original. Equivalent.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “inflation increases” and $Q$ for “unemployment decreases.” The claim is\n\n$$P \\Rightarrow Q$$\n\nThe original and its contrapositive $\\neg Q \\Rightarrow \\neg P$ are equivalent. The converse $Q \\Rightarrow P$ is a different implication. A sufficient condition for $Q$ is an antecedent of $Q$. A necessary condition for $P$ is a consequent of $P$. “Only if” and “must” name necessary conditions and reverse the arrow.",
+    "title_de_existing": "Logische Äquivalente einer Inflations-Arbeitslosigkeits-Aussage",
+    "context_de_existing": "Betrachte die ökonomische Behauptung: „Wenn die Inflation steigt, dann sinkt die Arbeitslosigkeit.“ Entscheide, ob jede Aussage dazu logisch äquivalent ist.",
+    "statements_de_existing": [
+      "„Damit die Arbeitslosigkeit sinkt, muss die Inflation steigen“ ist äquivalent zur Originalbehauptung.",
+      "„Eine hinreichende Bedingung dafür, dass die Arbeitslosigkeit sinkt, ist steigende Inflation“ ist äquivalent zur Originalbehauptung.",
+      "„Die Arbeitslosigkeit kann nur sinken, wenn die Inflation steigt“ ist äquivalent zur Originalbehauptung.",
+      "„Wenn die Arbeitslosigkeit nicht sinkt, dann steigt die Inflation nicht“ ist äquivalent zur Originalbehauptung.",
+      "„Eine notwendige Bedingung dafür, dass die Inflation steigt, ist sinkende Arbeitslosigkeit“ ist äquivalent zur Originalbehauptung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nDas ist die Umkehrung $Q\\Rightarrow P$, nicht $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nHinreichend für $Q$ ist genau $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n„Nur wenn“ formuliert Notwendigkeit von $P$ für $Q$, also wieder die Umkehrung.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDas ist die Kontraposition $\\neg Q\\Rightarrow\\neg P$, äquivalent zu $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nNotwendig für $P$ ist $Q$, also $P\\Rightarrow Q$ — dieselbe Implikation.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Inflation steigt, $Q$: Arbeitslosigkeit sinkt ist die Behauptung $P\\Rightarrow Q$. Äquivalent sind Kontraposition und die Lesarten „hinreichend für $Q$“ bzw. „notwendig für $P$“. Die Umkehrung ist es nicht."
+  },
+  {
+    "case_id": "MATH 1.65",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Airline delay chain",
+    "context_en": "An airline's operations log records:\n\n(1) If Flight 202 is delayed, then Flight 305 is cancelled.\n\n(2) If Flight 305 is cancelled, then the ground crew works overtime.\n\n(3) Flight 202 is delayed today.",
+    "statements_en": [
+      "Flight 305 is cancelled today.",
+      "The ground crew works overtime today.",
+      "Statement (2) is essential to concluding that the crew works overtime today - without it, that conclusion could not be reached from (1) and (3) alone.",
+      "If Flight 202 were NOT delayed today, statement (1) guarantees that Flight 305 would not be cancelled.",
+      "There exist scenarios satisfying (1), (2), and (3) in which the ground crew does not work overtime."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom (1) and (3):\n\n$$D_{202}\\Rightarrow C_{305}$$\n\n$$D_{202}$$\n\n$$C_{305}$$\n\nSo the statement is True.",
+      "**B.** → True\n\nFrom letter A and (2):\n\n$$C_{305}\\Rightarrow O$$\n\n$$C_{305}$$\n\n$$O$$\n\nSo the statement is True.",
+      "**C.** → True\n\nWithout (2), we only reach $C_{305}$ from (1) and (3). Overtime $O$ is not forced. So (2) is essential for the overtime conclusion.\n\nSo the statement is True.",
+      "**D.** → False\n\nStatement (1) is $D_{202}\\Rightarrow C_{305}$. Its converse would be $\\neg D_{202}\\Rightarrow\\neg C_{305}$, which is not given. A non-delay does not guarantee that 305 runs.\n\nSo the statement is False.",
+      "**E.** → False\n\nFrom (1)–(3), modus ponens forces $C_{305}$ and then $O$. Every model of the three premises has overtime, so no counter-scenario exists.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "An airline log records three facts. Write $D$ for “Flight 202 is delayed,” $C$ for “Flight 305 is cancelled,” and $O$ for “the ground crew works overtime”:\n\n$$D \\Rightarrow C, \\qquad C \\Rightarrow O, \\qquad D$$\n\nModus ponens says that $X \\Rightarrow Y$ together with $X$ yields $Y$. From $D$ and $D \\Rightarrow C$ we get $C$. From $C$ and $C \\Rightarrow O$ we get $O$.",
+    "title_de_existing": "Flugverspätungs-Kette",
+    "context_de_existing": "Das Operationsprotokoll einer Airline hält fest:\n\n(1) Wenn Flug 202 verspätet ist, dann wird Flug 305 gestrichen.\n\n(2) Wenn Flug 305 gestrichen wird, dann macht die Bodenmannschaft Überstunden.\n\n(3) Flug 202 ist heute verspätet.",
+    "statements_de_existing": [
+      "Flug 305 wird heute gestrichen.",
+      "Die Bodenmannschaft macht heute Überstunden.",
+      "Aussage (2) ist nötig, um aus (1) und (3) allein auf Überstunden zu schließen.",
+      "Wäre Flug 202 heute nicht verspätet, so garantiert Aussage (1), dass Flug 305 nicht gestrichen wird.",
+      "Es gibt Szenarien, die (1), (2) und (3) erfüllen, in denen die Bodenmannschaft keine Überstunden macht."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus (3) und (1): $D\\Rightarrow C$ und $D$ liefern $C$ per Abtrennungsregel.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nAus $C$ und (2) $C\\Rightarrow O$ folgt $O$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nOhne (2) verknüpfen (1) und (3) nur $D$ mit $C$, nicht mit $O$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$D\\Rightarrow C$ sagt nichts über den Fall $\\neg D$. Die Umkehrung folgt nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nAus (1)–(3) folgt zwingend $O$. Ein Szenario mit (1)–(3) und $\\neg O$ ist unmöglich.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $D\\Rightarrow C$, $C\\Rightarrow O$ und $D$ folgt die Kette bis $O$. Die Umkehrung von (1) gilt nicht; ohne (2) fehlt der Schluss auf Überstunden."
+  },
+  {
+    "case_id": "MATH 1.66",
+    "short_letters": [
+      0,
+      1,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Negation, Converse, and Contrapositive of a Study-Hours Rule",
+    "context_en": "A professor claims: \"If a student studies at least 10 hours, they pass the exam.\"",
+    "statements_en": [
+      "The negation of this claim is: \"A student studies at least 10 hours and does not pass.\"",
+      "The converse, \"If a student passes, they studied at least 10 hours,\" must be true whenever the original claim is true.",
+      "Anna passes the exam without studying at all (she already knew the material). This is a counterexample to the converse, but not to the original claim.",
+      "The inverse, \"If a student studies less than 10 hours, they do not pass,\" is the logical equivalent of the contrapositive.",
+      "If we know a student did NOT pass, we may validly conclude, via the contrapositive, that they studied less than 10 hours."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOriginal: $S\\Rightarrow P$. Negation:\n\n$$\\neg(S\\Rightarrow P)\\equiv S\\wedge\\neg P$$\n\nSo the statement is True.",
+      "**B.** → False\n\nAn implication does not entail its converse $P\\Rightarrow S$.\n\nSo the statement is False.",
+      "**C.** → True\n\nAnna: $\\neg S$ and $P$. That falsifies $P\\Rightarrow S$, so it counters the converse.\n\nSo the statement is True.",
+      "**D.** → False\n\nInverse $\\neg S\\Rightarrow\\neg P$ is equivalent to the converse, not to the contrapositive. The contrapositive is $\\neg P\\Rightarrow\\neg S$, which matches the original.\n\nSo the statement is False.",
+      "**E.** → True\n\nContrapositive:\n\n$$\\neg P\\Rightarrow\\neg S$$\n\nFrom not passing, conclude studied less than $10$ hours.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for “the student studies at least $10$ hours” and $Q$ for “the student passes.” The professor asserts\n\n$$P \\Rightarrow Q$$\n\nThe negation of an implication is a counterexample, not another implication:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are equivalent to each other and not, in general, to the original.",
+    "title_de_existing": "Negation, Umkehrung und Kontraposition einer Lernzeit-Regel",
+    "context_de_existing": "Eine Professorin behauptet: „Wenn eine Studierende mindestens 10 Stunden lernt, besteht sie die Prüfung.“",
+    "statements_de_existing": [
+      "Die Negation dieser Behauptung lautet: „Eine Studierende lernt mindestens 10 Stunden und besteht nicht.“",
+      "Die Umkehrung „Wenn eine Studierende besteht, dann hat sie mindestens 10 Stunden gelernt“ muss wahr sein, sobald die Originalbehauptung wahr ist.",
+      "Anna besteht die Prüfung, ohne überhaupt zu lernen (sie kannte den Stoff bereits). Das ist ein Gegenbeispiel zur Umkehrung, aber nicht zur Originalbehauptung.",
+      "Die Form „Wenn eine Studierende weniger als 10 Stunden lernt, besteht sie nicht“ ist das logische Äquivalent der Kontraposition.",
+      "Wenn wir wissen, dass eine Studierende nicht bestanden hat, dürfen wir über die Kontraposition schließen, dass sie weniger als 10 Stunden gelernt hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation von $P\\Rightarrow Q$ ist $P\\land\\neg Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Umkehrung $Q\\Rightarrow P$ folgt nicht aus $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nBestehen ohne Lernen widerlegt $Q\\Rightarrow P$, lässt aber $P\\Rightarrow Q$ unberührt.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung, nicht zur Kontraposition $\\neg Q\\Rightarrow\\neg P$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nKontraposition: $\\neg Q\\Rightarrow\\neg P$. Nichtbestehen erzwingt weniger als 10 Lernstunden.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $P$: mindestens 10 Lernstunden und $Q$: Bestehen ist die Behauptung $P\\Rightarrow Q$. Negation ist $P\\land\\neg Q$. Umkehrung und $\\neg P\\Rightarrow\\neg Q$ folgen nicht; die Kontraposition folgt."
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.101",
+    "title": "Earnings Per Share From Reported Figures 101",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=39\nFebruary | Price=42\nMarch | Price=45\nApril | Price=48\nMay | Price=47\nJune | Price=45\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=41000\nFebruary | Volume=59000\nMarch | Volume=89000\nApril | Volume=82000\nMay | Volume=66000\nJune | Volume=25000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 39 | 41,000 |\n| February | 42 | 59,000 |\n| March | 45 | 89,000 |\n| April | 48 | 82,000 |\n| May | 47 | 66,000 |\n| June | 45 | 25,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 201 |\n| Shares outstanding | 717,000 |\n| Total shares traded (six months) | 362,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The acid test excludes inventories to give a stricter evaluation of liquidity than the current ratio.",
+      "The closing share price rose by more than 17% from first to last month.",
+      "Market capitalisation rose by more than 18.7% over the period.",
+      "Low inventory turnover always proves that goods sell quickly and cash is not tied up in stock.",
+      "Any increase in the listed price of already-issued shares transfers that increase as cash directly onto the company's bank account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Inventories are left out of the acid-test calculation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 15.4%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €28.0m → €32.3m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Low turnover means goods stay in stock longer.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Listed price rises do not transfer cash to the issuer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.102",
+    "title": "Share Price and Market Capitalisation 102",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=33\nFebruary | Price=36\nMarch | Price=37\nApril | Price=39\nMay | Price=40\nJune | Price=43\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=21000\nFebruary | Volume=52000\nMarch | Volume=27000\nApril | Volume=88000\nMay | Volume=68000\nJune | Volume=74000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 33 | 21,000 |\n| February | 36 | 52,000 |\n| March | 37 | 27,000 |\n| April | 39 | 88,000 |\n| May | 40 | 68,000 |\n| June | 43 | 74,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 256 |\n| Shares outstanding | 497,000 |\n| Total shares traded (six months) | 330,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Preferred shareholders vote at the stockholders' meeting, while common shareholders never vote.",
+      "The closing share price rose by more than 33% from first to last month.",
+      "Market capitalisation at the last month exceeds €16.2 million.",
+      "Highest closing price is more than 40.6% above the lowest.",
+      "After shares are already trading, any rise in the market price automatically provides new cash funds to the issuing corporation."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Common shares typically vote; preferred shares usually do not.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 30.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €21.4 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €33-€43. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Secondary trading does not raise new company funds.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.103",
+    "title": "Listed Company Performance Charts 103",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=32\nFebruary | Price=31\nMarch | Price=31\nApril | Price=31\nMay | Price=30\nJune | Price=38\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=41000\nFebruary | Volume=54000\nMarch | Volume=95000\nApril | Volume=73000\nMay | Volume=21000\nJune | Volume=52000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 32 | 41,000 |\n| February | 31 | 54,000 |\n| March | 31 | 95,000 |\n| April | 31 | 73,000 |\n| May | 30 | 21,000 |\n| June | 38 | 52,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 206 |\n| Shares outstanding | 603,000 |\n| Total shares traded (six months) | 336,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Carrying value per share, together with closing share price, high and low prices, dividend per share, dividend yield, earnings per share and the price-earnings ratio, are figures that shareholders and potential investors typically use when evaluating a company's shares.",
+      "The closing share price rose by more than 29.8% from first to last month.",
+      "Peak monthly share turnover exceeds 97,827 shares.",
+      "Low inventory turnover always proves that goods sell quickly and cash is not tied up in stock.",
+      "Market capitalisation rose by more than 14.5% over the period."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "These are the textbook's key stock figures.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 18.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 95,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Low turnover means goods stay in stock longer.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €19.3m → €22.9m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.104",
+    "title": "Earnings Per Share From Reported Figures 104",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=40\nMarch | Price=41\nApril | Price=40\nMay | Price=43\nJune | Price=48\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=35000\nFebruary | Volume=18000\nMarch | Volume=75000\nApril | Volume=34000\nMay | Volume=26000\nJune | Volume=78000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 35,000 |\n| February | 40 | 18,000 |\n| March | 41 | 75,000 |\n| April | 40 | 34,000 |\n| May | 43 | 26,000 |\n| June | 48 | 78,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 222 |\n| Shares outstanding | 858,000 |\n| Total shares traded (six months) | 266,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A high or rising price-earnings ratio can indicate either that a company's shares have become relatively expensive compared with its earnings, or that investors expect stronger future earnings growth.",
+      "Market capitalisation at the last month exceeds €35.4 million.",
+      "Earnings per share exceeds €0.21.",
+      "Highest closing price is more than 22.9% above the lowest.",
+      "Total shares traded over six months exceed 26.5% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "This matches the textbook reading of a high price-earnings ratio.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €41.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.26.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €38-€48. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 31.0% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.105",
+    "title": "Share Price and Market Capitalisation 105",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=22\nMarch | Price=20\nApril | Price=18\nMay | Price=18\nJune | Price=16\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=94000\nFebruary | Volume=62000\nMarch | Volume=21000\nApril | Volume=56000\nMay | Volume=84000\nJune | Volume=32000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 94,000 |\n| February | 22 | 62,000 |\n| March | 20 | 21,000 |\n| April | 18 | 56,000 |\n| May | 18 | 84,000 |\n| June | 16 | 32,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 281 |\n| Shares outstanding | 567,000 |\n| Total shares traded (six months) | 349,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Any absolute profit proves the business is sufficiently profitable relative to the capital invested.",
+      "The closing share price rose by more than 14.4% from first to last month.",
+      "Market capitalisation rose by more than 25.1% over the period.",
+      "Preferred shareholders vote at the stockholders' meeting, while common shareholders never vote.",
+      "Market capitalisation at the last month exceeds €7.5 million."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Profit must be judged relative to capital or turnover.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Price change ≈ -33.3%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €13.6m → €9.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Common shares typically vote; preferred shares usually do not.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market capitalisation ≈ €9.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.106",
+    "title": "Listed Company Performance Charts 106",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=32\nFebruary | Price=31\nMarch | Price=29\nApril | Price=29\nMay | Price=25\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=90000\nMarch | Volume=37000\nApril | Volume=65000\nMay | Volume=94000\nJune | Volume=24000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 32 | 34,000 |\n| February | 31 | 90,000 |\n| March | 29 | 37,000 |\n| April | 29 | 65,000 |\n| May | 25 | 94,000 |\n| June | 24 | 24,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 185 |\n| Shares outstanding | 524,000 |\n| Total shares traded (six months) | 344,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Preferred shareholders vote at the stockholders' meeting, while common shareholders never vote.",
+      "Market capitalisation at the last month exceeds €10.1 million.",
+      "The closing share price rose by more than 32.5% from first to last month.",
+      "Highest closing price is more than 19.2% above the lowest.",
+      "Total shares traded over six months exceed 8.6% of shares outstanding."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Common shares typically vote; preferred shares usually do not.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market capitalisation ≈ €12.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -25.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €24-€32. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 65.6% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.107",
+    "title": "Reading a Cash Flow Statement",
+    "context": "Review why financing activities in the cash flow statement often involve loans, share capital or dividends. Evaluate the following economic assertions:",
+    "statements": [
+      "When a courier firm makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.",
+      "Land owned by a packaging manufacturer is depreciated in exactly the same way as its packaging machinery, because all fixed assets wear out identically through use.",
+      "When a construction firm earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet.",
+      "Land owned by a bakery is normally left out of the depreciation schedule because, unlike its commercial ovens, land does not wear out through ordinary use.",
+      "The depreciation that a courier firm charges on its delivery vans each year is a non-cash expense, since the related cash was already paid out when the delivery vans was originally purchased."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A loss for the year lowers retained earnings, which in turn reduces total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Profit for the year raises retained earnings, which in turn increases total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Depreciation spreads a past cash cost over time; it does not itself require a new cash payment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.108",
+    "title": "Share Price and Market Capitalisation 108",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=35\nFebruary | Price=37\nMarch | Price=40\nApril | Price=43\nMay | Price=44\nJune | Price=48\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=71000\nFebruary | Volume=34000\nMarch | Volume=45000\nApril | Volume=20000\nMay | Volume=92000\nJune | Volume=58000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 35 | 71,000 |\n| February | 37 | 34,000 |\n| March | 40 | 45,000 |\n| April | 43 | 20,000 |\n| May | 44 | 92,000 |\n| June | 48 | 58,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 255 |\n| Shares outstanding | 535,000 |\n| Total shares traded (six months) | 320,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover.",
+      "Highest closing price is more than 42.7% above the lowest.",
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis.",
+      "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights.",
+      "The closing share price rose by more than 27.2% from first to last month."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Absolute profit is not enough without relating it to capital employed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €35-€48. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "That reverses the usual voting rights of common versus preferred shares.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 37.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.109",
+    "title": "Fixed Assets and Useful Life",
+    "context": "Analyze why operating activities in the cash flow statement reflect the core trading of a business. Evaluate the following economic assertions:",
+    "statements": [
+      "The depreciation that a catering company charges on its catering vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.",
+      "Land owned by a recycling firm is depreciated in exactly the same way as its sorting machinery, because all fixed assets wear out identically through use.",
+      "A complete financial statement is limited to a balance sheet alone and never includes a statement of profit and loss or a cash flow statement.",
+      "Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.",
+      "The balance sheet, like the statement of profit and loss and the cash flow statement, is drawn up to summarise an entire accounting period rather than one specific date."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation does not itself cause a cash payment; the related cash was already paid when the catering vans was purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Land does not wear out through use the way equipment does, so it is normally excluded from depreciation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "A financial statement normally combines a balance sheet, a statement of profit and loss and a cash flow statement.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Land generally has an unlimited useful life and is not used up the way equipment is, so it is typically excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "It is only the balance sheet that is dated at a single point in time; the other two statements cover a period.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.110",
+    "title": "Earnings Per Share From Reported Figures 110",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=39\nMarch | Price=43\nApril | Price=43\nMay | Price=48\nJune | Price=50\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=64000\nFebruary | Volume=40000\nMarch | Volume=62000\nApril | Volume=83000\nMay | Volume=85000\nJune | Volume=71000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 34 | 64,000 |\n| February | 39 | 40,000 |\n| March | 43 | 62,000 |\n| April | 43 | 83,000 |\n| May | 48 | 85,000 |\n| June | 50 | 71,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 296 |\n| Shares outstanding | 605,000 |\n| Total shares traded (six months) | 405,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 11.9% from first to last month.",
+      "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights.",
+      "Operating result is below €217 thousand.",
+      "Every corporation must distribute a cash dividend to shareholders in each financial year by law.",
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "From the figures or classification rule involved, price change ≈ 47.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "That reverses the usual voting rights of common versus preferred shares.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Operating result = 296.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "There is no universal legal duty to pay a dividend every year.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Secondary-market transfers do not bring cash into the corporation.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.111",
+    "title": "Share Price and Market Capitalisation 111",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=37\nMarch | Price=36\nApril | Price=35\nMay | Price=36\nJune | Price=44\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=53000\nFebruary | Volume=19000\nMarch | Volume=46000\nApril | Volume=56000\nMay | Volume=46000\nJune | Volume=43000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 53,000 |\n| February | 37 | 19,000 |\n| March | 36 | 46,000 |\n| April | 35 | 56,000 |\n| May | 36 | 46,000 |\n| June | 44 | 43,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 219 |\n| Shares outstanding | 882,000 |\n| Total shares traded (six months) | 263,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital is healthy only when short-term debts stay larger than liquid short-term resources on a lasting basis.",
+      "The closing share price rose by more than 34.9% from first to last month.",
+      "Market capitalisation rose by more than 26.3% over the period.",
+      "Market capitalisation at the last month exceeds €29.1 million.",
+      "Highest closing price is more than 30.6% above the lowest."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "That would be negative working capital and a liquidity concern; healthy working capital needs short-term resources above short-term debts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 22.2%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €31.8m → €38.8m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €38.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €35-€44. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.112",
+    "title": "Listed Company Performance Charts 112",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=31\nMarch | Price=33\nApril | Price=34\nMay | Price=36\nJune | Price=39\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=43000\nFebruary | Volume=91000\nMarch | Volume=40000\nApril | Volume=64000\nMay | Volume=59000\nJune | Volume=93000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 43,000 |\n| February | 31 | 91,000 |\n| March | 33 | 40,000 |\n| April | 34 | 64,000 |\n| May | 36 | 59,000 |\n| June | 39 | 93,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 200 |\n| Shares outstanding | 734,000 |\n| Total shares traded (six months) | 390,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers.",
+      "Market capitalisation at the last month exceeds €22.4 million.",
+      "Market capitalisation rose by more than 16.3% over the period.",
+      "Earnings per share exceeds €0.23.",
+      "Highest closing price is more than 23.2% above the lowest."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Comparative context matters for return ratios.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €28.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €22.8m → €28.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.27.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €31-€39. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.113",
+    "title": "Earnings Per Share From Reported Figures 113",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=17\nMarch | Price=16\nApril | Price=15\nMay | Price=12\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=47000\nFebruary | Volume=55000\nMarch | Volume=40000\nApril | Volume=18000\nMay | Volume=81000\nJune | Volume=90000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 47,000 |\n| February | 17 | 55,000 |\n| March | 16 | 40,000 |\n| April | 15 | 18,000 |\n| May | 12 | 81,000 |\n| June | 10 | 90,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 316 |\n| Shares outstanding | 869,000 |\n| Total shares traded (six months) | 331,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital.",
+      "Market capitalisation at the last month exceeds €8 million.",
+      "The closing share price rose by more than 24.3% from first to last month.",
+      "Market capitalisation rose by more than 32.8% over the period.",
+      "Operating result is below €231 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary-market transfers do not bring cash into the corporation.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market capitalisation ≈ €8.7 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -50.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €17.4m → €8.7m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 316.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.114",
+    "title": "Accumulated Depreciation Over Time",
+    "context": "Consider the following cash flow statement extract (€) for a publishing house.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 93200 |\n| Cash flow from investing activities | (84600) |\n| Dividends paid | (13400) |\n| Proceeds from new borrowing | 28140 |\n| Cash flow from financing activities | 14740 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this publishing house, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this publishing house, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
+      "For this publishing house, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.",
+      "For this publishing house, buying new binding machines is classified as an investing cash outflow.",
+      "For this publishing house, a positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investing and financing are recorded separately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customer collections belong in operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term asset purchases are investing outflows.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit and cash movement are different concepts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.115",
+    "title": "Listed Company Performance Charts 115",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=17\nMarch | Price=14\nApril | Price=13\nMay | Price=10\nJune | Price=9\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=57000\nFebruary | Volume=39000\nMarch | Volume=86000\nApril | Volume=65000\nMay | Volume=86000\nJune | Volume=40000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 57,000 |\n| February | 17 | 39,000 |\n| March | 14 | 86,000 |\n| April | 13 | 65,000 |\n| May | 10 | 86,000 |\n| June | 9 | 40,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 259 |\n| Shares outstanding | 900,000 |\n| Total shares traded (six months) | 373,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Preferred shareholders vote at the stockholders' meeting, while common shareholders never vote.",
+      "The closing share price rose by more than 25.4% from first to last month.",
+      "Market capitalisation rose by more than 34.8% over the period.",
+      "Market capitalisation at the last month exceeds €6.8 million.",
+      "When one shareholder sells shares to another on the stock exchange, the corporation always receives the sale proceeds as new share capital."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Common shares typically vote; preferred shares usually do not.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Price change ≈ -52.6%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €17.1m → €8.1m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €8.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Secondary-market transfers do not bring cash into the corporation.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.116",
+    "title": "Earnings Per Share From Reported Figures 116",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=31\nMarch | Price=28\nApril | Price=26\nMay | Price=22\nJune | Price=19\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=23000\nFebruary | Volume=18000\nMarch | Volume=70000\nApril | Volume=73000\nMay | Volume=42000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 23,000 |\n| February | 31 | 18,000 |\n| March | 28 | 70,000 |\n| April | 26 | 73,000 |\n| May | 22 | 42,000 |\n| June | 19 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 274 |\n| Shares outstanding | 855,000 |\n| Total shares traded (six months) | 246,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation is the total market value of a company's outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.",
+      "Market capitalisation at the last month exceeds €12.3 million.",
+      "Highest closing price is more than 23.8% above the lowest.",
+      "The closing share price rose by more than 22.4% from first to last month.",
+      "Total shares traded over six months exceed 17.4% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation = shares × price; price can move for reasons unrelated to value.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €16.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €19-€36. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -47.2%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 28.8% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.117",
+    "title": "Share Price and Market Capitalisation 117",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=27\nFebruary | Price=30\nMarch | Price=34\nApril | Price=36\nMay | Price=38\nJune | Price=38\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=30000\nFebruary | Volume=55000\nMarch | Volume=75000\nApril | Volume=86000\nMay | Volume=94000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 27 | 30,000 |\n| February | 30 | 55,000 |\n| March | 34 | 75,000 |\n| April | 36 | 86,000 |\n| May | 38 | 94,000 |\n| June | 38 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 295 |\n| Shares outstanding | 801,000 |\n| Total shares traded (six months) | 360,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Common shareholders are entitled to vote at the annual stockholders' meeting, whereas holders of preferred shares do not have this right but typically receive a higher dividend.",
+      "Peak monthly share turnover exceeds 96,071 shares.",
+      "Operating result is below €242 thousand.",
+      "Any absolute profit proves the business is sufficiently profitable relative to the capital invested.",
+      "The closing share price rose by more than 27.7% from first to last month."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Common shares vote; preferred shares usually trade voting rights for a higher dividend.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 94,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 295.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit must be judged relative to capital or turnover.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 40.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.118",
+    "title": "Listed Company Performance Charts 118",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=40\nFebruary | Price=44\nMarch | Price=46\nApril | Price=47\nMay | Price=47\nJune | Price=50\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=49000\nFebruary | Volume=69000\nMarch | Volume=51000\nApril | Volume=34000\nMay | Volume=33000\nJune | Volume=89000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 40 | 49,000 |\n| February | 44 | 69,000 |\n| March | 46 | 51,000 |\n| April | 47 | 34,000 |\n| May | 47 | 33,000 |\n| June | 50 | 89,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 242 |\n| Shares outstanding | 684,000 |\n| Total shares traded (six months) | 325,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Any absolute profit proves the business is sufficiently profitable relative to the capital invested.",
+      "The closing share price rose by more than 14.1% from first to last month.",
+      "Market capitalisation at the last month exceeds €25.7 million.",
+      "Total shares traded over six months exceed 13.7% of shares outstanding.",
+      "Peak monthly share turnover exceeds 72,088 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Profit must be judged relative to capital or turnover.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Price change ≈ 25.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €34.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 47.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 89,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.119",
+    "title": "Depreciation Charge Consistency",
+    "context": "Analyze why a business purchasing new equipment often shows a negative investing cash flow in that year. Evaluate the following economic assertions:",
+    "statements": [
+      "Depreciation reflects the gradual wearing out of a fixed asset as it is used to help generate revenue over its useful life.",
+      "Turnover for the year is reported in the balance sheet rather than in the statement of profit and loss.",
+      "Depreciation has nothing to do with the wearing out of a fixed asset and is simply an arbitrary entry with no economic meaning.",
+      "If a fixed asset were never depreciated, it would remain on the accounts at its original cost even after years of productive use, overstating its true worth.",
+      "Depreciation is charged as an expense in the statement of profit and loss without itself requiring a fresh cash payment in the year it is recorded."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Depreciation allocates the loss of value a fixed asset suffers through use across the years it is expected to be used.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales for the year appear in the statement of profit and loss, not the balance sheet.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Depreciation specifically reflects the loss of value a fixed asset experiences through use.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Skipping depreciation leaves an asset recorded above its real economic value once it has been used for some time.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The cash for a depreciating asset was paid when it was bought; the annual charge that follows does not involve any further cash leaving the business.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.120",
+    "title": "Share Price and Market Capitalisation 120",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=15\nMarch | Price=14\nApril | Price=13\nMay | Price=12\nJune | Price=11\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=73000\nFebruary | Volume=53000\nMarch | Volume=57000\nApril | Volume=92000\nMay | Volume=62000\nJune | Volume=43000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 17 | 73,000 |\n| February | 15 | 53,000 |\n| March | 14 | 57,000 |\n| April | 13 | 92,000 |\n| May | 12 | 62,000 |\n| June | 11 | 43,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 197 |\n| Shares outstanding | 822,000 |\n| Total shares traded (six months) | 380,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Any absolute profit proves the business is sufficiently profitable relative to the capital invested.",
+      "Market capitalisation at the last month exceeds €7.1 million.",
+      "Market capitalisation rose by more than 10.8% over the period.",
+      "After shares are already trading, any rise in the market price automatically provides new cash funds to the issuing corporation.",
+      "Total shares traded over six months exceed 14.5% of shares outstanding."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Profit must be judged relative to capital or turnover.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €9.0 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €14.0m → €9.0m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Secondary trading does not raise new company funds.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Turnover ≈ 46.2% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.121",
+    "title": "Financial Statement Structure Overview",
+    "context": "Review why a business's reported profit for the year is not the same thing as the cash it generated during the year. Evaluate the following economic assertions:",
+    "statements": [
+      "A fixed asset that is never depreciated will automatically show a reduced value in the accounts that reflects its true worth after years of use.",
+      "Under the straight-line method, the depreciable amount of an asset, its cost less any expected residual value, is spread evenly over its useful life.",
+      "Land is generally treated differently from buildings, machinery and vehicles because it does not wear out through use and is normally not depreciated.",
+      "A profit earned during the year increases the equity reported on the balance sheet, usually because it is added to retained earnings.",
+      "A loss incurred during the year reduces the equity reported on the balance sheet."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Without depreciation, an asset stays at its original cost in the accounts, overstating rather than reflecting its real worth.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Straight-line depreciation divides cost minus residual value by the number of years of useful life to give an equal annual charge.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "An unlimited useful life is the usual reason land is excluded from a depreciation schedule.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit raises the owners' stake in the business by boosting retained earnings within equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "A loss lowers retained earnings and therefore reduces total equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.122",
+    "title": "Balance Sheet Versus Income Statement",
+    "context": "Consider the following cash flow statement extract (€) for a catering company.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 98000 |\n| Cash flow from investing activities | (90000) |\n| Dividends paid | (18500) |\n| Proceeds from new borrowing | 6200 |\n| Cash flow from financing activities | (12300) |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this catering company, the dividends paid line of (18500) euros belongs in investing activities.",
+      "For this catering company, the investing outflow of 90,000 euros means the business must be failing.",
+      "For this catering company, repayments of borrowed money count as operating cash outflows.",
+      "For this catering company, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this catering company, customer collections of receivables are financing cash inflows."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Negative investing cash flow often just means assets were purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Loan repayments are financing, not operating.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "They are operating inflows.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.123",
+    "title": "Cash Flow Statement Purpose",
+    "context": "Analyze why the balance sheet does not report the sales made during the accounting period. Evaluate the following economic assertions:",
+    "statements": [
+      "A loss incurred during the year increases the equity reported on the balance sheet.",
+      "Cash flow from operating activities reflects cash movements arising from the core trading activities of a business during the period.",
+      "Cash flow from investing activities reflects cash movements arising from buying or selling long-term assets during the period.",
+      "Profit for the year and the net change in cash and cash equivalents for the year are always identical figures.",
+      "Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, raising share capital or paying dividends during the period."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A loss reduces equity by lowering retained earnings; it does not increase equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Day-to-day trading, such as receipts from customers and payments to suppliers and employees, is captured in the operating section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Spending on or proceeds from long-term assets such as equipment or property sit in the investing section.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit and the net change in cash are distinct measures that will not usually match exactly.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Transactions with lenders and owners are grouped in the financing section of the cash flow statement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.124",
+    "title": "Trade Receivable Cash Classification",
+    "context": "Review how the statement of profit and loss reports revenues, costs and the resulting profit or loss over an accounting period. Evaluate the following economic assertions:",
+    "statements": [
+      "A negative cash flow from investing activities in a given year often simply reflects that a business has been purchasing long-term assets, rather than facing financial difficulty.",
+      "The net change in cash and cash equivalents for a period is calculated by adding together the cash flows from operating, investing and financing activities.",
+      "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment.",
+      "Cash flow from operating activities reflects cash movements arising from borrowing and repaying loans during the period.",
+      "Cash flow from investing activities reflects cash movements arising from the core day-to-day trading of a business during the period."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Investing outflows commonly indicate expansion through asset purchases rather than distress.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Summing the three sections of the cash flow statement gives the overall change in cash for the period.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Borrowing and loan repayments are financing activities; operating cash flow instead reflects core trading.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Core trading is reflected in operating cash flow; investing cash flow relates to long-term assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.2",
+    "case_id": "CASE 6.2.125",
+    "title": "Loan Repayment Cash Classification",
+    "context": "Consider the following cash flow statement extract (€) for a bakery.\n\n| Item | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 102800 |\n| Cash flow from investing activities | (95400) |\n| Dividends paid | (23600) |\n| Proceeds from new borrowing | 39660 |\n| Cash flow from financing activities | 16060 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "For this bakery, the dividends paid line of (23600) euros belongs in investing activities.",
+      "For this bakery, dividends paid to shareholders sit in financing activities, not operating activities.",
+      "For this bakery, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.",
+      "For this bakery, the investing outflow of 95,400 euros means the business must be failing.",
+      "For this bakery, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Dividends are financing outflows, not investing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Dividend payments are a financing activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investing and financing are recorded separately.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Negative investing cash flow often just means assets were purchased.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Customer collections belong in operating cash flow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

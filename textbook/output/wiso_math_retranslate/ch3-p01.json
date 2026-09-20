@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "MATH 11.57",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment",
+    "context_en": "A private equity fund expects to receive \\$250,000 from a portfolio-company exit in exactly 2.5 years, plus a smaller side payment of \\$40,000 in 7 months from a separate arrangement. Both amounts are discounted continuously at the fund's required rate of 11% per year, so this task uses $K_1 = \\$250,000$ at $t_1 = 2.5$ and $K_2 = \\$40,000$ at $t_2 = \\frac{7}{12}$, with r = 0.11.",
+    "statements_en": [
+      "The present value of the \\$250,000 exit payment is approximately \\$189,893.03.",
+      "The present value of the \\$40,000 side payment is approximately \\$37,513.95.",
+      "The combined present value of both payments is approximately \\$230,000.00.",
+      "The \\$40,000 side payment is discounted by more than 10% of its face value.",
+      "If the discount rate were 0% instead of 11%, the combined present value of both payments would be exactly \\$290,000."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$:\n\n$$\n\\mathrm{PDV} = K e^{-rt}\n$$\n\nSubstitute the stem numbers:\n\n$$\\mathrm{PV}_1 = 250,000 \\times 0.759572$$\n\n$$\\approx 189,893.03$$\n\nThe computed value is approximately \\$189,893.03, which matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nContinuous present value multiplies the future payment by the discount factor:\n\n$$\n\\mathrm{PDV} = K e^{-rt}\n$$\n\nSubstitute the stem numbers:\n\n$$\\mathrm{PV}_2 = 40,000 \\times 0.937849$$\n\n$$\\approx 37,513.95$$\n\nThe computed value is approximately \\$37,513.95, which matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nFrom the overview’s recovered present value:\n\n$$\n\\mathrm{PDV}\\approx 227,406.98\n$$\n\nCompare it with the amount printed in the claim. They do not match.\n\nSo the statement is False.",
+      "**D.** → False\n\nSubstitute the recovered stem inputs:\n\n$$K_1 = 250,000,$$\n\n$$t_1 = 2.5$$\n\n$$K_2 = 40,000,$$\n\n$$t_2 = \\frac{7}{12},$$\n\n$$r = 0.11$$\n\n$$rt_1 = 0.11 \\times 2.5$$\n\n$$rt_1 = 0.275,$$\n\n$$e^{-0.275}$$\n\n$$\\approx 0.759572$$\n\nThe overview recovered $\\mathrm{PV}_2\\approx 37,513.95$. The haircut from face is\n\n$$\\frac{40,000-37,513.95}{40,000}$$\n\n$$\n\\approx 0.062 = 6.2\\%\n$$\n\nThe claim needs a haircut above $10\\%$. We have $6.2\\%<10\\%$.\n\nSo the statement is False.",
+      "**E.** → True\n\nAt $r=0$ each discount factor is $1$:\n\n$$\n\\mathrm{PDV} = 250,000+40,000 = 290,000\n$$\n\nCompare the computed value with the claim (\\$290,000). The two sides agree.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A private equity fund expects \\$250,000 from an exit in 2.5 years and \\$40,000 in 7 months. Both amounts are discounted continuously at 11% per year.\n\n**Part 1: Setup.**\n\n$$\nK_1 = 250,000,\n$$\n\n$$\nt_1 = 2.5\n$$\n\n$$\nK_2 = 40,000,\n$$\n\n$$\nt_2 = \\frac{7}{12},\n$$\n\n$$\nr = 0.11\n$$\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$.\n\n**Part 2: Solve.**\n\n$$\nrt_1 = 0.11 \\times 2.5\n$$\n\n$$\nrt_1 = 0.275,\n$$\n\n$$\ne^{-0.275} \\approx 0.759572\n$$\n\n$$\n\\mathrm{PV}_1 = 250,000 \\times 0.759572\n$$\n\n$$\n\\mathrm{PV}_1 \\approx 189,893.03\n$$\n\n$$\nrt_2 = 0.11 \\times \\frac{7}{12}\n$$\n\n$$\nrt_2 \\approx 0.064167,\n$$\n\n$$\ne^{-0.064167} \\approx 0.937849\n$$\n\n$$\n\\mathrm{PV}_2 = 40,000 \\times 0.937849\n$$\n\n$$\n\\mathrm{PV}_2 \\approx 37,513.95\n$$\n\n$$\n\\mathrm{PDV} = 189,893.03+37,513.95\n$$\n\n$$\n\\mathrm{PDV} \\approx 227,406.98\n$$",
+    "title_de_existing": "Kombinieren einer Private-Equity-Exit-Zahlung mit einer kurzfristigen Nebenzahlung",
+    "context_de_existing": "Ein Private-Equity-Fonds erwartet in genau 2,5 Jahren \\$250,000 aus dem Exit eines Portfoliounternehmens sowie eine kleinere Nebenzahlung von \\$40,000 in 7 Monaten aus einer anderen Vereinbarung. Beide Beträge werden stetig mit der geforderten Rendite von 11% pro Jahr diskontiert; die Aufgabe verwendet $K_1 = \\$250,000$ bei $t_1 = 2.5$ und $K_2 = \\$40,000$ bei $t_2 = \\frac{7}{12}$, mit $r = 0.11$.",
+    "statements_de_existing": [
+      "Der Barwert der \\$250.000 Exit-Payment beträgt etwa \\$189.893 Sozialpolitik.",
+      "Der Barwert der \\$40.000-Seitenzahlung beträgt ca. MAHTOKEN137,513,95.",
+      "Der kombinierte Barwert beider Zahlungen beträgt ungefähr \\$ 230.000,00.",
+      "Die \\$40.000-Seitenzahlung wird um mehr als 10% des Nennwerts verrechnet.",
+      "Wenn der Diskontsatz 0% statt 11% wäre, wäre der kombinierte Barwert beider Zahlungen genau \\$ 290.000."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nJede Zahlung Rabatte durch $\\mathrm{PDV}=Ke^{-rt}$ :\n\n$$\n\\mathrm{PDV} = K e^{-rt}\n$$\n\nSetze die Zahlen aus dem Aufgabentext ein:\n\n$$\\mathrm{PV}_1 = 250,000 \\times 0.759572$$\n\n$$\\approx 189,893.03$$\n\nDer berechnete Wert ist ungefähr \\$ 189,893.03, was dem Behauptung entspricht.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nKontinuierlicher Barwert multipliziert die zukünftige Zahlung mit dem Abschlagsfaktor:\n\n$$\n\\mathrm{PDV} = K e^{-rt}\n$$\n\nSetze die Zahlen aus dem Aufgabentext ein:\n\n$$\\mathrm{PV}_2 = 40,000 \\times 0.937849$$\n\n$$\\approx 37,513.95$$\n\nDer berechnete Wert ist ungefähr \\$ 37,513,95, was dem Behauptung entspricht.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nAus dem in der Übersicht rekonstruierten Barwert:\n\n$$\n\\mathrm{PDV}\\approx 227,406.98\n$$\n\nVergleiche mit dem in der Behauptung genannten Betrag. Sie stimmen nicht überein.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nSetze die rekonstruierten Aufgabeneingaben ein:\n\n$$\n\\begin{aligned}\nK_1 &= 250,000, \\\\\nt_1 &= 2.5 \\\\\nK_2 &= 40,000, \\\\\nt_2 &= \\frac{7}{12},\n\\end{aligned}\n$$$$\n\\begin{aligned}\nr &= 0.11 \\\\\nrt_1 &= 0.11 \\times 2.5 \\\\\nrt_1 &= 0.275, \\\\\n&e^{-0.275} \\approx 0.759572\n\\end{aligned}\n$$\n\nDie Übersicht $\\mathrm{PV}_2\\approx 37,513.95$ . Der Haarschnitt vom Gesicht ist\n\n$$\\frac{40,000-37,513.95}{40,000} \\approx 0.062 = 6.2\\%$$\n\nDer Behauptung benötigt einen Haarschnitt oberhalb von $10\\%$ . Wir haben $6.2\\%<10\\%$ .\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBei $r=0$ ist jeder Diskontfaktor $1$:\n\n$$\n\\mathrm{PDV} = 250,000+40,000 = 290,000\n$$\n\nVergleiche den berechneten Wert mit der Behauptung (\\$290,000). Beide Seiten stimmen überein.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Ein Private Equity-Fonds erwartet \\$250.000 von einem Austritt in 2,5 Jahren und \\$40.000 in 7 Monaten. Beide Beträge werden kontinuierlich mit 11% pro Jahr diskontiert. == Weblinks ==* Etappen der Saison 2008/08== Einzelnachweise == == Weblinks ==* Offizielle Website (englisch) ökologischer und kulturwissenschaftlicher Hintergrund== Einzelnachweise =="
+  },
+  {
+    "case_id": "MATH 11.70",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Tech Company Valuation: Finite Growth Plus Terminal Perpetuity",
+    "context_en": "A tech company projects revenue of \\$4 million this year, growing 20% per year for 6 years in a finite geometric series with a = \\$4 million, k = 1.20, and n = 6. Investors then treat year-6 revenue as the first payment of a separate terminal perpetuity that declines 15% per year forever with quotient k = 0.85, used to estimate value beyond year 6.",
+    "statements_en": [
+      "The 6-year finite sum of projected revenues is approximately \\$39.72 million.",
+      "Year-6 revenue alone is approximately \\$9.95 million.",
+      "The finite 6-year series has no valid sum via the finite-sum formula.",
+      "Treating year-6 revenue as the first term of a new perpetuity with quotient k = 0.85, the terminal value is approximately \\$66.36 million.",
+      "Combining the 6-year finite total with the terminal perpetuity value gives a combined projected value of less than \\$100 million."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhen $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:\n\n$$\ns_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72\n$$\n\nThe computed value is approximately \\$39.72, which matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nWhen $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:\n\n$$\n1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328\n$$\n\n$$\\approx 9.95$$\n\nThe computed value is approximately \\$9.95, which matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nA geometric series of payments has a closed finite-sum formula only when the common ratio differs from $1$:\n\n$$\ns_n = a\\frac{k^{n}-1}{k-1}, \\qquad k \\ne 1\n$$\n\nThe finite-sum formula needs $k\\ne 1$. Here $k=1.20\\ne 1$, so $s_6$ is well-defined. The claim says the six-year series has no valid finite sum.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe overview recovered $a_6\\approx 9.95328$. Treating that as the first terminal payment at $k_T=0.85$,\n\nSubstitute the recovered stem inputs:\n\n$$a = 4,$$\n\n$$k = 1.20,$$\n\n$$n = 6,$$\n\n$$k_T = 0.85$$\n\n$$\n1.20^6 = 2.985984\n$$\n\n$$s_6 = 4\\frac{2.985984-1}{0.20}$$\n\n$$s_6 = 4 \\times 9.92992$$\n\n$$s_6 = 39.72$$\n\n$$\nT = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15}\n$$\n\n$$\\approx 66.36$$\n\nCompare the computed value with the claim (about \\$66.36 million). The two sides agree.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe overview recovered $s_6=39.72$. The terminal value is about $66.36$, so the combined projected value is\n\nSubstitute the recovered stem inputs:\n\n$$a = 4,$$\n\n$$k = 1.20,$$\n\n$$n = 6,$$\n\n$$k_T = 0.85$$\n\n$$\n1.20^6 = 2.985984\n$$\n\n$$s_6 = 4\\frac{2.985984-1}{0.20}$$\n\n$$s_6 = 4 \\times 9.92992$$\n\n$$s_6 = 39.72$$\n\n$$\n39.72+66.36 = 106.08\n$$\n\n$$106.08 > 100$$\n\nThe combined value is not less than \\$100 million.\n\nComparing the computed figure with the wording of the claim shows that they disagree.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A tech company projects revenue of \\$4 million this year, growing $20\\%$ per year for $6$ years. Investors then treat year-$6$ revenue as the first payment of a terminal perpetuity that declines $15\\%$ per year forever.\n\n**Part 1: Setup.**\n\nFigures are in millions of dollars.\n\n$$\na = 4,\n$$\n\n$$\nk = 1.20,\n$$\n\n$$\nn = 6,\n$$\n\n$$\nk_T = 0.85\n$$\n\nWhen $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$.\n\n**Part 2: Solve.**\n\n$$1.20^6 = 2.985984$$\n\n$$\ns_6 = 4\\frac{2.985984-1}{0.20}\n$$\n\n$$\ns_6 = 4 \\times 9.92992\n$$\n\n$$\ns_6 = 39.72\n$$\n\n$$\n1.20^5 = 2.48832,\n$$\n\n$$\na_6 = 4 \\times 2.48832\n$$\n\n$$\na_6 = 9.95328\n$$\n\n$$\na_6 \\approx 9.95\n$$",
+    "title_de_existing": "Tech-Unternehmensbewertung: Endliches Wachstum plus ewige Endphase",
+    "context_de_existing": "Ein Technologieunternehmen plant in diesem Jahr einen Umsatz von \\$4 Millionen, der seit 6 Jahren jährlich 20% in einer endlichen geometrischen Serie mit a = \\$4 Millionen, k = 1,20 und n = 6 erhöht. Die Investoren behandeln dann den Umsatz von year-6 als erste Zahlung einer separaten Terminal-Perpetuität, die mit Quotient k = 0,85, verwendet, um Wert über Jahr 6 zu schätzen, um 15% pro Jahr für immer sinkt.",
+    "statements_de_existing": [
+      "Die endliche Summe der geplanten Umsätze von 6 Jahren beträgt etwa \\$39.72 Millionen.",
+      "Year-6 revenue alone is approximately \\$9.95 million.",
+      "Die endlichen aus-sum-um kann keine durch die mit-um-sum-sumumum-ssum er eigenen . sondern .",
+      "Der Umsatz von Jahr-6 als erste Laufzeit einer neuen Perpetuität mit Quotient k = 0,85 entspricht dem Endwert von rund \\$66,36 Mio.",
+      "Die Kombination der endlichen Summe von 6 Jahren mit dem Wert der Endstation Peretuity ergibt einen Gesamtwert von weniger als \\$100 Millionen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nWenn $|k_T|<1$ , ist die Terminal-Permanenz $T=\\frac{a_6}{1-k_T}$ :\n\n$$\ns_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72\n$$\n\nDer berechnete Wert ist ungefähr \\$ 39.72, was dem Behauptung entspricht.\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nWenn $|k_T|<1$ , ist die Terminal-Permanenz $T=\\frac{a_6}{1-k_T}$ :\n\n$$\n1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328\n$$\n\n$$\\approx 9.95$$\n\nDer berechnete Wert ist ungefähr \\$ 9.95, was dem Behauptung entspricht.\n\nDie Aussage ist richtig.",
+      "**C.** → Falsch\n\nEine geometrische Reihe von Zahlungen hat nur dann eine geschlossene Finite-Summe-Formel, wenn sich das gemeinsame Verhältnis von $1$ unterscheidet:\n\n $$\ns_n = a\\frac{k^{n}-1}{k-1}, \\qquad k \\ne 1\n$$ \n\nDie Finite-Summe-Formel benötigt $k\\ne 1$ . Hier $k=1.20\\ne 1$ , also $s_6$ ist gut definiert. Die Behauptung besagt, dass die Sechs-Jahres-Serie keine gültige endliche Summe hat.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Übersicht fand $a_6\\approx 9.95328$ . dies als erste Terminalzahlung bei $k_T=0.85$ zu behandeln,\n\nSetze die rekonstruierten Aufgabeneingaben ein:\n\n$$\n\\begin{aligned}\na &= 4, \\\\\nk &= 1.20, \\\\\nn &= 6, \\\\\nk_T &= 0.85\n\\end{aligned}\n$$$$\n\\begin{aligned}\n1.20^6 &= 2.985984 \\\\\ns_6 &= 4\\frac{2.985984-1}{0.20} \\\\\ns_6 &= 4 \\times 9.92992 \\\\\ns_6 &= 39.72\n\\end{aligned}\n$$$$T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15} \\approx 66.36$$\n\nVergleichen Sie den berechneter Wert mit dem Behauptung (etwa \\$ 66,36 Millionen). Beide Seiten sind sich einig.\n\nDie Aussage ist richtig.",
+      "**E.** → Falsch\n\nDie Übersicht rekonstruierte $s_6=39.72$. Der Klemmenwert ist über $66.36$, so dass der kombinierte projizierte Wert ist\n\nSetze die rekonstruierten Aufgabeneingaben ein:\n\n$$\n\\begin{aligned}\na &= 4, \\\\\nk &= 1.20, \\\\\nn &= 6, \\\\\nk_T &= 0.85\n\\end{aligned}\n$$$$\n\\begin{aligned}\n1.20^6 &= 2.985984 \\\\\ns_6 &= 4\\frac{2.985984-1}{0.20} \\\\\ns_6 &= 4 \\times 9.92992 \\\\\ns_6 &= 39.72\n\\end{aligned}\n$$$$\n\\begin{aligned}\n39.72+66.36 &= 106.08 \\\\\n&106.08 > 100\n\\end{aligned}\n$$\n\nDer kombinierte Wert beträgt nicht weniger als \\$100 Millionen.\n\nDressst schafft sie ( .t .) :\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Ein Technologieunternehmen erwartet in diesem Jahr Einnahmen von \\$4 Millionen, die $6$ Jahre lang um $20\\%$ pro Jahr wachsen.\n\n**Teil 1: Aufstellen.**\n\n$$\na = 4,\n$$\n\n$$\nk = 1.20,\n$$\n\n$$\nn = 6\n$$\n\n**Teil 2: Lösen.**\n\n$$\ns_6 = 4\\,\\frac{1.20^{6}-1}{0.20}\n$$\n\n$$1.20^{6} = 2.985984$$\n\n$$\ns_6 = 4 \\times 9.92992\n$$\n\n$$\ns_6 \\approx 39.72\n$$"
+  },
+  {
+    "case_id": "MATH 11.130",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 7",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A rare manuscript bought for \\$42,000 is sold six years later for $71,500$. With no other cash flows, the annual IRR equals 9.27\\%.",
+      "A tax reserve is advertised at $5.9\\%$ nominal, converted every six months. Its one-year accumulation corresponds to 5.85\\%.",
+      "A conservation fund must grow by $35\\%$ while earning continuously at $3.2\\%$. It reaches that multiple after $9.38$ years.",
+      "A private note pays $1,200$ coupons in years 1 through 3 and returns $20,000$ with the final coupon in year 3. At $6.0\\%$, the note's price is \\$20,125.00.",
+      "A touring company contributes $8,000$ at year-end, reduces later contributions by $4\\%$, and earns $5.5\\%$ on the fund. After the fifth contribution, the balance is \\$41,396.83."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFor one terminal inflow, the IRR is the compound rate that makes discounted inflow equal initial cost.\n\n$$0=-42000.00+\\frac{71500.00}{(1+r)^6}$$\n\n$$42000.00(1+r)^6=71500.00$$\n\n$$1+r=\\left(\\frac{71500.00}{42000.00}\\right)^{1/6}$$\n\n$$r=0.09272143$$\n\n$$100r=9.2721\\%$$\n\nThe computed internal rate of return is 9.27\\%, matching the claim.\n\nSo the statement is True.",
+      "**B.** → False\n\nAn effective annual rate must reproduce the accumulation from every compounding period in the year.\n\n$$\ni_p = \\frac{0.0590}{2} = 0.029500\n$$\n\n$$\n1+R = (1+i_p)^{2} = (1+0.029500)^{2}\n$$\n\n$$\nR = (1+0.029500)^{2}-1 = 0.05987025\n$$\n\n$$100R=5.9870\\%$$\n\nThe computed effective annual rate is 5.99\\%, not 5.85\\%.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe time is unknown, so take natural logarithms in the continuous accumulation equation.\n\n$$1.3500=e^{0.0320t}$$\n\n$$\n\\ln(1.3500) = 0.0320t\n$$\n\n$$t=\\frac{\\ln(1.3500)}{0.0320}$$\n\n$$t=9.378269$$\n\nThe computed elapsed time is $9.38$ years, matching the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nEach dated cash flow requires its own discount exponent before the values can be added.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{1200.00}{(1+0.0600)^1}+\\frac{1200.00}{(1+0.0600)^2}+\\frac{21200.00}{(1+0.0600)^3}$$\n\n$$\nPV_1 = \\frac{1200.00}{(1+0.0600)^1} = 1132.075472\n$$\n\n$$\nPV_2 = \\frac{1200.00}{(1+0.0600)^2} = 1067.995728\n$$\n\n$$\nPV_3 = \\frac{21200.00}{(1+0.0600)^3} = 17799.928800\n$$\n\n$$PV=1132.075472+1067.995728+17799.928800$$\n\n$$PV=20000.000000$$\n\nThe computed present value is \\$20,000.00, not \\$20,125.00.\n\nSo the statement is False.",
+      "**E.** → True\n\nAt the final deposit date, each growing contribution has earned a different number of interest periods.\n\n$$\nFV = \\sum_{k=0}^{4}8000.00(1+-0.0400)^k(1+0.0550)^{4-k}\n$$\n\n$$\nFV = 8000.00(1+0.0550)^{4}\\sum_{k=0}^{4}\\left(\\frac{1+-0.0400}{1+0.0550}\\right)^k\n$$\n\n$$FV=8000.00(1+0.0550)^{4}\\frac{1-0.90995261^5}{1-0.90995261}$$\n\n$$FV=41396.826005$$\n\nThe computed accumulated balance is \\$41,396.83, matching the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Each letter is an independent financial claim. Name the matching formula, substitute the stem numbers, and compare with the stated figure.\n\nTopics: 3.7, 3.1, 3.2, 3.3, 3.4\n\nA. solve the holding-period IRR of a manuscript.\nB. evaluate a semiannual reserve quote.\nC. solve the time needed for a continuous growth target.\nD. value coupons and redemption on a private note.\nE. value declining deposits earning a different return.",
+    "title_de_existing": "Klausuraufgaben – 7",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "statements_de_existing": [
+      "Sechs Sechs Jahre später wird ein seltenes Manuskript für \\$42.000 für $71,500$ verkauft. Ohne andere Cashflows entspricht der jährliche IRR 9,27\\%.",
+      "Die Steuerrücklage wird bei $5.9\\%$ nominal ausgewiesen, die alle sechs Monate umgerechnet wird. Die Einjahreskumulation entspricht 5,85\\%.",
+      "Ein Erhaltungsfonds muss um $35\\%$ wachsen und verdient dabei stetig $3.2\\%$. Er erreicht dieses Vielfache nach $9.38$ Jahren.",
+      "Ein privater Schuldschein zahlt in den Jahren 1 bis 3 Kupons von $1,200$ und gibt mit dem letzten Kupon in Jahr 3 $20,000$ zurück. Bei $6.0\\%$ beträgt der Preis \\$20,125.00.",
+      "Ein Reiseunternehmen steuert \\$ zum Jahresende bei, reduziert spätere Beiträge von $8,000$ und verdient $4\\%$ für den Fonds. Nach dem fünften Beitrag beträgt der Saldo $5.5\\%$ 41,396,83."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nFür einen Terminalzufluss ist der IRR der Zinseszins, der den diskontierten Zufluss zu gleichen Anfangskosten macht.\n\n$$0=-42000.00+\\frac{71500.00}{(1+r)^6}$$\n\n$$42000.00(1+r)^6=71500.00$$\n\n$$1+r=\\left(\\frac{71500.00}{42000.00}\\right)^{1/6}$$\n\n$$r=0.09272143$$\n\n$$100r=9.2721\\%$$\n\nDie berechnete interne Rendite beträgt 9,27\\%, was dem Behauptung entspricht.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nEin effektiver Jahreszins muss die Aufzinsung aus jeder Verzinsungsperiode im Jahr wiedergeben.\n\n$$\ni_p = \\frac{0.0590}{2} = 0.029500\n$$\n\n$$\n1+R = (1+i_p)^{2} = (1+0.029500)^{2}\n$$\n\n$$\nR = (1+0.029500)^{2}-1 = 0.05987025\n$$\n\n$$100R=5.9870\\%$$\n\nDie berechnete effektive jährliche Rate ist 5,99\\%, nicht 5,85\\%.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n.\n\n$$1.3500=e^{0.0320t}$$\n\n$$\n\\ln(1.3500) = 0.0320t\n$$\n\n$$t=\\frac{\\ln(1.3500)}{0.0320}$$\n\n$$t=9.378269$$\n\nDie berechnete verstrichene Zeit ist $9.38$ Jahre, die civil entspricht.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nJeder datierte Cashflow braucht seinen eigenen Diskontexponenten, bevor die Werte addiert werden können.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{1200.00}{(1+0.0600)^1}+\\frac{1200.00}{(1+0.0600)^2}+\\frac{21200.00}{(1+0.0600)^3}$$\n\n$$\nPV_1 = \\frac{1200.00}{(1+0.0600)^1} = 1132.075472\n$$\n\n$$\nPV_2 = \\frac{1200.00}{(1+0.0600)^2} = 1067.995728\n$$\n\n$$\nPV_3 = \\frac{21200.00}{(1+0.0600)^3} = 17799.928800\n$$\n\n$$PV=1132.075472+1067.995728+17799.928800$$\n\n$$PV=20000.000000$$\n\nDer berechnete Gegenwartswert ist \\$20.000.00 irgendwelcher Art, nicht \\$20 Förderung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDie sfähige und die Verswerte besonders wie Einlagen wie die - nur wie die -.\n\n$$\nFV = \\sum_{k=0}^{4}8000.00(1+-0.0400)^k(1+0.0550)^{4-k}\n$$\n\n$$\nFV = 8000.00(1+0.0550)^{4}\\sum_{k=0}^{4}\\left(\\frac{1+-0.0400}{1+0.0550}\\right)^k\n$$\n\n$$FV=8000.00(1+0.0550)^{4}\\frac{1-0.90995261^5}{1-0.90995261}$$\n\n$$FV=41396.826005$$\n\nDie Unsandierte Bilanz ist \\$ 41,396,83, die den Behauptung nach\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Jeder Buchstabe ist eine unabhängige finanzmathematische Behauptung. Nenne die passende Formel, setze die Stammzahlen ein und vergleiche mit der angegebenen Zahl.\n\nTopics: 3.7, 3.1, 3.2, 3.3, 3.4\n\nA. die Halteperiode IRR eines Manuskripts zu lösen. B. ein halbjährliches Reserveangebot bewerten. C. die Zeit für ein kontinuierliches Wachstum Ziel zu lösen. D. Erklärungen und Rückzahlung auf eine private Note. E. Wert abnehmende Einlagen verdienen eine andere Rendite."
+  },
+  {
+    "case_id": "MATH 11.137",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Exam-style tasks - 14",
+    "context_en": "A research grant pays six annual installments. The first installment is \\$6,000 at the end of year 1, and each later installment is exactly $5\\%$ larger than the preceding one. The amounts are not discounted in this budget report. The administrator needs the common ratio, selected installments, and the full six-payment commitment from one geometric schedule.",
+    "statements_en": [
+      "The installment ratio is $1.05$.",
+      "The third installment is \\$6,615.00.",
+      "The sixth installment is \\$7,657.69.",
+      "All six installments total \\$39,811.48.",
+      "The schedule is an arithmetic sequence."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA constant $5\\%$ increase multiplies each installment by $1.05$:\n\nSubstitute the recovered stem inputs:\n\n$$\na = 6,000,\\qquad q = 1.05,\\qquad n = 6\n$$\n\n$$C_k = 6,000(1.05)^{k-1}$$\n\n$$\nC_3 = 6,000(1.05)^{2} = 6,615.00\n$$\n\n$$C_6 = 6,000(1.05)^{5}$$\n\n$$\\approx 7,657.69$$\n\n$$S_6 = a\\frac{q^{6}-1}{q-1}$$\n\n$$\nq = 1 + 0.05\n$$\n\n$$\n1 + 0.05 = 1.05\n$$\n\nThe overview recovered that common ratio. Matching the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe third installment uses two growth steps from the first payment:\n\n$$C_3 = 6,000(1.05)^{2}$$\n\n$$\n(1.05)^{2} = 1.1025\n$$\n\n$$C_3 = 6,615.00$$\n\nCompare the computed value with the claim (\\$6,615.00). The two sides agree.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe sixth installment uses five growth steps:\n\n$$C_6 = 6,000(1.05)^{5}$$\n\n$$(1.05)^{5}$$\n\n$$\\approx 1.276282$$\n\n$$C_6 \\approx 7,657.69$$\n\nCompare the computed value with the claim (\\$7,657.69). The two sides agree.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe geometric sum formula for six terms is\n\n$$S_6 = 6,000\\frac{(1.05)^{6}-1}{0.05}$$\n\n$$(1.05)^{6}$$\n\n$$\\approx 1.340096$$\n\n$$S_6 \\approx 40,811.48$$\n\nCompare the computed value with the claim (\\$39,811.48). The gap is \\$1,000. The two sides do not agree.\n\nSo the statement is False.",
+      "**E.** → False\n\nAn arithmetic sequence adds a fixed dollar difference each term. Here each term is multiplied by the constant ratio $1.05$, so the schedule is geometric, not arithmetic. The claim says arithmetic.\n\nSubstitute the recovered stem inputs:\n\n$$\na = 6,000,\\qquad q = 1.05,\\qquad n = 6\n$$\n\n$$C_k = 6,000(1.05)^{k-1}$$\n\n$$\nC_3 = 6,000(1.05)^{2} = 6,615.00\n$$\n\n$$C_6 = 6,000(1.05)^{5}$$\n\n$$\\approx 7,657.69$$\n\n$$S_6 = a\\frac{q^{6}-1}{q-1}$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A research grant pays six annual installments. The first is \\$6,000, and each later installment is $5\\%$ larger than the one before it.\n\nThis is a geometric sequence with\n\n$$\na = 6,000,\\qquad q = 1.05,\\qquad n = 6\n$$\n\nThe $k$-th installment is\n\n$$C_k = 6,000(1.05)^{k-1}$$\n\nSelected terms:\n\n$$\nC_3 = 6,000(1.05)^{2} = 6,615.00\n$$\n\n$$C_6 = 6,000(1.05)^{5} \\approx 7,657.69$$\n\nThe six-payment total uses the finite geometric sum:\n\n$$\nS_6 = a\\frac{q^{6}-1}{q-1} = 6,000\\frac{(1.05)^{6}-1}{0.05}\n$$\n\n$$S_6 \\approx 40,811.48$$",
+    "title_de_existing": "Klausuraufgaben – 14",
+    "context_de_existing": "Ein Forschungsstipendium zahlt sechs Jahresraten. Die erste Tranche ist \\$ , umzuwandeln 6.000 am Ende desõ 1 und jede spätere Tranche ist genau $5\\%$ größer als die vorhergehende. Die Beträge werden in diesem Haushaltsbericht nicht abgezinst. Der Administrator benötigt das gemeinsame Verhältnis, ausgewählte Raten und die volle Sechs-Zahlungsverpflichtung aus einem geometrischen Zeitplan.",
+    "statements_de_existing": [
+      "Das Verhältnis der Raten beträgt $1{,}05$.",
+      "Die dritte Rate beträgt \\$6.615,00.",
+      "Die sechste Rate beträgt \\$7.657,69.",
+      "Alle sechs Raten ergeben zusammen \\$39.811,48.",
+      "Der Zahlungsplan ist eine arithmetische Folge."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine konstante Erhöhung um $5\\%$ multipliziert jede Rate mit $1{,}05$:\n\n$$\na=6{,}000,\\quad q=1{,}05,\\quad n=6,\\qquad C_k=6{,}000(1{,}05)^{k-1}.\n$$\n\nDamit ist $q=1{,}05$; die Aussage ist richtig.",
+      "**B.** → Richtig\n\n$$\nC_3=6{,}000(1{,}05)^{2}=6{,}615{,}00.\n$$\n\nBerechneter Wert und Behauptung stimmen überein.",
+      "**C.** → Richtig\n\n$$\nC_6=6{,}000(1{,}05)^{5}\\approx 7{,}657{,}69.\n$$\n\nBerechneter Wert und Behauptung stimmen überein.",
+      "**D.** → Falsch\n\n$$\nS_6=6{,}000\\frac{(1{,}05)^{6}-1}{0{,}05}\\approx 40{,}811{,}48,\n$$\n\nnicht \\\\$39.811,48. Die Aussage ist falsch.",
+      "**E.** → Falsch\n\nEine arithmetische Folge addiert jeweils einen festen Betrag. Hier wird mit dem konstanten Faktor $1{,}05$ multipliziert — die Folge ist geometrisch."
+    ],
+    "solution_overview_de_existing": "Ein Forschungszuschuss zahlt sechs Jahresraten. Die erste beträgt \\\\$6.000; jede folgende ist $5\\%$ größer. Das ist eine geometrische Folge mit $a=6{,}000$, $q=1{,}05$, $n=6$. Die Summe ist $S_6=a\\frac{q^{6}-1}{q-1}\\approx 40{,}811{,}48$."
+  }
+]
