@@ -108,10 +108,9 @@ export function MatchingSubjectView({
     subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
   );
   const [round, setRound] = useState(1);
-  const [pairs, setPairs] = useState<Pair[]>(() => {
-    const pool = poolFromSections(subject.sections, sectionId);
-    return demoRevealLocked ? pool.slice(0, 1) : pickRound(pool, ROUND_SIZE);
-  });
+  const [pairs, setPairs] = useState<Pair[]>(() =>
+    pickRound(poolFromSections(subject.sections, sectionId), ROUND_SIZE),
+  );
   const [leftOrder, setLeftOrder] = useState<string[]>([]);
   const [rightOrder, setRightOrder] = useState<string[]>([]);
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
@@ -146,14 +145,12 @@ export function MatchingSubjectView({
   const startRound = useCallback(
     (nextSection: string | "all", nextRound?: number) => {
       const pool = poolFromSections(subject.sections, nextSection);
-      // Demo: fixed first pair only — no shuffle / multi-card rounds.
-      const picked = demoRevealLocked
-        ? pool.slice(0, 1)
-        : pickRound(pool, ROUND_SIZE);
+      // Demo uses a normal 5-pair board; reshuffle / new round stay locked via attemptDemoNav.
+      const picked = pickRound(pool, ROUND_SIZE);
       const ids = picked.map((p) => p.id);
       setPairs(picked);
-      setLeftOrder(demoRevealLocked ? ids : shuffleCopy(ids));
-      setRightOrder(demoRevealLocked ? ids : shuffleCopy(ids));
+      setLeftOrder(shuffleCopy(ids));
+      setRightOrder(shuffleCopy(ids));
       setSelectedLeft(null);
       setSelectedRight(null);
       setMatched(new Set());
@@ -173,7 +170,7 @@ export function MatchingSubjectView({
       }
       if (nextRound != null) setRound(nextRound);
     },
-    [subject.sections, demoRevealLocked],
+    [subject.sections],
   );
 
   useEffect(() => {
