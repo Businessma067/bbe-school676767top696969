@@ -1,0 +1,152 @@
+CASE MATH 12.27
+ANSWER [false, true, false, false, false]
+TITLE_DE Schachclub-Paarungen
+CONTEXT_DE Beim Schachclub-Treffen sind 10 Spieler. Jedes Paar schüttelt genau einmal die Hand. Danach werden die 10 zufällig zu 5 Partien gepaart.
+STATEMENTS_DE:
+  A. Die Gesamtzahl der Handschläge beträgt 100.
+  B. Die Anzahl verschiedener Paarungen zu 5 Partien beträgt 945.
+  C. Die Wahrscheinlichkeit, dass Alice und Bob gegeneinander spielen, beträgt 1/5.
+  D. Die Wahrscheinlichkeit für eine bestimmte vollständige Paarung beträgt 1/90.
+  E. Bei 8 Spielern wäre die Anzahl der Paarungen zu 4 Partien 96.
+
+=== EXPL 0 A ===
+**A.** → False
+
+This statement asks for the total number of handshakes exchanged during the icebreaker. A handshake occurs between exactly two distinct players, and the order in which they shake hands does not matter. Therefore, this is a problem of selecting 2 players from the 10 available players, which is a combination. The rule for combinations is given by $\binom{n}{k}$, where $n=10$ players and $k=2$ players per handshake.
+
+The number of handshakes is calculated as:
+
+$$
+\binom{10}{2} = \dfrac{10!}{2!(10-2)!}
+$$
+
+$$
+\dfrac{10!}{2!(8)!} = \dfrac{10 \cdot 9}{1 \cdot 2}
+$$
+
+$$
+10 \times 9 = 90
+$$
+
+$$
+\dfrac{90}{2} = 45
+$$
+
+$$
+\binom{10}{2} = 45
+$$
+
+There are 45 total handshakes. The statement claims the total number of handshakes is 100.
+
+So the statement is False.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the number of distinct ways to pair the 10 players into 5 simultaneous games. This is a problem of forming perfect matchings for an even number of players. We use the specialized formula for partitioning $n$ distinct players into $n/2$ unordered pairs. For $n=10$ players, we need to form $10/2 = 5$ pairs.
+
+The number of ways to pair the 10 players is calculated as:
+
+$$
+\frac{10!}{2^{10/2} (10/2)!}
+$$
+
+$$
+\frac{10!}{2^5 5!}
+$$
+
+$$
+\frac{3,628,800}{32 \times 120}
+$$
+
+$$
+\frac{3,628,800}{3840}
+$$
+
+$$
+945
+$$
+
+There are 945 distinct ways to pair the 10 players into 5 games. The statement claims this number is 945.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This statement asks for the probability that two specific players, Alice and Bob, are paired against each other. Consider Alice. She will be paired with exactly one other player. Since there are 10 players in total, there are $10 - 1 = 9$ other players she could potentially be paired with. Since the pairings are made completely at random, each of these 9 potential opponents is equally likely to be Alice's partner. The probability of an event is the number of favorable outcomes divided by the total number of possible outcomes.
+
+The general probability of Alice being paired with a specific other player from the remaining $n-1$ players is:
+
+$$
+P(\text{Alice paired with specific player}) = \frac{1}{\text{number of other players}}
+$$
+
+Substituting the values for this problem, where Alice has 9 other possible partners:
+
+$$
+P(\text{Alice and Bob are paired}) = \frac{1}{10-1}
+$$
+
+$$
+P(\text{Alice and Bob are paired}) = \frac{1}{9}
+$$
+
+This probability is $\frac{1}{9}$. The statement claims this probability is $\frac{1}{5}$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement asks for the probability that one specific complete pairing is the one that occurs. A 'specific complete pairing' refers to one particular arrangement of all 5 pairs (e.g., Alice with Bob, Charlie with David, etc.). The problem states that the players are paired up completely at random. Therefore, the probability of any single specific pairing occurring is the reciprocal of the total number of distinct ways to pair the players.
+
+From the calculations in Statement B, we found that there are 945 distinct ways to pair the 10 players into 5 games. The probability of one specific pairing occurring is:
+
+$$
+P(\text{one specific complete pairing}) = \frac{1}{\text{total number of distinct pairings}}
+$$
+
+$$
+P(\text{one specific complete pairing}) = \frac{1}{945}
+$$
+
+This probability is $\frac{1}{945}$. The statement claims this probability is $\frac{1}{90}$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement considers a hypothetical scenario with 8 players and asks for the number of ways to pair them into 4 round-1 games. This is again a problem of forming perfect matchings for an even number of players, similar to Statement B. We use the formula for partitioning $n$ distinct players into $n/2$ unordered pairs. For $n=8$ players, we need to form $8/2 = 4$ pairs.
+
+The number of ways to pair the 8 players is calculated as:
+
+$$
+\frac{8!}{2^{8/2} (8/2)!}
+$$
+
+$$
+\frac{8!}{2^4 4!}
+$$
+
+$$
+\frac{40,320}{16 \times 24}
+$$
+
+$$
+\frac{40,320}{384}
+$$
+
+$$
+105
+$$
+
+There are 105 ways to pair 8 players into 4 games. The statement claims this number would be 96.
+
+So the statement is False.
+

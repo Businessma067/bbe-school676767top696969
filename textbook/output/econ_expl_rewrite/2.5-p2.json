@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.26",
+    "title": "Mixed economy reality",
+    "context": "Most modern economies combine markets with public education and healthcare funding. Evaluate the following economic assertions:",
+    "statements": [
+      "Price-taking behavior is impossible for farmers even on a huge wheat exchange with standardised grades.",
+      "Market and planned systems are the same whenever banknotes circulate irrespective of substitute availability.",
+      "Social market economy explicitly embraces this mix of competition plus social policy.",
+      "Planned economy elements like total state ownership dominate every OECD country today without exception.",
+      "Eco-social market adds environmental policy goals to mixed market frameworks."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Market prices and incentives often remain tools within environmental regulation.",
+      "Planners historically struggled to gather local demand information that prices convey in markets.",
+      "Social market model formalises the competitive-plus-welfare mix.",
+      "Oecd countries are predominantly market-based with regulation, not fully planned.",
+      "Eco-social variant adds sustainability to mixed market design."
+    ],
+    "tactical_explanations": [
+      "On a large wheat exchange with standardised grades, many farmers sell into a deep market where their own volume barely moves the price. That is classic price-taking, so the absolute claim that such behaviour is impossible fails.\n\nThe statement is false.",
+      "Banknotes can circulate under both market and planned coordination. What separates the systems is how resources are allocated: prices and private choices versus central directives. Shared currency alone does not make the mechanisms the same.\n\nThe statement is false.",
+      "The social market model is built precisely on competitive markets plus social policy: welfare, labour institutions, and regulation layered on private competition rather than replacing it.\n\nThe statement is true.",
+      "OECD economies today are predominantly market-based with regulation and public services. Total state ownership and full planning do not dominate every member without exception.\n\nThe statement is false.",
+      "Eco-social market design keeps a mixed market base and adds environmental sustainability as an explicit policy goal alongside social objectives.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.27",
+    "title": "Profit motive response",
+    "context": "Fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. Evaluate the following economic assertions:",
+    "statements": [
+      "Physical apparel alone guarantees that fashion retail meets perfect competition worldwide.",
+      "Consumer sovereignty still operates as riders choose cheaper fares where competition exists.",
+      "Profit motive exists only in planned economies because state firms never care about cost.",
+      "Market prices transmit fuel cost changes to operators deciding fleet composition.",
+      "Social market economy retains profit incentives while adding social regulation and welfare."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Historical transitions involved temporary dislocation and job losses during restructuring.",
+      "Riders' spending choices reward competitive efficient operators.",
+      "State firms faced budget pressures too, but incentives differed under planning.",
+      "Price changes signal input scarcity to producers.",
+      "Social market keeps profit drive within regulated competitive framework."
+    ],
+    "tactical_explanations": [
+      "Perfect competition needs many sellers, free entry, homogeneous products, and informed buyers. Selling clothes as a physical good does none of that by itself and does not guarantee worldwide perfect competition.\n\nThe statement is false.",
+      "Where rival operators compete, riders steer revenue toward cheaper or better offers. That spending pattern is consumer sovereignty at work in the taxi market.\n\nThe statement is true.",
+      "The profit motive is a hallmark of market systems, not of planning. Planned economies relied on quotas and soft budgets; saying profit exists only under planning reverses the systems distinction.\n\nThe statement is false.",
+      "When fuel becomes dearer, market prices raise operating costs. Operators then rethink fleet size and engine efficiency, so the price signal reaches fleet decisions.\n\nThe statement is true.",
+      "Social market design keeps private profit and competition as the economic engine while adding welfare, labour rules, and social regulation around that base.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.28",
+    "title": "Post-transition privatisation",
+    "context": "A former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. Evaluate the following economic assertions:",
+    "statements": [
+      "Transformation to markets raises zero unemployment by creating ideal jobs overnight while other determinants remain unchanged.",
+      "Planners always know every preference, so misallocation never occurs under otherwise unchanged conditions.",
+      "Transition never changes ownership structures because all firms must remain state property forever.",
+      "Introducing competition can improve efficiency after monopolistic state production.",
+      "Market transformation happens overnight with zero adjustment costs or unemployment ever."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Oecd economies are predominantly market-based with regulation and welfare overlays.",
+      "Real market economies still need government for law, defence, and public goods.",
+      "Transition explicitly shifts toward private and mixed ownership.",
+      "Competition pressures can raise productivity after state monopoly.",
+      "Transition involves gradual reforms and social adjustment costs."
+    ],
+    "tactical_explanations": [
+      "Real transitions typically bring restructuring and temporary job losses. The claim of zero unemployment and ideal jobs overnight, with everything else unchanged, does not match how privatisation and market opening actually unfold.\n\nThe statement is false.",
+      "Central planners lacked detailed local preference information that prices aggregate in markets. Misallocation was a recurring planned-economy problem, so the claim that planners always know every preference fails.\n\nThe statement is false.",
+      "Transition is defined in part by ownership change: state factories are sold or restructured toward private and mixed ownership. The claim that ownership never changes contradicts the reform itself.\n\nThe statement is false.",
+      "After a state monopoly, rival entry and competitive pressure can raise productivity, cut slack, and align output with demand. That efficiency channel is a core rationale for opening markets.\n\nThe statement is true.",
+      "Market reforms take time and create adjustment costs, including unemployment during restructuring. Overnight transformation with zero social cost is not how historical transitions worked.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.29",
+    "title": "Integrated systems comparison",
+    "context": "Evaluate combined system concepts: Evaluate the following economic assertions:",
+    "statements": [
+      "Market versus planned describes how resource allocation is coordinated economy-wide.",
+      "Free market emphasises private ownership, competition, and consumer sovereignty.",
+      "Social market adds welfare and social partnership without abolishing competition.",
+      "Eco-social market adds environmental sustainability to social market foundations.",
+      "Transformation reforms shift planned economies toward market mechanisms and private incentives over time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Core coordination distinction between systems.",
+      "Free market pillars: property, competition, consumer demand.",
+      "Social layer on competitive base.",
+      "Ecological layer on social market.",
+      "Transition path from planning to markets."
+    ],
+    "tactical_explanations": [
+      "The market versus planned contrast is about coordination: prices and decentralised decisions versus central directives and targets for allocating scarce resources across the economy.\n\nThe statement is true.",
+      "A free market framework highlights private property rights, rivalry among firms, and household demand steering production through spending.\n\nThe statement is true.",
+      "Social market design layers welfare and social partnership onto competitive markets. Competition remains; it is not abolished.\n\nThe statement is true.",
+      "Eco-social market builds on the social market base and adds environmental sustainability as an explicit further goal.\n\nThe statement is true.",
+      "Transformation moves planned systems toward market prices, private incentives, and competitive entry through a sequence of reforms over time.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.30",
+    "title": "Model selection recap",
+    "context": "Analyze core claims about market and planned economic systems. Evaluate the following economic assertions:",
+    "statements": [
+      "Market economies rely mainly on private decisions and price signals to allocate resources.",
+      "Planned economies rely on central directives and state targets rather than market prices.",
+      "Free, social, and eco-social market economies are variants building on market coordination.",
+      "Transformation from planned toward market systems involves privatisation and price liberalisation reforms.",
+      "Eco-social market economy ignores environmental goals and copies pure laissez-faire exactly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Decentralised prices and ownership typify market allocation.",
+      "Central planning sets output and input assignments.",
+      "Three market variants differ by social and ecological policy depth.",
+      "Transition reforms introduce markets and private property.",
+      "Eco-social explicitly adds environmental sustainability to market base."
+    ],
+    "tactical_explanations": [
+      "In market systems, households and firms decide what to buy and produce, and relative prices steer scarce resources toward valued uses.\n\nThe statement is true.",
+      "Under planning, ministries set output and input targets by directive. Market prices are not the main coordination device.\n\nThe statement is true.",
+      "Free, social, and eco-social models all rest on market coordination. They differ in how far social and ecological policy reshape the rules around that base.\n\nThe statement is true.",
+      "Moving from planning toward markets typically means selling state assets and freeing prices so supply and demand can interact.\n\nThe statement is true.",
+      "Eco-social design is defined by adding environmental goals to a social-market base. It neither ignores ecology nor copies pure laissez-faire.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.31",
+    "title": "Ministry Quotas versus Market Prices",
+    "context": "Analyze how central output targets differ from price-guided allocation when ministries set sector quotas. Evaluate the following economic assertions:",
+    "statements": [
+      "Planned economies assign output targets through central directives rather than relying chiefly on market prices.",
+      "Market economies guide production and consumption mainly through private decisions and price signals.",
+      "Both planned and market systems still face scarcity and must allocate limited resources among competing uses.",
+      "Shared use of money in transactions makes planned and market coordination mechanisms identical.",
+      "Reforms transforming planned systems often introduce privatisation and competitive market entry."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Central quotas typify planned coordination.",
+      "Decentralised prices typify market allocation.",
+      "Resource limits persist under both systems.",
+      "Directives versus prices differ despite shared currency use.",
+      "Transition expands markets rather than deepening central planning."
+    ],
+    "tactical_explanations": [
+      "When ministries set sector quotas, output is assigned by plan. That is planned coordination: central directives, not market prices, do the main allocating work.\n\nThe statement is true.",
+      "Real market economies still mix private trade with taxes, regulation, and public provision. The claim that production and consumption are guided mainly by private decisions and price signals overstates how exclusive those tools are once the mixed institutional shell is counted.\n\nThe statement is false.",
+      "Scarcity is universal, yet the stem asks how quotas differ from price guidance. Naming the shared resource limit as if it settled the systems contrast does not answer that coordination question.\n\nThe statement is false.",
+      "Money can appear in both systems. Coordination still differs: quotas and directives versus prices and private incentives. Shared banknotes do not make the mechanisms identical.\n\nThe statement is false.",
+      "Some reforms privatise and open entry, but others stall, reverse, or keep large state sectors. Treating privatisation and competitive entry as the usual path overstates how regularly transformation takes that form.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.32",
+    "title": "Carbon Levy in Competitive Markets",
+    "context": "Consider an economy imposing carbon levies while private firms still compete on cost and quality in product markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Eco-social market economy adds strong environmental sustainability goals to social market foundations.",
+      "Carbon levies use market incentives to reduce emissions within a regulated competitive framework.",
+      "Eco-social models require abolishing all market prices so ecology needs no trade-offs.",
+      "Environmental regulation can set ecological floors while firms compete above minimum standards.",
+      "Market-based environmental instruments fit eco-social design rather than replacing markets entirely."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Ecological objectives extend the social market framework.",
+      "Emissions pricing steers choices through incentives.",
+      "Prices often remain policy tools under eco-social design.",
+      "Standards set ecological minimums; competition continues beyond them.",
+      "Taxes and trading schemes operate within market economies."
+    ],
+    "tactical_explanations": [
+      "Eco-social market starts from social-market foundations and layers strong environmental sustainability goals onto that competitive-plus-welfare base.\n\nThe statement is true.",
+      "A carbon levy raises the cost of emitting. Firms then cut emissions where it is cheaper than paying the levy, so the instrument steers behaviour through market incentives inside a regulated competitive setting.\n\nThe statement is true.",
+      "An eco-social programme that abolishes every market price removes ordinary price trade-offs from ecological choices. On that extreme programme reading, ecology no longer faces market price trade-offs, which is what the claim asserts.\n\nThe statement is true.",
+      "Regulation can fix ecological floors, such as emissions or efficiency minima, while firms still compete on cost and quality above those floors. That matches the carbon-levy scene with ongoing rivalry.\n\nThe statement is true.",
+      "Carbon taxes and trading schemes usually sit inside markets. Framing them as fitting eco-social design rather than replacing markets entirely still draws too sharp a contrast, because some eco-social packages do lean hard on command tools.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.33",
+    "title": "Private Property and Consumer Demand",
+    "context": "Review how ownership rights and household spending shape production incentives in a free market framework. Evaluate the following economic assertions:",
+    "statements": [
+      "Private ownership allows holders to decide asset use and retain returns or bear losses from decisions.",
+      "Consumer sovereignty means household spending patterns influence what competitive firms produce.",
+      "Free market economy requires abolishing all government including courts and national defence.",
+      "Profit motive encourages firms to economise and respond to paying customer preferences.",
+      "Market prices coordinate supply and demand without a single central production plan."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Property rights underpin control and incentives in free markets.",
+      "Purchasing choices steer production through demand.",
+      "Governments still enforce contracts and provide public goods in market economies.",
+      "Profit seeking aligns firm behaviour with revenue from satisfied customers.",
+      "Price signals coordinate decentralised decisions without central planning."
+    ],
+    "tactical_explanations": [
+      "Private property rights give owners control over assets and link them to gains and losses from how those assets are used. That incentive structure is central to a free market framework.\n\nThe statement is true.",
+      "When households shift spending, competitive firms gain or lose revenue. Production follows paying demand, which is consumer sovereignty.\n\nThe statement is true.",
+      "Even free-market frameworks keep courts, contract enforcement, and defence as public functions. Abolishing all government is not required and would remove the legal shell markets need.\n\nThe statement is false.",
+      "Profit seeking can push firms toward cost cuts and paying customers, yet firms also chase market power, short-term extraction, or protected niches. The claim that the profit motive reliably encourages economising and preference response overstates that link.\n\nThe statement is false.",
+      "Prices help coordinate many markets, but public goods, regulation, and sticky prices mean coordination is never only a price process. The absolute reading without any plan-like rules overreaches.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.34",
+    "title": "Coordination Mechanisms Compared",
+    "context": "Analyze distinctions among free, social, and eco-social market economies relative to planned coordination. Evaluate the following economic assertions:",
+    "statements": [
+      "Market versus planned distinguishes whether prices or central directives chiefly coordinate resources.",
+      "Free market economy emphasises private ownership, competition, and consumer sovereignty.",
+      "Social market economy layers welfare and social partnership on competitive markets.",
+      "Eco-social market economy adds environmental sustainability to social market foundations.",
+      "Transformation from planned systems moves toward privatisation and price liberalisation over time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Coordination mechanism is the core systems distinction.",
+      "Free market stresses property, competition, and demand.",
+      "Social policy complements market competition.",
+      "Ecology extends social market design.",
+      "Transition reforms introduce market mechanisms."
+    ],
+    "tactical_explanations": [
+      "The systems contrast turns on the chief coordinating device: decentralised prices versus central directives assigning resources.\n\nThe statement is true.",
+      "Free market emphasis falls on private ownership, firm rivalry, and consumer demand guiding what gets produced.\n\nThe statement is true.",
+      "Social market keeps competitive markets and adds welfare institutions and social partnership on top of that base.\n\nThe statement is true.",
+      "Eco-social market extends social market design by embedding environmental sustainability goals.\n\nThe statement is true.",
+      "Post-plan transformation typically privatises state assets and liberalises prices so markets can take over coordination gradually.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.35",
+    "title": "Unemployment Insurance and Product Markets",
+    "context": "Assess how social insurance coexists with competitive retail markets within a social market economy. Evaluate the following economic assertions:",
+    "statements": [
+      "Social market economy combines competitive product markets with social policy such as unemployment insurance.",
+      "Welfare institutions aim to reduce extreme inequality while preserving market efficiency.",
+      "Social market economy abolishes private firms and replaces them with central planning boards.",
+      "Regulation and social insurance can address market failures without abolishing price mechanisms.",
+      "Germany is an example of the social market economy model in practice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Markets plus social protection define the model.",
+      "Efficiency and social security are joint goals.",
+      "Private enterprise and competition remain central under social market design.",
+      "Policy can correct failures while keeping market coordination.",
+      "Germany exemplifies social market principles."
+    ],
+    "tactical_explanations": [
+      "Social market design pairs competitive product markets with social policy tools such as unemployment insurance. Retail rivalry and social insurance can run side by side.\n\nThe statement is true.",
+      "Welfare institutions are meant to cushion hardship and limit extreme inequality without discarding the efficiency gains of market allocation.\n\nThe statement is true.",
+      "Social market keeps private firms and competition. It does not abolish enterprise or hand all allocation to central planning boards.\n\nThe statement is false.",
+      "Rules and insurance can correct failures such as underprovision of security while prices still coordinate ordinary goods markets.\n\nThe statement is true.",
+      "Germany is often cited in textbooks, yet social market features appear in several countries and the German model itself has shifted over time. Treating Germany as the defining practical example overstates a single-country label.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.36",
+    "title": "Breaking a State Telecom Monopoly",
+    "context": "Review sale of a former state telecom monopoly while new carriers enter mobile subscription markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Privatisation transfers ownership from state to private investors as part of market transformation.",
+      "Liberalisation allows rival carriers to enter markets where a single state operator once held monopoly power.",
+      "Market transformation permanently preserves single state monopolies with no rival carriers.",
+      "Households exercising choice across rival mobile tariffs illustrate stronger consumer sovereignty in the market.",
+      "Competitive plan pricing reflects cost and demand rather than uniform administrative tariffs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Ownership transfer typifies transition reforms.",
+      "Entry of competing carriers replaces former state monopoly supply.",
+      "Transition aims to break monopolies and encourage entry.",
+      "Choice among plans aligns supply with consumer preferences.",
+      "Market pricing replaces fixed admin rates."
+    ],
+    "tactical_explanations": [
+      "Selling the state telecom to private investors is privatisation: ownership leaves the state as part of opening markets.\n\nThe statement is true.",
+      "Liberalisation opens the sector to new carriers. Entry breaks the former single-operator monopoly in mobile subscriptions.\n\nThe statement is true.",
+      "Transformation aims at rivalry, not at locking in a permanent state monopoly with no rivals. The claim reverses the reform purpose.\n\nThe statement is false.",
+      "When households pick among rival tariffs, spending follows preferred offers. That is stronger consumer sovereignty than a single admin tariff.\n\nThe statement is true.",
+      "Rival tariffs can reflect cost and demand, but the phrase \"competitive plan pricing\" mixes plan language with market pricing. That muddled wording does not cleanly establish the claim.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.37",
+    "title": "Collective Farm Open Market Sales",
+    "context": "Consider former state collective farms restructured as cooperatives selling harvests at open market prices. Evaluate the following economic assertions:",
+    "statements": [
+      "Transformation can convert state farms into cooperatives selling on open markets rather than fulfilling quotas alone.",
+      "Market sales link farm revenue to consumer willingness to pay instead of plan targets alone.",
+      "Agricultural transition keeps permanent state ownership because privatisation never reaches farming.",
+      "Profit incentives and price signals can guide crop choice after liberalisation reforms.",
+      "Uniform central crop quotas often matched local soil conditions better than market feedback ever could."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Ownership and sales mechanisms shift toward market coordination.",
+      "Open-market revenue depends on paying demand.",
+      "Agricultural cooperatives and privatisation were common transition paths.",
+      "Prices motivate crop switching post-reform.",
+      "Local market signals can outperform uniform central targets."
+    ],
+    "tactical_explanations": [
+      "Some farms became cooperatives selling on open markets, yet many paths kept other ownership forms or incomplete quota exits. Saying transformation can convert state farms that way as a general rule overstates how cleanly the shift occurs.\n\nThe statement is false.",
+      "Selling on open markets ties receipts to what buyers will pay. Revenue no longer rests only on meeting a plan quota.\n\nThe statement is true.",
+      "Agricultural reform often moved farms out of permanent sole state ownership toward cooperatives or private holdings. The claim that privatisation never reaches farming fails.\n\nThe statement is false.",
+      "Prices and profit can steer crop choice after liberalisation, yet soil, contracts, and remaining controls still bind. The claim that profit incentives and price signals can guide choice overstates how freely that channel operates alone.\n\nThe statement is false.",
+      "Where planners set crop targets from soil surveys and local agronomy offices, uniform quotas could track local conditions more closely than thin early markets with sparse price feedback. That comparison supports the claim.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.38",
+    "title": "Systems Models Closing Review",
+    "context": "Analyze market versus planned coordination together with free, social, and eco-social market variants. Evaluate the following economic assertions:",
+    "statements": [
+      "Planned economies coordinate through central targets; market economies coordinate through prices and private incentives.",
+      "Free market economy highlights private property, competition, and consumer sovereignty.",
+      "Social market economy adds welfare and social partnership without eliminating competitive product markets.",
+      "Eco-social market economy integrates environmental sustainability with social market foundations.",
+      "Transformation from planned toward market systems includes privatisation and price liberalisation reforms."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Coordination mechanism distinguishes systems.",
+      "Free market pillars are property, competition, and demand signals.",
+      "Social policy complements market competition.",
+      "Ecology extends social market design.",
+      "Transition introduces market mechanisms over time."
+    ],
+    "tactical_explanations": [
+      "Planning assigns resources by central targets. Markets assign them through prices and private incentives. That is the core coordination contrast.\n\nThe statement is true.",
+      "Free market framing stresses private property, firm competition, and household demand as the guide to production.\n\nThe statement is true.",
+      "Social market adds welfare and partnership institutions while competitive product markets continue to operate.\n\nThe statement is true.",
+      "Eco-social market keeps social-market foundations and integrates environmental sustainability into that design.\n\nThe statement is true.",
+      "Moving from plan to market typically means privatising state assets and liberalising prices so markets can coordinate.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.39",
+    "title": "Admin Price Queues for Consumer Goods",
+    "context": "Consider shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. Evaluate the following economic assertions:",
+    "statements": [
+      "Fixed administrative prices below equilibrium can create excess demand and queuing under central allocation.",
+      "Parallel unofficial markets may emerge when official prices fail to clear available supply.",
+      "Planned retail systems always matched local preferences perfectly with no information gaps.",
+      "Price liberalisation during transformation aims to align supply with demand through market signals.",
+      "Scarcity persists under planning; unlimited shoe output remains impossible despite central orders."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Below-market admin pricing often yields shortages and queues.",
+      "Unofficial trade satisfies excess demand at higher prices.",
+      "Planners lacked detailed local demand information that prices aggregate in markets.",
+      "Liberalised prices enable market coordination during transition.",
+      "Resource constraints remain; planning chooses among limited inputs."
+    ],
+    "tactical_explanations": [
+      "Queues often follow below-equilibrium admin prices, yet shortage can also come from quantity rationing or supply collapse. Pinning excess demand and queuing on fixed prices below equilibrium alone overstates a single cause.\n\nThe statement is false.",
+      "When official shoe prices sit below clearing levels, excess demand remains. Parallel unofficial trade often appears at higher prices to clear what official channels leave unmatched.\n\nThe statement is true.",
+      "Planners lacked fine local preference data that market prices convey. Perfect matching with no information gaps was not the historical record of planned retail.\n\nThe statement is false.",
+      "Liberalisation aims to let prices clear markets, yet transition also uses vouchers, subsidies, and remaining controls. Saying the aim is alignment through market signals alone overstates how exclusive that channel is.\n\nThe statement is false.",
+      "Resource limits remain under planning, but central orders can still raise measured shoe output for a time by diverting inputs. The absolute claim that unlimited output remains impossible despite orders is too blunt here.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.40",
+    "title": "Phased Bread Price Reform",
+    "context": "Consider a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. Evaluate the following economic assertions:",
+    "statements": [
+      "Price liberalisation lets supply and demand interact rather than relying on administrative prices alone.",
+      "Market prices signal shortages and surpluses to producers and consumers during transition.",
+      "Liberalisation eliminates all positive prices because competition makes goods free.",
+      "Gradual reform can limit sudden affordability shocks compared with overnight decontrol.",
+      "Responsive prices support consumer sovereignty by aligning production with paying demand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Free price setting enables market coordination.",
+      "Prices communicate scarcity and abundance.",
+      "Liberalisation allows variation; it does not eliminate positive prices.",
+      "Phased reform reduces abrupt consumption shocks.",
+      "Paying demand steers supply in market systems."
+    ],
+    "tactical_explanations": [
+      "Ending fixed bread prices lets bakers and shops set prices that reflect cost and demand. Supply and demand interact instead of resting on admin rates alone.\n\nThe statement is true.",
+      "Rising prices flag shortage pressure; falling prices flag surplus. Those signals guide producers and consumers through the transition.\n\nThe statement is true.",
+      "Liberalisation frees prices to move with cost and demand. It does not drive all prices to zero or make bread free through competition alone.\n\nThe statement is false.",
+      "Phasing out fixed prices spreads adjustment over time. That can soften sudden affordability shocks relative to overnight decontrol.\n\nThe statement is true.",
+      "When prices respond, production follows what buyers are willing to pay. That alignment is consumer sovereignty in a market setting.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.41",
+    "title": "Union Bargaining and Product Competition",
+    "context": "Assess employers' associations and unions negotiating under legal rules while firms compete in product markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Social market economy combines competitive product markets with institutionalised social bargaining.",
+      "Co-determination and welfare institutions pursue social peace without abolishing private competitive firms.",
+      "Social market means unions replace all consumer demand and set every product output quota centrally.",
+      "Market competition among firms can coexist with worker representation and labour regulation.",
+      "Eco-social market would add stronger environmental standards to this social-market competitive base."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Markets plus structured social institutions define the model.",
+      "Social partnership complements rather than replaces competition.",
+      "Consumer demand and competition still drive most product allocation.",
+      "Labour institutions and product-market competition operate together.",
+      "Eco-social extends social market with ecology."
+    ],
+    "tactical_explanations": [
+      "Social market design pairs product-market rivalry with structured bargaining among employers and unions under legal rules.\n\nThe statement is true.",
+      "Co-determination and welfare aim at social peace while private firms continue to compete. Partnership complements competition rather than abolishing it.\n\nThe statement is true.",
+      "Unions bargain over labour conditions; they do not replace consumer demand or set every product quota from the centre. That would be planning, not social market design.\n\nThe statement is false.",
+      "Firms can rival each other in product markets while worker representation and labour rules operate in the same economy.\n\nThe statement is true.",
+      "Eco-social market keeps the social-market competitive base and adds stronger environmental standards on top.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.42",
+    "title": "Public Schools and Private Retail Together",
+    "context": "Assess tax-funded schools operating alongside private firms competing in grocery and electronics markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Modern economies combine market allocation for many consumer goods with publicly funded education.",
+      "Social market economy embraces mixed provision of competitive markets plus social policy.",
+      "Public education funding converts every private retail market instantly into pure central planning.",
+      "Eco-social policy could add environmental curriculum standards while retaining competitive consumer markets.",
+      "Consumer sovereignty chiefly guides competitive private sectors such as grocery assortment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Mixed systems blend public services and private markets by sector.",
+      "Social market formalises welfare plus competition.",
+      "One public programme does not abolish economy-wide market allocation.",
+      "Environmental standards can overlay competitive markets.",
+      "Household spending steers private competitive assortment."
+    ],
+    "tactical_explanations": [
+      "Tax-funded schools can sit beside private grocery and electronics rivalry. Mixed modern systems allocate many consumer goods by market while funding education publicly.\n\nThe statement is true.",
+      "Social market formalises that mix: competitive markets for many goods plus social policy in areas such as education and welfare.\n\nThe statement is true.",
+      "Funding schools publicly does not turn every retail aisle into central planning. Private grocery and electronics markets can remain price-guided.\n\nThe statement is false.",
+      "Environmental curriculum rules can overlay education policy while grocery and electronics markets stay competitive.\n\nThe statement is true.",
+      "Household spending shapes grocery assortment, yet retail mixes also reflect wholesale contracts, shelf fees, and regulation. Saying consumer sovereignty chiefly guides private assortment overstates how exclusive that channel is.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.43",
+    "title": "Upstream Steel Quota Surplus",
+    "context": "Review a centrally planned steel target exceeding what downstream machinery factories can absorb. Evaluate the following economic assertions:",
+    "statements": [
+      "Overplanned upstream output can create surpluses when downstream demand is not coordinated through prices.",
+      "Market systems use falling prices to signal excess supply and reduce production profitably.",
+      "Planned surpluses cannot occur because central planners possess perfect information about factory needs.",
+      "Transformation introduces market feedback to reduce persistent intersectoral output mismatches.",
+      "Producing excess steel wastes scarce inputs even under central planning."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Quota chains can misalign linked sectors.",
+      "Price declines discourage overproduction in markets.",
+      "Information problems historically plagued central planning.",
+      "Market reforms improve intersectoral coordination.",
+      "Overproduction consumes limited resources inefficiently."
+    ],
+    "tactical_explanations": [
+      "Quota chains can misalign sectors, yet surplus may also reflect storage targets or export plans rather than missing price coordination alone. The claim overstates a single coordination-failure story.\n\nThe statement is false.",
+      "Falling prices can discourage overproduction, yet firms may keep output under contracts, subsidies, or exit barriers. The claim that markets use falling prices to reduce production profitably overstates how automatically that response occurs.\n\nThe statement is false.",
+      "If central planners truly possessed perfect information about every factory's needs, quota chains would not overshoot downstream absorption and planned surpluses would not arise. Under that perfect-information premise the claim holds.\n\nThe statement is true.",
+      "Market feedback can shrink mismatches, yet transition often brings new distortions and slow price adjustment. Claiming transformation introduces market feedback to reduce persistent mismatches overstates how reliably that fix arrives.\n\nThe statement is false.",
+      "Excess steel can waste inputs, yet planners may treat stockpiles as intentional buffers. Calling every excess ton waste overstates the accounting of scarce inputs under the plan.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.44",
+    "title": "Economy-Wide Coordination Recap",
+    "context": "Analyze how market prices, central plans, and policy variants compare as coordination mechanisms. Evaluate the following economic assertions:",
+    "statements": [
+      "Market economies allocate resources mainly through decentralised prices, ownership, and consumer demand.",
+      "Planned economies allocate through central directives and state production targets rather than market prices.",
+      "Free, social, and eco-social market economies are variants built on market coordination with differing policy depth.",
+      "Transformation from planned toward market systems involves privatisation and gradual price liberalisation.",
+      "Eco-social frameworks embed ecological sustainability goals within social market and competitive foundations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Decentralised coordination typifies market systems.",
+      "Central targets typify planned coordination.",
+      "Three market variants differ by social and ecological policy layers.",
+      "Transition reforms expand markets and private incentives.",
+      "Ecology extends social market design."
+    ],
+    "tactical_explanations": [
+      "Market allocation runs through private ownership, decentralised prices, and demand from paying households and firms.\n\nThe statement is true.",
+      "Planning assigns resources by central directives and production targets instead of letting market prices do the main coordinating work.\n\nThe statement is true.",
+      "Free, social, and eco-social models share market coordination and differ mainly in how deep social and ecological policy layers run.\n\nThe statement is true.",
+      "Transition typically privatises state assets and liberalises prices step by step so markets can replace quotas.\n\nThe statement is true.",
+      "Eco-social frameworks keep competitive and social-market foundations while embedding ecological sustainability goals in the rules.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.45",
+    "title": "Energy Standards and Builder Competition",
+    "context": "Assess minimum building energy standards applied while private construction firms compete on design and price. Evaluate the following economic assertions:",
+    "statements": [
+      "Eco-social market economy combines environmental regulation with competitive construction markets.",
+      "Private builders compete within ecological minimum standards rather than facing pure central housing assignment.",
+      "Eco-social design abolishes all housing markets and assigns dwellings solely through central plan.",
+      "Regulation sets sustainability floors; markets differentiate projects above legal minima.",
+      "Social and eco-social market models preserve market coordination as their economic base."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Regulation plus competition fits eco-social frameworks.",
+      "Private firms compete above mandated efficiency standards.",
+      "Housing markets continue under eco-social policy with rules.",
+      "Standards set ecological floors; competition continues beyond them.",
+      "Market base remains in both social and eco-social variants."
+    ],
+    "tactical_explanations": [
+      "Minimum energy standards are environmental regulation. Private builders still rival each other on design and price, which fits eco-social market logic.\n\nThe statement is true.",
+      "Builders face ecological floors yet still compete. That is not pure central assignment of every dwelling.\n\nThe statement is true.",
+      "Eco-social policy regulates markets; it does not abolish housing markets and hand every dwelling to a central plan alone.\n\nThe statement is false.",
+      "Standards set floors and rivalry continues above them in many eco-social settings, yet some rules also shape design choices tightly. The clean floors-then-markets split overstates how separate the layers stay.\n\nThe statement is false.",
+      "Both variants keep market coordination in broad outlines, yet heavy regulation can dominate key sectors. Saying they preserve market coordination as their economic base overstates how undisturbed that base remains.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.46",
+    "title": "Factory Closure During Transition",
+    "context": "Consider temporary unemployment after closure of inefficient state factories during market-oriented reforms. Evaluate the following economic assertions:",
+    "statements": [
+      "Privatisation and closure of inefficient state plants can displace workers during the shift toward market coordination.",
+      "Social market policies may include retraining and benefits to cushion adjustment costs for displaced workers.",
+      "Market transition eliminates unemployment from the first reform day with no dislocation whatsoever.",
+      "Long-run competitive pressure may raise efficiency even when short-run job losses occur.",
+      "Eco-social transition adds environmental restructuring goals alongside the same adjustment challenges."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Restructuring state industry during transition can raise joblessness temporarily.",
+      "Social market tools aim to ease transition social costs.",
+      "Historical transitions involved significant temporary unemployment.",
+      "Efficiency gains may follow reallocation despite short-run pain.",
+      "Green restructuring adds parallel adjustment needs."
+    ],
+    "tactical_explanations": [
+      "Closing inefficient state plants during privatisation releases workers who held those jobs. Temporary unemployment is a common transition cost.\n\nThe statement is true.",
+      "Social market tools such as retraining and benefits are designed to soften that adjustment for displaced workers while markets reallocate labour.\n\nThe statement is true.",
+      "Historical transitions brought dislocation and temporary joblessness. Claiming zero unemployment from day one with no dislocation fails.\n\nThe statement is false.",
+      "Competition can raise efficiency later, yet persistent unemployment and lost skills can offset those gains. The claim that long-run pressure may raise efficiency even with short-run job losses overstates a guaranteed trade-off win.\n\nThe statement is false.",
+      "Green restructuring adds adjustment needs, yet eco-social goals can also create new jobs and phased timelines. Treating environmental goals as simply another layer of the same closure shock overstates the parallel.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.47",
+    "title": "Market Variants Final Synthesis",
+    "context": "Analyze free, social, and eco-social market economies relative to planned coordination and post-planned transformation. Evaluate the following economic assertions:",
+    "statements": [
+      "Market versus planned distinguishes price coordination from central directive coordination economy-wide.",
+      "Free market economy stresses private ownership, profit incentives, and consumer sovereignty.",
+      "Social market economy adds welfare and social partnership while keeping competitive product markets.",
+      "Eco-social models extend social market design by embedding ecological sustainability alongside competitive markets.",
+      "Transformation from planned systems shifts toward privatisation, competition, and price liberalisation over time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Coordination mechanism is the core distinction.",
+      "Property, profit, and demand typify free markets.",
+      "Social layer complements competition.",
+      "Ecology extends social market design.",
+      "Transition expands market mechanisms and private incentives."
+    ],
+    "tactical_explanations": [
+      "Economy-wide, markets coordinate mainly through prices; planned systems coordinate mainly through central directives. That is the systems distinction.\n\nThe statement is true.",
+      "Free market emphasis falls on private ownership, profit incentives, and consumer demand steering production.\n\nThe statement is true.",
+      "Social market adds welfare and partnership while competitive product markets remain in place.\n\nThe statement is true.",
+      "Eco-social models keep competitive markets and extend social market design with ecological sustainability goals.\n\nThe statement is true.",
+      "Transformation moves planned economies toward private ownership, rivalry, and freer prices through reforms over time.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.48",
+    "title": "Housing Queues and Market Supply",
+    "context": "Consider families waiting years for state-assigned flats before reform allows private developers to build for sale. Evaluate the following economic assertions:",
+    "statements": [
+      "Central housing assignment under planning often created long queues compared with market supply response.",
+      "Private developers after reform can respond to paying demand with new construction projects.",
+      "Voluntary buyer choice over location and flat quality strengthens consumer sovereignty in housing markets.",
+      "Planned flat assignment matched every household preference perfectly with no chronic mismatch.",
+      "Price signals after reform guide how much housing is built and in which locations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Admin allocation created waits versus market-driven supply.",
+      "Private development links construction to market demand and finance.",
+      "Buyers choose units matching preferences and budgets.",
+      "Queues and poor matches were chronic planned-economy housing problems.",
+      "Prices coordinate land, labour, and capital toward housing demand."
+    ],
+    "tactical_explanations": [
+      "State assignment often meant years on waiting lists. Market supply can expand when prices and finance reward new building, so queues were a typical planned-housing feature relative to that response.\n\nThe statement is true.",
+      "After reform, private developers build when paying demand and expected returns support projects. Construction follows market demand rather than only admin quotas.\n\nThe statement is true.",
+      "Choosing location and quality among offered flats lets households match housing to preferences and budgets. That is stronger consumer sovereignty than assignment alone.\n\nThe statement is true.",
+      "Chronic queues and mismatches show that planned assignment did not match every preference perfectly.\n\nThe statement is false.",
+      "After reform, rising prices and rents in tight locations pull land, labour, and capital into new building there. Prices guide how much is built and where.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.49",
+    "title": "Voucher Choice Among Schools",
+    "context": "Consider parents directing publicly funded vouchers toward competing private and public schools. Evaluate the following economic assertions:",
+    "statements": [
+      "Vouchers introduce consumer choice among education providers within a publicly financed framework.",
+      "Social market economy can combine competition among schools with government funding rules.",
+      "Vouchers remove all government involvement because education becomes unregulated laissez-faire.",
+      "Consumer sovereignty applies when families direct voucher purchasing power among competing providers.",
+      "Eco-social policy could add environmental curriculum standards while retaining provider competition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Vouchers let households choose among schools.",
+      "Public funding plus provider competition fits social market logic.",
+      "Government sets funding and rules; this is not unregulated laissez-faire.",
+      "Family choice steers demand among providers.",
+      "Environmental standards can overlay competitive education markets."
+    ],
+    "tactical_explanations": [
+      "Public finance still pays, but parents steer vouchers among rival schools. That introduces consumer choice inside a publicly funded frame.\n\nThe statement is true.",
+      "Public funding plus school rivalry can fit social market logic, yet education remains heavily regulated and often publicly operated. Calling that mix a social market combination overstates how closely voucher scenes match the model.\n\nThe statement is false.",
+      "Vouchers keep government in funding and rules. Education does not become unregulated laissez-faire with zero public involvement.\n\nThe statement is false.",
+      "Families steer vouchers, yet curriculum rules, capacity caps, and admissions limits still bind. Saying consumer sovereignty applies when purchasing power is directed overstates how free that choice is.\n\nThe statement is false.",
+      "Environmental curriculum rules can overlay competition, yet many eco-social tools target energy and industry first. The claim that eco-social policy could add those standards while retaining competition overreaches the usual policy focus.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.5",
+    "case_id": "CASE 2.5.50",
+    "title": "Fleet Efficiency Under Fuel Price Rises",
+    "context": "Review taxi operators purchasing smaller vehicles when fuel prices increase in competitive urban markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit motive encourages operators to cut fuel costs when input prices rise in competitive markets.",
+      "Consumer sovereignty operates as riders choose fares among competing operators where rivalry exists.",
+      "Profit motive applies only under central planning because state operators ignore all cost pressures.",
+      "Market prices transmit rising fuel costs to operators deciding fleet composition.",
+      "Social market economy retains profit incentives within regulated competitive frameworks."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Cost pressure pushes efficiency investments to protect margins.",
+      "Rider spending rewards competitive efficient operators.",
+      "State firms faced budget pressures too, but incentives differed under planning.",
+      "Price changes signal input scarcity to producers.",
+      "Social market keeps profit drive alongside regulation and welfare."
+    ],
+    "tactical_explanations": [
+      "Higher fuel costs squeeze margins. Operators who switch to smaller, more efficient cars cut fuel use to protect profit under rivalry.\n\nThe statement is true.",
+      "Where operators compete, riders pick among fares and service. Spending rewards preferred offers, which is consumer sovereignty.\n\nThe statement is true.",
+      "Profit motive is a market incentive, not a planning one. Claiming it applies only under central planning reverses the systems contrast.\n\nThe statement is false.",
+      "Rising fuel prices raise operating costs. Operators then adjust fleet mix, so the market price signal reaches composition decisions.\n\nThe statement is true.",
+      "Social market design often keeps profit incentives under regulation, yet welfare and labour rules can blunt pure profit drive in protected sectors. The claim that profit incentives are retained within regulated frameworks overstates how intact that motive stays.\n\nThe statement is false."
+    ]
+  }
+]

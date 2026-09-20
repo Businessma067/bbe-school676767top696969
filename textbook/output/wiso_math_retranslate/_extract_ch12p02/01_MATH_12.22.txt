@@ -1,0 +1,158 @@
+CASE MATH 12.22
+ANSWER [true, true, false, false, true]
+TITLE_DE Tennisclub-Paarungen
+CONTEXT_DE Beim Tennisclub-Treffen sind 12 Spieler. Jedes Paar schüttelt genau einmal die Hand. Danach werden die 12 zufällig zu 6 Einzelmatches gepaart.
+STATEMENTS_DE:
+  A. Die Gesamtzahl der Handschläge beträgt 66.
+  B. Die Anzahl verschiedener Paarungen zu 6 Matches beträgt 10.395.
+  C. Die Wahrscheinlichkeit, dass Anna und Ben gegeneinander spielen, beträgt 1/6.
+  D. Die Wahrscheinlichkeit für eine bestimmte vollständige Paarungsliste beträgt 1/1.000.
+  E. Bei 6 Spielern wäre die Anzahl der Paarungen zu 3 Matches 15.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of handshakes exchanged during the warm-up. A handshake involves exactly two players, and every pair shakes hands once. This is a combination problem where we choose 2 players from the 12 available players, and the order of selection does not matter.
+
+We use the combination formula $\binom{N}{k}$ for $N=12$ players and $k=2$ for each handshake:
+
+$$
+N_{\text{handshakes}} = \binom{12}{2}
+$$
+
+$$
+\binom{12}{2} = \dfrac{12!}{2!(12-2)!}
+$$
+
+$$
+\dfrac{12!}{2!(10)!} = \dfrac{12 \cdot 11}{1 \cdot 2}
+$$
+
+$$
+12 \cdot 11 = 132
+$$
+
+$$
+\dfrac{132}{2} = 66
+$$
+
+$$
+\binom{12}{2} = 66
+$$
+
+$$
+N_{\text{handshakes}} = \frac{12!}{2!(12-2)!} = \frac{12!}{2!10!}
+$$
+
+$$
+N_{\text{handshakes}} = \frac{12 \times 11}{2 \times 1}
+$$
+
+$$
+N_{\text{handshakes}} = 66
+$$
+
+The total number of handshakes exchanged is $66$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+The claim asks for the number of distinct ways to pair the 12 players into 6 simultaneous matches. This is a problem of finding the number of perfect matchings in a complete graph with 12 vertices. For $2n$ players, where $n$ matches are formed, the formula is $\frac{(2n)!}{2^n n!}$.
+
+Here, we have $2n=12$ players, which means $n=6$ pairs. We substitute these values into the formula:
+
+$$
+N_{\text{pairings}}(12) = \frac{12!}{2^6 6!}
+$$
+
+$$
+N_{\text{pairings}}(12) = \frac{479,001,600}{64 \times 720}
+$$
+
+$$
+N_{\text{pairings}}(12) = \frac{479,001,600}{46,080}
+$$
+
+$$
+N_{\text{pairings}}(12) = 10,395
+$$
+
+There are $10,395$ distinct ways to pair the 12 players into 6 matches.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This claim concerns the probability that two specific players, Anna and Ben, are paired together. Consider Anna. She will be paired with exactly one other player. There are 11 other players available for her to be paired with. Since the pairings are random, each of these 11 possible opponents is equally likely.
+
+The probability that Anna is paired with Ben is the number of favorable outcomes (Ben is her opponent) divided by the total number of possible opponents for Anna.
+
+$$
+P(\text{Anna and Ben paired}) = \frac{1}{\text{Number of other players}}
+$$
+
+$$
+P(\text{Anna and Ben paired}) = \frac{1}{12 - 1}
+$$
+
+$$
+P(\text{Anna and Ben paired}) = \frac{1}{11}
+$$
+
+The probability that Anna and Ben are paired against each other is $\frac{1}{11}$. The claim states this probability is $\frac{1}{6}$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+The claim asks for the probability that a specific complete pairing occurs. A 'specific complete pairing' refers to one unique arrangement of the 6 matches from the total number of possible distinct pairings. Since the pairings are made completely at random, each of the possible complete pairings is equally likely to occur.
+
+From our overview calculations, the total number of distinct ways to pair the 12 players into 6 matches is $N_{\text{pairings}}(12) = 10,395$. The probability of any one specific pairing occurring is the reciprocal of this total number.
+
+$$
+P(\text{specific complete pairing}) = \frac{1}{N_{\text{pairings}}(12)}
+$$
+
+$$
+P(\text{specific complete pairing}) = \frac{1}{10,395}
+$$
+
+The probability of one specific complete pairing occurring is $\frac{1}{10,395}$. The claim states this probability is $\frac{1}{1,000}$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This claim presents a hypothetical scenario involving 6 players instead of 12, asking for the number of ways to pair them into 3 matches. This is another application of the formula for the number of perfect matchings, $N_{\text{pairings}}(2n) = \frac{(2n)!}{2^n n!}$.
+
+In this case, we have $2n=6$ players, which means $n=3$ pairs. We substitute these values into the formula:
+
+$$
+N_{\text{pairings}}(6) = \frac{6!}{2^3 3!}
+$$
+
+$$
+N_{\text{pairings}}(6) = \frac{720}{8 \times 6}
+$$
+
+$$
+N_{\text{pairings}}(6) = \frac{720}{48}
+$$
+
+$$
+N_{\text{pairings}}(6) = 15
+$$
+
+If the club had 6 players, there would be $15$ ways to pair them into 3 round-1 matches.
+
+So the statement is True.
+

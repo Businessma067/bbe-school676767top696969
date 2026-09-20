@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.26",
+    "title": "Community local impact",
+    "context": "Analyze communities near a plant care about jobs, noise, and local spending. Evaluate the following economic assertions:",
+    "statements": [
+      "Local communities can be stakeholders affected by jobs, traffic, and spending from nearby firms.",
+      "Facility expansion cannot create stakeholder conflict because communities do not trade with the firm.",
+      "Community jobs concerns are not stakeholder issues because employment is private.",
+      "Residents near an industrial plant may care about noise, pollution, and local jobs created by the firm.",
+      "Communities near a plant have no interest in how the firm performs commercially."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Communities are affected by business activity and count as stakeholders.\n\nApplied carefully, \"Local communities can be stakeholders affected by jobs, traffic, and spending from nearby firms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Communities are stakeholders even without direct commercial contracts.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Communities are affected by local employment and are stakeholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Local amenities and jobs link communities to business outcomes.\n\nApplied carefully, \"Residents near an industrial plant may care about noise, pollution, and local jobs created by the firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local spending and jobs link community interests to firm activity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.27",
+    "title": "Government tax compliance",
+    "context": "Analyze governments collect tax and enforce rules affecting firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Government stakeholder interest disappears in free markets with no regulation.",
+      "For tax compliance purposes, government has no stake in local firms because it only collects fixed fees.",
+      "Enforcement of business rules shows government acting as a stakeholder in firm conduct.",
+      "Compliance inspections link government oversight to how firms treat wider stakeholder interests.",
+      "Tax collection gives government a stake in the trading performance of local firms."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Tax and policy interests remain even where regulation is light.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Tax collection links government interests to business trading performance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Government is a stakeholder via regulation and policy.\n\nApplied carefully, \"Enforcement of business rules shows government acting as a stakeholder in firm conduct\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Government protects public interest through regulation and tax.\n\nApplied carefully, \"Compliance inspections link government oversight to how firms treat wider stakeholder interests\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Fiscal policy links government interests to business activity.\n\nApplied carefully, \"Tax collection gives government a stake in the trading performance of local firms\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.28",
+    "title": "Environment beyond slogan",
+    "context": "Consider whether environmental concerns require substantive measures, not slogans alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Eco-slogans alone can satisfy environmental stakeholders without any change to production processes.",
+      "Cosmetic eco-labels on packaging fully meet environmental stakeholder expectations without operational change.",
+      "Beyond slogans, environmental stakeholders still expect substantive measures rather than marketing alone.",
+      "Cosmetic branding changes satisfy environmental stakeholders without process improvement.",
+      "Using the word sustainable in advertising matters more than real environmental action on the shop floor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Genuine action is required, not greenwash slogans alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Real action, not slogans, is required on environmental issues.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Genuine environmental action is expected, not slogans alone.\n\nApplied carefully, \"Beyond slogans, environmental stakeholders still expect substantive measures rather than marketing alone\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Real operational action is expected, not cosmetic changes alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Genuine action is prioritised over superficial claims.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.29",
+    "title": "Stakeholders not shareholders only",
+    "context": "Analyze breadth of stakeholder concept beyond owners alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees count as stakeholders through wages and job security even without owning shares.",
+      "Suppliers are stakeholders because payment and order decisions affect their operations.",
+      "Communities affected by traffic and jobs from a nearby plant count as stakeholders.",
+      "Stakeholders include anyone affected by or interested in the business, extending beyond shareholders.",
+      "Customers who depend on a firm's products are stakeholders through mutual dependency."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Stakeholder status does not require ownership.\n\nApplied carefully, \"Employees count as stakeholders through wages and job security even without owning shares\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Suppliers are stakeholders through payment and order dependency.\n\nApplied carefully, \"Suppliers are stakeholders because payment and order decisions affect their operations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Communities are affected by business activity and count as stakeholders.\n\nApplied carefully, \"Communities affected by traffic and jobs from a nearby plant count as stakeholders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Stakeholders are defined broadly as affected or interested parties.\n\nApplied carefully, \"Stakeholders include anyone affected by or interested in the business, extending beyond shareholders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Customers are affected by and interested in firm performance.\n\nApplied carefully, \"Customers who depend on a firm's products are stakeholders through mutual dependency\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.30",
+    "title": "Owner risk bearing",
+    "context": "Analyze owners bear financial risk if the venture performs poorly. Evaluate the following economic assertions:",
+    "statements": [
+      "Poor trading performance can reduce owner returns and the value of capital they invested.",
+      "Rising share or business value rewards owners who accepted earlier business risk.",
+      "Owners receive reward without risk because businesses guarantee profits.",
+      "Owners typically seek profit and a return for bearing business risk.",
+      "Owners accept that poor results can reduce the value of their invested capital."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Risk bearing is central to the owner stakeholder position.\n\nApplied carefully, \"Poor trading performance can reduce owner returns and the value of capital they invested\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Share or business value growth is a recognised owner interest.\n\nApplied carefully, \"Rising share or business value rewards owners who accepted earlier business risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Owners face risk when performance is poor despite seeking profit.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Owners want profit and reward for risk.\n\nApplied carefully, \"Owners typically seek profit and a return for bearing business risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Risk bearing includes potential loss of capital when performance is weak.\n\nApplied carefully, \"Owners accept that poor results can reduce the value of their invested capital\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.31",
+    "title": "Manager employee dependence",
+    "context": "Consider managers and employees rely on firm performance for livelihood. Evaluate the following economic assertions:",
+    "statements": [
+      "Managers can ignore firm health because their salaries are fixed regardless of results.",
+      "Staff wages continue unchanged even when the employing firm stops trading permanently.",
+      "Managers and employees both rely on the firm's continued operation for income and jobs.",
+      "Employees need the firm for wages but the firm does not need employees to operate.",
+      "Mutual dependence between staff and firm is limited to customer-supplier links in the market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Income and job security tie managers to firm performance.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Closure harms staff jobs and income tied to the firm.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Mutual dependence links managers, employees, and the firm.\n\nApplied carefully, \"Managers and employees both rely on the firm's continued operation for income and jobs\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The business depends on staff to operate and generate revenue.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Managers and employees are mutually dependent on the business.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.32",
+    "title": "Supplier buyer relationship",
+    "context": "Analyze how a bakery's flour supplier relies on their bakery for orders and payment. Evaluate the following economic assertions:",
+    "statements": [
+      "Only the bakery owners are stakeholders in the flour supply arrangement.",
+      "The flour supplier expects payment and future orders from a neighbourhood bakery.",
+      "The bakery depends on the supplier for quality flour while the supplier depends on bakery orders.",
+      "Delayed bakery orders threaten the flour supplier's cash flow and staffing plans.",
+      "Buyers and suppliers rely on each other for orders and cash flow."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Suppliers are stakeholders through payment and order dependency.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Suppliers expect payment and orders without needing ownership.\n\nApplied carefully, \"The flour supplier expects payment and future orders from a neighbourhood bakery\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mutual dependency runs both ways between buyers and suppliers.\n\nApplied carefully, \"The bakery depends on the supplier for quality flour while the supplier depends on bakery orders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Order volumes affect supplier livelihoods as stakeholders.\n\nApplied carefully, \"Delayed bakery orders threaten the flour supplier's cash flow and staffing plans\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Supplier cash flow depends on steady bakery orders from buyers.\n\nApplied carefully, \"Buyers and suppliers rely on each other for orders and cash flow\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.33",
+    "title": "Customer firm reliance",
+    "context": "Analyze customers lose access if a relied-upon supplier closes. Evaluate the following economic assertions:",
+    "statements": [
+      "Firms depend on customers for revenue but customers depend on no particular supplier.",
+      "Closing a relied-upon supplier affects customers, but they have no stakeholder link to that firm.",
+      "Suppliers need customers but customers do not rely on suppliers for availability.",
+      "Customers lose access if a relied-upon supplier closes.",
+      "Buyers need reliable suppliers just as suppliers need paying customers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Customers rely on specific firms for product quality and availability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Customer welfare ties to firm performance through mutual dependency.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Mutual dependency means customers rely on suppliers too.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Customer welfare ties to firm performance through mutual dependency.\n\nApplied carefully, \"Customers lose access if a relied-upon supplier closes\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mutual dependency runs both ways between customers and firms.\n\nApplied carefully, \"Buyers need reliable suppliers just as suppliers need paying customers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.34",
+    "title": "Community facility impact",
+    "context": "Analyze a new warehouse affects traffic and jobs in a town. Evaluate the following economic assertions:",
+    "statements": [
+      "Communities affected by noise from a new plant hold stakeholder interests in how the firm operates.",
+      "Local employment linked to a warehouse gives the community a stake in the firm's continued operation.",
+      "A new warehouse affects traffic and jobs in a town, creating community stakeholder interests.",
+      "Community opposition to a new warehouse signals conflicting interests with the developer.",
+      "Residents near a new facility may experience stakeholder effects from increased lorry movements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Communities are affected by business activity and count as stakeholders.\n\nApplied carefully, \"Communities affected by noise from a new plant hold stakeholder interests in how the firm operates\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local employment ties community interests to firm outcomes.\n\nApplied carefully, \"Local employment linked to a warehouse gives the community a stake in the firm's continued operation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Communities are affected by facility impacts and local employment.\n\nApplied carefully, \"A new warehouse affects traffic and jobs in a town, creating community stakeholder interests\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Community and owner interests may conflict on expansion impacts.\n\nApplied carefully, \"Community opposition to a new warehouse signals conflicting interests with the developer\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Traffic impacts create community stakeholder interests.\n\nApplied carefully, \"Residents near a new facility may experience stakeholder effects from increased lorry movements\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.35",
+    "title": "Government regulation aim",
+    "context": "Analyze regulators set standards protecting public interest in business conduct. Evaluate the following economic assertions:",
+    "statements": [
+      "Regulation aims to balance business activity with protection of wider stakeholder interests.",
+      "Business rules set by regulators reflect protection of the wider public interest.",
+      "Regulators have no stakeholder role because businesses operate independently of public policy.",
+      "Environmental rules reflect government acting as a stakeholder for the wider community.",
+      "Government builds roads solely for private amusement unrelated to business logistics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Government stakeholder role includes protecting public interest via regulation.\n\nApplied carefully, \"Regulation aims to balance business activity with protection of wider stakeholder interests\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Government protects public interest through regulation.\n\nApplied carefully, \"Business rules set by regulators reflect protection of the wider public interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Government is a stakeholder via tax, regulation, and policy.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Regulation can represent environmental and community stakeholder concerns.\n\nApplied carefully, \"Environmental rules reflect government acting as a stakeholder for the wider community\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Infrastructure links to economic activity affecting business and public stakeholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.36",
+    "title": "Sustainability reporting duty",
+    "context": "Analyze investors and communities may demand sustainability reporting. Evaluate the following economic assertions:",
+    "statements": [
+      "Published sustainability data can inform investors and communities about environmental impacts.",
+      "Communities may rely on published environmental data when assessing local facility impacts.",
+      "Investors may use sustainability disclosures to judge whether environmental claims are credible.",
+      "Green marketing labels replace the need for environmental reporting.",
+      "Sustainability reporting is meant to hide impacts from community stakeholders."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Environmental reporting serves stakeholder information needs.\n\nApplied carefully, \"Published sustainability data can inform investors and communities about environmental impacts\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reporting addresses community stakeholder information needs.\n\nApplied carefully, \"Communities may rely on published environmental data when assessing local facility impacts\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reporting supports stakeholder evaluation of environmental performance.\n\nApplied carefully, \"Investors may use sustainability disclosures to judge whether environmental claims are credible\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reporting remains part of environmental stakeholder expectations.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Reporting informs stakeholders rather than concealing impacts by design.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.37",
+    "title": "Profit versus environment conflict",
+    "context": "Consider higher profit targets may clash with environmental spending. Evaluate the following economic assertions:",
+    "statements": [
+      "Higher profit targets may clash with environmental spending on cleaner production.",
+      "Profit and environmental protection align perfectly with no trade-offs in every decision.",
+      "Owners and environmental stakeholders agree on every spending priority without exception.",
+      "Pollution control investments raise costs but create no tension with owner stakeholder interests.",
+      "Cleaner production spending can lower short-term profit and tension owner and environmental aims."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Profit and environmental goals can conflict in the same decision.\n\nApplied carefully, \"Higher profit targets may clash with environmental spending on cleaner production\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Conflicting stakeholder interests include environmental tensions.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Conflicting interests among stakeholders are common.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Owner profit aims can clash with environmental demands.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Owner profit aims can clash with environmental demands.\n\nApplied carefully, \"Cleaner production spending can lower short-term profit and tension owner and environmental aims\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.38",
+    "title": "Growth versus community conflict",
+    "context": "Analyze a small IT-support venture plan a larger bakery extension opposed by neighbours. Evaluate the following economic assertions:",
+    "statements": [
+      "Expansion plans may clash with community preferences about noise and traffic.",
+      "Community objections to a bakery extension illustrate conflicting stakeholder interests in practice.",
+      "A small IT-support venture's growth ambitions may conflict with neighbours' wish to limit delivery traffic.",
+      "Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions.",
+      "Neighbours opposing a small IT-support venture's extension show conflicting stakeholder interests over local amenities."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Community and owner interests may conflict on expansion impacts.\n\nApplied carefully, \"Expansion plans may clash with community preferences about noise and traffic\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Conflicting stakeholder interests arise when growth affects local amenities.\n\nApplied carefully, \"Community objections to a bakery extension illustrate conflicting stakeholder interests in practice\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Neighbour objections to a bakery extension illustrate owner-community tension.\n\nApplied carefully, \"A small IT-support venture's growth ambitions may conflict with neighbours' wish to limit delivery traffic\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Profit and community concerns can conflict in expansion decisions.\n\nApplied carefully, \"Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local amenity concerns can pull neighbours and owners in different directions.\n\nApplied carefully, \"Neighbours opposing a small IT-support venture's extension show conflicting stakeholder interests over local amenities\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.39",
+    "title": "Stakeholder synthesis",
+    "context": "Analyze stakeholder theory and success factors for exam review. Evaluate the following economic assertions:",
+    "statements": [
+      "Mutual dependence exists only between customers and suppliers, not among staff and the firm.",
+      "Exam review: stakeholders include anyone affected by or interested in the business.",
+      "Stakeholder analysis applies only to shareholders because they provide capital.",
+      "Greenwash satisfies environmental stakeholders if marketing slogans are persuasive enough.",
+      "Conflicting stakeholder interests do not arise when success factors are managed well."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Mutual dependence links managers, employees, customers, suppliers, and the firm.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Stakeholders are defined broadly as affected or interested parties.\n\nApplied carefully, \"Exam review: stakeholders include anyone affected by or interested in the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Stakeholders include anyone affected or interested, not shareholders alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Genuine environmental action is expected, not greenwash slogans alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Conflicting stakeholder interests arise in many decisions.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.40",
+    "title": "Bakery stakeholder groups",
+    "context": "Consider a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours. Evaluate the following economic assertions:",
+    "statements": [
+      "Bakery staff depend on the shop for wages and job security as employee stakeholders.",
+      "Bakery owners seek profit and bear risk from how the shop trades.",
+      "The owners, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery.",
+      "Only a small IT-support venture count as stakeholders because they provided the original capital.",
+      "The flour supplier expects payment and future orders as a supplier stakeholder."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Employees depend on firm success for livelihood.\n\nApplied carefully, \"Bakery staff depend on the shop for wages and job security as employee stakeholders\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Owners typically seek profit and bear business risk.\n\nApplied carefully, \"Bakery owners seek profit and bear risk from how the shop trades\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multiple groups affected by the bakery fit the stakeholder definition.\n\nApplied carefully, \"The owners, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Stakeholders include staff, suppliers, customers, and neighbours too.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Suppliers expect payment and orders without needing ownership.\n\nApplied carefully, \"The flour supplier expects payment and future orders as a supplier stakeholder\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.41",
+    "title": "Multinational stakeholder spread",
+    "context": "Consider a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees at a components manufacturer's plants are stakeholders affected by corporate decisions.",
+      "Government regulators in host countries hold stakeholder interests in a components manufacturer's operations.",
+      "Communities near a components manufacturer's facilities may be stakeholders affected by jobs and local spending.",
+      "A components manufacturer affects employees, suppliers, communities, and regulators across its operating countries.",
+      "A multinational like a components manufacturer has stakeholders only among its shareholders."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Employees are stakeholders through income, security, and identification.\n\nApplied carefully, \"Employees at a components manufacturer's plants are stakeholders affected by corporate decisions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Government is a stakeholder via regulation, tax, and policy.\n\nApplied carefully, \"Government regulators in host countries hold stakeholder interests in a components manufacturer's operations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Communities are affected by business activity and count as stakeholders.\n\nApplied carefully, \"Communities near a components manufacturer's facilities may be stakeholders affected by jobs and local spending\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Large multinationals have broad stakeholder groups.\n\nApplied carefully, \"A components manufacturer affects employees, suppliers, communities, and regulators across its operating countries\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Stakeholders include employees, suppliers, communities, and regulators too.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.42",
+    "title": "Greenwash marketing trap",
+    "context": "Consider a firm that advertises eco-friendly packaging while increasing pollution. Evaluate the following economic assertions:",
+    "statements": [
+      "Honest green reporting builds less stakeholder trust than bold unsupported eco-claims.",
+      "Superficial eco-labels without operational change fail environmental stakeholder expectations.",
+      "Green packaging claims satisfy environmental stakeholders even when pollution rises.",
+      "Greenwash misleads stakeholders by exaggerating environmental performance in advertising.",
+      "Advertising recyclable boxes while dumping waste illegally illustrates greenwash risk."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Greenwash misleads stakeholders and undermines trust when uncovered.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Real action, not slogans, is required on environmental issues.\n\nApplied carefully, \"Superficial eco-labels without operational change fail environmental stakeholder expectations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Genuine action is required, not greenwash slogans alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Greenwash means exaggerated claims without real action.\n\nApplied carefully, \"Greenwash misleads stakeholders by exaggerating environmental performance in advertising\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Misleading green claims without real action exemplify greenwash.\n\nApplied carefully, \"Advertising recyclable boxes while dumping waste illegally illustrates greenwash risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.43",
+    "title": "Supplier contract fairness",
+    "context": "Analyze suppliers argue for fair payment terms when the buyer delays invoices. Evaluate the following economic assertions:",
+    "statements": [
+      "Supplier cash flow concerns are unrelated to stakeholder analysis of payment fairness.",
+      "Delayed invoices affect only the buyer's finance department, not supplier stakeholders.",
+      "Fair payment terms matter to suppliers as stakeholder treatment, not only to accountants.",
+      "Suppliers have no stakeholder interest in payment timing once a contract is signed.",
+      "Fair supplier terms are purely legal technicalities, not stakeholder fairness concerns."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Cash-flow pressure from delayed payment affects suppliers as stakeholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Payment timing affects supplier stakeholders directly.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Fair payment terms reflect how the buyer treats supplier stakeholders.\n\nApplied carefully, \"Fair payment terms matter to suppliers as stakeholder treatment, not only to accountants\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Timely payment is a core supplier stakeholder interest.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Supplier fairness concerns extend beyond narrow legal formalities.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.44",
+    "title": "Employee shared values",
+    "context": "Analyze staff engagement rises when personal values align with company practices. Evaluate the following economic assertions:",
+    "statements": [
+      "Staff engagement improves when employees feel company practices match their personal values.",
+      "Shared values between staff and the organisation can support overall business success.",
+      "Alignment of personal and company values can improve cooperation on business objectives.",
+      "Staff who share organisational values may identify more closely with firm success.",
+      "Aligned values help employees and managers cooperate on shared business objectives."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Alignment of values supports cooperation on business goals.\n\nApplied carefully, \"Staff engagement improves when employees feel company practices match their personal values\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Shared values link employees with organisational performance.\n\nApplied carefully, \"Shared values between staff and the organisation can support overall business success\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Value alignment can improve day-to-day cooperation at work.\n\nApplied carefully, \"Alignment of personal and company values can improve cooperation on business objectives\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Identification with firm success is an employee stakeholder theme.\n\nApplied carefully, \"Staff who share organisational values may identify more closely with firm success\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Shared values support mutual dependence and identification themes.\n\nApplied carefully, \"Aligned values help employees and managers cooperate on shared business objectives\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.45",
+    "title": "Owner long term value",
+    "context": "Analyze owners weighing reinvestment versus dividends affect long-term value. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners have no interest in long-term business value, only in immediate cash extraction.",
+      "Long-term value growth is unrelated to owner stakeholder concerns about risk and reward.",
+      "Weighing dividends against reinvestment affects the long-term value owners seek.",
+      "Retaining profit in the business rather than paying dividends can build long-term owner value.",
+      "Reinvestment decisions affect only accountants, not owner stakeholder interests."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Owners may want share or business value to increase.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Value growth links to owner risk and reward.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Reinvestment versus payout shapes owner value interests.\n\nApplied carefully, \"Weighing dividends against reinvestment affects the long-term value owners seek\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reinvestment choices shape owner value interests.\n\nApplied carefully, \"Retaining profit in the business rather than paying dividends can build long-term owner value\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Reinvestment choices shape owner value interests.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.46",
+    "title": "Customer boycott power",
+    "context": "Consider customers may switch suppliers if quality falls. Evaluate the following economic assertions:",
+    "statements": [
+      "Customers cannot influence firms because switching suppliers is impossible in all markets.",
+      "Falling quality gives customers power to switch suppliers and reduce firm revenue.",
+      "Customers may switch if quality falls, exercising stakeholder influence on revenue.",
+      "Customer boycotts after poor service show stakeholder power over firm revenue.",
+      "Buyers at a bakery have no power because they purchase small quantities each visit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Mutual dependency gives customers influence when they can switch.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Customers depend on firms for product quality and availability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Poor performance can drive customers to switch suppliers.\n\nApplied carefully, \"Customers may switch if quality falls, exercising stakeholder influence on revenue\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Customers can influence firms through switching or boycotts.\n\nApplied carefully, \"Customer boycotts after poor service show stakeholder power over firm revenue\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Even small-quantity buyers can switch when quality or service disappoints.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.47",
+    "title": "Community employment stake",
+    "context": "Analyze a town relies on one factory for many jobs. Evaluate the following economic assertions:",
+    "statements": [
+      "If the factory closes, the community loses jobs linked to that employer.",
+      "A major employer's expansion or closure decision affects community stakeholders beyond the factory gate.",
+      "Residents whose family members work at the plant hold a community stakeholder interest in its future.",
+      "Local spending from factory wages links community welfare to the firm's continued operation.",
+      "Local jobs concentrating on a single company give the community a direct interest in that firm's continuity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Community interests are affected when a major local employer closes.\n\nApplied carefully, \"If the factory closes, the community loses jobs linked to that employer\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Communities are affected by business activity and count as stakeholders.\n\nApplied carefully, \"A major employer's expansion or closure decision affects community stakeholders beyond the factory gate\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Residents with family members at the plant hold a community stake in its future.\n\nApplied carefully, \"Residents whose family members work at the plant hold a community stakeholder interest in its future\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local spending and jobs link community welfare to the firm's continued operation.\n\nApplied carefully, \"Local spending from factory wages links community welfare to the firm's continued operation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local employment ties community interests to firm outcomes.\n\nApplied carefully, \"Local jobs concentrating on a single company give the community a direct interest in that firm's continuity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.48",
+    "title": "Government infrastructure role",
+    "context": "Analyze government builds roads used by a regional distributor. Evaluate the following economic assertions:",
+    "statements": [
+      "Infrastructure used by firms links government investment to business stakeholder context.",
+      "Tax revenue from trading firms helps fund public infrastructure used by business.",
+      "Public roads built for general use have no connection to business logistics needs.",
+      "Regulators may set transport standards affecting firms that depend on road networks.",
+      "Roads built for public use also support business logistics and distributor operations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Government affects and is affected by business as a stakeholder.\n\nApplied carefully, \"Infrastructure used by firms links government investment to business stakeholder context\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Fiscal links connect government and business stakeholder interests.\n\nApplied carefully, \"Tax revenue from trading firms helps fund public infrastructure used by business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Infrastructure links to economic activity affecting business and public stakeholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Government stakeholder role includes regulation affecting business logistics.\n\nApplied carefully, \"Regulators may set transport standards affecting firms that depend on road networks\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Infrastructure links government investment to business activity.\n\nApplied carefully, \"Roads built for public use also support business logistics and distributor operations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.49",
+    "title": "Environment stakeholder status",
+    "context": "Analyze the environment as a stakeholder expecting concrete action and reporting. Evaluate the following economic assertions:",
+    "statements": [
+      "Environment is not a stakeholder because it cannot sign contracts.",
+      "Pollution control matters only to regulators, not to environmental stakeholder theory.",
+      "Cosmetic eco-labels fully satisfy environmental stakeholders without operational change.",
+      "Environmental stakeholder theory treats nature as a party expecting action and reporting.",
+      "Environmental reporting is optional fiction unrelated to stakeholder expectations."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Environment is treated as a stakeholder expecting action and reporting.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Environment is a stakeholder expecting genuine action and reporting.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Real action, not slogans, is required on environmental issues.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Environment is a stakeholder expecting action and reporting.\n\nApplied carefully, \"Environmental stakeholder theory treats nature as a party expecting action and reporting\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reporting communicates impacts to environment-focused stakeholders.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.6",
+    "case_id": "CASE 3.6.50",
+    "title": "Success factors context",
+    "context": "Analyze stakeholder interests to legal, financial, market, and cost success factors. Evaluate the following economic assertions:",
+    "statements": [
+      "Legal and financial structure shapes how well a firm can meet stakeholder expectations.",
+      "Market awareness serves only rival analysis and not customer stakeholder needs.",
+      "Cost control and profitability influence wages, orders, and returns for stakeholder groups.",
+      "Understanding market trends helps firms respond to customer and competitive pressures.",
+      "Legal structure is unrelated to business success and stakeholder outcomes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Legal and financial structure are success factors affecting stakeholders.\n\nApplied carefully, \"Legal and financial structure shapes how well a firm can meet stakeholder expectations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Market awareness helps meet customer and competitive pressures.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Costs and profitability connect to owner and employee outcomes.\n\nApplied carefully, \"Cost control and profitability influence wages, orders, and returns for stakeholder groups\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Market awareness supports meeting customer and competitive pressures.\n\nApplied carefully, \"Understanding market trends helps firms respond to customer and competitive pressures\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Legal structure is listed among success factors affecting performance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  }
+]

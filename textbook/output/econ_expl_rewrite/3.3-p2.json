@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.26",
+    "title": "Investor Return Logic",
+    "context": "Analyze investor expectations about profit returns. Evaluate the following economic assertions:",
+    "statements": [
+      "Investors in expanding firms view profit as compensation for capital exposed to market risk.",
+      "Retained profit must be unrelated to investor risk because it stays in the firm.",
+      "Commercial investors view break-even as the ideal long-run outcome.",
+      "Investors treat profit as a salary unrelated to capital committed to the firm.",
+      "Owner return logic rejects any link between profit and capital at risk."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.27",
+    "title": "NPO Mission Types",
+    "context": "Review how different not-for-profit missions share the same economic logic. Evaluate the following economic assertions:",
+    "statements": [
+      "A conservation NPO illustrates environmental mission focus within an NPO model.",
+      "A humanitarian NPO illustrates humanitarian mission delivery within an NPO model.",
+      "An environmental campaign NPO illustrates a mission-driven non-profit organisation.",
+      "Different mission labels remove the shared need to fund operations.",
+      "Mission type alone turns an NPO into a profit-maximising corporation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.28",
+    "title": "Cost Coverage Threshold",
+    "context": "Review covering costs as the NPO threshold. Evaluate the following economic assertions:",
+    "statements": [
+      "Covering costs allows NPOs to reinvest any surplus into mission activities.",
+      "Cost coverage allows NPOs to operate without donations or fees.",
+      "NPOs and commercial firms share identical primary goals for owner profit.",
+      "Clinics need no revenue because treatment is a mission service.",
+      "Maximising owner profit is the primary financial goal of not-for-profit organisations."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.29",
+    "title": "Social Enterprise Cafe Margin",
+    "context": "Consider a social enterprise cafe seeks a margin to open a second training kitchen. Evaluate the following economic assertions:",
+    "statements": [
+      "Achieving revenue above costs can finance additional mission capacity.",
+      "Seeking margin to fund a training kitchen targets surplus for mission-related expansion.",
+      "Mission-related expansion can be financed from earned margin above costs.",
+      "Seeking margin proves the cafe abandoned its social mission entirely.",
+      "The cafe treats surplus as fuel for a second training kitchen rather than owner dividends."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.30",
+    "title": "Aid Packing and Prior Surplus",
+    "context": "Consider how a humanitarian NPO uses prior-year donation surplus to pack aid parcels. Evaluate the following economic assertions:",
+    "statements": [
+      "Prior surplus can fund later aid shipments for humanitarian organisations.",
+      "Aid parcels reflect humanitarian mission delivery rather than owner profit-maximisation.",
+      "Using prior surplus for later aid proves the organisation maximises private owner wealth.",
+      "Humanitarian NPOs cannot retain unused funds from one period to the next.",
+      "Mission delivery requires no logistics funding if volunteers pack parcels."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.31",
+    "title": "Repair Shop Diagnostic Reinvest",
+    "context": "Consider how founders of a repair shop reinvest last year's profit into diagnostic tools. Evaluate the following economic assertions:",
+    "statements": [
+      "Founders treat retained profit as funding for long-run service capacity.",
+      "Diagnostic tool purchases from profit illustrate durability through reinvest.",
+      "Tool purchases must come from donations rather than business profit.",
+      "Reinvesting profit adopts not-for-profit dividend rules.",
+      "Repair shops must distribute all profit immediately to owners."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.32",
+    "title": "Profit Trap: Revenue Alone",
+    "context": "Review the trap that revenue alone equals profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit compares total revenue with total costs and expenses.",
+      "Profit-oriented firms compare inflows with total expenses rather than counting revenue alone.",
+      "Margin appears only when revenue exceeds costs.",
+      "Strong sales do not guarantee profit when expenses rise faster than revenue.",
+      "Cost control remains essential to achieving profit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.33",
+    "title": "Mixed NPO Revenue",
+    "context": "Analyze mixed funding sources for not-for-profit organisations. Evaluate the following economic assertions:",
+    "statements": [
+      "A conservation NPO combining merchandise sales and donations illustrates mixed NPO revenue.",
+      "Surplus at an environmental campaign NPO can support more campaigns rather than shareholder dividends.",
+      "Merchandise surplus at a conservation NPO can fund habitat work within the NPO model.",
+      "Mixed revenue automatically converts every NPO into a profit-maximising firm.",
+      "Donations alone are the only lawful NPO funding source."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.34",
+    "title": "Reinvestment in NPO Services",
+    "context": "Review reinvesting surplus to improve NPO services. Evaluate the following economic assertions:",
+    "statements": [
+      "Improved services require distributing surplus to private owners.",
+      "Clinic upgrades must be paid to external shareholders.",
+      "Spending surplus on better services shows an NPO failed to distribute donor funds.",
+      "Beneficiary gains prove the NPO switched to profit-maximisation.",
+      "Theatre outreach funded from surplus converts the NGO into a commercial cinema."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.35",
+    "title": "Owner Risk Compensation",
+    "context": "Review profit as compensation for owner risk. Evaluate the following economic assertions:",
+    "statements": [
+      "Profit returns reflect capital placed at risk in the venture.",
+      "Commercial owners expect some return when revenues exceed expenses.",
+      "Fixed salaries to investors replace profit regardless of business performance.",
+      "Higher revenue than expenses allows owners to be rewarded for risk-bearing.",
+      "Profit and capital risk-bearing are unrelated in all firms."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.36",
+    "title": "Operating for Longevity",
+    "context": "Analyze operating over longer periods in both firm types. Evaluate the following economic assertions:",
+    "statements": [
+      "Most businesses aim to operate longer by earning profit rather than merely breaking even.",
+      "Commercial durability often relies on reinvested profit.",
+      "Mission organisations need ongoing cost coverage to continue delivery.",
+      "Profit above costs is irrelevant to commercial longevity.",
+      "Once established, both firm types can ignore finance after a successful year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.37",
+    "title": "NPO Examples Across Missions",
+    "context": "Review shared characteristics of mission-driven not-for-profit organisations. Evaluate the following economic assertions:",
+    "statements": [
+      "Humanitarian, conservation, and environmental campaign organisations can all operate as NPOs.",
+      "Mission-driven organisations still face scarcity of funds and staff capacity.",
+      "NPO status abolishes all operating costs.",
+      "An NPO may ignore inflow management because there are never wages to pay.",
+      "Any organisation with a mission must be classified as primary-sector production."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.38",
+    "title": "Profit Enhances Sustainability",
+    "context": "Review profit and commercial sustainability. Evaluate the following economic assertions:",
+    "statements": [
+      "Long-run commercial survival often depends on profitable operations over time.",
+      "Margin above break-even helps commercial firms expand and renew capital.",
+      "New ovens must be funded only by donations, not business profit.",
+      "Commercial sustainability requires distributing all earnings immediately.",
+      "Profit reduces sustainability because it always leaves firms underinvested."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.39",
+    "title": "Donor Income Role",
+    "context": "Review donor income in NPO financing. Evaluate the following economic assertions:",
+    "statements": [
+      "Humanitarian relief depends on donations alongside any earned income.",
+      "Mixed donations and fees cannot sustain an NPO.",
+      "Donor income replaces all need for earned revenue at NPOs.",
+      "Donor income eliminates cost coverage discipline.",
+      "Food banks need not track costs when donations arrive."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.40",
+    "title": "Service Enhancement Surplus",
+    "context": "Analyze using NPO surplus to enhance services. Evaluate the following economic assertions:",
+    "statements": [
+      "Beneficiaries gain when surplus funds improved outreach or care.",
+      "Ticket surplus at an NGO theatre can fund outreach programmes.",
+      "Using surplus to improve beneficiary services aligns with NPO aims.",
+      "Clinic service upgrades from surplus reflect mission reinvestment.",
+      "Service enhancement surplus must be paid to external shareholders."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.41",
+    "title": "Community Clinic NPO",
+    "context": "Review community clinic behaviour as not-for-profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Treating patients can continue only when operating costs are covered.",
+      "Community clinics pursuing cost coverage while treating patients reflect NPO priorities.",
+      "Community clinics distribute dividends like corporations.",
+      "Any clinic surplus should improve patient services rather than owner payouts.",
+      "Billing insurers proves maximising owner profit like a corporation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.42",
+    "title": "Disaster Relief Funding",
+    "context": "Review funding humanitarian disaster relief. Evaluate the following economic assertions:",
+    "statements": [
+      "Relief organisations need secured funding before dispatching kits to disaster zones.",
+      "Prior surplus can complement donations for later relief operations.",
+      "Collecting donations before dispatch illustrates prior funding need for relief.",
+      "Disaster urgency bypasses all cost coverage requirements.",
+      "Volunteers remove all material costs from relief kits."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.43",
+    "title": "Margin Above Expenses",
+    "context": "Analyze commercial margin above expenses. Evaluate the following economic assertions:",
+    "statements": [
+      "Margin above expenses funds new equipment in profit-oriented firms.",
+      "Profit requires comparing revenue with total costs.",
+      "Break-even matching is sufficient for commercial firms seeking to thrive.",
+      "Surplus above costs can support owner reward for risk-bearing.",
+      "Commercial firms target revenue above costs to reward risk and reinvest."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.44",
+    "title": "Break-even versus Thrive",
+    "context": "Review break-even with thriving commercially. Evaluate the following economic assertions:",
+    "statements": [
+      "Break-even alone is insufficient for most profit-oriented firms seeking to thrive.",
+      "Longevity requires only break-even in profit-oriented firms.",
+      "Commercial thrive logic rejects any surplus above costs.",
+      "Thriving requires NPOs to maximise dividends to investors.",
+      "Retailers expand while keeping revenues below operating costs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.45",
+    "title": "Surplus Not Distributed",
+    "context": "Analyze why NPO surplus is not distributed to owners. Evaluate the following economic assertions:",
+    "statements": [
+      "Commercial profit and NPO surplus follow different uses above costs.",
+      "NPO surplus is reinvested for mission rather than paid as owner dividends.",
+      "Ticket income must be profit distributed to owners.",
+      "Undistributed surplus proves the NPO failed financially.",
+      "Mission reinvestment is forbidden when an NPO earns surplus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.46",
+    "title": "Commercial Durability Logic",
+    "context": "Review commercial durability through profit. Evaluate the following economic assertions:",
+    "statements": [
+      "Long-run survival for most firms depends on profitable operations.",
+      "Retained profit supports renewal of tools, premises, or systems over time.",
+      "Profit enables reinvestment that supports commercial durability.",
+      "Commercial firms thrive long term by merely matching costs with no margin.",
+      "Bakeries funding new ovens from surplus illustrate commercial durability logic."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.47",
+    "title": "NGO Project Funding",
+    "context": "Review funding NGO projects over time. Evaluate the following economic assertions:",
+    "statements": [
+      "Prior fundraising surplus can fund later NGO projects.",
+      "Mixed inflows must be paid out as owner dividends.",
+      "Project funding ignores operating costs because missions are voluntary.",
+      "Grant awards are ceremonial and require no cost coverage.",
+      "Volunteer recruitment removes all revenue requirements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.48",
+    "title": "Profit and Capital Renewal",
+    "context": "Review profit funding capital renewal. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners may reinvest rather than withdraw all profit in a growing repair shop.",
+      "Capital renewal in commercial firms commonly draws on retained profit.",
+      "Renewal spending and profit orientation are linked in commercial firms.",
+      "Reinvesting profit into tools improves future production or service capacity.",
+      "Commercial profit must be distributed immediately and cannot fund new equipment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.49",
+    "title": "Funding Disaster Relief",
+    "context": "Review funding humanitarian disaster relief. Evaluate the following economic assertions:",
+    "statements": [
+      "Disaster relief requires funding for materials, transport, and staff or volunteers' support costs.",
+      "Surplus from earlier fundraising can finance later shipments.",
+      "Not-for-profit status removes the need for any inflow planning.",
+      "Relief can be delivered indefinitely without donations or other inflows.",
+      "Any surplus in relief work must become private owner profit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "CASE 3.3.50",
+    "title": "NPO Synthesis",
+    "context": "Review core claims about not-for-profit organisations. Evaluate the following economic assertions:",
+    "statements": [
+      "NPOs pursue a mission rather than maximising private owner profit.",
+      "Surpluses in NPOs typically return to mission delivery.",
+      "Humanitarian, conservation, and environmental campaign groups can illustrate NPO forms.",
+      "Selling goods always converts an NPO into a profit-maximising corporation.",
+      "NPOs can operate indefinitely with no inflows of any kind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The claim matches the standard concept: every scope word holds, and nothing extra is smuggled in.\n\nThe statement is true.",
+      "The absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "The sentence sounds close to the textbook idea, but a scope detail, a swapped comparison, or a wrong classification makes it fail.\n\nThe statement is false."
+    ]
+  }
+]

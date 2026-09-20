@@ -1,0 +1,4402 @@
+================================================================================
+CASE MATH 11.04 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] The revenue function is $R(q)=80q-2q^{2}$.
+[1] The marginal revenue is $R'(q)=80-4q$.
+[2] $R'(10)=40$.
+[3] $R'(q)=p'(q)$ for every $q>0$.
+[4] The tangent line to $R$ at $q=10$ is $y=600+40(q-10)$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Revenue is price times quantity sold. Expand the product with the linear price schedule:
+
+$$
+R(q) = q\cdot(80-2q)
+$$
+
+$$
+R(q) = 80q-2q^{2}
+$$
+
+Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Marginal revenue is the derivative of the whole revenue function — not the derivative of price alone. Differentiating $R(q)=80q-2q^{2}$ term by term gives
+
+$$
+R'(q) = 80-4q
+$$
+
+A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation.
+
+$$
+R(q) = 80q-2q^{2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute the named sales level $q=10$ into marginal revenue:
+
+$$
+R'(10) = 80-4\cdot 10
+$$
+
+$$
+R'(10) = 80-40
+$$
+
+$$
+80 - 40 = 40
+$$
+
+$$
+R'(10) = 40 = 40
+$$
+
+$$
+R'(10) = 40
+$$
+
+Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+The price schedule alone has slope $p'(q)=-2$, while revenue's derivative is
+
+$$
+R'(q) = 80-4q
+$$
+
+These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\,p(q)$. The claim's identification is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+R'(q) = p'(q)
+$$
+
+$$
+p'(q) = -2
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+First evaluate both the height and the slope at $q=10$:
+
+$$
+R(10) = 80\cdot 10-2\cdot 100 = 600
+$$
+
+$$
+R'(10) = 40
+$$
+
+Point-slope form then gives the tangent
+
+$$
+y = 600+40(q-10)
+$$
+
+exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim,
+
+So the statement is True.
+--- OVERVIEW EN ---
+Price is the linear schedule $p(q)=80-2q$, so revenue expands to
+
+$$R(q)=q\cdot p(q)=80q-2q^{2}$$
+
+Differentiating the whole revenue function gives marginal revenue
+
+$$R'(q)=80-4q$$
+
+At $q=10$ one finds $R'(10)=40$ and $R(10)=600$, so the tangent is
+
+$$y=600+40(q-10)$$
+
+Note that $p'(q)=-2$ is not the same as $R'(q)$: revenue is the product $q\,p(q)$, so its derivative is not simply the price slope. Confusing $R'$ with $p'$ is a classic trap.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Erlös ist Preis mal verkaufte Menge. Expandiere das Produkt mit dem linearen Preisplan:
+
+$$
+R(q) = q\cdot(80-2q)
+$$
+
+$$
+R(q) = 80q-2q^{2}
+$$
+
+Lass den Ausdruck nicht als $q(80-2q)$ stehen, wenn die Behauptung die expandierte Quadratform verlangt. Genau diese Form ist genannt.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Grenzerlös ist die Ableitung der gesamten Erlösfunktion — nicht die Ableitung des Preises allein. Termweises Differenzieren von $R(q)=80q-2q^{2}$ liefert
+
+$$
+R'(q) = 80-4q
+$$
+
+Eine Falle wäre $R'(q)=-2$ aus der Preissteigung. Die behauptete Formel stimmt mit der korrekten Ableitung überein.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze die genannte Absatzmenge $q=10$ in den Grenzerlös ein:
+
+$$
+R'(10) = 80-4\cdot 10
+$$
+
+$$
+R'(10) = 80-40
+$$
+
+$$
+R'(10) = 40
+$$
+
+Verwechsle dies nicht mit dem Preis $p(10)=60$ oder dem Erlös $R(10)=600$. Die Steigungsrechnung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Der Preisplan allein hat die Steigung $p'(q)=-2$, während die Ableitung des Erlöses
+
+$$
+R'(q) = 80-4q
+$$
+
+ist. Das sind für jedes $q>0$ verschiedene Funktionen. $R'$ mit $p'$ gleichzusetzen vergisst, dass der Erlös das Produkt $q\,p(q)$ ist.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Zuerst Höhe und Steigung bei $q=10$:
+
+$$
+R(10) = 80\cdot 10-2\cdot 100 = 600
+$$
+
+$$
+R'(10) = 40
+$$
+
+Punkt-Steigungs-Form liefert die Tangente
+
+$$
+y = 600+40(q-10)
+$$
+
+genau wie behauptet. $600$ durch $p(10)$ zu ersetzen würde die Tangentengleichung zerstören.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Der Preis folgt dem linearen Plan $p(q)=80-2q$, daher expandiert der Erlös zu
+
+$$R(q)=q\cdot p(q)=80q-2q^{2}$$
+
+Differenzieren der gesamten Erlösfunktion liefert den Grenzerlös
+
+$$R'(q)=80-4q$$
+
+Bei $q=10$ gilt $R'(10)=40$ und $R(10)=600$, also lautet die Tangente
+
+$$y=600+40(q-10)$$
+
+Beachte: $p'(q)=-2$ ist nicht dasselbe wie $R'(q)$ — der Erlös ist das Produkt $q\,p(q)$, seine Ableitung ist nicht einfach die Preissteigung.
+================================================================================
+CASE MATH 11.05 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] The average cost simplifies to $A(q)=\dfrac{300}{q}+6+\dfrac{3}{100}q$.
+[1] The derivative is $A'(q)=-\dfrac{300}{q^{2}}+\dfrac{3}{100}$.
+[2] $A'(100)=0$.
+[3] The derivative $A'(q)$ is the same as marginal cost.
+[4] At $q=100$, average cost is locally flat because the derivative is zero there.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Average cost is total cost divided by output. Split the quotient term by term:
+
+$$
+A(q) = \dfrac{300+6q+\dfrac{3}{100}q^{2}}{q}
+$$
+
+$$
+A(q) = \dfrac{300}{q}+6+\dfrac{3}{100}q
+$$
+
+Each term of $C$ contributes separately: the fixed cost becomes $\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Differentiate the average-cost expression term by term, using $\dfrac{d}{dq}\bigl(q^{-1}\bigr)=-q^{-2}$ and treating the constant $6$ as zero under differentiation:
+
+$$
+A'(q) = -\dfrac{300}{q^{2}}+\dfrac{3}{100}
+$$
+
+A trap is differentiating $\dfrac{3}{100}q$ as $\dfrac{3}{100}q^{2}$. The claimed derivative matches.
+
+$$
+\dfrac{d}{dq}\bigl(q^{-1}\bigr) = -q^{-2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute $q=100$ into the average-cost derivative:
+
+$$
+A'(100) = -\dfrac{300}{10000}+\dfrac{3}{100}
+$$
+
+$$
+A'(100) = -0.03+0.03
+$$
+
+$$
+A'(100) = 0
+$$
+
+The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Marginal cost is the derivative $C'(q)$ of total cost, whereas
+
+$$
+A'(q) = -\dfrac{300}{q^{2}}+\dfrac{3}{100}
+$$
+
+is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+A zero first derivative means a horizontal tangent on the graph of $A$. Since the calculation gives
+
+$$
+A'(100) = 0
+$$
+
+average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts.
+
+$$
+q = 100
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- OVERVIEW EN ---
+Total cost is $C(q)=300+6q+\dfrac{3}{100}q^{2}$, so average cost splits as
+
+$$A(q)=\dfrac{C(q)}{q}=\dfrac{300}{q}+6+\dfrac{3}{100}q$$
+
+Differentiating term by term yields
+
+$$A'(q)=-\dfrac{300}{q^{2}}+\dfrac{3}{100}$$
+
+At the named output,
+
+$$A'(100)=-\dfrac{300}{10000}+\dfrac{3}{100}=0$$
+
+so average cost is locally flat there. Marginal cost is $C'(q)$, a different object from the average-cost derivative $A'(q)$ — confusing those two is the main trap of this stem.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Stückkosten sind Gesamtkosten geteilt durch Output. Spalte den Quotienten termweise:
+
+$$
+A(q) = \dfrac{300+6q+\dfrac{3}{100}q^{2}}{q}
+$$
+
+$$
+A(q) = \dfrac{300}{q}+6+\dfrac{3}{100}q
+$$
+
+Jeder Term von $C$ trägt getrennt bei: die Fixkosten werden $\dfrac{300}{q}$, der lineare Teil bleibt $6$, und der quadratische Teil wird proportional zu $q$. Das ist die behauptete Vereinfachung.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Differenziere den Stückkostenausdruck termweise mit $\dfrac{d}{dq}\bigl(q^{-1}\bigr)=-q^{-2}$; die Konstante $6$ verschwindet:
+
+$$
+A'(q) = -\dfrac{300}{q^{2}}+\dfrac{3}{100}
+$$
+
+Eine Falle wäre, $\dfrac{3}{100}q$ wie $\dfrac{3}{100}q^{2}$ abzuleiten. Die behauptete Ableitung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze $q=100$ in die Stückkostenableitung ein:
+
+$$
+A'(100) = -\dfrac{300}{10000}+\dfrac{3}{100}
+$$
+
+$$
+A'(100) = -0.03+0.03
+$$
+
+$$
+A'(100) = 0
+$$
+
+Die beiden Beiträge heben sich an dieser Menge genau auf. Die Ableitung verschwindet dort.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Grenzkosten sind die Ableitung $C'(q)$ der Gesamtkosten, während
+
+$$
+A'(q) = -\dfrac{300}{q^{2}}+\dfrac{3}{100}
+$$
+
+die Änderungsrate der Stückkosten ist. Das sind verschiedene Größen: die eine verfolgt die Steigung von $C$, die andere die Steigung von $C/q$. $A'$ mit Grenzkosten gleichzusetzen ist falsch.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Eine verschwindende erste Ableitung bedeutet eine horizontale Tangente am Graphen von $A$. Wegen
+
+$$
+A'(100) = 0
+$$
+
+sind die Stückkosten bei $q=100$ lokal flach. Ob Minimum oder Maximum, sagt das allein noch nicht — aber lokale Flachheit ist genau das, was behauptet wird.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Die Gesamtkosten sind $C(q)=300+6q+\dfrac{3}{100}q^{2}$, daher spalten sich die Stückkosten zu
+
+$$A(q)=\dfrac{C(q)}{q}=\dfrac{300}{q}+6+\dfrac{3}{100}q$$
+
+Termweises Differenzieren liefert
+
+$$A'(q)=-\dfrac{300}{q^{2}}+\dfrac{3}{100}$$
+
+Bei der genannten Menge gilt
+
+$$A'(100)=-\dfrac{300}{10000}+\dfrac{3}{100}=0$$
+
+also sind die Stückkosten dort lokal flach. Grenzkosten sind $C'(q)$, eine andere Größe als die Stückkostenableitung $A'(q)$ — diese beiden zu verwechseln ist die Hauptfalle.
+================================================================================
+CASE MATH 11.07 answer_key [True, True, True, True, True] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $S'(x)=x\cdot e^{-x}\cdot (2-x)$.
+[1] $S'(2)=0$.
+[2] $S''(x)=e^{-x}\cdot (x^{2}-4x+2)$.
+[3] $S'(1)=e^{-1}$.
+[4] At $x=2$, the tangent to the graph is horizontal.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The response index is a product $S(x)=x^{2}\cdot e^{-x}$. Apply the product rule and factor $x\,e^{-x}$:
+
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+S(x) = x^{2} \cdot e^{-x}
+$$
+
+$$
+u(x) = x^{2}
+$$
+
+$$
+v(x) = e^{- x}
+$$
+
+$$
+u'(x) = 2 x
+$$
+
+$$
+v'(x) = - e^{- x}
+$$
+
+$$
+S'(x) = (2 x)\cdot(e^{- x}) + (x^{2})\cdot(- e^{- x})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
+$$
+S'(x) = 2x\,e^{-x}+x^{2}(-e^{-x})
+$$
+
+$$
+S'(x) = x\,e^{-x}(2-x)
+$$
+
+A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $x=2$ into the factored derivative:
+
+$$
+S'(2) = 2\cdot e^{-2}\cdot(2-2)
+$$
+
+$$
+S'(2) = 0
+$$
+
+The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\neq 0$. The derivative vanishes at that intensity, matching the claim.
+
+$$
+x = 2
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $S'(x)=x\,e^{-x}(2-x)$ again with the product rule. Expanding and collecting powers of $x$ produces
+
+$$
+S''(x) = e^{-x}(x^{2}-4x+2)
+$$
+
+Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form,
+
+$$
+S''(x) = e^{-x}\cdot (x^{2}-4x+2)
+$$
+
+$$
+S'(x) = x\,e^{-x}(2-x)
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Substitute $x=1$ into the first-derivative formula:
+
+$$
+S'(1) = 1\cdot e^{-1}\cdot(2-1)
+$$
+
+$$
+S'(1) = e^{-1}
+$$
+
+Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim.
+
+$$
+x = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → True
+
+A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
+
+$$
+S'(2) = 0
+$$
+
+so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope.
+
+$$
+x = 2
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- OVERVIEW EN ---
+The campaign response index is the exponential-polynomial product
+
+$$S(x)=x^{2}\cdot e^{-x}\qquad(x>0)$$
+
+Applying the product rule and factoring $x\,e^{-x}$ produces
+
+$$S'(x)=x\cdot e^{-x}\cdot(2-x)$$
+
+Hence $S'(2)=0$, so the tangent at $x=2$ is horizontal, while the same formula gives
+
+$$S'(1)=e^{-1}$$
+
+Differentiating once more and collecting powers of $x$ yields the second derivative
+
+$$S''(x)=e^{-x}\cdot(x^{2}-4x+2)$$
+
+Watch the factor $(2-x)$: it flips the sign of $S'$ across $x=2$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Response-Index ist das Produkt $S(x)=x^{2}\cdot e^{-x}$. Wende die Produktregel an und klammere $x\,e^{-x}$ aus:
+
+$$
+S(x) = x^{2} \cdot e^{-x}
+$$
+
+$$
+u(x) = x^{2},\qquad v(x) = e^{-x}
+$$
+
+$$
+u'(x) = 2x,\qquad v'(x) = -e^{-x}
+$$
+
+$$
+S'(x) = (2x)\cdot e^{-x} + x^{2}\cdot(-e^{-x})
+$$
+
+$$
+S'(x) = x\,e^{-x}(2-x)
+$$
+
+Eine Falle ist, das Kettenregel-Minus von $e^{-x}$ zu vergessen. Die faktorisierte Form stimmt genau.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $x=2$ in die faktorisierte Ableitung ein:
+
+$$
+S'(2) = 2\cdot e^{-2}\cdot(2-2)
+$$
+
+$$
+S'(2) = 0
+$$
+
+Der Faktor $(2-x)$ verschwindet, daher ist das ganze Produkt null, obwohl $e^{-2}\neq 0$. Die Ableitung verschwindet bei dieser Intensität.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere $S'(x)=x\,e^{-x}(2-x)$ erneut mit der Produktregel. Ausklappen und Potenzen von $x$ sammeln liefert
+
+$$
+S''(x) = e^{-x}(x^{2}-4x+2)
+$$
+
+Bleibe nicht bei einem unvereinfachten Drei-Faktor-Produkt stehen — der kompakte Polynomfaktor ist entscheidend.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Setze $x=1$ in die erste Ableitung ein:
+
+$$
+S'(1) = 1\cdot e^{-1}\cdot(2-1)
+$$
+
+$$
+S'(1) = e^{-1}
+$$
+
+Hier ist der Faktor $(2-x)$ gleich $1$, daher reduziert sich die Ableitung sauber auf $e^{-1}$.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Richtig
+
+Eine horizontale Tangente bedeutet genau Steigung null. Aus der Auswertung bei $x=2$ folgt
+
+$$
+S'(2) = 0
+$$
+
+also ist die Tangente dort horizontal. Verwechsle „horizontale Tangente“ nicht mit „horizontale Asymptote“ — hier geht es um eine lokal flache Steigung.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Der Kampagnen-Response-Index ist das Exponential-Polynom-Produkt
+
+$$S(x)=x^{2}\cdot e^{-x}\qquad(x>0)$$
+
+Produktregel und Ausklammern von $x\,e^{-x}$ liefern
+
+$$S'(x)=x\cdot e^{-x}\cdot(2-x)$$
+
+Daher $S'(2)=0$, also ist die Tangente bei $x=2$ horizontal, und dieselbe Formel gibt
+
+$$S'(1)=e^{-1}$$
+
+Nochmals differenzieren und Potenzen sammeln liefert die zweite Ableitung
+
+$$S''(x)=e^{-x}\cdot(x^{2}-4x+2)$$
+
+Achte auf den Faktor $(2-x)$: er dreht das Vorzeichen von $S'$ bei $x=2$ um.
+================================================================================
+CASE MATH 11.08 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $D'(a)=\dfrac{7}{2\sqrt{a+9}}$.
+[1] $D'(7)=\dfrac{7}{8}$.
+[2] $D''(a)=-\dfrac{7}{4}(a+9)^{-\frac{3}{2}}$.
+[3] Near $a=7$, increasing advertising by one unit raises expected demand by approximately $7$ units.
+[4] $D'(a)$ is smaller at $a=16$ than at $a=0$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Rewrite demand as $D(a)=7(a+9)^{\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $1$:
+
+$$
+D'(a) = 7\cdot\dfrac{1}{2}(a+9)^{-\frac{1}{2}}
+$$
+
+$$
+D'(a) = \dfrac{7}{2\sqrt{a+9}}
+$$
+
+A trap is forgetting the factor $\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim.
+
+$$
+D(a) = 7(a+9)^{\frac{1}{2}}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $a=7$, noting that $a+9=16$ and $\sqrt{16}=4$:
+
+$$
+D'(7) = \dfrac{7}{2\cdot 4}
+$$
+
+$$
+D'(7) = \dfrac{7}{8}
+$$
+
+Do not evaluate $D(7)=7\cdot 4=28$ when the claim asks for the derivative. The slope matches.
+
+$$
+a = 7
+$$
+
+$$
+a+9 = 16
+$$
+
+$$
+\sqrt{16} = 4
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $D'(a)=\dfrac{7}{2}(a+9)^{-\frac{1}{2}}$ once more:
+
+$$
+D''(a) = \dfrac{7}{2}\cdot\Bigl(-\dfrac{1}{2}\Bigr)(a+9)^{-\frac{3}{2}}
+$$
+
+$$
+D''(a) = -\dfrac{7}{4}(a+9)^{-\frac{3}{2}}
+$$
+
+The negative sign shows diminishing marginal returns. Matching the claimed second derivative,
+
+$$
+D'(a) = \dfrac{7}{2}(a+9)^{-\frac{1}{2}}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Near $a=7$ the model predicts an increase of about
+
+$$
+D'(7) = \dfrac{7}{8}
+$$
+
+units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+a = 7
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+Compare the derivative at the two advertising levels:
+
+$$
+D'(16) = \dfrac{7}{2\sqrt{25}} = \dfrac{7}{10}
+$$
+
+$$
+D'(0) = \dfrac{7}{2\sqrt{9}} = \dfrac{7}{6}
+$$
+
+Since $\dfrac{7}{10}<\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action.
+
+So the statement is True.
+--- OVERVIEW EN ---
+Expected demand follows the square-root advertising rule
+
+$$D(a)=7\sqrt{a+9}=7(a+9)^{\frac{1}{2}}$$
+
+Differentiating once and twice gives
+
+$$D'(a)=\dfrac{7}{2\sqrt{a+9}}\qquad D''(a)=-\dfrac{7}{4}(a+9)^{-\frac{3}{2}}$$
+
+At the named intensity,
+
+$$D'(7)=\dfrac{7}{8}$$
+
+so one extra advertising unit near $a=7$ raises demand by about $\dfrac{7}{8}$, not $7$. Comparing endpoints of the derivative shows
+
+$$D'(16)=\dfrac{7}{10}<D'(0)=\dfrac{7}{6}$$
+
+so marginal returns diminish as advertising grows.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Schreibe die Nachfrage als $D(a)=7(a+9)^{\frac{1}{2}}$ und wende die Kettenregel an; die innere Steigung ist $1$:
+
+$$
+D'(a) = 7\cdot\dfrac{1}{2}(a+9)^{-\frac{1}{2}}
+$$
+
+$$
+D'(a) = \dfrac{7}{2\sqrt{a+9}}
+$$
+
+Eine Falle ist, den Faktor $\dfrac{1}{2}$ aus der Wurzelpotenz zu vergessen. Die vereinfachte Formel stimmt.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $a=7$ ein; beachte $a+9=16$ und $\sqrt{16}=4$:
+
+$$
+D'(7) = \dfrac{7}{2\cdot 4}
+$$
+
+$$
+D'(7) = \dfrac{7}{8}
+$$
+
+Berechne nicht $D(7)=7\cdot 4=28$, wenn die Behauptung die Ableitung verlangt. Die Steigung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere $D'(a)=\dfrac{7}{2}(a+9)^{-\frac{1}{2}}$ noch einmal:
+
+$$
+D''(a) = \dfrac{7}{2}\cdot\Bigl(-\dfrac{1}{2}\Bigr)(a+9)^{-\frac{3}{2}}
+$$
+
+$$
+D''(a) = -\dfrac{7}{4}(a+9)^{-\frac{3}{2}}
+$$
+
+Das Minuszeichen zeigt abnehmende Grenzerträge. Die behauptete zweite Ableitung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Nahe $a=7$ sagt das Modell einen Zuwachs von etwa
+
+$$
+D'(7) = \dfrac{7}{8}
+$$
+
+Nachfrageeinheiten pro zusätzlicher Werbeeinheit voraus, nicht $7$. Den Koeffizienten $7$ in $D(a)$ mit dem Grenzertrag bei $a=7$ zu verwechseln überschätzt die Steigung stark.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Vergleiche die Ableitung bei den beiden Werbeniveaus:
+
+$$
+D'(16) = \dfrac{7}{2\sqrt{25}} = \dfrac{7}{10}
+$$
+
+$$
+D'(0) = \dfrac{7}{2\sqrt{9}} = \dfrac{7}{6}
+$$
+
+Wegen $\dfrac{7}{10}<\dfrac{7}{6}$ ist die Ableitung bei $a=16$ kleiner als bei $a=0$. Das sind abnehmende Erträge.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Die erwartete Nachfrage folgt der Wurzel-Werberegel
+
+$$D(a)=7\sqrt{a+9}=7(a+9)^{\frac{1}{2}}$$
+
+Ein- und zweifaches Differenzieren liefert
+
+$$D'(a)=\dfrac{7}{2\sqrt{a+9}}\qquad D''(a)=-\dfrac{7}{4}(a+9)^{-\frac{3}{2}}$$
+
+Bei der genannten Intensität gilt
+
+$$D'(7)=\dfrac{7}{8}$$
+
+also erhöht eine zusätzliche Werbeeinheit nahe $a=7$ die Nachfrage um etwa $\dfrac{7}{8}$, nicht um $7$. Der Endpunktvergleich zeigt
+
+$$D'(16)=\dfrac{7}{10}<D'(0)=\dfrac{7}{6}$$
+
+also nehmen die Grenzerträge mit wachsender Werbung ab.
+================================================================================
+CASE MATH 11.09 answer_key [True, True, True, True, False] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $R'(n)=\dfrac{17-9n}{\sqrt{2n+1}}$.
+[1] $R'(1)=\dfrac{8}{\sqrt{3}}$.
+[2] $R'(n)=-3\sqrt{2n+1}+\dfrac{20-3n}{\sqrt{2n+1}}$ before combining over one denominator.
+[3] $R'(n)=0$ at $n=\dfrac{17}{9}$.
+[4] $R(n)$ is increasing for every $0<n<2$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Revenue is the product $R(n)=(20-3n)\sqrt{2n+1}$. Apply the product rule, then combine over the common denominator $\sqrt{2n+1}$:
+
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+R(n) = (20-3n) \cdot \sqrt{2n+1}
+$$
+
+$$
+u(n) = (20-3n)
+$$
+
+$$
+v(n) = \sqrt{2n+1}
+$$
+
+$$
+R'(n) = u'(n)\,v(n) + u(n)\,v'(n)
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
+$$
+R'(n) = \dfrac{-3(2n+1)+(20-3n)}{\sqrt{2n+1}}
+$$
+
+$$
+R'(n) = \dfrac{17-9n}{\sqrt{2n+1}}
+$$
+
+The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula,
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $n=1$ into the combined derivative:
+
+$$
+R'(1) = \dfrac{17-9}{\sqrt{2+1}}
+$$
+
+$$
+R'(1) = \dfrac{8}{\sqrt{3}}
+$$
+
+Do not rationalise away from $\dfrac{8}{\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches.
+
+$$
+n = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Before clearing a common denominator, the product rule writes the two pieces separately: differentiate the price factor and the demand factor in turn,
+
+$$
+R'(n) = -3\sqrt{2n+1}+\dfrac{20-3n}{\sqrt{2n+1}}
+$$
+
+which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+A critical point solves $R'(n)=0$. With a positive denominator $\sqrt{2n+1}$, that forces the numerator to vanish:
+
+$$
+17-9n = 0
+$$
+
+$$
+n = \dfrac{17}{9}
+$$
+
+matching the claimed root. Do not set $17-9n=\sqrt{2n+1}$ by mistake. Comparing with the claim,
+
+$$
+R'(n) = 0
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+The derivative changes sign at the critical point
+
+$$
+n = \dfrac{17}{9}
+$$
+
+and $\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Revenue is the product of the two scenario rules
+
+$$R(n)=(20-3n)\sqrt{2n+1}$$
+
+The product rule first writes
+
+$$R'(n)=-3\sqrt{2n+1}+\dfrac{20-3n}{\sqrt{2n+1}}$$
+
+and combining over one denominator simplifies to
+
+$$R'(n)=\dfrac{17-9n}{\sqrt{2n+1}}$$
+
+Hence $R'(1)=\dfrac{8}{\sqrt{3}}$ and $R'(n)=0$ at $n=\dfrac{17}{9}$. Because $\dfrac{17}{9}<2$, the derivative changes sign inside $(0,2)$, so revenue is not increasing throughout that interval.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Erlös ist das Produkt $R(n)=(20-3n)\sqrt{2n+1}$. Wende die Produktregel an und fasse über den gemeinsamen Nenner $\sqrt{2n+1}$ zusammen:
+
+$$
+R(n) = (20-3n) \cdot \sqrt{2n+1}
+$$
+
+$$
+R'(n) = u'(n)\,v(n) + u(n)\,v'(n)
+$$
+
+$$
+R'(n) = \dfrac{-3(2n+1)+(20-3n)}{\sqrt{2n+1}}
+$$
+
+$$
+R'(n) = \dfrac{17-9n}{\sqrt{2n+1}}
+$$
+
+Die Zähleralgebra $-6n-3+20-3n=17-9n$ ist der heikle Schritt. Die vereinfachte Formel stimmt.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $n=1$ in die zusammengefasste Ableitung ein:
+
+$$
+R'(1) = \dfrac{17-9}{\sqrt{2+1}}
+$$
+
+$$
+R'(1) = \dfrac{8}{\sqrt{3}}
+$$
+
+Rationalisiere nicht von $\dfrac{8}{\sqrt{3}}$ weg, wenn nicht gefordert — die Behauptung behält diese Form. Der Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Bevor man einen gemeinsamen Nenner bildet, schreibt die Produktregel die beiden Stücke getrennt: Preis- und Nachfragefaktor ableiten,
+
+$$
+R'(n) = -3\sqrt{2n+1}+\dfrac{20-3n}{\sqrt{2n+1}}
+$$
+
+genau die in der Behauptung genannte Zwischenform. Unzusammengefasst zu lassen ist hier Absicht.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Eine kritische Stelle löst $R'(n)=0$. Bei positivem Nenner $\sqrt{2n+1}$ muss der Zähler verschwinden:
+
+$$
+17-9n = 0
+$$
+
+$$
+n = \dfrac{17}{9}
+$$
+
+das passt zur behaupteten Nullstelle. Setze nicht versehentlich $17-9n=\sqrt{2n+1}$.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die Ableitung wechselt das Vorzeichen an der kritischen Stelle
+
+$$
+n = \dfrac{17}{9}
+$$
+
+und $\dfrac{17}{9}<2$. Der Erlös steigt also auf einem Teil von $(0,2)$ und fällt auf dem Rest — er ist nicht auf dem ganzen Intervall steigend.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Erlös ist das Produkt der beiden Szenario-Regeln
+
+$$R(n)=(20-3n)\sqrt{2n+1}$$
+
+Die Produktregel schreibt zuerst
+
+$$R'(n)=-3\sqrt{2n+1}+\dfrac{20-3n}{\sqrt{2n+1}}$$
+
+und Zusammenfassen über einen Nenner vereinfacht zu
+
+$$R'(n)=\dfrac{17-9n}{\sqrt{2n+1}}$$
+
+Daher $R'(1)=\dfrac{8}{\sqrt{3}}$ und $R'(n)=0$ bei $n=\dfrac{17}{9}$. Wegen $\dfrac{17}{9}<2$ wechselt die Ableitung innerhalb von $(0,2)$ das Vorzeichen, also ist der Erlös dort nicht durchgängig steigend.
+================================================================================
+CASE MATH 11.10 answer_key [True, True, True, False, False] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $T'(n)=\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$.
+[1] $T'(1)=\dfrac{7}{2}$.
+[2] $T'(n)>0$ for every $n>0$.
+[3] $T'(n)=\dfrac{2n+8}{n+1}$ after cancelling a common factor incorrectly.
+[4] There exists some $n>0$ for which $T'(n)=0$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Maintenance time per effective unit is the quotient $T(n)=\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
+
+$$
+T(n) = \dfrac{2n^{2}+8n}{n+1}
+$$
+
+$$
+u(n) = 2n^{2}+8n
+$$
+
+$$
+v(n) = n+1
+$$
+
+$$
+u'(n) = 4 n + 8
+$$
+
+$$
+v'(n) = 1
+$$
+
+$$
+T'(n) = \dfrac{(4 n + 8)(n+1) - (2n^{2}+8n)(1)}{(n+1)^{2}}
+$$
+
+$$
+T'(n) = \dfrac{(4n+8)(n+1)-(2n^{2}+8n)\cdot 1}{(n+1)^{2}}
+$$
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}
+$$
+
+which matches the claimed formula.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $n=1$ into that derivative:
+
+$$
+T'(1) = \dfrac{2+4+8}{2^{2}}
+$$
+
+$$
+T'(1) = \dfrac{14}{4}
+$$
+
+$$
+T'(1) = \dfrac{7}{2}
+$$
+
+Do not evaluate $T(1)=\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+For $n>0$ the numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ is a sum of positive terms (discriminant $4-16<0$), and the denominator $(n+1)^{2}$ is positive. Hence
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
+$$
+
+for every $n>0$. A positive derivative means $T$ is strictly increasing.
+
+$$
+2n^{2}+4n+8 = 2(n^{2}+2n+4)
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Cancelling factors incorrectly would produce $\dfrac{2n+8}{n+1}$, but the true derivative after the quotient rule is
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}
+$$
+
+Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+T'(n) = \dfrac{2n+8}{n+1}
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → False
+
+For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and the denominator stays positive, so
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
+$$
+
+throughout. A strictly positive derivative never hits zero, so no such root exists and
+
+$$
+T'(n) = 0
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Maintenance hours are $H(n)=2n^{2}+8n$, and time per effective unit is the quotient
+
+$$T(n)=\dfrac{2n^{2}+8n}{n+1}$$
+
+The quotient rule simplifies to the single fraction
+
+$$T'(n)=\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+
+At $n=1$ one finds $T'(1)=\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ has discriminant $4-16<0$, so it stays positive for every $n$; together with the positive denominator this forces $T'(n)>0$ for all $n>0$, and in particular $T'$ never vanishes. Cancelling factors incorrectly would produce the false expression $\dfrac{2n+8}{n+1}$.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Die Wartungszeit pro effektiver Einheit ist der Quotient $T(n)=\dfrac{2n^{2}+8n}{n+1}$. Wende die Quotientenregel mit Zähler $u=2n^{2}+8n$ und Nenner $v=n+1$ an:
+
+$$
+u'(n) = 4n+8,\qquad v'(n) = 1
+$$
+
+$$
+T'(n) = \dfrac{(4n+8)(n+1)-(2n^{2}+8n)\cdot 1}{(n+1)^{2}}
+$$
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}
+$$
+
+das passt zur behaupteten Formel.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $n=1$ in diese Ableitung ein:
+
+$$
+T'(1) = \dfrac{2+4+8}{2^{2}}
+$$
+
+$$
+T'(1) = \dfrac{14}{4}
+$$
+
+$$
+T'(1) = \dfrac{7}{2}
+$$
+
+Berechne nicht $T(1)=\dfrac{10}{2}=5$, wenn die Behauptung die Steigung verlangt. Die Ableitung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Für $n>0$ ist der Zähler $2n^{2}+4n+8=2(n^{2}+2n+4)$ eine Summe positiver Terme (Diskriminante $4-16<0$), und der Nenner $(n+1)^{2}$ ist positiv. Daher
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
+$$
+
+für jedes $n>0$. Eine positive Ableitung bedeutet: $T$ ist streng steigend.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Falsches Kürzen würde $\dfrac{2n+8}{n+1}$ liefern, aber die echte Ableitung nach der Quotientenregel ist
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}
+$$
+
+Diese Ausdrücke sind nicht identisch — der falsche lässt sowohl die quadratische Zählerstruktur als auch den quadrierten Nenner weg.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Falsch
+
+Für $n>0$ verschwindet der Zähler $2n^{2}+4n+8$ nie (Diskriminante $4-16<0$), und der Nenner bleibt positiv, also
+
+$$
+T'(n) = \dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
+$$
+
+durchgängig. Eine streng positive Ableitung trifft nie null — es gibt keine solche Nullstelle.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Die Wartungsstunden sind $H(n)=2n^{2}+8n$, und die Zeit pro effektiver Einheit ist der Quotient
+
+$$T(n)=\dfrac{2n^{2}+8n}{n+1}$$
+
+Die Quotientenregel vereinfacht zu dem einen Bruch
+
+$$T'(n)=\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+
+Bei $n=1$ gilt $T'(1)=\dfrac{7}{2}$. Der Zähler $2n^{2}+4n+8=2(n^{2}+2n+4)$ hat Diskriminante $4-16<0$, bleibt also für jedes $n$ positiv; zusammen mit dem positiven Nenner erzwingt das $T'(n)>0$ für alle $n>0$, insbesondere verschwindet $T'$ nie. Falsches Kürzen würde den Ausdruck $\dfrac{2n+8}{n+1}$ erzeugen.
+================================================================================
+CASE MATH 11.11 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $U'(x)=\dfrac{40}{x+1}-1$.
+[1] $U'(3)=9$.
+[2] $U''(x)=-\dfrac{40}{(x+1)^{2}}$.
+[3] $U'(x)$ is undefined at $x=0$.
+[4] Near $x=3$, one extra hour of study changes utility by approximately $9$ utility units.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Differentiate the log utility $U(x)=40\ln(x+1)-x$ term by term. The chain rule on the logarithm contributes $\dfrac{40}{x+1}$, and the linear penalty contributes $-1$:
+
+$$
+U'(x) = \dfrac{40}{x+1}-1
+$$
+
+which matches the claimed first derivative. Do not write $\dfrac{40}{x}$ by forgetting the $+1$ shift.
+
+$$
+U(x) = 40\ln(x+1)-x
+$$
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute the named study time $x=3$ into the first derivative:
+
+$$
+U'(3) = \dfrac{40}{3+1}-1
+$$
+
+$$
+U'(3) = \dfrac{40}{4}-1
+$$
+
+$$
+U'(3) = 9
+$$
+
+A trap is stopping at $\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $U'(x)=40(x+1)^{-1}-1$ once more. The constant $-1$ vanishes, and the power rule on $(x+1)^{-1}$ produces
+
+$$
+U''(x) = -40(x+1)^{-2}
+$$
+
+$$
+U''(x) = -\dfrac{40}{(x+1)^{2}}
+$$
+
+which matches the claimed second derivative. The negative sign shows diminishing marginal utility.
+
+$$
+U'(x) = 40(x+1)^{-1}-1
+$$
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Extending the first-derivative formula to $x=0$ gives the ordinary finite value
+
+$$
+U'(0) = \dfrac{40}{1}-1
+$$
+
+$$
+U'(0) = 39
+$$
+
+so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect.
+
+$$
+x = 0
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+The first derivative measures the instantaneous change in utility per extra study hour. At $x=3$ that rate is
+
+$$
+U'(3) = 9
+$$
+
+so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation.
+
+$$
+x = 3
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- OVERVIEW EN ---
+A student models utility from study time by the log-linear rule
+
+$$U(x)=40\cdot\ln(x+1)-x\qquad(x>0)$$
+
+Differentiating the logarithm and the linear penalty once gives
+
+$$U'(x)=\dfrac{40}{x+1}-1$$
+
+and differentiating again produces the always-negative second derivative
+
+$$U''(x)=-\dfrac{40}{(x+1)^{2}}$$
+
+At the named study level one finds $U'(3)=9$, so one extra hour near $x=3$ changes utility by about $9$ units. The first derivative is defined at $x=0$ as well, where $U'(0)=39$ — the logarithm is of $x+1$, not of $x$.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Differenziere den Log-Nutzen $U(x)=40\ln(x+1)-x$ termweise. Die Kettenregel am Logarithmus liefert $\dfrac{40}{x+1}$, die lineare Strafe $-1$:
+
+$$
+U'(x) = \dfrac{40}{x+1}-1
+$$
+
+das passt zur behaupteten ersten Ableitung. Schreibe nicht $\dfrac{40}{x}$ und vergesse die Verschiebung $+1$.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze die genannte Lernzeit $x=3$ in die erste Ableitung ein:
+
+$$
+U'(3) = \dfrac{40}{3+1}-1
+$$
+
+$$
+U'(3) = \dfrac{40}{4}-1
+$$
+
+$$
+U'(3) = 9
+$$
+
+Eine Falle wäre, bei $\dfrac{40}{4}=10$ stehenzubleiben und das $-1$ zu vergessen. Die volle Rechnung stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere $U'(x)=40(x+1)^{-1}-1$ noch einmal. Die Konstante $-1$ verschwindet, und die Potenzregel an $(x+1)^{-1}$ liefert
+
+$$
+U''(x) = -40(x+1)^{-2}
+$$
+
+$$
+U''(x) = -\dfrac{40}{(x+1)^{2}}
+$$
+
+das passt zur behaupteten zweiten Ableitung. Das Minuszeichen zeigt abnehmenden Grenznutzen.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Die erste Ableitung bei $x=0$ ergibt den endlichen Wert
+
+$$
+U'(0) = \dfrac{40}{1}-1
+$$
+
+$$
+U'(0) = 39
+$$
+
+also ist die Ableitung bei $x=0$ definiert. Das Argument des Logarithmus ist $x+1$, bei $x=0$ gleich $1$ — keine Division durch null.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Die erste Ableitung misst die momentane Nutzenänderung pro zusätzlicher Lernstunde. Bei $x=3$ beträgt diese Rate
+
+$$
+U'(3) = 9
+$$
+
+also ändert eine zusätzliche Stunde nahe diesem Niveau den Nutzen um ungefähr $9$ Nutzeneinheiten.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Ein Student modelliert den Nutzen aus Lernzeit durch die log-lineare Regel
+
+$$U(x)=40\cdot\ln(x+1)-x\qquad(x>0)$$
+
+Differenzieren von Logarithmus und linearer Strafe liefert
+
+$$U'(x)=\dfrac{40}{x+1}-1$$
+
+und nochmaliges Differenzieren die stets negative zweite Ableitung
+
+$$U''(x)=-\dfrac{40}{(x+1)^{2}}$$
+
+Beim genannten Lernniveau gilt $U'(3)=9$, also ändert eine zusätzliche Stunde nahe $x=3$ den Nutzen um etwa $9$ Einheiten. Die erste Ableitung ist auch bei $x=0$ definiert, dort $U'(0)=39$.
+================================================================================
+CASE MATH 11.12 answer_key [True, True, True, True, False] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $c'(N)=-500N^{-\frac{3}{2}}$.
+[1] $c'(4)=-\dfrac{125}{2}$.
+[2] The derivative is negative for all $N>0$.
+[3] Near $N=4$, one extra unit of cumulative output lowers unit cost by approximately $\dfrac{125}{2}$ euros.
+[4] Doubling $N$ from $4$ to $8$ doubles the magnitude of the derivative.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Apply the power rule to the learning-curve cost $c(N)=1000N^{-\frac{1}{2}}$, multiplying by the exponent $-\tfrac{1}{2}$ and reducing the power:
+
+$$
+c'(N) = 1000\cdot\Bigl(-\dfrac{1}{2}\Bigr)N^{-\frac{3}{2}}
+$$
+
+$$
+c'(N) = -500N^{-\frac{3}{2}}
+$$
+
+which matches the claimed formula. Keep the minus sign — learning curves fall.
+
+$$
+c(N) = 1000N^{-\frac{1}{2}}
+$$
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $N=4$, using $4^{-\frac{3}{2}}=\dfrac{1}{8}$:
+
+$$
+c'(4) = -500\cdot\dfrac{1}{8}
+$$
+
+$$
+c'(4) = -\dfrac{125}{2}
+$$
+
+A trap is computing $4^{-\frac{1}{2}}=\tfrac{1}{2}$ instead of $4^{-\frac{3}{2}}=\tfrac{1}{8}$. The correct value matches the claim.
+
+$$
+N = 4
+$$
+
+$$
+4^{-\frac{3}{2}} = \dfrac{1}{8}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+For every $N>0$ the power $N^{-\frac{3}{2}}$ is positive, while the leading coefficient $-500$ is negative. Therefore
+
+$$
+c'(N)<0
+$$
+
+throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+The derivative $c'(N)$ measures euros of unit cost gained (or lost) per extra unit of cumulative output. At $N=4$ that rate is
+
+$$
+c'(4) = -\dfrac{125}{2}
+$$
+
+so one extra unit lowers unit cost by approximately $\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction.
+
+$$
+N = 4
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+Compare magnitudes at the two cumulative outputs:
+
+$$
+\dfrac{|c'(8)|}{|c'(4)|} = \dfrac{8^{-\frac{3}{2}}}{4^{-\frac{3}{2}}}
+$$
+
+$$
+\dfrac{|c'(8)|}{|c'(4)|} = \dfrac{1}{2\sqrt{2}}\neq 2
+$$
+
+Because $c'$ scales like $N^{-\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\frac{3}{2}}$, not by $2$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Unit processing cost follows the learning curve
+
+$$c(N)=1000N^{-\frac{1}{2}}\qquad(N>0)$$
+
+The power rule gives
+
+$$c'(N)=-500N^{-\frac{3}{2}}$$
+
+which is negative for every $N>0$. At the named cumulative output,
+
+$$c'(4)=-500\cdot 4^{-\frac{3}{2}}=-\dfrac{125}{2}$$
+
+so one extra unit near $N=4$ lowers unit cost by about $\dfrac{125}{2}$ euros. Comparing magnitudes shows
+
+$$\dfrac{|c'(8)|}{|c'(4)|}=\dfrac{1}{2\sqrt{2}}\neq 2$$
+
+so doubling cumulative output does not double the magnitude of the derivative.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Wende die Potenzregel auf die Lernkurven-Kosten $c(N)=1000N^{-\frac{1}{2}}$ an: multipliziere mit dem Exponenten $-\tfrac{1}{2}$ und senke die Potenz:
+
+$$
+c'(N) = 1000\cdot\Bigl(-\dfrac{1}{2}\Bigr)N^{-\frac{3}{2}}
+$$
+
+$$
+c'(N) = -500N^{-\frac{3}{2}}
+$$
+
+das passt zur behaupteten Formel. Behalte das Minus — Lernkurven fallen.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $N=4$ ein und nutze $4^{-\frac{3}{2}}=\dfrac{1}{8}$:
+
+$$
+c'(4) = -500\cdot\dfrac{1}{8}
+$$
+
+$$
+c'(4) = -\dfrac{125}{2}
+$$
+
+Eine Falle wäre $4^{-\frac{1}{2}}=\tfrac{1}{2}$ statt $4^{-\frac{3}{2}}=\tfrac{1}{8}$. Der korrekte Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Für jedes $N>0$ ist die Potenz $N^{-\frac{3}{2}}$ positiv, der Leitkoeffizient $-500$ negativ. Daher
+
+$$
+c'(N)<0
+$$
+
+durchgängig im Definitionsbereich. Eine negative Ableitung bedeutet: die Stückkosten fallen weiter, wenn der kumulierte Output steigt.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Die Ableitung $c'(N)$ misst Euro Stückkosten pro zusätzlicher Einheit kumulierten Outputs. Bei $N=4$ beträgt diese Rate
+
+$$
+c'(4) = -\dfrac{125}{2}
+$$
+
+also senkt eine zusätzliche Einheit die Stückkosten um ungefähr $\dfrac{125}{2}$ Euro. Der Betrag der negativen Ableitung ist die Größe der Verringerung.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Vergleiche die Beträge bei den beiden kumulierten Outputs:
+
+$$
+\dfrac{|c'(8)|}{|c'(4)|} = \dfrac{8^{-\frac{3}{2}}}{4^{-\frac{3}{2}}}
+$$
+
+$$
+\dfrac{|c'(8)|}{|c'(4)|} = \dfrac{1}{2\sqrt{2}}\neq 2
+$$
+
+Weil $c'$ wie $N^{-\frac{3}{2}}$ skaliert, multipliziert eine Verdopplung von $N$ den Betrag mit $2^{-\frac{3}{2}}$, nicht mit $2$.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Die Stückverarbeitungskosten folgen der Lernkurve
+
+$$c(N)=1000N^{-\frac{1}{2}}\qquad(N>0)$$
+
+Die Potenzregel liefert
+
+$$c'(N)=-500N^{-\frac{3}{2}}$$
+
+die für jedes $N>0$ negativ ist. Beim genannten kumulierten Output gilt
+
+$$c'(4)=-500\cdot 4^{-\frac{3}{2}}=-\dfrac{125}{2}$$
+
+also senkt eine zusätzliche Einheit nahe $N=4$ die Stückkosten um etwa $\dfrac{125}{2}$ Euro. Der Betragsvergleich zeigt
+
+$$\dfrac{|c'(8)|}{|c'(4)|}=\dfrac{1}{2\sqrt{2}}\neq 2$$
+
+— eine Verdopplung des kumulierten Outputs verdoppelt den Betrag der Ableitung nicht.
+================================================================================
+CASE MATH 11.13 answer_key [True, True, True, True, False] overview_short True
+--- STATEMENTS EN ---
+[0] The marginal revenue is $R'(q)=50-2q$.
+[1] $R'(20)=10$.
+[2] $R(20)=600$.
+[3] The tangent line at $q=20$ is $y=600+10(q-20)$.
+[4] At $q=20$, the tangent line has negative slope.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Marginal revenue is the derivative of the quadratic revenue rule $R(q)=50q-q^{2}$. Differentiating term by term gives
+
+$$
+R'(q) = 50-2q
+$$
+
+which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$.
+
+$$
+R(q) = 50q-q^{2}
+$$
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute the named output $q=20$ into marginal revenue:
+
+$$
+R'(20) = 50-2\cdot 20
+$$
+
+$$
+R'(20) = 50-40
+$$
+
+$$
+50 - 40 = 10
+$$
+
+$$
+R'(20) = 10 = 10
+$$
+
+$$
+R'(20) = 10
+$$
+
+A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Evaluate the revenue function itself at $q=20$:
+
+$$
+R(20) = 50\cdot 20-20^{2}
+$$
+
+$$
+R(20) = 1000-400
+$$
+
+$$
+1000 - 400 = 600
+$$
+
+$$
+R(20) = 600 = 600
+$$
+
+$$
+R(20) = 600
+$$
+
+This is the height on the curve, not the slope. The height matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+With the point $(20,600)$ and slope $R'(20)=10$, point-slope form rearranges as
+
+$$
+y-600 = 10(q-20)
+$$
+
+$$
+y = 600+10(q-20)
+$$
+
+which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation.
+
+$$
+q = 20
+$$
+
+$$
+R'(20) = 10
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+The slope of the tangent at $q=20$ is the derivative value
+
+$$
+R'(20) = 10>0
+$$
+
+so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+q = 20
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Daily revenue is modelled by the concave quadratic
+
+$$R(q)=50q-q^{2}$$
+
+Differentiating term by term supplies marginal revenue
+
+$$R'(q)=50-2q$$
+
+At the named output one evaluates both the slope and the height on the curve:
+
+$$R'(20)=10\qquad R(20)=600$$
+
+Point-slope form then assembles the tangent line
+
+$$y=600+10(q-20)$$
+
+In particular the tangent slope at $q=20$ is the positive number $10$, not a negative slope — the revenue peak is at $q=25$, so $q=20$ still lies on the rising side.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Grenzerlös ist die Ableitung der quadratischen Erlösregel $R(q)=50q-q^{2}$. Termweises Differenzieren liefert
+
+$$
+R'(q) = 50-2q
+$$
+
+das passt zur behaupteten Formel. Schreibe nicht nur $-2q$ und lasse die $50$ weg.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze die genannte Menge $q=20$ in den Grenzerlös ein:
+
+$$
+R'(20) = 50-2\cdot 20
+$$
+
+$$
+R'(20) = 50-40
+$$
+
+$$
+R'(20) = 10
+$$
+
+Eine Falle wäre $50-20=30$ ohne den Faktor $2$ bei $q$. Die korrekte Steigung ist $10$.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Werte die Erlösfunktion selbst bei $q=20$ aus:
+
+$$
+R(20) = 50\cdot 20-20^{2}
+$$
+
+$$
+R(20) = 1000-400
+$$
+
+$$
+R(20) = 600
+$$
+
+Das ist die Höhe auf der Kurve, nicht die Steigung. Die Höhe stimmt.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Mit dem Punkt $(20,600)$ und der Steigung $R'(20)=10$ liefert die Punkt-Steigungs-Form
+
+$$
+y-600 = 10(q-20)
+$$
+
+$$
+y = 600+10(q-20)
+$$
+
+die behauptete Tangente. $600$ durch $R'(20)$ zu ersetzen würde die Gleichung zerstören.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die Steigung der Tangente bei $q=20$ ist der Ableitungswert
+
+$$
+R'(20) = 10>0
+$$
+
+also steigt die Tangente von links nach rechts, sie fällt nicht. Der Erlös nimmt bei $q=20$ noch zu, weil das Maximum $R'(q)=0$ erst später bei $q=25$ liegt.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Tageserlös folgt der konkaven Quadratfunktion
+
+$$R(q)=50q-q^{2}$$
+
+Termweises Differenzieren liefert den Grenzerlös
+
+$$R'(q)=50-2q$$
+
+Bei der genannten Menge gilt Steigung und Höhe
+
+$$R'(20)=10\qquad R(20)=600$$
+
+Punkt-Steigungs-Form baut die Tangente
+
+$$y=600+10(q-20)$$
+
+Insbesondere ist die Tangentensteigung bei $q=20$ die positive Zahl $10$ — das Erlösmaximum liegt bei $q=25$, daher liegt $q=20$ noch auf der steigenden Seite.
+================================================================================
+CASE MATH 11.14 answer_key [True, True, True, True, False] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $G'(x)=30x(3x^{2}+4)^{4}$.
+[1] $G'(1)=72030$.
+[2] $G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$.
+[3] $G''(0)=7680$.
+[4] $G'(0)=30$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
+
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+G(x) = (3x^{2}+4)^{5}
+$$
+
+$$
+\text{outer: }w^{5}\quad\text{with }w = 3x^{2}+4
+$$
+
+$$
+\dfrac{d}{dx}(3x^{2}+4) = 6 x
+$$
+
+$$
+G'(x) = 5(3x^{2}+4)^{4} \cdot (6 x)
+$$
+
+$$
+G'(x) = 5(3x^{2}+4)^{4}\cdot 6x
+$$
+
+$$
+G'(x) = 30x(3x^{2}+4)^{4}
+$$
+
+matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim,
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+At $x=1$ one has $3x^{2}+4=7$ and $7^{4}=2401$, so
+
+$$
+G'(1) = 30\cdot 1\cdot 7^{4}
+$$
+
+$$
+G'(1) = 30\cdot 2401
+$$
+
+$$
+30\times 2401 = 72030
+$$
+
+$$
+G'(1) = 72030
+$$
+
+Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $G'(x)=30x(3x^{2}+4)^{4}$ again with the product rule, then factor the common power $(3x^{2}+4)^{3}$:
+
+$$
+G''(x) = 30(3x^{2}+4)^{3}(27x^{2}+4)
+$$
+
+The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative,
+
+$$
+G'(x) = 30x(3x^{2}+4)^{4}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Substitute $x=0$ into the second-derivative formula:
+
+$$
+G''(0) = 30\cdot 4^{3}\cdot 4
+$$
+
+$$
+G''(0) = 30\cdot 64\cdot 4
+$$
+
+$$
+30\times 64 = 1920
+$$
+
+$$
+1920\times 4 = 7680
+$$
+
+$$
+G''(0) = 7680
+$$
+
+Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+The first derivative carries an explicit factor of $x$:
+
+$$
+G'(0) = 30\cdot 0\cdot 4^{4}
+$$
+
+$$
+G'(0) = 0
+$$
+
+not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+G'(0) = 30
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+The machine reliability score is the nested fifth-power composition
+
+$$G(x)=(3x^{2}+4)^{5}\qquad(x\geq 0)$$
+
+The chain rule multiplies the outer power by the inner derivative $6x$ and simplifies to
+
+$$G'(x)=30x(3x^{2}+4)^{4}$$
+
+so $G'(1)=30\cdot 7^{4}=72030$ while $G'(0)=0$. Differentiating again and factoring the common power yields
+
+$$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
+
+and therefore $G''(0)=30\cdot 4^{3}\cdot 4=7680$. The factor of $x$ in $G'$ is easy to miss when evaluating at the origin.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Zuverlässigkeitswert ist die verschachtelte fünfte Potenz $G(x)=(3x^{2}+4)^{5}$. Die Kettenregel multipliziert die äußere Potenz mit der inneren Ableitung $6x$:
+
+$$
+G(x) = (3x^{2}+4)^{5}
+$$
+
+$$
+G'(x) = 5(3x^{2}+4)^{4}\cdot 6x
+$$
+
+$$
+G'(x) = 30x(3x^{2}+4)^{4}
+$$
+
+das passt zur behaupteten Formel. Die innere $6x$ zu vergessen ist die klassische Kettenregel-Falle.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Bei $x=1$ gilt $3x^{2}+4=7$ und $7^{4}=2401$, also
+
+$$
+G'(1) = 30\cdot 1\cdot 7^{4}
+$$
+
+$$
+G'(1) = 30\cdot 2401
+$$
+
+$$
+G'(1) = 72030
+$$
+
+Berechne nicht versehentlich $7^{5}$ — die äußere Potenz ist bereits auf $4$ abgesenkt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere $G'(x)=30x(3x^{2}+4)^{4}$ erneut mit der Produktregel und klammere die gemeinsame Potenz $(3x^{2}+4)^{3}$ aus:
+
+$$
+G''(x) = 30(3x^{2}+4)^{3}(27x^{2}+4)
+$$
+
+Der Faktor $27x^{2}+4$ entsteht aus dem Zusammenfassen der beiden Produktregel-Stücke.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Setze $x=0$ in die zweite Ableitung ein:
+
+$$
+G''(0) = 30\cdot 4^{3}\cdot 4
+$$
+
+$$
+G''(0) = 30\cdot 64\cdot 4
+$$
+
+$$
+G''(0) = 7680
+$$
+
+Hier ist $3(0)^{2}+4=4$ und $27(0)^{2}+4=4$.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die erste Ableitung trägt einen expliziten Faktor $x$:
+
+$$
+G'(0) = 30\cdot 0\cdot 4^{4}
+$$
+
+$$
+G'(0) = 0
+$$
+
+nicht $30$. Eine Falle ist, den Leitkoeffizienten $30$ abzulesen und das verschwindende $x$ zu ignorieren.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Maschinen-Zuverlässigkeitswert ist die verschachtelte fünfte Potenz
+
+$$G(x)=(3x^{2}+4)^{5}\qquad(x\geq 0)$$
+
+Die Kettenregel multipliziert die äußere Potenz mit der inneren Ableitung $6x$ und vereinfacht zu
+
+$$G'(x)=30x(3x^{2}+4)^{4}$$
+
+also $G'(1)=30\cdot 7^{4}=72030$, während $G'(0)=0$. Nochmaliges Differenzieren und Ausklammern liefert
+
+$$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
+
+und daher $G''(0)=30\cdot 4^{3}\cdot 4=7680$. Der Faktor $x$ in $G'$ ist am Ursprung leicht zu übersehen.
+================================================================================
+CASE MATH 11.15 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] The marginal cost is $C'(q)=12q^{2}-36q+40$.
+[1] The second derivative is $C''(q)=24q-36$.
+[2] $C''\left(\dfrac{3}{2}\right)=0$.
+[3] $C''(1)$ is positive.
+[4] $C''(2)$ is positive.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Marginal cost is the first derivative of the cubic cost schedule. Differentiating term by term gives
+
+$$
+C'(q) = 12q^{2}-36q+40
+$$
+
+which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Differentiate the marginal-cost polynomial once more:
+
+$$
+C''(q) = 24q-36
+$$
+
+matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim,
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute $q=\dfrac{3}{2}$ into the second derivative:
+
+$$
+C''\!\left(\dfrac{3}{2}\right) = 24\cdot\dfrac{3}{2}-36
+$$
+
+$$
+24\cdot\dfrac{3}{2}-36 = 36-36 = 0
+$$
+
+$$
+36 - 36 = 0
+$$
+
+so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Evaluate the second derivative at $q=1$:
+
+$$
+C''(1) = 24-36
+$$
+
+$$
+24 - 36 = -12
+$$
+
+$$
+C''(1) = -12 = -12
+$$
+
+$$
+C''(1) = -12
+$$
+
+which is negative rather than positive. The claim's sign is wrong — just left of $q=\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+Evaluate the second derivative at $q=2$:
+
+$$
+C''(2) = 48-36
+$$
+
+$$
+48 - 36 = 12
+$$
+
+$$
+C''(2) = 12 = 12
+$$
+
+$$
+C''(2) = 12>0
+$$
+
+so the second derivative is positive there. Just right of the zero at $q=\tfrac{3}{2}$, curvature has flipped to concave up.
+
+So the statement is True.
+--- OVERVIEW EN ---
+Total delivery cost is the cubic schedule
+
+$$C(q)=4q^{3}-18q^{2}+40q+100$$
+
+Differentiating once and twice produces the marginal cost and its rate of change:
+
+$$C'(q)=12q^{2}-36q+40\qquad C''(q)=24q-36$$
+
+Evaluating the second derivative at the named points yields the sign chart values
+
+$$C''\!\left(\dfrac{3}{2}\right)=0\qquad C''(1)=-12<0\qquad C''(2)=12>0$$
+
+so curvature changes from negative to positive across $q=\dfrac{3}{2}$. That is an inflection candidate, not automatically a cost minimum.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Grenzkosten sind die erste Ableitung des kubischen Kostenplans. Termweises Differenzieren liefert
+
+$$
+C'(q) = 12q^{2}-36q+40
+$$
+
+genau die behauptete Grenzkostenformel. Die Konstante $100$ verschwindet, wie Konstanten beim Differenzieren stets.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Differenziere das Grenzkostenpolynom noch einmal:
+
+$$
+C''(q) = 24q-36
+$$
+
+das passt zur behaupteten zweiten Ableitung. Sie misst, wie schnell sich die Grenzkosten selbst ändern.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze $q=\dfrac{3}{2}$ in die zweite Ableitung ein:
+
+$$
+C''\!\left(\dfrac{3}{2}\right) = 24\cdot\dfrac{3}{2}-36
+$$
+
+$$
+C''\!\left(\dfrac{3}{2}\right) = 36-36 = 0
+$$
+
+also verschwindet die zweite Ableitung dort. Das ist der natürliche Kandidat für einen Wendepunkt von $C$.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Werte die zweite Ableitung bei $q=1$ aus:
+
+$$
+C''(1) = 24-36
+$$
+
+$$
+C''(1) = -12
+$$
+
+das ist negativ, nicht positiv. Links von $q=\tfrac{3}{2}$ ist die Kostenkurve noch konkav nach unten.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Werte die zweite Ableitung bei $q=2$ aus:
+
+$$
+C''(2) = 48-36
+$$
+
+$$
+C''(2) = 12>0
+$$
+
+also ist die zweite Ableitung dort positiv. Rechts von der Nullstelle bei $q=\tfrac{3}{2}$ hat die Krümmung nach oben gewechselt.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Die gesamten Lieferkosten folgen dem kubischen Plan
+
+$$C(q)=4q^{3}-18q^{2}+40q+100$$
+
+Ein- und zweifaches Differenzieren liefert Grenzkosten und deren Änderungsrate:
+
+$$C'(q)=12q^{2}-36q+40\qquad C''(q)=24q-36$$
+
+An den genannten Stellen gilt
+
+$$C''\!\left(\dfrac{3}{2}\right)=0\qquad C''(1)=-12<0\qquad C''(2)=12>0$$
+
+also wechselt die Krümmung von negativ zu positiv bei $q=\dfrac{3}{2}$. Das ist ein Wendepunkt-Kandidat, nicht automatisch ein Kostenminimum.
+================================================================================
+CASE MATH 11.16 answer_key [True, True, True, True, True] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $K'(t)=-\dfrac{3}{(t+1)^{2}}$.
+[1] $K'(2)=-\dfrac{1}{3}$.
+[2] The index is decreasing for all $t>0$.
+[3] At $t=2$, one extra hour of training changes the index by approximately $-\dfrac{1}{3}$.
+[4] $K''(t)=\dfrac{6}{(t+1)^{3}}$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The complaint index is the quotient $K(t)=\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
+
+$$
+K(t) = \dfrac{t+4}{t+1}
+$$
+
+$$
+u(t) = t+4
+$$
+
+$$
+v(t) = t+1
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = 1
+$$
+
+$$
+K'(t) = \dfrac{(1)(t+1) - (t+4)(1)}{(t+1)^{2}}
+$$
+
+$$
+K'(t) = \dfrac{(t+1)-(t+4)}{(t+1)^{2}}
+$$
+
+$$
+K'(t) = -\dfrac{3}{(t+1)^{2}}
+$$
+
+The numerator difference $1-4=-3$ is the whole story.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute the named training time $t=2$:
+
+$$
+K'(2) = -\dfrac{3}{(2+1)^{2}}
+$$
+
+$$
+K'(2) = -\dfrac{3}{9}
+$$
+
+$$
+K'(2) = -\dfrac{1}{3}
+$$
+
+Keep the minus sign — more training lowers the complaint index. The computed value matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+For every $t>0$ the numerator factor $-3$ is negative and the denominator $(t+1)^{2}$ is positive, so
+
+$$
+K'(t)<0
+$$
+
+throughout. A negative derivative means the index is strictly decreasing in training time.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+The derivative measures the instantaneous change in the index per extra training hour. At $t=2$ that rate is
+
+$$
+K'(2) = -\dfrac{1}{3}
+$$
+
+so one extra hour changes the index by approximately $-\dfrac{1}{3}$. The signed rate is exactly what the claim reports.
+
+$$
+t = 2
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → True
+
+Differentiate $K'(t)=-3(t+1)^{-2}$ once more:
+
+$$
+K''(t) = (-3)\cdot(-2)(t+1)^{-3}
+$$
+
+$$
+K''(t) = \dfrac{6}{(t+1)^{3}}
+$$
+
+matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim,
+
+$$
+K'(t) = -3(t+1)^{-2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- OVERVIEW EN ---
+The complaint index is the simple linear-over-linear quotient
+
+$$K(t)=\dfrac{t+4}{t+1}\qquad(t>0)$$
+
+The quotient rule simplifies at once to
+
+$$K'(t)=-\dfrac{3}{(t+1)^{2}}$$
+
+which is negative for every $t>0$, so the index is strictly decreasing in training time. At $t=2$ one finds
+
+$$K'(2)=-\dfrac{1}{3}$$
+
+Differentiating once more yields the positive second derivative
+
+$$K''(t)=\dfrac{6}{(t+1)^{3}}$$
+
+so the decrease becomes less steep as training accumulates.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Beschwerdeindex ist der Quotient $K(t)=\dfrac{t+4}{t+1}$. Die Quotientenregel vereinfacht sofort zu
+
+$$
+K'(t) = \dfrac{(t+1)-(t+4)}{(t+1)^{2}}
+$$
+
+$$
+K'(t) = -\dfrac{3}{(t+1)^{2}}
+$$
+
+Die Zählerdifferenz $1-4=-3$ ist die ganze Geschichte.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze die genannte Trainingszeit $t=2$ ein:
+
+$$
+K'(2) = -\dfrac{3}{(2+1)^{2}}
+$$
+
+$$
+K'(2) = -\dfrac{3}{9}
+$$
+
+$$
+K'(2) = -\dfrac{1}{3}
+$$
+
+Behalte das Minus — mehr Training senkt den Beschwerdeindex.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Für jedes $t>0$ ist der Zählerfaktor $-3$ negativ und der Nenner $(t+1)^{2}$ positiv, also
+
+$$
+K'(t)<0
+$$
+
+durchgängig. Eine negative Ableitung bedeutet: der Index fällt streng in der Trainingszeit.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Die Ableitung misst die momentane Indexänderung pro zusätzlicher Trainingsstunde. Bei $t=2$ beträgt diese Rate
+
+$$
+K'(2) = -\dfrac{1}{3}
+$$
+
+also ändert eine zusätzliche Stunde den Index um ungefähr $-\dfrac{1}{3}$.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Richtig
+
+Differenziere $K'(t)=-3(t+1)^{-2}$ noch einmal:
+
+$$
+K''(t) = (-3)\cdot(-2)(t+1)^{-3}
+$$
+
+$$
+K''(t) = \dfrac{6}{(t+1)^{3}}
+$$
+
+das passt zur behaupteten zweiten Ableitung. Das positive Vorzeichen bedeutet: die Abnahme von $K$ wird mit wachsendem $t$ flacher.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Der Beschwerdeindex ist der einfache linear-über-linear-Quotient
+
+$$K(t)=\dfrac{t+4}{t+1}\qquad(t>0)$$
+
+Die Quotientenregel vereinfacht sofort zu
+
+$$K'(t)=-\dfrac{3}{(t+1)^{2}}$$
+
+die für jedes $t>0$ negativ ist, also fällt der Index streng in der Trainingszeit. Bei $t=2$ gilt
+
+$$K'(2)=-\dfrac{1}{3}$$
+
+Nochmals differenzieren liefert die positive zweite Ableitung
+
+$$K''(t)=\dfrac{6}{(t+1)^{3}}$$
+
+— die Abnahme wird mit mehr Training flacher.
+================================================================================
+CASE MATH 11.17 answer_key [True, True, True, True, True] overview_short True
+--- STATEMENTS EN ---
+[0] The derivative is $S'(x)=8(2x+5)^{3}$.
+[1] $S'(0)=1000$.
+[2] $S''(x)=48(2x+5)^{2}$.
+[3] $S''(0)=1200$.
+[4] $S'''(x)=192(2x+5)$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
+
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+S(x) = (2x+5)^{4}
+$$
+
+$$
+\text{outer: }w^{4}\quad\text{with }w = 2x+5
+$$
+
+$$
+\dfrac{d}{dx}(2x+5) = 2
+$$
+
+$$
+S'(x) = 4(2x+5)^{3} \cdot (2)
+$$
+
+$$
+S'(x) = 4(2x+5)^{3}\cdot 2
+$$
+
+$$
+S'(x) = 8(2x+5)^{3}
+$$
+
+matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim,
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $x=0$, using $2\cdot 0+5=5$:
+
+$$
+S'(0) = 8\cdot 5^{3}
+$$
+
+$$
+S'(0) = 8\cdot 125
+$$
+
+$$
+8\times 125 = 1000
+$$
+
+$$
+S'(0) = 1000
+$$
+
+Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $S'(x)=8(2x+5)^{3}$ again, again multiplying by the inner slope $2$:
+
+$$
+S''(x) = 8\cdot 3(2x+5)^{2}\cdot 2
+$$
+
+$$
+S''(x) = 48(2x+5)^{2}
+$$
+
+matching the claimed second derivative. The pattern of coefficients $8\to 48$ is consistent with $4\cdot 3\cdot 2^{2}$.
+
+$$
+S'(x) = 8(2x+5)^{3}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Substitute $x=0$ into the second derivative:
+
+$$
+S''(0) = 48\cdot 5^{2}
+$$
+
+$$
+S''(0) = 48\cdot 25
+$$
+
+$$
+48\times 25 = 1200
+$$
+
+$$
+S''(0) = 1200
+$$
+
+The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim,
+
+So the statement is True.
+--- letter 4 ---
+**E.** → True
+
+Differentiate $S''(x)=48(2x+5)^{2}$ once more:
+
+$$
+S'''(x) = 48\cdot 2(2x+5)\cdot 2
+$$
+
+$$
+S'''(x) = 192(2x+5)
+$$
+
+matching the claimed third derivative. One more differentiation would leave the constant $384$.
+
+$$
+S''(x) = 48(2x+5)^{2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- OVERVIEW EN ---
+The packaging safety score is the nested fourth-power composition
+
+$$S(x)=(2x+5)^{4}$$
+
+Repeated chain-rule differentiation, always multiplying by the inner slope $2$, yields
+
+$$S'(x)=8(2x+5)^{3}\qquad S''(x)=48(2x+5)^{2}\qquad S'''(x)=192(2x+5)$$
+
+Evaluating the first two derivatives at the origin gives the concrete values
+
+$$S'(0)=8\cdot 5^{3}=1000\qquad S''(0)=48\cdot 25=1200$$
+
+Each differentiation multiplies by both the falling outer power and the constant inner slope $2$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Sicherheitswert ist die verschachtelte vierte Potenz $S(x)=(2x+5)^{4}$. Die Kettenregel multipliziert mit der inneren Steigung $2$:
+
+$$
+S'(x) = 4(2x+5)^{3}\cdot 2
+$$
+
+$$
+S'(x) = 8(2x+5)^{3}
+$$
+
+das passt zur behaupteten Formel. Die innere $2$ zu vergessen ist die klassische Falle.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $x=0$ ein; beachte $2\cdot 0+5=5$ und $5^{3}=125$:
+
+$$
+S'(0) = 8\cdot 5^{3}
+$$
+
+$$
+S'(0) = 8\cdot 125 = 1000
+$$
+
+Berechne nicht $5^{4}=625$ — die äußere Potenz ist bereits abgesenkt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere erneut; multipliziere wieder mit der inneren Steigung $2$:
+
+$$
+S''(x) = 8\cdot 3(2x+5)^{2}\cdot 2
+$$
+
+$$
+S''(x) = 48(2x+5)^{2}
+$$
+
+das passt zur behaupteten zweiten Ableitung.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Setze $x=0$ in die zweite Ableitung ein:
+
+$$
+S''(0) = 48\cdot 5^{2}
+$$
+
+$$
+S''(0) = 48\cdot 25 = 1200
+$$
+
+Der Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Richtig
+
+Nochmals differenzieren und mit der inneren Steigung $2$ multiplizieren:
+
+$$
+S^{(3)}(x) = 48\cdot 2(2x+5)\cdot 2
+$$
+
+$$
+S^{(3)}(x) = 192(2x+5)
+$$
+
+das passt zur behaupteten dritten Ableitung.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Der Verpackungs-Sicherheitswert ist die verschachtelte vierte Potenz
+
+$$S(x)=(2x+5)^{4}$$
+
+Wiederholte Kettenregel, stets multipliziert mit der inneren Steigung $2$, liefert
+
+$$S'(x)=8(2x+5)^{3}\qquad S''(x)=48(2x+5)^{2}\qquad S^{(3)}(x)=192(2x+5)$$
+
+Bei $x=0$ gilt $S'(0)=1000$ und $S''(0)=1200$.
+================================================================================
+CASE MATH 11.18 answer_key [True, True, True, True, False] overview_short True
+--- STATEMENTS EN ---
+[0] The derivative is $E'(t)=\ln(t+1)+\dfrac{t}{t+1}$.
+[1] $E'(1)=\ln 2+\dfrac{1}{2}$.
+[2] $E''(t)=\dfrac{1}{t+1}+\dfrac{1}{(t+1)^{2}}$.
+[3] $E''(1)=\dfrac{3}{4}$.
+[4] The statement $E'(t)=\ln(t+1)+1$ is correct.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The engagement index is the product $E(t)=t\cdot\ln(t+1)$. Apply the product rule: differentiate $t$ and $\ln(t+1)$ in turn,
+
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+E(t) = t \cdot \ln(t+1)
+$$
+
+$$
+u(t) = t
+$$
+
+$$
+v(t) = \ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = \frac{1}{t + 1}
+$$
+
+$$
+E'(t) = (1)\cdot(\ln{(t + 1 )}) + (t)\cdot(\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
+$$
+E'(t) = \ln(t+1)+t\cdot\dfrac{1}{t+1}
+$$
+
+$$
+E'(t) = \ln(t+1)+\dfrac{t}{t+1}
+$$
+
+which matches the claimed formula. Keep both summands — neither alone is the full derivative.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $t=1$ into the first derivative:
+
+$$
+E'(1) = \ln(1+1)+\dfrac{1}{1+1}
+$$
+
+$$
+E'(1) = \ln 2+\dfrac{1}{2}
+$$
+
+Do not replace $\dfrac{1}{2}$ by $1$. The computed value matches the claim.
+
+$$
+t = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $E'(t)=\ln(t+1)+\dfrac{t}{t+1}$ again. Rewrite $\dfrac{t}{t+1}=1-\dfrac{1}{t+1}$, then differentiate:
+
+$$
+E''(t) = \dfrac{1}{t+1}+\dfrac{1}{(t+1)^{2}}
+$$
+
+matching the claimed second derivative.
+
+$$
+E'(t) = \ln(t+1)+\dfrac{t}{t+1}
+$$
+
+$$
+\dfrac{t}{t+1} = 1-\dfrac{1}{t+1}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Substitute $t=1$ into the second derivative:
+
+$$
+E''(1) = \dfrac{1}{2}+\dfrac{1}{4}
+$$
+
+$$
+E''(1) = \dfrac{3}{4}
+$$
+
+The two positive contributions add cleanly. The computed value matches the claim.
+
+$$
+t = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+The correct product-rule derivative is
+
+$$
+E'(t) = \ln(t+1)+\dfrac{t}{t+1}
+$$
+
+Replacing the second summand by the constant $1$ drops the factor $\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+E'(t) = \ln(t+1)+1
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+The engagement index is the product
+
+$$E(t)=t\cdot\ln(t+1)\qquad(t>0)$$
+
+The product rule gives
+
+$$E'(t)=\ln(t+1)+\dfrac{t}{t+1}$$
+
+so $E'(1)=\ln 2+\dfrac{1}{2}$. Differentiating again yields
+
+$$E''(t)=\dfrac{1}{t+1}+\dfrac{1}{(t+1)^{2}}$$
+
+and therefore $E''(1)=\dfrac{3}{4}$. The incorrect shortcut $E'(t)=\ln(t+1)+1$ drops the factor $\dfrac{t}{t+1}$ — a classic product-rule slip.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Engagement-Index ist das Produkt $E(t)=t\cdot\ln(t+1)$. Die Produktregel liefert
+
+$$
+E'(t) = 1\cdot\ln(t+1)+t\cdot\dfrac{1}{t+1}
+$$
+
+$$
+E'(t) = \ln(t+1)+\dfrac{t}{t+1}
+$$
+
+das passt. Schreibe nicht $\dfrac{t}{t}$ oder lasse den Logarithmus weg.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $t=1$ ein:
+
+$$
+E'(1) = \ln(2)+\dfrac{1}{2}
+$$
+
+genau wie behauptet.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere erneut termweise:
+
+$$
+E''(t) = \dfrac{1}{t+1}+\dfrac{(t+1)-t}{(t+1)^{2}}
+$$
+
+$$
+E''(t) = \dfrac{1}{t+1}+\dfrac{1}{(t+1)^{2}}
+$$
+
+das passt zur behaupteten zweiten Ableitung.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Setze $t=1$ ein:
+
+$$
+E''(1) = \dfrac{1}{2}+\dfrac{1}{4}
+$$
+
+$$
+E''(1) = \dfrac{3}{4}
+$$
+
+Der Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die echte Produktregel-Ableitung ist
+
+$$
+E'(t) = \ln(t+1)+\dfrac{t}{t+1}
+$$
+
+nicht $\ln(t+1)+1$. Den zweiten Summanden durch $1$ zu ersetzen ist falsch — nur im Grenzfall $t\to\infty$ nähert sich $\dfrac{t}{t+1}$ der $1$.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Engagement-Index ist das Produkt
+
+$$E(t)=t\cdot\ln(t+1)\qquad(t>0)$$
+
+Die Produktregel liefert
+
+$$E'(t)=\ln(t+1)+\dfrac{t}{t+1}$$
+
+also $E'(1)=\ln 2+\dfrac{1}{2}$. Nochmaliges Differenzieren ergibt
+
+$$E''(t)=\dfrac{1}{t+1}+\dfrac{1}{(t+1)^{2}}$$
+
+und daher $E''(1)=\dfrac{3}{4}$. Die Abkürzung $E'(t)=\ln(t+1)+1$ ist falsch.
+================================================================================
+CASE MATH 11.19 answer_key [True, True, True, False, False] overview_short True
+--- STATEMENTS EN ---
+[0] Rewriting gives $M(x)=(x^{2}+1)\cdot (x+3)^{-\frac{1}{2}}$.
+[1] The derivative is $M'(x)=\dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}$.
+[2] $M'(1)=\dfrac{7}{8}$.
+[3] $M'(1)=\dfrac{13}{8}$.
+[4] The derivative is a constant.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Rewrite the processing index by converting the root in the denominator into a negative power:
+
+$$
+M(x) = \dfrac{x^{2}+1}{\sqrt{x+3}}
+$$
+
+$$
+M(x) = (x^{2}+1)(x+3)^{-\frac{1}{2}}
+$$
+
+which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly.
+
+$$
+M(x) = (x^{2}+1)\cdot (x+3)^{-\frac{1}{2}}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\frac{1}{2}}$ and clear over one denominator. The numerator calculation
+
+$$
+2x(x+3)-\tfrac{1}{2}(x^{2}+1) = \tfrac{1}{2}(3x^{2}+12x-1)
+$$
+
+produces
+
+$$
+M'(x) = \dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}
+$$
+
+matching the claimed formula.
+
+$$
+M(x) = (x^{2}+1)(x+3)^{-\frac{1}{2}}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute $x=1$, using $x+3=4$ and $4^{\frac{3}{2}}=8$:
+
+$$
+M'(1) = \dfrac{3+12-1}{2\cdot 8}
+$$
+
+$$
+M'(1) = \dfrac{14}{16}
+$$
+
+$$
+M'(1) = \dfrac{7}{8}
+$$
+
+The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+The evaluation at $x=1$ already produced
+
+$$
+M'(1) = \dfrac{7}{8}
+$$
+
+which is not equal to $\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+M'(1) = \dfrac{13}{8}
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → False
+
+The derivative formula
+
+$$
+M'(x) = \dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}
+$$
+
+still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Rewrite the processing index as a product of powers:
+
+$$M(x)=\dfrac{x^{2}+1}{\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\frac{1}{2}}$$
+
+The product rule, cleared over one denominator, yields
+
+$$M'(x)=\dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}$$
+
+At $x=1$ this evaluates to
+
+$$M'(1)=\dfrac{14}{2\cdot 8}=\dfrac{7}{8}$$
+
+not $\dfrac{13}{8}$. The derivative still depends on $x$ in both numerator and denominator, so it is not a constant.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Schreibe den Quotienten als Produkt von Potenzen:
+
+$$
+M(x) = (x^{2}+1)(x+3)^{-\frac{1}{2}}
+$$
+
+genau die behauptete Umschreibung.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Die Produktregel, über einen Nenner gebracht, liefert
+
+$$
+M'(x) = 2x(x+3)^{-\frac{1}{2}}+(x^{2}+1)\cdot\Bigl(-\dfrac{1}{2}\Bigr)(x+3)^{-\frac{3}{2}}
+$$
+
+Zusammenfassen über $2(x+3)^{\frac{3}{2}}$ ergibt
+
+$$
+M'(x) = \dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}
+$$
+
+das passt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze $x=1$ ein; beachte $x+3=4$ und $4^{\frac{3}{2}}=8$:
+
+$$
+M'(1) = \dfrac{3+12-1}{2\cdot 8}
+$$
+
+$$
+M'(1) = \dfrac{14}{16} = \dfrac{7}{8}
+$$
+
+Der Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Die korrekte Auswertung ist $M'(1)=\dfrac{7}{8}$, nicht $\dfrac{13}{8}$. Ein typischer Rechenfehler im Zähler $3+12-1=14$ oder im Nenner führt auf den falschen Wert.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die Ableitung hängt noch von $x$ ab — Zähler und Nenner sind polynomiale bzw. Wurzelausdrücke in $x$. Sie ist keine Konstante.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Schreibe den Verarbeitungsindex als Potenzprodukt um:
+
+$$M(x)=\dfrac{x^{2}+1}{\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\frac{1}{2}}$$
+
+Die Produktregel, über einen Nenner gebracht, liefert
+
+$$M'(x)=\dfrac{3x^{2}+12x-1}{2(x+3)^{\frac{3}{2}}}$$
+
+Bei $x=1$ gilt $M'(1)=\dfrac{7}{8}$, nicht $\dfrac{13}{8}$. Die Ableitung ist keine Konstante.
+================================================================================
+CASE MATH 11.20 answer_key [True, True, True, True, False] overview_short False
+--- STATEMENTS EN ---
+[0] The derivative is $F'(t)=2t\cdot \ln(t+1)+\dfrac{t^{2}+1}{t+1}$.
+[1] $F'(1)=2\ln 2+1$.
+[2] $F''(t)=2\ln(t+1)+\dfrac{4t}{t+1}-\dfrac{t^{2}+1}{(t+1)^{2}}$.
+[3] $F''(1)=2\ln 2+\dfrac{3}{2}$.
+[4] The expression $F'(t)=2t+\dfrac{t^{2}+1}{t+1}$ is correct.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+The performance index is the product $F(t)=(t^{2}+1)\ln(t+1)$. Apply the product rule: differentiate the quadratic and the logarithm in turn,
+
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+F(t) = (t^{2}+1) \cdot \ln(t+1)
+$$
+
+$$
+u(t) = t^{2} + 1
+$$
+
+$$
+v(t) = \ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 2 t
+$$
+
+$$
+v'(t) = \frac{1}{t + 1}
+$$
+
+$$
+F'(t) = (2 t)\cdot(\ln{(t + 1 )}) + (t^{2} + 1)\cdot(\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
+$$
+F'(t) = 2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}
+$$
+
+which matches the claimed formula. Both summands are required.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $t=1$ into the first derivative:
+
+$$
+F'(1) = 2\cdot 1\cdot\ln 2+\dfrac{1+1}{2}
+$$
+
+$$
+F'(1) = 2\ln 2+1
+$$
+
+The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule.
+
+$$
+t = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate $F'$ again: the product rule on $2t\ln(t+1)$ and the quotient rule on $\dfrac{t^{2}+1}{t+1}$ rearrange to
+
+$$
+F''(t) = 2\ln(t+1)+\dfrac{4t}{t+1}-\dfrac{t^{2}+1}{(t+1)^{2}}
+$$
+
+matching the claimed second derivative.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Substitute $t=1$ into the second derivative:
+
+$$
+F''(1) = 2\ln 2+\dfrac{4}{2}-\dfrac{2}{4}
+$$
+
+$$
+F''(1) = 2\ln 2+2-\dfrac{1}{2}
+$$
+
+$$
+F''(1) = 2\ln 2+\dfrac{3}{2}
+$$
+
+Watch the arithmetic $2-\tfrac{1}{2}=\tfrac{3}{2}$. The computed value matches the claim.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+The true product-rule derivative is
+
+$$
+F'(t) = 2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}
+$$
+
+Dropping the logarithm term produces $2t+\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\ln(t+1)$. That shortcut is incorrect.
+
+$$
+F'(t) = 2t+\dfrac{t^{2}+1}{t+1}
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+The performance index is the mixed product
+
+$$F(t)=(t^{2}+1)\cdot\ln(t+1)\qquad(t>0)$$
+
+The product rule gives
+
+$$F'(t)=2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}$$
+
+so $F'(1)=2\ln 2+1$. Differentiating again and rearranging yields
+
+$$F''(t)=2\ln(t+1)+\dfrac{4t}{t+1}-\dfrac{t^{2}+1}{(t+1)^{2}}$$
+
+and therefore $F''(1)=2\ln 2+\dfrac{3}{2}$. Dropping the logarithm term produces the incorrect shortcut $F'(t)=2t+\dfrac{t^{2}+1}{t+1}$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Der Leistungsindex ist das gemischte Produkt $F(t)=(t^{2}+1)\ln(t+1)$. Die Produktregel liefert
+
+$$
+F'(t) = 2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}
+$$
+
+genau wie behauptet.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $t=1$ ein:
+
+$$
+F'(1) = 2\cdot\ln 2+\dfrac{2}{2}
+$$
+
+$$
+F'(1) = 2\ln 2+1
+$$
+
+Der Wert stimmt.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Nochmals differenzieren und umordnen liefert
+
+$$
+F''(t) = 2\ln(t+1)+\dfrac{4t}{t+1}-\dfrac{t^{2}+1}{(t+1)^{2}}
+$$
+
+das passt zur behaupteten zweiten Ableitung.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Setze $t=1$ ein:
+
+$$
+F''(1) = 2\ln 2+\dfrac{4}{2}-\dfrac{2}{4}
+$$
+
+$$
+F''(1) = 2\ln 2+2-\dfrac{1}{2}
+$$
+
+$$
+F''(1) = 2\ln 2+\dfrac{3}{2}
+$$
+
+Achte auf die Arithmetik $2-\tfrac{1}{2}=\tfrac{3}{2}$.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die echte Produktregel-Ableitung ist
+
+$$
+F'(t) = 2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}
+$$
+
+Den Logarithmus-Term wegzulassen erzeugt $2t+\dfrac{t^{2}+1}{t+1}$ — dieser Shortcut fehlt den Summanden $2t\ln(t+1)$.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Leistungsindex ist das gemischte Produkt
+
+$$F(t)=(t^{2}+1)\cdot\ln(t+1)\qquad(t>0)$$
+
+Die Produktregel liefert
+
+$$F'(t)=2t\cdot\ln(t+1)+\dfrac{t^{2}+1}{t+1}$$
+
+also $F'(1)=2\ln 2+1$. Nochmaliges Differenzieren und Umordnen ergibt
+
+$$F''(t)=2\ln(t+1)+\dfrac{4t}{t+1}-\dfrac{t^{2}+1}{(t+1)^{2}}$$
+
+und daher $F''(1)=2\ln 2+\dfrac{3}{2}$. Den Logarithmus wegzulassen erzeugt den falschen Shortcut $F'(t)=2t+\dfrac{t^{2}+1}{t+1}$.
+================================================================================
+CASE MATH 11.21 answer_key [True, True, True, False, False] overview_short True
+--- STATEMENTS EN ---
+[0] $\pi'(q)=-3q^{2}+24q-21$.
+[1] $\pi'(1)=0$.
+[2] $\pi''(q)=-6q+24$.
+[3] $\pi''(3)=0$.
+[4] At $q=1$ the tangent slope is strictly positive.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Differentiate the cubic profit schedule $\pi(q)=-q^{3}+12q^{2}-21q$ term by term:
+
+$$
+\pi'(q) = -3q^{2}+24q-21
+$$
+
+which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$.
+
+$$
+\pi(q) = -q^{3}+12q^{2}-21q
+$$
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $q=1$ into the first derivative:
+
+$$
+\pi'(1) = -3+24-21
+$$
+
+$$
+-3 + 24 = 21
+$$
+
+$$
+21 - 21 = 0
+$$
+
+$$
+\pi'(1) = 0
+$$
+
+so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Differentiate the first-derivative polynomial once more:
+
+$$
+\pi''(q) = -6q+24
+$$
+
+matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim,
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Substitute $q=3$ into the second derivative:
+
+$$
+\pi''(3) = -6\cdot 3+24
+$$
+
+$$
+\pi''(3) = -18+24
+$$
+
+$$
+-18 + 24 = 6
+$$
+
+$$
+\pi''(3) = 6
+$$
+
+$$
+\pi''(3) = 6\neq 0
+$$
+
+The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → False
+
+The tangent slope at $q=1$ is precisely the first-derivative value
+
+$$
+\pi'(1) = 0
+$$
+
+which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+q = 1
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Daily profit follows the cubic schedule
+
+$$\pi(q)=-q^{3}+12q^{2}-21q$$
+
+Differentiating once and twice produces the first two derivatives
+
+$$\pi'(q)=-3q^{2}+24q-21\qquad \pi''(q)=-6q+24$$
+
+Evaluating at the named points yields the concrete values
+
+$$\pi'(1)=0\qquad \pi''(3)=6\neq 0$$
+
+In particular the tangent slope at $q=1$ is exactly zero, so that slope is not strictly positive. The second-derivative zero would solve $-6q+24=0$, hence $q=4$, not $q=3$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Differenziere den kubischen Gewinnplan $\pi(q)=-q^{3}+12q^{2}-21q$ termweise:
+
+$$
+\pi'(q) = -3q^{2}+24q-21
+$$
+
+Achte auf die Vorzeichen: der Leitterm liefert $-3q^{2}$, nicht $+3q^{2}$.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $q=1$ ein:
+
+$$
+\pi'(1) = -3+24-21 = 0
+$$
+
+Die drei Terme heben sich genau auf.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Differenziere das erste Ableitungspolynom noch einmal:
+
+$$
+\pi''(q) = -6q+24
+$$
+
+das passt zur behaupteten zweiten Ableitung.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Setze $q=3$ ein:
+
+$$
+\pi''(3) = -6\cdot 3+24 = -18+24 = 6
+$$
+
+$$
+\pi''(3) = 6\neq 0
+$$
+
+Die zweite Ableitung verschwindet bei $q=4$, nicht bei $q=3$.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Falsch
+
+Die Tangentensteigung bei $q=1$ ist genau der erste Ableitungswert
+
+$$
+\pi'(1) = 0
+$$
+
+also null, nicht streng positiv. Eine horizontale Tangente ist keine streng steigende.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Tagesgewinn folgt dem kubischen Plan
+
+$$\pi(q)=-q^{3}+12q^{2}-21q$$
+
+Ein- und zweifaches Differenzieren liefert
+
+$$\pi'(q)=-3q^{2}+24q-21\qquad \pi''(q)=-6q+24$$
+
+An den genannten Stellen gilt
+
+$$\pi'(1)=0\qquad \pi''(3)=6\neq 0$$
+
+Insbesondere ist die Tangentensteigung bei $q=1$ genau null. Die Nullstelle der zweiten Ableitung löst $-6q+24=0$, also $q=4$, nicht $q=3$.
+================================================================================
+CASE MATH 11.22 answer_key [True, True, False, True, True] overview_short True
+--- STATEMENTS EN ---
+[0] Marginal cost is the constant $C'(q)=9$.
+[1] $C'(20)=9$.
+[2] Average cost equals marginal cost for every $q>0$.
+[3] The tangent to $C$ at $q=10$ is $y=45+9q$.
+[4] $C''(q)=0$ for all $q$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Shipping cost is the linear schedule $C(q)=45+9q$. Its derivative is the constant slope
+
+$$
+C'(q) = 9
+$$
+
+which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation.
+
+$$
+C(q) = 45+9q
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Because marginal cost is constantly $9$, evaluating at any particular output — including $q=20$ — still gives
+
+$$
+C'(20) = 9
+$$
+
+There is nothing special about $q=20$ for a constant derivative.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → False
+
+Average cost is the separate quotient
+
+$$
+\dfrac{C(q)}{q} = \dfrac{45}{q}+9
+$$
+
+which equals the constant marginal cost $9$ only in the limit $q\to\infty$, not for every finite $q>0$. The fixed-cost contribution $\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect.
+
+So the statement is False.
+--- letter 3 ---
+**D.** → True
+
+A linear function is already its own tangent. With slope $9$ and intercept $45$, the tangent at $q=10$ (and at every other $q$) is simply
+
+$$
+y = 45+9q
+$$
+
+matching the claim. Point-slope form with $C(10)=135$ recovers the same line.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → True
+
+Differentiating the constant marginal cost once more yields
+
+$$
+C''(q) = 0
+$$
+
+for every $q$. A linear cost schedule has zero curvature everywhere.
+
+So the statement is True.
+--- OVERVIEW EN ---
+Shipping cost is the linear schedule
+
+$$C(q)=45+9q$$
+
+Its derivatives are the constants
+
+$$C'(q)=9\qquad C''(q)=0$$
+
+so marginal cost equals $9$ at every output, including $q=20$. Average cost is the separate quotient
+
+$$\dfrac{C(q)}{q}=\dfrac{45}{q}+9$$
+
+which equals marginal cost only in the limit $q\to\infty$, not for every finite $q>0$. Because $C$ is already linear with slope $9$, the tangent at any point — in particular at $q=10$ — is the line $y=45+9q$ itself.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Die Versandkosten sind der lineare Plan $C(q)=45+9q$. Die Ableitung ist die konstante Steigung
+
+$$
+C'(q) = 9
+$$
+
+genau die behaupteten konstanten Grenzkosten. Die Fixkosten $45$ verschwinden.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Weil die Grenzkosten konstant $9$ sind, liefert jede Menge — auch $q=20$ — denselben Wert
+
+$$
+C'(20) = 9
+$$
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Falsch
+
+Stückkosten sind der separate Quotient
+
+$$
+\dfrac{C(q)}{q} = \dfrac{45}{q}+9
+$$
+
+der den konstanten Grenzkosten $9$ nur im Grenzfall $q\to\infty$ gleicht, nicht für jedes endliche $q>0$.
+
+Die Aussage ist falsch.
+--- de letter 3 ---
+**D.** → Richtig
+
+Eine lineare Funktion ist bereits ihre eigene Tangente. Mit Steigung $9$ und Achsenabschnitt $45$ ist die Tangente bei $q=10$ (und überall)
+
+$$
+y = 45+9q
+$$
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Richtig
+
+Differenzieren der konstanten Grenzkosten liefert
+
+$$
+C''(q) = 0
+$$
+
+für jedes $q$. Ein linearer Kostenplan hat überall Krümmung null.
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Die Versandkosten folgen dem linearen Plan
+
+$$C(q)=45+9q$$
+
+Die Ableitungen sind die Konstanten
+
+$$C'(q)=9\qquad C''(q)=0$$
+
+also sind die Grenzkosten überall $9$, auch bei $q=20$. Stückkosten sind der separate Quotient
+
+$$\dfrac{C(q)}{q}=\dfrac{45}{q}+9$$
+
+der den Grenzkosten nur für $q\to\infty$ gleicht. Weil $C$ bereits linear mit Steigung $9$ ist, ist die Tangente an jedem Punkt — insbesondere bei $q=10$ — die Gerade $y=45+9q$ selbst.
+================================================================================
+CASE MATH 11.23 answer_key [True, True, True, True, False] overview_short True
+--- STATEMENTS EN ---
+[0] $Q'(L)=10L^{\frac{3}{2}}$.
+[1] $Q'(1)=10$.
+[2] $Q'(4)=80$.
+[3] $Q''(L)=15L^{\frac{1}{2}}$.
+[4] $Q'(L)$ falls as $L$ rises.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Apply the power rule to $Q(L)=4L^{\frac{5}{2}}$, multiplying by $\tfrac{5}{2}$ and lowering the exponent:
+
+$$
+Q'(L) = 4\cdot\dfrac{5}{2}L^{\frac{3}{2}}
+$$
+
+$$
+Q'(L) = 10L^{\frac{3}{2}}
+$$
+
+which matches the claimed marginal product. Do not leave the exponent at $\tfrac{5}{2}$.
+
+$$
+Q(L) = 4L^{\frac{5}{2}}
+$$
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Substitute $L=1$ into the marginal-product rule:
+
+$$
+Q'(1) = 10\cdot 1^{\frac{3}{2}}
+$$
+
+$$
+Q'(1) = 10
+$$
+
+Any positive power of $1$ is still $1$, so the evaluation is immediate.
+
+$$
+L = 1
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute $L=4$, using $4^{\frac{3}{2}}=(\sqrt{4})^{3}=2^{3}=8$:
+
+$$
+Q'(4) = 10\cdot 8
+$$
+
+$$
+10\times 8 = 80
+$$
+
+$$
+Q'(4) = 80
+$$
+
+A trap is computing $4^{\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\frac{3}{2}}=8$.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → True
+
+Differentiate the marginal product once more:
+
+$$
+Q''(L) = 10\cdot\dfrac{3}{2}L^{\frac{1}{2}}
+$$
+
+$$
+Q''(L) = 15L^{\frac{1}{2}}
+$$
+
+matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising.
+
+So the statement is True.
+--- letter 4 ---
+**E.** → False
+
+Because the exponent $\dfrac{3}{2}$ is positive,
+
+$$
+Q'(L) = 10L^{\frac{3}{2}}
+$$
+
+rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+So the statement is False.
+--- OVERVIEW EN ---
+Output follows the five-halves production rule
+
+$$Q(L)=4L^{\frac{5}{2}}\qquad(L>0)$$
+
+Two applications of the power rule give
+
+$$Q'(L)=10L^{\frac{3}{2}}\qquad Q''(L)=15L^{\frac{1}{2}}$$
+
+Evaluating the marginal product yields
+
+$$Q'(1)=10\qquad Q'(4)=10\cdot 8=80$$
+
+Because the exponent $\dfrac{3}{2}$ is positive, $Q'(L)$ rises with $L$ rather than falling — this is increasing (not diminishing) marginal product on the given power.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Wende die Potenzregel auf $Q(L)=4L^{\frac{5}{2}}$ an: multipliziere mit $\tfrac{5}{2}$ und senke den Exponenten:
+
+$$
+Q'(L) = 4\cdot\dfrac{5}{2}L^{\frac{3}{2}}
+$$
+
+$$
+Q'(L) = 10L^{\frac{3}{2}}
+$$
+
+Lasse den Exponenten nicht bei $\tfrac{5}{2}$.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Setze $L=1$ ein:
+
+$$
+Q'(1) = 10\cdot 1^{\frac{3}{2}} = 10
+$$
+
+Jede positive Potenz von $1$ bleibt $1$.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze $L=4$ ein und nutze $4^{\frac{3}{2}}=(\sqrt{4})^{3}=2^{3}=8$:
+
+$$
+Q'(4) = 10\cdot 8 = 80
+$$
+
+Eine Falle wäre $4^{\frac{5}{2}}=32$ (das originale $Q$) statt $4^{\frac{3}{2}}=8$.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Richtig
+
+Differenziere das Grenzprodukt noch einmal:
+
+$$
+Q''(L) = 10\cdot\dfrac{3}{2}L^{\frac{1}{2}}
+$$
+
+$$
+Q''(L) = 15L^{\frac{1}{2}}
+$$
+
+Der positive Koeffizient zeigt: das Grenzprodukt steigt selbst noch.
+
+Die Aussage ist wahr.
+--- de letter 4 ---
+**E.** → Falsch
+
+Weil der Exponent $\dfrac{3}{2}$ positiv ist,
+
+$$
+Q'(L) = 10L^{\frac{3}{2}}
+$$
+
+steigt mit $L$. Der Vergleich $Q'(1)=10$ mit $Q'(4)=80$ bestätigt den Anstieg. Die Behauptung, es falle, ist falsch.
+
+Die Aussage ist falsch.
+--- EXISTING DE OVERVIEW ---
+Der Output folgt der Fünf-Halbe-Produktionsregel
+
+$$Q(L)=4L^{\frac{5}{2}}\qquad(L>0)$$
+
+Zwei Anwendungen der Potenzregel liefern
+
+$$Q'(L)=10L^{\frac{3}{2}}\qquad Q''(L)=15L^{\frac{1}{2}}$$
+
+Das Grenzprodukt ergibt
+
+$$Q'(1)=10\qquad Q'(4)=10\cdot 8=80$$
+
+Weil der Exponent $\dfrac{3}{2}$ positiv ist, steigt $Q'(L)$ mit $L$ — hier wachsendes, nicht abnehmendes Grenzprodukt.
+================================================================================
+CASE MATH 11.24 answer_key [True, True, True, False, True] overview_short False
+--- STATEMENTS EN ---
+[0] $R(q)=60q-\dfrac{1}{2}q^{2}$.
+[1] $R'(q)=60-q$.
+[2] $R'(20)=40$.
+[3] $R'(q)=p(q)$ at every $q$.
+[4] The tangent to $R$ at $q=20$ is $y=1000+40(q-20)$.
+--- TACTICAL EN ---
+--- letter 0 ---
+**A.** → True
+
+Revenue is price times tickets sold. Expand with the linear fare:
+
+$$
+R(q) = q\cdot\Bigl(60-\dfrac{1}{2}q\Bigr)
+$$
+
+$$
+R(q) = 60q-\dfrac{1}{2}q^{2}
+$$
+
+which matches the claimed revenue function. Keep the coefficient $\tfrac{1}{2}$ on $q^{2}$, not $1$.
+
+So the statement is True.
+--- letter 1 ---
+**B.** → True
+
+Differentiate the revenue quadratic term by term:
+
+$$
+R'(q) = 60-q
+$$
+
+matching the claimed marginal revenue. The derivative of $-\tfrac{1}{2}q^{2}$ is $-q$, not $-\tfrac{1}{2}q$.
+
+So the statement is True.
+--- letter 2 ---
+**C.** → True
+
+Substitute $q=20$ into marginal revenue:
+
+$$
+R'(20) = 60-20
+$$
+
+$$
+60 - 20 = 40
+$$
+
+$$
+R'(20) = 40 = 40
+$$
+
+$$
+R'(20) = 40
+$$
+
+The computed value matches the claim. Do not confuse this with $p(20)=50$.
+
+So the statement is True.
+--- letter 3 ---
+**D.** → False
+
+Marginal revenue is $R'(q)=60-q$, while the fare schedule is
+
+$$
+p(q) = 60-\dfrac{1}{2}q
+$$
+
+These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\,p(q)$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+R'(q) = p(q)
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- letter 4 ---
+**E.** → True
+
+First evaluate both height and slope at $q=20$:
+
+$$
+R(20) = 60\cdot 20-\dfrac{1}{2}\cdot 400 = 1000
+$$
+
+$$
+R'(20) = 40
+$$
+
+Point-slope form then gives the tangent
+
+$$
+y = 1000+40(q-20)
+$$
+
+exactly as claimed.
+
+So the statement is True.
+--- OVERVIEW EN ---
+The venue charges the linear fare $p(q)=60-\dfrac{1}{2}q$, so ticket revenue expands to
+
+$$R(q)=q\cdot p(q)=60q-\dfrac{1}{2}q^{2}$$
+
+Differentiating the whole revenue function gives marginal revenue
+
+$$R'(q)=60-q$$
+
+At $q=20$ one finds both $R'(20)=40$ and $R(20)=1000$, so the tangent line is
+
+$$y=1000+40(q-20)$$
+
+Note that $R'(q)=60-q$ is not identical to the fare schedule $p(q)=60-\dfrac{1}{2}q$ — confusing marginal revenue with price is the main trap.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.
+--- EXISTING DE TACTICAL (ref) ---
+--- de letter 0 ---
+**A.** → Richtig
+
+Erlös ist Preis mal verkaufte Tickets. Expandiere mit dem linearen Tarif:
+
+$$
+R(q) = q\cdot\Bigl(60-\dfrac{1}{2}q\Bigr)
+$$
+
+$$
+R(q) = 60q-\dfrac{1}{2}q^{2}
+$$
+
+Behalte den Koeffizienten $\tfrac{1}{2}$ bei $q^{2}$, nicht $1$.
+
+Die Aussage ist wahr.
+--- de letter 1 ---
+**B.** → Richtig
+
+Differenziere die Erlös-Quadratfunktion termweise:
+
+$$
+R'(q) = 60-q
+$$
+
+Die Ableitung von $-\tfrac{1}{2}q^{2}$ ist $-q$, nicht $-\tfrac{1}{2}q$.
+
+Die Aussage ist wahr.
+--- de letter 2 ---
+**C.** → Richtig
+
+Setze $q=20$ ein:
+
+$$
+R'(20) = 60-20 = 40
+$$
+
+Verwechsle dies nicht mit $p(20)=50$.
+
+Die Aussage ist wahr.
+--- de letter 3 ---
+**D.** → Falsch
+
+Grenzerlös ist $R'(q)=60-q$, während der Tarif
+
+$$
+p(q) = 60-\dfrac{1}{2}q
+$$
+
+ist. Sie unterscheiden sich um den Faktor bei $q$: $R'$ fällt doppelt so steil wie $p$. Sie gleichzusetzen vergisst, dass der Erlös das Produkt $q\,p(q)$ ist.
+
+Die Aussage ist falsch.
+--- de letter 4 ---
+**E.** → Richtig
+
+Zuerst Höhe und Steigung bei $q=20$:
+
+$$
+R(20) = 60\cdot 20-\dfrac{1}{2}\cdot 400 = 1000
+$$
+
+$$
+R'(20) = 40
+$$
+
+Punkt-Steigungs-Form liefert die Tangente
+
+$$
+y = 1000+40(q-20)
+$$
+
+Die Aussage ist wahr.
+--- EXISTING DE OVERVIEW ---
+Der Veranstaltungsort verlangt den linearen Tarif $p(q)=60-\dfrac{1}{2}q$, daher expandiert der Ticketerlös zu
+
+$$R(q)=q\cdot p(q)=60q-\dfrac{1}{2}q^{2}$$
+
+Differenzieren der gesamten Erlösfunktion liefert den Grenzerlös
+
+$$R'(q)=60-q$$
+
+Bei $q=20$ gilt $R'(20)=40$ und $R(20)=1000$, also lautet die Tangente
+
+$$y=1000+40(q-20)$$
+
+Beachte: $R'(q)=60-q$ ist nicht identisch mit dem Tarif $p(q)=60-\dfrac{1}{2}q$ — Grenzerlös mit Preis zu verwechseln ist die Hauptfalle.

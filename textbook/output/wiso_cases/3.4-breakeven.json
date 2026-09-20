@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.41",
+    "title": "Stückdeckungsbeitrag 400 minus 180",
+    "context": "Ein Unternehmen erzeugt ein Fahrrad und kalkuliert mit den folgenden Größen des Kostenrechnungsbeispiels (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Deckungsbeitrag je Rad ergibt sich als 400 minus 180 und beträgt 220 Euro.",
+      "Der Deckungsbeitrag je Rad beträgt 180 Euro.",
+      "Die Deckungsquote beträgt 220 geteilt durch 400, also 55 Prozent.",
+      "Die Deckungsquote beträgt 180 geteilt durch 400, also 45 Prozent.",
+      "Der Verkaufspreis übersteigt die variablen Kosten um 220 Euro."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Preis minus variable Kosten, das ist der Stückbeitrag. Die Tabelle setzt den Verkaufspreis auf 400 Euro und die variablen Kosten auf 180 Euro. Dann gilt\n\n$$\\mathrm{DB}=400-180=220.$$\n\nGenau 220 Euro bleiben nach den Mengenkosten für die Deckung der Fixkosten. Die 220 Euro sind nicht der Gewinn nach allen Kosten und nicht der Materialblock. Die Rechnung bestätigt die Tabellenzeile Deckungsbeitrag.\n\nDie Aussage ist wahr.",
+      "Ein Hundertachtzig Euro sind die variablen Kosten, nicht der Beitrag. Wer 180 als Deckungsbeitrag liest, setzt den Mengenkostenblock mit dem Überschuss gleich. Richtig ist $400-180=220$. Bei 180 Euro Beitrag wäre die Quote $180/400=0{,}45$, also 45 Prozent, und widerspräche den 55 Prozent der Tabelle. Die 180 Euro müssen zuerst verdient sein, der Deckungsbeitrag kommt danach.\n\nDie Aussage ist falsch.",
+      "Anteil am Preis, nicht Anteil an den Teilen. 220 Euro von 400 Euro ergeben\n\n$$\\frac{220}{400}=0{,}55=55\\,.$$\n\nDiesen Prozentsatz nennt das Buch Deckungsquote. Von jedem Umsatz-Euro bleiben nach den variablen Kosten 55 Cent für den Fixkostenblock. Die Quote hängt am Verhältnis Beitrag zu Preis, nicht am bloßen Betrag 180.\n\nDie Aussage ist wahr.",
+      "Fünfundundvierzig Prozent messen den variablen Anteil am Preis, nicht die Deckungsquote. $180/400=0{,}45$. Die Deckungsquote ist $220/400=0{,}55$. Die falsche Division vertauscht den Zähler: sie nimmt die variablen Kosten statt des Deckungsbeitrags. 45 Prozent und 55 Prozent ergänzen sich zu 100 Prozent, weil $180+220=400$, aber nur 55 Prozent heißen Deckungsquote.\n\nDie Aussage ist falsch.",
+      "Die Differenz Preis minus variable Kosten ist derselbe 220-Euro-Schritt. $400-180=220$, und 400 liegt klar über 180. Genau dieser Überschuss ist der Deckungsbeitrag je Rad. Ohne ihn gäbe es keinen Beitrag zur Fixkostendeckung. Die Aussage wiederholt die Subtraktion, ohne eine neue Kostenart einzuführen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.42",
+    "title": "Break-even-Umsatz aus 4 Millionen und 55 Prozent",
+    "context": "Dieselben Kennzahlen des Fahrradbeispiels: Preis 400 Euro, variable Kosten 180 Euro, Deckungsbeitrag 220 Euro, Deckungsquote 55 Prozent, Fixkosten 4 Millionen Euro.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 0,55, also 7 272 727,27 Euro.",
+      "Das Unternehmen sollte zumindest knapp 7,3 Millionen Euro Umsatz machen, um alle Kosten zu decken.",
+      "Der Break-even-Umsatz beträgt 4 Millionen Euro, weil das die Fixkosten sind.",
+      "Der Break-even-Umsatz ergibt sich, indem man 4 000 000 mit 0,55 multipliziert.",
+      "Bei einem Umsatz über 7 272 727,27 Euro kommt das Unternehmen in die Gewinnzone."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Fixkosten gleich 55 Prozent vom gesuchten Umsatz. Die 4 000 000 Euro Fixkosten werden mit der Deckungsquote gleichgesetzt. Dann gilt\n\n$$U=\\frac{4\\,000\\,000}{0{,}55}=\\frac{4\\,000\\,000}{55}\\times 100=7\\,272\\,727{,}27.$$\n\nBei diesem Umsatz decken die kumulierten Deckungsbeiträge gerade den Fixkostenblock. Das Buch rechnet denselben Weg: 4 Mio. dividiert durch 55, multipliziert mal 100.\n\nDie Aussage ist wahr.",
+      "Knapp 7,3 Millionen ist die gerundete Schwelle. $7\\,272\\,727{,}27$ Euro sind knapp 7,3 Millionen Euro. Unter dieser Marke bleiben Fixkosten ungedeckt, darüber beginnt die Gewinnzone. Die Rundung ändert die Größenordnung nicht: weder 4 Millionen noch 8 Millionen ersetzen die Division durch 0,55. Existenzsicherung hängt hier an der vollen Kostendeckung durch den Umsatz.\n\nDie Aussage ist wahr.",
+      "Vier Millionen Euro sind die Fixkosten, nicht der nötige Umsatz. Wäre der Break-even-Umsatz 4 000 000, lieferten 55 Prozent davon nur $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$ Euro Deckungsbeitrag, also 1,8 Millionen unter den Fixkosten. Die Gleichsetzung Fixkosten = Break-even-Umsatz unterstellt eine Deckungsquote von 100 Prozent, die das Beispiel nicht hat. Der gesuchte Umsatz ist $4\\,000\\,000/0{,}55\\approx 7{,}27$ Millionen.\n\nDie Aussage ist falsch.",
+      "Multiplizieren statt Dividieren liefert den Deckungsbeitrag eines schon bekannten Umsatzes, nicht den Break-even. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$. Das wäre der Beitrag bei 4 Millionen Umsatz, weit unter 4 Millionen Fixkosten. Die Gleichsetzung lautet $0{,}55\\cdot U=4\\,000\\,000$, also $U=4\\,000\\,000/0{,}55$. Die falsche Rechenrichtung dreht diese Gleichung um.\n\nDie Aussage ist falsch.",
+      "Über der Schwelle bleibt Beitrag übrig. Jeder weitere Euro Umsatz liefert nach den Annahmen 55 Cent über die bereits gedeckten Fixkosten hinaus. Unter $7\\,272\\,727{,}27$ bleiben die Fixkosten teilweise ungedeckt. Das Buch sagt ausdrücklich: bei höherem Umsatz kommt das Unternehmen in die Gewinnzone und sichert damit seine Existenz. Die Aussage trifft genau diese Folgerung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.43",
+    "title": "Deckungsquote als 55 Prozent vom Umsatz",
+    "context": "Ein Fahrradproduzent verwendet die folgenden Kostenrechnungskennzahlen (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "55 Prozent der Verkaufspreise können zur Deckung der Fixkosten verwendet werden.",
+      "Die Deckungsquote beträgt 4 000 000 geteilt durch 400, also 10 000 Prozent.",
+      "55 Prozent von 7 272 727,27 Euro ergeben 4 000 000 Euro und treffen damit die Fixkosten.",
+      "Die Deckungsquote ist 180 Euro, weil das die variablen Kosten sind.",
+      "Von jedem Umsatz-Euro bleiben nach den variablen Kosten 0,55 Euro für die Fixkosten."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Fünfundünfzig Prozent sind die Brücke vom Stück zum Umsatz. Weil $220/400=0{,}55$, können 55 Prozent der Verkaufspreise zur Deckung der Fixkosten verwendet werden. Das gilt im Beispiel über alle Modelle hinweg mit derselben Quote. Die 45 Prozent, die in den variablen Kosten stecken, stehen dafür nicht zur Verfügung. Der Satz wiederholt die Logik, mit der das Buch vom Stückbeispiel zur Break-even-Rechnung übergeht.\n\nDie Aussage ist wahr.",
+      "Fixkosten durch Stückpreis ist keine Deckungsquote. $4\\,000\\,000/400=10\\,000$ wäre eine Stückzahl, nicht ein Prozentsatz von 10 000 Prozent. Die Quote ist beitragsbezogen: $220/400=55$ Prozent. Wer den Millionenblock durch 400 teilt, mischt Gesamtfixkosten und Stückpreis und verlässt die Definition der Deckungsquote. 10 000 Räder wären außerdem zu wenig, weil $10\\,000\\times 220=2\\,200\\,000$ die Fixkosten nicht decken.\n\nDie Aussage ist falsch.",
+      "Probe der Break-even-Gleichung. Wenn $U=7\\,272\\,727{,}27$ und die Quote 55 Prozent beträgt, dann gilt\n\n$$0{,}55\\times 7\\,272\\,727{,}27=4\\,000\\,000.$$\n\nDie kumulierten Deckungsbeiträge treffen genau die Fixkosten, Gewinn ist an diesem Punkt noch null. Die Probe bestätigt, dass die Division $4\\,000\\,000/0{,}55$ umkehrbar ist und nicht durch Multiplikation $4\\,000\\,000\\times 0{,}55$ ersetzt werden darf.\n\nDie Aussage ist wahr.",
+      "Ein Hundertachtzig Euro sind ein Geldbetrag je Rad, keine Quote. Die Deckungsquote ist ein Prozentsatz vom Verkaufspreis, hier 55 Prozent. Variable Kosten 180 Euro erklären, warum nach dem Preis 220 Euro Beitrag bleiben, sie sind aber nicht selbst die Quote. Eine Gleichsetzung von 180 Euro mit der Deckungsquote vermischt Stückkosten und Verhältniszahl.\n\nDie Aussage ist falsch.",
+      "Fünfundünfzig Cent je Euro Umsatz, in Euro geschrieben 0,55. Nach Abzug der variablen 45 Prozent vom Umsatz-Euro bleiben 55 Cent für Miete, Versicherung, Geschäftsführungsgehälter und den übrigen Fixkostenblock, soweit sie im Beispiel als Fixkosten gelten. $1-180/400=1-0{,}45=0{,}55$. Genau dieser Rest finanziert die 4 Millionen, sobald der Umsatz die Break-even-Marke erreicht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.44",
+    "title": "Stückzahl am Break-even",
+    "context": "Aus Preis, variablen Kosten und Fixkosten des Buchbeispiels lässt sich auch die Stückzahl ablesen, bei der die Summe der Deckungsbeiträge die Fixkosten trifft.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Break-even-Stückzahl beträgt 4 000 000 geteilt durch 220, also rund 18 182 Fahrräder.",
+      "Die Break-even-Stückzahl beträgt 4 000 000 geteilt durch 400, also 10 000 Fahrräder.",
+      "18 182 Fahrräder mal 400 Euro ergeben rund 7 272 800 Euro und treffen damit den Break-even-Umsatz.",
+      "10 000 verkaufte Fahrräder reichen aus, um die Fixkosten vollständig zu decken.",
+      "20 000 Fahrräder liefern 4 400 000 Euro Deckungsbeitrag und liegen damit über den Fixkosten."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Fixkosten durch Stückbeitrag, das ist die Mengenschwelle. Jedes Rad bringt 220 Euro. Also\n\n$$n=\\frac{4\\,000\\,000}{220}=18\\,181{,}\\overline{81}\\approx 18\\,182.$$\n\nBei dieser Stückzahl ist $n\\times 220=4\\,000\\,000$. Das ist dieselbe Schwelle wie der Break-even-Umsatz, nur in Rädern statt in Euro. Die Division durch 180 oder durch 400 beantwortet eine andere Frage.\n\nDie Aussage ist wahr.",
+      "Division durch den Preis unterstellt, der gesamte Verkaufspreis stünde für Fixkosten bereit. $4\\,000\\,000/400=10\\,000$. Tatsächlich müssen zuerst 180 Euro variable Kosten je Rad verdient werden. 10 000 Räder bringen nur $10\\,000\\times 220=2\\,200\\,000$ Euro Beitrag, die Hälfte der Fixkosten. Die richtige Nennergröße ist der Deckungsbeitrag 220, nicht der Preis 400.\n\nDie Aussage ist falsch.",
+      "Stückzahl mal Preis schließt die Brücke zum Umsatz. $18\\,181{,}\\overline{81}\\times 400=7\\,272\\,727{,}27$, gerundet auf ganze Räder etwa $18\\,182\\times 400=7\\,272\\,800$. Das liegt an der Break-even-Umsatzzeile 7 272 727,27 Euro. Alternativ: $18\\,181{,}\\overline{81}\\times 220=4\\,000\\,000$. Beide Wege, Umsatzquote und Stückbeitrag, treffen denselben Punkt.\n\nDie Aussage ist wahr.",
+      "Zehntausend Räder lassen 1,8 Millionen ungedeckt. $10\\,000\\times 220=2\\,200\\,000$. Die Fixkosten sind 4 000 000, Restlücke $1\\,800\\,000$. Auch als Umsatz: $10\\,000\\times 400=4\\,000\\,000$, davon 55 Prozent nur 2 200 000. Die Behauptung, 10 000 Stück reichten, verwechselt den Umsatz 4 Millionen mit der Fixkostendeckung. Am Break-even braucht man rund 18 182 Räder.\n\nDie Aussage ist falsch.",
+      "Zwanzigtausend Räder liegen klar über der Schwelle. $20\\,000\\times 220=4\\,400\\,000$. Das übersteigt 4 000 000 um 400 000 Euro, also Gewinn nach den Annahmen des Beispiels. Als Umsatz: $20\\,000\\times 400=8\\,000\\,000$ und $8\\,000\\,000\\times 0{,}55=4\\,400\\,000$. Die Aussage vergleicht den kumulierten Deckungsbeitrag mit den Fixkosten und trifft die Gewinnzone.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.45",
+    "title": "Umsatz 4 Millionen gegen 7 Millionen gegen 8 Millionen",
+    "context": "Prüfen Sie an den Kennzahlen des Beispiels, ob ausgewählte Umsätze die Fixkosten decken.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei 4 Millionen Euro Umsatz entstehen nur 2 200 000 Euro Deckungsbeitrag, die Fixkosten bleiben unterdeckt.",
+      "Ein Umsatz von 4 Millionen Euro liegt bereits am Break-even-Punkt.",
+      "Bei 8 Millionen Euro Umsatz entstehen 4 400 000 Euro Deckungsbeitrag, also 400 000 Euro über den Fixkosten.",
+      "Bei 7 Millionen Euro Umsatz entstehen 3 850 000 Euro Deckungsbeitrag, die Fixkosten sind noch nicht voll gedeckt.",
+      "Ein Umsatz von 7 Millionen Euro liegt bereits in der Gewinnzone."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Vier Millionen Umsatz mal Quote ergibt den halben Fixkostenbedarf. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$. Gegenüber 4 000 000 Fixkosten fehlt $1\\,800\\,000$. Denselben Betrag erhält man über die Stückzahl: $4\\,000\\,000/400=10\\,000$ Räder und $10\\,000\\times 220=2\\,200\\,000$. 4 Millionen sind die Fixkostenzeile, nicht der Break-even-Umsatz.\n\nDie Aussage ist wahr.",
+      "Break-even und Fixkostenbetrag fallen auseinander, sobald die Quote unter 100 Prozent liegt. Der Break-even-Umsatz ist $4\\,000\\,000/0{,}55=7\\,272\\,727{,}27$, nicht 4 000 000. Bei 4 Millionen Umsatz bleiben 1,8 Millionen Fixkosten offen. Die Aussage setzt den Fixkostenblock mit der Umsatzschwelle gleich und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Acht Millionen liegen über der 7,27-Millionen-Marke. $8\\,000\\,000\\times 0{,}55=4\\,400\\,000$. $4\\,400\\,000-4\\,000\\,000=400\\,000$ Euro über den Fixkosten, also Gewinn nach dem Beispiel. Als Stückzahl: $8\\,000\\,000/400=20\\,000$ und $20\\,000\\times 220=4\\,400\\,000$. Die Rechnung bestätigt die Gewinnzone oberhalb des Break-even.\n\nDie Aussage ist wahr.",
+      "Sieben Millionen bleiben knapp unter der Schwelle. $7\\,000\\,000\\times 0{,}55=3\\,850\\,000$. Gegen 4 000 000 fehlt $150\\,000$. $7\\,000\\,000$ ist kleiner als $7\\,272\\,727{,}27$. Als Stückzahl: $7\\,000\\,000/400=17\\,500$ und $17\\,500\\times 220=3\\,850\\,000$. Die Fixkosten sind noch nicht voll gedeckt, Gewinn entsteht hier nicht.\n\nDie Aussage ist wahr.",
+      "Gewinnzone beginnt erst oberhalb von knapp 7,3 Millionen. 7 000 000 liegen darunter, der Beitrag 3 850 000 unterschreitet 4 000 000. Das Buch setzt die Gewinnzone ausdrücklich an höheren Umsatz als den Break-even, nicht an jede Zahl in der Nähe von 7 Millionen. 150 000 Euro Unterdeckung bleiben Unterdeckung, auch wenn 7 Millionen nach 4 Millionen groß wirken.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.46",
+    "title": "Identitäten von Preis, Beitrag und Break-even",
+    "context": "Ein Unternehmen erzeugt ein Fahrrad zu den folgenden Kostenrechnungsgrößen (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Deckungsbeitrag plus variable Kosten ergeben den Preis: 220 plus 180 gleich 400.",
+      "Break-even-Umsatz mal Deckungsquote ergibt die Fixkosten: 7 272 727,27 mal 0,55 gleich 4 000 000.",
+      "Am Break-even-Punkt ist die Summe der Deckungsbeiträge gleich den Fixkosten.",
+      "Am Break-even-Punkt ist der Umsatz gleich den Fixkosten, also 4 Millionen Euro.",
+      "Insgesamt sollte der Preis variable und fixe Kosten decken, nicht nur die 180 Euro je Rad."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Addition kehrt die Definitionsgleichung um. $\\mathrm{DB}=\\text{Preis}-\\text{variable Kosten}$ ist gleichbedeutend mit $\\text{Preis}=\\mathrm{DB}+\\text{variable Kosten}$. Einsetzen: $220+180=400$. Die Probe bestätigt, dass keine dritte Kostenart in der Stückzeile steckt. 220 und 180 sind die beiden Teile des Preises, 55 Prozent und 45 Prozent dieselben Teile als Anteile.\n\nDie Aussage ist wahr.",
+      "Umkehr der Break-even-Formel. $U=F/q$ impliziert $U\\cdot q=F$. Zahlen:\n\n$$7\\,272\\,727{,}27\\times 0{,}55=4\\,000\\,000.$$\n\nDie Probe zeigt, dass 7 272 727,27 Euro kein geratener Umsatz sind, sondern genau der Betrag, dessen 55 Prozent die 4 Millionen treffen. Wer $7\\,272\\,727{,}27\\times 0{,}45$ bildete, erhielte die variablen Kosten im Break-even-Umsatz, nicht die Fixkosten.\n\nDie Aussage ist wahr.",
+      "Nullgewinn heißt: Beiträge tragen den Fixkostenblock, mehr nicht. Break-even-Umsatz oder Break-even-Point ist die Schwelle, an der das Unternehmen in die Gewinnzone kommt, also gerade alle Kosten deckt. $n\\times 220=4\\,000\\,000$ und $U\\times 0{,}55=4\\,000\\,000$ sind dieselbe Bedingung. Darunter bleibt Unterdeckung, darüber Gewinn. Die Aussage trifft diese Gleichheit, ohne Umsatz und Fixkosten zu vertauschen.\n\nDie Aussage ist wahr.",
+      "Umsatz gleich Fixkosten gilt nur bei 100 Prozent Deckungsquote. Hier sind 55 Prozent aktiv, also muss der Umsatz größer sein als 4 000 000. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000\\neq 4\\,000\\,000$. Der Break-even-Umsatz der Tabelle ist 7 272 727,27 Euro. Die Behauptung, am Break-even sei der Umsatz 4 Millionen, wiederholt den Fixkostenbetrag und verfehlt die Division durch 0,55.\n\nDie Aussage ist falsch.",
+      "Langfristig zählt die volle Deckung. Die variablen 180 Euro sind die Untergrenze je Stück, der Deckungsbeitrag 220 Euro trägt die Fixkosten, und insgesamt sollte der Preis variable und fixe Kosten decken. Kurzfristige Ausnahmen für unverkäufliche Vorsaisonware ändert diese Zielgröße nicht. Der Satz hält das Soll fest, das das Buch nach der Definition des Deckungsbeitrags nennt, ohne neue Kostenposten zu erfinden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.47",
+    "title": "Falsche Nenner in der Break-even-Rechnung",
+    "context": "Dieselben sechs Kennzahlen des Kostenrechnungsbeispiels. Prüfen Sie, welche Rechenwege den Break-even treffen.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 220 und dann mal 100.",
+      "Der Break-even-Umsatz beträgt 4 000 000 dividiert durch 55 und multipliziert mal 100.",
+      "Die Deckungsquote ergibt sich als 400 geteilt durch 180.",
+      "Zuerst 400 minus 180, danach 220 geteilt durch 400, ergibt die Deckungsquote 55 Prozent.",
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 180."
+    ],
+    "answer_key": [false, true, false, true, false],
+    "tactical_explanations": [
+      "Division der Fixkosten durch den Stückbeitrag liefert Räder, nicht Euro-Umsatz mit einem Faktor 100. $4\\,000\\,000/220\\approx 18\\,182$ Stück. Mal 100 wäre etwa 1,82 Millionen und liegt weit neben $7\\,272\\,727{,}27$. Der Faktor 100 gehört zur Prozentrechnung $4\\,000\\,000/55\\times 100$, weil 55 die Prozentzahl zur Quote 0,55 ist, nicht der Euro-Beitrag 220. Wer 220 in die Umsatzformel mit mal 100 steckt, mischt Stückformel und Prozentformel.\n\nDie Aussage ist falsch.",
+      "Genau der Rechenweg des Buchs. 55 Prozent der Verkaufspreise decken die Fixkosten. Setzt man 4 Millionen gleich 55 Prozent, dann sind 100 Prozent\n\n$$\\frac{4\\,000\\,000}{55}\\times 100=7\\,272\\,727{,}27.$$\n\nDasselbe als $4\\,000\\,000/0{,}55$. Die Aussage trifft die Formel, mit der das Zahlenbeispiel den Break-even-Umsatz bestimmt.\n\nDie Aussage ist wahr.",
+      "Preis durch variable Kosten ist kein Deckungsprozentsatz. $400/180\\approx 2{,}22$, also rund 222 Prozent, was weder 55 Prozent noch 45 Prozent ist. Die Quote ist $220/400=0{,}55$. $400/180$ misst, wie oft die variablen Kosten in den Preis passen, und beantwortet die Break-even-Frage nicht. Die Tabelle nennt 55 Prozent, nicht 222 Prozent.\n\nDie Aussage ist falsch.",
+      "Zwei Schritte, eine Quote. Zuerst der Beitrag: $400-180=220$. Dann der Anteil am Preis: $220/400=0{,}55=55$ Prozent. Das ist die Definition der Deckungsquote im Buch. Die Reihenfolge darf nicht zu $180/400$ oder $400/180$ umgebogen werden. 55 Prozent tragen später die Division der 4 Millionen.\n\nDie Aussage ist wahr.",
+      "Division durch 180 verwendet die variablen Kosten als Nenner. $4\\,000\\,000/180\\approx 22\\,222$. Das wäre eine Stückzahl, bei der die Summe der variablen Kosten 4 Millionen erreichte, nicht die Summe der Deckungsbeiträge. Als Pseudo-Umsatz $22\\,222\\times 400\\approx 8{,}89$ Millionen neben den echten 7,27 Millionen. Der richtige Stücknenner ist 220, der richtige Umsatznenner 0,55.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.48",
+    "title": "Break-even-Probe und Existenzsicherung",
+    "context": "Ein Fahrradproduzent kennt Preis, variable Kosten, Deckungsbeitrag, Deckungsquote, Fixkosten und Break-even-Umsatz wie im Buch.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "7 272 727,27 Euro geteilt durch 400 Euro ergibt dieselbe Break-even-Stückzahl wie 4 000 000 geteilt durch 220.",
+      "Der Deckungsbeitrag je Rad beträgt 180 Euro, daher liegt der Break-even-Umsatz bei 4 000 000 geteilt durch 0,45.",
+      "Knapp 7,3 Millionen Euro Umsatz decken zumindest alle Kosten; höherer Umsatz führt in die Gewinnzone und sichert die Existenz im Sinn des Abschnitts.",
+      "Weil die Fixkosten 4 Millionen Euro betragen, ist der Break-even-Umsatz 4 Millionen Euro.",
+      "Bei einem Umsatz von 7 272 727,27 Euro bleiben nach variablen Kosten genau 4 000 000 Euro zur Fixkostendeckung, der Gewinn ist an diesem Punkt null."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Zwei Nenner, eine Stückzahl. Umsatzweg: $7\\,272\\,727{,}27/400=18\\,181{,}\\overline{81}$. Beitragsweg: $4\\,000\\,000/220=18\\,181{,}\\overline{81}$. Die Gleichheit folgt daraus, dass $220/400=0{,}55$ und $4\\,000\\,000/0{,}55=7\\,272\\,727{,}27$. Wer $7\\,272\\,727{,}27/180$ oder $4\\,000\\,000/400$ bildete, landete bei anderen Größen. Die Probe zeigt, dass Umsatzbreak-even und Stückbreak-even dasselbe Ereignis beschreiben.\n\nDie Aussage ist wahr.",
+      "Die Kette beginnt mit der falschen 180-Euro-Verwechslung. Der Deckungsbeitrag ist $400-180=220$, nicht 180. Die Quote ist 55 Prozent, nicht $180/400=45$ Prozent. $4\\,000\\,000/0{,}45\\approx 8\\,888\\,889$ Euro wäre ein anderer Umsatz und nicht der Tabellenwert 7 272 727,27. Sowohl der Zählerbeitrag als auch der Nenner der Umsatzformel sind vertauscht. Die Aussage ist in beiden Teilen falsch.\n\nDie Aussage ist falsch.",
+      "Kostendeckung ist hier die Existenzbedingung. Das Unternehmen soll zumindest knapp 7,3 Millionen Umsatz machen, um zumindest alle Kosten zu decken. $7\\,272\\,727{,}27$ rundet auf knapp 7,3 Millionen. Bei höherem Umsatz kommt es in die Gewinnzone und sichert damit seine Existenz. Auf Dauer kann kein Unternehmen existieren, wenn Kosten durch Erträge nicht gedeckt sind. Der Break-even-Punkt ist genau diese Schwelle im Zahlenbeispiel.\n\nDie Aussage ist wahr.",
+      "Vier Millionen als Umsatzschwelle wiederholt den bekannten Fixkostenfehler. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000\\neq 4\\,000\\,000$. Der Break-even-Umsatz der Rechnung und der Tabelle ist 7 272 727,27 Euro. Nur bei einer Deckungsquote von 100 Prozent fielen Fixkostenbetrag und nötiger Umsatz zusammen. 55 Prozent erzwingen den höheren Umsatz. Die Aussage bleibt falsch.\n\nDie Aussage ist falsch.",
+      "Nullgewinn als Probe, nicht als Widerspruch zur Gewinnzone. Variable Kosten im Break-even-Umsatz: $7\\,272\\,727{,}27\\times 0{,}45=3\\,272\\,727{,}27$. Rest: $7\\,272\\,727{,}27-3\\,272\\,727{,}27=4\\,000\\,000$, oder direkt $7\\,272\\,727{,}27\\times 0{,}55=4\\,000\\,000$. Die Fixkosten sind getroffen, ein Überschuss bleibt nicht. Gewinn entsteht erst darüber. Die Aussage beschreibt den Break-even-Punkt als volle Deckung ohne Gewinn, genau so wie das Buch die Schwelle vor der Gewinnzone setzt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

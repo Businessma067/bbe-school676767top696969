@@ -1,0 +1,590 @@
+[
+  {
+    "case_id": "MATH 12.204",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 6",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A youth council chooses three representatives from eight juniors and six seniors. The probability that no senior is chosen is greater than $16\\%$.",
+      "Of 120 recreation members, 51 use the gym, 44 use the pool, and 19 use both. More than $75$ members use at least one facility.",
+      "A king has already been drawn from a standard deck and is not replaced. The probability that the next card is a king is greater than $5.9\\%$.",
+      "A spinner awards $-1$, $0$, or $1$ point with probabilities $\\frac15$, $\\frac12$, and $\\frac3{10}$. The expected score is greater than $0.05$.",
+      "Three possible faults have priors $\\frac12$, $\\frac3{10}$, and $\\frac15$. Their alarm probabilities are $\\frac1{10}$, $\\frac25$, and $\\frac12$. After an alarm, the probability of fault 2 is greater than $45\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe probability of choosing three juniors from eight, with six seniors also available, is\n\n$$\nP = \\frac{\\binom{8}{3}}{\\binom{14}{3}} = \\frac{56}{364} = \\frac{2}{13}\n$$\n\n$$\n\\approx 0.153846\n$$\n\nExpressed as a percentage, this is approximately $15.385\\%$. The claim states that this probability is greater than $16\\%$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThis claim asks how many recreation members use at least one of the gym and the pool. With $N(G)=51$, $N(P)=44$, and $N(G\\cap P)=19$, inclusion-exclusion recovers the union:\n\n$$\nN(G\\cup P) = N(G)+N(P)-N(G\\cap P)\n$$\n\n$$\nN(G\\cup P) = 51+44-19\n$$\n\n$$\n51 + 44 = 95\n$$\n\n$$\n95 - 19 = 76\n$$\n\nExactly $76$ members use at least one facility. The claim states that more than $75$ do so.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nAfter one king is removed, three kings remain among $51$ cards:\n\n$$\nP = \\frac{3}{51} = \\frac{1}{17}\n$$\n\n$$\n\\approx 0.058824\n$$\n\nExpressed as a percentage, this is approximately $5.882\\%$. The claim states that this probability is greater than $5.9\\%$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThis claim asks for the expected spinner score. Weight each point value by its probability:\n\n$$\nE(X) = (-1)\\cdot\\frac{1}{5}+0\\cdot\\frac{1}{2}+1\\cdot\\frac{3}{10}\n$$\n\n$$\nE(X) = -\\frac{1}{5}+\\frac{3}{10} = \\frac{1}{10} = 0.1\n$$\n\nThe expected score is $0.1$. The claim states that it is greater than $0.05$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThe joint alarm weights are\n\n$$\nw_1 = \\frac{1}{2}\\cdot\\frac{1}{10} = \\frac{1}{20}\n$$\n\n$$\nw_2 = \\frac{3}{10}\\cdot\\frac{2}{5} = \\frac{3}{25}\n$$\n\n$$\nw_3 = \\frac{1}{5}\\cdot\\frac{1}{2} = \\frac{1}{10}\n$$\n\n$$\nP(A) = \\frac{1}{20}+\\frac{3}{25}+\\frac{1}{10} = \\frac{5+12+10}{100} = \\frac{27}{100}\n$$\n\n$$\nP(F_2\\mid A) = \\frac{3/25}{27/100} = \\frac{12}{27} = \\frac{4}{9}\n$$\n\n$$\n\\approx 0.444444\n$$\n\nExpressed as a percentage, this is approximately $44.444\\%$. The claim states that this probability is greater than $45\\%$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A counts junior-only councils. Letter B recovers a gym-or-pool union. Letter C updates a king probability without replacement. Letter D computes a spinner expectation. Letter E applies Bayes' theorem after an alarm among three faults.",
+    "title_de_existing": "Klausuraufgabe 204",
+    "context_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.",
+    "statements_de_existing": [
+      "Ein youth council chooses three representatives aus eight juniors und six seniors. die Wahrscheinlichkeit, dass no senior ist chosen ist größer als $16%.",
+      "Von 120 recreation members, 51 use die gym, 44 use die pool, und 19 use both. mehr als $75$ members use mindestens one facility.",
+      "Ein king hat already gewesen drawn aus ein standard deck und ist not replaced. die Wahrscheinlichkeit, dass die next card ist ein king ist größer als $5.9%.",
+      "Ein spinner awards $-1$, $0$, oder $1$ point mit probabilities $\\frac15$, $\\frac12$, und $\\frac3{10}$. die expected score ist größer als $0.05$.",
+      "Three possible faults haben priors $\\frac12$, $\\frac3{10}$, und $\\frac15$. ihre alarm probabilities sind $\\frac1{10}$, $\\frac25$, und $\\frac12$. After ein alarm, die Wahrscheinlichkeit von fault 2 ist größer als $45%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Ein youth council chooses three representatives aus eight juniors und six seniors. die Wahrscheinlichkeit, dass no senior ist chosen ist größer als $16\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP = \\frac{\\binom{8}{3}}{\\binom{14}{3}} = \\frac{56}{364} = \\frac{2}{13}\n$$\n\n$$\n\\approx 0.153846\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Von 120 recreation members, 51 use die gym, 44 use die pool, und 19 use both. mehr als $75$ members use mindestens one facility. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(G\\cup P) = N(G)+N(P)-N(G\\cap P)\n$$\n\n$$\nN(G\\cup P) = 51+44-19\n$$\n\n$$\n51 + 44 = 95\n$$\n\n$$\n95 - 19 = 76\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Falsch\n\nAussage C: Ein king hat already gewesen drawn aus ein standard deck und ist not replaced. die Wahrscheinlichkeit, dass die next card ist ein king ist größer als $5.9\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP = \\frac{3}{51} = \\frac{1}{17}\n$$\n\n$$\n\\approx 0.058824\n$$\n\nDie Aussage ist falsch.\n",
+      "**D.** → Richtig\n\nAussage D: Ein spinner awards $-1$, $0$, oder $1$ point mit probabilities $\\frac15$, $\\frac12$, und $\\frac3{10}$. die expected score ist größer als $0.05$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X) = (-1)\\cdot\\frac{1}{5}+0\\cdot\\frac{1}{2}+1\\cdot\\frac{3}{10}\n$$\n\n$$\nE(X) = -\\frac{1}{5}+\\frac{3}{10} = \\frac{1}{10} = 0.1\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Three possible faults haben priors $\\frac12$, $\\frac3{10}$, und $\\frac15$. ihre alarm probabilities sind $\\frac1{10}$, $\\frac25$, und $\\frac12$. After ein alarm, die Wahrscheinlichkeit von fault 2 ist größer als $45\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nw_1 = \\frac{1}{2}\\cdot\\frac{1}{10} = \\frac{1}{20}\n$$\n\n$$\nw_2 = \\frac{3}{10}\\cdot\\frac{2}{5} = \\frac{3}{25}\n$$\n\n$$\nw_3 = \\frac{1}{5}\\cdot\\frac{1}{2} = \\frac{1}{10}\n$$\n\n$$\nP(A) = \\frac{1}{20}+\\frac{3}{25}+\\frac{1}{10} = \\frac{5+12+10}{100} = \\frac{27}{100}\n$$\n\n$$\nP(F_2\\mid A) = \\frac{3/25}{27/100} = \\frac{12}{27} = \\frac{4}{9}\n$$\n\n$$\n\\approx 0.444444\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung."
+  },
+  {
+    "case_id": "MATH 12.207",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 9",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A fair six-sided die determines a delivery priority from one through six. The variance of that priority is greater than $3$.",
+      "Exactly one sensor is faulty: priors for sensors 1, 2, and 3 are $0.1$, $0.2$, and $0.7$, with alarm rates $0.9$, $0.6$, and $0.1$. After an alarm, the probability it is sensor 3 is greater than $24\\%$.",
+      "Four distinct novels are shuffled onto a shelf. The probability that one predetermined title order appears is greater than $4.1\\%$.",
+      "Festival bookings show 68 jazz tickets, 52 theatre tickets, and 94 patrons with at least one type. Exactly $27$ patrons booked both.",
+      "Across 80 rainy-or-dry mornings, 30 are rainy, umbrellas appear on 34, and both occur on 24. Given an umbrella, the probability of rain is greater than $70\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nFor a fair die $X\\in\\{1,\\ldots,6\\}$,\n\n$$\nE(X) = \\frac{7}{2}\n$$\n\n$$\nE(X^2) = \\frac{91}{6}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{91}{6}-\\left(\\frac{7}{2}\\right)^2 = \\frac{35}{12}\n$$\n\n$$\n\\approx 2.9167\n$$\n\nThe variance is approximately $2.917$. The claim states that it is greater than $3$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe joint alarm weights are $0.1\\cdot 0.9=0.09$, $0.2\\cdot 0.6=0.12$, and $0.7\\cdot 0.1=0.07$, totaling $0.28$. Sensor 3's posterior is\n\n$$\nP(S_3\\mid A) = \\frac{0.07}{0.28} = \\frac{1}{4} = 0.25\n$$\n\nExpressed as a percentage, this is $25\\%$. The claim states that this probability is greater than $24\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThere are $4!=24$ equally likely orders, so one predetermined order has probability\n\n$$\nP = \\frac{1}{24}\n$$\n\n$$\n\\approx 0.041667\n$$\n\nExpressed as a percentage, this is approximately $4.167\\%$. The claim states that this probability is greater than $4.1\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks how many patrons booked both jazz and theatre tickets. Inclusion-exclusion recovers the intersection from the union:\n\n$$\n94 = 68+52-N(J\\cap T)\n$$\n\n$$\nN(J\\cap T) = 26\n$$\n\nExactly $26$ patrons booked both. The claim states that the count is $27$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks for the probability of rain given that an umbrella appears. Among the $34$ umbrella mornings, $24$ are rainy:\n\n$$\nP(R\\mid U) = \\frac{24}{34} = \\frac{12}{17}\n$$\n\n$$\n\\approx 0.705882\n$$\n\nExpressed as a percentage, this is approximately $70.588\\%$. The claim states that this probability is greater than $70\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A computes the variance of a fair die face. Letter B applies Bayes' theorem after a sensor alarm. Letter C counts a single predetermined permutation of four novels. Letter D recovers a both-ticket booking count. Letter E conditions rain on umbrella mornings.",
+    "title_de_existing": "Klausuraufgabe 9",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Ein fairer sechsseitiger Würfel bestimmt eine Lieferpriorität von eins bis sechs. Die Varianz dieser Priorität ist größer als $3$.",
+      "Genau ein Sensor ist fehlerhaft: A-priori für Sensoren 1, 2 und 3 sind $0{,}1$, $0{,}2$ und $0{,}7$, mit Alarmraten $0{,}9$, $0{,}6$ und $0{,}1$. Nach einem Alarm ist die Wahrscheinlichkeit für Sensor 3 größer als $24\\%$.",
+      "Vier verschiedene Romane werden zufällig ins Regal gestellt. Die Wahrscheinlichkeit, dass eine vorgegebene Titelreihenfolge erscheint, ist größer als $4{,}1\\%$.",
+      "Festivalbuchungen zeigen 68 Jazz- und 52 Theaterkarten sowie 94 Gäste mit mindestens einem Typ. Genau $27$ Gäste buchten beide.",
+      "An 80 regen- oder trockenen Morgen sind 30 regnerisch, Schirme erscheinen an 34, und beides an 24. Gegeben Schirm ist die Regenwahrscheinlichkeit größer als $70\\%$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Ein fairer sechsseitiger Würfel bestimmt eine Lieferpriorität von eins bis sechs. Die Varianz dieser Priorität ist größer als $3$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nE(X) = \\frac{7}{2}\n$$\n\n$$\nE(X^2) = \\frac{91}{6}\n$$\n\n$$\n\\operatorname{Var}(X) = \\frac{91}{6}-\\left(\\frac{7}{2}\\right)^2 = \\frac{35}{12}\n$$\n\n$$\n\\approx 2.9167\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Richtig\n\nAussage B: Genau ein Sensor ist fehlerhaft: A-priori für Sensoren 1, 2 und 3 sind $0{,}1$, $0{,}2$ und $0{,}7$, mit Alarmraten $0{,}9$, $0{,}6$ und $0{,}1$. Nach einem Alarm ist die Wahrscheinlichkeit für Sensor 3 größer als $24\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(S_3\\mid A) = \\frac{0.07}{0.28} = \\frac{1}{4} = 0.25\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Vier verschiedene Romane werden zufällig ins Regal gestellt. Die Wahrscheinlichkeit, dass eine vorgegebene Titelreihenfolge erscheint, ist größer als $4{,}1\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP = \\frac{1}{24}\n$$\n\n$$\n\\approx 0.041667\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Festivalbuchungen zeigen 68 Jazz- und 52 Theaterkarten sowie 94 Gäste mit mindestens einem Typ. Genau $27$ Gäste buchten beide. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n94 = 68+52-N(J\\cap T)\n$$\n\n$$\nN(J\\cap T) = 26\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: An 80 regen- oder trockenen Morgen sind 30 regnerisch, Schirme erscheinen an 34, und beides an 24. Gegeben Schirm ist die Regenwahrscheinlichkeit größer als $70\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(R\\mid U) = \\frac{24}{34} = \\frac{12}{17}\n$$\n\n$$\n\\approx 0.705882\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch. Bewerten Sie jede Aussage mit Wahr oder Falsch.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.208",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 10",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Lines A and B make $70\\%$ and $30\\%$ of bolts, with defect rates $2\\%$ and $8\\%$. Given a defect, the probability it came from line B is greater than $64\\%$.",
+      "A lock chooses an ordered code of three distinct digits from zero through nine, allowing zero first. The probability that its first digit is even is greater than $51\\%$.",
+      "An insurer lists 54 dental policies, 49 vision policies, and 16 covering both. Exactly $71$ policies have exactly one of these benefits.",
+      "A clinic records 120 patients: 45 have fever, 50 have cough, and 20 have both. For a patient with fever, the probability of cough is greater than $45\\%$.",
+      "A parcel insurer observes zero, two, or five damaged items with probabilities $\\frac35$, $\\frac3{10}$, and $\\frac1{10}$. The mean damage count is greater than $1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe joint defect weights are $0.70\\cdot 0.02=0.014$ and $0.30\\cdot 0.08=0.024$, totaling $0.038$. Then\n\n$$\nP(B\\mid D) = \\frac{0.024}{0.038} = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.631579\n$$\n\nExpressed as a percentage, this is approximately $63.158\\%$. The claim states that this probability is greater than $64\\%$.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nThe first digit is chosen from $\\{0,1,\\ldots,9\\}$ with ten equally likely options, of which five are even ($0,2,4,6,8$):\n\n$$\nP(\\text{first even}) = \\frac{5}{10} = \\frac{1}{2} = 0.5\n$$\n\nExpressed as a percentage, this is $50\\%$. The claim states that this probability is greater than $51\\%$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nThis claim asks how many policies have exactly one of dental or vision coverage. Starting from the two marginal counts and the both-count,\n\n$$\nN(\\text{exactly one}) = N(D)+N(V)-2N(D\\cap V)\n$$\n\n$$\nN(\\text{exactly one}) = 54+49-2\\cdot 16 = 71\n$$\n\nExactly $71$ policies have exactly one of these benefits. The claim states that the count is $71$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks for the probability of cough given fever. Among the $45$ patients with fever, $20$ also have cough:\n\n$$\nP(\\text{cough}\\mid\\text{fever}) = \\frac{20}{45} = \\frac{4}{9}\n$$\n\n$$\n\\approx 0.444444\n$$\n\nExpressed as a percentage, this is approximately $44.444\\%$. The claim states that this probability is greater than $45\\%$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks for the mean number of damaged items. Weight each possible count by its probability:\n\n$$\nE(X) = 0\\cdot\\frac{3}{5}+2\\cdot\\frac{3}{10}+5\\cdot\\frac{1}{10} = \\frac{6}{10}+\\frac{5}{10} = \\frac{11}{10} = 1.1\n$$\n\nThe mean is $1.1$. The claim states that it is greater than $1$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Five separate checks. Letter A applies Bayes' theorem after a defective bolt. Letter B counts codes whose first digit is even. Letter C recovers an exactly-one policy count. Letter D conditions cough on fever. Letter E computes the mean of a discrete damage count.",
+    "title_de_existing": "Klausuraufgabe 208",
+    "context_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.",
+    "statements_de_existing": [
+      "Lines ein und B make $70% und $30% von bolts, mit defect rates $2% und $8%. gegeben ein defect, die Wahrscheinlichkeit it came aus line B ist größer als $64%.",
+      "Ein lock chooses ein ordered code von three distinct digits aus zero through nine, allowing zero first. die Wahrscheinlichkeit, dass its first digit ist even ist größer als $51%.",
+      "Ein insurer lists 54 dental policies, 49 vision policies, und 16 covering both. genau $71$ policies haben genau one von diese benefits.",
+      "Ein clinic records 120 patients: 45 haben fever, 50 haben cough, und 20 haben both. für ein patient mit fever, die Wahrscheinlichkeit von cough ist größer als $45%.",
+      "Ein parcel insurer observes zero, two, oder five damaged items mit probabilities $\\frac35$, $\\frac3{10}$, und $\\frac1{10}$. die mean damage count ist größer als $1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nAussage A: Lines ein und B make $70\\%$ und $30\\%$ von bolts, mit defect rates $2\\%$ und $8\\%$. gegeben ein defect, die Wahrscheinlichkeit it came aus line B ist größer als $64\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(B\\mid D) = \\frac{0.024}{0.038} = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.631579\n$$\n\nDie Aussage ist falsch.\n",
+      "**B.** → Falsch\n\nAussage B: Ein lock chooses ein ordered code von three distinct digits aus zero through nine, allowing zero first. die Wahrscheinlichkeit, dass its first digit ist even ist größer als $51\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{first even}) = \\frac{5}{10} = \\frac{1}{2} = 0.5\n$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Richtig\n\nAussage C: Ein insurer lists 54 dental policies, 49 vision policies, und 16 covering both. genau $71$ policies haben genau one von diese benefits. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{Genau eins}) = N(D)+N(V)-2N(D\\cap V)\n$$\n\n$$\nN(\\text{Genau eins}) = 54+49-2\\cdot 16 = 71\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Ein clinic records 120 patients: 45 haben fever, 50 haben cough, und 20 haben both. für ein patient mit fever, die Wahrscheinlichkeit von cough ist größer als $45\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{cough}\\mid\\text{fever}) = \\frac{20}{45} = \\frac{4}{9}\n$$\n\n$$\n\\approx 0.444444\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Ein parcel insurer observes zero, two, oder five damaged items mit probabilities $\\frac35$, $\\frac3{10}$, und $\\frac1{10}$. die mean damage count ist größer als $1$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X) = 0\\cdot\\frac{3}{5}+2\\cdot\\frac{3}{10}+5\\cdot\\frac{1}{10} = \\frac{6}{10}+\\frac{5}{10} = \\frac{11}{10} = 1.1\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Bewerten Sie jede Aussage. Markieren Sie sie als wahr oder falsch.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung."
+  },
+  {
+    "case_id": "MATH 12.209",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Exam-style tasks - 11",
+    "context_en": "A jar contains 5 red, 4 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{12}{2}=66$ equally likely pairs, and color events may overlap only through the two selected tokens.",
+    "statements_en": [
+      "The probability of two red tokens is greater than $15\\%$.",
+      "The probability of one red and one blue is greater than $30\\%$.",
+      "The probability of no green token is greater than $54\\%$.",
+      "The probability of at least one green token is greater than $46\\%$.",
+      "The two draws are independent."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the probability that both selected tokens are red. Because the two tokens are drawn together without replacement, every unordered pair from the twelve tokens is equally likely. The favorable pairs are the ways to choose two red tokens from the five red tokens, and the total number of pairs is $\\binom{12}{2}=66$ from the overview.\n\n$$\n\\binom{12}{2} = \\dfrac{12!}{2!(12-2)!}\n$$\n\n$$\n\\dfrac{12!}{2!(10)!} = \\dfrac{12 \\cdot 11}{1 \\cdot 2}\n$$\n\n$$\n12 \\cdot 11 = 132\n$$\n\n$$\n\\dfrac{132}{2} = 66\n$$\n\n$$\n\\binom{12}{2} = 66\n$$\n\n$$\nP(\\text{two red}) = \\frac{\\binom{5}{2}}{\\binom{12}{2}}\n$$\n\n$$\nP(\\text{two red}) = \\frac{10}{66} = \\frac{5}{33}\n$$\n\n$$\nP(\\text{two red})\\approx 0.151515\n$$\n\nExpressed as a percentage, this is approximately $15.152\\%$. The claim states that this probability is greater than $15\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the probability of selecting one red token and one blue token. With five red and four blue tokens available, the number of mixed red-blue pairs is $5\\times 4=20$, while the sample space still has $66$ pairs.\n\n$$\nP(\\text{one red and one blue}) = \\frac{5\\times 4}{66}\n$$\n\n$$\nP(\\text{one red and one blue}) = \\frac{20}{66} = \\frac{10}{33}\n$$\n\n$$\nP(\\text{one red and one blue})\\approx 0.303030\n$$\n\nExpressed as a percentage, this is approximately $30.303\\%$. The claim states that this probability is greater than $30\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the probability that neither selected token is green. Equivalently, both tokens come from the nine non-green tokens (five red and four blue).\n\n$$\nP(\\text{no green}) = \\frac{\\binom{9}{2}}{\\binom{12}{2}}\n$$\n\n$$\nP(\\text{no green}) = \\frac{36}{66} = \\frac{6}{11}\n$$\n\n$$\nP(\\text{no green})\\approx 0.545455\n$$\n\nExpressed as a percentage, this is approximately $54.545\\%$. The claim states that this probability is greater than $54\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks for the probability of at least one green token among the two draws. It is easiest to use the complement of the no-green event computed for the previous type of count:\n\n$$\nP(\\text{at least one green}) = 1-P(\\text{no green})\n$$\n\n$$\nP(\\text{at least one green}) = 1-\\frac{6}{11} = \\frac{5}{11}\n$$\n\n$$\nP(\\text{at least one green})\\approx 0.454545\n$$\n\nExpressed as a percentage, this is approximately $45.455\\%$. The claim states that this probability is greater than $46\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim asserts that the two draws are independent. Independence would require that the color probabilities on the second draw equal those on the first draw, regardless of what was already removed. Because sampling is without replacement, drawing a red token first leaves four red tokens among eleven remaining tokens, which is not the original five-in-twelve mix.\n\n$$\nP(\\text{second red}\\mid \\text{first red}) = \\frac{4}{11}\\ne \\frac{5}{12} = P(\\text{first red})\n$$\n\nThe conditional probability changes after the first draw, so the draws are dependent. The claim of independence is therefore false, and.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A jar contains $5$ red, $4$ blue, and $3$ green tokens. Two tokens are drawn together without replacement, so the sample space is the set of unordered pairs. The total number of equally likely pairs is\n$$\\binom{12}{2}=66$$\nColor events are counted by choosing the indicated colors from these $66$ pairs. Shared totals used below are $\\binom{5}{2}=10$ red-red pairs, $5\\times 4=20$ red-blue pairs, and $\\binom{9}{2}=36$ pairs with no green.",
+    "title_de_existing": "Klausuraufgabe 11",
+    "context_de_existing": "Ein Beutel enthält 5 rote, 4 blaue und 3 grüne Spielsteine. Zwei Spielsteine werden gemeinsam gleichmäßig und ohne Zurücklegen gezogen; ungeordnete Paare bilden den Ergebnisraum. Es gibt $\\binom{12}{2}=66$ gleichwahrscheinliche Paare.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit für zwei rote Spielsteine ist größer als $15\\%$.",
+      "Die Wahrscheinlichkeit für einen roten und einen blauen Spielstein ist größer als $30\\%$.",
+      "Die Wahrscheinlichkeit ohne grünen Spielstein ist größer als $54\\%$.",
+      "Die Wahrscheinlichkeit für mindestens einen grünen Spielstein ist größer als $46\\%$.",
+      "Die beiden Ziehungen sind unabhängig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit für zwei rote Spielsteine ist größer als $15\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\binom{12}{2} = 66\n$$\n\n$$\nP(\\text{two rot}) = \\frac{\\binom{5}{2}}{\\binom{12}{2}}\n$$\n\n$$\nP(\\text{two rot}) = \\frac{10}{66} = \\frac{5}{33}\n$$\n\n$$\nP(\\text{two rot})\\approx 0.151515\n$$\n\nDie Aussage ist richtig.",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für einen roten und einen blauen Spielstein ist größer als $30\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{eine rote und eine blaue}) = \\frac{5\\times 4}{66}\n$$\n\n$$\nP(\\text{eine rote und eine blaue}) = \\frac{20}{66} = \\frac{10}{33}\n$$\n\n$$\nP(\\text{eine rote und eine blaue})\\approx 0.303030\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit ohne grünen Spielstein ist größer als $54\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{no green}) = \\frac{\\binom{9}{2}}{\\binom{12}{2}}\n$$\n\n$$\nP(\\text{no green}) = \\frac{36}{66} = \\frac{6}{11}\n$$\n\n$$\nP(\\text{no green})\\approx 0.545455\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für mindestens einen grünen Spielstein ist größer als $46\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{mindestens eins green}) = 1-P(\\text{no green})\n$$\n\n$$\nP(\\text{mindestens eins green}) = 1-\\frac{6}{11} = \\frac{5}{11}\n$$\n\n$$\nP(\\text{mindestens eins green})\\approx 0.454545\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die beiden Ziehungen sind unabhängig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{second red}\\mid \\text{first red}) = \\frac{4}{11}\\ne \\frac{5}{12} = P(\\text{first red})\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Beutel enthält 5 rote, 4 blaue und 3 grüne Spielsteine. Zwei Spielsteine werden gemeinsam gleichmäßig und ohne Zurücklegen gezogen; ungeordnete Paare bilden den Ergebnisraum. Es gibt $\\binom{12}{2}=66$ gleichwahrscheinliche Paare. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$\\binom{12}{2}=66$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.210",
+    "short_letters": [
+      0,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 12",
+    "context_en": "A survey of 120 students records language clubs A, B, and C. The disjoint regions contain 24 only in A, 20 only in B, 18 only in C, 8 in A and B only, 7 in A and C only, 6 in B and C only, 5 in all three, and 32 in none. Every student belongs to exactly one listed region.",
+    "statements_en": [
+      "More than $85$ students join at least one club.",
+      "More than $60$ students join exactly one club.",
+      "More than $20$ students join exactly two clubs.",
+      "More than $25$ students join at least two clubs.",
+      "More than $44$ students belong to club A."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks how many students join at least one of the clubs A, B, and C. In the disjoint-region layout, that count is everyone except the $32$ students in none of the clubs.\n\n$$\nN(\\text{at least one}) = 120-32\n$$\n\n$$\n120 - 32 = 88\n$$\n\n$$\nN(\\text{at least one}) = 88\n$$\n\nExactly $88$ students join at least one club. The claim states that more than $85$ do so.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks how many students join exactly one club. Those students occupy the three singleton regions only A, only B, and only C.\n\n$$\nN(\\text{exactly one}) = 24+20+18\n$$\n\n$$\n24 + 20 = 44\n$$\n\n$$\n44 + 18 = 62\n$$\n\n$$\nN(\\text{exactly one}) = 62\n$$\n\nExactly $62$ students join exactly one club. The claim states that more than $60$ do so.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks how many students join exactly two clubs. Those students occupy the three pairwise-only regions A$\\cap$B only, A$\\cap$C only, and B$\\cap$C only.\n\n$$\nN(\\text{exactly two}) = 8+7+6\n$$\n\n$$\n8 + 7 = 15\n$$\n\n$$\n15 + 6 = 21\n$$\n\n$$\nN(\\text{exactly two}) = 21\n$$\n\nExactly $21$ students join exactly two clubs. The claim states that more than $20$ do so.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThis claim asks how many students join at least two clubs. That group is the exactly-two students together with the five students in all three clubs.\n\n$$\nN(\\text{at least two}) = N(\\text{exactly two})+N(\\text{all three})\n$$\n\n$$\nN(\\text{at least two}) = 21+5\n$$\n\n$$\n21 + 5 = 26\n$$\n\nExactly $26$ students join at least two clubs. The claim states that more than $25$ do so.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis claim asks how many students belong to club A. Club A comprises every region that includes A: only A, A and B only, A and C only, and all three.\n\n$$\nN(A) = 24+8+7+5\n$$\n\n$$\n24 + 8 = 32\n$$\n\n$$\n32 + 7 = 39\n$$\n\n$$\n39 + 5 = 44\n$$\n\n$$\nN(A) = 44\n$$\n\nExactly $44$ students belong to A. The claim states that more than $44$ belong to A.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A survey of $120$ students records clubs A, B, and C through disjoint regions: $24$ only A, $20$ only B, $18$ only C, $8$ in A and B only, $7$ in A and C only, $6$ in B and C only, $5$ in all three, and $32$ in none. Every student sits in exactly one listed region, so counts are obtained by adding the appropriate regions.\n$$N(\\text{at least one})=120-32=88$$\n$$N(\\text{exactly one})=24+20+18=62$$\n$$N(\\text{exactly two})=8+7+6=21$$\n$$N(\\text{at least two})=21+5=26$$\n$$N(A)=24+8+7+5=44$$",
+    "title_de_existing": "Klausuraufgabe 12",
+    "context_de_existing": "Eine Umfrage unter 120 Studierenden erfasst Sprachclubs A, B und C. Die disjunkten Regionen: 24 nur A, 20 nur B, 18 nur C, 8 nur A und B, 7 nur A und C, 6 nur B und C, 5 in allen dreien, 32 in keinem. Jede Person gehört genau einer genannten Region an.",
+    "statements_de_existing": [
+      "Mehr als $85$ Studierende gehören mindestens einem Club an.",
+      "Mehr als $60$ Studierende gehören genau einem Club an.",
+      "Mehr als $20$ Studierende gehören genau zwei Clubs an.",
+      "Mehr als $25$ Studierende gehören mindestens zwei Clubs an.",
+      "Mehr als $44$ Studierende gehören Club A an."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Mehr als $85$ Studierende gehören mindestens einem Club an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{mindestens eins}) = 120-32\n$$\n\n$$\n120 - 32 = 88\n$$\n\n$$\nN(\\text{mindestens eins}) = 88\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Mehr als $60$ Studierende gehören genau einem Club an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{Genau eins}) = 24+20+18\n$$\n\n$$\n24 + 20 = 44\n$$\n\n$$\n44 + 18 = 62\n$$\n\n$$\nN(\\text{Genau eins}) = 62\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Mehr als $20$ Studierende gehören genau zwei Clubs an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{Genau zwei}) = 8+7+6\n$$\n\n$$\n8 + 7 = 15\n$$\n\n$$\n15 + 6 = 21\n$$\n\n$$\nN(\\text{Genau zwei}) = 21\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Mehr als $25$ Studierende gehören mindestens zwei Clubs an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{mindestens zwei}) = N(\\text{Genau zwei})+N(\\text{all three})\n$$\n\n$$\nN(\\text{mindestens zwei}) = 21+5\n$$\n\n$$\n21 + 5 = 26\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Mehr als $44$ Studierende gehören Club A an. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(A) = 24+8+7+5\n$$\n\n$$\n24 + 8 = 32\n$$\n\n$$\n32 + 7 = 39\n$$\n\n$$\n39 + 5 = 44\n$$\n\n$$\nN(A) = 44\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Umfrage unter 120 Studierenden erfasst Sprachclubs A, B und C. Die disjunkten Regionen: 24 nur A, 20 nur B, 18 nur C, 8 nur A und B, 7 nur A und C, 6 nur B und C, 5 in allen dreien, 32 in keinem. Jede Person gehört genau einer genannten Region an. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$N(\\text{mindestens eins})=120-32=88$$\n\n$$N(\\text{Genau eins})=24+20+18=62$$\n\n$$N(\\text{Genau zwei})=8+7+6=21$$\n\n$$N(\\text{mindestens zwei})=21+5=26$$\n\n$$N(A)=24+8+7+5=44$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.211",
+    "short_letters": [
+      0,
+      1,
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 13",
+    "context_en": "A courier audit contains 100 deliveries. Of these, 40 used premium service, 35 arrived late, and 15 were both premium and late. One delivery is selected uniformly. Let $P$ mean premium and $L$ mean late; all conditional probabilities use this same audit table.",
+    "statements_en": [
+      "The probability $P(L\\mid P)$ is greater than $37\\%$.",
+      "The probability $P(P\\mid L)$ is greater than $42\\%$.",
+      "The probability $P(P\\cap L)$ is greater than $14\\%$.",
+      "The probability $P(P\\cup L)$ is greater than $59\\%$.",
+      "$P$ and $L$ are independent."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the conditional probability that a delivery is late given that it is premium. Conditioning replaces the full audit of $100$ deliveries by the $40$ premium deliveries, of which $15$ are also late.\n\n$$\nP(L\\mid P) = \\frac{N(P\\cap L)}{N(P)} = \\frac{15}{40}\n$$\n\n$$\nP(L\\mid P) = \\frac{3}{8} = 0.375\n$$\n\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the conditional probability that a delivery is premium given that it is late. Among the $35$ late deliveries, $15$ are premium.\n\n$$\nP(P\\mid L) = \\frac{N(P\\cap L)}{N(L)} = \\frac{15}{35}\n$$\n\n$$\nP(P\\mid L) = \\frac{3}{7}\n$$\n\n$$\n\\approx 0.428571\n$$\n\nExpressed as a percentage, this is approximately $42.857\\%$. The claim states that this probability is greater than $42\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the joint probability that a randomly selected delivery is both premium and late. With $15$ such deliveries out of $100$,\n\n$$\nP(P\\cap L) = \\frac{15}{100} = \\frac{3}{20} = 0.15\n$$\n\nExpressed as a percentage, this is $15\\%$. The claim states that this probability is greater than $14\\%$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThis claim asks for the probability that a delivery is premium or late (or both). Inclusion-exclusion on the audit counts gives\n\n$$\nP(P\\cup L) = \\frac{N(P)+N(L)-N(P\\cap L)}{100} = \\frac{40+35-15}{100}\n$$\n\n$$\nP(P\\cup L) = \\frac{60}{100} = \\frac{3}{5} = 0.6\n$$\n\nExpressed as a percentage, this is $60\\%$. The claim states that this probability is greater than $59\\%$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis claim asserts that premium and late are independent. Independence requires $P(P\\cap L)=P(P)P(L)$. Substituting the audit proportions,\n\n$$\nP(P\\cap L) = \\frac{15}{100}\n$$\n\n$$\nP(P)P(L) = \\frac{40}{100}\\cdot\\frac{35}{100}\n$$\n\nCross-multiplying avoids rounding:\n\n$$\n15 \\times 100 = 1500\n$$\n\n$$\n40 \\times 35 = 1400\n$$\n\n.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A courier audit of $100$ deliveries records $40$ premium ($P$), $35$ late ($L$), and $15$ both. One delivery is selected uniformly, so probabilities are ratios of these counts to $100$ or to the relevant marginal.\n$$P(P)=\\frac{40}{100},\\qquad P(L)=\\frac{35}{100},\\qquad P(P\\cap L)=\\frac{15}{100}$$\nThese shared values support every conditional and independence check below.",
+    "title_de_existing": "Klausuraufgabe 13",
+    "context_de_existing": "Eine Kurierprüfung umfasst 100 Lieferungen. Davon nutzten 40 Premium-Service, 35 kamen verspätet an, und 15 waren beides. Eine Lieferung wird gleichmäßig ausgewählt. $P$ bedeutet Premium und $L$ verspätet; alle bedingten Wahrscheinlichkeiten beziehen sich auf dieselbe Tabelle.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit $P(L\\mid P)$ ist größer als $37\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\mid L)$ ist größer als $42\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\cap L)$ ist größer als $14\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\cup L)$ ist größer als $59\\%$.",
+      "$P$ und $L$ sind unabhängig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit $P(L\\mid P)$ ist größer als $37\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L\\mid P) = \\frac{N(P\\cap L)}{N(P)} = \\frac{15}{40}\n$$\n\n$$\nP(L\\mid P) = \\frac{3}{8} = 0.375\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit $P(P\\mid L)$ ist größer als $42\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\mid L) = \\frac{N(P\\cap L)}{N(L)} = \\frac{15}{35}\n$$\n\n$$\nP(P\\mid L) = \\frac{3}{7}\n$$\n\n$$\n\\approx 0.428571\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit $P(P\\cap L)$ ist größer als $14\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\cap L) = \\frac{15}{100} = \\frac{3}{20} = 0.15\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit $P(P\\cup L)$ ist größer als $59\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\cup L) = \\frac{N(P)+N(L)-N(P\\cap L)}{100} = \\frac{40+35-15}{100}\n$$\n\n$$\nP(P\\cup L) = \\frac{60}{100} = \\frac{3}{5} = 0.6\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: $P$ und $L$ sind unabhängig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(P\\cap L) = \\frac{15}{100}\n$$\n\n$$\nP(P)P(L) = \\frac{40}{100}\\cdot\\frac{35}{100}\n$$\n\n$$\n15 \\times 100 = 1500\n$$\n\n$$\n40 \\times 35 = 1400\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Kurierprüfung umfasst 100 Lieferungen. Davon nutzten 40 Premium-Service, 35 kamen verspätet an, und 15 waren beides. Eine Lieferung wird gleichmäßig ausgewählt. $P$ bedeutet Premium und $L$ verspätet; alle bedingten Wahrscheinlichkeiten beziehen sich auf dieselbe Tabelle. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(P)=\\frac{40}{100},\\qquad P(L)=\\frac{35}{100},\\qquad P(P\\cap L)=\\frac{15}{100}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.213",
+    "short_letters": [
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 15",
+    "context_en": "Factory A supplies 60% of parts and has a 2% defect rate. Factory B supplies the other 40% and has a 5% defect rate. A part is selected from the combined output, and the factory label is hidden before inspection. The analysis uses weighted routes for defective and nondefective outcomes.",
+    "statements_en": [
+      "The probability of a defect is greater than $3.1\\%$.",
+      "Given a defect, the probability it came from factory A is greater than $37\\%$.",
+      "Given a defect, the probability it came from factory B is greater than $62\\%$.",
+      "A defective part is more likely from factory A than from factory B.",
+      "Given a good part, the probability it came from factory A is greater than $60\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the overall probability that a randomly selected part is defective. The law of total probability adds the two factory routes:\n\n$$\nP(D) = P(D\\mid A)P(A)+P(D\\mid B)P(B)\n$$\n\n$$\nP(D) = \\frac{1}{50}\\cdot\\frac{3}{5}+\\frac{1}{20}\\cdot\\frac{2}{5} = \\frac{3}{250}+\\frac{1}{50} = \\frac{4}{125}\n$$\n\n$$\nP(D) = 0.032\n$$\n\nExpressed as a percentage, this is $3.2\\%$. The claim states that this probability is greater than $3.1\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem normalizes A's joint defect weight by the total defect probability from the overview:\n\n$$\nP(A\\mid D) = \\frac{P(A)P(D\\mid A)}{P(D)} = \\frac{3/250}{4/125}\n$$\n\n$$\nP(A\\mid D) = \\frac{3}{8} = 0.375\n$$\n\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory B. Using Bayes' theorem with B's joint weight,\n\n$$\nP(B\\mid D) = \\frac{P(B)P(D\\mid B)}{P(D)} = \\frac{1/50}{4/125}\n$$\n\n$$\nP(B\\mid D) = \\frac{5}{8} = 0.625\n$$\n\nExpressed as a percentage, this is $62.5\\%$. The claim states that this probability is greater than $62\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asserts that a defective part is more likely from A than from B. Compare the two posteriors already obtained from Bayes' theorem:\n\n$$\nP(A\\mid D) = \\frac{3}{8} = 0.375\n$$\n\n$$\nP(B\\mid D) = \\frac{5}{8} = 0.625\n$$\n\nSince $\\frac{3}{8}<\\frac{5}{8}$, a defective part is more likely from B, not from A. The claim is therefore false, and.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks for the posterior probability that a good part came from factory A. The good-route weight for A is $P(A)(1-P(D\\mid A))=\\frac{3}{5}\\cdot\\frac{49}{50}=\\frac{147}{250}$, and the total good probability is $1-P(D)=\\frac{121}{125}$. Bayes' theorem then gives\n\n$$\nP(A\\mid G) = \\frac{147/250}{121/125} = \\frac{147}{242}\n$$\n\n$$\n\\approx 0.607438\n$$\n\nExpressed as a percentage, this is approximately $60.744\\%$. The claim states that this probability is greater than $60\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Factory A supplies $60\\%$ of parts with a $2\\%$ defect rate; factory B supplies $40\\%$ with a $5\\%$ defect rate. The joint defect weights and total defect probability are\n$$P(A\\cap D)=\\frac{3}{5}\\cdot\\frac{1}{50}=\\frac{3}{250},\\qquad P(B\\cap D)=\\frac{2}{5}\\cdot\\frac{1}{20}=\\frac{1}{50}$$\n$$P(D)=\\frac{3}{250}+\\frac{1}{50}=\\frac{4}{125}=0.032$$\nThe corresponding good-route weights are $P(A\\cap G)=\\frac{147}{250}$ and $P(G)=\\frac{121}{125}$.",
+    "title_de_existing": "Klausuraufgabe 213",
+    "context_de_existing": "Fabrik A liefert 60% der Teile bei einer Defektrate von 2%. Fabrik B liefert die übrigen 40% bei einer Defektrate von 5%. Ein Teil wird zufällig aus der Gesamtproduktion gewählt.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit eines Defekts ist größer als 3.1%.",
+      "Gegeben ein defect, die Wahrscheinlichkeit it came aus factory ein ist größer als $37%.",
+      "Gegeben ein defect, die Wahrscheinlichkeit it came aus factory B ist größer als $62%.",
+      "Ein defective part ist more likely aus factory ein als aus factory B.",
+      "Gegeben ein good part, die Wahrscheinlichkeit it came aus factory ein ist größer als $60%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit von ein defect ist größer als $3.1\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(D) = P(D\\mid A)P(A)+P(D\\mid B)P(B)\n$$\n\n$$\nP(D) = \\frac{1}{50}\\cdot\\frac{3}{5}+\\frac{1}{20}\\cdot\\frac{2}{5} = \\frac{3}{250}+\\frac{1}{50} = \\frac{4}{125}\n$$\n\n$$\nP(D) = 0.032\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Gegeben ein defect, die Wahrscheinlichkeit it came aus factory ein ist größer als $37\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A\\mid D) = \\frac{P(A)P(D\\mid A)}{P(D)} = \\frac{3/250}{4/125}\n$$\n\n$$\nP(A\\mid D) = \\frac{3}{8} = 0.375\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Gegeben ein defect, die Wahrscheinlichkeit it came aus factory B ist größer als $62\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B\\mid D) = \\frac{P(B)P(D\\mid B)}{P(D)} = \\frac{1/50}{4/125}\n$$\n\n$$\nP(B\\mid D) = \\frac{5}{8} = 0.625\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Ein defective part ist more likely aus factory ein als aus factory B. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(A\\mid D) = \\frac{3}{8} = 0.375\n$$\n\n$$\nP(B\\mid D) = \\frac{5}{8} = 0.625\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Gegeben ein good part, die Wahrscheinlichkeit it came aus factory ein ist größer als $60\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A\\mid G) = \\frac{147/250}{121/125} = \\frac{147}{242}\n$$\n\n$$\n\\approx 0.607438\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Fabrik A liefert 60% der Teile bei einer Defektrate von 2%. Fabrik B liefert die übrigen 40% bei einer Defektrate von 5%. Ein Teil wird zufällig aus der Gesamtproduktion gewählt.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung.\n\n$$P(A\\cap D)=\\frac{3}{5}\\cdot\\frac{1}{50}=\\frac{3}{250},\\qquad P(B\\cap D)=\\frac{2}{5}\\cdot\\frac{1}{20}=\\frac{1}{50}$$\n\n$$P(D)=\\frac{3}{250}+\\frac{1}{50}=\\frac{4}{125}=0.032$$"
+  },
+  {
+    "case_id": "MATH 12.214",
+    "short_letters": [
+      0,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Exam-style tasks - 16",
+    "context_en": "A jar contains 6 red, 5 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{14}{2}=91$ equally likely pairs, and color events may overlap only through the two selected tokens.",
+    "statements_en": [
+      "The probability of two red tokens is greater than $16\\%$.",
+      "The probability of one red and one blue is greater than $32\\%$.",
+      "The probability of no green token is greater than $60\\%$.",
+      "The probability of at least one green token is greater than $40\\%$.",
+      "The two draws are independent."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the probability that both selected tokens are red. Two tokens are drawn together from $6$ red, $5$ blue, and $3$ green tokens, so the sample space has $\\binom{14}{2}=91$ equally likely unordered pairs. The favorable pairs are the ways to choose two red tokens from six:\n\n$$\nP(\\text{two red}) = \\frac{\\binom{6}{2}}{91} = \\frac{15}{91}\n$$\n\n$$\nP(\\text{two red})\\approx 0.164835\n$$\n\nExpressed as a percentage, this is approximately $16.484\\%$. The claim states that this probability is greater than $16\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the probability of one red and one blue token. There are $6\\times 5=30$ red-blue pairs among the $91$ equally likely pairs:\n\n$$\nP(\\text{one red and one blue}) = \\frac{6\\times 5}{91} = \\frac{30}{91}\n$$\n\n$$\nP(\\text{one red and one blue})\\approx 0.329670\n$$\n\nExpressed as a percentage, this is approximately $32.967\\%$. The claim states that this probability is greater than $32\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the probability that neither token is green. Both tokens must then come from the eleven non-green tokens:\n\n$$\nP(\\text{no green}) = \\frac{\\binom{11}{2}}{91} = \\frac{55}{91}\n$$\n\n$$\nP(\\text{no green})\\approx 0.604396\n$$\n\nExpressed as a percentage, this is approximately $60.440\\%$. The claim states that this probability is greater than $60\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks for the probability of at least one green token. Using the complement of the no-green probability,\n\n$$\nP(\\text{at least one green}) = 1-\\frac{55}{91} = \\frac{36}{91}\n$$\n\n$$\nP(\\text{at least one green})\\approx 0.395604\n$$\n\nExpressed as a percentage, this is approximately $39.560\\%$. The claim states that this probability is greater than $40\\%$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nThis claim asserts that the two draws are independent. Without replacement, the composition of the jar changes after the first token is removed. For example, the chance the second token is red depends on whether the first was red:\n\n$$\nP(\\text{second red}\\mid \\text{first red}) = \\frac{5}{13}\\ne \\frac{6}{14} = P(\\text{first red})\n$$\n\nBecause these probabilities differ, the draws are dependent. The claim of independence is false.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A jar contains $6$ red, $5$ blue, and $3$ green tokens. Two tokens are drawn together without replacement from $\\binom{14}{2}=91$ equally likely pairs. Shared favorable counts are $\\binom{6}{2}=15$ red-red pairs, $6\\times 5=30$ red-blue pairs, and $\\binom{11}{2}=55$ pairs with no green.",
+    "title_de_existing": "Klausuraufgabe 16",
+    "context_de_existing": "Ein Beutel enthält 6 rote, 5 blaue und 3 grüne Spielsteine. Zwei Spielsteine werden gemeinsam gleichmäßig und ohne Zurücklegen gezogen; ungeordnete Paare bilden den Ergebnisraum. Es gibt $\\binom{14}{2}=91$ gleichwahrscheinliche Paare.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit für zwei rote Spielsteine ist größer als $16\\%$.",
+      "Die Wahrscheinlichkeit für einen roten und einen blauen Spielstein ist größer als $32\\%$.",
+      "Die Wahrscheinlichkeit ohne grünen Spielstein ist größer als $60\\%$.",
+      "Die Wahrscheinlichkeit für mindestens einen grünen Spielstein ist größer als $40\\%$.",
+      "Die beiden Ziehungen sind unabhängig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit für zwei rote Spielsteine ist größer als $16\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{two red}) = \\frac{\\binom{6}{2}}{91} = \\frac{15}{91}\n$$\n\n$$\nP(\\text{two red})\\approx 0.164835\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit für einen roten und einen blauen Spielstein ist größer als $32\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{eine rote und eine blaue}) = \\frac{6\\times 5}{91} = \\frac{30}{91}\n$$\n\n$$\nP(\\text{eine rote und eine blaue})\\approx 0.329670\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit ohne grünen Spielstein ist größer als $60\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(\\text{no green}) = \\frac{\\binom{11}{2}}{91} = \\frac{55}{91}\n$$\n\n$$\nP(\\text{no green})\\approx 0.604396\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Die Wahrscheinlichkeit für mindestens einen grünen Spielstein ist größer als $40\\%$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{mindestens eins green}) = 1-\\frac{55}{91} = \\frac{36}{91}\n$$\n\n$$\nP(\\text{mindestens eins green})\\approx 0.395604\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Falsch\n\nAussage E: Die beiden Ziehungen sind unabhängig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(\\text{second red}\\mid \\text{first red}) = \\frac{5}{13}\\ne \\frac{6}{14} = P(\\text{first red})\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Ein Beutel enthält 6 rote, 5 blaue und 3 grüne Spielsteine. Zwei Spielsteine werden gemeinsam gleichmäßig und ohne Zurücklegen gezogen; ungeordnete Paare bilden den Ergebnisraum. Es gibt $\\binom{14}{2}=91$ gleichwahrscheinliche Paare. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.215",
+    "short_letters": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 17",
+    "context_en": "A survey of 129 students records language clubs A, B, and C. The disjoint regions contain 26 only in A, 21 only in B, 19 only in C, 9 in A and B only, 7 in A and C only, 7 in B and C only, 5 in all three, and 35 in none. Every student belongs to exactly one listed region.",
+    "statements_en": [
+      "More than $90$ students join at least one club.",
+      "More than $65$ students join exactly one club.",
+      "More than $20$ students join exactly two clubs.",
+      "More than $25$ students join at least two clubs.",
+      "More than $47$ students belong to club A."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks how many students join at least one club. In the disjoint-region table, that count is the total survey size minus the $35$ students in none of the clubs.\n\n$$\nN(\\text{at least one}) = 129-35\n$$\n\n$$\n129 - 35 = 94\n$$\n\nExactly $94$ students join at least one club. The claim states that more than $90$ do so.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks how many students join exactly one club. Add the three singleton regions only A, only B, and only C:\n\n$$\nN(\\text{exactly one}) = 26+21+19\n$$\n\n$$\n26 + 21 = 47\n$$\n\n$$\n47 + 19 = 66\n$$\n\nExactly $66$ students join exactly one club. The claim states that more than $65$ do so.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks how many students join exactly two clubs. Those students sit in the three pairwise-only regions of the survey table (A and B only, A and C only, and B and C only):\n\n$$\nN(\\text{exactly two}) = 9+7+7\n$$\n\n$$\n9 + 7 = 16\n$$\n\n$$\n16 + 7 = 23\n$$\n\n$$\nN(\\text{exactly two}) = 23\n$$\n\nExactly $23$ students join exactly two clubs. The claim states that more than $20$ do so.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThis claim asks how many students join at least two clubs. Combine the exactly-two students with the five students in all three clubs:\n\n$$\nN(\\text{at least two}) = 23+5\n$$\n\n$$\n23 + 5 = 28\n$$\n\nExactly $28$ students join at least two clubs. The claim states that more than $25$ do so.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis claim asks how many students belong to club A. Club A is the sum of every disjoint region that includes A: only A, A and B only, A and C only, and all three clubs.\n\n$$\nN(A) = 26+9+7+5\n$$\n\n$$\n26 + 9 = 35\n$$\n\n$$\n35 + 7 = 42\n$$\n\n$$\n42 + 5 = 47\n$$\n\n$$\nN(A) = 47\n$$\n\nExactly $47$ students belong to A. The claim states that more than $47$ belong to A.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A survey of $129$ students records clubs through disjoint regions: $26$ only A, $21$ only B, $19$ only C, $9$ in A and B only, $7$ in A and C only, $7$ in B and C only, $5$ in all three, and $35$ in none.\n$$N(\\text{at least one})=129-35=94$$\n$$N(\\text{exactly one})=26+21+19=66$$\n$$N(\\text{exactly two})=9+7+7=23$$\n$$N(\\text{at least two})=23+5=28$$\n$$N(A)=26+9+7+5=47$$",
+    "title_de_existing": "Klausuraufgabe 17",
+    "context_de_existing": "Eine Umfrage unter 129 Studierenden erfasst Sprachclubs A, B und C. Die disjunkten Regionen: 26 nur A, 21 nur B, 19 nur C, 9 nur A und B, 7 nur A und C, 7 nur B und C, 5 in allen dreien, 35 in keinem. Jede Person gehört genau einer genannten Region an.",
+    "statements_de_existing": [
+      "Mehr als $90$ Studierende gehören mindestens einem Club an.",
+      "Mehr als $65$ Studierende gehören genau einem Club an.",
+      "Mehr als $20$ Studierende gehören genau zwei Clubs an.",
+      "Mehr als $25$ Studierende gehören mindestens zwei Clubs an.",
+      "Mehr als $47$ Studierende gehören Club A an."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Mehr als $90$ Studierende gehören mindestens einem Club an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{mindestens eins}) = 129-35\n$$\n\n$$\n129 - 35 = 94\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Mehr als $65$ Studierende gehören genau einem Club an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{Genau eins}) = 26+21+19\n$$\n\n$$\n26 + 21 = 47\n$$\n\n$$\n47 + 19 = 66\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Mehr als $20$ Studierende gehören genau zwei Clubs an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{Genau zwei}) = 9+7+7\n$$\n\n$$\n9 + 7 = 16\n$$\n\n$$\n16 + 7 = 23\n$$\n\n$$\nN(\\text{Genau zwei}) = 23\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Mehr als $25$ Studierende gehören mindestens zwei Clubs an. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nN(\\text{mindestens zwei}) = 23+5\n$$\n\n$$\n23 + 5 = 28\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: Mehr als $47$ Studierende gehören Club A an. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nN(A) = 26+9+7+5\n$$\n\n$$\n26 + 9 = 35\n$$\n\n$$\n35 + 7 = 42\n$$\n\n$$\n42 + 5 = 47\n$$\n\n$$\nN(A) = 47\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Umfrage unter 129 Studierenden erfasst Sprachclubs A, B und C. Die disjunkten Regionen: 26 nur A, 21 nur B, 19 nur C, 9 nur A und B, 7 nur A und C, 7 nur B und C, 5 in allen dreien, 35 in keinem. Jede Person gehört genau einer genannten Region an. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$N(\\text{mindestens eins})=129-35=94$$\n\n$$N(\\text{Genau eins})=26+21+19=66$$\n\n$$N(\\text{Genau zwei})=9+7+7=23$$\n\n$$N(\\text{mindestens zwei})=23+5=28$$\n\n$$N(A)=26+9+7+5=47$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.216",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 18",
+    "context_en": "A courier audit contains 120 deliveries. Of these, 54 used premium service, 42 arrived late, and 18 were both premium and late. One delivery is selected uniformly. Let $P$ mean premium and $L$ mean late; all conditional probabilities use this same audit table.",
+    "statements_en": [
+      "The probability $P(L\\mid P)$ is greater than $33\\%$.",
+      "The probability $P(P\\mid L)$ is greater than $42\\%$.",
+      "The probability $P(P\\cap L)$ is greater than $14\\%$.",
+      "The probability $P(P\\cup L)$ is greater than $64\\%$.",
+      "$P$ and $L$ are independent."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for $P(L\\mid P)$, the probability a delivery is late given that it is premium. Among the $54$ premium deliveries, $18$ are also late:\n\n$$\nP(L\\mid P) = \\frac{18}{54} = \\frac{1}{3}\n$$\n\n$$\n\\approx 0.333333\n$$\n\nExpressed as a percentage, this is approximately $33.333\\%$. The claim states that this probability is greater than $33\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for $P(P\\mid L)$, the probability a delivery is premium given that it is late. Among the $42$ late deliveries, $18$ are premium:\n\n$$\nP(P\\mid L) = \\frac{18}{42} = \\frac{3}{7}\n$$\n\n$$\n\\approx 0.428571\n$$\n\nExpressed as a percentage, this is approximately $42.857\\%$. The claim states that this probability is greater than $42\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the joint probability that a delivery is both premium and late. With $18$ such deliveries out of $120$,\n\n$$\nP(P\\cap L) = \\frac{18}{120} = \\frac{3}{20} = 0.15\n$$\n\nExpressed as a percentage, this is $15\\%$. The claim states that this probability is greater than $14\\%$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThis claim asks for the probability that a delivery is premium or late. Inclusion-exclusion on the audit counts gives\n\n$$\nP(P\\cup L) = \\frac{54+42-18}{120} = \\frac{78}{120} = \\frac{13}{20} = 0.65\n$$\n\nExpressed as a percentage, this is $65\\%$. The claim states that this probability is greater than $64\\%$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nThis claim asserts that premium and late are independent. Independence requires $P(P\\cap L)=P(P)P(L)$, or equivalently $18\\cdot 120=54\\cdot 42$.\n\n$$\n18 \\times 120 = 2160\n$$\n\n$$\n54 \\times 42 = 2268\n$$\n\n.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A courier audit of $120$ deliveries records $54$ premium ($P$), $42$ late ($L$), and $18$ both. One delivery is selected uniformly.\n$$P(P)=\\frac{54}{120},\\qquad P(L)=\\frac{42}{120},\\qquad P(P\\cap L)=\\frac{18}{120}$$",
+    "title_de_existing": "Klausuraufgabe 18",
+    "context_de_existing": "Eine Kurierprüfung umfasst 120 Lieferungen. Davon nutzten 54 Premium-Service, 42 kamen verspätet an, und 18 waren beides. Eine Lieferung wird gleichmäßig ausgewählt. $P$ bedeutet Premium und $L$ verspätet; alle bedingten Wahrscheinlichkeiten beziehen sich auf dieselbe Tabelle.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit $P(L\\mid P)$ ist größer als $33\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\mid L)$ ist größer als $42\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\cap L)$ ist größer als $14\\%$.",
+      "Die Wahrscheinlichkeit $P(P\\cup L)$ ist größer als $64\\%$.",
+      "$P$ und $L$ sind unabhängig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit $P(L\\mid P)$ ist größer als $33\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(L\\mid P) = \\frac{18}{54} = \\frac{1}{3}\n$$\n\n$$\n\\approx 0.333333\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Die Wahrscheinlichkeit $P(P\\mid L)$ ist größer als $42\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\mid L) = \\frac{18}{42} = \\frac{3}{7}\n$$\n\n$$\n\\approx 0.428571\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Die Wahrscheinlichkeit $P(P\\cap L)$ ist größer als $14\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\cap L) = \\frac{18}{120} = \\frac{3}{20} = 0.15\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Richtig\n\nAussage D: Die Wahrscheinlichkeit $P(P\\cup L)$ ist größer als $64\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(P\\cup L) = \\frac{54+42-18}{120} = \\frac{78}{120} = \\frac{13}{20} = 0.65\n$$\n\nDie Aussage ist richtig.\n",
+      "**E.** → Falsch\n\nAussage E: $P$ und $L$ sind unabhängig. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n18 \\times 120 = 2160\n$$\n\n$$\n54 \\times 42 = 2268\n$$\n\nDie Aussage ist falsch.\n"
+    ],
+    "solution_overview_de_existing": "Eine Kurierprüfung umfasst 120 Lieferungen. Davon nutzten 54 Premium-Service, 42 kamen verspätet an, und 18 waren beides. Eine Lieferung wird gleichmäßig ausgewählt. $P$ bedeutet Premium und $L$ verspätet; alle bedingten Wahrscheinlichkeiten beziehen sich auf dieselbe Tabelle. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$P(P)=\\frac{54}{120},\\qquad P(L)=\\frac{42}{120},\\qquad P(P\\cap L)=\\frac{18}{120}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.217",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 19",
+    "context_en": "A game has net return $X=-1$, $4$, or $9$ euros with probabilities $1/2$, $1/4$, and $1/4$, respectively. The probabilities sum to one, and repeated plays are independent. The review computes $E(X)$, $E(X^2)$, variance, and the effect of adding a fixed bonus.",
+    "statements_en": [
+      "$E(X)$ is greater than $2.7$.",
+      "$E(X^2)$ is greater than $24$.",
+      "$\\operatorname{Var}(X)$ is greater than $17$.",
+      "$\\operatorname{SD}(X)>5$.",
+      "Adding $5$ euros to every outcome leaves the variance unchanged."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the expected net return. Weight each outcome by its probability:\n\n$$\nE(X) = (-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}\n$$\n\n$$\nE(X) = -\\frac{1}{2}+1+\\frac{9}{4} = \\frac{11}{4} = 2.75\n$$\n\nThe mean is $2.75$ euros. The claim states that $E(X)$ is greater than $2.7$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the second moment. Square each outcome before weighting:\n\n$$\nE(X^2) = (-1)^2\\cdot\\frac{1}{2}+4^2\\cdot\\frac{1}{4}+9^2\\cdot\\frac{1}{4}\n$$\n\n$$\nE(X^2) = \\frac{1}{2}+4+\\frac{81}{4} = \\frac{99}{4} = 24.75\n$$\n\nThe second moment is $24.75$. The claim states that $E(X^2)$ is greater than $24$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the variance via $\\operatorname{Var}(X)=E(X^2)-[E(X)]^2$:\n\n$$\n\\operatorname{Var}(X) = \\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2 = \\frac{396}{16}-\\frac{121}{16} = \\frac{275}{16}\n$$\n\n$$\n\\operatorname{Var}(X) = 17.1875\n$$\n\nThe variance is $17.1875$. The claim states that it is greater than $17$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asks whether the standard deviation of the net return exceeds $5$. Using the variance $\\operatorname{Var}(X)=\\frac{275}{16}$ from the shared moments,\n\n$$\n\\operatorname{SD}(X) = \\sqrt{\\operatorname{Var}(X)} = \\sqrt{\\frac{275}{16}} = \\frac{\\sqrt{275}}{4}\n$$\n\n$$\n\\operatorname{SD}(X)\\approx 4.147\n$$\n\nThe claim states that $\\operatorname{SD}(X)>5$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks what happens to variance after every outcome is increased by $5$ euros. For $Y=X+5$, deviations from the mean are unchanged because the same constant is added to $X$ and to $E(X)$:\n\n$$\n\\operatorname{Var}(X+5) = \\operatorname{Var}(X)\n$$\n\nThe variance is therefore unchanged.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A game has net return $X=-1$, $4$, or $9$ euros with probabilities $1/2$, $1/4$, and $1/4$. Shared moments are\n$$E(X)=(-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}=\\frac{11}{4}$$\n$$E(X^2)=1\\cdot\\frac{1}{2}+16\\cdot\\frac{1}{4}+81\\cdot\\frac{1}{4}=\\frac{99}{4}$$\n$$\\operatorname{Var}(X)=\\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2=\\frac{275}{16}$$",
+    "title_de_existing": "Klausuraufgabe 19",
+    "context_de_existing": "Ein Spiel hat Nettoertrag $X=-1$, $4$ oder $9$ Euro mit Wahrscheinlichkeiten $1/2$, $1/4$ und $1/4$. Die Wahrscheinlichkeiten summieren sich zu eins; wiederholte Spiele sind unabhängig. Die Übersicht berechnet $E(X)$, $E(X^2)$, Varianz und den Effekt eines festen Bonus.",
+    "statements_de_existing": [
+      "$E(X)$ ist größer als $2{,}7$.",
+      "$E(X^2)$ ist größer als $24$.",
+      "$\\operatorname{Var}(X)$ ist größer als $17$.",
+      "$\\operatorname{SD}(X)>5$.",
+      "Das Addieren von $5$ Euro zu jedem Ergebnis lässt die Varianz unverändert."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: $E(X)$ ist größer als $2{,}7$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X) = (-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}\n$$\n\n$$\nE(X) = -\\frac{1}{2}+1+\\frac{9}{4} = \\frac{11}{4} = 2.75\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: $E(X^2)$ ist größer als $24$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nE(X^2) = (-1)^2\\cdot\\frac{1}{2}+4^2\\cdot\\frac{1}{4}+9^2\\cdot\\frac{1}{4}\n$$\n\n$$\nE(X^2) = \\frac{1}{2}+4+\\frac{81}{4} = \\frac{99}{4} = 24.75\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: $\\operatorname{Var}(X)$ ist größer als $17$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\operatorname{Var}(X) = \\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2 = \\frac{396}{16}-\\frac{121}{16} = \\frac{275}{16}\n$$\n\n$$\n\\operatorname{Var}(X) = 17.1875\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: $\\operatorname{SD}(X)>5$. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\n\\operatorname{SD}(X) = \\sqrt{\\operatorname{Var}(X)} = \\sqrt{\\frac{275}{16}} = \\frac{\\sqrt{275}}{4}\n$$\n\n$$\n\\operatorname{SD}(X)\\approx 4.147\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Das Addieren von $5$ Euro zu jedem Ergebnis lässt die Varianz unverändert. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\n\\operatorname{Var}(X+5) = \\operatorname{Var}(X)\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Ein Spiel hat Nettoertrag $X=-1$, $4$ oder $9$ Euro mit Wahrscheinlichkeiten $1/2$, $1/4$ und $1/4$. Die Wahrscheinlichkeiten summieren sich zu eins; wiederholte Spiele sind unabhängig. Die Übersicht berechnet $E(X)$, $E(X^2)$, Varianz und den Effekt eines festen Bonus. Bewerten Sie jede Aussage mit Wahr oder Falsch anhand der gegebenen Wahrscheinlichkeiten und Rechenregeln.\n\n$$E(X)=(-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}=\\frac{11}{4}$$\n\n$$E(X^2)=1\\cdot\\frac{1}{2}+16\\cdot\\frac{1}{4}+81\\cdot\\frac{1}{4}=\\frac{99}{4}$$\n\n$$\\operatorname{Var}(X)=\\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2=\\frac{275}{16}$$\n\nDie Display-Rechnungen zeigen die entscheidenden Zwischenschritte."
+  },
+  {
+    "case_id": "MATH 12.218",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 20",
+    "context_en": "Factory A supplies 70% of parts and has a 2% defect rate. Factory B supplies the other 30% and has a 8% defect rate. A part is selected from the combined output, and the factory label is hidden before inspection. The analysis uses weighted routes for defective and nondefective outcomes.",
+    "statements_en": [
+      "The probability of a defect is greater than $3.7\\%$.",
+      "Given a defect, the probability it came from factory A is greater than $36\\%$.",
+      "Given a defect, the probability it came from factory B is greater than $63\\%$.",
+      "A defective part is more likely from factory A than from factory B.",
+      "Given a good part, the probability it came from factory A is greater than $71\\%$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim asks for the overall defect probability. Adding the two factory routes gives\n\n$$\nP(D) = \\frac{7}{10}\\cdot\\frac{1}{50}+\\frac{3}{10}\\cdot\\frac{2}{25} = \\frac{7}{500}+\\frac{3}{125} = \\frac{19}{500}\n$$\n\n$$\nP(D) = 0.038\n$$\n\nExpressed as a percentage, this is $3.8\\%$. The claim states that this probability is greater than $3.7\\%$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem gives\n\n$$\nP(A\\mid D) = \\frac{7/500}{19/500} = \\frac{7}{19}\n$$\n\n$$\n\\approx 0.368421\n$$\n\nExpressed as a percentage, this is approximately $36.842\\%$. The claim states that this probability is greater than $36\\%$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory B. Bayes' theorem gives\n\n$$\nP(B\\mid D) = \\frac{3/125}{19/500} = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.631579\n$$\n\nExpressed as a percentage, this is approximately $63.158\\%$. The claim states that this probability is greater than $63\\%$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThis claim asserts that a defective part is more likely from A than from B. Comparing the posteriors,\n\n$$\nP(A\\mid D) = \\frac{7}{19}\n$$\n\n$$\n\\approx 0.368\n$$\n\n$$\nP(B\\mid D) = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.632\n$$\n\n.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThis claim asks for the posterior probability that a good part came from factory A. With good-route weight $\\frac{343}{500}$ and total good probability $\\frac{481}{500}$,\n\n$$\nP(A\\mid G) = \\frac{343/500}{481/500} = \\frac{343}{481}\n$$\n\n$$\n\\approx 0.713098\n$$\n\nExpressed as a percentage, this is approximately $71.310\\%$. The claim states that this probability is greater than $71\\%$.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Factory A supplies $70\\%$ of parts with a $2\\%$ defect rate; factory B supplies $30\\%$ with an $8\\%$ defect rate.\n$$P(A\\cap D)=\\frac{7}{10}\\cdot\\frac{1}{50}=\\frac{7}{500},\\qquad P(B\\cap D)=\\frac{3}{10}\\cdot\\frac{2}{25}=\\frac{3}{125}$$\n$$P(D)=\\frac{7}{500}+\\frac{3}{125}=\\frac{19}{500}=0.038$$\nGood-route values include $P(A\\cap G)=\\frac{343}{500}$ and $P(G)=\\frac{481}{500}$.",
+    "title_de_existing": "Klausuraufgabe 218",
+    "context_de_existing": "Fabrik A liefert 70% der Teile bei einer Defektrate von 2%. Fabrik B liefert die übrigen 30% bei einer Defektrate von 8%. Ein Teil wird zufällig aus der Gesamtproduktion gewählt.",
+    "statements_de_existing": [
+      "Die Wahrscheinlichkeit eines Defekts ist größer als 3,7%.",
+      "Gegeben ein defect, die Wahrscheinlichkeit it came aus factory ein ist größer als $36%.",
+      "Gegeben ein defect, die Wahrscheinlichkeit it came aus factory B ist größer als $63%.",
+      "Ein defective part ist more likely aus factory ein als aus factory B.",
+      "Gegeben ein good part, die Wahrscheinlichkeit it came aus factory ein ist größer als $71%."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAussage A: Die Wahrscheinlichkeit von ein defect ist größer als $3.7\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(D) = \\frac{7}{10}\\cdot\\frac{1}{50}+\\frac{3}{10}\\cdot\\frac{2}{25} = \\frac{7}{500}+\\frac{3}{125} = \\frac{19}{500}\n$$\n\n$$\nP(D) = 0.038\n$$\n\nDie Aussage ist richtig.\n",
+      "**B.** → Richtig\n\nAussage B: Gegeben ein defect, die Wahrscheinlichkeit it came aus factory ein ist größer als $36\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A\\mid D) = \\frac{7/500}{19/500} = \\frac{7}{19}\n$$\n\n$$\n\\approx 0.368421\n$$\n\nDie Aussage ist richtig.\n",
+      "**C.** → Richtig\n\nAussage C: Gegeben ein defect, die Wahrscheinlichkeit it came aus factory B ist größer als $63\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(B\\mid D) = \\frac{3/125}{19/500} = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.631579\n$$\n\nDie Aussage ist richtig.\n",
+      "**D.** → Falsch\n\nAussage D: Ein defective part ist more likely aus factory ein als aus factory B. Die Rechnung mit den gegebenen Werten widerlegt die Behauptung.\n\n$$\nP(A\\mid D) = \\frac{7}{19}\n$$\n\n$$\n\\approx 0.368\n$$\n\n$$\nP(B\\mid D) = \\frac{12}{19}\n$$\n\n$$\n\\approx 0.632\n$$\n\nDie Aussage ist falsch.\n",
+      "**E.** → Richtig\n\nAussage E: Gegeben ein good part, die Wahrscheinlichkeit it came aus factory ein ist größer als $71\\%$. Die Rechnung mit den gegebenen Werten bestätigt die Behauptung.\n\n$$\nP(A\\mid G) = \\frac{343/500}{481/500} = \\frac{343}{481}\n$$\n\n$$\n\\approx 0.713098\n$$\n\nDie Aussage ist richtig.\n"
+    ],
+    "solution_overview_de_existing": "Fabrik A liefert 70% der Teile bei einer Defektrate von 2%. Fabrik B liefert die übrigen 30% bei einer Defektrate von 8%. Ein Teil wird zufällig aus der Gesamtproduktion gewählt.\n\nBewerten Sie jede Aussage mit den Regeln der Kombinatorik und Wahrscheinlichkeitsrechnung.\n\n$$P(A\\cap D)=\\frac{7}{10}\\cdot\\frac{1}{50}=\\frac{7}{500},\\qquad P(B\\cap D)=\\frac{3}{10}\\cdot\\frac{2}{25}=\\frac{3}{125}$$\n\n$$P(D)=\\frac{7}{500}+\\frac{3}{125}=\\frac{19}{500}=0.038$$"
+  }
+]

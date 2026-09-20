@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.026",
+    "title": "Profit and Loss Over Two Years 26",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=821 | Operating result=205\nYear 2 | Revenue=927 | Operating result=221\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 821 | 927 |\n| Cost of sales | (523) | (595) |\n| Gross profit | 298 | 332 |\n| Distribution costs | (49) | (63) |\n| General and administrative costs | (43) | (48) |\n| Other operating result | (1) | 0 |\n| Operating result | 205 | 221 |\n| Finance costs | (22) | (29) |\n| Finance costs – net | (15) | (26) |\n| Profit before tax | 190 | 195 |\n| Income taxes | (46) | (48) |\n| Profit for the year | 144 | 147 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Finance costs grew by more than 25% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 9.28 times over in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 13.9% in Year 2.",
+      "Profit for the year increased by exactly €3 thousand from Year 1 to Year 2."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets turn into cash within the normal operating cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Finance costs moved from 22 to 29; operating result moved from 205 to 221.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interest coverage in Year 1 ≈ 9.3 times.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operating margin in year 2 ≈ 23.8%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit moved from 144 to 147.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.027",
+    "title": "Comparative Balance Sheet Analysis 27",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=542 | Total assets=1102\nYear 2 | Equity=532 | Total assets=1144\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity grew by more than 21.7% between Year 1 and Year 2.",
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
+      "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
+      "Total assets grew by more than 12.2% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Total equity changed by about -1.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets turn into cash within the normal operating cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 82.9% of equity in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current ratio in Year 2 is about 1.96.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 3.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.028",
+    "title": "Asset Composition Chart 28",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=372\nCurrent liabilities=226\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 494 |\n| Machinery | 146 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 88 |\n| Inventory | 280 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 31 |\n| Total assets | **1166** |\n| **EQUITY** | |\n| Share capital | 219 |\n| Retained earnings | 469 |\n| Total equity | **688** |\n| **LIABILITIES** | |\n| Long-term bank loan | 200 |\n| Bonds payable | 52 |\n| Trade payables | 161 |\n| Bank overdraft | 65 |\n| Total liabilities | **478** |\n| Total equity and liabilities | **1166** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.82.",
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "The current ratio is below 1.26.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.3 times over.",
+      "The equity ratio is below 35.4%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Current assets = 372\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 226\n\nCurrent ratio = 372 / 226 ≈ 1.65\n\nThe claim says the ratio exceeds 1.82. We have about 1.65, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets turn into cash within the normal operating cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 372\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 226\n\nCurrent ratio = 372 / 226 ≈ 1.65\n\nThe claim says the ratio below 1.26. We have about 1.65, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.41.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n688 / 1166 ≈ 59.0%\n\nThe claim says the ratio below 35.4%. We have about 59.0%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.029",
+    "title": "Benchmarking Against Industry Peers for Analysts",
+    "context": "Review why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:",
+    "statements": [
+      "The operating result, also described as earnings before interest and taxes, measures profit from core operations before the effects of financing costs and income tax are included.",
+      "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth must have come from a new issue of shares to owners.",
+      "Tracking share capital and retained earnings separately over successive years provides no way of telling whether a business's equity growth has come from owner contributions or from accumulated profit.",
+      "A business that grows its equity mostly through retained earnings is relying just as heavily on outside investors as one whose equity growth comes mainly from new share issues.",
+      "The pattern of a business's equity growth over several years reveals nothing about its underlying financing strategy, regardless of whether it is driven by retained profit or fresh capital."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The operating result, i.e. earnings before interest and taxes, excludes financing costs and income tax.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "With share capital unchanged, equity growth cannot come from new shares; it must be retained earnings.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Separate tracking of these two components is exactly how the source of equity growth is identified.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Growth funded by retained earnings relies less on outside investors than growth funded by new shares.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "This pattern is precisely what reveals a business's underlying financing strategy.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.030",
+    "title": "Benchmarking Against Industry Peers Over Time",
+    "context": "Review how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Excluding financing costs and income tax from the operating result allows a business's core trading performance to be judged separately from how it happens to be financed or taxed.",
+      "If share capital has remained unchanged for several years while equity has still grown, that growth cannot be explained by retained earnings.",
+      "A business is considered to be financing its non-current assets soundly only when their total value is covered mainly by current liabilities.",
+      "Relying on short-term borrowing that must soon be renewed, rather than long-term sources of finance, is regarded as the prudent way to fund long-lived assets.",
+      "When non-current assets exceed the sum of equity and non-current liabilities, this always indicates a conservative and low-risk financing position."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Excluding financing and tax lets the operating result isolate core trading performance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "With share capital unchanged, retained earnings are exactly what explain rising equity.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Covering long-term assets mainly with current liabilities is considered risky, not sound.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Funding long-lived assets mainly with short-term borrowing is regarded as risky, not prudent.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "This situation indicates a risky, not conservative, financing position.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.031",
+    "title": "Revenue and Operating Result Chart 31",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=847 | Operating result=245\nYear 2 | Revenue=950 | Operating result=266\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 847 | 950 |\n| Cost of sales | (521) | (591) |\n| Gross profit | 326 | 359 |\n| Distribution costs | (42) | (48) |\n| General and administrative costs | (39) | (49) |\n| Other operating result | 0 | 4 |\n| Operating result | 245 | 266 |\n| Finance costs | (15) | (19) |\n| Finance costs – net | (12) | (13) |\n| Profit before tax | 233 | 253 |\n| Income taxes | (46) | (50) |\n| Profit for the year | 187 | 203 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Finance costs grew by more than 21.9% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 8.44 times over in Year 1.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 3.8 percentage points higher in Year 2 than in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 14% in Year 2.",
+      "The effective tax rate, income taxes taken as a share of profit before tax, is below 21.3% in Year 1."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Finance costs moved from 15 to 19; operating result moved from 245 to 266.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interest coverage in Year 1 ≈ 16.3 times.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 38.5% then 37.8%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating margin in Year 2 ≈ 28.0%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Effective tax rate in Year 1 ≈ 19.7%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.032",
+    "title": "Profit and Loss Over Two Years 32",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=840 | Operating result=210\nYear 2 | Revenue=945 | Operating result=218\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 840 | 945 |\n| Cost of sales | (551) | (626) |\n| Gross profit | 289 | 319 |\n| Distribution costs | (43) | (49) |\n| General and administrative costs | (40) | (49) |\n| Other operating result | 4 | (3) |\n| Operating result | 210 | 218 |\n| Finance costs | (19) | (24) |\n| Finance costs – net | (12) | (21) |\n| Profit before tax | 198 | 197 |\n| Income taxes | (40) | (42) |\n| Profit for the year | 158 | 155 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Revenue grew by more than 10.1% between Year 1 and Year 2.",
+      "Finance costs grew by more than 10% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 2.2 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 28.1% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 22.6% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Revenue changed by about 12.5% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Finance costs moved from 19 to 24; operating result moved from 210 to 218.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 34.4% then 33.8%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The operating result changed by about 3.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit for the year changed by about -1.9% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.033",
+    "title": "Comparative Balance Sheet Analysis 33",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=513 | Total assets=1020\nYear 2 | Equity=571 | Total assets=1143\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 374 | 428 |\n| Machinery | 220 | 240 |\n| Office equipment | 35 | 41 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 186 | 216 |\n| Trade receivables | 96 | 104 |\n| Cash and cash equivalents | 30 | 35 |\n| Total assets | **1020** | **1143** |\n| **EQUITY** | | |\n| Share capital | 229 | 229 |\n| Retained earnings | 284 | 342 |\n| Total equity | **513** | **571** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 329 | 376 |\n| Bonds payable | 40 | 44 |\n| Trade payables | 82 | 90 |\n| Bank overdraft | 56 | 62 |\n| Total liabilities | **507** | **572** |\n| Total equity and liabilities | **1020** | **1143** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Non-current liabilities amount to more than 52.9% of total equity in Year 1.",
+      "Total equity grew by more than 15.8% between Year 1 and Year 2.",
+      "Total assets grew by more than 21% between Year 1 and Year 2.",
+      "Inventory grew by more than 29% between Year 1 and Year 2.",
+      "Trade payables grew by more than 24.9% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Non-current liabilities are about 71.9% of equity in Year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total equity changed by about 11.3% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Total assets changed by about 12.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory changed by about 16.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Trade payables changed by about 9.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.034",
+    "title": "Asset Composition Chart 34",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=215\nCurrent liabilities=236\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 446 |\n| Machinery | 238 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 109 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 35 |\n| Total assets | **1003** |\n| **EQUITY** | |\n| Share capital | 235 |\n| Retained earnings | 49 |\n| Total equity | **284** |\n| **LIABILITIES** | |\n| Long-term bank loan | 398 |\n| Bonds payable | 85 |\n| Trade payables | 165 |\n| Bank overdraft | 71 |\n| Total liabilities | **719** |\n| Total equity and liabilities | **1003** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio is below 0.99.",
+      "The debt ratio exceeds 67.1%.",
+      "Inventory make up more than 35.6% of current assets.",
+      "Trade receivables make up less than 35.6% of current assets.",
+      "Inventory of €109 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets = 215\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 236\n\nCurrent ratio = 215 / 236 ≈ 0.91\n\nThe claim says the ratio below 0.99. We have about 0.91, which matches that comparison.\n\nThe statement is true.",
+      "Apply the case evidence: Debt ratio ≈ 71.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory are about 50.7% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade receivables are about 33.0% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory is always a current asset.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.035",
+    "title": "Return and Cash Flow Extract 35",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=329\nMachinery=237\nInventory=273\nTrade receivables=180\nCash and cash equivalents=94\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 237 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 273 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1253** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 464 |\n| Total equity | **626** |\n| **LIABILITIES** | |\n| Long-term bank loan | 419 |\n| Bonds payable | 55 |\n| Trade payables | 126 |\n| Bank overdraft | 27 |\n| Total liabilities | **627** |\n| Total equity and liabilities | **1253** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 201 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 199 |\n| Cash flow from investing activities | (276) |\n| Cash flow from financing activities | 46 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 41.4%.",
+      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.3%.",
+      "The equity ratio exceeds 47%.",
+      "Cash flow from operating activities amounts to less than 87% of the operating result, indicating profit is only partly backed by cash.",
+      "Inventory make up more than 27.6% of total assets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Return on equity ≈ 32.1%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Return on capital employed ≈ 18.3%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n626 / 1498 ≈ 41.8%\n\nThe claim says the ratio exceeds 47%. We have about 41.8%, which matches that comparison.\n\nThe statement is true.",
+      "Cash conversion ≈ 99.0% of the operating result.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory are about 21.8% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.036",
+    "title": "Comparative Balance Sheet Analysis 36",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=517 | Total assets=1251\nYear 2 | Equity=552 | Total assets=1362\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 484 | 524 |\n| Machinery | 221 | 229 |\n| Office equipment | 48 | 53 |\n| Patents, trademarks and licences | 32 | 32 |\n| Inventory | 224 | 238 |\n| Trade receivables | 154 | 182 |\n| Cash and cash equivalents | 88 | 104 |\n| Total assets | **1251** | **1362** |\n| **EQUITY** | | |\n| Share capital | 223 | 223 |\n| Retained earnings | 294 | 329 |\n| Total equity | **517** | **552** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 351 | 375 |\n| Bonds payable | 84 | 91 |\n| Trade payables | 215 | 247 |\n| Bank overdraft | 84 | 97 |\n| Total liabilities | **734** | **810** |\n| Total equity and liabilities | **1251** | **1362** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Non-current liabilities amount to less than 101.2% of total equity in Year 2.",
+      "Non-current assets make up more than 55.9% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.64 times over in Year 2.",
+      "Total equity grew by more than 16.6% between Year 1 and Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 20.8% in Year 1."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Non-current liabilities are about 84.4% of equity in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets are about 61.5% of total assets in Year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current ratio in year 2 is about 1.52.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total equity changed by about 6.8% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term financing covers non-current assets by about 21.3% in year 1.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.037",
+    "title": "Gearing From Comparative Figures 37",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=896 | Total assets=1249\nYear 2 | Equity=960 | Total assets=1363\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 504 |\n| Machinery | 255 | 304 |\n| Office equipment | 80 | 90 |\n| Patents, trademarks and licences | 64 | 64 |\n| Inventory | 229 | 239 |\n| Trade receivables | 114 | 122 |\n| Cash and cash equivalents | 36 | 40 |\n| Total assets | **1249** | **1363** |\n| **EQUITY** | | |\n| Share capital | 131 | 131 |\n| Retained earnings | 765 | 829 |\n| Total equity | **896** | **960** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 206 | 230 |\n| Bonds payable | 42 | 48 |\n| Trade payables | 64 | 76 |\n| Bank overdraft | 41 | 49 |\n| Total liabilities | **353** | **403** |\n| Total equity and liabilities | **1249** | **1363** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity grew by more than 16.5% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 105.9% of total equity in Year 2.",
+      "Non-current assets make up more than 60.3% of total assets in Year 2.",
+      "Trade payables of €76 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Total assets grew by more than 22.8% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Total equity changed by about 7.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Non-current liabilities are about 29.0% of equity in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets are about 70.6% of total assets in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade payables are a current liability regardless of the amount.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 9.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.038",
+    "title": "Benchmarking Against Industry Peers in Context",
+    "context": "Review how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:",
+    "statements": [
+      "Tracking the operating result over several years shows how a business's core trading is developing independently of changes in interest rates or tax policy.",
+      "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed.",
+      "Two businesses reporting an identical operating result can still end up with different profit for the year if their finance costs or tax rates differ.",
+      "Financing long-lived production assets through short-term credit that must be repaid within a year removes any risk of needing to refinance.",
+      "A decline in profit for the year alongside a stable or rising operating result suggests the cause lies in financing costs or taxation rather than in core trading."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Multi-year operating result tracking isolates trading trends from interest rate or tax changes.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "This matching principle is central to being considered a soundly financed business.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical operating results can yield different profit for the year given differing finance costs or tax rates.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Short-term financing of long-lived assets creates, rather than removes, refinancing risk.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Falling profit for the year with a stable operating result points to financing or tax causes, not trading.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.039",
+    "title": "Liquidity From the Balance Sheet 39",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=441\nCurrent liabilities=200\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 444 |\n| Machinery | 275 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 215 |\n| Trade receivables | 174 |\n| Cash and cash equivalents | 52 |\n| Total assets | **1269** |\n| **EQUITY** | |\n| Share capital | 221 |\n| Retained earnings | 336 |\n| Total equity | **557** |\n| **LIABILITIES** | |\n| Long-term bank loan | 439 |\n| Bonds payable | 73 |\n| Trade payables | 118 |\n| Bank overdraft | 82 |\n| Total liabilities | **712** |\n| Total equity and liabilities | **1269** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.08.",
+      "Working capital of €241 thousand is positive on this balance sheet.",
+      "The current ratio is below 1.01.",
+      "The debt ratio exceeds 55.9%.",
+      "The equity ratio is below 20.5%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets = 441\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 200\n\nCurrent ratio = 441 / 200 ≈ 2.21\n\nThe claim says the ratio exceeds 1.08. We have about 2.21, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n441 - 200 = 241\n\nThe claim cites 241. We have 241, so the figures line up.\n\nThe statement is true.",
+      "Current assets = 441\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 200\n\nCurrent ratio = 441 / 200 ≈ 2.21\n\nThe claim says the ratio below 1.01. We have about 2.21, which does not match that comparison.\n\nThe statement is false.",
+      "Apply the case evidence: Debt ratio ≈ 56.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n557 / 1269 ≈ 43.9%\n\nThe claim says the ratio below 20.5%. We have about 43.9%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.040",
+    "title": "Profit and Loss Over Two Years 40",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=785 | Operating result=192\nYear 2 | Revenue=919 | Operating result=217\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 785 | 919 |\n| Cost of sales | (495) | (586) |\n| Gross profit | 290 | 333 |\n| Distribution costs | (53) | (67) |\n| General and administrative costs | (42) | (47) |\n| Other operating result | (3) | (2) |\n| Operating result | 192 | 217 |\n| Finance costs | (14) | (21) |\n| Finance costs – net | (10) | (17) |\n| Profit before tax | 182 | 200 |\n| Income taxes | (43) | (46) |\n| Profit for the year | 139 | 154 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Revenue grew by more than 12.5% between Year 1 and Year 2.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 1.7 percentage points higher in Year 2 than in Year 1.",
+      "Finance costs grew by more than 19.5% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 4.62 times over in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 10.4% in Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Revenue changed by about 17.1% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 36.9% then 36.2%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Finance costs moved from 14 to 21; operating result moved from 192 to 217.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interest coverage in Year 1 ≈ 13.7 times.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operating margin in year 2 ≈ 23.6%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.041",
+    "title": "The Current and Non-Current Asset Balance in Practice",
+    "context": "Review how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:",
+    "statements": [
+      "An expenditure is an outflow of cash or resources, while an expense is the portion of that outflow recognised in the income statement as belonging to the current period.",
+      "Cost of sales includes every cost a business incurs during the period, regardless of whether the cost relates directly to the goods sold.",
+      "Any cost that benefits the business in some way, even indirectly, belongs within cost of sales.",
+      "Materials physically consumed in manufacturing the units sold are excluded from cost of sales because they are considered an overhead.",
+      "Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each period of cover passes."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Expenditure is the outflow itself; expense is the portion recognised for the current period.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost of sales is limited to direct costs; not every cost incurred belongs there.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Only directly traceable costs belong in cost of sales; indirect benefit is not sufficient.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Materials consumed directly in production are a direct cost and belong within cost of sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A prepayment is an expenditure immediately but becomes an expense only in the periods it covers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.042",
+    "title": "The Current and Non-Current Asset Balance Explained",
+    "context": "Review how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:",
+    "statements": [
+      "A single large expenditure can result in expense being recognised gradually across several future accounting periods rather than all at once.",
+      "Because cost of sales includes every departmental cost, functions such as administration and distribution are absorbed into it rather than reported separately.",
+      "Direct labour spent physically producing the goods sold is excluded from cost of sales because wages are always treated as an administrative cost.",
+      "The distinction between expenditure and expense matters because it explains why a business's cash outflow for a year can differ substantially from its reported expenses for that year.",
+      "Gross profit is arrived at by deducting all operating expenses, including distribution and administrative costs, from revenue."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A large expenditure can be spread as expense across several future periods.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Administration and distribution are reported separately, not absorbed into cost of sales.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Direct production labour is a core component of cost of sales, not an administrative cost.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Distinguishing expenditure from expense explains gaps between cash outflow and reported expense in a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross profit only deducts cost of sales from revenue; operating expenses are deducted later.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.043",
+    "title": "The Current and Non-Current Asset Balance for Analysts",
+    "context": "Review why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying an asset that will be used for several years is an expenditure immediately, but only part of its cost becomes an expense in the year of purchase.",
+      "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
+      "The margin represented by gross profit reflects a business's overall profitability after every overhead cost, including administration, has already been deducted.",
+      "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will widen across that period.",
+      "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin come under sustained pressure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Buying a multi-year asset is an immediate expenditure, with only part becoming expense that year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Comparing revenue growth with cost of sales growth reveals changing production efficiency.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross profit is calculated before, not after, overhead costs such as administration are deducted.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Cost of sales growing more slowly than revenue widens the gross profit margin.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost of sales consistently outpacing revenue growth puts sustained pressure on the gross profit margin.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.044",
+    "title": "Profit and Loss Over Two Years 44",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=770 | Operating result=240\nYear 2 | Revenue=904 | Operating result=264\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 770 | 904 |\n| Cost of sales | (448) | (530) |\n| Gross profit | 322 | 374 |\n| Distribution costs | (46) | (61) |\n| General and administrative costs | (40) | (46) |\n| Other operating result | 4 | (3) |\n| Operating result | 240 | 264 |\n| Finance costs | (18) | (26) |\n| Finance costs – net | (12) | (23) |\n| Profit before tax | 228 | 241 |\n| Income taxes | (46) | (47) |\n| Profit for the year | 182 | 194 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Revenue grew by more than 12.4% between Year 1 and Year 2.",
+      "Finance costs grew by more than 37.8% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 4.4 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 59.9% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 29.3% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Revenue changed by about 17.4% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Finance costs moved from 18 to 26; operating result moved from 240 to 264.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gross margins were 41.8% then 41.4%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The operating result changed by about 10.0% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Profit for the year changed by about 6.6% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.045",
+    "title": "Comparative Balance Sheet Analysis 45",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and total assets\"]]\nYear 1 | Equity=474 | Total assets=1013\nYear 2 | Equity=524 | Total assets=1129\n[[/CHART]]\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 369 | 423 |\n| Machinery | 146 | 168 |\n| Office equipment | 71 | 77 |\n| Patents, trademarks and licences | 51 | 51 |\n| Inventory | 231 | 247 |\n| Trade receivables | 114 | 128 |\n| Cash and cash equivalents | 31 | 35 |\n| Total assets | **1013** | **1129** |\n| **EQUITY** | | |\n| Share capital | 191 | 191 |\n| Retained earnings | 283 | 333 |\n| Total equity | **474** | **524** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 197 | 217 |\n| Bonds payable | 81 | 94 |\n| Trade payables | 184 | 214 |\n| Bank overdraft | 77 | 80 |\n| Total liabilities | **539** | **605** |\n| Total equity and liabilities | **1013** | **1129** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Total equity grew by more than 14.5% between Year 1 and Year 2.",
+      "Trade payables grew by more than 8.4% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 75.7% of total equity in Year 2.",
+      "Total assets grew by more than 14.9% between Year 1 and Year 2.",
+      "Inventory grew by more than 20.7% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Total equity changed by about 10.5% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Trade payables changed by about 16.3% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current liabilities are about 59.4% of equity in year 2.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Total assets changed by about 11.5% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory changed by about 6.9% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.046",
+    "title": "The Current and Non-Current Asset Balance Over Time",
+    "context": "Review how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:",
+    "statements": [
+      "Stable growth in both revenue and cost of sales at similar rates tends to keep a business's gross profit margin relatively steady from year to year.",
+      "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace.",
+      "Distribution costs and administrative expenses are deducted directly from revenue at the same stage as cost of sales, before gross profit is calculated.",
+      "Two businesses that report identical gross profit will always end up with identical operating results, regardless of their distribution and administrative costs.",
+      "Reading the balance sheet and income statement together gives a fuller picture of a business's position and performance than studying either statement on its own."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Revenue and cost of sales growing at similar rates tends to keep the margin steady.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Rising revenue does not guarantee improving profitability if cost of sales rises even faster.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "These costs are deducted after gross profit has already been calculated, not alongside cost of sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical gross profit does not guarantee identical operating results if operating expenses differ.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Reading both statements together gives a fuller picture than studying either alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.047",
+    "title": "Balance Sheet Structure Review 47",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=435\nCurrent liabilities=301\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 289 |\n| Machinery | 272 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 259 |\n| Trade receivables | 69 |\n| Cash and cash equivalents | 107 |\n| Total assets | **1088** |\n| **EQUITY** | |\n| Share capital | 254 |\n| Retained earnings | 129 |\n| Total equity | **383** |\n| **LIABILITIES** | |\n| Long-term bank loan | 329 |\n| Bonds payable | 75 |\n| Trade payables | 214 |\n| Bank overdraft | 87 |\n| Total liabilities | **705** |\n| Total equity and liabilities | **1088** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.84.",
+      "The current ratio is below 0.68.",
+      "Working capital of €134 thousand is positive on this balance sheet.",
+      "Inventory make up more than 55.2% of current assets.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.97 times over."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets = 435\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 301\n\nCurrent ratio = 435 / 301 ≈ 1.45\n\nThe claim says the ratio exceeds 1.84. We have about 1.45, which does not match that comparison.\n\nThe statement is false.",
+      "Current assets = 435\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 301\n\nCurrent ratio = 435 / 301 ≈ 1.45\n\nThe claim says the ratio below 0.68. We have about 1.45, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n435 - 301 = 134\n\nThe claim cites 134. We have 134, so the figures line up.\n\nThe statement is true.",
+      "Inventory are about 59.5% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 0.58.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.048",
+    "title": "The Current and Non-Current Asset Balance in Context",
+    "context": "Review how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:",
+    "statements": [
+      "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is deteriorating.",
+      "A strong profit for the year shown in the income statement can be undermined by a weak financing position revealed only by the balance sheet.",
+      "Changes in working capital shown on the balance sheet can help explain why cash movements differ from the profit for the year reported in the income statement.",
+      "Judging a business's overall financial health requires weighing income statement performance against balance sheet strength rather than looking at either alone.",
+      "The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have already been deducted."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "A widening such gap indicates an improving, not deteriorating, gross profit margin.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A strong income statement result can be undermined by weaknesses only the balance sheet reveals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Balance sheet working capital changes help explain gaps between cash movement and reported profit.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Overall financial health requires weighing both statements together, not either alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The operating result is calculated before, not after, financing costs and income tax.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.049",
+    "title": "Sources of Equity Growth in Practice",
+    "context": "Review why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:",
+    "statements": [
+      "A business could report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, so both statements need to be considered together.",
+      "A beverage bottling company is regarded as financing its bottling line machinery soundly when their value does not exceed equity plus a long-term bottling equipment loan.",
+      "Tracking the balance between bottling line machinery and bottled stock awaiting dispatch on a beverage bottling company's statements over several years shows whether the business is becoming more or less capital-intensive.",
+      "A paper mill is regarded as financing its papermaking machinery soundly when their value does not exceed equity plus a long-term papermill mortgage.",
+      "Tracking the balance between papermaking machinery and paper roll inventory on a paper mill's statements over several years shows whether the business is becoming more or less capital-intensive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Rising profit can coincide with a deteriorating balance sheet, so both statements matter jointly.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Changes in the non-current versus current asset split over time signal shifting capital intensity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Changes in the non-current versus current asset split over time signal shifting capital intensity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.050",
+    "title": "Profit and Loss Over Two Years 50",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Revenue and operating result\"]]\nYear 1 | Revenue=730 | Operating result=179\nYear 2 | Revenue=873 | Operating result=216\n[[/CHART]]\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 730 | 873 |\n| Cost of sales | (469) | (561) |\n| Gross profit | 261 | 312 |\n| Distribution costs | (36) | (44) |\n| General and administrative costs | (43) | (53) |\n| Other operating result | (3) | 1 |\n| Operating result | 179 | 216 |\n| Finance costs | (14) | (20) |\n| Finance costs – net | (7) | (16) |\n| Profit before tax | 172 | 200 |\n| Income taxes | (39) | (49) |\n| Profit for the year | 133 | 151 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The operating result grew by more than 32.8% between Year 1 and Year 2.",
+      "Revenue grew by more than 17.6% between Year 1 and Year 2.",
+      "Finance costs grew by more than 25.2% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 6.23 times over in Year 1.",
+      "Profit for the year grew by more than 16.1% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The operating result changed by about 20.7% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Revenue changed by about 19.6% between the two years.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Finance costs moved from 14 to 20; operating result moved from 179 to 216.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interest coverage in Year 1 ≈ 12.8 times.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Profit for the year changed by about 13.5% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

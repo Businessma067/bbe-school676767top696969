@@ -1,0 +1,160 @@
+CASE MATH 11.68
+ANSWER [true, true, false, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+The first bracket is $T(y)=\dfrac{1}{5}y$ for $y\le 1000$, so
+$$T^{\prime}(y)=\dfrac{1}{5}\qquad(y<1000).$$
+Above $1000$, $T(y)=200+\dfrac{2}{5}(y-1000)$ gives
+$$T^{\prime}(y)=\dfrac{2}{5}\qquad(y>1000).$$
+Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths. At $y=1500$,
+$$T(1500)=200+\dfrac{2}{5}\cdot 500=400,\qquad\dfrac{T(1500)}{1500}=\dfrac{400}{1500}=\dfrac{4}{15}\neq\dfrac{2}{5},$$
+while about $40$ cents of a small extra euro is taxed away by the slope $\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope. First-bracket $T^{\prime}=1/5$, second-bracket $T^{\prime}=2/5$. At $y=1500$, average tax is $4/15\neq 2/5$ while about $40$ cents of an extra euro is taxed away.
+
+=== A ===
+**A.** → True
+
+On the first bracket, $T(y)=\dfrac{1}{5}y$. Differentiating gives
+
+$$
+T^{\prime}(y) = \dfrac{1}{5}
+$$
+
+$$
+\text{for }y<1000
+$$
+
+For $y<1000$ the marginal tax rate is $\dfrac{1}{5}$
+
+On the first bracket the tax rule is a ray through the origin with slope $1/5$, so the marginal rate equals that slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+T(y) = \dfrac{1}{5}y
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Above $1000$ euros the tax rule is $T(y)=200+\dfrac{2}{5}(y-1000)$, so
+
+$$
+T^{\prime}(y) = \dfrac{2}{5}
+$$
+
+$$
+\text{for }y>1000
+$$
+
+Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths
+
+The kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+y = 1000
+$$
+
+$$
+T(y) = 200+\dfrac{2}{5}(y-1000)
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== C ===
+**C.** → False
+
+At $y=1500$, total tax is
+
+$$
+T(1500) = 200+\dfrac{2}{5}(1500-1000)
+$$
+
+$$
+T(1500) = 200+200
+$$
+
+$$
+200 + 200 = 400
+$$
+
+$$
+T(1500) = 400 = 400
+$$
+
+$$
+T(1500) = 400
+$$
+
+Average tax is therefore
+
+$$
+\dfrac{T(1500)}{1500} = \dfrac{400}{1500}
+$$
+
+$$
+\dfrac{T(1500)}{1500} = \dfrac{4}{15}
+$$
+
+which is strictly less than $\dfrac{2}{5}=\dfrac{6}{15}$, and the average rate does not equal $\dfrac{2}{5}$
+
+Average tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$.
+
+So the statement is False.
+
+=== D ===
+**D.** → True
+
+At $y=1500$ the taxpayer is in the second bracket, where $T^{\prime}(y)=\dfrac{2}{5}=0.4$.
+
+About $40$ cents of a small extra euro of income is therefore taxed away
+
+That is the one-euro reading of the second-bracket slope $T^{\prime}(1500)=2/5$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+y = 1500
+$$
+
+$$
+T^{\prime}(y) = \dfrac{2}{5} = 0.4
+$$
+
+$$
+T^{\prime}(1500) = 2/5
+$$
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+The average rate $\dfrac{T(1500)}{1500}=\dfrac{4}{15}$ is only a quotient at one income.
+
+It does not by itself recover the second-bracket slope $\dfrac{2}{5}$; many schedules could share that average while having different local slopes
+
+The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+\dfrac{T(1500)}{1500} = \dfrac{4}{15}
+$$
+
+$$
+y = 1500
+$$
+
+which does not match the claim.
+
+So the statement is False.
+

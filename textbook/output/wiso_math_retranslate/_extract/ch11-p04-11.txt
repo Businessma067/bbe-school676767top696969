@@ -1,0 +1,130 @@
+CASE MATH 11.76
+ANSWER [true, true, false, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\prime}(Q)=0$, hence
+$$R_A^{\prime}(Q)=C_A^{\prime}(Q)$$
+and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\prime}=4>0$ (expand). Height and slope are independent.
+
+=== A ===
+**A.** → True
+
+Studio A reports $P_A(Q)=50>0$ and $P_A^{\prime}(Q)=0$.
+
+The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero
+
+Studio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_A(Q) = 50>0
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Studio B reports $P_B(Q)=0$ together with $P_B^{\prime}(Q)=4>0$.
+
+Breaking even today is compatible with an upward slope: a small expansion would push profit above zero
+
+Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+So the statement is True.
+
+=== C ===
+**C.** → False
+
+Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
+
+The report $P_A^{\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing
+
+"Earns nothing" would mean $P_A(Q)=0$; the report $P_A^{\prime}=0$ says something entirely different.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_A(Q) = 50
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+$$
+P_A(Q) = 0
+$$
+
+$$
+P_A^{\prime} = 0
+$$
+
+So the statement is False.
+
+=== D ===
+**D.** → True
+
+$P_B^{\prime}(Q)=4>0$ is an expansion signal for B.
+
+For A, $P_A^{\prime}(Q)=0$ rearranges to $R_A^{\prime}(Q)=C_A^{\prime}(Q)$, the usual first-order condition
+
+B's positive $P_B^{\prime}$ is an expand signal; A's $P_A^{\prime}=0$ is already the MR$=$MC first-order condition.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+$$
+R_A^{\prime}(Q) = C_A^{\prime}(Q)
+$$
+
+$$
+P_A^{\prime} = 0
+$$
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\prime}(Q)=4>0$.
+
+Current break-even does not forbid a positive marginal profit
+
+Break-even constrains the height $P$, not the slope $P^{\prime}$; B is the textbook counterexample.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+So the statement is False.
+

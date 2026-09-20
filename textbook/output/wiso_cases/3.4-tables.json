@@ -1,0 +1,234 @@
+[
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.33",
+    "title": "FunBike: Bilanzgleichheit in der Tabelle",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (alle Beträge in Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Gesamtvermögen und Gesamtkapital betragen jeweils 9 638 250 Euro.",
+      "Das Eigenkapital ergibt sich als 525 000 + 3 614 250 = 4 139 250 Euro.",
+      "Die Summe der Aktiva übersteigt die Summe der Passiva um mehr als 500 000 Euro.",
+      "Das Fremdkapital beträgt 2 000 000 + 3 199 000 + 300 000 = 5 499 000 Euro.",
+      "Die Bareinlagen der Gesellschafter allein sind bereits das gesamte Eigenkapital."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Beide Seiten schließen mit derselben Zahl. Auf der Aktivseite addiert man Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen 598 000 und Bankguthaben 320 250. Rechnung: 750 000 + 2 330 000 = 3 080 000, plus 240 000 = 3 320 000, plus 5 400 000 = 8 720 000, plus 598 000 = 9 318 000, plus 320 250 = 9 638 250. Passiva: Bareinlagen 525 000 + Gewinn 3 614 250 = 4 139 250, plus Rückstellungen 2 000 000 = 6 139 250, plus Bankkredite 3 199 000 = 9 338 250, plus Verbindlichkeiten 300 000 = 9 638 250. Vermögen gleich Kapital, wie die Summenzeile der Tabelle zeigt.\n\nDie Aussage ist wahr.",
+      "Eigenkapital steht in zwei Passivzeilen, nicht in einer. Formel: Eigenkapital = Bareinlagen der Gesellschafter + Gewinn. Einsetzen aus der Tabelle: 525 000 + 3 614 250 = 4 139 250 Euro. Probe gegen die Bilanzsumme: Fremdkapital 2 000 000 + 3 199 000 + 300 000 = 5 499 000, und 4 139 250 + 5 499 000 = 9 638 250. Wer nur die Bareinlagen 525 000 liest, unterschlägt den Gewinn 3 614 250, der den weitaus größeren Teil der eigenen Mittel bildet.\n\nDie Aussage ist wahr.",
+      "Eine Schieflage zwischen den Seiten gibt es in dieser Tabelle nicht. Summe Aktiva = 9 638 250, Summe Passiva = 9 638 250. Differenz: 9 638 250 − 9 638 250 = 0. Die Behauptung, die Aktiva lägen um mehr als 500 000 über den Passiva, verlangt eine Lücke, die die Summenzeile nicht hergibt. In der Buchhaltung gilt Vermögen = Kapital: jeder Teil des Vermögens ist finanziert, die Aktiva stehen im Soll, die Passiva im Haben. Eine Differenz über 500 000 würde die Bilanz sprengen; FunBike zeigt Soll-Haben-Gleichheit.\n\nDie Aussage ist falsch.",
+      "Fremdkapital sammelt drei Passivpositionen unterhalb des Eigenkapitals. Formel: Fremdkapital = Rückstellungen + Bankkredite + Verbindlichkeiten aus Lieferungen und Leistungen. Einsetzen: 2 000 000 + 3 199 000 = 5 199 000, plus 300 000 = 5 499 000 Euro. Probe: Gesamtkapital 9 638 250 minus Eigenkapital 4 139 250 = 5 499 000. Bankkredite 3 199 000 sind der größte Brocken (3 199 000 / 5 499 000 ≈ 0,58), ersetzen aber weder Rückstellungen noch Lieferantenverbindlichkeiten.\n\nDie Aussage ist wahr.",
+      "Nicht jede Einlagenzeile ist schon das ganze Eigenkapital. Bareinlagen der Gesellschafter stehen mit 525 000 in der Tabelle. Eigenkapital ist 525 000 + Gewinn 3 614 250 = 4 139 250. Vergleich: 525 000 / 4 139 250 ≈ 0,127, also rund 13 Prozent der eigenen Mittel, der Gewinn trägt die restlichen 87 Prozent. Die Aussage streicht genau die Gewinnzeile und würde FunBike als unterkapitalisiert erscheinen lassen, obwohl 4 139 250 Euro eigene Mittel in der Passiva stehen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.34",
+    "title": "FunBike: Anlage- und Umlaufvermögen",
+    "context": "Bilanz der FunBike GmbH per 31.12.20xx (alle Beträge in Euro). Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen; Umlaufvermögen bleibt für gewöhnlich kürzer als ein Jahr.\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Anlagevermögen beträgt 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro.",
+      "Das Umlaufvermögen beträgt 5 400 000 + 598 000 + 320 250 = 6 318 250 Euro.",
+      "Das Anlagevermögen übersteigt das Umlaufvermögen deutlich.",
+      "FunBike ist umlaufintensiv, weil das Umlaufvermögen deutlich über dem Anlagevermögen liegt.",
+      "Beim Umlaufvermögen dominieren die Vorräte mit 5 400 000 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Länger als ein Jahr gebunden: das sind die drei Anlagezeilen. Formel: Anlagevermögen = Grundstücke und Bauten + technische Anlagen und Geschäftsausstattung + Finanzanlagen. Einsetzen: 750 000 + 2 330 000 = 3 080 000, plus 240 000 = 3 320 000 Euro. Das Buch rechnet hier Gebäude und Maschinen zum Anlagevermögen, Vorräte ausdrücklich nicht. Probe gegen die Bilanzsumme: bleibt 9 638 250 − 3 320 000 = 6 318 250 für den Umlauf. Die 3 320 000 Euro sind das langfristige Vermögen von etwas mehr als drei Millionen, von dem später die goldene Bilanzregel spricht.\n\nDie Aussage ist wahr.",
+      "Kürzer als ein Jahr: Vorräte, Forderungen, Bankguthaben. Formel: Umlaufvermögen = Vorräte + Forderungen aus Lieferungen und Leistungen + Bankguthaben und Barbestand. Einsetzen: 5 400 000 + 598 000 = 5 998 000, plus 320 250 = 6 318 250 Euro. Probe: Anlage 3 320 000 + Umlauf 6 318 250 = 9 638 250 schließt die Aktivseite ohne Rest. Die Vorräte 5 400 000 allein tragen bereits den Großteil dieses Umlaufs; Forderungen und Bank sind die kleineren Reste 598 000 und 320 250.\n\nDie Aussage ist wahr.",
+      "Die Relation liegt umgekehrt zur Behauptung. Vergleich aus der Tabelle: Umlaufvermögen 6 318 250 gegen Anlagevermögen 3 320 000. Differenz: 6 318 250 − 3 320 000 = 2 998 250 Euro zugunsten des Umlaufs. Verhältnis: 6 318 250 / 3 320 000 ≈ 1,90, also knapp das Doppelte. Wer Gebäude und Maschinen als den größeren Block liest, übersieht die Vorrätezeile 5 400 000, die allein schon über dem gesamten Anlagevermögen liegt (5 400 000 > 3 320 000). FunBike ist damit nicht anlagenlastig.\n\nDie Aussage ist falsch.",
+      "Umlaufintensiv heißt: deutlich mehr Umlauf- als Anlagevermögen. Zahlen der Tabelle: 6 318 250 steht gegen 3 320 000, also mehr als das 1,9-Fache (6 318 250 / 3 320 000 ≈ 1,90). Anteil am Gesamtvermögen: 6 318 250 / 9 638 250 ≈ 0,656, rund 66 Prozent Umlauf. Das Buch ordnet FunBike genau so ein, weil ein Fahrradproduzent Bestandteile und fertige Räder lagert. Die Maschinenhalle 2 330 000 ändert diese Einordnung nicht, solange die Vorräte den Umlauf tragen.\n\nDie Aussage ist wahr.",
+      "Vorräte stechen aus dem Umlauf heraus. Umlaufvermögen = 6 318 250, davon Vorräte 5 400 000. Anteil: 5 400 000 / 6 318 250 ≈ 0,855, also rund 86 Prozent. Rest: Forderungen 598 000 + Bank 320 250 = 918 250. Für einen Fahrradproduzenten, der viele Teile und teilweise fertige Räder lagert, ist das plausibel. Trotzdem könnte geprüft werden, ob die Lagerhaltung reduzierbar ist, ohne die Produktion zu beeinträchtigen. Dominanz heißt hier: eine Zeile trägt fast den ganzen Umlauf.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.35",
+    "title": "FunBike: Eigenkapital, Fremdkapital, Quote",
+    "context": "Die Finanzierung der FunBike GmbH erfolgt durch Eigen- und Fremdkapital. Bilanz per 31.12.20xx (Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Rund 57 Prozent des Kapitals sind Fremdkapital.",
+      "Die Eigenkapitalquote liegt über 60 Prozent der Bilanzsumme.",
+      "Den Großteil des Fremdkapitals bilden die Bankkredite mit 3 199 000 Euro.",
+      "Das Eigenkapital beträgt über vier Millionen Euro.",
+      "Das gesamte Fremdkapital besteht nur aus den Verbindlichkeiten aus Lieferungen und Leistungen von 300 000 Euro."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fremdkapitalquote braucht Zähler und Nenner aus der Tabelle. Zähler: Rückstellungen 2 000 000 + Bankkredite 3 199 000 + Verbindlichkeiten 300 000 = 5 499 000. Nenner: Bilanzsumme 9 638 250. Quotient: 5 499 000 / 9 638 250 ≈ 0,5705, also rund 57 Prozent. Probe: Eigenkapital 4 139 250 / 9 638 250 ≈ 0,4295, und 57,05 + 42,95 = 100 Prozent. Bankkredite allein sind 3 199 000 / 9 638 250 ≈ 33 Prozent der Bilanzsumme und treiben die Quote. Das Buch nennt genau diese Größenordnung für FunBike und hält sie für ein österreichisches Unternehmen knapp unter 10 Millionen Euro Bilanzsumme für nicht untypisch.\n\nDie Aussage ist wahr.",
+      "Sechzig Prozent Eigenkapital stünden nicht in dieser Tabelle. Eigenkapital = 525 000 + 3 614 250 = 4 139 250. Quote: 4 139 250 / 9 638 250 ≈ 0,4295, also rund 43 Prozent, nicht über 60. Schwelle 60 Prozent von 9 638 250 wäre 5 782 950; 4 139 250 bleibt 1 643 700 darunter. 43 Prozent liegt klar unter 60; die Behauptung verdreht Eigen- und Fremdanteil. FunBike finanziert sich mehrheitlich fremd (5 499 000 gegen 4 139 250), nicht zu drei Fünfteln eigen.\n\nDie Aussage ist falsch.",
+      "Bankkredite gegen die übrigen Schulden halten. Fremdkapital 5 499 000, davon Bankkredite 3 199 000. Anteil: 3 199 000 / 5 499 000 ≈ 0,582, also rund 58 Prozent. Rückstellungen 2 000 000 plus Lieferanten 300 000 ergeben zusammen 2 300 000, weniger als die Bankzeile allein. 3 199 000 > 2 300 000, daher der Großteil. Das Buch führt den Großteil des Fremdkapitals auf Bankkredite zurück; die drei FK-Zeilen der Tabelle bestätigen das ohne zusätzliche Annahmen.\n\nDie Aussage ist wahr.",
+      "Vier-Millionen-Schwelle und Tabellenwert. Eigenkapital = Bareinlagen 525 000 + Gewinn 3 614 250 = 4 139 250 Euro. Vergleich: 4 139 250 > 4 000 000, Differenz 139 250. Das Buch spricht davon, dass das Eigenkapital über vier Millionen Euro beträgt. Genau dieser Puffer trägt die goldene Bilanzregel, weil das langfristige Vermögen nur 3 320 000, also etwas über drei Millionen, beträgt. 4 139 250 − 3 320 000 = 819 250 Überdeckung durch eigene Mittel.\n\nDie Aussage ist wahr.",
+      "Dreihunderttausend ersetzen nicht 5,5 Millionen. Verbindlichkeiten aus Lieferungen und Leistungen stehen mit 300 000 in einer einzigen Zeile. Fremdkapital umfasst zusätzlich Rückstellungen 2 000 000 und Bankkredite 3 199 000, Summe 5 499 000. Anteil der Lieferanten: 300 000 / 5 499 000 ≈ 0,055, knapp 5,5 Prozent, nicht das Ganze. Wer nur die letzte Passivzeile liest, unterschlägt Bank und Rückstellungen und würde FunBike als fast schuldenfrei erscheinen lassen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.36",
+    "title": "FunBike: Goldene Bilanzregel",
+    "context": "Langfristig gebundenes Vermögen soll auch langfristig finanziert sein (goldene Bilanzregel). Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das langfristige Vermögen von 3 320 000 Euro ist durch Eigenkapital von 4 139 250 Euro mehr als gedeckt, die goldene Bilanzregel ist erfüllt.",
+      "Weil 3 320 000 größer ist als 4 139 250, bricht FunBike die goldene Bilanzregel.",
+      "Vorräte von 5 400 000 Euro zählen zum Anlagevermögen, weil sie für die Produktion unentbehrlich sind.",
+      "Die Verbindlichkeiten aus Lieferungen und Leistungen von 300 000 Euro allein finanzieren die technischen Anlagen von 2 330 000 Euro fristenkongruent.",
+      "Ein Teil des Fremdkapitals kann zusätzlich langfristig sein und die Deckung des Anlagevermögens weiter stützen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fristenkongruenz prüft man zahlenmäßig an der Tabelle. Langfristiges Vermögen = Anlagevermögen = 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro (etwas mehr als drei Millionen, wie das Buch sagt). Eigenkapital = 525 000 + 3 614 250 = 4 139 250 Euro (über vier Millionen). Vergleich: 4 139 250 > 3 320 000, Überdeckung 819 250 Euro. Damit ist langfristig gebundenes Vermögen durch eigene Mittel bereits voll finanziert. Die goldene Bilanzregel, dass langfristiges Vermögen langfristig finanziert sein soll, ist erfüllt, noch bevor man einen vermutlich langfristigen Teil des Fremdkapitals hinzurechnet.\n\nDie Aussage ist wahr.",
+      "Die Ungleichung steht falsch herum. 3 320 000 ist nicht größer als 4 139 250, sondern kleiner: 4 139 250 − 3 320 000 = 819 250. Wer die goldene Bilanzregel als gebrochen darstellt, vertauscht Vermögen und Kapital. Das Buch stellt ausdrücklich fest, dass die Regel erfüllt ist, weil das langfristige Vermögen etwas über drei Millionen und das Eigenkapital über vier Millionen liegt. Eine gebrochene Regel läge vor, wenn 3 320 000 ungedeckt über den langfristigen Mitteln stünde; hier ist das Gegenteil der Fall.\n\nDie Aussage ist falsch.",
+      "Unentbehrlich macht noch kein Anlagevermögen. Die Fristigkeitsregel des Buchs: Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen, zum Beispiel Gebäude und Maschinen. Vorräte bleiben für gewöhnlich kürzer als ein Jahr und stehen in der Tabelle unter Umlaufvermögen mit 5 400 000. 5 400 000 gehört also nicht zu den 3 320 000 Anlage (750 000 + 2 330 000 + 240 000). Produktionsnähe ändert die Bilanzgliederung nicht: Rahmen und Reifen auf Lager sind Umlauf, die Montagehalle ist Anlage.\n\nNote: Die Einordnung folgt der geplanten Verweildauer, nicht der betrieblichen Wichtigkeit.\n\nDie Aussage ist falsch.",
+      "Dreihunderttausend tragen keine 2,33 Millionen fristenkongruent. Technische Anlagen und Geschäftsausstattung 2 330 000 sind Anlagevermögen, also langfristig gebunden. Verbindlichkeiten aus Lieferungen und Leistungen 300 000 sind typischerweise kurzfristig. Deckung: 300 000 / 2 330 000 ≈ 0,129, knapp 13 Prozent der Anlagenzeile, nicht die volle Finanzierung. Fehlbetrag 2 330 000 − 300 000 = 2 030 000. Die goldene Bilanzregel verlangt langfristige Deckung durch Eigenkapital 4 139 250 und vermutlich langfristige Teile des Fremdkapitals, nicht durch die Lieferantenziele allein.\n\nDie Aussage ist falsch.",
+      "Eigenkapital reicht, zusätzliches langfristiges FK wäre Reserve. Das Buch sagt: das Eigenkapital beträgt über vier Millionen und auch ein Teil des Fremdkapitals wird vermutlich langfristig sein. Bankkredite 3 199 000 können Laufzeiten über ein Jahr haben; Rückstellungen 2 000 000 sind nicht automatisch kurzfristig. Selbst ohne diese Vermutung deckt EK 4 139 250 bereits AV 3 320 000 (Überhang 819 250). Die Aussage bleibt im Rahmen des Buchs: sie erfindet keine zweite Firma, kein zweites Jahr und keine Zahl außerhalb der Tabelle.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.37",
+    "title": "FunBike: G&V von Umsatz bis EBIT",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro). Von den Umsatzerlösen und anderen Erträgen werden die Aufwände abgezogen.\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Umsatzerlöse minus die vier betrieblichen Aufwandsblöcke ergeben das EBIT von 4 906 000 Euro.",
+      "Das Finanzergebnis beträgt 12 000 − 99 000 = −87 000 Euro.",
+      "Das Jahresergebnis ist identisch mit dem EBIT von 4 906 000 Euro.",
+      "Ergebnis vor Steuern = EBIT + Finanzergebnis = 4 906 000 + (−87 000) = 4 819 000 Euro.",
+      "Die Steuern von 1 204 750 Euro übersteigen den Gewinn von 3 614 250 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Betriebsergebnis rechnet man zeilenweise nach. Start: Umsatzerlöse 70 656 000. Minus Material 53 175 000 ergibt 17 481 000. Minus Personal 7 900 000 ergibt 9 581 000. Minus Abschreibungen 1 800 000 ergibt 7 781 000. Minus sonstige betriebliche Aufwände 2 875 000 ergibt 4 906 000. Das ist genau die EBIT-Zeile der Tabelle. Probe in einem Schritt: Summe der vier Aufwände 53 175 000 + 7 900 000 + 1 800 000 + 2 875 000 = 65 750 000, und 70 656 000 − 65 750 000 = 4 906 000. Zinsen 12 000 und 99 000 sowie Steuern 1 204 750 gehören noch nicht in diese Stufe, sie kommen erst nach dem EBIT.\n\nDie Aussage ist wahr.",
+      "Zinsen haben ein Vorzeichen und eine Saldierung. Formel: Finanzergebnis = Zinserträge − Zinsaufwand. Einsetzen aus der Tabelle: 12 000 − 99 000 = −87 000 Euro. Die Zeile Finanzergebnis weist genau diese −87 000 aus. Der Zinsaufwand übersteigt die Zinserträge um 87 000; der Saldo ist negativ und mindert das Ergebnis nach dem EBIT 4 906 000 auf 4 819 000 vor Steuern. Das Finanzergebnis ersetzt weder das EBIT noch das Jahresergebnis, es ist die Zinsbrücke dazwischen.\n\nDie Aussage ist wahr.",
+      "EBIT ist eine Zwischenstufe, nicht der Gewinn nach Zinsen und Steuern. Nach EBIT 4 906 000 folgt Finanzergebnis −87 000, danach 4 819 000 vor Steuern, danach Steuern 1 204 750, danach Jahresergebnis 3 614 250. Vergleich: 4 906 000 ≠ 3 614 250. Differenz 4 906 000 − 3 614 250 = 1 291 750, das sind genau Finanzergebnis 87 000 plus Steuern 1 204 750. Wer EBIT als Jahresergebnis liest, stoppt zwei Zeilen zu früh. In der Bilanz steht als Gewinn 3 614 250, nicht 4 906 000.\n\nDie Aussage ist falsch.",
+      "Die Brücke vom Betriebsergebnis zur Steuerbasis. Formel: Ergebnis vor Steuern = EBIT + Finanzergebnis. Einsetzen: 4 906 000 + (−87 000) = 4 819 000. Die Tabellenzeile bestätigt 4 819 000. Probe rückwärts: 4 819 000 − 4 906 000 = −87 000, gleich dem Finanzergebnis. Ohne diese Identität wäre die G&V intern unstimmig; mit ihr sitzt die nächste Subtraktion, die Steuern 1 204 750, auf der richtigen Basis und führt auf 3 614 250.\n\nDie Aussage ist wahr.",
+      "Steuerzeile und Gewinnzeile nicht vertauschen. Vergleich in der Tabelle: Steuern 1 204 750 gegen Jahresergebnis 3 614 250. 1 204 750 < 3 614 250, Differenz 3 614 250 − 1 204 750 = 2 409 500. Probe der Gewinnzeile: Ergebnis vor Steuern 4 819 000 − Steuern 1 204 750 = 3 614 250. Die Steuern sind der Abzug von der Steuerbasis, nicht der größere Rest. Die Aussage behauptet das Gegenteil der beiden letzten G&V-Zahlen und würde den Gewinn kleiner als die Steuerlast lesen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.38",
+    "title": "FunBike: Gewinn in G&V und Bilanz",
+    "context": "Der Gewinn wird in der G&V ermittelt und muss dem Gewinn in der Bilanz entsprechen (doppelte Gewinnermittlung). FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Jahresergebnis der G&V von 3 614 250 Euro ist derselbe Betrag wie der Gewinn in der Bilanz.",
+      "Eigenkapital = Bareinlagen 525 000 + G&V-Gewinn 3 614 250 = 4 139 250 Euro.",
+      "In der Bilanz steht als Gewinn die Umsatzerlösezeile 70 656 000 Euro.",
+      "Materialaufwand 53 175 000 Euro ist das Jahresergebnis.",
+      "4 819 000 − 1 204 750 = 3 614 250 schließt die G&V und bindet den Bilanzgewinn."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Ausweise, eine Zahl. Die G&V endet mit Jahresergebnis / Gewinn 3 614 250. In der Bilanz steht unter Eigenkapital die Zeile Gewinn 3 614 250. Vergleich: 3 614 250 = 3 614 250. Probe der letzten G&V-Stufe: 4 819 000 − 1 204 750 = 3 614 250. Genau das meint doppelte Gewinnermittlung: der Gewinn wird in der G&V ermittelt und muss sich auch aus dem Vergleich des Eigenkapitals ergeben, beides denselben Betrag. Wären die Beträge verschieden, wäre die doppelte Buchhaltung in diesen FunBike-Zahlen gebrochen. Die Tabellen sind daher nicht zwei unabhängige Geschichten, sondern eine Identität.\n\nDie Aussage ist wahr.",
+      "Passivseite nimmt den G&V-Gewinn auf. Formel: Eigenkapital = Bareinlagen der Gesellschafter + Gewinn. Der Gewinn ist das Jahresergebnis 3 614 250 aus der G&V. Einsetzen: 525 000 + 3 614 250 = 4 139 250 Euro. Probe gegen die Bilanzsumme: Fremdkapital 2 000 000 + 3 199 000 + 300 000 = 5 499 000, und 4 139 250 + 5 499 000 = 9 638 250. Der Gewinn erhöht das Eigenkapital, sofern er im Unternehmen bleibt; beide Tabellen zeigen ihn bereits in dieser Höhe.\n\nDie Aussage ist wahr.",
+      "Umsatz ist die erste G&V-Zeile, nicht die Gewinnzeile der Bilanz. Umsatzerlöse 70 656 000 stehen nur in der Erfolgsrechnung oben. In der Bilanz lautet die Gewinnposition 3 614 250. Vergleich: 70 656 000 ≠ 3 614 250. Dazwischen liegen Material 53 175 000, Personal 7 900 000, Abschreibungen 1 800 000, sonstige Aufwände 2 875 000, Finanzergebnis 87 000 und Steuern 1 204 750. Wer den Umsatz in die Passiva kopiert, verwechselt Erlöse mit dem Periodenergebnis nach allen Abzügen und würde die Bilanzsumme sprengen.\n\nDie Aussage ist falsch.",
+      "Material ist Aufwand, nicht Gewinn. Materialaufwand 53 175 000 ist die größte Minuszeile der G&V. Jahresergebnis ist 3 614 250. Vergleich: 53 175 000 ≠ 3 614 250; der Materialblock ist sogar größer als das EBIT 4 906 000. Anteil am Umsatz: 53 175 000 / 70 656 000 ≈ 0,753, rund 75 Prozent der Erlöse gehen in Material. Der Rest trägt Personal, Abschreibungen, sonstige Aufwände, Zinsen, Steuern und erst dann den Gewinn 3 614 250, der in der Bilanz wiederkehrt.\n\nDie Aussage ist falsch.",
+      "Letzte Subtraktion vor dem Gewinn. Formel: Jahresergebnis = Ergebnis vor Steuern − Steuern. Einsetzen: 4 819 000 − 1 204 750 = 3 614 250. Dieselbe 3 614 250 steht in der Bilanz als Gewinn neben den Bareinlagen 525 000. Die Kette sitzt durchgängig: EBIT 4 906 000 plus Finanzergebnis −87 000 ergibt 4 819 000, minus Steuern 1 204 750 ergibt 3 614 250. Damit ist die Brücke zwischen G&V-Tabelle und Bilanz-Tabelle arithmetisch geschlossen, wie es die doppelte Gewinnermittlung verlangt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.39",
+    "title": "FunBike: Umlaufintensität und Vermögensanteile",
+    "context": "FunBike GmbH, Bilanz per 31.12.20xx (Euro). Das Buch nennt das Unternehmen umlaufintensiv, weil das Umlaufvermögen deutlich über dem Anlagevermögen liegt und beim Umlaufvermögen die Vorräte dominieren.\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Vorräte von 5 400 000 Euro übersteigen für sich genommen das gesamte Anlagevermögen von 3 320 000 Euro.",
+      "Mehr als die Hälfte der Bilanzsumme ist Anlagevermögen.",
+      "Das Umlaufvermögen macht mehr als 65 Prozent der Bilanzsumme aus.",
+      "Bankguthaben und Barbestand 320 250 Euro übersteigen die Vorräte 5 400 000 Euro.",
+      "FunBike ist umlaufintensiv, weil 6 318 250 Euro Umlaufvermögen deutlich über 3 320 000 Euro Anlagevermögen liegen und die Vorräte diesen Umlauf dominieren."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine einzige Aktivzeile schlägt den ganzen Anlageblock. Vorräte 5 400 000, Anlagevermögen 750 000 + 2 330 000 + 240 000 = 3 320 000. Vergleich: 5 400 000 − 3 320 000 = 2 080 000 Euro Vorsprung der Vorräte. Verhältnis: 5 400 000 / 3 320 000 ≈ 1,63, gut das 1,6-Fache der gesamten Gebäude, Anlagen und Finanzanlagen. Anteil an der Bilanzsumme: 5 400 000 / 9 638 250 ≈ 0,56, also rund 56 Prozent des Gesamtvermögens liegen im Lager. Genau deshalb spricht das Buch von Dominanz der Vorräte bei einem Fahrradproduzenten, der Bestandteile und fertige Räder lagert.\n\nDie Aussage ist wahr.",
+      "Anlagevermögen ist der kleinere Teil der Aktiva. Anteil: 3 320 000 / 9 638 250 ≈ 0,3444, rund 34 Prozent, nicht über 50 Prozent. Die Hälfte der Bilanzsumme wäre 9 638 250 / 2 = 4 819 125; 3 320 000 bleibt 1 499 125 darunter. Umlauf 6 318 250 / 9 638 250 ≈ 0,656 liegt klar über der Hälfte. Wer Gebäude und Maschinen als Mehrheitsvermögen liest, ignoriert Vorräte 5 400 000 plus Forderungen 598 000 plus Bank 320 250. Die Tabelle ist umlauflastig, nicht anlagenlastig.\n\nDie Aussage ist falsch.",
+      "Fünfundsechzig Prozent als Schwelle gegen den Tabellenwert. Umlaufvermögen = 5 400 000 + 598 000 + 320 250 = 6 318 250. Quote: 6 318 250 / 9 638 250 ≈ 0,6556, also rund 65,6 Prozent. Vergleich zur Schwelle: 65,6 > 65, die Bedingung ist erfüllt. Probe: Anlage 3 320 000 / 9 638 250 ≈ 34,4 Prozent, und 34,4 + 65,6 = 100 Prozent der 9 638 250. Die Aussage verlangt genau dieses Ablesen der drei Umlaufzeilen, nicht eine Schätzung ohne Division.\n\nDie Aussage ist wahr.",
+      "Kasse gegen Lager: die Größenordnung kippt. Bankguthaben und Barbestand 320 250, Vorräte 5 400 000. Vergleich: 320 250 < 5 400 000. Verhältnis: 320 250 / 5 400 000 ≈ 0,059, rund 6 Prozent der Vorräte. Differenz 5 400 000 − 320 250 = 5 079 750. Liquide Mittel sind vorhanden, dominieren aber weder den Umlauf (6 318 250) noch die Bilanzsumme (9 638 250). Die Behauptung vertauscht die beiden Zeilen und würde FunBike als kassenlastig statt vorratsintensiv erscheinen lassen.\n\nDie Aussage ist falsch.",
+      "Beide Buchkriterien fallen in derselben Tabelle zusammen. Umlauf 6 318 250 gegen Anlage 3 320 000: 6 318 250 / 3 320 000 ≈ 1,90, deutlich mehr Umlauf, daher umlaufintensiv. Innerhalb des Umlaufs: Vorräte 5 400 000 / 6 318 250 ≈ 0,855, rund 86 Prozent, daher Dominanz der Vorräte. Forderungen und Bank bleiben 598 000 + 320 250 = 918 250. Das Buch wendet genau diese beiden Beobachtungen auf FunBike an, ohne eine zweite Gesellschaft oder ein zweites Jahr zu brauchen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.40",
+    "title": "FunBike: Kennzahlen aus Bilanz und G&V",
+    "context": "Dieselben FunBike-Zahlen aus Bilanz und Gewinn- und Verlustrechnung per 31.12.20xx (Euro). Die Aussagen verlangen das Einsetzen der Tabellenwerte.\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Fremdkapitalquote = 5 499 000 / 9 638 250 ≈ 57 Prozent, wie das Buch für FunBike festhält.",
+      "Der Materialaufwand entspricht mehr als 70 Prozent der Umsatzerlöse.",
+      "Der Personalaufwand 7 900 000 Euro übersteigt den Materialaufwand 53 175 000 Euro.",
+      "Der Gewinn 3 614 250 Euro in der Bilanz ist kleiner als das EBIT 4 906 000 Euro, weil danach noch Finanzergebnis und Steuern abgezogen werden.",
+      "Abschreibungen 1 800 000 Euro sind in derselben Periode ein Auszahlungsbetrag in gleicher Höhe und daher mit dem Gewinn identisch."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Quote aus den Passiva, nicht aus dem Gefühl. Fremdkapital = 2 000 000 + 3 199 000 + 300 000 = 5 499 000. Bilanzsumme = 9 638 250. Division: 5 499 000 / 9 638 250 = 0,570539… ≈ 57,05 Prozent, vom Buch als rund 57 Prozent gerundet. Probe Eigenkapitalquote: (525 000 + 3 614 250) / 9 638 250 = 4 139 250 / 9 638 250 ≈ 42,95 Prozent, und 57,05 + 42,95 = 100. Die Kapitalstruktur mit rund 57 Prozent Fremdkapital, davon der Großteil Bankkredite 3 199 000, bleibt damit an den Tabellenzeilen festgemacht.\n\nDie Aussage ist wahr.",
+      "Materialintensität am Umsatz messen. Zähler Materialaufwand 53 175 000, Nenner Umsatzerlöse 70 656 000. Quotient: 53 175 000 / 70 656 000 ≈ 0,7526, also rund 75,3 Prozent. Vergleich zur Schwelle: 75,3 > 70, die Bedingung ist klar erfüllt. Personal 7 900 000 / 70 656 000 ≈ 0,112, rund 11,2 Prozent, bleibt weit darunter. Abschreibungen 1 800 000 / 70 656 000 ≈ 2,5 Prozent. Für den Fahrradproduzenten ist der Materialblock der dominante betriebliche Aufwand; die G&V-Tabelle trägt das in der ersten Minuszeile.\n\nDie Aussage ist wahr.",
+      "Personal gegen Material: die größere Zeile ist Material. Vergleich der G&V: Personalaufwand 7 900 000 gegen Materialaufwand 53 175 000. 7 900 000 − 53 175 000 = −45 275 000, Personal liegt um 45,275 Millionen unter dem Material. Verhältnis: 7 900 000 / 53 175 000 ≈ 0,149, rund 15 Prozent des Materialaufwands. Die Aussage dreht die beiden Minuszeilen um. EBIT 4 906 000 entsteht erst, nachdem der viel größere Materialabzug bereits von den Umsatzerlösen 70 656 000 abgezogen wurde.\n\nDie Aussage ist falsch.",
+      "Gewinn nach Zinsen und Steuern ist die kleinere Stufe. EBIT 4 906 000, Jahresergebnis 3 614 250, und genau 3 614 250 steht in der Bilanz als Gewinn. Differenz: 4 906 000 − 3 614 250 = 1 291 750. Zerlegung an der G&V: Finanzergebnis 87 000 plus Steuern 1 204 750 = 1 291 750. Stufen: EBIT 4 906 000, Ergebnis vor Steuern 4 819 000, Jahresergebnis 3 614 250. Deshalb muss der Bilanzgewinn unter dem EBIT liegen, sobald Zinsen und Steuern negativ zu Buche schlagen. Die beiden Tabellen tragen dieselbe 3 614 250.\n\nDie Aussage ist wahr.",
+      "Abschreibung ist Aufwand, nicht automatisch Auszahlung und nicht der Gewinn. Die G&V zeigt Abschreibungen −1 800 000 und Jahresergebnis 3 614 250; Vergleich 1 800 000 ≠ 3 614 250. Der Abschnitt zur Finanzrechnung nennt die Abschreibung als Beispiel dafür, dass eine Ausgabe nicht mit einer Auszahlung einhergeht. Gewinn und Cashflow sind nicht identisch: man kann Gewinn erzielen, ohne über liquide Mittel zu verfügen, und liquide sein, ohne Gewinn zu erzielen. FunBike illustriert die Trennung, weil 1 800 000 den Gewinn mindern, ohne in derselben Höhe Geld abfließen zu müssen.\n\nNote: Einzahlungen und Auszahlungen steuert die Finanz- bzw. Cashflowrechnung, Erträge und Aufwände die G&V.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

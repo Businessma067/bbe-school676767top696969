@@ -1,0 +1,92 @@
+CASE MATH 11.66
+ANSWER [true, true, false, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+The consultant's sentence — a small increase in production would raise profit — means
+$$P^{\prime}(Q)>0.$$
+With the cost office's report $C^{\prime}(Q)=14$ and the identity $P^{\prime}=R^{\prime}-C^{\prime}$, that is equivalent to the bound
+$$R^{\prime}(Q)>14.$$
+The advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\dfrac{C(Q)}{Q}$. A second claim $R^{\prime}(Q)=11$ at the same $Q$ would violate $R^{\prime}>14$ and therefore contradict the first adviser. "Raise profit" means $P^{\prime}>0$, hence $R^{\prime}>14$ given $C^{\prime}=14$. No information about $P$ or $C/Q$ is included.
+
+=== A ===
+**A.** → True
+
+Saying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\prime}(Q)>0$
+
+"Would raise profit" is ordinary language for a positive profit slope at the current output.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Because $P^{\prime}=R^{\prime}-C^{\prime}$ and the cost office reports $C^{\prime}(Q)=14$, the advice $P^{\prime}(Q)>0$ rearranges to
+
+$$
+R^{\prime}(Q)>C^{\prime}(Q) = 14
+$$
+
+The advice already means $R^{\prime}(Q)>14$
+
+Rearranging $P^{\prime}=R^{\prime}-14>0$ forces the lower bound $R^{\prime}>14$ on the missing marginal revenue.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime} = R^{\prime}-C^{\prime}
+$$
+
+$$
+C^{\prime}(Q) = 14
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== C ===
+**C.** → False
+
+The advice speaks only about the sign of the slope $P^{\prime}(Q)$.
+
+It does not reveal the current profit level $P(Q)$
+
+A factory can be losing money overall while still having $P^{\prime}>0$, or earning a fortune while $P^{\prime}>0$ — the advice is silent about $P(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== D ===
+**D.** → False
+
+Nothing in the consultant's sentence or the cost-office report produces the quotient $\dfrac{C(Q)}{Q}$.
+
+The advice does not tell you average cost
+
+Average cost would need the stock $C(Q)$ as well as $Q$; neither the consultant nor the reported $C^{\prime}=14$ supplies $C(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+The first adviser's claim already forces $R^{\prime}(Q)>14$.
+
+A second claim $R^{\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other
+
+Claiming $R^{\prime}=11$ would force $P^{\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 11
+$$
+
+So the statement is True.
+

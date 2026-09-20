@@ -1,0 +1,2047 @@
+================================================================================
+CASE MATH 11.70 ANSWER [True, True, True, False, True]
+--- OVERVIEW ---
+North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so
+$$R_N^{\prime}=30,\qquad C_N^{\prime}=18,\qquad P_N^{\prime}(Q)=30-18=12$$
+at every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only
+$$P_S^{\prime}(Q)=20-Q.$$
+At $Q=15$ one has $P_S^{\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\prime}$ say nothing about which firm currently has the larger stock of total profit. North has constant $P_N^{\prime}=12$; South has $P_S^{\prime}=20-Q$ (positive at $15$, negative at $25$). Slope shapes do not rank profit stocks.
+--- A ---
+**A.** → True
+
+North's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gives
+
+$$
+P_N^{\prime}(Q) = 12
+$$
+
+at every $Q$
+
+Equivalently $R_N^{\prime}-C_N^{\prime}=30-18=12$; North's marginal profit is the constant $12$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P_N'(Q) = 12
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+At $Q=15$, South's posted schedule gives
+
+$$
+P_S^{\prime}(15) = 20-15
+$$
+
+$$
+20 - 15 = 5
+$$
+
+$$
+P_S^{\prime}(15) = 5 = 5
+$$
+
+$$
+P_S^{\prime}(15) = 5>0
+$$
+
+A positive derivative means South's profit is still locally increasing at $Q=15$
+
+South should still expand a little at $15$ packs: extra profit is still positive on the margin.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+At $Q=25$,
+
+$$
+P_S^{\prime}(25) = 20-25
+$$
+
+$$
+20 - 25 = -5
+$$
+
+$$
+P_S^{\prime}(25) = -5 = -5
+$$
+
+$$
+P_S^{\prime}(25) = -5<0
+$$
+
+A negative derivative means South's profit is locally decreasing at $Q=25$
+
+Past $Q=20$, South's posted schedule has $P_S^{\prime}<0$, so at $25$ a small expansion lowers South's profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+The shape of $P_S^{\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
+
+South could currently earn more or less total profit; the claim that South must earn less does not follow
+
+North's stock is $P_N(15)=12\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\prime}$ alone — no forced ranking.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_N(15) = 12\cdot 15-40 = 140
+$$
+
+So the statement is False.
+--- E ---
+**E.** → True
+
+North's marginal profit is
+
+$$
+P_N^{\prime}(Q) = R_N^{\prime}(Q)-C_N^{\prime}(Q)
+$$
+
+$$
+P_N^{\prime}(Q) = 30-18
+$$
+
+$$
+30 - 18 = 12
+$$
+
+$$
+P_N^{\prime}(Q) = 12 = 12
+$$
+
+$$
+P_N^{\prime}(Q) = 12
+$$
+
+The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\prime}-C_N^{\prime}$, not that intercept
+
+Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+================================================================================
+CASE MATH 11.71 ANSWER [True, True, True, False, True]
+--- OVERVIEW ---
+For $0\le x\le 8$ utility is $U(x)=10x-\dfrac{1}{2}x^{2}$, so
+$$U^{\prime}(x)=10-x\qquad(x<8).$$
+At $x=6$ one has $U^{\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence
+$$U^{\prime}(x)=0\qquad(x>8).$$
+The level $U(8)=48$ is total utility at eight hours, not the contribution of the eighth hour alone. Average utility at $x=12$ is
+$$\dfrac{U(12)}{12}=\dfrac{48}{12}=4.$$ For $x<8$, $U^{\prime}=10-x>0$ at $x=6$; for $x>8$, $U^{\prime}=0$. The stock $U(8)=48$ is not the eighth hour's contribution.
+--- A ---
+**A.** → True
+
+On the rising piece, $U(x)=10x-\dfrac{1}{2}x^{2}$. Differentiating gives
+
+$$
+U^{\prime}(x) = 10-x
+$$
+
+$$
+\text{for }x<8
+$$
+
+For $x<8$, marginal utility is $U^{\prime}(x)=10-x$
+
+Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U'(x) = 10-x
+$$
+
+$$
+U(x) = 10x-\dfrac{1}{2}x^{2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+At $x=6$,
+
+$$
+U^{\prime}(6) = 10-6
+$$
+
+$$
+10 - 6 = 4
+$$
+
+$$
+U^{\prime}(6) = 4 = 4
+$$
+
+$$
+U^{\prime}(6) = 4>0
+$$
+
+A positive derivative means a little extra leisure still raises satisfaction at $x=6$
+
+At six hours the student is still on the rising piece of $U$, so a little more leisure still helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
+
+$$
+U^{\prime}(x) = 0
+$$
+
+$$
+\text{for }x>8
+$$
+
+Marginal utility is therefore $0$ beyond eight hours
+
+A flat utility function has zero slope: further leisure past eight hours is satiation in this model.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+$U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
+
+Approaching $x=8$ from the left,
+
+$$
+U^{\prime}(8^{-}) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+U^{\prime}(8^{-}) = 2 = 2
+$$
+
+$$
+U^{\prime}(8^{-}) = 2
+$$
+
+The eighth hour adds about $2$ units of utility, not $48$
+
+Total utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- E ---
+**E.** → True
+
+For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
+
+$$
+\dfrac{U(12)}{12} = \dfrac{48}{12}
+$$
+
+$$
+\dfrac{U(12)}{12} = 4
+$$
+
+Average utility at $x=12$ equals $4$
+
+Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+x = 12
+$$
+
+which matches the claim.
+
+So the statement is True.
+================================================================================
+CASE MATH 11.72 ANSWER [True, False, True, False, False]
+--- OVERVIEW ---
+Both shops face $R^{\prime}(Q)=16$. The first also posts $P^{\prime}(Q)=-3$, so rearranging $P^{\prime}=R^{\prime}-C^{\prime}$ recovers
+$$C^{\prime}(Q)=R^{\prime}-P^{\prime}=16-(-3)=19.$$
+Because $P^{\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\prime}(Q)=16$ with the same $R^{\prime}$, so
+$$P^{\prime}(Q)=16-16=0.$$
+Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\prime}=-3$ is not its stock of total profit. First shop: $P^{\prime}=-3$ and $R^{\prime}=16$ imply $C^{\prime}=19$ (do not expand). Second: $R^{\prime}=C^{\prime}=16$ imply $P^{\prime}=0$.
+--- A ---
+**A.** → True
+
+From $P^{\prime}=R^{\prime}-C^{\prime}$ and the first shop's reports,
+
+$$
+-3 = 16-C^{\prime}(Q)
+$$
+
+$$
+C^{\prime}(Q) = 16-(-3)
+$$
+
+$$
+C^{\prime}(Q) = 19
+$$
+
+The first printer's implied marginal cost is $19$
+
+Rearrangement of $P^{\prime}=R^{\prime}-C^{\prime}$ always recovers the missing piece when two of the three rates are known.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- B ---
+**B.** → False
+
+The first printer has $P^{\prime}(Q)=-3<0$, so profit is locally decreasing.
+
+Printing a little more would lower profit, not raise it
+
+With $P^{\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\prime}(Q) = -3<0
+$$
+
+$$
+P^{\prime} = -3<0
+$$
+
+So the statement is False.
+--- C ---
+**C.** → True
+
+The second printer reports $R^{\prime}(Q)=16$ and $C^{\prime}(Q)=16$, so
+
+$$
+P^{\prime}(Q) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P^{\prime}(Q) = 0 = 0
+$$
+
+$$
+P^{\prime}(Q) = 0
+$$
+
+its marginal profit is $0$
+
+Equal marginal revenue and marginal cost is exactly the first-order condition $P^{\prime}=0$ at that run length.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+Both printers share $R^{\prime}(Q)=16$, but their cost (or profit) companions differ.
+
+The first has $P^{\prime}=-3$ while the second has $P^{\prime}=0$, and they do not have the same extra-profit figure
+
+Shared $R^{\prime}$ is only one ingredient of $P^{\prime}=R^{\prime}-C^{\prime}$; different cost slopes produce different profit slopes.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 16
+$$
+
+$$
+P^{\prime} = -3
+$$
+
+$$
+P^{\prime} = 0
+$$
+
+$$
+P^{\prime} = R^{\prime}-C^{\prime}
+$$
+
+So the statement is False.
+--- E ---
+**E.** → False
+
+The posted figure $P^{\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
+
+The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false
+
+A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\neq$ level.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(Q) = -3
+$$
+
+So the statement is False.
+================================================================================
+CASE MATH 11.73 ANSWER [True, True, False, True, True]
+--- OVERVIEW ---
+Before the tax one has $R^{\prime}=14$ and $C^{\prime}=10$, so
+$$P^{\prime}=14-10=4>0$$
+and a small expansion raises profit. The per-unit tax replaces cost by
+$$\widetilde{C}(Q)=C(Q)+5Q,$$
+hence
+$$\widetilde{C}^{\prime}(Q)=C^{\prime}(Q)+5=15,$$
+while revenue — and therefore $R^{\prime}=14$ — is unchanged. After the tax,
+$$\widetilde{P}^{\prime}=14-15=-1<0,$$
+so a small expansion no longer raises profit. The extra-cost side must now differentiate $\widetilde{C}$, not the old $C$. Before: $P^{\prime}=14-10=4>0$. After: $\widetilde{C}^{\prime}=15$, so $\widetilde{P}^{\prime}=14-15=-1<0$, with $R^{\prime}$ unchanged.
+--- A ---
+**A.** → True
+
+Before the tax,
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 14-10
+$$
+
+$$
+14 - 10 = 4
+$$
+
+$$
+P^{\prime}(Q) = 4 = 4
+$$
+
+$$
+P^{\prime}(Q) = 4>0
+$$
+
+A positive derivative means a small expansion raises profit
+
+Before the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+The new cost is $\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
+
+$$
+\widetilde{C}^{\prime}(Q) = C^{\prime}(Q)+5
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 10+5
+$$
+
+$$
+10 + 5 = 15
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 15 = 15
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 15
+$$
+
+After the tax the relevant marginal cost is $15$
+
+A per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- C ---
+**C.** → False
+
+After the tax, compare the unchanged marginal revenue with the new marginal cost:
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-\widetilde{C}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 14-15
+$$
+
+$$
+14 - 15 = -1
+$$
+
+$$
+P^{\prime}(Q) = -1 = -1
+$$
+
+$$
+P^{\prime}(Q) = -1<0
+$$
+
+A negative derivative means a small expansion lowers profit rather than raising it
+
+After the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- D ---
+**D.** → True
+
+The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
+
+After the tax that schedule is $\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated
+
+Using the old $C^{\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- E ---
+**E.** → True
+
+The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
+
+$$
+R^{\prime}(Q) = 14
+$$
+
+still after the tax
+
+Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+================================================================================
+CASE MATH 11.74 ANSWER [True, True, True, False, False]
+--- OVERVIEW ---
+While $Q\le 30$ the price is $p(Q)=40-Q$, so
+$$R(Q)=40Q-Q^{2},\qquad R^{\prime}(Q)=40-2Q.$$
+Once clearance pricing begins, $p(Q)=10$ is flat, hence
+$$R(Q)=10Q,\qquad R^{\prime}(Q)=10\qquad(Q>30).$$
+Packing cost has constant $C^{\prime}(Q)=12$. At $Q=12$,
+$$P^{\prime}(12)=(40-24)-12=4>0,$$
+so a small expansion raises profit. At $Q=35$, clearance gives $R^{\prime}=10<12=C^{\prime}$, so $R^{\prime}>C^{\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\prime}(12)=16$, not $28$. For $Q<30$, $R^{\prime}=40-2Q$; for $Q>30$, $R^{\prime}=10$. Against $C^{\prime}=12$: expand at $12$ ($R^{\prime}=16$), not at $35$. At $Q=12$, $p=28\neq R^{\prime}=16$.
+--- A ---
+**A.** → True
+
+For $Q<30$, price is $p(Q)=40-Q$, so revenue is
+
+$$
+R(Q) = Q(40-Q)
+$$
+
+$$
+R(Q) = 40Q-Q^{2}
+$$
+
+Differentiating gives
+
+$$
+R^{\prime}(Q) = 40-2Q
+$$
+
+which matches the claim
+
+The product rule on $R=Q(40-Q)$ immediately yields
+
+$$
+R^{\prime} = 40-2Q
+$$ on the first piece.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
+
+Differentiating gives
+
+$$
+R^{\prime}(Q) = 10
+$$: marginal revenue collapses to the flat price $10$
+
+With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+At $Q=12<30$,
+
+$$
+R^{\prime}(12) = 40-2\cdot 12
+$$
+
+$$
+R^{\prime}(12) = 40-24
+$$
+
+$$
+40 - 24 = 16
+$$
+
+$$
+R^{\prime}(12) = 16 = 16
+$$
+
+$$
+R^{\prime}(12) = 16
+$$
+
+Compare with packing cost $C^{\prime}=12$:
+
+$$
+P^{\prime}(12) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\prime}(12) = 4 = 4
+$$
+
+$$
+P^{\prime}(12) = 4>0
+$$
+
+A small expansion raises profit at $Q=12$
+
+At $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+At $Q=35$ clearance pricing is in force, so $R^{\prime}(35)=10$. Then
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = 10-12
+$$
+
+$$
+10 - 12 = -2
+$$
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = -2 = -2
+$$
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = -2<0
+$$
+
+hence $R^{\prime}<C^{\prime}$, not $R^{\prime}>C^{\prime}$
+
+Clearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- E ---
+**E.** → False
+
+At $Q=12$, extra revenue is the marginal revenue $R^{\prime}(12)=16$, while the posted price is
+
+$$
+p(12) = 40-12
+$$
+
+$$
+40 - 12 = 28
+$$
+
+$$
+p(12) = 28 = 28
+$$
+
+$$
+p(12) = 28
+$$
+
+Those are different numbers: under a downward-sloping price, $R^{\prime}\neq p$ in general
+
+The gap $28-16=12$ equals $-Q\,p^{\prime}(Q)$ at $Q=12$ with $p^{\prime}=-1$ — the usual MR-versus-price wedge.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+================================================================================
+CASE MATH 11.75 ANSWER [True, True, False, True, True]
+--- OVERVIEW ---
+Both firms face $R'=7$. Average-cost movement is read from $C^{\prime}$ versus $A$: Firm A has $C_A^{\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\prime}$, not average cost:
+$$P_A^{\prime}=7-5=2>0,\qquad P_B^{\prime}=7-9=-2<0.$$
+Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.
+--- A ---
+**A.** → True
+
+Average cost falls when marginal cost lies below average cost. For firm A,
+
+$$
+C_A^{\prime} = 5<8
+$$
+
+$$
+C_A^{\prime} = A_A
+$$
+
+Hence $A_A^{\prime}(Q)<0$: A's average cost is currently falling
+
+The sign rule $A^{\prime}=(C^{\prime}-A)/Q$ gives
+
+$$
+A_A^{\prime}<0
+$$ precisely because $5<8$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
+
+$$
+A^{\prime}(Q) = \dfrac{C^{\prime}(Q)-A(Q)}{Q}
+$$
+
+For firm B one has $C_B^{\prime}=9>6=A_B$, so $A_B^{\prime}(Q)>0$: B's average cost is currently rising
+
+For B the same rule gives
+
+$$
+A_B^{\prime}>0
+$$ because marginal cost $9$ sits above average cost $6$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A = C/Q
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- C ---
+**C.** → False
+
+The extra-unit test compares $R^{\prime}$ with $C^{\prime}$, not the two averages. Here
+
+$$
+7>5
+$$
+
+$$
+\text{at A}
+$$
+
+$$
+7<9
+$$
+
+$$
+\text{at B}
+$$
+
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
+
+Average-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- D ---
+**D.** → True
+
+The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
+
+$$
+7>5 = C_A^{\prime}
+$$
+
+$$
+\text{but}
+$$
+
+$$
+7<9 = C_B^{\prime}
+$$
+
+Only firm A satisfies $R'>C'$
+
+A alone has extra revenue above extra cost; B has the inequality reversed.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- E ---
+**E.** → True
+
+The extra-profit figures are
+
+$$
+P_A^{\prime} = 7-5
+$$
+
+$$
+7 - 5 = 2
+$$
+
+$$
+P_A^{\prime} = 2 = 2
+$$
+
+$$
+P_A^{\prime} = 2
+$$
+
+$$
+P_B^{\prime} = 7-9
+$$
+
+$$
+7 - 9 = -2
+$$
+
+$$
+P_B^{\prime} = -2 = -2
+$$
+
+$$
+P_B^{\prime} = -2
+$$
+
+The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B
+
+Those $\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+================================================================================
+CASE MATH 11.76 ANSWER [True, True, False, True, False]
+--- OVERVIEW ---
+Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\prime}(Q)=0$, hence
+$$R_A^{\prime}(Q)=C_A^{\prime}(Q)$$
+and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\prime}=4>0$ (expand). Height and slope are independent.
+--- A ---
+**A.** → True
+
+Studio A reports $P_A(Q)=50>0$ and $P_A^{\prime}(Q)=0$.
+
+The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero
+
+Studio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_A(Q) = 50>0
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Studio B reports $P_B(Q)=0$ together with $P_B^{\prime}(Q)=4>0$.
+
+Breaking even today is compatible with an upward slope: a small expansion would push profit above zero
+
+Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+So the statement is True.
+--- C ---
+**C.** → False
+
+Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
+
+The report $P_A^{\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing
+
+"Earns nothing" would mean $P_A(Q)=0$; the report $P_A^{\prime}=0$ says something entirely different.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_A(Q) = 50
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+$$
+P_A(Q) = 0
+$$
+
+$$
+P_A^{\prime} = 0
+$$
+
+So the statement is False.
+--- D ---
+**D.** → True
+
+$P_B^{\prime}(Q)=4>0$ is an expansion signal for B.
+
+For A, $P_A^{\prime}(Q)=0$ rearranges to $R_A^{\prime}(Q)=C_A^{\prime}(Q)$, the usual first-order condition
+
+B's positive $P_B^{\prime}$ is an expand signal; A's $P_A^{\prime}=0$ is already the MR$=$MC first-order condition.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+$$
+P_A^{\prime}(Q) = 0
+$$
+
+$$
+R_A^{\prime}(Q) = C_A^{\prime}(Q)
+$$
+
+$$
+P_A^{\prime} = 0
+$$
+
+So the statement is True.
+--- E ---
+**E.** → False
+
+A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\prime}(Q)=4>0$.
+
+Current break-even does not forbid a positive marginal profit
+
+Break-even constrains the height $P$, not the slope $P^{\prime}$; B is the textbook counterexample.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\prime}(Q) = 4>0
+$$
+
+So the statement is False.
+================================================================================
+CASE MATH 11.77 ANSWER [True, True, True, False, True]
+--- OVERVIEW ---
+Weekday cost is $C_{\mathrm{wd}}(Q)=12Q$, so
+$$C_{\mathrm{wd}}^{\prime}(Q)=12.$$
+Weekend overtime cost is $C_{\mathrm{we}}(Q)=20Q$, so
+$$C_{\mathrm{we}}^{\prime}(Q)=20.$$
+The overtime gap is $20-12=8$ euros on an extra sale. Marginal revenue is $R^{\prime}(Q)=15$ on both kinds of day. Weekday marginal profit is
+$$P_{\mathrm{wd}}^{\prime}=15-12=3>0,$$
+while weekend marginal profit is
+$$P_{\mathrm{we}}^{\prime}=15-20=-5\neq 3.$$
+The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\prime}$. Weekday $C^{\prime}=12$ gives $P^{\prime}=15-12=3>0$; weekend $C^{\prime}=20$ gives $P^{\prime}=15-20=-5$. Same $R^{\prime}$, different cost piece.
+--- A ---
+**A.** → True
+
+Weekday cost is $C_{\mathrm{wd}}(Q)=12Q$. Differentiating gives
+
+$$
+C_{\mathrm{wd}}^{\prime}(Q) = 12
+$$
+
+On a weekday each extra sale adds $12$ euros of cost
+
+Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+C_{\mathrm{wd}}'(Q) = 12
+$$
+
+$$
+C_{\mathrm{wd}}(Q) = 12Q
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Weekend cost is $C_{\mathrm{we}}(Q)=20Q$, so $C_{\mathrm{we}}^{\prime}(Q)=20$. The weekday slope was $12$, and
+
+$$
+20-12 = 8
+$$
+
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule
+
+Weekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+On a weekday,
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C_{\mathrm{wd}}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 15-12
+$$
+
+$$
+15 - 12 = 3
+$$
+
+$$
+P^{\prime}(Q) = 3 = 3
+$$
+
+$$
+P^{\prime}(Q) = 3>0
+$$
+
+A positive marginal profit means a small extra sale raises weekday profit
+
+Weekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+Weekend marginal profit uses the weekend cost slope, not the weekday one:
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C_{\mathrm{we}}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 15-20
+$$
+
+$$
+15 - 20 = -5
+$$
+
+$$
+P^{\prime}(Q) = -5 = -5
+$$
+
+$$
+P^{\prime}(Q) = -5
+$$
+
+That is not equal to the weekday figure $3$. Same $R^{\prime}$ with a higher $C^{\prime}$ changes the profit slope
+
+Weekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\prime}$ with a higher $C^{\prime}$ flips the advice.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- E ---
+**E.** → True
+
+$R^{\prime}(Q)=15$ is the same number both days.
+
+What changes is which cost schedule supplies $C^{\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change
+
+Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 15
+$$
+
+So the statement is True.
+================================================================================
+CASE MATH 11.78 ANSWER [True, True, True, True, False]
+--- OVERVIEW ---
+The reviewer's sentence about Shop L means
+$$R_L^{\prime}(Q)<C_L^{\prime}(Q).$$
+With the posted $R_L^{\prime}=9$ and $P_L^{\prime}=-4$, rearrange to recover
+$$C_L^{\prime}=R_L^{\prime}-P_L^{\prime}=9-(-4)=13,$$
+which indeed satisfies $9<13$. Shop M faces the same $R_M^{\prime}=9$ but $C_M^{\prime}=6$, so $9>6$ and M does not satisfy the reviewer's sentence. Marginal profits are
+$$P_M^{\prime}=9-6=3>0,\qquad P_L^{\prime}=-4<0,$$
+so a small expansion raises profit at M and lowers it at L. Same $R^{\prime}$ does not force the same extra-cost figure. Shop L: $R'=9$, $P'=-4$ imply $C'=13$ (reviewer's sentence holds). Shop M: $R'=9>C'=6$, so M fails the sentence and should expand.
+--- A ---
+**A.** → True
+
+"Extra revenue smaller than extra cost" is precisely the inequality of derivatives
+
+$$
+R_L^{\prime}(Q)<C_L^{\prime}(Q)
+$$
+
+The reviewer's sentence is already that comparison
+
+The reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\prime}<C_L^{\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+From $P_L^{\prime}(Q)=R_L^{\prime}(Q)-C_L^{\prime}(Q)$ and the posted numbers,
+
+$$
+-4 = 9-C_L^{\prime}(Q)
+$$
+
+$$
+C_L^{\prime}(Q) = 13
+$$
+
+Shop L's implied marginal cost is $13$
+
+Check: $9<13$ matches the reviewer's claim, and $P_L^{\prime}=9-13=-4$ matches the posted profit slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C_L'(Q) = 13
+$$
+
+$$
+P_L^{\prime}(Q) = R_L^{\prime}(Q)-C_L^{\prime}(Q)
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+At Shop M, $R_M^{\prime}(Q)=9>6=C_M^{\prime}(Q)$, so extra revenue is larger than extra cost.
+
+That is the opposite of the reviewer's sentence, and Shop M does not satisfy it
+
+At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue smaller than extra cost."
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R_M^{\prime}(Q) = 9>6 = C_M^{\prime}(Q)
+$$
+
+So the statement is True.
+--- D ---
+**D.** → True
+
+Shop M has
+
+$$
+P_M^{\prime}(Q) = 9-6
+$$
+
+$$
+9 - 6 = 3
+$$
+
+$$
+P_M^{\prime}(Q) = 3 = 3
+$$
+
+$$
+P_M^{\prime}(Q) = 3>0
+$$
+
+while Shop L has $P_L^{\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L
+
+Opposite signs of $P^{\prime}$ give opposite expand-or-not advice at the two shops.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- E ---
+**E.** → False
+
+Both shops share $R^{\prime}(Q)=9$, but their cost slopes differ: $C_L^{\prime}(Q)=13$ versus $C_M^{\prime}(Q)=6$.
+
+Same extra revenue does not force the same extra cost
+
+Shared $R^{\prime}=9$ with $C_L^{\prime}=13$ versus $C_M^{\prime}=6$ is enough to see the extra-cost figures differ.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 9
+$$
+
+$$
+C_L^{\prime}(Q) = 13
+$$
+
+$$
+C_M^{\prime}(Q) = 6
+$$
+
+$$
+R^{\prime} = 9
+$$
+
+$$
+C_L^{\prime} = 13
+$$
+
+$$
+C_M^{\prime} = 6
+$$
+
+So the statement is False.
+================================================================================
+CASE MATH 11.79 ANSWER [True, True, True, False, False]
+--- OVERVIEW ---
+Below capacity, $P(Q)=8Q-\dfrac{1}{10}Q^{2}$, so
+$$P^{\prime}(Q)=8-\dfrac{1}{5}Q\qquad(Q<30).$$
+At $Q=20$ one has $P^{\prime}(20)=8-4=4>0$, so a small expansion raises profit. Beyond capacity,
+$$P(Q)=150-4(Q-30)\qquad(Q>30)$$
+has constant slope
+$$P^{\prime}(Q)=-4<0,$$
+so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit. Below capacity $P^{\prime}=8-\dfrac{1}{5}Q$ (positive at $Q=20$); above capacity $P^{\prime}=-4<0$. The level $P(30)=150$ is not the thirtieth unit's extra profit.
+--- A ---
+**A.** → True
+
+On the pre-capacity piece,
+
+$$
+P(Q) = 8Q-\dfrac{1}{10}Q^{2}
+$$
+
+Differentiating term by term:
+
+$$
+P^{\prime}(Q) = 8-\dfrac{2}{10}Q
+$$
+
+$$
+P^{\prime}(Q) = 8-\dfrac{1}{5}Q
+$$
+
+$$
+\text{for }Q<30
+$$
+
+The claim matches
+
+Differentiate $8Q-\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\dfrac{2}{10}Q=-\dfrac{1}{5}Q$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+At $Q=20$,
+
+$$
+P^{\prime}(20) = 8-\dfrac{1}{5}\cdot 20
+$$
+
+$$
+P^{\prime}(20) = 8-4
+$$
+
+$$
+8 - 4 = 4
+$$
+
+$$
+P^{\prime}(20) = 4 = 4
+$$
+
+$$
+P^{\prime}(20) = 4>0
+$$
+
+A small expansion raises profit at $Q=20$
+
+At $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
+
+$$
+P^{\prime}(Q) = -4
+$$
+
+$$
+\text{for }Q>30
+$$
+
+which matches the claim
+
+Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P'(Q) = -4
+$$
+
+$$
+P(Q) = 150-4(Q-30)
+$$
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+Just above capacity the firm is on the outsourcing piece, where $P^{\prime}(Q)=-4<0$.
+
+A small expansion lowers profit; it does not raise it
+
+Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(Q) = -4<0
+$$
+
+$$
+Q = 30
+$$
+
+which does not match the claim.
+
+So the statement is False.
+--- E ---
+**E.** → False
+
+$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
+
+Approaching $Q=30$ from the left,
+
+$$
+P^{\prime}(30^{-}) = 8-\dfrac{1}{5}\cdot 30
+$$
+
+$$
+P^{\prime}(30^{-}) = 8-6
+$$
+
+$$
+8 - 6 = 2
+$$
+
+$$
+P^{\prime}(30^{-}) = 2 = 2
+$$
+
+$$
+P^{\prime}(30^{-}) = 2
+$$
+
+The thirtieth unit adds about $2$ euros of profit, not $150$
+
+The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+================================================================================
+CASE MATH 11.80 ANSWER [True, True, True, False, False]
+--- OVERVIEW ---
+Both outlets sold $Q=40$ with the same $R^{\prime}(40)=3$. The café also posts $P^{\prime}(40)=1$, so
+$$C^{\prime}(40)=R^{\prime}(40)-P^{\prime}(40)=3-1=2.$$
+The kiosk posts $C^{\prime}(40)=5$ instead, so
+$$P^{\prime}(40)=R^{\prime}(40)-C^{\prime}(40)=3-5=-2.$$
+A small extra item therefore raises profit at the café ($P^{\prime}=1>0$) and lowers it at the kiosk ($P^{\prime}=-2<0$). Same $Q$ and same $R^{\prime}$ do not force the same $C^{\prime}$. The café's rate $P^{\prime}(40)=1$ is not its profit level $P(40)$. Café: $P'=1$, $R'=3$ imply $C'=2$ (expand). Kiosk: $C'=5$, $R'=3$ imply $P'=-2$ (do not expand). Same $R'$ does not force same $C'$ or same $P$.
+--- A ---
+**A.** → True
+
+For the café, $P^{\prime}(40)=R^{\prime}(40)-C^{\prime}(40)$ gives
+
+$$
+1 = 3-C^{\prime}(40)
+$$
+
+$$
+C^{\prime}(40) = 2
+$$
+
+The café's implied marginal cost is $2$
+
+Two of the three rates determine the third through $P^{\prime}=R^{\prime}-C^{\prime}$; here the café's missing piece is $C^{\prime}=2$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C'(40) = 2
+$$
+
+$$
+P^{\prime}(40) = R^{\prime}(40)-C^{\prime}(40)
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+For the kiosk,
+
+$$
+P^{\prime}(40) = R^{\prime}(40)-C^{\prime}(40)
+$$
+
+$$
+P^{\prime}(40) = 3-5
+$$
+
+$$
+3 - 5 = -2
+$$
+
+$$
+P^{\prime}(40) = -2 = -2
+$$
+
+$$
+P^{\prime}(40) = -2
+$$
+
+The kiosk's implied marginal profit is $-2$
+
+The kiosk's missing piece is the profit slope: $P^{\prime}=3-5=-2$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+The café has $P^{\prime}(40)=1>0$, so a small extra item raises café profit.
+
+The kiosk has $P^{\prime}(40)=-2<0$, and a small extra item lowers kiosk profit
+
+Opposite signs of $P^{\prime}$ mean opposite expand-or-not advice despite the shared $R^{\prime}(40)=3$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(40) = 1>0
+$$
+
+$$
+P^{\prime}(40) = -2<0
+$$
+
+$$
+R^{\prime}(40) = 3
+$$
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+Same $R^{\prime}(40)$ and same $Q$ do not force the same cost slope.
+
+The recovered values are already different: $C^{\prime}(40)=2$ at the café versus $C^{\prime}(40)=5$ at the kiosk
+
+The recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\prime}$ never forced them to match.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+--- E ---
+**E.** → False
+
+$P^{\prime}(40)=1$ is a rate of change of profit.
+
+The height $P(40)$ of today's profit was never posted and need not equal $1$
+
+A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\prime}(40) = 1
+$$
+
+$$
+P'(40) = 1
+$$
+
+which does not match the claim.
+
+So the statement is False.
+================================================================================
+CASE MATH 11.81 ANSWER [True, True, True, True, False]
+--- OVERVIEW ---
+Daily profit is the concrete quadratic
+
+$$P(Q)=-Q^{2}+12Q-20,\qquad Q\ge 0.$$
+
+Differentiate once for the slope of profit and again for the bend:
+
+$$P'(Q)=-2Q+12,\qquad P''(Q)=-2.$$
+
+An interior candidate solves the flat-slope equation $P'(Q)=0$, which forces the unique non-negative root $Q=6$. Because $P''=-2<0$ everywhere, that flat point is a strict local profit peak. Substituting the peak output into the *level* (not the slope) gives
+
+$$P(6)=-36+72-20=16,$$
+
+so six lamps yield $16$ euros of daily profit. A zero slope never forces the profit level itself to be zero — slope and height are different objects.
+--- A ---
+**A.** → True
+
+To read how profit changes with lamps sold, differentiate the given daily-profit rule term by term. Starting from
+
+$$
+P(Q) = -Q^{2}+12Q-20,
+$$
+
+the power rule yields
+
+$$
+P'(Q) = -2Q+12.
+$$
+
+That derivative *is* the slope of daily profit (marginal profit). It matches the claimed formula exactly — no extra constant term appears.
+
+$$
+P'(Q) = -2Q+12
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+An interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:
+
+$$
+P'(Q) = -2Q+12 = 0
+$$
+
+$$
+2Q = 12
+$$
+
+$$
+Q = 6.
+$$
+
+On the domain $Q\ge 0$ this linear equation has exactly one root. There is no second candidate hiding at another positive output, so six lamps is the unique flat-slope daily output.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+A flat slope alone does not yet say peak versus trough. The second derivative reads the bend of the profit curve at that critical output:
+
+$$
+P''(Q) = -2
+$$
+
+$$
+P''(6) = -2<0.
+$$
+
+A strictly negative second derivative means the curve bends strictly downward through the flat spot, which is the second-derivative test for a local maximum. Therefore $Q=6$ is a local profit peak.
+
+$$
+Q = 6
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- D ---
+**D.** → True
+
+Once the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:
+
+$$
+P(6) = -6^{2}+12\cdot 6-20
+$$
+
+$$
+P(6) = -36+72-20
+$$
+
+$$
+-36 + 72 = 36
+$$
+
+$$
+36 - 20 = 16
+$$
+
+$$
+P(6) = 16
+$$
+
+Daily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for.
+
+So the statement is True.
+--- E ---
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+A flat slope describes how profit *changes* at that output, not how large profit *is*. The first-order condition $P'(6)=0$ only says the tangent is horizontal; it says nothing about the height $P(6)$. Evaluating the level separately gives
+
+$$
+P(6) = 16\neq 0.
+$$
+
+Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —.
+
+$$
+P'(6) = 0
+$$
+
+which does not match the claim.
+
+So the statement is False.
+================================================================================
+CASE MATH 11.82 ANSWER [True, True, True, True, False]
+--- OVERVIEW ---
+Revenue and cost are given separately, so daily profit is their difference:
+
+$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.$$
+
+Differentiate the simplified profit, and keep the separate marginal schedules:
+
+$$P'(Q)=-4Q+24,\qquad R'(Q)=30-2Q,\qquad C'(Q)=2Q+6.$$
+
+Flat profit solves $P'=0$, giving the unique positive root $Q=6$. At that same output
+
+$$R'(6)=18=C'(6),$$
+
+and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes are $P(6)=32$ and $C(6)=112$, which are not equal — a flat profit slope does not force $P=C$.
+--- A ---
+**A.** → True
+
+Profit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:
+
+$$
+P(Q) = R(Q)-C(Q)
+$$
+
+$$
+P(Q) = (30Q-Q^{2})-(Q^{2}+6Q+40).
+$$
+
+Collect like terms:
+
+$$
+P(Q) = -Q^{2}-Q^{2}+30Q-6Q-40
+$$
+
+$$
+P(Q) = -2Q^{2}+24Q-40.
+$$
+
+That simplified quadratic matches the claim exactly.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Marginal profit is the slope of the profit function. Differentiate the simplified rule term by term:
+
+$$
+P(Q) = -2Q^{2}+24Q-40
+$$
+
+$$
+P'(Q) = -4Q+24.
+$$
+
+(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+An interior profit peak requires a flat slope, so set marginal profit to zero and solve:
+
+$$
+P'(Q) = -4Q+24 = 0
+$$
+
+$$
+4Q = 24
+$$
+
+$$
+Q = 6.
+$$
+
+For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output.
+
+So the statement is True.
+--- D ---
+**D.** → True
+
+At a profit peak one also has $R'=C'$ (because $P'=R'-C'$). Compute the separate marginals and evaluate at six boxes:
+
+$$
+R'(Q) = 30-2Q
+$$
+
+$$
+C'(Q) = 2Q+6
+$$
+
+$$
+R'(6) = 30-12
+$$
+
+$$
+30 - 12 = 18
+$$
+
+$$
+R'(6) = 18 = 18
+$$
+
+$$
+C'(6) = 12+6
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(6) = 18 = 18
+$$
+
+$$
+12 + 6 = 18 = 18.
+$$
+
+Both equal $18$ euros at six boxes, matching the claim
+
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
+
+So the statement is True.
+--- E ---
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Flat profit slope means $P'(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both explicitly:
+
+$$
+P(6) = -2\cdot 36+24\cdot 6-40
+$$
+
+$$
+P(6) = -72+144-40
+$$
+
+$$
+-72 + 144 = 72
+$$
+
+$$
+72 - 40 = 32
+$$
+
+$$
+P(6) = 32
+$$
+
+$$
+C(6) = 36+36+40
+$$
+
+$$
+36 + 36 = 72
+$$
+
+$$
+72 + 40 = 112
+$$
+
+$$
+C(6) = 112 = 112
+$$
+
+$$
+C(6) = 112.
+$$
+
+The levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap.
+
+So the statement is False.
+================================================================================
+CASE MATH 11.83 ANSWER [True, True, True, False, True]
+--- OVERVIEW ---
+Daily operating cost is the upward-opening parabola
+
+$$C(Q)=Q^{2}-10Q+40,\qquad Q\ge 0.$$
+
+Differentiate twice:
+
+$$C'(Q)=2Q-10,\qquad C''(Q)=2>0.$$
+
+The only flat-slope fleet is $Q=5$. Because $C''>0$, five vans is a local cost *trough* (not a peak). Evaluating the level gives
+
+$$C(5)=25-50+40=15,$$
+
+and since the parabola opens upward with its vertex already inside $Q\ge 0$, that local trough is also the global cost minimum on the domain. Flat slope alone never decides peak versus trough — the bend does.
+--- A ---
+**A.** → True
+
+To find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:
+
+$$
+C'(Q) = 2Q-10 = 0
+$$
+
+$$
+2Q = 10
+$$
+
+$$
+Q = 5.
+$$
+
+This linear equation has exactly one root, and that root lies in $Q\ge 0$. So the only flat-slope fleet size is five vans.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+Classify the critical fleet with the second derivative. Differentiating the slope once more gives a constant bend:
+
+$$
+C''(Q) = 2>0
+$$
+
+everywhere, including at $Q=5$. A positive second derivative means the cost curve bends upward through the flat spot, which is the second-derivative test for a local minimum. Therefore five vans is a local cost trough.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+Evaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:
+
+$$
+C(5) = 5^{2}-10\cdot 5+40
+$$
+
+$$
+C(5) = 25-50+40
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15 = 15
+$$
+
+$$
+C(5) = 15.
+$$
+
+The trough cost is $15$ (hundreds of euros), matching the claim.
+
+So the statement is True.
+--- D ---
+**D.** → False
+
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
+
+A flat slope alone does not decide peak versus trough — that is the classic trap. Here the bend is upward:
+
+$$
+C''(5) = 2>0,
+$$
+
+so five vans is a local *minimum* of cost, not a local maximum. Claiming a local cost peak reverses the correct second-derivative label.
+
+So the statement is False.
+--- E ---
+**E.** → True
+
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+On $Q\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally.
+
+$$
+C'' = 2>0
+$$
+
+$$
+Q = 5\ge 0
+$$
+
+So the statement is True.
+================================================================================
+CASE MATH 11.84 ANSWER [True, True, True, True, False]
+--- OVERVIEW ---
+The two campaign scores near intensity zero are pure fourth powers of opposite sign:
+
+$$A(x)=x^{4},\qquad B(x)=-x^{4}.$$
+
+Differentiate each twice:
+
+$$A'(x)=4x^{3},\quad A''(x)=12x^{2},$$
+
+$$B'(x)=-4x^{3},\quad B''(x)=-12x^{2}.$$
+
+At $x=0$ both first and second derivatives vanish for each score, so the usual second-derivative bend test is inconclusive. Nearby comparison still classifies the points: for every $x\neq 0$,
+
+$$A(x)=x^{4}>0=A(0),\qquad B(x)=-x^{4}<0=B(0),$$
+
+so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishing of $A''$ and $B''$ does not forbid those extrema.
+--- A ---
+**A.** → True
+
+Differentiate each score twice and evaluate at intensity zero. For $A(x)=x^{4}$:
+
+$$
+A'(x) = 4x^{3}
+$$
+
+$$
+A''(x) = 12x^{2}
+$$
+
+so $A'(0)=0$ and $A''(0)=0$. For $B(x)=-x^{4}$:
+
+$$
+B'(x) = -4x^{3}
+$$
+
+$$
+B''(x) = -12x^{2}
+$$
+
+so $B'(0)=0$ and $B''(0)=0$. Both scores therefore have a flat slope *and* a flat second derivative at zero.
+
+So the statement is True.
+--- B ---
+**B.** → True
+
+The usual second-derivative test needs a strictly negative bend (local peak) or a strictly positive bend (local trough). Here
+
+$$
+A''(0) = 0
+$$
+
+$$
+B''(0) = 0
+$$
+
+so neither bend is strictly signed. The bend test alone therefore cannot classify either critical point — the check is inconclusive for both scores.
+
+So the statement is True.
+--- C ---
+**C.** → True
+
+Even though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\neq 0$,
+
+$$
+A(x) = x^{4}>0
+$$
+
+$$
+A(x) = A(0).
+$$
+
+So nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison.
+
+$$
+A''(0) = 0
+$$
+
+which matches the claim.
+
+So the statement is True.
+--- D ---
+**D.** → True
+
+Likewise for the opposite-sign fourth power: for every $x\neq 0$,
+
+$$
+B(x) = -x^{4}<0
+$$
+
+$$
+B(x) = B(0).
+$$
+
+Nearby values sit strictly below the value at zero, so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there. Direct comparison classifies what the bend test could not.
+
+So the statement is True.
+--- E ---
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”.
+
+So the statement is False.

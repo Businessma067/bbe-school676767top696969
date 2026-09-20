@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.49",
+    "title": "Einfache Zinsen in der Zweijahrestabelle",
+    "context": "Ein Guthaben von 10.000 € wird zwei Jahre lang mit 2 % p.a. verzinst. Die Tabelle stellt einfache Verzinsung (jedes Jahr nur das Ursprungskapital) der Zinseszinsrechnung gegenüber.\n\n| Jahr | Einfache Zinsen (€) | Stand nach einfacher Verzinsung (€) | Zinseszinsen (€) | Stand nach Zinseszins (€) |\n| --- | ---: | ---: | ---: | ---: |\n| 1 | 200 | 10.200 | 200 | 10.200 |\n| 2 | 200 | 10.400 | 204 | 10.404 |\n| Summe der Zinsen | 400 | | 404 | |\n\nBewerten Sie die folgenden Aussagen zur Zinsberechnung:",
+    "statements": [
+      "Im ersten Jahr betragen die Zinsen in beiden Spalten 200 €, weil 10.000 € × 0,02 = 200 € gilt.",
+      "Bei einfacher Verzinsung addiert die Tabelle über zwei Jahre genau 400 € Zinsen.",
+      "2 % p.a. auf 10.000 € bedeuten laut Tabelle 2.000 € Zinsen je Jahr, weil der Satz ohne Bezug auf das Kapital als Eurobetrag gelesen wird.",
+      "Nach einem Jahr steht in beiden Verfahren 10.200 € auf dem Konto.",
+      "Die Tabelle weist im ersten Jahr bereits 404 € Zinsen aus."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zinsen gelten für einen festgelegten Zeitraum. Der Lehrtext gibt 2 % für ein Jahr, geschrieben 2 % p.a. Die Formel der einfachen Jahreszinsen lautet Zinsbetrag = Kapital × Zinssatz. Eingesetzt: 10.000 € × 0,02 = 200 €. Genau diese 200 € stehen in der Tabelle in Jahr 1 sowohl unter einfacher Verzinsung als auch unter Zinseszins, weil im ersten Jahr noch keine früheren Zinsen mitverzinst werden. Ohne den Zeitraum ein Jahr wäre die Angabe 2 % unvollständig und der Betrag 200 € nicht definiert. Dieselbe 2 % auf einen Monat bezogen wären ein anderer Preis. Deshalb sitzt p.a. in der Rechnung als Nenner, nicht als Schmuck.\n\nDie Aussage ist wahr.",
+      "Einfache Verzinsung lässt jedes Jahr nur das Ursprungskapital arbeiten. Formel: Zinsen über n Jahre = Kapital × Zinssatz × n. Hier n = 2, also 10.000 € × 0,02 × 2 = 400 €. Die Tabelle zeigt Jahr 1 = 200 € und Jahr 2 = 200 €, Summe 400 €, und der Endstand 10.400 € bestätigt 10.000 + 400. Es gibt keinen Aufschlag auf bereits gutgeschriebene Zinsen, deshalb bleibt der Jahresbetrag konstant 200 €. Wer 200 + 204 addiert, hat die Zinseszins-Spalte gelesen, nicht die einfache.\n\nDie Aussage ist wahr.",
+      "Zweitausend Euro wären zwanzig Prozent, nicht zwei. Formelprobe: 10.000 € × 0,20 = 2.000 €, aber 2 % sind 0,02. 10.000 € × 0,02 = 200 €. Die Tabelle liest in Jahr 1 genau 200 €, nicht 2.000 €. Wer den Prozentsatz als fertigen Eurobetrag nimmt oder die Kommastelle verschiebt, verfehlt Zinsbetrag = Kapital × 0,02. p.a. bleibt der Zeitraum, nicht eine Lizenz, 2 % in 2.000 € umzudeuten.\n\nDie Aussage ist falsch.",
+      "Nach zwölf Monaten stehen Kapital plus erste Jahreszinsen. 10.000 € + 200 € = 10.200 €. Einfache Rechnung und Zinseszins unterscheiden sich erst, wenn bereits entstandene Zinsen selbst verzinst werden. Das ist erst das zweite Jahr. Die Tabelle setzt deshalb in der Zeile Jahr 1 beide Stände auf 10.200 €. 10.400 € und 10.404 € erscheinen erst in Jahr 2.\n\nDie Aussage ist wahr.",
+      "Vierhundertvier Euro sind die Summe der Zinseszinsen über zwei Jahre, nicht der Betrag von Jahr 1. Jahr 1 zeigt 200 € in beiden Zinspalten. 404 € = 200 € + 204 €, sichtbar in der Summenzeile der Zinseszins-Spalte. Wer 404 € schon ins erste Jahr legt, vermengt Endsumme und Jahresbetrag und liest die falsche Zelle. 200 € ist die einzige zulässige Jahreszahl für Jahr 1.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.50",
+    "title": "Zinseszinsen im zweiten Jahr",
+    "context": "Ein Guthaben von 10.000 € bleibt zwei Jahre zu 2 % p.a. auf dem Konto. Gutgeschriebene Zinsen werden nicht abgehoben. Die Tabelle vergleicht einfache Verzinsung und Zinseszinsen.\n\n| Jahr | Einfache Zinsen (€) | Stand nach einfacher Verzinsung (€) | Zinseszinsen (€) | Stand nach Zinseszins (€) |\n| --- | ---: | ---: | ---: | ---: |\n| 1 | 200 | 10.200 | 200 | 10.200 |\n| 2 | 200 | 10.400 | 204 | 10.404 |\n| Summe der Zinsen | 400 | | 404 | |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Im zweiten Jahr gilt bei Zinseszins 10.200 € × 0,02 = 204 €.",
+      "Nach zwei Jahren Zinseszins stehen 10.404 € auf dem Konto.",
+      "Einfache Verzinsung und Zinseszins liefern nach zwei Jahren denselben Zinsbetrag von 400 €.",
+      "Die 4 € Unterschied zur einfachen Summe 400 € sind Zinsen auf die 200 € des ersten Jahres, denn 200 € × 0,02 = 4 €.",
+      "Zinseszinsen entstehen nur, wenn die Zinsen jedes Jahr vollständig abgehoben werden."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Längere Laufzeit heißt Wiederverzinsung der Zinsbeträge. Nach Jahr 1 beträgt das Kapital 10.200 €. Formel für das zweite Jahr: Zinsen = neues Kapital × Zinssatz, also 10.200 € × 0,02. 10.200 × 0,02 = 204. Probe über den Aufzinsungsfaktor: 10.200 × 1,02 = 10.404, und 10.404 − 10.200 = 204. Die Tabelle trägt genau 204 € in die Zinseszins-Spalte von Jahr 2 ein. Wer erneut nur 10.000 € ansetzt, rechnet ohne die vom Buch beschriebene Wiederverzinsung und käme fälschlich wieder auf 200 €. 200 € ist die einfache Spalte Jahr 2, nicht der Zinseszins.\n\nDie Aussage ist wahr.",
+      "Endstand folgt aus Anfangskapital plus beide Jahreszinsen der Zinseszins-Spalte. 10.000 + 200 + 204 = 10.404. Gleichwertig: 10.200 × 1,02 = 10.404, oder 10.000 × 1,02². 1,02 × 1,02 = 1,0404, 10.000 × 1,0404 = 10.404. Die Tabellenzelle Jahr 2, Stand nach Zinseszins, zeigt denselben Wert. Ohne Wiederverzinsung bliebe man bei 10.400 €, also 4 € darunter. Die 10.404 € sind damit der sichtbare Zinseszins-Stand.\n\nDie Aussage ist wahr.",
+      "Gleiche Zinsbeträge in beiden Spalten gäbe es nur ohne Wiederverzinsung. Einfach: 200 + 200 = 400. Zinseszins: 200 + 204 = 404. Die Summenzeile trennt 400 und 404. Behauptete Gleichheit 400 € in beiden Verfahren widerspricht der Tabelle um 4 € und streicht genau den Mechanismus, den der Lehrtext Zinseszinsen nennt. 404 ≠ 400, und 10.404 ≠ 10.400.\n\nDie Aussage ist falsch.",
+      "Vier Euro sind der Zins auf die Zinsen. Formel: Zinseszinsbetrag des zweiten Jahres auf die ersten 200 € = 200 € × 0,02 = 4 €. Deshalb 204 statt 200 und 404 statt 400. 10.404 − 10.400 = 4 bestätigt denselben Aufschlag am Endstand. Die Tabelle macht diesen kleinen, aber systematischen Unterschied sichtbar. Ohne die 200 €, die auf dem Konto bleiben, entstünde dieser 4-Euro-Schritt nicht.\n\nDie Aussage ist wahr.",
+      "Abheben würde die Wiederverzinsung gerade unterbinden. Zinseszinsen greifen, wenn Zinsbeträge im Geschäft bleiben und erneut verzinst werden, etwa weil das Guthaben länger auf dem Konto liegt. Wer jedes Jahr die 200 € abzieht, lässt im zweiten Jahr wieder nur 10.000 € arbeiten und erhält erneut 200 €, also die einfache Spalte. Formel dann: 10.000 × 0,02 = 200, Summe 400, nicht 404. Die Aussage verdreht die Bedingung des Lehrtexts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.51",
+    "title": "Formelvergleich einfach gegen Zinseszins",
+    "context": "Kapital K₀ = 10.000 €, Zinssatz i = 2 % p.a. = 0,02, Laufzeit n = 2 Jahre. Die Tabelle setzt einfache Verzinsung und jährliche Zinseszinsen nebeneinander.\n\n| Jahr | Einfache Zinsen (€) | Stand nach einfacher Verzinsung (€) | Zinseszinsen (€) | Stand nach Zinseszins (€) |\n| --- | ---: | ---: | ---: | ---: |\n| 1 | 200 | 10.200 | 200 | 10.200 |\n| 2 | 200 | 10.400 | 204 | 10.404 |\n| Summe der Zinsen | 400 | | 404 | |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei einfacher Verzinsung gilt K_n = K₀ × (1 + n × i) = 10.000 × (1 + 2 × 0,02) = 10.400 €.",
+      "Bei jährlichem Zinseszins gilt K_n = K₀ × (1 + i)^n = 10.000 × 1,02² = 10.404 €.",
+      "Die Summe der Zinseszinsen 404 € liegt unter der einfachen Summe 400 €.",
+      "Der Aufschlag des Zinseszinses gegenüber der einfachen Rechnung beträgt 4 €, das sind 4 / 10.000 = 0,04 % des Anfangskapitals über zwei Jahre.",
+      "Nach zwei Jahren einfacher Verzinsung steht laut Tabelle 10.404 €."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Einfache Verzinsung multipliziert den Satz mit der Zahl der Jahre, ohne Zinsen zu kapitalisieren. Formel: K_n = K₀ × (1 + n × i). n = 2, i = 0,02, also 1 + 2 × 0,02 = 1,04. 10.000 × 1,04 = 10.400. Das trifft den Tabellenstand nach einfacher Verzinsung in Jahr 2. Die Zinsen selbst sind 10.400 − 10.000 = 400 €, passend zur Summenzeile 200 + 200. Dieselbe 400 € folgen aus 10.000 × 0,02 × 2. Die Formel und die Tabelle sprechen dieselbe Zahl.\n\nDie Aussage ist wahr.",
+      "Jährlicher Zinseszins potenziert den Aufzinsungsfaktor. Formel: K_n = K₀ × (1 + i)^n. (1,02)² = 1,02 × 1,02 = 1,0404. 10.000 × 1,0404 = 10.404. Schrittweise: Jahr 1 liefert 10.200, Jahr 2 liefert 10.200 × 1,02 = 10.404. Ausmultipliziert: (1 + 0,02)² = 1 + 2 × 0,02 + 0,02² = 1 + 0,04 + 0,0004 = 1,0404. Die 0,0004 × 10.000 = 4 € sind der Zinseszins gegenüber 10.400. Die Tabelle und die Potenzformel stimmen überein. Der Lehrtext beschreibt genau diese Wiederverzinsung der Zinsbeträge, sobald die Laufzeit länger als ein Jahr ist.\n\nDie Aussage ist wahr.",
+      "Unterordnung der 404 unter 400 verdreht die Ungleichung. Vergleich der Summenzellen: 404 und 400. 404 > 400, weil 204 > 200. Zinseszins liegt über der einfachen Summe, nicht darunter. 10.404 > 10.400 am Endstand sagt dasselbe. Die Behauptung liest die beiden Summenzellen in der falschen Reihenfolge und macht aus einem Aufschlag ein Defizit.\n\nDie Aussage ist falsch.",
+      "Differenz der Endstände ist 10.404 − 10.400 = 4 €. Bezogen auf 10.000 € Anfangskapital: 4 / 10.000 = 0,0004 = 0,04 %. Das ist derselbe Kreuzterm 0,02 × 0,02 in der Entwicklung (1,02)² = 1 + 2 × 0,02 + 0,02² = 1 + 0,04 + 0,0004. 0,0004 × 10.000 = 4 €. Die Aussage trifft diese 4 € und die 0,04 % vom Kapital, nicht etwa 4 Prozent.\n\nDie Aussage ist wahr.",
+      "Zehntausendvierhundertvier ist die Zinseszins-Zelle, nicht die einfache. Einfacher Stand Jahr 2 = 10.400 €. Wer 10.404 € der einfachen Spalte zuschreibt, verwechselt die beiden Verfahren, obwohl die Tabelle sie getrennt ausweist. Probe: 10.400 = 10.000 × 1,04, 10.404 = 10.000 × 1,0404. Die letzte Ziffer 4 gehört nur zur Zinseszinsrechnung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.52",
+    "title": "Zinseszins im dritten Jahr",
+    "context": "Dasselbe Guthaben von 10.000 € zu 2 % p.a. bleibt jetzt drei Jahre liegen. Die Tabelle setzt die Kette fort: Jahr 1 liefert 200 €, Jahr 2 liefert 204 € auf 10.200 €, Jahr 3 verzinst 10.404 €.\n\n| Jahr | Kapital zu Jahresbeginn, Zinseszins (€) | Zinseszinsen (€) | Stand nach Zinseszins (€) | Einfache Zinsen (€) | Stand nach einfacher Verzinsung (€) |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 1 | 10.000 | 200 | 10.200 | 200 | 10.200 |\n| 2 | 10.200 | 204 | 10.404 | 200 | 10.400 |\n| 3 | 10.404 | 208,08 | 10.612,08 | 200 | 10.600 |\n| Summe der Zinsen | | 612,08 | | 600 | |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Im dritten Jahr gilt bei Zinseszins 10.404 € × 0,02 = 208,08 €.",
+      "Nach drei Jahren Zinseszins steht 10.612,08 € auf dem Konto.",
+      "Bei einfacher Verzinsung über drei Jahre betragen die Zinsen 600 € und der Stand 10.600 €.",
+      "Die Summe der Zinseszinsen 612,08 € liegt unter der einfachen Summe 600 €.",
+      "Im dritten Jahr entstehen bei Zinseszins erneut nur 200 €, weil weiterhin bloß die ursprünglichen 10.000 € verzinst werden."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Drittes Jahr setzt auf dem Stand nach Jahr 2 an. Formel: Zinsen = Kapital zu Jahresbeginn × Zinssatz. Kapital = 10.404 €, i = 0,02. 10.404 × 0,02 = 208,08. Die Tabelle trägt 208,08 € in die Zinseszins-Spalte von Jahr 3. 10.404 × 1,02 = 10.612,08 bestätigt denselben Schritt als Aufzinsung. 208,08 ist mehr als 204 und mehr als 200, weil die Basis jedes Jahr wächst. Wer 10.200 × 0,02 rechnet, bleibt im zweiten Jahr und erhält 204, nicht 208,08.\n\nDie Aussage ist wahr.",
+      "Endstand nach drei Jahren folgt der Potenzformel K_n = K₀ × (1 + i)^n. n = 3, i = 0,02. 1,02² = 1,0404. 1,02³ = 1,0404 × 1,02 = 1,061208. 10.000 × 1,061208 = 10.612,08. Schrittweise: 10.000 + 200 = 10.200, 10.200 + 204 = 10.404, 10.404 + 208,08 = 10.612,08. Summe der Zinsen 200 + 204 + 208,08 = 612,08, und 10.000 + 612,08 = 10.612,08. Die Tabellenzelle Stand nach Zinseszins in Jahr 3 zeigt denselben Wert. Ohne Wiederverzinsung stünde 10.600 €, also 12,08 € weniger. 10.612,08 − 10.600 = 12,08 bestätigt den Abstand zur einfachen Spalte.\n\nDie Aussage ist wahr.",
+      "Einfache Drei-Jahres-Rechnung bleibt am Ursprungskapital. Formel: Zinsen = K₀ × i × n = 10.000 × 0,02 × 3 = 600. Stand: K_n = 10.000 × (1 + 3 × 0,02) = 10.000 × 1,06 = 10.600. Die Tabelle listet drei Mal 200 € und den Stand 10.600 €. 200 + 200 + 200 = 600 bestätigt die Summenzeile der einfachen Spalte. Kein 208,08 € erscheint in dieser Spalte.\n\nDie Aussage ist wahr.",
+      "Unterordnung von 612,08 unter 600 verdreht die Tabelle. Summenzeile: Zinseszins 612,08, einfach 600. 612,08 > 600. Differenz 612,08 − 600 = 12,08. Dieselben 12,08 € erscheinen als 10.612,08 − 10.600. Zinseszins liegt nach drei Jahren höher, nicht niedriger. Die Behauptung liest die beiden Summen in der falschen Richtung.\n\nDie Aussage ist falsch.",
+      "Nur 10.000 € im dritten Jahr zu verzinsen wäre einfache Verzinsung. Zinseszins nimmt 10.404 € als Basis. 10.404 × 0,02 = 208,08, nicht 10.000 × 0,02 = 200. Die Tabelle trennt 208,08 und 200 in Jahr 3. Wer erneut 200 € in die Zinseszins-Spalte schreibt, streicht die Wiederverzinsung der bereits gutgeschriebenen 404 €. Der Lehrtext nennt gerade diese Wiederverzinsung Zinseszinsen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.53",
+    "title": "Zwei Prozent p.a. sind kein Vier-Prozent-Satz",
+    "context": "Wieder 10.000 € für zwei Jahre zu 2 % p.a. Manche lesen 2 % plus 2 % als einen neuen Satz von 4 % auf das Anfangskapital und halten das für denselben Zinseszins.\n\n| Rechnung | Formel | Ergebnis (€) |\n| --- | --- | ---: |\n| Einfache Zinsen über 2 Jahre | 10.000 × 0,02 × 2 | 400 |\n| Endstand einfach | 10.000 × (1 + 2 × 0,02) | 10.400 |\n| Zinseszinsen Jahr 1 | 10.000 × 0,02 | 200 |\n| Zinseszinsen Jahr 2 | 10.200 × 0,02 | 204 |\n| Zinseszinsen gesamt | 200 + 204 | 404 |\n| Endstand Zinseszins | 10.000 × 1,02² | 10.404 |\n| Fälschlich 4 % einmal auf 10.000 | 10.000 × 0,04 | 400 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "2 % p.a. über zwei Jahre einfache Verzinsung ergeben 400 €, und 10.000 € × 0,04 ergibt dieselbe 400 €.",
+      "Zinseszins über dieselben zwei Jahre ergibt 404 €, also 4 € mehr als die einmalige 4-%-Rechnung auf 10.000 €.",
+      "Weil 2 + 2 = 4, ist der Zinseszins-Endstand identisch mit 10.000 € × 1,04 = 10.400 €.",
+      "1,02² = 1,0404, daher 10.000 × 1,0404 = 10.404 € und nicht 10.400 €.",
+      "2 % p.a. bedeutet laut Tabelle 4 % je Monat, also 10.000 × 0,04 = 400 € schon im ersten Monat."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Einfache Zwei-Jahres-Formel und einmal 4 % auf dasselbe Kapital fallen zusammen. 10.000 × 0,02 × 2 = 400. 10.000 × 0,04 = 400. Die Tabelle stellt beide Reihen nebeneinander: einfache Zinsen 400 € und die Zeile fälschlich 4 % einmal auf 10.000 ebenfalls 400 €. Das gilt nur für die einfache Rechnung. p.a. bleibt je Jahr 2 %, über zwei Jahre addiert sich das ohne Wiederverzinsung zu 4 % des Ursprungskapitals.\n\nDie Aussage ist wahr.",
+      "Zinseszins hängt die 2 % an den neuen Stand. 10.000 × 0,02 = 200, 10.200 × 0,02 = 204, Summe 404. Die einmalige 4-%-Rechnung bleibt bei 400, weil 10.000 × 0,04 = 400 dasselbe ist wie 10.000 × 0,02 × 2. 404 − 400 = 4. Diese 4 € sind 200 × 0,02, der Zins auf die Zinsen des ersten Jahres. Endstände: 10.404 gegen 10.400. Die Tabelle trennt 404 und 400 ausdrücklich. Wer 4 % einmal mit Zinseszins gleichsetzt, unterschlägt genau diese 4 € und landet beim einfachen Endstand 10.400 €, nicht beim zusammengesetzten Stand 10.404 € der Tabelle.\n\nDie Aussage ist wahr.",
+      "Addition der Prozentsätze 2 + 2 = 4 trifft nur die einfache Formel 1 + n × i = 1,04. Endstand dann 10.000 × 1,04 = 10.400. Zinseszins nutzt (1,02)² = 1,0404 und landet bei 10.404. 10.404 ≠ 10.400. Die Behauptung der Identität streicht den Kreuzterm 0,02² = 0,0004 und widerspricht der Tabellenzeile Endstand Zinseszins. 2 + 2 ersetzt nicht 1,02 × 1,02.\n\nDie Aussage ist falsch.",
+      "Potenz ausmultiplizieren: 1,02 × 1,02 = 1,0404. 10.000 × 1,0404 = 10.404. Alternativ 10.200 × 1,02 = 10.404. Die Tabelle nennt denselben Endstand. 10.400 wäre 10.000 × 1,04, also die einfache Zeile. Der Unterschied 4 € sitzt in der vierten Nachkommastelle des Faktors. Die Aussage hält Faktor und Kapitalprodukt korrekt auseinander.\n\nDie Aussage ist wahr.",
+      "p.a. heißt je Jahr, nicht je Monat. 2 % p.a. auf 10.000 € sind 200 € in zwölf Monaten, nicht 400 € im ersten Monat. 10.000 × 0,04 = 400 wäre 4 % in einem einzigen Zeitraum, und die Tabelle setzt diese 400 € höchstens als Zwei-Jahres-Summe der einfachen Rechnung an, nicht als Monatszins. Wer 2 % p.a. in 4 % je Monat umdeutet, vervielfacht den Preis des Geldes um den Faktor 24 gegenüber 2 % im Jahr.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.54",
+    "title": "Nominal 5 Prozent plus Bearbeitungsgebühr",
+    "context": "Jemand nimmt einen Kredit von 10.000 € zu 5 % p.a. Nominalzinssatz auf. Das Buch sagt: Kommen Bearbeitungsgebühren und andere Kosten hinzu, ist der Kredit teurer als 5 % pro Jahr. Die folgende Rechnung ist ein angenommenes Rechenbeispiel (keine Gebührentabelle aus dem Buch).\n\n| Position | Betrag |\n| --- | ---: |\n| Kreditbetrag | 10.000 € |\n| Nominalzinssatz | 5 % p.a. |\n| Zinsen Jahr 1 (10.000 × 0,05) | 500 € |\n| Angenommene Bearbeitungsgebühr | 150 € |\n| Gesamtkosten Jahr 1 | 650 € |\n| Nominale Last bezogen auf 10.000 € | 5,0 % |\n| Kostenquote mit Gebühr (650 / 10.000) | 6,5 % |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Allein die nominalen Zinsen für ein Jahr betragen 10.000 € × 0,05 = 500 €.",
+      "Zinsen 500 € plus angenommene Gebühr 150 € ergeben Gesamtkosten von 650 € im ersten Jahr.",
+      "650 € / 10.000 € = 6,5 %, und 6,5 % liegt über dem Nominalzinssatz von 5 %.",
+      "Weil Gebühren hinzukommen, bleibt der Kredit trotzdem genau so teuer wie 5 % pro Jahr und nie teurer.",
+      "Die 150 € Gebühr sind ein im Lehrbuch abgedruckter EZB-Tarif, nicht ein angenommenes Rechenbeispiel."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Nominale Jahreszinsen folgen Zinsbetrag = Kreditbetrag × Nominalzinssatz. 5 % = 0,05. 10.000 × 0,05 = 500. Das sind die reinen Zinsen, wenn nichts außer den 5 % anfiele. Der Lehrtext braucht genau diese 5 % p.a. als Nominalzinssatz, bevor Gebühren die Last erhöhen. 500 € stehen in der Tabellenzeile Zinsen Jahr 1. 200 € wären 2 % von 10.000 €, also das Guthabenbeispiel, nicht dieser Kredit.\n\nDie Aussage ist wahr.",
+      "Gesamtkosten im Beispiel addieren Zins und Gebühr. 500 + 150 = 650. Die 150 € sind ausdrücklich als angenommene Bearbeitungsgebühr gekennzeichnet, passend zur Buchidee zusätzlicher Kosten ohne erfundene Tarifliste. 650 € ist die Zeile Gesamtkosten Jahr 1. Ohne die 150 € bliebe man bei 500 € und damit bei 5 %. Mit ihnen liegt die Last um 150 € über dem Nominalzins.\n\nDie Aussage ist wahr.",
+      "Kostenquote teilt die Gesamtkosten durch den Kreditbetrag. Formel: Quote = Gesamtkosten / Kreditbetrag. 650 / 10.000 = 0,065 = 6,5 %. Vergleich: 6,5 % > 5,0 %. Probe über die Teile: 500 / 10.000 = 5,0 % Nominal, 150 / 10.000 = 1,5 Prozentpunkte Gebührenanteil, 5,0 + 1,5 = 6,5. Die tatsächliche Last liegt über dem angegebenen Nominalsatz. Genau das meint das Buch: Werden Gebühren bei der Berechnung zusätzlich berücksichtigt, erhält man die Effektivverzinsung, und der Kredit ist teurer als 5 % pro Jahr. 6,5 % gegen 5 % ist diese Abweichung nach oben.\n\nDie Aussage ist wahr.",
+      "Genau so teuer wie 5 % würde die 150 € streichen. 500 € sind 5 %, 650 € sind 6,5 %. Der Text sagt: Man muss Bearbeitungsgebühren und andere Kosten tragen, dann ist der Kredit teurer als 5 % pro Jahr. „Nie teurer“ widerspricht Satz und Tabelle. Jede positive Gebühr hebt die Last über den Nominalzins. 650 ≠ 500, 6,5 ≠ 5,0.\n\nDie Aussage ist falsch.",
+      "Angenommenes Rechenbeispiel steht in der Aufgabenstellung. Das Buch nennt 5 % Nominal plus Bearbeitungsgebühren und andere Kosten, druckt aber keine EZB-Gebührentabelle mit 150 €. Die 150 € dienen nur dazu, Effektiv > Nominal zahlenmäßig zu zeigen. Wer daraus einen amtlichen Tarif macht, erfindet eine Quelle, die der Kontext ausdrücklich nicht beansprucht. Die Richtung Effektiv > 5 % bleibt die Buchaussage, die 150 € sind das Werkzeug der Rechnung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.55",
+    "title": "Zwei Kreditangebote nach Effektivlast",
+    "context": "Zwei Banken bieten denselben Kreditbetrag 10.000 € für ein Jahr. Angebot A nennt 5 % p.a. Nominal plus einer angenommenen Bearbeitungsgebühr von 150 €. Angebot B nennt 5,4 % p.a. Nominal ohne Gebühr. Das Buch rät, zum Vergleich verschiedener Konditionen die Effektiv- statt nur der Nominalverzinsung heranzuziehen. Die Gebühr ist ein Rechenbeispiel, keine Buch-Tariftabelle.\n\n| Angebot | Nominalzinssatz | Angenommene Gebühr (€) | Zinsen Jahr 1 (€) | Gesamtkosten Jahr 1 (€) | Kostenquote |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| A | 5,0 % | 150 | 500 | 650 | 6,5 % |\n| B | 5,4 % | 0 | 540 | 540 | 5,4 % |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Angebot A hat den niedrigeren Nominalzinssatz, 5,0 % gegen 5,4 %.",
+      "Im ersten Jahr liegen die Gesamtkosten von B mit 540 € unter denen von A mit 650 €.",
+      "Für den Vergleich der beiden Konditionen ist die Kostenquote bzw. Effektivlast geeigneter als der bloße Nominalsatz.",
+      "A ist für den Kreditnehmer im ersten Jahr günstiger, weil 5,0 % kleiner als 5,4 % ist.",
+      "Ohne die 150 € Gebühr wären die Zinsen von A mit 500 € niedriger als die 540 € von B."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Nominalzeile direkt vergleichen. A: 5,0 %. B: 5,4 %. 5,0 < 5,4. Das steht in der ersten Zahlenspalte und ist unbestritten. Der Lehrtext warnt gerade deshalb, den Vergleich hier abzubrechen: Zusätzliche Kosten können die tatsächliche Verzinsung vom angegebenen Satz abweichen lassen. Der niedrigere Nominalwert von A ist wahr, entscheidet aber noch nicht über die Gesamtkosten. 5,0 % von 10.000 € sind 500 € Zinsen, bevor die 150 € Gebühr dazukommen.\n\nDie Aussage ist wahr.",
+      "Gesamtkosten Jahr 1 sind Zinsen plus Gebühr. A: 10.000 × 0,05 = 500, plus 150 ergibt 650. B: 10.000 × 0,054 = 540, plus 0 ergibt 540. 540 < 650. Differenz 650 − 540 = 110 € zugunsten von B im ersten Jahr. Die Tabelle trägt 650 gegen 540 ein. Wer nur den Nominalsatz liest, sieht diese 110 € nicht. 6,5 % gegen 5,4 % sagt dieselbe Rangfolge in Prozent.\n\nDie Aussage ist wahr.",
+      "Verschiedene Konditionen machen den Nominalsatz zum unvollständigen Maß. A wirkt mit 5,0 % billiger, kostet aber 6,5 % der 10.000 €, B liegt bei 5,4 %. Rechnung A: (500 + 150) / 10.000 = 650 / 10.000 = 0,065. Rechnung B: 540 / 10.000 = 0,054. 6,5 % > 5,4 %, Abstand 1,1 Prozentpunkte bzw. 110 €. Das Buch: Will man verschiedene Kreditangebote mit verschiedenen Konditionen vergleichen, ist es sinnvoller, die Effektiv- als die Nominalverzinsung zu vergleichen. Ohne die Gebührenspalte würde man A fälschlich vorne sehen, obwohl 650 > 540.\n\nDie Aussage ist wahr.",
+      "Günstiger nach Nominalsatz ist nicht günstiger nach Last. 5,0 % < 5,4 % beschreibt nur die Prospektzahl. Last A = 650 € = 6,5 %, Last B = 540 € = 5,4 %. 650 > 540, also ist A im ersten Jahr teurer. Die Behauptung, A sei günstiger weil der Nominalsatz kleiner ist, ist genau die Verwechslung von Nominal- und Effektivverzinsung, vor der der Abschnitt warnt. 150 € Gebühr wiegen die 0,4 Prozentpunkte Nominalvorsprung mehr als auf.\n\nDie Aussage ist falsch.",
+      "Ohne Gebühr bleibt von A nur der Zins 500 €. B bleibt bei 540 €. 500 < 540, Differenz 40 €. 10.000 × (0,054 − 0,05) = 10.000 × 0,004 = 40. Dann würde der niedrigere Nominalsatz von A auch die niedrigere Last bedeuten. Die 150 € drehen das Ranking um, weil 150 > 40. 500 + 150 = 650 > 540. Die Aussage gilt für die hypothetische Spalte ohne Gebühr, die die Tabelle als Zinsen Jahr 1 ausweist.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.56",
+    "title": "Zwei Prozent Guthaben gegen fünf Prozent Kredit",
+    "context": "Zwei Rechenbeispiele des Abschnitts stehen in einer Tabelle. Oben: 10.000 € Guthaben zu 2 % p.a. über zwei Jahre. Unten: 10.000 € Kredit zu 5 % p.a. Nominal plus angenommener Bearbeitungsgebühr 150 € im ersten Jahr.\n\n| Geschäft | Rechnung | Betrag |\n| --- | --- | ---: |\n| Guthaben 2 % p.a. | Zinsen Jahr 1: 10.000 × 0,02 | 200 € |\n| Guthaben 2 % p.a. | Zinsen Jahr 2 einfach: 10.000 × 0,02 | 200 € |\n| Guthaben 2 % p.a. | Zinsen Jahr 2 Zinseszins: 10.200 × 0,02 | 204 € |\n| Guthaben 2 % p.a. | Zinsen gesamt einfach / Zinseszins | 400 € / 404 € |\n| Kredit 5 % p.a. | Nominale Zinsen Jahr 1: 10.000 × 0,05 | 500 € |\n| Kredit 5 % p.a. | Angenommene Gebühr | 150 € |\n| Kredit 5 % p.a. | Gesamtkosten Jahr 1 | 650 € |\n| Kredit 5 % p.a. | Kostenquote 650 / 10.000 | 6,5 % |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "2 % von 10.000 € sind im ersten Jahr 200 €, nicht 500 €.",
+      "5 % von 10.000 € sind 500 € nominale Kreditzinsen im ersten Jahr.",
+      "Die 404 € Zinseszinsen des Guthabens sind dieselbe Last wie 6,5 % Effektivkosten des Kredits.",
+      "650 € / 10.000 € = 6,5 %, damit liegt die Effektivlast des Kredits über dem Nominalsatz von 5 %.",
+      "400 € einfache Guthabenzinsen plus 150 € Gebühr ergeben die 6,5 % des Kredits, weil beide Geschäfte 10.000 € betreffen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zwei Prozent und fünf Prozent sind verschiedene Sätze auf dasselbe Kapital. Formel Guthaben: 10.000 × 0,02 = 200. Formel Kredit: 10.000 × 0,05 = 500. Die Tabelle setzt 200 € in die erste Guthabenzeile und 500 € in die Kreditzeile. 200 ≠ 500. Wer die 500 € des Kredits in das 2-%-Beispiel trägt, verdreht den Lehransatz 2 % p.a. Wer umgekehrt 200 € als Kreditzins von 5 % liest, unterschätzt die nominale Kreditlast um 300 €.\n\nDie Aussage ist wahr.",
+      "Nominalzins des Kredits ist im Buch 5 % p.a. 10.000 × 0,05 = 500. Die Tabellenzeile Nominale Zinsen Jahr 1 trägt 500 €. Das sind noch nicht die Gesamtkosten, weil die angenommene Gebühr 150 € extra kommt. 500 € / 10.000 € = 5,0 % bestätigt den Nominalsatz. Erst 650 € führen auf 6,5 %. Die Aussage bleibt bei den reinen 500 € und trifft die Nominalzeile.\n\nDie Aussage ist wahr.",
+      "Vierhundertvier Euro und 6,5 % messen verschiedene Geschäfte. 404 € sind 200 + 204, der Zinseszins auf dem Guthaben über zwei Jahre, bezogen 404 / 10.000 = 4,04 % in zwei Jahren. 6,5 % sind 650 / 10.000, die Ein-Jahres-Last des Kredits inklusive Gebühr. 4,04 % über zwei Jahre ist nicht 6,5 % in einem Jahr. 404 € ≠ 650 €. Die Gleichsetzung vermengt Zinseszins eines Sparguthabens mit der Effektivlast eines Kredits.\n\nDie Aussage ist falsch.",
+      "Effektivquote des Kredits teilt Gesamtkosten durch Kreditbetrag. 650 / 10.000 = 0,065 = 6,5 %. Nominalsatz 5 % = 500 / 10.000. 6,5 % > 5 %. 650 − 500 = 150, genau die angenommene Gebühr. Das Buch: zusätzliche Kosten machen den Kredit teurer als 5 % pro Jahr, und die so ermittelte Größe heißt Effektivverzinsung. Die Tabelle weist 6,5 % gegen 5,0 % aus.\n\nDie Aussage ist wahr.",
+      "Vierhundert plus einhundertfünfzig sind 550, nicht 650, und sie gehören trotzdem nicht zusammen. 400 € sind die einfache Zwei-Jahres-Summe des 2-%-Guthabens, nämlich 10.000 × 0,02 × 2. 150 € sind die Kreditgebühr. 400 + 150 = 550, während die Kreditgesamtkosten 10.000 × 0,05 + 150 = 500 + 150 = 650 sind. 550 / 10.000 = 5,5 %, nicht 6,5 %. 650 / 10.000 = 6,5 %. Selbst die Addition 400 + 150 trifft die 6,5 % also nicht. Zwei Geschäfte mit gleichem Kapital bleiben zwei Rechnungen: 2 % p.a. auf dem Konto und 5 % Nominal plus Gebühr beim Kredit.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

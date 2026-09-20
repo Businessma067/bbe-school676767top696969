@@ -1,0 +1,13 @@
+**A.** → Falsch
+
+Diese Aussage fragt nach der Gesamtzahl der möglichen Ausschüsse. Die Anzahl der Möglichkeiten, 4 Personen aus 12 zu wählen, ist $\binom{12}{4}$. Die Rechnung in der Übersicht liefert 495, nicht 792.
+
+$$
+N(\text{gesamte Ausschüsse}) = \binom{12}{4}
+$$
+
+$$
+\binom{12}{4} = 495
+$$
+
+Die Aussage ist falsch.

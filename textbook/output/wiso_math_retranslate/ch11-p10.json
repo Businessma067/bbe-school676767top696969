@@ -1,0 +1,938 @@
+[
+  {
+    "case_id": "MATH 11.188",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Summer festival: campaign weeks and ticket profit",
+    "context_en": "A summer festival sells tickets over a campaign of $t$ weeks ($0\\le t\\le16$). Ticket volume is $D(t)=16t-t^{2}$. Net profit (after a fixed setup of $10$) is $\\pi(t)=D(t)-10=16t-t^{2}-10$ when each ticket contributes $1$ euro of margin. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Profit is maximised at $t=8$ weeks.",
+      "Ticket volume $D(t)$ is maximised at the same $t$ that maximises profit.",
+      "At $t=4$, profit is still increasing.",
+      "The campaign's profit is negative at $t=0$.",
+      "Extending the campaign from $t=8$ to $t=12$ raises total ticket volume but lowers profit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInterior candidates for a profit maximum solve $\\pi^{\\prime}=0$; the second derivative then classifies the critical point.\n\n$$\n\\pi(t) = 16t-t^{2}-10\n$$\n\n$$\n\\pi^{\\prime}(t) = 16-2t = 0 \\implies t = 8\n$$\n\n$$\n\\pi^{\\prime\\prime}(t) = -2<0\n$$\n\nOn the closed window $[0,16]$ one should also compare endpoints, but $\\pi(0)=-10$ and $\\pi(16)=-10$ both lie below $\\pi(8)=54$, so the interior critical point is the global max.\n\nSo $t=8$ is a maximum of campaign profit on the window.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nTicket volume and profit differ only by the constant setup cost $10$.\n\n$$\n\\pi(t) = D(t)-10\n$$\n\nDifferentiating kills the constant, so $\\pi^{\\prime}=D^{\\prime}$ identically: the two functions share every critical point and the same sign chart of the first derivative. In particular both are maximised at the same $t=8$. The trap would be thinking the setup cost shifts the maximiser — it does not.\n\n$$\nt = 8\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nProfit is still increasing wherever $\\pi^{\\prime}>0$. Evaluate at four weeks:\n\n$$\n\\pi^{\\prime}(4) = 16-2\\cdot 4 = 16-8 = 8>0\n$$\n\nFour weeks is halfway to the eight-week peak on the time axis, so the campaign is still in the rising half of the profit parabola.\n\nSo at $t=4$ the campaign is still climbing toward the peak at $t=8$; four weeks is left of the maximiser on the sign chart.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nEvaluate profit at the left endpoint of the campaign window, before any tickets have been sold.\n\n$$\n\\pi(0) = 16\\cdot 0-0^{2}-10 = -10<0\n$$\n\nAny campaign shorter than the break-even roots of $\\pi(t)=0$ will also show negative profit; $t=0$ is simply the clearest endpoint illustration.\n\nAny campaign shorter than the break-even roots of $\\pi(t)=0$ will also show negative profit; $t=0$ is simply the clearest endpoint illustration of the fixed-setup drag.\n\nWith no ticket sales yet, the fixed setup of $10$ leaves net profit negative. That is exactly the endpoint reading in the claim.\n\n$$\nt = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nCompare volume at the claimed endpoints — and remember that past the shared maximiser $t=8$, both $D$ and $\\pi$ fall.\n\n$$\nD(8) = 16\\cdot 8-8^{2} = 128-64 = 64\n$$\n\n$$\nD(12) = 16\\cdot 12-12^{2} = 192-144 = 48\n$$\n\nBecause $\\pi(t)=D(t)-10$, profit and volume move together: if volume falls from $8$ to $12$ weeks, profit falls as well — the claim's split verdict cannot hold.\n\nVolume falls from $64$ to $48$; profit falls with it. The claim asserts that volume rises while profit falls — the volume half is already wrong.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Ticket volume and net profit over the campaign window $0\\le t\\le 16$ are\n\n$$D(t)=16t-t^{2}$$\n\n$$\n\\pi(t) = D(t)-10 = 16t-t^{2}-10\n$$\n\nThey differ only by the constant setup $10$, so $\\pi^{\\prime}=D^{\\prime}$ and they share every critical point. Differentiating profit,\n\n$$\\pi^{\\prime}(t)=16-2t$$\n\n$$\n\\pi^{\\prime}(t) = 0\\implies t = 8\n$$\n\n$$\\pi^{\\prime\\prime}(t)=-2<0$$\n\nso both volume and profit are maximised at $t=8$. Sign reading: $\\pi^{\\prime}(4)=8>0$, so profit is still rising at four weeks. Endpoint profit is $\\pi(0)=-10<0$. Past the peak, extending from $t=8$ to $t=12$ lowers both volume and profit: $D(8)=64$ while $D(12)=48$.",
+    "title_de_existing": "Sommerfestival: Kampagnenwochen und Ticketgewinn",
+    "context_de_existing": "Sommerfestival: Ticketvolumen $D(t)=16t-t^{2}$ über $0\\le t\\le16$ Wochen. Nettogewinn $\\pi(t)=D(t)-10$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Gewinn wird bei $t=8$ Wochen maximiert.",
+      "Das Ticketvolumen $D(t)$ wird beim selben $t$ maximiert, das den Gewinn maximiert.",
+      "Bei $t=4$ steigt der Gewinn noch.",
+      "Der Kampagnengewinn ist bei $t=0$ negativ.",
+      "Eine Verlängerung von $t=8$ auf $t=12$ erhöht das Ticketvolumen, senkt aber den Gewinn."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$\\pi'=16-2t=0\\Rightarrow t=8$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$D$ und $\\pi$ unterscheiden sich nur um Konstante — gleiches argmax.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$\\pi'(4)=8>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$\\pi(0)=-10<0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$D(8)=64>D(12)=48$ — das Volumen steigt nicht. Gewinn fällt nach dem Peak ebenfalls.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$D$ und $\\pi$ haben dasselbe Maximum bei $t=8$. Von $8$ auf $12$ fällt beides."
+  },
+  {
+    "case_id": "MATH 11.189",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Coffee subscription: MU against a constant opportunity cost",
+    "context_en": "A coffee subscription models a subscriber's marginal utility of cups $c$ per month (brown). Each cup also has a constant opportunity cost of $6$ utility units, so the green curve is $\\mathrm{MU}-6$. Interior cups are worthwhile while green is positive. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Without the opportunity cost, utility of cups would keep rising until about $c=45$.",
+      "Accounting for the opportunity cost, the subscriber's best cup count among the plotted options is near $c=30$, where green crosses zero.",
+      "At $c=10$, green lies above height $10$.",
+      "Because brown is linear and falling, utility $U(c)$ is strictly concave on this range.",
+      "Green lying below brown by a constant means the optimal cup count is where brown itself is maximised."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWithout the opportunity cost, cups remain worthwhile while marginal utility itself stays positive — that is, while brown lies above the axis.\n\nBrown crosses zero near $c=45$, so $\\mathrm{MU}>0$ on $(0,45)$ and the subscriber's utility of cups keeps rising until about that count. Beyond $45$, brown is negative and additional cups would lower utility.\n\nThe claim records exactly that zero of brown as the stop rule when opportunity cost is ignored.\n\n$$\nc = 45\n$$\n\nSo the statement is True.\n",
+      "**B.** → True\n\nWith a constant opportunity cost of $6$, an extra cup is worthwhile only while $\\mathrm{MU}-6>0$, i.e. while green is positive. The stop rule is green crossing zero:\n\n$$\n\\mathrm{MU} = 6\n$$\n\nDo not stop where brown itself is largest or where brown hits zero; with opportunity cost present, the relevant crossing is green $=0$.\n\nGreen crosses zero near $c=30$ on the figure. Among the plotted options that is the best cup count — not the later zero of brown near $45$, which ignores the opportunity cost.\n\n$$\nc = 30\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nRead the heights at $c=10$ carefully. Brown (marginal utility) sits at height $14$ there, and green is the parallel shift $\\mathrm{MU}-6$.\n\n$$\n14-6 = 8\n$$\n\nIf one mistakenly read brown's height $14$ as green's height, the claim would look true — subtracting the constant $6$ is the step that falsifies it.\n\nHeight $8$ lies below $10$, not above it. The trap is misreading brown's height as green's, or forgetting to subtract the constant $6$.\n\n$$\nc = 10\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nUtility $U$ has derivative $\\mathrm{MU}$ (brown). A linear falling brown curve means $U^{\\prime}$ has constant negative slope, so the second derivative is a negative constant:\n\n$$\nU^{\\prime\\prime} = (\\mathrm{MU})^{\\prime}<0\n$$\n\nLinear falling MU is the strongest form of diminishing marginal utility on this window: the second derivative never approaches zero. throughout the plotted range. Strict negativity of $U^{\\prime\\prime}$ is exactly strict concavity of $U$ on this range.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nGreen is a parallel downward shift of brown by the constant $6$. The optimal cup count solves green $=0$, i.e. $\\mathrm{MU}=6$ — an equality of marginal utility with opportunity cost.\n\nBrown itself is linear and falling on the whole window, so it has no interior maximum at all. The stop rule is the zero of green, not a peak of brown; confusing the two curves' roles is the trap.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "The figure plots a subscriber's marginal utility of cups $c$ (brown) together with the opportunity-cost gap\n\n$$\\mathrm{green}=\\mathrm{MU}-6$$\n\na parallel downward shift of brown by the constant $6$. Interior cups remain worthwhile while green is positive.\n\nBrown (MU) stays positive until it crosses the axis near $c=45$, so without the opportunity cost, utility of cups keeps rising until about that count. Green crosses zero near $c=30$, which is the stop rule $\\mathrm{MU}=6$ and the best cup count among the plotted options.\n\nAt $c=10$, brown sits at height $14$, so green sits at $14-6=8$ (below height $10$). Because brown is linear and falling, $U^{\\prime\\prime}=(\\mathrm{MU})^{\\prime}<0$ throughout, so $U$ is strictly concave. Brown itself has no interior maximum on the window; the optimum is the zero of green, not a peak of brown.",
+    "title_de_existing": "Kaffee-Abo: GN gegen konstante Opportunitätskosten",
+    "context_de_existing": "Kaffee-Abo: Grenznutzen der Tassen $c$ (braun); Opportunitätskosten $6$ Nutzeneinheiten, also Grün $=\\mathrm{MU}-6$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Ohne Opportunitätskosten würde der Nutzen der Tassen bis etwa $c=45$ weiter steigen.",
+      "Mit Opportunitätskosten ist die beste Tassenzahl unter den gezeichneten Optionen nahe $c=30$, wo Grün null kreuzt.",
+      "Bei $c=10$ liegt Grün über Höhe $10$.",
+      "Weil Braun linear fällt, ist der Nutzen $U(c)$ auf diesem Bereich streng konkav.",
+      "Dass Grün um eine Konstante unter Braun liegt, bedeutet: die optimale Tassenzahl liegt dort, wo Braun selbst maximiert wird."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$\\mathrm{MU}=0$ nahe $c=45$ → Nutzen steigt bis dahin.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nOptimum wo $\\mathrm{MU}=6$, also Grün $=0$ nahe $c=30$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nBei $c=10$ liegt Grün nach der Figur nicht über Höhe $10$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nLineares fallendes MU → $U''<0$ — streng konkav.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nOptimum wo $\\mathrm{MU}=6$, nicht wo MU maximal (das wäre $c=0$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Optimum bei $\\mathrm{MU}=6$ (Grün $=0$), nicht bei maximalem MU."
+  },
+  {
+    "case_id": "MATH 11.190",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Cold-chain: spoilage index over delivery hours",
+    "context_en": "A cold-chain delivery records a spoilage index $S(t)=t^{3}-6t^{2}+9t$ over $0\\le t\\le4$ hours after loading. Which of the following statements is/are correct?",
+    "statements_en": [
+      "$S^{\\prime}(t)=3(t-1)(t-3)$.",
+      "Spoilage has a local maximum at $t=1$.",
+      "Spoilage has a local minimum at $t=3$.",
+      "Among the critical points in $(0,4)$, the global maximum of $S$ on $[0,4]$ is at $t=1$.",
+      "$S^{\\prime\\prime}(1)<0$ and $S^{\\prime\\prime}(3)>0$, matching the local max / local min reading."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the spoilage index term by term, then factor the resulting quadratic.\n\n$$\nS^{\\prime}(t) = 3t^{2}-12t+9\n$$\n\n$$\nS^{\\prime}(t) = 3(t^{2}-4t+3) = 3(t-1)(t-3)\n$$\n\nThe roots $t=1$ and $t=3$ of this factorisation are the only interior candidates for local extrema of spoilage on $(0,4)$.\n\nThe claimed factorisation matches exactly, and the roots $t=1$ and $t=3$ will drive the later local-extremum reading. Matching the expression to the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nClassify $t=1$ by the sign chart of $S^{\\prime}=3(t-1)(t-3)$.\n\nFor $t\\in(0,1)$ both factors are negative, so the product is positive and $S^{\\prime}>0$. Between $1$ and $3$ the factor $(t-1)$ is positive while $(t-3)$ is negative, so $S^{\\prime}<0$.\n\nEquivalently,\n\n$$\nS^{\\prime\\prime}(1) = 6\\cdot 1-12\n$$\n\n$$\nS^{\\prime\\prime}(1) = -6<0\n$$\n\n confirms the same local-max reading by the second-derivative test.\n\nA $+$ to $-$ change at $t=1$ is a local maximum of spoilage.\n\n$$\nt = 1\n$$\n\n$$\nS^{\\prime} = 3(t-1)(t-3)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nContinue the same sign chart past $t=3$.\n\nOn $(1,3)$ one has $S^{\\prime}<0$, and for $t>3$ both factors $(t-1)$ and $(t-3)$ are positive, so $S^{\\prime}>0$.\n\nEquivalently,\n\n$$\nS^{\\prime\\prime}(3) = 6\\cdot 3-12\n$$\n\n$$\nS^{\\prime\\prime}(3) = 6>0\n$$\n\n confirms the same local-min reading by the second-derivative test.\n\nA $-$ to $+$ change at $t=3$ is a local minimum of spoilage — spoilage falls into a trough there before rising again toward the right endpoint.\n\n$$\nt = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nA local maximum among critical points need not be the unique global maximum on a closed interval. Compare levels at the endpoints and at every critical point.\n\n$$\nS(0) = 0\n$$\n\n$$\nS(1) = 1-6+9 = 4\n$$\n\n$$\nS(3) = 27-54+27 = 0\n$$\n\n$$\nS(4) = 64-96+36 = 4\n$$\n\nOn a closed interval the global maximum can sit at an endpoint even when an interior local max exists; here the endpoint $t=4$ ties the local peak.\n\nBoth $t=1$ and $t=4$ attain height $4$, so the global maximum on $[0,4]$ is not uniquely at $t=1$.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nThe second-derivative test should match the local max / local min reading already obtained from the sign chart.\n\n$$\nS^{\\prime\\prime}(t) = 6t-12\n$$\n\n$$\nS^{\\prime\\prime}(1) = 6-12\n$$\n\n$$\n6 - 12 = -6\n$$\n\n$$\nS^{\\prime\\prime}(1) = -6 = -6<0\n$$\n\n$$\nS^{\\prime\\prime}(3) = 18-12\n$$\n\n$$\n18 - 12 = 6\n$$\n\n$$\nS^{\\prime\\prime}(3) = 6 = 6>0\n$$\n\nThe second-derivative test and the first-derivative sign chart are two readings of the same geometry; agreement between them is what the claim records.\n\nNegative second derivative at $t=1$ confirms a local max, and positive second derivative at $t=3$ confirms a local min — exactly the claimed match.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Spoilage over $0\\le t\\le 4$ is\n\n$$S(t)=t^{3}-6t^{2}+9t$$\n\nDifferentiating and factoring,\n\n$$\nS^{\\prime}(t) = 3t^{2}-12t+9 = 3(t-1)(t-3)\n$$\n\n$$S^{\\prime\\prime}(t)=6t-12$$\n\nSign chart of $S^{\\prime}$: positive on $(0,1)$, negative on $(1,3)$, positive on $(3,4)$. So $t=1$ is a local maximum and $t=3$ is a local minimum, matching $S^{\\prime\\prime}(1)=-6<0$ and $S^{\\prime\\prime}(3)=6>0$.\n\nClosed-interval levels: $S(0)=0$, $S(1)=4$, $S(3)=0$, $S(4)=4$. Both $t=1$ and $t=4$ attain the global maximum height $4$ on $[0,4]$, so that maximum is not unique to $t=1$.",
+    "title_de_existing": "Kühlkette: Verderbsindex über Lieferstunden",
+    "context_de_existing": "Kühlkette: Verderbsindex $S(t)=t^{3}-6t^{2}+9t$ über $0\\le t\\le4$ Stunden. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "$S'(t)=3(t-1)(t-3)$.",
+      "Der Verderb hat bei $t=1$ ein lokales Maximum.",
+      "Der Verderb hat bei $t=3$ ein lokales Minimum.",
+      "Unter den kritischen Punkten in $(0,4)$ liegt das globale Maximum von $S$ auf $[0,4]$ bei $t=1$.",
+      "$S''(1)<0$ und $S''(3)>0$, passend zu lokalem Max / lokalem Min."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nFaktorisieren bestätigt.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWechsel $+\\to -$ bei $t=1$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel $-\\to +$ bei $t=3$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleich der Werte: $S(0)=0$, $S(1)=4$, $S(3)=0$, $S(4)=4$ — globales Max nicht einzig bei $t=1$ (auch $t=4$).\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$S''=6t-12$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Lokales Max bei $t=1$, lokales Min bei $t=3$. Global auf $[0,4]$ auch $S(4)=4=S(1)$."
+  },
+  {
+    "case_id": "MATH 11.191",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two workshops: compare P′ graphs and levels",
+    "context_en": "Two neighbouring workshops $A$ (brown) and $B$ (green) plot marginal profit on one plane. Both start with $P_A(0)=P_B(0)=0$. Use the figure. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Workshop $A$ has a local profit maximum at $Q=6$.",
+      "Workshop $B$ still has positive marginal profit at $Q=6$, so $B$ would expand past $A$'s stationary output.",
+      "Because both start at profit $0$ and brown lies above green on $(0,6)$, it follows that $P_A(6)>P_B(6)$.",
+      "On $(6,9)$, workshop $A$ should contract while workshop $B$ should expand.",
+      "The height where brown meets green (near $Q=3$) is the profit level $P_A(3)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWorkshop $A$'s marginal profit is the brown curve. A local profit maximum occurs where brown crosses from positive to negative: that is where the first-order condition $P_A^{\\prime}=0$ holds with a $+$ to $-$ sign change.\n\nThat crossing sits at $Q=6$ on the figure. Left of $6$, brown is positive so $A$'s profit is rising; right of $6$, brown is negative so profit is falling.\n\n$$\nP_A^{\\prime} = 0\n$$\n\nSo the statement is True.\n",
+      "**B.** → True\n\nWorkshop $B$'s marginal profit is green. At $Q=6$, green still lies above the axis — it only reaches zero near $Q=9$.\n\nWorkshop $A$ has already hit $P_A^{\\prime}=0$ at $Q=6$, while $B$ still has $P_B^{\\prime}>0$ there — the two workshops' stationary outputs need not coincide.\n\nPositive marginal profit means $B$'s total profit is still rising at the output where $A$ has already stopped. So $B$ would expand past $A$'s stationary output, which is exactly the comparison in the claim.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nBoth workshops start at profit zero. On $(0,6)$ brown lies above green, so $P_A^{\\prime}>P_B^{\\prime}$ throughout that interval. Integrating the strict inequality from the common start yields\n\n$$\nP_A(6)-P_A(0)>P_B(6)-P_B(0)\n$$\n\nand with $P_A(0)=P_B(0)=0$ one obtains $P_A(6)>P_B(6)$. The trap would be comparing heights of the $P^{\\prime}$ curves at a single point instead of integrating the gap.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nOn $(6,9)$ brown lies below the axis while green still lies above it.\n\nThe interval $(6,9)$ is exactly the stretch where the two workshops' first-order advice diverges: $A$ wants less output, $B$ wants more.\n\nNegative marginal profit tells workshop $A$ to contract (reduce $Q$); positive marginal profit tells workshop $B$ to expand (increase $Q$). Those are exactly the opposite directions named in the claim.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nWhere brown meets green near $Q=3$, the two workshops share a common marginal-profit value:\n\n$$\nP_A^{\\prime}(3) = P_B^{\\prime}(3)\n$$\n\nProfit levels are areas under the $P^{\\prime}$ curves from $0$; a single shared height of the derivative graphs does not equal either workshop's accumulated profit.\n\nThat shared height is a value of the derivatives, not a level of total profit. In particular it is not $P_A(3)$ — confusing the ordinate of a $P^{\\prime}$ graph with a profit level is the trap.\n\n$$\nQ = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Workshops $A$ (brown) and $B$ (green) plot marginal profit $P_A^{\\prime}$ and $P_B^{\\prime}$, both starting from\n\n$$\nP_A(0) = P_B(0) = 0\n$$\n\nBrown crosses from positive to negative at $Q=6$, so $A$ has a local profit maximum there. At that same $Q=6$, green is still positive (zero only near $Q=9$), so $B$'s profit is still rising and $B$ would expand past $A$'s stationary output.\n\nOn $(0,6)$ brown lies above green, so $P_A^{\\prime}>P_B^{\\prime}$. Integrating from the common zero start yields $P_A(6)>P_B(6)$.\n\nOn $(6,9)$ brown is negative while green remains positive, so $A$ should contract and $B$ should expand. Where brown meets green (near $Q=3$), the shared height is a common marginal-profit value $P_A^{\\prime}=P_B^{\\prime}$, not the profit level $P_A(3)$.",
+    "title_de_existing": "Zwei Werkstätten: P′-Graphen und Niveaus vergleichen",
+    "context_de_existing": "Zwei Nachbarwerkstätten $A$ (braun) und $B$ (grün) zeichnen Grenzgewinn; $P_A(0)=P_B(0)=0$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Werkstatt $A$ hat bei $Q=6$ ein lokales Gewinnmaximum.",
+      "Werkstatt $B$ hat bei $Q=6$ noch positiven Grenzgewinn, also würde $B$ über $A$s stationären Output hinaus expandieren.",
+      "Weil beide bei Gewinn $0$ starten und Braun auf $(0,6)$ über Grün liegt, folgt $P_A(6)>P_B(6)$.",
+      "Auf $(6,9)$ soll Werkstatt $A$ kontrahieren, während $B$ expandieren soll.",
+      "Die Höhe, wo Braun Grün trifft (nahe $Q=3$), ist das Gewinnniveau $P_A(3)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBraun wechselt bei $Q=6$ von $+$ zu $-$ → lokales Max.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGrün noch positiv bei $Q=6$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nIntegral von $P'$: höheres $P'$ → höherer Gewinnbestand.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nVorzeichen auf $(6,9)$: A negativ, B positiv.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nSchnitthöhe von $P'$ ist eine Rate, nicht $P(3)$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "A Peak bei $Q=6$; B expandiert weiter. $P'$-Höhe $\\neq$ Gewinnniveau."
+  },
+  {
+    "case_id": "MATH 11.192",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Print kiosk: demand figure plus quadratic cost",
+    "context_en": "A print kiosk faces the demand curve $D(p)$ in the figure (quantity against price $p$). Production cost for $Q$ posters is $C(Q)=4Q+\\dfrac{1}{20}Q^{2}$. Revenue is $R=p\\cdot D(p)$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Reading the figure, $D(15)=30$, so revenue at $p=15$ equals $450$.",
+      "Price elasticity of demand at $p=15$ equals $-1$.",
+      "At $p=15$, marginal cost of the corresponding output equals $0$, so profit is maximised there.",
+      "At $p=10$, demand is $40$ and $MC=C^{\\prime}(40)=8$, while a small price increase from $10$ still raises revenue.",
+      "Average cost $AC(Q)=\\dfrac{C(Q)}{Q}$ is increasing for every $Q>0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRevenue is price times quantity demanded. The figure marks the point $(15,30)$ on the demand curve, so\n\n$$\nD(15) = 30\n$$\n\n$$\nR(15) = 15\\cdot 30\n$$\n\n$$\n15\\times 30 = 450\n$$\n\nEquivalently, from the line $D=60-2p$ one computes\n\n$$\nD(15) = 60-30\n$$\n\n$$\n60 - 30 = 30\n$$\n\n$$\nD(15) = 30\n$$\n\n, then $R=pD=450$, matching the marked figure point.\n\nThat is the revenue at the named price — no elasticity or cost calculation is needed for this letter.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nThe figure's line is the linear demand $D=60-2p$, with slope $D^{\\prime}=-2$. Point elasticity is\n\n$$\n\\varepsilon(p) = \\dfrac{D^{\\prime}(p)\\,p}{D(p)} = \\dfrac{-2p}{60-2p}\n$$\n\nAt $p=15$,\n\n$$\n\\varepsilon = \\dfrac{-2\\cdot 15}{60-30} = \\dfrac{-30}{30} = -1\n$$\n\nFor linear demand, unit elasticity is also the revenue-maximising price:\n\n$$\nR^{\\prime}(15) = 60-4\\cdot 15\n$$\n\n$$\nR^{\\prime}(15) = 0\n$$\n\n, so the elasticity reading and the revenue FOC agree.\n\nUnit elasticity holds at that price, which is also where revenue peaks for linear demand.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nUnit elasticity maximises revenue ($MR=0$), not profit. At $p=15$ one has $Q=30$, and marginal cost is\n\n$$\nC^{\\prime}(Q) = 4+\\dfrac{Q}{10}\n$$\n\n$$\nC^{\\prime}(30) = 4+3\n$$\n\n$$\n4 + 3 = 7\n$$\n\n$$\nC^{\\prime}(30) = 7 = 7\\neq 0\n$$\n\nA firm that stops at the revenue peak ignores the still-positive marginal cost of printing those thirty posters; profit keeps the cost side in the FOC.\n\nProfit maximisation requires $MR=MC$. Here $MR=0$ while $MC=7$, so $p=15$ is a revenue peak but not a profit maximum — that is the classic trap.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nRead demand at $p=10$ from the figure, then evaluate marginal cost and the revenue derivative.\n\n$$\nD(10) = 60-20\n$$\n\n$$\n60 - 20 = 40\n$$\n\n$$\nD(10) = 40\n$$\n\n$$\nC^{\\prime}(40) = 4+\\dfrac{40}{10} = 8\n$$\n\nAll three pieces of the claim — demand $40$, $MC=8$, and $R^{\\prime}(10)>0$ — are verified by direct substitution into the figure line and the cost rule.\n\nWith $R(p)=60p-2p^{2}$, one has $R^{\\prime}(p)=60-4p$, so $R^{\\prime}(10)=20>0$: a small price increase from $10$ still raises revenue.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nForm average cost by dividing total cost by output, then differentiate.\n\n$$\nAC(Q) = \\dfrac{C(Q)}{Q} = 4+\\dfrac{Q}{20}\n$$\n\n$$\nAC^{\\prime}(Q) = \\dfrac{1}{20}>0\n$$\n\nUnlike a U-shaped average-cost curve with a positive fixed-cost term, this cost rule has no fixed cost, so $AC$ starts at $4$ and drifts upward linearly.\n\nThe derivative is a positive constant, so average cost is strictly increasing for every $Q>0$ — there is no U-shaped dip for this quadratic cost.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "The figure's demand line is $D(p)=60-2p$, and production cost is\n\n$$C(Q)=4Q+\\dfrac{1}{20}Q^{2}$$\n\n$$C^{\\prime}(Q)=4+\\dfrac{Q}{10}$$\n\n$$\nAC(Q) = 4+\\dfrac{Q}{20},\\qquad AC^{\\prime}(Q) = \\dfrac{1}{20}>0\n$$\n\nso average cost rises for every $Q>0$. Revenue $R(p)=p(60-2p)$ has $R^{\\prime}(p)=60-4p$. At $p=15$, demand is $D(15)=30$, so $R=450$, and elasticity is $\\varepsilon=\\dfrac{-2p}{60-2p}=-1$.\n\nUnit elasticity maximises revenue ($MR=0$), but at $Q=30$ one has $C^{\\prime}(30)=7\\neq 0$, so $p=15$ is not a profit maximum. At $p=10$, demand is $40$, $C^{\\prime}(40)=8$, and $R^{\\prime}(10)=20>0$.",
+    "title_de_existing": "Druckkiosk: Nachfragefigur plus quadratische Kosten",
+    "context_de_existing": "Druckkiosk: Nachfrage $D(p)$ in der Figur; Kosten $C(Q)=4Q+\\dfrac{1}{20}Q^{2}$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Nach der Figur ist $D(15)=30$, also gleicht der Erlös bei $p=15$ dem Wert $450$.",
+      "Die Preiselastizität der Nachfrage bei $p=15$ gleicht $-1$.",
+      "Bei $p=15$ gleichen die Grenzkosten des zugehörigen Outputs $0$, also wird dort der Gewinn maximiert.",
+      "Bei $p=10$ ist die Nachfrage $40$ und $MC=C'(40)=8$, während eine kleine Preiserhöhung ab $10$ den Erlös noch steigert.",
+      "Die Stückkosten $AC(Q)=\\dfrac{C(Q)}{Q}$ steigen für jedes $Q>0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$D(15)=30$, $R=450$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei linearer Nachfrage $|\\varepsilon|=1$ in der Mitte.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$MC=C'(30)=4+3=7\\neq 0$ — kein Gewinnpeak allein aus Erlöspeak.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$D(10)=40$, $C'(40)=8$; bei $p=10$ unelastisch/$R'>0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$AC=4+Q/20$ steigt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bei $p=15$: $R=450$, $|\\varepsilon|=1$, aber $MC\\neq 0$. Stückkosten steigen."
+  },
+  {
+    "case_id": "MATH 11.193",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Spice importer: per-unit tax shifts MC on the figure",
+    "context_en": "A spice importer's MR (brown) and MC (green) are shown, together with post-tax marginal cost (purple) after a specific tax of $4$ per unit. Pre-tax they meet near $Q=16$; post-tax purple meets brown nearer $Q=\\dfrac{40}{3}$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Pre-tax, expanding a little from $Q=12$ raises profit because brown is above green there.",
+      "The tax raises the profit-maximising output.",
+      "Post-tax, at the new crossing the firm equates MR to MC plus the tax.",
+      "At $Q=20$, even pre-tax, green already exceeds brown, so that output is past the pre-tax optimum.",
+      "Because purple is a parallel upward shift of green by $4$, every post-tax optimum output must satisfy $MR=MC$ with the old green curve."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nProfit rises while marginal revenue lies above marginal cost, and falls once MC overtakes MR. On the figure, at $Q=12$ brown (MR) still sits above green (MC), left of their pre-tax crossing near $Q=16$.\n\nThe pre-tax optimum is the later green–brown crossing near $Q=16$; at $Q=12$ one is still in the region where expanding raises profit.\n\nExpanding a little from that output therefore adds more to revenue than to cost, raising pre-tax profit.\n\n$$\nQ = 12\n$$\n\n$$\nQ = 16\n$$\n\nSo the statement is True.\n",
+      "**B.** → False\n\nA specific tax of $4$ shifts marginal cost upward to the purple curve. The new $MR=\\mathrm{MC}+\\mathrm{tax}$ crossing is the purple–brown meeting near $Q=\\dfrac{40}{3}$.\n\nA higher per-unit cost schedule intersects the unchanged MR curve farther left, so optimal output contracts — the standard comparative-static of a specific tax.\n\nThat abscissa lies left of the pre-tax green–brown crossing near $Q=16$, so the tax lowers optimal output rather than raising it. The trap is thinking a cost shock expands production.\n\n$$\nQ = 16\n$$\n\nSo the statement is False.\n",
+      "**C.** → True\n\nPurple is the post-tax marginal cost — the old MC plus the tax of $4$ per unit. Where purple meets brown, the firm equates marginal revenue to that shifted cost schedule:\n\n$$\nMR = \\mathrm{MC}+\\mathrm{tax}\n$$\n\nIn symbols, if green is $MC(Q)$ then purple is $MC(Q)+4$, and the post-tax stationary point solves $MR(Q)=MC(Q)+4$.\n\nThat is precisely the post-tax first-order condition, not a coincidence of the drawing.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThe pre-tax optimum is the green–brown crossing near $Q=16$. At $Q=20$, which lies to the right of that crossing, green already exceeds brown: $MC>MR$.\n\nPut differently: past the pre-tax FOC, the firm is on the wrong side of $MR=MC$, so cutting output toward $16$ would raise pre-tax profit.\n\nMarginal cost above marginal revenue means each extra unit loses money, so that output is past the pre-tax optimum.\n\n$$\nQ = 16\n$$\n\n$$\nQ = 20\n$$\n\n$$\nMR = MC\n$$\n\nSo the statement is True.\n",
+      "**E.** → False\n\nPurple is a parallel upward shift of green by $4$, so the post-tax first-order condition uses purple, not the old green curve.\n\nThe parallel shift changes the intercept of MC but not its slope; what matters for the FOC is that the firm faces purple, not green, after the tax.\n\nEquivalently the firm solves $MR=\\mathrm{MC}+4$, not $MR=\\mathrm{MC}$. Keeping the untaxed green FOC would locate the wrong output — that is the trap of ignoring the tax in the FOC.\n\n$$\nMR = \\mathrm{MC}+4\n$$\n\n$$\nMR = \\mathrm{MC}\n$$\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "The figure shows pre-tax MR (brown) and MC (green), together with post-tax marginal cost (purple) after a specific tax of $4$ per unit — a parallel upward shift of green by $4$.\n\nPre-tax, brown meets green near $Q=16$. At $Q=12$ brown still lies above green, so expanding a little raises pre-tax profit. At $Q=20$, past that crossing, green already exceeds brown, so output is past the pre-tax optimum.\n\nPost-tax, purple meets brown nearer $Q=\\dfrac{40}{3}<16$. The new first-order condition is $MR=\\mathrm{MC}+\\mathrm{tax}$, so the tax lowers optimal output rather than raising it. Keeping the untaxed condition $MR=\\mathrm{MC}$ with the old green curve would be wrong — the firm must use purple.",
+    "title_de_existing": "Gewürzimporteur: Mengensteuer verschiebt GK in der Figur",
+    "context_de_existing": "Gewürzimporteur: MR (braun), MC (grün), Nachsteuer-MC (lila) nach Stücksteuer $4$. Vor Steuer Schnitt nahe $Q=16$; nach Steuer Lila trifft Braun näher links. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Vor Steuer erhöht Expansion etwas ab $Q=12$ den Gewinn, weil Braun dort über Grün liegt.",
+      "Die Steuer erhöht den gewinnmaximierenden Output.",
+      "Nach Steuer setzt die Firma am neuen Schnitt MR mit MC plus Steuer gleich.",
+      "Bei $Q=20$ übertrifft Grün schon vor Steuer Braun, also liegt dieser Output hinter dem Vorsteuer-Optimum.",
+      "Weil Lila eine parallele Aufwärtsverschiebung von Grün um $4$ ist, muss jeder Nachsteuer-Optimaloutput $MR=MC$ mit der alten grünen Kurve erfüllen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$MR>MC$ bei $Q=12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nSteuer verschiebt Optimum nach links — senkt Output.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNachsteuer: $MR=MC+\\text{Steuer}$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $Q=20$: $MC>MR$ — hinter dem Optimum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nNachsteuer gilt $MR=$ neue MC (lila), nicht alte grüne.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Steuer senkt den Optimaloutput. Nachsteuer: $MR=MC+\\text{Steuer}$."
+  },
+  {
+    "case_id": "MATH 11.194",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Herb box: inverse demand inside a fencing budget",
+    "context_en": "A market gardener fences a three-sided herb bed with $2x+y=60$ metres of fence (river on one side) and sells the harvest under inverse demand $p=24-\\dfrac{1}{2}A$ where $A=xy$ is planted area. Revenue is $R=pA$. Treat $A$ as the quantity index. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Eliminating $y$ gives planted area $A(x)=60x-2x^{2}$ for $0<x<30$.",
+      "Area alone (ignoring price response) is maximised at $x=15$.",
+      "Revenue $R(A)=24A-\\dfrac12 A^{2}$ is maximised at $A=24$.",
+      "The area-maximising fence layout automatically maximises revenue, because $A=15\\cdot30=450$ exceeds $24$.",
+      "At the revenue-maximising area $A=24$, price elasticity of demand equals $-1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nEliminate the parallel side from the fencing budget and write planted area in the free length $x$.\n\n$$\ny = 60-2x\n$$\n\n$$\nA(x) = x\\cdot y = x(60-2x) = 60x-2x^{2}\n$$\n\nThe factor $2$ in $2x$ comes from the two equal sides perpendicular to the river; the river itself supplies the fourth side for free.\n\nThe open fencing interval requires $y>0$ and $x>0$, so $0<x<30$, exactly as claimed. Matching the reduced area rule to the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nMaximise the concave quadratic area on that open interval, ignoring price response for this letter.\n\n$$\nA^{\\prime}(x) = 60-4x = 0 \\implies x = 15\n$$\n\n$$\nA^{\\prime\\prime}(x) = -4<0\n$$\n\nAt $x=15$ one has\n\n$$\ny = 60-30\n$$\n\n$$\n60 - 30 = 30\n$$\n\n$$\ny = 30\n$$\n\n and planted area\n\n$$\nA = 15\\cdot 30\n$$\n\n$$\n15\\times 30 = 450\n$$\n\n$$\nA = 450\n$$\n\n, the largest rectangle the fence budget can enclose.\n\nThis letter maximises physical area alone; price response and revenue enter only in later letters.\n\nSo area alone is maximised at $x=15$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nRevenue as a function of planted area is the quadratic coming from inverse demand $p=24-\\dfrac{1}{2}A$.\n\n$$\nR(A) = pA = \\left(24-\\dfrac{1}{2}A\\right)A = 24A-\\dfrac{1}{2}A^{2}\n$$\n\n$$\nR^{\\prime}(A) = 24-A = 0 \\implies A = 24\n$$\n\nThis is a pure revenue calculation treating $A$ as the quantity index; the fencing constraint is set aside until one asks whether $A=24$ is feasible (it is).\n\nAnd $R^{\\prime\\prime}=-1<0$, so revenue peaks at $A=24$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nThe area-maximising layout gives a huge planted area:\n\n$$\nA(15) = 60\\cdot 15-2\\cdot 15^{2} = 900-450 = 450\n$$\n\nFeasibility is not the issue — $A=450$ is attainable — but revenue at $A=450$ is dragged down by the low price\n\n$$\np = 24-\\frac12\\cdot 450\n$$\n\n$$\np = -201\n$$\n\n, which is economically absurd on this demand line.\n\nRevenue, however, peaks at $A=24$, far below $450$. Flooding the market with area drives price down along the inverse-demand line; maximising physical area is not the same as maximising revenue.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nInvert the demand rule to express quantity in terms of price, then evaluate elasticity at the revenue-maximising area.\n\n$$\np = 24-\\dfrac{1}{2}A\n$$\n\n$$\nA = 48-2p\n$$\n\nAt $A=24$ one has $p=12$, so\n\n$$\n\\varepsilon = \\dfrac{-2p}{48-2p} = \\dfrac{-2\\cdot 12}{48-24} = \\dfrac{-24}{24} = -1\n$$\n\nFor linear inverse demand, unit elasticity always marks the revenue peak:\n\n$$\nR^{\\prime}(A) = 24-A = 0\n$$\n\n at the same $A=24$ where $\\varepsilon=-1$.\n\nUnit elasticity at the revenue peak is exactly what the claim asserts.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Three-sided fencing $2x+y=60$ gives $y=60-2x$ and planted area\n\n$$\nA(x) = x(60-2x) = 60x-2x^{2}\\qquad(0<x<30)\n$$\n\n$$\nA^{\\prime}(x) = 60-4x = 0\\implies x = 15\n$$\n\n$$A^{\\prime\\prime}=-4<0$$\n\nso area alone peaks at $x=15$ with $A(15)=450$. Under inverse demand $p=24-\\dfrac{1}{2}A$, revenue as a function of area is\n\n$$R(A)=24A-\\dfrac{1}{2}A^{2}$$\n\n$$\nR^{\\prime}(A) = 24-A = 0\\implies A = 24\n$$\n\nfar below $450$, so the area-maximising layout does not maximise revenue. Inverting demand, $A=48-2p$; at $A=24$ one has $p=12$ and $\\varepsilon=\\dfrac{-2p}{48-2p}=-1$.",
+    "title_de_existing": "Kräuterbox: inverse Nachfrage in einem Zaunbudget",
+    "context_de_existing": "Marktgärtner: dreiseitiger Zaun $2x+y=60$, inverse Nachfrage $p=24-\\dfrac12 A$ mit $A=xy$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Eliminieren von $y$ liefert Pflanzfläche $A(x)=60x-2x^{2}$ für $0<x<30$.",
+      "Die Fläche allein (ohne Preisreaktion) wird bei $x=15$ maximiert.",
+      "Der Erlös $R(A)=24A-\\dfrac12 A^{2}$ wird bei $A=24$ maximiert.",
+      "Das flächenmaximierende Zaunlayout maximiert automatisch den Erlös, weil $A=15\\cdot30=450$ den Wert $24$ übersteigt.",
+      "Bei der erlösmaximierenden Fläche $A=24$ gleicht die Preiselastizität der Nachfrage $-1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$A=x(60-2x)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$A'=0$ bei $x=15$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$R'=24-A=0\\Rightarrow A=24$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nFlächenmax $A=225$ liegt weit über dem Erlöspeak $A=24$ — maximiert nicht automatisch den Erlös.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBeim Erlöspeak $|\\varepsilon|=1$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Flächenmax bei $x=15$ ($A=225$); Erlöspeak bei $A=24$ — verschiedene Ziele."
+  },
+  {
+    "case_id": "MATH 11.195",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "App studio: learning curve AC/MC figure plus formula check",
+    "context_en": "An app studio's cost is $C(Q)=80\\sqrt{Q}$ for $Q>0$. The figure shows $AC$ (brown) and $MC$ (green). Which of the following statements is/are correct?",
+    "statements_en": [
+      "At $Q=16$, the figure's brown height is $20$ and green height is $10$, matching $AC=\\dfrac{80}{\\sqrt{Q}}$ and $MC=\\dfrac{40}{\\sqrt{Q}}$.",
+      "$MC=\\dfrac12 AC$ at every $Q>0$ shown.",
+      "Because both curves fall, total cost $C(Q)$ is decreasing.",
+      "Doubling cumulative output from $9$ to $18$ multiplies total cost by $\\sqrt{2}$.",
+      "A small increase in $Q$ near $Q=25$ lowers average cost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nEvaluate the closed forms at $Q=16$ and compare with the marked heights on the figure.\n\n$$\n\\sqrt{16} = 4\n$$\n\n$$\nAC(16) = \\dfrac{80}{4} = 20\n$$\n\n$$\nMC(16) = \\dfrac{40}{4} = 10\n$$\n\nThe figure is therefore not an independent source of numbers; it is the graph of these two closed forms, checked at one convenient abscissa.\n\nBrown at height $20$ and green at height $10$ match those formulas exactly — the figure and the algebra agree.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nFor square-root total cost the two curves are proportional for every $Q>0$:\n\n$$\nAC = \\dfrac{80}{\\sqrt{Q}}\n$$\n\n$$\nMC = \\dfrac{40}{\\sqrt{Q}}\n$$\n\n$$\n\\dfrac{MC}{AC} = \\dfrac{1}{2}\n$$\n\nBecause both schedules are proportional to $Q^{-1/2}$, their ratio is the constant $\\frac12$ everywhere — a hallmark of square-root total cost.\n\nSo $MC=\\dfrac{1}{2}AC$ holds throughout the figure, not only at a special output.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nFalling average and marginal cost do not make total cost fall. Marginal cost is still positive:\n\n$$\nC^{\\prime}(Q) = MC(Q) = \\dfrac{40}{\\sqrt{Q}}>0\n$$\n\nLearning can make each extra unit cheaper than the last (falling MC) while the running total $C(Q)$ still climbs; watch the sign of $C^{\\prime}$, not of $AC^{\\prime}$. For every $Q>0$, so $C$ itself is strictly increasing. The claim confuses falling per-unit schedules with a falling total — a classic learning-curve trap.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nThe ratio of total costs at doubled cumulative output is the square-root scale factor.\n\n$$\n\\dfrac{C(18)}{C(9)} = \\dfrac{80\\sqrt{18}}{80\\sqrt{9}} = \\dfrac{\\sqrt{18}}{3} = \\dfrac{3\\sqrt{2}}{3} = \\sqrt{2}\n$$\n\nUnder this technology, cost is homogeneous of degree $\\tfrac12$ in cumulative output, so a twofold scale-up of $Q$ multiplies $C$ by $2^{1/2}$.\n\nDoubling output from $9$ to $18$ multiplies total cost by $\\sqrt{2}$, not by $2$.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nDifferentiate average cost and read the sign near $Q=25$.\n\n$$\nAC(Q) = 80Q^{-\\frac{1}{2}}\n$$\n\n$$\nAC^{\\prime}(Q) = -40Q^{-\\frac{3}{2}}<0\n$$\n\nEven far out the learning curve, $AC^{\\prime}$ stays negative (though small); there is no flat stretch where a tiny increase in $Q$ would leave $AC$ unchanged. For every $Q>0$, including $Q=25$. A small increase in output near twenty-five releases therefore still lowers average cost — the learning curve has not flattened to zero slope.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "App-studio cost is again $C(Q)=80\\sqrt{Q}$ for $Q>0$, with figure curves\n\n$$\nAC(Q) = \\dfrac{80}{\\sqrt{Q}}\\quad(\\text{brown}),\\qquad MC(Q) = \\dfrac{40}{\\sqrt{Q}}\\quad(\\text{green})\n$$\n\nso $MC=\\dfrac{1}{2}AC$ at every $Q>0$. At $Q=16$,\n\n$$\nAC(16) = 20,\\qquad MC(16) = 10\n$$\n\nmatching the marked heights. Marginal cost stays positive, $C^{\\prime}(Q)=\\dfrac{40}{\\sqrt{Q}}>0$, so total cost is strictly increasing even while both AC and MC fall. Scaling gives $\\dfrac{C(18)}{C(9)}=\\sqrt{2}$, and $AC^{\\prime}(Q)=-40Q^{-\\frac{3}{2}}<0$, so a small increase in $Q$ near $Q=25$ still lowers average cost.",
+    "title_de_existing": "App-Studio: Lernkurven-SK/GK-Figur plus Formelcheck",
+    "context_de_existing": "App-Studio: $C(Q)=80\\sqrt{Q}$ für $Q>0$. Figur zeigt $AC$ (braun) und $MC$ (grün). Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Bei $Q=16$ beträgt die braune Höhe $20$ und die grüne $10$, passend zu $AC=\\dfrac{80}{\\sqrt{Q}}$ und $MC=\\dfrac{40}{\\sqrt{Q}}$.",
+      "$MC=\\dfrac12 AC$ bei jedem gezeigten $Q>0$.",
+      "Weil beide Kurven fallen, fallen die Gesamtkosten $C(Q)$.",
+      "Eine Verdopplung des kumulierten Outputs von $9$ auf $18$ multipliziert die Gesamtkosten mit $\\sqrt{2}$.",
+      "Eine kleine Erhöhung von $Q$ nahe $Q=25$ senkt die Stückkosten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen und Formeln stimmen.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$MC=\\frac12 AC$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$C'=MC>0$ — Gesamtkosten steigen trotz fallendem $AC$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$C(18)/C(9)=\\sqrt{2}$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nFallendes $AC$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$MC=\\frac12 AC$. Fallendes $AC$ heißt nicht fallendes $C$."
+  },
+  {
+    "case_id": "MATH 11.196",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Pop-up gallery: Newton quotient, tax, and elasticity stub",
+    "context_en": "A pop-up gallery's profit (hundreds of euros) is $P(x)=x^{2}-8x+25$ before a flat licence fee. Staffed hours are $x>0$. After the fee, profit is $P(x)-6$. Separately, ticket demand at price $p$ is $D(p)=40-p$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "The Newton quotient $\\dfrac{P(a+h)-P(a)}{h}$ simplifies to $2a+h-8$.",
+      "The licence fee changes $P^{\\prime}(x)$ at every $x$.",
+      "$x=4$ is a local minimum of gallery profit, fee or no fee.",
+      "Ticket revenue $R(p)=p(40-p)$ is maximised at $p=20$, where demand elasticity equals $-1$.",
+      "At $x=5$, pre-fee marginal profit equals $2$, so staffing one more hour raises profit by about $2$ hundred euros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nExpand the shifted profit, cancel $P(a)$, and divide by the increment $h$.\n\n$$\nP(a+h) = (a+h)^{2}-8(a+h)+25 = a^{2}+2ah+h^{2}-8a-8h+25\n$$\n\n$$\nP(a+h)-P(a) = 2ah+h^{2}-8h\n$$\n\n$$\n\\dfrac{P(a+h)-P(a)}{h} = 2a+h-8\n$$\n\nSending $h\\to 0$ recovers $P^{\\prime}(a)=2a-8$, but the claim asks only for the finite-difference simplification, which still carries the $+h$ term.\n\nThe $+h$ term is the finite-difference remainder; it disappears only in the derivative limit.\n\nThe Newton quotient simplifies to $2a+h-8$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nA flat licence fee subtracts the constant $6$ from profit. Constants vanish upon differentiation:\n\n$$\n\\dfrac{d}{dx}\\bigl(P(x)-6\\bigr) = P^{\\prime}(x)\n$$\n\nOnly a fee that depended on $x$ (a variable tax or hourly levy) would change $P^{\\prime}$; a flat licence is pure vertical shift.\n\nThe fee changes the profit level (shifts the graph vertically) but leaves the slope $P^{\\prime}$ untouched at every $x$. The trap is thinking a lump-sum fee tilts marginal profit.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nLocate the critical point of gallery profit from the first derivative.\n\n$$\nP^{\\prime}(x) = 2x-8 = 2(x-4)\n$$\n\nBecause $P^{\\prime\\prime}(x)=2>0$, the parabola opens upward, so the stationary point at $x=4$ can only be a minimum — fee or no fee.\n\nAt $x=4$ the derivative changes from negative to positive, so $x=4$ is a local minimum. Subtracting a constant fee does not alter $P^{\\prime}$, so the same minimum remains with or without the fee.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nTicket revenue is the usual downward-opening parabola in price.\n\n$$\nR(p) = p(40-p) = 40p-p^{2}\n$$\n\n$$\nR^{\\prime}(p) = 40-2p = 0\n$$\n\n$$\np = 20\n$$\n\nAt that price, demand is $D(20)=20$ and elasticity is\n\n$$\n\\varepsilon = \\dfrac{D^{\\prime}p}{D} = \\dfrac{-p}{40-p} = \\dfrac{-20}{20} = -1\n$$\n\nFor linear demand $D=40-p$, unit elasticity and the revenue FOC always coincide; here both pick out $p=20$.\n\nRevenue peaks at unit elasticity.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nPre-fee marginal profit is simply $P^{\\prime}$. Evaluate at five staffed hours:\n\n$$\nP^{\\prime}(5) = 2\\cdot 5-8 = 10-8 = 2\n$$\n\nThat reading is the practical content of the derivative: a one-hour staffing increment near $x=5$ changes profit by about $P^{\\prime}(5)$ hundred euros.\n\nStaffing one more hour near $x=5$ therefore raises profit by about $2$ hundred euros — the Newton-quotient / derivative reading of a small increment.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Pre-fee gallery profit is\n\n$$P(x)=x^{2}-8x+25\\qquad(x>0)$$\n\nThe Newton quotient simplifies to $\\dfrac{P(a+h)-P(a)}{h}=2a+h-8$, so\n\n$$\nP^{\\prime}(x) = 2x-8 = 2(x-4)\n$$\n\nwith a $-$ to $+$ sign change at $x=4$: a local minimum. A flat licence fee subtracts the constant $6$, which vanishes upon differentiation, so $\\dfrac{d}{dx}(P(x)-6)=P^{\\prime}(x)$ and the same minimum remains with or without the fee. At $x=5$, $P^{\\prime}(5)=2$.\n\nSeparately, ticket revenue $R(p)=p(40-p)$ has $R^{\\prime}(p)=40-2p=0\\implies p=20$, and at that price $\\varepsilon=\\dfrac{-p}{40-p}=-1$.",
+    "title_de_existing": "Pop-up-Galerie: Newton-Quotient, Steuer und Elastizitätsansatz",
+    "context_de_existing": "Pop-up-Galerie: Gewinn $P(x)=x^{2}-8x+25$ vor Lizenzgebühr; nachher $P(x)-6$. Ticketnachfrage $D(p)=40-p$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Newton-Quotient $\\dfrac{P(a+h)-P(a)}{h}$ vereinfacht sich zu $2a+h-8$.",
+      "Die Lizenzgebühr ändert $P'(x)$ bei jedem $x$.",
+      "$x=4$ ist ein lokales Minimum des Galeriegewinns, mit oder ohne Gebühr.",
+      "Der Ticketerlös $R(p)=p(40-p)$ wird bei $p=20$ maximiert, wo die Nachfrageelastizität $-1$ gleicht.",
+      "Bei $x=5$ gleicht der Vor-Gebühr-Grenzgewinn $2$, also erhöht eine weitere Stunde den Gewinn um etwa $2$ Hunderte Euro."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nExpandieren liefert $2a+h-8$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nKonstante Gebühr ändert $P$, nicht $P'$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$P'=2(x-4)$, Wechsel $-\\to +$ bei $4$ — lokales Min.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nErlöspeak bei $p=20$ mit $|\\varepsilon|=1$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$P'(5)=2$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Newton-Quotient $2a+h-8$; lokales Min bei $x=4$. Konstante Gebühr ändert $P'$ nicht."
+  },
+  {
+    "case_id": "MATH 11.197",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Foundry: MC and MC′ figure for inflection of total cost",
+    "context_en": "A foundry plots marginal cost (brown) and the derivative of marginal cost (green). Total cost is $C$, so brown is $C^{\\prime}$ and green is $C^{\\prime\\prime}$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Total cost has an inflection near $Q=4$, where green crosses zero and brown has its minimum.",
+      "On $(0,4)$, green is negative, so marginal cost is decreasing and total cost is concave down.",
+      "Average cost is minimised exactly where brown is minimised.",
+      "At $Q=8$, green is positive and about height $4$, matching a rising MC.",
+      "Because brown stays positive on the window, total cost is increasing throughout."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBrown is $C^{\\prime}$ (marginal cost) and green is $C^{\\prime\\prime}$. An inflection of total cost is a zero of $C^{\\prime\\prime}$ with a sign change — equivalently a stationary point of MC where MC stops falling and starts rising.\n\nGreen crosses zero near $Q=4$, and that is where brown has its minimum. So total cost has an inflection there: concavity of $C$ flips as MC bottoms out.\n\n$$\nQ = 4\n$$\n\nSo the statement is True.\n",
+      "**B.** → True\n\nOn $(0,4)$ green lies below the axis, so $C^{\\prime\\prime}<0$.\n\nPast $Q=4$, green turns positive, so the same logic reverses: MC rises and $C$ becomes concave up.\n\nBoth readings — falling MC and concave-down $C$ — are the same second-derivative fact in two vocabularies.\n\nNegative $C^{\\prime\\prime}$ means two things at once: marginal cost $C^{\\prime}$ (brown) is decreasing, and total cost $C$ is concave down on that interval. Both readings follow from the same sign of green.\n\n$$\nQ = 4\n$$\n\nSo the statement is True.\n",
+      "**C.** → False\n\nAverage cost is minimised where $AC^{\\prime}=0$, which rearranges (via the quotient rule) to the equality $MC=AC$.\n\nOne can have a falling-then-rising MC (an inflection of $C$) while $AC$ continues to fall until it later meets the rising MC from above.\n\nA minimum of marginal cost alone — the trough of brown — is the different condition $C^{\\prime\\prime}=0$. Those two abscissae need not coincide; confusing a trough of MC with a trough of AC is the trap.\n\n$$\nAC^{\\prime} = 0\n$$\n\n$$\nMC = AC\n$$\n\n$$\nC^{\\prime\\prime} = 0\n$$\n\nSo the statement is False.\n",
+      "**D.** → True\n\nAt $Q=8$ the figure shows green positive and about height $4$.\n\nIn other words, green is the slope of brown; a positive green reading at $Q=8$ is precisely the statement that brown is climbing there.\n\nPositive $C^{\\prime\\prime}$ means brown (marginal cost) has positive slope there — MC is rising. Height about $4$ is the rate at which MC is rising, matching the claimed reading of a rising MC.\n\n$$\nQ = 8\n$$\n\nSo the statement is True.\n",
+      "**E.** → True\n\nBrown is $C^{\\prime}$. Wherever brown stays positive, total cost is strictly increasing: each extra unit still adds a positive amount to $C$.\n\nAn inflection or a trough of MC never by itself makes total cost fall — only a negative stretch of brown would do that, and none appears here.\n\nOn the plotted window brown never dips below the axis, so $C^{\\prime}>0$ throughout and $C$ rises on the whole interval.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "The figure plots brown $=C^{\\prime}$ (marginal cost) and green $=C^{\\prime\\prime}$ (the derivative of MC). By definition $C^{\\prime\\prime}=(C^{\\prime})^{\\prime}$, so an inflection of total cost is a zero of green with a sign change — equivalently a trough of brown.\n\nGreen crosses zero near $Q=4$, where brown has its minimum, so $C$ has an inflection there. On $(0,4)$ green is negative, so MC is decreasing and $C$ is concave down. At $Q=8$, green is positive and about height $4$, matching a rising MC.\n\nBrown stays positive on the whole window, so $C^{\\prime}>0$ and $C$ is strictly increasing throughout. A minimum of average cost is the different condition $MC=AC$; it need not coincide with the trough of brown where $C^{\\prime\\prime}=0$.",
+    "title_de_existing": "Gießerei: GK- und GK′-Figur für Wendepunkt der Gesamtkosten",
+    "context_de_existing": "Gießerei: Grenzkosten (braun) und Ableitung der Grenzkosten (grün). Braun $=C'$, Grün $=C''$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Die Gesamtkosten haben nahe $Q=4$ einen Wendepunkt, wo Grün null kreuzt und Braun sein Minimum hat.",
+      "Auf $(0,4)$ ist Grün negativ, also fallen die Grenzkosten und die Gesamtkosten sind konkav nach unten.",
+      "Die Stückkosten werden genau dort minimiert, wo Braun minimiert wird.",
+      "Bei $Q=8$ ist Grün positiv und etwa Höhe $4$, passend zu steigendem MC.",
+      "Weil Braun im Fenster positiv bleibt, steigen die Gesamtkosten durchgängig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C''=0$ am MC-Min → Wendepunkt von $C$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $C''$ → fallendes MC, konkaves $C$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$AC$-Min wo $AC=MC$, nicht wo $MC$ minimal.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAblesen bei $Q=8$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$C'>0$ → steigendes $C$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Wendepunkt von $C$ am MC-Minimum. $AC$-Min $\\neq$ MC-Min."
+  },
+  {
+    "case_id": "MATH 11.198",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Design duo: budget reduction then read U′ from the figure",
+    "context_en": "A design duo has budget $2x+4y=40$ and output $U=xy$. After eliminating $y$ one obtains a single-variable $U(x)$ on $(0,20)$. The figure shows $U^{\\prime}(x)$ for that reduced problem. Which of the following statements is/are correct?",
+    "statements_en": [
+      "The reduced optimum is at $x=10$, where the figure's $U^{\\prime}$ crosses zero from above.",
+      "At that optimum, $y=5$.",
+      "On $(0,10)$, $U^{\\prime}>0$, so shifting a little budget from typesetting toward illustration raises output.",
+      "The figure shows $U^{\\prime}(4)=6$, matching $U(x)=10x-\\dfrac12 x^{2}$.",
+      "Spending everything on $x$ ($y=0$) lands at the right endpoint where $U^{\\prime}$ is most negative, hence maximises $U$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAfter eliminating $y$ from the budget $2x+4y=40$, the reduced output $U(x)$ has derivative plotted in the figure. A maximum of reduced $U$ is a zero of $U^{\\prime}$ with a $+$ to $-$ sign change.\n\nAlgebraically the same critical point solves\n\n$$\nU^{\\prime}(x) = 10-x = 0 \\implies x = 10\n$$\n\n, so $x=10$, matching the figure's zero crossing.\n\nThat crossing from above sits at $x=10$: left of $10$, $U^{\\prime}>0$ so increasing $x$ raises $U$; right of $10$, $U^{\\prime}<0$ so one should cut $x$.\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nSolve the budget for the complementary input and evaluate at the optimum $x=10$.\n\n$$\n4y = 40-2x\n$$\n\n$$\ny = 10-\\dfrac{1}{2}x\n$$\n\n$$\ny = 10-\\dfrac{1}{2}\\cdot 10 = 10-5 = 5\n$$\n\nThe pair $(x,y)=(10,5)$ spends the whole budget:\n\n$$\n2\\cdot 10+4\\cdot 5 = 20+20\n$$\n\n$$\n20 + 20 = 40\n$$\n\n, so the optimum lies on the constraint as required.\n\nAny other $y$ at $x=10$ would violate the budget; the constraint pins down the complementary input uniquely.\n\nThe matching typesetting intensity is $y=5$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nOn $(0,10)$ the figure shows $U^{\\prime}>0$. Increasing $x$ along the budget (and cutting $y$ accordingly) therefore raises the product $U=xy$.\n\nPast $x=10$, $U^{\\prime}$ turns negative, so the same logic would reverse: further shifts toward illustration would then lower output.\n\nIn the story, that is the same as shifting a little budget from typesetting toward illustration — moving right along the budget line while $U^{\\prime}$ is still positive.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nThe reduced objective is the quadratic obtained by substituting $y=10-\\dfrac{1}{2}x$ into $U=xy$.\n\n$$\nU(x) = x\\left(10-\\dfrac{1}{2}x\\right) = 10x-\\dfrac{1}{2}x^{2}\n$$\n\n$$\nU^{\\prime}(x) = 10-x\n$$\n\n$$\nU^{\\prime}(4) = 10-4\n$$\n\n$$\n10 - 4 = 6\n$$\n\n$$\nU^{\\prime}(4) = 6\n$$\n\nThe figure is therefore the graph of the linear derivative $10-x$; height $6$ at $x=4$ is a direct plug-in check, not an independent datum.\n\nHeight $6$ at $x=4$ matches the figure, confirming the reduced formula.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nSpending everything on $x$ forces $y=0$ at the right endpoint $x=20$. The product utility then collapses:\n\n$$\nU = x\\cdot 0 = 0\n$$\n\nA maximum of $U$ cannot occur where $U^{\\prime}$ is most negative; that region is where one should move away from the endpoint, back toward $x=10$.\n\nThat corner is the worst product value, not a maximum. The negative $U^{\\prime}$ near the endpoint merely says one should move left, back toward the interior mix $x=10$.\n\n$$\ny = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Budget $2x+4y=40$ and product $U=xy$ reduce, via $y=10-\\dfrac{1}{2}x$, to the single-variable problem on $(0,20)$:\n\n$$U(x)=10x-\\dfrac{1}{2}x^{2}$$\n\n$$U^{\\prime}(x)=10-x$$\n\nThe figure plots that derivative: $U^{\\prime}$ is positive on $(0,10)$, crosses zero from above at $x=10$, and is negative on $(10,20)$. So the reduced optimum is at $x=10$, where $y=10-\\dfrac{1}{2}\\cdot 10=5$, and $U^{\\prime}(4)=6$ matches the marked height. Spending everything on $x$ forces $y=0$ at the right endpoint $x=20$, collapsing $U=0$ — the worst product value, not a maximum.",
+    "title_de_existing": "Design-Duo: Budgetkürzung, dann U′ aus der Figur lesen",
+    "context_de_existing": "Design-Duo: Budget $2x+4y=40$, Output $U=xy$. Nach Eliminieren von $y$ erhält man $U(x)$ auf $(0,20)$. Die Figur zeigt $U'(x)$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Das reduzierte Optimum liegt bei $x=10$, wo $U'$ von oben null kreuzt.",
+      "An diesem Optimum ist $y=5$.",
+      "Auf $(0,10)$ gilt $U'>0$, also erhöht eine kleine Budgetverschiebung vom Satz zur Illustration den Output.",
+      "Die Figur zeigt $U'(4)=6$, passend zu $U(x)=10x-\\dfrac12 x^{2}$.",
+      "Alles auf $x$ zu verwenden ($y=0$) landet am rechten Endpunkt, wo $U'$ am negativsten ist, und maximiert daher $U$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$U'=10-x=0$ bei $x=10$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$y=5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nPositives $U'$ → mehr $x$ erhöht $U$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$U'(4)=6$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAm Endpunkt $U=0$ — Minimum, nicht Maximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Optimum bei $x=10$, $y=5$. Endpunkt $y=0$ maximiert nicht."
+  },
+  {
+    "case_id": "MATH 11.199",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Warehouse: EOQ with a spoilage penalty overlay",
+    "context_en": "Annual ordering-plus-holding cost is $TC(Q)=\\dfrac{20000}{Q}+2Q$. Separately, a spoilage index along a delivery hour $t\\in[0,4]$ is $S(t)=t^{3}-6t^{2}+9t$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "The EOQ that minimises $TC$ is $Q=100$.",
+      "$TC^{\\prime\\prime}(Q)>0$ for all $Q>0$, so that critical point is a minimum.",
+      "$S^{\\prime}(t)=3(t-1)(t-3)$, so spoilage has a local max at $t=1$ and a local min at $t=3$.",
+      "On $[0,4]$, the global maximum of $S$ is uniquely attained at $t=1$.",
+      "At the EOQ, annual holding cost $\\dfrac{hQ}{2}$ with $h=4$ equals annual ordering cost $\\dfrac{KD}{Q}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSet the derivative of total inventory cost to zero and solve for the economic order quantity.\n\n$$\nTC^{\\prime}(Q) = -\\dfrac{20000}{Q^{2}}+2 = 0\n$$\n\n$$\nQ^{2} = \\dfrac{20000}{2} = 10000\n$$\n\n$$\nQ = 100\n$$\n\nThis is the usual EOQ balance: the derivative of $KD/Q$ cancels the derivative of $hQ/2$ when $Q=\\sqrt{KD/(h/2)}=\\sqrt{10000}$.\n\n(taking the positive root). That balances the falling ordering term against the rising holding term.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nDifferentiate once more to classify the critical point.\n\n$$\nTC^{\\prime\\prime}(Q) = \\dfrac{40000}{Q^{3}}\n$$\n\nConvexity of $TC$ on $(0,\\infty)$ means there is only one critical point and it must be the global minimiser of annual inventory cost.\n\nFor every $Q>0$ this second derivative is strictly positive, so $TC$ is convex on the positive domain and the critical point $Q=100$ is a minimum.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nDifferentiate the spoilage index and factor the quadratic.\n\n$$\nS^{\\prime}(t) = 3t^{2}-12t+9 = 3(t^{2}-4t+3) = 3(t-1)(t-3)\n$$\n\nThe spoilage overlay is independent of the EOQ calculation; it is a separate cubic on delivery hours, sharing only the chapter's differentiation toolkit.\n\nThe sign chart of that product gives a local maximum at $t=1$ ($+$ to $-$) and a local minimum at $t=3$ ($-$ to $+$), exactly as claimed.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nCompare spoilage levels at the critical points and at the endpoints of $[0,4]$.\n\n$$\nS(1) = 1-6+9\n$$\n\n$$\n1 - 6 = -5\n$$\n\n$$\n-5 + 9 = 4\n$$\n\n$$\nS(1) = 4\n$$\n\n$$\nS(4) = 64-96+36 = 4\n$$\n\nOn a closed interval the global maximum can sit at an endpoint even when an interior local max exists; here $t=4$ ties the local peak at height $4$.\n\nBoth abscissae attain the same height $4$, so the global maximum on the closed interval is not uniquely attained at $t=1$ — the right endpoint ties the local max.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nAt the EOQ the two cost pieces balance. With holding rate $h=4$, the annual holding cost is $\\dfrac{hQ}{2}=2Q$, matching the rising term in $TC$.\n\n$$\n\\dfrac{h\\cdot 100}{2} = 2\\cdot 100\n$$\n\n$$\n2\\times 100 = 200\n$$\n\n$$\n\\dfrac{20000}{100} = 200\n$$\n\nThat balance is why the EOQ formula equates the two cost pieces: at the minimum of their sum, their derivatives cancel and their levels match under this linear-holding setup.\n\nOrdering cost equals holding cost at $Q=100$ — the classic EOQ balance.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Annual inventory cost and the separate spoilage index are\n\n$$TC(Q)=\\dfrac{20000}{Q}+2Q$$\n\n$$S(t)=t^{3}-6t^{2}+9t\\qquad(t\\in[0,4])$$\n\nFor the EOQ,\n\n$$\nTC^{\\prime}(Q) = -\\dfrac{20000}{Q^{2}}+2 = 0\\implies Q = 100\n$$\n\n$$TC^{\\prime\\prime}(Q)=\\dfrac{40000}{Q^{3}}>0\\qquad(Q>0)$$\n\nso $Q=100$ is a minimum. At that EOQ, with $h=4$, holding cost $\\dfrac{hQ}{2}=2Q$ equals ordering cost $\\dfrac{20000}{Q}$, both equal to $200$.\n\nSeparately, $S^{\\prime}(t)=3(t-1)(t-3)$ gives a local max at $t=1$ and a local min at $t=3$, but $S(1)=S(4)=4$, so the global maximum on $[0,4]$ is not unique to $t=1$.",
+    "title_de_existing": "Lager: EOQ mit Verderbsstrafen-Overlay",
+    "context_de_existing": "Jahres-Bestell-plus-Lagerkosten $TC(Q)=\\dfrac{20000}{Q}+2Q$. Separat Verderbsindex $S(t)=t^{3}-6t^{2}+9t$ auf $t\\in[0,4]$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Die EOQ, die $TC$ minimiert, ist $Q=100$.",
+      "$TC''(Q)>0$ für alle $Q>0$, also ist dieser kritische Punkt ein Minimum.",
+      "$S'(t)=3(t-1)(t-3)$, also hat der Verderb bei $t=1$ ein lokales Max und bei $t=3$ ein lokales Min.",
+      "Auf $[0,4]$ wird das globale Maximum von $S$ eindeutig bei $t=1$ angenommen.",
+      "Am EOQ gleichen die jährlichen Lagerkosten $\\dfrac{hQ}{2}$ mit $h=4$ den jährlichen Bestellkosten $\\dfrac{KD}{Q}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$TC'=0$ bei $Q=100$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$TC''>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVorzeichenwechsel bestätigen Max/Min.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$S(1)=S(4)=4$ — nicht eindeutig bei $t=1$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAm EOQ gleichen sich die beiden Kostenkomponenten.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "EOQ $Q=100$. Verderb: lokales Max bei $1$, Min bei $3$; global auch $S(4)=4$."
+  },
+  {
+    "case_id": "MATH 11.200",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Brewery: read P′ and P″, infer P without drawing P",
+    "context_en": "A brewery shows marginal profit $P^{\\prime}$ (brown) and $P^{\\prime\\prime}$ (green) only — the level $P$ is omitted. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Profit has a local minimum at $Q=2$ and a local maximum at $Q=8$.",
+      "Profit is concave down on $(5,10)$ because green is negative there.",
+      "The steepest climb of profit occurs near $Q=5$, where brown peaks and green crosses zero.",
+      "$Q=5$ maximises profit because that is where $P^{\\prime\\prime}=0$.",
+      "On $(2,8)$, brown is positive, so profit is increasing despite green changing sign at $5$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBrown is $P^{\\prime}$. Local extrema of profit sit where brown crosses the axis and changes sign — you do not need the omitted level curve $P$ itself.\n\nAt $Q=2$, brown changes from negative to positive — a local minimum of $P$. At $Q=8$, brown changes from positive to negative — a local maximum of $P$.\n\nGreen is not needed for this letter: the first-derivative sign changes of brown alone classify the local min at $2$ and the local max at $8$.\n\nThose are exactly the turns named in the claim.\n\n$$\nQ = 2\n$$\n\n$$\nQ = 8\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nGreen is $P^{\\prime\\prime}$, the concavity meter for profit. Wherever green is negative, $P^{\\prime\\prime}<0$ and the profit level $P$ is concave down.\n\nConcavity can change while profit is still rising or falling; green's sign is about bend, brown's sign is about ascent or descent.\n\nOn $(5,10)$ green lies below the axis, so profit is concave down there. Concavity is about the bend of $P$, not about whether $P$ is rising or falling.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe steepest climb of profit is the peak of $P^{\\prime}$ — the highest point of brown — where the slope of $P$ is largest.\n\nDo not confuse this steepest-climb abscissa with a maximum of $P$: at $Q=5$ one has $P^{\\prime}>0$, so profit is still increasing through the inflection.\n\nThat peak lines up with the zero of green ($P^{\\prime\\prime}=0$) near $Q=5$: an inflection of $P$ at which the climb is steepest.\n\n$$\nQ = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nA zero of $P^{\\prime\\prime}$ marks an inflection of profit (a turn of the slope), not a maximum of the level $P$.\n\nThe true profit maximum is the later zero of brown at $Q=8$, where the slope of profit itself crosses from uphill to downhill.\n\nProfit is maximised where $P^{\\prime}=0$ with a $+$ to $-$ sign change, which occurs at $Q=8$, not at the inflection $Q=5$. Treating $P^{\\prime\\prime}=0$ as a profit maximum is the wrong first-order condition — a classic trap.\n\n$$\nQ = 5\n$$\n\n$$\nP^{\\prime\\prime} = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nMonotonicity of profit is governed by the sign of $P^{\\prime}$ alone. On $(2,8)$ brown stays positive, so profit is strictly increasing on that interval.\n\nIn particular, between the local min at $2$ and the local max at $8$, profit climbs through the inflection at $5$ without turning back.\n\nGreen changing sign at $Q=5$ only flips concavity; an inflection inside an increasing stretch is entirely allowed — $P$ can bend while still climbing.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Only $P^{\\prime}$ (brown) and $P^{\\prime\\prime}$ (green) are drawn. Turns of profit sit where brown crosses the axis with a sign change.\n\nAt $Q=2$ brown flips $-$ to $+$ (local minimum of $P$), and at $Q=8$ brown flips $+$ to $-$ (local maximum of $P$).\n\nGreen is the concavity meter: wherever green is negative, $P^{\\prime\\prime}<0$ and $P$ is concave down. On $(5,10)$ that holds. Near $Q=5$, brown peaks and green crosses zero — the steepest climb of profit, an inflection of $P$, not a maximum of the level.\n\nOn $(2,8)$ brown stays positive, so profit is strictly increasing despite the concavity flip at $Q=5$. Treating $P^{\\prime\\prime}=0$ as a profit maximum confuses an inflection with the true FOC $P^{\\prime}=0$ at $Q=8$.",
+    "title_de_existing": "Brauerei: P′ und P″ lesen, P ohne Zeichnung folgern",
+    "context_de_existing": "Brauerei zeigt nur Grenzgewinn $P'$ (braun) und $P''$ (grün) — Niveau $P$ fehlt. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Gewinn hat bei $Q=2$ ein lokales Minimum und bei $Q=8$ ein lokales Maximum.",
+      "Der Gewinn ist auf $(5,10)$ konkav nach unten, weil Grün dort negativ ist.",
+      "Der steilste Anstieg des Gewinns liegt nahe $Q=5$, wo Braun peakt und Grün null kreuzt.",
+      "$Q=5$ maximiert den Gewinn, weil dort $P''=0$.",
+      "Auf $(2,8)$ ist Braun positiv, also steigt der Gewinn trotz Vorzeichenwechsel von Grün bei $5$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVorzeichenwechsel von $P'$ bei $2$ und $8$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $P''$ → konkav nach unten.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nPeak von $P'$ = steilste Steigung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$P''=0$ ist Wendepunkt von $P'$, kein Gewinnmax.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nPositives $P'$ → steigendes $P$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Lokales Min bei $Q=2$, Max bei $Q=8$. $P''=0$ maximiert nicht den Gewinn."
+  },
+  {
+    "case_id": "MATH 11.201",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Podcast ads: chain-rule revenue versus linear spend",
+    "context_en": "Listenership is $Q(a)=10a^{\\frac{3}{4}}$ for advertising spend $a>0$. Each listener yields $8$ euros, so $R(a)=8Q(a)$. Cost is $C(a)=a+25$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Marginal revenue of advertising is $R^{\\prime}(a)=60\\,a^{-\\frac{1}{4}}$.",
+      "Profit is maximised when $R^{\\prime}(a)=1$, and that spend is $a=60^{2}$.",
+      "At $a=16$, $R^{\\prime}(16)=30>1$, so a little more advertising still raises profit.",
+      "Because $Q^{\\prime\\prime}(a)<0$, listenership is concave in $a$, but profit may still have an interior maximum.",
+      "Doubling $a$ doubles $Q$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nChain-rule marginal revenue of advertising is euros per listener times listeners per euro of spend.\n\n$$\nQ(a) = 10a^{\\frac{3}{4}}\n$$\n\n$$\nQ^{\\prime}(a) = 10\\cdot\\dfrac{3}{4}a^{-\\frac{1}{4}} = \\dfrac{15}{2}a^{-\\frac{1}{4}}\n$$\n\n$$\nR^{\\prime}(a) = 8Q^{\\prime}(a) = 8\\cdot\\dfrac{15}{2}a^{-\\frac{1}{4}} = 60\\,a^{-\\frac{1}{4}}\n$$\n\nAs spend $a$ grows, $a^{-1/4}$ falls, so marginal revenue of advertising diminishes — each extra euro buys fewer additional listeners.\n\nThat is the claimed marginal revenue of advertising spend. Matching the expression to the claim.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nAn interior profit maximum sets marginal revenue of advertising equal to the marginal cost of one more euro spent, which is $1$.\n\n$$\n60\\,a^{-\\frac{1}{4}} = 1\n$$\n\n$$\na^{\\frac{1}{4}} = 60\n$$\n\n$$\na = 60^{4}\n$$\n\nRaising both sides to the fourth power is required because the exponent on $a$ in $R^{\\prime}$ is $-1/4$; stopping at a square is an algebra slip.\n\nThe claim writes $a=60^{2}$, which understates the power — squaring instead of raising to the fourth.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nEvaluate marginal revenue at the named spend and compare with marginal cost $1$.\n\n$$\n16^{\\frac{1}{4}} = 2\n$$\n\n$$\na^{-\\frac{1}{4}} = \\dfrac{1}{2}\n$$\n\n$$\nR^{\\prime}(16) = 60\\cdot\\dfrac{1}{2} = 30>1\n$$\n\nThe profit derivative is $\\pi^{\\prime}(a)=R^{\\prime}(a)-1$, so $R^{\\prime}(16)-1=29>0$ confirms that profit is still rising at that spend.\n\nSo at $a=16$, an extra euro of advertising still adds more to revenue than to cost, and a little more advertising raises profit.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nConcave listenership means $Q^{\\prime\\prime}<0$, so $R^{\\prime}=8Q^{\\prime}$ is strictly decreasing. The difference $R^{\\prime}(a)-1$ can still cross from positive to negative exactly once.\n\nThat single sign change of $\\pi^{\\prime}$ is precisely an interior profit maximum. Concavity of $Q$ does not forbid an interior max of profit — it only makes $R^{\\prime}$ downward-sloping.\n\n$$\nR^{\\prime} = 8Q^{\\prime}\n$$\n\nSo the statement is True.\n",
+      "**E.** → False\n\nListenership scales with the power $\\dfrac{3}{4}$, not linearly.\n\n$$\n\\dfrac{Q(2a)}{Q(a)} = \\dfrac{10(2a)^{\\frac{3}{4}}}{10a^{\\frac{3}{4}}} = 2^{\\frac{3}{4}}\\neq 2\n$$\n\nDiminishing returns to advertising are built into the exponent $\\tfrac34<1$; linear scaling of listenership would require the exponent $1$.\n\nDoubling spend multiplies listenership by $2^{\\frac{3}{4}}\\approx 1.68$, not by $2$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Listenership $Q(a)=10a^{\\frac{3}{4}}$ yields revenue $R(a)=8Q(a)$ and cost $C(a)=a+25$. Chain-rule marginal revenue of advertising is\n\n$$Q^{\\prime}(a)=\\dfrac{15}{2}a^{-\\frac{1}{4}}$$\n\n$$R^{\\prime}(a)=60\\,a^{-\\frac{1}{4}}$$\n\nAn interior profit maximum sets $R^{\\prime}(a)=1$: $60\\,a^{-\\frac{1}{4}}=1\\implies a=60^{4}$ (not $60^{2}$). At $a=16$, $R^{\\prime}(16)=30>1$, so a little more advertising still raises profit. Since $Q^{\\prime\\prime}<0$, listenership is concave and $R^{\\prime}$ is decreasing, but $R^{\\prime}-1$ can still cross zero once — an interior profit max remains possible. Scaling fails to be linear: $\\dfrac{Q(2a)}{Q(a)}=2^{\\frac{3}{4}}\\neq 2$.",
+    "title_de_existing": "Podcast-Werbung: Kettenregel-Erlös versus lineare Ausgaben",
+    "context_de_existing": "Zuhörerschaft $Q(a)=10a^{\\frac{3}{4}}$ für Werbeausgaben $a>0$. Je Zuhörer $8$ Euro, also $R(a)=8Q(a)$. Kosten $C(a)=a+25$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Grenzerlös der Werbung ist $R'(a)=60\\,a^{-\\frac{1}{4}}$.",
+      "Der Gewinn wird maximiert, wenn $R'(a)=1$, und diese Ausgabe ist $a=60^{2}$.",
+      "Bei $a=16$ gilt $R'(16)=30>1$, also erhöht etwas mehr Werbung noch den Gewinn.",
+      "Weil $Q''(a)<0$, ist die Zuhörerschaft konkav in $a$, aber der Gewinn kann trotzdem ein inneres Maximum haben.",
+      "Eine Verdopplung von $a$ verdoppelt $Q$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKettenregel: $R'=8\\cdot\\frac{15}{2}a^{-1/4}=60 a^{-1/4}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$60 a^{-1/4}=1\\Rightarrow a=60^4$, nicht $60^2$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$R'(16)=60/2=30>1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKonkaves $Q$ verhindert kein Gewinnmaximum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$Q$ skaliert mit $a^{3/4}$, nicht linear.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$R'=60 a^{-1/4}$. Optimum bei $R'=1$ liefert $a=60^4$, nicht $60^2$."
+  },
+  {
+    "case_id": "MATH 11.202",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Club: inverse-demand figure, membership fee, and MC",
+    "context_en": "A climbing club faces inverse demand $p(Q)$ as in the figure. Variable cost is $C(Q)=4Q$, and members also pay a fixed membership fee $F=50$ collected by the club. Which of the following statements is/are correct?",
+    "statements_en": [
+      "At $Q=20$, variable margin $pQ-C(Q)$ equals $150$.",
+      "Marginal revenue is $MR=20-Q$, so the quantity that maximises profit solves $20-Q=4$.",
+      "The membership fee $F$ changes the profit-maximising $Q$.",
+      "At that optimum $Q=16$, price is $p=12$.",
+      "Price elasticity at $Q=20$ equals $-1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nRead price at $Q=20$ from the inverse-demand figure and form the variable margin carefully.\n\nAt $Q=20$ one has\n\n$$\np = 20-\\dfrac{1}{2}\\cdot 20\n$$\n\n$$\np = 10\n$$\n\n, so\n\n$$\npQ-C(Q) = 10\\cdot 20-4\\cdot 20 = 200-80 = 120\n$$\n\nThe membership fee $F$ is collected separately and does not enter the variable margin $pQ-C(Q)$; including it would be a different accounting object.\n\nThe claim asserts $150$, which overshoots the true margin $120$.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe figure's inverse demand is the line $p=20-\\dfrac{1}{2}Q$, so revenue and its derivative are\n\n$$\nR(Q) = \\left(20-\\dfrac{1}{2}Q\\right)Q = 20Q-\\dfrac{1}{2}Q^{2}\n$$\n\n$$\nMR = R^{\\prime}(Q) = 20-Q\n$$\n\nProfit maximisation sets $MR=MC=4$:\n\n$$\n20-Q = 4\n$$\n\nSolving that FOC gives\n\n$$\nQ = 16\n$$\n\n; the letter only needs the displayed equation $20-Q=4$, which already encodes $MR=MC$, which is exactly the claimed first-order condition.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nThe membership fee $F=50$ is a lump-sum constant collected by the club. Differentiating with respect to $Q$ kills it:\n\n$$\n\\pi(Q) = R(Q)-C(Q)+F\n$$\n\n$$\n\\pi^{\\prime}(Q) = MR-MC\n$$\n\nOnly a fee that varied with $Q$ (a per-member levy in the variable-cost schedule) would shift the $MR=MC$ crossing.\n\nThe fee shifts the profit level but leaves the $MR=MC$ condition — and therefore the optimal $Q$ — unchanged.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nSolve the first-order condition from B, then read price from inverse demand.\n\n$$\n20-Q = 4\n$$\n\n$$\nQ = 16\n$$\n\n$$\np = 20-\\dfrac{1}{2}\\cdot 16 = 20-8 = 12\n$$\n\nCheck: at $Q=16$,\n\n$$\nMR = 20-16\n$$\n\n$$\n20 - 16 = 4\n$$\n\n$$\nMR = 4\n$$\n\n$$\nMR = MC\n$$\n\n, and inverse demand returns $p=12$, so both the FOC and the price reading hold.\n\nTogether, $Q=16$ and $p=12$ are the profit-maximising membership quantity and the price read from inverse demand.\n\nAt the optimum, price is $12$.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nInvert demand to $Q=40-2p$ and evaluate point elasticity at $Q=20$ (where $p=10$).\n\n$$\n\\varepsilon = \\dfrac{-2p}{Q} = \\dfrac{-2\\cdot 10}{20} = -1\n$$\n\nFor this linear demand, $MR=0$ at $Q=20$ as well ($20-Q=0$), so unit elasticity and the revenue peak again coincide.\n\nSo the elasticity claim is another reading of the same revenue-peak geometry already visible in $MR$.\n\nUnit elasticity holds at that quantity — which is also where $MR=0$ for this linear demand.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "The figure's inverse demand is the line $p=20-\\dfrac{1}{2}Q$, so\n\n$$R(Q)=20Q-\\dfrac{1}{2}Q^{2}$$\n\n$$MR=20-Q$$\n\nVariable cost $C(Q)=4Q$ has $MC=4$. Profit maximisation (fee or no fee) solves $20-Q=4\\implies Q=16$, and $p=20-\\dfrac{1}{2}\\cdot 16=12$.\n\nThe lump-sum membership fee $F=50$ shifts the profit level but vanishes in $\\pi^{\\prime}=MR-MC$, so it does not move optimal $Q$. At $Q=20$ one has $p=10$, so the variable margin is $pQ-C(Q)=200-80=120$ (not $150$). Inverting demand, $Q=40-2p$, and at $Q=20$ ($p=10$) one has $\\varepsilon=\\dfrac{-2p}{Q}=-1$.",
+    "title_de_existing": "Club: inverse Nachfragefigur, Mitgliedsbeitrag und GK",
+    "context_de_existing": "Kletterclub: inverse Nachfrage $p(Q)$ in der Figur. Variable Kosten $C(Q)=4Q$, Mitgliedsgebühr $F=50$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Bei $Q=20$ gleicht die variable Marge $pQ-C(Q)$ dem Wert $150$.",
+      "Der Grenzerlös ist $MR=20-Q$, also löst die gewinnmaximierende Menge $20-Q=4$.",
+      "Die Mitgliedsgebühr $F$ ändert den gewinnmaximierenden $Q$.",
+      "Am Optimum $Q=16$ beträgt der Preis $p=12$.",
+      "Die Preiselastizität bei $Q=20$ gleicht $-1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nBei $Q=20$: $p=10$, Marge $200-80=120\\neq 150$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\n$MR=MC\\Rightarrow 20-Q=4\\Rightarrow Q=16$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nFixe Gebühr ändert $P$, nicht $P'$ / Optimal-$Q$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$p(16)=20-8=12$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBei $Q=20$: $|\\varepsilon|=1$ auf der linearen Nachfrage in der Mitte.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Optimum bei $Q=16$ ($MR=MC$). Fixgebühr ändert $Q^*$ nicht. Bei $Q=20$ ist die Marge $120$, nicht $150$."
+  },
+  {
+    "case_id": "MATH 11.203",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Mill: average-cost drift and a rival's marginal revenue",
+    "context_en": "A mill has cost $C(Q)=\\dfrac13 Q^{3}-4Q^{2}+30Q+90$. A rival mill matches revenue at $Q=5$ but has strictly larger marginal revenue on $5\\le Q\\le 8$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "$AC^{\\prime}(Q)=Q-\\dfrac{8}{3}-\\dfrac{90}{Q^{2}}$ after writing $AC=\\dfrac{C}{Q}$.",
+      "At $Q=6$, average cost is still falling.",
+      "The rival's revenue at $Q=8$ must exceed this mill's revenue at $Q=8$.",
+      "Marginal cost equals average cost at every critical point of $AC$.",
+      "$C^{\\prime\\prime}(Q)=2Q-8$, so total cost has an inflection at $Q=4$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nForm average cost carefully before differentiating — divide each term by $Q$.\n\n$$\nAC(Q) = \\dfrac{C(Q)}{Q} = \\dfrac{1}{3}Q^{2}-4Q+30+\\dfrac{90}{Q}\n$$\n\n$$\nAC^{\\prime}(Q) = \\dfrac{2}{3}Q-4-\\dfrac{90}{Q^{2}}\n$$\n\nA quick numerical check: the claimed wrong derivative at $Q=6$ would be $6-\\tfrac83-\\tfrac{90}{36}=6-2.67-2.5\\approx 0.83$, not the true $-2.5$.\n\nThe claim writes $Q-\\dfrac{8}{3}-\\dfrac{90}{Q^{2}}$, which mishandles the quadratic coefficient ($\\tfrac{2}{3}$ becomes $1$) and the linear term ($-4$ becomes $-\\tfrac{8}{3}$).\n\nSo the statement is False.\n",
+      "**B.** → True\n\nEvaluate the correct derivative of average cost at $Q=6$.\n\n$$\nAC^{\\prime}(6) = \\dfrac{2}{3}\\cdot 6-4-\\dfrac{90}{36} = 4-4-\\dfrac{5}{2} = -\\dfrac{5}{2}<0\n$$\n\nUntil $AC^{\\prime}$ reaches zero, expanding output still lowers cost per unit even if total cost rises.\n\nNegative $AC^{\\prime}$ means average cost is still falling at output $6$ — the firm has not yet reached the bottom of the AC curve.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nThe two mills match revenue at $Q=5$, and the rival has strictly larger marginal revenue on $[5,8]$. Integrating that strict inequality from the common start yields\n\n$$\nR_{\\mathrm{rival}}(8)-R_{\\mathrm{rival}}(5)>R(8)-R(5)\n$$\n\nMatching revenue at the left endpoint and then outpacing this mill's MR on the interval forces a strictly larger rival revenue at the right endpoint, and with $R_{\\mathrm{rival}}(5)=R(5)$ one obtains $R_{\\mathrm{rival}}(8)>R(8)$. The trap would be reversing the inequality direction.\n\n$$\nQ = 8\n$$\n\n$$\nQ = 5\n$$\n\n$$\nR_{\\mathrm{rival}}(5) = R(5)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nCritical points of average cost solve $AC^{\\prime}=0$. Writing $AC=\\dfrac{C}{Q}$ and applying the quotient rule rearranges that equation to\n\n$$\nAC^{\\prime} = 0\n$$\n\n$$\n\\Longleftrightarrow\n$$\n\n$$\nMC = AC\n$$\n\nGeometrically, $AC$ is falling while $MC<AC$ and rising while $MC>AC$; the crossing $MC=AC$ is exactly where $AC$ turns.\n\nSo at every critical point of $AC$, marginal cost equals average cost — a general identity, not special to this mill.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nDifferentiate total cost twice and locate the zero of the second derivative.\n\n$$\nC^{\\prime}(Q) = Q^{2}-8Q+30\n$$\n\n$$\nC^{\\prime\\prime}(Q) = 2Q-8 = 0 \\implies 2Q = 8 \\implies Q = 4\n$$\n\nOn $(0,4)$ one has $C^{\\prime\\prime}<0$ (concave down) and on $(4,\\infty)$ one has $C^{\\prime\\prime}>0$ (concave up), confirming the inflection.\n\nThe second derivative changes from negative to positive there, so $Q=4$ is an inflection of total cost.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Mill cost is\n\n$$C(Q)=\\dfrac{1}{3}Q^{3}-4Q^{2}+30Q+90$$\n\nAverage cost and its derivative are\n\n$$AC(Q)=\\dfrac{1}{3}Q^{2}-4Q+30+\\dfrac{90}{Q}$$\n\n$$AC^{\\prime}(Q)=\\dfrac{2}{3}Q-4-\\dfrac{90}{Q^{2}}$$\n\n(not the mishandled expression $Q-\\dfrac{8}{3}-\\dfrac{90}{Q^{2}}$). At $Q=6$, $AC^{\\prime}(6)=-\\dfrac{5}{2}<0$, so average cost is still falling. Critical points of $AC$ rearrange via the quotient rule to $MC=AC$. Differentiating total cost twice, $C^{\\prime\\prime}(Q)=2Q-8=0\\implies Q=4$, an inflection of $C$. A rival matching revenue at $Q=5$ but with strictly larger MR on $[5,8]$ finishes with strictly larger revenue at $Q=8$ after integrating the gap.",
+    "title_de_existing": "Mühle: Stückkostendrift und Grenzerlös eines Rivalen",
+    "context_de_existing": "Mühle: Kosten $C(Q)=\\dfrac13 Q^{3}-4Q^{2}+30Q+90$. Ein Rival matcht den Erlös bei $Q=5$, hat aber streng größeren Grenzerlös auf $5\\le Q\\le 8$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "$AC'(Q)=Q-\\dfrac{8}{3}-\\dfrac{90}{Q^{2}}$ nach Schreiben von $AC=\\dfrac{C}{Q}$.",
+      "Bei $Q=6$ fallen die Stückkosten noch.",
+      "Der Rivalen-Erlös bei $Q=8$ muss den Erlös dieser Mühle bei $Q=8$ übertreffen.",
+      "Die Grenzkosten gleichen den Stückkosten an jeder kritischen Stelle von $AC$.",
+      "$C''(Q)=2Q-8$, also haben die Gesamtkosten bei $Q=4$ einen Wendepunkt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nKorrekt ist $AC'=\\frac{2}{3}Q-4-90/Q^{2}$, nicht die behauptete Formel.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBei $Q=6$: $AC'<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nHöheres $R'$ bei gleichem Start → höherer späterer Erlös.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $AC'=0$ folgt $MC=AC$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$C''=2Q-8=0$ bei $Q=4$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$AC'=\\frac{2}{3}Q-4-90/Q^{2}$. Wendepunkt bei $Q=4$. Rival endet höher."
+  },
+  {
+    "case_id": "MATH 11.204",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Theatre: price and MR figure with constant MC",
+    "context_en": "A theatre's inverse demand $p(Q)$ (brown) and marginal revenue (green) are shown. Marginal cost is constant at $MC=10$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Revenue is maximised where green crosses zero, near $Q=10$.",
+      "Profit is maximised where green meets height $10$, near $Q=15$.",
+      "At the profit-maximising output, the figure's brown height is $p=30$.",
+      "At $Q=10$, $MR=0$ while $p=20$, so price exceeds marginal revenue.",
+      "Because $MC$ is constant, the profit-maximising output also minimises average cost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRevenue is maximised where marginal revenue is zero — the green curve's crossing of the horizontal axis.\n\nLeft of that crossing, green is positive so expanding ticket sales raises revenue; right of it, green is negative so revenue falls.\n\nThat zero sits near $Q=10$ on the figure. Left of the crossing, $MR>0$ so expanding output raises revenue; right of it, $MR<0$ so revenue falls.\n\n$$\nQ = 10\n$$\n\nSo the statement is True.\n",
+      "**B.** → True\n\nProfit maximisation equates marginal revenue to marginal cost. With constant $MC=10$, that is where green meets height $10$.\n\nDo not confuse this profit FOC with the revenue peak: revenue maximises where green hits zero, while profit maximises where green hits the constant $MC=10$.\n\nReading the figure, that meeting lies near $Q=15$ — distinct from the revenue peak where green crosses zero near $Q=10$.\n\n$$\nMC = 10\n$$\n\n$$\nQ = 15\n$$\n\n$$\nQ = 10\n$$\n\nSo the statement is True.\n",
+      "**C.** → False\n\nAt the profit-maximising output — where green meets height $10$ — read price from the brown inverse-demand curve.\n\nPrice at the profit peak still exceeds $MC=10$ (here $p=25$), as expected under downward-sloping demand, but the figure does not show $p=30$.\n\nThe figure's brown height there is $p=25$, not $p=30$. The claim overstates the price at the profit peak; price lies above MC but not as high as $30$.\n\n$$\np = 30\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nAt $Q=10$ the figure shows green on the axis ($MR=0$) while brown sits at height $20$.\n\nFor any downward-sloping inverse demand, $p>MR$ at positive output; the figure simply makes that gap $20-0$ vivid at the revenue peak.\n\nThe gap $p-MR$ is the usual markup geometry on a downward-sloping demand curve at that output.\n\nPrice $p=20$ therefore exceeds marginal revenue $0$ at that output — for linear demand, price is always above MR for $Q>0$.\n\n$$\nQ = 10\n$$\n\n$$\nMR = 0\n$$\n\n$$\np = 20\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nConstant marginal cost makes the profit FOC simply $MR=10$, but a minimum of average cost is the different condition $MC=AC$.\n\nWith constant $MC$, average cost may be decreasing, flat, or U-shaped depending on fixed cost — none of that is settled by the $MR=MC$ reading alone.\n\nThose two equations need not share a root. Equating $MR$ to a constant $MC$ locates the profit peak; it does not by itself minimise average cost.\n\n$$\nMR = 10\n$$\n\n$$\nMC = AC\n$$\n\n$$\nMR = MC\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Brown is inverse demand $p(Q)$ and green is marginal revenue, with constant $MC=10$.\n\nRevenue is maximised where $MR=0$ — that is where green crosses zero, near $Q=10$; there brown sits at height $p=20$, so price exceeds marginal revenue. Profit is maximised where $MR=MC=10$ — that is where green meets height $10$, near $Q=15$ on the figure; at that output brown's height is $p=25$, not $p=30$.\n\nConstant MC makes the profit FOC simply $MR=10$, but a minimum of average cost is the different equation $MC=AC$. Equating MR to a constant MC does not by itself minimise average cost.",
+    "title_de_existing": "Theater: Preis- und GE-Figur mit konstanten GK",
+    "context_de_existing": "Theater: inverse Nachfrage $p(Q)$ (braun) und Grenzerlös (grün); $MC=10$ konstant. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Erlös wird maximiert, wo Grün null kreuzt, nahe $Q=10$.",
+      "Der Gewinn wird maximiert, wo Grün Höhe $10$ trifft, nahe $Q=15$.",
+      "Am gewinnmaximierenden Output beträgt die braune Höhe $p=30$.",
+      "Bei $Q=10$ ist $MR=0$, während $p=20$, also übertrifft der Preis den Grenzerlös.",
+      "Weil $MC$ konstant ist, minimiert der gewinnmaximierende Output auch die Stückkosten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nErlöspeak bei $MR=0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGewinnpeak bei $MR=MC=10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nAm Gewinnpeak (wo Grün Höhe $10$ trifft) liegt Braun nach der Figur nicht bei $p=30$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nBei $Q=10$: $p=20>MR=0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nKonstantes $MC$ steuert nicht das $AC$-Minimum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erlöspeak bei $MR=0$ ($Q\\approx10$); Gewinnpeak bei $MR=10$ ($Q\\approx15$)."
+  },
+  {
+    "case_id": "MATH 11.205",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Distillery: quadratic cost, linear demand, and a unit tax",
+    "context_en": "A distillery faces inverse demand $p=30-\\dfrac13 Q$ and cost $C(Q)=\\dfrac25 Q^{2}+8Q+60$. A unit tax of $5$ shifts the firm's marginal cost up by $5$. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Pretax marginal revenue is $MR=30-\\dfrac23 Q$.",
+      "Pretax profit is maximised at $Q=15$.",
+      "After the tax, the firm equates $MR$ to $\\dfrac45 Q+13$, so the optimal output is strictly below $15$.",
+      "Pretax revenue is maximised at $Q=45$, where price elasticity equals $-1$.",
+      "The unit tax changes the revenue-maximising output because consumers pay more."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRevenue is price times quantity under the given inverse demand. Expand and differentiate.\n\n$$\nR(Q) = \\left(30-\\dfrac{1}{3}Q\\right)Q = 30Q-\\dfrac{1}{3}Q^{2}\n$$\n\n$$\nMR = R^{\\prime}(Q) = 30-\\dfrac{2}{3}Q\n$$\n\nIn general, for inverse demand $p=a-bQ$ one has $MR=a-2bQ$; here $a=30$ and $b=\\tfrac13$, so $MR=30-\\tfrac23 Q$.\n\nThat is the pretax marginal revenue named in the claim — twice the slope of inverse demand, as always for linear demand. Matching the expression to the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nPretax marginal cost comes from differentiating the quadratic cost rule.\n\n$$\nMC = C^{\\prime}(Q) = \\dfrac{4}{5}Q+8\n$$\n\nSet $MR=MC$:\n\n$$\n30-\\dfrac{2}{3}Q = \\dfrac{4}{5}Q+8\n$$\n\n$$\n22 = \\dfrac{2}{3}Q+\\dfrac{4}{5}Q = \\dfrac{10}{15}Q+\\dfrac{12}{15}Q = \\dfrac{22}{15}Q\n$$\n\n$$\nQ = 15\n$$\n\nThe second-order check is immediate: $MR^{\\prime}-MC^{\\prime}=-\\tfrac23-\\tfrac45<0$, so the critical point is a maximum of pretax profit.\n\nPretax profit is maximised at $Q=15$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nA unit tax of $5$ shifts marginal cost up by $5$.\n\n$$\n\\mathrm{MC}_{\\mathrm{tax}} = \\dfrac{4}{5}Q+8+5 = \\dfrac{4}{5}Q+13\n$$\n\nSolving $30-\\tfrac23 Q=\\tfrac45 Q+13$ yields\n\n$$\n17 = (\\tfrac23+\\tfrac45)Q =\\tfrac{22}{15}Q\n$$\n\n, hence $Q=\\tfrac{15\\cdot 17}{22}<15$.\n\nThe new FOC is $MR=\\dfrac{4}{5}Q+13$. Compared with the pretax equation that had $+8$ on the right, the same algebra now yields a strictly smaller positive root than $15$, so optimal output falls.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nRevenue peaks where $MR=0$.\n\n$$\n30-\\dfrac{2}{3}Q = 0\n$$\n\n$$\nQ = 45\n$$\n\nAt that quantity,\n\n$$\np = 30-\\dfrac{1}{3}\\cdot 45\n$$\n\n$$\np = 15\n$$\n\n. Inverting demand gives\n\n$$\nQ = 90-3p\n$$\n\n, so\n\n$$\n\\varepsilon = \\dfrac{-3p}{Q} = \\dfrac{-3\\cdot 15}{45} = -1\n$$\n\nFor linear demand, unit elasticity and $MR=0$ always pick the same output; the tax never enters that revenue-side calculation.\n\nRevenue maximisation ignores cost and tax alike; only the demand side enters $MR=0$.\n\nUnit elasticity marks the revenue peak at $Q=45$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nRevenue depends only on the demand curve. A unit tax on the firm shifts marginal cost and therefore moves the profit-maximising output, but it leaves the revenue schedule — and the condition $MR=0$ — untouched.\n\nConsumers face the same inverse-demand schedule before and after a tax levied on the firm; what moves is the firm's MC, not the $R(Q)$ curve.\n\nThe revenue-maximising output stays at $Q=45$ with or without the tax; the claim confuses a profit shift with a revenue shift.\n\n$$\nMR = 0\n$$\n\n$$\nQ = 45\n$$\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Inverse demand $p=30-\\dfrac{1}{3}Q$ and cost $C(Q)=\\dfrac{2}{5}Q^{2}+8Q+60$ give\n\n$$R(Q)=30Q-\\dfrac{1}{3}Q^{2}$$\n\n$$MR=30-\\dfrac{2}{3}Q$$\n\n$$MC=\\dfrac{4}{5}Q+8$$\n\nPretax $MR=MC$ solves $30-\\dfrac{2}{3}Q=\\dfrac{4}{5}Q+8\\implies Q=15$. A unit tax of $5$ shifts MC to $\\dfrac{4}{5}Q+13$, so the new FOC $MR=\\dfrac{4}{5}Q+13$ yields a strictly smaller positive root than $15$.\n\nRevenue peaks where $MR=0$: $Q=45$, with $p=15$ and $\\varepsilon=-1$. The tax moves the profit FOC through MC but leaves the revenue schedule — and $MR=0$ — untouched.",
+    "title_de_existing": "Destillerie: quadratische Kosten, lineare Nachfrage und Mengensteuer",
+    "context_de_existing": "Brennerei: inverse Nachfrage $p=30-\\dfrac13 Q$, Kosten $C(Q)=\\dfrac25 Q^{2}+8Q+60$. Stücksteuer $5$ verschiebt die Grenzkosten um $5$ nach oben. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Vorsteuer-Grenzerlös ist $MR=30-\\dfrac23 Q$.",
+      "Der Vorsteuer-Gewinn wird bei $Q=15$ maximiert.",
+      "Nach der Steuer setzt die Firma $MR$ mit $\\dfrac45 Q+13$ gleich, also liegt der Optimaloutput streng unter $15$.",
+      "Der Vorsteuer-Erlös wird bei $Q=45$ maximiert, wo die Preiselastizität $-1$ gleicht.",
+      "Die Stücksteuer ändert den erlösmaximierenden Output, weil die Konsumenten mehr zahlen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R=30Q-Q^{2}/3$, $MR=30-2Q/3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$MR=MC$: $30-2Q/3=4Q/5+8\\Rightarrow Q=15$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNachsteuer $MC+5$: Optimaloutput $<15$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nErlöspeak: $MR=0\\Rightarrow Q=45$, $|\\varepsilon|=1$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nErlöspeak hängt nur von der Nachfrage ab — Steuer ändert $Q$ für den Erlös nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Vorsteuer Gewinnpeak bei $Q=15$; Erlöspeak bei $Q=45$. Steuer senkt Gewinn-$Q^*$, nicht Erlös-$Q^*$."
+  }
+]

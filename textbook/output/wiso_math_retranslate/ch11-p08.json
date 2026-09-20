@@ -1,0 +1,1042 @@
+[
+  {
+    "case_id": "MATH 11.147",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Skewed pair on one plane: zero of f′ at x=4",
+    "context_en": "Brown is $f'$ and green is $f''$, drawn on one shared plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "The brown curve crosses the axis at $x=4$, and to the left of $x=4$ it is positive.",
+      "At the highest point of the brown curve (near $x=1$), the green curve is approximately zero.",
+      "For $x>2$ in this window, the green curve is negative, so $f'$ is decreasing on $(2,8)$.",
+      "At $x=0$, brown is near height $4$ while green is near height $-2$.",
+      "Because green is negative on $(2,8)$, the function $f$ itself must be decreasing on $(2,8)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$. The brown curve crosses the axis at $x=4$, and to the left of that zero it forms a positive hump above the axis.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(0,4)\n$$\n\n$$\nf'(4) = 0\n$$\n\nso the claim's reading of the figure is correct, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe highest point of brown sits near $x=1$, and there the green curve is approximately zero.\n\n$$\nf''(1)\n$$\n\n$$\n0\n$$\n\nso the peak of $f'$ lines up with a zero of $f''$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nFor $x>2$ in this window the green curve ($f''$) is negative:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(2,8)\n$$\n\nNegative $f''$ means the brown graph of $f'$ is decreasing on $(2,8)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt the left edge, reading both heights on the shared scale, brown is near height $4$ while green is near height $-2$.\n\n$$\nf'(0)\n$$\n\n$$\n4\n$$\n\n$$\nf''(0)\n$$\n\n$$\n-2\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nNegative $f''$ says $f'$ is decreasing and $f$ is concave down; it does not say $f$ itself is decreasing. On $(2,4)$ one still has $f'>0$ from the positive brown hump:\n\n$$\nf''<0\\text{ on }(2,8)\\quad\\text{but}\\quad f'>0\\text{ on }(2,4)\n$$\n\nso $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown is $f'$ and green is $f''$ on one shared plane. Brown crosses the axis at $x=4$ with a positive hump to the left:\n\n$$f'>0\\text{ on }(0,4),\\qquad f'<0\\text{ right of }4$$\n\nAt the highest point of brown (near $x=1$) green is approximately zero. For $x>2$ green is negative, so $f'$ is decreasing on $(2,8)$. At $x=0$ the scale readings are about\n\n$$f'(0)\\approx 4,\\qquad f''(0)\\approx -2$$\n\nNegative $f''$ speaks to concavity of $f$ and decrease of $f'$, not to whether $f$ itself decreases — on $(2,4)$ one still has $f'>0$, so $f$ is still increasing there.",
+    "title_de_existing": "Schiefes Paar in einer Ebene: Nullstelle von f′ bei x=4",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$, auf einer gemeinsamen Ebene gezeichnet. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die braune Kurve kreuzt die Achse bei $x=4$, und links von $x=4$ ist sie positiv.",
+      "Am höchsten Punkt der braunen Kurve (nahe $x=1$) ist die grüne Kurve näherungsweise null.",
+      "Für $x>2$ in diesem Fenster ist die grüne Kurve negativ, also fällt $f'$ auf $(2,8)$.",
+      "Bei $x=0$ liegt Braun nahe Höhe $4$, während Grün nahe Höhe $-2$ liegt.",
+      "Weil Grün auf $(2,8)$ negativ ist, muss die Funktion $f$ selbst auf $(2,8)$ fallend sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f'>0$ links von $x=4$, Kreuzung bei $4$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPeak von $f'$ mit $f''\\approx 0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f''$ → fallendes $f'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSkalenablesung bei $x=0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nNegatives $f''$ steuert $f'$, nicht direkt die Monotonie von $f$ — dafür braucht man das Vorzeichen von $f'$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Grün steuert Braun; Braun steuert $f$. Negatives $f''$ allein macht $f$ nicht fallend."
+  },
+  {
+    "case_id": "MATH 11.148",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two marginal-profit curves on one plane",
+    "context_en": "Brown is firm A's marginal profit $P_A'$ and green is firm B's marginal profit $P_B'$, plotted on the same axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "Firm A's zeros are near $x=1$ and $x=3$, while firm B's zeros are near $x=2$ and $x=5$.",
+      "At $x=1.5$, brown is negative while green is still positive, so A wants to contract and B wants to expand.",
+      "At $x=4$, both curves are negative, so both firms' profits are decreasing in output there.",
+      "Near $x=0$, both curves are positive, and green starts higher than brown.",
+      "Having two zeros each means the two firms earn the same maximal profit level."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nBrown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$. Reading the axis crossings:\n\n$$\nP_A'\\text{ zeros near }x = 1,3;\n$$\n\n$$\nP_B'\\text{ zeros near }x = 2,5\n$$\n\nThose four readings match the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\n$$\nx = 3\n$$\n\n$$\nx = 2\n$$\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=1.5$, brown sits below the axis while green sits above it.\n\n$$\nP_A'(1.5)<0\n$$\n\n$$\nP_B'(1.5)>0\n$$\n\nNegative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1.5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nMarginal profit is the instantaneous rate of change of profit. When it is negative, a little more output lowers profit, so profit is decreasing in output on that stretch.\n\nAt $x=4$ both curves sit below the axis, so both marginal profits are negative.\n\n$$\nP_A'(4)<0\n$$\n\n$$\nP_B'(4)<0\n$$\n\nNegative $P'$ means each firm's profit is decreasing in output there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nNear $x=0$ both curves sit above the axis, and on the shared scale green starts higher than brown.\n\n$$\nP_A'(0)>0\n$$\n\n$$\nP_B'(0)>P_A'(0)\n$$\n\nso both are positive and green starts higher, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nHaving two zeros each only says each firm's marginal profit changes sign twice; it says nothing about the height of the profit level $P$ itself:\n\n$$\n\\#\\{P_A' = 0\\}\n$$\n\n$$\n\\#\\{P_B' = 0\\}\n$$\n\nEqual critical-point counts do not force equal maximal profit levels:\n\n$$\n\\max P_A \\stackrel{?}{=} \\max P_B\n$$\n\nOnce that mismatch with the figure is clear, the claim cannot stand.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$ on the same axes. Axis crossings:\n\n$$P_A'\\text{ zeros near }x=1,3;\\qquad P_B'\\text{ zeros near }x=2,5$$\n\nNear $x=0$ both curves are positive, with green starting higher than brown. At $x=1.5$ brown is already negative while green is still positive (opposite expand/contract advice). At $x=4$ both are negative, so both profits decrease in output there. Having two zeros each only matches critical-point counts — it does not equate the firms' maximal profit levels, which are heights of $P$ itself (not plotted).",
+    "title_de_existing": "Zwei Grenzgewinnkurven in einer Ebene",
+    "context_de_existing": "Braun ist Grenzgewinn $P_A'$ von Firma A und Grün ist Grenzgewinn $P_B'$ von Firma B, auf denselben Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Nullstellen von Firma A liegen nahe $x=1$ und $x=3$, während die von Firma B nahe $x=2$ und $x=5$ liegen.",
+      "Bei $x=1{,}5$ ist Braun negativ, während Grün noch positiv ist, also will A kontrahieren und B expandieren.",
+      "Bei $x=4$ sind beide Kurven negativ, also fallen die Gewinne beider Firmen dort im Output.",
+      "Nahe $x=0$ sind beide Kurven positiv, und Grün startet höher als Braun.",
+      "Jeweils zwei Nullstellen bedeuten, dass beide Firmen dasselbe maximale Gewinnniveau verdienen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNullstellen ablesen.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichen bei $1{,}5$: A negativ, B positiv.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBeide negativ bei $x=4$ → beide Gewinne fallen.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeide positiv nahe $0$; Grün höher.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGleiche Nullstellenzahl erzwingt nicht gleiches Gewinnniveau.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Zwei Grenzgewinnkurven: Vorzeichen steuern Expansionsrat; Nullstellenzahl $\\neq$ gleiches Gewinnniveau."
+  },
+  {
+    "case_id": "MATH 11.149",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Four-zero f′ with f″ on shared axes",
+    "context_en": "Brown is $f'$ and green is $f''$ on one plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "The brown curve has four zeros in $[0,6]$.",
+      "The green curve has three zeros in the window (one fewer than brown).",
+      "At a local maximum of the brown curve, the green curve crosses or touches zero.",
+      "On an interval where green is positive, brown is rising, so $f$ is concave up there.",
+      "At $x=3$, brown is negative, so $f$ is decreasing at $x=3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$. Counting clear axis crossings of the brown curve in $[0,6]$:\n\n$$\nf'\\text{ has four zeros in }[0,6]\n$$\n\nThat count matches the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nCounting clear axis crossings of the green curve ($f''$) in the same window:\n\n$$\nf''\\text{ has three zeros (one fewer than }f'\\text{)}\n$$\n\nThat count matches the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nExtrema of brown ($f'$) occur where green ($f''$) is zero:\n\n$$\nf'' = 0\\quad\\text{at a local max of }f'\n$$\n\nOn the figure, at a local maximum of brown, green crosses or touches zero\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nConcavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.\n\nWherever green is positive one has $f''>0$:\n\n$$\nf''>0\\quad\n$$\n\n$$\n\\quad f'\\text{ rising and }f\\text{ concave up}\n$$\n\nPositive $f''$ is exactly the concave-up reading for $f$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nAt $x=3$ the brown curve ($f'$) sits below the axis on the shared plane, so the slope of $f$ is negative there.\n\n$$\nf'(3)<0\n$$\n\nNegative $f'$ means $f$ is decreasing at $x=3$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$ on one plane. Counting axis crossings:\n\n$$\\text{brown: four zeros in }[0,6];\\qquad\\text{green: three zeros (one fewer)}$$\n\nExtrema of brown line up with zeros of green: at a local maximum of brown, green crosses or touches zero. Wherever green is positive, brown is rising, so $f$ is concave up there ($f''>0$). At $x=3$ (between the middle zeros of brown) brown is below the axis, so $f'(3)<0$ and $f$ is decreasing at $x=3$.",
+    "title_de_existing": "f′ mit vier Nullstellen und f″ auf gemeinsamen Achsen",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$ auf einer Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die braune Kurve hat vier Nullstellen in $[0,6]$.",
+      "Die grüne Kurve hat drei Nullstellen im Fenster (eine weniger als Braun).",
+      "An einem lokalen Maximum der braunen Kurve kreuzt oder berührt die grüne Kurve null.",
+      "Auf einem Intervall, wo Grün positiv ist, steigt Braun, also ist $f$ dort konkav nach oben.",
+      "Bei $x=3$ ist Braun negativ, also fällt $f$ bei $x=3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVier Nullstellen von $f'$ zählen.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDrei Nullstellen von $f''$ zählen.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nExtrema von $f'$ bei $f''=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f''$ → steigendes $f'$ und konkaves $f$ nach oben.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Vier Nullstellen von $f'$, drei von $f''$. Vorzeichen steuern Monotonie und Konkavität."
+  },
+  {
+    "case_id": "MATH 11.150",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Three firms’ P′ on one shared plane",
+    "context_en": "Three marginal-profit curves $P_1'$, $P_2'$, $P_3'$ are drawn on the **same** axes (brown, green, purple). Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, brown and purple are positive while green is negative.",
+      "At $x=0$, the green curve $P_2'$ is positive.",
+      "At $x=5$, brown is negative, so firm 1's profit is decreasing in output at $x=5$.",
+      "The first firm to hit a zero of marginal profit when moving right from $x=0$ is not necessarily firm 1.",
+      "If at some $x$ one curve is above another and both are positive, that firm has the larger instantaneous profit gain per unit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThree marginal-profit curves sit on the same axes (brown, green, purple). At $x=0$, brown and purple start above the axis while green starts below it (near height $-1$).\n\n$$\nP_1'(0)>0\n$$\n\n$$\nP_3'(0)>0\n$$\n\n$$\nP_2'(0)<0\n$$\n\nso brown and purple are positive while green is negative, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=0$ the green curve $P_2'$ starts below the axis on the shared plane, near height $-1$, not above it.\n\n$$\nP_2'(0)<0\n$$\n\nso green is not positive at $x=0$, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nMarginal profit is the instantaneous rate of change of profit. When it is negative, a little more output lowers profit, so profit is decreasing in output on that stretch.\n\nAt $x=5$ the brown curve sits below the axis, so firm 1's marginal profit is negative.\n\n$$\nP_1'(5)<0\n$$\n\nNegative $P_1'$ means firm 1's profit is decreasing in output at $x=5$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nMoving right from $x=0$, the first axis crossing among the three colours need not belong to brown:\n\n$$\n\\text{first zero from the left need not be }P_1' = 0\n$$\n\nOn the figure another firm's curve can meet the axis earlier than firm 1's\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nOn a shared vertical scale, if one curve sits above another and both are positive:\n\n$$\nP_i'>P_j'>0\\quad\n$$\n\n$$\n\\quad\\text{firm }i\\text{ has the larger instantaneous gain per unit}\n$$\n\nHeight comparison of positive $P'$ values is exactly that ranking\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Three marginal-profit curves $P_1'$ (brown), $P_2'$ (green), and $P_3'$ (purple) share one pair of axes. At $x=0$:\n\n$$\\text{brown}>0,\\quad\\text{purple}>0,\\quad\\text{green}\\approx -1<0$$\n\nso firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is negative afterward, including at $x=5$. Different zero locations mean the first firm to hit a zero when moving right from $x=0$ need not be firm 1. If at some $x$ one curve sits above another and both are positive, that firm has the larger instantaneous profit gain per unit.",
+    "title_de_existing": "P′ dreier Firmen in einer gemeinsamen Ebene",
+    "context_de_existing": "Drei Grenzgewinnkurven $P_1'$, $P_2'$, $P_3'$ sind auf denselben Achsen gezeichnet (braun, grün, lila). Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ sind Braun und Lila positiv, während Grün negativ ist.",
+      "Bei $x=0$ ist die grüne Kurve $P_2'$ positiv.",
+      "Bei $x=5$ ist Braun negativ, also fällt der Gewinn von Firma 1 bei $x=5$ im Output.",
+      "Die erste Firma, die beim Rechtswandern von $x=0$ eine Nullstelle des Grenzgewinns trifft, ist nicht notwendig Firma 1.",
+      "Wenn bei einem $x$ eine Kurve über einer anderen liegt und beide positiv sind, hat diese Firma den größeren momentanen Grenzgewinn."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen bei $x=0$: Braun/Lila positiv, Grün negativ.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nGrün ist bei $x=0$ negativ, nicht positiv — Behauptung falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNegatives $P_1'$ → fallender Gewinn.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nReihenfolge der Nullstellen hängt von der Figur ab, nicht von der Nummerierung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nHöhere positive Kurve = größerer Grenzgewinn.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Drei $P'$-Kurven vergleichen: Vorzeichen bei $x=0$ und $x=5$; Höhe = Größe des Grenzgewinns."
+  },
+  {
+    "case_id": "MATH 11.151",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Compare f′ and g′ at numbered x-values",
+    "context_en": "Brown is $f'$ and green is $g'$ on one plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "Brown has zeros at $x=1$ and $x=3$; green has zeros at $x=2$ and $x=5$.",
+      "At $x=0$, both $f'(0)$ and $g'(0)$ are positive, and $g'(0)>f'(0)$.",
+      "At $x=2.5$, brown is negative while green is also negative.",
+      "On $(3,5)$, brown is positive while green is negative: $f$ increases and $g$ decreases there.",
+      "Equal numbers of zeros imply $\\max f = \\max g$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $g'$. Reading the marked-style crossings off the shared axis:\n\n$$\nf'\\text{ zeros at }x = 1,3;\n$$\n\n$$\ng'\\text{ zeros at }x = 2,5\n$$\n\nThose four readings match the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\n$$\nx = 3\n$$\n\n$$\nx = 2\n$$\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nAt $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.\n\n$$\nf'(0)>0\n$$\n\n$$\ng'(0)>f'(0)\n$$\n\nso both are positive and $g'(0)>f'(0)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=2.5$, between brown's zeros and also between green's early stretch past $x=2$, both curves sit below the axis.\n\n$$\nf'(2.5)<0\n$$\n\n$$\ng'(2.5)<0\n$$\n\nso both are negative at $x=2.5$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2.5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(3,5)$ brown has already crossed back above the axis while green is still below it (until $x=5$).\n\n$$\nf'(x)>0\n$$\n\n$$\ng'(x)<0\\quad\\text{on }(3,5)\n$$\n\nso $f$ increases and $g$ decreases there, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nEqual numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same number of candidate critical points. The maximal heights are not determined by those counts:\n\n$$\n\\#\\{f' = 0\\}\n$$\n\n$$\n\\#\\{g' = 0\\}\n$$\n\nEqual zero counts do not force equal maxima:\n\n$$\n\\max f \\stackrel{?}{=} \\max g\n$$\n\nOnce that mismatch with the figure is clear, the claim cannot stand.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $g'$ on one plane. Zero locations:\n\n$$f'\\text{ zeros at }x=1,3;\\qquad g'\\text{ zeros at }x=2,5$$\n\nAt $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axis (brown in $(1,3)$, green in $(2,5)$). On $(3,5)$ brown is positive while green is still negative, so $f$ increases and $g$ decreases there. Equal numbers of zeros do not equate $\\max f$ with $\\max g$ — critical-point counts are not function values.",
+    "title_de_existing": "f′ und g′ an nummerierten x-Werten vergleichen",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $g'$ auf einer Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Braun hat Nullstellen bei $x=1$ und $x=3$; Grün hat Nullstellen bei $x=2$ und $x=5$.",
+      "Bei $x=0$ sind sowohl $f'(0)$ als auch $g'(0)$ positiv, und $g'(0)>f'(0)$.",
+      "Bei $x=2{,}5$ ist Braun negativ und Grün ebenfalls negativ.",
+      "Auf $(3,5)$ ist Braun positiv, während Grün negativ ist: $f$ steigt und $g$ fällt dort.",
+      "Gleiche Nullstellenzahl impliziert $\\max f = \\max g$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNullstellen ablesen: Braun $1,3$; Grün $2,5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBeide positiv bei $0$; Grün höher.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBeide unter der Achse bei $2{,}5$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nVorzeichen steuern Monotonie: Braun $+$, Grün $-$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGleiche Nullstellenzahl erzwingt nicht gleiches Maximalniveau.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Zwei Ableitungen: Nullstellen und Vorzeichen vergleichen. Gleiche Nullstellenzahl $\\neq$ gleiches Maximum."
+  },
+  {
+    "case_id": "MATH 11.152",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Three curves on one plane: values at x=0 and x=3",
+    "context_en": "Brown is $f'$, green is $f''$, and purple is another derivative $h'$, all on the same axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, brown is positive (near height $4$) while green is negative (near height $-4$).",
+      "At $x=3$, brown is near height $10$ and lies above purple (purple is near height $6$).",
+      "Green opens upward and is negative at $x=0$.",
+      "Wherever green is positive, brown is increasing as a function of $x$.",
+      "Purple being a vertical shift/scaling of brown means purple and brown share the same zeros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nBrown is $f'$, green is $f''$, and purple is $h'$. At $x=0$, reading the shared scale, brown is near height $4$ while green is near height $-4$.\n\n$$\nf'(0)\n$$\n\n$$\n4\n$$\n\n$$\nf''(0)\n$$\n\n$$\n-4\n$$\n\nso brown is positive and green is negative at $x=0$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=3$, brown is near height $10$ while purple is near height $6$, so brown lies above purple.\n\n$$\nf'(3)\n$$\n\n$$\n10\n$$\n\n$$\nh'(3)\n$$\n\n$$\n6\n$$\n\nand the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe green curve ($f''$) opens upward in a U-shape on the shared plane, and at $x=0$ it sits below the axis:\n\n$$\nf''(0)\n$$\n\n$$\n-4<0\n$$\n\n$$\nf''\\text{ opens upward}\n$$\n\nBoth geometric facts match the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nGreen is $f''$. Wherever green is positive one has $f''>0$:\n\n$$\nf''>0\\quad\n$$\n\n$$\n\\quad f'\\text{ increasing in }x\n$$\n\nso brown ($f'$) is rising on that stretch, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA vertical shift or scaling of brown moves the heights, so purple's axis crossings need not match brown's zeros:\n\n$$\nh' = \\text{shift/scale of }f'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{same zero set}\n$$\n\nOn the figure purple and brown meet the axis at different $x$-values\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$, green is $f''$, and purple is another derivative $h'$, all on the same axes. At $x=0$:\n\n$$f'(0)\\approx 4>0,\\qquad f''(0)\\approx -4<0$$\n\nGreen opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near height $10$, above purple near height $6$. Wherever green is positive, brown is increasing as a function of $x$. Purple looks like a vertical shift/scaling of brown, which moves axis crossings — brown and purple need not share the same zeros.",
+    "title_de_existing": "Drei Kurven in einer Ebene: Werte bei x=0 und x=3",
+    "context_de_existing": "Braun ist $f'$, Grün ist $f''$, und Lila ist eine weitere Ableitung $h'$, alle auf denselben Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ ist Braun positiv (nahe Höhe $4$), während Grün negativ ist (nahe Höhe $-4$).",
+      "Bei $x=3$ liegt Braun nahe Höhe $10$ und über Lila (Lila nahe Höhe $6$).",
+      "Grün öffnet nach oben und ist bei $x=0$ negativ.",
+      "Wo immer Grün positiv ist, steigt Braun als Funktion von $x$.",
+      "Dass Lila eine vertikale Verschiebung/Skalierung von Braun ist, bedeutet: Lila und Braun teilen dieselben Nullstellen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen bei $x=0$: $f'>0$, $f''<0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei $x=3$: Braun über Lila.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nParabelform von Grün, negativ bei $0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVertikale Verschiebung verschiebt Nullstellen — sie bleiben nicht dieselben.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Drei Kurven: Vorzeichen und Höhen ablesen. Vertikale Verschiebung erhält Nullstellen nicht."
+  },
+  {
+    "case_id": "MATH 11.153",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Three named curves: signs, heights, and A vs A′",
+    "context_en": "The figure shows three curves on one plane: $A$ (brown), $B$ (green), and $A-B$ (purple). In this model $B=A'$. Decide TRUE or FALSE from the coordinates.",
+    "statements_en": [
+      "At $x=3$, $A(3)<0$ and $B(3)<0$.",
+      "At $x=3$, the purple curve lies strictly below the brown curve.",
+      "Zeros of $B$ occur under a local max and a local min of $A$.",
+      "Wherever $B>0$, the brown curve $A$ is rising.",
+      "The purple curve having a zero means $A=B$ at that $x$, i.e. $A(x)=A'(x)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nBrown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.\n\n$$\nA(3)<0\n$$\n\n$$\nB(3)<0\n$$\n\nso both are negative at $x=3$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=3$, compare purple ($A-B$) with brown ($A$) on the shared vertical scale. Relative height decides the claim:\n\n$$\n(A-B)(3)\\not< A(3)\n$$\n\nPurple sits above brown, not strictly below it. The claimed inequality runs the wrong way on the figure\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nBecause $B=A'$, zeros of green are critical points of brown. On the figure those zeros sit under a local max and a local min of $A$:\n\n$$\nB = 0\\quad\\text{under local max/min of }A\n$$\n\nwhich is exactly the first-derivative alignment\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nWherever the green curve is positive one has $B=A'>0$:\n\n$$\nB>0\\quad\n$$\n\n$$\n\\quad A\\text{ rising}\n$$\n\nPositive $A'$ is exactly the increasing test for $A$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nPurple is $A-B$. A zero of purple means $A-B=0$, hence $A=B$ at that $x$. With $B=A'$ this is\n\n$$\nA(x) = A'(x)\n$$\n\nso the claim's reading is correct, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nA = B\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThree curves share one plane: $A$ (brown), $B$ (green), and $A-B$ (purple), with the model relation $B=A'$. At $x=3$ both brown and green sit below the axis:\n\n$$A(3)<0,\\qquad B(3)<0$$\n\nwhile purple sits above brown on the shared scale (not below). Because $B=A'$, zeros of $B$ sit under a local max and a local min of $A$, and wherever $B>0$ the brown curve $A$ is rising. A zero of purple means $A=B$ at that $x$, i.e. $A(x)=A'(x)$.",
+    "title_de_existing": "Drei benannte Kurven: Vorzeichen, Höhen und A vs A′",
+    "context_de_existing": "Die Figur zeigt drei Kurven auf einer Ebene: $A$ (braun), $B$ (grün) und $A-B$ (lila). In diesem Modell ist $B=A'$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=3$ gilt $A(3)<0$ und $B(3)<0$.",
+      "Bei $x=3$ liegt die lila Kurve streng unter der braunen Kurve.",
+      "Nullstellen von $B$ liegen unter einem lokalen Max und einem lokalen Min von $A$.",
+      "Wo immer $B>0$, steigt die braune Kurve $A$.",
+      "Dass die lila Kurve eine Nullstelle hat, bedeutet $A=B$ an diesem $x$, also $A(x)=A'(x)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen: beide negativ bei $x=3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nBei $x=3$ liegt die lila Kurve nicht streng unter der braunen — die Figur widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNullstellen von $A'$ an Extrema von $A$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $A'$ → steigendes $A$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nLila $=0\\Leftrightarrow A=A'$ an diesem $x$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $B=A'$: Vorzeichen von $B$ steuern Monotonie von $A$; Lila $=A-A'$."
+  },
+  {
+    "case_id": "MATH 11.154",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Compute signs and a value f′(−1) from the figure",
+    "context_en": "The figure shows $f'$ with zeros at $x=-2$, $1$, and $2$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "On $(-2,1)$ one has $f'>0$, so $f$ is increasing on $(-2,1)$.",
+      "At $x=-1$, the graph is clearly above the axis, so $f'(-1)>0$; reading the scale, the height is about $6$.",
+      "On $(1,2)$ one has $f'<0$, so $f$ decreases on $(1,2)$.",
+      "The local maximum of $f$ among these critical points is at $x=1$.",
+      "At $x=-2$, $f'$ changes from positive to negative, so $x=-2$ is a local maximum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the open interval $(-2,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nZeros of $f'$ are at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(-2,1)\n$$\n\nso $f$ is increasing on $(-2,1)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=-1$, which lies in $(-2,1)$, the graph is clearly above the axis. Reading the vertical scale, the height is about $6$.\n\n$$\nf'(-1)\n$$\n\n$$\n6>0\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = -1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nBetween the zeros at $x=1$ and $x=2$ the curve of $f'$ dips below the axis, so the slope of $f$ is negative on that open interval.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(1,2)\n$$\n\nHence $f$ decreases on $(1,2)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nA local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.\n\nAmong the critical points, $x=1$ is where $f'$ changes from $+$ to $-$:\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 1\n$$\n\nThat is a local maximum of $f$. The other zeros give a local min (or the opposite flip), so among these critical points the local maximum of $f$ is at $x=1$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nA local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.\n\nAt $x=-2$ the figure shows a $-$ to $+$ pattern (local minimum of $f$), not the claimed $+$ to $-$ flip:\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = -2\n$$\n\nso $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = -2\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f'$ with zeros at $x=-2$, $1$, and $2$. Sign chart from the figure:\n\n$$f'<0\\text{ for }x<-2,\\qquad f'>0\\text{ on }(-2,1),\\qquad f'<0\\text{ on }(1,2),\\qquad f'>0\\text{ for }x>2$$\n\nSo $f$ increases on $(-2,1)$ and decreases on $(1,2)$. At $x=-1$ the height is about $6$ (clearly positive). Sign changes: $-$ to $+$ at $x=-2$ (local min of $f$), $+$ to $-$ at $x=1$ (local max of $f$). Among these critical points the local maximum of $f$ is at $x=1$. The change at $x=-2$ is $-$ to $+$, not $+$ to $-$, so $x=-2$ is a local minimum of $f$, not a local maximum.",
+    "title_de_existing": "Vorzeichen und einen Wert f′(−1) aus der Figur berechnen",
+    "context_de_existing": "Die Figur zeigt $f'$ mit Nullstellen bei $x=-2$, $1$ und $2$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Auf $(-2,1)$ gilt $f'>0$, also ist $f$ auf $(-2,1)$ steigend.",
+      "Bei $x=-1$ liegt der Graph klar über der Achse, also $f'(-1)>0$; nach der Skala ist die Höhe größer als $2$.",
+      "Auf $(1,2)$ gilt $f'<0$, also fällt $f$ auf $(1,2)$.",
+      "Das lokale Maximum von $f$ unter diesen kritischen Punkten liegt bei $x=1$.",
+      "Bei $x=-2$ wechselt $f'$ von positiv zu negativ, also ist $x=-2$ ein lokales Maximum von $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $f'$ auf $(-2,1)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nAblesen: $f'(-1)>2>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f'$ auf $(1,2)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nWechsel $+\\to -$ bei $x=1$ → lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nBei $x=-2$ wechselt $f'$ von negativ zu positiv (nicht $+\\to -$) — lokales Minimum, kein Maximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Nullstellen bei $-2$, $1$, $2$. Vorzeichenwechsel korrekt lesen; bei $-2$ ist es ein Minimum, kein Maximum."
+  },
+  {
+    "case_id": "MATH 11.155",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "f′, f″, and a vertical shift of f′",
+    "context_en": "Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$, all on one plane. Decide TRUE or FALSE from the figure only.",
+    "statements_en": [
+      "At $x=0$, brown is below the axis and purple is even lower.",
+      "Zeros of green sit under a local max and a local min of brown.",
+      "Purple crosses the axis at different $x$-values from brown.",
+      "Wherever green is positive, brown is rising.",
+      "Because purple is just brown shifted down by $2$, brown and purple have the same local max/min $x$-coordinates."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$. At $x=0$, brown sits below the axis and purple, being two units lower, sits even further below.\n\n$$\nf'(0)<0\n$$\n\n$$\nf'(0)-2<f'(0)\n$$\n\nso brown is below and purple is even lower, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nExtrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros sit under a local max and a local min of brown:\n\n$$\nf'' = 0\\quad\\text{at extrema of }f'\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nPurple is brown shifted down by $2$, so it meets the axis where brown has height $2$:\n\n$$\nf'-2 = 0\\quad\\Leftrightarrow\\quad f' = 2\n$$\n\nThose zeros are at different $x$-values from brown's zeros ($f'=0$), which is what the figure shows\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nWherever the green curve ($f''$) is positive one has $f''>0$:\n\n$$\nf''>0\\quad\n$$\n\n$$\n\\quad f'\\text{ rising}\n$$\n\nso brown is increasing as a function of $x$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA pure vertical shift does not move peaks and valleys horizontally:\n\n$$\n(f'-2)' = f''\n$$\n\nso the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one plane. At $x=0$ brown is below the axis and purple (shifted down by $2$) is even lower. Zeros of green sit under a local max and a local min of brown. Because purple is brown shifted down by $2$, its axis crossings move to different $x$-values from brown's, but the $x$-coordinates of peaks and valleys stay the same (a vertical shift does not move extrema left or right). Wherever green is positive, brown is rising.",
+    "title_de_existing": "f′, f″ und eine Vertikalverschiebung von f′",
+    "context_de_existing": "Braun ist $f'$, Grün ist $f''$, und Lila ist die vertikale Verschiebung $f'-2$, alle auf einer Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ liegt Braun unter der Achse und Lila noch tiefer.",
+      "Nullstellen von Grün liegen unter einem lokalen Max und einem lokalen Min von Braun.",
+      "Lila kreuzt die Achse bei anderen $x$-Werten als Braun.",
+      "Wo immer Grün positiv ist, steigt Braun.",
+      "Weil Lila nur Braun um $2$ nach unten verschoben ist, haben Braun und Lila dieselben lokalen Max/Min-$x$-Werte."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBraun negativ, Lila $=f'-2$ noch negativer.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$f''=0$ an Extrema von $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVerschiebung ändert Nullstellen.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nVertikale Verschiebung erhält die $x$-Lage der Extrema von $f'$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Lila $=f'-2$: andere Nullstellen, gleiche Extremstellen von Braun."
+  },
+  {
+    "case_id": "MATH 11.156",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Three firms' marginal profits: signs, peaks, and advice",
+    "context_en": "Brown, green, and purple are three firms' marginal profits on shared axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=3$, brown and purple are above the axis while green is below it.",
+      "Firm A (brown) has a local profit peak near $x=5$.",
+      "At $x=0$, brown is already positive.",
+      "Purple crosses from positive to negative somewhere in $(4,5)$.",
+      "All three firms have the same expand/contract recommendation at every $x$ in $(0,6)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.\n\n$$\nP_{\\text{brown}}'(3)>0\n$$\n\n$$\nP_{\\text{purple}}'(3)>0\n$$\n\n$$\nP_{\\text{green}}'(3)<0\n$$\n\nso the sign reading matches the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nFirm A (brown) has a local profit peak where its marginal profit changes from $+$ to $-$. On the figure that crossing occurs near $x=5$:\n\n$$\nP_{\\text{brown}}'\\text{ changes }+\\to-\\text{ near }x = 5\n$$\n\nso firm A has a local profit peak near $x=5$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=0$ the brown curve starts at or below the axis, not already positive. Reading the left edge, brown is not above the axis at the start.\n\n$$\nP_{\\text{brown}}'(0)\\not>0\n$$\n\nso the claim that brown is already positive at $x=0$ is wrong, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe purple curve sits above the axis in the mid-window and then crosses below it somewhere in $(4,5)$:\n\n$$\nP_{\\text{purple}}'\\text{ changes }+\\to-\\text{ in }(4,5)\n$$\n\nThat crossing is visible on the figure\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nMarginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.\n\nExpand/contract advice is the sign of each firm's marginal profit. At $x=3$, brown and purple are positive while green is negative:\n\n$$\n\\text{signs disagree at }x = 3\n$$\n\nso the three firms do not share the same recommendation on $(0,6)$, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown, green, and purple are three firms' marginal profits on shared axes. At $x=3$ brown and purple sit above the axis while green sits below — opposite expand/contract advice. Brown starts below the axis at $x=0$ and only becomes positive after $x=1$; it later crosses from $+$ to $-$ near $x=5$, so firm A has a local profit peak there. Purple crosses from positive to negative somewhere in $(4,5)$. Because signs disagree at even one $x$ (e.g. $x=3$), the three firms do not share one expand/contract recommendation on the whole of $(0,6)$.",
+    "title_de_existing": "Grenzgewinne dreier Firmen: Vorzeichen, Gipfel und Rat",
+    "context_de_existing": "Braun, Grün und Lila sind die Grenzgewinne dreier Firmen auf gemeinsamen Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=3$ liegen Braun und Lila über der Achse, während Grün darunter liegt.",
+      "Firma A (braun) hat nahe $x=5$ ein lokales Gewinnmaximum.",
+      "Bei $x=0$ ist Braun bereits positiv.",
+      "Lila wechselt irgendwo in $(4,5)$ von positiv zu negativ.",
+      "Alle drei Firmen haben bei jedem $x$ in $(0,6)$ dieselbe Expandieren/Kontrahieren-Empfehlung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen bei $x=3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichenwechsel $+\\to -$ von Braun nahe $x=5$ → lokales Gewinnmaximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nBei $x=0$ liegt Braun nicht über der Achse — die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nLila kreuzt in $(4,5)$ von $+$ zu $-$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nUnterschiedliche Vorzeichen bei denselben $x$ → unterschiedliche Empfehlungen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Drei Grenzgewinne: Vorzeichen steuern Expansion. Nicht alle Firmen gleich."
+  },
+  {
+    "case_id": "MATH 11.157",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Hard consistency: f versus f′ on one plane",
+    "context_en": "Brown is $f$ and green is $f'$. Decide TRUE or FALSE using only the shared figure.",
+    "statements_en": [
+      "Turning points of brown line up with zeros of green.",
+      "Where green is positive, brown is rising.",
+      "Where green is negative, brown is falling.",
+      "The highest point of green is a local maximum of brown.",
+      "At $x=3$, green is near height $4$, matching the steepest climb of brown."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f$ and green is $f'$. Turning points of brown are critical points of $f$, which must be zeros of $f'$:\n\n$$\nf' = 0\\quad\\text{at turning points of }f\n$$\n\nOn the shared figure those turning points line up with the zeros of green\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nWherever green sits above the axis one has $f'>0$:\n\n$$\nf'>0\\quad\n$$\n\n$$\n\\quad f\\text{ rising}\n$$\n\nPositive $f'$ matches a rising brown graph\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nWherever green sits below the axis one has $f'<0$:\n\n$$\nf'<0\\quad\n$$\n\n$$\n\\quad f\\text{ falling}\n$$\n\nNegative $f'$ matches a falling brown graph\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe highest point of green is a maximum of $f'$, which is where brown climbs most steeply — not where brown has a local maximum:\n\n$$\n\\max f'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local max of }f\n$$\n\nLocal maxima of brown need zeros of green with a $+$ to $-$ change\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nAt $x=3$ the green curve is near height $4$, and that is where brown's climb looks steepest in the window.\n\n$$\nf'(3)\n$$\n\n$$\n4\n$$\n\nso the reading matches the steepest climb of brown, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning points of brown line up with zeros of green; where green is positive, brown rises; where green is negative, brown falls. At $x=3$ green is near height $4$, matching the steepest climb of brown in the window. The highest point of green is where brown is steepest — not a local maximum of brown. Brown's local peak sits near $x=5$ where green is $0$ with a $+$ to $-$ change.",
+    "title_de_existing": "Harte Konsistenz: f versus f′ in einer Ebene",
+    "context_de_existing": "Braun ist $f$ und Grün ist $f'$. Entscheide Wahr oder Falsch nur anhand der gemeinsamen Figur.",
+    "statements_de_existing": [
+      "Wendepunkte von Braun liegen auf Nullstellen von Grün.",
+      "Wo Grün positiv ist, steigt Braun.",
+      "Wo Grün negativ ist, fällt Braun.",
+      "Der höchste Punkt von Grün ist ein lokales Maximum von Braun.",
+      "Bei $x=3$ liegt Grün nahe Höhe $4$, passend zum steilsten Anstieg von Braun."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f'=0$ an Extrema von $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nPeak von $f'$ ist steilste Steigung, kein Extremum von $f$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHöhe von $f'$ = Steigung von $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Konsistenz $f$ vs $f'$: Nullstellen und Vorzeichen passen. Peak von $f'\\neq$ Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.158",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Double zero of f′: read f″ nearby",
+    "context_en": "Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ and crosses at $x=4$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=4$, brown changes from negative to positive.",
+      "Near $x=1$, brown stays non-positive on both sides in the window, so there is no ordinary $+$ to $-$ local-max test for $f$ there.",
+      "Green is zero at some interior point between $1$ and $4$ where brown has a lowest point.",
+      "On $(4,5)$, brown is positive, so $f$ is increasing there.",
+      "A zero of green always forces a local extremum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$. At $x=4$ the brown curve crosses the axis from below to above.\n\n$$\nf'(4) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 4\n$$\n\nso brown changes from negative to positive at $x=4$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nNear $x=1$ brown touches the axis but stays non-positive on both sides in the window:\n\n$$\nf'\\le 0\\text{ on both sides of }x = 1\\text{ (in view)}\n$$\n\nWithout a clear $+$ to $-$ flip, the ordinary local-max test for $f$ does not fire at that touch\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBetween $x=1$ and $x=4$ the brown curve has a lowest point, and there the green curve is zero:\n\n$$\nf'' = 0\\quad\\text{at }\\min f'\\text{ between }1\\text{ and }4\n$$\n\nExtrema of $f'$ line up with zeros of $f''$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the open interval $(4,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nOn $(4,5)$ the brown curve sits above the axis after the crossing at $x=4$.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(4,5)\n$$\n\nso $f$ is increasing there, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA zero of green is a zero of $f''$, which marks an extremum of $f'$ (brown), not automatically a local extremum of $f$:\n\n$$\nf'' = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local extremum of }f\n$$\n\nLocal extrema of $f$ need zeros of brown with a sign change\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ordinary sign change (staying non-positive on both sides in the window) and crosses transversally at $x=4$ from negative to positive. So $f$ has a local minimum at $x=4$, and on $(4,5)$ brown is positive so $f$ is increasing. Between $1$ and $4$, brown has a lowest point aligned with a zero of green. Zeros of $f''$ control extrema of $f'$, not of $f$ — a green zero does not by itself force a local extremum of $f$.",
+    "title_de_existing": "Doppelte Nullstelle von f′: f″ in der Nähe lesen",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$. Braun berührt die Achse bei $x=1$ und kreuzt bei $x=4$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=4$ wechselt Braun von negativ zu positiv.",
+      "Nahe $x=1$ bleibt Braun auf beiden Seiten im Fenster nichtpositiv, also gibt es dort keinen gewöhnlichen Vorzeichenwechsel.",
+      "Grün ist null an einem inneren Punkt zwischen $1$ und $4$, wo Braun einen tiefsten Punkt hat.",
+      "Auf $(4,5)$ ist Braun positiv, also steigt $f$ dort.",
+      "Eine Nullstelle von Grün erzwingt stets ein lokales Extremum von $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nWechsel $-\\to +$ bei $x=4$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBerührung ohne Vorzeichenwechsel bei $x=1$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$f''=0$ am Tal von $f'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f''=0$ steuert Extrema von $f'$, nicht automatisch von $f$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Berührung bei $1$ (kein Extremum von $f$); Kreuzung bei $4$ (lokales Min). $f''=0\\nRightarrow$ Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.159",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Revenue, cost, and profit slopes together",
+    "context_en": "Brown is marginal revenue $R'$, green is marginal cost $C'$, and purple is marginal profit $P'=R'-C'$, drawn on one plane. Decide TRUE or FALSE from the figure.",
+    "statements_en": [
+      "Purple is positive precisely where brown lies above green.",
+      "At $x=2$, brown is near its peak and still above green, so purple is positive there.",
+      "Late in the window, green stays positive while brown falls below it, so purple becomes negative.",
+      "A local profit peak occurs where purple changes from positive to negative.",
+      "Because green never crosses the axis, total cost has a local maximum in the window."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $R'$, green is $C'$, and purple is $P'=R'-C'$. Purple is positive precisely where $R'-C'>0$:\n\n$$\nP'>0\\quad\\Leftrightarrow\\quad R'>C'\\quad\\Leftrightarrow\\quad\\text{brown above green}\n$$\n\nThat geometric comparison is exactly the sign of purple\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=2$, brown ($R'$) is near its peak and still sits above green ($C'$), so marginal revenue exceeds marginal cost and purple ($P'=R'-C'$) is positive there.\n\n$$\nP'(2) = R'(2)-C'(2)>0\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nLate in the window green stays positive while brown falls below it, so $R'<C'$ and purple becomes negative:\n\n$$\nR'<C'\\quad\n$$\n\n$$\n\\quad P'<0\\text{ late in the window}\n$$\n\nThat late crossing of purple below the axis matches the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA local profit peak occurs where marginal profit changes from $+$ to $-$:\n\n$$\nP'\\text{ changes }+\\to-\\quad\n$$\n\n$$\n\\quad\\text{local max of }P\n$$\n\nOn the figure that is where purple crosses from above the axis to below it\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nGreen never crossing the axis means $C'$ stays positive, so total cost $C$ is increasing throughout:\n\n$$\nC'>0\\text{ throughout}\\quad\n$$\n\n$$\n\\quad\\text{no local max of }C\n$$\n\nA never-zero positive $C'$ rules out a local max of $C$\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown is marginal revenue $R'$, green is marginal cost $C'$, and purple is marginal profit $P'=R'-C'$ on one plane. By construction purple is positive precisely where brown lies above green. At $x=2$ brown is near its peak and still above green, so purple is positive there. Late in the window green stays positive while brown falls below it, so purple becomes negative. A local profit peak occurs where purple changes from $+$ to $-$. Green never crossing the axis means $C'>0$ throughout, so total cost keeps rising — there is no local cost maximum from a sign change of $C'$.",
+    "title_de_existing": "Erlös-, Kosten- und Gewinnsteigungen zusammen",
+    "context_de_existing": "Braun ist Grenzerlös $R'$, Grün sind Grenzkosten $C'$, und Lila ist Grenzgewinn $P'=R'-C'$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Lila ist genau dort positiv, wo Braun über Grün liegt.",
+      "Bei $x=2$ liegt Braun nahe seinem Peak und noch über Grün, also ist Lila dort positiv.",
+      "Spät im Fenster bleibt Grün positiv, während Braun darunter fällt, also wird Lila negativ.",
+      "Ein lokales Gewinnmaximum liegt dort, wo Lila von positiv zu negativ wechselt.",
+      "Weil Grün die Achse nie kreuzt, haben die Gesamtkosten im Fenster ein lokales Maximum."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'>0\\Leftrightarrow R'>C'$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei $x=2$: $R'>C'$ → $P'>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSpäter $R'<C'$ → $P'<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nWechsel $+\\to -$ von $P'$ → lokales Gewinnmaximum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nStets positives $C'$ → steigende Kosten, kein Kostenmaximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P'=R'-C'$. Gewinnpeak bei Vorzeichenwechsel von $P'$. Positives $C'$ allein erzeugt kein Kostenmaximum."
+  },
+  {
+    "case_id": "MATH 11.160",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "f′, f″, and a lifted companion h′",
+    "context_en": "Brown is $f'$, green is $f''$, and purple is another derivative $h'$ on shared axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "Green is zero at $x=3$, under the lowest point of brown.",
+      "On $(0,3)$, green is negative, so brown is falling.",
+      "Purple stays above brown by about $1$ everywhere in the window.",
+      "At $x=1$, brown is positive, so $f$ is increasing at $x=1$.",
+      "Purple touches the axis at $x=3$ without changing sign, so that touch need not give a local extremum of $h$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$, green is $f''$, and purple is $h'$. At $x=3$ the green curve is zero, and that zero sits under the lowest point of the brown curve.\n\n$$\nf''(3) = 0\n$$\n\nso the valley of $f'$ lines up with a zero of $f''$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(0,3)$ the green curve ($f''$) sits below the axis:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(0,3)\n$$\n\nNegative $f''$ means the brown graph of $f'$ is falling on that interval, descending toward its lowest point at $x=3$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nThroughout the window the purple curve sits about one unit above the brown curve on the shared scale:\n\n$$\nh'(x)\n$$\n\n$$\nf'(x)+1\n$$\n\nso purple stays above brown by about $1$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nAt $x=1$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.\n\n$$\nf'(1)>0\n$$\n\nPositive $f'$ means $f$ is increasing at $x=1$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nPurple touches the axis at $x=3$ but does not change sign there — it stays non-negative on both sides in the window:\n\n$$\nh'(3) = 0\\text{ with no sign change}\n$$\n\nWithout a genuine sign change, that touch need not give a local extremum of $h$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$, green is $f''$, and purple is another derivative $h'$ on shared axes. Green is zero at $x=3$, under the lowest point of brown. On $(0,3)$ green is negative, so brown is falling. Purple stays above brown by about $1$ everywhere (a parallel lift). At $x=1$ brown is positive, so $f$ is increasing there. Purple touches the axis at $x=3$ without changing sign (non-negative, only touching), so that touch need not give a local extremum of $h$ by the first-derivative test.",
+    "title_de_existing": "f′, f″ und eine angehobene Begleiterin h′",
+    "context_de_existing": "Braun ist $f'$, Grün ist $f''$, und Lila ist eine weitere Ableitung $h'$ auf gemeinsamen Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Grün ist null bei $x=3$, unter dem tiefsten Punkt von Braun.",
+      "Auf $(0,3)$ ist Grün negativ, also fällt Braun.",
+      "Lila bleibt überall im Fenster etwa um $1$ über Braun.",
+      "Bei $x=1$ ist Braun positiv, also steigt $f$ bei $x=1$.",
+      "Lila berührt die Achse bei $x=3$ ohne Vorzeichenwechsel, also muss diese Berührung kein lokales Extremum von der zu $h'$ gehörigen Funktion erzeugen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f''=0$ am Tal von $f'$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $f''$ → fallendes $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVertikaler Abstand etwa $1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBerührung ohne Vorzeichenwechsel → kein garantiertes Extremum.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Grün steuert Braun; Lila liegt über Braun. Berührung ohne Vorzeichenwechsel erzeugt kein Extremum."
+  },
+  {
+    "case_id": "MATH 11.161",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Carpentry workshop: revenue, cost, and build time",
+    "context_en": "A small carpentry workshop builds and sells wooden chairs. Let $Q$ be the number of chairs (treated as continuous). Revenue in euros is $R(Q)=-3Q^{2}+90Q$. Production cost in euros is $C(Q)=0.5Q^{3}-9Q^{2}+60Q+200$. After an assembly-bench reconfiguration the build-time function (hours) is\n$$T(Q)=\\begin{cases}0.5Q^{2}+4Q & \\text{if }Q<12\\\\ 12Q-24 & \\text{if }Q\\ge 12.\\end{cases}$$\nThe owner is comparing operating decisions, average-cost movements, and a nearby rival rather than looking at any one formula in isolation. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Profit (revenue minus cost) reaches its highest value when $Q=15$ chairs are made and sold.",
+      "Starting from an output of $Q_{0}$ chairs, building one extra chair changes the average cost per chair by roughly $Q_{0}-9-\\dfrac{200}{Q_{0}^{2}}$.",
+      "The build-time function $T(Q)$ rises more steeply at $Q=11$ than at $Q=15$.",
+      "A rival workshop's revenue $R_{e}(Q)$ satisfies $R_{e}(6)=R(6)$, and its marginal revenue exceeds this workshop's, $R_{e}^{\\prime}(Q)>R^{\\prime}(Q)$, throughout $6\\le Q\\le 10$. It then follows that $R_{e}(9)<R(9)$.",
+      "Revenue is largest at an output exceeding $12$ chairs."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nProfit is revenue minus cost. An interior peak requires $P^{\\prime}=0$ with the right sign pattern — guessing $Q=15$ from the revenue schedule is the trap here.\n\nProfit is revenue minus cost, so form $P=R-C$ and look for where its derivative vanishes.\n\n$$\nP(Q) = -0.5Q^{3}+6Q^{2}+30Q-200\n$$\n\n$$\nP^{\\prime}(Q) = -1.5Q^{2}+12Q+30\n$$\n\nFactoring gives\n\n$$\nP^{\\prime}(Q) = -1.5(Q-10)(Q+2)\n$$\n\nThe only positive critical point is $Q=10$, and at $Q=15$ one already has $P^{\\prime}(15)<0$, so profit is falling there rather than peaking.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nThe one-unit change in average cost is the derivative of $AC=C/Q$, not the derivative of total cost. Divide first, then differentiate.\n\nAverage cost is total cost per chair, so divide $C$ by $Q$ before differentiating.\n\n$$\nAC(Q) = \\dfrac{C(Q)}{Q} = 0.5Q^{2}-9Q+60+\\dfrac{200}{Q}\n$$\n\n$$\nAC^{\\prime}(Q) = Q-9-\\dfrac{200}{Q^{2}}\n$$\n\nStarting from output $Q_{0}$, the change in average cost from one extra chair is approximated by that derivative evaluated at $Q_{0}$, which is exactly the expression in the claim.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nSteepness means the local slope $T^{\\prime}$ on the active branch. The kink at $Q=12$ forces different formulas at $Q=11$ and $Q=15$.\n\nSteepness of build time is the derivative of whichever branch is active at the stated output.\n\nOn $Q<12$,\n\n$$\nT^{\\prime}(Q) = Q+4\n$$\n\n$$\nT^{\\prime}(11) = 15\n$$\n\nOn $Q\\ge 12$,\n\n$$\nT^{\\prime}(Q) = 12\n$$\n\n$$\nT^{\\prime}(15) = 12\n$$\n\nSince $15>12$, build time rises more steeply at $Q=11$ than at $Q=15$.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nEqual starting revenue plus a strict marginal-revenue advantage integrates to a larger ending revenue. The claim asserts the opposite inequality.\n\nThe rival starts at the same revenue at $Q=6$ but has strictly larger marginal revenue on the way to $Q=9$, so integrate that inequality.\n\n$$\nR_{e}(9)-R_{e}(6)>R(9)-R(6)\n$$\n\nWith $R_{e}(6)=R(6)$, this forces\n\n$$\nR_{e}(9)>R(9)\n$$\n\nThe claim asserts the opposite inequality.\n\n$$\nR_{e}(6) = R(6)\n$$\n\n$$\nQ = 6\n$$\n\n$$\nQ = 9\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nRevenue peaks where $R^{\\prime}=0$ and $R^{\\prime\\prime}<0$ — a different first-order condition from the profit peak at $Q=10$.\n\nRevenue peaks where marginal revenue is zero and the second derivative is negative.\n\n$$\nR^{\\prime}(Q) = -6Q+90 = 0 \\implies Q = 15\n$$\n\n$$\nR^{\\prime\\prime}(Q) = -6<0\n$$\n\nThat critical output $15$ exceeds $12$, so revenue is largest beyond twelve chairs.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Revenue is $R(Q)=-3Q^{2}+90Q$ and cost is $C(Q)=0.5Q^{3}-9Q^{2}+60Q+200$. Profit $P=R-C$ expands to\n\n$$P(Q)=-0.5Q^{3}+6Q^{2}+30Q-200$$\n\n$$\nP^{\\prime}(Q) = -1.5Q^{2}+12Q+30 = -1.5(Q-10)(Q+2)\n$$\n\nso the only positive critical point is $Q=10$. Marginal revenue is\n\n$$R^{\\prime}(Q)=-6Q+90$$\n\nwhich vanishes at $Q=15$, and $R^{\\prime\\prime}=-6<0$, so revenue peaks there. Average cost is\n\n$$AC(Q)=0.5Q^{2}-9Q+60+\\dfrac{200}{Q}$$\n\n$$AC^{\\prime}(Q)=Q-9-\\dfrac{200}{Q^{2}}$$\n\nBuild time has one-sided slopes $T^{\\prime}(Q)=Q+4$ on $Q<12$ and $T^{\\prime}(Q)=12$ on $Q\\ge 12$. If a rival matches revenue at an endpoint but has strictly larger marginal revenue on an interval, integrating that inequality forces a larger rival revenue at the far end.",
+    "title_de_existing": "Schreinerwerkstatt: Erlös, Kosten und Bauzeit",
+    "context_de_existing": "Eine kleine Tischlerei baut und verkauft Holzstühle. Es sei $Q$ die Anzahl der Stühle (stetig). Der Erlös in Euro ist $R(Q)=-3Q^{2}+90Q$. Die Produktionskosten in Euro sind $C(Q)=0.5Q^{3}-9Q^{2}+60Q+200$. Nach einer Umbau der Montagebank lautet die Bauzeitfunktion (Stunden)\n$$T(Q)=\\begin{cases}0.5Q^{2}+4Q & \\text{falls }Q<12\\\\ 12Q-24 & \\text{falls }Q\\ge 12.\\end{cases}$$\nWelche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Gewinn (Erlös minus Kosten) erreicht seinen höchsten Wert, wenn $Q=15$ Stühle hergestellt und verkauft werden.",
+      "Ausgehend von einem Output von $Q_{0}$ Stühlen ändert ein zusätzlicher Stuhl die Stückkosten näherungsweise um $Q_{0}-9-\\dfrac{200}{Q_{0}^{2}}$.",
+      "Die Bauzeitfunktion $T(Q)$ steigt bei $Q=11$ steiler als bei $Q=15$.",
+      "Ein Rivalen-Erlös $R_{e}(Q)$ erfüllt $R_{e}(6)=R(6)$, und sein Grenzerlös übertrifft den dieser Werkstatt, $R_{e}'(Q)>R'(Q)$, durchgängig auf $6\\le Q\\le 10$. Daraus folgt $R_{e}(9)<R(9)$.",
+      "Der Erlös ist am größten bei einem Output über $12$ Stühlen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nGewinnpeak bei $Q=10$, nicht $15$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\n$A'$ liefert genau den genannten Ausdruck.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$T'(11)=15>12=T'(15)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nHöheres $R'$ erzwingt $R_e(9)>R(9)$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nErlöspeak bei $Q=15>12$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gewinnpeak bei $Q=10$; Erlöspeak bei $Q=15$. Rival mit höherem $R'$ liegt später höher."
+  },
+  {
+    "case_id": "MATH 11.162",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Harbour café: drinks, cost, and staffing hours",
+    "context_en": "A harbour café sells specialty drinks, with daily output $Q$ treated as continuous. Its revenue is $R(Q)=40Q-\\dfrac12Q^{2}$ euros and its cost is $C(Q)=\\dfrac13Q^{3}-\\dfrac92Q^{2}+20Q+80$. During peak service, staffing hours are recorded as\n$$H(Q)=\\begin{cases}\\dfrac12Q^{2}+2Q & \\text{if }Q<20\\\\14Q-120 & \\text{if }Q\\ge20.\\end{cases}$$\nManagement wants to distinguish a profit condition from a revenue condition and to interpret a competitor's marginal figures correctly. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Profit $R-C$ has a critical point at $Q=10$.",
+      "At $Q=8$, marginal revenue exceeds marginal cost.",
+      "Staffing hours rise more steeply at $Q=18$ than at $Q=24$.",
+      "Average cost $\\dfrac{C(Q)}{Q}$ is decreasing at $Q=5$.",
+      "If a rival café matches this café's revenue at $Q=6$ but has strictly smaller marginal revenue on $6\\le Q\\le12$, then the rival's revenue at $Q=10$ must be larger than this café's revenue at $Q=10$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA critical point of profit is simply a root of $P^{\\prime}=0$. Form $P=R-C$, differentiate, and factor — the claim asks only for stationarity, not yet a second-derivative test.\n\nProfit is $P=R-C$. Subtract the given cost from revenue and differentiate.\n\n$$\nP(Q) = -\\dfrac{1}{3}Q^{3}+4Q^{2}+20Q-80\n$$\n\n$$\nP^{\\prime}(Q) = -Q^{2}+8Q+20\n$$\n\n$$\nP^{\\prime}(Q) = -(Q-10)(Q+2)\n$$\n\nThe factor $Q-10$ shows that $Q=10$ is a stationary point of profit.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nExpand output only while marginal revenue exceeds marginal cost. Evaluate both derivatives at the named $Q$ and compare them directly.\n\nCompare marginal revenue with marginal cost at the named output.\n\n$$\nR^{\\prime}(Q) = 40-Q\n$$\n\n$$\nC^{\\prime}(Q) = Q^{2}-9Q+20\n$$\n\nAt $Q=8$,\n\n$$\nR^{\\prime}(8) = 32\n$$\n\n$$\nC^{\\prime}(8) = 12\n$$\n\nSince $32>12$, marginal revenue exceeds marginal cost there.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nStaffing steepness is the active branch's derivative. Left of the kink the slope still depends on $Q$; right of it the slope is constant.\n\nStaffing steepness is the derivative on the active branch of $H$.\n\nFor $Q<20$,\n\n$$\nH^{\\prime}(Q) = Q+2\n$$\n\n$$\nH^{\\prime}(18) = 20\n$$\n\nFor $Q\\ge 20$ the slope is constantly $14$, so\n\n$$\nH^{\\prime}(24) = 14\n$$\n\nBecause $20>14$, hours rise more steeply at $18$ than at $24$.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nAverage cost is decreasing precisely where $AC^{\\prime}<0$. Compute that derivative at $Q=5$ rather than reading the level of $AC$.\n\nForm average cost by dividing, then read the sign of its derivative at $Q=5$.\n\n$$\nAC(Q) = \\dfrac{1}{3}Q^{2}-\\dfrac{9}{2}Q+20+\\dfrac{80}{Q}\n$$\n\n$$\nAC^{\\prime}(Q) = \\dfrac{2}{3}Q-\\dfrac{9}{2}-\\dfrac{80}{Q^{2}}\n$$\n\n$$\nAC^{\\prime}(5) = \\dfrac{10}{3}-\\dfrac{9}{2}-\\dfrac{80}{25}<0\n$$\n\nThe derivative is negative, so average cost is decreasing at $Q=5$.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nA strictly smaller rival marginal revenue accumulates a strictly smaller revenue gain. Equal revenue at the left endpoint then forces a lower rival level at the right.\n\nA rival that matches revenue at $Q=6$ but has strictly smaller marginal revenue on $[6,12]$ accumulates a smaller revenue gain.\n\n$$\nR_{e}(10)-R_{e}(6)<R(10)-R(6)\n$$\n\nWith equal levels at $6$, this forces $R_{e}(10)<R(10)$, not larger. The claim reverses the inequality.\n\n$$\nQ = 6\n$$\n\n$$\nQ = 10\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Revenue is $R(Q)=40Q-\\dfrac12 Q^{2}$ and cost is $C(Q)=\\dfrac13 Q^{3}-\\dfrac92 Q^{2}+20Q+80$. Profit $P=R-C$ has\n\n$$P(Q)=-\\dfrac{1}{3}Q^{3}+4Q^{2}+20Q-80$$\n\n$$\nP^{\\prime}(Q) = -Q^{2}+8Q+20 = -(Q-10)(Q+2)\n$$\n\nso $Q=10$ is a stationary point. The marginal schedules are\n\n$$\nR^{\\prime}(Q) = 40-Q,\\qquad C^{\\prime}(Q) = Q^{2}-9Q+20\n$$\n\nStaffing hours obey $H^{\\prime}(Q)=Q+2$ on $Q<20$ and $H^{\\prime}(Q)=14$ on $Q\\ge 20$. Average cost is\n\n$$AC(Q)=\\dfrac{1}{3}Q^{2}-\\dfrac{9}{2}Q+20+\\dfrac{80}{Q}$$\n\n$$AC^{\\prime}(Q)=\\dfrac{2}{3}Q-\\dfrac{9}{2}-\\dfrac{80}{Q^{2}}$$\n\nA rival that matches revenue at an endpoint but has strictly smaller marginal revenue accumulates a smaller revenue gain when that inequality is integrated.",
+    "title_de_existing": "Hafencafé: Getränke, Kosten und Besetzungsstunden",
+    "context_de_existing": "Ein Hafen-Café verkauft Spezialgetränke ($Q$ stetig). Erlös $R(Q)=40Q-\\dfrac12Q^{2}$ Euro, Kosten $C(Q)=\\dfrac13Q^{3}-\\dfrac92Q^{2}+20Q+80$. Personalsstunden\n$$H(Q)=\\begin{cases}\\dfrac12Q^{2}+2Q & \\text{falls }Q<20\\\\14Q-120 & \\text{falls }Q\\ge20.\\end{cases}$$\nBewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Gewinn $R-C$ hat bei $Q=10$ eine kritische Stelle.",
+      "Bei $Q=8$ übertrifft der Grenzerlös die Grenzkosten.",
+      "Die Personalsstunden steigen bei $Q=18$ steiler als bei $Q=24$.",
+      "Die Stückkosten $\\dfrac{C(Q)}{Q}$ fallen bei $Q=5$.",
+      "Wenn ein Rivalen-Café bei $Q=6$ denselben Erlös hat, aber streng kleineren Grenzerlös auf $6\\le Q\\le12$, dann muss der Rivalen-Erlös bei $Q=10$ größer sein als der dieses Cafés bei $Q=10$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=0$ bei $Q=10$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei $Q=8$: $R'>C'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$H'(18)=20>14=H'(24)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $Q=5$: $C'<A$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nKleineres $R'$ → später niedrigerer Erlös.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Gewinnkritisch bei $Q=10$. Rival mit kleinerem $R'$ endet niedriger."
+  },
+  {
+    "case_id": "MATH 11.163",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Print shop: price, demand, and elasticity",
+    "context_en": "A print shop faces daily poster demand $D(p)=120-4p$ when price is $p$ euros, where $0<p<30$. Revenue is $R(p)=pD(p)$ and production cost for $Q$ posters is $C(Q)=2Q+0.05Q^{2}$. The owner is considering both the price-side graph and the output-side cost schedule, so a maximum in one representation need not be a profit maximum. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Revenue is maximised at the price $p=15$.",
+      "At that revenue-maximising price, the price elasticity of demand equals $-1$.",
+      "At the revenue-maximising price, marginal revenue equals marginal cost, so profit is maximised there as well.",
+      "If price rises a little from $p=10$, revenue rises.",
+      "Average cost $\\dfrac{C(Q)}{Q}$ is increasing for every $Q>0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nPrice-side revenue is $R(p)=p\\,D(p)$. Differentiate with respect to $p$, solve $R^{\\prime}=0$, and confirm $R^{\\prime\\prime}<0$ so the critical price is a maximum.\n\nRevenue as a function of price is $R(p)=p(120-4p)$. Differentiate and set the derivative to zero.\n\n$$\nR(p) = 120p-4p^{2}\n$$\n\n$$\nR^{\\prime}(p) = 120-8p = 0 \\implies p = 15\n$$\n\nAlso $R^{\\prime\\prime}(p)=-8<0$, so this critical price is a maximum.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nPoint elasticity is $\\varepsilon=\\dfrac{D^{\\prime}p}{D}$. At a smooth revenue peak the calculus check is unit elasticity — evaluate at the maximising price from A.\n\nPoint price elasticity is $\\varepsilon=\\dfrac{D^{\\prime}(p)\\,p}{D(p)}$.\n\n$$\n\\varepsilon(p) = \\dfrac{-4p}{120-4p}\n$$\n\nAt the revenue-maximising price $p=15$,\n\n$$\n\\varepsilon(15) = \\dfrac{-60}{60} = -1\n$$\n\nElasticity equals $-1$ exactly where revenue peaks.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nA revenue maximum is not a profit maximum. At the revenue peak one has $MR=0$, but profit needs $MR=MC$; check whether marginal cost is also zero there.\n\nAt the revenue-maximising price $p=15$, demand is $Q=60$, so marginal revenue is already zero. Marginal cost at that output is\n\n$$\nC^{\\prime}(Q) = 2+0.1Q\n$$\n\n$$\nC^{\\prime}(60) = 2+6\n$$\n\n$$\n2 + 6 = 8\n$$\n\n$$\nC^{\\prime}(60) = 8\n$$\n\nSince $MR=0\\neq 8=MC$, the first-order condition for profit fails there.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nA small price rise raises revenue precisely while $R^{\\prime}(p)>0$. Evaluate the price-side derivative at $p=10$ and read its sign.\n\nAsk whether revenue is still rising at $p=10$ by reading the sign of $R^{\\prime}$.\n\n$$\nR^{\\prime}(p) = 120-8p\n$$\n\n$$\nR^{\\prime}(10) = 120-80\n$$\n\n$$\n120 - 80 = 40\n$$\n\n$$\nR^{\\prime}(10) = 40 = 40>0\n$$\n\nA small price increase from $10$ therefore raises revenue.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nAverage cost is $C/Q$. After dividing the given quadratic cost, its slope is a positive constant — so $AC$ rises for every positive output.\n\nAverage cost is cost per poster.\n\n$$\nAC(Q) = \\dfrac{C(Q)}{Q} = 2+0.05Q\n$$\n\n$$\nAC^{\\prime}(Q) = 0.05>0\n$$\n\nThe derivative is positive for every $Q>0$, so average cost is increasing throughout the positive domain.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Demand is $D(p)=120-4p$ on $0<p<30$, so revenue is\n\n$$R(p)=120p-4p^{2}$$\n\n$$R^{\\prime}(p)=120-8p$$\n\nThe critical price is $p=15$, and $R^{\\prime\\prime}=-8<0$, so revenue peaks there. Point elasticity is\n\n$$\\varepsilon(p)=\\dfrac{-4p}{120-4p}$$\n\nand at $p=15$ one gets $\\varepsilon(15)=-1$. Demand at that price is $Q=60$, while\n\n$$C^{\\prime}(Q)=2+0.1Q$$\n\nso $C^{\\prime}(60)=8$. Average cost is simply $AC(Q)=2+0.05Q$ with $AC^{\\prime}(Q)=0.05>0$ for every $Q>0$.\n\nThroughout, distinguish the first-order condition for each objective (profit, revenue, average cost, physical output) and integrate any rival marginal-revenue comparison from a matched endpoint before reading the inequality direction.",
+    "title_de_existing": "Druckerei: Preis, Nachfrage und Elastizität",
+    "context_de_existing": "Eine Druckerei sieht Nachfrage $D(p)=120-4p$ ($0<p<30$). Erlös $R(p)=pD(p)$, Kosten $C(Q)=2Q+0.05Q^{2}$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Der Erlös wird beim Preis $p=15$ maximiert.",
+      "Bei diesem erlösmaximierenden Preis gleicht die Preiselastizität der Nachfrage $-1$.",
+      "Beim erlösmaximierenden Preis gleicht der Grenzerlös den Grenzkosten, also wird dort auch der Gewinn maximiert.",
+      "Wenn der Preis etwas von $p=10$ steigt, steigt der Erlös.",
+      "Die Stückkosten $\\dfrac{C(Q)}{Q}$ steigen für jedes $Q>0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R'=0$ bei $p=15$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$|\\varepsilon|=1$ beim Erlöspeak.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$MR=0$ ist nicht $MR=MC$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nBei $p=10$ ist $R'>0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$A=2+0.05Q$ steigt.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Erlöspeak bei $p=15$ mit $|\\varepsilon|=1$, nicht automatisch Gewinnmaximum."
+  },
+  {
+    "case_id": "MATH 11.164",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Market garden: labour, output, and wage",
+    "context_en": "A market garden sells vegetables for a fixed $2$ euros per kilogram. Output from $L$ labour-hours is $Q(L)=30L-L^{2}$ for $0\\le L\\le20$, labour costs $12$ euros per hour, and fixed cost is $40$ euros. The grower must compare the value of an extra worker-hour with its wage rather than merely pursue the largest physical harvest. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Profit is maximised at $L=12$ hours.",
+      "At that profit-maximising labour input, the value of marginal product equals the wage.",
+      "Marginal product of labour is still positive at $L=12$.",
+      "Hiring a little more labour than $L=12$ would raise profit.",
+      "Output $Q(L)$ itself is maximised at the same labour input that maximises profit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nProfit is revenue from harvest minus the wage bill and fixed cost. Differentiate with respect to labour and solve $\\pi^{\\prime}=0$; then check $\\pi^{\\prime\\prime}<0$.\n\nProfit is revenue from output minus the wage bill and fixed cost.\n\n$$\n\\pi(L) = 2(30L-L^{2})-12L-40 = 48L-2L^{2}-40\n$$\n\n$$\n\\pi^{\\prime}(L) = 48-4L = 0 \\implies L = 12\n$$\n\nAlso $\\pi^{\\prime\\prime}=-4<0$, so $L=12$ maximises profit.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nAt a labour optimum the value of marginal product equals the wage — that is the economic reading of $\\pi^{\\prime}=0$. Compute $Q^{\\prime}$ and multiply by the output price.\n\nThe value of marginal product is price times marginal product of labour.\n\n$$\nQ^{\\prime}(L) = 30-2L\n$$\n\n$$\nQ^{\\prime}(12) = 30-24\n$$\n\n$$\n30 - 24 = 6\n$$\n\n$$\nQ^{\\prime}(12) = 6\n$$\n\n$$\nVMP = 2\\cdot 6\n$$\n\n$$\n2\\times 6 = 12\n$$\n\nThat value equals the hourly wage of $12$, which is exactly the profit first-order condition.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nProfit can peak while physical output is still rising, because labour is costly. Check the sign of $Q^{\\prime}$ at the profit-maximising $L$.\n\nMarginal product at the profit-maximising input is\n\n$$\nQ^{\\prime}(12) = 30-24\n$$\n\n$$\n30 - 24 = 6\n$$\n\n$$\nQ^{\\prime}(12) = 6\n$$\n\nThe value $6$ is still positive: physical output is still rising, even though the value of that extra kilogram just balances the wage.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nJust past a profit maximum the derivative $\\pi^{\\prime}$ is already negative, so hiring a little more labour lowers profit rather than raising it.\n\nFrom the profit schedule $\\pi(L)=48L-2L^{2}-40$ one has\n\n$$\n\\pi^{\\prime}(L) = 48-4L\n$$\n\nwhich is strictly negative for every $L>12$. Extra labour beyond the critical point therefore reduces profit — that is exactly what a maximum means for the first-order condition.\n\n$$\nL = 12\n$$\n\n$$\n\\pi(L) = 48L-2L^{2}-40\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nPhysical output peaks where $Q^{\\prime}=0$, a different equation from $\\pi^{\\prime}=0$. Compare that labour input with the profit maximiser.\n\nPhysical output is maximised where $Q^{\\prime}=0$.\n\n$$\nQ^{\\prime}(L) = 30-2L =0\n$$\n\n$$\nL = 15\n$$\n\nThat harvest peak at $L=15$ is later than the profit peak at $L=12$, so the two optima do not coincide. The intermediate algebra above contradicts the claim.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Output is $Q(L)=30L-L^{2}$ sold at $2$ euros per kilogram, with wage $12$ and fixed cost $40$. Profit is\n\n$$\n\\pi(L) = 2(30L-L^{2})-12L-40 = 48L-2L^{2}-40\n$$\n\n$$\\pi^{\\prime}(L)=48-4L$$\n\nso $\\pi^{\\prime}=0$ at $L=12$, and $\\pi^{\\prime\\prime}=-4<0$. Marginal product is\n\n$$Q^{\\prime}(L)=30-2L$$\n\nhence $Q^{\\prime}(12)=6$ and value of marginal product is $VMP=2\\cdot 6=12$, matching the wage. Physical output itself peaks where $Q^{\\prime}=0$, namely at $L=15$.\n\nThroughout, distinguish the first-order condition for each objective (profit, revenue, average cost, physical output) and integrate any rival marginal-revenue comparison from a matched endpoint before reading the inequality direction.",
+    "title_de_existing": "Marktgarten: Arbeit, Output und Lohn",
+    "context_de_existing": "Ein Marktgarten verkauft Gemüse für $2$ Euro/kg. Output $Q(L)=30L-L^{2}$ ($0\\le L\\le20$), Lohn $12$ Euro/Stunde, Fixkosten $40$ Euro. Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Gewinn wird bei $L=12$ Stunden maximiert.",
+      "Bei diesem gewinnmaximierenden Arbeitseinsatz gleicht der Wert des Grenzprodukts dem Lohn.",
+      "Das Grenzprodukt der Arbeit ist bei $L=12$ noch positiv.",
+      "Etwas mehr Arbeit als $L=12$ einzustellen würde den Gewinn erhöhen.",
+      "Der Output $Q(L)$ selbst wird beim selben Arbeitseinsatz maximiert, der den Gewinn maximiert."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$\\pi'=0$ bei $L=12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVMP $=$ Lohn bei $L=12$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$Q'(12)=6>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAm Maximum erhöht mehr Arbeit den Gewinn nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nOutputmax bei $L=15$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Gewinnmax bei $L=12$ mit VMP $=$ Lohn; Outputmax bei $L=15$."
+  },
+  {
+    "case_id": "MATH 11.165",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Courier fleet: routes, cost, and a threshold",
+    "context_en": "A courier firm operates $x>0$ city routes each day, treated as a continuous planning quantity. Its total operating cost is\n$$C(x)=\\begin{cases}x^{2}+20x+100&\\text{if }x<25\\\\45x+100&\\text{if }x\\ge25,\\end{cases}$$\nwhile route revenue is $R(x)=60x-\\dfrac12x^{2}$. The dispatch manager is testing whether a cost level, its marginal slope, and its average are being confused at the subcontracting threshold. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Marginal cost jumps upward when route volume crosses $x=25$.",
+      "For $x<25$, average cost is minimised at $x=10$.",
+      "On $x<25$, profit has a critical point at $x=\\dfrac{40}{3}$.",
+      "At $x=30$, marginal revenue is negative.",
+      "Because total cost is continuous at $x=25$, its left- and right-hand derivatives must be equal."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nA piecewise cost rule can jump in slope even when the level is continuous. Compare the left- and right-hand derivatives at $x=25$ to see the direction of the jump.\n\nMarginal cost is the derivative of the active cost branch. Approaching the threshold from the left,\n\n$$\nC^{\\prime}_{-}(x) = 2x+20\n$$\n\n$$\nC^{\\prime}_{-}(25) = 70\n$$\n\nOn the right branch the slope is constantly $45$, so\n\n$$\nC^{\\prime}_{+}(25) = 45\n$$\n\nThe jump is downward from $70$ to $45$, not upward.\n\nSo the statement is False.\n",
+      "**B.** → True\n\nOn the first branch, minimise $AC=C/x$ by setting $AC^{\\prime}=0$. Solve for the positive critical point and check the sign change of $AC^{\\prime}$.\n\nOn the first branch, average cost is\n\n$$\nAC(x) = x+20+\\dfrac{100}{x}\n$$\n\n$$\nAC^{\\prime}(x) = 1-\\dfrac{100}{x^{2}} = 0 \\implies x = 10\n$$\n\nThe derivative changes from negative to positive at $x=10$, so average cost is minimised there on $x<25$.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nRestrict profit to the first cost branch, differentiate, and solve $P^{\\prime}=0$. That critical point is what the claim names.\n\nOn the first cost branch, profit is $P=R-C$.\n\n$$\nP(x) = 40x-\\dfrac{3}{2}x^{2}-100\n$$\n\n$$\nP^{\\prime}(x) = 40-3x = 0 \\implies x = \\dfrac{40}{3}\n$$\n\nThat critical point lies in $x<25$, so the claim matches the calculation.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nMarginal revenue is $R^{\\prime}$, not the sign of profit. A large route count need not yet put revenue on its downward slope — evaluate the derivative directly from the given revenue rule rather than assuming that “more routes” already means falling revenue.\n\n$$\nR(x) = 60x-\\dfrac12 x^{2}\n$$\n\n$$\nR^{\\prime}(x) = 60-x\n$$\n\n$$\nR^{\\prime}(30) = 30>0\n$$\n\nso marginal revenue is still positive at $x=30$.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nContinuity of $C$ at the threshold does not force matching one-sided derivatives. Check both the common level and the unequal slopes at $x=25$.\n\nBoth cost formulas give the same level at the join,\n\n$$\nC(25) = 25^{2}+20\\cdot 25+100 = 1225 = 45\\cdot 25+100\n$$\n\nso $C$ is continuous there. The one-sided slopes are nevertheless $70$ and $45$, which are unequal, so continuity does not force equal derivatives.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "Cost is piecewise: $C(x)=x^{2}+20x+100$ for $x<25$ and $C(x)=45x+100$ for $x\\ge 25$, with revenue $R(x)=60x-\\dfrac12 x^{2}$. One-sided marginal costs at the threshold are\n\n$$\nC^{\\prime}_{-}(25) = 2\\cdot 25+20 = 70,\\qquad C^{\\prime}_{+}(25) = 45\n$$\n\nwhile the levels match, $C(25)=1225$, so $C$ is continuous but not differentiable there. On the first branch,\n\n$$\nAC(x) = x+20+\\dfrac{100}{x},\\qquad AC^{\\prime}(x) = 1-\\dfrac{100}{x^{2}}\n$$\n\nvanishes at $x=10$. Profit on that branch is $P(x)=40x-\\dfrac{3}{2}x^{2}-100$, so\n\n$$\nP^{\\prime}(x) = 40-3x = 0\\implies x = \\dfrac{40}{3}\n$$\n\nMarginal revenue is $R^{\\prime}(x)=60-x$.",
+    "title_de_existing": "Kurierflotte: Routen, Kosten und eine Schwelle",
+    "context_de_existing": "Eine Kurierfirma betreibt $x>0$ Stadtrouten. Kosten\n$$C(x)=\\begin{cases}x^{2}+20x+100&\\text{falls }x<25\\\\45x+100&\\text{falls }x\\ge25,\\end{cases}$$\nErlös $R(x)=60x-\\dfrac12x^{2}$. Welche der folgenden Aussagen sind korrekt?",
+    "statements_de_existing": [
+      "Die Grenzkosten springen nach oben, wenn das Routenvolumen $x=25$ überschreitet.",
+      "Für $x<25$ werden die Stückkosten bei $x=10$ minimiert.",
+      "Auf $x<25$ hat der Gewinn bei $x=\\dfrac{40}{3}$ eine kritische Stelle.",
+      "Bei $x=30$ ist der Grenzerlös negativ.",
+      "Weil die Gesamtkosten bei $x=25$ stetig sind, müssen ihre links- und rechtsseitigen Ableitungen gleich sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nSprung $70\\to45$ nach unten.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nStückkostenmin bei $x=10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P'=0$ bei $x=40/3$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$R'(30)=30>0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nStetigkeit erzwingt keine gleichen Ableitungen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Grenzkosten springen an $x=25$ nach unten. Stetigkeit $\\neq$ differenzierbar."
+  },
+  {
+    "case_id": "MATH 11.166",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Gift-tube producer: volume, tax, and rival revenue",
+    "context_en": "A gift-tube producer makes cylindrical packages with radius $r$ and height $h=2r$, so package volume is $V(r)=2\\pi r^{3}$. Separately, market demand implies price $p(Q)=72-Q$ for $Q$ packages, and a new per-package tax is $6$ euros. The commercial team has mixed a local packaging approximation with output and rival-revenue claims in its report. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Increasing radius from $2$ to approximately $2.02$ changes volume by about $0.48\\pi$ cubic units.",
+      "The elasticity of package volume with respect to radius is $2$.",
+      "Before tax, revenue is maximised at $Q=36$ packages.",
+      "After the $6$ euro tax, net revenue is maximised at $Q=30$ packages.",
+      "If a rival has the same revenue at $Q=10$ and strictly greater marginal revenue for every output from $10$ to $20$, its revenue at $Q=18$ is greater."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA small radius change is approximated by the differential $\\Delta V\\approx V^{\\prime}(r_{0})\\Delta r$. Differentiate the cubic volume rule, then multiply by $\\Delta r=0.02$.\n\nVolume is $V(r)=2\\pi r^{3}$. Approximate the change by the differential at $r=2$.\n\n$$\nV^{\\prime}(r) = 6\\pi r^{2}\n$$\n\n$$\nV^{\\prime}(2) = 24\\pi\n$$\n\nWith $\\Delta r=0.02$,\n\n$$\nV^{\\prime}(2)\\cdot 0.02 = 24\\pi\\cdot 0.02 = 0.48\\pi\n$$\n\nThe local change in volume is about $0.48\\pi$.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nElasticity of volume with respect to radius is $\\varepsilon_r=\\dfrac{r V'(r)}{V(r)}$.\nFrom the stem, take $V(r)=2\\pi r^{3}$, so\n\n$$\nV'(r) = 6\\pi r^{2}\n$$\n\n$$\n\\varepsilon_r = \\dfrac{r\\cdot 6\\pi r^{2}}{2\\pi r^{3}} = \\dfrac{6\\pi r^{3}}{2\\pi r^{3}} = 3\n$$\n\nThe cubic rule in $r$ gives elasticity $3$, not $2$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nPre-tax revenue is $R(Q)=Q(72-Q)$.\n\n$$\nR(Q) = 72Q-Q^{2}\n$$\n\n$$\nR^{\\prime}(Q) = 72-2Q = 0 \\implies Q = 36\n$$\n\nAlso $R^{\\prime\\prime}=-2<0$, so revenue is maximised at $Q=36$ before the tax.\n\nThat comparison with the claimed figure is the whole content of the letter. Keep the shared setup's derivative formulas in view throughout.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nA per-package tax lowers net price by $6$, shifting the revenue peak. Solve the new first-order condition — do not reuse the pre-tax critical output.\n\nAfter a $6$ euro per-package tax, net revenue is $(72-Q-6)Q$.\n\n$$\nR_{t}(Q) = 66Q-Q^{2}\n$$\n\n$$\nR_{t}^{\\prime}(Q) = 66-2Q =0\n$$\n\n$$\nQ = 33\n$$\n\nThe critical output is $33$, not $30$. The intermediate algebra above contradicts the claim. Carry the derivative comparison all the way to the claimed number before deciding.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nEqual revenue at $Q=10$ plus a strict rival $MR$ advantage through $Q=18$ integrates to a strictly larger rival revenue at $18$.\n\nIntegrate the strict marginal-revenue inequality from $10$ to $18$.\n\n$$\nR_{e}(18)-R_{e}(10)>R(18)-R(10)\n$$\n\nEqual revenue at $Q=10$ then forces $R_{e}(18)>R(18)$, so the rival finishes higher at $18$.\n\n$$\nQ = 10\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "Package volume is $V(r)=2\\pi r^{3}$, so\n\n$$V^{\\prime}(r)=6\\pi r^{2}$$\n\nand the elasticity $\\dfrac{r V^{\\prime}}{V}$ equals $3$. Separately, pre-tax revenue is $R(Q)=Q(72-Q)=72Q-Q^{2}$, with\n\n$$\nR^{\\prime}(Q) = 72-2Q = 0\\implies Q = 36\n$$\n\nAfter a $6$ euro per-package tax, net revenue is $R_{t}(Q)=66Q-Q^{2}$, peaking at $Q=33$. A rival that matches revenue at an endpoint and has strictly larger marginal revenue on an interval finishes with strictly larger revenue at the far end after integrating.\n\nThroughout, distinguish the first-order condition for each objective (profit, revenue, average cost, physical output) and integrate any rival marginal-revenue comparison from a matched endpoint before reading the inequality direction.",
+    "title_de_existing": "Geschenkröhren: Volumen, Steuer und Rivalenumsatz",
+    "context_de_existing": "Geschenkröhren: Volumen $V(r)=2\\pi r^{3}$ ($h=2r$). Preis $p(Q)=72-Q$; Paketsteuer $6$ Euro. Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Eine Erhöhung des Radius von $2$ auf ungefähr $2.02$ ändert das Volumen um etwa $0.48\\pi$ Kubikeinheiten.",
+      "Die Elastizität des Paketvolumens bezüglich des Radius ist $2$.",
+      "Vor der Steuer wird der Erlös bei $Q=36$ Paketen maximiert.",
+      "Nach der $6$-Euro-Steuer wird der Nettoerlös bei $Q=30$ Paketen maximiert.",
+      "Wenn ein Rival bei $Q=10$ denselben Erlös und für jeden Output von $10$ bis $20$ streng größeren Grenzerlös hat, ist sein Erlös bei $Q=18$ größer."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$V'(2)\\cdot0.02=0.48\\pi$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nElastizität $=3$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nPeak bei $Q=36$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nNach Steuer Peak bei $Q=33$, nicht $30$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nHöheres $R'$ → höherer späterer Erlös.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Volumenelastizität $3$. Erlöspeak vor Steuer $36$, nach Steuer $33$."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "MATH 13.112",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Tutoring Session Homework Done",
+    "context_en": "A tutor checks 18 independent homework sets. The expected number completed before the session is 10.8. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The next homework set is incomplete with probability 0.4.",
+      "The expected number of completed sets in the next 12 homework sets is 3.6.",
+      "The variance of the number of completed sets out of 50 homework sets is 12.",
+      "The probability of 3 consecutive completed sets is less than 0.3.",
+      "The probability of at most 4 completed sets in the next 6 homework sets is more than 0.5."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10.8}{18} = 0.6\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.6\n$$\n\n$$\n1 - 0.6 = 0.4\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$, the mean is the product of the number of trials and the success probability:\n\n$$\nE[X] = np\n$$\n\nUsing $n=12$ and the recovered $p=0.6$,\n\n$$\nE[X] = 12\\cdot 0.6\n$$\n\n$$\n12 \\times 0.6 = 7.2\n$$\n\nThe claim reports $3.6$, which is not equal to the computed mean $7.2$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=50$, $p=0.6$, and $1-p=0.4$:\n\n$$\n\\mathrm{Var}(X) = 50\\cdot 0.6\\cdot 0.4\n$$\n\n$$\n50 \\times 0.6 = 30\n$$\n\n$$\n30 \\times 0.4 = 12\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.6$,\n\n$$\np^{3} = (0.6)^{3}\n$$\n\n$$\n0.216\n$$\n\nCompare with the claimed cutoff $0.3$:\n\n$$\n0.216 < 0.3\n$$\n\nThe inequality in the claim therefore holds.\n\nSo the statement is True.\n",
+      "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.6)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$\nP(X\\le 4) = \\sum_{x = 0}^{4} \\binom{6}{x}p^{x}(1-p)^{6-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{6}{0}(0.6)^{0}(0.4)^{6}\\approx 0.0041\n$$\n\n$$\n\\binom{6}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{6}{1}(0.6)^{1}(0.4)^{5}\\approx 0.0369\n$$\n\n$$\n\\binom{6}{1} = \\dfrac{6!}{1!(6-1)!}\n$$\n\n$$\n\\binom{6}{1} = 6\n$$\n\n$$\nP(X = 2) = \\binom{6}{2}(0.6)^{2}(0.4)^{4}\\approx 0.1382\n$$\n\n$$\n\\binom{6}{2} = \\dfrac{6!}{2!(6-2)!}\n$$\n\n$$\n\\dfrac{6!}{2!(4)!} = \\dfrac{6 \\cdot 5}{1 \\cdot 2}\n$$\n\n$$\n6 \\cdot 5 = 30\n$$\n\n$$\n\\dfrac{30}{2} = 15\n$$\n\n$$\n\\binom{6}{2} = 15\n$$\n\n$$\nP(X = 3) = \\binom{6}{3}(0.6)^{3}(0.4)^{3}\\approx 0.2765\n$$\n\n$$\n\\binom{6}{3} = \\dfrac{6!}{3!(6-3)!}\n$$\n\n$$\n\\dfrac{6!}{3!(3)!} = \\dfrac{6 \\cdot 5 \\cdot 4}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n6 \\cdot 5 = 30\n$$\n\n$$\n30 \\cdot 4 = 120\n$$\n\n$$\n\\dfrac{120}{6} = 20\n$$\n\n$$\n\\binom{6}{3} = 20\n$$\n\n$$\nP(X = 4) = \\binom{6}{4}(0.6)^{4}(0.4)^{2}\\approx 0.311\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 4)\n$$\n\n$$\n0.7667\n$$\n\nCompared with $0.5$, we obtain $0.7667 > 0.5$. The claim's inequality holds.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": "A tutor checks 18 independent homework sets. The expected number completed before the session is 10.8.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10.8}{18} = 0.6\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
+    "title_de_existing": "Nachhilfe-Hausaufgaben-Erledigungen",
+    "context_de_existing": "Ein Tutor prüft 18 unabhängige Hausaufgabensätze. Die erwartete Anzahl vor der Sitzung erledigter Sätze ist 10,8. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "statements_de_existing": [
+      "Der nächste Hausaufgabensatz ist mit Wahrscheinlichkeit 0.4 unvollständig.",
+      "Die erwartete Anzahl abgeschlossener Sets unter den nächsten $12$ Hausaufgaben-Sets beträgt $3{,}6$.",
+      "Die Varianz der Anzahl completed sets unter 50 Hausaufgaben-Sets beträgt 12.",
+      "Die Wahrscheinlichkeit von 3 aufeinanderfolgenden completed sets ist kleiner als 0.3.",
+      "Die Wahrscheinlichkeit von höchstens 4 abgeschlossenen Sets unter den nächsten 6 Hausaufgaben-Sets ist größer als 0.5."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10.8}{18} = 0.6\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.6\n$$\n\n$$\n1 - 0.6 = 0.4\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nFür eine binomialverteilte Anzahl $X\\sim\\mathrm{Bin}(n,p)$ ist der Erwartungswert das Produkt aus der Anzahl der Versuche und der Erfolgswahrscheinlichkeit:\n\n$$\nE[X] = np\n$$\n\nMit $n=12$ und dem zurückgewonnenen $p=0.6$,\n\n$$\nE[X] = 12\\cdot 0.6\n$$\n\n$$\n12 \\times 0.6 = 7.2\n$$\n\nDie Behauptung gibt $3.6$ an, was nicht dem berechneten Erwartungswert $7.2$ entspricht.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $X\\sim\\mathrm{Bin}(n,p)$ lautet die Varianzformel\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nSetze ein $n=50$, $p=0.6$ und $1-p=0.4$:\n\n$$\n\\mathrm{Var}(X) = 50\\cdot 0.6\\cdot 0.4\n$$\n\n$$\n50 \\times 0.6 = 30\n$$\n\n$$\n30 \\times 0.4 = 12\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Varianz überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Richtig\n\nUnabhängigkeit der Versuche bedeutet, dass eine Erfolgsserie dieselbe Wahrscheinlichkeit $p$ in jedem Versuch multipliziert:\n\n$$\nP(\\text{3 Erfolge hintereinander}) = p^{3}\n$$\n\nMit dem zurückgewonnenen $p=0.6$,\n\n$$\np^{3} = (0.6)^{3}\n$$\n\n$$\n0.216\n$$\n\nVergleiche mit der behaupteten Schwelle $0.3$:\n\n$$\n0.216 < 0.3\n$$\n\nDie Ungleichung in der Behauptung gilt daher.\n\nDie Aussage ist richtig.",
+      "**E.** → Richtig\n\nEs sei $X\\sim\\mathrm{Bin}(6,0.6)$. Das Ereignis „höchstens $4$ Erfolge“ ist die Vereinigung der einander ausschließenden Ausgänge $X=0,1,\\ldots,4$, also\n\n$$\nP(X\\le 4) = \\sum_{x = 0}^{4} \\binom{6}{x}p^{x}(1-p)^{6-x}\n$$\n\nJede Masse einzeln auswerten:\n\n$$\nP(X = 0) = \\binom{6}{0}(0.6)^{0}(0.4)^{6}\\approx 0.0041\n$$\n\n$$\nP(X = 1) = \\binom{6}{1}(0.6)^{1}(0.4)^{5}\\approx 0.0369\n$$\n\n$$\nP(X = 2) = \\binom{6}{2}(0.6)^{2}(0.4)^{4}\\approx 0.1382\n$$\n\n$$\nP(X = 3) = \\binom{6}{3}(0.6)^{3}(0.4)^{3}\\approx 0.2765\n$$\n\n$$\nP(X = 4) = \\binom{6}{4}(0.6)^{4}(0.4)^{2}\\approx 0.311\n$$\n\nDiese Beiträge addieren,\n\n$$\nP(X\\le 4)\n$$\n\n$$\n0.7667\n$$\n\nIm Vergleich mit $0.5$ erhalten wir $0.7667 > 0.5$. Die Ungleichung der Behauptung gilt.\n\nDie Aussage ist richtig."
+    ],
+    "solution_overview_de_existing": "Ein Tutor prüft 18 unabhängige Hausaufgabensätze. Die erwartete Anzahl vor der Sitzung erledigter Sätze ist 10,8.\n\nAus dem gegebenen Erwartungswert über $n=18$ unabhängige Versuche,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10.8}{18} = 0.6\n$$\n\nWir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(18,0.6)$, also $1-p=0.4$ und $\\mathrm{Var}(X)=np(1-p)$."
+  },
+  {
+    "case_id": "MATH 13.115",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Satellite Packet Acknowledgements",
+    "context_en": "A ground station sends 40 independent packets. The expected number of acknowledgements received is 34, and the variance is 5.1. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The next packet is lost with probability 0.15.",
+      "In a run of 15 packets, the expected number of acknowledgements exceeds 13.",
+      "For 25 packets, the variance of the number of acknowledgements is 3.1875.",
+      "The chance that each of the next 3 packets yields an acknowledgement is less than 0.55.",
+      "The chance of at most 5 acknowledgements in the next 8 packets is more than 0.20."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.85\n$$\n\n$$\n1 - 0.85 = 0.15\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$,\n\n$$\nE[X] = np\n$$\n\nWith $n=15$ and $p=0.85$,\n\n$$\nE[X] = 15\\cdot 0.85\n$$\n\n$$\n15 \\times 0.85 = 12.75\n$$\n\nCompared with the threshold $13$, we have $12.75 \\le 13$, so the mean does not exceed the claimed cutoff.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=25$, $p=0.85$, and $1-p=0.15$:\n\n$$\n\\mathrm{Var}(X) = 25\\cdot 0.85\\cdot 0.15\n$$\n\n$$\n25 \\times 0.85 = 21.25\n$$\n\n$$\n21.25 \\times 0.15 = 3.1875\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
+      "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.85$,\n\n$$\np^{3} = (0.85)^{3}\n$$\n\n$$\n\\approx 0.6141\n$$\n\nCompare with the claimed cutoff $0.55$:\n\n$$\n0.6141\n$$\n\n$$\n0.6141 \\ge 0.55\n$$\n\nThe inequality in the claim therefore fails.\n\nSo the statement is False.\n",
+      "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.85)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$\nP(X\\le 5) = \\sum_{x = 0}^{5} \\binom{8}{x}p^{x}(1-p)^{8-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{8}{0}(0.85)^{0}(0.15)^{8}\\approx 2.5629e-7\n$$\n\n$$\n\\binom{8}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{8}{1}(0.85)^{1}(0.15)^{7}\\approx 1.1618e-5\n$$\n\n$$\n\\binom{8}{1} = \\dfrac{8!}{1!(8-1)!}\n$$\n\n$$\n\\binom{8}{1} = 8\n$$\n\n$$\nP(X = 2) = \\binom{8}{2}(0.85)^{2}(0.15)^{6}\\approx 0.0002\n$$\n\n$$\n\\binom{8}{2} = \\dfrac{8!}{2!(8-2)!}\n$$\n\n$$\n\\dfrac{8!}{2!(6)!} = \\dfrac{8 \\cdot 7}{1 \\cdot 2}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n\\dfrac{56}{2} = 28\n$$\n\n$$\n\\binom{8}{2} = 28\n$$\n\n$$\nP(X = 3) = \\binom{8}{3}(0.85)^{3}(0.15)^{5}\\approx 0.0026\n$$\n\n$$\n\\binom{8}{3} = \\dfrac{8!}{3!(8-3)!}\n$$\n\n$$\n\\dfrac{8!}{3!(5)!} = \\dfrac{8 \\cdot 7 \\cdot 6}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n56 \\cdot 6 = 336\n$$\n\n$$\n\\dfrac{336}{6} = 56\n$$\n\n$$\n\\binom{8}{3} = 56\n$$\n\n$$\nP(X = 4) = \\binom{8}{4}(0.85)^{4}(0.15)^{4}\\approx 0.0185\n$$\n\n$$\n\\binom{8}{4} = \\dfrac{8!}{4!(8-4)!}\n$$\n\n$$\n\\dfrac{8!}{4!(4)!} = \\dfrac{8 \\cdot 7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n336 \\cdot 5 = 1680\n$$\n\n$$\n\\dfrac{1680}{24} = 70\n$$\n\n$$\n\\binom{8}{4} = 70\n$$\n\n$$\nP(X = 5) = \\binom{8}{5}(0.85)^{5}(0.15)^{3}\\approx 0.0839\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 5)\n$$\n\n$$\n0.1052\n$$\n\nCompared with $0.2$, we obtain $0.1052 \\le 0.2$. The claim's inequality does not hold.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A ground station sends 40 independent packets. The expected number of acknowledgements received is 34, and the variance is 5.1.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
+    "title_de_existing": "Satelliten-Paket-Bestätigungen",
+    "context_de_existing": "Eine Bodenstation sendet 40 unabhängige Pakete. Die erwartete Anzahl empfangener Bestätigungen ist 34, und die Varianz ist 5,1. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "statements_de_existing": [
+      "Das nächste Paket geht mit Wahrscheinlichkeit 0.15 verloren.",
+      "In einem Lauf von 15 packets übersteigt die erwartete Anzahl von Bestätigungen 13.",
+      "Für 25 packets beträgt die Varianz der Anzahl von Bestätigungen 3.1875.",
+      "Die Chance, dass jede/r der nächsten 3 Pakete eine Bestätigung ergibt, ist kleiner als 0.55.",
+      "Die Chance von höchstens 5 Bestätigungen in den nächsten 8 packets ist größer als 0.20."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus den Angaben im Aufgabentext die gemeinsame Erfolgswahrscheinlichkeit Schritt für Schritt zurückgewinnen.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nJeder unabhängige Versuch gelingt oder scheitert, daher ist die Misserfolgswahrscheinlichkeit das Komplement\n\n$$\n1-p\n$$\n\nMit dem zurückgewonnenen Wert eingesetzt,\n\n$$\n1-p = 1-0.85\n$$\n\n$$\n1 - 0.85 = 0.15\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Wahrscheinlichkeit überein.\n\nDie Aussage ist richtig.",
+      "**B.** → Falsch\n\nFür eine binomialverteilte Anzahl $X\\sim\\mathrm{Bin}(n,p)$,\n\n$$\nE[X] = np\n$$\n\nMit $n=15$ und $p=0.85$,\n\n$$\nE[X] = 15\\cdot 0.85\n$$\n\n$$\n15 \\times 0.85 = 12.75\n$$\n\nIm Vergleich zur Schwelle $13$ gilt $12.75 \\le 13$, daher überschreitet der Erwartungswert die behauptete Schwelle nicht.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFür $X\\sim\\mathrm{Bin}(n,p)$ lautet die Varianzformel\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nSetze ein $n=25$, $p=0.85$ und $1-p=0.15$:\n\n$$\n\\mathrm{Var}(X) = 25\\cdot 0.85\\cdot 0.15\n$$\n\n$$\n25 \\times 0.85 = 21.25\n$$\n\n$$\n21.25 \\times 0.15 = 3.1875\n$$\n\nDas stimmt mit der in der Behauptung angegebenen Varianz überein.\n\nDie Aussage ist richtig.",
+      "**D.** → Falsch\n\nUnabhängigkeit der Versuche bedeutet, dass eine Erfolgsserie dieselbe Wahrscheinlichkeit $p$ in jedem Versuch multipliziert:\n\n$$\nP(\\text{3 Erfolge hintereinander}) = p^{3}\n$$\n\nMit dem zurückgewonnenen $p=0.85$,\n\n$$\np^{3} = (0.85)^{3}\n$$\n\n$$\n\\approx 0.6141\n$$\n\nVergleiche mit der behaupteten Schwelle $0.55$:\n\n$$\n0.6141\n$$\n\n$$\n0.6141 \\ge 0.55\n$$\n\nDie Ungleichung in der Behauptung gilt daher nicht.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nEs sei $X\\sim\\mathrm{Bin}(8,0.85)$. Das Ereignis „höchstens $5$ Erfolge“ ist die Vereinigung der einander ausschließenden Ausgänge $X=0,1,\\ldots,5$, also\n\n$$\nP(X\\le 5) = \\sum_{x = 0}^{5} \\binom{8}{x}p^{x}(1-p)^{8-x}\n$$\n\nJede Masse einzeln auswerten:\n\n$$\nP(X = 0) = \\binom{8}{0}(0.85)^{0}(0.15)^{8}\\approx 2.5629e-7\n$$\n\n$$\nP(X = 1) = \\binom{8}{1}(0.85)^{1}(0.15)^{7}\\approx 1.1618e-5\n$$\n\n$$\nP(X = 2) = \\binom{8}{2}(0.85)^{2}(0.15)^{6}\\approx 0.0002\n$$\n\n$$\nP(X = 3) = \\binom{8}{3}(0.85)^{3}(0.15)^{5}\\approx 0.0026\n$$\n\n$$\nP(X = 4) = \\binom{8}{4}(0.85)^{4}(0.15)^{4}\\approx 0.0185\n$$\n\n$$\nP(X = 5) = \\binom{8}{5}(0.85)^{5}(0.15)^{3}\\approx 0.0839\n$$\n\nDiese Beiträge addieren,\n\n$$\nP(X\\le 5)\n$$\n\nIm Vergleich mit $0.2$ erhalten wir $0.1052 \\le 0.2$. Die Ungleichung der Behauptung gilt nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Eine Bodenstation sendet 40 unabhängige Pakete. Die erwartete Anzahl empfangener Bestätigungen ist 34, und die Varianz ist 5,1.\n\nAus dem gegebenen Erwartungswert über $n=40$ unabhängige Versuche,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nWir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(40,0.85)$, also $1-p=0.15$ und $\\mathrm{Var}(X)=np(1-p)$."
+  }
+]

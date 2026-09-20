@@ -1,0 +1,124 @@
+CASE MATH 12.33
+ANSWER [true, true, false, true, true]
+TITLE_DE Der Ballsaal-Walzer-Workshop
+CONTEXT_DE 14 Tänzer: jedes Paar schüttelt einmal die Hand. Danach zufällige Paarung zu 7 Übungspaaren.
+STATEMENTS_DE:
+  A. Die Gesamtzahl der Handschläge beträgt 91.
+  B. Die Anzahl verschiedener Paarungen zu 7 Paaren beträgt 135.135.
+  C. Die Wahrscheinlichkeit, dass Lena und Marco gepaart werden, beträgt 1/7.
+  D. Die Wahrscheinlichkeit für eine bestimmte vollständige Paarung ist kleiner als 1 zu 100.000.
+  E. Bei 8 Tänzern wäre die Anzahl der Paarungen zu 4 Paaren 105.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of handshakes exchanged during the icebreaker. When every pair of dancers shakes hands exactly once, this is equivalent to choosing 2 dancers from the total group of $N$ dancers, where the order of selection does not matter. This is a combination problem.
+
+The number of ways to choose $k$ items from a set of $n$ items is given by the combination formula:
+
+$$
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$
+
+For $N=14$ dancers and choosing $k=2$ for each handshake, the number of handshakes is:
+
+$$
+\binom{14}{2} = \dfrac{14!}{2!(14-2)!}
+$$
+
+$$
+\dfrac{14!}{2!(12)!} = \dfrac{14 \cdot 13}{1 \cdot 2}
+$$
+
+$$
+14 \times 13 = 182
+$$
+
+$$
+\dfrac{182}{2} = 91
+$$
+
+$$
+\binom{14}{2} = 91
+$$
+
+There are $91$ total handshakes exchanged. The statement claims the total number of handshakes is $91$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This statement asks for the number of distinct ways to pair $N=14$ dancers into $N/2=7$ practice pairs, where the pairing is an unordered perfect matching. This is a standard combinatorial problem for partitioning items into unordered groups of equal size. The general formula for the number of ways to divide $2n$ distinct items into $n$ unordered pairs is $\frac{(2n)!}{n! 2^n}$.
+
+In this case, we have $N=14$ dancers, so $2n=14$, which means $n=7$.
+Substituting $N=14$ and $n=7$ into the formula:
+
+$$
+\frac{14!}{7! 2^7} = \frac{87,178,291,200}{(5,040)(128)} = \frac{87,178,291,200}{645,120} = 135,135
+$$
+
+The number of distinct ways to pair the 14 dancers is $135,135$. The statement claims this number is $135,135$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+We want to find the probability that two specific dancers, Lena and Marco, are paired with each other. Consider Lena. She needs a partner from the remaining $N-1$ dancers. Since the pairings are chosen completely at random and every matching is equally likely, Lena is equally likely to be paired with any of the other $N-1$ dancers.
+
+There are $N=14$ dancers in total. If Lena is one of them, there are $N-1 = 14-1 = 13$ other dancers who could be her partner. For Lena to be paired specifically with Marco, there is only one favorable outcome among these $13$ possibilities.
+
+The probability of Lena and Marco being paired together is:
+
+$$
+P(\text{Lena and Marco are paired}) = \frac{1}{\text{Number of possible partners for Lena}}
+$$
+
+$$
+P(\text{Lena and Marco are paired}) = \frac{1}{13}
+$$
+
+As a decimal, this is approximately $0.0769$. The statement claims this probability is $1/7$, which is approximately $0.1429$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This statement asks for the probability that a specific complete pairing (a pre-determined list of all 7 pairs) is the one that occurs. Since the instructor assigns the dancers completely at random and every distinct pairing is equally likely, the probability of any one specific pairing occurring is the reciprocal of the total number of distinct ways to pair the 14 dancers.
+
+From the calculations in the overview, the total number of distinct ways to pair the 14 dancers into 7 practice pairs is $135,135$. Therefore, the probability of one specific complete pairing occurring is:
+
+$$
+P(\text{specific pairing}) = \frac{1}{\text{Total number of distinct pairings}}
+$$
+
+$$
+P(\text{specific pairing}) = \frac{1}{135,135}
+$$
+
+As a decimal, this probability is approximately $0.000007399$. The claim states this probability is less than $1$ in $100,000$. One in $100,000$ is $0.00001$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → True
+
+This statement presents a hypothetical scenario with $N=8$ dancers and asks for the number of ways to pair them into $N/2=4$ practice pairs. This uses the same combinatorial formula as in statement **B** for unordered perfect matchings. The general formula for the number of ways to divide $2n$ distinct items into $n$ unordered pairs is $\frac{(2n)!}{n! 2^n}$.
+
+In this hypothetical case, we have $N=8$ dancers, so $2n=8$, which means $n=4$.
+Substituting $N=8$ and $n=4$ into the formula:
+
+$$
+\frac{8!}{4! 2^4} = \frac{40,320}{(24)(16)} = \frac{40,320}{384} = 105
+$$
+
+The number of ways to pair 8 dancers into 4 practice pairs is $105$. The statement claims this number would be $105$.
+
+So the statement is True.
+

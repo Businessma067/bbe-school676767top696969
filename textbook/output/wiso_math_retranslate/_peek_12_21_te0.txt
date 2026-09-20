@@ -1,0 +1,33 @@
+**A.** → Richtig
+
+$\binom{18}{4}=3060$.
+
+$$
+\binom{18}{4} = \dfrac{18!}{4!(18-4)!}
+$$
+
+$$
+\dfrac{18!}{4!(14)!} = \dfrac{18 \cdot 17 \cdot 16 \cdot 15}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+18 \times 17 = 306
+$$
+
+$$
+306 \times 16 = 4896
+$$
+
+$$
+4896 \times 15 = 73440
+$$
+
+$$
+\dfrac{73440}{24} = 3060
+$$
+
+$$
+\binom{18}{4} = 3060
+$$
+
+Die Aussage ist richtig.

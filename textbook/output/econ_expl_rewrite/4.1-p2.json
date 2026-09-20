@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.26",
+    "title": "Retained Profit and Reinvestment Options",
+    "context": "Consider a profitable sole trader deciding whether to withdraw earnings or fund new equipment from surplus. Evaluate the following economic assertions:",
+    "statements": [
+      "When revenues exceed expenses, the business makes a profit that can be retained and reinvested.",
+      "Profit retained in the business rather than withdrawn by the proprietor counts as internal finance.",
+      "The sole proprietor may take profit out of the business instead of reinvesting it for expansion.",
+      "Retained profit reinvested avoids the financial charges associated with creditor borrowing.",
+      "Using internally generated funds avoids interest payments that external creditors would charge."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Operating surplus creates profit available for retention or withdrawal.\n\nApplied carefully, \"When revenues exceed expenses, the business makes a profit that can be retained and reinvested\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reinvested earnings are an internal funding source.\n\nApplied carefully, \"Profit retained in the business rather than withdrawn by the proprietor counts as internal finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "The proprietor may withdraw profit rather than retain it.\n\nApplied carefully, \"The sole proprietor may take profit out of the business instead of reinvesting it for expansion\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal funds avoid borrowing costs such as interest.\n\nApplied carefully, \"Retained profit reinvested avoids the financial charges associated with creditor borrowing\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal finance carries no creditor interest charges.\n\nApplied carefully, \"Using internally generated funds avoids interest payments that external creditors would charge\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.27",
+    "title": "Collateral and Creditor Lending Terms",
+    "context": "Review lending conditions when a sole proprietor requests long-term bank finance secured against property. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained profit is never accepted as security and therefore collateral applies only to external borrowing.",
+      "Financial institutions typically require pledgeable assets as collateral when granting long-term credit.",
+      "Property-backed mortgages commonly secure long-term bank lending to sole proprietors.",
+      "The creditor provides money for a certain time period that must be repaid according to the agreement, usually with interest.",
+      "If private property served as mortgage collateral, it remains at stake when the business cannot repay the loan."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Retained profit is internal finance and involves no creditor collateral.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Lenders commonly demand security for longer-term exposure.\n\nApplied carefully, \"Financial institutions typically require pledgeable assets as collateral when granting long-term credit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mortgages on land and property frequently back long-term loans.\n\nApplied carefully, \"Property-backed mortgages commonly secure long-term bank lending to sole proprietors\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Credit agreements specify repayment periods and interest as the rate of return.\n\nApplied carefully, \"The creditor provides money for a certain time period that must be repaid according to the agreement, usually with interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mortgaged private property can be claimed upon default.\n\nApplied carefully, \"If private property served as mortgage collateral, it remains at stake when the business cannot repay the loan\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.28",
+    "title": "Isolated Liability Principle",
+    "context": "Analyze the single correct principle about creditor reach when a sole proprietorship becomes insolvent. Evaluate the following economic assertions:",
+    "statements": [
+      "When business debts exceed firm resources, unlimited liability allows creditors to reach the sole proprietor's private assets.",
+      "Incorporating informally as a sole trader limits creditor claims to assets formally recorded on the business balance sheet.",
+      "Employees hired by the sole proprietor share unlimited liability for all business obligations equally with the owner.",
+      "Trade credit obligations disappear automatically when the sole proprietorship is not a separate legal entity.",
+      "Unlimited liability applies only when the sole proprietorship borrows from external creditors."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Unlimited liability extends creditor reach to personal property.\n\nApplied carefully, \"When business debts exceed firm resources, unlimited liability allows creditors to reach the sole proprietor's private assets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole proprietorships are unincorporated and do not confer limited liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Employees do not assume the proprietor's unlimited liability.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Lack of legal personality does not cancel trade credit liabilities.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Unlimited liability covers all business debts, not only external borrowing.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.29",
+    "title": "Overdraft Mechanics for Sole Traders",
+    "context": "Consider a sole proprietor using a bank overdraft to bridge seasonal cash-flow gaps between customer receipts. Evaluate the following economic assertions:",
+    "statements": [
+      "Once a business current account is opened, an overdraft facility can provide flexible short-term credit for cash shortfalls.",
+      "An overdraft facility converts the sole proprietorship into a corporation with limited liability.",
+      "Because overdrafts are short-term, they are not counted among the proprietor's business liabilities.",
+      "Overdraft interest is charged on the full account balance even when the balance remains positive.",
+      "A bank overdraft is classified as internal finance because it uses the proprietor's own bank account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Overdrafts are flexible short-term credit linked to a business bank account.\n\nApplied carefully, \"Once a business current account is opened, an overdraft facility can provide flexible short-term credit for cash shortfalls\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Overdraft arrangements do not change legal structure or liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Short-term credit still counts as a liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdraft interest applies only when the account is overdrawn, not on positive balances.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdrafts are external short-term credit from the bank, not internal finance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.30",
+    "title": "Trade Credit and Supplier Agreements",
+    "context": "Analyze trade credit as a short-term financing arrangement between a sole trader and material suppliers. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit is based on an agreement with the supplier allowing deferred payment for purchases.",
+      "Trade credit carries no repayment obligation because it is classified as internal finance.",
+      "Supplier trade credit removes the need for the sole proprietor to manage cash-flow timing.",
+      "Outstanding supplier balances from trade credit are external short-term liabilities until payment is made.",
+      "A business using trade credit does not have to pay all purchases immediately but receives a credit period."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Supplier agreements define deferred payment terms.\n\nApplied carefully, \"Trade credit is based on an agreement with the supplier allowing deferred payment for purchases\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Trade credit is external short-term finance, not internal.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Trade credit assists timing but repayment obligations remain.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Payables to suppliers are liabilities of the sole proprietor.\n\nApplied carefully, \"Outstanding supplier balances from trade credit are external short-term liabilities until payment is made\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Purchases may be settled after an agreed credit period.\n\nApplied carefully, \"A business using trade credit does not have to pay all purchases immediately but receives a credit period\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.31",
+    "title": "Owner Investment and Investor Funds",
+    "context": "Review external finance available when a sole proprietor seeks capital beyond personal savings. Evaluate the following economic assertions:",
+    "statements": [
+      "The owner's investment from personal funds is an external source of finance for the sole proprietorship.",
+      "Financial funds from investors who provide capital to the business are external sources of finance.",
+      "Funds from creditors such as banks are external sources that must be repaid according to the credit agreement.",
+      "Limited personal wealth makes it very difficult for a sole proprietor to set up the business.",
+      "Launching a sole tradership typically begins with the proprietor's own savings as initial funding."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Owner injection from personal wealth is external to operating surplus.\n\nApplied carefully, \"The owner's investment from personal funds is an external source of finance for the sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Investor contributions enter from outside the firm.\n\nApplied carefully, \"Financial funds from investors who provide capital to the business are external sources of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Bank credit is external finance creating repayment duties.\n\nApplied carefully, \"Funds from creditors such as banks are external sources that must be repaid according to the credit agreement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Insufficient personal funds constrain establishment.\n\nApplied carefully, \"Limited personal wealth makes it very difficult for a sole proprietor to set up the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Personal savings commonly provide initial external finance at launch.\n\nApplied carefully, \"Launching a sole tradership typically begins with the proprietor's own savings as initial funding\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.32",
+    "title": "Internal Finance Advantages",
+    "context": "Analyze why reinvested earnings and asset disposals matter for a sole proprietorship avoiding borrowing costs. Evaluate the following economic assertions:",
+    "statements": [
+      "Internal sources of finance are important because no financial charges such as interest have to be paid.",
+      "Retained profit reinvested in the business is an internal source of finance once revenues exceed expenses.",
+      "Sale of assets that are not needed anymore can provide internal finance for the sole proprietorship.",
+      "Disposing of surplus equipment can release internal funds for reinvestment without borrowing from creditors.",
+      "Using internal finance means the sole proprietor no longer bears unlimited liability for business debts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Internal funds avoid borrowing costs like interest.\n\nApplied carefully, \"Internal sources of finance are important because no financial charges such as interest have to be paid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reinvested surplus is generated within operations.\n\nApplied carefully, \"Retained profit reinvested in the business is an internal source of finance once revenues exceed expenses\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Disposing unused assets releases internal funds.\n\nApplied carefully, \"Sale of assets that are not needed anymore can provide internal finance for the sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Asset sales supply internal finance without external borrowing.\n\nApplied carefully, \"Disposing of surplus equipment can release internal funds for reinvestment without borrowing from creditors\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Liability structure is unchanged by the finance source used.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.33",
+    "title": "Short-Term Versus Long-Term Credit Duration",
+    "context": "Review how banks classify credit duration for sole proprietorship borrowing arrangements. Evaluate the following economic assertions:",
+    "statements": [
+      "Banks offer only long-term credit to sole proprietors and never short-term facilities with duration less than a year.",
+      "A bank overdraft is among the most common forms of short-term credit for a sole proprietorship.",
+      "Trade credit from suppliers typically functions as short-term finance for purchase obligations.",
+      "Short-term credit is never recorded as a liability for the sole proprietor because it is repaid quickly.",
+      "Long-term mortgage loans cease to be liabilities once land and property are pledged as collateral."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Banks offer both short-term and long-term credit to sole proprietors.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Overdrafts are a standard short-term facility.\n\nApplied carefully, \"A bank overdraft is among the most common forms of short-term credit for a sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Supplier credit periods cover near-term purchases.\n\nApplied carefully, \"Trade credit from suppliers typically functions as short-term finance for purchase obligations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Short-term credit remains a liability until repaid.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Mortgage loans remain liabilities despite property collateral.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.34",
+    "title": "Finance Source Classification Traps",
+    "context": "Analyze subtle distinctions between owner savings, retained profit, and creditor funds for sole traders. Evaluate the following economic assertions:",
+    "statements": [
+      "Most sole proprietors invest their own savings as an external source of finance when starting the business.",
+      "Owner savings at start-up and retained profit from later years are both classified as internal finance.",
+      "Retained profit reinvested after successful trading is an internal source of finance.",
+      "Bank credit and trade credit are internal sources once the funds are held in the business bank account.",
+      "Investor funds obtained when personal savings are insufficient are internal sources of operating cash."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Initial savings are owner investment from outside operating surplus.\n\nApplied carefully, \"Most sole proprietors invest their own savings as an external source of finance when starting the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Start-up savings are external; only later retained profit is internal.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Reinvested earnings originate within the business.\n\nApplied carefully, \"Retained profit reinvested after successful trading is an internal source of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Creditor and supplier credit are external liabilities.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Investor capital supplements owner funds from outside.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.35",
+    "title": "Operating Surplus and Asset Disposal",
+    "context": "Consider a sole trader reinvesting earnings and selling obsolete equipment to fund working capital. Evaluate the following economic assertions:",
+    "statements": [
+      "When revenues exceed expenses, profit can be retained and reinvested unless withdrawn by the sole proprietor.",
+      "Sale of assets no longer needed provides internal finance without incurring interest charges.",
+      "Internal sources of finance avoid financial charges such as interest paid on borrowed funds.",
+      "Reinvested surplus can fund operations without creating creditor liabilities for the sole proprietorship.",
+      "Withdrawn profit used for personal spending remains available as internal finance for the business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Surplus may be kept in the firm or taken by the owner.\n\nApplied carefully, \"When revenues exceed expenses, profit can be retained and reinvested unless withdrawn by the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Asset disposal releases internal funds without borrowing.\n\nApplied carefully, \"Sale of assets no longer needed provides internal finance without incurring interest charges\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal funding avoids creditor interest costs.\n\nApplied carefully, \"Internal sources of finance avoid financial charges such as interest paid on borrowed funds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Retained earnings kept in the firm supply internal finance.\n\nApplied carefully, \"Reinvested surplus can fund operations without creating creditor liabilities for the sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Withdrawn profit leaves the business and is no longer internal finance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.36",
+    "title": "Mortgage Collateral and Repayment Duties",
+    "context": "Review long-term borrowing secured against property owned by a sole proprietor. Evaluate the following economic assertions:",
+    "statements": [
+      "Property used as mortgage collateral for a long-term bank loan automatically incorporates the sole proprietorship as a limited company.",
+      "Long-term creditors may waive all interest charges when land and buildings serve as mortgage collateral.",
+      "Private assets that served as collateral remain completely protected from claims once the mortgage is registered.",
+      "Short-term overdrafts and long-term mortgage loans both create liabilities for the sole proprietor.",
+      "Long-term credit secured by a mortgage is excluded from the sole proprietor's liabilities once collateral is pledged."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Mortgage collateral does not change the unincorporated legal structure.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Credit agreements still specify interest as the rate of return.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Collateral assets can be claimed upon default.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "All credit forms create repayment obligations.\n\nApplied carefully, \"Short-term overdrafts and long-term mortgage loans both create liabilities for the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mortgage loans remain liabilities despite collateral.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.37",
+    "title": "Integrated Finance and Liability Review",
+    "context": "Analyze the combined financing and liability profile of a typical sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Financial funds of the business mainly depend on the financial capabilities of the sole proprietor.",
+      "Owner investment, investor funds, and creditor loans are external sources of finance.",
+      "Retained profit and sale of unused assets are internal sources of finance once operations are under way.",
+      "Unlimited liability is confined to obligations arising from external creditor borrowing only.",
+      "All credit, whether short-term overdraft or long-term mortgage, is a liability for the sole proprietor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Available funds reflect the proprietor's financial capacity.\n\nApplied carefully, \"Financial funds of the business mainly depend on the financial capabilities of the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "These funds enter from outside accumulated internal surplus.\n\nApplied carefully, \"Owner investment, investor funds, and creditor loans are external sources of finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reinvested earnings and asset sales fund from within.\n\nApplied carefully, \"Retained profit and sale of unused assets are internal sources of finance once operations are under way\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability applies to all business debts regardless of finance source.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Every credit arrangement creates repayment duty.\n\nApplied carefully, \"All credit, whether short-term overdraft or long-term mortgage, is a liability for the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.38",
+    "title": "Management Retention Despite Staffing",
+    "context": "Consider a retail sole proprietorship where the owner employs sales staff for daily customer service. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor can hire personnel when support is needed to operate the business.",
+      "Hiring sales staff transfers the most important management decisions to employees permanently.",
+      "Despite employed assistants, the proprietor must make the key management decisions and accept the associated business risk.",
+      "Management of the business largely depends on the sole proprietor even when staff are present.",
+      "Employees assume unlimited liability for business debts in proportion to their wages."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Staff may be recruited to support operations.\n\nApplied carefully, \"The sole proprietor can hire personnel when support is needed to operate the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Strategic authority stays with the proprietor, not employees.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Ultimate decisions and risk remain with the owner.\n\nApplied carefully, \"Despite employed assistants, the proprietor must make the key management decisions and accept the associated business risk\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The proprietor retains central management responsibility.\n\nApplied carefully, \"Management of the business largely depends on the sole proprietor even when staff are present\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Employees do not share the proprietor's unlimited liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.39",
+    "title": "Legal Entity and Hiring Capacity",
+    "context": "Review whether lack of separate legal personality limits a sole proprietorship's operational capacity. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship that is not a legal entity of its own cannot hire personnel under any circumstances.",
+      "A sole proprietorship that is not a legal entity of its own may still hire personnel when support is required.",
+      "Because the business lacks separate legal personality, it cannot enter contracts with suppliers or banks.",
+      "Incorporation is automatic once a sole trader hires more than one employee.",
+      "Hiring employees transfers ownership of the sole proprietorship to the workforce collectively."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Unincorporated status does not bar employment.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Sole traders may recruit staff despite lacking separate legal personality.\n\nApplied carefully, \"A sole proprietorship that is not a legal entity of its own may still hire personnel when support is required\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Sole traders routinely contract with suppliers and banks.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Employment does not incorporate the business or change liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Employees do not acquire ownership; the sole proprietor remains the owner.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.40",
+    "title": "Succession and Illness Continuity",
+    "context": "Analyze continuity risks when a sole proprietor faces prolonged absence from management duties. Evaluate the following economic assertions:",
+    "statements": [
+      "Continuity problems may occur if the sole proprietor suffers a long-term illness.",
+      "Long-term illness of the owner has no continuity effect because employees legally become co-owners automatically.",
+      "A sole proprietorship automatically converts to a partnership when the owner cannot work for several months.",
+      "Retirement plans of the sole proprietor can create continuity problems for the business.",
+      "Dependence on one manager makes succession planning less pressing than in firms with transferable ownership shares."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Prolonged absence disrupts management continuity.\n\nApplied carefully, \"Continuity problems may occur if the sole proprietor suffers a long-term illness\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Employees do not automatically acquire ownership.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Temporary absence does not change the legal structure to a partnership.\n\nThe absolute wording \"automatically\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Retirement removes the central owner-manager.\n\nApplied carefully, \"Retirement plans of the sole proprietor can create continuity problems for the business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Single ownership makes succession planning more pressing, not less.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.41",
+    "title": "Complete Sole Trader Feature Set",
+    "context": "Review the full set of structural, fiscal, and financing characteristics attributed to sole proprietorships. Evaluate the following economic assertions:",
+    "statements": [
+      "One person owns, manages, and runs the business as a sole proprietorship.",
+      "Establishment is easy with no financial requirements to start this kind of business.",
+      "Profits are taxed on the owner's personal income tax statement because the firm is not a legal entity.",
+      "The sole proprietor faces unlimited liability with private assets also at stake.",
+      "Internal finance from retained profit avoids interest charges, while external credit creates liabilities with interest."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Single ownership and management define the form.\n\nApplied carefully, \"One person owns, manages, and runs the business as a sole proprietorship\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "No minimum capital is required.\n\nApplied carefully, \"Establishment is easy with no financial requirements to start this kind of business\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unincorporated profits are personal income.\n\nApplied carefully, \"Profits are taxed on the owner's personal income tax statement because the firm is not a legal entity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability exposes personal wealth.\n\nApplied carefully, \"The sole proprietor faces unlimited liability with private assets also at stake\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal funds avoid interest; external credit carries repayment costs.\n\nApplied carefully, \"Internal finance from retained profit avoids interest charges, while external credit creates liabilities with interest\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.42",
+    "title": "External Finance and Creditor Obligations",
+    "context": "Analyze external funding routes when personal savings prove insufficient for a sole proprietorship expansion. Evaluate the following economic assertions:",
+    "statements": [
+      "External finance from creditors eliminates unlimited liability because the bank shares business risk.",
+      "Extra money can be sought from investors and/or from banks when the sole proprietor needs additional funds.",
+      "Capital contributed by the owner together with investor funds and creditor finance counts as external finance for the firm.",
+      "Creditor funds need not be repaid when the loan is used to purchase productive business assets.",
+      "Insufficient personal wealth has no effect on whether a sole proprietorship can be established."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Borrowing does not limit the proprietor's unlimited liability.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Investors and banks supplement personal resources.\n\nApplied carefully, \"Extra money can be sought from investors and/or from banks when the sole proprietor needs additional funds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Owner investment plus investor and creditor funds are external sources of finance.\n\nApplied carefully, \"Capital contributed by the owner together with investor funds and creditor finance counts as external finance for the firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Credit agreements require repayment with interest regardless of asset use.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Limited personal funds make establishment very difficult.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.43",
+    "title": "Credit Duration and Instrument Types",
+    "context": "Review short-term and long-term credit instruments outlined for sole proprietorship finance. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade credit from suppliers is long-term finance because payment may be deferred for several months.",
+      "Overdraft interest is charged on the account even when the balance remains positive and the account is not overdrawn.",
+      "Short-term credit includes bank overdrafts and trade credit with duration typically less than a year.",
+      "Long-term mortgage loans secured by property are not liabilities because collateral replaces repayment duty.",
+      "All kinds of credit are optional gifts that create no repayment obligation for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Trade credit remains short-term purchase finance despite deferral.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdraft interest applies during overdrawn periods only.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdrafts and trade credit cover near-term needs.\n\nApplied carefully, \"Short-term credit includes bank overdrafts and trade credit with duration typically less than a year\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Mortgage loans remain liabilities despite collateral.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Every credit form creates repayment obligations.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.44",
+    "title": "Personal Savings and Business Viability",
+    "context": "Consider how the proprietor's personal wealth constrains sole proprietorship formation and early operations. Evaluate the following economic assertions:",
+    "statements": [
+      "The amount of finance available to the business is closely tied to the sole proprietor's personal financial capacity.",
+      "Mandatory minimum share capital must be raised from public investors before a sole trader may open.",
+      "A zero capital entry requirement does not stop the owner from contributing personal savings voluntarily.",
+      "Most sole proprietors invest their own savings in their business at the start.",
+      "Owner savings invested at launch are internal finance generated entirely from earlier trading surplus."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Available capital reflects the owner's financial position.\n\nApplied carefully, \"The amount of finance available to the business is closely tied to the sole proprietor's personal financial capacity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "No such capital requirement applies to sole proprietorships.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Voluntary owner investment from savings is common despite no minimum rule.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Personal savings commonly fund initial operations.\n\nApplied carefully, \"Most sole proprietors invest their own savings in their business at the start\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Initial owner investment from savings is external finance at start-up.\n\nThe absolute wording \"entirely\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.45",
+    "title": "Interest Charges on Borrowed Funds",
+    "context": "Analyze cost differences between internal reinvestment and creditor finance for a sole trader. Evaluate the following economic assertions:",
+    "statements": [
+      "Retained earnings kept in the firm must be remunerated with interest paid to the owner as if the owner were an external lender.",
+      "Bank credit may be taken without any repayment obligation when the business generates strong revenues.",
+      "Retained profit reinvested in the firm carries the same mandatory interest cost as a bank overdraft.",
+      "Using a bank overdraft means interest is paid only when the account is overdrawn.",
+      "Trade credit from suppliers never creates any liability for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Internal finance avoids creditor interest charges.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Credit agreements require repayment with interest regardless of revenue.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Retained profit is internal and does not incur borrowing interest.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Overdraft interest applies during overdrawn periods only.\n\nApplied carefully, \"Using a bank overdraft means interest is paid only when the account is overdrawn\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Trade credit is a payable liability until settled.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.46",
+    "title": "Collateral Requirements Across Credit Terms",
+    "context": "Review creditor security demands when a sole proprietor applies for short-term overdraft versus long-term property loan. Evaluate the following economic assertions:",
+    "statements": [
+      "Short-term trade credit from suppliers typically requires pledging the proprietor's private home as mortgage collateral.",
+      "Long-term lenders commonly insist on pledgeable assets as security when extending credit beyond one year.",
+      "Mortgage arrangements often tie long-term bank loans to land and property owned by the proprietor.",
+      "If private assets served as collateral and the business fails, those assets remain at stake.",
+      "Pledging collateral for a long-term loan removes all unlimited liability exposure for the sole proprietor."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Trade credit is supplier agreement finance, not typically mortgage-backed.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Long-term lenders commonly demand security.\n\nApplied carefully, \"Long-term lenders commonly insist on pledgeable assets as security when extending credit beyond one year\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Property mortgages frequently back long-term loans.\n\nApplied carefully, \"Mortgage arrangements often tie long-term bank loans to land and property owned by the proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Pledged assets can be seized upon default.\n\nApplied carefully, \"If private assets served as collateral and the business fails, those assets remain at stake\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Unlimited liability persists; collateral does not remove broader exposure.\n\nThe absolute wording \"all\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.47",
+    "title": "Finance Mix and Tax Treatment Combined",
+    "context": "Analyze how fiscal treatment and finance sourcing interact within an unincorporated sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "Profits are reported on the owner's personal income tax statement because the business is not a legal entity.",
+      "Retained profit reinvested rather than withdrawn supplies internal finance without interest charges.",
+      "Personal income tax on profits means the sole proprietorship pays corporate tax on retained earnings separately.",
+      "Funds from investors and banks are external sources that create liabilities or ownership claims from outside.",
+      "Sale of unused assets can provide internal finance once the business is operating."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Unincorporated profits are personal taxable income.\n\nApplied carefully, \"Profits are reported on the owner's personal income tax statement because the business is not a legal entity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Reinvested surplus is internal and avoids borrowing costs.\n\nApplied carefully, \"Retained profit reinvested rather than withdrawn supplies internal finance without interest charges\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "There is no separate corporate tax on retained earnings for a sole trader.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "External finance enters from investors and creditors.\n\nApplied carefully, \"Funds from investors and banks are external sources that create liabilities or ownership claims from outside\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Asset disposal releases internal funds during operations.\n\nApplied carefully, \"Sale of unused assets can provide internal finance once the business is operating\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.48",
+    "title": "Liability Persistence Under All Finance Choices",
+    "context": "Review whether finance source selection alters the sole proprietor's liability for business obligations. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor is liable for all debts and obligations regardless of whether finance is internal or external.",
+      "Private assets are also at stake if the business fails and debts need to be repaid.",
+      "Bank overdrafts, trade credit, and long-term loans all count as liabilities for the sole proprietor.",
+      "Unlimited liability applies even when the sole proprietorship relies on retained profit or asset sales for finance.",
+      "Unlimited liability applies to all business debts and is not limited to externally borrowed funds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Liability structure is independent of funding source.\n\nApplied carefully, \"The sole proprietor is liable for all debts and obligations regardless of whether finance is internal or external\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Personal wealth remains exposed under unlimited liability.\n\nApplied carefully, \"Private assets are also at stake if the business fails and debts need to be repaid\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "All credit forms create repayment duties.\n\nApplied carefully, \"Bank overdrafts, trade credit, and long-term loans all count as liabilities for the sole proprietor\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal finance does not remove unlimited liability for business debts.\n\nApplied carefully, \"Unlimited liability applies even when the sole proprietorship relies on retained profit or asset sales for finance\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Internal and external finance alike leave the proprietor fully liable.\n\nApplied carefully, \"Unlimited liability applies to all business debts and is not limited to externally borrowed funds\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.49",
+    "title": "Holistic Sole Proprietorship Assessment",
+    "context": "Consider a small service business operated as a sole proprietorship combining owner savings, supplier credit, and reinvested profit. Evaluate the following economic assertions:",
+    "statements": [
+      "A sole proprietorship cannot employ staff because the business is not a separate legal entity.",
+      "Because the business lacks separate legal personality, operating profits are included on the proprietor's personal income tax return.",
+      "Owner savings and bank credit are external sources; retained profit and asset sales are internal sources.",
+      "All credit including overdrafts and trade credit creates liabilities, and unlimited liability exposes private assets.",
+      "Continuity of a sole proprietorship is unaffected when the sole proprietor retires or suffers long-term illness."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Unincorporated status does not prevent hiring personnel.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Unincorporated profits are personal taxable income.\n\nApplied carefully, \"Because the business lacks separate legal personality, operating profits are included on the proprietor's personal income tax return\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "External versus internal classification follows the textbook definitions.\n\nApplied carefully, \"Owner savings and bank credit are external sources; retained profit and asset sales are internal sources\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Credit creates liabilities under unlimited liability reaching private assets.\n\nApplied carefully, \"All credit including overdrafts and trade credit creates liabilities, and unlimited liability exposes private assets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Single-person dependence creates succession and continuity risk.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.50",
+    "title": "Final Finance and Management Synthesis",
+    "context": "Analyze the interplay of management authority, finance sources, and liability for a mature sole proprietorship. Evaluate the following economic assertions:",
+    "statements": [
+      "The sole proprietor retains the most important management decisions even when employees handle routine tasks.",
+      "Easy establishment with no capital requirements means the business never faces continuity or liability concerns.",
+      "Retained profit reinvested in the firm requires paying interest charges to external creditors.",
+      "If revenues exceed expenses, profit may be retained for reinvestment unless the proprietor withdraws it.",
+      "Investor funds and bank loans are internal sources because they are deposited in the business bank account."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Strategic authority remains with the proprietor despite hired staff.\n\nApplied carefully, \"The sole proprietor retains the most important management decisions even when employees handle routine tasks\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Easy start-up does not remove continuity risk or unlimited liability.\n\nThe absolute wording \"never\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Retained profit is internal finance and does not incur creditor interest.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Operating surplus may be reinvested or taken personally.\n\nApplied carefully, \"If revenues exceed expenses, profit may be retained for reinvestment unless the proprietor withdraws it\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Investor and bank funds are external sources, not internal finance.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  }
+]

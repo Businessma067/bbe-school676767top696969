@@ -1,0 +1,73 @@
+**B.** → Falsch
+
+Bei der Behauptung geht es um die Wahrscheinlichkeit, genau ein Paar zu bekommen. Um diese Wahrscheinlichkeit herauszufinden, müssen wir zunächst die Anzahl der Möglichkeiten zählen, um eine „genau ein Paar“-Hand zu bilden. Eine „genau ein Paar“-Hand besteht aus zwei Karten mit einem Wert und drei Karten mit drei unterschiedlichen Werten, von denen keine mit dem Wert des Paares übereinstimmt. Diese Anzahl, $N(\text{one pair})$ , wird durch eine Auswahlfolge bestimmt. Zunächst wird für das Paar ein Rang aus den 13 verfügbaren Rängen ausgewählt. Als nächstes werden zwei von vier Farben für die Karten dieses Ranges ausgewählt. Anschließend werden aus den verbleibenden 12 Rängen drei verschiedene Ränge für die drei Einzelkarten ausgewählt, um sicherzustellen, dass kein Drilling oder zweites Paar gebildet wird. Schließlich wird für jede dieser 3 Einzelkarten eine Farbe von 4 ausgewählt.
+
+Die Multiplikation dieser Auswahlmöglichkeiten ergibt die Gesamtzahl der „ein Paar“-Hände: $$
+\binom{52}{5} = \dfrac{52!}{5!(52-5)!}
+$$ $$
+\dfrac{52!}{5!(47)!} = \dfrac{52 \cdot 51 \cdot 50 \cdot 49 \cdot 48}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5}
+$$ $$
+52 \times 51 = 2652
+$$ $$
+2652 \times 50 = 132600
+$$ $$
+132600 \times 49 = 6497400
+$$ $$
+6497400 \times 48 = 311875200
+$$ $$
+\dfrac{311875200}{120} = 2598960
+$$ $$
+\binom{52}{5} = 2598960
+$$ $$
+N(\text{one pair}) = \binom{13}{1} \times \binom{4}{2} \times \binom{12}{3} \times \binom{4}{1}^3
+$$ $$
+\binom{13}{1} = \dfrac{13!}{1!(13-1)!}
+$$ $$
+\binom{13}{1} = 13
+$$ $$
+\binom{4}{2} = \dfrac{4!}{2!(4-2)!}
+$$ $$
+\dfrac{4!}{2!(2)!} = \dfrac{4 \cdot 3}{1 \cdot 2}
+$$ $$
+4 \times 3 = 12
+$$ $$
+\dfrac{12}{2} = 6
+$$ $$
+\binom{4}{2} = 6
+$$ $$
+\binom{12}{3} = \dfrac{12!}{3!(12-3)!}
+$$ $$
+\dfrac{12!}{3!(9)!} = \dfrac{12 \cdot 11 \cdot 10}{1 \cdot 2 \cdot 3}
+$$ $$
+12 \times 11 = 132
+$$ $$
+132 \times 10 = 1320
+$$ $$
+\dfrac{1320}{6} = 220
+$$ $$
+\binom{12}{3} = 220
+$$ $$
+\binom{4}{1} = \dfrac{4!}{1!(4-1)!}
+$$ $$
+\binom{4}{1} = 4
+$$ $$
+N(\text{one pair}) = 13 \times 6 \times \left(\frac{12 \times 11 \times 10}{3 \times 2 \times 1}\right) \times 4^3
+$$ $$
+N(\text{one pair}) = 13 \times 6 \times 220 \times 64
+$$ $$
+13 \times 6 = 78
+$$ $$
+78 \times 220 = 17160
+$$ $$
+17160 \times 64 = 1098240
+$$ $$
+N(\text{one pair}) = 1,098,240
+$$ Aus der Übersicht geht hervor, dass die Gesamtzahl der möglichen 5-Karten-Hände $N = 2,598,960$ beträgt. Die Wahrscheinlichkeit, genau ein Paar zu bekommen, ist dann das Verhältnis der Anzahl der „Ein-Paar“-Hände zur Gesamtzahl der Hände: $$
+P(\text{one pair}) = \frac{N(\text{one pair})}{N}
+$$ $$
+P(\text{one pair}) = \frac{1,098,240}{2,598,960}
+$$ $$
+P(\text{one pair}) \approx 0.422569
+$$ Als Prozentangabe ist die Näherungsmethode $42.26\%$ . Die Behauptung besagt, dass diese Wahrscheinlichkeit größer als $42.3\%$ ist.
+
+Die Aussage ist falsch.

@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.26",
+    "title": "Monopoly Pricing Power",
+    "context": "Consider a concession holder that faces downward-sloping demand and sets price along it. Evaluate the following economic assertions:",
+    "statements": [
+      "Monopoly faces downward-sloping demand and can choose price-quantity point along it.",
+      "Downward-sloping demand for a sole concession holder indicates price-making rather than price-taking power.",
+      "Local monopoly-like concessions may charge above marginal cost when substitutes are distant.",
+      "Cartel collusion tries to replicate monopoly joint pricing among separate firms illegally.",
+      "Price takers individually select the market clearing price each period without observing rivals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Single seller influences price along the market demand curve.",
+      "Single seller facing market demand curve is price maker, not price taker.",
+      "Geographic or legal isolation enables supra-competitive pricing above marginal cost.",
+      "Cartel seeks monopoly outcome through collusion among separate firms.",
+      "Price takers take the market price as given rather than selecting the clearing price."
+    ],
+    "tactical_explanations": [
+      "A monopoly is the sole seller of the market demand curve. That curve slopes downward, so higher price means lower quantity demanded. The firm picks a price-quantity pair on that curve rather than accepting a flat market price.\n\nThe statement is true.",
+      "Price takers face a horizontal demand at the going market price. A sole concession holder facing the whole market demand curve can move price by changing quantity. That is price-making power, not price-taking.\n\nThe statement is true.",
+      "When close substitutes are far away, buyers have little ability to switch. A local monopoly-like concession can then sustain a price above marginal cost. Distant alternatives do not erase that local market power by themselves.\n\nThe statement is true.",
+      "A cartel is collusion among separate firms that try to act like one monopolist on price or output. That joint coordination is generally illegal under competition law. The aim is the monopoly outcome without a single legal merger.\n\nThe statement is true.",
+      "Price takers accept the market clearing price as given. They do not each pick that clearing price on their own, and they do not need to set it without watching rivals. The claim reverses how competitive pricing works.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.27",
+    "title": "Agricultural Standardisation",
+    "context": "Analyze why standardised crop grades are cited as near-perfect competition examples. Evaluate the following economic assertions:",
+    "statements": [
+      "Seasonal harvest shifts supply but many sellers remain price takers at exchange price.",
+      "Commodity grading reduces perceived differentiation among outputs from different producers.",
+      "Many small farmers each supply a tiny market share, limiting individual price influence.",
+      "Standardised grades make wheat from many farms homogeneous from buyer's view.",
+      "Luxury brands are near-perfect competition because both wheat and handbags are sold in stores."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Supply shifts move market price; individual farmers still take the exchange price.",
+      "Grade standards align buyer perceptions toward homogeneous commodity competition.",
+      "Large number of small producers supports price-taking behaviour in commodity markets.",
+      "Grading homogenises commodity output for buyers at exchanges and co-ops.",
+      "Store sale alone does not make luxury brands homogeneous commodity competition."
+    ],
+    "tactical_explanations": [
+      "A big harvest can shift market supply and change the exchange price. Each small farmer still sells at that posted price and cannot move it alone. Seasonal supply shifts and price-taking behaviour can coexist.\n\nThe statement is true.",
+      "Grades tell buyers that lots meeting the same standard are interchangeable. That cuts perceived quality differences across farms. Homogeneity is what the competitive model needs, and grading pushes the market toward it.\n\nThe statement is true.",
+      "When many farms each hold a tiny share, one farmer's extra truckload barely moves the market. Individual influence on price stays negligible. That supports treating each seller as a price taker.\n\nThe statement is true.",
+      "Once wheat is graded to the same specification, mill buyers treat lots from different farms as the same product. Homogeneity is judged from the buyer's side. Standardised grades deliver that view.\n\nThe statement is true.",
+      "Being sold in a store does not decide market structure. Luxury handbags are branded and differentiated, while graded wheat is a near-homogeneous commodity. Store shelves alone do not make handbags near-perfect competition.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.28",
+    "title": "Cartel Penalty Deterrence",
+    "context": "Analyze heavy fines announced after a cement producer cartel investigation. Evaluate the following economic assertions:",
+    "statements": [
+      "Consumers benefit when cartel price fixing is blocked and competitive undercutting resumes.",
+      "Near-perfect competition in standardised commodities contrasts with cartel behaviour in concentrated industries.",
+      "Announced fines signal enforcement risk that may discourage future secret coordination meetings.",
+      "Legal independent pricing in oligopoly remains permitted without collusive agreement.",
+      "Cartel penalties aim to protect colluders' right to coordinate prices privately."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Ending collusion lowers artificially high prices toward competitive levels.",
+      "Competitive commodity markets differ from collusive concentrated industries.",
+      "Public penalties raise expected cost of future cartel participation among oligopolists.",
+      "Rivalry without agreement is lawful oligopoly conduct.",
+      "Penalties target collusion to protect competition, not to protect price fixing."
+    ],
+    "tactical_explanations": [
+      "Cartel price fixing keeps prices artificially high. When authorities break that agreement, rivals can undercut again and prices tend to fall toward competitive levels. Buyers gain from that restored rivalry.\n\nThe statement is true.",
+      "Standardised commodities with many small sellers often look near-perfectly competitive. Concentrated industries with few firms are where secret cartels can form. The two structures are different, and the contrast is real.\n\nThe statement is true.",
+      "Public fines raise the expected cost of collusion. Managers who see heavy penalties have more reason to avoid secret price meetings. Deterrence is part of why authorities announce the sanctions.\n\nThe statement is true.",
+      "Oligopoly allows independent pricing and strategic rivalry. What the law targets is collusive agreement among rivals, not competition itself. Firms may set prices on their own without a cartel pact.\n\nThe statement is true.",
+      "Cartel penalties exist to stop collusion and protect competition for buyers. They do not protect firms' private right to fix prices together. The claim reverses the purpose of enforcement.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.29",
+    "title": "Local Versus Global Structure",
+    "context": "Consider a sole town pharmacy operating despite global pharmaceutical competition elsewhere. Evaluate the following economic assertions:",
+    "statements": [
+      "Global smartphone manufacturing may be oligopoly even if local phone-case sellers are many and competitive.",
+      "A sole town pharmacy can be monopoly-like locally despite global pharmaceutical competition existing.",
+      "Perfect competition requires global monopoly of one firm to ensure price taking.",
+      "Market power analysis ignores geography because all markets are global by default.",
+      "City car parks elsewhere mean terminal parking is perfect competition on the spot."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Structure differs by product and geographic market boundary.",
+      "Geographic market definition matters; local sole seller can be monopoly-like.",
+      "One global monopolist contradicts many-seller perfect competition.",
+      "Geographic boundaries often matter for local monopoly-like power analysis.",
+      "Distant city car parks may not constrain on-terminal parking market power."
+    ],
+    "tactical_explanations": [
+      "Market structure is product-specific and geography-specific. A few global phone makers can be oligopoly while many local shops sell cases competitively. Different layers of the chain need not share one structure.\n\nThe statement is true.",
+      "The relevant market for urgent local prescriptions can be the town itself. One pharmacy there is monopoly-like for that local demand even if drug makers compete worldwide. Global rivalry elsewhere does not erase local sole supply.\n\nThe statement is true.",
+      "Perfect competition needs many sellers, free entry, and price taking. A single global monopolist is the opposite structure. Price taking comes from many rivals, not from one firm owning everything.\n\nThe statement is false.",
+      "Geographic boundaries often decide whether buyers have real substitutes. Local pharmacies, parking lots, and utilities can have market power that a purely global lens would miss. Analysis does not treat every market as global by default.\n\nThe statement is false.",
+      "Drivers who need the terminal lot may not treat distant city parks as close substitutes. On-site exclusivity can still create local monopoly-like power. Other cities' parks do not automatically make terminal parking perfect competition.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.30",
+    "title": "Market Structures Recap",
+    "context": "Review integrated market-structure concepts from the chapter. Evaluate the following economic assertions:",
+    "statements": [
+      "Monopoly or local monopoly-like structure involves one dominant seller with limited substitutes and possible regulation.",
+      "Cartel denotes illegal collusion among oligopolists fixing price or output jointly.",
+      "Oligopoly involves few large interdependent firms making strategic pricing and output decisions.",
+      "Perfect competition involves many price takers, homogeneous product, and free entry, with near-perfect examples in standardised agriculture.",
+      "Market power tends to rise as seller count falls, entry barriers rise, and products differentiate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Monopoly or local monopoly-like summary fits one dominant seller with limited substitutes.",
+      "Cartel illegality and collusion summary fit coordinated fixing among rivals.",
+      "Oligopoly interdependence summary fits few large firms with strategic decisions.",
+      "Perfect or near-perfect competition summary fits many price takers and standardised agriculture.",
+      "Market-power intuition rises with fewer sellers, higher barriers, and more differentiation."
+    ],
+    "tactical_explanations": [
+      "Monopoly and local monopoly-like cases centre on one dominant seller and few close substitutes. Regulators often watch prices or entry when that power is strong. The summary matches the chapter definition.\n\nThe statement is true.",
+      "A cartel is coordinated price or output fixing among rivals that should compete. In oligopoly that collusion is typically illegal. The label is about joint fixing, not ordinary independent rivalry.\n\nThe statement is true.",
+      "Oligopoly means a small number of large firms. Each firm knows rivals may react to its price or output choice. Strategic interdependence is the core idea.\n\nThe statement is true.",
+      "Perfect competition combines many sellers, a homogeneous product, free entry, and price taking. Standardised farm grades are the usual near-perfect textbook examples. The summary lines up with those assumptions.\n\nThe statement is true.",
+      "Fewer sellers, tougher entry, and stronger differentiation each weaken buyers' ability to switch. Market power therefore tends to rise along those dimensions. The direction matches standard structure-conduct intuition.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.31",
+    "title": "Natural Gas Pipeline",
+    "context": "Analyze statutory exclusivity over a regional natural gas transmission pipeline. Evaluate the following economic assertions:",
+    "statements": [
+      "Natural monopoly-like logic applies when one network serves demand at lower cost than many duplicates.",
+      "Regulators may cap transport tariffs on monopoly-like pipeline operators.",
+      "Pipeline monopoly automatically makes every retail gas supplier a monopoly as well.",
+      "Pipeline exclusivity creates perfect competition because gas molecules are homogeneous.",
+      "Buried pipelines encourage instant entry by many rival operators in the same corridor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Single-network scale economies can make duplication wasteful in pipeline markets.",
+      "Tariff regulation addresses market power where competition is impractical.",
+      "Transmission exclusivity does not necessarily eliminate retail-level competition.",
+      "Homogeneous flow does not create many pipeline operators when one network is exclusive.",
+      "Sunk pipeline costs typically deter duplicate entry rather than invite many rivals."
+    ],
+    "tactical_explanations": [
+      "Pipelines have large fixed costs and declining average cost over a wide range. One network can then serve demand more cheaply than several parallel lines. That cost pattern is the natural monopoly-like logic.\n\nThe statement is true.",
+      "Where rivalry is impractical, authorities often regulate access charges instead. Capping transport tariffs limits the pipeline operator's ability to exploit exclusivity. That oversight is a standard response to monopoly-like networks.\n\nThe statement is true.",
+      "Transmission and retail can be separate layers. Exclusive pipeline rights need not wipe out competition among firms that buy transport and sell gas to households. Retail monopoly does not follow automatically from pipeline exclusivity.\n\nThe statement is false.",
+      "Homogeneous molecules describe the product, not the number of pipeline owners. Statutory exclusivity still leaves one network operator. That is the opposite of many-seller perfect competition.\n\nThe statement is false.",
+      "Buried pipelines are sunk, costly infrastructure. Duplicate corridors are hard to finance and often blocked by exclusivity. Entry is deterred, not invited overnight.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.32",
+    "title": "Ski Lift Operator",
+    "context": "Consider one company operating every ski lift in a valley under an exclusive lease. Evaluate the following economic assertions:",
+    "statements": [
+      "Exclusive lease over every lift in a valley creates local monopoly-like power on mountain transport.",
+      "Exclusive recreational leases never face oversight because tourism is a private hobby.",
+      "Sole lift operator must be a price taker because snow conditions change daily.",
+      "Lift exclusivity encourages many rival cable networks on identical mountain routes overnight.",
+      "Nearby valleys eliminate monopoly-like power even when skiers never leave the leased valley."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Single lift operator under exclusive lease is monopoly-like within the valley market.",
+      "Tourism concessions can still face pricing review when exclusivity creates market power.",
+      "Changing snow conditions do not automatically make a sole operator a price taker.",
+      "Exclusive leases and high fixed costs deter duplicate lift networks in one valley.",
+      "Distant alternatives may not constrain pricing if skiers remain captive to one valley."
+    ],
+    "tactical_explanations": [
+      "One firm holding every lift under an exclusive lease is the only seller of mountain transport in that valley. Skiers on site have no rival lift operator to switch to. That is local monopoly-like power.\n\nThe statement is true.",
+      "Tourism concessions can still create market power that authorities review. Private leisure use does not exempt exclusive operators from pricing or franchise oversight. The absolute claim that oversight never applies is wrong.\n\nThe statement is false.",
+      "Weather may shift demand from day to day, but the sole operator still faces the valley's demand curve. Changing snow does not turn exclusivity into price-taking behaviour. A price taker needs many rivals, not variable weather.\n\nThe statement is false.",
+      "Exclusive leases and heavy fixed costs block duplicate cable systems on the same routes. Rivals cannot appear overnight under those conditions. Exclusivity deters entry rather than inviting many networks.\n\nThe statement is false.",
+      "Alternatives in other valleys matter only if skiers actually switch. When visitors stay put, those distant options do not discipline local lift prices. Captive demand preserves monopoly-like power.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.33",
+    "title": "Cement Producers Trio",
+    "context": "Analyze three cement plants supplying most regional construction demand. Evaluate the following economic assertions:",
+    "statements": [
+      "High transport cost for heavy cement can narrow geographic market and reinforce local oligopoly power.",
+      "Independent price cutting among three cement rivals remains lawful oligopoly competition.",
+      "Published price lists responding to rivals' quotes indicate oligopoly interdependence.",
+      "Secret output quotas agreed among cement rivals would constitute illegal cartel conduct.",
+      "Three cement plants supplying most regional demand fit oligopoly structure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Transport economics can define local markets where few plants dominate supply.",
+      "Rivalry without collusive agreement is lawful oligopoly conduct.",
+      "Strategic price responses among few producers reflect oligopoly rivalry.",
+      "Secret coordinated output limits are cartel behaviour subject to enforcement.",
+      "High regional concentration among three producers aligns with oligopoly."
+    ],
+    "tactical_explanations": [
+      "Cement is heavy and expensive to haul far. High transport costs shrink the effective geographic market around each plant cluster. Few local plants then dominate, which strengthens regional oligopoly.\n\nThe statement is true.",
+      "Independent undercutting without a collusive pact is ordinary rivalry. Competition law targets coordinated fixing, not unilateral price cuts. Three rivals may lawfully compete on price.\n\nThe statement is true.",
+      "When each firm watches and answers rivals' published quotes, pricing is strategic. That mutual awareness is the interdependence that defines oligopoly. Responsive list prices fit the pattern.\n\nThe statement is true.",
+      "Secret quotas that divide or limit output among rivals are classic cartel tools. They replace independent competition with joint restriction. That conduct is illegal under competition rules.\n\nThe statement is true.",
+      "Oligopoly means a small number of firms dominate the relevant market. Three plants covering most regional demand is exactly that concentration. The structure label fits.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.34",
+    "title": "Sugar Beet Auction",
+    "context": "Analyze many farmers delivering standardised sugar beet to a cooperative buyer. Evaluate the following economic assertions:",
+    "statements": [
+      "Commodity co-op purchasing with many interchangeable sellers limits individual pricing power.",
+      "Beet grading creates luxury brand oligopoly because roots differ slightly in shape.",
+      "Sugar beet delivery to a co-op proves monopoly because agriculture involves living plants.",
+      "Seasonal surges convert every beet farmer into a price maker with global pricing power.",
+      "Each beet farmer independently sets the national sugar price before every harvest delivery."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Many interchangeable sellers at co-op delivery support price-taking behaviour.",
+      "Minor shape differences do not override standardised commodity grading logic.",
+      "Many farmers selling standardised beet contradict monopoly on the supply side.",
+      "Seasonal supply shifts do not automatically make each small farmer a price maker.",
+      "Individual farmers typically take the posted purchase price rather than set national sugar prices."
+    ],
+    "tactical_explanations": [
+      "Many farmers deliver interchangeable graded beet to the same co-op. No single grower can force a better purchase price alone. Interchangeability and small shares keep individual pricing power low.\n\nThe statement is true.",
+      "Slight shape differences do not create luxury branding. Grading exists to treat beet as a standardised commodity, not as a fashion oligopoly. The leap from roots to luxury brands is wrong.\n\nThe statement is false.",
+      "Living plants do not decide market structure. Many sellers of standardised beet describe competitive supply, not monopoly. Delivery to a co-op does not prove a single seller.\n\nThe statement is false.",
+      "Seasonal supply may move the market price, but each small farmer still takes that price. A surge does not give every grower global price-making power. Tiny market shares stay tiny.\n\nThe statement is false.",
+      "National sugar prices form at broader markets and exchanges. Individual beet farmers accept the co-op or market purchase price. They do not each set the national price before delivery.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.35",
+    "title": "Newspaper Delivery Zone",
+    "context": "Consider a publisher holding exclusive home-delivery rights in a district. Evaluate the following economic assertions:",
+    "statements": [
+      "Captive early-morning delivery demand may lack close substitute sellers under the same exclusivity.",
+      "Regulators may review exclusivity contracts that foreclose rival delivery in concentrated districts.",
+      "Subscription pricing by the exclusive publisher reflects price-making rather than price-taking.",
+      "Exclusive home-delivery rights in a district create monopoly-like local market power.",
+      "Digital news substitutes may constrain print pricing even when home delivery remains exclusive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Exclusive district rights limit close substitute sellers for that delivery service.",
+      "Competition authorities may scrutinise exclusive distribution that blocks rival entry.",
+      "Sole district publisher can set subscription terms along local demand.",
+      "Single publisher with delivery exclusivity is monopoly-like within that district.",
+      "Online news can limit print market power despite exclusive physical delivery rights."
+    ],
+    "tactical_explanations": [
+      "Exclusive rights mean only one publisher can deliver that paper door to door in the district. Early-morning subscribers who want that service have no rival carrier under the same franchise. Close substitutes for that delivery channel are missing.\n\nThe statement is true.",
+      "Exclusive contracts that shut rivals out of a concentrated local market can raise competition concerns. Authorities may examine whether foreclosure harms buyers. Oversight of exclusivity is therefore possible.\n\nThe statement is true.",
+      "The exclusive publisher faces local demand for its subscription package and can choose price along that curve. It does not take a competitive market price as given. That is price-making behaviour.\n\nThe statement is true.",
+      "One publisher with exclusive district delivery is the sole seller of that home-delivery service. Limited local substitutes create monopoly-like power inside the district. The structure follows from exclusivity.\n\nThe statement is true.",
+      "Online news is a substitute for some readers even if the physical route stays exclusive. That outside option can limit how high print subscription prices can go. Delivery exclusivity does not erase digital competition.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.36",
+    "title": "Aircraft Engine Duopoly",
+    "context": "Analyze two manufacturers supplying most large commercial jet engines globally. Evaluate the following economic assertions:",
+    "statements": [
+      "Two manufacturers supplying most large jet engines fit duopoly, a special case of oligopoly.",
+      "Secret agreement on engine prices among the two suppliers would be illegal cartel conduct.",
+      "High entry barriers from research cost reinforce oligopoly structure in jet engines.",
+      "Airlines negotiating engine purchases face few suppliers unlike commodity wheat markets with many farmers.",
+      "Long development cycles and mutual awareness of launch plans reflect oligopoly interdependence."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Global duopoly in large engines is oligopoly with two dominant sellers.",
+      "Secret coordinated engine pricing would be illegal cartel behaviour.",
+      "Large fixed research costs deter entry and sustain oligopoly among few suppliers.",
+      "Concentrated engine supply differs from many-seller commodity agriculture.",
+      "Strategic launch timing among two vendors reflects oligopoly interdependence."
+    ],
+    "tactical_explanations": [
+      "Duopoly means two dominant sellers. Two engine makers supplying most of the large commercial market fit that label, and duopoly is a special case of oligopoly. The classification matches the facts.\n\nThe statement is true.",
+      "Secret price coordination between the two suppliers replaces independent rivalry with joint fixing. That is cartel conduct and is illegal under competition law. Two is enough for a cartel.\n\nThe statement is true.",
+      "Developing jet engines requires huge research and testing outlays. Those sunk costs keep most potential entrants out. High barriers help lock in the few-firm oligopoly.\n\nThe statement is true.",
+      "Airlines shopping for large engines deal with a handful of makers. Wheat markets, by contrast, have many small farmers. Concentrated engine supply is structurally different from commodity agriculture.\n\nThe statement is true.",
+      "Long development cycles force each maker to watch the other's launch timing and capacity plans. Mutual awareness of strategic moves is oligopoly interdependence. The industry fits that pattern.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.37",
+    "title": "Barriers to Entry Review",
+    "context": "Review how entry barriers relate to perfect competition and monopoly-like structures. Evaluate the following economic assertions:",
+    "statements": [
+      "High sunk infrastructure cost can create natural monopoly-like conditions that block duplicate entry.",
+      "Entry barriers reduce market power because blocked rivals always increase competition.",
+      "Permanent legal barriers strengthen the free-entry assumption in perfect competition.",
+      "Statutory bus exclusivity increases seller count until perfect competition emerges on each route.",
+      "Easy entry with many sellers guarantees one firm can permanently set market price alone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Large sunk costs can reinforce monopoly-like network structure.",
+      "Barriers that block rivals typically increase rather than reduce incumbent market power.",
+      "Entry barriers contradict free entry assumed in perfect competition.",
+      "Exclusivity reduces rival sellers and moves structure away from perfect competition.",
+      "Many sellers with easy entry prevent one firm from setting market price alone."
+    ],
+    "tactical_explanations": [
+      "Large sunk networks make a second parallel system wasteful or unprofitable. One operator can then serve demand at lower cost than duplicates. That cost barrier supports natural monopoly-like structure.\n\nThe statement is true.",
+      "Barriers that keep rivals out reduce competition, they do not increase it. Incumbent market power typically rises when entry is blocked. The claim reverses the effect.\n\nThe statement is false.",
+      "Perfect competition assumes free entry. Permanent legal barriers contradict that assumption rather than strengthen it. Barriers move the market away from the competitive ideal.\n\nThe statement is false.",
+      "Statutory exclusivity grants one operator the route and keeps rivals out. Seller count falls, not rises, so perfect competition does not emerge from exclusivity. The direction is backward.\n\nThe statement is false.",
+      "Easy entry and many sellers are exactly what prevent one firm from setting the market price alone. Price taking follows from that structure. The guarantee claimed here is the opposite of what competition delivers.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.38",
+    "title": "Harbour Crane Concession",
+    "context": "Consider one operator holding the exclusive container-crane concession at a port. Evaluate the following economic assertions:",
+    "statements": [
+      "Nearby ports with competing terminals may constrain pricing if shippers can reroute cargo.",
+      "Ships needing crane service at that terminal lack close substitute operators on the same berth.",
+      "High capital cost of duplicate crane systems discourages rival operators at the same terminal.",
+      "Port regulators may review crane tariffs where exclusivity confers local market power.",
+      "Crane exclusivity creates perfect competition because shipping containers are standardised boxes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Substitute ports can limit power when shippers switch terminals.",
+      "Exclusive berth concession removes same-location substitute crane operators.",
+      "Duplicate crane investment is costly, reinforcing exclusive concession structure.",
+      "Tariff oversight may address monopoly-like power from exclusive concessions.",
+      "Standardised boxes do not create many crane operators under one exclusive concession."
+    ],
+    "tactical_explanations": [
+      "If cargo can move to another port at reasonable cost, shippers have an outside option. That threat can limit how high the exclusive crane operator can set tariffs. Substitute terminals matter when rerouting is feasible.\n\nThe statement is true.",
+      "Exclusivity means only one crane operator works that berth. Ships already tied to the terminal cannot hire a second on-site rival. Same-berth substitutes are absent by design.\n\nThe statement is true.",
+      "Crane systems are capital-intensive. Financing a duplicate set at the same terminal is rarely attractive under exclusivity. High fixed cost reinforces the single-operator structure.\n\nThe statement is true.",
+      "Exclusive concessions can confer local market power over captive ship calls. Port authorities may therefore review or cap crane tariffs. Oversight is a common response to that power.\n\nThe statement is true.",
+      "Standardised containers describe the cargo, not the number of crane firms. One exclusive concession still leaves a single operator. That is monopoly-like locally, not perfect competition.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.39",
+    "title": "Potato Futures Market",
+    "context": "Analyze standardised potato contracts traded by numerous growers and processors. Evaluate the following economic assertions:",
+    "statements": [
+      "Commodity futures markets illustrate price-taking behaviour unlike concentrated cement oligopoly.",
+      "Many buyers and sellers at clearing limit any one participant's individual pricing influence.",
+      "Each potato grower sets the national futures price independently before every contract month.",
+      "Potato futures prove luxury fashion oligopoly because potatoes are sold by weight.",
+      "Contract standardisation creates monopoly because one exchange lists the contracts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Many-seller commodity futures differ from few-firm concentrated oligopoly markets.",
+      "Numerous participants support price-taking behaviour at futures clearing.",
+      "Individual growers take the clearing price rather than set the national futures price.",
+      "Weight-based commodity trading differs from differentiated luxury fashion oligopoly.",
+      "Exchange listing does not make each small grower a monopoly price maker."
+    ],
+    "tactical_explanations": [
+      "Futures markets with many growers and processors are classic price-taking settings. Cement with a few regional plants is concentrated oligopoly. The contrast in structure and behaviour is real.\n\nThe statement is true.",
+      "When many participants trade at a clearing price, one grower's lot barely moves the market. Individual pricing influence stays small. That is why participants act as price takers.\n\nThe statement is true.",
+      "The national futures price emerges from aggregate clearing, not from each grower's private decree. Farmers take the posted contract price. They do not each set it before every month.\n\nThe statement is false.",
+      "Sale by weight is a commodity feature, not luxury branding. Fashion oligopoly rests on differentiation and few houses, which potatoes lack. Weight alone proves nothing about luxury structure.\n\nThe statement is false.",
+      "One exchange listing contracts is a trading venue, not a monopoly seller of potatoes. Many growers still trade as price takers. Standardisation supports competition, not monopoly.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.40",
+    "title": "Luxury Handbag Brands",
+    "context": "Analyze a handful of luxury houses controlling premium handbag segments. Evaluate the following economic assertions:",
+    "statements": [
+      "Secret agreement on retail prices among luxury houses would constitute illegal cartel conduct.",
+      "Differentiated design and branding contradict homogeneous-product perfect competition assumptions.",
+      "Few luxury houses controlling premium segments fit oligopoly with differentiated products.",
+      "Brand positioning and limited editions reflect strategic rivalry typical of oligopoly.",
+      "High brand investment creates entry barriers reinforcing oligopoly among established houses."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Secret coordinated retail pricing would be illegal cartel behaviour.",
+      "Strong differentiation moves luxury handbags away from perfect competition models.",
+      "Concentrated luxury brands with strategic rivalry fit oligopoly structure.",
+      "Marketing and launch strategy among few brands shows oligopoly interdependence.",
+      "Brand investment and reputation deter entry, sustaining oligopoly structure."
+    ],
+    "tactical_explanations": [
+      "Secret retail price fixing among rival houses replaces independent competition with joint coordination. That is cartel conduct and is illegal. Brand prestige does not legalise collusion.\n\nThe statement is true.",
+      "Perfect competition assumes buyers see rivals' goods as perfect substitutes. Luxury design and brand loyalty mean handbags are differentiated. That contradicts the homogeneous-product assumption.\n\nThe statement is true.",
+      "A handful of houses dominating premium segments is few-firm concentration. Products are differentiated by design and brand, which fits differentiated oligopoly. The structure label matches.\n\nThe statement is true.",
+      "Limited editions and brand campaigns are chosen with rivals in mind. Each house watches how others position and launch. That strategic rivalry is typical of oligopoly.\n\nThe statement is true.",
+      "Building a luxury brand takes large marketing and reputation investment. New houses find entry hard, so concentration among incumbents persists. Barriers reinforce the oligopoly.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.41",
+    "title": "Lithium Mining Cartel Probe",
+    "context": "Analyze regulators examining whether lithium producers coordinated export quotas secretly. Evaluate the following economic assertions:",
+    "statements": [
+      "Enforcement against mining cartels seeks to restore competitive pricing for downstream buyers.",
+      "Secret export quota coordination among lithium producers would be illegal cartel conduct.",
+      "Independent capacity announcements by rivals may remain lawful oligopoly rivalry without collusion.",
+      "Cartel collusion aims to raise joint prices by restricting competitive output expansion.",
+      "Lithium mining is perfect competition because minerals are extracted from the earth."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Cartel enforcement protects buyers from collusive inflation of input prices.",
+      "Secret coordinated output limits among rivals define illegal cartel behaviour.",
+      "Transparent capacity rivalry can be lawful competition without secret quota agreement.",
+      "Output coordination mimics monopoly outcome by limiting competitive supply growth.",
+      "Few dominant miners fit oligopoly even when the resource is extracted underground."
+    ],
+    "tactical_explanations": [
+      "Mining cartels inflate input prices for battery and materials buyers. Enforcement aims to break that coordination so prices reflect competition again. Downstream buyers are the intended beneficiaries.\n\nThe statement is true.",
+      "Secret quota deals that limit each producer's exports are coordinated output restriction. That is cartel behaviour among rivals. Competition authorities treat it as illegal.\n\nThe statement is true.",
+      "Firms may announce capacity plans on their own without agreeing quotas. Independent rivalry of that kind can remain lawful oligopoly conduct. Collusion requires coordination, not mere publicity.\n\nThe statement is true.",
+      "By capping competitive expansion, colluders keep supply tighter and prices higher. The joint goal mimics a monopoly outcome. Restricting output is the mechanism.\n\nThe statement is true.",
+      "Extraction from the earth does not decide structure. Lithium supply is often concentrated among few producers, which fits oligopoly more than perfect competition. Geology alone proves nothing about many price takers.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.42",
+    "title": "Homogeneous Product Assumption",
+    "context": "Review the role of product homogeneity in the perfect competition model. Evaluate the following economic assertions:",
+    "statements": [
+      "Homogeneous product means buyers view rival sellers' outputs as perfect substitutes in the model.",
+      "Heavy brand advertising that creates loyalty weakens the homogeneous-product assumption.",
+      "Standardised grain grades make wheat from different farms close substitutes for mill buyers.",
+      "Homogeneity guarantees one seller can raise price far above rivals without losing customers.",
+      "Differentiated retail goods satisfy homogeneity more closely than standardised grain grades."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Identical perceived products support the homogeneous-product competitive assumption.",
+      "Brand loyalty implies differentiation that weakens homogeneity in competitive models.",
+      "Commodity grading aligns outputs as close substitutes among many farms.",
+      "Interchangeable products constrain individual price rises because buyers can switch sellers.",
+      "Standardised commodities fit homogeneity more closely than differentiated retail goods."
+    ],
+    "tactical_explanations": [
+      "In the model, homogeneity means buyers treat one seller's unit as identical to another's. Perfect substitutes follow from that perception. The definition is about buyer view, not packaging alone.\n\nThe statement is true.",
+      "Brand advertising that builds loyalty tells buyers products differ. Loyalty is differentiation, which undermines homogeneity. The competitive assumption weakens when brands matter.\n\nThe statement is true.",
+      "Grade standards align quality so mills can switch among farms easily. Wheat from different growers becomes a close substitute. That is why graded grain is a textbook homogeneous example.\n\nThe statement is true.",
+      "If products are homogeneous, buyers switch to cheaper rivals immediately. One seller cannot raise price far above the market without losing customers. Homogeneity constrains price rises, it does not guarantee them.\n\nThe statement is false.",
+      "Differentiated retail goods vary by brand and style. Standardised grain grades sit closer to homogeneity. Retail differentiation is a weaker, not stronger, fit.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.43",
+    "title": "Regional Electricity Retail",
+    "context": "Analyze many small retailers buying power at wholesale prices to resell to households. Evaluate the following economic assertions:",
+    "statements": [
+      "Retail switching by households limits any one supplier's individual pricing power in open markets.",
+      "Monopoly-like transmission grid can coexist with competitive retail suppliers in the same region.",
+      "Every electricity market participant is always a price taker regardless of market concentration.",
+      "Many registered suppliers eliminate all regulatory oversight of retail electricity markets.",
+      "Two retail brands nationwide prove perfect competition because electricity is homogeneous energy."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Customer switching constrains individual retail pricing where rivals are accessible.",
+      "Monopoly-like wires may coexist with rival retail sellers buying wholesale power.",
+      "Concentrated generators can be price makers even if small retailers take wholesale prices.",
+      "Numerous suppliers do not automatically remove regulatory consumer protection.",
+      "National brand count alone does not prove many price takers in every local retail market."
+    ],
+    "tactical_explanations": [
+      "When households can switch retailers, one supplier that raises price alone loses customers. Switching disciplines individual pricing power in open retail markets. That constraint is real where rivals are accessible.\n\nThe statement is true.",
+      "Wires and retail are different layers. A monopoly-like transmission grid can sit beside many retailers that buy wholesale power and compete for households. Coexistence of those structures is common.\n\nThe statement is true.",
+      "Concentration matters. A dominant generator or congested regional seller need not be a price taker even if small retailers take wholesale quotes. Not every participant is always a price taker.\n\nThe statement is false.",
+      "Consumer protection, licensing, and market rules can remain even with many registered suppliers. Seller count does not erase oversight by itself. Regulation and rivalry often coexist.\n\nThe statement is false.",
+      "Two national brands is few-firm concentration, not many price takers. Homogeneous energy does not turn a duopoly of retailers into perfect competition. Brand count alone fails the many-seller test.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.44",
+    "title": "Toll Bridge Franchise",
+    "context": "Analyze exclusive rights to operate the only bridge crossing a river gorge. Evaluate the following economic assertions:",
+    "statements": [
+      "Exclusive rights to the only bridge crossing create monopoly-like local market power.",
+      "Distant crossings eliminate local toll power even when all drivers use the exclusive bridge.",
+      "Franchise toll operators must be price takers because asphalt is a standardised material.",
+      "Drivers always have many interchangeable bridge operators at the identical gorge span.",
+      "Bridge capital cost encourages five rival spans at the identical gorge immediately."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Sole bridge operator at the crossing is monopoly-like for that route.",
+      "Distant options may not constrain tolls if drivers remain captive to the exclusive bridge.",
+      "Standardised asphalt does not make an exclusive bridge operator a price taker.",
+      "Physical exclusivity at the span prevents many interchangeable operators at once.",
+      "High capital cost typically deters duplicate spans rather than invite many at once."
+    ],
+    "tactical_explanations": [
+      "The only bridge at the gorge, held under exclusive rights, is the sole seller of that crossing. Drivers on that route lack a rival operator. That is monopoly-like local market power.\n\nThe statement is true.",
+      "Distant crossings matter only if drivers actually use them. When everyone stays on the exclusive bridge, those distant options do not discipline local tolls. Captive traffic preserves power.\n\nThe statement is false.",
+      "Asphalt is an input, not a market-structure test. An exclusive franchise operator faces the route's demand curve and can set tolls. Standardised road material does not force price taking.\n\nThe statement is false.",
+      "Exclusivity and a single span leave one operator at that gorge. Drivers do not face many interchangeable bridge firms on the identical crossing. The \"always many\" claim is false.\n\nThe statement is false.",
+      "Building rival spans at the same gorge is costly and often blocked by franchise rights. High capital cost deters immediate duplication. Five overnight rivals are not encouraged by those costs.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.45",
+    "title": "Shipping Alliance Scrutiny",
+    "context": "Analyze container lines sharing vessel capacity under legally reviewed agreements. Evaluate the following economic assertions:",
+    "statements": [
+      "Regulators scrutinise alliances to ensure cooperation does not become collusive market division.",
+      "Lawful capacity-sharing alliances differ from illegal cartels that secretly fix customer freight rates.",
+      "Secret freight rate coordination among container lines would be illegal cartel conduct.",
+      "Concentrated container shipping among few global lines fits oligopoly structure.",
+      "Independent sailing schedules with competitive rate undercutting remain lawful oligopoly rivalry."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Authorities review whether cooperation suppresses competition on freight markets.",
+      "Reviewed capacity sharing may be lawful if product markets remain competitively priced.",
+      "Secret coordinated rate fixing among shipping rivals is cartel behaviour.",
+      "Few global carriers with strategic capacity decisions fit oligopoly.",
+      "Rivalry with independent pricing remains lawful without collusive rate agreement."
+    ],
+    "tactical_explanations": [
+      "Alliances can blur into market division if partners stop competing on key routes. Regulators review cooperation to keep that line from being crossed. Scrutiny protects competitive freight markets.\n\nThe statement is true.",
+      "Reviewed capacity sharing may be allowed when rates and customers still face rivalry. Secret freight-rate cartels are a different, illegal category. Lawful operational cooperation is not the same as collusive rate fixing.\n\nThe statement is true.",
+      "Secret agreements that fix customer freight rates among lines are classic cartel conduct. They replace independent pricing with joint fixing. Competition law forbids that coordination.\n\nThe statement is true.",
+      "A small number of global carriers dominate container shipping. Each must weigh rivals' capacity and schedule moves. That few-firm pattern is oligopoly.\n\nThe statement is true.",
+      "Independent schedules and unilateral undercutting are ordinary rivalry. Without a collusive rate pact, that conduct remains lawful oligopoly competition. Independence is what keeps it legal.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.46",
+    "title": "Corn Silo Exchange",
+    "context": "Analyze identical grade corn stored in silos and sold at a weekly clearing price. Evaluate the following economic assertions:",
+    "statements": [
+      "Grade identity across silos supports the homogeneous-product assumption for buyers.",
+      "Commodity corn exchange contrasts with concentrated global container shipping oligopoly.",
+      "Identical grade corn sold at weekly clearing with many sellers approximates near-perfect competition.",
+      "Many buyers and sellers at the exchange limit any one participant's pricing influence.",
+      "Each silo owner sets the national corn price independently before every weekly sale."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Identical grading homogenises corn output for exchange participants.",
+      "Many-seller corn clearing differs from few-firm global shipping concentration.",
+      "Many sellers with homogeneous grade corn fit near-perfect competition at clearing.",
+      "Numerous participants support price-taking behaviour at weekly clearing.",
+      "Individual silo owners typically take the clearing price rather than set national prices."
+    ],
+    "tactical_explanations": [
+      "Identical grades mean buyers treat corn from different silos as interchangeable. That perception is the homogeneous-product assumption. Grade identity supports it.\n\nThe statement is true.",
+      "Corn clearing with many sellers is near-competitive. Global container shipping with few lines is oligopoly. The structures differ sharply, and the contrast is correct.\n\nThe statement is true.",
+      "Many sellers, a homogeneous grade, and a common clearing price match the near-perfect competition template. Weekly exchange trading of identical corn is a standard textbook case. The approximation fits.\n\nThe statement is true.",
+      "Numerous participants mean one silo's sale barely moves the clearing price. Individual influence stays small. Participants therefore act as price takers.\n\nThe statement is true.",
+      "The national clearing price forms from aggregate bids and offers. Individual silo owners take that price rather than decree it each week. They do not each set the national corn price.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.47",
+    "title": "Video Game Console Oligopoly",
+    "context": "Analyze three major console platforms competing for developer and gamer attention. Evaluate the following economic assertions:",
+    "statements": [
+      "Exclusive game launches and pricing bundles reflect oligopoly strategic rivalry.",
+      "Many independent game studios selling digital titles differ structurally from few console platforms.",
+      "Secret agreement on console hardware prices among platforms would be illegal cartel conduct.",
+      "Three consoles prove perfect competition because game discs are physical products.",
+      "Network effects guarantee instant entry by dozens of new console platforms each year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Platform exclusives and bundle pricing show interdependence among few rivals.",
+      "Independent studios can be numerous while platform layer remains oligopoly.",
+      "Secret coordinated hardware pricing would be illegal cartel behaviour.",
+      "Physical products can still be oligopoly when few platforms dominate.",
+      "Network effects and sunk costs typically deter entry rather than invite dozens of platforms."
+    ],
+    "tactical_explanations": [
+      "Exclusive launches and bundles are chosen with rivals' responses in mind. Three platforms watching each other's strategies is oligopoly rivalry. Those tools reflect interdependence.\n\nThe statement is true.",
+      "Many indie studios can compete in software while only a few hardware platforms dominate. Layers of the industry need not share one structure. Platform oligopoly can coexist with numerous developers.\n\nThe statement is true.",
+      "Secret hardware price fixing among the three platforms would be coordinated collusion. That is illegal cartel conduct. Platform branding does not legalise it.\n\nThe statement is true.",
+      "Physical discs do not create many sellers. Three dominant platforms remain oligopoly even if discs are tangible goods. Perfect competition needs many price takers, not a count of three.\n\nThe statement is false.",
+      "Network effects and platform investment raise entry barriers. New console makers rarely appear by the dozen each year. Those forces deter entry rather than guarantee it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.48",
+    "title": "Local Waste Collection",
+    "context": "Analyze municipal contract granting one firm exclusive household waste pickup. Evaluate the following economic assertions:",
+    "statements": [
+      "Self-hauling to distant facilities may constrain fees only if households actually use that option.",
+      "Franchise fee pricing by the sole contractor reflects price-making along local demand.",
+      "Waste collection fees are unregulated whenever trucks drive on public roads.",
+      "Households always have many interchangeable waste collectors on the identical route weekly.",
+      "Exclusive waste contract creates perfect competition because rubbish bags are homogeneous."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Distant disposal options limit power when households switch away from curbside service.",
+      "Sole contractor can set fees along demand rather than take them as given.",
+      "Public roads do not remove oversight of exclusive municipal service fees.",
+      "Exclusive contract blocks rival collectors on the same municipal route.",
+      "Homogeneous bags do not create many collectors under one exclusive contract."
+    ],
+    "tactical_explanations": [
+      "Self-haul is an outside option only when households really use it. If almost everyone sticks with curbside pickup, distant dumps do not discipline fees. Constraint requires actual switching.\n\nThe statement is true.",
+      "The sole franchisee faces local demand for collection and can choose the fee along that curve. It does not take a competitive market price as given. That is price-making.\n\nThe statement is true.",
+      "Driving on public roads does not remove municipal fee oversight. Exclusive service contracts often remain subject to franchise rules or rate review. Public roads are irrelevant to that regulation question.\n\nThe statement is false.",
+      "An exclusive contract bars rival collectors from the same municipal route. Households do not face many interchangeable firms each week. Exclusivity contradicts the \"always many\" claim.\n\nThe statement is false.",
+      "Homogeneous bags describe the waste, not the number of collectors. One exclusive contractor is still a sole seller of the service. That is monopoly-like locally, not perfect competition.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.49",
+    "title": "Tacit Parallel Pricing",
+    "context": "Review parallel pricing among oligopolists and when it crosses into illegal collusion. Evaluate the following economic assertions:",
+    "statements": [
+      "Secret meetings to coordinate identical prices constitute illegal cartel conduct.",
+      "Authorities ignore communication records because parallel prices always indicate healthy competition.",
+      "Any identical price among rivals automatically proves illegal cartel without further evidence.",
+      "Public price matching is per se illegal cartel conduct in every jurisdiction worldwide.",
+      "Three-firm oligopoly is automatically cartel even when each firm sets prices independently."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Secret coordinated price fixing is illegal cartel behaviour among rivals.",
+      "Communication records can support collusion findings alongside parallel pricing.",
+      "Parallel prices alone do not prove cartel; coordination evidence is required.",
+      "Public matching may remain lawful rivalry without secret collusive agreement.",
+      "Independent pricing in oligopoly differs from illegal collusive cartel conduct."
+    ],
+    "tactical_explanations": [
+      "Secret meetings that lock in identical prices are coordinated fixing among rivals. That coordination is illegal cartel conduct. Parallel outcomes reached by agreement are the problem.\n\nThe statement is true.",
+      "Authorities often examine emails, meetings, and other communications when prices move together. Parallel prices alone do not prove healthy competition, and records are not ignored. The claim is backward.\n\nThe statement is false.",
+      "Identical prices can arise from independent matching in oligopoly. Proof of cartel usually needs evidence of coordination, not prices alone. Automatic proof without further evidence is too strong.\n\nThe statement is false.",
+      "Public price matching can be lawful rivalry when each firm decides alone. Cartel rules typically target collusive agreement, not every matched quote worldwide. The absolute \"per se everywhere\" claim fails.\n\nThe statement is false.",
+      "Oligopoly is a market structure. Cartel is illegal collusion. Three independent price setters remain oligopolists, not automatic cartel members. Independence keeps the distinction.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.50",
+    "title": "Integrated Structure Master",
+    "context": "Review how monopoly-like power, oligopoly rivalry, cartel collusion, and near-perfect agriculture compare. Evaluate the following economic assertions:",
+    "statements": [
+      "Monopoly-like local utilities arise where one seller dominates with limited substitutes and high entry barriers.",
+      "Oligopoly features few interdependent firms whose pricing may reflect strategic rivalry.",
+      "Cartel collusion illegally coordinates prices or output among rivals to mimic monopoly outcomes.",
+      "Near-perfect competition appears in standardised agriculture where many small sellers are price takers.",
+      "Market power generally increases as seller count falls, barriers rise, and products differentiate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Local utilities with exclusivity illustrate monopoly-like structure with limited substitutes.",
+      "Few large firms with mutual awareness define oligopoly strategic rivalry.",
+      "Illegal cartels coordinate to mimic monopoly joint pricing or output limits.",
+      "Standardised crops with many price takers illustrate near-perfect competition.",
+      "Fewer sellers, higher barriers, and differentiation tend to increase market power."
+    ],
+    "tactical_explanations": [
+      "Local utilities often have one dominant seller, few close substitutes, and costly or legal entry barriers. That combination produces monopoly-like power. The summary matches the chapter pattern.\n\nThe statement is true.",
+      "Oligopoly is few firms that watch each other's moves. Pricing and output choices can be strategic because rivals may react. Interdependence is the defining feature.\n\nThe statement is true.",
+      "Cartels coordinate rivals' prices or output secretly or jointly to approach monopoly results. That coordination is illegal under competition law. The aim is the monopoly outcome without lawful merger.\n\nThe statement is true.",
+      "Standardised crops with many small growers are the usual near-perfect examples. Each farmer takes the exchange or co-op price. Homogeneity and tiny shares deliver price taking.\n\nThe statement is true.",
+      "Fewer sellers, higher barriers, and more differentiation each reduce buyers' switching options. Market power tends to rise along those dimensions. The comparative ranking matches the chapter intuition.\n\nThe statement is true."
+    ]
+  }
+]

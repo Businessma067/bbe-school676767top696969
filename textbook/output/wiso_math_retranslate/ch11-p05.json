@@ -1,0 +1,1042 @@
+[
+  {
+    "case_id": "MATH 11.85",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Two cafés: same flat output, opposite profit bends",
+    "context_en": "Café A models daily profit by $$P_A(Q)=-Q^{2}+20Q-50.$$ Café B models daily profit by $$P_B(Q)=Q^{2}-20Q+90.$$ Both managers look at the output $Q=10$ lunch covers. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "At ten covers, both cafés have a flat profit slope.",
+      "Café A's profit curve bends downward at ten covers, so that output is a local profit peak for A.",
+      "Café B's profit curve bends upward at ten covers, so that output is a local profit trough for B.",
+      "Because both cafés have a flat slope at ten covers, both are maximising profit there.",
+      "At ten covers, Café A's profit is $50$ euros while Café B's profit is $-10$ euros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate each café's profit and evaluate the slopes at ten covers:\n\n$$\nP_A'(Q) = -2Q+20\n$$\n\n$$\nP_B'(Q) = 2Q-20\n$$\n\n$$\nP_A'(10) = -20+20\n$$\n\n$$\n-20 + 20 = 0\n$$\n\n$$\nP_A'(10) = 0 = 0\n$$\n\n$$\nP_B'(10) = 20-20\n$$\n\n$$\n20 - 20 = 0\n$$\n\n$$\nP_B'(10) = 0 = 0\n$$\n\n$$\n20 - 20 = 0 = 0.\n$$\n\nBoth slopes are flat at $Q=10$. Sharing a critical output does not yet say anything about peaks versus troughs — that comes from the bends — but the flat-slope claim itself holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nRead the bend of Café A's profit at the shared flat spot. Differentiating the slope once more gives\n\n$$\nP_A''(Q) = -2\n$$\n\n$$\nP_A''(10) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore ten covers is a local profit peak for A.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the bend of Café B's profit at the same output:\n\n$$\nP_B''(Q) = 2\n$$\n\n$$\nP_B''(10) = 2>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore ten covers is a local profit trough for B — the opposite label from A's —\n\nSo the statement is True.",
+      "**D.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nBoth cafés have a flat slope at ten covers, but the bends tell opposite stories: A has a peak ($P_A''<0$) while B has a trough ($P_B''>0$). Flat slope alone finds candidates; it does not mean both are maximising profit. Café B is locally *minimising* profit there. The claim overreaches from critical point to maximum.\n\nSo the statement is False.",
+      "**E.** → True\n\nEvaluate each profit *level* at ten covers (not the slopes):\n\n$$\nP_A(10) = -100+200-50\n$$\n\n$$\n-100 + 200 = 100\n$$\n\n$$\n100 - 50 = 50\n$$\n\n$$\nP_A(10) = 50\n$$\n\n$$\nP_B(10) = 100-200+90\n$$\n\n$$\n100 - 200 = -100\n$$\n\n$$\n-100 + 90 = -10\n$$\n\n$$\nP_B(10) = -10 = -10\n$$\n\n$$\nP_B(10) = -10.\n$$\n\nCafé A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Two cafés share the output $Q=10$ but run opposite profit shapes:\n\n$$P_A(Q)=-Q^{2}+20Q-50,\\qquad P_B(Q)=Q^{2}-20Q+90.$$\n\nDifferentiate each:\n\n$$P_A'(Q)=-2Q+20,\\quad P_A''=-2,$$\n\n$$P_B'(Q)=2Q-20,\\quad P_B''=2.$$\n\nAt ten covers both slopes vanish, but the bends tell opposite stories: $P_A''(10)<0$ marks a local profit peak for A, while $P_B''(10)>0$ marks a local profit trough for B. Evaluating the levels gives\n\n$$P_A(10)=50,\\qquad P_B(10)=-10,$$\n\nso flat slope alone does not mean both cafés are maximising profit.",
+    "title_de_existing": "Zwei Cafés: gleiche flache Menge, gegenteilige Gewinnkrümmung",
+    "context_de_existing": "Café A modelliert den Tagesgewinn durch $$P_A(Q)=-Q^{2}+20Q-50.$$ Café B modelliert den Tagesgewinn durch $$P_B(Q)=Q^{2}-20Q+90.$$ Beide Manager betrachten den Output $Q=10$ Lunch-Covers. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Bei zehn Covers haben beide Cafés eine flache Gewinnsteigung.",
+      "Die Gewinnkurve von Café A biegt bei zehn Covers nach unten, also ist dieser Output ein lokales Gewinnmaximum für A.",
+      "Die Gewinnkurve von Café B biegt bei zehn Covers nach oben, also ist dieser Output ein lokales Gewinntal für B.",
+      "Weil beide Cafés bei zehn Covers flache Steigung haben, maximieren beide dort den Gewinn.",
+      "Bei zehn Covers beträgt der Gewinn von Café A $50$ Euro, während der von Café B $-10$ Euro beträgt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P_A'=-2Q+20$, $P_B'=2Q-20$ — beide null bei $Q=10$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_A''=-2<0$ — lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_B''=2>0$ — lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nB hat ein Tal, kein Maximum.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$P_A(10)=50$, $P_B(10)=-10$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Beide flach bei $Q=10$, aber $P_A''<0$ (Maximum) und $P_B''>0$ (Tal)."
+  },
+  {
+    "case_id": "MATH 11.86",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Festival tickets: local peak versus endpoint global max",
+    "context_en": "A festival ticket booth may sell any number of ticket packs in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is modelled by $$P(Q)=Q^{3}-6Q^{2}+9Q+10.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Inside $(0,5)$, profit has a flat slope at one pack and at three packs.",
+      "One pack is a local profit peak and three packs is a local profit trough.",
+      "The profit values are $14$ at one pack, $10$ at three packs, $10$ at zero packs, and $30$ at five packs.",
+      "On the full interval $[0,5]$, the global profit maximum is at the local peak of one pack.",
+      "On $[0,5]$, the global profit maximum is at the endpoint of five packs."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the cubic profit and set the slope to zero inside $(0,5)$:\n\n$$\nP'(Q) = 3Q^{2}-12Q+9\n$$\n\n$$\nP'(Q) = 3(Q^{2}-4Q+3)\n$$\n\n$$\nP'(Q) = 3(Q-1)(Q-3).\n$$\n\nThe roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify the two critical packs with the second derivative:\n\n$$\nP''(Q) = 6Q-12,\n$$\n\n$$\nP''(1) = 6-12\n$$\n\n$$\n6 - 12 = -6\n$$\n\n$$\nP''(1) = -6 = -6\n$$\n\n$$\n6 - 12 = -6 = -6<0\n$$\n\n$$\nP''(3) = 18-12\n$$\n\n$$\n18 - 12 = 6\n$$\n\n$$\nP''(3) = 6 = 6\n$$\n\n$$\n18 - 12 = 6 = 6>0.\n$$\n\nA downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nEvaluate profit at the two critical packs and at both endpoints — global comparison needs all four values:\n\n$$\nP(1) = 1-6+9+10\n$$\n\n$$\n1 - 6 = -5\n$$\n\n$$\n-5 + 9 = 4\n$$\n\n$$\n4 + 10 = 14\n$$\n\n$$\nP(1) = 14 = 14\n$$\n\n$$\nP(1) = 14,\n$$\n\n$$\nP(3) = 27-54+27+10\n$$\n\n$$\n27 - 54 = -27\n$$\n\n$$\n-27 + 27 = 0\n$$\n\n$$\n0 + 10 = 10\n$$\n\n$$\nP(3) = 10 = 10\n$$\n\n$$\nP(3) = 10,\n$$\n\n$$\nP(0) = 10\n$$\n\n$$\nP(5) = 125-150+45+10\n$$\n\n$$\n125 - 150 = -25\n$$\n\n$$\n-25 + 45 = 20\n$$\n\n$$\n20 + 10 = 30\n$$\n\n$$\nP(5) = 30 = 30\n$$\n\n$$\n20 + 10 = 30 = 30.\n$$\n\nThose four values match the claim exactly.\n\nSo the statement is True.",
+      "**D.** → False\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nComparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger. On a closed interval the global maximum can sit at an endpoint even when an interior local peak exists. The global maximum on $[0,5]$ is therefore not at one pack.\n\n$$\nP(1) = 14\n$$\n\n$$\nP(5) = 30\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nAmong $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison\n\n$$\nP(0) = 10\n$$\n\n$$\nP(1) = 14\n$$\n\n$$\nP(3) = 10\n$$\n\n$$\nP(5) = 30\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Festival profit on the closed pack interval $[0,5]$ is the cubic\n\n$$P(Q)=Q^{3}-6Q^{2}+9Q+10.$$\n\nDifferentiate twice:\n\n$$P'(Q)=3Q^{2}-12Q+9=3(Q-1)(Q-3),\\qquad P''(Q)=6Q-12.$$\n\nInside $(0,5)$ the flat-slope packs are $Q=1$ and $Q=3$. The bend test labels $Q=1$ a local peak ($P''(1)=-6<0$) and $Q=3$ a local trough ($P''(3)=6>0$). Comparing all candidates with the endpoints,\n\n$$P(0)=10,\\quad P(1)=14,\\quad P(3)=10,\\quad P(5)=30,$$\n\nshows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at one pack. Local peaks need not be global on a closed interval.",
+    "title_de_existing": "Festivaltickets: lokales Maximum versus globales am Rand",
+    "context_de_existing": "Ein Festival-Ticketstand darf eine beliebige Anzahl Ticketpacks im abgeschlossenen Intervall $0\\le Q\\le 5$ verkaufen. Der Gewinn (in Zehnern Euro) wird durch $$P(Q)=Q^{3}-6Q^{2}+9Q+10$$ modelliert. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Im Inneren von $(0,5)$ hat der Gewinn bei einem Pack und bei drei Packs flache Steigung.",
+      "Ein Pack ist ein lokales Gewinnmaximum und drei Packs ein lokales Gewinntal.",
+      "Die Gewinnwerte sind $14$ bei einem Pack, $10$ bei drei Packs, $10$ bei null Packs und $30$ bei fünf Packs.",
+      "Auf dem vollen Intervall $[0,5]$ liegt das globale Gewinnmaximum am lokalen Peak von einem Pack.",
+      "Auf $[0,5]$ liegt das globale Gewinnmaximum am Endpunkt von fünf Packs."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=3(Q-1)(Q-3)=0$ bei $Q=1,3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P''(1)=-6<0$ (Peak), $P''(3)=6>0$ (Tal).\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nAuswerten bestätigt $P(1)=14$, $P(3)=10$, $P(0)=10$, $P(5)=30$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$P(5)=30>14=P(1)$ — das globale Maximum ist nicht am lokalen Peak.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nUnter allen Kandidaten und Endpunkten ist $P(5)=30$ am größten.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Kritische Stellen $Q=1$ (Peak) und $Q=3$ (Tal). Global auf $[0,5]$ gewinnt der Endpunkt $Q=5$ mit $P=30$."
+  },
+  {
+    "case_id": "MATH 11.87",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Pop-up stall: rising profit forces an endpoint maximum",
+    "context_en": "A pop-up market stall can produce any output in $0\\le Q\\le 8$. Its daily profit in euros is $$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The slope of profit is $P'(Q)=5-\\dfrac{Q}{5}$.",
+      "Inside $(0,8)$ the slope stays strictly positive, so there is no interior flat-slope output.",
+      "Because profit is strictly increasing on $[0,8]$, the maximum is at eight units and the minimum at zero.",
+      "At the maximum output of eight units one must have a flat profit slope.",
+      "The maximal profit on the interval is $36.6$ euros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the stall's profit rule term by term. From\n\n$$\nP(Q) = 5Q-\\dfrac{Q^{2}}{10}+3,\n$$\n\nthe derivative of the quadratic term is $-\\dfrac{2Q}{10}=-\\dfrac{Q}{5}$, so\n\n$$\nP'(Q) = 5-\\dfrac{Q}{5}.\n$$\n\nThat slope matches the claim exactly\n\n$$\nP'(Q) = 5-\\dfrac{Q}{5}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nInside $(0,8)$ check whether the slope can hit zero. Solving $5-\\dfrac{Q}{5}=0$ would give $Q=25$, which lies far outside $[0,8]$. At the right endpoint itself\n\n$$\nP'(8) = 5-\\dfrac{8}{5}\n$$\n\n$$\nP'(8) = \\dfrac{17}{5}\n$$\n\n$$\nP'(8) = 3.4>0,\n$$\n\nand for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P'(Q)=0$ on $(0,8)$.\n\nSo the statement is True.",
+      "**C.** → True\n\nBecause $P'(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed bounded interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$. No interior critical point is needed for that conclusion.\n\n$$\nQ = 8\n$$\n\n$$\nQ = 0\n$$\n\nSo the statement is True.",
+      "**D.** → False\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nEndpoint maxima need not be critical points — that is the trap. Here the domain simply stops at eight units while the slope is still positive:\n\n$$\nP'(8) = 5-\\dfrac{8}{5}\n$$\n\n$$\nP'(8) = \\dfrac{17}{5}>0.\n$$\n\nThe maximum sits at the boundary because the feasible set ends, not because the tangent is flat. Claiming a flat slope at the maximum is false.\n\nSo the statement is False.",
+      "**E.** → True\n\nEvaluate profit at the right endpoint where the maximum must occur:\n\n$$\nP(8) = 5\\cdot 8-\\dfrac{64}{10}+3\n$$\n\n$$\nP(8) = 40-6.4+3 = 36.6\n$$\n\n$$\n40 - 6.4 = 33.6\n$$\n\n$$\n33.6 + 3 = 36.6\n$$\n\n$$\nP(8) = 36.6.\n$$\n\nMaximal profit on the interval is $36.6$ euros, matching the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The stall's profit on the closed interval $[0,8]$ is\n\n$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$\n\nIts slope is\n\n$$P'(Q)=5-\\dfrac{Q}{5}.$$\n\nOn $(0,8]$ one has $P'(Q)\\ge P'(8)=\\dfrac{17}{5}>0$, so the slope stays strictly positive: there is no interior flat-slope output, and profit is strictly increasing on $[0,8]$. A strictly increasing continuous function attains its maximum at the right endpoint $Q=8$ and its minimum at $Q=0$, without needing $P'(8)=0$. The maximal level is\n\n$$P(8)=40-6.4+3=36.6.$$\n\nEndpoint maxima need not be critical points.",
+    "title_de_existing": "Pop-up-Stand: steigender Gewinn erzwingt Randmaximum",
+    "context_de_existing": "Ein Pop-up-Marktstand kann jeden Output in $0\\le Q\\le 8$ produzieren. Sein Tagesgewinn in Euro ist $$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Gewinnsteigung ist $P'(Q)=5-\\dfrac{Q}{5}$.",
+      "Im Inneren von $(0,8)$ bleibt die Steigung streng positiv, also gibt es keinen inneren flachen Output.",
+      "Weil der Gewinn auf $[0,8]$ streng steigt, liegt das Maximum bei acht Einheiten und das Minimum bei null.",
+      "Am Maximaloutput von acht Einheiten muss die Gewinnsteigung flach sein.",
+      "Der Maximalgewinn auf dem Intervall ist $36{,}6$ Euro."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDifferenzieren liefert $P'=5-Q/5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nAuf $(0,8]$ gilt $P'\\ge P'(8)=17/5>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStreng steigend $\\Rightarrow$ Max bei $Q=8$, Min bei $Q=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAm Endpunktmaximum muss $P'$ nicht null sein — hier $P'(8)>0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$P(8)=40-6{,}4+3=36{,}6$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Auf $[0,8]$ ist $P'>0$, also Maximum am Endpunkt $Q=8$ mit $P=36{,}6$, ohne flache Steigung."
+  },
+  {
+    "case_id": "MATH 11.88",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "App studio: local peak and trough, no global max on $[0,\\infty)$",
+    "context_en": "An app studio models weekly net benefit (in thousands of euros) by $$B(x)=x^{3}-6x^{2}+9x+2$$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Net benefit has a flat slope at intensities $1$ and $3$.",
+      "A sign chart of the slope shows a change from positive to negative at intensity $1$, so that point is a local peak.",
+      "A sign chart shows a change from negative to positive at intensity $3$, so that point is a local trough.",
+      "The second-derivative bend test confirms the same local peak at $1$ and local trough at $3$.",
+      "Because intensity $1$ is a local peak, it must also be the global maximum of net benefit on $[0,\\infty)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate net benefit and set the slope to zero:\n\n$$\nB'(x) = 3x^{2}-12x+9\n$$\n\n$$\nB'(x) = 3(x^{2}-4x+3)\n$$\n\n$$\nB'(x) = 3(x-1)(x-3).\n$$\n\nThe roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities.\n\nSo the statement is True.",
+      "**B.** → True\n\nFactor the slope and read its sign chart around $x=1$:\n\n$$\nB'(x) = 3(x-1)(x-3).\n$$\n\nFor $0\\le x<1$ both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$. Just to the right of $1$, the factor $(x-1)$ becomes positive while $(x-3)$ stays negative, so $B'<0$. The change from positive to negative marks a local peak at intensity $1$ by the first-derivative test.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nAround $x=3$ the same factored slope changes the other way. Just left of $3$ one has $B'<0$ (as in the interval $(1,3)$). Just right of $3$ both factors are positive, so $B'>0$. The change from negative to positive marks a local trough at intensity $3$ by the first-derivative test\n\n$$\nx = 3\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nThe second-derivative bend test confirms the same labels independently of the sign chart:\n\n$$\nB''(x) = 6x-12,\n$$\n\n$$\nB''(1) = 6-12\n$$\n\n$$\n6 - 12 = -6\n$$\n\n$$\nB''(1) = -6 = -6\n$$\n\n$$\n6 - 12 = -6 = -6<0\n$$\n\n$$\nB''(3) = 18-12\n$$\n\n$$\n18 - 12 = 6\n$$\n\n$$\nB''(3) = 6 = 6\n$$\n\n$$\n18 - 12 = 6 = 6>0.\n$$\n\nSo intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading.\n\nSo the statement is True.",
+      "**E.** → False\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nA local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the leading term $x^{3}$ drives $B(x)\\to\\infty$, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak — the unbounded domain lets benefit grow without bound afterward — so it is not the global maximum.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Weekly net benefit for advertising intensity $x\\ge 0$ is the cubic\n\n$$B(x)=x^{3}-6x^{2}+9x+2.$$\n\nFactor its slope and form the bend:\n\n$$B'(x)=3(x-1)(x-3),\\qquad B''(x)=6x-12.$$\n\nFlat slopes sit at $x=1$ and $x=3$. The sign chart of $B'$ changes from positive to negative at $x=1$ (local peak) and from negative to positive at $x=3$ (local trough); equivalently $B''(1)=-6<0$ and $B''(3)=6>0$. As $x\\to\\infty$, the cubic $B(x)\\to\\infty$, so the local peak at intensity $1$ is not a global maximum on $[0,\\infty)$. Local and global extrema can diverge on unbounded domains.",
+    "title_de_existing": "App-Studio: lokales Max und Min, kein globales Max auf [0,∞)",
+    "context_de_existing": "Ein App-Studio modelliert den wöchentlichen Nettonutzen (in Tausend Euro) durch $$B(x)=x^{3}-6x^{2}+9x+2$$ für Werbeintensität $x\\ge 0$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Der Nettonutzen hat bei den Intensitäten $1$ und $3$ flache Steigung.",
+      "Ein Vorzeichenwechsel der Steigung von plus nach minus bei Intensität $1$ zeigt: dort ist ein lokales Maximum.",
+      "Ein Vorzeichenwechsel von minus nach plus bei Intensität $3$ zeigt: dort ist ein lokales Tal.",
+      "Der Krümmungstest der zweiten Ableitung bestätigt dasselbe lokale Maximum bei $1$ und lokale Tal bei $3$.",
+      "Weil Intensität $1$ ein lokales Maximum ist, muss sie auch das globale Maximum des Nettonutzens auf $[0,\\infty)$ sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$B'=3(x-1)(x-3)=0$ bei $x=1,3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichenwechsel $+\\to -$ bei $x=1$ — lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVorzeichenwechsel $-\\to +$ bei $x=3$ — lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$B''(1)=-6<0$, $B''(3)=6>0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$B(x)\\to\\infty$ für $x\\to\\infty$ — kein globales Maximum auf $[0,\\infty)$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Lokales Maximum bei $x=1$, lokales Tal bei $x=3$. Kein globales Maximum auf $[0,\\infty)$, weil $B\\to\\infty$."
+  },
+  {
+    "case_id": "MATH 11.89",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Bakery ovens: local trough, local peak, global max at zero",
+    "context_en": "A bakery's daily profit from running $Q$ ovens is $$P(Q)=-Q^{3}+9Q^{2}-24Q+30$$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Inside $(0,6)$, profit has a flat slope at two ovens and at four ovens.",
+      "Two ovens is a local profit trough.",
+      "Four ovens is a local profit peak.",
+      "Comparing all candidate and endpoint values, the global profit maximum on $[0,6]$ is at zero ovens.",
+      "Finding the flat-slope outputs alone already proves which point maximises profit on $[0,6]$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate daily profit and set the slope to zero inside $(0,6)$:\n\n$$\nP'(Q) = -3Q^{2}+18Q-24\n$$\n\n$$\nP'(Q) = -3(Q^{2}-6Q+8)\n$$\n\n$$\nP'(Q) = -3(Q-2)(Q-4).\n$$\n\nThe roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify two ovens with the second derivative:\n\n$$\nP''(Q) = -6Q+18\n$$\n\n$$\nP''(2) = -12+18\n$$\n\n$$\n-12 + 18 = 6\n$$\n\n$$\nP''(2) = 6 = 6>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough.\n\nSo the statement is True.",
+      "**C.** → True\n\nClassify four ovens the same way:\n\n$$\nP''(4) = -24+18\n$$\n\n$$\n-24 + 18 = -6\n$$\n\n$$\nP''(4) = -6\n$$\n\n$$\nP''(4) = -6<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak.\n\nSo the statement is True.",
+      "**D.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nCompare profit at the critical ovens and at both endpoints — global max needs every candidate:\n\n$$\nP(0) = 30,\n$$\n\n$$\nP(2) = -8+36-48+30\n$$\n\n$$\n-8 + 36 = 28\n$$\n\n$$\n28 - 48 = -20\n$$\n\n$$\n-20 + 30 = 10\n$$\n\n$$\nP(2) = 10\n$$\n\n$$\nP(4) = -64+144-96+30\n$$\n\n$$\n-64 + 144 = 80\n$$\n\n$$\n80 - 96 = -16\n$$\n\n$$\n-16 + 30 = 14\n$$\n\n$$\nP(4) = 14\n$$\n\n$$\nP(6) = -216+324-144+30\n$$\n\n$$\n-216 + 324 = 108\n$$\n\n$$\n108 - 144 = -36\n$$\n\n$$\n-36 + 30 = -6\n$$\n\n$$\nP(6) = -6\n$$\n\nThe largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nListing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof.\n\n$$\nQ = 2\n$$\n\n$$\nQ = 4\n$$\n\n$$\nQ = 0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Bakery profit on the closed oven interval $[0,6]$ is\n\n$$P(Q)=-Q^{3}+9Q^{2}-24Q+30.$$\n\nDifferentiate twice:\n\n$$P'(Q)=-3(Q-2)(Q-4),\\qquad P''(Q)=-6Q+18.$$\n\nInside $(0,6)$ the flat-slope oven counts are $Q=2$ and $Q=4$. The bend test labels $Q=2$ a local trough ($P''(2)=6>0$) and $Q=4$ a local peak ($P''(4)=-6<0$). Comparing all candidates with the endpoints,\n\n$$P(0)=30,\\quad P(2)=10,\\quad P(4)=14,\\quad P(6)=-6,$$\n\nshows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope outputs alone does not finish that comparison — endpoints can win.",
+    "title_de_existing": "Bäckereiöfen: lokales Min, lokales Max, globales Max bei null",
+    "context_de_existing": "Der Tagesgewinn einer Bäckerei beim Betrieb von $Q$ Öfen ist $$P(Q)=-Q^{3}+9Q^{2}-24Q+30$$ für $0\\le Q\\le 6$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Im Inneren von $(0,6)$ hat der Gewinn bei zwei Öfen und bei vier Öfen flache Steigung.",
+      "Zwei Öfen sind ein lokales Gewinntal.",
+      "Vier Öfen sind ein lokales Gewinnmaximum.",
+      "Vergleicht man alle Kandidaten- und Endpunktwerte, liegt das globale Gewinnmaximum auf $[0,6]$ bei null Öfen.",
+      "Allein die flachen Outputs zu finden beweist bereits, welcher Punkt den Gewinn auf $[0,6]$ maximiert."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=-3(Q-2)(Q-4)=0$ bei $Q=2,4$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P''(2)=6>0$ — lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P''(4)=-6<0$ — lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P(0)=30$ schlägt $P(4)=14$ und $P(6)=18$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAuf einem abgeschlossenen Intervall müssen auch die Endpunkte verglichen werden.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Kritische Stellen $Q=2$ (Tal) und $Q=4$ (Peak). Global gewinnt $Q=0$ mit $P=30$."
+  },
+  {
+    "case_id": "MATH 11.90",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Print shop: match marginal revenue to marginal cost",
+    "context_en": "A print shop has revenue $$R(Q)=40Q-2Q^{2}$$ and cost $$C(Q)=Q^{2}+4Q+10$$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Profit simplifies to $P(Q)=-3Q^{2}+36Q-10$, with slope $P'(Q)=-6Q+36$.",
+      "Profit has a flat slope at six jobs, and there marginal revenue equals marginal cost at $16$.",
+      "At six jobs the profit curve bends downward, so that output is a local profit peak.",
+      "Peak profit is $98$ euros.",
+      "Matching marginal revenue to marginal cost is enough; one may skip checking the bend of profit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nForm profit as revenue minus cost, distribute the minus carefully, then differentiate:\n\n$$\nP(Q) = (40Q-2Q^{2})-(Q^{2}+4Q+10)\n$$\n\n$$\nP(Q) = -3Q^{2}+36Q-10,\n$$\n\n$$\nP'(Q) = -6Q+36.\n$$\n\nBoth the simplified profit quadratic and its slope match the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSet marginal profit to zero, then check that marginal revenue equals marginal cost there:\n\n$$\nP'(Q) = -6Q+36 = 0\n$$\n\n$$\nQ = 6.\n$$\n\n$$\nR'(Q) = 40-4Q\n$$\n\n$$\nC'(Q) = 2Q+4\n$$\n\n$$\nR'(6) = 40-24\n$$\n\n$$\n40 - 24 = 16\n$$\n\n$$\nR'(6) = 16 = 16\n$$\n\n$$\nC'(6) = 12+4\n$$\n\n$$\n12 + 4 = 16\n$$\n\n$$\nC'(6) = 16 = 16\n$$\n\n$$\n12 + 4 = 16 = 16.\n$$\n\nFlat profit at six jobs coincides with $R'=C'=16$\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the bend of profit at six jobs. Differentiating the slope once more gives the constant\n\n$$\nP''(Q) = -6\n$$\n\n$$\nP''(6) = -6<0.\n$$\n\nA downward bend at a flat slope means a local profit peak by the second-derivative test.\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate profit at the peak output — use the level $P$, not the slope:\n\n$$\nP(6) = -3\\cdot 36+36\\cdot 6-10\n$$\n\n$$\nP(6) = -108+216-10\n$$\n\n$$\n-108 + 216 = 108\n$$\n\n$$\n108 - 10 = 98\n$$\n\n$$\nP(6) = 98\n$$\n\nPeak profit is $98$ euros, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nMatching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished.\n\n$$\nR' = C'\n$$\n\n$$\nP' = 0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Print-shop profit is revenue minus cost:\n\n$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,$$\n\nwith slope and bend\n\n$$P'(Q)=-6Q+36,\\qquad P''(Q)=-6,$$\n\nand separate marginals $R'(Q)=40-4Q$, $C'(Q)=2Q+4$. Flat profit at $Q=6$ coincides with $R'(6)=C'(6)=16$. The negative bend confirms a local profit peak, and\n\n$$P(6)=-108+216-10=98.$$\n\nMatching $R'=C'$ only finds a critical point of profit; without a bend check (or equivalent sign argument) one cannot yet label it a peak rather than a trough. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Druckerei: Grenzerlös an Grenzkosten anpassen",
+    "context_de_existing": "Eine Druckerei hat Erlös $$R(Q)=40Q-2Q^{2}$$ und Kosten $$C(Q)=Q^{2}+4Q+10$$ für $Q>0$. Gewinn ist $P=R-C$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Der Gewinn vereinfacht sich zu $P(Q)=-3Q^{2}+36Q-10$, mit Steigung $P'(Q)=-6Q+36$.",
+      "Der Gewinn hat bei sechs Aufträgen flache Steigung, und dort sind Grenzerlös und Grenzkosten beide $16$.",
+      "Bei sechs Aufträgen biegt die Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum.",
+      "Der Maximalgewinn beträgt $98$ Euro.",
+      "Grenzerlös mit Grenzkosten gleichzusetzen reicht; die Gewinnkrümmung darf man überspringen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P=-3Q^{2}+36Q-10$, $P'=-6Q+36$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=0\\Rightarrow Q=6$; $R'(6)=C'(6)=16$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P''=-6<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P(6)=-108+216-10=98$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$R'=C'$ findet nur die kritische Stelle; der Krümmungstest bestätigt das Maximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P=-3Q^{2}+36Q-10$, Peak bei $Q=6$ mit $R'=C'=16$ und $P''<0$, $P(6)=98$."
+  },
+  {
+    "case_id": "MATH 11.91",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two bakeries: shared flat output, opposite profit bends",
+    "context_en": "Bakery North models daily profit by $$P_N(Q)=-Q^{2}+16Q-30.$$ Bakery South models daily profit by $$P_S(Q)=Q^{2}-16Q+70.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Both bakeries have a flat profit slope at eight loaves a day.",
+      "At eight loaves, North's profit curve bends downward, so that output is a local profit peak for North.",
+      "At eight loaves, South's profit curve bends upward, so that output is a local profit trough for South.",
+      "North's peak profit is $34$ euros, while South's profit at eight loaves is $6$ euros.",
+      "Because both flat-slope outputs equal eight, both bakeries are at a profit maximum."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate each bakery's profit and evaluate at eight loaves:\n\n$$\nP_N'(Q) = -2Q+16\n$$\n\n$$\nP_S'(Q) = 2Q-16\n$$\n\n$$\nP_N'(8) = -16+16\n$$\n\n$$\n-16 + 16 = 0\n$$\n\n$$\nP_N'(8) = 0 = 0\n$$\n\n$$\nP_S'(8) = 16-16\n$$\n\n$$\n16 - 16 = 0\n$$\n\n$$\nP_S'(8) = 0 = 0\n$$\n\n$$\n16 - 16 = 0 = 0.\n$$\n\nBoth slopes are flat at $Q=8$. Sharing a critical output is only the first step — bends still decide peak versus trough — but the flat-slope claim holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nRead North's bend at the shared flat spot:\n\n$$\nP_N''(Q) = -2\n$$\n\n$$\nP_N''(8) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore eight loaves is a local profit peak for North.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead South's bend at the same output:\n\n$$\nP_S''(Q) = 2\n$$\n\n$$\nP_S''(8) = 2>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore eight loaves is a local profit trough for South — opposite to North's label —\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate each profit level at eight loaves:\n\n$$\nP_N(8) = -64+128-30\n$$\n\n$$\n-64 + 128 = 64\n$$\n\n$$\n64 - 30 = 34\n$$\n\n$$\nP_N(8) = 34\n$$\n\n$$\nP_S(8) = 64-128+70\n$$\n\n$$\n64 - 128 = -64\n$$\n\n$$\n-64 + 70 = 6\n$$\n\n$$\nP_S(8) = 6 = 6\n$$\n\n$$\nP_S(8) = 6.\n$$\n\nNorth's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nBoth bakeries have a flat slope at eight loaves, but the bends disagree: North has a peak while South has a trough. Flat slope alone finds candidates; it does not mean both are at a profit maximum. South is locally *minimising* profit there. The claim confuses critical point with maximum.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Two bakeries share the critical output $Q=8$ but run opposite profit shapes:\n\n$$P_N(Q)=-Q^{2}+16Q-30,\\qquad P_S(Q)=Q^{2}-16Q+70.$$\n\nDifferentiate each:\n\n$$P_N'(Q)=-2Q+16,\\quad P_N''=-2,$$\n\n$$P_S'(Q)=2Q-16,\\quad P_S''=2.$$\n\nAt eight loaves both slopes vanish, but $P_N''(8)<0$ marks a local profit peak for North while $P_S''(8)>0$ marks a local profit trough for South. The levels are\n\n$$P_N(8)=34,\\qquad P_S(8)=6.$$\n\nEqual flat-slope outputs do not mean both bakeries are maximising profit. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Zwei Bäckereien: gemeinsame flache Menge, gegenteilige Krümmung",
+    "context_de_existing": "Bäckerei Nord modelliert den Tagesgewinn durch $$P_N(Q)=-Q^{2}+16Q-30.$$ Bäckerei Süd modelliert den Tagesgewinn durch $$P_S(Q)=Q^{2}-16Q+70.$$ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Beide Bäckereien haben bei acht Broten pro Tag flache Gewinnsteigung.",
+      "Bei acht Broten biegt Nords Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum für Nord.",
+      "Bei acht Broten biegt Süds Gewinnkurve nach oben, also ist dieser Output ein lokales Gewinntal für Süd.",
+      "Nords Maximalgewinn beträgt $34$ Euro, während Süds Gewinn bei acht Broten $6$ Euro beträgt.",
+      "Weil beide flachen Outputs gleich acht sind, sind beide Bäckereien an einem Gewinnmaximum."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide Ableitungen verschwinden bei $Q=8$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_N''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_S''=2>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P_N(8)=34$, $P_S(8)=6$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nSüd hat ein Tal, kein Maximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Beide flach bei $Q=8$; Nord Maximum ($P''<0$), Süd Tal ($P''>0$)."
+  },
+  {
+    "case_id": "MATH 11.92",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Loyalty index: bend test fails but a global peak remains",
+    "context_en": "A retailer's loyalty index near a special-offer intensity $x$ is modelled by $$L(x)=10-x^{4}.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "At intensity zero, both the slope and the second derivative of the loyalty index are flat.",
+      "The usual downward-bend test for a strict local peak does not apply at intensity zero.",
+      "Even so, intensity zero is a strict global maximum of the loyalty index.",
+      "Because the second derivative vanishes at zero, intensity zero cannot be a local peak.",
+      "A necessary condition at an interior local peak is that the second derivative is at most zero; here that necessary condition still holds."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the loyalty index twice and evaluate at intensity zero:\n\n$$\nL'(x) = -4x^{3}\n$$\n\n$$\nL''(x) = -12x^{2}.\n$$\n\nAt $x=0$ one has $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat at intensity zero, matching the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at a critical point. Here $L''(0)=0$, so that strict inequality fails. The usual downward-bend test therefore does not apply at intensity zero — the check is inconclusive rather than affirmative —\n\n$$\nL''(0) = 0\n$$\n\n$$\nf'' = 0\n$$\n\nSo the statement is True.",
+      "**C.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nEven with $L''(0)=0$, compare nearby values directly. For every $x\\neq 0$,\n\n$$\nL(x) = 10-x^{4}<10\n$$\n\n$$\nL(x) = L(0).\n$$\n\nSo the index at zero strictly dominates every other intensity: zero is a strict global maximum (hence also a strict local peak). The failed bend test does not cancel that comparison.\n\n$$\nL''(0) = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nVanishing of the second derivative only makes the *usual sufficient bend test* fail; it does not prove there is no peak. The direct comparison $L(x)<L(0)$ for $x\\neq 0$ already shows a strict global maximum at zero. Claiming that $L''(0)=0$ forbids a local peak confuses “test inconclusive” with “no extremum,”.\n\n$$\nL''(0) = 0\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nAt an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct.\n\n$$\nL''(0) = 0\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The loyalty index is the downward fourth-power bump\n\n$$L(x)=10-x^{4}.$$\n\nDifferentiate twice:\n\n$$L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.$$\n\nAt intensity zero both $L'(0)=0$ and $L''(0)=0$, so the usual strict downward-bend test for a local peak does not apply. Direct comparison still works: for every $x\\neq 0$,\n\n$$L(x)=10-x^{4}<10=L(0),$$\n\nso zero is a strict global maximum. Vanishing of $L''$ does not forbid a peak. A necessary condition at an interior local peak is $L''\\le 0$; here $L''(0)=0$, so that necessary condition still holds even though the sufficient bend test fails.",
+    "title_de_existing": "Treueindex: Krümmungstest scheitert, globales Max bleibt",
+    "context_de_existing": "Der Loyalitätsindex eines Händlers nahe einer Sonderangebots-Intensität $x$ wird durch $$L(x)=10-x^{4}$$ modelliert. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Bei Intensität null sind sowohl Steigung als auch zweite Ableitung des Loyalitätsindex flach.",
+      "Der übliche Abwärtskrümmungstest für ein strenges lokales Maximum greift bei Intensität null nicht.",
+      "Trotzdem ist Intensität null ein strenges globales Maximum des Loyalitätsindex.",
+      "Weil die zweite Ableitung bei null verschwindet, kann Intensität null kein lokales Maximum sein.",
+      "Eine notwendige Bedingung an einem inneren lokalen Maximum ist, dass die zweite Ableitung höchstens null ist; hier gilt diese notwendige Bedingung weiterhin."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$L'=-4x^{3}$, $L''=-12x^{2}$ — beide null bei $x=0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$L''(0)=0$ — strenger $L''<0$-Test greift nicht.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$L(x)=10-x^{4}\\le 10=L(0)$ für alle $x$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVerschwindendes $L''$ schließt ein Maximum nicht aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$L''(0)=0\\le 0$ — die notwendige Bedingung hält.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$L=10-x^{4}$ hat bei $0$ flaches $L'$ und $L''$, ist aber trotzdem globales Maximum."
+  },
+  {
+    "case_id": "MATH 11.93",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Workshop firm: cost trough and profit peak at different outputs",
+    "context_en": "A workshop firm has cost $$C(Q)=Q^{2}-8Q+30$$ and revenue $$R(Q)=20Q-Q^{2}$$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Daily cost is minimised at four units, where the cost curve has a flat slope and an upward bend.",
+      "Profit simplifies to $P(Q)=-2Q^{2}+28Q-30$, and profit has a flat slope at seven units.",
+      "At seven units the profit curve bends downward, so that output is a local profit peak.",
+      "The cost-minimising output of four units is automatically the profit-maximising output as well.",
+      "At the profit peak, profit equals $68$ euros, while at the cost trough, cost equals $14$ euros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate cost and classify the critical output:\n\n$$\nC'(Q) = 2Q-8 = 0\n$$\n\n$$\nQ = 4\n$$\n\n$$\nC''(Q) = 2>0.\n$$\n\nFlat slope at four units together with an upward bend means a local cost minimum (trough). Evaluating confirms $C(4)=16-32+30=14$, but the claim only needs the flat-slope-plus-upward-bend characterisation, which holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nForm profit as revenue minus cost and simplify:\n\n$$\nP(Q) = (20Q-Q^{2})-(Q^{2}-8Q+30)\n$$\n\n$$\nP(Q) = -2Q^{2}+28Q-30.\n$$\n\nSet the slope to zero:\n\n$$\nP'(Q) = -4Q+28 = 0\n$$\n\n$$\nQ = 7.\n$$\n\nProfit therefore has a flat slope at seven units, matching both parts of the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead the bend of profit at seven units:\n\n$$\nP''(Q) = -4\n$$\n\n$$\nP''(7) = -4<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore seven units is a local profit peak.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nCost is minimised at $Q=4$, but profit is maximised at $Q=7$. Those are different outputs because revenue also depends on $Q$: cutting cost further can sacrifice more revenue than it saves. The cost-minimising output is *not* automatically the profit-maximising output.\n\n$$\nQ = 4\n$$\n\n$$\nQ = 7\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nEvaluate the two levels at their respective critical outputs:\n\n$$\nP(7) = -2\\cdot 49+28\\cdot 7-30\n$$\n\n$$\nP(7) = -98+196-30\n$$\n\n$$\n-98 + 196 = 98\n$$\n\n$$\n98 - 30 = 68\n$$\n\n$$\nP(7) = 68\n$$\n\n$$\nC(4) = 16-32+30\n$$\n\n$$\n16 - 32 = -16\n$$\n\n$$\n-16 + 30 = 14\n$$\n\n$$\nC(4) = 14 = 14\n$$\n\n$$\nC(4) = 14.\n$$\n\nAt the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Cost and revenue are\n\n$$C(Q)=Q^{2}-8Q+30,\\qquad R(Q)=20Q-Q^{2},$$\n\nso profit is\n\n$$P(Q)=R-C=-2Q^{2}+28Q-30.$$\n\nCost has slope $C'=2Q-8$ and bend $C''=2>0$, so the cost trough is at $Q=4$ with $C(4)=14$. Profit has slope $P'=-4Q+28$ and bend $P''=-4<0$, so the profit peak is at $Q=7$ with $P(7)=68$. The cost-minimising output and the profit-maximising output are different numbers — minimising cost alone does not automatically maximise profit when revenue also depends on $Q$. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Werkstattfirma: Kostental und Gewinnberg bei anderen Mengen",
+    "context_de_existing": "Eine Werkstattfirma hat Kosten $$C(Q)=Q^{2}-8Q+30$$ und Erlös $$R(Q)=20Q-Q^{2}$$ für $Q>0$. Gewinn ist $P=R-C$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Tageskosten werden bei vier Einheiten minimiert, wo die Kostenkurve flache Steigung und Aufwärtskrümmung hat.",
+      "Der Gewinn vereinfacht sich zu $P(Q)=-2Q^{2}+28Q-30$, und der Gewinn hat bei sieben Einheiten flache Steigung.",
+      "Bei sieben Einheiten biegt die Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum.",
+      "Der kostenminimierende Output von vier Einheiten ist automatisch auch der gewinnmaximierende Output.",
+      "Am Gewinnpeak beträgt der Gewinn $68$ Euro, während am Kostental die Kosten $14$ Euro betragen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=2Q-8=0$ bei $Q=4$, $C''=2>0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P=-2Q^{2}+28Q-30$, $P'=-4Q+28=0$ bei $Q=7$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P''=-4<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nKostental bei $4$, Gewinnpeak bei $7$ — verschiedene Stellen.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$P(7)=68$, $C(4)=14$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Kostental bei $Q=4$, Gewinnpeak bei $Q=7$ — nicht dieselbe Stelle."
+  },
+  {
+    "case_id": "MATH 11.94",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two hikers: same flat hour, opposite utility bends",
+    "context_en": "Hiker A has trail utility $$U_A(t)=-t^{2}+10t$$ from $t$ hours on a path. Hiker B has utility $$U_B(t)=t^{2}-10t+30.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Both hikers have a flat utility slope at five hours.",
+      "At five hours, A's utility curve bends downward, so that hour maximises A's satisfaction locally.",
+      "At five hours, B's utility curve bends upward, so that hour minimises B's satisfaction locally.",
+      "A's peak utility is $25$, while B's utility at five hours is $5$.",
+      "Because both solve for a flat slope at the same hour, both are maximising satisfaction there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate each hiker's utility and evaluate at five hours:\n\n$$\nU_A'(t) = -2t+10\n$$\n\n$$\nU_B'(t) = 2t-10\n$$\n\n$$\nU_A'(5) = -10+10\n$$\n\n$$\n-10 + 10 = 0\n$$\n\n$$\nU_A'(5) = 0 = 0\n$$\n\n$$\nU_B'(5) = 10-10\n$$\n\n$$\n10 - 10 = 0\n$$\n\n$$\nU_B'(5) = 0 = 0\n$$\n\n$$\n10 - 10 = 0 = 0.\n$$\n\nBoth slopes are flat at $t=5$. Sharing a critical hour is only the first step — bends still decide peak versus trough — but the flat-slope claim itself holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nRead A's bend at the shared flat hour:\n\n$$\nU_A''(t) = -2\n$$\n\n$$\nU_A''(5) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five hours maximises A's satisfaction locally.\n\nSo the statement is True.",
+      "**C.** → True\n\nRead B's bend at the same hour:\n\n$$\nU_B''(t) = 2\n$$\n\n$$\nU_B''(5) = 2>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five hours minimises B's satisfaction locally — the opposite label from A's —\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate each utility level at five hours:\n\n$$\nU_A(5) = -25+50\n$$\n\n$$\n-25 + 50 = 25\n$$\n\n$$\nU_A(5) = 25\n$$\n\n$$\nU_B(5) = 25-50+30\n$$\n\n$$\n25 - 50 = -25\n$$\n\n$$\n-25 + 30 = 5\n$$\n\n$$\nU_B(5) = 5 = 5\n$$\n\n$$\nU_B(5) = 5.\n$$\n\nA's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nBoth hikers solve for a flat slope at five hours, but the bends disagree: A has a peak while B has a trough. Flat slope alone finds candidates; it does not mean both are maximising satisfaction. B is locally *minimising* utility there. The claim confuses critical point with maximum.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Two hikers share the critical hour $t=5$ but run opposite utility shapes:\n\n$$U_A(t)=-t^{2}+10t,\\qquad U_B(t)=t^{2}-10t+30.$$\n\nDifferentiate each:\n\n$$U_A'(t)=-2t+10,\\quad U_A''=-2,$$\n\n$$U_B'(t)=2t-10,\\quad U_B''=2.$$\n\nAt five hours both slopes vanish, but $U_A''(5)<0$ marks a local satisfaction peak for A while $U_B''(5)>0$ marks a local satisfaction trough for B. The levels are\n\n$$U_A(5)=25,\\qquad U_B(5)=5.$$\n\nEqual flat-slope hours do not mean both hikers are maximising satisfaction. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Zwei Wanderer: gleiche flache Stunde, gegenteilige Nutzenkrümmung",
+    "context_de_existing": "Wanderer A hat Trail-Nutzen $$U_A(t)=-t^{2}+10t$$ aus $t$ Stunden auf einem Pfad. Wanderer B hat Nutzen $$U_B(t)=t^{2}-10t+30.$$ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Beide Wanderer haben bei fünf Stunden flache Nutzensteigung.",
+      "Bei fünf Stunden biegt A's Nutzenkurve nach unten, also maximiert diese Stunde A's Zufriedenheit lokal.",
+      "Bei fünf Stunden biegt B's Nutzenkurve nach oben, also minimiert diese Stunde B's Zufriedenheit lokal.",
+      "A's Maximalnutzen beträgt $25$, während B's Nutzen bei fünf Stunden $5$ beträgt.",
+      "Weil beide eine flache Steigung zur selben Stunde lösen, maximieren beide dort die Zufriedenheit."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide Ableitungen null bei $t=5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$U_A''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$U_B''=2>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$U_A(5)=25$, $U_B(5)=5$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nB hat ein Minimum, kein Maximum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Beide flach bei $t=5$; A Maximum, B Minimum."
+  },
+  {
+    "case_id": "MATH 11.95",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Warehouse staffing: two troughs and one local peak",
+    "context_en": "A warehouse models daily net payoff by $$f(x)=x^{4}-8x^{2}+16$$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Net payoff has a flat slope at staffing intensities $-2$, $0$, and $2$.",
+      "The second derivative is positive at $\\pm 2$ and negative at $0$.",
+      "Therefore $\\pm 2$ are local troughs and $0$ is a local peak.",
+      "The local peak value is $16$, while each local trough has value $0$.",
+      "Because intensity zero is a local peak, it is also the global maximum of payoff on the whole real line."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the payoff and set the slope to zero:\n\n$$\nf'(x) = 4x^{3}-16x\n$$\n\n$$\nf'(x) = 4x(x^{2}-4)\n$$\n\n$$\nf'(x) = 4x(x-2)(x+2).\n$$\n\nThe roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities.\n\nSo the statement is True.",
+      "**B.** → True\n\nCompute the second derivative and evaluate at the three critical intensities:\n\n$$\nf''(x) = 12x^{2}-16,\n$$\n\n$$\nf''(\\pm 2) = 12\\cdot 4-16 = 32>0\n$$\n\n$$\nf''(0) = -16<0.\n$$\n\nSo the second derivative is positive at $\\pm 2$ and negative at $0$, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nCombine flat slopes with bend signs. At $\\pm 2$ one has $f'>0$ wait — rather $f'=0$ with $f''>0$, which is the second-derivative test for local minima (troughs). At $0$ one has $f'=0$ with $f''<0$, which is a local maximum (peak). Therefore $\\pm 2$ are local troughs and $0$ is a local peak.\n\n$$\nf' = 0\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate payoff at the local peak and at either trough:\n\n$$\nf(0) = 16,\n$$\n\n$$\nf(2) = 16-32+16\n$$\n\n$$\n16 - 32 = -16\n$$\n\n$$\n-16 + 16 = 0\n$$\n\n$$\nf(2) = 0 = 0\n$$\n\n$$\nf(-2) = 0\n$$\n\n(same even function). The local peak value is $16$, while each local trough has value $0$, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nA local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum.\n\n$$\nf(0) = 16\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Warehouse net payoff is the even quartic\n\n$$f(x)=x^{4}-8x^{2}+16=(x^{2}-4)^{2}.$$\n\nDifferentiate:\n\n$$f'(x)=4x^{3}-16x=4x(x-2)(x+2),\\qquad f''(x)=12x^{2}-16.$$\n\nFlat slopes sit at $x=-2$, $x=0$, and $x=2$. The bend test gives $f''(\\pm 2)=32>0$ (local troughs) and $f''(0)=-16<0$ (local peak). Levels are $f(0)=16$ and $f(\\pm 2)=0$. As $|x|\\to\\infty$, $f(x)\\to\\infty$, so the local peak at zero is not a global maximum on $\\mathbb{R}$. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Lagerbesetzung: zwei Täler und ein lokales Maximum",
+    "context_de_existing": "Ein Lager modelliert den täglichen Nettoertrag durch $$f(x)=x^{4}-8x^{2}+16$$ für Personalintensität $x\\in\\mathbb{R}$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Der Nettoertrag hat bei den Intensitäten $-2$, $0$ und $2$ flache Steigung.",
+      "Die zweite Ableitung ist positiv bei $\\pm 2$ und negativ bei $0$.",
+      "Daher sind $\\pm 2$ lokale Täler und $0$ ein lokales Maximum.",
+      "Der lokale Maximalwert ist $16$, während jedes lokale Tal den Wert $0$ hat.",
+      "Weil Intensität null ein lokales Maximum ist, ist sie auch das globale Maximum des Ertrags auf der ganzen reellen Geraden."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f'=4x(x-2)(x+2)=0$ bei $x=-2,0,2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$f''(\\pm 2)=32>0$, $f''(0)=-16<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nKrümmungstest liefert genau diese Labels.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$f(0)=16$, $f(\\pm 2)=0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f(x)=(x^{2}-4)^{2}\\to\\infty$ für $|x|\\to\\infty$ — kein globales Maximum; lokales Maximum bei $0$ ist nur lokal.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Täler bei $\\pm 2$, lokales Maximum bei $0$ mit Wert $16$. Kein globales Maximum auf $\\mathbb{R}$."
+  },
+  {
+    "case_id": "MATH 11.96",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Clinic hours: a flat-slope cost trough is not a cost peak",
+    "context_en": "A clinic's daily staffing cost is $$C(h)=2h^{2}-24h+100$$ for $h>0$ open hours. A manager finds the hours where the slope is zero and calls that schedule optimal for cost control. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The slope of cost is flat at six open hours.",
+      "At six hours the cost curve bends upward, so that schedule is a local cost trough.",
+      "Calling six hours optimal is reasonable for a cost-minimisation goal, because the bend confirms a trough.",
+      "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
+      "A point where the slope is zero already means the clinic is cost-maximising, so no bend check is needed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate cost and set the slope to zero:\n\n$$\nC'(h) = 4h-24 = 0\n$$\n\n$$\n4h = 24\n$$\n\n$$\nh = 6.\n$$\n\nFor $h>0$ this is the unique root. The slope of cost is therefore flat at six open hours.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify six hours with the second derivative:\n\n$$\nC''(h) = 4>0\n$$\n\neverywhere, including at $h=6$. A positive bend at a flat slope is the second-derivative test for a local minimum. Therefore six hours is a local cost trough.\n\nSo the statement is True.",
+      "**C.** → True\n\nFor a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True\n\n$$\nC'(6) = 0\n$$\n\n$$\nC''(6) = 4>0\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nIf the clinic's goal were instead to *maximise* cost, one would need a local peak: flat slope with a *downward* bend. At six hours the bend is upward ($C''>0$), so the same critical point is a trough, not a peak. It would be the wrong type of extremum for a maximisation goal.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nA point where the slope is zero is only a critical point — it might be a peak, a trough, or neither. Here $C''(6)>0$, so six hours is a cost *minimum*, not a maximum. Claiming that zero slope already means cost-maximising, with no bend check needed, reverses the correct label and skips the classification step.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Clinic staffing cost is the upward-opening parabola\n\n$$C(h)=2h^{2}-24h+100,\\qquad h>0.$$\n\nDifferentiate twice:\n\n$$C'(h)=4h-24,\\qquad C''(h)=4>0.$$\n\nFlat slope at $h=6$ together with $C''>0$ marks a local cost *trough*, so calling six hours optimal is reasonable for a cost-minimisation goal. The same flat-slope point would be the wrong type of extremum if the goal were instead to maximise cost. A zero slope alone never means “cost-maximising” — the bend decides peak versus trough. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Klinikstunden: flaches Kostental ist kein Kostenberg",
+    "context_de_existing": "Die täglichen Personalkosten einer Klinik sind $$C(h)=2h^{2}-24h+100$$ für $h>0$ Öffnungsstunden. Ein Manager findet die Stunden, an denen die Steigung null ist, und nennt diesen Plan optimal für Kostenkontrolle. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Kostensteigung ist bei sechs Öffnungsstunden flach.",
+      "Bei sechs Stunden biegt die Kostenkurve nach oben, also ist dieser Plan ein lokales Kostental.",
+      "Sechs Stunden optimal zu nennen ist vernünftig für ein Kostenminimierungsziel, weil die Krümmung ein Tal bestätigt.",
+      "Wäre das Ziel der Klinik stattdessen Kostenmaximierung, wäre dieselbe flache Stelle der falsche Extremumstyp.",
+      "Eine Stelle mit Steigung null bedeutet bereits Kostenmaximierung, also braucht man keinen Krümmungscheck."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=4h-24=0\\Rightarrow h=6$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C''=4>0$ — Tal.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nFür Minimierung ist das Tal der richtige Typ.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nFür Maximierung wäre ein Peak nötig — hier liegt ein Tal vor.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$C'=0$ allein sagt nicht, ob Max oder Min — Krümmung nötig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bei $h=6$ Kostental ($C''>0$). Optimal für Minimierung, falsch für Maximierung."
+  },
+  {
+    "case_id": "MATH 11.97",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two cinemas: a profit peak versus a flat inflection",
+    "context_en": "Cinema A models daily profit by $$P_A(Q)=-(Q-3)^{2}+5.$$ Cinema B models daily profit by $$P_B(Q)=(Q-3)^{3}+5.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Both cinemas have a flat profit slope at three screenings.",
+      "For Cinema A, three screenings is a local profit peak.",
+      "For Cinema B, the second-derivative bend check is inconclusive at three screenings.",
+      "A sign chart of Cinema B's slope shows no sign change at three screenings, so that output is neither a local peak nor a local trough for B.",
+      "Because both have a flat slope at three screenings, both cinemas are at a profit peak."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate each cinema's profit and evaluate at three screenings:\n\n$$\nP_A'(Q) = -2(Q-3)\n$$\n\n$$\nP_B'(Q) = 3(Q-3)^{2}\n$$\n\n$$\nP_A'(3) = 0\n$$\n\n$$\nP_B'(3) = 0.\n$$\n\nBoth slopes are flat at $Q=3$. Sharing a critical output does not yet classify peak versus inflection, but the flat-slope claim holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify Cinema A with the second derivative:\n\n$$\nP_A''(Q) = -2\n$$\n\n$$\nP_A''(3) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore three screenings is a local profit peak for A\n\nSo the statement is True.",
+      "**C.** → True\n\nFor Cinema B, differentiate the slope once more:\n\n$$\nP_B''(Q) = 6(Q-3)\n$$\n\n$$\nP_B''(3) = 0.\n$$\n\nThe usual bend test needs a strictly signed second derivative. Here the bend is zero at the critical point, so the second-derivative check is inconclusive at three screenings for B.\n\nSo the statement is True.",
+      "**D.** → True\n\nRead the sign of Cinema B's slope around three screenings:\n\n$$\nP_B'(Q) = 3(Q-3)^{2}\\ge 0\n$$\n\nfor every $Q$, with equality only at $Q=3$. The slope does not change sign through three screenings — it touches zero and stays non-negative — so $Q=3$ is neither a local peak nor a local trough for B (a flat inflection).\n\n$$\nQ = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nBoth cinemas have a flat slope at three screenings, but only A has a profit peak. For B the slope does not change sign, so three screenings is not a local peak. Shared critical outputs do not mean shared extrema. Claiming both are at a profit peak overreaches.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Two cinemas share the critical screening count $Q=3$ but have different shapes:\n\n$$P_A(Q)=-(Q-3)^{2}+5,\\qquad P_B(Q)=(Q-3)^{3}+5.$$\n\nFor A: $P_A'=-2(Q-3)$ and $P_A''=-2<0$, so $Q=3$ is a local profit peak. For B: $P_B'=3(Q-3)^{2}$ and $P_B''=6(Q-3)$, so $P_B'(3)=P_B''(3)=0$ and the bend test is inconclusive. A sign chart of $P_B'$ shows $P_B'\\ge 0$ on both sides of $3$ with no sign change, so $Q=3$ is a flat inflection for B — neither peak nor trough. Shared flat slopes do not mean shared peaks.",
+    "title_de_existing": "Zwei Kinos: Gewinnberg versus flacher Wendepunkt",
+    "context_de_existing": "Kino A modelliert den Tagesgewinn durch $$P_A(Q)=-(Q-3)^{2}+5.$$ Kino B modelliert den Tagesgewinn durch $$P_B(Q)=(Q-3)^{3}+5.$$ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Beide Kinos haben bei drei Vorführungen flache Gewinnsteigung.",
+      "Für Kino A sind drei Vorführungen ein lokales Gewinnmaximum.",
+      "Für Kino B ist der Krümmungstest der zweiten Ableitung bei drei Vorführungen unschlüssig.",
+      "Ein Vorzeichendiagramm von Kino B's Steigung zeigt keinen Vorzeichenwechsel bei drei Vorführungen, also ist dieser Output für B weder lokales Maximum noch lokales Tal.",
+      "Weil beide bei drei Vorführungen flache Steigung haben, sind beide Kinos an einem Gewinnpeak."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide $P'$ verschwinden bei $Q=3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_A''=-2<0$ — Peak.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_B''(3)=0$ — Test unschlüssig.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P_B'=3(Q-3)^{2}\\ge 0$ — kein Vorzeichenwechsel, Sattel/Plateau-Typ, kein Extremum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nB hat kein lokales Extremum bei $Q=3$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "A: Peak bei $Q=3$. B: flache Steigung ohne Vorzeichenwechsel — kein Extremum."
+  },
+  {
+    "case_id": "MATH 11.98",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam trap: listing flat slopes does not finish maximisation",
+    "context_en": "A student's exam solution for maximising $$f(x)=x^{3}-3x^{2}+5$$ on the whole real line writes only: \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The outputs where the slope is flat really are $x=0$ and $x=2$.",
+      "At $x=0$ the curve bends downward, so that point is a local peak.",
+      "At $x=2$ the curve bends upward, so that point is a local trough, not a peak.",
+      "There is no global maximum on the real line, because $f(x)$ tends to infinity as $x$ grows without bound.",
+      "Stopping after listing the flat-slope outputs already finishes a maximisation proof."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate and set the slope to zero:\n\n$$\nf'(x) = 3x^{2}-6x\n$$\n\n$$\nf'(x) = 3x(x-2)\n$$\n\n$$\nf'(x) = 0.\n$$\n\nThe roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify $x=0$ with the second derivative:\n\n$$\nf''(x) = 6x-6\n$$\n\n$$\nf''(0) = -6<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore $x=0$ is a local peak\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nClassify $x=2$ the same way:\n\n$$\nf''(2) = 12-6\n$$\n\n$$\n12 - 6 = 6\n$$\n\n$$\nf''(2) = 6 = 6\n$$\n\n$$\nf''(2) = 6>0.\n$$\n\nAn upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum.\n\nSo the statement is True.",
+      "**D.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nOn the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's leading term $x^{3}$ drives $f(x)\\to\\infty$. Values eventually exceed any candidate height such as $f(0)=5$. Therefore there is no global maximum on $\\mathbb{R}$\n\n$$\nf(0) = 5\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nListing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument.\n\n$$\nx = 2\n$$\n\n$$\nf' = 0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The exam function on $\\mathbb{R}$ is\n\n$$f(x)=x^{3}-3x^{2}+5.$$\n\nDifferentiate twice:\n\n$$f'(x)=3x^{2}-6x=3x(x-2),\\qquad f''(x)=6x-6.$$\n\nFlat slopes at $x=0$ and $x=2$ are only candidates. The bend test labels $x=0$ a local peak ($f''(0)=-6<0$) and $x=2$ a local trough ($f''(2)=6>0$). As $x\\to\\infty$, $f(x)\\to\\infty$, so there is no global maximum on the real line. Stopping after listing $f'=0$ does not finish a maximisation proof — classification and global comparison are still required. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Prüfungsfalle: flache Steigungen auflisten beendet die Maximierung nicht",
+    "context_de_existing": "Eine Klausurlösung zur Maximierung von $$f(x)=x^{3}-3x^{2}+5$$ auf der ganzen reellen Geraden schreibt nur: „$f'(x)=0$ bei $x=0$ und $x=2$, daher liegt das Maximum bei einem davon.“ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Outputs mit flacher Steigung sind wirklich $x=0$ und $x=2$.",
+      "Bei $x=0$ biegt die Kurve nach unten, also ist dieser Punkt ein lokales Maximum.",
+      "Bei $x=2$ biegt die Kurve nach oben, also ist dieser Punkt ein lokales Tal, kein Peak.",
+      "Es gibt kein globales Maximum auf der reellen Geraden, weil $f(x)$ gegen unendlich geht, wenn $x$ unbegrenzt wächst.",
+      "Nach dem Auflisten der flachen Outputs ist ein Maximierungsbeweis bereits fertig."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f'=3x(x-2)=0$ bei $0$ und $2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$f''(0)=-6<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$f''(2)=6>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAls Kubik mit positivem Leitkoeffizient: $f\\to\\infty$ für $x\\to\\infty$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nKandidaten auflisten reicht nicht — Typ und globales Verhalten prüfen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Kandidaten $0$ (Peak) und $2$ (Tal). Kein globales Maximum auf $\\mathbb{R}$."
+  },
+  {
+    "case_id": "MATH 11.99",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Bike rental: prove a local profit peak from derivatives",
+    "context_en": "A bike-rental shop models hourly profit by $$P(Q)=-3Q^{2}+30Q-40$$ for $Q>0$ bikes on the road. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Profit has a flat slope at five bikes.",
+      "At five bikes the profit curve bends downward, so that output is a local profit peak.",
+      "A local profit peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than at five.",
+      "Because five bikes is a local peak, the profit level there must be zero.",
+      "Evaluating gives a profit of $35$ euros at five bikes."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate profit and set the slope to zero:\n\n$$\nP'(Q) = -6Q+30 = 0\n$$\n\n$$\n6Q = 30\n$$\n\n$$\nQ = 5.\n$$\n\nFor $Q>0$ this is the unique root. Profit therefore has a flat slope at five bikes.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify five bikes with the second derivative:\n\n$$\nP''(Q) = -6\n$$\n\n$$\nP''(5) = -6<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five bikes is a local profit peak.\n\nSo the statement is True.",
+      "**C.** → True\n\nBy definition, a strict local maximum at $Q^{\\ast}=5$ means there exists a neighbourhood of five bikes in which every other feasible output $Q$ satisfies $P(Q)<P(5)$. That is exactly what “local profit peak” asserts — a local comparison, not yet a claim about the whole domain $Q>0$. The wording matches the definition.\n\n$$\nQ^{\\ast} = 5\n$$\n\nSo the statement is True.",
+      "**D.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nA local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives\n\n$$\nP(5) = 35\\neq 0\n$$. Zero slope does not force zero profit.\n\n$$\nP'(5) = 0\n$$\n\n$$\nP(5) = 0\n$$\n\n$$\nP(5) = 35\\neq 0\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nEvaluate profit at the peak output — use the level $P$, not the slope:\n\n$$\nP(5) = -3\\cdot 25+30\\cdot 5-40\n$$\n\n$$\nP(5) = -75+150-40\n$$\n\n$$\n-75 + 150 = 75\n$$\n\n$$\n75 - 40 = 35\n$$\n\n$$\nP(5) = 35\n$$\n\nProfit at five bikes is $35$ euros, matching the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Bike-rental profit is the downward-opening parabola\n\n$$P(Q)=-3Q^{2}+30Q-40,\\qquad Q>0.$$\n\nDifferentiate twice:\n\n$$P'(Q)=-6Q+30,\\qquad P''(Q)=-6<0.$$\n\nFlat slope at $Q=5$ together with a downward bend certifies a local profit peak. A local peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than $P(5)$. Evaluating the level gives\n\n$$P(5)=-75+150-40=35,$$\n\nwhich is not zero — flat slope never forces zero profit. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Fahrradverleih: lokales Gewinnmaximum aus Ableitungen beweisen",
+    "context_de_existing": "Ein Fahrradverleih modelliert den stündlichen Gewinn durch $$P(Q)=-3Q^{2}+30Q-40$$ für $Q>0$ Fahrräder auf der Straße. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Der Gewinn hat bei fünf Fahrrädern flache Steigung.",
+      "Bei fünf Fahrrädern biegt die Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum.",
+      "Ein lokales Gewinnmaximum bedeutet: in einer Umgebung von fünf Fahrrädern liefert jeder andere Output streng kleineren Gewinn als bei fünf.",
+      "Weil fünf Fahrräder ein lokales Maximum sind, muss das Gewinnniveau dort null sein.",
+      "Auswerten liefert einen Gewinn von $35$ Euro bei fünf Fahrrädern."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=-6Q+30=0\\Rightarrow Q=5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P''=-6<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nGenau die Definition eines strengen lokalen Maximums.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nLokales Maximum betrifft die Umgebung, nicht $P=0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$P(5)=-75+150-40=35$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$P' =0$ bei $Q=5$ mit $P''<0$ — lokales Maximum mit $P(5)=35$, nicht Gewinn null."
+  },
+  {
+    "case_id": "MATH 11.100",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Two plants: different flat outputs, different extremum labels",
+    "context_en": "Plant West has daily profit $$P_W(Q)=-Q^{2}+14Q-20.$$ Plant East has daily profit $$P_E(Q)=Q^{2}-10Q+40.$$ A memo claims both plants have found optimal production levels at their flat-slope outputs. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "West's flat-slope output is seven units, and there the profit curve bends downward, so seven is a local profit peak for West.",
+      "East's flat-slope output is five units, and there the profit curve bends upward, so five is a local profit trough for East.",
+      "The memo is correct that both flat-slope outputs are local profit maxima.",
+      "West's peak profit is $29$ euros, while East's profit at five units is $15$ euros.",
+      "Because the two flat-slope outputs are unequal, at most one of the two flat-slope equations can be valid."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nFor West, set the slope to zero and read the bend:\n\n$$\nP_W'(Q) = -2Q+14 = 0\n$$\n\n$$\nQ = 7\n$$\n\n$$\nP_W''(Q) = -2<0.\n$$\n\nFlat slope at seven units with a downward bend means a local profit peak for West. Both parts of the claim hold.\n\nSo the statement is True.",
+      "**B.** → True\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nFor East, set the slope to zero and read the bend:\n\n$$\nP_E'(Q) = 2Q-10 = 0\n$$\n\n$$\nQ = 5\n$$\n\n$$\nP_E''(Q) = 2>0.\n$$\n\nFlat slope at five units with an upward bend means a local profit *trough* for East, not a peak. The claim correctly labels it a trough.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nThe memo claims both flat-slope outputs are local profit maxima. West's seven is indeed a peak ($P_W''<0$), but East's five is a trough ($P_E''>0$). The memo is therefore incorrect: both are critical points, but they are not both maxima.\n\nSo the statement is False.",
+      "**D.** → True\n\nEvaluate each plant's profit at its own critical output:\n\n$$\nP_W(7) = -49+98-20\n$$\n\n$$\n-49 + 98 = 49\n$$\n\n$$\n49 - 20 = 29\n$$\n\n$$\nP_W(7) = 29\n$$\n\n$$\nP_E(5) = 25-50+40\n$$\n\n$$\n25 - 50 = -25\n$$\n\n$$\n-25 + 40 = 15\n$$\n\n$$\nP_E(5) = 15 = 15\n$$\n\n$$\nP_E(5) = 15.\n$$\n\nWest's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nEach plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur.\n\n$$\nP_W' = 0\n$$\n\n$$\nP_E' = 0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Two plants have different profit shapes and different critical outputs:\n\n$$P_W(Q)=-Q^{2}+14Q-20,\\qquad P_E(Q)=Q^{2}-10Q+40.$$\n\nWest: $P_W'=-2Q+14$ vanishes at $Q=7$, and $P_W''=-2<0$, so seven is a local profit peak with $P_W(7)=29$. East: $P_E'=2Q-10$ vanishes at $Q=5$, and $P_E''=2>0$, so five is a local profit trough with $P_E(5)=15$. The memo claiming both flat-slope outputs are local maxima is wrong — East has a trough. Unequal critical outputs do not invalidate either flat-slope equation; each plant has its own valid derivative.",
+    "title_de_existing": "Zwei Werke: andere flache Mengen, andere Extremum-Label",
+    "context_de_existing": "Werk West hat Tagesgewinn $$P_W(Q)=-Q^{2}+14Q-20.$$ Werk Ost hat Tagesgewinn $$P_E(Q)=Q^{2}-10Q+40.$$ Ein Memo behauptet, beide Werke hätten an ihren flachen Outputs optimale Produktionsniveaus gefunden. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Wests flacher Output sind sieben Einheiten, und dort biegt die Gewinnkurve nach unten, also ist sieben ein lokales Gewinnmaximum für West.",
+      "Osts flacher Output sind fünf Einheiten, und dort biegt die Gewinnkurve nach oben, also ist fünf ein lokales Gewinntal für Ost.",
+      "Das Memo hat recht, dass beide flachen Outputs lokale Gewinnmaxima sind.",
+      "Wests Maximalgewinn beträgt $29$ Euro, während Osts Gewinn bei fünf Einheiten $15$ Euro beträgt.",
+      "Weil die beiden flachen Outputs ungleich sind, kann höchstens eine der beiden Flachheitsgleichungen gültig sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P_W'=0$ bei $Q=7$, $P_W''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_E'=0$ bei $Q=5$, $P_E''=2>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nOst hat ein Tal, kein Maximum — Memo falsch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$P_W(7)=29$, $P_E(5)=15$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVerschiedene Funktionen können verschiedene kritische Stellen haben — beide Gleichungen sind gültig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "West: Peak bei $7$. Ost: Tal bei $5$. Das Memo irrt, beide als Maxima zu bezeichnen."
+  },
+  {
+    "case_id": "MATH 11.101",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Farm shop: quadratic profit peak by differentiation",
+    "context_en": "A farm shop sells $Q$ crates of apples per day and models daily profit (in euros) by $P(Q)=-Q^{2}+18Q-45$ for $Q\\ge 0$. The owner wants the daily output that maximises profit. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The slope of daily profit is $P'(Q)=-2Q+18$.",
+      "The only daily output where the slope of profit is flat is nine crates.",
+      "At nine crates the profit curve bends downward, so that output is a local profit peak.",
+      "Peak daily profit is $36$ euros.",
+      "Because the slope of profit is flat at nine crates, the profit level itself must be zero there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo read how profit changes with crates sold, differentiate the given daily-profit rule term by term:\n\n$$\nP(Q) = -Q^{2}+18Q-45\n$$\n\n$$\nP'(Q) = -2Q+18.\n$$\n\nThat derivative is the slope of daily profit. It matches the claimed formula exactly\n\n$$\nP'(Q) = -2Q+18\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nAn interior peak requires a flat slope, so set $P'$ to zero and solve:\n\n$$\nP'(Q) = -2Q+18 = 0\n$$\n\n$$\n2Q = 18\n$$\n\n$$\nQ = 9.\n$$\n\nOn $Q\\ge 0$ this linear equation has exactly one root. Nine crates is the unique flat-slope daily output.\n\nSo the statement is True.",
+      "**C.** → True\n\nClassify nine crates with the second derivative:\n\n$$\nP''(Q) = -2\n$$\n\n$$\nP''(9) = -2<0.\n$$\n\nA downward bend at a flat slope is the second-derivative test for a local maximum. Therefore nine crates is a local profit peak.\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate profit at the peak output — use the level $P$, not the slope:\n\n$$\nP(9) = -9^{2}+18\\cdot 9-45\n$$\n\n$$\nP(9) = -81+162-45\n$$\n\n$$\n-81 + 162 = 81\n$$\n\n$$\n81 - 45 = 36\n$$\n\n$$\nP(9) = 36\n$$\n\nPeak daily profit is $36$ euros, matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nA flat slope describes how profit *changes* at nine crates, not how large profit *is*. The condition $P'(9)=0$ only says the tangent is horizontal. Evaluating the level separately gives\n\n$$\nP(9) = 36\\neq 0.\n$$\n\nZero slope does not force zero profit.\n\n$$\nP'(9) = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Farm-shop profit is the downward-opening parabola\n\n$$P(Q)=-Q^{2}+18Q-45,\\qquad Q\\ge 0.$$\n\nDifferentiate twice:\n\n$$P'(Q)=-2Q+18,\\qquad P''(Q)=-2<0.$$\n\nFlat slope at $Q=9$ together with a downward bend certifies a local (and, on $Q\\ge 0$, global) profit peak. Evaluating the level gives\n\n$$P(9)=-81+162-45=36.$$\n\nA zero slope never forces the profit level itself to be zero — slope and height are different objects. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Hofladen: quadratisches Gewinnmaximum durch Differenzieren",
+    "context_de_existing": "Ein Hofladen verkauft $Q$ Kisten Äpfel pro Tag und modelliert den Tagesgewinn (in Euro) durch $P(Q)=-Q^{2}+18Q-45$ für $Q\\ge 0$. Der Besitzer will den tagesgewinnmaximierenden Output. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Steigung des Tagesgewinns ist $P'(Q)=-2Q+18$.",
+      "Der einzige Tagesoutput mit flacher Gewinnsteigung sind neun Kisten.",
+      "Bei neun Kisten biegt die Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum.",
+      "Der maximale Tagesgewinn beträgt $36$ Euro.",
+      "Weil die Gewinnsteigung bei neun Kisten flach ist, muss das Gewinnniveau dort null sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=-2Q+18$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=0\\Rightarrow Q=9$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P(9)=-81+162-45=36$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nFlache Steigung $\\neq$ Gewinn null.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P=-Q^{2}+18Q-45$, Peak bei $Q=9$ mit $P''<0$ und $P(9)=36$."
+  },
+  {
+    "case_id": "MATH 11.102",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Market stall: form P from R and C, then optimise",
+    "context_en": "A market stall sells $Q$ boxes of fruit. Revenue is $R(Q)=50Q-Q^{2}$ euros and total cost is $C(Q)=Q^{2}+10Q+20$ euros, for $Q>0$. Profit is $P=R-C$. The stallholder wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Daily profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.",
+      "Profit has a flat slope at ten boxes a day.",
+      "At ten boxes, marginal revenue and marginal cost both equal $30$ euros.",
+      "At ten boxes the profit curve bends downward, so that output is a local profit peak, and peak profit is $180$ euros.",
+      "Because marginal revenue equals marginal cost at ten boxes, the stall's revenue level equals its cost level there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nForm profit as revenue minus cost and collect like terms carefully:\n\n$$\nP(Q) = (50Q-Q^{2})-(Q^{2}+10Q+20)\n$$\n\n$$\nP(Q) = -2Q^{2}+40Q-20.\n$$\n\nThat simplified quadratic matches the claim exactly\n\n$$\nP(Q) = -2Q^{2}+40Q-20\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSet the slope of profit to zero and solve for daily output:\n\n$$\nP'(Q) = -4Q+40 = 0\n$$\n\n$$\n4Q = 40\n$$\n\n$$\nQ = 10.\n$$\n\nFor $Q>0$ this is the unique root. Profit has a flat slope at ten boxes a day.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt a profit peak one also has $R'=C'$. Compute the separate marginals at ten boxes:\n\n$$\nR'(Q) = 50-2Q\n$$\n\n$$\nC'(Q) = 2Q+10\n$$\n\n$$\nR'(10) = 50-20\n$$\n\n$$\n50 - 20 = 30\n$$\n\n$$\nR'(10) = 30 = 30\n$$\n\n$$\nC'(10) = 20+10\n$$\n\n$$\n20 + 10 = 30\n$$\n\n$$\nC'(10) = 30 = 30\n$$\n\n$$\n20 + 10 = 30 = 30.\n$$\n\nBoth equal $30$ euros at ten boxes.\n\nSo the statement is True.",
+      "**D.** → True\n\nRead the bend and evaluate the peak level:\n\n$$\nP''(Q) = -4<0\n$$\n\n$$\n\\text{local profit peak at }Q = 10\n$$\n\n$$\nP(10) = -2\\cdot 100+40\\cdot 10-20\n$$\n\n$$\nP(10) = -200+400-20\n$$\n\n$$\n-200 + 400 = 200\n$$\n\n$$\n200 - 20 = 180\n$$\n\n$$\nP(10) = 180\n$$\n\nTen boxes is a local profit peak with peak profit $180$ euros.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nMatching $R'=C'$ means the *derivatives* agree, not the *levels*. At ten boxes,\n\n$$\nR(10) = 500-100\n$$\n\n$$\n500 - 100 = 400\n$$\n\n$$\nR(10) = 400 = 400\n$$\n\n$$\nC(10) = 100+100+20\n$$\n\n$$\n100 + 100 = 200\n$$\n\n$$\n200 + 20 = 220\n$$\n\n$$\nC(10) = 220 = 220\n$$\n\nso revenue and cost differ (profit is their gap $180$). Confusing equal marginals with equal levels is the trap.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Market-stall profit is revenue minus cost:\n\n$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20,$$\n\nwith slope and bend\n\n$$P'(Q)=-4Q+40,\\qquad P''(Q)=-4,$$\n\nand separate marginals $R'(Q)=50-2Q$, $C'(Q)=2Q+10$. Flat profit at $Q=10$ coincides with $R'(10)=C'(10)=30$. The negative bend confirms a local profit peak, and\n\n$$P(10)=-200+400-20=180.$$\n\nMatching $R'=C'$ only finds a critical point; it does not force the *levels* $R$ and $C$ to be equal. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Marktstand: P aus R und C bilden, dann optimieren",
+    "context_de_existing": "Ein Marktstand verkauft $Q$ Obstkisten. Erlös $R(Q)=50Q-Q^{2}$ Euro, Gesamtkosten $C(Q)=Q^{2}+10Q+20$ Euro, für $Q>0$. Gewinn $P=R-C$. Der Standbesitzer will den gewinnmaximierenden Output. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Tagesgewinn vereinfacht sich zu $P(Q)=-2Q^{2}+40Q-20$.",
+      "Der Gewinn hat bei zehn Kisten pro Tag flache Steigung.",
+      "Bei zehn Kisten sind Grenzerlös und Grenzkosten beide $30$ Euro.",
+      "Bei zehn Kisten biegt die Gewinnkurve nach unten, also ist dieser Output ein lokales Gewinnmaximum, und der Maximalgewinn beträgt $180$ Euro.",
+      "Weil bei zehn Kisten Grenzerlös gleich Grenzkosten ist, gleicht das Erlösniveau des Standes dort dem Kostenniveau."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=-4Q+40=0\\Rightarrow Q=10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$R'(10)=C'(10)=30$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P''=-4<0$, $P(10)=180$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$R'=C'$ ist nicht $R=C$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P=-2Q^{2}+40Q-20$, Peak bei $Q=10$ mit $R'=C'=30$ und $P=180$."
+  },
+  {
+    "case_id": "MATH 11.103",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Two food trucks: compare profit peaks side by side",
+    "context_en": "Two food trucks compete at a festival. Truck A's daily profit (in euros) is $P_A(Q)=-Q^{2}+24Q-80$, and truck B's is $P_B(Q)=-2Q^{2}+32Q-60$, where $Q$ is meals sold. Each truck wants its own profit-maximising output. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Truck A maximises profit locally at twelve meals, where its profit curve bends downward.",
+      "Truck B maximises profit locally at eight meals, where its profit curve bends downward.",
+      "Peak profits are $64$ euros for truck A and $68$ euros for truck B.",
+      "Because both trucks have a local profit peak, they must share the same optimal quantity.",
+      "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFor truck A, set the slope to zero and read the bend:\n\n$$\nP_A'(Q) = -2Q+24 = 0\n$$\n\n$$\nQ = 12\n$$\n\n$$\nP_A''(Q) = -2<0.\n$$\n\nFlat slope at twelve meals with a downward bend means a local profit maximum for A. The claim holds.\n\nSo the statement is True.",
+      "**B.** → True\n\nFor truck B, set the slope to zero and read the bend:\n\n$$\nP_B'(Q) = -4Q+32 = 0\n$$\n\n$$\nQ = 8\n$$\n\n$$\nP_B''(Q) = -4<0.\n$$\n\nFlat slope at eight meals with a downward bend means a local profit maximum for B. The claim holds.\n\nSo the statement is True.",
+      "**C.** → True\n\nEvaluate each truck's profit at its own peak output:\n\n$$\nP_A(12) = -144+288-80\n$$\n\n$$\n-144 + 288 = 144\n$$\n\n$$\n144 - 80 = 64\n$$\n\n$$\nP_A(12) = 64\n$$\n\n$$\nP_B(8) = -2\\cdot 64+32\\cdot 8-60\n$$\n\n$$\nP_B(8) = -128+256-60\n$$\n\n$$\n-128 + 256 = 128\n$$\n\n$$\n128 - 60 = 68\n$$\n\n$$\nP_B(8) = 68\n$$\n\nPeak profits are $64$ euros for A and $68$ euros for B, matching the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nBoth trucks have a local profit peak, but the peaks sit at different quantities: $Q_A^{\\ast}=12$ versus $Q_B^{\\ast}=8$. Separate profit functions generally have separate optimisers. Sharing the *property* of having a local peak does not force sharing the same optimal quantity.\n\n$$\nQ_A^{\\ast} = 12\n$$\n\n$$\nQ_B^{\\ast} = 8\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nComparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons\n\n$$\nP_B(8) = 68>P_A(12) = 64\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Two food trucks have separate profit rules:\n\n$$P_A(Q)=-Q^{2}+24Q-80,\\qquad P_B(Q)=-2Q^{2}+32Q-60.$$\n\nTruck A: $P_A'=-2Q+24$ vanishes at $Q=12$, and $P_A''=-2<0$, so twelve is a local peak with $P_A(12)=64$. Truck B: $P_B'=-4Q+32$ vanishes at $Q=8$, and $P_B''=-4<0$, so eight is a local peak with $P_B(8)=68$. Both have local peaks, but at *different* optimal quantities. B's peak profit $68$ exceeds A's $64$ even though B's optimal quantity is smaller. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Zwei Foodtrucks: Gewinnmaxima nebeneinander vergleichen",
+    "context_de_existing": "Zwei Foodtrucks konkurrieren auf einem Festival. Truck A hat Tagesgewinn $P_A(Q)=-Q^{2}+24Q-80$, Truck B $P_B(Q)=-2Q^{2}+32Q-60$, wobei $Q$ verkaufte Mahlzeiten sind. Jeder Truck will sein eigenes Gewinnmaximum. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Truck A maximiert den Gewinn lokal bei zwölf Mahlzeiten, wo seine Gewinnkurve nach unten biegt.",
+      "Truck B maximiert den Gewinn lokal bei acht Mahlzeiten, wo seine Gewinnkurve nach unten biegt.",
+      "Die Maximalgewinne betragen $64$ Euro für Truck A und $68$ Euro für Truck B.",
+      "Weil beide Trucks ein lokales Gewinnmaximum haben, müssen sie dieselbe optimale Menge teilen.",
+      "Truck B's Maximalgewinn ist größer als A's, obwohl B's optimale Menge kleiner ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P_A'=0$ bei $Q=12$, $P_A''=-2<0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_B'=0$ bei $Q=8$, $P_B''=-4<0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_A(12)=64$, $P_B(8)=68$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVerschiedene Optima: $12$ vs $8$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$68>64$ bei kleinerer Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "A: Peak bei $12$ mit $64$. B: Peak bei $8$ mit $68$. Verschiedene Optima."
+  },
+  {
+    "case_id": "MATH 11.104",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Workshop cost: cubic cost with a local trough",
+    "context_en": "A workshop's weekly cost (in hundreds of euros) for producing $Q$ batches is $C(Q)=Q^{3}-9Q^{2}+24Q+5$ for $Q>0$. The manager wants to understand peaks and troughs of this cost curve. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Weekly cost has a flat slope at two batches and at four batches.",
+      "At two batches the cost curve bends downward, while at four batches it bends upward.",
+      "Therefore two batches is a local cost peak and four batches is a local cost trough.",
+      "The local trough cost value is $21$ (hundreds of euros).",
+      "Because the slope of cost is flat at two batches, that output minimises cost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate weekly cost and set the slope to zero:\n\n$$\nC'(Q) = 3Q^{2}-18Q+24\n$$\n\n$$\nC'(Q) = 3(Q^{2}-6Q+8)\n$$\n\n$$\nC'(Q) = 3(Q-2)(Q-4).\n$$\n\nThe roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify both critical batches with the second derivative:\n\n$$\nC''(Q) = 6Q-18,\n$$\n\n$$\nC''(2) = 12-18\n$$\n\n$$\n12 - 18 = -6\n$$\n\n$$\nC''(2) = -6 = -6\n$$\n\n$$\n12 - 18 = -6 = -6<0\n$$\n\n$$\nC''(4) = 24-18\n$$\n\n$$\n24 - 18 = 6\n$$\n\n$$\nC''(4) = 6 = 6\n$$\n\n$$\n24 - 18 = 6 = 6>0.\n$$\n\nSo at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nCombine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *peak*; upward bend at $Q=4$ means a local cost *trough*. Therefore two batches is a local cost peak and four batches is a local cost trough\n\n$$\nQ = 2\n$$\n\n$$\nQ = 4\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nEvaluate cost at the local trough $Q=4$:\n\n$$\nC(4) = 64-144+96+5\n$$\n\n$$\n64 - 144 = -80\n$$\n\n$$\n-80 + 96 = 16\n$$\n\n$$\n16 + 5 = 21\n$$\n\n$$\nC(4) = 21 = 21\n$$\n\n$$\nC(4) = 21.\n$$\n\nThe local trough cost value is $21$ (hundreds of euros), matching the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nAt two batches the slope is flat, but the bend is downward ($C''(2)<0$), so that output is a local cost *peak*, not a minimum. The cost-minimising local candidate is the trough at four batches. Claiming that flat slope at two batches minimises cost reverses the correct label.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Weekly cost is the cubic\n\n$$C(Q)=Q^{3}-9Q^{2}+24Q+5,\\qquad Q>0.$$\n\nDifferentiate twice:\n\n$$C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4),\\qquad C''(Q)=6Q-18.$$\n\nFlat slopes at $Q=2$ and $Q=4$. The bend test gives $C''(2)=-6<0$ (local cost *peak*) and $C''(4)=6>0$ (local cost *trough*). The trough level is\n\n$$C(4)=64-144+96+5=21.$$\n\nA flat slope at two batches marks a local cost peak, not a minimum — bend classification is essential. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.",
+    "title_de_existing": "Werkstattkosten: kubische Kosten mit lokalem Tal",
+    "context_de_existing": "Die Wochenkosten einer Werkstatt (in Hundertern Euro) für $Q$ Chargen sind $C(Q)=Q^{3}-9Q^{2}+24Q+5$ für $Q>0$. Der Manager will Peaks und Täler dieser Kostenkurve verstehen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Wochenkosten haben bei zwei Chargen und bei vier Chargen flache Steigung.",
+      "Bei zwei Chargen biegt die Kostenkurve nach unten, bei vier Chargen nach oben.",
+      "Daher sind zwei Chargen ein lokales Kostenmaximum und vier Chargen ein lokales Kostental.",
+      "Der lokale Tal-Kostenwert beträgt $21$ (Hunderte Euro).",
+      "Weil die Kostensteigung bei zwei Chargen flach ist, minimiert dieser Output die Kosten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=3(Q-2)(Q-4)=0$ bei $2$ und $4$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C''(2)=-6<0$, $C''(4)=6>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nPeak bei $2$, Tal bei $4$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$C(4)=21$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nBei $2$ liegt ein lokales Maximum, kein Minimum.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Peak bei $Q=2$, Tal bei $Q=4$ mit $C(4)=21$. Flache Steigung allein sagt nicht Minimum."
+  }
+]

@@ -1,0 +1,132 @@
+CASE MATH 11.72
+ANSWER [true, false, true, false, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Both shops face $R^{\prime}(Q)=16$. The first also posts $P^{\prime}(Q)=-3$, so rearranging $P^{\prime}=R^{\prime}-C^{\prime}$ recovers
+$$C^{\prime}(Q)=R^{\prime}-P^{\prime}=16-(-3)=19.$$
+Because $P^{\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\prime}(Q)=16$ with the same $R^{\prime}$, so
+$$P^{\prime}(Q)=16-16=0.$$
+Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\prime}=-3$ is not its stock of total profit. First shop: $P^{\prime}=-3$ and $R^{\prime}=16$ imply $C^{\prime}=19$ (do not expand). Second: $R^{\prime}=C^{\prime}=16$ imply $P^{\prime}=0$.
+
+=== A ===
+**A.** → True
+
+From $P^{\prime}=R^{\prime}-C^{\prime}$ and the first shop's reports,
+
+$$
+-3 = 16-C^{\prime}(Q)
+$$
+
+$$
+C^{\prime}(Q) = 16-(-3)
+$$
+
+$$
+C^{\prime}(Q) = 19
+$$
+
+The first printer's implied marginal cost is $19$
+
+Rearrangement of $P^{\prime}=R^{\prime}-C^{\prime}$ always recovers the missing piece when two of the three rates are known.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → False
+
+The first printer has $P^{\prime}(Q)=-3<0$, so profit is locally decreasing.
+
+Printing a little more would lower profit, not raise it
+
+With $P^{\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\prime}(Q) = -3<0
+$$
+
+$$
+P^{\prime} = -3<0
+$$
+
+So the statement is False.
+
+=== C ===
+**C.** → True
+
+The second printer reports $R^{\prime}(Q)=16$ and $C^{\prime}(Q)=16$, so
+
+$$
+P^{\prime}(Q) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P^{\prime}(Q) = 0 = 0
+$$
+
+$$
+P^{\prime}(Q) = 0
+$$
+
+its marginal profit is $0$
+
+Equal marginal revenue and marginal cost is exactly the first-order condition $P^{\prime}=0$ at that run length.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Both printers share $R^{\prime}(Q)=16$, but their cost (or profit) companions differ.
+
+The first has $P^{\prime}=-3$ while the second has $P^{\prime}=0$, and they do not have the same extra-profit figure
+
+Shared $R^{\prime}$ is only one ingredient of $P^{\prime}=R^{\prime}-C^{\prime}$; different cost slopes produce different profit slopes.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 16
+$$
+
+$$
+P^{\prime} = -3
+$$
+
+$$
+P^{\prime} = 0
+$$
+
+$$
+P^{\prime} = R^{\prime}-C^{\prime}
+$$
+
+So the statement is False.
+
+=== E ===
+**E.** → False
+
+The posted figure $P^{\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
+
+The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false
+
+A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\neq$ level.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(Q) = -3
+$$
+
+So the statement is False.
+

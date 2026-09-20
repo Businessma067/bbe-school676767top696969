@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.076",
+    "title": "Asset Composition Chart 76",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=380\nCurrent liabilities=238\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 312 |\n| Machinery | 147 |\n| Office equipment | 77 |\n| Patents, trademarks and licences | 44 |\n| Inventory | 204 |\n| Trade receivables | 67 |\n| Cash and cash equivalents | 109 |\n| Total assets | **960** |\n| **EQUITY** | |\n| Share capital | 187 |\n| Retained earnings | 298 |\n| Total equity | **485** |\n| **LIABILITIES** | |\n| Long-term bank loan | 180 |\n| Bonds payable | 57 |\n| Trade payables | 165 |\n| Bank overdraft | 73 |\n| Total liabilities | **475** |\n| Total equity and liabilities | **960** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio is below 44.6%.",
+      "Working capital of €142 thousand is positive on this balance sheet.",
+      "Trade receivables make up less than 35.4% of current assets.",
+      "Cash and cash equivalents make up more than 16.5% of current assets.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 7.7%."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Equity ratio = total equity / total assets.\n\n485 / 960 ≈ 50.5%\n\nThe claim says the ratio below 44.6%. We have about 50.5%, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n380 - 238 = 142\n\nThe claim cites 142. We have 142, so the figures line up.\n\nThe statement is true.",
+      "Trade receivables are about 17.6% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cash and cash equivalents are about 28.7% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term financing covers non-current assets by about 24.5%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.077",
+    "title": "Balance Sheet Structure Review 77",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=516\nCurrent liabilities=237\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €279 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.9 times over.",
+      "Buildings make up more than 38.9% of total assets.",
+      "Inventory make up more than 42.9% of current assets.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 26.8%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Working capital = current assets minus current liabilities.\n\n516 - 237 = 279\n\nThe claim cites 279. We have 279, so the figures line up.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.20.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buildings are about 41.4% of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory are about 44.8% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Long-term financing covers non-current assets by about 40.0%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.078",
+    "title": "Turnover and Liquidity Extract 78",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=792 | Ending=1012\nInventory | Beginning=163 | Ending=158\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 914 |\n| Cost of sales | 628 |\n| Total assets at the beginning of the year | 792 |\n| Total assets at the end of the year | 1012 |\n| Inventory at the beginning of the year | 163 |\n| Inventory at the end of the year | 158 |\n| Trade receivables at the beginning of the year | 113 |\n| Trade receivables at the end of the year | 150 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 4.6 times per year.",
+      "Asset turnover, revenue taken relative to average total assets, is above 1.45.",
+      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 9.4 times per year.",
+      "Average inventory make up less than 17.3% of average total assets.",
+      "Inventory grew by more than 32% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Inventory turnover ≈ 3.91.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover ≈ 1.01.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Receivables turnover ≈ 6.95.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Average inventory are about 17.8% of average total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory changed by about -3.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.079",
+    "title": "Asset Composition Chart 79",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=506\nMachinery=182\nPatents, trademarks and licences=59\nInventory=238\nTrade receivables=95\nCash and cash equivalents=30\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 506 |\n| Machinery | 182 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 59 |\n| Inventory | 238 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 30 |\n| Total assets | **1151** |\n| **EQUITY** | |\n| Share capital | 174 |\n| Retained earnings | 496 |\n| Total equity | **670** |\n| **LIABILITIES** | |\n| Long-term bank loan | 226 |\n| Bonds payable | 90 |\n| Trade payables | 76 |\n| Bank overdraft | 89 |\n| Total liabilities | **481** |\n| Total equity and liabilities | **1151** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.81.",
+      "The equity ratio is below 24%.",
+      "Buildings make up more than 51% of total assets.",
+      "Cash and cash equivalents make up more than 17% of current assets.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 25.5%."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Current assets gather the short-term asset lines:\n\nInventory (238) + Trade receivables (95) + Cash and cash equivalents (30)\n= 363\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (76) + Bank overdraft (89)\n= 165\n\nCurrent ratio = 363 / 165 ≈ 2.20\n\nThe claim says the ratio exceeds 1.81. We have about 2.20, which matches that comparison.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n670 / 1151 ≈ 58.2%\n\nThe claim says the ratio below 24%. We have about 58.2%, which does not match that comparison.\n\nThe statement is false.",
+      "Buildings are about 44.0% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Cash and cash equivalents are about 8.3% of current assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Long-term financing covers non-current assets by about 25.1%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.080",
+    "title": "Capital Employed and Long-Term Funds for Analysts",
+    "context": "Examine how the equity ratio and the debt ratio together describe the way a business finances its total assets. Evaluate the following economic assertions:",
+    "statements": [
+      "The acid-test ratio for a construction group includes inventory within current assets before comparing the total with current liabilities.",
+      "Working capital for an online retailer is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+      "An online retailer is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.",
+      "A single return on capital employed figure for a construction group is always fully meaningful on its own, without any need to compare it against other years or similar businesses.",
+      "Return on equity for a construction group is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "The acid-test ratio excludes inventory to provide a stricter liquidity test.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The standard working capital definition applies to an online retailer: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Positive working capital is generally preferable for an online retailer as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed gains meaning chiefly from comparisons over time or with peers.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Return on equity relates profit before interest and tax to equity, not cash to liabilities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.081",
+    "title": "Asset and Inventory Turnover 81",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=785 | Ending=987\nInventory | Beginning=167 | Ending=193\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,233 |\n| Cost of sales | 795 |\n| Total assets at the beginning of the year | 785 |\n| Total assets at the end of the year | 987 |\n| Inventory at the beginning of the year | 167 |\n| Inventory at the end of the year | 193 |\n| Trade receivables at the beginning of the year | 107 |\n| Trade receivables at the end of the year | 113 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Asset turnover, revenue taken relative to average total assets, is above 1.52.",
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 5.21 times per year.",
+      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.98 times per year.",
+      "With inventory turnover of about 4.4 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+      "Revenue exceeds €1,232 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Asset turnover ≈ 1.39.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory turnover ≈ 4.42.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Receivables turnover ≈ 11.21.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High turnover signals faster stock rotation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, revenue = 1,233. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.082",
+    "title": "Turnover and Liquidity Extract 82",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=762 | Ending=1046\nInventory | Beginning=150 | Ending=188\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,214 |\n| Cost of sales | 799 |\n| Total assets at the beginning of the year | 762 |\n| Total assets at the end of the year | 1046 |\n| Inventory at the beginning of the year | 150 |\n| Inventory at the end of the year | 188 |\n| Trade receivables at the beginning of the year | 98 |\n| Trade receivables at the end of the year | 131 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 6.16 times per year.",
+      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 7.63 times per year.",
+      "With inventory turnover of about 4.7 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.",
+      "Asset turnover, revenue taken relative to average total assets, is above 1.59.",
+      "Revenue exceeds €1,045 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Inventory turnover ≈ 4.73.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Receivables turnover ≈ 10.60.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High turnover signals faster stock rotation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover ≈ 1.34.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Revenue = 1,214. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.083",
+    "title": "Capital Employed and Long-Term Funds Across Sectors",
+    "context": "Examine why comparing ratios with industry peers or with a business's own history over time improves interpretation. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio for an online retailer sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Return on equity for an online retailer relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "A return on capital employed figure for an online retailer carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "Inventory turnover for a construction group is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
+      "Asset turnover for an online retailer relates revenue earned during the period to the average total assets employed to generate that revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Current ratio analysis for an online retailer compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on equity for an online retailer links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed for an online retailer is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory turnover uses cost of sales relative to average inventory, not revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Asset turnover measures how much revenue an online retailer generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.084",
+    "title": "Capital Employed and Long-Term Funds in Context",
+    "context": "Examine how the four broad areas of liquidity, profitability, financial efficiency and financial structure fit together in a rounded analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio and the acid-test ratio for a construction group always produce identical results, regardless of how much inventory the business holds.",
+      "The equity ratio for an online retailer expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+      "If an online retailer draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "Working capital for a hotel operator is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+      "A hotel operator is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "When inventory is material, the acid-test ratio differs from the current ratio.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Equity ratio analysis for an online retailer expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Short-term borrowing can boost cash yet reduce working capital for an online retailer.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The standard working capital definition applies to a hotel operator: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Positive working capital is generally preferable for a hotel operator as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.085",
+    "title": "Asset Composition Chart 85",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=410\nCurrent liabilities=259\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 501 |\n| Machinery | 165 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 65 |\n| Inventory | 187 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 108 |\n| Total assets | **1198** |\n| **EQUITY** | |\n| Share capital | 169 |\n| Retained earnings | 290 |\n| Total equity | **459** |\n| **LIABILITIES** | |\n| Long-term bank loan | 435 |\n| Bonds payable | 45 |\n| Trade payables | 171 |\n| Bank overdraft | 88 |\n| Total liabilities | **739** |\n| Total equity and liabilities | **1198** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.44.",
+      "The debt ratio exceeds 77%.",
+      "Buildings make up more than 56.7% of total assets.",
+      "Working capital of €151 thousand is positive on this balance sheet.",
+      "The equity ratio is below 44.9%."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets = 410\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 259\n\nCurrent ratio = 410 / 259 ≈ 1.58\n\nThe claim says the ratio exceeds 1.44. We have about 1.58, which matches that comparison.\n\nThe statement is true.",
+      "Apply the case evidence: Debt ratio ≈ 61.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Buildings are about 41.8% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n410 - 259 = 151\n\nThe claim cites 151. We have 151, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n459 / 1198 ≈ 38.3%\n\nThe claim says the ratio below 44.9%. We have about 38.3%, which matches that comparison.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.086",
+    "title": "Turnover and Liquidity Extract 86",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=844 | Ending=1030\nInventory | Beginning=169 | Ending=176\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,076 |\n| Cost of sales | 740 |\n| Total assets at the beginning of the year | 844 |\n| Total assets at the end of the year | 1030 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 176 |\n| Trade receivables at the beginning of the year | 90 |\n| Trade receivables at the end of the year | 122 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 6.11 times per year.",
+      "Asset turnover, revenue taken relative to average total assets, is above 1.22.",
+      "On average, revenue remains outstanding in trade receivables for more than 54 days.",
+      "Average inventory make up less than 13.1% of average total assets.",
+      "Inventory grew by more than 30.8% between Year 1 and Year 2."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Inventory turnover ≈ 4.29.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover ≈ 1.15.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Average collection period ≈ 36 days.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Average inventory are about 18.4% of average total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory changed by about 4.1% between the two years.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.087",
+    "title": "Liquidity From the Balance Sheet 87",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=492\nMachinery=249\nPatents, trademarks and licences=45\nInventory=84\nTrade receivables=157\nCash and cash equivalents=66\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 249 |\n| Office equipment | 55 |\n| Patents, trademarks and licences | 45 |\n| Inventory | 84 |\n| Trade receivables | 157 |\n| Cash and cash equivalents | 66 |\n| Total assets | **1148** |\n| **EQUITY** | |\n| Share capital | 139 |\n| Retained earnings | 389 |\n| Total equity | **528** |\n| **LIABILITIES** | |\n| Long-term bank loan | 392 |\n| Bonds payable | 43 |\n| Trade payables | 127 |\n| Bank overdraft | 58 |\n| Total liabilities | **620** |\n| Total equity and liabilities | **1148** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The equity ratio is below 23.5%.",
+      "Working capital of €122 thousand is positive on this balance sheet.",
+      "Working capital is positive on this balance sheet.",
+      "The equity ratio exceeds 31.4%.",
+      "The acid-test ratio exceeds 1.04."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Equity ratio = total equity / total assets.\n\n528 / 1148 ≈ 46.0%\n\nThe claim says the ratio below 23.5%. We have about 46.0%, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n307 - 185 = 122\n\nThe claim cites 122. We have 122, so the figures line up.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n307 - 185 = 122\n\nWorking capital is 122, which is positive.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n528 / 1148 ≈ 46.0%\n\nThe claim says the ratio exceeds 31.4%. We have about 46.0%, which matches that comparison.\n\nThe statement is true.",
+      "Acid-test (quick) assets exclude inventory.\n\nCurrent assets 307 minus inventory 84 = 223\n\nAcid-test ratio = 223 / 185 ≈ 1.21\n\nThe claim says the ratio exceeds 1.04. We have about 1.21, which matches that comparison.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.088",
+    "title": "Turnover and Liquidity Extract 88",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=851 | Ending=941\nInventory | Beginning=131 | Ending=182\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,046 |\n| Cost of sales | 659 |\n| Total assets at the beginning of the year | 851 |\n| Total assets at the end of the year | 941 |\n| Inventory at the beginning of the year | 131 |\n| Inventory at the end of the year | 182 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 143 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 5.42 times per year.",
+      "Asset turnover, revenue taken relative to average total assets, is above 1.24.",
+      "Average inventory make up less than 14.4% of average total assets.",
+      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 7.05 times per year.",
+      "Trade receivables grew by more than 19% between the beginning and the end of the year."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Inventory turnover ≈ 4.21.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset turnover ≈ 1.17.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Average inventory are about 17.5% of average total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Receivables turnover ≈ 7.53.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade receivables moved from 135 to 143.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.089",
+    "title": "Balance Sheet Structure Review 89",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=300\nCurrent liabilities=199\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 388 |\n| Machinery | 172 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 132 |\n| Trade receivables | 90 |\n| Cash and cash equivalents | 78 |\n| Total assets | **944** |\n| **EQUITY** | |\n| Share capital | 192 |\n| Retained earnings | 229 |\n| Total equity | **421** |\n| **LIABILITIES** | |\n| Long-term bank loan | 277 |\n| Bonds payable | 47 |\n| Trade payables | 173 |\n| Bank overdraft | 26 |\n| Total liabilities | **523** |\n| Total equity and liabilities | **944** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Working capital of €101 thousand is positive on this balance sheet.",
+      "The equity ratio is below 39.9%.",
+      "The debt ratio exceeds 50.3%.",
+      "Trade receivables make up less than 48.2% of current assets.",
+      "Buildings make up more than 41.8% of total assets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Working capital = current assets minus current liabilities.\n\n300 - 199 = 101\n\nThe claim cites 101. We have 101, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n421 / 944 ≈ 44.6%\n\nThe claim says the ratio below 39.9%. We have about 44.6%, which does not match that comparison.\n\nThe statement is false.",
+      "From the figures or classification rule involved, debt ratio ≈ 55.4%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade receivables are about 30.0% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Buildings are about 41.1% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.090",
+    "title": "Liquidity From the Balance Sheet 90",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=336\nCurrent liabilities=116\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 306 |\n| Machinery | 276 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 171 |\n| Trade receivables | 64 |\n| Cash and cash equivalents | 101 |\n| Total assets | **1061** |\n| **EQUITY** | |\n| Share capital | 250 |\n| Retained earnings | 459 |\n| Total equity | **709** |\n| **LIABILITIES** | |\n| Long-term bank loan | 195 |\n| Bonds payable | 41 |\n| Trade payables | 70 |\n| Bank overdraft | 46 |\n| Total liabilities | **352** |\n| Total equity and liabilities | **1061** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.01.",
+      "Working capital of €220 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.03 times over.",
+      "The current ratio is below 0.7.",
+      "The equity ratio is below 35.1%."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets = 336\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 116\n\nCurrent ratio = 336 / 116 ≈ 2.90\n\nThe claim says the ratio exceeds 1.01. We have about 2.90, which matches that comparison.\n\nThe statement is true.",
+      "Working capital = current assets minus current liabilities.\n\n336 - 116 = 220\n\nThe claim cites 220. We have 220, so the figures line up.\n\nThe statement is true.",
+      "Acid-test ratio ≈ 1.42.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 336\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 116\n\nCurrent ratio = 336 / 116 ≈ 2.90\n\nThe claim says the ratio below 0.7. We have about 2.90, which does not match that comparison.\n\nThe statement is false.",
+      "Equity ratio = total equity / total assets.\n\n709 / 1061 ≈ 66.8%\n\nThe claim says the ratio below 35.1%. We have about 66.8%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.091",
+    "title": "Asset and Inventory Turnover 91",
+    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Beginning versus ending balances\"]]\nTotal assets | Beginning=843 | Ending=1018\nInventory | Beginning=163 | Ending=183\n[[/CHART]]\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,127 |\n| Cost of sales | 751 |\n| Total assets at the beginning of the year | 843 |\n| Total assets at the end of the year | 1018 |\n| Inventory at the beginning of the year | 163 |\n| Inventory at the end of the year | 183 |\n| Trade receivables at the beginning of the year | 106 |\n| Trade receivables at the end of the year | 101 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Asset turnover, revenue taken relative to average total assets, is above 1.41.",
+      "Inventory turnover, cost of sales taken relative to average inventory, is below 6.97 times per year.",
+      "Revenue exceeds €1,138 thousand.",
+      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.07 times per year.",
+      "Cost of sales amounts to more than 69.7% of revenue."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Asset turnover ≈ 1.21.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory turnover ≈ 4.34.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, revenue = 1,127. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Receivables turnover ≈ 10.89.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cost of sales is about 66.6% of revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.092",
+    "title": "Asset Turnover and Revenue Generation in Practice",
+    "context": "Examine why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:",
+    "statements": [
+      "The current ratio for a hotel operator sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.",
+      "Working capital for a fashion retailer is calculated by subtracting current assets from current liabilities.",
+      "Return on equity for a hotel operator relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
+      "A return on capital employed figure for a hotel operator carries more weight when read alongside the business's own results from earlier years or against similar firms in its industry.",
+      "A fashion retailer reporting negative working capital always holds more cash than it needs for its daily operations."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Current ratio analysis for a hotel operator compares current assets with current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Working capital is current assets minus current liabilities, not the reverse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Return on equity for a hotel operator links profit before interest and tax to owners' equity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed for a hotel operator is most useful in comparison rather than in isolation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Negative working capital means current liabilities exceed current assets and does not imply excess cash.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.093",
+    "title": "Liquidity From the Balance Sheet 93",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=291\nMachinery=274\nPatents, trademarks and licences=34\nInventory=182\nTrade receivables=153\nCash and cash equivalents=34\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 291 |\n| Machinery | 274 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 34 |\n| Inventory | 182 |\n| Trade receivables | 153 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1011** |\n| **EQUITY** | |\n| Share capital | 264 |\n| Retained earnings | -3 |\n| Total equity | **261** |\n| **LIABILITIES** | |\n| Long-term bank loan | 397 |\n| Bonds payable | 84 |\n| Trade payables | 188 |\n| Bank overdraft | 81 |\n| Total liabilities | **750** |\n| Total equity and liabilities | **1011** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The current ratio exceeds 1.87.",
+      "Working capital of €100 thousand is positive on this balance sheet.",
+      "The equity ratio is below 20.4%.",
+      "The debt ratio exceeds 46%.",
+      "Inventory make up more than 38.6% of current assets."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Current assets gather the short-term asset lines:\n\nInventory (182) + Trade receivables (153) + Cash and cash equivalents (34)\n= 369\n\nCurrent liabilities gather the short-term claims:\n\nTrade payables (188) + Bank overdraft (81)\n= 269\n\nCurrent ratio = 369 / 269 ≈ 1.37\n\nThe claim says the ratio exceeds 1.87. We have about 1.37, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n369 - 269 = 100\n\nThe claim cites 100. We have 100, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n264 / 1011 ≈ 26.1%\n\nThe claim says the ratio below 20.4%. We have about 26.1%, which does not match that comparison.\n\nThe statement is false.",
+      "Apply the case evidence: Debt ratio ≈ 74.2%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory are about 49.3% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.094",
+    "title": "Combined Statement Extract 94",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"pie\" title=\"Asset composition\"]]\nBuildings=463\nMachinery=178\nInventory=270\nTrade receivables=168\nCash and cash equivalents=31\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 463 |\n| Machinery | 178 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 97 |\n| Inventory | 270 |\n| Trade receivables | 168 |\n| Cash and cash equivalents | 31 |\n| Total assets | **1270** |\n| **EQUITY** | |\n| Share capital | 177 |\n| Retained earnings | 433 |\n| Total equity | **610** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 69 |\n| Trade payables | 159 |\n| Bank overdraft | 86 |\n| Total liabilities | **660** |\n| Total equity and liabilities | **1270** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 240 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 240 |\n| Cash flow from investing activities | (185) |\n| Cash flow from financing activities | 39 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 29.7%.",
+      "Cash flow from operating activities amounts to less than 82.5% of the operating result, indicating profit is only partly backed by cash.",
+      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 15%.",
+      "The equity ratio exceeds 44.5%.",
+      "Inventory make up more than 26.7% of total assets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Return on equity ≈ 39.3%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Cash conversion ≈ 100.0% of the operating result.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Return on capital employed ≈ 23.4%.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n610 / 1549 ≈ 39.4%\n\nThe claim says the ratio exceeds 44.5%. We have about 39.4%, which matches that comparison.\n\nThe statement is true.",
+      "Inventory are about 21.3% of total assets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.095",
+    "title": "Asset Turnover and Revenue Generation Explained",
+    "context": "Assess how working capital is defined and why a positive balance is generally preferred to a negative one. Evaluate the following economic assertions:",
+    "statements": [
+      "Asset turnover for a hotel operator relates revenue earned during the period to the average total assets employed to generate that revenue.",
+      "The equity ratio for a hotel operator expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+      "The acid-test ratio for a fashion retailer includes inventory within current assets before comparing the total with current liabilities.",
+      "If a hotel operator draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+      "A single return on capital employed figure for a fashion retailer is always fully meaningful on its own, without any need to compare it against other years or similar businesses."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Asset turnover measures how much revenue a hotel operator generates per unit of average assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio analysis for a hotel operator expresses equity as a share of total assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The acid-test ratio excludes inventory to provide a stricter liquidity test.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Short-term borrowing can boost cash yet reduce working capital for a hotel operator.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on capital employed gains meaning chiefly from comparisons over time or with peers.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.096",
+    "title": "Share Price and Market Capitalisation 96",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=24\nFebruary | Price=24\nMarch | Price=24\nApril | Price=25\nMay | Price=24\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=29000\nFebruary | Volume=74000\nMarch | Volume=93000\nApril | Volume=93000\nMay | Volume=42000\nJune | Volume=40000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 24 | 29,000 |\n| February | 24 | 74,000 |\n| March | 24 | 93,000 |\n| April | 25 | 93,000 |\n| May | 24 | 42,000 |\n| June | 30 | 40,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 301 |\n| Shares outstanding | 753,000 |\n| Total shares traded (six months) | 371,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €19.2 million.",
+      "Highest closing price is more than 27.3% above the lowest.",
+      "Total shares traded over six months exceed 21.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 96,969 shares.",
+      "Operating result is below €258 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €22.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €24-€30. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Turnover ≈ 49.3% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 93,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 301.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.097",
+    "title": "Asset Turnover and Revenue Generation for Analysts",
+    "context": "Assess how the current ratio and the acid-test ratio each measure short-term liquidity, and why they can diverge for inventory-heavy businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Working capital for a pharmaceutical distributor is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.",
+      "Return on equity for a fashion retailer is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.",
+      "Inventory turnover for a fashion retailer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
+      "A pharmaceutical distributor is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.",
+      "The current ratio and the acid-test ratio for a fashion retailer always produce identical results, regardless of how much inventory the business holds."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "The standard working capital definition applies to a pharmaceutical distributor: current assets minus current liabilities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Return on equity relates profit before interest and tax to equity, not cash to liabilities.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Inventory turnover uses cost of sales relative to average inventory, not revenue.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Positive working capital is generally preferable for a pharmaceutical distributor as a cushion over short-term obligations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "When inventory is material, the acid-test ratio differs from the current ratio.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.098",
+    "title": "Earnings Per Share From Reported Figures 98",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=20\nMarch | Price=21\nApril | Price=21\nMay | Price=21\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=54000\nFebruary | Volume=47000\nMarch | Volume=93000\nApril | Volume=39000\nMay | Volume=74000\nJune | Volume=27000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 54,000 |\n| February | 20 | 47,000 |\n| March | 21 | 93,000 |\n| April | 21 | 39,000 |\n| May | 21 | 74,000 |\n| June | 25 | 27,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 266 |\n| Shares outstanding | 882,000 |\n| Total shares traded (six months) | 334,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €20.2 million.",
+      "The closing share price rose by more than 28.9% from first to last month.",
+      "Highest closing price is more than 39.8% above the lowest.",
+      "Market capitalisation rose by more than 14.1% over the period.",
+      "Total shares traded over six months exceed 9.1% of shares outstanding."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €22.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 25.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, range €20-€25. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, €17.6m → €22.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 37.9% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.099",
+    "title": "Share Price and Market Capitalisation 99",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=19\nMarch | Price=19\nApril | Price=19\nMay | Price=18\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=74000\nFebruary | Volume=58000\nMarch | Volume=90000\nApril | Volume=70000\nMay | Volume=69000\nJune | Volume=63000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 74,000 |\n| February | 19 | 58,000 |\n| March | 19 | 90,000 |\n| April | 19 | 70,000 |\n| May | 18 | 69,000 |\n| June | 17 | 63,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 259 |\n| Shares outstanding | 466,000 |\n| Total shares traded (six months) | 424,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €7.3 million.",
+      "Total shares traded over six months exceed 16.7% of shares outstanding.",
+      "Peak monthly share turnover exceeds 82,270 shares.",
+      "Shares outstanding equal 466,000.",
+      "Operating result is below €263 thousand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €7.9 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 91.0% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 90,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shares outstanding = 466,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Operating result = 259.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.5",
+    "case_id": "CASE 6.5.100",
+    "title": "Listed Company Performance Charts 100",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=18\nMarch | Price=16\nApril | Price=15\nMay | Price=13\nJune | Price=12\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=74000\nFebruary | Volume=74000\nMarch | Volume=91000\nApril | Volume=42000\nMay | Volume=60000\nJune | Volume=40000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 74,000 |\n| February | 18 | 74,000 |\n| March | 16 | 91,000 |\n| April | 15 | 42,000 |\n| May | 13 | 60,000 |\n| June | 12 | 40,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 318 |\n| Shares outstanding | 425,000 |\n| Total shares traded (six months) | 381,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation at the last month exceeds €3.8 million.",
+      "Earnings per share exceeds €0.66.",
+      "Highest closing price is more than 34.3% above the lowest.",
+      "Total shares traded over six months exceed 36.2% of shares outstanding.",
+      "Peak monthly share turnover exceeds 81,302 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market capitalisation ≈ €5.1 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Earnings per share ≈ €0.75.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €12-€19. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 89.6% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 91,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

@@ -1,0 +1,1041 @@
+[
+  {
+    "case_id": "MATH 11.25",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Call-centre delay and its curvature",
+    "context_en": "Mean delay (minutes) is $D(n)=\\dfrac{36}{n+2}$ when $n>0$ agents are staffed. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$D'(n)=-\\dfrac{36}{(n+2)^{2}}$.",
+      "$D'(1)=-4$.",
+      "$D''(n)=\\dfrac{72}{(n+2)^{3}}$.",
+      "$D'(n)>0$ for all $n>0$.",
+      "Near $n=1$, one extra agent cuts delay by about $4$ minutes."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRewrite delay as a power and differentiate with the chain rule:\n\n$$\nD(n) = 36(n+2)^{-1}\n$$\n\n$$\nD'(n) = -36(n+2)^{-2}\n$$\n\n$$\nD'(n) = -\\dfrac{36}{(n+2)^{2}}\n$$\n\nmatching the claimed formula. The inner derivative of $n+2$ is $1$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $n=1$ into the first derivative:\n\n$$\nD'(1) = -\\dfrac{36}{(1+2)^{2}}\n$$\n\n$$\nD'(1) = -\\dfrac{36}{9}\n$$\n\n$$\nD'(1) = -4\n$$\n\nKeep the minus sign. The computed value matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $D'(n)=-36(n+2)^{-2}$ once more:\n\n$$\nD''(n) = (-36)\\cdot(-2)(n+2)^{-3}\n$$\n\n$$\nD''(n) = \\dfrac{72}{(n+2)^{3}}\n$$\n\nmatching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows.\n\n$$\nD'(n) = -36(n+2)^{-2}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe leading factor $-36$ is negative and the denominator is positive for every $n>0$, so\n\n$$\nD'(n)<0\n$$\n\nthroughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe first derivative measures minutes of delay gained (or lost) per extra agent. At $n=1$ that rate is\n\n$$\nD'(1) = -4\n$$\n\nso one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut.\n\n$$\nn = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Mean call-centre delay is the reciprocal staffing model\n\n$$D(n)=\\dfrac{36}{n+2}=36(n+2)^{-1}\\qquad(n>0)$$\n\nDifferentiating once and twice gives\n\n$$D'(n)=-\\dfrac{36}{(n+2)^{2}}\\qquad D''(n)=\\dfrac{72}{(n+2)^{3}}$$\n\nAt $n=1$ the first derivative evaluates to $D'(1)=-4$, so one extra agent near that staffing level cuts delay by about $4$ minutes. Because the leading factor is negative, $D'(n)<0$ for every $n>0$ — delay falls as staffing rises.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Callcenter-Wartezeit und ihre Krümmung",
+    "context_de_existing": "Die mittlere Verzögerung (Minuten) ist $D(n)=\\dfrac{36}{n+2}$, wenn $n>0$ Agents besetzt sind. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$D'(n)=-\\dfrac{36}{(n+2)^{2}}$.",
+      "$D'(1)=-4$.",
+      "$D''(n)=\\dfrac{72}{(n+2)^{3}}$.",
+      "$D'(n)>0$ für alle $n>0$.",
+      "Nahe $n=1$ verkürzt ein zusätzlicher Agent die Verzögerung um etwa $4$ Minuten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSchreibe die Verzögerung als Potenz und differenziere mit der Kettenregel:\n\n$$\nD(n)=36(n+2)^{-1}\n$$\n\n$$\nD'(n)=-36(n+2)^{-2}=-\\dfrac{36}{(n+2)^{2}}\n$$\n\nDie innere Ableitung von $n+2$ ist $1$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $n=1$ ein:\n\n$$\nD'(1)=-\\dfrac{36}{3^{2}}=-\\dfrac{36}{9}=-4\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenziere erneut:\n\n$$\nD''(n)=(-36)\\cdot(-2)(n+2)^{-3}=\\dfrac{72}{(n+2)^{3}}\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nFür jedes $n>0$ ist der Nenner positiv und der Zähler negativ, also $D'(n)<0$. Die Behauptung $D'(n)>0$ verdreht das Vorzeichen.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBei $n=1$ ist die Rate $D'(1)=-4$, also verkürzt ein zusätzlicher Agent die Verzögerung um etwa $4$ Minuten.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die mittlere Call-Center-Verzögerung folgt dem reziproken Besatzungsmodell\n\n$$D(n)=\\dfrac{36}{n+2}=36(n+2)^{-1}\\qquad(n>0)$$\n\nEin- und zweifaches Differenzieren liefert\n\n$$D'(n)=-\\dfrac{36}{(n+2)^{2}}\\qquad D''(n)=\\dfrac{72}{(n+2)^{3}}$$\n\nBei $n=1$ gilt $D'(1)=-4$. Die erste Ableitung ist für alle $n>0$ negativ."
+  },
+  {
+    "case_id": "MATH 11.26",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Decaying response with a linear factor",
+    "context_en": "A response score is $S(x)=x\\cdot e^{-2x}$ for $x>0$. Judge every assertion below.",
+    "statements_en": [
+      "$S'(x)=e^{-2x}\\cdot(1-2x)$.",
+      "$S'\\left(\\dfrac{1}{2}\\right)=0$.",
+      "$S''(x)=e^{-2x}\\cdot(4x-4)$.",
+      "$S'(0)=1$.",
+      "$S'(1)=e^{-2}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:\n\nWrite the product as two factors and differentiate each factor before combining.\n\n$$\nS(x) = x \\cdot e^{-2x}\n$$\n\n$$\nu(x) = x\n$$\n\n$$\nv(x) = e^{- 2 x}\n$$\n\n$$\nu'(x) = 1\n$$\n\n$$\nv'(x) = - 2 e^{- 2 x}\n$$\n\n$$\nS'(x) = (1)\\cdot(e^{- 2 x}) + (x)\\cdot(- 2 e^{- 2 x})\n$$\n\nOnly after that product-rule expansion do we simplify to the claimed form.\n\n$$\nS'(x) = e^{-2x}+x(-2)e^{-2x}\n$$\n\n$$\nS'(x) = e^{-2x}(1-2x)\n$$\n\nwhich matches the claimed formula. The chain-rule factor $-2$ is essential.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=\\dfrac{1}{2}$ into the factored derivative:\n\n$$\nS'\\!\\left(\\dfrac{1}{2}\\right) = e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)\n$$\n\n$$\ne^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr) = e^{-1}\\cdot 0\n$$\n\n$$\ne^{-1}\\cdot 0 = 0\n$$\n\nso the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $S'(x)=e^{-2x}(1-2x)$ again and factor $e^{-2x}$. Expanding the product rule gives\n\n$$\nS''(x) = e^{-2x}(4x-4)\n$$\n\nmatching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor.\n\n$$\nS''(x) = e^{-2x}\\cdot(4x-4)\n$$\n\n$$\nS'(x) = e^{-2x}(1-2x)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nExtending the first-derivative formula to $x=0$ gives\n\n$$\nS'(0) = e^{0}(1-0)\n$$\n\n$$\nS'(0) = 1\n$$\n\nmatching the claim. At the origin the exponential is $1$ and the linear factor is $1$.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nSubstitute $x=1$ into the first derivative:\n\n$$\nS'(1) = e^{-2}(1-2)\n$$\n\n$$\nS'(1) = -e^{-2}\n$$\n\nwhich equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nS'(1) = e^{-2}\n$$\n\n$$\nx = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The response score is the decaying exponential-linear product\n\n$$S(x)=x\\cdot e^{-2x}\\qquad(x>0)$$\n\nThe product rule factors cleanly to\n\n$$S'(x)=e^{-2x}\\cdot(1-2x)$$\n\nso the critical point $S'\\!\\left(\\dfrac{1}{2}\\right)=0$ is immediate, while $S'(0)=1$ and\n\n$$S'(1)=e^{-2}(1-2)=-e^{-2}$$\n\nDifferentiating again and factoring $e^{-2x}$ yields\n\n$$S''(x)=e^{-2x}\\cdot(4x-4)$$\n\nWatch the chain-rule factor $-2$ from $e^{-2x}$ — it drives both the critical point and the sign at $x=1$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Abklingende Response mit linearem Faktor",
+    "context_de_existing": "Ein Response-Score ist $S(x)=x\\cdot e^{-2x}$ für $x>0$. Beurteile jede Behauptung unten.",
+    "statements_de_existing": [
+      "$S'(x)=e^{-2x}\\cdot(1-2x)$.",
+      "$S'\\left(\\dfrac{1}{2}\\right)=0$.",
+      "$S''(x)=e^{-2x}\\cdot(4x-4)$.",
+      "$S'(0)=1$.",
+      "$S'(1)=e^{-2}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nProduktregel mit $u=x$, $v=e^{-2x}$:\n\n$$\nS'(x)=e^{-2x}+x(-2e^{-2x})=e^{-2x}(1-2x)\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze $x=\\dfrac{1}{2}$:\n\n$$\nS'\\!\\left(\\dfrac{1}{2}\\right)=e^{-1}\\cdot(1-1)=0\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNochmalige Produktregel und Ausklammern von $e^{-2x}$ liefert\n\n$$\nS''(x)=e^{-2x}(4x-4)\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nFormal bei $x=0$:\n\n$$\nS'(0)=e^{0}(1-0)=1\n$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$S'(1)=e^{-2}(1-2)=-e^{-2}\\neq e^{-2}$$\n\nDas Vorzeichen fehlt in der Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Response-Score ist das abfallende Exponential-Linear-Produkt\n\n$$S(x)=x\\cdot e^{-2x}\\qquad(x>0)$$\n\nDie Produktregel faktorisiert zu\n\n$$S'(x)=e^{-2x}\\cdot(1-2x)$$\n\nalso $S'(1/2)=0$ und $S'(0)=1$. Die zweite Ableitung ist $S''(x)=e^{-2x}(4x-4)$. Bei $x=1$ gilt $S'(1)=-e^{-2}$, nicht $e^{-2}$."
+  },
+  {
+    "case_id": "MATH 11.27",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Square-root reach of a campaign",
+    "context_en": "Expected reach is $R(a)=5\\sqrt{4a+9}$ contacts when advertising intensity is $a\\geq 0$. For each claim, mark TRUE or FALSE.",
+    "statements_en": [
+      "$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}$.",
+      "$R'(0)=\\dfrac{10}{3}$.",
+      "$R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$.",
+      "$R'(4)=2$.",
+      "$R'(a)$ grows without bound as $a$ grows."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRewrite reach as $R(a)=5(4a+9)^{\\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $4$:\n\n$$\nR'(a) = 5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4\n$$\n\n$$\nR'(a) = \\dfrac{10}{\\sqrt{4a+9}}\n$$\n\nmatching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$.\n\n$$\nR(a) = 5(4a+9)^{\\frac{1}{2}}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $a=0$:\n\n$$\nR'(0) = \\dfrac{10}{\\sqrt{9}}\n$$\n\n$$\nR'(0) = \\dfrac{10}{3}\n$$\n\nThe computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope.\n\n$$\na = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $R'(a)=10(4a+9)^{-\\frac{1}{2}}$ once more, again multiplying by the inner slope $4$:\n\n$$\nR''(a) = 10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4\n$$\n\n$$\nR''(a) = -\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}\n$$\n\nmatching the claimed second derivative. The negative sign encodes diminishing returns.\n\n$$\nR'(a) = 10(4a+9)^{-\\frac{1}{2}}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $a=4$, using $4\\cdot 4+9=25$:\n\n$$\nR'(4) = \\dfrac{10}{\\sqrt{25}}\n$$\n\n$$\nR'(4) = \\dfrac{10}{5}\n$$\n\n$$\nR'(4) = 2\n$$\n\nThe computed value matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nAs $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so\n\n$$\nR'(a) = \\dfrac{10}{\\sqrt{4a+9}}\\to 0\n$$\n\nrather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Expected reach is the scaled square-root rule\n\n$$R(a)=5\\sqrt{4a+9}=5(4a+9)^{\\frac{1}{2}}$$\n\nDifferentiating once and twice gives\n\n$$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\qquad R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$\n\nEvaluating at the named intensities yields\n\n$$R'(0)=\\dfrac{10}{3}\\qquad R'(4)=2$$\n\nAs $a$ grows, the denominator $\\sqrt{4a+9}$ grows without bound, so $R'(a)\\to 0$ rather than growing without bound — diminishing marginal reach.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Wurzel-Reichweite einer Kampagne",
+    "context_de_existing": "Die erwartete Reichweite ist $R(a)=5\\sqrt{4a+9}$ Kontakte, wenn die Werbeintensität $a\\geq 0$ ist. Markiere jede Behauptung mit Wahr oder Falsch.",
+    "statements_de_existing": [
+      "$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}$.",
+      "$R'(0)=\\dfrac{10}{3}$.",
+      "$R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$.",
+      "$R'(4)=2$.",
+      "$R'(a)$ wächst unbegrenzt, wenn $a$ wächst."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$$R(a)=5(4a+9)^{\\frac{1}{2}}$$\n\n$$\nR'(a)=5\\cdot\\tfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4=\\dfrac{10}{\\sqrt{4a+9}}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$R'(0)=\\dfrac{10}{\\sqrt{9}}=\\dfrac{10}{3}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$\nR''(a)=10\\cdot\\Bigl(-\\tfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$R'(4)=\\dfrac{10}{\\sqrt{16+9}}=\\dfrac{10}{5}=2$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$R'(a)$ fällt mit wachsendem $a$ gegen $0$ (Nenner wächst). Es wächst nicht unbegrenzt.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die erwartete Reichweite folgt der skalierten Wurzelregel\n\n$$R(a)=5\\sqrt{4a+9}$$\n\n$$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\qquad R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$\n\nInsbesondere $R'(0)=\\dfrac{10}{3}$ und $R'(4)=2$. Die Ableitung fällt gegen null und wächst nicht unbegrenzt."
+  },
+  {
+    "case_id": "MATH 11.28",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Study utility with a log and a linear penalty",
+    "context_en": "Utility is $U(t)=30\\cdot\\ln(2t+1)-4t$ for study hours $t>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$U'(t)=\\dfrac{60}{2t+1}-4$.",
+      "$U'(2)=8$.",
+      "$U''(t)=-\\dfrac{120}{(2t+1)^{2}}$.",
+      "$U'(0)=56$.",
+      "$U'(t)=0$ at $t=\\dfrac{7}{2}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate $U(t)=30\\ln(2t+1)-4t$ with the chain rule on the logarithm, multiplying by the inner slope $2$:\n\n$$\nU'(t) = 30\\cdot\\dfrac{2}{2t+1}-4\n$$\n\n$$\nU'(t) = \\dfrac{60}{2t+1}-4\n$$\n\nmatching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$.\n\n$$\nU(t) = 30\\ln(2t+1)-4t\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $t=2$ into the first derivative:\n\n$$\nU'(2) = \\dfrac{60}{4+1}-4\n$$\n\n$$\nU'(2) = \\dfrac{60}{5}-4\n$$\n\n$$\nU'(2) = 12-4\n$$\n\n$$\n12 - 4 = 8\n$$\n\n$$\nU'(2) = 8 = 8\n$$\n\n$$\nU'(2) = 8\n$$\n\nThe arithmetic $12-4=8$ completes the evaluation.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $U'(t)=60(2t+1)^{-1}-4$ once more, multiplying by the inner slope $2$:\n\n$$\nU''(t) = -60(2t+1)^{-2}\\cdot 2\n$$\n\n$$\nU''(t) = -\\dfrac{120}{(2t+1)^{2}}\n$$\n\nmatching the claimed second derivative. The always-negative sign shows diminishing marginal utility.\n\n$$\nU'(t) = 60(2t+1)^{-1}-4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nExtending the first-derivative formula to $t=0$ gives\n\n$$\nU'(0) = \\dfrac{60}{1}-4\n$$\n\n$$\nU'(0) = 56\n$$\n\nmatching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity.\n\n$$\nt = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nSetting $U'(t)=0$ yields\n\n$$\n\\dfrac{60}{2t+1} = 4\n$$, hence $2t+1=15$ and\n\n$$\nt = 7\n$$\n\nnot $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nU'(t) = 0\n$$\n\n$$\nt = \\dfrac{7}{2}\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Study utility combines a logarithm of linear study time with a linear penalty:\n\n$$U(t)=30\\cdot\\ln(2t+1)-4t\\qquad(t>0)$$\n\nThe chain rule on the logarithm produces\n\n$$U'(t)=\\dfrac{60}{2t+1}-4\\qquad U''(t)=-\\dfrac{120}{(2t+1)^{2}}$$\n\nEvaluating at the endpoints of interest gives $U'(0)=56$ and $U'(2)=8$. Setting the first derivative to zero solves $\\dfrac{60}{2t+1}=4$, hence $t=7$, not the incorrect guess $t=\\dfrac{7}{2}$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Studiennutzen mit Logarithmus und linearer Strafe",
+    "context_de_existing": "Der Nutzen ist $U(t)=30\\cdot\\ln(2t+1)-4t$ für Lernstunden $t>0$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$U'(t)=\\dfrac{60}{2t+1}-4$.",
+      "$U'(2)=8$.",
+      "$U''(t)=-\\dfrac{120}{(2t+1)^{2}}$.",
+      "$U'(0)=56$.",
+      "$U'(t)=0$ bei $t=\\dfrac{7}{2}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKettenregel am Logarithmus: $\\dfrac{30}{2t+1}\\cdot 2=\\dfrac{60}{2t+1}$, plus $-4$:\n\n$$\nU'(t)=\\dfrac{60}{2t+1}-4\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$U'(2)=\\dfrac{60}{5}-4=12-4=8$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$\nU''(t)=60\\cdot(-1)(2t+1)^{-2}\\cdot 2=-\\dfrac{120}{(2t+1)^{2}}\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nFormal $U'(0)=\\dfrac{60}{1}-4=56$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$\\dfrac{60}{2t+1}-4=0\\Rightarrow\\dfrac{60}{2t+1}=4\\Rightarrow 2t+1=15\\Rightarrow t=7$$\n\nnicht $t=\\dfrac{7}{2}$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Lernnutzen kombiniert Logarithmus und lineare Strafe:\n\n$$U(t)=30\\cdot\\ln(2t+1)-4t$$\n\n$$U'(t)=\\dfrac{60}{2t+1}-4\\qquad U''(t)=-\\dfrac{120}{(2t+1)^{2}}$$\n\nBei $t=2$ gilt $U'(2)=8$. Die Nullstelle von $U'$ liegt bei $t=7$, nicht bei $t=\\dfrac{7}{2}$."
+  },
+  {
+    "case_id": "MATH 11.29",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Nested fifth power on a quality index",
+    "context_en": "A quality index is $G(x)=(4x+1)^{5}$. Judge every assertion below.",
+    "statements_en": [
+      "$G'(x)=20(4x+1)^{4}$.",
+      "$G'(0)=20$.",
+      "$G''(x)=320(4x+1)^{3}$.",
+      "$G''(0)=320$.",
+      "$G'(1)=20\\cdot 5^{4}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:\n\nName the outer power and the inner expression, then multiply by the inner derivative before simplifying.\n\n$$\nG(x) = (4x+1)^{5}\n$$\n\n$$\n\\text{outer: }w^{5}\\quad\\text{with }w = 4x+1\n$$\n\n$$\n\\dfrac{d}{dx}(4x+1) = 4\n$$\n\n$$\nG'(x) = 5(4x+1)^{4} \\cdot (4)\n$$\n\n$$\nG'(x) = 5(4x+1)^{4}\\cdot 4\n$$\n\n$$\nG'(x) = 20(4x+1)^{4}\n$$\n\nmatching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=0$:\n\n$$\nG'(0) = 20\\cdot 1^{4}\n$$\n\n$$\nG'(0) = 20\n$$\n\nThe computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $G'(x)=20(4x+1)^{4}$ again, again multiplying by the inner slope $4$:\n\n$$\nG''(x) = 20\\cdot 4(4x+1)^{3}\\cdot 4\n$$\n\n$$\nG''(x) = 320(4x+1)^{3}\n$$\n\nmatching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic.\n\n$$\nG'(x) = 20(4x+1)^{4}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=0$ into the second derivative:\n\n$$\nG''(0) = 320\\cdot 1^{3}\n$$\n\n$$\nG''(0) = 320\n$$\n\nThe computed value matches the claim.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nSubstitute $x=1$, using $4\\cdot 1+1=5$:\n\n$$\nG'(1) = 20\\cdot 5^{4}\n$$\n\nexactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same.\n\n$$\nx = 1\n$$\n\n$$\n4\\cdot 1+1 = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The quality index is the nested fifth-power composition\n\n$$G(x)=(4x+1)^{5}$$\n\nThe chain rule multiplies the outer power by the inner slope $4$ and simplifies to\n\n$$G'(x)=20(4x+1)^{4}$$\n\nDifferentiating once more yields\n\n$$G''(x)=320(4x+1)^{3}$$\n\nEvaluating at the origin and at unit input gives the concrete values\n\n$$G'(0)=20\\qquad G''(0)=320\\qquad G'(1)=20\\cdot 5^{4}$$\n\nEach differentiation multiplies by both the falling outer power and the constant inner slope $4$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Verschachtelte fünfte Potenz eines Qualitätsindex",
+    "context_de_existing": "Ein Qualitätsindex ist $G(x)=(4x+1)^{5}$. Beurteile jede Behauptung unten.",
+    "statements_de_existing": [
+      "$G'(x)=20(4x+1)^{4}$.",
+      "$G'(0)=20$.",
+      "$G''(x)=320(4x+1)^{3}$.",
+      "$G''(0)=320$.",
+      "$G'(1)=20\\cdot 5^{4}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKettenregel: $G'(x)=5(4x+1)^{4}\\cdot 4=20(4x+1)^{4}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$G'(0)=20\\cdot 1^{4}=20$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$G''(x)=20\\cdot 4(4x+1)^{3}\\cdot 4=320(4x+1)^{3}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$G''(0)=320\\cdot 1=320$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBei $x=1$ ist $4x+1=5$, also $G'(1)=20\\cdot 5^{4}$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der Qualitätsindex ist die verschachtelte fünfte Potenz\n\n$$G(x)=(4x+1)^{5}$$\n\n$$G'(x)=20(4x+1)^{4}\\qquad G''(x)=320(4x+1)^{3}$$\n\nInsbesondere $G'(0)=20$, $G''(0)=320$ und $G'(1)=20\\cdot 5^{4}$."
+  },
+  {
+    "case_id": "MATH 11.30",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Product of a square and a nested root",
+    "context_en": "A productivity index is $P(x)=x^{2}\\cdot\\sqrt{3x+1}$ for $x>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$P'(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$.",
+      "$P'(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$ after clearing the common denominator.",
+      "$P'(1)=\\dfrac{19}{4}$.",
+      "$P'(0)=0$.",
+      "$P'(1)=\\dfrac{15}{2}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule, differentiating the square and the nested root in turn:\n\nWrite the product as two factors and differentiate each factor before combining.\n\n$$\nP(x) = x^{2} \\cdot \\sqrt{3x+1}\n$$\n\n$$\nu(x) = x^{2}\n$$\n\n$$\nv(x) = \\sqrt{3x+1}\n$$\n\n$$\nP'(x) = u'(x)\\,v(x) + u(x)\\,v'(x)\n$$\n\nOnly after that product-rule expansion do we simplify to the claimed form.\n\n$$\nP'(x) = 2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}\n$$\n\n$$\nP'(x) = 2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}\n$$\n\nmatching the claimed unsimplified formula.\n\nSo the statement is True.",
+      "**B.** → True\n\nClear the two pieces over the common denominator $2\\sqrt{3x+1}$:\n\n$$\nP'(x) = \\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}\n$$\n\n$$\nP'(x) = \\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}\n$$\n\nwhich is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key.\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute $x=1$ into the combined derivative:\n\n$$\nP'(1) = \\dfrac{15+4}{2\\sqrt{4}}\n$$\n\n$$\nP'(1) = \\dfrac{19}{2\\cdot 2}\n$$\n\n$$\nP'(1) = \\dfrac{19}{4}\n$$\n\nThe computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$.\n\nSo the statement is True.",
+      "**D.** → True\n\nEvery term of the combined derivative carries a factor of $x$:\n\n$$\nP'(0) = \\dfrac{0}{2\\sqrt{1}}\n$$\n\n$$\nP'(0) = 0\n$$\n\nso the derivative vanishes at the origin.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe evaluation at $x=1$ already produced\n\n$$\nP'(1) = \\dfrac{19}{4}\n$$\n\nSince $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$.\n\n$$\nP'(1) = \\dfrac{15}{2}\n$$\n\n$$\nx = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The productivity index is the product of a square and a nested square root:\n\n$$P(x)=x^{2}\\cdot\\sqrt{3x+1}\\qquad(x>0)$$\n\nThe product rule first writes the two-term derivative\n\n$$P'(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$\n\nClearing the common denominator then simplifies to the single fraction\n\n$$P'(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$\n\nHence $P'(0)=0$ and $P'(1)=\\dfrac{19}{4}$, which is not equal to $\\dfrac{15}{2}$. The numerator algebra $4x(3x+1)+3x^{2}=15x^{2}+4x$ is the delicate step.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Produkt aus Quadrat und verschachtelter Wurzel",
+    "context_de_existing": "Ein Produktivitätsindex ist $P(x)=x^{2}\\cdot\\sqrt{3x+1}$ für $x>0$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$P'(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$.",
+      "$P'(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$ nach Zusammenfassen über den gemeinsamen Nenner.",
+      "$P'(1)=\\dfrac{19}{4}$.",
+      "$P'(0)=0$.",
+      "$P'(1)=\\dfrac{15}{2}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nProduktregel:\n\n$$\nP'(x)=2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{1}{2}(3x+1)^{-\\frac{1}{2}}\\cdot 3\n$$\n\n$$\nP'(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGemeinsamer Nenner $2\\sqrt{3x+1}$:\n\n$$\nP'(x)=\\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$P'(1)=\\dfrac{15+4}{2\\sqrt{4}}=\\dfrac{19}{4}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$P'(0)=\\dfrac{0}{2\\cdot 1}=0$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer korrekte Wert ist $\\dfrac{19}{4}$, nicht $\\dfrac{15}{2}$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Produktivitätsindex ist das Produkt\n\n$$P(x)=x^{2}\\cdot\\sqrt{3x+1}$$\n\nProduktregel und Zusammenfassen liefern\n\n$$P'(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$\n\nalso $P'(1)=\\dfrac{19}{4}$ und $P'(0)=0$."
+  },
+  {
+    "case_id": "MATH 11.31",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Cubed numerator over a linear denominator",
+    "context_en": "An intensity ratio is $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$ for $x>0$. Which of the following hold?",
+    "statements_en": [
+      "$K'(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$.",
+      "$K'(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$ after factoring.",
+      "$K'(1)=\\dfrac{29}{25}$.",
+      "$K'\\left(\\dfrac{1}{2}\\right)=0$.",
+      "$K'(1)=\\dfrac{7}{5}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes numerator derivative times denominator minus numerator times denominator derivative:\n\n$$\nK(x) = \\dfrac{(2x-1)^{3}}{x+4}\n$$\n\n$$\nu(x) = (2x-1)^{3}\n$$\n\n$$\nv(x) = x+4\n$$\n\n$$\nu'(x) = 6 (2 x - 1)^{2}\n$$\n\n$$\nv'(x) = 1\n$$\n\n$$\nK'(x) = \\dfrac{(6 (2 x - 1)^{2})(x+4) - ((2x-1)^{3})(1)}{(x+4)^{2}}\n$$\n\n$$\nK'(x) = \\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}\n$$\n\nwhich is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator.\n\nSo the statement is True.",
+      "**B.** → True\n\nFactor $(2x-1)^{2}$ from the numerator and simplify the remaining linear factor:\n\n$$\nK'(x) = \\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}\n$$\n\n$$\nK'(x) = \\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}\n$$\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute $x=1$ into the factored derivative:\n\n$$\nK'(1) = \\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}\n$$\n\n$$\nK'(1) = \\dfrac{1\\cdot 29}{25}\n$$\n\n$$\nK'(1) = \\dfrac{29}{25}\n$$\n\nThe computed value matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt $x=\\dfrac{1}{2}$ the factor $2x-1$ vanishes, so the numerator of $K'$ is zero while the denominator $(x+4)^{2}$ stays positive:\n\n$$\nK'\\!\\left(\\dfrac{1}{2}\\right) = 0\n$$\n\nmatching the claim. That is a genuine critical point of $K$.\n\n$$\nK'\\left(\\dfrac{1}{2}\\right) = 0\n$$\n\n$$\nx = \\dfrac{1}{2}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe evaluation at $x=1$ already produced\n\n$$\nK'(1) = \\dfrac{29}{25}\n$$\n\nSince $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nK'(1) = \\dfrac{7}{5}\n$$\n\n$$\nx = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The intensity ratio is the cubed-over-linear quotient\n\n$$K(x)=\\dfrac{(2x-1)^{3}}{x+4}\\qquad(x>0)$$\n\nThe quotient rule first writes\n\n$$K'(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$\n\nFactoring $(2x-1)^{2}$ from the numerator simplifies to\n\n$$K'(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$\n\nHence $K'\\!\\left(\\dfrac{1}{2}\\right)=0$ and $K'(1)=\\dfrac{29}{25}$, not $\\dfrac{7}{5}$. The remaining linear factor $4x+25$ never vanishes for $x>0$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Kubischer Zähler über linearem Nenner",
+    "context_de_existing": "Ein Intensitätsverhältnis ist $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$ für $x>0$. Welche der folgenden Aussagen gelten?",
+    "statements_de_existing": [
+      "$K'(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$.",
+      "$K'(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$ nach Ausklammern.",
+      "$K'(1)=\\dfrac{29}{25}$.",
+      "$K'\\left(\\dfrac{1}{2}\\right)=0$.",
+      "$K'(1)=\\dfrac{7}{5}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nQuotientenregel mit Zähler $(2x-1)^{3}$ (Ableitung $6(2x-1)^{2}$) und Nenner $x+4$ liefert genau die behauptete Form.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nAusklammern von $(2x-1)^{2}$ im Zähler:\n\n$$\n(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)=(2x-1)^{2}(4x+25)\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$K'(1)=\\dfrac{1^{2}\\cdot(4+25)}{5^{2}}=\\dfrac{29}{25}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBei $x=\\dfrac{1}{2}$ ist $2x-1=0$, also $K'\\!\\left(\\dfrac{1}{2}\\right)=0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer korrekte Wert ist $\\dfrac{29}{25}$, nicht $\\dfrac{7}{5}$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Das Intensitätsverhältnis ist der Quotient\n\n$$K(x)=\\dfrac{(2x-1)^{3}}{x+4}$$\n\nQuotientenregel und Ausklammern liefern\n\n$$K'(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$\n\nalso $K'(1)=\\dfrac{29}{25}$ und $K'(1/2)=0$."
+  },
+  {
+    "case_id": "MATH 11.32",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Logarithm of a quadratic argument",
+    "context_en": "A saturation index is $L(x)=\\ln(x^{2}+9)$ for all real $x$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$L'(x)=\\dfrac{2x}{x^{2}+9}$.",
+      "$L'(3)=\\dfrac{1}{3}$.",
+      "$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$.",
+      "$L''(0)=\\dfrac{2}{9}$.",
+      "$L'(0)=1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the composition $L(x)=\\ln(x^{2}+9)$ with the chain rule: the outer logarithm contributes $\\dfrac{1}{x^{2}+9}$ and the inner quadratic contributes $2x$,\n\n$$\nL'(x) = \\dfrac{1}{x^{2}+9}\\cdot 2x\n$$\n\n$$\nL'(x) = \\dfrac{2x}{x^{2}+9}\n$$\n\nmatching the claimed first derivative.\n\n$$\nL(x) = \\ln(x^{2}+9)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=3$ into the first derivative:\n\n$$\nL'(3) = \\dfrac{2\\cdot 3}{9+9}\n$$\n\n$$\nL'(3) = \\dfrac{6}{18}\n$$\n\n$$\nL'(3) = \\dfrac{1}{3}\n$$\n\nThe computed value matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $L'(x)=\\dfrac{2x}{x^{2}+9}$ with the quotient rule:\n\n$$\nL''(x) = \\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}\n$$\n\n$$\nL''(x) = \\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}\n$$\n\nmatching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key.\n\n$$\nL'(x) = \\dfrac{2x}{x^{2}+9}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=0$ into the second derivative:\n\n$$\nL''(0) = \\dfrac{18}{9^{2}}\n$$\n\n$$\nL''(0) = \\dfrac{18}{81}\n$$\n\n$$\nL''(0) = \\dfrac{2}{9}\n$$\n\nThe computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$.\n\nSo the statement is True.",
+      "**E.** → False\n\nSubstitute $x=0$ into the first derivative:\n\n$$\nL'(0) = \\dfrac{0}{9}\n$$\n\n$$\nL'(0) = 0\n$$\n\nwhich is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nL'(0) = 1\n$$\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The saturation index is the natural logarithm of a quadratic argument:\n\n$$L(x)=\\ln(x^{2}+9)$$\n\nThe chain rule produces the first derivative\n\n$$L'(x)=\\dfrac{2x}{x^{2}+9}$$\n\nso $L'(3)=\\dfrac{1}{3}$ while $L'(0)=0$. Differentiating again by the quotient rule and combining over one denominator yields\n\n$$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$\n\nand therefore $L''(0)=\\dfrac{2}{9}$. At the origin the odd factor $2x$ forces $L'=0$, not $1$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Logarithmus eines quadratischen Arguments",
+    "context_de_existing": "Ein Sättigungsindex ist $L(x)=\\ln(x^{2}+9)$ für alle reellen $x$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$L'(x)=\\dfrac{2x}{x^{2}+9}$.",
+      "$L'(3)=\\dfrac{1}{3}$.",
+      "$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$.",
+      "$L''(0)=\\dfrac{2}{9}$.",
+      "$L'(0)=1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKettenregel: $L'(x)=\\dfrac{1}{x^{2}+9}\\cdot 2x=\\dfrac{2x}{x^{2}+9}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$L'(3)=\\dfrac{6}{9+9}=\\dfrac{6}{18}=\\dfrac{1}{3}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nQuotientenregel an $L'$ liefert $L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$L''(0)=\\dfrac{18}{81}=\\dfrac{2}{9}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$L'(0)=\\dfrac{0}{9}=0\\neq 1$$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Sättigungsindex ist der natürliche Logarithmus eines Quadrats:\n\n$$L(x)=\\ln(x^{2}+9)$$\n\n$$L'(x)=\\dfrac{2x}{x^{2}+9}\\qquad L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$\n\nInsbesondere $L'(3)=\\dfrac{1}{3}$, $L''(0)=\\dfrac{2}{9}$ und $L'(0)=0$."
+  },
+  {
+    "case_id": "MATH 11.33",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Three-halves power of a quadratic",
+    "context_en": "A growth score is $M(x)=(x^{2}+1)^{\\frac{3}{2}}$. Judge every assertion below.",
+    "statements_en": [
+      "$M'(x)=3x\\sqrt{x^{2}+1}$.",
+      "$M'(0)=0$.",
+      "$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$.",
+      "$M''(0)=3$.",
+      "$M'(1)=3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate $M(x)=(x^{2}+1)^{\\frac{3}{2}}$ with the chain rule, multiplying by the inner slope $2x$:\n\n$$\nM'(x) = \\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x\n$$\n\n$$\nM'(x) = 3x\\sqrt{x^{2}+1}\n$$\n\nmatching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly.\n\n$$\nM(x) = (x^{2}+1)^{\\frac{3}{2}}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe first derivative carries an explicit factor of $x$:\n\n$$\nM'(0) = 3\\cdot 0\\cdot\\sqrt{1}\n$$\n\n$$\nM'(0) = 0\n$$\n\nso the derivative vanishes at the origin, matching the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $M'(x)=3x(x^{2}+1)^{\\frac{1}{2}}$ with the product rule and clear the common root:\n\n$$\nM''(x) = 3\\sqrt{x^{2}+1}+3x\\cdot\\dfrac{x}{\\sqrt{x^{2}+1}}\n$$\n\n$$\nM''(x) = \\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}\n$$\n\nmatching the claimed second derivative.\n\n$$\nM'(x) = 3x(x^{2}+1)^{\\frac{1}{2}}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=0$ into the second derivative:\n\n$$\nM''(0) = \\dfrac{3}{\\sqrt{1}}\n$$\n\n$$\nM''(0) = 3\n$$\n\nThe computed value matches the claim. At the origin only the constant numerator term $3$ survives.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nSubstitute $x=1$ into the first derivative:\n\n$$\nM'(1) = 3\\cdot 1\\cdot\\sqrt{2}\n$$\n\n$$\nM'(1) = 3\\sqrt{2}\n$$\n\nwhich is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nM'(1) = 3\n$$\n\n$$\nx = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The growth score is the nested three-halves power of a quadratic:\n\n$$M(x)=(x^{2}+1)^{\\frac{3}{2}}$$\n\nThe chain rule simplifies the first derivative to\n\n$$M'(x)=3x\\sqrt{x^{2}+1}$$\n\nso $M'(0)=0$ while $M'(1)=3\\sqrt{2}\\neq 3$. Differentiating again and writing everything over the common radical yields\n\n$$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$\n\nand therefore $M''(0)=3$. Dropping the square-root factor when evaluating at $x=1$ is the main numerical trap.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Potenz drei Halbe einer Quadratik",
+    "context_de_existing": "Ein Wachstumsscore ist $M(x)=(x^{2}+1)^{\\frac{3}{2}}$. Beurteile jede Behauptung unten.",
+    "statements_de_existing": [
+      "$M'(x)=3x\\sqrt{x^{2}+1}$.",
+      "$M'(0)=0$.",
+      "$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$.",
+      "$M''(0)=3$.",
+      "$M'(1)=3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKettenregel: $M'(x)=\\tfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x=3x\\sqrt{x^{2}+1}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$M'(0)=0$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nProduktregel an $M'$ und Zusammenfassen liefert $M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$M''(0)=\\dfrac{3}{1}=3$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$$M'(1)=3\\sqrt{2}\\neq 3$$\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Wachstumsscore ist die verschachtelte Drei-Halbe-Potenz\n\n$$M(x)=(x^{2}+1)^{\\frac{3}{2}}$$\n\n$$M'(x)=3x\\sqrt{x^{2}+1}\\qquad M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$\n\nInsbesondere $M'(0)=0$, $M''(0)=3$ und $M'(1)=3\\sqrt{2}$."
+  },
+  {
+    "case_id": "MATH 11.34",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exponential times a quadratic",
+    "context_en": "A momentum index is $F(x)=e^{3x}\\cdot(x^{2}+1)$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$F'(x)=e^{3x}\\cdot(3x^{2}+2x+3)$.",
+      "$F'(0)=3$.",
+      "$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$.",
+      "$F''(0)=11$.",
+      "$F'(0)=1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe momentum index is the product $F(x)=e^{3x}(x^{2}+1)$. Apply the product rule and factor $e^{3x}$:\n\n$$\nF'(x) = 3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x\n$$\n\n$$\nF'(x) = e^{3x}(3x^{2}+2x+3)\n$$\n\nmatching the claimed formula. The chain-rule factor $3$ on the exponential is essential.\n\n$$\nF'(x) = e^{3x}\\cdot(3x^{2}+2x+3)\n$$\n\n$$\nF(x) = e^{3x}(x^{2}+1)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=0$ into the first derivative:\n\n$$\nF'(0) = e^{0}(0+0+3)\n$$\n\n$$\nF'(0) = 3\n$$\n\nThe computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $F'(x)=e^{3x}(3x^{2}+2x+3)$ again and factor $e^{3x}$. The product rule produces\n\n$$\nF''(x) = 3e^{3x}(3x^{2}+2x+3)+e^{3x}(6x+2)\n$$\n\n$$\nF''(x) = e^{3x}(9x^{2}+12x+11)\n$$\n\nmatching the claimed second derivative.\n\n$$\nF''(x) = e^{3x}\\cdot(9x^{2}+12x+11)\n$$\n\n$$\nF'(x) = e^{3x}(3x^{2}+2x+3)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=0$ into the second derivative:\n\n$$\nF''(0) = e^{0}\\cdot 11\n$$\n\n$$\nF''(0) = 11\n$$\n\nThe computed value matches the claim.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe evaluation at $x=0$ already produced\n\n$$\nF'(0) = e^{0}(0+0+3)\n$$\n\n$$\nF'(0) = 3\n$$\n\nwhich is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nF'(0) = 1\n$$\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The momentum index is the product of an exponential growth factor and a quadratic:\n\n$$F(x)=e^{3x}\\cdot(x^{2}+1)$$\n\nThe product rule, after factoring out $e^{3x}$ at every stage, yields\n\n$$F'(x)=e^{3x}\\cdot(3x^{2}+2x+3)$$\n\nso $F'(0)=3$, not $1$. Differentiating the polynomial factor once more and again factoring $e^{3x}$ gives\n\n$$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$$\n\nand therefore $F''(0)=11$. The constant term $3$ in $F'$ comes from $3\\cdot 1$ in the product rule, not from the bare exponential alone.",
+    "title_de_existing": "Exponentialfunktion mal Quadratik",
+    "context_de_existing": "Ein Momentum-Index ist $F(x)=e^{3x}\\cdot(x^{2}+1)$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$F'(x)=e^{3x}\\cdot(3x^{2}+2x+3)$.",
+      "$F'(0)=3$.",
+      "$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$.",
+      "$F''(0)=11$.",
+      "$F'(0)=1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nProduktregel und Ausklammern von $e^{3x}$:\n\n$$\nF'(x)=3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x=e^{3x}(3x^{2}+2x+3)\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$F'(0)=1\\cdot(0+0+3)=3$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nErneute Produktregel und Ausklammern liefert $F''(x)=e^{3x}(9x^{2}+12x+11)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$F''(0)=11$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer korrekte Wert ist $F'(0)=3$, nicht $1$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Momentum-Index ist das Produkt\n\n$$F(x)=e^{3x}\\cdot(x^{2}+1)$$\n\n$$F'(x)=e^{3x}(3x^{2}+2x+3)\\qquad F''(x)=e^{3x}(9x^{2}+12x+11)$$\n\nInsbesondere $F'(0)=3$ und $F''(0)=11$."
+  },
+  {
+    "case_id": "MATH 11.35",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Square root of a linear ratio",
+    "context_en": "A balance index is $H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}$ for $x>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$.",
+      "$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$.",
+      "$H(x)=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$.",
+      "$H'(x)<0$ for every $x>0$.",
+      "$H'(2)=\\dfrac{9}{70}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRewrite $H(x)$ as a product of powers and differentiate with the product rule. After combining over one denominator one obtains\n\n$$\nH'(x) = \\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}\n$$\n\nThe numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=2$, using $2x+1=5$ and $x+5=7$:\n\n$$\nH'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}\n$$\n\nexactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form.\n\n$$\nx = 2\n$$\n\n$$\n2x+1 = 5\n$$\n\n$$\nx+5 = 7\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nConverting the square root of a quotient into a product of powers gives\n\n$$\nH(x) = \\sqrt{\\dfrac{2x+1}{x+5}}\n$$\n\n$$\nH(x) = (2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}\n$$\n\nwhich is exactly the rewriting named in the claim. That form sets up the product rule.\n\nSo the statement is True.",
+      "**D.** → False\n\nIn the derivative formula the numerator factor $9$ is positive and every remaining factor stays positive for $x>0$, so\n\n$$\nH'(x)>0\n$$\n\nrather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe exact value at $x=2$ is\n\n$$\nH'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}\n$$\n\nwhich is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect.\n\n$$\nH'(2) = \\dfrac{9}{70}\n$$\n\n$$\nx = 2\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Rewrite the balance index as a product of powers:\n\n$$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$\n\nDifferentiating and combining over one positive denominator yields\n\n$$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$\n\nwhich is positive for every $x>0$, so $H$ is increasing rather than decreasing. At $x=2$,\n\n$$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$\n\nwhich is not equal to the simplified fraction $\\dfrac{9}{70}$ — that false reduction ignores the irrational factors.",
+    "title_de_existing": "Quadratwurzel eines linearen Quotienten",
+    "context_de_existing": "Ein Balance-Index ist $H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}$ für $x>0$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$.",
+      "$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$.",
+      "$H(x)=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$.",
+      "$H'(x)<0$ für jedes $x>0$.",
+      "$H'(2)=\\dfrac{9}{70}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nUmschreiben als Potenzprodukt und Differenzieren liefert die behauptete positive Ableitung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nEinsetzen von $x=2$ in die Formel ergibt genau $\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$H(x)=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$ ist die korrekte Umschreibung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDer Zähler $9$ und beide Wurzelfaktoren sind positiv, also $H'(x)>0$ für $x>0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie exakte Form bei $x=2$ ist $\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$, nicht die vereinfachte Behauptung $\\dfrac{9}{70}$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Schreibe den Balance-Index als Potenzprodukt um:\n\n$$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$\n\nDifferenzieren liefert die stets positive Ableitung\n\n$$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$\n\nBei $x=2$ gilt die Wurzel-Form, nicht $\\dfrac{9}{70}$."
+  },
+  {
+    "case_id": "MATH 11.36",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Normalised linear over a root",
+    "context_en": "A normalised score is $N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$.",
+      "$N'(0)=\\dfrac{1}{2}$.",
+      "$N'(2)=\\dfrac{1}{4\\sqrt{2}}$.",
+      "$N'(x)$ changes sign at $x=0$.",
+      "$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate $N(x)=x(x^{2}+4)^{-\\frac{1}{2}}$ with the product rule and simplify. The numerator becomes $(x^{2}+4)-x^{2}=4$, leaving\n\n$$\nN'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}\n$$\n\nmatching the claimed formula.\n\n$$\nN(x) = x(x^{2}+4)^{-\\frac{1}{2}}\n$$\n\n$$\n(x^{2}+4)-x^{2} = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $x=0$, using $4^{\\frac{3}{2}}=8$:\n\n$$\nN'(0) = \\dfrac{4}{8}\n$$\n\n$$\nN'(0) = \\dfrac{1}{2}\n$$\n\nThe computed value matches the claim.\n\n$$\nx = 0\n$$\n\n$$\n4^{\\frac{3}{2}} = 8\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute $x=2$ into the simplified derivative. First $x^{2}+4=8$ and\n\n$$\n8^{\\frac{3}{2}} = (\\sqrt{8})^{3}\n$$\n\n$$\n(\\sqrt{8})^{3} = (2\\sqrt{2})^{3}\n$$\n\n$$\n(2\\sqrt{2})^{3} = 8\\cdot 2\\sqrt{2}\n$$\n\n$$\n8\\cdot 2\\sqrt{2} = 16\\sqrt{2}\n$$\n\nso\n\n$$\nN'(2) = \\dfrac{4}{16\\sqrt{2}}\n$$\n\n$$\nN'(2) = \\dfrac{1}{4\\sqrt{2}}\n$$\n\nThe computed value matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe simplified derivative\n\n$$\nN'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}\n$$\n\nhas a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect.\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nSubstitute $x=1$, using $1+4=5$:\n\n$$\nN'(1) = \\dfrac{4}{5^{\\frac{3}{2}}}\n$$\n\nexactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form.\n\n$$\nx = 1\n$$\n\n$$\n1+4 = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The normalised score is the linear-over-root quotient\n\n$$N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$$\n\nDifferentiating and combining into one fraction yields the always-positive derivative\n\n$$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$\n\nso $N'$ never changes sign. Evaluating at the named points gives\n\n$$N'(0)=\\dfrac{1}{2}\\qquad N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}\\qquad N'(2)=\\dfrac{1}{4\\sqrt{2}}$$\n\nThe numerator $4$ is the constant leftover $(x^{2}+4)-x^{2}$, which never vanishes.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Normierte lineare Funktion über einer Wurzel",
+    "context_de_existing": "Ein normierter Score ist $N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$.",
+      "$N'(0)=\\dfrac{1}{2}$.",
+      "$N'(2)=\\dfrac{1}{4\\sqrt{2}}$.",
+      "$N'(x)$ wechselt bei $x=0$ das Vorzeichen.",
+      "$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nQuotienten- bzw. Produktregel und Zusammenfassen liefern die stets positive Ableitung $N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$N'(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei $x=2$ ist $x^{2}+4=8$ und $8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=16\\sqrt{2}$:\n\n$$\nN'(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}>0$ für alle $x$ — kein Vorzeichenwechsel.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$N'(1)=\\dfrac{4}{(1+4)^{\\frac{3}{2}}}=\\dfrac{4}{5^{\\frac{3}{2}}}$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der normierte Score ist der Linear-über-Wurzel-Quotient\n\n$$N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$$\n\nDie Ableitung ist stets positiv:\n\n$$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$\n\nInsbesondere $N'(0)=\\dfrac{1}{2}$, $N'(2)=\\dfrac{1}{4\\sqrt{2}}$ und $N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$. Kein Vorzeichenwechsel bei $x=0$."
+  },
+  {
+    "case_id": "MATH 11.37",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Cubic cost with an inflection check",
+    "context_en": "Total cost is $C(q)=q^{3}-6q^{2}+20q+50$. For each line, mark TRUE or FALSE.",
+    "statements_en": [
+      "$C'(q)=3q^{2}-12q+20$.",
+      "$C''(q)=6q-12$.",
+      "$C''(2)=0$.",
+      "$C''(1)>0$.",
+      "$C'(2)=8$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate the cubic cost $C(q)=q^{3}-6q^{2}+20q+50$ term by term:\n\n$$\nC'(q) = 3q^{2}-12q+20\n$$\n\nmatching the claimed first derivative. The constant $50$ vanishes under differentiation.\n\n$$\nC(q) = q^{3}-6q^{2}+20q+50\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nDifferentiate the first-derivative polynomial once more:\n\n$$\nC''(q) = 6q-12\n$$\n\nmatching the claimed second derivative. This measures how fast marginal cost itself changes.\n\nSo the statement is True.",
+      "**C.** → True\n\nSubstitute $q=2$ into the second derivative:\n\n$$\nC''(2) = 12-12\n$$\n\n$$\n12 - 12 = 0\n$$\n\n$$\nC''(2) = 0 = 0\n$$\n\n$$\nC''(2) = 0\n$$\n\nso the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic.\n\nSo the statement is True.",
+      "**D.** → False\n\nEvaluate the second derivative at $q=1$:\n\n$$\nC''(1) = 6-12\n$$\n\n$$\n6 - 12 = -6\n$$\n\n$$\nC''(1) = -6 = -6\n$$\n\n$$\nC''(1) = -6<0\n$$\n\nso the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\nSo the statement is False.",
+      "**E.** → True\n\nSubstitute $q=2$ into the first derivative:\n\n$$\nC'(2) = 3\\cdot 4-12\\cdot 2+20\n$$\n\n$$\nC'(2) = 12-24+20\n$$\n\n$$\n12 - 24 = -12\n$$\n\n$$\n-12 + 20 = 8\n$$\n\n$$\nC'(2) = 8 = 8\n$$\n\n$$\nC'(2) = 8\n$$\n\nThe computed value matches the claim. Marginal cost is still positive at the inflection candidate.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Total cost is the cubic schedule\n\n$$C(q)=q^{3}-6q^{2}+20q+50$$\n\nDifferentiating once and twice produces marginal cost and its slope:\n\n$$C'(q)=3q^{2}-12q+20\\qquad C''(q)=6q-12$$\n\nEvaluating at the candidate inflection and at nearby points yields\n\n$$C''(2)=0\\qquad C''(1)=-6<0\\qquad C'(2)=8$$\n\nso the second derivative vanishes at $q=2$ while remaining negative just to its left. That marks a curvature change, not automatically a cost minimum.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Kubische Kosten mit Wendepunktprüfung",
+    "context_de_existing": "Die Gesamtkosten sind $C(q)=q^{3}-6q^{2}+20q+50$. Markiere für jede Zeile Wahr oder Falsch.",
+    "statements_de_existing": [
+      "$C'(q)=3q^{2}-12q+20$.",
+      "$C''(q)=6q-12$.",
+      "$C''(2)=0$.",
+      "$C''(1)>0$.",
+      "$C'(2)=8$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nTermweises Differenzieren: $C'(q)=3q^{2}-12q+20$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$C''(q)=6q-12$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$$C''(2)=12-12=0$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$$C''(1)=6-12=-6<0$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$C'(2)=3\\cdot 4-12\\cdot 2+20=12-24+20=8$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die Gesamtkosten folgen dem kubischen Plan\n\n$$C(q)=q^{3}-6q^{2}+20q+50$$\n\n$$C'(q)=3q^{2}-12q+20\\qquad C''(q)=6q-12$$\n\nInsbesondere $C''(2)=0$, $C''(1)=-6<0$ und $C'(2)=8$."
+  },
+  {
+    "case_id": "MATH 11.38",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Product of two nested powers",
+    "context_en": "A warranty score is $W(x)=(2x+1)^{2}(x-3)^{3}$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$W'(x)=(2x+1)(x-3)^{2}(10x-9)$.",
+      "$W'(3)=0$.",
+      "$W'\\left(\\dfrac{9}{10}\\right)=0$.",
+      "$W'(0)=-81$.",
+      "$W'(x)=4(2x+1)(x-3)^{3}$ alone."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe warranty score is the product $W(x)=(2x+1)^{2}(x-3)^{3}$. After the product rule and factoring $(2x+1)(x-3)^{2}$, the remaining linear factor simplifies to $10x-9$:\n\n$$\nW'(x) = (2x+1)(x-3)^{2}(10x-9)\n$$\n\nmatching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$.\n\n$$\nW(x) = (2x+1)^{2}(x-3)^{3}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe squared factor $(x-3)^{2}$ vanishes at $x=3$, so the whole product is zero:\n\n$$\nW'(3) = 0\n$$\n\nmatching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe linear factor $10x-9$ vanishes at $x=\\dfrac{9}{10}$, so\n\n$$\nW'\\!\\left(\\dfrac{9}{10}\\right) = 0\n$$\n\nas well, matching the claim. That is a second root of the factored derivative.\n\n$$\nW'\\left(\\dfrac{9}{10}\\right) = 0\n$$\n\n$$\nx = \\dfrac{9}{10}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=0$ into the factored derivative:\n\n$$\nW'(0) = (1)(-3)^{2}(-9)\n$$\n\n$$\nW'(0) = 1\\cdot 9\\cdot(-9)\n$$\n\n$$\nW'(0) = -81\n$$\n\nThe computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$.\n\nSo the statement is True.",
+      "**E.** → False\n\nDifferentiating only the first factor as if the second were constant would produce\n\n$$\n4(2x+1)(x-3)^{3}\n$$\n\nwhich misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$.\n\nRephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nW'(x) = 4(2x+1)(x-3)^{3}\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The warranty score is the product of two nested powers\n\n$$W(x)=(2x+1)^{2}(x-3)^{3}$$\n\nThe product rule, after factoring completely, yields\n\n$$W'(x)=(2x+1)(x-3)^{2}(10x-9)$$\n\nThe zeros of this derivative include $x=3$ and $x=\\dfrac{9}{10}$, and evaluating at the origin gives\n\n$$W'(0)=-81$$\n\nKeeping only the first-factor contribution $4(2x+1)(x-3)^{3}$ omits the second product-rule term, so that truncated expression is not the full derivative.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Produkt zweier verschachtelter Potenzen",
+    "context_de_existing": "Ein Garantie-Score ist $W(x)=(2x+1)^{2}(x-3)^{3}$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$W'(x)=(2x+1)(x-3)^{2}(10x-9)$.",
+      "$W'(3)=0$.",
+      "$W'\\left(\\dfrac{9}{10}\\right)=0$.",
+      "$W'(0)=-81$.",
+      "$W'(x)=4(2x+1)(x-3)^{3}$ allein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nProduktregel und vollständiges Ausklammern liefern $W'(x)=(2x+1)(x-3)^{2}(10x-9)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDer Faktor $(x-3)^{2}$ erzwingt $W'(3)=0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDer Faktor $(10x-9)$ erzwingt $W'(9/10)=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$W'(0)=(1)(-3)^{2}(-9)=-81$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDas wäre nur der Beitrag vom ersten Faktor; der zweite Faktor $(x-3)^{3}$ muss ebenfalls differenziert werden.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Der Garantie-Score ist das Produkt zweier verschachtelter Potenzen\n\n$$W(x)=(2x+1)^{2}(x-3)^{3}$$\n\n$$W'(x)=(2x+1)(x-3)^{2}(10x-9)$$\n\nNullstellen bei $x=3$ und $x=\\dfrac{9}{10}$; ferner $W'(0)=-81$."
+  },
+  {
+    "case_id": "MATH 11.39",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Log of a quotient of linear terms",
+    "context_en": "A relative score is $V(x)=\\ln\\left(\\dfrac{3x+1}{x+2}\\right)$ for $x>0$. Judge every assertion below.",
+    "statements_en": [
+      "$V'(x)=\\dfrac{5}{(3x+1)(x+2)}$.",
+      "$V'(0)=\\dfrac{5}{2}$.",
+      "$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$.",
+      "$V'(1)=\\dfrac{5}{12}$.",
+      "$V'(x)=0$ for some $x>0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nRewrite $V(x)=\\ln(3x+1)-\\ln(x+2)$ and differentiate. Combining over one denominator,\n\n$$\nV'(x) = \\dfrac{3}{3x+1}-\\dfrac{1}{x+2}\n$$\n\n$$\nV'(x) = \\dfrac{3(x+2)-(3x+1)}{(3x+1)(x+2)}\n$$\n\n$$\nV'(x) = \\dfrac{5}{(3x+1)(x+2)}\n$$\n\nmatching the claimed first derivative.\n\nSo the statement is True.",
+      "**B.** → True\n\nExtending the formula to $x=0$ gives\n\n$$\nV'(0) = \\dfrac{5}{1\\cdot 2}\n$$\n\n$$\nV'(0) = \\dfrac{5}{2}\n$$\n\nmatching the claim. At $x=0$ both linear factors are positive, so the derivative is defined.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate the quotient form of $V'$ again; after clearing the denominator one obtains\n\n$$\nV''(x) = -\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}\n$$\n\nmatching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator.\n\nSo the statement is True.",
+      "**D.** → True\n\nSubstitute $x=1$ into the first derivative:\n\n$$\nV'(1) = \\dfrac{5}{(3+1)(1+2)}\n$$\n\n$$\nV'(1) = \\dfrac{5}{4\\cdot 3}\n$$\n\n$$\nV'(1) = \\dfrac{5}{12}\n$$\n\nThe computed value matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nFor every $x>0$ the numerator $5$ is positive and both linear factors in the denominator stay positive, so\n\n$$\nV'(x) = \\dfrac{5}{(3x+1)(x+2)}>0\n$$\n\nand never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nV'(x) = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Split the relative score as a difference of logarithms:\n\n$$V(x)=\\ln\\!\\left(\\dfrac{3x+1}{x+2}\\right)=\\ln(3x+1)-\\ln(x+2)$$\n\nDifferentiating and combining over one denominator yields\n\n$$V'(x)=\\dfrac{5}{(3x+1)(x+2)}$$\n\nwhich is positive for every $x>0$, so $V'$ never vanishes on that domain. Evaluating gives\n\n$$V'(0)=\\dfrac{5}{2}\\qquad V'(1)=\\dfrac{5}{12}$$\n\nDifferentiating again produces\n\n$$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$\n\nThe numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>0$.",
+    "title_de_existing": "Logarithmus eines Quotienten linearer Terme",
+    "context_de_existing": "Ein Relativ-Score ist $V(x)=\\ln\\left(\\dfrac{3x+1}{x+2}\\right)$ für $x>0$. Beurteile jede Behauptung unten.",
+    "statements_de_existing": [
+      "$V'(x)=\\dfrac{5}{(3x+1)(x+2)}$.",
+      "$V'(0)=\\dfrac{5}{2}$.",
+      "$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$.",
+      "$V'(1)=\\dfrac{5}{12}$.",
+      "$V'(x)=0$ für ein $x>0$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$$V(x)=\\ln(3x+1)-\\ln(x+2)$$\n\n$$\nV'(x)=\\dfrac{3}{3x+1}-\\dfrac{1}{x+2}=\\dfrac{5}{(3x+1)(x+2)}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$V'(0)=\\dfrac{5}{1\\cdot 2}=\\dfrac{5}{2}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDifferenzieren des Quotienten liefert die behauptete zweite Ableitung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$$V'(1)=\\dfrac{5}{4\\cdot 3}=\\dfrac{5}{12}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer Zähler $5$ ist stets positiv und beide linearen Faktoren für $x>0$ positiv, also $V'(x)>0$ überall — keine Nullstelle.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Spalte den Relativ-Score als Differenz von Logarithmen:\n\n$$V(x)=\\ln(3x+1)-\\ln(x+2)$$\n\n$$V'(x)=\\dfrac{5}{(3x+1)(x+2)}$$\n\npositiv für alle $x>0$, daher keine Nullstelle. Insbesondere $V'(0)=\\dfrac{5}{2}$ und $V'(1)=\\dfrac{5}{12}$."
+  },
+  {
+    "case_id": "MATH 11.40",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Square times a nested logarithm",
+    "context_en": "An engagement score is $Z(t)=t^{2}\\cdot\\ln(2t+1)$ for $t>0$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "$Z'(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$.",
+      "$Z'(1)=2\\ln 3+\\dfrac{2}{3}$.",
+      "$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$.",
+      "$Z'(1)=2\\ln 3+1$.",
+      "$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule, multiplying the logarithm's derivative by the inner slope $2$:\n\nWrite the product as two factors and differentiate each factor before combining.\n\n$$\nZ(t) = t^{2} \\cdot \\ln(2t+1)\n$$\n\n$$\nu(t) = t^{2}\n$$\n\n$$\nv(t) = \\ln{(2 t + 1 )}\n$$\n\n$$\nu'(t) = 2 t\n$$\n\n$$\nv'(t) = \\frac{2}{2 t + 1}\n$$\n\n$$\nZ'(t) = (2 t)\\cdot(\\ln{(2 t + 1 )}) + (t^{2})\\cdot(\\frac{2}{2 t + 1})\n$$\n\nOnly after that product-rule expansion do we simplify to the claimed form.\n\n$$\nZ'(t) = 2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}\n$$\n\n$$\nZ'(t) = 2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\n$$\n\nmatching the claimed formula.\n\nSo the statement is True.",
+      "**B.** → True\n\nSubstitute $t=1$ into the first derivative:\n\n$$\nZ'(1) = 2\\ln(3)+\\dfrac{2}{3}\n$$\n\nThe computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$.\n\n$$\nZ'(1) = 2\\ln 3+\\dfrac{2}{3}\n$$\n\n$$\nt = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nDifferentiate $Z'$ again and rearrange the rational pieces. Differentiating $2t\\ln(2t+1)$ and $\\dfrac{2t^{2}}{2t+1}$ produces\n\n$$\nZ''(t) = 2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}\n$$\n\nmatching the claimed second derivative.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe correct evaluation at $t=1$ is\n\n$$\nZ'(1) = 2\\ln 3+\\dfrac{2}{3}\n$$\n\nReplacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.\n\n$$\nZ'(1) = 2\\ln 3+1\n$$\n\n$$\nt = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nSubstitute $t=1$ into the second-derivative formula:\n\n$$\nZ''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}\n$$\n\n$$\nZ''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}\n$$\n\nexactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$.\n\n$$\nt = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The engagement score is the square-log product\n\n$$Z(t)=t^{2}\\cdot\\ln(2t+1)\\qquad(t>0)$$\n\nThe product rule, keeping the chain-rule factor from the logarithm, yields\n\n$$Z'(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$\n\nso $Z'(1)=2\\ln 3+\\dfrac{2}{3}$, not $2\\ln 3+1$. Differentiating again gives\n\n$$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$\n\nand therefore\n\n$$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$\n\nReplacing $\\dfrac{2}{2t+1}$ by $1$ is the classic evaluation trap at $t=1$.\n\nReuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.",
+    "title_de_existing": "Quadrat mal verschachtelter Logarithmus",
+    "context_de_existing": "Ein Engagement-Score ist $Z(t)=t^{2}\\cdot\\ln(2t+1)$ für $t>0$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "$Z'(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$.",
+      "$Z'(1)=2\\ln 3+\\dfrac{2}{3}$.",
+      "$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$.",
+      "$Z'(1)=2\\ln 3+1$.",
+      "$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nProduktregel mit Kettenregel am Logarithmus:\n\n$$\nZ'(t)=2t\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}=2t\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\n$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$$Z'(1)=2\\ln 3+\\dfrac{2}{3}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNochmaliges Differenzieren und Umordnen liefert die behauptete zweite Ableitung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDer korrekte Wert ist $2\\ln 3+\\dfrac{2}{3}$, nicht $2\\ln 3+1$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEinsetzen von $t=1$ in $Z''$ liefert $2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der Engagement-Score ist das Quadrat-Log-Produkt\n\n$$Z(t)=t^{2}\\cdot\\ln(2t+1)$$\n\n$$Z'(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$\n\nalso $Z'(1)=2\\ln 3+\\dfrac{2}{3}$. Die zweite Ableitung bei $t=1$ ist $2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$."
+  },
+  {
+    "case_id": "MATH 11.41",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Which cost curve is marginal cost?",
+    "context_en": "A bakery reports its total weekly cost $C(Q)$ in euros when it bakes $Q$ loaves, and it also reports the average cost per loaf $A(Q)=\\dfrac{C(Q)}{Q}$. Management wants the approximate extra cost of baking one more loaf near the current output. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The quantity that answers management's question is the derivative $C'(Q)$, not $A(Q)$.",
+      "Differentiating the average-cost function $A(Q)$ is the same thing as computing marginal cost.",
+      "Marginal cost at a named output is the slope of the total-cost curve at that output.",
+      "If $C'(120)=0.80$, then near $120$ loaves each extra loaf adds about $0.80$ euros to total cost.",
+      "Because average cost already divides by $Q$, its value $A(120)$ is automatically equal to marginal cost at $120$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nManagement wants the approximate extra cost of one more loaf, and that local rate of change is exactly the derivative of total cost.\n\nAverage cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers a different question — euros per loaf already baked — so it is not the right object.\n\nThe quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$\n\nIn symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$.\n\n$$\nA(Q) = \\dfrac{C(Q)}{Q}\n$$\n\nSo the statement is True.",
+      "**B.** → False\n\nAverage cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.\n\nMarginal cost is defined as the derivative of total cost:\n\n$$\nA(Q) = \\dfrac{C(Q)}{Q}\n$$\n\n$$\nu(Q) = C(Q)\n$$\n\n$$\nv(Q) = Q\n$$\n\n$$\nu'(Q) = C\n$$\n\n$$\nv'(Q) = 1\n$$\n\n$$\nA'(Q) = \\dfrac{(C)(Q) - (C(Q))(1)}{(Q)^{2}}\n$$\n\n$$\nC^{\\prime}(Q)\n$$\n\nThose two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost\n\nThe quotient rule makes the gap explicit: $A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$, which equals $C^{\\prime}$ only in degenerate cases, not in general.\n\nSo the statement is False.",
+      "**C.** → True\n\nOn a graph of total cost against output, the derivative at a named point is the slope of the tangent there.\n\nEconomists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output\n\nIf the drawn tangent at some $Q_0$ has slope $m$, one reads $C^{\\prime}(Q_0)=m$ directly from the figure — that geometric slope is the definition of marginal cost at $Q_0$.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe linear approximation says a small change in output changes total cost by about the derivative times that change:\n\n$$\nC(Q+\\Delta Q)-C(Q)\n$$\n\n$$\nC^{\\prime}(Q)\\,\\Delta Q\n$$\n\nWith $\\Delta Q=1$ near $Q=120$ and $C^{\\prime}(120)=0.80$,\n\n$$\nC(121)-C(120)\n$$\n\n$$\n0.80\n$$\n\nEach extra loaf near $120$ adds about $0.80$ euros to total cost\n\nThat one-unit reading is an approximation, but it is exactly how economists translate a reported $C^{\\prime}(120)=0.80$ into \"about $0.80$ euros per extra loaf.\".\n\nSo the statement is True.",
+      "**E.** → False\n\nAverage cost already divides by $Q$, but that only produces the per-unit average, not the slope of total cost.\n\nThe two coincide only at special outputs (for instance where average cost is minimized); in general $A(120)$ need not equal $C^{\\prime}(120)$\n\nOnly where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nA^{\\prime} = 0\n$$\n\n$$\nC^{\\prime} = A\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The bakery reports total weekly cost $C(Q)$ and average cost per loaf\n$$A(Q)=\\dfrac{C(Q)}{Q}.$$\nManagement's question — the approximate extra cost of one more loaf — is answered by the derivative of total cost (marginal cost):\n$$C^{\\prime}(Q).$$\nOn a graph of $C$ against $Q$, that derivative is the slope of the tangent. The linear approximation near any named output reads\n$$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q,$$\nso with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of extra cost. In general $A(Q)$ and $C^{\\prime}(Q)$ are different functions; they meet only at special points such as an average-cost minimum.",
+    "title_de_existing": "Welche Kostenkurve sind die Grenzkosten?",
+    "context_de_existing": "Eine Bäckerei meldet ihre wöchentlichen Gesamtkosten $C(Q)$ in Euro bei $Q$ Broten und auch die Stückkosten $A(Q)=\\dfrac{C(Q)}{Q}$. Das Management will die ungefähren Mehrkosten eines weiteren Brotes nahe dem aktuellen Output. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Größe, die die Managementfrage beantwortet, ist die Ableitung $C'(Q)$, nicht $A(Q)$.",
+      "Die Stückkostenfunktion $A(Q)$ abzuleiten ist dasselbe wie Grenzkosten zu berechnen.",
+      "Grenzkosten bei einer genannten Menge sind die Steigung der Gesamtkostenkurve an dieser Menge.",
+      "Wenn $C'(120)=0.80$, dann addiert nahe $120$ Broten jedes weitere Brot etwa $0.80$ Euro zu den Gesamtkosten.",
+      "Weil Stückkosten bereits durch $Q$ teilen, ist ihr Wert $A(120)$ automatisch gleich den Grenzkosten bei $120$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDas Management will die ungefähren Mehrkosten eines weiteren Brotes — diese lokale Änderungsrate ist genau die Ableitung der Gesamtkosten.\n\nStückkosten $A(Q)=\\dfrac{C(Q)}{Q}$ beantworten eine andere Frage (Euro pro bereits gebackenem Brot). Die passende Größe ist daher $C'(Q)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$A'(Q)$ verfolgt, wie sich der Durchschnitt mit dem Output ändert. Grenzkosten sind $C'(Q)$. Im Allgemeinen gilt die Quotientenregel $A'(Q)=\\dfrac{C'(Q)-A(Q)}{Q}$ — das ist nicht identisch mit $C'(Q)$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nAm Graphen der Gesamtkosten gegen den Output ist die Ableitung an einem Punkt die Steigung der Tangente. Ökonomen nennen diese Steigung Grenzkosten.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie lineare Näherung sagt: $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\,\\Delta Q$. Mit $\\Delta Q=1$ nahe $Q=120$ und $C'(120)=0.80$ addiert jedes weitere Brot etwa $0.80$ Euro.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nStückkosten sind der Durchschnitt, nicht die Steigung. $A$ und $C'$ stimmen nur an besonderen Stellen überein (z. B. im Stückkostenminimum).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Die Bäckerei meldet Gesamtkosten $C(Q)$ und Stückkosten $A(Q)=\\dfrac{C(Q)}{Q}$. Die Managementfrage nach den Mehrkosten eines weiteren Brotes beantwortet die Ableitung der Gesamtkosten (Grenzkosten) $C'(Q)$ — am Graphen die Tangentensteigung. Stückkosten und Grenzkosten sind verschiedene Größen."
+  },
+  {
+    "case_id": "MATH 11.42",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Reading C'(50)=3 in words",
+    "context_en": "Let $C(x)$ be the cost, in millions of euros, of removing $x\\%$ of the pollution in a lake. Analysts report that $C'(50)=3$. Judge every assertion below.",
+    "statements_en": [
+      "Near a $50\\%$ cleanup, each extra percentage point of pollution removed costs about $3$ million euros.",
+      "The statement $C'(50)=3$ means that the total cost of removing $50\\%$ of the pollution is $3$ million euros.",
+      "A precise reading uses the linear approximation $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ for small $\\Delta x$.",
+      "Saying \"it costs about $3$ million more to remove $51\\%$ than $50\\%$\" is a rough one-unit reading of the same derivative.",
+      "Because the units are millions of euros per percentage point, $C'(50)$ is a marginal cost with respect to the cleanup percentage."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe derivative $C^{\\prime}(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed.\n\nIts value $3$ therefore means about $3$ million euros per extra percentage point near a $50\\%$ cleanup\n\nUnits confirm the reading: $C$ is in millions of euros and $x$ is a percentage, so $C^{\\prime}(50)=3$ means $3$ million euros per extra percentage point near $x=50$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe total cost of a $50\\%$ cleanup is the function value $C(50)$, a stock of spending.\n\nThe report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage point — not that stock\n\nNothing in the report identifies the stock $C(50)$; a cleanup could already have cost $100$ million while the next percentage point still costs about $3$ million more.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nC^{\\prime}(50) = 3\n$$\n\n$$\nC'(50) = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe precise local meaning of the derivative is the linear approximation for small steps:\n\n$$\nC(50+\\Delta x)-C(50)\n$$\n\n$$\nC^{\\prime}(50)\\,\\Delta x\n$$\n\n$$\nC(50+\\Delta x)-C(50)\n$$\n\n$$\n3\\cdot\\Delta x\n$$\n\nwhich is exactly the reading named in the claim\n\nFor instance $\\Delta x=0.5$ predicts about $1.5$ million euros of extra cost for half a percentage point — the same derivative, scaled by the step size.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**D.** → True\n\nElementary readings often take a one-unit step $\\Delta x=1$ and say the extra cost of going from $50\\%$ to $51\\%$ is about $3$ million euros.\n\nThat is a convenient one-unit version of the same derivative\n\nIt remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\n\\Delta x = 1\n$$\n\nSo the statement is True.",
+      "**E.** → True\n\nHere the independent variable is the cleanup percentage, and the units of $C^{\\prime}(50)$ are millions of euros per percentage point.\n\nThat is precisely a marginal cost with respect to the cleanup percentage\n\nCalling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Cleanup cost $C(x)$ is measured in millions of euros when $x\\%$ of the pollution is removed. Analysts report the derivative\n$$C^{\\prime}(50)=3.$$\nThat number is a rate — millions of euros per percentage point — not the stock $C(50)$. The linear approximation near a $50\\%$ cleanup is\n$$C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$$\nfor small $\\Delta x$. Taking the convenient one-unit step $\\Delta x=1$ says it costs about $3$ million more to remove $51\\%$ than $50\\%$. In economic language, $C^{\\prime}(50)$ is therefore a marginal cost with respect to the cleanup percentage.",
+    "title_de_existing": "C'(50)=3 in Worten lesen",
+    "context_de_existing": "Es sei $C(x)$ die Kosten in Millionen Euro, um $x\\%$ der Verschmutzung in einem See zu entfernen. Analysten melden $C'(50)=3$. Beurteile jede Behauptung unten.",
+    "statements_de_existing": [
+      "Nahe einer $50\\%$-Reinigung kostet jeder zusätzliche Prozentpunkt etwa $3$ Millionen Euro.",
+      "Die Aussage $C'(50)=3$ bedeutet, dass die Gesamtkosten der Entfernung von $50\\%$ der Verschmutzung $3$ Millionen Euro betragen.",
+      "Eine präzise Lesart nutzt die lineare Näherung $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ für kleine $\\Delta x$.",
+      "Zu sagen „es kostet etwa $3$ Millionen mehr, $51\\%$ statt $50\\%$ zu entfernen“ ist eine grobe Einheiten-Lesart derselben Ableitung.",
+      "Weil die Einheit Millionen Euro pro Prozentpunkt ist, ist $C'(50)$ eine Grenzkostengröße bezüglich des Reinigungsprozentsatzes."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'(50)$ ist die momentane Änderungsrate der Reinigungskosten nach dem entfernten Prozentsatz. Der Wert $3$ bedeutet etwa $3$ Millionen Euro pro zusätzlichem Prozentpunkt nahe $50\\%$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Gesamtkosten einer $50\\%$-Reinigung sind der Funktionswert $C(50)$ — ein Bestandsmaß. $C'(50)=3$ ist eine Rate, kein Bestand.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie präzise lokale Bedeutung der Ableitung ist die lineare Näherung $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ für kleine Schritte.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nMit $\\Delta x=1$ liest man: von $50\\%$ auf $51\\%$ kostet es etwa $3$ Millionen Euro mehr — die übliche Einheiten-Übersetzung derselben Ableitung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDie unabhängige Variable ist der Reinigungsprozentsatz; die Einheit von $C'(50)$ ist Millionen Euro pro Prozentpunkt — genau Grenzkosten bezüglich dieses Prozentsatzes.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die Reinigungskosten $C(x)$ werden in Millionen Euro gemessen, wenn $x\\%$ der Verschmutzung entfernt sind. Analysten melden $C'(50)=3$. Das ist eine Rate — Millionen Euro pro Prozentpunkt — nicht der Bestand $C(50)$. Die lineare Näherung nahe $50\\%$ lautet $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$."
+  },
+  {
+    "case_id": "MATH 11.43",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Price, revenue, or profit?",
+    "context_en": "A café sells $Q$ cups per day. The price it can charge is described by a downward-sloping schedule $p(Q)$. Revenue is $R(Q)=Q\\cdot p(Q)$ and daily cost is $C(Q)$. Profit is $P(Q)=R(Q)-C(Q)$. Which of the following hold?",
+    "statements_en": [
+      "Marginal profit is the derivative of $P(Q)$, not the derivative of the price schedule $p(Q)$ alone.",
+      "Differentiating only $p(Q)$ yields marginal revenue.",
+      "Marginal revenue is $R'(Q)$, which generally differs from the posted price $p(Q)$.",
+      "If the café wants the approximate change in profit from selling one more cup, it should look at $P'(Q)$.",
+      "Because profit equals revenue minus cost, one always has $P'(Q)=R'(Q)-C'(Q)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nMarginal profit means the rate of change of profit, so the function to differentiate is\n\n$$\nP(Q) = R(Q)-C(Q)\n$$\n\nThe price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$\n\nIn symbols $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$; nowhere does that identity reduce to $p^{\\prime}(Q)$ alone.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → False\n\nDifferentiating only $p(Q)$ tracks how the posted price moves with quantity.\n\nMarginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also accounts for selling more cups, and $p^{\\prime}(Q)$ is not marginal revenue\n\nEven the sign can disagree: $p^{\\prime}$ is typically negative along demand, while $R^{\\prime}$ can still be positive when price is high and quantity is low.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR(Q) = Q\\cdot p(Q)\n$$\n\nSo the statement is False.",
+      "**C.** → True\n\nRevenue is price times quantity. When quantity rises along a downward-sloping schedule, price usually falls, so the extra euros from one more cup are not simply the current price $p(Q)$.\n\nThat combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $p(Q)$\n\nThe gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\np(Q)-R^{\\prime}(Q) = -Q\\,p^{\\prime}(Q)\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nA small increase in cups changes profit by about $P^{\\prime}(Q)\\,\\Delta Q$.\n\nFor one extra cup near the current output, the relevant number is therefore $P^{\\prime}(Q)$\n\nLooking at $p(Q)$ or even at $R^{\\prime}(Q)$ alone would miss the cost side; profit change needs the full $P^{\\prime}$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**E.** → True\n\nProfit is the difference $P=R-C$. Differentiating term by term where the derivatives exist gives\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)\n$$\n\nat every such output\n\nThat is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP'(Q) = R'(Q)-C'(Q)\n$$\n\n$$\nP = R-C\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The café posts a downward-sloping price schedule $p(Q)$, forms revenue and profit by\n$$R(Q)=Q\\cdot p(Q),\\qquad P(Q)=R(Q)-C(Q),$$\nand keeps daily cost $C(Q)$ separate. The matching derivatives are\n$$R^{\\prime}(Q),\\qquad P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q).$$\nMarginal profit is $P^{\\prime}$, not $p^{\\prime}$. Differentiating $p$ alone only tracks how the posted price moves; it is not marginal revenue. Because price typically falls along a downward schedule when quantity rises, $R^{\\prime}(Q)$ generally differs from the posted price $p(Q)$. A one-cup profit change is governed by $P^{\\prime}(Q)\\,\\Delta Q$.",
+    "title_de_existing": "Preis, Erlös oder Gewinn?",
+    "context_de_existing": "Ein Café verkauft $Q$ Tassen pro Tag. Der Preis folgt einem fallenden Plan $p(Q)$. Der Erlös ist $R(Q)=Q\\cdot p(Q)$ und die Tageskosten $C(Q)$. Der Gewinn ist $P(Q)=R(Q)-C(Q)$. Welche der folgenden Aussagen gelten?",
+    "statements_de_existing": [
+      "Grenzgewinn ist die Ableitung von $P(Q)$, nicht die Ableitung des Preisplans $p(Q)$ allein.",
+      "Nur $p(Q)$ abzuleiten liefert den Grenzerlös.",
+      "Grenzerlös ist $R'(Q)$, der im Allgemeinen vom ausgehängten Preis $p(Q)$ abweicht.",
+      "Wenn das Café die ungefähre Gewinnänderung durch eine weitere Tasse will, soll es $P'(Q)$ betrachten.",
+      "Weil Gewinn gleich Erlös minus Kosten ist, gilt stets $P'(Q)=R'(Q)-C'(Q)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGrenzgewinn ist die Änderungsrate des Gewinns, also differenziert man $P(Q)=R(Q)-C(Q)$. Der Preisplan allein ist kein Gewinn; Grenzgewinn ist $P'(Q)$, nicht $p'(Q)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$p'(Q)$ verfolgt nur, wie der ausgehängte Preis mit der Menge wandert. Grenzerlös ist die Ableitung von $R(Q)=Q\\cdot p(Q)$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nSteigt die Menge entlang eines fallenden Plans, fällt typischerweise der Preis — die zusätzlichen Euro einer weiteren Tasse sind nicht einfach $p(Q)$. Der kombinierte Effekt ist $R'(Q)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nEine kleine Mengenerhöhung ändert den Gewinn um etwa $P'(Q)\\,\\Delta Q$. Für eine zusätzliche Tasse ist die relevante Zahl $P'(Q)$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nAus $P=R-C$ folgt durch termweises Differenzieren (wo die Ableitungen existieren) $P'(Q)=R'(Q)-C'(Q)$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Preis $p(Q)$, Erlös $R(Q)=Q\\cdot p(Q)$, Kosten $C(Q)$ und Gewinn $P(Q)=R(Q)-C(Q)$ sind verschiedene Objekte. Grenzgewinn ist $P'$, Grenzerlös $R'$, und $p'$ allein ist keines von beiden. Stets gilt $P'=R'-C'$."
+  },
+  {
+    "case_id": "MATH 11.44",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "When does an extra unit raise profit?",
+    "context_en": "A firm sells output $Q>0$. Its marginal revenue is $R'(Q)$ and its marginal cost is $C'(Q)$. Profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "If $R'(Q)>C'(Q)$ at some output, then $P'(Q)>0$ there.",
+      "If $R'(Q)>C'(Q)$, a small increase in output raises profit.",
+      "If $R'(Q)<C'(Q)$, a small increase in output raises profit.",
+      "The equality $R'(Q)=C'(Q)$ is exactly the condition $P'(Q)=0$.",
+      "The equality $R'(Q)=C'(Q)$ means that total revenue equals total cost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nMarginal profit is the difference of the two derivatives:\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)\n$$\n\nWhenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\\prime}(Q)>0$ there\n\nNumerically, if $R^{\\prime}=12$ and $C^{\\prime}=9$ then $P^{\\prime}=3>0$; the inequality of slopes forces a positive profit slope.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → True\n\nA positive marginal profit means the profit function is locally increasing.\n\nHence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small increase in output raises profit\n\nSo the firm should expand a little at that output: extra revenue still beats extra cost on the margin.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**C.** → False\n\nIf $R^{\\prime}(Q)<C^{\\prime}(Q)$, then\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)<0\n$$\n\nA negative derivative means profit is locally decreasing, and a small increase in output lowers profit rather than raising it\n\nThe correct conclusion is the opposite expand-or-not advice: when $R^{\\prime}<C^{\\prime}$, cut output a little rather than raise it.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**D.** → True\n\nSetting the profit derivative to zero is\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)\n$$\n\n$$\nP^{\\prime}(Q) = 0\n$$\n\nwhich rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$\n\nThis is the calculus form of the classical MR$=$MC rule for an interior candidate — a condition on slopes, not on totals.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR'(Q) = C'(Q)\n$$\n\n$$\nP'(Q) = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe equality $R^{\\prime}(Q)=C^{\\prime}(Q)$ equates two rates of change — extra revenue and extra cost — not the levels of total revenue and total cost.\n\nTotal revenue equals total cost only when $R(Q)=C(Q)$, which is a different condition\n\nA firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = C^{\\prime}(Q)\n$$\n\n$$\nR(Q) = C(Q)\n$$\n\n$$\nR^{\\prime} = C^{\\prime}\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Profit is the difference of revenue and cost,\n$$P(Q)=R(Q)-C(Q),$$\nso its derivative factors as the marginal comparison\n$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q).$$\nWhenever $R^{\\prime}(Q)>C^{\\prime}(Q)$ one has $P^{\\prime}(Q)>0$, and a small increase in output raises profit. Whenever $R^{\\prime}(Q)<C^{\\prime}(Q)$ one has $P^{\\prime}(Q)<0$, so a small increase lowers profit. The first-order equality\n$$R^{\\prime}(Q)=C^{\\prime}(Q)$$\nis exactly $P^{\\prime}(Q)=0$; it says nothing about whether the levels $R(Q)$ and $C(Q)$ match.",
+    "title_de_existing": "Wann erhöht eine zusätzliche Einheit den Gewinn?",
+    "context_de_existing": "Ein Betrieb produziert $Q$ Einheiten mit Gewinn $P(Q)=R(Q)-C(Q)$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Wenn $P'(Q)>0$, erhöht eine kleine zusätzliche Produktion den Gewinn näherungsweise.",
+      "Wenn $R'(Q)>C'(Q)$, dann ist $P'(Q)>0$.",
+      "Allein $R'(Q)>0$ genügt, um zu schließen, dass eine weitere Einheit den Gewinn erhöht.",
+      "Bei einem inneren Gewinnmaximum muss $P'(Q)=0$ gelten (falls $P'$ existiert).",
+      "Wenn $P'(Q)<0$, senkt eine kleine zusätzliche Produktion den Gewinn näherungsweise."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'(Q)>0$ bedeutet: lokal steigt der Gewinn mit $Q$. Eine kleine zusätzliche Produktion erhöht den Gewinn näherungsweise.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWegen $P'=R'-C'$ ist $R'>C'$ genau $P'>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nPositiver Grenzerlös sagt nichts über die Kosten. Wenn $C'>R'$, fällt der Gewinn trotz $R'>0$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nAn einem inneren Maximum mit existierender Ableitung muss die Steigung verschwinden: $P'(Q)=0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$P'(Q)<0$ bedeutet lokale Abnahme — eine kleine zusätzliche Produktion senkt den Gewinn näherungsweise.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der Gewinn ist $P=R-C$, also $P'=R'-C'$. Das Vorzeichen von $P'$ entscheidet, ob eine kleine Mengenerhöhung den Gewinn hebt oder senkt. Allein $R'>0$ reicht nicht; man braucht den Vergleich mit $C'$."
+  }
+]

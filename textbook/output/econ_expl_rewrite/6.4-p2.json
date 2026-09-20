@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.026",
+    "title": "Internal Versus External Users",
+    "context": "Analyze why managers rely on management accounting information to control costs and choose between options. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a manufacturer have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Employees of a retailer look at accounting information mainly to judge how secure their jobs and future pay are likely to be.",
+      "Owners of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a retailer are internal users who receive management accounting reports every week, in the same way as its own managers."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Employees are typically concerned with how secure their jobs and future pay are likely to be.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as owners on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.027",
+    "title": "Liquidity From the Balance Sheet 27",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=350\nCurrent liabilities=296\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 439 |\n| Machinery | 217 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 182 |\n| Trade receivables | 64 |\n| Cash and cash equivalents | 104 |\n| Total assets | **1102** |\n| **EQUITY** | |\n| Share capital | 212 |\n| Retained earnings | 154 |\n| Total equity | **366** |\n| **LIABILITIES** | |\n| Long-term bank loan | 354 |\n| Bonds payable | 86 |\n| Trade payables | 247 |\n| Bank overdraft | 49 |\n| Total liabilities | **736** |\n| Total equity and liabilities | **1102** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Auditing is the independent checking of accounts for authenticity by an auditing company.",
+      "The current ratio exceeds 1.89.",
+      "Working capital of €54 thousand is positive on this balance sheet.",
+      "The equity ratio is below 38%.",
+      "Inventory make up more than 34.8% of current assets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Auditing is an independent verification of the accounts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Current assets = 350\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 296\n\nCurrent ratio = 350 / 296 ≈ 1.18\n\nThe claim says the ratio exceeds 1.89. We have about 1.18, which does not match that comparison.\n\nThe statement is false.",
+      "Working capital = current assets minus current liabilities.\n\n350 - 296 = 54\n\nThe claim cites 54. We have 54, so the figures line up.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n366 / 1102 ≈ 33.2%\n\nThe claim says the ratio below 38%. We have about 33.2%, which matches that comparison.\n\nThe statement is true.",
+      "Inventory are about 52.0% of current assets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.028",
+    "title": "Frequency of Financial Reporting",
+    "context": "Review why financial accounting statements must follow recognised presentation rules. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Lenders of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Owners of a retailer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Lenders of a retailer are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Managers of a retailer are not allowed to see any accounting information more often than the once-a-year published financial statements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as lenders on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Lenders are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Internal users such as managers can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.029",
+    "title": "Frequency of Management Reporting",
+    "context": "Analyze why management accounting is not bound by the same presentation rules as financial accounting. Evaluate the following economic assertions:",
+    "statements": [
+      "Tax authorities of a service firm are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Tax authorities of a service firm normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a service firm work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a service firm can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a service firm can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Tax authorities sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as tax authorities on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting can reach internal users such as managers far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.030",
+    "title": "Short Balance Sheet Extract 30",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=275\nTotal liabilities=254\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 332 |\n| Inventory | 117 |\n| Cash and cash equivalents | 80 |\n| Total assets | **529** |\n| **EQUITY** | |\n| Share capital | 87 |\n| Retained earnings | 188 |\n| Total equity | **275** |\n| **LIABILITIES** | |\n| Long-term bank loan | 162 |\n| Trade payables | 92 |\n| Total liabilities | **254** |\n| Total equity and liabilities | **529** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.",
+      "The equity ratio is below 28.2%.",
+      "The long-term bank loan of €162 thousand is correctly classified within equity.",
+      "Because the extract above (total assets of €529 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+      "Internal management reports covering the same period as the extract above (total assets of €529 thousand) must follow the identical statutory format shown here."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Management accounting serves internal decision makers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n275 / 529 ≈ 52.0%\n\nThe claim says the ratio below 28.2%. We have about 52.0%, which does not match that comparison.\n\nThe statement is false.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "External users routinely rely on single-year financial statements, often alongside prior-year comparatives.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.031",
+    "title": "Short Depreciation Extract 31",
+    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Annual depreciation\"]]\nAsset A=10429\nAsset B=4600\n[[/CHART]]\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €73,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €28,000 purchase price, 5-year useful life, €5,000 residual value |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.",
+      "Asset A's annual depreciation charge is more than 23.2% higher than Asset B's annual depreciation charge.",
+      "A published version of the extract above, showing the combined asset cost of €101,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "An independent audit of the extract above, including the the combined asset cost of €101,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+      "Because the extract above discloses the combined asset cost of €101,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Land is normally excluded from depreciation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Asset A ≈ €10,429 a year versus Asset B ≈ €4,600 a year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Audits provide reasonable, not absolute, assurance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reports aimed at external parties fall under financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.032",
+    "title": "Flexible Formats in Management Accounting",
+    "context": "Review why financial accounting statements are normally published only once a year. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a service firm work inside the business and can be given management accounting reports designed around their own questions.",
+      "Management accounting reports prepared for managers of a retailer must use exactly the same statutory format as the published financial statements.",
+      "Employees of a retailer are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Employees of a service firm can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Owners of a retailer have no interest in the return earned on the capital they have invested when they look at accounting information."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Employees are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal users such as employees can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Management accounting can reach internal users such as employees far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners are typically concerned with the return earned on the capital they have invested.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.033",
+    "title": "Liquidity From the Balance Sheet 33",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Current assets and current liabilities\"]]\nCurrent assets=422\nCurrent liabilities=275\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 192 |\n| Office equipment | 34 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 245 |\n| Trade receivables | 134 |\n| Cash and cash equivalents | 43 |\n| Total assets | **1191** |\n| **EQUITY** | |\n| Share capital | 282 |\n| Retained earnings | 161 |\n| Total equity | **443** |\n| **LIABILITIES** | |\n| Long-term bank loan | 433 |\n| Bonds payable | 40 |\n| Trade payables | 209 |\n| Bank overdraft | 66 |\n| Total liabilities | **748** |\n| Total equity and liabilities | **1191** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Only external users need accounting information; owners and managers do not.",
+      "The current ratio is below 1.19.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.12 times over.",
+      "The current ratio exceeds 1.36.",
+      "The equity ratio is below 30.9%."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Internal users include owners, managers and employees.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 422\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 275\n\nCurrent ratio = 422 / 275 ≈ 1.53\n\nThe claim says the ratio below 1.19. We have about 1.53, which does not match that comparison.\n\nThe statement is false.",
+      "Acid-test ratio ≈ 0.64.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Current assets = 422\n\nCurrent liabilities gather the short-term claims:\n\nCurrent liabilities = 275\n\nCurrent ratio = 422 / 275 ≈ 1.53\n\nThe claim says the ratio exceeds 1.36. We have about 1.53, which matches that comparison.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n443 / 1191 ≈ 37.2%\n\nThe claim says the ratio below 30.9%. We have about 37.2%, which does not match that comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.034",
+    "title": "Statutory Formats in Financial Accounting",
+    "context": "Analyze why management accounting reports can be produced weekly or monthly for internal users. Evaluate the following economic assertions:",
+    "statements": [
+      "Reports prepared for employees of a service firm can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a service firm look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Lenders of a service firm look at accounting information mainly to judge whether the business will be able to repay what it owes.",
+      "Tax authorities of a service firm look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a service firm look at accounting information mainly to judge the likely return and risk before committing further capital."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners focus on the return earned on the capital they have invested when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Lenders focus on whether the business will be able to repay what it owes when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities focus on how much tax is due on the business's profit when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors focus on the likely return and risk before committing further capital when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.035",
+    "title": "Independent Auditing Explained",
+    "context": "Review the purpose of an independent audit of a business's financial accounting statements. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a retailer have no interest in whether the business will be able to repay what it owes when they look at accounting information.",
+      "Managers of a service firm look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a service firm look at accounting information mainly to judge how secure their jobs and future pay are likely to be.",
+      "Tax authorities of a retailer have no interest in how much tax is due on the business's profit when they look at accounting information.",
+      "Investors of a retailer have no interest in the likely return and risk before committing further capital when they look at accounting information."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Lenders are typically concerned with whether the business will be able to repay what it owes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Managers focus on controlling costs and choosing between courses of action when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities are typically concerned with how much tax is due on the business's profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Investors are typically concerned with the likely return and risk before committing further capital.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.036",
+    "title": "Audit Independence From Management",
+    "context": "Analyze why an auditor must be independent of the managers whose figures are being checked. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Managers of a retailer have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Employees of a retailer have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Owners of a service firm are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a service firm base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Owners sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers are typically concerned with controlling costs and choosing between courses of action.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Employees are typically concerned with how secure their jobs and future pay are likely to be.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Owners are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Owners typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.037",
+    "title": "A True and Fair View",
+    "context": "Review how auditing gives external users confidence in published financial statements. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a service firm are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Lenders of a service firm base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a service firm are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Management accounting reports prepared for managers of a service firm must use exactly the same statutory format as the published financial statements.",
+      "Owners of a construction contractor normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Lenders typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal users such as managers can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Financial accounting statements reach external users such as owners on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.038",
+    "title": "Assurance for External Users",
+    "context": "Analyze why management accounting reports are not normally subject to the same audit as financial accounting statements. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a service firm are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Management accounting reports prepared for employees of a service firm must use exactly the same statutory format as the published financial statements.",
+      "Lenders of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a service firm have no interest in the return earned on the capital they have invested when they look at accounting information.",
+      "Lenders of a service firm have no interest in whether the business will be able to repay what it owes when they look at accounting information."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Internal users such as employees can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Lenders sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners are typically concerned with the return earned on the capital they have invested.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Lenders are typically concerned with whether the business will be able to repay what it owes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.039",
+    "title": "Unaudited Internal Reports",
+    "context": "Review why external users generally cannot see the detailed internal reports prepared for managers. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a construction contractor normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Tax authorities of a construction contractor are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Tax authorities of a service firm have no interest in how much tax is due on the business's profit when they look at accounting information.",
+      "Managers of a construction contractor work inside the business and can be given management accounting reports designed around their own questions.",
+      "Managers of a construction contractor can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Financial accounting statements reach external users such as lenders on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tax authorities are typically concerned with how much tax is due on the business's profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Managers are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting can reach internal users such as managers far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.040",
+    "title": "Short Balance Sheet Extract 40",
+    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n[[CHART type=\"bar\" title=\"Equity and liabilities\"]]\nTotal equity=182\nTotal liabilities=228\n[[/CHART]]\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 231 |\n| Inventory | 93 |\n| Cash and cash equivalents | 86 |\n| Total assets | **410** |\n| **EQUITY** | |\n| Share capital | 88 |\n| Retained earnings | 94 |\n| Total equity | **182** |\n| **LIABILITIES** | |\n| Long-term bank loan | 139 |\n| Trade payables | 89 |\n| Total liabilities | **228** |\n| Total equity and liabilities | **410** |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.",
+      "Inventory of €93 thousand is correctly classified as a current asset.",
+      "A published version of the extract above, showing total assets of €410 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+      "The equity ratio is below 33.1%.",
+      "The long-term bank loan of €139 thousand is correctly classified within equity."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Financial accounting serves external as well as internal users.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory is always current.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting reports are prepared for external users such as lenders and shareholders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Equity ratio = total equity / total assets.\n\n182 / 410 ≈ 44.4%\n\nThe claim says the ratio below 33.1%. We have about 44.4%, which does not match that comparison.\n\nThe statement is false.",
+      "A loan is a liability, never equity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.041",
+    "title": "Earnings Per Share From Reported Figures 41",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=37\nFebruary | Price=36\nMarch | Price=34\nApril | Price=32\nMay | Price=31\nJune | Price=30\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=72000\nFebruary | Volume=36000\nMarch | Volume=66000\nApril | Volume=33000\nMay | Volume=78000\nJune | Volume=79000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 37 | 72,000 |\n| February | 36 | 36,000 |\n| March | 34 | 66,000 |\n| April | 32 | 33,000 |\n| May | 31 | 78,000 |\n| June | 30 | 79,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 261 |\n| Shares outstanding | 620,000 |\n| Total shares traded (six months) | 364,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation's cash reserves.",
+      "The closing share price rose by more than 17.6% from first to last month.",
+      "Market capitalisation at the last month exceeds €14 million.",
+      "Total shares traded over six months exceed 35.9% of shares outstanding.",
+      "Peak monthly share turnover exceeds 60,891 shares."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Secondary-market price rises do not raise new company cash.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price change ≈ -18.9%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €18.6 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 58.7% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 79,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.042",
+    "title": "Shared Transactions, Different Purposes",
+    "context": "Analyze why financial accounting and management accounting can draw on the same underlying transactions. Evaluate the following economic assertions:",
+    "statements": [
+      "Reports prepared for managers of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Investors of a service firm have no interest in the likely return and risk before committing further capital when they look at accounting information.",
+      "Managers of a service firm have no interest in controlling costs and choosing between courses of action when they look at accounting information.",
+      "Employees of a service firm have no interest in how secure their jobs and future pay are likely to be when they look at accounting information.",
+      "Owners of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors are typically concerned with the likely return and risk before committing further capital.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Managers are typically concerned with controlling costs and choosing between courses of action.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Employees are typically concerned with how secure their jobs and future pay are likely to be.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Owners are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.043",
+    "title": "Recognised Rules for Comparability",
+    "context": "Review why recognised presentation rules help external users compare different businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Employees of a construction contractor work inside the business and can be given management accounting reports designed around their own questions.",
+      "Employees of a construction contractor can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for employees of a construction contractor can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Owners of a construction contractor look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Lenders of a construction contractor look at accounting information mainly to judge whether the business will be able to repay what it owes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Employees are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting can reach internal users such as employees far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners focus on the return earned on the capital they have invested when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Lenders focus on whether the business will be able to repay what it owes when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.044",
+    "title": "Earnings Per Share From Reported Figures 44",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=17\nFebruary | Price=15\nMarch | Price=13\nApril | Price=12\nMay | Price=11\nJune | Price=10\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=34000\nFebruary | Volume=31000\nMarch | Volume=34000\nApril | Volume=39000\nMay | Volume=64000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 17 | 34,000 |\n| February | 15 | 31,000 |\n| March | 13 | 34,000 |\n| April | 12 | 39,000 |\n| May | 11 | 64,000 |\n| June | 10 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 259 |\n| Shares outstanding | 647,000 |\n| Total shares traded (six months) | 222,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 19.1% from first to last month.",
+      "Market capitalisation rose by more than 11.1% over the period.",
+      "Peak monthly share turnover exceeds 64,491 shares.",
+      "Operating result is below €199 thousand.",
+      "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation's cash reserves."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Price change ≈ -41.2%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €11.0m → €6.5m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 64,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 259.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Secondary-market price rises do not raise new company cash.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.045",
+    "title": "Share Price and Market Capitalisation 45",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=20\nMarch | Price=20\nApril | Price=19\nMay | Price=19\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=27000\nFebruary | Volume=64000\nMarch | Volume=25000\nApril | Volume=27000\nMay | Volume=73000\nJune | Volume=36000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 27,000 |\n| February | 20 | 64,000 |\n| March | 20 | 25,000 |\n| April | 19 | 27,000 |\n| May | 19 | 73,000 |\n| June | 24 | 36,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 306 |\n| Shares outstanding | 855,000 |\n| Total shares traded (six months) | 252,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "High inventory turnover indicates that goods sell well and do not remain in stock for a long time.",
+      "Market capitalisation at the last month exceeds €18.3 million.",
+      "Highest closing price is more than 24.6% above the lowest.",
+      "Peak monthly share turnover exceeds 70,230 shares.",
+      "Shares outstanding equal 855,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Fast inventory turnover signals healthy stock movement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €20.5 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €19-€24. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 73,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shares outstanding = 855,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.046",
+    "title": "Owners and Investors as Separate Users",
+    "context": "Analyze why internal reports can be laid out however best suits the decision being made. Evaluate the following economic assertions:",
+    "statements": [
+      "Owners of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Tax authorities of a construction contractor look at accounting information mainly to judge how much tax is due on the business's profit.",
+      "Investors of a construction contractor look at accounting information mainly to judge the likely return and risk before committing further capital.",
+      "Managers of a construction contractor look at accounting information mainly to judge controlling costs and choosing between courses of action.",
+      "Employees of a construction contractor look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Owners typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Tax authorities focus on how much tax is due on the business's profit when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Investors focus on the likely return and risk before committing further capital when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers focus on controlling costs and choosing between courses of action when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employees focus on how secure their jobs and future pay are likely to be when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.047",
+    "title": "Annual Statements Versus Monthly Reports",
+    "context": "Review why owners and investors are often treated as separate but related user groups. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a construction contractor are internal users who receive management accounting reports every week, in the same way as its own managers.",
+      "Owners of a hospitality group are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Owners of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Lenders of a construction contractor base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.",
+      "Managers of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Lenders are external users who rely on annual financial accounting, not weekly internal management reports.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Owners sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Financial accounting statements reach external users such as owners on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Lenders typically rely on published financial accounting statements, not informal internal notes.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal users such as managers can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.048",
+    "title": "Share Price and Market Capitalisation 48",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=21\nFebruary | Price=21\nMarch | Price=21\nApril | Price=20\nMay | Price=18\nJune | Price=17\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=57000\nFebruary | Volume=95000\nMarch | Volume=62000\nApril | Volume=43000\nMay | Volume=41000\nJune | Volume=50000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 21 | 57,000 |\n| February | 21 | 95,000 |\n| March | 21 | 62,000 |\n| April | 20 | 43,000 |\n| May | 18 | 41,000 |\n| June | 17 | 50,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 300 |\n| Shares outstanding | 716,000 |\n| Total shares traded (six months) | 348,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 21.9% from first to last month.",
+      "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not.",
+      "Market capitalisation at the last month exceeds €10.2 million.",
+      "Market capitalisation rose by more than 30.9% over the period.",
+      "Peak monthly share turnover exceeds 99,894 shares."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Price change ≈ -19.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "New share capital arises at issue, not in aftermarket trades.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €12.2 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, €15.0m → €12.2m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 95,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.049",
+    "title": "Listed Company Performance Charts 49",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=19\nMarch | Price=18\nApril | Price=19\nMay | Price=19\nJune | Price=23\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=75000\nMarch | Volume=27000\nApril | Volume=38000\nMay | Volume=84000\nJune | Volume=29000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 40,000 |\n| February | 19 | 75,000 |\n| March | 18 | 27,000 |\n| April | 19 | 38,000 |\n| May | 19 | 84,000 |\n| June | 23 | 29,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 194 |\n| Shares outstanding | 602,000 |\n| Total shares traded (six months) | 293,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Market capitalisation rose by more than 18.4% over the period.",
+      "Working capital should be positive, meaning current assets should be higher than current liabilities.",
+      "The closing share price rose by more than 10.6% from first to last month.",
+      "Highest closing price is more than 39.3% above the lowest.",
+      "Market capitalisation at the last month exceeds €10.9 million."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Apply the case evidence: €12.0m → €13.8m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Positive working capital supports day-to-day payment capacity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 15.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €18-€23. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market capitalisation ≈ €13.8 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.050",
+    "title": "Earnings Per Share From Reported Figures 50",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=30\nFebruary | Price=30\nMarch | Price=31\nApril | Price=32\nMay | Price=31\nJune | Price=36\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=50000\nFebruary | Volume=63000\nMarch | Volume=34000\nApril | Volume=29000\nMay | Volume=34000\nJune | Volume=61000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 30 | 50,000 |\n| February | 30 | 63,000 |\n| March | 31 | 34,000 |\n| April | 32 | 29,000 |\n| May | 31 | 34,000 |\n| June | 36 | 61,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 240 |\n| Shares outstanding | 684,000 |\n| Total shares traded (six months) | 271,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 26.8% from first to last month.",
+      "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend.",
+      "Total shares traded over six months exceed 33.8% of shares outstanding.",
+      "Market capitalisation rose by more than 31.9% over the period.",
+      "Highest closing price is more than 44.2% above the lowest."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Apply the case evidence: Price change ≈ 20.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Common shares vote; preferred shares usually emphasise dividend priority.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 39.6% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €20.5m → €24.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €30-€36. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

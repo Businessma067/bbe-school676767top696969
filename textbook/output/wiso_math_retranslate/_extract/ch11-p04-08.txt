@@ -1,0 +1,144 @@
+CASE MATH 11.73
+ANSWER [true, true, false, true, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Before the tax one has $R^{\prime}=14$ and $C^{\prime}=10$, so
+$$P^{\prime}=14-10=4>0$$
+and a small expansion raises profit. The per-unit tax replaces cost by
+$$\widetilde{C}(Q)=C(Q)+5Q,$$
+hence
+$$\widetilde{C}^{\prime}(Q)=C^{\prime}(Q)+5=15,$$
+while revenue — and therefore $R^{\prime}=14$ — is unchanged. After the tax,
+$$\widetilde{P}^{\prime}=14-15=-1<0,$$
+so a small expansion no longer raises profit. The extra-cost side must now differentiate $\widetilde{C}$, not the old $C$. Before: $P^{\prime}=14-10=4>0$. After: $\widetilde{C}^{\prime}=15$, so $\widetilde{P}^{\prime}=14-15=-1<0$, with $R^{\prime}$ unchanged.
+
+=== A ===
+**A.** → True
+
+Before the tax,
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-C^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 14-10
+$$
+
+$$
+14 - 10 = 4
+$$
+
+$$
+P^{\prime}(Q) = 4 = 4
+$$
+
+$$
+P^{\prime}(Q) = 4>0
+$$
+
+A positive derivative means a small expansion raises profit
+
+Before the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+The new cost is $\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
+
+$$
+\widetilde{C}^{\prime}(Q) = C^{\prime}(Q)+5
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 10+5
+$$
+
+$$
+10 + 5 = 15
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 15 = 15
+$$
+
+$$
+\widetilde{C}^{\prime}(Q) = 15
+$$
+
+After the tax the relevant marginal cost is $15$
+
+A per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== C ===
+**C.** → False
+
+After the tax, compare the unchanged marginal revenue with the new marginal cost:
+
+$$
+P^{\prime}(Q) = R^{\prime}(Q)-\widetilde{C}^{\prime}(Q)
+$$
+
+$$
+P^{\prime}(Q) = 14-15
+$$
+
+$$
+14 - 15 = -1
+$$
+
+$$
+P^{\prime}(Q) = -1 = -1
+$$
+
+$$
+P^{\prime}(Q) = -1<0
+$$
+
+A negative derivative means a small expansion lowers profit rather than raising it
+
+After the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== D ===
+**D.** → True
+
+The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
+
+After the tax that schedule is $\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated
+
+Using the old $C^{\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== E ===
+**E.** → True
+
+The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
+
+$$
+R^{\prime}(Q) = 14
+$$
+
+still after the tax
+
+Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+

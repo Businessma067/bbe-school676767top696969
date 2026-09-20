@@ -1,0 +1,204 @@
+CASE MATH 12.29
+ANSWER [false, false, false, false, false]
+TITLE_DE Das Firmenevent
+CONTEXT_DE 12 Mitarbeitende einschließlich der Geschäftsführung nehmen am Retreat teil. Geburtstage unabhängig und gleichverteilt auf 365 Tage.
+STATEMENTS_DE:
+  A. Die Wahrscheinlichkeit, dass mindestens zwei der 12 denselben Geburtstag haben, ist größer als 20%.
+  B. Die Wahrscheinlichkeit, dass mindestens einer der anderen 11 denselben Geburtstag wie die Geschäftsführung hat, ist größer als 5%.
+  C. Die Wahrscheinlichkeit, dass alle 12 verschiedene Geburtstage haben, ist kleiner als 80%.
+  D. Bei 20 Teilnehmenden wäre die Kollisionswahrscheinlichkeit größer als 50%.
+  E. Die Kollisionswahrscheinlichkeit unter den 12 ist mehr als 6-mal so groß wie die Vergleichswahrscheinlichkeit der Aussage.
+
+=== EXPL 0 A ===
+**A.** → False
+
+This statement asks for the probability that at least two of the 12 employees share the same birthday. We can find this by taking the complement of the probability that all 12 employees have different birthdays.
+
+From the solution overview, we calculated the probability that all 12 employees have different birthdays as:
+
+$$
+P(\text{all 12 different}) \approx 0.8330
+$$
+
+The probability that at least two of the 12 employees share a birthday is therefore:
+
+$$
+P(\text{at least two share}) = 1 - P(\text{all 12 different})
+$$
+
+$$
+P(\text{at least two share}) = 1 - 0.8330
+$$
+
+$$
+1 - 0.833 = 0.167
+$$
+
+$$
+P(\text{at least two share}) = 0.1670
+$$
+
+Expressed as a percentage, this is $16.70\%$. The claim states that this probability is greater than $20\%$.
+
+So the statement is False.
+
+
+=== EXPL 1 B ===
+**B.** → False
+
+This statement concerns the probability that at least one of the other 11 employees shares a birthday with the CEO. It is simpler to calculate the complement: the probability that none of the other 11 employees shares a birthday with the CEO. This means each of the 11 employees must have a birthday on a day different from the CEO's birthday.
+
+Given there are $365$ days, the probability that a single employee does not share a birthday with the CEO is $\frac{364}{365}$. Since the birthdays are independent, the probability that all 11 other employees do not share a birthday with the CEO is:
+
+$$
+P(\text{none share with CEO}) = \left(\frac{364}{365}\right)^{11}
+$$
+
+$$
+P(\text{none share with CEO}) \approx 0.9703
+$$
+
+Then the probability that at least one of the other 11 employees shares a birthday with the CEO is the complement of this event:
+
+$$
+P(\text{at least one share with CEO}) = 1 - P(\text{none share with CEO})
+$$
+
+$$
+P(\text{at least one share with CEO}) = 1 - 0.9703
+$$
+
+$$
+1 - 0.9703 = 0.0297
+$$
+
+$$
+P(\text{at least one share with CEO}) = 0.0297
+$$
+
+Expressed as a percentage, this is $2.97\%$. The claim states this probability is greater than $5\%$.
+
+So the statement is False.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This statement asks for the probability that all 12 employees have different birthdays. This is a direct application of the formula for the probability of all birthdays being distinct, which was calculated in the solution overview.
+
+For $n$ employees and $N$ possible birthdays, the probability that all $n$ employees have different birthdays is:
+
+$$
+P(\text{all } n \text{ different}) = \frac{N \cdot (N-1) \cdot \ldots \cdot (N-n+1)}{N^n}
+$$
+
+Substituting $N=365$ and $n=12$, we find:
+
+$$
+P(\text{all 12 different}) = \frac{365 \cdot 364 \cdot \ldots \cdot 354}{365^{12}}
+$$
+
+$$
+P(\text{all 12 different}) \approx 0.8330
+$$
+
+Expressed as a percentage, this is $83.30\%$. The claim states this probability is less than $80\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → False
+
+This statement considers a hypothetical scenario with $n=20$ employees and asks for the probability that at least two of them share a birthday. We again use the complement rule: $P(\text{at least two share}) = 1 - P(\text{all different})$.
+
+First, we calculate the probability that all 20 employees have different birthdays, using $N=365$ and $n=20$:
+
+$$
+P(\text{all 20 different}) = \frac{P(365, 20)}{365^{20}}
+$$
+
+$$
+P(\text{all 20 different}) = \frac{365 \cdot 364 \cdot \ldots \cdot (365 - 20 + 1)}{365^{20}}
+$$
+
+$$
+P(\text{all 20 different}) = \frac{365 \cdot 364 \cdot \ldots \cdot 346}{365^{20}}
+$$
+
+$$
+P(\text{all 20 different}) \approx 0.5886
+$$
+
+Now, we find the probability that at least two of the 20 employees share a birthday:
+
+$$
+P(\text{at least two of 20 share}) = 1 - P(\text{all 20 different})
+$$
+
+$$
+P(\text{at least two of 20 share}) = 1 - 0.5886
+$$
+
+$$
+1 - 0.5886 = 0.4114
+$$
+
+$$
+P(\text{at least two of 20 share}) = 0.4114
+$$
+
+Expressed as a percentage, this is $41.14\%$. The claim states this probability would be greater than $50\%$.
+
+So the statement is False.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This statement compares two probabilities: the probability that at least two of the 12 employees share a birthday, and the probability that at least one of the other 11 employees shares a birthday with the CEO. Let $P_A$ be the first probability and $P_B$ be the second probability.
+
+From the solution overview and statement A, we found $P_A$ to be:
+
+$$
+P_A = P(\text{at least two of 12 share})
+$$
+
+$$
+\approx 0.1670
+$$
+
+From statement B, we found $P_B$ to be:
+
+$$
+P_B = P(\text{at least one share with CEO})
+$$
+
+$$
+\approx 0.0297
+$$
+
+The claim asks if $P_A$ is more than $6$ times $P_B$. We calculate $6$ times $P_B$:
+
+$$
+6 \times P_B = 6 \times 0.0297
+$$
+
+$$
+6 \times 0.0297 = 0.1782
+$$
+
+$$
+6 \times P_B
+$$
+
+Now we compare $P_A$ with $6 \times P_B$:
+
+$$
+0.1670 \text{ versus } 0.1782
+$$
+
+Since $0.1670 \not> 0.1782$, the probability that at least two of the 12 employees share a birthday is not more than $6$ times the probability that at least one of the other 11 employees shares a birthday with the CEO.
+
+So the statement is False.
+

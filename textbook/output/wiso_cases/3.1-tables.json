@@ -1,0 +1,140 @@
+[
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.33",
+    "title": "Tab. 1: Schwellen der Unternehmensgröße",
+    "context": "Tab. 1 des Lehrbuchs kategorisiert Unternehmen nach Größe (EU-Empfehlung). Umsatz und Bilanzsumme stehen alternativ nebeneinander.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Kleinstunternehmen hat höchstens 9 Mitarbeiterinnen und Mitarbeiter.",
+      "Kleine Unternehmen liegen bei Umsatz oder Bilanzsumme bei höchstens 10 Millionen Euro.",
+      "Mittlere Unternehmen dürfen bis 249 Beschäftigte haben, beim Umsatz bis 50 Millionen Euro und bei der Bilanzsumme bis 43 Millionen Euro.",
+      "Große Unternehmen beginnen laut Tabelle bereits ab 50 Beschäftigten.",
+      "Die Bilanzsummenschwelle der mittleren Unternehmen ist mit 43 Millionen Euro niedriger als ihre Umsatzschwelle von 50 Millionen Euro."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Die erste Zeile setzt die Beschäftigtengrenze bei neun. Bis 9 heißt: zehn Beschäftigte sprengen bereits die Kleinstkategorie. Die Tabelle koppelt diese Personenzahl an höchstens 2 Millionen Euro Umsatz oder Bilanzsumme. Wer 49 in die erste Zeile liest, greift die nächste Kategorie. Die Aussage trifft genau Tab. 1.\n\nDie Aussage ist wahr.",
+      "Zehn Millionen Euro ist die obere Grenze der zweiten Zeile, und zwar sowohl beim Umsatz als auch bei der Bilanzsumme. Die Tabelle schreibt Bis zu 10 Mio. Euro in beide Geldspalten. 10 Millionen gehören noch zu den kleinen Unternehmen; über 10 Millionen bei gleicher Beschäftigtenzahl würde die nächste Stufe prüfen. Die 2-Millionen-Grenze gilt nur für Kleinstunternehmen.\n\nDie Aussage ist wahr.",
+      "Drei Schwellen stehen in derselben Zeile. Mitarbeiter: Bis 249. Umsatz: Bis zu 50 Mio. Euro. Bilanzsumme: Bis zu 43 Mio. Euro. Die 43 Millionen sind keine Tippfehler gegenüber den 50 Millionen Umsatz; Tab. 1 trennt die beiden Geldgrößen bewusst. 250 Beschäftigte oder mehr als 50 Millionen Umsatz bzw. mehr als 43 Millionen Bilanzsumme führen in die Großkategorie.\n\nDie Aussage ist wahr.",
+      "Große Unternehmen beginnen in der Personenspalte bei 250, nicht bei 50. Ab 250 steht in der letzten Zeile. 50 Beschäftigte liegen noch in der kleinen Kategorie (Bis 49 wäre die Obergrenze der Kleinen, also 50 Beschäftigte sind bereits mittlere, sofern die Geldschwellen passen). Die Behauptung setzt die Umsatzzahl 50 Millionen mit 50 Köpfen gleich und liest die falsche Spalte.\n\nDie Aussage ist falsch.",
+      "Vergleich in der Mittelzeile: Umsatz Bis zu 50 Mio. Euro, Bilanzsumme Bis zu 43 Mio. Euro. 43 ist kleiner als 50. Deshalb kann ein Unternehmen beim Umsatz noch mittel sein und bei der Bilanzsumme schon die Großschwelle reißen, wenn die Bilanzsumme über 43 Millionen liegt. Die Tabelle hält diese Asymmetrie fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.34",
+    "title": "Tab. 1: Kleinst, klein, mittel an Zahlen",
+    "context": "Dieselbe Größentabelle. Drei Betriebe werden den Zeilen zugeordnet.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Betrieb mit 8 Beschäftigten, 1,5 Millionen Euro Umsatz und 1,2 Millionen Euro Bilanzsumme ist ein Kleinstunternehmen.",
+      "Ein Betrieb mit 40 Beschäftigten und 9 Millionen Euro Umsatz fällt in die Kategorie kleine Unternehmen, sofern die Bilanzsumme 10 Millionen Euro nicht übersteigt.",
+      "Ein Betrieb mit 200 Beschäftigten und 40 Millionen Euro Umsatz ist nach der Personenzahl noch ein mittleres Unternehmen.",
+      "Ein Betrieb mit 9 Beschäftigten und 12 Millionen Euro Umsatz bleibt Kleinstunternehmen, weil die Personenzahl unter 10 liegt.",
+      "Ein Betrieb mit 249 Beschäftigten, 50 Millionen Euro Umsatz und 43 Millionen Euro Bilanzsumme liegt noch in der mittleren Kategorie."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Alle drei Kleinstgrenzen sind eingehalten. 8 liegt unter Bis 9. 1,5 Millionen liegt unter Bis zu 2 Mio. Euro. 1,2 Millionen ebenfalls. Die Tabelle verlangt die Kombination, nicht nur die Köpfe. Dieser Betrieb sitzt in der ersten Zeile.\n\nDie Aussage ist wahr.",
+      "Vierzig Köpfe liegen über 9 und unter 49, gehören also nicht mehr zu Kleinst, sondern zu klein. 9 Millionen Euro Umsatz liegen unter 10 Millionen. Die Bilanzsumme darf ebenfalls höchstens 10 Millionen betragen. Dann ist die zweite Zeile erfüllt. 40 Beschäftigte allein ohne Geldprüfung würden nicht reichen; hier sind beide genannten Größen klein.\n\nDie Aussage ist wahr.",
+      "Zweihundert Beschäftigte liegen unter Bis 249. 40 Millionen Euro Umsatz liegen unter Bis zu 50 Mio. Euro. Damit ist die Mittelzeile nach Köpfen und Umsatz noch nicht gesprengt. Die Bilanzsumme müsste zusätzlich Bis zu 43 Mio. Euro bleiben; die Aussage prüft ausdrücklich die Personenzahl und bleibt dabei korrekt.\n\nDie Aussage ist wahr.",
+      "Köpfe allein halten niemanden in der Kleinstzeile, wenn der Umsatz die 2-Millionen-Grenze reißt. 12 Millionen Euro Umsatz liegen über 2 Millionen und sogar über 10 Millionen. Je nach übrigen Größen rutscht der Betrieb mindestens aus der Kleinstkategorie, oft in die mittlere oder große. Die Tabelle koppelt Mitarbeiterzahl und Geldgrößen; eine einzige unterschrittene Personenschwelle rettet die Kleinstzeile nicht.\n\nDie Aussage ist falsch.",
+      "Die Mittelzeile ist an ihren Obergrenzen ausgeschöpft, aber nicht überschritten. Bis 249, Bis zu 50 Mio. Euro, Bis zu 43 Mio. Euro: alle drei Werte stehen genau auf der Grenze und gehören noch dazu. Erst 250 Köpfe, über 50 Millionen Umsatz oder über 43 Millionen Bilanzsumme öffnen die Großzeile.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.35",
+    "title": "Tab. 1: FunBike-Bilanzsumme und KMU",
+    "context": "Tab. 1 und die FunBike-Bilanzsumme aus dem Rechnungswesen-Kapitel. FunBike weist 9 638 250 Euro Bilanzsumme aus. Das Buch ordnet ein Unternehmen knapp unter 10 Millionen Euro Bilanzsumme noch den Kleinunternehmen zu.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "9 638 250 Euro Bilanzsumme liegen unter 10 Millionen Euro und damit in der Geldspalte der kleinen Unternehmen.",
+      "9 638 250 Euro Bilanzsumme liegen über 2 Millionen Euro, also nicht mehr in der Kleinstzeile der Bilanzsumme.",
+      "Weil 9 638 250 unter 43 Millionen liegt, ist FunBike nach Tab. 1 automatisch ein Großunternehmen.",
+      "Rund 99 Prozent der Unternehmen in der EU sind KMU, also Kleinst-, kleine und mittlere Unternehmen.",
+      "KMU im Sinne der Tabelle umfassen Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen, nicht die Zeile Große Unternehmen."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "Zehn Millionen sind die Obergrenze der kleinen Bilanzsumme. 9 638 250 < 10 000 000. Die Differenz beträgt 361 750 Euro. Das Buch spricht von einer Bilanzsumme knapp unter 10 Millionen Euro und zählt das Unternehmen gerade noch zu den Kleinunternehmen. Die Tabellenzeile Kleine Unternehmen trägt genau diese 10-Millionen-Grenze.\n\nDie Aussage ist wahr.",
+      "Zwei Millionen Euro begrenzen die Kleinst-Bilanzsumme. 9 638 250 > 2 000 000. FunBike liegt klar über der ersten Geldzeile. Ohne die übrigen Kriterien zu prüfen, scheidet die Kleinstkategorie nach der Bilanzsumme aus. Die nächste passende Geldzeile ist Bis zu 10 Mio. Euro.\n\nDie Aussage ist wahr.",
+      "Unter 43 Millionen spricht gegen die Großzeile, nicht dafür. Große Unternehmen brauchen Über 43 Mio. Euro Bilanzsumme oder Über 50 Mio. Euro Umsatz oder Ab 250 Beschäftigte. 9 638 250 liegt weit unter 43 Millionen. Automatisch groß wäre die Umkehrung der Tabelle. FunBike bleibt nach der Bilanzsumme im kleinen Band.\n\nDie Aussage ist falsch.",
+      "Der Abschnitt koppelt die Tabelle an die EU-Empfehlung: Rund 99 % der Unternehmen in der EU sind KMU. KMU bündelt die ersten drei Zeilen, nicht die Großzeile. Die 99 Prozent beschreiben die Anzahl der Unternehmen, nicht den Umsatzanteil.\n\nDie Aussage ist wahr.",
+      "Der Begriff KMU ist im Text definiert als Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen (englisch SME/MSME). Die letzte Tabellenzeile Große Unternehmen steht außerhalb dieses Bündels. Wer Großunternehmen unter KMU mischt, sprengt die Definition.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.36",
+    "title": "Tab. 1 und österreichische Anteile",
+    "context": "Tab. 1 plus die Zahlen, Daten, Fakten zur österreichischen Unternehmenslandschaft.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Auch in Österreich dominieren KMU mit rund 99 Prozent Anteil an der Anzahl der Unternehmen.",
+      "Der Großteil der KMU sind Kleinstunternehmen mit weniger als zehn Mitarbeiterinnen und Mitarbeitern, rund 90 Prozent der Gesamtzahl.",
+      "Ungefähr 85 Prozent der Unternehmen haben weniger als eine Million Euro Umsatz.",
+      "Rund zwei Drittel der Erwerbstätigen arbeiten in KMU.",
+      "Etwas mehr als ein Drittel der Umsatzerlöse wird von rund 1.900 Großunternehmen erwirtschaftet."
+    ],
+    "answer_key": [true, true, true, true, true],
+    "tactical_explanations": [
+      "Der Kasten Zahlen, Daten, Fakten wiederholt die EU-Relation für Österreich: rund 99 Prozent Anteil an der Anzahl. Anzahl ist nicht Umsatz. Die Tabelle erklärt, wer in diese 99 Prozent fällt: die ersten drei Zeilen. Die Aussage trifft den Text.\n\nDie Aussage ist wahr.",
+      "Weniger als zehn Beschäftigte ist die Kleinstzeile (Bis 9). Rund 90 Prozent der Gesamtzahl von Unternehmen sind solche Kleinstbetriebe. Das ist der Großteil der KMU und zugleich der Großteil aller Unternehmen. 90 Prozent der Anzahl ist nicht 90 Prozent des Umsatzes.\n\nDie Aussage ist wahr.",
+      "Eine Million Euro Umsatz liegt unter der Kleinst-Umsatzgrenze von 2 Millionen, ist aber eine eigene Faktenzahl: Ungefähr 85 Prozent der Unternehmen haben weniger als eine Million Euro Umsatz. Die Tabelle selbst nennt 2 / 10 / 50 Millionen; die 85 Prozent kommen aus dem Faktenkasten und gehören zur Größenordnung sehr kleiner Umsätze.\n\nDie Aussage ist wahr.",
+      "KMU als Arbeitgeber: Rund zwei Drittel der Erwerbstätigen arbeiten in KMU. Das ist Beschäftigtenanteil, nicht Unternehmensanzahl. Die 99 Prozent zählen Betriebe, die zwei Drittel zählen Köpfe. Beide Sätze stehen nebeneinander und widersprechen sich nicht, weil viele Kleinstbetriebe wenige Personen beschäftigen.\n\nDie Aussage ist wahr.",
+      "Umsatzkonzentration bei Großen: Etwas mehr als ein Drittel der Umsatzerlöse der österreichischen gewerblichen Wirtschaft kommt von rund 1.900 Großunternehmen. Die Großzeile der Tabelle (Ab 250, über 50 Millionen Umsatz oder über 43 Millionen Bilanzsumme) ist zahlenmäßig klein und umsatzstark. Knapp unter zwei Drittel der Umsätze erarbeiten die KMU.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.37",
+    "title": "Tab. 1: Umsatz oder Bilanzsumme",
+    "context": "In Tab. 1 stehen Umsatz je Jahr und Bilanzsumme als Alternative (oder).\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | oder Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Überschrift der Tabelle nennt Umsatz je Jahr oder Bilanzsumme, nicht Umsatz und Bilanzsumme als zwingend gleichzeitig zu erfüllende Geldgrenze derselben Höhe.",
+      "Bei mittleren Unternehmen fallen die beiden Geldschwellen auseinander: 50 Millionen Euro Umsatz gegen 43 Millionen Euro Bilanzsumme.",
+      "Wer 250 Beschäftigte hat, ist unabhängig vom Umsatz ein Großunternehmen.",
+      "Ein Unternehmen mit 30 Beschäftigten und 3 Millionen Euro Umsatz muss nach der Personenzahl ein Großunternehmen sein.",
+      "Kleine und Kleinstunternehmen haben in der Tabelle jeweils dieselbe Eurogrenze für Umsatz und Bilanzsumme (2 Millionen bzw. 10 Millionen)."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Die Buchüberschrift lautet Umsatz / Jahr oder Bilanzsumme. Das oder trennt zwei Geldmaßstäbe. Man misst nicht, dass beide Spalten dieselbe Zahl gleichzeitig reißen müssen, bevor eine Kategorie greift. Die Personenspalte steht zusätzlich. Die Aussage trifft die Tabellenlogik.\n\nDie Aussage ist wahr.",
+      "Nur die Mittelzeile bricht die Gleichheit der Geldspalten. Kleinst: 2 und 2. Klein: 10 und 10. Mittel: 50 gegen 43. Groß: über 50 gegen über 43. Wer 50 Millionen Bilanzsumme als Mittelgrenze liest, erfindet eine Zahl, die Tab. 1 nicht hat.\n\nDie Aussage ist wahr.",
+      "Ab 250 steht ohne Wenn in der Großzeile der Personenspalte. Die Geldspalten gelten daneben; schon die Beschäftigtenzahl 250 öffnet die letzte Kategorie. 249 wäre noch mittel, 250 groß.\n\nDie Aussage ist wahr.",
+      "Dreißig Beschäftigte liegen in Bis 49, also bei den kleinen Unternehmen, sofern die Geldgrößen passen. 3 Millionen Euro Umsatz liegen über 2 Millionen (nicht mehr Kleinst) und unter 10 Millionen (noch klein). Groß wäre Ab 250 oder über 50 Millionen Umsatz bzw. über 43 Millionen Bilanzsumme. 30 Köpfe und 3 Millionen erfüllen nichts davon.\n\nDie Aussage ist falsch.",
+      "Erste Zeile: 2 Millionen in beiden Geldspalten. Zweite Zeile: 10 Millionen in beiden Geldspalten. Erst ab Mittel differieren 50 und 43. Die Aussage beschreibt genau die beiden oberen KMU-Zeilen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.38",
+    "title": "Tab. 1: falsche Schwellen erkennen",
+    "context": "Lesen Sie die Schwellen wörtlich. Bewerten Sie die folgenden Aussagen:\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Kleinstunternehmen dürfen laut Tabelle bis 49 Beschäftigte haben.",
+      "Die Umsatzgrenze kleiner Unternehmen liegt bei 10 Millionen Euro, nicht bei 50 Millionen Euro.",
+      "Mittlere Unternehmen enden bei 249 Beschäftigten, große beginnen bei 250.",
+      "Die Bilanzsumme großer Unternehmen liegt über 43 Millionen Euro.",
+      "Ein Unternehmen mit 10 Beschäftigten ist nach der Personenspalte kein Kleinstunternehmen mehr."
+    ],
+    "answer_key": [false, true, true, true, true],
+    "tactical_explanations": [
+      "Bis 49 ist die Personenspalte der kleinen Unternehmen. Kleinst endet bei Bis 9. Wer 49 in die erste Zeile schiebt, überspringt eine ganze Kategorie. 10 bis 49 Beschäftigte sind klein, nicht Kleinst.\n\nDie Aussage ist falsch.",
+      "Zweite Zeile, Umsatzspalte: Bis zu 10 Mio. Euro. 50 Millionen sind die Umsatzgrenze der mittleren Unternehmen. Die Verwechslung 10 gegen 50 verschiebt ein Unternehmen um eine Klasse. Die Aussage hält die 10-Millionen-Grenze fest.\n\nDie Aussage ist wahr.",
+      "249 und 250 liegen direkt aneinander. Bis 249 bleibt mittel, Ab 250 ist groß. Es gibt in der Tabelle keine Lücke und keine Überlappung in der Personenspalte. Ein Kopf entscheidet die letzte Stufe, sobald 250 erreicht ist.\n\nDie Aussage ist wahr.",
+      "Letzte Zeile, Bilanzsumme: Über 43 Mio. Euro. 43 Millionen selbst gehören noch zur Mittelzeile (Bis zu 43). Erst darüber greift groß. Die Aussage nennt die Großschwelle korrekt.\n\nDie Aussage ist wahr.",
+      "Kleinst: Bis 9. Zehn Beschäftigte liegen über 9 und fallen mindestens in die kleine Kategorie. Die Personenspalte allein schließt Kleinst aus. Umsatz und Bilanzsumme entscheiden dann zwischen klein, mittel und groß, ändern aber nichts daran, dass 10 nicht mehr Bis 9 ist.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  }
+]

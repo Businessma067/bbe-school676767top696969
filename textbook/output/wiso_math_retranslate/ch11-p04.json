@@ -1,0 +1,1042 @@
+[
+  {
+    "case_id": "MATH 11.65",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Happy-hour revenue after twenty drinks",
+    "context_en": "A riverside bar runs a happy-hour promotion for the first $20$ drinks of the evening: each of those drinks brings in a steady $15$ euros, so revenue is $R(Q)=15Q$ while $0\\le Q\\le 20$. After the twentieth drink the promotion ends and later drinks add only $8$ euros each, which the manager writes as $R(Q)=300+8(Q-20)$ for $Q>20$. Mixing and serving costs rise at a constant $C'(Q)=10$ euros per drink all evening. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "For $Q<20$, marginal revenue is $15$.",
+      "After happy hour ends, each extra drink adds only $8$ euros of revenue, which is already below the constant marginal cost $10$.",
+      "At $Q=12$, a small extra drink raises profit.",
+      "At $Q=25$, post-promotion revenue still beats cost at the margin.",
+      "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives\n\n$$\nR^{\\prime}(Q) = 15\n$$\n\n$$\n\\text{for }Q<20\n$$\n\nFor $Q<20$, marginal revenue is $15$\n\nUntil the twentieth drink, revenue is a ray of slope $15$, so each extra happy-hour drink adds $15$ euros of revenue.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → True\n\nAfter the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so\n\n$$\nR^{\\prime}(Q) = 8\n$$\n\n$$\n\\text{for }Q>20\n$$\n\nComparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives\n\n$$\n8<10\n$$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin\n\nPost-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then\n\n$$\nP^{\\prime}(12) = R^{\\prime}(12)-C^{\\prime}(12)\n$$\n\n$$\nP^{\\prime}(12) = 15-10\n$$\n\n$$\n15 - 10 = 5\n$$\n\n$$\nP^{\\prime}(12) = 5 = 5\n$$\n\n$$\nP^{\\prime}(12) = 5>0\n$$\n\nA positive derivative means a small extra drink raises profit at $Q=12$\n\nHappy-hour marginal revenue still beats mixing cost, so a small extra drink at $Q=12$ raises profit.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**D.** → False\n\nAt $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then\n\n$$\nP^{\\prime}(25) = 8-10\n$$\n\n$$\n8 - 10 = -2\n$$\n\n$$\nP^{\\prime}(25) = -2 = -2\n$$\n\n$$\nP^{\\prime}(25) = -2<0\n$$\n\nPost-promotion revenue no longer beats cost at the margin\n\nAt $Q=25$ one should not expand: the post-promotion slope $8$ is already below cost $10$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.\n\nAt $Q=25$ the manager's post-promotion rule already gives\n\n$$\nR^{\\prime}(25) = 8\n$$, not $15$, and the extra drink does not bring in $15$ euros\n\nPiecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Happy-hour revenue is $R(Q)=15Q$ for $Q\\le 20$, so\n$$R^{\\prime}(Q)=15\\qquad(Q<20).$$\nAfter the promotion, $R(Q)=300+8(Q-20)$ gives\n$$R^{\\prime}(Q)=8\\qquad(Q>20).$$\nMixing cost is constant at $C^{\\prime}(Q)=10$. Comparing pieces:\n$$P^{\\prime}(12)=15-10=5>0,$$\nwhile at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$. Happy-hour $R^{\\prime}=15$ vs post-promotion $R^{\\prime}=8$ against $C^{\\prime}=10$: expand at $12$, not at $25$.",
+    "title_de_existing": "Happy-Hour-Umsatz nach zwanzig Getränken",
+    "context_de_existing": "Eine Flussbar führt eine Happy-Hour-Aktion für die ersten $20$ Drinks des Abends: jeder dieser Drinks bringt stetig $15$ Euro, also $R(Q)=15Q$ für $0\\le Q\\le 20$. Nach dem zwanzigsten Drink endet die Aktion und weitere Drinks bringen nur noch $8$ Euro, geschrieben $R(Q)=300+8(Q-20)$ für $Q>20$. Die Grenzkosten sind konstant $C'(Q)=10$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Für $Q<20$ beträgt der Grenzerlös $15$.",
+      "Nach Ende der Happy Hour addiert jeder weitere Drink nur $8$ Euro Erlös, bereits unter den konstanten Grenzkosten.",
+      "Bei $Q=12$ erhöht ein weiterer Drink den Gewinn.",
+      "Bei $Q=25$ schlägt der Post-Promo-Erlös die Kosten am Rand noch.",
+      "Weil die ersten $20$ Drinks je $15$ Euro bringen, bringt der Extra-Drink bei $Q=25$ ebenfalls $15$ Euro."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nIm linearen Segment $R=15Q$ ist $R'=15$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nFür $Q>20$ ist $R'=8<10=C'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei $Q=12$: $P'=15-10=5>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nBei $Q=25$: $P'=8-10=-2<0$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nNach der Aktion ist $R'=8$, nicht $15$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Happy Hour: $R'=15$; danach $R'=8$. Bei $C'=10$ lohnt Expansion unter $20$, oberhalb nicht."
+  },
+  {
+    "case_id": "MATH 11.66",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "What an expansion recommendation already contains",
+    "context_en": "A consultant visits a factory and says only this sentence: at the current output $Q$, a small increase in production would raise profit. Separately, the factory's cost office reports that marginal cost is $C'(Q)=14$ euros. No revenue formula is supplied. Judge every assertion below.",
+    "statements_en": [
+      "The advice already means $P'(Q)>0$.",
+      "The advice already means $R'(Q)>14$.",
+      "The advice tells you the current profit level $P(Q)$.",
+      "The advice tells you the average cost $\\dfrac{C(Q)}{Q}$.",
+      "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSaying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\\prime}(Q)>0$\n\n\"Would raise profit\" is ordinary language for a positive profit slope at the current output.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**B.** → True\n\nBecause $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the cost office reports $C^{\\prime}(Q)=14$, the advice $P^{\\prime}(Q)>0$ rearranges to\n\n$$\nR^{\\prime}(Q)>C^{\\prime}(Q) = 14\n$$\n\nThe advice already means $R^{\\prime}(Q)>14$\n\nRearranging $P^{\\prime}=R^{\\prime}-14>0$ forces the lower bound $R^{\\prime}>14$ on the missing marginal revenue.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP^{\\prime} = R^{\\prime}-C^{\\prime}\n$$\n\n$$\nC^{\\prime}(Q) = 14\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe advice speaks only about the sign of the slope $P^{\\prime}(Q)$.\n\nIt does not reveal the current profit level $P(Q)$\n\nA factory can be losing money overall while still having $P^{\\prime}>0$, or earning a fortune while $P^{\\prime}>0$ — the advice is silent about $P(Q)$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**D.** → False\n\nNothing in the consultant's sentence or the cost-office report produces the quotient $\\dfrac{C(Q)}{Q}$.\n\nThe advice does not tell you average cost\n\nAverage cost would need the stock $C(Q)$ as well as $Q$; neither the consultant nor the reported $C^{\\prime}=14$ supplies $C(Q)$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → True\n\nThe first adviser's claim already forces $R^{\\prime}(Q)>14$.\n\nA second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other\n\nClaiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = 11\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The consultant's sentence — a small increase in production would raise profit — means\n$$P^{\\prime}(Q)>0.$$\nWith the cost office's report $C^{\\prime}(Q)=14$ and the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that is equivalent to the bound\n$$R^{\\prime}(Q)>14.$$\nThe advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\\dfrac{C(Q)}{Q}$. A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate $R^{\\prime}>14$ and therefore contradict the first adviser. \"Raise profit\" means $P^{\\prime}>0$, hence $R^{\\prime}>14$ given $C^{\\prime}=14$. No information about $P$ or $C/Q$ is included.",
+    "title_de_existing": "Was eine Expansionsempfehlung schon enthält",
+    "context_de_existing": "Ein Berater besucht eine Fabrik und sagt nur diesen Satz: Am aktuellen Output $Q$ würde eine kleine Produktionserhöhung den Gewinn steigern. Separat meldet die Kostenstelle, dass die Grenzkosten $C'(Q)=14$ Euro betragen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Rat bedeutet bereits $P'(Q)>0$.",
+      "Der Rat bedeutet bereits $R'(Q)>14$.",
+      "Der Rat nennt das aktuelle Gewinnniveau $P(Q)$.",
+      "Der Rat nennt die Stückkosten $\\dfrac{C(Q)}{Q}$.",
+      "Wenn ein zweiter Berater am selben $Q$ behauptete $R'(Q)=11$, widerspräche das dem ersten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n„Kleine Erhöhung steigert Gewinn“ = $P'>0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nMit $C'=14$ und $P'>0$ folgt $R'>14$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEs geht um die Steigung, nicht den Bestand $P$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nStückkosten werden nicht genannt.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$R'=11<14$ würde $P'<0$ bedeuten — Widerspruch.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Expansionsrat = $P'>0$. Mit $C'=14$ folgt $R'>14$. Weder $P$ noch $A$ werden genannt."
+  },
+  {
+    "case_id": "MATH 11.67",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Two plants, one market price for the extra unit",
+    "context_en": "A manufacturer can produce one more small unit either in Plant 1 or in Plant 2 and will sell that unit in the same market either way. Plant 1 is currently cheaper at the margin: $C_1'(Q_1)=9$ euros. Plant 2 is more expensive at the margin: $C_2'(Q_2)=13$ euros. Whichever plant makes the unit, the extra sale adds $R'=11$ euros of revenue. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Producing the extra unit in Plant 1 raises the firm's profit.",
+      "Plant 2 should produce the extra unit because both plants sell into the same market.",
+      "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
+      "Because both plants belong to one firm, the two marginal costs must be equal.",
+      "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nProducing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and about $C_1^{\\prime}=9$ euros of cost:\n\n$$\nP^{\\prime}\\text{ via Plant 1} = 11-9\n$$\n\n$$\n11 - 9 = 2\n$$\n\n$$\nP^{\\prime}\\text{ via Plant 1} = 2 = 2\n$$\n\n$$\nP^{\\prime}\\text{ via Plant 1} = 2>0\n$$\n\nThat choice raises the firm's profit\n\nPlant 1 passes the expand-or-not test: extra revenue $11$ beats Plant 1's extra cost $9$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → False\n\nBoth plants sell into the same market, so both face the same extra revenue $R'=11$.\n\nPlant 2's marginal cost is $13>11$, so producing there would lower profit:\n\n$$\n11-13 = -2<0\n$$\n\nSelling into the same market does not make Plant 2 the right plant\n\nSame market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ and should not take the unit.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR' = 11\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → True\n\nWith the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.\n\nPlant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for that extra unit\n\nWith a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nC_1^{\\prime} = 9<13 = C_2^{\\prime}\n$$\n\nSo the statement is True.",
+      "**D.** → False\n\nBelonging to one firm does not force the two plants' current marginal costs to be equal.\n\nHere they are explicitly different, $9$ versus $13$\n\nIn the short run, plants can — and here do — operate with different marginal costs; equality is an optimality target, not an identity.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → True\n\nIf instead $R'=8$, then both plant-level comparisons fail:\n\n$$\n8-9 = -1<0\n$$\n\n$$\n8-13 = -5<0\n$$\n\nNeither plant should produce the extra unit\n\nWhen $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR' = 8\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The extra sale adds $R'=11$ euros whichever plant produces it. Plant 1 has $C_1^{\\prime}=9$, so\n$$P_1^{\\prime}=11-9=2>0$$\nand producing there raises profit. Plant 2 has $C_2^{\\prime}=13$, so\n$$P_2^{\\prime}=11-13=-2<0$$\nand producing there lowers profit. The firm should prefer the lower-marginal-cost plant for that extra unit. Belonging to one firm does not force $C_1^{\\prime}=C_2^{\\prime}$. If instead $R'=8$, then both comparisons fail:\n$$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 2 ($C'=13$) does not. If $R'=8$, neither plant should produce the unit.",
+    "title_de_existing": "Zwei Werke, ein Marktpreis für die Zusatzmenge",
+    "context_de_existing": "Ein Hersteller kann eine weitere kleine Einheit entweder in Werk 1 oder in Werk 2 produzieren und verkauft sie in jedem Fall auf demselben Markt. Werk 1 ist am Rand derzeit günstiger: $C_1'(Q_1)=9$ Euro. Werk 2 ist teurer: $C_2'(Q_2)=13$ Euro. Der Mehrerlös der Extra-Einheit ist $R'=11$ Euro. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Extra-Einheit in Werk 1 zu produzieren erhöht den Firmengewinn.",
+      "Werk 2 soll die Extra-Einheit produzieren, weil beide Werke in denselben Markt verkaufen.",
+      "Die Firma soll für diese Extra-Einheit Werk 1 bevorzugen, weil Werk 1 die niedrigeren Grenzkosten hat.",
+      "Weil beide Werke zu einer Firma gehören, müssen die beiden Grenzkosten gleich sein.",
+      "Wäre der Mehrerlös der Extra-Einheit stattdessen $R'=8$, sollte keines der Werke sie produzieren."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P_1'=11-9=2>0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nBei Werk 2: $11-13=-2<0$ — nicht produzieren.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNiedrigere Grenzkosten bei gleichem $R'$ bedeuten höheren Grenzgewinn.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGemeinsame Firma erzwingt keine gleichen Grenzkosten an verschiedenen Outputs.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDann $8-9<0$ und $8-13<0$ — beide negativ.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bei $R'=11$ lohnt nur Werk 1 ($C'=9$). Gleicher Marktpreis erzwingt nicht Produktion im teureren Werk."
+  },
+  {
+    "case_id": "MATH 11.68",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "A two-bracket income tax",
+    "context_en": "A country's income tax has two brackets. On the first $1000$ euros of income the tax office takes one fifth, so $T(y)=\\dfrac{1}{5}y$ whenever $0\\le y\\le 1000$. Above $1000$ euros the taxpayer still owes the $200$ euros already due on the first bracket, and then two fifths of every euro beyond $1000$, which is written $T(y)=200+\\dfrac{2}{5}(y-1000)$ for $y>1000$. Which of the following hold?",
+    "statements_en": [
+      "For $y<1000$, the marginal tax rate is $\\dfrac{1}{5}$.",
+      "Crossing $y=1000$ raises the tax on an extra euro from one fifth to two fifths.",
+      "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
+      "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
+      "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives\n\n$$\nT^{\\prime}(y) = \\dfrac{1}{5}\n$$\n\n$$\n\\text{for }y<1000\n$$\n\nFor $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$\n\nOn the first bracket the tax rule is a ray through the origin with slope $1/5$, so the marginal rate equals that slope.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nT(y) = \\dfrac{1}{5}y\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nAbove $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so\n\n$$\nT^{\\prime}(y) = \\dfrac{2}{5}\n$$\n\n$$\n\\text{for }y>1000\n$$\n\nCrossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths\n\nThe kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\ny = 1000\n$$\n\n$$\nT(y) = 200+\\dfrac{2}{5}(y-1000)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nAt $y=1500$, total tax is\n\n$$\nT(1500) = 200+\\dfrac{2}{5}(1500-1000)\n$$\n\n$$\nT(1500) = 200+200\n$$\n\n$$\n200 + 200 = 400\n$$\n\n$$\nT(1500) = 400 = 400\n$$\n\n$$\nT(1500) = 400\n$$\n\nAverage tax is therefore\n\n$$\n\\dfrac{T(1500)}{1500} = \\dfrac{400}{1500}\n$$\n\n$$\n\\dfrac{T(1500)}{1500} = \\dfrac{4}{15}\n$$\n\nwhich is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$\n\nAverage tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$.\n\nSo the statement is False.",
+      "**D.** → True\n\nAt $y=1500$ the taxpayer is in the second bracket, where $T^{\\prime}(y)=\\dfrac{2}{5}=0.4$.\n\nAbout $40$ cents of a small extra euro of income is therefore taxed away\n\nThat is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\ny = 1500\n$$\n\n$$\nT^{\\prime}(y) = \\dfrac{2}{5} = 0.4\n$$\n\n$$\nT^{\\prime}(1500) = 2/5\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nThe average rate $\\dfrac{T(1500)}{1500}=\\dfrac{4}{15}$ is only a quotient at one income.\n\nIt does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many schedules could share that average while having different local slopes\n\nThe average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\n\\dfrac{T(1500)}{1500} = \\dfrac{4}{15}\n$$\n\n$$\ny = 1500\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The first bracket is $T(y)=\\dfrac{1}{5}y$ for $y\\le 1000$, so\n$$T^{\\prime}(y)=\\dfrac{1}{5}\\qquad(y<1000).$$\nAbove $1000$, $T(y)=200+\\dfrac{2}{5}(y-1000)$ gives\n$$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad(y>1000).$$\nCrossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths. At $y=1500$,\n$$T(1500)=200+\\dfrac{2}{5}\\cdot 500=400,\\qquad\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}\\neq\\dfrac{2}{5},$$\nwhile about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope. First-bracket $T^{\\prime}=1/5$, second-bracket $T^{\\prime}=2/5$. At $y=1500$, average tax is $4/15\\neq 2/5$ while about $40$ cents of an extra euro is taxed away.",
+    "title_de_existing": "Eine zweistufige Einkommensteuer",
+    "context_de_existing": "Die Einkommensteuer eines Landes hat zwei Stufen. Auf die ersten $1000$ Euro Einkommen nimmt das Finanzamt ein Fünftel, also $T(y)=\\dfrac{1}{5}y$ für $0\\le y\\le 1000$. Darüber schuldet der Steuerpflichtige weiterhin die bereits angefallenen $200$ Euro und dann zwei Fünftel auf jedes zusätzliche Euro, geschrieben $T(y)=200+\\dfrac{2}{5}(y-1000)$ für $y>1000$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Für $y<1000$ beträgt der Grenzsteuersatz $\\dfrac{1}{5}$.",
+      "Das Überschreiten von $y=1000$ erhöht die Steuer auf einen Extra-Euro von einem Fünftel auf zwei Fünftel.",
+      "Bei $y=1500$ ist der Durchschnittssteuersatz gleich $\\dfrac{2}{5}$.",
+      "Bei $y=1500$ werden etwa $40$ Cent eines kleinen Extra-Euros Einkommen wegbesteuert.",
+      "Allein der Durchschnittssteuersatz bei $y=1500$ reicht, um die Steigung der zweiten Stufe zu rekonstruieren."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nIm ersten Segment ist $T'=1/5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nZweite Stufe: $T'=2/5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$T(1500)=200+\\dfrac{2}{5}\\cdot 500=400$, Durchschnitt $\\dfrac{400}{1500}=\\dfrac{4}{15}\\neq\\dfrac{2}{5}$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGrenzsatz $2/5=0.40$ — etwa $40$ Cent.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer Durchschnitt mischt beide Stufen; er bestimmt nicht allein die zweite Steigung.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erste Stufe $T'=1/5$, zweite $T'=2/5$. Durchschnitt und Grenzsatz fallen auseinander."
+  },
+  {
+    "case_id": "MATH 11.69",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Falling average cost plus a reported R'",
+    "context_en": "A flour mill reports that its current average cost is $A(Q)=\\dfrac{C(Q)}{Q}=12$ euros per sack and that this average cost is currently falling as output rises. Separately, the sales desk reports marginal revenue $R'(Q)=10$. Total cost itself is not shown. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Falling average cost implies $C'(Q)<A(Q)$, hence $C'(Q)<12$.",
+      "The reports already imply $C'(Q)<10$.",
+      "The reports already imply $P'(Q)>0$.",
+      "Marginal cost could still exceed marginal revenue even while average cost is falling.",
+      "Differentiating $A(Q)$ would produce marginal cost."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAverage cost falls when marginal cost lies below average cost: $A^{\\prime}(Q)<0$ is equivalent to $C^{\\prime}(Q)<A(Q)$.\n\nWith $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$\n\nFrom $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the inequality $C^{\\prime}<A=12$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nA(Q) = 12\n$$\n\n$$\nA^{\\prime} = (C^{\\prime}-A)/Q\n$$\n\n$$\nC^{\\prime}<A = 12\n$$\n\nSo the statement is True.",
+      "**B.** → False\n\nThe reports give $C^{\\prime}(Q)<12$ and $R^{\\prime}(Q)=10$, but they do not pin $C^{\\prime}$ below $10$.\n\nMarginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\\prime}(Q)<10$\n\nThe open interval $(10,12)$ is still available for $C^{\\prime}$: average cost falls while $C^{\\prime}>R^{\\prime}$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = 10\n$$\n\nSo the statement is False.",
+      "**C.** → False\n\nProfit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ while $C^{\\prime}$ is known only to satisfy $C^{\\prime}<12$.\n\nIf $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$\n\nFalling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone.\n\n$$\nR^{\\prime} = 10\n$$\n\nSo the statement is False.",
+      "**D.** → True\n\nFalling average cost only forces $C^{\\prime}<A=12$; it does not force $C^{\\prime}<R^{\\prime}=10$.\n\nMarginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$) while average cost is falling\n\nExample: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\prime}>10=R^{\\prime}$ (MR below MC).\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nC^{\\prime}<A = 12\n$$\n\n$$\nC^{\\prime}<R^{\\prime} = 10\n$$\n\n$$\nC^{\\prime} = 11\n$$\n\n$$\nC^{\\prime}<12 = A\n$$\n\n$$\nC^{\\prime}>10 = R^{\\prime}\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nDifferentiating average cost $A(Q)=\\dfrac{C(Q)}{Q}$ produces $A^{\\prime}(Q)$, which tracks how the average moves.\n\nMarginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost\n\nThe object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nA(Q) = \\dfrac{C(Q)}{Q}\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Average cost is currently $A(Q)=12$ and falling. Differentiating $A=\\dfrac{C}{Q}$ yields\n$$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q},$$\nso $A^{\\prime}<0$ implies only\n$$C^{\\prime}(Q)<A(Q)=12.$$\nSales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not force $C^{\\prime}<10$, nor $P^{\\prime}=R^{\\prime}-C^{\\prime}>0$: one could still have, for instance, $C^{\\prime}=11$, which satisfies $C^{\\prime}<12$ while $C^{\\prime}>R^{\\prime}$. Differentiating $A$ produces $A^{\\prime}$, not marginal cost $C^{\\prime}$. Falling $A=12$ gives only $C^{\\prime}<12$, not $C^{\\prime}<R^{\\prime}=10$ and not $P^{\\prime}>0$. Differentiating $A$ yields $A^{\\prime}$, not $C^{\\prime}$.",
+    "title_de_existing": "Fallende Stückkosten plus ausgewiesenes R'",
+    "context_de_existing": "Eine Mehlmühle meldet aktuelle Stückkosten $A(Q)=\\dfrac{C(Q)}{Q}=12$ Euro pro Sack und dass diese Stückkosten derzeit mit steigendem Output fallen. Separat meldet der Verkauf Grenzerlös $R'(Q)=10$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Fallende Stückkosten implizieren $C'(Q)<A(Q)$, also $C'(Q)<12$.",
+      "Die Meldungen implizieren bereits $C'(Q)<10$.",
+      "Die Meldungen implizieren bereits $P'(Q)>0$.",
+      "Die Grenzkosten könnten den Grenzerlös trotzdem übersteigen, während die Stückkosten fallen.",
+      "$A(Q)$ abzuleiten würde die Grenzkosten erzeugen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$A'<0\\Leftrightarrow C'<A$, hier $C'<12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nNur $C'<12$ ist bekannt — $C'$ könnte z. B. $11$ sein.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nOhne Vergleich $R'$ vs $C'$ kein Vorzeichen von $P'$. Wenn $C'=11$, wäre $P'=10-11<0$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGenau: $C'$ kann zwischen $10$ und $12$ liegen.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$A'$ ist die Änderungsrate der Stückkosten, nicht $C'$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Fallende Stückkosten $\\Rightarrow C'<12$. Mit $R'=10$ kann $C'$ trotzdem über $10$ liegen — dann $P'<0$."
+  },
+  {
+    "case_id": "MATH 11.70",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "North posts formulas, South posts only P'",
+    "context_en": "Two rival snack firms both currently sell $Q=15$ packs a day, but they report information differently. Firm North posts full formulas: revenue $R_N(Q)=30Q$ and cost $C_N(Q)=18Q+40$. Firm South refuses to show revenue or cost and posts only its marginal profit schedule $P_S'(Q)=20-Q$. Judge every assertion below.",
+    "statements_en": [
+      "North's marginal profit is $P_N'(Q)=12$ at every $Q$.",
+      "At $Q=15$, South's profit is still locally increasing.",
+      "At $Q=25$, South's profit is locally decreasing.",
+      "Because South's $P_S'(Q)$ depends on $Q$ while North's does not, South must currently earn less total profit.",
+      "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'(Q)-C_N'(Q)$, not the intercept $40$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNorth's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gives\n\n$$\nP_N^{\\prime}(Q) = 12\n$$\n\nat every $Q$\n\nEquivalently $R_N^{\\prime}-C_N^{\\prime}=30-18=12$; North's marginal profit is the constant $12$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\nP_N'(Q) = 12\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nAt $Q=15$, South's posted schedule gives\n\n$$\nP_S^{\\prime}(15) = 20-15\n$$\n\n$$\n20 - 15 = 5\n$$\n\n$$\nP_S^{\\prime}(15) = 5 = 5\n$$\n\n$$\nP_S^{\\prime}(15) = 5>0\n$$\n\nA positive derivative means South's profit is still locally increasing at $Q=15$\n\nSouth should still expand a little at $15$ packs: extra profit is still positive on the margin.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $Q=25$,\n\n$$\nP_S^{\\prime}(25) = 20-25\n$$\n\n$$\n20 - 25 = -5\n$$\n\n$$\nP_S^{\\prime}(25) = -5 = -5\n$$\n\n$$\nP_S^{\\prime}(25) = -5<0\n$$\n\nA negative derivative means South's profit is locally decreasing at $Q=25$\n\nPast $Q=20$, South's posted schedule has $P_S^{\\prime}<0$, so at $25$ a small expansion lowers South's profit.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe shape of $P_S^{\\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.\n\nSouth could currently earn more or less total profit; the claim that South must earn less does not follow\n\nNorth's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\\prime}$ alone — no forced ranking.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_N(15) = 12\\cdot 15-40 = 140\n$$\n\nSo the statement is False.",
+      "**E.** → True\n\nNorth's marginal profit is\n\n$$\nP_N^{\\prime}(Q) = R_N^{\\prime}(Q)-C_N^{\\prime}(Q)\n$$\n\n$$\nP_N^{\\prime}(Q) = 30-18\n$$\n\n$$\n30 - 18 = 12\n$$\n\n$$\nP_N^{\\prime}(Q) = 12 = 12\n$$\n\n$$\nP_N^{\\prime}(Q) = 12\n$$\n\nThe fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept\n\nFixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so\n$$R_N^{\\prime}=30,\\qquad C_N^{\\prime}=18,\\qquad P_N^{\\prime}(Q)=30-18=12$$\nat every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only\n$$P_S^{\\prime}(Q)=20-Q.$$\nAt $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\\prime}$ say nothing about which firm currently has the larger stock of total profit. North has constant $P_N^{\\prime}=12$; South has $P_S^{\\prime}=20-Q$ (positive at $15$, negative at $25$). Slope shapes do not rank profit stocks.",
+    "title_de_existing": "Nord postet Formeln, Süd nur P'",
+    "context_de_existing": "Zwei rivalisierende Snackfirmen verkaufen derzeit beide $Q=15$ Packungen pro Tag, melden aber unterschiedlich. Firma Nord hängt volle Formeln aus: Erlös $R_N(Q)=30Q$ und Kosten $C_N(Q)=18Q+40$. Firma Süd zeigt weder Erlös noch Kosten, hängt aber $P_S'(Q)=20-Q$ aus. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Nords Grenzgewinn ist $P_N'(Q)=12$ bei jedem $Q$.",
+      "Bei $Q=15$ steigt Süds Gewinn lokal noch.",
+      "Bei $Q=25$ fällt Süds Gewinn lokal.",
+      "Weil Süds $P_S'(Q)$ von $Q$ abhängt und Nords nicht, muss Süd derzeit weniger Gesamtgewinn verdienen.",
+      "Nords Extra-Einheit addiert stets $12$ Euro Gewinn; das nutzt $R_N'-C_N'$, nicht den Achsenabschnitt $40$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P_N'=30-18=12$ konstant (Fixkosten $40$ verschwinden).\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P_S'(15)=20-15=5>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_S'(25)=20-25=-5<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVerschiedene Steigungsformen sagen nichts über den Bestandsvergleich $P_S$ vs $P_N$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGenau: $R_N'-C_N'=12$; Fixkosten betreffen nicht die Marginaleinheit.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Nord: konstantes $P'=12$. Süd: $P'=20-Q$, positiv bei $15$, negativ bei $25$. Steigungsform $\\neq$ Bestandsvergleich."
+  },
+  {
+    "case_id": "MATH 11.71",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Leisure utility that flattens after eight hours",
+    "context_en": "A student measures satisfaction from leisure hours by a utility function that rises at a decreasing rate up to eight hours and then flattens: $U(x)=10x-\\dfrac{1}{2}x^{2}$ while $0\\le x\\le 8$, and $U(x)=48$ once $x>8$ (further leisure adds no more satisfaction). Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "For $x<8$, marginal utility is $U'(x)=10-x$.",
+      "At $x=6$, a little extra leisure still raises satisfaction.",
+      "For $x>8$, marginal utility is $0$.",
+      "Because $U(8)=48$, the eighth hour must have added $48$ units of utility.",
+      "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives\n\n$$\nU^{\\prime}(x) = 10-x\n$$\n\n$$\n\\text{for }x<8\n$$\n\nFor $x<8$, marginal utility is $U^{\\prime}(x)=10-x$\n\nMarginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nU'(x) = 10-x\n$$\n\n$$\nU(x) = 10x-\\dfrac{1}{2}x^{2}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nAt $x=6$,\n\n$$\nU^{\\prime}(6) = 10-6\n$$\n\n$$\n10 - 6 = 4\n$$\n\n$$\nU^{\\prime}(6) = 4 = 4\n$$\n\n$$\nU^{\\prime}(6) = 4>0\n$$\n\nA positive derivative means a little extra leisure still raises satisfaction at $x=6$\n\nAt six hours the student is still on the rising piece of $U$, so a little more leisure still helps.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**C.** → True\n\nOnce $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:\n\n$$\nU^{\\prime}(x) = 0\n$$\n\n$$\n\\text{for }x>8\n$$\n\nMarginal utility is therefore $0$ beyond eight hours\n\nA flat utility function has zero slope: further leisure past eight hours is satiation in this model.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**D.** → False\n\n$U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.\n\nApproaching $x=8$ from the left,\n\n$$\nU^{\\prime}(8^{-}) = 10-8\n$$\n\n$$\n10 - 8 = 2\n$$\n\n$$\nU^{\\prime}(8^{-}) = 2 = 2\n$$\n\n$$\nU^{\\prime}(8^{-}) = 2\n$$\n\nThe eighth hour adds about $2$ units of utility, not $48$\n\nTotal utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → True\n\nFor $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore\n\n$$\n\\dfrac{U(12)}{12} = \\dfrac{48}{12}\n$$\n\n$$\n\\dfrac{U(12)}{12} = 4\n$$\n\nAverage utility at $x=12$ equals $4$\n\nOnce utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nx = 12\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "For $0\\le x\\le 8$ utility is $U(x)=10x-\\dfrac{1}{2}x^{2}$, so\n$$U^{\\prime}(x)=10-x\\qquad(x<8).$$\nAt $x=6$ one has $U^{\\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence\n$$U^{\\prime}(x)=0\\qquad(x>8).$$\nThe level $U(8)=48$ is total utility at eight hours, not the contribution of the eighth hour alone. Average utility at $x=12$ is\n$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$ For $x<8$, $U^{\\prime}=10-x>0$ at $x=6$; for $x>8$, $U^{\\prime}=0$. The stock $U(8)=48$ is not the eighth hour's contribution.",
+    "title_de_existing": "Freizeitnutzen, der nach acht Stunden abflacht",
+    "context_de_existing": "Ein Student misst Zufriedenheit aus Freizeitstunden durch eine Nutzenfunktion, die bis acht Stunden mit abnehmender Rate steigt und dann flach wird: $U(x)=10x-\\dfrac{1}{2}x^{2}$ für $0\\le x\\le 8$, und $U(x)=48$ für $x>8$ (weitere Freizeit ohne zusätzlichen Nutzen). Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Für $x<8$ ist der Grenznutzen $U'(x)=10-x$.",
+      "Bei $x=6$ erhöht etwas mehr Freizeit noch die Zufriedenheit.",
+      "Für $x>8$ ist der Grenznutzen $0$.",
+      "Weil $U(8)=48$, muss die achte Stunde $48$ Nutzeneinheiten addiert haben.",
+      "Der Durchschnittsnutzen $\\dfrac{U(x)}{x}$ bei $x=12$ ist gleich $4$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDifferenzieren des Quadrats liefert $U'=10-x$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$U'(6)=4>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nKonstantes $U=48$ hat Ableitung $0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$U(8)=48$ ist der Bestand, nicht der Zuwachs der achten Stunde ($U'(8^{-})=2$).\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$U(12)=48$, also $48/12=4$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Bis $x=8$: $U'=10-x$; danach $U'=0$. Bestand $U(8)=48$ ist nicht der Zuwachs der achten Stunde."
+  },
+  {
+    "case_id": "MATH 11.72",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Revenue slope and profit slope, cost missing",
+    "context_en": "Two print shops both currently face the same extra-revenue figure $R'(Q)=16$ euros per job, but they report different companions. The first shop also reports marginal profit $P'(Q)=-3$ and does not report cost. The second shop, at a different run length, reports marginal cost $C'(Q)=16$ instead of profit. Which of the following hold?",
+    "statements_en": [
+      "The first printer's implied marginal cost is $C'(Q)=19$.",
+      "The first printer should print a little more.",
+      "The second printer's marginal profit is $0$.",
+      "Both printers have the same extra-revenue figure, so they have the same extra-profit figure.",
+      "The first printer's current total profit $P(Q)$ must equal $-3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the first shop's reports,\n\n$$\n-3 = 16-C^{\\prime}(Q)\n$$\n\n$$\nC^{\\prime}(Q) = 16-(-3)\n$$\n\n$$\nC^{\\prime}(Q) = 19\n$$\n\nThe first printer's implied marginal cost is $19$\n\nRearrangement of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ always recovers the missing piece when two of the three rates are known.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe first printer has $P^{\\prime}(Q)=-3<0$, so profit is locally decreasing.\n\nPrinting a little more would lower profit, not raise it\n\nWith $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\nP^{\\prime}(Q) = -3<0\n$$\n\n$$\nP^{\\prime} = -3<0\n$$\n\nSo the statement is False.",
+      "**C.** → True\n\nThe second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so\n\n$$\nP^{\\prime}(Q) = 16-16\n$$\n\n$$\n16 - 16 = 0\n$$\n\n$$\nP^{\\prime}(Q) = 0 = 0\n$$\n\n$$\nP^{\\prime}(Q) = 0\n$$\n\nits marginal profit is $0$\n\nEqual marginal revenue and marginal cost is exactly the first-order condition $P^{\\prime}=0$ at that run length.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**D.** → False\n\nBoth printers share $R^{\\prime}(Q)=16$, but their cost (or profit) companions differ.\n\nThe first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do not have the same extra-profit figure\n\nShared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\prime}$; different cost slopes produce different profit slopes.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = 16\n$$\n\n$$\nP^{\\prime} = -3\n$$\n\n$$\nP^{\\prime} = 0\n$$\n\n$$\nP^{\\prime} = R^{\\prime}-C^{\\prime}\n$$\n\nSo the statement is False.",
+      "**E.** → False\n\nThe posted figure $P^{\\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.\n\nThe stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false\n\nA printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP^{\\prime}(Q) = -3\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Both shops face $R^{\\prime}(Q)=16$. The first also posts $P^{\\prime}(Q)=-3$, so rearranging $P^{\\prime}=R^{\\prime}-C^{\\prime}$ recovers\n$$C^{\\prime}(Q)=R^{\\prime}-P^{\\prime}=16-(-3)=19.$$\nBecause $P^{\\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\\prime}(Q)=16$ with the same $R^{\\prime}$, so\n$$P^{\\prime}(Q)=16-16=0.$$\nSame extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\\prime}=-3$ is not its stock of total profit. First shop: $P^{\\prime}=-3$ and $R^{\\prime}=16$ imply $C^{\\prime}=19$ (do not expand). Second: $R^{\\prime}=C^{\\prime}=16$ imply $P^{\\prime}=0$.",
+    "title_de_existing": "Erlössteigung und Gewinnsteigung, Kosten fehlen",
+    "context_de_existing": "Zwei Druckereien sehen derzeit denselben Mehrerlös $R'(Q)=16$ Euro pro Auftrag, melden aber unterschiedliche Begleiter. Die erste meldet auch Grenzgewinn $P'(Q)=-3$ und keine Kosten. Die zweite meldet an einer anderen Lauflänge Grenzkosten $C'(Q)=16$ statt Gewinn. Welche der folgenden Aussagen gelten?",
+    "statements_de_existing": [
+      "Die impliziten Grenzkosten der ersten Druckerei sind $C'(Q)=19$.",
+      "Die erste Druckerei soll etwas mehr drucken.",
+      "Der Grenzgewinn der zweiten Druckerei ist $0$.",
+      "Beide haben denselben Mehrerlös, also denselben Mehrgewinn.",
+      "Der aktuelle Gesamtgewinn $P(Q)$ der ersten Druckerei muss $-3$ betragen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=R'-P'=16-(-3)=19$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$P'=-3<0$ — nicht expandieren.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$P'=16-16=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGleicher $R'$ bei verschiedenem $C'$ ergibt verschiedenen $P'$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$-3$ ist die Rate, nicht der Bestand.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Erste: $C'=19$, $P'<0$. Zweite: $P'=0$. Gleicher $R'$ erzwingt nicht gleichen $P'$."
+  },
+  {
+    "case_id": "MATH 11.73",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "The same firm before and after a per-unit tax",
+    "context_en": "Before any tax, a firm faces marginal revenue $R'(Q)=14$ and marginal cost $C'(Q)=10$ at its current output. The government then adds a per-unit tax of $5$ euros, so the new total cost becomes $\\widetilde{C}(Q)=C(Q)+5Q$ while the revenue schedule is left unchanged. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Before the tax, a small expansion raises profit.",
+      "After the tax, the relevant marginal cost is $15$.",
+      "After the tax, a small expansion raises profit.",
+      "The tax changes which function must be differentiated for the extra-cost side: the new cost $\\widetilde{C}$, not the old $C$.",
+      "Because revenue is unchanged, marginal revenue is still $14$ after the tax."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBefore the tax,\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)\n$$\n\n$$\nP^{\\prime}(Q) = 14-10\n$$\n\n$$\n14 - 10 = 4\n$$\n\n$$\nP^{\\prime}(Q) = 4 = 4\n$$\n\n$$\nP^{\\prime}(Q) = 4>0\n$$\n\nA positive derivative means a small expansion raises profit\n\nBefore the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives\n\n$$\n\\widetilde{C}^{\\prime}(Q) = C^{\\prime}(Q)+5\n$$\n\n$$\n\\widetilde{C}^{\\prime}(Q) = 10+5\n$$\n\n$$\n10 + 5 = 15\n$$\n\n$$\n\\widetilde{C}^{\\prime}(Q) = 15 = 15\n$$\n\n$$\n\\widetilde{C}^{\\prime}(Q) = 15\n$$\n\nAfter the tax the relevant marginal cost is $15$\n\nA per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**C.** → False\n\nAfter the tax, compare the unchanged marginal revenue with the new marginal cost:\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)\n$$\n\n$$\nP^{\\prime}(Q) = 14-15\n$$\n\n$$\n14 - 15 = -1\n$$\n\n$$\nP^{\\prime}(Q) = -1 = -1\n$$\n\n$$\nP^{\\prime}(Q) = -1<0\n$$\n\nA negative derivative means a small expansion lowers profit rather than raising it\n\nAfter the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe extra-cost side of the expansion test must use the cost schedule the firm actually faces.\n\nAfter the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated\n\nUsing the old $C^{\\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**E.** → True\n\nThe revenue schedule is left unchanged by the tax, so its derivative is unchanged:\n\n$$\nR^{\\prime}(Q) = 14\n$$\n\nstill after the tax\n\nOnly the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Before the tax one has $R^{\\prime}=14$ and $C^{\\prime}=10$, so\n$$P^{\\prime}=14-10=4>0$$\nand a small expansion raises profit. The per-unit tax replaces cost by\n$$\\widetilde{C}(Q)=C(Q)+5Q,$$\nhence\n$$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=15,$$\nwhile revenue — and therefore $R^{\\prime}=14$ — is unchanged. After the tax,\n$$\\widetilde{P}^{\\prime}=14-15=-1<0,$$\nso a small expansion no longer raises profit. The extra-cost side must now differentiate $\\widetilde{C}$, not the old $C$. Before: $P^{\\prime}=14-10=4>0$. After: $\\widetilde{C}^{\\prime}=15$, so $\\widetilde{P}^{\\prime}=14-15=-1<0$, with $R^{\\prime}$ unchanged.",
+    "title_de_existing": "Dieselbe Firma vor und nach einer Mengensteuer",
+    "context_de_existing": "Vor jeder Steuer sieht eine Firma am aktuellen Output Grenzerlös $R'(Q)=14$ und Grenzkosten $C'(Q)=10$. Die Regierung führt dann eine Stücksteuer von $5$ Euro ein, sodass die neuen Gesamtkosten $\\widetilde{C}(Q)=C(Q)+5Q$ werden, während der Erlösplan unverändert bleibt. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Vor der Steuer erhöht eine kleine Expansion den Gewinn.",
+      "Nach der Steuer betragen die relevanten Grenzkosten $15$.",
+      "Nach der Steuer erhöht eine kleine Expansion den Gewinn.",
+      "Die Steuer ändert, welche Funktion für die Mehrkostenseite differenziert werden muss: die neuen Kosten $\\widetilde{C}$, nicht die alten $C$.",
+      "Weil der Erlös unverändert ist, bleibt der Grenzerlös nach der Steuer $14$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P'=14-10=4>0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$\\widetilde{C}'=C'+5=15$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$\\widetilde{P}'=14-15=-1<0$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie Steuer sitzt in $\\widetilde{C}$ — diese Funktion muss differenziert werden.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nErlös unverändert $\\Rightarrow R'$ unverändert.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Vor Steuer: $P'=4>0$. Nach Stücksteuer $+5$: relevante Grenzkosten $15$, Grenzgewinn $-1$."
+  },
+  {
+    "case_id": "MATH 11.74",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Price follows one rule, then another",
+    "context_en": "A street vendor faces a two-piece inverse demand. While sales stay at most $30$ units, buyers require the price $p(Q)=40-Q$. Once sales exceed $30$, further units can only be sold at a flat clearance price $p(Q)=10$. Revenue is always $R(Q)=Q\\cdot p(Q)$, and packing cost rises at a constant $C'(Q)=12$ euros per unit. Judge every assertion below.",
+    "statements_en": [
+      "For $Q<30$, $R(Q)=40Q-Q^{2}$ and $R'(Q)=40-2Q$.",
+      "Once clearance pricing begins, marginal revenue collapses to the flat price $10$.",
+      "At $Q=12$, a small expansion raises profit.",
+      "At $Q=35$, clearance pricing still leaves $R'(Q)>C'(Q)$.",
+      "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFor $Q<30$, price is $p(Q)=40-Q$, so revenue is\n\n$$\nR(Q) = Q(40-Q)\n$$\n\n$$\nR(Q) = 40Q-Q^{2}\n$$\n\nDifferentiating gives\n\n$$\nR^{\\prime}(Q) = 40-2Q\n$$\n\nwhich matches the claim\n\nThe product rule on $R=Q(40-Q)$ immediately yields\n\n$$\nR^{\\prime} = 40-2Q\n$$ on the first piece.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**B.** → True\n\nOnce sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.\n\nDifferentiating gives\n\n$$\nR^{\\prime}(Q) = 10\n$$: marginal revenue collapses to the flat price $10$\n\nWith a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $Q=12<30$,\n\n$$\nR^{\\prime}(12) = 40-2\\cdot 12\n$$\n\n$$\nR^{\\prime}(12) = 40-24\n$$\n\n$$\n40 - 24 = 16\n$$\n\n$$\nR^{\\prime}(12) = 16 = 16\n$$\n\n$$\nR^{\\prime}(12) = 16\n$$\n\nCompare with packing cost $C^{\\prime}=12$:\n\n$$\nP^{\\prime}(12) = 16-12\n$$\n\n$$\n16 - 12 = 4\n$$\n\n$$\nP^{\\prime}(12) = 4 = 4\n$$\n\n$$\nP^{\\prime}(12) = 4>0\n$$\n\nA small expansion raises profit at $Q=12$\n\nAt $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**D.** → False\n\nAt $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then\n\n$$\nR^{\\prime}(35)-C^{\\prime}(35) = 10-12\n$$\n\n$$\n10 - 12 = -2\n$$\n\n$$\nR^{\\prime}(35)-C^{\\prime}(35) = -2 = -2\n$$\n\n$$\nR^{\\prime}(35)-C^{\\prime}(35) = -2<0\n$$\n\nhence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$\n\nClearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → False\n\nAt $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is\n\n$$\np(12) = 40-12\n$$\n\n$$\n40 - 12 = 28\n$$\n\n$$\np(12) = 28 = 28\n$$\n\n$$\np(12) = 28\n$$\n\nThose are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general\n\nThe gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "While $Q\\le 30$ the price is $p(Q)=40-Q$, so\n$$R(Q)=40Q-Q^{2},\\qquad R^{\\prime}(Q)=40-2Q.$$\nOnce clearance pricing begins, $p(Q)=10$ is flat, hence\n$$R(Q)=10Q,\\qquad R^{\\prime}(Q)=10\\qquad(Q>30).$$\nPacking cost has constant $C^{\\prime}(Q)=12$. At $Q=12$,\n$$P^{\\prime}(12)=(40-24)-12=4>0,$$\nso a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<12=C^{\\prime}$, so $R^{\\prime}>C^{\\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\\prime}(12)=16$, not $28$. For $Q<30$, $R^{\\prime}=40-2Q$; for $Q>30$, $R^{\\prime}=10$. Against $C^{\\prime}=12$: expand at $12$ ($R^{\\prime}=16$), not at $35$. At $Q=12$, $p=28\\neq R^{\\prime}=16$.",
+    "title_de_existing": "Der Preis folgt erst einer, dann einer anderen Regel",
+    "context_de_existing": "Ein Straßenverkäufer sieht eine zweiteilige inverse Nachfrage. Solange der Absatz höchstens $30$ Einheiten beträgt, verlangen Käufer den Preis $p(Q)=40-Q$. Übersteigen die Verkäufe $30$, können weitere Einheiten nur zum flachen Ausverkaufspreis $p(Q)=10$ verkauft werden. Der Erlös ist stets $R(Q)=Q\\cdot p(Q)$, und die Packkosten steigen konstant mit $C'(Q)=12$ Euro pro Einheit. Beurteile jede Behauptung.",
+    "statements_de_existing": [
+      "Für $Q<30$ gilt $R(Q)=40Q-Q^{2}$ und $R'(Q)=40-2Q$.",
+      "Sobald der Ausverkaufspreis gilt, kollabiert der Grenzerlös auf den flachen Preis $10$.",
+      "Bei $Q=12$ erhöht eine kleine Expansion den Gewinn.",
+      "Bei $Q=35$ lässt der Ausverkaufspreis weiterhin $R'(Q)>C'(Q)$.",
+      "Bei $Q=12$ gleicht der Mehrerlös dem ausgehängten Preis $p(12)=28$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$R=Q(40-Q)=40Q-Q^{2}$, also $R'=40-2Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nFür $Q>30$: $R=10Q$, also $R'=10$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P'(12)=(40-24)-12=4>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nBei $Q=35$: $R'=10<12=C'$.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$R'(12)=40-24=16\\neq 28=p(12)$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Unter $30$: $R'=40-2Q$; Ausverkauf: $R'=10$. Bei $C'=12$ lohnt Expansion bei $Q=12$, nicht bei $Q=35$."
+  },
+  {
+    "case_id": "MATH 11.75",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Cheaper on average is not cheaper at the margin",
+    "context_en": "Two courier firms can both take one more delivery at the same extra revenue $R'=7$ euros. Firm A currently has average cost $A_A=8$ and marginal cost $C_A'=5$. Firm B currently has average cost $A_B=6$ and marginal cost $C_B'=9$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Firm A's average cost is currently falling.",
+      "Firm B's average cost is currently rising.",
+      "Firm B is cheaper per unit on average, so B should produce the extra unit and A should not.",
+      "Only firm A has $R'>C'$ here.",
+      "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nAverage cost falls when marginal cost lies below average cost. For firm A,\n\n$$\nC_A^{\\prime} = 5<8\n$$\n\n$$\nC_A^{\\prime} = A_A\n$$\n\nHence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling\n\nThe sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives\n\n$$\nA_A^{\\prime}<0\n$$ precisely because $5<8$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → True\n\nAverage cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule\n\n$$\nA^{\\prime}(Q) = \\dfrac{C^{\\prime}(Q)-A(Q)}{Q}\n$$\n\nFor firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising\n\nFor B the same rule gives\n\n$$\nA_B^{\\prime}>0\n$$ because marginal cost $9$ sits above average cost $6$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nA = C/Q\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here\n\n$$\n7>5\n$$\n\n$$\n\\text{at A}\n$$\n\n$$\n7<9\n$$\n\n$$\n\\text{at B}\n$$\n\nA should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison\n\nAverage-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so\n\n$$\n7>5 = C_A^{\\prime}\n$$\n\n$$\n\\text{but}\n$$\n\n$$\n7<9 = C_B^{\\prime}\n$$\n\nOnly firm A satisfies $R'>C'$\n\nA alone has extra revenue above extra cost; B has the inequality reversed.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**E.** → True\n\nThe extra-profit figures are\n\n$$\nP_A^{\\prime} = 7-5\n$$\n\n$$\n7 - 5 = 2\n$$\n\n$$\nP_A^{\\prime} = 2 = 2\n$$\n\n$$\nP_A^{\\prime} = 2\n$$\n\n$$\nP_B^{\\prime} = 7-9\n$$\n\n$$\n7 - 9 = -2\n$$\n\n$$\nP_B^{\\prime} = -2 = -2\n$$\n\n$$\nP_B^{\\prime} = -2\n$$\n\nThe extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B\n\nThose $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:\n$$P_A^{\\prime}=7-5=2>0,\\qquad P_B^{\\prime}=7-9=-2<0.$$\nOnly A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.",
+    "title_de_existing": "Im Schnitt günstiger ist nicht am Rand günstiger",
+    "context_de_existing": "Zwei Kurierfirmen können beide eine weitere Lieferung bei gleichem Mehrerlös $R'=7$ Euro übernehmen. Firma A hat derzeit Stückkosten $A_A=8$ und Grenzkosten $C_A'=5$. Firma B hat Stückkosten $A_B=6$ und Grenzkosten $C_B'=9$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Stückkosten von Firma A fallen derzeit.",
+      "Die Stückkosten von Firma B steigen derzeit.",
+      "Firma B ist im Durchschnitt pro Einheit billiger, also soll B die Extra-Einheit produzieren und A nicht.",
+      "Nur Firma A hat hier $R'>C'$.",
+      "Die Extra-Einheit addiert bei A etwa $2$ Euro Gewinn und zieht bei B etwa $2$ Euro ab."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C_A'=5<A_A=8$ $\\Rightarrow$ $A$ fällt.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C_B'=9>A_B=6$ $\\Rightarrow$ $A$ steigt.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nDie Extra-Einheit testet $R'$ vs $C'$, nicht den Durchschnitt. B hat $7<9$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nNur A: $7>5$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$P_A'=2$, $P_B'=-2$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Stückkostenbewegung folgt $C'$ vs $A$; die Extra-Einheit folgt $R'$ vs $C'$. Nur A soll übernehmen."
+  },
+  {
+    "case_id": "MATH 11.76",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Zero profit versus zero extra profit",
+    "context_en": "Two recording studios report very different profit situations today. Studio A is already earning a solid total profit $P_A(Q)=50$ euros, but its profit has stopped rising: $P_A'(Q)=0$. Studio B is currently just breaking even with $P_B(Q)=0$, yet each extra unit would still add about $P_B'(Q)=4$ euros of profit. Judge every assertion below.",
+    "statements_en": [
+      "Studio A is earning a positive profit stock, but a tiny output change leaves that profit locally unchanged.",
+      "Studio B is currently breaking even, yet a small expansion would start to create profit.",
+      "Studio A's $P_A'(Q)=0$ means A earns nothing.",
+      "Studio B should expand a little; studio A's first-order condition is already $R_A'(Q)=C_A'(Q)$.",
+      "Because B's current profit is $0$, B cannot have a positive marginal profit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStudio A reports $P_A(Q)=50>0$ and $P_A^{\\prime}(Q)=0$.\n\nThe stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero\n\nStudio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_A(Q) = 50>0\n$$\n\n$$\nP_A^{\\prime}(Q) = 0\n$$\n\nSo the statement is True.",
+      "**B.** → True\n\nStudio B reports $P_B(Q)=0$ together with $P_B^{\\prime}(Q)=4>0$.\n\nBreaking even today is compatible with an upward slope: a small expansion would push profit above zero\n\nStudio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_B(Q) = 0\n$$\n\n$$\nP_B^{\\prime}(Q) = 4>0\n$$\n\nSo the statement is True.",
+      "**C.** → False\n\nZero slope is not a zero height. Studio A already earns $P_A(Q)=50$.\n\nThe report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing\n\n\"Earns nothing\" would mean $P_A(Q)=0$; the report $P_A^{\\prime}=0$ says something entirely different.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_A(Q) = 50\n$$\n\n$$\nP_A^{\\prime}(Q) = 0\n$$\n\n$$\nP_A(Q) = 0\n$$\n\n$$\nP_A^{\\prime} = 0\n$$\n\nSo the statement is False.",
+      "**D.** → True\n\n$P_B^{\\prime}(Q)=4>0$ is an expansion signal for B.\n\nFor A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, the usual first-order condition\n\nB's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is already the MR$=$MC first-order condition.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_B^{\\prime}(Q) = 4>0\n$$\n\n$$\nP_A^{\\prime}(Q) = 0\n$$\n\n$$\nR_A^{\\prime}(Q) = C_A^{\\prime}(Q)\n$$\n\n$$\nP_A^{\\prime} = 0\n$$\n\nSo the statement is True.",
+      "**E.** → False\n\nA zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\\prime}(Q)=4>0$.\n\nCurrent break-even does not forbid a positive marginal profit\n\nBreak-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP_B(Q) = 0\n$$\n\n$$\nP_B^{\\prime}(Q) = 4>0\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence\n$$R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$$\nand a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\\prime}=4>0$ (expand). Height and slope are independent.",
+    "title_de_existing": "Gewinn null versus zusätzlicher Gewinn null",
+    "context_de_existing": "Zwei Tonstudios melden heute sehr unterschiedliche Gewinnlagen. Studio A verdient bereits einen soliden Gesamtgewinn $P_A(Q)=50$ Euro, aber der Gewinn steigt nicht mehr: $P_A'(Q)=0$. Studio B ist derzeit genau an der Gewinnschwelle mit $P_B(Q)=0$, doch jede Extra-Einheit würde noch etwa $P_B'(Q)=4$ Euro Gewinn addieren. Beurteile jede Behauptung.",
+    "statements_de_existing": [
+      "Studio A verdient einen positiven Gewinnbestand, aber eine winzige Outputänderung lässt diesen Gewinn lokal unverändert.",
+      "Studio B ist derzeit an der Gewinnschwelle, doch eine kleine Expansion würde beginnen, Gewinn zu erzeugen.",
+      "$P_A'(Q)=0$ bedeutet, dass A nichts verdient.",
+      "Studio B soll etwas expandieren; die Bedingung erster Ordnung von Studio A ist bereits $R_A'(Q)=C_A'(Q)$.",
+      "Weil B's aktueller Gewinn $0$ ist, kann B keinen positiven Grenzgewinn haben."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBestand $50$, Steigung $0$ — lokal flach.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBestand $0$, Steigung $4>0$ — Expansion erzeugt Gewinn.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$P'=0$ ist Flachheit, nicht Bestand null.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$P_B'>0$ $\\Rightarrow$ expandieren; $P_A'=0\\Leftrightarrow R_A'=C_A'$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nBestand und Steigung sind unabhängig — B kann $P=0$ und $P'>0$ haben.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Höhe und Steigung des Gewinns sind unabhängig. A: Bestand positiv, Steigung null. B: Bestand null, Steigung positiv."
+  },
+  {
+    "case_id": "MATH 11.77",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Weekday cost versus weekend cost",
+    "context_en": "The same café serves the same menu all week, but staffing costs change with the day. On weekdays cost is the linear rule $C_{\\mathrm{wd}}(Q)=12Q$; on weekends overtime staffing makes cost $C_{\\mathrm{we}}(Q)=20Q$. Customer demand is steady enough that marginal revenue is $R'(Q)=15$ on both kinds of day. Which of the following hold?",
+    "statements_en": [
+      "On a weekday, $C_{\\mathrm{wd}}'(Q)=12$.",
+      "Weekend overtime raises the cost of an extra sale by $8$ euros relative to the weekday schedule.",
+      "A small extra sale raises profit on a weekday.",
+      "Because weekend revenue is still $R'(Q)=15$, weekend marginal profit equals the weekday figure $3$.",
+      "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWeekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives\n\n$$\nC_{\\mathrm{wd}}^{\\prime}(Q) = 12\n$$\n\nOn a weekday each extra sale adds $12$ euros of cost\n\nWeekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\nC_{\\mathrm{wd}}'(Q) = 12\n$$\n\n$$\nC_{\\mathrm{wd}}(Q) = 12Q\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nWeekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}^{\\prime}(Q)=20$. The weekday slope was $12$, and\n\n$$\n20-12 = 8\n$$\n\nOvertime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule\n\nWeekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn a weekday,\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)\n$$\n\n$$\nP^{\\prime}(Q) = 15-12\n$$\n\n$$\n15 - 12 = 3\n$$\n\n$$\nP^{\\prime}(Q) = 3 = 3\n$$\n\n$$\nP^{\\prime}(Q) = 3>0\n$$\n\nA positive marginal profit means a small extra sale raises weekday profit\n\nWeekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**D.** → False\n\nWeekend marginal profit uses the weekend cost slope, not the weekday one:\n\n$$\nP^{\\prime}(Q) = R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)\n$$\n\n$$\nP^{\\prime}(Q) = 15-20\n$$\n\n$$\n15 - 20 = -5\n$$\n\n$$\nP^{\\prime}(Q) = -5 = -5\n$$\n\n$$\nP^{\\prime}(Q) = -5\n$$\n\nThat is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope\n\nWeekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\\prime}$ with a higher $C^{\\prime}$ flips the advice.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → True\n\n$R^{\\prime}(Q)=15$ is the same number both days.\n\nWhat changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change\n\nMarginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = 15\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$, so\n$$C_{\\mathrm{wd}}^{\\prime}(Q)=12.$$\nWeekend overtime cost is $C_{\\mathrm{we}}(Q)=20Q$, so\n$$C_{\\mathrm{we}}^{\\prime}(Q)=20.$$\nThe overtime gap is $20-12=8$ euros on an extra sale. Marginal revenue is $R^{\\prime}(Q)=15$ on both kinds of day. Weekday marginal profit is\n$$P_{\\mathrm{wd}}^{\\prime}=15-12=3>0,$$\nwhile weekend marginal profit is\n$$P_{\\mathrm{we}}^{\\prime}=15-20=-5\\neq 3.$$\nThe weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\\prime}$. Weekday $C^{\\prime}=12$ gives $P^{\\prime}=15-12=3>0$; weekend $C^{\\prime}=20$ gives $P^{\\prime}=15-20=-5$. Same $R^{\\prime}$, different cost piece.",
+    "title_de_existing": "Wochentagskosten versus Wochenendkosten",
+    "context_de_existing": "Dasselbe Café serviert die ganze Woche dasselbe Menü, aber die Personalkosten ändern sich mit dem Tag. An Wochentagen gilt die lineare Regel $C_{\\mathrm{wd}}(Q)=12Q$; am Wochenende macht Überstundenpersonal die Kosten zu $C_{\\mathrm{we}}(Q)=20Q$. Die Kundennachfrage ist stetig genug, dass der Grenzerlös an beiden Tagestypen $R'(Q)=15$ ist. Welche der folgenden Aussagen gelten?",
+    "statements_de_existing": [
+      "An einem Wochentag gilt $C_{\\mathrm{wd}}'(Q)=12$.",
+      "Wochenend-Überstunden erhöhen die Kosten eines Extra-Verkaufs um $8$ Euro gegenüber dem Wochentagsplan.",
+      "Ein Extra-Verkauf erhöht an einem Wochentag den Gewinn.",
+      "Weil der Wochenend-Erlös weiterhin $R'(Q)=15$ ist, gleicht der Wochenend-Grenzgewinn der Wochentagszahl $3$.",
+      "Der Wechsel Wochentag/Wochenende ändert die zu differenzierende Kostenfunktion, nicht die Bedeutung von $R'(Q)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAbleitung von $12Q$ ist $12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$20-12=8$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P_{wd}'=15-12=3>0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nWochenende: $P_{we}'=15-20=-5\\neq 3$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEs wechselt $C$, nicht die Interpretation von $R'$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Wochentag $C'=12$, Wochenende $C'=20$, stets $R'=15$. Grenzgewinn $+3$ bzw. $-5$."
+  },
+  {
+    "case_id": "MATH 11.78",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Extra revenue smaller than extra cost: two shops",
+    "context_en": "A reviewer writes of Shop L: \"At Shop L, the extra euros from a little more output are smaller than the extra euros of cost.\" Shop L also posts $R_L'(Q)=9$ and $P_L'(Q)=-4$. Across the street, Shop M faces the same extra-revenue figure $R_M'(Q)=9$ but reports marginal cost $C_M'(Q)=6$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The reviewer's sentence about Shop L already means $R_L'(Q)<C_L'(Q)$.",
+      "Shop L's implied marginal cost is $C_L'(Q)=13$.",
+      "Shop M does not satisfy the reviewer's sentence.",
+      "A small expansion raises profit at Shop M and lowers profit at Shop L.",
+      "Because both shops have the same $R'(Q)$, they have the same extra-cost figure."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n\"Extra revenue smaller than extra cost\" is precisely the inequality of derivatives\n\n$$\nR_L^{\\prime}(Q)<C_L^{\\prime}(Q)\n$$\n\nThe reviewer's sentence is already that comparison\n\nThe reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\\prime}<C_L^{\\prime}$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → True\n\nFrom $P_L^{\\prime}(Q)=R_L^{\\prime}(Q)-C_L^{\\prime}(Q)$ and the posted numbers,\n\n$$\n-4 = 9-C_L^{\\prime}(Q)\n$$\n\n$$\nC_L^{\\prime}(Q) = 13\n$$\n\nShop L's implied marginal cost is $13$\n\nCheck: $9<13$ matches the reviewer's claim, and $P_L^{\\prime}=9-13=-4$ matches the posted profit slope.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nC_L'(Q) = 13\n$$\n\n$$\nP_L^{\\prime}(Q) = R_L^{\\prime}(Q)-C_L^{\\prime}(Q)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt Shop M, $R_M^{\\prime}(Q)=9>6=C_M^{\\prime}(Q)$, so extra revenue is larger than extra cost.\n\nThat is the opposite of the reviewer's sentence, and Shop M does not satisfy it\n\nAt M, extra revenue exceeds extra cost, which is the opposite of \"extra revenue smaller than extra cost.\"\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR_M^{\\prime}(Q) = 9>6 = C_M^{\\prime}(Q)\n$$\n\nSo the statement is True.",
+      "**D.** → True\n\nShop M has\n\n$$\nP_M^{\\prime}(Q) = 9-6\n$$\n\n$$\n9 - 6 = 3\n$$\n\n$$\nP_M^{\\prime}(Q) = 3 = 3\n$$\n\n$$\nP_M^{\\prime}(Q) = 3>0\n$$\n\nwhile Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L\n\nOpposite signs of $P^{\\prime}$ give opposite expand-or-not advice at the two shops.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**E.** → False\n\nBoth shops share $R^{\\prime}(Q)=9$, but their cost slopes differ: $C_L^{\\prime}(Q)=13$ versus $C_M^{\\prime}(Q)=6$.\n\nSame extra revenue does not force the same extra cost\n\nShared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = 9\n$$\n\n$$\nC_L^{\\prime}(Q) = 13\n$$\n\n$$\nC_M^{\\prime}(Q) = 6\n$$\n\n$$\nR^{\\prime} = 9\n$$\n\n$$\nC_L^{\\prime} = 13\n$$\n\n$$\nC_M^{\\prime} = 6\n$$\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The reviewer's sentence about Shop L means\n$$R_L^{\\prime}(Q)<C_L^{\\prime}(Q).$$\nWith the posted $R_L^{\\prime}=9$ and $P_L^{\\prime}=-4$, rearrange to recover\n$$C_L^{\\prime}=R_L^{\\prime}-P_L^{\\prime}=9-(-4)=13,$$\nwhich indeed satisfies $9<13$. Shop M faces the same $R_M^{\\prime}=9$ but $C_M^{\\prime}=6$, so $9>6$ and M does not satisfy the reviewer's sentence. Marginal profits are\n$$P_M^{\\prime}=9-6=3>0,\\qquad P_L^{\\prime}=-4<0,$$\nso a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ does not force the same extra-cost figure. Shop L: $R'=9$, $P'=-4$ imply $C'=13$ (reviewer's sentence holds). Shop M: $R'=9>C'=6$, so M fails the sentence and should expand.",
+    "title_de_existing": "Zusatzerlös kleiner als Zusatzkosten: zwei Läden",
+    "context_de_existing": "Ein Rezensent schreibt über Laden L: „Bei Laden L sind die Extra-Euro einer kleinen Mengenerhöhung kleiner als die Extra-Euro der Kosten.“ Laden L hängt auch $R_L'(Q)=9$ und $P_L'(Q)=-4$ aus. Gegenüber sieht Laden M denselben Mehrerlös $R_M'(Q)=9$, meldet aber Grenzkosten $C_M'(Q)=6$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Der Satz des Rezensenten über Laden L bedeutet bereits $R_L'(Q)<C_L'(Q)$.",
+      "Die impliziten Grenzkosten von Laden L sind $C_L'(Q)=13$.",
+      "Laden M erfüllt den Satz des Rezensenten nicht.",
+      "Eine kleine Expansion erhöht den Gewinn bei Laden M und senkt ihn bei Laden L.",
+      "Weil beide Läden denselben $R'(Q)$ haben, haben sie dieselbe Mehrkosten-Zahl."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nGenau die Übersetzung des Satzes.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C_L'=R_L'-P_L'=9-(-4)=13$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei M: $9>6$, also nicht $R'<C'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P_M'=3>0$, $P_L'=-4<0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGleicher $R'$ bei verschiedenem $C'$ — verschiedene Mehrkosten.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "L: $C'=13$, $R'<C'$. M: $C'=6$, $R'>C'$. Gleicher $R'$ erzwingt nicht gleiches $C'$."
+  },
+  {
+    "case_id": "MATH 11.79",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Profit itself is piecewise at capacity",
+    "context_en": "A maker of custom lamps can run its workshop smoothly up to capacity $Q=30$. In that range weekly profit is $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$. Beyond capacity every extra lamp requires rushed outsourcing that eats profit: the firm still has the $150$ euros earned at capacity, and then loses $4$ euros on each unit above $30$, written $P(Q)=150-4(Q-30)$ for $Q>30$. Judge every assertion below.",
+    "statements_en": [
+      "For $Q<30$, $P'(Q)=8-\\dfrac{1}{5}Q$.",
+      "At $Q=20$, a small expansion raises profit.",
+      "For $Q>30$, $P'(Q)=-4$.",
+      "Just above $Q=30$, a small expansion raises profit.",
+      "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the pre-capacity piece,\n\n$$\nP(Q) = 8Q-\\dfrac{1}{10}Q^{2}\n$$\n\nDifferentiating term by term:\n\n$$\nP^{\\prime}(Q) = 8-\\dfrac{2}{10}Q\n$$\n\n$$\nP^{\\prime}(Q) = 8-\\dfrac{1}{5}Q\n$$\n\n$$\n\\text{for }Q<30\n$$\n\nThe claim matches\n\nDifferentiate $8Q-\\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\\dfrac{2}{10}Q=-\\dfrac{1}{5}Q$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+      "**B.** → True\n\nAt $Q=20$,\n\n$$\nP^{\\prime}(20) = 8-\\dfrac{1}{5}\\cdot 20\n$$\n\n$$\nP^{\\prime}(20) = 8-4\n$$\n\n$$\n8 - 4 = 4\n$$\n\n$$\nP^{\\prime}(20) = 4 = 4\n$$\n\n$$\nP^{\\prime}(20) = 4>0\n$$\n\nA small expansion raises profit at $Q=20$\n\nAt $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so\n\n$$\nP^{\\prime}(Q) = -4\n$$\n\n$$\n\\text{for }Q>30\n$$\n\nwhich matches the claim\n\nBeyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\nP'(Q) = -4\n$$\n\n$$\nP(Q) = 150-4(Q-30)\n$$\n\nSo the statement is True.",
+      "**D.** → False\n\nJust above capacity the firm is on the outsourcing piece, where $P^{\\prime}(Q)=-4<0$.\n\nA small expansion lowers profit; it does not raise it\n\nJust above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP^{\\prime}(Q) = -4<0\n$$\n\n$$\nQ = 30\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → False\n\n$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.\n\nApproaching $Q=30$ from the left,\n\n$$\nP^{\\prime}(30^{-}) = 8-\\dfrac{1}{5}\\cdot 30\n$$\n\n$$\nP^{\\prime}(30^{-}) = 8-6\n$$\n\n$$\n8 - 6 = 2\n$$\n\n$$\nP^{\\prime}(30^{-}) = 2 = 2\n$$\n\n$$\nP^{\\prime}(30^{-}) = 2\n$$\n\nThe thirtieth unit adds about $2$ euros of profit, not $150$\n\nThe stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Below capacity, $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$, so\n$$P^{\\prime}(Q)=8-\\dfrac{1}{5}Q\\qquad(Q<30).$$\nAt $Q=20$ one has $P^{\\prime}(20)=8-4=4>0$, so a small expansion raises profit. Beyond capacity,\n$$P(Q)=150-4(Q-30)\\qquad(Q>30)$$\nhas constant slope\n$$P^{\\prime}(Q)=-4<0,$$\nso just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit. Below capacity $P^{\\prime}=8-\\dfrac{1}{5}Q$ (positive at $Q=20$); above capacity $P^{\\prime}=-4<0$. The level $P(30)=150$ is not the thirtieth unit's extra profit.",
+    "title_de_existing": "Der Gewinn selbst ist stückweise an der Kapazität",
+    "context_de_existing": "Ein Hersteller von Maßlampen kann seine Werkstatt bis zur Kapazität $Q=30$ reibungslos betreiben. In diesem Bereich ist der Wochengewinn $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$. Darüber hinaus erfordert jede Extra-Lampe hastiges Outsourcing, das Gewinn frisst: die Firma hat weiterhin die bei Kapazität verdienten $150$ Euro und verliert dann $4$ Euro auf jede Einheit über $30$, geschrieben $P(Q)=150-4(Q-30)$ für $Q>30$. Beurteile jede Behauptung.",
+    "statements_de_existing": [
+      "Für $Q<30$ gilt $P'(Q)=8-\\dfrac{1}{5}Q$.",
+      "Bei $Q=20$ erhöht eine kleine Expansion den Gewinn.",
+      "Für $Q>30$ gilt $P'(Q)=-4$.",
+      "Knapp oberhalb von $Q=30$ erhöht eine kleine Expansion den Gewinn.",
+      "$P(30)=150$, also verdient die Firma $150$ Euro Extra-Gewinn aus der dreißigsten Einheit."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDifferenzieren: $P'=8-\\dfrac{1}{5}Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'(20)=8-4=4>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nLinearer Ast mit Steigung $-4$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$P'=-4<0$ — Expansion senkt den Gewinn.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\n$150$ ist der Bestandsgewinn bei Kapazität, nicht der Zuwachs der 30. Einheit.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Unter Kapazität $P'=8-\\frac{1}{5}Q$; darüber $P'=-4$. Bestand $P(30)=150$ ist nicht der marginale Zuwachs."
+  },
+  {
+    "case_id": "MATH 11.80",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Same output, same R', missing different pieces",
+    "context_en": "A café and a nearby kiosk both sold $Q=40$ items today and both report the same extra-revenue figure $R'(40)=3$ euros. Their whiteboards are incomplete in different ways: the café also posts $P'(40)=1$ but hides cost, while the kiosk posts $C'(40)=5$ but hides profit. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The café's implied marginal cost is $C'(40)=2$.",
+      "The kiosk's implied marginal profit is $P'(40)=-2$.",
+      "A small extra item raises profit at the café and lowers profit at the kiosk.",
+      "Because both have the same $R'(40)$ and the same $Q$, they must have the same $C'(40)$.",
+      "The café's report $P'(40)=1$ already equals its profit level $P(40)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFor the café, $P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)$ gives\n\n$$\n1 = 3-C^{\\prime}(40)\n$$\n\n$$\nC^{\\prime}(40) = 2\n$$\n\nThe café's implied marginal cost is $2$\n\nTwo of the three rates determine the third through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; here the café's missing piece is $C^{\\prime}=2$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nC'(40) = 2\n$$\n\n$$\nP^{\\prime}(40) = R^{\\prime}(40)-C^{\\prime}(40)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nFor the kiosk,\n\n$$\nP^{\\prime}(40) = R^{\\prime}(40)-C^{\\prime}(40)\n$$\n\n$$\nP^{\\prime}(40) = 3-5\n$$\n\n$$\n3 - 5 = -2\n$$\n\n$$\nP^{\\prime}(40) = -2 = -2\n$$\n\n$$\nP^{\\prime}(40) = -2\n$$\n\nThe kiosk's implied marginal profit is $-2$\n\nThe kiosk's missing piece is the profit slope: $P^{\\prime}=3-5=-2$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe café has $P^{\\prime}(40)=1>0$, so a small extra item raises café profit.\n\nThe kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit\n\nOpposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the shared $R^{\\prime}(40)=3$.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nP^{\\prime}(40) = 1>0\n$$\n\n$$\nP^{\\prime}(40) = -2<0\n$$\n\n$$\nR^{\\prime}(40) = 3\n$$\n\nSo the statement is True.",
+      "**D.** → False\n\nSame $R^{\\prime}(40)$ and same $Q$ do not force the same cost slope.\n\nThe recovered values are already different: $C^{\\prime}(40)=2$ at the café versus $C^{\\prime}(40)=5$ at the kiosk\n\nThe recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\\prime}$ never forced them to match.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+      "**E.** → False\n\n$P^{\\prime}(40)=1$ is a rate of change of profit.\n\nThe height $P(40)$ of today's profit was never posted and need not equal $1$\n\nA rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.\n\nKeep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.\n\n$$\nP^{\\prime}(40) = 1\n$$\n\n$$\nP'(40) = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Both outlets sold $Q=40$ with the same $R^{\\prime}(40)=3$. The café also posts $P^{\\prime}(40)=1$, so\n$$C^{\\prime}(40)=R^{\\prime}(40)-P^{\\prime}(40)=3-1=2.$$\nThe kiosk posts $C^{\\prime}(40)=5$ instead, so\n$$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2.$$\nA small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and lowers it at the kiosk ($P^{\\prime}=-2<0$). Same $Q$ and same $R^{\\prime}$ do not force the same $C^{\\prime}$. The café's rate $P^{\\prime}(40)=1$ is not its profit level $P(40)$. Café: $P'=1$, $R'=3$ imply $C'=2$ (expand). Kiosk: $C'=5$, $R'=3$ imply $P'=-2$ (do not expand). Same $R'$ does not force same $C'$ or same $P$.",
+    "title_de_existing": "Gleiche Menge, gleiches R', andere fehlende Teile",
+    "context_de_existing": "Ein Café und ein nahegelegener Kiosk verkauften heute beide $Q=40$ Artikel und melden denselben Mehrerlös $R'(40)=3$ Euro. Ihre Whiteboards sind auf verschiedene Weise unvollständig: Das Café hängt auch $P'(40)=1$ aus, versteckt aber die Kosten; der Kiosk hängt $C'(40)=5$ aus, versteckt aber den Gewinn. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die impliziten Grenzkosten des Cafés sind $C'(40)=2$.",
+      "Der implizite Grenzgewinn des Kiosks ist $P'(40)=-2$.",
+      "Ein Extra-Artikel erhöht den Gewinn im Café und senkt ihn im Kiosk.",
+      "Weil beide dasselbe $R'(40)$ und dasselbe $Q$ haben, müssen sie dasselbe $C'(40)$ haben.",
+      "Die Meldung $P'(40)=1$ des Cafés gleicht bereits seinem Gewinnniveau $P(40)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=R'-P'=3-1=2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=R'-C'=3-5=-2$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nCafé $P'>0$, Kiosk $P'<0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nGleicher $R'$ und $Q$ erzwingen nicht gleiches $C'$ — die fehlenden Teile unterscheiden sich.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nRate versus Bestand.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Café: $C'=2$, $P'=1>0$. Kiosk: $P'=-2<0$. Gleicher $R'$ und $Q$ erzwingen nicht gleiches $C'$."
+  },
+  {
+    "case_id": "MATH 11.81",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Workshop lamps: find the daily profit peak",
+    "context_en": "A small workshop sells $Q$ handmade lamps per day. Daily profit in euros is modelled by $$P(Q)=-Q^{2}+12Q-20$$ for $Q\\ge 0$. Here $P(Q)$ denotes daily profit when $Q$ lamps are sold. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "The slope of daily profit is $P'(Q)=-2Q+12$.",
+      "The only daily output where that slope is flat is six lamps.",
+      "At six lamps a day the profit curve bends strictly downward, so that output is a local profit peak.",
+      "At six lamps a day, daily profit equals $16$ euros.",
+      "Because the slope is flat at six lamps, the profit level itself must be zero there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo read how profit changes with lamps sold, differentiate the given daily-profit rule term by term. Starting from\n\n$$\nP(Q) = -Q^{2}+12Q-20,\n$$\n\nthe power rule yields\n\n$$\nP'(Q) = -2Q+12.\n$$\n\nThat derivative *is* the slope of daily profit (marginal profit). It matches the claimed formula exactly — no extra constant term appears.\n\n$$\nP'(Q) = -2Q+12\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nAn interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:\n\n$$\nP'(Q) = -2Q+12 = 0\n$$\n\n$$\n2Q = 12\n$$\n\n$$\nQ = 6.\n$$\n\nOn the domain $Q\\ge 0$ this linear equation has exactly one root. There is no second candidate hiding at another positive output, so six lamps is the unique flat-slope daily output.\n\nSo the statement is True.",
+      "**C.** → True\n\nA flat slope alone does not yet say peak versus trough. The second derivative reads the bend of the profit curve at that critical output:\n\n$$\nP''(Q) = -2\n$$\n\n$$\nP''(6) = -2<0.\n$$\n\nA strictly negative second derivative means the curve bends strictly downward through the flat spot, which is the second-derivative test for a local maximum. Therefore $Q=6$ is a local profit peak.\n\n$$\nQ = 6\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOnce the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:\n\n$$\nP(6) = -6^{2}+12\\cdot 6-20\n$$\n\n$$\nP(6) = -36+72-20\n$$\n\n$$\n-36 + 72 = 36\n$$\n\n$$\n36 - 20 = 16\n$$\n\n$$\nP(6) = 16\n$$\n\nDaily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nA flat slope describes how profit *changes* at that output, not how large profit *is*. The first-order condition $P'(6)=0$ only says the tangent is horizontal; it says nothing about the height $P(6)$. Evaluating the level separately gives\n\n$$\nP(6) = 16\\neq 0.\n$$\n\nZero slope does not force zero profit — confusing the derivative with the function itself is the trap —.\n\n$$\nP'(6) = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Daily profit is the concrete quadratic\n\n$$P(Q)=-Q^{2}+12Q-20,\\qquad Q\\ge 0.$$\n\nDifferentiate once for the slope of profit and again for the bend:\n\n$$P'(Q)=-2Q+12,\\qquad P''(Q)=-2.$$\n\nAn interior candidate solves the flat-slope equation $P'(Q)=0$, which forces the unique non-negative root $Q=6$. Because $P''=-2<0$ everywhere, that flat point is a strict local profit peak. Substituting the peak output into the *level* (not the slope) gives\n\n$$P(6)=-36+72-20=16,$$\n\nso six lamps yield $16$ euros of daily profit. A zero slope never forces the profit level itself to be zero — slope and height are different objects.",
+    "title_de_existing": "Werkstattlampen: Tagesgewinnmaximum finden",
+    "context_de_existing": "Eine kleine Werkstatt verkauft $Q$ handgefertigte Lampen pro Tag. Der Tagesgewinn in Euro wird durch $$P(Q)=-Q^{2}+12Q-20$$ für $Q\\ge 0$ modelliert. Hier bezeichnet $P(Q)$ den Tagesgewinn bei $Q$ verkauften Lampen. Der Besitzer will den outputmaximierenden Gewinn. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Steigung des Tagesgewinns ist $P'(Q)=-2Q+12$.",
+      "Der einzige Tagesoutput, an dem diese Steigung flach ist, sind sechs Lampen.",
+      "Bei sechs Lampen pro Tag biegt die Gewinnkurve streng nach unten, also ist dieser Output ein lokales Gewinnmaximum.",
+      "Bei sechs Lampen pro Tag beträgt der Tagesgewinn $16$ Euro.",
+      "Weil die Steigung bei sechs Lampen flach ist, muss das Gewinnniveau dort null sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDifferenzieren: $P'(Q)=-2Q+12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=0\\Rightarrow Q=6$ (nichtnegativ und eindeutig).\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P''(Q)=-2<0$ — Abwärtskrümmung, lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$P(6)=-36+72-20=16$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nFlache Steigung betrifft $P'$, nicht den Bestand $P(6)=16$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Tagesgewinn $P(Q)=-Q^{2}+12Q-20$. $P'=-2Q+12=0$ bei $Q=6$, und $P''=-2<0$ bestätigt ein lokales Maximum mit $P(6)=16$."
+  },
+  {
+    "case_id": "MATH 11.82",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Café lunch boxes: build profit from revenue and cost",
+    "context_en": "A neighbourhood café sells $Q$ lunch boxes per day. Revenue is $$R(Q)=30Q-Q^{2}$$ euros and total cost is $$C(Q)=Q^{2}+6Q+40$$ euros, for $Q>0$. Daily profit is the difference $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Daily profit simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
+      "Marginal profit (the slope of $P$) is $P'(Q)=-4Q+24$.",
+      "Profit has a flat slope at six lunch boxes a day.",
+      "At six lunch boxes, marginal revenue and marginal cost both equal $18$ euros.",
+      "Because profit's slope is flat at six boxes, the café's profit level equals its cost level there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nProfit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:\n\n$$\nP(Q) = R(Q)-C(Q)\n$$\n\n$$\nP(Q) = (30Q-Q^{2})-(Q^{2}+6Q+40).\n$$\n\nCollect like terms:\n\n$$\nP(Q) = -Q^{2}-Q^{2}+30Q-6Q-40\n$$\n\n$$\nP(Q) = -2Q^{2}+24Q-40.\n$$\n\nThat simplified quadratic matches the claim exactly.\n\nSo the statement is True.",
+      "**B.** → True\n\nMarginal profit is the slope of the profit function. Differentiate the simplified rule term by term:\n\n$$\nP(Q) = -2Q^{2}+24Q-40\n$$\n\n$$\nP'(Q) = -4Q+24.\n$$\n\n(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula.\n\nSo the statement is True.",
+      "**C.** → True\n\nAn interior profit peak requires a flat slope, so set marginal profit to zero and solve:\n\n$$\nP'(Q) = -4Q+24 = 0\n$$\n\n$$\n4Q = 24\n$$\n\n$$\nQ = 6.\n$$\n\nFor $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt a profit peak one also has $R'=C'$ (because $P'=R'-C'$). Compute the separate marginals and evaluate at six boxes:\n\n$$\nR'(Q) = 30-2Q\n$$\n\n$$\nC'(Q) = 2Q+6\n$$\n\n$$\nR'(6) = 30-12\n$$\n\n$$\n30 - 12 = 18\n$$\n\n$$\nR'(6) = 18 = 18\n$$\n\n$$\nC'(6) = 12+6\n$$\n\n$$\n12 + 6 = 18\n$$\n\n$$\nC'(6) = 18 = 18\n$$\n\n$$\n12 + 6 = 18 = 18.\n$$\n\nBoth equal $18$ euros at six boxes, matching the claim\n\nMatching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nFlat profit slope means $P'(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both explicitly:\n\n$$\nP(6) = -2\\cdot 36+24\\cdot 6-40\n$$\n\n$$\nP(6) = -72+144-40\n$$\n\n$$\n-72 + 144 = 72\n$$\n\n$$\n72 - 40 = 32\n$$\n\n$$\nP(6) = 32\n$$\n\n$$\nC(6) = 36+36+40\n$$\n\n$$\n36 + 36 = 72\n$$\n\n$$\n72 + 40 = 112\n$$\n\n$$\nC(6) = 112 = 112\n$$\n\n$$\nC(6) = 112.\n$$\n\nThe levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Revenue and cost are given separately, so daily profit is their difference:\n\n$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.$$\n\nDifferentiate the simplified profit, and keep the separate marginal schedules:\n\n$$P'(Q)=-4Q+24,\\qquad R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.$$\n\nFlat profit solves $P'=0$, giving the unique positive root $Q=6$. At that same output\n\n$$R'(6)=18=C'(6),$$\n\nand the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes are $P(6)=32$ and $C(6)=112$, which are not equal — a flat profit slope does not force $P=C$.",
+    "title_de_existing": "Café-Lunchboxen: Gewinn aus Erlös und Kosten bauen",
+    "context_de_existing": "Ein Nachbarschaftscafé verkauft $Q$ Lunchboxen pro Tag. Der Erlös ist $$R(Q)=30Q-Q^{2}$$ Euro und die Gesamtkosten $$C(Q)=Q^{2}+6Q+40$$ Euro, für $Q>0$. Der Tagesgewinn ist die Differenz $P(Q)=R(Q)-C(Q)$. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Der Tagesgewinn vereinfacht sich zu $P(Q)=-2Q^{2}+24Q-40$.",
+      "Der Grenzgewinn (Steigung von $P$) ist $P'(Q)=-4Q+24$.",
+      "Der Gewinn hat bei sechs Lunchboxen pro Tag eine flache Steigung.",
+      "Bei sechs Lunchboxen sind Grenzerlös und Grenzkosten beide gleich $18$ Euro.",
+      "Weil die Gewinnsteigung bei sechs Boxen flach ist, gleicht das Gewinnniveau des Cafés dort dem Kostenniveau."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$P=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$P'=-4Q+24$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$P'=0\\Rightarrow Q=6$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$R'=30-2Q$, $C'=2Q+6$; bei $Q=6$ beide $18$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$P'=0$ bedeutet $R'=C'$, nicht $P=C$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P=-2Q^{2}+24Q-40$, flach bei $Q=6$ mit $R'=C'=18$. $P'=0$ ist nicht $P=C$."
+  },
+  {
+    "case_id": "MATH 11.83",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Courier vans: minimise daily operating cost",
+    "context_en": "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $$C(Q)=Q^{2}-10Q+40$$ for $Q\\ge 0$. Here $C(Q)$ is daily cost when $Q$ vans are in service. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "Cost has a flat slope only at five vans.",
+      "At five vans the cost curve bends upward, so that fleet size is a local cost trough.",
+      "The trough cost value is $15$ (hundreds of euros).",
+      "Because the slope of cost is flat at five vans, that fleet size must be a local cost peak.",
+      "On $Q\\ge 0$, the global cost minimum is also at five vans."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:\n\n$$\nC'(Q) = 2Q-10 = 0\n$$\n\n$$\n2Q = 10\n$$\n\n$$\nQ = 5.\n$$\n\nThis linear equation has exactly one root, and that root lies in $Q\\ge 0$. So the only flat-slope fleet size is five vans.\n\nSo the statement is True.",
+      "**B.** → True\n\nClassify the critical fleet with the second derivative. Differentiating the slope once more gives a constant bend:\n\n$$\nC''(Q) = 2>0\n$$\n\neverywhere, including at $Q=5$. A positive second derivative means the cost curve bends upward through the flat spot, which is the second-derivative test for a local minimum. Therefore five vans is a local cost trough.\n\nSo the statement is True.",
+      "**C.** → True\n\nEvaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:\n\n$$\nC(5) = 5^{2}-10\\cdot 5+40\n$$\n\n$$\nC(5) = 25-50+40\n$$\n\n$$\n25 - 50 = -25\n$$\n\n$$\n-25 + 40 = 15\n$$\n\n$$\nC(5) = 15 = 15\n$$\n\n$$\nC(5) = 15.\n$$\n\nThe trough cost is $15$ (hundreds of euros), matching the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nFlat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.\n\nA flat slope alone does not decide peak versus trough — that is the classic trap. Here the bend is upward:\n\n$$\nC''(5) = 2>0,\n$$\n\nso five vans is a local *minimum* of cost, not a local maximum. Claiming a local cost peak reverses the correct second-derivative label.\n\nSo the statement is False.",
+      "**E.** → True\n\nGlobal comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.\n\nOn $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally.\n\n$$\nC'' = 2>0\n$$\n\n$$\nQ = 5\\ge 0\n$$\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Daily operating cost is the upward-opening parabola\n\n$$C(Q)=Q^{2}-10Q+40,\\qquad Q\\ge 0.$$\n\nDifferentiate twice:\n\n$$C'(Q)=2Q-10,\\qquad C''(Q)=2>0.$$\n\nThe only flat-slope fleet is $Q=5$. Because $C''>0$, five vans is a local cost *trough* (not a peak). Evaluating the level gives\n\n$$C(5)=25-50+40=15,$$\n\nand since the parabola opens upward with its vertex already inside $Q\\ge 0$, that local trough is also the global cost minimum on the domain. Flat slope alone never decides peak versus trough — the bend does.",
+    "title_de_existing": "Kurierwagen: tägliche Betriebskosten minimieren",
+    "context_de_existing": "Eine Kurierfirma betreibt $Q$ Transporter und modelliert die täglichen Betriebskosten (in Hundertern Euro) durch $$C(Q)=Q^{2}-10Q+40$$ für $Q\\ge 0$. Management will die kostenminimierende Flottengröße. Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Die Kosten haben nur bei fünf Transportern eine flache Steigung.",
+      "Bei fünf Transportern biegt die Kostenkurve nach oben, also ist diese Flottengröße ein lokales Kostental.",
+      "Der Tal-Kostenwert ist $15$ (Hunderte Euro).",
+      "Weil die Kostensteigung bei fünf Transportern flach ist, muss diese Flottengröße ein lokales Kostenmaximum sein.",
+      "Auf $Q\\ge 0$ liegt das globale Kostenminimum ebenfalls bei fünf Transportern."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$C'=2Q-10=0\\Rightarrow Q=5$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$C''=2>0$ — Aufwärtskrümmung, lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$C(5)=25-50+40=15$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$C''>0$ kennzeichnet ein Tal, kein Maximum.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNach oben geöffnete Parabel: das lokale Minimum ist global auf $Q\\ge 0$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$C=Q^{2}-10Q+40$, Minimum bei $Q=5$ mit $C''>0$ und $C(5)=15$. Flache Steigung allein macht kein Maximum."
+  },
+  {
+    "case_id": "MATH 11.84",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two promo scores: flat slope and flat bend at zero",
+    "context_en": "A marketing team compares two campaign-score models near intensity $x=0$: $$A(x)=x^{4}\\qquad\\text{and}\\qquad B(x)=-x^{4}.$$ Decide TRUE or FALSE for each claim.",
+    "statements_en": [
+      "At intensity zero, both scores have a flat slope and a flat second derivative.",
+      "Checking the local shape with the second derivative alone is inconclusive at zero for both scores.",
+      "Even so, intensity zero is a strict local trough of score $A$.",
+      "Even so, intensity zero is a strict local peak of score $B$.",
+      "Because both second derivatives vanish at zero, neither score can have a local peak or trough there."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nDifferentiate each score twice and evaluate at intensity zero. For $A(x)=x^{4}$:\n\n$$\nA'(x) = 4x^{3}\n$$\n\n$$\nA''(x) = 12x^{2}\n$$\n\nso $A'(0)=0$ and $A''(0)=0$. For $B(x)=-x^{4}$:\n\n$$\nB'(x) = -4x^{3}\n$$\n\n$$\nB''(x) = -12x^{2}\n$$\n\nso $B'(0)=0$ and $B''(0)=0$. Both scores therefore have a flat slope *and* a flat second derivative at zero.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe usual second-derivative test needs a strictly negative bend (local peak) or a strictly positive bend (local trough). Here\n\n$$\nA''(0) = 0\n$$\n\n$$\nB''(0) = 0\n$$\n\nso neither bend is strictly signed. The bend test alone therefore cannot classify either critical point — the check is inconclusive for both scores.\n\nSo the statement is True.",
+      "**C.** → True\n\nEven though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\\neq 0$,\n\n$$\nA(x) = x^{4}>0\n$$\n\n$$\nA(x) = A(0).\n$$\n\nSo nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison.\n\n$$\nA''(0) = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nLikewise for the opposite-sign fourth power: for every $x\\neq 0$,\n\n$$\nB(x) = -x^{4}<0\n$$\n\n$$\nB(x) = B(0).\n$$\n\nNearby values sit strictly below the value at zero, so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there. Direct comparison classifies what the bend test could not.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.\n\nVanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The two campaign scores near intensity zero are pure fourth powers of opposite sign:\n\n$$A(x)=x^{4},\\qquad B(x)=-x^{4}.$$\n\nDifferentiate each twice:\n\n$$A'(x)=4x^{3},\\quad A''(x)=12x^{2},$$\n\n$$B'(x)=-4x^{3},\\quad B''(x)=-12x^{2}.$$\n\nAt $x=0$ both first and second derivatives vanish for each score, so the usual second-derivative bend test is inconclusive. Nearby comparison still classifies the points: for every $x\\neq 0$,\n\n$$A(x)=x^{4}>0=A(0),\\qquad B(x)=-x^{4}<0=B(0),$$\n\nso zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishing of $A''$ and $B''$ does not forbid those extrema.",
+    "title_de_existing": "Zwei Promo-Scores: flache Steigung und flache Krümmung bei null",
+    "context_de_existing": "Ein Marketingteam vergleicht zwei Kampagnen-Score-Modelle nahe der Intensität $x=0$: $$A(x)=x^{4}\\qquad\\text{und}\\qquad B(x)=-x^{4}.$$ Entscheide Wahr oder Falsch für jede Behauptung.",
+    "statements_de_existing": [
+      "Bei Intensität null haben beide Scores eine flache Steigung und eine flache zweite Ableitung.",
+      "Die lokale Form allein mit der zweiten Ableitung zu prüfen ist bei null für beide Scores unschlüssig.",
+      "Trotzdem ist Intensität null ein strenges lokales Tal von Score $A$.",
+      "Trotzdem ist Intensität null ein strenges lokales Maximum von Score $B$.",
+      "Weil beide zweiten Ableitungen bei null verschwinden, kann keiner der Scores dort ein lokales Extremum haben."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$A'=4x^{3}$, $A''=12x^{2}$; $B'=-4x^{3}$, $B''=-12x^{2}$ — alle null bei $x=0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$A''(0)=B''(0)=0$ — der übliche Krümmungstest greift nicht.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$A(x)=x^{4}\\ge 0=A(0)$ — strenges lokales (sogar globales) Minimum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$B(x)=-x^{4}\\le 0=B(0)$ — strenges lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVerschwindendes $f''$ schließt Extrema nicht aus — vierte Potenz zeigt es.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bei $x=0$ verschwinden $f'$ und $f''$ für beide. Direktvergleich: $A=x^{4}$ hat ein Tal, $B=-x^{4}$ ein Maximum."
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.26",
+    "title": "Registered Accounts and Special Offers",
+    "context": "Analyze why customers often accept reduced anonymity when loyalty cards deliver tangible price benefits. Evaluate the following economic assertions:",
+    "statements": [
+      "consumer electronics retailers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented consumer electronics retailers always respond later to changing wants because they wait for finished specifications.",
+      "A market-oriented business tailors its offering after examining recorded purchase histories rather than assuming internal preferences suffice.",
+      "Product-oriented consumer electronics retailers never rely on feature quality and depend only on coupons without strong offerings.",
+      "regional supermarket chains using product orientation must first analyse every customer's needs before engineering any product specifications."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Tailoring follows examination of recorded purchase histories in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.27",
+    "title": "Behavioural Data for Personalised Marketing",
+    "context": "Review the collection of buying-behaviour records as a foundation for personalised marketing offers. Evaluate the following economic assertions:",
+    "statements": [
+      "regional supermarket chains practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "Market-oriented managers adjust promotions when recorded purchase histories indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying identified market requirements before final product specifications are locked in.",
+      "regional supermarket chains with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "A market-oriented business tailors its offering after examining identified market requirements rather than assuming internal preferences suffice."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Shifts in recorded purchase histories trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market orientation starts with analysis of identified market requirements prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Tailoring follows examination of identified market requirements in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.28",
+    "title": "Production Focus in Product Orientation",
+    "context": "Consider a vehicle repair garage that emails service reminders and seasonal maintenance coupons to motorists registered on its customer database. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at regional supermarket chains requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at regional supermarket chains preserve complete customer anonymity while still delivering personalised coupons.",
+      "regional supermarket chains cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented regional supermarket chains always respond later to changing wants because they wait for finished specifications.",
+      "Market-oriented managers adjust promotions when identified market requirements indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Shifts in identified market requirements trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.29",
+    "title": "Customer Needs Focus in Market Orientation",
+    "context": "Review market orientation emphasis on customers' needs and wants when deciding what to produce and promote. Evaluate the following economic assertions:",
+    "statements": [
+      "Product-oriented regional supermarket chains never rely on feature quality and depend only on coupons without strong offerings.",
+      "Market-oriented planning begins by studying evolving buyer expectations before final product specifications are locked in.",
+      "fashion garment suppliers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "fashion garment suppliers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "fashion garment suppliers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market orientation starts with analysis of evolving buyer expectations prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.30",
+    "title": "Indispensable Personal Data Sensitivity",
+    "context": "Analyze how sensitive handling of personal data supports sustainable CRM rather than undermining customer trust. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM at fashion garment suppliers requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "Loyalty programmes at fashion garment suppliers preserve complete customer anonymity while still delivering personalised coupons.",
+      "fashion garment suppliers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "A market-oriented business tailors its offering after examining evolving buyer expectations rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when evolving buyer expectations indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Tailoring follows examination of evolving buyer expectations in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shifts in evolving buyer expectations trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.31",
+    "title": "Long-Term CRM Versus One-Off Sales",
+    "context": "Review the long-term relationship goal that distinguishes CRM from one-off transactional selling. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented planning begins by studying segment-specific customer demands before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining segment-specific customer demands rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when segment-specific customer demands indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying feedback gathered from target buyers before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining feedback gathered from target buyers rather than assuming internal preferences suffice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market orientation starts with analysis of segment-specific customer demands prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailoring follows examination of segment-specific customer demands in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shifts in segment-specific customer demands trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market orientation starts with analysis of feedback gathered from target buyers prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailoring follows examination of feedback gathered from target buyers in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.32",
+    "title": "Tailored Product Information by Email",
+    "context": "Consider a regional supermarket chain that analyses household shopping patterns before adjusting product ranges and weekly promotional offers. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented managers adjust promotions when feedback gathered from target buyers indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying preferences expressed through loyalty accounts before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining preferences expressed through loyalty accounts rather than assuming internal preferences suffice.",
+      "Market-oriented managers adjust promotions when preferences expressed through loyalty accounts indicate that prior assumptions no longer hold.",
+      "Market-oriented planning begins by studying requirements revealed by market research before final product specifications are locked in."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Shifts in feedback gathered from target buyers trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market orientation starts with analysis of preferences expressed through loyalty accounts prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailoring follows examination of preferences expressed through loyalty accounts in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shifts in preferences expressed through loyalty accounts trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market orientation starts with analysis of requirements revealed by market research prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.33",
+    "title": "Market Changes Despite Strong Specifications",
+    "context": "Review why neglecting market changes undermines even firms with historically strong product specifications. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented fashion garment suppliers always respond later to changing wants because they wait for finished specifications.",
+      "A market-oriented business tailors its offering after examining requirements revealed by market research rather than assuming internal preferences suffice.",
+      "Product-oriented fashion garment suppliers never rely on feature quality and depend only on coupons without strong offerings.",
+      "software subscription providers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "Market-oriented managers adjust promotions when requirements revealed by market research indicate that prior assumptions no longer hold."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Tailoring follows examination of requirements revealed by market research in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Shifts in requirements revealed by market research trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.34",
+    "title": "Specification-Led Development Traps",
+    "context": "Analyze the product-oriented selling logic that quality features will attract buyers without deep market research. Evaluate the following economic assertions:",
+    "statements": [
+      "Market-oriented planning begins by studying wants signalled through repeat purchase patterns before final product specifications are locked in.",
+      "A market-oriented business tailors its offering after examining wants signalled through repeat purchase patterns rather than assuming internal preferences suffice.",
+      "software subscription providers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "software subscription providers with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "CRM at software subscription providers requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Market orientation starts with analysis of wants signalled through repeat purchase patterns prior to specification decisions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailoring follows examination of wants signalled through repeat purchase patterns in market-oriented development.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.35",
+    "title": "Market-Oriented Response Advantages",
+    "context": "Review the market-oriented response pattern when competitors still centre decisions on internal product specifications. Evaluate the following economic assertions:",
+    "statements": [
+      "Loyalty programmes at software subscription providers preserve complete customer anonymity while still delivering personalised coupons.",
+      "Market-oriented managers adjust promotions when wants signalled through repeat purchase patterns indicate that prior assumptions no longer hold.",
+      "For consumer electronics supplied in hospitality markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "software subscription providers cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "A hospitality supplier of consumer electronics may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Shifts in wants signalled through repeat purchase patterns trigger promotional adjustment under market orientation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for consumer electronics in hospitality hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientations in hospitality consumer electronics markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.36",
+    "title": "CRM Communication and Repeat Visits",
+    "context": "Consider a hotel group that registers guest preferences through loyalty cards in order to tailor room offers and repeat-stay discounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when consumer electronics quality is high in hospitality, markets and customer expectations should not be neglected by the supplier.",
+      "For household groceries supplied in retail fashion markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "Market-oriented software subscription providers always respond later to changing wants because they wait for finished specifications.",
+      "Product-oriented software subscription providers never rely on feature quality and depend only on coupons without strong offerings.",
+      "A retail fashion supplier of household groceries may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Strong consumer electronics features in hospitality do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for household groceries in retail fashion hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientations in retail fashion household groceries markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.37",
+    "title": "Privacy Exchange for Discount Benefits",
+    "context": "Review personal data topics linked to loyalty programmes that trade privacy for discounts and special offers. Evaluate the following economic assertions:",
+    "statements": [
+      "hotel loyalty programmes using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "hotel loyalty programmes practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "hotel loyalty programmes with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "Even when household groceries quality is high in retail fashion, markets and customer expectations should not be neglected by the supplier.",
+      "CRM at hotel loyalty programmes requires deleting all personal records after each transaction to protect anonymity permanently."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Strong household groceries features in retail fashion do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.38",
+    "title": "Balancing Data Collection and Sensitivity",
+    "context": "Analyze how businesses balance customer data collection with the need for sensitive use of personal information. Evaluate the following economic assertions:",
+    "statements": [
+      "For seasonal fashion garments supplied in business software markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when seasonal fashion garments quality is high in business software, markets and customer expectations should not be neglected by the supplier.",
+      "For hotel accommodation services supplied in food service markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A food service supplier of hotel accommodation services may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Orientation suitability for seasonal fashion garments in business software hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in business software seasonal fashion garments markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong seasonal fashion garments features in business software do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for hotel accommodation services in food service hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in food service hotel accommodation services markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.39",
+    "title": "Shared Objectives Across Orientations",
+    "context": "Review orientation differences when both approaches may target customer satisfaction or market share objectives. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when hotel accommodation services quality is high in food service, markets and customer expectations should not be neglected by the supplier.",
+      "For dental care services supplied in financial services markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A financial services supplier of dental care services may share profitability objectives with rivals yet follow different orientation paths.",
+      "For home furniture ranges supplied in healthcare supplies markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A healthcare supplies supplier of home furniture ranges may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Strong hotel accommodation services features in food service do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for dental care services in financial services hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in financial services dental care services markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for home furniture ranges in healthcare supplies hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in healthcare supplies home furniture ranges markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.40",
+    "title": "Needs-Led Product Tailoring",
+    "context": "Consider a fitness studio that offers members discounted classes after recording attendance patterns through personal accounts on its booking platform. Evaluate the following economic assertions:",
+    "statements": [
+      "Under market orientation, a hotel shapes offers from guest preferences rather than pushing a standard product unchanged.",
+      "hotel loyalty programmes cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented hotel loyalty programmes always respond later to changing wants because they wait for finished specifications.",
+      "Even when home furniture ranges quality is high in healthcare supplies, markets and customer expectations should not be neglected by the supplier.",
+      "For online grocery deliveries supplied in home improvement markets, orientation fit depends on the offering itself and how many rivals compete in that category."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Strong home furniture ranges features in healthcare supplies do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for online grocery deliveries in home improvement hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.41",
+    "title": "Feature Reliance in Product Orientation",
+    "context": "Review product-oriented reliance on feature quality as the primary route to market success. Evaluate the following economic assertions:",
+    "statements": [
+      "A home improvement supplier of online grocery deliveries may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when online grocery deliveries quality is high in home improvement, markets and customer expectations should not be neglected by the supplier.",
+      "For fitness class memberships supplied in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A automotive after-sales supplier of fitness class memberships may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when fitness class memberships quality is high in automotive after-sales, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Identical objectives can coexist with different orientations in home improvement online grocery deliveries markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong online grocery deliveries features in home improvement do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for fitness class memberships in automotive after-sales hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in automotive after-sales fitness class memberships markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong fitness class memberships features in automotive after-sales do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.42",
+    "title": "Anticipating Shifts in Customer Wants",
+    "context": "Analyze early response to changing needs and wants as a competitive edge for market-oriented firms. Evaluate the following economic assertions:",
+    "statements": [
+      "For corporate catering menus supplied in education technology markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A education technology supplier of corporate catering menus may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when corporate catering menus quality is high in education technology, markets and customer expectations should not be neglected by the supplier.",
+      "Product-oriented hotel loyalty programmes never rely on feature quality and depend only on coupons without strong offerings.",
+      "For bookshop inventory selections supplied in leisure travel markets, orientation fit depends on the offering itself and how many rivals compete in that category."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Orientation suitability for corporate catering menus in education technology hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in education technology corporate catering menus markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong corporate catering menus features in education technology do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Orientation suitability for bookshop inventory selections in leisure travel hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.43",
+    "title": "Contextual Orientation Suitability",
+    "context": "Review the contextual factors—product type and competitor numbers—that shape orientation suitability. Evaluate the following economic assertions:",
+    "statements": [
+      "dental membership schemes using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "dental membership schemes practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "A leisure travel supplier of bookshop inventory selections may share profitability objectives with rivals yet follow different orientation paths.",
+      "dental membership schemes with identical profitability targets must also follow identical product-versus-market orientation processes.",
+      "Even when bookshop inventory selections quality is high in leisure travel, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientations in leisure travel bookshop inventory selections markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Strong bookshop inventory selections features in leisure travel do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.44",
+    "title": "Coupon-Driven CRM Retention",
+    "context": "Consider a cosmetics producer that emphasises laboratory formulation and product features before studying shifting consumer beauty trends. Evaluate the following economic assertions:",
+    "statements": [
+      "For vehicle maintenance services supplied in specialty cosmetics markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "CRM at dental membership schemes requires deleting all personal records after each transaction to protect anonymity permanently.",
+      "A specialty cosmetics supplier of vehicle maintenance services may share profitability objectives with rivals yet follow different orientation paths.",
+      "Loyalty programmes at dental membership schemes preserve complete customer anonymity while still delivering personalised coupons.",
+      "Even when vehicle maintenance services quality is high in specialty cosmetics, markets and customer expectations should not be neglected by the supplier."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Orientation suitability for vehicle maintenance services in specialty cosmetics hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Crm retains data to mail or email newsletters, coupons, and product information for repeat business.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Identical objectives can coexist with different orientations in specialty cosmetics vehicle maintenance services markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customers often willingly give up anonymity through loyalty cards and accounts for discounts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Strong vehicle maintenance services features in specialty cosmetics do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.45",
+    "title": "Willing Anonymity Surrender via Loyalty",
+    "context": "Review willing surrender of anonymity through registered accounts that unlock personalised pricing benefits. Evaluate the following economic assertions:",
+    "statements": [
+      "For cosmetic beauty products supplied in hospitality markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A hospitality supplier of cosmetic beauty products may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when cosmetic beauty products quality is high in hospitality, markets and customer expectations should not be neglected by the supplier.",
+      "For family holiday packages supplied in retail fashion markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A retail fashion supplier of family holiday packages may share profitability objectives with rivals yet follow different orientation paths."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Orientation suitability for cosmetic beauty products in hospitality hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in hospitality cosmetic beauty products markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong cosmetic beauty products features in hospitality do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for family holiday packages in retail fashion hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in retail fashion family holiday packages markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.46",
+    "title": "Purchase History and Custom Offers",
+    "context": "Analyze buying-behaviour databases as inputs to customised product information and promotional targeting. Evaluate the following economic assertions:",
+    "statements": [
+      "Even when family holiday packages quality is high in retail fashion, markets and customer expectations should not be neglected by the supplier.",
+      "For artisan bakery products supplied in business software markets, orientation fit depends on the offering itself and how many rivals compete in that category.",
+      "A business software supplier of artisan bakery products may share profitability objectives with rivals yet follow different orientation paths.",
+      "Even when artisan bakery products quality is high in business software, markets and customer expectations should not be neglected by the supplier.",
+      "CRM programmes may use email newsletters to encourage customers to return and buy again among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Strong family holiday packages features in retail fashion do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Orientation suitability for artisan bakery products in business software hinges on product traits and competitor numbers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientations in business software artisan bakery products markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Strong artisan bakery products features in business software do not justify ignoring market and customer expectations.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.47",
+    "title": "Contemporary Market Orientation Shift",
+    "context": "Review the shift from product-first thinking towards customer-needs analysis in contemporary marketing practice. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use email newsletters to maintain contact between purchase occasions among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to reward loyal buyers with ongoing incentives among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Email newsletters within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.48",
+    "title": "Persistent Customer Expectation Relevance",
+    "context": "Consider a neighbourhood bakery that refines recipes and packaging before testing whether local customers actually prefer sweeter or healthier alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "dental membership schemes cannot tailor offers because collecting buying-behaviour data is unrelated to CRM practice.",
+      "Market-oriented dental membership schemes always respond later to changing wants because they wait for finished specifications.",
+      "Product-oriented dental membership schemes never rely on feature quality and depend only on coupons without strong offerings.",
+      "CRM programmes may use email newsletters to sustain engagement beyond single transactions among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to build durable commercial relationships with buyers among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Businesses collect behavioural data to tailor offers to personal preferences.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market-oriented firms anticipate and respond earlier than product-oriented competitors.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Product orientation mainly relies on the quality of product features for market success.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Email newsletters within CRM can sustain engagement beyond single transactions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can build durable commercial relationships with buyers when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.49",
+    "title": "CRM Sustaining Repeat Business",
+    "context": "Review CRM's role in sustaining repeat business through informed contact rather than isolated transactions. Evaluate the following economic assertions:",
+    "statements": [
+      "CRM programmes may use email newsletters to prompt additional visits through informed contact among customers whose data the business retains responsibly.",
+      "CRM programmes may use email newsletters to foster continuity rather than one-off sales among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to encourage customers to return and buy again among customers whose data the business retains responsibly.",
+      "furniture manufacturers using product orientation must first analyse every customer's needs before engineering any product specifications.",
+      "CRM programmes may use posted coupon mailings to maintain contact between purchase occasions among customers whose data the business retains responsibly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Email newsletters within CRM can prompt additional visits through informed contact when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email newsletters within CRM can foster continuity rather than one-off sales when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Posted coupon mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.50",
+    "title": "Ethical Handling of CRM Personal Data",
+    "context": "Analyze sensitive personal data handling as a prerequisite for ethical CRM in loyalty-driven businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "furniture manufacturers practising market orientation can ignore customer expectations whenever internal feature quality is high.",
+      "CRM programmes may use posted coupon mailings to strengthen long-term customer relationships among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to support repeat purchasing behaviour among customers whose data the business retains responsibly.",
+      "CRM programmes may use posted coupon mailings to keep customers informed about relevant products among customers whose data the business retains responsibly.",
+      "furniture manufacturers with identical profitability targets must also follow identical product-versus-market orientation processes."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Markets and customer expectations should not be neglected even with strong features.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Posted coupon mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Posted coupon mailings within CRM can keep customers informed about relevant products when personal data is used sensitively.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Identical objectives can coexist with different orientation starting points.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

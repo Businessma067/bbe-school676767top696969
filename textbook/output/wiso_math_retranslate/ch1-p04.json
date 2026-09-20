@@ -1,0 +1,1032 @@
+[
+  {
+    "case_id": "MATH 1.87",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "One Losing Game as a Counterexample to a Scoring Rule",
+    "context_en": "A sports fan claims: \"If a player scores over 30 points in a game, the team wins.\" In one game, Player X scored 35 points, but the team lost 90-95.",
+    "statements_en": [
+      "This specific game is a valid counterexample that disproves the fan's general rule.",
+      "Given this counterexample, the statement \"there exists a game where a player scored over 30 points and the team did not win\" is true.",
+      "Since the original rule is false, its contrapositive, \"If the team does not win, then no player scored over 30 points,\" must also be false.",
+      "Because the original rule is false, its converse, \"If the team wins, then some player scored over 30 points,\" is therefore also automatically false.",
+      "The inverse, \"If a player does not score over 30 points, the team does not win,\" has a truth value that is independent of the original rule's truth value."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\n$Score>30$ and loss falsifies $Score>30\\Rightarrow Win$.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe same game witnesses $\\exists$ (score$>30$ and not win).\n\nSo the statement is True.",
+      "**C.** → True\n\nA false implication has a false contrappositive as well.\n\nSo the statement is True.",
+      "**D.** → False\n\nConverse may still be true or false independently; falsity of the original does not decide it.\n\nSo the statement is False.",
+      "**E.** → True\n\nInverse $\\Leftrightarrow$ converse, so they share a truth value.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "For a single game write $P$ for some player scoring over $30$ points and $Q$ for the team winning. The fan claims $P \\Rightarrow Q$ for every game.\n\nAn implication fails only on $P$ true and $Q$ false. The contrapositive $\\neg Q \\Rightarrow \\neg P$ always agrees with the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ form a separate pair.\n\nIn the reported game Player X scored $35$ and the team lost $90$-$95$.",
+    "title_de_existing": "Ein verlorenes Spiel als Gegenbeispiel zu einer Punkte-Regel",
+    "context_de_existing": "Ein Fan behauptet: „Wenn eine Spielerin in einem Spiel über 30 Punkte erzielt, gewinnt das Team.“ In einem Spiel erzielte Spielerin X 35 Punkte, das Team verlor jedoch 90–95.",
+    "statements_de_existing": [
+      "Dieses konkrete Spiel ist ein gültiges Gegenbeispiel, das die allgemeine Regel des Fans widerlegt.",
+      "Angesichts dieses Gegenbeispiels ist die Aussage „es gibt ein Spiel, in dem eine Spielerin über 30 Punkte erzielte und das Team nicht gewann“ wahr.",
+      "Da die Originalregel falsch ist, ist auch ihre Kontraposition „Wenn das Team nicht gewinnt, dann erzielt keine Spielerin über 30 Punkte“ falsch.",
+      "Weil die Originalregel falsch ist, muss auch ihre Umkehrung „Wenn das Team gewinnt, dann erzielt irgendeine Spielerin über 30 Punkte“ falsch sein.",
+      "Die Form „Wenn keine Spielerin über 30 Punkte erzielt, gewinnt das Team nicht“ hat denselben Wahrheitswert wie die Umkehrung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPrämisse wahr, Konklusion falsch — klassisches Gegenbeispiel zu $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDasselbe Spiel ist Zeuge für die Existenzaussage.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nKontraposition ist äquivalent; mit dem Original fällt auch sie.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nUmkehrung und Original sind unabhängig; die Umkehrung kann wahr bleiben.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung $Q\\Rightarrow P$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Ein Spiel mit $>30$ Punkten und Niederlage widerlegt $P\\Rightarrow Q$ und damit auch die Kontraposition. Die Umkehrung ist ein anderes Paar und fällt nicht automatisch."
+  },
+  {
+    "case_id": "MATH 1.88",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A grading curve rule",
+    "context_en": "A professor's rule: “A student receives a B or higher if and only if their exam score is at least 70 - unless the professor applies a curve, in which case a score of at least 60 suffices for a B or higher.” In a particular exam, the professor did apply a curve. Student W scored 65.",
+    "statements_en": [
+      "Student W receives a B or higher on this exam.",
+      "If the curve had not been applied, Student W would still receive a B or higher.",
+      "The curve strictly lowers the threshold needed for a B or higher - it never raises it, based on how the rule is described.",
+      "A student who scored 62 would receive a B or higher only if the curve is applied.",
+      "The phrase “if and only if” in the rule means that scoring at least 70 is both necessary and sufficient for a B or higher under all circumstances, curve or no curve."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCurve applied, so threshold $60$. Score $65\\ge 60$, so W gets B or higher.\n\nSo the statement is True.",
+      "**B.** → False\n\nWithout the curve, threshold $70$. Score $65<70$, so W would not get B or higher.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe curve replaces $70$ with $60$, a strictly lower threshold.\n\nSo the statement is True.",
+      "**D.** → True\n\nScore $62$ is below $70$ but at least $60$, so it needs the curve.\n\nSo the statement is True.",
+      "**E.** → False\n\nUnder a curve, $70$ is no longer necessary — $60$ suffices. The iff is not absolute under all circumstances.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $s$ for the exam score. With no curve, a B or higher holds if and only if $s \\ge 70$. With a curve, a B or higher holds if and only if $s \\ge 60$.\n\nThis exam used a curve. Student W scored $65$.",
+    "title_de_existing": "Eine Notenkurven-Regel",
+    "context_de_existing": "Professorenregel: „Eine Studierende erhält B oder besser genau dann, wenn ihre Prüfungsnote mindestens 70 beträgt — es sei denn, die Professorin wendet eine Kurve an; dann reicht eine Note von mindestens 60 für B oder besser.“ In dieser Prüfung wurde die Kurve angewendet. Studierende W hat 65 Punkte.",
+    "statements_de_existing": [
+      "Studierende W erhält in dieser Prüfung B oder besser.",
+      "Ohne Kurve hätte Studierende W trotzdem B oder besser erhalten.",
+      "Die Kurve senkt die Schwelle für B oder besser — sie erhöht sie laut Regel nicht.",
+      "Eine Studierende mit 62 Punkten erhält B oder besser nur, wenn die Kurve angewendet wird.",
+      "Die Formulierung „genau dann, wenn“ bedeutet, dass mindestens 70 sowohl notwendig als auch hinreichend für B oder besser ist — unabhängig davon, ob eine Kurve angewendet wird."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nMit Kurve reicht $60$; $65\\ge 60$, also B oder besser.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nOhne Kurve gilt Schwelle $70$; $65<70$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Kurve ersetzt 70 durch 60 und senkt damit die Schwelle.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\n$62$ liegt unter 70, aber über/gleich 60 — braucht die Kurve.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nMit Kurve ist 70 nicht mehr notwendig; 60 reicht. Die Bikonditional gilt nur im Standardfall ohne Kurve.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Standard: B+ genau bei Note $\\ge 70$. Mit Kurve: $\\ge 60$. W mit 65 besteht nur wegen der Kurve. Die Bikonditional mit 70 gilt nicht unter der Kurve."
+  },
+  {
+    "case_id": "MATH 1.89",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Gear teeth and coprimality",
+    "context_en": "Two meshing gears wear evenly over time only if their tooth counts m and n are coprime, meaning gcd(m, n) = 1 (equivalently, no prime number divides both m and n). A machinist is checking two candidate gear pairs: Pair 1 has tooth counts 15 and 28. Pair 2 has tooth counts 24 and 36.",
+    "statements_en": [
+      "Pair 1 (15 and 28) is coprime, so this pair will wear evenly.",
+      "Pair 2 (24 and 36) is coprime.",
+      "The correct negation of \"m and n are coprime\" is: \"there exists a prime p such that p divides m and p divides n.\"",
+      "If m and n are coprime and both are greater than 1, then m and n cannot both be even numbers.",
+      "Every coprime pair of integers greater than 1 must include at least one prime number."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFactor the two counts:\n\n$$15 = 3 \\times 5,$$\n\n$$\n28 = 2^{2} \\times 7\n$$\n\nThe prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\mathrm{gcd}(15,28)=1$. Pair 1 is coprime and therefore meets the even-wear test.\n\nThat matches the claim.\n\nSo the statement is True.",
+      "**B.** → False\n\nFactor Pair 2:\n\n$$24 = 2^{3} \\times 3,$$\n\n$$\n36 = 2^{2} \\times 3^{2}\n$$\n\nBoth $2$ and $3$ appear on each side. Taking the smaller power of each shared prime gives\n\n$$\n\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1\n$$\n\nPair 2 is not coprime.\n\nSo the statement is False.",
+      "**C.** → True\n\nCoprime means that every prime fails to divide at least one of the two numbers:\n\n$$\\forall p\\,\\bigl(\\mathrm{Prime}(p)\\Rightarrow(p\\nmid m\\lor p\\nmid n)\\bigr)$$\n\nNegating the universal flips the quantifier and both failures:\n\n$$\\exists p\\,\\bigl(\\mathrm{Prime}(p)\\land p\\mid m\\land p\\mid n\\bigr)$$\n\nThat is exactly the quoted negation.\n\nSo the statement is True.",
+      "**D.** → True\n\nProof by contradiction starts by assuming the forbidden combination. If both numbers were even, then\n\n$$2\\mid m$$\n\nand\n\n$$2\\mid n$$\n\nso they would share the prime factor $2$:\n\n$$\\mathrm{gcd}(m,n)\\ge2$$\n\nThis contradicts $\\mathrm{gcd}(m,n)=1$. A coprime pair cannot contain two even numbers.\n\nSo the statement is True.",
+      "**E.** → False\n\nDisprove the universal claim with one counterexample. Pair 1 has two composite numbers:\n\n$$15 = 3\\times5,$$\n\n$$\n28 = 2^{2}\\times7\n$$\n\nTheir prime-factor sets are disjoint, so\n\n$$\\mathrm{gcd}(15,28)=1$$\n\nThus a coprime pair greater than $1$ can contain no prime number at all. This pair refutes “every coprime pair includes a prime,”.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Two whole numbers are coprime when $\\mathrm{gcd}(m,n)=1$, equivalently when no prime divides both. Pair 1 has tooth counts $15$ and $28$. Pair 2 has tooth counts $24$ and $36$.\n\nThe negation of \"coprime\" is that some prime divides both. Two even numbers always share the prime $2$. Coprime numbers need not themselves be prime.",
+    "title_de_existing": "Zahnradzähne und Teilerfremdheit",
+    "context_de_existing": "Zwei kämmende Zahnräder nutzen sich langfristig nur dann gleichmäßig ab, wenn ihre Zähnezahlen $m$ und $n$ teilerfremd sind, also $\\gcd(m,n)=1$ (äquivalent: keine Primzahl teilt beide). Betrachte Paar 1: $m=15$, $n=28$; Paar 2: $m=24$, $n=36$.",
+    "statements_de_existing": [
+      "Paar 1 ($15$ und $28$) ist teilerfremd, daher nutzt sich dieses Paar gleichmäßig ab.",
+      "Paar 2 ($24$ und $36$) ist teilerfremd.",
+      "Die korrekte Negation von „$m$ und $n$ sind teilerfremd“ lautet: „Es gibt eine Primzahl $p$, die sowohl $m$ als auch $n$ teilt.“",
+      "Sind $m$ und $n$ teilerfremd und beide größer als 1, dann können $m$ und $n$ nicht beide gerade sein.",
+      "Jedes teilerfremde Paar ganzer Zahlen größer als 1 enthält mindestens eine Primzahl."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$$15=3\\cdot 5$$\n\n$$28=2^{2}\\cdot 7$$\n\nKein gemeinsamer Primfaktor, $\\gcd=1$. Nach der Regel gleichmäßige Abnutzung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$$24=2^{3}\\cdot 3$$\n\n$$36=2^{2}\\cdot 3^{2}$$\n\nGemeinsamer Faktor $2$ (und $3$), nicht teilerfremd.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nNicht teilerfremd heißt: es gibt einen gemeinsamen Primteiler.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeide gerade $\\Rightarrow$ $2$ teilt beide $\\Rightarrow$ nicht teilerfremd.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGegenbeispiel $8$ und $9$: teilerfremd, keine der beiden Zahlen ist prim.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Teilerfremdheit bedeutet $\\gcd=1$. Paar $(15,28)$ ja, $(24,36)$ nein. Beide gerade ist unmöglich bei Teilerfremdheit $>1$. Teilerfremde Zahlen müssen nicht prim sein."
+  },
+  {
+    "case_id": "MATH 1.90",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A subscription renewal and refund policy",
+    "context_en": "A policy: “If a subscriber cancels at least 3 days before the renewal date, the subscription does not renew and no charge applies. If a subscriber cancels fewer than 3 days before the renewal date, the subscription still renews, but a partial refund is issued afterward if and only if the subscriber had used less than 10% of the service during that period.” Subscriber K cancelled 2 days before the renewal date and had used 15% of the service that period.",
+    "statements_en": [
+      "Subscriber K's subscription renews (K is charged for the next period).",
+      "Subscriber K receives a partial refund.",
+      "If K had used only 5% of the service instead, K would have received a partial refund.",
+      "If K had cancelled 4 days before the renewal date instead of 2, the subscription would not have renewed, and the 15% usage figure would then be irrelevant to any refund consideration.",
+      "The refund condition (usage below 10%) applies regardless of how many days before the renewal date the subscriber cancels."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCancel at $2$ days $<3$, so the subscription still renews.\n\nSo the statement is True.",
+      "**B.** → False\n\nRefund requires usage $<10\\%$. Usage $15\\%$ fails, so no refund.\n\nSo the statement is False.",
+      "**C.** → True\n\nWith usage $5\\%<10\\%$ and late cancel, the refund biconditional pays.\n\nSo the statement is True.",
+      "**D.** → True\n\nCancel at $4$ days $\\ge 3$: no renewal and no charge; usage is irrelevant.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe refund clause applies only to the late-cancel branch, not to early cancels.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Let $d$ be the number of days between cancelling and the renewal date, and $u$ the share of the service used.\n\nIf $d \\ge 3$: no renewal and no charge. Usage is not consulted.\n\nIf $d < 3$: the subscription renews, and a partial refund is issued if and only if $u < 10\\%$.\n\nSubscriber K cancelled $2$ days before renewal and used $15\\%$.",
+    "title_de_existing": "Abo-Verlängerung und Rückerstattungsrichtlinie",
+    "context_de_existing": "Regel: „Wenn eine Abonnentin mindestens 3 Tage vor dem Verlängerungsdatum kündigt, verlängert sich das Abo nicht und es fällt keine Gebühr an. Wenn sie weniger als 3 Tage vorher kündigt, verlängert sich das Abo; sie erhält aber eine Teilrückerstattung, falls sie weniger als 10% des Dienstes genutzt hat.“ Abonnentin K kündigt 2 Tage vorher und hat 40% genutzt.",
+    "statements_de_existing": [
+      "Das Abo von K verlängert sich (K wird für die nächste Periode belastet).",
+      "K erhält eine Teilrückerstattung.",
+      "Hätte K nur 5% genutzt, hätte K eine Teilrückerstattung erhalten.",
+      "Hätte K 4 Tage statt 2 Tage vorher gekündigt, würde sich das Abo nicht verlängern.",
+      "Die Rückerstattungsbedingung (Nutzung unter 10%) gilt unabhängig davon, wie viele Tage vor der Verlängerung gekündigt wird."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKündigung 2 Tage vorher ($<3$) erzwingt Verlängerung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nNutzung $40\\%\\ge 10\\%$; keine Teilrückerstattung.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nBei Kündigung $<3$ Tage und Nutzung $<10\\%$ greift die Rückerstattung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKündigung $\\ge 3$ Tage vorher verhindert Verlängerung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Rückerstattung ist nur im Fall der späten Kündigung vorgesehen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Früh ($\\ge 3$ Tage): keine Verlängerung. Spät: Verlängerung, Rückerstattung nur bei Nutzung $<10\\%$. K verlängert ohne Rückerstattung."
+  },
+  {
+    "case_id": "MATH 1.91",
+    "short_letters": [
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Negation and Violation of a Fever-Antibiotics Guideline",
+    "context_en": "A clinical guideline states: \"If a patient has a fever above 38°C, then antibiotics are prescribed.\"",
+    "statements_en": [
+      "The negation of the guideline is: \"A patient has a fever above 38°C and is not prescribed antibiotics.\" If observed, this would show the guideline was violated.",
+      "A patient with a temperature of exactly 38.0°C who is not prescribed antibiotics is a valid counterexample to the guideline.",
+      "The inverse, \"If a patient's fever is not above 38°C, they are not prescribed antibiotics,\" could be false in practice - e.g. a patient with a bacterial infection and only 37.5°C fever might still receive antibiotics.",
+      "The converse, \"If a patient is prescribed antibiotics, their fever is above 38°C,\" is logically guaranteed by the original guideline.",
+      "A proof by contradiction of \"not every patient prescribed antibiotics has a fever above 38°C\" would begin by assuming the opposite - that every such patient DOES have a fever above 38°C - and then exhibit a real case (like the one in part c) that violates that assumption."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNegation of $F\\Rightarrow A$ is $F\\wedge\\neg A$.\n\nSo the statement is True.",
+      "**B.** → False\n\nExactly $38.0$ is not above $38$, so the antecedent fails; not a counterexample.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe inverse can fail independently of the original.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe converse is not guaranteed by the original.\n\nSo the statement is False.",
+      "**E.** → True\n\nContradiction proof of “not every antibiotic patient has fever $>38$” assumes every such patient does.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Write $P$ for a fever strictly above $38^{\\circ}\\mathrm{C}$ and $Q$ for antibiotics prescribed. The guideline is\n\n$$P \\Rightarrow Q$$\n\nAn implication fails only on $P \\land \\neg Q$. The inverse is $\\neg P \\Rightarrow \\neg Q$. The converse is $Q \\Rightarrow P$. The test \"above $38$\" is a strict inequality, so a reading of exactly $38.0$ makes $P$ false.",
+    "title_de_existing": "Negation und Verletzung einer Fieber-Antibiotika-Leitlinie",
+    "context_de_existing": "Eine klinische Leitlinie besagt: „Wenn eine Patientin Fieber über 38°C hat, dann werden Antibiotika verordnet.“",
+    "statements_de_existing": [
+      "Die Negation der Leitlinie lautet: „Eine Patientin hat Fieber über 38°C und erhält keine Antibiotika.“ Falls beobachtet, widerlegt das die Leitlinie.",
+      "Eine Patientin mit genau 38,0°C ohne Antibiotika ist ein gültiges Gegenbeispiel zur Leitlinie.",
+      "Die Form „Wenn das Fieber nicht über 38°C liegt, werden keine Antibiotika verordnet“ kann in der Praxis falsch sein.",
+      "Die Umkehrung „Wenn Antibiotika verordnet werden, liegt das Fieber über 38°C“ ist durch die Originalleitlinie logisch garantiert.",
+      "Ein Widerspruchsbeweis von „nicht jede Patientin mit Antibiotika hat Fieber über 38°C“ beginnt mit der Annahme, dass jede solche Patientin Fieber über 38°C hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation von $P\\Rightarrow Q$ ist $P\\land\\neg Q$. Beobachtet widerlegt das die Leitlinie.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Leitlinie verlangt Fieber streng über $38^{\\circ}\\mathrm{C}$. Genau $38{,}0$ erfüllt die Prämisse nicht.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$\\neg P\\Rightarrow\\neg Q$ folgt nicht aus $P\\Rightarrow Q$ und kann falsch sein.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Umkehrung folgt nicht aus der Originalimplikation.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWiderspruch zur Existenzaussage „nicht alle …“ startet mit der Allannahme.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Fieber $>38^{\\circ}\\mathrm{C}$ und $Q$: Antibiotika gilt $P\\Rightarrow Q$. Negation ist $P\\land\\neg Q$. Umkehrung und $\\neg P\\Rightarrow\\neg Q$ folgen nicht."
+  },
+  {
+    "case_id": "MATH 1.92",
+    "short_letters": [
+      0,
+      1
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "title_en": "A Weak Password That Meets a Length-Only Security Rule",
+    "context_en": "A security policy claims: \"If a password is at least 12 characters, it is classified as strong.\" The password \"aaaaaaaaaaaa\" has 12 identical letters and is not classified as strong because of its low complexity.",
+    "statements_en": [
+      "The password \"aaaaaaaaaaaa\" is a genuine counterexample showing that the policy is false as an absolute rule.",
+      "The converse, \"If a password is strong, it is at least 12 characters,\" is a logically separate claim whose truth must be checked independently of the original.",
+      "An 8-character, highly randomized password not classified as strong under this system directly disproves the converse.",
+      "The inverse, \"If a password is under 12 characters, it is not strong,\" is logically equivalent to the contrapositive - so its truth cannot be inferred from the converse.",
+      "Since the contrapositive of a false statement can sometimes still be true, we cannot determine whether \"If a password is not strong, it is under 12 characters\" is true or false without checking it separately from the original policy."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nLength $12$ yet not strong falsifies “length$\\ge 12\\Rightarrow$ strong.”\n\nSo the statement is True.",
+      "**B.** → True\n\nConverse is a separate claim.\n\nSo the statement is True.",
+      "**C.** → False\n\nAn $8$-character weak password does not touch the policy’s antecedent.\n\nSo the statement is False.",
+      "**D.** → False\n\nInverse $\\Leftrightarrow$ converse, not the original.\n\nSo the statement is False.",
+      "**E.** → False\n\nContrapositive of a false implication is also false; it is determined.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $P$ for a password of length at least $12$ and $Q$ for the password being classified as strong. The policy claims $P \\Rightarrow Q$ for every password.\n\nThe original pairs with the contrapositive $\\neg Q \\Rightarrow \\neg P$. The converse $Q \\Rightarrow P$ pairs with the inverse $\\neg P \\Rightarrow \\neg Q$.\n\nThe password \"aaaaaaaaaaaa\" has length $12$ and is not classified as strong.",
+    "title_de_existing": "Ein schwaches Passwort, das eine nur-Längen-Sicherheitsregel erfüllt",
+    "context_de_existing": "Eine Sicherheitsrichtlinie behauptet: „Wenn ein Passwort mindestens 12 Zeichen hat, wird es als stark eingestuft.“ Das Passwort „aaaaaaaaaaaa“ hat 12 gleiche Buchstaben und wird wegen geringer Komplexität nicht als stark eingestuft.",
+    "statements_de_existing": [
+      "Das Passwort „aaaaaaaaaaaa“ ist ein echtes Gegenbeispiel und zeigt, dass die Richtlinie als absolute Regel falsch ist.",
+      "Die Umkehrung „Wenn ein Passwort stark ist, hat es mindestens 12 Zeichen“ ist eine logisch getrennte Behauptung, deren Wahrheit separat geprüft werden muss.",
+      "Ein 8-Zeichen-Passwort mit hoher Zufälligkeit, das in diesem System nicht als stark gilt, widerlegt direkt die Umkehrung.",
+      "Die Form „Wenn ein Passwort unter 12 Zeichen hat, ist es nicht stark“ ist logisch äquivalent zur Kontraposition — also wahr genau dann, wenn die Originalrichtlinie wahr ist.",
+      "Da die Kontraposition einer falschen Aussage manchmal trotzdem wahr sein kann, lässt sich nicht bestimmen, ob „Wenn ein Passwort nicht stark ist, hat es unter 12 Zeichen“ wahr ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nLänge $12$, aber nicht stark: $P\\land\\neg Q$ widerlegt $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nUmkehrung und Original sind unabhängig.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nEin schwaches kurzes Passwort ist $\\neg P\\land\\neg Q$ und trifft die Umkehrung $Q\\Rightarrow P$ nicht.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung, nicht zur Kontraposition.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nKontraposition ist immer äquivalent zum Original; mit dem Original fällt auch sie.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $P$: Länge $\\ge 12$ und $Q$: stark gilt die Richtlinie $P\\Rightarrow Q$. „aaaaaaaaaaaa“ widerlegt sie und damit die Kontraposition. Umkehrung und $\\neg P\\Rightarrow\\neg Q$ sind ein anderes Paar."
+  },
+  {
+    "case_id": "MATH 1.93",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Factory batch inspection",
+    "context_en": "A factory manager claims: \"All 500 microchips in Batch 12 pass the stress test.\" During inspection, chip #317 in Batch 12 is found to have failed the stress test. Separately, Batch 13 was cancelled before production began, so it contains zero chips.",
+    "statements_en": [
+      "The manager's claim about Batch 12 is false.",
+      "The correct negation of the manager's claim is: \"All chips in Batch 12 fail the stress test.\"",
+      "The statement \"All chips in Batch 13 pass the stress test\" is vacuously true.",
+      "\"For every chip that failed, there exists a defect code explaining that specific failure\" means exactly the same thing as \"There exists a single defect code that explains every chip that failed.\"",
+      "The fact that chip #317 failed is, by itself, enough to prove that \"some chip in Batch 12 failed\" is true."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe manager’s claim is universal, so one counterexample is decisive. Let $A(x)$ mean that chip $x$ passes. Inspection gives the explicit value\n\n$$x = 317,$$\n\n$$\nA(317) = \\mathrm{F}\n$$\n\nBecause chip #$317$ belongs to Batch $12$,\n\n$$\\exists x\\in\\text{Batch 12}\\,\\neg A(x)$$\n\nis true, which falsifies $\\forall x\\in\\text{Batch 12}\\,A(x)$. The other $499$ chips cannot repair a failed universal.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe manager's claim is $\\forall x\\, A(x)$ on Batch $12$. Negating a universal produces an existential:\n\n$$\\neg \\forall x\\, A(x) \\equiv \\exists x\\, \\neg A(x)$$\n\nIn words: at least one chip fails. The quoted sentence \"all chips fail\" is $\\forall x\\, \\neg A(x)$, which needs all $500$ failures. Chip #$317$ already witnesses the existential without a clean sweep.\n\nSo the statement is False.",
+      "**C.** → True\n\nUse vacuous truth. The universal can fail only if there is a counterexample chip in Batch $13$:\n\n$$\\neg\\forall x\\, \\bigl(B_{13}(x)\\Rightarrow A(x)\\bigr) \\equiv \\exists x\\, \\bigl(B_{13}(x)\\land\\neg A(x)\\bigr)$$\n\nBut Batch $13$ contains zero chips, so there is no value $x$ with $B_{13}(x)=\\mathrm{T}$. No counterexample witness exists, and the universal is therefore vacuously true.\n\nSo the statement is True.",
+      "**D.** → False\n\nQuantifier order determines whether the defect code may depend on the failed chip. The first sentence is\n\n$$\\forall f\\,\\exists c\\,E(c,f)$$\n\nThe second sentence is\n\n$$\\exists c\\,\\forall f\\,E(c,f)$$\n\nWith two failures $f_1,f_2$, code $c_1$ may explain only $f_1$ and code $c_2$ only $f_2$. Then the first formula is true, but no single code serves both failures, so the second is false. The sentences are not equivalent.\n\nSo the statement is False.",
+      "**E.** → True\n\nAn existential claim is established by one witness. Choose the reported chip:\n\n$$x=317$$\n\nIt has both required properties:\n\n$$B_{12}(317) = \\mathrm{T},$$\n\n$$\n\\neg A(317) = \\mathrm{T}\n$$\n\nHence $317$ witnesses $\\exists x\\,(B_{12}(x)\\land\\neg A(x))$. No information about the remaining chips is needed.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The manager's sentence is a universal: every chip in Batch $12$ passes. Chip #$317$ in Batch $12$ failed the stress test.\n\nWrite $A(x)$ for chip $x$ passing the stress test. Negating $\\forall x\\, A(x)$ yields $\\exists x\\, \\neg A(x)$, not $\\forall x\\, \\neg A(x)$. Batch $13$ contains zero chips.\n\n$\\forall f\\, \\exists c$ lets a defect code depend on the chip. $\\exists c\\, \\forall f$ freezes one code for every failure.",
+    "title_de_existing": "Fabrikchargen-Kontrolle",
+    "context_de_existing": "Eine Werksleiterin behauptet: „Alle 500 Mikrochips in Charge 12 bestehen den Stresstest.“ Bei der Prüfung fällt Chip Nr. 317 in Charge 12 durch. Charge 13 wurde vor Produktionsbeginn gestrichen und enthält null Chips.",
+    "statements_de_existing": [
+      "Die Behauptung der Werksleiterin über Charge 12 ist falsch.",
+      "Die korrekte Negation der Behauptung lautet: „Alle Chips in Charge 12 fallen beim Stresstest durch.“",
+      "Die Aussage „Alle Chips in Charge 13 bestehen den Stresstest“ ist im leeren Sinn wahr.",
+      "„Für jeden durchgefallenen Chip gibt es einen Fehlercode, der genau diesen Ausfall erklärt“ bedeutet dasselbe wie „Es gibt einen Fehlercode, der jeden durchgefallenen Chip erklärt“.",
+      "Dass Chip Nr. 317 durchgefallen ist, genügt allein, um „irgendein Chip in Charge 12 ist durchgefallen“ zu beweisen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEin Gegenbeispiel in Charge 12 widerlegt die Allaussage.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nNegation ist Existenz eines Durchfallers, nicht „alle fallen durch“.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nÜber der leeren Menge ist eine Allaussage im leeren Sinn wahr.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n$\\forall\\exists$ ist schwächer als $\\exists\\forall$; Quantorenreihenfolge ändert die Bedeutung.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEin Zeuge beweist die Existenzaussage.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Eine Allaussage fällt mit einem Gegenbeispiel; ihre Negation ist eine Existenzaussage. Über der leeren Charge 13 ist „alle bestehen“ im leeren Sinn wahr. $\\forall\\exists$ und $\\exists\\forall$ sind verschieden."
+  },
+  {
+    "case_id": "MATH 1.94",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Divisibility by Six Versus Divisibility by Three",
+    "context_en": "In number theory: \"If n is divisible by 6, then n is divisible by 3.\"",
+    "statements_en": [
+      "The negation, \"n is divisible by 6 and n is not divisible by 3,\" describes a situation that occurs for infinitely many integers n.",
+      "The converse, \"If n is divisible by 3, then n is divisible by 6,\" is false - n = 9 is a counterexample (divisible by 3, not by 6).",
+      "The inverse, \"If n is not divisible by 6, then n is not divisible by 3,\" is logically equivalent to the converse, so it is also false, with n = 9 again serving as its counterexample.",
+      "The contrapositive, \"If n is not divisible by 3, then n is not divisible by 6,\" is false for some integers n.",
+      "Since the converse is false, the original statement \"n divisible by $6 \\Rightarrow n$ divisible by 3\" must also be false."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe proposed negation would need a witness with $6\\mid n$ and $3\\nmid n$. For an arbitrary integer satisfying the first condition,\n\n$$6\\mid n \\quad\\Longrightarrow\\quad n = 6k = 3(2k) \\quad\\Longrightarrow\\quad 3\\mid n$$\n\nThus $6\\mid n$ always forces the opposite of $3\\nmid n$. There is not even one witness to $6\\mid n\\land3\\nmid n$, much less infinitely many.\n\nSo the statement is False.",
+      "**B.** → True\n\nOne truth assignment separates an implication from its converse.\n\n$$(p,q)=(F,T)$$\n\n$$\np\\rightarrow q = F\\rightarrow T = T\n$$\n\n$$\nq\\rightarrow p = T\\rightarrow F = F\n$$\n\nThe two implications disagree on this assignment.\n\nSo the statement is True.",
+      "**C.** → True\n\nLet $p$ mean \"$6\\mid n$\" and $q$ mean \"$3\\mid n$\". The inverse $\\neg p\\rightarrow\\neg q$ is logically equivalent to the converse $q\\rightarrow p$: both fail exactly when $q$ holds and $p$ fails. Take $n=9$:\n\n$$3\\mid 9$$\n\n$$6\\nmid 9$$\n\nThen\n\n$$q\\rightarrow p = T\\rightarrow F = F$$\n\n$$\\neg p\\rightarrow\\neg q = T\\rightarrow F = F$$\n\nSo the inverse is false for the same reason as the converse, with the same counterexample.\n\nSo the statement is True.",
+      "**D.** → False\n\nProve the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,\n\n$$\nn = 6k = 3(2k),\n$$\n\nwhich would give $3\\mid n$, contradicting the assumption. Therefore\n\n$$3\\nmid n\\quad\\Longrightarrow\\quad6\\nmid n$$\n\nfor every integer $n$. No counterexample value exists, so the claim that the contrapositive is false for some integer is wrong.\n\nSo the statement is False.",
+      "**E.** → False\n\nAn implication and its converse need not share a truth value. Let $p$ mean \"$6\\mid n$\" and $q$ mean \"$3\\mid n$\". The original $p\\rightarrow q$ holds for every integer $n$, because $6\\mid n$ always forces $3\\mid n$. The converse $q\\rightarrow p$ fails at $n=9$. Falsity of the converse therefore does not force the original statement to be false.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The original statement is $6 \\mid n \\Rightarrow 3 \\mid n$. If $6 \\mid n$, write\n\n$$\nn = 6k\n$$\n\n$$\n= 3(2k)\n$$\n\nso $3 \\mid n$ automatically.\n\nThe converse is $3 \\mid n \\Rightarrow 6 \\mid n$. The inverse is $6 \\nmid n \\Rightarrow 3 \\nmid n$. The contrapositive is $3 \\nmid n \\Rightarrow 6 \\nmid n$. Original pairs with contrapositive. Converse pairs with inverse.",
+    "title_de_existing": "Teilbarkeit durch sechs versus Teilbarkeit durch drei",
+    "context_de_existing": "In der Zahlentheorie: „Wenn $n$ durch 6 teilbar ist, dann ist $n$ durch 3 teilbar.“",
+    "statements_de_existing": [
+      "Die Negation „$n$ ist durch 6 teilbar und nicht durch 3 teilbar“ beschreibt eine Situation, die für unendlich viele ganze Zahlen vorkommt.",
+      "Die Umkehrung „Wenn $n$ durch 3 teilbar ist, dann ist $n$ durch 6 teilbar“ ist falsch — $n=9$ ist ein Gegenbeispiel.",
+      "Die Form „Wenn $n$ nicht durch 6 teilbar ist, dann ist $n$ nicht durch 3 teilbar“ ist logisch äquivalent zur Umkehrung und daher ebenfalls falsch.",
+      "Die Kontraposition „Wenn $n$ nicht durch 3 teilbar ist, dann ist $n$ nicht durch 6 teilbar“ ist für manche ganze Zahlen $n$ falsch.",
+      "Weil die Umkehrung falsch ist, muss auch die Originalaussage falsch sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nDie Negation beschreibt eine unmögliche Situation; aus $6\\mid n$ folgt stets $3\\mid n$.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\n$9$ ist durch $3$, nicht durch $6$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$\\neg(6\\mid n)\\Rightarrow\\neg(3\\mid n)$ ist äquivalent zur Umkehrung und falsch.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Kontraposition ist äquivalent zum wahren Original und daher wahr.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nUmkehrung und Original sind unabhängig; das Original bleibt wahr.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Aus $n=6k=3(2k)$ folgt $3\\mid n$. Die Umkehrung scheitert an $n=9$. Kontraposition bleibt wahr."
+  },
+  {
+    "case_id": "MATH 1.95",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "ID number verification rule",
+    "context_en": "A system rule states: if the square of an ID number is even, then the ID number itself is even. A verifier is checking two IDs: 1234 and 4321. Note that 1234^2 = 1,522,756 (even) and 4321^2 = 18,671,041 (odd).",
+    "statements_en": [
+      "Since $1234^2$ is even, the rule guarantees that 1234 itself is even - which is indeed true.",
+      "To prove the rule by contraposition, one should assume the ID number is even and derive that its square is even.",
+      "Since $4321^2$ is odd, the contrapositive form of the rule guarantees that 4321 itself is odd - which is indeed true.",
+      "The rule (\"if $n^2$ is even, then n is even\") and its converse (\"if n is even, then $n^2$ is even\") are logically the same statement.",
+      "A proof of this rule by contradiction would begin by assuming that $n^2$ is even AND n is odd, then deriving a contradiction from that assumption."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe given square $1234^{2} = 1{,}522{,}756$ is even. Rule $R$ says an even square implies an even ID, so $1234$ is even. Direct check:\n\n$$1234 = 2 \\times 617$$\n\nHypothesis true and conclusion true. The rule applies in the stated direction.\n\n$$1234^2$$\n\nSo the statement is True.",
+      "**B.** → False\n\nWrite $E(k)$ for “$k$ is even.” The rule and its contrapositive are\n\n$$E(n^{2})\\Rightarrow E(n),$$\n\n$$\\neg E(n)\\Rightarrow\\neg E(n^{2})$$\n\nThus a contraposition proof assumes $n$ is odd and derives that $n^{2}$ is odd. The proposed plan instead proves\n\n$$E(n)\\Rightarrow E(n^{2}),$$\n\nwhich reverses the original arrow and is its converse. It is not a proof by contraposition of the stated rule.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe given square $4321^{2}=18{,}671{,}041$ is odd. Direct parity check:\n\n$$2\\cdot 2160=4320$$\n\n$$4320+1=4321$$\n\nso $4321$ is odd. Hypothesis true and conclusion true.\n\nSo the statement is True.",
+      "**D.** → False\n\nOne truth assignment separates an implication from its converse.\n\n$$(p,q)=(F,T)$$\n\n$$\np\\rightarrow q = F\\rightarrow T = T\n$$\n\n$$\nq\\rightarrow p = T\\rightarrow F = F\n$$\n\nThe two implications disagree on this assignment.\n\nSo the statement is False.",
+      "**E.** → True\n\nA contradiction proof of $E(n^{2})\\Rightarrow E(n)$ assumes $n^{2}$ even and $n$ odd. Write\n\n$$n=2k+1$$\n\n$$n^{2}=(2k+1)^{2}$$\n\n$$(2k+1)^{2}=4k^{2}+4k+1$$\n\n$$4k^{2}+4k\\text{ is even}$$\n\n$$4k^{2}+4k+1\\text{ is odd}$$\n\nso $n^{2}$ is odd, colliding with the even-square assumption.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The rule $R$ is: if $n^{2}$ is even, then $n$ is even. The converse $C$ is: if $n$ is even, then $n^{2}$ is even.\n\nContraposition of $R$ starts from $n$ odd and derives that $n^{2}$ is odd. A contradiction proof of $R$ assumes $n^{2}$ even and $n$ odd.\n\nGiven: $1234^{2} = 1{,}522{,}756$ (even) and $4321^{2} = 18{,}671{,}041$ (odd).",
+    "title_de_existing": "Ausweisnummer-Prüfregel",
+    "context_de_existing": "Eine Systemregel besagt: Wenn das Quadrat einer ID-Nummer gerade ist, dann ist die ID-Nummer selbst gerade. Eine Prüferin prüft die IDs 1234 und 4321. Es gilt $1234^{2}=1522756$ (gerade) und $4321^{2}=18671041$ (ungerade).",
+    "statements_de_existing": [
+      "Da $1234^{2}$ gerade ist, garantiert die Regel, dass 1234 selbst gerade ist — was tatsächlich stimmt.",
+      "Um die Regel per Kontraposition zu beweisen, sollte man annehmen, die ID sei gerade, und ableiten, dass ihr Quadrat gerade ist.",
+      "Da $4321^{2}$ ungerade ist, garantiert die Kontrapositionsform der Regel, dass 4321 selbst ungerade ist — was stimmt.",
+      "Die Regel und ihre Umkehrung sind logisch dieselbe Aussage.",
+      "Ein Widerspruchsbeweis dieser Regel beginnt mit der Annahme, dass $n^{2}$ gerade UND $n$ ungerade ist, und leitet einen Widerspruch ab."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus geradem Quadrat folgt per Regel gerades $n$; 1234 ist gerade.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nKontraposition startet bei ungeradem $n$ und zeigt ungerades Quadrat.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nKontraposition: ungerades Quadrat $\\Rightarrow$ ungerades $n$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nRegel und Umkehrung sind verschiedene Implikationen.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nWiderspruch zu $P\\Rightarrow Q$ nimmt $P\\land\\neg Q$ an.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Regel $R$: gerades Quadrat $\\Rightarrow$ gerades $n$. Kontraposition startet bei ungeradem $n$. Umkehrung ist eine andere Implikation."
+  },
+  {
+    "case_id": "MATH 1.96",
+    "short_letters": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Negating Thales' Theorem About Right Angles in a Semicircle",
+    "context_en": "Thales' theorem gives the universal statement: \"Every triangle inscribed in a semicircle, with the diameter as one side, has a right angle at the third vertex.\"",
+    "statements_en": [
+      "The negation of this universal claim is: \"There exists such a triangle without a right angle.\"",
+      "Since Thales' theorem proves the original statement true, the negation formed above must be a false statement.",
+      "The converse, \"If a triangle has a right angle, it can be inscribed in a semicircle with its hypotenuse as the diameter,\" is also a true geometric fact.",
+      "Because both the original statement and its converse are true here, this is an example where the implication is effectively a biconditional, even though converses are not true in general.",
+      "Since the original statement is true, the inverse must also be true, because the inverse and the original are always logically equivalent to each other."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNegation of $\\forall$ triangles $T$ with property $R(T)$ is $\\exists T\\,\\neg R(T)$.\n\nSo the statement is True.",
+      "**B.** → True\n\nA true universal has a false negation.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe geometric converse (right triangle inscribed with hypotenuse as diameter) is also a standard theorem.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhen both $P\\Rightarrow Q$ and $Q\\Rightarrow P$ hold, we have $P\\Leftrightarrow Q$.\n\nSo the statement is True.",
+      "**E.** → False\n\nInverse is not always equivalent to the original; here the inverse need not follow from Thales alone.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Write $P(t)$ for a triangle inscribed in a semicircle with the diameter as one side, and $Q(t)$ for a right angle at the third vertex. Thales' theorem is\n\n$$\\forall t\\,(P(t) \\Rightarrow Q(t))$$\n\nThe negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Rightarrow P$. The inverse $\\neg P \\Rightarrow \\neg Q$ pairs with the converse, not with the original.",
+    "title_de_existing": "Negation des Satzes von Thales über rechte Winkel im Halbkreis",
+    "context_de_existing": "Der Satz des Thales liefert die Allaussage: „Jedes Dreieck, das in einen Halbkreis einbeschrieben ist und den Durchmesser als eine Seite hat, hat am dritten Eckpunkt einen rechten Winkel.“",
+    "statements_de_existing": [
+      "Die Negation dieser Allaussage lautet: „Es gibt ein solches Dreieck ohne rechten Winkel.“",
+      "Da der Satz des Thales die Originalaussage als wahr beweist, muss die oben gebildete Negation eine falsche Aussage sein.",
+      "Die Umkehrung „Wenn ein Dreieck einen rechten Winkel hat, lässt es sich in einen Halbkreis mit der Hypotenuse als Durchmesser einbeschreiben“ ist ebenfalls ein klassischer wahrer Satz.",
+      "Weil sowohl Original als auch Umkehrung hier wahr sind, liegt ein Fall vor, in dem die Implikation faktisch eine Äquivalenz ist.",
+      "Weil die Originalaussage wahr ist, muss auch die Form $\\neg P\\Rightarrow\\neg Q$ wahr sein, denn sie und das Original sind stets logisch äquivalent."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation der Allaussage ist die Existenz eines Gegenbeispiels.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWahre Aussage und ihre Negation können nicht zugleich wahr sein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDie Umkehrung ist der bekannte Satz über rechtwinklige Dreiecke und den Umkreis über der Hypotenuse.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeide Richtungen wahr ergibt faktische Äquivalenz.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur Umkehrung, nicht zum Original.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Thales: $P\\Rightarrow Q$ für Halbkreisdreiecke. Negation ist Existenz ohne rechten Winkel (hier falsch). Umkehrung ist ebenfalls wahr."
+  },
+  {
+    "case_id": "MATH 1.97",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "A number-theory theorem states: \"If a number is a perfect square, then it has an odd number of positive divisors.\"",
+    "context_en": "A number-theory theorem states: \"If a number is a perfect square, then it has an odd number of positive divisors.\"",
+    "statements_en": [
+      "The correctly formed negation of the theorem is: \"A number is a perfect square and it has an even number of divisors.\"",
+      "36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.",
+      "The converse, \"If a number has an odd number of divisors, then it is a perfect square,\" is also a true statement, so both directions of the implication hold here.",
+      "Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\}$ (6 divisors, even), 20 is a valid counterexample disproving the original theorem.",
+      "The inverse, \"If a number is not a perfect square, it has an even number of divisors,\" is also true in this case, since the converse is true."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nNegation of $Sq\\Rightarrow OddDiv$ is $Sq\\wedge\\neg OddDiv$.\n\nSo the statement is True.",
+      "**B.** → True\n\nCount divisors of $36$:\n\n$$1,2,3,4,6,9,12,18,36$$\n\nNine divisors — odd — consistent with the theorem.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe converse is also a theorem: odd divisor count characterizes squares.\n\nSo the statement is True.",
+      "**D.** → False\n\n$20$ not being square with even divisor count is consistent with the theorem, not a counterexample to $Sq\\Rightarrow OddDiv$.\n\nSo the statement is False.",
+      "**E.** → True\n\nWith both directions true, the inverse matches as well.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Divisors pair as $d$ with $n/d$. A divisor is its own partner only when $d^{2} = n$, that is when $n$ is a perfect square. So a square has an odd divisor count, and a non-square has an even count.\n\nThe theorem is $S \\Rightarrow O$: perfect square, therefore odd divisor count. The converse is odd count $\\Rightarrow$ square.\n\nSample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $20$ has listed divisors $\\{1,2,4,5,10,20\\}$.",
+    "title_de_existing": "Zahlentheoretischer Satz: Quadratzahlen und ungerade Teilerzahl",
+    "context_de_existing": "Ein zahlentheoretischer Satz besagt: „Wenn eine Zahl eine vollkommene Quadratzahl ist, dann hat sie eine ungerade Anzahl positiver Teiler.“",
+    "statements_de_existing": [
+      "Die korrekt gebildete Negation des Satzes lautet: „Eine Zahl ist eine vollkommene Quadratzahl und hat eine gerade Anzahl von Teilern.“",
+      "36 ist eine Quadratzahl mit Teilern $\\{1,2,3,4,6,9,12,18,36\\}$ — 9 Teiler (ungerade), was mit dem Satz vereinbar ist.",
+      "Die Umkehrung „Wenn eine Zahl eine ungerade Anzahl von Teilern hat, dann ist sie eine Quadratzahl“ ist ebenfalls wahr; beide Richtungen gelten.",
+      "Da 20 keine Quadratzahl ist und die Teiler $\\{1,2,4,5,10,20\\}$ hat (6 Teiler, gerade), ist 20 ein gültiges Gegenbeispiel, das den Originalsatz widerlegt.",
+      "Die Form „Wenn eine Zahl keine Quadratzahl ist, hat sie eine gerade Anzahl von Teilern“ ist in diesem Fall ebenfalls wahr, weil sie zur Umkehrung äquivalent ist und die Umkehrung wahr ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegation von $P\\Rightarrow Q$ ist $P\\land\\neg Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n9 Teiler, ungerade — konsistent.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nTatsächlich charakterisieren ungerade Teileranzahlen genau die Quadrate.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n20 ist keine Quadratzahl und widerlegt daher nicht $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$\\neg P\\Rightarrow\\neg Q$ ist äquivalent zur wahren Umkehrung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Teiler paaren sich als $d$ mit $n/d$; Selbstpaarung nur bei Quadraten. Quadrate haben ungerade Teileranzahl; Nichtquadrate gerade."
+  },
+  {
+    "case_id": "MATH 1.98",
+    "short_letters": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Four friends and their jobs",
+    "context_en": "Four friends - Emma, Felix, Grace, and Hugo - each have a different job: Doctor, Engineer, Teacher, or Lawyer.\n\n(1) Emma is a doctor if and only if Felix is not an engineer.\n\n(2) Felix is an engineer if and only if Grace is a teacher.\n\n(3) Grace is not a teacher.\n\n(4) Hugo is a lawyer.",
+    "statements_en": [
+      "Emma is a doctor.",
+      "Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.",
+      "Grace is an engineer.",
+      "Clue (3) is redundant - the full job assignment could be determined without it.",
+      "If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nFrom (3), Grace is not a teacher:\n\n$$\\neg G$$\n\nClue (2) says $F\\Leftrightarrow G$, so\n\n$$F=\\mathrm{F}$$\n\nClue (1) says $E\\Leftrightarrow\\neg F$. Since $\\neg F$ holds,\n\n$$E=\\mathrm{T}$$\n\nEmma is the doctor.\n\nSo the statement is True.",
+      "**B.** → False\n\nClue (2) alone is only $F\\Leftrightarrow G$. Without a value for $G$, Felix’s job is not fixed. The claim that (2) alone makes Felix the teacher is false.\n\nSo the statement is False.",
+      "**C.** → True\n\nFelix is not the engineer. Hugo is the lawyer by (4). Emma is the doctor. The only remaining job for Grace is engineer.\n\nSo the statement is True.",
+      "**D.** → True\n\nDrop clue (3) and try $G=\\mathrm{T}$. Then (2) forces $F=\\mathrm{T}$ and (1) forces $E=\\mathrm{F}$. Hugo is the lawyer, Felix the engineer, Grace the teacher — so Emma would have to be the doctor, contradicting $E=\\mathrm{F}$. Thus $G=\\mathrm{T}$ is impossible, and $\\neg G$ is forced even without (3). Clue (3) is redundant.\n\nSo the statement is True.",
+      "**E.** → True\n\nFrom (1)–(3) as in letter A, Emma is already forced to be the doctor before using (4).\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $E$ for Emma being a doctor, $F$ for Felix being an engineer, $G$ for Grace being a teacher, and $H$ for Hugo being a lawyer. Four distinct jobs means each job is held by exactly one person. The clues are\n\n$$(1)\\ E \\Leftrightarrow \\neg F, \\qquad (2)\\ F \\Leftrightarrow G$$\n\n$$(3)\\ \\neg G, \\qquad (4)\\ H$$\n\nA biconditional forces matching truth values.\n\n**Part 2: Solve.**\n\nFrom (3), $G$ is false, so (2) forces $F$ false. Then (1) forces $E$ true: Emma is the doctor. From (4), Hugo is the lawyer. The remaining jobs are Engineer and Teacher for Felix and Grace, and Felix is already barred from Engineer, so Felix is the teacher and Grace is the engineer.",
+    "title_de_existing": "Vier Freunde und ihre Berufe",
+    "context_de_existing": "Vier Freundinnen — Emma, Felix, Grace und Hugo — haben je einen anderen Beruf: Ärztin, Ingenieurin, Lehrerin oder Anwältin.\n\n(1) Emma ist genau dann Ärztin, wenn Felix keine Ingenieurin ist.\n\n(2) Felix ist genau dann Ingenieurin, wenn Grace Lehrerin ist.\n\n(3) Grace ist keine Lehrerin.\n\n(4) Hugo ist Anwältin.",
+    "statements_de_existing": [
+      "Emma ist Ärztin.",
+      "Felix ist Lehrerin, und das lässt sich allein aus Hinweis (2) bestimmen, ohne andere Hinweise.",
+      "Grace ist Ingenieurin.",
+      "Hinweis (3) ist überflüssig — die volle Berufszuordnung ließe sich ohne ihn bestimmen.",
+      "Würde Hinweis (4) ganz entfernt, könnten wir aus (1)–(3) allein trotzdem bestimmen, dass Emma Ärztin ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus (3) ist Grace nicht Lehrerin. Mit (2) folgt, dass Felix nicht Ingenieurin ist. Mit (1) folgt, dass Emma Ärztin ist.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n(2) allein ist nur $F\\Leftrightarrow G$. Ohne Wert für $G$ ist Felix' Beruf nicht festgelegt.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nHugo ist Anwältin. Emma Ärztin. Felix nicht Ingenieurin — also Lehrerin. Grace bleibt Ingenieurin.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nOhne (3) führt die Annahme „Grace ist Lehrerin“ mit (2) und (1) und den vier verschiedenen Berufen samt (4) zum Widerspruch. Also ist $\\neg G$ auch ohne (3) erzwungen.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n(1)–(3) erzwingen bereits Emma als Ärztin, unabhängig von Hugos Beruf.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Mit $E\\Leftrightarrow\\neg F$, $F\\Leftrightarrow G$, $\\neg G$ und Hugo Anwältin folgt Emma Ärztin, Felix Lehrerin, Grace Ingenieurin. (3) ist wegen des Widerspruchsarguments redundant; (4) braucht man für Emmas Status nicht."
+  },
+  {
+    "case_id": "MATH 1.99",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A real-analysis theorem states: \"If a sequence converges, then it is bounded.\"",
+    "context_en": "A real-analysis theorem states: \"If a sequence converges, then it is bounded.\"",
+    "statements_en": [
+      "The negation, \"a sequence converges and is not bounded,\" describes an impossible situation, since the theorem holds for every sequence.",
+      "The converse, \"If a sequence is bounded, then it converges,\" is false - the sequence (-1)ⁿ (that is, -1, 1, -1, 1...) is bounded but does not converge, serving as a counterexample.",
+      "The inverse, \"If a sequence does not converge, then it is not bounded,\" is logically equivalent to the converse, and is therefore also false, using the same sequence (-1)ⁿ as its counterexample.",
+      "The contrapositive, \"If a sequence is not bounded, then it does not converge,\" is true, and is in fact the version most commonly used to prove specific unbounded sequences (like n, 2n, $n^2$) do not converge.",
+      "Because the converse is false, the original theorem itself must also be false."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe theorem forbids a convergent unbounded sequence, so the negation describes an impossibility.\n\nSo the statement is True.",
+      "**B.** → True\n\n$(-1)^{n}$ is bounded but does not converge — converse fails.\n\nSo the statement is True.",
+      "**C.** → True\n\nInverse $\\Leftrightarrow$ converse, so the inverse is also false.\n\nSo the statement is True.",
+      "**D.** → True\n\nContrapositive “unbounded $\\Rightarrow$ divergent” is equivalent and true.\n\nSo the statement is True.",
+      "**E.** → False\n\nA false converse does not falsify the original theorem.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The theorem is $P \\Rightarrow Q$: a sequence converges, therefore it is bounded.\n\nThe converse is $Q \\Rightarrow P$. The inverse is $\\neg P \\Rightarrow \\neg Q$. The contrapositive is $\\neg Q \\Rightarrow \\neg P$. Original pairs with contrapositive. Converse pairs with inverse.",
+    "title_de_existing": "Reellanalytischer Satz: Konvergente Folgen sind beschränkt",
+    "context_de_existing": "Ein reellanalytischer Satz besagt: „Wenn eine Folge konvergiert, dann ist sie beschränkt.“",
+    "statements_de_existing": [
+      "Die Negation „eine Folge konvergiert und ist nicht beschränkt“ beschreibt eine unmögliche Situation, da der Satz für alle Folgen gilt.",
+      "Die Umkehrung „Wenn eine Folge beschränkt ist, dann konvergiert sie“ ist falsch — die Folge $(-1)^{n}$ ist ein Gegenbeispiel.",
+      "Die Form „Wenn eine Folge nicht konvergiert, dann ist sie nicht beschränkt“ ist logisch äquivalent zur Umkehrung und ebenfalls falsch.",
+      "Die Kontraposition „Wenn eine Folge nicht beschränkt ist, dann konvergiert sie nicht“ ist wahr und wird oft in Beweisen benutzt.",
+      "Weil die Umkehrung falsch ist, muss auch der Originalsatz falsch sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDer Satz schließt genau diese Situation aus.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\n$(-1)^{n}$ ist beschränkt und divergiert.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\n$\\neg P\\Rightarrow\\neg Q$ fällt mit der Umkehrung.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKontraposition ist äquivalent zum wahren Satz.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nUmkehrung und Original sind unabhängig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Satz: Konvergenz $\\Rightarrow$ Beschränktheit. Umkehrung falsch (oszillierende beschränkte Folgen). Kontraposition wahr."
+  },
+  {
+    "case_id": "MATH 1.101",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Conference attendance rules",
+    "context_en": "Four colleagues - Ana, Boris, Ceci, Dmitri - are deciding whether to attend a conference.\n\n(1) If Ana attends, then Boris does not attend.\n\n(2) If Boris does not attend, then Ceci attends.\n\n(3) If Ceci attends, then Dmitri does not attend - unless Ana also attends, in which case Dmitri's attendance is unrestricted.\n\n(4) Dmitri attends.",
+    "statements_en": [
+      "Dmitri attends the conference.",
+      "The rules uniquely determine whether Ana attends.",
+      "In at least one solution consistent with the rules, exactly three of the four colleagues attend.",
+      "It is possible for both Ana and Boris to not attend simultaneously.",
+      "Without rule (3)'s “unless” exception (i.e. if Ceci attending always forced Dmitri not to attend, no exceptions), the rules would become impossible to satisfy at all given that Dmitri attends."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim says Dmitri attends. Rule (4) states this directly:\n\n$$(4)$$\n\n$$D$$\n\nThe other rules can restrict Ana, Boris, and Ceci, but none can cancel an explicit fact. For example, $\\{A,C,D\\}$ obeys (1) and (2), and Ana's presence activates the exception in (3), so rule (4) is consistent with the system. Dmitri is in every solution.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim says the rules force one truth value for Ana. Test both values.\n\nIf $A$ is true, rule (1) gives $\\neg B$, and rule (2) then gives $C$:\n\n$$A\\Rightarrow\\neg B\\Rightarrow C$$\n\nRule (4) gives $D$. Because Ana attends, the exception in rule (3) applies, so Ceci and Dmitri may attend together. Thus $\\{A,C,D\\}$ is legal.\n\nIf $A$ is false, choose $B$ true and $C$ false. Rules (1) and (2) are idle, rule (3) has false hypothesis $C\\land\\neg A$, and rule (4) gives $D$. Thus $\\{B,D\\}$ is also legal. Ana is in one valid roster and out of another.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe claim only needs one valid roster with exactly three attendees. Start with Ana attending. Rule (1) forces Boris out, and then rule (2) forces Ceci in:\n\n$$A\\Rightarrow\\neg B\\Rightarrow C$$\n\nRule (4) puts Dmitri in. Rule (3) normally acts when $C\\land\\neg A$ holds, but here $A$ is true, so its \"unless Ana attends\" exception leaves Dmitri unrestricted. The roster is\n\n$$\\{A,C,D\\},$$\n\n$$|\\{A,C,D\\}|=3.$$\n\nThis is a legal witness for the existence claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe claim requires a solution with both Ana and Boris absent. Assume\n\n$$\\neg A\\land\\neg B.$$\n\nRule (2) turns $\\neg B$ into $C$. Since Ana is absent, the exception in rule (3) is unavailable, so $C\\land\\neg A$ forces Dmitri out:\n\n$$\\neg B\\overset{(2)}{\\Rightarrow}C,$$\n\n$$C\\land\\neg A\\overset{(3)}{\\Rightarrow}\\neg D.$$\n\nBut rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D$, so Ana and Boris cannot both be absent.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe claim says replacing rule (3) by the stricter implication would destroy every solution:\n\n$$(3')$$\n\n$$C\\Rightarrow\\neg D.$$\n\nRule (4) still gives $D$, so the contrapose of (3') forces $\\neg C$. The contrapose of rule (2), $\\neg C\\Rightarrow B$, then puts Boris in. Choose Ana out:\n\n$$\\neg A,$$\n\n$$B,$$\n\n$$\\neg C,$$\n\n$$D.$$\n\nThis is the roster $\\{B,D\\}$. Rule (1) is idle because Ana is out, rule (2) is idle because Boris is in, (3') is idle because Ceci is out, and (4) holds. At least one solution survives the stricter rule.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $A,B,C,D$ for Ana, Boris, Ceci, Dmitri attending. The stem is\n\n$$(1)\\ A\\Rightarrow\\neg B,\\qquad (2)\\ \\neg B\\Rightarrow C,\\qquad (4)\\ D.$$\n\nRule (3) is $C\\Rightarrow\\neg D$ except when Ana already attends, so\n\n$$(3)\\ (C\\land\\neg A)\\Rightarrow\\neg D.$$\n\nAn implication whose hypothesis is false is idle. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRule (4) puts $D$ in every roster. Split on Ana.\n\nIf $A$ holds, (1) gives $\\neg B$ and (2) then gives $C$. Rule (3) is idle because $A$ is true, so $D$ may stay. The roster is $\\{A,C,D\\}$.\n\nIf $\\neg A$ holds, (3) with $D$ true forces $\\neg C$. The contrapose of (2) then forces $B$. The roster is $\\{B,D\\}$.\n\nBoth cases survive.",
+    "title_de_existing": "Konferenz-Anwesenheitsregeln",
+    "context_de_existing": "Vier Kolleginnen — Ana, Boris, Ceci, Dmitri — entscheiden über die Konferenzteilnahme.\n\n(1) Wenn Ana kommt, kommt Boris nicht.\n\n(2) Wenn Boris nicht kommt, kommt Ceci.\n\n(3) Wenn Ceci kommt, kommt Dmitri nicht — es sei denn, Ana kommt ebenfalls; dann ist Dmitris Teilnahme uneingeschränkt.\n\n(4) Dmitri kommt.",
+    "statements_de_existing": [
+      "Dmitri kommt zur Konferenz.",
+      "Die Regeln bestimmen eindeutig, ob Ana kommt.",
+      "In mindestens einer mit den Regeln verträglichen Lösung kommen genau drei der vier Kolleginnen.",
+      "Es ist möglich, dass Ana und Boris gleichzeitig nicht kommen.",
+      "Ohne die Ausnahme in Regel (3) (also wenn Cecis Teilnahme Dmitri stets ausschlösse) wären die Regeln bei Dmitris Teilnahme unerfüllbar."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nRegel (4) setzt $D$ in jeder Lösung. Dmitri kommt.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nFallunterscheidung nach Ana liefert mehrere verträgliche Belegungen; Anas Status ist nicht eindeutig.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nEs gibt eine verträgliche Belegung mit genau drei Teilnehmenden.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAus $\\neg A$ und $\\neg B$ folgt mit (2) Ceci, und mit (3) ohne Ana dann $\\neg D$ — Widerspruch zu (4).\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nAuch ohne Ausnahme bleibt mindestens eine Lösung (mit Ana) erfüllbar; die Regeln werden nicht insgesamt unerfüllbar.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $A\\Rightarrow\\neg B$, $\\neg B\\Rightarrow C$, $(C\\land\\neg A)\\Rightarrow\\neg D$ und $D$ folgt Dmitris Teilnahme. Fallunterscheidung nach Ana zeigt: nicht eindeutig, aber $\\neg A\\land\\neg B$ unmöglich."
+  },
+  {
+    "case_id": "MATH 1.102",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A Study Group's Attendance",
+    "context_en": "Four students - Noah, Maria, Leo, and Zoe - are deciding whether to join a study session. Their attendance follows these rules:\n\n1. If Noah joins, then Maria joins.\n\n2. Leo joins only if Zoe joins.\n\n3. At least one of Maria or Leo joins.\n\n4. If Zoe joins, then Noah does not join.",
+    "statements_en": [
+      "If Noah joins, then Zoe does not join.",
+      "Leo and Noah can join the study session together.",
+      "It is possible that Maria joins but Leo does not.",
+      "If Maria does not join, then Noah does not join.",
+      "Zoe must join the study session."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim asks what follows if Noah joins. Rule (4) says that Zoe joining forces Noah out:\n\n$$(4)$$\n\n$$Z\\Rightarrow\\neg N.$$\n\nTake its contrapositive by negating and reversing both sides:\n\n$$\\neg(\\neg N)\\Rightarrow\\neg Z,$$\n\nso\n\n$$N\\Rightarrow\\neg Z.$$\n\nThus any roster with Noah must omit Zoe, exactly as claimed.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim requires a valid roster containing both Leo and Noah. Assume $L\\land N$. Rule (2), \"Leo joins only if Zoe joins,\" means\n\n$$(2)$$\n\n$$L\\Rightarrow Z.$$\n\nRule (4) then sends Zoe's attendance to Noah's absence:\n\n$$L\\overset{(2)}{\\Rightarrow}Z \\overset{(4)}{\\Rightarrow}\\neg N.$$\n\nThis contradicts the assumed $N$. Rules (2) and (4) therefore forbid Leo and Noah from joining together.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe claim needs one solution with Maria in and Leo out. Try the roster with Maria alone:\n\n$$N = 0,$$\n\n$$\nM = 1,\n$$\n\n$$\nL = 0,\n$$\n\n$$\nZ = 0.\n$$\n\nRule (1) is satisfied because its hypothesis $N$ is false. Rule (2) is satisfied because Leo is out. Rule (3), $M\\lor L$, holds through Maria. Rule (4) is satisfied because Zoe is out.\n\nThus $\\{M\\}$ is a legal roster with Maria joining and Leo not joining.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim asks whether Maria's absence forces Noah's absence. Rule (1) is\n\n$$(1)$$\n\n$$N\\Rightarrow M.$$\n\nIts contrapositive reverses the implication and negates both parts:\n\n$$\\neg M\\Rightarrow\\neg N.$$\n\nIf Maria is out, Noah cannot be in, because Noah's presence would immediately require Maria by rule (1). This is exactly the claimed consequence.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim says every legal roster includes Zoe. To disprove a \"must\" claim, it is enough to build one legal roster with $\\neg Z$.\n\nLet Maria join alone:\n\n$$\\{M\\},$$\n\n$$\nN = L = Z = 0.\n$$\n\nWith Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $N,M,L,Z$ for Noah, Maria, Leo, Zoe joining. The stem is\n\n$$(1)\\ N\\Rightarrow M,\\qquad (2)\\ L\\Rightarrow Z,\\qquad (3)\\ M\\lor L,\\qquad (4)\\ Z\\Rightarrow\\neg N.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nChaining (2) then (4) gives\n\n$$L\\Rightarrow Z\\Rightarrow\\neg N.$$\n\nIf $N$ holds, (1) gives $M$ and the contrapose of (4) gives $\\neg Z$, hence $\\neg L$ by the contrapose of (2). Rule (3) holds by $M$. The roster is $\\{N,M\\}$.\n\nIf $\\neg N$ holds, (1) and (4) are idle. Rule (3) still needs $M\\lor L$, and (2) still needs $L\\Rightarrow Z$. The legal rosters are $\\{M\\}$, $\\{M,Z\\}$, $\\{L,Z\\}$, and $\\{M,L,Z\\}$.\n\nFive rosters survive in all.",
+    "title_de_existing": "Anwesenheit einer Lerngruppe",
+    "context_de_existing": "Vier Studierende — Noah, Maria, Leo und Zoe — entscheiden über die Teilnahme an einer Lernsitzung:\n\n1. Wenn Noah kommt, kommt Maria.\n\n2. Leo kommt nur dann, wenn Zoe kommt.\n\n3. Mindestens eine von Maria oder Leo kommt.\n\n4. Wenn Zoe kommt, kommt Noah nicht.",
+    "statements_de_existing": [
+      "Wenn Noah kommt, kommt Zoe nicht.",
+      "Leo und Noah können gemeinsam zur Lernsitzung kommen.",
+      "Es ist möglich, dass Maria kommt, Leo aber nicht.",
+      "Wenn Maria nicht kommt, kommt Noah nicht.",
+      "Zoe muss zur Lernsitzung kommen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus (4) folgt die Kontraposition $\\neg(\\neg N)\\Rightarrow\\neg Z$, also $N\\Rightarrow\\neg Z$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n$L$ erzwingt $Z$ und damit $\\neg N$. Noah und Leo zugleich ist unmöglich.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nZum Beispiel $M=\\mathrm{T}$, $L=\\mathrm{F}$, $N=\\mathrm{F}$, $Z=\\mathrm{F}$ erfüllt alle Regeln.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKontraposition von (1): $\\neg M\\Rightarrow\\neg N$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEs gibt Lösungen ohne Zoe (siehe C).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $N\\Rightarrow M$, $L\\Rightarrow Z$, $M\\lor L$, $Z\\Rightarrow\\neg N$. Noah schließt Zoe aus; Leo schließt Noah aus. Zoe ist nicht erzwungen."
+  },
+  {
+    "case_id": "MATH 1.103",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Board Game Night",
+    "context_en": "Four friends - Ben, Carla, Dan, and Ella - are deciding whether to play a board game. Their participation follows these rules:\n\n1. If Ben plays, then Carla plays.\n\n2. Dan plays only if Ella plays.\n\n3. If Carla plays, then Dan does not play.\n\n4. At least one of Ben or Ella plays.",
+    "statements_en": [
+      "If Ben plays, then Dan does not play.",
+      "Ben and Dan can play together.",
+      "It is possible that only Ella plays, with Ben, Carla, and Dan all sitting out.",
+      "If Dan plays, then Carla does not play.",
+      "Carla must play the game."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim asks what Ben's participation forces. Rule (1) sends Ben to Carla, and rule (3) sends Carla to Dan's absence:\n\n$$B\\overset{(1)}{\\Rightarrow}C \\overset{(3)}{\\Rightarrow}\\neg D.$$\n\nThere is no branch in which Ben plays without Carla, and no branch in which Carla and Dan both play. Therefore Ben playing always forces Dan out.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim requires a legal roster with both Ben and Dan. Assume $B\\land D$. By rule (1), Ben forces Carla in:\n\n$$B\\overset{(1)}{\\Rightarrow}C.$$\n\nThen rule (3) forces Dan out:\n\n$$C\\overset{(3)}{\\Rightarrow}\\neg D.$$\n\nThe attempted roster contains $D$ and also forces $\\neg D$. Ella's status cannot repair that collision, so Ben and Dan cannot play together.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe claim needs one valid roster in which Ella is the only player. Assign\n\n$$B = 0,$$\n\n$$\nC = 0,\n$$\n\n$$\nD = 0,\n$$\n\n$$\nE = 1.\n$$\n\nRules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim asks whether Dan playing forces Carla out. Rule (3) says\n\n$$(3)$$\n\n$$C\\Rightarrow\\neg D.$$\n\nIts contrapositive negates and reverses the two parts:\n\n$$\\neg(\\neg D)\\Rightarrow\\neg C,$$\n\nwhich simplifies to\n\n$$D\\Rightarrow\\neg C.$$\n\nThus any roster containing Dan must omit Carla, exactly as claimed.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim says Carla appears in every legal roster. Test Carla's absence by letting Ella play alone:\n\n$$\\{E\\},$$\n\n$$\nB = C = D = 0.\n$$\n\nBen's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $B,C,D,E$ for Ben, Carla, Dan, Ella playing. The stem is\n\n$$(1)\\ B\\Rightarrow C,\\qquad (2)\\ D\\Rightarrow E,\\qquad (3)\\ C\\Rightarrow\\neg D,\\qquad (4)\\ B\\lor E.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRules (1) and (3) chain as\n\n$$B\\Rightarrow C\\Rightarrow\\neg D.$$\n\nIf $B$ holds, then $C$ is in and $D$ is out. Rule (4) already holds, so $E$ is free. The rosters are $\\{B,C\\}$ and $\\{B,C,E\\}$.\n\nIf $\\neg B$ holds, rule (4) forces $E$. Rule (3) still forbids $C$ and $D$ together, and (2) is content whenever $D$ plays because $E$ is already in. The rosters are $\\{C,E\\}$, $\\{D,E\\}$, and $\\{E\\}$.\n\nFive rosters survive in all.",
+    "title_de_existing": "Brettspielabend",
+    "context_de_existing": "Vier Freundinnen — Ben, Carla, Dan und Ella — entscheiden über ein Brettspiel:\n\n1. Wenn Ben spielt, spielt Carla.\n\n2. Dan spielt nur dann, wenn Ella spielt.\n\n3. Wenn Carla spielt, spielt Dan nicht.\n\n4. Mindestens eine von Ben oder Ella spielt.",
+    "statements_de_existing": [
+      "Wenn Ben spielt, spielt Dan nicht.",
+      "Ben und Dan können gemeinsam spielen.",
+      "Es ist möglich, dass nur Ella spielt und Ben, Carla sowie Dan aussetzen.",
+      "Wenn Dan spielt, spielt Carla nicht.",
+      "Carla muss mitspielen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAus (1) und (3): $B\\Rightarrow C\\Rightarrow\\neg D$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nBen erzwingt $\\neg D$.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\n$E=\\mathrm{T}$, $B=C=D=\\mathrm{F}$ erfüllt alle Regeln.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKontraposition von (3): $D\\Rightarrow\\neg C$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nIm Szenario nur-Ella spielt Carla nicht.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Mit $B\\Rightarrow C\\Rightarrow\\neg D$, $D\\Rightarrow E$, $B\\lor E$. Ben und Dan zugleich unmöglich; Carla nicht erzwungen."
+  },
+  {
+    "case_id": "MATH 1.104",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Splitting the Cooking Duty",
+    "context_en": "Three roommates - Owen, Priya, and Quinn - are deciding who cooks dinner tonight. The arrangement follows these rules:\n\n1. If Owen cooks, then Priya does not cook.\n\n2. At least one of Owen or Priya cooks.\n\n3. If Priya cooks, then Quinn also cooks.\n\n4. Quinn cooks only if Owen does not cook.",
+    "statements_en": [
+      "If Owen cooks, then Quinn does not cook.",
+      "Owen and Priya can both cook tonight.",
+      "It is possible that neither Owen nor Priya cooks, and Quinn cooks alone.",
+      "Priya cooking guarantees that Quinn also cooks.",
+      "Owen must cook tonight."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim asks what follows if Owen cooks. Rule (4), \"Quinn cooks only if Owen does not,\" translates as\n\n$$(4)$$\n\n$$Q\\Rightarrow\\neg O.$$\n\nTaking the contrapositive gives\n\n$$\\neg(\\neg O)\\Rightarrow\\neg Q,$$\n\nso\n\n$$O\\Rightarrow\\neg Q.$$\n\nTherefore an evening with Owen cooking cannot also have Quinn cooking.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim requires a legal evening with Owen and Priya both cooking. Assume $O\\land P$. Rule (1) applies as soon as Owen cooks:\n\n$$(1)$$\n\n$$O\\Rightarrow\\neg P.$$\n\nThe assumption $O$ therefore forces $\\neg P$, directly contradicting the assumed $P$. Quinn's status does not affect rule (1), so no assignment can contain both Owen and Priya.\n\nSo the statement is False.",
+      "**C.** → False\n\nThe claim proposes Quinn cooking alone, with both Owen and Priya absent:\n\n$$\\neg O\\land\\neg P\\land Q.$$\n\nRule (2) requires at least one of Owen or Priya:\n\n$$(2)$$\n\n$$O\\lor P.$$\n\nUnder the proposed assignment both disjuncts are false. Although Quinn with Owen absent satisfies rule (4), satisfying one rule cannot repair the failure of rule (2). Quinn cannot cook alone under all four rules.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe claim says Priya's participation guarantees Quinn's. Rule (3) is exactly the forward implication\n\n$$(3)$$\n\n$$P\\Rightarrow Q.$$\n\nStarting with $P$, rule (3) immediately forces $Q$. Rule (4) then forces $\\neg O$, which is compatible with rule (2) because Priya already satisfies $O\\lor P$. There is no exception to rule (3), so Priya cooking always brings Quinn in.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim says Owen cooks in every solution. Test the opposite by putting Priya in instead. Rule (3) then brings Quinn in:\n\n$$P\\overset{(3)}{\\Rightarrow}Q \\overset{(4)}{\\Rightarrow}\\neg O.$$\n\nThe resulting evening is $\\{P,Q\\}$. Rule (1) is idle because Owen is out, rule (2) is satisfied by Priya, rule (3) is satisfied by Quinn, and rule (4) is satisfied because Owen is out. This valid evening omits Owen.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $O,P,Q$ for Owen, Priya, Quinn cooking. The stem is\n\n$$(1)\\ O\\Rightarrow\\neg P,\\qquad (2)\\ O\\lor P,\\qquad (3)\\ P\\Rightarrow Q,\\qquad (4)\\ Q\\Rightarrow\\neg O.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$.\n\n**Part 2: Solve.**\n\nRules (1) and (2) together force exactly one of $O$ or $P$.\n\nIf $O$ holds, then $\\neg P$ by (1). Rule (4) is $Q\\Rightarrow\\neg O$, so $Q$ cannot hold, and (3) is idle. The evening is $\\{O\\}$.\n\nIf $P$ holds, then $\\neg O$. Rule (3) brings $Q$, and (4) holds because Owen is away. The evening is $\\{P,Q\\}$.\n\nThose are the only two legal evenings.",
+    "title_de_existing": "Aufteilung der Kochpflicht",
+    "context_de_existing": "Drei Mitbewohnerinnen — Owen, Priya und Quinn — entscheiden, wer heute kocht:\n\n1. Wenn Owen kocht, kocht Priya nicht.\n\n2. Mindestens eine von Owen oder Priya kocht.\n\n3. Wenn Priya kocht, kocht auch Quinn.\n\n4. Quinn kocht nur dann, wenn Owen nicht kocht.",
+    "statements_de_existing": [
+      "Wenn Owen kocht, kocht Quinn nicht.",
+      "Owen und Priya können beide heute kochen.",
+      "Es ist möglich, dass weder Owen noch Priya kocht und Quinn allein kocht.",
+      "Priyas Kochen garantiert, dass auch Quinn kocht.",
+      "Owen muss heute kochen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n(4) ist $Q\\Rightarrow\\neg O$, Kontraposition $O\\Rightarrow\\neg Q$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\n(1) und (2) erzwingen genau eine von Owen oder Priya.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n(2) verlangt Owen oder Priya.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nGenau Regel (3): $P\\Rightarrow Q$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nEs gibt die Lösung Priya+Quinn ohne Owen.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Genau eine von Owen/Priya. Owen schließt Quinn aus; Priya erzwingt Quinn. Owen ist nicht zwingend."
+  },
+  {
+    "case_id": "MATH 1.105",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "A Five-Person Day Trip",
+    "context_en": "Five club members - Diego, Fatima, Grace, Hugo, and Iris - are deciding whether to join a day trip. Their attendance follows these rules:\n\n1. If Diego goes, then Fatima goes.\n\n2. Grace goes unless Hugo goes.\n\n3. If Fatima goes, then Grace does not go.\n\n4. At least one of Diego or Hugo goes.\n\n5. If Iris goes, then Diego does not go.\n\n6. Hugo goes only if Fatima does not go.",
+    "statements_en": [
+      "Diego attends the trip in at least one valid scenario.",
+      "If Fatima goes, then Hugo does not go.",
+      "Hugo must go on the trip.",
+      "It is possible for both Grace and Iris to attend together.",
+      "If Iris goes, then Fatima goes."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nThe claim needs at least one valid roster with Diego. Assume $D$. Rule (1) forces Fatima in, and rule (3) then forces Grace out:\n\n$$D\\overset{(1)}{\\Rightarrow}F \\overset{(3)}{\\Rightarrow}\\neg G.$$\n\nRule (2), \"Grace goes unless Hugo goes,\" is $G\\lor H$. Since Grace is out, Hugo must go. Rule (6) then forces Fatima out:\n\n$$\\neg G\\overset{(2)}{\\Rightarrow}H \\overset{(6)}{\\Rightarrow}\\neg F.$$\n\nDiego's attendance has forced both $F$ and $\\neg F$. Thus no valid roster contains Diego.\n\nSo the statement is False.",
+      "**B.** → True\n\nThe claim asks whether Fatima going forces Hugo out. Rule (6), \"Hugo goes only if Fatima does not,\" means\n\n$$(6)$$\n\n$$H\\Rightarrow\\neg F.$$\n\nTake the contrapositive:\n\n$$\\neg(\\neg F)\\Rightarrow\\neg H,$$\n\nwhich simplifies to\n\n$$F\\Rightarrow\\neg H.$$\n\nTherefore Fatima and Hugo cannot attend together, exactly as the claim says.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe claim says Hugo appears in every valid roster. Letter A forced Diego out:\n\n$$\\neg D.$$\n\nRule (4) requires at least one of Diego or Hugo, so\n\n$$(4)$$\n\n$$D\\lor H.$$\n\nWith the Diego disjunct false, the Hugo disjunct must be true:\n\n$$\\neg D\\land(D\\lor H)\\Rightarrow H.$$\n\nEvery valid roster therefore contains Hugo.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim needs one legal roster containing both Grace and Iris. Try\n\n$$\\{G,H,I\\},$$\n\n$$\nD = F = 0.\n$$\n\nRule (1) is idle because Diego is out. Rule (2), $G\\lor H$, holds. Rule (3) is idle because Fatima is out. Hugo satisfies rule (4), Iris satisfies rule (5) because Diego is out, and Hugo satisfies rule (6) because Fatima is out.\n\nAll six rules hold while Grace and Iris both attend.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim is the implication $I\\Rightarrow F$. To refute it, look for a legal roster with Iris in and Fatima out. Use\n\n$$\\{G,H,I\\},$$\n\n$$I = 1,$$\n\n$$\nF = 0.\n$$\n\nAs rule (5) requires, Iris has Diego out. Hugo then satisfies rule (4), and rule (6) agrees with Fatima being out. Grace satisfies rule (2), while rules (1) and (3) are idle because Diego and Fatima are absent.\n\nThis valid roster makes the hypothesis $I$ true and the conclusion $F$ false.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $D,F,G,H,I$ for Diego, Fatima, Grace, Hugo, Iris going. The stem is\n\n$$(1)\\ D\\Rightarrow F,\\qquad (2)\\ G\\lor H,\\qquad (3)\\ F\\Rightarrow\\neg G,$$\n\n$$(4)\\ D\\lor H,\\qquad (5)\\ I\\Rightarrow\\neg D,\\qquad (6)\\ H\\Rightarrow\\neg F.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $G\\lor H$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $D$ holds, then $F$ by (1) and $\\neg G$ by (3). Rule (2) then forces $H$, and (6) forces $\\neg F$. That collides with $F$, so Diego never goes.\n\nWith $\\neg D$, rule (4) forces $H$, and (6) then forces $\\neg F$. Rule (2) is already held by Hugo, so $G$ is free. Rule (5) is idle once Diego is out, so $I$ is free.\n\nThe legal rosters are $\\{H\\}$, $\\{H,G\\}$, $\\{H,I\\}$, and $\\{H,G,I\\}$.",
+    "title_de_existing": "Ein Tagesausflug zu fünft",
+    "context_de_existing": "Fünf Clubmitglieder — Diego, Fatima, Grace, Hugo und Iris — entscheiden über einen Tagesausflug:\n\n1. Wenn Diego geht, geht Fatima.\n\n2. Grace geht, es sei denn, Hugo geht.\n\n3. Wenn Fatima geht, geht Grace nicht.\n\n4. Mindestens eine von Diego oder Hugo geht.\n\n5. Wenn Iris geht, geht Diego nicht.\n\n6. Hugo geht nur dann, wenn Fatima nicht geht.",
+    "statements_de_existing": [
+      "Diego nimmt in mindestens einem gültigen Szenario am Ausflug teil.",
+      "Wenn Fatima geht, geht Hugo nicht.",
+      "Hugo muss am Ausflug teilnehmen.",
+      "Es ist möglich, dass Grace und Iris gemeinsam teilnehmen.",
+      "Wenn Iris geht, geht Fatima."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nDiego erzwingt Fatima und damit $\\neg G$ und mit (6) $\\neg H$; dann scheitert (2) $G\\lor H$ und ggf. (4). Diego ist in keiner gültigen Lösung.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nKontraposition von (6): $F\\Rightarrow\\neg H$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nOhne Diego erzwingt (4) Hugo.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nMit Hugo, ohne Diego/Fatima, mit Grace und Iris ist verträglich.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nIris erzwingt nur $\\neg D$, nicht Fatima.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Diego führt zum Widerspruch. Also $\\neg D$, damit Hugo aus (4). Fatima schließt Hugo aus. Grace und Iris können gemeinsam kommen."
+  },
+  {
+    "case_id": "MATH 1.106",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Six Interns and the Conference Talk",
+    "context_en": "Six interns - Aiden, Bella, Caleb, Daisy, Ethan, and Faye - are deciding who will present at a conference. Their participation follows these rules:\n\n1. If Aiden presents, then both Bella and Caleb present.\n\n2. At least one of Daisy or Ethan presents.\n\n3. If Bella presents, then Daisy does not present.\n\n4. Caleb presents only if Ethan presents.\n\n5. If Faye presents, then Aiden presents.\n\n6. Ethan presents only if Bella does not present.",
+    "statements_en": [
+      "Aiden is forced to NOT present in every valid scenario.",
+      "It is possible for Bella to present in some valid scenario.",
+      "If Caleb presents, then Ethan also presents.",
+      "It is possible for Faye to present at the conference.",
+      "There is exactly one valid way to decide who presents, consistent with all six rules."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim says Aiden is absent from every valid roster. Test the opposite by assuming $A$. Rule (1) forces both Bella and Caleb, and rule (4) sends Caleb to Ethan:\n\n$$A\\overset{(1)}{\\Rightarrow}(B\\land C),$$\n\n$$C\\overset{(4)}{\\Rightarrow}E.$$\n\nRule (6), $E\\Rightarrow\\neg B$, then forces Bella out:\n\n$$A\\Rightarrow C\\Rightarrow E\\Rightarrow\\neg B.$$\n\nBut rule (1) already forced $B$. Since $A$ leads to both $B$ and $\\neg B$, Aiden cannot present in any valid scenario.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe claim needs one valid scenario with Bella presenting. Assume $B$. Rule (3) forces Daisy out. Rule (6) says $E\\Rightarrow\\neg B$; its contrapositive forces Ethan out when Bella is in:\n\n$$B\\overset{(3)}{\\Rightarrow}\\neg D,$$\n\n$$B\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg E.$$\n\nRule (2) requires $D\\lor E$, but both choices have now been forced false:\n\n$$\\neg D\\land\\neg E\\quad\\text{contradicts}\\quad D\\lor E.$$\n\nNo valid scenario can contain Bella.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe claim asks what must happen if Caleb presents. Rule (4), \"Caleb presents only if Ethan presents,\" translates in the only-if direction as\n\n$$(4)$$\n\n$$C\\Rightarrow E.$$\n\nStarting from $C$, rule (4) immediately forces $E$. The reverse $E\\Rightarrow C$ is not promised, but the claim uses the correct forward direction. Therefore every roster with Caleb also has Ethan.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe claim needs a valid roster with Faye. Assume $F$. Rule (5) forces Aiden, and rule (1) then forces Bella and Caleb:\n\n$$F\\overset{(5)}{\\Rightarrow}A \\overset{(1)}{\\Rightarrow}(B\\land C).$$\n\nCaleb forces Ethan by rule (4), while Ethan forces Bella out by rule (6):\n\n$$C\\overset{(4)}{\\Rightarrow}E \\overset{(6)}{\\Rightarrow}\\neg B.$$\n\nThis collides with the Bella forced by rule (1). Faye's attendance creates a contradiction, so no valid roster contains Faye.\n\nSo the statement is False.",
+      "**E.** → False\n\nThe claim says exactly one valid roster exists. Two distinct legal rosters are enough to defeat uniqueness.\n\nFirst take $\\{D\\}$. Daisy satisfies rule (2), and every implication in (1), (3), (4), (5), and (6) has a false hypothesis.\n\nNext take $\\{E\\}$. Ethan satisfies rule (2). Rule (6) requires Bella to be out, which she is, and the other implications again have false hypotheses:\n\n$$\\{D\\}\\neq\\{E\\}.$$\n\nBoth rosters satisfy all six rules, so there is more than one valid way.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $A,B,C,D,E,F$ for Aiden, Bella, Caleb, Daisy, Ethan, Faye presenting. The stem is\n\n$$(1)\\ A\\Rightarrow(B\\land C),\\qquad (2)\\ D\\lor E,\\qquad (3)\\ B\\Rightarrow\\neg D,$$\n\n$$(4)\\ C\\Rightarrow E,\\qquad (5)\\ F\\Rightarrow A,\\qquad (6)\\ E\\Rightarrow\\neg B.$$\n\nAn implication whose hypothesis is false is idle. \"$P$ only if $Q$\" is $P\\Rightarrow Q$.\n\n**Part 2: Solve.**\n\nIf $B$ holds, then $\\neg D$ by (3) and $\\neg E$ by the contrapose of (6). Rule (2) then has both disjuncts false, so Bella never presents.\n\nAiden needs Bella by (1), so Aiden is out. Faye needs Aiden by (5), so Faye is out.\n\nThe live people are $C,D,E$, still constrained by (2) and (4). The legal rosters are $\\{D\\}$, $\\{E\\}$, $\\{D,E\\}$, $\\{C,E\\}$, and $\\{C,D,E\\}$.",
+    "title_de_existing": "Sechs Praktikanten und der Konferenzvortrag",
+    "context_de_existing": "Sechs Praktikantinnen — Aiden, Bella, Caleb, Daisy, Ethan und Faye — entscheiden, wer auf einer Konferenz vorträgt:\n\n1. Wenn Aiden vorträgt, tragen Bella und Caleb vor.\n\n2. Mindestens eine von Daisy oder Ethan trägt vor.\n\n3. Wenn Bella vorträgt, trägt Daisy nicht vor.\n\n4. Caleb trägt nur dann vor, wenn Ethan vorträgt.\n\n5. Wenn Faye vorträgt, trägt Aiden vor.\n\n6. Ethan trägt nur dann vor, wenn Bella nicht vorträgt.",
+    "statements_de_existing": [
+      "Aiden ist in jedem gültigen Szenario gezwungen, nicht vorzutragen.",
+      "Es ist möglich, dass Bella in einem gültigen Szenario vorträgt.",
+      "Wenn Caleb vorträgt, trägt auch Ethan vor.",
+      "Es ist möglich, dass Faye auf der Konferenz vorträgt.",
+      "Es gibt genau eine gültige Möglichkeit, die Vortragenden festzulegen."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAiden erzwingt Bella und Caleb, was mit (3),(6),(2) kollidiert. Also stets $\\neg A$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nBella führt zu $\\neg D$ und $\\neg E$, Widerspruch zu (2).\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nGenau Regel (4): $C\\Rightarrow E$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nFaye erzwingt Aiden, der bereits ausgeschlossen ist.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nEs bleiben mehrere Belegungen ohne Aiden/Bella/Faye.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Aiden und Bella führen zum Widerspruch mit (2). Faye zieht Aiden nach. Caleb erzwingt Ethan. Mehrere Restlösungen bleiben."
+  },
+  {
+    "case_id": "MATH 1.107",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Assigning Paper Reviewers",
+    "context_en": "Five researchers - Petra, Quinn, Ravi, Sana, and Theo - are being assigned to review a paper. The assignment follows these rules:\n\n1. If Petra reviews, then Quinn does not review.\n\n2. Ravi reviews unless Sana reviews.\n\n3. If Quinn does not review, then Theo reviews.\n\n4. At least one of Petra or Sana reviews.\n\n5. If Theo reviews, then Ravi does not review.\n\n6. Sana reviews only if Petra reviews.",
+    "statements_en": [
+      "Petra must review the paper in every valid assignment.",
+      "If Quinn reviews, then Petra does not review.",
+      "It is possible for Ravi to review the paper in some valid assignment.",
+      "In the (unique) valid assignment, both Theo and Sana review the paper.",
+      "There are multiple different valid ways to assign reviewers consistent with all six rules."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe claim says Petra reviews in every valid assignment. Test the opposite by assuming $\\neg P$. Rule (6) is $S\\Rightarrow P$, so its contrapositive gives\n\n$$\\neg P\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg S.$$\n\nRule (4) requires at least one of Petra or Sana:\n\n$$(4)$$\n\n$$P\\lor S.$$\n\nUnder the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe claim asks what follows if Quinn reviews. Rule (1) says\n\n$$(1)$$\n\n$$P\\Rightarrow\\neg Q.$$\n\nTaking the contrapositive reverses and negates both sides:\n\n$$\\neg(\\neg Q)\\Rightarrow\\neg P,$$\n\nso\n\n$$Q\\Rightarrow\\neg P.$$\n\nTherefore Quinn's presence forces Petra's absence, exactly as claimed.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe claim needs at least one valid assignment with Ravi. Petra is already forced in by rule (4) together with rule (6). Rule (1) then forces Quinn out, and rule (3) forces Theo in:\n\n$$P\\overset{(1)}{\\Rightarrow}\\neg Q \\overset{(3)}{\\Rightarrow}T.$$\n\nRule (5) now applies:\n\n$$T\\overset{(5)}{\\Rightarrow}\\neg R.$$\n\nThus every valid assignment forces Ravi out. Assuming Ravi in would collide with the forced $\\neg R$.\n\nSo the statement is False.",
+      "**D.** → True\n\nThe claim says the unique assignment includes both Theo and Sana. Begin with Petra, who is forced in. Rules (1) and (3) then force Quinn out and Theo in:\n\n$$P\\overset{(1)}{\\Rightarrow}\\neg Q \\overset{(3)}{\\Rightarrow}T.$$\n\nRule (5) forces Ravi out. Rule (2) requires $R\\lor S$, so Ravi's absence forces Sana in:\n\n$$T\\overset{(5)}{\\Rightarrow}\\neg R,$$\n\n$$\\neg R\\land(R\\lor S)\\overset{(2)}{\\Rightarrow}S.$$\n\nThe forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim requires at least two different valid assignments. Instead, each reviewer's status is forced in sequence.\n\nRule (4) together with rule (6) forces $P$. Then (1) gives $\\neg Q$, (3) gives $T$, and (5) gives $\\neg R$. Finally, rule (2), $R\\lor S$, gives $S$:\n\n$$P\\Rightarrow\\neg Q\\Rightarrow T\\Rightarrow\\neg R\\Rightarrow S.$$\n\nSo every valid assignment has exactly\n\n$$\nP = S = T = 1,\n$$\n\n$$\nQ = R = 0.\n$$\n\nThis assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "**Part 1: Setup.**\n\nWrite $P,Q,R,S,T$ for Petra, Quinn, Ravi, Sana, Theo reviewing. The stem is\n\n$$(1)\\ P\\Rightarrow\\neg Q,\\qquad (2)\\ R\\lor S,\\qquad (3)\\ \\neg Q\\Rightarrow T,$$\n\n$$(4)\\ P\\lor S,\\qquad (5)\\ T\\Rightarrow\\neg R,\\qquad (6)\\ S\\Rightarrow P.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $R\\lor S$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $\\neg P$ holds, the contrapose of (6) gives $\\neg S$, and then (4) fails. So $P$ is forced.\n\nThen (1) gives $\\neg Q$, (3) gives $T$, (5) gives $\\neg R$, and (2) with Ravi out forces $S$. Rule (6) holds because Petra already reviews.\n\nThe unique assignment is $\\{P,S,T\\}$.",
+    "title_de_existing": "Zuweisung von Gutachtern für Papers",
+    "context_de_existing": "Fünf Forscherinnen — Petra, Quinn, Ravi, Sana und Theo — werden einer Paper-Begutachtung zugewiesen:\n\n1. Wenn Petra begutachtet, begutachtet Quinn nicht.\n\n2. Ravi begutachtet, es sei denn, Sana begutachtet.\n\n3. Wenn Quinn nicht begutachtet, begutachtet Theo.\n\n4. Mindestens eine von Petra oder Sana begutachtet.\n\n5. Wenn Theo begutachtet, begutachtet Ravi nicht.\n\n6. Sana begutachtet nur dann, wenn Petra begutachtet.",
+    "statements_de_existing": [
+      "Petra muss in jeder gültigen Zuweisung begutachten.",
+      "Wenn Quinn begutachtet, begutachtet Petra nicht.",
+      "Es ist möglich, dass Ravi in einer gültigen Zuweisung begutachtet.",
+      "In der (eindeutigen) gültigen Zuweisung begutachten sowohl Theo als auch Sana.",
+      "Es gibt mehrere verschiedene gültige Zuweisungen, die mit allen sechs Regeln verträglich sind."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nOhne Petra folgt aus (6) $\\neg S$, Widerspruch zu (4). Also stets Petra.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nKontraposition von (1): $Q\\Rightarrow\\neg P$ — hier mit stets $P$ folgt $\\neg Q$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nPetra und $\\neg Q$ erzwingen Theo, Theo erzwingt $\\neg R$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDie eindeutige Lösung enthält Theo und Sana (neben Petra, ohne Quinn/Ravi).\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Zuweisung ist eindeutig.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Petra ist erzwungen. Dann $\\neg Q$, damit Theo, damit $\\neg R$. Mit (6) und (2)/(4) folgt Sana. Einzige Lösung: Petra, Sana, Theo."
+  }
+]

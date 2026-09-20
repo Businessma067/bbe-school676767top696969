@@ -1,0 +1,160 @@
+CASE MATH 11.75
+ANSWER [true, true, false, true, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Both firms face $R'=7$. Average-cost movement is read from $C^{\prime}$ versus $A$: Firm A has $C_A^{\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\prime}$, not average cost:
+$$P_A^{\prime}=7-5=2>0,\qquad P_B^{\prime}=7-9=-2<0.$$
+Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.
+
+=== A ===
+**A.** → True
+
+Average cost falls when marginal cost lies below average cost. For firm A,
+
+$$
+C_A^{\prime} = 5<8
+$$
+
+$$
+C_A^{\prime} = A_A
+$$
+
+Hence $A_A^{\prime}(Q)<0$: A's average cost is currently falling
+
+The sign rule $A^{\prime}=(C^{\prime}-A)/Q$ gives
+
+$$
+A_A^{\prime}<0
+$$ precisely because $5<8$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
+
+$$
+A^{\prime}(Q) = \dfrac{C^{\prime}(Q)-A(Q)}{Q}
+$$
+
+For firm B one has $C_B^{\prime}=9>6=A_B$, so $A_B^{\prime}(Q)>0$: B's average cost is currently rising
+
+For B the same rule gives
+
+$$
+A_B^{\prime}>0
+$$ because marginal cost $9$ sits above average cost $6$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A = C/Q
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== C ===
+**C.** → False
+
+The extra-unit test compares $R^{\prime}$ with $C^{\prime}$, not the two averages. Here
+
+$$
+7>5
+$$
+
+$$
+\text{at A}
+$$
+
+$$
+7<9
+$$
+
+$$
+\text{at B}
+$$
+
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
+
+Average-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== D ===
+**D.** → True
+
+The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
+
+$$
+7>5 = C_A^{\prime}
+$$
+
+$$
+\text{but}
+$$
+
+$$
+7<9 = C_B^{\prime}
+$$
+
+Only firm A satisfies $R'>C'$
+
+A alone has extra revenue above extra cost; B has the inequality reversed.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== E ===
+**E.** → True
+
+The extra-profit figures are
+
+$$
+P_A^{\prime} = 7-5
+$$
+
+$$
+7 - 5 = 2
+$$
+
+$$
+P_A^{\prime} = 2 = 2
+$$
+
+$$
+P_A^{\prime} = 2
+$$
+
+$$
+P_B^{\prime} = 7-9
+$$
+
+$$
+7 - 9 = -2
+$$
+
+$$
+P_B^{\prime} = -2 = -2
+$$
+
+$$
+P_B^{\prime} = -2
+$$
+
+The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B
+
+Those $\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+

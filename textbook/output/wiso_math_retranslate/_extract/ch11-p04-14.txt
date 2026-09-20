@@ -1,0 +1,164 @@
+CASE MATH 11.79
+ANSWER [true, true, true, false, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Below capacity, $P(Q)=8Q-\dfrac{1}{10}Q^{2}$, so
+$$P^{\prime}(Q)=8-\dfrac{1}{5}Q\qquad(Q<30).$$
+At $Q=20$ one has $P^{\prime}(20)=8-4=4>0$, so a small expansion raises profit. Beyond capacity,
+$$P(Q)=150-4(Q-30)\qquad(Q>30)$$
+has constant slope
+$$P^{\prime}(Q)=-4<0,$$
+so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit. Below capacity $P^{\prime}=8-\dfrac{1}{5}Q$ (positive at $Q=20$); above capacity $P^{\prime}=-4<0$. The level $P(30)=150$ is not the thirtieth unit's extra profit.
+
+=== A ===
+**A.** → True
+
+On the pre-capacity piece,
+
+$$
+P(Q) = 8Q-\dfrac{1}{10}Q^{2}
+$$
+
+Differentiating term by term:
+
+$$
+P^{\prime}(Q) = 8-\dfrac{2}{10}Q
+$$
+
+$$
+P^{\prime}(Q) = 8-\dfrac{1}{5}Q
+$$
+
+$$
+\text{for }Q<30
+$$
+
+The claim matches
+
+Differentiate $8Q-\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\dfrac{2}{10}Q=-\dfrac{1}{5}Q$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+At $Q=20$,
+
+$$
+P^{\prime}(20) = 8-\dfrac{1}{5}\cdot 20
+$$
+
+$$
+P^{\prime}(20) = 8-4
+$$
+
+$$
+8 - 4 = 4
+$$
+
+$$
+P^{\prime}(20) = 4 = 4
+$$
+
+$$
+P^{\prime}(20) = 4>0
+$$
+
+A small expansion raises profit at $Q=20$
+
+At $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
+
+$$
+P^{\prime}(Q) = -4
+$$
+
+$$
+\text{for }Q>30
+$$
+
+which matches the claim
+
+Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P'(Q) = -4
+$$
+
+$$
+P(Q) = 150-4(Q-30)
+$$
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Just above capacity the firm is on the outsourcing piece, where $P^{\prime}(Q)=-4<0$.
+
+A small expansion lowers profit; it does not raise it
+
+Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(Q) = -4<0
+$$
+
+$$
+Q = 30
+$$
+
+which does not match the claim.
+
+So the statement is False.
+
+=== E ===
+**E.** → False
+
+$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
+
+Approaching $Q=30$ from the left,
+
+$$
+P^{\prime}(30^{-}) = 8-\dfrac{1}{5}\cdot 30
+$$
+
+$$
+P^{\prime}(30^{-}) = 8-6
+$$
+
+$$
+8 - 6 = 2
+$$
+
+$$
+P^{\prime}(30^{-}) = 2 = 2
+$$
+
+$$
+P^{\prime}(30^{-}) = 2
+$$
+
+The thirtieth unit adds about $2$ euros of profit, not $150$
+
+The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+

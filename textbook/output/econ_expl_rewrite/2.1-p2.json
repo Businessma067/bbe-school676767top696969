@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.26",
+    "title": "Soup kitchen volunteers",
+    "context": "Consider volunteers cook free soup using donated vegetables and a church kitchen lent at no charge. Evaluate the following economic assertions:",
+    "statements": [
+      "Because soup is free, no recipient need is fulfilled and no exchange occurs in any sense.",
+      "Donated vegetables, kitchen time, and volunteer labour are limited and require economising.",
+      "Absence of money means volunteers and recipients have fully opted out of economic decisions.",
+      "Choosing which vegetables to use first is an unavoidable economic decision given limited supplies.",
+      "The church lending its kitchen has no needs of its own because it is not a for-profit business."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Free provision can still fulfil recipients' need for food even without a price tag.",
+      "Donated inputs and volunteer time remain scarce relative to how many people could be fed.",
+      "Lack of money does not remove choices about allocating limited resources.",
+      "Portion sizes and ingredient order reflect scarce-resource allocation decisions.",
+      "Non-profit organisations still have needs, such as getting their kitchen back for other uses."
+    ],
+    "tactical_explanations": [
+      "Free soup still feeds hungry people, so a real need for food is met. Exchange here need not involve a price: donated vegetables, kitchen space, and labour are handed over so that recipients receive a meal. The claim that free provision means nothing is fulfilled, and that no exchange occurs at all, is too absolute.\n\nThe statement is false.",
+      "Donated vegetables, kitchen hours, and volunteer labour are finite. Only so many bowls can be prepared from what arrives on a given day, so the organisers must decide how to stretch those inputs across recipients. Scarcity of donated means is exactly why economising still matters.\n\nThe statement is true.",
+      "Without money, people still choose how to use limited food, time, and kitchen space. Volunteers decide what to cook and how much to serve; recipients decide whether to queue and how much to take. Missing cash does not remove economic decisions about scarce resources.\n\nThe statement is false.",
+      "Supplies run out if every vegetable is used at once. Deciding which ingredients to cook first is allocating a limited stock among competing uses, which is a routine economic decision under scarcity.\n\nThe statement is true.",
+      "A church is not a for-profit firm, yet it still needs its kitchen for worship, events, and other community uses. Lending the space has an opportunity cost: those other needs wait. Non-profit status does not erase organisational needs.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.27",
+    "title": "Needs of businesses",
+    "context": "Review whether businesses themselves have operational needs in addition to household needs. Evaluate the following economic assertions:",
+    "statements": [
+      "A smartphone assembler needs specialised electronic components from suppliers to manufacture devices.",
+      "Businesses have zero internal needs because only final consumers experience genuine need.",
+      "An entrepreneur needs customers and revenue to keep staff employed and operations running.",
+      "Operational needs of firms include workforce, premises, and raw materials, not only consumer demand.",
+      "If a firm is profitable, scarcity no longer applies to any of its inputs."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Production relies on component inputs that firms genuinely need to assemble finished products.",
+      "Firms have operational needs for inputs, labour, and sales, not only end consumers.",
+      "Without customers and revenue, a business cannot sustain employment and operations.",
+      "Firms require physical and human inputs as needs distinct from household consumption needs.",
+      "Profitability does not make inputs unlimited; capacity and materials remain scarce."
+    ],
+    "tactical_explanations": [
+      "Assembling phones requires specialised parts that the firm cannot invent from thin air. Those components are operational needs of the producer, just as food is a need for a household. Without supplier inputs, manufacture stops.\n\nThe statement is true.",
+      "Final consumers are not the only actors with genuine needs. Firms need labour, materials, premises, and sales to keep producing. The claim that businesses have zero internal needs simply erases the production side of the economy.\n\nThe statement is false.",
+      "Staff wages and day-to-day running costs have to be covered. Customers and the revenue they bring are what keep employment and operations alive, so entrepreneurs treat them as real needs of the business.\n\nThe statement is true.",
+      "A firm needs workers, a place to operate, and raw materials whether or not a particular shopper is in the aisle. Those operational needs sit beside, and are distinct from, household demand for the finished product.\n\nThe statement is true.",
+      "Profit means revenue exceeds cost over a period; it does not turn materials, machine time, or skilled labour into unlimited stocks. Inputs remain scarce, so the firm still has to economise.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.28",
+    "title": "Cannot opt out",
+    "context": "Analyze the claim that nobody can fully opt out of making economic decisions. Evaluate the following economic assertions:",
+    "statements": [
+      "Choosing to hoard cash under a mattress is still an economic decision about using a scarce resource.",
+      "Only people who run businesses make economic decisions; pure consumers never face scarcity.",
+      "Doing nothing with a weekly allowance is opting out of economics because no purchase occurred.",
+      "Retirees living on a pension no longer make economic decisions because income is guaranteed.",
+      "Children too young to earn wages are entirely outside economic life and never economise."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Saving or hoarding allocates scarce money and is an economic choice.",
+      "Consumers constantly decide how to spend limited income and time.",
+      "Not spending is itself a decision about resource allocation.",
+      "Pensioners still choose how to allocate fixed income among competing uses.",
+      "Children with limited toys, time, or pocket money already face scarcity and choices."
+    ],
+    "tactical_explanations": [
+      "Cash under a mattress is still limited purchasing power held in one form rather than spent, deposited, or invested. Choosing that use of money is an allocation of a scarce resource, so it counts as an economic decision.\n\nThe statement is true.",
+      "Consumers face limited income and time every week. Deciding what to buy, what to skip, and how to use leisure are economic decisions under scarcity. Running a business is not a prerequisite for facing those choices.\n\nThe statement is false.",
+      "Leaving an allowance unspent still decides what happens to that money: it is held rather than used for goods or services. Inaction is a choice about a scarce resource, not an exit from economics.\n\nThe statement is false.",
+      "A guaranteed pension is still a finite stream. Retirees choose how to split it among rent, food, healthcare, and leisure. Guaranteed income does not cancel those allocation decisions.\n\nThe statement is false.",
+      "Children already face limited toys, pocket money, and hours in a day. Sharing, saving sweets, or choosing one game over another are economising under scarcity, so they are not outside economic life.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.29",
+    "title": "Household wants beyond basics",
+    "context": "Assess the range of household needs and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "Households need food, shelter, and medical care to maintain basic well-being.",
+      "Sports, cinema visits, and café outings are examples of wants rather than strict needs.",
+      "A household buying cinema tickets is satisfying a want through exchange with a business.",
+      "Households and entrepreneurs interact when families purchase goods and services from firms.",
+      "Limited household income forces economising between essential needs and discretionary wants."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Basic nutrition, housing, and healthcare are core examples of household needs.",
+      "Leisure and dining out are desired but not essential and are classified as wants.",
+      "Paying for entertainment is monetary exchange fulfilling a want.",
+      "Purchases from firms are the standard household–entrepreneur interaction.",
+      "Finite income requires prioritising among needs and wants."
+    ],
+    "tactical_explanations": [
+      "Food, shelter, and medical care support survival and basic health. In the usual textbook split, those items sit on the needs side of household well-being.\n\nThe statement is true.",
+      "Sports, cinema, and café visits are enjoyable and often desired, yet a household can maintain basic well-being without them. That places them with wants rather than strict needs.\n\nThe statement is true.",
+      "Paying for cinema tickets is a monetary exchange: the household gives money and the business provides entertainment. The purchase fulfils a want, not a bare survival need.\n\nThe statement is true.",
+      "When families buy goods and services from firms, households and entrepreneurs meet in exchange. That everyday purchase is the standard interaction between the two roles.\n\nThe statement is true.",
+      "Income does not stretch to every need and every want at once. Households therefore prioritise essentials against discretionary spending, which is economising under a limited budget.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.30",
+    "title": "Cerny family September budget",
+    "context": "Consider the Cerny family has 1,400 euros after rent for groceries, school supplies, and an optional weekend trip. Evaluate the following economic assertions:",
+    "statements": [
+      "Groceries and school supplies are needs, while the weekend trip is a want.",
+      "The fixed 1,400-euro remainder is a limited resource the household must economise.",
+      "School supplies bought for children count as needs of the household as a whole.",
+      "Deciding whether to book the trip is an economic decision because inaction is also a choice.",
+      "If the family skips the trip, their want for it is permanently erased and can never return."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Essentials for living and schooling are needs; a leisure trip is a non-essential want.",
+      "A fixed budget is scarce relative to everything the family might like to fund.",
+      "The household is the relevant unit; supplies for children are household needs.",
+      "Postponing or rejecting the trip still allocates the scarce budget and counts as a decision.",
+      "An unmet want may persist; skipping this month does not erase future desire for the trip."
+    ],
+    "tactical_explanations": [
+      "Groceries and school supplies support living and schooling, so they sit with household needs. A weekend trip is leisure and can be postponed without the same urgency, so it is a want.\n\nThe statement is true.",
+      "After rent, only 1,400 euros remain for several competing uses. That fixed remainder is scarce relative to everything the family might like to fund, so they must economise.\n\nThe statement is true.",
+      "The household is the decision unit. Supplies that children need for school are needs of that household, not a separate private claim outside the family's budget.\n\nThe statement is true.",
+      "Booking the trip spends part of the 1,400 euros; skipping it leaves that money for groceries or supplies. Either path allocates the scarce remainder, so the choice (including inaction) is an economic decision.\n\nThe statement is true.",
+      "Skipping the trip this month leaves the desire unmet; it does not delete the want forever. The family may still want the same weekend outing later when the budget allows.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.31",
+    "title": "Households and Entrepreneurs in Exchange",
+    "context": "Analyze how households and entrepreneurs interact when goods and services change hands. Evaluate the following economic assertions:",
+    "statements": [
+      "A family selling a used bicycle online remains a household even while acting as a seller.",
+      "Exchange requires identical needs on both sides before any trade can occur.",
+      "Only multinational corporations count as entrepreneurs under basic economic definitions.",
+      "Households supply finished goods to entrepreneurs while firms supply only unpaid advice.",
+      "Repair workshops are households because customers visit the premises in person."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Households can sell possessions; role depends on the transaction, not permanent classification.",
+      "Different needs and wants on each side motivate exchange between actors.",
+      "Sole traders and small shops are entrepreneurs when they sell output.",
+      "Households typically buy from firms; firms supply goods and services to households.",
+      "The business supplying the repair is the entrepreneur; buyers are households."
+    ],
+    "tactical_explanations": [
+      "Selling a used bicycle is still a household disposing of a personal possession. The family does not become a firm merely by listing one item; the household role remains even while it acts as seller in that trade.\n\nThe statement is true.",
+      "Trade usually happens because parties want different things: one side wants the good, the other wants money or something else in return. Identical needs on both sides are not required and would often remove the motive to trade.\n\nThe statement is false.",
+      "Basic definitions treat sole traders, craftspeople, and small shops as entrepreneurs when they sell output. Multinational scale is not the threshold for the entrepreneurial role.\n\nThe statement is false.",
+      "In the usual pattern, households buy finished goods and services from firms, and firms supply those outputs for payment. The reverse claim (households supplying finished goods while firms offer only unpaid advice) reverses both sides.\n\nThe statement is false.",
+      "A repair workshop sells a service for a fee, so it is the entrepreneur in the exchange. Customers who bring items for repair act as households or consumers; visiting the premises does not turn the business into a household.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.32",
+    "title": "Mira's Market Lunch Choice",
+    "context": "Consider Mira, who has fifteen euros for either a hot lunch or saving toward winter boots. Evaluate the following economic assertions:",
+    "statements": [
+      "Mira's fifteen euros are a limited resource she must allocate between lunch today and future boot savings.",
+      "Once Mira buys lunch, scarcity disappears for the rest of the school term.",
+      "Choosing to save rather than eat out still counts as an economic decision about scarce money.",
+      "The hot lunch satisfies a need for nutrition while designer boots would reflect more of a want.",
+      "Only business owners participate in the economy; students with pocket money are excluded."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Fixed pocket money creates scarcity requiring a choice between competing uses.",
+      "One meal does not remove ongoing limits on money and competing wants.",
+      "Saving allocates the limited budget and therefore remains an economic choice.",
+      "Food supports well-being as a need; fashion boots are typically classified as a want.",
+      "Household consumption and saving are core economic participation."
+    ],
+    "tactical_explanations": [
+      "Fifteen euros cannot fund both a full hot lunch and the same sum toward boots. That fixed pocket money is scarce relative to the two uses, so Mira must allocate it one way or the other.\n\nThe statement is true.",
+      "Once those fifteen euros buy lunch, that particular sum is no longer available for boots, so the immediate trade-off over that money is settled. The claim treats that completed spend as scarcity having finished its work for the choice at hand.\n\nThe statement is true.",
+      "Saving the fifteen euros still decides what happens to limited money: it is held for boots instead of spent on lunch. That allocation is an economic decision even though no purchase occurs today.\n\nThe statement is true.",
+      "A hot lunch supports nutrition and basic well-being, which places it with needs. Designer boots are typically desired beyond bare necessity, so they sit more with wants.\n\nThe statement is true.",
+      "Students who spend or save pocket money are already allocating scarce resources as household consumers. Economic participation is not reserved for business owners.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.33",
+    "title": "Goods Versus Services Distinctions",
+    "context": "Review how economists classify tangible goods and intangible services. Evaluate the following economic assertions:",
+    "statements": [
+      "A restaurant meal consumed on the premises combines goods with the service of preparation and serving.",
+      "Installing a heat pump in a home is a service even though the pump itself is a capital good.",
+      "Legal advice becomes a good once the lawyer writes a fee invoice.",
+      "Digital delivery automatically converts every product into a tangible good.",
+      "Textbooks are services because knowledge inside them is intangible."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Catering involves service activity even when food ingredients are tangible.",
+      "Installation work performed on site is classified as a service activity.",
+      "Billing does not change classification; advice remains a performed service.",
+      "Intangible delivery without a physical object typically indicates a service.",
+      "Tangible form makes a textbook a good even when it conveys information."
+    ],
+    "tactical_explanations": [
+      "The plated food is a tangible good, while cooking and waiting at the table are activities performed for the diner. A meal eaten on site therefore mixes goods with preparation and serving services.\n\nThe statement is true.",
+      "The heat pump unit is a physical capital good. Fitting it into the home is work performed on site, which economists classify as a service. The installation activity stays a service even though the equipment itself is a good.\n\nThe statement is true.",
+      "An invoice only records payment. Legal advice is still an intangible activity performed for the client, so billing does not turn the advice into a good.\n\nThe statement is false.",
+      "Digital delivery often means access or performance without a physical object changing hands, which points toward a service. Delivery channel alone does not automatically make every product a tangible good.\n\nThe statement is false.",
+      "A textbook is a physical (or downloadable file-as-product) item you can hold or store. The knowledge it conveys is intangible, but the book itself remains a good, not a service.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.34",
+    "title": "Needs, Wants, and Well-Being",
+    "context": "Analyze how needs differ from wants when households and firms plan spending. Evaluate the following economic assertions:",
+    "statements": [
+      "A teenager saving for concert tickets is pursuing a want rather than a basic need.",
+      "Weekend cinema tickets and premium streaming subscriptions typically reflect wants rather than strict needs.",
+      "Shelter, food, and basic healthcare are commonly treated as needs for household well-being.",
+      "Distinguishing needs from wants helps explain why households economise when budgets cannot cover everything.",
+      "Businesses may want brand recognition even while they need reliable suppliers to keep production running."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Live entertainment is desired but not essential for basic well-being.",
+      "Entertainment beyond basics is classified as want rather than necessity.",
+      "Essentials for survival and health fall under needs in standard definitions.",
+      "Scarce income forces prioritisation between essentials and discretionary items.",
+      "Firms hold both operational needs and broader commercial wants."
+    ],
+    "tactical_explanations": [
+      "Concert tickets are live entertainment. They are desired, but a teenager can maintain basic well-being without them, so saving for tickets pursues a want rather than a basic need.\n\nThe statement is true.",
+      "Cinema nights and premium streaming go beyond essentials for health and shelter. They are typically classified as wants, not strict needs.\n\nThe statement is true.",
+      "Shelter, food, and basic healthcare underpin survival and health. Standard teaching treats them as household needs.\n\nThe statement is true.",
+      "When income cannot fund every item on the list, households rank essentials ahead of discretionary spending. Separating needs from wants is what makes that prioritising, and economising, intelligible.\n\nThe statement is true.",
+      "Reliable suppliers keep production running, so they are operational needs. Brand recognition is a broader commercial ambition that a firm may want without it being required for each day's output. Firms can hold both kinds of claim at once.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.35",
+    "title": "Bergwerk Farm Stall Exchange",
+    "context": "Consider Bergwerk Farm, where Clara sells eggs and trades surplus vegetables with a neighbouring beekeeper. Evaluate the following economic assertions:",
+    "statements": [
+      "Trading vegetables for honey without money still counts as exchange between economic actors.",
+      "Buyers at the stall act as households when they purchase eggs for family meals.",
+      "Clara must economise on feed and labour because her flock size and hours are limited.",
+      "Farm stall operators are consumers only because they grow food for themselves.",
+      "Barter can never satisfy needs because no price tag is attached."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Barter fulfils needs or wants on both sides and therefore qualifies as exchange.",
+      "Purchasing for household consumption defines the household role.",
+      "Scarce inputs require careful allocation even on a small farm.",
+      "Selling produce to others is entrepreneurial activity even on a small scale.",
+      "Needs and wants can be met through barter as well as through cash sales."
+    ],
+    "tactical_explanations": [
+      "Clara gives vegetables and receives honey; the beekeeper does the reverse. Each side values what it gets, so the swap is exchange even though no money changes hands.\n\nThe statement is true.",
+      "Buying eggs for family meals is household consumption. At the stall those buyers act in the household role, paying for food used at home.\n\nThe statement is true.",
+      "Feed stocks and Clara's working hours are limited relative to how large a flock she might like to run. She has to allocate those scarce inputs carefully, which is economising on a small farm.\n\nThe statement is true.",
+      "Growing some food for oneself does not make stall sales disappear. When Clara sells eggs and trades surplus produce, she acts as an entrepreneur supplying others, not as a consumer only.\n\nThe statement is false.",
+      "Barter can deliver food, fuel, or other essentials just as cash sales can. Missing a price tag does not block need fulfilment through exchange.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.36",
+    "title": "Scarcity and Economising Behaviour",
+    "context": "Review why scarcity forces households and businesses to economise on resources. Evaluate the following economic assertions:",
+    "statements": [
+      "Scarcity means available resources are limited relative to what decision-makers would like to use.",
+      "A bakery economises when it schedules oven use to avoid wasting flour and fuel on unsold loaves.",
+      "Even wealthy households economise when choosing how to allocate time among competing activities.",
+      "Governments never economise because taxation can fund every project simultaneously.",
+      "Economising means avoiding all spending until resources become literally infinite."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Unlimited wants against limited means define scarcity in economics.",
+      "Production planning with limited inputs illustrates economising.",
+      "Time remains scarce regardless of financial wealth.",
+      "Fixed budgets force governments to choose among programmes like other actors.",
+      "Economising is rational use of finite resources, not total abstinence from use."
+    ],
+    "tactical_explanations": [
+      "Scarcity is the gap between limited means and what people would like to do with them. Resources are scarce when they cannot cover every desired use at once.\n\nThe statement is true.",
+      "Flour, fuel, and oven time are limited. Scheduling batches so that loaves sell rather than spoil is careful use of those inputs, which is economising in production.\n\nThe statement is true.",
+      "Money may be plentiful for a wealthy household, but hours in a day are not. Choosing among competing activities still allocates scarce time, so economising continues.\n\nThe statement is true.",
+      "Tax revenue in any period is finite, and projects compete for that budget. Governments choose among programmes rather than funding everything at once, so they economise like other actors.\n\nThe statement is false.",
+      "Economising means using finite resources carefully, not refusing to spend until means become infinite. Infinite resources never arrive; careful allocation is the response to scarcity.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.37",
+    "title": "Opting Out of Economic Decisions",
+    "context": "Analyze whether any household or business can fully avoid economic decision-making. Evaluate the following economic assertions:",
+    "statements": [
+      "A retiree choosing between medical insurance plans faces economic decisions despite receiving a pension.",
+      "Businesses that pause hiring still make an economic decision about how to use limited payroll budgets.",
+      "Only spending money counts as an economic decision; saving is excluded.",
+      "Children are outside economics until they earn a formal wage.",
+      "Religious communities opt out of economics by avoiding shops entirely."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Fixed pension income still requires allocation among competing uses.",
+      "Inaction on hiring allocates funds elsewhere or retains them as reserves.",
+      "Allocation of money toward saving is as much a decision as spending it.",
+      "Pocket money and time limits place children inside economic decision-making.",
+      "Land and labour remain limited even in self-sufficient communities."
+    ],
+    "tactical_explanations": [
+      "A pension is still limited income. Choosing among insurance plans allocates that income (and related coverage) under uncertainty, so the retiree faces economic decisions even with guaranteed payments.\n\nThe statement is true.",
+      "Pausing hiring leaves payroll funds for other uses or as reserves. That is still a choice about limited money and labour capacity, so it remains an economic decision.\n\nThe statement is true.",
+      "Saving decides that scarce money will be held for later rather than spent now. Allocation toward saving is as much an economic decision as spending.\n\nThe statement is false.",
+      "Children already choose how to use limited pocket money, toys, and time. Formal wages are not the entry ticket to economic decision-making.\n\nThe statement is false.",
+      "Avoiding shops does not erase limited land, labour, and time. Self-sufficient or religious communities still allocate scarce resources, so they do not opt out of economics.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.38",
+    "title": "Exchange Mechanisms and Participants",
+    "context": "Review who may exchange goods and services and through which mechanisms. Evaluate the following economic assertions:",
+    "statements": [
+      "Exchange helps fulfil needs and wants on both sides when each party values what it receives.",
+      "Households may exchange with other households when selling second-hand furniture locally.",
+      "Barter between classmates swapping revision notes for borrowed textbooks is exchange without money.",
+      "Entrepreneurs exchange with other entrepreneurs when a café buys beans from a wholesale roaster.",
+      "Paying with a contactless card for groceries is exchange between a household and a supermarket entrepreneur."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Mutual benefit motivates trade in goods and services.",
+      "Consumer-to-consumer sales are exchange between household sellers and buyers.",
+      "Non-monetary trades that fulfil wants qualify as exchange.",
+      "Business-to-business purchases are exchange between entrepreneurial units.",
+      "Electronic payment is monetary exchange like cash."
+    ],
+    "tactical_explanations": [
+      "Each side gives something up to gain something it values more. That mutual gain is how exchange helps fulfil needs and wants on both sides.\n\nThe statement is true.",
+      "A local sale of second-hand furniture is household-to-household trade. Both parties are households exchanging a good for money, so exchange is not limited to firms.\n\nThe statement is true.",
+      "Notes for textbooks is a swap of useful items without cash. Each classmate gains something valued, so the barter counts as exchange.\n\nThe statement is true.",
+      "The café is an entrepreneur buying an input from another entrepreneur, the roaster. Business-to-business purchases are exchange between entrepreneurial units.\n\nThe statement is true.",
+      "A contactless payment still transfers purchasing power for groceries. The household buys from the supermarket acting as entrepreneur; the payment method does not change the exchange.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.39",
+    "title": "Taxi Fleet Owner Morning Shift",
+    "context": "Consider a taxi fleet owner who assigns each vehicle either to airport runs or city-centre fares for the morning peak. Evaluate the following economic assertions:",
+    "statements": [
+      "Fuel and driver wages are limited resources the owner must economise across the shift.",
+      "Route choice involves no trade-offs because both areas generate identical profit.",
+      "Fleet owners are households because they also drive passengers personally.",
+      "Fleet vehicles face no scarcity because engines can run whenever fuel is available.",
+      "Every passenger must register as an entrepreneur before entering a taxi."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Operating costs require careful allocation among trips.",
+      "Different routes yield different returns, creating a trade-off.",
+      "Operating a transport business is entrepreneurial activity.",
+      "Driver time and vehicle slots remain finite during the peak period.",
+      "Fare-paying riders are consumers or households for that journey."
+    ],
+    "tactical_explanations": [
+      "Fuel tanks and wage budgets do not stretch without limit across every possible trip. The owner must allocate those operating costs across the morning peak, which is economising on scarce inputs.\n\nThe statement is true.",
+      "Airport runs and city-centre fares typically differ in distance, waiting time, and fare mix. Assigning a cab to one area means forgoing the other during that slot, so route choice involves trade-offs.\n\nThe statement is false.",
+      "Running a taxi fleet and selling rides is entrepreneurial activity. Driving occasionally does not redefine the owner as a household for the business as a whole.\n\nThe statement is false.",
+      "During the peak, each vehicle can only be in one place at a time, and driver hours are finite. Fuel availability does not remove scarcity of vehicle slots and labour in that window.\n\nThe statement is false.",
+      "Passengers pay for a ride as consumers or household members for that journey. They need not register as entrepreneurs to enter a taxi.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.40",
+    "title": "Operational Needs of Businesses",
+    "context": "Analyze whether firms and entrepreneurs experience genuine needs beyond consumer demand. Evaluate the following economic assertions:",
+    "statements": [
+      "Cash flow to pay suppliers next month is a need for a small retailer even when sales are seasonal.",
+      "Customer demand itself can be a need when a firm requires sales to remain viable.",
+      "A laptop assembler needs specialised electronic components from suppliers to keep production lines running.",
+      "An entrepreneur needs reliable staff and premises to continue serving paying customers.",
+      "Expansion plans and wage bills are identical categories with no distinction."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Meeting obligations requires available funds within each period.",
+      "Revenue from buyers is necessary for survival in market settings.",
+      "Component inputs are operational needs for manufacturers.",
+      "Workforce and facilities are business needs for ongoing operations.",
+      "Needs concern continuing operation; wants reflect discretionary ambitions."
+    ],
+    "tactical_explanations": [
+      "Suppliers must still be paid on schedule even if sales rise and fall with the season. Cash available to meet those obligations is an operational need of the retailer.\n\nThe statement is true.",
+      "Without enough customers and sales, a market firm cannot cover costs and stay open. Demand can therefore be a genuine need for viability, not only a pleasant extra.\n\nThe statement is true.",
+      "Laptop assembly depends on specialised components arriving from suppliers. Those parts are operational needs that keep the line running.\n\nThe statement is true.",
+      "Reliable staff and usable premises are what allow the entrepreneur to keep serving paying customers. They are ongoing business needs, not optional extras.\n\nThe statement is true.",
+      "Wage bills keep current operations going; expansion plans are discretionary ambitions about future scale. Treating them as identical categories erases the usual need-versus-want distinction inside the firm.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.41",
+    "title": "Digital Subscription Household",
+    "context": "Consider the Hofer family comparing one combined streaming bundle against separate music and film subscriptions within a fixed monthly budget. Evaluate the following economic assertions:",
+    "statements": [
+      "Paying the monthly fee is exchange with the streaming company acting as entrepreneur.",
+      "The Hofer family acts as a household allocating a limited entertainment budget among subscriptions.",
+      "Premium sports channels reflect more of a want than basic news coverage for household well-being.",
+      "Choosing the bundle over separate plans still involves economising because the budget cannot fund every option.",
+      "Digital files are always goods because they can be downloaded to a device."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Subscription payment for service access is monetary exchange.",
+      "Family budget choices under constraint are household economic decisions.",
+      "Sports entertainment is typically discretionary relative to basic information needs.",
+      "Fixed monthly funds force selection among alternatives.",
+      "Streaming access without ownership transfer is typically classified as a service."
+    ],
+    "tactical_explanations": [
+      "The family pays a monthly fee and receives access to streaming content. That is monetary exchange with the streaming company acting as entrepreneur.\n\nThe statement is true.",
+      "The Hofers decide how to split a fixed entertainment budget among subscription options. That constrained family choice is household economic behaviour.\n\nThe statement is true.",
+      "Basic news can support staying informed; premium sports channels are mainly entertainment. Relative to household well-being, sports packages sit more with wants than with strict needs.\n\nThe statement is true.",
+      "The monthly budget cannot buy every bundle and every separate plan at once. Choosing one package over another is still allocating scarce funds, which is economising.\n\nThe statement is true.",
+      "Many digital offers grant access or streaming without transferring a lasting owned object. Downloadability alone does not make every digital product a good; streaming access is often classified as a service.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.42",
+    "title": "Scarcity Across Actor Types",
+    "context": "Assess whether scarcity applies uniformly to households, firms, and governments. Evaluate the following economic assertions:",
+    "statements": [
+      "A multinational firm with large reserves still faces scarce factory capacity and managerial attention.",
+      "Local councils splitting a fixed parks budget face scarcity similar in kind to household budget choices.",
+      "Households with modest incomes economise when choosing between rent, food, and transport each month.",
+      "Students have unlimited time because weekends repeat every week.",
+      "Rising input prices remove scarcity because suppliers always deliver more."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Capacity and attention remain limited even with substantial cash.",
+      "Public bodies allocate limited funds among competing projects.",
+      "Limited monthly income forces trade-offs among essentials.",
+      "Weekly calendars still contain finite hours requiring choices.",
+      "Higher prices intensify the need to economise on each unit produced."
+    ],
+    "tactical_explanations": [
+      "Cash reserves do not multiply factory floors or hours of managerial attention. Capacity and focus remain limited, so even a large multinational still faces scarcity of those inputs.\n\nThe statement is true.",
+      "A fixed parks budget cannot fund every playground and path at once. Councils rank projects under that limit in the same basic way households rank spending under a fixed income.\n\nThe statement is true.",
+      "Modest monthly income forces trade-offs among rent, food, and transport. Choosing how to cover those essentials is economising under scarcity.\n\nThe statement is true.",
+      "Weekends recur, but each weekend still contains a finite number of hours. Students must choose among study, rest, and leisure within that limit, so time is not unlimited.\n\nThe statement is false.",
+      "Higher input prices make each unit more costly; they do not create unlimited supply. Scarcity remains, and firms often need to economise more carefully on each unit produced.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.43",
+    "title": "Community Garden Plot Allocation",
+    "context": "Consider twenty household plots sharing one water tap on scheduled mornings at a community garden. Evaluate the following economic assertions:",
+    "statements": [
+      "Each gardener acts partly as a household producer deciding how to use a small allocated bed.",
+      "Neighbour swaps are friendship only and never count as exchange.",
+      "Large outdoor space removes the need to choose among crops.",
+      "Only purchases in shops count as economic decisions for gardeners.",
+      "Community gardens eliminate scarcity because soil is outdoors."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Households may grow food for own use on limited plots.",
+      "Informal barter among neighbours is a recognised exchange form.",
+      "Small beds force prioritisation among competing plant uses.",
+      "Time and water scheduling choices are economic decisions.",
+      "Water access during restricted hours remains scarce."
+    ],
+    "tactical_explanations": [
+      "Each plot is a small allocated bed used largely for the household's own food. Deciding what to plant and how to tend it is household production under a limited plot size.\n\nThe statement is true.",
+      "Swapping surplus seedlings or produce among neighbours can fulfil wants on both sides. Informal barter is still exchange, even when friendship is part of the relationship.\n\nThe statement is false.",
+      "A small bed cannot grow every crop at full size. Gardeners still choose among tomatoes, herbs, and flowers because space on the plot is limited.\n\nThe statement is false.",
+      "Scheduling water turns, choosing crops, and allocating morning hours are decisions about scarce resources. Shop purchases are only one form of economic choice.\n\nThe statement is false.",
+      "Outdoor soil does not create unlimited water during the shared tap's morning window. Twenty plots still compete for limited irrigation time, so scarcity remains.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.44",
+    "title": "Household and Entrepreneur Roles Combined",
+    "context": "Review situations where the same person acts as household member and entrepreneur. Evaluate the following economic assertions:",
+    "statements": [
+      "A freelance designer invoicing a client acts as an entrepreneur during that project.",
+      "Exchange occurs when the designer is paid by a corporate client and when later paying a baker.",
+      "Needs in the business role include software licences; wants may include a premium portfolio website.",
+      "The same designer buying groceries after work acts as a household in the supermarket.",
+      "Both roles involve decisions under scarce resources such as time, money, and skills."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Supplying paid services for a fee defines an entrepreneurial role.",
+      "Monetary transactions in both directions are exchange.",
+      "Operational needs and discretionary business wants both exist for entrepreneurs.",
+      "Personal consumption purchases define the household role.",
+      "Scarcity affects personal and business choices alike."
+    ],
+    "tactical_explanations": [
+      "Invoicing a client for design work is supplying a paid service. For that project the freelancer acts as an entrepreneur.\n\nThe statement is true.",
+      "Payment from the corporate client is exchange for the design service; paying the baker later is exchange for bread. Both monetary transactions are exchange, just on opposite sides of the person's day.\n\nThe statement is true.",
+      "Software licences keep the design business able to deliver work, so they are operational needs. A premium portfolio site may be desired for marketing without being required for each invoice, so it can sit with wants.\n\nThe statement is true.",
+      "Buying groceries for personal consumption is household behaviour. After work, the same person is a household shopper in the supermarket.\n\nThe statement is true.",
+      "Time, money, and skills are limited in both the freelance and the personal setting. Scarcity shapes choices whether the person is billing a client or shopping for dinner.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.45",
+    "title": "Classification Traps for Goods and Services",
+    "context": "Evaluate subtle classification claims about goods, services, needs, and wants. Evaluate the following economic assertions:",
+    "statements": [
+      "A luxury handbag purchase primarily satisfies a want rather than a basic household need.",
+      "A bus ticket granting transport right is often treated as purchasing a transport service.",
+      "Digital storage must be a good because data occupy server hardware.",
+      "Bread is a want only because shops charge money for loaves.",
+      "Home maintenance is excluded from needs because homeowners already own the building."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Designer fashion is discretionary relative to essentials.",
+      "Passenger transport is an activity performed rather than a tangible good taken home.",
+      "Service classification focuses on activity and access, not the server's physical location.",
+      "Staple food for household meals reflects need rather than discretionary want.",
+      "Maintaining shelter qualifies as meeting a household need."
+    ],
+    "tactical_explanations": [
+      "A luxury handbag is discretionary fashion relative to food, shelter, and basic clothing. The purchase primarily satisfies a want, not a basic household need.\n\nThe statement is true.",
+      "A bus ticket buys the right to be carried from one place to another. That performed activity is usually classified as a transport service, not as a tangible good taken home.\n\nThe statement is true.",
+      "Classification looks at what the customer buys: access to storage activity, not ownership of the server rack. Hardware sitting in a data centre does not force digital storage to be labelled a good.\n\nThe statement is false.",
+      "Bread for household meals is a staple supporting nutrition. Shops charging money does not turn that staple into a mere want; price is how exchange often works for needs as well.\n\nThe statement is false.",
+      "Owning the building does not remove the need to keep shelter sound and usable. Home maintenance supports the household need for housing.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.46",
+    "title": "Winter Market Vendors",
+    "context": "Consider a winter market where a woodworker sells chairs and a musician performs for tips beside the same stall row. Evaluate the following economic assertions:",
+    "statements": [
+      "Visitors buying chairs or dropping tips participate in exchange as households or individuals.",
+      "Choosing hot drinks from a vendor satisfies a want for warmth more than a strict survival need in mild weather.",
+      "Craft sellers are households only because they stand in cold weather.",
+      "Artisans never economise because they can always carve more wood overnight.",
+      "Tips prove the music is a good because coins are tangible."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Monetary payment for goods or services is exchange.",
+      "Comfort beverages in mild conditions are typically wants.",
+      "Selling chairs is entrepreneurial provision of goods to buyers.",
+      "Time and materials remain limited for craft production.",
+      "Payment method does not change that performance is a service."
+    ],
+    "tactical_explanations": [
+      "Paying for a chair or leaving a tip exchanges money for a good or a performance. Visitors act as households or individuals on the buying side of that exchange.\n\nThe statement is true.",
+      "In mild weather a hot drink is mainly comfort, not survival. That places the purchase with wants more than with a strict need.\n\nThe statement is true.",
+      "Cold weather at the stall does not redefine the seller's role. Selling chairs to buyers is entrepreneurial provision of goods, not household-only behaviour.\n\nThe statement is false.",
+      "Wood, tools, and overnight hours are still limited. Artisans cannot carve without bound, so they must economise on materials and time.\n\nThe statement is false.",
+      "Coins used as tips are tangible, but the music itself is a performance. Payment medium does not turn a service into a good.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.47",
+    "title": "Universal Economic Participation",
+    "context": "Analyze claims that nobody can fully escape economic life and decision-making. Evaluate the following economic assertions:",
+    "statements": [
+      "Volunteering at a shelter uses scarce hours that could have been sold as paid labour elsewhere.",
+      "Governments delaying an infrastructure project still decide how to allocate the unchanged budget elsewhere.",
+      "Businesses closing for a holiday still decide how to allocate limited staff availability before and after the break.",
+      "Even unpaid household chores allocate scarce time among cooking, cleaning, and childcare.",
+      "Students choosing between sleep and revision allocate a scarce resource called time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Volunteer time forgone wages illustrates resource allocation.",
+      "Postponement redirects limited funds to other uses or reserves.",
+      "Scheduling around closures reflects scarce labour planning.",
+      "Time devoted to chores is allocated among competing tasks.",
+      "Study versus rest is a classic allocation problem."
+    ],
+    "tactical_explanations": [
+      "Hours spent volunteering cannot also be sold as paid work in the same slot. Choosing the shelter allocates scarce time and forgoes other uses of those hours.\n\nThe statement is true.",
+      "Delaying a project leaves the budget for other programmes or for later use. Postponement is still an allocation decision over limited public funds.\n\nThe statement is true.",
+      "A holiday closure still requires planning who works the days before and after. Limited staff availability is being allocated around the break.\n\nThe statement is true.",
+      "Cooking, cleaning, and childcare compete for the same unpaid hours. Choosing how to split that day is allocating scarce time inside the household.\n\nThe statement is true.",
+      "Sleep and revision both consume hours that cannot be used twice. Students choosing between them allocate scarce time.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.48",
+    "title": "Exchange and Need Fulfilment",
+    "context": "Review how exchange connects needs and wants to goods and services in markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Needs and wants on both sides motivate exchange because each party values what it receives.",
+      "Businesses exchange with suppliers to obtain inputs needed for their own production processes.",
+      "Exchange can occur internationally when an Austrian retailer imports textiles from a foreign producer.",
+      "Buying festival merchandise satisfies a want through exchange with an event entrepreneur.",
+      "Medicine sales are gifts because health is essential."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Mutual gain underpins voluntary trade in goods and services.",
+      "Input purchases are exchange that fulfils firm operational needs.",
+      "Cross-border trade is exchange between entrepreneurial suppliers and buyers.",
+      "Discretionary merchandise reflects wants met through purchase.",
+      "Payment for essential goods is still exchange fulfilling needs."
+    ],
+    "tactical_explanations": [
+      "Each party enters a trade because it values what it receives more than what it gives up. Needs and wants on both sides are what motivate that exchange.\n\nThe statement is true.",
+      "Firms buy materials, parts, and services from suppliers so production can continue. Those input purchases are exchange that meets operational needs.\n\nThe statement is true.",
+      "An Austrian retailer paying a foreign textile producer is still a voluntary trade of money for goods. Cross-border distance does not stop the transaction from counting as exchange.\n\nThe statement is true.",
+      "Festival merchandise is discretionary for most buyers. Paying an event seller for it fulfils a want through exchange with an entrepreneur.\n\nThe statement is true.",
+      "Essential health goods can still be sold for money. Payment for medicine is exchange that fulfils a need; calling every such sale a gift erases the market transaction.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.49",
+    "title": "Economising in Service Businesses",
+    "context": "Analyze economising behaviour in firms that chiefly supply services. Evaluate the following economic assertions:",
+    "statements": [
+      "A law firm allocates limited partner hours among client cases during a busy quarter.",
+      "Service entrepreneurs need no customers because advice is intangible.",
+      "Service firms face no scarcity because services are intangible.",
+      "Service purchases remove economising because labour is performed by others.",
+      "Fuel costs do not matter for service firms because customers pay fees."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Professional time is allocated among competing client demands.",
+      "Intangible output still requires sales to sustain the business.",
+      "Practitioner time is a scarce resource requiring allocation.",
+      "Buyers still allocate limited money among service options.",
+      "Costly inputs still require economising in service operations."
+    ],
+    "tactical_explanations": [
+      "Partner hours in a busy quarter are finite. Assigning them across competing client cases is allocating a scarce professional resource, which is economising.\n\nThe statement is true.",
+      "Intangible advice still has to be sold if the firm is to cover costs and stay open. Service entrepreneurs need customers and revenue like other businesses.\n\nThe statement is false.",
+      "Intangibility does not create unlimited lawyer, consultant, or technician time. Practitioner hours remain scarce and must be allocated.\n\nThe statement is false.",
+      "Buyers still have limited money and must choose among service providers and packages. Someone else performing the labour does not remove the buyer's need to economise.\n\nThe statement is false.",
+      "Many service firms still run vehicles, heat premises, or travel to clients. Fee income does not make fuel and similar costs irrelevant; those inputs still require careful use.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "CASE 2.1.50",
+    "title": "Foundations of Economic Life",
+    "context": "Assess integrated claims about households, entrepreneurs, scarcity, and exchange. Evaluate the following economic assertions:",
+    "statements": [
+      "The economy involves households and entrepreneurs exchanging goods and services to address needs and wants.",
+      "Goods are tangible items; services are intangible activities performed for someone.",
+      "Scarcity requires economising by all actors with limited resources.",
+      "Only wholesale trade among firms counts as exchange.",
+      "Only people who open businesses make economic decisions."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Basic models centre on these two groups trading outputs.",
+      "The tangible–intangible distinction defines goods versus services.",
+      "Finite resources relative to desires make careful use necessary.",
+      "Retail, barter, and household purchases all involve exchange.",
+      "Consumption, saving, and inaction all involve economic choices."
+    ],
+    "tactical_explanations": [
+      "Basic models centre on households and entrepreneurs trading goods and services so needs and wants on both sides can be addressed. That two-actor exchange picture is the core of everyday economic life in the chapter.\n\nThe statement is true.",
+      "Goods are tangible items that can be held or stored; services are intangible activities performed for someone. That tangible–intangible split is the standard classification.\n\nThe statement is true.",
+      "When resources are limited relative to desires, every actor (household, firm, or government) must use them carefully. Scarcity is what makes economising necessary.\n\nThe statement is true.",
+      "Retail purchases, household-to-household sales, and barter are exchange as well. Restricting the word to wholesale firm-to-firm trade is far too narrow.\n\nThe statement is false.",
+      "Consumers, savers, and people who simply hold cash still allocate scarce time and money. Opening a business is not required to make economic decisions.\n\nThe statement is false."
+    ]
+  }
+]

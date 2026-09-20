@@ -1,0 +1,2 @@
+updated 20 cases in src\data\wiso\math-de-ch12.json
+MATH 12.17 D: KaTeX mismatch count en=31 de=31

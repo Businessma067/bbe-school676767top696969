@@ -162,11 +162,11 @@
       "$X^{c} \\cup Y^{c} = \\{1, 2, 3, 10, 11, 12\\}$"
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Grundmenge ist $U=\\{1,2,\\ldots,12\\}$ und\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\nDas Komplement enthält die Elemente von $U$, die nicht in $X$ liegen:\n\n$$\n\\begin{aligned}\n7\\notin X,\\quad 8\\notin X\\\\\n9\\notin X,\\quad 10\\notin X\\\\\n11\\notin X,\\quad 12\\notin X\n\\end{aligned}\n$$\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nZuerst die Vereinigung:\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,12\\}$:\n\n$$(X\\cup Y)^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
-      "**D.** → Richtig\n\nNach De Morgan gilt $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Explizit:\n\n$$X\\cap Y=\\{4,5,6\\}$$\n\n$$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nDie Behauptung listet $\\{1,2,3,10,11,12\\}$ und lässt $7,8,9$ weg.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nDie Grundmenge ist $U=\\{1,2,\\ldots,12\\}$ und\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\nDas Komplement behält die Elemente von $U$, die $X$ verfehlen:\n\n$$7\\notin X$$\n\n$$8\\notin X$$\n\n$$9\\notin X$$\n\n$$10\\notin X$$\n\n$$11\\notin X$$\n\n$$12\\notin X$$\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nZuerst die Vereinigung bilden:\n\n$$X=\\{1,2,3,4,5,6\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$\n\nKomplement relativ zu $U=\\{1,2,\\ldots,12\\}$:\n\n$$10\\notin X\\cup Y$$\n\n$$11\\notin X\\cup Y$$\n\n$$12\\notin X\\cup Y$$\n\n$$(X\\cup Y)^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBilde jedes Komplement, dann schneide:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y=\\{4,5,6,7,8,9\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\nGemeinsame Elemente:\n\n$$10\\in X^{c}$$\n\n$$10\\in Y^{c}$$\n\n$$11\\in X^{c}$$\n\n$$11\\in Y^{c}$$\n\n$$12\\in X^{c}$$\n\n$$12\\in Y^{c}$$\n\n$$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie de-Morgansche Regel für Komplemente besagt\n\n$$(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$$\n\nPrüfe durch Berechnung beider Seiten. Zuerst die Schnittmenge:\n\n$$X\\cap Y=\\{4,5,6\\}$$\n\n$$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nAus früheren Teilen:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAus früheren Teilen:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}$$\n\n$$Y^{c}=\\{1,2,3,10,11,12\\}$$\n\nVereinige sie:\n\n$$1\\in Y^{c}$$\n\n$$2\\in Y^{c}$$\n\n$$3\\in Y^{c}$$\n\n$$7\\in X^{c}$$\n\n$$8\\in X^{c}$$\n\n$$9\\in X^{c}$$\n\n$$10\\in X^{c}$$\n\n$$11\\in X^{c}$$\n\n$$12\\in X^{c}$$\n\n$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$\n\nDie Behauptung listet $\\{1,2,3,10,11,12\\}$, wobei $7,8,9$ fehlen.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Unter $U=\\{1,2,\\ldots,12\\}$ sind Python-Könner $X=\\{1,2,3,4,5,6\\}$ und SQL-Könner $Y=\\{4,5,6,7,8,9\\}$. Komplemente werden in $U$ gebildet.\n\nDas Komplement einer Menge sind alle Elemente in $U$, die die Menge nicht enthält:\n\n$$X^{c}=\\{7,8,9,10,11,12\\}, \\qquad Y^{c}=\\{1,2,3,10,11,12\\}.$$\n\nDie De-Morganschen Regeln: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ und $(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$. Außerhalb der Vereinigung zu liegen bedeutet, beide Kompetenzen zu verfehlen."
   },
@@ -181,11 +181,11 @@
       "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$"
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{8,9,10\\}$ und behält fälschlich $8\\in A\\cup B$.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nDas ist eine De-Morgansche Regel: $(A\\cap B)^{c}=A^{c}\\cup B^{c}$. Explizit:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{6,7,8,9,10\\}$, was $A^{c}$ ist, nicht die Schnittmenge der Komplemente.\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Behauptung listet $\\{1,2,3,9,10\\}$ und lässt $6,7,8$ weg.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\nZuerst die Vereinigung bilden:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nKomplement relativ zu $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{8,9,10\\}$. Aber\n\n$$8\\in B$$\n\n$$8\\in A\\cup B$$\n\n$$8\\notin(A\\cup B)^{c}$$\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nDie de-Morgansche Regel für Komplemente besagt\n\n$$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$\n\nBerechne beide Seiten. Schnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nKomplemente:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nBilde die Komplemente, dann schneide:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$6\\in A^{c}$$\n\n$$6\\notin B^{c}$$\n\n$$7\\in A^{c}$$\n\n$$7\\notin B^{c}$$\n\n$$8\\in A^{c}$$\n\n$$8\\notin B^{c}$$\n\n$$9\\in A^{c}$$\n\n$$9\\in B^{c}$$\n\n$$10\\in A^{c}$$\n\n$$10\\in B^{c}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nDie Behauptung listet $\\{6,7,8,9,10\\}$, was $A^{c}$ ist und nicht die Schnittmenge.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nZuerst die Schnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$ entfernt $4$ und $5$:\n\n$$1\\notin A\\cap B$$\n\n$$2\\notin A\\cap B$$\n\n$$3\\notin A\\cap B$$\n\n$$6\\notin A\\cap B$$\n\n$$7\\notin A\\cap B$$\n\n$$8\\notin A\\cap B$$\n\n$$9\\notin A\\cap B$$\n\n$$10\\notin A\\cap B$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVereinige die Komplemente:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$1\\in B^{c}$$\n\n$$2\\in B^{c}$$\n\n$$3\\in B^{c}$$\n\n$$6\\in A^{c}$$\n\n$$7\\in A^{c}$$\n\n$$8\\in A^{c}$$\n\n$$9\\in A^{c}$$\n\n$$10\\in A^{c}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Behauptung listet $\\{1,2,3,9,10\\}$, wobei $6,7,8$ fehlen.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "Es seien $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$ und $B=\\{4,5,6,7,8\\}$. Komplemente werden in $U$ gebildet.\n\nDas Komplement einer Menge sind alle Elemente in $U$, die die Menge nicht enthält:\n\n$$A^{c}=\\{6,7,8,9,10\\}, \\qquad B^{c}=\\{1,2,3,9,10\\}.$$\n\nDie De-Morganschen Regeln: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ und $(A\\cap B)^{c}=A^{c}\\cup B^{c}$."
   },
@@ -200,11 +200,11 @@
       "Eine Menge mit $n \\ge 2$ Elementen hat stets mehr als eine mögliche Partition."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Blöcke von $P$ sind nichtleer, paarweise disjunkt und vereinigen sich zu $A=\\{1,2,3,4,5,6\\}$. Also ist $P$ eine Partition.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nDie Blockanzahl ist frei: $\\{A\\}$ ist eine 1-Block-Partition, und $n$ Einelementmengen bilden eine $n$-Block-Partition. Nicht jede Partition hat genau $n$ Blöcke.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\n$Q$ hat überlappende Blöcke: $3$ liegt in beiden. Paarweise Disjunktheit scheitert, also ist $Q$ keine Partition.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDie Vereinigung von $R$ ist $\\{1,2,3,4,5\\}$ und lässt $6$ weg. Die Vereinigung ist nicht gleich $A$.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nFür $n\\ge 2$ sind $\\{A\\}$ und die Sammlung aller Einelementmengen zwei verschiedene Partitionen.\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nPrüfe die drei Partitionsaxiome für\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\nauf $A=\\{1,2,3,4,5,6\\}$. Nichtleere Blöcke:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\nPaarweise disjunkt:\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\nVereinigung deckt $A$ ab:\n\n$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$\n\n$$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$\n\nAlle drei Axiome gelten.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie Behauptung sagt, jede Partition müsse genau $n$ Blöcke haben, wenn $|A|=n$. Aber die Partition\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\neiner $6$-elementigen Menge hat nur $3$ Blöcke. Eine weitere gültige Partition ist die Ein-Block-Sammlung\n\n$$\\{A\\}$$\n\nmit $1$ Block, nicht $6$. Also muss die Blockanzahl nicht gleich $|A|$ sein.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nFür\n\n$$Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$$\n\nprüfe paarweise Disjunktheit:\n\n$$\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}$$\n\n$$\\{3\\}\\neq\\emptyset$$\n\nDie Blöcke teilen sich $3$, also ist $Q$ keine Partition.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nFür\n\n$$R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$$\n\nist die Vereinigung\n\n$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$\n\n$$\\{1,2,3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$\n\nAber\n\n$$A=\\{1,2,3,4,5,6\\}$$\n\n$$6\\notin\\{1,2,3,4,5\\}$$\n\nalso fehlt $6$ in der Vereinigung und $R$ ist keine Partition.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nFür $n\\ge 2$ existieren mindestens zwei Partitionen. Eine ist der einzelne Block\n\n$$\\{A\\}$$\n\nEine andere spaltet ein Element ab:\n\n$$\\{\\{a\\},A\\setminus\\{a\\}\\}$$\n\nfür ein festes $a\\in A$. Diese sind verschieden, weil die eine $1$ Block und die andere $2$ Blöcke hat. Also gibt es mehr als eine Partition.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "Es sei $A=\\{1,2,3,4,5,6\\}$. Eine Sammlung partitioniert $A$ nur, wenn alle drei Bedingungen gelten: jeder Block nichtleer, Blöcke paarweise disjunkt, und Vereinigung gleich $A$.\n\nDie Blockanzahl ist frei: $\\{A\\}$ ist eine 1-Block-Partition, und $n$ Einelementmengen bilden eine $n$-Block-Partition. Diese beiden Konstruktionen unterscheiden sich, sobald $n\\ge 2$."
   },
@@ -410,7 +410,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nLies die Aufzählung von $K$:\n\n$$K=\\{a,\\{a\\}\\}$$\n\nDas erste gelistete Objekt ist $a$ selbst:\n\n$$a\\in K$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nLies das zweite gelistete Objekt:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$\\{a\\}\\in K$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nLies das zweite gelistete Objekt der Aufzählung:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$\\{a\\}\\in K$$\n\nDie Aussage ist wahr.",
       "**C.** → Richtig\n\nTeilmengenschaft von $\\{a\\}$ verlangt, dass ihr einziges Element in $K$ liegt:\n\n$$K=\\{a,\\{a\\}\\}$$\n\n$$a\\in K$$\n\n$$\\{a\\}\\subseteq K$$\n\nDie Aussage ist wahr.",
       "**D.** → Richtig\n\nDie Menge $\\{\\{a\\}\\}$ hat das einzige Element $\\{a\\}$. Nach Aussage B gilt\n\n$$\\{a\\}\\in K$$\n\nalso\n\n$$\\{\\{a\\}\\}\\subseteq K$$\n\nDie Aussage ist wahr.",
       "**E.** → Richtig\n\nDie beiden gelisteten Objekte sind verschieden:\n\n$$a\\neq\\{a\\}$$\n\n(eines ist ein Objekt, das andere eine Menge, die dieses Objekt enthält). Daher\n\n$$|K|=2$$\n\nDie Aussage ist wahr."
@@ -485,11 +485,11 @@
       "$\\lvert A \\triangle B\\rvert = \\lvert A\\rvert + \\lvert B\\rvert - 2\\lvert A \\cap B\\rvert$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nBerechne jede Differenz:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$B=\\{3,4,5,6\\}$$\n\n$$A\\setminus B=\\{1,2\\}$$\n\n$$B\\setminus A=\\{5,6\\}$$\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,2,5,6\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nDie Definition verwendet die Vereinigung der Differenzen, nicht ihre Schnittmenge. Die Schnittmenge der Differenzen ist leer:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nwährend\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\n$$A\\cap B=\\{3,4\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nGemeinsame Elemente der Schnittmenge liegen in beiden Mengen und gehören daher nicht zur symmetrischen Differenz:\n\n$$3\\notin A\\triangle B$$\n\n$$A\\cap B\\not\\subseteq A\\triangle B$$\n\nDie Aussage ist falsch.",
-      "**D.** → Richtig\n\nWenn $A$ und $B$ disjunkt sind, gilt $A\\cap B=\\emptyset$, also $A\\setminus B=A$ und $B\\setminus A=B$. Dann\n\n$$A\\triangle B=A\\cup B$$\n\nDie Aussage ist wahr.",
-      "**E.** → Richtig\n\nMit $|A|=4$, $|B|=4$, $|A\\cap B|=2$:\n\n$$|A|+|B|-2|A\\cap B|=4+4-2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$4+4=8$$\n\n$$8-4=4$$\n\nUnd aus der Liste $\\{1,2,5,6\\}$:\n\n$$|A\\triangle B|=4$$\n\nDie Identität gilt.\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nBerechne jede Differenz, dann vereinige:\n\n$$A=\\{1,2,3,4\\}$$\n\n$$B=\\{3,4,5,6\\}$$\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$A\\setminus B=\\{1,2\\}$$\n\n$$5\\in B$$\n\n$$5\\notin A$$\n\n$$6\\in B$$\n\n$$6\\notin A$$\n\n$$B\\setminus A=\\{5,6\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie symmetrische Differenz ist mit einer Vereinigung von Differenzen definiert, nicht mit einer Schnittmenge:\n\n$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$$\n\nDas Schneiden der Differenzen ergäbe\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nimmer, was nicht die symmetrische Differenz ist. Die behauptete Umschreibung ist falsch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nSchnittmenge und symmetrische Differenz sind nach Konstruktion disjunkt. Hier\n\n$$A\\cap B=\\{3,4\\}$$\n\n$$A\\triangle B=\\{1,2,5,6\\}$$\n\n$$3\\notin A\\triangle B$$\n\nalso\n\n$$A\\cap B\\not\\subseteq A\\triangle B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nWenn $A\\cap B=\\emptyset$, dann\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nZähle mit der Formel. Zuerst die Zutaten:\n\n$$|A|=4$$\n\n$$|B|=4$$\n\n$$|A\\cap B|=2$$\n\n$$2\\cdot|A\\cap B|=2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$|A|+|B|=4+4$$\n\n$$4+4=8$$\n\n$$|A\\triangle B|=8-4$$\n\n$$8-4=4$$\n\nAlternativ aus der Aufzählung $\\{1,2,5,6\\}$:\n\n$$|A\\triangle B|=4$$\n\nDie Identität gilt.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nDie symmetrische Differenz enthält, was in genau einer der beiden Mengen liegt:\n\nEs seien $A=\\{1,2,3,4\\}$ und $B=\\{3,4,5,6\\}$.\n\n**Teil 2: Die Operationen.**\n\nDie gemeinsamen Stücke sind\n\n$$A\\cap B=\\{3,4\\},\\qquad A\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5,6\\}.$$\n\nDas Vereinigen der Restmengen liefert $A\\triangle B=\\{1,2,5,6\\}$."
   },
@@ -599,11 +599,11 @@
       "A und C sind disjunkte Mengen."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nVereinige die beiden Listen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A\\cup B,\\quad b\\in A\\cup B\\\\\nc\\in A\\cup B,\\quad d\\in A\\cup B\\\\\ne\\in A\\cup B\n\\end{aligned}\n$$\n\n$$A\\cup B={a,b,c,d,e}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin B\\\\\nb\\in A,\\quad b\\notin B\\\\\nc\\in A,\\quad c\\in B\\\\\nd\\in A,\\quad d\\in B\n\\end{aligned}\n$$\n\n$$A\\cap B={c,d}$$\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nDie Differenz enthält Elemente von $A$ , die nicht in $B$ liegen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nB&={c,d,e}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin B\\\\\nb\\in A,\\quad b\\notin B\\\\\nc\\in A,\\quad c\\in B\\\\\nd\\in A,\\quad d\\in B\n\\end{aligned}\n$$\n\n$$A\\setminus B={a,b}$$\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDie Differenz enthält Elemente von $B$ , die nicht in $A$ liegen.\n\n$$\n\\begin{aligned}\nB&={c,d,e}\\\\\nA&={a,b,c,d}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nc\\in B,\\quad c\\in A\\\\\nd\\in B,\\quad d\\in A\\\\\ne\\in B,\\quad e\\notin A\n\\end{aligned}\n$$\n\n$$B\\setminus A={e}$$\n\nAus der vorherigen Aussage\n\n$$\n\\begin{aligned}\nA\\setminus B&=\\{a,b\\}\\\\\n\\{e\\}\\neq\\{a,b\\}\n\\end{aligned}\n$$\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$\n\\begin{aligned}\nA&={a,b,c,d}\\\\\nC&={x,y}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na\\in A,\\quad a\\notin C\\\\\nb\\in A,\\quad b\\notin C\\\\\nc\\in A,\\quad c\\notin C\\\\\nd\\in A,\\quad d\\notin C\n\\end{aligned}\n$$\n\n$$A\\cap C=\\emptyset$$\n\nDie Schnittmenge ist leer, also sind $A$ und $C$ disjunkt.\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nVereinige die beiden Aufzählungen.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A\\cup B$$\n\n$$b\\in A\\cup B$$\n\n$$c\\in A\\cup B$$\n\n$$d\\in A\\cup B$$\n\n$$e\\in A\\cup B$$\n\n$$A\\cup B={a,b,c,d,e}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A$$\n\n$$a\\notin B$$\n\n$$b\\in A$$\n\n$$b\\notin B$$\n\n$$c\\in A$$\n\n$$c\\in B$$\n\n$$d\\in A$$\n\n$$d\\in B$$\n\n$$A\\cap B={c,d}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nDie Differenz behält Elemente von $A$, die $B$ verfehlen.\n\n$$A={a,b,c,d}$$\n\n$$B={c,d,e}$$\n\n$$a\\in A$$\n\n$$a\\notin B$$\n\n$$b\\in A$$\n\n$$b\\notin B$$\n\n$$c\\in A$$\n\n$$c\\in B$$\n\n$$d\\in A$$\n\n$$d\\in B$$\n\n$$A\\setminus B={a,b}$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Differenz behält Elemente von $B$, die $A$ verfehlen.\n\n$$B={c,d,e}$$\n\n$$A={a,b,c,d}$$\n\n$$c\\in B$$\n\n$$c\\in A$$\n\n$$d\\in B$$\n\n$$d\\in A$$\n\n$$e\\in B$$\n\n$$e\\notin A$$\n\n$$B\\setminus A={e}$$\n\nAus der vorherigen Aussage:\n\n$$A\\setminus B=\\{a,b\\}$$\n\n$$\\{e\\}\\neq\\{a,b\\}$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nPrüfe die Zugehörigkeit in beiden Mengen.\n\n$$A={a,b,c,d}$$\n\n$$C={x,y}$$\n\n$$a\\in A$$\n\n$$a\\notin C$$\n\n$$b\\in A$$\n\n$$b\\notin C$$\n\n$$c\\in A$$\n\n$$c\\notin C$$\n\n$$d\\in A$$\n\n$$d\\notin C$$\n\n$$A\\cap C=\\emptyset$$\n\nDie Schnittmenge ist leer, also sind $A$ und $C$ disjunkt.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nDrei Buchstabenlisten $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$ und $C=\\{x,y\\}$.\n\n**Teil 2: Die Operationen.**\n\nGemeinsame Buchstaben ergeben die Schnittmenge. Die kombinierte Liste ist die Vereinigung, jeder Buchstabe einmal. Reste nach einer Differenz sind die privaten Buchstaben. Leere Überlappung ist Disjunktheit."
   },
@@ -619,10 +619,10 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nZuerst die Vereinigung bilden:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite aus A:\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nKomplemente:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nZuerst die Schnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite aus Aussage A:\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nKomplemente:\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cap B^{c}=\\{9,10\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nZuerst die Schnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\n$$B^{c}=\\{1,2,3,9,10\\}$$\n\n$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
       "**D.** → Richtig\n\nKomplement von $A$ in $U=\\{1,2,\\ldots,10\\}$:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$6\\notin A$$\n\n$$7\\notin A$$\n\n$$8\\notin A$$\n\n$$9\\notin A$$\n\n$$10\\notin A$$\n\n$$A^{c}=\\{6,7,8,9,10\\}$$\n\nDie Aussage ist wahr.",
-      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$ entfernt $4$ und $5$:\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{4,5\\}$$\n\nKomplement in $U=\\{1,2,\\ldots,10\\}$ entfernt $4$ und $5$:\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nwas mit der Behauptung übereinstimmt.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$ und $B=\\{4,5,6,7,8\\}$.\n\n**Teil 2: Die Operationen.**\n\nKomplement $X^c$ ist $U\\setminus X$. Die De-Morganschen Regeln: $(A\\cup B)^c=A^c\\cap B^c$ und $(A\\cap B)^c=A^c\\cup B^c$."
   },
@@ -637,11 +637,11 @@
       "$(A \\cap B)^c = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\\}$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\n$A$ enthält die ungeraden und $B$ die geraden Zahlen in $U=\\{1,2,\\ldots,12\\}$:\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\n$$A\\cup B=U$$\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite:\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nKomplemente:\n\n$$A^{c}=B=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cap B^{c}=\\emptyset$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nUngerade und gerade Zahlen sind disjunkt:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cup B^{c}=U$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**A.** → Richtig\n\n$A$ sind die ungeraden und $B$ die geraden Zahlen in $U=\\{1,2,\\ldots,12\\}$:\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\n$$A\\cup B=U$$\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDe Morgan für Vereinigungen. Linke Seite:\n\n$$(A\\cup B)^{c}=\\emptyset$$\n\nKomplemente:\n\n$$A^{c}=B=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cap B^{c}=\\emptyset$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nUngerade und gerade Zahlen sind disjunkt:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\n$$B^{c}=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}\\cup B^{c}=U$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
       "**D.** → Richtig\n\nDas Komplement der ungeraden Zahlen sind die geraden:\n\n$$A=\\{1,3,5,7,9,11\\}$$\n\n$$A^{c}=\\{2,4,6,8,10,12\\}$$\n\nDie Aussage ist wahr.",
-      "**E.** → Richtig\n\nAus C:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr."
+      "**E.** → Richtig\n\nAus Aussage C:\n\n$$A\\cap B=\\emptyset$$\n\n$$(A\\cap B)^{c}=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\n$A$ sind die ungeraden und $B$ die geraden Zahlen in $U=\\{1,\\ldots,12\\}$. Sie partitionieren $U$.\n\n**Teil 2: Die Operationen.**\n\n$A\\cup B=U$, also $(A\\cup B)^c=\\emptyset$. $A\\cap B=\\emptyset$, also $(A\\cap B)^c=U$. $A^c=B$."
   },
@@ -657,10 +657,10 @@
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\nZuerst die Vereinigung:\n\n$$A=\\{p,q,r\\}$$\n\n$$B=\\{r,s\\}$$\n\n$$A\\cup B=\\{p,q,r,s\\}$$\n\nKomplement in $U=\\{p,q,r,s,t,u\\}$:\n\n$$t\\notin A\\cup B$$\n\n$$u\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nLinke Seite aus A:\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cap B^{c}=\\{t,u\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cup B^{c}=\\{p,q,s,t,u\\}$$\n\nBeide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nLinke Seite aus Aussage A:\n\n$$(A\\cup B)^{c}=\\{t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cap B^{c}=\\{t,u\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\n$$B^{c}=\\{p,q,t,u\\}$$\n\n$$A^{c}\\cup B^{c}=\\{p,q,s,t,u\\}$$\n\nDie beiden Seiten stimmen überein.\n\nDie Aussage ist wahr.",
       "**D.** → Richtig\n\nKomplement von $A=\\{p,q,r\\}$ in $U$:\n\n$$s\\notin A$$\n\n$$t\\notin A$$\n\n$$u\\notin A$$\n\n$$A^{c}=\\{s,t,u\\}$$\n\nDie Aussage ist wahr.",
-      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\nKomplement in $U=\\{p,q,r,s,t,u\\}$ entfernt $r$:\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+      "**E.** → Richtig\n\nSchnittmenge:\n\n$$A\\cap B=\\{r\\}$$\n\nKomplement in $U=\\{p,q,r,s,t,u\\}$ entfernt $r$:\n\n$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$\n\nwas mit der Behauptung übereinstimmt.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $U=\\{p,q,r,s,t,u\\}$, $A=\\{p,q,r\\}$ und $B=\\{r,s\\}$.\n\n**Teil 2: Die Operationen.**\n\nDe Morgan vertauscht Vereinigung und Schnitt unter Komplementen. $A\\cup B=\\{p,q,r,s\\}$, also $(A\\cup B)^c=\\{t,u\\}$."
   },
@@ -677,9 +677,9 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\nGröße des kartesischen Produkts:\n\n$$|A|=2$$\n\n$$|B|=3$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$2\\cdot 3=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr.",
       "**B.** → Richtig\n\nPrüfe die Koordinaten:\n\n$$1\\in A$$\n\n$$x\\in B$$\n\n$$(1,x)\\in A\\times B$$\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nFirst coordinate must liegen in $A$:\n\n$$x\\notin A$$\n\n$$(x,1)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nSample pair:\n\n$$(1,x)\\in A\\times B$$\n\n$$1\\notin B$$\n\n$$(1,x)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nGröße des vertauschten Produkts:\n\n$$|B|=3$$\n\n$$|A|=2$$\n\n$$3\\cdot 2=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nDie Mächtigkeiten stimmen überein.\n\nDie Aussage ist wahr."
+      "**C.** → Falsch\n\nDie erste Koordinate muss in $A$ liegen:\n\n$$x\\notin A$$\n\n$$(x,1)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nBeispielpaar:\n\n$$(1,x)\\in A\\times B$$\n\n$$1\\notin B$$\n\n$$(1,x)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nGröße des vertauschten Produkts:\n\n$$|B|=3$$\n\n$$|A|=2$$\n\n$$3\\cdot 2=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nalso stimmen die Mächtigkeiten überein.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{1,2\\}$ und $B=\\{x,y,z\\}$.\n\n**Teil 2: Die Operationen.**\n\nEin geordnetes Paar $(a,b)$ liegt in $A\\times B$, wenn $a\\in A$ und $b\\in B$. Die Größe ist $|A|\\cdot|B|=6$. Vertauschen liefert $B\\times A$: gleiche Anzahl, andere Elemente."
   },
@@ -696,8 +696,8 @@
     "tactical_explanations": [
       "**A.** → Richtig\n\nGröße des kartesischen Produkts:\n\n$$|A|=3$$\n\n$$|B|=2$$\n\n$$|A\\times B|=|A|\\cdot|B|$$\n\n$$3\\cdot 2=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr.",
       "**B.** → Richtig\n\nPrüfe die Koordinaten:\n\n$$m\\in A$$\n\n$$1\\in B$$\n\n$$(m,1)\\in A\\times B$$\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nFirst coordinate must liegen in $A=\\{m,n,p\\}$:\n\n$$1\\notin A$$\n\n$$(1,m)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nSample pair:\n\n$$(m,1)\\in A\\times B$$\n\n$$m\\notin B$$\n\n$$(m,1)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie erste Koordinate muss in $A=\\{m,n,p\\}$ liegen:\n\n$$1\\notin A$$\n\n$$(1,m)\\notin A\\times B$$\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nBeispielpaar:\n\n$$(m,1)\\in A\\times B$$\n\n$$m\\notin B$$\n\n$$(m,1)\\notin B\\times A$$\n\n$$A\\times B\\neq B\\times A$$\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nGröße des vertauschten Produkts:\n\n$$|B|=2$$\n\n$$|A|=3$$\n\n$$2\\cdot 3=6$$\n\n$$|B\\times A|=6$$\n\n$$|A\\times B|=6$$\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{m,n,p\\}$ und $B=\\{1,2\\}$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\times B|=3\\cdot 2=6$. Die Reihenfolge im Paar zählt: $(m,1)\\in A\\times B$, aber $(1,m)\\notin A\\times B$."
@@ -713,11 +713,11 @@
       "$A \\triangle B = A \\cup B$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Differenz behält Elemente von $A$, die nicht in $B$ liegen:\n\n$$A=\\{1,3,5,7,9\\}$$\n\n$$B=\\{3,5,7,11,13\\}$$\n\n$$1\\in A,\\ 1\\notin B$$\n\n$$9\\in A,\\ 9\\notin B$$\n\n$$A\\setminus B=\\{1,9\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nDie Differenz behält Elemente von $B$, die nicht in $A$ liegen:\n\n$$11\\in B,\\ 11\\notin A$$\n\n$$13\\in B,\\ 13\\notin A$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\nDie Aussage ist wahr.",
+      "**A.** → Richtig\n\nDie Differenz behält Elemente von $A$, die $B$ verfehlen.\n\n$$A={1,3,5,7,9}$$\n\n$$B={3,5,7,11,13}$$\n\n$$1\\in A$$\n\n$$1\\notin B$$\n\n$$3\\in A$$\n\n$$3\\in B$$\n\n$$5\\in A$$\n\n$$5\\in B$$\n\n$$7\\in A$$\n\n$$7\\in B$$\n\n$$9\\in A$$\n\n$$9\\notin B$$\n\n$$A\\setminus B={1,9}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Differenz behält Elemente von $B$, die $A$ verfehlen.\n\n$$B={3,5,7,11,13}$$\n\n$$A={1,3,5,7,9}$$\n\n$$3\\in B$$\n\n$$3\\in A$$\n\n$$5\\in B$$\n\n$$5\\in A$$\n\n$$7\\in B$$\n\n$$7\\in A$$\n\n$$11\\in B$$\n\n$$11\\notin A$$\n\n$$13\\in B$$\n\n$$13\\notin A$$\n\n$$B\\setminus A={11,13}$$\n\nDie Aussage ist wahr.",
       "**C.** → Richtig\n\nDie symmetrische Differenz vereinigt die beiden Differenzen:\n\n$$A\\setminus B=\\{1,9\\}$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\nDie Aussage ist wahr.",
-      "**D.** → Richtig\n\nDie beiden Differenzen sind nach Definition disjunkt:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDie Vereinigung ist größer, weil sie die Schnittmenge noch enthält:\n\n$$A\\cup B=\\{1,3,5,7,9,11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\n$$A\\triangle B\\neq A\\cup B$$\n\nDie Aussage ist falsch."
+      "**D.** → Richtig\n\nSchneide die Differenzen:\n\n$$A\\setminus B=\\{1,9\\}$$\n\n$$B\\setminus A=\\{11,13\\}$$\n\n$$1\\notin\\{11,13\\}$$\n\n$$9\\notin\\{11,13\\}$$\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Vereinigung ist größer, weil sie die Überlappung noch enthält:\n\n$$A\\cup B=\\{1,3,5,7,9,11,13\\}$$\n\n$$A\\triangle B=\\{1,9,11,13\\}$$\n\n$$3\\in A\\cup B$$\n\n$$3\\notin A\\triangle B$$\n\n$$A\\triangle B\\neq A\\cup B$$\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{1,3,5,7,9\\}$ und $B=\\{3,5,7,11,13\\}$.\n\n**Teil 2: Die Operationen.**\n\n$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$. Gemeinsam sind $\\{3,5,7\\}$; die symmetrische Differenz ist $\\{1,9,11,13\\}$, nicht die volle Vereinigung."
   },
@@ -732,11 +732,11 @@
       "$A \\triangle B = A \\cup B$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDa $A$ und $B$ disjunkt sind, bleibt $A$ beim Abziehen von $B$ unverändert:\n\n$$A\\setminus B=A=\\{2,4,6\\}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nEbenso bleibt $B$ beim Abziehen von $A$ unverändert:\n\n$$B\\setminus A=B=\\{1,3,5\\}$$\n\nDie Aussage ist wahr.",
+      "**A.** → Richtig\n\nDie Differenz behält Elemente von $A$, die $B$ verfehlen.\n\n$$A={2,4,6}$$\n\n$$B={1,3,5}$$\n\n$$2\\in A$$\n\n$$2\\notin B$$\n\n$$4\\in A$$\n\n$$4\\notin B$$\n\n$$6\\in A$$\n\n$$6\\notin B$$\n\n$$A\\setminus B={2,4,6}$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Differenz behält Elemente von $B$, die $A$ verfehlen.\n\n$$B={1,3,5}$$\n\n$$A={2,4,6}$$\n\n$$1\\in B$$\n\n$$1\\notin A$$\n\n$$3\\in B$$\n\n$$3\\notin A$$\n\n$$5\\in B$$\n\n$$5\\notin A$$\n\n$$B\\setminus A={1,3,5}$$\n\nDie Aussage ist wahr.",
       "**C.** → Richtig\n\nVereinige die Differenzen:\n\n$$A\\setminus B=\\{2,4,6\\}$$\n\n$$B\\setminus A=\\{1,3,5\\}$$\n\n$$A\\triangle B=\\{1,2,3,4,5,6\\}$$\n\nDie Aussage ist wahr.",
-      "**D.** → Richtig\n\nDie beiden Differenzen sind disjunkt:\n\n$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$\n\nDie Aussage ist wahr.",
-      "**E.** → Richtig\n\nWeil $A\\cap B=\\emptyset$,\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nDie Aussage ist wahr."
+      "**D.** → Richtig\n\nSchneide die Differenzen:\n\n$$\\{2,4,6\\}\\cap\\{1,3,5\\}=\\emptyset$$\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nWeil $A\\cap B=\\emptyset$,\n\n$$A\\setminus B=A$$\n\n$$B\\setminus A=B$$\n\n$$A\\triangle B=A\\cup B$$\n\nund beide sind gleich $\\{1,2,3,4,5,6\\}$.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{2,4,6\\}$ und $B=\\{1,3,5\\}$, disjunkt.\n\n**Teil 2: Die Operationen.**\n\nBei Disjunktheit gilt $A\\setminus B=A$, $B\\setminus A=B$, also $A\\triangle B=A\\cup B$."
   },
@@ -751,11 +751,11 @@
       "Genau $9$ Personen sind nur in B (nicht A)."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=22+15-6$$\n\n$$|A\\cup B|=31$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=22-6$$\n\n$$|A\\setminus B|=16$$\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=40-31$$\n\n$$=9$$\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=6$$\n\n$$|A\\cup B|=31$$\n\n$$6>31$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=15-6$$\n\n$$|B\\setminus A|=9$$\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nInklusion-Exklusion:\n\n$$|A|=22$$\n\n$$|B|=15$$\n\n$$|A\\cap B|=6$$\n\n$$|A|+|B|=22+15$$\n\n$$22+15=37$$\n\n$$37-6=31$$\n\n$$|A\\cup B|=31$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ minus die Überlappung:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$22-6=16$$\n\n$$|A\\setminus B|=16$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nIn keinem der beiden Clubs:\n\n$$|U|-|A\\cup B|=40-31$$\n\n$$40-31=9$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=6$$\n\n$$|A\\cup B|=31$$\n\n$$6>31$$\n\nist falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ minus die Überlappung:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$15-6=9$$\n\n$$|B\\setminus A|=9$$\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nUnter $40$ Studierenden: $|A|=22$, $|B|=15$, $|A\\cap B|=6$.\n\n**Teil 2: Die Operationen.**\n\nInklusion-Exklusion: $|A\\cup B|=22+15-6=31$. Nur-A ist $22-6=16$. Keines: $40-31=9$. Nur-B: $15-6=9$."
   },
@@ -770,11 +770,11 @@
       "Genau $16$ Personen sind nur in B (nicht A)."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=34+28-12$$\n\n$$|A\\cup B|=50$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=34-12$$\n\n$$|A\\setminus B|=22$$\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=60-50$$\n\n$$=10$$\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=12$$\n\n$$|A\\cup B|=50$$\n\n$$12>50$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=28-12$$\n\n$$|B\\setminus A|=16$$\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nInklusion-Exklusion:\n\n$$|A|=34$$\n\n$$|B|=28$$\n\n$$|A\\cap B|=12$$\n\n$$|A|+|B|=34+28$$\n\n$$34+28=62$$\n\n$$62-12=50$$\n\n$$|A\\cup B|=50$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ minus die Überlappung:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$34-12=22$$\n\n$$|A\\setminus B|=22$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nIn keinem der beiden Clubs:\n\n$$|U|-|A\\cup B|=60-50$$\n\n$$60-50=10$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=12$$\n\n$$|A\\cup B|=50$$\n\n$$12>50$$\n\nist falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ minus die Überlappung:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$28-12=16$$\n\n$$|B\\setminus A|=16$$\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nUnter $60$ Studierenden: $|A|=34$, $|B|=28$, $|A\\cap B|=12$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\cup B|=34+28-12=50$. Nur-A: $22$. Keines: $10$. Nur-B: $16$."
   },
@@ -789,11 +789,11 @@
       "Genau $13$ Personen sind nur in B (nicht A)."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nInklusion-Exklusion für zwei Mengen:\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=20+18-5$$\n\n$$|A\\cup B|=33$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nNur $A$ ist $A$ ohne die Schnittmenge:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=20-5$$\n\n$$|A\\setminus B|=15$$\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nAußerhalb beider Mengen:\n\n$$|U|-|A\\cup B|=50-33$$\n\n$$=17$$\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=5$$\n\n$$|A\\cup B|=33$$\n\n$$5>33$$\n\nist falsch, denn die Schnittmenge steckt in der Vereinigung.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nNur $B$ ist $B$ ohne die Schnittmenge:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$|B\\setminus A|=18-5$$\n\n$$|B\\setminus A|=13$$\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nInklusion-Exklusion:\n\n$$|A|=20$$\n\n$$|B|=18$$\n\n$$|A\\cap B|=5$$\n\n$$|A|+|B|=20+18$$\n\n$$20+18=38$$\n\n$$38-5=33$$\n\n$$|A\\cup B|=33$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNur $A$ ist $A$ minus die Überlappung:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$20-5=15$$\n\n$$|A\\setminus B|=15$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nIn keinem der beiden Clubs:\n\n$$|U|-|A\\cup B|=50-33$$\n\n$$50-33=17$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nVergleiche Schnitt- und Vereinigungsmächtigkeit:\n\n$$|A\\cap B|=5$$\n\n$$|A\\cup B|=33$$\n\n$$5>33$$\n\nist falsch.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nNur $B$ ist $B$ minus die Überlappung:\n\n$$|B\\setminus A|=|B|-|A\\cap B|$$\n\n$$18-5=13$$\n\n$$|B\\setminus A|=13$$\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\nUnter $50$ Mitgliedern: $|A|=20$, $|B|=18$, $|A\\cap B|=5$.\n\n**Teil 2: Die Operationen.**\n\n$|A\\cup B|=20+18-5=33$. Nur-A: $15$. Keines: $17$. Nur-B: $13$."
   },
@@ -808,11 +808,11 @@
       "$\\lvert A \\cup B \\cup C\\rvert > \\lvert A\\rvert + \\lvert B\\rvert + \\lvert C\\rvert$."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nInklusion-Exklusion für drei Mengen:\n\n$$\n\\begin{aligned}\n|A|&=30\\\\\n|B|&=25\\\\\n|C|&=20\\\\\n|A|+|B|+|C|&=75\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n|A\\cap B|&=10\\\\\n|A\\cap C|&=8\\\\\n|B\\cap C|&=7\\\\\n|A\\cap B\\cap C|&=3\n\\end{aligned}\n$$\n\n$$|A\\cup B\\cup C|=30+25+20-10-8-7+3 = 53$$\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nDie Dreifach-Schnittmenge liegt in jeder paarweisen Schnittmenge:\n\n$$A\\cap B\\cap C\\subseteq A\\cap B$$\n\n$$A\\cap B\\cap C\\subseteq A\\cap C$$\n\n$$A\\cap B\\cap C\\subseteq B\\cap C$$\n\nWer alle drei Aktivitäten macht, wird daher in jeder paarweisen Zählung mitgezählt.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nGenau Fotografie und Wandern, aber nicht Kochen:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$|A\\cap B\\setminus C|=10-3$$\n\n$$|A\\cap B\\setminus C|=7$$\n\nDie Aussage ist wahr.",
-      "**D.** → Richtig\n\nDie Dreifach-Schnittmenge ist in jeder paarweisen enthalten, also\n\n$$|A\\cap B\\cap C|\\le\\min(|A\\cap B|,|A\\cap C|,|B\\cap C|)$$\n\n$$3\\le\\min(10,8,7)=7$$\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nVergleiche die Vereinigung mit der Rohsumme:\n\n$$|A\\cup B\\cup C|=53$$\n\n$$|A|+|B|+|C|=75$$\n\n$$53>75$$\n\nist falsch. Die Vereinigung ist höchstens so groß wie die Summe.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nInklusion-Exklusion für drei Mengen:\n\n$$|A|=30$$\n\n$$|B|=25$$\n\n$$|C|=20$$\n\n$$|A|+|B|=30+25$$\n\n$$30+25=55$$\n\n$$55+20=75$$\n\n$$|A\\cap B|=10$$\n\n$$75-10=65$$\n\n$$|A\\cap C|=8$$\n\n$$65-8=57$$\n\n$$|B\\cap C|=7$$\n\n$$57-7=50$$\n\n$$|A\\cap B\\cap C|=3$$\n\n$$50+3=53$$\n\n$$|A\\cup B\\cup C|=53$$\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDie Dreifach-Schnittmenge liegt nach Definition in jeder paarweisen Schnittmenge:\n\n$$A\\cap B\\cap C\\subseteq A\\cap B$$\n\n$$A\\cap B\\cap C\\subseteq A\\cap C$$\n\n$$A\\cap B\\cap C\\subseteq B\\cap C$$\n\nAlso wird jedes Mitglied aller drei Aktivitäten in jeder paarweisen Zählung mitgezählt.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nGenau Fotografie und Wandern, aber nicht Kochen:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$10-3=7$$\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nDie Dreifach-Schnittmenge kann keine paarweise Zählung überschreiten:\n\n$$|A\\cap B\\cap C|=3$$\n\n$$|A\\cap B|=10$$\n\n$$|A\\cap C|=8$$\n\n$$|B\\cap C|=7$$\n\n$$\\min(10,8,7)=7$$\n\n$$3\\le 7$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVergleiche die Vereinigung mit der Rohsumme:\n\n$$|A\\cup B\\cup C|=53$$\n\n$$|A|+|B|+|C|=30+25+20$$\n\n$$30+25=55$$\n\n$$55+20=75$$\n\n$$53>75$$\n\nist falsch. Die Vereinigung ist kleiner als die Rohsumme, weil Überlappungen abgezogen werden.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "**Teil 1: Die Mengen.**\n\n$|A|=30$, $|B|=25$, $|C|=20$, paarweise $10$, $8$, $6$, dreifach $3$.\n\n**Teil 2: Die Operationen.**\n\nInklusion-Exklusion für drei Mengen: $30+25+20-10-8-6+3=54$. Genau A und B ohne C: $10-3=7$."
   },
@@ -827,11 +827,11 @@
       "Es ist nicht wahr, dass 7 prim oder gerade ist."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\n7 ist prim ($P$), aber nicht gerade ($\\neg E$). Die Konjunktion verlangt beides:\n\n$$P\\wedge E$$\n\nAber $\\neg E$, also ist die Konjunktion falsch.\n\nDie Aussage ist falsch.",
-      "**B.** → Richtig\n\nDie Disjunktion $P\\vee E$ ist wahr, sobald eine Hälfte gilt. $P$ gilt, also ist die Disjunktion wahr.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nDie Negation von $P\\wedge E$ ist $\\neg(P\\wedge E)$, äquivalent zu $\\neg P\\vee\\neg E$. Da $\\neg E$ gilt, ist die Negation wahr.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\n„Weder prim noch gerade“ bedeutet $\\neg P\\wedge\\neg E$. Aber $P$ gilt, also ist das falsch.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nDie Negation von $P\\vee E$ ist $\\neg P\\wedge\\neg E$. Da $P$ gilt, ist die Negation falsch.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\nSei $P$ die Aussage „$7$ ist prim“ und $E$ die Aussage „$7$ ist gerade“. Gegebene Fakten:\n\n$$P$$\n\n$$\\neg E$$\n\nDie Konjunktion verlangt beides:\n\n$$P\\wedge E$$\n\nAber $\\neg E$ gilt, also ist $P\\wedge E$ falsch.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nDie Disjunktion $P\\vee E$ ist wahr, sobald mindestens ein Disjunkt wahr ist. Hier gilt\n\n$$P$$\n\nalso ist\n\n$$P\\vee E$$\n\nwahr.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegation der Konjunktion:\n\n$$\\neg(P\\wedge E)$$\n\nNach Aussage A ist $P\\wedge E$ falsch, also ist ihre Negation wahr. Äquivalent nach De Morgan:\n\n$$\\neg P\\vee\\neg E$$\n\nund $\\neg E$ gilt.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\n„Weder prim noch gerade“ ist\n\n$$\\neg P\\wedge\\neg E$$\n\nAber $P$ ist wahr, also ist $\\neg P$ falsch, und die Konjunktion scheitert.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nNegation der Disjunktion:\n\n$$\\neg(P\\vee E)$$\n\nNach Aussage B ist $P\\vee E$ wahr, also ist die Negation falsch. Äquivalent:\n\n$$\\neg P\\wedge\\neg E$$\n\nwas scheitert, weil $P$ gilt.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "**Teil 1: Aufbau.**\n\n7 ist prim und nicht gerade.\n\n**Teil 2: Lösung.**\n\nKonjunktion „prim und gerade“ ist falsch. Disjunktion „prim oder gerade“ ist wahr, weil die Prim-Hälfte gilt. Die Negation der Konjunktion ist wahr. „Weder noch“ ist falsch. Die Negation der Disjunktion ist falsch."
   },
@@ -846,11 +846,11 @@
       "Es gibt unendlich viele Primzahlen größer als 2."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nDie Allaussage lautet: Jede Primzahl $p>2$ ist ungerade. Die einzige gerade Primzahl ist $2$, die durch $p>2$ ausgeschlossen wird. Jede größere Primzahl ist ungerade, also gilt die Behauptung.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nEin Gegenbeispiel müsste eine Primzahl $p>2$ sein, die gerade ist. Die Zahl $2$ ist prim und gerade, aber sie erfüllt nicht $p>2$. Also ist $2$ kein Gegenbeispiel zu dieser Aussage.\n\nDie Aussage ist falsch.",
-      "**C.** → Richtig\n\nDie Negation einer Allaussage $\\forall p\\,(p>2\\wedge\\mathrm{prim}(p)\\Rightarrow\\mathrm{ungerade}(p))$ ist die Existenzaussage: Es gibt eine Primzahl $p>2$, die gerade ist.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nAus „alle Primzahlen $>2$ sind ungerade“ folgt nicht die Umkehrung „alle ungeraden Zahlen $>2$ sind prim“. Gegenbeispiel: $9$ ist ungerade und $>2$, aber nicht prim.\n\nDie Aussage ist falsch.",
-      "**E.** → Richtig\n\nEs gibt unendlich viele Primzahlen, und nur eine davon ist $2$. Also gibt es unendlich viele Primzahlen größer als $2$.\n\nDie Aussage ist wahr."
+      "**A.** → Richtig\n\nDie Allaussage lautet: jede Primzahl $p>2$ ist ungerade. Die einzige gerade Primzahl ist $2$, die durch $p>2$ ausgeschlossen wird. Jede größere Primzahl ist ungerade, also gilt die Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nEin Gegenbeispiel wäre eine Primzahl $p>2$, die gerade ist. Die Zahl $2$ erfüllt die Voraussetzung $p>2$ nicht:\n\n$$2>2$$\n\nist falsch. Also liegt $2$ außerhalb des quantifizierten Bereichs und ist kein Gegenbeispiel.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDie Negation von $\\forall p\\,(p\\text{ prime }\\wedge p>2\\Rightarrow p\\text{ odd})$ liefert\n\n$$\\exists p\\,(p\\text{ prime }\\wedge p>2\\wedge p\\text{ even})$$\n\nwas genau die behauptete Negation ist.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Umkehrung würde sagen, jede ungerade $n>2$ sei prim. Ein Gegenbeispiel ist\n\n$$n=9$$\n\n$$9>2$$\n\n$$9\\text{ is odd}$$\n\n$$9=3\\cdot 3$$\n\nalso ist $9$ nicht prim. Die Umkehrung scheitert.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nDer Satz von Euklid liefert unendlich viele Primzahlen. Entfernt man die einzelne Primzahl $2$, bleiben immer noch unendlich viele Primzahlen, die alle größer als $2$ sind.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "**Teil 1: Aufbau.**\n\nDie Aussage behauptet: Jede Primzahl $p>2$ ist ungerade.\n\n**Teil 2: Lösung.**\n\nDie Aussage ist wahr. 2 ist keine Gegenbeispiel, weil die Aussage nur Primzahlen größer als 2 betrifft. Die Negation ist eine Existenzaussage mit gerader Primzahl $>2$. Die Umkehrung (alle ungeraden $>2$ sind prim) folgt nicht."
   },
@@ -865,11 +865,11 @@
       "Daraus folgt, dass Maria Principles of Economics mit Bestnote bestanden hat."
     ],
     "tactical_explanations": [
-      "**A.** → Richtig\n\nSei $A$: Maria ist in Advanced eingeschrieben, und $I$: sie hat Intermediate bestanden. „Advanced nur wenn Intermediate“ bedeutet\n\n$$A\\Rightarrow I$$\n\nMarias Einschreibung liefert $A=\\mathrm{T}$. Die Abtrennungsregel erzwingt die Konsequenz:\n\n$$A=\\mathrm{T}\\quad\\Longrightarrow\\quad I=\\mathrm{T}$$\n\nMaria hat Intermediate bestanden.\n\nDie Aussage ist wahr.",
-      "**B.** → Richtig\n\nSei $P$: Maria hat Principles bestanden. Die beiden Voraussetzungen ergeben\n\n$$A\\Rightarrow I$$\n\n$$I\\Rightarrow P$$\n\nAus A ist $I=\\mathrm{T}$. Mit $I\\Rightarrow P$ folgt $P=\\mathrm{T}$.\n\nMaria hat Principles bestanden.\n\nDie Aussage ist wahr.",
-      "**C.** → Richtig\n\nVerkette die Implikationen:\n\n$$A\\Rightarrow I,\\quad I\\Rightarrow P\\quad\\Longrightarrow\\quad A\\Rightarrow P$$\n\n„$P$ ist notwendig für $A$“ ist genau $A\\Rightarrow P$.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\n„Principles sei hinreichend für Advanced“ würde die wesentliche Pfeilrichtung umkehren:\n\n$$P\\Rightarrow A$$\n\nGegeben ist aber nur $A\\Rightarrow P$. Hinreichend und notwendig sind hier nicht vertauschbar.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nAus den Regeln folgt nur, dass Principles bestanden wurde — nicht mit welcher Note. Eine Bestnote ist in den Prämissen nicht enthalten.\n\nDie Aussage ist falsch."
+      "**A.** → Richtig\n\nSei $A$ die Aussage, dass Maria in Advanced eingeschrieben ist, und $I$ die Aussage, dass sie Intermediate bestanden hat. „Advanced nur wenn Intermediate“ liefert\n\n$$A\\Rightarrow I$$\n\nMarias Einschreibung macht $A=\\mathrm{T}$. Modus ponens erzwingt die geforderte Konsequenz:\n\n$$A = \\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I = \\mathrm{T}$$\n\nMaria hat Intermediate bestanden.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSei $P$ die Aussage, dass Maria Principles bestanden hat. Die beiden Voraussetzungregeln bilden\n\n$$A\\Rightarrow I,$$\n\n$$I\\Rightarrow P$$\n\nDa Maria $A=\\mathrm{T}$ hat, wende die Implikationen der Reihe nach an:\n\n$$A = \\mathrm{T}\\Longrightarrow I = \\mathrm{T}\\Longrightarrow P = \\mathrm{T}$$\n\nDie zweite Regel erzwingt daher, dass Maria Principles bestanden hat.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nVerkette die Implikationen der Voraussetzungen:\n\n$$A\\Rightarrow I,\\quad I\\Rightarrow P \\quad\\Longrightarrow\\quad A\\Rightarrow P$$\n\nDer resultierende Pfeil sagt: wann immer die Advanced-Einschreibung wahr ist, muss auch das Bestehen von Principles wahr sein:\n\n$$A = \\mathrm{T}\\quad\\Longrightarrow\\quad P = \\mathrm{T}$$\n\nDamit ist Principles eine notwendige Bedingung für die Advanced-Einschreibung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nPrinciples als hinreichend für Advanced zu bezeichnen würde die etablierte Kette umkehren und\n\n$$P\\Rightarrow A$$\n\nerfordern. Betrachte eine Studierende, die Principles bestanden hat, aber Intermediate nie bestanden hat und nicht in Advanced eingeschrieben ist:\n\n$$P = \\mathrm{T},$$\n\n$$I = \\mathrm{F},$$\n\n$$A = \\mathrm{F}$$\n\nBeide Originalregeln gelten vakuös, weil ihre Antezedenzien falsch sind, aber die vorgeschlagene Umkehrimplikation wertet sich aus als\n\n$$P\\Rightarrow A = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$\n\nDas Bestehen von Principles allein ist nicht hinreichend für die Advanced-Einschreibung.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie Regeln erlauben nur die Bestanden/Nicht-Bestanden-Kette\n\n$$A(M) = \\mathrm{T}\\Longrightarrow I(M) = \\mathrm{T}\\Longrightarrow P(M) = \\mathrm{T}$$\n\nHier bedeutet $P(M)=\\mathrm{T}$ nur „Maria hat Principles bestanden.“ Es kodiert keine numerische Note:\n\n$$P(M) = \\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M) = 100\\%$$\n\nMaria könnte jede bestandene Note haben. Eine Bestnote lässt sich nicht folgern.\n\nDie Aussage ist falsch."
     ],
     "solution_overview": "„Du darfst dich nur dann in $X$ einschreiben, wenn du $Y$ bestanden hast“ ist $X\\Rightarrow Y$: $Y$ ist notwendig für $X$, nicht hinreichend.\n\nSchreibe $A$ für die Einschreibung in Advanced Macroeconomics, $I$ für das Bestehen von Intermediate und $P$ für Principles. Die Regeln liefern $A\\Rightarrow I$ und $I\\Rightarrow P$, also $A\\Rightarrow P$. Marias Einschreibung erzwingt $I$ und $P$, aber weder die Umkehrung $P\\Rightarrow A$ noch eine Aussage über die Note."
   },

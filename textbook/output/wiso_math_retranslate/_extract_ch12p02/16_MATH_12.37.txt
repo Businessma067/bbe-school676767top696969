@@ -1,0 +1,312 @@
+CASE MATH 12.37
+ANSWER [true, false, false, true, false]
+TITLE_DE Der Labor-Kontaminationsscreen
+CONTEXT_DE Von 20 Röhrchen sind 6 kontaminiert und 14 sauber. Für PCR werden 4 zufällig ohne Zurücklegen gewählt; separat auch sequentielles Ziehen.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 4-Röhrchen-Chargen beträgt 4.845.
+  B. Die Wahrscheinlichkeit für genau 2 kontaminierte ist größer als 30%.
+  C. Die Wahrscheinlichkeit für keine kontaminierten ist größer als 25%.
+  D. Beim sequentiellen Ziehen ist die Wahrscheinlichkeit, dass das erste Röhrchen kontaminiert ist, 30%.
+  E. Die Wahrscheinlichkeit, dass die ersten beiden beide kontaminiert sind, ist größer als 10%.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible 4-vial PCR batches. This is a problem of selecting a subset of 4 items from a larger set of 20 items, where the order of selection does not matter. The appropriate method for this is the combination formula, $\binom{N}{n}$.
+
+Here, $N=20$ is the total number of vials, and $n=4$ is the number of vials to be selected for a batch.
+
+$$
+\text{Total number of batches} = \binom{20}{4}
+$$
+
+$$
+\binom{20}{4} = \dfrac{20!}{4!(20-4)!}
+$$
+
+$$
+\dfrac{20!}{4!(16)!} = \dfrac{20 \cdot 19 \cdot 18 \cdot 17}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+20 \cdot 19 = 380
+$$
+
+$$
+380 \cdot 18 = 6840
+$$
+
+$$
+6840 \cdot 17 = 116280
+$$
+
+$$
+\dfrac{116280}{24} = 4845
+$$
+
+$$
+\binom{20}{4} = 4845
+$$
+
+There are $4,845$ possible 4-vial PCR batches.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → False
+
+This claim asks for the probability that a random 4-vial batch contains exactly 2 contaminated vials. This is a classic hypergeometric probability scenario, as we are sampling without replacement from a finite population with two types of items. The probability is given by the formula:
+
+$$
+\binom{20}{4} = \dfrac{20!}{4!(20-4)!}
+$$
+
+$$
+\dfrac{20!}{4!(16)!} = \dfrac{20 \cdot 19 \cdot 18 \cdot 17}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+20 \times 19 = 380
+$$
+
+$$
+380 \times 18 = 6840
+$$
+
+$$
+6840 \times 17 = 116280
+$$
+
+$$
+\dfrac{116280}{24} = 4845
+$$
+
+$$
+\binom{20}{4} = 4845
+$$
+
+$$
+P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+Here, $N=20$ total vials, $K=6$ contaminated vials, $N-K=14$ clean vials, $n=4$ vials selected in a batch, and $k=2$ contaminated vials desired.
+
+First, we calculate the number of ways to choose 2 contaminated vials from 6 and 2 clean vials from 14:
+
+$$
+\binom{6}{2} = \dfrac{6!}{2!(6-2)!}
+$$
+
+$$
+\dfrac{6!}{2!(4)!} = \dfrac{6 \cdot 5}{1 \cdot 2}
+$$
+
+$$
+6 \times 5 = 30
+$$
+
+$$
+\dfrac{30}{2} = 15
+$$
+
+$$
+\binom{6}{2} = 15
+$$
+
+$$
+\binom{14}{2} = \dfrac{14!}{2!(14-2)!}
+$$
+
+$$
+\dfrac{14!}{2!(12)!} = \dfrac{14 \cdot 13}{1 \cdot 2}
+$$
+
+$$
+14 \times 13 = 182
+$$
+
+$$
+\dfrac{182}{2} = 91
+$$
+
+$$
+\binom{14}{2} = 91
+$$
+
+From the solution overview, the total number of possible 4-vial batches is $\binom{20}{4} = 4845$. Now, we can find the probability:
+
+$$
+P(\text{exactly 2 contaminated}) = \frac{\binom{6}{2} \binom{14}{2}}{\binom{20}{4}}
+$$
+
+$$
+P(\text{exactly 2 contaminated}) = \frac{15 \times 91}{4845}
+$$
+
+$$
+P(\text{exactly 2 contaminated}) = \frac{1365}{4845}
+$$
+
+$$
+P(\text{exactly 2 contaminated}) \approx 0.28173
+$$
+
+The probability is approximately $28.17\%$. The claim states this probability is greater than $30\%$.
+
+So the statement is False.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This claim asks for the probability that a random 4-vial batch contains no contaminated vials. This means all 4 selected vials must be clean. This is another application of the hypergeometric probability formula:
+
+$$
+\binom{20}{4} = \dfrac{20!}{4!(20-4)!}
+$$
+
+$$
+\dfrac{20!}{4!(16)!} = \dfrac{20 \cdot 19 \cdot 18 \cdot 17}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+20 \times 19 = 380
+$$
+
+$$
+380 \times 18 = 6840
+$$
+
+$$
+6840 \times 17 = 116280
+$$
+
+$$
+\dfrac{116280}{24} = 4845
+$$
+
+$$
+\binom{20}{4} = 4845
+$$
+
+$$
+P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}
+$$
+
+In this case, $N=20$ total vials, $K=6$ contaminated vials, $N-K=14$ clean vials, $n=4$ vials selected, and $k=0$ contaminated vials desired.
+
+First, we calculate the number of ways to choose 0 contaminated vials from 6 and 4 clean vials from 14:
+
+$$
+\binom{6}{0} = 1
+$$
+
+$$
+\binom{14}{4} = \dfrac{14!}{4!(14-4)!}
+$$
+
+$$
+\dfrac{14!}{4!(10)!} = \dfrac{14 \cdot 13 \cdot 12 \cdot 11}{1 \cdot 2 \cdot 3 \cdot 4}
+$$
+
+$$
+14 \times 13 = 182
+$$
+
+$$
+182 \times 12 = 2184
+$$
+
+$$
+2184 \times 11 = 24024
+$$
+
+$$
+\dfrac{24024}{24} = 1001
+$$
+
+$$
+\binom{14}{4} = 1001
+$$
+
+From the solution overview, the total number of possible 4-vial batches is $\binom{20}{4} = 4845$. Now, we calculate the probability:
+
+$$
+P(\text{no contaminated}) = \frac{\binom{6}{0} \binom{14}{4}}{\binom{20}{4}}
+$$
+
+$$
+P(\text{no contaminated}) = \frac{1 \times 1001}{4845}
+$$
+
+$$
+P(\text{no contaminated}) = \frac{1001}{4845}
+$$
+
+$$
+P(\text{no contaminated}) \approx 0.206625
+$$
+
+The probability is approximately $20.66\%$. The claim states this probability is greater than $25\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This claim asks for the probability that the first vial drawn sequentially is contaminated. When drawing the first vial, there are 20 total vials in the tray. Among these, 6 are contaminated.
+
+The probability of drawing a contaminated vial on the first attempt is the ratio of the number of contaminated vials to the total number of vials.
+
+$$
+P(\text{1st vial is contaminated}) = \frac{\text{Number of contaminated vials}}{\text{Total number of vials}}
+$$
+
+$$
+P(\text{1st vial is contaminated}) = \frac{6}{20}
+$$
+
+$$
+P(\text{1st vial is contaminated}) = 0.3
+$$
+
+This probability is $0.3$, or $30\%$. The claim states that this probability is $30\%$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This claim asks for the probability that the first two vials drawn sequentially without replacement are both contaminated. This requires calculating the probability of two events happening in sequence: the first vial being contaminated, and then the second vial also being contaminated given that the first was contaminated. This is an application of the multiplication rule for probabilities:
+
+$$
+P(A \text{ and } B) = P(A) \times P(B \mid A)
+$$
+
+The probability that the first vial drawn is contaminated is $\frac{6}{20}$, as there are 6 contaminated vials out of 20 total. If the first vial drawn was indeed contaminated, then for the second draw, there are now 5 contaminated vials remaining out of a total of 19 vials in the tray.
+
+So, the conditional probability that the second vial drawn is contaminated, given that the first was contaminated, is $\frac{5}{19}$.
+
+$$
+P(\text{1st and 2nd contaminated}) = \frac{6}{20} \times \frac{5}{19}
+$$
+
+$$
+P(\text{1st and 2nd contaminated}) = \frac{30}{380}
+$$
+
+$$
+P(\text{1st and 2nd contaminated}) = \frac{3}{38}
+$$
+
+$$
+P(\text{1st and 2nd contaminated}) \approx 0.078947
+$$
+
+The probability is approximately $7.89\%$. The claim states this probability is greater than $10\%$.
+
+So the statement is False.
+

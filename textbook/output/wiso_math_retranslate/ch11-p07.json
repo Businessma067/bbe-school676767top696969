@@ -1,0 +1,1042 @@
+[
+  {
+    "case_id": "MATH 11.127",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Graph of f: turning points at x=1, 2.5, 5",
+    "context_en": "The figure shows $f$. Its turning points align with $x=1$, $x=2.5$, and $x=5$ (where $f'=0$). Decide TRUE or FALSE.",
+    "statements_en": [
+      "Near $x=1$ the graph has a local minimum (a lowest point in a neighbourhood).",
+      "Near $x=2.5$ the graph has a local maximum.",
+      "Near $x=5$ the graph has a local minimum.",
+      "On $(1,2.5)$ the graph is rising, so $f$ is increasing there.",
+      "Because $f(0)=0$, one must have $f'(0)=0$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nThe figure shows $f$ with turning points at the critical $x$-values. Near $x=1$ the graph bottoms out:\n\n$$\n\\text{local minimum of }f\\text{ near }x = 1\n$$\n\nThat lowest neighbourhood point is a local minimum\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nA local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.\n\nNear $x=2.5$ the graph of $f$ reaches a local highest point:\n\n$$\n\\text{local maximum of }f\\text{ near }x = 2.5\n$$\n\nThat peak in a neighbourhood is a local maximum\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2.5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nNear $x=5$ the graph of $f$ bottoms out again:\n\n$$\n\\text{local minimum of }f\\text{ near }x = 5\n$$\n\nThat second valley is a local minimum\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the open interval $(1,2.5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nBetween the local minimum near $x=1$ and the local maximum near $x=2.5$, the curve of $f$ climbs:\n\n$$\nf\\text{ increasing on }(1,2.5)\n$$\n\nA rising stretch means $f$ is increasing there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nA level value $f(0)=0$ is only a root of $f$, not a claim about the slope:\n\n$$\nf(0) = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\nf'(0) = 0\n$$\n\nRoots and critical points are different\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows $f$ with turning points aligned at the critical $x$-values where $f'=0$:\n\n$$x=1,\\quad x=2.5,\\quad x=5$$\n\nReading the shape: a local minimum near $x=1$, a local maximum near $x=2.5$, and another local minimum near $x=5$. Between the first min and the max the curve rises, so $f$ is increasing on $(1,2.5)$. An axis value $f(0)=0$ (if present) is only a root; it does not force $f'(0)=0$.",
+    "title_de_existing": "Graph von f: Extremstellen bei x=1, 2.5, 5",
+    "context_de_existing": "Die Figur zeigt $f$. Ihre Wendepunkte liegen bei $x=1$, $x=2{,}5$ und $x=5$ (wo $f'=0$). Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Nahe $x=1$ hat der Graph ein lokales Minimum (tiefster Punkt in einer Umgebung).",
+      "Nahe $x=2{,}5$ hat der Graph ein lokales Maximum.",
+      "Nahe $x=5$ hat der Graph ein lokales Minimum.",
+      "Auf $(1,2{,}5)$ steigt der Graph, also ist $f$ dort steigend.",
+      "Weil $f(0)=0$, muss $f'(0)=0$ gelten."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nLokales Minimum nahe $x=1$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nLokales Maximum nahe $x=2{,}5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nLokales Minimum nahe $x=5$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nZwischen Min und Max steigt die Kurve.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f(0)=0$ erzwingt nicht $f'(0)=0$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Wendepunkte bei $1$ (Min), $2{,}5$ (Max), $5$ (Min). Achsenwert $f(0)=0$ sagt nichts über $f'(0)$."
+  },
+  {
+    "case_id": "MATH 11.128",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Positive bump for f′: two zeros around a hill",
+    "context_en": "The figure shows $f'$: a single hill that crosses the axis twice. Decide TRUE or FALSE.",
+    "statements_en": [
+      "There are two zeros of $f'$ in the window, one left of $x=2$ and one right of $x=2$.",
+      "Between those zeros, $f'>0$, so $f$ is increasing on that middle interval.",
+      "Outside those zeros (still in the window), $f'<0$, so $f$ is decreasing there.",
+      "The maximum height of $f'$ is at $x=2$, near height $4$.",
+      "The maximum of $f'$ at $x=2$ is a local maximum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nThe figure shows $f'$ as a single positive hill. Counting clear axis crossings gives one zero left of $x=2$ and one zero right of $x=2$:\n\n$$\n\\text{two zeros of }f'\\text{, one on each side of }x = 2\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nBetween those two zeros the hill sits above the axis, so the slope of $f$ is positive on the middle interval.\n\n$$\nf'(x)>0\\quad\\text{between the two zeros}\n$$\n\nHence $f$ is increasing on that middle stretch\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nOutside the two zeros, still inside the window, the curve of $f'$ lies below the axis.\n\n$$\nf'(x)<0\\quad\\text{outside the two zeros}\n$$\n\nso $f$ is decreasing on those outer stretches, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nThe top of the hill is at $x=2$. Reading the vertical scale there, the height is near $4$.\n\n$$\nf'(2)\n$$\n\n$$\n4\n$$\n\nso the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nEasy trap: a maximum of the derivative graph is where $f$ climbs most steeply, not where $f$ itself has a local extremum. Local extrema of $f$ occur at zeros of $f'$ that change sign.\n\nA maximum of $f'$ is where $f$ climbs most steeply, not where $f$ itself peaks. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change:\n\n$$\n\\max f'\\text{ at }x = 2\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local max of }f\\text{ at }x = 2\n$$\n\nThe peak of the hill is not a local maximum of $f$\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f'$ as a single positive hill that crosses the axis twice — once left of $x=2$ and once right of $x=2$. Between those zeros the hill sits above the axis; outside them (still in the window) the curve is below. The top of the hill is at\n\n$$x=2\\qquad\\text{with height near }4$$\n\nSign chart:\n\n$$f'<0\\text{ left of the first zero},\\quad f'>0\\text{ between the zeros},\\quad f'<0\\text{ right of the second}$$\n\nso $f$ decreases, then increases, then decreases. The maximum of $f'$ at $x=2$ is where $f$ climbs most steeply; it is not a local maximum of $f$, because peaks of $f$ require zeros of $f'$ with a $+$ to $-$ change.",
+    "title_de_existing": "Positiver Buckel für f′: zwei Nullstellen um einen Hügel",
+    "context_de_existing": "Die Figur zeigt $f'$: einen einzelnen Hügel, der die Achse zweimal kreuzt. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Es gibt zwei Nullstellen von $f'$ im Fenster, eine links von $x=2$ und eine rechts von $x=2$.",
+      "Zwischen diesen Nullstellen gilt $f'>0$, also ist $f$ auf diesem mittleren Intervall steigend.",
+      "Außerhalb dieser Nullstellen (noch im Fenster) gilt $f'<0$, also ist $f$ dort fallend.",
+      "Die maximale Höhe von $f'$ liegt bei $x=2$, nahe Höhe $4$.",
+      "Das Maximum von $f'$ bei $x=2$ ist ein lokales Maximum von $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nZwei Achsenkreuzungen um den Hügel bei $x=2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f'$ dazwischen → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f'$ außen → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPeak von $f'$ bei $x=2$, Höhe etwa $4$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nMaximum von $f'$ ist steilste Steigung von $f$, kein Extremum von $f$ (dort $f'\\neq 0$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Hügel von $f'$ mit zwei Nullstellen: $f$ steigt dazwischen, fällt außen. Peak von $f'$ $\\neq$ Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.129",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "f′ starts at 0, stays non-negative, then flattens",
+    "context_en": "The figure shows $f'$. It starts at the origin, rises, then falls toward the axis from above. Decide TRUE or FALSE.",
+    "statements_en": [
+      "For $x>0$ in the window, $f'$ stays non-negative, so $f$ is increasing on $(0,8)$.",
+      "The steepest climb of $f$ occurs at the peak of $f'$, near $x=2$.",
+      "At $x=0$ one has $f'(0)=0$.",
+      "Because $f'$ approaches $0$ late in the window, $f$ becomes almost flat there.",
+      "A local maximum of $f$ occurs at the peak of $f'$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nThe figure shows $f'$ starting at the origin, rising, then falling back toward the axis from above. For $x>0$ in the window the curve never goes below the axis, so\n\n$$\nf'(x)\\ge 0\\quad\\text{on }(0,8)\n$$\n\nand $f$ is increasing on $(0,8)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nThe steepest climb of $f$ is where $f'$ attains its largest height. On the figure that hump sits near $x=2$:\n\n$$\n\\arg\\max f'\n$$\n\n$$\n2\n$$\n\nso the steepest climb of $f$ occurs near $x=2$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nAt the left edge of the window the graph of $f'$ meets the origin, so its height there is zero.\n\n$$\nf'(0) = 0\n$$\n\nThat is exactly the reading named in the claim\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.\n\nLate in the window the graph of $f'$ falls back toward the axis from above, so the slope of $f$ becomes small and positive:\n\n$$\nf'(x)\\to 0^{+}\\quad\\text{late in the window}\n$$\n\nA tiny positive slope means $f$ rises only gently — almost flat —\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nEasy trap: a maximum of the derivative graph is where $f$ climbs most steeply, not where $f$ itself has a local extremum. Local extrema of $f$ occur at zeros of $f'$ that change sign.\n\nAt the peak of $f'$ one still has $f'>0$, so $f$ is still increasing there. A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change:\n\n$$\nf'>0\\text{ at the peak of }f'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local max of }f\n$$\n\nso the peak of $f'$ is not a local maximum of $f$, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f'$ starting at the origin, rising to a hump, then falling back toward the axis from above while staying non-negative for $x>0$ in the window. So\n\n$$f'(0)=0,\\qquad f'(x)\\ge 0\\text{ on }(0,8)$$\n\nand $f$ is increasing throughout $(0,8)$. The steepest climb of $f$ is at the peak of $f'$, near $x=2$. Late in the window $f'$ is small and positive, so $f$ rises only gently (almost flat). At that peak of $f'$ one still has $f'>0$, so $f$ is still increasing — the peak of $f'$ is not a local maximum of $f$.",
+    "title_de_existing": "f′ startet bei 0, bleibt nichtnegativ, flacht dann ab",
+    "context_de_existing": "Die Figur zeigt $f'$. Sie startet im Ursprung, steigt, fällt dann von oben zur Achse. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Für $x>0$ im Fenster bleibt $f'$ nichtnegativ, also ist $f$ auf $(0,8)$ steigend.",
+      "Der steilste Anstieg von $f$ liegt am Peak von $f'$, nahe $x=2$.",
+      "Bei $x=0$ gilt $f'(0)=0$.",
+      "Weil $f'$ spät im Fenster gegen $0$ geht, wird $f$ dort fast flach.",
+      "Ein lokales Maximum von $f$ liegt am Peak von $f'$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\n$f'\\ge 0$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPeak von $f'$ = steilste Steigung von $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStart im Ursprung: $f'(0)=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKleine positive Steigung → fast flaches $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nPeak von $f'$ ist kein Extremum von $f$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$f'\\ge 0$ auf $(0,8)$ → steigendes $f$. Peak von $f'$ steuert Steilheit, nicht Extrema von $f$."
+  },
+  {
+    "case_id": "MATH 11.130",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Double zero at x=1: does f change monotonicity?",
+    "context_en": "The figure shows $f'$ touching the axis at $x=1$ and crossing at $x=4$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=4$, $f'$ changes from negative to positive, so $f$ has a local minimum at $x=4$.",
+      "On $(1,4)$ the curve is below the axis, so $f$ is decreasing on $(1,4)$.",
+      "On $(0,1)$ the curve is also below the axis (or touches at the end), so $f$ does not switch from increasing to decreasing at $x=1$ in the usual $+$ to $-$ way.",
+      "At $x=2$, $f'$ is negative.",
+      "Touching the axis at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change means $x=1$ need not be a local extremum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo decide whether $f$ has a local minimum at $x=4$, apply the first-derivative test on the figure: you need $f'(4)=0$ together with a sign change from negative to positive across that zero.\n\nThe figure shows $f'$ touching the axis at $x=1$ and crossing at $x=4$. At $x=4$ the curve arrives from below and leaves above.\n\n$$\nf'(4) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 4\n$$\n\nThat is the first-derivative test for a local minimum of $f$ at $x=4$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(1,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nBetween the touch at $x=1$ and the crossing at $x=4$ the curve of $f'$ lies below the axis.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(1,4)\n$$\n\nso $f$ is decreasing on $(1,4)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the open interval $(0,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nAt the touch $x=1$, the curve of $f'$ stays non-positive on both sides in the window — there is no ordinary $+$ to $-$ flip:\n\n$$\nf'\\le 0\\text{ on both sides of }x = 1\\text{ (in view)}\n$$\n\nWithout that sign change, $f$ does not switch from increasing to decreasing at $x=1$ in the usual way\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nThe point $x=2$ lies in the open interval $(1,4)$, where the plotted derivative sits below the axis throughout.\n\n$$\nf'(2)<0\n$$\n\nso $f'$ is negative at $x=2$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nA flat touch of $f'$ at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change fails the first-derivative test:\n\n$$\nf'(1) = 0\\text{ with no sign change}\\nRightarrow\\text{need not be a local extremum of }f\n$$\n\nso $x=1$ need not be a local extremum of $f$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The figure shows $f'$ touching the axis at $x=1$ (a flat contact) and crossing transversally at $x=4$. On both sides of $x=1$ in the window the curve stays non-positive, so there is no ordinary $+$ to $-$ or $-$ to $+$ sign change at the touch. Between $1$ and $4$ the curve is below the axis, and at $x=4$ it flips from negative to positive:\n\n$$f'<0\\text{ on }(1,4),\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$\n\nThus $f$ decreases on $(1,4)$ and has a local minimum at $x=4$. At $x=2$ one reads a negative height. The touch at $x=1$ need not be a local extremum of $f$.",
+    "title_de_existing": "Doppelte Nullstelle bei x=1: ändert f die Monotonie?",
+    "context_de_existing": "Die Figur zeigt $f'$, die die Achse bei $x=1$ berührt und bei $x=4$ kreuzt. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=4$ wechselt $f'$ von negativ zu positiv, also hat $f$ bei $x=4$ ein lokales Minimum.",
+      "Auf $(1,4)$ liegt die Kurve unter der Achse, also ist $f$ auf $(1,4)$ fallend.",
+      "Auf $(0,1)$ liegt die Kurve ebenfalls unter der Achse (oder berührt am Ende), also wechselt $f$ dort nicht von steigend zu fallend.",
+      "Bei $x=2$ ist $f'$ negativ.",
+      "Die Achse bei $x=1$ zu berühren ohne klaren $+\\to -$ oder $-\\to +$-Wechsel bedeutet: $x=1$ muss kein Extremum von $f$ sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nWechsel $-\\to +$ bei $x=4$ → lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $f'$ auf $(1,4)$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nKein Vorzeichenwechsel bei der Berührung $x=1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nUnter der Achse bei $x=2$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBerührung ohne Vorzeichenwechsel → kein garantiertes Extremum.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Kreuzung bei $x=4$ (lokales Min); Berührung bei $x=1$ ohne Vorzeichenwechsel (kein Extremum)."
+  },
+  {
+    "case_id": "MATH 11.131",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Always-positive rising C′",
+    "context_en": "The figure shows marginal cost $C'$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "Throughout the window, $C'>0$, so total cost $C$ is increasing.",
+      "Because $C'$ itself is rising, $C$ is concave up.",
+      "At $x=4$, reading the scale, $C'$ is greater than $2$.",
+      "A local minimum of cost occurs somewhere in $(0,6)$ because $C'$ is positive.",
+      "At $x=0$, $C'$ is about $0.5$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nThe figure shows marginal cost $C'$. Throughout the window the curve stays above the horizontal axis.\n\n$$\nC'(x)>0\\quad\\text{throughout the window}\n$$\n\nPositive marginal cost means total cost $C$ is increasing\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nConcavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.\n\nThe graph of $C'$ itself is rising as $x$ increases, so the second derivative of cost is positive.\n\n$$\nC''(x)>0\n$$\n\nPositive $C''$ means total cost $C$ is concave up\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=4$, reading the shared vertical scale on the graph of marginal cost $C'$, the height is clearly greater than $2$.\n\n$$\nC'(4)>2\n$$\n\nso the claim's scale reading is correct, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nA local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.\n\nA local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:\n\n$$\nC'(x)>0\\quad\\text{on }(0,6)\n$$\n\n$$\n\\text{no critical point of }C\n$$\n\nPositivity of $C'$ only says cost is rising, not that a local minimum occurs\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False.",
+      "**E.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt the left edge $x=0$, reading the scale on the $C'$ curve gives a height of about half a unit.\n\n$$\nC'(0)\n$$\n\n$$\n0.5\n$$\n\nso the statement matches the figure, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows marginal cost $C'$ as a curve that stays strictly above the axis and is itself rising throughout the window. So\n\n$$C'(x)>0\\qquad\\text{and}\\qquad C''(x)>0$$\n\nTotal cost $C$ is therefore increasing and concave up. Reading the scale: at $x=0$ the height is about $0.5$, and at $x=4$ the height is clearly greater than $2$. Because $C'$ never changes from $-$ to $+$, there is no interior local minimum of cost coming from a first-derivative sign change in $(0,6)$.",
+    "title_de_existing": "Stets positives steigendes C′",
+    "context_de_existing": "Die Figur zeigt die Grenzkosten $C'$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Im gesamten Fenster gilt $C'>0$, also sind die Gesamtkosten $C$ steigend.",
+      "Weil $C'$ selbst steigt, ist $C$ konkav nach oben.",
+      "Bei $x=4$ ist $C'$ nach der Skala größer als $2$.",
+      "Ein lokales Kostenminimum liegt irgendwo in $(0,6)$, weil $C'$ positiv ist.",
+      "Bei $x=0$ beträgt $C'$ etwa $0{,}5$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $C'$ → steigendes $C$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSteigendes $C'$ → $C''>0$ → konkav nach oben.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nSkalenablesung: $C'(4)>2$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nPositives $C'$ überall → kein Kostenminimum im Fenster (keine Nullstelle).\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nSkalenablesung: $C'(0)\\approx 0{,}5$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$C'>0$ und steigend → $C$ steigt und ist konkav nach oben. Kein Kostenminimum ohne Nullstelle von $C'$."
+  },
+  {
+    "case_id": "MATH 11.132",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Cubic f′: read zeros and signs from coordinates",
+    "context_en": "The figure shows $f'$ on $[0,6]$. Marked zeros are at $x=1$, $x=2.5$, and $x=5$. Decide TRUE or FALSE using the coordinates on the graph.",
+    "statements_en": [
+      "At $x=2$, the graph of $f'$ is above the axis, so $f'(2)>0$ and $f$ is increasing at $x=2$.",
+      "At $x=4$, one has $f'(4)<0$, so $f$ is decreasing at $x=4$.",
+      "Because $f'$ changes from positive to negative at $x=2.5$, the function $f$ has a local maximum at $x=2.5$.",
+      "Because $f'$ changes from negative to positive at $x=1$, the function $f$ has a local minimum at $x=1$.",
+      "The value $f'(0)$ is positive."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nMarked zeros of $f'$ sit at $x=1$, $2.5$, and $5$. Between $1$ and $2.5$ the curve is above the axis, and $x=2$ lies in that interval.\n\n$$\nf'(2)>0\n$$\n\nso $f$ is increasing at $x=2$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nBetween the marked zeros at $x=2.5$ and $x=5$ the curve of $f'$ sits below the axis, and the sample point $x=4$ lies in that interval.\n\n$$\nf'(4)<0\n$$\n\nA negative derivative means $f$ is decreasing at $x=4$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\n$$\nx = 2.5\n$$\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo decide whether $f$ has a local maximum at $x=2.5$, apply the first-derivative test on the figure of $f'$: you need $f'(2.5)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nAt $x=2.5$ the figure shows $f'$ changing from positive (on the left) to negative (on the right).\n\n$$\nf'(2.5) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 2.5\n$$\n\nThat is a local maximum of $f$ at $x=2.5$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nTo decide whether $f$ has a local minimum at $x=1$, apply the first-derivative test on the figure: you need $f'(1)=0$ together with a sign change from negative to positive across that zero.\n\nAt $x=1$ the figure shows $f'$ changing from negative to positive.\n\n$$\nf'(1) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 1\n$$\n\nThat is a local minimum of $f$ at $x=1$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nRead the sign of $f'$ at the stated point carefully against the axis. If the curve sits below the axis there, the derivative is negative, not positive.\n\nAt the left edge of the window, left of the first zero $x=1$, the curve of $f'$ lies below the axis.\n\n$$\nf'(0)<0\n$$\n\nso $f'(0)$ is not positive, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 1\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows $f'$ on $[0,6]$ with marked zeros at\n\n$$x=1,\\quad x=2.5,\\quad x=5$$\n\nReading signs from axis position: below the axis at $x=0$; above between $1$ and $2.5$ (so at $x=2$); below between $2.5$ and $5$ (so at $x=4$); and changing accordingly at the zeros. Sign changes:\n\n$$f'\\text{ changes }-\\to+\\text{ at }x=1\\qquad\\text{(local min of }f\\text{)}$$\n\n$$f'\\text{ changes }+\\to-\\text{ at }x=2.5\\qquad\\text{(local max of }f\\text{)}$$\n\nIn particular $f'(0)<0$, not positive.",
+    "title_de_existing": "Kubisches f′: Nullstellen und Vorzeichen aus Koordinaten lesen",
+    "context_de_existing": "Die Figur zeigt $f'$ auf $[0,6]$. Markierte Nullstellen liegen bei $x=1$, $x=2{,}5$ und $x=5$. Entscheide Wahr oder Falsch anhand der Koordinaten.",
+    "statements_de_existing": [
+      "Bei $x=2$ liegt der Graph von $f'$ über der Achse, also $f'(2)>0$ und $f$ steigt bei $x=2$.",
+      "Bei $x=4$ gilt $f'(4)<0$, also fällt $f$ bei $x=4$.",
+      "Weil $f'$ bei $x=2{,}5$ von positiv zu negativ wechselt, hat $f$ bei $x=2{,}5$ ein lokales Maximum.",
+      "Weil $f'$ bei $x=1$ von negativ zu positiv wechselt, hat $f$ bei $x=1$ ein lokales Minimum.",
+      "Der Wert $f'(0)$ ist positiv."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜber der Achse bei $x=2$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nUnter der Achse bei $x=4$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel $+\\to -$ bei $2{,}5$ → lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nWechsel $-\\to +$ bei $1$ → lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nNach der Figur liegt $f'(0)$ nicht über der Achse (bzw. ist nicht positiv). Die Behauptung ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Nullstellen bei $1$, $2{,}5$, $5$. Vorzeichenwechsel steuern Extrema von $f$. $f'(0)$ ist nicht positiv."
+  },
+  {
+    "case_id": "MATH 11.133",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Skewed f′: peak height and zero at x=4",
+    "context_en": "The figure shows $f'$. It crosses the axis at $x=4$ and has a single positive hump to the left of that zero. Decide TRUE or FALSE.",
+    "statements_en": [
+      "On $(0,4)$ one has $f'>0$, so $f$ is increasing on $(0,4)$.",
+      "On $(4,8)$ one has $f'<0$, so $f$ is decreasing on $(4,8)$.",
+      "The function $f$ has a local maximum at $x=4$.",
+      "The steepest positive slope of $f$ in the window occurs where $f'$ attains its maximum value (near $x=1$), not at $x=4$.",
+      "Reading the scale, $f'(0)$ is about $4$, while $f'(6)$ is negative but greater than $-1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the open interval $(0,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nThe figure shows $f'$ with a single positive hump left of the zero at $x=4$. On $(0,4)$ that hump sits above the axis.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(0,4)\n$$\n\nso $f$ is increasing on $(0,4)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(4,8)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nRight of the zero at $x=4$ the skewed $f'$ curve lies below the horizontal axis, so the slope of $f$ is negative on that stretch.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(4,8)\n$$\n\nHence $f$ is decreasing on $(4,8)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo decide whether $f$ has a local maximum at $x=4$, apply the first-derivative test on the figure of $f'$: you need $f'(4)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nAt $x=4$ the skewed $f'$ curve crosses from above the axis to below:\n\n$$\nf'(4) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 4\n$$\n\nThat is the first-derivative test for a local maximum of $f$ at $x=4$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nThe steepest positive slope of $f$ is where $f'$ is largest among its positive values. On the figure that maximum of $f'$ sits near $x=1$, while at the critical point one has\n\n$$\nf'(4) = 0\n$$\n\nso the steepest climb is near $x=1$, not at $x=4$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nReading the scale at the left edge, the height of $f'$ is about $4$. At $x=6$, which is right of the zero, the height is negative but greater than $-1$.\n\n$$\nf'(0)\n$$\n\n$$\n4\n$$\n\n$$\n-1<f'(6)<0\n$$\n\nso both readings match the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows $f'$ with a single positive hump left of a zero at $x=4$, then negative heights to the right. Sign chart:\n\n$$f'>0\\text{ on }(0,4),\\qquad f'<0\\text{ on }(4,8)$$\n\nso $f$ increases then decreases, and the $+$ to $-$ crossing at $x=4$ is a local maximum of $f$. The steepest positive slope of $f$ is where $f'$ itself is largest — the top of the hump near $x=1$, not at the critical point $x=4$ where $f'=0$. Scale readings:\n\n$$f'(0)\\approx 4,\\qquad f'(6)\\in(-1,0)$$",
+    "title_de_existing": "Schiefes f′: Gipfelhöhe und Nullstelle bei x=4",
+    "context_de_existing": "Die Figur zeigt $f'$. Sie kreuzt die Achse bei $x=4$ und hat einen einzelnen positiven Buckel links von dieser Nullstelle. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Auf $(0,4)$ gilt $f'>0$, also ist $f$ auf $(0,4)$ steigend.",
+      "Auf $(4,8)$ gilt $f'<0$, also ist $f$ auf $(4,8)$ fallend.",
+      "Die Funktion $f$ hat bei $x=4$ ein lokales Maximum.",
+      "Die steilste positive Steigung von $f$ im Fenster liegt dort, wo $f'$ ihr Maximum erreicht.",
+      "Nach der Skala beträgt $f'(0)$ etwa $4$, während $f'(6)$ negativ, aber größer als $-1$ ist."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel $+\\to -$ bei $x=4$ → lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nMaximum von $f'$ = steilste positive Steigung von $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nSkalenablesung bestätigt die genannten Höhen.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$f'>0$ auf $(0,4)$, $f'<0$ auf $(4,8)$, lokales Maximum bei $x=4$."
+  },
+  {
+    "case_id": "MATH 11.134",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Odd f′: values at x=±1 and the zero at the origin",
+    "context_en": "The figure shows $f'$. It passes through the origin, is negative for $x<0$, and positive for $x>0$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$ one has $f'(0)=0$, and $f'$ changes from negative to positive, so $f$ has a local minimum at $x=0$.",
+      "On $(-3,0)$ the function $f$ is decreasing, and on $(0,3)$ it is increasing.",
+      "Reading the scale, $|f'(1)|$ is about $4$, and $f'(-1)\\approx -4$.",
+      "The highest point of the graph of $f'$ on $(0,3)$ occurs near $x=1$, so that is where $f$ rises most steeply on the right.",
+      "Because $f'(0)=0$, the point $x=0$ is an inflection point of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTo decide whether $f$ has a local minimum at $x=0$, apply the first-derivative test on the figure: you need $f'(0)=0$ together with a sign change from negative to positive across that zero.\n\nThe figure shows $f'$ passing through the origin, negative on the left and positive on the right. At $x=0$ the height is zero and the sign flips from $-$ to $+$.\n\n$$\nf'(0) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 0\n$$\n\nThat is the first-derivative test for a local minimum of $f$ at $x=0$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nOn $(-3,0)$ the plotted derivative sits below the axis, and on $(0,3)$ it sits above:\n\n$$\nf'<0\\text{ on }(-3,0)\n$$\n\n$$\nf'>0\\text{ on }(0,3)\n$$\n\nso $f$ decreases on the left and increases on the right, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nThe lobes of $f'$ peak near $x=\\pm 1$. Reading the shared vertical scale, the absolute height there is about $4$.\n\n$$\n|f'(1)|\n$$\n\n$$\n4\n$$\n\n$$\nf'(-1)\n$$\n\n$$\n-4\n$$\n\nso both readings match the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.\n\nOn $(0,3)$ the graph of $f'$ reaches its highest point near $x=1$:\n\n$$\n\\arg\\max_{x\\in(0,3)} f'(x)\n$$\n\n$$\n1\n$$\n\nThat largest positive height is where $f$ rises most steeply on the right\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nAn axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.\n\nA zero of $f'$ with a sign change is a local extremum of $f$ (here a local minimum at $x=0$). Inflection points of $f$ track sign changes of $f''$ — extrema of the graph of $f'$ — near $\\pm 1$:\n\n$$\nf'(0) = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{inflection of }f\\text{ at }x = 0\n$$\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows an odd-looking $f'$ through the origin: negative for $x<0$ and positive for $x>0$, with\n\n$$f'(0)=0\\qquad\\text{and a }-\\to+\\text{ sign change}$$\n\nso $f$ has a local minimum at $x=0$, decreases on $(-3,0)$, and increases on $(0,3)$. The lobes peak near height $4$ in absolute value at $x=\\pm 1$:\n\n$$f'(1)\\approx 4,\\qquad f'(-1)\\approx -4$$\n\nThe highest point of $f'$ on $(0,3)$ is near $x=1$, where $f$ rises most steeply on the right. Inflection points of $f$ track sign changes of $f''$ (extrema of the graph of $f'$), near $\\pm 1$ — not the critical point $x=0$ itself.",
+    "title_de_existing": "Ungerades f′: Werte bei x=±1 und Nullstelle im Ursprung",
+    "context_de_existing": "Die Figur zeigt $f'$. Sie geht durch den Ursprung, ist negativ für $x<0$ und positiv für $x>0$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ gilt $f'(0)=0$, und $f'$ wechselt von negativ zu positiv, also hat $f$ bei $x=0$ ein lokales Minimum.",
+      "Auf $(-3,0)$ ist $f$ fallend, auf $(0,3)$ steigend.",
+      "Nach der Skala beträgt $|f'(1)|$ etwa $4$, und $f'(-1)\\approx -4$.",
+      "Der höchste Punkt des Graphen von $f'$ auf $(0,3)$ liegt nahe $x=1$, also steigt $f$ dort am stärksten.",
+      "Weil $f'(0)=0$, ist der Punkt $x=0$ ein Wendepunkt von $f$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nWechsel $-\\to +$ bei $0$ → lokales Minimum von $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nVorzeichen von $f'$ steuern die Monotonie.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nUngerade Form: $|f'(1)|\\approx|f'(-1)|\\approx 4$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPeak von $f'$ auf $(0,3)$ nahe $x=1$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f'=0$ allein macht keinen Wendepunkt — Wendepunkte brauchen Wechsel der Konkavität ($f''$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Ungerade $f'$: lokales Minimum bei $0$. $f'=0$ erzwingt keinen Wendepunkt."
+  },
+  {
+    "case_id": "MATH 11.135",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Product-form f′ with zeros at −2, 1, and 2",
+    "context_en": "The figure shows $f'$ with zeros at $x=-2$, $x=1$, and $x=2$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, the graph is above the axis, so $f'(0)>0$ and $f$ is increasing at $x=0$.",
+      "On $(1,2)$ the graph of $f'$ is below the axis, so $f$ is decreasing on $(1,2)$.",
+      "The function $f$ has a local maximum at $x=1$ and a local minimum at $x=2$.",
+      "At $x=3$, reading the scale, $f'(3)$ is greater than $4$.",
+      "Because there are three zeros, $f''(x)=0$ at each of $x=-2$, $1$, and $2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nZeros of $f'$ are marked at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis, and $x=0$ lies in that interval.\n\n$$\nf'(0)>0\n$$\n\nso $f$ is increasing at $x=0$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the open interval $(1,2)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nBetween the zeros $1$ and $2$ the curve of $f'$ dips below the axis.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(1,2)\n$$\n\nso $f$ is decreasing on $(1,2)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo decide whether $f$ has a local maximum at $x=1$, apply the first-derivative test on the figure of $f'$: you need $f'(1)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nAt $x=1$ the figure shows $f'$ changing from $+$ to $-$, which is a local maximum of $f$. At $x=2$ it changes from $-$ to $+$, which is a local minimum of $f$.\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 1\n$$\n\n$$\n-\\to+\\text{ at }x = 2\n$$\n\nso both classifications match the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nRight of $x=2$ the curve of $f'$ rises above the axis again. Reading the vertical scale at $x=3$, the height is clearly greater than $4$.\n\n$$\nf'(3)>4\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nZeros of $f'$ are critical points of $f$, not zeros of $f''$. Zeros of $f''$ line up with extrema of the graph of $f'$:\n\n$$\nf'(x) = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\nf''(x) = 0\n$$\n\nThree zeros of $f'$ do not force $f''=0$ at those same abscissae\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "The figure shows $f'$ with three zeros at\n\n$$x=-2,\\quad x=1,\\quad x=2$$\n\nBetween $-2$ and $1$ the curve is above the axis (so at $x=0$); between $1$ and $2$ it dips below; beyond $x=2$ it is positive again. Sign changes:\n\n$$+\\to-\\text{ at }x=1\\qquad\\text{(local max of }f\\text{)},\\qquad -\\to+\\text{ at }x=2\\qquad\\text{(local min of }f\\text{)}$$\n\nAt $x=3$ the scale reading is greater than $4$. Zeros of $f'$ are about extrema of $f$, not zeros of $f''$; zeros of $f''$ mark extrema of the graph of $f'$.",
+    "title_de_existing": "Produktform f′ mit Nullstellen bei −2, 1 und 2",
+    "context_de_existing": "Die Figur zeigt $f'$ mit Nullstellen bei $x=-2$, $x=1$ und $x=2$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ liegt der Graph über der Achse, also $f'(0)>0$ und $f$ steigt bei $x=0$.",
+      "Auf $(1,2)$ liegt der Graph von $f'$ unter der Achse, also fällt $f$ auf $(1,2)$.",
+      "Die Funktion $f$ hat bei $x=1$ ein lokales Maximum und bei $x=2$ ein lokales Minimum.",
+      "Bei $x=3$ ist $f'(3)$ nach der Skala größer als $4$.",
+      "Weil es drei Nullstellen gibt, gilt $f''(x)=0$ bei jedem der $x=-2$, $1$ und $2$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜber der Achse bei $x=0$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nUnter der Achse auf $(1,2)$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel bei $1$ ($+\\to -$) und bei $2$ ($-\\to +$).\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSkalenablesung: $f'(3)>4$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nNullstellen von $f'$ erzwingen nicht Nullstellen von $f''$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Nullstellen bei $-2$, $1$, $2$. Vorzeichenwechsel steuern Extrema. $f'=0\\nRightarrow f''=0$."
+  },
+  {
+    "case_id": "MATH 11.136",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Odd f′ with even f″ on one plane",
+    "context_en": "Brown is $f'$ and green is $f''$ on shared axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, brown is $0$ and green is positive (near $8$ on the scale).",
+      "Because green is positive near $x=0$, brown is increasing through the origin.",
+      "The green curve is zero near $x=\\pm 1$, which matches the peak and the lowest point of the brown curve.",
+      "For $x>1$, green is negative, so brown is falling on $(1,3)$.",
+      "Brown being positive on $(0,3)$ means $f$ is increasing on $(0,3)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$ on shared axes. At $x=0$ the brown curve meets the origin while the green curve sits above the axis near height $8$.\n\n$$\nf'(0) = 0\n$$\n\n$$\nf''(0)\n$$\n\n$$\n8>0\n$$\n\nso both readings match the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nGreen is $f''$. Near $x=0$ that curve is positive, so the slope of brown is rising:\n\n$$\nf''(0)>0\n$$\n\n$$\nf'\\text{ increasing through }x = 0\n$$\n\nPositive $f''$ means brown climbs through the origin\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nExtrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros near $x=\\pm 1$ line up with the peak and the lowest point of brown:\n\n$$\nf''(\\pm 1)\n$$\n\n$$\n0\\quad\\text{at extrema of }f'\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = \\pm 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nFor $x>1$ the green curve lies below the axis, so $f''<0$ on $(1,3)$:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(1,3)\n$$\n\nNegative $f''$ means the brown graph of $f'$ is falling on that interval\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.\n\nOn $(0,3)$ the brown curve ($f'$) stays above the axis, so the slope of $f$ is positive throughout that interval.\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(0,3)\n$$\n\nPositive $f'$ means $f$ is increasing on $(0,3)$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$ on shared axes. At the origin brown vanishes while green is positive near height $8$:\n\n$$f'(0)=0,\\qquad f''(0)\\approx 8>0$$\n\nso brown is increasing through the origin. Green is zero near $x=\\pm 1$, lining up with the peak and the lowest point of brown (extrema of $f'$ where $f''=0$). For $x>1$ green is negative, so brown falls on $(1,3)$. Wherever brown is positive on $(0,3)$, the function $f$ itself is increasing.",
+    "title_de_existing": "Ungerades f′ mit geradem f″ in einer Ebene",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$ auf gemeinsamen Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ ist Braun $0$ und Grün positiv (nahe $8$ auf der Skala).",
+      "Weil Grün nahe $x=0$ positiv ist, steigt Braun durch den Ursprung.",
+      "Die grüne Kurve ist nahe $x=\\pm 1$ null, was zum Peak und zum tiefsten Punkt der braunen Kurve passt.",
+      "Für $x>1$ ist Grün negativ, also fällt Braun auf $(1,3)$.",
+      "Dass Braun auf $(0,3)$ positiv ist, bedeutet: $f$ ist auf $(0,3)$ steigend."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen: $f'(0)=0$, $f''(0)>0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNullstellen von $f''$ an Extrema von $f'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nNegatives $f''$ → fallendes $f'$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Braun $f'$, Grün $f''$: Vorzeichen von Grün steuern, ob Braun steigt/fällt; Vorzeichen von Braun steuern Monotonie von $f$."
+  },
+  {
+    "case_id": "MATH 11.137",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "f and f′ together: check consistency at x=0 and x=1",
+    "context_en": "Brown is $f$ and green is $f'$ on one shared plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, brown has a local minimum with value $0$, and green crosses the axis there.",
+      "On $(0,3)$, green is positive, matching a rising brown curve.",
+      "On $(-3,0)$, green is negative, matching a falling brown curve.",
+      "At $x=1$, green is near height $4$, so the slope of brown at $x=1$ is about $4$.",
+      "The highest point of green on $(0,3)$ is a local maximum of brown."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f$ and green is $f'$ on one plane. At $x=0$ the brown curve has a local lowest point of height $0$, and the green curve crosses the axis there.\n\n$$\nf(0) = 0\n$$\n\n$$\nf'(0) = 0\n$$\n\nso the local minimum of $f$ lines up with a zero of $f'$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(0,3)$ the green curve ($f'$) sits above the axis:\n\n$$\nf'(x)>0\\quad\\text{for }x\\in(0,3)\n$$\n\nA positive slope matches the rising brown curve of $f$ on that stretch\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(-3,0)$ the green curve ($f'$) sits below the axis:\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(-3,0)\n$$\n\nA negative slope matches the falling brown curve of $f$ on that stretch\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nAt $x=1$ the height of the green curve is the value of $f'(1)$. Reading the shared scale there gives about $4$.\n\n$$\nf'(1)\n$$\n\n$$\n4\n$$\n\nso the slope of brown at $x=1$ is about $4$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe highest point of green is a maximum of $f'$, which is where $f$ climbs most steeply — not where $f$ itself has a local maximum:\n\n$$\n\\max f'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local max of }f\n$$\n\nLocal maxima of brown need zeros of green with a $+$ to $-$ change\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f$ and green is $f'$ on one shared plane. At $x=0$ brown has a local minimum of height $0$ while green crosses the axis there:\n\n$$f(0)=0,\\qquad f'(0)=0$$\n\nOn $(0,3)$ green is positive and brown rises; on $(-3,0)$ green is negative and brown falls. At $x=1$ the height of green is about $4$, so the slope of brown is about $4$. The highest point of green on $(0,3)$ is where $f$ is steepest — not a local maximum of brown; local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change.",
+    "title_de_existing": "f und f′ zusammen: Konsistenz bei x=0 und x=1 prüfen",
+    "context_de_existing": "Braun ist $f$ und Grün ist $f'$ auf einer gemeinsamen Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ hat Braun ein lokales Minimum mit Wert $0$, und Grün kreuzt dort die Achse.",
+      "Auf $(0,3)$ ist Grün positiv, passend zu einer steigenden braunen Kurve.",
+      "Auf $(-3,0)$ ist Grün negativ, passend zu einer fallenden braunen Kurve.",
+      "Bei $x=1$ liegt Grün nahe Höhe $4$, also beträgt die Steigung von Braun bei $x=1$ etwa $4$.",
+      "Der höchste Punkt von Grün auf $(0,3)$ ist ein lokales Maximum von Braun."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nKonsistenz: lokales Min von $f$ mit $f'=0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f'$ ↔ steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f'$ ↔ fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nHöhe von $f'$ = Steigung von $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nMaximum von $f'$ ist steilste Steigung, kein Extremum von $f$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Braun $f$, Grün $f'$: Vorzeichen und Nullstellen von Grün müssen zur Form von Braun passen. Peak von $f'\\neq$ Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.138",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "P′ versus Q′: compare at x=2 and x=5",
+    "context_en": "Brown is $P'$ and green is $Q'$ for two different quantities, on the same axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=2$, brown is positive while green is also positive.",
+      "At $x=5$, green is zero (a marked-style crossing of the green curve), while brown is negative.",
+      "Brown has a single hump and two zeros near $x=0$ and $x=5$ after the $+1$ shift — from the figure, brown crosses once early and once late.",
+      "On $(2.5,5)$, green is negative, so $Q$ is decreasing there.",
+      "The larger of $P'(2)$ and $Q'(2)$ is brown's value if brown sits above green at $x=2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the horizontal axis, so both derivatives are positive there.\n\n$$\nP'(2)>0\n$$\n\n$$\nQ'(2)>0\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=5$ the green curve meets the axis in a clear crossing, while the brown curve sits below the axis.\n\n$$\nQ'(5) = 0\n$$\n\n$$\nP'(5)<0\n$$\n\nso green is zero and brown is negative at $x=5$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nCounting brown's clear axis crossings on the shared plane gives two zeros — one early in the window and one late:\n\n$$\nP'\\text{ has two zeros (single hump)}\n$$\n\nThat matches the claim that brown has a single hump with two zeros\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 0\n$$\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the open interval $(2.5,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nOn $(2.5,5)$ the green curve ($Q'$) lies below the axis, so the derivative of $Q$ is negative there.\n\n$$\nQ'(x)<0\\quad\\text{for }x\\in(2.5,5)\n$$\n\nNegative $Q'$ means $Q$ is decreasing on that interval\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn a shared vertical scale, the higher curve at a fixed $x$ has the larger derivative value. If brown sits above green at $x=2$:\n\n$$\nP'(2)>Q'(2)\n$$\n\nso the larger of the two is brown's value, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the axis. Green has a zero at $x=5$, while brown is already negative there. Brown shows a single hump with two axis crossings — one early and one late in the window. On $(2.5,5)$ green is negative, so $Q$ is decreasing there. On a shared vertical scale, whichever curve sits higher at a fixed $x$ has the larger derivative value; at $x=2$, if brown sits above green then $P'(2)>Q'(2)$.",
+    "title_de_existing": "P′ versus Q′: Vergleich bei x=2 und x=5",
+    "context_de_existing": "Braun ist $P'$ und Grün ist $Q'$ für zwei verschiedene Größen auf denselben Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=2$ ist Braun positiv und Grün ebenfalls positiv.",
+      "Bei $x=5$ ist Grün null (markierte Kreuzung der grünen Kurve), während Braun negativ ist.",
+      "Braun hat einen einzelnen Buckel und zwei Nullstellen nahe $x=0$ und $x=5$ nach der $+1$-Verschiebung — aus der Figur ist Braun links der rechten Nullstelle positiv.",
+      "Auf $(2{,}5;5)$ ist Grün negativ, also fällt $Q$ dort.",
+      "Der größere Wert von $P'(2)$ und $Q'(2)$ ist der Braunwert, wenn Braun bei $x=2$ über Grün liegt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide positiv bei $x=2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGrün null, Braun negativ bei $x=5$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nForm von Braun: Buckel mit zwei Nullstellen.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nNegatives $Q'$ → fallendes $Q$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nHöhere Kurve bei $x=2$ = größerer Ableitungswert.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Vergleiche $P'$ und $Q'$ an den genannten Stellen. Vorzeichen steuern Monotonie der jeweiligen Größe."
+  },
+  {
+    "case_id": "MATH 11.139",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style f′ with its linear f″ on one plane",
+    "context_en": "Brown is $f'$ and green is $f''$ on shared axes. Decide TRUE or FALSE from the figure.",
+    "statements_en": [
+      "At $x=4$, brown is positive while green is negative.",
+      "Green crosses zero at $x=3$, which lines up with the peak of brown.",
+      "On $(3,6)$, green is negative, so brown is falling — and $f$ is concave down.",
+      "At $x=2$, brown is positive, so $f$ is increasing at $x=2$.",
+      "Because green is a straight line, $f$ cannot have a local maximum in the window."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$. At $x=4$, reading both heights on the shared scale, brown sits above the axis while green sits below it.\n\n$$\nf'(4)>0\n$$\n\n$$\nf''(4)<0\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 4\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe peak of the brown curve ($f'$) lines up with a zero of the green curve ($f''$). On the figure that alignment is at $x=3$:\n\n$$\nf''(3) = 0\\quad\\text{under }\\max f'\n$$\n\nso green crosses zero under the peak of brown, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nConcavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.\n\nOn $(3,6)$ the green curve ($f''$) is negative:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(3,6)\n$$\n\nNegative second derivative means brown ($f'$) is falling and the level function $f$ is concave down on that stretch\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nAt $x=2$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.\n\n$$\nf'(2)>0\n$$\n\nPositive $f'$ means $f$ is increasing at $x=2$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nEasy trap: the figure shows a derivative as a straight line. Integrating a nonconstant line produces a quadratic, so the original function need not itself be linear.\n\nGreen being a straight line only says $f''$ is linear; it does not prevent $f'$ from changing sign. On the figure brown still changes from $+$ to $-$ at a later zero near $x=5$:\n\n$$\nf'\\text{ changes }+\\to-\\text{ near }x = 5\n$$\n\nso $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown is $f'$ and green is $f''$ (a straight line) on shared axes. Green crosses zero at $x=3$, lining up with the peak of brown. Sign/height readings:\n\n$$f'(4)>0,\\qquad f''(4)<0$$\n\nso at $x=4$ brown is still positive while green is negative. On $(3,6)$ green is negative, so brown is falling and $f$ is concave down. At $x=2$ brown is positive, so $f$ is increasing there. Even though green is linear, brown still changes $+$ to $-$ at a later zero (near $x=5$), so $f$ can and does have a local maximum in the window.",
+    "title_de_existing": "Prüfungsartiges f′ mit linearem f″ in einer Ebene",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$ auf gemeinsamen Achsen. Entscheide Wahr oder Falsch anhand der Figur.",
+    "statements_de_existing": [
+      "Bei $x=4$ ist Braun positiv, während Grün negativ ist.",
+      "Grün kreuzt bei $x=3$ null, was zum Peak von Braun passt.",
+      "Auf $(3,6)$ ist Grün negativ, also fällt Braun — und $f$ ist konkav nach unten.",
+      "Bei $x=2$ ist Braun positiv, also steigt $f$ bei $x=2$.",
+      "Weil Grün eine Gerade ist, kann $f$ im Fenster kein lokales Maximum haben."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen bei $x=4$: $f'>0$, $f''<0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNullstelle von $f''$ am Peak von $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f''$ → fallendes $f'$ und konkaves $f$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nLineares $f''$ schließt lokale Maxima von $f$ nicht aus — dort braucht man Vorzeichenwechsel von $f'$.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Braun $f'$, Grün $f''$. Lineares $f''$ verhindert keine Extrema von $f$."
+  },
+  {
+    "case_id": "MATH 11.140",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Bump f′ with f″: concavity flip at the peak",
+    "context_en": "Brown is $f'$ and green is $f''$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=2$, brown is near its maximum and green is about $0$.",
+      "On $(0,2)$, green is positive, so brown is rising.",
+      "On $(2,5)$, green is negative, so brown is falling.",
+      "Wherever brown is positive, $f$ is increasing.",
+      "Green being zero at $x=2$ means $f$ has a local maximum at $x=2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nBrown is $f'$ and green is $f''$. At $x=2$ the brown curve is near its maximum height, and the green curve is about zero there.\n\n$$\nf''(2)\n$$\n\n$$\n0\n$$\n\nso the peak of $f'$ lines up with a zero of $f''$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(0,2)$ the green curve ($f''$) sits above the axis:\n\n$$\nf''(x)>0\\quad\\text{for }x\\in(0,2)\n$$\n\nPositive $f''$ means the brown graph of $f'$ is rising on that interval\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(2,5)$ the green curve ($f''$) sits below the axis:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(2,5)\n$$\n\nNegative $f''$ means the brown graph of $f'$ is falling on that interval\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nWherever brown sits above the axis one has $f'>0$:\n\n$$\nf'>0\\quad\n$$\n\n$$\n\\quad f\\text{ increasing}\n$$\n\nA positive derivative means $f$ is increasing on that stretch, so wherever brown is positive, $f$ is increasing, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nThe claim asserts a local maximum of $f$ at $x=2$. That requires a zero of $f'$ with a $+$ to $-$ sign change — check whether the figure actually supplies both ingredients, or whether something else is being misread.\n\nGreen is $f''$. A zero of $f''$ marks an extremum of $f'$ (here the peak of brown), not a critical point of $f$:\n\n$$\nf''(2) = 0\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\text{local max of }f\\text{ at }x = 2\n$$\n\nCritical points of $f$ are zeros of brown\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$. At $x=2$ brown is near its maximum while green is about $0$ — a peak of $f'$ aligned with a zero of $f''$. Sign chart for green:\n\n$$f''>0\\text{ on }(0,2),\\qquad f''<0\\text{ on }(2,5)$$\n\nso brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ is increasing. A zero of green at $x=2$ is about an extremum of $f'$, not a critical point of $f$; critical points of $f$ are zeros of brown.",
+    "title_de_existing": "Buckel-f′ mit f″: Krümmungswechsel am Gipfel",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=2$ liegt Braun nahe seinem Maximum und Grün ist etwa $0$.",
+      "Auf $(0,2)$ ist Grün positiv, also steigt Braun.",
+      "Auf $(2,5)$ ist Grün negativ, also fällt Braun.",
+      "Wo immer Braun positiv ist, steigt $f$.",
+      "Dass Grün bei $x=2$ null ist, bedeutet: $f$ hat bei $x=2$ ein lokales Maximum."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nPeak von $f'$ mit $f''\\approx 0$ bei $x=2$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f''$ → fallendes $f'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f'$ → steigendes $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\n$f''=0$ am Peak von $f'$ ist ein Wendepunkt-Kandidat von $f'$, kein Extremum von $f$ (dort typisch $f'\\neq 0$).\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Grün steuert, ob Braun steigt/fällt. Peak von $f'$ mit $f''=0$ ist kein lokales Maximum von $f$."
+  },
+  {
+    "case_id": "MATH 11.141",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "xe^(−x/2) family: where f′ peaks",
+    "context_en": "Brown is $f'$ and green is $f''$ on one plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "Green crosses from positive to negative near $x=2$, under the peak of brown.",
+      "On $(0,2)$, green is positive, so brown is rising.",
+      "On $(2,8)$, green is negative, so brown is falling toward the axis.",
+      "At $x=6$, brown is still positive but small, so $f$ is still increasing slowly.",
+      "Because brown never goes negative in the window, $f$ has no local maximum in $(0,8)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$. Near $x=2$ the green curve crosses from positive to negative under the peak of brown:\n\n$$\nf''\\text{ changes }+\\to-\\text{ near }x = 2\\quad\\text{(under }\\max f'\\text{)}\n$$\n\nThat alignment of a $+$ to $-$ change of $f''$ with a peak of $f'$ is exactly what the claim describes\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(0,2)$ the green curve ($f''$) is positive:\n\n$$\nf''(x)>0\\quad\\text{for }x\\in(0,2)\n$$\n\nPositive $f''$ means brown ($f'$) is rising on that interval, climbing toward its peak near $x=2$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nOn $(2,8)$ the green curve ($f''$) is negative:\n\n$$\nf''(x)<0\\quad\\text{for }x\\in(2,8)\n$$\n\nNegative $f''$ means brown is falling after its peak, toward the axis from above\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhere the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.\n\nAt $x=6$ the brown curve is still above the axis but close to it:\n\n$$\nf'(6)>0\\quad\\text{and small}\n$$\n\nA small positive slope means $f$ is still increasing, but slowly\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 6\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change. In this window brown never goes negative:\n\n$$\nf'(x)\\ge 0\\quad\\text{on }(0,8)\n$$\n\nso there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Green crosses from positive to negative near $x=2$, under the peak of brown. So brown rises on $(0,2)$ and falls toward the axis on $(2,8)$, while staying non-negative in the window. At $x=6$ brown is still positive but small, so $f$ is still increasing slowly. Because brown never goes negative in $(0,8)$, there is no $+$ to $-$ zero of $f'$ and hence no local maximum of $f$ in that open interval.",
+    "title_de_existing": "Familie xe^(−x/2): wo f′ maximal wird",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $f''$ auf einer Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Grün wechselt nahe $x=2$ von positiv zu negativ, unter dem Peak von Braun.",
+      "Auf $(0,2)$ ist Grün positiv, also steigt Braun.",
+      "Auf $(2,8)$ ist Grün negativ, also fällt Braun zur Achse.",
+      "Bei $x=6$ ist Braun noch positiv, aber klein, also steigt $f$ noch langsam.",
+      "Weil Braun im Fenster nie negativ wird, hat $f$ in $(0,8)$ kein lokales Maximum."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNullstelle von $f''$ unter dem Peak von $f'$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nNegatives $f''$ → fallendes $f'$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nKleines positives $f'$ → langsamer Anstieg von $f$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nKein Vorzeichenwechsel von $f'$ zu negativ → kein lokales Maximum von $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "$f'$ bleibt positiv: $f$ steigt durchgehend, Peak von $f'$ ohne Extremum von $f$."
+  },
+  {
+    "case_id": "MATH 11.142",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Compare P′ and C′ heights at x=1 and x=5",
+    "context_en": "Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=1$, brown is above green.",
+      "At $x=5$, brown is below the axis while green is still positive.",
+      "Wherever brown is positive, a little more output raises profit.",
+      "Green staying positive means total cost keeps rising throughout the window.",
+      "The two curves meet at the profit-maximising output."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is marginal profit $P'$ and green is marginal cost $C'$. At $x=1$, reading the shared scale, brown sits near height $2$ while green sits near height $1$, so brown is above green.\n\n$$\nP'(1)>C'(1)\n$$\n\nand the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=5$ the brown curve has already crossed below the axis while the green curve remains above it.\n\n$$\nP'(5)<0\n$$\n\n$$\nC'(5)>0\n$$\n\nso brown is below the axis and green is still positive, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nWherever brown sits above the axis one has $P'>0$:\n\n$$\nP'>0\\quad\n$$\n\n$$\n\\quad\\text{a little more output raises profit}\n$$\n\nPositive marginal profit means expanding output raises profit there\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nGreen staying positive throughout the window means $C'>0$ everywhere shown:\n\n$$\nC'(x)>0\\quad\n$$\n\n$$\n\\quad C\\text{ increasing}\n$$\n\nPositive marginal cost means total cost $C$ keeps rising throughout the window\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nA profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:\n\n$$\nP' = C'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\nP'\\text{ changes }+\\to-\n$$\n\nMeeting of the two curves is not the profit-peak test\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At $x=1$ brown sits above green (heights near $2$ and $1$). At $x=5$ brown has crossed below the axis while green remains positive. Wherever brown is positive, a little more output raises profit; green staying positive means total cost keeps rising throughout the window. A profit-maximising output is where brown crosses from $+$ to $-$ (a zero of $P'$), which is not the same as the place where brown equals green.",
+    "title_de_existing": "P′ und C′ bei x=1 und x=5 vergleichen",
+    "context_de_existing": "Braun ist Grenzgewinn $P'$ und Grün sind Grenzkosten $C'$ auf gemeinsamen Achsen. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=1$ liegt Braun über Grün.",
+      "Bei $x=5$ liegt Braun unter der Achse, während Grün noch positiv ist.",
+      "Wo immer Braun positiv ist, erhöht etwas mehr Output den Gewinn.",
+      "Dass Grün positiv bleibt, bedeutet: die Gesamtkosten steigen im gesamten Fenster weiter.",
+      "Die beiden Kurven treffen sich am gewinnmaximierenden Output."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nAblesen: $P'(1)>C'(1)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nBei $x=5$: $P'<0$, $C'>0$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nPositives $P'$ → Expansion erhöht Gewinn.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $C'$ → steigende Gesamtkosten.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nGewinnmaximum braucht $P'=0$, nicht $P'=C'$. ($P'=R'-C'=0\\Leftrightarrow R'=C'$, nicht $P'=C'$.)\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "$P'$ und $C'$ vergleichen. Gewinnmaximum bei $P'=0$ (bzw. $R'=C'$), nicht dort wo $P'$ und $C'$ sich schneiden."
+  },
+  {
+    "case_id": "MATH 11.143",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two first derivatives: opposite advice at x=0",
+    "context_en": "Brown is $f'$ and green is $g'$ on one plane. Decide TRUE or FALSE.",
+    "statements_en": [
+      "At $x=0$, brown is negative while green is also negative.",
+      "Brown has three zeros in the window; green has two.",
+      "At $x=3$, brown is negative.",
+      "On an interval where brown is above green and both are negative, $f$ and $g$ both decrease, and $f$ decreases less steeply when brown is less negative.",
+      "Equal numbers of turning points for $f$ and $g$ follow automatically from the figure."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nBrown is $f'$ and green is $g'$ on one shared plane. At $x=0$ compare both colours against the horizontal axis — read each height separately so the two curves are not mixed up.\n\nBoth curves sit below the axis at that left-hand sample point:\n\n$$\nf'(0)<0\n$$\n\n$$\ng'(0)<0\n$$\n\nSo brown is negative and green is also negative at $x=0$. Both $f$ and $g$ are therefore decreasing at $x=0$. The dual sign reading matches the claim.\n\n$$\nx = 0\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nCount clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), careful not to double-count a single crossing or to confuse the two colours.\n\n$$\nf'\\text{ has three zeros}\n$$\n\n$$\ng'\\text{ has two zeros}\n$$\n\nThose counts come from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly.\n\nSo the statement is True.",
+      "**C.** → True\n\nAt $x=3$, locate brown between its middle and right zeros on the shared plane. On that open stretch the brown curve ($f'$) has already crossed down through the axis and has not yet crossed back up, so its height relative to the axis is negative:\n\n$$\nf'(3)<0\n$$\n\nBrown is therefore negative at $x=3$, and $f$ is decreasing there. That is a direct height reading of brown at the stated $x$-value, matching the claim.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nWhen both derivatives are negative, both $f$ and $g$ are decreasing. Steepness depends on magnitude: if brown sits above green while both remain below the axis, then brown is less negative than green —\n\n$$\nf'<0,\\quad g'<0,\\quad f'>g'\\quad\n$$\n\n$$\n\\quad |f'|<|g'|\n$$\n\nso the downward slope of $f$ is gentler than that of $g$. In other words $f$ decreases less steeply than $g$ on such an interval. That is exactly the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nTurning points of $f$ and $g$ arise from zeros of $f'$ and $g'$ that change sign. The figure does not supply equal zero counts to begin with: brown has three zeros and green has two,\n\n$$\n3\\neq 2\n$$\n\nso $f$ and $g$ need not have the same number of turning points. Equal turning-point counts do not follow automatically from the figure when the zero counts already differ — the premise the claim needs is simply not there —.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ both curves sit below the axis, so both derivatives are negative there. Counting axis crossings in the window: brown has three zeros and green has two. At $x=3$, between brown's middle and right zeros, brown sits below the axis, hence $f'(3)<0$. On an interval where both curves are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply because brown is less negative ($|f'|<|g'|$). Because the zero counts already differ ($3$ versus $2$), equal numbers of turning points for $f$ and $g$ do not follow from the figure.",
+    "title_de_existing": "Zwei erste Ableitungen: gegenteiliger Rat bei x=0",
+    "context_de_existing": "Braun ist $f'$ und Grün ist $g'$ auf einer Ebene. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Bei $x=0$ ist Braun negativ und Grün ebenfalls negativ.",
+      "Braun hat drei Nullstellen im Fenster; Grün hat zwei.",
+      "Bei $x=3$ ist Braun negativ.",
+      "Auf einem Intervall, wo Braun über Grün liegt und beide negativ sind, fallen $f$ und $g$ beide, und $f$ fällt langsamer.",
+      "Gleiche Anzahl Wendepunkte für $f$ und $g$ folgt automatisch aus der Figur."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBeide negativ bei $x=0$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNullstellen zählen: Braun $3$, Grün $2$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBraun unter der Achse bei $x=3$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nBeide negativ → beide fallend; höhere (weniger negative) Ableitung = langsameres Fallen.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nVerschiedene Nullstellenzahlen → verschiedene Extremumzahlen — nicht automatisch gleich.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Zwei Ableitungen vergleichen: Vorzeichen, Nullstellenzahl und relative Höhe."
+  },
+  {
+    "case_id": "MATH 11.144",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Four zeros of f′: count extrema of f from the figure",
+    "context_en": "The figure shows $f'$ with four axis crossings in $[0,6]$, near $x=0.5$, $2$, $3.5$, and $5.5$. Decide TRUE or FALSE.",
+    "statements_en": [
+      "The function $f$ has four local extrema in this window, one at each zero of $f'$ that changes sign.",
+      "On the open interval between $x=2$ and $x=3.5$, the graph of $f'$ is below the axis, so $f$ is decreasing there.",
+      "At $x=1$, the graph of $f'$ is above the axis, so $f'(1)>0$.",
+      "A local minimum of the graph of $f'$ (a lowest point of the brown curve) is automatically a local minimum of $f$.",
+      "Between consecutive zeros of $f'$, the sign of $f'$ does not change, so $f$ is strictly monotonic on each such open interval."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nThe figure shows $f'$ with four transversal axis crossings in $[0,6]$, near $x=0.5$, $2$, $3.5$, and $5.5$. Each sign-changing zero produces a local extremum of $f$:\n\n$$\n4\\text{ sign-changing zeros of }f'\n$$\n\n$$\n4\\text{ local extrema of }f\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nWhere the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.\n\nBetween the zeros near $x=2$ and $x=3.5$ the curve of $f'$ dips below the axis.\n\n$$\nf'(x)<0\\quad\\text{between those zeros}\n$$\n\nso $f$ is decreasing on that open interval, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 2\n$$\n\n$$\nx = 3.5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nBetween the zeros near $x=0.5$ and $x=2$ the curve of $f'$ sits above the axis, and the sample point $x=1$ lies in that interval.\n\n$$\nf'(1)>0\n$$\n\nso the derivative is positive at $x=1$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\n$$\nx = 0.5\n$$\n\n$$\nx = 2\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nA local minimum of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — typically an inflection story for $f$, not a local minimum of $f$:\n\n$$\n\\min f'\n$$\n\n$$\n\\nRightarrow\n$$\n\n$$\n\\min f\n$$\n\nLocal minima of $f$ need zeros of $f'$ with a $-$ to $+$ change\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\nSo the statement is False.",
+      "**E.** → True\n\nCount clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.\n\nA continuous $f'$ cannot change sign without passing through zero. Between consecutive zeros the sign of $f'$ is therefore constant:\n\n$$\nf'\\text{ constant sign between consecutive zeros}\n$$\n\nso $f$ is strictly monotonic on each such open interval, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near\n\n$$x=0.5,\\ 2,\\ 3.5,\\ 5.5$$\n\nEach sign-changing zero gives a local extremum of $f$, so $f$ has four local extrema in the window. Between consecutive zeros the sign of $f'$ is constant, so $f$ is strictly monotonic on each such open interval. In particular, between $x=2$ and $x=3.5$ the curve dips below the axis ($f$ decreasing), and at $x=1$ (between $0.5$ and $2$) the curve is above ($f'>0$). A lowest point of the graph of $f'$ is an extremum of $f'$ (where $f''=0$), an inflection story for $f$ — not automatically a local minimum of $f$.",
+    "title_de_existing": "Vier Nullstellen von f′: Extrema von f aus der Figur zählen",
+    "context_de_existing": "Die Figur zeigt $f'$ mit vier Achsenkreuzungen in $[0,6]$, nahe $x=0{,}5$, $2$, $3{,}5$ und $5{,}5$. Entscheide Wahr oder Falsch.",
+    "statements_de_existing": [
+      "Die Funktion $f$ hat vier lokale Extrema in diesem Fenster, eines an jeder Nullstelle von $f'$, die das Vorzeichen wechselt.",
+      "Auf dem offenen Intervall zwischen $x=2$ und $x=3{,}5$ liegt der Graph von $f'$ unter der Achse, also fällt $f$ dort.",
+      "Bei $x=1$ liegt der Graph von $f'$ über der Achse, also $f'(1)>0$.",
+      "Ein lokales Minimum des Graphen von $f'$ (tiefster Punkt der braunen Kurve) ist automatisch ein lokales Minimum von $f$.",
+      "Zwischen aufeinanderfolgenden Nullstellen von $f'$ wechselt das Vorzeichen von $f'$ nicht, also ist $f$ auf jedem solchen Teilintervall streng monoton."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nVier Vorzeichenwechsel → vier lokale Extrema von $f$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nNegatives $f'$ → fallendes $f$.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nÜber der Achse bei $x=1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nExtremum von $f'$ ist nicht automatisch Extremum von $f$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nKonstantes Vorzeichen von $f'$ → strenge Monotonie von $f$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Vier Nullstellen mit Vorzeichenwechsel → vier Extrema von $f$. Extrema von $f'$ sind keine Extrema von $f$."
+  },
+  {
+    "case_id": "MATH 11.145",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Two zeros of f′ with a decaying envelope",
+    "context_en": "The figure shows $f'$ with zeros at $x=1$ and $x=3$. Decide TRUE or FALSE from the coordinates.",
+    "statements_en": [
+      "On $(1,3)$ the graph of $f'$ is below the axis, so $f$ is decreasing on $(1,3)$.",
+      "At $x=1$, $f'$ changes from positive to negative, so $f$ has a local maximum at $x=1$.",
+      "At $x=3$, $f'$ changes from negative to positive, so $f$ has a local minimum at $x=3$.",
+      "At $x=5$, $|f'(5)|$ is smaller than $|f'(2)|$ because of the decay of the envelope.",
+      "Since the curve's amplitude is smaller near $x=3$ than near $x=2$, the point $x=3$ cannot be a local extremum of $f$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the open interval $(1,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.\n\nZeros of $f'$ are marked at $x=1$ and $x=3$. Between them the curve sits below the axis.\n\n$$\nf'(x)<0\\quad\\text{for }x\\in(1,3)\n$$\n\nso $f$ is decreasing on $(1,3)$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**B.** → True\n\nTo decide whether $f$ has a local maximum at $x=1$, apply the first-derivative test on the figure of $f'$: you need $f'(1)=0$ together with a sign change from positive (above the axis) to negative (below the axis).\n\nLeft of $x=1$ the curve is above the axis; just right of $x=1$ it is below.\n\n$$\nf'(1) = 0\n$$\n\n$$\nf'\\text{ changes }+\\to-\\text{ at }x = 1\n$$\n\nThat is a local maximum of $f$ at $x=1$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nTo decide whether $f$ has a local minimum at $x=3$, apply the first-derivative test on the figure: you need $f'(3)=0$ together with a sign change from negative to positive across that zero.\n\nAt $x=3$ the figure shows the opposite flip: the curve arrives from below and leaves above.\n\n$$\nf'(3) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 3\n$$\n\nThat is a local minimum of $f$ at $x=3$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nThe claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.\n\nThe envelope of the oscillation decays as $x$ grows. Comparing absolute heights, the dip near $x=2$ is larger than the height at $x=5$.\n\n$$\n|f'(5)|<|f'(2)|\n$$\n\nso $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nCompare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.\n\nA local extremum of $f$ is decided by a sign change of $f'$ at a zero, not by the size of nearby amplitudes. Even when $|f'|$ is smaller near $x=3$ than near $x=2$, the $-$ to $+$ crossing at $x=3$ still produces a local minimum of $f$:\n\n$$\nf'(3) = 0\n$$\n\n$$\nf'\\text{ changes }-\\to+\\text{ at }x = 3\n$$\n\nAmplitude decay does not cancel that test\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\n$$\nx = 2\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure shows $f'$ with zeros at $x=1$ and $x=3$ and a decaying envelope. Sign chart:\n\n$$f'>0\\text{ left of }1,\\qquad f'<0\\text{ on }(1,3),\\qquad f'>0\\text{ right of }3$$\n\nso $f$ has a local maximum at $x=1$ ($+$ to $-$) and a local minimum at $x=3$ ($-$ to $+$), and decreases on $(1,3)$. Later amplitudes are smaller: $|f'(5)|$ is smaller than $|f'(2)|$. A smaller amplitude near $x=3$ does not cancel the sign change — $x=3$ is still a local extremum of $f$.",
+    "title_de_existing": "Zwei Nullstellen von f′ mit abklingender Hülle",
+    "context_de_existing": "Die Figur zeigt $f'$ mit Nullstellen bei $x=1$ und $x=3$. Entscheide Wahr oder Falsch anhand der Koordinaten.",
+    "statements_de_existing": [
+      "Auf $(1,3)$ liegt der Graph von $f'$ unter der Achse, also fällt $f$ auf $(1,3)$.",
+      "Bei $x=1$ wechselt $f'$ von positiv zu negativ, also hat $f$ bei $x=1$ ein lokales Maximum.",
+      "Bei $x=3$ wechselt $f'$ von negativ zu positiv, also hat $f$ bei $x=3$ ein lokales Minimum.",
+      "Bei $x=5$ ist $|f'(5)|$ kleiner als $|f'(2)|$ wegen des Abklingens der Hülle.",
+      "Weil die Amplitude der Kurve nahe $x=3$ kleiner ist als nahe $x=2$, kann $x=3$ kein lokales Extremum von $f$ sein."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nNegatives $f'$ auf $(1,3)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nWechsel $+\\to -$ bei $1$ → lokales Maximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nWechsel $-\\to +$ bei $3$ → lokales Minimum.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAbklingende Hülle → kleinere Beträge weiter rechts.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nAmplitude steuert nicht, ob ein Vorzeichenwechsel ein Extremum erzeugt.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Nullstellen bei $1$ (Max) und $3$ (Min). Kleinere Amplitude löscht keine Extrema."
+  },
+  {
+    "case_id": "MATH 11.146",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "f′ and f″ together: signs and a concrete x=3",
+    "context_en": "The figure plots $f'$ (brown) and $f''$ (green) on the **same** coordinate plane. Decide TRUE or FALSE using the shared axes.",
+    "statements_en": [
+      "At $x=3$, the brown curve ($f'$) is below the axis, so $f'(3)<0$.",
+      "At $x=3$, the green curve ($f''$) is below the axis, so $f''(3)<0$ and $f$ is concave down at $x=3$.",
+      "Near $x=1.5$, $f'$ has a local maximum (highest point of the brown curve there), and there $f''$ is about $0$.",
+      "Wherever the green curve is positive, the brown curve is rising.",
+      "The brown curve has three zeros while the green curve has only two zeros in the window."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown is $f'$ and green is $f''$ on the same plane. At $x=3$, which lies between brown's later zeros, the brown curve sits below the axis.\n\n$$\nf'(3)<0\n$$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**B.** → True\n\nConcavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.\n\nAt the same abscissa $x=3$ the green curve also sits below the axis:\n\n$$\nf''(3)<0\n$$\n\nNegative second derivative means $f$ is concave down at $x=3$\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**C.** → True\n\nThis claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.\n\nNear $x=1.5$ the brown curve has a local highest point, and the green curve is about zero there.\n\n$$\nf''(1.5)\n$$\n\n$$\n0\n$$\n\nso the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 1.5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nGreen is $f''$. Wherever green is positive one has $f''>0$:\n\n$$\nf''>0\\quad\n$$\n\n$$\n\\quad f'\\text{ rising}\n$$\n\nso the brown graph of $f'$ is rising on that stretch, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+      "**E.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nCounting clear axis crossings in the window:\n\n$$\nf'\\text{ has three zeros}\n$$\n\n$$\nf''\\text{ has two zeros}\n$$\n\nThose counts match the claim exactly\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nThe figure plots $f'$ (brown) and $f''$ (green) on the same plane. Brown has three zeros and green has two in the window. At $x=3$ (between brown's middle zeros) brown is below the axis, and green is also below:\n\n$$f'(3)<0,\\qquad f''(3)<0$$\n\nso $f$ is decreasing and concave down at $x=3$. Near $x=1.5$ brown has a local maximum aligned with a green height about $0$. Wherever green is positive, brown is rising as a function of $x$.",
+    "title_de_existing": "f′ und f″ zusammen: Vorzeichen und konkretes x=3",
+    "context_de_existing": "Die Figur zeigt $f'$ (braun) und $f''$ (grün) auf derselben Koordinatenebene. Entscheide Wahr oder Falsch anhand der gemeinsamen Achsen.",
+    "statements_de_existing": [
+      "Bei $x=3$ liegt die braune Kurve ($f'$) unter der Achse, also $f'(3)<0$.",
+      "Bei $x=3$ liegt die grüne Kurve ($f''$) unter der Achse, also $f''(3)<0$ und $f$ ist bei $x=3$ konkav nach unten.",
+      "Nahe $x=1{,}5$ hat $f'$ ein lokales Maximum (höchster Punkt der braunen Kurve dort), und dort ist $f''$ null.",
+      "Wo immer die grüne Kurve positiv ist, steigt die braune Kurve.",
+      "Die braune Kurve hat drei Nullstellen, während die grüne Kurve im Fenster nur zwei Nullstellen hat."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nBraun unter der Achse bei $x=3$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGrün unter der Achse → konkav nach unten.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nPeak von $f'$ mit $f''=0$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nPositives $f''$ → steigendes $f'$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nNullstellen zählen: Braun $3$, Grün $2$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gemeinsame Ebene: Vorzeichen von $f'$ und $f''$ bei $x=3$; Peak von $f'$ mit $f''=0$; unterschiedliche Nullstellenzahlen."
+  }
+]

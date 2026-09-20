@@ -1,0 +1,136 @@
+CASE MATH 11.80
+ANSWER [true, true, true, false, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Both outlets sold $Q=40$ with the same $R^{\prime}(40)=3$. The café also posts $P^{\prime}(40)=1$, so
+$$C^{\prime}(40)=R^{\prime}(40)-P^{\prime}(40)=3-1=2.$$
+The kiosk posts $C^{\prime}(40)=5$ instead, so
+$$P^{\prime}(40)=R^{\prime}(40)-C^{\prime}(40)=3-5=-2.$$
+A small extra item therefore raises profit at the café ($P^{\prime}=1>0$) and lowers it at the kiosk ($P^{\prime}=-2<0$). Same $Q$ and same $R^{\prime}$ do not force the same $C^{\prime}$. The café's rate $P^{\prime}(40)=1$ is not its profit level $P(40)$. Café: $P'=1$, $R'=3$ imply $C'=2$ (expand). Kiosk: $C'=5$, $R'=3$ imply $P'=-2$ (do not expand). Same $R'$ does not force same $C'$ or same $P$.
+
+=== A ===
+**A.** → True
+
+For the café, $P^{\prime}(40)=R^{\prime}(40)-C^{\prime}(40)$ gives
+
+$$
+1 = 3-C^{\prime}(40)
+$$
+
+$$
+C^{\prime}(40) = 2
+$$
+
+The café's implied marginal cost is $2$
+
+Two of the three rates determine the third through $P^{\prime}=R^{\prime}-C^{\prime}$; here the café's missing piece is $C^{\prime}=2$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C'(40) = 2
+$$
+
+$$
+P^{\prime}(40) = R^{\prime}(40)-C^{\prime}(40)
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+For the kiosk,
+
+$$
+P^{\prime}(40) = R^{\prime}(40)-C^{\prime}(40)
+$$
+
+$$
+P^{\prime}(40) = 3-5
+$$
+
+$$
+3 - 5 = -2
+$$
+
+$$
+P^{\prime}(40) = -2 = -2
+$$
+
+$$
+P^{\prime}(40) = -2
+$$
+
+The kiosk's implied marginal profit is $-2$
+
+The kiosk's missing piece is the profit slope: $P^{\prime}=3-5=-2$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+The café has $P^{\prime}(40)=1>0$, so a small extra item raises café profit.
+
+The kiosk has $P^{\prime}(40)=-2<0$, and a small extra item lowers kiosk profit
+
+Opposite signs of $P^{\prime}$ mean opposite expand-or-not advice despite the shared $R^{\prime}(40)=3$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\prime}(40) = 1>0
+$$
+
+$$
+P^{\prime}(40) = -2<0
+$$
+
+$$
+R^{\prime}(40) = 3
+$$
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+Same $R^{\prime}(40)$ and same $Q$ do not force the same cost slope.
+
+The recovered values are already different: $C^{\prime}(40)=2$ at the café versus $C^{\prime}(40)=5$ at the kiosk
+
+The recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\prime}$ never forced them to match.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → False
+
+$P^{\prime}(40)=1$ is a rate of change of profit.
+
+The height $P(40)$ of today's profit was never posted and need not equal $1$
+
+A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\prime}(40) = 1
+$$
+
+$$
+P'(40) = 1
+$$
+
+which does not match the claim.
+
+So the statement is False.
+

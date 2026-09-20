@@ -1,0 +1,151 @@
+CASE MATH 11.71
+ANSWER [true, true, true, false, true]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+For $0\le x\le 8$ utility is $U(x)=10x-\dfrac{1}{2}x^{2}$, so
+$$U^{\prime}(x)=10-x\qquad(x<8).$$
+At $x=6$ one has $U^{\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence
+$$U^{\prime}(x)=0\qquad(x>8).$$
+The level $U(8)=48$ is total utility at eight hours, not the contribution of the eighth hour alone. Average utility at $x=12$ is
+$$\dfrac{U(12)}{12}=\dfrac{48}{12}=4.$$ For $x<8$, $U^{\prime}=10-x>0$ at $x=6$; for $x>8$, $U^{\prime}=0$. The stock $U(8)=48$ is not the eighth hour's contribution.
+
+=== A ===
+**A.** → True
+
+On the rising piece, $U(x)=10x-\dfrac{1}{2}x^{2}$. Differentiating gives
+
+$$
+U^{\prime}(x) = 10-x
+$$
+
+$$
+\text{for }x<8
+$$
+
+For $x<8$, marginal utility is $U^{\prime}(x)=10-x$
+
+Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U'(x) = 10-x
+$$
+
+$$
+U(x) = 10x-\dfrac{1}{2}x^{2}
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+At $x=6$,
+
+$$
+U^{\prime}(6) = 10-6
+$$
+
+$$
+10 - 6 = 4
+$$
+
+$$
+U^{\prime}(6) = 4 = 4
+$$
+
+$$
+U^{\prime}(6) = 4>0
+$$
+
+A positive derivative means a little extra leisure still raises satisfaction at $x=6$
+
+At six hours the student is still on the rising piece of $U$, so a little more leisure still helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
+
+$$
+U^{\prime}(x) = 0
+$$
+
+$$
+\text{for }x>8
+$$
+
+Marginal utility is therefore $0$ beyond eight hours
+
+A flat utility function has zero slope: further leisure past eight hours is satiation in this model.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+$U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
+
+Approaching $x=8$ from the left,
+
+$$
+U^{\prime}(8^{-}) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+U^{\prime}(8^{-}) = 2 = 2
+$$
+
+$$
+U^{\prime}(8^{-}) = 2
+$$
+
+The eighth hour adds about $2$ units of utility, not $48$
+
+Total utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → True
+
+For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
+
+$$
+\dfrac{U(12)}{12} = \dfrac{48}{12}
+$$
+
+$$
+\dfrac{U(12)}{12} = 4
+$$
+
+Average utility at $x=12$ equals $4$
+
+Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+x = 12
+$$
+
+which matches the claim.
+
+So the statement is True.
+

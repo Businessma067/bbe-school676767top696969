@@ -1,0 +1,186 @@
+[
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.33",
+    "title": "Übungstabelle zum Marktanteil (15/100/30)",
+    "context": "Die folgende Übungstabelle wendet die Formeln aus Tab. 5 des Lehrbuchs an. Es handelt sich um ein Übungsbeispiel, nicht um eine amtliche Marktstatistik. Ein österreichischer Fahrradhersteller A beobachtet den wertmäßigen Markt.\n\n| Größe | Mio. Euro |\n| --- | ---: |\n| Marktvolumen | 100 |\n| Umsatz Unternehmen A | 15 |\n| Umsatz größter Mitbewerber | 30 |\n\nBewerten Sie die folgenden Aussagen zu absolutem und relativem Marktanteil:",
+    "statements": [
+      "Der absolute Marktanteil von Unternehmen A beträgt 15 Prozent.",
+      "Der relative Marktanteil von Unternehmen A beträgt 0,5.",
+      "Unternehmen A ist Marktführer, weil der relative Marktanteil größer als eins ist.",
+      "Der relative Marktanteil entsteht, indem man den Umsatz von A durch das Marktvolumen teilt.",
+      "Weil der relative Marktanteil kleiner als eins ist, ist A nicht der Marktführer."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Fünfzehn durch hundert, dann mal hundert. Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an. Formel nach Tab. 5: Unternehmensumsatz × 100 / Marktvolumen. Aus der Übungstabelle eingesetzt: 15 × 100 / 100 = 1500 / 100 = 15. A hält also 15 Prozent des wertmäßigen Ist-Marktes von 100 Mio. Euro. Der größte Mitbewerber mit 30 gehört nicht in diese Rechnung. Wer 15 durch 30 teilt, wechselt bereits zur relativen Kennzahl und verfehlt die 15 Prozent. Probe: 15 Prozent von 100 sind genau 15, die Tabellenzeile schließt.\n\nDie Aussage ist wahr.",
+      "Fünfzehn steht über dreißig. Der relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größten Mitbewerbers. Formel: Unternehmensumsatz / Umsatz des größten Mitbewerbers. Einsetzen: 15 / 30 = 0,5. Das ist ein Verhältnis, kein Prozent am Gesamtmarkt. 0,5 heißt: A setzt halb so viel um wie der Stärkste. Die 15 Prozent absolut ersetzen diese Relation nicht, weil der Nenner ein anderer ist. 30 / 15 = 2 wäre der Vorsprung des Rivalen, nicht der Wert für A. Tab. 5 trennt die beiden Nenner bewusst: Volumen gegen Rivalenumsatz.\n\nDie Aussage ist wahr.",
+      "Führerschaft hängt an der Schwelle eins. Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist. Hier gilt 15 / 30 = 0,5, und 0,5 ist kleiner als eins. A liegt hinter dem größten Mitbewerber, obwohl 15 Prozent am Volumen schon ein nennenswerter Brocken sind. Die Behauptung, der relative Anteil sei größer als eins, verdreht die Tabelle. Marktführer wäre, wer mehr als 30 umsetzte. 15 Prozent absolut und Führerschaft sind zwei verschiedene Urteile. Die Eins prüft nur den Vergleich 15 gegen 30.\n\nDie Aussage ist falsch.",
+      "Hundert im Nenner wäre die absolute Formel. Relativ heißt: eigener Umsatz geteilt durch den Umsatz des größten Mitbewerbers, hier 15 / 30 = 0,5. 15 / 100 = 0,15 bzw. 15 Prozent ist der absolute Marktanteil. Wer das Marktvolumen in den Nenner der relativen Kennzahl schiebt, vertauscht Tab. 5. Dann verschwindet der Vergleich mit dem Rivalen, und die Führerschaftsschwelle eins verliert ihren Sinn. 15 geteilt durch 100 kann 0,5 nicht ergeben. Die Tabelle liefert 30 als den richtigen relativen Nenner.\n\nDie Aussage ist falsch.",
+      "Rückstand folgt aus einem halben Verhältnis. Relativ = 15 / 30 = 0,5. 0,5 liegt unter eins, also Rückstand gegenüber dem Größten, nicht Führerschaft. Die 15 Prozent absolut beschreiben nur den Brocken am Volumen von 100. Beide Kennzahlen stehen nebeneinander: absolut 15 Prozent, relativ 0,5. Nur die relative Zahl entscheidet über den Marktführer im Sinne des Buchs. Wäre der eigene Umsatz 31 bei einem Rivalen von 30, gälte 31 / 30 > 1 und damit Führerschaft, unabhängig davon, ob absolut 15 oder 31 Prozent anfallen.\n\nNote: Absolut 15 Prozent und relativ 0,5 können zusammenfallen. Die eine Zahl ersetzt die andere nicht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.34",
+    "title": "Potenzial und Volumen in der Übungstabelle",
+    "context": "Die Zahlen stammen aus einem Übungsbeispiel und sind keine Buchstatistik. Ein Hersteller von Alltagsrädern stellt Markt- und Unternehmenskennzahlen in Stück gegenüber.\n\n| Kennzahl | Stück |\n| --- | ---: |\n| Marktpotenzial | 80000 |\n| Marktvolumen | 48000 |\n| Verkaufsvolumen Unternehmen A | 6000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Marktpotenzial von 80000 Stück ist die maximal mögliche Absatzmenge des Produkts.",
+      "Das Marktvolumen von 48000 Stück ist die tatsächlich verkaufte Menge des Produkts.",
+      "Der Markt ist beinahe gesättigt, weil das Marktvolumen nahe am Marktpotenzial liegt.",
+      "Das Verkaufsvolumen von A in Höhe von 6000 Stück ist dasselbe wie das Marktvolumen.",
+      "Zwischen Potenzial und Volumen bleiben 32000 Stück Spielraum, es könnte also noch mehr verkauft werden."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Achtzigtausend markiert die Obergrenze. Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes. Es macht deutlich, wie groß der Markt wäre, wenn alle Personen und Unternehmen, die ein Bedürfnis haben, das mit dem Produkt erfüllt werden könnte, tatsächlich kauften. 80000 ist deshalb keine Ist-Menge, sondern das gedachte Maximum. Die 48000 darunter zeigen, dass dieses Maximum noch nicht ausgeschöpft ist. Wären Potenzial und Volumen gleich, gäbe es keinen Rest. Hier bleibt 80000 − 48000 = 32000. Die Zeile Verkaufsvolumen 6000 ändert die Definition des Marktpotenzials nicht.\n\nDie Aussage ist wahr.",
+      "Achtundvierzigtausend ist der Ist-Absatz aller Anbieter. Das Marktvolumen ist die tatsächlich verkaufte Menge des Produkts. Es zählt, was wirklich abgesetzt wurde, nicht was maximal möglich wäre. 48000 liegt klar unter 80000. Wer die 48000 als Potenzial liest, vertauscht Ist und Obergrenze und kann Sättigung nicht mehr erkennen. Die 6000 von A sind nur ein Teil dieses Volumens, nicht seine Definition. Probe: 6000 ist kleiner als 48000, also kann 48000 nicht der Absatz einer einzelnen Firma sein.\n\nDie Aussage ist wahr.",
+      "Nähe zur Obergrenze liegt hier nicht vor. Sättigung tritt ein, wenn das Marktvolumen nahe am Marktpotenzial liegt und kaum mehr verkauft werden könnte. Rechnung: 48000 / 80000 = 0,6, also 60 Prozent der Obergrenze. Die Lücke beträgt 80000 − 48000 = 32000 Stück. Das ist kein beinahe ausgeschöpfter Markt. Die Tabelle beschreibt einen ungesättigten Markt mit deutlichem Restspielraum, nicht den Grenzfall knapper Restkapazität. Bei 78000 von 80000 wäre die Buchformel der Nähe erfüllt, bei 48000 nicht. 32000 zusätzliche Stück sind mehr als das heutige Verkaufsvolumen von A.\n\nDie Aussage ist falsch.",
+      "Sechstausend ist nur der Absatz von A. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein Produkt oder eine Produktgruppe. Das Marktvolumen ist der Absatz aller Anbieter zusammen, hier 48000. 6000 ist ein Teil davon, nicht die Summe. Wer Unternehmensabsatz und Marktvolumen gleichsetzt, macht aus einer Firma den ganzen Markt. Mengenmäßig läge der absolute Marktanteil von A bei 6000 × 100 / 48000 = 12,5 Prozent, was nur Sinn hat, wenn 6000 und 48000 verschiedene Größen bleiben.\n\nDie Aussage ist falsch.",
+      "Differenz zeigt ungenutzten Raum. Marktpotenzial minus Marktvolumen = 80000 − 48000 = 32000. Solange diese Lücke besteht, könnten noch weitere Käufe stattfinden, ohne dass schon alle Bedarfsträger kaufen. Sättigung wäre erst gegeben, wenn 48000 nahe an 80000 heranrückte. Die 32000 Stück sind genau der Spielraum, den die Buchunterscheidung von Potenzial und Volumen sichtbar macht. Das Verkaufsvolumen von A (6000) kann in diesem ungesättigten Markt noch wachsen, ohne dass dafür schon neue Modelle nötig wären. 32000 Rest gegen 48000 Ist ist eine weite, keine enge Lücke.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.35",
+    "title": "Beinahe gesättigter Markt in Zahlen",
+    "context": "Übungsbeispiel, keine reale Statistik. Ein regionaler Markt für Citybikes wird wertmäßig beschrieben.\n\n| Kennzahl | Mio. Euro |\n| --- | ---: |\n| Marktpotenzial | 50 |\n| Marktvolumen | 48 |\n| Umsatz Unternehmen A | 8 |\n| Umsatz größter Mitbewerber | 12 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Weil das Marktvolumen mit 48 nahe am Marktpotenzial von 50 liegt, ist der Markt beinahe gesättigt.",
+      "In diesem Markt könnte kaum mehr verkauft werden, solange Potenzial und Bedürfniskreis unverändert bleiben.",
+      "Der absolute Marktanteil von A beträgt 16 Prozent, gerechnet als 8 × 100 / 50.",
+      "Der relative Marktanteil von A beträgt 8 / 12, also zwei Drittel.",
+      "Gesättigte Märkte lassen sich nach dem Lehrtext nicht mehr öffnen, neue Modelle oder neue Käuferschichten ändern daran nichts."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Achtundvierzig sitzt dicht unter fünfzig. Ist das Marktvolumen nahe am Marktpotenzial, bedeutet das, dass der Markt beinahe gesättigt ist. Rechnung: 48 / 50 = 0,96, also 96 Prozent der Obergrenze. Die Restlücke beträgt 50 − 48 = 2 Mio. Euro. Fast alle, die ein erfüllbares Bedürfnis haben, kaufen bereits. Die Tabelle erfüllt damit die Buchbedingung der Nähe, nicht den ungesättigten Fall mit weiter Lücke. Die Umsätze 8 und 12 erklären die Aufteilung des Ist-Marktes, nicht die Sättigung selbst.\n\nDie Aussage ist wahr.",
+      "Kaum noch zusätzlicher Absatz im bisherigen Markt. Bei beinahe ausgeschöpftem Potenzial bleibt wenig Raum, weitere Mengen an dieselben Bedarfsträger zu verkaufen. 50 − 48 = 2 Mio. Euro Rest. Das ist der Kern der Sättigungsaussage: kaum mehr verkauft werden könnte. Wachstum müsste dann über veränderte Produkte oder neue Schichten laufen, nicht über denselben unveränderten Kreis. 2 gegenüber einem Volumen von 48 ist eine enge Lücke, anders als 32000 Rest bei 48000 Ist in einem ungesättigten Beispiel.\n\nDie Aussage ist wahr.",
+      "Fünfzig im Nenner ist das Potenzial, nicht das Volumen. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen. Einsetzen: 8 × 100 / 48 = 800 / 48 ≈ 16,67 Prozent. Wer durch 50 teilt, bezieht den Umsatz auf die Obergrenze statt auf den Ist-Markt. 8 × 100 / 50 = 16 ist eine andere Kennzahl und nicht der absolute Marktanteil nach Tab. 5. Der Nenner muss 48 heißen. Probe: 16,67 Prozent von 48 sind 8, die Tabellenzeile Umsatz A schließt nur mit Volumen 48.\n\nDie Aussage ist falsch.",
+      "Acht durch zwölf bleibt unter eins. Relativer Marktanteil = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 8 / 12 = 2/3 ≈ 0,67. Das ist kleiner als eins, A ist also nicht Marktführer. Zwei Drittel beschreibt den Rückstand zum Stärksten, unabhängig von der Sättigung des Gesamtmarkts. Die Division trifft die Buchformel. 8 / 48 ≈ 0,167 wäre wieder der absolute Anteil als Dezimalzahl, nicht die relative Kennzahl. Nenner 12, nicht 48 und nicht 50.\n\nDie Aussage ist wahr.",
+      "Neue Modelle können den Markt wieder öffnen. Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen, etwa durch neue Funktionen. Dann verschiebt sich, wer ein erfüllbares Bedürfnis hat, und die Lücke zwischen Volumen und Potenzial kann wieder wachsen. Die Behauptung, daran ändere nichts, widerspricht genau dieser Strategie des Lehrtexts. 48 nahe 50 ist der heutige Zustand, nicht ein Verbot späterer Modellwechsel. Ein neues Citybike mit anderer Funktion würde das relevante Potenzial über 50 heben können.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.36",
+    "title": "Umsatzanteile in der Anbietertabelle",
+    "context": "Übungsbeispiel nach den Formeln von Tab. 5, keine amtliche Statistik. Der wertmäßige Fahrradmarkt eines Jahres beträgt 100 Mio. Euro. Die Tabelle zerlegt das Marktvolumen auf die Anbieter.\n\n| Anbieter | Umsatz Mio. Euro |\n| --- | ---: |\n| Unternehmen A | 40 |\n| Größter Mitbewerber B | 25 |\n| Anbieter C | 20 |\n| Übrige | 15 |\n| Marktvolumen | 100 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der absolute Marktanteil von A beträgt 40 Prozent.",
+      "B ist in der Tabelle der größte Mitbewerber von A.",
+      "Der relative Marktanteil von A beträgt 1,6. A ist daher Marktführer.",
+      "Der relative Marktanteil von A beträgt 0,4, weil 40 durch 100 geteilt wird.",
+      "Anbieter C hat einen höheren relativen Marktanteil als A, weil 20 näher an 25 liegt als 40."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Vierzig von hundert sind vierzig Prozent. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen. Einsetzen: 40 × 100 / 100 = 4000 / 100 = 40. A hält 40 Prozent des wertmäßigen Ist-Marktes. Probe der Tabelle: 40 + 25 + 20 + 15 = 100, die Summe schließt. Die übrigen Zeilen ändern den eigenen Absolutanteil von A nicht, sie erklären nur, woraus sich 100 zusammensetzt. 40 / 25 wäre bereits die relative Rechnung und liefert 1,6, nicht 40 Prozent.\n\nDie Aussage ist wahr.",
+      "Fünfundzwanzig ist die größte rivalisierende Zeile. Relativ wird mit dem Umsatz des größten Mitbewerbers gerechnet. B liegt mit 25 über C (20) und über den Übrigen (15), ist also der Stärkste neben A. A selbst ist nicht sein eigener Mitbewerber in dieser Formel. Der Nenner der relativen Kennzahl von A ist deshalb 25, nicht 20 und nicht 100. Wäre C mit 26 ausgewiesen, müsste der Nenner 26 heißen. Hier bleibt B mit 25 der Bezugspunkt von Tab. 5.\n\nDie Aussage ist wahr.",
+      "Vierzig durch fünfundzwanzig überschreitet die Eins. Relativer Marktanteil = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 40 / 25 = 1,6. Größer als eins zeigt an, dass das Unternehmen der Marktführer ist. A setzt mehr um als der bisher größte Mitbewerber B. 1,6 ist kein Prozent, sondern ein Vielfaches: A macht das 1,6-Fache von B. Die Führerschaft folgt aus dieser Relation, nicht allein aus den 40 Prozent absolut. Probe: 1,6 × 25 = 40, die beiden Tabellenzeilen passen. 40 / 20 = 2 gegen C wäre ein anderer Vergleich und nicht Tab. 5, weil C nicht der größte Mitbewerber ist.\n\nDie Aussage ist wahr.",
+      "Hundert gehört in die absolute Formel. 40 / 100 = 0,4 bzw. 40 Prozent ist der absolute Marktanteil. Relativ teilt durch den größten Mitbewerber: 40 / 25 = 1,6. Wer 100 in den relativen Nenner setzt, löscht den Rivalenvergleich und kann die Schwelle eins nicht mehr sinnvoll lesen. Tab. 5 trennt die beiden Nenner bewusst. 0,4 liegt unter eins, 1,6 darüber. Dieselbe 40 in zwei Formeln ergibt zwei verschiedene Aussagen über Rang und Brocken.\n\nDie Aussage ist falsch.",
+      "Nähe zu 25 ersetzt nicht den Zähler von A. Relativ für A ist 40 / 25 = 1,6. Relativ für C gegen denselben B wäre 20 / 25 = 0,8, also kleiner als eins und kleiner als 1,6. Dass 20 näher an 25 liegt als 40, ist ein Abstandsvergleich und ökonomisch irrelevant: Führerschaft misst das Verhältnis der Umsätze, nicht den Abstand der Tabellenzeilen. C liegt hinter B, A liegt davor. 40 − 25 = 15 Vorsprung, 25 − 20 = 5 Rückstand. Der Quotient, nicht die Differenz, entscheidet nach dem Buch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.37",
+    "title": "Absatzpotenzial, Absatzvolumen und Anteile",
+    "context": "Übungsbeispiel in Stückzahlen, keine Buchstatistik. Ein Produzent von Kinderrädern (Unternehmen A) stellt Markt- und eigene Kennzahlen nebeneinander.\n\n| Kennzahl | Stück |\n| --- | ---: |\n| Marktpotenzial | 20000 |\n| Marktvolumen | 12000 |\n| Absatzpotenzial Unternehmen A | 4000 |\n| Absatzvolumen Unternehmen A | 2400 |\n| Absatzvolumen größter Mitbewerber | 3000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Absatzpotenzial von A in Höhe von 4000 Stück ist die Menge, die A im besten Fall erreichen kann oder zu erreichen hofft.",
+      "Das Absatzvolumen von A in Höhe von 2400 Stück ist der tatsächliche Absatz dieses Unternehmens.",
+      "Das Absatzpotenzial von A ist begrifflich dasselbe wie das Marktpotenzial von 20000 Stück.",
+      "Der mengenmäßige absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der relative Marktanteil von A beträgt 2400 / 4000 = 0,6. A ist daher Marktführer."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Viertausend ist der Bestfall der eigenen Firma. Als Verkaufs- oder Absatzpotenzial eines Unternehmens bezeichnet man jene Absatzmenge, die das Unternehmen im besten Fall erreichen kann oder zu erreichen hofft. 4000 liegt über dem Ist von 2400 und unter dem Marktpotenzial von 20000. Hoffnung und Bestfall markieren, dass es sich nicht um den bereits realisierten Absatz handelt. woom im Lehrtext illustriert dieselbe Idee: Idealfall, nicht heutiger Absatz. 4000 / 2400 = 5/3, A hofft also auf deutlich mehr als das laufende Verkaufsvolumen, ohne den ganzen Markt von 20000 beanspruchen zu müssen.\n\nDie Aussage ist wahr.",
+      "Zweitausendvierhundert ist der Ist-Absatz von A. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein bestimmtes Produkt oder eine Produktgruppe. 2400 entspricht auf Unternehmensebene dem, was 12000 auf Marktebene ist: die tatsächlich abgesetzte Menge. Die 4000 darüber bleiben Potenzial. Wer 2400 und 4000 gleichsetzt, streicht genau den Unterschied der beiden Unternehmenskennzahlen. 2400 ist auch nicht das Marktvolumen. Probe: 2400 + 3000 = 5400, der Rest des Volumens 12000 − 5400 = 6600 entfällt auf andere Anbieter.\n\nDie Aussage ist wahr.",
+      "Bestfall einer Firma ist nicht die Markt-Obergrenze. Marktpotenzial ist die maximal mögliche Absatzmenge des Produkts insgesamt, hier 20000, wenn alle mit erfüllbarem Bedürfnis kauften. Absatzpotenzial von A ist nur die Menge, die A selbst im Idealfall schaffen kann, hier 4000. Die begriffliche Gleichsetzung macht aus einem Anbieter den ganzen Bedarfskreis. 4000 kann unter 20000 liegen, weil nicht jedes Unternehmen den ganzen Markt bedienen kann. 4000 / 20000 = 0,2 wäre ein Anteil am Potenzial, nicht die Identität zweier Begriffe.\n\nDie Aussage ist falsch.",
+      "Zweitausendvierhundert durch zwölftausend mal hundert. Der Marktanteil kann mengen- oder wertmäßig ermittelt werden. Absolut = Absatzvolumen A × 100 / Marktvolumen = 2400 × 100 / 12000 = 240000 / 12000 = 20. Nenner ist das Ist des Marktes (12000), nicht das Marktpotenzial (20000) und nicht das eigene Absatzpotenzial (4000). 2400 / 20000 × 100 = 12 wäre ein anderer, hier nicht gefragter Bezug auf die Obergrenze. 2400 / 4000 × 100 = 60 Prozent Zielerreichung ist ebenfalls keine Marktanteilsformel.\n\nDie Aussage ist wahr.",
+      "Viertausend ist der falsche Nenner. Relativ = Absatzvolumen A / Absatzvolumen des größten Mitbewerbers = 2400 / 3000 = 0,8. 0,8 ist kleiner als eins, A ist nicht Marktführer. 2400 / 4000 = 0,6 teilt den Ist-Absatz durch das eigene Potenzial und misst Zielerreichung, nicht Rivalität. Tab. 5 verlangt den größten Mitbewerber im Nenner. Außerdem wäre selbst 0,6 kleiner als eins und würde Führerschaft nicht begründen. 3000 > 2400, der Rivale bleibt vorn. Führerschaft gälte erst bei einem eigenen Absatz über 3000.\n\nNote: Relativ vergleicht zwei Ist-Absätze, nie das eigene Absatzpotenzial.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.38",
+    "title": "Marktführer und Volumenanteil in einer Tabelle",
+    "context": "Übungsbeispiel nach Tab. 5, keine reale Marktstatistik. Drei Blöcke teilen einen wertmäßigen Markt für E-Bikes.\n\n| Größe | Mio. Euro |\n| --- | ---: |\n| Marktvolumen | 90 |\n| Umsatz Unternehmen A | 45 |\n| Umsatz größter Mitbewerber | 30 |\n| Umsatz der übrigen Anbieter | 15 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der absolute Marktanteil von A beträgt 50 Prozent.",
+      "Der relative Marktanteil von A beträgt 1,5. A ist daher Marktführer.",
+      "Marktführer ist man nur, wenn der absolute Marktanteil über 50 Prozent liegt. Der relative Marktanteil spielt dafür keine Rolle.",
+      "Der relative Marktanteil von A beträgt 30 / 45 = 0,67. A ist daher nicht Marktführer.",
+      "Der Marktanteil eines Unternehmens darf nur wertmäßig ermittelt werden, niemals mengenmäßig."
+    ],
+    "answer_key": [true, true, false, false, false],
+    "tactical_explanations": [
+      "Fünfundvierzig durch neunzig mal hundert. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen = 45 × 100 / 90 = 4500 / 90 = 50. A hält die Hälfte des Ist-Marktes. Probe: 45 + 30 + 15 = 90, die Tabelle schließt. 50 Prozent absolut sagt noch nichts über die Relation zu den 30 des Rivalen. Dafür braucht man die zweite Formel. 45 / 90 = 0,5 als Dezimalzahl ist dasselbe Urteil wie 50 Prozent, nicht wie relativ 1,5.\n\nDie Aussage ist wahr.",
+      "Fünfundvierzig durch dreißig liegt über eins. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 45 / 30 = 1,5. Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist. A setzt das 1,5-Fache des bisher größten Mitbewerbers um. Die 50 Prozent absolut und die 1,5 relativ beschreiben denselben Vorsprung aus zwei Blickwinkeln: Brocken am Volumen und Abstand zum Nächsten. Probe: 1,5 × 30 = 45. Die übrigen 15 ändern den Nenner nicht, weil sie nicht der größte Mitbewerber sind.\n\nDie Aussage ist wahr.",
+      "Die Buchregel nennt die Eins, nicht die Fünfzig. Führerschaft in dieser Kennzahl heißt relativ größer als eins, also eigener Umsatz über dem des größten Mitbewerbers. Ein Betrieb mit 40 von 100 und einem Rivalen mit 25 hätte relativ 40 / 25 = 1,6 und wäre Marktführer, obwohl absolut nur 40 Prozent anfallen. Umgekehrt wäre 50 Prozent absolut ohne den Vergleich zu 30 unvollständig. Die Behauptung, nur absolut über 50 zähle und relativ spiele keine Rolle, streicht Tab. 5. Hier fallen 50 Prozent und 1,5 zusammen. Das ist Zufall der Zahlen 45, 30, 90, keine allgemeine Regel.\n\nDie Aussage ist falsch.",
+      "Zähler und Nenner sind vertauscht. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 45 / 30 = 1,5, nicht 30 / 45. 30 / 45 = 2/3 ≈ 0,67 wäre der relative Anteil des Rivalen gegenüber A. Wer die Brüche dreht, erklärt den Zweiten zum Maßstab und den Ersten zum Verlierer. 1,5 > 1 bleibt die richtige Lesart: A führt. 0,67 < 1 beschreibt den Rückstand von 30 gegenüber 45, also genau die Gegenrichtung.\n\nDie Aussage ist falsch.",
+      "Menge oder Wert sind beide zulässig. Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden. Stückzahlen und Umsätze tragen denselben Anteilgedanken, können bei unterschiedlichen Preisen aber verschiedene Prozente liefern. Die Tabelle hier ist wertmäßig in Mio. Euro. Ein Verbot der Mengenrechnung erfindet das Buch nicht. Wer nur eine Rechenart anerkennt, verkürzt die Kennzahl. Dieselbe Firma könnte stückmäßig unter eins und wertmäßig über eins liegen, wenn ihre Räder teurer sind.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.39",
+    "title": "Mengenanteil und Wertanteil in einer Tabelle",
+    "context": "Übungsbeispiel, keine amtliche Statistik. Derselbe Fahrradmarkt wird einmal in Stück und einmal in Euro beschrieben. Unternehmen A verkauft teurere Räder als der größte Mitbewerber.\n\n| Größe | Menge (Stück) | Wert (Mio. Euro) |\n| --- | ---: | ---: |\n| Marktvolumen | 200 | 1000 |\n| Unternehmen A | 40 | 280 |\n| Größter Mitbewerber | 50 | 200 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der mengenmäßige absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der wertmäßige absolute Marktanteil von A beträgt 28 Prozent.",
+      "Weil A weniger Stück verkauft als der größte Mitbewerber, kann A in keiner Betrachtung Marktführer sein.",
+      "Wertmäßig beträgt der relative Marktanteil von A 1,4. A ist daher wertmäßiger Marktführer.",
+      "Mengenmäßiger und wertmäßiger absoluter Marktanteil müssen stets denselben Prozentsatz liefern."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Vierzig durch zweihundert mal hundert. Mengenmäßig gilt Absoluter Marktanteil = Absatz A × 100 / Marktvolumen = 40 × 100 / 200 = 4000 / 200 = 20. A hält ein Fünftel der Stückzahl. Die 280 Mio. Euro in der Wertspalte gehören nicht in diese Stückrechnung. 20 Prozent beschreiben nur die Menge, nicht den Umsatzanteil. Probe: 20 Prozent von 200 Stück sind 40. 40 / 50 = 0,8 wäre bereits der mengenmäßige relative Anteil und darf mit den 20 Prozent nicht vermischt werden.\n\nDie Aussage ist wahr.",
+      "Zweihundertachtzig durch tausend mal hundert. Wertmäßig: Unternehmensumsatz × 100 / Marktvolumen = 280 × 100 / 1000 = 28000 / 1000 = 28. A hält 28 Prozent des Umsatzes, obwohl nur 20 Prozent der Stücke auf A entfallen. Höherer Durchschnittspreis erklärt die Spreizung: 280 / 40 = 7 Mio. Euro je Stückblock gegenüber 200 / 50 = 4 beim Rivalen. Beide Rechenarten lässt das Buch zu. 28 Prozent absolut sind nicht 1,4 relativ. Dafür braucht man den Nenner 200.\n\nDie Aussage ist wahr.",
+      "Stückrückstand hebt die Wertführerschaft nicht auf. Mengenmäßig relativ = 40 / 50 = 0,8 < 1, A ist nach Stückzahl nicht Marktführer. Wertmäßig relativ = 280 / 200 = 1,4 > 1, A ist nach Umsatz Marktführer. Die Behauptung, weniger Stück schließe jede Führerschaft aus, ignoriert, dass der Marktanteil mengen- oder wertmäßig ermittelt werden kann. Teurere Räder können den Wertvergleich drehen. In keiner Betrachtung wäre nur dann wahr, wenn beide Relationen unter eins lägen. Hier gilt das nur für die Menge.\n\nNote: Relativ größer als eins gilt je nach gewählter Rechenart. Menge und Wert können verschiedene Rangfolgen zeigen.\n\nDie Aussage ist falsch.",
+      "Zweihundertachtzig durch zweihundert überschreitet die Eins. Wertmäßig relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 280 / 200 = 1,4. Größer als eins zeigt den Marktführer in dieser Betrachtung. A setzt mehr Euro um als der stückstärkere Rivale. Die 28 Prozent absolut und die 1,4 relativ gehören zusammen: Brocken am Wertvolumen und Vorsprung vor dem Größten. Probe: 1,4 × 200 = 280. 280 / 1000 = 0,28 bleibt die absolute Kontrolle, nicht der Rivalenvergleich.\n\nDie Aussage ist wahr.",
+      "Preisunterschiede sprengen die Gleichheit. Hier 20 Prozent (Menge) gegen 28 Prozent (Wert). Das Buch erlaubt beide Ermittlungen gerade deshalb, weil sie bei unterschiedlichen Preisen auseinanderlaufen. Stets denselben Prozentsatz zu verlangen, würde die Wertspalte überflüssig machen. Nur wenn alle Anbieter denselben Preis hätten, fielen die Prozente zusammen. Die Tabelle ist gegen diese Gleichheit gebaut: 7 gegen 4 in der impliziten Preisrelation. 20 = 28 wäre ein Zufall, den die Zahlen 40, 200, 280, 1000 nicht liefern.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.40",
+    "title": "Sättigung, Anteile und Absatzpotenzial zusammen",
+    "context": "Übungsbeispiel für den österreichischen Kinderradmarkt, keine Buchstatistik. Die Kennzahlen folgen den Definitionen von Marktpotenzial, Marktvolumen, Verkaufspotenzial und Tab. 5.\n\n| Kennzahl | Mio. Euro |\n| --- | ---: |\n| Marktpotenzial | 200 |\n| Marktvolumen | 190 |\n| Umsatz Unternehmen A | 38 |\n| Umsatz größter Mitbewerber | 57 |\n| Absatzpotenzial Unternehmen A | 50 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Marktvolumen liegt mit 190 nahe am Marktpotenzial von 200. Der Markt ist beinahe gesättigt.",
+      "Der absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der relative Marktanteil von A ist größer als eins. A ist daher Marktführer.",
+      "Das Absatzpotenzial von A in Höhe von 50 ist identisch mit dem Marktpotenzial.",
+      "Auch bei beinahe gesättigtem Markt kann versucht werden, durch veränderte Produkte oder neue Käuferschichten wieder einen ungesättigten Markt zu schaffen."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Hundertneunzig zu zweihundert ist eine enge Lücke. Ist das Marktvolumen nahe am Marktpotenzial, ist der Markt beinahe gesättigt und kaum mehr verkauft werden könnte. 190 / 200 = 0,95, Rest 200 − 190 = 10 Mio. Euro. Fast alle Bedarfsträger kaufen bereits. Die 38 von A und die 57 des Rivalen spielen für diese Marktaussage keine Rolle. Sättigung vergleicht Volumen mit Potenzial, nicht Firma mit Firma. 10 Rest bei 190 Ist ist eng, anders als eine weite Lücke von mehreren Zehnteln der Obergrenze.\n\nDie Aussage ist wahr.",
+      "Achtunddreißig durch hundertneunzig mal hundert. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen = 38 × 100 / 190 = 3800 / 190 = 20. Nenner ist das Marktvolumen 190, nicht das Potenzial 200. 38 × 100 / 200 = 19 wäre ein Bezug auf die Obergrenze und nicht Tab. 5. A hält ein Fünftel des Ist-Marktes. Probe: 20 Prozent von 190 = 38, die Tabelle passt. 38 / 57 wäre die relative Rechnung und liefert etwa 0,67, nicht 20 Prozent.\n\nDie Aussage ist wahr.",
+      "Siebenundfünfzig im Nenner drücken A unter die Eins. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 38 / 57 = 2/3 ≈ 0,67. Kleiner als eins heißt: A ist nicht Marktführer. Der Rivale setzt mehr um. Wer 38 / 190 ≈ 0,20 mit der relativen Schwelle eins verwechselt, mischt Absolutprozent und Verhältniszahl. Führerschaft verlangt eigenen Umsatz über dem des größten Mitbewerbers, hier 38 gegen 57, also Rückstand. 38 müsste über 57 steigen, bevor relativ > 1 wird.\n\nDie Aussage ist falsch.",
+      "Fünfzig ist der Bestfall von A, zweihundert der des Marktes. Absatzpotenzial ist die Menge bzw. der Wert, den das Unternehmen im besten Fall erreichen kann oder hofft, hier 50. Marktpotenzial ist die maximal mögliche Absatzmenge aller, hier 200. 50 liegt über dem Ist von 38, bleibt aber weit unter 200. Die Gleichsetzung streicht die Unternehmensgrenze und würde A den gesamten Bedarfskreis zuschreiben. 50 / 200 = 0,25 wäre ein Anteil am Potenzial, nicht Identität. Verkaufsvolumen 38 und Verkaufspotenzial 50 bleiben zwei Firmenkennzahlen unter dem Marktpotenzial.\n\nDie Aussage ist falsch.",
+      "Sättigung ist kein Endzustand ohne Ausweg. Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen, zum Beispiel durch neue Modelle mit neuen Funktionen. Dann wächst der Kreis derer, die ein erfüllbares Bedürfnis haben, und die Lücke zwischen 190 und 200 kann sich wieder weiten. Das Absatzpotenzial von A (50 gegen Ist 38) wäre in einem geöffneten Markt leichter zu begründen als im unveränderten, fast vollen Markt. 50 − 38 = 12 gewünschter Zuwachs übersteigt den heutigen Marktrest von 10. Ohne neue Modelle oder neue Schichten bleibt dieser Wunsch im gesättigten Kreis schwer erfüllbar.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.33",
+    "title": "Tab. 2: Mindestkapital der Rechtsformen",
+    "context": "Tab. 2 fasst Merkmale österreichischer Rechtsformen zusammen. Die Mindestkapitalzeile des Buches lautet:\n\n| Rechtsform | Mindestkapital |\n| --- | --- |\n| Einzelunternehmen | nein |\n| Offene Gesellschaft (OG) | nein |\n| Kommanditgesellschaft (KG) | nein |\n| Gesellschaft mit beschränkter Haftung (GmbH) | ja, 10.000 Euro |\n| Aktiengesellschaft (AG) | ja, 70.000 Euro |\n| Societas Europaea (SE) | 120.000 Euro |\n| Genossenschaft | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Für eine GmbH gilt ein Mindeststammkapital von 10.000 Euro.",
+      "Für eine AG gilt ein Mindestgrundkapital von 70.000 Euro.",
+      "Die SE verlangt 120.000 Euro Mindestkapital.",
+      "Einzelunternehmen, OG, KG und Genossenschaft haben laut Tabelle kein gesetzliches Mindestkapital.",
+      "Eine OG muss dasselbe Mindestkapital aufbringen wie eine AG, nämlich 70.000 Euro."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Die GmbH-Zelle der Mindestkapitalzeile lautet ja, 10.000 Euro. Das ist Stammkapital, nicht Aktienkapital. 10.000 Euro sind die Untergrenze, die die Gesellschafter mit Stammeinlagen insgesamt erreichen müssen. 70.000 Euro gehören der AG, 120.000 Euro der SE. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Die AG-Zelle nennt 70.000 Euro. Das Grundkapital ist in Aktien zerlegt. 10.000 Euro wären GmbH, 120.000 Euro SE. Ohne 70.000 Euro kommt die AG-Gründung nicht zustande. Die Tabelle trennt die drei Kapitalgesellschaften genau über diese Beträge.\n\nDie Aussage ist wahr.",
+      "In Klammern zur AG-Zelle bzw. als eigene SE-Spalte steht 120.000 Euro. Die europäische Aktiengesellschaft liegt damit über der österreichischen AG. 70.000 Euro reichen für die AG, nicht für die SE. Die Aussage liest die höhere Schwelle richtig.\n\nDie Aussage ist wahr.",
+      "Vier Nein in derselben Zeile: Einzelunternehmen, OG, KG, Genossenschaft. Personengesellschaften und die Genossenschaft starten ohne gesetzliche Kapitalsumme dieser Art. Mindestkapital ist das Merkmal von GmbH, AG und SE. Die Aussage zählt genau die Formen ohne Euroschranke.\n\nDie Aussage ist wahr.",
+      "OG hat in der Tabelle nein. 70.000 Euro sind die AG. Eine OG entsteht durch mindestens zwei Gesellschafter mit persönlicher Haftung, nicht durch eine Kapitalsperre von 70.000 Euro. Die Gleichsetzung OG = AG beim Mindestkapital widerspricht Tab. 2.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.34",
+    "title": "Tab. 2: Haftung neben dem Mindestkapital",
+    "context": "Mindestkapital und Haftung gehören in Tab. 2 zusammen, weil beschränkte Haftung typischerweise an eine Kapitalschranke gekoppelt ist.\n\n| Rechtsform | Mindestkapital | Wer haftet für die Schulden? |\n| --- | --- | --- |\n| Einzelunternehmen | nein | der Einzelunternehmer persönlich, unbeschränkt |\n| OG | nein | die OG-Gesellschafter persönlich, unbeschränkt, jeder für den Gesamtbetrag |\n| KG | nein | Komplementär wie OG-Gesellschafter; Kommanditist nur bis zur Höhe seiner Einlage |\n| GmbH | ja, 10.000 Euro | die GmbH-Gesellschafter nur mit ihrer Stammeinlage |\n| AG | ja, 70.000 Euro | die Aktionäre nur mit ihrem Aktienkapital |\n| SE | 120.000 Euro | wie bei der AG |\n| Genossenschaft | nein | die Genossenschafter mit ihrer Einlage (i. d. R. in doppelter Höhe) |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim Einzelunternehmen und bei der OG haften die Inhaber persönlich und unbeschränkt, ohne Mindestkapital in der Tabelle.",
+      "GmbH-Gesellschafter haften nur mit ihrer Stammeinlage, und die GmbH braucht 10.000 Euro Mindestkapital.",
+      "Kommanditisten haften wie Komplementäre persönlich unbeschränkt für den Gesamtbetrag der Schulden.",
+      "Aktionäre haften nur mit ihrem Aktienkapital; die AG hat 70.000 Euro Mindestkapital.",
+      "Weil die GmbH 10.000 Euro Mindestkapital hat, haftet jeder Gesellschafter persönlich mit seinem gesamten Privatvermögen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zwei Spalten, ein Muster: kein Mindestkapital und volle persönliche Haftung. Einzelunternehmer und OG-Gesellschafter stehen mit ihrem Vermögen ein, jeder OG-Gesellschafter für den Gesamtbetrag. Die fehlende Euroschranke ist kein Schutzschild, sondern Teil derselben unbeschränkten Haftung. Die Tabelle stellt genau dieses Paar dar.\n\nDie Aussage ist wahr.",
+      "Beschränkte Haftung und Stammkapital gehören zusammen. 10.000 Euro sind die Untergrenze der Einlagen. Die Haftung der Gesellschafter endet bei der Stammeinlage, nicht beim Privatvermögen. Wer 10.000 Euro mit 70.000 Euro verwechselt, liest die AG. Die Aussage hält beide GmbH-Zellen.\n\nDie Aussage ist wahr.",
+      "Die KG-Zeile trennt zwei Rollen. Der Komplementär haftet wie der OG-Gesellschafter persönlich unbeschränkt. Der Kommanditist haftet nur bis zur Höhe seiner Einlage. Die Gleichsetzung beider Rollen streicht genau den Kommanditisten. Mindestkapital bleibt nein; die beschränkte Haftung des Kommanditisten hängt an seiner Einlage, nicht an 10.000 Euro Stammkapital.\n\nDie Aussage ist falsch.",
+      "AG-Zelle Haftung: nur mit ihrem Aktienkapital. AG-Zelle Mindestkapital: 70.000 Euro. Beides zusammen beschreibt die Kapitalgesellschaft, deren Anteile frei übertragbar sind. 10.000 Euro wären GmbH. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Mindestkapital begrenzt die Haftung, es erweitert sie nicht auf das Privatvermögen. Die GmbH-Haftungszelle lautet: nur mit ihrer Stammeinlage. Persönlich unbeschränkt wäre die OG- oder Einzelunternehmerzeile. 10.000 Euro sind die Kapitalsperre der Gesellschaft, nicht die Privatschuld jedes Gesellschafters.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.35",
+    "title": "Tab. 2: Geschäftsführung",
+    "context": "Tab. 2 fragt, wer die Geschäfte führt.\n\n| Rechtsform | Wer führt die Geschäfte? | Mindestkapital |\n| --- | --- | --- |\n| Einzelunternehmen | der Einzelunternehmer | nein |\n| OG | die OG-Gesellschafter (mindestens zwei) | nein |\n| KG | der oder die Komplementäre (mindestens einer) | nein |\n| GmbH | der oder die Geschäftsführer (mindestens einer) | ja, 10.000 Euro |\n| AG | der Vorstand | ja, 70.000 Euro |\n| SE | der Vorstand | 120.000 Euro |\n| Genossenschaft | der Vorstand | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der OG führen die Gesellschafter die Geschäfte, mindestens zwei Personen.",
+      "Bei der KG führen die Komplementäre die Geschäfte, nicht die Kommanditisten als solche.",
+      "Eine GmbH wird von mindestens einem Geschäftsführer geleitet.",
+      "Eine AG und eine SE werden vom Vorstand geleitet.",
+      "Kommanditisten führen die KG-Geschäfte ebenso wie der Vorstand einer AG, weil beide 70.000 Euro Mindestkapital brauchen."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "OG-Zelle: Die OG-Gesellschafter, mindestens zwei. Ohne zweiten Gesellschafter gibt es keine OG. Geschäftsführung und Haftung liegen bei denselben Personen. Mindestkapital bleibt nein. Die Aussage wiederholt die Tabellenzelle.\n\nDie Aussage ist wahr.",
+      "KG-Geschäftsführung: der oder die Komplementäre, mindestens einer. Kommanditisten bringen Einlage und haften begrenzt; sie stehen nicht in der Führungszelle. Wer Kommanditisten zu Geschäftsführern macht, vermengt Einlage und Leitung. Die Aussage trennt die Rollen.\n\nDie Aussage ist wahr.",
+      "GmbH-Zelle: der oder die Geschäftsführer, mindestens einer. Das muss nicht jeder Gesellschafter sein. 10.000 Euro Mindestkapital ändert die Organbezeichnung nicht in Vorstand. Vorstand steht bei AG, SE und Genossenschaft.\n\nDie Aussage ist wahr.",
+      "AG und SE teilen die Organzeile Vorstand. Die SE liegt beim Kapital höher (120.000 gegen 70.000), nicht bei einem anderen Leitungsorgan in dieser Tabelle. Die Genossenschaft hat ebenfalls einen Vorstand, aber kein Mindestkapital dieser Art.\n\nDie Aussage ist wahr.",
+      "Zwei Fehler. Kommanditisten führen nicht. 70.000 Euro Mindestkapital hat die AG, die KG hat nein. Die Gleichsetzung Kommanditist = Vorstand über eine erfundene Kapitalsumme widerspricht beiden Spalten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.36",
+    "title": "Tab. 2: Zahlenvergleich GmbH, AG, SE",
+    "context": "Drei Kapitalgesellschaften und ihre Eurobeträge aus Tab. 2.\n\n| Rechtsform | Mindestkapital (Euro) |\n| --- | ---: |\n| GmbH | 10.000 |\n| AG | 70.000 |\n| SE | 120.000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das AG-Mindestkapital ist siebenmal so hoch wie das der GmbH (70.000 / 10.000 = 7).",
+      "Die SE liegt 50.000 Euro über der AG (120.000 − 70.000 = 50.000).",
+      "GmbH plus AG ergeben zusammen das SE-Mindestkapital (10.000 + 70.000 = 80.000, also gleich 120.000).",
+      "10.000 Euro reichen für die GmbH, nicht für die AG.",
+      "120.000 Euro sind die höchste Mindestkapitalschwelle in dieser Tabelle."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "Division der Tabellenwerte: 70.000 / 10.000 = 7. Die AG-Schwelle ist das Siebenfache der GmbH-Schwelle. Das erklärt, warum viele KMU die GmbH wählen und Großunternehmen mit großem Kapitalbedarf AG oder SE. Die Rechnung sitzt auf den Buchzahlen, nicht auf einer erfundenen Quote.\n\nDie Aussage ist wahr.",
+      "Subtraktion: 120.000 − 70.000 = 50.000. Die europäische Form verlangt 50.000 Euro mehr als die österreichische AG. 10.000 Euro GmbH plus 50.000 ergibt nicht die SE; nur AG und SE stehen in diesem Vergleich. Die Differenz 50.000 folgt direkt aus Tab. 2.\n\nDie Aussage ist wahr.",
+      "10.000 + 70.000 = 80.000, und 80.000 ist nicht 120.000. Die SE-Schwelle ist keine Summe der beiden anderen. Wer die drei Zellen addiert, erfindet eine Identität, die das Buch nicht behauptet. 120.000 steht allein.\n\nDie Aussage ist falsch.",
+      "Zehn Tausend öffnen die GmbH-Zeile und verfehlen 70.000. Eine AG mit 10.000 Euro Grundkapital erfüllt Tab. 2 nicht. Die Aussage hält die Untergrenze der GmbH gegen die höhere AG-Schranke.\n\nDie Aussage ist wahr.",
+      "Vergleich 10.000 < 70.000 < 120.000. Die SE steht oben. Personengesellschaften haben in der großen Tabelle nein, also 0 in diesem Sinn, und liegen darunter. Innerhalb der drei Kapitalzahlen ist 120.000 das Maximum.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.37",
+    "title": "Tab. 2 und österreichische Anteile",
+    "context": "Tab. 2 plus der Faktenkasten: rund 85 Prozent der Unternehmen und Gründungen in Österreich sind Einzelunternehmen; ungefähr jedes zehnte Unternehmen ist eine GmbH, gefolgt von je etwa 2 Prozent OG und KG.\n\n| Rechtsform | Mindestkapital | ungefährer Anteil (Österreich) |\n| --- | --- | --- |\n| Einzelunternehmen | nein | rund 85 % |\n| GmbH | 10.000 Euro | ungefähr 10 % |\n| OG | nein | ca. 2 % |\n| KG | nein | ca. 2 % |\n| übrige (AG, SE, Genossenschaft u. a.) | je nach Form | noch geringer |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der überwiegende Teil der österreichischen Unternehmen sind Einzelunternehmen, rund 85 Prozent, ohne Mindestkapital in Tab. 2.",
+      "Ungefähr jedes zehnte Unternehmen ist eine GmbH mit 10.000 Euro Mindestkapital.",
+      "OG und KG liegen bei je etwa 2 Prozent und haben kein Mindestkapital in der Tabelle.",
+      "Weil 85 Prozent Einzelunternehmen sind, müssen 85 Prozent der Unternehmen 70.000 Euro AG-Kapital aufbringen.",
+      "AG und SE haben in Österreich einen noch geringeren Anteil als OG und KG, obwohl ihr Mindestkapital höher ist als bei der GmbH."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Faktenkasten und Tabellenzeile passen: 85 Prozent Einzelunternehmen, Mindestkapital nein. Die häufigste Form braucht keine 10.000 Euro Stammkapital. Persönliche unbeschränkte Haftung tritt an diese Stelle. Die Aussage verbindet Anteil und Tabellenzelle.\n\nDie Aussage ist wahr.",
+      "Jedes zehnte Unternehmen: etwa 10 Prozent GmbH. Tab. 2 verlangt 10.000 Euro. Das ist die häufigste Kapitalgesellschaft, weit vor der AG. 70.000 Euro wären die seltenere AG. Die Aussage hält Anteil und Eurobetrag der GmbH.\n\nDie Aussage ist wahr.",
+      "Je ca. 2 Prozent OG und KG. Beide Zeilen Mindestkapital: nein. Zusammen etwa 4 Prozent, deutlich hinter der GmbH. Die Personengesellschaften bleiben ohne die Euroschranke von GmbH, AG und SE.\n\nDie Aussage ist wahr.",
+      "85 Prozent sind Einzelunternehmen, und Einzelunternehmen haben kein Mindestkapital. 70.000 Euro gelten nur für die AG, die zu den übrigen, kleineren Anteilen zählt. Die Behauptung legt die seltenste Kapitalschwelle auf die häufigste Rechtsform.\n\nDie Aussage ist falsch.",
+      "Der Kasten sagt: Die übrigen Rechtsformen haben einen noch geringeren Anteil. AG und SE liegen hinter GmbH, OG und KG. Zugleich stehen 70.000 und 120.000 über 10.000. Höheres Mindestkapital und geringerer Anteil treten zusammen auf, weil großer Kapitalbedarf selten ist. Die Aussage trifft beides.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.38",
+    "title": "Tab. 2: Kapital aufbringen",
+    "context": "Tab. 2 fragt, wer das Kapital aufbringt und wie zusätzliches Eigenkapital beschafft werden kann.\n\n| Rechtsform | Wer bringt das Kapital auf? | Mindestkapital |\n| --- | --- | --- |\n| Einzelunternehmen | der Einzelunternehmer | nein |\n| OG | die OG-Gesellschafter | nein |\n| KG | Komplementär kann, Kommanditist muss eine Kapitaleinlage leisten | nein |\n| GmbH | die GmbH-Gesellschafter mit ihren Stammeinlagen | 10.000 Euro |\n| AG | die Aktionäre durch den Aktienkauf | 70.000 Euro |\n| SE | die Aktionäre durch den Aktienkauf | 120.000 Euro |\n| Genossenschaft | die Genossenschafter | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der GmbH bringen die Gesellschafter das Kapital als Stammeinlagen auf, insgesamt mindestens 10.000 Euro.",
+      "Bei der AG bringen die Aktionäre das Kapital durch den Aktienkauf auf; das Grundkapital muss mindestens 70.000 Euro erreichen.",
+      "Der Kommanditist muss eine Kapitaleinlage leisten, der Komplementär kann eine leisten.",
+      "Zusätzliches Eigenkapital der AG entsteht, indem neue Aktien ausgegeben werden.",
+      "Eine GmbH beschafft zusätzliches Eigenkapital, indem sie wie eine AG frei neue Aktien an der Börse ausgibt, ohne die Stammeinlagen zu erhöhen."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "GmbH-Kapitalzelle: die GmbH-Gesellschafter mit ihren Stammeinlagen. Die Einlagen dürfen unterschiedlich hoch sein, die Summe muss das Mindeststammkapital 10.000 Euro erreichen. Ohne diese Summe fehlt die Kapitalschranke der Tabelle. Die Aussage verbindet Aufbringung und Mindestbetrag.\n\nDie Aussage ist wahr.",
+      "AG-Kapitalzelle: die Aktionäre durch den Aktienkauf. Das Grundkapital ist in Aktien zerlegt, Untergrenze 70.000 Euro. Große Beträge lassen sich so leichter beschaffen als über wenige Stammeinlagen. 10.000 Euro wären die GmbH. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Die KG-Zeile trennt Pflicht und Möglichkeit. Kommanditist muss eine Kapitaleinlage leisten, Komplementär kann. Das passt zur Haftung: der Kommanditist begrenzt seine Last auf die Einlage, der Komplementär haftet persönlich. Mindestkapital der KG bleibt nein.\n\nDie Aussage ist wahr.",
+      "Tab. 2 zur Aufbringung zusätzlichen Eigenkapitals bei der AG: Neue Aktien werden ausgegeben, die entweder die bisherigen Aktionäre oder neue Aktionäre übernehmen. Emission hat Finanzierungseffekt, weil Käufer zahlen. Das ist Außenfinanzierung mit Eigenkapital, nicht ein Bankkredit.\n\nDie Aussage ist wahr.",
+      "GmbH-Weg in Tab. 2: Die bisherigen Gesellschafter erhöhen ihre Einlagen oder nehmen einen zusätzlichen Gesellschafter auf. Aktienausgabe ist die AG-Zelle. Eine GmbH hat Stammeinlagen, keine frei handelbaren Aktien derselben Art. Die Behauptung liest die falsche Spalte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  }
+]

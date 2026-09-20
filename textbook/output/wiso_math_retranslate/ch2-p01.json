@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "MATH 2.06",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Binomial identities — set 2",
+    "context_en": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
+    "statements_en": [
+      "With $a=1$, $b=2$, $c=2$, $d=1$, both $(a^2+b^2)(c^2+d^2)$ and $(ac-bd)^2+(ad+bc)^2$ equal $25$.",
+      "Expanding $(c+3)^2$ yields $c^2+6c+9$.",
+      "At $k=1$, expanding $(3k-2)^2$ yields the quadratic $9k^2-12k+3$.",
+      "With $a=5$ and $b=2$, rearranging $a^2-ab\\ge ab-b^2$ produces $(a-b)^2\\ge 0$, which holds.",
+      "$(2h+5)^2=4h^2+10h+25$ as a standard expansion."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nSubstitute the given values into both sides and compare.\n\n$$\na=1\n$$\n\n$$\nb=2\n$$\n\n$$\nc=2\n$$\n\n$$\nd=1\n$$\n\n$$\na^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nb^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\na^2+b^2=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nc^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\nd^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nc^2+d^2=4+1\n$$\n\n$$\n4+1=5\n$$\n\n$$\n(a^2+b^2)(c^2+d^2)=5\\cdot 5\n$$\n\n$$\n5\\cdot 5=25\n$$\n\n$$\nac=1\\cdot 2\n$$\n\n$$\n1\\cdot 2=2\n$$\n\n$$\nbd=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nac-bd=2-2\n$$\n\n$$\n2-2=0\n$$\n\n$$\n(ac-bd)^2=0^2\n$$\n\n$$\n0^2=0\n$$\n\n$$\nad=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\nbc=2\\cdot 2\n$$\n\n$$\n2\\cdot 2=4\n$$\n\n$$\nad+bc=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\n(ad+bc)^2=5^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n0+25=25\n$$\n\nBoth sides equal $25$, as claimed.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nExpand the binomial square by writing the product, then evaluate each term.\n\n$$\n(c+3)^2=(c+3)(c+3)\n$$\n\n$$\n(c+3)(c+3)=c^2+2\\cdot c\\cdot 3+3^2\n$$\n\n$$\n2\\cdot c\\cdot 3=6c\n$$\n\n$$\n3^2=9\n$$\n\n$$\n(c+3)^2=c^2+6c+9\n$$\n\nThe collected right-hand side matches the claim.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nExpand $(3k-2)^2$ and compare with the printed quadratic.\n\n$$\n(3k-2)^2=(3k-2)(3k-2)\n$$\n\n$$\n(3k-2)(3k-2)=(3k)^2-2\\cdot(3k)\\cdot 2+2^2\n$$\n\n$$\n(3k)^2=9k^2\n$$\n\n$$\n2\\cdot(3k)\\cdot 2=12k\n$$\n\n$$\n2^2=4\n$$\n\n$$\n(3k-2)^2=9k^2-12k+4\n$$\n\n$$\n9k^2-12k+3\n$$\n\nThe constant term is $4$, not $3$.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nMove all terms to one side and recognise a square.\n\n$$\na=5\n$$\n\n$$\nb=2\n$$\n\n$$\na^2-ab\\ge ab-b^2\n$$\n\n$$\na^2-ab-(ab-b^2)\\ge 0\n$$\n\n$$\na^2-ab-ab+b^2\\ge 0\n$$\n\n$$\na^2-2ab+b^2\\ge 0\n$$\n\n$$\n(a-b)^2\\ge 0\n$$\n\n$$\n5-2=3\n$$\n\n$$\n3^2=9\n$$\n\n$$\n9\\ge 0\n$$\n\nA square is nonnegative, so the rearranged inequality holds.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nExpand $(2h+5)^2$ and compare with the printed claim.\n\n$$\n(2h+5)^2=(2h+5)(2h+5)\n$$\n\n$$\n(2h+5)(2h+5)=(2h)^2+2\\cdot(2h)\\cdot 5+5^2\n$$\n\n$$\n(2h)^2=4h^2\n$$\n\n$$\n2\\cdot(2h)\\cdot 5=20h\n$$\n\n$$\n5^2=25\n$$\n\n$$\n(2h+5)^2=4h^2+20h+25\n$$\n\n$$\n4h^2+10h+25\n$$\n\nThe cross term is $20h$, not $10h$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": null,
+    "title_de_existing": "Binomische Identitäten — Menge 2",
+    "context_de_existing": "Es seien $x$ und $y$ reelle Zahlen. Welche der folgenden Aussagen ist/sind richtig?",
+    "statements_de_existing": [
+      "Mit $a=1$, $b=2$, $c=2$, $d=1$ sind sowohl $(a^2+b^2)(c^2+d^2)$ als auch $(ac-bd)^2+(ad+bc)^2$ gleich $25$.",
+      "Ausmultiplizieren von $(c+3)^2$ liefert $c^2+6c+9$.",
+      "Bei $k=1$ liefert Ausmultiplizieren von $(3k-2)^2$ das Quadrat $9k^2-12k+3$.",
+      "Mit $a=5$ und $b=2$ liefert Umstellen von $a^2-ab\\ge ab-b^2$ die Beziehung $(a-b)^2\\ge 0$, die gilt.",
+      "$(2h+5)^2=4h^2+10h+25$ als Standarderweiterung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\na&=1,\\quad b=2,\\quad c=2,\\quad d=1\\\\\na^2+b^2&=1^2+2^2=1+4=5\\\\\nc^2+d^2&=2^2+1^2=4+1=5\\\\\n(a^2+b^2)(c^2+d^2)&=5\\cdot 5=25\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nac-bd&=1\\cdot 2-2\\cdot 1=0\\\\\n(ac-bd)^2&=0\\\\\nad+bc&=1\\cdot 1+2\\cdot 2=1+4=5\\\\\n(ad+bc)^2&=25\\\\\n(ac-bd)^2+(ad+bc)^2&=0+25=25\n\\end{aligned}\n$$\n\nBeide Seiten sind gleich $25$, wie behauptet.\n\nDie Aussage ist wahr.\n",
+      "**B.** → Richtig\n\nSchreibe das binomische Quadrat als Produkt und werte jeden Term aus.\n\n$$\n(c+3)^2=(c+3)(c+3)\n$$\n\n$$\n(c+3)(c+3)=c^2+2\\cdot c\\cdot 3+3^2\n$$\n\n$$\n2\\cdot c\\cdot 3=6c\n$$\n\n$$\n3^2=9\n$$\n\n$$\n(c+3)^2=c^2+6c+9\n$$\n\nDie zusammengefasste rechte Seite stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nMultipliziere $(3k-2)^2$ aus und vergleiche mit dem gedruckten Quadrat.\n\n$$\n(3k-2)^2=(3k-2)(3k-2)\n$$\n\n$$\n(3k-2)(3k-2)=(3k)^2-2\\cdot(3k)\\cdot 2+2^2\n$$\n\n$$\n(3k)^2=9k^2\n$$\n\n$$\n2\\cdot(3k)\\cdot 2=12k\n$$\n\n$$\n2^2=4\n$$\n\n$$\n(3k-2)^2=9k^2-12k+4\n$$\n\n$$\n9k^2-12k+3\n$$\n\nDer konstante Term ist $4$ , nicht $3$ .\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nBringe alle Terme auf eine Seite und erkenne ein Quadrat.\n\n$$\n\\begin{aligned}\na&=5\\\\\nb&=2\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na^2-ab\\ge ab-b^2\\\\\na^2-ab-(ab-b^2)\\ge 0\\\\\na^2-ab-ab+b^2\\ge 0\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na^2-2ab+b^2\\ge 0\\\\\n(a-b)^2\\ge 0\\\\\n5-2&=3\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n3^2&=9\\\\\n9\\ge 0\n\\end{aligned}\n$$\n\nEin Quadrat ist nichtnegativ, daher gilt die umgestellte Ungleichung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nMultipliziere $(2h+5)^2$ aus und vergleiche mit der gedruckten Behauptung.\n\n$$\n(2h+5)^2=(2h+5)(2h+5)\n$$\n\n$$\n(2h+5)(2h+5)=(2h)^2+2\\cdot(2h)\\cdot 5+5^2\n$$\n\n$$\n(2h)^2=4h^2\n$$\n\n$$\n2\\cdot(2h)\\cdot 5=20h\n$$\n\n$$\n5^2=25\n$$\n\n$$\n(2h+5)^2=4h^2+20h+25\n$$\n\n$$\n4h^2+10h+25\n$$\n\nDer Querbegriff ist $20h$ , nicht $10h$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": null
+  },
+  {
+    "case_id": "MATH 2.07",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Binomial identities — set 3",
+    "context_en": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
+    "statements_en": [
+      "With $m=1$ and $n=1$, both $m^4+4n^4$ and $(m^2+2n^2)^2$ equal $5$.",
+      "If $c^{-3}d^2=2$, then $\\dfrac{c^8d^3}{c^2d^7}+3cd\\cdot\\dfrac{c^{-6}d^5}{c^7d^{-2}}=48$ for $c,d\\neq 0$.",
+      "For $x\\neq 2$, it holds that $\\dfrac{x^{2}-4}{x-2}=x+2$.",
+      "With $a=1$, $b=2$, $c=2$, $d=1$, both $(a^2+b^2)(c^2+d^2)$ and $(ac-bd)^2+(ad+bc)^2$ equal $25$.",
+      "Expanding $(x+y)^2$ and subtracting $x^2+xy+y^2$ leaves $0$ at $x=y=1$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nSubstitute the given values into both sides and compare.\n\n$$\nm=1\n$$\n\n$$\nn=1\n$$\n\n$$\nm^4=1^4\n$$\n\n$$\n1^4=1\n$$\n\n$$\nn^4=1^4\n$$\n\n$$\n4n^4=4\\cdot 1\n$$\n\n$$\n4\\cdot 1=4\n$$\n\n$$\nm^4+4n^4=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nm^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nn^2=1^2\n$$\n\n$$\n2n^2=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nm^2+2n^2=1+2\n$$\n\n$$\n1+2=3\n$$\n\n$$\n(m^2+2n^2)^2=3^2\n$$\n\n$$\n3^2=9\n$$\n\n$$\n5\\neq 9\n$$\n\nThe sides disagree with the claim that both equal $5$.\n\nSo the statement is False.\n",
+      "**B.** → False\n\nReduce each power quotient with the exponent laws, then use $c^{-3}d^2=2$.\n\n$$\nc^{-3}d^2=2\n$$\n\n$$\n\\dfrac{c^{8}d^{3}}{c^{2}d^{7}}=c^{8-2}d^{3-7}\n$$\n\n$$\n8-2=6\n$$\n\n$$\n3-7=-4\n$$\n\n$$\nc^{6}d^{-4}=(c^{-3}d^{2})^{-2}\n$$\n\n$$\n(c^{-3}d^{2})^{-2}=2^{-2}\n$$\n\n$$\n2^{-2}=\\dfrac{1}{4}\n$$\n\n$$\n\\dfrac{c^{-6}d^{5}}{c^{7}d^{-2}}=c^{-6-7}d^{5-(-2)}\n$$\n\n$$\n-6-7=-13\n$$\n\n$$\n5-(-2)=7\n$$\n\n$$\n3cd\\cdot c^{-13}d^{7}=3c^{1-13}d^{1+7}\n$$\n\n$$\n1-13=-12\n$$\n\n$$\n1+7=8\n$$\n\n$$\n3c^{-12}d^{8}=3(c^{-3}d^{2})^{4}\n$$\n\n$$\n(c^{-3}d^{2})^{4}=2^{4}\n$$\n\n$$\n2^{4}=16\n$$\n\n$$\n3\\cdot 16=48\n$$\n\n$$\n\\dfrac{1}{4}+48=\\dfrac{1}{4}+\\dfrac{192}{4}\n$$\n\n$$\n\\dfrac{1}{4}+\\dfrac{192}{4}=\\dfrac{193}{4}\n$$\n\n$$\n\\dfrac{193}{4}=48.25\n$$\n\n$$\n48.25\\neq 48\n$$\n\nThe expression evaluates to $48.25$, not $48$.\n\nSo the statement is False.\n",
+      "**C.** → True\n\nFactor the numerator as a difference of squares, then cancel the common factor on the stated domain.\n\n$$\n\\dfrac{x^{2}-4}{x-2}\n$$\n\n$$\n4=2^{2}\n$$\n\n$$\nx^{2}-4=x^{2}-2^{2}\n$$\n\n$$\nx^{2}-2^{2}=(x-2)(x+2)\n$$\n\n$$\n\\dfrac{(x-2)(x+2)}{x-2}\n$$\n\n$$\nx\\neq 2\n$$\n\n$$\n\\dfrac{(x-2)(x+2)}{x-2}=x+2\n$$\n\nOn $x\\neq 2$ the cancelled form matches the claim.\n\nSo the statement is True.\n",
+      "**D.** → True\n\nSubstitute the given values into both sides and compare.\n\n$$\na=1\n$$\n\n$$\nb=2\n$$\n\n$$\nc=2\n$$\n\n$$\nd=1\n$$\n\n$$\na^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nb^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\na^2+b^2=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nc^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\nd^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nc^2+d^2=4+1\n$$\n\n$$\n4+1=5\n$$\n\n$$\n(a^2+b^2)(c^2+d^2)=5\\cdot 5\n$$\n\n$$\n5\\cdot 5=25\n$$\n\n$$\nac=1\\cdot 2\n$$\n\n$$\n1\\cdot 2=2\n$$\n\n$$\nbd=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nac-bd=2-2\n$$\n\n$$\n2-2=0\n$$\n\n$$\n(ac-bd)^2=0^2\n$$\n\n$$\n0^2=0\n$$\n\n$$\nad=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\nbc=2\\cdot 2\n$$\n\n$$\n2\\cdot 2=4\n$$\n\n$$\nad+bc=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\n(ad+bc)^2=5^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n0+25=25\n$$\n\nBoth sides equal $25$, as claimed.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nExpand the square, subtract the printed trinomial, and evaluate at $x=y=1$.\n\n$$\n(x+y)^{2}=x^{2}+2xy+y^{2}\n$$\n\n$$\n(x+y)^{2}-(x^{2}+xy+y^{2})=xy\n$$\n\n$$\nx=1\n$$\n\n$$\ny=1\n$$\n\n$$\nxy=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\n1\\neq 0\n$$\n\nThe difference is $xy$, not $0$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": null,
+    "title_de_existing": "Binomische Identitäten — Menge 3",
+    "context_de_existing": "Es seien $x$ und $y$ reelle Zahlen. Welche der folgenden Aussagen ist/sind richtig?",
+    "statements_de_existing": [
+      "Mit $m=1$ und $n=1$ sind sowohl $m^4+4n^4$ als auch $(m^2+2n^2)^2$ gleich $5$.",
+      "Wenn $c^{-3}d^2=2$, dann gilt $\\dfrac{c^8d^3}{c^2d^7}+3cd\\cdot\\dfrac{c^{-6}d^5}{c^7d^{-2}}=48$ für $c,d\\neq 0$.",
+      "Für $x\\neq 2$ gilt $\\dfrac{x^{2}-4}{x-2}=x+2$.",
+      "Mit $a=1$, $b=2$, $c=2$, $d=1$ sind sowohl $(a^2+b^2)(c^2+d^2)$ als auch $(ac-bd)^2+(ad+bc)^2$ gleich $25$.",
+      "Ausmultiplizieren von $(x+y)^2$ und Subtrahieren von $x^2+xy+y^2$ lässt bei $0$ den Rest $x=y=1$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\nm&=1\\\\\nn&=1\\\\\nm^4&=1^4\\\\\n1^4&=1\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nn^4&=1^4\\\\\n4n^4&=4\\cdot 1\\\\\n4\\cdot 1&=4\\\\\nm^4+4n^4&=1+4\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n1+4&=5\\\\\nm^2&=1^2\\\\\n1^2&=1\\\\\nn^2&=1^2\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n2n^2&=2\\cdot 1\\\\\n2\\cdot 1&=2\\\\\nm^2+2n^2&=1+2\\\\\n1+2&=3\n\\end{aligned}\n$$\n\n$$(m^2+2n^2)^2=3^2 = 9$$\n\n$$5\\neq 9$$\n\nDie Seiten widersprechen der Behauptung, beide seien gleich $5$.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nReduziere jeden Leistungsquotienten mit den Exponentengesetzen und verwende dann $c^{-3}d^2=2$ .\n\n$$\n\\begin{aligned}\nc^{-3}d^2&=2\\\\\n\\dfrac{c^{8}d^{3}}{c^{2}d^{7}}&=c^{8-2}d^{3-7}\\\\\n8-2&=6\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n3-7&=-4\\\\\nc^{6}d^{-4}&=(c^{-3}d^{2})^{-2}\\\\\n(c^{-3}d^{2})^{-2}&=2^{-2}\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n2^{-2}&=\\dfrac{1}{4}\\\\\n\\dfrac{c^{-6}d^{5}}{c^{7}d^{-2}}&=c^{-6-7}d^{5-(-2)}\\\\\n-6-7&=-13\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n5-(-2)&=7\\\\\n3cd\\cdot c^{-13}d^{7}&=3c^{1-13}d^{1+7}\\\\\n1-13&=-12\\\\\n1+7&=8\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n3c^{-12}d^{8}&=3(c^{-3}d^{2})^{4}\\\\\n(c^{-3}d^{2})^{4}&=2^{4}\\\\\n2^{4}&=16\\\\\n3\\cdot 16&=48\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\dfrac{1}{4}+48&=\\dfrac{1}{4}+\\dfrac{192}{4}\\\\\n\\dfrac{1}{4}+\\dfrac{192}{4}&=\\dfrac{193}{4}\\\\\n\\dfrac{193}{4}&=48.25\n\\end{aligned}\n$$\n\n$$48.25\\neq 48$$\n\nDer Ausdruck bewertet $48.25$ , nicht $48$ .\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nFaktor den Zähler als eine Differenz von Quadraten, dann lösche den gemeinsamen Faktor auf der angegebenen Definitionsmenge.\n\n$$\n\\dfrac{x^{2}-4}{x-2}\n$$\n\n$$\n4=2^{2}\n$$\n\n$$\nx^{2}-4=x^{2}-2^{2}\n$$\n\n$$\nx^{2}-2^{2}=(x-2)(x+2)\n$$\n\n$$\n\\dfrac{(x-2)(x+2)}{x-2}\n$$\n\n$$\nx\\neq 2\n$$\n\n$$\n\\dfrac{(x-2)(x+2)}{x-2}=x+2\n$$\n\nAuf $x\\neq 2$ stimmt die gekürzte Form mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\na&=1,\\quad b=2,\\quad c=2,\\quad d=1\\\\\na^2+b^2&=1^2+2^2=1+4=5\\\\\nc^2+d^2&=2^2+1^2=4+1=5\\\\\n(a^2+b^2)(c^2+d^2)&=5\\cdot 5=25\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nac-bd&=1\\cdot 2-2\\cdot 1=0\\\\\n(ac-bd)^2&=0\\\\\nad+bc&=1\\cdot 1+2\\cdot 2=1+4=5\\\\\n(ad+bc)^2&=25\\\\\n(ac-bd)^2+(ad+bc)^2&=0+25=25\n\\end{aligned}\n$$\n\nBeide Seiten sind gleich $25$, wie behauptet.\n\nDie Aussage ist wahr.\n",
+      "**E.** → Falsch\n\nMultipliziere das Quadrat aus, subtrahiere das gedruckte Trinom und werte bei $x=y=1$ aus.\n\n$$\n(x+y)^{2}=x^{2}+2xy+y^{2}\n$$\n\n$$\n(x+y)^{2}-(x^{2}+xy+y^{2})=xy\n$$\n\n$$\nx=1\n$$\n\n$$\ny=1\n$$\n\n$$\nxy=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\n1\\neq 0\n$$\n\nDer Unterschied ist $xy$ , nicht $0$ .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": null
+  },
+  {
+    "case_id": "MATH 2.09",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Grouping a linear sum inside a square difference",
+    "context_en": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
+    "statements_en": [
+      "With $p=5$ and $q=3$, both $(p+q)^2-(p-q)^2$ and $4pq$ equal $60$.",
+      "With $a=1$, $b=2$, $c=2$, $d=1$, both $(a^2+b^2)(c^2+d^2)$ and $(ac-bd)^2+(ad+bc)^2$ equal $25$.",
+      "With $m=1$ and $n=1$, both $m^4+4n^4$ and $(m^2+2n^2)^2$ equal $5$.",
+      "Expanding $(5+1)^2$ and comparing with $5^2+1$ shows the two values agree.",
+      "With $a=5$ and $b=2$, rearranging $a^2-ab\\ge ab-b^2$ produces $(a-b)^2\\ge 0$, which holds."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nExpand both squares, subtract, and compare with $4pq$.\n\n$$\np=5\n$$\n\n$$\nq=3\n$$\n\n$$\np+q=5+3\n$$\n\n$$\n5+3=8\n$$\n\n$$\n8^2=64\n$$\n\n$$\np-q=5-3\n$$\n\n$$\n5-3=2\n$$\n\n$$\n2^2=4\n$$\n\n$$\n64-4=60\n$$\n\n$$\n4pq=4\\cdot 5\\cdot 3\n$$\n\n$$\n5\\cdot 3=15\n$$\n\n$$\n4\\cdot 15=60\n$$\n\nBoth sides equal $60$.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nSubstitute the given values into both sides and compare.\n\n$$\na=1\n$$\n\n$$\nb=2\n$$\n\n$$\nc=2\n$$\n\n$$\nd=1\n$$\n\n$$\na^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nb^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\na^2+b^2=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nc^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\nd^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nc^2+d^2=4+1\n$$\n\n$$\n4+1=5\n$$\n\n$$\n(a^2+b^2)(c^2+d^2)=5\\cdot 5\n$$\n\n$$\n5\\cdot 5=25\n$$\n\n$$\nac=1\\cdot 2\n$$\n\n$$\n1\\cdot 2=2\n$$\n\n$$\nbd=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nac-bd=2-2\n$$\n\n$$\n2-2=0\n$$\n\n$$\n(ac-bd)^2=0^2\n$$\n\n$$\n0^2=0\n$$\n\n$$\nad=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\nbc=2\\cdot 2\n$$\n\n$$\n2\\cdot 2=4\n$$\n\n$$\nad+bc=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\n(ad+bc)^2=5^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n0+25=25\n$$\n\nBoth sides equal $25$, as claimed.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nSubstitute the given values into both sides and compare.\n\n$$\nm=1\n$$\n\n$$\nn=1\n$$\n\n$$\nm^4=1^4\n$$\n\n$$\n1^4=1\n$$\n\n$$\nn^4=1^4\n$$\n\n$$\n4n^4=4\\cdot 1\n$$\n\n$$\n4\\cdot 1=4\n$$\n\n$$\nm^4+4n^4=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nm^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nn^2=1^2\n$$\n\n$$\n2n^2=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nm^2+2n^2=1+2\n$$\n\n$$\n1+2=3\n$$\n\n$$\n(m^2+2n^2)^2=3^2\n$$\n\n$$\n3^2=9\n$$\n\n$$\n5\\neq 9\n$$\n\nThe sides disagree with the claim that both equal $5$.\n\nSo the statement is False.\n",
+      "**D.** → False\n\nExpand the square fully and compare with the truncated right-hand side.\n\n$$\n(5+1)^2=(5+1)(5+1)\n$$\n\n$$\n(5+1)(5+1)=5^2+2\\cdot 5\\cdot 1+1^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n2\\cdot 5\\cdot 1=10\n$$\n\n$$\n1^2=1\n$$\n\n$$\n25+10+1=36\n$$\n\n$$\n5^2=25\n$$\n\n$$\n25+1=26\n$$\n\n$$\n36\\neq 26\n$$\n\nThe truncated form drops the cross term, so the values disagree.\n\nSo the statement is False.\n",
+      "**E.** → True\n\nMove all terms to one side and recognise a square.\n\n$$\na=5\n$$\n\n$$\nb=2\n$$\n\n$$\na^2-ab\\ge ab-b^2\n$$\n\n$$\na^2-ab-(ab-b^2)\\ge 0\n$$\n\n$$\na^2-ab-ab+b^2\\ge 0\n$$\n\n$$\na^2-2ab+b^2\\ge 0\n$$\n\n$$\n(a-b)^2\\ge 0\n$$\n\n$$\n5-2=3\n$$\n\n$$\n3^2=9\n$$\n\n$$\n9\\ge 0\n$$\n\nA square is nonnegative, so the rearranged inequality holds.\n\nSo the statement is True.\n"
+    ],
+    "solution_overview_en": null,
+    "title_de_existing": "Gruppierung einer linearen Summe in einer Quadratdifferenz",
+    "context_de_existing": "Es seien $x$ und $y$ reelle Zahlen. Welche der folgenden Aussagen ist/sind richtig?",
+    "statements_de_existing": [
+      "Mit $p=5$ und $q=3$ sind sowohl $(p+q)^2-(p-q)^2$ als auch $4pq$ gleich $60$.",
+      "Mit $a=1$, $b=2$, $c=2$, $d=1$ sind sowohl $(a^2+b^2)(c^2+d^2)$ als auch $(ac-bd)^2+(ad+bc)^2$ gleich $25$.",
+      "Mit $m=1$ und $n=1$ sind sowohl $m^4+4n^4$ als auch $(m^2+2n^2)^2$ gleich $5$.",
+      "Ausmultiplizieren von $(5+1)^2$ und Vergleich mit $5^2+1$ zeigt, dass beide Werte übereinstimmen.",
+      "Mit $a=5$ und $b=2$ liefert Umstellen von $a^2-ab\\ge ab-b^2$ die Beziehung $(a-b)^2\\ge 0$, die gilt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nMultipliziere beide Quadrate aus, subtrahiere und vergleiche mit $4pq$.\n\n$$\n\\begin{aligned}\np&=5\\\\\nq&=3\\\\\np+q&=5+3\\\\\n5+3&=8\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n8^2&=64\\\\\np-q&=5-3\\\\\n5-3&=2\\\\\n2^2&=4\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n64-4&=60\\\\\n4pq&=4\\cdot 5\\cdot 3\\\\\n5\\cdot 3&=15\\\\\n4\\cdot 15&=60\n\\end{aligned}\n$$\n\nBeide Seiten sind gleich $60$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\na&=1,\\quad b=2,\\quad c=2,\\quad d=1\\\\\na^2+b^2&=1^2+2^2=1+4=5\\\\\nc^2+d^2&=2^2+1^2=4+1=5\\\\\n(a^2+b^2)(c^2+d^2)&=5\\cdot 5=25\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nac-bd&=1\\cdot 2-2\\cdot 1=0\\\\\n(ac-bd)^2&=0\\\\\nad+bc&=1\\cdot 1+2\\cdot 2=1+4=5\\\\\n(ad+bc)^2&=25\\\\\n(ac-bd)^2+(ad+bc)^2&=0+25=25\n\\end{aligned}\n$$\n\nBeide Seiten sind gleich $25$, wie behauptet.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Falsch\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\nm&=1\\\\\nn&=1\\\\\nm^4&=1^4\\\\\n1^4&=1\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nn^4&=1^4\\\\\n4n^4&=4\\cdot 1\\\\\n4\\cdot 1&=4\\\\\nm^4+4n^4&=1+4\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n1+4&=5\\\\\nm^2&=1^2\\\\\n1^2&=1\\\\\nn^2&=1^2\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n2n^2&=2\\cdot 1\\\\\n2\\cdot 1&=2\\\\\nm^2+2n^2&=1+2\\\\\n1+2&=3\n\\end{aligned}\n$$\n\n$$(m^2+2n^2)^2=3^2 = 9$$\n\n$$5\\neq 9$$\n\nDie Seiten widersprechen der Behauptung, beide seien gleich $5$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nMultipliziere das Quadrat vollständig aus und vergleiche mit der verkürzten rechten Seite.\n\n$$(5+1)^2=(5+1)(5+1) = 5^2+2\\cdot 5\\cdot 1+1^2 = 25 = 10$$\n\n$$\n\\begin{aligned}\n1^2&=1\\\\\n25+10+1&=36\\\\\n5^2&=25\\\\\n25+1&=26\n\\end{aligned}\n$$\n\n$$36\\neq 26$$\n\nDie verkürzte Form lässt den Kreuzterm weg, daher stimmen die Werte nicht überein.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBringe alle Terme auf eine Seite und erkenne ein Quadrat.\n\n$$\n\\begin{aligned}\na&=5\\\\\nb&=2\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na^2-ab\\ge ab-b^2\\\\\na^2-ab-(ab-b^2)\\ge 0\\\\\na^2-ab-ab+b^2\\ge 0\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\na^2-2ab+b^2\\ge 0\\\\\n(a-b)^2\\ge 0\\\\\n5-2&=3\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n3^2&=9\\\\\n9\\ge 0\n\\end{aligned}\n$$\n\nEin Quadrat ist nichtnegativ, daher gilt die umgestellte Ungleichung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": null
+  },
+  {
+    "case_id": "MATH 2.13",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Cubes whose odd-powered terms survive",
+    "context_en": "Let $x$ and $y$ be real numbers. Which of the following statements is/are correct?",
+    "statements_en": [
+      "Working from the pair $(\\alpha,\\beta)$, rewriting $(\\alpha+\\beta)^3-(\\alpha-\\beta)^3$ as $6\\alpha^2\\beta+2\\beta^3$.",
+      "With $a=1$, $b=2$, $c=2$, $d=1$, both $(a^2+b^2)(c^2+d^2)$ and $(ac-bd)^2+(ad+bc)^2$ equal $25$.",
+      "Expanding $(5+2)^2$ and comparing with $5^2+2^2$ shows the two values agree.",
+      "Expanding $(x+2)^3$ yields $x^3+6x^2+12x+8$.",
+      "Expanding $(2+1)^3$ by the pattern $x^3+3xy^2+y^3$ yields $15$, claimed equal to $27$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nExpand both cubes and subtract; only the odd-powered terms in $\\beta$ survive.\n\n$$\n(\\alpha+\\beta)^{3}=\\alpha^{3}+3\\alpha^{2}\\beta+3\\alpha\\beta^{2}+\\beta^{3}\n$$\n\n$$\n(\\alpha-\\beta)^{3}=\\alpha^{3}-3\\alpha^{2}\\beta+3\\alpha\\beta^{2}-\\beta^{3}\n$$\n\n$$\n\\alpha^{3}-\\alpha^{3}=0\n$$\n\n$$\n3\\alpha^{2}\\beta-(-3\\alpha^{2}\\beta)=6\\alpha^{2}\\beta\n$$\n\n$$\n3\\alpha\\beta^{2}-3\\alpha\\beta^{2}=0\n$$\n\n$$\n\\beta^{3}-(-\beta^{3})=2\\beta^{3}\n$$\n\n$$\n(\\alpha+\\beta)^{3}-(\\alpha-\\beta)^{3}=6\\alpha^{2}\\beta+2\\beta^{3}\n$$\n\nThe rewritten form matches the claim.\n\nSo the statement is True.\n",
+      "**B.** → True\n\nSubstitute the given values into both sides and compare.\n\n$$\na=1\n$$\n\n$$\nb=2\n$$\n\n$$\nc=2\n$$\n\n$$\nd=1\n$$\n\n$$\na^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nb^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\na^2+b^2=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\nc^2=2^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\nd^2=1^2\n$$\n\n$$\n1^2=1\n$$\n\n$$\nc^2+d^2=4+1\n$$\n\n$$\n4+1=5\n$$\n\n$$\n(a^2+b^2)(c^2+d^2)=5\\cdot 5\n$$\n\n$$\n5\\cdot 5=25\n$$\n\n$$\nac=1\\cdot 2\n$$\n\n$$\n1\\cdot 2=2\n$$\n\n$$\nbd=2\\cdot 1\n$$\n\n$$\n2\\cdot 1=2\n$$\n\n$$\nac-bd=2-2\n$$\n\n$$\n2-2=0\n$$\n\n$$\n(ac-bd)^2=0^2\n$$\n\n$$\n0^2=0\n$$\n\n$$\nad=1\\cdot 1\n$$\n\n$$\n1\\cdot 1=1\n$$\n\n$$\nbc=2\\cdot 2\n$$\n\n$$\n2\\cdot 2=4\n$$\n\n$$\nad+bc=1+4\n$$\n\n$$\n1+4=5\n$$\n\n$$\n(ad+bc)^2=5^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n0+25=25\n$$\n\nBoth sides equal $25$, as claimed.\n\nSo the statement is True.\n",
+      "**C.** → False\n\nExpand the square fully and compare with $5^2+2^2$.\n\n$$\n(5+2)^2=(5+2)(5+2)\n$$\n\n$$\n(5+2)(5+2)=5^2+2\\cdot 5\\cdot 2+2^2\n$$\n\n$$\n5^2=25\n$$\n\n$$\n2\\cdot 5\\cdot 2=20\n$$\n\n$$\n2^2=4\n$$\n\n$$\n25+20+4=49\n$$\n\n$$\n5^2=25\n$$\n\n$$\n2^2=4\n$$\n\n$$\n25+4=29\n$$\n\n$$\n49\\neq 29\n$$\n\nThe truncated form drops the cross term, so the values disagree.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nExpand the cube by the binomial cube identity, term by term.\n\n$$\n(x+2)^3=(x+2)(x+2)(x+2)\n$$\n\n$$\n(x+2)^3=x^3+3x^2\\cdot 2+3x\\cdot 2^2+2^3\n$$\n\n$$\n3x^2\\cdot 2=6x^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\n3x\\cdot 4=12x\n$$\n\n$$\n2^3=8\n$$\n\n$$\n(x+2)^3=x^3+6x^2+12x+8\n$$\n\nThe expansion matches the claim.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nExpand $(2+1)^{3}$ with the full cube identity and compare with the incomplete pattern.\n\n$$\n(2+1)^{3}=(2+1)(2+1)(2+1)\n$$\n\n$$\n2+1=3\n$$\n\n$$\n3^{2}=9\n$$\n\n$$\n9\\cdot 3=27\n$$\n\n$$\nx=2\n$$\n\n$$\ny=1\n$$\n\n$$\nx^{3}=2^{3}\n$$\n\n$$\n2^{2}=4\n$$\n\n$$\n4\\cdot 2=8\n$$\n\n$$\n3x^{2}y=3\\cdot 4\\cdot 1\n$$\n\n$$\n3\\cdot 4=12\n$$\n\n$$\n12\\cdot 1=12\n$$\n\n$$\n3xy^{2}=3\\cdot 2\\cdot 1\n$$\n\n$$\n3\\cdot 2=6\n$$\n\n$$\n6\\cdot 1=6\n$$\n\n$$\ny^{3}=1\n$$\n\n$$\n8+12=20\n$$\n\n$$\n20+6=26\n$$\n\n$$\n26+1=27\n$$\n\n$$\nx^{3}+3xy^{2}+y^{3}=8+6+1\n$$\n\n$$\n8+6=14\n$$\n\n$$\n14+1=15\n$$\n\n$$\n15\\neq 27\n$$\n\nThe incomplete pattern drops $3x^{2}y$ and fails to match $27$.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": null,
+    "title_de_existing": "Kuben, deren ungeradzahlige Potenzen erhalten bleiben",
+    "context_de_existing": "Es seien $x$ und $y$ reelle Zahlen. Welche der folgenden Aussagen ist/sind richtig?",
+    "statements_de_existing": [
+      "Arbeiten aus dem Paar $(\\alpha,\\beta)$ , Umschreiben $(\\alpha+\\beta)^3-(\\alpha-\\beta)^3$ als $6\\alpha^2\\beta+2\\beta^3$ .",
+      "Mit $a=1$, $b=2$, $c=2$, $d=1$ sind sowohl $(a^2+b^2)(c^2+d^2)$ als auch $(ac-bd)^2+(ad+bc)^2$ gleich $25$.",
+      "Ausmultiplizieren von $(5+2)^2$ und Vergleich mit $5^2+2^2$ zeigt, dass beide Werte übereinstimmen.",
+      "Ausmultiplizieren von $(x+2)^3$ liefert $x^3+6x^2+12x+8$.",
+      "Ausmultiplizieren von $(2+1)^3$ nach dem Muster $x^3+3xy^2+y^3$ liefert $15$, behauptet gleich $27$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nMultipliziere beide Kuben aus und subtrahiere; nur die ungeradzahligen Potenzen in $\\beta$ bleiben übrig.\n\n$$\n(\\alpha+\\beta)^{3}=\\alpha^{3}+3\\alpha^{2}\\beta+3\\alpha\\beta^{2}+\\beta^{3}\n$$\n\n$$\n(\\alpha-\\beta)^{3}=\\alpha^{3}-3\\alpha^{2}\\beta+3\\alpha\\beta^{2}-\\beta^{3}\n$$\n\n$$\n\\alpha^{3}-\\alpha^{3}=0\n$$\n\n$$\n3\\alpha^{2}\\beta-(-3\\alpha^{2}\\beta)=6\\alpha^{2}\\beta\n$$\n\n$$\n3\\alpha\\beta^{2}-3\\alpha\\beta^{2}=0\n$$\n\n$$\n\\beta^{3}-(-\beta^{3})=2\\beta^{3}\n$$\n\n$$\n(\\alpha+\\beta)^{3}-(\\alpha-\\beta)^{3}=6\\alpha^{2}\\beta+2\\beta^{3}\n$$\n\nDas neu geschriebene Formular entspricht dem Behauptung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze die gegebenen Werte auf beiden Seiten ein und vergleiche.\n\n$$\n\\begin{aligned}\na&=1,\\quad b=2,\\quad c=2,\\quad d=1\\\\\na^2+b^2&=1^2+2^2=1+4=5\\\\\nc^2+d^2&=2^2+1^2=4+1=5\\\\\n(a^2+b^2)(c^2+d^2)&=5\\cdot 5=25\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nac-bd&=1\\cdot 2-2\\cdot 1=0\\\\\n(ac-bd)^2&=0\\\\\nad+bc&=1\\cdot 1+2\\cdot 2=1+4=5\\\\\n(ad+bc)^2&=25\\\\\n(ac-bd)^2+(ad+bc)^2&=0+25=25\n\\end{aligned}\n$$\n\nBeide Seiten sind gleich $25$, wie behauptet.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Falsch\n\nMultipliziere das Quadrat vollständig aus und vergleiche mit $5^2+2^2$.\n\n$$(5+2)^2=(5+2)(5+2) = 5^2+2\\cdot 5\\cdot 2+2^2 = 25 = 20$$\n\n$$\n\\begin{aligned}\n2^2&=4\\\\\n25+20+4&=49\\\\\n5^2&=25\\\\\n2^2&=4\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n25+4&=29\\\\\n49\\neq 29\n\\end{aligned}\n$$\n\nDie verkürzte Form lässt den Kreuzterm weg, daher stimmen die Werte nicht überein.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nMultipliziere den Kubus mit der binomischen Kubus-Identität Term für Term aus.\n\n$$\n(x+2)^3=(x+2)(x+2)(x+2)\n$$\n\n$$\n(x+2)^3=x^3+3x^2\\cdot 2+3x\\cdot 2^2+2^3\n$$\n\n$$\n3x^2\\cdot 2=6x^2\n$$\n\n$$\n2^2=4\n$$\n\n$$\n3x\\cdot 4=12x\n$$\n\n$$\n2^3=8\n$$\n\n$$\n(x+2)^3=x^3+6x^2+12x+8\n$$\n\nDie Ausmultiplikation stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nMultipliziere $(2+1)^{3}$ mit der vollständigen Kubus-Identität aus und vergleiche mit dem unvollständigen Muster.\n\n$$\n\\begin{aligned}\n(2+1)^{3}&=(2+1)(2+1)(2+1)\\\\\n2+1&=3\\\\\n3^{2}&=9\\\\\n9\\cdot 3&=27\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nx&=2\\\\\ny&=1\\\\\nx^{3}&=2^{3}\\\\\n2^{2}&=4\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n4\\cdot 2&=8\\\\\n3x^{2}y&=3\\cdot 4\\cdot 1\\\\\n3\\cdot 4&=12\\\\\n12\\cdot 1&=12\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n3xy^{2}&=3\\cdot 2\\cdot 1\\\\\n3\\cdot 2&=6\\\\\n6\\cdot 1&=6\\\\\ny^{3}&=1\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n8+12&=20\\\\\n20+6&=26\\\\\n26+1&=27\\\\\nx^{3}+3xy^{2}+y^{3}&=8+6+1\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n8+6&=14\\\\\n14+1&=15\n\\end{aligned}\n$$\n\n$$15\\neq 27$$\n\nDas unvollständige Muster lässt $3x^{2}y$ fallen und stimmt nicht mit $27$ überein.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": null
+  }
+]

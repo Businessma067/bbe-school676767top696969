@@ -1,0 +1,138 @@
+CASE MATH 11.65
+ANSWER [true, true, true, false, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Happy-hour revenue is $R(Q)=15Q$ for $Q\le 20$, so
+$$R^{\prime}(Q)=15\qquad(Q<20).$$
+After the promotion, $R(Q)=300+8(Q-20)$ gives
+$$R^{\prime}(Q)=8\qquad(Q>20).$$
+Mixing cost is constant at $C^{\prime}(Q)=10$. Comparing pieces:
+$$P^{\prime}(12)=15-10=5>0,$$
+while at $Q=25$ one has $P^{\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$. Happy-hour $R^{\prime}=15$ vs post-promotion $R^{\prime}=8$ against $C^{\prime}=10$: expand at $12$, not at $25$.
+
+=== A ===
+**A.** → True
+
+On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives
+
+$$
+R^{\prime}(Q) = 15
+$$
+
+$$
+\text{for }Q<20
+$$
+
+For $Q<20$, marginal revenue is $15$
+
+Until the twentieth drink, revenue is a ray of slope $15$, so each extra happy-hour drink adds $15$ euros of revenue.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
+
+$$
+R^{\prime}(Q) = 8
+$$
+
+$$
+\text{for }Q>20
+$$
+
+Comparing with the constant marginal cost $C^{\prime}(Q)=10$ gives
+
+$$
+8<10
+$$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
+
+Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+At $Q=12$ the bar is still in happy hour, so $R^{\prime}(12)=15$. Then
+
+$$
+P^{\prime}(12) = R^{\prime}(12)-C^{\prime}(12)
+$$
+
+$$
+P^{\prime}(12) = 15-10
+$$
+
+$$
+15 - 10 = 5
+$$
+
+$$
+P^{\prime}(12) = 5 = 5
+$$
+
+$$
+P^{\prime}(12) = 5>0
+$$
+
+A positive derivative means a small extra drink raises profit at $Q=12$
+
+Happy-hour marginal revenue still beats mixing cost, so a small extra drink at $Q=12$ raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+At $Q=25$ the promotion has ended, so $R^{\prime}(25)=8$. Then
+
+$$
+P^{\prime}(25) = 8-10
+$$
+
+$$
+8 - 10 = -2
+$$
+
+$$
+P^{\prime}(25) = -2 = -2
+$$
+
+$$
+P^{\prime}(25) = -2<0
+$$
+
+Post-promotion revenue no longer beats cost at the margin
+
+At $Q=25$ one should not expand: the post-promotion slope $8$ is already below cost $10$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is False.
+
+=== E ===
+**E.** → False
+
+The $15$-euro figure applies only on the happy-hour piece $Q\le 20$.
+
+At $Q=25$ the manager's post-promotion rule already gives
+
+$$
+R^{\prime}(25) = 8
+$$, not $15$, and the extra drink does not bring in $15$ euros
+
+Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+

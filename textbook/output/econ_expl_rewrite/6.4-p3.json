@@ -1,0 +1,282 @@
+[
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.051",
+    "title": "Share Price and Market Capitalisation 51",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=38\nFebruary | Price=41\nMarch | Price=42\nApril | Price=43\nMay | Price=47\nJune | Price=46\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=57000\nFebruary | Volume=25000\nMarch | Volume=86000\nApril | Volume=30000\nMay | Volume=43000\nJune | Volume=28000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 38 | 57,000 |\n| February | 41 | 25,000 |\n| March | 42 | 86,000 |\n| April | 43 | 30,000 |\n| May | 47 | 43,000 |\n| June | 46 | 28,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 234 |\n| Shares outstanding | 411,000 |\n| Total shares traded (six months) | 269,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.",
+      "Market capitalisation at the last month exceeds €14.3 million.",
+      "Total shares traded over six months exceed 10.3% of shares outstanding.",
+      "Highest closing price is more than 27.1% above the lowest.",
+      "Peak monthly share turnover exceeds 86,167 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "These match the textbook motives for buying shares.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €18.9 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 65.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €38-€47. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 86,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.052",
+    "title": "Listed Company Performance Charts 52",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=36\nFebruary | Price=36\nMarch | Price=35\nApril | Price=35\nMay | Price=32\nJune | Price=40\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=89000\nMarch | Volume=95000\nApril | Volume=35000\nMay | Volume=60000\nJune | Volume=23000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 36 | 19,000 |\n| February | 36 | 89,000 |\n| March | 35 | 95,000 |\n| April | 35 | 35,000 |\n| May | 32 | 60,000 |\n| June | 40 | 23,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 277 |\n| Shares outstanding | 612,000 |\n| Total shares traded (six months) | 321,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A corporation is not obliged to pay a dividend every year regardless of performance; unpaid dividends over a longer period may make the shares less attractive, but payment is not legally required every year.",
+      "Market capitalisation at the last month exceeds €21.1 million.",
+      "Total shares traded over six months exceed 10.1% of shares outstanding.",
+      "Peak monthly share turnover exceeds 62,416 shares.",
+      "Shares outstanding equal 612,000."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Dividends are not a mandatory annual cash outflow.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €24.5 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 52.5% of shares outstanding.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 95,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shares outstanding = 612,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.053",
+    "title": "Earnings Per Share From Reported Figures 53",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=20\nFebruary | Price=18\nMarch | Price=16\nApril | Price=15\nMay | Price=13\nJune | Price=13\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=38000\nFebruary | Volume=23000\nMarch | Volume=63000\nApril | Volume=34000\nMay | Volume=76000\nJune | Volume=58000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 20 | 38,000 |\n| February | 18 | 23,000 |\n| March | 16 | 63,000 |\n| April | 15 | 34,000 |\n| May | 13 | 76,000 |\n| June | 13 | 58,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 263 |\n| Shares outstanding | 467,000 |\n| Total shares traded (six months) | 292,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 34.7% from first to last month.",
+      "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not.",
+      "Highest closing price is more than 38.1% above the lowest.",
+      "Market capitalisation rose by more than 14.4% over the period.",
+      "Operating result is below €254 thousand."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Price change ≈ -35.0%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "New share capital arises at issue, not in aftermarket trades.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Range €13-€20. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: €9.3m → €6.1m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 263.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.054",
+    "title": "Tailored Reports for Managers",
+    "context": "Analyze why tax authorities are treated as external users of financial accounting information. Evaluate the following economic assertions:",
+    "statements": [
+      "Lenders of a hospitality group are users outside day-to-day management, so they mainly rely on the business's published financial accounting statements.",
+      "Management accounting reports prepared for managers of a construction contractor must use exactly the same statutory format as the published financial statements.",
+      "Employees of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements.",
+      "Lenders of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.",
+      "Managers of a hospitality group work inside the business and can be given management accounting reports designed around their own questions."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Lenders sit outside daily management and depend on financial accounting rather than internal management reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Internal users such as employees can receive management accounting far more often than the annual financial statements.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Financial accounting statements reach external users such as lenders on the statutory annual cycle.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Managers are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.055",
+    "title": "Why Employees Read Trading Updates",
+    "context": "Review how the frequency of reporting differs between financial accounting and management accounting. Evaluate the following economic assertions:",
+    "statements": [
+      "Managers of a hospitality group can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.",
+      "Reports prepared for managers of a hospitality group can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.",
+      "Employees of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.",
+      "Owners of a hospitality group look at accounting information mainly to judge the return earned on the capital they have invested.",
+      "Management accounting reports prepared for employees of a construction contractor must use exactly the same statutory format as the published financial statements."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Management accounting can reach internal users such as managers far more frequently than annual financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Employees are internal users who can receive management accounting tailored to their needs.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Owners focus on the return earned on the capital they have invested when they use accounting information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.056",
+    "title": "Earnings Per Share From Reported Figures 56",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=34\nFebruary | Price=31\nMarch | Price=29\nApril | Price=27\nMay | Price=27\nJune | Price=25\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=32000\nFebruary | Volume=77000\nMarch | Volume=81000\nApril | Volume=25000\nMay | Volume=50000\nJune | Volume=42000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 34 | 32,000 |\n| February | 31 | 77,000 |\n| March | 29 | 81,000 |\n| April | 27 | 25,000 |\n| May | 27 | 50,000 |\n| June | 25 | 42,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 252 |\n| Shares outstanding | 891,000 |\n| Total shares traded (six months) | 307,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.",
+      "Market capitalisation at the last month exceeds €20.6 million.",
+      "Peak monthly share turnover exceeds 56,233 shares.",
+      "Shares outstanding equal 891,000.",
+      "High inventory turnover indicates that goods sell well and do not remain in stock for a long time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "These match the textbook motives for buying shares.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market capitalisation ≈ €22.3 million.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 81,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Shares outstanding = 891,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Fast inventory turnover signals healthy stock movement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.057",
+    "title": "Share Price and Market Capitalisation 57",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=28\nFebruary | Price=29\nMarch | Price=30\nApril | Price=31\nMay | Price=33\nJune | Price=36\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=40000\nFebruary | Volume=60000\nMarch | Volume=67000\nApril | Volume=81000\nMay | Volume=43000\nJune | Volume=44000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 28 | 40,000 |\n| February | 29 | 60,000 |\n| March | 30 | 67,000 |\n| April | 31 | 81,000 |\n| May | 33 | 43,000 |\n| June | 36 | 44,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 274 |\n| Shares outstanding | 711,000 |\n| Total shares traded (six months) | 335,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation's cash reserves.",
+      "The closing share price rose by more than 31.5% from first to last month.",
+      "Market capitalisation rose by more than 32.9% over the period.",
+      "Highest closing price is more than 41% above the lowest.",
+      "Operating result is below €267 thousand."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary-market price rises do not raise new company cash.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, price change ≈ 28.6%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €19.9m → €25.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "From the figures or classification rule involved, range €28-€36. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 274.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.058",
+    "title": "Listed Company Performance Charts 58",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=19\nFebruary | Price=20\nMarch | Price=20\nApril | Price=20\nMay | Price=20\nJune | Price=24\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=80000\nFebruary | Volume=27000\nMarch | Volume=35000\nApril | Volume=30000\nMay | Volume=61000\nJune | Volume=20000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 19 | 80,000 |\n| February | 20 | 27,000 |\n| March | 20 | 35,000 |\n| April | 20 | 30,000 |\n| May | 20 | 61,000 |\n| June | 24 | 20,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 313 |\n| Shares outstanding | 779,000 |\n| Total shares traded (six months) | 253,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 33.9% from first to last month.",
+      "Highest closing price is more than 36.9% above the lowest.",
+      "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.",
+      "Total shares traded over six months exceed 37.4% of shares outstanding.",
+      "Peak monthly share turnover exceeds 86,180 shares."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "From the figures or classification rule involved, price change ≈ 26.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: Range €19-€24. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Secondary-market price rises do not raise new company cash.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Turnover ≈ 32.5% of shares outstanding.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 80,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.059",
+    "title": "Earnings Per Share From Reported Figures 59",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=31\nFebruary | Price=28\nMarch | Price=26\nApril | Price=25\nMay | Price=23\nJune | Price=20\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=19000\nFebruary | Volume=65000\nMarch | Volume=41000\nApril | Volume=46000\nMay | Volume=71000\nJune | Volume=46000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 31 | 19,000 |\n| February | 28 | 65,000 |\n| March | 26 | 41,000 |\n| April | 25 | 46,000 |\n| May | 23 | 71,000 |\n| June | 20 | 46,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 224 |\n| Shares outstanding | 830,000 |\n| Total shares traded (six months) | 288,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "The closing share price rose by more than 23.4% from first to last month.",
+      "Market capitalisation rose by more than 16% over the period.",
+      "Peak monthly share turnover exceeds 79,688 shares.",
+      "Operating result is below €209 thousand.",
+      "Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Price change ≈ -35.5%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Apply the case evidence: €25.7m → €16.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Peak monthly volume = 71,000.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Operating result = 224.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Absolute profit is not enough without relating it to capital employed.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "6.4",
+    "case_id": "CASE 6.4.060",
+    "title": "Share Price and Market Capitalisation 60",
+    "context": "Consider the share market extract below for a listed business whose identity is not disclosed.\n\n[[CHART type=\"line\" title=\"Closing share price\"]]\nJanuary | Price=42\nFebruary | Price=42\nMarch | Price=42\nApril | Price=45\nMay | Price=48\nJune | Price=52\n[[/CHART]]\n\n[[CHART type=\"bar\" title=\"Monthly share turnover\"]]\nJanuary | Volume=23000\nFebruary | Volume=78000\nMarch | Volume=56000\nApril | Volume=18000\nMay | Volume=58000\nJune | Volume=41000\n[[/CHART]]\n\n| Month | Closing price (€) | Shares traded |\n| --- | ---: | ---: |\n| January | 42 | 23,000 |\n| February | 42 | 78,000 |\n| March | 42 | 56,000 |\n| April | 45 | 18,000 |\n| May | 48 | 58,000 |\n| June | 52 | 41,000 |\n\n| Annual figures | Amount |\n| --- | ---: |\n| Operating result (€ thousands) | 283 |\n| Shares outstanding | 413,000 |\n| Total shares traded (six months) | 274,000 |\n\nEvaluate the following economic assertions:",
+    "statements": [
+      "Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long.",
+      "The closing share price rose by more than 20.2% from first to last month.",
+      "Highest closing price is more than 36.7% above the lowest.",
+      "Earnings per share exceeds €0.55.",
+      "Peak monthly share turnover exceeds 63,983 shares."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Annual dividends are not a legal obligation every year.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Apply the case evidence: Price change ≈ 23.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "From the figures or classification rule involved, range €42-€52. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Earnings per share ≈ €0.69.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Peak monthly volume = 78,000.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  }
+]

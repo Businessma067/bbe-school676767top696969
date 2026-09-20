@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.26",
+    "title": "Time versus money trap",
+    "context": "Analyze how opportunity cost applies when a decision-maker faces several scarce alternatives. Evaluate the following economic assertions:",
+    "statements": [
+      "Choosing a free concert over paid overtime forfeits wage income as opportunity cost.",
+      "Opportunity cost applies only when both alternatives have explicit price tags attached.",
+      "Leisure time spent volunteering forfeits paid work hours that could have been chosen instead.",
+      "Non-financial enjoyment never enters opportunity-cost reasoning under any circumstances.",
+      "Scarce time creates opportunity cost while other determinants remain unchanged."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Forgone overtime wages are the next-best alternative when the free concert is chosen.",
+      "Time and non-monetary benefits also define forgone alternatives.",
+      "Volunteer hours could have been sold as paid labour instead.",
+      "Enjoyment and experience can be part of what is given up or gained.",
+      "Zero price does not mean zero opportunity cost when time is scarce."
+    ],
+    "tactical_explanations": [
+      "The concert ticket may cost nothing, but the evening hours still have a next-best use. Taking the free concert means skipping the overtime shift, so the wage income that shift would have paid is what is given up. That forgone wage is the opportunity cost of the concert.\n\nThe statement is true.",
+      "Opportunity cost is the benefit of the next-best alternative forgone, not a rule that both options must carry sticker prices. Time, leisure, and unpaid activities can define forgone benefits just as cash prices can. Requiring explicit price tags on both sides is too narrow.\n\nThe statement is false.",
+      "Hours spent volunteering cannot also be sold as paid labour. The next-best paid shift that could have filled those hours is forgone, so volunteer leisure still carries an opportunity cost in lost wage income.\n\nThe statement is true.",
+      "Enjoyment and experience can be part of what someone gains or gives up. Opportunity cost can include non-financial benefits of the next-best alternative; the claim that enjoyment never enters the reasoning is too absolute.\n\nThe statement is false.",
+      "Even when money, prices, and other conditions stay put, a finite block of time cannot serve two uses at once. Choosing one use forgoes the benefit of the next-best use of those hours, so scarce time alone is enough to create opportunity cost.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.27",
+    "title": "Scarcity 'only for governments'?",
+    "context": "Consider tobias claims scarce resources matter only for governments managing huge budgets. Evaluate the following economic assertions:",
+    "statements": [
+      "A family choosing debt repayment versus a home extension faces the same allocation problem as government, smaller scale.",
+      "Scarcity affects only governments, never households or firms, by definition.",
+      "Smaller money amounts mean families face no genuine opportunity cost in their decisions.",
+      "Debt repayment opportunity cost exists only if the family is also a registered business.",
+      "Only decisions involving millions of people can be analysed with opportunity cost."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Households face scarce budgets and forgone alternatives just like governments.",
+      "Scarcity applies to households and firms as well as governments.",
+      "Opportunity cost depends on alternatives forgone, not on budget size alone.",
+      "Household financial choices carry opportunity cost without business registration.",
+      "Opportunity cost applies at any scale where resources are limited."
+    ],
+    "tactical_explanations": [
+      "A household with limited funds cannot both repay debt early and build the extension in full. That is the same scarce-budget allocation problem a government faces when it chooses among programmes, only scaled down to family size.\n\nThe statement is true.",
+      "Scarcity is not reserved for public budgets. Households and firms also have limited resources relative to wants, so Tobias's claim that scarcity never touches them is wrong by definition.\n\nThe statement is false.",
+      "Opportunity cost depends on what is forgone, not on how large the euro amounts look. A small family budget still forces a choice between alternatives, and the benefit of the option not taken remains real.\n\nThe statement is false.",
+      "A registered business form is irrelevant. When a family uses scarce funds to repay debt rather than pursue another use, the forgone benefit of that next-best use is still opportunity cost.\n\nThe statement is false.",
+      "Opportunity cost applies wherever resources are limited and a choice is made, whether the decision touches millions or a single household. Scale does not gate the concept.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.28",
+    "title": "Hospital bed allocation",
+    "context": "Consider a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. Evaluate the following economic assertions:",
+    "statements": [
+      "The last ICU bed is a scarce resource allocated between scheduled and emergency use.",
+      "Assigning emergency means opportunity cost is scheduled surgery health benefit forgone.",
+      "Assigning scheduled means opportunity cost is emergency patient's treatment benefit forgone.",
+      "Healthcare rationing never involves opportunity cost because medical ethics override economics.",
+      "Even non-monetary life-saving benefits can represent opportunity cost between patients."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "One bed, two patients: scarce medical capacity.",
+      "Scheduled surgery benefit is forgone when emergency gets the bed.",
+      "Emergency treatment benefit is forgone when scheduled patient gets the bed.",
+      "Limited beds force trade-offs even in healthcare settings.",
+      "Forgone treatment outcomes can define opportunity cost without euro pricing."
+    ],
+    "tactical_explanations": [
+      "One remaining ICU bed cannot serve both the scheduled patient and the emergency arrival at once. That bed is scarce medical capacity that must be allocated between those two uses.\n\nThe statement is true.",
+      "Giving the bed to the emergency case means the scheduled surgery cannot go ahead in that slot. The health benefit that surgery would have delivered is the next-best alternative forgone, so it is the opportunity cost.\n\nThe statement is true.",
+      "Giving the bed to the scheduled patient means the emergency admission waits or is diverted. The treatment benefit the emergency patient would have received is what is given up.\n\nThe statement is true.",
+      "Ethics guide how clinicians weigh outcomes, but they do not erase the fact that one bed forces a trade-off. Limited capacity still creates opportunity cost even when medical values shape the choice.\n\nThe statement is false.",
+      "Opportunity cost need not be priced in euros. Forgone life-saving or health benefits for the patient who does not get the bed can define what is given up.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.29",
+    "title": "Opportunity cost direction",
+    "context": "Review common misunderstandings of opportunity cost when households allocate limited income. Evaluate the following economic assertions:",
+    "statements": [
+      "Opportunity cost always refers to the next-best alternative not chosen, not all rejected options combined.",
+      "Opportunity cost is identical for both sides of a trade because both parties give something up.",
+      "If no measurable financial benefit exists, opportunity cost is always zero by definition.",
+      "Choosing the lower-return option means opportunity cost is zero because the better option was available.",
+      "Households, firms, and governments all face opportunity cost when allocating scarce resources."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Only the single highest-value forgone alternative counts.",
+      "Each party's next-best alternative differs; the concept is not automatically symmetric in amount.",
+      "Non-financial benefits can still represent forgone alternatives.",
+      "Choosing lower return still forgoes the higher-return alternative as opportunity cost.",
+      "Universal application across actor types is standard."
+    ],
+    "tactical_explanations": [
+      "By definition, opportunity cost is the value of the single next-best alternative forgone. Adding every rejected option would double-count uses that could not all have been taken at once.\n\nThe statement is true.",
+      "Each side of a trade gives something up, but each party's next-best alternative is usually different in kind and amount. Opportunity cost is not automatically the same figure for both parties.\n\nThe statement is false.",
+      "Financial measurement is convenient, not required. Leisure, health, learning, and other non-cash benefits can still be forgone, so a missing euro figure does not force opportunity cost to zero.\n\nThe statement is false.",
+      "Choosing the lower-return option is exactly when opportunity cost bites hardest: the higher-return alternative is what was available and not taken. That forgone higher return is the opportunity cost, not zero.\n\nThe statement is false.",
+      "Whenever households, firms, or governments allocate scarce resources among competing uses, choosing one path means forgoing the next-best path. The concept applies across all three actor types.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.30",
+    "title": "Universal allocation principle",
+    "context": "Assess the basic economic problem across actors and resources. Evaluate the following economic assertions:",
+    "statements": [
+      "Limited resources relative to wants force households, firms, and governments to make choices.",
+      "Allocation means deciding how to distribute scarce resources among competing uses.",
+      "Choosing one course of action means forgoing the benefit that the next-best feasible alternative would have delivered.",
+      "Economising is necessary whenever resources are scarce rather than unlimited.",
+      "The same logic applies whether the scarce resource is money, land, labour hours, or hospital beds."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Universal scarcity creates choices for all actor types.",
+      "Allocation is the act of distributing limited resources among alternatives.",
+      "Standard definition of opportunity cost across contexts.",
+      "Economising responds to scarcity for any resource type.",
+      "Scarcity is resource-general, not limited to cash budgets."
+    ],
+    "tactical_explanations": [
+      "Wants outrun available means for households, firms, and governments alike. Limited resources relative to those wants force each group to choose among alternatives.\n\nThe statement is true.",
+      "Allocation is exactly that distribution decision: how scarce resources are split among competing uses rather than spread without limit.\n\nThe statement is true.",
+      "That sentence is the standard definition of opportunity cost. Taking one feasible course means giving up the benefit the next-best feasible course would have delivered.\n\nThe statement is true.",
+      "When resources are scarce, careful use matters. Economising is the response to that limit; it would be unnecessary only if resources were truly unlimited.\n\nThe statement is true.",
+      "The scarcity logic does not depend on the resource being cash. Money, land, labour hours, and hospital beds are all finite relative to competing claims, so the same choice-and-trade-off pattern applies.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.31",
+    "title": "Printing Press Allocation",
+    "context": "Analyze how a print shop allocates one press between school workbooks and wedding invitations this week. Evaluate the following economic assertions:",
+    "statements": [
+      "The owner economises by scheduling shorter setup times between runs to fit both queues partially.",
+      "Households, firms, and governments all allocate scarce resources among competing uses.",
+      "Choosing wedding jobs means opportunity cost is the workbook contract income forgone instead.",
+      "One press for one week is a scarce resource split between workbook runs and wedding jobs.",
+      "Opportunity cost equals the electricity bill for the press rather than forgone wedding revenue."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Careful scheduling under capacity limits reflects economising.",
+      "Universal scarcity creates allocation choices for all actor types.",
+      "Workbook income is the next-best alternative when weddings are prioritised.",
+      "Fixed machine time forces a choice among print queues.",
+      "Opportunity cost is the alternative's benefit, not the chosen job's operating cost."
+    ],
+    "tactical_explanations": [
+      "The press has limited hours this week. Cutting setup time between runs stretches that scarce capacity so both queues get some space. That careful use under a binding limit is economising.\n\nThe statement is true.",
+      "Scarce means force choices for households, firms, and governments. Each allocates limited resources among competing uses, so the print shop's problem sits in the same family.\n\nThe statement is true.",
+      "Prioritising wedding jobs occupies press time that could have printed workbooks. The income from that workbook contract is the next-best alternative forgone, so it is the opportunity cost.\n\nThe statement is true.",
+      "One machine and one week's hours cannot print unlimited volumes of both products. Press capacity is scarce and must be split between the workbook and wedding queues.\n\nThe statement is true.",
+      "Electricity is a cost of running the chosen jobs, not the benefit of the alternative forgone. Opportunity cost is what the next-best use of the press would have delivered, such as forgone wedding or workbook revenue, not the power bill itself.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.32",
+    "title": "Lena's Evening Course Dilemma",
+    "context": "Consider Lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. Evaluate the following economic assertions:",
+    "statements": [
+      "Tuesday evening hours are scarce because Lena cannot fully attend class and babysit at once.",
+      "Enjoyment of babysitting would not remove forgone classroom benefits from the decision.",
+      "Only cash income can ever appear in opportunity-cost reasoning.",
+      "Educational courses eliminate opportunity cost because skills are valuable.",
+      "Personal schedules are unrelated to government budget allocation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "One evening slot creates a binary time allocation.",
+      "Satisfaction and opportunity cost can coexist.",
+      "Non-financial learning benefits can represent forgone alternatives.",
+      "Forgone wage income remains even when education is chosen.",
+      "Both split limited resources among competing uses."
+    ],
+    "tactical_explanations": [
+      "Lena has one Tuesday evening. She cannot be fully in class and fully on a babysitting shift at the same time, so those hours are scarce and must be allocated one way or the other.\n\nThe statement is true.",
+      "Liking babysitting may make that choice pleasant, but it does not erase what class would have delivered. Forgone classroom benefits still sit in the opportunity-cost comparison.\n\nThe statement is true.",
+      "Cash wages are one common measure, not the only admissible one. Learning, contacts, and other non-financial gains can count as benefits of a forgone alternative.\n\nThe statement is false.",
+      "Valuable skills make the course attractive; they do not cancel opportunity cost. Choosing class still forgoes the babysitting wage (or other next-best use of the evening).\n\nThe statement is false.",
+      "A personal evening schedule and a government budget look different in scale, but both allocate limited resources among competing uses. The same scarcity logic links them.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.33",
+    "title": "River Dam Release Decision",
+    "context": "Review how water managers allocate limited reservoir releases between hydropower generation and downstream irrigation. Evaluate the following economic assertions:",
+    "statements": [
+      "Prioritising hydropower means opportunity cost is the crop yield benefit forgone downstream.",
+      "Economising appears when managers time releases to limit evaporation losses during heatwaves.",
+      "Prioritising irrigation means opportunity cost is the electricity revenue forgone from reduced turbine flow.",
+      "Governments managing dams face the same scarce-resource problem described for households and firms.",
+      "Reservoir releases this season are a scarce resource allocated between power and irrigation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Forgone crop yield is the next-best alternative when power wins.",
+      "Reducing waste under scarcity reflects economising.",
+      "Forgone power revenue is the next-best alternative.",
+      "Public agencies also split limited inputs among goals.",
+      "Fixed water volume forces prioritisation among uses."
+    ],
+    "tactical_explanations": [
+      "Water sent through the turbines is not available in the same volume for downstream fields. The crop-yield benefit that irrigation would have delivered is the next-best use forgone when hydropower is prioritised.\n\nThe statement is true.",
+      "Timing releases to cut evaporation during heatwaves squeezes more useful water from a limited stock. That reduction of waste under scarcity is economising.\n\nThe statement is true.",
+      "Water held for irrigation does not spin the turbines as hard. The electricity revenue that fuller turbine flow would have earned is what is given up.\n\nThe statement is true.",
+      "Public dam managers, like households and firms, work with limited inputs and competing goals. Scarce water forces the same kind of allocation problem.\n\nThe statement is true.",
+      "This season's release volume is finite. Power and irrigation both claim it, so the water must be allocated between those uses.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.34",
+    "title": "Film Studio Sound Stage",
+    "context": "Consider a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. Evaluate the following economic assertions:",
+    "statements": [
+      "Opportunity cost is the benefit of the next-best alternative given up, not the fee for the chosen shoot.",
+      "Creative projects have no opportunity cost because art is non-financial.",
+      "Studios with waiting lists face no scarcity because demand is strong.",
+      "Corporate booking systems follow different laws from household budgets.",
+      "Commercial shoots always dominate, so documentaries carry zero forgone value."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Standard definition applies to studio booking.",
+      "Forgone hire fees count as financial opportunity cost.",
+      "Physical stage time remains limited even with strong demand.",
+      "Both involve choosing among alternatives under limits.",
+      "Each booking direction forgoes the other's benefits."
+    ],
+    "tactical_explanations": [
+      "The fee for the shoot that is booked is the price of the chosen use. Opportunity cost is instead the benefit of the next-best booking that is turned away, such as the forgone hire from the other crew.\n\nThe statement is true.",
+      "Calling a project \"art\" does not delete trade-offs. Booking the stage for a documentary still forgoes the commercial hire (and vice versa), so creative work carries opportunity cost like any other use of scarce stage time.\n\nThe statement is false.",
+      "A waiting list signals strong demand; it does not create extra Friday hours on the only sound stage. Physical stage time remains scarce precisely because more users want it than can be served at once.\n\nThe statement is false.",
+      "Corporate booking software and household budgets differ in tools and scale, but both choose among alternatives under limited means. There is no separate economic law that exempts studio scheduling.\n\nThe statement is false.",
+      "Even if commercials often win commercially, a documentary booking still forgoes whatever benefit the commercial would have brought, and the reverse is also true. Neither side has automatic zero forgone value.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.35",
+    "title": "Misreading Combined Totals",
+    "context": "Analyze a student who adds every rejected option's price when calculating opportunity cost. Evaluate the following economic assertions:",
+    "statements": [
+      "If Maya picks a 300-euro tablet over a 450-euro bike, opportunity cost is the bike's benefit forgone, not 750 euros combined.",
+      "Two alternatives are sufficient for opportunity cost; a third option is not required.",
+      "Households, firms, and governments all encounter opportunity cost when allocating scarce resources.",
+      "Adding all rejected prices is the standard textbook definition.",
+      "Liking the chosen item sets opportunity cost to zero."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Combined prices overstate opportunity cost.",
+      "Binary choices still create forgone alternatives.",
+      "Universal application is standard.",
+      "Definition requires one forgone alternative, not combined totals.",
+      "Forgone bike benefit remains even when the tablet is preferred."
+    ],
+    "tactical_explanations": [
+      "Maya spends 300 euros on the tablet and forgoes the bike. Opportunity cost is the benefit that bike would have provided, not 300 + 450 = 750 euros. She never could have enjoyed both purchases with the same funds at once, so summing both prices overstates the forgone alternative.\n\nThe statement is true.",
+      "A binary choice already creates a next-best alternative that is not taken. A third option is unnecessary for opportunity cost to exist.\n\nThe statement is true.",
+      "Whenever scarce resources are allocated, households, firms, and governments forgo the next-best use. Opportunity cost shows up for all three.\n\nThe statement is true.",
+      "The standard definition picks the single next-best alternative forgone. Adding every rejected price is a common student error, not the textbook rule.\n\nThe statement is false.",
+      "Preferring the tablet explains why Maya chooses it; it does not wipe out what the bike would have delivered. That forgone bike benefit remains the opportunity cost.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.36",
+    "title": "Municipal Library Hours",
+    "context": "Review a library allocating limited staff hours between extending weekday opening and launching a weekend children's programme. Evaluate the following economic assertions:",
+    "statements": [
+      "Staff hours this quarter are a scarce resource split between longer weekdays and weekend sessions.",
+      "Launching the weekend programme means opportunity cost is the extra weekday access benefit forgone.",
+      "The council faces the same allocation problem as a family choosing between roof repair and a holiday.",
+      "Economising appears when managers cross-train staff to cover both tasks with the same team.",
+      "Extending weekday hours means opportunity cost is the children's programme benefit forgone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Finite librarian time forces prioritisation.",
+      "Weekday access benefit is forgone when weekends are chosen.",
+      "Both split limited resources among competing goals.",
+      "Using staff flexibly under scarcity reflects economising.",
+      "Programme benefit is the next-best alternative."
+    ],
+    "tactical_explanations": [
+      "Librarian hours this quarter are finite. Longer weekday opening and a weekend children's programme both draw on that same pool, so the hours must be split between those uses.\n\nThe statement is true.",
+      "Staff time spent on weekend sessions is not available to lengthen weekday opening. The extra weekday access that longer hours would have given readers is the benefit forgone.\n\nThe statement is true.",
+      "The council, like a family choosing roof repair versus a holiday, has limited means and competing goals. Both decisions allocate scarce resources among alternatives.\n\nThe statement is true.",
+      "Cross-training so the same team can cover more tasks stretches limited staff capacity. That careful use under scarcity is economising.\n\nThe statement is true.",
+      "Hours devoted to longer weekdays cannot also launch the children's programme. The programme's benefit is the next-best alternative forgone.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.37",
+    "title": "Apprentice Tool Budget",
+    "context": "Consider an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying the measuring set means opportunity cost is the storage and mobility benefit forgone from lacking the chest.",
+      "Scarcity of money here parallels scarcity of time when the apprentice chooses overtime or study.",
+      "One hundred eighty euros is a limited budget allocated between measuring tools and a tool chest.",
+      "Storage furniture is a need and therefore costless to choose.",
+      "Opportunity cost begins only after incorporation as a business."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Tool chest benefit is the next-best alternative.",
+      "Multiple resource types create allocation trade-offs.",
+      "Fixed apprentice funds force a binary choice.",
+      "Forgone measurement capability remains opportunity cost.",
+      "Personal tool budgets carry opportunity cost like firm budgets."
+    ],
+    "tactical_explanations": [
+      "With 180 euros, buying the measuring set means the portable chest is not bought this month. The storage and mobility the chest would have provided are the next-best benefits forgone.\n\nThe statement is true.",
+      "Limited cash forces a binary purchase choice in the same way limited evening hours force a choice between overtime and study. Different resource types, same scarcity logic.\n\nThe statement is true.",
+      "The apprentice has a fixed 180-euro pot that cannot cover both the measuring set and the tool chest in full. That budget is allocated between those two uses.\n\nThe statement is true.",
+      "Labelling storage a \"need\" does not make the choice free. Choosing the chest still forgoes the measuring set's capability, so opportunity cost remains.\n\nThe statement is false.",
+      "Personal tool spending already involves scarce funds and forgone alternatives. Incorporation as a business is not a precondition for opportunity cost.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.38",
+    "title": "Research Lab Centrifuge Slot",
+    "context": "Analyze a lab allocating overnight centrifuge slots either to blood samples or to protein cultures. Evaluate the following economic assertions:",
+    "statements": [
+      "Firms and households are not the only actors allocating scarce resources; research labs do too.",
+      "Medical samples override economics, so opportunity cost is zero.",
+      "Research labs never face trade-offs because science is funded.",
+      "Different experiments in one building never compete for equipment.",
+      "Labs with multiple machines never queue samples."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Lab equipment time is a scarce resource.",
+      "Forgone research results remain opportunity cost.",
+      "Funded labs still forgo alternative experiment benefits.",
+      "Same machine-hour pool creates forgone alternatives.",
+      "Even well-equipped labs face scheduling limits on each machine."
+    ],
+    "tactical_explanations": [
+      "Overnight centrifuge slots are limited equipment time. Research labs allocate that scarce capacity among competing sample types just as firms and households allocate their scarce means.\n\nThe statement is true.",
+      "Medical priority may decide which samples run first; it does not make forgone results disappear. Slots given to blood work still forgo protein-culture progress that night, so opportunity cost is not zero.\n\nThe statement is false.",
+      "Funding pays for machines and staff; it does not create unlimited overnight slots. A funded lab still chooses which experiment runs and forgoes the other.\n\nThe statement is false.",
+      "When experiments share one centrifuge schedule, they compete for the same machine hours. Different projects in one building absolutely can crowd each other out.\n\nThe statement is false.",
+      "Extra machines ease capacity, but each machine still has finite slots. Queues appear whenever samples arrive faster than those slots clear.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.39",
+    "title": "Ferry Deck Space",
+    "context": "Consider a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. Evaluate the following economic assertions:",
+    "statements": [
+      "Economising appears when loaders optimise placement to fit maximum safe tonnage on the deck.",
+      "The operator allocates scarce resources like a government splitting transport investment between rail and road.",
+      "Loading freight means opportunity cost is the passenger-ticket revenue forgone from cars left ashore.",
+      "Deck space on one sailing is a scarce resource split between freight and passenger vehicles.",
+      "Passenger cars are needs for travellers, so freight income disappears."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Efficient stowage under space limits reflects economising.",
+      "Both choose among alternatives with fixed capacity or budget.",
+      "Passenger revenue is the next-best alternative.",
+      "Fixed deck area forces loading choices.",
+      "Forgone freight income remains when cars are prioritised."
+    ],
+    "tactical_explanations": [
+      "Deck area and safe tonnage are binding limits. Arranging vehicles to fill that capacity without waste stretches scarce space, which is economising.\n\nThe statement is true.",
+      "The ferry has fixed deck capacity this sailing; a government has fixed transport funds. Both allocate scarce means between competing uses such as freight versus cars, or rail versus road.\n\nThe statement is true.",
+      "Space filled with trailers cannot also carry the cars left ashore. Passenger-ticket revenue those cars would have paid is the next-best benefit forgone.\n\nThe statement is true.",
+      "One sailing's deck is finite. Freight trailers and passenger cars both claim it, so the space must be split between those vehicle types.\n\nThe statement is true.",
+      "Calling cars a \"need\" for travellers does not erase the operator's trade-off. Prioritising cars still forgoes freight income; freight income does not simply disappear from the comparison.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.40",
+    "title": "Sibling Savings Jar",
+    "context": "Review two siblings sharing one 60-euro savings jar for either a board game or cinema tickets this month. Evaluate the following economic assertions:",
+    "statements": [
+      "Buying cinema tickets means opportunity cost is the repeated home entertainment benefit forgone from lacking the game.",
+      "Households face opportunity cost even when the amount involved is small.",
+      "Sibling pools are unlimited because parents may add coins later.",
+      "Games last longer, so cinema benefits vanish permanently.",
+      "Children never economise because parents should fund every wish."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Board-game benefit is the next-best alternative.",
+      "Forgone alternatives depend on choices, not on large budgets alone.",
+      "Even with top-ups possible, this month's agreed jar remains fixed.",
+      "Forgone cinema outing benefit remains opportunity cost.",
+      "Comparing prices with a fixed jar is economising."
+    ],
+    "tactical_explanations": [
+      "Spending the jar on cinema tickets means the board game is not bought this month. The repeated home entertainment that game would have provided is the next-best benefit forgone.\n\nThe statement is true.",
+      "Sixty euros is small next to a government budget, but the siblings still cannot fund both the game and the tickets from this jar. Forgone alternatives create opportunity cost at any scale.\n\nThe statement is true.",
+      "Parents might top up later, but this month's agreed 60-euro jar is what they are choosing with now. That pool is treated as fixed for the decision, not unlimited.\n\nThe statement is false.",
+      "A longer-lived game may be a reason to prefer it; it does not wipe cinema benefits out of existence. Choosing the game still forgoes the outing's enjoyment as opportunity cost.\n\nThe statement is false.",
+      "Whether parents \"should\" fund wishes is a separate normative claim. With a fixed jar, comparing prices and picking one purchase is already economising behaviour by the children.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.41",
+    "title": "Wind Farm Maintenance Window",
+    "context": "Analyze an operator choosing between turbine inspections and blade repairs during a limited low-wind maintenance window. Evaluate the following economic assertions:",
+    "statements": [
+      "Economising appears when planners bundle tasks that share the same crane setup to save scarce hoist time.",
+      "Technicians can work unlimited hours because wind stops.",
+      "Energy firms are exempt from opportunity-cost reasoning.",
+      "Safety rules remove all opportunity cost from maintenance planning.",
+      "Inspections are regulatory needs, so repairs carry zero forgone value."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Bundling reduces waste of limited equipment time.",
+      "Crew fatigue and daylight still cap usable hours.",
+      "Technician scheduling is a firm allocation problem.",
+      "Delayed inspections still forgo compliance benefits.",
+      "Both tasks offer measurable forgone benefits."
+    ],
+    "tactical_explanations": [
+      "Crane and hoist time inside the low-wind window is scarce. Bundling tasks that share one setup avoids repeated moves and stretches that limited hoist capacity, which is economising.\n\nThe statement is true.",
+      "Calm wind opens a maintenance window; it does not remove fatigue, daylight, or shift limits. Technician hours remain finite even when turbines are idle.\n\nThe statement is false.",
+      "Energy firms schedule crews and equipment under the same scarcity logic as other firms. There is no exemption from opportunity-cost reasoning.\n\nThe statement is false.",
+      "Safety rules constrain how work is done; they do not erase trade-offs inside a short window. Choosing inspections still delays repairs (and the reverse), so opportunity cost remains.\n\nThe statement is false.",
+      "Calling inspections a regulatory need explains why they matter; it does not set repair benefits to zero. Delayed blade repairs still forgo reliability and output gains those repairs would have delivered.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.42",
+    "title": "Grant Writer Project Choice",
+    "context": "Consider a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. Evaluate the following economic assertions:",
+    "statements": [
+      "One staff week is a scarce resource allocated between the housing grant application and the arts grant application.",
+      "Pursuing the arts grant means opportunity cost is the housing programme benefit forgone.",
+      "Pursuing the housing grant means opportunity cost is the arts funding benefit forgone if that proposal is skipped.",
+      "Opportunity cost equals the salary paid to the grant writer.",
+      "Only profit-seeking firms allocate scarce resources."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Limited writer time forces one major proposal this week.",
+      "Housing programme benefit is forgone when arts wins.",
+      "Arts funding benefit is the next-best alternative.",
+      "Writer salary is a cost of chosen work, not the forgone proposal's benefit.",
+      "Charitable organisations also forgo alternative projects."
+    ],
+    "tactical_explanations": [
+      "One staff week cannot fully develop both major proposals. Writer time is scarce and must be allocated between the housing application and the arts application.\n\nThe statement is true.",
+      "Time spent on the arts grant is time not spent on the housing proposal. The housing programme benefit that successful housing funding would have supported is the next-best alternative forgone.\n\nThe statement is true.",
+      "Choosing housing means the arts proposal is skipped this week. The arts funding benefit that proposal might have unlocked is what is given up.\n\nThe statement is true.",
+      "The writer's salary is a cost of employing the person who does the chosen work. Opportunity cost is the benefit of the forgone proposal, not the payroll line for the hours used.\n\nThe statement is false.",
+      "Nonprofits also face limited staff weeks and competing projects. Scarce-resource allocation is not reserved for profit-seeking firms.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.43",
+    "title": "Snowplough Route Priority",
+    "context": "Review a city choosing whether to clear school routes first or hospital access roads after a storm with limited plough hours. Evaluate the following economic assertions:",
+    "statements": [
+      "Clearing schools first means opportunity cost is the emergency-access benefit forgone on hospital roads.",
+      "Clearing hospital roads first means opportunity cost is the pupil transport benefit forgone on school routes.",
+      "Local governments allocate scarce resources among competing uses like households splitting a monthly budget.",
+      "Economising appears when dispatchers sequence routes to minimise return-to-depot deadhead mileage.",
+      "Available plough hours after the storm are a scarce resource allocated between school routes and hospital roads."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Hospital access benefit is the next-best alternative.",
+      "School transport benefit is forgone when hospitals are prioritised.",
+      "Municipal storm budgets and hours mirror household trade-offs.",
+      "Route sequencing saves scarce fuel and hour resources.",
+      "Storm response capacity is finite in the first shift."
+    ],
+    "tactical_explanations": [
+      "Plough hours spent on school routes first leave hospital roads uncleared longer. The emergency-access benefit faster hospital clearance would have provided is the next-best alternative forgone.\n\nThe statement is true.",
+      "Prioritising hospital roads delays school routes. Pupil transport benefits from earlier school clearance are what the city gives up.\n\nThe statement is true.",
+      "A city with limited plough hours and a household with a limited monthly budget both split scarce means among competing claims. The allocation problem is the same in kind.\n\nThe statement is true.",
+      "Sequencing routes to cut empty return mileage saves scarce fuel and crew hours inside the storm window. That careful use of limited capacity is economising.\n\nThe statement is true.",
+      "After the storm, available plough hours are finite. School routes and hospital roads both need them, so those hours must be allocated between the two.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.44",
+    "title": "Dual Internship Offers",
+    "context": "Consider a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. Evaluate the following economic assertions:",
+    "statements": [
+      "Full-time summer weeks are scarce and allocated between the paid placement and the museum internship.",
+      "Individuals face the same scarce-resource problem as firms choosing between two training programmes.",
+      "Higher expected enjoyment at the museum would not erase forgone wages from the decision.",
+      "Accepting the museum internship means opportunity cost is the paid placement wages forgone.",
+      "Only euro amounts may define opportunity cost for graduates."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "One person cannot pursue two full-time paths simultaneously.",
+      "Time and opportunity constraints parallel firm choices.",
+      "Enjoyment and forgone pay can coexist.",
+      "Forgone wages are the financial next-best alternative.",
+      "Experience and contacts can represent forgone benefits."
+    ],
+    "tactical_explanations": [
+      "One graduate cannot work two full-time summer paths at once. Those weeks are scarce and must be allocated to either the paid placement or the museum internship.\n\nThe statement is true.",
+      "A person choosing between two full-time offers faces limited time and mutually exclusive options, just as a firm choosing between two training programmes does. The scarce-resource structure matches.\n\nThe statement is true.",
+      "Enjoying museum work can tip the preference, but it does not cancel the wages the industry placement would have paid. Forgone pay still belongs in the comparison.\n\nThe statement is true.",
+      "Taking the unpaid museum path means not taking the paid industry weeks. Those forgone wages are the financial next-best alternative and thus the opportunity cost on that dimension.\n\nThe statement is true.",
+      "Euros are one way to express forgone benefits, not the only way. Experience, contacts, and portfolio gains from either path can also enter opportunity-cost reasoning.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.45",
+    "title": "Opportunity Cost in Volunteering",
+    "context": "Analyze whether choosing unpaid community work can still involve opportunity cost. Evaluate the following economic assertions:",
+    "statements": [
+      "Personal satisfaction from volunteering does not cancel forgone income or leisure from the unchosen option.",
+      "Volunteering on Saturday can forfeit paid shift income that could have been earned instead.",
+      "Only priced activities create opportunity cost.",
+      "Volunteering is charitable and therefore exempt from economics.",
+      "Opportunity cost equals how happy the volunteer feels afterward."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Satisfaction and opportunity cost can coexist.",
+      "Forgone wage income is a financial opportunity cost.",
+      "Free activities still forgo other uses of the same hours.",
+      "Charitable choices still forgo alternatives.",
+      "Emotional value of chosen activity is separate from forgone alternative."
+    ],
+    "tactical_explanations": [
+      "Feeling good about volunteering explains why someone chooses it. It does not erase the income or leisure that the next-best Saturday use would have delivered; those forgone benefits still count.\n\nThe statement is true.",
+      "Saturday hours spent volunteering cannot also be sold as a paid shift. The wage that shift would have paid is forgone financial opportunity cost.\n\nThe statement is true.",
+      "Zero sticker price does not mean zero opportunity cost. Unpriced hours still have alternative uses, so unpaid activities create forgone benefits too.\n\nThe statement is false.",
+      "Charity describes the motive, not an exemption from scarcity. Choosing volunteer hours still forgoes other uses of the same time.\n\nThe statement is false.",
+      "How happy the volunteer feels is a benefit of the chosen activity. Opportunity cost is the benefit of the alternative not taken, not a happiness score for the path that was chosen.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.46",
+    "title": "Shared Office Meeting Room",
+    "context": "Consider a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. Evaluate the following economic assertions:",
+    "statements": [
+      "Hosting internal training means opportunity cost is the client hire fee and relationship benefit forgone.",
+      "Economising appears when staff foldable walls split the room only if both groups accept reduced capacity.",
+      "The large meeting room for one morning is a scarce resource between the client workshop and internal training.",
+      "The hub operator allocates scarce resources like a firm choosing between two marketing channels.",
+      "Client revenue overrides all internal benefits automatically."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Client hire benefit is the next-best alternative.",
+      "Partial splitting stretches scarce space efficiently.",
+      "One room cannot host both events at once.",
+      "Room time is allocated among competing uses.",
+      "Internal training benefits remain forgone when clients book."
+    ],
+    "tactical_explanations": [
+      "Using the only large room for internal training means the client workshop does not get that morning. The hire fee and relationship benefit the client booking would have brought are the next-best benefits forgone.\n\nThe statement is true.",
+      "Foldable walls let both groups share the space at reduced capacity instead of leaving one group fully locked out. Stretching scarce room capacity that way is economising when both sides accept the compromise.\n\nThe statement is true.",
+      "One large room for one morning cannot host both events fully at once. That room-morning is scarce and must be allocated between the workshop and the training.\n\nThe statement is true.",
+      "The hub chooses how to use scarce room time among competing claims, just as a firm chooses how to spend a scarce marketing budget between channels. Same allocation structure, different resource.\n\nThe statement is true.",
+      "Client revenue often weighs heavily, but it does not automatically erase internal training benefits from the comparison. Those internal benefits remain real forgone value when clients book the room.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.47",
+    "title": "Harvest Crew Assignment",
+    "context": "Review a farm manager assigning a limited harvest crew either to early cherry picking or to trellis repairs before rain. Evaluate the following economic assertions:",
+    "statements": [
+      "Sending the crew to cherries means opportunity cost is the storm-damage reduction benefit forgone from delayed trellis repairs.",
+      "Opportunity cost must always be measured only in euros.",
+      "Weather makes fruit worthless, so revenue opportunity cost is zero.",
+      "Rain removes scarcity because work stops anyway.",
+      "Agricultural decisions are biological only, not economic."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Repair benefit is the next-best alternative.",
+      "Spoilage avoided or caused can represent forgone benefits.",
+      "Unpicked fruit still represents forgone revenue before spoilage.",
+      "Even with weather risk, assignable crew hours remain finite.",
+      "Urgent farm tasks mirror urgent household budget splits."
+    ],
+    "tactical_explanations": [
+      "Crew hours spent picking cherries are hours not spent repairing trellises before the rain. The storm-damage reduction those repairs would have delivered is the next-best benefit forgone.\n\nThe statement is true.",
+      "Euros are a common yardstick, not a mandatory one. Avoided spoilage, saved vines, and other physical outcomes can represent forgone benefits without a cash quote attached.\n\nThe statement is false.",
+      "Weather risk may lower expected fruit value; it does not automatically make unpicked cherries worthless before the storm hits. Revenue still forgone by leaving fruit on the tree is not definitionally zero.\n\nThe statement is false.",
+      "Rain may halt some outdoor work, but assignable crew hours before and around the weather window remain finite. Scarcity of labour time does not vanish because rain is coming.\n\nThe statement is false.",
+      "Biology sets growth and spoilage constraints; economics still governs how limited crew hours are allocated among urgent tasks. Farm decisions are both biological and economic.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.48",
+    "title": "Trainee Nurse Shift Swap",
+    "context": "Consider a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. Evaluate the following economic assertions:",
+    "statements": [
+      "Economising appears when the trainee schedules shorter breaks to fit both tasks partially into one day.",
+      "Choosing the shift means opportunity cost includes improved exam readiness forgone from lost revision time.",
+      "Opportunity cost applies only inside registered companies, not to trainees.",
+      "Exam preparation has zero opportunity cost because licensing is a need.",
+      "Weekends repeat weekly, so Sunday hours are unlimited for scheduling."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Careful time use under scarcity reflects economising behaviour.",
+      "Forgone revision benefit is the next-best alternative when working.",
+      "Personal time allocation mirrors firm project selection under scarcity.",
+      "Forgone paid income remains opportunity cost even when study is essential.",
+      "Each calendar day contains finite hours requiring allocation."
+    ],
+    "tactical_explanations": [
+      "Shorter breaks stretch a scarce day so some paid hours and some revision both fit. That careful packing under a time limit is economising.\n\nThe statement is true.",
+      "Hours on the ward are hours not revising. Improved exam readiness from that lost study time is part of what is forgone when the shift is chosen.\n\nThe statement is true.",
+      "Trainees allocate personal time under scarcity just as firms allocate project time. Opportunity cost does not wait for company registration.\n\nThe statement is false.",
+      "Licensing may be essential, but choosing revision still forgoes the paid shift (and choosing the shift forgoes readiness). Calling study a need does not set its opportunity cost to zero.\n\nThe statement is false.",
+      "Sundays recur on the calendar, yet each Sunday still has a finite number of hours. Repetition of the weekday name does not create unlimited hours inside any one day.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.49",
+    "title": "Scarcity Beyond Cash Budgets",
+    "context": "Assess whether scarcity and opportunity cost apply only when money changes hands. Evaluate the following economic assertions:",
+    "statements": [
+      "Choosing free park recreation over a paid part-time shift forfeits wage income as opportunity cost.",
+      "Smaller budgets still produce genuine opportunity cost when alternatives are forgone.",
+      "A family's fixed garden area allocated between vegetables and flowers illustrates scarce land rather than scarce cash alone.",
+      "Economising is necessary whenever resources are scarce rather than unlimited, regardless of resource type.",
+      "Hospital administrators allocating the last specialist nurse between wards face time scarcity and opportunity cost."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Forgone wages define financial opportunity cost of leisure.",
+      "Scale does not eliminate forgone benefits.",
+      "Land area is a non-monetary scarce resource.",
+      "Careful use responds to finite land, time, or money.",
+      "Specialist nurse hours are scarce across wards."
+    ],
+    "tactical_explanations": [
+      "The park visit may be free at the gate, but the hours still could have been sold as a paid shift. Forgone wage income is the financial opportunity cost of that recreation.\n\nThe statement is true.",
+      "A small budget still forces a choice between alternatives. The benefit of the option not taken remains genuine opportunity cost even when the euro amounts look modest.\n\nThe statement is true.",
+      "Plot area is finite. Splitting it between vegetables and flowers is a land-allocation problem, showing scarcity of a physical resource rather than cash alone.\n\nThe statement is true.",
+      "Economising is the careful response to any scarce means, whether money, land, time, or equipment. The resource type does not remove the need to use limited stocks carefully.\n\nThe statement is true.",
+      "One specialist nurse cannot cover two wards fully at once. Administrators face scarce nurse hours and forgo the care benefits of the ward that waits, which is opportunity cost.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE 2.2.50",
+    "title": "Youth Club Equipment Fund",
+    "context": "Consider a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. Evaluate the following economic assertions:",
+    "statements": [
+      "Nine hundred euros is a limited club fund allocated between sports kits and fridge repair.",
+      "Buying kits means opportunity cost is the food-storage benefit forgone from a broken fridge.",
+      "Repairing the fridge means opportunity cost is the training benefit forgone from lacking new kits.",
+      "Nonprofit budgets are charitable and therefore non-economic.",
+      "Opportunity cost equals the invoice total for the chosen item."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Fixed treasurer funds force a choice among projects.",
+      "Fridge repair benefit is the next-best alternative.",
+      "Kit purchase benefit is forgone when the fridge wins.",
+      "Charitable funds still require allocation among alternatives.",
+      "Chosen purchase price is not the forgone alternative's benefit."
+    ],
+    "tactical_explanations": [
+      "The treasurer has a fixed 900-euro pot. Kits and fridge repair both claim it, so that limited fund must be allocated between those two uses.\n\nThe statement is true.",
+      "Money spent on kits is not available to fix the fridge. The food-storage benefit a working fridge would have provided is the next-best alternative forgone.\n\nThe statement is true.",
+      "Money spent on the fridge is not available for new kits. Training and kit benefits those uniforms would have supported are what is given up.\n\nThe statement is true.",
+      "Charitable purpose describes why the club exists; it does not erase scarce funds. Nonprofit budgets still require economic allocation among competing projects.\n\nThe statement is false.",
+      "The invoice for kits or for the repair is the price of the chosen purchase. Opportunity cost is the benefit of the project not funded, not the euro total on the chosen invoice.\n\nThe statement is false."
+    ]
+  }
+]

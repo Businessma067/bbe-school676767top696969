@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.26",
+    "title": "Local fund raising",
+    "context": "Analyze a local café owner struggles to fund expansion beyond the high street. Evaluate the following economic assertions:",
+    "statements": [
+      "Manufacturing in Austria and selling in Germany satisfies the multinational make-or-sell criterion.",
+      "Limited capital makes it harder for small-area firms to scale marketing or stock levels.",
+      "Globalisation is associated with multinational firms rather than purely local street traders.",
+      "Local scope is established when the owner walks to work regardless of customer location.",
+      "National scope excludes routine foreign production even when imports supply raw materials."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Production in one country and sales in another indicate international scope.\n\nApplied carefully, \"Manufacturing in Austria and selling in Germany satisfies the multinational make-or-sell criterion\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Undercapitalisation constrains growth for geographically focused businesses.\n\nApplied carefully, \"Limited capital makes it harder for small-area firms to scale marketing or stock levels\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Globalisation centres on rising cross-border enterprise activity.\n\nApplied carefully, \"Globalisation is associated with multinational firms rather than purely local street traders\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Scope follows customer and operating geography, not owner commuting.\n\nThe absolute wording \"regardless\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Using imported inputs domestically does not by itself make a firm multinational.\n\nApplied carefully, \"National scope excludes routine foreign production even when imports supply raw materials\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.27",
+    "title": "Regional competitor pressure",
+    "context": "Analyze regional retailers face rivals in nearby towns within the same area. Evaluate the following economic assertions:",
+    "statements": [
+      "A district repair shop with walk-in local trade operates at local geographic scope.",
+      "International firms must manage communication across language differences with customers and staff.",
+      "Selling mobile contracts nationwide within Austria alone fits national scope.",
+      "Joint production abroad signals international activity even if finished goods return home.",
+      "Regional seasonal hotels depend on visitors drawn from a limited geographic catchment."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Nearby walk-in customers within a small area fit local classification.\n\nApplied carefully, \"A district repair shop with walk-in local trade operates at local geographic scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Language barriers are part of international business complexity.\n\nApplied carefully, \"International firms must manage communication across language differences with customers and staff\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide domestic sales without foreign markets align with national classification.\n\nApplied carefully, \"Selling mobile contracts nationwide within Austria alone fits national scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Foreign production partnerships exceed purely national scope.\n\nApplied carefully, \"Joint production abroad signals international activity even if finished goods return home\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Seasonal regional tourism reflects bounded customer geography.\n\nApplied carefully, \"Regional seasonal hotels depend on visitors drawn from a limited geographic catchment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.28",
+    "title": "National distribution network",
+    "context": "Analyze a national wholesaler routes goods through warehouses across the home country. Evaluate the following economic assertions:",
+    "statements": [
+      "Local grocers rely on residents and workers living close to the store for most sales.",
+      "National airlines flying domestic routes reflect national operating scope.",
+      "Compliance with several countries' regulations raises costs for international operators.",
+      "Undercapitalisation is highlighted for local/regional firms but can also constrain ambitious national start-ups.",
+      "Multinational status follows cross-border make-or-sell activity rather than logo design."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Dependence on nearby communities indicates local/regional scope.\n\nApplied carefully, \"Local grocers rely on residents and workers living close to the store for most sales\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide domestic networks align with national classification.\n\nApplied carefully, \"National airlines flying domestic routes reflect national operating scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multiple jurisdictions increase international compliance burdens.\n\nApplied carefully, \"Compliance with several countries' regulations raises costs for international operators\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Capital shortage is emphasised for small-area firms yet not limited to them alone.\n\nApplied carefully, \"Undercapitalisation is highlighted for local/regional firms but can also constrain ambitious national start-ups\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Scope classification depends on geographic activity, not branding alone.\n\nApplied carefully, \"Multinational status follows cross-border make-or-sell activity rather than logo design\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.29",
+    "title": "Cross-border manufacturing",
+    "context": "Analyze components are assembled in one country and packaged in another for export. Evaluate the following economic assertions:",
+    "statements": [
+      "Regional development support often targets firms serving limited local or regional markets.",
+      "A national manufacturer sourcing nationwide has a longer chain than a town-based workshop.",
+      "Cultural differences influence management and customer relations in multinational subsidiaries.",
+      "International firms share one worldwide currency once they join the WTO.",
+      "Export sales to neighbouring countries cross national boundaries and affect scope labels."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Policy programmes frequently aim at geographically bounded operators.\n\nApplied carefully, \"Regional development support often targets firms serving limited local or regional markets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "National scale lengthens supply chains relative to very local producers.\n\nApplied carefully, \"A national manufacturer sourcing nationwide has a longer chain than a town-based workshop\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Culture is among the international factors named.\n\nApplied carefully, \"Cultural differences influence management and customer relations in multinational subsidiaries\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Multiple currencies remain in cross-border business.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Foreign sales contribute to international rather than purely domestic scope.\n\nApplied carefully, \"Export sales to neighbouring countries cross national boundaries and affect scope labels\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.30",
+    "title": "Globalisation rise trend",
+    "context": "Analyze whether globalisation chiefly means more firms operating across borders. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm visible online but shipping only within one city remains local/regional in scope.",
+      "A national supermarket chain is local because each store serves a neighbourhood.",
+      "Regional branding across provinces makes a firm multinational.",
+      "Supply chains shorten when a firm expands from local to national scope.",
+      "A components manufacturer counts as regional because its Austrian roots define scope permanently."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Limited delivery geography indicates local/regional rather than international reach.\n\nApplied carefully, \"A firm visible online but shipping only within one city remains local/regional in scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide domestic retail networks reflect national scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Intra-country regional branding differs from cross-border operations.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "States national chains are longer than local ones.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "A components manufacturer operates internationally with cross-border production and sales.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.31",
+    "title": "Local service radius",
+    "context": "Consider a plumber that serves households within one town only. Evaluate the following economic assertions:",
+    "statements": [
+      "Local firms need not find customers because word of mouth fills every nearby home.",
+      "International operations require awareness of differing economic systems in each market.",
+      "Local market saturation can occur when most proximate customers already purchase from the firm.",
+      "Selling domestically online nationwide is local scope because the website is small.",
+      "International business faces one uniform culture if staff speak English."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Finding enough customers remains a challenge for local/regional firms.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Economic systems vary across countries in international business.\n\nApplied carefully, \"International operations require awareness of differing economic systems in each market\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Nearby customer pools can become saturated for local operators.\n\nApplied carefully, \"Local market saturation can occur when most proximate customers already purchase from the firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Nationwide domestic online sales indicate national scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Cultural differences persist internationally despite a common working language.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.32",
+    "title": "Regional logistics limits",
+    "context": "Analyze regional hauliers move goods within a defined territory but not abroad. Evaluate the following economic assertions:",
+    "statements": [
+      "National telecom operators are multinationals when callers use roaming abroad.",
+      "Currency exposure arises when invoicing and receiving payment in more than one monetary unit.",
+      "Globalisation and multinational growth are linked trends.",
+      "Regional hauliers confined to one territory do not qualify as multinationals.",
+      "National public procurement within one country does not establish multinational scope."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Customer roaming abroad does not make a domestic operator multinational.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Multiple currencies complicate international transactions.\n\nApplied carefully, \"Currency exposure arises when invoicing and receiving payment in more than one monetary unit\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The course connects globalisation to spreading multinational activity.\n\nApplied carefully, \"Globalisation and multinational growth are linked trends\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Territory-limited haulage within one country is regional, not international.\n\nApplied carefully, \"Regional hauliers confined to one territory do not qualify as multinationals\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Domestic tendering remains national activity.\n\nApplied carefully, \"National public procurement within one country does not establish multinational scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.33",
+    "title": "National procurement rules",
+    "context": "Analyze public tenders restrict bidders to national registered firms. Evaluate the following economic assertions:",
+    "statements": [
+      "Cross-border manufacturing is national when products are shipped back to the home market only.",
+      "International scope can arise from foreign sales alone when domestic production continues at home.",
+      "Local cafés may struggle to raise expansion capital despite steady neighbourhood footfall.",
+      "A home-country publisher distributing only domestically fits national scope despite foreign-language titles.",
+      "Multinational enterprises coordinate activities across borders under varied legal rules."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Foreign production contributes to international/multinational scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Make-or-sell logic allows international classification through cross-border sales.\n\nApplied carefully, \"International scope can arise from foreign sales alone when domestic production continues at home\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Undercapitalisation can limit local firms even with regular nearby customers.\n\nApplied carefully, \"Local cafés may struggle to raise expansion capital despite steady neighbourhood footfall\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Translation without foreign sales or production does not establish international scope.\n\nApplied carefully, \"A home-country publisher distributing only domestically fits national scope despite foreign-language titles\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cross-border operations encounter multiple legal systems.\n\nApplied carefully, \"Multinational enterprises coordinate activities across borders under varied legal rules\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.34",
+    "title": "International joint venture",
+    "context": "Analyze two firms from different countries form a production alliance abroad. Evaluate the following economic assertions:",
+    "statements": [
+      "International scope is limited to firms that sell in more than ten countries.",
+      "Globalisation requires every national firm to open a foreign subsidiary.",
+      "Regional hauliers become international by crossing a motorway border sign within one country.",
+      "Undercapitalisation disappears for local firms that join a trade association.",
+      "Regional exporters shipping to nearby foreign markets cross into international scope."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "More than one country in make-or-sell suffices for international classification.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Globalisation describes a trend of rising multinationals, not mandatory foreign units.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Motorway routing within one country does not create international scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Membership does not remove capital constraints on geographic expansion.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Sales beyond the home country contribute to international classification.\n\nApplied carefully, \"Regional exporters shipping to nearby foreign markets cross into international scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.35",
+    "title": "Local community reliance",
+    "context": "Consider a local grocer that depends on nearby residents for most revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Stakeholder geography widens when production and sales spread across countries.",
+      "Globalisation refers to increasing cross-border business activity led by multinationals.",
+      "National distribution networks span the home country and lengthen logistics chains.",
+      "Local enterprises serve customers who chiefly live or work within easy reach of the firm.",
+      "Undercapitalisation makes fund raising harder for firms tied to small geographic markets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Multinational activity spreads stakeholders internationally.\n\nApplied carefully, \"Stakeholder geography widens when production and sales spread across countries\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Defines globalisation through multinational enterprise growth.\n\nApplied carefully, \"Globalisation refers to increasing cross-border business activity led by multinationals\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide distribution extends domestic supply chains.\n\nApplied carefully, \"National distribution networks span the home country and lengthen logistics chains\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Easy physical reach defines local customer proximity.\n\nApplied carefully, \"Local enterprises serve customers who chiefly live or work within easy reach of the firm\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Limited catchments compound capital-raising difficulty for local/regional firms.\n\nApplied carefully, \"Undercapitalisation makes fund raising harder for firms tied to small geographic markets\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.36",
+    "title": "Regional brand recognition",
+    "context": "Analyze a brewery brands itself across one region but not nationally. Evaluate the following economic assertions:",
+    "statements": [
+      "A provincial dairy delivering within one province remains regional rather than multinational.",
+      "Operating in three countries with separate contract laws illustrates international legal complexity.",
+      "National retailers remain national when all stores and sales stay inside the home country.",
+      "International firms face both longer supply chains and diverse legal environments.",
+      "Regional branding across neighbouring counties does not equate to multinational scope."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Intraprovincial delivery stays within regional scope.\n\nApplied carefully, \"A provincial dairy delivering within one province remains regional rather than multinational\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Multiple legal systems accompany multi-country operations.\n\nApplied carefully, \"Operating in three countries with separate contract laws illustrates international legal complexity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Domestic store networks without foreign sales fit national scope.\n\nApplied carefully, \"National retailers remain national when all stores and sales stay inside the home country\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "International scope combines chain length with legal complexity.\n\nApplied carefully, \"International firms face both longer supply chains and diverse legal environments\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Regional identity within one country differs from cross-border operations.\n\nApplied carefully, \"Regional branding across neighbouring counties does not equate to multinational scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.37",
+    "title": "National tax jurisdiction",
+    "context": "Analyze corporate tax is paid only in the home country while all sales stay domestic. Evaluate the following economic assertions:",
+    "statements": [
+      "Regional tour operators serving neighbouring counties only fit regional geographic scope.",
+      "Multinational classification requires activity in more than one country through making and/or selling.",
+      "Cross-border assembly in one country and packaging in another indicates international production scope.",
+      "Local/regional businesses may find customer numbers insufficient for rapid growth.",
+      "National food brands with country-wide sourcing face longer domestic supply chains than corner shops."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Cross-county service within one country remains regional.\n\nApplied carefully, \"Regional tour operators serving neighbouring counties only fit regional geographic scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Either cross-border production or sales can establish international scope.\n\nApplied carefully, \"Multinational classification requires activity in more than one country through making and/or selling\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Splitting production stages across countries exceeds national boundaries.\n\nApplied carefully, \"Cross-border assembly in one country and packaging in another indicates international production scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Finding enough customers is a stated challenge for geographically focused firms.\n\nApplied carefully, \"Local/regional businesses may find customer numbers insufficient for rapid growth\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "National sourcing extends chains beyond neighbourhood suppliers.\n\nApplied carefully, \"National food brands with country-wide sourcing face longer domestic supply chains than corner shops\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.38",
+    "title": "Multinational HR policies",
+    "context": "Analyze hR policies differ by subsidiary country in a group with foreign plants. Evaluate the following economic assertions:",
+    "statements": [
+      "International business crosses cultures as well as legal and economic systems.",
+      "Multinational HR policies are identical worldwide by definition.",
+      "Globalisation highlights growth of firms operating beyond a single country.",
+      "Local/regional firms have longer supply chains than national manufacturers.",
+      "Limited capital restricts a local firm's ability to widen its customer catchment."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Culture joins legal, economic, language, and currency factors internationally.\n\nApplied carefully, \"International business crosses cultures as well as legal and economic systems\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Subsidiaries often adapt hr to local legal and cultural conditions.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Cross-border enterprise expansion defines globalisation.\n\nApplied carefully, \"Globalisation highlights growth of firms operating beyond a single country\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "National operations typically involve longer chains than very local producers.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Undercapitalisation constrains geographic expansion for small-area firms.\n\nApplied carefully, \"Limited capital restricts a local firm's ability to widen its customer catchment\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.39",
+    "title": "Local versus global trap",
+    "context": "Analyze a student labels any online shop as global regardless of sales geography. Evaluate the following economic assertions:",
+    "statements": [
+      "A components manufacturer demonstrates multinational scope through foreign plants and international customers.",
+      "National airlines are local because passengers board at nearby airports.",
+      "Regional seasonal tourism proves multinational scope because visitors hold foreign passports.",
+      "A firm importing components for domestic assembly is a manufacturer in the supplier's country.",
+      "A telecom restricted to domestic mobile plans within one country fits national scope."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The course uses a components manufacturer as a cross-border enterprise example.\n\nApplied carefully, \"A components manufacturer demonstrates multinational scope through foreign plants and international customers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Domestic airport networks reflect national operating scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Foreign passport holders visiting a regional hotel do not make the hotel multinational.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Using imported inputs domestically differs from producing abroad.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Domestic-only service plans align with national classification.\n\nApplied carefully, \"A telecom restricted to domestic mobile plans within one country fits national scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.40",
+    "title": "Regional export share",
+    "context": "Consider a regional exporter that sends forty percent of output to neighbouring countries. Evaluate the following economic assertions:",
+    "statements": [
+      "Local scope follows where customers are served, not where company directors live.",
+      "Selling nationwide online from one town still indicates national scope rather than local.",
+      "Foreign subsidiaries subject HR policy to local legal and cultural conditions.",
+      "National wholesalers routing goods through domestic warehouses operate at national scope.",
+      "Regional seasonal demand shows how customer bases can be geographically bounded."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Activity geography determines scope rather than owner residence.\n\nApplied carefully, \"Local scope follows where customers are served, not where company directors live\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide domestic sales exceed local scope despite owner location.\n\nApplied carefully, \"Selling nationwide online from one town still indicates national scope rather than local\" lines up with the textbook idea without adding an extra restriction.\n\nThe comparison runs in the right direction and attaches the feature to the correct side of the pair.\n\nThe statement is true.",
+      "Multinational hr must adapt to country-specific contexts.\n\nApplied carefully, \"Foreign subsidiaries subject HR policy to local legal and cultural conditions\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide domestic logistics align with national classification.\n\nApplied carefully, \"National wholesalers routing goods through domestic warehouses operate at national scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Seasonality within a limited area reflects regional market limits.\n\nApplied carefully, \"Regional seasonal demand shows how customer bases can be geographically bounded\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.41",
+    "title": "National single market",
+    "context": "Analyze a rail operator carries freight nationwide on domestic routes only. Evaluate the following economic assertions:",
+    "statements": [
+      "Local firms compete chiefly for nearby residents and workers as customers.",
+      "Globalisation and multinational activity are separate unrelated concepts.",
+      "International legal complexity disappears when contracts are written in English.",
+      "International compliance grows when a firm must meet rules in each country of operation.",
+      "Local market saturation cannot occur where a firm offers unique products."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Local markets centre on proximate customer pools.\n\nApplied carefully, \"Local firms compete chiefly for nearby residents and workers as customers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "The course links globalisation to the rise of multinationals.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Multiple legal systems still apply across countries.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Each operating country adds compliance obligations internationally.\n\nApplied carefully, \"International compliance grows when a firm must meet rules in each country of operation\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Uniqueness does not prevent nearby customer pools from becoming saturated.\n\nThe absolute wording \"cannot\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.42",
+    "title": "International compliance cost",
+    "context": "Analyze legal compliance costs rise when operating under multiple countries' rules. Evaluate the following economic assertions:",
+    "statements": [
+      "Globalisation is not limited to manufacturing and applies to cross-border enterprise generally.",
+      "Undercapitalisation remains a risk when local firms cannot finance wider marketing campaigns.",
+      "Regional development grants convert recipients into multinationals.",
+      "Regional hauliers moving goods within a defined territory stay below international scope.",
+      "Manufacturing abroad while selling at home still involves international production scope."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Globalisation concerns multinational activity broadly, not factories alone.\n\nApplied carefully, \"Globalisation is not limited to manufacturing and applies to cross-border enterprise generally\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Limited funds restrict outreach beyond immediate markets.\n\nApplied carefully, \"Undercapitalisation remains a risk when local firms cannot finance wider marketing campaigns\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Regional grants support limited-area firms without establishing cross-border scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Territory-bound haulage without cross-border routes is regional.\n\nApplied carefully, \"Regional hauliers moving goods within a defined territory stay below international scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Foreign manufacturing crosses national boundaries in the make-or-sell framework.\n\nApplied carefully, \"Manufacturing abroad while selling at home still involves international production scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.43",
+    "title": "Local capital constraints",
+    "context": "Consider limited capital makes it harder for a local firm to expand its market area. Evaluate the following economic assertions:",
+    "statements": [
+      "Undercapitalisation is irrelevant once a local firm obtains a bank overdraft.",
+      "National rail freight on domestic routes reflects national operating scope.",
+      "International firms avoid currency issues by invoicing only in the home currency abroad.",
+      "Selling in two countries is still national if both countries share a border.",
+      "National wholesalers are local because each warehouse serves nearby shops."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Overdraft access does not fully remove structural capital constraints.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Domestic route networks fit national classification.\n\nApplied carefully, \"National rail freight on domestic routes reflects national operating scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cross-border trade still involves currency conversion and exposure.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Cross-border sales indicate international scope regardless of adjacency.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Country-wide domestic logistics align with national scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.44",
+    "title": "Regional seasonal demand",
+    "context": "Analyze a seaside hotel relies on regional seasonal visitors. Evaluate the following economic assertions:",
+    "statements": [
+      "International joint ventures abroad signal cross-border enterprise activity.",
+      "A provincial dairy is national because it supplies an entire province.",
+      "Multinational scope requires identical products in every foreign market.",
+      "Local grocers depending on nearby residents illustrate customer proximity in local scope.",
+      "Multinational groups coordinate languages and currencies across border-spanning operations."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Foreign production alliances exceed purely national scope.\n\nApplied carefully, \"International joint ventures abroad signal cross-border enterprise activity\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Provincial reach within one country fits regional scope, not national country-wide scope alone.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Make-or-sell in more than one country suffices without uniform product lines.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Most revenue from proximate residents indicates local/regional scope.\n\nApplied carefully, \"Local grocers depending on nearby residents illustrate customer proximity in local scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Language and currency management intensify with cross-border activity.\n\nApplied carefully, \"Multinational groups coordinate languages and currencies across border-spanning operations\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.45",
+    "title": "National carrier dependency",
+    "context": "Analyze a national airline depends on domestic airports though it faces international rivals. Evaluate the following economic assertions:",
+    "statements": [
+      "National procurement rules applying within one country support national scope labelling.",
+      "Local service radius confined to one town defines local geographic scope.",
+      "Globalisation and multinational expansion are presented as connected developments.",
+      "Regional exporters with substantial foreign sales cross into international scope.",
+      "Cross-border currency use complicates international pricing and settlement."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Domestic-only tender rules align with national activity.\n\nApplied carefully, \"National procurement rules applying within one country support national scope labelling\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Town-limited service fits local classification.\n\nApplied carefully, \"Local service radius confined to one town defines local geographic scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Pairs globalisation with rising multinationals.\n\nApplied carefully, \"Globalisation and multinational expansion are presented as connected developments\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Meaningful export sales beyond the home country affect international classification.\n\nApplied carefully, \"Regional exporters with substantial foreign sales cross into international scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Currency differences are integral to international trade.\n\nApplied carefully, \"Cross-border currency use complicates international pricing and settlement\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.46",
+    "title": "Multinational stakeholder spread",
+    "context": "Analyze stakeholders spread across countries when a firm operates multinationally. Evaluate the following economic assertions:",
+    "statements": [
+      "Regional firms within one province share geographically limited customer pools.",
+      "International firms encounter multiple economic systems alongside legal differences.",
+      "National airlines depending on domestic airports operate at national scope.",
+      "Globalisation means local businesses cease to exist in the home economy.",
+      "Local scope excludes service businesses because services have no geography."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Provincial operators draw from bounded regional markets.\n\nApplied carefully, \"Regional firms within one province share geographically limited customer pools\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Economic and legal variation accompanies cross-border operations.\n\nApplied carefully, \"International firms encounter multiple economic systems alongside legal differences\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Domestic airport networks reflect national geographic reach.\n\nApplied carefully, \"National airlines depending on domestic airports operate at national scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Local firms continue alongside rising multinationals.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Service firms can operate locally with nearby customers.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.47",
+    "title": "Local market saturation",
+    "context": "Analyze a local market becomes saturated when most nearby customers already buy. Evaluate the following economic assertions:",
+    "statements": [
+      "National procurement rules prove international scope because governments are global actors.",
+      "International supply chains are shorter than local ones due to container shipping.",
+      "Local market saturation limits growth when nearby demand is largely met.",
+      "A components manufacturer is classified as national because most staff work in Austria.",
+      "Regional competitors prove multinational scope because rivalry crosses town boundaries."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Domestic-only tendering within one country remains national scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "States international operations lengthen supply chains.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Exhausted proximate demand constrains local expansion.\n\nApplied carefully, \"Local market saturation limits growth when nearby demand is largely met\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cross-border production and sales make a components manufacturer a multinational example.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Regional rivalry within a limited area does not establish international scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.48",
+    "title": "Regional policy support",
+    "context": "Analyze regional development grants target firms serving limited areas. Evaluate the following economic assertions:",
+    "statements": [
+      "Multinational operations distribute stakeholders across several countries.",
+      "Culture differences matter only to consumer brands and not to B2B multinationals.",
+      "Local cafés are national when they appear on a city-wide delivery app.",
+      "Undercapitalisation is confined to micro firms with fewer than five employees.",
+      "Undercapitalisation can hinder regional firms seeking to expand beyond their territory."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Stakeholder geography spreads with cross-border enterprise activity.\n\nApplied carefully, \"Multinational operations distribute stakeholders across several countries\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Cultural factors apply to international business broadly.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "City-wide delivery may still be local/regional unless sales span the country.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Geographic focus rather than headcount alone links undercapitalisation to local/regional firms.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Capital limits affect geographically bounded firms beyond purely local ones.\n\nApplied carefully, \"Undercapitalisation can hinder regional firms seeking to expand beyond their territory\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.49",
+    "title": "National scale advantage",
+    "context": "Analyze national scale can lengthen the supply chain compared with a local producer. Evaluate the following economic assertions:",
+    "statements": [
+      "International joint ventures are national when the partner is from a neighbouring country.",
+      "Regional export shares below fifty percent mean the firm remains purely national.",
+      "National scope excludes firms with foreign shareholders.",
+      "Globalisation is defined as free internet access in every country.",
+      "Selling in the home country only, with no foreign production or sales, fits national scope."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Foreign production partnerships indicate international activity.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Any meaningful foreign sales contribute to international scope analysis.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Shareholder nationality does not determine geographic operating scope.\n\nThe familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.\n\nThe statement is false.",
+      "Defines globalisation through multinational enterprise growth.\n\nThe absolute wording \"every\" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.\n\nThe statement is false.",
+      "Purely domestic make-and-sell activity aligns with national classification.\n\nApplied carefully, \"Selling in the home country only, with no foreign production or sales, fits national scope\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "CASE 3.5.50",
+    "title": "International scope exam synthesis",
+    "context": "Analyze local, regional, national, and international scope distinctions for exam review. Evaluate the following economic assertions:",
+    "statements": [
+      "International scope brings language management needs for customer-facing staff.",
+      "Regional development grants targeting limited-area firms reflect regional policy focus.",
+      "Globalisation describes increasing multinational presence in the world economy.",
+      "Local/regional scope combines limited operating area with chiefly nearby customers.",
+      "National scale lengthens supply chains relative to neighbourhood producers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Language differences matter in cross-border customer contact.\n\nApplied carefully, \"International scope brings language management needs for customer-facing staff\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Regional support programmes aim at geographically bounded businesses.\n\nApplied carefully, \"Regional development grants targeting limited-area firms reflect regional policy focus\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Rising multinationals underpin the course globalisation concept.\n\nApplied carefully, \"Globalisation describes increasing multinational presence in the world economy\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Both area and customer proximity define local/regional classification.\n\nApplied carefully, \"Local/regional scope combines limited operating area with chiefly nearby customers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true.",
+      "Country-wide activity extends chains beyond local suppliers.\n\nApplied carefully, \"National scale lengthens supply chains relative to neighbourhood producers\" lines up with the textbook idea without adding an extra restriction.\n\nThe statement is true."
+    ]
+  }
+]

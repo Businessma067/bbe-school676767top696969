@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "MATH 7.48",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Scaled Roots and Nested Order",
+    "context_en": "You are given $f(x)=5x-2$. The quadratic $g$ has roots $2$ and $4$ but leading coefficient $2$. Recover $g$, then evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "$g(x)=2x^{2}-12x+16$.",
+      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{25}$.",
+      "$g(f(0))=f(g(0))$.",
+      "The distance between the roots of $g$ is $2$.",
+      "Completing the square gives $g(x)=2(x-3)^{2}-2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nA quadratic with roots $2$ and $4$ and leading coefficient $2$ is twice the product of the corresponding linear factors.\n\n$$g(x)=2(x-2)(x-4)$$\n\n$$g(x)=2(x^{2}-6x+8)$$\n\n$$g(x)=2x^{2}-12x+16$$\n\nBoth claimed roots kill a factor, and the leading coefficient is the announced $2$.\n\n$$g(2)=0$$\n\n$$g(4)=0$$\n\nThe rebuilt formula is $2x^{2}-12x+16$.\n\nSo the statement is True.",
+      "**B.** → True\n\nMatching $g=Af^{2}+Bf+C$ begins by equating $x^{2}$ coefficients. The line has slope $5$, so $A\\cdot 25$ must equal the leading $2$.\n\n$$2=A\\cdot 25$$\n\n$$A=\\frac{2}{25}$$\n\nThe remaining coefficients $B$ and $C$ are then uniquely determined, but the claim only names $A$.\n\n$$2=A\\cdot 25$$\n\nMatching forces $A=\\frac{2}{25}$.\n\nSo the statement is True.",
+      "**C.** → False\n\nThe two orders of nesting are different maps. Evaluate both at the origin.\n\n$$f(0)=-2$$\n\n$$g(-2)=2\\cdot 4+24+16$$\n\n$$g(-2)=48$$\n\n$$g(0)=16$$\n\n$$f(16)=80-2$$\n\n$$f(16)=78$$\n\n$$48\\neq 78$$\n\nEvaluate both nested orders at the origin and compare.\n\n$$g(f(0))=48$$\n\n$$f(g(0))=78$$\n\nComposition does not commute for this pair.\n\nThe two orders of nesting are different maps; a single input $x=0$ already separates them.\n\n$$48\\neq 78$$\n\nSo the statement is False.",
+      "**D.** → True\n\nThe distance between two roots is the absolute difference of those two numbers, independent of the leading coefficient.\n\n$$|4-2|=2$$\n\nThe leading $2$ stretches the graph vertically and does not move the zeros. Vieta’s sum $6$ and product $8$ recover the same two roots.\n\nThe distance between the roots is $2$.\n\nSo the statement is True.",
+      "**E.** → True\n\nThe axis is the midpoint of the roots, $x=3$. Completing the square uses that shift, with leading coefficient $2$.\n\n$$2x^{2}-12x+16=2(x^{2}-6x)+16$$\n\n$$2x^{2}-12x+16=2\\bigl((x-3)^{2}-9\\bigr)+16$$\n\n$$g(x)=2(x-3)^{2}-2$$\n\nExpanding recovers $2(x^{2}-6x+9)-2=2x^{2}-12x+16$.\n\n$$h=3$$\n\n$$k=-2$$\n\nThe vertex sits at the midpoint of the roots, at height $-2$.\n\nCompleting the square gives the claimed formula.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The monic factor $(x-2)(x-4)$ is scaled by the announced leading coefficient $2$.\n\n$$\ng(x) = 2(x-2)(x-4),\\qquad f(x) = 5x-2\n$$\n\nThe distance between the roots is $|4-2|$, independent of that leading $2$. Completing the square on the expanded formula displays the vertex at the midpoint $x=3$. Matching $g=Af^{2}+Bf+C$ reads $A$ from the ratio of leading coefficients, and the two nested orders disagree at $x=0$.",
+    "title_de_existing": "Skalierte Wurzeln und verschachtelte Reihenfolge",
+    "context_de_existing": "Sie erhalten $f(x)=5x-2$. Der quadratische $g$ hat Wurzeln $2$ und $4$, aber Leitkoeffizient $2$. Wiederherstellen $g$, dann bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
+    "statements_de_existing": [
+      "$g(x)=2x^{2}-12x+16$.",
+      "Das Anpassen von $g=Af^{2}+Bf+C$ erzwingt $A=\\frac{2}{25}$.",
+      "$g(f(0))=f(g(0))$.",
+      "Der Abstand zwischen den Nullstellen von $g$ beträgt $2$.",
+      "Quadratische Ergänzung liefert $g(x)=2(x-3)^{2}-2$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nEine Quadratfunktion mit den Nullstellen $2$ und $4$ und Leitkoeffizient $2$ ist das Doppelte des Produkts der entsprechenden Linearfaktoren.\n\n$$g(x)=2(x-2)(x-4)$$\n\n$$g(x)=2(x^{2}-6x+8)$$\n\n$$g(x)=2x^{2}-12x+16$$\n\nBeide behaupteten Nullstellen machen je einen Faktor zu null, und der Leitkoeffizient ist das angegebene $2$.\n\n$$g(2)=0$$\n\n$$g(4)=0$$\n\nDie neu aufgebaute Formel ist $2x^{2}-12x+16$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nMatching $g=Af^{2}+Bf+C$ beginnt mit der Gleichsetzung von $x^{2}$ Koeffizienten. Die Linie hat Steigung $5$ , also muss $A\\cdot 25$ der führenden $2$ entsprechen.\n\n $$2=A\\cdot 25$$ \n\n $$A=\\frac{2}{25}$$ \n\nDie übrigen Koeffizienten $B$ und $C$ sind dann eindeutig bestimmt, aber die Anspruch nur Namen $A$ .\n\n $$2=A\\cdot 25$$ \n\nMatching forces  $A=\\frac{2}{25}$ .\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nDie zwei Verkettungsordnungen sind verschieden. Auswertung am Ursprung:\n\n$$\nf(0)=-2,\\quad g(-2)=2\\cdot4+24+16=48,\\quad g(0)=16,\\quad f(16)=80-2=78\n$$\n\n$$\ng(f(0))=48 \\neq f(g(0))=78\n$$\n\nDie Verkettung ist für dieses Paar nicht kommutativ; schon $x=0$ trennt die beiden Ordnungen.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nDer Abstand zwischen zwei Wurzeln ist die absolute Differenz dieser beiden Zahlen, unabhängig vom Leitkoeffizienten.\n\n $$|4-2|=2$$ \n\nDer führende $2$ streckt den Graphen vertikal und bewegt die Nullen nicht. Vietas Summe $6$ und Produkt $8$ erhalten die gleichen zwei Wurzeln.\n\nDer Abstand zwischen den Wurzeln ist $2$ .\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nDie Achse ist der Mittelpunkt der Wurzeln, $x=3$ . Quadratische Ergänzung verwendet diese Verschiebung mit Leitkoeffizient $2$ .\n\n $$2x^{2}-12x+16=2(x^{2}-6x)+16$$ \n\n $$2x^{2}-12x+16=2\\bigl((x-3)^{2}-9\\bigr)+16$$ \n\n $$g(x)=2(x-3)^{2}-2$$ \n\nExpanding recovers  $2(x^{2}-6x+9)-2=2x^{2}-12x+16$ .\n\n $$h=3$$ \n\n $$k=-2$$ \n\nDer Scheitelpunkt sitzt im Mittelpunkt der Wurzeln, in der Höhe $-2$ .\n\nDie Quadratische Ergänzung liefert die beanspruchte Formel.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der Mikrofonfaktor $(x-2)(x-4)$ wird durch den angekündigten Leitwert $2$ skaliert.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Abstand zwischen den Wurzeln ist $|4-2|$, unabhängig von diesem Leitkoeffizienten $2$. Quadratische Ergänzung der ausmultiplizierten Formel zeigt den Scheitel am Mittelpunkt $x=3$. Das Anpassen von $g=Af^{2}+Bf+C$ liest $A$ aus dem Verhältnis der Leitkoeffizienten, und die beiden Nestreihenfolgen widersprechen sich bei $x=0$."
+  },
+  {
+    "case_id": "MATH 7.88",
+    "short_letters": [
+      0
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "A Translation Cannot Flatten a Parabola",
+    "context_en": "The following pair is given: the line $f(x)=-6x+4$ together with the parabola $g(x)=2x^{2}+3x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Completing the square gives $g(x)=2\\left(x+\\frac{3}{4}\\right)^{2}-\\frac{25}{8}$.",
+      "Some vertical translation of $g$ makes $f-g$ a constant function.",
+      "The vertex of the graph of $g$ is $\\left(-\\frac{3}{4},-\\frac{25}{8}\\right)$.",
+      "The average rate of change of $g$ on $[0,2]$ equals the slope of $y=f(x)$.",
+      "$f(g(0))=16$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nCompleting the square starts from the axis $x=-\\frac{b}{2a}$ and the height there.\n\n$$g(x)=2x^{2}+3x-2$$\n\n$$x=-\\frac{3}{2\\cdot 2}$$\n\n$$x=-\\frac{3}{4}$$\n\n$$g\\bigl(-\\tfrac{3}{4}\\bigr)=2\\cdot\\tfrac{9}{16}+3\\cdot\\bigl(-\\tfrac{3}{4}\\bigr)-2$$\n\n$$g\\bigl(-\\tfrac{3}{4}\\bigr)=\\tfrac{9}{8}-\\tfrac{9}{4}-2$$\n\n$$g\\bigl(-\\tfrac{3}{4}\\bigr)=-\\tfrac{25}{8}$$\n\nPutting the stretch, the shift and the height together recovers the completed square.\n\n$$g(x)=2\\bigl(x+\\tfrac{3}{4}\\bigr)^{2}-\\tfrac{25}{8}$$\n\nThat is the displayed expression.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslating a graph vertically adds a fixed number to its formula, which changes the constant term and nothing else, so the $x^{2}$ term of the difference survives untouched.\n\n$$f(x)-g(x)=-2x^{2}-9x+6$$\n\nShifting $g$ by any real $t$ replaces $g$ by $g+t$ in that difference.\n\n$$f(x)-(g(x)+t)=-2x^{2}-9x+(6-t)$$\n\nThe coefficient of $x^{2}$ stays $-2$ for every shift $t$, so the difference remains a genuine parabola and never flattens out.\n\nNo vertical translation makes $f-g$ constant.\n\nSo the statement is False.",
+      "**C.** → True\n\nThe turning point sits on the axis just computed, so its height is the value of $g$ there.\n\n$$x=-\\frac{3}{4}$$\n\n$$g\\bigl(-\\tfrac{3}{4}\\bigr)=-\\tfrac{25}{8}$$\n\n$$\\text{vertex}=\\bigl(-\\tfrac{3}{4},-\\tfrac{25}{8}\\bigr)$$\n\nThe leading coefficient $2$ is positive, so this point is the lowest on the graph.\n\nThe vertex is $\\bigl(-\\frac{3}{4},-\\frac{25}{8}\\bigr)$.\n\nSo the statement is True.",
+      "**D.** → False\n\nThe average rate of change over an interval is the slope of the chord joining the two endpoint values, so evaluate $g$ at both ends.\n\n$$g(0)=-2$$\n\n$$g(2)=8+6-2$$\n\n$$g(2)=8+6$$\n\n$$g(2)=14$$\n\n$$g(2)=14-2$$\n\n$$g(2)=12$$\n\n$$\\frac{g(2)-g(0)}{2-0}=\\frac{12-(-2)}{2}$$\n\n$$\\frac{g(2)-g(0)}{2-0}=7$$\n\nThe line $f(x)=-6x+4$ has slope $-6$, which is a different number.\n\nThe chord slope $7$ is not the slope of $f$.\n\nSo the statement is False.",
+      "**E.** → True\n\nA nested value is computed from the inside outwards: evaluate $g(x)=2x^{2}+3x-2$ at $0$ first, then feed the result into $f(x)=-6x+4$.\n\n$$g(0)=2\\cdot 0^{2}+3\\cdot 0-2$$\n\n$$0^{2}=0$$\n\n$$g(0)=2\\cdot 0+3\\cdot 0-2$$\n\n$$g(0)=-2$$\n\nThat output now becomes the input of the line.\n\n$$f(-2)=-6\\cdot(-2)+4$$\n\n$$f(-2)=12+4$$\n\n$$f(-2)=16$$\n\nThe nested value is $16$.\n\n$f(g(0))=16$.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Everything starts from the two concrete rules\n\n$$\nf(x) = 4 - 6 x,\\qquad g(x) = 2 x^{2} + 3 x - 2\n$$\n\nThe slope, the vertical intercepts and the opening direction all sit in plain view in the coefficients; the arms go upwards.\n\n$$\nm = -6,\\qquad f(0) = 4,\\qquad g(0) = -2,\\qquad a = 2\n$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$\ng(x) = 2\\left(x+\\frac{3}{4}\\right)^{2}-\\frac{25}{8},\\qquad \\text{vertex} = \\left(-\\frac{3}{4},-\\frac{25}{8}\\right)\n$$\n\nComparing the two graphs means solving $f(x)=g(x)$, a quadratic equation whose discriminant reports two real solutions.\n\n$$\nf(x)-g(x) = - 2 x^{2} - 9 x + 6,\\qquad \\Delta = 129\n$$",
+    "title_de_existing": "Eine Verschiebung kann eine Parabel nicht abflachen",
+    "context_de_existing": "Das folgende Paar ist gegeben: die Linie $f(x)=-6x+4$ zusammen mit der Parabel $g(x)=2x^{2}+3x-2$ . Bewerte jede Aussage. Markiere sie wahr oder falsch.",
+    "statements_de_existing": [
+      "Quadratische Ergänzung liefert $g(x)=2\\left(x+\\frac{3}{4}\\right)^{2}-\\frac{25}{8}$.",
+      "Eine vertikale Übersetzung von $g$ macht $f-g$ zu einer konstanten Funktion.",
+      "Der Scheitel des Graphen von $g$ ist $\\left(-\\frac{3}{4},-\\frac{25}{8}\\right)$.",
+      "Die mittlere Änderungsrate von $g$ auf $[0,2]$ ist gleich der Steigung von $y=f(x)$.",
+      "$g(f(0))\\neq f(g(0))$ ."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDas Quadrat beginnt mit der Achse $x=-\\frac{b}{2a}$ und der Höhe dort.\n\n$$\nf(x)=2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x\n$$\n\nDie Dehnung, die Verschiebung und die Höhe zusammen setzt das fertige Quadrat wieder.\n\n$$\nf(x)=2-\\frac{1}{2}x\n$$\n\nDas ist der angezeigte Ausdruck.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDas Übersetzen eines Graphen fügt seiner Formel vertikal eine feste Zahl hinzu, die den konstanten Term und nichts anderes ändert, so dass der $x^{2}$-Begriff des Unterschieds unverändert bleibt.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nVerschieben des $g$ durch einen echten $t$ ersetzt den $g$ durch den $g+t$ in diesem Unterschied.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Koeffizient von $x^{2}$ bleibt $-2$ für jede Schicht $t$, so bleibt der Unterschied eine echte Parabel und ebnet nie aus.\n\nKeine vertikale Übersetzung macht $f-g$ konstant.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nDer Wendepunkt sitzt auf der gerade berechneten Achse, also ist seine Höhe der Wert von $g$ dort.\n\n $$x=-\\frac{3}{4}$$ \n\n $$g\\bigl(-\\tfrac{3}{4}\\bigr)=-\\tfrac{25}{8}$$ \n\n $$\\text{vertex}=\\bigl(-\\tfrac{3}{4},-\\tfrac{25}{8}\\bigr)$$ \n\nDer Leitkoeffizient $2$ ist positiv, also ist dieser Punkt der niedrigste auf dem Graphen.\n\nThe vertex is  $\\bigl(-\\frac{3}{4},-\\frac{25}{8}\\bigr)$ .\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie durchschnittliche Veränderungsrate über ein Intervall ist die Steigung des Akkords, der die beiden Endpunktwerte verbindet, so bewerten Sie $g$ an beiden Enden.\n\n$$\ng(0)=-2\n$$\n\n$$\ng(2)=8+6-2 = 8+6 = 14 = 14-2 = 12\n$$\n\n$$\n\\frac{g(2)-g(0)}{2-0}=\\frac{12-(-2)}{2} = 7\n$$\n\nDie Linie $f(x)=-6x+4$ hat Steigung $-6$, die eine andere Zahl ist.\n\nDer Akkordhang $7$ ist nicht die Steigung des $f$.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nEin verschachtelter Wert wird von innen nach außen berechnet: evaluieren Sie zuerst $g(x)=2x^{2}+3x-2$ bei $0$, dann füttern Sie das Ergebnis in $f(x)=-6x+4$.\n\n$$\nf(x)=2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x\n$$\n\nDiese Ausgabe wird nun zur Eingabe der Zeile.\n\n$$\nf(x)=2-\\frac{1}{2}x = 2-\\frac{1}{2}x = 2-\\frac{1}{2}x\n$$\n\nDer verschachtelte Wert ist $16$.\n\n$g(f(0))\\neq f(g(0))$ .\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Alles beginnt mit den beiden konkreten Vorschriften\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nSteigung, vertikale Achsenabschnitte und Öffnungsrichtung stehen in den Koeffizienten klar da; die Arme gehen nach oben.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nQuadratische Ergänzung rückt den Extrempunkt der Parabel in den Blick: die Achse kommt aus den ersten beiden Koeffizienten, und die Höhe ist der Wert von $g$ dort.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Vergleich der beiden Graphen bedeutet das Lösen von $f(x)=g(x)$, einer quadratischen Gleichung, deren Diskriminante zwei reelle Lösungen meldet.\n\n$$f(x)=2-\\frac{1}{2}x$$"
+  },
+  {
+    "case_id": "MATH 7.E20",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Revenue peak is not the profit peak",
+    "context_en": "Weekend ticket price $p$ euros yields revenue $R(p)=p(8-p)$. Staff cost for the same price experiment is the line $C(p)=2p+4$. Profit is $\\Pi=R-C$. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Revenue is a downward-opening parabola, and its largest value occurs at $p=4$ with $R(4)=16$.",
+      "Profit $\\Pi(p)=-p^{2}+6p-4$ has axis $p=3$, so the profit maximum is not at the revenue maximum.",
+      "The profit values satisfy $\\Pi(3)=5$ and $\\Pi(4)=4$, confirming a one-unit shift of the peak.",
+      "At $p=0$ revenue is less than cost, while at $p=5$ revenue exceeds cost.",
+      "Break-even solves $\\Pi(p)=0$ and has discriminant $20>0$, so there are two real break-even prices."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nExpand the revenue rule and read the leading coefficient and the axis. A negative leading coefficient turns the arms downwards, so the vertex is a highest point.\n\n$$R(p)=p(8-p)$$\n\n$$R(p)=-p^{2}+8p$$\n\n$$a=-1$$\n\n$$-1<0$$\n\n$$p=-\\frac{8}{2\\cdot(-1)}$$\n\n$$p=4,\\qquad R(4)=16$$\n\nThe axis formula $p=-b/(2a)$ applied to $-p^{2}+8p$ is $8/2=4$, and substituting that price recovers the listed peak revenue $16$.\n\n$$R(4)=4\\cdot 4$$\n\n$$R(4)=16$$\n\nA downward parabola with maximum $16$ at $p=4$.\n\nSo the statement is True.",
+      "**B.** → True\n\nProfit is revenue minus the cost line. Subtract and read the axis of the resulting parabola.\n\n$$\\Pi(p)=p(8-p)-(2p+4)$$\n\n$$\\Pi(p)=-p^{2}+6p-4$$\n\n$$p=-\\frac{6}{2\\cdot(-1)}$$\n\n$$p=3$$\n\nThe profit axis is $p=3$, one unit left of the revenue axis $p=4$. The two maxima therefore sit at different prices.\n\nSubtracting a line changes the middle coefficient of revenue from $8$ to $6$, which slides the axis one unit left, from $p=4$ to $p=3$.\n\nThe profit maximum is not at the revenue maximum.\n\nSo the statement is True.",
+      "**C.** → True\n\nEvaluate profit at the two candidate peaks: the profit axis $p=3$ and the revenue axis $p=4$.\n\n$$\\Pi(p)=-p^{2}+6p-4$$\n\n$$\\Pi(3)=5$$\n\n$$\\Pi(4)=4$$\n\nProfit at $p=3$ exceeds profit at the revenue peak $p=4$, confirming a one-unit shift of the peak.\n\n$$5>4$$\n\nA downward parabola takes a strictly larger value at its own axis than at any neighbouring input, so $\\Pi(3)>\\Pi(4)$ is the vertex test.\n\nThe profit values match, and the peak has shifted.\n\nSo the statement is True.",
+      "**D.** → True\n\nCompare revenue and cost at the two named prices. Revenue is $R(p)=p(8-p)$ and cost is $C(p)=2p+4$.\n\n$$R(0)=0$$\n\n$$0<4$$\n\n$$R(0)=C(0)$$\n\n$$R(5)=15$$\n\n$$15>14$$\n\n$$R(5)=C(5)$$\n\nRevenue starts below cost at the free-ticket price and later exceeds it at $p=5$. Profit therefore changes sign between those two prices.\n\nProfit $\\Pi=R-C$ is therefore negative at $p=0$ and positive at $p=5$, which already forces a sign change and a real break-even in between.\n\n$$\\Pi(0)=-4$$\n\n$$-4<0$$\n\n$$\\Pi(5)=1$$\n\n$$1>0$$\n\nAt $p=0$ revenue is less than cost, while at $p=5$ revenue exceeds cost.\n\nSo the statement is True.",
+      "**E.** → True\n\nBreak-even solves $\\Pi(p)=0$, which is a quadratic equation. A positive discriminant gives two distinct real roots.\n\n$$-p^{2}+6p-4=0$$\n\n$$\\Delta=36-16$$\n\n$$\\Delta=20$$\n\n$$20>0$$\n\nTwo real break-even prices therefore exist. (They sit on opposite sides of the profit axis $p=3$, as they must.)\n\nA quadratic opening downwards with a positive value at its vertex and a negative constant term must cut the axis twice.\n\n$$\\Pi(3)=5$$\n\n$$5>0$$\n\n$$\\Pi(0)=-4$$\n\n$$-4<0$$\n\nThe discriminant is $20>0$, so there are two real break-even prices.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Weekend revenue is a downward parabola in the ticket price, and staff cost is a line. Write both rules and their difference, which is the profit to be maximised.\n\n$$\nR(p) = p(16-p) = -p^{2}+16p,\\qquad C(p) = 2p+20\n$$\n\n$$\n\\Pi(p) = R(p)-C(p) = -p^{2}+14p-20\n$$\n\nRevenue opens downwards (leading coefficient $-1$) and turns at the midpoint of the roots $0$ and $16$.\n\n$$R_{\\max}=\\left(8,64\\right),\\qquad a_R=-1<0$$\n\nProfit is a different downward parabola: its axis uses the middle coefficient $14$, so the most profitable price is $7$, one euro below the revenue-maximising price.\n\n$$\\Pi_{\\max}=\\left(7,29\\right)$$\n\nAt the free-ticket price, revenue vanishes while cost is still $20$. At $p=10$, revenue $60$ already exceeds cost $40$.\n\n$$\nR(0) = 0<20 = C(0)\n$$\n\n$$\nR(10) = 60>40 = C(10)\n$$",
+    "title_de_existing": "Umsatzscheitel ist nicht der Gewinnscheitel",
+    "context_de_existing": "Wochenend-Ticketpreis $p$ Euro liefert den Umsatz $R(p)=p(8-p)$. Die Personalkosten für dasselbe Preisexperiment sind die Gerade $C(p)=2p+4$. Der Gewinn ist $\\Pi=R-C$. Bewerte jede Aussage. Markiere sie als richtig oder falsch.",
+    "statements_de_existing": [
+      "Umsatz ist eine nach unten öffnende Parabel, und ihr größter Wert tritt bei $p=4$ mit $R(4)=16$ auf.",
+      "Gewinn $\\Pi(p)=-p^{2}+6p-4$ hat Achse $p=3$, so dass das Gewinnmaximum nicht auf dem Umsatzmaximum liegt.",
+      "Die Gewinnwerte erfüllen $\\Pi(3)=5$ und $\\Pi(4)=4$ und bestätigen eine Einheitsverschiebung des Gipfels.",
+      "Bei $p=0$ beträgt der Umsatz weniger als die Kosten, bei $p=5$ übersteigt der Umsatz die Kosten.",
+      "Break-even löst $\\Pi(p)=0$ und hat Diskriminant $20>0$, so gibt es zwei echte Break-even Preise."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nErweitern Sie die Einnahmeregel und lesen Sie den Leitkoeffizienten und die Achse. Ein negativer Leitkoeffizient dreht die Arme nach unten, so dass der Vertex ein höchster Punkt ist.\n\n$$\nR(p)=p(8-p) = -p^{2}+8p\n$$\n\n$$\na=-1\n$$\n\n$$\n-1<0\n$$\n\n$$\np=-\\frac{8}{2\\cdot(-1)} = 4,\\qquad R(4)=16\n$$\n\nDie auf $p=-b/(2a)$ angewandte Achsenformel $-p^{2}+8p$ ist $8/2=4$ und ersetzt, dass der Preis die aufgeführten Spitzenerlöse zurückgewinnt $16$.\n\n$$\nR(4)=4\\cdot 4 = 16\n$$\n\nEine Abwärtsparabel mit maximalen $16$ bei $p=4$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nGewinn ist Umsatz abzüglich der Kostenlinie. Subtrahieren und lesen Sie die Achse der resultierenden Parabel.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDie Gewinnachse ist $p=3$, eine Einheit links von der Umsatzachse $p=4$. Die beiden Maxima liegen daher zu unterschiedlichen Preisen.\n\nEine Linie zu subtrahieren ändert den mittleren Einnahmenkoeffizienten von $8$ nach $6$, der die Achse eine Einheit links, von $p=4$ nach $p=3$ schiebet.\n\nDas Gewinnmaximum ist nicht auf dem Umsatzmaximum.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBeurteilen Sie den Gewinn bei den beiden Kandidatenspitzen: der Gewinnachse $p=3$ und der Umsatzachse $p=4$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Gewinn bei $p=3$ übersteigt den Gewinn bei der Umsatzspitze $p=4$ und bestätigt eine Ein-Einheit-Verlagerung des Spitzens.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nEin Abwärtsparabola nimmt einen streng größeren Wert an seiner eigenen Achse als an jedem benachbarten Eingang, also $\\Pi(3)>\\Pi(4)$ ist der Vertex-Test.\n\nDie Gewinnwerte stimmen überein, und der Spitzenwert hat sich verschoben.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nVergleiche Umsatz $R(p)=p(8-p)$ und Kosten $C(p)=2p+4$ an den genannten Preisen.\n\n$$\nR(0)=0<4=C(0),\\quad R(5)=15>14=C(5)\n$$\n\n$$\n\\Pi(0)=R(0)-C(0)=-4<0,\\quad \\Pi(5)=1>0\n$$\n\nDer Umsatz liegt zuerst unter den Kosten und übersteigt sie später; der Gewinn wechselt daher zwischen $p=0$ und $p=5$ das Vorzeichen.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBreak-even löst $\\Pi(p)=0$, das ist eine quadratische Gleichung. Ein positives Diskriminant gibt zwei deutliche reale Wurzeln.\n\n$$\n-p^{2}+6p-4=0\n$$\n\n$$\n\\Delta=36-16 = 20\n$$\n\n$$\n20>0\n$$\n\nEs gibt also zwei wirkliche Break-Even-Preise. (Sie sitzen auf entgegengesetzten Seiten der Profitachse $p=3$, wie sie müssen.)\n\nEine quadratische Öffnung nach unten mit einem positiven Wert an seinem Scheitel und einem negativen konstanten Term muss die Achse zweimal schneiden.\n\n$$\n\\Pi(3)=5\n$$\n\n$$\n5>0\n$$\n\n$$\n\\Pi(0)=-4\n$$\n\n$$\n-4<0\n$$\n\nDer Diskriminant ist $20>0$, also gibt es zwei echte Break-Even-Preise.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Der Wochenendumsatz ist eine nach unten geöffnete Parabel im Ticketpreis, und die Personalkosten sind eine Gerade. Schreibe beide Vorschriften und ihre Differenz — den zu maximierenden Gewinn.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Umsatz öffnet sich nach unten (Leitkoeffizient $-1$) und wendet am Mittelpunkt der Wurzeln $0$ und $16$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Gewinn ist eine andere nach unten geöffnete Parabel: seine Achse nutzt den mittleren Koeffizienten $14$, daher ist der gewinnmaximierende Preis $7$, ein Euro unter dem umsatzmaximierenden Preis.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nBeim Nullpreis verschwindet der Umsatz, während die Kosten noch $20$ betragen. Bei $p=10$ übersteigt der Umsatz $60$ bereits die Kosten $40$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$"
+  },
+  {
+    "case_id": "MATH 7.E21",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "title_en": "Trough below a secant level",
+    "context_en": "The figure shows a **solid brown parabola** and a **dashed green horizontal line**. No closed forms are printed. Work from ticks and marked turns only. Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The solid curve crosses the horizontal axis once on each side of the origin, and the turning point is a trough at height $-1$.",
+      "The dashed line sits at height $0$, coinciding with the horizontal axis.",
+      "The solid curve and the dashed line share exactly two points, and those meetings are not the axis crossings $x=\\pm 1$.",
+      "The turning point lies below the dashed line, and the vertical gap there equals $2$.",
+      "The solid curve opens upwards, and because the trough sits below the horizontal axis there are two real axis crossings."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nThe two brown axis meetings sit at $x=\\pm 1$, and the marked trough is on the vertical axis at height $-1$. Those ticks force an even upward parabola.\n\n$$g(x)=x^{2}-1$$\n\n$$\ng(0)=-1,\\qquad g(\\pm 1) = 0\n$$\n\nAn even upward parabola is forced by a trough on the vertical axis together with opposite axis crossings. The ticks leave no other monic choice.\n\n$$g(\\pm 1)=0$$\n\n$$g(0)=-1$$\n\nOne crossing on each side of the origin, and a trough of height $-1$.\n\nSo the statement is True.",
+      "**B.** → False\n\nThe dashed level runs through height $1$, strictly above the origin. It is a horizontal line $y=1$, not the horizontal axis $y=0$.\n\n$$y=1\\qquad 1\\neq 0$$\n\nA dashed line coinciding with the axis would have cut the solid curve at the same two points $x=\\pm 1$. Here the dashed meetings sit higher, at $x=\\pm\\sqrt{2}$.\n\n$$x^{2}-1 = 1$$\n\n$$x=-\\sqrt{2}$$\n\n$$x=\\sqrt{2}$$\n\nThe dashed line is $y=1$, not the horizontal axis.\n\nSo the statement is False.",
+      "**C.** → True\n\nMeetings with the dashed level $y=1$ solve a different equation from $g(x)=0$. Rebuild $g(x)=x^{2}-1$ from the ticks.\n\n$$x^{2}-1=1$$\n\n$$x=-\\sqrt{2}$$\n\n$$x=\\sqrt{2}$$\n\n$$\\pm\\sqrt{2}\\neq\\pm 1$$\n\nThe axis crossings solve $x^{2}=1$, while the dashed meetings solve $x^{2}=2$. Those two pairs of abscissas cannot coincide.\n\n$$\nx^{2}-1=0,\\qquad x^{2}-1 = 1\n$$\n\nTwo meetings with the dashed line, distinct from the axis crossings $x=\\pm 1$.\n\nSo the statement is True.",
+      "**D.** → True\n\nAt the trough abscissa $x=0$ compare the two heights. The solid curve sits at $-1$ and the dashed level sits at $1$.\n\n$$g(x)=x^{2}-1$$\n\n$$g(0)=-1$$\n\n$$h=1-(-1)$$\n\n$$h=2$$\n\nThe trough lies below the dashed line with vertical gap $2$. A gap of zero would have been tangency at the vertex.\n\nThe dashed level never enters the formula for $g$, so the trough height stays $-1$ and the gap is the difference of the two constants.\n\nThe turning point lies below the dashed line, and the vertical gap there equals $2$.\n\nSo the statement is True.",
+      "**E.** → True\n\nFalling-then-rising arms mean a positive leading coefficient. A trough below the axis for an upward parabola produces two real roots.\n\n$$g(x)=x^{2}-1$$\n\n$$a=1$$\n\n$$1>0$$\n\n$$\\Delta=0-4(-1)$$\n\n$$\\Delta=4$$\n\n$$4>0$$\n\nThe curve opens upwards and crosses the axis twice, at $x=\\pm 1$. A trough above the axis would have produced no real crossing.\n\nOpposite signs of $a$ and $c$ already force $\\Delta>0$, which is the coefficient test for two real axis crossings.\n\n$$a=1$$\n\n$$1>0$$\n\n$$c=-1$$\n\n$$-1<0$$\n\nThe solid curve opens upwards, and there are two real axis crossings.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "The figure shows an upward parabola and a dashed horizontal line, with no formulas printed. Recover $g$ from the two axis crossings $x=\\pm 2$ and the marked trough at $(0,-4)$, and recover the dashed level from its constant height $-2$.\n\n$$\ng(x) = x^{2}-4,\\qquad y = -2\n$$\n\nThe solid curve meets the horizontal axis once on each side of the origin. Completing the square is immediate, and the vertex sits two units below the dashed line.\n\n$$\ng(x) = x^{2}-4,\\qquad \\mathrm{ver} = \\left(0,-4\\right)\n$$\n\n$$g(0)=-4<-2$$\n\nThe dashed line is not the axis $y=0$: it runs at height $-2$. Meetings with that level solve $x^{2}-4=-2$, a positive-discriminant equation with two real roots.\n\n$$\nx^{2} = 2,\\qquad x = \\pm\\sqrt{2},\\qquad \\Delta = 8\n$$\n\nThe leading coefficient $1$ sends the arms upwards, matching the marked trough.\n\n$$\na = 1>0,\\qquad S = 0,\\qquad P = -4,\\qquad \\Delta_{g} = 16\n$$",
+    "title_de_existing": "Mulde unter einem Sekantenniveau",
+    "context_de_existing": "Die Abbildung zeigt eine ** festbraune Parabel** und eine ** grün markierte horizontale Linie**. Es werden keine geschlossenen Formen gedruckt. Nur aus Zecken häkeln und die Drehungen markieren. Jede Aussage bewerten.",
+    "statements_de_existing": [
+      "Die durchgezogene Kurve schneidet die horizontale Achse je einmal links und rechts vom Ursprung, und der Extrempunkt ist ein Tiefpunkt der Höhe $-1$.",
+      "Die gestrichelte Linie sitzt in der Höhe $0$, zusammen mit der horizontalen Achse.",
+      "Die durchgezogene Kurve und die gestrichelte Gerade teilen genau zwei Punkte, und diese Schnitte sind nicht die Achsenschnitte $x=\\pm 1$.",
+      "Der Extrempunkt liegt unter der gestrichelten Geraden, und der vertikale Abstand dort ist gleich $2$.",
+      "Die durchgezogene Kurve öffnet sich nach oben, und weil der Tiefpunkt unter der horizontalen Achse sitzt, gibt es zwei reelle Achsenschnitte."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie beiden braunen Achsentreffen sitzen bei $x=\\pm 1$, und der markierte Trog befindet sich auf der vertikalen Achse in der Höhe $-1$. Diese Zecken zwingen eine noch aufwärts gerichtete Parabel.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nEine gerade nach oben gerichtete Parabel wird durch einen Trog auf der vertikalen Achse zusammen mit gegenüberliegenden Achsenübergängen aufgezwungen.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nEine Kreuzung auf jeder Seite des Ursprungs, und ein Trog der Höhe $-1$.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nDie gestrichelte Ebene verläuft durch Höhe $1$, streng über dem Ursprung. Es ist eine horizontale Linie $y=1$, nicht die horizontale Achse $y=0$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nEine gestrichelte Linie, die mit der Achse zusammenhängt, hätte die feste Kurve an den gleichen zwei Punkten schneidet $x=\\pm 1$. Hier sitzen die gestrichelten Treffen höher, bei $x=\\pm\\sqrt{2}$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDie gestrichelte Linie ist $y=1$, nicht die horizontale Achse.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nTreffen mit der gestrichelten Ebene $y=1$ lösen eine andere Gleichung als $g(x)=0$. Wiederaufbau $g(x)=x^{2}-1$ von den Zecken.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDie Achsenübergänge lösen $x^{2}=1$, während die gestrichelten Treffen $x^{2}=2$ lösen.Diese beiden Abscisspaare können nicht zusammenfallen.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nZwei Begegnungen mit der gestrichelten Linie, die sich von den Achsenkreuzungen unterscheidet $x=\\pm 1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nAm Talabscissa $x=0$ vergleichen Sie die beiden Höhen. Die solide Kurve sitzt bei $-1$ und der gestrichelte Pegel sitzt bei $1$ .\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$f(x)=2-\\frac{1}{2}x$$\n\nDer Trog liegt unterhalb der gestrichelten Linie mit senkrechter Lücke $2$. Ein Spalt von Null wäre am Scheitel tangential gewesen.\n\nDie gestrichelte Ebene tritt nie in die Formel für $g$ ein, so bleibt die Troghöhe $-1$ und der Spalt ist der Unterschied der beiden Konstanten.\n\nDer Extrempunkt liegt unter der gestrichelten Geraden, und der vertikale Abstand dort ist gleich $2$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nFallende-dann-steigende Arme bedeuten positiven Leitkoeffizienten. Ein Trog unter der Achse bei Öffnung nach oben erzeugt zwei reelle Wurzeln.\n\n$$\ng(x)=x^{2}-1,\\quad a=1>0,\\quad \\Delta=0-4(-1)=4>0\n$$\n\nDie Kurve öffnet sich nach oben und kreuzt die Achse zweimal bei $x=\\pm 1$. Gegenläufige Vorzeichen von $a$ und $c$ erzwingen bereits $\\Delta>0$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Die Abbildung zeigt eine Parabel nach oben und eine gestrichelte horizontale Linie, ohne gedruckte Formeln. Wiederherstellen Sie $g$ von den beiden Achskreuzungen $x=\\pm 2$ und der markierten Mulde bei $(0,-4)$ und erholen Sie den gestrichelten Pegel von seiner konstanten Höhe $-2$ .\n\n $$\ng(x) = x^{2}-4,\\qquad y = -2\n$$ \n\nDie durchgezogene Kurve entspricht der horizontalen Achse einmal auf jeder Seite des Ursprungs. Das Vervollständigen des Quadrats ist sofort, und der Scheitelpunkt sitzt zwei Einheiten unterhalb der gestrichelten Linie.\n\n $$\ng(x) = x^{2}-4,\\qquad \\mathrm{ver} = \\left(0,-4\\right)\n$$ \n\n $$g(0)=-4<-2$$ \n\nDie gestrichelte Linie ist nicht die Achse $y=0$ : sie verläuft in der Höhe $-2$ . Meetings mit diesem Level lösen $x^{2}-4=-2$, eine positiv-diskriminante Gleichung mit zwei realen Wurzeln.\n\n $$\nx^{2} = 2,\\qquad x = \\pm\\sqrt{2},\\qquad \\Delta = 8\n$$ \n\nDer Leitkoeffizient $1$ schickt die Arme nach oben, passend zum markierten Trog.\n\n $$\na = 1>0,\\qquad S = 0,\\qquad P = -4,\\qquad \\Delta_{g} = 16\n$$"
+  }
+]

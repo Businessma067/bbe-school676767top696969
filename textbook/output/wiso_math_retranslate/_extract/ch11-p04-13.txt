@@ -1,0 +1,144 @@
+CASE MATH 11.78
+ANSWER [true, true, true, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+The reviewer's sentence about Shop L means
+$$R_L^{\prime}(Q)<C_L^{\prime}(Q).$$
+With the posted $R_L^{\prime}=9$ and $P_L^{\prime}=-4$, rearrange to recover
+$$C_L^{\prime}=R_L^{\prime}-P_L^{\prime}=9-(-4)=13,$$
+which indeed satisfies $9<13$. Shop M faces the same $R_M^{\prime}=9$ but $C_M^{\prime}=6$, so $9>6$ and M does not satisfy the reviewer's sentence. Marginal profits are
+$$P_M^{\prime}=9-6=3>0,\qquad P_L^{\prime}=-4<0,$$
+so a small expansion raises profit at M and lowers it at L. Same $R^{\prime}$ does not force the same extra-cost figure. Shop L: $R'=9$, $P'=-4$ imply $C'=13$ (reviewer's sentence holds). Shop M: $R'=9>C'=6$, so M fails the sentence and should expand.
+
+=== A ===
+**A.** → True
+
+"Extra revenue smaller than extra cost" is precisely the inequality of derivatives
+
+$$
+R_L^{\prime}(Q)<C_L^{\prime}(Q)
+$$
+
+The reviewer's sentence is already that comparison
+
+The reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\prime}<C_L^{\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+From $P_L^{\prime}(Q)=R_L^{\prime}(Q)-C_L^{\prime}(Q)$ and the posted numbers,
+
+$$
+-4 = 9-C_L^{\prime}(Q)
+$$
+
+$$
+C_L^{\prime}(Q) = 13
+$$
+
+Shop L's implied marginal cost is $13$
+
+Check: $9<13$ matches the reviewer's claim, and $P_L^{\prime}=9-13=-4$ matches the posted profit slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C_L'(Q) = 13
+$$
+
+$$
+P_L^{\prime}(Q) = R_L^{\prime}(Q)-C_L^{\prime}(Q)
+$$
+
+which matches the claim.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+At Shop M, $R_M^{\prime}(Q)=9>6=C_M^{\prime}(Q)$, so extra revenue is larger than extra cost.
+
+That is the opposite of the reviewer's sentence, and Shop M does not satisfy it
+
+At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue smaller than extra cost."
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R_M^{\prime}(Q) = 9>6 = C_M^{\prime}(Q)
+$$
+
+So the statement is True.
+
+=== D ===
+**D.** → True
+
+Shop M has
+
+$$
+P_M^{\prime}(Q) = 9-6
+$$
+
+$$
+9 - 6 = 3
+$$
+
+$$
+P_M^{\prime}(Q) = 3 = 3
+$$
+
+$$
+P_M^{\prime}(Q) = 3>0
+$$
+
+while Shop L has $P_L^{\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L
+
+Opposite signs of $P^{\prime}$ give opposite expand-or-not advice at the two shops.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+Both shops share $R^{\prime}(Q)=9$, but their cost slopes differ: $C_L^{\prime}(Q)=13$ versus $C_M^{\prime}(Q)=6$.
+
+Same extra revenue does not force the same extra cost
+
+Shared $R^{\prime}=9$ with $C_L^{\prime}=13$ versus $C_M^{\prime}=6$ is enough to see the extra-cost figures differ.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\prime}(Q) = 9
+$$
+
+$$
+C_L^{\prime}(Q) = 13
+$$
+
+$$
+C_M^{\prime}(Q) = 6
+$$
+
+$$
+R^{\prime} = 9
+$$
+
+$$
+C_L^{\prime} = 13
+$$
+
+$$
+C_M^{\prime} = 6
+$$
+
+So the statement is False.
+

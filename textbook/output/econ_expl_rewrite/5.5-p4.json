@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.76",
+    "title": "Online Survey Analysis Expenditure",
+    "context": "Analyze why-customer findings that guide differentiation and share expansion strategies. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm matching the leader's percentage share has relative market share below one.",
+      "Market research on when customers buy cannot support differentiated pricing.",
+      "Researching household consumers as customers indicates the firm is studying a business-to-consumer market segment.",
+      "Primary interviews with household consumers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Why-customer research is limited to price motives and excludes quality preferences."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Matching the leader gives relative share of 1.0.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Timing analysis can support price differentiation over the year.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Household consumers as customers align with business-to-consumer classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Why and what dimensions can be explored with household consumers in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Why analysis covers motives and preferences broadly.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.77",
+    "title": "Industry Reports as Secondary Sources",
+    "context": "Consider a regional bakery chain that studies government retail statistics and trade-association reports before opening outlets in new towns. Evaluate the following economic assertions:",
+    "statements": [
+      "Researching fleet operators as customers indicates the firm is studying a business-to-business market segment.",
+      "What-customer research excludes how products are used in daily operations.",
+      "Primary interviews with fleet operators can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Where-customer research excludes online channels because only stores matter.",
+      "Researching retail shoppers as customers indicates the firm is studying a business-to-consumer market segment."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Fleet operators as customers align with business-to-business classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Preferred use is central to what-customer analysis.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Why and what dimensions can be explored with fleet operators in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Online purchase locations are part of where analysis.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Retail shoppers as customers align with business-to-consumer classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.78",
+    "title": "Business Published Secondary Data",
+    "context": "Analyze percentage market share as sales of one business divided by all market sales. Evaluate the following economic assertions:",
+    "statements": [
+      "Who-customer research excludes distinguishing B2B from B2C markets.",
+      "Primary interviews with retail shoppers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Researching hospital purchasing committees as customers indicates the firm is studying a business-to-business market segment.",
+      "Primary research never uses questionnaires because they are too expensive for any firm.",
+      "Secondary research never comes from government agencies according to the chapter."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Who analysis distinguishes consumer and business customers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Why and what dimensions can be explored with retail shoppers in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Hospital purchasing committees as customers align with business-to-business classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Questionnaires are listed primary methods despite cost.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Government agencies are listed secondary sources.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.79",
+    "title": "Channel Preference Identification",
+    "context": "Review absolute share figures that omit direct comparison with the leading competitor. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size and market share use the same formula with identical numerators and denominators.",
+      "Sales potential excludes any share of growth in overall market potential.",
+      "Primary interviews with hospital purchasing committees can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Researching online subscribers as customers indicates the firm is studying a business-to-consumer market segment.",
+      "Gains from competitors are excluded when estimating how far sales could rise."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Size is total market sales; share is firm sales over total.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "A share in market-potential increase is part of sales potential.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Why and what dimensions can be explored with hospital purchasing committees in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Online subscribers as customers align with business-to-consumer classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gains from competitors are part of sales potential.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.80",
+    "title": "Differentiated Seasonal Pricing",
+    "context": "Analyze relative share ratios that add competitive context to absolute percentage results. Evaluate the following economic assertions:",
+    "statements": [
+      "Investors disregard market share because only profit margins matter for valuation.",
+      "Primary interviews with online subscribers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Children never appear in customer-analysis examples about influence on purchases.",
+      "Researching factory maintenance teams as customers indicates the firm is studying a business-to-business market segment.",
+      "Researching gift buyers as customers indicates the firm is studying a business-to-consumer market segment."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Absolute share is noted as relevant to investors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Why and what dimensions can be explored with online subscribers in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Children influencing purchases paid by adults is a textbook example.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Factory maintenance teams as customers align with business-to-business classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gift buyers as customers align with business-to-consumer classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.81",
+    "title": "Substitute Preference Motives",
+    "context": "Consider a small craft brewery that cannot afford a large-scale questionnaire programme and instead relies on freely available industry consumption data. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary interviews with gift buyers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "Expressing market size through value in euros is consistent with measuring market volume as monetary totals across all sellers.",
+      "Expressing market size through units shipped is consistent with measuring market volume as quantities sold across the market.",
+      "Expressing market size through tonnes delivered is consistent with measuring market volume as physical quantity totals in the market.",
+      "Expressing market size through licence seats sold is consistent with measuring market volume as count-based market volume in software."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Why and what dimensions can be explored with gift buyers in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market size may be expressed as value in euros, reflecting monetary totals across all sellers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market size may be expressed as units shipped, reflecting quantities sold across the market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market size may be expressed as tonnes delivered, reflecting physical quantity totals in the market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market size may be expressed as licence seats sold, reflecting count-based market volume in software.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.82",
+    "title": "Total Category Sales Measurement",
+    "context": "Analyze how a components manufacturer might combine secondary forecasts with primary buyer surveys. Evaluate the following economic assertions:",
+    "statements": [
+      "Buyer and user must differ in every single purchase transaction.",
+      "Market potential shrinks when unconverted customers enter the market.",
+      "Expressing market size through room nights booked is consistent with measuring market volume as quantity measure in hospitality markets.",
+      "Relative share is calculated before absolute share in the textbook sequence.",
+      "A fifteen per cent absolute share combined with a thirty per cent leader share gives relative share of forty-five."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "They may differ but need not differ in every case.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Unconverted customers tend to keep potential above current volume.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market size may be expressed as room nights booked, reflecting quantity measure in hospitality markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Absolute share is defined before relative share uses it.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "15/30 equals 0.5, not 45.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.83",
+    "title": "Forecast and Position Assessment",
+    "context": "Review ethical use of market research data about customer behaviour and preferences. Evaluate the following economic assertions:",
+    "statements": [
+      "Market research helps a components manufacturer judge whether substrate demand will grow in coming years.",
+      "A firm may read secondary Prismark-style forecasts before estimating its share of an electronics submarket.",
+      "Customer analysis of preferred use can show whether buyers deploy a product in harsh industrial environments.",
+      "Market research excludes learning what customers think about products.",
+      "Empirical studies are secondary when results are published in a trade journal."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Industry development research supports forward position assessment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Secondary forecasts inform share estimation in technology markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "What-customer use settings guide robust product design.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Primary research can ask what customers think about products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Publication does not retroactively make bespoke collection secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.84",
+    "title": "Buyer Specific Detail Needs",
+    "context": "Analyze integrating who, what, where, when, and why dimensions within customer analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-research may reveal that business buyers increasingly order through integrated procurement portals.",
+      "When-research on replacement cycles can show multi-year intervals between repeat purchases.",
+      "Existing research by other businesses is primary when it is recent.",
+      "Why-research may find that compliance certification outweighs minor price differences for medical buyers.",
+      "Customer analysis is separate from market research and never combined in practice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "B2b channel shifts appear in where-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Timing analysis covers replacement intervals as well as seasons.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Recency does not make others' prior research primary for a new user.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Regulatory motives appear in why-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customer analysis is often an important element of market research.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.85",
+    "title": "Consumer Versus Business Market Trap",
+    "context": "Consider a cosmetics brand dividing its brand sales by the sales of its largest rival to interpret competitive standing. Evaluate the following economic assertions:",
+    "statements": [
+      "Channel weaknesses cannot be addressed because distribution is fixed by law.",
+      "Seasonal production planning ignores when-customer timing insights.",
+      "Absolute market share uses the leader's sales as the numerator.",
+      "Absolute share of eight per cent in a fragmented market still informs investors about scale of operations.",
+      "Relative market share is expressed only as a percentage of total market sales."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Analysis can encourage alternative channels when weaknesses appear.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Timing analysis supports planning ahead for seasonal fluctuations.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Absolute share uses the firm's own sales in the numerator.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Even modest absolute share is investor-relevant information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Relative share is a ratio to the leader, not a market percentage.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.86",
+    "title": "Grandparent and Parent Decision Roles",
+    "context": "Analyze comparing a brand's sales to total category sales when estimating market share. Evaluate the following economic assertions:",
+    "statements": [
+      "Market volume for all firms is smaller than sales volume of one large company.",
+      "Primary data become secondary once analysed and presented in charts.",
+      "Secondary data become primary when a manager photocopies an industry report.",
+      "A components manufacturer must ignore published forecasts and collect only primary data.",
+      "Relative share of 0.8 against the leader signals the firm trails but remains a substantial competitor."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Market volume aggregates all firms and exceeds one firm's sales.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Analysis presentation does not reclassify primary collection as secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Copying a report does not create primary empirical research.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Firms may combine secondary forecasts with primary studies.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Relative share below one indicates trailing the leader.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.87",
+    "title": "Alternative Channel Encouragement",
+    "context": "Review interpreting a relative share below one as trailing the largest competitor's position. Evaluate the following economic assertions:",
+    "statements": [
+      "Relative share of 1.2 signals the firm holds a larger percentage share than its largest rival.",
+      "Market volume sums revenue from all vendors offering substitutable products in the defined market.",
+      "Sales volume for one vendor is only part of the market volume that forms the share denominator.",
+      "Primary research on support needs can distinguish customers wanting on-site service from those preferring remote help.",
+      "Secondary industry reviews may describe AIM segments alongside communication and consumer segments in electronics."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Relative share above one exceeds the leader's percentage.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Substitutable offerings define the market for volume totals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "One vendor's sales are a subset of total market volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Support preferences are addressable in tailored primary studies.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment breakdowns can appear in secondary industry reports.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.88",
+    "title": "Holiday Peak Timing Analysis",
+    "context": "Analyze interpreting a relative share above one as exceeding the largest competitor's share. Evaluate the following economic assertions:",
+    "statements": [
+      "New applications such as wearables may expand long-term market potential beyond current CCC-dominated volume.",
+      "Willingness-to-pay questions belong only to secondary government surveys.",
+      "Questionnaire design in primary research can test whether buyers also purchase substitute brands.",
+      "Personal interviews allow follow-up questions when a respondent's answer about purchase motives is unclear.",
+      "Government open-data portals may provide secondary statistics on sector output and employment."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Emerging applications can raise long-term market potential.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Willingness to pay can be studied in tailored primary research.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Rival purchasing can be asked directly in primary questionnaires.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Interviews support clarification in why-customer research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Government open data are secondary sources for market learning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.89",
+    "title": "Differentiation From Why Analysis",
+    "context": "Consider a food producer estimating market volume in tonnes for organic cereals and comparing that total with its own annual shipments. Evaluate the following economic assertions:",
+    "statements": [
+      "Association membership surveys conducted for the sector are secondary for an individual member firm reading results.",
+      "Market share of a brand is undefined when brands compete in the same category.",
+      "Who-research clarifies whether the paying entity is a household, a company, or an institution.",
+      "Relative share above one means the firm is smaller than the largest competitor.",
+      "What-research on software can examine whether clients use modules for payroll, inventory, or customer records."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Sector surveys are secondary for member firms using published results.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand share can be calculated within a category.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Who analysis identifies the type of purchasing entity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Relative share above one means exceeding the leader's percentage.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Module use is part of what-customer analysis for software.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.90",
+    "title": "Dual Expression of Market Volume",
+    "context": "Analyze the distinction between primary and secondary sources of market research data. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-research comparing direct and indirect channels can expose over-reliance on a single retailer.",
+      "When-research on subscription renewals can identify months with unusually high churn or upgrade rates.",
+      "Why-research comparing eco-labels and price may show heterogeneous motives across customer segments.",
+      "Investors comparing two firms may examine absolute share first before comparing relative position to the leader.",
+      "A marketing team may set share targets using sales potential estimates that include winnable rival accounts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Channel concentration risk appears in where analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Renewal timing is part of when-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Segment-specific motives appear in why analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Absolute share is a starting point before relative comparison.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Winnable rival accounts feed sales potential estimates.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.91",
+    "title": "Single Firm Share Percentage",
+    "context": "Review how primary information is obtained through empirical studies tailored to a business. Evaluate the following economic assertions:",
+    "statements": [
+      "Relative share below one means the firm exceeds the largest competitor's share.",
+      "Market research excludes industry trends because trends are macroeconomic only.",
+      "Market research on competition identifies whether rivals are gaining share in the same product category.",
+      "Tailoring a primary study avoids paying for questions irrelevant to the commissioning firm's product line.",
+      "Prospective buyers are irrelevant when estimating market potential."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Relative share below one means trailing the leader.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Industry development is part of market research scope.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competitive share shifts are part of market research scope.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailoring limits primary research to relevant questions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Potential customers relate to market potential above volume.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.92",
+    "title": "Omitting Leader From Absolute Share",
+    "context": "Analyze why conducting primary market research can be costly for smaller businesses. Evaluate the following economic assertions:",
+    "statements": [
+      "Secondary data may describe national totals while primary work later targets one region in detail.",
+      "What-customer analysis is about what suppliers produce rather than what buyers do with goods.",
+      "Why-customer analysis cannot inform advertising messages.",
+      "Where-customer analysis cannot reveal online purchase growth.",
+      "When-customer analysis cannot identify holiday peaks."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary breadth can precede regional primary focus.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "What-customers concerns buyer use, not supplier output.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Motive insight can guide promotional emphasis.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Online channels are part of where-customer research.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Seasonal peaks are identified through when analysis.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.93",
+    "title": "Ratio Form of Relative Share",
+    "context": "Consider a furniture producer that tracks where customers purchase dining sets, whether in showrooms, online stores, or department concessions. Evaluate the following economic assertions:",
+    "statements": [
+      "Children recommending educational apps while parents subscribe illustrates influencer effects in digital B2C markets.",
+      "Grandparents gifting products chosen partly by grandchildren shows influencers who are neither buyer nor user.",
+      "Who-customer analysis cannot separate consumer from business purchasers.",
+      "Primary research is defined as information already collected by government agencies.",
+      "Secondary research requires new empirical collection for each business every year."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Influencers operate in digital b2c as well as physical retail.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Influencers need not be buyer or primary user.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "B2c and b2b distinction is part of who analysis.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Government prior research is secondary, not primary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Secondary reuses existing research rather than new universal collection.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.94",
+    "title": "Potential Customers Above Volume",
+    "context": "Analyze the customer-analysis question of who current and potential customers are. Evaluate the following economic assertions:",
+    "statements": [
+      "A user in a business may specify technical requirements while a procurement officer signs the contract.",
+      "Preferred-use insight can justify adding features for outdoor operation rather than office use only.",
+      "Weak performance in one retail chain identified through where-data may prompt reallocation to online sales.",
+      "Advance production of seasonal goods follows when-data showing demand spikes before public holidays.",
+      "Advertising that stresses durability responds to why-data showing longevity as the decisive purchase motive."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Technical users and signing buyers can differ in b2b.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Use context steers feature prioritisation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where findings can trigger channel reallocation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Holiday spikes in when-data support advance production.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Why-data can steer advertising emphasis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.95",
+    "title": "Components Manufacturer Research Mix",
+    "context": "Review how customer analysis distinguishes business-to-consumer and business-to-business markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Market size falls when every competitor increases its unit sales.",
+      "Market size growth from 2.0 billion to 2.1 billion euros indicates a larger value-based market volume.",
+      "Sales volume of one firm equals market volume when the firm is the market leader.",
+      "Absolute share of twenty per cent means relative share must be twenty against any leader.",
+      "A market of 1,000,000 euros with firm sales of 100,000 euros gives a ninety per cent share."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Rising total unit sales increase market size.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Higher euro totals mean larger value-based market size.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market volume sums all firms, not just the leader.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Relative share depends on the leader's percentage.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "100,000/1,000,000 is 10%, not 90%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.96",
+    "title": "Behaviour Data in Customer Study",
+    "context": "Analyze the roles of buyer, user, and influencer in customer purchasing decisions. Evaluate the following economic assertions:",
+    "statements": [
+      "A market of 2,000,000 euros with firm sales of 500,000 euros gives a four per cent share.",
+      "Market potential is identical to sales potential for the entire industry.",
+      "Sales potential for one firm aggregates market volume for all competitors.",
+      "Customer analysis excludes grandparents who influence family purchases.",
+      "Market size of 4.5 million units sold indicates quantity-based market volume across the category."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "500,000/2,000,000 is 25%, not 4%.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market potential and sales potential apply at different levels.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales potential is firm-level; market volume is industry-level.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Influencers such as grandparents may shape decisions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Unit counts express quantity-based market size.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.97",
+    "title": "Position and Prospect Evaluation",
+    "context": "Consider an electronics assembler comparing its euro sales with total industry revenue to estimate its proportion of the national components market. Evaluate the following economic assertions:",
+    "statements": [
+      "Dividing 75,000 euros of firm sales by 500,000 euros of market sales yields fifteen per cent absolute share.",
+      "Influencers always pay for products they recommend to others.",
+      "Dividing 200,000 euros of firm sales by 800,000 euros of market sales yields twenty-five per cent absolute share.",
+      "With absolute share ten per cent and leader share twenty per cent, relative market share equals 0.5.",
+      "Primary questionnaires are secondary when distributed through email."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "75/500 equals 15% absolute market share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Influencers may recommend without paying.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "200/800 equals 25% absolute market share.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "10/20 gives relative share of 0.5.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Email distribution does not make questionnaires secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.98",
+    "title": "Category Share for One Brand",
+    "context": "Analyze how knowledge of preferred product use supports development and improvement. Evaluate the following economic assertions:",
+    "statements": [
+      "With absolute share twelve per cent and leader share twelve per cent, relative market share equals 1.0.",
+      "Market potential includes demand from buyers who might enter if products better match their needs.",
+      "Sales potential includes revenue that could be won if the firm captures a portion of unmet category demand.",
+      "Research institutes analysing primary data produce interpretations tailored to the commissioning client's brief.",
+      "Free secondary reports may still underrepresent niche buyer segments that primary research later targets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "12/12 gives relative share of 1.0.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Better-matched products can convert potential into volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unmet demand can raise a firm's sales potential.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Institute analysis serves the client's tailored primary study.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Secondary generality can miss niches addressed in primary work.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.99",
+    "title": "Trailing the Market Leader",
+    "context": "Review the customer-analysis dimension of where customers buy products. Evaluate the following economic assertions:",
+    "statements": [
+      "Primary market research may gather information through telephone interviews with potential customers designed for the specific interests of the business.",
+      "Institute-collected interviews are secondary because the institute is a third party.",
+      "Free secondary data are always outdated and therefore primary when less than one year old.",
+      "Cost barriers to primary research apply only to multinational corporations.",
+      "Where-customer research may show that buyers increasingly prefer wholesale distributors for certain product categories."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Primary research uses tailored empirical methods such as telephone interviews with potential customers to collect data for the firm.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Third-party collection for a bespoke study is primary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Age alone does not convert secondary data into primary.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Small businesses especially face affordability limits.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Purchase-location analysis identifies channel preferences such as wholesale distributors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.100",
+    "title": "Leading the Largest Competitor",
+    "context": "Analyze how purchase-location data helps identify preferred distribution channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share calculations use costs of production instead of sales revenue.",
+      "Where-customer research may show that buyers increasingly prefer department concessions for certain product categories.",
+      "Relative market share subtracts the leader's share from the firm's share.",
+      "Absolute market share multiplies firm sales by total market sales.",
+      "Market research never examines competition because antitrust law forbids it."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share uses sales, not production costs.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Purchase-location analysis identifies channel preferences such as department concessions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Relative share is a ratio, not a subtraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Absolute share divides firm sales by market sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competition is within market research scope.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  }
+]

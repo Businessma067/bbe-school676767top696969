@@ -1,0 +1,877 @@
+[
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.01",
+    "title": "Tax-funded lighthouse",
+    "context": "A coastal town funds a lighthouse through general taxation rather than individual tolls. Evaluate the following economic assertions:",
+    "statements": [
+      "Money's store-of-value function is strengthened when inflation is very high and unpredictable.",
+      "Free riders would benefit from the beam without paying if funding relied purely on voluntary donations.",
+      "Tax financing can overcome free-rider problems by compelling contributions from beneficiaries broadly.",
+      "Because ships are private businesses, lighthouse services cannot be public goods by definition.",
+      "Public goods must always be provided free with zero cost to any taxpayer."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "High inflation destroys real value stored in cash.",
+      "Voluntary funding lets non-payers enjoy benefits without contributing.",
+      "Taxation collects payment from the broader community benefiting from navigation safety.",
+      "Public goods can benefit private users; excludability not user type defines the category.",
+      "Public goods are funded collectively; they are not costless to society."
+    ],
+    "tactical_explanations": [
+      "Money stores value only when what a euro buys stays reasonably stable. Very high and unpredictable inflation eats that real value quickly, so the store-of-value function weakens rather than strengthens. The claim has the effect backwards.\n\nThe statement is false.",
+      "A lighthouse beam is hard to withhold from ships that did not donate. If funding rested only on voluntary gifts, non-payers would still navigate by the light. That is the free-rider problem in plain form.\n\nThe statement is true.",
+      "General taxation gathers contributions from the wider community that benefits from safer navigation. Compulsory payment closes the gap voluntary funding leaves open, so tax finance can overcome free riding for this kind of shared service.\n\nThe statement is true.",
+      "Public goods are defined by non-excludability and non-rivalry in use, not by whether the users are private firms. Ships can be private businesses and still rely on a classic public good. User type does not rewrite the category.\n\nThe statement is false.",
+      "Public goods are often tax-funded, but that does not make them costless. Society still pays through taxes and forgone alternatives. \"Free at the point of use\" is not the same as \"zero cost to any taxpayer.\"\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.02",
+    "title": "Saving euros under low inflation",
+    "context": "A worker holds 1,000 euros in a current account while inflation runs slightly below 2%. Evaluate the following economic assertions:",
+    "statements": [
+      "Money still stores value but slowly loses some purchasing power under positive inflation.",
+      "Slightly below 2% inflation means purchasing power rises every year for cash holders.",
+      "Store-of-value function is weaker when inflation is positive even if moderate.",
+      "ECB target near 2% contrasts with destabilising very high inflation rates.",
+      "Purchasing power of held cash depends on general price level changes domestically."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Moderate inflation erodes real value gradually.",
+      "Positive inflation reduces real purchasing power over time.",
+      "Cash loses real value unless nominal interest compensates inflation.",
+      "Low stable target differs from harmful high inflation.",
+      "Domestic prices determine real value of euro holdings locally."
+    ],
+    "tactical_explanations": [
+      "With inflation slightly below 2%, the nominal 1,000 euros still sits in the account, yet each euro buys a little less over time. Money continues to store value, but positive inflation slowly erodes purchasing power.\n\nThe statement is true.",
+      "Positive inflation, even when low, means the general price level is rising. Cash holders therefore lose purchasing power gradually; they do not gain it. \"Slightly below 2%\" is still inflation, not deflation.\n\nThe statement is false.",
+      "Store of value is about keeping real buying power into the future. When inflation is positive, uninvested cash loses some of that power even if the rate is moderate. The function still works, but it works more weakly than under zero inflation.\n\nThe statement is true.",
+      "A low, stable target near 2% is meant to keep prices predictable. That setting is far from the chaos of very high inflation that wrecks planning and contracts. The contrast in the claim is economically sound.\n\nThe statement is true.",
+      "What held euros buy at home depends on domestic prices. If grocery and rent prices rise, the same balance stretches less far, regardless of other markets. Purchasing power of cash is tied to the local price level.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.03",
+    "title": "Circular flow basics",
+    "context": "Analyze the circular flow of income and spending: Evaluate the following economic assertions:",
+    "statements": [
+      "Stored cash never loses purchasing power because nominal euro amounts stay unchanged on the note.",
+      "A banknote's face value freezes its real purchasing power for decades.",
+      "Households can only appear on the spending side and never supply labour or capital to firms.",
+      "The circular flow shows how income earned from production returns as spending on output.",
+      "Government, banks, and foreign trade never appear in any circular-flow diagram."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Inflation reduces real value even when the printed number stays the same.",
+      "Nominal face value can stay fixed while prices rise, eroding what the note buys.",
+      "Households supply factors of production, not only consumption demand.",
+      "Earned income flows back as payment for goods and services produced.",
+      "Extended diagrams include government, financial sector, and foreign trade links."
+    ],
+    "tactical_explanations": [
+      "The printed number on a note can stay fixed while prices rise. Real purchasing power is what goods that cash can buy, so inflation can shrink it even when the nominal amount never changes. \"Stored cash never loses purchasing power\" is too strong.\n\nThe statement is false.",
+      "Face value is a nominal figure. Over decades of rising prices, the same banknote typically buys fewer goods. Real purchasing power is not frozen by the digits on the paper.\n\nThe statement is false.",
+      "In the circular flow, households supply labour and capital to firms and receive income in return. They also spend on goods and services. Confining households to the spending side alone erases half of the basic model.\n\nThe statement is false.",
+      "Production generates factor incomes for households; households then spend on the goods and services firms produce. That loop of income returning as spending is exactly what the circular-flow idea captures.\n\nThe statement is true.",
+      "Simple textbook sketches start with households and firms, but extended diagrams routinely add government, banks, and foreign trade. Saying those actors never appear is incorrect.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.04",
+    "title": "Hyperinflation pocket money",
+    "context": "In a country with very rapid price rises, a child's 20-euro note buys far less candy monthly. Evaluate the following economic assertions:",
+    "statements": [
+      "Very rapid inflation sharply erodes purchasing power of nominally unchanged cash amounts.",
+      "Paying with a mobile transfer is exchange using money as medium of exchange.",
+      "Store-of-value function of money fails when inflation outpaces ability to spend or invest quickly.",
+      "ECB's slightly-below-2% target aims at stability far from such hyperinflation scenarios.",
+      "Purchasing power erosion under inflation affects households as well as firms holding cash."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Fast price rises reduce real goods obtainable for fixed nominal money.",
+      "Electronic payment is monetary exchange like cash.",
+      "High inflation destroys real value stored in cash.",
+      "Ecb stability target contrasts with destabilising hyperinflation.",
+      "Both households and firms lose real value on cash holdings when prices surge."
+    ],
+    "tactical_explanations": [
+      "When prices surge month after month, a fixed 20-euro note buys fewer sweets even though the face amount is unchanged. Rapid inflation cuts real purchasing power of nominal cash sharply.\n\nThe statement is true.",
+      "A mobile transfer settles a purchase with money balances rather than a direct swap of goods. That is money acting as a medium of exchange, just as a cash handover would.\n\nThe statement is true.",
+      "Store of value means holding money for later use without watching its real worth collapse. When inflation races ahead of any chance to spend or reinvest, cash fails at that job. Hyperinflation is the textbook case.\n\nThe statement is true.",
+      "The ECB's aim of inflation slightly below 2% is a price-stability target. It sits nowhere near the extreme instability of hyperinflation. The contrast in the claim holds.\n\nThe statement is true.",
+      "Anyone holding cash, household or firm, sees real balances shrink when the price level jumps. Purchasing-power erosion under inflation is not limited to one sector.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.05",
+    "title": "National park entry debate",
+    "context": "Policals debate funding a national park via general tax versus gate fees only. Evaluate the following economic assertions:",
+    "statements": [
+      "Clean air and preserved landscape benefits may extend beyond paying visitors, suggesting public-good elements.",
+      "Pure gate fees may exclude low-income residents while still leaving non-visitors benefiting from ecosystem services.",
+      "Tax funding can address free-rider issues when many benefit without direct payment.",
+      "National parks are never public goods because trees are physical objects you can touch.",
+      "Free-rider problems occur only in foreign trade and never in domestic environmental policy."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Ecosystem benefits can be non-excludable and widely shared.",
+      "Excludable gate fees miss broader non-visitor benefits and access equity concerns.",
+      "Taxation can fund shared benefits when voluntary payment would underfund upkeep.",
+      "Public-good status depends on excludability and rivalry, not tangibility alone.",
+      "Free-rider logic applies domestically to shared environmental benefits."
+    ],
+    "tactical_explanations": [
+      "Clean air and landscape quality can spill beyond those who buy a ticket. When benefits are widely shared and hard to fence off, the park has public-good elements even if gate fees exist for entry.\n\nThe statement is true.",
+      "Gate fees can shut out low-income visitors while people who never enter may still enjoy cleaner air or biodiversity. Exclusive pricing neither captures every benefit nor settles equity concerns.\n\nThe statement is true.",
+      "When many enjoy ecosystem services without paying at the gate, voluntary funding underprovides upkeep. Tax finance spreads the cost across beneficiaries and can ease that free-rider shortfall.\n\nThe statement is true.",
+      "Whether something is a public good turns on excludability and rivalry, not on whether you can touch trees. Physical objects can still deliver non-excludable shared benefits. Tangibility alone does not settle the definition.\n\nThe statement is false.",
+      "Free-rider logic applies whenever people can enjoy a shared benefit without contributing, including domestic environmental policy. It is not confined to foreign trade.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.06",
+    "title": "Money's three functions",
+    "context": "Analyze the three functions of money in a modern economy: Evaluate the following economic assertions:",
+    "statements": [
+      "High, erratic inflation makes cash a safer long-term store of value.",
+      "Inflation means any one product got dearer in a single aisle.",
+      "Street lighting never faces free riders because neighbours always chip in voluntarily.",
+      "Because money stores value, its purchasing power never changes over time.",
+      "Barter requires a double coincidence of wants, which money helps overcome as medium of exchange."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Inflation is a general price-level phenomenon, not every individual price move.",
+      "High inflation destroys real value stored in cash.",
+      "Free-rider logic applies to domestic shared services such as parks and lighting.",
+      "Inflation erodes purchasing power; stored money does not guarantee unchanged value.",
+      "Barter needs matching wants; money simplifies exchange."
+    ],
+    "tactical_explanations": [
+      "A long-term store of value needs reasonably stable purchasing power. High, erratic inflation does the opposite: it eats cash balances. Calling that environment \"safer\" for storing value reverses the lesson.\n\nThe statement is false.",
+      "Inflation is a rise in the general price level, not the story of one product becoming dearer in a single aisle. One shelf price can move for many reasons without counting as inflation.\n\nThe statement is false.",
+      "Street lighting is hard to exclude from neighbours who refuse to chip in. Voluntary funding invites free riding; neighbours do not \"always\" pay. The absolute claim fails.\n\nThe statement is false.",
+      "Money can store value, but inflation can still change what a stored euro buys. The store-of-value function does not freeze purchasing power forever.\n\nThe statement is false.",
+      "Barter works only when each party wants what the other offers at the same time. Money as a medium of exchange breaks that double coincidence by letting people sell for cash and buy elsewhere later.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.07",
+    "title": "Circular flow with government",
+    "context": "Evaluate government's role in an extended circular flow: Evaluate the following economic assertions:",
+    "statements": [
+      "Government collects taxes from households and firms and spends on public services and transfers.",
+      "Government spending and taxation appear in extended circular-flow models linking public sector to private actors.",
+      "Households never receive anything from government, so no return flow exists in the circular model.",
+      "Subsidies and transfers are channels through which government redistributes income in the flow.",
+      "The circular flow shows only barter with no role for money as medium of exchange."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Tax receipts and public expenditure connect government to households and firms.",
+      "Extended diagrams include the public sector's injections and withdrawals.",
+      "Households receive transfers, public services, and sometimes employment income from government.",
+      "Transfers and subsidies move purchasing power among actors in the flow.",
+      "Modern circular-flow analysis assumes monetary exchange, not barter only."
+    ],
+    "tactical_explanations": [
+      "In an extended circular flow, government takes taxes from households and firms and channels spending into public services and transfers. That two-way link is standard in the model.\n\nThe statement is true.",
+      "Fuller circular-flow diagrams place the public sector between private actors through tax withdrawals and spending injections. Government is not left off the map in those versions.\n\nThe statement is true.",
+      "Households often receive transfers, public services, and sometimes public-sector wages. Saying they never get anything back from government erases those return flows.\n\nThe statement is false.",
+      "Subsidies and transfers shift purchasing power among households and firms by design. They are the channels through which government redistributes within the flow.\n\nThe statement is true.",
+      "Modern circular-flow thinking assumes monetary payments for goods, factors, taxes, and transfers. It is not a barter-only sketch with no medium of exchange.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.08",
+    "title": "Call centre task split",
+    "context": "A support centre separates billing queries from technical troubleshooting across two teams. Evaluate the following economic assertions:",
+    "statements": [
+      "Division of labour by query type lets agents specialise and often resolve cases faster.",
+      "Specialisation can reduce training time per agent for their assigned task category.",
+      "Households supply factors to firms and receive income that returns as spending in the circular flow.",
+      "If the billing team is understaffed, technical agents cannot cover without cross-training gaps.",
+      "Dependency between teams can create bottlenecks when one queue overflows."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Task-focused teams raise speed and expertise on repeated case types.",
+      "Narrower training scope can shorten onboarding for each role.",
+      "Factor payments and consumption close the basic income–spending loop.",
+      "Lack of cross-skills limits flexibility during imbalances.",
+      "Inter-team dependency mirrors manufacturing specialisation risks."
+    ],
+    "tactical_explanations": [
+      "Splitting billing from technical work lets each team deepen routines for one query type. Specialisation of that kind usually speeds resolution on familiar cases.\n\nThe statement is true.",
+      "Agents trained only on billing, or only on troubleshooting, cover a narrower skill set. Onboarding can therefore be shorter than training everyone for every call type.\n\nThe statement is true.",
+      "Households supply labour and capital, earn income, and spend on firms' output. That income–spending loop is the core circular flow, and the claim states it correctly.\n\nThe statement is true.",
+      "Without cross-training, technical staff lack billing scripts and access. An understaffed billing queue then cannot be covered cleanly, so the staffing claim fits specialisation's downside.\n\nThe statement is true.",
+      "When teams depend on each other, overload in one queue spills into the other. That bottleneck risk is the interdependence that comes with divided tasks.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.09",
+    "title": "Subsidy for rail commuters",
+    "context": "Government pays a per-trip subsidy lowering commuter rail tickets. Evaluate transfers and subsidies:. Evaluate the following economic assertions:",
+    "statements": [
+      "Barter partners always want exactly the same items, so matching wants is automatic.",
+      "Call centres cannot specialise; only factory workers may divide tasks.",
+      "Subsidies are identical to public goods because both always require taxation.",
+      "Subsidised tickets can shift commuter choices toward rail without making rail a pure public good.",
+      "Transfers redistribute resources and can target policy goals such as mobility or environmental aims."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Inflation is a general price-level phenomenon, not every individual price move.",
+      "High inflation destroys real value stored in cash.",
+      "Subsidies support specific goods or groups; public goods are defined by non-excludability and shared benefit.",
+      "Commuter rail remains a rival, excludable service even when subsidised.",
+      "Transfers and subsidies pursue distributional or policy objectives."
+    ],
+    "tactical_explanations": [
+      "Barter needs a double coincidence of wants: each side must desire what the other offers. That match is not automatic, which is why barter is cumbersome.\n\nThe statement is false.",
+      "Division of labour appears in services as well as factories. Call centres routinely split query types across specialised teams. The \"only factory workers\" limit is wrong.\n\nThe statement is false.",
+      "Subsidies support particular goods or groups; public goods are defined by non-excludability and shared consumption. Taxation can fund either, but that does not make the two identical.\n\nThe statement is false.",
+      "A fare subsidy can nudge travellers onto rail while seats remain rival and tickets remain excludable. Price support changes incentives; it does not turn rail into a pure public good.\n\nThe statement is true.",
+      "Transfers move resources toward chosen groups or aims, including mobility and environmental goals. That redistributive and policy role is exactly what transfers do.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.10",
+    "title": "Export subsidy debate",
+    "context": "Government considers export subsidies for dairy cooperatives. Evaluate subsidies versus public goods:. Evaluate the following economic assertions:",
+    "statements": [
+      "Export subsidies transfer public funds to support a specific industry or activity.",
+      "Subsidies differ from pure public goods because subsidised goods remain excludable and rival in consumption.",
+      "All government spending is automatically a public good regardless of what is funded.",
+      "Subsidies can alter producer incentives and prices without making the product non-excludable.",
+      "Tax revenue funding subsidies links government to firms in the circular flow."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Subsidies target particular sectors with fiscal support.",
+      "Subsidised dairy remains rival and excludable unlike defence or street lighting.",
+      "Spending type determines public-good status, not government involvement alone.",
+      "Subsidies shift costs and prices without changing excludability characteristics.",
+      "Tax-funded subsidies connect public sector to producers in the flow model."
+    ],
+    "tactical_explanations": [
+      "An export subsidy channels public money toward a named industry or activity, here dairy cooperatives. That targeted fiscal support is what a subsidy is.\n\nThe statement is true.",
+      "Subsidised cheese or milk still goes to paying buyers and is used up by those who consume it. Rivalry and excludability remain, unlike classic pure public goods such as defence or street lighting.\n\nThe statement is true.",
+      "Government spending covers many things: transfers, subsidies, private-type purchases, and public goods. Funding source alone does not make every outlay a public good.\n\nThe statement is false.",
+      "A subsidy can raise producer receipts or lower buyer prices and still leave the product sellable only to those who pay. Incentives shift; excludability need not vanish.\n\nThe statement is true.",
+      "Taxes withdraw income from the private sector; subsidy payments inject funds to firms. That tax-and-spend link is how government connects to producers in the circular flow.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.11",
+    "title": "Barter weekend market",
+    "context": "A hobby market allows only direct swaps: honey for bread, bread for pottery. Evaluate the following economic assertions:",
+    "statements": [
+      "Barter requires double coincidence of wants between each pair of traders.",
+      "Absence of money as medium of exchange makes multilateral trading chains harder to arrange.",
+      "Such swaps still constitute exchange under otherwise unchanged conditions.",
+      "Barter eliminates all comparison problems because traders always value goods equally.",
+      "Introducing money would add medium of exchange simplifying trades that barter complicates."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "Each swap needs mutual want alignment at the same time.",
+      "Without money, indirect exchange through many pairs is cumbersome.",
+      "Barter remains exchange fulfilling wants without euros.",
+      "Comparing unlike goods' values is harder under barter without unit of account.",
+      "Money's medium-of-exchange role reduces matching friction."
+    ],
+    "tactical_explanations": [
+      "Each direct swap works only if both traders want each other's goods at the same moment. That mutual alignment is the double coincidence of wants.\n\nThe statement is true.",
+      "Without money, a honey seller who wants pottery may need a chain of intermediate swaps. Arranging those multilateral matches is far harder than a cash sale.\n\nThe statement is true.",
+      "Honey for bread is still exchange: each party gives up something to obtain something preferred. Absence of euros does not erase the trade.\n\nThe statement is true.",
+      "Barter leaves traders without a shared unit for quoting values, so comparing unlike goods is often harder, not automatic equality of valuation. The claim overstates barter's simplicity.\n\nThe statement is false.",
+      "Money as a medium of exchange lets each person sell for cash and buy later from someone else. That removes much of the matching friction barter creates.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.12",
+    "title": "Purchasing power over decades",
+    "context": "A pensioner notes the same nominal 100 euros buys fewer groceries than thirty years ago. Evaluate the following economic assertions:",
+    "statements": [
+      "Only foreign trade creates free-rider problems; domestic public services never do.",
+      "Nominal euro amounts automatically preserve real purchasing power regardless of price changes.",
+      "Money's store-of-value function is weakened when inflation is positive over long periods.",
+      "Inflation slightly below 2% is the ECB's stability target, not a mandate for ever-rising prices without limit.",
+      "Purchasing power depends only on foreign exchange rates and never on domestic price levels."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Free-rider logic applies to domestic shared services such as parks and lighting.",
+      "Nominal amounts do not automatically maintain real buying power under inflation.",
+      "Inflation reduces real value stored in cash over time.",
+      "Ecb targets inflation slightly below 2% for stability.",
+      "Domestic price level chiefly determines domestic purchasing power of euro cash."
+    ],
+    "tactical_explanations": [
+      "Free-rider problems show up wherever shared benefits are hard to exclude, including domestic parks, lighting, and other public services. Foreign trade is not the only setting.\n\nThe statement is false.",
+      "Nominal balances can sit unchanged while prices rise. Real purchasing power then falls. Automatic preservation of real value does not follow from a fixed euro face amount.\n\nThe statement is false.",
+      "Positive inflation over long stretches means cash held idle buys less. That erosion weakens money's performance as a store of value, which matches the pensioner's grocery observation.\n\nThe statement is true.",
+      "The ECB's price-stability aim is inflation slightly below 2%, a low stable rate, not an instruction to let prices race without limit. The claim states that distinction correctly.\n\nThe statement is true.",
+      "Domestic purchasing power of euro cash turns first on domestic prices. Exchange rates matter for foreign goods, but they do not alone determine what groceries cost at home.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.13",
+    "title": "Inflation and purchasing power",
+    "context": "Review inflation, purchasing power, and price stability: Evaluate the following economic assertions:",
+    "statements": [
+      "Barter requires no matching of wants because any trade partners automatically desire identical goods.",
+      "Inflation increases purchasing power because prices and money value always move together upward.",
+      "Money as a unit of account disappears the moment two currencies exist in tourism.",
+      "If prices rise faster than incomes, households can buy fewer goods with the same nominal cash.",
+      "Inflation affects only foreign trade and never domestic purchasing power of euro cash."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Barter needs double coincidence of wants between trading parties.",
+      "Inflation reduces real purchasing power; money buys less, not more.",
+      "Call centres, hospitals, and restaurants all use division of labour.",
+      "Faster price rises than income growth reduce real consumption capacity.",
+      "Domestic cash purchasing power falls when general prices rise at home."
+    ],
+    "tactical_explanations": [
+      "Barter requires a double coincidence of wants. Partners do not automatically desire identical goods; matching those wants is the hard part.\n\nThe statement is false.",
+      "Inflation raises the general price level, so each euro typically buys less, not more. Purchasing power falls when prices climb; it does not rise in lockstep with \"money value upward.\"\n\nThe statement is false.",
+      "A unit of account is a common measuring stick for prices and debts. Tourists may see two currencies, yet each still quotes prices in its own unit. Multiple currencies do not erase the function.\n\nThe statement is false.",
+      "If prices outpace incomes, the same nominal cash covers a smaller basket. Real consumption capacity shrinks even though the face amounts look unchanged.\n\nThe statement is true.",
+      "Domestic inflation directly cuts what euro cash buys at home. The effect is not limited to foreign trade.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.14",
+    "title": "Voluntary donation park cleanup",
+    "context": "A river park cleanup relies on voluntary donations; many residents enjoy cleaner paths without donating. Evaluate the following economic assertions:",
+    "statements": [
+      "Residents who enjoy cleaner paths without paying illustrate the free-rider problem.",
+      "Public-good-like benefits may be underprovided when funding depends on voluntary contributions alone.",
+      "Tax financing could reduce free riding by requiring contributions from beneficiaries broadly.",
+      "Free riders exist only when money functions as medium of exchange and never with public services.",
+      "Voluntary funding always delivers optimal public-good levels without any shortfall."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Non-payers benefiting from cleanup funded by others are free riders.",
+      "Voluntary schemes often underfund shared benefits.",
+      "Compulsory tax spreads cost among users and non-users who still benefit.",
+      "Free-rider logic applies to shared services regardless of how money functions.",
+      "Voluntary donations frequently fall short of optimal provision."
+    ],
+    "tactical_explanations": [
+      "Residents who walk cleaner paths without donating enjoy a benefit others fund. That pattern is the free-rider problem.\n\nThe statement is true.",
+      "When enjoyment is shared and payment is voluntary, many hold back and hope others pay. Shared cleanup then tends to be underfunded relative to what the community would collectively prefer.\n\nThe statement is true.",
+      "Tax finance requires broader contribution from those who benefit, including people who would otherwise free ride. Compulsory funding can close the voluntary shortfall.\n\nThe statement is true.",
+      "Free riding is about enjoying a shared benefit without paying. It arises with public services whether or not money is also used as a medium of exchange elsewhere.\n\nThe statement is false.",
+      "Voluntary donation schemes often fall short of the socially preferred level of a shared good. \"Always optimal\" is too strong.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.15",
+    "title": "Medium of exchange everyday",
+    "context": "Shoppers pay euros for bread instead of trading socks directly with the baker. Evaluate the following economic assertions:",
+    "statements": [
+      "Using euros avoids barter's double coincidence of wants between bread and socks.",
+      "Money as medium of exchange separates the act of selling from the act of buying.",
+      "Street lighting financed by local tax can address free-rider problems of voluntary funding.",
+      "Medium of exchange is one of money's three core functions alongside unit of account and store of value.",
+      "Without medium of exchange, every purchase would require direct matching of wants."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Money removes need for buyer and seller to want each other's exact goods.",
+      "Seller accepts money now and buys desired goods later from others.",
+      "Tax spreads cost among beneficiaries who would otherwise free ride.",
+      "Three functions are medium of exchange, unit of account, store of value.",
+      "Barter requires reciprocal want alignment on each transaction."
+    ],
+    "tactical_explanations": [
+      "Paying euros for bread means the shopper need not find a baker who wants socks. Money removes that double coincidence of wants.\n\nThe statement is true.",
+      "The baker accepts money now and later spends it on whatever she needs from others. Selling and buying become separate acts instead of one simultaneous swap.\n\nThe statement is true.",
+      "Street lighting is hard to charge per passer-by. Local tax spreads the cost so voluntary free riding does not leave the streets dark.\n\nThe statement is true.",
+      "Textbook money has three core roles: medium of exchange, unit of account, and store of value. Medium of exchange sits alongside the other two.\n\nThe statement is true.",
+      "Without a medium of exchange, each purchase would need reciprocal want matching as in barter. That is exactly the friction money avoids.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.16",
+    "title": "ECB target recall",
+    "context": "Evaluate precise claims about ECB inflation targeting: Evaluate the following economic assertions:",
+    "statements": [
+      "The ECB aims for inflation slightly below 2% as its price-stability objective.",
+      "ECB target requires inflation to be exactly zero forever with no deviation allowed.",
+      "Price stability supports predictable purchasing power compared with high volatile inflation.",
+      "Inflation slightly below 2% is identical to hyperinflation in economic effect.",
+      "Central bank targets relate to macroeconomic stability of the general price level."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Slightly below 2% is the stated ecb aim.",
+      "Target allows small positive inflation, not zero forever.",
+      "Stable low inflation preserves purchasing power predictability.",
+      "Hyperinflation destroys purchasing power; target stability contrasts sharply.",
+      "Price-level stability is a macro policy goal."
+    ],
+    "tactical_explanations": [
+      "The ECB's price-stability objective is inflation slightly below 2%. That is the standard statement of the target.\n\nThe statement is true.",
+      "Slightly below 2% already allows small positive inflation. The mandate is not exact zero forever with no room to move.\n\nThe statement is false.",
+      "Low, stable inflation keeps the real value of money more predictable than high, volatile inflation. Price stability supports planning for households and firms.\n\nThe statement is true.",
+      "Hyperinflation destroys purchasing power and contracts; a near-2% target aims at stability. The economic effects are not identical.\n\nThe statement is false.",
+      "Central-bank inflation targets are tools for keeping the general price level on a stable path, a macroeconomic stability goal.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.17",
+    "title": "Student grant transfer",
+    "context": "Government pays living-cost grants to low-income students. Evaluate transfers:. Evaluate the following economic assertions:",
+    "statements": [
+      "Student grants are government transfers redistributing income toward a targeted group.",
+      "Transfers move purchasing power to recipients without necessarily providing a pure public good.",
+      "A transport subsidy lowers user fares by covering part of cost from public funds.",
+      "Grant income enters the circular flow as household income later spent on goods and services.",
+      "Transfers can pursue equity goals while remaining distinct from tax-funded defence or street lighting."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Grants shift resources to eligible students by policy design.",
+      "Transfers support individuals; public goods are non-excludable shared services.",
+      "Subsidies channel fiscal support to reduce prices or support producers or consumers.",
+      "Grant spending flows through households to firms in the circular flow.",
+      "Transfers pursue distributional aims separate from classic public-good provision."
+    ],
+    "tactical_explanations": [
+      "Living-cost grants to low-income students shift public funds toward a defined group. That is a government transfer by design.\n\nThe statement is true.",
+      "A transfer raises the recipient's purchasing power without turning the grant itself into a non-excludable shared service like street lighting. Support to individuals and pure public goods are different tools.\n\nThe statement is true.",
+      "A transport subsidy uses public money to cover part of the fare, so users pay less at the ticket office. That is the ordinary meaning of a user subsidy.\n\nThe statement is true.",
+      "Grant income becomes household income and is then spent on rent, food, and other goods. Those purchases feed spending back to firms in the circular flow.\n\nThe statement is true.",
+      "Transfers can chase equity aims while defence or street lighting remain separate, tax-funded public goods. Redistribution and classic public-good provision are related fiscal choices, not the same thing.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.18",
+    "title": "Factory specialisation drawback",
+    "context": "Workers on one repetitive bolt-tightening task report fatigue and cannot switch lines quickly. Evaluate the following economic assertions:",
+    "statements": [
+      "Taxes never fund public goods; private firms always supply defence at market prices.",
+      "Circular flow stops when households save, because wages then cease to exist.",
+      "Specialisation always improves worker satisfaction with no possible downsides whatsoever.",
+      "Narrow task focus may limit workers' transferable skills if jobs disappear.",
+      "Despite drawbacks, specialisation often lowers average production cost per unit."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Inflation reduces real value even when the printed number stays the same.",
+      "Barter needs double coincidence of wants between trading parties.",
+      "Monotony and skill narrowing are recognised drawbacks.",
+      "Limited skill breadth is a risk when tasks are highly specialised.",
+      "Productivity gains and lower unit cost remain the main advantage."
+    ],
+    "tactical_explanations": [
+      "Defence and many other public goods are typically tax-funded because markets alone underprovide them. Private firms do not always supply defence at market prices.\n\nThe statement is false.",
+      "Saving is a leakage in extended models, but wages still exist and banks can channel funds back as investment. The circular flow does not stop, and wages do not vanish, just because households save.\n\nThe statement is false.",
+      "Narrow, repetitive tasks can bring monotony and fatigue, as the bolt-tightening workers show. Specialisation is not an automatic boost to satisfaction with no downsides.\n\nThe statement is false.",
+      "Workers locked into one tiny task build deep but narrow skills. If that job disappears, transferable options may be limited. That skill-narrowing risk is real.\n\nThe statement is true.",
+      "Despite human and coordination costs, repeating a specialised task usually raises productivity and cuts average unit cost when the line runs smoothly.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.19",
+    "title": "Specialisation in hospitals",
+    "context": "Hospital splits surgery, diagnostics, and nursing into specialised departments. Evaluate the following economic assertions:",
+    "statements": [
+      "Division of labour by medical specialty raises skill depth and often treatment efficiency.",
+      "Specialisation creates interdependence: diagnostics delay can postpone surgery schedules.",
+      "Specialisation never occurs in healthcare because every doctor must do every task.",
+      "Drawbacks can include coordination costs and bottlenecks between departments.",
+      "Despite coordination needs, specialisation typically improves output per specialist hour."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Focused departments develop deeper expertise.",
+      "Delayed scans can block operating theatre slots.",
+      "Healthcare relies heavily on specialised roles.",
+      "Handoffs and queues are specialisation drawbacks.",
+      "Expert focus raises productivity in complex services."
+    ],
+    "tactical_explanations": [
+      "Separate surgery, diagnostics, and nursing teams deepen expertise in each role. That division of labour often raises treatment quality and speed for complex care.\n\nThe statement is true.",
+      "Surgery waits on diagnostic results. A backlog in scanning delays theatre schedules, so specialisation creates interdependence across departments.\n\nThe statement is true.",
+      "Modern hospitals run on specialised roles; no credible system requires every doctor to perform every task. The absolute claim is false.\n\nThe statement is false.",
+      "Handoffs, queues, and waiting between departments are coordination costs. Those bottlenecks are recognised drawbacks of specialised organisation.\n\nThe statement is true.",
+      "Focusing skilled staff on their specialty typically raises output per specialist hour even when coordination work remains. Efficiency gains are why hospitals specialise.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.20",
+    "title": "Public goods and free riders",
+    "context": "Assess public goods, taxation, and free-rider problems: Evaluate the following economic assertions:",
+    "statements": [
+      "Specialisation removes all risk for a firm if it masters one narrow product forever.",
+      "Domestic police services never create free-rider incentives for non-payers.",
+      "Store-of-value works best when prices jump unpredictably every week.",
+      "Street lighting is excludable for every passer-by, so free-rider problems never arise in practice.",
+      "Transfers and subsidies redistribute income or support specific groups without always being pure public goods."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Inflation reduces real value even when the printed number stays the same.",
+      "Barter needs double coincidence of wants between trading parties.",
+      "Call centres, hospitals, and restaurants all use division of labour.",
+      "Street lighting is largely non-excludable; free-rider logic applies to many local public goods.",
+      "Transfers and subsidies are fiscal tools distinct from but related to public-good provision."
+    ],
+    "tactical_explanations": [
+      "Mastering one narrow product still leaves demand shifts, input failures, and competitor risk. Specialisation does not erase all firm risk forever.\n\nThe statement is false.",
+      "Police protection is hard to withhold street by street from non-payers. Domestic policing therefore creates free-rider incentives under voluntary funding, just like other local public goods.\n\nThe statement is false.",
+      "Store of value works best when purchasing power is reasonably stable. Weekly unpredictable price jumps destroy that stability, so the claim has the condition backwards.\n\nThe statement is false.",
+      "Street lighting is difficult to exclude for every passer-by. Non-payers still walk under the lamps, so free-rider problems arise in practice for this local public good.\n\nThe statement is false.",
+      "Transfers and subsidies move income or support chosen groups. They need not be non-excludable shared services, so they are fiscal tools distinct from pure public goods even when tax-funded.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.21",
+    "title": "Assembly line shutdown",
+    "context": "A single missing chip halts an electronics assembly line where each worker performs one step. Evaluate the following economic assertions:",
+    "statements": [
+      "Fine division of labour increases vulnerability when one specialised input or stage fails.",
+      "Specialisation raises productivity but creates interdependence among sequential tasks.",
+      "Comparing barter ratios among many goods is harder without a unit of account.",
+      "Monotonous single-step work can be a human drawback of extreme specialisation.",
+      "Despite shutdown risk, specialisation often lowers average cost when all stages run smoothly."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "hint_cores": [
+      "One missing component stops tightly linked specialised stages.",
+      "Sequential specialisation links output across dependent tasks.",
+      "Common measurement simplifies relative value comparison.",
+      "Repetitive single tasks may reduce job satisfaction.",
+      "Productivity gains remain the efficiency advantage when supply is uninterrupted."
+    ],
+    "tactical_explanations": [
+      "When each worker owns one thin stage, a missing chip stops everyone downstream. Fine division of labour raises that single-point vulnerability.\n\nThe statement is true.",
+      "Specialisation lifts productivity on each step, yet sequential tasks lean on one another. Interdependence is the flip side of the efficiency gain.\n\nThe statement is true.",
+      "Without a shared unit of account, traders must juggle many pairwise barter ratios. A common measure makes relative values far easier to compare.\n\nThe statement is true.",
+      "Repeating one tiny step all day can feel monotonous. That human cost is a classic drawback of extreme specialisation.\n\nThe statement is true.",
+      "When every stage is supplied and running, specialised lines usually cut average cost through repetition and skill. Shutdown risk does not cancel that efficiency advantage in normal conditions.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.22",
+    "title": "Division of labour",
+    "context": "A car assembly line splits welding, painting, and electronics into separate tasks. Evaluate specialisation:. Evaluate the following economic assertions:",
+    "statements": [
+      "Specialisation never occurs in service industries because only factories can divide tasks.",
+      "Transfer payments to households break circular flow permanently.",
+      "Division of labour never creates drawbacks such as monotonous work or dependency on other stages.",
+      "Specialisation applies only to agriculture and cannot occur in manufacturing or services.",
+      "Interdependent assembly stages mean a breakdown in one station can halt the whole line."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Call centres, hospitals, and restaurants all use division of labour.",
+      "Free-rider logic applies to domestic shared services such as parks and lighting.",
+      "Drawbacks include boredom, skill narrowness, and supply-chain fragility.",
+      "Specialisation appears in factories, offices, and services alike.",
+      "Interdependence creates vulnerability to bottlenecks at one stage."
+    ],
+    "tactical_explanations": [
+      "Services divide tasks constantly: call centres, hospitals, restaurants, and offices all specialise. Factories are not the only setting.\n\nThe statement is false.",
+      "Transfers are income flowing to households, who then spend. That spending re-enters the circular flow; transfers do not break the loop permanently.\n\nThe statement is false.",
+      "Monotony, narrow skills, and dependence on other stages are well-known drawbacks. Claiming division of labour never creates such problems is false.\n\nThe statement is false.",
+      "Specialisation shows up in agriculture, manufacturing, and services alike. Limiting it to farming alone is incorrect.\n\nThe statement is false.",
+      "On an assembly line, stations feed one another. If welding, painting, or electronics stalls, the whole line can stop. Interdependence creates that vulnerability.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.23",
+    "title": "Circular flow income loop",
+    "context": "Evaluate how income and spending connect households and firms: Evaluate the following economic assertions:",
+    "statements": [
+      "Factor payments from firms to households become household income in the circular flow.",
+      "Household spending on goods and services returns revenue to firms, completing the loop.",
+      "The circular flow assumes households never supply labour or capital to production.",
+      "Money facilitates exchange within the flow as medium of exchange linking sales and purchases.",
+      "Saving and taxes can withdraw spending temporarily in extended circular-flow models."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Wages, rent, and profit flow to households as income.",
+      "Consumption expenditure flows back to firms as sales revenue.",
+      "Households supply factors and receive income for doing so.",
+      "Monetary exchange connects production, income, and spending stages.",
+      "Leakages like saving and tax appear in fuller diagrams."
+    ],
+    "tactical_explanations": [
+      "Firms pay wages, rent, interest, and profit to the owners of labour and capital. Those factor payments are household income in the circular flow.\n\nThe statement is true.",
+      "Households spend that income on goods and services, sending revenue back to firms. Spending closing the loop is the second half of the basic diagram.\n\nThe statement is true.",
+      "The model rests on households supplying factors to production. Saying they never supply labour or capital contradicts the circular-flow setup.\n\nThe statement is false.",
+      "Sales and purchases inside the flow are settled with money. Medium of exchange is what links those monetary transactions.\n\nThe statement is true.",
+      "Saving and taxes pull spending out of the simple loop as leakages. Extended circular-flow models show those withdrawals explicitly.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.24",
+    "title": "Unit of account role",
+    "context": "Prices in a supermarket are all labelled in euros. Evaluate money's unit-of-account function:. Evaluate the following economic assertions:",
+    "statements": [
+      "Without money, modern exchange is usually easier than with money.",
+      "Unit of account means money serves as common measure for quoting prices and recording debts.",
+      "Unit of account requires barter because prices cannot be listed without trading goods directly.",
+      "Without a unit of account, comparing bread and cinema ticket values becomes harder.",
+      "Medium of exchange and unit of account are identical functions with no distinction."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "hint_cores": [
+      "Barter needs double coincidence of wants between trading parties.",
+      "Standard measure for prices and debts defines unit of account.",
+      "Unit of account supports priced exchange; it does not require barter.",
+      "Lack of common measure complicates value comparison among different items.",
+      "Exchange facilitation and price measurement are distinct though related functions."
+    ],
+    "tactical_explanations": [
+      "Money reduces matching frictions that barter creates. Modern exchange is generally easier with money than without it. The claim reverses that point.\n\nThe statement is false.",
+      "Unit of account means prices, wages, and debts are quoted in a common measure, here euros on supermarket labels. That measuring-stick role is the definition.\n\nThe statement is true.",
+      "A unit of account supports priced monetary exchange; it does not require traders to swap goods directly. Barter is what you fall back on without money, not a precondition for a unit of account.\n\nThe statement is false.",
+      "With euro prices, bread and a cinema ticket share one scale. Without that common measure, comparing their values means awkward pairwise judgments.\n\nThe statement is true.",
+      "Medium of exchange is about settling trades; unit of account is about measuring value. Related functions, not identical ones.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "2.4",
+    "case_id": "CASE 2.4.25",
+    "title": "Municipal snow clearing",
+    "context": "City clears snow from all residential streets using general taxation. Evaluate the following economic assertions:",
+    "statements": [
+      "Street clearing after snow benefits many residents and is hard to charge individually at moment of use.",
+      "Free-rider issues arise if clearing relied on voluntary payments from each household.",
+      "Tax funding spreads cost across taxpayers to provide the shared service reliably.",
+      "Snow clearing is a pure private good with perfect excludability at all times.",
+      "Public goods financed by tax never appear in circular-flow diagrams with households."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "hint_cores": [
+      "Wide simultaneous benefit and difficulty of excludability fit public-good logic.",
+      "Non-payers would still enjoy cleared streets under voluntary funding.",
+      "Taxation compels broad contribution for shared infrastructure services.",
+      "Many local services resemble public goods in practical excludability limits.",
+      "Government tax and spend appears in extended circular-flow models."
+    ],
+    "tactical_explanations": [
+      "Cleared streets help many households at once, and charging each driver or walker at the moment of use is impractical. That shared-benefit pattern fits public-good logic.\n\nThe statement is true.",
+      "If each household could refuse to pay yet still use cleared roads, many would free ride. Voluntary funding would underprovide snow clearing.\n\nThe statement is true.",
+      "General taxation spreads the cost across taxpayers so the city can clear streets reliably instead of waiting on voluntary gifts.\n\nThe statement is true.",
+      "Snow clearing on open residential streets is hard to exclude perfectly and benefits many users together. Treating it as a pure private good with perfect excludability overstates how market-like it is.\n\nThe statement is false.",
+      "Extended circular-flow diagrams include government tax receipts and public spending with households and firms. Tax-financed services do appear in those models.\n\nThe statement is false."
+    ]
+  }
+]

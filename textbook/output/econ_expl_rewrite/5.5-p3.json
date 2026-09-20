@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.51",
+    "title": "Children Influencing Parent Purchases",
+    "context": "Review gains from competitors as a component of sales potential for one firm. Evaluate the following economic assertions:",
+    "statements": [
+      "Market potential exceeds market volume when category demand from non-buyers remains untapped.",
+      "Absolute share is expressed as a percentage of total market sales attributable to one business.",
+      "Share in market-potential growth is part of market volume rather than sales potential.",
+      "Relative share is expressed as a ratio rather than as a direct percentage of total market sales.",
+      "Research institutes may administer questionnaires as primary data collection on behalf of clients."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Non-buyers keep market potential above volume.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Absolute share is a percentage of total market sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market-potential growth share belongs to sales potential.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Relative share is a ratio against the leader, not a market percentage.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Institute-administered questionnaires are primary collection.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.52",
+    "title": "User Distinct From Buyer",
+    "context": "Analyze a share in the increase of market potential as part of sales potential. Evaluate the following economic assertions:",
+    "statements": [
+      "Trade-body reports may give secondary overview of market size before a firm calculates its own share.",
+      "Investors ignore absolute market share because only relative share appears in annual reports.",
+      "Relative share compares a firm with the smallest competitor rather than the largest.",
+      "Children influencing grocery choices while adults pay illustrates influencer roles in customer analysis.",
+      "Users of industrial components may differ from managers who sign supplier contracts in business markets."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Secondary size overviews precede firm share calculation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Absolute share is relevant to investors per the chapter.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Relative share uses the largest competitor's share.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Influencer example appears in who-customer discussion.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "User and buyer can differ in b2b settings.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.53",
+    "title": "Retail Versus Online Channel Data",
+    "context": "Consider a garden-centre group noting that children influence plant-pot choices even though parents complete the checkout payment. Evaluate the following economic assertions:",
+    "statements": [
+      "A questionnaire sent by post is secondary whereas an online questionnaire is primary.",
+      "Reading a competitor's published market review creates primary data for the reader's firm.",
+      "Preferred use information from what-customer research reduces mismatch between product features and needs.",
+      "Market research excludes competition because rivals refuse to share any information.",
+      "Children influencing purchases means children must be the legal buyers in B2C markets."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Both are primary when newly collected for the study.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Competitor publications used without new collection are secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Feature alignment follows preferred-use insight.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Competition is explicitly within market research scope.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Children may influence without being the buyer.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.54",
+    "title": "Production Planning From Timing",
+    "context": "Analyze automotive, industrial, and medical segments as parts of wider component markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Weak showroom traffic identified in where-research may trigger stronger dealer support programmes.",
+      "Predictable summer demand identified in when-research may trigger earlier inventory builds.",
+      "Preference for local suppliers identified in why-research may shape regional marketing messages.",
+      "A supplier in the printed circuit boards segment may improve positioning by commissioning a tailored questionnaire before launching an updated product line.",
+      "Published trade statistics on the printed circuit boards market can serve as secondary information when estimating total industry sales."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Channel weakness responses follow where analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inventory builds follow seasonal timing insight.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Regional messaging can reflect why-customer motives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the printed circuit boards market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the printed circuit boards segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.55",
+    "title": "Preference Motives and Market Share",
+    "context": "Review long-term growth opportunities linked to new applications in technology markets. Evaluate the following economic assertions:",
+    "statements": [
+      "User and buyer must coincide in B2B markets because businesses sign one contract per person.",
+      "Channel weakness cannot be detected because customers never reveal where they shop.",
+      "Customer analysis in the printed circuit boards market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Printed-circuit-board producer sales of 40 million euros inside a 200 million euro market leave an absolute share of 20 per cent.",
+      "Price differentiation over the year is unrelated to when-customer purchase patterns."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "User and buyer may differ even in b2b settings.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Where analysis is designed to identify purchase channels.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Where, when, and why dimensions apply alongside other customer analysis in printed circuit boards.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "40 divided by 200 equals 20% absolute share in the printed circuit boards example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Timing analysis can support seasonal price differentiation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.56",
+    "title": "Electronics Market Segment Measures",
+    "context": "Analyze administering and interpreting large questionnaire programmes as a primary-research cost. Evaluate the following economic assertions:",
+    "statements": [
+      "With 20 per cent absolute share and a leading rival at 40 per cent in printed circuit boards, relative market share equals 0.5.",
+      "Market potential in printed circuit boards may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one printed circuit boards firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Market volume plus potential customers equals sales volume of one firm.",
+      "A supplier in the industrial adhesives segment may improve positioning by running telephone interviews with buyers before launching an updated product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "20/40 yields 0.5 relative share against the leader in printed circuit boards.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in printed circuit boards.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a printed circuit boards supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "That confuses market measures with a single firm's sales volume.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Tailored primary research such as running telephone interviews with buyers supports informed decisions in the industrial adhesives market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.57",
+    "title": "Growth Opportunities in New Applications",
+    "context": "Consider an automotive-parts supplier using secondary data from industry associations before designing a tailored buyer survey. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the industrial adhesives market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the industrial adhesives market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Industrial adhesives sales of 57 million euros against a 342 million euro market imply an absolute share of 16.7 per cent.",
+      "With 16.7 per cent absolute share and a leading rival at 41.75 per cent in industrial adhesives, relative market share equals 0.4.",
+      "Market potential in industrial adhesives may exceed current market volume when buyers not yet served could enter the category."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Trade statistics reused for the industrial adhesives segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in industrial adhesives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "57 divided by 342 equals 16.7% absolute share in the industrial adhesives example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "16.7/41.75 yields 0.4 relative share against the leader in industrial adhesives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in industrial adhesives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.58",
+    "title": "Gains From Competitors in Potential",
+    "context": "Analyze online surveys as a primary research tool that still requires analysis expenditure. Evaluate the following economic assertions:",
+    "statements": [
+      "Sales potential minus sales volume always equals zero in growing markets.",
+      "Sales potential for one industrial adhesives firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the commercial laundry equipment segment may improve positioning by analysing responses from an online survey before launching an updated product line.",
+      "Published trade statistics on the commercial laundry equipment market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the commercial laundry equipment market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Sales potential can exceed current sales volume in growing markets.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Sales potential includes room beyond current volume for a industrial adhesives supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored primary research such as analysing responses from an online survey supports informed decisions in the commercial laundry equipment market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the commercial laundry equipment segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in commercial laundry equipment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.59",
+    "title": "Share in Market Potential Increase",
+    "context": "Review industry reports published by other businesses as possible secondary sources. Evaluate the following economic assertions:",
+    "statements": [
+      "Fifteen per cent absolute share means the market is fifteen times larger than the firm's sales.",
+      "Commercial laundry equipment sales of 74 million euros in a 518 million euro market yield a 14.3 per cent absolute market share.",
+      "A relative share of one means the firm has one per cent of total market sales.",
+      "Primary research is secondary when conducted for another industry and later read by a different firm.",
+      "Secondary research is primary when the business pays a fee to access an industry database."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "The market is about 6.67 times larger (100/15), not fifteen times.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "74 divided by 518 equals 14.3% absolute share in the commercial laundry equipment example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Relative share of 1.0 means equal percentage with the leader, not 1% market share.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Research for another purpose read later is secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Paying for access does not convert existing research into primary collection.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.60",
+    "title": "Monetary Expression of Market Size",
+    "context": "Analyze matching product development to customer needs revealed through what-customer analysis. Evaluate the following economic assertions:",
+    "statements": [
+      "Customer analysis dimensions are limited to who and what only.",
+      "Market size expressed in pieces sold cannot be compared with market size expressed in euros.",
+      "With 14.3 per cent absolute share and a leading rival at 42.900000000000006 per cent in commercial laundry equipment, relative market share equals 0.33.",
+      "Market potential in commercial laundry equipment may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one commercial laundry equipment firm can exceed its current sales volume through gains from competitors and market growth."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Who, what, where, when, and why are all included.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Both are expressions of market size or volume.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "14.3/42.900000000000006 yields 0.33 relative share against the leader in commercial laundry equipment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in commercial laundry equipment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a commercial laundry equipment supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.61",
+    "title": "Quantity Expression of Market Size",
+    "context": "Consider a components manufacturer that commissions an online survey and telephone interviews to learn what industrial buyers expect from next-generation circuit boards. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the enterprise accounting software segment may improve positioning by hiring an institute to conduct field interviews before launching an updated product line.",
+      "Absolute and relative market share always produce identical numerical results.",
+      "Published trade statistics on the enterprise accounting software market can serve as secondary information when estimating total industry sales.",
+      "Market research institutes collect secondary data because they are independent organisations.",
+      "Customer analysis in the enterprise accounting software market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the enterprise accounting software market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "They measure different relationships and need not match numerically.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Trade statistics reused for the enterprise accounting software segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Institute collection for a bespoke study is primary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Where, when, and why dimensions apply alongside other customer analysis in enterprise accounting software.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.62",
+    "title": "Percentage Share of One Business",
+    "context": "Analyze timing analysis that supports differentiated pricing across seasons or months. Evaluate the following economic assertions:",
+    "statements": [
+      "Small firms always prefer primary research because it is cheaper than secondary sources.",
+      "For enterprise accounting software, 91 million euros of producer sales in a 728 million euro market imply an absolute share of 12.5 per cent.",
+      "With 12.5 per cent absolute share and a leading rival at 25 per cent in enterprise accounting software, relative market share equals 0.5.",
+      "Market potential in enterprise accounting software may exceed current market volume when buyers not yet served could enter the category.",
+      "Why-customer motives are recorded only after sales fall to zero."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Primary is costly; small firms often cannot afford it.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "91 divided by 728 equals 12.5% absolute share in the enterprise accounting software example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "12.5/25 yields 0.5 relative share against the leader in enterprise accounting software.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in enterprise accounting software.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Why analysis informs development before collapse.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.63",
+    "title": "Absolute Share Without Rival Detail",
+    "context": "Review motive analysis explaining preference for one brand over close substitutes. Evaluate the following economic assertions:",
+    "statements": [
+      "Where-customer data show factory locations of suppliers rather than customer purchase points.",
+      "Sales potential for one enterprise accounting software firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the organic breakfast cereals segment may improve positioning by designing a primary study around channel preferences before launching an updated product line.",
+      "Published trade statistics on the organic breakfast cereals market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the organic breakfast cereals market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Where-customers concerns purchase location.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales potential includes room beyond current volume for a enterprise accounting software supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the organic breakfast cereals market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the organic breakfast cereals segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in organic breakfast cereals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.64",
+    "title": "Relative Share Adding Context",
+    "context": "Analyze total market sales as the basis for measuring both size and competitive share. Evaluate the following economic assertions:",
+    "statements": [
+      "When-customer data refer to product warranty periods rather than purchase dates.",
+      "Organic breakfast cereals at 108 million euros of sales versus a 540 million euro market mean a 20 per cent absolute market share.",
+      "With 20 per cent absolute share and a leading rival at 50 per cent in organic breakfast cereals, relative market share equals 0.4.",
+      "Market potential in organic breakfast cereals may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one organic breakfast cereals firm can exceed its current sales volume through gains from competitors and market growth."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "When-customers concerns purchase timing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "108 divided by 540 equals 20% absolute share in the organic breakfast cereals example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "20/50 yields 0.4 relative share against the leader in organic breakfast cereals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in organic breakfast cereals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a organic breakfast cereals supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.65",
+    "title": "Unconverted Customers and Potential",
+    "context": "Consider a pharmaceutical wholesaler operating in a business-to-business market that interviews hospital buyers about motives for choosing one supplier over another. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the electric vehicle chargers segment may improve positioning by commissioning a tailored questionnaire before launching an updated product line.",
+      "Published trade statistics on the electric vehicle chargers market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the electric vehicle chargers market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Electric vehicle charger sales reach 125 million euros in a 750 million euro market, so absolute market share is 16.7 per cent.",
+      "Market share rises automatically when market size falls even if the firm's sales are unchanged."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the electric vehicle chargers market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the electric vehicle chargers segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in electric vehicle chargers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "125 divided by 750 equals 16.7% absolute share in the electric vehicle chargers example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unchanged firm sales with smaller market raise share, but not automatically in every scenario described.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.66",
+    "title": "Combining Primary and Secondary Methods",
+    "context": "Analyze competitive benchmarking through relative share against the market leader. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm's sales potential falls when market potential rises because competition intensifies.",
+      "Primary empirical studies cannot be tailored to specific business interests.",
+      "Secondary information is always more detailed than primary data for one product line.",
+      "With 16.7 per cent absolute share and a leading rival at 50.099999999999994 per cent in electric vehicle chargers, relative market share equals 0.33.",
+      "Relative market share of 0.5 always means the firm holds fifty per cent of the market."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Rising market potential can contribute to higher sales potential.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Primary studies can be tailored to the commissioning firm.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Secondary data are usually general, not more detailed.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "16.7/50.099999999999994 yields 0.33 relative share against the leader in electric vehicle chargers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "0.5 means half the leader's percentage share, not fifty per cent of the market.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.67",
+    "title": "Who What Where When Why Integration",
+    "context": "Review market potential as market volume plus customers not yet converted to purchase. Evaluate the following economic assertions:",
+    "statements": [
+      "Absolute market share of fifty per cent means relative share must also equal fifty.",
+      "Market potential in electric vehicle chargers may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one electric vehicle chargers firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Customer analysis excludes analysis of whether buyers also purchase rival products.",
+      "A supplier in the medical diagnostic kits segment may improve positioning by running telephone interviews with buyers before launching an updated product line."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Absolute percentage and relative ratio measure different comparisons.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Unconverted buyers keep market potential above volume in electric vehicle chargers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a electric vehicle chargers supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Primary research can ask about similar rival products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Tailored primary research such as running telephone interviews with buyers supports informed decisions in the medical diagnostic kits market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.68",
+    "title": "Industry Trend Evaluation",
+    "context": "Analyze sales potential as current sales plus achievable gains from rivals and market growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the medical diagnostic kits market can serve as secondary information when estimating total industry sales.",
+      "Market volume is the sum of market potential and sales potential for one firm.",
+      "Customer analysis in the medical diagnostic kits market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Sales volume for one firm is the same concept as market volume for the whole market.",
+      "B2B customers are consumers whenever they personally use a product at work."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Trade statistics reused for the medical diagnostic kits segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market volume is total current sales; it is not that sum.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Where, when, and why dimensions apply alongside other customer analysis in medical diagnostic kits.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales volume is one firm; market volume is all firms.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Business purchasers for work still indicate b2b.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.69",
+    "title": "Brand Sales Against Category Total",
+    "context": "Consider a logistics firm reviewing published transport-market forecasts alongside its own shipment records to judge growth opportunities. Evaluate the following economic assertions:",
+    "statements": [
+      "Medical diagnostic kit sales of 142 million euros versus a 994 million euro market correspond to a 14.3 per cent absolute market share.",
+      "With 14.3 per cent absolute share and a leading rival at 28.6 per cent in medical diagnostic kits, relative market share equals 0.5.",
+      "Market potential in medical diagnostic kits may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one medical diagnostic kits firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Prospective customers are counted in market volume before they make any purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "142 divided by 994 equals 14.3% absolute share in the medical diagnostic kits example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "14.3/28.6 yields 0.5 relative share against the leader in medical diagnostic kits.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in medical diagnostic kits.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a medical diagnostic kits supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market volume reflects current sales, not unconverted prospects alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.70",
+    "title": "Relative Share Below Unity",
+    "context": "Analyze primary research design around questions such as willingness to pay and support needs. Evaluate the following economic assertions:",
+    "statements": [
+      "A supplier in the warehouse automation systems segment may improve positioning by analysing responses from an online survey before launching an updated product line.",
+      "Published trade statistics on the warehouse automation systems market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the warehouse automation systems market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "For warehouse automation systems, 159 million euros of producer sales in a 1272 million euro market imply an absolute share of 12.5 per cent.",
+      "With 12.5 per cent absolute share and a leading rival at 31.25 per cent in warehouse automation systems, relative market share equals 0.4."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Tailored primary research such as analysing responses from an online survey supports informed decisions in the warehouse automation systems market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the warehouse automation systems segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in warehouse automation systems.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "159 divided by 1272 equals 12.5% absolute share in the warehouse automation systems example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "12.5/31.25 yields 0.4 relative share against the leader in warehouse automation systems.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.71",
+    "title": "Relative Share Above Unity",
+    "context": "Review limitations of secondary data when a firm needs buyer-specific detail. Evaluate the following economic assertions:",
+    "statements": [
+      "Market potential in warehouse automation systems may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one warehouse automation systems firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the specialty coffee roasting segment may improve positioning by hiring an institute to conduct field interviews before launching an updated product line.",
+      "Published trade statistics on the specialty coffee roasting market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the specialty coffee roasting market may ask where buyers purchase, when demand peaks, and why they prefer one supplier."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Unconverted buyers keep market potential above volume in warehouse automation systems.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a warehouse automation systems supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the specialty coffee roasting market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trade statistics reused for the specialty coffee roasting segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in specialty coffee roasting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.72",
+    "title": "Market Research for Investors",
+    "context": "Analyze distinguishing consumer markets from business markets in who-customer research. Evaluate the following economic assertions:",
+    "statements": [
+      "Specialty coffee roasting sales of 176 million euros in an 880 million euro market correspond to a 20 per cent absolute market share.",
+      "With 20 per cent absolute share and a leading rival at 60 per cent in specialty coffee roasting, relative market share equals 0.33.",
+      "Market potential in specialty coffee roasting may exceed current market volume when buyers not yet served could enter the category.",
+      "Sales potential for one specialty coffee roasting firm can exceed its current sales volume through gains from competitors and market growth.",
+      "A supplier in the renewable-energy inverters segment may improve positioning by designing a primary study around channel preferences before launching an updated product line."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "176 divided by 880 equals 20% absolute share in the specialty coffee roasting example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "20/60 yields 0.33 relative share against the leader in specialty coffee roasting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Unconverted buyers keep market potential above volume in specialty coffee roasting.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Sales potential includes room beyond current volume for a specialty coffee roasting supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the renewable-energy inverters market.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.73",
+    "title": "Primary Survey Administration Costs",
+    "context": "Consider a software vendor learning how business clients use its platform so that product updates match preferred operational workflows. Evaluate the following economic assertions:",
+    "statements": [
+      "Published trade statistics on the renewable-energy inverters market can serve as secondary information when estimating total industry sales.",
+      "Customer analysis in the renewable-energy inverters market may ask where buyers purchase, when demand peaks, and why they prefer one supplier.",
+      "Questionnaire analysis costs are excluded from the cost of primary market research.",
+      "Renewable-energy inverter producers holding 193 million euros of sales in a 1,158 million euro market account for 16.7 per cent absolute share.",
+      "With 16.7 per cent absolute share and a leading rival at 33.4 per cent in renewable-energy inverters, relative market share equals 0.5."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Trade statistics reused for the renewable-energy inverters segment are secondary market information.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Where, when, and why dimensions apply alongside other customer analysis in renewable-energy inverters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Analysis costs are part of primary research expense.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "193 divided by 1158 equals 16.7% absolute share in the renewable-energy inverters example.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "16.7/33.4 yields 0.5 relative share against the leader in renewable-energy inverters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.74",
+    "title": "Telephone Interview Primary Data",
+    "context": "Analyze using where-customer findings to encourage alternative retail or wholesale channels. Evaluate the following economic assertions:",
+    "statements": [
+      "Telephone interviews are secondary when answers are recorded on a computer.",
+      "Market potential in renewable-energy inverters may exceed current market volume when buyers not yet served could enter the category.",
+      "Online surveys are secondary because respondents type answers without an interviewer present.",
+      "Sales potential for one renewable-energy inverters firm can exceed its current sales volume through gains from competitors and market growth.",
+      "Government agency research is primary for every firm that later cites the publication."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Recording method does not make interviews secondary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Unconverted buyers keep market potential above volume in renewable-energy inverters.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Self-completion online surveys are still primary collection.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sales potential includes room beyond current volume for a renewable-energy inverters supplier.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Prior agency research is secondary for later users.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.5",
+    "case_id": "CASE 5.5.75",
+    "title": "Personal Interview Primary Data",
+    "context": "Review when-customer findings that expose predictable peaks before holiday periods. Evaluate the following economic assertions:",
+    "statements": [
+      "Researching procurement managers as customers indicates the firm is studying a business-to-business market segment.",
+      "Association research is tailored to each member's product line by default.",
+      "Market share can be measured without distinguishing absolute from relative concepts.",
+      "Primary interviews with procurement managers can reveal why they prefer one brand and what they do with the product after purchase.",
+      "A firm trailing the leader always has relative market share above one."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Procurement managers as customers align with business-to-business classification in who-customer analysis.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Association research is typically general secondary information.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The chapter distinguishes absolute and relative market share.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Why and what dimensions can be explored with procurement managers in primary research.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Trailing the leader implies relative share below one.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  }
+]

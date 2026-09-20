@@ -1,0 +1,170 @@
+CASE MATH 11.74
+ANSWER [true, true, true, false, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+While $Q\le 30$ the price is $p(Q)=40-Q$, so
+$$R(Q)=40Q-Q^{2},\qquad R^{\prime}(Q)=40-2Q.$$
+Once clearance pricing begins, $p(Q)=10$ is flat, hence
+$$R(Q)=10Q,\qquad R^{\prime}(Q)=10\qquad(Q>30).$$
+Packing cost has constant $C^{\prime}(Q)=12$. At $Q=12$,
+$$P^{\prime}(12)=(40-24)-12=4>0,$$
+so a small expansion raises profit. At $Q=35$, clearance gives $R^{\prime}=10<12=C^{\prime}$, so $R^{\prime}>C^{\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\prime}(12)=16$, not $28$. For $Q<30$, $R^{\prime}=40-2Q$; for $Q>30$, $R^{\prime}=10$. Against $C^{\prime}=12$: expand at $12$ ($R^{\prime}=16$), not at $35$. At $Q=12$, $p=28\neq R^{\prime}=16$.
+
+=== A ===
+**A.** → True
+
+For $Q<30$, price is $p(Q)=40-Q$, so revenue is
+
+$$
+R(Q) = Q(40-Q)
+$$
+
+$$
+R(Q) = 40Q-Q^{2}
+$$
+
+Differentiating gives
+
+$$
+R^{\prime}(Q) = 40-2Q
+$$
+
+which matches the claim
+
+The product rule on $R=Q(40-Q)$ immediately yields
+
+$$
+R^{\prime} = 40-2Q
+$$ on the first piece.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
+
+Differentiating gives
+
+$$
+R^{\prime}(Q) = 10
+$$: marginal revenue collapses to the flat price $10$
+
+With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+At $Q=12<30$,
+
+$$
+R^{\prime}(12) = 40-2\cdot 12
+$$
+
+$$
+R^{\prime}(12) = 40-24
+$$
+
+$$
+40 - 24 = 16
+$$
+
+$$
+R^{\prime}(12) = 16 = 16
+$$
+
+$$
+R^{\prime}(12) = 16
+$$
+
+Compare with packing cost $C^{\prime}=12$:
+
+$$
+P^{\prime}(12) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\prime}(12) = 4 = 4
+$$
+
+$$
+P^{\prime}(12) = 4>0
+$$
+
+A small expansion raises profit at $Q=12$
+
+At $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is True.
+
+=== D ===
+**D.** → False
+
+At $Q=35$ clearance pricing is in force, so $R^{\prime}(35)=10$. Then
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = 10-12
+$$
+
+$$
+10 - 12 = -2
+$$
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = -2 = -2
+$$
+
+$$
+R^{\prime}(35)-C^{\prime}(35) = -2<0
+$$
+
+hence $R^{\prime}<C^{\prime}$, not $R^{\prime}>C^{\prime}$
+
+Clearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+
+=== E ===
+**E.** → False
+
+At $Q=12$, extra revenue is the marginal revenue $R^{\prime}(12)=16$, while the posted price is
+
+$$
+p(12) = 40-12
+$$
+
+$$
+40 - 12 = 28
+$$
+
+$$
+p(12) = 28 = 28
+$$
+
+$$
+p(12) = 28
+$$
+
+Those are different numbers: under a downward-sloping price, $R^{\prime}\neq p$ in general
+
+The gap $28-16=12$ equals $-Q\,p^{\prime}(Q)$ at $Q=12$ with $p^{\prime}=-1$ — the usual MR-versus-price wedge.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+So the statement is False.
+

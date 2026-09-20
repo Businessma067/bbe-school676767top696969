@@ -1,0 +1,354 @@
+CASE MATH 12.32
+ANSWER [true, true, false, true, false]
+TITLE_DE Das Marathon-Sanitätszelt
+CONTEXT_DE 22 Bewerber: 9 mit Erste-Hilfe-Zertifikat, 13 ohne. Zufällig werden 6 für die Nachmittagsschicht gewählt.
+STATEMENTS_DE:
+  A. Die Gesamtzahl möglicher 6-Personen-Teams beträgt 74.613.
+  B. Die Wahrscheinlichkeit für genau 3 Zertifizierte ist größer als 30%.
+  C. Die Wahrscheinlichkeit, dass alle 6 zertifiziert sind, ist größer als 1%.
+  D. Die Wahrscheinlichkeit für mindestens einen Zertifizierten ist größer als 95%.
+  E. Die Wahrscheinlichkeit für mindestens 4 Zertifizierte ist größer als die für genau 3.
+
+=== EXPL 0 A ===
+**A.** → True
+
+The claim asks for the total number of possible 6-person medical teams. This is the number of ways to choose $6$ applicants from the total of $22$ applicants, without regard to order. This is a combination problem.
+
+The general formula for combinations is $\binom{N}{n} = \frac{N!}{n!(N-n)!}$.
+
+Substituting $N=22$ and $n=6$ into the formula:
+
+$$
+\binom{22}{6} = \dfrac{22!}{6!(22-6)!}
+$$
+
+$$
+\dfrac{22!}{6!(16)!} = \dfrac{22 \cdot 21 \cdot 20 \cdot 19 \cdot 18 \cdot 17}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}
+$$
+
+$$
+22 \times 21 = 462
+$$
+
+$$
+462 \times 20 = 9240
+$$
+
+$$
+9240 \times 19 = 175560
+$$
+
+$$
+175560 \times 18 = 3160080
+$$
+
+$$
+3160080 \times 17 = 53721360
+$$
+
+$$
+\dfrac{53721360}{720} = 74613
+$$
+
+$$
+\binom{22}{6} = 74613
+$$
+
+There are $74,613$ possible 6-person medical teams. The claim states that the total number of possible 6-person medical teams is $74,613$.
+
+So the statement is True.
+
+
+=== EXPL 1 B ===
+**B.** → True
+
+This claim asks for the probability that the team contains exactly 3 certified volunteers. This is a hypergeometric probability, $P(X=3)$, where $X$ is the number of certified volunteers on the team. We need to choose exactly $3$ certified volunteers from the $9$ available and exactly $3$ uncertified volunteers from the $13$ available.
+
+The general formula for hypergeometric probability is $P(X=k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}$.
+
+Here, $k=3$, $K=9$, $N-K=13$, $n=6$, and $\binom{N}{n} = 74,613$ from the overview.
+
+First, calculate the number of ways to choose $3$ certified volunteers from $9$:
+
+$$
+\binom{9}{3} = \dfrac{9!}{3!(9-3)!}
+$$
+
+$$
+\dfrac{9!}{3!(6)!} = \dfrac{9 \cdot 8 \cdot 7}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+9 \times 8 = 72
+$$
+
+$$
+72 \times 7 = 504
+$$
+
+$$
+\dfrac{504}{6} = 84
+$$
+
+$$
+\binom{9}{3} = 84
+$$
+
+Next, calculate the number of ways to choose $3$ uncertified volunteers from $13$:
+
+$$
+\binom{13}{3} = \dfrac{13!}{3!(13-3)!}
+$$
+
+$$
+\dfrac{13!}{3!(10)!} = \dfrac{13 \cdot 12 \cdot 11}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+13 \times 12 = 156
+$$
+
+$$
+156 \times 11 = 1716
+$$
+
+$$
+\dfrac{1716}{6} = 286
+$$
+
+$$
+\binom{13}{3} = 286
+$$
+
+Now, multiply these two combinations to find the number of ways to get exactly 3 certified volunteers and 3 uncertified volunteers:
+
+$$
+\binom{9}{3} \binom{13}{3} = 84 \times 286
+$$
+
+$$
+84 \times 286 = 24024
+$$
+
+$$
+84\times 286 = 24024 = 24,024
+$$
+
+Finally, divide by the total number of possible teams:
+
+$$
+P(X = 3) = \frac{24,024}{74,613} = 0.3220
+$$
+
+$$
+\approx 32.20\%
+$$
+
+The probability that the team contains exactly 3 certified volunteers is approximately $32.20\%$. The claim states this probability is greater than $30\%$.
+
+So the statement is True.
+
+
+=== EXPL 2 C ===
+**C.** → False
+
+This claim asks for the probability that all 6 team members are certified. This means we are looking for $P(X=6)$, where $X$ is the number of certified volunteers on the team. This requires selecting $6$ certified volunteers from the $9$ available and $0$ uncertified volunteers from the $13$ available.
+
+The general formula for hypergeometric probability is $P(X=k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}$.
+
+Here, $k=6$, $K=9$, $N-K=13$, $n=6$, and $\binom{N}{n} = 74,613$ from the overview.
+
+First, calculate the number of ways to choose $6$ certified volunteers from $9$:
+
+$$
+\binom{9}{6} = \dfrac{9!}{6!(9-6)!}
+$$
+
+$$
+\dfrac{9!}{6!(3)!} = \dfrac{9 \cdot 8 \cdot 7}{1 \cdot 2 \cdot 3}
+$$
+
+$$
+9 \times 8 = 72
+$$
+
+$$
+72 \times 7 = 504
+$$
+
+$$
+\dfrac{504}{6} = 84
+$$
+
+$$
+\binom{9}{6} = 84
+$$
+
+Next, calculate the number of ways to choose $0$ uncertified volunteers from $13$:
+
+$$
+\binom{13}{0} = 1
+$$
+
+Now, multiply these two combinations to find the number of ways to get exactly 6 certified volunteers:
+
+$$
+\binom{9}{6} \binom{13}{0} = 84 \times 1
+$$
+
+$$
+84 \times 1 = 84
+$$
+
+Finally, divide by the total number of possible teams:
+
+$$
+P(X = 6) = \frac{84}{74,613} = 0.001126
+$$
+
+$$
+\approx 0.1126\%
+$$
+
+The probability that all 6 team members are certified is approximately $0.1126\%$. The claim states this probability is greater than $1\%$.
+
+So the statement is False.
+
+
+=== EXPL 3 D ===
+**D.** → True
+
+This claim asks for the probability that at least one certified volunteer is on the team, which can be written as $P(X \ge 1)$. It is often easier to calculate the complement event, $P(X=0)$, and subtract it from 1. $P(X=0)$ is the probability that no certified volunteers are on the team, meaning all $6$ team members are uncertified.
+
+The general formula for hypergeometric probability is $P(X=k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}$.
+
+For $P(X=0)$, we choose $0$ certified volunteers from $9$ and $6$ uncertified volunteers from $13$. $K=9$, $N-K=13$, $n=6$, and $\binom{N}{n} = 74,613$.
+
+First, calculate the number of ways to choose $0$ certified volunteers from $9$:
+
+$$
+\binom{9}{0} = 1
+$$
+
+Next, calculate the number of ways to choose $6$ uncertified volunteers from $13$:
+
+$$
+\binom{13}{6} = \dfrac{13!}{6!(13-6)!}
+$$
+
+$$
+\dfrac{13!}{6!(7)!} = \dfrac{13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}
+$$
+
+$$
+13 \times 12 = 156
+$$
+
+$$
+156 \times 11 = 1716
+$$
+
+$$
+1716 \times 10 = 17160
+$$
+
+$$
+17160 \times 9 = 154440
+$$
+
+$$
+154440 \times 8 = 1235520
+$$
+
+$$
+\dfrac{1235520}{720} = 1716
+$$
+
+$$
+\binom{13}{6} = 1716
+$$
+
+$$
+\binom{9}{0} \binom{13}{6} = 1 \times 1,716 = 1,716
+$$
+
+Now, multiply these two combinations to find the number of ways to get exactly 0 certified volunteers:
+
+Then, the probability $P(X=0)$ is:
+
+$$
+P(X = 0) = \frac{1,716}{74,613}
+$$
+
+$$
+\approx 0.022998
+$$
+
+Finally, calculate the probability of at least one certified volunteer:
+
+$$
+P(X \ge 1) = 1 - P(X = 0)
+$$
+
+$$
+P(X \ge 1) = 1 - 0.022998
+$$
+
+$$
+1 - 0.022998 = 0.977002
+$$
+
+$$
+P(X \ge 1) \approx 0.977002 \approx 97.70\%
+$$
+
+The probability that at least one certified volunteer is on the team is approximately $97.70\%$. The claim states this probability is greater than $95\%$.
+
+So the statement is True.
+
+
+=== EXPL 4 E ===
+**E.** → False
+
+This claim compares two probabilities: the probability that the team contains at least 4 certified volunteers, $P(X \ge 4)$, and the probability that it contains exactly 3 certified volunteers, $P(X=3)$. We need to determine if $P(X \ge 4) > P(X=3)$.
+
+From the explanation for statement B, we know $P(X=3) \approx 0.3220$.
+
+Now we must calculate $P(X \ge 4)$, which is the sum of probabilities for $X=4$, $X=5$, and $X=6$. These are $P(X=4) + P(X=5) + P(X=6)$.
+
+First, calculate $P(X=4)$ (4 certified, 2 uncertified):
+
+$$
+P(X = 4) = \frac{\binom{9}{4} \binom{13}{2}}{\binom{22}{6}} = \frac{126 \times 78}{74,613} = \frac{9,828}{74,613} \approx 0.13172
+$$
+
+Next, calculate $P(X=5)$ (5 certified, 1 uncertified):
+
+$$
+P(X = 5) = \frac{\binom{9}{5} \binom{13}{1}}{\binom{22}{6}} = \frac{126 \times 13}{74,613} = \frac{1,638}{74,613} \approx 0.02195
+$$
+
+From the explanation for statement C, we already found $P(X=6)$ (6 certified, 0 uncertified):
+
+$$
+P(X = 6) = \frac{84}{74,613} \approx 0.00113
+$$
+
+Now, sum these probabilities to find $P(X \ge 4)$:
+
+$$
+P(X \ge 4) = P(X = 4) + P(X = 5) + P(X = 6)
+$$
+
+$$
+P(X \ge 4) \approx 0.13172 + 0.02195 + 0.00113
+$$
+
+$$
+P(X \ge 4) \approx 0.15480 \approx 15.48\%
+$$
+
+Comparing $P(X \ge 4) \approx 15.48\%$ with $P(X=3) \approx 32.20\%$, we see that $15.48\% \not> 32.20\%$. Therefore, the probability that the team contains at least 4 certified volunteers is not greater than the probability that it contains exactly 3 certified volunteers.
+
+So the statement is False.
+

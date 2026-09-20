@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.01",
+    "title": "Three-sector Model Basics",
+    "context": "Review the primary, secondary, and tertiary sectors as stages from extraction through manufacturing to services. Evaluate the following economic assertions:",
+    "statements": [
+      "Mining ore is primary-sector activity while smelting metal ingots is secondary.",
+      "The tertiary sector comprises services such as banking, insurance, and coaching.",
+      "The primary sector covers farming, fishing, mining, and forestry extracting raw materials.",
+      "Banking and insurance belong to the primary sector because they are basic needs.",
+      "The secondary sector delivers banking and insurance services to households."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Mining is primary; smelting and manufacturing are secondary.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Tertiary activity delivers services rather than extracting or manufacturing goods.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Primary activity extracts raw materials from the earth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Banking and insurance are tertiary services, not primary extraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Banking and insurance are tertiary services, not secondary manufacturing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.02",
+    "title": "Tyrolean Ski Resort Services",
+    "context": "Consider a Tyrolean ski resort hires instructors and sells lift passes to local visitors. Evaluate the following economic assertions:",
+    "statements": [
+      "Selling lift passes and ski instruction are tertiary services.",
+      "Instructors supply capital because they teach on mountain slopes.",
+      "Manufacturing skis on site would remain tertiary because guests consume the experience.",
+      "Guest services at a ski resort are primary extraction because snow is natural.",
+      "The resort belongs to the primary sector because it operates on a mountainside."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Recreation services and instruction are tertiary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Human resources delivering services are classified as labour.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Producing physical goods from materials is secondary manufacturing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Natural setting does not reclassify service delivery as primary extraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Location does not make a service business primary; activity type determines sector.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.03",
+    "title": "Primary Sector Activities",
+    "context": "Analyze classification of primary-sector activity. Evaluate the following economic assertions:",
+    "statements": [
+      "A coal mine extracting ore belongs to the primary sector.",
+      "An olive farm harvesting and pressing oil performs primary agricultural activity.",
+      "Forestry concessions supplying logs to mills belong to the primary sector.",
+      "Milling logs into export boards at a timber mill is secondary manufacturing.",
+      "Commercial fishing that lands herring for sale is primary-sector extraction."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Mining extracts raw materials and is primary-sector activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Growing and harvesting crops is primary-sector activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Forestry extracts natural resources and is primary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Milling into boards is secondary manufacturing.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Commercial fishing extracts natural resources and is primary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.04",
+    "title": "Secondary Manufacturing",
+    "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:",
+    "statements": [
+      "Retail sale of finished jackets is tertiary distribution or trade.",
+      "Warehousing steel before welding is a tertiary logistics service.",
+      "A car plant assembling vehicles operates in the tertiary sector because it serves customers.",
+      "A fashion label sewing jackets performs tertiary retail because jackets are sold later.",
+      "Smelters shaping metal remain primary because ore originates underground."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Selling to consumers is tertiary distribution/trade.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Warehousing and logistics are tertiary services.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Vehicle assembly from processed materials is secondary manufacturing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Garment production from materials is secondary even if products are later retailed.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Processing ore or metal into usable forms is secondary transformation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.05",
+    "title": "Flood Rebuild and GDP",
+    "context": "Consider how, after floods a municipality rebuilds bridges and the spending enters national accounts. Evaluate the following economic assertions:",
+    "statements": [
+      "Measured GDP can rise after ecological disasters that require infrastructure repair.",
+      "Construction spending on bridge rebuilds is included in GDP measurement.",
+      "Rebuild spending can raise measured GDP while citizen wellbeing falls.",
+      "GDP reflects monetary value of final goods and services produced within national borders.",
+      "Rebuild activity proves GDP always equals citizen wellbeing after disasters."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Disaster recovery spending increases gdp even when welfare falls.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Rebuild spending adds to measured gdp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp can increase from rebuilds even when underlying welfare declined.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp sums final domestic production over a defined period.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp can rise from rebuilds even when underlying welfare declined.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.06",
+    "title": "Tertiary Services Scope",
+    "context": "Review the scope of tertiary-sector services. Evaluate the following economic assertions:",
+    "statements": [
+      "Banking branches providing loans perform tertiary financial services.",
+      "Remote coaching sessions sold to foreign clients are tertiary services.",
+      "Smelting metal ingots from ore on site is secondary manufacturing.",
+      "Software helpdesks troubleshooting home networks provide tertiary services.",
+      "Insurance cooperatives processing claims provide primary extraction services."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Banking is classified within the tertiary sector.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Coaching is a service regardless of client location.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Smelting and manufacturing belong to the secondary sector.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Technical support is a tertiary service.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Insurance is a financial service, not resource extraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.07",
+    "title": "Emerging Economy Sector Mix",
+    "context": "Analyze sector patterns in emerging economies. Evaluate the following economic assertions:",
+    "statements": [
+      "Heavy farming employment in less developed countries signals primary-sector dominance.",
+      "Primary-sector share typically shrinks as economic development advances.",
+      "Emerging economies show smaller primary shares than advanced EU states.",
+      "Emerging economies typically report tertiary output above seventy percent of GDP.",
+      "Advanced services above seventy percent of output characterises most emerging economies."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Emerging countries often rely heavily on primary-sector output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Development shifts activity toward secondary and tertiary sectors.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Emerging countries often rely heavily on primary-sector output.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Emerging economies depend more on primary activity, not dominant tertiary shares.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Emerging economies depend more on primary activity rather than dominant tertiary shares.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.08",
+    "title": "Olive Farm and Factory Order",
+    "context": "Consider a farm selling olive oil while a factory fills an industrial production order. Evaluate the following economic assertions:",
+    "statements": [
+      "Fabricating electronic components transforms materials and therefore belongs to secondary manufacturing.",
+      "The farm is secondary because bottled oil is a processed product.",
+      "Both activities belong to the tertiary sector because each sells to customers.",
+      "Fabricating components from materials is tertiary because parts go to other businesses.",
+      "Harvesting and pressing olives on the farm is tertiary because oil is sold to customers."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Component production transforms materials into manufactured goods.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Agricultural production and harvesting remain primary even if some processing occurs on farm.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Selling does not reclassify farming or manufacturing into services.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Manufacturing for business customers remains secondary activity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Agricultural production remains primary even when products are sold.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.09",
+    "title": "Developed EU Tertiary Share",
+    "context": "Review tertiary dominance in advanced European economies. Evaluate the following economic assertions:",
+    "statements": [
+      "Advanced EU economies are service-dominated despite the importance of food production.",
+      "In highly developed EU economies the tertiary sector often exceeds seventy percent of output.",
+      "Higher GDP per capita in EU member states links to high living standards in the model.",
+      "A seventy percent-plus service share reflects primary dominance in advanced economies.",
+      "Developed EU states keep primary output above seventy percent because food is essential."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Developed eu economies are service-dominated despite food importance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advanced eu countries typically see services dominate total output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp per capita is used as a living-standard indicator.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High tertiary shares typify advanced, not primary-dominated, economies.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "In developed eu countries the tertiary sector usually exceeds seventy percent.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.10",
+    "title": "Gross Domestic Product Definition",
+    "context": "Review the definition of gross domestic product as a measure of overall economic activity within a country. Evaluate the following economic assertions:",
+    "statements": [
+      "GDP counts final goods and services rather than intermediate goods sold between factories.",
+      "GDP is usually calculated for final production within one year inside national borders.",
+      "GDP totals the monetary value of final goods and services produced within a country's borders.",
+      "GDP measures production within borders regardless of firm nationality.",
+      "Final services such as insurance produced domestically enter GDP totals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Gdp avoids double counting by focusing on final output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp typically refers to annual domestic final production.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp measures final domestic production over a defined period.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp is based on geography of production.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp includes final services produced within borders.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.11",
+    "title": "EU Services at Seventy-four Percent",
+    "context": "Consider a GDP report for an EU member state shows services at seventy-four percent of total output. Evaluate the following economic assertions:",
+    "statements": [
+      "Service share alone does not prove every component of GDP is environmentally sustainable.",
+      "Seventy-four percent services indicates tertiary dominance rather than primary leadership.",
+      "Such a share is typical for economically advanced EU countries.",
+      "Seventy-four percent service share fits a highly developed EU economy pattern.",
+      "That pattern reflects rising relative importance of tertiary activity with development."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Gdp share does not by itself show sustainability of growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "The reported figure shows services dominating total output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "High tertiary shares characterise advanced eu states.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Advanced eu economies often exceed seventy percent tertiary output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "More developed economies shift toward services in the three-sector model.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.12",
+    "title": "GDP Growth Measure",
+    "context": "Analyze how GDP growth is assessed over time. Evaluate the following economic assertions:",
+    "statements": [
+      "GDP growth compares inflation-adjusted GDP across years.",
+      "Real GDP per capita can rise after stripping out inflation from nominal figures.",
+      "Real GDP strips price changes to compare volume of production over time.",
+      "Nominal GDP increases always equal real economic growth.",
+      "Ignoring inflation never affects growth comparisons between years."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Real growth uses gdp adjusted for inflation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inflation-adjusted per capita figures support growth comparisons.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Inflation adjustment isolates real output changes.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Price rises can inflate nominal gdp without real output gains.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Real comparisons generally require inflation adjustment.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.13",
+    "title": "Remote Coaching Abroad",
+    "context": "Consider an Estonian coach delivers remote training sessions to clients in other countries. Evaluate the following economic assertions:",
+    "statements": [
+      "Remote delivery to foreign clients keeps the activity tertiary.",
+      "Exporting advice does not convert coaching into secondary manufacturing.",
+      "Remote coaching is primary because trainers work from home offices.",
+      "Because no goods cross borders, the activity cannot be counted in GDP.",
+      "Selling coaching sessions is primary extraction because trainers work from home offices."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Coaching remains a service regardless of client location.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Coaching stays a service even when clients are abroad.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Home offices are locations for delivering services, not extracting raw materials.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Services produced domestically can count in home-country gdp.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Coaching advice is a service output, not extraction of natural resources.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.14",
+    "title": "Coal Mine and Car Plant Quarter",
+    "context": "Consider a Romanian coal mine and a Graz car plant report output in the same quarter. Evaluate the following economic assertions:",
+    "statements": [
+      "Coal extraction at the mine is primary-sector activity.",
+      "Vehicle assembly at the car plant is secondary manufacturing.",
+      "Steel inputs from mining do not make vehicle assembly primary activity.",
+      "Office staff at a mine or plant do not reclassify core production into tertiary services.",
+      "Both plants belong to the tertiary sector because they employ office staff."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Mining extracts raw materials and is primary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Assembling cars from materials is secondary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Assembly of vehicles is secondary even if inputs came from mining.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Core extraction and manufacturing sectors remain primary and secondary.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Office staff do not reclassify extraction or manufacturing into services.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.15",
+    "title": "GDP Income Coverage Critique",
+    "context": "Review criticisms that GDP misses some income. Evaluate the following economic assertions:",
+    "statements": [
+      "GDP omission of some income sources is one reason its use is debated.",
+      "Every barter transaction is always fully recorded in official GDP.",
+      "Unpaid home maintenance done by owners is always included in GDP.",
+      "GDP fully captures household volunteering and unpaid care in its totals.",
+      "Household volunteering and unpaid care are always counted in official GDP totals."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Incomplete income coverage contributes to gdp criticism.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Informal and non-market activity is often missed by gdp.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Non-market unpaid work is typically outside gdp scope.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Unpaid care work typically falls outside gdp measurement boundaries.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Volunteer labour is generally excluded from official gdp aggregates.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.16",
+    "title": "Insurance Branch and Wheat Farm",
+    "context": "Consider an insurance cooperative processes claims while a nearby farm harvests wheat. Evaluate the following economic assertions:",
+    "statements": [
+      "Farm output and insurance services can coexist as primary and tertiary activity.",
+      "Both operations are tertiary because each serves customers.",
+      "Claims handling at the insurance branch is primary because policies cover basic risks.",
+      "Harvesting wheat is secondary manufacturing because flour milling follows.",
+      "Wheat farming is secondary because grain is processed into flour elsewhere."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Different sectors operate side by side in the same economy.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Customer service does not make farming tertiary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Insurance is a financial service, not resource extraction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Farming wheat from land is primary agriculture, not secondary manufacturing.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Grain harvesting remains primary even when processed into flour later.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.17",
+    "title": "Sustainability and GDP Quality",
+    "context": "Review GDP as an indicator of sustainable or high-quality growth. Evaluate the following economic assertions:",
+    "statements": [
+      "GDP does not tell whether growth damages resources or wellbeing.",
+      "GDP alone reveals little about the quality or sustainability of economic growth.",
+      "Rebuilds after disasters can raise GDP without improving quality of life.",
+      "Rising GDP may coincide with pollution or resource depletion.",
+      "Quality concerns are unrelated to debates about GDP as a welfare measure."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Gdp misses quality and sustainability dimensions critics highlight.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp does not by itself show sustainability or quality of growth.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Measured output can rise while welfare remains impaired.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Output can grow without environmental improvement.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Quality and sustainability are standard gdp criticisms.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.18",
+    "title": "Port Warehouse and Shipyard",
+    "context": "Consider a port warehouse stores imported steel before a shipyard welds hull sections. Evaluate the following economic assertions:",
+    "statements": [
+      "Mining origins of steel do not make warehousing or shipbuilding primary.",
+      "The chain shows tertiary logistics feeding secondary production.",
+      "Welding hull sections at the shipyard is secondary manufacturing.",
+      "Building ships from steel plate is secondary manufacturing.",
+      "Warehousing imported steel before fabrication is a tertiary logistics service."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Downstream storage and shipbuilding are not primary extraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Services can support manufacturing downstream.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Welding hull sections transforms materials into manufactured vessels.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Ship construction from steel plate counts as secondary manufacturing output.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Storage and logistics are tertiary services.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.19",
+    "title": "Clinic Expansion and Real GDP",
+    "context": "Consider a Prague clinic expands while real GDP per capita rises after inflation adjustment. Evaluate the following economic assertions:",
+    "statements": [
+      "Real GDP per capita rising after inflation adjustment indicates real growth.",
+      "Basic need status does not reclassify healthcare delivery as primary activity.",
+      "Nominal GDP increases alone do not prove real growth without price adjustment.",
+      "Clinic growth is primary because health is a basic need.",
+      "Healthcare expansion cannot occur while real GDP per capita rises."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Inflation-adjusted gdp supports real growth comparisons.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Healthcare provision is tertiary service activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Real growth requires adjusting for inflation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Healthcare provision is tertiary service activity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sector activity contributes to overall measured gdp growth.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.20",
+    "title": "Disaster Rebuild GDP Effect",
+    "context": "Review how disaster recovery affects measured GDP. Evaluate the following economic assertions:",
+    "statements": [
+      "Rebuilding infrastructure after ecological damage can raise measured GDP.",
+      "Recovery and rebuild spending adds to measured output.",
+      "GDP rising after disasters proves living standards improved.",
+      "Cleanup spending automatically reduces GDP because it repairs harm.",
+      "Disaster rebuilds exclude construction wages from GDP to avoid counting damage twice."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Reconstruction outlays enter gdp as new final expenditure.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repair and rebuild contracts add to measured national output totals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Gdp may rise from rebuilds without restoring lost welfare.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Recovery and rebuild spending adds to measured output.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Rebuild spending is included and can raise gdp.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.21",
+    "title": "Fishing Fleet and Fashion Label",
+    "context": "Consider a fishing fleet lands herring while a fashion label sews jackets from imported fabric. Evaluate the following economic assertions:",
+    "statements": [
+      "Garment manufacturing from imported fabric is secondary activity.",
+      "Landing herring for sale is primary-sector fishing activity.",
+      "Onboard filleting converts commercial fishing into secondary processing.",
+      "Both firms are primary because they use natural or imported inputs.",
+      "Fashion sewing is tertiary because designs are creative services."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Garment production from materials is secondary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Commercial fishing extracts resources and is primary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Extracting fish remains primary-sector activity.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Garment manufacturing is secondary, not primary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Sewing garments is manufacturing in the secondary sector.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.22",
+    "title": "A small IT-support venture Sector Classification",
+    "context": "Analyze how to classify a small IT-support venture's trading, software, and support activities. Evaluate the following economic assertions:",
+    "statements": [
+      "Developing software for customers is tertiary service activity.",
+      "Refurbishing laptops and providing support are tertiary service activities.",
+      "A small IT-support venture trade goods, develop software, and provide technical support in the tertiary sector.",
+      "Minerals inside devices do not reclassify their support activity as primary extraction.",
+      "Handling physical laptops does not move their support work into secondary manufacturing."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Software services are tertiary, not manufacturing, in this context.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repair and support are tertiary service activities.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Their activities are classified as services in the tertiary sector.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Using devices does not make their support activity primary.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Repair and support are services even when goods are involved.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.23",
+    "title": "Mining Pit and Smelters Chain",
+    "context": "Consider a mining pit extracts ore while downstream smelters shape metal for machinery plants. Evaluate the following economic assertions:",
+    "statements": [
+      "Smelters shaping metal perform secondary transformation.",
+      "Smelting ore into metal stays primary extraction rather than secondary processing.",
+      "The entire chain from pit to machinery is primary because metal is natural.",
+      "Every downstream step from pit to machinery counts as primary because metal is natural.",
+      "Smelting remains primary because ore comes directly from the earth."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Processing ore into metal is secondary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Processing ore into metal is secondary transformation.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Smelting transforms extracted ore; only pit extraction is primary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Machinery assembly downstream is secondary, not primary extraction.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Natural origin of ore does not keep smelting in the primary sector.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.24",
+    "title": "Inflation-adjusted Growth",
+    "context": "Analyze the role of inflation adjustment in GDP growth. Evaluate the following economic assertions:",
+    "statements": [
+      "Comparing GDP across years requires adjusting for inflation to measure real growth.",
+      "Inflation adjustment is generally required for meaningful real growth comparisons.",
+      "Nominal and real growth align closely when prices are stable.",
+      "Ignoring inflation can overstate growth when prices rise faster than output.",
+      "Real GDP includes all price changes when comparing production over time."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Real growth uses inflation-adjusted gdp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Real comparisons generally require inflation adjustment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "With stable prices nominal and real growth align closely.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Nominal figures can inflate apparent growth without real gains.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Real growth uses gdp adjusted for inflation.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.25",
+    "title": "Bookstore Distribution Branch",
+    "context": "Consider a bookstore branch distributes publishers' titles to local readers. Evaluate the following economic assertions:",
+    "statements": [
+      "Printing the titles at a publisher's plant is secondary manufacturing.",
+      "Retail trade of printed titles is tertiary activity.",
+      "Distributing publishers' titles to readers is tertiary distribution activity.",
+      "Book sales are secondary because books are physical products.",
+      "Reading promotion events turn bookstores into primary agriculture."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Printing books is manufacturing in the secondary sector.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retail trade of goods is tertiary activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Distribution to customers is tertiary-sector activity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Retail and distribution of goods are tertiary even for physical products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Book-related services remain tertiary.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.26",
+    "title": "Maintaining Sales Volume",
+    "context": "Review the limitation that higher sales do not automatically guarantee higher profit in every circumstance. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP objective is met when the firm spends the most on advertising regardless of message.",
+      "Product differentiation replaces sales and profitability objectives entirely.",
+      "A USP must be based on a patented invention or it is invalid.",
+      "Brand loyalty and USP objectives are mutually exclusive marketing goals.",
+      "A product with a USP may seem special, unique, or better than the rest to customers."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Usp requires meaningful difference or perception, not spend alone.\n\nThe absolute wording \"regardless\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Differentiation is one objective among several.\n\nThe absolute wording \"entirely\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp can rest on characteristics or promotion, not only patents.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Brand-building and usp work together to attract loyal customers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp positions the product as distinctive or superior in customer perception.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.27",
+    "title": "Higher Sales and Profit Link",
+    "context": "Analyze how a clear unique selling proposition helps attract many loyal customers. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses create a USP because it helps attract many loyal customers.",
+      "A product considered the same as rivals still has a strong USP by definition.",
+      "Differentiation means customers never compare the product with substitutes.",
+      "A USP is created only when the product wins every industry quality award.",
+      "Promotion cannot change customer perception of uniqueness once the product is launched."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Usp is pursued to draw loyal customers to the offering.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp requires actual or perceived difference from similar products.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Customers may still compare; usp shapes how the product is viewed in comparison.\n\nThe absolute wording \"never\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Awards are not required; characteristics or perception can establish usp.\n\nThe absolute wording \"every\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Promotion shapes perception as a valid differentiation basis.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.28",
+    "title": "Marketing Objective Interdependence",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "A unique selling proposition applies only to the promotion mix, not to the product.",
+      "Businesses create USPs primarily to reduce sales volume by targeting fewer buyers.",
+      "Product differentiation is another term for the positioning achieved through a unique selling proposition.",
+      "A USP can rest on design features that rivals' similar products do not emphasise.",
+      "Promotional messaging can shape how customers perceive a product's uniqueness."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Usp can rest on product characteristics or promotion and perception.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp aims to attract many loyal customers, supporting sales.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Differentiation and usp are treated as related concepts.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Design emphasis can underpin differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Perception shaped by promotion supports usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.29",
+    "title": "Brand Support for Differentiation",
+    "context": "Analyze market share maintenance as a competitiveness indicator in contested markets. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand identity helps customers recognise why one product differs from close substitutes.",
+      "Product differentiation is identical to market segmentation with no separate meaning.",
+      "A credible USP makes similar products appear distinct in the buyer's mind.",
+      "A USP eliminates all price competition because differentiated products have fixed prices.",
+      "Differentiation through service quality can form part of a product's unique selling proposition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brand identity reinforces differentiated recognition.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation concerns usp; segmentation is a distinct marketing concept.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp creates mental distinction among similar products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp reduces price-only competition but does not eliminate pricing decisions.\n\nThe absolute wording \"all\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Service quality may be the differentiating characteristic.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.30",
+    "title": "Repeat Purchase Behaviour",
+    "context": "Review sales growth objectives in relation to covering costs and sustaining operations. Evaluate the following economic assertions:",
+    "statements": [
+      "A firm investing in brand advertising may be pursuing a USP objective.",
+      "USP objectives aim to reduce direct comparability with undifferentiated rivals on price alone.",
+      "Customers may perceive uniqueness even when products share many functional similarities.",
+      "A unique selling proposition can highlight delivery speed as the distinguishing element.",
+      "Packaging design can contribute to differentiation and support a USP."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brand advertising supports usp-related differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation moves competition beyond pure price comparison.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Perceived uniqueness can exist alongside functional similarity.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Delivery speed may serve as the usp characteristic.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Packaging may be part of the differentiated presentation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.31",
+    "title": "Attracting Loyal Customers",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP based on ethical sourcing can differentiate a product in a crowded category.",
+      "Product differentiation helps a business stand out when many similar alternatives exist.",
+      "Brand loyalty programmes often accompany products with a clear unique selling proposition.",
+      "A USP may emphasise durability as the product characteristic that sets it apart.",
+      "Promotion that stresses craftsmanship can build a perceived USP for handmade goods."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Ethical sourcing claims can underpin differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation addresses crowded markets with similar options.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Loyalty programmes complement usp-driven differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Durability can be the differentiating product characteristic.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Craftsmanship messaging supports perceived differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.32",
+    "title": "Share as Competitiveness Signal",
+    "context": "Review how product characteristics and promotional messaging jointly shape differentiation. Evaluate the following economic assertions:",
+    "statements": [
+      "Brand-building is unnecessary when the product has a legally protected monopoly.",
+      "Differentiation objectives encourage customers to view the offer as unlike substitutes.",
+      "A strong brand can make customers believe a product is better than the rest.",
+      "A USP that emphasises speed of delivery cannot coexist with a quality-based USP.",
+      "USP creation is a recognised marketing objective in the textbook overview."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Brand still supports perceived uniqueness even with limited competition.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "The aim is distinct perception versus substitutes.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand strength supports better-than-the-rest perception.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Different characteristics can be emphasised in usp messaging.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp is listed among marketing objectives businesses may pursue.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.33",
+    "title": "Revenue Versus Cost Coverage",
+    "context": "Analyze why marketing objectives extend beyond a single measure such as sales volume alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Differentiation through warranty terms can form a valid unique selling proposition.",
+      "A product considered unique may command buyer attention despite numerous rivals.",
+      "Brand-building and USP objectives work together to attract loyal repeat buyers.",
+      "A USP may rest on how the product is experienced after purchase, not only on pre-purchase claims.",
+      "Promotional differentiation shapes customer perception even before the first purchase."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Warranty terms may differentiate the offering.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Perceived uniqueness draws attention in competitive markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand and usp jointly support loyal customer attraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Post-purchase experience can sustain differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Pre-purchase perception is shaped by promotion.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.34",
+    "title": "Retained Profit for Growth",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Differentiation objectives are unrelated to attracting loyal customers.",
+      "Businesses pursue differentiation because similar products without a USP compete mainly on price.",
+      "A unique selling proposition can highlight environmental credentials as the distinguishing factor.",
+      "Product lines may each carry a distinct USP within the same corporate brand.",
+      "A product that seems better than the rest cannot have a USP if rivals disagree."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Usp is pursued because it helps attract many loyal customers.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Without usp, price becomes the primary competitive lever.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Environmental credentials may underpin the usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Different usps can apply across product lines under one brand.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp concerns customer perception, not unanimous rival agreement.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.35",
+    "title": "Satisfaction Survey Insights",
+    "context": "Analyze how a business positions itself as better than the rest through a credible unique selling proposition. Evaluate the following economic assertions:",
+    "statements": [
+      "USP creation is a short-term tactic replaced by profitability objectives each quarter.",
+      "Differentiation based on customer support quality can attract buyers who value assistance.",
+      "A USP makes the product or seems to make the product unlike other similar offerings.",
+      "Brand investment is a marketing activity that supports USP objectives.",
+      "Differentiation can rely on a single prominent characteristic promoted consistently."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Usp is a sustained marketing objective, not a quarterly replacement for profit.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Support quality may be the differentiating element.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp creates actual or apparent difference from similar products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand investment is linked to usp creation in the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "One promoted characteristic can anchor the usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.36",
+    "title": "Perception and Product Differentiation",
+    "context": "Review relative market share comparisons among firms serving the same customer base. Evaluate the following economic assertions:",
+    "statements": [
+      "A perceived USP can persist through consistent branding across multiple channels.",
+      "USP objectives interrelate with satisfaction because customers must experience the claimed difference.",
+      "A product differentiation strategy may target buyers who seek premium perceived quality.",
+      "Marketing objectives on USP aim to make the firm's offer memorable versus rivals.",
+      "Differentiation through local sourcing can be promoted as a unique selling proposition."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Consistent branding sustains perceived differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Experienced difference links usp to satisfaction outcomes.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Premium quality perception can be the differentiation target.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Memorable distinction is a usp outcome.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Local sourcing may be promoted as the usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.37",
+    "title": "Benchmarking Market Share",
+    "context": "Consider a cosmetics firm launching a premium skincare range with a clear differentiation message and tracking customer repurchase rates. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP helps attract loyal customers who identify with the brand's differentiated identity.",
+      "Product differentiation is pursued so the product appears special relative to the rest.",
+      "Promotional emphasis on innovation can support a USP in technology categories.",
+      "Brand reputation accumulated over time reinforces the product's unique selling proposition.",
+      "A USP may combine a product feature with a distinctive promotional style."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Brand identity alignment attracts loyal buyers.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Special appearance relative to alternatives is a usp aim.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Innovation messaging can underpin differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Reputation reinforces ongoing usp credibility.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Features and promotional style can jointly form the usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.38",
+    "title": "Volume Targets and Margins",
+    "context": "Review reinvestment of profit as a reason owners pursue profitable marketing outcomes. Evaluate the following economic assertions:",
+    "statements": [
+      "Product differentiation requires abandoning customer satisfaction objectives.",
+      "Differentiation objectives are listed alongside satisfaction and market share objectives.",
+      "Customers comparing similar products may rely on USP cues to make a choice.",
+      "A business without differentiation may struggle to attract loyal customers in a saturated market.",
+      "Building a brand is a means to an end of creating perceived product uniqueness."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Differentiation and satisfaction objectives interrelate.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Usp/differentiation sits among the stated marketing objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp cues guide choice among similar products.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Saturated markets make usp important for loyal customer attraction.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand-building serves perceived uniqueness objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.39",
+    "title": "Profit Within Objective Set",
+    "context": "Analyze customer loyalty as a consequence of sustained satisfaction with the product offering. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP based on customisation options differentiates a standard product category offering.",
+      "Differentiation through perceived exclusivity can support premium pricing objectives.",
+      "USP messaging must align with what customers ultimately experience to sustain loyalty.",
+      "A USP is valid only when verified by government regulators.",
+      "Product differentiation reduces the product's substitutability in the customer's view."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Customisation can differentiate within a standard category.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Exclusivity perception can accompany premium positioning.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Aligned experience sustains loyalty promised by usp.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Usp rests on business positioning and customer perception, not regulatory certification.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Differentiation lowers perceived substitutability.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.40",
+    "title": "Wishes and Needs Before Objectives",
+    "context": "Consider a coffee roaster building brand recognition, measuring customer satisfaction scores, and targeting a larger share of the specialty segment. Evaluate the following economic assertions:",
+    "statements": [
+      "A unique selling proposition can highlight reliability as the key product characteristic.",
+      "Brand symbols and logos help communicate the differentiated identity of the product.",
+      "Marketing spend on differentiation supports the objective of seeming better than alternatives.",
+      "Building a brand is the same as achieving maximum market share instantly.",
+      "Market share measures absolute sales volume with no reference to competitors."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Reliability may be the highlighted differentiating characteristic.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Visual brand elements communicate differentiation.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Differentiation spend targets better-than-alternatives perception.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Brand-building supports usp; it does not instantly maximise share.\n\nThe absolute wording \"instantly\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Market share indicates relative importance compared with competitors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.41",
+    "title": "Quality Perception and USP",
+    "context": "Analyze maintaining market share when rivals intensify promotional competition. Evaluate the following economic assertions:",
+    "statements": [
+      "A USP created through promotion still counts as differentiation in the marketing framework.",
+      "A firm with the highest absolute sales always has the highest market share in every market definition.",
+      "Differentiation and USP objectives connect to attracting a loyal customer following.",
+      "Market share objectives are unrelated to competitiveness indicators.",
+      "Gaining and maintaining market share is a marketing objective for many businesses."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Promotion-based differentiation is explicitly recognised.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share depends on market boundary; highest absolute sales may not mean highest share.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Usp aims to attract many loyal customers per the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market share is described as an indicator of competitiveness.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Market share is listed among marketing objectives.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.42",
+    "title": "Relative Share Comparisons",
+    "context": "Review increasing sales as a means to strengthen financial capacity without ignoring cost structures. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share indicates a firm's relative importance in the market compared with competitors.",
+      "Gaining market share is impossible without simultaneously doubling production costs.",
+      "Market share serves as an indicator of competitiveness in the marketing framework.",
+      "Businesses compare their share with competitors' positions in the same market.",
+      "A rising market share may signal improved performance relative to rival firms."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Share reflects relative standing versus rivals.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share can be gained through marketing without requiring cost doubling.\n\nThe absolute wording \"impossible\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share is described as a competitiveness indicator.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share is assessed relative to competitor positions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share gains suggest improved relative performance.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.43",
+    "title": "Cost Constraints on Profitability",
+    "context": "Consider a boutique hotel group emphasising personalised service, measuring guest review scores, and aiming to raise occupancy revenue. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share is identical to customer satisfaction percentage in the marketing framework.",
+      "Businesses ignore competitors when setting market share objectives.",
+      "Maintaining market share can be an explicit marketing objective during intense rivalry.",
+      "Market share reflects the firm's portion of total sales in the defined market.",
+      "A declining market share always means absolute sales are falling."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share and satisfaction are distinct objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share is inherently relative to competitors' positions.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share maintenance is a valid stated objective.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share is a portion of total market sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share can fall while absolute sales rise if the market grows faster.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.44",
+    "title": "Recommendation From Satisfied Customers",
+    "context": "Review the marketing framework in which satisfaction, differentiation, share, sales, and profit coexist. Evaluate the following economic assertions:",
+    "statements": [
+      "Losing market share may indicate weakened competitiveness against other suppliers.",
+      "Marketing campaigns may aim to protect share when a new competitor enters.",
+      "Market share objectives complement sales objectives by adding a relative dimension.",
+      "Market share is the only marketing objective that matters for public companies.",
+      "A firm with small absolute sales may still hold a significant share in a niche market."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share loss signals weakened relative competitiveness.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Defensive campaigns can target share protection.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share adds relative context to absolute sales.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share is one of several possible marketing objectives.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share can be significant even with modest absolute sales in niches.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.45",
+    "title": "Service Elements in USP",
+    "context": "Analyze how dissatisfaction leads customers to withhold repeat purchases. Evaluate the following economic assertions:",
+    "statements": [
+      "Competitiveness is partly assessed through how market share changes over time.",
+      "Maintaining market share requires no marketing expenditure if the product once led.",
+      "Market share indicates a firm's absolute importance without comparing rivals.",
+      "A new entrant automatically receives fifty percent market share upon launch.",
+      "Market share objectives replace profitability analysis entirely."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Share trends inform competitiveness assessment.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share maintenance typically requires ongoing marketing effort.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share indicates relative importance compared with competitors.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Entrants must earn share through competitive performance.\n\nThe absolute wording \"automatically\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share complements but does not replace profit objectives.\n\nThe absolute wording \"entirely\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.46",
+    "title": "Share Erosion Warning Signs",
+    "context": "Consider a regional bakery that tracks repeat purchases, complaint rates, and promotional responses while setting annual marketing targets. Evaluate the following economic assertions:",
+    "statements": [
+      "Businesses interested in market share want to know their position versus rivals.",
+      "Relative market importance is measured by total assets, not market share.",
+      "Gaining share always improves profitability in the same reporting period.",
+      "Market share is calculated without defining which market boundary applies.",
+      "A firm can hold one hundred percent share in a market with no competitors by definition."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share answers relative position questions.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share, not assets alone, indicates relative market importance in this framework.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share gains may temporarily reduce profit when achieved through heavy spending.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share requires a defined market among competing firms.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share comparisons require competitors within the defined market.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.47",
+    "title": "Campaign Revenue Monitoring",
+    "context": "Analyze market share gains as evidence of improved relative standing among competitors. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share maintenance is unrelated to customer loyalty programmes.",
+      "Gaining share often requires taking customers from competing firms.",
+      "Market share is a relative measure rather than an absolute sales total alone.",
+      "Share objectives are set without analysing the market the business operates in.",
+      "A stable market share in a growing market may still mean rising absolute sales."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Loyal customers help maintain share against rivals.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share gains typically come at rivals' expense.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share is inherently relative to the market total.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Market analysis precedes objective setting including share targets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Stable share can coexist with rising absolute sales in growing markets.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.48",
+    "title": "Strategic Profit Retention",
+    "context": "Review sales objectives as necessary but not sufficient for long-term financial success alone. Evaluate the following economic assertions:",
+    "statements": [
+      "Market share and sales volume objectives always move in opposite directions.",
+      "A competitiveness indicator excludes market share in favour of staff headcount alone.",
+      "Losing share to a rival proves customer satisfaction objectives were exceeded.",
+      "Marketing objectives may target a minimum share threshold to remain competitive.",
+      "Market share is a marketing objective only for government agencies."
+    ],
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Sales growth can support share when the firm outpaces market growth.\n\nThe absolute wording \"always\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Share is explicitly a competitiveness indicator.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share loss often signals competitive weakness, not excess satisfaction.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Minimum share targets express competitiveness aims.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share objectives apply to businesses competing in markets.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.49",
+    "title": "Satisfaction Supporting Sales",
+    "context": "Consider a furniture retailer that surveys post-purchase satisfaction, promotes a craftsmanship guarantee, and aims to grow regional sales volume. Evaluate the following economic assertions:",
+    "statements": [
+      "Share analysis helps managers understand competitive dynamics in their industry.",
+      "A business defending share may increase promotional spending when rivals gain ground.",
+      "Relative importance in the market is shown by advertising spend, not share.",
+      "Market share objectives are interrelated with satisfaction and differentiation goals.",
+      "Relative importance in the market is what market share is designed to indicate."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "5/5",
+    "tactical_explanations": [
+      "Share data illuminates industry competitive dynamics.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Promotional response can aim at share defence.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share indicates relative importance; ad spend alone does not.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Share links to other objectives in the framework.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share indicates relative market importance per the text.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true."
+    ]
+  },
+  {
+    "subsection": "5.2",
+    "case_id": "CASE 5.2.50",
+    "title": "Distinct Identity in Crowded Markets",
+    "context": "Review customer satisfaction surveys as inputs to marketing objective setting. Evaluate the following economic assertions:",
+    "statements": [
+      "Two firms with equal absolute sales may have different shares if market sizes differ.",
+      "Gaining market share means the total market size must shrink.",
+      "A firm tracking share monthly is monitoring a competitiveness indicator.",
+      "Market share objectives conflict with USP objectives and cannot be pursued together.",
+      "A firm with zero market share still leads the market if its brand is well known."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Share depends on market total, not absolute sales alone.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share can be gained while the market grows or shrinks.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false.",
+      "Regular share tracking monitors competitiveness.\n\nThat is exactly what the claim asserts, so the wording survives a careful check against the standard idea.\n\nThe statement is true.",
+      "Share and usp objectives can be pursued within one marketing plan.\n\nThe absolute wording \"cannot\" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.\n\nThe statement is false.",
+      "Leadership is reflected in share relative to competitors, not brand fame alone.\n\nBecause that detail fails, the whole statement fails even if the topic word looks familiar.\n\nThe statement is false."
+    ]
+  }
+]

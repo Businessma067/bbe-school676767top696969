@@ -1,0 +1,182 @@
+CASE MATH 11.82
+ANSWER [true, true, true, true, false]
+OVERVIEW_SHORT True
+
+=== OVERVIEW EN ===
+Revenue and cost are given separately, so daily profit is their difference:
+
+$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.$$
+
+Differentiate the simplified profit, and keep the separate marginal schedules:
+
+$$P'(Q)=-4Q+24,\qquad R'(Q)=30-2Q,\qquad C'(Q)=2Q+6.$$
+
+Flat profit solves $P'=0$, giving the unique positive root $Q=6$. At that same output
+
+$$R'(6)=18=C'(6),$$
+
+and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes are $P(6)=32$ and $C(6)=112$, which are not equal — a flat profit slope does not force $P=C$.
+
+=== A ===
+**A.** → True
+
+Profit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:
+
+$$
+P(Q) = R(Q)-C(Q)
+$$
+
+$$
+P(Q) = (30Q-Q^{2})-(Q^{2}+6Q+40).
+$$
+
+Collect like terms:
+
+$$
+P(Q) = -Q^{2}-Q^{2}+30Q-6Q-40
+$$
+
+$$
+P(Q) = -2Q^{2}+24Q-40.
+$$
+
+That simplified quadratic matches the claim exactly.
+
+So the statement is True.
+
+=== B ===
+**B.** → True
+
+Marginal profit is the slope of the profit function. Differentiate the simplified rule term by term:
+
+$$
+P(Q) = -2Q^{2}+24Q-40
+$$
+
+$$
+P'(Q) = -4Q+24.
+$$
+
+(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula.
+
+So the statement is True.
+
+=== C ===
+**C.** → True
+
+An interior profit peak requires a flat slope, so set marginal profit to zero and solve:
+
+$$
+P'(Q) = -4Q+24 = 0
+$$
+
+$$
+4Q = 24
+$$
+
+$$
+Q = 6.
+$$
+
+For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output.
+
+So the statement is True.
+
+=== D ===
+**D.** → True
+
+At a profit peak one also has $R'=C'$ (because $P'=R'-C'$). Compute the separate marginals and evaluate at six boxes:
+
+$$
+R'(Q) = 30-2Q
+$$
+
+$$
+C'(Q) = 2Q+6
+$$
+
+$$
+R'(6) = 30-12
+$$
+
+$$
+30 - 12 = 18
+$$
+
+$$
+R'(6) = 18 = 18
+$$
+
+$$
+C'(6) = 12+6
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(6) = 18 = 18
+$$
+
+$$
+12 + 6 = 18 = 18.
+$$
+
+Both equal $18$ euros at six boxes, matching the claim
+
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
+
+So the statement is True.
+
+=== E ===
+**E.** → False
+
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Flat profit slope means $P'(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both explicitly:
+
+$$
+P(6) = -2\cdot 36+24\cdot 6-40
+$$
+
+$$
+P(6) = -72+144-40
+$$
+
+$$
+-72 + 144 = 72
+$$
+
+$$
+72 - 40 = 32
+$$
+
+$$
+P(6) = 32
+$$
+
+$$
+C(6) = 36+36+40
+$$
+
+$$
+36 + 36 = 72
+$$
+
+$$
+72 + 40 = 112
+$$
+
+$$
+C(6) = 112 = 112
+$$
+
+$$
+C(6) = 112.
+$$
+
+The levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap.
+
+So the statement is False.
+

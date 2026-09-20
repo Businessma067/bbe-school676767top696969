@@ -1,0 +1,874 @@
+[
+  {
+    "case_id": "MATH 6.82",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Food Truck Break-Even",
+    "context_en": "A food truck has fixed daily costs of \\$150. Each item sold costs \\$3 in ingredients and sells for \\$8. Let x represent the number of items sold in a day. The owner wants a daily profit of at least \\$200.",
+    "statements_en": [
+      "Selling 70 items results in a profit of exactly \\$200.",
+      "Selling 65 items results in a profit of at least \\$200.",
+      "The break-even point (profit = \\$0) occurs at more items sold than the \\$200 profit target.",
+      "Selling 100 items results in a profit greater than \\$300.",
+      "The minimum number of items needed to reach the profit goal is 70."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nP=8x-(150+3x)\n$$\n\n$$\nP=5x-150\n$$\n\n$$\nP = 5(70)-150 = 200\n$$\n\n$$\nx=70\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n175\\le 200\n$$\n\n$$\n5(65)-150=175\n$$\n\n$$\n175\\le 200\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n5x-150=0\n$$\n\n$$\n5x=150\n$$\n\n$$\nx=30\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n350\\le 200\n$$\n\n$$\n5(100)-150=350\n$$\n\n$$\n350\\le 200\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n5x-150\\ge 200\n$$\n\n$$\n5x\\ge 350\n$$\n\n$$\nx\\ge 70\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A food truck has fixed daily costs of \\$150. Each item sold costs \\$3 in ingredients and sells for \\$8. Let x represent the number of items sold in a day. The owner wants a daily profit of at least \\$200.",
+    "title_de_existing": "Foodtruck – Gewinnziel",
+    "context_de_existing": "Ein Foodtruck hat fixe Tageskosten von \\$150. Jeder verkaufte Artikel kostet \\$3 an Zutaten und wird für \\$8 verkauft. Es sei $x$ die Anzahl verkaufter Artikel an einem Tag. Der Betreiber möchte einen Tagesgewinn von mindestens \\$200.",
+    "statements_de_existing": [
+      "Der Verkauf von $70$ Artikeln ergibt einen Gewinn von genau \\$200.",
+      "Der Verkauf von $65$ Artikeln ergibt einen Gewinn von mindestens \\$200.",
+      "Der Break-even-Punkt (Gewinn = \\$0) liegt bei mehr verkauften Artikeln als das Gewinnziel von \\$200.",
+      "Der Verkauf von $100$ Artikeln ergibt einen Gewinn über \\$300.",
+      "Die minimale Artikelzahl für das Gewinnziel beträgt $70$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nP=8x-(150+3x)\n$$\n\n$$\nP=5x-150\n$$\n\n$$\nP = 5(70)-150 = 200\n$$\n\n$$\nx=70\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n175\\le 200\n$$\n\n$$\n5(65)-150=175\n$$\n\n$$\n175\\le 200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n5x-150=0\n$$\n\n$$\n5x=150\n$$\n\n$$\nx=30\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n350\\le 200\n$$\n\n$$\n5(100)-150=350\n$$\n\n$$\n350\\le 200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n5x-150\\ge 200\n$$\n\n$$\n5x\\ge 350\n$$\n\n$$\nx\\ge 70\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gewinn: $(8-3)x - 150 = 5x - 150$. Aus $5x - 150 \\ge 200$ folgt $x \\ge 70$. Break-even bei $x=30$ liegt unter dem Gewinnziel."
+  },
+  {
+    "case_id": "MATH 6.83",
+    "short_letters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Manufacturing Tolerance Inspection",
+    "context_en": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than ${50g}$.",
+    "statements_en": [
+      "A rod with d = 12.2mm and w = ${45g}$ passes inspection.",
+      "A rod with d = 12.4mm and w = ${40g}$ passes inspection.",
+      "A rod with d = 11.7mm and w = ${52g}$ passes inspection.",
+      "A rod with d = 12.3mm and w = ${30g}$ passes inspection.",
+      "A rod with d = 12.3mm and w = ${50g}$ passes inspection."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ and $w<50$.\n\nFor $d=12.2$:\n\n$$|d-12|=|12.2-12|=0.2$$\n\n$$0.2\\le0.3$$\n\nSo the diameter condition is met.\n\n$$45<50$$\n\nSo the weight condition is met.\n\nBoth must hold, therefore the rod passes inspection.\n\nSo the statement is True.\n",
+      "**B.** → False\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ and $w<50$.\n\nFor $d=12.4$:\n\n$$|d-12|=|12.4-12|=0.4$$\n\n$$0.4>0.3$$\n\nSo the diameter condition is failed.\n\n$$40<50$$\n\nSo the weight condition is met.\n\nBoth must hold, therefore the rod does not pass inspection.\n\nSo the statement is False.\n",
+      "**C.** → False\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ and $w<50$.\n\nFor $d=11.7$:\n\n$$|d-12|=|11.7-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\n$$52<50$$ is false since $52>50$.\n\nSo the weight condition is failed.\n\nBoth must hold, therefore the rod does not pass inspection.\n\nSo the statement is False.\n",
+      "**D.** → True\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ and $w<50$.\n\nFor $d=12.3$:\n\n$$|d-12|=|12.3-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\n$$30<50$$\n\nSo the weight condition is met.\n\nBoth must hold, therefore the rod passes inspection.\n\nSo the statement is True.\n",
+      "**E.** → False\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ and $w<50$.\n\nFor $d=12.3$:\n\n$$|d-12|=|12.3-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\nThe rule demands a strict inequality $w<50$. Here $w=50$, so\n\n$$50\\nless 50$$\n\nSo the weight condition is failed.\n\nBoth must hold, therefore the rod does not pass inspection.\n\nSo the statement is False.\n"
+    ],
+    "solution_overview_en": "A metal rod passes inspection only if both conditions hold at once: its diameter d (mm) must satisfy $|d - 12| \\le 0.3$, and its weight w (grams) must be strictly less than ${50g}$.",
+    "title_de_existing": "Fertigungstoleranz-Prüfung",
+    "context_de_existing": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen zugleich gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0{,}3$ erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner als $50$ g sein.",
+    "statements_de_existing": [
+      "Ein Stab mit $d=12{,}2$ mm und $w=45$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}4$ mm und $w=40$ g besteht die Prüfung.",
+      "Ein Stab mit $d=11{,}7$ mm und $w=52$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}3$ mm und $w=30$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}3$ mm und $w=50$ g besteht die Prüfung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie Prüfung verlangt beide Bedingungen zugleich: $|d-12|\\le 0{,}3$ und $w<50$.\n\nFür $d=12{,}2$:\n\n$$|d-12|=|12{,}2-12|=0{,}2$$\n\n$$0{,}2\\le0{,}3$$\n\nDie Durchmesserbedingung ist erfüllt.\n\n$$45<50$$\n\nDie Gewichtsbedingung ist erfüllt. Beide gelten, also besteht der Stab die Prüfung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nFür $d=12{,}4$:\n\n$$|d-12|=|12{,}4-12|=0{,}4$$\n\n$$0{,}4>0{,}3$$\n\nDie Durchmesserbedingung scheitert. Obwohl $40<50$ gilt, müssen beide Bedingungen gelten.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nFür $d=11{,}7$:\n\n$$|d-12|=|11{,}7-12|=0{,}3\\le0{,}3$$\n\nDer Durchmesser passt, aber $52<50$ ist falsch. Die Gewichtsbedingung scheitert.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nFür $d=12{,}3$:\n\n$$|d-12|=0{,}3\\le0{,}3$$\n\nund $30<50$. Beide Bedingungen gelten.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nFür $d=12{,}3$ gilt $|d-12|=0{,}3\\le0{,}3$. Die Regel verlangt aber die strenge Ungleichung $w<50$. Hier ist $w=50$, also gilt $50\\nless 50$. Die Gewichtsbedingung scheitert.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen zugleich gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0{,}3$ erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner als $50$ g sein. Beide Bedingungen müssen gleichzeitig wahr sein."
+  },
+  {
+    "case_id": "MATH 6.84",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "title_en": "Tiered Shipping Rates",
+    "context_en": "A shipping company charges a flat \\$8 for packages weighing 10kg or less. For packages over 10kg (up to 20kg), it charges \\$8 plus \\$0.50 per kg over 10. Let w represent the package weight in kg. A customer wants the shipping cost to be \\$12 or less.",
+    "statements_en": [
+      "A package weighing 5kg costs \\$8, which is within the \\$12 budget.",
+      "A package weighing 15kg stays within the \\$12 budget.",
+      "A package weighing 18kg costs exactly \\$12.",
+      "A package weighing 19kg stays within the \\$12 budget.",
+      "Applying the second bracket's formula, ${8 + 0.5(w - 10)}$, to a 5kg package gives the same \\$8 cost as correctly using the flat-rate bracket."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n8\\le 12\n$$\n\n$$\nC(5)=8\n$$\n\n$$\n8\\le 12\n$$\n\n$$\n8, which is within the \\\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n15-10=5\n$$\n\n$$\n0.5\\cdot5=2.5\n$$\n\n$$\n8+2.5=10.5\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n18-10=8\n$$\n\n$$\n0.5\\cdot8=4\n$$\n\n$$\n8+4=12\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n19-10=9\n$$\n\n$$\n0.5\\cdot9=4.5\n$$\n\n$$\n8+4.5=12.5\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n5-10=-5\n$$\n\n$$\n0.5\\cdot-5=-2.5\n$$\n\n$$\n8+-2.5=5.5\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A shipping company charges a flat \\$8 for packages weighing 10kg or less. For packages over 10kg (up to 20kg), it charges \\$8 plus \\$0.50 per kg over 10. Let w represent the package weight in kg. A customer wants the shipping cost to be \\$12 or less.",
+    "title_de_existing": "Gestaffelte Versandtarife",
+    "context_de_existing": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete bis einschließlich $10$ kg. Für Pakete über $10$ kg (bis $20$ kg) berechnet es \\$8 plus \\$0{,}50 je kg über $10$. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen.",
+    "statements_de_existing": [
+      "Ein Paket mit $5$ kg kostet \\$8 und liegt damit im Budget von \\$12.",
+      "Ein Paket mit $15$ kg bleibt im Budget von \\$12.",
+      "Ein Paket mit $18$ kg kostet genau \\$12.",
+      "Ein Paket mit $19$ kg bleibt im Budget von \\$12.",
+      "Wendet man die Formel der zweiten Stufe, ${8 + 0{,}5(w - 10)}$, auf ein $5$-kg-Paket an, so erhält man denselben Preis \\$8 wie bei korrekter Nutzung der Pauschalstufe."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n8\\le 12\n$$\n\n$$\nC(5)=8\n$$\n\n$$\n8\\le 12\n$$\n\n$$\n8, which is within the \\\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n15-10=5\n$$\n\n$$\n0.5\\cdot5=2.5\n$$\n\n$$\n8+2.5=10.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n18-10=8\n$$\n\n$$\n0.5\\cdot8=4\n$$\n\n$$\n8+4=12\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n19-10=9\n$$\n\n$$\n0.5\\cdot9=4.5\n$$\n\n$$\n8+4.5=12.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n5-10=-5\n$$\n\n$$\n0.5\\cdot-5=-2.5\n$$\n\n$$\n8+-2.5=5.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Bis $10$ kg: Kosten $8$. Darüber: $8 + 0{,}5(w-10)\\le 12$ liefert $w\\le 18$. Die Zweitstufenformel darf nicht auf die Pauschalstufe angewendet werden."
+  },
+  {
+    "case_id": "MATH 6.85",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Support Cable Length",
+    "context_en": "A support cable runs from a fixed point on the ground, 20 meters horizontally from the base of a pole, up to an attachment point at height h meters on the pole. The cable length is $L = \\sqrt{h^{2} + 20^{2}}$. Engineers require the cable length to be at most 25 meters, with $h \\ge 0$.",
+    "statements_en": [
+      "A height of 15m results in a cable length of exactly 25m.",
+      "A height of 10m results in a cable length under 25m.",
+      "A height of 16m keeps the cable length at or under 25m.",
+      "Squaring both sides of $\\sqrt{h^{2}+400} \\le 25$ to get $h^{2}+400 \\le 625$ is valid here because both sides of the original inequality are guaranteed non-negative.",
+      "Since there's a square root in this inequality, squaring both sides is always a safe step, regardless of the signs involved, with no additional check ever needed."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{15^2+20^2}\n$$\n\n$$\nL=\\sqrt{625}\n$$\n\n$$\nL=25\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{10^2+20^2}\n$$\n\n$$\nL=\\sqrt{500}\\approx 22.36\n$$\n\n$$\nh=10\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{16^2+20^2}\n$$\n\n$$\nL=\\sqrt{656}\\approx 25.61\n$$\n\n$$\nh=16\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{h^{2} + 400}\\le 25\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nh^{2} + 400\\ge 0\n$$\n\n$$\nx\\in \\emptyset\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\nh^{2} + 400\\le 625\n$$\n\n$$\nh^{2} - 225\\le 0\n$$\n\n$$\n(h - 15) (h + 15)\\le 0\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $h^{2} - 225$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $?$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n\\emptyset\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\sqrt{h^2+400}\\le -25\n$$\n\n$$\nh^2+400\\le 625\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "A support cable runs from a fixed point on the ground, 20 meters horizontally from the base of a pole, up to an attachment point at height h meters on the pole. The cable length is $L = \\sqrt{h^{2} + 20^{2}}$. Engineers require the cable length to be at most 25 meters, with $h \\ge 0$.",
+    "title_de_existing": "Länge eines Stützkabels",
+    "context_de_existing": "Ein Stützkabel verläuft von einem festen Punkt am Boden, $20$ Meter horizontal vom Fuß eines Masts, bis zu einem Befestigungspunkt in der Höhe $h$ Meter am Mast. Die Kabellänge beträgt $L = \\sqrt{h^{2} + 20^{2}}$. Ingenieure verlangen eine Kabellänge von höchstens $25$ Metern, mit $h \\ge 0$.",
+    "statements_de_existing": [
+      "Eine Höhe von $15$ m ergibt eine Kabellänge von genau $25$ m.",
+      "Eine Höhe von $10$ m ergibt eine Kabellänge unter $25$ m.",
+      "Eine Höhe von $16$ m hält die Kabellänge bei höchstens $25$ m.",
+      "Beide Seiten von $\\sqrt{h^{2}+400} \\le 25$ zu quadrieren, sodass $h^{2}+400 \\le 625$ entsteht, ist hier gültig, weil beide Seiten der ursprünglichen Ungleichung garantiert nichtnegativ sind.",
+      "Weil in dieser Ungleichung eine Quadratwurzel vorkommt, ist das Quadrieren beider Seiten immer ein sicherer Schritt — unabhängig von Vorzeichen und ohne jede zusätzliche Prüfung."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{15^2+20^2} = \\sqrt{625} = 25 = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{10^2+20^2} = \\sqrt{500}\\approx 22.36\n$$\n\n$$\nh=10,\\quad L = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{16^2+20^2} = \\sqrt{656}\\approx 25.61\n$$\n\n$$\nh=16,\\quad L = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{h^{2} + 400}\\le 25\n$$\n\nBeide Seiten sind nichtnegativ: die Quadratwurzel definitionsgemäß, und $25>0$. Daher ist Quadrieren äquivalent:\n\n$$\nh^{2}+400 \\le 625\n$$\n\nDas ist genau der gültige Schritt aus der Behauptung.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\sqrt{h^2+400}\\le -25\n$$\n\n$$\nh^2+400\\le 625\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Aus $\\sqrt{h^{2}+400}\\le 25$ mit $h\\ge 0$ folgt nach Quadrieren $h\\le 15$. Quadrieren ist hier erlaubt, weil beide Seiten nichtnegativ sind; allgemein ist das nicht immer sicher."
+  },
+  {
+    "case_id": "MATH 6.87",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "College GPA with Credit-Hour Weights",
+    "context_en": "A student's GPA is a weighted average of course grade points, weighted by credit hours. She has completed a 3-credit course (3.0 grade points) and a 4-credit course (2.7 grade points). She is now taking a 3-credit course and wants her overall GPA across all 10 credits to be at least 3.0. Let x represent the grade points she earns in the new course (maximum possible is 4.0).",
+    "statements_en": [
+      "Earning 3.4 grade points in the new course meets her GPA goal exactly.",
+      "Earning 3.2 grade points in the new course meets her GPA goal.",
+      "The minimum grade points she needs in the new course is 3.0.",
+      "Since the maximum possible grade points in a single course is 4.0, it is possible for her to reach her GPA goal.",
+      "This problem uses credit hours as weights, similar in structure to Question 16's percentage weights for homework/midterm/final — except here the weights are the number of credits each course is worth."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{10}\\ge 3.0\n$$\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx=3.4\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n2.94\\le 3.0\n$$\n\n$$\n\\frac{19.8+3(3.2)}{10}=2.94\n$$\n\n$$\n2.94\\le 3.0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\n3x\\ge 10.2\n$$\n\n$$\nx\\ge 3.4\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality for this scenario.\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx\\le 4.0\n$$\n\n$$\n3.4\\le x\\le 4.0\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True.",
+      "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{3+4+3}\n$$\n\n$$\n3\\cdot 3.0=9\n$$\n\n$$\n4\\cdot 2.7=10.8\n$$\n\n$$\n\\frac{9+10.8+3x}{10}\n$$\n\n$$\n\\frac{19.8+3x}{10}\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows agreement.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A student's GPA is a weighted average of course grade points, weighted by credit hours. She has completed a 3-credit course (3.0 grade points) and a 4-credit course (2.7 grade points). She is now taking a 3-credit course and wants her overall GPA across all 10 credits to be at least 3.0. Let x represent the grade points she earns in the new course (maximum possible is 4.0).",
+    "title_de_existing": "Notendurchschnitt mit Credit-Stunden-Gewichten",
+    "context_de_existing": "Der Notendurchschnitt einer Studentin ist ein gewichtetes Mittel der Kursnotenpunkte, gewichtet nach Credit-Stunden. Sie hat einen $3$-Credit-Kurs ($3{,}0$ Notenpunkte) und einen $4$-Credit-Kurs ($2{,}7$ Notenpunkte) abgeschlossen. Sie belegt nun einen $3$-Credit-Kurs und möchte einen Gesamtdurchschnitt über alle $10$ Credits von mindestens $3{,}0$. Es sei $x$ die Notenpunktzahl im neuen Kurs (Maximum $4{,}0$).",
+    "statements_de_existing": [
+      "Mit $3{,}4$ Notenpunkten im neuen Kurs erreicht sie das Durchschnittsziel genau.",
+      "Mit $3{,}2$ Notenpunkten im neuen Kurs erreicht sie das Durchschnittsziel.",
+      "Die minimale Notenpunktzahl, die sie im neuen Kurs braucht, beträgt $3{,}0$.",
+      "Weil die maximale Notenpunktzahl in einem einzelnen Kurs $4{,}0$ beträgt, ist es möglich, dass sie ihr Durchschnittsziel erreicht.",
+      "Diese Aufgabe verwendet Credit-Stunden als Gewichte — strukturell ähnlich wie Prozentgewichte für Hausaufgaben/Zwischenprüfung/Abschluss —, nur dass die Gewichte hier die Credit-Anzahl jedes Kurses sind."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{10}\\ge 3.0\n$$\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx=3.4\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2.94\\le 3.0\n$$\n\n$$\n\\frac{19.8+3(3.2)}{10}=2.94\n$$\n\n$$\n2.94\\le 3.0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\n3x\\ge 10.2\n$$\n\n$$\nx\\ge 3.4\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx\\le 4.0\n$$\n\n$$\n3.4\\le x\\le 4.0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{3+4+3}\n$$\n\n$$\n3\\cdot 3.0=9\n$$\n\n$$\n4\\cdot 2.7=10.8\n$$\n\n$$\n\\frac{9+10.8+3x}{10}\n$$\n\n$$\n\\frac{19.8+3x}{10}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $\\dfrac{3\\cdot 3{,}0 + 4\\cdot 2{,}7 + 3x}{10}\\ge 3{,}0$ folgt $9 + 10{,}8 + 3x \\ge 30$, also $3x\\ge 10{,}2$, also $x\\ge 3{,}4$."
+  },
+  {
+    "case_id": "MATH 6.88",
+    "short_letters": [
+      1
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Chained Discount, Tax, and Coupon",
+    "context_en": "A store applies a 20% discount to an item's original price p, then adds 8% sales tax on the discounted price, then subtracts a flat \\$5 loyalty coupon at the very end. The final price is ${0.8p \\times 1.08 - 5 = 0.864p - 5}$. A customer wants the final price to be \\$70 or less.",
+    "statements_en": [
+      "An original price of \\$86 keeps the final price at or under \\$70.",
+      "An original price of \\$87 keeps the final price at or under \\$70.",
+      "The maximum original price, to the nearest whole dollar, that keeps the final price at or under \\$70 is \\$86.",
+      "Subtracting the \\$5 coupon before applying the discount and tax — that is, $(p - 5) \\times 0.8 \\times 1.08$ — would produce the same final price for a given original price.",
+      "The correctly combined formula for “discount, then tax, then coupon” is ${0.8p \\times 1.08 - 5}$, which simplifies to ${0.864p - 5}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe final-price model is\n\n$$\n0.864p-5\n$$\n\nSubstitute $p=86$.\n\n$$\n0.864(86)-5=69.304\n$$\n\n$$\n69.304\\le 70\n$$\n\nso an original price of 86 keeps the final price at or under 70.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe final-price model is\n\n$$\n0.864p-5\n$$\n\nSubstitute $p=87$.\n\n$$\n0.864(87)-5=70.168\n$$\n\n$$\n70.168\\le 70\n$$\n\nis false, so 87 does not keep the final price at or under 70.\n\nSo the statement is False.",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nStart from the governing inequality.\n\n$$\n0.864p-5\\le 70\n$$\n\n$$\n0.864p\\le 75\n$$\n\n$$\np\\le \\frac{75}{0.864}=86.805\\ldots\n$$\n\nThe largest whole-dollar original price is therefore 86.\n\nSo the statement is True.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.8p(1.08)-5=0.864p-5\n$$\n\n$$\n(p-5)(0.8)(1.08)=0.864p-4.32\n$$\n\nEach substitution and rearrangement above is written as its own display line.\n\nComparing the final numeric or inequality result with the claim shows a contradiction.\n\nSo the statement is False.",
+      "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nApply discount, then tax, then the flat coupon.\n\n$$\n0.8p\\times 1.08-5\n$$\n\n$$\n0.864p-5\n$$\n\nwhich is exactly the claimed combined formula.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "A store applies a 20% discount to an item's original price p, then adds 8% sales tax on the discounted price, then subtracts a flat \\$5 loyalty coupon at the very end. The final price is ${0.8p \\times 1.08 - 5 = 0.864p - 5}$. A customer wants the final price to be \\$70 or less.",
+    "title_de_existing": "Verketteter Rabatt, Steuer und Coupon",
+    "context_de_existing": "Ein Geschäft wendet einen Rabatt von $20\\%$ auf den ursprünglichen Preis $p$ an, schlägt dann $8\\%$ Umsatzsteuer auf den reduzierten Preis auf und zieht ganz am Ende einen pauschalen \\$5-Treuecoupon ab. Der Endpreis lautet ${0{,}8p \\times 1{,}08 - 5 = 0{,}864p - 5}$. Ein Kunde möchte einen Endpreis von höchstens \\$70.",
+    "statements_de_existing": [
+      "Ein ursprünglicher Preis von \\$86 hält den Endpreis bei höchstens \\$70.",
+      "Ein ursprünglicher Preis von \\$87 hält den Endpreis bei höchstens \\$70.",
+      "Der maximale ursprüngliche Preis, auf den nächsten ganzen Dollar, der den Endpreis bei höchstens \\$70 hält, beträgt \\$86.",
+      "Den \\$5-Coupon vor Rabatt und Steuer abzuziehen — also $(p - 5) \\times 0{,}8 \\times 1{,}08$ — würde für einen gegebenen ursprünglichen Preis denselben Endpreis liefern.",
+      "Die korrekt kombinierte Formel für „Rabatt, dann Steuer, dann Coupon“ ist ${0{,}8p \\times 1{,}08 - 5}$, was sich zu ${0{,}864p - 5}$ vereinfacht."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDas Endpreismodell lautet\n\n$$\n0{,}864p-5\n$$\n\nEinsetzen von $p=86$:\n\n$$\n0{,}864(86)-5=69{,}304\\le 70\n$$\n\nEin ursprünglicher Preis von $86$ hält den Endpreis im Limit.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nEinsetzen von $p=87$:\n\n$$\n0{,}864(87)-5=70{,}168\n$$\n\n$$\n70{,}168\\le 70\n$$\n\nist falsch. Der Endpreis liegt über \\$70.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nStarte von der maßgebenden Ungleichung.\n\n$$\n0{,}864p-5\\le 70\n$$\n\n$$\n0{,}864p\\le 75\n$$\n\n$$\np\\le \\frac{75}{0{,}864}\\approx 86{,}81\n$$\n\nDer größte ganze Dollar-Preis ist daher $86$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nCoupon zuerst: $(p-5)\\times 0{,}8\\times 1{,}08 = 0{,}864(p-5) = 0{,}864p - 4{,}32$.\n\nDas korrekte Modell ist $0{,}864p - 5$. Die Differenz $-4{,}32$ versus $-5$ zeigt, dass die Reihenfolge den Endpreis ändert.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nZuerst Rabatt, dann Steuer, dann pauschaler Coupon:\n\n$$\n0{,}8p\\times 1{,}08-5 = 0{,}864p-5\n$$\n\nDas ist genau die behauptete kombinierte Formel.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Aus $0{,}864p - 5 \\le 70$ folgt $p \\le \\dfrac{75}{0{,}864}\\approx 86{,}81$, also höchstens \\$86 als ganzer Dollar. Die Reihenfolge der Operationen ändert den Endpreis."
+  },
+  {
+    "case_id": "MATH 6.90",
+    "short_letters": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Exam-style tasks - 2",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The biquadratic inequality $x^4-10x^2+9<0$ has solution set $(-3,-1)\\cup(1,3)$.",
+      "The condition $\\max\\{x-1,\\,3-x\\}<2$ is equivalent to the open interval $1<x<3$.",
+      "A service charges 14 EUR plus 6 EUR per unit, with a budget of 176 EUR. The budget covers at most $29$ units.",
+      "The comparison $\\dfrac{2x+1}{x-4}\\le1$ is equivalent to $-5\\le x<4$.",
+      "A quality score is $q(x)=-2(x-5)^2+18$. The requirement $q(x)\\ge10$ is met exactly for $3\\le x\\le7$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{4} - 10 x^{2}) + 9<0\n$$\n\nBring every term to one side.\n\n$$\nx^{4} - 10 x^{2} + 9<0\n$$\n\nFactor.\n\n$$\n(x - 3) (x - 1) (x + 1) (x + 3)<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-3\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{4} - 10 x^{2} + 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-3, -1) \\cup (1, 3)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the maximum inequality.\n\n$$\n\\max\\{x-1,\\,3-x\\}<2\n$$\n\nThe maximum of two expressions is below a bound if and only if both expressions are.\n\n$$\nx-1<2\n$$\n\n$$\nx<3\n$$\n\n$$\n3-x<2\n$$\n\n$$\n-x<-1\n$$\n\n$$\nx>1\n$$\n\nIntersect both conditions.\n\n$$\n1<x<3\n$$\n\nwhich matches the claimed open interval.\n\nSo the statement is True.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n14+6u\\le 176\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{2 x + 1}{x - 4}\\le 1\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-1\\le 0\n$$\n\nWrite the constant over the same denominator.\n\n$$\n1=\\frac{x - 4}{x - 4}\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-\\frac{x - 4}{x - 4}\\le 0\n$$\n\nCombine the numerators.\n\n$$\n\\frac{2 x + 1-x - 4}{x - 4}\\le 0\n$$\n\n$$\n\\frac{x + 5}{x - 4}\\le 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$x + 5=0$$\n\n$$x=-5$$\n\n$$x - 4=0$$\n\n$$x=4$$\n\n(the pole $x=4$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 5}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n[-5, 4)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n18 - 2 (x - 5)^{2}\\ge 10\n$$\n\nBring every term to one side.\n\n$$\n- 2 x^{2} + 20 x - 42\\ge 0\n$$\n\nFactor.\n\n$$\n- 2 (x - 7) (x - 3)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=3\n$$\n\n$$\nx=7\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $2 (- x^{2} + 10 x - 21)$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,7)$ | $+$ |\n| $(7,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n[3, 7]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests biquadratic interval substitution; B tests maximum of two affine expressions; C tests a contextual inequality with all practical constraints; D tests rational expression compared with a constant; E tests vertex-form quality window. Each letter is solved independently; no result is shared across statements.",
+    "title_de_existing": "Klausuraufgaben – 2",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die biquadratische Ungleichung $x^4-10x^2+9<0$ hat die Lösungsmenge $(-3,-1)\\cup(1,3)$.",
+      "Die Bedingung $\\max\\{x-1,\\,3-x\\}<2$ ist äquivalent zum offenen Intervall $1<x<3$.",
+      "Ein Dienst berechnet $14$ EUR plus $6$ EUR pro Einheit bei einem Budget von $176$ EUR. Das Budget deckt höchstens $29$ Einheiten.",
+      "Der Vergleich $\\dfrac{2x+1}{x-4}\\le1$ ist äquivalent zu $-5\\le x<4$.",
+      "Ein Qualitätsscore lautet $q(x)=-2(x-5)^2+18$. Die Anforderung $q(x)\\ge10$ ist genau für $3\\le x\\le7$ erfüllt."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{4} - 10 x^{2} + 9<0\n$$\n\nFaktorisiere.\n\n$$\n(x - 3) (x - 1) (x + 1) (x + 3)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte $x=-3,-1,1,3$.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-3, -1) \\cup (1, 3)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nDas Maximum zweier Ausdrücke liegt unter einer Schranke genau dann, wenn beide Ausdrücke darunter liegen.\n\n$$\nx-1<2 \\Rightarrow x<3\n$$\n\n$$\n3-x<2 \\Rightarrow x>1\n$$\n\nSchnitt: $1<x<3$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$\n14+6u\\le 176\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le 27\n$$\n\nDie größte zulässige ganze Anzahl ist $27$, nicht $29$.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\n$$\n\\frac{2 x + 1}{x - 4}\\le 1\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-1\\le 0\n$$\n\n$$\n\\frac{x + 5}{x - 4}\\le 0\n$$\n\nKritische Punkte: $x=-5$ (Zählernull) und $x=4$ (Pol, ausgeschlossen).\n\nVorzeichendiagramm liefert $[-5, 4)$.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\n$$\n-2(x-5)^{2}+18\\ge 10\n$$\n\n$$\n-2(x-5)^{2}\\ge -8\n$$\n\n$$\n(x-5)^{2}\\le 4\n$$\n\n$$\n|x-5|\\le 2\n$$\n\n$$\n3\\le x\\le 7\n$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Themen: biquadratische Intervalle, Maximum zweier linearer Ausdrücke, kontextuelle Budgetungleichung, rationale Ungleichung gegen eine Konstante, Qualitätsscore in Scheitelpunktform. Jeder Buchstabe wird unabhängig gelöst; kein Ergebnis wird zwischen Aussagen geteilt."
+  },
+  {
+    "case_id": "MATH 6.93",
+    "short_letters": [
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 5",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "On its domain, $\\dfrac{x^2-9}{x-3}<5$ holds exactly when $x<2$.",
+      "The strict inequality $x^2-7x+10<0$ contains exactly the two integer solutions $x=3$ and $x=4$.",
+      "The inequality $|x|-|x-2|>0$ holds exactly when $x>1$.",
+      "A service charges 15 EUR plus 6 EUR per unit, with a budget of 177 EUR. The budget covers at most $29$ units.",
+      "The inequality $\\dfrac{x}{x^2+4}<\\dfrac14$ holds for every real $x$ except $x=2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\nx<2\n$$\n\nBring every term to one side.\n\n$$\nx - 2<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x - 2$ |\n| --- | --- |\n| $(-\\infty,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 7 x) + 10<0\n$$\n\nBring every term to one side.\n\n$$\nx^{2} - 7 x + 10<0\n$$\n\nFactor.\n\n$$\n(x - 5) (x - 2)<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=2\n$$\n\n$$\nx=5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2} - 7 x + 10$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(2, 5)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nStart from the absolute-value difference inequality.\n\n$$\n|x|-|x - 2|>0\n$$\n\nThe expression changes formula at the kink points $x=0$ and $x=2$.\n\nOn $x\\le 0$:\n\n$$\n|x|-|x - 2|=-2\n$$\n\nSolving $-2>0$ on this piece gives\n\n$$\n\\emptyset\n$$\n\nOn $0\\le x\\le 2$:\n\n$$\n|x|-|x - 2|=2 x - 2\n$$\n\nSolving $2 x - 2>0$ on this piece gives\n\n$$\n(1, 2]\n$$\n\nOn $x\\ge 2$:\n\n$$\n|x|-|x - 2|=2\n$$\n\nSolving $2>0$ on this piece gives\n\n$$\n[2, \\infty)\n$$\n\nUnion of the admissible pieces:\n\n$$\n(1, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n15+6u\\le 177\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x}{x^{2} + 4}<\\frac{1}{4}\n$$\n\n$$\n\\frac{x}{x^{2} + 4}-\\frac{1}{4}<0\n$$\n\nWrite the constant over the same denominator.\n\n$$\n\\frac{1}{4}=\\dfrac{x^{2}+4}{4(x^{2}+4)}\n$$\n\n$$\n\\frac{x}{x^{2} + 4}-\\dfrac{x^{2}+4}{4(x^{2}+4)}<0\n$$\n\nCombine over the common denominator $4(x^{2}+4)$.\n\n$$\n\\dfrac{4x-(x^{2}+4)}{4(x^{2}+4)}<0\n$$\n\n$$\n\\dfrac{-x^{2}+4x-4}{4(x^{2}+4)}<0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n-x^{2}+4x-4=0\n$$\n\n$$\n-(x-2)^{2}=0\n$$\n\n$$\nx=2\n$$\n\nThere is no excluded pole.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{- x^{2} + 4 x - 4}{4 (x^{2} + 4)}$ |\n| --- | --- |\n| $(-\\infty,2)$ | $-$ |\n| $(2,\\infty)$ | $-$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, 2) \\cup (2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests cancellation with an irrelevant hole; B tests integer solutions in an open quadratic interval; C tests difference of two distances; D tests a contextual inequality with all practical constraints; E tests bounded rational function versus its maximum. Each letter is solved independently; no result is shared across statements.",
+    "title_de_existing": "Klausuraufgaben – 5",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Amthema $\\dfrac{x^2-9}{x-3}<5$ wirklich $x<2$.",
+      "Die strenge Ungleichheit $x^2-7x+10<0$ enthält genau die beiden integer-lösungen $x=3$ und in bezogen und $x=4$.",
+      "Die Ungleichung $|x|-|x-2|>0$ wirklich $x>1$.",
+      "Ein Service berechnet 15 EUR plus 6 EUR pro Einheit mit einem Budget von 17 lässt sich leisten. GAMAMES-WELEL $29$ units.",
+      "Die Ungleichung $\\dfrac{x}{x^2+4}<\\dfrac14$ für jeden Re am erer $x$ except $x=2$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx<2\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx - 2<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x - 2$ |\n| --- | --- |\n| $(-\\infty,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 2)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 7 x) + 10<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 7 x + 10<0\n$$\n\nFactor.\n\n$$\n(x - 5) (x - 2)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=2 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 7 x + 10$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(2, 5)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStarte von der Betragsdifferenz-Ungleichung.\n\n$$\n|x|-|x - 2|>0\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=0$ und $x=2$.\n\nAuf $x\\le 0$:\n\n$$\n|x|-|x - 2|=-2 \\Rightarrow \\emptyset\n$$\n\nAuf $0\\le x\\le 2$:\n\n$$\n|x|-|x - 2|=2 x - 2 \\Rightarrow (1, 2]\n$$\n\nAuf $x\\ge 2$:\n\n$$\n|x|-|x - 2|=2 \\Rightarrow [2, \\infty)\n$$\n\nVereinigung der Teilstücke:\n\n$$\n(1, \\infty)\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n15+6u\\le 177\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nBeginne vons stärkeres Maß nach der ders von den weiter damit.\n\n$$\n\\frac{x}{x^{2} + 4}<\\frac{1}{4}\n$$\n\n$$\n\\frac{x}{x^{2} + 4}-\\frac{1}{4}<0\n$$\n\nAuf dierist-,\n\n$$\n\\frac{1}{4}=\\dfrac{x^{2}+4}{4(x^{2}+4)}\n$$\n\n$$\n\\frac{x}{x^{2} + 4}-\\dfrac{x^{2}+4}{4(x^{2}+4)}<0\n$$\n\nKombinieren Sie den gemeinsamen Nenner $4(x^{2}+4)$.\n\n$$\n\\dfrac{4x-(x^{2}+4)}{4(x^{2}+4)}<0\n$$\n\n$$\n\\dfrac{-x^{2}+4x-4}{4(x^{2}+4)}<0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n-x^{2}+4x-4=0,\\quad -(x-2)^{2}=0\n$$\n\n$$\nx=2\n$$\n\nVer Kommentaren wird .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{- x^{2} + 4 x - 4}{4 (x^{2} + 4)}$ |\n| --- | --- |\n| $(-\\infty,2)$ | $-$ |\n| $(2,\\infty)$ | $-$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, 2) \\cup (2, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Themen: 6.1, 6.2, 6.3, 6.4, 6.1 Karte: A Tests Streichung mit einem bes Angestellten-Loch; B Tests ganzzahlige Lösungen in einem offenen quadratischen Intervall; C Tests Differenz von zwei Distanzen; D Tests eine kontextuelle Ungleichheit mit allen praktischen Einschränkungen; E-Tests begrenzen die rationale Funktion gegenüber ihr Maximum. Jeder Buchstabe ist unabhängig gelöst; kein Ergebnis ist über Aussagen darüber geteilt."
+  },
+  {
+    "case_id": "MATH 6.94",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Exam-style tasks - 6",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "For every real parameter $a$, the strict inequality $x^2-2ax+a^2<0$ has no real solution.",
+      "The equation $|x-1|=|2x+3|$ has exactly the two real solutions $x=-4$ and $x=-\\dfrac23$.",
+      "A service charges 14 EUR plus 6 EUR per unit, with a budget of 152 EUR. The budget covers at most $25$ units.",
+      "The inequality $\\dfrac{(x-1)^2}{x+2}\\ge0$ is satisfied exactly for $x>-2$.",
+      "The inequality $x^2+2x\\le3x+4$ holds for $\\dfrac{1-\\sqrt{17}}2\\le x\\le\\dfrac{1+\\sqrt{17}}2$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\nx^{2}-2ax+a^{2}<0\n$$\n\n$$\n(x-a)^{2}<0\n$$\n\nA square is always $\\ge 0$, and it equals 0 only at $x=a$. It is never strictly negative for any real $x$ (and any real $a$).\n\nTherefore the solution set is empty for every real parameter $a$.\n\nSo the statement is True.",
+      "**B.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nx-1 = 2x+3\\quad\\text{or}\\quad x-1 = -(2x+3)\n$$\n\n$$\nx = -4\\quad\\text{or}\\quad 3x = -2\n$$\n\n$$\nx\\in\\left\\{-4,-\\frac23\\right\\}\n$$\n\n$$\n|x-1|=|2x+3|\n$$\n\n$$\nx=-4\n$$\n\n$$\nx=-\\dfrac23\n$$\n\nEqual absolute values split into equal and opposite linear branches. Both branch solutions satisfy the original equation.\n\nSo the statement is True.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n14+6u\\le 152\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{(x - 1)^{2}}{x + 2}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(x^{2} - 2 x) + 1=0\n$$\n\n$$\n(x - 1)^{2}=0\n$$\n\n$$\nx=1\n$$\n\n$$x + 2=0$$\n\n$$x=-2$$\n\n(the pole $x=-2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{(x - 1)^{2}}{x + 2}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,1)$ | $+$ |\n| $(1,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\nx^{2}+2x\\le 3x+4\n$$\n\nBring every term to one side.\n\n$$\nx^{2}-x-4\\le 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=\\frac{1-\\sqrt{17}}{2}\n$$\n\n$$\nx=\\frac{1+\\sqrt{17}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{2}-x-4$ |\n| --- | --- |\n| $(-\\infty,\\frac{1-\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{1-\\sqrt{17}}{2},\\frac{1+\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{1+\\sqrt{17}}{2},\\infty)$ | $+$ |\n\nThe non-strict inequality keeps the closed interval between the roots.\n\n$$\n\\frac{1-\\sqrt{17}}{2}\\le x\\le \\frac{1+\\sqrt{17}}{2}\n$$\n\nwhich matches the claim.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests parameterized impossible square; B tests equality of two affine moduli; C tests a contextual inequality with all practical constraints; D tests squared numerator over a linear pole; E tests comparison of a quadratic and a line. Each letter is solved independently; no result is shared across statements.",
+    "title_de_existing": "Klausuraufgaben – 6",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Für jeden realen Parameter $a$Die strenge Ungleichheit $x^2-2ax+a^2<0$ hat keine reelle Lösung.",
+      "Die Gleichung $|x-1|=|2x+3|$ RAM T gehe die den Nahhielten die Nahe $x=-4$ und in bezogen und $x=-\\dfrac23$.",
+      "2. Die EU-U er . $25$ units.",
+      "Die Ungleichung $\\dfrac{(x-1)^2}{x+2}\\ge0$ ist genau für Dadurch $x>-2$.",
+      "Die Ungleichung $x^2+2x\\le3x+4$ US1. $\\dfrac{1-\\sqrt{17}}2\\le x\\le\\dfrac{1+\\sqrt{17}}2$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{2}-2ax+a^{2}<0\n$$\n\n$$\n(x-a)^{2}<0\n$$\n\nEin Quadrat ist immer $\\ge 0$Und sie, nur, und, $x=a$Es ist nie streng negativ für irgendeine reale $x$ mit Stück mit Stück $a$).\n\nDaher ist der Lösungssatz für jeden realen Parameter leer $a$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nx-1 = 2x+3\\quad\\text{or}\\quad x-1 = -(2x+3)\n$$\n\n$$\nx = -4\\quad\\text{or}\\quad 3x = -2\n$$\n\n$$\nx\\in\\left\\{-4,-\\frac23\\right\\}\n$$\n\n$$\n|x-1|=|2x+3|\n$$\n\n$$\nx=-4 = -\\dfrac23\n$$\n\nGleiche Absolutwerte, aufgeteilt in gleiche und entgegengesetzte lineare Zweige. Beide Zweiglösungen erfüllen die ursprüngliche Gleichung.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n14+6u\\le 152\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{(x - 1)^{2}}{x + 2}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(x^{2} - 2 x) + 1=0,\\quad (x - 1)^{2}=0\n$$\n\n$$\nx=1,\\quad x + 2=0,\\quad x=-2\n$$\n\n(die Polstelle $x=-2$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{(x - 1)^{2}}{x + 2}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,1)$ | $+$ |\n| $(1,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-2, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{2}+2x\\le 3x+4\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2}-x-4\\le 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=\\frac{1-\\sqrt{17}}{2}\n$$\n\n$$\nx=\\frac{1+\\sqrt{17}}{2}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2}-x-4$ |\n| --- | --- |\n| $(-\\infty,\\frac{1-\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{1-\\sqrt{17}}{2},\\frac{1+\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{1+\\sqrt{17}}{2},\\infty)$ | $+$ |\n\nDie nicht-strenge Ungleichung hält das geschlossene Intervall zwischen den Wurzeln.\n\n$$\n\\frac{1-\\sqrt{17}}{2}\\le x\\le \\frac{1+\\sqrt{17}}{2}\n$$\n\nMit der Behauptung ist einverstanden.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Themen: 6.2, 6.3, 6.4, 6.1, 6.2. für die Verwendung von für die Verwendung in den Wirtschaftszweigen der Union"
+  },
+  {
+    "case_id": "MATH 6.96",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 8",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A service charges 12 EUR plus 6 EUR per unit, with a budget of 150 EUR. The budget covers at most $25$ units.",
+      "The inequality $\\dfrac1{(x-2)^2}\\le1$ is equivalent to $x\\le1$ or $x\\ge3$.",
+      "The parabola inequality $-x^2+4x+5>x+3$ holds exactly between $\\dfrac{3-\\sqrt{17}}2$ and $\\dfrac{3+\\sqrt{17}}2$.",
+      "The condition $\\min\\{x+2,\\,4-x\\}\\ge1$ is equivalent to $-1\\le x\\le3$.",
+      "A service charges 16 EUR plus 6 EUR per unit, with a budget of 178 EUR. The budget covers at most $29$ units."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n12+6u\\le 150\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False.",
+      "**B.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{1}{(x - 2)^{2}}\\le 1\n$$\n\n$$\n\\frac{1}{(x - 2)^{2}}-1\\le 0\n$$\n\nWrite the constant over the same denominator.\n\n$$\n1=\\frac{x^{2} - 4 x + 4}{(x - 2)^{2}}\n$$\n\n$$\n\\frac{1}{(x - 2)^{2}}-\\frac{x^{2} - 4 x + 4}{(x - 2)^{2}}\\le 0\n$$\n\nCombine the numerators.\n\n$$\n\\frac{1-x^{2} - 4 x + 4}{(x - 2)^{2}}\\le 0\n$$\n\n$$\n\\frac{- x^{2} + 4 x - 3}{(x - 2)^{2}}\\le 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(- x^{2} + 4 x) - 3=0\n$$\n\n$$\n- (x - 3) (x - 1)=0\n$$\n\n$$\nx=1\n$$\n\n$$x - 3=0$$\n\n$$x=3$$\n\n$$\n(x^{2} - 4 x) + 4=0\n$$\n\n$$\n(x - 2)^{2}=0\n$$\n\n$$\nx=2\n$$\n\n(the pole $x=2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{- x^{2} + 4 x - 3}{(x - 2)^{2}}$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,3)$ | $+$ |\n| $(3,\\infty)$ | $-$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nStart from the claimed inequality.\n\n$$\n(- x^{2} + 4 x) + 5>x + 3\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 3 x + 2>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=\\frac{3}{2} - \\frac{\\sqrt{17}}{2}\n$$\n\n$$\nx=\\frac{3}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 3 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\frac{3}{2} - \\frac{\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{3}{2} - \\frac{\\sqrt{17}}{2},\\frac{3}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{3}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(\\frac{3}{2} - \\frac{\\sqrt{17}}{2}, \\frac{3}{2} + \\frac{\\sqrt{17}}{2})\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the minimum inequality.\n\n$$\n\\min\\{x+2,\\,4-x\\}\\ge 1\n$$\n\nThe minimum of two expressions is at least a bound if and only if both expressions are.\n\n$$\nx+2\\ge 1\n$$\n\n$$\nx\\ge -1\n$$\n\n$$\n4-x\\ge 1\n$$\n\n$$\n-x\\ge -3\n$$\n\n$$\nx\\le 3\n$$\n\nIntersect both conditions.\n\n$$\n-1\\le x\\le 3\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n16+6u\\le 178\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests reciprocal-square threshold; C tests strict comparison of parabola and line; D tests minimum of two affine expressions; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
+    "title_de_existing": "Klausuraufgaben – 8",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Das rüszige Ziel, ?◦ ? , der senkt‟ Treffpunkt zu , shüllthüllt ? ? ?sc ??und ? du ??? ??? ??? ???? ??? ???? ??? ??? ? ?? ? ?? ?? ?? ?? Columbuss ??? ??? ??? ??? ??? ??? ? zu ? s k ?s ruhe ? ?? ? ?? ? ?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?? ? ?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? Das Budget deckt höchstens $25$ units.",
+      "Die Ungleichung $\\dfrac1{(x-2)^2}\\le1$ ist gleich wie $x\\le1$ oder $x\\ge3$.",
+      "Die Abstimm der korrekten Schardel $-x^2+4x+5>x+3$ Hinweis der rming an der Ges Hinweis $\\dfrac{3-\\sqrt{17}}2$ und in bezogen und $\\dfrac{3+\\sqrt{17}}2$.",
+      "Die Bedingung $\\min\\{x+2,\\,4-x\\}\\ge1$ ist gleich wie $-1\\le x\\le3$.",
+      "Ein Service berechnet 16 EUR plus 6 EUR pro Einheit mit einem Budget von 178 EUR. äth- Ben- $29$ units."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n12+6u\\le 150\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\nBeginne vons stärkeres Maß nach der ders von den weiter damit.\n\n$$\n\\frac{1}{(x - 2)^{2}}\\le 1\n$$\n\n$$\n\\frac{1}{(x - 2)^{2}}-1\\le 0\n$$\n\nAuf dierist-,\n\n$$\n1=\\frac{x^{2} - 4 x + 4}{(x - 2)^{2}}\n$$\n\n$$\n\\frac{1}{(x - 2)^{2}}-\\frac{x^{2} - 4 x + 4}{(x - 2)^{2}}\\le 0\n$$\n\nKombinieren Sie die Zähler.\n\n$$\n\\frac{1-x^{2} - 4 x + 4}{(x - 2)^{2}}\\le 0\n$$\n\n$$\n\\frac{- x^{2} + 4 x - 3}{(x - 2)^{2}}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(- x^{2} + 4 x) - 3=0,\\quad - (x - 3) (x - 1)=0\n$$\n\n$$\nx=1,\\quad x - 3=0,\\quad x=3,\\quad (x^{2} - 4 x) + 4=0,\\quad (x - 2)^{2}=0\n$$\n\n$$\nx=2\n$$\n\n(die Polstelle $x=2$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{- x^{2} + 4 x - 3}{(x - 2)^{2}}$ |\n| --- | --- |\n| $(-\\infty,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,3)$ | $+$ |\n| $(3,\\infty)$ | $-$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(- x^{2} + 4 x) + 5>x + 3\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 3 x + 2>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=\\frac{3}{2} - \\frac{\\sqrt{17}}{2}\n$$\n\n$$\nx=\\frac{3}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x^{2} + 3 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\frac{3}{2} - \\frac{\\sqrt{17}}{2})$ | $-$ |\n| $(\\frac{3}{2} - \\frac{\\sqrt{17}}{2},\\frac{3}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(\\frac{3}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(\\frac{3}{2} - \\frac{\\sqrt{17}}{2}, \\frac{3}{2} + \\frac{\\sqrt{17}}{2})\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nVon der minimalen Ungleichung.\n\n$$\n\\min\\{x+2,\\,4-x\\}\\ge 1\n$$\n\nDas Minimum von zwei ist, wenn und nur, wenn beide möglich sind.\n\n$$\nx+2\\ge 1\n$$\n\n$$\nx\\ge -1\n$$\n\n$$\n4-x\\ge 1\n$$\n\n$$\n-x\\ge -3\n$$\n\n$$\nx\\le 3\n$$\n\nSchneiden Sie beide Bedingungen.\n\n$$\n-1\\le x\\le 3\n$$\n\nMit der Behauptung ist einverstanden.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n16+6u\\le 178\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "“e wirdg wird-- welchen E eine zufolgee bis mit bis zugeordneten mit der kverk ak k a k a k k a k a k a k a k a k a k a k a k a k a k k a k a k kmasse der k gek a kick"
+  },
+  {
+    "case_id": "MATH 6.97",
+    "short_letters": [],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 9",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "The inequality $\\dfrac1x\\ge\\dfrac1{x+2}$ holds for $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
+      "The strict inequality $(x^2-4)(x^2-16)>0$ holds exactly for $x<-4$, $-2<x<2$, or $x>4$.",
+      "The compound inequality $-2<\\dfrac{x-1}{3}\\le4$ has solution set $-5<x\\le13$.",
+      "A service charges 15 EUR plus 6 EUR per unit, with a budget of 153 EUR. The budget covers at most $25$ units.",
+      "The strict inequality $\\dfrac{x-3}{(x+1)^2}>0$ holds exactly when $x>3$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\dfrac{1}{x}-\\dfrac{1}{x+2}=\\dfrac{2}{x(x+2)}\n$$\n\n$$\n\\dfrac{2}{x(x+2)}\\ge 0\n$$\n\n$$\nx(x+2)>0\n$$\n\n$$\nx<-2\\quad\\text{or}\\quad x>0\n$$\n\n$$\n\\dfrac1x\\ge\\dfrac1{x+2}\n$$\n\nSubtract the two sides and retain both domain exclusions , . Since the numerator is positive, this holds precisely when the denominator is positive:\n\nSo the statement is True.",
+      "**B.** → True\n\nStart from the claimed inequality.\n\n$$\n(x^{2} - 16) (x^{2} - 4)>0\n$$\n\nBring every term to one side.\n\n$$\nx^{4} - 20 x^{2} + 64>0\n$$\n\nFactor.\n\n$$\n(x - 4) (x - 2) (x + 2) (x + 4)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-4\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=2\n$$\n\n$$\nx=4\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{4} - 20 x^{2} + 64$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,-2)$ | $-$ |\n| $(-2,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-\\infty, -4) \\cup (-2, 2) \\cup (4, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**C.** → True\n\nA compound inequality is two conditions that must hold together. Solve each piece, then intersect.\n\n$$\n-2<\\frac{x - 1}{3}\\le 4\n$$\n\n**Left piece.**\n\n$$\n-2<\\frac{x - 1}{3}\n$$\n\n$$\n\\frac{x}{3} + \\frac{5}{3}>0\n$$\n\n$$\n\\frac{x + 5}{3}>0\n$$\n\n$$\nx=-5\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 5}{3}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,\\infty)$ | $+$ |\n\nSo the left piece gives\n\n$$\n(-5, \\infty)\n$$\n\n**Right piece.**\n\n$$\n\\frac{x - 1}{3}\\le 4\n$$\n\n$$\n\\frac{x}{3} - \\frac{13}{3}\\le 0\n$$\n\n$$\n\\frac{x - 13}{3}\\le 0\n$$\n\n$$\nx=13\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 13}{3}$ |\n| --- | --- |\n| $(-\\infty,13)$ | $-$ |\n| $(13,\\infty)$ | $+$ |\n\nSo the right piece gives\n\n$$\n(-\\infty, 13]\n$$\n\nIntersect both pieces.\n\n$$\n(-5, 13]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n15+6u\\le 153\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nTranslate the service budget into a linear inequality in the unit count . Subtract the fixed charge. Divide by the positive rate . The largest admissible integer count is , not the claimed .\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x - 3}{(x + 1)^{2}}>0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$x - 3=0$$\n\n$$x=3$$\n\n$$\n(x^{2} + 2 x) + 1=0\n$$\n\n$$\n(x + 1)^{2}=0\n$$\n\n$$\nx=-1\n$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 3}{(x + 1)^{2}}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(3, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests comparison of shifted reciprocals; B tests product of two quadratic factors; C tests three-part affine inequality; D tests a contextual inequality with all practical constraints; E tests positive squared denominator. Each letter is solved independently; no result is shared across statements.",
+    "title_de_existing": "Klausuraufgaben – 9",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Die Ungleichung $\\dfrac1x\\ge\\dfrac1{x+2}$ US1. $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
+      "Die strenge Ungleichheit $(x^2-4)(x^2-16)>0$ gilt genau für $x<-4$, $-2<x<2$, oder $x>4$.",
+      "Die zusammengesetzte Ungleichheit $-2<\\dfrac{x-1}{3}\\le4$ hat die Lösungsmenge $-5<x\\le13$.",
+      "Eins bissens und einem, Indikatorierung nur dem T $25$ units.",
+      "Die strenge Ungleichheit $\\dfrac{x-3}{(x+1)^2}>0$ wirklich $x>3$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\dfrac{1}{x}-\\dfrac{1}{x+2}=\\dfrac{2}{x(x+2)}\n$$\n\n$$\n\\dfrac{2}{x(x+2)}\\ge 0\n$$\n\n$$\nx(x+2)>0\n$$\n\n$$\nx<-2\\quad\\text{or}\\quad x>0\n$$\n\n$$\n\\dfrac1x\\ge\\dfrac1{x+2}\n$$\n\nSubtrah ihr nennen beide Seiten und behalten beide Domänenausschlüsse , . Da der Zähler positiv ist, gilt dies genau dann, wenn der Nenner positiv ist:\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 16) (x^{2} - 4)>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{4} - 20 x^{2} + 64>0\n$$\n\nFactor.\n\n$$\n(x - 4) (x - 2) (x + 2) (x + 4)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-4 = -2 = 2 = 4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{4} - 20 x^{2} + 64$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,-2)$ | $-$ |\n| $(-2,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -4) \\cup (-2, 2) \\cup (4, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-2<\\frac{x - 1}{3}\\le 4\n$$\n\n**Linkes Teilstück.**\n\n$$\n-2<\\frac{x - 1}{3},\\quad \\frac{x}{3} + \\frac{5}{3}>0,\\quad \\frac{x + 5}{3}>0,\\quad x=-5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{x + 5}{3}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-5, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n\\frac{x - 1}{3}\\le 4,\\quad \\frac{x}{3} - \\frac{13}{3}\\le 0,\\quad \\frac{x - 13}{3}\\le 0,\\quad x=13\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{x - 13}{3}$ |\n| --- | --- |\n| $(-\\infty,13)$ | $-$ |\n| $(13,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(-\\infty, 13]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(-5, 13]\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n15+6u\\le 153\n$$\n\n$$\n6u\\le 138\n$$\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 3}{(x + 1)^{2}}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 3=0\n$$\n\n$$\nx=3,\\quad (x^{2} + 2 x) + 1=0,\\quad (x + 1)^{2}=0,\\quad x=-1\n$$\n\n(die Polstelle $x=-1$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $\\frac{x - 3}{(x + 1)^{2}}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(3, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Themen: 6.1–6.4. Zuordnung: A prüft den Vergleich verschobener Kehrwerte; B prüft das Produkt zweier quadratischer Faktoren; C prüft eine dreiteilige affine Ungleichung; D prüft eine kontextuelle Ungleichung; E prüft eine Betragsungleichung."
+  },
+  {
+    "case_id": "MATH 6.100",
+    "short_letters": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 12",
+    "context_en": "A quality score is $Q(x)=-(x-3)(x-9)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
+    "statements_en": [
+      "The accepted settings are $[3,9]$.",
+      "$Q(6)=9$.",
+      "The maximum occurs at $x=6$.",
+      "$Q(x)>0$ includes $x=3$.",
+      "$Q(x)<0$ for $x<3$ or $x>9$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 9) (x - 3)\\ge 0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 12 x - 27\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n[3, 9]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe stem gives\n\n$$Q(x)=-(x-3)(x-9)$$\n\nSubstitute $x=6$:\n\n$$Q(6)=-( 6-3 )( 6-9 )$$\n\n$$Q(6)=(-(3))(-3)$$\n\n$$Q(6)=9$$\n\nso the claim $Q(6)=9$ holds.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe quality score is\n\n$$Q(x) = -(x-3)(x-9)$$\n\n$$-(x-3)(x-9) = -x^{2}+12x-27$$\n\nThis is a downward-opening parabola. The vertex (maximum) lies halfway between the roots.\n\n$$x = \\frac{3+9}{2}$$\n\n$$\\frac{3+9}{2} = 6$$\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the claimed inequality.\n\n$$\n- (x - 9) (x - 3)>0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 12 x - 27>0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(3, 9)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 9) (x - 3)<0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 12 x - 27<0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(-\\infty, 3) \\cup (9, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(6)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
+    "title_de_existing": "Klausuraufgaben – 12",
+    "context_de_existing": "Ein Qualitätsscore lautet $Q(x)=-(x-3)(x-9)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
+    "statements_de_existing": [
+      "Die akzeptierten Einstellungen sind $[3,9]$.",
+      "$Q(6)=9$.",
+      "Das Maximum liegt bei $x=6$.",
+      "$Q(x)>0$ schließt $x=3$ ein.",
+      "$Q(x)<0$ für $x<3$ oder $x>9$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-3)(x-9)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[3,9]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze den Mittelpunkt $x=6$ ein:\n\n$$\nQ(6)=(-(6-3))((6-9))=-(6-3)(6-9)\n$$\n\n$$\n6-3=3,\\qquad 6-9=-3\n$$\n\n$$\nQ(6)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{3+9}{2}=6\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=3$ gilt $Q(3)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAußerhalb der Wurzeln ist das Produkt $(x-3)(x-9)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<3$ oder $x>9$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-3)(x-9)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=6$ mit $Q(6)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
+  },
+  {
+    "case_id": "MATH 6.104",
+    "short_letters": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 16",
+    "context_en": "A quality score is $Q(x)=-(x-4)(x-10)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
+    "statements_en": [
+      "The accepted settings are $[4,10]$.",
+      "$Q(7)=9$.",
+      "The maximum occurs at $x=7$.",
+      "$Q(x)>0$ includes $x=4$.",
+      "$Q(x)<0$ for $x<4$ or $x>10$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 10) (x - 4)\\ge 0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 14 x - 40\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n[4, 10]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe stem gives\n\n$$Q(x)=-(x-4)(x-10)$$\n\nSubstitute $x=7$:\n\n$$Q(7)=-( 7-4 )( 7-10 )$$\n\n$$Q(7)=(-(3))(-3)$$\n\n$$Q(7)=9$$\n\nso the claim $Q(7)=9$ holds.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$Q(x) = -(x-4)(x-10)$$\n\n$$-(x-4)(x-10) = -x^{2}+14x-40$$\n\n$$x = \\dfrac{4+10}{2}$$\n\n$$\\dfrac{4+10}{2} = 7$$\n\nThe computed bound matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the claimed inequality.\n\n$$\n- (x - 10) (x - 4)>0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 14 x - 40>0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(4, 10)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 10) (x - 4)<0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 14 x - 40<0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(-\\infty, 4) \\cup (10, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(7)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
+    "title_de_existing": "Klausuraufgaben – 16",
+    "context_de_existing": "Ein Qualitätsscore lautet $Q(x)=-(x-4)(x-10)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
+    "statements_de_existing": [
+      "Die akzeptierten Einstellungen sind $[4,10]$.",
+      "$Q(7)=9$.",
+      "Das Maximum liegt bei $x=7$.",
+      "$Q(x)>0$ schließt $x=4$ ein.",
+      "$Q(x)<0$ für $x<4$ oder $x>10$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-4)(x-10)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[4,10]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze den Mittelpunkt $x=7$ ein:\n\n$$\nQ(7)=(-(7-4))((7-10))=-(7-4)(7-10)\n$$\n\n$$\n7-4=3,\\qquad 7-10=-3\n$$\n\n$$\nQ(7)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{4+10}{2}=7\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=4$ gilt $Q(4)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAußerhalb der Wurzeln ist das Produkt $(x-4)(x-10)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<4$ oder $x>10$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-4)(x-10)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=7$ mit $Q(7)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
+  },
+  {
+    "case_id": "MATH 6.108",
+    "short_letters": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 20",
+    "context_en": "A quality score is $Q(x)=-(x-5)(x-11)$. The process accepts settings with $Q(x)\\ge0$ and gives its highest score on the axis of symmetry. The roots, endpoint inclusion, and maximum must all be read from this same downward-opening quadratic.",
+    "statements_en": [
+      "The accepted settings are $[5,11]$.",
+      "$Q(8)=9$.",
+      "The maximum occurs at $x=8$.",
+      "$Q(x)>0$ includes $x=5$.",
+      "$Q(x)<0$ for $x<5$ or $x>11$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 11) (x - 5)\\ge 0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 16 x - 55\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)\\ge 0\n$$\n\nThe roots are the critical points.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n[5, 11]\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → True\n\nThe stem gives\n\n$$Q(x)=-(x-5)(x-11)$$\n\nSubstitute $x=8$:\n\n$$Q(8)=-( 8-5 )( 8-11 )$$\n\n$$Q(8)=(-(3))(-3)$$\n\n$$Q(8)=9$$\n\nso the claim $Q(8)=9$ holds.\n\nSo the statement is True.\n",
+      "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$Q(x) = -(x-5)(x-11)$$\n\n$$-(x-5)(x-11) = -x^{2}+16x-55$$\n\n$$x = \\dfrac{5+11}{2}$$\n\n$$\\dfrac{5+11}{2} = 8$$\n\nThe computed bound matches the claim.\n\nSo the statement is True.",
+      "**D.** → False\n\nStart from the claimed inequality.\n\n$$\n- (x - 11) (x - 5)>0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 16 x - 55>0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(5, 11)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the claimed inequality.\n\n$$\n- (x - 11) (x - 5)<0\n$$\n\nBring every term to one side.\n\n$$\n- x^{2} + 16 x - 55<0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)<0\n$$\n\nThe roots are the critical points.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nThe solution set is\n\n$$\n(-\\infty, 5) \\cup (11, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Shared context topic 6.2.\n\nShared solution:\n1. Use the single shared stem for topic 6.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared quadratic sign model supplies interval and vertex facts.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(8)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True.",
+    "title_de_existing": "Klausuraufgaben – 20",
+    "context_de_existing": "Ein Qualitätsscore lautet $Q(x)=-(x-5)(x-11)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
+    "statements_de_existing": [
+      "Die akzeptierten Einstellungen sind $[5,11]$.",
+      "$Q(8)=9$.",
+      "Das Maximum liegt bei $x=8$.",
+      "$Q(x)>0$ schließt $x=5$ ein.",
+      "$Q(x)<0$ für $x<5$ oder $x>11$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-5)(x-11)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[5,11]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Richtig\n\nSetze den Mittelpunkt $x=8$ ein:\n\n$$\nQ(8)=(-(8-5))((8-11))=-(8-5)(8-11)\n$$\n\n$$\n8-5=3,\\qquad 8-11=-3\n$$\n\n$$\nQ(8)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Richtig\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{5+11}{2}=8\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=5$ gilt $Q(5)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\nAußerhalb der Wurzeln ist das Produkt $(x-5)(x-11)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<5$ oder $x>11$.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-5)(x-11)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=8$ mit $Q(8)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
+  },
+  {
+    "case_id": "MATH 6.110",
+    "short_letters": [
+      1,
+      2
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 22",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A box office sells standing tickets for 28 EUR and seated tickets for 45 EUR. Seated tickets must outnumber standing tickets in the exact ratio $2:1$, total tickets sold cannot exceed 40, and revenue must be at least 1,200 EUR. Then the only possible whole numbers of standing tickets are 12 and 13.",
+      "The temperature in a kiln after $x$ minutes is $T(x)=-x^{2}+20x+80$ degrees Celsius. The kiln is hotter than $176^{\\circ}\\mathrm{C}$ between 8 and 12 minutes.",
+      "A courier charges an 8 EUR base fare plus 0.35 EUR per kilometre, and then adds a flat 15\\% fuel surcharge on the entire fare. With a budget of 40 EUR, every trip of at most 80 km is affordable.",
+      "A bakery makes cakes that each require $0.5$ kg of flour at 2 EUR/kg, $0.2$ kg of sugar at 3 EUR/kg, 3 eggs at 0.40 EUR each, and 1.50 EUR of energy. With a budget of 600 EUR and refrigerated storage for at most 200 eggs, the maximum number of cakes that can be produced is less than 70.",
+      "The inequality $\\sqrt{3x-2}\\le|x-4|$ holds if and only if $x\\le 2$ or $x\\ge 9$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n3s\\le 40\n$$\n\n$$\ns\\le 13.\n$$\n\n$$28s+45\\cdot(2s) = 118s$$\n\n$$118s\\ge 1200$$\n\n$$\ns\\ge\\dfrac{1200}{118}\\approx 10.17.\n$$\n\n$$\ns=11\n$$\n\n$$\n1298\\ge 1200\n$$\n\nLet be the number of standing tickets (a nonnegative integer). Then there are seated tickets and tickets in total. **Capacity** **Revenue** So . The claim omits , which already yields revenue .\n\nSo the statement is False.",
+      "**B.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n-x^{2}+20x+80>176\n$$\n\n$$\n-x^{2}+20x-96>0\n$$\n\n$$\nx^{2}-20x+96<0\n$$\n\n$$\n(x-8)(x-12)<0\n$$\n\n$$\n8<x<12.\n$$\n\n$$T(8) = T(12)$$\n\n$$T(12) = 176$$\n\n“Hotter than” is a strict inequality, so the open interval matches “between 8 and 12 minutes”. At the endpoints , which is not hotter.\n\nSo the statement is True.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.15\\bigl(8+0.35d\\bigr)\\le 40\n$$\n\n$$\n8+0.35d\\le\\dfrac{40}{1.15}=\\dfrac{800}{23}\n$$\n\n$$\n0.35d\\le\\dfrac{800}{23}-8=\\dfrac{616}{23}\n$$\n\n$$\nd\\le\\dfrac{616}{23\\cdot 0.35}=\\dfrac{1760}{23}\\approx 76.52.\n$$\n\nLet be the distance in kilometres. Trips of 80 km exceed the budget.\n\nSo the statement is False.",
+      "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$0.5\\cdot 2 = 1$$\n\n$$0.2\\cdot 3 = 0.6$$\n\n$$3\\cdot 0.40 = 1.2$$\n\n$$1 + 0.6 = 1.6$$\n\n$$1.6 + 1.2 = 2.8$$\n\n$$2.8 + 1.5 = 4.3$$\n\n$$\n4.3n\\le 600\n$$\n\n$$\nn\\le\\dfrac{600}{4.3}\\approx 139.5\n$$\n\n$$\n3n\\le 200\n$$\n\n$$\nn\\le 66.\\overline{6}\n$$\n\n$$\nn\\le 66\n$$\n\nReading the arithmetic against the claim confirms the truth value.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n3x-2\\le(x-4)^{2}=x^{2}-8x+16\n$$\n\n$$\n0\\le x^{2}-11x+18=(x-2)(x-9).\n$$\n\n$$3x-2\\ge 0$$\n\n$$x\\ge\\dfrac{2}{3}$$\n\n$$\nx\\ge 4\n$$\n\n$$\n\\sqrt{3x-2}\\le x-4\n$$\n\n$$\nx\\ge 9\n$$\n\n$$\n\\dfrac{2}{3}\\le x<4\n$$\n\n$$\n\\sqrt{3x-2}\\le 4-x\n$$\n\n$$\n(x-2)(x-9)\\ge 0\n$$\n\n$$\nx\\le 2\n$$\n\n$$\n\\dfrac{2}{3}\\le x\\le 2\n$$\n\n$$\n\\sqrt{3x-2}\\le|x-4|\n$$\n\nDomain: . **Case .** Then . Squaring: On this forces . **Case .** Then . Squaring again yields , hence on this half-line. Combined with the domain: . The full solution is . The claim or wrongly includes .\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Independent exam claims: a 2:1 ticket-mix revenue problem with an integer capacity cap, a quadratic kiln-temperature window, a courier fare with a percentage surcharge, a bakery limited by budget and egg storage, and a square-root versus absolute-value inequality requiring case splits. Each statement stands alone; domain restrictions and integer cutoffs decide several false claims.",
+    "title_de_existing": "Klausuraufgaben – 22",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Eine Theaterkasse verkauft Stehplätze für $28$ EUR und Sitzplätze für $45$ EUR. Sitzplätze müssen Stehplätze im genauen Verhältnis $2:1$ übertreffen, insgesamt dürfen höchstens $40$ Tickets verkauft werden, und der Umsatz muss mindestens $1{,}200$ EUR betragen. Dann sind die einzig möglichen ganzen Anzahlen von Stehplätzen $12$ und $13$.",
+      "Die Temperatur in einem Ofen nach $x$ Minuten beträgt $T(x)=-x^{2}+20x+80$ Grad Celsius. Der Ofen ist heißer als $176^{\\circ}\\mathrm{C}$ zwischen $8$ und $12$ Minuten.",
+      "Ein Kurier berechnet $8$ EUR Grundpreis plus $0{,}35$ EUR pro Kilometer und schlägt dann eine pauschale Kraftstoffzulage von $15\\%$ auf den gesamten Fahrpreis auf. Bei einem Budget von $40$ EUR ist jede Fahrt von höchstens $80$ km bezahlbar.",
+      "Eine Bäckerei backt Kuchen, die je $0{,}5$ kg Mehl zu $2$ EUR/kg, $0{,}2$ kg Zucker zu $3$ EUR/kg, $3$ Eier zu je $0{,}40$ EUR und $1{,}50$ EUR Energie benötigen. Bei einem Budget von $600$ EUR und Kühlkapazität für höchstens $200$ Eier ist die maximale Anzahl produzierbarer Kuchen kleiner als $70$.",
+      "Die Ungleichung $\\sqrt{3x-2}\\le|x-4|$ gilt genau dann, wenn $x\\le 2$ oder $x\\ge 9$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nEs sei $s$ die Anzahl der Stehplätze (nichtnegative ganze Zahl). Dann gibt es $2s$ Sitzplätze und insgesamt $3s$ Tickets.\n\nKapazität:\n\n$$\n3s\\le 40 \\Rightarrow s\\le 13\n$$\n\nUmsatz:\n\n$$\n28s+45\\cdot(2s)=118s\\ge 1200 \\Rightarrow s\\ge\\dfrac{1200}{118}\\approx 10{,}17\n$$\n\nAlso kommen $s=11,12,13$ in Frage. Bei $s=11$ ist der Umsatz $1298\\ge 1200$. Die Behauptung lässt $11$ weg.\n\nDie Aussage ist falsch.",
+      "**B.** → Richtig\n\n$$\n-x^{2}+20x+80>176\n$$\n\n$$\n-x^{2}+20x-96>0\n$$\n\n$$\nx^{2}-20x+96<0\n$$\n\n$$\n(x-8)(x-12)<0\n$$\n\n$$\n8<x<12\n$$\n\n„Heißer als“ ist streng; an den Endpunkten gilt $T(8)=T(12)=176$, also nicht heißer. Das offene Intervall passt.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$\n1{,}15\\bigl(8+0{,}35d\\bigr)\\le 40\n$$\n\n$$\n8+0{,}35d\\le\\dfrac{40}{1{,}15}=\\dfrac{800}{23}\n$$\n\n$$\nd\\le\\dfrac{1760}{23}\\approx 76{,}52\n$$\n\nFahrten von $80$ km überschreiten das Budget.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nKosten pro Kuchen:\n\n$$\n0{,}5\\cdot 2 + 0{,}2\\cdot 3 + 3\\cdot 0{,}40 + 1{,}50 = 4{,}3\n$$\n\nBudget: $4{,}3n\\le 600 \\Rightarrow n\\le\\dfrac{600}{4{,}3}\\approx 139{,}5$.\n\nEier: $3n\\le 200 \\Rightarrow n\\le 66.\\overline{6}$, also $n\\le 66$.\n\nDas Maximum $66$ ist kleiner als $70$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDefinitionsmenge: $3x-2\\ge 0$, also $x\\ge\\dfrac{2}{3}$.\n\n**Fall $x\\ge 4$:** Dann $\\sqrt{3x-2}\\le x-4$. Quadrieren liefert $(x-2)(x-9)\\ge 0$, zusammen mit $x\\ge 4$ also $x\\ge 9$.\n\n**Fall $\\dfrac{2}{3}\\le x<4$:** Dann $\\sqrt{3x-2}\\le 4-x$. Quadrieren liefert ebenfalls $(x-2)(x-9)\\ge 0$, zusammen mit diesem Intervall also $\\dfrac{2}{3}\\le x\\le 2$.\n\nDie vollständige Lösungsmenge ist $\\bigl[\\tfrac{2}{3},2\\bigr]\\cup[9,\\infty)$. Die Behauptung $x\\le 2$ oder $x\\ge 9$ schließt fälschlich Werte unter $\\tfrac{2}{3}$ ein.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Unabhängige Klausurbehauptungen: ein Ticket-Mix im Verhältnis $2:1$ mit ganzzahliger Kapazitätsgrenze, ein quadratisches Ofentemperaturfenster, ein Kuriertarif mit prozentualem Zuschlag, eine durch Budget und Eierlagerung begrenzte Bäckerei sowie eine Ungleichung Quadratwurzel gegen Absolutbetrag mit Fallunterscheidung. Jede Aussage steht für sich; Definitionsmengen und Ganzzahlschranken entscheiden über mehrere falsche Behauptungen."
+  },
+  {
+    "case_id": "MATH 6.121",
+    "short_letters": [
+      4
+    ],
+    "solution_overview_short": true,
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "title_en": "Exam-style tasks - 33",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "Guy-wire tension on a radio mast is $T(w)=50+0.8w^{2}$ under wind speed $w\\ge 0$. The cable is rated for at most 200. Then the mast is safe for every wind speed in $[0,14]$.",
+      "The inequality $\\sqrt{x+3}-\\sqrt{x}\\le 1$ holds for every $x\\ge 0$.",
+      "A freight elevator may carry at most 900 kg. Each pallet weighs 85 kg and the operator weighs 70 kg. Floor space allows at most 10 pallets. Then at most 8 pallets may be loaded.",
+      "The strict inequality $(x-2)^{2}(x+1)>0$ has solution set $(-1,\\infty)\\setminus\\{2\\}$.",
+      "The inequality $|x+4|+|x-1|<7$ has solution set $(-5,2)$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nRequire\n\n$$T(w) = 50+0.8w^{2}$$\n\n$$50+0.8w^{2}\\le 200$$\n\n$$\n0.8w^{2}\\le 150\n$$\n\n$$\nw^{2}\\le 187.5\n$$\n\n$$\nw\\le \\sqrt{187.5}\\approx 13.69\n$$\n\nSince $14>13.69$, the closed interval $[0,14]$ is not entirely safe.\n\nSo the statement is False.",
+      "**B.** → False\n\nStart from the radical inequality.\n\n$$\n- \\sqrt{x} + \\sqrt{x + 3}\\le 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\nx + 3\\ge 0\n$$\n\n$$\nx\\in [-3, \\infty)\n$$\n\n$$\nx\\ge 0\n$$\n\n$$\nx\\in [0, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n- 2 \\sqrt{x} \\sqrt{x + 3} + 2 x + 3\\le 1\n$$\n\n$$\n- 2 \\sqrt{x} \\sqrt{x + 3} + 2 x + 2\\le 0\n$$\n\n$$\n2 (- \\sqrt{x} \\sqrt{x + 3} + x + 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $2 (- \\sqrt{x} \\sqrt{x + 3} + x + 1)$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[1, \\infty)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n85n+70\\le 900\n$$\n\n$$\n85n\\le 830\n$$\n\n$$\nn\\le\\dfrac{830}{85}=9.764\\ldots\n$$\n\n$$\nn\\le 9\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nLoad limit with operator: so . Floor space allows , but the load limit permits pallets, not merely .\n\nSo the statement is False.",
+      "**D.** → True\n\nStart from the claimed inequality.\n\n$$\n(x - 2)^{2} (x + 1)>0\n$$\n\nBring every term to one side.\n\n$$\nx^{3} - 3 x^{2} + 4>0\n$$\n\nFactor.\n\n$$\n(x - 2)^{2} (x + 1)>0\n$$\n\nThe roots are the critical points.\n\n$$\nx=-1\n$$\n\n$$\nx=2\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x^{3} - 3 x^{2} + 4$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,2)$ | $+$ |\n| $(2,\\infty)$ | $+$ |\n\nThe solution set is\n\n$$\n(-1, 2) \\cup (2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → True\n\nStart from the absolute-value sum inequality.\n\n$$\n|x + 4|+|x - 1|<7\n$$\n\nThe expression changes formula at the kink points $x=-4$ and $x=1$.\n\nOn $x\\le -4$:\n\n$$\n|x + 4|+|x - 1|=- 2 x - 3\n$$\n\nSolving $- 2 x - 3<7$ on this piece gives\n\n$$\n(-5, -4]\n$$\n\nOn $-4\\le x\\le 1$:\n\n$$\n|x + 4|+|x - 1|=5\n$$\n\nSolving $5<7$ on this piece gives\n\n$$\n[-4, 1]\n$$\n\nOn $x\\ge 1$:\n\n$$\n|x + 4|+|x - 1|=2 x + 3\n$$\n\nSolving $2 x + 3<7$ on this piece gives\n\n$$\n[1, 2)\n$$\n\nUnion of the admissible pieces:\n\n$$\n(-5, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Independent claims: mast guy-wire tension, a difference of square roots, elevator pallet loading, a squared-factor cubic sign chart, and a two-kink absolute-value sum.",
+    "title_de_existing": "Klausuraufgaben – 33",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Guy-Wire-Spannung auf einem $T(w)=50+0.8w^{2}$ unter Windgeschwindigkeit $w\\ge 0$. Das Kabel ist für höchstens 200 ausgelegt. Dann ist der Mast sicher für jede Windgeschwindigkeit in $[0,14]$.",
+      "Die Ungleichung $\\sqrt{x+3}-\\sqrt{x}\\le 1$ Haltet für jeden $x\\ge 0$.",
+      "Ein Lastenaufzug darf höchstens 900 kg befördern. Jede Palette wiegt 85 kg, der Bediener 70 kg. Der Platz erlaubt höchstens 10 Paletten. Dann dürfen höchstens 8 Paletten geladen werden.",
+      "Die strenge Ungleichheit $(x-2)^{2}(x+1)>0$ hat die Lösungsmenge $(-1,\\infty)\\setminus\\{2\\}$.",
+      "Die Ungleichung $|x+4|+|x-1|<7$ hat die Lösungsmenge $(-5,2)$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nForderung:\n\n$$T(w) = 50+0.8w^{2}$$\n\n$$50+0.8w^{2}\\le 200$$\n\n$$\n0.8w^{2}\\le 150\n$$\n\n$$\nw^{2}\\le 187.5\n$$\n\n$$\nw\\le \\sqrt{187.5}\\approx 13.69\n$$\n\nSince $14>13.69$Das geschlossene Intervall $[0,14]$ ist nicht ganz sicher.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n- \\sqrt{x} + \\sqrt{x + 3}\\le 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 3\\ge 0,\\quad x\\in [-3, \\infty),\\quad x\\ge 0,\\quad x\\in [0, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n- 2 \\sqrt{x} \\sqrt{x + 3} + 2 x + 3\\le 1,\\quad - 2 \\sqrt{x} \\sqrt{x + 3} + 2 x + 2\\le 0,\\quad 2 (- \\sqrt{x} \\sqrt{x + 3} + x + 1)\\le 0,\\quad x=1\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $2 (- \\sqrt{x} \\sqrt{x + 3} + x + 1)$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[1, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n85n+70\\le 900\n$$\n\n$$\n85n\\le 830\n$$\n\n$$\nn\\le\\dfrac{830}{85}=9.764\\ldots\n$$\n\n$$\nn\\le 9\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nLoad Limit mit Operator: so . Bodenraum erlaubt, aber die Ladegrenze erlaubt Paletten, nicht nur.\n\nDie Aussage ist falsch.",
+      "**D.** → Richtig\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x - 2)^{2} (x + 1)>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{3} - 3 x^{2} + 4>0\n$$\n\nFactor.\n\n$$\n(x - 2)^{2} (x + 1)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-1 = 2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{3} - 3 x^{2} + 4$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,2)$ | $+$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-1, 2) \\cup (2, \\infty)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
+      "**E.** → Richtig\n\nBeginne mit der Summenungleichung.\n\n$$\n|x + 4|+|x - 1|<7\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-4$ und $x=1$.\n\nAuf $x\\le -4$:\n\n$$\n|x + 4|+|x - 1|=- 2 x - 3 \\Rightarrow (-5, -4]\n$$\n\nAuf $-4\\le x\\le 1$:\n\n$$\n|x + 4|+|x - 1|=5 \\Rightarrow [-4, 1]\n$$\n\nAuf $x\\ge 1$:\n\n$$\n|x + 4|+|x - 1|=2 x + 3 \\Rightarrow [1, 2)\n$$\n\nVereinigung der Teilstücke:\n\n$$\n(-5, 2)\n$$\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Unabhängige Aussagen: Mast-Draht-Draht-Spannung,- Effekten-Span Angestellten"
+  },
+  {
+    "case_id": "MATH 6.127",
+    "short_letters": [
+      3
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "title_en": "Exam-style tasks - 39",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "An observatory may open when cloud cover $c\\%$ satisfies $c\\le 40$ and humidity $h=30+0.5c$ satisfies $|h-45|\\le 15$. Then every admissible cloud cover lies in $0\\le c\\le 40$.",
+      "A trampoline park has 12 supervisor slots and 50 pairs of grip socks (2 pairs required per session). Management wants at least 20 sessions in a block. Then such a block is feasible.",
+      "The inequality $\\sqrt{|x|-1}<2$ has solution set $(-5,-1]\\cup[1,5)$.",
+      "The inequality $|x+2|-|x-3|\\ge 1$ has solution set $[1,\\infty)$.",
+      "Posters need area at least $0.5\\,\\mathrm{m}^{2}$ on a $0.7\\,\\mathrm{m}$ wide roll (so height $h$ metres satisfies $0.7h\\ge 0.5$) and ink use $12h\\le 10$. Then every admissible $h$ satisfies $0.7\\le h\\le 0.85$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\nc\\le 40\n$$\n\n$$\nc - 40\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\nh=30+0.5c\n$$\n\n$$\n|h-45|\\le 15\n$$\n\n$$\n0\\le c\\le 40\n$$\n\nStart from the claimed inequality. Bring every term to one side. The solution set is which matches the claimed set.\n\nSo the statement is True.",
+      "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nSupervisor slots:\n\n$$\nn\\le 12\n$$\n\nGrip socks (2 pairs per session):\n\n$$2n\\le 50$$\n\n$$n\\le 25$$\n\nWanted block size:\n\n$$\nn\\ge 20\n$$\n\nBut\n\n$$\nn\\le \\min\\{12,25\\}\n$$\n\n$$\nn = 12\n$$\n\nand $12<20$, so no such block is feasible.\n\nSo the statement is False.",
+      "**C.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{|x|-1}<2\n$$\n\nDomain:\n\n$$|x|-1\\ge 0$$\n\n$$|x|\\ge 1$$\n\nBoth sides nonnegative, so square:\n\n$$\n|x|-1<4\n$$\n\n$$\n|x|<5\n$$\n\n$$\n-5<x<5\n$$\n\nIntersect with the domain $|x|\\ge 1$:\n\n$$\n(-5,-1]\\cup[1,5)\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+      "**D.** → True\n\nStart from the absolute-value difference inequality.\n\n$$\n|x + 2|-|x - 3|\\ge 1\n$$\n\nThe expression changes formula at the kink points $x=-2$ and $x=3$.\n\nOn $x\\le -2$:\n\n$$\n|x + 2|-|x - 3|=-5\n$$\n\nSolving $-5\\ge 1$ on this piece gives\n\n$$\n\\emptyset\n$$\n\nOn $-2\\le x\\le 3$:\n\n$$\n|x + 2|-|x - 3|=2 x - 1\n$$\n\nSolving $2 x - 1\\ge 1$ on this piece gives\n\n$$\n[1, 3]\n$$\n\nOn $x\\ge 3$:\n\n$$\n|x + 2|-|x - 3|=5\n$$\n\nSolving $5\\ge 1$ on this piece gives\n\n$$\n[3, \\infty)\n$$\n\nUnion of the admissible pieces:\n\n$$\n[1, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+      "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nArea requirement:\n\n$$0.7h\\ge 0.5$$\n\n$$h\\ge \\dfrac{0.5}{0.7}=\\dfrac{5}{7}$$\n\nInk constraint:\n\n$$12h\\le 10$$\n\n$$h\\le \\dfrac{10}{12}=\\dfrac{5}{6}$$\n\nFeasible heights:\n\n$$\n\\dfrac{5}{7}\\le h\\le \\dfrac{5}{6}\n$$\n\nThe claim does not match this interval.\n\nSo the statement is False."
+    ],
+    "solution_overview_en": "Independent claims: observatory weather gates, an infeasible trampoline session plan, a square root of an absolute value, a difference of absolute values, and poster print constraints.",
+    "title_de_existing": "Klausuraufgaben – 39",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
+    "statements_de_existing": [
+      "Ein Observatorium kann sich öffnen, wenn die Wolkendecke $c\\%$ satisfies $c\\le 40$ und Feuchtigkeit $h=30+0.5c$ satisfies $|h-45|\\le 15$Dann liegt jede zulässige Wolkendecke in $0\\le c\\le 40$.",
+      "Für die ersten drei Länder mit dem ersten Ziel für die erste Dekade: Das Management möchte mindestens 20 Sitzungen in einem Block. Dann ist ein solcher Block machbar.",
+      "Die Ungleichung $\\sqrt{|x|-1}<2$ hat die Lösungsmenge $(-5,-1]\\cup[1,5)$.",
+      "Die Ungleichung $|x+2|-|x-3|\\ge 1$ hat die Lösungsmenge $[1,\\infty)$.",
+      ", mit der , , den er gegen , nach betrieb den mit , , , , , , , , , , , , , , , , , , , , , , , , , worauf ,weck 2.000 , christ , , , , , , , , , , , , , $0.5\\,\\mathrm{m}^{2}$ on a $0.7\\,\\mathrm{m}$ breite Rolle (also Höhe) $h$ metres satisfies $0.7h\\ge 0.5$) und ink use $12h\\le 10$. Nach dem $h$ satisfies $0.7\\le h\\le 0.85$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Richtig\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nc\\le 40\n$$\n\n$$\nc - 40\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\nh=30+0.5c\n$$\n\n$$\n|h-45|\\le 15\n$$\n\n$$\n0\\le c\\le 40\n$$\n\nStarte von der behaupteten Ungleichung. Bringe alle Terme auf eine Seite. Die Lösungsmenge ist mit der behaupteten Menge .\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSupervisor slots:\n\n$$\nn\\le 12\n$$\n\nGriffsocken (2 Paare pro Sitzung):\n\n$$\n2n\\le 50\n$$\n\n$$\nn\\le 25\n$$\n\nWanted block size:\n\n$$\nn\\ge 20\n$$\n\nBut\n\n$$\nn\\le \\min\\{12,25\\}\n$$\n\n$$\nn = 12\n$$\n\nund in bezogen und $12<20$So der Block ist also nicht möglich.\n\nDie Aussage ist falsch.",
+      "**C.** → Richtig\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{|x|-1}<2\n$$\n\nSpezifisches\n\n$$\n|x|-1\\ge 0\n$$\n\n$$\n|x|\\ge 1\n$$\n\nBeide Seiten nicht negativ, also quadratisch:\n\n$$\n|x|-1<4\n$$\n\n$$\n|x|<5\n$$\n\n$$\n-5<x<5\n$$\n\nIntersektion mit der Domain $|x|\\ge 1$:\n\n$$\n(-5,-1]\\cup[1,5)\n$$\n\nMit der Behauptung ist einverstanden.\n\nDie Aussage ist wahr.",
+      "**D.** → Richtig\n\nStarte von der Betragsdifferenz-Ungleichung.\n\n$$\n|x + 2|-|x - 3|\\ge 1\n$$\n\nDer Ausdruck ändert die Formel an den Knickpunkten $x=-2$ und $x=3$.\n\nAuf $x\\le -2$:\n\n$$\n|x + 2|-|x - 3|=-5 \\Rightarrow \\emptyset\n$$\n\nAuf $-2\\le x\\le 3$:\n\n$$\n|x + 2|-|x - 3|=2 x - 1 \\Rightarrow [1, 3]\n$$\n\nAuf $x\\ge 3$:\n\n$$\n|x + 2|-|x - 3|=5 \\Rightarrow [3, \\infty)\n$$\n\nVereinigung der Teilstücke:\n\n$$\n[1, \\infty)\n$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nan\n\n$$0.7h\\ge 0.5$$\n\n$$h\\ge \\dfrac{0.5}{0.7}=\\dfrac{5}{7}$$\n\nInk constraint:\n\n$$12h\\le 10$$\n\n$$h\\le \\dfrac{10}{12}=\\dfrac{5}{6}$$\n\nFeasible heights:\n\n$$\n\\dfrac{5}{7}\\le h\\le \\dfrac{5}{6}\n$$\n\nDer Claim verlaufe mit dem Intervall.\n\nDie Aussage ist falsch."
+    ],
+    "solution_overview_de_existing": "Unabhängige Aussagen: Observatorium Wettertore, ein undurchführbar Trampolin-Sitzung, eine Quadratwurzel aus einem absoluten Wert, eine Differenz der absoluten Werte und Posterdruck Zwänge."
+  },
+  {
+    "case_id": "MATH 6.128",
+    "short_letters": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "solution_overview_short": false,
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    "title_en": "Exam-style tasks - 40",
+    "context_en": "Evaluate each statement. Mark it TRUE or FALSE.",
+    "statements_en": [
+      "A canoe rental costs 25 EUR plus 8 EUR per hour and must end within 6 hours of closing time. With an 80 EUR budget, a 7-hour rental is still possible.",
+      "The inequality $|x^{2}-9|\\le 7$ has solution set $[-4,-1]\\cup[1,4]$.",
+      "A survey drone’s remaining battery minutes after flying $d$ kilometres are $B(d)=40-0.5d^{2}$. Needing $B(d)\\ge 10$, every distance up to 8 km is admissible.",
+      "A product needs 2 hours on machine A and 3 hours on machine B. Machine A has 100 hours available and machine B has 120. Then the factory can produce 45 units.",
+      "The inequality $\\sqrt{3x+1}\\le 2x-1$ holds if and only if $x\\ge\\dfrac{7}{4}$."
+    ],
+    "tactical_explanations_en": [
+      "**A.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n25+8t\\le 80\n$$\n\n$$\n8t\\le 55\n$$\n\n$$\nt\\le 6.875\n$$\n\n$$\nt\\le 6\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nBudget: Closing time forces the separate constraint . A -hour rental violates the closing limit even though is below a misread budget figure, so the claim is false.\n\nSo the statement is False.",
+      "**B.** → False\n\nStart from the absolute-value inequality.\n\n$$\n|{x^{2} - 9}|\\le 7\n$$\n\nAn absolute value below a nonnegative constant unfolds to a compound inequality.\n\n$$\n-7\\le x^{2} - 9\\le 7\n$$\n\nSolve the left half.\n\n$$\nx^{2} - 9\\ge -7\n$$\n\n$$\nx\\in (-\\infty, - \\sqrt{2}] \\cup [\\sqrt{2}, \\infty)\n$$\n\nSolve the right half.\n\n$$\nx^{2} - 9\\le 7\n$$\n\n$$\nx\\in [-4, 4]\n$$\n\nIntersect both halves.\n\n$$\n[-4, - \\sqrt{2}] \\cup [\\sqrt{2}, 4]\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+      "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nRequire\n\n$$B(d) = 40-0.5d^{2}$$\n\n$$40-0.5d^{2}\\ge 10$$\n\n$$\n30\\ge 0.5d^{2}\n$$\n\n$$\nd^{2}\\le 60\n$$\n\n$$\nd\\le \\sqrt{60}\\approx 7.746\n$$\n\nSo distance $d=8$ is not admissible.\n\nSo the statement is False.",
+      "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\nMachine A:\n\n$$2n\\le 100$$\n\n$$n\\le 50$$\n\nMachine B:\n\n$$3n\\le 120$$\n\n$$n\\le 40$$\n\nFeasible maximum:\n\n$$\nn\\le \\min\\{50,40\\}\n$$\n\n$$\nn = 40\n$$\n\nProducing 45 units exceeds this maximum.\n\nSo the statement is False.",
+      "**E.** → True\n\nStart from the radical inequality.\n\n$$\n\\sqrt{3 x + 1}\\le 2 x - 1\n$$\n\nRequire every radicand to be nonnegative (domain).\n\n$$\n3 x + 1\\ge 0\n$$\n\n$$\nx\\in [- \\frac{1}{3}, \\infty)\n$$\n\n**Case when the non-radical side is negative.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter for non-strict inequalities.\n\n**Case when the non-radical side is nonnegative.**\n\nBoth sides are nonnegative, so squaring preserves the inequality direction.\n\n$$\n3 x + 1\\le 4 x^{2} - 4 x + 1\n$$\n\n$$\n- 4 x^{2} + 7 x\\le 0\n$$\n\n$$\n- x (4 x - 7)\\le 0\n$$\n\n$$\nx=0\n$$\n\n$$\nx=\\frac{7}{4}\n$$\n\nSign chart on the open intervals:\n\n| Interval | Sign of $x (7 - 4 x)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $-$ |\n| $(0,\\frac{7}{4})$ | $+$ |\n| $(\\frac{7}{4},\\infty)$ | $-$ |\n\nIntersecting the squared case with the domain and the sign case gives\n\n$$\n[\\frac{7}{4}, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True."
+    ],
+    "solution_overview_en": "Independent claims: canoe rental with a hard closing time, a biquadratic absolute-value band, drone battery range, dual machine-hour caps, and a square-root inequality with a fractional threshold.",
+    "title_de_existing": "Klausuraufgaben – 40",
+    "context_de_existing": "Bewerte jede Aussage. Markiere sie als richtig oder falsch.",
+    "statements_de_existing": [
+      "Eine Kanuvermietung kostet 25 EUR plus 8 EUR pro Stunde und muss innerhalb von 6 Stunden nach Schließzeit enden. Mit einem Budget von 80 EUR ist eine 7-Stunden-Miete noch möglich.",
+      "Die Ungleichung $|x^{2}-9|\\le 7$ hat die Lösungsmenge $[-4,-1]\\cup[1,4]$.",
+      "Die verbleibende Akkuzeit einer Vermessungsdrohne nach $d$ Kilometern Flug ist $B(d)=40-0{,}5d^{2}$. Bei $B(d)\\ge 10$ ist jede Distanz bis 8 km zulässig.",
+      "Ein Produkt braucht 2 Stunden auf Maschine A und 3 Stunden auf Maschine B. Maschine A hat 100 Stunden, Maschine B 120 Stunden. Dann kann die Fabrik 45 Einheiten produzieren.",
+      "Die Ungleichung $\\sqrt{3x+1}\\le 2x-1$ gilt genau dann, wenn $x\\ge\\dfrac{7}{4}$."
+    ],
+    "tactical_explanations_de_existing": [
+      "**A.** → Falsch\n\nBudgetrechnung:\n\n$$\n25+8t\\le 80 \\Rightarrow 8t\\le 55 \\Rightarrow t\\le 6{,}875\n$$\n\nDie Schließzeit verlangt zusätzlich $t\\le 6$. Eine 7-Stunden-Miete verletzt die Schließschranke, auch wenn das Budget noch knapp reichen würde. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nAus $|x^{2}-9|\\le 7$ folgt\n\n$$\n-7\\le x^{2}-9\\le 7\n$$\n\nLinke Hälfte: $x^{2}\\ge 2$, also $x\\in(-\\infty,-\\sqrt{2}]\\cup[\\sqrt{2},\\infty)$.\nRechte Hälfte: $x^{2}\\le 16$, also $x\\in[-4,4]$.\nSchnitt:\n\n$$\n[-4,-\\sqrt{2}]\\cup[\\sqrt{2},4]\n$$\n\nDas stimmt nicht mit $[-4,-1]\\cup[1,4]$ überein.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\n$$\nB(d)=40-0{,}5d^{2}\\ge 10 \\Rightarrow 0{,}5d^{2}\\le 30 \\Rightarrow d^{2}\\le 60 \\Rightarrow d\\le\\sqrt{60}\\approx 7{,}746\n$$\n\nDamit ist $d=8$ nicht zulässig.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nMaschine A: $2n\\le 100 \\Rightarrow n\\le 50$.\nMaschine B: $3n\\le 120 \\Rightarrow n\\le 40$.\nZulässiges Maximum:\n\n$$\nn\\le\\min\\{50,40\\}=40\n$$\n\n45 Einheiten überschreiten dieses Maximum.\n\nDie Aussage ist falsch.",
+      "**E.** → Richtig\n\n$$\n\\sqrt{3x+1}\\le 2x-1\n$$\n\nDefinitionsmenge: $3x+1\\ge 0 \\Rightarrow x\\ge -\\frac{1}{3}$, und die rechte Seite muss für eine nichtnegative Wurzel $\\ge 0$ sein: $2x-1\\ge 0 \\Rightarrow x\\ge\\frac{1}{2}$.\nQuadrieren (gültig auf diesem Bereich):\n\n$$\n3x+1\\le (2x-1)^{2}=4x^{2}-4x+1 \\Rightarrow 0\\le 4x^{2}-7x \\Rightarrow x(4x-7)\\ge 0\n$$\n\nMit $x\\ge\\frac{1}{2}$ bleibt $x\\ge\\frac{7}{4}$. Das ist genau die Behauptung.\n\nDie Aussage ist wahr."
+    ],
+    "solution_overview_de_existing": "Unabhängige Aussagen: Kanuvermietung mit harter Schließzeit, ein biquadratisches Betragsband, Drohnen-Akkureichweite, duale Maschinenstunden-Obergrenzen und eine Wurzelungleichung mit Bruchschwelle."
+  }
+]
