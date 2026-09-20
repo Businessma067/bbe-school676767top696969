@@ -22,6 +22,7 @@ import {
   type StudyUiLocale,
 } from "@/lib/wiso-study-ui";
 import { Check, RotateCcw, Shuffle, X } from "lucide-react";
+import { DemoStudyRevealLock } from "@/components/CourseLockedView";
 
 type AnswerState = {
   choiceId: string;
@@ -34,11 +35,16 @@ export function TutorExamSubjectView({
   subject,
   subjectsHref,
   locale = "en",
+  demoRevealLocked = false,
+  productSlug,
 }: {
   subjectId: string;
   subject: FlashcardSubjectViewModel;
   subjectsHref: string;
   locale?: StudyUiLocale;
+  /** Demo practice: show unlock lock instead of revealing the answer. */
+  demoRevealLocked?: boolean;
+  productSlug?: string;
 }) {
   const total = countCards(subject.sections);
   const de = locale === "de";
@@ -57,6 +63,7 @@ export function TutorExamSubjectView({
   const [answer, setAnswer] = useState<AnswerState | null>(null);
   const [greeting, setGreeting] = useState(() => pickLine([...greetings]));
   const [finished, setFinished] = useState(false);
+  const [showRevealLock, setShowRevealLock] = useState(false);
 
   const startExam = useCallback(
     (nextSection: string | "all", nextExam?: number) => {
@@ -67,6 +74,7 @@ export function TutorExamSubjectView({
       setAnswer(null);
       setFinished(false);
       setGreeting(pickLine([...greetings]));
+      setShowRevealLock(false);
       if (nextExam != null) setExamNo(nextExam);
     },
     [subject.sections, locale, greetings],
@@ -84,6 +92,10 @@ export function TutorExamSubjectView({
 
   const onPick = (choiceId: string) => {
     if (!current || answer) return;
+    if (demoRevealLocked) {
+      setShowRevealLock(true);
+      return;
+    }
     const correct = choiceId === current.correctChoiceId;
     if (correct) setScore((s) => s + 1);
     setAnswer({
@@ -115,7 +127,7 @@ export function TutorExamSubjectView({
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
-            to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
+            to={subjectsHref}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             {ui?.subjectsBack ?? "← Subjects"}
@@ -188,7 +200,13 @@ export function TutorExamSubjectView({
             </span>
           </div>
 
-          {questions.length === 0 ? (
+          {showRevealLock ? (
+            <DemoStudyRevealLock
+              feature="tutor-exam"
+              productSlug={productSlug}
+              onBack={() => setShowRevealLock(false)}
+            />
+          ) : questions.length === 0 ? (
             <div className="rounded-2xl border border-border bg-card p-10 text-center text-sm text-muted-foreground">
               {ui?.emptyTopic ?? "No concepts in this topic yet."}
             </div>

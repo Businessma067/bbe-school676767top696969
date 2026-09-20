@@ -115,19 +115,30 @@ export function StudyToolsSubjectIndex({
   kind,
   subjects,
   subjectPath,
+  backHref,
+  backLabel,
   blurbFor,
   locale = "en",
 }: {
   kind: StudyToolKind;
   subjects: StudyToolSubjectCard[];
-  /** e.g. "/flashcards/$subject" or "/wiso/flashcards/$subject" */
+  /** e.g. "/flashcards/$subject" or "/demo-practice/flashcards/$subject" */
   subjectPath:
     | "/flashcards/$subject"
     | "/matching/$subject"
     | "/tutor-exam/$subject"
     | "/wiso/flashcards/$subject"
     | "/wiso/matching/$subject"
-    | "/wiso/tutor-exam/$subject";
+    | "/wiso/tutor-exam/$subject"
+    | "/demo-practice/flashcards/$subject"
+    | "/demo-practice/matching/$subject"
+    | "/demo-practice/tutor-exam/$subject"
+    | "/wiso/demo-practice/flashcards/$subject"
+    | "/wiso/demo-practice/matching/$subject"
+    | "/wiso/demo-practice/tutor-exam/$subject";
+  /** Optional back link shown in the header (e.g. demo practice hub). */
+  backHref?: string;
+  backLabel?: string;
   blurbFor?: (title: string) => string;
   locale?: StudyUiLocale;
 }) {
@@ -135,7 +146,20 @@ export function StudyToolsSubjectIndex({
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader compact maxWidthClassName="max-w-7xl" />
+      <SiteHeader
+        compact
+        maxWidthClassName="max-w-7xl"
+        actions={
+          backHref ? (
+            <Link
+              to={backHref}
+              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+            >
+              {backLabel ?? "← Back"}
+            </Link>
+          ) : undefined
+        }
+      />
 
       <main className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
