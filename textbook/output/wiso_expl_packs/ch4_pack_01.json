@@ -1,0 +1,611 @@
+[
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.22",
+    "title": "Backstage: interne Wertschöpfung und Prozesse",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der interne Fokus eines Unternehmens liegt auf der wirtschaftlichen Nutzung von Ressourcen, um Produkte und Dienstleistungen zu erstellen.",
+      "Wertschöpfung bedeutet in diesem Zusammenhang, dass ein Wert geschaffen wird.",
+      "Wenn Arbeitsschritte digital unterstützt werden, entsteht ein digital unterstützter Geschäftsprozess.",
+      "Backstage-Geschäftsprozesse unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.",
+      "Backstage-Digitalisierung meint vor allem die öffentliche Werbung gegenüber Endkunden und nicht die internen Abläufe."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Hinter den Kulissen zählt die wirtschaftliche Nutzung von Ressourcen. Der interne Fokus eines Unternehmens liegt genau darauf: Ressourcen so einzusetzen, dass Produkte und Dienstleistungen entstehen. Das ist die innengerichtete Seite der ersten Digitalisierungsdimension, nicht die kundengerichtete Werbung. Wer den Blick nur nach außen richtet, verfehlt diesen Backstage-Schwerpunkt.\n\nDie Aussage ist wahr.",
+      "Wert soll geschaffen werden, nicht nur bewegt. Wertschöpfung meint in diesem Zusammenhang ausdrücklich, dass aus dem Ressourceneinsatz ein Wert entsteht. Der Begriff ist damit an die wirtschaftliche Nutzung im Inneren gebunden: Produkte und Dienstleistungen entstehen, und damit wird Wert geschaffen. Ohne diesen Schöpfungsgedanken bliebe nur ein technischer Ablauf ohne Ziel.\n\nDie Aussage ist wahr.",
+      "Digitale Unterstützung macht aus Arbeitsschritten einen digital gestützten Geschäftsprozess. Wenn Systeme die Schritte erweitern oder steuern, entsteht genau diese Ausprägung der ersten Dimension. Es geht nicht um bloße Absichtserklärungen, sondern um konkrete digitale Hilfe im Ablauf. Der Prozess bleibt ein Geschäftsprozess, wird aber digital gestützt.\n\nDie Aussage ist wahr.",
+      "Backstage-Prozesse tragen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert. Das ist die typische Entwicklung hinter den Kulissen: interne Abläufe, die Produkte und Dienstleistungen ermöglichen, erhalten digitale Steuerung. Die Aussage beschreibt diesen Zusammenhang treffend und vermengt ihn nicht mit Frontstage-Werbung.\n\nDie Aussage ist wahr.",
+      "Backstage meint die Prozesse hinter den Kulissen, also intern. Öffentliche Werbung gegenüber Endkunden gehört zur kundengerichteten Seite und damit zur Frontstage, nicht zur Backstage-Digitalisierung. Wer Backstage mit Außenwerbung gleichsetzt, vertauscht die Dimensionen. Interner Fokus und Kundenschnittstelle bleiben unterscheidbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.23",
+    "title": "Frontstage: Kundenorientierung und Kundenarten",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Frontstage-Dimension versteht sich als Verbindung zwischen Kunden und Unternehmen und bildet den externen Fokus.",
+      "Im Vordergrund stehen die Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer.",
+      "Als Kunde kommt je nach Umfeld eine Privatperson, ein Unternehmen oder auch eine öffentliche Institution infrage.",
+      "Digitalisierung bietet neue Potenziale, Nutzerwünsche effizienter und gezielter zu berücksichtigen.",
+      "Frontstage-Digitalisierung schließt Unternehmen und öffentliche Institutionen als Kunden begrifflich aus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Außen beginnt die Frontstage. Sie versteht sich als Verbindung zwischen Kunden und Unternehmen und bildet den externen Fokus der Digitalisierung. Während Backstage hinter den Kulissen arbeitet, richtet Frontstage den Blick auf die Schnittstelle zum Kunden. Diese Zuordnung ist das Ordnungsraster der zweiten Dimension.\n\nDie Aussage ist wahr.",
+      "Nutzerinnen und Nutzer stehen im Vordergrund. Bei der Gestaltung von Angeboten im Sinne des Kunden liegen Anforderungen und Bedürfnisse der Nutzerinnen und Nutzer im Zentrum. Frontstage heißt damit: erst die Nachfrage und die Erwartungen verstehen, dann die digitale Schnittstelle darauf ausrichten. Technik ohne diesen Fokus wäre nur Kanalbau.\n\nDie Aussage ist wahr.",
+      "Kunde ist weiter gefasst als nur die Privatperson. Je nach Umfeld kann eine Privatperson, ein Unternehmen oder auch eine öffentliche Institution Kundin oder Kunde sein. Frontstage schließt diese Kundenarten nicht aus. Wer den Begriff auf Endverbraucherinnen und Endverbraucher verengt, trifft die beschriebene Breite nicht.\n\nDie Aussage ist wahr.",
+      "Digitalisierung öffnet neue Potenziale an der Kundenschnittstelle. Nutzerwünsche lassen sich effizienter und gezielter berücksichtigen, etwa durch Erfassung, Abgleich und personalisierte Angebote. Genau diese Verbesserung der Passung ist ein Kernversprechen der Frontstage. Die Aussage benennt diesen Nutzen korrekt.\n\nDie Aussage ist wahr.",
+      "Unternehmen und öffentliche Institutionen sind ausdrücklich mögliche Kunden. Frontstage schließt sie begrifflich nicht aus; die Verengung auf Privatpersonen widerspricht der Breite des Kundenbegriffs. Wer Frontstage-Digitalisierung so einschränkt, streicht genau die genannten Kundenarten und trifft die Dimension falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.24",
+    "title": "Dokumentation und Prozessmodell",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Festhalten eines Geschäftsprozesses in einem digitalen System wird auch als Dokumentation bezeichnet.",
+      "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren.",
+      "Ein visuelles Abbild eines Prozesses wird auch Prozessmodell genannt.",
+      "Ein Prozessmodell kann neuen Mitarbeitenden – etwa im Praktikum – einen ersten Überblick über einen zentralen Ablauf liefern.",
+      "Ein Prozessmodell ist ausschließlich für externe Wirtschaftsprüfer gedacht und darf Mitarbeitenden im Unternehmen nicht gezeigt werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Festhalten im System heißt Dokumentation. Wenn ein Geschäftsprozess in einem digitalen System festgehalten wird, bezeichnet man das auch als Dokumentation. Gemeint ist die nachvollziehbare Abbildung des Ablaufs, nicht bloß ein loses Notizzetteldenken. Ohne diese Fixierung bleibt der Prozess schwer teilbar und schwer steuerbar.\n\nDie Aussage ist wahr.",
+      "Kommunikation braucht eine gemeinsame Grundlage. Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren, weil der Ablauf sichtbar und nachvollziehbar wird. Wer dokumentiert, macht Arbeitsschritte teilbar statt nur im Kopf Einzelner zu speichern. Genau dieser Zweck trägt die interne Orientierung.\n\nDie Aussage ist wahr.",
+      "Visuelles Abbild und Prozessmodell meinen dasselbe. Ein Prozessmodell ist die anschauliche Darstellungsform des dokumentierten Ablaufs. Es zeigt Zusammenhänge und Reihenfolgen, die reine Textlisten oft nur andeuten. So wird aus der Dokumentation etwas, das man im Team gemeinsam lesen und besprechen kann.\n\nDie Aussage ist wahr.",
+      "Neue Mitarbeitende brauchen Orientierung. Ein Prozessmodell kann etwa im Praktikum einen ersten Überblick über einen zentralen Ablauf liefern und so den Einstieg erleichtern. Der Nutzen liegt in der Übersicht, nicht in geheimer Prüfungsexklusivität. Interne Lernkurven und Kommunikation gehören zum Zweck.\n\nDie Aussage ist wahr.",
+      "Prozessmodelle dienen der internen Kommunikation und Orientierung, etwa für neue Mitarbeitende. Eine Beschränkung allein auf externe Wirtschaftsprüfer widerspricht diesem Zweck und würde die Dokumentation von der Belegschaft trennen. Mitarbeitende sollen den Ablauf gerade verstehen und teilen können, nicht davon ausgeschlossen werden.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.25",
+    "title": "Smarte Produkte und Dienstleistungen",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die dritte Dimension der Digitalisierung befasst sich damit, wie das Ergebnis der Wertschöpfung durch Technologie erweitert werden kann.",
+      "„Smart“ bezieht sich in diesem Zusammenhang auf die Digitalisierung von Produkten und Dienstleistungen.",
+      "Digitalisierung eines Produkts kann im einfachsten Fall eine Ergänzung oder Erweiterung darstellen.",
+      "Im besten Fall kann Digitalisierung das Erlebnis des Kunden nachhaltig prägen und die Bindung zum Produkt steigern.",
+      "Die dritte Dimension betrifft ausschließlich die Gehaltsabrechnung der Mitarbeitenden und nicht Produkte oder Dienstleistungen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Das Ergebnis der Wertschöpfung steht im Fokus der dritten Dimension. Es geht darum, wie Produkte und Dienstleistungen durch Technologie erweitert werden können, nicht um interne Gehaltsläufe. Smart meint hier die Digitalisierung des Angebots selbst. Wer die dritte Dimension nur hinter den Kulissen sucht, verfehlt diesen Ergebnisbezug.\n\nDie Aussage ist wahr.",
+      "Smart bezieht sich auf die Digitalisierung von Produkten und Dienstleistungen. Der Begriff markiert, dass das Angebot selbst digital erweitert oder erlebbarer gemacht wird. Es ist keine bloße Werbefloskel, sondern die Kennzeichnung der dritten Dimension. Ohne Bezug zu Produkt oder Dienstleistung bleibt smart leer.\n\nDie Aussage ist wahr.",
+      "Einfach kann digital schon als Ergänzung wirken. Im einfachsten Fall stellt Digitalisierung eine Ergänzung oder Erweiterung dar, etwa eine digitale Anleitung als PDF zu einem analogen Produkt. Noch ist das keine maximale Erlebnisdigitalisierung, aber bereits eine konkrete Ausprägung. Die Stufung beginnt genau hier.\n\nDie Aussage ist wahr.",
+      "Im besten Fall prägt Digitalisierung das Kundenerlebnis nachhaltig und steigert die Bindung zum Produkt. Aus einer Ergänzung wird dann ein positiv digitalisiertes Erlebnis, das über die bloße Datei hinausgeht. Die Aussage beschreibt dieses obere Ende der Skala korrekt. Nutzen und Bindung sind der Maßstab, nicht Technik um ihrer selbst willen.\n\nDie Aussage ist wahr.",
+      "Die dritte Dimension richtet sich auf Produkte und Dienstleistungen als Ergebnis der Wertschöpfung. Gehaltsabrechnung der Mitarbeitenden gehört zu internen Abläufen und trifft diesen Fokus nicht. Wer die Dimension auf Entgeltabrechnung verengt, vertauscht Ergebnisdigitalisierung mit Backstage-Administration.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.26",
+    "title": "Wirtschaftsinformatik und digitale Systeme in Unternehmen",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Wirtschaftsinformatik beschäftigt sich damit, wie Technologie unterstützen kann und welche Auswirkungen das auf Gesellschaft, Wirtschaft und persönliches Leben hat.",
+      "Lieferdienste können Positionierungs- und Benachrichtigungssysteme nutzen, um den Standort möglichst zeitnah mitzuteilen.",
+      "Digitale Systeme werden in Unternehmen eingesetzt, um Arbeitsschritte zu automatisieren, zu optimieren bzw. zu unterstützen.",
+      "Es fällt zunehmend schwer, Lebens- oder Arbeitsbereiche zu finden, in denen keinerlei Technologiekontakt stattfindet.",
+      "Digitale Systeme dienen in Unternehmen ausschließlich der Unterhaltung der Belegschaft und haben keinen Bezug zu Automatisierung oder Optimierung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wirtschaftsinformatik stellt eine Doppelfrage. Sie fragt, wie Technologie unterstützen kann, und welche Auswirkungen das auf Gesellschaft, Wirtschaft und persönliches Leben hat. Der Blick reicht damit über reine Programmiertechnik hinaus in betriebliche und gesellschaftliche Wirkungen. Genau diese Breite umreißt das Themenfeld.\n\nDie Aussage ist wahr.",
+      "Lieferdienste machen den Einsatz greifbar. Positionierungs- und Benachrichtigungssysteme teilen den Standort möglichst zeitnah mit und zeigen digitale Systeme im Betriebsalltag. Technologie steuert hier Information und Ablauf, nicht nur Dekoration. Das Beispiel sitzt mitten in der Nutzung digitaler Systeme.\n\nDie Aussage ist wahr.",
+      "Automatisieren, optimieren, unterstützen: das sind die Einsatzziele digitaler Systeme in Unternehmen. Arbeitsschritte werden dadurch verändert, nicht bloß beobachtet. Die Aussage fasst diesen Betriebsbezug treffend. Ohne Automatisierung, Optimierung oder Unterstützung bliebe der Systemeinsatz betrieblich wirkungslos.\n\nDie Aussage ist wahr.",
+      "Technologiekontakt ist allgegenwärtig geworden. Es fällt zunehmend schwer, Lebens- oder Arbeitsbereiche zu finden, in denen keinerlei Technologiekontakt stattfindet. Allgegenwärtigkeit meint gerade diese Durchdringung, nicht eine Ausnahmeinsel. Die Aussage beschreibt diese Reichweite korrekt.\n\nDie Aussage ist wahr.",
+      "Digitale Systeme dienen Automatisierung, Optimierung und Unterstützung betrieblicher Abläufe. Eine Reduktion auf reine Unterhaltung der Belegschaft ohne Betriebsbezug trifft den beschriebenen Zweck nicht. Wer den Betriebsnutzen streicht, verfehlt den Kern des Systemeinsatzes in Unternehmen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.27",
+    "title": "Beispiel digitaler Geschäftsprozess (Online-Bestellung)",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei einer Online-Bestellung können im Hintergrund sofort Schritte veranlasst werden, damit das Produkt rasch zum Kunden kommt.",
+      "Ein internes System kann die Bestellung zusammenfassen und eine freie Mitarbeiterin oder einen freien Mitarbeiter benachrichtigen.",
+      "Detailschritte können Lagerposition abrufen, Produkt auswählen und die Bestellung für Abholung oder Versand vorbereiten umfassen.",
+      "Je nach Lagerstand können intern weitere Prozesse angestoßen und der Kunde über den Status informiert werden.",
+      "Der digital gestützte Bestellprozess hat definitionsgemäß weder einen Anfang noch ein Ende."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Online bestellt, im Hintergrund schon in Bewegung. Nach der Aufgabe einer Bestellung können sofort Schritte veranlasst werden, damit das Produkt rasch zum Kunden kommt. Digitale Systeme koppeln den Eingang mit internen Folgeschritten. Der sichtbare Klick und die unsichtbare Abwicklung gehören zusammen.\n\nDie Aussage ist wahr.",
+      "Ein internes System fasst die Bestellung zusammen und benachrichtigt eine freie Mitarbeiterin oder einen freien Mitarbeiter. So wird die nächste Person angestoßen, die sich um weitere Schritte kümmert. Digital gestützt heißt hier: Information und Zuweisung laufen über Systeme, nicht nur über Zuruf. Der Ablauf bleibt menschlich begleitet, aber systemisch vorbereitet.\n\nDie Aussage ist wahr.",
+      "Detailschritte machen den Prozess greifbar. Lagerposition abrufen, Produkt auswählen und die Bestellung für Abholung oder Versand vorbereiten gehören dazu. Je nach Ausgang ändert sich der Abschluss, aber die Logik bleibt zusammenhängend. Die Aussage listet genau diese typischen Stationen.\n\nDie Aussage ist wahr.",
+      "Lagerstand steuert Folgeschritte und Kundeninformation. Intern können weitere Prozesse angestoßen und der Kunde über den Status informiert werden. Digitalisierung verbindet hier Backstage-Steuerung mit Frontstage-Transparenz. Ohne diese Kopplung bliebe der Status für den Kunden oft unsichtbar.\n\nDie Aussage ist wahr.",
+      "Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Im Bestellbeispiel endet der Ablauf etwa mit Lieferung oder Abholung. Die Behauptung, der digital gestützte Prozess habe weder Anfang noch Ende, widerspricht dieser Definition und trifft den Ablauf nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.28",
+    "title": "Kundenwünsche gezielter berücksichtigen",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim Schuhkauf ist die passende Größe eine zentrale Anforderung der Nutzerinnen und Nutzer.",
+      "Falsche Größen beim Onlinekauf können Zeit und Nerven kosten und frustrierend sein.",
+      "Ein 3D-Fußscanner kann Anforderungen der Nutzer festhalten, indem er ein 3D-Bild der Füße erzeugt und online im Kundenkonto speichert.",
+      "Vor Ort und bei einer späteren Online-Bestellung kann der digitale Fußabdruck mit dem gewünschten Schuhmodell abgeglichen werden.",
+      "Frontstage-Potenziale der Digitalisierung bestehen nur offline im Ladengeschäft und lassen sich online grundsätzlich nicht nutzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Passende Größe ist eine zentrale Nutzeranforderung beim Schuhkauf. Frontstage-Logik beginnt genau dort: Bedürfnisse und Anforderungen zuerst, dann die digitale Unterstützung. Wer Größe und Passform ignoriert, verfehlt den Kundennutzen. Die Aussage benennt dieses Bedürfnis korrekt.\n\nDie Aussage ist wahr.",
+      "Falsche Größen beim Onlinekauf kosten Zeit und Nerven und sind frustrierend. Genau dieses Ärgernis motiviert digitale Hilfen an der Kundenschnittstelle. Frontstage-Digitalisierung zielt darauf, solche Reibungen zu verringern. Die Aussage beschreibt das Problem, an dem der Service ansetzt.\n\nDie Aussage ist wahr.",
+      "Ein 3D-Fußscanner erzeugt ein 3D-Bild der Füße und speichert es online im Kundenkonto. So werden Anforderungen digital festgehalten und später wiederverwendet. Erfassung und Speicherung sind der technische Kern dieses Frontstage-Beispiels. Ohne digitales Bild bliebe der Abgleich mit dem Modell mühsam.\n\nDie Aussage ist wahr.",
+      "Vor Ort und später online kann der digitale Fußabdruck mit dem gewünschten Schuhmodell abgeglichen werden. Der Service verbindet Ladengeschäft und Online-Bestellung zu einem durchgängigen Passformcheck. Genau dieser Abgleich ist der Zweck. Digitalisierung wirkt hier in beiden Kanälen.\n\nDie Aussage ist wahr.",
+      "Frontstage-Potenziale sind online und offline nutzbar. Das Beispiel verbindet Vor-Ort-Service und Smartphone-App bzw. Online-Bestellung ausdrücklich. Die Behauptung, Potenziale bestünden nur offline und ließen sich online grundsätzlich nicht nutzen, widerspricht diesem Zusammenspiel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.29",
+    "title": "Digitalisierungsstrategie und Digital Business",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Aus der gezielten Konzentration auf eine oder mehrere Digitalisierungsdimensionen lässt sich eine Digitalisierungsstrategie ableiten.",
+      "Eine Digitalisierungsstrategie kann dem Unternehmen helfen, zukünftige Entscheidungen an einer klaren Vision auszurichten.",
+      "Im Gesamten führt dies zur Digitalisierung des Unternehmens – dem „Digital Business“.",
+      "Erfolgreiche digitale Transformation erweitert sinnvolle Aspekte wie Arbeitsschrittfolgen, Kommunikation oder Kundenbedürfnisse durch digitale Technologien.",
+      "„Digital Business“ bedeutet lediglich, dass das Unternehmen eine Visitenkarten-Website besitzt, ohne dass Prozesse, Kundenbeziehung oder Angebote digital weiterentwickelt werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Schwerpunkt setzt Strategie. Aus der gezielten Konzentration auf eine oder mehrere Digitalisierungsdimensionen lässt sich eine Digitalisierungsstrategie ableiten. Nicht jede Dimension muss zugleich maximal ausgebaut werden; Fokus ersetzt den Zwang zur Vollständigkeit. Die Aussage trifft genau diese Ableitungslogik.\n\nDie Aussage ist wahr.",
+      "Eine klare Vision braucht eine Orientierung für Entscheidungen. Die Digitalisierungsstrategie hilft dem Unternehmen, zukünftige Entscheidungen an dieser Vision auszurichten. Strategie ist damit kein Plakat, sondern ein Leitfaden für nächste Schritte. Ohne diese Ausrichtung bleiben Digitalvorhaben leicht beliebig.\n\nDie Aussage ist wahr.",
+      "Im Gesamten führt die dimensionale und strategische Arbeit zur Digitalisierung des Unternehmens. Genau das wird als Digital Business bezeichnet. Der Begriff meint den unternehmerischen Wandel entlang der Dimensionen, nicht bloß eine einzelne App. Die Aussage fasst diesen Gesamtbogen korrekt.\n\nDie Aussage ist wahr.",
+      "Erfolg heißt sinnvolle Erweiterung. Arbeitsschrittfolgen, Kommunikation oder Kundenbedürfnisse werden durch digitale Technologien gestärkt. Digitale Transformation misst sich an Nutzen und Passung, nicht an Technik um ihrer selbst willen. Die genannten Aspekte sind typische Erweiterungsfelder.\n\nDie Aussage ist wahr.",
+      "Digital Business bezeichnet die Digitalisierung des Unternehmens entlang Dimensionen und Strategie. Eine bloße Visitenkarten-Website ohne Weiterentwicklung von Prozessen, Kundenbeziehung oder Angeboten erfüllt diesen Maßstab nicht. Wer den Begriff so verengt, streicht genau den inhaltlichen Wandel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.30",
+    "title": "Feine Unterschiede: Prozessenden und Wertbeitrag",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Geschäftsprozess darf laut Definition nur genau ein einziges Ende haben; mehrere Enden sind ausgeschlossen.",
+      "Wiederholbarkeit gehört zu den Merkmalen von Geschäftsprozessen.",
+      "Ohne Beitrag zu einem betriebswirtschaftlichen Ziel fehlt einem Ablauf das zentrale Wertmerkmal eines Geschäftsprozesses.",
+      "Logisch zusammenhängende Aktivitäten sind ein Definitionsbestandteil des Geschäftsprozesses.",
+      "Dokumentation eines Prozesses dient vor allem dazu, Abläufe vor den Mitarbeitenden geheim zu halten."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ein oder mehrere definierte Enden sind erlaubt. Die Definition schließt mehrere Abschlüsse desselben Ablaufs nicht aus, etwa Versand oder Abholung als Alternativen. Die Behauptung, es dürfe nur genau ein einziges Ende geben, ist zu eng. Mehrere Enden verletzen die Prozessdefinition nicht.\n\nDie Aussage ist falsch.",
+      "Wiederholbarkeit gehört zu den Merkmalen von Geschäftsprozessen. Abläufe können wiederholt durchgeführt werden und bleiben dabei als Prozess erkennbar. Ein einmaliger Zufall ohne Wiederholbarkeit trifft das Merkmal nicht. Die Aussage benennt diesen Definitionsbestandteil korrekt.\n\nDie Aussage ist wahr.",
+      "Ohne Beitrag zu einem betriebswirtschaftlichen Ziel fehlt das zentrale Wertmerkmal. Ein Ablauf muss Wert zu einem betrieblichen Ziel leisten, sonst fehlt das Kernmerkmal des Geschäftsprozesses. Reine Beschäftigung ohne Zielbezug genügt nicht. Die Aussage trifft genau diesen Maßstab.\n\nDie Aussage ist wahr.",
+      "Logisch zusammenhängende Aktivitäten sind definitionsbildend. Mehrere Schritte bilden erst dann einen Geschäftsprozess, wenn sie sinnvoll verbunden sind und gemeinsam wirken. Lose Einzelaktionen ohne Zusammenhang erfüllen die Definition nicht. Die Aussage hält diesen Bestandsteil fest.\n\nDie Aussage ist wahr.",
+      "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren. Geheimhaltung vor der Belegschaft ist nicht der Zweck; Nachvollziehbarkeit und Teilbarkeit sind es. Wer Dokumentation als Versteckspiel deutet, kehrt den Sinn um. Interne Orientierung und Austausch bleiben zentral.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.31",
+    "title": "Dimensionen sauber trennen",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Digitalisierung der Kundenbeziehung (Frontstage) ersetzt vollständig die Notwendigkeit interner Geschäftsprozesse (Backstage).",
+      "Ein digital unterstützter Bestellprozess im Lager und in der Kommissionierung ist primär der Backstage-Dimension zuzuordnen.",
+      "Ein Service, der Nutzeranforderungen per App und Scanner erfasst, um Passformwünsche gezielter zu erfüllen, gehört zur Frontstage-Logik.",
+      "Die Erweiterung eines analogen Produkts um eine digitale Erkundungsmission betrifft die Dimension der Produkt- bzw. Dienstleistungsdigitalisierung.",
+      "Unternehmen müssen stets alle drei Dimensionen gleichzeitig und ohne Schwerpunktsetzung maximal ausbauen, sonst entsteht keine Digitalisierungsstrategie."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Dimensionen ergänzen einander und ersetzen sich nicht. Frontstage-Digitalisierung der Kundenbeziehung macht interne Geschäftsprozesse nicht überflüssig. Backstage bleibt für die Wertschöpfung nötig, auch wenn die Kundenschnittstelle digital wird. Wer Frontstage als vollständigen Ersatz von Backstage liest, vermengt die Ebenen.\n\nDie Aussage ist falsch.",
+      "Lager, Kommissionierung und interne Bestellabwicklung liegen hinter den Kulissen. Ein digital unterstützter Bestellprozess dort ist primär der Backstage-Dimension zuzuordnen. Es geht um interne Steuerung der Wertschöpfung, nicht um die öffentliche Werbung. Die Zuordnung folgt dem innengerichteten Fokus.\n\nDie Aussage ist wahr.",
+      "Nutzeranforderungen per App und Scanner erfassen heißt Frontstage-Logik. Der Service richtet sich auf Passformwünsche und Kundennutzen an der Schnittstelle. Externer Fokus und Kundenorientierung stehen im Vordergrund. Die Aussage ordnet dieses Beispiel der richtigen Dimension zu.\n\nDie Aussage ist wahr.",
+      "Eine digitale Erkundungsmission erweitert das analoge Produkt selbst und verändert das Erlebnis. Das betrifft die dritte Dimension: Digitalisierung von Produkt bzw. Dienstleistung. Es geht um das Ergebnis der Wertschöpfung, nicht nur um interne Buchung. Die Aussage trifft diese Zuordnung korrekt.\n\nDie Aussage ist wahr.",
+      "Strategie kann aus der Konzentration auf eine oder mehrere Dimensionen abgeleitet werden. Ein Zwang, stets alle drei Dimensionen gleichzeitig und ohne Schwerpunkt maximal auszubauen, ist nicht die beschriebene Logik. Ohne Schwerpunktsetzung entsteht gerade keine klare Strategieableitung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.32",
+    "title": "Reichweite der Digitalisierung und Begriffsfalle",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Digitale Transformation umfasst Veränderungen nicht nur in der Wirtschaft, sondern auch in Verwaltung und privatem Bereich.",
+      "Informations- und Kommunikationstechnologie ist Voraussetzung vieler vernetzter Alltags- und Unternehmensszenarien.",
+      "„Ubiquitous computing“ betont die Allgegenwärtigkeit von Rechensystemen.",
+      "Digitalisierung meint nur die Anschaffung von Hardware; ob sich Abläufe oder Angebote ändern, ist für den Begriff unerheblich.",
+      "Allgegenwärtigkeit digitaler Systeme gilt ausschließlich für Smartphones im Privatbesitz und nicht für Unternehmenssysteme."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Digitale Transformation reicht über die Wirtschaft hinaus. Veränderungen werden auch in Verwaltung und privatem Bereich vorangetrieben und greifen dort in Abläufe und Alltag. Die Reichweite ist damit breiter als nur Unternehmens-IT. Die Aussage benennt diese Orte der Veränderung korrekt.\n\nDie Aussage ist wahr.",
+      "Informations- und Kommunikationstechnologie ist die technische Voraussetzung vernetzter Alltags- und Unternehmensszenarien. Ohne IKT wären viele der beschriebenen Vernetzungen und Dienste nicht möglich. Die Aussage hält diesen Voraussetzungsbezug fest. Technik und Szenario gehören zusammen.\n\nDie Aussage ist wahr.",
+      "Ubiquitous computing betont die Allgegenwärtigkeit von Rechensystemen. Der Begriff fasst, dass Rechensysteme nicht mehr an wenige Orte gebunden sind, sondern den Alltag und den Betrieb durchdringen. Genau diese Kennzeichnung macht den Ausdruck treffend. Die Aussage trifft den Kern des Begriffs.\n\nDie Aussage ist wahr.",
+      "Digitalisierung meint die Anwendung digitaler Informations- und Kommunikationstechnologie und die damit verbundene Veränderung von Abläufen oder Angeboten. Bloße Hardwareanschaffung ohne diesen Bezug trifft den Begriff nicht. Ob sich etwas ändert, ist gerade wesentlich. Die Verengung auf Hardware allein ist zu eng.\n\nDie Aussage ist falsch.",
+      "Allgegenwärtigkeit bezieht sich auf Rechensysteme insgesamt in Alltag und Unternehmen. Eine Beschränkung allein auf Smartphones im Privatbesitz ist zu eng und streicht Unternehmenssysteme. Digitale Systeme in Betrieben gehören zur gleichen Durchdringung. Die Verengung trifft den Begriff nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.33",
+    "title": "Smart vs. bloße Ergänzung",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine digitale PDF-Anleitung zu einem analogen Baukasten ist ein Beispiel für eine einfache digitale Ergänzung.",
+      "Eine digitale Erkundungsmission, die je nach Verlauf unterschiedliche Bauweisen ermöglicht, kann das Erlebnis „smart“ erweitern.",
+      "Eine smarte Erweiterung kann die Bindung zum Produkt steigern und ein positiv digitalisiertes Kundenerlebnis schaffen.",
+      "Jede digitale Datei zu einem Produkt ist automatisch die maximale Form der Erlebnisdigitalisierung.",
+      "Wer ausschließlich Frontstage digitalisiert, hat damit zwingend auch Backstage-Prozesse und Produkt-Digitalisierung bereits vollständig abgedeckt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Eine digitale PDF-Anleitung zu einem analogen Baukasten ist das klassische Beispiel einer einfachen Ergänzung. Digitalisierung beginnt hier als Zusatz zum physischen Produkt, noch ohne maximale Erlebnisprägung. Die Stufung von Ergänzung zu smarter Erweiterung startet genau bei solchen Dateien. Die Aussage trifft diese untere Stufe.\n\nDie Aussage ist wahr.",
+      "Eine digitale Erkundungsmission mit unterschiedlichem Verlauf kann das Erlebnis smart erweitern. Je nach Pfad entstehen andere Bauweisen, und das Angebot wird erlebbarer. Das geht über die bloße PDF hinaus in Richtung prägendes Produkterlebnis. Die Aussage beschreibt genau diese Stufe.\n\nDie Aussage ist wahr.",
+      "Smarte Erweiterung kann Bindung steigern und ein positiv digitalisiertes Kundenerlebnis schaffen. Nutzen und emotionale Nähe zum Produkt wachsen mit dem digitalen Erlebnis. Erfolg misst sich an dieser Prägung, nicht am bloßen Dateivorkommen. Die Aussage hält diesen Zusammenhang fest.\n\nDie Aussage ist wahr.",
+      "Nicht jede digitale Datei ist automatisch die maximale Erlebnisdigitalisierung. Die Stufung von einfacher Ergänzung bis erlebnisprägender Erweiterung zeigt Abstufungen. Maximum ist nicht schon erreicht, nur weil eine Datei existiert. Die Gleichsetzung von Datei und Maximum ist falsch.\n\nDie Aussage ist falsch.",
+      "Die Dimensionen sind unterscheidbar und nicht automatisch mitabgedeckt. Wer ausschließlich Frontstage digitalisiert, hat damit weder Backstage-Prozesse noch Produkt-Digitalisierung zwingend vollständig erledigt. Konzentration auf eine Dimension ersetzt nicht die anderen. Die Aussage behauptet fälschlich eine Vollabdeckung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.34",
+    "title": "Prüfungsdruck: Dimensionen, Strategie und Erfolgskriterium",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine Digitalisierungsstrategie entsteht nur dann, wenn alle drei Dimensionen gleichzeitig und ohne Schwerpunktsetzung bearbeitet werden.",
+      "Erfolgreiche digitale Transformation erweitert sinnvolle Aspekte wie Arbeitsschrittfolgen, Kommunikation oder Kundenbedürfnisse durch digitale Technologien.",
+      "„Digital Business“ bezeichnet im Gesamten die Digitalisierung des Unternehmens infolge dieser strategischen Ausrichtung.",
+      "Als Kunde im Frontstage-Sinn kommt ausschließlich eine Privatperson infrage; Unternehmen und öffentliche Institutionen scheiden aus.",
+      "Backstage, Frontstage und Produkt-Digitalisierung sind drei unterscheidbare Angriffsflächen für Digitalisierungsvorhaben; sie zu vermengen, erschwert eine klare Strategie."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine Digitalisierungsstrategie entsteht nicht erst durch den Zwang, alle drei Dimensionen gleichzeitig und ohne Schwerpunkt zu bearbeiten. Gerade die gezielte Konzentration auf eine oder mehrere Dimensionen ermöglicht die Ableitung. Ohne Schwerpunktsetzung wird die Strategie unklar. Die Behauptung des Alle-drei-Zwangs trifft die Logik nicht.\n\nDie Aussage ist falsch.",
+      "Erfolgreiche digitale Transformation erweitert sinnvolle Aspekte durch digitale Technologien. Genannt werden unter anderem Abfolge von Arbeitsschritten, Kommunikation und Berücksichtigung von Kundenbedürfnissen. Nutzen und Passung zählen, nicht Technik um ihrer selbst willen. Die Aussage beschreibt diesen Erfolgsmaßstab korrekt.\n\nDie Aussage ist wahr.",
+      "Digital Business bezeichnet im Gesamten die Digitalisierung des Unternehmens infolge der dimensionalen und strategischen Ausrichtung. Der Begriff fasst den unternehmerischen Wandel, nicht nur eine einzelne Maßnahme. Strategie und Dimensionen münden in dieses Gesamtbild. Die Aussage trifft den Begriff.\n\nDie Aussage ist wahr.",
+      "Kunde im Frontstage-Sinn kann Privatperson, Unternehmen oder öffentliche Institution sein. Die Verengung auf ausschließlich Privatpersonen ist falsch und widerspricht der genannten Breite. Unternehmen und Institutionen scheiden nicht aus. Die Aussage verengt den Kundenbegriff unzulässig.\n\nDie Aussage ist falsch.",
+      "Backstage, Frontstage und Produkt-Digitalisierung sind drei unterscheidbare Angriffsflächen. Sie zu vermengen erschwert Schwerpunktsetzung und eine klare Strategieableitung. Das Ordnungsraster hilft gerade, Vorhaben sauber zu trennen. Die Aussage hält diesen strategischen Nutzen fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.35",
+    "title": "Kundenbegriff, Enden und interne Steuerung unter Prüfungsdruck",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Weil Frontstage kundenorientiert ist, kann der Kunde begrifflich nur eine Privatperson sein; Unternehmen und öffentliche Institutionen scheiden aus.",
+      "Ein Geschäftsprozess mit den alternativen Abschlüssen „Versand“ und „Abholung“ verletzt die Definition, weil nur ein Ende erlaubt wäre.",
+      "Digitale Systeme können intern je nach Lagerstand weitere Prozesse anstoßen und den Kunden über den Status informieren.",
+      "Dokumentation und Prozessmodell dienen unter anderem der Kommunikation und dem Überblick.",
+      "Wertschöpfung im internen Fokus meint, dass aus dem Ressourceneinsatz Produkte und Dienstleistungen erstellt und damit Wert geschaffen wird."
+    ],
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Kundenorientierung heißt nicht Privatperson-only. Kunde kann ausdrücklich Privatperson, Unternehmen oder öffentliche Institution sein. Frontstage schließt diese Arten nicht aus, auch wenn der Blick kundenorientiert ist. Die Verengung auf Privatpersonen widerspricht der Breite des Begriffs.\n\nDie Aussage ist falsch.",
+      "Ein oder mehrere definierte Enden sind erlaubt. Alternative Abschlüsse wie Versand und Abholung passen zur Definition und verletzen sie nicht. Die Behauptung, nur ein Ende sei erlaubt, ist zu eng und widerspricht der Prozessdefinition. Der Bestellprozess mit zwei Enden bleibt ein gültiger Geschäftsprozess.\n\nDie Aussage ist falsch.",
+      "Digitale Systeme können intern je nach Lagerstand weitere Prozesse anstoßen und den Kunden über den Status informieren. Backstage-Steuerung und Frontstage-Transparenz greifen hier ineinander. Das Bestellbeispiel macht genau diese Kopplung greifbar. Die Aussage beschreibt den Ablauf korrekt.\n\nDie Aussage ist wahr.",
+      "Dokumentation und Prozessmodell dienen der Kommunikation und dem Überblick im Unternehmen. Mitarbeitende können Abläufe teilen und verstehen; neue Kräfte finden Orientierung. Geheimhaltung vor der Belegschaft ist nicht der Zweck. Die Aussage hält die zentralen Zwecke korrekt fest.\n\nDie Aussage ist wahr.",
+      "Interner Fokus meint wirtschaftliche Ressourcennutzung zur Erstellung von Produkten und Dienstleistungen. Dabei soll Wert geschaffen werden; genau das heißt Wertschöpfung im beschriebenen Sinn. Der Begriff verbindet Ressourceneinsatz und Ergebnis. Die Aussage fasst diesen Zusammenhang treffend.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "WISO 4.1.36",
+    "title": "Gesamtzusammenhang digitale Transformation",
+    "context": "Analysieren Sie die digitale Transformation und die Digitalisierung in Unternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Technologieeinsatz verändert interne Prozesse, Kundenkontakt und die Gestaltung von Marktangeboten – diese Felder gemeinsam beschreiben den unternehmerischen Wandel der digitalen Transformation.",
+      "Wenn ein Unternehmen sinnvolle Abläufe digital erweitert, die Kundenschnittstelle verbessert und Produkte erlebbarer macht, bewegt es sich entlang der drei Dimensionen Richtung Digital Business.",
+      "Erfolgreiche digitale Transformation besteht darin, Technologie um ihrer selbst willen einzuführen, auch wenn Nutzen und Kundenerlebnis dadurch sinken.",
+      "Eine Verengung der Digitalisierung auf reine Unterhaltungselektronik ohne Bezug zu Unternehmensprozessen oder Verwaltung widerspricht der definierten Reichweite.",
+      "Ein digital unterstützter Geschäftsprozess entsteht erst dann, wenn Arbeitsschritte durch Systeme erweitert bzw. gesteuert werden – nicht schon durch bloße Absichtserklärungen ohne Technikeinsatz."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Technologieeinsatz verändert interne Prozesse, Kundenkontakt und die Gestaltung von Marktangeboten. Gemeinsam beschreiben diese Felder den unternehmerischen Wandel der digitalen Transformation. Backstage, Frontstage und Angebot greifen ineinander. Die Aussage ordnet die Veränderungsfelder korrekt.\n\nDie Aussage ist wahr.",
+      "Wer sinnvolle Abläufe digital erweitert, die Kundenschnittstelle verbessert und Produkte erlebbarer macht, bewegt sich entlang der drei Dimensionen Richtung Digital Business. Konzentration, Strategieableitung und Unternehmensdigitalisierung bilden den Gesamtbogen. Die Aussage trifft diesen Weg.\n\nDie Aussage ist wahr.",
+      "Erfolg heißt sinnvolle Erweiterung und Stärkung von Nutzen und Erlebnis. Technologie um ihrer selbst willen einzuführen, während Nutzen und Kundenerlebnis sinken, widerspricht diesem Maßstab. Digitale Transformation misst sich am Mehrwert, nicht am bloßen Geräteeinsatz. Die Aussage kehrt den Erfolgsbegriff um.\n\nDie Aussage ist falsch.",
+      "Die definierte Reichweite umfasst Wirtschaft, Verwaltung und privaten Bereich sowie Unternehmensbeispiele. Eine Verengung auf reine Unterhaltungselektronik ohne Bezug zu Unternehmensprozessen oder Verwaltung widerspricht dieser Breite. Digitalisierung ist mehr als Consumer-Gadgets. Die Aussage hält den Widerspruch korrekt fest.\n\nDie Aussage ist wahr.",
+      "Ein digital unterstützter Geschäftsprozess entsteht, wenn Arbeitsschritte durch Systeme erweitert bzw. gesteuert werden. Bloße Absichtserklärungen ohne Technikeinsatz genügen nicht. Digitale Unterstützung setzt konkreten Systemeinsatz voraus. Die Aussage trifft diese Voraussetzung korrekt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.01",
+    "title": "Digitalisierte Produkte und Dienstleistungen",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie Digitalisierung Produkte und Dienstleistungen verändert:",
+    "statements": [
+      "Viele Produkte und Dienstleistungen haben sich durch die Digitalisierung verändert.",
+      "Bei den Wiener Linien wird der Kauf eines Fahrscheins mittlerweile durch eine App ergänzt; über ein Kundenkonto lassen sich Fahrkarten digital verwalten und vorweisen.",
+      "Neue digitale Möglichkeiten lassen Geschäftsmodelle strukturell unverändert und schaffen keine technologiebasierten Angebote.",
+      "Dienstleister wie Gurkerl, Flink oder Mjam sowie Händler wie Billa, Hofer oder Interspar bieten an, Einkäufe nach Hause zu liefern.",
+      "All diese neuen Möglichkeiten setzen ausdrücklich nicht auf Technologie, sondern ersetzen Informationstechnologie durch rein analoge Schalter."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zehn Jahre zurückgedacht sieht der Alltag oft anders aus. Die Art und Weise, wie Produkte und Dienstleistungen in der digitalisierten Welt verwendet werden, hat sich gegenüber früher verschoben. Digitalisierung ist hier nicht ein einzelnes Gerät, sondern die veränderte Nutzung. Fahrschein, Einkauf und Lieferung sind greifbare Beispiele dafür.\n\nDie Aussage ist wahr.",
+      "Papierfahrschein und App stehen nebeneinander, nicht als Entweder-oder. Der Kauf bei den Wiener Linien wird durch eine App ergänzt. Über ein Kundenkonto lassen sich Fahrkarten digital verwalten und vorweisen, etwa die Jahreskarte. Ergänzung heißt: der digitale Weg tritt hinzu, ohne dass analoge Wege zwingend verschwinden müssen. Technologie ändert hier die Dienstleistung des öffentlichen Verkehrs.\n\nDie Aussage ist wahr.",
+      "Gerade das Gegenteil trifft zu: neue Möglichkeiten setzen auf Technologie und verändern bzw. ermöglichen neue Geschäftsmodelle. App-Fahrschein und Lebensmittellieferung sind nicht bloß alte Abläufe mit neuem Etikett, sondern technologiegestützte Angebote. Wer strukturelle Unveränderlichkeit behauptet, streicht genau diesen Modellwandel und verkennt den IT-Hebel.\n\nDie Aussage ist falsch.",
+      "Zwei Gruppen, ein Muster. Externe Dienstleister liefern, und Lebensmittelhändler selbst tun dasselbe. Über eine Webseite stellen Kundinnen und Kunden den Einkauf zusammen und können ihn unter bestimmten Bedingungen nach Hause geliefert bekommen. Die genannten Namen machen die veränderte Dienstleistung im Handel greifbar und zeigen den digitalen Kanal.\n\nDie Aussage ist wahr.",
+      "Technologie ist die Voraussetzung, nicht das Gegenteil. All diese neuen Möglichkeiten setzen auf Technologie. Durch den Einsatz von Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. Analog-only als Ersatz der IT widerspricht diesem Zusammenhang und kehrt die Richtung um.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.02",
+    "title": "Was ein Geschäftsmodell beschreibt",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition des Geschäftsmodells:",
+    "statements": [
+      "Ein Geschäftsmodell beschreibt, wie ein Unternehmen auf Basis einer Geschäftsidee ein Produkt oder eine Dienstleistung erzeugt, bereitstellt und vertreibt, um nach Gegenüberstellung eingesetzter Ressourcen und Einnahmen einen Gewinn zu erwirtschaften.",
+      "Diese Gewinnentstehung wird als Wertschöpfung bezeichnet.",
+      "Als Geschäftsmodell gilt allein die Eintragung einer Marke; Erzeugung, Bereitstellung, Vertrieb und Gewinnspielraum bleiben dabei unerheblich.",
+      "Durch den Einsatz von Informationstechnologie können sich Produkte, Dienstleistungen und Geschäftsmodelle verändern.",
+      "Wertschöpfung meint ausschließlich die Erhöhung der Mitarbeiterzahl, unabhängig von Ressourcen, Einnahmen und Gewinn."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Geschäftsidee allein ist noch kein Modell. Der Bogen reicht von der Idee über Erzeugung, Bereitstellung und Vertrieb bis zur Gegenüberstellung von Ressourcen und Einnahmen. Ziel ist Gewinn. Genau diese Kette heißt Geschäftsmodell. Wer nur die Idee nennt oder nur den Verkauf, lässt Stufen weg und trifft die Definition nicht.\n\nDie Aussage ist wahr.",
+      "Wertschöpfung ist hier kein lockeres Modewort. Sie steht für das Erwirtschaften eines Gewinns nach der Gegenüberstellung von eingesetzten Ressourcen und Einnahmen. Wert entsteht also, wenn Einnahmen die eingesetzten Mittel in dieser Betrachtung übersteigen, nicht schon beim bloßen Vorhandensein einer App oder einer Marke.\n\nDie Aussage ist wahr.",
+      "Eine Markeneintragung ersetzt weder Erzeugung noch Bereitstellung noch Vertrieb und auch nicht die Gegenüberstellung von Ressourcen und Einnahmen. Ohne diese Stufen fehlt die Logik, aus der Gewinn und Wertschöpfung folgen. Die Verengung auf die Marke allein trifft die Definition des Geschäftsmodells nicht.\n\nDie Aussage ist falsch.",
+      "IT sitzt am Hebel, nicht nur an der Schreibtischlampe. Durch Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. App-Fahrschein, Lieferhandel, Webshop und Streaming sind Ausprägungen genau dieser Veränderung. Der Zusammenhang ist betrieblich und marktseitig zugleich greifbar.\n\nDie Aussage ist wahr.",
+      "Mitarbeiterzahl ist kein Ersatz für die Gewinnlogik. Wertschöpfung hängt an der Gegenüberstellung von Ressourcen und Einnahmen mit dem Ziel eines Gewinns. Wer nur Headcount zählt und Einnahmen sowie Gewinn ausblendet, verfehlt den Begriff und vertauscht Personalstatistik mit Wertschöpfung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.03",
+    "title": "IT-Einsatz und Wertschöpfung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung:",
+    "statements": [
+      "Der Einsatz von Technologie schafft neue Möglichkeiten, Produkte und Dienstleistungen mithilfe von Geschäftsprozessen zu erstellen, bereitzustellen und zu vertreiben.",
+      "Darauf aufbauend kann ein Wert für Unternehmen und Kunden generiert werden.",
+      "Dieser Wert kann durch den Einsatz von Technologie multipliziert werden, etwa indem eine größere Anzahl an Kunden erreicht oder Produkte individualisiert angeboten werden.",
+      "Multiplikation des Werts bedeutet ausschließlich, dass Buchhaltungskonten umbenannt werden, ohne Reichweite oder Individualisierung.",
+      "Der Wirkungszusammenhang zwischen IT-Einsatz und Wertschöpfung beschränkt sich auf die interne Buchhaltung und hat mit Produkten, Dienstleistungen oder Kunden nichts zu tun."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Geschäftsprozesse sind das Gelenk. Technologie eröffnet neue Wege, Produkte und Dienstleistungen zu erstellen, bereitzustellen und zu vertreiben, und zwar mithilfe dieser Prozesse. Die drei Verben spiegeln die Logik des Geschäftsmodells. Ohne Prozess bliebe IT ein Gerät ohne Ablauf und ohne Wertschöpfungskette.\n\nDie Aussage ist wahr.",
+      "Zwei Empfänger, ein Satz. Der generierte Wert gilt Unternehmen und Kunden, nicht nur der einen Seite. Kundennutzen ohne betrieblichen Wert oder betrieblicher Wert ohne Kundenbezug wären unvollständig. Darauf aufbauend entsteht der Wert, den Technologie und Prozesse gemeinsam tragen. Beide Seiten gehören zur Aussage.\n\nDie Aussage ist wahr.",
+      "Multiplizieren heißt hier Reichweite oder Passung, nicht Zauberei. Durch Informations- und Kommunikationstechnologie kann etwa eine größere Anzahl an Kunden erreicht werden, oder Produkte werden individualisiert angeboten. Beides steigert den Wert durch Technologie und macht den Multiplikationsgedanken greifbar.\n\nDie Aussage ist wahr.",
+      "Umbenannte Buchhaltungskonten ersetzen weder mehr Kunden noch individualisierte Angebote. Die Multiplikation des Werts meint konkrete Hebel wie Reichweite und Passung, nicht kosmetische Buchhaltungsbegriffe. Wer nur Konten umbenennt, multipliziert keinen Wert im beschriebenen Sinn.\n\nDie Aussage ist falsch.",
+      "Wertschöpfung verbindet Technologie, Geschäftsprozesse und Wert für Unternehmen und Kunden. Eine Verengung allein auf interne Buchhaltung trennt genau diese Glieder und trifft den Wirkungszusammenhang nicht. Produkte, Dienstleistungen und Kunden bleiben Teil der Kette, nicht außen vor.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.04",
+    "title": "Klassischer Webshop",
+    "context": "Bewerten Sie die folgenden Aussagen zum Webshop als technologiebasiertem Geschäftsmodell:",
+    "statements": [
+      "Beim klassischen Webshop können Sie Produkte direkt online bestellen; Amazon.de und Zalando.de sind Beispiele dafür.",
+      "Über den Webshop werden Güter direkt an den Kunden oder an einzelne Unternehmen verkauft.",
+      "Ein Webshop wird im Unterschied zum Online-Handelsplatz von einem Verkäufer betrieben.",
+      "Für einen klassischen Webshop ist ein physisches Ladengeschäft mit Anprobe zwingend erforderlich; ohne Filiale gibt es keinen Webshop.",
+      "Der klassische Webshop ist kein Beispiel für ein durch Informationstechnologie ermöglichtes Geschäftsmodell."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Bestellen ohne Ladenregal ist ein zentrales IT-Beispiel. Klassischer Webshop heißt: Produkte werden direkt online bestellt. Amazon.de und Zalando.de stehen für diesen Kanal. Es geht um den direkten Verkauf im Netz, noch nicht um eine Plattform vieler privater Anbieter. Genau diese Direktheit kennzeichnet den Webshop.\n\nDie Aussage ist wahr.",
+      "Kunde und Unternehmen sitzen beide am Ende der Lieferung. Güter gehen direkt an den Kunden oder an einzelne Unternehmen. Der Webshop ist damit nicht auf den privaten Haushalt beschränkt. B2C und ausgewählte B2B-Lieferungen passen zum Modell. Die Aussage hält diese Empfängerbreite korrekt fest.\n\nDie Aussage ist wahr.",
+      "Ein Betreiber, nicht ein Marktplatz voller Privatanbieter. Der Webshop wird von einem Verkäufer betrieben, während auf dem Handelsplatz auch Privatpersonen Zugang haben, um anzubieten und zu verkaufen. Diese Betreiberfrage ist das Unterscheidungskriterium. Wer beides vermengt, verliert den Typenunterschied.\n\nDie Aussage ist wahr.",
+      "Ein Ladengeschäft mit Anprobe gehört nicht zur Definition des klassischen Webshops. Pure-Play-Webshops agieren online und brauchen gerade keine Filiale zur Warenbeschau. Die Pflicht zur Anprobe verwechselt Webshop mit stationärem Handel oder Clicks and Mortar und trifft das Modell falsch.\n\nDie Aussage ist falsch.",
+      "Viele Geschäftsmodelle wurden durch Informationstechnologie ermöglicht; der klassische Webshop gehört dazu. Bestellen, direkt verkaufen, ein Verkäufer: das ist IT-gestütztes Geschäftsmodell, nicht bloß eine digitale Visitenkarte ohne Handel. Die Verneinung dieses Beispielcharakters ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.05",
+    "title": "Online-Handelsplatz",
+    "context": "Bewerten Sie die folgenden Aussagen zum Online-Handelsplatz im Unterschied zum Webshop:",
+    "statements": [
+      "Ein Online-Handelsplatz ist eine online Umgebung für Käufer und Verkäufer, über die Produkte umgesetzt werden können.",
+      "Im Gegensatz zum Webshop haben hier auch Privatpersonen Zugang zur Plattform, um Produkte anzubieten und zu verkaufen.",
+      "willhaben.at und eBay.de sind Beispiele für solche Handelsplätze.",
+      "Der Handelsplatzbetreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung; Interessierte können suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen.",
+      "Ein Handelsplatzbetreiber stellt weder Plattform noch Zugang bereit; Käufer und Verkäufer müssen sich ausschließlich analog auf Flohmärkten treffen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Umgebung statt Einzelregal. Käufer und Verkäufer treffen in einer online Umgebung zusammen, über die Produkte umgesetzt werden. Das Modell ist technologiebasiert wie der Webshop, aber zweiseitig angelegt. Plattform und Zugang ersetzen den Ein-Verkäufer-Kanal. Genau diese Umgebung definiert den Handelsplatz.\n\nDie Aussage ist wahr.",
+      "Privatpersonen sind zugelassen, das ist der Gegensatz. Der Webshop hat einen Verkäufer als Betreiber; der Handelsplatz öffnet die Plattform auch für Private, die anbieten und verkaufen. Zugang für viele Anbieter unterscheidet die Typen klar. Die Aussage trifft dieses Unterscheidungsmerkmal korrekt.\n\nDie Aussage ist wahr.",
+      "Zwei Adressen, ein Typ. willhaben.at und eBay.de stehen für die zweiseitige Plattform, nicht für den Ein-Verkäufer-Webshop. Die Beispiele machen den Handelsplatz greifbar und zeigen, wie Käufer und Verkäufer online zusammenkommen. Namensnennung ersetzt hier die abstrakte Typbeschreibung.\n\nDie Aussage ist wahr.",
+      "Zugang, Suche, Kontakt, Preis: das ist die Kette des Betreibers. Interessierte Käufer können nach Produkten suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen. Preisfindung läuft zwischen den Parteien, während die Plattform den Raum stellt. Die Aussage beschreibt diese Rolle korrekt.\n\nDie Aussage ist wahr.",
+      "Der Betreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung. Ein Zwang zu rein analogen Flohmärkten ohne Plattform trifft das Online-Modell nicht. Wer Plattform und Zugang streicht, verfehlt den digitalen Handelsplatz und kehrt zur rein physischen Begegnung zurück.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "WISO 4.2.06",
+    "title": "Virtuelle Umgebung und soziales Netzwerk",
+    "context": "Bewerten Sie die folgenden Aussagen zu sozialen Netzwerken als digitalem Geschäftsmodell:",
+    "statements": [
+      "Ein digitales Geschäftsmodell kann im Anbieten einer virtuellen Umgebung bestehen, einer online Gemeinschaft, auch bekannt als soziales Netzwerk.",
+      "Facebook, X und LinkedIn sind Beispiele dafür.",
+      "Personen mit gleichen Interessensschwerpunkten können sich dort austauschen und mit Freunden in Kontakt treten.",
+      "Geschäftsmodelle dieser Art verdienen ihr Geld unter anderem durch den Verkauf von Werbefläche.",
+      "Eine online Gemeinschaft setzt voraus, dass alle Mitglieder zugleich in demselben physischen Laden stehen und dort Waren anfassen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gemeinschaft im Netz ist ein digitales Geschäftsmodell. Virtuelle Umgebung, online Gemeinschaft und soziales Netzwerk meinen denselben Raum, in dem Personen zusammenkommen, nicht den Direktverkauf eines einzelnen Lagers. Austausch und Kontakt tragen das Modell. Genau diese Umgebung beschreibt die Aussage.\n\nDie Aussage ist wahr.",
+      "Drei Namen, ein Typ. Facebook, X und LinkedIn stehen als Beispiele der virtuellen Umgebung. Unterschiedliche Plattformen, dieselbe Modellklasse: Austausch und Kontakt statt Ein-Verkäufer-Webshop. Die Beispiele machen die Klasse greifbar und trennen sie vom klassischen Handelskanal.\n\nDie Aussage ist wahr.",
+      "Gleiche Interessen und Freunde sind der Nutzungskern. Austausch und Kontakt tragen die Gemeinschaft, bevor von Einnahmen die Rede ist. Ohne diesen sozialen Zweck wäre die Umgebung nur eine leere Website ohne Bindung. Die Aussage hält den Nutzungskern korrekt fest und ordnet ihn dem Modell zu.\n\nDie Aussage ist wahr.",
+      "Unter anderem, nicht ausschließlich. Verkauf von Werbefläche ist eine genannte Einnahmequelle dieser Modellart. Die Formulierung lässt andere Quellen offen, nennt aber Werbung ausdrücklich als Finanzierungsweg. Geld verdienen über Fläche ist Teil der Geschäftsmodelllogik sozialer Netzwerke.\n\nDie Aussage ist wahr.",
+      "Soziale Netzwerke sind virtuelle Umgebungen im digitalen Raum. Ein gemeinsamer physischer Laden mit Warenanfassen gehört nicht zur Definition und würde Pure-Play-Gemeinschaften mit stationärem Handel verwechseln. Online-Gemeinschaft setzt keinen gemeinsamen Laden voraus. Die Behauptung trifft das Modell falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  }
+]
