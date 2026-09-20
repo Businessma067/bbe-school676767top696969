@@ -64,7 +64,6 @@ function productsItem(_track: ExamTrack): NavItem {
     isRoute: true,
     activeExact: [
       "/products",
-      "/products/lite-bbe-course",
       "/products/full-course",
       "/wiso/products",
       "/wiso/products/full-course",
@@ -127,18 +126,6 @@ const wisoFullCourseItem: NavItem = {
     "/wiso/products/full-course-math",
     "/wiso/products/full-course-economics",
     "/wiso/products/full-course-german",
-  ],
-};
-
-const lightCourseItem: NavItem = {
-  label: "Light course",
-  href: "/products/lite-bbe-course-subjects",
-  isRoute: true,
-  activePrefixes: [
-    "/products/lite-bbe-course-subjects",
-    "/products/lite-bbe-course-math",
-    "/products/lite-bbe-course-english",
-    "/practice",
   ],
 };
 
@@ -249,7 +236,6 @@ export function navItemsForAccess(
   if (!access.hasLite && !access.hasFull) return guestNavItems(track);
 
   const items: NavItem[] = [examInfoItem(track), productsItem(track), demoCourseItem(track)];
-  if (access.hasLite) items.push(lightCourseItem);
   if (access.hasFull) items.push(fullCourseItem);
   items.push(mockExamsItem(track), mockBuilderItem(track), gamesItem(track));
   return items;

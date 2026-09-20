@@ -60,7 +60,7 @@ function stateFromEnrollments(
       signedIn: true,
       email,
       tier: "full",
-      productSlugs: ["full-course", "lite-bbe-course", WISO_FULL_COURSE_SLUG, "demo-practice"],
+      productSlugs: ["full-course", WISO_FULL_COURSE_SLUG, "demo-practice"],
     };
   }
   const productSlugs = enrollments.map((e) => e.product_slug);

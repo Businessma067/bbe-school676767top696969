@@ -44,10 +44,6 @@ const PRIVATE_PATH_PREFIXES = [
   "/wiso/matching",
   "/wiso/tutor-exam",
   "/products/custom-mock-builder",
-  "/products/lite-bbe-course-subjects",
-  "/products/lite-bbe-course-math",
-  "/products/lite-bbe-course-english",
-  "/products/lite-bbe-course-economics",
 ] as const;
 
 /** Exact paths that redirect or must not be indexed (prefix rules would over-match). */

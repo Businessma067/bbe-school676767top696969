@@ -7,7 +7,6 @@ import { SITE_ORIGIN } from "@/lib/i18n/locale-path";
 /** Product hero remakes in public/ — prefer over Lovable CDN asset URLs. */
 const FULL_COURSE_PRODUCT_IMAGE = "/full-course-product-v2.png";
 const WISO_COURSE_PRODUCT_IMAGE = "/full-wiso-course-product-v3.png";
-const LITE_COURSE_PRODUCT_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_PRODUCT_IMAGE = "/demo-practice-product-v2.png";
 
 /** Absolute URL for Open Graph / Twitter images (crawlers reject relative paths). */
@@ -51,7 +50,6 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/products": absoluteMediaUrl(FULL_COURSE_PRODUCT_IMAGE),
   "/products/demo-practice": absoluteMediaUrl(DEMO_COURSE_PRODUCT_IMAGE),
   "/products/full-course": absoluteMediaUrl(FULL_COURSE_PRODUCT_IMAGE),
-  "/products/lite-bbe-course": absoluteMediaUrl(LITE_COURSE_PRODUCT_IMAGE),
   "/demo-practice": absoluteMediaUrl(economicsAsset.url),
   // Economics practice: subject card art (distinct from homepage product poster)
   "/demo-practice/economics": absoluteMediaUrl(economicsAsset.url),

@@ -10,7 +10,6 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 /** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 const WISO_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
-const LITE_COURSE_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_IMAGE = "/demo-practice-product-v2.png";
 
 const PROVIDER = {
@@ -20,7 +19,7 @@ const PROVIDER = {
   logo: "https://bbe-school.com/logo.png",
 } as const;
 
-/** Course structured data for the three offerings listed on this page. */
+/** Course structured data for the offerings listed on this page. */
 const courseListJsonLd = [
   {
     "@context": "https://schema.org",
@@ -36,22 +35,6 @@ const courseListJsonLd = [
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: "https://bbe-school.com/products/demo-practice",
-    },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "Lite BBE Course",
-    description:
-      "A curated 950+ question database with step-by-step logic under every statement, built for steady self-paced WU Vienna BBE preparation.",
-    url: "https://bbe-school.com/products/lite-bbe-course",
-    provider: PROVIDER,
-    offers: {
-      "@type": "Offer",
-      price: "279",
-      priceCurrency: "EUR",
-      availability: "https://schema.org/InStock",
-      url: "https://bbe-school.com/products/lite-bbe-course",
     },
   },
   {
@@ -150,15 +133,6 @@ const products: Product[] = [
     badge: "WiSo track",
     accent: "wiso",
   },
-  {
-    title: "Lite BBE Course",
-    image: LITE_COURSE_IMAGE,
-    description:
-      "A 950+ question database with step by step logic under every statement. For self paced preparation.",
-    cta: "Coming soon",
-    disabled: true,
-    accent: "bbe",
-  },
 ];
 
 export function ProductsPage() {
@@ -188,7 +162,7 @@ export function ProductsPage() {
             </p>
           </div>
 
-          <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-3">
             {products.map((p) => {
               const isFullBbe = p.title === "Full BBE Course";
               const isFullWiso = p.title === "Full WiSo Course";

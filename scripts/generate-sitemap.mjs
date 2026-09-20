@@ -38,7 +38,6 @@ const PUBLIC_LOCALIZABLE = [
   "/products",
   "/products/demo-practice",
   "/products/full-course",
-  "/products/lite-bbe-course",
   "/demo-practice",
 ];
 

@@ -68,10 +68,6 @@ import { Route as WisoEconomicsGermanRouteImport } from './routes/wiso.economics
 import { Route as WisoDemoPracticeRouteImport } from './routes/wiso.demo-practice'
 import { Route as WisoAdmissionRouteImport } from './routes/wiso.admission'
 import { Route as TutorExamSubjectRouteImport } from './routes/tutor-exam.$subject'
-import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
-import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
-import { Route as ProductsLiteBbeCourseEnglishRouteImport } from './routes/products.lite-bbe-course-english'
-import { Route as ProductsLiteBbeCourseRouteImport } from './routes/products.lite-bbe-course'
 import { Route as ProductsFullCourseWisoEconomicsRouteImport } from './routes/products.full-course-wiso-economics'
 import { Route as ProductsFullCourseSubjectsRouteImport } from './routes/products.full-course-subjects'
 import { Route as ProductsFullCourseMathRouteImport } from './routes/products.full-course-math'
@@ -435,29 +431,6 @@ const TutorExamSubjectRoute = TutorExamSubjectRouteImport.update({
   id: '/$subject',
   path: '/$subject',
   getParentRoute: () => TutorExamRoute,
-} as any)
-const ProductsLiteBbeCourseSubjectsRoute =
-  ProductsLiteBbeCourseSubjectsRouteImport.update({
-    id: '/lite-bbe-course-subjects',
-    path: '/lite-bbe-course-subjects',
-    getParentRoute: () => ProductsRoute,
-  } as any)
-const ProductsLiteBbeCourseMathRoute =
-  ProductsLiteBbeCourseMathRouteImport.update({
-    id: '/lite-bbe-course-math',
-    path: '/lite-bbe-course-math',
-    getParentRoute: () => ProductsRoute,
-  } as any)
-const ProductsLiteBbeCourseEnglishRoute =
-  ProductsLiteBbeCourseEnglishRouteImport.update({
-    id: '/lite-bbe-course-english',
-    path: '/lite-bbe-course-english',
-    getParentRoute: () => ProductsRoute,
-  } as any)
-const ProductsLiteBbeCourseRoute = ProductsLiteBbeCourseRouteImport.update({
-  id: '/lite-bbe-course',
-  path: '/lite-bbe-course',
-  getParentRoute: () => ProductsRoute,
 } as any)
 const ProductsFullCourseWisoEconomicsRoute =
   ProductsFullCourseWisoEconomicsRouteImport.update({
@@ -891,10 +864,6 @@ export interface FileRoutesByFullPath {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
-  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
-  '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
-  '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
-  '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/demo-practice': typeof WisoDemoPracticeRouteWithChildren
@@ -1011,10 +980,6 @@ export interface FileRoutesByTo {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
-  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
-  '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
-  '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
-  '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/economics-german': typeof WisoEconomicsGermanRoute
@@ -1137,10 +1102,6 @@ export interface FileRoutesById {
   '/products/full-course-math': typeof ProductsFullCourseMathRoute
   '/products/full-course-subjects': typeof ProductsFullCourseSubjectsRoute
   '/products/full-course-wiso-economics': typeof ProductsFullCourseWisoEconomicsRoute
-  '/products/lite-bbe-course': typeof ProductsLiteBbeCourseRoute
-  '/products/lite-bbe-course-english': typeof ProductsLiteBbeCourseEnglishRoute
-  '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
-  '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
   '/wiso/admission': typeof WisoAdmissionRoute
   '/wiso/demo-practice': typeof WisoDemoPracticeRouteWithChildren
@@ -1272,10 +1233,6 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
-    | '/products/lite-bbe-course'
-    | '/products/lite-bbe-course-english'
-    | '/products/lite-bbe-course-math'
-    | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/demo-practice'
@@ -1392,10 +1349,6 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
-    | '/products/lite-bbe-course'
-    | '/products/lite-bbe-course-english'
-    | '/products/lite-bbe-course-math'
-    | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/economics-german'
@@ -1517,10 +1470,6 @@ export interface FileRouteTypes {
     | '/products/full-course-math'
     | '/products/full-course-subjects'
     | '/products/full-course-wiso-economics'
-    | '/products/lite-bbe-course'
-    | '/products/lite-bbe-course-english'
-    | '/products/lite-bbe-course-math'
-    | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
     | '/wiso/admission'
     | '/wiso/demo-practice'
@@ -2051,34 +2000,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/tutor-exam/$subject'
       preLoaderRoute: typeof TutorExamSubjectRouteImport
       parentRoute: typeof TutorExamRoute
-    }
-    '/products/lite-bbe-course-subjects': {
-      id: '/products/lite-bbe-course-subjects'
-      path: '/lite-bbe-course-subjects'
-      fullPath: '/products/lite-bbe-course-subjects'
-      preLoaderRoute: typeof ProductsLiteBbeCourseSubjectsRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/lite-bbe-course-math': {
-      id: '/products/lite-bbe-course-math'
-      path: '/lite-bbe-course-math'
-      fullPath: '/products/lite-bbe-course-math'
-      preLoaderRoute: typeof ProductsLiteBbeCourseMathRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/lite-bbe-course-english': {
-      id: '/products/lite-bbe-course-english'
-      path: '/lite-bbe-course-english'
-      fullPath: '/products/lite-bbe-course-english'
-      preLoaderRoute: typeof ProductsLiteBbeCourseEnglishRouteImport
-      parentRoute: typeof ProductsRoute
-    }
-    '/products/lite-bbe-course': {
-      id: '/products/lite-bbe-course'
-      path: '/lite-bbe-course'
-      fullPath: '/products/lite-bbe-course'
-      preLoaderRoute: typeof ProductsLiteBbeCourseRouteImport
-      parentRoute: typeof ProductsRoute
     }
     '/products/full-course-wiso-economics': {
       id: '/products/full-course-wiso-economics'
@@ -2722,10 +2643,6 @@ interface ProductsRouteChildren {
   ProductsFullCourseMathRoute: typeof ProductsFullCourseMathRoute
   ProductsFullCourseSubjectsRoute: typeof ProductsFullCourseSubjectsRoute
   ProductsFullCourseWisoEconomicsRoute: typeof ProductsFullCourseWisoEconomicsRoute
-  ProductsLiteBbeCourseRoute: typeof ProductsLiteBbeCourseRoute
-  ProductsLiteBbeCourseEnglishRoute: typeof ProductsLiteBbeCourseEnglishRoute
-  ProductsLiteBbeCourseMathRoute: typeof ProductsLiteBbeCourseMathRoute
-  ProductsLiteBbeCourseSubjectsRoute: typeof ProductsLiteBbeCourseSubjectsRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -2738,10 +2655,6 @@ const ProductsRouteChildren: ProductsRouteChildren = {
   ProductsFullCourseMathRoute: ProductsFullCourseMathRoute,
   ProductsFullCourseSubjectsRoute: ProductsFullCourseSubjectsRoute,
   ProductsFullCourseWisoEconomicsRoute: ProductsFullCourseWisoEconomicsRoute,
-  ProductsLiteBbeCourseRoute: ProductsLiteBbeCourseRoute,
-  ProductsLiteBbeCourseEnglishRoute: ProductsLiteBbeCourseEnglishRoute,
-  ProductsLiteBbeCourseMathRoute: ProductsLiteBbeCourseMathRoute,
-  ProductsLiteBbeCourseSubjectsRoute: ProductsLiteBbeCourseSubjectsRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 

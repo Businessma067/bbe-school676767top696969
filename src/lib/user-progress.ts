@@ -6,9 +6,11 @@ import type { MockExamSession } from "@/lib/mock-exam-session";
 
 export type CourseSlug =
   | "demo-practice"
-  | "lite-bbe-course"
   | "full-course"
   | "wiso-full-course";
+
+/** Legacy BBE Lite SKU — still recognized for existing enrollments. */
+export const LITE_BBE_COURSE_SLUG = "lite-bbe-course" as const;
 
 export type Enrollment = {
   id: string;
@@ -18,8 +20,8 @@ export type Enrollment = {
   created_at: string;
 };
 
-/** BBE-track paid enrollments (WiSo is a separate SKU). */
-export const BBE_PAID_PRODUCT_SLUGS = ["full-course", "lite-bbe-course"] as const;
+/** BBE-track paid enrollments (WiSo is a separate SKU). Includes legacy Lite. */
+export const BBE_PAID_PRODUCT_SLUGS = ["full-course", LITE_BBE_COURSE_SLUG] as const;
 
 export const WISO_FULL_COURSE_SLUG = "wiso-full-course" as const;
 
@@ -77,7 +79,6 @@ export const COURSE_CATALOG: Record<
   { name: string; tier: string; href: string }
 > = {
   "demo-practice": { name: "Demo Practice Package", tier: "demo", href: "/demo-practice" },
-  "lite-bbe-course": { name: "Lite BBE Course", tier: "lite", href: "/products/lite-bbe-course-subjects" },
   "full-course": { name: "Full BBE Course", tier: "full", href: "/products/full-course-subjects" },
   "wiso-full-course": {
     name: "Full WiSo Course",

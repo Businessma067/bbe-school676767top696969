@@ -536,7 +536,7 @@ export function FullCourseProduct() {
           <CompareTable
             highlight="full"
             heading="How the Full Course stacks up"
-            subheading="Everything unlocked, side by side with the lighter options."
+            subheading="Everything unlocked, side by side with the free sample."
           />
 
           {/* FAQ */}

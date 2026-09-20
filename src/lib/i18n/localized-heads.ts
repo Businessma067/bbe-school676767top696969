@@ -27,7 +27,6 @@ import { Route as ParentsRoute } from "@/routes/parents";
 import { Route as DemoPracticeProductRoute } from "@/routes/products.demo-practice";
 import { Route as FullCourseRoute } from "@/routes/products.full-course";
 import { Route as ProductsRoute } from "@/routes/products.index";
-import { Route as LiteCourseRoute } from "@/routes/products.lite-bbe-course";
 import { Route as TermsRoute } from "@/routes/terms";
 import { Route as PrivacyRoute } from "@/routes/privacy";
 import { Route as LoginRoute } from "@/routes/login";
@@ -84,7 +83,6 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/products": () => headFrom(ProductsRoute),
   "/products/demo-practice": () => headFrom(DemoPracticeProductRoute),
   "/products/full-course": () => headFrom(FullCourseRoute),
-  "/products/lite-bbe-course": () => headFrom(LiteCourseRoute),
   "/demo-practice": () => headFrom(DemoPracticeRoute),
   "/login": () => headFrom(LoginRoute),
   "/signup": () => headFrom(SignupRoute),

@@ -20,7 +20,7 @@ const SKIP_TAGS = new Set([
  * truth: originals are cached per text node (across language changes) and
  * restored when switching back to English or re-translated into DE/UK.
  *
- * Study surfaces (full/lite course, games, mock builder, mock exams) skip
+ * Study surfaces (full course, games, mock builder, mock exams) skip
  * PageTranslator so authored copy (incl. German WiSo UI) is never rewritten.
  *
  * Important: when React updates live English UI (timers, ON/OFF labels, etc.),

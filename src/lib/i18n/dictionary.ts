@@ -39,7 +39,6 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Study tools": "Lernwerkzeuge",
     Reviews: "Bewertungen",
     "Full Course": "Vollkurs",
-    "Light course": "Light-Kurs",
     Dashboard: "Dashboard",
     "Sign in": "Anmelden",
     "Sign up": "Registrieren",
@@ -146,12 +145,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
     "Buy course · €449": "Kurs kaufen · 449 €",
-    "Lite BBE Course": "BBE-Kurs Lite",
-    "A 950+ question database with step by step logic under every statement. For self paced preparation.":
-      "Eine Datenbank mit 950+ Fragen und Schritt-für-Schritt-Logik unter jeder Aussage. Für Vorbereitung im eigenen Tempo.",
     "Coming soon": "Demnächst",
     "Unlock full access": "Vollzugang freischalten",
-    "Unlock lite access": "Lite-Zugang freischalten",
     "Start Practicing": "Jetzt üben",
     "✓ 100% Free • Instant web access": "✓ 100 % kostenlos • Sofortiger Web-Zugang",
 
@@ -230,7 +225,6 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Study tools": "Навчальні інструменти",
     Reviews: "Відгуки",
     "Full Course": "Повний курс",
-    "Light course": "Light курс",
     Dashboard: "Кабінет",
     "Sign in": "Увійти",
     "Sign up": "Зареєструватися",
@@ -337,12 +331,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
       "1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори.",
     "Buy course · €449": "Купити курс · €449",
-    "Lite BBE Course": "Курс BBE Lite",
-    "A 950+ question database with step by step logic under every statement. For self paced preparation.":
-      "База з 950+ питань із покроковою логікою під кожним твердженням. Для підготовки у власному темпі.",
     "Coming soon": "Незабаром",
     "Unlock full access": "Відкрити повний доступ",
-    "Unlock lite access": "Відкрити доступ Lite",
     "Start Practicing": "Почати практику",
     "✓ 100% Free • Instant web access": "✓ 100% безкоштовно • Миттєвий доступ",
 

@@ -8,12 +8,13 @@ import {
   peekAccessState,
   type AccessState,
 } from "@/lib/entitlements";
+import { LITE_BBE_COURSE_SLUG } from "@/lib/user-progress";
 
 export type AccountNavState = AccountNavAccess & { ready: boolean };
 
 function accessFromState(state: AccessState): AccountNavAccess {
   return {
-    hasLite: accessOwnsProduct(state, "lite-bbe-course"),
+    hasLite: accessOwnsProduct(state, LITE_BBE_COURSE_SLUG),
     hasFull: accessOwnsProduct(state, "full-course"),
     hasWisoFull: accessOwnsWisoFull(state),
   };
@@ -28,7 +29,8 @@ const GUEST_ACCESS: AccountNavAccess = {
 /**
  * Header chrome depends on which SKUs the account owns.
  * Demo / signed-out / unpaid accounts keep the guest marketing nav on every page.
- * BBE Lite/Full and WiSo Full are tracked separately so one track does not unlock the other.
+ * BBE Full and WiSo Full are tracked separately so one track does not unlock the other.
+ * Legacy Lite enrollments still count as paid BBE access for study tools.
  *
  * Uses the shared entitlements cache so remounting SiteHeader on navigation does not
  * flash guest nav while enrollments reload.
