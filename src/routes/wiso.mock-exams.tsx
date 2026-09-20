@@ -31,7 +31,7 @@ export function WisoMockExamsPlaceholder() {
         </p>
         <h1 className="mt-3 font-display text-3xl font-bold">WiSo Mock Exams</h1>
         <p className="mt-4 text-muted-foreground">
-          Full WiSo mocks will be built on this dedicated URL so they never mix with BBE exams.
+          Full WiSo mocks will live on this URL so they stay separate from BBE exams.
         </p>
         <LocalizedLink
           to="/wiso"

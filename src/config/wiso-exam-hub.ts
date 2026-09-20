@@ -97,7 +97,7 @@ export const WISO_EXAM_FORMAT = {
  * Do not hard-claim BBE’s 34×5 true/false layout as official WiSo format.
  */
 export const WISO_FORMAT_NOTE =
-  "WU confirms a 2-hour, in-person, entirely multiple-choice Aufnahmeprüfung at VIECON. The exact per-question layout (single-correct vs multi-select vs five true/false statements under one stem) is not spelled out in the public FAQ. Some recent prep and cycle descriptions mention roughly 34 questions with five statements each — treat that as unverified until WU publishes detail. Always confirm the current cycle on wu.ac.at.";
+  "WU confirms a 2-hour, in-person, entirely multiple-choice Aufnahmeprüfung at VIECON. The exact per-question layout (single-correct vs multi-select vs five true/false statements under one stem) is not spelled out in the public FAQ. Some recent prep and cycle descriptions mention roughly 34 questions with five statements each; treat that as unverified until WU publishes detail. Always confirm the current cycle on wu.ac.at.";
 
 /** Official economics study guide chapters (Wirtschaft verstehen, 2026/27). [WU] */
 export const WISO_ECONOMICS_CHAPTERS = [

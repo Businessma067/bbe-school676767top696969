@@ -49,7 +49,7 @@ export const Route = createFileRoute("/wiso/entrance-exam")({
       {
         property: "og:description",
         content:
-          "Independent overview of the WiSo Aufnahmeprüfung: structure, subjects, scoring, and preparation paths.",
+          "What the WiSo Aufnahmeprüfung covers: structure, subjects, scoring, and how to prepare.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -81,7 +81,7 @@ const faqs = [
   {
     question: "How is WiSo scored?",
     answer:
-      "With WU’s gemischtes Teilpunktesystem — the same partial-credit mechanism as BBE (credit for correct options, penalties for incorrect ones, floor at zero per question).",
+      "With WU’s gemischtes Teilpunktesystem, the same partial-credit mechanism as BBE (credit for correct options, penalties for incorrect ones, floor at zero per question).",
   },
   {
     question: "How many WiSo places are there?",
@@ -122,13 +122,13 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   { field: "Registration window", detail: WISO_EXAM_FORMAT.cycle.registrationWindow },
   { field: "Registration fee", detail: WISO_EXAM_FORMAT.cycle.registrationFee },
   { field: "OSA deadline", detail: WISO_EXAM_FORMAT.cycle.osaDeadline },
-  { field: "OSA graded?", detail: "No. Ungraded — but must be completed." },
+  { field: "OSA graded?", detail: "No. Ungraded, but it must be completed." },
   { field: "Enrollment window", detail: WISO_EXAM_FORMAT.cycle.enrollmentWindow },
   {
     field: "Scoring",
     detail: (
       <>
-        Gemischtes Teilpunktesystem — see{" "}
+        Gemischtes Teilpunktesystem; see{" "}
         <WisoTextLink to="/wiso/exam-scoring" className="inline-flex">
           WiSo Exam Scoring
         </WisoTextLink>
@@ -160,7 +160,7 @@ export function WisoEntranceExamPage() {
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Entrance Exam: Format, Topics & Preparation Guide"
-      lead="An independent overview of the WiSo Aufnahmeprüfung — what WU tests, how the two-stage process works, how scoring behaves, and how to start preparing without confusing WiSo with BBE."
+      lead="Here is what the WiSo Aufnahmeprüfung looks like in practice: what WU tests, how the two-stage process works, how scoring behaves, and how to start preparing without mixing WiSo up with BBE."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Open WiSo demo</WisoPrimaryButton>
@@ -171,15 +171,15 @@ export function WisoEntranceExamPage() {
       <div className="space-y-16">
         <WisoSection id="introduction" title="Introduction">
           <p>
-            WiSo — <em>Wirtschafts- und Sozialwissenschaften</em> — is WU Vienna’s German-taught bachelor
+            WiSo (<em>Wirtschafts- und Sozialwissenschaften</em>) is WU Vienna’s German-taught bachelor
             in Business, Economics and Social Sciences. When registrations exceed available places,
-            admission includes a written entrance exam. This hub is BBE School’s independent map of that
-            exam: format, subjects, scoring, difficulty patterns, and preparation paths.
+            admission includes a written entrance exam. This hub walks you through that exam the way a
+            prep teacher would: format, subjects, scoring, what usually feels hard, and where to start.
           </p>
           <p>
-            WiSo shares an admissions calendar with BBE but is a separate exam and applicant pool. If you
-            only remember one difference: the language pillar is German reading comprehension, not
-            English.
+            WiSo shares an admissions calendar with BBE but is a separate exam and a separate applicant
+            pool. If you only remember one difference, remember this: the language pillar is German
+            reading comprehension, not English.
           </p>
         </WisoSection>
 
@@ -218,15 +218,15 @@ export function WisoEntranceExamPage() {
 
         <WisoSection id="two-stage" title="Two-stage process">
           <p>
-            <strong>Stage 1 — Registration + Online Self-Assessment (OSA).</strong> Register in the
+            <strong>Stage 1: Registration + Online Self-Assessment (OSA).</strong> Register in the
             official window ({WISO_EXAM_FORMAT.cycle.registrationWindow}), pay{" "}
             {WISO_EXAM_FORMAT.cycle.registrationFee}, and fully complete the OSA by{" "}
-            {WISO_EXAM_FORMAT.cycle.osaDeadline}. The OSA is ungraded and does not affect ranking — but
+            {WISO_EXAM_FORMAT.cycle.osaDeadline}. The OSA is ungraded and does not affect ranking, but an
             unfinished OSA blocks you from the exam. If registrations do not exceed places, the written
             exam can be skipped.
           </p>
           <p>
-            <strong>Stage 2 — Aufnahmeprüfung.</strong> In-person only at VIECON on{" "}
+            <strong>Stage 2: Aufnahmeprüfung.</strong> In-person only at VIECON on{" "}
             {WISO_EXAM_FORMAT.cycle.examDate}. Entirely multiple choice across three content areas.
             Enrollment after passing (2026 cycle): {WISO_EXAM_FORMAT.cycle.enrollmentWindow}.
           </p>
@@ -238,17 +238,17 @@ export function WisoEntranceExamPage() {
             <SubjectCard
               icon={<BookOpen className="h-5 w-5" />}
               title="Economics"
-              body="Wirtschaftliche Grundkenntnisse from WU’s official study guide Wirtschaft verstehen (Feurstein, Fuhrmann et al.) — four chapters spanning foundations, sustainability, firms, and digitalisation."
+              body="Wirtschaftliche Grundkenntnisse from WU’s official study guide Wirtschaft verstehen (Feurstein, Fuhrmann et al.): four chapters covering foundations, sustainability, firms, and digitalisation."
             />
             <SubjectCard
               icon={<Calculator className="h-5 w-5" />}
               title="Mathematics"
-              body="Secondary-school business math: algebra, statistics, calculus, and logical reasoning under time pressure. No official WU math skriptum."
+              body="Secondary-school business math: algebra, statistics, calculus, and logical reasoning under time pressure. There is no official WU math skriptum."
             />
             <SubjectCard
               icon={<Languages className="h-5 w-5" />}
               title="German"
-              body="Academic German reading comprehension — interpretation and argument, not a grammar drill copied from BBE English."
+              body="Academic German reading comprehension focused on interpretation and argument, not a grammar drill copied from BBE English."
             />
           </div>
           <WisoInfoCallout label="Myth to ignore" tone="note">
@@ -270,7 +270,7 @@ export function WisoEntranceExamPage() {
             {WISO_ECONOMICS_CHAPTERS.map((ch) => (
               <li key={ch.id}>
                 <span className="font-semibold text-foreground">{ch.title}</span>
-                <span className="text-muted-foreground"> — {ch.topics}</span>
+                <span className="text-muted-foreground">: {ch.topics}</span>
               </li>
             ))}
           </ol>
@@ -325,10 +325,10 @@ export function WisoEntranceExamPage() {
 
         <WisoSection id="difficulty" title="What feels hard in practice">
           <p>
-            Math usually demands the most timed practice. Economics rewards precise reading of German
-            definitions from Wirtschaft verstehen. German reading rewards stamina and careful scope —
-            not last-week vocabulary lists. The larger intake versus BBE does not mean the paper is
-            “easy”; relative ranking still decides selection when the exam is held.
+            Math usually demands the most timed practice, while economics rewards careful reading of
+            German definitions from Wirtschaft verstehen. German reading is more about stamina and
+            careful scope than last-week vocabulary lists. The larger intake versus BBE does not mean
+            the paper is “easy”; when the exam is held, relative ranking still decides selection.
           </p>
         </WisoSection>
 
@@ -342,8 +342,9 @@ export function WisoEntranceExamPage() {
 
         <WisoSection id="prepare" title="How to prepare">
           <p>
-            Start with format and scoring, cover Wirtschaft verstehen (including WiSo-only chapters),
-            build German reading weekly, lock math fluency, then move to timed mocks on WiSo URLs.
+            Start with format and scoring, then work through Wirtschaft verstehen (including the
+            WiSo-only chapters), keep German reading going weekly, lock in math fluency, and only then
+            move to timed mocks on WiSo URLs.
           </p>
           <div className="flex flex-wrap gap-4">
             <WisoTextLink to="/wiso/exam-preparation">Full preparation sequence →</WisoTextLink>

@@ -39,7 +39,7 @@ export function WisoWuViennaPage() {
   return (
     <WisoExamShell
       h1="WU Vienna for WiSo Applicants"
-      lead="WiSo is WU’s large German-taught bachelor pathway. Same campus and prestige as BBE — different language of instruction, cohort size, and entrance-exam content."
+      lead="WiSo is WU’s large German-taught bachelor pathway. Same campus and prestige as BBE, but a different language of instruction, cohort size, and entrance-exam content."
       heroActions={
         <>
           <WisoPrimaryButton to="/wiso/entrance-exam">WiSo exam overview</WisoPrimaryButton>
@@ -57,7 +57,7 @@ export function WisoWuViennaPage() {
           ]}
         />
 
-        <WisoInfoCallout label="Independent guide" tone="official">
+        <WisoInfoCallout label="Unofficial guide" tone="official">
           BBE School is not affiliated with WU Vienna. Use official WU pages for binding rules, fees,
           and dates.
         </WisoInfoCallout>
@@ -66,7 +66,7 @@ export function WisoWuViennaPage() {
           <p>
             Triple-accredited WU education at a tuition level far below many UK/US peers, with a
             German-taught curriculum and far more places than BBE (~{WISO_EXAM_FORMAT.places} vs ~240).
-            The filter is still a timed multiple-choice exam with gemischtes Teilpunktesystem scoring —
+            The filter is still a timed multiple-choice exam with gemischtes Teilpunktesystem scoring,
             held in person at VIECON when demand exceeds supply.
           </p>
           <p>
@@ -79,8 +79,9 @@ export function WisoWuViennaPage() {
         <WisoSection id="exam-fit" title="How the entrance exam fits">
           <p>
             The Aufnahmeprüfung tests wirtschaftliche Grundkenntnisse (Wirtschaft verstehen), Mathematik,
-            and deutsches Sprachverständnis. Same campus reputation as BBE applicants aim for — different
-            language pillar and economics guide. Scoring mechanism matches BBE’s partial-credit engine.
+            and deutsches Sprachverständnis. You are aiming for the same campus reputation as BBE
+            applicants, with a different language pillar and economics guide. Scoring uses the same
+            partial-credit rules as BBE.
           </p>
           <div className="flex flex-wrap gap-4">
             <WisoTextLink to="/wiso/admission">Admission pipeline →</WisoTextLink>

@@ -31,7 +31,7 @@ export const Route = createFileRoute("/wiso/admission")({
       {
         property: "og:description",
         content:
-          "Registration, OSA, exam and enrollment for WiSo — independent overview with 2026 cycle dates.",
+          "Registration, OSA, exam, and enrollment for WiSo, with 2026 cycle dates you should still confirm on WU.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -63,7 +63,7 @@ const faqs = [
   {
     question: "Can I apply to BBE and WiSo?",
     answer:
-      "Yes. Fees are paid separately per programme (€50 each, non-refundable). Prepare for each exam’s language pillar (English vs German) — they are separate applicant pools.",
+      "Yes. Fees are paid separately per programme (€50 each, non-refundable). Prepare for each exam’s language pillar (English vs German), because they are separate applicant pools.",
   },
   {
     question: "When can I enroll after passing?",
@@ -85,11 +85,11 @@ const cycleDates: { field: string; detail: string }[] = [
 const stages = [
   {
     title: "1. Registration",
-    body: `Register in the official window (${WISO_EXAM_FORMAT.cycle.registrationWindow}). Pay the fee per programme — non-refundable even if you apply to multiple WU bachelors.`,
+    body: `Register in the official window (${WISO_EXAM_FORMAT.cycle.registrationWindow}). Pay the fee per programme; it is non-refundable even if you apply to multiple WU bachelors.`,
   },
   {
     title: "2. Online Self-Assessment (OSA)",
-    body: `Complete all OSA sections by ${WISO_EXAM_FORMAT.cycle.osaDeadline}. Six sections typically cover study info, a fachlicher Teil (German and English reading, basic math and economics), planning, expectations, and feedback. No time limit, not graded — unfinished OSA blocks advancement.`,
+    body: `Complete all OSA sections by ${WISO_EXAM_FORMAT.cycle.osaDeadline}. Six sections typically cover study info, a fachlicher Teil (German and English reading, basic math and economics), planning, expectations, and feedback. There is no time limit and it is not graded, but unfinished OSA blocks advancement.`,
   },
   {
     title: "3. Aufnahmeprüfung (if needed)",
@@ -105,7 +105,7 @@ export function WisoAdmissionPage() {
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Admission: Registration, OSA & Entrance Exam"
-      lead="Registration, the ungraded OSA, the written exam, and enrollment form one pipeline. Dates below are for the 2026 cycle — always confirm on official WU pages before you act."
+      lead="Registration, the ungraded OSA, the written exam, and enrollment form one pipeline. The dates below are for the 2026 cycle, so always confirm them on official WU pages before you act."
       heroActions={
         <>
           <WisoPrimaryButton to="/wiso/entrance-exam">Read the exam overview</WisoPrimaryButton>
@@ -126,7 +126,7 @@ export function WisoAdmissionPage() {
 
         <WisoInfoCallout label="Fees" tone="official">
           The registration fee is paid per programme and is non-refundable, even if you apply to multiple
-          WU bachelors. Figures and deadlines shift slightly each cycle — refresh from wu.ac.at.
+          WU bachelors. Figures and deadlines shift slightly each cycle, so refresh them from wu.ac.at.
         </WisoInfoCallout>
 
         <WisoSection id="pipeline" title="How the stages connect">
@@ -163,14 +163,17 @@ export function WisoAdmissionPage() {
           </div>
           <p className="text-sm text-muted-foreground">
             Last updated in this hub: {WISO_EXAM_FORMAT.cycle.lastUpdated}. Administrative details can
-            change — treat WU as authoritative.
+            change, so treat WU as authoritative.
           </p>
         </WisoSection>
 
         <WisoSection id="osa" title="OSA details that trip people up">
           <ul className="list-disc space-y-2 pl-5">
             <li>It is mandatory to finish, even though it is ungraded.</li>
-            <li>The fachlicher Teil includes reading comprehension in German and English plus basic math and economics — that does not mean the written WiSo exam has an English section.</li>
+            <li>
+              The fachlicher Teil includes reading comprehension in German and English plus basic math and
+              economics, which does not mean the written WiSo exam has an English section.
+            </li>
             <li>Leave buffer before the deadline; last-minute technical issues are not a free pass.</li>
           </ul>
         </WisoSection>
@@ -178,9 +181,9 @@ export function WisoAdmissionPage() {
         <WisoSection id="ranking" title="Ranking and places">
           <p>
             When the written exam is held, ranking is by exam performance for about{" "}
-            {WISO_EXAM_FORMAT.places} places. There is no fixed pass score published here — relative
-            standing in the pool matters. Prep accordingly: Teilpunktesystem awareness and timed
-            practice, not only content coverage.
+            {WISO_EXAM_FORMAT.places} places. There is no fixed pass score published here; relative
+            standing in the pool is what matters. Prep accordingly with Teilpunktesystem awareness and
+            timed practice, not only content coverage.
           </p>
           <WisoTextLink to="/wiso/exam-scoring">WiSo scoring explained →</WisoTextLink>
         </WisoSection>
@@ -196,8 +199,8 @@ export function WisoAdmissionPage() {
 
         <WisoSection id="next" title="Next steps">
           <p>
-            After logistics, move to content: Wirtschaft verstehen, German reading, and math — then timed
-            practice on WiSo URLs.
+            After logistics, move into content (Wirtschaft verstehen, German reading, and math), then
+            timed practice on WiSo URLs.
           </p>
           <div className="flex flex-wrap gap-3">
             <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Open WiSo demo</WisoPrimaryButton>
