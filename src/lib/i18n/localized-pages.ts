@@ -23,7 +23,6 @@ import { WisoFullCourseProduct } from "@/routes/wiso.products.full-course";
 import { WisoDemoPractice } from "@/routes/wiso.demo-practice.index";
 import { WisoMockExamsPlaceholder } from "@/routes/wiso.mock-exams";
 import { WisoMockBuilderPlaceholder } from "@/routes/wiso.mock-builder";
-import { WisoFlashcardsIndexPage } from "@/routes/wiso.flashcards.index";
 import { ParentsPage } from "@/routes/parents";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
@@ -66,7 +65,6 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/wiso/demo-practice": WisoDemoPractice,
   "/wiso/mock-exams": WisoMockExamsPlaceholder,
   "/wiso/mock-builder": WisoMockBuilderPlaceholder,
-  "/wiso/flashcards": WisoFlashcardsIndexPage,
   "/parents": ParentsPage,
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,

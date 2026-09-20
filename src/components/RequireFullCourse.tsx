@@ -64,22 +64,26 @@ export function RequireFullCourse({
     let cancelled = false;
 
     (async () => {
-      const state = await fetchAccessState();
-      if (cancelled) return;
+      try {
+        const state = await fetchAccessState();
+        if (cancelled) return;
 
-      if (!state.signedIn) {
-        setStatus("login");
-        return;
+        if (!state.signedIn) {
+          setStatus("login");
+          return;
+        }
+        if (productSlug) {
+          setStatus(accessOwnsProduct(state, productSlug) ? "allowed" : "locked");
+          return;
+        }
+        if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
+          setStatus("locked");
+          return;
+        }
+        setStatus("allowed");
+      } catch {
+        if (!cancelled) setStatus("login");
       }
-      if (productSlug) {
-        setStatus(accessOwnsProduct(state, productSlug) ? "allowed" : "locked");
-        return;
-      }
-      if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
-        setStatus("locked");
-        return;
-      }
-      setStatus("allowed");
     })();
 
     return () => {
