@@ -61,7 +61,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/wiso/products": ProductsPage,
   "/wiso/products/full-course": WisoFullCourseProduct,
   "/wiso/demo-practice": WisoDemoPractice,
-  "/wiso/mock-exams": WisoMockExamsPlaceholder,
+  "/wiso/mock-exams": WisoMockExamsPage,
   "/parents": ParentsPage,
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,
