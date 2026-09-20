@@ -50,13 +50,19 @@ export const SCORING_CONFIG = {
     pointsByType: ENGLISH_POINTS_BY_TYPE,
     pointsPerTask: ENGLISH_POINTS_PER_TASK,
   },
+  /** WiSo German reading (Sprachverständnis) — same per-task max as BBE English texts. */
+  german: {
+    taskCount: 10,
+    totalPoints: 10 * ENGLISH_POINTS_BY_TYPE.text,
+    defaultMaxPerTask: ENGLISH_POINTS_BY_TYPE.text,
+  },
   /** BBE written exam total (Economics 60 + Mathematics 69 + English 31). */
   examTotalPoints: 60 + mathTotal + englishTotal,
   /** WiSo written exam total from the same cycle (for comparison). */
   wisoExamTotalPoints: 165,
 } as const;
 
-export type SubjectKey = "economics" | "math" | "english";
+export type SubjectKey = "economics" | "math" | "english" | "german";
 
 export const SUBJECT_META: Record<
   SubjectKey,
@@ -71,6 +77,11 @@ export const SUBJECT_META: Record<
     label: "English",
     color: "#2DD4A8",
     badgeClass: "bg-[#2DD4A8]/10 text-[#0F9B7C] border-[#2DD4A8]/40",
+  },
+  german: {
+    label: "Deutsch",
+    color: "#0F9B7C",
+    badgeClass: "bg-[#0F9B7C]/10 text-[#0F9B7C] border-[#0F9B7C]/40",
   },
   math: {
     label: "Math",
@@ -87,5 +98,10 @@ export function pointsSequenceForSubject(subject: SubjectKey): readonly number[]
     );
   }
   if (subject === "math") return SCORING_CONFIG.math.pointsPerTask;
+  if (subject === "german") {
+    return Array.from({ length: SCORING_CONFIG.german.taskCount }, () =>
+      SCORING_CONFIG.german.defaultMaxPerTask,
+    );
+  }
   return SCORING_CONFIG.english.pointsPerTask;
 }

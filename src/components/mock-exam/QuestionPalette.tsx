@@ -49,7 +49,7 @@ export function QuestionPalette({
   compact,
 }: Props) {
   const groups = useMemo(() => {
-    const order: SubjectKey[] = ["economics", "english", "math"];
+    const order: SubjectKey[] = ["economics", "english", "german", "math"];
     return order
       .map((subject) => ({
         subject,

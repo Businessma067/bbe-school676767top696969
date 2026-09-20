@@ -1,5 +1,9 @@
 import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { findCustomMockSubtopic, getCustomMockChapters } from "@/data/custom-mock-catalog";
+import {
+  findWisoCustomMockSubtopic,
+  getWisoCustomMockChapters,
+} from "@/data/wiso-custom-mock-catalog";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import {
   calculateExamScore,
@@ -57,7 +61,7 @@ export type GroupAnalytics = {
 };
 
 const EMPTY_MARKS = [false, false, false, false, false];
-const SUBJECT_ORDER: SubjectKey[] = ["economics", "english", "math"];
+const SUBJECT_ORDER: SubjectKey[] = ["economics", "english", "german", "math"];
 const REVIEW_BELOW = 70;
 const STRONG_AT = 85;
 
@@ -100,17 +104,45 @@ export function chapterOf(q: ExamQuestion): { key: string; label: string } | nul
   if (!tag) return null;
   const id = parseSubtopicId(tag);
   if (!id) return null;
-  const meta = findCustomMockSubtopic(q.subject, id);
-  const chapters = getCustomMockChapters(q.subject);
-  const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;
-  if (ch) {
-    const heading =
-      ch.heading.startsWith("Chapter ") && ch.title ? `${ch.num} ${ch.title}` : ch.heading;
-    return {
-      key: `${q.subject}:${ch.num}`,
-      label: `${SUBJECT_META[q.subject].label} · ${heading}`,
-    };
+
+  if (q.subject === "german") {
+    const meta = findWisoCustomMockSubtopic("german", id);
+    const chapters = getWisoCustomMockChapters("german");
+    const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;
+    if (ch) {
+      return {
+        key: `${q.subject}:${ch.num}`,
+        label: `${SUBJECT_META.german.label} · ${ch.heading}`,
+      };
+    }
+  } else {
+    const meta = findCustomMockSubtopic(q.subject, id);
+    const chapters = getCustomMockChapters(q.subject);
+    const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;
+    if (ch) {
+      const heading =
+        ch.heading.startsWith("Chapter ") && ch.title ? `${ch.num} ${ch.title}` : ch.heading;
+      return {
+        key: `${q.subject}:${ch.num}`,
+        label: `${SUBJECT_META[q.subject].label} · ${heading}`,
+      };
+    }
+    // WiSo math/econ custom mocks share subsection ids with BBE; fall back to WiSo TOC titles.
+    if (q.subject === "economics" || q.subject === "math") {
+      const wisoMeta = findWisoCustomMockSubtopic(q.subject, id);
+      const wisoChapters = getWisoCustomMockChapters(q.subject);
+      const wisoCh = wisoMeta
+        ? wisoChapters.find((c) => c.num === wisoMeta.chapter)
+        : undefined;
+      if (wisoCh) {
+        return {
+          key: `${q.subject}:${wisoCh.num}`,
+          label: `${SUBJECT_META[q.subject].label} · ${wisoCh.heading}`,
+        };
+      }
+    }
   }
+
   const num = id.match(/^(\d+)/)?.[1];
   if (!num) return null;
   return {
