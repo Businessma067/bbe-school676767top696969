@@ -161,7 +161,7 @@ function mockExamsItem(track: ExamTrack): NavItem {
 function mockBuilderItem(track: ExamTrack): NavItem {
   return track === "wiso"
     ? {
-        label: "Mock Builder",
+        label: "Mock-Builder",
         href: "/wiso/mock-builder",
         isRoute: true,
         activePrefixes: ["/wiso/mock-builder"],

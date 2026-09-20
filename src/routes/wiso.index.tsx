@@ -5,13 +5,14 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
+import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
-import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
+import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -115,32 +116,18 @@ export function WisoLandingPage() {
                   <span className="mt-0.5 text-[11px] font-medium opacity-70">Full WiSo Course</span>
                 </LocalizedLink>
               </div>
-            </div>
 
-            <div className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-3">
-              {[
-                { label: "Places", value: String(WISO_EXAM_FORMAT.places) },
-                { label: "Exam length", value: `${WISO_EXAM_FORMAT.durationHours} hours` },
-                { label: "Questions", value: String(WISO_EXAM_FORMAT.questionCount) },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-2xl border border-indigo-200/70 bg-indigo-50/50 px-4 py-5 text-center dark:border-indigo-800/40 dark:bg-indigo-950/25"
-                >
-                  <p className="text-xs font-medium text-muted-foreground">{stat.label}</p>
-                  <p className="mt-1 font-display text-2xl font-bold text-foreground">{stat.value}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mx-auto mt-8 max-w-4xl text-center">
               <LocalizedLink
                 to="/wiso/entrance-exam"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
               >
                 Read the WiSo entrance exam overview
                 <ArrowRight className="h-3.5 w-3.5" />
               </LocalizedLink>
+            </div>
+
+            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
+              <PrepJourneyRoadmap track="wiso" accent="wiso-blue" />
             </div>
           </div>
         </section>

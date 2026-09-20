@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
-import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
+import { Flame, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
 import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
@@ -101,6 +101,14 @@ export function BbeLandingPage() {
                   </span>
                 </LocalizedLink>
               </div>
+
+              <LocalizedLink
+                to="/bbe-entrance-exam"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--exam-red)] underline-offset-4 hover:underline"
+              >
+                Read the BBE entrance exam overview
+                <ArrowRight className="h-3.5 w-3.5" />
+              </LocalizedLink>
             </div>
 
             <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
