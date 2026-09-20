@@ -24,6 +24,7 @@ import {
 } from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
+import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
   englishChaptersForTier,
@@ -32,6 +33,8 @@ import {
   type EnglishTask,
   type EnglishTasksTier,
 } from "@/data/english-chapters";
+import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
+import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
 import {
   Check,
   X,
@@ -44,6 +47,7 @@ import {
   Lock,
   PanelLeftClose,
   PanelLeftOpen,
+  Loader2,
 } from "lucide-react";
 
 type Progress = { passed: string[]; revision: string[] };
@@ -142,6 +146,13 @@ type Props = {
    * When set, replaces the flat DEMO_ENGLISH_FREE_LIMIT.
    */
   demoSubsectionFree?: Readonly<Record<string, number>>;
+  /**
+   * WiSo German texts: DE|EN toggle. German stays source of truth;
+   * EN translates passage + statements + explanations on demand.
+   */
+  enableContentTranslation?: boolean;
+  contentLangStorageKey?: string;
+  contentTranslationCacheKey?: string;
 };
 
 type ExplanationState = {
@@ -165,6 +176,9 @@ export function EnglishTasksPage({
     </>
   ),
   demoSubsectionFree,
+  enableContentTranslation = false,
+  contentLangStorageKey = "wiso.german.contentLang.v1",
+  contentTranslationCacheKey = "wiso.german.enCache.v1",
 }: Props) {
   const chapters = useMemo(
     () => chaptersProp ?? englishChaptersForTier(tier),
@@ -254,14 +268,64 @@ export function EnglishTasksPage({
         ? []
         : (byChapter.get(activeChapter) ?? []);
   const activeCase = activeList[activeIdx];
-  const activePassage = passageForTask(activeCase, chapters);
+  const activePassageDe = passageForTask(activeCase, chapters);
   const isTextsCase =
     !!activeCase &&
     (activeChapter === "texts" ||
       activeCase.kind === "reading" ||
       !!activeCase.passage ||
-      !!activePassage);
+      !!activePassageDe);
   const setPracticeCase = useSetPracticeCase();
+
+  const translateSource: WisoTaskTranslatePayload | null = activeCase
+    ? {
+        title: activeCase.title,
+        context: activeCase.context,
+        statements: activeCase.statements,
+        tactical_explanations: activeCase.tactical_explanations,
+        solution_overview: activeCase.solution_overview ?? "",
+        passage: activePassageDe || activeCase.passage || "",
+        highlights: activeCase.highlights ?? [],
+      }
+    : null;
+
+  const {
+    lang: contentLang,
+    setLang: setContentLang,
+    loading: translating,
+    error: translationError,
+    activeTranslation,
+  } = useWisoTaskTranslation({
+    enabled: enableContentTranslation,
+    langStorageKey: contentLangStorageKey,
+    cacheStorageKey: contentTranslationCacheKey,
+    taskId: activeCase?.id ?? null,
+    source: translateSource,
+  });
+
+  const displayCase: EnglishTask | undefined = activeCase
+    ? activeTranslation
+      ? {
+          ...activeCase,
+          title: activeTranslation.title,
+          context: activeTranslation.context,
+          statements: activeTranslation.statements,
+          tactical_explanations: activeTranslation.tactical_explanations,
+          solution_overview: activeTranslation.solution_overview || activeCase.solution_overview,
+          passage: activeTranslation.passage || activeCase.passage,
+          highlights: activeTranslation.highlights?.length
+            ? activeTranslation.highlights
+            : activeCase.highlights,
+        }
+      : activeCase
+    : undefined;
+
+  const activePassage =
+    activeTranslation?.passage?.trim() || activePassageDe || displayCase?.passage || "";
+
+  useEffect(() => {
+    setExplanation(null);
+  }, [contentLang, activeCase?.id]);
 
   // Texts tasks need room for the passage — collapse chapters; restore when leaving Texts.
   useEffect(() => {
@@ -348,13 +412,14 @@ export function EnglishTasksPage({
   const requestExplanation = (t: EnglishTask, i: number) => {
     const key = `${t.id}:${i}`;
     if (explanation?.key === key) return;
+    const view = displayCase && displayCase.id === t.id ? displayCase : t;
     setExplanation({
       key,
       caseId: t.id,
       statementIndex: i,
-      statementText: t.statements[i] ?? "",
+      statementText: view.statements[i] ?? "",
       correctAnswer: !!t.answer_key[i],
-      highlight: t.highlights[i] ?? "",
+      highlight: view.highlights[i] ?? "",
     });
   };
 
@@ -401,7 +466,20 @@ export function EnglishTasksPage({
             "lg:flex lg:h-dvh lg:max-h-dvh lg:flex-col lg:overflow-hidden lg:overscroll-none",
         )}
       >
-        <SiteHeader maxWidthClassName="max-w-none" compact />
+        <SiteHeader
+          maxWidthClassName="max-w-none"
+          compact
+          actions={
+            enableContentTranslation ? (
+              <TaskContentLangToggle
+                lang={contentLang}
+                onChange={(next) => void setContentLang(next)}
+                loading={translating}
+                label="Task"
+              />
+            ) : undefined
+          }
+        />
 
         <div
           className={cn(
@@ -860,25 +938,36 @@ export function EnglishTasksPage({
                   <ChevronLeft className="h-4 w-4" /> Back to free tasks
                 </button>
               </div>
-            ) : textsWorkspace && activeCase ? (
+            ) : textsWorkspace && activeCase && displayCase ? (
               <div
                 key={activeCase.id}
                 className="practice-fade-in flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:gap-5"
               >
                 <div className="min-h-[20rem] min-w-0 flex-1 lg:min-h-0 lg:overflow-hidden">
-                  <ReadingPanel
-                    passage={activePassage}
-                    storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
-                    explanation={explanation}
-                    onClose={() => setExplanation(null)}
-                    lockPageScroll={typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches}
-                  />
+                  {translating && contentLang === "en" && !activeTranslation ? (
+                    <div className="flex h-full min-h-[20rem] items-center justify-center gap-2 text-sm text-muted-foreground">
+                      <Loader2 className="h-4 w-4 animate-spin" /> Translating text to English…
+                    </div>
+                  ) : (
+                    <ReadingPanel
+                      passage={activePassage}
+                      storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
+                      explanation={explanation}
+                      onClose={() => setExplanation(null)}
+                      lockPageScroll={typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches}
+                    />
+                  )}
                 </div>
                 <div className="flex min-h-0 w-full flex-col lg:w-[min(42rem,46vw)] lg:shrink-0 lg:overflow-hidden xl:w-[min(44rem,42vw)]">
                   <div className="practice-scroll flex min-h-0 flex-1 flex-col gap-3 pr-1 lg:overflow-y-auto lg:overscroll-contain">
+                    {translationError ? (
+                      <div className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+                        English translation failed: {translationError}. Showing German.
+                      </div>
+                    ) : null}
                     <CaseCard
                       key={activeCase.id}
-                      data={activeCase}
+                      data={displayCase}
                       index={activeIdx}
                       inRevision={progress.revision.includes(activeCase.id)}
                       alreadyPassed={progress.passed.includes(activeCase.id)}
@@ -963,10 +1052,10 @@ export function EnglishTasksPage({
                   </div>
                 </div>
               </div>
-            ) : activeCase ? (
+            ) : activeCase && displayCase ? (
               <CaseCard
                 key={activeCase.id}
-                data={activeCase}
+                data={displayCase}
                 index={activeIdx}
                 inRevision={progress.revision.includes(activeCase.id)}
                 alreadyPassed={progress.passed.includes(activeCase.id)}
@@ -1049,9 +1138,9 @@ export function EnglishTasksPage({
                 showExplanations && !!activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree)
               }
             >
-              {showExplanations && activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? (
+              {showExplanations && displayCase && activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? (
                 <AllExplanationsPanel
-                  task={activeCase}
+                  task={displayCase}
                   index={activeIdx}
                   isTexts={false}
                   activeExplanationIndex={null}

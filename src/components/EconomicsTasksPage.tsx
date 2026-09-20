@@ -28,7 +28,10 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { DifficultyBars } from "@/components/DifficultyBars";
+import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
+import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
 
 // Full course: everything unlocked. Demo can pass freeLimitPerChapter (e.g. 8).
 const DEFAULT_PHANTOM_LOCKED_COUNT = 0;
@@ -50,6 +53,13 @@ export type EconomicsTasksPageProps = {
   freeLimitPerChapter?: number;
   /** Extra locked teaser rows after real tasks (demo only). */
   phantomLockedCount?: number;
+  /**
+   * WiSo: DE|EN toggle. German banks stay the source of truth;
+   * EN translates the open task (stem + statements + explanations) on demand.
+   */
+  enableContentTranslation?: boolean;
+  contentLangStorageKey?: string;
+  contentTranslationCacheKey?: string;
 };
 
 type Case = {
@@ -109,6 +119,9 @@ export function EconomicsTasksPage({
   enableTheory = true,
   freeLimitPerChapter = Number.POSITIVE_INFINITY,
   phantomLockedCount = DEFAULT_PHANTOM_LOCKED_COUNT,
+  enableContentTranslation = false,
+  contentLangStorageKey = "wiso.economics.contentLang.v1",
+  contentTranslationCacheKey = "wiso.economics.enCache.v1",
 }: EconomicsTasksPageProps) {
   const phantomCountFor = (_ch: number): number => phantomLockedCount;
   const freeLimitOf = (ch: number | "revision" | null): number => {
@@ -244,6 +257,48 @@ export function EconomicsTasksPage({
   const activeCase = activeList[activeIdx];
   const setPracticeCase = useSetPracticeCase();
 
+  const translateSource: WisoTaskTranslatePayload | null = activeCase
+    ? {
+        title: activeCase.title,
+        context: activeCase.context,
+        statements: activeCase.statements,
+        tactical_explanations: activeCase.tactical_explanations,
+        solution_overview: "",
+        passage: "",
+        highlights: [],
+      }
+    : null;
+
+  const {
+    lang: contentLang,
+    setLang: setContentLang,
+    loading: translating,
+    error: translationError,
+    activeTranslation,
+  } = useWisoTaskTranslation({
+    enabled: enableContentTranslation,
+    langStorageKey: contentLangStorageKey,
+    cacheStorageKey: contentTranslationCacheKey,
+    taskId: activeCase?.id ?? null,
+    source: translateSource,
+  });
+
+  const displayCase: Case | undefined = activeCase
+    ? activeTranslation
+      ? {
+          ...activeCase,
+          title: activeTranslation.title,
+          context: activeTranslation.context,
+          statements: activeTranslation.statements,
+          tactical_explanations: activeTranslation.tactical_explanations,
+        }
+      : activeCase
+    : undefined;
+
+  useEffect(() => {
+    setExplanation(null);
+  }, [contentLang, activeCase?.id]);
+
   useEffect(() => {
     if (theoryChapter !== null) {
       const ch = CHAPTERS.find((c) => c.num === theoryChapter);
@@ -334,7 +389,20 @@ export function EconomicsTasksPage({
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <SiteHeader maxWidthClassName="max-w-none" compact />
+      <SiteHeader
+        maxWidthClassName="max-w-none"
+        compact
+        actions={
+          enableContentTranslation ? (
+            <TaskContentLangToggle
+              lang={contentLang}
+              onChange={(next) => void setContentLang(next)}
+              loading={translating}
+              label="Task"
+            />
+          ) : undefined
+        }
+      />
 
       <div
         className={cn(
@@ -636,6 +704,16 @@ export function EconomicsTasksPage({
           {activeCase && <TimedModeBar session={timed} />}
 
 
+          {translationError ? (
+            <div className="mb-4 rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+              English translation failed: {translationError}. Showing German.
+            </div>
+          ) : null}
+          {translating && contentLang === "en" && !activeTranslation ? (
+            <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <Loader2 className="h-4 w-4 animate-spin" /> Translating task to English…
+            </div>
+          ) : null}
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
             const freeLimit = freeLimitOf(activeChapter);
 
@@ -656,10 +734,10 @@ export function EconomicsTasksPage({
               </button>
             </div>
             );
-          })() : activeCase && (
+          })() : displayCase && activeCase && (
             <CaseCard
               key={activeCase.id}
-              data={activeCase}
+              data={displayCase}
               index={activeIdx}
               inRevision={progress.revision.includes(activeCase.id)}
               alreadyPassed={progress.passed.includes(activeCase.id)}
@@ -735,9 +813,9 @@ export function EconomicsTasksPage({
                 requestExplanation(activeCase, explanation.statementIndex);
               }}
             />
-          ) : showExplanations && activeCase ? (
+          ) : showExplanations && displayCase && activeCase ? (
             <AllExplanationsPanel
-              task={activeCase}
+              task={displayCase}
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
               onRequestAi={(i) => requestExplanation(activeCase, i)}

@@ -156,6 +156,8 @@ type Props = {
   contentLang?: "de" | "en";
   /** Upsell link for demo locked tasks (BBE vs WiSo full course product). */
   fullCourseHref?: string;
+  /** Extra controls in the site header (right), e.g. WiSo DE|EN task toggle. */
+  headerActions?: ReactNode;
 };
 
 export function MathTasksPage({
@@ -166,6 +168,7 @@ export function MathTasksPage({
   getTheory = getMathCourseTheory,
   contentLang = "en",
   fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
+  headerActions,
 }: Props) {
   const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
@@ -506,7 +509,7 @@ export function MathTasksPage({
   return (
     <PracticeCalcProvider>
     <div className={PRACTICE_PAGE}>
-      <SiteHeader maxWidthClassName="max-w-none" compact />
+      <SiteHeader maxWidthClassName="max-w-none" compact actions={headerActions} />
 
       <div
         className={cn(

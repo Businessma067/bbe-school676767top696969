@@ -42,6 +42,7 @@ function WisoFullCourseGermanTasks() {
         chapters={WISO_GERMAN_CHAPTERS}
         storageKey="wiso.german.progress.v1"
         subjectLabel="Deutsch"
+        enableContentTranslation
         emptyHint={
           <>
             Tippe oben auf <span className="font-semibold text-foreground">Chapters</span>, um die
