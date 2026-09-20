@@ -67,13 +67,64 @@ function saveProgress(storageKey: string, p: Progress) {
   localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
+function localIndexInSubsection(
+  tasks: EnglishTask[],
+  idx: number,
+  subsection: string,
+): number {
+  let local = 0;
+  for (let i = 0; i < idx; i++) {
+    if (tasks[i]?.subsection === subsection) local += 1;
+  }
+  return local;
+}
+
 function freeLimitOf(tier: EnglishTasksTier): number {
   if (tier === "demo") return DEMO_ENGLISH_FREE_LIMIT;
   return Number.POSITIVE_INFINITY;
 }
 
-function isLocked(tier: EnglishTasksTier, idx: number) {
+function isLocked(
+  tier: EnglishTasksTier,
+  idx: number,
+  tasks: EnglishTask[],
+  demoSubsectionFree?: Readonly<Record<string, number>>,
+): boolean {
+  if (tier !== "demo") return false;
+  if (demoSubsectionFree) {
+    const task = tasks[idx];
+    if (!task) return true;
+    const limit = demoSubsectionFree[task.subsection] ?? 0;
+    return localIndexInSubsection(tasks, idx, task.subsection) >= limit;
+  }
   return idx >= freeLimitOf(tier);
+}
+
+function lockDistance(
+  tier: EnglishTasksTier,
+  idx: number,
+  tasks: EnglishTask[],
+  demoSubsectionFree?: Readonly<Record<string, number>>,
+): number {
+  if (tier !== "demo") return -1;
+  if (demoSubsectionFree) {
+    const task = tasks[idx];
+    if (!task) return 0;
+    const limit = demoSubsectionFree[task.subsection] ?? 0;
+    return localIndexInSubsection(tasks, idx, task.subsection) - limit;
+  }
+  return idx - freeLimitOf(tier);
+}
+
+function lastUnlockedIndex(
+  tier: EnglishTasksTier,
+  tasks: EnglishTask[],
+  demoSubsectionFree?: Readonly<Record<string, number>>,
+): number {
+  for (let i = tasks.length - 1; i >= 0; i--) {
+    if (!isLocked(tier, i, tasks, demoSubsectionFree)) return i;
+  }
+  return 0;
 }
 
 type Props = {
@@ -86,6 +137,11 @@ type Props = {
   /** Shown in practice-case labels, e.g. "English" or "Deutsch". */
   subjectLabel?: string;
   emptyHint?: ReactNode;
+  /**
+   * WiSo demo: unlock first N tasks per text/subsection.
+   * When set, replaces the flat DEMO_ENGLISH_FREE_LIMIT.
+   */
+  demoSubsectionFree?: Readonly<Record<string, number>>;
 };
 
 type ExplanationState = {
@@ -108,6 +164,7 @@ export function EnglishTasksPage({
       tasks for the WU BBE exam.
     </>
   ),
+  demoSubsectionFree,
 }: Props) {
   const chapters = useMemo(
     () => chaptersProp ?? englishChaptersForTier(tier),
@@ -214,14 +271,14 @@ export function EnglishTasksPage({
 
   useEffect(() => {
     if (!timed.enabled) return;
-    timed.openQuestion(activeCase && !isLocked(tier, activeIdx) ? activeCase.id : null);
+    timed.openQuestion(activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? activeCase.id : null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timed.enabled, activeCase?.id, activeIdx, tier]);
 
   const activeTimer = timed.get(activeCase?.id);
 
   useEffect(() => {
-    if (activeCase && !isLocked(tier, activeIdx)) {
+    if (activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree)) {
       const chapterTitle =
         activeChapter === "revision"
           ? "Revision"
@@ -306,7 +363,7 @@ export function EnglishTasksPage({
       ? "Fix what tripped you up"
       : chapters.find((c) => c.key === activeChapter)?.title;
 
-  const textsWorkspace = isTextsCase && !!activeCase && !isLocked(tier, activeIdx);
+  const textsWorkspace = isTextsCase && !!activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree);
 
   // Lock document scroll on desktop Texts so only the passage/questions panes move.
   useEffect(() => {
@@ -493,9 +550,9 @@ export function EnglishTasksPage({
                                             const rev = progress.revision.includes(c.id);
                                             const active =
                                               isActiveCh && activeList[activeIdx]?.id === c.id;
-                                            const locked = isLocked(tier, i);
+                                            const locked = isLocked(tier, i, list, demoSubsectionFree);
                                             const lockedPos = locked
-                                              ? i - freeLimitOf(tier)
+                                              ? lockDistance(tier, i, list, demoSubsectionFree)
                                               : -1;
                                             const lockedOpacity = locked
                                               ? Math.max(
@@ -591,7 +648,7 @@ export function EnglishTasksPage({
                                   const rev = progress.revision.includes(c.id);
                                   const active =
                                     isActiveCh && activeList[activeIdx]?.id === c.id;
-                                  const locked = isLocked(tier, i);
+                                  const locked = isLocked(tier, i, list, demoSubsectionFree);
                                   return (
                                     <li key={c.id}>
                                       <button
@@ -775,7 +832,7 @@ export function EnglishTasksPage({
               </div>
             )}
 
-            {activeCase && !isLocked(tier, activeIdx) && (
+            {activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree) && (
               <TimedModeBar
                 session={timed}
                 questionId={activeCase.id}
@@ -783,22 +840,24 @@ export function EnglishTasksPage({
               />
             )}
 
-            {activeCase && isLocked(tier, activeIdx) ? (
+            {activeCase && isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? (
               <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
                 <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                   <Lock className="h-6 w-6" />
                 </div>
                 <h2 className="font-display text-xl font-bold">Locked in demo</h2>
                 <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  Tasks {freeLimitOf(tier) + 1}+ are part of the full course. The first{" "}
-                  {freeLimitOf(tier)} are free.
+                  This task is part of the full course. Demo practice includes a free sample of
+                  each text.
                 </p>
                 <button
                   type="button"
-                  onClick={() => setActiveIdx(freeLimitOf(tier) - 1)}
+                  onClick={() =>
+                    setActiveIdx(lastUnlockedIndex(tier, activeList, demoSubsectionFree))
+                  }
                   className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
                 >
-                  <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimitOf(tier)}
+                  <ChevronLeft className="h-4 w-4" /> Back to free tasks
                 </button>
               </div>
             ) : textsWorkspace && activeCase ? (
@@ -886,11 +945,11 @@ export function EnglishTasksPage({
                           setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))
                         }
                         disabled={
-                          activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1)
+                          activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree)
                         }
                         className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
                       >
-                        {isLocked(tier, activeIdx + 1) ? (
+                        {isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree) ? (
                           <>
                             <Lock className="h-3.5 w-3.5" /> Locked
                           </>
@@ -966,11 +1025,11 @@ export function EnglishTasksPage({
                   type="button"
                   onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
                   disabled={
-                    activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1)
+                    activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree)
                   }
                   className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
                 >
-                  {isLocked(tier, activeIdx + 1) ? (
+                  {isLocked(tier, activeIdx + 1, activeList, demoSubsectionFree) ? (
                     <>
                       <Lock className="h-3.5 w-3.5" /> Locked
                     </>
@@ -987,10 +1046,10 @@ export function EnglishTasksPage({
           {!textsWorkspace && (
             <EnglishPracticeAside
               showExplanations={
-                showExplanations && !!activeCase && !isLocked(tier, activeIdx)
+                showExplanations && !!activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree)
               }
             >
-              {showExplanations && activeCase && !isLocked(tier, activeIdx) ? (
+              {showExplanations && activeCase && !isLocked(tier, activeIdx, activeList, demoSubsectionFree) ? (
                 <AllExplanationsPanel
                   task={activeCase}
                   index={activeIdx}

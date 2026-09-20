@@ -48,4 +48,13 @@ export const WISO_GERMAN_CHAPTERS: EnglishChapter[] = [
   },
 ];
 
+/**
+ * WiSo demo unlocks by text (subsection). Unlisted texts stay locked.
+ * First text: first 5 tasks; second text: first 3 tasks.
+ */
+export const DEMO_WISO_GERMAN_SUBSECTION_FREE: Readonly<Record<string, number>> = {
+  "t.1": 5,
+  "t.2": 3,
+};
+
 export { passageForTask };

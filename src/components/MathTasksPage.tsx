@@ -65,7 +65,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const FULL_COURSE_BUY_HREF = "/products/full-course";
+const DEFAULT_FULL_COURSE_BUY_HREF = "/products/full-course";
 
 export type MathTasksTier = "demo" | "lite" | "full";
 
@@ -154,6 +154,8 @@ type Props = {
    * WiSo Full Course uses German ("de" → Richtig/Falsch); BBE stays English.
    */
   contentLang?: "de" | "en";
+  /** Upsell link for demo locked tasks (BBE vs WiSo full course product). */
+  fullCourseHref?: string;
 };
 
 export function MathTasksPage({
@@ -163,6 +165,7 @@ export function MathTasksPage({
   storageKey = STORAGE_KEY,
   getTheory = getMathCourseTheory,
   contentLang = "en",
+  fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
 }: Props) {
   const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
@@ -950,7 +953,7 @@ export function MathTasksPage({
         <main className="min-w-0 flex-1" data-practice-surface>
           {tier === "demo" && (
             <Link
-              to={FULL_COURSE_BUY_HREF}
+              to={fullCourseHref}
               className="mb-4 inline-flex max-w-full items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:bg-primary/15"
             >
               <Sparkles className="h-3.5 w-3.5 shrink-0" />
@@ -1064,6 +1067,7 @@ export function MathTasksPage({
           >
             {activeCase && isLocked(tier, activeChapter, activeIdx, activeList) ? (
               <LockedDemoCard
+                fullCourseHref={fullCourseHref}
                 onBack={() =>
                   setActiveIdx(lastUnlockedDemoMathIndex(activeChapter, activeList))
                 }
@@ -1192,7 +1196,11 @@ export function MathTasksPage({
       )}
 
       {tier === "demo" && (
-        <UnlockQuestionsDialog open={unlockOpen} onOpenChange={setUnlockOpen} />
+        <UnlockQuestionsDialog
+          open={unlockOpen}
+          onOpenChange={setUnlockOpen}
+          fullCourseHref={fullCourseHref}
+        />
       )}
 
       {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
@@ -2014,9 +2022,11 @@ function MathAnswerKeyTable({
 function UnlockQuestionsDialog({
   open,
   onOpenChange,
+  fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  fullCourseHref?: string;
 }) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -2033,7 +2043,7 @@ function UnlockQuestionsDialog({
         </DialogHeader>
         <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
           <Link
-            to={FULL_COURSE_BUY_HREF}
+            to={fullCourseHref}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
           >
             Unlock all questions
@@ -2051,7 +2061,13 @@ function UnlockQuestionsDialog({
   );
 }
 
-function LockedDemoCard({ onBack }: { onBack: () => void }) {
+function LockedDemoCard({
+  onBack,
+  fullCourseHref = DEFAULT_FULL_COURSE_BUY_HREF,
+}: {
+  onBack: () => void;
+  fullCourseHref?: string;
+}) {
   return (
     <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
       <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
@@ -2064,7 +2080,7 @@ function LockedDemoCard({ onBack }: { onBack: () => void }) {
       </p>
       <div className="mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row">
         <Link
-          to={FULL_COURSE_BUY_HREF}
+          to={fullCourseHref}
           className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
         >
           Unlock all questions
