@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.01",
+    "title": "Themenfeld der Wirtschaftsinformatik",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, welche Themen die Wirtschaftsinformatik behandelt:",
+    "statements": [
+      "Digitalisierung im Unternehmenskontext, die Transformation von Geschäftsmodellen im digitalen Umfeld und die Auswirkungen digitaler Netzwerke auf ökonomische Transaktionen werden in der Wirtschaftsinformatik behandelt.",
+      "Die Disziplin umfasst ausschließlich diese drei Themen und kennt keine weiteren Fragestellungen.",
+      "Auch die Gestaltung von Systemen, Herausforderungen des Managements im Unternehmenskontext und ethische Auswirkungen auf Handlungsoptionen in einer digitalisierten Gesellschaft gehören zum Feld.",
+      "Das Verständnis für die tragende Rolle der Wirtschaftsinformatik ist laut Lehrtext fundamental für eine nachhaltige und zukunftssichere Gestaltung der damit einhergehenden Systeme.",
+      "Wirtschaftsinformatik hat mit Digitalisierung, Geschäftsmodellen und Netzwerken nichts zu tun; sie behandelt nur analoge Buchhaltung ohne Technik."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Themen aus dem vorangegangenen Kapitel stehen am Anfang: Digitalisierung im Unternehmen, Transformation von Geschäftsmodellen im digitalen Umfeld und die Wirkung digitaler Netzwerke auf ökonomische Transaktionen. Der Lehrtext sagt ausdrücklich, dass all das in der Wirtschaftsinformatik behandelt wird. Es geht also nicht um ein einzelnes Schlagwort, sondern um die enge Verzahnung von Wirtschaft und Informations- und Kommunikationstechnologie, die diese drei Felder bereits zeigen. Wer Digitalisierung, Modelle und Netzwerke nur als Vorspann abtut, verkennt, dass der Abschnitt sie als bereits behandelte und zugleich weitergeführte Gegenstände der Disziplin setzt, bevor Gestaltung, Management und Ethik den Horizont noch einmal öffnen.\n\nDie Aussage ist wahr.",
+      "Nur drei Felder gelten zu lassen, wäre eine künstliche Grenze. Der Abschnitt ergänzt sofort, dass die Disziplin noch viel mehr Themengebiete umfasst, die hier nur angedeutet werden können. Gestaltung von Systemen, Management im Unternehmen und ethische Auswirkungen auf Handlungsoptionen in einer digitalisierten Gesellschaft stehen als weitere Beispiele. Wer die Liste bei Digitalisierung, Geschäftsmodellen und Netzwerken schließt, streicht genau diesen Zusatz.\n\nDie Aussage ist falsch.",
+      "Gestaltung, Management und Ethik sind keine Randbemerkung. Der Text nennt Fragestellungen der Gestaltung von Systemen, Herausforderungen des Managements im Unternehmenskontext und ethische Auswirkungen auf unsere Handlungsoptionen in einer digitalisierten Gesellschaft. Damit öffnet er das Fach über die drei Einstiegsthemen hinaus. Ohne diese Erweiterung bliebe Wirtschaftsinformatik ein Synonym für Digitalisierung allein, obwohl der Abschnitt das Gegenteil sagt.\n\nDie Aussage ist wahr.",
+      "Tragende Rolle und Gestaltung gehören zusammen. Das Verständnis für die Rolle der Wirtschaftsinformatik ist fundamental, und zwar für eine nachhaltige und zukunftssichere Gestaltung der damit einhergehenden Systeme. Der Satz begründet, warum das Fach nicht nur als Sammlung von IT-Themen gelesen werden soll: Systeme sollen so entworfen werden, dass sie tragfähig bleiben. Wer die Rolle der Disziplin für belanglose Beiwerk hält, verfehlt diesen Begründungsstrang.\n\nDie Aussage ist wahr.",
+      "Analoge Buchhaltung ohne Technik widerspricht dem Einstieg. Der Abschnitt knüpft Wirtschaftsinformatik gerade an Digitalisierung, digitale Geschäftsmodelle und Netzwerke sowie an Systeme, Management und Ethik. Eine Lehre, die Technik ausklammert und nur Papierkonten kennt, wäre nicht die Disziplin, die hier vorgestellt wird. Die Verzahnung von Wirtschaft und Informations- und Kommunikationstechnologie ist der Ausgangspunkt, nicht ihr Gegenteil.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.02",
+    "title": "Zwei zentrale Bausteine",
+    "context": "Bewerten Sie die folgenden Aussagen zu den zentralen Bausteinen der Wirtschaftsinformatik:",
+    "statements": [
+      "Um zu verstehen, was die Wirtschaftsinformatik ausmacht, nennt der Text zwei zentrale Bausteine: das Bewusstsein für ihre Interdisziplinarität und die Rolle von Anwendungs- und Informationssystemen.",
+      "Nur die Interdisziplinarität zählt; Anwendungs- und Informationssysteme bleiben außerhalb der zentralen Bausteine.",
+      "Nur Anwendungs- und Informationssysteme zählen; Interdisziplinarität wird nicht als Baustein genannt.",
+      "Die Disziplin umfasst noch viel mehr Themengebiete, als im Kapitel ausführlich ausgebreitet werden können; vieles wird nur angedeutet.",
+      "Anwendungs- und Informationssysteme bilden zusammen mit der Interdisziplinarität die beiden genannten zentralen Bausteine."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Bausteine, eine Leitfrage. Der Lehrtext macht darauf aufmerksam, dass zum Verstehen der Wirtschaftsinformatik erstens das Bewusstsein für ihre Interdisziplinarität gehört und zweitens die Rolle von Anwendungs- und Informationssystemen. Beides steht gleichrangig, nicht als Option. Wer nur eines der beiden gelten lässt, zerlegt genau das Paar, das der Abschnitt als zentral bezeichnet.\n\nDie Aussage ist wahr.",
+      "Interdisziplinarität allein reicht nicht. Der zweite Baustein ist ausdrücklich die Rolle von Anwendungs- und Informationssystemen. Ohne Systeme bliebe die fächerübergreifende Stellung eine leere Zuschreibung. Der Unterabschnitt 4.4.2 greift später genau diese Rolle auf. Die Behauptung, Systeme gehörten nicht zu den zentralen Bausteinen, streicht die Hälfte der Leitformel.\n\nDie Aussage ist falsch.",
+      "Systeme ohne Interdisziplinarität wären ebenfalls unvollständig. Der Text nennt das Bewusstsein für die Interdisziplinarität zuerst und stellt die Rolle der Systeme daneben. Wer Interdisziplinarität als Baustein leugnet, ignoriert den ersten der beiden Punkte und die ganze folgende Einordnung zwischen Betriebswirtschaftslehre und Informatik. Beide Seiten gehören zur Formel, nicht nur Programme und Datenbanken.\n\nDie Aussage ist falsch.",
+      "Vieles bleibt angedeutet. Nach den drei Einstiegsthemen sagt der Abschnitt, die Disziplin umfasse noch viel mehr Themengebiete, die hier nur angedeutet werden können. Das ist keine Entschuldigung, sondern eine Warnung vor Vollständigkeitsillusion. Gestaltung, Management und Ethik sind Beispiele, keine geschlossene Liste. Wer erwartet, das Kapitel decke das Fach vollständig ab, liest gegen diesen Vorbehalt.\n\nDie Aussage ist wahr.",
+      "Paarweise Lesart bestätigt den Definitionssatz. Interdisziplinarität auf der einen Seite, Anwendungs- und Informationssysteme auf der anderen: genau das sind die zwei zentralen Bausteine. Die folgenden Abbildungen zur Stellung zwischen Betriebswirtschaftslehre und Informatik und später die Abgrenzung von Anwendungs- und Informationssystem entfalten diese beiden Säulen. Keine der beiden darf als bloßes Beiwerk gelten. Ohne dieses Paar blieben die folgenden Grafiken zur Stellung zwischen Betriebswirtschaftslehre und Informatik und die spätere Abgrenzung von Anwendungs- und Informationssystem unverbunden; der Lehrtext koppelt sie absichtlich als Einstieg ins Verstehen des Fachs.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.03",
+    "title": "Stellung zwischen BWL und Informatik",
+    "context": "Bewerten Sie die folgenden Aussagen zur klassischen Einordnung der Wirtschaftsinformatik:",
+    "statements": [
+      "In der Literatur wird die Wirtschaftsinformatik meist durch ihre fächerübergreifende Stellung im Kontext der Betriebswirtschaftslehre und der Informatik positioniert.",
+      "Abbildung 34 zeigt diese Einordnung anhand von drei überlappenden Bereichen.",
+      "Themen der Wirtschaftsinformatik müssen zwingend immer etwas mit Informatik zu tun haben, und umgekehrt muss jedes Informatikthema zwingend betriebswirtschaftlich sein.",
+      "Je nach Fokus kann die Wirtschaftsinformatik als eigenständiges Fach oder als fächerübergreifendes Fach betrachtet werden.",
+      "Auf der dargestellten Ebene adressiert die Wirtschaftsinformatik Fragestellungen, die von betriebswirtschaftlicher und technischer Natur sein können."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Fächerübergreifend, nicht als drittes Fach ohne Nachbarn. Die Literatur positioniert die Wirtschaftsinformatik meist durch ihre Stellung im Kontext der Betriebswirtschaftslehre und der Informatik. Das ist die klassische Einordnung, bevor der Text Blickwinkel der Verhaltenswissenschaften und der Technik ergänzt. Wer das Fach als rein technische Informatik oder als reine BWL ohne Technik liest, verfehlt genau diese Zwischenstellung.\n\nDie Aussage ist wahr.",
+      "Drei Kreise, eine Grafik. Abbildung 34 illustriert die klassische Einordnung anhand von drei überlappenden Bereichen: Informatik, Betriebswirtschaftslehre und Wirtschaftsinformatik. Überlappung bedeutet Schnittmengen, nicht Identität. Die Grafik soll andeuten, dass das Fach in der Mitte sitzt und dennoch eigene Konturen haben kann. Ohne die drei Bereiche gäbe es die spätere Warnung, genau hinzuschauen, nicht.\n\nDie Aussage ist wahr.",
+      "Zwingend ist hier das falsche Wort. Der Text deutet ausdrücklich an, dass Themen der Wirtschaftsinformatik nicht zwingend etwas mit Informatik zu tun haben müssen, sowie umgekehrt diese nicht zwingend etwas mit Themen der Betriebswirtschaftslehre zu tun haben müssen. Absolute Kopplung in beide Richtungen widerspricht diesem Satz. Die Überlappung ist möglich, aber nicht erzwungen für jedes einzelne Thema.\n\nDie Aussage ist falsch.",
+      "Eigenständig oder fächerübergreifend hängt vom Fokus ab. Der Abschnitt sagt beides: je nach Fokus kann die Wirtschaftsinformatik als eigenständiges Fach betrachtet werden oder als fächerübergreifendes. Das ist kein Widerspruch, sondern eine Aufforderung, die jeweilige Betrachtungsebene zu prüfen. Wer nur eine der beiden Lesarten als einzig zulässig erklärt, macht die Differenzierung der Abbildung 34 zunichte.\n\nDie Aussage ist wahr.",
+      "Betriebswirtschaftlich und technisch zugleich möglich. Auf der Ebene der Abbildung adressiert die Wirtschaftsinformatik Fragestellungen, die von betriebswirtschaftlicher und technischer Natur sein können. Der Satz öffnet beide Naturen, ohne eine davon zur Pflicht für jedes Thema zu machen. An der Wirtschaftsuniversität Wien steht später der betriebswirtschaftliche Fokus im Vordergrund, unterstützt durch technische Aspekte der Informatik. An der Wirtschaftsuniversität Wien wird daraus eine Gewichtung: der betriebswirtschaftliche Blick steht vorn, technische Aspekte der Informatik stützen ihn, ohne dass jedes einzelne Thema beide Naturen zwingend in sich vereinen müsste.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.04",
+    "title": "Fokus an der WU Wien",
+    "context": "Bewerten Sie die folgenden Aussagen zum Fokus der Wirtschaftsinformatik, insbesondere an der Wirtschaftsuniversität Wien:",
+    "statements": [
+      "Gerade im Kontext der Wirtschaftsuniversität Wien steht der betriebswirtschaftliche Fokus im Vordergrund und wie dieser durch technische Aspekte der Informatik unterstützt werden kann.",
+      "An der WU Wien steht ausschließlich die technische Informatik im Vordergrund; betriebswirtschaftliche Fragen gelten dort als nebensächlich.",
+      "Der Text warnt, genau hinzuschauen, wenn es darum geht, die Wirtschaftsinformatik zu erfassen.",
+      "Die klassische Einordnung anhand überlappender Bereiche bedeutet, dass jedes Thema zwingend in allen drei Kreisen zugleich liegen muss.",
+      "Wirtschaftsinformatik kann Fragestellungen adressieren, die betriebswirtschaftlicher und technischer Natur sein können, ohne dass jedes Thema beide Seiten zwingend vereinen muss."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Betriebswirtschaft zuerst, Technik als Unterstützung. Im Kontext der Wirtschaftsuniversität Wien steht der betriebswirtschaftliche Fokus im Vordergrund, und zwar danach, wie dieser durch technische Aspekte der Informatik unterstützt werden kann. Das ist eine Gewichtung, keine Streichung der Technik. Informatik bleibt relevant, aber als Stütze des betriebswirtschaftlichen Blicks, nicht als Selbstzweck der Aufnahmeprüfung. Die fächerübergreifende Stellung bleibt erhalten, aber die Akzentuierung für dieses Studium ist klar: betriebswirtschaftliche Fragen zuerst, Informatik als Unterstützung, nicht als Ersatz des wirtschaftlichen Kerns.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Technik wäre die umgekehrte Gewichtung. Der Lehrtext sagt das Gegenteil: der betriebswirtschaftliche Fokus steht im Vordergrund, technische Aspekte der Informatik unterstützen ihn. Wer BWL an der WU Wien für nebensächlich erklärt, verdreht die Reihenfolge. Die fächerübergreifende Stellung bleibt, aber die Akzentuierung ist klar betriebswirtschaftlich.\n\nDie Aussage ist falsch.",
+      "Genau hinschauen ist die methodische Warnung. Nach der Darstellung der drei überlappenden Bereiche sagt der Abschnitt, es zeige Ihnen, dass Sie genau hinschauen sollten, wenn es darum geht, die Wirtschaftsinformatik zu erfassen. Eigenständig oder fächerübergreifend, mit oder ohne zwingenden Informatikbezug: die Einordnung hängt vom Blickwinkel ab. Eine pauschale Definition ohne diese Prüfung wäre zu grob.\n\nDie Aussage ist wahr.",
+      "Überlappung ist nicht Allzwang. Drei überlappende Bereiche deuten Schnittmengen an, und der Text betont zugleich, dass Wirtschaftsinformatik-Themen nicht zwingend mit Informatik zu tun haben müssen und umgekehrt. Die Forderung, jedes Thema müsse in allen drei Kreisen zugleich liegen, macht aus einer Grafik eine harte Mengenlehre, die der Lehrtext nicht vertritt.\n\nDie Aussage ist falsch.",
+      "Können, nicht müssen. Fragestellungen können betriebswirtschaftlicher und technischer Natur sein. Das Wort können hält die Tür offen, ohne jedes einzelne Thema in beide Naturen zu zwingen. Genau das passt zur früheren Feststellung, dass der Bezug zur Informatik oder zur BWL nicht zwingend ist. An der WU Wien wird dann der betriebswirtschaftliche Fokus betont, ohne die technische Seite zu leugnen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.05",
+    "title": "Technische und verhaltenswissenschaftliche Sicht",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Perspektiven des interdisziplinären Fachs Wirtschaftsinformatik:",
+    "statements": [
+      "Erweitert man Betriebswirtschaftslehre und Informatik als Perspektiven, lässt sich die Wirtschaftsinformatik aus einer verhaltenswissenschaftlichen und aus einer technischen Perspektive betrachten.",
+      "Aus technischer Perspektive nennt der Text unter anderem Produktionsmanagement, Informatik und Data Science.",
+      "Aus verhaltenswissenschaftlicher Perspektive sind unter anderem Betriebswirtschaftslehre, Soziologie und Psychologie von Relevanz.",
+      "Die Wirtschaftsinformatik kennt nur die technische Sichtweise; Psychologie und Soziologie spielen keine Rolle.",
+      "Abbildung 35 illustriert diese Sichtweisen und lässt einen Blick auf unterschiedliche Disziplinen innerhalb der Wirtschaftsinformatik zu."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Blickwinkel statt eines Kreises. Wenn Betriebswirtschaftslehre und Informatik als Perspektiven erweitert werden, kann die Disziplin einmal aus der Perspektive der Verhaltenswissenschaften und einmal aus einer technischen Perspektive betrachtet werden. Das ist die Öffnung über Abbildung 34 hinaus. Wer nur die drei überlappenden Kreise kennt und diese Zweiteilung übersieht, bleibt auf der klassischen Einordnung stehen.\n\nDie Aussage ist wahr.",
+      "Drei Fächer auf der technischen Seite. Produktionsmanagement (englisch Operations Management), Informatik (englisch Computer Science) und Data Science stehen unter anderem für die technische Perspektive. Unter anderem heißt: die Liste ist nicht als geschlossenes Curriculum aller möglichen Technikfächer gemeint, aber diese drei nennt der Text namentlich. Später werden Prozesse, Algorithmen und große Datensätze jeweils einem dieser Fächer zugeordnet.\n\nDie Aussage ist wahr.",
+      "Drei Fächer auf der verhaltenswissenschaftlichen Seite. Betriebswirtschaftslehre, Soziologie und Psychologie prägen das Fach mit. Wieder steht unter anderem im Satz, also ohne Ausschluss weiterer Disziplinen. Der Mensch, Gruppen und Organisationen sowie Kernprozesse des Unternehmens gehören damit ebenso zur Wirtschaftsinformatik wie Server und Modelle. Ohne diese Seite bliebe nur die technische Hälfte von Abbildung 35.\n\nDie Aussage ist wahr.",
+      "Nur Technik zu gelten lassen, halbiert die Grafik. Verhaltenswissenschaftliche Sichtweise steht ausdrücklich neben der technischen. Psychologie und Soziologie sind namentlich genannt, ebenso die Betriebswirtschaftslehre auf dieser Seite. Eine Wirtschaftsinformatik ohne Mensch, Gruppe und Organisation widerspräche der Behauptung, erst die Beleuchtung verschiedener Disziplinen mache das Fach greifbar. Die absolute Beschränkung auf Technik ist deshalb falsch. Erst die Beleuchtung der verschiedenen Disziplinen macht die Wirtschaftsinformatik greifbar; zentral bleibt dabei der betriebswirtschaftliche Fokus in Kombination mit Systemen und Menschen, nicht eine reine Ingenieurslehre ohne Verhalten.\n\nDie Aussage ist falsch.",
+      "Abbildung 35 trägt genau diese Zweiteilung. Sie illustriert die Sichtweisen und lässt einen Blick auf die unterschiedlichen Disziplinen innerhalb der Wirtschaftsinformatik zu. Technische Sicht mit Produktionsmanagement, Informatik und Data Science, verhaltenswissenschaftliche Sicht mit Psychologie, Soziologie und Betriebswirtschaftslehre: das ist das Raster, in dem die folgenden Absätze die einzelnen Fächer erklären.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.06",
+    "title": "Produktionsmanagement als technische Perspektive",
+    "context": "Bewerten Sie die folgenden Aussagen zum Produktionsmanagement im Kontext der Wirtschaftsinformatik:",
+    "statements": [
+      "Im Produktionsmanagement stehen Themen der Produktion und Herstellung von Gütern und Dienstleistungen im Fokus.",
+      "Relevante Themen sind dabei die zugrunde liegenden Prozesse und Mechanismen in der Produktion sowie die Steuerung von Lieferketten und die Verwaltung von Inventar und Kapazitäten.",
+      "Informations- und Kommunikationstechnologie kann hier helfen, Schritte zu automatisieren, zu optimieren und zu unterstützen.",
+      "Produktionsmanagement gehört in diesem Raster ausschließlich zur verhaltenswissenschaftlichen Sichtweise und hat mit Technik nichts zu tun.",
+      "Güter und Dienstleistungen bleiben außen vor; das Fach behandelt nur Finanzderivate ohne Produktionsbezug."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Produktion und Herstellung sind der Kern. Unter der technischen Perspektive steht beim Produktionsmanagement, englisch Operations Management, die Produktion und Herstellung von Gütern und Dienstleistungen im Fokus. Dienstleistungen gehören dazu, nicht nur Fabriken. Wer das Fach auf Maschinenhallen ohne Service verengt oder auf reine Psychologie ohne Ablauf, verfehlt den Satz, der Güter und Dienstleistungen gemeinsam nennt. Informations- und Kommunikationstechnologie setzt an denselben Prozessen an: sie kann Schritte automatisieren, optimieren und unterstützen, ohne die Herstellung selbst aus dem Blick zu verlieren oder das Fach in die verhaltenswissenschaftliche Spalte zu verschieben.\n\nDie Aussage ist wahr.",
+      "Prozesse, Lieferketten, Inventar, Kapazitäten. Der Text zählt die zugrunde liegenden Prozesse und Mechanismen in der Produktion, die Steuerung von Lieferketten und die Verwaltung des Inventars und der Kapazitäten als relevante Themen. Das ist die operative Tiefe hinter dem Wort Herstellung. Ohne diese Liste bliebe Produktionsmanagement ein leeres Etikett neben Informatik und Data Science. Lieferketten, Inventar und Kapazitäten gehören in denselben operativen Blick, nicht in ein anderes Fach neben der Herstellung.\n\nDie Aussage ist wahr.",
+      "Automatisieren, optimieren, unterstützen. Informations- und Kommunikationstechnologie hilft hier, Schritte zu automatisieren, zu optimieren und zu unterstützen. Technik tritt also als Hilfe in denselben Prozessen auf, nicht als Ersatz der Produktion selbst. Die drei Verben beschreiben den Beitrag der IKT, den die Wirtschaftsinformatik in dieser Perspektive sichtbar macht.\n\nDie Aussage ist wahr.",
+      "Technische Sichtweise, nicht die verhaltenswissenschaftliche. Produktionsmanagement steht in Abbildung 35 auf der technischen Seite neben Informatik und Data Science. Die verhaltenswissenschaftliche Seite nennt Betriebswirtschaftslehre, Soziologie und Psychologie. Wer Produktionsmanagement dorthin verschiebt und Technik abstreitet, vertauscht die beiden Blöcke der Grafik.\n\nDie Aussage ist falsch.",
+      "Güter und Dienstleistungen sind der Gegenstand, nicht Derivate. Der Fokus liegt auf Produktion und Herstellung. Finanzprodukte ohne Produktionsbezug erwähnt dieser Absatz nicht. Eine Umwidmung des Produktionsmanagements auf reine Finanzspekulation wäre ein anderes Fach. IKT hilft in den genannten Schritten der Herstellung und Steuerung, nicht als Alibi für ein themenfremdes Marktsegment.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.07",
+    "title": "Informatik in der Wirtschaftsinformatik",
+    "context": "Bewerten Sie die folgenden Aussagen zur Informatik (Computer Science) als Teil der technischen Perspektive:",
+    "statements": [
+      "In der Informatik geht es um viele Teilaspekte der Planung, Gestaltung und Umsetzung von Systemen und Technologien.",
+      "Das reicht von der Arbeit mit Algorithmen, die Netzwerke oder Prozesse analysieren, bis zur ganzheitlichen Gestaltung von Systemen und der Übersetzung von Anforderungen in funktionsfähige Softwarelösungen.",
+      "Themen wie Software Engineering, Semantic Web oder komplexe Systeme tauchen hier auf.",
+      "Informatik beschränkt sich in diesem Abschnitt auf das Bedienen fertiger Büroprogramme; Planung und Gestaltung von Systemen gehören nicht dazu.",
+      "Anforderungen in Software zu übersetzen, ist ausdrücklich kein Thema der hier beschriebenen Informatik."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Planung, Gestaltung, Umsetzung. Die Informatik, englisch Computer Science, umfasst viele Teilaspekte genau dieser drei Tätigkeiten an Systemen und Technologien. Es geht nicht nur um fertige Geräte, sondern um den Weg dorthin. Wirtschaftsinformatik braucht diese Seite, weil Anwendungs- und Informationssysteme geplant, gestaltet und umgesetzt werden. Wer Informatik auf reines Anwenden reduziert, streicht den Konstruktionsanteil.\n\nDie Aussage ist wahr.",
+      "Von Algorithmen bis zur Softwarelösung. Der Bogen beginnt bei Algorithmen, die Netzwerke oder Prozesse analysieren, und reicht bis zur ganzheitlichen Gestaltung von Systemen und zur Übersetzung von Anforderungen in funktionsfähige Softwarelösungen. Analyse und Bau gehören zusammen. Später, bei der Anpassung von Anwendungssystemen, wird genau diese Übersetzungsarbeit wieder zentral, diesmal gemeinsam mit betriebswirtschaftlichem Wissen. Genau diese Übersetzungsarbeit kehrt später bei der Anpassung von Anwendungssoftware an den Betrieb wieder: menschliche Anforderungen sollen funktional werden, und dazu braucht es Kenntnisse der Informatik gemeinsam mit betriebswirtschaftlichem Wissen.\n\nDie Aussage ist wahr.",
+      "Drei Beispielthemen, keine Vollständigkeit. Software Engineering, Semantic Web und komplexe Systeme nennt der Text als Themen, die hier auftauchen. Sie illustrieren Breite: vom ingenieurmäßigen Bauen über semantische Webtechnologien bis zu Systemen, deren Verhalten nicht trivial ist. Die Liste ist beispielhaft, ersetzt aber nicht den übergeordneten Bogen aus Planung, Gestaltung und Umsetzung.\n\nDie Aussage ist wahr.",
+      "Büroprogramme als einzige Tätigkeit wären zu eng. Planung, Gestaltung und Umsetzung von Systemen stehen im Zentrum, ebenso Algorithmen und die Übersetzung von Anforderungen in Software. Fertige Tabellenkalkulation erscheint später als Beispiel für ein Anwendungssystem, nicht als Definition der Informatik in Abbildung 35. Die Beschränkung aufs Bedienen streicht den Konstruktionskern.\n\nDie Aussage ist falsch.",
+      "Übersetzung von Anforderungen ist ausdrücklich enthalten. Der Satz endet bei der Übersetzung von Anforderungen in funktionsfähige Softwarelösungen. Genau das später bei der Anpassung von Anwendungssoftware an den Betrieb wiederkehrt: menschliche Anforderungen so zu fassen, dass sie funktional werden. Wer diese Übersetzung aus der Informatik streicht, zerschneidet die Brücke zur betriebswirtschaftlichen Seite.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.08",
+    "title": "Data Science und große Datenmengen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Data Science im interdisziplinären Feld der Wirtschaftsinformatik:",
+    "statements": [
+      "In Data Science steht die Arbeit mit Zahlen und Datensätzen von enormen Größenordnungen im Vordergrund, Stichwort Big Data oder Open Data.",
+      "Durch die Nutzung verschiedenster Systeme wird eine Unmenge an Daten generiert; Unternehmen können aufgrund der Analyse dieser Daten Entscheidungen treffen.",
+      "Diese Analyse ist laut Text einfach und stellt keine Herausforderung dar.",
+      "Anwendungen aus Informatik, Statistik und Mathematik werden kombiniert, um Modelle für Prognosen und Analysen anzupassen und zu optimieren.",
+      "Je nach Anwendungsbereich kommt man hier auch mit Themen der künstlichen Intelligenz und des maschinellen Lernens in Kontakt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Größe der Datensätze ist das Signalwort. Data Science stellt die Arbeit mit Zahlen und Datensätzen von enormen Größenordnungen in den Vordergrund. Big Data und Open Data stehen als Stichworte daneben. Es geht also nicht um ein einzelnes kleines Kalkulationsblatt als Definition des Fachs, sondern um Mengen, deren Verarbeitung eigene Verfahren braucht. Die technische Perspektive der Wirtschaftsinformatik holt genau diese Arbeit ins Bild.\n\nDie Aussage ist wahr.",
+      "Nutzung erzeugt Daten, Analyse soll Entscheidungen stützen. Wir generieren durch die Nutzung der verschiedensten Systeme eine Unmenge an Daten. Unternehmen können aufgrund der Analyse dieser Daten Entscheidungen treffen. Können heißt Möglichkeit, nicht Automatismus. Die Kette führt von der Nutzung über die Menge zur Entscheidung, noch bevor der Text die Schwierigkeit dieser Analyse betont.\n\nDie Aussage ist wahr.",
+      "Einfach ist das Gegenteil der Formulierung. Der Lehrtext sagt: dies ist jedoch nicht so einfach und stellt eine große Herausforderung dar. Wer die Analyse für trivial erklärt, streicht genau diesen Satz. Die spätere Kombination aus Informatik, Statistik und Mathematik und der Hinweis auf künstliche Intelligenz und maschinelles Lernen unterstreichen, dass Modelle angepasst und optimiert werden müssen, nicht auf Knopfdruck fertig sind.\n\nDie Aussage ist falsch.",
+      "Drei Herkunftsfächer, ein Zweck. Anwendungen aus der Informatik, Statistik und Mathematik werden kombiniert, um Modelle für Prognosen und Analysen anzupassen und zu optimieren. Kombination ist hier der Kern: Data Science ist in diesem Raster kein isoliertes Zahlenklicken. Anpassen und Optimieren erklärt, warum die Analyse eine Herausforderung bleibt. Ohne diese Fächerbrücke gäbe es keine tragfähigen Prognosemodelle im Sinn des Absatzes. Die große Herausforderung der Analyse, die der Text betont, erklärt sich aus genau dieser Kombination: Modelle müssen an den Anwendungsbereich angepasst werden, statt als fertige Wahrheit aus den Rohdaten zu fallen.\n\nDie Aussage ist wahr.",
+      "Künstliche Intelligenz und maschinelles Lernen je nach Anwendungsbereich. Der Text sagt nicht, jedes Data-Science-Vorhaben sei schon KI, sondern dass man je nach Anwendungsbereich mit diesen Themen in Kontakt kommt. Das hält die Tür offen, ohne Data Science mit KI gleichzusetzen. In der technischen Perspektive der Wirtschaftsinformatik gehören solche Verfahren zum möglichen Werkzeugkasten der Modelle für Prognosen und Analysen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.09",
+    "title": "Betriebswirtschaftslehre in der verhaltenswissenschaftlichen Sicht",
+    "context": "Bewerten Sie die folgenden Aussagen zur Betriebswirtschaftslehre als Perspektive der Wirtschaftsinformatik:",
+    "statements": [
+      "Eine Leitfrage lautet, wie Informations- und Kommunikationstechnologien Unternehmen in ihren Kernprozessen unterstützen können.",
+      "Digitale Transformation im Unternehmen voranzutreiben und disruptive Innovationen der Technologie für neue Wertschöpfung zu nutzen, gehören zu den genannten Fragestellungen.",
+      "Es geht auch um Management und darum, wie sich Unternehmen in einer ständig wandelnden digitalen Umgebung an Regulationen und Verordnungen halten können, Stichwort Datenschutz und Privatsphäre.",
+      "Datenschutz und Privatsphäre werden im Abschnitt ausdrücklich als belanglose Randthemen ausgeschlossen.",
+      "Die Fragestellungen und Themengebiete der betriebswirtschaftlichen Perspektive sind laut Text zahlreich."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Kernprozesse und IKT. Die betriebswirtschaftliche Perspektive fragt, wie Informations- und Kommunikationstechnologien Unternehmen in ihren Kernprozessen unterstützen können. Unterstützung der Kernprozesse, nicht Technik um der Technik willen. Das passt zur Gewichtung an der WU Wien, wo der betriebswirtschaftliche Fokus im Vordergrund steht und durch technische Aspekte gestützt wird. Ohne diese Leitfrage wäre BWL in Abbildung 35 nur ein Etikett. Digitale Transformation, disruptive Innovationen für neue Wertschöpfung und die Bindung an Regulationen wie Datenschutz und Privatsphäre sind Beispiele aus derselben zahlreichen Themenmenge, nicht fremde Kapitel neben der Kernprozessfrage.\n\nDie Aussage ist wahr.",
+      "Transformation und disruptive Innovation. Was bedeutet es, digitale Transformation in einem Unternehmen voranzutreiben? Wie können wir disruptive Innovationen der Technologie nutzen, um neue Wertschöpfung zu schaffen? Beide Fragen stehen im Absatz. Wertschöpfung knüpft an frühere Kapitelideen an, hier aber ausdrücklich an technologische Umbrüche. Wer nur Bestandspflege ohne Wandel gelten lässt, lässt diese beiden Fragen weg.\n\nDie Aussage ist wahr.",
+      "Regulationen gehören dazu. Es geht auch um Fragen des Managements und darum, wie sich Unternehmen in einer ständig wandelnden digitalen Umgebung an Regulationen und Verordnungen halten können. Datenschutz und Privatsphäre stehen als Stichwort. Digitale Umgebung heißt also nicht rechtsfreier Raum. Management in der Wirtschaftsinformatik umfasst die Bindung an Regeln, nicht nur den Einsatz neuer Werkzeuge.\n\nDie Aussage ist wahr.",
+      "Ausgeschlossen sind Datenschutz und Privatsphäre gerade nicht. Sie stehen als Stichwort genau bei der Frage, wie Unternehmen Regulationen und Verordnungen einhalten. Belanglos wären sie nur, wenn der Text sie überginge. Die absolute Behauptung, sie seien als Randthemen gestrichen, widerspricht diesem Stichwort und der Managementfrage in der digitalen Umgebung.\n\nDie Aussage ist falsch.",
+      "Zahlreich ist das Wort des Lehrtexts. Die Fragestellungen und Themengebiete sind zahlreich, bevor Transformation, disruptive Innovation, Management und Regulation als Beispiele folgen. Die Liste ist also offen. Wer glaubt, drei Beispielsätze erschöpften die betriebswirtschaftliche Perspektive, liest gegen dieses Vorzeichen. Interdisziplinarität bleibt hier eine Fülle von Fragen, nicht ein einziges Rezept.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.10",
+    "title": "Soziologie, Psychologie und Ethik",
+    "context": "Bewerten Sie die folgenden Aussagen zu Soziologie und Psychologie im Feld der Wirtschaftsinformatik:",
+    "statements": [
+      "Die Soziologie fragt unter anderem, welchen Einfluss Gruppen und Organisationen auf die Gestaltung von Systemen haben und wie diese Systeme Einzelpersonen sowie die Gesellschaft im Ganzen beeinflussen.",
+      "Im Kontext der Nutzung von Systemen steht der Mensch als zentrale Komponente; er gestaltet Systeme, hat Bedürfnisse und Emotionen und kann auf Basis ethischer Grundhaltungen wegweisende Entscheidungen treffen.",
+      "Psychologie betrifft hier einerseits die Auswirkungen von Technologie auf den Menschen und andererseits ethische Fragestellungen, etwa wie Ethik als Grundlage für die Gestaltung von Systemen dienen kann.",
+      "Ethische Werte in einem System zu verankern, etwa unter den Stichworten Digital Humanism und Ethical Computing, kommt im Abschnitt nicht vor.",
+      "Systeme entstehen in diesem Bild ohne Menschen; Bedürfnisse, Emotionen und Ethik gelten als irrelevant."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Gruppen, Organisationen, Einzelne, Gesellschaft. Die soziologische Perspektive fragt, welchen Einfluss Gruppen und Organisationen auf die Gestaltung von Systemen haben, wie diese Systeme Einzelpersonen beeinflussen und welche Auswirkungen sie auf die Gesellschaft im Gesamten haben. Gestaltung und Wirkung laufen in beide Richtungen. Wer Systeme nur als technische Artefakte ohne soziales Feld denkt, streicht genau diese Wechselwirkung.\n\nDie Aussage ist wahr.",
+      "Mensch bleibt zentral. Trotz aller Technik steht der Mensch als zentrale Komponente im Raum: er gestaltet Systeme, hat Bedürfnisse und Emotionen und kann auf Basis ethischer Grundhaltungen wegweisende Entscheidungen treffen. Gestalten, Bedürfen, Fühlen und Entscheiden gehören zusammen. Später beim Informationssystem wird der Mensch innerhalb der Organisation wieder als zentraler Bestandteil genannt, der Informationen produziert und verarbeitet. Digital Humanism und Ethical Computing stehen als Stichworte dafür, ethische Werte in einem System zu verankern; Wirkung der Technik auf den Menschen und Ethik als Gestaltungsgrundlage gehören damit in dasselbe psychologische Feld, nicht in eine Fußnote.\n\nDie Aussage ist wahr.",
+      "Zwei Richtungen der Psychologie. Einerseits Auswirkungen von Technologie auf den Menschen, andererseits ethische Fragestellungen und die Frage, wie man Ethik als Grundlage für die Gestaltung von Systemen heranziehen kann. Beides steht im Text, nicht nur Usability oder nur Moralphilosophie. Die Gestaltung von Systemen wird damit an Werte gebunden, nicht allein an Funktion.\n\nDie Aussage ist wahr.",
+      "Digital Humanism und Ethical Computing stehen ausdrücklich da. Der Text nennt sie als Stichwort dafür, ethische Werte in einem System zu verankern. Wer behauptet, das komme nicht vor, übersieht den Schlusssatz des Psychologieabsatzes. Die Wirtschaftsinformatik holt Ethik in die Gestaltung, statt sie an den Rand zu schieben.\n\nDie Aussage ist falsch.",
+      "Ohne Menschen gäbe es in diesem Raster keine Wirtschaftsinformatik der verhaltenswissenschaftlichen Seite. Der Mensch gestaltet, hat Bedürfnisse und Emotionen und trifft ethische Entscheidungen. Systeme ohne diese Komponente zu denken und Ethik für irrelevant zu erklären, kehrt den Absatz um. Zentral heißt: nicht verzichtbar. Auch Informationssysteme bestehen später aus Menschen und Maschinen, die durch Kommunikationsbeziehungen verbunden sind.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.11",
+    "title": "Definition der Wirtschaftsinformatik",
+    "context": "Bewerten Sie die folgenden Aussagen zur Definition der Wirtschaftsinformatik und zum Begriff Informationssystem:",
+    "statements": [
+      "Gegenstand der Wirtschaftsinformatik sind Informationssysteme in Wirtschaft, Verwaltung und privatem Bereich.",
+      "Die Disziplin befasst sich mit allen Aktivitäten rund um Entwicklung, Einführung, Betrieb, Nutzung und Ablösung von Informationssystemen.",
+      "Sie versteht sich als interdisziplinäres Fach, basierend auf der Betriebswirtschaftslehre und der Informatik.",
+      "Informationssysteme unterstützen Unternehmen bei ihren betriebswirtschaftlichen Vorhaben und werden durch Menschen gestaltet.",
+      "Wirtschaftsinformatik behandelt Informationssysteme ausschließlich in Unternehmen; Verwaltung und privater Bereich sind aus dem Gegenstand ausgeschlossen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Orte, ein Gegenstand. Informationssysteme in Wirtschaft, Verwaltung und privatem Bereich bilden den Gegenstand der Wirtschaftsinformatik. Nicht nur die Firma, auch Behörde und Alltag. Das weitet den Blick gegenüber einer reinen Unternehmens-IT. Wer den privaten Bereich oder die Verwaltung streicht, verkürzt den Definitionskasten, der alle drei nennt.\n\nDie Aussage ist wahr.",
+      "Der ganze Lebenszyklus. Entwicklung, Einführung, Betrieb, Nutzung und Ablösung stehen als Aktivitäten rund um Informationssysteme. Es geht also nicht nur ums Programmieren am Anfang und nicht nur ums Anwenden in der Mitte. Ablösung gehört dazu: Systeme werden ersetzt, nicht ewig fortgeschrieben. Die Disziplin begleitet diesen Bogen, nicht eine einzelne Phase.\n\nDie Aussage ist wahr.",
+      "Interdisziplinär auf zwei Fundamenten. Das Fach versteht sich als interdisziplinär, basierend auf der Betriebswirtschaftslehre und der Informatik. Das schließt den Kreis zur klassischen Einordnung in Abbildung 34. Eigenständigkeit je nach Fokus bleibt möglich, die Basis bleibt genannt. Eine Wirtschaftsinformatik ohne eines der beiden Fundamente wäre nach diesem Satz nicht die definierte Disziplin.\n\nDie Aussage ist wahr.",
+      "Vorhaben und Menschen. Zentral verwendet die Wirtschaftsinformatik den Begriff Informationssystem: solche Systeme unterstützen Unternehmen bei ihren betriebswirtschaftlichen Vorhaben und werden durch Menschen gestaltet. Unterstützung der Vorhaben und Gestaltung durch Menschen gehören zusammen. Das bereitet die spätere Definition vor, in der Menschen und Maschinen gemeinsam Information erzeugen oder benutzen. Später definiert der Lehrtext das Informationssystem als Gefüge aus Menschen und Maschinen, die Information erzeugen oder benutzen und durch Kommunikationsbeziehungen verbunden sind; Gestaltung durch Menschen ist also kein Schmuckwort, sondern Teil des Gegenstands.\n\nDie Aussage ist wahr.",
+      "Ausschließlich Unternehmen wäre zu eng. Der Gegenstand umfasst Wirtschaft, Verwaltung und privaten Bereich. Verwaltung und privater Bereich auszuschließen, widerspricht dem Definitionssatz. Digitale Transformation war schon zu Beginn in Teilen von Wirtschaft, Verwaltung und privatem Bereich gedacht; hier wird derselbe Dreiklang zum Ort der Informationssysteme.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.12",
+    "title": "Was ein Anwendungssystem ist",
+    "context": "Bewerten Sie die folgenden Aussagen zum Begriff des Anwendungssystems:",
+    "statements": [
+      "Ein Anwendungssystem beinhaltet Programme, die als Anwendungssoftware für ein konkretes betriebliches Anwendungsgebiet eingesetzt werden.",
+      "Dazu gehören die Daten, die gespeichert werden müssen, etwa in einer Datenbank, sowie die IT-Infrastruktur, also Hardware, auf der die Software läuft, zum Beispiel ein Server oder PC.",
+      "Anwendungssysteme werden entweder für ein bestimmtes Unternehmen entwickelt oder für einen bestimmten Bereich im Unternehmen.",
+      "Ein klassisches Beispiel ist jedes gängige Tabellenkalkulationsprogramm, etwa Microsoft Excel oder Apache OpenOffice Calc, das zusätzlich auf eine Datenbank zugreift; auch Rechnungswesen, Personalwesen, Logistik, Verkauf, Vertrieb und Marketing können solche Systeme benötigen.",
+      "Ein Anwendungssystem besteht nur aus Software ohne Daten und ohne Hardware; betriebliche Aufgabengebiete spielen keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Programme für ein konkretes Gebiet. Ein Anwendungssystem beinhaltet Programme, die als Anwendungssoftware für ein konkretes betriebliches Anwendungsgebiet eingesetzt werden. Konkret und betrieblich sind die beiden Filter: nicht beliebige Software, sondern Einsatz in einem Aufgabenfeld des Betriebs. Der spätere Definitionskasten wiederholt, dass ein oder mehrere Programme für ein bestimmtes betriebliches Aufgabengebiet eingesetzt und entwickelt wurden. Rechnungswesen, Personalwesen, Logistik, Verkauf, Vertrieb und Marketing zeigen dieselbe Logik an anderen Stellen des Betriebs: überall dort braucht es Software, also Anwendungssysteme, um den jeweiligen Aufgaben nachzugehen, nicht nur in der Tabellenkalkulation.\n\nDie Aussage ist wahr.",
+      "Daten plus Infrastruktur. Gespeicherte Daten, etwa in einer Datenbank, und IT-Infrastruktur als Hardware, auf der die Software läuft, gehören dazu. Server oder PC sind die Beispiele für diese Hardware. Software allein ohne Daten und ohne Laufumgebung wäre nach diesem Satz kein vollständiges Anwendungssystem. Abbildung 36 lagert Daten, Software und IT-Infrastruktur unter dem Anwendungssystem ein.\n\nDie Aussage ist wahr.",
+      "Unternehmen oder Bereich. Entwicklung entweder für ein bestimmtes Unternehmen oder für einen bestimmten Bereich im Unternehmen: beide Wege nennt der Text. Ein System nur für die Buchhaltung im selben Betrieb ist ebenso ein Anwendungssystem wie eines, das für die ganze Firma gebaut wurde. Die spätere Unterscheidung zum Informationssystem setzt gerade hier an, weil das Informationssystem zusätzlich in die Organisationsstruktur eingebettet ist.\n\nDie Aussage ist wahr.",
+      "Excel, Calc und die betrieblichen Bereiche. Tabellenkalkulation, die zusätzlich auf eine Datenbank zugreift, ist das klassische Beispiel. Rechnungswesen mit Buchhaltung oder Kostenrechnung, Personalwesen, Logistik, Verkauf, Vertrieb und Marketing stehen als weitere Felder, in denen Software nötig ist, um betrieblichen Aufgaben nachzugehen. Die Beispiele machen den Begriff handfest, ohne ihn auf ein einziges Produkt zu reduzieren.\n\nDie Aussage ist wahr.",
+      "Nur Software ohne Daten und Hardware widerspricht beiden Definitionstexten. Das Anwendungssystem umfasst Daten, IT-Infrastruktur und Software, vorgesehen für bestimmte betriebliche Aufgaben. Aufgabengebiete sind der Zweck, nicht Belangloses. Wer Hardware und Daten streicht, behält ein Programm ohne Speicher und ohne Rechner und verfehlt den Systembegriff des Lehrtexts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.13",
+    "title": "Anpassung von Anwendungssystemen im Betrieb",
+    "context": "Bewerten Sie die folgenden Aussagen zur Anpassung von Anwendungssystemen an das Unternehmen:",
+    "statements": [
+      "Im Gegensatz zum privaten Bereich besteht bei der Beschaffung von Anwendungssystemen im betrieblichen Kontext die Herausforderung, die Systeme an das Unternehmen anzupassen.",
+      "Dieser Schritt der Anpassung kann sehr kostspielig und aufwendig sein und ist ein zentraler Aspekt, der in der Disziplin der Wirtschaftsinformatik beleuchtet wird.",
+      "Es geht vor allem darum, Anforderungen von Menschen so zu übersetzen, dass diese funktional in der Anwendung angepasst werden können.",
+      "Genau bei dieser Anpassung sind Kenntnisse der Informatik sowie der Betriebswirtschaftslehre oder anderer Disziplinen nötig, um eine möglichst reibungsfreie Integration zu gewährleisten.",
+      "Im Betrieb entfällt jede Anpassung; Standardsoftware sitzt immer ohne Aufwand und ohne Übersetzungsarbeit, und Kenntnisse nur einer einzigen Disziplin genügen stets."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Privat und betrieblich unterscheiden sich an der Anpassung. Im privaten Bereich fällt diese Herausforderung so nicht an; im Betrieb müssen Anwendungssysteme an das Unternehmen angepasst werden. Beschaffung allein reicht nicht. Die Wirtschaftsinformatik setzt genau an dieser Stelle an, weil das System zum Betrieb passen soll, nicht der Betrieb blind zur Standardsoftware. Ohne diesen Gegensatz bliebe unklar, warum Anpassung ein eigenes Thema ist. Kostspielig und aufwendig kann dieser Schritt sein, und gerade deshalb beleuchtet die Wirtschaftsinformatik ihn als zentralen Aspekt: ohne Übersetzung der Anforderungen und ohne Kenntnisse mehrerer Disziplinen gelingt die Integration selten reibungsfrei.\n\nDie Aussage ist wahr.",
+      "Kostspielig, aufwendig, zentral. Der Anpassungsschritt kann sehr kostspielig und aufwendig sein, und genau das beleuchtet die Disziplin. Es ist kein lästiges Detail am Rande der Installation. Wer Anpassung für kostenlos und trivial hält, verfehlt den Grund, warum Wirtschaftsinformatik hier eigene Kenntnisse verlangt. Später beim Informationssystem kehrt derselbe Gedanke als unternehmensindividuelle Einbettung wieder.\n\nDie Aussage ist wahr.",
+      "Menschenanforderungen übersetzen. Der Kern ist, Anforderungen von Menschen so zu übersetzen, dass sie funktional in der Anwendung angepasst werden können. Übersetzung knüpft an die Informatikperspektive an, in der Anforderungen in Softwarelösungen überführt werden, und an die Psychologie, in der der Mensch Systeme gestaltet. Ohne diese Übersetzungsarbeit blieben Bedürfnisse unverbindliche Wünsche neben einem unveränderten Programm.\n\nDie Aussage ist wahr.",
+      "Mehrere Disziplinen für Integration. Informatik sowie Betriebswirtschaftslehre oder andere Disziplinen sind nötig, damit die Integration möglichst reibungsfrei gelingt. Das ist die praktische Pointe der Interdisziplinarität: nicht zwei Schilder an der Tür, sondern gemeinsames Wissen am Anpassungsprozess. Eine nur technische oder nur kaufmännische Sicht würde die reibungsfreie Integration gefährden, die der Satz als Ziel nennt.\n\nDie Aussage ist wahr.",
+      "Immer ohne Aufwand ist die Umkehrung. Der betriebliche Kontext hat gerade die Herausforderung der Anpassung, die kostspielig und aufwendig sein kann. Menschenanforderungen müssen übersetzt werden, und Kenntnisse aus Informatik und BWL oder anderen Disziplinen sind nötig. Die Behauptung, Standardsoftware sitze stets ohne Arbeit und eine Disziplin genüge immer, streicht den zentralen Aspekt, den die Wirtschaftsinformatik hier beleuchtet.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.14",
+    "title": "Informationssystem versus Anwendungssystem",
+    "context": "Bewerten Sie die folgenden Aussagen zur Abgrenzung von Informationssystem und Anwendungssystem:",
+    "statements": [
+      "Ein Informationssystem beinhaltet verschiedene Anwendungssysteme für einen bestimmten betrieblichen Kontext und ist zusätzlich in die Organisationsstruktur eingebettet und integriert.",
+      "Im Gegensatz zum Anwendungssystem stellt ein Informationssystem immer ein angepasstes, betriebsindividuelles System dar, das die speziellen Anforderungen im Kontext der betrieblichen Organisation erfüllt.",
+      "In der Wirtschaftsinformatik ist das Informationssystem zentraler Gegenstand, vor allem weil es an spezifische organisatorische und personelle Rahmenbedingungen angepasst wird und erst durch diese Anpassungen seine volle Wirkung zeigen kann.",
+      "Informationssysteme werden laut Text stets standardisiert von einem Anbieter zum Kauf angeboten; Beratung oder interne Ressourcen für die Anpassung sind niemals nötig.",
+      "Ein Informationssystem ist ein System, das zum Zweck eines bestimmten Unternehmens entwickelt und angepasst wurde; es berücksichtigt organisatorische Strukturen und besteht aus Menschen und Maschinen, die Information erzeugen oder benutzen und durch Kommunikationsbeziehungen verbunden sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Mehrere Anwendungssysteme plus Organisation. Das Informationssystem enthält verschiedene Anwendungssysteme für einen bestimmten betrieblichen Kontext und ist zusätzlich in die Organisationsstruktur eingebettet und integriert. Zusätzlich ist das Schlüsselwort: Softwarelandschaft allein genügt nicht. Abbildung 36 setzt das Informationssystem über Organisation, Management und Anwendungssystem. Wer das Informationssystem mit einem einzelnen Programm gleichsetzt, lässt Einbettung und Vielfalt weg.\n\nDie Aussage ist wahr.",
+      "Immer betriebsindividuell in dieser Abgrenzung. Der Text grenzt ab: ein Informationssystem stellt im Gegensatz zum Anwendungssystem immer ein angepasstes, betriebsindividuelles System dar, das die speziellen Anforderungen der betrieblichen Organisation erfüllt. Immer bezieht sich hier auf diese Gegenüberstellung im Lehrtext, nicht auf ein lockeres Synonym. Ein unangepasstes Standardpaket ohne Organisationsbezug wäre danach kein Informationssystem in diesem Sinn.\n\nDie Aussage ist wahr.",
+      "Anpassung als Wirkungsbedingung. Zentraler Gegenstand ist das Informationssystem vor allem, weil es an spezifische organisatorische und personelle Rahmenbedingungen angepasst wird und erst dadurch seine volle Wirkung zeigen kann. Personell und organisatorisch stehen nebeneinander. Wirkung ist also nicht die Auslieferung der Software, sondern die Passung zu Organisation und Personal. Das erklärt, warum der Mensch später als zentraler Bestandteil gilt.\n\nDie Aussage ist wahr.",
+      "Stets standardisiert zum Kauf ist falsch. Informationssysteme werden meist nicht standardisiert von einem Anbieter zum Kauf angeboten, sondern benötigen je nach Unternehmensgröße auch eine Begleitung durch Beratungsunternehmen. Dies muss jedoch nicht immer zwingend der Fall sein: es können auch interne Ressourcen aufgestellt werden. Niemals Beratung oder interne Begleitung zu brauchen und immer nur den Standardkauf zu unterstellen, kehrt beide Sätze um.\n\nDie Aussage ist falsch.",
+      "Definitionskasten mit Menschen und Maschinen. Ein Informationssystem wird zum Zweck eines bestimmten Unternehmens entwickelt und angepasst, berücksichtigt organisatorische Strukturen und besteht aus Menschen und Maschinen (Rechner, Anwendungssystem, Netzwerk und Kommunikationseinrichtungen), die Information erzeugen und/oder benutzen und durch Kommunikationsbeziehungen miteinander verbunden sind. Maschinen ohne Menschen oder Menschen ohne Verbindung wären unvollständig. Software ist nur ein Teil dieser Menge. Rechner, Anwendungssystem, Netzwerk und Kommunikationseinrichtungen nennt der Kasten als maschinelle Seite; ohne die organisatorischen Strukturen und ohne die Menschen, die Information erzeugen oder benutzen, wäre das Ganze wieder nur ein Haufen Programme.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.15",
+    "title": "Komponenten eines Informationssystems",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Komponenten eines Informationssystems:",
+    "statements": [
+      "Ein Informationssystem ist mehr als nur Software; grundlegend im Unternehmen sind Daten, Prozesse und Menschen.",
+      "Ein Betrieb verwendet und produziert Daten, während er bestimmte Geschäftsfälle bearbeitet; diese Geschäftsfälle können anhand von Prozessen in systematischen Arbeitsschritten festgehalten werden.",
+      "Menschen innerhalb oder außerhalb des Unternehmens, etwa Kunden oder Lieferdienste, bearbeiten die Geschäftsfälle und nehmen unterschiedliche Rollen ein; dazu benötigen sie Hardware und Software, also Anwendungssysteme.",
+      "Daten werden nur lokal ohne Netzwerke ausgetauscht; lokale und globale Netzwerke zur Kommunikation zwischen Unternehmen kommen im Abschnitt nicht vor.",
+      "Software kann standardisiert zugekauft oder individuell an das Unternehmen angepasst sein; Server können Datenbestände zentral verwalten, Mitarbeiter verwenden Rechner und mobile Endgeräte."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Mehr als Software, drei Grundlagen. Abbildung 37 und der begleitende Text machen klar: ein Informationssystem besteht aus mehreren Komponenten. Grundlegend im Unternehmen sind Daten, Prozesse und Menschen. Wer nur die Anwendung auf dem Bildschirm sieht, lässt zwei der drei Grundlagen weg. Die spätere Aufzählung von Hardware, Netzen und Rollen entfaltet dasselbe Bild, ersetzt aber nicht diese drei Ausgangspunkte.\n\nDie Aussage ist wahr.",
+      "Geschäftsfälle als Brücke. Der Betrieb verwendet und produziert Daten, während er Geschäftsfälle bearbeitet. Dieselben Fälle lassen sich als Prozesse in systematischen Arbeitsschritten festhalten. Daten ohne Prozess wären lose Speicherinhalte, Prozesse ohne Daten leere Ablaufpläne. Das Informationssystem verbindet beides in der laufenden Bearbeitung, bevor Menschen als Rollenträger hinzukommen.\n\nDie Aussage ist wahr.",
+      "Innen und außen. Menschen können Teil des Unternehmens sein oder außerhalb angesiedelt, zum Beispiel Kunden oder Lieferdienste. Sie bearbeiten Geschäftsfälle und nehmen unterschiedliche Rollen ein. Hardware und Software, also Anwendungssysteme, brauchen sie, um operativ tätig zu werden. Das weitet das System über die Belegschaft hinaus. Ein Informationssystem, das nur interne Nutzer kennt, wäre nach diesem Satz zu eng.\n\nDie Aussage ist wahr.",
+      "Netze fehlen nicht. Im Kontext müssen Daten ausgetauscht und es muss miteinander kommuniziert werden. Dazu werden lokale und globale Netzwerke verwendet, um Informationen zwischen Unternehmen auszutauschen. Die Behauptung, Austausch sei nur lokal ohne Netzwerke und globale Netze kämen nicht vor, streicht genau diesen Absatz. Kommunikationseinrichtungen stehen auch in der Definition neben Rechner, Anwendungssystem und Netzwerk.\n\nDie Aussage ist falsch.",
+      "Kauf oder Anpassung, Server und Endgeräte. Software wird entweder standardisiert zugekauft oder individuell an das Unternehmen angepasst. Ein Unternehmen hat möglicherweise mehrere Server, um Datenbestände zentral zu verwalten und zu sichern. Mitarbeiter verwenden Rechner und mobile Endgeräte, um zu kommunizieren und Daten zu verarbeiten. Zentral und mobil stehen nebeneinander, Standard und Individualsoftware ebenfalls. Das ist die infrastrukturelle Seite derselben Komponentenlehre. Lokale und globale Netzwerke tragen den Austausch zwischen Unternehmen; der Mensch innerhalb der Organisation bleibt zentral, weil er Informationen produziert und verarbeitet, die im Informationssystem gespeichert, abgerufen und transformiert werden müssen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "WISO 4.4.16",
+    "title": "ERP-Systeme und das Beispiel SAP",
+    "context": "Bewerten Sie die folgenden Aussagen zu betrieblichen Informationssystemen am Beispiel von ERP und SAP:",
+    "statements": [
+      "Eine im Umfeld der Wirtschaftsinformatik relevante Ausprägung eines Informationssystems ist das Enterprise-Resource-Planning-System; ein ERP-System ist ein klassisches Beispiel für ein betriebliches Informationssystem, das je nach Fokus wesentliche betriebliche Bereiche unterstützt, etwa Rechnungswesen, Materialwirtschaft oder Produktion.",
+      "SAP ist ein deutsches Unternehmen mit Sitz in Walldorf, ein börsennotierter Softwarekonzern und eines der größten Softwareunternehmen weltweit; es bietet Softwarelösungen an, um betriebswirtschaftliche Tätigkeiten zu unterstützen.",
+      "SAP ist seit 1972 am Markt; Beispiele für Generationen sind SAP R/3, SAP ERP, SAP Business Suite und SAP S/4HANA, wobei S/4HANA die aktuelle ERP-Lösung von SAP darstellt.",
+      "SAP bietet außerdem Informationssysteme, mit denen Unternehmen mit Kunden in Kontakt bleiben können (Customer-Relationship-Management), in der Logistik den Überblick behalten (Supply-Chain-Management) oder Analysen auf Basis der Unternehmensdaten generieren (Business-Intelligence-Systeme).",
+      "Ein ERP-System unterstützt nach dem Lehrtext niemals Rechnungswesen, Materialwirtschaft oder Produktion, und SAP ist ein österreichisches Hardwareunternehmen ohne Softwareangebot."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "ERP als betriebliche Ausprägung. Enterprise-Resource-Planning-Systeme sind eine im Umfeld der Disziplin relevante Ausprägung eines Informationssystems. Klassisches Beispiel für ein betriebliches Informationssystem, das je nach Fokus wesentliche betriebliche Bereiche in seinen Funktionen unterstützt, etwa Rechnungswesen, Materialwirtschaft, Produktion. Je nach Fokus hält die Liste offen, ohne diese drei Felder zu streichen. Wer ERP nur als Buchhaltungsmodul oder nur als Fabriksteuerung denkt, verengt den Satz. Customer-Relationship-Management, Supply-Chain-Management und Business-Intelligence-Systeme zeigen, dass dasselbe Unternehmen weitere Informationssysteme neben dem ERP-Kern nutzen kann, jeweils zur Unterstützung konkret benannter betriebswirtschaftlicher Tätigkeiten.\n\nDie Aussage ist wahr.",
+      "Walldorf, Börse, Größe, Zweck. SAP ist ein deutsches Unternehmen mit Sitz in Walldorf, börsennotierter Softwarekonzern und eines der größten Softwareunternehmen weltweit. Es bietet eine Reihe von Softwarelösungen für Unternehmen an, um betriebswirtschaftliche Tätigkeiten zu unterstützen. Unterstützung der Tätigkeiten knüpft an die Definition, dass Informationssysteme betriebswirtschaftliche Vorhaben stützen. Herkunft und Zweck sind Teil des Lehrbeispiels, nicht Werbung ohne Bezug.\n\nDie Aussage ist wahr.",
+      "Seit 1972 und eine Folge von Generationen. SAP hat mehrere Generationen von ERP-Systemen veröffentlicht und ist seit 1972 am Markt. SAP R/3, SAP ERP, SAP Business Suite und SAP S/4HANA nennt der Text; S/4HANA ist die aktuelle ERP-Lösung. Aktuell bezieht sich auf diese Nennung im Lehrtext, nicht auf eine selbst recherchierte Marktbehauptung. Die Reihe zeigt Wandel von Systemen, passend zur Ablösung als Aktivität der Wirtschaftsinformatik.\n\nDie Aussage ist wahr.",
+      "CRM, SCM, BI neben ERP. SAP bietet Informationssysteme, die es Unternehmen ermöglichen, mit Kunden in Kontakt zu bleiben, in der Logistik den Überblick zu behalten oder Analysen auf Basis der Unternehmensdaten zu generieren. Die Klammern nennen Customer-Relationship-Management, Supply-Chain-Management und Business-Intelligence-Systeme. Das weitet das Beispiel über das ERP-Kernsystem hinaus, bleibt aber bei Informationssystemen zur Unterstützung betrieblicher Tätigkeiten.\n\nDie Aussage ist wahr.",
+      "Niemals die genannten Bereiche und Hardware statt Software: beides kehrt den Text um. ERP unterstützt je nach Fokus gerade Rechnungswesen, Materialwirtschaft und Produktion. SAP ist ein deutsches Softwareunternehmen in Walldorf, kein österreichischer Hardwarehersteller ohne Softwareangebot. Die absolute Verneinung der Unterstützungsfelder und die falsche Branchenzuordnung sind mit dem Lehrbeispiel unvereinbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  }
+]

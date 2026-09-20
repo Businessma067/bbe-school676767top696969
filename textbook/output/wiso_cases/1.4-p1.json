@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.01",
+    "title": "Niemand wirtschaftet allein",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Wirtschaften als Austausch:",
+    "statements": [
+      "Niemand wirtschaftet für sich allein.",
+      "Wirtschaften bedeutet, Austauschbeziehungen einzugehen, von denen die Tauschpartner profitieren.",
+      "Wer allein in einer Wohnung lebt, steht außerhalb jeder wirtschaftlichen Austauschbeziehung.",
+      "Durch die Austauschbeziehungen entsteht ein Kreislauf, der so genannte Wirtschaftskreislauf.",
+      "Wirtschaften besteht ausschließlich darin, alle Güter im eigenen Haushalt selbst herzustellen und auf jeden Tausch zu verzichten."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Allein frühstücken oder allein die Rechnung zahlen ändert die Grundlinie nicht. Wirtschaften heißt in diesem Abschnitt nicht Selbstversorgung hinter verschlossenen Türen, sondern Beziehungen, in denen jemand etwas gibt und jemand anderes etwas erhält. Der Satz „Niemand wirtschaftet für sich allein“ steht deshalb am Anfang: auch eine Person, die allein wohnt, kauft Brot, zahlt Miete oder arbeitet für Lohn. Ohne Gegenüber gäbe es keinen Tausch und damit kein Wirtschaften im Sinne des Lehrtextes. Der private Haushalt bleibt Teilnehmer, nicht Insel.\n\nDie Aussage ist wahr.",
+      "Tausch ist hier kein Nullsummenspiel. Beide Seiten sollen von der Beziehung profitieren: der Haushalt von Gütern oder Einkommen, das Unternehmen von Absatz oder Arbeitsleistung, der Staat von Abgaben und der Gegenleistung öffentlicher Aufgaben. Genau diese wechselseitige Vorteilhaftigkeit macht aus einzelnen Käufen und Verkäufen ein Netz. Wer Wirtschaften nur als einseitiges Nehmen denkt, verfehlt den Kern des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Alleinwohnen trennt nicht von der Wirtschaft. Eine Person, die allein lebt, bleibt privater Haushalt und tritt in denselben Kreislauf ein wie Familien: sie bietet oft Arbeitsleistung an, kauft Produkte und Dienstleistungen und zahlt Steuern. Die Behauptung, Alleinlebende stünden außerhalb jeder Austauschbeziehung, verwechselt Wohnform mit wirtschaftlicher Isolation. Isolation in diesem Sinn gibt es im Lehrtext nicht.\n\nAlleinlebende kaufen Strom, zahlen Miete, nutzen Straßen und Krankenhäuser und stehen oft in einem Arbeitsverhältnis. Das sind Tauschbeziehungen mit Unternehmen und mit dem Staat, nicht ein abgeschottetes Eigenleben. Der Abschnitt beginnt gerade damit, dass niemand für sich allein wirtschaftet. Wohnform ändert diese Einbindung nicht.\n\nDie Aussage ist falsch.",
+      "Aus vielen einzelnen Tauschakten wird ein Kreislauf, weil Güter und Geld zwischen denselben Gruppen hin- und herlaufen. Der Lehrtext nennt diesen Kreislauf Wirtschaftskreislauf. Er entsteht nicht durch eine Behörde, die ihn anordnet, sondern durch die Austauschbeziehungen selbst. Wer nur einzelne Käufe sieht, übersieht die kreislaufförmige Verbindung.\n\nDie Aussage ist wahr.",
+      "Selbstbacken am Sonntag widerlegt den Abschnitt nicht. Wirtschaften bedeutet hier, Austauschbeziehungen einzugehen, von denen die Tauschpartner profitieren. Wer alle Güter selbst herstellen und jeden Tausch streichen wollte, bliebe genau bei jenem Alleinwirtschaften, das der Text ausschließt. Haushalte können manches selbst tun, der Kern des Wirtschaftens in diesem Kapitel ist aber der Tausch, nicht die totale Eigenproduktion.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.02",
+    "title": "Vom Tausch zum Kreislauf",
+    "context": "Bewerten Sie die folgenden Aussagen zur Entstehung des Wirtschaftskreislaufs:",
+    "statements": [
+      "An der Wirtschaft sind zunächst die privaten Haushalte und die Unternehmen beteiligt.",
+      "Ein weiterer zentraler Wirtschaftsteilnehmer ist der Staat.",
+      "Der Wirtschaftskreislauf entsteht, weil alle Wirtschaftsteilnehmer Güter gegen Geld tauschen.",
+      "Austauschbeziehungen gibt es nur zwischen zwei Haushalten, niemals mit Unternehmen oder dem Staat.",
+      "Zwischen privaten Haushalten, Unternehmen und Staat entstehen kreislaufförmige Bewegungen, in denen Güter und Leistungen gegen Geld getauscht werden."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Der Abschnitt nennt zuerst zwei Gruppen, ohne die der Alltag nicht läuft: private Haushalte fragen nach und bieten Arbeitsleistung, Unternehmen stellen Produkte und Dienstleistungen her. „Zunächst“ heißt hier: sie sind die Grundfiguren, nicht dass der Staat später unwichtig wäre. Wer nur Firmen zählt oder nur Familien, lässt die eine Seite des Tauschs weg. Beide müssen vorkommen, damit Güter gegen Geld getauscht werden können und ein Kreislauf überhaupt entsteht.\n\nDie Aussage ist wahr.",
+      "Der Staat steht nicht am Rand als Zuschauer. Er ist ein weiterer zentraler Wirtschaftsteilnehmer: öffentliche Institutionen, rechtlicher Rahmen, Steuern, Infrastruktur, Schulen, Krankenhäuser. Ohne ihn fehlte im einfachen Kreislauf genau jene dritte Ecke, über die Abgaben, öffentliche Güter und Transferzahlungen laufen. Haushalte und Unternehmen allein beschreiben den Tausch unvollständig, sobald öffentliche Aufgaben und Abgaben ins Bild gehören.\n\nDie Aussage ist wahr.",
+      "Weil Haushalte, Unternehmen und Staat Güter gegen Geld tauschen, schließen sich die Beziehungen zu einem Kreis. Lohn fließt zur Arbeit, Kaufpreis zu den Gütern, Steuer zum Staat, öffentliche Leistung zurück. Der Kreislauf ist also kein Extra neben dem Tausch, sondern die Form, die der Tausch zwischen diesen Teilnehmern annimmt. Ohne den Tausch Güter gegen Geld gäbe es diese kreislaufförmigen Beziehungen nicht in der beschriebenen Weise.\n\nGüter gegen Geld, oder ein anderes Tauschmittel, ist die gemeinsame Klammer. Private Haushalte, Unternehmen und Staat stehen in solchen Beziehungen, nicht in getrennten Inseln. Daraus entstehen die kreislaufförmigen Austauschbeziehungen, die der Text Wirtschaftskreislauf nennt. Der Tausch ist die Ursache, der Kreis die Gestalt.\n\nDie Aussage ist wahr.",
+      "Der Lehrtext beschreibt gerade die Beziehungen zwischen Haushalten, Unternehmen und Staat, nicht einen Tausch nur unter Nachbarn. Arbeitsleistung gegen Lohn, Produkte gegen Kaufpreis, Steuern gegen öffentliche Leistungen: das sind die Achsen. Die Einschränkung auf zwei Haushalte streicht Unternehmen und Staat aus dem Bild und widerspricht dem Abschnitt.\n\nDie Aussage ist falsch.",
+      "Güter und Leistungen laufen in die eine Richtung, Geld in die andere, und beides verbindet dieselben drei Gruppen. Der Text spricht ausdrücklich von kreislaufförmigen Bewegungen, in denen Güter und Leistungen gegen Geld und andere Tauschmittel getauscht werden. Das ist die Kurzformel des Wirtschaftskreislaufs in diesem Abschnitt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.03",
+    "title": "Störungen greifen um sich",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie sich wirtschaftliche Probleme im Kreislauf ausbreiten:",
+    "statements": [
+      "Durch den Wirtschaftskreislauf können sich wirtschaftliche Probleme in einem Bereich rasch auf andere Bereiche und andere Wirtschaftsteilnehmer ausdehnen.",
+      "Wenn private Haushalte im Lockdown weniger konsumieren, können Unternehmen unter Druck geraten.",
+      "Unternehmen, die ihre Produkte und Dienstleistungen nicht mehr verkaufen konnten, mussten teilweise Personal abbauen.",
+      "Ein Einbruch beim Konsum der Haushalte bleibt stets auf die Haushalte beschränkt und erreicht niemals Unternehmen oder den Staat.",
+      "Der Staat hat in der Pandemie sowohl Haushalte als auch Unternehmen unterstützt."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Ein Kreis hat keine isolierte Ecke. Wenn bei einem Teilnehmer etwas stockt, fehlen dem Nächsten Nachfrage, Einkommen oder Steuern. Der Lehrtext macht genau das zur Folge des Kreislaufs: Probleme in einem Bereich oder bei bestimmten Wirtschaftsteilnehmern dehnen sich rasch auf andere aus. Wer den Kreislauf versteht, erwartet diese Ausbreitung, nicht abgeschottete Inseln. Genau deshalb kann ein Lockdown bei den Haushalten Unternehmen und später auch den Staat erreichen.\n\nDie Aussage ist wahr.",
+      "Weniger Konsum heißt: weniger Absatz. Im Lockdown-Beispiel haben private Haushalte weniger konsumiert, dadurch sind manche Unternehmen unter Druck geraten. Der Druck entsteht nicht aus einer Laune der Geschäftsführung, sondern aus der unterbrochenen Tauschbeziehung. Haushalte kaufen weniger, Unternehmen verkaufen weniger, die Kette ist dieselbe.\n\nDie Aussage ist wahr.",
+      "Wer nicht mehr verkauft, kann oft die bisherige Belegschaft nicht halten. Der Text formuliert vorsichtig: teilweise Personal abbauen, nicht: jedes Unternehmen entlässt alle. Die Richtung bleibt klar: fehlender Absatz trifft die Arbeitsplätze. Lohn und Beschäftigung hängen am Güterverkauf, nicht an einer getrennten Welt.\n\nFehlender Absatz bedeutet fehlende Einnahmen. Aus diesen Einnahmen zahlen Unternehmen Löhne. Können Produkte und Dienstleistungen nicht mehr verkauft werden, bricht diese Quelle ein, und Personalabbau wird für einen Teil der Betriebe zur Folge. Das Lehrbuch beschreibt genau diese Kette, ohne zu behaupten, jeder Betrieb habe alle Stellen gestrichen. „Teilweise“ hält die Aussage am Text.\n\nDie Aussage ist wahr.",
+      "Genau das Gegenteil zeigt das Pandemiebeispiel. Weniger Konsum der Haushalte setzt Unternehmen unter Druck, Personalabbau trifft wieder Haushalte, der Staat springt mit Unterstützung ein. Der Kreislauf verbindet die drei Gruppen. Die Behauptung einer dauerhaften Beschränkung auf die Haushalte leugnet genau diese Ausbreitung.\n\nIm Lockdown haben private Haushalte weniger konsumiert. Dadurch sind manche Unternehmen unter Druck geraten. Betriebe, die nicht mehr verkaufen konnten, mussten teilweise Personal abbauen. Der Staat hat Haushalte und Unternehmen unterstützt. Jeder Satz der Kette widerlegt die Isolationsthese. Ein Einbruch beim Konsum bleibt im Kreislauf nicht bei den Haushalten stehen.\n\nDie Aussage ist falsch.",
+      "Unterstützung lief in beide Richtungen, nicht nur zu einer Gruppe. Der Staat hat in dieser Zeit sowohl Haushalte als auch Unternehmen unterstützt. Das passt zur Rolle des Staates im Kreislauf: er nimmt nicht nur Steuern, er leistet auch Zahlungen, wenn der Tausch zwischen den privaten Teilnehmern stockt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.04",
+    "title": "Was der Staat umfasst",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle des Staates als Wirtschaftsteilnehmer:",
+    "statements": [
+      "Der Staat umfasst alle öffentlichen Institutionen.",
+      "Der Staat sorgt für den rechtlichen Rahmen, in dem die Wirtschaftsbeziehungen stattfinden.",
+      "Der Staat hebt von privaten Haushalten und Unternehmen Steuern und andere Abgaben ein.",
+      "Zum Staat zählen ausschließlich private Banken, nicht aber Schulen oder Krankenhäuser.",
+      "Mit den eingenommenen Mitteln erfüllt der Staat Aufgaben, indem er zum Beispiel Straßen, Radwege, Parkanlagen, Behörden, digitale Infrastruktur, Krankenhäuser und Schulen bauen lässt."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Staat ist hier keine einzelne Amtsstube. Der Begriff umfasst alle öffentlichen Institutionen. Behörden, Schulen, Krankenhäuser und andere öffentliche Stellen gehören dazu, nicht nur ein Ministerium. Wer den Staat auf eine Person oder ein Amt verengt, unterbietet die Definition des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Wirtschaftsbeziehungen brauchen Regeln. Der Staat sorgt für den rechtlichen Rahmen, in dem diese Beziehungen stattfinden: Verträge, Eigentum, Abgabenrecht. Ohne diesen Rahmen wären Tausch und Kreislauf nicht in der beschriebenen Form möglich. Der Staat ist also nicht nur Käufer und Zahler, sondern auch Ordnungsgeber.\n\nDie Aussage ist wahr.",
+      "Steuern und andere Abgaben fließen von privaten Haushalten und von Unternehmen zum Staat. Mit diesem Geld erfüllt er seine Aufgaben. Die Einnahmeseite ist Teil seiner aktiven Teilnahme am Wirtschaftsleben, nicht ein Randthema neben dem Kreislauf. Wer den Staat nur als Ausgeber ohne Einnahmen denkt, lässt die Gegenrichtung weg.\n\nPrivate Haushalte und Unternehmen zahlen Steuern und andere Abgaben. Der Staat verwendet diese Mittel für Straßen, Schulen, Krankenhäuser und weitere öffentliche Aufgaben. Die Abgabe ist der Geldstrom zum Staat, die öffentliche Leistung der Gegenstrom. Beides gehört zur Beschreibung im Lehrtext. Die Aussage trifft die Einnahmeseite korrekt.\n\nDie Aussage ist wahr.",
+      "Banken sind im einfachen Kreislauf den Unternehmen zugeordnet, weil sie Finanzdienstleistungen anbieten. Schulen und Krankenhäuser nennt der Text ausdrücklich als Aufgaben, die der Staat mit Abgaben finanzieren und bauen lässt. Die Umkehrung, Staat sei nur private Banken und nicht Bildung oder Gesundheit, verdreht beides.\n\nDie Aussage ist falsch.",
+      "Die Liste ist die Aufgabenbeschreibung, keine Ausschmückung. Straßen, Radwege, Parkanlagen, Behörden, digitale Infrastruktur, Krankenhäuser und Schulen stehen als Beispiele dafür, wofür der Staat das eingenommene Geld einsetzt, indem er bauen lässt. So nimmt er aktiv an der Wirtschaft teil: er vergibt Aufträge und stellt öffentliche Infrastruktur bereit. Die Beispiele zeigen Breite, nicht eine einzige Behörde als ganzen Staat.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.05",
+    "title": "Haushalte: Arbeit gegen Lohn",
+    "context": "Bewerten Sie die folgenden Aussagen zur Stellung privater Haushalte im Wirtschaftskreislauf:",
+    "statements": [
+      "Private Haushalte bieten Arbeitsleistung an und erhalten dafür Geld in Form von Lohn und Gehalt.",
+      "Mit Lohn und Gehalt können private Haushalte Produkte und Dienstleistungen kaufen.",
+      "Private Haushalte erscheinen im Kreislauf ausschließlich als Käufer und niemals als Anbieter von Arbeitsleistung.",
+      "Unternehmen stellen Produkte und Dienstleistungen her, die private Haushalte, andere Unternehmen und der Staat gegen Geld erwerben können.",
+      "Arbeitsleistung der Haushalte bleibt im Kreislauf ohne Gegenleistung, weil Löhne außerhalb jeder Tauschbeziehung stehen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Haushalte stehen nicht nur an der Ladenkasse. Sie bieten Arbeitsleistung an und erhalten dafür Geld, Lohn und Gehalt. Das ist die eine Richtung des Tauschs mit den Unternehmen: Arbeit hinein, Einkommen heraus. Ohne diese Seite gäbe es im Kreislauf kein Einkommen, aus dem später gekauft wird. Der Lehrtext stellt Arbeitsangebot und Güterkauf deshalb als zusammengehörige Rollen desselben privaten Haushalts dar, nicht als zwei verschiedene Personenkreise.\n\nDie Aussage ist wahr.",
+      "Das erhaltene Geld ist kein Selbstzweck. Mit Lohn und Gehalt kaufen Haushalte Produkte und Dienstleistungen. Einkommen aus der Arbeit kehrt als Nachfrage zu den Unternehmen zurück. Genau diese Rückkehr macht aus zwei getrennten Akten einen Kreislauf.\n\nDie Aussage ist wahr.",
+      "Nur Käufer zu sein, wäre die halbe Figur. Der Lehrtext stellt beides nebeneinander: Arbeitsleistung anbieten und Güter kaufen. Wer die Angebotsseite der Haushalte streicht, unterbricht den Kreislauf schon beim ersten Schritt, weil dann kein Lohn entsteht, aus dem gekauft werden könnte.\n\nPrivate Haushalte bieten Arbeitsleistung an und erhalten Lohn und Gehalt. Mit diesem Geld kaufen sie Produkte und Dienstleistungen. Beide Rollen gehören zur Beschreibung. Die Behauptung, Haushalte seien ausschließlich Käufer und niemals Anbieter von Arbeitsleistung, streicht die Einkommensseite. Ohne Arbeitsangebot gäbe es im Modell dieses Abschnitts keinen Lohnstrom.\n\nDie Aussage ist falsch.",
+      "Absatz geht nicht nur an Familien. Unternehmen stellen her, was private Haushalte, andere Unternehmen und der Staat gegen Geld oder ein anderes Tauschmittel erwerben. Vorleistungen zwischen Betrieben und öffentliche Aufträge gehören dazu. Der Kreis ist dreiseitig, nicht nur Haushalt gegen Firma.\n\nDie Aussage ist wahr.",
+      "Lohn und Gehalt sind gerade die Gegenleistung für Arbeitsleistung. Sie stehen im Zentrum der Tauschbeziehung zwischen Haushalt und Unternehmen, nicht außerhalb. Die Behauptung einer Arbeit ohne Gegenleistung widerspricht dem Abschnitt direkt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.06",
+    "title": "Steuern und öffentliche Leistungen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Abgaben und staatlichen Leistungen im Kreislauf:",
+    "statements": [
+      "Unternehmen und Haushalte zahlen Steuern und andere Abgaben an den Staat und erhalten dafür staatliche Leistungen, also öffentliche Güter.",
+      "Der Staat kann Aufträge an Unternehmen vergeben, damit Infrastruktur bereitgestellt wird.",
+      "Öffentliche Güter fließen im Kreislauf nur zu Unternehmen, niemals zu privaten Haushalten.",
+      "Der Staat benötigt Geld, um Personen für ihre Arbeitsleistung zu bezahlen, etwa Lehrkräfte, Polizei oder Richterinnen und Richter.",
+      "Steuern unterbrechen den Wirtschaftskreislauf dauerhaft, weil danach keine Gegenleistung des Staates mehr erfolgt."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Abgabe und Leistung gehören zusammen. Haushalte und Unternehmen zahlen Steuern und andere Abgaben und erhalten dafür staatliche Leistungen, öffentliche Güter. Straßen, Schulen, rechtlicher Rahmen und Behörden sind solche Gegenleistungen, auch wenn sie nicht wie ein Laib Brot über die Ladentheke gehen. Der Kreislauf schließt sich über diese öffentliche Seite. Wer nur die Steuerbuchung sieht und die Leistung streicht, unterbricht genau diese Gegenrichtung.\n\nDie Aussage ist wahr.",
+      "Bauen lassen heißt oft: ein Unternehmen bekommt den Auftrag. Der Staat vergibt Aufträge, damit Straßen, digitale Infrastruktur, Krankenhäuser oder Schulen zur Verfügung stehen. So fließt Geld vom Staat zu Unternehmen, und Güter bzw. Bauleistungen fließen zurück. Die öffentliche Aufgabe wird im Kreislauf sichtbar als Tausch mit der Unternehmensseite.\n\nDie Aussage ist wahr.",
+      "Öffentliche Güter dienen Haushalten ebenso: Schulen, Krankenhäuser, Parkanlagen, Radwege. Der Text nennt diese Beispiele ausdrücklich als Aufgaben des Staates gegenüber der Gesellschaft, nicht als Betriebsausstattung nur für Firmen. Die Einschränkung auf Unternehmen allein ist zu eng.\n\nStraßen, Schulen und Krankenhäuser nutzen private Haushalte täglich. Der Staat erfüllt mit Abgaben genau solche Aufgaben und steht mit Haushalten in Tauschbeziehungen, nicht nur mit Betrieben. Wer öffentliche Güter nur den Unternehmen zuschreibt, lässt die Haushaltsseite der staatlichen Leistung weg. Der Lehrtext beschreibt beide Seiten.\n\nDie Aussage ist falsch.",
+      "Der Staat kauft nicht nur Beton, er beschäftigt Menschen. Lehrkräfte, Polizistinnen und Polizisten, Richterinnen und Richter erhalten Geld für ihre Arbeitsleistung. Auch das ist ein Strom im Kreislauf: vom Staat als Arbeitgeber zu privaten Haushalten als Einkommensbeziehende.\n\nDie Aussage ist wahr.",
+      "Steuern sind ein Entzug von Kaufkraft bei Haushalten und Unternehmen, aber der Abschnitt beschreibt zugleich die Rückflüsse: öffentliche Güter, Aufträge, Löhne im öffentlichen Dienst, Unterstützungszahlungen. Dauerhaft ohne Gegenleistung ist gerade nicht das Bild des Lehrtextes.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.07",
+    "title": "Transfers an Familien und Gründer",
+    "context": "Bewerten Sie die folgenden Aussagen zu Unterstützungszahlungen des Staates:",
+    "statements": [
+      "Der Staat leistet Unterstützungszahlungen an private Haushalte, zum Beispiel an Familien mit Kindern.",
+      "Der Staat leistet Unterstützungszahlungen an Unternehmen, zum Beispiel an Unternehmensgründerinnen und -gründer.",
+      "Zwischen Staat und privaten Haushalten sowie zwischen Staat und Unternehmen kommt es zu zahlreichen Tauschbeziehungen.",
+      "Staatliche Transfers an Haushalte beenden den Kreislauf, weil Empfängerinnen und Empfänger das Geld nicht mehr ausgeben dürfen.",
+      "Unterstützungszahlungen fließen im Lehrtext ausschließlich an Großbanken und niemals an Familien oder Gründende."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Neben Steuern und öffentlichen Gütern gibt es Zahlungen ohne unmittelbaren Kauf eines Stücks Infrastruktur. Der Staat leistet Unterstützungszahlungen an private Haushalte, als Beispiel Familien mit Kindern. Das Geld wechselt vom Staat zum Haushalt und kann dort wieder als Konsum in den Kreislauf zurückkehren. Der Transfer ist also ein Strom in der umgekehrten Richtung zur Steuer, nicht das Ende der wirtschaftlichen Beziehung.\n\nDie Aussage ist wahr.",
+      "Auch die Unternehmensseite empfängt Transfers. Das Buch nennt Unternehmensgründerinnen und -gründer als Beispiel. Unterstützung an Gründende ist damit ein Strom Staat zu Unternehmen, nicht nur ein sozialpolitischer Satz über Familien. Beide Richtungen stehen im selben Absatz.\n\nDie Aussage ist wahr.",
+      "Steuern, öffentliche Leistungen, Aufträge, Löhne im öffentlichen Dienst und Transfers ergeben viele Beziehungen, keine einzige Einbahnstraße. Der Text hält fest, dass es zwischen Staat und Haushalten einerseits sowie Unternehmen andererseits zu zahlreichen Tauschbeziehungen kommt. „Zahlreich“ widerspricht dem Bild eines Staates, der nur einmal im Jahr eine Steuer kassiert und sonst fehlt.\n\nAbgaben fließen zum Staat, öffentliche Güter und Transfers zurück, Aufträge gehen an Unternehmen, Löhne an Lehrkräfte und Polizei. Jede dieser Bewegungen ist eine Tausch- oder Zahlungsbeziehung im Kreislauf. Der Lehrtext fasst sie als zahlreiche Beziehungen zwischen Staat, Haushalten und Unternehmen. Die Aussage gibt diese Vielfalt korrekt wieder, ohne eine Beziehung zur einzigen zu machen.\n\nDie Aussage ist wahr.",
+      "Transfers ersetzen Einkommen oder stützen es. Nichts im Abschnitt sagt, Empfängerinnen und Empfänger dürften das Geld nicht ausgeben. Im Gegenteil bleibt der Haushalt Nachfrager von Produkten und Dienstleistungen. Ein Transfer, der den Kreislauf beenden würde, wäre das Gegenteil der beschriebenen Einbindung.\n\nDie Aussage ist falsch.",
+      "Die Beispiele sind Familien mit Kindern und Gründende, nicht Großbanken. Banken kommen später als Finanzdienstleister im Geldkreislauf vor, nicht als einzige Transferempfänger. Die Verschiebung auf Großbanken allein widerspricht den genannten Beispielen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.08",
+    "title": "Güterkreislauf und Geldkreislauf",
+    "context": "Bewerten Sie die folgenden Aussagen zu den beiden Kreisläufen innerhalb des Wirtschaftskreislaufs:",
+    "statements": [
+      "Innerhalb des Wirtschaftskreislaufs unterscheidet man einen Güterkreislauf und einen Geldkreislauf.",
+      "Im Güterkreislauf bewegen sich Produkte und Dienstleistungen zwischen den Wirtschaftsteilnehmern.",
+      "Güterkreislauf und Geldkreislauf sind zwei Namen für denselben Strom, weil Güter und Geld immer in dieselbe Richtung fließen.",
+      "Für den Geldkreislauf spielen Banken und andere Finanzdienstleistungsunternehmen eine wesentliche Rolle.",
+      "Ohne jeden Geldstrom gäbe es im beschriebenen Modell trotzdem denselben vollständigen Wirtschaftskreislauf aus Tausch Güter gegen Geld."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Ein Wirtschaftskreislauf, zwei Blickrichtungen. Der Text unterscheidet innerhalb desselben Geschehens Güterkreislauf und Geldkreislauf. Die Unterscheidung trennt nicht zwei Volkswirtschaften, sondern zwei Seiten desselben Tauschs: was real übergeht, und was als Zahlung entgegenläuft.\n\nDie Aussage ist wahr.",
+      "Produkte und Dienstleistungen sind die Güterseite. Sie laufen von Unternehmen zu Haushalten, zu anderen Unternehmen und zum Staat, während Arbeitsleistung von Haushalten zu Unternehmen und zum Staat geht. Das ist der Güterkreislauf, den der Abschnitt zuvor an den Tauschbeziehungen entwickelt hat.\n\nDie Aussage ist wahr.",
+      "Gleicher Name, gleiche Richtung: das wäre die Verwechslung. Typischerweise laufen Güter in die eine Richtung und Geld in die Gegenrichtung. Wer beide Ströme identisch setzt, kann nicht mehr erklären, warum Lohn der Gegenwert der Arbeit ist und der Kaufpreis der Gegenwert der Ware. Die Unterscheidung existiert genau deshalb.\n\nGüter und Leistungen werden gegen Geld getauscht. Das setzt entgegengesetzte Bewegungen voraus, nicht denselben Weg in derselben Richtung. Innerhalb des Wirtschaftskreislaufs unterscheidet der Text deshalb Güterkreislauf und Geldkreislauf. Wer behauptet, beide Namen bezeichneten denselben Strom in dieselbe Richtung, streicht genau diese Gegenläufigkeit. Dann bliebe unklar, was Haushalte für Arbeit erhalten und was Unternehmen für Produkte erhalten.\n\nDie Aussage ist falsch.",
+      "Auf der Geldseite sind Banken zentral. Sie und andere Finanzdienstleistungsunternehmen spielen für den Geldkreislauf eine wesentliche Rolle: Zahlungsverkehr, Einlagen, Kredite, Beratung. Ohne diese Dienstleistungen wäre der Geldstrom zwischen den übrigen Teilnehmern nicht in der beschriebenen Form organisierbar. Der Güterkreislauf kann ohne sie erzählt werden, der Geldkreislauf dieses Abschnitts nicht.\n\nDie Aussage ist wahr.",
+      "Der Tausch lautet Güter gegen Geld oder ein anderes Tauschmittel. Ein Modell ohne jeden Geldstrom wäre ein anderes Bild als das des Abschnitts. Der vollständige Wirtschaftskreislauf dieses Kapitels enthält beide Seiten. Die Behauptung eines vollständigen Kreislaufs ohne Geldstrom widerspricht der Definition.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.09",
+    "title": "Banken im einfachen Kreislauf",
+    "context": "Bewerten Sie die folgenden Aussagen zur Einordnung von Banken im Wirtschaftskreislauf:",
+    "statements": [
+      "Im einfachen Wirtschaftskreislauf sind Banken den Unternehmen zugeordnet.",
+      "Banken umfassen jene Unternehmen, die Dienstleistungen im Zusammenhang mit Geld anbieten.",
+      "Banken gehören im einfachen Kreislauf ausschließlich zum Staat, weil nur der Staat Geld ausgeben darf.",
+      "Private Haushalte und Unternehmen können Bankdienstleistungen nutzen, etwa Zahlungen, Einlagen oder Kredite.",
+      "Finanzdienstleistungsunternehmen spielen für den Geldkreislauf keine Rolle, weil Geld von selbst zwischen den Teilnehmern wandert."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Die Grafik des einfachen Kreislaufs hat drei Ecken: Haushalte, Unternehmen, Staat. Banken sitzen in diesem vereinfachten Bild bei den Unternehmen, nicht als vierte unabhängige Säule. Das ist eine Zuordnung des Modells, keine Behauptung, Banken seien Bäckereien. Sie bleiben Spezialisten für Geld, zählen aber zur Unternehmensseite. Wer sie dem Staat zuschlägt oder als eigene Volkswirtschaft zeichnet, verlässt das einfache Schema des Lehrtextes.\n\nDie Aussage ist wahr.",
+      "Die Zuordnung folgt der Tätigkeit. Banken sind jene Unternehmen, die eine Reihe von Dienstleistungen im Zusammenhang mit Geld anbieten. Zahlungsverkehr, Entgegennahme von Spar- und Anlagegeld, Kreditvergabe und Beratung sind die genannten Leistungen. Die Definition hängt an diesen Diensten, nicht am Gebäude mit Schalter.\n\nDie Aussage ist wahr.",
+      "Geld ausgeben dürfen viele Teilnehmer: Haushalte kaufen, Unternehmen zahlen Löhne, der Staat leistet Transfers. Banken dem Staat zuzuordnen, weil nur er Geld ausgeben dürfe, vermischt zwei Dinge, die der Text trennt. Im einfachen Kreislauf gehören Banken zu den Unternehmen.\n\nDer Staat gibt öffentliches Geld für Aufgaben aus, Haushalte geben Lohn aus, Unternehmen zahlen für Vorleistungen. Banken organisieren den Geldkreislauf als Finanzdienstleister und sind den Unternehmen zugeordnet. Die These, nur der Staat dürfe Geld ausgeben und Banken gehörten deshalb zum Staat, findet im Abschnitt keine Stütze. Sie verdoppelt den Staat und streicht die Unternehmenszuordnung.\n\nDie Aussage ist falsch.",
+      "Zahlungsverkehr, Sparen und Anlegen, Kreditbedarf und Beratung betreffen Haushalte ebenso wie Unternehmen. Der Text spricht von Wirtschaftsteilnehmern, die sparen oder Geld benötigen, nicht von einer einzigen Kundengruppe. Nutzung der Bankdienste durch Haushalte und Unternehmen ist deshalb im Modell vorgesehen.\n\nDie Aussage ist wahr.",
+      "Geld wandert nicht von selbst in geordneter Form über Konten, Überweisungen und Kredite. Dafür sind Banken wesentlich. Die Behauptung, Finanzdienstleister spielten keine Rolle, widerspricht dem Satz, der ihnen genau diese Rolle zuschreibt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.10",
+    "title": "Zahlungsverkehr der Banken",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zahlungsverkehr:",
+    "statements": [
+      "Banken führen den Zahlungsverkehr durch.",
+      "Für viele Möglichkeiten des Bezahlens ist ein Bankkonto erforderlich.",
+      "Ohne Bankkonto sind im Lehrtext sämtliche Tauschmittel unmöglich, auch Bargeld und Naturaltausch.",
+      "Der Zahlungsverkehr verbindet die Geldströme zwischen Haushalten, Unternehmen und Staat praktisch.",
+      "Banken dürfen Zahlungen nur zwischen zwei Unternehmen abwickeln, niemals von einem privaten Haushalt."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Die erste genannte Bankdienstleistung ist der Zahlungsverkehr. Überweisungen, Kartenzahlungen und ähnliche Wege laufen über Institute, die Konten führen. Ohne diese Durchführung müssten viele Zahlungen bar oder in anderer umständlicher Form erfolgen. Der Geldkreislauf braucht genau diese Infrastruktur.\n\nDie Aussage ist wahr.",
+      "Nicht jede Zahlung, aber viele. Der Text fügt hinzu: nicht zuletzt, weil für viele Möglichkeiten des Bezahlens ein Bankkonto erforderlich ist. Konto ist also oft Voraussetzung der gewählten Zahlungsform, nicht bloß ein Extra. Wer nur Münzen denkt, unterschätzt, wie der Lehrtext den Alltag des Geldkreislaufs beschreibt. Überweisung, Kartenzahlung und ähnliche Wege hängen an dieser Infrastruktur der Banken.\n\nDie Aussage ist wahr.",
+      "Der Abschnitt kennt Geld oder ein anderes Tauschmittel. Bargeld und andere Tauschformen werden nicht für unmöglich erklärt, sobald jemand kein Konto hat. „Viele Möglichkeiten des Bezahlens“ ist nicht „sämtliche Tauschmittel“. Die absolute Unmöglichkeitsbehauptung überzieht den Text.\n\nGüter können gegen Geld oder ein anderes Tauschmittel getauscht werden. Der Zahlungsverkehr der Banken ist wesentlich, weil viele Bezahlwege ein Konto brauchen. Das schließt weder Bargeld noch jeden anderen Tausch aus. Wer aus der Kontoerfordernis für viele Wege die Unmöglichkeit aller Tauschmittel ohne Konto macht, verwandelt „viele“ in „alle“. Genau das steht nicht im Lehrtext.\n\nDie Aussage ist falsch.",
+      "Lohn, Kaufpreis, Steuer, Transfer: all das sind Zahlungen zwischen den drei Gruppen. Banken führen diesen Verkehr durch und machen den Geldkreislauf alltagstauglich. Die praktische Verbindung ist der Sinn der ersten Aufzählung, nicht eine getrennte Bankenwelt ohne Bezug zu Haushalt und Staat.\n\nDie Aussage ist wahr.",
+      "Private Haushalte zahlen Miete, kaufen Güter, überweisen Steuern. Der Zahlungsverkehr schließt sie ein. Die Beschränkung auf zwei Unternehmen streicht die Haushaltsseite, obwohl Haushalte zentrale Teilnehmer des Kreislaufs sind.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.11",
+    "title": "Sparen, Anlegen und Kredit",
+    "context": "Bewerten Sie die folgenden Aussagen zu Einlagen und Krediten:",
+    "statements": [
+      "Banken nehmen Geld von Wirtschaftsteilnehmern entgegen, die sparen und anlegen möchten.",
+      "Banken stellen Wirtschaftsteilnehmern Geld zur Verfügung, die Geld benötigen, zum Beispiel in Form von Krediten.",
+      "Wer spart, entzieht dem Kreislauf endgültig jede weitere Verwendung des Geldes, weil Einlagen niemals wieder verliehen werden.",
+      "Kredit bedeutet in diesem Abschnitt, dass die Bank jenen Teilnehmern Mittel bereitstellt, die Geld brauchen.",
+      "Nur der Staat darf sparen; private Haushalte und Unternehmen legen niemals Geld bei Banken an."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Sparen und Anlegen sind die Einlagenseite. Banken nehmen Geld von anderen Wirtschaftsteilnehmern entgegen, die genau das möchten. Das Geld liegt damit nicht bloß unter der Matratze, sondern bei einem Finanzdienstleister, der es im Geldkreislauf weiterverwendet, etwa für Kredite.\n\nDie Aussage ist wahr.",
+      "Die Gegenseite zur Einlage ist die Bereitstellung. Wer Geld braucht, kann es von der Bank erhalten, zum Beispiel als Kredit. Haushalte, Unternehmen und in der Logik des Kreislaufs auch andere Teilnehmer mit Finanzierungsbedarf stehen auf dieser Seite. Ohne diese Funktion fehlte ein zentraler Dienst der Banken. Sparen und Kredit gehören deshalb zusammen ins Bild, nicht als zwei getrennte Welten ohne Bezug.\n\nDie Aussage ist wahr.",
+      "Endgültig entzogen wäre das Geld nur, wenn es die Bank wegsperrte und nie wieder herausließe. Der Text stellt Einlage und Kredit nebeneinander: entgegennehmen von Sparenden, zur Verfügung stellen an Bedürftige. Die Brücke zwischen beiden ist gerade die Weitergabe, nicht das endgültige Verschwinden.\n\nBanken nehmen Spar- und Anlagegeld entgegen und stellen zugleich jenen Teilnehmern Mittel bereit, die Geld benötigen. Beides steht in derselben Aufzählung. Wer spart, übergibt der Bank Kaufkraft, die als Kredit wieder in den Geldkreislauf eintreten kann. Die These vom endgültigen Entzug ohne jedes Verleihen widerspricht dieser Doppelrolle. Sparen unterbricht den Güterkauf des Sparenden, beendet aber nicht den Geldkreislauf insgesamt.\n\nDie Aussage ist falsch.",
+      "Kredit ist hier die Form, in der Banken Geld zur Verfügung stellen, wenn jemand Mittel braucht. Die Formulierung bleibt nah am Text und erfindet keine Zinssätze oder Kreditarten, die das Buch nicht nennt. Der Kern ist Bereitstellung von Geld an Bedürftige im Geldkreislauf.\n\nDie Aussage ist wahr.",
+      "Wirtschaftsteilnehmer sparen und legen an, nicht nur der Staat. Haushalte und Unternehmen gehören zu diesen Teilnehmern. Die Behauptung, allein der Staat dürfe sparen, streicht genau die Kundschaft, die Banken im Lehrtext bedienen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.12",
+    "title": "Beratung und das volle Bankenset",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Dienstleistungen der Banken:",
+    "statements": [
+      "Banken beraten bei finanziellen Angelegenheiten.",
+      "Zu den genannten Bankdienstleistungen gehören Zahlungsverkehr, Entgegennahme von Spar- und Anlagegeld, Kreditvergabe und Beratung.",
+      "Beratung ersetzt im Lehrtext den Zahlungsverkehr vollständig, weil niemand mehr Überweisungen braucht, sobald ein Gespräch stattgefunden hat.",
+      "Finanzielle Angelegenheiten, zu denen beraten wird, betreffen Wirtschaftsteilnehmer, die mit Geld umgehen, also etwa Haushalte und Unternehmen.",
+      "Banken bieten im Abschnitt keinerlei Dienstleistung im Zusammenhang mit Geld an."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Neben Konto, Einlage und Kredit steht die Beratung. Banken beraten bei finanziellen Angelegenheiten. Das ist die vierte genannte Leistung, keine Fußnote. Wer Banken nur als Geldtransporter denkt, lässt diese Rolle weg.\n\nDie Aussage ist wahr.",
+      "Die Aufzählung ist geschlossen und konkret: Zahlungsverkehr durchführen, Geld von Sparenden und Anlegenden entgegennehmen, Geld als Kredit bereitstellen, bei finanziellen Angelegenheiten beraten. Alle vier gehören zum Bild der Banken im Geldkreislauf. Eine Teilliste ohne Beratung oder ohne Kredit wäre unvollständig gegenüber dem Text. Der Abschnitt definiert Banken über genau dieses Bündel, nicht über eine einzelne Schaltertätigkeit.\n\nDie Aussage ist wahr.",
+      "Beratung erklärt oder empfiehlt, sie überweist nicht von selbst. Der Zahlungsverkehr bleibt eine eigene Leistung, ausdrücklich an erster Stelle. Ein Gespräch hebt die Notwendigkeit von Konten und Zahlungen nicht auf. Die Ersetzungsbehauptung vermischt zwei Dienste, die der Text nebeneinander führt.\n\nZuerst führen Banken den Zahlungsverkehr durch, nicht zuletzt weil viele Bezahlwege ein Konto brauchen. Danach folgen Einlagen, Kredite und Beratung. Die Reihenfolge zeigt Ergänzung, nicht Ersatz. Wer die Beratung zum alleinigen Nachfolger des Zahlungsverkehrs macht, streicht Konten und Überweisungen aus dem Geldkreislauf. Genau diese Infrastruktur bleibt im Lehrtext bestehen, auch wenn beraten wird.\n\nDie Aussage ist falsch.",
+      "Finanzielle Angelegenheiten haben jene, die sparen, anlegen, zahlen oder Kredit brauchen. Das sind Wirtschaftsteilnehmer im Kreislauf, typischerweise Haushalte und Unternehmen, im weiteren Sinn auch andere. Beratung hängt an diesen Angelegenheiten, nicht an einer geheimen vierten Bevölkerungsgruppe.\n\nDie Aussage ist wahr.",
+      "Der ganze Absatz definiert Banken über Geld-Dienstleistungen. Die Negation „keinerlei“ widerspricht jeder der vier Bulletpoints. Sie ist die grobe Umkehrung des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.13",
+    "title": "Drei Teilnehmer, zwei Ströme",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenspiel von Haushalten, Unternehmen und Staat:",
+    "statements": [
+      "Einkommen aus Arbeitsleistung kann als Nachfrage nach Produkten und Dienstleistungen zu den Unternehmen zurückfließen.",
+      "Steuern sind ein Geldstrom zum Staat, öffentliche Leistungen und Transfers sind Gegenströme zu Haushalten und Unternehmen.",
+      "Im einfachen Kreislauf kommen Regierung, Banken und Außenhandel niemals vor, weil der Text nur zwei isolierte Haushalte kennt.",
+      "Unternehmen können vom Staat Aufträge erhalten und zugleich Steuern zahlen.",
+      "Der Güterkreislauf beschreibt reale Leistungen, der Geldkreislauf die entgegengesetzten Zahlungen, an denen Banken wesentlich mitwirken."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "Lohn entsteht an der Arbeit, Kauf an der Ladentheke oder Rechnung. Beides verbindet dieselben Gruppen. Haushalte bieten Arbeitsleistung, erhalten Geld, kaufen Güter: das Einkommen kehrt als Nachfrage zurück. Genau so schließt sich der Kreis zwischen Haushalt und Unternehmen, noch bevor der Staat hinzukommt. Der Lehrtext beschreibt diesen Rückfluss als Teil der kreislaufförmigen Austauschbeziehungen, nicht als Zufall nach dem Zahltag.\n\nDie Aussage ist wahr.",
+      "Zum Staat fließen Steuern und andere Abgaben. Zurück fließen öffentliche Güter, Infrastruktur über Aufträge, Löhne im öffentlichen Dienst und Unterstützungszahlungen. Wer nur die Steuer sieht, kennt den halben Staat. Wer nur den Transfer sieht, kennt die andere Hälfte. Der Abschnitt verlangt beides.\n\nDie Aussage ist wahr.",
+      "Der einfache Kreislauf dieses Abschnitts kennt Haushalte, Unternehmen und Staat. Banken sind den Unternehmen zugeordnet. Isolierte zwei Haushalte sind gerade nicht das Modell. Regierung im Sinne des Staates kommt vor, Banken kommen vor. Außenhandel behandelt ein späterer Teil desselben Kapitels, gehört aber nicht zur Behauptung, der Text kenne nur zwei Haushalte. Die Aussage ist in ihrer Gesamtheit falsch.\n\nPrivate Haushalte, Unternehmen und der Staat sind die wesentlichen Teilnehmer. Banken sitzen bei den Unternehmen und tragen den Geldkreislauf. Der Text beginnt damit, dass niemand allein wirtschaftet, und endet der hier genutzte Ausschnitt bei den Bankleistungen. Zwei isolierte Haushalte ohne Unternehmen, Staat und Banken entsprechen diesem Ausschnitt nicht. Die Absolute „niemals“ über Staat und Banken trifft nicht zu.\n\nDie Aussage ist falsch.",
+      "Dieselbe Firma kann Auftragnehmerin des Staates sein und Abgabenzahlerin. Der Lehrtext nennt beides: Aufträge für Infrastruktur und Steuern der Unternehmen. Die beiden Rollen schließen einander nicht aus. Sie sind zwei Beziehungen auf derselben Achse Staat–Unternehmen.\n\nDie Aussage ist wahr.",
+      "Real gegen monetär, mit Banken auf der Geldseite: das ist die Unterscheidung des Abschnitts. Güter und Leistungen gegen Geld, Banken für Zahlungsverkehr, Einlagen, Kredit und Beratung. Die Aussage fasst den Kern ohne fremde Themen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.14",
+    "title": "Lockdown als Kreislaufkette",
+    "context": "Bewerten Sie die folgenden Aussagen zur Pandemie als Beispiel gegenseitiger Abhängigkeiten:",
+    "statements": [
+      "Die Pandemie hat Kreisläufe und gegenseitige Abhängigkeiten rasch sichtbar gemacht.",
+      "Weniger Konsum der Haushalte, Druck auf Unternehmen, möglicher Personalabbau und staatliche Unterstützung bilden im Lehrtext eine zusammenhängende Kette.",
+      "Personalabbau trifft erneut private Haushalte, weil Lohn ausfällt, und verstärkt so die Störung im Kreislauf.",
+      "Staatliche Unterstützung in der Krise ändert nichts an der Tatsache, dass der Staat im normalen Kreislauf weder Steuern einhebt noch öffentliche Aufgaben erfüllt.",
+      "Gegenseitige Abhängigkeiten bedeuten, dass ein Stocken bei einem Teilnehmer Folgen bei anderen haben kann, nicht dass jeder Teilnehmer völlig unabhängig bleibt."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Das Coronavirus-Beispiel ist kein Schmuck. Es soll zeigen, was der Kreislauf logisch schon sagt: Abhängigkeiten werden sichtbar, sobald ein Bereich stockt. Lockdown und weniger Konsum sind der Auslöser, die schnelle Ausbreitung auf Unternehmen, Beschäftigung und Staat der Beweis. Der Satz trifft die Absicht des Lehrtextes. Ohne Kreislauf bliebe der Lockdown eine isolierte Haushaltsgeschichte, die der Abschnitt gerade nicht erzählt.\n\nDie Aussage ist wahr.",
+      "Vier Glieder, eine Geschichte. Haushalte konsumieren weniger, manche Unternehmen geraten unter Druck, wer nicht mehr verkauft, baut teilweise Personal ab, der Staat unterstützt Haushalte und Unternehmen. Die Kette ist die didaktische Pointe: ein Schock bleibt nicht lokal. Wer ein Glied streicht, zerlegt das Beispiel.\n\nDie Aussage ist wahr.",
+      "Personalabbau ist nicht nur ein Unternehmensproblem. Entlassene sind Haushalte ohne den bisherigen Lohn, also mit weniger Kaufkraft. Der nächste Konsum kann weiter sinken. Der Text spricht die Rückwirkung auf Haushalte nicht in jedem Satz aus, sie folgt aber unmittelbar aus der Rolle der Haushalte als Empfänger von Lohn und als Käufer. Die Kreislauflogik macht den Rückschlag plausibel und mit dem Abschnitt vereinbar.\n\nLohn und Gehalt finanzieren den Konsum. Fällt der Lohn durch Personalabbau aus, fehlt dem Haushalt Kaufkraft. Weniger Kaufkraft heißt wiederum weniger Absatz bei Unternehmen. So kann sich die Störung verstärken, genau weil der Kreislauf die Gruppen verbindet. Der Lehrtext zeigt die Richtung vom Konsum zum Personal; die Rückwirkung auf Haushalte ist dieselbe Mechanik, nur ein Schritt weiter. Unabhängigkeit der Haushalte nach dem Stellenabbau wäre mit diesem Bild unvereinbar.\n\nDie Aussage ist wahr.",
+      "Unterstützung in der Krise ist eine Form der Zahlung des Staates, nicht der Beweis, dass er sonst nichts tut. Im normalen Kreislauf hebt der Staat Steuern ein, setzt den rechtlichen Rahmen und erfüllt Aufgaben von der Straße bis zur Schule. Die Krise ergänzt Transfers, sie löscht die übrigen Rollen nicht.\n\nDie Aussage ist falsch.",
+      "Abhängigkeit heißt: Folgen können überspringen. Unabhängigkeit jedes Teilnehmers wäre das Gegenteil des Kreislaufs. Der Abschnitt begründet die Ausbreitung von Problemen gerade mit dem Kreislauf, nicht mit Isolation.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.15",
+    "title": "Öffentlicher Dienst und Infrastrukturauftrag",
+    "context": "Bewerten Sie die folgenden Aussagen zu Staat, Beschäftigung und Aufträgen:",
+    "statements": [
+      "Wenn der Staat Lehrkräfte oder Polizei bezahlt, fließt Geld an private Haushalte für Arbeitsleistung.",
+      "Infrastruktur entsteht im beschriebenen Modell oft dadurch, dass der Staat Unternehmen beauftragt zu bauen.",
+      "Rechtlicher Rahmen, Abgaben und konkrete Bauten wie Krankenhäuser gehören gemeinsam zur aktiven Teilnahme des Staates an der Wirtschaft.",
+      "Öffentliche Institutionen liegen außerhalb des Wirtschaftskreislaufs, weil nur private Unternehmen Güter erstellen dürfen.",
+      "Ein und derselbe Haushalt kann vom Staat Lohn für öffentliche Arbeit erhalten, Steuern zahlen und Transfers wie Familienunterstützung beziehen."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Lehrerin, Polizist, Richterin: das Buch nennt sie als Personen, die der Staat für Arbeitsleistung bezahlt. Empfänger sind private Haushalte. Der Strom gleicht dem Lohnstrom der Unternehmen, nur kommt das Geld aus öffentlichen Mitteln. Beschäftigung durch den Staat ist damit Teil des Kreislaufs, nicht ein Sonderraum ohne Einkommen.\n\nDie Aussage ist wahr.",
+      "„Bauen lassen“ zeigt den Auftragsweg. Der Staat benötigt Unternehmen, damit Straßen, digitale Infrastruktur, Krankenhäuser oder Schulen bereitstehen. Der Auftrag ist der Tausch: öffentliches Geld gegen Bau- oder Dienstleistung. Infrastruktur fällt nicht vom Himmel und auch nicht nur aus Amtswerkstätten, soweit der Text das Modell zeichnet. Zwischen Staat und Unternehmen entsteht so eine der zahlreichen Tauschbeziehungen des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Drei Schichten, eine Figur. Rechtlicher Rahmen ordnet die Beziehungen, Abgaben finanzieren, Bauten und Betriebe wie Krankenhäuser und Schulen erfüllen Aufgaben. Der Text fügt sie zur aktiven Teilnahme zusammen. Wer nur eine Schicht gelten lässt, verkleinert den Staat unter das Niveau des Abschnitts.\n\nDer Staat umfasst öffentliche Institutionen, sorgt für den rechtlichen Rahmen und hebt Steuern und andere Abgaben ein, um Aufgaben zu erfüllen. Die Aufgabenbeispiele reichen von Straßen und Radwegen bis zu Behörden, digitaler Infrastruktur, Krankenhäusern und Schulen. Aktiv teilnehmen heißt hier: Rahmen setzen, Mittel einheben, Leistungen und Bauten bereitstellen. Die drei Elemente stehen nicht als Alternativen, sondern als Teile derselben Rolle.\n\nDie Aussage ist wahr.",
+      "Öffentliche Institutionen sind der Staat, und der Staat ist zentraler Wirtschaftsteilnehmer. Er erstellt oder lässt erstellen, kauft, beschäftigt und transferiert. Das Verbot, dass nur private Unternehmen Güter erstellen dürften, steht nicht im Text. Es würde Schulen und Spitäler aus dem Kreislauf definieren, obwohl sie ausdrücklich vorkommen.\n\nDie Aussage ist falsch.",
+      "Rollen stapeln sich im selben Haushalt: jemand unterrichtet und erhält Gehalt, zahlt Steuern, bekommt vielleicht Familienunterstützung. Der Abschnitt beschreibt genau diese Beziehungstypen nebeneinander. Sie schließen einander nicht aus. Der Kreislauf erlaubt mehrere Ströme zwischen denselben Ecken.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.16",
+    "title": "Geldkreislauf mit Kredit und Konsum",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenspiel von Banken, Haushalten und Unternehmen:",
+    "statements": [
+      "Ein Haushalt kann Arbeitsleistung verkaufen, Lohn auf einem Konto empfangen und denselben Betrag für Güter ausgeben, wobei Banken den Zahlungsverkehr durchführen.",
+      "Ein Unternehmen kann Einlagen halten oder Kredit aufnehmen, um Produktion zu finanzieren, und später an Haushalte, andere Unternehmen oder den Staat verkaufen.",
+      "Kredit an Unternehmen oder Haushalte kann den Geldkreislauf stützen, indem Mittel zu Teilnehmern gelangen, die sie benötigen.",
+      "Beratung der Bank ändert die Tatsache, dass Banken im einfachen Modell den Unternehmen zugeordnet sind und Geld-Dienstleistungen anbieten.",
+      "Weil niemand allein wirtschaftet, reichen Haushalt, Unternehmen, Staat und die Bankdienste im Geldkreislauf aus, um den in diesem Abschnitt beschriebenen einfachen Kreislauf zu verstehen."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Drei Schritte, ein Alltag. Arbeit gegen Lohn, Lohn auf dem Konto, Kontozahlung für Güter. Der Zahlungsverkehr der Banken verbindet die Schritte, weil viele Bezahlwege ein Konto brauchen. Der Haushalt bleibt Tauschpartner, die Bank bleibt Dienstleisterin auf der Geldseite. So sieht der Kreislauf aus, wenn man ihn vom Lohnzettel her liest.\n\nPrivate Haushalte bieten Arbeitsleistung an und erhalten Lohn und Gehalt. Mit dem Geld kaufen sie Produkte und Dienstleistungen. Banken führen den Zahlungsverkehr durch. Zusammen ergibt das genau die beschriebene Sequenz: Einkommen entsteht, wird überwiesen, wird ausgegeben. Kein Schritt verlangt Isolation. Der Lehrtext liefert alle drei Bausteine, ohne sie in einem einzigen Satz zu verketten; die Kette folgt zwingend aus den Bausteinen.\n\nDie Aussage ist wahr.",
+      "Unternehmen produzieren und verkaufen an Haushalte, andere Unternehmen und den Staat. Dafür brauchen sie oft Geld, bevor der Verkaufserlös da ist. Banken stellen solchen Teilnehmern Mittel bereit, etwa als Kredit, und nehmen umgekehrt Geld entgegen, das angelegt werden soll. Einlage und Kredit sind die Finanzseite derselben Unternehmensrolle im einfachen Kreislauf.\n\nDie Aussage ist wahr.",
+      "Wer Geld benötigt, erhält es von der Bank in Form von Krediten. Das ist die Brücke zu Haushalten mit Finanzierungsbedarf und zu Unternehmen unter Druck, etwa wenn der Absatz stockt. Der Kredit ersetzt nicht den Güterkreislauf, aber er hält den Geldkreislauf beweglich. Genau das meint „zur Verfügung stellen“ im Text.\n\nDie Aussage ist wahr.",
+      "Beratung ist die vierte Leistung, sie verschiebt die Zuordnung nicht. Banken bleiben im einfachen Kreislauf bei den Unternehmen und bleiben Anbieter von Geld-Dienstleistungen. Die Beratung ändert diese Einordnung nicht; sie ergänzt Zahlungsverkehr, Einlagen und Kredit. Die Behauptung, Beratung ändere die Zuordnung oder die Definition, ist falsch.\n\nIm einfachen Wirtschaftskreislauf sind Banken den Unternehmen zugeordnet. Sie bieten Zahlungsverkehr, Entgegennahme von Spar- und Anlagegeld, Kredite und Beratung an. Beratung ist Teil dieser Liste, nicht ein Argument, Banken dem Staat zuzuschlagen oder sie aus den Geld-Dienstleistungen zu streichen. Wer sagt, Beratung ändere die Zuordnung oder die Tatsache der Geld-Dienste, liest in den vierten Punkt etwas hinein, das ihn aufhebt. Der Punkt ergänzt, er widerruft nicht.\n\nDie Aussage ist falsch.",
+      "Der Ausschnitt dieses Unterabschnitts endet bei den Banken im Geldkreislauf. Verstehen soll man: niemand wirtschaftet allein, Kreislauf aus Tausch, drei Teilnehmer, Güter gegen Geld, Banken mit Zahlungsverkehr, Einlagen, Kredit und Beratung. Das reicht für den einfachen Kreislauf hier. Was später im selben Kapitel folgt, gehört nicht zu diesem Stoff.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  }
+]

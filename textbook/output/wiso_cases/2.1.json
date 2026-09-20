@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.01",
+    "title": "Natur als Grundlage der Wirtschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zur Einbettung der Wirtschaft in die Natur:",
+    "statements": [
+      "Die Leistungen der Natur sind für die Produktion von Gütern und Dienstleistungen unverzichtbar.",
+      "Nur der Tourismus hängt von der Natur ab; Laptopproduktion und Versicherungen kommen ohne Naturgrundlagen aus.",
+      "Die Leistungen der Natur bilden auch die Grundlage unseres Wirtschaftssystems.",
+      "Wirtschaftliche Aktivitäten laufen als autonomer Prozess ab, unabhängig von gesellschaftlichen Entscheidungen über Ressourcennutzung.",
+      "Nahrungsmittel und Laptops nennt der Abschnitt als Beispiele für Güter, deren Produktion auf Leistungen der Natur angewiesen ist."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Brot auf dem Teller und der Laptop auf dem Schreibtisch sehen wie reine Marktprodukte aus, entstehen aber nicht im luftleeren Raum. Der Abschnitt stellt die Leistungen der Natur an den Anfang: sie sind für die Produktion von Gütern und von Dienstleistungen unverzichtbar. Nahrungsmittel und Laptops stehen für die Güterseite, Tourismus und Versicherungen für die Leistungsseite. Felder, Materialien, Umweltdienstleistungen und landschaftliche Grundlagen gehören damit in dieselbe Voraussetzung, nicht in eine ökologische Nische neben der eigentlichen Wirtschaft. Wer die Natur zur Kulisse macht, unterschlägt genau diese Unverzichtbarkeit.\n\nDie Aussage ist wahr.",
+      "Tourismus allein zur Naturabhängigkeit zu erklären, zerlegt die Beispielpaare des Textes. Nahrungsmittel und Laptops sind Güterbeispiele, Tourismus und Versicherungen Dienstleistungsbeispiele; alle vier stehen unter derselben Unverzichtbarkeit der Naturleistungen. Laptops stehen als Güterbeispiel, Versicherungen als Dienstleistungsbeispiel; beide brauchen nach dem Abschnitt Leistungen der Natur. Die Einschränkung auf den Urlaubssektor ist deshalb zu eng. Laptopproduktion und Versicherungen als naturfrei zu führen, widerspricht den ausdrücklich genannten Beispielen.\n\nDie Aussage ist falsch.",
+      "Abbildung 13 zielt nicht auf eine einzelne Branche, sondern auf das Wirtschaftssystem insgesamt. Die Natur liefert demnach nicht nur Rohstoffe für einzelne Produkte, sondern die Grundlage, auf der dieses System überhaupt läuft. Vereinfacht gezeichnet bleibt die Botschaft: ohne biophysische Sphäre keine Wirtschaft in dieser Darstellung.\n\nDie Aussage ist wahr.",
+      "Autonomie klingt nach einem geschlossenen Kreislauf aus Preisen und Mengen. Der Schlusssatz des Abschnitts sagt das Gegenteil: Wirtschaft ist kein autonomer Prozess, sondern Ausdruck gesellschaftlicher Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit. Wer Ressourcennutzung ausklammert, trennt genau die Entscheidungsebene ab, die der Text als Inhalt der Wirtschaft fasst. Gesellschaft und Umwelt wären dann Außenwelt, nicht Einbettung. Diese Abkopplung weist der Abschnitt zurück.\n\nDie Aussage ist falsch.",
+      "Nahrungsmittel und Laptops öffnen die Güterklammer bewusst doppelt: Alltagsernährung und technische Hardware. Beide Produktionen stützen sich auf Leistungen der Natur, nicht nur die Landwirtschaft. Das Paar verhindert die Fehlannahme, allein Felder und Wälder hingen am Erdsystem, während Elektronik naturfrei entstünde.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.02",
+    "title": "Wer wirtschaftliche Aktivitäten ausführt",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wer wirtschaftliche Aktivitäten durchführt:",
+    "statements": [
+      "Wirtschaftliche Aktivitäten werden ausschließlich von privatwirtschaftlich geführten Unternehmen ausgeführt.",
+      "Haushalte und Gemeinschaften führen wirtschaftliche Aktivitäten durch.",
+      "Der öffentliche Sektor umfasst in dieser Darstellung Staat und NGOs.",
+      "Nur der Staat erstellt Güter und Dienstleistungen; Unternehmen bleiben in Abbildung 13 außen vor.",
+      "Privatwirtschaftlich geführte Unternehmen, der öffentliche Sektor sowie Haushalte und Gemeinschaften führen wirtschaftliche Aktivitäten durch."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Nur Privatfirmen zu nennen, lässt zwei der drei Träger unter den Tisch fallen. Der Abschnitt zählt privatwirtschaftlich geführte Unternehmen, den öffentlichen Sektor sowie Haushalte und Gemeinschaften als diejenigen, die wirtschaftliche Aktivitäten durchführen. Staat und NGOs sitzen in dieser vereinfachten Darstellung im öffentlichen Sektor, Haushalte nicht nur am Konsumrand. Die Verengung auf ausschließlich privatwirtschaftlich geführte Unternehmen widerspricht dieser Aufzählung und der Legende von Abbildung 13.\n\nDie Aussage ist falsch.",
+      "Haushalte stehen hier nicht bloß als Käufer am Rand der Grafik. Zusammen mit Gemeinschaften gehören sie zu den Akteuren, die wirtschaftliche Aktivitäten durchführen. Versorgen, Arbeiten, Nachfragen und gemeinschaftliches Wirtschaften sitzen damit innerhalb der Wirtschaft, nicht in einer vorgelagerten Privatsphäre außerhalb des Systems.\n\nDie Aussage ist wahr.",
+      "Klammern im Text sind hier Definition, nicht Schmuck. Der öffentliche Sektor umfasst in dieser Darstellung Staat und NGOs. Später tauchen NGOs auch in der Zivilgesellschaft auf; das ändert nicht die erste Zuordnung zur vereinfachten Abbildung. Wer NGOs nur einer der beiden Listen zuschlägt und die andere streicht, überzieht den Text. Für diese Aussage reicht die ausdrückliche Klammer Staat und NGOs.\n\nDie Aussage ist wahr.",
+      "Abbildung 13 und der Fließtext führen Unternehmen als Träger wirtschaftlicher Aktivitäten, ebenso Haushalte. Der Staat allein würde Grafik und Satz verfälschen. Güter und Dienstleistungen entstehen in dieser Einbettung bei mehreren Akteursgruppen. Eine Monopolstellung des Staates als einzigem Ersteller steht nicht in der Darstellung.\n\nDie Aussage ist falsch.",
+      "Die Leitlinie der vereinfachten Darstellung ist eine Dreiteilung der Ausführenden: privatwirtschaftlich geführte Unternehmen, öffentlicher Sektor, Haushalte und Gemeinschaften. Alle drei führen Aktivitäten aus, beziehen Inputs aus der Natur und geben Outputs zurück. Der Satz gibt diese Liste vollständig wieder und lässt keinen der drei Träger weg. Genau so erklärt der Abschnitt, wer in Abbildung 13 wirtschaftet, bevor Inputs und Emissionen ins Bild kommen. Eine vierte, ungenannte Superbehörde braucht es dafür nicht. Wer nur Fabriken zählt, übersieht, dass der öffentliche Sektor und die Haushalte in derselben Grafik wirtschaften, Inputs beziehen und Outputs abgeben.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.03",
+    "title": "Inputs aus dem Erdsystem und Outputs zurück",
+    "context": "Bewerten Sie die folgenden Aussagen zu Inputs und Outputs zwischen Wirtschaft und Erdsystem:",
+    "statements": [
+      "Die Wirtschaft bezieht Inputs wie natürliche Ressourcen und Umweltdienstleistungen aus dem Erdsystem.",
+      "Die Bestäubung von Nahrungsmittelpflanzen ist im Text ein Beispiel für einen Output der Wirtschaft in die Natur.",
+      "Klimagase und Abfall sind Beispiele für Outputs, die an das Erdsystem zurückgegeben werden.",
+      "Die biophysische Sphäre bezeichnet in dieser Darstellung das Erdsystem, in das Outputs zurückfließen.",
+      "Wirtschaftliche Aktivitäten entnehmen der Natur Inputs, ohne jemals Abfälle oder Emissionen zurückzugeben."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Der Stoffwechsel beginnt in der Natur, nicht in der Fabrikhalle. Natürliche Ressourcen und Umweltdienstleistungen kommen als Inputs aus dem Erdsystem in die Wirtschaft. Bestäubung von Nahrungsmittelpflanzen steht als Beispiel einer solchen Dienstleistung, Rohstoffe als stoffliche Entnahme. Ohne diesen Zustrom gäbe es die beschriebenen Güter und Dienstleistungen nicht in der bekannten Form. Die Pfeilrichtung ist hier Entnahme, noch nicht Rückgabe von Abfall.\n\nDie Aussage ist wahr.",
+      "Bestäubung als Output zu lesen, dreht den Pfeil um. Der Text nennt die Bestäubung von Nahrungsmittelpflanzen als Umweltdienstleistung, also als Input aus dem Erdsystem. Outputs in die andere Richtung sind Klimagase und Abfall, die an das Erdsystem zurückgehen. Wer die Biene zur Emission der Wirtschaft erklärt, verwechselt die beiden Flüsse, die Abbildung 13 gerade trennt: Hereinholen natürlicher Leistungen und Zurückgeben von Reststoffen und Klimagasen. Die Grafik trennt natürliche Ressourcen und Umweltdienstleistungen auf der Eingangsseite von Abfall, Emissionen und sonstiger Schädigung auf der Ausgangsseite; Bestäubung gehört eindeutig zur Eingangsseite.\n\nDie Aussage ist falsch.",
+      "Was die Wirtschaft nicht bindet oder speichert, kommt als Output zurück. Klimagase und Abfall nennt der Text als Beispiele, die an das Erdsystem, die biophysische Sphäre, zurückgegeben werden. Emission und Reststoff gehören zum selben Rückfluss, nicht zu den Inputs. Die Grafik ergänzt Abfall, Emissionen und sonstige Umweltschädigung als sichtbare Gegenstücke zu Ressourcen und Umweltdienstleistungen.\n\nDie Aussage ist wahr.",
+      "Erdsystem und biophysische Sphäre stehen im Satz als dieselbe Zielgröße der Outputs. Die Grafik rahmt die Wirtschaft durch diese Sphäre, nicht durch einen leeren Raum. Wer die biophysische Sphäre mit dem gesellschaftlichen Umfeld vertauscht, verwechselt die beiden äußeren Schalen: Umwelt gegen Institutionen, Normen und Politik.\n\nDie Aussage ist wahr.",
+      "Ein reiner Entnahmeprozess ohne Rückgabe ist in Abbildung 13 nicht vorgesehen. Abfälle, Emissionen und sonstige Umweltschädigung fließen in die Natur zurück, und alle wirtschaftlichen Aktivitäten haben Auswirkungen auf die Natur. Die Behauptung, Inputs kämen ohne jeden Output, streicht die rechte Seite der Grafik und den Kernsatz über Rückgaben an die biophysische Sphäre. Genau diese Rückgabe macht die Einbettung sichtbar.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.04",
+    "title": "Atmosphärische Treibhausgase",
+    "context": "Bewerten Sie die folgenden Aussagen zu Treibhausgasen in der Atmosphäre:",
+    "statements": [
+      "Wasserdampf, Kohlendioxid, Methan, Distickstoffmonoxid und Ozon gehören zu den wichtigsten atmosphärischen Treibhausgasen.",
+      "Distickstoffmonoxid wird auch Lachgas genannt.",
+      "Treibhausgase lassen die gesamte von der Erdoberfläche abgestrahlte Wärme ungehindert ins All.",
+      "Diese Gase bilden in der Atmosphäre eine Art Isolierschicht, die einen Teil der abgestrahlten Wärme zurückhält.",
+      "Nur Kohlendioxid zählt als Treibhausgas; Methan und Ozon gehören nicht dazu."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Kohlendioxid allein wäre eine unzulässige Verkürzung der Kastenliste. Wasserdampf, Kohlendioxid, Methan, Distickstoffmonoxid und Ozon stehen als die wichtigsten atmosphärischen Treibhausgase. Die Formeln CH₄, N₂O und O₃ bezeichnen dieselben Stoffe, nicht zusätzliche Geheimgase. Wer eines davon streicht, verkürzt die Aufzählung, mit der der Abschnitt den Treibhauseffekt einführt. Die Isolierschicht entsteht durch dieses Gemisch, nicht durch ein einzelnes Molekül, das man aus der Liste herausgreifen und zum Alleingas erklären könnte.\n\nDie Aussage ist wahr.",
+      "Lachgas ist der Alltagsname für Distickstoffmonoxid, im Kasten als N₂O geführt. Die Doppelbezeichnung bezieht sich auf dasselbe Gas in der Treibhausliste, nicht auf ein Extra neben N₂O. Wer Lachgas für etwas anderes als Distickstoffmonoxid hält, spaltet eine Identifikation, die der Text ausdrücklich setzt.\n\nDie Aussage ist wahr.",
+      "Isolierschicht bedeutet Rückhalt, nicht freien Durchzug. Die Gase halten einen Teil der von der Erdoberfläche abgestrahlten Wärme zurück. Die Behauptung, die gesamte Wärme gehe ungehindert ins All, streicht genau diese Isolierwirkung. Ohne Teilrückhalt gäbe es den im nächsten Satz beschriebenen Temperaturanstieg durch höhere Konzentrationen nicht in der beschriebenen Logik. Der Satz verfehlt den Mechanismus des Kastens. Höhere Konzentrationen können die globale Durchschnittstemperatur nur anheben, weil zuvor ein Teil der Wärme in der Atmosphäre bleibt; ungehindert ins All abgestrahlte Wärme würde diesen nächsten Schritt der Argumentation abschneiden.\n\nDie Aussage ist falsch.",
+      "Wärme strahlt von der Oberfläche ab, die Gasschicht hält einen Teil davon fest. Die Isoliermetapher erklärt diesen Teilrückhalt ohne Prozentzahlen, die der Abschnitt nicht liefert. Weder vollständige Sperre noch vollständiger Verlust beschreiben die Buchformulierung. Genau der zurückgehaltene Teil ist der Kern der Aussage.\n\nDie Aussage ist wahr.",
+      "Methan und Ozon stehen in derselben Aufzählung wie Kohlendioxid, dazu Wasserdampf und Distickstoffmonoxid. Nur CO₂ als Treibhausgas zu führen, ist mit dieser Liste unvereinbar. Die Verengung würde vier der fünf genannten Gase unsichtbar machen und den Isoliermechanismus auf einen einzigen Stoff reduzieren, den der Kasten gerade nicht allein nennt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.05",
+    "title": "Menschliche Aktivitäten und Klimawandel",
+    "context": "Bewerten Sie die folgenden Aussagen zu Ursachen steigender Treibhausgaskonzentrationen:",
+    "statements": [
+      "Nur die Verbrennung fossiler Brennstoffe treibt die Konzentrationen; Abholzung von Wäldern spielt keine Rolle.",
+      "Landwirtschaftliche Intensivierung trägt zum Anstieg der Konzentrationen dieser Gase bei.",
+      "Steigende Konzentrationen dieser Gase senken die globale Durchschnittstemperatur.",
+      "Der Anstieg der globalen Durchschnittstemperatur beschleunigt den Klimawandel.",
+      "Die Abholzung von Wäldern gehört zu den menschlichen Aktivitäten, die die Konzentrationen ansteigen lassen."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Drei menschliche Aktivitäten stehen im Kasten nebeneinander, nicht eine. Verbrennung fossiler Brennstoffe, Abholzung von Wäldern und landwirtschaftliche Intensivierung lassen die Konzentrationen der genannten Gase steigen. Abholzung aus dieser Reihe zu streichen, entfernt einen der drei ausdrücklich genannten Hebel. Die Einschränkung mit nur macht den Satz falsch, weil der Text eine Mehrzahl von Ursachen beschreibt. Wer die Ursachen auf den Schornstein verengt, lässt Rodung und intensivierte Felder als klimaneutral erscheinen, obwohl der Kasten sie als gleichrangige Treiber der Konzentrationen führt.\n\nDie Aussage ist falsch.",
+      "Intensivere Landwirtschaft ist ein eigener Treiber neben fossiler Verbrennung und Abholzung. Sie gehört zu den menschlichen Aktivitäten, die Treibhausgaskonzentrationen anheben. Der Satz trifft dieses mittlere Glied der Aufzählung, ohne die anderen zu leugnen und ohne Ertragszahlen zu erfinden, die der Abschnitt nicht nennt.\n\nDie Aussage ist wahr.",
+      "Die Kausalkette läuft von höheren Konzentrationen zu höherer, nicht zu niedrigerer Durchschnittstemperatur. Die Isolierschicht hält mehr Wärme, die globale Durchschnittstemperatur steigt, der Klimawandel beschleunigt sich. Abkühlung zu behaupten, kehrt den beschriebenen Effekt um und trennt die Gaskonzentration von der Temperatur, die der Kasten gerade verbindet.\n\nDie Aussage ist falsch.",
+      "Temperaturanstieg und beschleunigter Klimawandel folgen im selben Satz auf die höheren Konzentrationen. Mehr zurückgehaltene Wärme hebt die globale Durchschnittstemperatur; dieser Anstieg beschleunigt den Klimawandel. Der Satz gibt das letzte Glied der Kette wieder, ohne Gradzahlen oder Zielpfade einzuführen, die der Text nicht enthält. Ohne diesen Temperaturanstieg bliebe der Klimawandel in der Darstellung unverbunden mit den menschlichen Aktivitäten, die die Gaskonzentrationen anheben.\n\nDie Aussage ist wahr.",
+      "Wälder zu roden, steht in der Ursachenliste neben fossiler Verbrennung und Intensivierung der Landwirtschaft. Abholzung ist menschliche Aktivität, die die Konzentrationen der Treibhausgase ansteigen lässt. Wer Rodung als naturgegebenen Hintergrund ohne Wirkung führt, unterschlägt genau dieses Glied. Der Satz bleibt bei der Buchursache und erfindet keine Hektarzahlen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.06",
+    "title": "Abhängigkeit ausgewählter Branchen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Abhängigkeit wirtschaftlicher Aktivitäten von der Natur:",
+    "statements": [
+      "Alle wirtschaftlichen Aktivitäten haben Auswirkungen auf die Natur.",
+      "Nur einzelne Branchen haben Auswirkungen auf die Natur; die übrigen Aktivitäten gelten als umweltneutral.",
+      "Fischerei, Land- und Forstwirtschaft sowie Tourismus sind in hohem Maße auf natürliche Ressourcen und intakte Ökosysteme angewiesen.",
+      "Einige wirtschaftliche Aktivitäten sind auch direkt von der Natur abhängig.",
+      "Langfristige Existenz und Produktivität dieser besonders abhängigen Bereiche hängen unmittelbar von Erhaltung und nachhaltiger Nutzung der natürlichen Grundlagen ab."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Die Wirkungslinie gilt ohne Branchenausnahme. Alle wirtschaftlichen Aktivitäten haben Auswirkungen auf die Natur, auch wenn Stärke und Form der Wirkung unterschiedlich ausfallen können. Neutralität gegenüber der Natur kennt dieser Satz nicht. Selbst wer nicht fischen oder holzen, gibt in der Logik von Abbildung 13 Outputs zurück. Die All-Aussage ist die erste Hälfte des Gedankens, bevor direkte Abhängigkeit einzelner Bereiche folgt.\n\nDie Aussage ist wahr.",
+      "Umweltneutralität für den Rest der Wirtschaft steht nicht im Text. Alle Aktivitäten wirken auf die Natur; zusätzlich hängen einige direkt von ihr ab. Die Unterscheidung betrifft Abhängigkeit, nicht die Behauptung, ganze Sektoren hinterließen keine Spuren. Wer Neutralität für alle außer ein paar Branchen behauptet, streicht die All-Aussage und verdreht die zweite Hälfte des Satzes.\n\nDie Aussage ist falsch.",
+      "Die Viererliste markiert hohe Abhängigkeit: Fischerei, Land- und Forstwirtschaft sowie Tourismus. Sie brauchen verfügbare natürliche Ressourcen und intakte Ökosysteme in besonderem Maß. Andere Branchen können betroffen sein, aber genau diese vier nennt der Abschnitt als in hohem Maße angewiesen. Versicherungen erscheinen früher als Dienstleistungsbeispiel der Naturunverzichtbarkeit, nicht in dieser Abhängigkeitsliste. Der Satz bleibt bei den vier genannten Bereichen. Langfristig bleiben Fanggründe, Böden, Wälder und Reiseziele nur produktiv, wenn dieselben Grundlagen erhalten und nachhaltig genutzt werden; das koppelt die Viererliste an den nächsten Satz des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Nach der All-Aussage zur Wirkung folgt die Einschränkung zur Abhängigkeit: einige Aktivitäten sind auch direkt von der Natur abhängig. Beides schließt sich nicht aus. Wirkung haben alle, direkte Abhängigkeit haben insbesondere die ressourcennahen Bereiche. Der Satz wiederholt die zweite Hälfte ohne die erste zu leugnen.\n\nDie Aussage ist wahr.",
+      "Erhaltung und nachhaltige Nutzung sind die Bedingung der Fortführung, nicht ein freiwilliges Extra. Langfristige Existenz und Produktivität der besonders abhängigen Bereiche hängen unmittelbar an den natürlichen Grundlagen. Wer sie zerstört, untergräbt die eigene Grundlage von Fang, Ernte, Holz und touristischer Landschaft. Der Satz bindet Existenz und Produktivität an denselben Schutz.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.07",
+    "title": "Wirtschaft im gesellschaftlichen Umfeld",
+    "context": "Bewerten Sie die folgenden Aussagen zur Einbettung der Wirtschaft in die Gesellschaft:",
+    "statements": [
+      "Die Wirtschaft ist in ein gesellschaftliches Umfeld eingebettet.",
+      "Staat, Unternehmen, Zivilgesellschaft und soziale Gruppen gestalten dieses Umfeld.",
+      "Wirtschaftliche Prozesse sind niemals Ergebnis sozialer oder politischer Aushandlung, sondern rein technische Abläufe.",
+      "Veränderte Konsumgewohnheiten und gesellschaftliche Werte wirken nicht auf die Wirtschaft zurück.",
+      "Die Prozesse in Gesellschaft und Natur wirken auf die Wirtschaft zurück."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Einbettung ist die Leitformel des Unterkapitels, nicht ein schmückendes Bild. Die Wirtschaft sitzt in einem gesellschaftlichen Umfeld, das Akteure gestalten, und zugleich in der biophysischen Sphäre. Preise und Mengen schweben nicht frei über Staat, Normen und Gruppen. Ohne dieses Umfeld fehlte der Rahmen, in dem Unternehmen, Haushalte und öffentlicher Sektor überhaupt tätig werden. Der Satz trifft die gesellschaftliche Schale der Abbildung. Abbildung 13 zeichnet deshalb Gesellschaft als Schale um die wirtschaftlichen Aktivitäten, nicht als optionale Dekoration außerhalb des Systems.\n\nDie Aussage ist wahr.",
+      "Vier Gestalter nennt der Fließtext: Staat, Unternehmen, Zivilgesellschaft und soziale Gruppen. Keine dieser Gruppen bleibt dekorativ. Das Umfeld entsteht im Zusammenspiel, nicht durch einen einzelnen Souverän allein. Wer eine der vier streicht, verdünnt genau die Akteurslandschaft, die der Abschnitt aufspannt.\n\nDie Aussage ist wahr.",
+      "Aushandlung steht am Schluss der Akteursliste als Fazit, nicht als Ausnahme. Wirtschaftliche Prozesse sind immer auch das Ergebnis sozialer und politischer Aushandlungsprozesse. Rein technische Abläufe ohne Gesellschaft würden Staat, Lobbying, Zivilgesellschaft, Kaufentscheidungen und Proteste aus der Erklärung streichen. Der Quantor niemals kippt den Satz gegen diese immer-auch-Formel.\n\nDie Aussage ist falsch.",
+      "Rückwirkung von der Gesellschaft her läuft unter anderem über veränderte Konsumgewohnheiten und gesellschaftliche Werte. Der Text nennt diese Kanäle ausdrücklich neben den Kosten der Umweltzerstörung. Wer sie leugnet, lässt nur Naturkosten gelten und unterschlägt die soziale Rückkopplung. Konsum und Werte sind in dieser Darstellung Wirtschaftsfaktoren, nicht Privatgeschmack außerhalb des Systems. Beide gehören zum gesellschaftlichen Umfeld, das auf die Wirtschaft zurückwirkt.\n\nDie Aussage ist falsch.",
+      "Zwei Richtungen gehören zusammen. Umweltzerstörung erzeugt Kosten für die Wirtschaft, die Gesellschaft verschiebt Nachfrage und Werte. Beides wirkt auf die Wirtschaft zurück, statt als Einbahnstraße von der Wirtschaft in die Umwelt zu enden. Der Satz fasst genau diese Rückwirkung von Gesellschaft und Natur.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.08",
+    "title": "Zentrale Rolle des Staates",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle des Staates:",
+    "statements": [
+      "Der Staat spielt in diesem Abschnitt keine Rolle für die Wirtschaft.",
+      "Der Staat erlässt Gesetze, setzt Regulierungen durch und schafft wirtschaftliche Rahmenbedingungen.",
+      "Steuerpolitik und Umweltauflagen sind Beispiele für solche Rahmenbedingungen.",
+      "Nur Unternehmen dürfen Umweltauflagen erlassen; der Staat bleibt Zuschauer.",
+      "Der Staat hat eine zentrale Rolle, indem er unter anderem gesetzliche und regulatorische Rahmen setzt."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zentrale Rolle ist die Formulierung des Textes, nicht eine Randnotiz. Der Staat erlässt Gesetze, setzt Regulierungen durch und schafft wirtschaftliche Rahmenbedingungen, etwa durch Steuerpolitik oder Umweltauflagen. Ihn aus der Wirtschaft herauszunehmen, widerspricht dieser Zuweisung und würde den Rahmen leugnen, in dem Unternehmen anschließend handeln und den sie zugleich zu beeinflussen versuchen. Unternehmen bleiben in diesem Bild Akteure innerhalb des Rahmens, die ihn durch Lobbying mitbearbeiten, ihn aber nicht anstelle des Staates erstmalig erlassen.\n\nDie Aussage ist falsch.",
+      "Drei Staatsaufgaben stehen in einem Atemzug: Gesetze erlassen, Regulierungen durchsetzen, wirtschaftliche Rahmenbedingungen schaffen. Das ist mehr als symbolische Aufsicht. Der Rahmen, in dem Unternehmen dann handeln, entsteht hier politisch. Ohne diese Dreierformel bliebe nur privates Ermessen, das der Abschnitt gerade nicht als alleinige Ordnung beschreibt.\n\nDie Aussage ist wahr.",
+      "Steuerpolitik und Umweltauflagen stehen als Beispiele hinter den Rahmenbedingungen. Sie zeigen, dass der Staat über Abgaben und Auflagen steuert, nicht nur über Strafgesetze im engeren Sinn. Beide Beispiele gehören zum selben Instrumentenkasten. Der Satz wiederholt sie, ohne Steuersätze oder konkrete Grenzwerte zu erfinden.\n\nDie Aussage ist wahr.",
+      "Umweltauflagen sind im Text staatliche Rahmenbedingungen, keine Privatnorm der Unternehmen. Unternehmen können zusätzlich selbst regulieren und CSR-Initiativen starten, ersetzen damit aber nicht die staatliche Auflage. Den Staat zum Zuschauer zu machen und nur Firmen das Erlassen von Umweltauflagen zuzuschreiben, verdreht die Zuständigkeit, die der Abschnitt dem Staat als zentrale Rolle zuweist. Selbstregulierung bleibt Zusatz, nicht Ersatz der Auflage.\n\nDie Aussage ist falsch.",
+      "Zentral heißt hier: ohne diesen Akteur fehlt der gesetzliche und regulatorische Rahmen. Erlassen, Durchsetzen und Schaffen von Bedingungen bilden zusammen die beschriebene Rolle. Der Satz fasst sie ohne Zusatzbehauptungen über konkrete Paragraphen. Unternehmen bleiben Akteure innerhalb dieses Rahmens, nicht dessen alleinige Autoren.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.09",
+    "title": "Unternehmen zwischen Rahmen und Einfluss",
+    "context": "Bewerten Sie die folgenden Aussagen zum Handeln von Unternehmen im gesellschaftlichen Umfeld:",
+    "statements": [
+      "Unternehmen agieren innerhalb der staatlichen Rahmenbedingungen.",
+      "Unternehmen können Rahmenbedingungen nicht beeinflussen, weil Lobbying im Abschnitt ausgeschlossen wird.",
+      "Selbstregulierung und Corporate-Social-Responsibility-Initiativen sind Wege, über die Unternehmen Rahmenbedingungen aktiv mitgestalten.",
+      "Lobbying ist im Text als aktive Einflussnahme von Unternehmen genannt.",
+      "Corporate Social Responsibility ersetzt im Abschnitt vollständig alle staatlichen Gesetze."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zuerst der Rahmen, dann das Handeln darin. Unternehmen agieren innerhalb der Bedingungen, die der Staat setzt. Das schließt späteres Mitgestalten nicht aus, benennt aber die Ausgangslage: sie stehen nicht im rechtsfreien Raum. Gesetze, Regulierungen, Steuerpolitik und Umweltauflagen gelten, während dieselben Unternehmen den Rahmen zugleich aktiv zu beeinflussen versuchen. Beide Hälften hält der Abschnitt nacheinander fest. Die Reihenfolge im Text ist deshalb nicht zufällig: erst staatlicher Rahmen, dann Handeln darin, dann aktive Einflussnahme über Lobbying, Selbstregulierung und CSR.\n\nDie Aussage ist wahr.",
+      "Aktiv beeinflussen sie den Rahmen trotzdem. Lobbying, Selbstregulierung und CSR-Initiativen stehen ausdrücklich als Wege dieser Einflussnahme. Lobbying auszuschließen, streicht das erste Glied dieser Dreierliste und behauptet eine Ohnmacht, die der Text gerade nicht zeichnet. Innerhalb des Rahmens zu handeln und den Rahmen zu bearbeiten, sind in dieser Darstellung kein Widerspruch.\n\nDie Aussage ist falsch.",
+      "Selbstregulierung und Corporate Social Responsibility kommen direkt nach dem Lobbying. Beides sind Formen, in denen Unternehmen den Rahmen nicht nur hinnehmen, sondern mitformen. Der Text behandelt sie als reale Praxis neben staatlicher Regulierung, nicht als dekorative Fußnote und nicht als Ersatz sämtlicher Gesetze.\n\nDie Aussage ist wahr.",
+      "Lobbying steht als erstes der drei Einflussworte. Es bezeichnet die aktive Einwirkung auf Rahmenbedingungen, während Unternehmen zugleich innerhalb dieser Rahmen handeln. Beides hält der Abschnitt nebeneinander: Gebundensein und Mitgestalten. Der Satz trifft das ausdrücklich genannte Lobbying.\n\nDie Aussage ist wahr.",
+      "CSR ergänzt staatliches Recht, ersetzt es in diesem Abschnitt nicht. Der Staat erlässt weiter Gesetze und Umweltauflagen; Unternehmen können zusätzlich Verantwortung initiieren und sich selbst Regeln geben. Vollständige Substitution staatlicher Gesetze durch Corporate Social Responsibility steht nicht im Text und würde die zentrale Rolle des Staates streichen, die unmittelbar zuvor beschrieben wird.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.10",
+    "title": "Zivilgesellschaft als kritische Instanz",
+    "context": "Bewerten Sie die folgenden Aussagen zur Zivilgesellschaft:",
+    "statements": [
+      "Die Zivilgesellschaft umfasst in dieser Darstellung NGOs, Verbände, Wissenschaft und Medien.",
+      "Die Zivilgesellschaft bestätigt wirtschaftliches Handeln unkritisch und thematisiert keine Missstände.",
+      "Nur der Staat formuliert Erwartungen an nachhaltiges Wirtschaften; die Zivilgesellschaft bleibt stumm.",
+      "Die Zivilgesellschaft fungiert als kritische Instanz, die wirtschaftliches Handeln hinterfragt.",
+      "Sie formuliert gesellschaftliche Erwartungen an nachhaltiges und ethisches Wirtschaften."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Vier Bausteine füllen den Begriff: NGOs, Verbände, Wissenschaft und Medien. Zivilgesellschaft ist damit breiter als eine einzelne Protestgruppe oder als eine Behörde. Die Aufzählung sitzt im Satz, der sie als kritische Instanz einführt. Wer nur Vereine oder nur Presse gelten lässt, verkürzt die Buchliste. NGOs können zugleich in der vereinfachten Abbildung beim öffentlichen Sektor auftauchen; das ändert nicht diese zivilgesellschaftliche Vierergruppe.\n\nDie Aussage ist wahr.",
+      "Kritische Instanz bedeutet Hinterfragen, nicht Abnicken. Missstände thematisiert die Zivilgesellschaft, Erwartungen an nachhaltiges und ethisches Wirtschaften formuliert sie. Unkritisches Bestätigen und das Verschweigen von Missständen widersprechen dieser Funktionsbeschreibung Wort für Wort. Die Rolle ist Gegengewicht in der Aushandlung, nicht Jubelchor der Unternehmen.\n\nDie Aussage ist falsch.",
+      "Erwartungen an nachhaltiges und ethisches Wirtschaften formuliert gerade die Zivilgesellschaft. Der Staat setzt Rahmen, Unternehmen lobbyieren und regulieren sich mit, die Zivilgesellschaft bringt gesellschaftliche Ansprüche zur Sprache. Stummheit ist das Gegenteil der beschriebenen Rolle. Nur den Staat als Erwartungsquelle zu führen, streicht NGOs, Verbände, Wissenschaft und Medien aus der Aushandlung, aus der wirtschaftliche Prozesse mit hervorgehen. Wirtschaftliche Prozesse bleiben in dieser Lesart Aushandlung zwischen mehreren Instanzen, nicht ein Monolog der Gesetzgebung ohne kritische Öffentlichkeit.\n\nDie Aussage ist falsch.",
+      "Hinterfragen ist das Leitverb der Funktionsbeschreibung. Wirtschaftliches Handeln wird nicht als gegeben hingenommen, sondern geprüft. Genau das macht die Zivilgesellschaft in diesem Abschnitt zur kritischen Instanz neben Staat und Unternehmen. Ohne dieses Hinterfragen fehlte die Instanz, die Missstände thematisiert.\n\nDie Aussage ist wahr.",
+      "Nachhaltig und ethisch stehen als Inhalt der Erwartungen, nicht als leere Floskel. Die Zivilgesellschaft bringt diese Ansprüche in die Aushandlung ein, aus der wirtschaftliche Prozesse mit hervorgehen. Der Satz trifft die zweite Hälfte der Funktionsbeschreibung und bleibt bei den Worten des Abschnitts, ohne Gütesiegel oder Normennummern zu erfinden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.11",
+    "title": "Konsumentinnen, Arbeitnehmer und Mitgestaltung",
+    "context": "Bewerten Sie die folgenden Aussagen zu individuellen und kollektiven Akteuren:",
+    "statements": [
+      "Nur Unternehmen und der Staat prägen wirtschaftliche Strukturen; Konsumentinnen und Konsumenten bleiben ohne Einfluss.",
+      "Kaufentscheidungen können wirtschaftliche Strukturen und Normen mitprägen.",
+      "Arbeitsmobilität und Proteste nennt der Abschnitt als Verhaltensweisen, mit denen Akteure mitwirken.",
+      "Arbeitnehmerinnen und Arbeitnehmer haben in dieser Darstellung keinerlei Einfluss auf wirtschaftliche Normen.",
+      "Konsumentinnen, Konsumenten, Arbeitnehmerinnen und Arbeitnehmer gehören zu den Akteuren, die durch Verhalten und Entscheidungen mitwirken."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Individuelle und kollektive Akteure stehen als weitere Ebene neben Staat, Unternehmen und Zivilgesellschaft. Konsumentinnen und Konsumenten prägen durch Kaufentscheidungen, Arbeitsmobilität oder Proteste Strukturen und Normen mit. Einflusslosigkeit wäre mit diesem Satz unvereinbar. Wer nur Firmen und Behörden als Gestalter gelten lässt, streicht Alltag und Erwerb aus der sozialen Einbettung der Wirtschaft. Kauf, Wechsel des Arbeitsplatzes und Protest sind in dieser Logik wirtschaftliche Handlungen mit Normwirkung, nicht Privatangelegenheiten außerhalb von Abbildung 13.\n\nDie Aussage ist falsch.",
+      "Kaufentscheidungen sind das erste der drei genannten Verhaltensbeispiele. Sie gehören zum Mitprägen wirtschaftlicher Strukturen und Normen, nicht nur zur privaten Bedürfnisstillung. Nachfrage wird hier sozial wirksam: was Haushalte wählen oder meiden, verschiebt, welche Angebote Bestand haben. Der Satz bleibt bei diesem im Text genannten Weg.\n\nDie Aussage ist wahr.",
+      "Arbeitsmobilität und Proteste ergänzen den Kauf. Wer den Job wechselt oder öffentlich widerspricht, wirkt in derselben Logik auf Strukturen und Normen ein. Der Abschnitt zählt diese Wege ausdrücklich auf, statt Wirtschaft nur über Preise ohne Verhalten zu erklären. Beide Beispiele gehören zur Mitgestaltung durch individuelle und kollektive Akteure.\n\nDie Aussage ist wahr.",
+      "Arbeitnehmerinnen und Arbeitnehmer stehen in einem Atemzug mit den Konsumentinnen und Konsumenten. Ihr Verhalten, einschließlich Mobilität und Protest, zählt zur Mitgestaltung wirtschaftlicher Strukturen und Normen. Einfluss null wäre eine Streichung dieser Akteursgruppe aus der Einbettung. Der Abschnitt gibt ihnen ausdrücklich Stimme über Entscheidungen im Alltag und am Arbeitsmarkt. Ohne sie fehlte die Verbindung zwischen gesellschaftlichem Umfeld und alltäglichen Entscheidungen, die der Abschnitt gerade herstellt.\n\nDie Aussage ist falsch.",
+      "Die Doppelrolle Konsum und Arbeit deckt Alltag und Erwerb ab. Beide Gruppen gehören zu den individuellen und kollektiven Akteuren, die durch Verhalten und Entscheidungen wirtschaftliche Strukturen und Normen mitprägen. Der Satz bleibt innerhalb der Buchliste und erfindet keine weiteren Gruppen, etwa Parteien oder Gerichte, die dieser Absatz nicht nennt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.12",
+    "title": "Direkte und indirekte Kosten der Umweltzerstörung",
+    "context": "Bewerten Sie die folgenden Aussagen zu wirtschaftlichen Kosten der Umweltzerstörung:",
+    "statements": [
+      "Umweltzerstörung verursacht erhebliche Kosten für die Wirtschaft.",
+      "Direkte Folgen beschränken sich auf Imageverluste, nicht auf Infrastruktur oder Produktion.",
+      "Zerstörte Infrastruktur durch Extremwetterereignisse, Produktionsausfälle und steigende Versicherungsansprüche sind direkte Folgen.",
+      "Ernteausfälle, erhöhte Gesundheitskosten und Produktivitätsverluste zählt der Text zu den direkten Infrastrukturschäden, nicht zu den indirekten Auswirkungen.",
+      "Die Kosten lassen sich in direkte und indirekte Schäden unterteilen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Rückwirkung der Naturzerstörung ist teuer, nicht nur moralisch relevant. Der Abschnitt spricht von erheblichen Kosten für die Wirtschaft und teilt sie in direkte und indirekte Schäden. Extremwetter trifft Infrastruktur, Ausfälle treffen Produktion, Ansprüche treffen Versicherer; später kommen Ernte, Gesundheit und Produktivität als indirekte Lasten. Wer Kosten leugnet, ignoriert genau diese Brücke von der Umwelt in wirtschaftliche Größen.\n\nDie Aussage ist wahr.",
+      "Image und Werbung kommen in diesem Unterkapitel nicht vor. Direkte Folgen sind zerstörte Infrastruktur durch Extremwetterereignisse, Produktionsausfälle und steigende Versicherungsansprüche. Imageverluste als einzige oder als typische direkte Folge sind eine Erfindung außerhalb des Textes und würden den Kostenbegriff in ein Marketingthema ziehen, das der Abschnitt nicht behandelt. Die direkten Schäden sitzen an Anlagen, Output und Risikotransfer.\n\nDie Aussage ist falsch.",
+      "Drei direkte Beispiele stehen in einer Reihe: Infrastruktur nach Extremwetter, stillstehende Produktion, höhere Versicherungsansprüche. Sie treffen Anlagen, Output und Risikotransfer unmittelbar. Der Satz gibt die Buchliste der direkten Folgen wieder, ohne Schadenssummen zu nennen, die der Text nicht liefert. Indirekte Lasten wie Ernte oder Gesundheit gehören in den nächsten Korb, nicht in diese Dreierreihe.\n\nDie Aussage ist wahr.",
+      "Ernteausfälle, erhöhte Gesundheitskosten und Produktivitätsverluste stehen unter den indirekten Auswirkungen, nicht unter den direkten Infrastrukturschäden. Die Zuordnung zu tauschen, vermischt die beiden Kostenkörbe, die der Text gerade trennen will. Indirekt heißt hier Folgewirkung über Ertrag, Gesundheit und Leistung, nicht der Betonriss an der Fabrikmauer nach dem Extremwetter. Der Satz macht aus der indirekten Liste fälschlich direkte Infrastrukturschäden. Direkte Schäden bleiben an zerstörter Infrastruktur, Produktionsausfall und Versicherungsansprüchen hängen; die Ernte-Gesundheits-Produktivitätsreihe gehört in den indirekten Korb.\n\nDie Aussage ist falsch.",
+      "Die Unterteilung ist die Gliederung des Kostenabsatzes. Zuerst die Unterscheidung direkt gegen indirekt, dann die Beispiele, dann die langfristigen Verschärfungen. Ohne diese Zweiteilung bliebe nur eine unsortierte Schadenswolke. Der Satz trifft genau die vom Text gesetzte Sortierung der erheblichen Kosten.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.13",
+    "title": "Langfristige Herausforderungen und Anpassung",
+    "context": "Bewerten Sie die folgenden Aussagen zu langfristigen Klimafolgen und Anpassung:",
+    "statements": [
+      "Die Degradierung von Ökosystemen und klimabedingte Migration verschärfen langfristig wirtschaftliche Herausforderungen.",
+      "Steigende Investitionsrisiken und Störungen globaler Lieferketten gehören zu diesen langfristigen Verschärfungen.",
+      "Anpassung an die Klimafolgen erfordert nach dem Abschnitt keinerlei Investitionen, weil Ökosysteme sich von selbst vollständig regenerieren.",
+      "Widerstandsfähige Infrastrukturen, erneuerbare Energien und nachhaltige Wirtschaftsmodelle nennt der Text als Investitionsfelder der Anpassung.",
+      "Die Gesellschaft wirkt auf die Wirtschaft ausschließlich über Steuergesetze, niemals über Konsumgewohnheiten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Langfristig wird die Lastenliste härter als der unmittelbare Sturmschaden. Degradierung von Ökosystemen und klimabedingte Migration stehen neben Investitionsrisiken und Lieferkettenstörungen als Verschärfung wirtschaftlicher Herausforderungen. Das sind ökonomische Lasten über die Zeit, nicht nur moralische Randnotizen. Der Satz nennt zwei der ausdrücklich aufgezählten Verschärfungen, ohne Migrations- oder Hektarzahlen zu erfinden.\n\nDie Aussage ist wahr.",
+      "Investitionsrisiko und globale Lieferkette schließen die langfristige Aufzählung. Störungen treffen nicht nur die lokale Ernte, sondern vernetzte Produktion. Steigende Investitionsrisiken verteuern oder verschieben Vorhaben, Lieferkettenbrüche unterbrechen Vorleistungen. Der Satz bleibt bei den im Text genannten Verschärfungen und ergänzt keine Kennzahlen, die der Abschnitt nicht enthält.\n\nDie Aussage ist wahr.",
+      "Anpassung verlangt erhebliche Investitionen, ausdrücklich in widerstandsfähige Infrastrukturen, erneuerbare Energien und nachhaltige Wirtschaftsmodelle, um wirtschaftliche Stabilität zu sichern. Vollständige Selbstheilung der Ökosysteme ohne Mitteleinsatz steht nicht da. Der Satz verneint genau den Investitionsbedarf, den der Abschnitt betont, und behauptet eine automatische Regeneration, die den Anpassungsabsatz überflüssig machte. Wirtschaftliche Stabilität soll durch genau diese Investitionen gesichert werden, nicht durch Abwarten, bis sich geschädigte Systeme von selbst vollständig erholen.\n\nDie Aussage ist falsch.",
+      "Drei Investitionsfelder sichern in dieser Logik wirtschaftliche Stabilität: widerstandsfähige Infrastrukturen, erneuerbare Energien, nachhaltige Wirtschaftsmodelle. Sie sind die Antwort auf Klimafolgen, nicht ein Ersatz für die Diagnose der Schäden. Der Satz trifft die Buchtriade und erfindet keine Fördersätze oder Jahresziele, die der Text nicht nennt.\n\nDie Aussage ist wahr.",
+      "Konsumgewohnheiten und gesellschaftliche Werte sind der genannte gesellschaftliche Rückkanal auf die Wirtschaft. Steuerpolitik gehört zur staatlichen Rahmensetzung, ersetzt aber nicht diese gesellschaftliche Wirkung. Ausschließlich Steuergesetze und niemals Konsum widerspricht dem Satz über veränderte Gewohnheiten. Zwei Kanäle existieren nebeneinander: Politik des Staates und Verhalten der Gesellschaft.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.14",
+    "title": "Ökosysteme als Schutz vor Katastrophen",
+    "context": "Bewerten Sie die folgenden Aussagen zu gesunden Ökosystemen und Naturgefahren:",
+    "statements": [
+      "Gesunde Ökosysteme dienen nicht als Schutz vor Naturkatastrophen; nur technische Bauwerke tun das.",
+      "Wälder können Überschwemmungen verhindern oder abschwächen, indem sie Regenwasser speichern und kontrolliert wieder abgeben.",
+      "In hochalpinen Regionen können Wälder als natürliche Barrieren Lawinen abfangen und Siedlungen, Verkehrswege und Infrastrukturen schützen.",
+      "Feuchtgebiete verstärken Hochwasser, weil sie Wasser nicht aufnehmen und zurückhalten können.",
+      "Diese ökologischen Funktionen verringern direkte Schäden an Infrastruktur und Eigentum und fördern die Regeneration nach Katastrophen."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Natürlicher Schutz ist die Überschrift dieses Blocks, nicht eine Metapher ohne Folge. Gesunde Ökosysteme dienen als Schutz vor Naturkatastrophen; Wälder, alpine Barrieren und Feuchtgebiete sind die Beispiele. Technische Bauwerke schließt der Text nicht aus, aber er behauptet gerade nicht, nur Beton schütze. Wer Ökosysteme aus dem Schutz streicht, unterschlägt Speichern von Regenwasser, Lawinenbarrieren und die Schwammwirkung der Feuchtgebiete.\n\nDie Aussage ist falsch.",
+      "Speichern und kontrolliert wieder abgeben ist der Hochwassermechanismus des Waldes. Dadurch können Überschwemmungen verhindert oder abgeschwächt werden. Der Satz folgt diesem hydrologischen Bild, ohne Abflussprozent zu erfinden, die der Abschnitt nicht liefert. Die Leistung sitzt in der zeitlichen Streckung des Wassers, nicht in einem völligen Verschwinden des Niederschlags.\n\nDie Aussage ist wahr.",
+      "Hochalpin ergänzt den Wasserspeicher um die Lawine. Wälder wirken als natürliche Barrieren, fangen Lawinen ab und schützen Siedlungen, Verkehrswege und Infrastrukturen vor Schäden. Der geografische Zusatz hochalpine Regionen ist im Text, nicht aus anderen Kapiteln importiert. Der Satz gibt Schutzobjekt und Mechanismus in der Buchreihenfolge wieder.\n\nDie Aussage ist wahr.",
+      "Schwamm, nicht Verstärker: Feuchtgebiete nehmen Hochwasser auf und halten es zurück. Verstärkung wäre die Umkehr dieser Pufferfunktion. Der Vergleich mit dem Schwamm macht die Richtung eindeutig. Wer Feuchtgebiete als Hochwassertreiber führt, widerspricht der beschriebenen Aufnahme- und Rückhalteleistung, die direkte Schäden an Infrastruktur und Eigentum gerade mindern soll.\n\nDie Aussage ist falsch.",
+      "Weniger direkte Schäden an Infrastruktur und Eigentum plus bessere Regeneration danach, das ist der ökonomische Ertrag der ökologischen Funktionen. Schutz mindert also genau jene direkten Kosten, die der frühere Absatz bei Extremwetter beschreibt, und erleichtert den Wiederaufbau. Der Satz verbindet beide Gedanken, ohne Schadenssummen einzuführen. Ökosysteme wirken hier als Vorsorge, nicht als Ersatz jeder technischen Sicherung, aber klar als Schadensminderung. Siedlungen, Verkehrswege und Eigentum profitieren damit doppelt: weniger Zerstörung im Ereignis und raschere Erholung danach, getragen von Wald, alpiner Barriere und Feuchtgebiet.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.15",
+    "title": "Biodiversität, Resilienz und Innovation",
+    "context": "Bewerten Sie die folgenden Aussagen zu Artenvielfalt und wirtschaftlicher Entwicklung:",
+    "statements": [
+      "Die Artenvielfalt in einem Ökosystem erhöht dessen Widerstandsfähigkeit.",
+      "Biodiversität macht Ökosysteme starrer, sodass sie sich nach Störungen langsamer erholen.",
+      "Durch den Schutz der biologischen Vielfalt tragen wir zur Stabilität natürlicher Systeme bei, was die Widerstandsfähigkeit abhängiger Gemeinschaften stärkt.",
+      "Biodiversität ist eine wichtige Quelle für Innovationen in Pharmazie, Biotechnologie und Landwirtschaft.",
+      "Viele wertvolle Verbindungen und genetische Ressourcen stammen nicht aus der Natur und spielen für neue Produkte keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Artenvielfalt und Widerstandsfähigkeit laufen im Text parallel, nicht gegeneinander. Ein vielfältiges Ökosystem kann sich an Veränderungen anpassen und nach Störungen schneller erholen. Höhere Biodiversität bedeutet in diesem Abschnitt mehr, nicht weniger Resilienz. Der Satz trifft die erste Funktionsaussage, bevor Gemeinschaften und Innovationen folgen.\n\nDie Aussage ist wahr.",
+      "Schneller erholen, nicht langsamer: Biodiversität ermöglicht Anpassung und raschere Regeneration nach Störungen. Starrheit und verzögerte Erholung behaupten das Gegenteil des Mechanismus. Der Quantor langsamer kippt den Satz ins Falsche, weil der Abschnitt gerade Beweglichkeit und Erholungsgeschwindigkeit als Gewinn der Artenvielfalt beschreibt. Ein starres System wäre das Gegenbild, nicht die Folge von Biodiversität. Schutz der biologischen Vielfalt zielt deshalb auf bewegliche, erholungsfähige Systeme und auf die Gemeinschaften, deren Widerstandsfähigkeit an diesen Systemen hängt, nicht auf erstarrte Naturmuseen.\n\nDie Aussage ist falsch.",
+      "Zwei Stufen sitzen in einem Satz: zuerst Stabilität der natürlichen Systeme durch Schutz der biologischen Vielfalt, dann stärkere Widerstandsfähigkeit der Gemeinschaften, die von diesen Ökosystemen abhängen. Der Hebel dazwischen ist der Schutz, nicht ein bloßes Inventar von Arten. Der Satz gibt beide Stufen in der Buchreihenfolge wieder und hält die Kette Natur, Stabilität, Gemeinschaft.\n\nDie Aussage ist wahr.",
+      "Pharmazie, Biotechnologie und Landwirtschaft sind die drei Innovationsfelder. Biodiversität ist dort eine wichtige Quelle: viele wertvolle Verbindungen und genetische Ressourcen stammen aus der Natur und führen zu neuen Produkten und Technologien, die wirtschaftliche Entwicklung vorantreiben. Der Satz nennt die Felder, ohne Wirkstoffe oder Patentzahlen zu erfinden, die der Abschnitt nicht enthält.\n\nDie Aussage ist wahr.",
+      "Herkunft und Nutzen kehrt der Satz um. Viele wertvolle Verbindungen und genetische Ressourcen stammen aus der Natur und führen zu neuen Produkten und Technologien. Zu behaupten, sie stammten nicht aus der Natur und spielten für neue Produkte keine Rolle, widerspricht beiden Hälften. Genau diese Ressourcen treiben in der Darstellung wirtschaftliche Entwicklung in Pharmazie, Biotechnologie und Landwirtschaft.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.1",
+    "case_id": "WISO 2.1.16",
+    "title": "Wirtschaft als gesellschaftlicher Ausdruck",
+    "context": "Bewerten Sie die folgenden Aussagen zum Fazit von Abbildung 13:",
+    "statements": [
+      "Wirtschaftliche Aktivitäten beziehen Inputs aus der Natur und geben Outputs wie Abfälle und Emissionen in sie zurück.",
+      "Wirtschaftliche Aktivitäten sind in soziale Institutionen, Normen und politische Regeln eingebettet.",
+      "Die Wirtschaft ist ein autonomer Prozess, unabhängig von gesellschaftlichen Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit.",
+      "Abbildung 13 ist bewusst vereinfacht, verdeutlicht aber zentrale Zusammenhänge.",
+      "Nur Unternehmen führen in der sichtbaren Botschaft der Abbildung wirtschaftliche Aktivitäten aus; Haushalte und Staat bleiben außen vor."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Sichtbarkeiten listet der Text unter der Abbildung. Die zweite lautet: wirtschaftliche Aktivitäten beziehen Inputs aus der Natur und geben Outputs, Abfälle und Emissionen, in sie zurück. Das ist der Stoffkreislauf der Grafik in einem Satz, vom Hereinholen natürlicher Ressourcen und Umweltdienstleistungen bis zur Rückgabe. Wer nur die Entnahme sieht, unterschlägt die Outputseite, die Abbildung 13 eigens zeigt.\n\nDie Aussage ist wahr.",
+      "Die dritte Sichtbarkeit betrifft Einbettung: soziale Institutionen, Normen und politische Regeln umschließen die Aktivitäten. Wirtschaft ist damit nicht nur Stoffwechsel mit der Natur, sondern auch Regelwerk der Gesellschaft. Beide Schalen gehören zur Abbildung, die biophysische und die gesellschaftliche. Der Satz gibt die soziale Einbettung in den Worten des Fazits wieder.\n\nDie Aussage ist wahr.",
+      "Kein autonomer Prozess, sondern Ausdruck gesellschaftlicher Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit: so schließt der Abschnitt. Autonomie würde genau diese Entscheidungen unsichtbar machen und die Wirtschaft aus Gesellschaft und Umwelt herauslösen. Der Satz wiederholt die vom Text verworfene Gegenposition und streicht Verteilung und Gerechtigkeit, die das Fazit ausdrücklich nennt. Ressourcennutzung, Verteilung und Gerechtigkeit sind in diesem Schlusssatz der Inhalt der Wirtschaft, nicht externe Moral, die man abkoppeln könnte, ohne das System zu verändern.\n\nDie Aussage ist falsch.",
+      "Vereinfachung und Aussagekraft stehen am Anfang nebeneinander. Die Darstellung ist bewusst vereinfacht und verdeutlicht dennoch die zentralen Zusammenhänge zwischen biophysischer Sphäre, gesellschaftlichem Umfeld und wirtschaftlichen Aktivitäten. Komplexitätsverzicht heißt hier nicht Beliebigkeit und nicht Vollständigkeit jeder Institution. Der Satz trifft beide Hälften: bewusst vereinfacht, trotzdem zentral.\n\nDie Aussage ist wahr.",
+      "Haushalte, Unternehmen und Staat führen die Aktivitäten aus, so die erste sichtbare Botschaft unter Abbildung 13. Nur Unternehmen zu nennen, streicht zwei der drei Träger und widerspricht der Legende zu Haushalten, Gemeinschaft, Privatunternehmen und öffentlichem Sektor. Die Grafik ist gerade das Bild einer Einbettung mehrerer Akteure, nicht das Organigramm einer einzigen Unternehmenswirtschaft.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  }
+]

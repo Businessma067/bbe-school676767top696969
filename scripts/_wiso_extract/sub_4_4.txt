@@ -1,0 +1,308 @@
+#### 4.4 Wirtschaftsinformatik als übergreifende Disziplin
+
+Im vorangegangenen Kapitel wurden Themen präsentiert, die eine enge Verzahnung von Wirtschaft 
+und Informations- und Kommunikationstechnologie aufweisen. Themen wie die Digitalisierung im 
+Unternehmenskontext, die Transformation von Geschäftsmodellen im digitalen Umfeld und die 
+Auswirkungen von digitalen Netzwerken auf ökonomische Transaktionen. All das sind Themen, die in 
+der Wirtschaftsinformatik behandelt werden. 
+Die Disziplin der Wirtschaftsinformatik umfasst jedoch noch viel mehr Themengebiete, die hier nur 
+angedeutet werden können. Fragestellungen der Gestaltung von Systemen, Herausforderungen des 
+Managements im Unternehmenskontext oder auch die ethischen Auswirkungen auf unsere 
+Handlungsoptionen in einer digitalisierten Gesellschaft. Das Verständnis für die tragende Rolle der 
+Wirtschaftsinformatik ist fundamental für eine nachhaltige und zukunftssichere Gestaltung damit 
+einhergehender Systeme. 
+Um zu verstehen, was die Wirtschaftsinformatik ausmacht, ist es daher wichtig auf zwei zentrale 
+Bausteine aufmerksam zu machen: Zum einen ist es das Bewusstsein für die Interdisziplinarität der 
+Wirtschaftsinformatik und zum anderen ist es die Rolle von Anwendungs- und Informationssystemen. 
+4.4.1 Perspektiven und Definition der Wirtschaftsinformatik 
+Sieht man sich die Literatur zur Definition der Wirtschaftsinformatik an, so wird die 
+Wirtschaftsinformatik meist durch ihre fächerübergreifende Stellung im Kontext der 
+Betriebswirtschaftslehre und der Informatik positioniert. Abbildung 34 illustriert diese klassische 
+Einordnung der Disziplin der Wirtschaftsinformatik anhand von drei überlappenden Bereichen. Dies 
+deutet bereits an, dass Themen der Wirtschaftsinformatik nicht zwingend etwas mit Informatik zu tun 
+haben müssen, sowie umgekehrt diese nicht zwingend etwas mit Themen der Betriebswirtschaftslehre 
+zu tun haben müssen. Je nach Fokus kann es sein, dass die Wirtschaftsinformatik als eigenständiges 
+Fach betrachtet werden kann oder als fächerübergreifendes. Es zeigt Ihnen jedoch, dass Sie genau 
+hinschauen sollten, wenn es darum geht die Wirtschaftsinformatik zu erfassen. Auf der Ebene, wie sie 
+in Abbildung 34 dargestellt wird, adressiert die Wirtschaftsinformatik Fragestellungen, die von 
+betriebswirtschaftlicher und technischer Natur sein können. Gerade im Kontext der 
+Wirtschaftsuniversität Wien steht der betriebswirtschaftliche Fokus im Vordergrund und wie dieser 
+durch technische Aspekte der Informatik unterstützt werden kann. 
+
+### Informatik Betriebswirt schaftslehre
+
+### Wirtschafts informatik
+
+Abbildung 34: Interdisziplinarität und Eigenständigkeit des Fachs Wirtschaftsinformatik
+
+Wenn wir Abbildung 34 noch genauer betrachten und die beiden Bereiche „Betriebswirtschaftslehre“ und „Informatik“ als Perspektiven erweitern, so kann die Disziplin der Wirtschaftsinformatik aus mehreren Blickwinkeln betrachtet werden: Einmal, aus der Perspektive der Verhaltenswissenschaften und einmal, aus einer technischen Perspektive. Abbildung 35 illustriert diese Sichtweisen und lässt einen Blick auf die unterschiedlichen Disziplinen innerhalb der Wirtschaftsinformatik zu. Aus technischer Perspektive gibt es unter anderem die Fächer Produktionsmanagement (engl.: Operations Management), Informatik (engl.: Computer Science) und Data Science. Produktionsmanagement (engl.: Operations Management). Im Fokus stehen hier Themen der Produktion und Herstellung von Gütern und Dienstleistungen. Relevante Themen sind dabei die zugrundliegenden Prozesse und Mechanismen in der Produktion sowie die Steuerung von Lieferketten und die Verwaltung des Inventars und der Kapazitäten. Informations- und Kommunikationstechnologie kann hier helfen Schritte zu automatisieren, zu optimieren und zu unterstützen.
+
+Abbildung 35: Perspektiven des interdisziplinären Fachs Wirtschaftsinformatik
+
+Informatik (engl. Computer Science). Es geht um die vielen Teilaspekte der Planung, Gestaltung und Umsetzung von Systemen und Technologien. Angefangen von der Arbeit mit Algorithmen die Netzwerke oder Prozesse analysieren bis hin zu der ganzheitlichen Gestaltung von Systemen und der Übersetzung von Anforderungen in funktionsfähige Softwarelösungen. Hier tauchen Themen wie zum Beispiel Software Engineering, Semantic Web oder komplexe Systeme auf. Data Science. Die Arbeit mit Zahlen und Datensätzen von enormen Größenordnungen (Stichwort: Big Data oder Open Data) steht hier im Vordergrund. Wir generieren durch die Nutzung der verschiedensten Systeme eine Unmenge an Daten. Unternehmen können aufgrund der Analyse dieser Daten Entscheidungen treffen. Dies ist jedoch nicht so einfach und stellt eine große Herausforderung dar. Anwendungen aus der Informatik, Statistik und Mathematik werden hier kombiniert, um Modelle
+
+##### Produktions management Informatik
+
+##### Data Science
+
+##### Psychologie Soziologie
+
+##### Betriebs wirtschaftslehre
+
+Verhaltens wissenschaftliche Sichtweise
+
+Technische Sichtweise
+
+für Prognosen und Analysen anzupassen und zu optimieren. Je nach Anwendungsbereich kommt man 
+hier auch mit Themen der künstlichen Intelligenz und dem maschinellen Lernen in Kontakt. 
+Aus verhaltenswissenschaftlicher Perspektive sind unter anderem die Fächer Betriebswirtschaftslehre, 
+Soziologie und Psychologie von Relevanz und prägen das Fach der Wirtschaftsinformatik. 
+Betriebswirtschaftslehre. Wie können Informations- und Kommunikationstechnologien 
+Unternehmen in Ihren Kernprozessen unterstützen? Die Fragestellungen und Themengebiete sind 
+zahlreich. Was bedeutet es digitale Transformation in einem Unternehmen voranzutreiben? Wie 
+können wir disruptive Innovationen der Technologie nutzen, um neue Wertschöpfung zu schaffen. Es 
+geht auch um Fragen des Managements und wie sich Unternehmen in einer ständig wandelnden 
+digitalen Umgebung an Regulationen und Verordnungen halten können (Stichwort: Datenschutz und 
+Privatsphäre). 
+Soziologie. Was für einen Einfluss haben Gruppen und Organisationen auf die Gestaltung von 
+Systemen und wie beeinflussen diese Systeme Einzelpersonen bzw. welche Auswirkungen haben diese 
+auf die Gesellschaft im Gesamten. 
+Psychologie. Im Kontext der Wirtschaftsinformatik und der Nutzung von Systemen steht immer 
+noch der Mensch als zentrale Komponente im Raum. Der Mensch gestaltet Systeme, hat Bedürfnisse 
+und Emotionen und kann auf Basis von ethischen Grundhaltungen wegweisende Entscheidungen 
+treffen. Hier geht es einerseits um die Auswirkungen von Technologie auf den Menschen und 
+anderseits um ethische Fragestellungen und wie man Ethik als Grundlage für die Gestaltung von 
+Systemen heranziehen kann, um zum Beispiel ethische Werte ein einem System zu verankern 
+(Stichwort: Digital Humanism und Ethical Computing). 
+Diese und andere Perspektiven des interdisziplinären Felds der Wirtschaftsinformatik finden Sie im 
+Studium der Wirtschaftsinformatik wieder. Je nach Interessensschwerpunkt können Sie Ihr Profil durch 
+den Fokus auf verschiedene Themenbereiche schärfen. 
+Erst durch die Beleuchtung der verschiedenen Disziplinen wird die Wirtschaftsinformatik greifbarer. 
+Zentral dabei ist jeweils der betriebswirtschaftliche Fokus in Kombination mit Systemen und 
+Menschen. In der Wirtschaftsinformatik wird dabei der Begriff Informationssystem zentral verwendet. 
+Informationssysteme unterstützen Unternehmen bei Ihren betriebswirtschaftlichen Vorhaben und 
+werden durch Menschen gestaltet. 
+Was ist die Wirtschaftsinformatik? 
+Gegenstand der Wirtschaftsinformatik sind Informationssysteme in 
+Wirtschaft, Verwaltung und privatem Bereich. Die Disziplin befasst sich 
+dabei mit allen Aktivitäten rund um Entwicklung, Einführung, Betrieb, 
+Nutzung und Ablösung von Informationssystemen. Sie versteht sich als 
+interdisziplinäres Fach basierend auf der Betriebswirtschaftslehre und der 
+Informatik. 
+
+4.4.2 Die Rolle von Anwendungs- und Informationssystemen 
+Wenn wir von Systemen im Kontext der Wirtschaftsinformatik sprechen, die entwickelt, gestaltet oder 
+betrieben werden, dann meinen wir je nach Art und Umfang des Systems ein Anwendungssystem oder 
+ein Informationssystem. Grundlage für all die in Kapitel 4 beschriebenen Innovationen und 
+Fortschritte, die mit der Digitalisierung einhergehen sind die jeweiligen Anwendungs- und 
+Informationssysteme. Was genau verstehen wir darunter und wie können wir diese abgrenzen? 
+Anwendungssystem 
+Ein Anwendungssystem beinhaltet Programme die als Anwendungssoftware für ein konkretes 
+betriebliches Anwendungsgebiet eingesetzt werden. Dies umfasst die Daten, die dabei gespeichert 
+werden müssen (z.B. auch in einer Datenbank), sowie die IT-Infrastruktur – also Hardware – auf der 
+die Software läuft (z.B. ein Server oder PC). Anwendungssysteme werden entweder für ein bestimmtes 
+Unternehmen entwickelt oder für einen bestimmten Bereich im Unternehmen. Ein Beispiel wäre das 
+Rechnungswesen mit Anwendungssystemen für die Buchhaltung oder Kostenrechnung. Ein klassisches 
+Beispiel für ein Anwendungssystem ist jedes gängige Tabellenkalkulationsprogramm (z.B. Microsoft 
+Excel oder Apache OpenOffice Calc), welches zusätzlich noch auf eine Datenbank zugreift. Weitere 
+Bereiche könnten auch das Personalwesen betreffen, oder die Logistik und den Verkauf sowie den 
+Vertrieb und das Marketing. Überall dort benötigt es Software – also Anwendungssysteme – um 
+betrieblichen Aufgaben nachzugehen. Im Gegensatz zum privaten Bereich besteht bei der Beschaffung 
+von Anwendungssystemen im betrieblichen Kontext die Herausforderung die Systeme an das 
+Unternehmen anzupassen. Dieser Schritt der Anpassung an das Unternehmen kann sehr kostspielig 
+und aufwendig sein und ist ein zentraler Aspekt, der in der Disziplin der Wirtschaftsinformatik 
+beleuchtet wird. Es geht dabei vor allem darum Anforderungen von Menschen so zu übersetzen, dass 
+diese funktional in der Anwendung angepasst werden können. Genau bei diesem Punkt der Anpassung 
+von Anwendungssoftware an den Betrieb ist es notwendig Kenntnisse der Informatik sowie der 
+Betriebswirtschaftslehre oder anderen Disziplinen zu haben, um eine möglichst reibungsfreie 
+Integration zu gewährleisten. 
+Was ist ein Anwendungssystem? 
+Ein Anwendungssystem ist ein System, bestehend aus einem oder 
+mehreren Programmen, welches für ein bestimmtes betriebliches 
+Aufgabengebiet eingesetzt und entwickelt wurde. Es umfasst Daten, IT 
+Infrastruktur und Software, die für bestimmte betriebliche Aufgaben 
+vorgesehen sind. 
+Informationssystem 
+Ein Informationssystem beinhaltet verschiedene Anwendungssysteme für einen bestimmten 
+betrieblichen Kontext und ist zusätzlich dazu in die Organisationsstruktur eingebettet und integriert. 
+Man könnte also abgrenzen, dass ein Informationssystem, im Gegensatz zum Anwendungssystem, 
+immer ein angepasstes, betriebsindividuelles System darstellt, welches spezifisch die speziellen 
+Anforderungen im Kontext der betrieblichen Organisation erfüllt. Abbildung 36 illustriert diesen 
+Zusammenhang zwischen Informations- und Anwendungssystem. 
+
+In der Wirtschaftsinformatik ist das Informationssystem zentraler Gegenstand der Behandlung. Vor allem dadurch, dass es ein System ist, welches an spezifische organisatorische und personelle Rahmenbedingungen angepasst wird und somit erst durch diese Anpassungen seine volle Wirkung zeigen kann. Informationssysteme werden meist nicht standardisiert von einem Anbieter zum Kauf angeboten, sondern benötigen je nach Unternehmensgröße auch eine Begleitung durch Beratungsunternehmen, die mit Ihren Erfahrungswerten und ihrer Expertise das Unternehmen bei dieser Anpassung begleiten kann. Dies muss jedoch nicht immer zwingend der Fall sein. Es kann auch sein, dass im Unternehmen Ressourcen aufgestellt werden, um den Anpassungsprozess möglichst effizient und zukunftssicher zu gestalten. In jedem Fall sind auch hier wieder Kenntnisse und Fähigkeiten aus den unterschiedlichen Perspektiven des Fachs Wirtschaftsinformatik notwendig, um einen solchen Prozess zu begleiten. Vor allem im Kontext von Informationssystemen ist der Mensch innerhalb der Organisation ein zentraler Bestandteil. Er produziert und verarbeitet Informationen die im Informationssystem gespeichert, abgerufen und transformiert werden müssen.
+
+Was ist ein Informationssystem? Ein Informationssystem ist ein System, welches zum Zweck eines bestimmten Unternehmens entwickelt und angepasst wurde. Es berücksichtigt organisatorische Strukturen und besteht aus Menschen und Maschinen (Rechner, Anwendungssystem, Netzwerk und Kommunikationseinrichtungen), die Information erzeugen und/oder benutzen und die durch Kommunikationsbeziehungen miteinander verbunden sind.
+
+Komponenten eines Informationssystems Wir sehen also, dass ein Informationssystem mehr ist als nur Software. Es besteht aus mehreren Komponenten. Abbildung 37 illustriert diese Komponenten in seinem Zusammenspiel. Grundlegend im Unternehmen sind Daten, Prozesse und Menschen. Ein Betrieb verwendet und produziert Daten während es bestimmte Geschäftsfälle bearbeitet. Diese Geschäftsfälle können anhand von Prozessen in systematischen Arbeitsschritten festgehalten werden. Menschen – diese können Teil des
+
+##### Informationssystem
+
+Organisation Management
+
+Anwendungssystem
+
+Betriebliche Aufgaben & Prozesse
+
+IT-Infrastruktur
+
+Daten Software
+
+Abbildung 36: Zusammenhang zwischen Informationssystem und Anwendungssystem (Quelle: Laudon et al. (2016), S. 14)
+
+Unternehmens oder auch außerhalb des Unternehmens angesiedelt sein (z.B. Kunden oder Lieferdienste) – bearbeiten die Geschäftsfälle und nehmen innerhalb dieser, unterschiedliche Rollen ein. Dazu benötigen Sie Hardware und Software (Anwendungssysteme) um operativ tätig zu werden. Ein Unternehmen hat möglicherweise mehrere Server, um Datenbestände im Unternehmen zentral zu verwalten und zu sichern. Mitarbeiter verwenden Rechner und mobile Endgeräte, um zu kommunizieren und Daten zu verarbeiten. Dabei wird Software verwendet, die entweder standardisiert zugekauft wurde oder individuell angepasst an das Unternehmen ist. In diesem Kontext müssen Daten ausgetauscht werden und es muss miteinander kommuniziert werden. Dazu werden lokale und globale Netzwerke verwendet, um Informationen zwischen Unternehmen auszutauschen.
+
+Abbildung 37: Komponenten eines Informationssystems
+
+Eine Ausprägung eines Informationssystems, die im Umfeld der Disziplin der Wirtschaftsinformatik 
+relevant ist, ist das Enterprise-Resource-Planning-System (ERP-System). Ein ERP-System ist ein 
+klassisches Beispiel für ein betriebliches Informationssystem, welches je nach Fokus die wesentlichen 
+betrieblichen Bereiche in seinen Funktionen unterstützt (z.B. Rechnungswesen, Materialwirtschaft, 
+Produktion). 
+Ein Beispiel für ein 
+betriebliches 
+Informationssystem bzw. 
+ERP-System 
+SAP (www.sap.de) ist ein deutsches Unternehmen, mit Sitz in Walldorf, 
+welches als börsennotierter Softwarekonzern eines der größten 
+Softwareunternehmen weltweit ist. SAP bietet eine Reihe von 
+Softwarelösungen für Unternehmen an, um betriebswirtschaftliche 
+Tätigkeiten zu unterstützen. 
+SAP hat mehrere Generationen von ERP-Systemen veröffentlicht und ist 
+seit 1972 am Markt vertreten. Beispiele sind SAP R/3, SAP ERP, SAP 
+Business Suite oder SAP S/4HANA, welches die aktuelle ERP-Lösung von 
+SAP darstellt. 
+
+SAP bietet dabei Informationssysteme an, die es Unternehmen ermöglicht mit Kunden in Kontakt zu bleiben (Customer-Relationship Management Systeme) oder in der Logistik den Überblick zu behalten (Supply-Chain-Management Systeme) oder Analysen auf Basis der Unternehmensdaten zu generieren (Business-Intelligence Systeme).
+
+Es ist anfangs oft schwer zu verstehen, was ein Informationssystem alles umfasst. Im Laufe des Studiums kommen Sie immer wieder mit Informationssystemen in Kontakt und werden so immer mehr ein Gefühl dafür bekommen, was ein Informationssystem ausmacht.
+
+Erklärvideo: Was ist ein Informationssystem? 
+Zur Wiederholung hilft Ihnen vielleicht folgendes Erklärvideo, in dem ein 
+weiterführendes Beispiel für ein Informationssystem anhand einer 
+Bibliothek erläutert wird, um die Eigenschaften eines Informationssystems 
+besser zu verstehen. 
+
+Link zum Video: https://youtu.be/0siisFJUKh4
+
+## 5.Abschließende Bemerkungen und verwendete Quellen
+
+Das Wesen der Wirtschaft und die Untersuchung von wirtschaftlichen Sachverhalten und 
+Zusammenhängen sind auch Gegenstand der Wissenschaft. Die Wissenschaft ist „ein dynamisches 
+System von allgemeingültigen Aussagen über reale Sachverhalte (Phänomene)“ (Lechner, Egger & 
+Schauer 2003, S. 31), das diese Sachverhalte beschreibt, Zusammenhänge untersucht und Erklärungen 
+findet. Die Wirtschaftswissenschaften untersuchen als Phänomen die Wirtschaft als Gesamtes, 
+insbesondere die Entscheidungen und das Verhalten von einzelnen Menschen (als Teil von privaten 
+Haushalten) und von Unternehmen, die sich auf ihre knappen Ressourcen und auf deren Einsatz zur 
+Bedürfniserfüllung beziehen. Sie umfasst mehrere Disziplinen, zu denen insbesondere die 
+Sozioökonomie, die Mikro- und die Makroökonomie, die Betriebswirtschaftslehre sowie die 
+Wirtschaftsinformatik zählen. 
+Die Sozioökonomie befasst sich mit den Wechselwirkungen zwischen wirtschaftlichem und sozialem 
+Handeln und deren Auswirkungen auf Gesellschaft, Wirtschaft und Umwelt. Sie analysiert, wie 
+wirtschaftliche Strukturen, soziale Prozesse und kulturelle Werte zusammenwirken und sich 
+gegenseitig beeinflussen. Dabei bezieht sie auch ökologische und institutionelle Rahmenbedingungen 
+mit ein, um ein ganzheitliches Verständnis von Wirtschaft und Gesellschaft zu schaffen. Ziel ist es, die 
+komplexen Zusammenhänge zwischen individuellen Entscheidungen, gesellschaftlichen 
+Entwicklungen und globalen Herausforderungen zu verstehen und Lösungen für eine nachhaltige und 
+gerechte Zukunft zu entwickeln. 
+Die Mikroökonomie fokussiert auf die Entscheidungen und das Verhalten von einzelnen 
+Wirtschaftsteilnehmern wie Haushalten und Unternehmen und auf ihre Interaktion. Sie betrachtet 
+zum Beispiel wie sich Haushalte verhalten, wenn Unternehmen für bestimmte Güter die Preise senken 
+oder erhöhen. Die Auswirkung von Preissenkungen oder Steuererleichterungen für die Anschaffung 
+bestimmter Verkehrsmittel wie E-Autos oder Fahrräder auf die Kaufentscheidung wäre dafür ein 
+Beispiel. 
+Die Makroökonomie betrachtet hingegen die Wirtschaft als größeres Ganzes, etwa die 
+Wirtschaftsaktivitäten aller Akteure eines ganzen Landes oder einer gesamten Wirtschaftsregion. Sie 
+fasst gleichartige Wirtschaftsteilnehmer (z.B. Haushalte) und ihre Aktivitäten (z.B. Sparen, Konsum) zu 
+Aggregatgrößen zusammen. Zentrale makroökonomische Größen sind die Wirtschaftsleistung und ihre 
+Entwicklung, das Wirtschaftswachstum, die Arbeitslosigkeit, die Preis- und Zinsentwicklung, das 
+Sparen, das Konsumieren und das Investieren in einem Land oder in einer Wirtschaftsregion. 
+Die Betriebswirtschaftslehre beschäftigt sich vor allem mit den Unternehmen und der 
+Leistungserstellung in Unternehmen. Natürlich sind mikro- und makroökonomische Erkenntnisse auch 
+betriebswirtschaftlich relevant (und umgekehrt), weil sie das Umfeld, in dem Unternehmen agieren, 
+näher bestimmen und daher auch für die Unternehmen und ihr Handeln wichtig sind. Ebenso spielen 
+auch technische, ökologische, soziologische oder juristische Überlegungen für Unternehmen eine 
+Rolle. 
+Die Wirtschaftsinformatik begleitet diese Themen interdisziplinär aus verschiedenen Perspektiven. 
+Zentrale Rolle dabei, spielen Informations- und Kommunikationstechnologien sowie 
+Informationssysteme die Einzelpersonen in Ihrem Handeln in der Gesellschaft beeinflussen, und 
+Unternehmen bei betriebswirtschaftlichen Tätigkeiten unterstützen. Dabei hält die 
+
+Wirtschaftsinformatik noch viele weitere spannende Themenfelder für Sie bereit, wie zum Beispiel 
+ethische Fragestellungen bei der Gestaltung von digitalen Systemen, oder Fragestellungen des 
+Managements von Informationssystemen und wie man diese ganzheitlich im Einklang mit 
+Unternehmensstrategie und Regulationen denken kann. Aber auch das Design und die Gestaltung von 
+Informationssystemen sowie technische Aspekte der Sicherheit, Kryptografie und Datenanalyse sind 
+Bestandteil der Wirtschaftsinformatik. 
+In dieser Lernunterlage wurden die Fragen beleuchtet, was Wirtschaften ausmacht, warum wir alle 
+wirtschaften und was Wirtschaften für Unternehmen im Besonderen bedeutet. Dabei wurden 
+bestimmte Themenbereiche in den Fokus gerückt: das Wesen von Unternehmen und die Vielfalt von 
+Unternehmen, ihre möglichen Rechtsformen, ihre Finanzierungsmöglichkeiten, wesentliche Teile des 
+Rechnungswesens und das Marketing. Es gibt aber viele weitere wichtige und sehr interessante 
+Themenbereiche, die für das Verstehen von Unternehmen und für den Erfolg von Unternehmen von 
+größter Bedeutung sind, beispielsweise die Beschaffung und Lagerung, die Investitionsrechnung als 
+eine Grundlage für Investitionsentscheidungen und das gesamte Personalmanagement. 
+Die folgenden Quellen wurden für das Verfassen dieser Unterlage herangezogen. Sie können auch als 
+Nachschlagewerke und zum Vertiefen von Themen herangezogen werden, die in dieser Lernunterlage 
+nur gestreift oder nicht behandelt worden sind. Das Wirtschaftsstudium und die weitere Beschäftigung 
+mit wirtschaftlichen Fragen möge viel Freude bereiten! 
+Chancel, L., P. Bothe and T. Voituriez (2023). Climate inequality report 2023, Fair taxes for a 
+sustainable future in the global South, World Inequality Lab (WIL). 
+Coote, A. (2021). "Universal basic services and sustainable consumption." Sustainability: Science, 
+Practice and Policy 17(1): 32-46. 
+Fanning, A. L., D. W. O'Neill and M. Büchs (2020). "Provisioning systems for a good life within 
+planetary boundaries." Global Environmental Change 64: 102135. 
+Fuhrmann, Bettina (2019): Introduction to Business and Economics. Westermann – Jugend&Volk 
+Verlag, 2019. 
+Goodwin, N., J. M. Harris, J. A. Nelson, P. J. Rajkarnikar, B. Roach and M. Torras (2022). 
+Macroeconomics in context, Routledge. 
+Gough, I. (2017). Heat, greed and human need: Climate change, capitalism and sustainable wellbeing, 
+Edward Elgar Publishing. 
+Haberl, H., D. Wiedenhofer, D. Virág, G. Kalt, B. Plank, P. Brockway, T. Fishman, D. Hausknost, F. 
+Krausmann, B. Leon-Gruchalski, A. Mayer, M. Pichler, A. Schaffartzik, T. Sousa, J. Streeck and F. 
+Creutzig (2020). "A systematic review of the evidence on decoupling of GDP, resource use and GHG 
+emissions, part II: synthesizing the insights." Environmental Research Letters 15(6): 065003. 
+Hall, Dave / Jones, Rob / Raffo, Carlo / Anderton, Alain (2010): Business Studies. Pearson Education. 
+Hansen, H.R., Mendling, J. & Neumann, G. (2019). Wirtschaftsinformatik (12. Auflage). De Gruyter 
+Oldenbourg. https://doi.org/10.1515/9783110608731 
+Helliwell, J. F., Layard, R., Sachs, J. D., De Neve, J. E., Aknin, L. B., & Wang, S. (2025). World happiness 
+report 2025. 
+
+https://files.worldhappiness.report/WHR25.pdf?_gl=1*19kp5rv*_gcl_au*NTU4MDc1OTExLjE3NjE0M 
+DIyNDQ. 
+Hickel, J. (2020). "Quantifying national responsibility for climate breakdown: an equality-based 
+attribution approach for carbon dioxide emissions in excess of the planetary boundary." The Lancet 
+Planetary Health 4(9): e399-e404. 
+Kitzmann, Niklas, et al. "Planetary Health Check 2025: A Scientific Assessment of the State of the 
+Planet." (2025). https://publications.pik 
+potsdam.de/pubman/item/item_32589/component/file_33044/PlanetaryHealthCheck2025.pdf 
+Kreuzer, Christian (2019): BWL Kompakt. Linde Verlag. 
+Laudon, K.C., Laudon, J.P. & Schoder, D. (2016). Wirtschaftsinformatik. (3. Auflage). Pearson. 
+https://permalink.obvsg.at/wuw/AC12649292 
+Lechner, Karl / Egger, Anton / Schauer, Reinbert (2016): Einführung in die Allgemeine 
+Betriebswirtschaftslehre. Linde Verlag. 
+Lee, H., K. Calvin, D. Dasgupta, G. Krinner, A. Mukherji, P. Thorne, C. Trisos, J. Romero, P. Aldunce and 
+K. Barret (2023). "IPCC, 2023: Climate Change 2023: Synthesis Report, Summary for Policymakers. 
+Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental 
+Panel on Climate Change [Core Writing Team, H. Lee and J. Romero (eds.)]. IPCC, Geneva, 
+Switzerland." 
+Leimeister, J.M. (2021). Einführung in die Wirtschaftsinformatik (13. Auflage). Springer Gabler. 
+https://doi.org/10.1007/978-3- 662-63560-5 
+Neumayer, E. (1999). Weak versus strong sustainability. Cheltenham, Edward Elgar. 
+Novy, A., R. Bärnthaler and M. Prieler (2023). "Zukunftsfähiges Wirtschaften: Herausforderungen der 
+sozialökologischen Transformation." 
+Fanning, Andrew L., and Kate Raworth. "Doughnut of social and planetary boundaries monitors a 
+world out of balance." Nature 646.8083 (2025): 47-56. 
+Samuelson, Paul A. / Nordhaus, William D. (2017): Volkswirtschaftslehre. FinanzBuch Verlag. 
+Schneider, Wilfried / Schneider, Dieter (2019): Einführung in die Systeme des Rechnungswesens. 
+Facultas. 
+Sowell, Thomas (2015): Basic Economics. A Common Sense Guide to the Economy. Basic Books. 
+Thommen, Jean-Paul / Achleitner, Ann-Kristin (2023): Allgemeine Betriebswirtschaftslehre. 
+Umfassende Einführung aus managementorientierter Sicht. Gabler Verlag. 
+Van Praag, Bernard MS, and Ada Ferrer-i-Carbonell. Happiness quantified: A satisfaction calculus 
+approach. Oxford University Press, 2004. 
+Verbist, G., M. Förster and M. Vaalavuo (2012). "The impact of publicly provided services on the 
+distribution of resources: Review of new results and methods." 
+Zioga, M., Kotz, M., & Levermann, A. (2024). Observed carbon decoupling of subnational production 
+insufficient for net-zero goal by 2050. Proceedings of the National Academy of Sciences, 121(45), 
+e2411419121.

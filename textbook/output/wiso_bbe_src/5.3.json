@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Product Orientation Versus Market Orientation",
+    "statements": [
+      "A product-oriented business first analyses customers' needs and wants before defining product specifications.",
+      "A product-oriented business focuses on the product and its specifications first and later thinks about how to sell it.",
+      "A market-oriented business will first analyse customers' needs and wants and then tailor products to fulfil these requirements.",
+      "Product-oriented and market-oriented businesses may pursue identical marketing objectives even when their strategic starting points differ.",
+      "A product-oriented business mainly relies on the quality of the features of the product to be successful in the market."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.01",
+    "context": "Review how product-oriented and market-oriented businesses differ in where they place initial emphasis when developing offerings. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Focus on Features or Customer Needs",
+    "statements": [
+      "The market-oriented approach has the advantage of anticipating changing needs and wants and responding to market changes earlier than product-oriented competitors.",
+      "Market-oriented businesses define specifications first and only later consider whether buyers want those features.",
+      "Product-oriented and market-oriented businesses must always pursue completely different marketing objectives.",
+      "A product-oriented business ignores product quality and relies solely on aggressive advertising without strong features.",
+      "Market-oriented businesses cannot anticipate changing needs because they focus only on current specifications."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.02",
+    "context": "Analyze the contrast between focusing on product features and focusing on customers' needs and wants in marketing orientation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Identical Objectives With Different Orientations",
+    "statements": [
+      "Which orientation is more suitable for a business largely depends on the product itself and the number of competitors in the market.",
+      "Orientation suitability is identical for every product regardless of competitive conditions or product characteristics.",
+      "Markets and the expectations of customers should not be neglected even when a firm emphasises internal product development.",
+      "Customer relationship management aims at creating a long-term relationship with customers rather than treating each sale as isolated.",
+      "CRM systems keep customer data so the business can mail or email newsletters, coupons, and product information to encourage repeat purchases."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.03",
+    "context": "Review why many businesses have moved from product orientation towards a market-oriented approach over recent decades. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Market-Oriented Anticipation of Change",
+    "statements": [
+      "Sensitive use of personal customer data is indispensable when businesses build detailed CRM profiles.",
+      "By using personal accounts and loyalty cards, customers often give up their anonymity willingly in order to receive discounts and special offers.",
+      "Strong product specifications allow a business to ignore markets and customer expectations entirely.",
+      "Many businesses collect data on their customers and their buying behaviours so they can tailor offers to personal preferences.",
+      "Product orientation emphasises focus on production and product features rather than on customers' needs and wants at the initial stage."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.04",
+    "context": "Consider a fashion retailer that surveys changing style preferences each season before commissioning new garment lines from suppliers. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Product Quality as Primary Market Strategy",
+    "statements": [
+      "Customer relationship management aims only at single-transaction sales without building long-term customer relationships.",
+      "Market orientation emphasises focus on customers' needs and wants when deciding what to produce and promote.",
+      "CRM systems delete customer data immediately after each purchase so no newsletters or coupons can be sent later.",
+      "Sensitive use of personal data is optional and unnecessary when businesses operate loyalty programmes.",
+      "Loyalty cards and personal accounts always preserve full customer anonymity without any identifiable records."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.05",
+    "context": "Review the market-oriented advantage of anticipating changing customer needs and responding earlier than product-oriented rivals. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Neglecting Customer Expectations",
+    "statements": [
+      "Businesses cannot tailor offers to personal preferences because collecting buying-behaviour data is prohibited in CRM.",
+      "Product orientation and market orientation differ only in advertising slogans rather than in development focus.",
+      "Market orientation means producing whatever engineers prefer without reference to customer requirements.",
+      "Over recent decades many businesses have moved from a product-oriented approach towards a market-oriented approach.",
+      "CRM discourages repeat purchases by avoiding contact between one sale and the next."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.06",
+    "context": "Analyze how product-oriented and market-oriented firms may pursue identical marketing objectives yet follow different strategic paths. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "CRM Long-Term Relationship Goals",
+    "statements": [
+      "A product-oriented business may believe that a good product sells itself through its features and quality.",
+      "Market orientation aligns with producing what customers need and want rather than what internal teams prefer in isolation.",
+      "CRM encourages customers to return and buy again through informed contact supported by stored personal records.",
+      "Personal data sensitivity has become a very important topic as businesses expand loyalty-driven marketing programmes.",
+      "Tailored offers reflect stored knowledge of individual customer preferences derived from purchase histories and account data."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.07",
+    "context": "Review Figure 10 comparing product orientation with market orientation on focus, selling logic, and customer emphasis. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Sensitive Use of Personal Data",
+    "statements": [
+      "Personal data sensitivity became irrelevant once loyalty programmes began offering discounts.",
+      "A market-oriented firm analyses requirements before tailoring products, whereas a product-oriented firm defines specifications before selling.",
+      "A market-oriented business believes a good product sells itself without studying customer needs.",
+      "Product-oriented firms tailor products to fulfil requirements identified through upfront needs analysis.",
+      "Businesses have universally abandoned market orientation and returned entirely to product orientation."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.08",
+    "context": "Consider a furniture workshop that invests in craftsmanship and material quality before researching whether buyers want modular or traditional designs. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Loyalty Cards and Voluntary Anonymity",
+    "statements": [
+      "Identical profitability or market-share objectives can coexist with different orientation choices across competing firms.",
+      "CRM newsletters and coupons are unrelated to stored customer data and require no personal records.",
+      "Product-oriented competitors may respond to market changes later than market-oriented rivals who anticipated shifting wants.",
+      "CRM newsletters and coupons sent by email use retained customer data to maintain contact between purchase occasions.",
+      "Loyalty cards link identifiable customers to discounts, illustrating willing exchange of anonymity for tangible benefits."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.09",
+    "context": "Review the warning that markets and customer expectations should not be neglected even when product quality is strong. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Tailoring Offers to Customer Preferences",
+    "statements": [
+      "Customers never willingly surrender anonymity because loyalty discounts are always worthless.",
+      "Buying-behaviour data is collected only for tax reporting and not for marketing tailoring.",
+      "Market-oriented competitors respond later to change because they wait for engineers to finish specifications.",
+      "Buying-behaviour records help businesses match promotional content to what individual customers are likely to value.",
+      "Product orientation places customers' needs and wants ahead of production and product features at the initial stage."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.10",
+    "context": "Analyze customer relationship management as a practice aimed at creating long-term relationships with customers. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Product-First Specification Development",
+    "statements": [
+      "Neglecting evolving customer expectations undermines success even when product specifications remain technically strong.",
+      "Orientation choice is fixed by law so every firm in a sector must use market orientation.",
+      "Market-oriented businesses tailor products after analysing needs, placing customer focus ahead of final specification choices.",
+      "Product-oriented businesses think about selling only after the product and its specifications have been defined internally.",
+      "Sensitive handling of personal data supports sustainable CRM rather than eroding trust built through long-term relationships."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.11",
+    "context": "Review how CRM systems retain customer data to mail or email newsletters, coupons, and product information. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Needs Analysis Before Product Design",
+    "statements": [
+      "CRM aims at long-term relationships supported by mailing or emailing product information that encourages customers to return.",
+      "Customers who register personal accounts often accept reduced anonymity because loyalty schemes deliver discounts and special offers.",
+      "Businesses tailor offers to personal preferences after collecting data on customers and their buying behaviours.",
+      "CRM long-term relationships require no communication because customers automatically return without contact.",
+      "Suitability of product versus market orientation is contingent on product type and competitive conditions rather than fixed by rule."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.12",
+    "context": "Consider a bookshop that analyses reading-category sales data before deciding which new titles to stock for the coming quarter. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Competitive Timing in Market Orientation",
+    "statements": [
+      "Sensitive personal data handling matters only for government agencies and not for commercial CRM programmes.",
+      "Product orientation centres production and feature development before external customer needs receive detailed attention.",
+      "Identical marketing objectives prove that two firms must also share the same orientation starting point.",
+      "Market-oriented firms never collect customer data because data collection contradicts customer focus.",
+      "Product-oriented businesses never advertise because they assume buyers discover features without promotion."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.13",
+    "context": "Review how personal accounts and loyalty cards lead customers to give up anonymity willingly for discounts and special offers. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Orientation Suitability and Product Type",
+    "statements": [
+      "Market orientation places customers' needs and wants at the forefront when shaping what the business will offer.",
+      "CRM retention tactics include coupons designed to bring registered customers back for additional purchases.",
+      "Personal data sensitivity matters because CRM systems retain identifiable information for ongoing marketing contact.",
+      "Loyalty programmes force anonymity on customers who cannot access discounts without remaining unidentified.",
+      "Market-oriented firms gain an edge by responding earlier when customer needs and wants begin to change."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.14",
+    "context": "Analyze how businesses collect data on customers and buying behaviours to tailor offers to personal preferences. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "CRM Newsletters and Repeat Purchases",
+    "statements": [
+      "Product-oriented firms mainly bet on feature quality rather than on continuous market adaptation for success.",
+      "Registered loyalty programmes illustrate how customers willingly surrender anonymity to obtain price benefits.",
+      "Tailored offers ignore personal preferences because CRM stores only aggregate industry statistics.",
+      "Neglecting customer expectations is recommended when product specifications are technically advanced.",
+      "CRM is identical to a single promotional campaign with no aim of sustaining relationships over time."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.15",
+    "context": "Review the product-oriented view that a good product sells itself through its features rather than through market adaptation. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Buying Behaviour Data Collection",
+    "statements": [
+      "Stored customer histories enable businesses to email tailored product information aligned with prior interests.",
+      "Personal accounts and loyalty cards never record buying behaviour usable for later marketing contact.",
+      "Market orientation eliminates the need to consider product quality because only customer opinions matter.",
+      "Product orientation means ignoring production entirely and focusing only on customer service scripts.",
+      "Both orientations may target customer satisfaction, yet product orientation still prioritises specifications before selling."
+    ],
+    "subsection": "5.3",
+    "case_id": "CASE 5.3.16",
+    "context": "Consider a consumer electronics manufacturer that engineers advanced specifications first and only later designs promotional campaigns around those technical features. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  }
+]

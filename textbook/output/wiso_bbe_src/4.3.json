@@ -1,0 +1,1661 @@
+[
+  {
+    "title": "Corporations as Legal Persons",
+    "statements": [
+      "A corporation is a legal entity of its own with the same rights and obligations as natural persons in business life.",
+      "As a legal person, a corporation can own land and property, hire people, and close contracts.",
+      "A corporation may sue other parties and may itself be sued in its own name.",
+      "Shareholders who found the corporation need not be involved in day-to-day management of the business.",
+      "Managers of a corporation need not own a share of the business."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.01",
+    "context": "Review how incorporated businesses obtain separate legal personality and the rights that follow from that status. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Secondary Market Price Rises and Corporate Finance",
+    "statements": [
+      "When share prices rise on the exchange after the IPO, the issuing corporation automatically receives fresh share capital equal to that gain.",
+      "A sustained increase in secondary-market prices injects permanent equity finance into the issuer beyond the original issue proceeds.",
+      "Higher post-issue market prices oblige the corporation to pay matching dividends to all past and future shareholders.",
+      "An increase in share prices after they have been issued does not have any additional financing effect for the issuing corporation.",
+      "The corporation shares equally in capital gains when existing shareholders sell stock to one another at higher prices."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.02",
+    "context": "Analyze how initial share issues differ from later trading on a regulated stock exchange when assessing corporate funding. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Shareholder Liability and Share Capital",
+    "statements": [
+      "Shareholders' liability is usually limited to the amount of money they invested when buying the shares.",
+      "Limited liability means shareholders can never lose any part of the money they paid for their shares.",
+      "The capital of a corporation is divided into shares, which is why it is called share capital.",
+      "Persons who buy shares become shareholders of the corporation.",
+      "Share capital is usually not redeemed by the company and serves as long-term or permanent capital."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.03",
+    "context": "Review the protection shareholders receive and how equity capital is structured within a corporation. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Manufacturing Corporation Ownership Structure",
+    "statements": [
+      "Because they provided share capital, the founders must personally manage every major business decision.",
+      "The appointed chief executive must own shares before the board of directors may elect that person.",
+      "The corporation is managed by a board of directors elected by shareholders to make major business decisions.",
+      "The highest-ranking manager of the board is called the Chief Executive Officer.",
+      "Other board members may include the Chief Financial Officer and Chief Operating Officer."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.04",
+    "context": "Consider a manufacturing corporation whose founders invested capital but appointed an external chief executive to run operations. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Corporate Formation and Finance Options",
+    "statements": [
+      "Corporations are more difficult to set up than sole proprietorships or partnerships.",
+      "Corporations usually have more options to raise financial funds than sole proprietors and partnerships.",
+      "Corporations rely exclusively on share capital and cannot raise loans or credit like other businesses.",
+      "Shareholders bear unlimited liability for all corporation debts beyond their original investment.",
+      "Financial funds for corporations mainly comprise share capital as well as loans and credit."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.05",
+    "context": "Analyze why corporations are more complex to establish yet attract broader sources of funding than unincorporated firms. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Share Issuance and Nominal Value",
+    "statements": [
+      "If share capital equals one million euros divided into one hundred thousand shares, each share represents one per cent of the capital.",
+      "If all one hundred thousand shares are sold at issue, the corporation gains one million euros as share capital.",
+      "Shares can only be purchased from other shareholders and never directly from the corporation at initial issue.",
+      "Each share sold at issue must always be priced above its nominal share of the registered capital.",
+      "Huge amounts of money can be raised from the sale of shares when investors buy newly issued stock."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.06",
+    "context": "Review how total share capital is split among individual shares when a corporation first sells stock to investors. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Stock Exchange Listing Requirements",
+    "statements": [
+      "Every corporation must list its stock on a stock exchange before it may hire employees or close contracts.",
+      "A stock exchange is an unregulated venue where only the issuing corporation may trade its own shares.",
+      "Listing on a stock exchange removes the need for corporations to comply with any authority-imposed rules.",
+      "Shares introduced on a stock exchange always trade at a fixed price set permanently by the issuer.",
+      "A stock exchange is a financial market, regulated by the authorities, where shares and other securities can be bought and sold."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.07",
+    "context": "Review the role of a stock exchange as a regulated financial market for corporate securities. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "IPO Versus Secondary Share Trading",
+    "statements": [
+      "Shares can be bought at the time they are initially issued by the corporation or later from another shareholder who sells.",
+      "The introduction of shares on a stock exchange at a set price is also called an initial public offering.",
+      "Every subsequent resale of shares on the exchange adds the full sale price to the corporation's share capital account.",
+      "After the IPO, prices on the exchange are determined by demand and supply among buyers and sellers.",
+      "Beneficiaries of a price rise after issue are the shareholders who hold or trade the stock, not the issuing corporation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.08",
+    "context": "Consider a listed corporation whose shares were first sold at an initial public offering and later changed hands among investors on the exchange. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Board of Directors and Executive Roles",
+    "statements": [
+      "Shareholders elect a board of directors to make all major business decisions and represent shareholders.",
+      "The Chief Executive Officer is the highest-ranking manager on the board of directors.",
+      "A Chief Information Officer may serve on the board alongside other executive officers.",
+      "A Chief Marketing Officer may be responsible for marketing functions as a board member.",
+      "Shareholders who only provide money for share capital are neither obliged nor entitled to manage the company."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.09",
+    "context": "Analyze how major corporate decisions are taken when shareholders supply capital but delegate management. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Demand for Shares and Economic Conditions",
+    "statements": [
+      "Rising expectations that a business will make future profits can increase demand for its shares.",
+      "Higher demand for shares when the economy is thriving partly reflects that many people have money to invest.",
+      "Comparatively higher rates of inflation can support share demand because share prices may also increase.",
+      "Comparatively low interest rates can raise share demand because other investments become less attractive.",
+      "Demand for shares is also influenced by economic indicators such as economic growth, interest rates, and inflation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.10",
+    "context": "Analyze how macroeconomic conditions and business expectations influence investor demand for corporate shares. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Reasons for Investing in Shares",
+    "statements": [
+      "Investors may buy shares to provide money for a business they believe in and want to support financially.",
+      "Investors may seek annual income through dividends paid from the corporation's profits.",
+      "Investors may hope for capital growth if share prices rise and the stock can later be sold at a higher price.",
+      "Investors may wish to attend the annual stockholders' meeting and influence decisions through voting rights.",
+      "Shares can be bought either at initial issue by the corporation or later from another shareholder who sells."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.11",
+    "context": "Review the main motives that lead households and businesses to purchase corporate stock. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Neighbourhood Bakery as Private Limited Company",
+    "statements": [
+      "As an incorporated business, the bakery is a legal entity that can own property and hire staff in its own name.",
+      "Because it is private, shareholders face unlimited liability for all bakery debts regardless of investment.",
+      "The family's shareholding can remain off a public stock exchange while still conferring limited liability.",
+      "Private limited companies must list on a stock exchange before they may issue any shares to investors.",
+      "Managers of the bakery are legally required to be the same persons who hold all outstanding shares."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.12",
+    "context": "Consider a neighbourhood bakery structured as a private limited company whose shares are held by a small group of family investors. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Dividend Policy and Share Attractiveness",
+    "statements": [
+      "Corporations must pay dividends every year because shareholders have a legally fixed income entitlement.",
+      "Dividends are part of the profits of the corporation that may be paid to shareholders at management discretion.",
+      "Withholding dividends always raises share prices because retained profits guarantee immediate capital gains.",
+      "If no dividends are paid over a longer period, shares might become unattractive and demand may fall.",
+      "Falling share prices after omitted dividends automatically increase the corporation's available share capital."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.13",
+    "context": "Analyze how discretionary dividend payments interact with investor expectations and secondary-market prices. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Preferred Shares and Voting Rights",
+    "statements": [
+      "Holders of preferred shares usually forgo voting rights at the stockholders' meeting in exchange for a higher dividend claim.",
+      "Preferred shareholders always receive both superior dividends and full voting control over every board appointment.",
+      "Common shareholders typically retain voting rights at the annual stockholders' meeting.",
+      "A corporation cannot issue bonds because bondholders would automatically become preferred shareholders.",
+      "Issuing bonds can be attractive because the interest rate on bonds is often lower than on a comparable bank loan."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.14",
+    "context": "Review how different classes of shares allocate dividend priority and control rights among investors. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Supply and Demand in Share Pricing",
+    "statements": [
+      "Share prices on an exchange are set solely by the corporation's board and never respond to buyer demand.",
+      "According to the laws of supply and demand, share prices usually rise when demand for the stock is high.",
+      "High demand for shares always forces the issuing corporation to create new shares equal to each purchase on the exchange.",
+      "When demand falls, the corporation must redeem outstanding shares at the latest market price.",
+      "Secondary trading prices feed directly into the issuer's balance sheet as additional paid-in share capital."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.15",
+    "context": "Analyze how trading on a regulated exchange translates changing investor sentiment into market prices. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Two Consultants Founding a Corporation",
+    "statements": [
+      "Incorporation means both consultants must remain the only managers regardless of who buys shares.",
+      "Outside investors who buy shares become shareholders without necessarily joining the board of directors.",
+      "The consultants may retain shares while delegating daily management to the elected chief executive.",
+      "The corporation can raise share capital from new shareholders in addition to any bank loans it arranges.",
+      "Selling shares to outside investors eliminates the need for the corporation to comply with contract law as a legal person."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.16",
+    "context": "Consider two consultants who incorporate their joint venture, sell shares to outside investors, and appoint a professional chief executive. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Long-Term Nature of Share Capital",
+    "statements": [
+      "Share capital must be repaid to shareholders on demand whenever market prices fall temporarily.",
+      "Issuing shares provides short-term credit that the corporation redeems within one accounting year.",
+      "Share capital and bank overdrafts serve identical roles because both must be repaid within weeks.",
+      "Share capital is usually not redeemed by the company and may serve as permanent capital.",
+      "Once listed, a corporation must buy back all shares whenever investors sell on the secondary market."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.17",
+    "context": "Review how equity raised through share issues differs in maturity from short-term borrowing. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Corporate Bonds Versus Bank Loans",
+    "statements": [
+      "Corporations may raise financial funds through loans and credit in addition to share capital.",
+      "Bonds are securities that can be traded on a stock exchange alongside shares.",
+      "Issuing bonds may finance large projects at an interest rate often lower than a comparable bank loan.",
+      "Bond interest is classified as share capital because bondholders become co-owners of the corporation.",
+      "A stock exchange is regulated by the authorities and facilitates trading in shares and other securities such as bonds."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.18",
+    "context": "Analyze debt funding choices available to corporations beyond equity raised through share issues. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Legal Personality and Contractual Capacity",
+    "statements": [
+      "Only natural persons may hire employees; a corporation must contract workers in each shareholder's personal name.",
+      "A corporation as legal person can close contracts, sue, and be sued independently of individual shareholders.",
+      "Shareholders personally sign every supplier contract even when a corporation has separate legal personality.",
+      "Separate legal personality prevents a corporation from owning land because property must rest with natural persons.",
+      "Incorporation removes the corporation's ability to be sued because liability stops with shareholders."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.19",
+    "context": "Review the business acts that a corporation may undertake independently of its shareholders. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Listed Retail Corporation and Investor Gains",
+    "statements": [
+      "The holiday price surge increased the corporation's registered share capital by the full market value of the rise.",
+      "Existing shareholders who sold during the surge transferred their voting rights to the corporation itself.",
+      "Higher prices after issue reflect changed demand and supply among investors trading existing shares.",
+      "The corporation must issue bonus shares equal to every euro of secondary-market price increase.",
+      "Shareholders who sold at higher prices realise capital gains; the issuer does not receive those trading proceeds."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.20",
+    "context": "Consider a retail corporation whose shares jumped in price after strong holiday sales reports, while the firm made no new share issue. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Share Capital Calculation and Ownership",
+    "statements": [
+      "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed fraction of that capital.",
+      "Doubling the market price on the exchange automatically doubles the corporation's registered share capital on the balance sheet.",
+      "Buying shares at initial issue transfers cash to the corporation in exchange for an ownership stake.",
+      "A shareholder may sell shares later to another investor without requiring the corporation to redeem the stock.",
+      "Each share always carries exactly one vote regardless of whether it is preferred or common stock."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.21",
+    "context": "Analyze the relationship between total share capital, the number of shares issued, and each investor's stake. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Misconceptions About Corporate Listing",
+    "statements": [
+      "Listing on a stock exchange is mandatory for every corporation before it may sell products to customers.",
+      "An unlisted corporation cannot issue shares to private investors or raise share capital off the exchange.",
+      "Initial listing means the corporation will receive every future euro paid whenever shares change hands on the market.",
+      "Delisting from an exchange automatically converts a corporation into an unincorporated partnership.",
+      "A corporation's stock can but does not have to be listed on a stock market or stock exchange."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.22",
+    "context": "Review optional stock-exchange listing and its implications for corporate finance and governance. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Share Demand Drivers and Market Expectations",
+    "statements": [
+      "Expectations of successful new products can raise demand for a corporation's shares.",
+      "Expectations of increasing market share can contribute to higher share demand.",
+      "Thriving economic conditions can support share demand because more investors have funds available.",
+      "High interest rates can reduce share demand by making interest-bearing investments more attractive.",
+      "An increase in share prices after issue benefits shareholders rather than supplying new finance to the issuer."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.23",
+    "context": "Analyze factors that shift investor demand for shares beyond current dividend payments. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Technology Corporation Board Responsibilities",
+    "statements": [
+      "The chief information officer may sit on the board of directors with defined operational responsibilities.",
+      "Shareholders who elected the board must personally perform the chief information officer's daily technical tasks.",
+      "Electing a board eliminates shareholders' right to attend the annual stockholders' meeting.",
+      "The board of directors makes major business decisions on behalf of shareholders who supplied capital.",
+      "A chief information officer must hold the largest block of shares before joining the management board."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.24",
+    "context": "Consider a technology corporation whose shareholders elect a board including a chief information officer responsible for systems and tools. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Post-Issue Price Changes and Issuer Finance",
+    "statements": [
+      "Rising secondary-market prices require the issuer to record additional share capital equal to traders' gains.",
+      "A corporation finances expansion automatically whenever its listed share price reaches a new high.",
+      "Shareholders who profit from price rises must return part of the gain to the corporation as mandatory equity injections.",
+      "IPO proceeds and later exchange gains are treated identically as recurring share-capital inflows to the issuer.",
+      "Price increases after shares have been issued do not provide further financing to the issuing corporation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.25",
+    "context": "Analyze the boundary between primary share issues and secondary-market trading for corporate funding. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Private Limited Company Characteristics",
+    "statements": [
+      "Private limited companies are unincorporated businesses because their shares are not publicly traded.",
+      "Shares in a private limited company may be sold freely to the general public on any stock exchange.",
+      "Private limited companies are incorporated businesses with limited liability for shareholders.",
+      "Private limited companies need not list shares on a stock exchange to exist as legal persons.",
+      "Shareholders in a private limited company are typically not liable beyond the capital they invested."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.26",
+    "context": "Review how private limited companies combine incorporation with restrictions on public share trading. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Minimum Capital Requirements for Incorporation",
+    "statements": [
+      "Sole proprietorships and partnerships must satisfy the same minimum capital requirements as large listed corporations.",
+      "Some incorporated forms face minimum capital requirements that must be met when the company is established.",
+      "Minimum capital rules aim to protect creditors by ensuring a base equity buffer in the corporation.",
+      "Meeting minimum capital requirements guarantees that shareholders will receive annual dividend payments.",
+      "Corporations remain more difficult to set up than unincorporated businesses partly because of formal capital and registration rules."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.27",
+    "context": "Analyze incorporation rules that require registered capital before certain corporate forms may begin trading. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Food Processing Corporation and Bond Finance",
+    "statements": [
+      "Corporations planning large projects may use only share capital and cannot issue bonds or borrow from banks.",
+      "Issuing bonds may offer a lower interest rate than a comparable bank loan for large-scale investment.",
+      "Bonds, like shares, may be securities traded on regulated financial markets subject to authority oversight.",
+      "Bond finance adds debt obligations, whereas share capital does not create a contractual repayment like a loan.",
+      "The corporation remains a legal person that can contract for the plant independently of bondholders' personal assets."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.28",
+    "context": "Consider a food processing corporation planning a new plant and weighing a bond issue against a long-term bank loan. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Annual Stockholders' Meeting and Control",
+    "statements": [
+      "Shareholders who do not sit on the board are barred from attending the annual stockholders' meeting.",
+      "Investors may buy shares partly to attend the annual stockholders' meeting and vote on major decisions.",
+      "Preferred shareholders usually trade stronger dividend claims for reduced or no voting rights at that meeting.",
+      "Voting at the stockholders' meeting legally obliges shareholders to perform the chief executive officer's daily duties.",
+      "Electing directors removes shareholders' ownership stake because management and ownership must be identical."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.29",
+    "context": "Review how common shareholders exercise influence despite not managing daily operations. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comprehensive Corporate Legal Status",
+    "statements": [
+      "Corporations are incorporated businesses that are legal entities separate from their owners.",
+      "Shareholders' liability is usually limited to the amount invested when purchasing shares.",
+      "Share capital divided into shares can raise large sums when investors buy newly issued stock.",
+      "Corporations may list shares on a regulated stock exchange but are not required to do so.",
+      "Management by a board of directors allows separation of ownership and control within the corporation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.30",
+    "context": "Analyze the integrated features that define corporations within the spectrum of business ownership forms. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Share Purchase Channels",
+    "statements": [
+      "Investors may only acquire shares by purchasing them from the corporation at the annual stockholders' meeting.",
+      "Once shares are issued, no further investor may buy stock unless the corporation executes a new IPO each year.",
+      "Investors may acquire shares directly from the corporation at issue or purchase them later from an existing shareholder.",
+      "Buying at initial issue provides share capital to the corporation; buying later transfers ownership between investors.",
+      "Persons who buy shares become shareholders regardless of whether purchase occurs at issue or on the secondary market."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.31",
+    "context": "Review the two main ways investors acquire corporate stock after incorporation. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Engineering Firm Share Price Rally",
+    "statements": [
+      "The contract win obliged the firm to register the rally amount as new share capital on its books.",
+      "Expectations of higher future profits from the contract can increase demand and push up share prices.",
+      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices.",
+      "The corporation receives the full trading profit whenever existing shareholders sell to new buyers on the exchange.",
+      "Rising prices after issue force the board to pay immediate dividends equal to the price increase."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.32",
+    "context": "Consider an engineering firm whose shares rallied after a contract win, though the firm issued no new equity during the rally. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Exchange Regulation and Securities Trading",
+    "statements": [
+      "A stock exchange is regulated by the authorities as a financial market for securities.",
+      "Corporations seeking a listing must comply with certain rules and fulfil listing requirements.",
+      "Shares introduced on an exchange at the IPO are thereafter priced largely by demand and supply.",
+      "Bonds as well as shares may be bought and sold on such regulated markets.",
+      "Listing facilitates trading among many people and businesses but does not oblige the issuer to receive later trade proceeds."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.33",
+    "context": "Analyze the institutional setting in which shares and bonds change hands after a corporation lists. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Limited Liability Scope",
+    "statements": [
+      "Limited liability means shareholders are personally liable for all corporation tax debts without limit.",
+      "Shareholders' liability is usually confined to the money they invested when buying shares.",
+      "Limited liability protects shareholders from ever losing the market value of their shares when prices fall.",
+      "Managers who are not shareholders always enjoy the same limited liability cap as investors who bought stock.",
+      "Limited liability distinguishes corporations from many unincorporated forms where owners face broader personal exposure."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.34",
+    "context": "Review what limited shareholder liability protects and what it does not guarantee. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Dividends Versus Mandatory Profit Distribution",
+    "statements": [
+      "Every corporation must distribute the entire annual profit as dividends to keep its legal personality.",
+      "Shareholders may sue to force dividend payments equal to the latest market price of their shares.",
+      "Omitting dividends always leaves share prices unchanged because investors care only about capital growth.",
+      "Dividends are interest payments on share capital that the corporation must pay regardless of profit.",
+      "Dividends are discretionary profit distributions; prolonged omission can reduce share attractiveness and demand."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.35",
+    "context": "Analyze the discretionary nature of dividend policy and its link to investor demand. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Family-Owned Private Limited Manufacturer",
+    "statements": [
+      "Private limited status removes limited liability because shares are not publicly traded on an exchange.",
+      "The manufacturer remains an incorporated legal person able to own equipment and hire workers.",
+      "Minimum capital requirements apply only to corporations that immediately list on a stock exchange.",
+      "Family shareholders must personally manage production because private companies forbid elected boards.",
+      "Shares need not be sold to the general public on an exchange for the firm to operate as a private limited company."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.36",
+    "context": "Consider a family-owned private limited manufacturer that meets minimum capital requirements but keeps all shares within the family. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Interest Rates and Share Investment Alternatives",
+    "statements": [
+      "Comparatively low interest rates can increase share demand by making other investments less attractive.",
+      "Comparatively high interest rates can pull investors toward interest-bearing alternatives and away from shares.",
+      "Economic growth indicators form part of the wider set of factors influencing share demand.",
+      "High interest rates always increase share prices because corporations earn more from bank deposits.",
+      "Demand shifts from such conditions affect market prices but do not by themselves add share capital to the issuer after issue."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.37",
+    "context": "Analyze how relative returns on interest-bearing assets shape demand for corporate equity. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Inflation Expectations and Equity Demand",
+    "statements": [
+      "Comparatively higher inflation may support share demand when investors expect share prices to rise with general prices.",
+      "Inflation is among the economic indicators that can influence demand for corporate shares.",
+      "Thriving economic conditions with available investable funds can coincide with stronger share demand.",
+      "Higher inflation obliges the issuing corporation to inflate its registered share capital whenever consumer prices rise.",
+      "Price changes driven by inflation expectations benefit trading shareholders rather than financing the issuer anew."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.38",
+    "context": "Review links between inflation, investor behaviour, and secondary-market share prices. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Chief Executive Officer and Board Structure",
+    "statements": [
+      "The management board's highest-ranking officer is the Chief Executive Officer who leads corporate execution.",
+      "The Chief Financial Officer must be the largest shareholder before overseeing finance and accounting functions.",
+      "The Chief Operating Officer may manage operations as a member of the board of directors.",
+      "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves.",
+      "Separation of ownership and management is a defining feature of corporate organisation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.39",
+    "context": "Analyze executive roles within the board that runs a corporation on shareholders' behalf. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Startup Corporation IPO Proceeds",
+    "statements": [
+      "Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue.",
+      "Doubling of the secondary-market price after the IPO doubled the cash share capital available inside the firm.",
+      "The startup must surrender half of trading gains on the exchange to regulators as additional equity.",
+      "Existing shareholders who hold stock after the IPO owe the corporation the difference between issue price and market price.",
+      "A higher post-IPO market price creates an automatic right for the corporation to issue unlimited new debt free of interest."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.40",
+    "context": "Consider a startup corporation that raised funds through an initial public offering and later saw its share price double on the exchange. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Corporate Property Ownership and Litigation",
+    "statements": [
+      "A corporation may own land and property in its own name rather than in shareholders' personal names.",
+      "Because shareholders have limited liability, the corporation itself cannot be sued for breach of contract.",
+      "Hiring employees requires each shareholder to sign every employment contract personally.",
+      "The corporation may sue and be sued as a legal entity independent of individual owners.",
+      "Legal personality allows the business to close contracts that bind the corporation, not shareholders personally."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.41",
+    "context": "Review legal capacities that flow from treating the corporation as a person under the law. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Nuanced IPO and Capital Accounting",
+    "statements": [
+      "The full amount investors pay on the exchange after the IPO is credited to the corporation's share capital account.",
+      "Secondary-market buyers pay share capital directly to the issuer unless the board approves a private sale.",
+      "Market premiums above issue price during secondary trading increase the corporation's permanent equity base.",
+      "Only proceeds from shares bought at initial issue from the corporation typically increase its share capital.",
+      "Redemption of share capital is required whenever secondary-market prices fall below the IPO price."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.42",
+    "context": "Analyze accounting for equity when shares move from primary issue to secondary trading. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Founding Shareholders and Management Roles",
+    "statements": [
+      "People who found the corporation and own shares need not manage the business themselves.",
+      "Managers running the corporation need not own shares of the business.",
+      "Shareholders may elect directors to represent their interests while remaining passive investors.",
+      "The board of directors, not every shareholder, makes major business decisions in typical corporations.",
+      "Founders who sell all their shares immediately lose the corporation's legal personality and incorporation status."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.43",
+    "context": "Review whether owners who establish a corporation must also run it. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Logistics Corporation Dividend Decision",
+    "statements": [
+      "The corporation was not legally obliged to pay dividends despite shareholders' wish for annual income.",
+      "Retaining all profits guarantees rising share prices even when no dividends are paid.",
+      "Shareholders' limited liability disappears in years when dividends are omitted.",
+      "Prolonged omission of dividends may make shares less attractive and weaken investor demand.",
+      "Dividends, when paid, represent part of the corporation's profits distributed to shareholders."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.44",
+    "context": "Consider a logistics corporation that retained all profits for expansion and skipped dividend payments for several years. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Basic Features of Share Capital",
+    "statements": [
+      "Share capital is the capital of a corporation divided into shares.",
+      "Each share, also called stock, represents a portion of the total share capital.",
+      "Selling newly issued shares to investors can raise substantial funds for the corporation.",
+      "Share capital is generally long-term capital that the company usually does not redeem.",
+      "Shareholders are persons who buy shares and thereby own a stake in the corporation."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.45",
+    "context": "Analyze how equity funding is organised when a corporation divides ownership into tradable units. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Integrated Share Market Mechanics",
+    "statements": [
+      "Initial share sales can raise large amounts of share capital for the corporation.",
+      "Later exchange trading transfers shares among investors without adding finance to the issuer.",
+      "Demand and supply on the exchange determine prices after the initial introduction of shares.",
+      "Investors may seek dividends, capital growth, or voting influence when buying stock.",
+      "Economic growth, inflation, and interest rates can all influence demand for shares."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.46",
+    "context": "Analyze primary issuance, exchange listing, and investor motives as one corporate finance system. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Corporate Debt and Equity Mix",
+    "statements": [
+      "Share capital is a principal financial fund available to corporations alongside borrowing.",
+      "Loans and credit also form part of the financial funds corporations may use.",
+      "Corporations typically have more funding options than sole proprietors or partnerships.",
+      "Bonds may be issued as an alternative to bank loans for raising debt finance.",
+      "Share capital differs from debt because it does not create the same contractual repayment obligation as a loan."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.47",
+    "context": "Review the main external funding sources highlighted for incorporated businesses. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Pharmaceutical Corporation Listing Choice",
+    "statements": [
+      "A corporation cannot raise share capital unless its stock is listed on a public stock exchange.",
+      "An unlisted corporation may still be a legal person owning laboratories and hiring researchers.",
+      "Private share placements can supply equity without an initial public offering on an exchange.",
+      "Shareholders in such a corporation retain limited liability tied to their investment.",
+      "Listing remains optional; exchange trading mainly facilitates secondary transfers among many market participants."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.48",
+    "context": "Consider a pharmaceutical corporation that remains unlisted while still issuing shares privately to institutional investors. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Voting Rights and Share Classes",
+    "statements": [
+      "At the annual stockholders' meeting, common stockholders ordinarily exercise voting rights on major resolutions.",
+      "Preferred shareholders always hold superior voting power over common shareholders at every meeting.",
+      "Preferred shares often trade voting rights for priority in dividend payments.",
+      "Investors may purchase shares partly to influence corporate decisions through those voting rights.",
+      "Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.49",
+    "context": "Analyze how common and preferred stock divide control and income rights among shareholders. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Construction Corporation Capital Structure",
+    "statements": [
+      "The corporation may finance operations through both share capital and loans.",
+      "Using bank loans prevents the corporation from also issuing shares to raise equity.",
+      "Loan capital and share capital are identical because both eliminate shareholder liability completely.",
+      "Shareholders' liability generally remains limited to their invested capital despite additional borrowing.",
+      "Bond issues are unavailable to corporations that already owe money to a commercial bank."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.50",
+    "context": "Consider a construction corporation combining share capital from investors with a long-term bank loan for equipment. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Alpine Sensors AG as a Separate Legal Person",
+    "statements": [
+      "Once incorporated, Alpine Sensors AG is a legal entity of its own with rights and obligations comparable to those of natural persons in business life.",
+      "As a legal person, Alpine Sensors AG can own laboratory equipment and land, hire technicians, and close supply contracts in the company’s name.",
+      "If a supplier sues over unpaid circuit boards, the lawsuit is brought against Alpine Sensors AG rather than automatically against each engineer’s private name.",
+      "The founding engineers must personally manage every production shift because shareholders of a corporation are always also its day-to-day managers.",
+      "A hired plant manager at Alpine Sensors AG may run operations without owning any shares in the company."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.51",
+    "context": "Three engineers incorporate Alpine Sensors AG in Austria so the firm itself can hold patents, hire staff, and face suppliers in its own name. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Secondary Trading After HarborBake’s Share Rally",
+    "statements": [
+      "When HarborBake’s share price rises from €12 to €19 in secondary trading, that price rise itself injects fresh share capital into the company’s bank account.",
+      "Investors who bought HarborBake shares from other shareholders on the exchange are the parties who gain or lose from the secondary price move.",
+      "HarborBake can still finance oven expansion with loans and credit even though share capital was raised earlier at issue.",
+      "An increase in HarborBake’s listed share price after issue has no additional financing effect for the issuing corporation.",
+      "Only secondary-market price rises, not the original sale of newly issued shares, can ever raise money for HarborBake."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.52",
+    "context": "HarborBake AG issued shares at €12. Months later the stock trades at €19 on the exchange while the bakery expands ovens from retained earnings and a bank loan. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Limited Liability at RiverGrid SE",
+    "statements": [
+      "Shareholders of RiverGrid SE are usually liable only up to the money they invested when buying their shares.",
+      "Creditors of RiverGrid SE claim first against the company’s assets rather than treating every shareholder’s private home as automatic collateral.",
+      "Because RiverGrid SE is a corporation, every shareholder faces unlimited liability for all of the firm’s debts.",
+      "Founding RiverGrid SE is typically more difficult than setting up a sole proprietorship, even though limited liability is a key advantage.",
+      "Managers who run RiverGrid SE must personally guarantee every corporate debt with their private assets simply because they hold executive titles."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.53",
+    "context": "RiverGrid SE raises share capital from many investors to build grid software. Creditors later claim unpaid server bills after a project fails. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Ownership Without Day-to-Day Control at NordLift AG",
+    "statements": [
+      "Shareholders of NordLift AG provide share capital but are neither obliged nor automatically entitled to manage the company day to day.",
+      "The board of directors of NordLift AG is elected by the shareholders to make major business decisions and represent the owners.",
+      "The highest-ranking manager on NordLift’s board is commonly called the Chief Executive Officer (CEO).",
+      "Because shareholders own NordLift AG, each shareholder must personally approve every purchase order before suppliers are paid.",
+      "A Chief Financial Officer on NordLift’s board may oversee finance without personally owning any NordLift shares."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.54",
+    "context": "NordLift AG builds warehouse elevators. Outside investors hold most shares while a professional board and CEO run strategy. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Why Mesa Parts Chooses Incorporation for Funding Reach",
+    "statements": [
+      "Corporations such as a future Mesa Parts AG are generally more difficult to set up than sole proprietorships or partnerships.",
+      "Corporations usually have more options to raise financial funds than sole proprietors and partnerships.",
+      "Once Mesa Parts is a corporation, its financial funds can mainly comprise share capital as well as loans and credit.",
+      "Incorporation would force Mesa Parts to finance the plating line exclusively with share capital and forbid any bank loan.",
+      "Shareholders of Mesa Parts AG would usually face liability limited to the capital they invested in shares, unlike unlimited liability in a general partnership."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.55",
+    "context": "Mesa Parts compares staying a partnership with incorporating so it can attract more share capital and debt for a new plating line. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Share Slices at VoltMeter AG",
+    "statements": [
+      "If VoltMeter’s €800,000 share capital is divided into 40,000 shares, each share represents €20 of that share capital at issue.",
+      "Persons who buy VoltMeter shares become shareholders of the corporation.",
+      "VoltMeter shares can be bought at initial issue by the corporation or later from another shareholder who sells.",
+      "If all 40,000 shares are sold at the €20 issue amount, VoltMeter gains €800,000 as share capital.",
+      "Share capital at VoltMeter must be redeemed by the company each year like a short-term bank overdraft."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.56",
+    "context": "VoltMeter AG sets share capital at €800,000 divided into 40,000 shares. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Listing Rules for Glacier Soft on the Exchange",
+    "statements": [
+      "A stock exchange is a financial market, regulated by the authorities, where shares and other securities such as bonds can be bought and sold.",
+      "Corporations that want Glacier Soft shares listed must comply with certain rules and fulfil listing requirements.",
+      "Every corporation automatically has its shares listed on a stock exchange whether or not it applies or meets listing rules.",
+      "Among well-known exchanges the book cites markets such as the New York Stock Exchange, Nasdaq, and major European venues including Deutsche Börse.",
+      "Once listed, Glacier Soft may also see bonds traded on exchanges as securities alongside shares."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.57",
+    "context": "Glacier Soft AG wants its shares listed so investors can trade them easily on a regulated stock exchange. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "IPO Cash Versus Later Trades at CanvasWorks",
+    "statements": [
+      "At the IPO, CanvasWorks introduces shares on the exchange at a certain issue price and raises share capital from buyers of the newly issued stock.",
+      "After the IPO, secondary prices are determined by demand and supply among investors.",
+      "When demand for CanvasWorks shares is high, prices usually go up according to the laws of supply and demand.",
+      "The rise from €25 to €33 after issue automatically remits €8 per share of extra financing to CanvasWorks’ treasury.",
+      "Share capital raised at issue is long-term or even permanent capital and is usually not redeemed like a loan."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.58",
+    "context": "CanvasWorks AG completes an IPO at €25 per share, then watches the price drift to €33 as investors trade among themselves. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Board Roles at AT&S-Style Management Structure",
+    "statements": [
+      "The board of directors is elected by shareholders to make major business decisions and to represent the shareholders.",
+      "Beside the CEO, board members may hold roles such as CFO, COO, CIO, or CMO with distinct task bundles.",
+      "In the book’s AT&S illustration, different board members are responsible for areas such as finance and accounting, production, and sales or marketing clusters.",
+      "Shareholders who only provide money for share capital are neither obliged nor entitled to manage the company in place of the board.",
+      "Because a COO exists, the corporation no longer needs shareholders to elect any board at all."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.59",
+    "context": "A listed electronics AG organises its board with a CEO, a finance lead, and a COO covering production, echoing the book’s AT&S example. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Macro Drivers of Demand for GreenRail Shares",
+    "statements": [
+      "Rising demand for GreenRail shares can reflect expectations that the business is doing well, will make profits soon, or will successfully introduce a new product.",
+      "Demand for shares is also influenced by economic indicators such as economic growth, interest rates, and inflation.",
+      "There is usually higher demand for shares when the economy is thriving because many people have money to invest.",
+      "Comparatively high interest rates typically make other investments more attractive and can reduce the relative appeal of shares.",
+      "Share demand is determined only by last quarter’s dividend and is completely unaffected by inflation or growth indicators."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.60",
+    "context": "Investors debate whether to buy GreenRail AG shares as growth, inflation, and interest-rate news hits the headlines. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Why Lea Buys Shares in MeadowCare AG",
+    "statements": [
+      "One reason to buy MeadowCare shares is the intent to provide money for a business Lea believes in and wants to support financially.",
+      "Lea may seek annual income through dividends, which are parts of the corporation’s profits paid to shareholders.",
+      "Lea may hope for capital growth if share prices rise and she can later sell above her purchase price.",
+      "Holding common stock can let Lea attend the annual stockholders’ meeting and vote on some business decisions.",
+      "A corporation is legally obliged to pay MeadowCare dividends every single year regardless of profits or board policy."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.61",
+    "context": "Lea considers buying MeadowCare AG shares for support, income, growth, voting, and inflation-resistant real values. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Corner Café GmbH Without a Public Float",
+    "statements": [
+      "As a private limited company, a GmbH is still a legal person and the owners’ liability is limited.",
+      "Shares in such private limited companies are usually not sold to the general public on the stock exchange but offered among the owners.",
+      "In Austria, the minimum capital for a GmbH is about €35,000, which is lower than the AG minimum but still a barrier versus a simple partnership.",
+      "Examples of private limited forms include the US LLC, the UK private company limited by shares, and the Austrian/German GmbH.",
+      "Choosing a GmbH means Maya and Tom automatically list the café’s shares on the Vienna Stock Exchange at founding."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.62",
+    "context": "Maya and Tom consider a GmbH for their neighbourhood café so liability is limited without listing shares on an exchange. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Dividend Drought and PineTech Share Appeal",
+    "statements": [
+      "Dividends are parts of the corporation’s profits that may be paid to shareholders.",
+      "There is no obligation for PineTech AG to pay dividends every year.",
+      "If no dividends are paid over a longer period, PineTech shares might become unattractive and falling demand might pressure the share price.",
+      "Investors may still hold PineTech for capital growth even when current dividends are zero.",
+      "Because PineTech made a profit, the law forces an immediate full payout of all profit as dividends to every shareholder."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.63",
+    "context": "PineTech AG reports profits but pays no dividend for several years while investors watch the share price. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Preferred Stock Without AGM Votes at QuartzPay",
+    "statements": [
+      "Common stock typically includes the right to vote at the stockholders’ meeting.",
+      "Shareholders of preferred shares of stock do not have that voting right but earn a higher dividend.",
+      "A wish to attend the annual stockholders’ meeting and influence decisions is one listed reason people invest in shares.",
+      "Preferred QuartzPay shareholders automatically receive more votes per share than common shareholders.",
+      "Dividend income and voting influence are distinct motives that need not travel together on every share class."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.64",
+    "context": "QuartzPay AG issues both common shares with voting rights and preferred shares that pay a higher dividend but skip the vote. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Supply, Demand, and BlueHarbor Quote Moves",
+    "statements": [
+      "After listing, BlueHarbor share prices are determined by demand and supply.",
+      "According to the laws of supply and demand, prices usually go up if demand for shares is high and vice versa.",
+      "Expectations that BlueHarbor will increase market share can raise demand for its shares.",
+      "A secondary price jump finances BlueHarbor with new equity cash equal to the entire price increase times shares outstanding.",
+      "Economic growth news can influence demand for BlueHarbor shares alongside firm-specific expectations."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.65",
+    "context": "BlueHarbor AG is already listed; order flow—not a new share issue—sets the daily price. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Two Designers Incorporating StudioPixel AG",
+    "statements": [
+      "Incorporating as StudioPixel AG creates a legal person separate from Ira and Sam as natural persons.",
+      "Ira and Sam can own shares without being obliged to manage every client meeting themselves.",
+      "Their liability as shareholders is usually limited to the capital they invest in shares.",
+      "Founding an Austrian AG requires meeting a minimum capital requirement of about €70,000.",
+      "Because they are only two people, StudioPixel cannot be a corporation and must remain a sole proprietorship."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.66",
+    "context": "Ira and Sam want equal ownership, limited liability, and the option to hire a managing director while they design. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Permanent Share Capital at Orbit Tools",
+    "statements": [
+      "Share capital is usually not redeemed by Orbit Tools the way a loan principal is repaid on a schedule.",
+      "Share capital is described as long-term capital or even permanent capital.",
+      "Huge amounts of money can be raised from the sale of shares when many investors subscribe.",
+      "Orbit Tools’ overdraft is a flexible short-term credit instrument, not the same thing as permanent share capital.",
+      "Share capital must be fully repaid to shareholders within twelve months of issue like a short-term credit."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.67",
+    "context": "Orbit Tools AG treats share capital as long-term equity while revolving an overdraft for materials. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Bond Issue Versus Bank Loan at SteelSpan AG",
+    "statements": [
+      "Big corporations can issue bonds, treated as a loan between investor-creditors and the corporation.",
+      "Bond investors provide money for a period based on agreed repayment timing and interest.",
+      "Issuing bonds can be more attractive than bank borrowing when the bond interest rate is lower than the bank loan rate.",
+      "Bondholders of SteelSpan become shareholders with voting rights at the AGM simply by lending via bonds.",
+      "Borrowing large sums at relatively low interest can help fund long-term assets such as plants and infrastructure."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.68",
+    "context": "SteelSpan AG needs long-term funds for a plant and compares issuing bonds with taking a large bank loan. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Contracts and Litigation in the Name of FoamLab AG",
+    "statements": [
+      "As a legal person, FoamLab AG can close contracts in its own name.",
+      "FoamLab AG can hire people as the employing legal person.",
+      "FoamLab AG may sue and be sued in litigation concerning its business.",
+      "Legal personality means FoamLab is completely identical with each shareholder’s private legal identity.",
+      "Owning laboratory property in the company’s name is consistent with corporate legal personality."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.69",
+    "context": "FoamLab AG signs leases, hires chemists, and litigates over a patent dispute entirely in the company’s name. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Listed Retailer: Investor Gains Without Issuer Cash",
+    "statements": [
+      "Investors may gain from capital growth when ShopNova’s share price rises and they sell above cost.",
+      "That secondary rally does not by itself provide additional financing to ShopNova.",
+      "ShopNova can still seek loans or credit as corporate funding tools alongside earlier share capital.",
+      "Dividends, if paid, are income to shareholders from (part of) profits, not a repayment of share capital like a loan redemption.",
+      "Every listed price increase must be matched by an equal cash deposit from the exchange into ShopNova’s account."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.70",
+    "context": "ShopNova AG is listed; retail investors cheer a price rally while the firm’s next cash raise would require a new issue or debt. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Percent Ownership from NanoFilter Share Counts",
+    "statements": [
+      "With €1,000,000 capital and 100,000 shares, each share represents €10 of share capital.",
+      "Each such share also represents 0.001 percent of the share capital in the book’s illustrative arithmetic.",
+      "Buying ten such shares at issue would represent 0.01 percent of NanoFilter’s share capital.",
+      "Share capital figures like AT&S’s large euro total in the book show that substantial sums can be raised via shares.",
+      "If NanoFilter later trades at €18, the company automatically rewrites share capital up to €1,800,000 without issuing new shares."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.71",
+    "context": "NanoFilter AG has €1,000,000 share capital in 100,000 shares; each share is €10 or 0.001% of capital at that split. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Myths About Mandatory Listing for Every AG",
+    "statements": [
+      "A corporation’s stock can but does not have to be listed on a stock market or stock exchange.",
+      "Listing requires compliance with rules and fulfilment of listing requirements.",
+      "Private limited forms such as a GmbH usually keep shares off the public exchange.",
+      "AT&S in the book is an AG whose shares were listed and later switched exchange venue, showing listing is a separate strategic choice.",
+      "Forming an AG automatically lists the shares on every major world exchange on day one without applications."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.72",
+    "context": "Students claim every Austrian AG must list immediately; the book distinguishes incorporation from listing. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Inflation, Rates, and Demand for CivicPrint Shares",
+    "statements": [
+      "Comparatively higher inflation can support share demand when investors expect share prices to rise with general prices.",
+      "Comparatively low interest rates can support share demand because high rates would make other investments more attractive.",
+      "An investment in shares can be seen as an investment in real values that may hold up better in high inflation than some pure cash holdings.",
+      "Inflation and interest rates are among economic indicators that can influence demand for shares.",
+      "Share demand ignores inflation completely and responds only to the font used in the annual report cover."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.73",
+    "context": "CivicPrint AG investors weigh inflation and interest-rate regimes when sizing equity positions. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Tech Board Task Split at CloudNest AG",
+    "statements": [
+      "Different board members can carry different task and responsibility bundles.",
+      "A finance-focused board member may oversee finance and accounting type responsibilities.",
+      "A COO-type role may cover production and related operating responsibilities.",
+      "Shareholders elect the board that represents them in major decisions.",
+      "Once CloudNest has a CIO title on a business card, shareholders lose all legal personality of the corporation itself."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.74",
+    "context": "CloudNest AG assigns sales and compliance to the CEO track, finance and HR to the finance lead, and production-quality themes to the COO, following the book’s multi-role board idea. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Post-Issue Quotes and HelioChip’s Funding Plan",
+    "statements": [
+      "An increase in HelioChip’s share price after issue does not have any additional financing effect for the issuing corporation.",
+      "The beneficiaries of that secondary increase are the shareholders trading the stock.",
+      "HelioChip may still issue bonds to raise long-term funds from investor-creditors.",
+      "Bank loans and credit remain part of the corporate funding menu alongside share capital.",
+      "Because the share price rose, HelioChip is legally barred from any further debt finance."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.75",
+    "context": "HelioChip AG’s post-IPO quote climbs, but the CFO still plans a bond and a bank line for a clean-room build. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Private Limited Path for Birch & Co Consulting",
+    "statements": [
+      "Private limited companies are corporations that are legal persons with limited owner liability.",
+      "Their shares are usually offered to other owners rather than sold to the general public on an exchange.",
+      "The Austrian GmbH is an example of such a private limited company.",
+      "Tina and Steve in the book note a GmbH might be interesting later even though €35,000 minimum capital steered them to a partnership at first.",
+      "A private limited company has unlimited liability identical to a sole proprietorship."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.76",
+    "context": "Birch & Co weighs a private limited company so clients contract with a legal person while shares stay tightly held. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Austrian Capital Hurdles: AG Versus GmbH",
+    "statements": [
+      "The minimum capital requirement for founding an Austrian AG is about €70,000.",
+      "The minimum capital for an Austrian GmbH is about €35,000.",
+      "Tina and Steve reject an AG mainly because of that €70,000 capital hurdle for their stage of business.",
+      "A European Company (SE) is another corporate form governed by Community law in EU member states.",
+      "Austrian AG and GmbH forms abolish limited liability and restore unlimited private liability for all owners."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.77",
+    "context": "Founders compare Austrian AG and GmbH minimum capital when choosing a corporate shell. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "FoodPack AG Mixing Bonds and Share Equity",
+    "statements": [
+      "FoodPack’s share capital is equity finance from owners, while its bonds are debt owed to creditor-investors.",
+      "Bond agreements specify when to repay and how much interest to pay.",
+      "Issuing bonds can allow large sums at interest rates that may undercut bank loan rates.",
+      "Bond finance can support long-term assets such as plants and infrastructure.",
+      "Buying FoodPack bonds converts creditors into common shareholders with AGM votes automatically."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.78",
+    "context": "FoodPack AG already has share capital and now issues bonds to fund a packaging line without diluting owners further. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "AGM Voice, Common Stock, and Control at VoteLine",
+    "statements": [
+      "Common stock includes the right to vote at the stockholders’ meeting.",
+      "One listed reason to invest in shares is the wish to go to the annual stockholders’ meeting and influence some business decisions.",
+      "Preferred shareholders do not have that voting right but earn a higher dividend.",
+      "The board of directors is elected by the shareholders to represent them in major decisions.",
+      "Preferred stock always carries double voting power compared with common stock at VoteLine’s AGM."
+    ],
+    "subsection": "4.3",
+    "case_id": "CASE 4.3.79",
+    "context": "VoteLine AG investors care about attending the annual stockholders’ meeting and influencing decisions through common-stock votes. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  }
+]

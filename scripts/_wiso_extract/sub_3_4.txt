@@ -1,0 +1,212 @@
+#### 3.4 Welche Fragen das Rechnungswesen beantwortet
+
+Das betriebliche Rechnungswesen umfasst mehrere Bereiche, die auf verschiedene zentrale 
+betriebswirtschaftliche Fragen Antworten liefern (vgl. Schneider & Schneider 2019). 
+Tab. 4: Bereiche des betrieblichen Rechnungswesens 
+Betriebswirtschaftliche Fragen Bereich des betrieblichen Rechnungswesens 
+Kommt das Unternehmen mit seinen 
+finanziellen Mitteln aus oder besteht ein 
+Finanzierungsbedarf? 
+
+Finanzrechnung (Finanzplanung, Budgetierung, Cashflow)
+
+Welches Vermögen hat ein Unternehmen und wie hat es dieses Vermögen finanziert? Hat das Unternehmen in einer bestimmten Zeitperiode einen Gewinn oder einen Verlust erzielt, d.h. ist es „reicher“ oder „ärmer“ geworden?
+
+Buchhaltung 
+(Erstellung der Bilanz und der Gewinn- und 
+Verlustrechnung) 
+
+Wie viel kostet das im Unternehmen erzeugte Produkt oder die erstellte Leistung? Wie viel trägt der Ertrag aus dem Verkauf eines Produkts zur Kostendeckung bei?
+
+Kostenrechnung
+
+#### Finanzrechnung
+
+Genauso wie private Haushalte muss auch ein Unternehmen jederzeit zahlungsfähig („liquide“) sein. Das heißt, dass es sämtliche fällige Rechnungen für Investitionen und laufende Aufwände bezahlen können muss. Ist die Zahlungsfähigkeit („Liquidität“) nicht mehr gegeben, ist das Unternehmen gefährdet, die Insolvenz droht. Zur Planung der Zahlungsfähigkeit werden Finanzpläne (Budgets) erstellt.
+
+Was ist ein Finanzplan eines Unternehmens? Vom Grundprinzip her ähneln Finanzpläne eines Unternehmens denen von privaten Haushalten. Auch Unternehmen stellen in einem Finanzplan die geplanten Einzahlungen (EZ) den geplanten Auszahlungen (AZ) für einen bestimmten Zeitraum (z.B. einen Monat) gegenüber, um zu ermitteln, ob es einen Einzahlungsüberschuss oder einen Fehlbetrag gibt, der einen Finanzbedarf bedeutet.
+
+Manchmal wird im Zusammenhang mit dem Finanzplan auch von Einnahmen und Ausgaben gesprochen. Die meisten Einnahmen stellen auch Einzahlungen dar, die meisten Ausgaben auch Auszahlungen. Differenzen ergeben sich hier entweder zeitlich, wenn eine Einnahme erst später zu einer Einzahlung führt, oder auch sachlich, wenn eine Ausgabe nicht mit einer Auszahlung einhergeht (z.B. die Abschreibung). Die Begriffe Einzahlung und Auszahlung sind daher im Zusammenhang mit der Finanzrechnung präziser.
+
+• Übersteigen die Einzahlungen (EZ) die Auszahlungen (AZ), ist die Zahlungsfähigkeit gegeben. Ist der Überschuss der EZ gegenüber den AZ sehr hoch, sollte überlegt werden, ob man einen Teil des Überschusses besser anlegen kann als auf einem Bankkonto. Dabei ist jedoch immer 
+
+zu beachten, dass in den folgenden Perioden (Wochen, Monaten) vielleicht die AZ höher sein werden und die Überschüsse bald wieder gebraucht werden. Finanzielle Reserven, auf die man rasch zugreifen kann, sind vor allem für unvorhergesehene Zahlungen, die in der Finanzplanung nicht berücksichtigt sind, wichtig.
+
+• Übersteigen die AZ die EZ, ist die Zahlungsfähigkeit gefährdet. Das Unternehmen muss sofort Gegenmaßnahmen ergreifen, um die Zahlungsfähigkeit sicherzustellen. Es kann z.B. versuchen, Ausgaben zu reduzieren, mit seinen Lieferant:innen ein längeres Zahlungsziel vereinbaren, selbst seinen Kund:innen nur kurze Zahlungsziele gewähren, Lagerstände reduzieren, einen kurzfristigen Kredit bei der Bank aufnehmen. Droht immer wieder Zahlungsunfähigkeit und kann diese nicht leicht behoben werden, müsste überlegt werden, ob durch die Aufnahme weiterer Gesellschafter:innen, die Kapitaleinlagen leisten, die Liquidität dauerhaft verbessert und abgesichert werden könnte. Die Finanzrechnung hat eine große betriebswirtschaftliche Bedeutung. Schon Unternehmensgründer:innen stehen im Hinblick auf die Finanzplanung vor einer schwierigen Situation: im Rahmen der Gründung sind bereits vergleichsweise hohe Auszahlungen zu tätigen, es gibt aber meist noch keine Einzahlungen und auch keine Erfahrungswerte, mit wie viel Einzahlungen kalkuliert werden kann. Genau aus diesem Grund müssen Unternehmensgründer:innen häufig bei Finanzierungsansuchen einen Finanzplan vorlegen. Dieser sollte vorsichtig und realistisch geplant sein, damit Kapitalgeber:innen überzeugt werden können. Im Hinblick auf die Zahlungsfähigkeit wird auch vom Cashflow gesprochen. 
+Was ist der Cashflow eines Unternehmens? 
+Ermittelt wird der Cashflow, indem Einzahlungen und Auszahlungen innerhalb 
+eines bestimmten Zeitraums einander gegenübergestellt werden. Übersteigen 
+die Einzahlungen die Auszahlungen in einem bestimmten Zeitraum, ist der 
+Cashflow positiv, d.h. es gibt einen Geld- bzw. Zahlungsmittelzufluss zum 
+Unternehmen. Damit ist ein positiver Cashflow ein Indikator für 
+Zahlungsfähigkeit. Das ist für Investitionen und für Kreditrückzahlungen von 
+großer Bedeutung. 
+
+#### Buchhaltung
+
+Jedes Unternehmen ist gesetzlich verpflichtet, seinen Gewinn oder Verlust für jedes Geschäftsjahr zu 
+ermitteln. Das ist nicht zuletzt für die Berechnung von Ertragssteuern, die – je nach Rechtsform – der 
+Unternehmer oder die Unternehmerin oder das Unternehmen zu bezahlen haben, von Bedeutung. Die 
+Buchhaltung wird daher auch externes Rechnungswesen genannt, weil sie eine Informations- und 
+Dokumentationsfunktion nach außen hat. 
+Ob in einem bestimmten Zeitraum ein Gewinn oder Verlust erzielt worden ist, ist nicht nur für die 
+Steuerbehörde, sondern auch für die Unternehmensleitung selbst von Bedeutung, weil das Ergebnis 
+zeigt, wie erfolgreich das Unternehmen war und wie gut gewirtschaftet wurde. 
+Darüber hinaus gibt es weitere Stakeholder, die Interesse an dieser Information haben. Dazu zählen 
+vor allem Kapitalgeber:innen, Gesellschafter:innen (z.B. Aktionäre), Geschäftspartner:innen (z.B. 
+Lieferant:innen), und Mitarbeiter:innen. Die Unternehmensleitung muss entscheiden, ob der Gewinn 
+entnommen (ausgeschüttet) werden kann oder im Unternehmen belassen werden soll, um z.B. in neue 
+Maschinen oder andere Anlagen zu investieren. 
+
+Abhängig von der Rechtsform des Unternehmens und seiner Größe erfolgen die Gewinnermittlung und der Jahresabschluss entweder in Form einer
+
+• Einnahmen-Ausgaben-Rechnung (EAR), in der die Einnahmen eines Geschäftsjahres den Ausgaben gegenübergestellt werden. Die Ausgaben entsprechen im Wesentlichen den Auszahlungen, beinhalten aber auch die Abschreibungen 
+• oder durch doppelte Buchhaltung, d.h. Erstellung einer Bilanz und einer Gewinn- und Verlustrechnung (G&V). Der Gewinn wird in der G&V ermittelt, er kann aber auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende eines Geschäftsjahres ermittelt werden (beides muss denselben Gewinn ergeben, daher doppelte Gewinnermittlung, „doppelte Buchhaltung“) Einzelunternehmen und Personengesellschaften, deren Umsatz unter 700.000 Euro pro Geschäftsjahr liegt, können eine EAR erstellen, die weniger aufwendig ist als die doppelte Buchhaltung. Überschreiten sie diese Umsatzgrenze oder liegt eine Kapitalgesellschaft vor, muss eine doppelte Buchhaltung geführt werden. Aktiengesellschaften und große GmbHs müssen ihren Jahresabschluss veröffentlichen, im Firmenbuch geführte Unternehmen müssen bestimmte Zahlen ihres Jahresabschlusses beim Firmenbuchgericht melden. 
+Die Bilanz 
+Die Bilanz stellt dar, über welches Vermögen (oder „Aktiva“, das sind z.B. Grundstücke, Gebäude, 
+Maschinen, Vorräte etc.) ein Unternehmen verfügt und wie dieses Vermögen finanziert worden ist (mit 
+eigenen Mitteln oder mit fremden Mitteln, d.h. mit welcher Art von Kapital, „Passiva“). Daher kann 
+man ersehen, wie „reich“ ein Unternehmen zu einem bestimmten Zeitpunkt ist, d.h. ob ein großer 
+Teil des Vermögens mit eigenen Mitteln finanziert worden ist oder nur ein kleiner. 
+Daher wird in der Bilanz das Vermögen eines Unternehmens dem Fremdkapital zu einem bestimmten 
+Zeitpunkt, üblicherweise dem Ende eines Geschäftsjahres, gegenübergestellt. Übersteigt das 
+Vermögen, also Grundstücke, Gebäude, Geschäftsausstattung, Vorräte, Bankguthaben etc., das 
+Fremdkapital, also die Schulden, ergibt das einen positiven Differenzbetrag. Dieser ist das Eigenkapital, 
+also jener Teil des Vermögens, der NICHT mit Schulden finanziert worden ist. Vergleicht man die 
+Bilanzen eines Unternehmens von zwei Zeitpunkten, bedeutet ein Steigen des Eigenkapitals einen 
+Gewinn und das Sinken einen Verlust. 
+So könnte etwa die Bilanz eines Unternehmens, das Fahrräder produziert, in vereinfachter Form 
+aussehen (alle Beträge in Euro): 
+Bilanz der FunBike GmbH per 31.12.20xx 
+Aktiva (Vermögen) Passiva (Kapital) 
+Anlagevermögen Eigenkapital 
+Grundstücke und Bauten 750 000 Bareinlagen der Gesellschafter 525 000 
+Technische Anlagen, Geschäftsausstauttung 2 330 000 Gewinn 3 614 250 
+Finanzanlagen 240 000 Fremdkapital 
+Umlaufvermögen Rückstellungen 2 000 000 
+Vorräte 5 400 000 Bankkredite 3 199 000 
+Forderungen aus Lieferungen und Leistungen 598 000 Verbindlichkeiten aus Lieferungen und Leistungen 300 000 
+Bankguthaben und Barbestand 320 250 
+Gesamtvermögen 9 638 250 Gesamtkapital 9 638 250 
+
+Gesamtvermögen bzw. Gesamtkapital werden auch als Bilanzsumme bezeichnet. Zu beachten ist 
+außerdem: 
+1) Vermögen = Kapital, Summe der Aktiva = Summe der Passiva, da jeder Teil des Vermögens 
+auch finanziert worden sein muss. 
+2) Jede Bilanz hat Soll- und Haben-Gleichheit: Die Aktiva stehen auf der Sollseite der Bilanz, die 
+Passiva auf der Habenseite. Die Differenz zwischen Vermögen und Fremdkapital ist das 
+Eigenkapital. 
+3) In der Buchhaltung stellt die Sollseite in der Regel dar, WOFÜR Mittel verwendet worden 
+sind. Daher steht das gesamte Vermögen auf der Sollseite der Bilanz. Die Habenseite gibt 
+wieder, WOHER die Mittel stammen. Daher findet man auf der Habenseite der Bilanz das 
+Kapital. Da sich die Bilanz aus der Berücksichtigung vieler einzelner Geschäftsfälle ergibt, gilt 
+die Logik von Soll (Mittelverwendung) und Haben (Mittelherkunft) auch bei der Verbuchung 
+von einzelnen Geschäftsfällen. 
+4) Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, wird Anlagevermögen 
+genannt. Dazu zählen zum Beispiel Gebäude und Maschinen. Umlaufvermögen stellt den Teil 
+des Vermögens dar, der für gewöhnlich kürzer als ein Jahr im Unternehmen bleibt, zum 
+Beispiel Vorräte. 
+Das oben dargestellte Unternehmen ist „umlaufintensiv“, d.h. es hat deutlich mehr 
+Umlaufvermögen als Anlagevermögen. Beim Umlaufvermögen dominieren die Vorräte, was 
+für einen Fahrradproduzenten plausibel erscheint, der viele Bestandteile zur Produktion 
+braucht und auch teilweise fertig produzierte Fahrräder auf Lager haben könnte. Trotzdem 
+könnte hier geprüft werden, ob die Lagerhaltung reduziert werden könnte oder ob das die 
+Produktion beeinträchtigen würde. 
+5) Die Finanzierung erfolgt sowohl durch Eigen- als auch durch Fremdkapital. Rund 57% des 
+Kapitals des Unternehmens ist Fremdkapital, davon ist der Großteil auf Bankkredite 
+zurückzuführen. Diese Kapitalstruktur ist nicht untypisch für ein österreichisches 
+Unternehmen, das mit einer Bilanzsumme knapp unter 10 Mio. Euro gerade noch zu den 
+Kleinunternehmen zählt. Es ist typisch für österreichische KMU, in hohem Ausmaß von 
+Fremdkapital abhängig zu sein. Der hohe Gewinn stärkt jedoch das Eigenkapital und die 
+Innenfinanzierungskraft des Unternehmens, wenn er im Unternehmen verbleibt. 
+6) Das langfristige Vermögen (etwas mehr als drei Millionen Euro) ist auch langfristig finanziert 
+(das Eigenkapital beträgt über vier Millionen Euro und auch ein Teil des Fremdkapitals wird 
+vermutlich langfristig sein), d.h. die „goldene Bilanzregel“, dass langfristig gebundenes 
+Vermögen auch langfristig finanziert sein sollte, ist erfüllt. 
+
+Die Gewinn- und Verlustrechnung (G&V) 
+In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Zu den 
+Aufwänden zählen zum Beispiel Löhne und Gehälter für Mitarbeiter:innen, Materialaufwand, Miete 
+für die Geschäftsräumlichkeiten, Versicherungsaufwand, Energieaufwand, aber auch Abschreibungen 
+auf die Sachanlagen (z.B. Maschinen) und die Bildung von Rückstellungen. 
+Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt. Die 
+betriebswirtschaftliche Bedeutung des Gewinns für ein Unternehmen wurde bereits im Rahmen der 
+Selbstfinanzierung erläutert. Der Gewinn erhöht das Eigenkapital und kann auch aus dem Vergleich 
+des aktuellen Eigenkapitals mit jenem zu Beginn des Geschäftsjahres ermittelt werden. Man spricht 
+daher auch von doppelter Gewinnermittlung (und in diesem Zusammenhang auch von „doppelter 
+Buchhaltung“). 
+Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx 
+Die Cashflowrechnung / Geldflussrechnung 
+Publizierte Jahresabschlüsse umfassen neben Bilanz und G&V auch eine Cashflowrechnung. Sie zeigt 
+die Geldzuflüsse und -abflüsse in und aus dem Unternehmen im Laufe der betrachteten Periode, in 
+der Regel für ein Geschäftsjahr. Sie wird daher auch als Geldflussrechnung bezeichnet. 
+Wie bereits erwähnt, ist der Cashflow eine wichtige Kennzahl für die Zahlungsfähigkeit, die Liquidität 
+eines Unternehmens. Sie ist nicht identisch mit dem Gewinn, denn man kann einen Gewinn erzielen, 
+ohne über liquide Mittel zu verfügen, und man kann liquide sein, ohne einen Gewinn zu erzielen. 
+Die Cashflowrechnung ist so aufgebaut, dass man über die Ursache der Zu- und Abflüsse mehr erfahren 
+kann. Sie zeigt Veränderungen in den Bereichen: 
+• Betriebstätigkeit („operations“ oder „operating acitivities“): dieser ist der wichtigste Bereich in der Cashflowrechnung, weil er den Kern des Geschäfts des Unternehmens betrifft. Er zeigt, ob der Kernbereich des Unternehmens gut läuft und hier Einzahlungsüberschüsse erwirtschaftet werden. Investor/inn/en schauen daher oft vor allem auf diesen Teil der Cashflowrechnung. 
+• Finanzierung („financial acitivities“): dieser Bereich zeigt, ob es zu Zuflüssen aus Finanzierungsaktivitäten gekommen ist, indem zum Beispiel neue Gesellschafter – und damit Eigenkapital – oder Kredite – und damit Fremdkapital – aufgenommen worden sind. Der 
+
+Umsatzerlöse 70 656 000 
+Materialaufwand - 53 175 000 
+Personalaufwand - 7 900 000 
+Abschreibungen - 1 800 000 
+sonstige betriebliche Aufwände - 2 875 000 
+Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000 
+Zinserträge 12 000 
+Zinsaufwand - 99 000 
+Finanzergebnis - 87 000 
+Ergebnis vor Steuern 4 819 000 
+Steuern - 1 204 750 
+Jahresergebnis / Gewinn 3 614 250 
+
+Abfluss in diesem Bereich steht zum Beispiel in Zusammenhang mit Zinszahlungen, Dividendenzahlungen oder Kreditrückzahlungen.
+
+• Investition („investing activities“): hier zeigt sich, ob Zahlungsmittel in die Anschaffung von langfristigen Investments geflossen sind, um etwa Anlagevermögen zu kaufen. Andererseits können hier auch Zahlungsmittel generiert werden, wenn Anlagevermögen verkauft worden ist, etwa ein Grundstück oder ein Gebäude. 
+
+#### Kostenrechnung
+
+Ein Unternehmen muss auch seine Kosten kennen, damit es errechnen kann, wie viel das produzierte Stück, zum Beispiel ein Fahrrad, und wie viel eine erstellte Leistung kostet. Auf Dauer kann kein Unternehmen existieren, wenn die Kosten durch die Erträge nicht gedeckt sind. Die Kosten entsprechen dabei in den meisten Fällen weitgehend den Aufwänden in der Buchhaltung. Auch zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind, sind möglich, z.B. der Unternehmerlohn für Einzelunternehmer oder OG-Gesellschafter sowie Komplementäre. Der Unternehmerlohn ist jener Verdienst, den sie sich für ihre Tätigkeit im Unternehmen erwarten. Er kann sich an den Opportunitätskosten orientieren, d.h. an jenem Einkommen, das die Unternehmer verdienen könnten, wenn sie einer anderen beruflichen Tätigkeit nachgingen. Die Kostenrechnung ist nicht gesetzlich verpflichtend für Unternehmen, sie wird auch als internes Rechnungswesen bezeichnet, weil sie nur intern verwendet wird. Betriebswirtschaftlich ist es vorteilhaft, als Steuerungs und Kontrollinstrument eine Kostenrechnung zu führen, was allerdings vor allem in kleinen Unternehmen häufig nicht erfolgt.
+
+Was sind überhaupt Kosten? Kosten sind der wertmäßige Verbrauch von Leistungsfaktoren (z.B. Maschinen, Arbeit, Einsatzstoffe) bei der Produktion oder Leistungserstellung eines Unternehmens. Sie entsprechen weitgehend den Aufwänden aus der Buchhaltung, es gibt aber einige Differenzen (z.B. der Unternehmerlohn).
+
+Wichtig ist die Unterscheidung von Kosten, die unabhängig von der produzierten/erstellen Menge 
+anfallen (fixe Kosten), und Kosten, die mit der Produktionsmenge steigen (variable Kosten). Um zu 
+entscheiden, welche Kosten fix und welche variabel sind, muss man daher wissen, welche Kosten in 
+welchem Ausmaß bei der Produktion anfallen und wie sie sich bei steigender Produktionsmenge 
+verändern. Entscheidet man über die Annahme oder Ablehnung eines Zusatzauftrags, wird man 
+betrachten, welche zusätzlichen Kosten durch diesen Auftrag anfallen. 
+Ein Beispiel zu 
+fixen und 
+variablen 
+Kosten 
+Fixe Kosten eines Unternehmens, das Fahrräder erzeugt, sind jene Kosten, die 
+unabhängig davon anfallen, wie viele Räder in einer bestimmten Periode 
+produziert werden. Dazu zählen die Gehälter für die Geschäftsführung, die 
+Miete für den Produktionsstandort (falls Miete zu bezahlen ist), Versicherungen 
+und (zumindest teilweise) auch Abschreibungen. Variable Kosten steigen (in der 
+Regel proportional) zur produzierten Menge. Bei Fahrrädern sind das im 
+Wesentlichen die Kosten für die Bestandteile, aus denen die Räder 
+zusammengebaut werden. 
+Die variablen Kosten sollten auf alle Fälle durch den erzielten Preis gedeckt werden. Übersteigt der 
+erzielte Preis die variablen Kosten, wird ein Beitrag zur Deckung der fixen Kosten geleistet, man spricht 
+
+daher auch von „Deckungsbeitrag“. Insgesamt sollte der Preis natürlich die gesamten Kosten, sowohl 
+variable als auch fixe Kosten decken. Kurzfristig kann auch ein geringerer Preis betriebswirtschaftlich 
+sinnvoll sein, wenn z.B. Räder aus der Vorsaison, die sich nicht mehr regulär verkaufen lassen, zu einem 
+günstigeren Preis noch verkauft werden sollen. Übersteigt der reduzierte Preis die variablen Kosten, 
+wird zumindest ein Deckungsbeitrag erzielt, d.h. ein Beitrag zur Deckung der fixen Kosten, die sowieso 
+anfallen. Das ist daher sinnvoller als ein Rad gar nicht zu verkaufen. 
+Ein Beispiel zum 
+Deckungsbeitrag 
+
+Angenommen, ein Unternehmen erzeugt ein Fahrrad, das es um 400 Euro verkaufen kann. Die variablen Kosten dafür betragen 180 Euro (ebenfalls eine Annahme). Der Deckungsbeitrag beträgt dann 220 für dieses Rad, das sind 55 % vom Verkaufspreis. Dieser Prozentsatz wird auch Deckungsquote genannt. Kennt ein Unternehmen seine gesamten Fixkosten (angenommen, diese betragen 4 Millionen Euro) und beträgt die Deckungsquote über alle Fahrradmodelle hinweg (ebenfalls angenommen) 55 %, dann kann berechnet werden, wie hoch der Umsatz sein muss, damit das Unternehmen in die Gewinnzone kommt (Break-even Umsatz oder Break-even Point): Ein Beispiel zum Break-Even Point
+
+55 % der Verkaufspreise können zur Deckung der Fixkosten verwendet werden. 
+Wenn nun die Fixkosten 4 Mio. betragen und diese mit 55 % gleichgesetzt 
+werden, dann betragen 100 %: 
+4 Mio. dividiert durch 55 und multipliziert mal 100 = 7.272.727,27. 
+Das bedeutet, das Unternehmen sollte zumindest knapp 7,3 Mio. Umsatz 
+machen, um zumindest alle Kosten zu decken. Bei höherem Umsatz kommt es in 
+die Gewinnzone und sichert damit seine Existenz.

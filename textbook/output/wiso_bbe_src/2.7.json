@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Perfect Competition Assumptions",
+    "statements": [
+      "Each firm in perfect competition is a price taker unable to move the market price by changing its own output alone.",
+      "Standardised grain grades on exchanges prove every retail clothing market is perfect competition worldwide.",
+      "Perfect competition requires one dominant seller setting price for the entire market.",
+      "Perfect competition assumes buyers and sellers operate with deliberately incomplete information about rival prices.",
+      "Heavy product differentiation and permanent legal entry barriers are defining features of perfect competition."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.01",
+    "context": "Analyze how the model of perfect competition defines market conditions and firm behaviour. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Local Water Utility",
+    "statements": [
+      "Single seller of piped water for the town resembles a local monopoly or monopoly-like structure.",
+      "Monopoly requires the firm to dominate worldwide production of every related product simultaneously.",
+      "Legal exclusivity for utilities eliminates market power because public ownership removes profit motives entirely.",
+      "Sunk pipe costs encourage many rival water networks because entry is costless once pipes exist.",
+      "Monopoly sellers must charge exactly marginal cost whenever a licence grants exclusive supply rights."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.02",
+    "context": "Consider a small town where only one licensed company supplies piped drinking water to every household. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Mobile Carrier Oligopoly",
+    "statements": [
+      "Firms in oligopoly may consider rivals' reactions when setting prices or service plans.",
+      "Voluntary identical pricing meetings among rivals are lawful cartels whenever participants sign public minutes.",
+      "Three national carriers serving most subscribers represent perfect competition because phones are physical goods.",
+      "Mutual dependence disappears in oligopoly once firms publish list prices on their websites.",
+      "Oligopoly means exactly two firms globally by mathematical definition with no other cases permitted."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.03",
+    "context": "Analyze how market structure is classified when a handful of firms dominate subscription services. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Cartel Enforcement Headline",
+    "statements": [
+      "Competition authorities investigate evidence of collusive meetings and parallel pricing patterns.",
+      "Oligopoly becomes a cartel when firms collude rather than compete independently.",
+      "Open price competition among many small bakeries is cartel behaviour by definition.",
+      "Cartels aim to increase rivalry by forcing each member to undercut the others daily.",
+      "Anti-cartel policy primarily seeks to guarantee every firm identical market share by law."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.04",
+    "context": "Analyze why competition authorities investigate secret agreements among rival producers. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Wheat Exchange Floor",
+    "statements": [
+      "Homogeneous grade standards help make agricultural commodities close to perfect competition examples.",
+      "Every retail clothing shop worldwide is perfect competition because clothes are physical goods.",
+      "Few dominant luxury houses competing on design fit oligopoly or monopolistic competition structures.",
+      "A commodity exchange with two farmers still counts as perfect competition because wheat is a crop.",
+      "Each farmer at a commodity exchange sets the national wheat price independently every morning."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.05",
+    "context": "Consider standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Regional Airport Parking",
+    "statements": [
+      "Exclusive concession creates monopoly-like power over airport parking at that site.",
+      "Monopoly-like local concessions can sustain prices above competitive levels without regulation.",
+      "Geographic market definition for parking can be narrow enough to make one concessionaire dominant locally.",
+      "Perfect competition requires many parking operators at the identical terminal location simultaneously.",
+      "Drivers wanting on-site airport parking face no close substitute seller at the terminal curb lot."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.06",
+    "context": "Analyze how exclusive concession contracts shape pricing power at transport hubs. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Breakfast Cereal Aisle",
+    "statements": [
+      "Mutual awareness of promotion responses is oligopoly interdependence.",
+      "Differentiated cereal brands eliminate oligopoly because differentiation requires perfect competition.",
+      "Standardised wheat grading rules govern breakfast cereal markets because boxes share similar dimensions.",
+      "Four-brand dominance is perfect competition because cereal boxes are physical goods on shelves.",
+      "Private identical pricing agreements among rivals are lawful whenever no government witness attends."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.07",
+    "context": "Analyze concentrated brand ownership and promotional rivalry on supermarket shelves. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Municipal Bus Franchise",
+    "statements": [
+      "Passengers on an exclusive route lack a close substitute operator on the identical line.",
+      "Monopoly-like structures can arise from law as well as from natural cost conditions.",
+      "Regulators may cap fares when monopoly or franchise power would otherwise overcharge riders.",
+      "Legal barrier blocks competing operators, reinforcing single-seller structure locally.",
+      "Exclusive franchise instantly creates perfect competition because passengers choose routes freely."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.08",
+    "context": "Consider a city that awards an exclusive bus franchise with no rival operators on the same routes. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Perfect Competition Assumption Audit",
+    "statements": [
+      "Heavy advertising creating strong brand loyalty strengthens perfect competition assumptions.",
+      "Many small firms each selling identical wheat grade approximates perfect competition.",
+      "Free entry and exit without barriers is a perfect competition condition.",
+      "Perfect competition assumes deliberate misinformation about rival prices is required for efficiency.",
+      "Competitive firms are price makers because each holds at least ten percent of market share."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.09",
+    "context": "Review the standard assumptions underlying the perfect competition model. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Steel Industry Concentration",
+    "statements": [
+      "Illegal cartel would involve secret coordination rather than open independent capacity rivalry.",
+      "Capacity announcements signal strategic interdependence typical of oligopoly.",
+      "Three-firm concentration is monopoly because monopoly always means more than ten firms.",
+      "Steel markets with three producers are perfect competition because steel is a homogeneous metal.",
+      "Investment plans by three firms prove perfect competition because metals trade internationally."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.10",
+    "context": "Analyze national output concentrated among a few large steel producers. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Village Pharmacy Distance",
+    "statements": [
+      "Relevant market boundaries for prescriptions may be local when travel to rivals is costly.",
+      "Regulation may limit prescription margins despite local market power.",
+      "Many competing pharmacies on the same village square would restore near-perfect competition locally.",
+      "Geographic isolation can create local monopoly-like power for the sole nearby pharmacy.",
+      "Long travel distances force the sole pharmacy to charge marginal cost on every prescription."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.11",
+    "context": "Consider a rural community where the nearest pharmacy lies twenty kilometres away. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Airline Route Duopoly",
+    "statements": [
+      "Two dominant carriers on one route resemble duopoly, a special case of oligopoly.",
+      "Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.",
+      "Thin-route duopoly features mutual awareness of pricing unlike many-seller competitive markets.",
+      "Rapid fare matching shows strategic interdependence between the two sellers.",
+      "Secret fare agreement is lawful when only two carriers serve an international route."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.12",
+    "context": "Analyze two carriers serving a thin international route and matching fare changes. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Online Marketplace Sellers",
+    "statements": [
+      "Homogeneous specs and numerous sellers limit any one shop's price influence.",
+      "Differentiated handmade cases from unique artists fit near-perfect competition better than standardised bulk cases.",
+      "Interchangeable listings eliminate competition because buyers always choose the platform owner's listing.",
+      "Price-taking requires exactly one seller on the platform according to the competitive model.",
+      "Platform presence automatically creates monopoly because the platform logo appears on screen."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.13",
+    "context": "Analyze thousands of small vendors offering standardised products on one platform. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Coffee Roaster Collusion",
+    "statements": [
+      "Secret wholesale price fixing among rivals is cartel behaviour and illegal.",
+      "Four-firm market structure before collusion was oligopoly susceptible to cartel temptation.",
+      "Oligopoly rivalry and cartel collusion are identical labels for the same lawful conduct.",
+      "Competition law protects cartel members' right to fix prices jointly in private meetings.",
+      "Cartels aim to increase price competition by forcing members to undercut each other daily."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.14",
+    "context": "Consider four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Market Structure Summary",
+    "statements": [
+      "Cartel denotes illegal collusion among oligopolists to coordinate prices or output.",
+      "Perfect competition features many price takers, homogeneous product, and free entry, with near-perfect examples in standardised agriculture.",
+      "Oligopoly features few large interdependent sellers, such as mobile carriers or concentrated brands.",
+      "Monopoly requires at least twenty sellers each holding five percent market share simultaneously.",
+      "Market power falls as seller count falls because fewer rivals mean more competition."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.15",
+    "context": "Review definitions of monopoly, oligopoly, cartel, and perfect competition. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Electricity Transmission Grid",
+    "statements": [
+      "Regulation often substitutes for competition where natural monopoly-like cost structure exists.",
+      "Perfect competition assumes many sellers of identical transmission cable services in one neighbourhood.",
+      "Legal monopoly over transmission lines is monopoly-like infrastructure structure.",
+      "Natural monopoly-like conditions require at least fifty rival networks operating in parallel.",
+      "Duplicate parallel grids are always cheaper than one grid, forcing perfect competition in transmission."
+    ],
+    "subsection": "2.7",
+    "case_id": "CASE 2.7.16",
+    "context": "Analyze legal exclusivity over regional electricity transmission infrastructure. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+#### 2.3 Entkopplung von Wirtschaftswachstum und Umweltschäden?
+
+Ein zentrales Ziel nachhaltiger Wirtschaftspolitik besteht darin, den Zusammenhang zwischen 
+wirtschaftlichem Erfolg und ökologischer Belastung zu lockern. In der Vergangenheit war 
+Wirtschaftswachstum, gemessen am Bruttoinlandsprodukt (BIP) oder Einkommen, eng mit einem 
+steigenden Verbrauch von Energie, Rohstoffen und Flächen sowie mit wachsenden Emissionen 
+verbunden. Diese Kopplung führte zu einem stetig zunehmenden ökologischen Fußabdruck, der 
+wesentlich zum Überschreiten mehrerer planetarer Grenzen beiträgt. 
+Warum Entkopplung notwendig ist 
+Da viele gesellschaftliche Ziele, etwa Beschäftigung, Einkommenssicherung und soziale Stabilität, 
+traditionell mit Wirtschaftswachstum verknüpft sind, steht die Politik vor einem Dilemma: Einerseits 
+ist Wachstum notwendig, um Armut zu verringern und öffentliche Güter zu finanzieren; andererseits 
+bedroht die mit Wachstum verbundene Ressourcen- und Energieintensität die ökologische Stabilität. 
+Eine Entkopplung (engl. decoupling) bezeichnet den Prozess, bei dem sich wirtschaftliche Entwicklung 
+und Umweltschäden voneinander lösen. Ziel ist es, Wohlstand, Beschäftigung und Lebensqualität zu 
+sichern, ohne dass Ressourcenverbrauch oder Emissionen weiter steigen. 
+Entkopplung ist daher wünschenswert, weil sie das gesellschaftliche Wohlergehen mit ökologischer 
+Tragfähigkeit verbindet, also ermöglicht, ökonomische Aktivität innerhalb der Erdsystemgrenzen 
+fortzuführen. 
+Formen der Entkopplung 
+Man unterscheidet zwei grundlegende Formen der Entkopplung: 
+1. Relative Entkopplung liegt vor, wenn die Umweltschäden langsamer zunehmen als die 
+Wirtschaftsleistung. Das bedeutet: Emissionen oder Ressourcenverbrauch steigen noch, aber 
+weniger stark als das BIP. Beispiel: Ein Land steigert sein BIP um 3 %, während die CO₂- 
+Emissionen nur um 1 % steigen. Die Umweltbelastung wächst weiter, jedoch in geringerem 
+Tempo. 
+2. Absolute Entkopplung bedeutet, dass die Umweltbelastung insgesamt sinkt, während die 
+Wirtschaftsleistung weiter zunimmt. Beispiel: Das BIP steigt um 3 %, die CO₂-Emissionen sinken 
+um 4 %. 
+
+Nur absolute Entkopplung gewährleistet, dass wirtschaftliche Entwicklung nicht länger auf Kosten 
+ökologischer Stabilität erfolgt. 
+Die absolute Entkopplung der Wirtschaftsleistung vom Umweltverbrauch gilt in der ökologischen 
+Ökonomik als eine der zentralen Strategien für nachhaltige Entwicklung. Sie ermöglicht es, 
+ökonomischen Erfolg und Lebensqualität zu verbessern, ohne die planetaren Grenzen zu 
+überschreiten. 
+Empirische Evidenz 
+Bisher wurde in vielen Ländern eine relative Entkopplung erreicht, während eine absolute Entkopplung 
+nur in wenigen Bereichen und Staaten nachweisbar ist. Empirische Studien zeigen: 
+Absolute Entkopplung gelang für einige lokale Schadstoffe, z. B. Schwefeldioxid (SO₂) oder FCKW, dank 
+technischer Ersatzstoffe und internationaler Umweltabkommen. 
+Bei CO₂-Emissionen ist eine absolute Entkopplung deutlich schwieriger zu erreichen. Zwar führen die 
+Elektrifizierung von Mobilität, Logistik und Wärmeerzeugung zu Effizienzsteigerungen und damit zu 
+sinkendem Energiebedarf, doch bleibt der Treibhausgasausstoß in der industriellen Produktion 
+weiterhin eng mit dem Energieverbrauch verknüpft, also mit dem Kern industrieller Wertschöpfung. 
+Während für SO₂ oder FCKW „End-of-Pipe“-Technologien (z. B. Filter, Substitution durch weniger 
+schädliche Stoffe) entwickelt wurden, existiert für CO₂ bislang keine großskalierbare Technologie, die 
+Emissionen vollständig neutralisiert. Verfahren wie Carbon Capture and Storage (CCS) sind technisch 
+möglich, aber teuer, energieintensiv und bislang nur begrenzt einsetzbar. In Österreich wird CCS nur 
+für „hard-to-abate“ Branchen erlaubt. Das sind Branchen für welche derzeit erwartet wird dass bis 
+2040 noch keine wirtschaftlich konkurrenzfähigen kohlenstofffreien Alternativen existieren werden 
+(z.B. Teile der Abfall- und Zementindustrie sowie Luftfahrt). 
+Strukturelle Herausforderungen 
+Selbst in Ländern mit sinkenden Emissionen ist ein Teil der Reduktion auf die Verlagerung von 
+Produktion und Emissionen in andere Weltregionen zurückzuführen (Carbon Leakage). Zudem können 
+Rebound-Effekte Effizienzgewinne wieder aufheben: Effizientere Technologien senken Kosten, was 
+häufig zu einer höheren Gesamtnachfrage nach Energie und Gütern führt. 
+Damit wird deutlich, dass absolute Entkopplung nicht allein eine technologische, sondern vor allem 
+eine strukturelle und institutionelle Herausforderung ist. Sie erfordert: 
+• politische Maßnahmen (z. B. CO₂-Bepreisung, Förderinstrumente für erneuerbare Energien), 
+• Systemtransformationen in Energie-, Mobilitäts- und Ernährungssystemen, 
+• und Verhaltensänderungen auf Konsumenten- und Unternehmensebene. Entkopplung als Voraussetzung für Wohlstand innerhalb der Grenzen Entkopplung ist damit keine technische Nebensache, sondern eine Voraussetzung für langfristigen Wohlstand innerhalb ökologischer Grenzen. Empirische Daten zeigen, dass einige wohlhabende Staaten – etwa die skandinavischen Länder oder das Vereinigte Königreich – eine partielle absolute Entkopplung von BIP und CO₂-Emissionen erreicht haben. Doch selbst dort reichen die Reduktionsraten bislang nicht aus, um bis 2040 (Industrieländer) bzw. 2050 (global) Netto-Null-Emissionen zu erreichen. 
+
+Wie die folgende Abbildung 14 zeigt, ist die empirische Evidenz gemischt: Einige Länder haben bereits absolute Entkopplung erzielt, die meisten lediglich relative, und manche verstärken weiterhin die Kopplung zwischen BIP und Emissionen.
+
+Die folgende Abbildung 15 verdeutlicht die längerfristigen globalen Trends:
+
+• Zwischen 1990 und 2024 haben rund 30 Länder, vor allem in der EU und in Nordamerika, ihre CO₂-Emissionen absolut reduziert, während ihr BIP weiterwuchs. 
+• In denselben Zeitraum fiel der CO₂-Ausstoß pro BIP-Einheit (Emissionsintensität) global um rund 40 %. 
+• Dennoch stiegen die globalen Gesamtemissionen weiter an, da das Wirtschaftswachstum die Effizienzgewinne überkompensierte. Die Abbildung zeigt zudem, dass die Reduktionsgeschwindigkeit selbst in erfolgreichen Ländern nicht ausreicht, um die Klimaneutralität bis 2050 zu erreichen. Nach Schätzungen des Global Carbon Budget 
+
+Abbildung 14: Relative oder absolute Entkoppelung in verschiedenen Weltregionen (Zioga et al 2024)
+
+(2024) müsste die globale CO₂-Intensität jährlich um 8 – 9 % sinken; tatsächlich beträgt die Rate derzeit weniger als 2 %.
+
+Relative Entkopplung: Umweltbelastung steigt langsamer als Wirtschaftsleistung, z.B. BIP + 3 %, Emissionen + 1 %. Absolute Entkopplung: Umweltbelastung sinkt trotz wachsender Wirtschaftsleistung, BIP + 3 %, Emissionen – 4 %. Rebound-Effekt: Effizienzgewinne führen zu höherem Gesamtverbrauch. Begründung: energieeffiziente Geräte führen zu mehr Nutzung. Carbon Leakage: Emissionen verlagern sich ins Ausland. Produktion wandert in Länder mit laxeren Standards. Entkopplung ist keine rein technische Frage, sondern eine grundlegende Voraussetzung für die Vereinbarkeit von Wohlstand und ökologischer Stabilität. Sie entscheidet darüber, ob moderne Gesellschaften innerhalb der planetaren Grenzen wirtschaften können, ohne die ökologische Tragfähigkeit und das gesellschaftliche Wohlbefinden zu gefährden. Die bisherigen Fortschritte zeigen: Technologische Innovationen allein reichen nicht aus. Entscheidend sind geeignete politische Rahmenbedingungen, nachhaltige wirtschaftliche Strukturen und gesellschaftliche Werte, die ökologische Verantwortung fördern. Nur wenn absolute Entkopplung im großen Maßstab gelingt, kann Wirtschaftswachstum mit Klimaneutralität und langfristigem Wohlstand vereinbar werden.
+
+Abbildung 15: Geschätztes Jahr des Erreichens von Net-Zero in verschiedenen Weltregionen (Zioga et al 2024)

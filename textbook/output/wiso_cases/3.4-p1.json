@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.01",
+    "title": "Bereiche des Rechnungswesens",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, welche Fragen das betriebliche Rechnungswesen beantwortet:",
+    "statements": [
+      "Die Finanzrechnung (Finanzplanung, Budgetierung, Cashflow) beantwortet, ob das Unternehmen mit seinen finanziellen Mitteln auskommt oder ein Finanzierungsbedarf besteht.",
+      "Die Buchhaltung mit Bilanz sowie Gewinn- und Verlustrechnung beantwortet, über welches Vermögen ein Unternehmen verfügt, wie dieses Vermögen finanziert wurde und ob in einer Periode ein Gewinn oder ein Verlust entstanden ist.",
+      "Ob das Unternehmen mit seinen finanziellen Mitteln auskommt, beantwortet in erster Linie die Kostenrechnung.",
+      "Die Kostenrechnung fragt, wie viel das erzeugte Produkt oder die erstellte Leistung kostet und wie viel der Verkaufsertrag zur Kostendeckung beiträgt.",
+      "Finanzrechnung, Buchhaltung und Kostenrechnung beantworten alle dieselbe einzige Frage, nämlich nur die nach dem Jahresgewinn."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Fragen, drei Bereiche. Kommt das Unternehmen mit seinen finanziellen Mitteln aus oder besteht Finanzierungsbedarf? Genau darauf antwortet die Finanzrechnung, also Finanzplanung, Budgetierung und Cashflow. Die Buchhaltung nimmt Vermögen, Finanzierung und Periodenerfolg, die Kostenrechnung Stückkosten und Kostendeckung. Wer Liquidität und Finanzbedarf der Kostenrechnung zuordnet, vertauscht die Tabelle. Der Satz trifft die Zuordnung des Buchs.\n\nDie Aussage ist wahr.",
+      "Vermögen und Finanzierung stehen nebeneinander, der Periodenerfolg dazu. Welches Vermögen hat das Unternehmen, wie wurde es finanziert, und ist es in einer bestimmten Zeit reicher oder ärmer geworden, also Gewinn oder Verlust? Das ist die Buchhaltung: Erstellung der Bilanz und der Gewinn- und Verlustrechnung. Die Finanzrechnung prüft Zahlungsmittel, nicht die Vermögensstruktur. Die Kostenrechnung fragt nach Produktkosten. Der Satz bleibt bei der Buchhaltungsfrage.\n\nDie Aussage ist wahr.",
+      "Liquidität ist nicht die Kostenfrage. Ob das Unternehmen mit seinen finanziellen Mitteln auskommt oder Finanzierungsbedarf hat, steht in der Tabelle bei der Finanzrechnung. Die Kostenrechnung fragt, wie teuer Produkt oder Leistung sind und was der Verkauf zur Kostendeckung beiträgt. Wer die Mittelauskommen-Frage der Kostenrechnung zuordnet, vertauscht die Bereiche. Ein Betrieb kann kostendeckend kalkulieren und trotzdem zahlungsunfähig sein, wenn Einzahlungen und Auszahlungen zeitlich auseinanderfallen. Die Tabelle trennt diese Fragen bewusst. Die Zuordnung bleibt tabellarisch getrennt, sie ist nicht frei austauschbar.\n\nDie Aussage ist falsch.",
+      "Stück und Beitrag, nicht Kontostand. Wie viel kostet das erzeugte Produkt oder die erstellte Leistung, und wie viel trägt der Ertrag aus dem Verkauf zur Kostendeckung bei? Das ist die Kostenrechnung. Die Finanzrechnung prüft Ein- und Auszahlungen, die Buchhaltung Vermögen und Periodenerfolg. Der Satz gibt die dritte Tabellenzeile wieder, ohne die anderen Bereiche zu streichen.\n\nDie Aussage ist wahr.",
+      "Eine Gewinnzahl ersetzt nicht drei Instrumente. Die Tabelle ordnet der Finanzrechnung die Mittel- und Finanzierungsfrage zu, der Buchhaltung Vermögen, Finanzierung und Periodenerfolg, der Kostenrechnung Produktkosten und Kostendeckung. Wer behauptet, alle drei Bereiche beantworteten nur den Jahresgewinn, macht aus drei Fragen eine und streicht Liquidität und Kalkulation. Der Gewinn erscheint in der Buchhaltung, ersetzt aber weder Finanzplan noch Kostenrechnung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.02",
+    "title": "Zahlungsfähigkeit und Insolvenz",
+    "context": "Bewerten Sie die folgenden Aussagen zur Zahlungsfähigkeit von Unternehmen:",
+    "statements": [
+      "Ein Unternehmen muss jederzeit zahlungsfähig, also liquide, sein.",
+      "Zahlungsfähigkeit bedeutet, dass sämtliche fällige Rechnungen für Investitionen und laufende Aufwände bezahlt werden können.",
+      "Ist die Liquidität nicht mehr gegeben, ist das Unternehmen gefährdet und die Insolvenz droht.",
+      "Im Gegensatz zu privaten Haushalten brauchen Unternehmen keine laufende Zahlungsfähigkeit, weil sie jederzeit auf künftige Gewinne warten können.",
+      "Zur Planung der Zahlungsfähigkeit werden Finanzpläne, also Budgets, erstellt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Haushalt und Betrieb teilen denselben Zwang. Genauso wie private Haushalte muss ein Unternehmen jederzeit zahlungsfähig sein, im Text: liquide. Es geht nicht um einen einmaligen Nachweis am Bilanzstichtag, sondern um die Fähigkeit, fällige Verpflichtungen zu bedienen, wann immer sie anfallen. Ohne diese laufende Fähigkeit steht der Fortbestand in Frage. Der Satz hält genau diese Anforderung fest. Wer Liquidität nur am Bilanzstichtag prüft, verfehlt den laufenden Charakter dieser Pflicht.\n\nDie Aussage ist wahr.",
+      "Fällig heißt zahlbar, nicht irgendwann geplant. Zahlungsfähigkeit meint, dass sämtliche fällige Rechnungen für Investitionen und laufende Aufwände bezahlt werden können. Eine Maschine auf dem Papier oder ein erwarteter Jahresgewinn ersetzen die Überweisung nicht. Der Satz verbindet Liquidität mit konkreten, jetzt fälligen Zahlungen, also mit dem, was die Finanzrechnung steuert. Eine Rechnung, die erst in Monaten fällig wird, bedroht die heutige Liquidität noch nicht; eine heute fällige schon.\n\nDie Aussage ist wahr.",
+      "Ohne Liquidität kippt der Betrieb. Ist die Zahlungsfähigkeit nicht mehr gegeben, ist das Unternehmen gefährdet, die Insolvenz droht. Der Text koppelt das Fehlen der Liquidität nicht an ein bloßes Imageproblem, sondern an die Existenz. Gegenmaßnahmen und Finanzpläne haben genau diesen Ernstfall im Blick. Der Satz gibt die Warnung des Abschnitts wieder.\n\nDie Aussage ist wahr.",
+      "Gewinnerwartung ist kein Zahlungsmittel. Der Abschnitt stellt Unternehmen und private Haushalte ausdrücklich nebeneinander: beide müssen jederzeit liquide sein. Die Behauptung, Betriebe könnten auf künftige Gewinne warten und bräuchten deshalb keine laufende Zahlungsfähigkeit, streicht genau diese Parallele. Gewinn entsteht in der Buchhaltung über Erträge und Aufwände, Liquidität über Ein- und Auszahlungen. Wer nur auf den späteren Gewinn schielt, kann fällige Rechnungen trotzdem nicht begleichen. Dann droht die Insolvenz, auch wenn die G&V später schwarz schreiben würde.\n\nDie Aussage ist falsch.",
+      "Planen statt hoffen. Zur Planung der Zahlungsfähigkeit werden Finanzpläne erstellt, der Text nennt sie auch Budgets. Ohne Gegenüberstellung geplanter Einzahlungen und Auszahlungen bleibt die Liquidität Zufall. Der Satz trifft das Instrument, mit dem der Abschnitt die Zahlungsfähigkeit vorbereitet.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.03",
+    "title": "Aufbau eines Finanzplans",
+    "context": "Bewerten Sie die folgenden Aussagen zum Finanzplan eines Unternehmens:",
+    "statements": [
+      "Vom Grundprinzip her ähneln Finanzpläne eines Unternehmens denen von privaten Haushalten.",
+      "Im Finanzplan werden geplante Einzahlungen den geplanten Auszahlungen für einen bestimmten Zeitraum gegenübergestellt.",
+      "Der Finanzplan stellt den Periodengewinn den Abschreibungen gegenüber, nicht Einzahlungen und Auszahlungen.",
+      "Ergibt sich ein Fehlbetrag, bedeutet das einen Finanzbedarf.",
+      "Als Zeitraum für diese Gegenüberstellung kommt zum Beispiel ein Monat in Betracht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Dasselbe Prinzip, anderer Maßstab. Finanzpläne von Unternehmen ähneln vom Grundprinzip her denen privater Haushalte: geplante Zuflüsse und geplante Abflüsse werden für einen Zeitraum verglichen. Die Größen heißen Einzahlungen und Auszahlungen, das Muster bleibt haushaltsnah. Wer den Unternehmensfinanzplan als völlig andere Logik darstellt, widerspricht diesem Ausgangspunkt. Größe und Rechtsform ändern das Prinzip nicht, sie ändern nur die Beträge und die Zahl der Positionen.\n\nDie Aussage ist wahr.",
+      "EZ gegen AZ, nicht Gewinn gegen Verlust. Geplante Einzahlungen werden geplanten Auszahlungen für einen bestimmten Zeitraum gegenübergestellt, um zu sehen, ob ein Einzahlungsüberschuss oder ein Fehlbetrag entsteht. Die Differenz ist eine Zahlungsgröße. Die Buchhaltung ermittelt den Gewinn anders. Der Satz beschreibt genau diese Gegenüberstellung. Ein Einzahlungsüberschuss und ein Fehlbetrag sind die beiden möglichen Vorzeichen dieser Differenz.\n\nDie Aussage ist wahr.",
+      "Gewinn und Abschreibung gehören nicht in diese Gegenüberstellung. Der Finanzplan stellt geplante Einzahlungen den geplanten Auszahlungen gegenüber. Der Periodengewinn entsteht in der Buchhaltung, Abschreibungen sind gerade ein Beispiel für eine Ausgabe ohne Auszahlung. Wer Gewinn und Abschreibung in den Finanzplan setzt, vermengt Finanzrechnung und Erfolgsrechnung. Dann würde ein hoher Gewinn Liquidität vortäuschen, obwohl das Geld noch nicht da ist, oder eine Abschreibung eine Auszahlung vortäuschen, die nie vom Konto geht. Ein geplanter Gewinn in der G&V sagt ohne EZ und AZ nichts über die Kasse der nächsten Wochen.\n\nDie Aussage ist falsch.",
+      "Fehlbetrag heißt Bedarf. Übersteigen die geplanten Auszahlungen die geplanten Einzahlungen, bleibt ein Fehlbetrag, und der bedeutet Finanzbedarf. Das Unternehmen muss dann Mittel beschaffen oder Auszahlungen verschieben. Der Satz koppelt das Vorzeichen der Differenz an die Finanzierungsfrage, die die Finanzrechnung beantworten soll.\n\nDie Aussage ist wahr.",
+      "Monat als Beispiel, nicht als einziges Raster. Der Zeitraum kann zum Beispiel ein Monat sein. Wochenscheiben oder längere Horizonte schließt der Text nicht aus, aber das Monatsbeispiel zeigt, dass der Plan periodisch und konkret sein soll, nicht nur eine Jahresfiktion. Der Satz übernimmt das Beispiel korrekt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.04",
+    "title": "Einzahlung und Auszahlung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Einzahlungen, Auszahlungen, Einnahmen und Ausgaben:",
+    "statements": [
+      "Die meisten Einnahmen stellen auch Einzahlungen dar, die meisten Ausgaben auch Auszahlungen.",
+      "Differenzen zwischen Einnahme und Einzahlung können zeitlich entstehen, wenn eine Einnahme erst später zur Einzahlung wird.",
+      "Ein sachlicher Unterschied liegt vor, wenn eine Ausgabe nicht mit einer Auszahlung einhergeht, zum Beispiel bei der Abschreibung.",
+      "Einnahme und Einzahlung sind in der Finanzrechnung immer identisch, und die Abschreibung gilt dort als Auszahlung.",
+      "Im Zusammenhang mit der Finanzrechnung sind die Begriffe Einzahlung und Auszahlung präziser als Einnahmen und Ausgaben."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Meist ja, immer nein. Der Text hält fest, dass die meisten Einnahmen auch Einzahlungen sind und die meisten Ausgaben auch Auszahlungen. Das ist die Grundnähe der Paare, nicht ihre vollständige Gleichheit. Genau deshalb folgen im nächsten Satz die Ausnahmen. Der Satz bleibt bei diesem Mehrheitsbefund.\n\nDie Aussage ist wahr.",
+      "Zeit versetzt das Geld. Eine Einnahme kann bereits vorliegen, die zugehörige Einzahlung aber erst später auf dem Konto landen, etwa bei einem späteren Zahlungseingang. Dann klaffen die Begriffe zeitlich. Für die Finanzrechnung zählt der Zahlungsmoment, nicht der frühere Einnahmenausweis. Der Satz nennt genau diese zeitliche Differenz.\n\nDie Aussage ist wahr.",
+      "Abschreibung belastet das Ergebnis, nicht das Konto. Eine Ausgabe kann ohne Auszahlung einhergehen, das Buchbeispiel ist die Abschreibung. Der Werteverzehr einer Anlage wird als Ausgabe bzw. Aufwand erfasst, es fließt in dieser Periode kein Geld ab. Wer Abschreibung wie eine Überweisung behandelt, überschätzt den Liquiditätsabfluss. Der Satz trifft den sachlichen Unterschied. Die Maschine verliert an Wert, das Bankguthaben bleibt von diesem Buchungsschritt unberührt.\n\nDie Aussage ist wahr.",
+      "Identität wäre die Falle. Der Text sagt ausdrücklich, dass Differenzen zeitlich oder sachlich auftreten, und nennt die Abschreibung als Ausgabe ohne Auszahlung. Deshalb sind Einnahme und Einzahlung nicht immer identisch, und die Abschreibung ist gerade keine Auszahlung. In der Finanzrechnung wären EZ und AZ sonst unscharf. Ein Betrieb könnte Abschreibungen als Geldabfluss einplanen und gleichzeitig eine später eingehende Forderung als schon verfügbares Geld zählen. Beides verzerrt den Finanzplan. Wer die Paare gleichsetzt, plant Abschreibungen wie Überweisungen und hält spätere Zahlungseingänge schon für verfügbares Geld.\n\nDie Aussage ist falsch.",
+      "Präzision folgt aus den Differenzen. Weil Einnahmen und Ausgaben nicht immer mit Zahlungen zusammenfallen, sind Einzahlung und Auszahlung im Zusammenhang mit der Finanzrechnung die treffenderen Begriffe. Der Finanzplan soll Liquidität abbilden, nicht den Periodenerfolg. Der Satz übernimmt diese terminologische Entscheidung des Abschnitts. Fällige Rechnungen werden mit Ein- und Auszahlungen geplant, nicht mit dem buchhalterischen Gewinn.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.05",
+    "title": "Einzahlungsüberschuss und Reserven",
+    "context": "Bewerten Sie die folgenden Aussagen zum Fall, dass die Einzahlungen die Auszahlungen übersteigen:",
+    "statements": [
+      "Übersteigen die Einzahlungen die Auszahlungen, ist die Zahlungsfähigkeit gegeben.",
+      "Ist der Überschuss sehr hoch, darf der gesamte Betrag dauerhaft so angelegt werden, dass er in den Folgemonaten nicht mehr verfügbar ist.",
+      "In den folgenden Perioden können die Auszahlungen höher sein als die Einzahlungen, sodass die Überschüsse bald wieder gebraucht werden.",
+      "Finanzielle Reserven, auf die man rasch zugreifen kann, sind vor allem für unvorhergesehene Zahlungen wichtig, die in der Finanzplanung nicht berücksichtigt sind.",
+      "Ein Einzahlungsüberschuss in einem Monat schließt aus, dass später erneut ein Finanzbedarf entsteht."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Vorzeichen entscheidet die Liquidität. EZ minus AZ: ist die Differenz positiv, übersteigen die Einzahlungen die Auszahlungen, und die Zahlungsfähigkeit ist gegeben. Der Text koppelt diese Konstellation nicht an den Gewinn, sondern an den Zahlungsmittelüberschuss. Ein Beispiel: EZ 80.000 Euro, AZ 65.000 Euro, Überschuss 15.000 Euro. Der Satz hält die Regel fest. Liegen die Einzahlungen darunter, kippt das Vorzeichen, und die Zahlungsfähigkeit ist nicht mehr gegeben.\n\nDie Aussage ist wahr.",
+      "Anlegen ja, festnageln nein. Bei sehr hohem Überschuss soll überlegt werden, ob ein Teil besser angelegt wird als auf dem Bankkonto. Gleichzeitig gilt: in folgenden Wochen oder Monaten können die AZ höher sein, die Überschüsse werden dann wieder gebraucht. Wer den gesamten Überschuss dauerhaft so bindet, dass er in Folgemonaten nicht verfügbar ist, ignoriert genau diese Warnung. Liquidität in diesem Monat ist kein Freibrief für Illiquidität im nächsten. Ein Teil kann angelegt werden, aber nur so, dass rasch verfügbare Mittel für die nächsten Perioden bleiben.\n\nDie Aussage ist falsch.",
+      "Der nächste Monat kann kippen. Der Abschnitt warnt ausdrücklich, dass in folgenden Perioden die Auszahlungen höher sein können und die heutigen Überschüsse bald wieder gebraucht werden. Ein Finanzplan ist eine Kette von Scheiben, nicht eine einmalige Entwarnung. Der Satz gibt diese zeitliche Vorsicht wieder.\n\nDie Aussage ist wahr.",
+      "Ungeplantes braucht Puffer. Unvorhergesehene Zahlungen stehen oft nicht im Finanzplan. Dafür braucht es finanzielle Reserven, auf die man rasch zugreifen kann, nicht nur langfristig gebundene Anlagen. Der Satz verbindet Reserve und Unvorhergesehenes so, wie der Text es formuliert.\n\nDie Aussage ist wahr.",
+      "Ein Monat beweist nicht das Jahr. Ein Einzahlungsüberschuss zeigt, dass in diesem Zeitraum EZ über AZ liegen. Der nächste Zeitraum kann das Vorzeichen drehen, der Text rechnet ausdrücklich mit höheren späteren AZ. Finanzbedarf kann also wieder entstehen. Die absolute Behauptung, ein Überschuss schließe späteren Bedarf aus, widerspricht der Periodenlogik der Finanzplanung. Die Finanzplanung arbeitet in Scheiben, jede mit eigenem Vorzeichen von EZ minus AZ.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.06",
+    "title": "Maßnahmen bei Fehlbetrag",
+    "context": "Bewerten Sie die folgenden Aussagen zum Fall, dass die Auszahlungen die Einzahlungen übersteigen:",
+    "statements": [
+      "Übersteigen die Auszahlungen die Einzahlungen, ist die Zahlungsfähigkeit gefährdet und das Unternehmen muss sofort Gegenmaßnahmen ergreifen.",
+      "Zu den möglichen Maßnahmen zählen, Ausgaben zu reduzieren, mit Lieferantinnen und Lieferanten ein längeres Zahlungsziel zu vereinbaren und den eigenen Kundinnen und Kunden nur kurze Zahlungsziele zu gewähren.",
+      "Lagerstände zu reduzieren oder einen kurzfristigen Kredit bei der Bank aufzunehmen, kann die Zahlungsfähigkeit stützen.",
+      "Droht immer wieder Zahlungsunfähigkeit und lässt sie sich nicht leicht beheben, kann die Aufnahme weiterer Gesellschafterinnen und Gesellschafter mit Kapitaleinlagen die Liquidität dauerhaft verbessern.",
+      "Liegen die Auszahlungen über den Einzahlungen, genügt es abzuwarten, bis sich die Liquidität von selbst einstellt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Gefahr verlangt Handlung. AZ über EZ bedeutet gefährdete Zahlungsfähigkeit. Der Text verlangt sofortige Gegenmaßnahmen, nicht eine ruhige Beobachtung bis zum Jahresabschluss. Jeder weitere Tag mit ungedeckten fälligen Rechnungen nähert die Insolvenz. Der Satz koppelt Vorzeichen und Handlungszwang korrekt. Wartet die Leitung, bleiben fällige Rechnungen unbezahlt, und die Insolvenz rückt näher.\n\nDie Aussage ist wahr.",
+      "Zahlungsziele sind ein Hebel. Ausgaben senken, Lieferantenziele verlängern und Kundenziele verkürzen: Geld soll später hinaus und früher herein. Das sind genau die im Abschnitt genannten operativen Schritte. Sie ändern EZ und AZ, ohne schon die Rechtsform zu wechseln. Der Satz zählt sie richtig.\n\nDie Aussage ist wahr.",
+      "Lager und Kredit greifen in die Kasse. Lagerstände zu reduzieren setzt gebundenes Geld frei, ein kurzfristiger Bankkredit füllt die Lücke vorübergehend. Beides steht in der Maßnahmenliste. Weder ersetzt das Lager den Finanzplan noch macht der Kredit das Problem unsichtbar, aber beide können die unmittelbare Zahlungsfähigkeit stützen.\n\nDie Aussage ist wahr.",
+      "Wiederholung ändert das Mittel. Tritt Zahlungsunfähigkeit immer wieder auf und ist sie nicht leicht zu beheben, nennt der Text Kapitaleinlagen neuer Gesellschafterinnen und Gesellschafter als Weg, Liquidität dauerhaft zu verbessern und abzusichern. Das ist Eigenkapital, nicht nur ein kurzer Kredit. Der Satz trifft diese Eskalationsstufe. Das ist Eigenkapital von außen, nicht nur ein weiterer kurzfristiger Kredit, der die nächste Rate schon wieder belasten würde.\n\nDie Aussage ist wahr.",
+      "Abwarten ist keine Gegenmaßnahme. Der Abschnitt sagt: die Zahlungsfähigkeit ist gefährdet, das Unternehmen muss sofort handeln. Wer wartet, lässt fällige Rechnungen unbezahlt. Insolvenz droht gerade dann, wenn Liquidität fehlt. Die Hoffnung auf Selbstheilung widerspricht der ausdrücklich geforderten Intervention. Der Text verlangt sofortige Gegenmaßnahmen: Ausgaben senken, Zahlungsziele drehen, Lager reduzieren oder Kredit aufnehmen, notfalls neue Kapitaleinlagen. Abwarten steht nicht in dieser Liste. Ohne solche Schritte bleibt die Differenz AZ minus EZ ungedeckt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.07",
+    "title": "Finanzplan in der Gründung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Finanzplanung von Unternehmensgründerinnen und Unternehmensgründern:",
+    "statements": [
+      "Im Rahmen der Gründung sind bereits vergleichsweise hohe Auszahlungen zu tätigen, während meist noch keine Einzahlungen und auch keine Erfahrungswerte für künftige Einzahlungen vorliegen.",
+      "Genau deshalb müssen Gründerinnen und Gründer häufig bei Finanzierungsansuchen einen Finanzplan vorlegen.",
+      "Dieser Finanzplan sollte vorsichtig und realistisch geplant sein, damit Kapitalgeberinnen und Kapitalgeber überzeugt werden können.",
+      "Gründerinnen und Gründer können Einzahlungen genauso sicher kalkulieren wie etablierte Betriebe mit langen Zahlungsreihen.",
+      "Die Finanzrechnung hat eine große betriebswirtschaftliche Bedeutung, unter anderem weil ohne Zahlungsfähigkeit die Insolvenz droht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Auszahlungen zuerst, Einzahlungen später. In der Gründung fallen vergleichsweise hohe Auszahlungen an, Einzahlungen fehlen meist noch, und Erfahrungswerte, mit wie viel Einzahlungen kalkuliert werden kann, fehlen ebenfalls. Der Finanzplan steht damit auf unsicherem Boden und ist trotzdem unverzichtbar. Der Satz beschreibt genau diese Schieflage. Genau deshalb ist der Finanzplan in der Gründung schwieriger als im laufenden Betrieb mit bekannten Zahlungsreihen.\n\nDie Aussage ist wahr.",
+      "Kapital will den Plan sehen. Weil die Gründungssituation so unsicher ist, müssen Gründerinnen und Gründer häufig bei Finanzierungsansuchen einen Finanzplan vorlegen. Der Plan ist das Instrument, mit dem die Zahlungsfähigkeit gegenüber Kapitalgebern argumentiert wird. Der Satz knüpft Ansuchen und Plan so, wie der Text es tut.\n\nDie Aussage ist wahr.",
+      "Vorsicht statt Schönfärberei. Der Plan soll vorsichtig und realistisch sein, damit Kapitalgeberinnen und Kapitalgeber überzeugt werden. Zu hohe Einzahlungsannahmen zerstören die Glaubwürdigkeit und führen später in die Liquiditätslücke. Der Satz hält den Qualitätsmaßstab fest, den der Abschnitt an den Gründungsfinanzplan legt.\n\nDie Aussage ist wahr.",
+      "Erfahrungswerte fehlen gerade. Der Text betont, dass meist noch keine Einzahlungen vorliegen und auch keine Erfahrungswerte, mit wie viel Einzahlungen kalkuliert werden kann. Etablierte Betriebe können Reihen fortschreiben, Gründungen nicht in gleichem Maß. Die Behauptung gleicher Sicherheit streicht genau das Gründungsproblem, um dessentwillen der Finanzplan so schwer und so wichtig ist. Wer gleiche Sicherheit wie bei etablierten Betrieben behauptet, streicht den Grund, warum Kapitalgeber einen vorsichtigen Plan verlangen. Der Finanzplan ersetzt fehlende Zeitreihen durch vorsichtige Annahmen, nicht durch Scheinsicherheit.\n\nDie Aussage ist falsch.",
+      "Ohne Kasse kein Fortbestand. Die Finanzrechnung hat große betriebswirtschaftliche Bedeutung, weil Zahlungsfähigkeit jederzeit gesichert sein muss und ihr Fehlen die Insolvenz nach sich ziehen kann. Gründung, laufender Betrieb und Kapitalaufnahme hängen daran. Der Satz fasst diese Bedeutung, ohne die Buchhaltung zu ersetzen. Gründung, laufender Betrieb und Finanzierungsansuchen hängen an derselben Frage, ob EZ die fälligen AZ decken.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.08",
+    "title": "Cashflow und Zahlungsfähigkeit",
+    "context": "Bewerten Sie die folgenden Aussagen zum Cashflow in der Finanzrechnung:",
+    "statements": [
+      "Der Cashflow wird ermittelt, indem Einzahlungen und Auszahlungen innerhalb eines bestimmten Zeitraums einander gegenübergestellt werden.",
+      "Übersteigen in diesem Zeitraum die Einzahlungen die Auszahlungen, ist der Cashflow positiv, es gibt also einen Zahlungsmittelzufluss zum Unternehmen.",
+      "Ein positiver Cashflow ist ein Indikator für Zahlungsfähigkeit.",
+      "Das ist unter anderem für Investitionen und für Kreditrückzahlungen von großer Bedeutung.",
+      "Ein negativer Cashflow bedeutet stets, dass in der Gewinn- und Verlustrechnung ein Verlust ausgewiesen wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Cashflow ist eine Zahlungsdifferenz. Einzahlungen und Auszahlungen eines bestimmten Zeitraums werden gegenübergestellt. Das ist dieselbe Logik wie im Finanzplan, jetzt als Kennzahl benannt. Gewinnermittlung über Erträge und Aufwände ist ein anderer Rechenweg. Der Satz bleibt bei EZ und AZ.\n\nDie Aussage ist wahr.",
+      "Pluszeichen heißt Zufluss. EZ größer als AZ ergibt einen positiven Cashflow, also einen Geld- bzw. Zahlungsmittelzufluss zum Unternehmen. Beispiel: EZ 120.000 Euro, AZ 95.000 Euro, Cashflow +25.000 Euro. Das Vorzeichen beschreibt die Kassenbewegung, nicht automatisch den Periodenerfolg. Der Satz trifft die Definition. Das Vorzeichen beschreibt die Kassenbewegung der Periode, nicht automatisch den Periodenerfolg der G&V.\n\nDie Aussage ist wahr.",
+      "Indikator, nicht identisch mit Gewinn. Ein positiver Cashflow zeigt, dass in dem Zeitraum mehr Geld hinein- als hinausgeflossen ist, und gilt deshalb als Indikator für Zahlungsfähigkeit. Der spätere Abschnitt ergänzt, dass man Gewinn ohne Liquidität und Liquidität ohne Gewinn haben kann. Als Indikator in der Finanzrechnung bleibt der positive Cashflow dennoch gültig. Ein späterer Abschnitt ergänzt, dass Gewinn ohne Liquidität und Liquidität ohne Gewinn möglich sind; als Indikator in der Finanzrechnung bleibt der positive Cashflow trotzdem gültig.\n\nDie Aussage ist wahr.",
+      "Investieren und tilgen brauchen Geld. Investitionen und Kreditrückzahlungen sind Auszahlungen. Ohne Zahlungsmittelzufluss oder vorhandene Liquidität sind sie nicht zu leisten. Der Text hebt die Bedeutung des positiven Cashflows genau für diese beiden Zwecke hervor. Der Satz folgt dieser Verknüpfung.\n\nDie Aussage ist wahr.",
+      "Zwei Rechnungen, zwei Ergebnisse. Cashflow vergleicht Ein- und Auszahlungen, die G&V Erlöse und Aufwände. Abschreibungen mindern den Gewinn, ohne Auszahlung zu sein; Forderungen können Ertrag sein, ohne schon Einzahlung zu sein. Deshalb kann der Cashflow negativ und die G&V trotzdem im Plus liegen, oder umgekehrt. Die Behauptung, negativer Cashflow sei stets ein ausgewiesener Verlust, vermengt Finanzrechnung und Erfolgsrechnung. Forderungen können Ertrag ohne Einzahlung sein, Abschreibungen Aufwand ohne Auszahlung. Deshalb darf man vom Vorzeichen des Cashflows nicht auf Gewinn oder Verlust schließen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.09",
+    "title": "Buchhaltung als externes Rechnungswesen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Buchhaltung und zu ihrem Adressatenkreis:",
+    "statements": [
+      "Jedes Unternehmen ist gesetzlich verpflichtet, seinen Gewinn oder Verlust für jedes Geschäftsjahr zu ermitteln.",
+      "Das ist nicht zuletzt für die Berechnung von Ertragssteuern bedeutsam, die je nach Rechtsform die Unternehmerin, der Unternehmer oder das Unternehmen zu zahlen hat.",
+      "Die Buchhaltung wird auch externes Rechnungswesen genannt, weil sie eine Informations- und Dokumentationsfunktion nach außen hat.",
+      "Interesse am Periodenerfolg haben nur die Steuerbehörden; Unternehmensleitung, Kapitalgeberinnen und Kapitalgeber sowie Mitarbeiterinnen und Mitarbeiter bleiben unbeteiligt.",
+      "Die Unternehmensleitung muss entscheiden, ob der Gewinn entnommen bzw. ausgeschüttet oder im Unternehmen belassen wird, etwa um in Maschinen oder andere Anlagen zu investieren."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Pflicht, nicht Kür. Jedes Unternehmen muss Gewinn oder Verlust für jedes Geschäftsjahr ermitteln. Das ist gesetzliche Verpflichtung, unabhängig davon, ob intern schon eine Kostenrechnung läuft. Der Satz gibt diese Pflicht wieder, noch bevor EAR oder doppelte Buchhaltung unterschieden werden. Die Wahl zwischen EAR und doppelter Buchhaltung ändert später nur das Verfahren, nicht die jährliche Ermittlungspflicht.\n\nDie Aussage ist wahr.",
+      "Steuer folgt dem Ergebnis. Die Ermittlung dient nicht zuletzt der Berechnung von Ertragssteuern. Je nach Rechtsform zahlt die Person oder das Unternehmen. Ohne Periodenerfolg fehlt die Bemessungsgrundlage. Der Satz hält diesen steuerlichen Anlass fest, ohne andere Adressaten zu leugnen. Liquidität in der Finanzrechnung ersetzt diese steuerliche Rechenbasis nicht.\n\nDie Aussage ist wahr.",
+      "Nach außen dokumentieren. Weil die Buchhaltung informiert und dokumentiert, und zwar nach außen, heißt sie auch externes Rechnungswesen. Die Kostenrechnung wird später als internes Rechnungswesen gegenübergestellt. Der Satz trifft die Namensgebung und die Außenfunktion.\n\nDie Aussage ist wahr.",
+      "Viele Stakeholder, nicht nur das Finanzamt. Der Text nennt neben der Steuerbehörde die Unternehmensleitung, Kapitalgeberinnen und Kapitalgeber, Gesellschafterinnen und Gesellschafter (zum Beispiel Aktionäre), Geschäftspartnerinnen und Geschäftspartner (zum Beispiel Lieferanten) sowie Mitarbeiterinnen und Mitarbeiter. Wer nur die Behörde gelten lässt, streicht genau diese Liste. Die Leitung braucht das Ergebnis für die Beurteilung, wie erfolgreich gewirtschaftet wurde, Kapitalgeber für ihre Anlage, Lieferanten für die Kreditwürdigkeit der Geschäftsbeziehung.\n\nDie Aussage ist falsch.",
+      "Ausschütten oder belassen. Nach dem Gewinn stellt sich die Verwendungsfrage: Entnahme bzw. Ausschüttung oder Verbleib im Unternehmen, etwa für Maschinen und andere Anlagen. Belassen stärkt Innenfinanzierung und Eigenkapital. Der Satz gibt diese Leitungsentscheidung wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.10",
+    "title": "EAR und doppelte Buchhaltung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Einnahmen-Ausgaben-Rechnung und zur doppelten Buchhaltung:",
+    "statements": [
+      "In der Einnahmen-Ausgaben-Rechnung werden die Einnahmen eines Geschäftsjahres den Ausgaben gegenübergestellt; die Ausgaben entsprechen im Wesentlichen den Auszahlungen, beinhalten aber auch die Abschreibungen.",
+      "Bei doppelter Buchhaltung werden Bilanz sowie Gewinn- und Verlustrechnung erstellt; der Gewinn wird in der G&V ermittelt und muss sich auch aus dem Vergleich des Eigenkapitals zu Beginn und am Ende des Geschäftsjahres ergeben.",
+      "Einzelunternehmen und Personengesellschaften, deren Umsatz unter 700.000 Euro pro Geschäftsjahr liegt, können eine EAR erstellen.",
+      "Überschreiten sie diese Umsatzgrenze oder liegt eine Kapitalgesellschaft vor, muss eine doppelte Buchhaltung geführt werden.",
+      "Jede GmbH darf unabhängig von Größe und Umsatz dauerhaft nur eine Einnahmen-Ausgaben-Rechnung führen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "EAR mischt Zahlungen und Abschreibung. Einnahmen eines Geschäftsjahres stehen den Ausgaben gegenüber. Die Ausgaben entsprechen im Wesentlichen den Auszahlungen, enthalten aber auch die Abschreibungen. Damit ist die EAR näher am Geld als die G&V, aber nicht rein zahlungsbezogen. Der Satz gibt genau diese Konstruktion wieder. Damit ist die EAR näher am Geld als die G&V, aber nicht rein zahlungsbezogen, weil die Abschreibung trotzdem enthalten ist.\n\nDie Aussage ist wahr.",
+      "Doppelt, weil zwei Wege denselben Gewinn zeigen. Bilanz und G&V werden erstellt. Der Gewinn steht in der G&V und zugleich als Veränderung des Eigenkapitals zwischen Beginn und Ende des Geschäftsjahres. Beide müssen denselben Betrag ergeben, daher doppelte Gewinnermittlung und der Name doppelte Buchhaltung. Der Satz hält beide Wege fest. Weichen die beiden Wege voneinander ab, ist die doppelte Ermittlung nicht erfüllt.\n\nDie Aussage ist wahr.",
+      "Grenze 700.000 Euro Umsatz. Einzelunternehmen und Personengesellschaften unter dieser Schwelle pro Geschäftsjahr dürfen die weniger aufwendige EAR wählen. Das ist eine Kann-Regel, kein Zwang zur EAR. Kapitalgesellschaften stehen hier noch nicht. Der Satz trifft die Schwelle und den Adressatenkreis.\n\nDie Aussage ist wahr.",
+      "Schwelle oder Rechtsform kippt das System. Über 700.000 Euro Umsatz oder Kapitalgesellschaft: doppelte Buchhaltung ist Pflicht. Eine GmbH als Kapitalgesellschaft fällt also unter die Pflicht, unabhängig davon, ob jemand die EAR bequemer fände. Der Satz verbindet beide Auslöser korrekt.\n\nDie Aussage ist wahr.",
+      "Kapitalgesellschaft heißt doppelte Buchhaltung. Der Text sagt: liegt eine Kapitalgesellschaft vor, muss eine doppelte Buchhaltung geführt werden. Die GmbH ist Kapitalgesellschaft. Eine dauerhafte Beschränkung auf die EAR unabhängig von Größe und Umsatz widerspricht dieser Pflicht. Nur bestimmte Einzelunternehmen und Personengesellschaften unter 700.000 Euro Umsatz dürfen die EAR wählen. Zusätzlich müssen Aktiengesellschaften und große GmbHs den Jahresabschluss veröffentlichen. Nur bestimmte Einzelunternehmen und Personengesellschaften unter 700.000 Euro Umsatz dürfen die EAR wählen. Aktiengesellschaften und große GmbHs müssen den Jahresabschluss zusätzlich veröffentlichen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.11",
+    "title": "Aktiva, Passiva und Bilanzgleichung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Aufbau der Bilanz:",
+    "statements": [
+      "Die Aktiva zeigen das Vermögen, also zum Beispiel Grundstücke, Gebäude, Maschinen und Vorräte.",
+      "Die Passiva zeigen, wie dieses Vermögen finanziert worden ist, mit eigenen Mitteln oder mit fremden Mitteln.",
+      "Es gilt Vermögen gleich Kapital, also Summe der Aktiva gleich Summe der Passiva, weil jeder Teil des Vermögens finanziert worden sein muss.",
+      "Die Aktiva stehen auf der Sollseite der Bilanz, die Passiva auf der Habenseite.",
+      "Die Passiva stehen auf der Sollseite, weil sie zeigen, wofür Mittel verwendet worden sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Aktiva sind das Vermögen. Grundstücke, Gebäude, Maschinen, Vorräte und ähnliche Positionen stehen auf der Aktivseite. Sie beantworten, über welches Vermögen das Unternehmen verfügt. Finanzierung gehört auf die andere Seite. Der Satz bleibt bei der Vermögensseite. Finanzierung gehört auf die Passivseite, nicht in die Vermögensliste.\n\nDie Aussage ist wahr.",
+      "Passiva sind Herkunft. Eigene Mittel sind Eigenkapital, fremde Mittel Fremdkapital. Zusammen erklären sie, wie das Vermögen finanziert wurde. Ohne diese Seite wäre die Aktivseite ungedeckt. Der Satz trifft die Finanzierungsfrage der Bilanz.\n\nDie Aussage ist wahr.",
+      "Gleichheit ist zwingend. Vermögen gleich Kapital, Summe Aktiva gleich Summe Passiva, weil jeder Vermögensteil finanziert sein muss. Eine Aktivposition ohne Passivgegenstück gäbe es in dieser Logik nicht. Gesamtvermögen und Gesamtkapital heißen auch Bilanzsumme. Der Satz gibt die Identität wieder. Eine Aktivposition ohne passivisches Gegenstück gäbe es in dieser Logik nicht; Gesamtvermögen und Gesamtkapital heißen deshalb auch Bilanzsumme.\n\nDie Aussage ist wahr.",
+      "Soll links, Haben rechts. Jede Bilanz hat Soll- und Haben-Gleichheit: Aktiva auf der Sollseite, Passiva auf der Habenseite. Die Differenz zwischen Vermögen und Fremdkapital ist das Eigenkapital. Der Satz platziert die Seiten so, wie der Text es vorschreibt.\n\nDie Aussage ist wahr.",
+      "Soll ist Verwendung, Haben Herkunft. In der Buchhaltung zeigt die Sollseite in der Regel, wofür Mittel verwendet worden sind, deshalb steht das gesamte Vermögen dort. Die Habenseite zeigt, woher die Mittel stammen, deshalb steht dort das Kapital. Passiva auf die Sollseite zu legen, kehrt Mittelverwendung und Mittelherkunft um. Dieselbe Logik gilt auch bei einzelnen Geschäftsfällen: Soll Verwendung, Haben Herkunft. Dieselbe Soll-Haben-Logik gilt bei einzelnen Geschäftsfällen: Soll zeigt die Verwendung, Haben die Herkunft der Mittel. Wer die Passiva nach links legt, verdreht Herkunft und Verwendung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.12",
+    "title": "Eigenkapital und Periodenerfolg",
+    "context": "Bewerten Sie die folgenden Aussagen zu Eigenkapital, Fremdkapital und zum Vergleich zweier Bilanzen:",
+    "statements": [
+      "Übersteigt das Vermögen das Fremdkapital, ist der positive Differenzbetrag das Eigenkapital, also jener Teil des Vermögens, der nicht mit Schulden finanziert worden ist.",
+      "Vergleicht man die Bilanzen zweier Zeitpunkte, bedeutet ein Steigen des Eigenkapitals einen Gewinn.",
+      "Ein Sinken des Eigenkapitals zwischen zwei Zeitpunkten bedeutet einen Verlust.",
+      "Die Gegenüberstellung in der Bilanz erfolgt zu einem bestimmten Zeitpunkt, üblicherweise zum Ende eines Geschäftsjahres.",
+      "Ein Steigen des Fremdkapitals zwischen zwei Stichtagen gilt für sich genommen bereits als Gewinn."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Eigenkapital ist Restgröße. Vermögen minus Fremdkapital, also Schulden, ergibt den positiven Differenzbetrag Eigenkapital: der Teil des Vermögens, der nicht mit Schulden finanziert ist. Steht mehr Vermögen als Schulden da, ist das Unternehmen in diesem Sinn reicher an eigenen Mitteln. Der Satz gibt genau diese Differenz wieder.\n\nDie Aussage ist wahr.",
+      "Zwei Stichtage, eine Erfolgsbotschaft. Steigt das Eigenkapital von einem Bilanzzeitpunkt zum nächsten, bedeutet das einen Gewinn. Das ist derselbe Gewinn, den die G&V ausweist, nur über den Kapitalvergleich. Entnahmen können das Bild überlagern, der Abschnitt knüpft das Steigen dennoch an den Gewinn. Der Satz folgt dieser Regel. Entnahmen können das Eigenkapital mindern, der Abschnitt knüpft das Steigen zwischen zwei Stichtagen dennoch an den Gewinn.\n\nDie Aussage ist wahr.",
+      "Sinken heißt Verlust. Fällt das Eigenkapital zwischen zwei Zeitpunkten, ist das Unternehmen ärmer geworden, der Text nennt das einen Verlust. Auch hier gilt die doppelte Ermittlung: G&V und Eigenkapitalvergleich müssen zusammenpassen. Der Satz hält die Verlustseite fest.\n\nDie Aussage ist wahr.",
+      "Stichtag, nicht Zeitraum. Die Bilanz stellt Vermögen und Kapital zu einem bestimmten Zeitpunkt gegenüber, üblicherweise am Ende eines Geschäftsjahres. Die G&V und der Finanzplan arbeiten über Perioden, die Bilanz fotografiert den Stichtag. Der Satz trifft diese Zeitlogik.\n\nDie Aussage ist wahr.",
+      "Mehr Schulden sind kein Gewinn. Gewinn ist das Steigen des Eigenkapitals bzw. der Überschuss der Erträge über die Aufwände. Fremdkapital sind Schulden. Nimmt das Unternehmen zusätzliche Kredite auf, steigt das Fremdkapital und oft auch das Vermögen, ohne dass daraus schon ein Gewinn folgt. Wer FK-Anstieg mit Gewinn gleichsetzt, verwechselt Mittelherkunft mit Periodenerfolg. Nimmt das Unternehmen zusätzliche Kredite auf, steigen oft Vermögen und Fremdkapital gemeinsam, ohne dass daraus schon ein Gewinn folgt. Mittelherkunft ist nicht Periodenerfolg.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.13",
+    "title": "FunBike: Vermögen und Umlaufintensität",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Beträge in Euro) zeigt auf der Aktivseite Grundstücke und Bauten 750.000, technische Anlagen und Geschäftsausstattung 2.330.000, Finanzanlagen 240.000, Vorräte 5.400.000, Forderungen aus Lieferungen und Leistungen 598.000 sowie Bankguthaben und Barbestand 320.250. Die Passivseite umfasst Bareinlagen der Gesellschafter 525.000, Gewinn 3.614.250, Rückstellungen 2.000.000, Bankkredite 3.199.000 und Verbindlichkeiten aus Lieferungen und Leistungen 300.000. Gesamtvermögen und Gesamtkapital betragen jeweils 9.638.250. Bewerten Sie die folgenden Aussagen zu dieser Bilanz:",
+    "statements": [
+      "Gesamtvermögen und Gesamtkapital werden als Bilanzsumme bezeichnet und betragen hier jeweils 9.638.250 Euro.",
+      "Das Anlagevermögen der FunBike GmbH übersteigt vier Millionen Euro.",
+      "Das Umlaufvermögen beträgt 6.318.250 Euro, und darin dominieren die Vorräte mit 5.400.000 Euro.",
+      "Das Unternehmen ist umlaufintensiv, weil es deutlich mehr Umlaufvermögen als Anlagevermögen hat.",
+      "Bankguthaben und Barbestand übersteigen die Vorräte."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Beide Seiten dieselbe Summe. Gesamtvermögen bzw. Gesamtkapital heißen Bilanzsumme. Addition der Aktiva: 750.000 + 2.330.000 + 240.000 + 5.400.000 + 598.000 + 320.250 = 9.638.250. Passiva: 525.000 + 3.614.250 + 2.000.000 + 3.199.000 + 300.000 = 9.638.250. Die Identität Vermögen gleich Kapital hält. Der Satz trifft Bezeichnung und Betrag. Die Identität Vermögen gleich Kapital hält, weil jede Vermögensposition finanziert sein muss.\n\nDie Aussage ist wahr.",
+      "Anlagevermögen bleibt unter vier Millionen. Anlagevermögen ist Vermögen, das länger als ein Jahr bleiben soll: Grundstücke und Bauten 750.000 plus technische Anlagen und Geschäftsausstattung 2.330.000 plus Finanzanlagen 240.000. 750.000 + 2.330.000 = 3.080.000, plus 240.000 = 3.320.000 Euro. Vier Millionen wären 4.000.000. 3.320.000 liegt darunter. Der Text spricht später von etwas mehr als drei Millionen Euro langfristigem Vermögen, passend zu dieser Summe. Die Behauptung, das Anlagevermögen übersteige vier Millionen, ist daher falsch. Der Text spricht später von etwas mehr als drei Millionen Euro langfristigem Vermögen, passend zu 3.320.000 Euro, nicht zu mehr als vier Millionen.\n\nDie Aussage ist falsch.",
+      "Umlaufvermögen rechnen. Vorräte 5.400.000 plus Forderungen 598.000 plus Bankguthaben und Barbestand 320.250. 5.400.000 + 598.000 = 5.998.000, plus 320.250 = 6.318.250 Euro. Die Vorräte allein sind 5.400.000 und damit der klar größte Block. Der Text nennt das für einen Fahrradproduzenten plausibel. Der Satz trifft Summe und Dominanz. Der Text nennt hohe Vorräte für einen Fahrradproduzenten plausibel, weil Teile und fertige Räder auf Lager liegen können.\n\nDie Aussage ist wahr.",
+      "Umlaufintensiv heißt UV deutlich über AV. Umlaufvermögen 6.318.250, Anlagevermögen 3.320.000. 6.318.250 ist klar größer als 3.320.000. Der Abschnitt bezeichnet FunBike deshalb als umlaufintensiv. Vorräte treiben diese Struktur. Der Satz übernimmt die Einordnung des Buchs.\n\nDie Aussage ist wahr.",
+      "Kasse gegen Lager. Bankguthaben und Barbestand 320.250, Vorräte 5.400.000. 320.250 ist weit kleiner als 5.400.000, nicht größer. Die Behauptung kehrt das Verhältnis um. Gerade weil die Vorräte so schwer wiegen, diskutiert der Text, ob Lagerhaltung reduziert werden könnte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.14",
+    "title": "FunBike: Kapitalstruktur und goldene Bilanzregel",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (Beträge in Euro) zeigt Bareinlagen der Gesellschafter 525.000, Gewinn 3.614.250, Rückstellungen 2.000.000, Bankkredite 3.199.000 und Verbindlichkeiten aus Lieferungen und Leistungen 300.000. Die Bilanzsumme beträgt 9.638.250 Euro, das Anlagevermögen 3.320.000 Euro. Bewerten Sie die folgenden Aussagen zur Finanzierung:",
+    "statements": [
+      "Das Eigenkapital beträgt 4.139.250 Euro.",
+      "Rund 57 Prozent des Kapitals sind Fremdkapital, der Großteil davon Bankkredite.",
+      "Eine solche Kapitalstruktur mit hoher Fremdkapitalabhängigkeit ist für österreichische kleine und mittlere Unternehmen nicht untypisch.",
+      "Die goldene Bilanzregel ist erfüllt, weil das langfristig gebundene Vermögen von etwas mehr als drei Millionen Euro durch Eigenkapital von über vier Millionen Euro und voraussichtlich auch durch langfristiges Fremdkapital gedeckt ist.",
+      "Das Eigenkapital liegt unter drei Millionen Euro und reicht daher nicht aus, das Anlagevermögen langfristig zu finanzieren."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Eigenkapital addieren. Bareinlagen 525.000 plus Gewinn 3.614.250. 525.000 + 3.614.250 = 4.139.250 Euro. Das ist der Teil der Passiva, der nicht Fremdkapital ist. Probe: Fremdkapital 2.000.000 + 3.199.000 + 300.000 = 5.499.000, plus 4.139.250 = 9.638.250, die Bilanzsumme. Der Satz trifft den Betrag.\n\nDie Aussage ist wahr.",
+      "Fremdkapitalquote. Fremdkapital 5.499.000 geteilt durch Bilanzsumme 9.638.250. 5.499.000 / 9.638.250 ≈ 0,5705, also rund 57 Prozent. Davon Bankkredite 3.199.000, der größte FK-Block vor Rückstellungen 2.000.000 und Verbindlichkeiten 300.000. Der Text nennt genau diese rund 57 Prozent und die Bankkredite als Großteil. Der Satz stimmt mit der Rechnung überein. 3.199.000 zu 5.499.000 bestätigt, dass Bankkredite den Großteil des Fremdkapitals tragen, vor Rückstellungen und Lieferantenverbindlichkeiten.\n\nDie Aussage ist wahr.",
+      "KMU-Muster, nicht Skandal. Der Abschnitt ordnet FunBike mit einer Bilanzsumme knapp unter 10 Millionen Euro noch den Kleinunternehmen zu und hält hohe Fremdkapitalabhängigkeit für österreichische KMU für typisch. Die beobachtete Struktur ist also erwartbar, nicht ein Sonderfall. Der hohe Gewinn stärkt allerdings Eigenkapital und Innenfinanzierung, wenn er im Unternehmen bleibt. Der hohe Gewinn stärkt Eigenkapital und Innenfinanzierungskraft, wenn er im Unternehmen verbleibt und nicht vollständig ausgeschüttet wird.\n\nDie Aussage ist wahr.",
+      "Langfristig durch langfristig. Die goldene Bilanzregel verlangt, dass langfristig gebundenes Vermögen langfristig finanziert sein soll. Anlagevermögen 3.320.000, im Text etwas mehr als drei Millionen. Eigenkapital 4.139.250, also über vier Millionen, und ein Teil des Fremdkapitals wird vermutlich langfristig sein. 4.139.250 deckt 3.320.000 bereits allein. Die Regel ist erfüllt. Der Satz gibt diese Prüfung wieder. 4.139.250 Euro Eigenkapital decken 3.320.000 Euro Anlagevermögen bereits allein; die Regel ist damit erfüllt, nicht verletzt. Wäre das Eigenkapital kleiner als das langfristige Vermögen und fehlte langfristiges Fremdkapital, wäre die Regel verletzt.\n\nDie Aussage ist wahr.",
+      "Vier Millionen, nicht unter drei. Eigenkapital 4.139.250 liegt über vier Millionen, nicht unter drei. Anlagevermögen 3.320.000 ist kleiner als dieses Eigenkapital. Die Behauptung unterschätzt das Eigenkapital und erklärt fälschlich, es reiche nicht zur langfristigen Finanzierung. Genau das Gegenteil stützt im Text die goldene Bilanzregel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.15",
+    "title": "Gewinn- und Verlustrechnung der FunBike GmbH",
+    "context": "In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Die Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx zeigt Umsatzerlöse 70.656.000 Euro, Materialaufwand 53.175.000 Euro, Personalaufwand 7.900.000 Euro, Abschreibungen 1.800.000 Euro, sonstige betriebliche Aufwände 2.875.000 Euro, Zinserträge 12.000 Euro, Zinsaufwand 99.000 Euro, Steuern 1.204.750 Euro und Jahresergebnis 3.614.250 Euro. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt.",
+      "Zu den Aufwänden in der G&V zählen unter anderem Löhne und Gehälter, Materialaufwand, Miete, Versicherungsaufwand, Energieaufwand, Abschreibungen auf Sachanlagen und die Bildung von Rückstellungen.",
+      "Das Jahresergebnis der FunBike GmbH beträgt 3.614.250 Euro und entspricht dem in der Bilanz ausgewiesenen Gewinn.",
+      "Die Abschreibungen von 1.800.000 Euro erhöhen in der G&V den Gewinn, weil sie keine Auszahlung sind.",
+      "Denselben Gewinn kann man auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende des Geschäftsjahres ermitteln; beides muss übereinstimmen, daher spricht man von doppelter Gewinnermittlung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ertrag über Aufwand ist Gewinn. In der G&V werden von Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Bleibt ein positiver Rest, ist das Unternehmen in der Periode reicher geworden. Umgekehrt entsteht ein Verlust. Der Satz gibt diese Vorzeichenregel wieder, noch ohne die FunBike-Zahlen.\n\nDie Aussage ist wahr.",
+      "Aufwandsliste des Abschnitts. Löhne und Gehälter, Material, Miete, Versicherung, Energie, Abschreibungen auf Sachanlagen etwa Maschinen, Bildung von Rückstellungen: all das zählt der Text zu den Aufwänden. FunBike zeigt Material, Personal, Abschreibungen und sonstige betriebliche Aufwände als konkrete Blöcke. Der Satz bleibt bei der Begriffsliste, nicht bei einer einzigen Position.\n\nDie Aussage ist wahr.",
+      "Von oben nach unten durchrechnen. Umsatzerlöse 70.656.000 minus Material 53.175.000 = 17.481.000. Minus Personal 7.900.000 = 9.581.000. Minus Abschreibungen 1.800.000 = 7.781.000. Minus sonstige betriebliche Aufwände 2.875.000 = 4.906.000, das EBIT. Zinserträge 12.000 minus Zinsaufwand 99.000 = Finanzergebnis -87.000. 4.906.000 - 87.000 = 4.819.000 vor Steuern. Minus Steuern 1.204.750 = 3.614.250 Jahresergebnis. Derselbe Betrag steht in der Bilanz als Gewinn. Der Satz trifft Zahl und Brücke zur Bilanz.\n\nDie Aussage ist wahr.",
+      "Abschreibung mindert, sie erhöht nicht. Nach Abzug von Material und Personal stehen 9.581.000 Euro. Die Abschreibungen von 1.800.000 Euro sind Aufwand und werden abgezogen: 9.581.000 minus 1.800.000 = 7.781.000. Ohne diesen Abzug wäre das Zwischenergebnis um 1.800.000 Euro höher, der spätere Gewinn also ebenfalls. Dass die Abschreibung keine Auszahlung ist, gehört in die Finanzrechnung und in die Unterscheidung von Cashflow und Gewinn. In der G&V bleibt sie ein Aufwand mit Minuszeichen. Die Behauptung, sie erhöhe den Gewinn, kehrt dieses Vorzeichen um.\n\nDie Aussage ist falsch.",
+      "Zwei Wege, eine Zahl. Der Gewinn erhöht das Eigenkapital und lässt sich aus dem Vergleich des aktuellen Eigenkapitals mit jenem zu Beginn des Geschäftsjahres ermitteln. G&V und Eigenkapitalvergleich müssen denselben Gewinn zeigen, daher doppelte Gewinnermittlung und in diesem Zusammenhang doppelte Buchhaltung. FunBike weist 3.614.250 in beiden Rollen aus, als Jahresergebnis und als Gewinn in der Bilanz. Der Satz trifft die Systematik.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.16",
+    "title": "Cashflowrechnung und Gewinn",
+    "context": "Bewerten Sie die folgenden Aussagen zur Cashflowrechnung und zu ihrem Verhältnis zum Gewinn:",
+    "statements": [
+      "Der Cashflow ist nicht identisch mit dem Gewinn, denn man kann einen Gewinn erzielen, ohne über liquide Mittel zu verfügen, und man kann liquide sein, ohne einen Gewinn zu erzielen.",
+      "In der Cashflowrechnung ist der Bereich Betriebstätigkeit der wichtigste, weil er den Kern des Geschäfts betrifft und zeigt, ob dort Einzahlungsüberschüsse erwirtschaftet werden.",
+      "Neue Bankkredite und der Kauf von Maschinen werden in der Cashflowrechnung beide dem Bereich Betriebstätigkeit zugeordnet.",
+      "Im Investitionsbereich fließen Zahlungsmittel in die Anschaffung von Anlagevermögen, während der Verkauf von Anlagevermögen Zahlungsmittel generieren kann.",
+      "Cashflow und Gewinn sind dieselbe Kennzahl, weil jede Abschreibung zugleich eine Auszahlung und jeder Umsatz zugleich eine Einzahlung ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Wahrheiten nebeneinander. Publizierte Jahresabschlüsse enthalten neben Bilanz und G&V eine Cashflowrechnung bzw. Geldflussrechnung. Der Cashflow misst Zahlungsfähigkeit, der Gewinn den Periodenerfolg. Man kann Gewinn ohne liquide Mittel haben, etwa bei hohen Forderungen und Abschreibungen, und liquide ohne Gewinn, etwa nach einer Kreditaufnahme. Der Satz hält genau diese Nicht-Identität fest.\n\nDie Aussage ist wahr.",
+      "Operations zuerst. Der Bereich Betriebstätigkeit, im Text auch operations oder operating activities, betrifft den Kern des Geschäfts. Investorinnen und Investoren schauen oft vor allem hierher, weil sich zeigt, ob der Kern Einzahlungsüberschüsse erwirtschaftet. Finanzierung und Investition erklären andere Ursachen von Zu- und Abflüssen. Der Satz trifft diese Rangfolge.\n\nDie Aussage ist wahr.",
+      "Drei Töpfe, nicht einer. Neue Kredite sind Zuflüsse der Finanzierung, der Kauf von Maschinen gehört zur Investition, weil Zahlungsmittel in langfristiges Anlagevermögen fließen. Die Betriebstätigkeit zeigt den Kern des laufenden Geschäfts, nicht die Aufnahme von Fremdkapital und nicht den Anlagenkauf. Wer beides der Betriebstätigkeit zuordnet, macht aus der gegliederten Geldflussrechnung eine einzige Restgröße und nimmt Investorinnen und Investoren genau die Information, auf die der Text Wert legt. Finanzierung nimmt Gesellschafter und Kredite auf, Investition kauft oder verkauft Anlagevermögen. Nur die Betriebstätigkeit misst den Kern.\n\nDie Aussage ist falsch.",
+      "Investition ist Anlagenkauf und -verkauf. Fließt Geld in die Anschaffung langfristiger Investments, etwa in Anlagevermögen, ist das ein Abfluss im Investitionsbereich. Der Verkauf eines Grundstücks oder Gebäudes kann dort umgekehrt Zahlungsmittel generieren. Das ist nicht Betriebstätigkeit und nicht bloße Kreditaufnahme. Der Satz gibt beide Richtungen wieder.\n\nDie Aussage ist wahr.",
+      "Abschreibung trennt die beiden Zahlen. In der Finanzrechnung ist die Abschreibung das Beispiel einer Ausgabe ohne Auszahlung. In der G&V mindert sie den Gewinn, vom Konto geht in diesem Schritt kein Geld. Umsatzerlöse können als Forderungen schon Ertrag sein, bevor die Einzahlung kommt. Deshalb sind Cashflow und Gewinn nicht dieselbe Kennzahl. Die Behauptung, jede Abschreibung sei Auszahlung und jeder Umsatz Einzahlung, streicht genau die Differenzen, um derentwillen der Text beide Rechnungen nebeneinander stellt. Genau um dieser Differenzen willen stehen G&V und Geldflussrechnung nebeneinander und dürfen nicht zu einer Zahl zusammengezogen werden.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

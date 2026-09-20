@@ -73,6 +73,7 @@ const fullCourseItem: NavItem = {
     "/products/full-course-math",
     "/products/full-course-english",
     "/products/full-course-economics",
+    "/products/full-course-wiso-economics",
     "/practice",
   ],
 };

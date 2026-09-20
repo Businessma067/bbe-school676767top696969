@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Equity Finance and Debt Finance Overview",
+    "statements": [
+      "Share capital provided by outside investors is an external equity source of finance for the corporation.",
+      "Retained earnings that remain in the business count as internal equity finance under the standard overview.",
+      "Funds provided by investors are classified as external equity finance in the sources-of-finance framework.",
+      "Bank overdrafts and trade credit are commonly listed examples of short-term debt finance.",
+      "Long-term bank loans and bonds issued to investors are forms of long-term external debt finance."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.01",
+    "context": "Review the overview of sources of finance as classified into equity finance and debt finance. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Internal and External Finance Classification",
+    "statements": [
+      "Equity finance encompasses both internal sources such as retained earnings and external sources such as share capital.",
+      "Short-term bank loans used to cover working capital are classified as short-term debt finance.",
+      "Debt finance is always external because borrowed funds create obligations to outside creditors.",
+      "The balance sheet reveals the sources of finance that a business has used in building its assets.",
+      "Large businesses are obliged to draw up a balance sheet showing how operations have been funded."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.02",
+    "context": "Consider a manufacturing corporation that combines share capital from outside investors, retained profits, and a multi-year bank loan to expand production capacity. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Misclassifying Retained Earnings",
+    "statements": [
+      "A loan provided by owners is classified as long-term credit within external debt finance.",
+      "Share capital is internal equity finance because issued shares are recorded on the corporation's own balance sheet.",
+      "Retained earnings are external equity because they ultimately derive from revenue paid by customers.",
+      "Debt finance is classified as internal finance because interest payments return profit to the owners.",
+      "Bank overdrafts are long-term debt finance because the overdraft limit may remain available for years."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.03",
+    "context": "Review how short-term credit and long-term credit fit within external debt finance. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Core Sources of Finance Definitions",
+    "statements": [
+      "Bonds are short-term debt finance because holders may sell them quickly on secondary markets.",
+      "Trade credit from suppliers is short-term debt finance that postpones payment for goods and services.",
+      "Bonds issued to investors provide long-term debt finance through formal creditor instruments.",
+      "Long-term bank loans are a form of long-term external debt finance used for extended investment periods.",
+      "A loan provided by owners is equity finance because owners already participate in business ownership."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.04",
+    "context": "Analyze the role of the balance sheet in revealing the sources of finance a business has used. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Equity and Debt Sources in Practice",
+    "statements": [
+      "Table 3 groups bank overdrafts, trade credit, and short-term loans under short-term debt finance.",
+      "Table 3 includes bank loans, owner loans, and bonds among long-term credit sources.",
+      "Retained earnings supply internal equity finance without bringing in new external funds.",
+      "Bank overdrafts provide flexible short-term debt finance for day-to-day cash shortfalls.",
+      "Share capital and retained earnings both appear as equity finance sources on the balance sheet."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.05",
+    "context": "Consider a construction firm financing payroll gaps with short-term bank loans and supplier trade credit while shareholders provide additional share capital. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Short-Term Debt and Internal Equity",
+    "statements": [
+      "Short-term and long-term credit from creditors are recorded as debt finance on the balance sheet.",
+      "Trade credit is equity finance because suppliers effectively share the commercial risk of the buyer.",
+      "Funds provided by investors are debt finance because investors expect a financial return.",
+      "Retained earnings are debt finance because they must eventually be repaid to creditors.",
+      "Equity finance includes share capital from investors and retained earnings kept within the firm."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.06",
+    "context": "Analyze the classification of bank overdrafts, trade credit, and short-term loans within debt finance. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Balance Sheet and Finance Sources",
+    "statements": [
+      "Debt finance covers short-term credit such as overdrafts and long-term credit such as bank loans.",
+      "Funds provided by investors count as external equity when investors subscribe for ownership in the firm.",
+      "Retained earnings reinvested in the business represent internal equity finance rather than borrowed funds.",
+      "Short-term bank loans are short-term debt finance used to cover temporary funding gaps.",
+      "A loan provided by owners is long-term debt finance even though the lenders are also owners of the firm."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.07",
+    "context": "Review long-term debt sources including bank loans, owner loans, and bonds. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Long-Term Credit and Bond Finance",
+    "statements": [
+      "Table 3 shows that debt finance is always external to the business entity.",
+      "Table 3 lists share capital, retained earnings, and investor funds under equity finance categories.",
+      "Bonds issued to investors are long-term external debt finance creating creditor claims on the business.",
+      "Retained earnings are internal equity finance because undistributed profit remains within the business.",
+      "Retained earnings become external equity once the firm publishes audited accounts to outside parties."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.08",
+    "context": "Consider a freight carrier that mixes short-term credit lines, owner-provided long-term loans, and reinvested earnings to renew its vehicle fleet. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Owner Loans Versus Share Capital",
+    "statements": [
+      "Share capital is long-term debt finance because shareholders commit funds for many years.",
+      "Trade credit from suppliers is short-term external debt finance for purchases on deferred payment terms.",
+      "Short-term bank loans are long-term debt finance when the borrower intends to renew them repeatedly.",
+      "Debt finance can be internal when the lender is a shareholder who also receives dividend payments.",
+      "Share capital from investors is external equity finance contributing to the ownership base of the corporation."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.09",
+    "context": "Review Table 3 on the most commonly used sources of finance for businesses. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Nuanced Debt and Equity Distinctions",
+    "statements": [
+      "Retained earnings are external equity because they represent value generated from outside customer payments.",
+      "Bonds and long-term bank loans are long-term debt finance creating creditor claims on the firm.",
+      "Bank overdrafts are equity finance when used to cover working capital shortfalls.",
+      "Table 3 classifies retained earnings as short-term debt because they can be spent within one year.",
+      "Equity finance comprises internal retained earnings and external share capital and investor funds."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.10",
+    "context": "Consider a software startup that raises share capital from external investors while using retained earnings and short-term bank loans during early growth. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Table 3 Finance Sources",
+    "statements": [
+      "Debt finance is external and divided into short-term credit and long-term credit components.",
+      "Long-term bank loans, owner loans, and bonds exemplify long-term external debt finance.",
+      "Bank overdrafts, trade credit, and short-term loans exemplify short-term debt finance.",
+      "The balance sheet reveals which equity and debt sources have funded the business assets.",
+      "Retained earnings are internal equity finance because profit kept in the firm does not come from new external borrowing."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.11",
+    "context": "Review why large businesses are obliged to draw up a balance sheet showing sources of finance. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Single Correct Bond Classification",
+    "statements": [
+      "Equity finance is always external because only shareholders provide it.",
+      "Trade credit is long-term debt finance because supplier relationships often continue for many years.",
+      "Bonds are short-term debt finance because coupon payments occur at regular intervals.",
+      "Share capital is external equity finance because investors contribute ownership funds from outside the business.",
+      "Share capital is debt finance because investors provide funds that must eventually be repaid with interest."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.12",
+    "context": "Analyze how a loan provided by owners is classified among long-term credit sources. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Trade Credit and Overdraft Traps",
+    "statements": [
+      "Retained earnings are external equity because they arise from revenue paid by outside customers.",
+      "Bank overdrafts are short-term debt finance even when used repeatedly throughout the trading year.",
+      "Bank overdrafts are equity finance when the account holder is also a major shareholder of the bank.",
+      "A loan provided by owners is equity finance because the lenders share in the ownership of the business.",
+      "Long-term bank loans are long-term external debt finance with scheduled repayment over extended periods."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.13",
+    "context": "Consider a catering business that covers weekly purchases with supplier credit, reinvests surplus profit internally, and maintains a long-term loan from its owners. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Investor Funds Classification",
+    "statements": [
+      "Funds provided by investors are short-term debt finance when investors expect to exit within one reporting cycle.",
+      "Bonds issued to investors are long-term debt finance creating creditor claims traded in capital markets.",
+      "Debt finance includes internal sources when the firm repays loans using its own retained earnings.",
+      "Share capital is internal equity finance because share registers are maintained within the corporation's offices.",
+      "Retained earnings are external equity because they are disclosed in published financial statements."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.14",
+    "context": "Analyze how funds provided by investors are classified relative to internal retained earnings. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Mixed Finance Source Assertions",
+    "statements": [
+      "Share capital and funds from investors are external equity finance sources listed in the finance overview.",
+      "Retained earnings are internal equity finance sourced from profits not distributed to shareholders.",
+      "Bank overdrafts are long-term debt finance because banks review and maintain overdraft limits over time.",
+      "Bonds are long-term debt finance raising external creditor funds from investors.",
+      "Trade credit is short-term debt finance allowing suppliers to defer cash receipt for goods delivered."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.15",
+    "context": "Analyze how bond issues and bank loans both supply long-term external debt finance. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Comprehensive Finance Source Review",
+    "statements": [
+      "Long-term bank loans are long-term debt finance with repayment schedules extending beyond one year.",
+      "A loan provided by owners is long-term credit classified as external debt finance in the overview.",
+      "Short-term bank loans are short-term debt finance covering near-term working-capital requirements.",
+      "Equity finance includes both internal retained earnings and external share capital from investors.",
+      "Debt finance is external and includes short-term credit such as overdrafts and trade credit."
+    ],
+    "subsection": "4.5",
+    "case_id": "CASE 4.5.16",
+    "context": "Review how trade credit from suppliers functions as short-term external debt finance. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

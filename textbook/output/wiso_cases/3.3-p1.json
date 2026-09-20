@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.01",
+    "title": "Finanzbedarf bei Gründung und Betrieb",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, warum Unternehmen finanzielle Mittel aufbringen:",
+    "statements": [
+      "Schon bei der Gründung ist eine ausreichende Finanzierung eine der wesentlichsten Gelingensbedingungen.",
+      "Für langfristige Investitionen in ausgestattete Geschäfts- und Büroräumlichkeiten muss die Finanzierung ebenfalls langfristig zur Verfügung stehen.",
+      "Finanzieren bedeutet ausschließlich die Anschaffung von Maschinen; laufende Zahlungen wie Löhne, Energie oder Miete gehören nicht dazu.",
+      "Neben dem langfristigen Finanzbedarf gibt es einen kurzfristigen, weil Lieferantinnen und Lieferanten oft früher bezahlt werden müssen, als Einnahmen aus Verkäufen eingehen.",
+      "Sobald das Unternehmen Umsätze erzielt, entfällt jeder weitere Finanzierungsbedarf, weil Verkaufserlöse alle künftigen Zahlungen automatisch decken."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Gründung ohne Geld bleibt Theorie. Viele Betriebe brauchen sofort Räume, Ausstattung und einen Startvorrat, bevor die erste Kundin zahlt. Das Buch nennt ausreichende Finanzierung deshalb eine der wesentlichsten Gelingensbedingungen, nicht ein späteres Schönheitsproblem. Wer erst nach dem ersten Umsatz an Mittel denkt, startet mit Lücken bei Investitionen, die nur in größeren Abständen vorgenommen werden. Genau dieser Anfangsbedarf erklärt, warum Gründerinnen und Gesellschafter Mittel einbringen und warum weitere Quellen danebenstehen.\n\nDie Aussage ist wahr.",
+      "Laufzeit und Nutzungsdauer gehören zusammen. Geschäfts- und Büroräume sind langfristige Investitionen; die Mittel dafür sollen ebenfalls langfristig bereitstehen, sonst muss ein kurzfristiger Kredit getilgt werden, während die Räume noch Jahre genutzt werden. Das Buch knüpft den langfristigen Finanzbedarf ausdrücklich an solche Anschaffungen. Kurzfristige Lieferantenkredite tragen den Möbelkauf nicht über die Nutzungsdauer. Die Aussage hält diese Fristenkongruenz fest, ohne andere Quellen auszuschließen.\n\nDie Aussage ist wahr.",
+      "Zwei Zahlungskreise bilden den Finanzierungsbegriff. Finanzieren heißt, Mittel aufzubringen, um Investitionen in größeren Abständen und zugleich laufende, wiederkehrende Zahlungen tätigen zu können: Wareneinkauf, Löhne und Gehälter, Energie, Miete. Wer nur Maschinen gelten lässt, streicht die zweite Hälfte. Ein Betrieb ohne Lohnmittel wäre ebenso handlungsunfähig wie einer ohne Anlage. Der absolute Satz \"ausschließlich Maschinen\" widerspricht der Aufzählung im Lehrtext.\n\nDie Aussage ist falsch.",
+      "Zeitlücken erzeugen Kurzfristbedarf. Lieferungen müssen oft bezahlt sein, bevor Verkaufserlöse eingehen. Neben dem langfristigen Bedarf an Investitionsmitteln entsteht so ein kurzfristiger Finanzbedarf für den laufenden Kreislauf. Banken und Lieferanten können diese Lücke schließen, etwa über Zahlungsziele. Der Satz beschreibt genau diese Asymmetrie zwischen Auszahlung an Lieferanten und späterer Kundenzahlung, nicht eine zweite Gründung.\n\nDie Aussage ist wahr.",
+      "Umsatz füllt die Kasse, löscht den Bedarf aber nicht. Nach Aufnahme der Tätigkeit stehen durch Verkaufserlöse wieder Mittel bereit, oft müssen Lieferanten jedoch früher bezahlt werden, und Investitionen bleiben zusätzlich zu finanzieren. Die Behauptung, jeder weitere Bedarf entfalle automatisch, verwechselt den Zufluss aus Umsätzen mit einer vollständigen Deckung aller künftigen Auszahlungen. Langfristige Anschaffungen und wiederkehrende laufende Zahlungen bleiben Finanzierungsanlässe. Der Lehrtext stellt beides nebeneinander, statt den Umsatz zur Allzwecklösung zu machen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.02",
+    "title": "Eigenkapital und Sacheinlagen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Eigenkapital:",
+    "statements": [
+      "Kapital, das Unternehmensgründerinnen, Gründer oder Gesellschafterinnen und Gesellschafter in das Unternehmen einbringen, gilt als Eigenkapital.",
+      "Zum Eigenkapital zählen nur Geldbeträge; Sacheinlagen erhöhen das Eigenkapital nicht.",
+      "Bringen Gründerinnen und Gründer neben Geld einen kleinen Lieferwagen und zwei PCs ein, erhöhen auch diese Sacheinlagen das Eigenkapital.",
+      "Eigenkapital muss in der Regel nach einem festgelegten kurzen Zeitraum vollständig an die Geber zurückgezahlt werden.",
+      "Eigenkapital steht dem Unternehmen langfristig, in der Regel unbefristet, zur Verfügung."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Herkunft entscheidet über die Bezeichnung. Was Gründerinnen, Gründer und Gesellschafterinnen oder Gesellschafter einbringen, gilt als Eigenkapital, unabhängig davon, ob später auch Banken Kredite geben. Die Einlage schafft die eigene Basis, von der das Buch die Fremdfinanzierung durch Dritte unterscheidet. Wer nur Bankgeld als Kapital gelten lässt, verfehlt den Ausgangspunkt nach den Rechtsformen: zuerst bringen die Beteiligten Mittel ein, erst danach kommen weitere Möglichkeiten. Sacheinlagen gehören zu dieser eigenen Basis ebenso wie Überweisungen, sobald sie dem Unternehmen zugeordnet sind. Die Aussage trifft genau diese Zuordnung der Beteiligteneinlage, nicht die später behandelte Kreditbeziehung zur Bank.\n\nDie Aussage ist wahr.",
+      "Nicht nur das Konto zählt. Zum Eigenkapital gehören finanzielle Mittel und Sacheinlagen. Ein Fahrzeug oder Computer, der in den Betrieb übergeht, erhöht die eigene Basis ebenso wie eine Überweisung. Die Behauptung, nur Geldbeträge zählten, streicht die Sacheinlage aus der Definition. Das Buch nennt beides in einem Atemzug und illustriert es am Lieferwagen mit zwei PCs. Ohne Sacheinlagen wäre die Eigenkapitaldefinition unvollständig.\n\nDie Aussage ist falsch.",
+      "Beispiel und Regel fallen zusammen. Werden neben Geld ein kleiner Lieferwagen und zwei PCs eingebracht, erhöhen diese Sacheinlagen das Eigenkapital. Der Lehrtext wählt genau dieses Bild, damit klar wird: nicht nur der Kontostand, sondern auch nutzbare Gegenstände zählen, sobald sie dem Unternehmen gehören. Die Gründungskapitalbasis wächst um den Wert dieser Einlagen. Wer sie als Privatspielzeug ohne Kapitalwirkung abtut, widerspricht dem Beispiel.\n\nDie Aussage ist wahr.",
+      "Rückzahlung ist gerade nicht die Regel. Eigenkapital muss nicht zurückgezahlt werden und steht deshalb langfristig, in der Regel unbefristet, zur Verfügung. Eine Pflicht, nach einem kurzen Zeitraum alles an die Geber zurückzuführen, würde Eigenkapital wie einen befristeten Kredit behandeln. Genau das unterscheidet die Tabelle: Fremdkapital ist je nach Vereinbarung befristet und zurückzuzahlen, Eigenkapital nicht. Der Satz kehrt dieses Merkmal um.\n\nDie Aussage ist falsch.",
+      "Unbefristet meint den Normalfall der eigenen Mittel. Weil keine Rückzahlungspflicht besteht, bleiben die Einlagen dem Betrieb in der Regel ohne Enddatum. Deshalb eignet sich Eigenkapital für langfristige Investitionen, deren Nutzen über Jahre läuft. \"In der Regel unbefristet\" lässt seltene vertragliche Sonderwege offen, ändert aber nichts an der Buchregel. Wer Eigenkapital wie einen Dreimonatskredit denkt, verfehlt die Zeitachse der Tabelle.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.03",
+    "title": "Eigenkapital, Gewinne und Zinsen",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Folgen von Eigenkapital für Zinsen, Ausschüttungen und Investitionen:",
+    "statements": [
+      "Eigenkapital ist eine mögliche geeignete Finanzierungsart für langfristige Investitionen.",
+      "In Zeiten, in denen keine Gewinne erwirtschaftet werden, müssen für Eigenkapital dieselben Zinsen gezahlt werden wie für einen Kredit.",
+      "Werden Gewinne erwirtschaftet, können Auszahlungen an die Eigenkapitalgeber erfolgen, eine Verpflichtung dazu besteht jedoch nicht.",
+      "Werden Gewinne im Unternehmen belassen, erhöhen sie das Eigenkapital.",
+      "Für viele Unternehmen ist es realistisch, sich zur Gänze ausschließlich über Eigenkapital zu finanzieren."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Frist und Zweck passen zusammen. Weil Eigenkapital nicht zurückgezahlt werden muss und in der Regel unbefristet bleibt, nennt das Buch es eine mögliche geeignete Finanzierungsart für langfristige Investitionen. Maschinen, Fuhrpark oder Computerausstattung werden nur in größeren Abständen angeschafft; die Mittel sollen ebenso lange tragen, sonst entsteht Tilgungsdruck, während die Anlage noch genutzt wird. Geeignet heißt nicht einzig möglich: Fremdkapital kann je nach Vereinbarung ebenfalls langfristig sein, etwa als mehrjähriger Bankkredit. Der Satz hält die Eignung der eigenen Mittel fest, ohne Kredite zu verbieten oder kurzfristige Lieferverbindlichkeiten zur Maschinenfinanzierung umzudeuten.\n\nDie Aussage ist wahr.",
+      "Zinszwang trifft den Kredit, nicht die Einlage. Für Eigenkapital müssen in Zeiten ohne Gewinn keine Zinsen gezahlt werden wie für einen Kredit. Gläubiger verlangen Zinsen meist unabhängig vom Jahresergebnis; Eigenkapitalgeber haben in Verlustjahren keinen solchen festen Anspruch. Die Gleichsetzung beider Lasten in flauen Jahren ist deshalb falsch. Erst wenn Gewinne da sind, können Auszahlungen folgen, ohne dass daraus eine Pflicht wird.\n\nDie Aussage ist falsch.",
+      "Kann, muss aber nicht. Bei Gewinnen dürfen Auszahlungen an die Eigenkapitalgeber erfolgen, eine Verpflichtung dazu besteht nach dem Buch jedoch nicht. Die Gesellschafter können belassen statt entnehmen. Genau diese Freiheit unterscheidet Gewinnanteile von Kreditzinsen, die unabhängig vom Wunsch der Geschäftsführung fällig werden. Der Satz hält die Option und die fehlende Pflicht fest.\n\nDie Aussage ist wahr.",
+      "Belassen stärkt die eigene Basis. Gewinne, die im Unternehmen bleiben, erhöhen das Eigenkapital. Das ist derselbe Vorgang, den der Abschnitt später Selbstfinanzierung nennt: Innenfinanzierung aus dem Umsatz, die die Krisenresistenz hebt. Ausschüttung verringert diesen Zuwachs, Einbehalt vergrößert ihn. Die Aussage beschreibt die Kapitalwirkung, nicht die Steuererklärung.\n\nDie Aussage ist wahr.",
+      "Volle Eigenfinanzierung bleibt oft Wunsch. Für viele Unternehmen ist es unrealistisch, sich zur Gänze über Eigenkapital zu finanzieren. Deshalb treten Dritte auf, typischerweise Banken, und es entsteht Fremdkapital. Die Behauptung, vollständige Eigenfinanzierung sei für viele realistisch, kehrt den Lehrsatz um. Mischung aus eigenen und fremden Mitteln ist der Normalfall, nicht die Ausnahme.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.04",
+    "title": "Fremdkapital von Dritten",
+    "context": "Bewerten Sie die folgenden Aussagen zum Fremdkapital:",
+    "statements": [
+      "Kommt das Kapital von Dritten, zum Beispiel von einer Bank, wird es Fremdkapital genannt.",
+      "Fremdkapital steht für gewöhnlich nur befristet zur Verfügung und muss zurückgezahlt werden.",
+      "Kredite sind die wesentlichste Form von Fremdkapital.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber haben in der Regel dasselbe Mitspracherecht bei der Unternehmensführung wie Eigenkapitalgeber.",
+      "Für Fremdkapital müssen niemals Zinsen gezahlt werden, weil nur Eigenkapital verzinst wird."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Dritte liefern fremde Mittel. Sobald das Kapital nicht von Gründerinnen oder Gesellschaftern stammt, sondern von außen, etwa von einer Bank, heißt es Fremdkapital. Die Bank wird Gläubigerin, nicht Miteigentümerin kraft Kredit; Mitsprache bei der Führung bleibt in der Regel aus. Lieferanten können kurzfristig dieselbe Rolle spielen, wenn auf Ziel gezahlt wird. Die Bezeichnung folgt der Quelle Dritte, nicht dem bloßen Umstand, dass Geld auf dem Konto liegt. Rückzahlung und meistens Zinsen gehören zu dieser Beziehung, im Gegensatz zur Einlage. Die Aussage trifft die Buchdefinition der fremden Mittel.\n\nDie Aussage ist wahr.",
+      "Befristung und Tilgung gehören zum Fremdkapital. Es steht für gewöhnlich nur befristet zur Verfügung und muss zurückgezahlt werden. Am Ende der Laufzeit ist das Kapital selbst zurückzuführen, zusätzlich zu etwaigen Zinsen. Eigenkapital kennt diese Rückzahlungspflicht nicht. \"Für gewöhnlich\" lässt Sonderfälle offen, beschreibt aber den Standard, den die Merkmalstabelle festhält: kurz- oder langfristig je nach Vereinbarung, stets mit Rückzahlung.\n\nDie Aussage ist wahr.",
+      "Kredit ist die Hauptform, nicht die einzige. Das Buch nennt Kredite die wesentlichste Form von Fremdkapital. Langfristig gewähren vor allem Banken, kurzfristig treten Lieferanten mit Zahlungszielen hinzu; große Unternehmen können Anleihen emittieren. Die Vorrangstellung des Kredits streicht diese anderen Wege nicht, ordnet sie aber nach Häufigkeit. Wer den Kredit als Randerscheinung behandelt, verfehlt die Gewichtung des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Mitsprache folgt der Rechtsstellung, nicht dem Geldbetrag. Eigenkapitalgeber haben abhängig von der Rechtsform Mitspracherechte; Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung. Eine Bank steuert nicht den Betrieb, nur weil sie einen Kredit gibt, sofern keine besonderen Sicherheitenverträge etwas anderes regeln. Die Gleichsetzung beider Mitsprache ist die Umkehrung der Tabelle. Gläubiger sichern Rückzahlung, Gesellschafter führen.\n\nDie Aussage ist falsch.",
+      "Zinsen liegen typischerweise auf der Fremdseite. Meistens muss Fremdkapital verzinst werden, also Zinszahlungen an die Gläubiger. Eigenkapital verlangt in Verlustjahren gerade keine solchen Zinsen. Die Behauptung, Fremdkapital sei niemals zu verzinsen und nur Eigenkapital trage Zinsen, verdreht beide Spalten der Tabelle. Auch wer auf Ziel zahlt und Skonto auslässt, zahlt genau genommen für den Lieferantenkredit. Zinsfreiheit ist hier die Ausnahme, nicht die Regel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.05",
+    "title": "Merkmale von Eigen- und Fremdkapital",
+    "context": "Bewerten Sie die folgenden Aussagen zu den in Tabelle 3 zusammengefassten Merkmalen von Eigen- und Fremdkapital:",
+    "statements": [
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben abhängig von der Rechtsform in unterschiedlichem Ausmaß Mitspracherechte.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben stets eine Sicherheit für die Rückzahlung ihres Kapitals.",
+      "Wenn der Kredit ausreichend besichert ist, können Fremdkapitalgeberinnen und Fremdkapitalgeber eine Sicherheit für die Rückzahlung haben.",
+      "Fremdkapital kann nach Vereinbarung kurzfristig oder langfristig zur Verfügung stehen."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "Rechtsform steuert die Stimme der Eigenen. Die Tabelle ordnet Eigenkapitalgebern Mitspracherechte zu, aber nicht in einheitlicher Stärke: das Ausmaß hängt von der Rechtsform ab. In einer Personengesellschaft greifen andere Mitwirkungsregeln als in einer Kapitalgesellschaft mit Geschäftsführung und Gesellschafterversammlung. Unterschiedlich heißt nicht beliebig null; es heißt, die Form bestimmt, wer wie weit mitredet, während Fremdkapitalgeber in der Regel außen vor bleiben. Wer allen Kapitalgebern dieselbe Stimme zuschreibt, liest die Tabellenspalten ineinander. Der Satz gibt die Zelle zu den Eigenen wieder.\n\nDie Aussage ist wahr.",
+      "Gläubiger führen den Betrieb in der Regel nicht. Fremdkapitalgeber haben laut Tabelle in der Regel kein Mitspracherecht bei der Unternehmensführung. Sie stellen befristete Mittel, verlangen Zinsen und Tilgung, sitzen aber nicht anstelle der Gesellschafter in der Leitung. \"In der Regel\" lässt besondere Vertragsbindungen offen, ändert die Grundregel aber nicht. Wer der Bank denselben Einfluss wie den Eigentümern zuschreibt, liest die falsche Spalte.\n\nDie Aussage ist wahr.",
+      "Rückzahlungssicherheit steht bei Eigenkapital auf \"nein\". Die Tabelle fragt, ob Kapitalgeber eine Sicherheit für die Rückzahlung haben, und antwortet für Eigenkapital mit nein. Das folgt daraus, dass Eigenkapital nicht zurückgezahlt werden muss. Eine ständige Sicherheit für Rückzahlung würde Eigenmittel wie einen besicherten Kredit behandeln. Der Satz \"stets eine Sicherheit\" ist die Umkehrung der Buchzelle und daher falsch.\n\nDie Aussage ist falsch.",
+      "Besicherung entscheidet auf der Fremdseite. Für Fremdkapital gilt: wenn der Kredit ausreichend besichert ist, ja. Hypothek, Pfand oder vergleichbare Sicherheiten geben Gläubigern Zugriff, falls nicht gezahlt wird. Ohne ausreichende Besicherung fehlt diese Sicherheit. Die Aussage wiederholt die bedingte Tabellenantwort, ohne aus jedem Kredit automatisch eine Vollbesicherung zu machen.\n\nDie Aussage ist wahr.",
+      "Vereinbarung setzt die Frist. Fremdkapital kann kurzfristig und langfristig zur Verfügung stehen, je nach Vereinbarung. Lieferverbindlichkeiten decken oft Wochen, Bankkredite Jahre, Anleihen ebenfalls längere Laufzeiten. Eigenkapital bleibt in der Regel unbefristet; die Fremdspalte ist gerade die flexible. Wer Fremdkapital nur als Immer-langfristig oder nur als Immer-kurzfristig denkt, ignoriert \"je nach Vereinbarung\".\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.06",
+    "title": "Lieferverbindlichkeiten und Skonto",
+    "context": "Ein Handelsbetrieb kauft Ware auf Ziel und prüft, ob er Skonto nutzen oder das Zahlungsziel ausreizen soll. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der kurzfristigen Kreditfinanzierung sind neben den Banken auch Lieferantinnen und Lieferanten wichtige Kreditgeber.",
+      "Müssen Lieferungen nicht gleich, sondern auf Ziel bezahlt werden, erfolgt die Finanzierung durch die Lieferanten und es entstehen Lieferverbindlichkeiten.",
+      "Verzichtet man für das Nutzen des Zahlungsziels auf einen möglichen Preisabzug für sofortiges Bezahlen (Skonto), werden genau genommen auch für das Zahlen auf Ziel Zinsen bezahlt.",
+      "Die Effektivverzinsung des Skontos ist in den meisten Fällen so niedrig, dass stets auf Ziel gezahlt werden sollte.",
+      "Das kurzfristige Überziehen des Bankkontos, um rascher zu bezahlen und Skonto zu nutzen, kann die ökonomisch sinnvollere Variante sein."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Kurzfristkredit hat zwei typische Geber. Langfristige Kreditfinanzierung kommt hauptsächlich von Banken; kurzfristig stehen neben den Banken die Lieferanten. Wer nur das Institut um die Ecke als Kreditgeber denkt, übersieht das Zahlungsziel als Kreditbeziehung mit Lieferverbindlichkeiten. Die Ware ist da, das Geld noch nicht: genau das ist kurzfristiges Fremdkapital, oft ohne separaten Kreditvertrag. Entgangener Skonto macht daraus sogar eine teure Variante. Der Satz stellt beide Geber nebeneinander, wie der Lehrtext die kurzfristige Seite beschreibt.\n\nDie Aussage ist wahr.",
+      "Auf Ziel heißt Lieferantenfinanzierung. Wird später gezahlt, finanziert der Lieferant die Zeitspanne; buchhalterisch entstehen Lieferverbindlichkeiten gegenüber diesen Lieferanten. Das ist kein Geschenk und kein Eigenkapital, sondern kurzfristiges Fremdkapital. Die Formulierung \"auf Ziel\" übersetzt der Text ausdrücklich als Zahlung zu einem späteren Zeitpunkt. Ohne diese Verschiebung müsste der Betrieb sofort liquide Mittel einsetzen.\n\nDie Aussage ist wahr.",
+      "Entgangener Skonto ist Zins in anderer Gestalt. Wer den Preisabzug für Sofortzahlung liegen lässt, zahlt für das Zahlungsziel: der höhere Rechnungsbetrag ist die Gegenleistung für späteres Zahlen. Das Buch sagt deshalb, es würden genau genommen auch für das Zahlen auf Ziel Zinsen bezahlt. Der Lieferantenkredit ist nicht zinsfrei, nur weil keine separate Zinsrechnung kommt. Skontoverzicht und Kreditzins sind ökonomisch verwandt.\n\nDie Aussage ist wahr.",
+      "Hoch, nicht niedrig, ist die typische Effektivverzinsung. In den meisten Fällen ist die Effektivverzinsung des Skontos sehr hoch. Deshalb kann das Ausreizen des Ziels teurer sein als ein kurzer Kontokorrent. Die Empfehlung, stets auf Ziel zu zahlen, weil der Skontoeffekt niedrig sei, kehrt die Größenordnung um. \"In den meisten Fällen sehr hoch\" ist die Buchaussage, keine Randnote. Wer das Ziel als Gratisstundung behandelt, unterschätzt die Kosten.\n\nDie Aussage ist falsch.",
+      "Kontoüberziehung kann billiger sein als Skontoverzicht. Weil die Effektivverzinsung des Skontos oft sehr hoch ist, kann das kurzfristige Überziehen des Bankkontos für rascheres Bezahlen die ökonomisch sinnvollere Variante sein. Der Betrieb zahlt der Bank Zinsen für wenige Tage und behält den Preisabzug. Das ist kein Plädoyer für dauerhafte Überziehung, sondern der Vergleich zweier kurzfristiger Fremdkapitalkosten. Die Aussage gibt genau diese Abwägung wieder.\n\nNote: Skonto wirkt wie ein teurer Lieferantenkredit, auch ohne ausgewiesenen Zinssatz.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.07",
+    "title": "Innenfinanzierung und Selbstfinanzierung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Innenfinanzierung:",
+    "statements": [
+      "Stammt die Finanzierungsquelle aus dem Umsatz des Unternehmens, spricht man von Innenfinanzierung.",
+      "Das Einbehalten von Gewinnen ist eine wichtige Finanzierungsquelle, wird auch Selbstfinanzierung genannt und erhöht das Eigenkapital.",
+      "Selbstfinanzierung ist Außenfinanzierung, weil Kundinnen und Kunden das Entgelt von außerhalb des Unternehmens zahlen.",
+      "Auch Abschreibungen und das Bilden von Rückstellungen können eine Innenfinanzierungsquelle sein.",
+      "Innenfinanzierung liegt nur vor, wenn eine Bank dem Unternehmen einen Kredit gewährt, der später aus Umsätzen bedient wird."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Quelle im Umsatz, Name Innenfinanzierung. Der Abschnitt trennt danach, woher die Mittel kommen: aus dem Umsatz des Unternehmens oder von außerhalb. Liegt die Quelle im Umsatz, heißt der Vorgang Innenfinanzierung. Verkaufserlöse speisen Selbstfinanzierung durch einbehaltene Gewinne, außerdem verdiente Abschreibungen und Rückstellungseffekte, weil dort Aufwand ohne Auszahlung entsteht. Die Definition hängt an der Quelle, nicht am Rechtsformetikett und nicht am Umstand, dass Kunden überweisen. Wer Innenfinanzierung mit irgendetwas im Gebäude oder mit einem später aus Umsatz getilgten Bankkredit verwechselt, verfehlt den Umsatzbezug der Quelle selbst.\n\nDie Aussage ist wahr.",
+      "Einbehalten hat einen zweiten Namen und eine Kapitalwirkung. Das Zurückhalten von Gewinnen ist eine wichtige Innenquelle, heißt Selbstfinanzierung und erhöht das Eigenkapital. Weniger Abhängigkeit von Gläubigern, keine Fremdkapitalzinsen auf diese Mittel, Puffer gegen Verluste: genau deshalb macht sie krisenresistenter. Ausschüttung wäre der Gegenweg. Der Satz verbindet Bezeichnung und Wirkung so, wie der Lehrtext sie verbindet.\n\nDie Aussage ist wahr.",
+      "Kundenzahlung macht aus Gewinn noch keine Außenfinanzierung. Außenfinanzierung liegt vor, wenn die Quelle außerhalb des Unternehmens liegt: neue Einlagen, Kredite, Anleihen. Dass Kunden das Entgelt überweisen, ist der Umsatz, aus dem Innenfinanzierung stammt. Würde jede Kundenzahlung Außenfinanzierung bedeuten, gäbe es Innenfinanzierung nicht. Selbstfinanzierung bleibt Innenfinanzierung und Eigenkapitalerhöhung, nicht Zufuhr von außen im Sinne der Grafik.\n\nDie Aussage ist falsch.",
+      "Drei Innenwege stehen nebeneinander. Neben dem Einbehalten von Gewinnen können Abschreibungen und Rückstellungen Innenfinanzierungsquellen sein. Beide mindern den Gewinn als Aufwand, ohne in dem Moment auszuzahlen; die Mittel bleiben vorerst im Betrieb und können andere Investitionen tragen. Der Text koppelt sie ausdrücklich an die Innenfinanzierung. Wer nur Selbstfinanzierung gelten lässt, streicht zwei der genannten Formen.\n\nDie Aussage ist wahr.",
+      "Bankkredit ist Außenfinanzierung mit Fremdkapital. Die Quelle liegt außerhalb, bei der Bank als Dritter. Dass Tilgung später aus Umsätzen kommt, ändert die Herkunft der aufgenommenen Mittel nicht. Innenfinanzierung verlangt, dass die Finanzierungsquelle selbst aus dem Umsatz stammt, nicht dass ein Fremdkredit irgendwann verdient wird. Die Einschränkung \"nur wenn die Bank ...\" verdreht die Definition.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.08",
+    "title": "Einbehaltene Gewinne und Überschuldung",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, warum einbehaltene Gewinne ein Unternehmen krisenresistenter machen:",
+    "statements": [
+      "Durch Selbstfinanzierung ist das Unternehmen weniger abhängig von Fremdkapitalgebern.",
+      "Für einbehaltene Gewinne müssen keine Fremdkapitalzinsen bezahlt werden.",
+      "Ist viel Eigenkapital vorhanden, kann ein Unternehmen auch mehrere Jahre mit Verlusten überstehen, ohne überschuldet zu sein.",
+      "Ist das Eigenkapital rasch aufgebraucht und übersteigt das Fremdkapital das Vermögen, ist das Unternehmen überschuldet und wirtschaftlich gefährdet.",
+      "Gewinne, die in das Unternehmen reinvestiert werden, dürfen Anlagen und Betriebsmittel nicht erneuern, weil Selbstfinanzierung nur der Schuldentilgung dient."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Weniger Gläubigerhebel folgt aus mehr eigenen Mitteln. Selbstfinanzierung erhöht Eigenkapital; das Unternehmen hängt dann weniger von Fremdkapitalgebern ab. Kredite können trotzdem bleiben, der Anteil und die Abhängigkeit sinken aber, wenn Gewinne nicht ausgeschüttet, sondern belassen werden. Krisenresistenz heißt hier: nicht jeder Investitionsschritt braucht eine neue Bankzusage, und Verlustjahre zehren zuerst an der eigenen Basis statt sofort an der Schwelle zur Überschuldung. Der Satz gibt den ersten der genannten Gründe wieder, neben Zinsfreiheit, Verlustpuffer und Reinvestition in Anlagen.\n\nDie Aussage ist wahr.",
+      "Eigene Mittel tragen keinen Kreditzins. Einbehaltene Gewinne sind Eigenkapital, keine verzinsliche Schuld. Deshalb müssen keine Fremdkapitalzinsen dafür bezahlt werden. Das entlastet in Jahren ohne Gewinn, in denen ein Kredit trotzdem Zinsen verlangen würde. Die Zinsfreiheit gilt für diese Innenquelle, nicht für parallel laufende Bankdarlehen. Der zweite Krisenpunkt des Lehrtexts ist genau diese fehlende Zinslast.\n\nDie Aussage ist wahr.",
+      "Puffer gegen Verlustjahre ist Eigenkapital. Verluste reduzieren das Eigenkapital. Ist viel davon vorhanden, können mehrere Jahre mit Minus verkraftet werden, ohne dass das Unternehmen überschuldet ist. Der Bestand fängt die Zehrung auf. Dünnes Eigenkapital wäre nach kurzer Zeit aufgebraucht. Die Aussage beschreibt diesen zeitlichen Puffer, ohne Verluste zu verharmlosen.\n\nDie Aussage ist wahr.",
+      "Überschuldung hat eine klare Schwelle. Wenn Eigenkapital rasch aufgebraucht ist und das Fremdkapital das Vermögen übersteigt, ist das Unternehmen überschuldet und wirtschaftlich gefährdet. Schulden größer als das Vermögen: die eigene Basis ist weg. Genau deshalb stärkt viel Eigenkapital die Widerstandskraft. Der Satz ist die Gegenprobe zum Verlustpuffer, nicht eine zweite Definition von Insolvenzverfahren.\n\nDie Aussage ist wahr.",
+      "Reinvestition hält den Betrieb modern. Gewinne, die im Unternehmen bleiben und reinvestiert werden, tragen dazu bei, Anlagen und Betriebsmittel zu erneuern; das Unternehmen bleibt ausgestattet und wettbewerbsfähig. Die Behauptung, Selbstfinanzierung dürfe nur Schulden tilgen und dürfe Anlagen nicht erneuern, streicht genau diesen vierten Grund. Einbehalt ist Innenfinanzierung für Erneuerung, nicht ein Verbot von Ersatzinvestitionen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.09",
+    "title": "Abschreibungsfinanzierung",
+    "context": "Ein Betrieb hat in einem Jahr 200.000 Euro in Sachanlagen investiert, die zehn Jahre genutzt werden. Bewerten Sie die folgenden Aussagen zur Abschreibungsfinanzierung:",
+    "statements": [
+      "Berücksichtigt ein Unternehmen bei den Aufwänden auch den Wertverlust von Maschinen, Computern und Fahrzeugen, so heißt dieser Wertverlust Abschreibung.",
+      "Die Abschreibung stellt eine Auszahlung dar, sodass das Geld im Moment der Buchung das Unternehmen verlässt.",
+      "Die verdienten Abschreibungen können in der Zwischenzeit für andere Investitionen verwendet werden.",
+      "Werden die Sachanlagen zehn Jahre genutzt, beträgt die Abschreibung in diesem Beispiel 20.000 Euro pro Jahr.",
+      "Werden die Erzeugnisse zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 200.000 Euro aus dieser Abschreibung zur Verfügung."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Wertverlust hat einen Namen. Bei der Preisbildung berücksichtigt der Betrieb alle Aufwände der Produktion, meist plus Gewinn. Zum Aufwand gehört der Wertverlust von Maschinen, Computern, Fahrzeugen: das ist die Abschreibung. Wird zu den kalkulierten Preisen verkauft, ist auch dieser Aufwand verdient, obwohl im Buchungsjahr keine Auszahlung in Höhe des Wertverlusts abfließt. Genau daraus entsteht der Innenfinanzierungsspielraum für andere Investitionen, im Beispiel 20.000 Euro jährlich bei 200.000 Euro Anschaffung und zehn Jahren Nutzung. Die Aussage benennt den Begriff so, wie der Abschnitt ihn einführt, ohne die Abschreibung mit der ursprünglichen Kaufauszahlung zu verwechseln.\n\nDie Aussage ist wahr.",
+      "Buchung ist nicht Abfluss. Der Wertverlust stellt keine Auszahlung dar; das Geld bleibt vorerst im Unternehmen. Genau darin liegt der Finanzierungseffekt: Aufwand mindert den Gewinn, die Kasse verlässt der Betrag dadurch nicht. Wer die Abschreibung wie eine Überweisung an den Maschinenhändler im Buchungsjahr behandelt, verwechselt Anschaffungsauszahlung und spätere Verteilung des Wertverlusts. Die Innenquelle entsteht, weil nicht ausgezahlt wird.\n\nDie Aussage ist falsch.",
+      "Parken und wieder einsetzen. Weil die verdiente Abschreibung nicht abfließt, können die Mittel in der Zwischenzeit für andere Investitionen verwendet werden. So bleiben Betriebsmittel aktuell, statt dass der volle Anschaffungsbetrag bis zum Ersatzjahr brachliegt. Das ist Abschreibungsfinanzierung als Innenfinanzierung, nicht ein zweites Eigenkapital von Gesellschaftern. Der Satz trifft den vom Buch genannten Verwendungszweck.\n\nDie Aussage ist wahr.",
+      "Anschaffung geteilt durch Nutzungsdauer. 200.000 Euro in einem Jahr, Nutzung zehn Jahre: 200.000 geteilt durch 10 ergibt 20.000 Euro Abschreibung pro Jahr. Dieser Betrag geht wie andere Kosten in die Preise. Die Division ist die lineare Verteilung des Beispiels, keine neue Zahlenerfindung. Wer 200.000 jedes Jahr als Abschreibung ansetzt, würde denselben Kauf zehnmal verdienen wollen.\n\nDie Aussage ist wahr.",
+      "Jährlich stehen 20.000 Euro, nicht 200.000. Werden die Räder zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung. Die 200.000 sind die einmalige Anschaffung, nicht der jährliche Innenfinanzierungsbetrag. Wer jedes Jahr die volle Investitionssumme als Abschreibungszufluss erwartet, verzehnfacht das Beispiel. Die Identität lautet: Anschaffung 200.000, Dauer 10, Jahresbetrag 20.000.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.10",
+    "title": "Rückstellungsfinanzierung",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rückstellungsfinanzierung:",
+    "statements": [
+      "Unternehmen bilden für mögliche Aufwände in der Zukunft Rückstellungen und sorgen so in der Buchhaltung dafür vor.",
+      "Rückstellungen können unter anderem einen möglichen Gerichtsprozess, Urlaubsansprüche, Pensionen oder Abfertigungszahlungen betreffen.",
+      "Die Rückstellungsbildung stellt einen Aufwand dar, der den Gewinn verringert, aber keine Auszahlung darstellt.",
+      "Weil eine Rückstellung den Gewinn mindert, stehen in der Zwischenzeit keine Mittel für andere Investitionen zur Verfügung.",
+      "Pensionsrückstellungen für Mitarbeiterinnen und Mitarbeiter, die erst in 20 oder 30 Jahren in Pension gehen, können einen langfristigen Finanzierungseffekt haben."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Vorsorge ist der Kern der Rückstellung. Für mögliche künftige Aufwände wird in der Buchhaltung vorgesorgt, bevor der Betrag fließt. Das Unternehmen erkennt den drohenden Aufwand früh, statt erst am Auszahlungstag zu reagieren. Innenfinanzierung entsteht, weil die Bildung Aufwand ist ohne sofortigen Mittelabfluss, analog zur Abschreibung. Gerichtsrisiko, Urlaub, Pension und Abfertigung sind typische Anlässe; bei Pensionen in 20 oder 30 Jahren wird der Effekt sogar langfristig. Der Satz gibt die Definition wieder, ohne schon zu behaupten, das Geld sei bereits an Gläubiger abgeflossen.\n\nDie Aussage ist wahr.",
+      "Vier Anlässe nennt der Text ausdrücklich. Ein Gerichtsprozess, den das Unternehmen verlieren könnte, Urlaubsansprüche, Pensionen und Abfertigungszahlungen sind genannte Fälle. Die Liste ist beispielhaft, nicht geschlossen, trifft aber genau die im Abschnitt genannten Typen. Wer Rückstellungen nur als Steuertrick ohne sachlichen Bezug denkt, verfehlt diese Anlässe. Jeder Fall ist ein möglicher späterer Aufwand, für den jetzt gebucht wird.\n\nDie Aussage ist wahr.",
+      "Gewinn runter, Kasse noch da. Die Bildung ist Aufwand und senkt den Gewinn, ähnlich der Abschreibung, ohne Auszahlung. Deshalb bleibt Liquidität, die sonst als Gewinn sichtbar und vielleicht ausgeschüttet würde, im Unternehmen. Gläubiger einer späteren Pension haben noch nicht das Geld erhalten; der Betrieb kann die Mittel zwischenzeitlich einsetzen. Die Aussage trennt Erfolgswirkung und Zahlungswirkung so, wie der Lehrtext es tut.\n\nDie Aussage ist wahr.",
+      "Minderung des Gewinns sperrt die Mittel nicht. Gerade weil nicht ausgezahlt wird, stehen die Beträge in der Zwischenzeit für andere Investitionen zur Verfügung. Das ist der Finanzierungseffekt, analog zur Abschreibung. Die Behauptung, nach Gewinnminderung sei nichts mehr einsetzbar, verwechselt buchhalterischen Aufwand mit einem Abfluss vom Konto. Innenfinanzierung durch Rückstellungen lebt von dieser Differenz.\n\nDie Aussage ist falsch.",
+      "Lange Horizonte verlängern den Effekt. Gehen Mitarbeiterinnen und Mitarbeiter erst in 20 oder 30 Jahren in Pension, liegt zwischen Bildung und Auszahlung ein weiter Zeitraum. Das Buch nennt das einen langfristigen Finanzierungseffekt. Kurzfristige Urlaubsrückstellungen wirken kürzer; Pensionen tragen Jahre. Die Aussage übernimmt das Zahlenbeispiel des Lehrtexts als Zeithorizont, nicht als Pflichtquote.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.11",
+    "title": "Außenfinanzierung mit Eigen- und Fremdkapital",
+    "context": "Bewerten Sie die folgenden Aussagen zur Außenfinanzierung:",
+    "statements": [
+      "Liegt die Finanzierungsquelle außerhalb des Unternehmens, spricht man von Außenfinanzierung.",
+      "Von außen können sowohl Eigenkapital als auch Fremdkapital zugeführt werden.",
+      "Außenfinanzierung besteht ausschließlich aus Fremdkapital, weil Eigenkapital nur durch Innenfinanzierung entstehen kann.",
+      "Die wichtigsten Fremdkapitalgeber von außen sind, wie zuvor ausgeführt, die Lieferantinnen und Lieferanten sowie die Banken.",
+      "Das Einbehalten von Gewinnen aus dem Umsatz ist die wichtigste Form der Außenfinanzierung."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Außen meint die Quelle, nicht das Gebäude. Liegt die Finanzierungsquelle außerhalb des Unternehmens, heißt der Vorgang Außenfinanzierung. Neue Gesellschaftereinlagen, also Eigenkapital von bestehenden oder neuen Beteiligten, Bankkredite, Lieferverbindlichkeiten und Anleiheemissionen kommen von dort. Der Gegensatz ist der Umsatz als Innenquelle mit Selbstfinanzierung, Abschreibung und Rückstellung. Wer außen mit Exportmärkten oder mit dem bloßen Standort der Maschine verwechselt, verfehlt die finanzwirtschaftliche Unterscheidung. Die Aussage ist die Definition des Abschnitts und der Einstieg in Abbildung 19.\n\nDie Aussage ist wahr.",
+      "Zwei Kapitalarten von außen. Die Grafik und der Text sagen ausdrücklich: von außen können Eigen- und Fremdkapital zugeführt werden. Bestehende oder neue Gesellschafter bringen Eigenkapital; Banken, Lieferanten und Anleihegläubiger bringen Fremdkapital. Außenfinanzierung ist also kein Synonym für Kredit. Wer nur eine der beiden Seiten zulässt, halbiert Abbildung 19. Die Aussage hält die Doppelzuordnung fest.\n\nDie Aussage ist wahr.",
+      "Eigenkapital von außen gibt es sehr wohl. Stammeinlagen einer GmbH, Aktienemission einer AG, Aufnahme neuer Gesellschafter bei anderen Rechtsformen: das ist Außenfinanzierung mit Eigenkapital. Innen entsteht zusätzliches Eigenkapital vor allem durch Selbstfinanzierung. Die Behauptung, Eigenkapital könne nur innen entstehen und außen sei nur fremd, widerspricht dem Abschnitt. Beide Raster, Eigen/Fremd und Innen/Außen, sind zu kreuzen, nicht gleichzusetzen.\n\nDie Aussage ist falsch.",
+      "Lieferanten und Banken bleiben die Hauptgläubiger. Der Text verweist zurück: die wichtigsten Fremdkapitalgeber sind Lieferanten und Banken. Kurzfristig Zahlungsziel, kurz- und langfristig Kredit; große Betriebe zusätzlich Anleihen. Die Rangfolge schließt die Anleihe nicht aus, stellt aber Alltaggeber vor. Die Aussage wiederholt diese Gewichtung.\n\nDie Aussage ist wahr.",
+      "Einbehalten gehört nach innen. Selbstfinanzierung stammt aus dem Umsatz, erhöht Eigenkapital und ist Innenfinanzierung. Außenfinanzierung wäre eine neue Einlage oder ein Kredit von Dritten. Die Umbenennung des Gewinnbehalts zur wichtigsten Außenform vermischt die beiden Raster. Kunden zahlen für Leistung; das macht den einbehaltenen Gewinn nicht zu einer Zufuhr von Kapitalgebern außerhalb im Sinne der Grafik.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.12",
+    "title": "Stammeinlagen und Aktienemission",
+    "context": "Bewerten Sie die folgenden Aussagen zur Außenfinanzierung durch Gesellschafter einer GmbH und einer Aktiengesellschaft:",
+    "statements": [
+      "Gesellschafterinnen und Gesellschafter einer GmbH müssen Einlagen leisten, die Stammeinlagen oder Geschäftsanteile heißen.",
+      "Die Stammeinlagen verschiedener Gesellschafterinnen und Gesellschafter müssen stets gleich hoch sein, und ein Mindeststammkapital gibt es nicht.",
+      "Bei einer Aktiengesellschaft ist das Grundkapital in Aktien zerlegt, sodass große Kapitalbeträge leichter beschafft werden können.",
+      "Werden Aktien von der Aktiengesellschaft ausgegeben und von Personen gekauft, hat diese Emission einen Finanzierungseffekt für die AG.",
+      "Die Aktie verbrieft ein Forderungsrecht gegen die Aktiengesellschaft wie eine Anleihe und kein Anteilsrecht am Grundkapital."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "GmbH-Einlagen haben zwei Namen. Gesellschafter müssen Einlagen leisten, Stammeinlagen oder Geschäftsanteile. Das ist Außenfinanzierung mit Eigenkapital: die Mittel kommen von den Beteiligten, nicht aus einbehaltenem Umsatz und nicht als Kredit der Bank. Unterschiedliche Höhen sind möglich, solange insgesamt das Mindeststammkapital erreicht wird; Gleichheit jeder einzelnen Einlage verlangt der Text nicht. Die AG zerlegt später Grundkapital in Aktien, das ändert die GmbH-Begriffe nicht. Der Satz trifft Bezeichnung und Pflicht der GmbH-Gesellschafter, ohne schon Emission und Aktienhandel zu vermengen.\n\nDie Aussage ist wahr.",
+      "Ungleich und mit Untergrenze. Die Stammeinlagen verschiedener Gesellschafter können unterschiedlich hoch sein; insgesamt muss jedoch das Mindeststammkapital erreicht werden. Gleichheit jeder Einlage ist nicht vorgeschrieben, das Mindeststammkapital existiert sehr wohl. Der Satz behauptet das Gegenteil beider Regeln. Wer gleiche Mini-Einlagen ohne Untergrenze verlangt, beschreibt nicht die GmbH des Lehrtexts.\n\nDie Aussage ist falsch.",
+      "Zerlegung erleichtert große Beträge. Das Grundkapital, auch Aktienkapital genannt, ist in Aktien zerlegt, sodass große Kapitalbeträge leichter beschafft werden können. Viele Personen kaufen Stücke statt einer einzigen riesigen Einlage. Das ist der finanzwirtschaftliche Sinn der AG in diesem Abschnitt, nicht primär das Börsenprestige. Die Aussage gibt genau diesen Beschaffungseffekt wieder.\n\nDie Aussage ist wahr.",
+      "Emission bringt Mittel, der spätere Handel nicht. Gibt die AG Aktien aus und kaufen Personen sie, fließt der AG Kapital zu: Finanzierungseffekt der Emission. Die Aktie verbrieft ein Anteilsrecht am Grundkapital. Unbefristet, ohne vorgesehene Rückzahlung an die Aktionäre. Der Satz beschreibt nur diesen ersten Schritt, den der Text von späterem Aktienhandel trennt.\n\nDie Aussage ist wahr.",
+      "Aktie ist Anteil, Anleihe ist Forderung. Die Aktie verbrieft ein Anteilsrecht, einen Anteil am Grundkapital. Anleihen verbriefen ein Forderungsrecht der Käuferinnen und Käufer gegen den Emittenten. Wer die Aktie zur Anleihe macht, vertauscht Eigenkapitalzufuhr und Fremdkapitalzufuhr. Kurs entsteht durch Angebot und Nachfrage nach den Aktien, das ändert den Rechtscharakter nicht. Die Aussage ist die falsche Wertpapierdefinition.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.13",
+    "title": "Aktienhandel, Kurs und Kapitalerhöhung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Aktienhandel und Kapitalerhöhung:",
+    "statements": [
+      "Eine Rückzahlung des Aktienkapitals an die Aktionärinnen und Aktionäre ist nicht vorgesehen; es handelt sich um unbefristet zur Verfügung gestelltes Kapital.",
+      "Verkauft eine Aktionärin ihre Aktien an eine andere Person, entsteht für die Aktiengesellschaft ein weiterer Finanzierungseffekt in gleicher Höhe wie bei der Emission.",
+      "Von Kursgewinnen beim Aktienhandel profitieren die Aktionärinnen und Aktionäre.",
+      "Erhöht eine Aktiengesellschaft ihr Grundkapital, haben zunächst die bestehenden Aktionärinnen und Aktionäre das Recht, die neu ausgegebenen jungen Aktien zu kaufen.",
+      "Wer das Bezugsrecht auf junge Aktien verkauft, verhindert damit, dass andere Personen Aktionärinnen oder Aktionäre werden können."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Unbefristet und ohne Rückzahlungsplan. Aktienkapital soll nicht an die Aktionäre zurückgezahlt werden; es steht unbefristet zur Verfügung, passend zur Eigenkapitalseite der Merkmalstabelle. Aktionäre steigen aus, indem sie Anteile an andere verkaufen, nicht indem die AG das Grundkapital wie einen Kredit tilgt. Dieser Verkauf erzeugt für die Gesellschaft keinen weiteren Finanzierungseffekt, im Gegensatz zur Emission. Die Aussage hält genau diese Dauer der Einlage fest. Tilgung zum Nominale wäre das Vokabular der Anleihe als Fremdkapital, nicht der Aktie als Anteilsrecht.\n\nDie Aussage ist wahr.",
+      "Zweiter Markt speist die AG nicht. Durch Aktienhandel entsteht kein weiterer Finanzierungseffekt für die AG. Geld wechselt zwischen alt und neu beteiligten Personen; das Grundkapital der Gesellschaft bleibt dasselbe. Nur die Emission, der Verkauf durch die AG selbst, bringt ihr Mittel. Die Gleichsetzung von Weiterverkauf und Emission verdoppelt fälschlich den Zufluss. Kursgewinne gehen an die verkaufenden Aktionäre.\n\nNote: Nur die Ausgabe durch die AG finanziert die Gesellschaft, nicht der Handel unter Anlegerinnen und Anlegern.\n\nDie Aussage ist falsch.",
+      "Kursgewinn bleibt bei den Anteilseignern. Wer teurer verkauft als gekauft hat, realisiert den Unterschied; die AG erhält diesen Betrag beim Zweitverkauf nicht. Der Text trennt klar: kein weiterer Finanzierungseffekt für die AG, von Kursgewinnen profitieren die Aktionäre. Angebot und Nachfrage setzen den Kurs. Die Aussage trifft die Zuordnung des Vorteils.\n\nDie Aussage ist wahr.",
+      "Bezugsrecht sichert die Quote. Bei einer Kapitalerhöhung dürfen bestehende Aktionäre zuerst die jungen Aktien kaufen und so ihren prozentuellen Anteil am Grundkapital halten, wenn sie das möchten. Das Recht folgt aus der Gesellschafterstellung, nicht aus einer Börsenlaune. Wer die jungen Aktien ignoriert, verdünnt seinen Anteil, sofern andere zeichnen. Der Satz gibt die erste Stufe der Erhöhung wieder.\n\nDie Aussage ist wahr.",
+      "Verkauf des Bezugsrechts öffnet die Tür, statt sie zu schließen. Wer das Bezugsrecht verkauft, ermöglicht anderen, Aktien zu kaufen und neue Aktionäre zu werden. Das Buch sagt das ausdrücklich als Alternative zum eigenen Kauf. Verhindern würde gerade das Festhalten und Selbstzeichnen. Die Behauptung kehrt die Wirkung des Verkaufs um.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.14",
+    "title": "Anleihen als Fremdkapital",
+    "context": "Bewerten Sie die folgenden Aussagen zur Finanzierung über Anleihen:",
+    "statements": [
+      "Große Unternehmen haben die Möglichkeit, über die Emission einer Anleihe Fremdkapital aufzunehmen.",
+      "Anleihen werden auch Schuldverschreibungen, Renten oder Bonds genannt und sind Wertpapiere, die ein Forderungsrecht verbriefen.",
+      "Das Anleihenominale kann in kleinere Teilbeträge geteilt (stückelt) werden, sodass viele Geldgeberinnen und Geldgeber Teilbeträge zur Verfügung stellen können.",
+      "Am Ende der Laufzeit wird eine Anleihe in der Regel nicht getilgt, weil Anleihekapital Eigenkapital ist und unbefristet im Unternehmen bleibt.",
+      "Anleihengläubigerinnen und Anleihengläubiger erzielen Zinsen entsprechend der Verzinsung und, sofern sie vor Fälligkeit verkaufen, den Unterschiedsbetrag zwischen Kaufs- und Verkaufskurs."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Emission statt eines einzigen Riesenkredits. Große Unternehmen können über die Ausgabe einer Anleihe Fremdkapital aufnehmen, weil besonders große Beträge schwer als Kredit bei einer Bank zu holen sind. Der österreichische Staat erscheint im Text als weiterer Großschuldner neben etwa der voestalpine AG. Stückelung teilt das Nominale, damit viele Gläubiger Teilbeträge zeichnen. Die Anleihe ist Außenfinanzierung mit Fremdkapital und Forderungsrecht, nicht eine zweite Aktienemission mit Anteilsrecht. Tilgung am Laufzeitende bleibt die Erwartung. Die Aussage trifft Möglichkeit und Kapitalart.\n\nDie Aussage ist wahr.",
+      "Drei Beinamen, ein Rechtscharakter. Schuldverschreibungen, Renten oder Bonds sind andere Wörter für Anleihen. Es sind Wertpapiere, die ein Forderungsrecht verbriefen: die Käuferinnen und Käufer haben eine Forderung gegen den Emittenten, einen Großschuldner, zu vereinbarten Bedingungen von Verzinsung und Laufzeit. Das ist die Gegenwelt zur Aktie mit Anteilsrecht. Der Satz verbindet Namen und Rechtsinhalt.\n\nDie Aussage ist wahr.",
+      "Stückelung öffnet viele Geber. Das Anleihenominale, der benötigte große Betrag, wird in kleinere Teilbeträge geteilt. Viele verschiedene Geldgeber kaufen einen oder mehrere Teile. So wird finanzierbar, was als einzelner Bankkredit schwer wäre. voestalpine AG und der österreichische Staat dienen im Buch als Größenordnung, nicht als Pflichtemittenten jeder GmbH. Die Aussage beschreibt den technischen Kern der Stückelung.\n\nDie Aussage ist wahr.",
+      "Tilgung ist der Normalfall am Ende. Für gewöhnlich wird am Ende der Laufzeit das ausgeborgte Geld zum Nominale oder zum festgelegten Kurs zurückgezahlt; man sagt, die Anleihe wird getilgt. Anleihekapital ist Fremdkapital, befristet, mit Rückzahlung, nicht unbefristetes Eigenkapital wie Aktienkapital. Gläubiger erwarten Tilgung zum Fälligkeitstermin plus vereinbarte Zinsen. Der Satz macht aus der Anleihe fälschlich eine Aktie.\n\nDie Aussage ist falsch.",
+      "Zwei Ertragsquellen, wenn nicht bis zum Schluss gehalten wird. Zinsen entsprechend der Verzinsung und, bei Verkauf vor Fälligkeit, der Unterschied zwischen Kaufs- und Verkaufskurs. Wer bis zum Termin hält, bekommt Tilgung plus Zinsen, nicht notwendig denselben Kursgewinn. Der Kurs während der Laufzeit folgt Angebot und Nachfrage. Die Aussage nennt genau die beiden im Text aufgezählten Erträge.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.15",
+    "title": "Anleiheverzinsung, Euribor und Floater",
+    "context": "Bewerten Sie die folgenden Aussagen zu Anleihebedingungen und zum Euribor:",
+    "statements": [
+      "Die Verzinsung zählt zu den wichtigsten Anleihebedingungen und kann während der Laufzeit fix, also unveränderlich, oder variabel sein.",
+      "Bei variabler Verzinsung wird die Verzinsung an das allgemeine Zinsniveau angepasst, zum Beispiel an den Euribor.",
+      "Euribor bedeutet Euro Interbank Offered Rate und bezeichnet durchschnittliche Zinssätze, zu denen Banken einander kurzfristige Geldanlagen in Euro gewähren.",
+      "Variabel verzinste Anleihen werden so genannte Floater genannt.",
+      "Der Kurs einer Anleihe richtet sich niemals nach Angebot und Nachfrage, sondern ausschließlich nach dem Nominale."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Zinsregel ist Kern der Bedingungen. Verzinsung, Laufzeit und verwandte Abreden bestimmen, zu welchen Konditionen der Großschuldner sich Geld ausborgt. Die Verzinsung kann über die Laufzeit fest bleiben oder sich ändern. Fix heißt unveränderlich, variabel heißt anpassbar an das allgemeine Zinsniveau, etwa über den Euribor; solche Papiere heißen Floater. Wer nur eine der beiden Formen als die Anleihe kennt, unterschlägt die andere und verwechselt zudem Kurs und Nominale. Der Satz gibt die Buchalternative zur wichtigsten Bedingung wieder, ohne die Tilgung am Ende aufzuheben.\n\nDie Aussage ist wahr.",
+      "Anpassung braucht einen Bezug. Variabel heißt: die Verzinsung wird an das allgemeine Zinsniveau angepasst, als Beispiel nennt der Text den Euribor. Steigt oder fällt das Referenzzinsniveau, bewegt sich die Anleiheverzinsung mit. Das trifft Gläubiger und Emittenten anders als ein fester Kupon. Die Aussage verbindet Variable und Beispielindex, ohne jeden Vertrag auf Euribor zu zwingen.\n\nDie Aussage ist wahr.",
+      "Banken untereinander, Euro, kurzfristig. Euribor ist die Euro Interbank Offered Rate: durchschnittliche Zinssätze, zu denen Banken einander kurzfristige Geldanlagen in Euro gewähren. Es gibt verschiedene Sätze je nach genauer Laufzeit. Sie dienen als Basiszinssatz für Finanzgeschäfte, darunter variabel verzinste Anleihen. Die Aussage ist die Definition des Kastens, keine Börsenweisheit außerhalb des Buchs.\n\nDie Aussage ist wahr.",
+      "Floater ist der Name für die variable Anleihe. Variabel verzinste Anleihen werden so genannte Floater genannt; der Euribor kann ihr Basiszinssatz sein. Der Spitzname ändert nichts am Charakter: weiter Fremdkapital, weiter Tilgung am Ende, nur die Zinsseite schwimmt mit dem Markt. Wer Floater für Aktien hält, weil der Name englisch klingt, verlässt den Lehrtext. Die Aussage setzt Bezeichnung und Sachverhalt gleich.\n\nDie Aussage ist wahr.",
+      "Kurs und Nominale sind nicht dasselbe. Anleihen können bei Emission oder während der Laufzeit gekauft werden; ihr Preis, der Kurs, richtet sich nach Angebot und Nachfrage. Das Nominale ist der Nennbetrag, zu dem für gewöhnlich am Ende getilgt wird, nicht der laufende Marktpreis. \"Niemals Angebot und Nachfrage\" widerspricht dem Satz über den Anleihekurs. Wer nur das Nominale als Preis kennt, kann Zwischenverkauf und Kursdifferenz nicht denken.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.16",
+    "title": "Eigen, fremd, innen und außen",
+    "context": "Eine Wiener Produktions-GmbH kombiniert Sacheinlagen der Gründerinnen, einbehaltene Gewinne, Lieferverbindlichkeiten, einen Bankkredit und später eine Aktienemission nach Umwandlung in eine AG. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Bankkredit ist Außenfinanzierung mit Fremdkapital.",
+      "Selbstfinanzierung durch einbehaltene Gewinne ist Innenfinanzierung und erhöht das Eigenkapital.",
+      "Sacheinlagen der Gründerinnen sind Fremdkapital, weil ein Lieferwagen von außen in die Halle fährt.",
+      "Lieferverbindlichkeiten aus dem Zahlen auf Ziel sind kurzfristiges Fremdkapital, nicht Eigenkapital.",
+      "Der Weiterverkauf bereits ausgegebener Aktien zwischen Anlegerinnen und Anlegern ist für die Aktiengesellschaft dieselbe Außenfinanzierung wie die Emission."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Zwei Raster, ein Kredit. Die Bank ist Dritte, die Quelle liegt außerhalb: Außenfinanzierung. Das Kapital muss zurückgezahlt und meist verzinst werden, Gläubiger ohne typische Mitsprache: Fremdkapital. Beides zugleich, nicht entweder oder. Einbehaltene Gewinne wären das Gegenstück innen und eigen; Sacheinlagen der Gründerinnen bleiben eigen, auch wenn der Lieferwagen durch das Tor rollt; Lieferverbindlichkeiten sind kurzfristig fremd. Nur die Emission speist eine AG neu, nicht der spätere Aktienhandel. Die Aussage kreuzt die Definitionen korrekt am alltäglichsten Beispiel des Bankkredits.\n\nDie Aussage ist wahr.",
+      "Umsatz, Einbehalt, höhere eigene Basis. Die Quelle ist der Umsatz, also Innenfinanzierung; die Form heißt Selbstfinanzierung; die Wirkung ist mehr Eigenkapital und mehr Krisenresistenz. Keine neuen Gläubiger, keine Fremdzinsen auf diesen Betrag, Puffer gegen Verlustjahre. Wer denselben Gewinnbehalt als Kredit von Kunden umdeutet, rutscht in die Außen-Fremd-Ecke, die das Buch nicht vorsieht. Der Satz hält Herkunft und Kapitalart fest.\n\nDie Aussage ist wahr.",
+      "Physisch außen ist nicht finanzwirtschaftlich fremd. Sacheinlagen der Gründerinnen erhöhen das Eigenkapital: Lieferwagen und PCs zählen wie Geld. Außenfinanzierung mit Eigenkapital wäre denkbar, wenn die Einlage von Gesellschaftern kommt, niemals aber Fremdkapital nur weil das Fahrzeug durch das Tor rollt. Fremdkapital kommt von Dritten als Kreditbeziehung. Die Verwechslung von Sachort und Kapitalqualität ist die Falle.\n\nDie Aussage ist falsch.",
+      "Zahlungsziel schafft Gläubiger, keine Gesellschafter. Auf Ziel zahlen heißt Lieferantenfinanzierung und Lieferverbindlichkeiten: kurzfristiges Fremdkapital, oft ohne formellen Bankvertrag, mit verstecktem Zins über entgangenen Skonto. Eigenkapital wäre Einlage oder einbehaltener Gewinn. Lieferanten haben in der Regel kein Mitspracherecht der Führung. Die Aussage ordnet die Position in die Fremdspalte und die kurze Frist.\n\nDie Aussage ist wahr.",
+      "Emission speist die AG, der Zweitmarkt speist sie nicht. Beim ersten Verkauf durch die Gesellschaft fließt Kapital zu, Außenfinanzierung mit Eigenkapital. Danach tauschen Anleger Stücke; die AG erhält keinen weiteren Finanzierungseffekt, Kursgewinne bleiben bei den Verkäuferinnen und Verkäufern. Dieselbe Buchung wie bei der Emission gibt es beim Weiterverkauf nicht. Die Gleichsetzung beider Vorgänge ist die härteste Klassifikationsfalle des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,94 @@
+#### 4.3 Das Internet als Plattform für Unternehmen
+
+Zentraler Baustein für die Realisierung der Digitalisierung ist das Internet. Zahlreiche Funktionen, die Sie privat oder auch in Unternehmen verwenden, um Informationen auszutauschen oder miteinander zu kommunizieren, bauen auf der Technik des Internets auf. Es stellt die wichtigste IT-Infrastruktur dar, um die globale Vernetzung von Personen und Unternehmen zu unterstützen. Es ist wichtig dabei zu verstehen, dass das Internet als Netzwerk zu verstehen ist. Es handelt sich um ein Netzwerk von Netzwerken, die weltweit miteinander verbunden sind. Dieses Netzwerk kann unterschiedlich aussehen. Hochseekabel verbinden Kontinente miteinander und zu Hause oder im Unternehmen werden Daten drahtlos übermittelt. In jedem Fall wird auf ein Netzwerk zugegriffen – das Internet.
+
+Was ist ein Netzwerk? 
+Ein Netzwerk, bzw. ein Rechnernetz (engl.: computer network), wird als 
+räumlich verteiltes System von Datenstationen verstanden, die durch 
+Kommunikationseinrichtungen und -wege miteinander verbunden sind, um 
+Daten auszutauschen. Unter einer Datenstation versteht man einen 
+Rechner (z.B. ein PC, Tablet oder Smartphone). Eine 
+Kommunikationseinrichtung könnte zum Beispiel ihr WLAN-Modul im 
+Rechner sein oder der WLAN-Router im Haushalt. Der Kommunikationsweg 
+kann kabellos oder kabelgebunden umgesetzt werden. 
+Das World Wide Web (kurz: WWW, oder Web) ist eine Anwendung bzw. ein Dienst, der auf der 
+Infrastruktur des Internets aufbaut und es ermöglicht Informationen zur Verfügung zu stellen, 
+auffindbar zu machen und sinnvoll darzustellen. 
+Worin besteht der Unterschied zwischen Internet und 
+World Wide Web? 
+In unserem täglichen Leben und im beruflichen Umfeld verwenden wir die 
+Begriffe oft als Synonym. Man recherchiert im Internet, meint aber 
+eigentlich, dass man über das Web mittels eines Browsers nach 
+Informationen gesucht hat. Man schickt eine E-Mail über das Web, 
+verwendet hier aber einfach nur einen weiteren Dienst (die E-Mail), welcher 
+das Internet zur Übertragung verwendet. Worin besteht also der 
+Unterschied? 
+Das Internet ist ein riesiges Netzwerk. Über dieses Netzwerk können wir 
+Daten verschicken und empfangen. Daten können zum Beispiel zu einer E 
+Mail gehören, zu einer Suchanfrage oder zu einer Nachricht über Whatsapp. 
+Das WWW – das Web – ist ein Dienst, der auf der Infrastruktur des Internets 
+aufbaut – dieses Netzwerk also verwendet. Im Web können wir Inhalte 
+darstellen, Informationen suchen und Transaktionen durchführen. Der 
+Web-Browser ist meistens die direkte Schnittstelle, um auf das WWW 
+zuzugreifen. 
+
+Tim Berners-Lee hat im Jahr 1989, während seiner Arbeit bei CERN, das World Wide Web erfunden. 5 
+Im Jahr 1990 hat Tim Berners-Lee zu seinem Projekt einen wissenschaftlichen Aufsatz publiziert, in 
+dem er seine Idee zum Organisieren von Informationen im Internet vorstellt. Der Titel des Aufsatzes 
+lautete „Information Management: A Proposal“. 6 Darin schlägt er eine Lösung vor wie man im Internet 
+Informationen systematisch ablegen und bereitstellen kann, so dass andere Menschen diese 
+Informationen einfach wiederfinden und aufrufen können. Die Motivation für dieses Projekt lag 
+ursprünglich in dem Bestreben am CERN in Genf – in dem Tim Berners-Lee damals arbeitete – ein 
+System aufzubauen, um Forschungsergebnisse mit anderen Kollegen einfach zu verwalten und 
+auszutauschen. 
+Die grundlegenden Konzepte die Tim Berners-Lee damals kommunizierte sind heute maßgeblich für 
+ein funktionierendes WWW notwendig: 
+• Hypertext Transfer Protocol (HTTP): Ein Protokoll, in dem festgehalten wird welche Schritte notwendig sind, damit ein Browser Informationen von einem Server anfordern kann. 
+• Hypertext Markup Language (HTML): Eine Sprache, die dazu verwendet wird, um Informationen zu strukturieren und so festzuhalten, dass sie ein Browser richtig darstellen kann, so dass Sie ein Mensch auch lesen kann. 
+• Uniform Resource Locator (URL): Ein einheitliches System, um die Informationen zu adressieren, also auffindbar und abrufbar zu machen. 
+
+Was ist ein Protokoll? Ein Protokoll im Kontext der Informationstechnologie ist nicht dasselbe wie ein Protokoll, welches für eine Besprechung erstellt wurde. Im Kontext der Informationstechnologie spricht man auch von einem Kommunikationsprotokoll. Dieses hält Regeln fest, wie Rechner präzise und möglichst unmissverständlich miteinander kommunizieren sollen. Im Protokoll wird unter anderem festgehalten, wie Meldungen formuliert werden müssen, wie Antworten auf Meldungen gestaltet werden müssen oder welche Zeichen, Inhalte und Repräsentationsgrößen verwendet werden dürfen. Ähnlich wie bei der Post, wenn Sie einen Brief aufgeben, müssen Sie sich an klare Regeln und Konventionen halten. Sie müssen auf dem Brief den Adressaten angeben inklusive seiner Adresse und sie müssen den Absender angeben, falls der Brief nicht zugestellt werden kann.
+
+Wenn Sie also – umgangssprachlich formuliert - „im Web surfen“, dann verwenden Sie meistens einen Browser der über ein definiertes Protokoll (HTTP) mit einem Server kommuniziert, um Informationen in diesem Browser unter anderem mithilfe von HTML anzuzeigen. Auf einer Webseite können Links (URLs) platziert sein die auf weitere Seiten verweisen. Diese Verknüpfungen nennt man auch Hyperlinks und sie machen das Web zu dem, was es ist: ein Netzwerk, in dem viele verschiedene Ressourcen miteinander verknüpft, adressiert und aufgerufen werden können.
+
+5 The birth of the web: https://home.cern/science/computing/birth-web, zuletzt aufgerufen am 29.11.2024. 6 Berners-Lee, Tim. (1990). Information Management: A Proposal. https://cds.cern.ch/record/369245/files/dd-89-001.pdf
+
+Der Browser kommuniziert also mit einem Server, um überhaupt auf eine Webseite zuzugreifen – das heißt, dass der Browser mithilfe der Regeln, die im Hypertext Transfer Protokoll festgehalten sind, eine Datei auf einem Server anfordern kann. Ein Server ist nichts anderes als ein Rechner, der in einem Serverraum verbaut ist und über das Netzwerk (das Internet) auf Anfragen wartet. Auf einem Server können viele verschiedene Systeme laufen, die unterschiedliche Aufgaben lösen. Eines davon ist ein System, welches Anfragen aus dem Internet bearbeitet – auch bekannt als Server Software. Wenn Ihr Browser also eine Anfrage für eine bestimmte HTML-Seite stellt (engl.: request), liefert die Server Software auf dem Server eine Antwort (engl.: response) aus. Diese Antwort kann unterschiedlich ausfallen je nachdem ob die HTML-Seite auf dem Server auffindbar ist oder nicht. Das beschriebene Prinzip der Kommunikation zwischen Browser und Server nennt sich auch „Request-Response-Prinzip“ und ist Teil der zugrundeliegenden Architektur des WWWs, welche als Client-Server-Architektur bezeichnet wird. Es ist wichtig zu verstehen, dass viele unserer Interaktionen im Internet auf dieser Architektur und diesem Prinzip auch heute noch aufbauen.
+
+Was bedeutet Client-Server Architektur? 
+Die Client-Server-Architektur (engl.: client-server architecture) ist ein 
+Modell welches zwischen dem Klienten (engl.: client) und dem Server (engl.: 
+server) unterscheidet. Auf einem Server können mehrere Anwendungen 
+laufen, welche Dienstleistungen (engl.: services) über ein Netzwerk – das 
+Internet – zur Verfügung stellt. Der Klient – zum Beispiel ein Web-Browser – 
+kann von einem Server Inhalte anfordern. 
+
+Auf Basis dieser Architektur und dieser Kommunikationsprinzipien können im WWW verschiedene Dienstleistungen zur Verfügung gestellt werden. Abbildung 33 zeigt Ausprägungen, wie zum Beispiel: eine Vergleichsplattform, welche es Kunden ermöglicht einen Überblick über Anbieter in einem Markt zu erhalten; ein Webshop, welches Bestellungen abwickelt; ein Inhaltsanbieter über den Nachrichten online zur Verfügung gestellt werden.
+
+Abbildung 33: Beispiele für Dienstleistungen und Plattformen im WWW
+
+Die Möglichkeiten über das Web Dienste anzubieten ist zahlreich und wächst stetig. Der Web-Browser ist dabei die zentrale Schnittstelle, um auf diese Dienste im WWW zuzugreifen. Es muss aber nicht
+
+immer ein Web-Browser sein. Es kann auch sein, dass Unternehmenssoftware selbst Schnittstellen zur 
+Verfügung haben, um im Internet mit anderen Unternehmen zu kommunizieren und Informationen 
+auszutauschen. 
+Durch diese Möglichkeit in einem digitalen Netzwerk Leistungen anzubieten wird ein Markt geschaffen 
+bzw. ein Markt um einen digitalen Ort erweitert, über den ökonomische Transaktionen abgewickelt 
+werden können. Es entsteht eine Internetökonomie. 
+Was ist die Internetökonomie? 
+Die Internetökonomie umfasst die ökonomische Nutzung des Internets, um 
+wertschöpfende Transaktionen durchzuführen. Es entsteht dadurch ein 
+digitaler Markt bzw. eine digitale Plattform in einem digitalen Netzwerk mit 
+unterschiedlichen Marktteilnehmerinnen. 
+Das Internet wird somit zu einer neuen Plattform für Unternehmen. Auf dieser Plattform können 
+Anbieter und Kunden miteinander in Austausch treten. Dabei benötigt es manchmal noch zusätzliche 
+Plattformbetreiber, die für einen spezifischen Markt eine digitale Plattform anbieten. Für Sie als 
+Endkunde ist es vielleicht gar nicht offensichtlich, dass Sie über einen Plattformbetreiber in Kontakt 
+mit anderen Händlern treten (siehe unten mit dem Beispiel zu refurbed). 
+Grundlegend für all diese Innovationen ist das Internet, welches mittlerweile seit über 30 Jahren 
+erfolgreich einen neuen digitalen Raum geschaffen hat in dem zahlreiche Innovationen stattfinden 
+können. 
+
+Beispiele für digitale Märkte, bzw. digitale Plattformen
+
+Refurbed (www.refurbed.at) bietet einen digitalen Marktplatz für Firmen die gebrauchte und professionell wiederaufbereitete Technologie verkaufen möchten. Privatpersonen können über die Plattform refurbed nach Produkten suchen und diese Produkte anpassen. Im Hintergrund werden die besten Angebote von verfügbaren Händlern gesammelt und dem Kunden angeboten. Der Kunde kann dann mit dem entsprechenden Händler einen Kaufvertrag abschließen und das Produkt wird daraufhin zugeschickt. Refurbed hat den Marktplatz digital zur Verfügung gestellt. Ein weiteres Beispiel für einen digitalen Marktplatz ist willhaben (www.willhaben.at). Hier können über eine digitale Plattform Anzeigen in verschiedenen Branchen aufgeben werden und Interessenten miteinander daraufhin in Kontakt treten um Transaktionen abzuschließen.

@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.65",
+    "title": "Was die Wettbewerbssituation bestimmt",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Bestimmungsgrößen der Wettbewerbssituation auf dem Markt:",
+    "statements": [
+      "Die Wettbewerbssituation auf dem Markt ist in erster Linie von der Anzahl der Anbieter für ein bestimmtes Gut abhängig.",
+      "Außerdem ist entscheidend, ob es vergleichbare Güter gibt, durch die das Gut ersetzt werden kann, oder nicht.",
+      "Die Marktform richtet sich ausschließlich nach der Zahl der Nachfrager und niemals nach der Anbieterzahl.",
+      "Ohne den Blick auf Ersatzgüter bleibt die Beschreibung der Wettbewerbssituation unvollständig.",
+      "Sobald irgendein Gut gehandelt wird, liegt immer dieselbe Wettbewerbssituation vor, unabhängig von Anbieterzahl und Substituten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zuerst zählt, wie viele Verkäufer dasselbe Gut anbieten. Ein Anbieter, wenige oder sehr viele: daran hängt die grobe Einordnung. Der Abschnitt stellt die Anbieterzahl an den Anfang, nicht den Geschmack der Kundschaft und nicht die Rechtsform der Betriebe. Wer nur Nachfrager zählt, verfehlt die erste Linie des Textes.\n\nDie Aussage ist wahr.",
+      "Neben der Kopfzahl der Verkäufer steht die Ersatzfrage. Gibt es vergleichbare Güter, kann man ausweichen; gibt es sie nicht, bleibt man beim angebotenen Gut. Genau diese Alternative oder ihr Fehlen prägt, wie hart der Wettbewerb wirkt. Die zweite Bedingung gehört zur Definition, sie ist kein Schmuckstück danach.\n\nDie Aussage ist wahr.",
+      "Nachfrager spielen später bei Monopson und Oligopson eine Rolle, sie ersetzen aber nicht die Anbieterzahl als erste Größe. Ausschließlich und niemals streichen genau das, was der Text voranstellt: die Anzahl der Anbieter für ein bestimmtes Gut. Eine Marktform nur aus der Nachfrageseite zu lesen, verdreht die Reihenfolge des Abschnitts.\n\nWettbewerbssituation hängt in erster Linie von den Anbietern ab. Vergleichbare Güter kommen hinzu. Die Nachfrageseite definiert Sonderfälle wie das Monopson, nicht die ganze Typologie. Wer Anbieter für irrelevant erklärt, kann Monopol, Oligopol und Polypol nicht mehr unterscheiden. Die absolute Einschränkung auf Nachfrager ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Ersatzgüter entscheiden mit, ob Kundinnen und Kunden gebunden sind oder wechseln können. Fehlt dieser Blick, bleibt nur eine Kopfzahl ohne Ausweichmöglichkeit. Der Lehrtext nennt beides: Anbieterzahl und vergleichbare Güter. Unvollständig wäre eine Beschreibung, die nur eine der beiden Größen zulässt.\n\nDie Aussage ist wahr.",
+      "Kakao, Bahnfahrten und Mobilfunk sind nicht dieselbe Wettbewerbswelt, nur weil jeweils etwas verkauft wird. Anbieterzahl und Substitute unterscheiden Monopol, Oligopol und Polypol. Immer dieselbe Lage behauptet Konstanz, wo der Abschnitt gerade verschiedene Situationen einführt. Der Handel an sich erzeugt keine einheitliche Marktform.\n\nEin Gut auf einem Markt zu bringen genügt nicht. Ein einziger Bahnbetreiber, drei Mobilfunker und tausend Landwirtinnen stehen in völlig verschiedenen Verhältnissen. Ohne Anbieterzahl und ohne die Frage nach Ersatz bleibt die Lage unbestimmt. Die Behauptung einer immer gleichen Situation widerspricht dem ganzen Unterabschnitt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.66",
+    "title": "Nur ein Anbieter: das Monopol",
+    "context": "Bewerten Sie die folgenden Aussagen zum Monopol als Marktform:",
+    "statements": [
+      "Gibt es nur einen Anbieter und eine größere Zahl von Nachfragenden, dann handelt es sich um ein Monopol.",
+      "In marktwirtschaftlichen Wirtschaftsordnungen sind Monopole selten, aber möglich.",
+      "Ein Monopol setzt voraus, dass derselbe Verkäufer weltweit die gesamte Produktion aller verwandten Güter beherrscht.",
+      "In einigen Ländern gibt es beispielsweise nur einen Anbieter für Bahntransport.",
+      "Ein Monopol liegt nur dann vor, wenn es weder Nachfrager noch irgendein handelbares Gut gibt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ein Verkäufer, viele Käufer: das ist die Grundfigur. Der Text koppelt beides, nicht den Alleinanbieter ohne Kundschaft. Bahn in manchen Ländern ist das Schulbeispiel. Wer Monopol mit gar keinem Markt verwechselt, liest die Einzahl der Anbieterseite falsch.\n\nDie Aussage ist wahr.",
+      "Marktwirtschaft heißt nicht, dass Alleinanbieter unmöglich wären. Sie kommen selten vor, der Abschnitt lässt sie aber ausdrücklich zu. Selten ist nicht nie. Möglichkeit und Häufigkeit sind zwei Sätze, beide stehen im Lehrtext.\n\nDie Aussage ist wahr.",
+      "Das Monopol bezieht sich auf ein bestimmtes Gut und die Anbieterzahl dafür, nicht auf die Weltherrschaft über alle verwandten Produkte. Ein Bahnmonopol im Inland bleibt ein Monopol, auch wenn anderswo Busse, Flugzeuge oder andere Bahnen existieren. Die weltweite Allzuständigkeit ist eine Erfindung, die der Definition die lokale und güterbezogene Grenze nimmt.\n\nNur ein Anbieter eines Gutes gegenüber vielen Nachfragenden reicht. Verwandte Güter auf anderen Märkten oder in anderen Ländern gehören nicht zur Definitionsbedingung. Wer globale Totalbeherrschung verlangt, macht aus einem klaren Fall fast nie ein Monopol. Der Lehrtext denkt enger und konkreter.\n\nDie Aussage ist falsch.",
+      "Bahntransport mit einem einzigen Anbieter ist das Beispiel des Abschnitts. Es illustriert, dass Monopole vorkommen, ohne dass jedes Land so organisiert sein müsste. Das Beispiel trägt die Definition, es ersetzt sie nicht durch eine Pflicht für alle Staaten.\n\nDie Aussage ist wahr.",
+      "Ohne Nachfrager gäbe es keinen Markt, auf dem ein Alleinanbieter Preise setzen könnte. Das Monopol braucht gerade eine größere Zahl von Nachfragenden. Nur dann, wenn niemand kauft und nichts gehandelt wird, kehrt die Figur um. Leerer Raum ist kein Monopol.\n\nAnbieter eins, Nachfragende viele: so steht es da. Die Bedingung weder Nachfrager noch Gut beschreibt das Gegenteil eines Marktes. Absolute Wörter wie nur und weder-noch machen aus einer Marktform eine leere Menge. Das trifft die Definition nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.67",
+    "title": "Staat und Bahnmonopol",
+    "context": "Bewerten Sie die folgenden Aussagen zur Rolle des Staates bei Monopolen:",
+    "statements": [
+      "Besteht ein Monopol, ist in der Regel der Staat daran beteiligt.",
+      "Ein gesamtwirtschaftliches Interesse kann darin liegen, dass das Unternehmen Leistungen zu leistbaren Preisen anbietet, etwa Bahnverbindungen in dünn besiedelte Gebiete.",
+      "Staatliche Beteiligung an einem Bahnmonopol schließt jedes öffentliche Interesse an leistbaren Preisen aus.",
+      "Monopole sind in Marktwirtschaften gesetzlich völlig unmöglich und kommen daher nie vor.",
+      "Der Staat kann ein Interesse daran haben, dass auch Strecken mit geringer Siedlungsdichte bedient werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Alleinanbieter und öffentliche Hand hängen im Lehrtext zusammen. Nicht jeder private Kiosk ist gemeint, sondern typische große Fälle wie der Bahntransport. In der Regel lässt Ausnahmen zu, beschreibt aber den Normalfall der Beteiligung. Ohne Staat wäre das Bild des Abschnitts unvollständig.\n\nDie Aussage ist wahr.",
+      "Dünn besiedelte Gebiete rechnen sich oft nicht über den Ticketpreis allein. Trotzdem kann die Verbindung gesamtwirtschaftlich erwünscht sein. Leistbare Preise und Fläche gehören zusammen: der Staat hängt am Monopol, weil Versorgung und Preis nicht dem Zufall weniger zahlungskräftiger Fahrgäste überlassen werden sollen.\n\nDie Aussage ist wahr.",
+      "Gerade das Gegenteil steht im Text. Beteiligung heißt hier nicht, leistbare Preise zu verbieten, sondern sie im öffentlichen Interesse zu sichern. Wer staatliche Rolle und günstige Tickets für unvereinbar erklärt, verdreht das Bahnbeispiel. Das Interesse an leistbaren Preisen ist der Grund, nicht sein Ausschluss.\n\nBahn in die Fläche, Preise, die tragbar bleiben: das ist das Motiv. Ein Staat, der sich beteiligt, tut das im Lehrbuch nicht, um jedes Preisinteresse zu streichen. Die absolute Formulierung, jedes öffentliche Interesse sei ausgeschlossen, hält keiner Zeile des Abschnitts stand.\n\nDie Aussage ist falsch.",
+      "Selten, aber möglich: so lautet die marktwirtschaftliche Linie. Völlig unmöglich und nie sind stärkere Wörter als der Text erlaubt. Bahnmonopole in manchen Ländern belegen die Möglichkeit. Wer gesetzliche Totalunmöglichkeit behauptet, widerspricht Beispiel und Formulierung.\n\nMarktwirtschaftliche Ordnung schließt Monopole nicht aus der Welt. Sie macht sie unüblich, nicht undenkbar. Das Wort nie kippt eine vorsichtige Aussage in eine falsche Absolutheit. Das Bahnbeispiel allein reicht als Gegenbeleg.\n\nDie Aussage ist falsch.",
+      "Siedlungsdichte und Streckennetz fallen auseinander: wo wenige wohnen, fahren wenige, die Verbindung kann trotzdem gewollt sein. Genau dafür nennt der Text das gesamtwirtschaftliche Interesse. Der Staat hängt am Monopol, damit solche Strecken nicht einfach entfallen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.68",
+    "title": "Monopson auf der Nachfrageseite",
+    "context": "Bewerten Sie die folgenden Aussagen zum Monopson im Unterschied zum Monopol:",
+    "statements": [
+      "Gäbe es auf der Nachfrageseite nur einen Nachfrager und viele Anbieter, würde man diese Marktform als Monopson bezeichnen.",
+      "Monopson und Monopol sind dieselbe Marktform, weil beide Wörter mit Mono beginnen.",
+      "Beim Monopson liegt die Einzahl auf der Nachfrageseite, nicht bei einem einzigen Anbieter.",
+      "Viele Nachfragende und nur ein Anbieter beschreiben ein Monopson.",
+      "Die Unterscheidung von Monopol und Monopson hängt davon ab, auf welcher Marktseite die Einzahl liegt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Die Klammerbemerkung des Lehrtexts dreht die Figur um: ein Käufer, viele Verkäufer. Dafür steht der Name Monopson. Es ist die spiegelverkehrte Einzahl, nicht ein zweites Wort für denselben Alleinanbieter. Ohne diese Seite bliebe nur das Monopol im Blick.\n\nDie Aussage ist wahr.",
+      "Gemeinsamer Wortanfang stiftet keine gemeinsame Marktform. Monopol: ein Anbieter, viele Nachfragende. Monopson: ein Nachfrager, viele Anbieter. Wer die beiden in eins setzt, verwechselt Vorsilbe mit Definition. Der Text trennt sie ausdrücklich.\n\nMono markiert die Einzahl, sagt aber nicht, auf welcher Seite sie sitzt. Anbieterseite und Nachfrageseite ergeben zwei Formen. Dieselbe Marktform daraus zu machen, löscht genau den Satz in der Klammer. Der Gleichsetzungssatz ist falsch. Wer nur den gemeinsamen Wortanfang hört, übersieht, dass der Lehrtext die Klammer extra setzt: ein Nachfrager, viele Anbieter. Ohne diese Seitenangabe bliebe Mono ein leeres Etikett. Bahn mit einem Betreiber bleibt Monopol, eine einzige staatliche Einkaufsstelle gegenüber vielen Lieferanten wäre Monopson. Die Wörter sind verwandt und trotzdem nicht austauschbar.\n\nDie Aussage ist falsch.",
+      "Ein Nachfrager, viele Anbieter: die Besonderheit sitzt beim Kauf, nicht beim Verkauf. Der Alleinanbieter gehört zum Monopol. Wer das Monopson vom einzigen Verkäufer her denkt, hat die Seiten vertauscht. Der Lehrtext hält die Nachfrageseite fest.\n\nDie Aussage ist wahr.",
+      "Viele Nachfragende plus ein Anbieter ist die Definition des Monopols. Das Monopson verlangt den umgekehrten Aufbau. Die Zuordnung im Satz ist seitenverkehrt und damit falsch.\n\nEin Bahnunternehmen gegenüber vielen Fahrgästen ist kein Monopson. Monopson wäre eine einzige kaufende Stelle gegenüber vielen liefernden Betrieben. Die vertauschten Anzahlen machen aus dem richtigen Begriff das falsche Bild. So steht es nicht im Abschnitt.\n\nDie Aussage ist falsch.",
+      "Einzahl beim Anbieter oder Einzahl beim Nachfrager: das ist die Trennlinie. Dieselbe Kopfzahl auf der anderen Seite ergibt den anderen Namen. Ohne Seitenangabe bleiben Mono-Wörter unscharf. Der Satz hält die Systematik des Textes.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.69",
+    "title": "Theaterbuffet und Berghütte",
+    "context": "Bewerten Sie die folgenden Aussagen zu monopolartigen Stellungen in bestimmten Situationen oder Regionen:",
+    "statements": [
+      "Unternehmen, die nicht die einzigen Anbieter insgesamt sind, können sich in bestimmten Situationen oder Regionen dennoch in einer monopolartigen Stellung befinden.",
+      "Während einer Opern- oder Theateraufführung kann das Buffet der einzige Anbieter für Erfrischungen in den Pausen sein.",
+      "Berghütten können für bestimmte Wanderrouten oder Schiabfahrten die einzige Möglichkeit der Verpflegung sein.",
+      "Monopolartige Situationen erlauben nie höhere Preise, weil Alternativen stets unmittelbar nebenan stehen.",
+      "Höhere Preise im Buffet oder auf der Hütte können sich daraus ergeben, dass es in der Situation keine Alternativen gibt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Landesweit gibt es viele Cafés und Almwirte. In der Pause oder auf der Route zählt der eine Stand vor Ort. Der Abschnitt trennt einzigen Anbieter überhaupt von einzigem in dieser Lage. Monopolartig ist die örtliche oder zeitliche Enge, nicht die Weltrangliste der Gastronomie. Buffetketten in der Stadt und Hütten in anderen Tälern zählen nicht, sobald die Pause läuft oder der Steig keine Abzweigung hat. Die Wettbewerbssituation hängt an erreichbaren Anbietern und an vergleichbaren Gütern hier und jetzt. Genau deshalb kann ein Betrieb monopolartig dastehen, ohne der einzige Gastronom des Landes zu sein. Die Unterscheidung schützt davor, Marktformen nur nach der Telefonliste aller Cafés zu sortieren.\n\nDie Aussage ist wahr.",
+      "Zwischen den Akten führt der Weg zum Buffet, nicht zur Stadt. Andere Imbisse existieren, sie sind in diesem Moment nicht erreichbar. Der Lehrtext nimmt genau dieses Pausenszenario. Einziger Anbieter heißt hier: einziger in der Aufführung, nicht einziger Getränkeverkauf der Republik.\n\nDie Aussage ist wahr.",
+      "Wer auf einer bestimmten Abfahrt oder einem bestimmten Steig unterwegs ist, kann nicht beliebig zur nächsten Ortschaft wechseln. Die Hütte wird zur einzigen Verpflegung auf dieser Route. Das regionale Beispiel steht gleichberechtigt neben dem Theater. Lage ersetzt die große Anbieterzahl durch eine lokale Einzahl.\n\nDie Aussage ist wahr.",
+      "Gerade weil Alternativen fehlen, können Preise höher liegen. Nie höhere Preise und stets nebenan behaupten das Gegenteil des Lehrsatzes. Im Parkett und auf der Alm steht eben nicht immer ein zweiter Schalter. Die Absolutwörter kippen die monopolartige Lage in einen Traum vieler Anbieter, den der Text nicht teilt.\n\nKeine Alternative in der Pause, keine zweite Hütte auf der Abfahrt: das spiegelt sich häufig im Preisniveau. Höhere Preise sind die Folge fehlender Ausweichmöglichkeiten, nicht ein verbotenes Phänomen. Wer nie und stets setzt, leugnet genau diesen Zusammenhang. Die Aussage ist mit dem Abschnitt unvereinbar.\n\nDie Aussage ist falsch.",
+      "Preis und Alternative hängen zusammen. Fehlt der Ausweg, steigt der Spielraum nach oben. Der Text sagt das ungeschminkt für Buffet und Hütte. Höhere Preise sind hier nicht Willkür ohne Grund, sondern Spiegel der monopolartigen Situation.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.70",
+    "title": "Wenige Anbieter: das Oligopol",
+    "context": "Bewerten Sie die folgenden Aussagen zum Oligopol:",
+    "statements": [
+      "Gibt es mehr als einen, aber dennoch nur eine geringe Anzahl von Anbietern, so spricht man von einem Oligopol.",
+      "Im Oligopol haben die Anbieter vergleichsweise große Marktmacht, und jeder hat in den meisten Fällen einen relativ hohen Marktanteil.",
+      "Der Wettbewerb zwischen den Anbietern ist oft sehr hoch, damit sie ihren Marktanteil verteidigen können.",
+      "Oligopol bedeutet mathematisch immer genau zwei Anbieter weltweit und schließt jede andere geringe Zahl aus.",
+      "Sobald drei Anbieter existieren, liegt zwingend ein Monopol vor, weil Monopol stets mehr als zehn Firmen bedeutet."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Mehr als einer, aber wenige: das ist die Spanne. Nicht die Einzahl des Monopols, nicht die sehr große Zahl des Polypols. Mobilfunk und Verkehrsflugzeuge passen in dieses Fenster. Die Definition bleibt qualitativ, sie verlangt keine magische Kopfzahl aus einem Lehrsatz über zwei Firmen.\n\nDie Aussage ist wahr.",
+      "Wenige teilen den Kuchen grob. Jeder Brocken ist groß, die Macht gegenüber Kundschaft und Rivalen ist spürbar. Trotzdem folgt daraus nicht Ruhe. Marktmacht und Marktanteil beschreiben die Ausgangslage, nicht das Ende jeder Rivalität.\n\nDie Aussage ist wahr.",
+      "Verteidigen heißt hier: den eigenen Anteil halten, oft mit scharfem Wettbewerb. Der Abschnitt warnt davor, Oligopol mit gemütlichem Nichtangriff zu verwechseln. Intensität kommt später je nach Gut, die Grundlinie bleibt: oft sehr hoch. Wenige Spieler können sich hart bekriegen.\n\nDie Aussage ist wahr.",
+      "Geringe Anzahl ist nicht die Zahl zwei als Naturgesetz. Drei Mobilfunker bleiben Oligopol, fünf Flugzeugbauer ebenso, sofern die Schar klein bleibt. Immer genau zwei weltweit und jede andere Zahl ausgeschlossen sind Fallen aus Absolutwörtern. Der Text nennt keine Weltformel mit der Ziffer zwei.\n\nMehr als einer, wenige insgesamt: das reicht. Eine globale Zwangszahl zwei würde nationale Märkte mit drei oder vier Anbietern aus der Kategorie werfen, obwohl der Lehrtext sie dort einsortiert. Mathematische Einzigartigkeit der Zwei steht nicht im Abschnitt. Der Satz hält nicht.\n\nDie Aussage ist falsch.",
+      "Drei sind mehr als einer, also kein Monopol. Monopol ist der Alleinanbieter, nicht eine Fantasiegrenze von mehr als zehn Firmen. Die Begründung im Satz widerspricht beiden Definitionen zugleich. Zwingend folgt aus drei Anbietern das Oligopol, nicht das Monopol.\n\nEin Monopol braucht die Einzahl auf der Anbieterseite. Zehn oder mehr Firmen wären eher Richtung Polypol oder jedenfalls nicht Monopol. Drei bleiben in der geringen Anzahl. Wer Monopol als stets mehr als zehn definiert, hat den Begriff umgedreht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.71",
+    "title": "Mobiltelefonie und Verkehrsflugzeuge",
+    "context": "Bewerten Sie die folgenden Aussagen zur Wettbewerbsintensität im Oligopol:",
+    "statements": [
+      "Die tatsächliche Intensität des Wettbewerbs in einem Oligopol hängt von der Art der gehandelten Güter und der Marktstruktur ab.",
+      "Auf dem Markt für Mobiltelefonie kann intensiver Preiswettbewerb herrschen, weil eine Preissenkung und eine Ausweitung des Angebots für eine einzelne Firma sehr einfach und günstig zu erreichen sind.",
+      "Auf dem Markt für Verkehrsflugzeuge ist es kaum möglich, die Produktion kurzfristig auszuweiten, weshalb ein Unterbieten des Preises für eine einzelne Firma wenig Sinn ergibt.",
+      "In jedem Oligopol ist der Preiswettbewerb stets gleich intensiv, unabhängig vom Gut und von der Möglichkeit, die Produktion auszuweiten.",
+      "Wenige Hersteller von Verkehrsflugzeugen bilden ein Polypol, weil Flugzeuge physische Güter sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Nicht jedes Oligopol fühlt sich gleich an. Mobilfunk kann über den Preis rasen, Flugzeuge tun es oft nicht. Gut und Struktur erklären den Unterschied, nicht die bloße Tatsache, dass es wenige sind. Intensität ist eine Variable, keine Konstante der Marktform.\n\nDie Aussage ist wahr.",
+      "Kapazität im Netz oder im Tarif lässt sich vergleichsweise schnell ausdehnen. Wer billiger wird, kann Kundschaft gewinnen, ohne Jahre auf eine neue Fabrik zu warten. Deshalb lohnt Unterbieten eher. Der Lehrtext macht genau diese Leichtigkeit zur Ursache intensiven Preiswettbewerbs.\n\nDie Aussage ist wahr.",
+      "Ein zusätzliches Großflugzeug entsteht nicht über Nacht. Wer den Preis senkt, kann die Menge kurzfristig kaum nachschieben. Dann bringt das Unterbieten wenig. Schwere, langsame Produktion dämpft den Preiskampf, obwohl weiterhin ein Oligopol vorliegt.\n\nDie Aussage ist wahr.",
+      "Stets gleich intensiv widerspricht dem Paar Mobilfunk gegen Flugzeuge. Dieselbe geringe Anbieterzahl, zwei verschiedene Logiken der Ausweitung. Jedes Oligopol und stets wischen Gut und Struktur weg. Genau die soll der Abschnitt aber erklären.\n\nEinfach und günstig ausweiten oder kaum ausweiten: das spaltet die Intensität. Wer Unabhängigkeit vom Gut behauptet, macht aus zwei Lehrbuchbeispielen eine einzige Temperatur. Der Preiswettbewerb ist nicht überall im Oligopol gleich heiß. Die Absolutheit macht den Satz falsch. Mobiltelefonie und Verkehrsflugzeuge stehen im selben Kapitel, gerade weil sie sich nicht gleichen. Wer die Intensität für eine Naturkonstante des Oligopols hält, braucht die beiden Beispiele nicht. Der Text braucht sie aber, um zu zeigen: Ausweitung leicht oder Ausweitung kaum möglich ändert, ob Unterbieten lohnt. Stets und unabhängig sind mit dieser Gegenüberstellung unvereinbar.\n\nDie Aussage ist falsch.",
+      "Physisch ist das Flugzeug, polypolistisch ist der Markt deshalb nicht. Polypol verlangt eine sehr große Anzahl von Anbietern. Wenige Hersteller bleiben Oligopol. Die Körpereigenschaft des Gutes sortiert keine Marktform.\n\nKakao, Kleider und Flugzeuge sind alle anfassbar und stehen trotzdem in verschiedenen Wettbewerbslagen. Anbieterzahl und Substitute entscheiden, nicht der Aggregatzustand. Wenige Flugzeugbauer in ein Polypol zu stecken, verwechselt Ware mit Marktform. Der Satz ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.72",
+    "title": "Absprache als Kartell",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kartellen im Oligopol:",
+    "statements": [
+      "Grundsätzlich wäre denkbar, dass die wenigen Anbieter in einem Oligopol versuchen, sich im Hinblick auf Angebote und Preise abzusprechen, um den Wettbewerbsdruck zu reduzieren.",
+      "Solche Abmachungen werden als Kartell bezeichnet und sind gesetzeswidrig.",
+      "Offener Preiswettbewerb vieler kleiner Bäckereien ist per Definition ein Kartell.",
+      "Kartelle zielen darauf ab, den Wettbewerb zu verstärken, indem jedes Mitglied die anderen täglich unterbietet.",
+      "Ein Kartell liegt bereits vor, wenn Oligopolisten unabhängig voneinander konkurrieren, ohne jede Absprache."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Wenige kennen einander. Die Versuchung, Preise und Angebote abzustimmen statt zu kämpfen, liegt in der Struktur. Denkbar heißt nicht erlaubt. Der Text trennt die Möglichkeit der Absprache von ihrer rechtlichen Bewertung, die unmittelbar folgt.\n\nDie Aussage ist wahr.",
+      "Kartell ist der Name für genau diese Abmachungen. Gesetzeswidrig ist die klare Note. Wer Absprache und erlaubten Wettbewerb in eins setzt, verfehlt den Satz. Kundschaft soll den Druck spüren, nicht die abgestimmte Ruhe.\n\nDie Aussage ist wahr.",
+      "Viele kleine Bäckereien, die einander über den Preis Konkurrenz machen, sind das Gegenteil einer Absprache. Kartell braucht die Einigung, den Druck zu senken, nicht den offenen Wettbewerb. Per Definition wäre das eher ein polypolnahes Bild als ein Kartell. Die Zuordnung ist verkehrt.\n\nKartell: wenige sprechen sich ab. Bäckereiwettbewerb: viele unterbieten sich sichtbar. Wer das zweite als das erste bezeichnet, verdreht Zweck und Teilnehmerzahl. Offener Preiswettbewerb ist genau das, was Kartelle vermeiden wollen. Der Satz ist falsch. Viele kleine Bäckereien erfüllen eher die Vorstellung sehr vieler Anbieter als die der abgesprochenen wenigen. Kartell ist kein Synonym für jeden Preiswettbewerb. Es ist der Name für Abmachungen, den Druck zu senken. Wer offenen Kampf als Kartell bezeichnet, macht das Verbot sinnlos, weil dann jedes Feilschen illegal wäre. Der Lehrtext zielt auf die Absprache, nicht auf den sichtbaren Wettbewerb.\n\nDie Aussage ist falsch.",
+      "Reduzieren, nicht verstärken: so lautet das Motiv. Tägliches Unterbieten wäre Wettbewerb, den die Absprache gerade dämpfen soll. Die Zielrichtung im Satz steht kopf. Ein Kartell, das Rivalität maximiert, wäre keines.\n\nAngebote und Preise abstimmen, damit der Druck sinkt: das ist der Lehrsatz. Unterbieten als Pflicht der Mitglieder würde das Kartell sprengen. Die Behauptung kehrt Zweck und Mittel um. Deshalb ist sie falsch.\n\nDie Aussage ist falsch.",
+      "Unabhängige Rivalität bleibt Oligopol, wird aber nicht zum Kartell. Kartell beginnt bei der Abmachung. Ohne Absprache fehlt der Tatbestand, den der Text gesetzeswidrig nennt. Konkurrieren allein ist der erwünschte Zustand.\n\nWenige Anbieter können hart und unabhängig kämpfen. Genau das soll das Recht ermöglichen. Erst die Absprache über Angebot und Preis macht das Kartell. Wer schon den bloßen Oligopolwettbewerb so nennt, entleert den Begriff.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.73",
+    "title": "Wettbewerb, Patent und Gebietsschutz",
+    "context": "Bewerten Sie die folgenden Aussagen zu gesetzlichen Ausnahmen vom freien Wettbewerb:",
+    "statements": [
+      "Die gesetzlichen Bestimmungen sind in der Regel darauf ausgerichtet, den Wettbewerb zwischen Unternehmen zu ermöglichen und nicht einzuschränken.",
+      "Wettbewerb gilt im Regelfall als günstig für die Kundinnen und Kunden.",
+      "Patente geben als Innovationsanreiz einer Firma die Möglichkeit, für eine gewisse Zeit ein Monopol auf ihre neue Erfindung zu haben.",
+      "Gebietsschutz bei Apotheken und Rauchfangkehrerinnen bzw. Rauchfangkehrern ist im Lehrtext als Ausnahme genannt.",
+      "Jede Absprache über Preise ist stets erlaubt, sobald niemand aus einer Behörde bei der Sitzung sitzt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Recht soll Rivalität tragen, nicht ersticken. Einschränken ist der Ausnahmepfad, Ermöglichen die Regel. Kartelle stehen deshalb unter Verbot. Der Satz gibt die Grundrichtung der Bestimmungen wieder.\n\nDie Aussage ist wahr.",
+      "Kundinnen und Kunden profitieren typischerweise, wenn Anbieter sich gegenseitig unter Druck setzen. Deshalb gilt Wettbewerb als günstig. Der Regelfall begründet, warum Absprache gesetzeswidrig ist. Ohne diesen Nutzen gäbe es wenig Grund, Kartelle zu verbieten.\n\nDie Aussage ist wahr.",
+      "Neue Erfindung, befristetes Alleinrecht: das Patent ist der Innovationsanreiz. Zeitlich begrenzt, auf die Erfindung bezogen, nicht auf ewig den ganzen Markt. Ausnahme vom Wettbewerb ja, aber als befristetes Monopol mit Zweck, nicht als Freibrief für jede Absprache. Befristung und Zweck gehören zusammen: ohne zeitliche Grenze wäre das Patent ein dauerhaftes Monopol ohne Innovationslogik. Der Abschnitt nennt es ausdrücklich als Ausnahme zur Regel, Wettbewerb zu ermöglichen. Kundinnen und Kunden zahlen zeitweise den Alleinpreis, damit Erfindung sich lohnt. Das ist etwas anderes als ein Kartell, das Rivalen ruhigstellt. Wer Patent und Preisabsprache vermengt, verfehlt beide Institute.\n\nDie Aussage ist wahr.",
+      "Apotheke und Rauchfangkehrerei stehen ausdrücklich neben dem Patent. Gebietsschutz begrenzt, wer in einem Gebiet anbieten darf. Das ist die zweite genannte Ausnahme zur Regel, Wettbewerb zu ermöglichen. Der Satz bleibt am Text.\n\nDie Aussage ist wahr.",
+      "Kartelle sind gesetzeswidrig, unabhängig davon, ob eine Beamtin am Tisch sitzt. Heimlichkeit heilt die Absprache nicht, sie ist typisch für sie. Jede und stets erlaubt sind die Falle. Das Recht zielt auf Wettbewerb, nicht auf unbeobachtete Preisrunden.\n\nAbmachungen über Angebote und Preise bleiben verboten, auch im Hinterzimmer. Anwesenheit der Behörde ist keine Tatbestandsvoraussetzung des Verbots. Wer Erlaubnis an fehlende Zeugenschaft knüpft, verwechselt Nachweisproblem mit Legalität. Der Lehrtext nennt solche Abmachungen gesetzeswidrig, ohne Behördenklausel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.74",
+    "title": "Oligopson und Polypol",
+    "context": "Bewerten Sie die folgenden Aussagen zu Oligopson und Polypol:",
+    "statements": [
+      "Gäbe es umgekehrt viele Anbieter und nur wenige Nachfrager, läge ein Oligopson vor.",
+      "Gibt es eine sehr große Anzahl an Anbietern, spricht man von einem Polypol.",
+      "Oligopson und Oligopol sind identisch, weil beide wenige Teilnehmer zählen, unabhängig von der Marktseite.",
+      "Ein Polypol liegt bereits vor, wenn genau ein Anbieter den gesamten Markt bedient.",
+      "Die Vorsilben unterscheiden Einzahl, geringe Zahl und sehr große Zahl von Akteuren auf der jeweils genannten Marktseite."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Umgekehrt zum Oligopol: die Knappheit sitzt bei den Käufern. Viele wollen verkaufen, wenige kaufen. Dafür steht Oligopson. Die Spiegelung ist dieselbe Logik wie beim Paar Monopol und Monopson, nur mit wenigen statt einem.\n\nDie Aussage ist wahr.",
+      "Sehr viele Verkäufer: das ist das Polypol. Nicht wenige, nicht einer. Die sehr große Anzahl ist das Unterscheidungsmerkmal zur oligopolistischen Enge. Der Satz gibt die Definition des Lehrtexts wieder.\n\nDie Aussage ist wahr.",
+      "Oligo heißt wenige, sagt aber nicht, auf welcher Seite. Oligopol: wenige Anbieter. Oligopson: wenige Nachfrager. Unabhängig von der Marktseite identisch zu sein, löscht genau diese Spiegelung. Der Lehrtext führt beide Wörter getrennt ein.\n\nWenige Mobilfunker sind kein Oligopson. Wenige große Einkäufer gegenüber vielen Lieferanten sind kein Oligopol. Die Marktseite gehört zur Definition, sie ist kein Schmuck. Identität ohne Seite ist falsch. Spiegelung ist das Ordnungsprinzip des ganzen Unterabschnitts: Monopol und Monopson, Oligopol und Oligopson, dazu das Polypol der sehr vielen Anbieter. Identität ohne Marktseite würde diese Tafel zusammenstreichen. Dann gäbe es nur noch wenige oder viele, ohne zu sagen, auf welcher Seite. Der Lehrtext ist genauer und verlangt die Seite.\n\nDie Aussage ist falsch.",
+      "Genau ein Anbieter ist das Monopol. Polypol verlangt die sehr große Zahl. Bereits bei einem den Namen Polypol zu vergeben, verdreht die Skala vollständig. Der gesamte Markt in einer Hand ist das Gegenteil vieler Anbieter.\n\nBahn mit einem Betreiber bleibt Monopol, auch wenn das Wort Poly nach Vielheit klingt. Wer die Einzahl als Polypol liest, hat Mono und Poly vertauscht. Die Bedingung bereits bei genau einem ist mit dem Text unvereinbar.\n\nDie Aussage ist falsch.",
+      "Mono, Oligo, Poly ordnen Einzahl, geringe Zahl und sehr große Zahl. Monopson und Oligopson zeigen, dass dieselbe Logik auf der Nachfrageseite gilt. Ohne die genannte Seite bleibt die Vorsilbe leer. Der Satz fasst die Systematik zusammen, die der Abschnitt aufbaut.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.75",
+    "title": "Vollkommener Wettbewerb im Polypol",
+    "context": "Bewerten Sie die folgenden Aussagen zum vollkommenen Wettbewerb:",
+    "statements": [
+      "Der vollkommene Wettbewerb ist dadurch gekennzeichnet, dass es auf Angebots- und Nachfrageseite so viele Wirtschaftsteilnehmer gibt, dass zumindest theoretisch keiner den Preis beeinflussen kann.",
+      "Für den vollkommenen Wettbewerb gilt die theoretische Annahme vollkommener Transparenz, sodass alle Anbieter und Nachfrager jederzeit Zugang zu allen Informationen haben.",
+      "Es bestehen keine Beschränkungen zum Markt und keine persönlichen Präferenzen.",
+      "Vollkommener Wettbewerb verlangt einen einzigen dominanten Verkäufer, der den Preis für den gesamten Markt setzt.",
+      "Starke Produktdifferenzierung und dauerhafte rechtliche Marktzutrittsschranken sind definierende Merkmale des vollkommenen Wettbewerbs."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Sehr viele auf beiden Seiten, niemand allein stark genug für den Preis: das ist die theoretische Figur. Beeinflussen können wäre Marktmacht, die hier gerade entfällt. Zumindest theoretisch hält der Text die Modellwelt fest, nicht die Behauptung, jeder reale Markt sei so. Polypol und vollkommener Wettbewerb rücken hier zusammen.\n\nDie Aussage ist wahr.",
+      "Alle wissen jederzeit alles über das, was den Tausch betrifft. Transparenz ist eine der theoretischen Annahmen, keine nebensächliche Hoffnung. Fehlt Information, bricht das Modell. Der Satz gibt die Annahme vollständig wieder.\n\nDie Aussage ist wahr.",
+      "Offener Zutritt und keine persönlichen Vorlieben: zwei weitere Modellbedingungen. Wer nicht eintreten darf oder nur bei einer Marke kauft, sprengt die Figur. Der Lehrtext listet beides neben der Transparenz. Ohne diese Annahmen bleibt der vollkommene Wettbewerb unvollständig gedacht.\n\nDie Aussage ist wahr.",
+      "Ein dominanter Verkäufer, der den Preis setzt, ist das Monopol, nicht der vollkommene Wettbewerb. Die Modellwelt braucht so viele Teilnehmer, dass gerade niemand den Preis setzen kann. Die Forderung nach dem einen Preissetzer kehrt die Kennzeichnung um.\n\nTheoretisch keiner beeinflusst den Preis. Ein Einziger, der ihn für alle festlegt, erfüllt das Gegenteil. Dominant und gesamter Markt gehören zur Alleinanbieterlage. Vollkommener Wettbewerb verlangt Vielheit, nicht Herrschaft eines Verkäufers.\n\nDie Aussage ist falsch.",
+      "Differenzierung schafft persönliche Präferenzen, Schranken beschränken den Zutritt. Beides widerspricht den Annahmen. Definierende Merkmale wären Transparenz, offener Markt und fehlende Vorlieben. Der Satz setzt die Störfaktoren an die Stelle der Definition.\n\nDauerhafte rechtliche Barrieren und starke Unterscheidung der Produkte sind genau das, was das Modell ausschließt. Landwirtschaftlich standardisierbare Güter nähern sich eher an als stark gebrandete Unikate hinter Lizenzmauern. Die genannten Merkmale definieren eher monopolartige oder oligopolistische Lagen. Für den vollkommenen Wettbewerb sind sie falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.76",
+    "title": "Annahmen und standardisierbare Güter",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wo der vollkommene Wettbewerb realistisch ist:",
+    "statements": [
+      "Die Annahmen des vollkommenen Wettbewerbs werden auf den meisten Märkten nicht erfüllt.",
+      "Bestenfalls für standardisierbare Produkte mit vergleichbaren Merkmalen, etwa landwirtschaftliche Produkte oder Kapitalmärkte, können die Bedingungen dem vollkommenen Wettbewerb einigermaßen entsprechen.",
+      "Jeder Bekleidungseinzelhandel weltweit ist vollkommener Wettbewerb, weil Kleidung ein physisches Gut ist.",
+      "Vollkommener Wettbewerb setzt voraus, dass Käufer und Verkäufer absichtlich unvollständige Informationen über Rivalenpreise haben.",
+      "Starke Markenbindung durch Werbung stärkt die Annahmen des vollkommenen Wettbewerbs, weil persönliche Präferenzen dann besonders groß sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Theoretische Annahmen sind streng. Die meisten realen Märkte verfehlen Transparenz, offenen Zutritt oder fehlende Präferenzen. Der Lehrtext sagt das offen: nicht erfüllt auf den meisten Märkten. Modell und Alltag fallen auseinander, ohne dass das Modell damit wertlos würde.\n\nDie Aussage ist wahr.",
+      "Getreide einer Sorte, standardisierte Finanztitel: Merkmale vergleichbar, viele Teilnehmer denkbar. Einigermaßen entsprechen ist vorsichtig formuliert, nicht identisch mit dem Ideal. Landwirtschaft und Kapitalmarkt sind die Beispiele des Abschnitts. Bestenfalls markiert die Ausnahme, nicht die Regel.\n\nDie Aussage ist wahr.",
+      "Kleidung ist anfassbar und trotzdem stark differenziert: Marke, Schnitt, Lage des Geschäfts. Weltweit jeder Laden als vollkommener Wettbewerb ist eine Absolutbehauptung gegen den Text. Physisch zu sein sortiert keine Marktform. Mode und Präferenzen stehen den Annahmen eher entgegen.\n\nStandardisierbare Produkte mit vergleichbaren Merkmalen, nicht jedes T-Shirt der Welt. Persönliche Vorlieben und beschränkter Zutritt in Lagen oder Labels sprengen Transparenz und Gleichheit. Wer aus dem Stoff die Marktform ableitet, verwechselt Ware und Modell. Der Satz hält nicht.\n\nDie Aussage ist falsch.",
+      "Vollkommene Transparenz verlangt Zugang zu allen Informationen, nicht absichtliche Lücken. Unvollständigkeit wäre die Gegenannahme. Rivalenpreise nicht zu kennen, zerstört genau die Bedingung, die der Text setzt. Der Satz dreht Transparenz in ihr Gegenteil.\n\nJederzeit alle Informationen: so lautet die theoretische Annahme. Absichtlich unvollständig zu operieren, wäre eine andere Modellwelt. Wer Unwissen zur Voraussetzung macht, erfüllt den vollkommenen Wettbewerb nicht. Der Satz hält nicht.\n\nDie Aussage ist falsch.",
+      "Persönliche Präferenzen sollen im Modell fehlen. Werbung, die Bindung erzeugt, vergrößert genau diese Präferenzen. Stärken tut sie die Annahmen nicht, sie untergräbt sie. Besonders große Vorlieben sind das Gegenteil der geforderten Neutralität.\n\nKeine persönlichen Präferenzen: das ist die Liste. Markenliebe durch Werbung ist Präferenz in Reinform. Je stärker die Bindung, desto ferner der vollkommene Wettbewerb. Der Kausalsatz im zweiten Teil entlarvt den Fehler selbst.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.77",
+    "title": "Exklusives Buffet am Veranstaltungsort",
+    "context": "Bewerten Sie die folgenden Aussagen zur monopolartigen Stellung eines einzigen Verpflegungsstands während einer Vorstellung:",
+    "statements": [
+      "Ein exklusives Buffet während der Vorstellung erzeugt eine monopolartige Stellung an diesem Ort und zu dieser Zeit.",
+      "Geografisch oder zeitlich eng begrenzte Märkte können einen Anbieter örtlich dominant machen, obwohl landesweit weitere Anbieter existieren.",
+      "Vollkommener Wettbewerb würde viele gleichwertige Anbieter am selben Ort und Zeitpunkt verlangen, nicht einen einzigen Pausenkiosk.",
+      "Das Theaterbuffet ist ein Polypol, weil Getränke überall auf der Welt verkauft werden.",
+      "Ohne Alternative in der Pause können höhere Preise erzielt werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Exklusiv in der Pause heißt: kein zweiter Schalter im Haus. Der Lehrtext nimmt Oper und Theater genau so. Monopolartig, nicht unbedingt einziges Café der Stadt. Ort und Zeit schneiden den relevanten Markt klein. Opern- und Theaterbuffet sind das Schulbeispiel des Lehrtexts für monopolartige Lagen. Exklusivität entsteht durch die geschlossenen Türen zum Rest der Stadt, nicht durch ein gesetzliches Getränkemonopol der Republik. Wer den relevanten Markt weit fasst, sieht viele Cafés; wer ihn wie der Text fasst, sieht einen Schalter. Die Stellung folgt aus fehlenden Alternativen in der Pause.\n\nDie Aussage ist wahr.",
+      "Landesweite Vielfalt ändert nichts an der Enge im Foyer. Der Abschnitt sagt ausdrücklich: nicht die einzigen Anbieter insgesamt, trotzdem monopolartige Stellung in Situation oder Region. Dominant vor Ort und vielfältig im Land vertragen sich. Die Marktgrenze darf eng gezogen werden.\n\nDie Aussage ist wahr.",
+      "So viele Teilnehmer, dass niemand den Preis setzt: das verlangt den vollkommenen Wettbewerb. Ein Kiosk in der Pause erfüllt das nicht. Gleichwertige Alternativen müssten erreichbar sein, während der Vorhang zu ist. Der Kontrast macht die monopolartige Lage sichtbar.\n\nDie Aussage ist wahr.",
+      "Weltweiter Getränkeverkauf ist ein anderer Markt als die Pause im Haus. Polypol braucht sehr viele Anbieter desselben relevanten Marktes, nicht die Existenz von Limonade auf anderen Kontinenten. Das Buffet bleibt monopolartig. Die Weltkarte ersetzt nicht die Situation.\n\nÜberall auf der Welt gibt es Getränke, in der Pause oft nur das eine Buffet. Wer den Weltmarkt für Cola mit dem Foyer gleichsetzt, verfehlt Anbieterzahl und Ersatzgüter vor Ort. Polypol wäre die sehr große Zahl erreichbarer Verkäufer. Die ist hier nicht gegeben. In der Pause treten Käuferinnen und Käufer nur zum Buffet in Beziehung, nicht zu jedem Getränkestand der Welt. Der relevante Kreis ist das Haus und die Uhrzeit. Polypol wäre erst gegeben, wenn sehr viele Anbieter dieses Kreises existierten. Weltweite Limonade erfüllt das nicht.\n\nDie Aussage ist falsch.",
+      "Fehlende Alternative spiegelt sich häufig im Preisniveau. Der Text knüpft höhere Preise an monopolartige Situationen. Pause ohne Ausweg gibt Spielraum nach oben. Das ist dieselbe Logik wie bei der Berghütte.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.78",
+    "title": "Gebietsschutz der Apotheke",
+    "context": "Bewerten Sie die folgenden Aussagen zum Gebietsschutz bei Apotheken als Ausnahme vom Wettbewerb:",
+    "statements": [
+      "Gebietsschutz bei Apotheken ist eine Ausnahme von der Regel, Wettbewerb zwischen Unternehmen zu ermöglichen.",
+      "Fehlt in erreichbarer Nähe eine rivalisierende Apotheke, fehlen vor Ort vergleichbare Ersatzangebote.",
+      "Viele konkurrierende Apotheken auf demselben Platz würden den örtlichen Wettbewerb erhöhen.",
+      "Gebietsschutz verwandelt den Markt automatisch in ein Polypol, weil Arzneimittel standardisierbar sind.",
+      "Lange Anfahrtswege zwingen die einzige Apotheke stets dazu, niemals höhere Preise als bei vielen Rivalen zu verlangen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Regel: Wettbewerb ermöglichen. Ausnahme: Gebietsschutz, genannt neben Patenten und Rauchfangkehrern. Örtlich darf nicht jede rivalisierende Apotheke einfach daneben eröffnen. Der Satz trifft die Systematik des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Vergleichbare Güter und erreichbare Anbieter gehören zur Wettbewerbssituation. Ist die nächste Offizin weit, bleibt das Gut vor Ort ohne Ersatz. Das ist die regionale Enge, die der Text bei monopolartigen Lagen beschreibt. Nähe entscheidet mit, nicht nur die Ware an sich.\n\nDie Aussage ist wahr.",
+      "Viele Anbieter am selben Ort nähern die Lage dem Polypol oder zumindest schärferem Wettbewerb. Gebietsschutz wirkt in die Gegenrichtung. Würden mehrere auf dem Platz stehen, stiege die Intensität. Der Satz folgt aus Anbieterzahl und Ersatzgütern.\n\nDie Aussage ist wahr.",
+      "Standardisierbare Merkmale können dem vollkommenen Wettbewerb entgegenkommen, aber nur zusammen mit sehr vielen Anbietern und offenen Märkten. Gebietsschutz ist eine Beschränkung zum Markt. Automatisch Polypol ist das Gegenteil der Ausnahme. Die Ware allein macht die Form nicht.\n\nArzneimittel mögen vergleichbare Packungen haben, der Zutritt bleibt rechtlich begrenzt. Polypol verlangt die sehr große Anbieterzahl, die der Schutz gerade dämpft. Automatisch und weil standardisierbar überspringen die Anbieterseite. Der Satz hält nicht.\n\nDie Aussage ist falsch.",
+      "Monopolartige Enge erlaubt eher höhere Preise, weil Alternativen fehlen. Stets und niemals höhere Preise behaupten das Gegenteil ohne Textgrundlage. Lange Wege verstärken die Bindung an die eine Offizin, sie erzwingen keine Preissenkung auf Wettbewerbsniveau. Die Absolutwörter sind die Falle.\n\nBuffet und Hütte zeigen: keine Alternative, oft höheres Niveau. Eine isolierte Apotheke liegt näher an dieser Logik als am vollkommenen Wettbewerb. Der Satz erfindet einen Zwang zu niedrigen Preisen, den der Abschnitt nicht nennt. Deshalb ist er falsch. Gebietsschutz ist die rechtliche Enge, lange Wege sind die geografische. Beides mindert Ersatzgüter vor Ort. Höhere Preise können daraus folgen, wie bei Buffet und Hütte. Einen gesetzlichen Zwang zu stets gleichen oder niedrigeren Preisen als in der Großstadt nennt der Abschnitt nicht. Die Wörter stets und niemals überziehen den Text.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.79",
+    "title": "Oligopol ohne Absprache, Kartell mit Absprache",
+    "context": "Bewerten Sie die folgenden Aussagen zum Unterschied zwischen oligopolistischem Wettbewerb und Kartell:",
+    "statements": [
+      "Geheime Absprachen weniger Röster oder Stahlhersteller über Großhandelspreise sind ein Kartell und gesetzeswidrig.",
+      "Bevor sie sich absprachen, lag bei wenigen großen Anbietern ein Oligopol vor, in dem die Versuchung besteht, den Wettbewerbsdruck zu senken.",
+      "Oligopolistischer Wettbewerb und Kartellabsprache sind dasselbe und stets erlaubt.",
+      "Das Recht schützt das Recht der Kartellmitglieder, Preise gemeinsam festzusetzen, weil Absprachen den Kundinnen und Kunden im Regelfall nützen.",
+      "Offener, unabhängiger Wettbewerb weniger Mobilfunkanbieter bleibt ein Oligopol und wird nicht schon dadurch zum Kartell."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Wenige Anbieter, abgestimmte Preise: das ist die Abmachung, die der Text Kartell nennt. Gesetzeswidrig bleibt sie, auch wenn die Branche Kaffee oder Stahl heißt. Geheim ändert die Bewertung nicht zum Erlaubten. Der Tatbestand hängt an der Absprache, nicht am Produktnamen.\n\nDie Aussage ist wahr.",
+      "Geringe Anzahl plus hohe Anteile: Oligopol. In genau dieser Lage wäre denkbar, sich abzusprechen, um Druck zu reduzieren. Die Marktform vor der Tat ist nicht das Kartell, sondern dessen Nährboden. Versuchung ist nicht schon die Tat.\n\nDie Aussage ist wahr.",
+      "Dasselbe und stets erlaubt kippt zwei Trennungen. Wettbewerb der Wenigen kann hart und legal sein. Kartell ist die gesetzeswidrige Absprache. Wer beides gleichsetzt und erlaubt nennt, widerspricht dem Lehrtext frontal.\n\nOligopol beschreibt die Zahl, Kartell die verbotene Einigung. Stets erlaubt ist mit gesetzeswidrig unvereinbar. Kundschaft soll vom Wettbewerb profitieren, nicht von der abgestimmten Ruhe. Die Doppelbehauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "Bestimmungen sollen Wettbewerb ermöglichen, weil das im Regelfall den Kundinnen und Kunden nützt. Kartelle reduzieren den Druck und laufen dem zuwider. Schutz des gemeinsamen Festsetzens wäre die Umkehr der Regel. Der Satz stellt Nutzen und Rechtsziel auf den Kopf.\n\nAbsprachen über Preise sind der Kern des verbotenen Kartells. Nützen im Regelfall tut der Wettbewerb, nicht die Einigung der Wenigen. Wer Mitgliederschutz zum Zweck des Rechts macht, verfehlt Ermöglichen statt Einschränken. Der Satz hält nicht. Günstig für Kundinnen und Kunden ist im Regelfall der Wettbewerb, nicht die Ruhe der abgesprochenen Preise. Deshalb sind Bestimmungen auf Ermöglichen ausgerichtet. Ein Recht, gemeinsam festzusetzen, wäre die Einladung zum Kartell. Der Lehrtext stellt beides gegeneinander: legale Rivalität der Wenigen gegen gesetzeswidrige Abmachung.\n\nDie Aussage ist falsch.",
+      "Mobiltelefonie bleibt das Lehrbuchbeispiel für intensiven Preiswettbewerb im Oligopol. Unabhängig unterbieten ist Rivalität, nicht Absprache. Kartell entstünde erst, wenn dieselben Firmen Angebote und Preise abstimmten. Die Marktform wechselt durch offenen Kampf nicht den Namen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.80",
+    "title": "Marktformen im Überblick",
+    "context": "Bewerten Sie die folgenden Aussagen zur Abgrenzung von Monopol, Oligopol, Polypol und Kartell:",
+    "statements": [
+      "Kartell bezeichnet gesetzeswidrige Absprachen über Angebote und Preise, mit denen wenige Anbieter den Wettbewerbsdruck reduzieren wollen.",
+      "Im Polypol gibt es eine sehr große Anzahl an Anbietern; im vollkommenen Wettbewerb kann theoretisch niemand den Preis beeinflussen, und die strengen Annahmen sind auf den meisten Märkten nicht erfüllt.",
+      "Das Oligopol kennt wenige Anbieter mit vergleichsweise großer Marktmacht, dennoch oft hohen Wettbewerb, dessen Intensität von Gut und Marktstruktur abhängt, etwa Mobiltelefonie gegen Verkehrsflugzeuge.",
+      "Ein Monopol verlangt mindestens zwanzig Anbieter mit je fünf Prozent Marktanteil.",
+      "Die Marktmacht der Anbieter sinkt stets, wenn ihre Zahl sinkt, weil weniger Rivalen immer mehr Wettbewerb bedeuten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Name, Rechtswidrigkeit und Motiv stehen im Abschnitt beieinander. Reduzieren des Drucks ist der Zweck, nicht das tägliche Unterbieten. Wenige können sich absprechen, viele kleine Bäckereien im offenen Kampf tun es nicht. Der Satz hält Begriff und Richtung.\n\nDie Aussage ist wahr.",
+      "Sehr große Anbieterzahl, theoretisch kein Preiseinfluss, Transparenz und offener Markt als Annahmen, meist unerfüllt: das ist die verdichtete Polypol- und Modellseite. Landwirtschaft und Kapitalmarkt bleiben die vorsichtige Annäherung. Der Satz stapelt keine fremden Lehrbuchlabels über den Text.\n\nDie Aussage ist wahr.",
+      "Geringe Zahl, Macht, hoher Anteil, oft harte Rivalität, Intensität je nach Ausweitbarkeit: Mobilfunk leicht, Flugzeuge schwer. Der Überblick bleibt innerhalb der genannten Paare. Oligopol ist damit weder Monopol noch Polypol und auch nicht automatisch Kartell.\n\nDie Aussage ist wahr.",
+      "Zwanzig Anbieter sind das Gegenteil der Einzahl. Fünf Prozent je Firma beschreibt Streuung, nicht Alleinverkauf. Monopol: nur ein Anbieter, größere Zahl Nachfragender. Die Zahlen im Satz erfinden eine Schwelle, die der Text nicht kennt.\n\nMindestens zwanzig widerspricht nur einem. Marktanteile von je fünf Prozent ergeben zusammen ein Polypol-nahes Bild, kein Monopol. Wer die Definition so dreht, kann Bahn mit einem Betreiber nicht mehr einordnen. Der Satz hält nicht.\n\nDie Aussage ist falsch.",
+      "Weniger Anbieter erhöhen typischerweise die Marktmacht, sie senken sie nicht. Immer mehr Wettbewerb bei sinkender Zahl ist die umgekehrte Skala. Stets und immer sind die Absolutwörter, die den Fehlschluss festzurren. Vom Polypol zum Monopol wächst die Macht, sie schrumpft nicht.\n\nEin Alleinanbieter hat keine Rivalen, die ihn disziplinieren. Wenige Oligopolisten haben große Anteile. Sehr viele im Polypol können den Preis theoretisch nicht setzen. Die Behauptung, Macht falle mit der Zahl, steht gegen diese Leiter. Deshalb ist der Satz falsch. Vom Polypol über das Oligopol zum Monopol nimmt die Anbieterzahl ab und die Macht typischerweise zu. Kartelle versuchen, im Oligopol den Restwettbewerb noch weiter zu dämpfen. Die Behauptung kehrt diese Leiter um und behauptet mehr Wettbewerb bei weniger Köpfen. Stets und immer lassen keine Ausnahme für die Lehrbuchskala. Deshalb trägt der Satz nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

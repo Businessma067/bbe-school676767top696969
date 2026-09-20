@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.17",
+    "title": "Idee der Kapitalgesellschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kapitalgesellschaften:",
+    "statements": [
+      "Höhere Kapitalsummen können eher mit Kapitalgesellschaften aufgebracht werden.",
+      "Gesellschafterinnen und Gesellschafter einer Kapitalgesellschaft müssen stets selbst im Unternehmen mitarbeiten und es leiten.",
+      "Das Gesetz sieht für die Kapitalbeteiligung an einer Kapitalgesellschaft eine Mindestkapitalhöhe vor.",
+      "Kapitalaufbringung und Geschäftsführung können bei Kapitalgesellschaften getrennt sein.",
+      "Kapitalgesellschaften weisen keine eigene Rechtspersönlichkeit auf und gelten nicht als juristische Personen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Viele Beteiligte können größere Beträge zusammenlegen. Das Buch stellt die Kapitalgesellschaft gerade deshalb neben die Personengesellschaft, weil höhere Kapitalsummen eher so aufgebracht werden. Die Gesellschafterinnen und Gesellschafter stellen Kapital zur Verfügung, haften grundsätzlich nur mit dem Eingebrachten und müssen nicht selbst die Leitung übernehmen. Genau diese Kombination macht es leichter, viele Kapitalgeber zu gewinnen. Wer behauptet, große Summen seien hier schwerer als bei wenigen persönlich haftenden Personen, kehrt die Logik des Abschnitts um.\n\nDie Aussage ist wahr.",
+      "Mitarbeit ist hier keine Pflicht. Die Idee der Kapitalgesellschaft besteht darin, dass die Gesellschafterinnen und Gesellschafter Kapital zur Verfügung stellen, jedoch nicht notwendigerweise im Unternehmen mitarbeiten und dieses leiten. Geschäftsführung und Kapital können getrennt sein. Der Satz mit „stets“ und „müssen“ macht aus einer möglichen Rolle eine gesetzliche Pflicht und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Ohne gesetzliche Untergrenze geht es bei dieser Form nicht. Das Buch hält fest, dass das Gesetz für die Kapitalbeteiligung eine Mindestkapitalhöhe vorsieht. Das unterscheidet die Kapitalgesellschaft vom Einzelunternehmen und von Personengesellschaften, für die keine solche gesetzliche Mindesthöhe gilt. Stammkapital der GmbH und Grundkapital der AG sind konkrete Ausprägungen dieser Regel, nicht frei erfundene Schwellen. Wer die Mindestkapitalhöhe bestreitet, widerspricht dem Kern der Kapitalbeteiligung in diesem Abschnitt.\n\nDie Aussage ist wahr.",
+      "Geld geben und führen müssen nicht in einer Person zusammenfallen. Da die Gesellschafterinnen und Gesellschafter nicht notwendigerweise mit der Geschäftsführung betraut sind, können Kapitalaufbringung und Geschäftsführung bei Kapitalgesellschaften getrennt sein. Eine Gesellschafterin kann Kapital einlegen und außen bleiben; eine Geschäftsführerin kann leiten, ohne Gesellschafterin zu sein. Genau diese Trennung beschreibt das Buch als typisch, nicht als Verstoß gegen die Rechtsform.\n\nDie Aussage ist wahr.",
+      "Die Gesellschaft selbst ist Trägerin von Rechten. Kapitalgesellschaften weisen eine eigene Rechtspersönlichkeit auf, sie gelten als juristische Personen im Vergleich zu natürlichen Personen, also Menschen. Sie können Geschäfte machen, Verträge abschließen, klagen und geklagt werden. Die Behauptung, es gebe keine eigene Rechtspersönlichkeit, streicht genau dieses Merkmal und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.18",
+    "title": "Juristische Person und Handeln",
+    "context": "Eine Wiener Softwarefirma wird als GmbH gegründet. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Als juristische Person kann die GmbH Geschäfte machen, Verträge abschließen, klagen und geklagt werden.",
+      "Die Kapitalgesellschaft braucht natürliche Personen, die für sie handeln.",
+      "Nur Menschen als natürliche Personen dürfen Verträge schließen; die GmbH kann das nicht im eigenen Namen tun.",
+      "Gesellschafterinnen und Gesellschafter müssen nicht notwendigerweise mit der Geschäftsführung betraut sein.",
+      "Eigene Rechtspersönlichkeit bedeutet, dass die GmbH ohne Geschäftsführerin oder Geschäftsführer auskommt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Die GmbH steht selbst im Rechtsverkehr. Kapitalgesellschaften gelten als juristische Personen: Sie können Geschäfte machen, Verträge abschließen, klagen und geklagt werden. Lieferanten, Kundinnen und Gerichte haben es mit der Gesellschaft zu tun, nicht automatisch mit jedem privaten Namen hinter den Stammeinlagen. Die Softwarefirma mietet Büros und kauft Lizenzen als GmbH. Natürliche Personen müssen für sie handeln, das ändert nichts an der Trägerschaft der Rechte und Pflichten. Genau diese Fähigkeit folgt aus der eigenen Rechtspersönlichkeit, die das Buch den Kapitalgesellschaften zuschreibt, im Unterschied zu Menschen als natürlichen Personen.\n\nDie Aussage ist wahr.",
+      "Ohne handelnde Menschen bleibt die Hülle stumm. Die juristische Person kann Rechte tragen, sie braucht aber natürliche Personen, die für sie handeln. Geschäftsführerinnen und Geschäftsführer unterschreiben, verhandeln und vertreten. Die Gesellschaft ersetzt die Menschen nicht, sie braucht sie als Organe. Der Satz hält genau diese Abhängigkeit fest, statt die GmbH als vollständig selbstständig ohne jede handelnde Person zu denken.\n\nDie Aussage ist wahr.",
+      "Der Vertrag hängt nicht am privaten Namen jeder Gesellschafterin. Gerade weil die GmbH juristische Person ist, schließt sie Verträge im eigenen Namen. Natürliche Personen handeln für sie, aber die Verpflichtung trifft die Gesellschaft. Die Behauptung, nur Menschen dürften Verträge schließen und die GmbH könne das nicht im eigenen Namen, streicht die Rechtspersönlichkeit. Genau das Gegenteil steht im Buch.\n\nDie Aussage ist falsch.",
+      "Kapitalgeberinnen müssen nicht täglich führen. Die Gesellschafterinnen und Gesellschafter stellen Kapital zur Verfügung, sind aber nicht notwendigerweise mit der Geschäftsführung betraut. Eine angestellte Geschäftsführerin kann die Softwarefirma leiten, ohne Stammeinlage zu halten; eine Gesellschafterin kann Kapital einlegen und die Leitung anderen überlassen. Die Trennung von Kapitalaufbringung und Geschäftsführung ist bei Kapitalgesellschaften ausdrücklich möglich.\n\nDie Aussage ist wahr.",
+      "Rechtspersönlichkeit ersetzt keine Organe. Die GmbH wird von einem oder mehreren Geschäftsführerinnen bzw. Geschäftsführern geleitet; als juristische Person braucht sie natürliche Personen, die für sie handeln. Wer aus der eigenen Rechtspersönlichkeit ableitet, es sei kein Geschäftsführungsorgan mehr nötig, verwechselt die Fähigkeit, Verträge zu tragen, mit der Fähigkeit, ohne Menschen zu handeln. Die Hülle allein unterschreibt nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.19",
+    "title": "Stammkapital der GmbH",
+    "context": "Bewerten Sie die folgenden Aussagen zur Gesellschaft mit beschränkter Haftung:",
+    "statements": [
+      "Für eine GmbH muss zumindest ein Gesellschafter oder eine Gesellschafterin vorhanden sein.",
+      "Das Stammkapital einer GmbH muss auf Grund gesetzlicher Bestimmungen mindestens 10.000 Euro betragen.",
+      "Jede Stammeinlage eines Gesellschafters oder einer Gesellschafterin muss zumindest 70 Euro betragen.",
+      "Eine GmbH darf erst mit mindestens fünf Gesellschafterinnen oder Gesellschaftern gegründet werden.",
+      "Zumindest die Hälfte des Stammkapitals ist in Form von Geld aufzubringen, der Rest kann auch eine Sacheinlage sein."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine Person reicht als Gesellschafterkreis. Das Buch sagt ausdrücklich: Es muss zumindest einen Gesellschafter geben. Die GmbH ist also keine Form, die zwingend mehrere Köpfe voraussetzt. Eine Gründerin kann allein Stammkapital aufbringen und eine Geschäftsführerin bestellen, die sie selbst oder eine andere Person sein kann. Wer fünf Personen zur Gründung verlangt, erfindet eine Schwelle, die das Gesetz nach dem Text nicht kennt.\n\nDie Aussage ist wahr.",
+      "Zehntausend Euro sind die gesetzliche Untergrenze des Stammkapitals. Seit 1.1.2024 beträgt es mindestens 10.000 Euro, davor waren es 35.000 Euro. Das Buch nennt beide Zahlen, die geltende Schwelle ist die niedrigere. Ohne diese Mindesthöhe fehlt die Kapitalbeteiligung, die das Gesetz für die GmbH vorsieht. Wer die 10.000 Euro als unverbindlichen Tipp behandelt, verfehlt die gesetzliche Bestimmung.\n\nDie Aussage ist wahr.",
+      "Siebzig Euro sind die Untergrenze je Einlage. Jede Stammeinlage eines Gesellschafters oder einer Gesellschafterin muss zumindest 70 Euro betragen. Mehrere Gesellschafterinnen können das Stammkapital also in Stücken aufbringen, aber nicht in beliebigen Centbeträgen. Die 70 Euro stehen neben den 10.000 Euro Stammkapital; beide Schwellen gehören zur GmbH, nicht zur AG. Unter 70 Euro je Einlage wäre die gesetzliche Mindesthöhe der Stammeinlage verfehlt.\n\nDie Aussage ist wahr.",
+      "Fünf Köpfe sind keine Gründungsvoraussetzung. Zumindest ein Gesellschafter oder eine Gesellschafterin reicht. Die Fünfzahl erinnert eher an andere Schwellen oder an die Vorstellung, Kapitalgesellschaften bräuchten immer viele Aktionäre. Für die GmbH gilt das nicht. Eine Ein-Personen-GmbH ist nach dem Buch möglich. Die Aussage ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Bargeld und Sacheinlage können sich teilen. Zumindest die Hälfte des Stammkapitals ist in Form von Geld aufzubringen, der Rest kann auch eine Sacheinlage sein, etwa Computer oder Auto. Bei 10.000 Euro Stammkapital müssen also mindestens 5.000 Euro als Geld kommen; die übrigen 5.000 Euro dürfen als Sache fließen. Wer das gesamte Stammkapital ausschließlich in gebrauchten Geräten ohne den Geldanteil denken will, unterschreitet die Hälfte in Geld. Umgekehrt erlaubt der Text ausdrücklich, den Rest nicht bar, sondern als Sache einzubringen. Genau diese Mischung beschreibt der Satz, nicht eine freie Wahl zwischen nur Geld oder nur Sachen ohne die Hälftenregel.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.20",
+    "title": "Geschäftsführung der GmbH",
+    "context": "Zwei Tischler gründen eine Werkstatt-GmbH und prüfen, wer leiten und wer haften soll. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die GmbH wird von einem oder mehreren Geschäftsführerinnen bzw. Geschäftsführern geleitet.",
+      "Die Geschäftsführerin oder der Geschäftsführer muss stets zugleich Gesellschafterin oder Gesellschafter der GmbH sein.",
+      "Für die Geschäftsführung wird ein Gehalt bezogen, die Gesellschafterinnen und Gesellschafter erhalten für ihre Kapitaleinlagen Gewinnanteile.",
+      "Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage.",
+      "Zusätzliches Eigenkapital kann bei der GmbH nur durch Ausgabe von Aktien aufgebracht werden."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Leitung liegt beim Geschäftsführungsorgan. Die GmbH wird von einem oder mehreren Geschäftsführerinnen bzw. Geschäftsführern geleitet. Mindestens eine Person in dieser Rolle braucht es; mehrere sind zulässig. Die Tischler können eine von ihnen oder eine externe Person bestellen. Ohne Geschäftsführung gäbe es keine natürliche Person, die für die juristische Person handelt. Der Satz trifft genau diese Organregel, nicht die Aktionärsversammlung der AG.\n\nDie Aussage ist wahr.",
+      "Identität von Leitung und Einlage ist freiwillig. Der Geschäftsführer oder die Geschäftsführerin kann auch Gesellschafterin oder Gesellschafter sein und heißt dann geschäftsführende Gesellschafterin bzw. geschäftsführender Gesellschafter, muss es aber nicht. Eine angestellte Geschäftsführerin ohne Stammeinlage ist zulässig. „Stets zugleich“ macht aus der Möglichkeit eine Pflicht und ist falsch.\n\nDie Aussage ist falsch.",
+      "Gehalt und Gewinnanteil sind verschiedene Kanäle. Wer die Geschäfte führt, bezieht dafür ein Gehalt. Wer Kapital eingelegt hat, erhält Gewinnanteile für die Kapitaleinlage. Eine Person kann beides sein und dann beides beziehen; sie muss es nicht. Die Tischler, die nur Einlagen halten und eine externe Leitung bezahlen, trennen die beiden Flüsse genau so, wie das Buch es beschreibt. Wer Gehalt und Gewinnanteil in einen Topf wirft, vermischt Organvergütung und Kapitalertrag.\n\nDie Aussage ist wahr.",
+      "Die Stammeinlage begrenzt die Haftung. Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage, nicht unbeschränkt mit dem Privatvermögen wie beim Einzelunternehmen oder bei OG-Gesellschaftern. Gläubiger der Werkstatt greifen auf das Gesellschaftsvermögen zu; das darüber hinausgehende private Haus der Gesellschafterin ist nicht automatisch Haftungsmasse. Die Tischler riskieren den in die Stammeinlage gelegten Betrag, wenn die juristische Person die Schulden nicht trägt. Genau diese Beschränkung gibt der Form den Namen Gesellschaft mit beschränkter Haftung. Wer hier unbeschränkte persönliche Haftung einzieht, beschreibt die falsche Rechtsform.\n\nDie Aussage ist wahr.",
+      "Aktien sind das Instrument der AG, nicht der GmbH. Zusätzliches Eigenkapital bringen bei der GmbH die bisherigen Gesellschafter auf, indem sie ihre Einlagen erhöhen, oder es kommt ein zusätzlicher Gesellschafter hinzu. Neue Aktien auszugeben, die bisherige oder neue Aktionäre kaufen, ist der Weg der Aktiengesellschaft. Die Werkstatt-GmbH kann ihr Stammkapital so nicht über Aktien aufstocken. Der Satz verwechselt die beiden Kapitalgesellschaften.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.21",
+    "title": "Haftung bei GmbH und AG",
+    "context": "Bewerten Sie die folgenden Aussagen zur Haftung der Kapitalgeberinnen und Kapitalgeber:",
+    "statements": [
+      "Aktionärinnen und Aktionäre haften nicht persönlich für die Schulden der AG, sie riskieren nur das Geld, das sie in den Aktienkauf investieren.",
+      "Beschränkte Haftung bedeutet, dass GmbH-Gesellschafterinnen und GmbH-Gesellschafter das für die Stammeinlage eingesetzte Geld niemals verlieren können.",
+      "Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage.",
+      "Da das Grundkapital in Aktien aufgeteilt wird, werden die Gesellschafter der AG Aktionäre genannt.",
+      "Die Aktionäre haften unbeschränkt mit ihrem gesamten Privatvermögen für den Gesamtbetrag der Schulden der AG."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Nur der Aktienkauf steht auf dem Spiel. So wie die GmbH-Gesellschafter haften auch die Aktionäre nicht persönlich für die Schulden der AG. Sie riskieren das Geld, das sie in den Aktienkauf investieren. Wird die AG zahlungsunfähig, verlieren sie diesen Einsatz; Gläubiger können nicht automatisch auf Wohnung und Sparbuch jedes Aktionärs zugreifen. Die Tabelle sagt dasselbe mit den Worten: Die Aktionäre haften nur mit ihrem Aktienkapital. Persönliche, unbeschränkte Haftung für den Gesamtbetrag der Schulden gehört zu OG-Gesellschaftern, nicht zur AG. Wer beides gleichsetzt, streicht den Sinn der Kapitalgesellschaft.\n\nDie Aussage ist wahr.",
+      "Verlust des Einsatzes bleibt möglich. Beschränkte Haftung schützt das übrige Privatvermögen, nicht den Betrag, der als Stammeinlage in die GmbH geflossen ist. Scheitert die Gesellschaft, kann genau dieses Geld weg sein. „Niemals verlieren“ verdreht die Schutzrichtung: begrenzt wird der Zugriff über die Einlage hinaus, nicht das Risiko innerhalb der Einlage. Wer beides vermischt, hält beschränkte Haftung für eine Garantie des eingesetzten Kapitals.\n\nNote: Beschränkt heißt nicht risikofrei; der Verlust kann die volle Stammeinlage erreichen.\n\nDie Aussage ist falsch.",
+      "Die Tabelle und der Fließtext nennen dieselbe Grenze. Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage. Das ist die Kapitaleinlage, die sie geleistet haben, nicht das gesamte Privatvermögen. Gläubiger der GmbH halten sich an das Vermögen der juristischen Person. Die Formulierung „nur mit ihrer Stammeinlage“ ist die buchgenaue Haftungsregel, nicht eine lockere Umschreibung.\n\nDie Aussage ist wahr.",
+      "Aktie macht aus der Gesellschafterin die Aktionärin. Das Kapital, das die Gesellschafter einbringen, heißt Grundkapital und wird in Aktien aufgeteilt; deshalb werden die Gesellschafter Aktionäre genannt. Wer mindestens eine Aktie gekauft hat, ist Gesellschafterin bzw. Gesellschafter der AG. Der Name folgt aus der Aufteilung des Grundkapitals, nicht aus der bloßen Bezeichnung Gesellschafter. Ohne diese Aufteilung gäbe es keine Aktionärsstellung in dem Sinn, den das Buch verwendet.\n\nDie Aussage ist wahr.",
+      "Unbeschränkt und solidarisch beschreibt die OG, nicht die AG. Aktionäre riskieren den Aktienkauf, sie haften nicht persönlich für den Gesamtbetrag der Gesellschaftsschulden mit dem Privatvermögen. Die Tabelle sagt: nur mit ihrem Aktienkapital. Wer die OG-Haftung auf die AG überträgt, vermischt Kapitalgesellschaft und Personengesellschaft. Genau das macht den Satz falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.22",
+    "title": "Organe und Grundkapital der AG",
+    "context": "Bewerten Sie die folgenden Aussagen zur Aktiengesellschaft:",
+    "statements": [
+      "Das Grundkapital einer AG muss auf Grund gesetzlicher Bestimmungen mindestens 70.000 Euro betragen.",
+      "Das Grundkapital wird in Aktien aufgeteilt.",
+      "Der Vorstand führt die Geschäfte in eigener Verantwortung und vertritt die Gesellschaft.",
+      "Die Vorstandsmitglieder werden vom Aufsichtsrat bestellt und abberufen.",
+      "Große Unternehmen, die viel Kapital benötigen, dürfen nicht als AG organisiert sein."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Siebzigtausend Euro sind die Untergrenze des Grundkapitals. Das Kapital, das die Gesellschafter einbringen, wird Grundkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens 70.000 Euro betragen. Das liegt deutlich über den 10.000 Euro Stammkapital der GmbH und unter den 120.000 Euro der SE. Ohne diese Schwelle fehlt die gesetzliche Kapitalbeteiligung der AG. Große Unternehmen mit hohem Kapitalbedarf wählen die Form häufig gerade deshalb, weil das Grundkapital in Aktien aufgeteilt viele Kapitalgeber bündeln kann. Wer 70.000 Euro als unverbindlichen Brauch behandelt, widerspricht der gesetzlichen Bestimmung im Buch.\n\nDie Aussage ist wahr.",
+      "Stückelung schafft die Aktie. Weil das Grundkapital in Aktien aufgeteilt wird, heißen die Gesellschafter Aktionäre. Jede Aktie ist ein Anteil am Grundkapital, nicht ein Darlehen. Zusätzliches Eigenkapital kann später durch Ausgabe neuer Aktien aufgebracht werden, die bisherige oder neue Aktionäre kaufen. Die Aufteilung ist das Definitionsmerkmal, nicht ein optionales Marketingetikett.\n\nDie Aussage ist wahr.",
+      "Leitung und Vertretung liegen beim Vorstand. Er führt die Geschäfte in eigener Verantwortung und vertritt die Gesellschaft. Das ist ein anderes Organ als die Geschäftsführung der GmbH, erfüllt aber dieselbe praktische Rolle: natürliche Personen handeln für die juristische Person. Eigene Verantwortung heißt, der Vorstand führt, statt dass jeder Aktionär jeden Vertrag selbst unterschreiben müsste. Genau so trennt die AG Kapital und Leitung.\n\nDie Aussage ist wahr.",
+      "Bestellung kommt vom Aufsichtsrat, nicht von jedem Aktionär persönlich im Alltag. Die Vorstandsmitglieder werden vom Aufsichtsrat bestellt und abberufen. Damit hat die AG ein weiteres Organ zwischen Kapitalgebern und Geschäftsführung. Wer den Vorstand als rein selbsternannt oder als direkt von jedem Kleinaktionär täglich ein- und absetzbar beschreibt, überspringt den Aufsichtsrat. Der Satz gibt die Buchregel wieder.\n\nDie Aussage ist wahr.",
+      "Viel Kapitalbedarf spricht für die AG, nicht gegen sie. Große Unternehmen, die viel Kapital benötigen, sind häufig als AG organisiert. Die Form erleichtert hohe Kapitalsummen über viele Aktionäre, die nur mit dem Aktienkapital haften. Ein Verbot für große Betriebe steht nirgends. Die Aussage kehrt die typische Wahl um und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.23",
+    "title": "Flexible Kapitalgesellschaft",
+    "context": "Ein Start-up prüft die FlexKapG als an die GmbH angelehnte Form. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ebenso wie bei der GmbH reicht bei der FlexKapG ein Gesellschafter oder eine Gesellschafterin.",
+      "Das Stammkapital der FlexKapG beträgt ebenfalls 10.000 Euro.",
+      "Der Mindestbetrag einer Stammeinlage beträgt bei der FlexKapG nur 1 Euro.",
+      "Unternehmenswert-Beteiligte haben einen Anspruch auf ihren Gewinnanteil und verfügen zugleich über volles Stimmrecht.",
+      "Unternehmenswert-Anteile sollen eine einfache Beteiligung der Mitarbeiterinnen und Mitarbeiter ermöglichen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Ein Kopf reicht auch hier. Die Flexible Kapitalgesellschaft ist an die GmbH angelehnt: Ebenso wie bei der GmbH reicht ein Gesellschafter oder eine Gesellschafterin. Das Start-up muss also nicht erst ein Aktionärskollektiv sammeln. Die Parallele zur GmbH betrifft den Gesellschafterkreis, nicht automatisch jedes Detail der Stammeinlage. Wer zwei Personen zur Gründung der FlexKapG verlangt, überträgt die OG-Regel auf die falsche Form.\n\nDie Aussage ist wahr.",
+      "Zehntausend Euro gelten auch für die FlexKapG. Das Stammkapital beträgt ebenfalls 10.000 Euro. Die Anlehnung an die GmbH umfasst diese Höhe. Unterschiedlich ist vor allem die minimale Stammeinlage und die Figur der Unternehmenswert-Anteile, nicht die Stammkapitalsumme selbst. Wer der FlexKapG das AG-Grundkapital von 70.000 Euro zuordnet, vermischt die Formen.\n\nDie Aussage ist wahr.",
+      "Ein Euro ersetzt die Siebzig-Euro-Schwelle der GmbH. Der Mindestbetrag einer Stammeinlage beträgt bei der FlexKapG nur 1 Euro, bei der GmbH zumindest 70 Euro. Kleine Stücke erleichtern feinere Beteiligungen. Das Stammkapital bleibt 10.000 Euro; nur die kleinste zulässige Einlage sinkt. Wer 70 Euro auch für die FlexKapG verlangt, ignoriert genau diesen Unterschied, den das Buch als wesentlich neben den Unternehmenswert-Anteilen nennt.\n\nDie Aussage ist wahr.",
+      "Gewinn ja, Stimme nein. Unternehmenswert-Beteiligte haben einen Anspruch auf ihren Gewinnanteil, sie verfügen aber über kein Stimmrecht. „Zugleich volles Stimmrecht“ streicht die zweite Hälfte der Buchregel. Gerade die fehlende Stimme unterscheidet diese Sonderform des Stammkapitals von der klassischen Gesellschafterstellung. Wer beides zusammenpackt, beschreibt keine Unternehmenswert-Beteiligung.\n\nNote: Gewinnanteil ohne Stimmrecht ist der Punkt der Mitarbeiterbeteiligung, nicht eine versteckte Vollgesellschafterschaft.\n\nDie Aussage ist falsch.",
+      "Mitarbeiterbeteiligung ist der Zweck der Sonderform. Ein wesentlicher Unterschied zur GmbH besteht darin, dass die FlexKapG Unternehmenswert-Anteile vorsieht, die eine Sonderform des Stammkapitals sind und eine einfache Beteiligung der Mitarbeiterinnen und Mitarbeiter ermöglichen sollen. Das Start-up kann Belegschaft am Unternehmenswert teilhaben lassen, ohne denselben Stimmrechtszuschnitt wie bei einer vollen Stammeinlage: Gewinnanteil ja, Stimmrecht nein. Stammkapital 10.000 Euro und Ein-Euro-Stammeinlage bleiben daneben bestehen. Der Satz trifft genau diese Absicht der einfachen Beteiligung, nicht eine versteckte Umbenennung der klassischen GmbH-Gesellschafterstellung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.24",
+    "title": "Europäische Gesellschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zur Societas Europaea:",
+    "statements": [
+      "Die Europäische Gesellschaft wird auch Europäische Aktiengesellschaft oder Societas Europaea (SE) genannt.",
+      "Der Rechtsrahmen für die SE ist immer gleich, egal in welchem Mitgliedstaat der EU oder des EWR die SE ihren Sitz hat.",
+      "Das Mindestkapital der SE beträgt 120.000 Euro.",
+      "Die SE ist die vorgeschriebene Rechtsform für jedes österreichische Kleingewerbe ohne Niederlassung in einem anderen Staat.",
+      "Die Strabag ist zum Beispiel als SE organisiert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Drei Namen bezeichnen dieselbe Variante der Aktiengesellschaft. Die Europäische Gesellschaft heißt auch Europäische Aktiengesellschaft oder Societas Europaea (SE). Sie ist eine Variante der AG, nicht der GmbH und nicht der Genossenschaft. Die Abkürzung SE taucht bei großen, grenzüberschreitend tätigen Unternehmen auf. Wer die SE mit der SCE, der europäischen Genossenschaft, verwechselt, greift zur falschen lateinischen Bezeichnung.\n\nDie Aussage ist wahr.",
+      "Gleicher Rahmen unabhängig vom Sitzstaat. Die SE stellt eine mögliche Rechtsform für Aktiengesellschaften in der Europäischen Union und im Europäischen Wirtschaftsraum dar. Der Rechtsrahmen ist immer gleich, egal in welchem Mitgliedstaat der EU oder des EWR die SE ihren Sitz hat. Genau das macht die Form für Unternehmen mit Niederlassungen in mehreren Staaten interessant, weil sie nicht in jedem Land ein völlig anderes Aktienrecht als Hülle brauchen. Die Strabag-Beispiel-Logik passt dazu: große, grenzüberschreitende Tätigkeit. Wer behauptet, jedes Sitzland erfinde ein völlig anderes SE-Recht, widerspricht dieser Gleichheit, die das Buch als Vorzug nennt.\n\nDie Aussage ist wahr.",
+      "Hundertzwanzigtausend Euro sind die Schwelle. Das Mindestkapital beträgt 120.000 Euro, in der Tabelle neben den 70.000 Euro der AG genannt. Das liegt über GmbH und nationaler AG. Ohne diese Höhe fehlt die gesetzliche Kapitalbeteiligung der SE. Wer 10.000 oder 70.000 Euro als SE-Minimum einsetzt, verwechselt die Formen.\n\nDie Aussage ist wahr.",
+      "Lokal und klein ist nicht der Anwendungsfall. Die SE ist vor allem für Unternehmen von Interesse, die in mehreren EU- oder EWR-Staaten Niederlassungen haben. Sie ist eine mögliche Form, keine Pflicht für jedes österreichische Kleingewerbe. Ein Ein-Personen-Handwerk ohne Auslandsbezug wird im Buch als typisches Einzelunternehmen oder allenfalls als GmbH gedacht, nicht als SE mit 120.000 Euro. Die Vorschrift für jedes Kleingewerbe steht nicht im Text.\n\nDie Aussage ist falsch.",
+      "Strabag dient als Buchbeispiel. Die Strabag ist zum Beispiel als SE organisiert. Das Beispiel zeigt die Form bei einem großen Unternehmen mit internationalem Bezug, nicht bei einem lokal isolierten Kleinbetrieb. Der Satz gibt den Beleg des Abschnitts wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.25",
+    "title": "Zweck der Genossenschaft",
+    "context": "Mehrere Gärtnereien wollen gemeinsam Maschinen nutzen und einkaufen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Genossenschaften sind Zusammenschlüsse von zumindest zwei natürlichen und/oder juristischen Personen.",
+      "Ziel ist die Förderung des Erwerbs und der Wirtschaft ihrer Mitglieder.",
+      "Im Vordergrund steht das Erzielen von Gewinnen, nicht das gemeinsame Wirtschaften.",
+      "Gemeinsames Nutzen von Produktionsanlagen und Betriebsmitteln sowie gemeinsamer Einkauf und/oder Vertrieb sind typische Formen des gemeinsamen Wirtschaftens.",
+      "Die Rechtsform lautet in Österreich eingetragene Genossenschaft (e. Gen.)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei sind die Untergrenze, Menschen und Gesellschaften sind zugelassen. Genossenschaften sind Zusammenschlüsse von zumindest zwei natürlichen und/oder juristischen Personen. Eine einzelne Gärtnerei allein ist noch keine Genossenschaft; GmbHs können neben Personen Mitglied sein. Die Zweizahl unterscheidet die Form von der Ein-Personen-GmbH. Wer eine Genossenschaft mit nur einem Mitglied gründet, unterschreitet die Buchregel.\n\nDie Aussage ist wahr.",
+      "Mitgliederförderung ist der Zweck, nicht ein Nebensatz. Ziel ist die Förderung des Erwerbs und der Wirtschaft ihrer Mitglieder. Die Gärtnereien schließen sich, damit jede von ihnen wirtschaftlich besser dasteht, etwa durch gemeinsame Maschinen oder gemeinsamen Einkauf. Die Rechtsform dient zur Errichtung von Erwerbs- und Wirtschaftsgenossenschaften. Das Motto Was einer nicht schafft, das schaffen viele unterstreicht denselben Punkt: gemeinsame Größe statt isolierter Gewinnmaximierung der Hülle. Wer den Zweck auf den Gewinn der juristischen Person als Selbstzweck verengt, verfehlt diese Ausrichtung auf die Mitglieder, die das Buch an den Anfang stellt.\n\nDie Aussage ist wahr.",
+      "Gewinnmaximierung steht nicht vorn. Im Vordergrund steht nicht das Erzielen von Gewinnen, sondern das gemeinsame Wirtschaften. Das Motto lautet: Was einer nicht schafft, das schaffen viele. Gewinne können reinvestiert oder als Rückvergütungen ausgezahlt werden, sie definieren die Form aber nicht. Der Satz dreht Vordergrund und Hintergrund um und ist falsch.\n\nDie Aussage ist falsch.",
+      "Synergien entstehen durch Teilen und Bündeln. Gemeinsames Nutzen von Produktionsanlagen und Betriebsmitteln und/oder gemeinsamer Einkauf und/oder Vertrieb sind die im Buch genannten Wege. Gemeinsam erreicht man andere Größenverhältnisse. Die Gärtnereien können einen Teichbagger teilen oder Pflanzen gemeinsam bestellen. Genau diese Beispiele tragen den Zweck der Mitgliederförderung, ohne dass jede Genossenschaft alle drei Wege gleichzeitig gehen müsste.\n\nDie Aussage ist wahr.",
+      "e. Gen. ist die österreichische Bezeichnung. Die Rechtsform selbst lautet in Österreich eingetragene Genossenschaft und dient zur Errichtung von Erwerbs- und Wirtschaftsgenossenschaften. Das europäische Pendant ist die Societas Cooperativa Europaea (SCE). Wer die österreichische Form mit der SE der Aktiengesellschaften verwechselt, greift zur falschen europäischen Variante. Der Satz trifft die nationale Bezeichnung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.26",
+    "title": "Haftung, Stimme und Organe der Genossenschaft",
+    "context": "Bewerten Sie die folgenden Aussagen zu Kapital, Haftung und Willensbildung in der Genossenschaft:",
+    "statements": [
+      "Für die Genossenschaft ist kein Mindestkapital notwendig.",
+      "Beträgt ein Genossenschaftsanteil 100 Euro, haftet der Genossenschafter für gewöhnlich mit weiteren 100 Euro, der mögliche Verlust beträgt maximal 200 Euro.",
+      "Das oberste Organ der Genossenschaft ist die Hauptversammlung.",
+      "Beim Kopfstimmrecht hat jede Person unabhängig von ihrem Anteil am Genossenschaftskapital eine Stimme.",
+      "Die Satzung einer Genossenschaft darf das Kopfstimmrecht niemals durch eine abweichende Regelung ersetzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Keine gesetzliche Kapitalschwelle wie bei GmbH und AG. Es ist kein Mindestkapital notwendig; Genossenschafter beteiligen sich mit einer Kapitaleinlage. Die Tabelle wiederholt: Mindestkapital nein. Die Gärtnereien müssen nicht 10.000 oder 70.000 Euro als gesetzliche Untergrenze zusammenlegen. Wer der Genossenschaft das Stammkapital der GmbH überstülpt, erfindet eine Schwelle, die das Buch ausdrücklich verneint.\n\nDie Aussage ist wahr.",
+      "Verdoppelung ist das Rechenbeispiel des Buchs. Die Haftung ist für gewöhnlich auf einen bestimmten Geldbetrag beschränkt. Beträgt ein Genossenschaftsanteil 100 Euro, haftet der Genossenschafter mit weiteren 100 Euro, der mögliche Verlust sind maximal 200 Euro. Die Tabelle sagt: mit ihrer Einlage, in der Regel in doppelter Höhe. 100 plus 100 ergibt 200; das ist die Obergrenze im Beispiel, nicht eine unbeschränkte persönliche Haftung mit dem gesamten Privatvermögen wie bei OG-Gesellschaftern. Wer 100 Euro Anteil mit unbegrenztem Zugriff auf Haus und Konto gleichsetzt, überschreitet die Buchregel. Die Rechnung bleibt 100 plus 100, nicht 100 plus alles.\n\nDie Aussage ist wahr.",
+      "Leitung und oberstes Organ fallen nicht zusammen. Die Leitung erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird. Das oberste Organ ist jedoch die Hauptversammlung, in der über die wesentlichen Entscheidungen abgestimmt wird. Wer den Vorstand zur höchsten Instanz erklärt, überspringt die Hauptversammlung. Der Satz trifft die Rangfolge des Buchs.\n\nDie Aussage ist wahr.",
+      "Eine Person, eine Stimme, unabhängig vom Kapital. Kopfstimmrecht bedeutet, dass bei einer Abstimmung jede Person unabhängig von ihrem Anteil am Genossenschaftskapital eine Stimme hat und diese Stimme nicht entsprechend dem Anteil am Kapital gewichtet wird. Wer 500 Euro hält, stimmt nicht fünfmal so schwer wie wer 100 Euro hält, sofern die Regel gilt. Das unterscheidet die Genossenschaft von einer rein kapitalgewichteten Aktionärsversammlung.\n\nDie Aussage ist wahr.",
+      "Die Satzung kann abweichen. Das Buch nennt das Kopfstimmrecht und fügt hinzu, die Satzung einer Genossenschaft könne aber eine abweichende Regelung vorsehen. „Niemals“ schließt genau diese Öffnung. Eine Genossenschaft darf also in der Satzung anders gewichten, sie muss es nicht. Die absolute Sperre widerspricht dem Text.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.27",
+    "title": "Firmenbuchpflicht der Kapitalgesellschaften",
+    "context": "Bewerten Sie die folgenden Aussagen zum Firmenbuch:",
+    "statements": [
+      "GmbH, AG und Genossenschaften müssen ins Firmenbuch eingetragen werden.",
+      "Das Firmenbuch ist eine öffentliche, zentrale von Gerichten geführte Unternehmensdatenbank, in die Einsicht genommen werden kann.",
+      "Die Eintragung macht das Unternehmen transparenter, was für Geschäftsabschlüsse förderlich sein kann.",
+      "Kapitalgesellschaften dürfen frei wählen, ob sie ins Firmenbuch kommen, weil nur das Einzelunternehmen eintragungspflichtig ist.",
+      "Die Firmenbucheintragung enthält die Firma, den Sitz des Unternehmens und den Unternehmensgegenstand."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Rechtsform entscheidet über die Pflicht. Die OG, KG, GmbH und AG sowie die Genossenschaften müssen ins Firmenbuch eingetragen werden. Für diesen Slice zählt vor allem: GmbH, AG und eingetragene Genossenschaft stehen auf der Muss-Liste, weil im Wesentlichen die Rechtsform entscheidet, wer muss und wer nur kann. Wer die Eintragung der Kapitalgesellschaft als Hobby behandelt, verfehlt die Pflicht. Das Einzelunternehmen kennt Umsatzschwellen und freiwillige Eintragung darunter; das ändert nichts an der Pflicht der hier genannten Formen. Transparenz gegenüber Geschäftspartnern ist der Zweck, nicht ein optionales Gütesiegel für GmbH und AG.\n\nDie Aussage ist wahr.",
+      "Öffentlich, zentral, gerichtsgeführt. Das Firmenbuch ist eine öffentliche, zentrale von Gerichten geführte Unternehmensdatenbank, in die Einsicht genommen werden kann. Geschäftspartnerinnen können nachlesen, statt Gerüchten zu folgen. Es ist keine private Vereinsliste. Genau diese Beschreibung trägt die Transparenz, die der Abschnitt an die Eintragung knüpft.\n\nDie Aussage ist wahr.",
+      "Transparenz soll Abschlüsse erleichtern. Dadurch wird das Unternehmen transparenter, was für Geschäftsabschlüsse förderlich sein kann, weil Geschäftspartner wichtige Informationen zum Unternehmen im Firmenbuch ersehen können. Firma, Sitz, Gegenstand und Vertretung werden sichtbar. Der Satz gibt den Zweck wieder, ohne zu behaupten, jeder Vertrag käme nur nach einem Firmenbuchauszug zustande.\n\nDie Aussage ist wahr.",
+      "Freiwilligkeit gilt nicht für GmbH und AG. Manche Unternehmen können, andere müssen eingetragen werden; im Wesentlichen entscheidet die Rechtsform. Kapitalgesellschaften und Genossenschaften müssen, das Einzelunternehmen erst ab bestimmter Größe, mit freiwilliger Eintragung darunter. Die Behauptung, nur das Einzelunternehmen sei pflichtig und Kapitalgesellschaften dürften wählen, kehrt die Regel um.\n\nDie Aussage ist falsch.",
+      "Name, Ort, Tätigkeit stehen in der Eintragung. Die Firmenbucheintragung enthält die Firma, das ist der rechtliche Name des Unternehmens (zum Beispiel woom GmbH), den Sitz und den Unternehmensgegenstand. Dazu kommen weitere Angaben, etwa wer die Geschäfte führen darf. Der Satz nennt den Kern, den das Buch zuerst aufführt, und bleibt damit im Text.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.28",
+    "title": "Was das Firmenbuch bei GmbH und AG zeigt",
+    "context": "Eine Lieferantin schlägt GmbH und AG im Firmenbuch nach. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Namen der Gesellschafter einer GmbH sind aus der Firmenbucheintragung ersichtlich.",
+      "Die Namen der Aktionäre der AG sind in der Firmenbucheintragung nicht enthalten.",
+      "Die Höhe der Kapitaleinlagen von GmbH-Gesellschaftern ist im Firmenbuch ausgewiesen.",
+      "Die Eintragung zeigt auf, wer die Geschäfte führen darf.",
+      "Aktionäre einer AG müssen namentlich im Firmenbuch stehen, GmbH-Gesellschafter hingegen niemals."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "GmbH-Gesellschafter sind namentlich sichtbar. Die Eintragung enthält die Namen der Gesellschafter, nicht jedoch die Aktionäre der AG. Die Lieferantin kann bei einer GmbH sehen, wer Stammeinlagen hält. Das dient der Transparenz gegenüber Geschäftspartnern. Wer behauptet, GmbH-Gesellschafter blieben im Firmenbuch immer anonym, widerspricht dieser Aufzählung.\n\nDie Aussage ist wahr.",
+      "Aktionärskreise bleiben im Firmenbuch ohne Namensliste. Ausdrücklich: die Namen der Gesellschafter, nicht jedoch die Aktionäre der AG. Eine AG mit vielen Aktionären würde sonst eine ständig wechselnde Liste erzwingen. Die Lieferantin sieht bei der AG andere Daten, etwa Firma, Sitz, Gegenstand und Vertretung, aber nicht jedes Aktiendepot. Die Ausnahme ist die Pointe des Satzes im Buch, nicht ein Versehen.\n\nDie Aussage ist wahr.",
+      "Einlagenhöhe gilt für GmbH-Gesellschafter und Kommanditisten. Die Eintragung enthält die Höhe der Kapitaleinlagen bei Kommanditisten und GmbH-Gesellschaftern. Bei der GmbH sieht die Lieferantin also nicht nur den Namen, sondern auch, wie hoch die Stammeinlage ist. Das passt zur Haftung nur mit der Stammeinlage: die bezifferte Einlage ist öffentlich nachlesbar. Bei der AG fehlen hingegen die Namen der Aktionäre; die Höhe jeder privaten Aktie steht dort nicht analog als Gesellschafterliste. Wer die Höhe bei der GmbH als geheim einstuft, streicht genau den Punkt, den das Buch für GmbH-Gesellschafter ausdrücklich nennt.\n\nDie Aussage ist wahr.",
+      "Vertretungsmacht steht im Register. Die Eintragung zeigt auf, wer die Geschäfte führen darf. Bei der GmbH sind das die Geschäftsführerinnen und Geschäftsführer, bei der AG der Vorstand. Die Lieferantin soll wissen, wessen Unterschrift die Gesellschaft bindet. Genau das war am Anfang des Rechtsformkapitels die Frage, wer Verträge abschließen darf. Das Firmenbuch beantwortet sie für eingetragene Unternehmen.\n\nDie Aussage ist wahr.",
+      "Die Zuordnung ist vertauscht. Namen der Gesellschafter ja, Aktionäre der AG nein. Der Satz behauptet das Gegenteil: Aktionäre müssten namentlich stehen, GmbH-Gesellschafter niemals. Damit kehrt er die Buchregel um. Die Lieferantin findet die GmbH-Gesellschafter, nicht die AG-Aktionäre.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.29",
+    "title": "Zusätzliches Eigenkapital bei GmbH, AG und Genossenschaft",
+    "context": "Drei Betriebe brauchen frisches Eigenkapital. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der GmbH können die bisherigen Gesellschafter ihre Einlagen erhöhen oder einen zusätzlichen Gesellschafter aufnehmen.",
+      "Bei der AG werden neue Aktien ausgegeben, die entweder die bisherigen Aktionäre kaufen oder sonst neue Aktionäre.",
+      "Zusätzliches Eigenkapital der Genossenschaft wird durch die Aufnahme weiterer Genossenschafter aufgebracht.",
+      "Durch viele Gesellschafterinnen und Gesellschafter, die grundsätzlich nur mit dem eingebrachten Kapital haften, können eher hohe Kapitalsummen aufgebracht werden.",
+      "Sobald eine AG neue Aktien ausgibt, haften alle Aktionäre persönlich und unbeschränkt für die gesamten Gesellschaftsschulden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Einlagen erhöhen oder Personen hinzunehmen. Die Tabelle beantwortet die Frage, wie zusätzliches Eigenkapital aufgebracht wird, für die GmbH so: Die bisherigen Gesellschafter erhöhen ihre Einlagen oder nehmen einen zusätzlichen Gesellschafter auf. Beides bleibt innerhalb der GmbH-Logik der Stammeinlagen, ohne Aktien. Ein Betrieb, der wächst, muss also nicht in die AG wechseln, nur weil er mehr Eigenkapital will. Der Satz trifft genau diese beiden Wege.\n\nDie Aussage ist wahr.",
+      "Neue Aktien, alte oder neue Käufer. Bei der AG werden neue Aktien ausgegeben, die entweder die bisherigen Aktionäre kaufen können oder sonst neue Aktionäre. Das Grundkapital wächst über die Stückelung in Aktien, nicht über eine zweite Stammeinlage im GmbH-Sinn. Bisherige Aktionäre können mitziehen, müssen es aber nicht, wenn andere die neuen Stücke übernehmen. Genau so beschreibt die Tabelle die Kapitalerhöhung der AG.\n\nDie Aussage ist wahr.",
+      "Mehr Mitglieder statt gesetzlicher Mindestkapitalerhöhung. Durch die Aufnahme weiterer Genossenschafter kommt zusätzliches Eigenkapital. Weil Ein- und Austritt einfach sind, ist die Mitgliederzahl leicht veränderlich. Es bleibt dabei: kein gesetzliches Mindestkapital, Beteiligung über Kapitaleinlagen. Wer der Genossenschaft eine Pflicht zur Aktienemission zuordnet, verwechselt sie mit der AG.\n\nDie Aussage ist wahr.",
+      "Beschränkte Haftung lockt viele Kapitalgeber. Die Idee der Kapitalgesellschaft: viele Gesellschafterinnen und Gesellschafter haften grundsätzlich nur mit dem eingebrachten Kapital, deshalb können eher hohe Kapitalsummen aufgebracht werden. Niemand muss das gesamte Privatvermögen als Preis für eine kleine Beteiligung einsetzen. GmbH-Gesellschafter tun das über Stammeinlagen, Aktionäre über den Aktienkauf. Genau deshalb eignet sich die Form für großen Kapitalbedarf besser als wenige persönlich unbeschränkt Haftende. Höhere Kapitalsummen können eher so entstehen, weil Kapitalaufbringung und Geschäftsführung getrennt sein dürfen. Der Satz gibt diese Mechanik wieder.\n\nDie Aussage ist wahr.",
+      "Neue Aktien ändern die Haftungsart nicht. Aktionäre haften nicht persönlich für die Schulden der AG, sie riskieren das in den Aktienkauf investierte Geld; die Tabelle sagt: nur mit ihrem Aktienkapital. Eine Ausgabe neuer Aktien erweitert den Kreis oder die Beträge, sie verwandelt Aktionäre nicht in OG-Gesellschafter mit unbeschränkter Haftung. Der Satz hängt an die Kapitalerhöhung eine Haftungsregel, die das Buch der AG gerade abspricht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.30",
+    "title": "Nachbarschaftsbäckerei als GmbH",
+    "context": "Eine Familie führt ihre Bäckerei als GmbH mit einer angestellten Geschäftsführerin. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Als Kapitalgesellschaft gilt die Bäckerei-GmbH als juristische Person und kann Verträge im eigenen Namen schließen.",
+      "Die Familiengesellschafterinnen haften unbeschränkt mit ihrem Privatvermögen für alle Schulden der Bäckerei.",
+      "Die Geschäftsführerin kann die Bäckerei leiten, ohne Gesellschafterin zu sein.",
+      "Das Stammkapital der Bäckerei-GmbH muss mindestens 70.000 Euro betragen, weil jede Kapitalgesellschaft das Grundkapital einer AG braucht.",
+      "Zumindest ein Gesellschafter oder eine Gesellschafterin reicht für die GmbH."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Die Bäckerei selbst ist Vertragspartnerin. Kapitalgesellschaften weisen eigene Rechtspersönlichkeit auf und können als juristische Personen Geschäfte machen und Verträge abschließen. Mehlkauf, Ladenmiete und Arbeitsverträge laufen auf die GmbH, nicht zwingend auf den privaten Namen jeder Gesellschafterin. Natürliche Personen müssen für sie handeln, etwa die angestellte Geschäftsführerin, das ändert nichts an der Trägerschaft der Rechte. Klagen würde man die GmbH, nicht automatisch jede Familiengesellschafterin persönlich. Der Satz trifft die GmbH als Kapitalgesellschaft, nicht ein Einzelunternehmen hinter derselben Theke, bei dem Betrieb und Person rechtlich zusammenfallen.\n\nDie Aussage ist wahr.",
+      "Privatvermögen bleibt außerhalb der Stammeinlage. Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage. Unbeschränkte Haftung mit dem Privatvermögen ist die Regel des Einzelunternehmens und der OG-Gesellschafter, nicht der GmbH. Scheitert die Bäckerei, riskiert die Familie den Einsatz in die Stammeinlagen, nicht automatisch Haus und Sparbuch darüber hinaus. Der Satz hängt der GmbH die falsche Haftungsart an.\n\nDie Aussage ist falsch.",
+      "Angestellte Leitung ist vorgesehen. Der Geschäftsführer oder die Geschäftsführerin kann Gesellschafterin sein, muss aber nicht. Die Familie kann Kapital halten und eine fachkundige Geschäftsführerin gegen Gehalt einsetzen; die Gesellschafterinnen erhalten Gewinnanteile für die Einlagen. Kapitalaufbringung und Geschäftsführung dürfen getrennt sein. Wer Identität von Familie und Leitung erzwingt, ignoriert genau diese Möglichkeit.\n\nDie Aussage ist wahr.",
+      "Siebzigtausend Euro gehören zur AG. Das Stammkapital der GmbH beträgt mindestens 10.000 Euro; 70.000 Euro sind das Grundkapital der AG, 120.000 Euro das der SE. Die Bäckerei-GmbH muss nicht das AG-Grundkapital aufbringen, nur weil beide Formen Kapitalgesellschaften sind. Der Satz vermischt Stammkapital und Grundkapital und ist falsch.\n\nDie Aussage ist falsch.",
+      "Ein-Personen-GmbH ist zulässig. Es muss zumindest einen Gesellschafter geben. Die Familie kann theoretisch auf eine Person verdichtet sein oder mehrere Stammeinlagen halten; die Untergrenze ist eins, nicht fünf und nicht zwei wie bei der Genossenschaft. Die angestellte Geschäftsführerin ändert an dieser Zählung der Gesellschafter nichts. Der Satz trifft die Gründungsvoraussetzung der GmbH.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.31",
+    "title": "Vorstand, SCE und Aufsichtsrat der Genossenschaft",
+    "context": "Eine wachsende Einkaufsgenossenschaft beschäftigt mehr als vierzig Arbeitnehmerinnen und Arbeitnehmer. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Leitung der Genossenschaft erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird.",
+      "Ab einer bestimmten Größe der Genossenschaft, ab 40 Arbeitnehmerinnen und Arbeitnehmern, ist ein Aufsichtsrat zu bilden.",
+      "Das europäische Pendant zur Genossenschaft ist die Europäische Genossenschaft oder Societas Cooperativa Europaea (SCE).",
+      "Gewinne dürfen in der Genossenschaft weder reinvestiert noch als Rückvergütungen an die Mitglieder ausgezahlt werden.",
+      "Die Anzahl der Mitglieder ist leicht veränderlich, weil Eintritt und Austritt einfach sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Vorstand aus den eigenen Reihen. Die Leitung erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird. Leitung und Mitgliedschaft hängen hier zusammen, anders als bei der GmbH, deren Geschäftsführerin nicht Gesellschafterin sein muss. Das oberste Organ bleibt trotzdem die Hauptversammlung. Der Satz beschreibt die Leitungsebene, ohne die Hauptversammlung zu leugnen.\n\nDie Aussage ist wahr.",
+      "Vierzig Beschäftigte lösen den Aufsichtsrat aus. Ab einer bestimmten Größe der Genossenschaft, ab 40 Arbeitnehmerinnen und Arbeitnehmern, ist auch ein Aufsichtsrat zu bilden. Die wachsende Einkaufsgenossenschaft überschreitet diese Schwelle und braucht das zusätzliche Organ neben Vorstand und Hauptversammlung. Darunter gilt die Pflicht so nicht. Wer den Aufsichtsrat für jede Zwei-Personen-Genossenschaft zur Gründungsvoraussetzung erklärt, verfehlt die Größenschwelle; wer ihn ab 40 leugnet, ebenfalls. Der Satz trifft die Buchzahl und die Bedingung Arbeitnehmerinnen und Arbeitnehmer, nicht eine bloße Mitgliederzahl ohne Beschäftigte.\n\nDie Aussage ist wahr.",
+      "SCE ist die europäische Genossenschaft, nicht die SE. Auch die Genossenschaft hat ein europäisches Pendant: die Europäische Genossenschaft oder Societas Cooperativa Europaea (SCE). Die SE ist die europäische Aktiengesellschaft mit 120.000 Euro Mindestkapital. Wer der Einkaufsgenossenschaft die SE zuordnet, greift zur Kapitalgesellschaftsvariante. Der Satz hält die richtige lateinische Form fest.\n\nDie Aussage ist wahr.",
+      "Zwei zulässige Wege für Gewinne. Gewinne werden entweder wieder in die Genossenschaft reinvestiert oder als Rückvergütungen an die Genossenschaftsmitglieder ausgezahlt. „Weder noch“ sperrt beide Wege, die das Buch nennt. Im Vordergrund steht gemeinsames Wirtschaften, das schließt diese Verwendung von Gewinnen nicht aus. Der Satz ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Mitgliedschaft ist keine starre Aktiensperre. Die Anzahl der Mitglieder ist leicht veränderlich, weil es einfach ist, in eine Genossenschaft einzutreten und auch wieder auszutreten. So kann man auch nur vorübergehend zusammenarbeiten. Zusätzliches Eigenkapital kommt durch Aufnahme weiterer Genossenschafter. Genau diese Beweglichkeit unterscheidet die Form von einem engen, schwer erweiterbaren Gesellschafterkreis.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.32",
+    "title": "Mindestkapital und Haftung im Vergleich",
+    "context": "Bewerten Sie die folgenden Aussagen zum Vergleich von GmbH, AG, SE und Genossenschaft:",
+    "statements": [
+      "Die GmbH-Gesellschafter haften nur mit ihrer Stammeinlage, die Aktionäre nur mit ihrem Aktienkapital.",
+      "Die Genossenschafter haften mit ihrer Einlage, in der Regel in doppelter Höhe.",
+      "Die AG hat ein gesetzliches Mindestkapital von 70.000 Euro, die SE von 120.000 Euro, die GmbH von 10.000 Euro.",
+      "Die Genossenschaft hat dasselbe gesetzliche Mindestkapital wie die AG.",
+      "Geschäftsführerinnen und Geschäftsführer einer GmbH können, müssen aber nicht zugleich Gesellschafterinnen oder Gesellschafter sein."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Kapitalgesellschaften, zwei Einlagebegriffe, dieselbe Richtung. Die Tabelle stellt nebeneinander: GmbH-Gesellschafter nur mit ihrer Stammeinlage, Aktionäre nur mit ihrem Aktienkapital. Beides ist beschränkte Haftung auf den Kapitaleinsatz, nicht unbeschränkte persönliche Haftung. Stammeinlage und Aktienkapital sind die jeweiligen Bezeichnungen, sie dürfen nicht vertauscht oder durch Privatvermögen ersetzt werden. Wer der AG die Stammeinlage und der GmbH das Aktienkapital zuordnet, vermischt die Formen, trifft aber immer noch nicht die unbeschränkte Haftung der Personengesellschaften.\n\nDie Aussage ist wahr.",
+      "Einlage plus dasselbe noch einmal, in der Regel. Die Genossenschafter haften mit ihrer Einlage, in der Regel in doppelter Höhe. Das 100-plus-100-Beispiel macht aus 100 Euro Anteil maximal 200 Euro möglichen Verlust. Das ist beschränkt auf einen bestimmten Geldbetrag, nicht die solidarische Haftung der OG für den Gesamtbetrag der Schulden. „In der Regel“ lässt erkennen, dass die doppelte Höhe der typische Fall des Buchs ist, nicht eine Erfindung außerhalb des Texts.\n\nDie Aussage ist wahr.",
+      "Drei gesetzliche Schwellen, drei Formen. GmbH 10.000 Euro Stammkapital seit 1.1.2024, AG 70.000 Euro Grundkapital, SE 120.000 Euro. Die Tabelle bündelt AG und SE in einer Spalte mit genau diesen Zahlen. Wer 35.000 Euro als geltende GmbH-Schwelle einsetzt, nennt den Wert vor dem 1.1.2024, nicht den geltenden. Die Dreierreihe im Satz folgt dem Buch.\n\nDie Aussage ist wahr.",
+      "Genossenschaft und AG teilen die Schwelle nicht. Für die Genossenschaft ist kein Mindestkapital notwendig; die AG braucht 70.000 Euro. Dieselbe gesetzliche Mindesthöhe würde die Genossenschaft zur Kapitalgesellschaft mit Grundkapital machen, die sie nach dem Buch nicht ist. Beteiligung erfolgt über Kapitaleinlagen ohne gesetzliche Untergrenze in der Höhe der AG. Der Satz ist falsch.\n\nDie Aussage ist falsch.",
+      "Trennung bleibt bis zum Schluss möglich. Die GmbH wird von Geschäftsführerinnen und Geschäftsführern geleitet; diese können Gesellschafterinnen oder Gesellschafter sein, müssen es aber nicht. Gehalt für die Führung, Gewinnanteile für die Einlage. Kapitalaufbringung und Geschäftsführung dürfen getrennt sein. Im Vergleich der Formen bleibt das ein GmbH-Merkmal gegenüber der Genossenschaft, deren Vorstand von Genossenschaftern gebildet wird. Der Satz hält die Kann-Regel fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,76 @@
+#### 2.1 Einbettung der Wirtschaft in Gesellschaft und Umwelt
+
+Die Leistungen der Natur sind nicht nur für die Produktion von Gütern (z.B. Nahrungsmittel und 
+Laptops) und Dienstleistungen (z.B. Tourismus und Versicherungen) unverzichtbar, sondern bilden 
+auch die Grundlage unseres Wirtschaftssystems, wie Abbildung 13 veranschaulicht. Diese Darstellung 
+ist bewusst vereinfacht, verdeutlicht jedoch die zentralen Zusammenhänge: Wirtschaftliche 
+Aktivitäten werden von privatwirtschaftlich geführten Unternehmen, dem öffentlichen Sektor (Staat 
+und NGOs) sowie von Haushalten und Gemeinschaften durchgeführt. Die Wirtschaft bezieht Inputs 
+wie natürliche Ressourcen und Umweltdienstleistungen aus dem Erdsystem (z.B. Bestäubung von 
+Nahrungsmittelpflanzen) und gibt Outputs (z.B. Klimagase und Abfall) an das Erdsystem, die 
+biophysische Sphäre, zurück. 
+Zu den wichtigsten atmosphärischen Treibhausgasen gehören Wasserdampf, 
+Kohlendioxid (CO₂), Methan (CH₄), Distickstoffmonoxid (N₂O, auch Lachgas 
+genannt) und Ozon (O₃). Sie bilden in der Atmosphäre eine Art Isolierschicht, die 
+einen Teil der von der Erdoberfläche abgestrahlten Wärme zurückhält. Durch 
+menschliche Aktivitäten wie die Verbrennung fossiler Brennstoffe, die Abholzung 
+von Wäldern und die landwirtschaftliche Intensivierung steigen die 
+Konzentrationen dieser Gase an. Dies führt zu einem Anstieg der globalen 
+Durchschnittstemperatur und beschleunigt den Klimawandel. 
+
+Alle wirtschaftlichen Aktivitäten haben Auswirkungen auf die Natur, einige sind aber auch direkt von ihr abhängig. Insbesondere Fischerei, Land- und Forstwirtschaft sowie Tourismus sind in hohem Maße auf die Verfügbarkeit natürlicher Ressourcen und intakter Ökosysteme angewiesen. Ihre langfristige Existenz und Produktivität hängen unmittelbar von der Erhaltung und nachhaltigen Nutzung dieser natürlichen Grundlagen ab. Die Wirtschaft ist in ein gesellschaftliches Umfeld eingebettet, das von verschiedenen Akteuren wie Staat, Unternehmen, Zivilgesellschaft und sozialen Gruppen gestaltet wird. Der Staat spielt eine zentrale Rolle, indem er Gesetze erlässt, Regulierungen durchsetzt und wirtschaftliche Rahmenbedingungen schafft, etwa durch Steuerpolitik oder Umweltauflagen. Unternehmen agieren innerhalb dieser Rahmenbedingungen, beeinflussen sie aber auch aktiv durch Lobbying,
+
+Selbstregulierung und Corporate Social Responsibility (CSR)-Initiativen. Die Zivilgesellschaft - 
+bestehend aus NGOs, Verbänden, Wissenschaft und Medien - fungiert als kritische Instanz, die 
+wirtschaftliches Handeln hinterfragt, Missstände thematisiert und gesellschaftliche Erwartungen an 
+nachhaltiges und ethisches Wirtschaften formuliert. Schließlich prägen individuelle und kollektive 
+Akteure wie Konsument:innen und Arbeitnehmer:innen durch ihr Verhalten und ihre Entscheidungen 
+- sei es durch Kaufentscheidungen, Arbeitsmobilität oder Proteste - wirtschaftliche Strukturen und 
+Normen mit. Das Zusammenspiel dieser Akteure macht deutlich, dass wirtschaftliche Prozesse immer 
+auch das Ergebnis sozialer und politischer Aushandlungsprozesse sind. 
+Die Prozesse in Gesellschaft und Natur wirken auf die Wirtschaft zurück. Umweltzerstörung verursacht 
+erhebliche Kosten für die Wirtschaft, die sich in direkte und indirekte Schäden unterteilen lassen. 
+Direkte Folgen zeigen sich in zerstörter Infrastruktur durch Extremwetterereignisse, 
+Produktionsausfällen und steigenden Versicherungsansprüchen. Indirekte Auswirkungen umfassen 
+Ernteausfälle, erhöhte Gesundheitskosten und Produktivitätsverluste. Langfristig verschärfen die 
+Degradierung von Ökosystemen, klimabedingte Migration, steigende Investitionsrisiken und 
+Störungen globaler Lieferketten die wirtschaftlichen Herausforderungen. Zudem erfordert die 
+Anpassung an die Klimafolgen erhebliche Investitionen in widerstandsfähige Infrastrukturen, 
+erneuerbare Energien und nachhaltige Wirtschaftsmodelle, um die wirtschaftliche Stabilität zu sichern. 
+Die Gesellschaft wirkt auf die Wirtschaft etwa durch veränderte Konsumgewohnheiten und 
+gesellschaftliche Werte. 
+
+Abbildung 13: Wirtschaft eingebettet in Gesellschaft und Umwelt (angelehnt an Goodwin, Harris et al. 2022)
+
+Biophysische Sphäre (Umwelt) Gesellschaftliches Umfeld Wirtschaftliche Aktivitäten
+
+| | | | Haushalte, | Privat- | | |
+| --- | --- | --- | --- | --- | --- | --- |
+| | Natürliche Ressourcen & | | Gemein- unternehmen | | | Abfall, Emissionen & |
+| | | | schaft | | | sonst. Umweltschädigung |
+| | Umweltdienstleistungen | | | | | |
+
+Öffentlicher Sektor
+
+Gesunde Ökosysteme dienen als natürlicher Schutz vor Naturkatastrophen. Wälder beispielsweise können Überschwemmungen verhindern oder abschwächen, indem sie Regenwasser speichern und kontrolliert wieder abgeben. Sie können in hochalpinen Regionen auch als natürliche Barrieren wirken und Lawinen abfangen, wodurch sie Siedlungen, Verkehrswege und Infrastrukturen vor Schäden schützen. Feuchtgebiete wirken wie Schwämme, die Hochwasser aufnehmen und zurückhalten. Diese
+
+ökologischen Funktionen verringern direkte Schäden an Infrastruktur und Eigentum und fördern 
+gleichzeitig die Regeneration nach Katastrophen. 
+Die Artenvielfalt in einem Ökosystem erhöht dessen Widerstandsfähigkeit. Biodiversität ermöglicht es 
+einem Ökosystem, sich an Veränderungen anzupassen und sich nach Störungen schneller zu erholen. 
+Durch den Schutz der biologischen Vielfalt tragen wir zur Stabilität natürlicher Systeme bei, was 
+wiederum die Widerstandsfähigkeit der von diesen Ökosystemen abhängigen Gemeinschaften stärkt. 
+Biodiversität ist auch eine wichtige Quelle für Innovationen in Bereichen wie Pharmazie, 
+Biotechnologie und Landwirtschaft. Viele wertvolle Verbindungen und genetische Ressourcen 
+stammen aus der Natur und führen zu neuen Produkten und Technologien, die die wirtschaftliche 
+Entwicklung vorantreiben. 
+Eine intakte Umwelt trägt unmittelbar zur Gesundheit der Menschen bei. Saubere Luft, sauberes 
+Wasser und der Zugang zu Naturräumen fördern die physische und psychische Gesundheit. Gesunde 
+Gemeinschaften sind widerstandsfähiger gegenüber Gesundheitskrisen und können besser auf 
+Krankheitsausbrüche reagieren. 
+Abbildung 13 macht sichtbar: 
+• Wirtschaftliche Aktivitäten werden von Haushalten, Unternehmen und Staat ausgeführt. 
+• Sie beziehen Inputs aus der Natur und geben Outputs (Abfälle, Emissionen) in sie zurück. 
+• Sie sind in soziale Institutionen, Normen und politische Regeln eingebettet. 
+
+Damit wird deutlich: Wirtschaft ist kein autonomer Prozess, sondern Ausdruck gesellschaftlicher Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit.

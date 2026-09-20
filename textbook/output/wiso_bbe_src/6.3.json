@@ -1,0 +1,1010 @@
+[
+  {
+    "title": "Reading Financial Statements With Caution in Practice",
+    "statements": [
+      "A business's balance sheet and income statement for a single year should be read cautiously, since one year's figures alone can create a misleading impression of overall performance.",
+      "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn.",
+      "An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat.",
+      "Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained.",
+      "A business's balance sheet and income statement for a single year can always be trusted on their own, since one year's figures alone give a complete impression of overall performance."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.001",
+    "context": "Analyze why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Reading Financial Statements With Caution Explained",
+    "statements": [
+      "A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself.",
+      "Placing several years of a business's balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year.",
+      "Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business's performance is heading.",
+      "Comparing successive balance sheets shows whether a business's asset base and its sources of finance are expanding, contracting or holding steady over time.",
+      "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.002",
+    "context": "Analyze how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Return and Cash Flow Extract 3",
+    "statements": [
+      "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 35.1%.",
+      "Cash flow from operating activities amounts to less than 78.6% of the operating result, indicating profit is only partly backed by cash.",
+      "Inventory make up more than 25.7% of total assets.",
+      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 15.5%."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.003",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1235** |\n| **EQUITY** | |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | **736** |\n| **LIABILITIES** | |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | **499** |\n| Total equity and liabilities | **1235** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Reading Financial Statements With Caution for Analysts",
+    "statements": [
+      "Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+      "A trend that persists across three or more reporting periods carries more weight than a single period's outcome when judging a business's direction of travel.",
+      "Judging whether a business's results are strong or weak is more reliable when its figures are set alongside those of comparable businesses in the same industry.",
+      "A profit margin that appears strong when viewed in isolation may turn out to be unremarkable once measured against the margins earned by similar businesses.",
+      "Sector-wide benchmarks help determine whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.004",
+    "context": "Analyze how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Revenue and Operating Result Chart 5",
+    "statements": [
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 4.6 percentage points higher in Year 2 than in Year 1.",
+      "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
+      "The operating result grew by more than 39.7% between Year 1 and Year 2.",
+      "Finance costs grew by more than 43.6% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs less than 12.48 times over in Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.005",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 794 | 968 |\n| Cost of sales | (476) | (580) |\n| Gross profit | 318 | 388 |\n| Distribution costs | (39) | (50) |\n| General and administrative costs | (37) | (45) |\n| Other operating result | 2 | 0 |\n| Operating result | 244 | 293 |\n| Finance costs | (21) | (23) |\n| Finance costs – net | (14) | (21) |\n| Profit before tax | 230 | 272 |\n| Income taxes | (57) | (66) |\n| Profit for the year | 173 | 206 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Reading Financial Statements With Caution Over Time",
+    "statements": [
+      "Comparing a business's statements with those of its direct competitors can reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.",
+      "An improvement in profit for the year always reflects stronger underlying trading, since one-off events never affect the reported profit figure.",
+      "Reading the explanatory notes that accompany a balance sheet and income statement never adds anything beyond what the main statements alone already show.",
+      "Without a suitable point of comparison, a reader has no reliable way of judging whether a given profit margin counts as good or poor performance.",
+      "The relative weight of non-current assets against current assets on a business's balance sheet gives an indication of how capital-intensive its operations are."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.006",
+    "context": "Analyze how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Reading Financial Statements With Caution in Context",
+    "statements": [
+      "A business holding a larger share of its resources in current assets typically has more of its wealth available for conversion into cash within the coming year.",
+      "Studying how the balance between current and non-current assets shifts over time helps explain how a business is choosing to deploy its resources.",
+      "A cautious reader treats any single figure drawn from the financial statements as a final conclusion in itself, with no need for further inquiry.",
+      "An increasing share of non-current assets over successive years can point to a business committing more heavily to long-term productive capacity.",
+      "Businesses in capital-intensive industries tend to carry a heavier weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.007",
+    "context": "Analyze how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Two-Year Balance Sheet Review 8",
+    "statements": [
+      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Total assets grew by more than 10.6% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 80.2% of total equity in Year 2.",
+      "Non-current assets make up more than 61.8% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 2.01 times over in Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.008",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 486 | 532 |\n| Machinery | 185 | 214 |\n| Office equipment | 63 | 71 |\n| Patents, trademarks and licences | 84 | 84 |\n| Inventory | 152 | 182 |\n| Trade receivables | 98 | 103 |\n| Cash and cash equivalents | 117 | 126 |\n| Total assets | **1185** | **1312** |\n| **EQUITY** | | |\n| Share capital | 100 | 100 |\n| Retained earnings | 500 | 554 |\n| Total equity | **600** | **654** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 221 | 253 |\n| Bonds payable | 87 | 95 |\n| Trade payables | 201 | 228 |\n| Bank overdraft | 76 | 82 |\n| Total liabilities | **585** | **658** |\n| Total equity and liabilities | **1185** | **1312** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Liquidity From the Balance Sheet 9",
+    "statements": [
+      "The current ratio is below 1.22.",
+      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "The current ratio exceeds 1.57.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.",
+      "Inventory make up more than 52.1% of current assets."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.009",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 320 |\n| Machinery | 167 |\n| Office equipment | 55 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 265 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 93 |\n| Total assets | **1004** |\n| **EQUITY** | |\n| Share capital | 279 |\n| Retained earnings | 94 |\n| Total equity | **373** |\n| **LIABILITIES** | |\n| Long-term bank loan | 292 |\n| Bonds payable | 76 |\n| Trade payables | 225 |\n| Bank overdraft | 38 |\n| Total liabilities | **631** |\n| Total equity and liabilities | **1004** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Comparing Results Across Several Years in Practice",
+    "statements": [
+      "Placing several years of a business's balance sheets and income statements side by side reveals nothing beyond what a single year's figures already show.",
+      "Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business's performance is heading.",
+      "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit.",
+      "Tracking share capital and retained earnings separately over successive years shows whether a business's equity growth has come from owner contributions or from accumulated profit.",
+      "Comparing successive balance sheets provides no way of telling whether a business's asset base or sources of finance are expanding, contracting or holding steady."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.010",
+    "context": "Analyze why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Return and Cash Flow Extract 11",
+    "statements": [
+      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.8%.",
+      "The equity ratio exceeds 47.3%.",
+      "Cash flow from operating activities amounts to less than 82.1% of the operating result, indicating profit is only partly backed by cash.",
+      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 24.6%."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.011",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 513 |\n| Machinery | 148 |\n| Office equipment | 67 |\n| Patents, trademarks and licences | 34 |\n| Inventory | 125 |\n| Trade receivables | 168 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1149** |\n| **EQUITY** | |\n| Share capital | 161 |\n| Retained earnings | 382 |\n| Total equity | **543** |\n| **LIABILITIES** | |\n| Long-term bank loan | 417 |\n| Bonds payable | 44 |\n| Trade payables | 85 |\n| Bank overdraft | 60 |\n| Total liabilities | **606** |\n| Total equity and liabilities | **1149** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 227 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 232 |\n| Cash flow from investing activities | (300) |\n| Cash flow from financing activities | 71 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 12",
+    "statements": [
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 3.2 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 42.2% between Year 1 and Year 2.",
+      "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
+      "Revenue grew by more than 21% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 27.7% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.012",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 755 | 883 |\n| Cost of sales | (471) | (559) |\n| Gross profit | 284 | 324 |\n| Distribution costs | (40) | (47) |\n| General and administrative costs | (38) | (43) |\n| Other operating result | (3) | 4 |\n| Operating result | 203 | 238 |\n| Finance costs | (16) | (23) |\n| Finance costs – net | (9) | (20) |\n| Profit before tax | 194 | 218 |\n| Income taxes | (48) | (55) |\n| Profit for the year | 146 | 163 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comparing Results Across Several Years Explained",
+    "statements": [
+      "A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues.",
+      "The pattern of a business's equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy.",
+      "If share capital has remained unchanged for several years while equity has still grown, retained earnings must account for the entire increase.",
+      "A business is considered to be financing its non-current assets soundly when their total value does not exceed the combined total of equity and non-current liabilities.",
+      "Relying on long-term sources of finance, rather than short-term borrowing that must soon be renewed, is regarded as the prudent way to fund long-lived assets."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.013",
+    "context": "Analyze how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Comparing Results Across Several Years for Analysts",
+    "statements": [
+      "Looking at several consecutive years of results makes it harder to tell whether an unusual figure was a temporary blip or the start of a lasting change.",
+      "A trend that persists across three or more reporting periods carries no more weight than a single period's outcome when judging a business's direction of travel.",
+      "When non-current assets exceed the sum of equity and non-current liabilities, part of those long-term assets must be financed by current liabilities, which increases financial risk.",
+      "Judging whether a business's results are strong or weak is unaffected by whether its figures are set alongside those of comparable businesses in the same industry.",
+      "Matching the expected life of an asset with the maturity of the finance used to fund it is a widely accepted principle of sound financial management."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.014",
+    "context": "Analyze how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 15",
+    "statements": [
+      "Total assets grew by more than 23.4% between Year 1 and Year 2.",
+      "Inventory grew by more than 27.1% between Year 1 and Year 2.",
+      "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.",
+      "Trade payables grew by more than 17.6% between Year 1 and Year 2.",
+      "Cash and cash equivalents fell by more than 12.1% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.015",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 320 | 359 |\n| Machinery | 133 | 148 |\n| Office equipment | 40 | 44 |\n| Patents, trademarks and licences | 45 | 45 |\n| Inventory | 133 | 147 |\n| Trade receivables | 148 | 172 |\n| Cash and cash equivalents | 103 | 113 |\n| Total assets | **922** | **1028** |\n| **EQUITY** | | |\n| Share capital | 178 | 178 |\n| Retained earnings | 182 | 234 |\n| Total equity | **360** | **412** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 239 | 260 |\n| Bonds payable | 84 | 95 |\n| Trade payables | 211 | 231 |\n| Bank overdraft | 28 | 30 |\n| Total liabilities | **562** | **616** |\n| Total equity and liabilities | **922** | **1028** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 16",
+    "statements": [
+      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "Trade receivables make up less than 36.9% of current assets.",
+      "Cash and cash equivalents make up more than 30.7% of current assets.",
+      "Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
+      "Total assets of €1,025 thousand equal total equity plus total liabilities."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.016",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 371 |\n| Machinery | 276 |\n| Office equipment | 46 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 84 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 106 |\n| Total assets | **1025** |\n| **EQUITY** | |\n| Share capital | 205 |\n| Retained earnings | 204 |\n| Total equity | **409** |\n| **LIABILITIES** | |\n| Long-term bank loan | 249 |\n| Bonds payable | 46 |\n| Trade payables | 250 |\n| Bank overdraft | 71 |\n| Total liabilities | **616** |\n| Total equity and liabilities | **1025** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Return and Cash Flow Extract 17",
+    "statements": [
+      "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 31.3%.",
+      "Inventory make up more than 10.2% of total assets.",
+      "Working capital is positive on this extract.",
+      "Cash flow from investing activities was an outflow this year."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.017",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 139 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 257 |\n| Trade receivables | 104 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1071** |\n| **EQUITY** | |\n| Share capital | 126 |\n| Retained earnings | 382 |\n| Total equity | **508** |\n| **LIABILITIES** | |\n| Long-term bank loan | 283 |\n| Bonds payable | 55 |\n| Trade payables | 197 |\n| Bank overdraft | 28 |\n| Total liabilities | **563** |\n| Total equity and liabilities | **1071** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 171 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 186 |\n| Cash flow from investing activities | (280) |\n| Cash flow from financing activities | 77 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Comparing Results Across Several Years Over Time",
+    "statements": [
+      "A profit margin that appears strong when viewed in isolation remains equally strong once measured against the margins earned by similar businesses.",
+      "Sector-wide benchmarks provide no basis for determining whether an individual business's asset structure or profitability is ordinary for its industry or genuinely stands out.",
+      "Financing long-lived production assets through short-term credit that must be repaid within a year exposes a business to the risk of needing to refinance repeatedly.",
+      "Cost of sales is confined to the direct costs incurred in producing or acquiring the goods a business has actually sold during the period.",
+      "Comparing a business's statements with those of its direct competitors can never reveal whether a change in results reflects conditions across the whole industry or is specific to that one business."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.018",
+    "context": "Analyze why the operating result, also called earnings before interest and taxes, isolates core trading performance from financing and tax effects. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Comparing Results Across Several Years in Context",
+    "statements": [
+      "Only costs that can be traced directly to manufacturing or acquiring the units a business has sold belong within cost of sales.",
+      "Materials physically consumed in manufacturing the units sold form part of cost of sales, while costs incurred once production is finished generally do not.",
+      "Because cost of sales is restricted to direct production costs, functions such as administration and distribution are reported in separate lines of the income statement.",
+      "Direct labour spent physically producing the goods sold is treated as part of cost of sales, unlike labour spent on functions unrelated to production.",
+      "Gross profit is arrived at by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are taken into account."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.019",
+    "context": "Analyze how an expenditure differs from an expense recognised in the income statement. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 20",
+    "statements": [
+      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "Revenue grew by more than 15.1% between Year 1 and Year 2.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 2.3 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 41.1% between Year 1 and Year 2.",
+      "The operating result covers finance costs less than 11.41 times over in Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.020",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 763 | 912 |\n| Cost of sales | (489) | (583) |\n| Gross profit | 274 | 329 |\n| Distribution costs | (48) | (54) |\n| General and administrative costs | (35) | (40) |\n| Other operating result | 3 | 2 |\n| Operating result | 194 | 237 |\n| Finance costs | (20) | (23) |\n| Finance costs – net | (14) | (19) |\n| Profit before tax | 180 | 218 |\n| Income taxes | (44) | (56) |\n| Profit for the year | 136 | 162 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 21",
+    "statements": [
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Total assets grew by more than 6.2% between Year 1 and Year 2.",
+      "The equity ratio improved by more than 3.1 percentage points between Year 1 and Year 2.",
+      "The debt ratio fell by more than 3.2 percentage points between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 66.8% of total equity in Year 1."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.021",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 386 | 435 |\n| Machinery | 175 | 202 |\n| Office equipment | 36 | 39 |\n| Patents, trademarks and licences | 50 | 50 |\n| Inventory | 271 | 320 |\n| Trade receivables | 95 | 103 |\n| Cash and cash equivalents | 79 | 82 |\n| Total assets | **1092** | **1231** |\n| **EQUITY** | | |\n| Share capital | 294 | 294 |\n| Retained earnings | -5 | 78 |\n| Total equity | **289** | **372** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 425 | 456 |\n| Bonds payable | 69 | 75 |\n| Trade payables | 240 | 258 |\n| Bank overdraft | 69 | 70 |\n| Total liabilities | **803** | **859** |\n| Total equity and liabilities | **1092** | **1231** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 22",
+    "statements": [
+      "Collecting payment on a trade receivable is cash from operating activities because it comes from the core trading cycle.",
+      "The current ratio exceeds 1.77.",
+      "Working capital of €378 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.05 times over.",
+      "Inventory make up more than 39% of current assets."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.022",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 317 |\n| Machinery | 158 |\n| Office equipment | 64 |\n| Patents, trademarks and licences | 58 |\n| Inventory | 255 |\n| Trade receivables | 171 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1128** |\n| **EQUITY** | |\n| Share capital | 147 |\n| Retained earnings | 590 |\n| Total equity | **737** |\n| **LIABILITIES** | |\n| Long-term bank loan | 185 |\n| Bonds payable | 53 |\n| Trade payables | 76 |\n| Bank overdraft | 77 |\n| Total liabilities | **391** |\n| Total equity and liabilities | **1128** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Benchmarking Against Industry Peers in Practice",
+    "statements": [
+      "Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance.",
+      "The relative weight of non-current assets against current assets on a business's balance sheet gives no indication of how capital-intensive its operations are.",
+      "The margin represented by gross profit reflects how much a business earns from producing and selling its goods before overhead costs such as administration are considered.",
+      "Distribution costs and administrative expenses are deducted from gross profit, not from revenue directly, on the way to arriving at the operating result.",
+      "Two businesses can report identical gross profit yet end up with very different operating results if their distribution and administrative costs differ."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.023",
+    "context": "Analyze how the relative growth of revenue and cost of sales shapes a business's gross profit margin over time. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Benchmarking Against Industry Peers Explained",
+    "statements": [
+      "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is improving.",
+      "A business holding a larger share of its resources in current assets typically has less of its wealth available for conversion into cash within the coming year.",
+      "Studying how the balance between current and non-current assets shifts over time reveals nothing about how a business is choosing to deploy its resources.",
+      "An increasing share of non-current assets over successive years can only point to a business reducing its commitment to long-term productive capacity.",
+      "Businesses in capital-intensive industries tend to carry a lighter weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.024",
+    "context": "Analyze why reading the balance sheet and income statement together gives a fuller picture than reading either alone. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Revenue and Operating Result Chart 25",
+    "statements": [
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 2.6 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 56.6% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 33.6% between Year 1 and Year 2.",
+      "Finance costs grew by more than 36.5% between Year 1 and Year 2, outpacing the growth in the operating result."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.025",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1053 | 1235 |\n| Cost of sales | (633) | (742) |\n| Gross profit | 420 | 493 |\n| Distribution costs | (49) | (54) |\n| General and administrative costs | (31) | (37) |\n| Other operating result | (2) | (3) |\n| Operating result | 338 | 399 |\n| Finance costs | (18) | (24) |\n| Finance costs – net | (14) | (19) |\n| Profit before tax | 324 | 380 |\n| Income taxes | (78) | (97) |\n| Profit for the year | 246 | 283 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 26",
+    "statements": [
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Finance costs grew by more than 25% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 9.28 times over in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 13.9% in Year 2.",
+      "Profit for the year increased by exactly €3 thousand from Year 1 to Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.026",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 821 | 927 |\n| Cost of sales | (523) | (595) |\n| Gross profit | 298 | 332 |\n| Distribution costs | (49) | (63) |\n| General and administrative costs | (43) | (48) |\n| Other operating result | (1) | 0 |\n| Operating result | 205 | 221 |\n| Finance costs | (22) | (29) |\n| Finance costs – net | (15) | (26) |\n| Profit before tax | 190 | 195 |\n| Income taxes | (46) | (48) |\n| Profit for the year | 144 | 147 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 27",
+    "statements": [
+      "Total equity grew by more than 21.7% between Year 1 and Year 2.",
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "Non-current liabilities amount to less than 91.7% of total equity in Year 2.",
+      "Current liabilities are covered by current assets less than 2.02 times over in Year 2.",
+      "Total assets grew by more than 12.2% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.027",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 28",
+    "statements": [
+      "The current ratio exceeds 1.82.",
+      "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.",
+      "The current ratio is below 1.26.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.3 times over.",
+      "The equity ratio is below 35.4%."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.028",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 494 |\n| Machinery | 146 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 88 |\n| Inventory | 280 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 31 |\n| Total assets | **1166** |\n| **EQUITY** | |\n| Share capital | 219 |\n| Retained earnings | 469 |\n| Total equity | **688** |\n| **LIABILITIES** | |\n| Long-term bank loan | 200 |\n| Bonds payable | 52 |\n| Trade payables | 161 |\n| Bank overdraft | 65 |\n| Total liabilities | **478** |\n| Total equity and liabilities | **1166** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Benchmarking Against Industry Peers for Analysts",
+    "statements": [
+      "The operating result, also described as earnings before interest and taxes, measures profit from core operations before the effects of financing costs and income tax are included.",
+      "When a business's equity rises mainly because retained earnings have grown while share capital stays the same, that growth must have come from a new issue of shares to owners.",
+      "Tracking share capital and retained earnings separately over successive years provides no way of telling whether a business's equity growth has come from owner contributions or from accumulated profit.",
+      "A business that grows its equity mostly through retained earnings is relying just as heavily on outside investors as one whose equity growth comes mainly from new share issues.",
+      "The pattern of a business's equity growth over several years reveals nothing about its underlying financing strategy, regardless of whether it is driven by retained profit or fresh capital."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.029",
+    "context": "Review why a business's balance sheet and income statement for a single year should be read cautiously rather than taken at face value. Evaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Benchmarking Against Industry Peers Over Time",
+    "statements": [
+      "Excluding financing costs and income tax from the operating result allows a business's core trading performance to be judged separately from how it happens to be financed or taxed.",
+      "If share capital has remained unchanged for several years while equity has still grown, that growth cannot be explained by retained earnings.",
+      "A business is considered to be financing its non-current assets soundly only when their total value is covered mainly by current liabilities.",
+      "Relying on short-term borrowing that must soon be renewed, rather than long-term sources of finance, is regarded as the prudent way to fund long-lived assets.",
+      "When non-current assets exceed the sum of equity and non-current liabilities, this always indicates a conservative and low-risk financing position."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.030",
+    "context": "Review how comparing several years of financial statements reveals trends that one year's figures cannot show alone. Evaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Revenue and Operating Result Chart 31",
+    "statements": [
+      "Finance costs grew by more than 21.9% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 8.44 times over in Year 1.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 3.8 percentage points higher in Year 2 than in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 14% in Year 2.",
+      "The effective tax rate, income taxes taken as a share of profit before tax, is below 21.3% in Year 1."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.031",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 847 | 950 |\n| Cost of sales | (521) | (591) |\n| Gross profit | 326 | 359 |\n| Distribution costs | (42) | (48) |\n| General and administrative costs | (39) | (49) |\n| Other operating result | 0 | 4 |\n| Operating result | 245 | 266 |\n| Finance costs | (15) | (19) |\n| Finance costs – net | (12) | (13) |\n| Profit before tax | 233 | 253 |\n| Income taxes | (46) | (50) |\n| Profit for the year | 187 | 203 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 32",
+    "statements": [
+      "Revenue grew by more than 10.1% between Year 1 and Year 2.",
+      "Finance costs grew by more than 10% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 2.2 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 28.1% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 22.6% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.032",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 840 | 945 |\n| Cost of sales | (551) | (626) |\n| Gross profit | 289 | 319 |\n| Distribution costs | (43) | (49) |\n| General and administrative costs | (40) | (49) |\n| Other operating result | 4 | (3) |\n| Operating result | 210 | 218 |\n| Finance costs | (19) | (24) |\n| Finance costs – net | (12) | (21) |\n| Profit before tax | 198 | 197 |\n| Income taxes | (40) | (42) |\n| Profit for the year | 158 | 155 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 33",
+    "statements": [
+      "Non-current liabilities amount to more than 52.9% of total equity in Year 1.",
+      "Total equity grew by more than 15.8% between Year 1 and Year 2.",
+      "Total assets grew by more than 21% between Year 1 and Year 2.",
+      "Inventory grew by more than 29% between Year 1 and Year 2.",
+      "Trade payables grew by more than 24.9% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.033",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 374 | 428 |\n| Machinery | 220 | 240 |\n| Office equipment | 35 | 41 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 186 | 216 |\n| Trade receivables | 96 | 104 |\n| Cash and cash equivalents | 30 | 35 |\n| Total assets | **1020** | **1143** |\n| **EQUITY** | | |\n| Share capital | 229 | 229 |\n| Retained earnings | 284 | 342 |\n| Total equity | **513** | **571** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 329 | 376 |\n| Bonds payable | 40 | 44 |\n| Trade payables | 82 | 90 |\n| Bank overdraft | 56 | 62 |\n| Total liabilities | **507** | **572** |\n| Total equity and liabilities | **1020** | **1143** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 34",
+    "statements": [
+      "The current ratio is below 0.99.",
+      "The debt ratio exceeds 67.1%.",
+      "Inventory make up more than 35.6% of current assets.",
+      "Trade receivables make up less than 35.6% of current assets.",
+      "Inventory of €109 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.034",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 446 |\n| Machinery | 238 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 109 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 35 |\n| Total assets | **1003** |\n| **EQUITY** | |\n| Share capital | 235 |\n| Retained earnings | 49 |\n| Total equity | **284** |\n| **LIABILITIES** | |\n| Long-term bank loan | 398 |\n| Bonds payable | 85 |\n| Trade payables | 165 |\n| Bank overdraft | 71 |\n| Total liabilities | **719** |\n| Total equity and liabilities | **1003** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Return and Cash Flow Extract 35",
+    "statements": [
+      "Return on equity, the operating result taken as a percentage of total equity, exceeds 41.4%.",
+      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.3%.",
+      "The equity ratio exceeds 47%.",
+      "Cash flow from operating activities amounts to less than 87% of the operating result, indicating profit is only partly backed by cash.",
+      "Inventory make up more than 27.6% of total assets."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.035",
+    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 237 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 273 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1253** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 464 |\n| Total equity | **626** |\n| **LIABILITIES** | |\n| Long-term bank loan | 419 |\n| Bonds payable | 55 |\n| Trade payables | 126 |\n| Bank overdraft | 27 |\n| Total liabilities | **627** |\n| Total equity and liabilities | **1253** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 201 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 199 |\n| Cash flow from investing activities | (276) |\n| Cash flow from financing activities | 46 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 36",
+    "statements": [
+      "Non-current liabilities amount to less than 101.2% of total equity in Year 2.",
+      "Non-current assets make up more than 55.9% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.64 times over in Year 2.",
+      "Total equity grew by more than 16.6% between Year 1 and Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 20.8% in Year 1."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.036",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 484 | 524 |\n| Machinery | 221 | 229 |\n| Office equipment | 48 | 53 |\n| Patents, trademarks and licences | 32 | 32 |\n| Inventory | 224 | 238 |\n| Trade receivables | 154 | 182 |\n| Cash and cash equivalents | 88 | 104 |\n| Total assets | **1251** | **1362** |\n| **EQUITY** | | |\n| Share capital | 223 | 223 |\n| Retained earnings | 294 | 329 |\n| Total equity | **517** | **552** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 351 | 375 |\n| Bonds payable | 84 | 91 |\n| Trade payables | 215 | 247 |\n| Bank overdraft | 84 | 97 |\n| Total liabilities | **734** | **810** |\n| Total equity and liabilities | **1251** | **1362** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Gearing From Comparative Figures 37",
+    "statements": [
+      "Total equity grew by more than 16.5% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 105.9% of total equity in Year 2.",
+      "Non-current assets make up more than 60.3% of total assets in Year 2.",
+      "Trade payables of €76 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Total assets grew by more than 22.8% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.037",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 504 |\n| Machinery | 255 | 304 |\n| Office equipment | 80 | 90 |\n| Patents, trademarks and licences | 64 | 64 |\n| Inventory | 229 | 239 |\n| Trade receivables | 114 | 122 |\n| Cash and cash equivalents | 36 | 40 |\n| Total assets | **1249** | **1363** |\n| **EQUITY** | | |\n| Share capital | 131 | 131 |\n| Retained earnings | 765 | 829 |\n| Total equity | **896** | **960** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 206 | 230 |\n| Bonds payable | 42 | 48 |\n| Trade payables | 64 | 76 |\n| Bank overdraft | 41 | 49 |\n| Total liabilities | **353** | **403** |\n| Total equity and liabilities | **1249** | **1363** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Benchmarking Against Industry Peers in Context",
+    "statements": [
+      "Tracking the operating result over several years shows how a business's core trading is developing independently of changes in interest rates or tax policy.",
+      "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed.",
+      "Two businesses reporting an identical operating result can still end up with different profit for the year if their finance costs or tax rates differ.",
+      "Financing long-lived production assets through short-term credit that must be repaid within a year removes any risk of needing to refinance.",
+      "A decline in profit for the year alongside a stable or rising operating result suggests the cause lies in financing costs or taxation rather than in core trading."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.038",
+    "context": "Review how benchmarking a business's results against comparable competitors clarifies whether performance is strong or weak. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Liquidity From the Balance Sheet 39",
+    "statements": [
+      "The current ratio exceeds 1.08.",
+      "Working capital of €241 thousand is positive on this balance sheet.",
+      "The current ratio is below 1.01.",
+      "The debt ratio exceeds 55.9%.",
+      "The equity ratio is below 20.5%."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.039",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 444 |\n| Machinery | 275 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 215 |\n| Trade receivables | 174 |\n| Cash and cash equivalents | 52 |\n| Total assets | **1269** |\n| **EQUITY** | |\n| Share capital | 221 |\n| Retained earnings | 336 |\n| Total equity | **557** |\n| **LIABILITIES** | |\n| Long-term bank loan | 439 |\n| Bonds payable | 73 |\n| Trade payables | 118 |\n| Bank overdraft | 82 |\n| Total liabilities | **712** |\n| Total equity and liabilities | **1269** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 40",
+    "statements": [
+      "Revenue grew by more than 12.5% between Year 1 and Year 2.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 1.7 percentage points higher in Year 2 than in Year 1.",
+      "Finance costs grew by more than 19.5% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The operating result covers finance costs more than 4.62 times over in Year 1.",
+      "The operating margin, operating result taken as a share of revenue, exceeds 10.4% in Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.040",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 785 | 919 |\n| Cost of sales | (495) | (586) |\n| Gross profit | 290 | 333 |\n| Distribution costs | (53) | (67) |\n| General and administrative costs | (42) | (47) |\n| Other operating result | (3) | (2) |\n| Operating result | 192 | 217 |\n| Finance costs | (14) | (21) |\n| Finance costs – net | (10) | (17) |\n| Profit before tax | 182 | 200 |\n| Income taxes | (43) | (46) |\n| Profit for the year | 139 | 154 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "The Current and Non-Current Asset Balance in Practice",
+    "statements": [
+      "An expenditure is an outflow of cash or resources, while an expense is the portion of that outflow recognised in the income statement as belonging to the current period.",
+      "Cost of sales includes every cost a business incurs during the period, regardless of whether the cost relates directly to the goods sold.",
+      "Any cost that benefits the business in some way, even indirectly, belongs within cost of sales.",
+      "Materials physically consumed in manufacturing the units sold are excluded from cost of sales because they are considered an overhead.",
+      "Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each period of cover passes."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.041",
+    "context": "Review how the balance between current and non-current assets signals how capital-intensive a business is. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "The Current and Non-Current Asset Balance Explained",
+    "statements": [
+      "A single large expenditure can result in expense being recognised gradually across several future accounting periods rather than all at once.",
+      "Because cost of sales includes every departmental cost, functions such as administration and distribution are absorbed into it rather than reported separately.",
+      "Direct labour spent physically producing the goods sold is excluded from cost of sales because wages are always treated as an administrative cost.",
+      "The distinction between expenditure and expense matters because it explains why a business's cash outflow for a year can differ substantially from its reported expenses for that year.",
+      "Gross profit is arrived at by deducting all operating expenses, including distribution and administrative costs, from revenue."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.042",
+    "context": "Review how the split between retained earnings and new share capital reveals the source of a business's equity growth. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "The Current and Non-Current Asset Balance for Analysts",
+    "statements": [
+      "Buying an asset that will be used for several years is an expenditure immediately, but only part of its cost becomes an expense in the year of purchase.",
+      "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years shows whether a business is becoming more or less efficient at producing what it sells.",
+      "The margin represented by gross profit reflects a business's overall profitability after every overhead cost, including administration, has already been deducted.",
+      "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will widen across that period.",
+      "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin come under sustained pressure."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.043",
+    "context": "Review why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Profit and Loss Over Two Years 44",
+    "statements": [
+      "Revenue grew by more than 12.4% between Year 1 and Year 2.",
+      "Finance costs grew by more than 37.8% between Year 1 and Year 2, outpacing the growth in the operating result.",
+      "The gross profit margin, gross profit taken as a share of revenue, is more than 4.4 percentage points higher in Year 2 than in Year 1.",
+      "The operating result grew by more than 59.9% between Year 1 and Year 2.",
+      "Profit for the year grew by more than 29.3% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.044",
+    "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 770 | 904 |\n| Cost of sales | (448) | (530) |\n| Gross profit | 322 | 374 |\n| Distribution costs | (46) | (61) |\n| General and administrative costs | (40) | (46) |\n| Other operating result | 4 | (3) |\n| Operating result | 240 | 264 |\n| Finance costs | (18) | (26) |\n| Finance costs – net | (12) | (23) |\n| Profit before tax | 228 | 241 |\n| Income taxes | (46) | (47) |\n| Profit for the year | 182 | 194 |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 45",
+    "statements": [
+      "Total equity grew by more than 14.5% between Year 1 and Year 2.",
+      "Trade payables grew by more than 8.4% between Year 1 and Year 2.",
+      "Non-current liabilities amount to less than 75.7% of total equity in Year 2.",
+      "Total assets grew by more than 14.9% between Year 1 and Year 2.",
+      "Inventory grew by more than 20.7% between Year 1 and Year 2."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.045",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 369 | 423 |\n| Machinery | 146 | 168 |\n| Office equipment | 71 | 77 |\n| Patents, trademarks and licences | 51 | 51 |\n| Inventory | 231 | 247 |\n| Trade receivables | 114 | 128 |\n| Cash and cash equivalents | 31 | 35 |\n| Total assets | **1013** | **1129** |\n| **EQUITY** | | |\n| Share capital | 191 | 191 |\n| Retained earnings | 283 | 333 |\n| Total equity | **474** | **524** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 197 | 217 |\n| Bonds payable | 81 | 94 |\n| Trade payables | 184 | 214 |\n| Bank overdraft | 77 | 80 |\n| Total liabilities | **539** | **605** |\n| Total equity and liabilities | **1013** | **1129** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "The Current and Non-Current Asset Balance Over Time",
+    "statements": [
+      "Stable growth in both revenue and cost of sales at similar rates tends to keep a business's gross profit margin relatively steady from year to year.",
+      "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace.",
+      "Distribution costs and administrative expenses are deducted directly from revenue at the same stage as cost of sales, before gross profit is calculated.",
+      "Two businesses that report identical gross profit will always end up with identical operating results, regardless of their distribution and administrative costs.",
+      "Reading the balance sheet and income statement together gives a fuller picture of a business's position and performance than studying either statement on its own."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.046",
+    "context": "Review how cost of sales is confined to the direct costs of producing or acquiring the goods a business has sold. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Balance Sheet Structure Review 47",
+    "statements": [
+      "The current ratio exceeds 1.84.",
+      "The current ratio is below 0.68.",
+      "Working capital of €134 thousand is positive on this balance sheet.",
+      "Inventory make up more than 55.2% of current assets.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.97 times over."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.047",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 289 |\n| Machinery | 272 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 259 |\n| Trade receivables | 69 |\n| Cash and cash equivalents | 107 |\n| Total assets | **1088** |\n| **EQUITY** | |\n| Share capital | 254 |\n| Retained earnings | 129 |\n| Total equity | **383** |\n| **LIABILITIES** | |\n| Long-term bank loan | 329 |\n| Bonds payable | 75 |\n| Trade payables | 214 |\n| Bank overdraft | 87 |\n| Total liabilities | **705** |\n| Total equity and liabilities | **1088** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "The Current and Non-Current Asset Balance in Context",
+    "statements": [
+      "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is deteriorating.",
+      "A strong profit for the year shown in the income statement can be undermined by a weak financing position revealed only by the balance sheet.",
+      "Changes in working capital shown on the balance sheet can help explain why cash movements differ from the profit for the year reported in the income statement.",
+      "Judging a business's overall financial health requires weighing income statement performance against balance sheet strength rather than looking at either alone.",
+      "The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have already been deducted."
+    ],
+    "subsection": "6.3",
+    "case_id": "CASE 6.3.048",
+    "context": "Review how gross profit is calculated by deducting cost of sales from revenue before operating expenses are considered. Evaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  }
+]

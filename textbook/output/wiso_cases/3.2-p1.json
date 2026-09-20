@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.01",
+    "title": "Bedeutung der Rechtsform",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Rechtsform von Unternehmen:",
+    "statements": [
+      "Die Rechtsform ist bedeutsam für die Frage, wer das Unternehmen leitet, wer die Geschäfte führt und wer für Schulden haftet.",
+      "Für die Wahl der Rechtsform spielt es keine Rolle, wie das notwendige Kapital aufgebracht werden soll.",
+      "Die meisten Unternehmen in Österreich sind KMU, von denen der Großteil Einzelunternehmen sind.",
+      "Wer in kleinem Rahmen mit Erspartem gründet, braucht dieselbe Rechtsform wie ein großer Industriebetrieb mit umfangreichen Produktionskapazitäten.",
+      "Wer mit einem Unternehmen Geschäfte macht, soll Klarheit darüber haben, wer für das Unternehmen Verträge abschließen darf."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Leitung, Geschäftsführung und Haftung stehen nicht irgendwo nebenbei. Das Buch knüpft gesetzliche Regelungen gerade daran, dass Geschäftspartner wissen sollen, wer leitet, wer führt, wer Verträge schließen darf, wer Kapital eingebracht hat und wer für Schulden einsteht. Die Rechtsform beantwortet genau dieses Bündel an Fragen, nicht nur den Firmennamen auf dem Briefpapier. Ohne diese Zuordnung bliebe unklar, ob eine Unterschrift bindet und wessen Privatvermögen bei offenen Rechnungen auf dem Spiel steht. Wer die Rechtsform als reines Etikett behandelt, verfehlt den Grund, warum sie für alle genannten Punkte bedeutsam ist und warum Interessierte sie im Firmenbuch nachschlagen, sofern das Unternehmen eingetragen ist.\n\nDie Aussage ist wahr.",
+      "Kapitalaufbringung gehört zu den Auswahlkriterien. Geeignet ist eine Rechtsform nach dem Buch einerseits danach, wer gründet und wer leiten will, andererseits danach, wie das notwendige Kapital aufgebracht werden soll und wer in welchem Umfang für Schulden haftet. Die Behauptung, die Finanzierung spiele keine Rolle, streicht die zweite Hälfte dieser Abwägung. Ein kleines Vorhaben mit Erspartem und ein kapitalintensiver Industriebetrieb stehen deshalb nicht vor derselben Wahl.\n\nDie Aussage ist falsch.",
+      "KMU und Einzelunternehmen tragen die Landschaft. Die meisten Unternehmen in Österreich sind KMU, und von diesen ist der Großteil als Einzelunternehmen organisiert. Großunternehmen mit hohem Kapitalbedarf wählen oft andere Formen, das ändert aber nichts an der Häufigkeit: der typische österreichische Betrieb ist klein und häufig ein Einzelunternehmen. Die Aussage trifft genau diese Gewichtung, ohne aus jedem KMU schon eine kapitalstarke Großfirma zu machen.\n\nDie Aussage ist wahr.",
+      "Ein Rahmen passt nicht für alle. Für eine Person, die in kleinem Rahmen mit ihrem Ersparten ein Unternehmen aufbaut, ist eine andere Rechtsform geeignet als für einen großen Industriebetrieb, der umfangreiche Produktionskapazitäten aufbauen und finanzieren muss. Gründung, Leitung, Kapital und Haftung fallen in beiden Fällen anders aus. Die Forderung nach derselben Form für beide Lagen widerspricht dieser Differenzierung.\n\nDie Aussage ist falsch.",
+      "Vertragsmacht ist Teil derselben Klarheit. Wer mit Unternehmen Geschäfte macht, soll wissen, wer leitet, wer führt, wer Verträge abschließen darf, wer Kapital eingebracht hat und wer haftet. Die Rechtsform ist für alle diese Fragen bedeutsam, also auch für die Vertretung nach außen. Ohne diese Zuordnung bliebe unklar, ob eine Unterschrift das Unternehmen bindet. Genau deshalb gibt es die gesetzlichen Regelungen zur Rechtsform.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.02",
+    "title": "Einzelunternehmen und eine Person",
+    "context": "Bewerten Sie die folgenden Aussagen zum Einzelunternehmen:",
+    "statements": [
+      "Ein Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person das Unternehmen führt, die Entscheidungen trifft und das unternehmerische Risiko trägt.",
+      "Ein Einzelunternehmen setzt mindestens zwei Gesellschafterinnen oder Gesellschafter voraus.",
+      "Der Selbstständigkeit und der Unabhängigkeit von anderen Gesellschafterinnen und Gesellschaftern bei der Unternehmensführung steht das allein getragene Risiko gegenüber.",
+      "Zwei Personen, die gleichberechtigt führen und haften wollen, gründen damit bereits ein Einzelunternehmen.",
+      "Viele Kleinunternehmen sind als Einzelunternehmen organisiert."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Eine Person bündelt Führung, Entscheidung und Risiko. Genau das kennzeichnet nach dem Buch das Einzelunternehmen: nur eine Person führt, trifft die Entscheidungen und trägt das unternehmerische Risiko. Es gibt keine zweite Inhaberin, mit der Leitung und Haftung geteilt würden. Wer mehrere gleichberechtigte Köpfe in diese Form hineinliest, verfehlt die Definition. Die Konzentration auf eine Person ist der Ausgangspunkt, nicht ein Sonderfall kleiner Läden.\n\nDie Aussage ist wahr.",
+      "Zwei Köpfe gehören nicht ins Einzelunternehmen. Die Form ist dadurch gekennzeichnet, dass nur eine Person führt, entscheidet und das Risiko trägt. Mindestens zwei Gesellschafterinnen oder Gesellschafter sind die Gründungsvoraussetzung der Offenen Gesellschaft, nicht des Einzelunternehmens. Wer die Zweizahl hier verlangt, verwechselt die Rechtsformen. Ein Einzelunternehmen entsteht gerade ohne weitere Gesellschafter.\n\nDie Aussage ist falsch.",
+      "Unabhängigkeit hat einen Preis. Die Selbstständigkeit und die Unabhängigkeit von anderen Gesellschafterinnen und Gesellschaftern bei der Unternehmensführung stehen nach dem Buch immer dem Risiko gegenüber, das die Einzelunternehmerin oder der Einzelunternehmer ganz allein in vollem Umfang tragen muss. Niemand muss mitentscheiden, niemand teilt die unbeschränkte Haftung mit Privatvermögen. Scheitert der Betrieb, trifft das oft die Person privat, bis hin zum Privatkonkurs. Der Satz hält genau diese Gegenüberstellung fest, statt Unabhängigkeit mit einer risikofreien Stellung zu verwechseln oder die Haftung stillschweigend auf das Ladeninventar zu begrenzen.\n\nDie Aussage ist wahr.",
+      "Gleichberechtigte Führung sprengt die Form. Das Einzelunternehmen kennt nur eine Person, die führt, entscheidet und das Risiko trägt. Wollen zwei Personen Aufgaben, Finanzierung und Haftung teilen, liegt nach dem Buch der Weg über eine Personengesellschaft, etwa die Offene Gesellschaft mit mindestens zwei Gesellschafterinnen oder Gesellschaftern. Ein Einzelunternehmen entsteht dadurch nicht. Die Zweizahl ist hier kein Detail, sondern der Wechsel der Rechtsform.\n\nDie Aussage ist falsch.",
+      "Klein und einfach fallen oft zusammen. Viele Kleinunternehmen sind als Einzelunternehmen organisiert, weil sie relativ einfach und ohne Mindestkapitalerfordernisse gegründet werden können. Die Häufigkeit folgt aus dieser niedrigen Schwelle, nicht aus einem Verbot anderer Formen. Der Satz trifft die im Buch genannte typische Wahl, ohne zu behaupten, jedes Kleinunternehmen müsse so organisiert sein.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.03",
+    "title": "Unbeschränkte Haftung im Einzelunternehmen",
+    "context": "Eine Wiener Tischlerin führt ihr Gewerbe als Einzelunternehmen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden, also nicht nur mit dem betrieblichen Vermögen, sondern auch mit dem Privatvermögen.",
+      "Die Haftung der Einzelunternehmerin bleibt stets auf Maschinen, Warenlager und Geschäftskonto beschränkt.",
+      "Scheitert das Einzelunternehmen, bedeutet das oft nicht nur das Ende des Betriebs, sondern auch finanzielle Schwierigkeiten als Privatperson.",
+      "Die gescheiterte Selbstständigkeit ist ein häufiger Grund für einen Privatkonkurs.",
+      "Sobald die Tischlerin zwei Gesellen beschäftigt, haften diese an ihrer Stelle unbeschränkt für die Betriebsschulden."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Betriebsvermögen reicht als Grenze nicht. Die Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden ihres Unternehmens, das heißt die Haftung besteht nicht nur mit dem betrieblichen Vermögen, sondern auch mit dem Privatvermögen. Gläubiger können also über Hobelbank und Lager hinaus auf Wohnung, Ersparnisse oder andere private Werte zugreifen, soweit das Recht das zulässt. Die Tischlerin trägt das unternehmerische Risiko allein; Personal ändert daran nichts. Wer die Haftung auf den Betriebskreis begrenzt, beschreibt eine beschränkte Haftung, die das Buch dem Einzelunternehmen gerade nicht zuschreibt.\n\nDie Aussage ist wahr.",
+      "Maschinen und Lager sind nicht der ganze Haftungstopf. Unbeschränkte Haftung heißt ausdrücklich: nicht nur betriebliches Vermögen, sondern auch Privatvermögen. Eine Beschränkung auf Hobel, Platten und Geschäftskonto würde das private Vermögen schützen, obwohl das Buch diesen Schutz für die Einzelunternehmerin nicht vorsieht. Scheitert der Betrieb, bleibt die Person mit den Schulden verbunden. Der Satz kehrt die Buchregel um.\n\nDie Aussage ist falsch.",
+      "Betrieb und Person fallen im Scheitern zusammen. Endet das Einzelunternehmen, bedeutet das oft nicht nur das Ende für das Unternehmen, sondern auch finanzielle Schwierigkeiten für die Unternehmerin als Privatperson, weil die Haftung das Privatvermögen einschließt. Die Tischlerin kann den Laden schließen und trotzdem mit offenen Krediten und Lieferantenforderungen als Privatperson dastehen. Genau diese Verknüpfung beschreibt das Buch, statt Scheitern als bloßes Auslöschen der Firma ohne private Folgen zu denken.\n\nDie Aussage ist wahr.",
+      "Privatkonkurs ist im Text kein Randphänomen. Die gescheiterte Selbstständigkeit ist ein häufiger Grund für einen Privatkonkurs, also für ein Schuldenregulierungsverfahren bei Privatpersonen. Das folgt aus der unbeschränkten Haftung: Betriebsschulden werden zur privaten Überschuldung, wenn das Unternehmen nicht mehr trägt. Der Satz gibt die Buchaussage wieder, ohne aus jedem gescheiterten Betrieb automatisch ein Gerichtsverfahren zu machen; häufig ist der Zusammenhang, nicht ausnahmslos jeder Fall.\n\nDie Aussage ist wahr.",
+      "Gesellen sind keine Haftungsträger anstelle der Inhaberin. Manchmal werden Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt, die unbeschränkte Haftung bleibt aber bei der Einzelunternehmerin. Sie führt, entscheidet und trägt das Risiko; Anstellung überträgt weder Geschäftsführung noch Schuldenhaftung auf das Personal. Wer die Gesellen als Ersatzhaftende einsetzt, verwechselt Arbeitsvertrag und Inhaberschaft.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.04",
+    "title": "Gründung und Kapital des Einzelunternehmens",
+    "context": "Bewerten Sie die folgenden Aussagen zu Gründung und Finanzierung des Einzelunternehmens:",
+    "statements": [
+      "Viele Kleinunternehmen sind als Einzelunternehmen organisiert, weil sie relativ einfach und ohne Mindestkapitalerfordernisse gegründet werden können.",
+      "Für jedes Einzelunternehmen schreibt das Gesetz eine Mindestkapitalsumme vor, ohne die keine Gründung möglich ist.",
+      "Das Kapital, das benötigt wird, muss die Einzelunternehmerin oder der Einzelunternehmer für gewöhnlich allein aufbringen.",
+      "Reichen die eigenen Mittel nicht, wird der weitere Bedarf an finanziellen Mitteln in den meisten Fällen durch einen Kredit abgedeckt.",
+      "Ein Einzelunternehmen darf fehlende Mittel niemals durch Kredit beschaffen, weil nur Gesellschaften fremdfinanzieren dürfen."
+    ],
+    "answer_key": [true, false, true, true, false],
+    "tactical_explanations": [
+      "Einfachheit und fehlendes Mindestkapital erklären die Häufigkeit. Viele Kleinunternehmen wählen das Einzelunternehmen, weil die Gründung relativ einfach ist und keine Mindestkapitalerfordernisse bestehen. Die Inhaberin muss kein gesetzlich festgelegtes Startkapital nachweisen, um die Form zu nutzen; das benötigte Geld bringt sie für gewöhnlich allein auf, oft aus Ersparnissen. Reicht das nicht, folgt in den meisten Fällen ein Kredit, nicht eine zweite Gesellschafterin. Das erleichtert den Einstieg in kleinem Rahmen, lässt die unbeschränkte Haftung aber unberührt. Der Satz verbindet Organisationsform und Gründungsschwelle so, wie das Buch sie verbindet.\n\nDie Aussage ist wahr.",
+      "Gesetzliche Mindesthöhe gibt es hier nicht. Das Buch betont ausdrücklich, dass Einzelunternehmen ohne Mindestkapitalerfordernisse gegründet werden können; für das Kapital gilt keine gesetzliche Mindesthöhe. Eine vorgeschriebene Summe als Gründungsvoraussetzung würde genau diese Schwelle einziehen, die das Einzelunternehmen von anderen Formen unterscheidet. Die Behauptung ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Allein aufbringen ist der Normalweg. Das benötigte Kapital muss die Einzelunternehmerin oder der Einzelunternehmer für gewöhnlich allein aufbringen, weil keine weiteren Gesellschafterinnen oder Gesellschafter Kapitaleinlagen leisten. Ersparnisse und später erwirtschaftete Mittel tragen den Betrieb. Die Formulierung \"für gewöhnlich\" lässt Ausnahmen offen, ändert aber nichts an der Regel: die eine Person steht für das Eigenkapital.\n\nDie Aussage ist wahr.",
+      "Kredit schließt die Lücke, nicht eine zweite Inhaberin. Reichen die eigenen Mittel nicht, wird der weitere Bedarf an finanziellen Mitteln in den meisten Fällen durch einen Kredit abgedeckt. Das Buch stellt das als typischen Weg dar, ohne andere Quellen auszuschließen. Fremdkapital tritt neben das allein aufgebrachte Eigenkapital; es verwandelt das Einzelunternehmen nicht in eine Gesellschaft. Die Aussage trifft diese häufige Finanzierungslinie.\n\nDie Aussage ist wahr.",
+      "Kreditverbot für Einzelunternehmen steht nicht im Text. Im Gegenteil: fehlen eigene Mittel, deckt in den meisten Fällen ein Kredit den weiteren Bedarf. Fremdfinanzierung ist also gerade für diese Form vorgesehen, nicht Gesellschaften vorbehalten. Die Tischlerin oder der Händler kann ein Darlehen aufnehmen und haftet dafür unbeschränkt, auch privat. Der absolute Satz \"niemals Kredit\" widerspricht der Buchregel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.05",
+    "title": "Mitarbeit und Risiko im Einzelunternehmen",
+    "context": "Bewerten Sie die folgenden Aussagen zur Arbeitsteilung im Einzelunternehmen:",
+    "statements": [
+      "Oft arbeitet nur die Einzelunternehmerin oder der Einzelunternehmer selbst für das Unternehmen.",
+      "Manchmal werden ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt.",
+      "Wer Personal beschäftigt, trägt das unternehmerische Risiko nicht mehr selbst, weil die Beschäftigten die Haftung übernehmen.",
+      "Der Unabhängigkeit bei der Unternehmensführung steht immer das Risiko gegenüber, das die Einzelperson ganz allein in vollem Umfang tragen muss.",
+      "Mehrere gleichberechtigte Inhaberinnen können ein und dasselbe Einzelunternehmen gemeinsam als eine Person führen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Allein arbeiten ist der häufige Fall. Oft arbeitet nur die Einzelunternehmerin oder der Einzelunternehmer selbst für das Unternehmen; die Form verlangt keine Belegschaft. Führung, Entscheidung und Risiko liegen dann sichtbar bei derselben Person. Der Satz beschreibt diese typische Lage, ohne Beschäftigung von Personal auszuschließen. Kleinheit und Selbsttätigkeit gehören im Buch zusammen.\n\nDie Aussage ist wahr.",
+      "Unterstützung ändert die Rechtsform nicht. Manchmal werden ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt. Sie helfen im Betrieb, werden aber nicht zu Gesellschafterinnen oder Gesellschaftern. Die eine Person führt weiter, trifft die wichtigen Entscheidungen und trägt das unternehmerische Risiko. Personal ist Hilfe, nicht Mitinhaberschaft.\n\nDie Aussage ist wahr.",
+      "Anstellung verschiebt die Haftung nicht. Beschäftigte unterstützen, haften aber nicht unbeschränkt anstelle der Inhaberin. Das Risiko trägt die Einzelunternehmerin ganz allein in vollem Umfang, auch wenn zwei oder drei Personen im Laden stehen. Unbeschränkte Haftung mit Privatvermögen bleibt an der Inhaberin. Der Satz macht aus einem Arbeitsverhältnis fälschlich eine Haftungsübernahme.\n\nDie Aussage ist falsch.",
+      "Unabhängigkeit und Alleinrisiko sind ein Paar. Der Selbstständigkeit und der Unabhängigkeit von anderen Gesellschafterinnen und Gesellschaftern bei der Unternehmensführung steht immer das Risiko gegenüber, das die Einzelperson ganz allein in vollem Umfang tragen muss. Niemand muss mitentscheiden, niemand teilt die unbeschränkte Haftung mit Privatvermögen. Personal zur Unterstützung ändert diese Last nicht, weil Beschäftigte nicht anstelle der Inhaberin für Betriebsschulden einstehen. \"Immer\" ist hier die Buchformulierung, keine Übertreibung. Wer Unabhängigkeit als risikofreie Stellung liest, trennt, was der Text zusammenbindet.\n\nDie Aussage ist wahr.",
+      "Mehrere Inhaberinnen sprengen die Definition. Das Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person führt, entscheidet und das Risiko trägt. Gleichberechtigte gemeinsame Inhaberschaft ist die Lage einer Personengesellschaft mit mehr als einer beteiligten Person, nicht die eines Einzelunternehmens. Die Fiktion, mehrere Personen seien \"eine Person\", ändert die gesetzliche Zuordnung nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.06",
+    "title": "Personengesellschaften im Überblick",
+    "context": "Bewerten Sie die folgenden Aussagen zu Personengesellschaften:",
+    "statements": [
+      "An einer Personengesellschaft ist mehr als eine Person beteiligt.",
+      "Die beteiligten Personen bringen nicht nur das Kapital auf, sie haften auch für die Schulden des Unternehmens.",
+      "Ob Gesellschafterinnen und Gesellschafter im Unternehmen mitarbeiten, hängt von der Art der Beteiligung ab.",
+      "Eine Personengesellschaft entsteht bereits, wenn eine einzelne Inhaberin ein paar Angestellte einstellt.",
+      "Bei den Personengesellschaften werden die Varianten Offene Gesellschaft und Kommanditgesellschaft unterschieden."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Mehr als eine Person ist die Schwelle. An einer Personengesellschaft ist mehr als eine Person beteiligt; das unterscheidet sie vom Einzelunternehmen mit nur einer führenden Person. Zwei oder mehr Köpfe bringen Kapital auf und stehen für Schulden ein. Die Kopfzahl ist hier kein Stilmittel, sondern Definitionsmerkmal. Eine alleinige Inhaberin erfüllt diese Schwelle nicht.\n\nDie Aussage ist wahr.",
+      "Kapital und Haftung liegen bei denselben Beteiligten. Die Personen bringen nicht nur das Kapital für das Unternehmen auf, sie haften auch für die Schulden. Je nach Art der Gesellschafterin oder des Gesellschafters reicht die Haftung bis ins Privatvermögen oder, beim Kommanditisten, bis zur Einlage. Mitarbeit kommt hinzu, ist aber nicht der einzige Beitrag. Der Satz hält die doppelte Rolle fest: Geld und Schuldeneinstand.\n\nDie Aussage ist wahr.",
+      "Mitarbeit folgt dem Gesellschaftertyp. Je nachdem, um welche Art von Gesellschafterin oder Gesellschafter es sich handelt, arbeiten die Beteiligten auch im Unternehmen mit. In der Offenen Gesellschaft sind alle zur Geschäftsführung berechtigt und verpflichtet; in der Kommanditgesellschaft arbeitet der Komplementär vergleichbar mit, der Kommanditist nicht, hat aber Kontrollrechte und darf in die Bücher Einsicht nehmen. Kapital bringen beide Formen auf, Haftung tragen sie ebenfalls, nur in unterschiedlichem Umfang. Die pauschale Formel, alle Personengesellschafter arbeiteten immer mit, wäre daher zu grob. Der Satz lässt genau diese Differenzierung zu, ohne Mitarbeit zur Bedingung jeder Kapitaleinlage zu machen.\n\nDie Aussage ist wahr.",
+      "Angestellte machen keine Gesellschaft. Das Einzelunternehmen bleibt ein Einzelunternehmen, auch wenn ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt werden. Eine Personengesellschaft setzt mehr als eine beteiligte Person voraus, also Gesellschafterinnen oder Gesellschafter, nicht bloß Personal. Einstellung ändert Führung, Kapitalaufbringung und Haftung der Inhaberin nicht in eine Gesellschaft. Der Satz verwechselt Arbeitsvertrag und Beteiligung.\n\nDie Aussage ist falsch.",
+      "Zwei Varianten trägt der Abschnitt. Bei den Personengesellschaften werden Offene Gesellschaft und Kommanditgesellschaft unterschieden. Die OG kennt nur eine Art von Gesellschafterinnen und Gesellschaftern, die KG unterscheidet Komplementär und Kommanditist. Andere Formen behandelt der Text an dieser Stelle nicht als Personengesellschaft. Der Satz gibt die Buchgliederung wieder.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.07",
+    "title": "Offene Gesellschaft",
+    "context": "Zwei Beraterinnen wollen gemeinsam eine Offene Gesellschaft gründen. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Offene Gesellschaft kennt nur eine Art von Gesellschafterinnen und Gesellschaftern.",
+      "Mindestens zwei Gesellschafterinnen oder Gesellschafter gründen die OG.",
+      "Alle Gesellschafterinnen und Gesellschafter der OG sind zur Geschäftsführung berechtigt und verpflichtet.",
+      "Eine einzige Person kann eine OG allein gründen, wenn sie genug Kapital mitbringt.",
+      "Für das Kapital der OG gibt es wie beim Einzelunternehmen keine gesetzliche Mindesthöhe."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Eine Gesellschafterart, nicht zwei Klassen. Die Offene Gesellschaft kennt nur eine Art von Gesellschafterinnen und Gesellschaftern; alle stehen in derselben Rolle. Es gibt hier keinen Typ mit beschränkter Haftung neben einem voll haftenden Typ. Genau das unterscheidet die OG von der Kommanditgesellschaft mit Komplementär und Kommanditist. Der Satz trifft diese Einheitlichkeit.\n\nDie Aussage ist wahr.",
+      "Die Zweizahl ist Gründungsvoraussetzung. Mindestens zwei Gesellschafterinnen oder Gesellschafter gründen die OG. Eine Person allein erfüllt das nicht, unabhängig vom Kapital. Die beiden Beraterinnen liegen mit ihrem Vorhaben also auf der Linie der Form; eine von ihnen allein müsste ein Einzelunternehmen wählen oder eine zweite beteiligte Person finden. Der Satz gibt die Mindestzahl wieder.\n\nDie Aussage ist wahr.",
+      "Geschäftsführung ist Recht und Pflicht aller. Alle Gesellschafterinnen und Gesellschafter der OG sind zur Geschäftsführung berechtigt und verpflichtet. Niemand darf sich auf die Rolle einer stillen Kapitaleinlegerin zurückziehen, die nur Geld gibt und nicht führt; eine solche Beschränkung auf Kapital ohne Mitarbeit beschreibt das Buch beim Kommanditisten der KG, nicht bei der OG. Die beiden Beraterinnen würden also beide die Geschäfte führen, nicht nur eine von ihnen als angestellte Leiterin. Berechtigung ohne Verpflichtung oder umgekehrt kennt die Buchbeschreibung der OG nicht. Haftung und Leitung liegen bei derselben Gesellschafterart.\n\nDie Aussage ist wahr.",
+      "Kapital ersetzt die zweite Person nicht. Die OG wird von mindestens zwei Gesellschafterinnen oder Gesellschaftern gegründet. Eine einzige Person, und sei ihr Kapital noch so hoch, bleibt ein Einzelunternehmen, wenn niemand weiter beteiligt ist. Die gesetzliche Mindesthöhe fehlt zwar wie beim Einzelunternehmen, das ändert die Kopfzahl nicht. Alleingründung einer OG steht so nicht im Buch.\n\nDie Aussage ist falsch.",
+      "Keine gesetzliche Mindesthöhe wie beim Einzelunternehmen. Jede Gesellschafterin und jeder Gesellschafter beteiligt sich am Kapital, für das es jedoch wie beim Einzelunternehmen keine gesetzliche Mindesthöhe gibt. Die OG ist damit nicht an eine vorgeschriebene Startsumme gebunden. Fehlen eigene Mittel, bleibt wie bei anderen Personengesellschaften oft der Bankkredit. Der Satz koppelt OG und Einzelunternehmen genau an diesem Punkt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.08",
+    "title": "Solidarische Haftung in der OG",
+    "context": "Drei Gesellschafter führen gemeinsam eine Offene Gesellschaft. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Jede Gesellschafterin und jeder Gesellschafter haftet mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden des Unternehmens.",
+      "In der OG haftet jede beteiligte Person nur anteilig bis zur Höhe der eigenen Kapitaleinlage.",
+      "Solidarische Haftung bedeutet, dass jede Gesellschafterin und jeder Gesellschafter für den Gesamtbetrag der Schulden einsteht, nicht nur für einen Bruchteil.",
+      "Wer in der OG nur den Einkauf übernimmt, haftet nicht für Schulden, die aus dem Verkauf entstehen.",
+      "Alle OG-Gesellschafterinnen und OG-Gesellschafter beteiligen sich am Kapital des Unternehmens."
+    ],
+    "answer_key": [true, false, true, false, true],
+    "tactical_explanations": [
+      "Privatvermögen und Gesamtbetrag gehören zusammen. Jede Gesellschafterin und jeder Gesellschafter der OG haftet mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden des Unternehmens; das Buch nennt das solidarische Haftung. Gläubiger müssen sich also nicht mit einem Drittel pro Kopf begnügen, wenn drei Personen beteiligt sind. Sie können den ganzen offenen Betrag bei einer Person suchen, und das private Vermögen steht dafür ein, nicht nur die Einlage. Wer die Haftung auf den Geschäftsanteil begrenzt, beschreibt den Kommanditisten, nicht die OG.\n\nDie Aussage ist wahr.",
+      "Einlage deckelt die OG-Haftung nicht. Anteilige Haftung bis zur Kapitaleinlage wäre die Logik einer Haftungsbeschränkung, wie sie das Buch dem Kommanditisten zuschreibt. In der OG haftet jede Person mit dem gesamten Privatvermögen für den Gesamtbetrag. Drei gleiche Einlagen machen daraus keine drei getrennten Haftungstöpfe. Der Satz verwechselt solidarische Haftung mit beschränkter Einlagenhaftung.\n\nDie Aussage ist falsch.",
+      "Gesamtbetrag ist der Kern des Wortes solidarisch. Das Buch hängt die solidarische Haftung ausdrücklich daran, dass jede Gesellschafterin und jeder Gesellschafter für den Gesamtbetrag der Schulden einsteht, und zwar mit dem gesamten Privatvermögen. Ein Gläubiger muss nicht parallel bei allen dreien denselben Bruchteil eintreiben. Interne Ausgleichsansprüche zwischen den Gesellschafterinnen und Gesellschaftern ändert das Buch an dieser Außenhaftung nicht. Der Satz trifft die Buchdefinition, ohne interne Verrechnung zu leugnen oder auszuschmücken.\n\nDie Aussage ist wahr.",
+      "Aufgabenteilung löst die Haftung nicht. Partner können Aufgaben teilen und sich auf Einkauf, Verkauf oder Beratung konzentrieren; alle OG-Gesellschafterinnen und OG-Gesellschafter bleiben trotzdem zur Geschäftsführung berechtigt und verpflichtet und haften solidarisch für den Gesamtbetrag. Schulden aus dem Verkauf sind Schulden des Unternehmens, nicht ein privates Sonderkonto der Verkäuferin. Wer nur den Einkauf übernimmt, steht nach außen trotzdem für den ganzen Betrag ein.\n\nDie Aussage ist falsch.",
+      "Kapitalbeteiligung gehört zur Rolle. Jede Gesellschafterin und jeder Gesellschafter beteiligt sich am Kapital des Unternehmens; eine gesetzliche Mindesthöhe gibt es dabei nicht. Die OG kennt keine Klasse, die nur führt und kein Kapital gibt, und keine Klasse, die nur Geld gibt und nicht führt. Beteiligung am Kapital und solidarische Haftung laufen parallel. Der Satz hält diesen Kapitalbeitrag fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.09",
+    "title": "Kommanditgesellschaft: zwei Gesellschafterarten",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kommanditgesellschaft:",
+    "statements": [
+      "Die Kommanditgesellschaft unterscheidet zwischen Komplementären und Kommanditisten.",
+      "Mindestens eine Person ist Komplementär, daneben gibt es mindestens eine Person als Kommanditisten.",
+      "Der Komplementär ist im Hinblick auf Mitarbeit, Kapitalbeteiligung und Haftung mit einer OG-Gesellschafterin oder einem OG-Gesellschafter vergleichbar.",
+      "Alle Gesellschafterinnen und Gesellschafter einer KG haften gleichermaßen nur mit ihrer Kapitaleinlage.",
+      "Die KG kennt wie die OG nur eine einzige Art von Gesellschafterinnen und Gesellschaftern."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Zwei Typen tragen die KG. Die Kommanditgesellschaft unterscheidet zwischen zwei Arten von Gesellschafterinnen und Gesellschaftern, den Komplementären und den Kommanditisten. Das ist der Gegensatz zur OG, die nur eine Art kennt. Haftung, Mitarbeit und Kapital folgen aus dieser Unterscheidung: der Komplementär gleicht der OG-Gesellschafterin, der Kommanditist haftet nur mit der Einlage und arbeitet nicht mit. Ein einheitlicher Status aller Beteiligten würde diese Spaltung aufheben. Der Satz nennt genau die Buchunterscheidung, ohne schon die Mindestzahlen auszuformulieren.\n\nDie Aussage ist wahr.",
+      "Jeweils mindestens eine Person pro Typ. Mindestens eine Person ist Komplementär; daneben gibt es noch mindestens eine Person als Kommanditisten. Fehlt eine der beiden Rollen, ist die beschriebene KG nicht vollständig. Zwei Komplementäre ohne Kommanditisten wären etwas anderes als diese Form; ein alleiniger Kommanditist ohne Komplementär ebenso. Die Mindestzahlen stehen so im Text.\n\nDie Aussage ist wahr.",
+      "Der Komplementär spiegelt die OG-Rolle. Im Hinblick auf die Mitarbeit im Unternehmen, die Beteiligung am Kapital und die Haftung ist der Komplementär einer OG-Gesellschafterin oder einem OG-Gesellschafter vergleichbar. Er arbeitet mit, kann Kapital einbringen und haftet unbeschränkt mit dem Privatvermögen für den Gesamtbetrag der Schulden, nicht nur mit einer Einlage. Die KG lagert die Haftungsbeschränkung beim anderen Typ, dem Kommanditisten, der nur mit der Einlage haftet und nicht mitarbeitet. Wer den Komplementär als beschränkt haftend liest, verfehlt den Vergleich und macht aus zwei Gesellschafterarten eine einzige.\n\nDie Aussage ist wahr.",
+      "Einheitliche Einlagenhaftung gibt es in der KG nicht. Nur der Kommanditist haftet mit der eigenen Kapitaleinlage; der Komplementär haftet wie der OG-Gesellschafter, also unbeschränkt und mit dem Privatvermögen für den Gesamtbetrag. \"Alle nur mit der Einlage\" würde die unbeschränkte Haftung des Komplementärs streichen. Genau diese Differenz ist der Sinn der zwei Gesellschafterarten.\n\nDie Aussage ist falsch.",
+      "Eine einzige Art beschreibt die OG, nicht die KG. Die Offene Gesellschaft kennt nur eine Art von Gesellschafterinnen und Gesellschaftern; die Kommanditgesellschaft unterscheidet Komplementär und Kommanditist. Wer die KG auf eine Klasse zusammenschmilzt, nimmt ihr das Merkmal, das das Buch an den Anfang stellt. Die Aussage ist daher falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.10",
+    "title": "Kommanditist: Einlage, Mitarbeit, Kontrolle",
+    "context": "Eine Kommanditistin bringt Kapital in eine KG ein und arbeitet nicht im Betrieb mit. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Kommanditistin haftet nur mit der eigenen Kapitaleinlage.",
+      "Die Kommanditistin arbeitet nicht im Unternehmen mit.",
+      "Für diesen Gesellschaftertyp ist eine Haftungsbeschränkung möglich.",
+      "Kommanditisten haben Kontrollrechte und dürfen in die Bücher der Gesellschaft Einsicht nehmen.",
+      "Die Kommanditistin führt die Geschäfte der KG ebenso wie der Komplementär und ist dazu verpflichtet."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Die Einlage ist die Haftungsgrenze dieses Typs. Mindestens eine Person als Kommanditistin haftet nur mit der eigenen Kapitaleinlage, nicht mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden. Das unterscheidet sie vom Komplementär, der einem OG-Gesellschafter vergleichbar unbeschränkt einsteht, und vom Einzelunternehmer, dessen Haftung ebenfalls das Privatvermögen erfasst. Gläubiger können bei der Kommanditistin grundsätzlich nur das eingebrachte Kapital suchen. Für diesen Gesellschaftertyp ist die Haftungsbeschränkung möglich; sie entfällt nicht dadurch, dass die KG zugleich einen voll haftenden Komplementär braucht. Der Satz gibt diese Beschränkung wieder.\n\nDie Aussage ist wahr.",
+      "Keine Mitarbeit ist Teil der Rollendefinition. Das Buch stellt den Kommanditisten als Person dar, die nur mit der eigenen Kapitaleinlage haftet und nicht im Unternehmen mitarbeitet. Geschäftsführung liegt beim Komplementär. Die Kommanditistin im Szenario, die Kapital gibt und nicht im Betrieb mitarbeitet, entspricht genau diesem Typ. Wer sie zur Mitgeschäftsführerin macht, vermischt die beiden Arten.\n\nDie Aussage ist wahr.",
+      "Haftungsbeschränkung sitzt bei diesem Typ. Für den Gesellschaftertyp Kommanditist ist eine Haftungsbeschränkung möglich, nämlich auf die eigene Kapitaleinlage. Beim Komplementär und bei der OG-Gesellschafterin sieht das Buch diese Beschränkung nicht vor. Die KG existiert gerade, um Kapital von Personen aufzunehmen, die nicht unbeschränkt mit dem Privatvermögen für den Gesamtbetrag einstehen wollen. Der Satz trifft diese Möglichkeit, ohne sie auf den Komplementär auszudehnen.\n\nDie Aussage ist wahr.",
+      "Kontrolle ersetzt Geschäftsführung, tilgt sie aber nicht als Recht. Kommanditisten haben Kontrollrechte und dürfen in die Bücher der Gesellschaft Einsicht nehmen. Sie führen die Geschäfte nicht, bleiben aber nicht ohne Information. Einsicht in die Bücher ist das Gegenstück zur fehlenden Mitarbeit: wer nicht täglich mitleitet, soll prüfen können, was mit dem eingesetzten Kapital geschieht. Der Satz nennt genau diese Buchrechte.\n\nDie Aussage ist wahr.",
+      "Geschäftsführung ist nicht die Aufgabe der Kommanditistin. Zur Geschäftsführung berechtigt und verpflichtet sind in der KG die Komplementäre, vergleichbar den OG-Gesellschafterinnen und OG-Gesellschaftern. Der Kommanditist arbeitet nicht im Unternehmen mit; seine Rechte sind Kontrolle und Büchereinsicht, nicht die Leitung. Eine Verpflichtung zur Geschäftsführung wie in der OG würde die zwei Arten wieder zu einer machen. Der Satz ist deshalb falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.11",
+    "title": "Vom Einzelunternehmen zur Personengesellschaft",
+    "context": "Ein wachsendes Einzelunternehmen stößt an die Grenzen einer Person. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Einzelunternehmen, deren Umfang so zunimmt, dass Führung oder Finanzierung für eine Person zu viel werden, können in Personengesellschaften umgewandelt werden.",
+      "Eine solche Umwandlung kann Finanzierungsmöglichkeiten und Haftungssituation verbessern und die Verantwortung für die Unternehmensleitung aufteilen.",
+      "Die Rechtsform eines Einzelunternehmens liegt ein für alle Mal fest und darf niemals gewechselt werden.",
+      "Nach der Umwandlung in eine Personengesellschaft bleibt zwingend nur eine Person zur Geschäftsführung berechtigt.",
+      "An der Personengesellschaft, die dabei entsteht, ist mehr als eine Person beteiligt."
+    ],
+    "answer_key": [true, true, false, false, true],
+    "tactical_explanations": [
+      "Wachstum kann die Form sprengen. Nimmt der Unternehmensumfang deutlich zu, sodass Unternehmensführung und oder Finanzierung für eine Person zu viel werden, können Einzelunternehmen in Personengesellschaften umgewandelt werden. Die eine Inhaberin holt weitere beteiligte Personen hinzu, statt allein weiterzumachen. Der Satz beschreibt genau diesen vom Buch vorgesehenen Übergang, nicht ein Verbot zu wachsen.\n\nDie Aussage ist wahr.",
+      "Drei Motive nennt der Text. Umgewandelt wird, um die Finanzierungsmöglichkeiten, die Haftungssituation zu verbessern und die Verantwortung für die Unternehmensleitung aufzuteilen. Weitere Köpfe können Kapital einbringen, Haftung tragen und führen, wenn Führung oder Finanzierung für eine Person zu viel geworden sind. Das verbessert die Lage gegenüber dem Alleinrisiko des Einzelunternehmens, ohne automatisch eine Haftungsbeschränkung für alle zu schaffen: in der OG bleibt die Haftung solidarisch und unbeschränkt, in der KG nur beim Kommanditisten beschränkt. Der Satz trifft die genannten Ziele, ohne schon die Wahl zwischen OG und KG festzulegen.\n\nDie Aussage ist wahr.",
+      "Wechsel ist vorgesehen, nicht verboten. Das Buch spricht ausdrücklich davon, dass Einzelunternehmen in Personengesellschaften umgewandelt werden können, wenn Umfang, Führung oder Finanzierung für eine Person zu viel werden. Eine lebenslange Festlegung der ersten Rechtsform steht dazu im Widerspruch. \"Niemals\" ist hier die Falle. Der Satz ist falsch.\n\nDie Aussage ist falsch.",
+      "Aufteilung der Leitung ist gerade der Zweck. Die Verantwortung für die Unternehmensleitung soll aufgeteilt werden; in der OG sind alle Gesellschafterinnen und Gesellschafter zur Geschäftsführung berechtigt und verpflichtet, in der KG führen die Komplementäre. Zwingend nur eine geschäftsführende Person wie im Einzelunternehmen wäre der Zustand vor der Umwandlung. Der Satz hält die alte Form in der neuen fest und ist falsch.\n\nDie Aussage ist falsch.",
+      "Mehr als eine Person ist nach dem Wechsel die Definition. An einer Personengesellschaft ist mehr als eine Person beteiligt; genau deshalb kann Führung, Finanzierung und Haftung auf mehrere Schultern. Die Umwandlung besteht darin, aus der einen Inhaberin eine Gesellschaft mit weiteren Beteiligten zu machen. Der Satz folgt unmittelbar aus der Begriffsbestimmung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.12",
+    "title": "Kapital und Bankkredit bei Personengesellschaften",
+    "context": "Bewerten Sie die folgenden Aussagen zur Finanzierung von Personengesellschaften:",
+    "statements": [
+      "Personengesellschaften sind im Hinblick auf die von den Gesellschaftern eingebrachten Mittel in der Regel beschränkt, weil sie meist nur wenige Gesellschafter haben.",
+      "Diese wenigen Gesellschafterinnen und Gesellschafter sind in vielen Fällen nicht in der Lage, hohe Kapitalsummen einzubringen.",
+      "Personengesellschaften sind daher auch oft von der Finanzierung durch Bankkredite abhängig.",
+      "Weil mehrere Personen Kapital einbringen, brauchen Personengesellschaften niemals Bankkredite.",
+      "Auch beim Einzelunternehmen wird fehlendes eigenes Kapital in den meisten Fällen durch einen Kredit abgedeckt."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Wenige Köpfe begrenzen die Einlagen. Personengesellschaften sind im Hinblick auf die von den Gesellschaftern eingebrachten Mittel in der Regel beschränkt, weil sie meist nur wenige Gesellschafter haben. OG und KG sind keine Formen mit einer großen Zahl von Kapitalgebern. Die Beschränkung folgt aus der Personenanzahl, nicht aus einem gesetzlichen Verbot hoher Einlagen. Der Satz gibt diese Regel wieder.\n\nDie Aussage ist wahr.",
+      "Hohe Summen liegen oft außerhalb der Reichweite. Die wenigen Gesellschafterinnen und Gesellschafter sind in vielen Fällen nicht in der Lage, hohe Kapitalsummen in das Unternehmen einzubringen. Ersparnisse zweier oder dreier Personen reichen für Maschinenparks und große Kapazitäten oft nicht, und eine gesetzliche Mindesthöhe zwingt sie auch nicht zu einem großen Startkapital. Genau deshalb nennt das Buch im nächsten Schritt die Abhängigkeit von Bankkrediten. Der Satz ist die Begründung dieser Enge, nicht schon die Behauptung, Kredit sei verboten oder überflüssig. Personengesellschaften bleiben damit bei der Kapitalbasis typischerweise schmaler als Formen mit vielen Kapitalgebern, die dieser Abschnitt nicht behandelt.\n\nDie Aussage ist wahr.",
+      "Bankkredit ist die häufige Ergänzung. Weil die eingebrachten Mittel beschränkt bleiben, sind Personengesellschaften daher auch oft von der Finanzierung durch Bankkredite abhängig. Eigenkapital der Gesellschafter und Kredit stehen nebeneinander, der Kredit ersetzt die Rechtsform nicht. \"Oft\" ist die Buchnuance, kein ausnahmsloses Muss. Der Satz trifft diese Abhängigkeit.\n\nDie Aussage ist wahr.",
+      "Mehrere Personen tilgen den Kreditbedarf nicht. Zwar können zwei oder drei Beteiligte mehr aufbringen als eine Einzelunternehmerin, doch das Buch hält fest, dass Personengesellschaften meist nur wenige Gesellschafter haben und daher oft von Bankkrediten abhängig bleiben. \"Niemals Kredit\" ist die absolute Falle. Die Mehrzahl der Köpfe ändert die typische Kapitalenge nicht in Kapitalüberfluss.\n\nDie Aussage ist falsch.",
+      "Kredit ist schon beim Einzelunternehmen der typische Zusatz. Reichen die eigenen Mittel nicht, wird der weitere Bedarf in den meisten Fällen durch einen Kredit abgedeckt. Personengesellschaften stehen damit in einer ähnlichen Finanzierungslinie, nur dass mehrere Personen Eigenkapital einbringen und oft trotzdem noch die Bank brauchen. Der Satz verbindet beide Formen über denselben Fremdfinanzierungsweg.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.13",
+    "title": "Wer haftet in welchem Umfang",
+    "context": "Vergleichen Sie die Haftung im Einzelunternehmen, in der OG und in der KG. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Einzelunternehmer haftet persönlich und unbeschränkt, also auch mit dem Privatvermögen.",
+      "Die OG-Gesellschafter haften persönlich, unbeschränkt und jeder für den Gesamtbetrag der Schulden.",
+      "Der Komplementär haftet so wie der OG-Gesellschafter.",
+      "Der Kommanditist haftet nur bis zur Höhe seiner Einlage.",
+      "Der Kommanditist haftet mit seinem gesamten Privatvermögen für den Gesamtbetrag aller Schulden, genau wie der Komplementär."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Eine Person, volle Haftung. Der Einzelunternehmer oder die Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden, nicht nur mit betrieblichem Vermögen, sondern auch mit dem Privatvermögen. Persönlich heißt hier: die natürliche Person steht ein, nicht nur ein abgegrenzter Betriebskreis. Scheitern kann zum Privatkonkurs führen. Der Satz fasst genau diese unbeschränkte persönliche Haftung.\n\nDie Aussage ist wahr.",
+      "Solidarisch und unbeschränkt in der OG. Jede Gesellschafterin und jeder Gesellschafter haftet mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden; das Buch nennt das solidarische Haftung. Persönlich und unbeschränkt bleibt die Lage wie beim Einzelunternehmen, verschärft dadurch, dass jede Person für den ganzen Betrag einsteht, nicht nur für ihren Kapitalanteil. Drei Gesellschafter bedeuten drei volle Haftungsschultern nach außen; Gläubiger müssen sich nicht mit Dritteln begnügen. Die Kapitaleinlage ist Beteiligung, nicht Deckel. Der Satz trifft Tabelle und Fließtext und grenzt die OG vom Kommanditisten ab, der nur bis zur Einlage haftet.\n\nDie Aussage ist wahr.",
+      "Komplementär gleich OG-Gesellschafter. Der Komplementär ist im Hinblick auf Mitarbeit, Kapitalbeteiligung und Haftung mit einer OG-Gesellschafterin oder einem OG-Gesellschafter vergleichbar; die zusammenfassende Darstellung sagt ausdrücklich, der Komplementär hafte so wie der OG-Gesellschafter. Unbeschränkt, persönlich, Privatvermögen, Gesamtbetrag: das gilt für ihn, nicht für den Kommanditisten. Die KG spaltet die Rollen, tilgt die volle Haftung des Komplementärs aber nicht.\n\nDie Aussage ist wahr.",
+      "Einlage ist die Obergrenze des Kommanditisten. Der Kommanditist haftet nur mit der eigenen Kapitaleinlage, in der Tabelle: nur bis zur Höhe seiner Einlage. Für diesen Typ ist eine Haftungsbeschränkung möglich. Privatvermögen für den Gesamtbetrag verlangt das Buch von ihm nicht. Wer ihn mit dem Komplementär gleichsetzt, streicht den Sinn der zweiten Gesellschafterart.\n\nDie Aussage ist wahr.",
+      "Gleichsetzung mit dem Komplementär ist der Fehler. Unbeschränkte Haftung mit dem gesamten Privatvermögen für den Gesamtbetrag beschreibt OG-Gesellschafter und Komplementär. Der Kommanditist haftet nur bis zur Höhe seiner Einlage und arbeitet nicht im Unternehmen mit. Die KG existiert gerade, weil diese Beschränkung möglich sein soll. Der Satz überträgt die falsche Haftung auf den falschen Typ.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.14",
+    "title": "Wer führt die Geschäfte",
+    "context": "Bewerten Sie die folgenden Aussagen zur Geschäftsführung in Einzelunternehmen, OG und KG:",
+    "statements": [
+      "Im Einzelunternehmen führt der Einzelunternehmer oder die Einzelunternehmerin die Geschäfte.",
+      "In der OG führen die OG-Gesellschafterinnen und OG-Gesellschafter die Geschäfte, mindestens zwei Personen.",
+      "In der KG führen der Komplementär oder die Komplementäre die Geschäfte, mindestens eine Person.",
+      "In der KG führt der Kommanditist die Geschäfte, während der Komplementär nicht mitarbeitet.",
+      "Alle Gesellschafterinnen und Gesellschafter einer KG sind zur Geschäftsführung berechtigt und verpflichtet, genau wie in der OG."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Eine Person führt. Das Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person das Unternehmen führt und die Entscheidungen trifft. Die zusammenfassende Darstellung nennt den Einzelunternehmer als denjenigen, der die Geschäfte führt. Mitarbeiterinnen und Mitarbeiter können unterstützen, ersetzen diese Führung aber nicht. Der Satz trifft die Zuordnung.\n\nDie Aussage ist wahr.",
+      "Mindestens zwei führen in der OG. Alle Gesellschafterinnen und Gesellschafter sind zur Geschäftsführung berechtigt und verpflichtet; gegründet wird die OG von mindestens zwei Personen. Die zusammenfassende Darstellung sagt: die OG-Gesellschafter, mindestens zwei, führen die Geschäfte. Eine allein geschäftsführende Inhaberin wäre wieder das Einzelunternehmen, auch wenn sie Personal beschäftigt. Kapital ohne zweite Person macht daraus keine OG. Der Satz verbindet Kopfzahl und Führungsrecht so, wie Text und Übersicht sie verbinden.\n\nDie Aussage ist wahr.",
+      "Komplementäre leiten die KG. Der Komplementär ist hinsichtlich der Mitarbeit im Unternehmen mit einer OG-Gesellschafterin vergleichbar; die Tabelle weist die Geschäftsführung dem oder den Komplementären zu, mindestens einem. Der Kommanditist arbeitet nicht mit. Mindestens eine voll haftende, mitarbeitende Person trägt also die Leitung. Der Satz folgt Text und Übersicht.\n\nDie Aussage ist wahr.",
+      "Die Rollen stehen umgekehrt. Der Kommanditist arbeitet nicht im Unternehmen mit und führt die Geschäfte nicht; der Komplementär tut beides in der dem OG-Gesellschafter vergleichbaren Weise. Kontrollrechte und Büchereinsicht ersetzen beim Kommanditisten die Leitung, sie sind nicht selbst Geschäftsführung. Der Satz vertauscht die beiden Arten und ist falsch.\n\nDie Aussage ist falsch.",
+      "OG-Regel gilt nicht für alle KG-Beteiligten. Zur Geschäftsführung berechtigt und verpflichtet sind in der OG alle Gesellschafterinnen und Gesellschafter, weil die OG nur eine Art kennt. In der KG gilt dieselbe Leitungsrolle für den Komplementär, der dem OG-Gesellschafter vergleichbar mitarbeitet; der Kommanditist arbeitet nicht im Unternehmen mit und hat stattdessen Kontrollrechte samt Büchereinsicht. Alle wie in der OG würde den Kommanditisten zur Geschäftsführerin machen und die Haftungsbeschränkung dieses Typs mit einer Leitungsrolle vermischen, die das Buch ihm nicht zuschreibt. Die zwei Arten der KG wären dann wieder eine. Der Satz ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.15",
+    "title": "Kapitalaufbringung ohne gesetzliche Mindesthöhe",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kapitalaufbringung in Einzelunternehmen, OG und KG:",
+    "statements": [
+      "Beim Einzelunternehmen bringt der Einzelunternehmer oder die Einzelunternehmerin das Kapital auf.",
+      "In der OG bringen die OG-Gesellschafterinnen und OG-Gesellschafter das Kapital auf.",
+      "In der KG muss der Kommanditist eine Kapitaleinlage leisten, der Komplementär kann eine Kapitaleinlage leisten.",
+      "Für Einzelunternehmen, OG und KG gilt jeweils eine gesetzliche Mindestkapitalsumme als Gründungsvoraussetzung.",
+      "Zusätzliches Eigenkapital kann der Kommanditist aufbringen, indem er seine Kapitaleinlage erhöht."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Eine Person steht für das Kapital. Das benötigte Kapital muss die Einzelunternehmerin oder der Einzelunternehmer für gewöhnlich allein aufbringen; die Übersicht sagt dasselbe: der Einzelunternehmer bringt das Kapital auf. Weitere Gesellschafterinnen gibt es nicht. Fehlt Geld, folgt in den meisten Fällen Kredit, nicht eine gesetzliche Mindesteinlage. Der Satz trifft die Kapitalquelle.\n\nDie Aussage ist wahr.",
+      "Alle OG-Beteiligten beteiligen sich am Kapital. Jede Gesellschafterin und jeder Gesellschafter der OG beteiligt sich am Kapital; die Übersicht weist die Kapitalaufbringung den OG-Gesellschaftern zu. Eine gesetzliche Mindesthöhe fehlt wie beim Einzelunternehmen. Führung und Kapitaleinlage liegen bei derselben Art von Gesellschafterinnen und Gesellschaftern. Der Satz ist korrekt.\n\nDie Aussage ist wahr.",
+      "Kann und muss unterscheiden die KG. Die zusammenfassende Darstellung hält fest: der Komplementär kann, der Kommanditist muss eine Kapitaleinlage leisten. Der Komplementär bleibt bei Haftung und Mitarbeit der OG-Gesellschafterin vergleichbar; seine Einlage ist möglich, aber nicht in derselben Weise als Muss formuliert wie beim Kommanditisten, dessen Rolle gerade die Kapitalhingabe mit Haftungsbeschränkung und ohne Mitarbeit ist. Zusätzliches Eigenkapital bringt der Kommanditist später durch Erhöhung der Einlage auf, nicht durch Geschäftsführung. Der Satz gibt diese Asymmetrie wieder, ohne aus dem Komplementär einen nur beschränkt Haftenden zu machen.\n\nDie Aussage ist wahr.",
+      "Keine gesetzliche Mindesthöhe bei diesen drei Formen. Einzelunternehmen können ohne Mindestkapitalerfordernisse gegründet werden; für das Kapital der OG gilt wie beim Einzelunternehmen keine gesetzliche Mindesthöhe; für die KG nennt die Übersicht ebenfalls kein Mindestkapital. Eine Gründungssperre durch eine vorgeschriebene Summe gehört nicht zu diesem Pack der Personenformen. Der Satz erfindet eine Schwelle, die der Text hier verneint.\n\nDie Aussage ist falsch.",
+      "Erhöhte Einlage ist der Weg des Kommanditisten. Zusätzliches Eigenkapital bringt der Kommanditist auf, indem er die Kapitaleinlage erhöht; beim Komplementär verweist die Übersicht auf denselben Weg wie in der OG, also weiteres Einbringen durch die Gesellschafter. Neue große Kapitalmärkte beschreibt das Buch für Personengesellschaften nicht; wenige Beteiligte bleiben die Regel. Der Satz trifft die vorgesehene Erhöhung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.16",
+    "title": "Haftung, Gründung und Geschäftsführung im Vergleich",
+    "context": "Bewerten Sie die folgenden Aussagen zu Einzelunternehmen, Offener Gesellschaft und Kommanditgesellschaft:",
+    "statements": [
+      "Die OG-Gesellschafterin haftet nur mit der betrieblichen Einlage; ihr Privatvermögen bleibt gegenüber Gläubigern stets geschützt.",
+      "Mindestens zwei Personen gründen die Offene Gesellschaft; eine Person allein reicht dafür nicht.",
+      "Der Kommanditist haftet unbeschränkt mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden.",
+      "Der Komplementär ist bei Mitarbeit, Kapitalbeteiligung und Haftung mit einem OG-Gesellschafter vergleichbar.",
+      "Für das Kapital von Einzelunternehmen und OG gibt es keine gesetzliche Mindesthöhe."
+    ],
+    "answer_key": [false, true, false, true, true],
+    "tactical_explanations": [
+      "Privatvermögen ist in der OG nicht geschützt. Jede Gesellschafterin und jeder Gesellschafter haftet mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden, solidarisch. Die betriebliche Einlage ist Beteiligung am Kapital, nicht die Obergrenze der Haftung; eine gesetzliche Mindesthöhe gibt es dabei nicht, und fehlendes Mindestkapital bedeutet erst recht keinen Gläubigerschutz. Stets geschütztes Privatvermögen wäre die Logik einer Haftungsbeschränkung, die das Buch dem Kommanditisten zuschreibt, nicht der OG und nicht dem Einzelunternehmen. Gläubiger können den ganzen Betrag bei einer Gesellschafterin suchen. Der Satz verwechselt OG und beschränkte Einlagenhaftung.\n\nDie Aussage ist falsch.",
+      "Die Zweizahl ist zwingend. Mindestens zwei Gesellschafterinnen oder Gesellschafter gründen die OG; die Form kennt nur diese eine Art von Beteiligten, aber nicht die Alleingründung. Eine Person, die führt, entscheidet und allein haftet, bleibt Einzelunternehmerin, auch wenn sie denselben Umsatz macht. Kapitalhöhe ersetzt die zweite Person nicht, zumal es keine gesetzliche Mindesthöhe gibt. Der Satz hält die Gründungsschwelle fest.\n\nDie Aussage ist wahr.",
+      "Unbeschränkte Vollhaftung trägt der Komplementär. Der Kommanditist haftet nur mit der eigenen Kapitaleinlage, arbeitet nicht mit und hat Kontrollrechte samt Büchereinsicht. Unbeschränkt mit dem gesamten Privatvermögen für den Gesamtbetrag einstehen tun OG-Gesellschafter, Einzelunternehmer und Komplementär. Die KG spaltet genau diese Last vom kapitalgebenden Typ ab. Wer den Kommanditisten unbeschränkt haften lässt, löscht die Haftungsbeschränkung, die das Buch diesem Typ zuschreibt.\n\nDie Aussage ist falsch.",
+      "Drei Vergleichsachsen nennt der Text. Der Komplementär ist im Hinblick auf die Mitarbeit im Unternehmen, die Beteiligung am Kapital und die Haftung einem OG-Gesellschafter vergleichbar. Er führt mit, kann Kapital einbringen und haftet so wie der OG-Gesellschafter. Der Kommanditist steht daneben mit Einlage, ohne Mitarbeit, mit beschränkter Haftung. Der Satz trifft den Komplementär, ohne die KG zur OG mit anderem Namen zu machen.\n\nDie Aussage ist wahr.",
+      "Beide Formen starten ohne gesetzliche Kapitalschwelle. Einzelunternehmen werden ohne Mindestkapitalerfordernisse gegründet; für das Kapital der OG gilt wie beim Einzelunternehmen keine gesetzliche Mindesthöhe. Das erleichtert den Einstieg, lässt die unbeschränkte Haftung aber unberührt: fehlendes Mindestkapital bedeutet nicht beschränkte Haftung. Wer die fehlende Mindesthöhe mit Gläubigerschutz verwechselt, mischt zwei verschiedene Buchaussagen. Der Satz selbst zur Mindesthöhe ist richtig.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.17",
+    "title": "Grundnutzen und Zusatznutzen",
+    "context": "Ein Haushalt kauft ein Fahrrad. Bewerten Sie die folgenden Aussagen zum Nutzen des Produkts:",
+    "statements": [
+      "Wer etwas kauft, erwartet, dass das Gekaufte einen Nutzen haben wird.",
+      "Der Grundnutzen eines Fahrrads ist das Fahren, also der primäre Zweck des Produkts.",
+      "Zusatznutzen meint ausschließlich denselben primären Zweck wie der Grundnutzen.",
+      "Geltungsnutzen kann darin liegen, sich ein bestimmtes Rad leisten zu können.",
+      "Erlebnisnutzen kann darin liegen, dass das Fahren Spaß macht oder das Rad besonders sicher ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "1/5",
+    "tactical_explanations": [
+      "Kauf ist keine Selbstzweckhandlung. Der Abschnitt beginnt damit, dass wer etwas kauft, erwartet, das Gekaufte werde einen Nutzen haben. Beim Notebook ist das etwa das Installieren und Nutzen von Programmen, dazu kann ortsunabhängiges Arbeiten, geringes Gewicht oder ein schönes Aussehen treten. Beim Rad ist der Kern das Fahren. Produktentwicklung und spätere Vermarktung müssen diesen Nutzen genau überlegen, sonst entsteht ein Angebot, das niemand braucht. Ohne erwarteten Nutzen gäbe es keinen Anlass, den Preis zu zahlen. Der Satz hält genau diese Erwartung fest, die das Buch der Produktpolitik voranstellt.\n\nDie Aussage ist wahr.",
+      "Fahren ist der Kern, nicht das Prestige. Tab. 6 nennt als Grundnutzen den primären Zweck des Produkts und gibt beim Fahrrad ausdrücklich das Fahren an. Alles andere, Geltung oder Erlebnis, steht darunter als Zusatznutzen. Wer den Grundnutzen mit einem schönen Lack oder mit dem Eindruck, man könne sich das Rad leisten, verwechselt, vertauscht die beiden Ebenen. Das Buch trennt sie bewusst: zuerst der Zweck, dann der darüber hinausgehende Nutzen.\n\nDie Aussage ist wahr.",
+      "Zusatz heißt darüber hinaus, nicht derselbe Zweck noch einmal. Zusatznutzen ist der über den Grundnutzen hinausgehende Nutzen. Geltungsnutzen und Erlebnisnutzen sind die beiden genannten Formen. Den Zusatznutzen auf denselben primären Zweck zu reduzieren, macht aus zwei Kategorien eine. Dann wäre Prestige dasselbe wie Fahren, und die Tabelle hätte keinen Sinn. Genau diese Gleichsetzung widerspricht der Unterscheidung im Lehrtext.\n\nDie Aussage ist falsch.",
+      "Prestige hängt am Rad, das man sich leisten kann. Als Geltungsnutzen nennt das Buch ausdrücklich, sich ein bestimmtes Rad leisten zu können. Das ist nicht der Grundnutzen des Fahrens, sondern ein Signal nach außen: man zeigt, dass dieses Modell im eigenen Rahmen liegt. Produktpolitik muss solchen Zusatznutzen mitdenken, wenn sie Gestaltung und Vermarktung plant. Der Satz trifft die erste der beiden Zusatzkategorien, nicht eine frei erfundene dritte.\n\nDie Aussage ist wahr.",
+      "Spaß und Sicherheit liegen jenseits des bloßen Fortbewegens. Erlebnisnutzen beschreibt das Buch mit zwei Beispielen: Es macht Spaß, damit zu fahren, oder es ist ein besonders sicheres Rad. Beides setzt das Fahren voraus, geht aber über den primären Zweck hinaus. Wer nur den Grundnutzen gelten lässt, streicht genau diese zweite Zusatzform. Die Produktpolitik soll Kundennutzen insgesamt im Blick haben, Grund und Zusatz zusammen.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.18",
+    "title": "Vier Instrumente der Produktpolitik bis Kommunikation",
+    "context": "Bewerten Sie die folgenden Aussagen zu Produkt-, Preis-, Distributions- und Kommunikationspolitik:",
+    "statements": [
+      "Die Produktpolitik gehört zum Marketing-Mix und betrifft das Angebot, das für Kundinnen und Kunden einen Nutzen haben muss.",
+      "Die Preispolitik legt unter anderem fest, wie hoch der Preis ist und welche Zahlungskonditionen gelten.",
+      "Die Distributionspolitik befasst sich damit, wie das Produkt zum Kunden kommt, also mit dem Absatzweg.",
+      "Die Kommunikationspolitik umfasst unter anderem Werbung, Verkaufsförderung und Public Relations.",
+      "Von den vier Bereichen zählt im Lehrtext nur die Werbung; Preis, Ort und Produktgestaltung gehören nicht zum Mix."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Ohne Nutzen bleibt das Angebot leer. Unter der Überschrift Produktpolitik steht zuerst, dass das Produkt für den Kunden einen Nutzen haben muss und dass produktpolitische Maßnahmen den Kundennutzen und die Lebenszyklusphase berücksichtigen sollen. Product ist damit nicht Dekoration, sondern das Angebot selbst, später kommen Preis, Absatzweg und Botschaft hinzu. Wer die Produktpolitik aus dem Mix streicht, lässt den ersten der vier Blöcke weg, mit denen der Abschnitt den Mix abarbeitet, und kann die übrigen Instrumente nicht mehr sinnvoll abstimmen.\n\nDie Aussage ist wahr.",
+      "Höhe und Konditionen gehören zusammen. Preispolitik ist zwischen Hochpreispolitik und Niedrigpreis- bzw. Diskontpreispolitik angesiedelt; zusätzlich sind die Zahlungskonditionen wichtig. Es geht also nicht nur um eine Zahl auf dem Preisschild, sondern auch darum, wie gezahlt wird. Die drei Faktoren Kosten, Konkurrenzpreis und Zahlungsbereitschaft steuern die Festsetzung. Der Satz bleibt auf dieser Ebene und erfindet keine eigene Preistechnik, die das Buch nicht nennt.\n\nDie Aussage ist wahr.",
+      "Weg vor Ort. Die Distributionspolitik versucht zwei Fragen zu beantworten: wie das Produkt zum Kunden kommt, das heißt wie der Absatzweg gestaltet werden soll, und welcher Transportweg gewählt werden soll. Place meint hier den Weg der Ware, nicht den Firmensitz. Direkter und indirekter Absatz, Handel und Franchising sind Ausprägungen genau dieser Frage. Wer Distribution mit der Adresse der Zentrale verwechselt, verfehlt den Abschnitt.\n\nDie Aussage ist wahr.",
+      "Werbung ist der Einstieg, nicht die ganze Liste. Zur Kommunikationspolitik gehört in erster Linie die Werbung, daneben der Internetauftritt, Verkaufsförderung, Personal Selling und Public Relations einschließlich Sponsoring und Investor Relations. Promotion ist damit breiter als ein Inserat. Der Satz nennt drei der ausdrücklich aufgeführten Felder und bleibt damit innerhalb des Lehrtexts, ohne Social-Media-Details vorwegzunehmen, die später folgen.\n\nDie Aussage ist wahr.",
+      "Vier Blöcke, nicht einer. Der Mix-Teil gliedert Produktpolitik, Preispolitik, Distributionspolitik und Kommunikationspolitik nacheinander. Werbung ist nur ein Teil der Kommunikation, und Kommunikation ist nur einer der vier Bereiche. Die Behauptung, nur Werbung zähle und Preis, Ort sowie Produktgestaltung gehörten nicht dazu, kippt die Gliederung. Wer den Mix auf Anzeigen reduziert, kann weder Nutzen und Lebenszyklus noch Absatzweg und Preis erklären.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.19",
+    "title": "Einführungsphase im Lebenszyklus",
+    "context": "Bewerten Sie die folgenden Aussagen zur Einführungsphase eines neuen Produkts:",
+    "statements": [
+      "Mit der Einführungsphase wird das neue Produkt auf dem Markt mit verschiedenen Werbemaßnahmen eingeführt.",
+      "Wenn das Produkt Erfolg hat und nachgefragt wird, steigen die Umsätze in der Einführungsphase langsam an.",
+      "Weil Entwicklungs- und Werbekosten hoch sind, wird bereits am ersten Verkaufstag Gewinn erzielt.",
+      "Gewinn wird erst gegen Ende der Einführungsphase erzielt.",
+      "Hat das Produkt in dieser Phase keinen Erfolg, wird es eher früher als später wieder vom Markt verschwinden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Einführung heißt Sichtbarkeit schaffen. Das neue Produkt kommt mit verschiedenen Werbemaßnahmen auf den Markt. Ohne diese Einführung wüssten mögliche Käuferinnen und Käufer oft gar nicht, dass es das Angebot gibt. Der Abschnitt koppelt die Phase an Werbung, nicht an eine stille Auslieferung ohne Kommunikation. Wer die Einführungsphase als reine Produktion ohne Marktauftritt liest, lässt genau diesen Werbeaufwand weg, den das Buch später auch als Kostengrund für späten Gewinn nennt. Entwicklung plus Einführungswerbung sind hoch, deshalb liegt Gewinn nicht am Tag eins, sondern erst gegen Ende dieser Phase, sofern überhaupt Nachfrage entsteht.\n\nDie Aussage ist wahr.",
+      "Langsam, nicht sprunghaft. Bei Erfolg und Nachfrage steigen die Umsätze in dieser Phase langsam an. Das ist die typische Kurve vor dem kräftigen Anstieg der Wachstumsphase. Wer hier schon das Umsatzmaximum der Reifephase hineinliest, vermengt zwei Stufen. Der langsame Anstieg erklärt mit, warum die hohen Einführungsausgaben den Gewinn nach hinten schieben: Die Kurve trägt die Vorlaufkosten noch nicht sofort. Bleibt der Erfolg aus, kommt die kräftige Phase gar nicht.\n\nDie Aussage ist wahr.",
+      "Kosten stehen am Anfang, Gewinn nicht. Die Kosten für Produktentwicklung und Werbeaufwand der Einführung sind hoch. Deshalb wird erst gegen Ende der Einführungsphase Gewinn erzielt, nicht am ersten Verkaufstag. Die absolute Frühbehauptung ignoriert genau diese Kostenlast. Ein Betrieb, der am Tag eins schon Gewinn erwartet, hat die Logik der Phase nicht verstanden, die das Buch beschreibt.\n\nDie Aussage ist falsch.",
+      "Gegen Ende, nicht am Anfang. Weil Entwicklung und Einführungswerbung teuer sind, liegt der Gewinn erst gegen Ende der Einführungsphase. Davor können Umsätze zwar langsam steigen, sie decken die Vorlaufkosten aber noch nicht. Der Satz gibt die zeitliche Verschiebung wieder, die der Lehrtext ausdrücklich setzt. Wer den Gewinn in die Mitte der Wachstumsphase verlegt, verlässt die Einführungsphase.\n\nDie Aussage ist wahr.",
+      "Kein Erfolg, kurzes Leben. Hat das Produkt in der Einführungsphase keinen Erfolg, verschwindet es eher früher als später wieder vom Markt. Es kommt dann nicht in die Wachstumsphase. Die Formulierung „eher früher als später“ stammt aus dem Buch und warnt davor, eine gescheiterte Einführung künstlich zu strecken. Produktelimination kann folgen, noch bevor Reife oder Sättigung überhaupt eintreten.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.20",
+    "title": "Wachstumsphase und Nachahmer",
+    "context": "Bewerten Sie die folgenden Aussagen zur Wachstumsphase im Produktlebenszyklus:",
+    "statements": [
+      "In der Wachstumsphase steigen die Umsätze kräftig an und mit ihnen auch die Gewinne.",
+      "In dieser Phase wird die Konkurrenz vermehrt auf das Produkt aufmerksam.",
+      "Nachahmer auf dem Markt sind in der Wachstumsphase unwahrscheinlich.",
+      "Die Preisgestaltung ist in der Wachstumsphase entscheidend, um die Marktposition auszubauen.",
+      "In der Wachstumsphase erreicht der Umsatz bereits sein Maximum, während die Gewinne schon sinken."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Kräftig statt langsam. Ist das Produkt erfolgreich, kommt es in die Wachstumsphase: Die Umsätze steigen kräftig an und mit ihnen die Gewinne. Das unterscheidet die Phase von der Einführung, in der der Anstieg noch langsam war und Gewinn erst spät entstand. Wer Wachstum mit schrumpfendem Markt der Sättigung verwechselt, liest die Kurve rückwärts. Hier wachsen Absatz und Gewinn gemeinsam, bevor die Reife den Gewinn wieder drückt, obwohl der Umsatz dort noch sein Maximum erreicht. Nachahmer und Preispolitik gehören bereits in diese Wachstumsstufe, nicht erst in die Degeneration.\n\nDie Aussage ist wahr.",
+      "Sichtbarkeit lockt Wettbewerber. Nun wird die Konkurrenz vermehrt auf das Produkt aufmerksam. Erfolg ist also nicht nur eigene Kurve, sondern Signal an andere Anbieter. Genau deshalb wird die Preisgestaltung anschließend als entscheidend genannt. Wer annimmt, Wachstum laufe ohne Blick der Rivalen ab, streicht diesen Satz des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Nachahmung ist wahrscheinlich, nicht unwahrscheinlich. Es ist wahrscheinlich, dass es nun Nachahmer auf dem Markt gibt. Die Behauptung des Gegenteils dreht das Wort „wahrscheinlich“ um. Imitation erklärt mit, warum der Preis in dieser Phase die Marktposition sichern oder ausbauen muss. Ein Markt ohne Nachahmer wäre die Ausnahme, nicht die vom Buch beschriebene Regel dieser Phase.\n\nDie Aussage ist falsch.",
+      "Preis als Hebel der Position. Nachdem Nachahmer auftauchen, ist die Preisgestaltung entscheidend, um die Marktposition auszubauen. Es geht nicht nur um Kostendeckung aus der Einführung, sondern um den Wettbewerb um denselben Nutzen. Wer den Preis in der Wachstumsphase für nebensächlich hält, weil die Umsätze ohnehin steigen, übersieht genau diese Weichenstellung. Später, in der Reife, kommen zusätzlich Rabatte und Promotions als Aufwand dazu.\n\nDie Aussage ist wahr.",
+      "Maximum und sinkende Gewinne gehören zur Reife. An die Wachstumsphase schließt die Reifephase an, in der der Umsatz sein Maximum erreicht und die Gewinne schon wieder sinken. Wer beides in die Wachstumsphase vorzieht, vermengt zwei Stufen. Im Wachstum steigen Umsatz und Gewinn noch gemeinsam. Die Verwechslung ist typisch, weil beide Phasen Erfolg zeigen; die Buchkurve trennt sie trotzdem scharf.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.21",
+    "title": "Reifephase und Sättigungsphase",
+    "context": "Bewerten Sie die folgenden Aussagen zu Reife- und Sättigungsphase:",
+    "statements": [
+      "In der Reifephase erreicht der Umsatz sein Maximum.",
+      "Die Gewinne steigen in der Reifephase weiter, weil kaum noch Aufwand für Werbung nötig ist.",
+      "Die Gewinne sinken in der Reifephase, weil wegen zunehmender Konkurrenz mehr Aufwand für Werbung, Rabatte und Promotions anfällt.",
+      "In der Sättigungsphase fallen sowohl Umsatz als auch Gewinne, und der Markt beginnt zu schrumpfen.",
+      "Schon zu Beginn der Sättigungsphase muss klar sein, wie man mit dem Produkt weiter umgehen will."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Umsatzgipfel, nicht Gewinngipfel. In der Reifephase erreicht der Umsatz sein Maximum. Das ist die Kennzahl dieser Stufe, nicht automatisch der Gewinn. Wer Maximum mit weiter steigenden Gewinnen gleichsetzt, übersieht den nächsten Satz des Buchs. Der Gipfel des Absatzes fällt mit steigendem Werbe- und Aktionsaufwand zusammen, der den Gewinn bereits drückt.\n\nDie Aussage ist wahr.",
+      "Werbung wird teurer, nicht überflüssig. Wegen zunehmender Konkurrenz fällt immer mehr Aufwand für Werbung und andere verkaufsfördernde Maßnahmen an, Rabatte und Promotions. Deshalb sinken die Gewinne schon in der Reife, obwohl der Umsatz sein Maximum hat. Die Behauptung, kaum noch Werbung sei nötig und die Gewinne stiegen weiter, kehrt die Kostenlogik um. Reife ist kein Schonraum, sondern ein teurer Verteidigungskampf um denselben Markt. Wer die sinkenden Gewinne erst der Sättigung zuschreibt, übersieht, dass der Lehrtext den Rückgang bereits hier ansetzt, noch bevor der Markt zu schrumpfen beginnt.\n\nDie Aussage ist falsch.",
+      "Konkurrenz treibt den Aufwand. Immer mehr Werbung, Rabatte und Promotions sind die Begründung dafür, dass die Gewinne in der Reife schon wieder sinken. Verkaufsförderung ist hier Mittel gegen Rivalen, nicht bloß Dekoration. Der Satz gibt Mechanismus und Richtung richtig wieder. Wer den Gewinnrückgang erst in die Degeneration legt, übersieht, dass er bereits in der Reife einsetzt, vor dem Schrumpfen des Marktes.\n\nDie Aussage ist wahr.",
+      "Beide Größen fallen, der Markt schrumpft. In der Sättigungsphase fallen Umsatz und Gewinne, der Markt beginnt zu schrumpfen. Das ist schärfer als die Reife, in der der Umsatz noch am Maximum war. Schrumpfen heißt: selbst der Kuchen wird kleiner, nicht nur die eigene Scheibe. Genau deshalb muss die weitere Strategie schon am Beginn dieser Phase feststehen, bevor hohe Kosten der Degeneration drohen.\n\nDie Aussage ist wahr.",
+      "Früh entscheiden, nicht in der Degeneration. Schon zu Beginn der Sättigungsphase muss klar sein, wie man mit dem Produkt weiter umgehen will, bevor es in die Degenerationsphase kommt. Warten bis zur reinen Kostenphase ist zu spät. Elimination oder Relaunch werden im nächsten Absatz genau als diese Vorentscheidung genannt. Der Satz hält die zeitliche Mahnung des Lehrtexts fest.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.22",
+    "title": "Degeneration, Elimination und Relaunch",
+    "context": "Bewerten Sie die folgenden Aussagen zum Ende des Produktlebenszyklus:",
+    "statements": [
+      "In der Degenerationsphase verursacht das Produkt nur noch hohe Kosten.",
+      "Ob man das Produkt aus dem Angebot ausscheidet oder mit einer Produktveränderung einen Relaunch versucht, muss bereits vor der Degenerationsphase klar sein.",
+      "Produktelimination bedeutet, ein Produkt, das nicht mehr erfolgreich ist, vom Markt zu nehmen.",
+      "Ein Relaunch versucht mit einer Produktveränderung einen Neustart.",
+      "Ein Unternehmen darf erst in der Degenerationsphase über Elimination oder Relaunch nachdenken, weil vorher noch keine Kosten entstehen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Nur noch Kosten, kaum noch Ertrag. In der Degenerationsphase verursacht das Produkt nur noch hohe Kosten. Umsatz und Gewinn sind bereits in der Sättigung gefallen; jetzt bleibt die Last. Deshalb soll die Entscheidung über den weiteren Umgang nicht erst hier fallen. Wer die Degeneration als ruhige Restphase ohne Kostendruck liest, widerspricht dem Wortlaut. Die Phase ist der Endpunkt, den man vermeiden oder steuern will, nicht der Moment des ersten Nachdenkens.\n\nDie Aussage ist wahr.",
+      "Vorher klären, nicht hinterher. Es muss bereits davor klar sein, ob man das Produkt aus dem Angebot ausscheidet oder mit einer Produktveränderung einen Neustart, einen Relaunch, versucht. „Davor“ bezieht sich auf die Zeit vor der Degeneration, anknüpfend an den Beginn der Sättigung, in der Umsatz und Gewinn schon fallen und der Markt zu schrumpfen beginnt. Wer die Wahl erst trifft, wenn nur noch Kosten laufen, handelt gegen die zeitliche Vorgabe des Buchs. Elimination und Relaunch sind die beiden genannten Wege, nicht ein dritter ungenannter Mittelweg als Pflicht. Die produktpolitischen Maßnahmen sollen den Zyklus steuern, nicht erst nach dem Kollaps kommentieren.\n\nDie Aussage ist wahr.",
+      "Vom Markt nehmen, wenn der Erfolg fehlt. Produktelimination ist die Maßnahme, bei der ein Produkt, das nicht mehr erfolgreich ist, vom Markt genommen wird. Sie steht neben Innovation und Variation in der Liste produktpolitischer Maßnahmen. Ziel ist, den Lebenszyklus nicht künstlich in der Kostenzone zu verlängern. Der Satz wiederholt die Buchdefinition und erfindet keine zusätzliche Bedingung wie eine gesetzliche Pflicht zur Streichung.\n\nDie Aussage ist wahr.",
+      "Veränderung als zweiter Start. Statt auszuscheiden, kann man mit einer Produktveränderung einen Neustart versuchen; das Buch setzt Relaunch in Klammern daneben. Das ist nicht dieselbe Variation, bei der nur noch die neue Version läuft, aber es ist verwandt: man ändert, um den Zyklus zu strecken. Die produktpolitischen Maßnahmen dienen insgesamt dazu, den Lebenszyklus möglichst optimal zu gestalten und den Erfolg zu verlängern. Relaunch ist genau dieser Versuch am späten Rand.\n\nDie Aussage ist wahr.",
+      "Kosten entstehen weit früher. Entwicklungs- und Werbekosten belasten schon die Einführung; in der Reife steigen Werbe- und Aktionskosten; in der Sättigung fallen Umsatz und Gewinn. Die Degeneration ist der Endpunkt mit nur noch hohen Kosten, nicht der erste Kostenzeitpunkt. Die Behauptung, man dürfe erst dann über Elimination oder Relaunch nachdenken, weil vorher keine Kosten entstünden, ist in beiden Hälften falsch. Das Buch verlangt die Klärung bereits davor.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.23",
+    "title": "Produktdifferenzierung und Produktdiversifikation",
+    "context": "Die woom GmbH ergänzt ihr Angebot. Bewerten Sie die folgenden Aussagen zu produktpolitischen Innovationen:",
+    "statements": [
+      "Bietet die woom GmbH zusätzlich zu bestehenden Rädern weitere Radmodelle an, vertieft sie ihr Radsortiment und betreibt Produktdifferenzierung.",
+      "Bietet sie neben Rädern auch Sportausrüstung und Fitnessgeräte an, verbreitert sie das Sortiment; das wäre Produktdiversifikation.",
+      "Weitere Radmodelle neben den bestehenden Rädern sind im Lehrtext Produktdiversifikation, weil jedes Modell ein völlig neues Geschäftsfeld eröffnet.",
+      "Produktinnovation kann bestehende Produkte ergänzen und das Sortiment tiefer oder breiter machen.",
+      "Produktdifferenzierung und Produktdiversifikation sind im Buch dasselbe Wort, weil beide das Sortiment nur vertiefen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Tiefe im selben Sortiment. Weitere Modelle von Rädern zusätzlich zu den bestehenden Rädern vertiefen das Radsortiment; das nennt das Buch Produktdifferenzierung. Es bleibt das Feld Fahrrad, nur die Varianten werden mehr. woom dient hier als Beispiel, nicht als Pflichtmarke der Prüfung. Wer diese Vertiefung schon Diversifikation nennt, verwechselt Tiefe mit Breite. Diversifikation wäre erst die Aufnahme ganz anderer Warengruppen neben den Rädern, etwa Sportausrüstung und Fitnessgeräte. Innovation ist der Oberbegriff, die Richtung entscheidet den Namen.\n\nDie Aussage ist wahr.",
+      "Breite in neue Warengruppen. Sportausrüstung, Kleidung, Regenschutz und Fitnessgeräte neben Rädern würden das Sortiment verbreitern; das wäre Produktdiversifikation. Neue Produktfelder treten neben das Kerngeschäft. Die Richtung ist Breite, nicht noch ein Radmodell. Der Satz folgt dem zweiten woom-Beispiel wortgetreu und hält die Unterscheidung zur Differenzierung aufrecht.\n\nDie Aussage ist wahr.",
+      "Modelle vertiefen, sie eröffnen kein neues Feld. Zusätzliche Radmodelle sind Differenzierung, nicht Diversifikation. Diversifikation wäre die Verbreiterung etwa durch Sportausrüstung. Die Behauptung, jedes Modell sei ein neues Geschäftsfeld und deshalb Diversifikation, kippt die Buchpaarung tiefer versus breiter. Ein weiteres Kinderrad bleibt im Radsortiment, auch wenn es anders aussieht.\n\nDie Aussage ist falsch.",
+      "Innovation ergänzt und formt das Sortiment. Verschiedene Formen der Produktinnovation ergänzen die bestehenden Produkte und machen das Sortiment tiefer, Produktdifferenzierung, oder breiter, Produktdiversifikation. Innovation ist hier der Oberbegriff, die beiden Formen beschreiben die Richtung. Wer Innovation nur als völligen Ersatz des alten Programms denkt, lässt die Ergänzungslogik weg. Variation ändert ein bestehendes Produkt und nimmt die alte Version vom Markt; Elimination nimmt ein erfolgloses Produkt ganz. Beides steht neben der Innovation, ersetzt sie aber nicht als Sortimentsvertiefung oder -verbreiterung.\n\nDie Aussage ist wahr.",
+      "Tiefer und breiter sind zwei Richtungen. Differenzierung vertieft, Diversifikation verbreitert. Sie sind nicht dasselbe Wort und sie vertiefen nicht beide. Die Gleichsetzung streicht genau die Unterscheidung, die das woom-Beispiel tragen soll. Ohne sie ließe sich nicht mehr sagen, ob neue Modelle oder ganz neue Warengruppen gemeint sind.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.24",
+    "title": "Produktvariation und Markteinstieg",
+    "context": "Bewerten Sie die folgenden Aussagen zu Produktvariation und zum Einstieg in den Markt:",
+    "statements": [
+      "Bei der Produktvariation wird ein bestehendes Produkt verändert.",
+      "Bei der Produktvariation wird nur noch die veränderte neue Version angeboten, die vorhergehende Version nicht mehr.",
+      "Produktvariation bedeutet, alte und neue Version dauerhaft parallel im Sortiment zu führen.",
+      "Als Erster in den Markt zu gehen, kann höhere unternehmerische Risiken bedeuten, etwa Markteröffnungskosten für Entwicklung und Kommunikation.",
+      "Ein Unternehmen kann auch zuwarten, wie sich der Markt entwickelt, und dann mit einem ähnlichen Produkt nachziehen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Veränderung am bestehenden Gut. Produktvariation heißt, ein bestehendes Produkt wird verändert. Es geht nicht um ein zusätzliches Modell neben dem alten im Sinne der Differenzierung, sondern um die Änderung dessen, was schon da war. Die Maßnahme steht in der Liste neben Innovation und Elimination. Wer Variation mit der bloßen Aufnahme eines weiteren, unveränderten Artikels verwechselt, verfehlt diesen Punkt. Entscheidend ist der Folgesatz: Nur die neue Version bleibt, die vorhergehende wird nicht mehr angeboten. Genau das trennt Variation von einer tieferen Sortimentsergänzung, bei der alte Modelle weiterlaufen dürfen.\n\nDie Aussage ist wahr.",
+      "Nur die neue Version bleibt. Ausdrücklich: Es wird nur noch die veränderte neue Version angeboten, die vorhergehende Version nicht mehr. Das alte Angebot verschwindet mit der Variation. Genau das unterscheidet sie von einer Differenzierung, bei der weitere Modelle die bestehenden ergänzen. Der Satz ist die Buchregel, keine Interpretation.\n\nDie Aussage ist wahr.",
+      "Parallelbetrieb ist nicht die Variation des Lehrtexts. Weil die vorhergehende Version nicht mehr angeboten wird, dürfen alt und neu nicht dauerhaft nebeneinander stehen bleiben. Wer Parallelität behauptet, beschreibt eher eine Sortimentsvertiefung als Variation. Die Verwechslung ist nahe, weil beides „neu“ aussieht; das Kriterium ist, ob die alte Version verschwindet.\n\nDie Aussage ist falsch.",
+      "Erste sein kostet. Schon beim Einstieg ist zu überlegen, ob man es wagen kann, als Erster mit höherem unternehmerischem Risiko in den Markt zu gehen. In Klammern nennt das Buch Markteröffnungskosten, etwa anfallende Entwicklungs- und Kommunikationskosten. Pionierrolle ist also kein bloßes Prestige, sondern eine Kosten- und Risikofrage. Der Satz hält diese Seite der Alternative fest, ohne Zahlen zu erfinden.\n\nDie Aussage ist wahr.",
+      "Nachziehen bleibt die zweite Option. Man kann eher zuwarten, wie sich der Markt entwickelt, und dann mit einem ähnlichen Produkt nachziehen. Das ist die Gegenstrategie zum frühen Einstieg mit Markteröffnungskosten. Beide Wege dienen dazu, den Lebenszyklus möglichst optimal zu gestalten. Wer nur den Pionier als zulässig denkt, streicht die vom Buch genannte Alternative.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.25",
+    "title": "Preisfestsetzung und Nachfrage",
+    "context": "Bewerten Sie die folgenden Aussagen zur Preispolitik:",
+    "statements": [
+      "Konkurrieren viele Produkte mit etwa gleichem Nutzen, spielt die Preispolitik eine entscheidende Rolle.",
+      "Preispolitik ist zwischen Hochpreispolitik und Niedrigpreispolitik bzw. Diskontpreispolitik angesiedelt.",
+      "Für die Festsetzung des Preises sind die Kosten des Produkts, der Preis vergleichbarer Konkurrenzprodukte und die Zahlungsbereitschaft der Kunden bedeutend.",
+      "Einen höheren Preis zu verlangen, als die Kundinnen und Kunden zahlen können oder wollen, ist grundsätzlich sinnvoll, weil hohe Preise die Nachfrage stets steigern.",
+      "Zusätzlich zur Preishöhe sind die Zahlungskonditionen wichtig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "2/5",
+    "tactical_explanations": [
+      "Gleicher Nutzen schärft den Preis. Konkurrieren viele Produkte und Dienstleistungen, deren Nutzen für die Abnehmerinnen und Abnehmer etwa gleich ist, spielt die Preispolitik eine entscheidende Rolle. Günstige Preise sind dann etwa bei Lebensmitteln, Alltagskleidung, Flugreisen oder Handytarifen relevant. Ist die USP dagegen etabliert, zahlen viele auch höhere Preise. Der Satz trifft den ersten Fall, in dem der Preis den Ausschlag gibt.\n\nDie Aussage ist wahr.",
+      "Zwei Pole, dazwischen die Praxis. Preispolitik ist zwischen Hochpreispolitik und Niedrigpreispolitik oder Diskontpreispolitik angesiedelt. Das Buch spannt genau diese Spanne, ohne Zwischenformen als eigene Pflichtstrategie zu definieren. Zahlungskonditionen treten zusätzlich hinzu. Wer nur einen der Pole als einzig erlaubte Politik denkt, verengt die Spanne. Der Satz gibt die Ansiedlung korrekt wieder.\n\nDie Aussage ist wahr.",
+      "Drei Faktoren, nicht einer. In der Praxis sind es vor allem drei Faktoren: Wie hoch sind die Kosten, können sie mit dem Preis zumindest gedeckt werden? Wie hoch ist der Preis für ein vergleichbares Konkurrenzprodukt? Wie viel sind die Kunden bereit zu zahlen? Kosten, Rivalen und Zahlungsbereitschaft zusammen steuern die Festsetzung. Wer nur die Kostenplus-Logik gelten lässt und die anderen beiden streicht, unterbietet die Liste des Abschnitts.\n\nDie Aussage ist wahr.",
+      "Über der Zahlungsbereitschaft zu liegen, ist wenig sinnvoll. Einen höheren Preis zu verlangen, als die Kundinnen und Kunden zahlen können oder wollen, ist wenig sinnvoll. Grundsätzlich ist bei hohen Preisen die Nachfrage normalerweise niedrig und bei niedrigen Preisen hoch. Die Behauptung, ein zu hoher Preis sei sinnvoll, weil hohe Preise die Nachfrage stets steigern, verdreht beide Sätze. Die drei Faktoren Kosten, Konkurrenzpreis und Zahlungsbereitschaft setzen der Höhe eine Grenze nach oben. Snob-, Mitläufer- und Qualitätseffekt sind spätere Ausnahmen, in denen teuer gekauft wird; sie machen aus Überteuerung jenseits von Können und Wollen keine allgemeine Erfolgsregel.\n\nDie Aussage ist falsch.",
+      "Konditionen neben dem Betrag. Zusätzlich sind die Zahlungskonditionen wichtig. Preispolitik ist also nicht nur die Höhe, sondern auch, wie und unter welchen Bedingungen gezahlt wird. Das steht direkt nach der Spanne zwischen Hoch- und Niedrigpreis. Wer Konditionen aus der Preispolitik ausklammert, lässt einen ausdrücklich genannten Baustein weg.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.26",
+    "title": "Verkäufermarkt und Käufermarkt",
+    "context": "Bewerten Sie die folgenden Aussagen zu Verkäufermarkt und Käufermarkt:",
+    "statements": [
+      "Übersteigt die Nachfrage das Angebot, spricht man von einem Verkäufermarkt.",
+      "Auf einem Verkäufermarkt haben es die Verkäuferinnen und Verkäufer leichter als die Käuferseite, den Preis zu beeinflussen.",
+      "Langfristig führt ein Verkäufermarkt oft dazu, dass mehrere Unternehmen das gewünschte Gut produzieren, das Angebot steigt und die Preise wieder fallen.",
+      "Übersteigt das Angebot die Nachfrage, entsteht ein Käufermarkt, in dem die Käuferinnen und Käufer mehr Verhandlungsmacht haben.",
+      "Auf einem Käufermarkt steigen die Preise dauerhaft, weil die Käuferseite keinerlei Verhandlungsmacht hat."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Nachfrage über Angebot. Übersteigt die Nachfrage das Angebot, spricht man von einem Verkäufermarkt. Die Definition hängt am Mengenverhältnis, nicht am Branchennamen. Hier sind Preise eher hoch oder steigen tendenziell. Wer denselben Namen für den Fall verwendet, in dem das Angebot die Nachfrage übersteigt, vertauscht Verkäufer- und Käufermarkt.\n\nDie Aussage ist wahr.",
+      "Macht liegt bei denen, die knapp anbieten. Auf dem Verkäufermarkt haben es die Verkäuferinnen und Verkäufer leichter als die Käuferinnen und Käufer, den Preis zu beeinflussen. Als Käuferin hat man vergleichsweise wenig Verhandlungsmacht und Gestaltungsspielräume. Der Preisvorteil der Anbieterseite folgt aus der Knappheit relativ zur Nachfrage. Der Satz gibt genau diese Asymmetrie wieder.\n\nDie Aussage ist wahr.",
+      "Angebot holt nach, Preise sinken. Langfristig führt ein Verkäufermarkt oft dazu, dass mehrere Unternehmen das gewünschte Gut produzieren, das Angebot dadurch steigt und die Preise wieder fallen. Hohe Preise und leichte Verkäufe locken zusätzliche Produktion. Der Markt bleibt also nicht dauerhaft auf der Verkäuferseite stehen. Übersteigt das Angebot anschließend die Nachfrage, entsteht der Käufermarkt mit mehr Macht auf der Nachfrageseite. Wer die Lage als ewigen Hochpreis ohne Reaktion der Anbieter denkt, ignoriert genau diese langfristige Bewegung, die das Buch an den Verkäufermarkt anschließt.\n\nDie Aussage ist wahr.",
+      "Angebot über Nachfrage kippt die Macht. Falls das Angebot dann die Nachfrage übersteigt, entsteht ein Käufermarkt. Dort können die Käuferinnen und Käufer die Preise beeinflussen und verfügen über mehr Verhandlungsmacht. Die Definition ist das Spiegelbild des Verkäufermarkts. Langfristig fallen die Preise so lange, bis einige Anbieter um diesen Preis nicht mehr verkaufen und das Angebot zurückgeht.\n\nDie Aussage ist wahr.",
+      "Macht und Preisrichtung sind vertauscht. Im Käufermarkt hat die Käuferseite mehr Verhandlungsmacht, nicht keinerlei Macht. Die Preise fallen langfristig, bis Anbieter ausscheiden; danach kann das Angebot zurückgehen und die Preise wieder steigen. Dauerhaft steigende Preise bei ohnmächtigen Käufern beschreiben eher einen Verkäufermarkt. Die Aussage vermengt beide Marktformen und ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.27",
+    "title": "Snob-, Mitläufer- und Qualitätseffekt",
+    "context": "Bewerten Sie die folgenden Aussagen zu Preisänderungen und zu nicht vollständig rationalen Reaktionen:",
+    "statements": [
+      "Grundsätzlich ist bei hohen Preisen die Nachfrage normalerweise niedrig und bei niedrigen Preisen hoch.",
+      "Die Reaktionen der Kundinnen und Kunden auf Preisänderungen sind im Lehrtext immer vollständig rational.",
+      "Beim Snob-Effekt wird teuer gekauft, um zu zeigen, dass man es sich leisten kann.",
+      "Beim Mitläufer-Effekt wird teuer gekauft, weil es andere auch tun.",
+      "Beim Qualitätseffekt vermutet man, teure Produkte seien besser als billigere, und kauft deshalb das teurere."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Normale Preis-Mengen-Richtung. Grundsätzlich ist bei hohen Preisen die Nachfrage normalerweise niedrig und bei niedrigen Preisen hoch. In der Regel bedeutet hohe Nachfrage, dass die Preise etwas erhöht werden können; sinkt die Nachfrage, werden häufig die Preise gesenkt. Das ist die Ausgangsregel vor den Ausnahmen. Wer sie leugnet, kann Snob- und Qualitätseffekt nicht mehr als Abweichung erkennen.\n\nDie Aussage ist wahr.",
+      "Nicht immer rational. Nicht immer sind die Reaktionen der Kundinnen und Kunden auf Preisänderungen ganz rational. Zu berücksichtigen sind Snob-Effekt, Mitläufer-Effekt und Qualitätseffekt. Das Wort „immer“ in der Aussage macht aus der Regel eine Absolute, die das Buch ausdrücklich relativiert. Die drei Effekte sind genau die genannten Abweichungen, in denen teuer gekauft wird, obwohl die normale Kurve bei hohen Preisen eher niedrige Nachfrage erwarten ließe. Snob zeigt Leistbarkeit, Mitlaufen folgt anderen, Qualität vermutet Besseres im teuren Gut. Keiner dieser drei Motive hebt die Grundregel auf, sie begrenzen nur den Anspruch vollständiger Rationalität.\n\nDie Aussage ist falsch.",
+      "Zeigen, dass man es sich leisten kann. Beim Snob-Effekt wird teuer gekauft, um zu zeigen, dass man es sich leisten kann. Das Motiv ist Geltung, nicht der günstigste Nutzen pro Euro. Ein hoher Preis kann die Nachfrage dieser Gruppe sogar stützen, gegen die normale Regel. Der Satz trifft die Buchdefinition und vermischt sie nicht mit dem Mitlaufen hinter anderen Käufern.\n\nDie Aussage ist wahr.",
+      "Andere tun es auch. Beim Mitläufer-Effekt wird teuer gekauft, weil es andere auch tun. Anschluss an die Gruppe, nicht das individuelle Prestigesignal des Snobs, ist das Motiv. Beide Effekte können denselben hohen Preis tragen, aber aus unterschiedlichen Gründen. Wer Mitlaufen mit der Vermutung besserer Qualität gleichsetzt, greift zum dritten Effekt, den das Buch getrennt auflistet.\n\nDie Aussage ist wahr.",
+      "Teuer gilt als besser. Beim Qualitätseffekt vermutet man, dass teure Produkte besser sind als billigere, also kauft man das teurere. Die Preiszahl wird zum Qualitätsindikator, unabhängig davon, ob die Kosten das rechtfertigen. Das steht neben Snob und Mitlaufen als dritte nicht vollständig rationale Reaktion auf den Preis. Der Satz gibt die Vermutung und die Kauffolge korrekt wieder.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.28",
+    "title": "Direkter und indirekter Absatz",
+    "context": "Bewerten Sie die folgenden Aussagen zur Distributionspolitik:",
+    "statements": [
+      "Die Distributionspolitik versucht zu klären, wie der Absatzweg gestaltet werden soll und welcher Transportweg gewählt wird.",
+      "Beim direkten Absatz wird vom produzierenden Unternehmen direkt an den Endabnehmer verkauft.",
+      "Beim indirekten Absatz sind auf dem Weg zwischen Produzent und Endabnehmer ein oder mehr Handelsbetriebe dazwischengeschaltet.",
+      "Großhändler verkaufen an den Letztverbraucher, Einzelhändler verkaufen an andere Händler weiter.",
+      "Bestellt man direkt beim Produzenten, der aus Zentrale oder eigener Niederlassung erfüllt, handelt es sich um einen direkten Absatzweg."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Zwei Fragen, ein Politikfeld. Die Distributionspolitik versucht zwei wesentliche Fragen zu beantworten: wie das Produkt zum Kunden kommt, das heißt wie der Absatzweg gestaltet werden soll, und welcher Transportweg gewählt werden soll. Place ist damit Organisation des Weges, nicht nur ein Schild am Lager. Wer nur den Lastwagen ohne die Frage nach Zwischenhändlern denkt, lässt den Absatzweg weg. Direkt an den Endabnehmer oder indirekt über Groß- und Einzelhandel, dazu Franchising: das sind Antworten auf die erste Frage. Beide Fragen stehen am Anfang des Abschnitts und tragen den Rest der Distributionspolitik.\n\nDie Aussage ist wahr.",
+      "Ohne Handel dazwischen. Beim direkten Absatz wird vom produzierenden Unternehmen direkt an den Endabnehmer verkauft. Kein Groß- oder Einzelhändler steht dazwischen. Die spätere Bestellung beim Produzenten aus Zentrale oder Niederlassung ist genau dieser Fall. Wer jede Filiale schon als indirekten Absatz wertet, obwohl sie dem Produzenten gehört, verwischt die Grenze, die das Buch zieht.\n\nDie Aussage ist wahr.",
+      "Handel dazwischen. Beim indirekten Absatz sind auf dem Absatzweg zwischen Produzenten und Endabnehmer ein oder mehr Handelsbetriebe dazwischengeschaltet. Dazu zählen Großhändler, die an andere Händler weiterverkaufen, und Einzelhändler, die an den Letztverbraucher verkaufen. Ein Glied reicht; mehrere sind möglich. Der Satz hält die Definition, ohne Franchising vorwegzunehmen.\n\nDie Aussage ist wahr.",
+      "Rollen sind vertauscht. Großhändler verkaufen an andere Händler weiter, Einzelhändler an den Letztverbraucher. Die Aussage dreht beide Zuordnungen um. Damit wäre der letzte Schritt zum Haushalt beim Großhandel, was dem Lehrtext widerspricht. Indirekter Absatz nutzt gerade diese Stufenfolge, nicht die umgekehrte.\n\nDie Aussage ist falsch.",
+      "Zentrale oder Niederlassung bleiben direkt. Bestellt man direkt beim Produzenten, der die Bestellung aus seiner Zentrale oder auch aus einer eigenen Niederlassung erfüllt, handelt es sich um einen direkten Absatzweg. Die eigene Niederlassung ist kein selbständiger Handelsbetrieb dazwischen. Wer sie mit einem fremden Einzelhändler gleichsetzt, macht aus direktem Absatz indirekten. Das Buch nennt beide Erfüllungsorte ausdrücklich als direkt.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.29",
+    "title": "Franchising als Absatzweg",
+    "context": "Bewerten Sie die folgenden Aussagen zum Franchising:",
+    "statements": [
+      "Beim Franchising stellt der Franchisegeber dem Franchisenehmer gegen Bezahlung einer Franchisegebühr Markennamen, Produkte und Marketing-Know-how zur Verfügung.",
+      "Die Franchisegebühr besteht meist aus einem Fixbetrag plus einer Umsatzbeteiligung.",
+      "Der Franchisenehmer ist wirtschaftlich und rechtlich selbständig.",
+      "Der Franchisenehmer ist im vereinbarten Ausmaß an das übernommene Marketingkonzept und Geschäftsmodell des Franchisegebers gebunden.",
+      "Der Franchisenehmer verliert jede rechtliche Selbständigkeit und wird zur unselbständigen Filiale des Franchisegebers."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Name, Ware und Know-how gegen Gebühr. Franchising ist ein besonderer Absatzweg: Der Franchisegeber stellt einem anderen Unternehmen, dem Franchisenehmer, gegen Bezahlung einer Franchisegebühr seinen Markennamen, seine Produkte und sein gesamtes Marketing-Know-how zur Verfügung, etwa Geschäftsgestaltung, Werbung und Internetauftritt. Es ist kein bloßer Liefervertrag ohne Konzept. Die Gebühr ist meist Fixbetrag plus Umsatzbeteiligung; der Nehmer bleibt wirtschaftlich und rechtlich selbständig, gebunden nur im vereinbarten Ausmaß. Der Satz bündelt Leistung und Gegenleistung, wie sie der Lehrtext aufzählt, ohne die Selbständigkeit schon wegzustreichen.\n\nDie Aussage ist wahr.",
+      "Fix plus Umsatz. Die Gebühr ist meist ein Fixbetrag plus Umsatzbeteiligung. Beides zusammen, nicht nur eine einmalige Pauschale ohne laufenden Anteil, beschreibt das Buch als übliches Muster. Konkrete Eurobeträge nennt es nicht; die Struktur reicht. Wer die Umsatzbeteiligung streicht, unterbietet „meist Fixbetrag plus Umsatzbeteiligung“.\n\nDie Aussage ist wahr.",
+      "Selbständig trotz Konzept. Der Franchisenehmer ist wirtschaftlich und rechtlich selbständig. Er bleibt ein anderes Unternehmen, kein unselbständiger Betriebsteil. Genau das macht Franchising zu einem besonderen Absatzweg zwischen den Parteien, nicht zu einer bloßen Filialgründung. Die nächste Bindung an das Konzept ändert die Selbständigkeit nicht in ihr Gegenteil.\n\nDie Aussage ist wahr.",
+      "Bindung im vereinbarten Ausmaß. Trotz Selbständigkeit ist der Franchisenehmer an das übernommene Marketingkonzept und Geschäftsmodell des Franchisegebers im vereinbarten Ausmaß gebunden. Einheitliches Auftreten ist der Sinn der Know-how-Überlassung. Die Bindung ist vertraglich begrenzt, nicht grenzenlos und nicht null. Wer jede Vorgabe als Verlust der Rechtspersönlichkeit liest, geht über den Text hinaus; wer jede Bindung leugnet, macht aus Franchise einen freien Wiederverkauf ohne Konzept.\n\nDie Aussage ist wahr.",
+      "Filiale wäre keine Selbständigkeit. Rechtlich selbständig und zugleich an das Konzept gebunden: das ist die Kombination des Buchs. Unselbständige Filiale würde die rechtliche Selbständigkeit streichen. Die Aussage behauptet genau diesen Verlust und ist falsch. Franchise bleibt ein Vertrag zwischen zwei Unternehmen, nicht die Umwandlung des Nehmers in eine Betriebsstätte ohne eigene Rechtsträgerschaft.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.30",
+    "title": "Werbemittel und Werbeträger",
+    "context": "Bewerten Sie die folgenden Aussagen zur klassischen Werbung in der Kommunikationspolitik:",
+    "statements": [
+      "Zur Kommunikationspolitik gehört in erster Linie die Werbung.",
+      "Anzeigen bzw. Inserate sind Werbemittel; Tages- und Wochenzeitschriften können Werbeträger sein.",
+      "TV-Spots und Radiospots nutzen Fernsehen und Hörfunk als Werbeträger.",
+      "Werbemittel und Werbeträger bezeichnen im Lehrtext denselben Gegenstand mit zwei beliebigen Namen.",
+      "Plakate und Werbetafeln können über Plakatwände, Litfaßsäulen oder öffentliche Verkehrseinrichtungen verbreitet werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "difficulty_level": "3/5",
+    "tactical_explanations": [
+      "Werbung zuerst, nicht allein. Zur Kommunikationspolitik gehört in erster Linie die Werbung, wie man sie klassisch in den Formen der Tabelle kennt: Anzeigen in Zeitschriften, Spots in Funk und Fernsehen, Plakate an Wänden und Säulen, Briefe und Prospekte über Verteiler. „In erster Linie“ heißt Vorrang in der Darstellung, nicht dass Verkaufsförderung, Personal Selling und PR fehlen. Der Satz trifft diesen Einstieg. Wer daraus ableitet, Kommunikation sei nur Werbung, ginge weiter als der Wortlaut; hier wird nur der Vorrang behauptet, der im Buch steht, bevor Website, Aktionen und Öffentlichkeit folgen.\n\nDie Aussage ist wahr.",
+      "Mittel versus Träger. Tab. 7 stellt Werbemittel und Werbeträger nebeneinander. Anzeigen (Inserate) stehen als Mittel; Tages- und Wochenzeitschriften, Illustrierte, Fachzeitschriften und Veranstaltungsprogramme als Träger. Das Mittel ist die gestaltete Botschaft, der Träger das Medium, das sie transportiert. Der Satz hält genau dieses Paar. Wer Inserat und Zeitschrift in eins fallen lässt, macht die Tabelle überflüssig.\n\nDie Aussage ist wahr.",
+      "Spot und Sender. TV-Spots und Radiospots sind das Mittel, Fernsehen und Hörfunk die Träger. Wieder dieselbe Zweiteilung wie bei Anzeige und Zeitschrift. Ein Spot ohne Sender wäre Mittel ohne Träger. Der Satz ordnet beide Spalten der Tabelle richtig zu und erfindet keine zusätzlichen Kanäle.\n\nDie Aussage ist wahr.",
+      "Zwei Spalten, zwei Rollen. Die Tabelle trennt Werbemittel und Werbeträger. Beliebige Synonyme wären sie nur, wenn Anzeige und Zeitschrift dasselbe wären. Das sind sie nicht: das eine wird gestaltet, das andere trägt es. Die Aussage behauptet Identität und ist falsch. Wer die Trennung aufgibt, kann auch Plakat und Plakatwand nicht mehr unterscheiden.\n\nDie Aussage ist falsch.",
+      "Fläche als Träger des Plakats. Plakate und Werbetafeln sind Mittel; Plakatwände, Litfaßsäulen, öffentliche Verkehrseinrichtungen und Sportplätze nennt die Tabelle als Träger. Der Satz nennt drei der Träger korrekt. Er bleibt innerhalb der klassischen Werbung und greift nicht schon auf Blogs oder Social Media vor, die später eigene Sätze bekommen.\n\nDie Aussage ist wahr."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.31",
+    "title": "Verkaufsförderung, Personal Selling und Public Relations",
+    "context": "Bewerten Sie die folgenden Aussagen zu weiteren Instrumenten der Kommunikationspolitik:",
+    "statements": [
+      "Zur Kommunikationspolitik gehört der gesamte Auftritt des Unternehmens im Internet mit eigener Website und in sozialen Netzwerken.",
+      "Verkaufsförderung durch bestimmte Aktionen gehört zur Kommunikationspolitik.",
+      "Das Verhalten der Verkäuferinnen und Verkäufer, im Buch Personal Selling genannt, zählt zur Kommunikationspolitik.",
+      "Public Relations bezieht sich oft auf das ganze Unternehmen, etwa Pressekonferenzen, Presseaussendungen, gezielte Information von Investoren und Sponsoring.",
+      "Kommunikationspolitik betrifft ausschließlich das einzelne Produkt und niemals das Unternehmen als Ganzes."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "Netzauftritt ist Kommunikation. Neben verschiedenen Formen der Werbung gehört der gesamte Auftritt des Unternehmens im Internet mit eigener Website und in sozialen Netzwerken zur Kommunikationspolitik. Es ist nicht nur ein technisches Anhängsel der Distribution, auch wenn der Absatzweg im Netz parallel laufen kann. Wer Website und Netzwerke aus Promotion herausnimmt, streicht den ersten der vier Punkte nach der klassischen Werbung. Social-Media-Marketing vertieft denselben Gedanken später als Werbung und PR auf Plattformen wie Facebook und X. Hier zählt zunächst die Zuordnung des Auftritts zur Kommunikation.\n\nDie Aussage ist wahr.",
+      "Aktionen fördern den Verkauf. Verkaufsförderung durch bestimmte Aktionen steht ausdrücklich auf der Liste. In der Reifephase waren Rabatte und Promotions schon als aufwändige Maßnahmen gegen Konkurrenz genannt; hier gehören sie zur Kommunikationspolitik. Der Satz bleibt bei „bestimmte Aktionen“ und erfindet keine Pflicht, jede Preissenkung als Promotion zu buchen. Er hält die Zuordnung zum Mix-Instrument Promotion.\n\nDie Aussage ist wahr.",
+      "Menschen am Verkaufspunkt. Das Verhalten der Verkäuferinnen und Verkäufer wird als Personal Selling der Kommunikationspolitik zugeordnet. Die Botschaft läuft nicht nur über Anzeige und Spot, sondern über das Gespräch. Wer Personal Selling nur als Personalführung ohne Kundenbezug denkt, nimmt den englischen Ausdruck aus dem Marketing-Mix. Das Buch setzt ihn in Klammern genau hinter das Verhalten am Verkauf.\n\nDie Aussage ist wahr.",
+      "PR zielt oft auf die Organisation. Kommunikationspolitik bezieht sich auch nicht nur auf die Produkte, sondern oft auf das ganze Unternehmen, etwa im Bereich Public Relations. PR umfasst Pressekonferenzen, Presseaussendungen, gezielte Information bestimmter Zielgruppen, zum Beispiel Investoren als Investor Relations, sowie Sponsoring. Der Satz fasst diese Palette zusammen. Er macht aus PR keine Produktanzeige unter anderem Namen.\n\nDie Aussage ist wahr.",
+      "Produkt und Unternehmen. Gerade PR zeigt, dass Kommunikation oft das ganze Unternehmen betrifft, nicht ausschließlich das einzelne Produkt. Die absolute Einschränkung „ausschließlich“ und „niemals“ widerspricht diesem Satz. Werbung kann das Produkt in den Vordergrund stellen; PR, Investor Relations und Sponsoring weiten den Blick. Die Aussage ist deshalb zu eng und falsch.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.32",
+    "title": "Social-Media-Marketing und Event Marketing",
+    "context": "Bewerten Sie die folgenden Aussagen zu Social-Media-Marketing und Event Marketing:",
+    "statements": [
+      "Social-Media-Marketing bezeichnet in der Regel Werbung und PR eines Unternehmens in sozialen Medien wie Facebook und X.",
+      "Die Öffentlichkeitsarbeit mittels Social Media wird Social Media Relations genannt.",
+      "Über soziale Medien können Unternehmen mit vielen potenziellen Kundinnen und Kunden rasch und direkt Kontakt aufnehmen, Produkte vorstellen und Botschaften kommunizieren.",
+      "Event Marketing umfasst erlebnisorientierte Veranstaltungen, die einen starken Aktivierungsprozess beim Kunden auslösen sollen.",
+      "Event Marketing beschränkt sich im Lehrtext ausschließlich auf interne Mitarbeiterschulungen ohne Außenwirkung auf Kundinnen und Kunden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "difficulty_level": "4/5",
+    "tactical_explanations": [
+      "SMM als Werbung und PR in Netzwerken. Social-Media-Marketing bezeichnet Marketingaktivitäten, in der Regel Werbung und PR, eines Unternehmens in sozialen Medien wie Facebook und X, ehemals Twitter. Es ist also nicht ein fünftes P neben den vier Instrumenten, sondern Kommunikation auf diesen Plattformen. Nutzerzahlen sind um ein Vielfaches gestiegen; die Bedeutung hat enorm zugenommen. Die Öffentlichkeitsarbeit dort heißt Social Media Relations. Der Satz bleibt bei der Regel „Werbung und PR“ und erfindet keine eigenen Pflichtkennzahlen. Kontakt, Produktvorstellung und Stimmung folgen im nächsten Absatz als Wirkung, nicht als eigene Definition.\n\nDie Aussage ist wahr.",
+      "Relations als Name der Öffentlichkeitsarbeit. Die Öffentlichkeitsarbeit mittels Social Media wird Social Media Relations genannt. Das parallelisiert PR mit einem kanalbezogenen Ausdruck. Wer Relations mit reiner Bannerschaltung ohne Öffentlichkeitsarbeit gleichsetzt, verengt den vom Buch gesetzten Namen. Der Satz gibt die Bezeichnung wieder, die der Lehrtext ausdrücklich einführt.\n\nDie Aussage ist wahr.",
+      "Direkt, rasch, viele Adressaten. Unternehmen können über soziale Medien mit einer Vielzahl potenzieller Kundinnen und Kunden rasch und direkt Kontakt aufnehmen, Produkte vorstellen, Botschaften kommunizieren und positive Stimmung für sich und ihre Produkte machen. Das ist die Begründung, warum SMM an Bedeutung gewonnen hat. Wer Social Media nur als einseitige Plakatwand ohne Kontaktmöglichkeit denkt, lässt „direkt Kontakt aufnehmen“ weg.\n\nDie Aussage ist wahr.",
+      "Erlebnis und Aktivierung. Event Marketing umfasst erlebnisorientierte Veranstaltungen, die einen starken Aktivierungsprozess beim Kunden auslösen sollen. Sie sollen die Aufmerksamkeit auf ein Unternehmen, eine Produktgruppe oder ein Ereignis richten: Modeschauen, Messen, Ausstellungs- und Geschäftseröffnungen, Kultur- und Sportveranstaltungen. Der Satz trifft die Definition vor der Beispielreihe. Aktivierung ist das Ziel, nicht eine stille Information ohne Erlebnis.\n\nDie Aussage ist wahr.",
+      "Außen zum Kunden, nicht nur intern. Die genannten Veranstaltungen richten Aufmerksamkeit auf Unternehmen, Produktgruppe oder Ereignis und sollen Kundinnen und Kunden aktivieren. Interne Mitarbeiterschulungen ohne Außenwirkung stehen in dieser Liste nicht. Die Beschränkung „ausschließlich intern“ streicht Modeschau, Messe und Sportevent. Event Marketing ist ein Kommunikationsinstrument nach außen, ergänzend zu Werbung und SMM.\n\nDie Aussage ist falsch."
+    ],
+    "tier": "full"
+  }
+]

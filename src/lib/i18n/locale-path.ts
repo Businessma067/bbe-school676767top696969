@@ -83,6 +83,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/products/full-course-math",
   "/products/full-course-english",
   "/products/full-course-economics",
+  "/products/full-course-wiso-economics",
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",
   "/products/lite-bbe-course-english",

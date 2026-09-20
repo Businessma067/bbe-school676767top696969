@@ -1,0 +1,338 @@
+[
+  {
+    "title": "EU micro staff ceiling",
+    "statements": [
+      "Because staff are below ten, a firm remains a micro enterprise despite turnover above €2m.",
+      "Forty-five staff alone guarantees small classification even if turnover exceeds €10m.",
+      "Meeting the staff ceiling alone is sufficient for micro status regardless of turnover or balance sheet totals.",
+      "Under the EU definition, a micro enterprise may employ fewer than ten people.",
+      "A firm qualifies as micro because its balance sheet is below €2m, regardless of turnover above €2m."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.01",
+    "context": "Consider a workshop that employs nine people with €1.8m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Micro turnover edge case",
+    "statements": [
+      "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
+      "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
+      "Exceeding the €2m turnover cap can disqualify a firm from micro status even when staff are below ten.",
+      "Small status also requires turnover not exceeding €10m.",
+      "A small enterprise may employ fewer than fifty people under EU definitions."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.02",
+    "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Micro balance sheet OR test",
+    "statements": [
+      "A firm fails the medium test because both financial figures must be below their respective caps.",
+      "Medium enterprises employ fewer than two hundred and fifty people under EU definitions.",
+      "Because turnover is within €50m, balance sheet size is irrelevant for medium classification.",
+      "Two hundred and forty employees exceed the medium staff ceiling.",
+      "Thirty-eight staff alone keeps a firm in the small category despite turnover above €10m."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.03",
+    "context": "Consider a design studio that reports eight staff, €2.4m turnover, and a €1.7m balance sheet. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Small dual thresholds",
+    "statements": [
+      "MSME excludes micro firms and covers only small and medium categories.",
+      "SMEs represent a narrow minority of EU firms because large corporations dominate registration statistics.",
+      "SME labels are purely descriptive and have no effect on access to finance or reporting rules.",
+      "A components manufacturer counts as a medium enterprise because it operates internationally.",
+      "Medium status permits turnover up to €50m or a balance sheet total up to €43m together with the staff cap."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.04",
+    "context": "Analyze EU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Small turnover breach",
+    "statements": [
+      "A workforce of about ten thousand places a components manufacturer outside EU medium enterprise limits.",
+      "Approximately ninety-nine percent of businesses in the EU are SMEs.",
+      "Accounting requirements are identical for micro firms and large multinationals under EU practice.",
+      "Two hundred employees fall within the medium staff threshold.",
+      "Seven staff and a €1.9m balance sheet guarantee micro status despite turnover above €2m."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.05",
+    "context": "Consider a wholesaler that has thirty-eight staff but €10.4m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Medium staff limit",
+    "statements": [
+      "Official SME classification can determine eligibility for EU support programmes and finance schemes.",
+      "Size definitions matter because accounting rules may differ for smaller and larger firms.",
+      "Ten employees still count as micro because the threshold says fewer than ten.",
+      "Two hundred and fifty employees satisfies the medium requirement of fewer than two hundred and fifty.",
+      "Fifty employees meets the small enterprise staff requirement of fewer than fifty."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.06",
+    "context": "Analyze medium-enterprise criteria for a manufacturer with two hundred and forty employees. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Medium financial OR logic",
+    "statements": [
+      "Any firm with more than ten employees is classified as large under EU rules.",
+      "MSME commonly groups micro, small, and medium enterprises under one umbrella term.",
+      "Crossing size thresholds can change which accounting rules apply to a business.",
+      "Any local shop qualifies as micro without reference to staff or turnover data.",
+      "Exactly ten staff exceeds the micro employee ceiling of fewer than ten."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.07",
+    "context": "Consider a firm that has one hundred eighty staff, €48m turnover, and a €44m balance sheet. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Medium turnover within cap",
+    "statements": [
+      "Exceeding medium staff or financial thresholds generally moves a firm out of SME status.",
+      "Grant schemes often require proof that the applicant meets official micro enterprise criteria.",
+      "Exactly fifty staff exceeds the small category employee limit.",
+      "Micro firms must meet the staff cap and either the turnover or balance sheet financial limit.",
+      "Exactly 250 staff exceeds the medium employee ceiling."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.08",
+    "context": "Analyze an engineering firm has two hundred staff, €49m turnover, and a €42m balance sheet. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "A components manufacturer large scale",
+    "statements": [
+      "A balance sheet above €43m can disqualify medium status even with low turnover.",
+      "Crossing micro limits while staying within small thresholds reclassifies the firm as small.",
+      "Policies supporting SMEs affect the vast majority of EU businesses by number.",
+      "Size differences can mean different accounting rule sets for a micro supplier and a components manufacturer.",
+      "Small enterprises must record turnover not exceeding €10m."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.09",
+    "context": "Consider a components manufacturer employs roughly ten thousand staff worldwide. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "SME share in the EU",
+    "statements": [
+      "Medium enterprises may report turnover up to €50m under EU definitions.",
+      "Micro classification requires both turnover and balance sheet to stay below €2m simultaneously.",
+      "Micro requires fewer than ten staff plus financial caps, stricter than small staff limits.",
+      "Small firms may report turnover up to €50m provided staff are below fifty.",
+      "Medium status is confirmed because staff and turnover both qualify despite balance sheet breach."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.10",
+    "context": "Analyze statements about the prevalence of SMEs in the European Union. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Why definitions matter",
+    "statements": [
+      "Two people employed falls well within the micro staff ceiling.",
+      "Because SMEs are numerous, individual SME failures have no community impact.",
+      "Lenders may verify SME status using official headcount and turnover thresholds.",
+      "SME tiers require joint satisfaction of staff and relevant financial thresholds.",
+      "Most EU businesses by count are classified within SME size bands."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.11",
+    "context": "Analyze a startup seeks EU-backed finance tied to official size categories. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "MSME terminology",
+    "statements": [
+      "Turnover above €50m disqualifies medium status even if balance sheet qualifies.",
+      "Medium turnover cap is €10m, identical to the small limit.",
+      "Any firm with forty staff is micro because it employs fewer than fifty people.",
+      "Adding staff and sales can leave a firm classified as micro even after crossing small thresholds.",
+      "All EU firms file identical full public accounts regardless of size category."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.12",
+    "context": "Analyze terminology linking micro, small, and medium enterprises in EU policy. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Accounting rules by size",
+    "statements": [
+      "A small IT-support venture illustrate micro-scale operations compared with a components manufacturer's large workforce.",
+      "Complete staff and financial data are needed to verify micro or other SME tiers.",
+      "SME definitions are irrelevant once a firm exports outside the home country.",
+      "One hundred and eighty employees fits the medium staff band if financial tests also pass.",
+      "Micro pairs sub-ten staff with €2m turnover or balance sheet limits."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.13",
+    "context": "Analyze a growing firm approaches medium thresholds. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Micro balance within cap",
+    "statements": [
+      "Operating alone prevents micro classification because micro requires at least five staff.",
+      "Large firms like a components manufacturer can employ thousands despite being few in number.",
+      "Three thousand staff can still fall within medium limits if turnover is managed.",
+      "Turnover within €10m alone makes a firm small even with three hundred employees.",
+      "Turnover above €50m prevents medium classification when that cap is breached."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.14",
+    "context": "Consider a consultancy that has seven staff, €2.3m turnover, and a €1.9m balance sheet. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Ten employees boundary",
+    "statements": [
+      "Micro enterprises form a large part of the SME group that dominates EU business counts.",
+      "€43m is the medium balance sheet ceiling paired with sub-250 staff.",
+      "Nine staff and a €1.6m balance sheet confirm micro status despite €2.05m turnover.",
+      "Eight staff is compatible with micro but financial figures must still be verified.",
+      "The ninety-nine percent statistic proves SMEs generate ninety-nine percent of EU GDP."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.15",
+    "context": "Consider a family firm that employs exactly ten people with €1.5m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Fifty staff boundary",
+    "statements": [
+      "Leaving SME status can end eligibility for certain EU SME finance programmes.",
+      "Medium status holds because balance sheet is within €43m despite turnover above €50m.",
+      "Medium pairs sub-250 staff with a €10m turnover cap.",
+      "Thirty staff is within the small enterprise employee limit.",
+      "One hundred and eighty staff keeps a firm in the small category because turnover is below €50m."
+    ],
+    "subsection": "3.4",
+    "case_id": "CASE 3.4.16",
+    "context": "Analyze a logistics company employs exactly fifty people with €8m turnover. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  }
+]

@@ -35,6 +35,7 @@ const PRIVATE_PATH_PREFIXES = [
   "/products/full-course-math",
   "/products/full-course-english",
   "/products/full-course-economics",
+  "/products/full-course-wiso-economics",
   "/products/custom-mock-builder",
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",

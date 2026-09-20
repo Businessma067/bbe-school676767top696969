@@ -1,0 +1,370 @@
+[
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.01",
+    "title": "Fleisch gegen Kleidung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Geld als Tauschmittel im Wirtschaftskreislauf:",
+    "statements": [
+      "Ohne Geld müsste man Güter gegen Güter tauschen, zum Beispiel Fleisch gegen Kleidung.",
+      "Will der Fleischverkäufer im Augenblick des Tauschs keine Kleidung, kommt das Geschäft oft nicht zustande.",
+      "Sobald Geld von allen als Tauschmittel und Zahlungsmittel akzeptiert wird, werden viele Geschäfte möglich.",
+      "Tauschbeziehungen im Wirtschaftskreislauf kommen ohne Geld immer leicht oder sogar besser zustande.",
+      "Mit Geld als Zahlungsmittel muss der Verkäufer nicht genau das Gut der Käuferin im selben Moment brauchen."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Ohne allgemein akzeptiertes Geld bleibt nur der unmittelbare Tausch von Ware gegen Ware. Das Lehrbuch nennt ur- und frühgeschichtliche Gesellschaften und das Alltagsbeispiel Fleisch gegen Kleidung. Beide Seiten müssen dann ein Gut anbieten, das die andere gerade will. Genau diese Enge macht den Tausch schwer oder unmöglich, sobald die Wünsche nicht zusammenpassen.\n\nIm Wirtschaftskreislauf wären viele der beschriebenen Tauschbeziehungen ohne dieses Mittel kaum zu knüpfen. Fleisch ist da, Kleidung ist da, und trotzdem stockt das Geschäft, wenn die zeitliche und sachliche Passung fehlt. Geld als allgemeines Tauschmittel tritt genau in diese Lücke.\n\nDie Aussage ist wahr.",
+      "Der Fleischverkäufer muss im selben Augenblick Kleidung wollen, sonst fehlt die gegenseitige Passung. Braucht er keine Jacke oder will er sie erst später, bleibt das Fleisch unverkauft, obwohl beide Güter vorhanden sind. Geld durchbricht diese Blockade, weil der Verkäufer einen allgemein akzeptierten Gegenwert erhält und später etwas anderes kaufen kann. Der Lehrtext macht aus diesem Moment das Grundproblem des Tauschs ohne Zahlungsmittel.\n\nDie Aussage ist wahr.",
+      "Akzeptanz als Zahlungsmittel öffnet den Kreis der möglichen Geschäfte. Wer Fleisch, Beratung oder eine Reparatur hergibt, nimmt Geld an, weil er darauf vertrauen darf, es wieder für Produkte und Dienstleistungen einzusetzen. Sobald alle dasselbe Tauschmittel anerkennen, entfällt die Suche nach einem passenden Gegengut im selben Moment. Viele Tauschbeziehungen im Kreislauf werden so überhaupt erst praktikabel.\n\nDie Aussage ist wahr.",
+      "Der Wirtschaftskreislauf braucht laut Lehrtext Geld gerade deshalb, weil Tauschbeziehungen ohne dieses Mittel schwer oder unmöglich zustande kommen. Güter gegen Güter zu tauschen scheitert, sobald eine Seite das angebotene Gut nicht will. Die Behauptung, ohne Geld sei der Tausch immer leicht oder sogar besser, stellt die Ausgangslage des Abschnitts auf den Kopf.\n\nDie Aussage ist falsch.",
+      "Wer Fleisch gegen Geld verkauft, muss nicht gleichzeitig Kleidung, Brot oder eine Dienstleistung der Käuferin nachfragen. Das Geld speichert die Kaufmöglichkeit bis zum nächsten Geschäft. Genau so löst das Tauschmittel das Problem, dass beide Seiten im selben Augenblick genau das Gut der anderen brauchen müssten. Die unmittelbare Wunschgleichheit entfällt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.02",
+    "title": "Vertrauen in den Tauschwert",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Vertrauen als Voraussetzung der Geldfunktionen:",
+    "statements": [
+      "Wirtschaftsteilnehmer müssen darauf vertrauen können, Geld wieder als Zahlungsmittel mit einem bestimmten Wert verwenden zu können.",
+      "Der Wert des Geldes bemisst sich darin, dass man dafür Produkte und Dienstleistungen kaufen kann.",
+      "Das Vertrauen in den Tauschwert ist die Voraussetzung für die Funktionen von Geld.",
+      "Geld funktioniert als Zahlungsmittel auch dann zuverlässig, wenn niemand es später wieder annimmt.",
+      "Akzeptanz bedeutet, dass Geld von allen als Zahlungsmittel bzw. Tauschmittel angenommen wird."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Vertrauen heißt hier: später wieder kaufen können. Wer heute Geld annimmt, tut das, weil er erwarten darf, denselben Betrag morgen als Zahlungsmittel einzusetzen. Fehlt diese Erwartung, lohnt sich die Annahme nicht, und der Tausch bleibt beim direkten Gütertausch stecken. Der Lehrtext macht genau dieses Vertrauen zur Bedingung der Akzeptanz.\n\nWirtschaftsteilnehmer müssen sich darauf verlassen können, Geld wieder als Zahlungsmittel mit einem bestimmten Wert zu verwenden, weil es von allen als Zahlungsmittel bzw. Tauschmittel angenommen wird. Ohne diese Erwartung gibt es keine allgemeine Akzeptanz und damit keinen tragfähigen Tauschwert.\n\nDie Aussage ist wahr.",
+      "Der Geldwert hängt im Lehrtext nicht an der Schönheit der Banknote, sondern an der Sicherheit, dafür Produkte und Dienstleistungen zu erhalten. Kann man mit dem Betrag kaufen, trägt das Geld Tauschwert. Schwindet diese Sicherheit, schwindet auch der Grund, Geld anzunehmen. Der Wert bemisst sich also in der künftigen Kaufmöglichkeit, nicht in einem bloßen Aufdruck. Papier oder Metall allein erklären die Geldfunktionen nicht, solange dieser Tauschwert unsicher bleibt.\n\nDie Aussage ist wahr.",
+      "Ohne dieses Vertrauen bleiben die Funktionen auf dem Papier. Tauschmittel, Wertmesser und Wertaufbewahrungsmittel setzen voraus, dass Wirtschaftsteilnehmer den Tauschwert anerkennen und Geld wieder hergeben bzw. annehmen. Der Abschnitt nennt das Vertrauen in diesen Tauschwert ausdrücklich als Voraussetzung. Ohne sie greifen die übrigen Funktionen nicht.\n\nDie Aussage ist wahr.",
+      "Akzeptanz entsteht laut Buch nicht von selbst aus Papier oder Metall. Nimmt niemand das Geld später wieder an, kann man damit nichts kaufen, und der Tauschwert bricht zusammen. Zahlungsmittel zu sein heißt gerade, von allen angenommen zu werden. Die Behauptung, Geld funktioniere ohne spätere Annahme, widerspricht der Vertrauensbedingung.\n\nDie Aussage ist falsch.",
+      "Dass alle dasselbe Mittel annehmen, ist die Kurzform der Akzeptanz. Das Buch setzt Tauschmittel und Zahlungsmittel in diesem Zusammenhang gleich: Geld wird von allen als Zahlungsmittel (Tauschmittel) angenommen. Genau diese allgemeine Annahme macht aus einem Gegenstand ein allgemein verwendbares Tauschmittel im Kreislauf.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.03",
+    "title": "Drei Funktionen von Geld",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Funktionen von Geld:",
+    "statements": [
+      "Geld ist Tauschmittel bzw. Zahlungsmittel, Wertmesser und Wertaufbewahrungsmittel.",
+      "Die einzige Funktion von Geld besteht darin, den Wert verschiedener Güter zu vergleichen.",
+      "Als Wertmesser kann man den Wert von Gütern in Geldeinheiten ausdrücken.",
+      "Spart man, so kann man die Höhe des Ersparten in Geld messen und mit Geld den Wert aufbewahren.",
+      "Ohne Vertrauen in den Tauschwert entfallen die Voraussetzungen für diese Funktionen."
+    ],
+    "answer_key": [true, false, true, true, true],
+    "tactical_explanations": [
+      "Drei Rollen stehen nebeneinander. Zuerst Tauschmittel bzw. Zahlungsmittel, sobald alle Geld akzeptieren. Dazu Wertmesser: Güterpreise lassen sich in Geldeinheiten schreiben. Dazu Wertaufbewahrungsmittel: Ersparnisse lassen sich in Geld messen und halten. Der Abschnitt nennt diese drei Funktionen ausdrücklich und hängt sie an das Vertrauen in den Tauschwert. Eine der drei zu streichen würde den Funktionskatalog des Buchs unvollständig machen.\n\nDie Aussage ist wahr.",
+      "Vergleichen ist nur die Wertmesserfunktion. Daneben bleibt Geld Zahlungsmittel im Alltagstausch und Wertaufbewahrungsmittel beim Sparen. Wer die übrigen Rollen streicht, verengt das Lehrbuch auf eine einzige Aufgabe. Die Aufzählung ist dreiteilig, nicht einspurig.\n\nNur den Vergleich gelten zu lassen, würde den Fleischverkauf gegen Geld und das Halten von Ersparnissen aus dem Funktionskatalog werfen. Beides beschreibt der Text aber ausdrücklich. Der Wertmesser erleichtert den Vergleich, ersetzt jedoch weder Tausch noch Aufbewahrung. Die Einschränkung auf eine einzige Funktion ist daher falsch.\n\nDie Aussage ist falsch.",
+      "Preisschilder in Euro machen den Wertmesser sichtbar. Brot, eine Beratung und ein Fahrrad werden in derselben Einheit ausgedrückt, statt in wechselnden Tauschverhältnissen Fleisch-zu-Kleidung. Das erleichtert den Vergleich verschiedener Güter. Genau das meint der Abschnitt mit Wertmesser.\n\nDie Aussage ist wahr.",
+      "Sparen übersetzt den zurückgelegten Betrag in eine messbare Größe und hält ihn in Geld fest. Die Höhe des Ersparten lässt sich in Geldeinheiten angeben, und das Geld bewahrt den Wert bis zur späteren Verwendung. Das ist die Wertaufbewahrungsfunktion, nicht eine vierte, vom Buch getrennte Idee.\n\nDie Aussage ist wahr.",
+      "Funktionen brauchen eine gemeinsame Grundlage. Ohne Vertrauen, dass Geld wieder als Zahlungsmittel mit einem bestimmten Wert dient, fehlt der Grund, es anzunehmen, Preise darin auszudrücken oder Ersparnisse darin zu halten. Der Text nennt dieses Vertrauen die Voraussetzung für die Funktionen. Fehlt sie, greifen Tauschmittel, Wertmesser und Wertaufbewahrung nicht im beschriebenen Sinn.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.04",
+    "title": "Geld als Wertmesser",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Geld als Wertmesser:",
+    "statements": [
+      "In Geldeinheiten lässt sich der Wert verschiedener Güter miteinander vergleichen.",
+      "Ohne Geld müsste man den Wert von Gütern nur in direkten Tauschverhältnissen wie Fleisch gegen Kleidung ausdrücken.",
+      "Wertmesser und Tauschmittel sind laut Lehrbuch ein und dieselbe Funktion ohne jeden Unterschied.",
+      "Ein Preis in Euro ist ein Ausdruck des Güterwerts in Geldeinheiten.",
+      "Als Wertmesser dient Geld nur für körperliche Produkte, niemals für Dienstleistungen."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Vergleichen wird einfach, wenn alles in derselben Einheit steht. Ein Laib Brot, eine Stunde Beratung und ein Paar Schuhe tragen dann Zahlen in Geld, nicht drei inkommensurable Tauschpaare. Der Abschnitt hebt hervor, dass der Ausdruck in Geldeinheiten den Vergleich erleichtert. Das ist die praktische Seite des Wertmessers, neben Tauschmittel und Wertaufbewahrung, nicht an deren Stelle.\n\nDie Aussage ist wahr.",
+      "Tauschverhältnisse ohne gemeinsame Einheit bleiben Paare: Fleisch gegen Kleidung, Brot gegen Beratung. Jedes neue Gut braucht neue Relationen zu allen anderen. Geld als Wertmesser ersetzt dieses Netz durch eine einheitliche Maßzahl. Der direkte Gütertausch ist genau der Fall, den der Text als schwer oder unmöglich beschreibt, wenn Wünsche nicht zusammenpassen. In Geldeinheiten ausgedrückt werden die Werte vergleichbar, ohne dass jedes Paar neu ausgehandelt werden muss.\n\nDie Aussage ist wahr.",
+      "Zwei Namen, zwei Aufgaben. Tauschmittel bzw. Zahlungsmittel meint die Annahme beim Geschäft. Wertmesser meint das Ausdrücken und Vergleichen von Güterwerten in Geldeinheiten. Das Buch stellt beide nebeneinander und fügt als Drittes die Wertaufbewahrung hinzu. Wer die ersten beiden zu einer einzigen Funktion verschmilzt, tilgt diese Unterscheidung.\n\nZahlungsmittel zu sein heißt, im Tausch angenommen zu werden. Wertmesser zu sein heißt, Preise und relative Werte in einer Einheit sichtbar zu machen. Beides braucht Vertrauen, aber es sind nicht dieselben Handlungen. Ein Schild in Euro vergleicht, eine Überweisung zahlt. Die Behauptung der Identität ist falsch.\n\nDie Aussage ist falsch.",
+      "Steht auf dem Schild ein Eurobetrag, ist der Wert des Gutes in Geldeinheiten ausgedrückt. Genau das beschreibt der Wertmesser. Der Betrag erlaubt den Vergleich mit anderen Gütern, die ebenfalls in Euro ausgezeichnet sind. Der Preis ist damit die alltägliche Form dieser Funktion, nicht eine davon getrennte Idee.\n\nDie Aussage ist wahr.",
+      "Dienstleistungen gehören zu den Gütern, deren Wert sich in Geld ausdrücken lässt. Der Tauschwert des Geldes besteht gerade darin, Produkte und Dienstleistungen kaufen zu können. Eine Beratung, eine Behandlung oder eine Reparatur trägt ebenso einen Preis in Geldeinheiten wie Brot oder Kleidung. Die Beschränkung auf körperliche Produkte ist daher zu eng.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.05",
+    "title": "Wertaufbewahrung durch Sparen",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Geld als Wertaufbewahrungsmittel:",
+    "statements": [
+      "Mit Geld kann man den Wert aufbewahren, etwa indem man spart.",
+      "Die Höhe des Ersparten lässt sich in Geld messen.",
+      "Wertaufbewahrungsmittel bedeutet, dass Geld ausschließlich in Münzen unter der Matratze gehalten werden darf.",
+      "Wer spart, nutzt Geld zugleich als Maß für den zurückgelegten Betrag und als Träger des aufbewahrten Werts.",
+      "Sobald Geld Tauschmittel ist, entfällt jede Wertaufbewahrungsfunktion, weil jeder Betrag sofort ausgegeben werden muss."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Sparen ist der Lehrbuchfall der Wertaufbewahrung. Der zurückgelegte Betrag bleibt in Geld verfügbar, bis er später für Güter eingesetzt wird. Man bewahrt damit nicht das konkrete Brot von heute, sondern den Tauschwert in einer allgemein akzeptierten Form. Genau so beschreibt der Text die dritte Funktion neben Tauschmittel und Wertmesser. Ohne diese Haltemöglichkeit müsste jeder Zufluss im selben Moment wieder in ein Gut umschlagen.\n\nDie Aussage ist wahr.",
+      "Messung und Aufbewahrung gehören zusammen. Die Höhe des Ersparten wird in Geldeinheiten angegeben, nicht in Stück Fleisch oder Meter Stoff. Diese Zahl macht den zurückgelegten Wert vergleichbar und planbar. Der Abschnitt nennt beides in einem Satz: messen und mit Geld den Wert aufbewahren. Wer nur misst, aber nicht halten kann, oder nur hortet, ohne die Höhe angeben zu können, trifft die Buchformulierung nur zur Hälfte.\n\nDie Aussage ist wahr.",
+      "Unter der Matratze ist nur eine mögliche Form, und das Buch zwingt niemanden darauf. Bargeld in Münzen und Banknoten ist vertraut, Buchgeld auf dem Konto ist ebenfalls Geld. Wertaufbewahrung heißt, den Wert in Geld zu halten, nicht eine bestimmte Verstecktechnik. Die Einschränkung auf Münzen unter der Matratze ist daher falsch.\n\nBargeld und Buchgeld sind beide Formen von Geld, solange das Vertrauen in den Tauschwert trägt. Ersparnisse können auf dem Konto stehen und trotzdem die Wertaufbewahrungsfunktion erfüllen. Wer nur Münzen unter dem Kopfkissen gelten lässt, verwechselt eine anschauliche Szene mit der Definition.\n\nDie Aussage ist falsch.",
+      "Zwei Seiten einer Handlung: Der Sparbetrag hat eine Höhe in Geld, und dasselbe Geld trägt den Wert durch die Zeit. Der Text koppelt Messen und Aufbewahren ausdrücklich. Wer spart, nutzt damit Wertmesser und Wertaufbewahrungsmittel zugleich, ohne dass eine der beiden Funktionen die andere ersetzt.\n\nDie Aussage ist wahr.",
+      "Tauschmittel zu sein heißt nicht, jeden Betrag am selben Tag ausgeben zu müssen. Gerade weil Geld später wieder als Zahlungsmittel dienen soll, kann man es zwischen zwei Käufen halten. Die Wertaufbewahrung setzt auf diesem Vertrauen auf. Die Behauptung, Tauschmittel tilge die Aufbewahrung, streicht die dritte Funktion, die das Buch eigens nennt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.06",
+    "title": "Bargeld und Buchgeld",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Formen von Geld:",
+    "statements": [
+      "Bargeld gibt es in Form von Banknoten und Münzen.",
+      "Buchgeld ist Geld auf Bankkonten.",
+      "Geld gibt es außerdem in verschiedenen Währungen.",
+      "Nur Münzen gelten als Geld; Banknoten und Kontoguthaben zählen nicht.",
+      "Buchgeld ist etwas Abstraktes, das man nicht sehen und angreifen kann, und dennoch von höchster Bedeutung."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Münzen in der Tasche und Scheine in der Kasse sind die vertraute Form. Das Buch nennt Bargeld ausdrücklich als Banknoten und Münzen. Diese körperliche Form bleibt Zahlungsmittel, solange sie angenommen wird. Sie ist aber nicht die einzige Form von Geld.\n\nDie Aussage ist wahr.",
+      "Kontostände sind Buchgeld. Der Betrag existiert als Guthaben auf einem Bankkonto, nicht als Stapel Münzen in der Schublade der Bank. Überweisungen bewegen genau dieses Buchgeld. Der Abschnitt stellt Bargeld und Buchgeld als erste Unterscheidung der Geldformen nebeneinander. Währungen bilden die zweite Ebene; beides sind Formen von Geld, nicht rivalisierende Definitionen.\n\nDie Aussage ist wahr.",
+      "Neben der Unterscheidung Bargeld gegen Buchgeld nennt der Text Währungen als zweite Formenebene. Dasselbe wirtschaftliche Mittel erscheint als Euro, Franken oder Dollar, je nachdem, welches Geld ein Staat als Zahlungsmittel anerkennt. Die Vielfalt der Währungen gehört also zu den Formen von Geld, nicht zu einem späteren, fremden Thema.\n\nDie Aussage ist wahr.",
+      "Nur Münzen gelten zu lassen, streicht Banknoten und Buchgeld. Das Buch zählt Banknoten zum Bargeld und Kontoguthaben zum Buchgeld. Beide sind Geldformen. Die Verengung auf Münzen widerspricht der Aufzählung und würde den weitaus größten Teil des umlaufenden Geldes unsichtbar machen.\n\nBanknoten sind Bargeld ebenso wie Münzen. Buchgeld auf dem Konto ist Geld, auch wenn man es nicht greifen kann. Wer nur Hartgeld gelten lässt, verfehlt beide Linien des Abschnitts: die körperliche Form ist breiter als die Münze, und die abstrakte Form ist sogar der größere Umlaufanteil.\n\nDie Aussage ist falsch.",
+      "Abstrakt heißt hier: nicht sichtbar, nicht greifbar, und trotzdem zentral. Buchgeld gewinnt durch bargeldlose Bezahlung weiter an Bedeutung. Man verfügt darüber per Auftrag, etwa per Überweisung, nicht per Münzstapel. Die Unsichtbarkeit mindert laut Lehrtext weder die Bedeutung noch, bei bestehendem Vertrauen, den Wert gegenüber Bargeld. Im Gegenteil: Der bei weitem größere Teil des umlaufenden Geldes ist gerade diese unsichtbare Form.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.07",
+    "title": "Giralgeld auf dem Konto",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Buchgeld bzw. Giralgeld:",
+    "statements": [
+      "Buchgeld wird auch Giralgeld genannt und ist im Gegensatz zu Bargeld nicht physisch vorhanden.",
+      "Buchgeld existiert nur auf einem Konto.",
+      "Weil Buchgeld nicht körperlich ist, ist es zwangsläufig weniger wert als derselbe Betrag in Bargeld.",
+      "Über Buchgeld verfügt man, indem man den Auftrag gibt, einen bestimmten Betrag zu überweisen.",
+      "Buchgeld und Bargeld werden verwendet, solange die Menschen darauf vertrauen, das Geld für Produkte und Dienstleistungen eintauschen zu können."
+    ],
+    "answer_key": [true, true, false, true, true],
+    "tactical_explanations": [
+      "Zwei Namen, dieselbe Sache. Buchgeld oder Giralgeld steht im Gegensatz zum Bargeld, weil es nicht physisch, also nicht körperlich, vorhanden ist. Es liegt nicht als Münze auf dem Tisch, sondern als Eintrag auf dem Konto. Die fehlende Greifbarkeit ist das definierende Merkmal, nicht ein Makel, der den Betrag entwertet. Wer Giralgeld für etwas anderes als Buchgeld hält, verdoppelt ohne Not den Begriff des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Nur auf dem Konto existiert dieser Betrag als Buchgeld. Ohne Konto gäbe es keinen Träger für Giralgeld. Die Verfügung läuft über Aufträge an die Bank, nicht über das Weitergeben eines Scheins. Der Abschnitt setzt Existenz auf dem Konto und Verfügung durch Überweisung in einen direkten Zusammenhang.\n\nDie Aussage ist wahr.",
+      "Nichtkörperlichkeit senkt den Wert nicht automatisch. Das Buch sagt klar: Auch wenn Buchgeld nicht physisch vorhanden ist, ist es dennoch so viel wert wie das Bargeld. Voraussetzung bleibt das Vertrauen, beides in Produkte und Dienstleistungen eintauschen zu können. Die Behauptung eines zwangsläufig geringeren Werts widerspricht diesem Satz.\n\nEin Euro auf dem Konto und ein Euro als Münze sollen denselben Tauschwert tragen, solange beide angenommen werden. Wer aus der Abstraktheit eine Abwertung folgert, verwechselt Sichtbarkeit mit Wert. Der Lehrtext trennt beides ausdrücklich.\n\nDie Aussage ist falsch.",
+      "Verfügung heißt Auftrag. Man gibt der Bank auf, einen bestimmten Betrag zu überweisen, und bewegt damit Buchgeld, ohne Scheine aus der Tasche zu ziehen. Die meisten Ein- und Auszahlungen auf ein Bankkonto laufen so bargeldlos. Das Überweisen ist die typische Nutzungsform des Giralgeldes.\n\nDie Aussage ist wahr.",
+      "Vertrauen trägt beide Formen. Bargeld wie Buchgeld bleiben in Gebrauch, solange Menschen erwarten, sie gegen Produkte und Dienstleistungen tauschen zu können. Bricht dieses Vertrauen, nützt weder der Schein in der Hand noch die Zahl auf dem Konto. Der Abschnitt bindet den Wert beider Formen an dieselbe Erwartung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.08",
+    "title": "Überweisung, Abhebung und Karten",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verfügung über Buchgeld:",
+    "statements": [
+      "Die meisten Einzahlungen und Auszahlungen auf ein Bankkonto erfolgen bargeldlos durch Überweisungen.",
+      "Buchgeld kann durch Abhebungen vom Konto in Bargeld umgewandelt werden.",
+      "Auf das Konto kann man durch die Verwendung von Bank- und Kreditkarten besonders einfach zugreifen.",
+      "Buchgeld lässt sich niemals in Bargeld verwandeln, weil es nur als abstrakte Zahl existiert.",
+      "Bargeldlose Bezahlungsmöglichkeiten lassen die Bedeutung des Buchgeldes eher steigen als sinken."
+    ],
+    "answer_key": [true, true, true, false, true],
+    "tactical_explanations": [
+      "Alltag auf dem Konto heißt Überweisung, nicht Münzzählen. Gehaltseingang, Miete, Onlinekauf: Der größere Teil der Bewegungen läuft bargeldlos. Das Buch hält fest, dass die meisten Einzahlungen und Auszahlungen auf ein Bankkonto so erfolgen. Buchgeld ist damit die Arbeitsebene vieler Zahlungen, nicht eine Randerscheinung. Abhebungen bleiben möglich, sie sind aber nicht der Hauptweg, auf dem Konten sich füllen und leeren.\n\nDie Aussage ist wahr.",
+      "Abheben übersetzt den Kontostand in Scheine und Münzen. Der Betrag wechselt die Form, nicht notwendig den Wert, solange das Vertrauen trägt. Buchgeld kann also in Bargeld umgewandelt werden. Die Brücke zwischen den beiden Formen ist gerade die Abhebung am Automaten oder am Schalter.\n\nDie Aussage ist wahr.",
+      "Karten machen den Zugriff auf das Konto im Alltag leicht. Bezahlen an der Kasse oder im Netz zieht Buchgeld heran, ohne dass jemand Bargeld zählen muss. Der Text nennt Bank- und Kreditkarten ausdrücklich als besonders einfachen Zugang. Die Karte ist ein Werkzeug der Verfügung, nicht eine dritte, vom Buchgeld getrennte Währung. Sie ersetzt weder das Konto noch das Vertrauen in den Tauschwert, sie erleichtert nur den Zugriff darauf.\n\nDie Aussage ist wahr.",
+      "Abstrakt sein heißt nicht unwandelbar. Der Lehrtext beschreibt die Umwandlung durch Abhebung ausdrücklich. Wer am Automaten Scheine zieht, hat Buchgeld in Bargeld überführt. Die Behauptung, die abstrakte Existenz sperre jede Verwandlung, widerspricht diesem Satz.\n\nExistenz nur auf dem Konto betrifft die Form, nicht die Möglichkeit des Formwechsels. Überweisung bleibt innerhalb des Buchgeldes, Abhebung wechselt ins Bargeld. Beides setzt das Konto voraus. Unwandelbarkeit folgt daraus nicht, sonst gäbe es im Text keine Brücke zwischen den beiden Formen.\n\nDie Aussage ist falsch.",
+      "Bargeldlos zahlen heißt Buchgeld nutzen. Der Abschnitt erwartet, dass viele verschiedene bargeldlose Bezahlungsmöglichkeiten die Bedeutung des Buchgeldes weiter erhöhen. Unsichtbarkeit und Bedeutung steigen hier zusammen, sie schließen einander nicht aus. Die Richtung ist Zunahme, nicht Bedeutungsverlust.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.09",
+    "title": "Zinsertrag von Bargeld und Guthaben",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verzinsung von Bargeld und Buchgeld:",
+    "statements": [
+      "Bargeld verzinst sich nicht.",
+      "Guthaben auf Bankkonten werden in der Regel verzinst, wenn auch teilweise nur sehr gering.",
+      "Mit einem Kontoguthaben kann man so einen zumindest geringen Zinsertrag erhalten.",
+      "Bargeld in der Brieftasche wirft denselben Zinsertrag ab wie ein verzinstes Kontoguthaben.",
+      "Eine sehr geringe Verzinsung des Guthabens bedeutet, dass Bargeld höher verzinst wird als Buchgeld."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Scheine und Münzen in der Tasche tragen keinen Zins. Der Text stellt das Bargeld dem Kontoguthaben gegenüber: Während Guthaben in der Regel verzinst werden, verzinst sich Bargeld nicht. Wer den Betrag als Bargeld hält, verzichtet auf diesen Ertrag, so klein er auf dem Konto auch sein mag. Die Formwahl zwischen Börse und Konto ist damit auch eine Wahl über einen möglichen Zinsertrag, nicht nur über Greifbarkeit.\n\nDie Aussage ist wahr.",
+      "In der Regel heißt: typischerweise ja, der Satz kann klein sein. Bankguthaben werden verzinst, teilweise nur sehr gering. Der Lehrtext hält trotzdem fest, dass ein Zinsertrag entsteht. Geringheit ändert die Richtung nicht: Das Konto kann Zinsen tragen, das Bargeld nicht. Aus einer niedrigen Rate folgt nicht die Gleichheit mit der Nullverzinsung der Scheine in der Brieftasche.\n\nDie Aussage ist wahr.",
+      "Geringer Ertrag bleibt ein Ertrag. Wer den Betrag auf dem Konto lässt, erhält zumindest diesen kleinen Zuwachs, den Bargeld nicht liefert. Der Abschnitt koppelt die Verzinsung der Guthaben genau an diesen Punkt. Die Höhe darf niedrig sein, die Möglichkeit des Zinsertrags bleibt.\n\nDie Aussage ist wahr.",
+      "Gleicher Ertrag wäre nur denkbar, wenn sich auch Bargeld verzinst. Das Buch sagt das Gegenteil: Bargeld verzinst sich nicht, Guthaben in der Regel schon. Die Brieftasche liefert keinen Zinsstrom, das Konto kann einen liefern. Die Gleichsetzung der Erträge ist daher falsch.\n\nNote: Die spätere Zinslehre (Preis des Geldes, Gläubiger und Schuldner) liegt außerhalb dieses Ausschnitts. Hier zählt nur der Formvergleich: Konto kann Zinsen tragen, Bargeld nicht. Schon eine sehr geringe Kontoverzinsung durchbricht die behauptete Gleichheit mit der Null des Bargelds.\n\nDie Aussage ist falsch.",
+      "Sehr gering auf dem Konto ist immer noch mehr als null in der Geldbörse. Aus einer kleinen Kontoverzinsung folgt nicht, dass Bargeld höher verzinst würde. Bargeld trägt laut Text keinen Zins. Die Umkehrung der Rangfolge verdreht den Vergleich.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.10",
+    "title": "Der größte Teil des Geldes",
+    "context": "Bewerten Sie die folgenden Aussagen zum Umfang und Wert von Buchgeld:",
+    "statements": [
+      "Der bei weitem größere Teil des im Umlauf befindlichen Geldes ist in Form von Buchgeld vorhanden.",
+      "Buchgeld ist trotz fehlender Physis so viel wert wie das Bargeld, sofern das Vertrauen in den Tauschwert trägt.",
+      "Weil die meisten Menschen Münzen kennen, muss der größere Teil des Geldes Bargeld sein.",
+      "Beide Formen von Geld werden verwendet, solange Menschen darauf vertrauen, sie für Produkte und Dienstleistungen eintauschen zu können.",
+      "Fehlt das Vertrauen, bleibt Buchgeld trotzdem uneingeschränkt wertvoll, Bargeld aber nicht."
+    ],
+    "answer_key": [true, true, false, true, false],
+    "tactical_explanations": [
+      "Vertraut ist das Bargeld, größer ist das Buchgeld. Der weitaus größere Teil des umlaufenden Geldes steht als Buchgeld auf Konten. Münzen und Scheine prägen das Bild im Kopf, nicht die Mengenrelation im Umlauf. Wer nur zählt, was er greifen kann, unterschätzt den Anteil des Giralgeldes massiv. Der Text trennt Anschauung und Umlaufanteil bewusst: vertraut ist nicht dasselbe wie überwiegend. Genau deshalb warnt der Abschnitt davor, das Abstrakte für unbedeutend zu halten.\n\nDie Aussage ist wahr.",
+      "Gleicher Tauschwert trotz Unsichtbarkeit: Ein Betrag als Buchgeld soll so viel wert sein wie derselbe Betrag als Bargeld. Die Bedingung ist das gemeinsame Vertrauen, beides in Güter eintauschen zu können. Physis ersetzt diese Bedingung nicht, und fehlende Physis hebt sie nicht auf. Wertgleichheit ist also Vertrauensgleichheit, nicht Materialgleichheit.\n\nDie Aussage ist wahr.",
+      "Bekanntheit ist keine Mengenstatistik. Dass Münzen und Banknoten vertraut sind, ändert nichts am Satz, der größere Teil des Geldes sei Buchgeld. Anschauung und Umlaufanteil fallen hier auseinander. Die Folgerung vom Alltagsbild auf den größeren Anteil ist deshalb falsch.\n\nDas Buch nennt Bargeld vertraut und Buchgeld abstrakt, aber von höchster Bedeutung. Genau weil Buchgeld unsichtbar bleibt, liegt der Fehlschluss nahe, es sei die kleinere Größe. Der Text widerspricht dem: Der bei weitem größere Teil ist Buchgeld. Vertrautheit ersetzt keine Umlaufrechnung.\n\nDie Aussage ist falsch.",
+      "Beide Formen hängen am selben Vertrauen. Solange Menschen erwarten, Geld gegen Produkte und Dienstleistungen tauschen zu können, bleiben Bargeld und Buchgeld in Gebrauch. Die Verwendung ist also an die Erwartung gebunden, nicht an die Körperlichkeit der Note. Der Satz gilt für beide Formen gemeinsam.\n\nDie Aussage ist wahr.",
+      "Vertrauen trägt beide, und ohne Vertrauen tragen beide nicht im beschriebenen Sinn. Der Text bindet den Wert von Buchgeld und Bargeld an dieselbe Erwartung des Eintauschens. Eine Asymmetrie, nach der Buchgeld ohne Vertrauen wertvoll bliebe, Bargeld aber nicht, steht so nicht im Abschnitt. Die einseitige Ausnahme ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.11",
+    "title": "Währung und Euro in Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Währung:",
+    "statements": [
+      "Als Währung bezeichnet man das Geld, das in einem bestimmten Land vom jeweiligen Staat als Zahlungsmittel anerkannt ist.",
+      "Die in Österreich anerkannte Währung ist der Euro.",
+      "Aus der Perspektive Österreichs sind andere Währungen als der Euro Fremdwährungen.",
+      "Währung bedeutet ausschließlich Bargeld; Buchgeld in Euro ist keine Währung.",
+      "Jedes Land muss dieselbe Währung verwenden wie Österreich, sonst gilt das Geld dort nicht als Währung."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Anerkennung durch den Staat macht aus Geld eine Währung eines Landes. Es geht um das Zahlungsmittel, das dort gilt, nicht um die Metallfarbe der Münze. Der Lehrtext definiert Währung genau so: das Geld, das in einem bestimmten Land vom jeweiligen Staat als Zahlungsmittel anerkannt ist. Andere Zahlungsmittel können daneben existieren, sie sind dann aus dieser Sicht oft Fremdwährungen. Die Definition ist territorial und rechtlich, nicht an die Stückelung in Münzen gebunden.\n\nDie Aussage ist wahr.",
+      "In Österreich gilt der Euro. Das ist die anerkannte Währung, nicht der Schilling und nicht der Dollar als inländisches Zahlungsmittel. Wer in Österreich Preise schreibt und Steuern zahlt, tut das in Euro. Der Abschnitt hält diese Anerkennung ausdrücklich fest. Aus österreichischer Sicht sind andere Währungen Fremdwährungen, auch wenn sie anderswo anerkanntes Geld sind.\n\nDie Aussage ist wahr.",
+      "Fremdwährung ist eine Perspektivenfrage. Vom Standpunkt Österreichs aus sind Franken, Kronen, Yen oder Dollar andere Währungen als der Euro. Sie sind dort, wo sie anerkannt sind, jeweils Währung, aus österreichischer Sicht aber fremd. Der Text sagt genau das.\n\nDie Aussage ist wahr.",
+      "Währung meint das anerkannte Geld eines Landes, nicht nur Scheine und Münzen. Euro-Buchgeld auf einem österreichischen Konto ist Euro, also dieselbe Währung in anderer Form. Bargeld und Buchgeld sind Formen von Geld, Währung ist die staatliche Anerkennung. Die Gleichsetzung von Währung mit Bargeld allein ist daher falsch.\n\nEuro als Währung umfasst das anerkannte Zahlungsmittel, ob als Note oder als Kontoguthaben. Wer Buchgeld aus der Währung herausnimmt, vermischt die Formenebene (Bargeld/Buchgeld) mit der Währungsebene. Das Buch trennt beide Ebenen.\n\nDie Aussage ist falsch.",
+      "Jedes Land hat seine anerkannte Währung, und sie müssen nicht identisch sein. Schwedische Kronen, Schweizer Franken oder Yen sind in anderen Ländern gültig. Dass Österreich den Euro verwendet, zwingt andere Staaten nicht zu derselben Wahl. Die Behauptung einer weltweiten Pflicht zum Euro verdreht die Definition von Währung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.12",
+    "title": "Österreich im Euroraum",
+    "context": "Bewerten Sie die folgenden Aussagen zur gemeinsamen Währung und zum Euroraum:",
+    "statements": [
+      "Österreichs Währung ist der Euro, weil Österreich Mitglied des Euroraums ist.",
+      "Einige Länder der EU, darunter Österreich, haben schrittweise eine gemeinsame Währung eingeführt, zuletzt auch als Bargeld.",
+      "Ziel der gemeinsamen Währung war unter anderem, die Wirtschaft zu stärken und die Union zu verfestigen.",
+      "Österreich verwendet den Euro, obwohl es nicht dem Euroraum angehört.",
+      "Jedes EU-Land zahlt im Inland zwingend mit Euro-Bargeld, unabhängig von einer Mitgliedschaft im Euroraum."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Mitgliedschaft erklärt die Währungswahl. Österreich gehört dem Euroraum an, deshalb ist der Euro die anerkannte Währung. Der Satz im Buch ist kausal, nicht zufällig: weil Österreich Mitglied ist. Ohne diese Zugehörigkeit wäre der Euro nicht automatisch Inlandswährung. EU-Mitgliedschaft allein reicht in der Logik des Texts nicht, wie Länder mit eigener Währung innerhalb der Union zeigen.\n\nDie Aussage ist wahr.",
+      "Schrittweise Einführung, Bargeld als später Schritt: Einige EU-Länder, Österreich eingeschlossen, haben eine gemeinsame Währung aufgebaut. Als letzten Schritt kam ab 2002 auch das Bargeld. Die gemeinsame Währung ist also ein Prozess gewesen, kein einmaliger Münztausch ohne Vorgeschichte.\n\nDie Aussage ist wahr.",
+      "Stärkung der Wirtschaft und Verfestigung der Union nennt der Text als Zwecke. Die gemeinsame Währung ist damit politisch und ökonomisch begründet, nicht nur als bequemes Reisezahlungsmittel. Wer nur den Urlaubskurs sieht, unterschlägt diese Zielangabe.\n\nGemeinsames Geld soll Transaktionen im Raum erleichtern und den Zusammenschluss sichtbar machen. Der Lehrtext fasst das als Stärkung der Wirtschaft und Verfestigung der Union. Das ist die Motivlage der Einführung, unabhängig von späteren Wechselkursdebatten gegenüber Drittstaaten. Bargeld ab 2002 war dabei der sichtbare letzte Schritt, nicht das einzige Motiv.\n\nDie Aussage ist wahr.",
+      "Ohne Euroraum kein automatischer Euro als Inlandswährung in diesem Argument. Das Buch koppelt Österreichs Euro an die Mitgliedschaft. Die Behauptung, Österreich zahle in Euro, obwohl es nicht zum Euroraum gehöre, widerspricht genau diesem Kausalnexus.\n\nDie Aussage ist falsch.",
+      "Nicht jedes EU-Land gehört zum Euroraum. Der Text nennt später ausdrücklich Länder mit anderen gültigen Währungen, etwa schwedische Kronen. EU-Mitgliedschaft allein erzwingt also kein Euro-Bargeld im Inland. Die Gleichsetzung von EU und Euro-Bargeldpflicht ist zu weit.\n\nNote: Zahlen zum Umfang des Euro-Raums (Mitglieder, Nutzer) dienen der Einordnung und müssen nicht auswendig als Prüfungsstatistik sitzen. Entscheidend bleibt: Euro in Österreich wegen Euroraum, nicht wegen bloßer EU-Zugehörigkeit jedes Landes.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.13",
+    "title": "Fremdwährungen",
+    "context": "Bewerten Sie die folgenden Aussagen zu Fremdwährungen aus Sicht des Euroraums:",
+    "statements": [
+      "Aus Sicht des Euroraums sind schwedische Kronen, Schweizer Franken, japanische Yen und US-Dollar Fremdwährungen.",
+      "In anderen Ländern haben andere Währungen Gültigkeit.",
+      "Der US-Dollar ist in den Vereinigten Staaten Währung und aus österreichischer Sicht zugleich eine Fremdwährung.",
+      "Schweizer Franken gelten im Euroraum als Inlandswährung, weil sie in Europa verwendet werden.",
+      "Eine Währung hört auf, Währung zu sein, sobald sie aus österreichischer Sicht als Fremdwährung bezeichnet wird."
+    ],
+    "answer_key": [true, true, true, false, false],
+    "tactical_explanations": [
+      "Die Beispielreihe im Buch ist eindeutig: Kronen, Franken, Yen, Dollar sind aus Sicht des Euro-Raums Fremdwährungen. Sie sind dort Zahlungsmittel, wo der jeweilige Staat sie anerkennt, aber nicht die Inlandswährung Österreichs. Fremd meint die Perspektive, nicht die Untauglichkeit des Geldes an sich. Derselbe Franken ist in der Schweiz Währung und in Wien Fremdwährung, ohne seinen Charakter als Geld zu verlieren.\n\nDie Aussage ist wahr.",
+      "Gültigkeit folgt der staatlichen Anerkennung im jeweiligen Land. Andere Länder, andere Währungen. Der Euro gilt im Euroraum, nicht automatisch weltweit als einziges anerkanntes Zahlungsmittel. Der Satz hält diese territoriale Bindung fest.\n\nDie Aussage ist wahr.",
+      "Doppelrolle je nach Standort. In den USA ist der Dollar die anerkannte Währung. Steht man in Österreich, ist derselbe Dollar eine Fremdwährung. Beide Beschreibungen sind wahr, weil Währung und Fremdwährung perspektivenabhängig sind. Der Abschnitt arbeitet genau mit dieser Unterscheidung. Anerkennung im Ursprungsland und Fremdheit aus Euro-Sicht schließen einander nicht aus.\n\nDie Aussage ist wahr.",
+      "Europa ist keine Währungsgrenze im Sinn des Lehrtexts. Der Schweizer Franken ist aus Sicht des Euroraums eine Fremdwährung, auch wenn die Schweiz in Europa liegt. Inlandswährung Österreichs bzw. des Euroraums bleibt der Euro. Geografie ersetzt hier nicht die staatliche Anerkennung.\n\nLage auf dem Kontinent macht aus Franken keinen Euro. Der Text führt den Franken ausdrücklich als Fremdwährung an. Wer aus europäischer Nachbarschaft Inlandswährung folgert, verwechselt Kontinent und Währungsraum. Inlandswährung im Euroraum bleibt der Euro; der Franken bleibt aus dieser Sicht fremd, so nah die Grenze auch liegt.\n\nDie Aussage ist falsch.",
+      "Fremdwährung bleibt Währung, nur eben die eines anderen Landes. Der Dollar hört in den USA nicht auf, anerkanntes Zahlungsmittel zu sein, bloß weil Österreich ihn fremd nennt. Die Bezeichnung beschreibt die Sicht, sie löscht die Anerkennung im Ursprungsland nicht. Die Behauptung eines Statusverlusts ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.14",
+    "title": "Wechselkurs als Preis",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Wechselkurs:",
+    "statements": [
+      "Der Wechselkurs gibt an, wie viel man in einer Währung zahlen muss, um eine andere Währung zu bekommen.",
+      "Der Wechselkurs ist der Preis einer Währung, ausgedrückt in einer anderen Währung.",
+      "Wechselkurse können schwanken, genauso wie andere Preise.",
+      "Bedeutet der Kurs 1 Euro = 1,2 US-Dollar an einem bestimmten Tag, so kostet 1 Euro zu diesem Zeitpunkt 1,2 US-Dollar.",
+      "Wechselkurse sind gesetzlich für immer fest und können niemals schwanken."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Tausch von Währung gegen Währung hat einen Preis. Wie viele Franken für einen Euro, wie viele Dollar für einen Euro: Das ist der Wechselkurs. Man zahlt in einer Währung, um die andere zu erhalten. Der Abschnitt definiert den Kurs genau über diese Tauschrelation. Ohne diese Preisangabe bliebe der Umtausch ein unbestimmtes Tauschpaar wie Fleisch gegen Kleidung, nur eben zwischen zwei Geldsorten. Der Kurs macht aus diesem Paar einen Preis.\n\nDie Aussage ist wahr.",
+      "Preislogik auf Geld angewendet. Eine Währung, etwa der Euro, wird in Einheiten einer anderen, etwa des Dollars, bewertet. Der Wechselkurs ist dieser Preis. So fügt sich der Devisenmarkt in dieselbe Sprache wie andere Preise, auch wenn hier Geld gegen Geld getauscht wird. Weil Preise schwanken können, können auch Wechselkurse schwanken; der Text zieht diesen Vergleich ausdrücklich.\n\nDie Aussage ist wahr.",
+      "Schwanken können Kurse wie andere Preise auch. Steigt oder fällt das relative Angebot und die relative Nachfrage, ändert sich, wie viele Einheiten der einen Währung eine Einheit der anderen kostet. Starrheit ist nicht die Regel, die der Text beschreibt. Bewegung gehört zum Wechselkurs.\n\nDie Aussage ist wahr.",
+      "Das Zahlenbeispiel des Buchs ist wörtlich zu lesen. Am genannten Tag bekommt man für einen Euro 1,2 US-Dollar, oder anders: ein Euro kostet 1,2 Dollar. Es ist eine Momentaufnahme, kein ewiges Verhältnis. Die Lesart trifft die Mengennotierung, die der Text hier verwendet.\n\nDie Aussage ist wahr.",
+      "Niemals schwanken widerspricht dem Satz, Wechselkurse könnten schwanken wie andere Preise. Aus Schwankungen folgen Auf- und Abwertungen: Mehr oder weniger Dollar je Euro, mehr oder weniger Franken je Euro. Eine gesetzliche Ewigkeitsfixierung aller Kurse steht so nicht in diesem Abschnitt. Die Absolute ist falsch.\n\nKursschwankungen sind der Anlass für die späteren Beispiele mit Dollar und Franken. Wären Kurse ewig fest, gäbe es weder mehr Kaufkraft im Dollarland bei steigendem Euro noch weniger Kaufkraft in der Schweiz bei steigendem Franken. Die Behauptung der Unbeweglichkeit hebt genau diesen Mechanismus auf.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.15",
+    "title": "Valuten, Devisen und Kursrichtung",
+    "context": "Bewerten Sie die folgenden Aussagen zu Valutenkursen, Devisenkursen und Wechselkursschwankungen:",
+    "statements": [
+      "Für Bargeld sind Valutenkurse, ansonsten Devisenkurse anzuwenden.",
+      "Die Bank unterscheidet den Ankaufskurs, zu dem sie Fremdwährung ankauft, vom Verkaufskurs, zu dem sie Fremdwährung verkauft.",
+      "Steigt der Wert des Euro gegenüber dem Dollar, bekommt man für einen Euro mehr Dollar und kann sich in einem Dollarland mehr leisten.",
+      "Steigt der Wert des Schweizer Franken gegenüber dem Euro, muss man mehr Euro zahlen, um einen bestimmten Frankenbetrag zu kaufen, und Touristinnen und Touristen aus dem Euroraum können sich in der Schweiz weniger leisten.",
+      "Steigt der Franken gegenüber dem Euro, wird der Urlaub in der Schweiz für Euroraum-Reisende automatisch günstiger, weil mehr Euro denselben Frankenbetrag kaufen."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Zwei Märkte, zwei Kursarten. Wer Scheine und Münzen wechselt, hat es mit Valuten zu tun. Läuft der Tausch nicht über Bargeld, gelten Devisenkurse. Der Lehrtext verlangt, diese Unterscheidung zu beachten. Dieselbe Währungspaarung kann also je nach Form unterschiedliche Kurse tragen. Bargeld und Buchgeld bleiben Geldformen; Valuten und Devisen sind die dazu passenden Kursbezeichnungen beim Währungstausch.\n\nDie Aussage ist wahr.",
+      "Ankauf und Verkauf sind nicht derselbe Preis. Die Bank kauft Fremdwährung zu einem Kurs und verkauft sie zu einem anderen. Dazwischen liegt ihre Spanne. Wer wechselt, zahlt bzw. erhält nicht denselben Satz in beide Richtungen. Der Abschnitt macht genau diese Zweiseitigkeit sichtbar. Ein einziger „der Kurs“ ohne Richtung unterschlägt Ankaufskurs und Verkaufskurs.\n\nDie Aussage ist wahr.",
+      "Euro steigt, Dollar je Euro nimmt zu. Mit einem Euro erhält man mehr Dollar und kann im Dollarland mehr Güter kaufen, sofern die dortigen Preise nicht gegensätzlich wirken. Der Text führt diesen Fall ausdrücklich. Aufwertung der eigenen Währung erhöht hier die Kaufmöglichkeit im Ausland, das in Dollar preist.\n\nDie Aussage ist wahr.",
+      "Franken steigt gegenüber dem Euro: Für denselben Frankenbetrag braucht man mehr Euro. Die Reisenden aus dem Euroraum tauschen teurer und können sich in der Schweiz weniger leisten. Der Abschnitt schildert genau diese touristische Folge. Aufwertung der Fremdwährung drückt die Auslandskaufkraft der Euro-Halter.\n\nDie Aussage ist wahr.",
+      "Günstiger würde der Urlaub, wenn man für denselben Frankenbetrag weniger Euro bräuchte, also wenn der Euro gegenüber dem Franken stiege. Hier steigt aber der Franken. Mehr Euro für denselben Frankenbetrag heißt teurerer Tausch, nicht günstigerer. Die Richtung der Kaufkraft ist umgekehrt zur Behauptung.\n\nNote: Nicht verwechseln mit der Dollar-Szene. Steigt der Euro zum Dollar, steigt die Kaufkraft im Dollarland. Steigt der Franken zum Euro, sinkt die Kaufkraft in der Schweiz. Dieselbe Mechanik, andere Richtung je nachdem, welche Währung teurer wird.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.5",
+    "case_id": "WISO 1.5.16",
+    "title": "Außenwert und Notierung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Außenwert einer Währung sowie zu Mengen- und Preisnotierung:",
+    "statements": [
+      "Der Außenwert einer Währung, zum Beispiel des Euro, ist der Wechselkurs dieser Währung gegenüber einem Korb an ausländischen Währungen.",
+      "Beim Außenwert werden bilaterale Wechselkurse zu einem multilateralen Wechselkurs zusammengefasst, meist gewichtet nach dem Handelsvolumen mit dem inländischen Währungsraum.",
+      "Gemäß Mengennotierung aus Sicht des Euro gibt der Kurs an, wie viele Einheiten der ausländischen Währung man zahlen muss, um eine Einheit der inländischen Währung zu erhalten.",
+      "Gemäß Preisnotierung zeigt der Kurs, wie viele Einheiten der inländischen Währung man für eine Einheit der ausländischen Währung bekommt.",
+      "Mengennotierung und Preisnotierung sind identisch, und an der WU verwendet man der Einfachheit wegen nur die Preisnotierung."
+    ],
+    "answer_key": [true, true, true, true, false],
+    "tactical_explanations": [
+      "Nicht nur Dollar, nicht nur Franken: Der Außenwert bündelt den Euro gegenüber vielen ausländischen Währungen in einem Korb. Es ist ein Wechselkurs gegenüber diesem Korb, nicht gegenüber einer einzigen Notierung. Der bilaterale Kurs zu einer Währung bleibt daneben bestehen, erklärt aber nicht allein den Außenwert. Wer nur ein Währungspaar kennt, kennt einen Kurs, noch nicht den Außenwert im Sinn des Lehrtexts.\n\nDie Aussage ist wahr.",
+      "Viele bilaterale Kurse werden zu einem multilateralen Maß. Die Gewichtung folgt meist dem Handelsvolumen mit dem inländischen Währungsraum, also der wirtschaftlichen Nähe der Partner. Wichtige Handelspartner zählen im Korb stärker als randständige. So wird aus einem Bündel von Paarkursen ein einziger Außenwert.\n\nOhne Gewichtung wäre jeder Partner gleich laut, unabhängig vom Handelsgewicht. Der Text nennt die Gewichtung ausdrücklich, meist nach Handelsvolumen. Der multilaterale Kurs ist damit eine verdichtete Information, kein Ersatz für den einzelnen Tageskurs zum Franken oder Dollar.\n\nDie Aussage ist wahr.",
+      "Mengennotierung zählt fremde Einheiten je eigener Einheit. Aus Euro-Sicht: wie viele Dollar, Franken oder Kronen für einen Euro. Das Beispiel 1 Euro = 1,2 US-Dollar folgt dieser Konvention. Man sieht, wie viel ausländische Währung eine inländische Einheit „kauft“.\n\nDie Aussage ist wahr.",
+      "Preisnotierung dreht den Bruch um. Nun fragt man, wie viele Einheiten der inländischen Währung für eine Einheit der ausländischen nötig sind, also etwa Euro je Dollar. Es ist dieselbe Relation, nur invers gelesen. Der Text stellt beide Arten einander gegenüber und hält fest, dass Kurse auf zwei Arten angegeben werden können.\n\nDie Aussage ist wahr.",
+      "Identisch sind die Notierungen nicht, sie sind zwei Schreibweisen derselben Relation. An der WU verwendet man der Einfachheit wegen nur die Mengennotierung, nicht die Preisnotierung. Wer beide gleichsetzt und zugleich die WU-Konvention auf die Preisnotierung umbiegt, verfehlt beide Sätze des Abschnitts.\n\n1 Euro = 1,2 Dollar ist Mengennotierung: fremde Menge je Euro. Die Preisnotierung würde nach Euro je Dollar fragen. Einfachheit an der WU heißt: bei der Mengennotierung bleiben. Die behauptete Identität samt falscher WU-Wahl ist daher falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

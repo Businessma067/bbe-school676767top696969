@@ -1,0 +1,674 @@
+[
+  {
+    "title": "The Balance Sheet Equation",
+    "statements": [
+      "A pallet loader used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A pallet loader held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "A pallet loader kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "The same pallet loader must always be classified identically on every balance sheet regardless of how it is held.",
+      "The same pallet loader may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.001",
+    "context": "Analyze how the balance sheet equation requires total assets to equal the sum of total liabilities and total equity. Evaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Assets Equal Liabilities Plus Equity",
+    "statements": [
+      "Classifying a pallet loader as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "Classifying a pallet loader as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "A pallet loader acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "A pallet loader used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "Once a dealer sells a pallet loader from its stock, the buyer must continue to record it as inventory."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.002",
+    "context": "Review how owner's equity is derived as the residual claim remaining once liabilities are deducted from assets. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Owner's Equity as a Residual Claim",
+    "statements": [
+      "When a pallet loader is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "A pallet loader bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A pallet loader that a dealer displays for sale is not a fixed asset of that dealer.",
+      "An industrial dishwasher kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "An industrial dishwasher held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.003",
+    "context": "Analyze the distinction drawn between non-current assets and current assets based on expected holding period. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Non-Current Versus Current Assets",
+    "statements": [
+      "The same industrial dishwasher may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "An industrial dishwasher used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "An industrial dishwasher held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "The same industrial dishwasher must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying an industrial dishwasher as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.004",
+    "context": "Review why non-current assets are expected to deliver benefit to a business for more than one year. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Two-Year Balance Sheet Review 5",
+    "statements": [
+      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "Non-current liabilities amount to less than 56.8% of total equity in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 7.3% in Year 1.",
+      "Total equity grew by more than 24.5% between Year 1 and Year 2.",
+      "Total assets grew by more than 10% between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.005",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 381 | 403 |\n| Machinery | 266 | 298 |\n| Office equipment | 59 | 61 |\n| Patents, trademarks and licences | 34 | 34 |\n| Inventory | 254 | 288 |\n| Trade receivables | 84 | 86 |\n| Cash and cash equivalents | 103 | 109 |\n| Total assets | **1181** | **1279** |\n| **EQUITY** | | |\n| Share capital | 212 | 212 |\n| Retained earnings | 549 | 627 |\n| Total equity | **761** | **839** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 209 | 220 |\n| Bonds payable | 58 | 63 |\n| Trade payables | 99 | 101 |\n| Bank overdraft | 54 | 56 |\n| Total liabilities | **420** | **440** |\n| Total equity and liabilities | **1181** | **1279** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 6",
+    "statements": [
+      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Total equity grew by more than 10.4% between Year 1 and Year 2.",
+      "Total assets grew by more than 21.8% between Year 1 and Year 2.",
+      "Inventory grew by more than 21% between Year 1 and Year 2.",
+      "Trade payables grew by more than 25.4% between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.006",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 362 | 405 |\n| Machinery | 132 | 144 |\n| Office equipment | 45 | 52 |\n| Patents, trademarks and licences | 72 | 72 |\n| Inventory | 204 | 211 |\n| Trade receivables | 106 | 117 |\n| Cash and cash equivalents | 30 | 33 |\n| Total assets | **951** | **1034** |\n| **EQUITY** | | |\n| Share capital | 129 | 129 |\n| Retained earnings | 270 | 278 |\n| Total equity | **399** | **407** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 294 | 340 |\n| Bonds payable | 62 | 70 |\n| Trade payables | 149 | 160 |\n| Bank overdraft | 47 | 57 |\n| Total liabilities | **552** | **627** |\n| Total equity and liabilities | **951** | **1034** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 7",
+    "statements": [
+      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "The current ratio exceeds 1.54.",
+      "The current ratio is below 0.79.",
+      "Working capital of €124 thousand is positive on this balance sheet.",
+      "The equity ratio is below 41.5%."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.007",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 379 |\n| Machinery | 182 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 160 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 113 |\n| Total assets | **1019** |\n| **EQUITY** | |\n| Share capital | 280 |\n| Retained earnings | 196 |\n| Total equity | **476** |\n| **LIABILITIES** | |\n| Long-term bank loan | 269 |\n| Bonds payable | 46 |\n| Trade payables | 188 |\n| Bank overdraft | 40 |\n| Total liabilities | **543** |\n| Total equity and liabilities | **1019** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Defining Non-Current Assets",
+    "statements": [
+      "When an industrial dishwasher is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "An industrial dishwasher bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "Classifying an industrial dishwasher as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "An industrial dishwasher that a dealer displays for sale is not a fixed asset of that dealer.",
+      "An industrial dishwasher acquired for resale still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.008",
+    "context": "Analyze why current assets are expected to convert into cash within the normal operating cycle. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Liquidity From the Balance Sheet 9",
+    "statements": [
+      "Owner's equity is the portion of assets financed by bank loans and trade creditors.",
+      "The current ratio exceeds 1.47.",
+      "Working capital of €247 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.64 times over.",
+      "The current ratio is below 0.72."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.009",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 409 |\n| Machinery | 265 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 72 |\n| Inventory | 201 |\n| Trade receivables | 163 |\n| Cash and cash equivalents | 42 |\n| Total assets | **1192** |\n| **EQUITY** | |\n| Share capital | 183 |\n| Retained earnings | 444 |\n| Total equity | **627** |\n| **LIABILITIES** | |\n| Long-term bank loan | 328 |\n| Bonds payable | 78 |\n| Trade payables | 101 |\n| Bank overdraft | 58 |\n| Total liabilities | **565** |\n| Total equity and liabilities | **1192** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Defining Current Assets",
+    "statements": [
+      "An industrial dishwasher used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "Once a dealer sells an industrial dishwasher from its stock, the buyer must continue to record it as inventory.",
+      "A warehouse crane kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A warehouse crane used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A warehouse crane held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.010",
+    "context": "Review how tangible non-current assets differ from intangible non-current assets in physical form. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Two-Year Balance Sheet Review 11",
+    "statements": [
+      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2.",
+      "Total equity grew by more than 16.9% between Year 1 and Year 2.",
+      "Total assets grew by more than 16.5% between Year 1 and Year 2.",
+      "Inventory grew by more than 21.8% between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.011",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 400 | 402 |\n| Machinery | 268 | 276 |\n| Office equipment | 69 | 72 |\n| Patents, trademarks and licences | 54 | 54 |\n| Inventory | 147 | 152 |\n| Trade receivables | 144 | 160 |\n| Cash and cash equivalents | 112 | 131 |\n| Total assets | **1194** | **1247** |\n| **EQUITY** | | |\n| Share capital | 124 | 124 |\n| Retained earnings | 400 | 426 |\n| Total equity | **524** | **550** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 357 | 374 |\n| Bonds payable | 71 | 73 |\n| Trade payables | 165 | 163 |\n| Bank overdraft | 77 | 87 |\n| Total liabilities | **670** | **697** |\n| Total equity and liabilities | **1194** | **1247** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Tangible Non-Current Assets",
+    "statements": [
+      "A warehouse crane held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.",
+      "The same warehouse crane may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a warehouse crane as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "When a warehouse crane is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "The same warehouse crane must always be classified identically on every balance sheet regardless of how it is held."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.012",
+    "context": "Analyze how intangible assets qualify as non-current assets despite lacking physical substance. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Gearing From Comparative Figures 13",
+    "statements": [
+      "Owner's equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt.",
+      "Non-current liabilities amount to more than 102.9% of total equity in Year 1.",
+      "Non-current assets make up more than 66% of total assets in Year 2.",
+      "Total equity grew by more than 9.3% between Year 1 and Year 2.",
+      "Inventory grew by more than 16.8% between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.013",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 499 |\n| Machinery | 178 | 199 |\n| Office equipment | 36 | 39 |\n| Patents, trademarks and licences | 82 | 82 |\n| Inventory | 147 | 162 |\n| Trade receivables | 87 | 99 |\n| Cash and cash equivalents | 114 | 123 |\n| Total assets | **1115** | **1203** |\n| **EQUITY** | | |\n| Share capital | 232 | 232 |\n| Retained earnings | 119 | 149 |\n| Total equity | **351** | **381** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 395 | 432 |\n| Bonds payable | 84 | 88 |\n| Trade payables | 213 | 231 |\n| Bank overdraft | 72 | 71 |\n| Total liabilities | **764** | **822** |\n| Total equity and liabilities | **1115** | **1203** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Balance Sheet Structure Review 14",
+    "statements": [
+      "Profit for the year increases equity through retained earnings, while a loss decreases equity.",
+      "The current ratio exceeds 1.24.",
+      "Working capital of €223 thousand is positive on this balance sheet.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 0.82 times over.",
+      "The debt ratio exceeds 53%."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.014",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 202 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 228 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1127** |\n| **EQUITY** | |\n| Share capital | 129 |\n| Retained earnings | 400 |\n| Total equity | **529** |\n| **LIABILITIES** | |\n| Long-term bank loan | 342 |\n| Bonds payable | 75 |\n| Trade payables | 148 |\n| Bank overdraft | 33 |\n| Total liabilities | **598** |\n| Total equity and liabilities | **1127** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Intangible Non-Current Assets",
+    "statements": [
+      "Classifying a warehouse crane as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A warehouse crane acquired for resale still counts among non-current assets as long as it remains unsold for several months.",
+      "A warehouse crane used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "A warehouse crane bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A warehouse crane that a dealer displays for sale is not a fixed asset of that dealer."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.015",
+    "context": "Review how buildings, machinery and office equipment are classified as tangible non-current assets. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Licences as Intangible Assets",
+    "statements": [
+      "Once a dealer sells a warehouse crane from its stock, the buyer must continue to record it as inventory.",
+      "A delivery scooter kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A delivery scooter used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "A delivery scooter held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.",
+      "The same delivery scooter may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.016",
+    "context": "Analyze how inventory, trade receivables and cash are classified among current assets. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Balance Sheet Structure Review 17",
+    "statements": [
+      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
+      "The current ratio is below 0.76.",
+      "The current ratio exceeds 1.62.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.23 times over.",
+      "Working capital of €177 thousand is positive on this balance sheet."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.017",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 360 |\n| Machinery | 239 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 224 |\n| Trade receivables | 133 |\n| Cash and cash equivalents | 32 |\n| Total assets | **1119** |\n| **EQUITY** | |\n| Share capital | 143 |\n| Retained earnings | 397 |\n| Total equity | **540** |\n| **LIABILITIES** | |\n| Long-term bank loan | 302 |\n| Bonds payable | 65 |\n| Trade payables | 147 |\n| Bank overdraft | 65 |\n| Total liabilities | **579** |\n| Total equity and liabilities | **1119** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 18",
+    "statements": [
+      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
+      "Total equity grew by more than 9.8% between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 56.5% of total equity in Year 1.",
+      "Current liabilities are covered by current assets less than 1.83 times over in Year 2.",
+      "Trade payables of €188 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.018",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 302 | 329 |\n| Machinery | 234 | 230 |\n| Office equipment | 60 | 64 |\n| Patents, trademarks and licences | 28 | 28 |\n| Inventory | 189 | 205 |\n| Trade receivables | 138 | 135 |\n| Cash and cash equivalents | 55 | 60 |\n| Total assets | **1006** | **1051** |\n| **EQUITY** | | |\n| Share capital | 128 | 128 |\n| Retained earnings | 212 | 220 |\n| Total equity | **340** | **348** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 353 | 370 |\n| Bonds payable | 56 | 58 |\n| Trade payables | 178 | 188 |\n| Bank overdraft | 79 | 87 |\n| Total liabilities | **666** | **703** |\n| Total equity and liabilities | **1006** | **1051** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Gearing From Comparative Figures 19",
+    "statements": [
+      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "Non-current liabilities amount to more than 50.2% of total equity in Year 1.",
+      "Non-current liabilities amount to less than 107.9% of total equity in Year 2.",
+      "Non-current assets make up more than 61.1% of total assets in Year 2.",
+      "Current liabilities are covered by current assets less than 1.57 times over in Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.019",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 463 | 483 |\n| Machinery | 269 | 282 |\n| Office equipment | 39 | 42 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 212 | 239 |\n| Trade receivables | 109 | 131 |\n| Cash and cash equivalents | 78 | 77 |\n| Total assets | **1263** | **1347** |\n| **EQUITY** | | |\n| Share capital | 203 | 203 |\n| Retained earnings | 410 | 417 |\n| Total equity | **613** | **620** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 297 | 345 |\n| Bonds payable | 70 | 80 |\n| Trade payables | 204 | 216 |\n| Bank overdraft | 79 | 86 |\n| Total liabilities | **650** | **727** |\n| Total equity and liabilities | **1263** | **1347** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Balance Sheet Structure Review 20",
+    "statements": [
+      "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+      "The current ratio is below 0.93.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.24 times over.",
+      "The equity ratio is below 33.7%.",
+      "The debt ratio exceeds 47.8%."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.020",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Trading Rights on the Balance Sheet",
+    "statements": [
+      "Classifying a delivery scooter as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "A delivery scooter held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "The same delivery scooter must always be classified identically on every balance sheet regardless of how it is held.",
+      "Classifying a delivery scooter as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A delivery scooter acquired for resale still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.021",
+    "context": "Review why an identical physical item can be a non-current asset for one holder and inventory for another. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 22",
+    "statements": [
+      "A high equity ratio indicates that a larger portion of assets was financed by the company's own resources rather than by creditors.",
+      "The current ratio exceeds 1.41.",
+      "The current ratio is below 0.95.",
+      "The equity ratio is below 26.9%.",
+      "Working capital of €215 thousand is positive on this balance sheet."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.022",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 450 |\n| Machinery | 186 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 46 |\n| Inventory | 164 |\n| Trade receivables | 127 |\n| Cash and cash equivalents | 30 |\n| Total assets | **1046** |\n| **EQUITY** | |\n| Share capital | 169 |\n| Retained earnings | 368 |\n| Total equity | **537** |\n| **LIABILITIES** | |\n| Long-term bank loan | 320 |\n| Bonds payable | 83 |\n| Trade payables | 65 |\n| Bank overdraft | 41 |\n| Total liabilities | **509** |\n| Total equity and liabilities | **1046** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Buildings and Machinery as Fixed Assets",
+    "statements": [
+      "When a delivery scooter is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "A delivery scooter bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A delivery scooter that a dealer displays for sale is not a fixed asset of that dealer.",
+      "A packaging line kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A packaging line held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.023",
+    "context": "Analyze how intended use rather than resale intent determines an asset's balance sheet classification. Evaluate the following economic assertions:\n",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Office Equipment as a Fixed Asset",
+    "statements": [
+      "A delivery scooter used daily in a business's own operations should be recorded as inventory because it wears out over time.",
+      "The same packaging line may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Once a dealer sells a delivery scooter from its stock, the buyer must continue to record it as inventory.",
+      "A packaging line used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+      "Classifying a packaging line as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.024",
+    "context": "Review the distinction between current liabilities and non-current liabilities based on settlement timing. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Gearing From Comparative Figures 25",
+    "statements": [
+      "Long-term assets should preferably be financed only with short-term trade credit.",
+      "Total equity grew by more than 24.7% between Year 1 and Year 2.",
+      "The equity ratio improved by more than 2.4 percentage points between Year 1 and Year 2.",
+      "Non-current liabilities amount to more than 73.2% of total equity in Year 1.",
+      "Working capital more than doubled between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.025",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 336 | 384 |\n| Machinery | 136 | 161 |\n| Office equipment | 74 | 86 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 131 | 147 |\n| Trade receivables | 109 | 128 |\n| Cash and cash equivalents | 57 | 71 |\n| Total assets | **867** | **1001** |\n| **EQUITY** | | |\n| Share capital | 152 | 152 |\n| Retained earnings | 50 | 108 |\n| Total equity | **202** | **260** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 324 | 372 |\n| Bonds payable | 68 | 76 |\n| Trade payables | 205 | 215 |\n| Bank overdraft | 68 | 78 |\n| Total liabilities | **665** | **741** |\n| Total equity and liabilities | **867** | **1001** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Equipment for Use Versus Resale",
+    "statements": [
+      "When a packaging line is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "A packaging line bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A packaging line that a dealer displays for sale is not a fixed asset of that dealer.",
+      "A concrete mixer kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A concrete mixer held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.026",
+    "context": "Analyze why amounts owed to suppliers are classified as a current liability. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Comparative Balance Sheet Analysis 27",
+    "statements": [
+      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
+      "Non-current liabilities amount to less than 113.9% of total equity in Year 2.",
+      "The combined total of equity and non-current liabilities exceeds non-current assets by more than 21.9% in Year 1.",
+      "Trade payables of €82 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+      "Total liabilities grew by more than 9% between Year 1 and Year 2."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.027",
+    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 465 | 511 |\n| Machinery | 277 | 301 |\n| Office equipment | 62 | 69 |\n| Patents, trademarks and licences | 78 | 78 |\n| Inventory | 271 | 306 |\n| Trade receivables | 80 | 85 |\n| Cash and cash equivalents | 49 | 52 |\n| Total assets | **1282** | **1402** |\n| **EQUITY** | | |\n| Share capital | 196 | 196 |\n| Retained earnings | 510 | 574 |\n| Total equity | **706** | **770** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 366 | 404 |\n| Bonds payable | 56 | 60 |\n| Trade payables | 72 | 82 |\n| Bank overdraft | 82 | 86 |\n| Total liabilities | **576** | **632** |\n| Total equity and liabilities | **1282** | **1402** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Inventory as a Current Asset",
+    "statements": [
+      "The same concrete mixer may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale.",
+      "Classifying a concrete mixer as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "A packaging line held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+      "When a concrete mixer is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "A concrete mixer bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.028",
+    "context": "Review why long-term bank loans and corporate bonds are classified as non-current liabilities. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Trade Receivables Explained",
+    "statements": [
+      "A concrete mixer that a dealer displays for sale is not a fixed asset of that dealer.",
+      "A laptop computer kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+      "A laptop computer held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset.",
+      "The same packaging line must always be classified identically on every balance sheet regardless of how it is held.",
+      "The same laptop computer may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.029",
+    "context": "Analyze how the equity ratio expresses total equity as a proportion of total assets. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Liquidity From the Balance Sheet 30",
+    "statements": [
+      "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
+      "The current ratio exceeds 1.31.",
+      "Working capital of €117 thousand is positive on this balance sheet.",
+      "The equity ratio is below 42.8%.",
+      "Inventory make up more than 55.4% of current assets."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.030",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | **977** |\n| **EQUITY** | |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | **339** |\n| **LIABILITIES** | |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | **638** |\n| Total equity and liabilities | **977** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Asset Composition Chart 31",
+    "statements": [
+      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.26 times over.",
+      "The equity ratio is below 25.8%.",
+      "The debt ratio exceeds 77.4%.",
+      "Buildings make up more than 57.9% of total assets."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.031",
+    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 309 |\n| Machinery | 279 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 130 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 99 |\n| Total assets | **966** |\n| **EQUITY** | |\n| Share capital | 245 |\n| Retained earnings | 204 |\n| Total equity | **449** |\n| **LIABILITIES** | |\n| Long-term bank loan | 196 |\n| Bonds payable | 60 |\n| Trade payables | 174 |\n| Bank overdraft | 87 |\n| Total liabilities | **517** |\n| Total equity and liabilities | **966** |\n\nEvaluate the following economic assertions:\n",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Cash and Cash Equivalents",
+    "statements": [
+      "Classifying a laptop computer as a non-current asset depends on management's intention to use it in operations rather than to sell it quickly.",
+      "When a laptop computer is acquired to be resold rather than used, it belongs among current assets as inventory.",
+      "Classifying a packaging line as a non-current asset depends mainly on its purchase price rather than on management's intended use.",
+      "A laptop computer bought by a business to support its own daily operations is a tangible fixed asset because it delivers benefit across several accounting periods.",
+      "A packaging line acquired for resale still counts among non-current assets as long as it remains unsold for several months."
+    ],
+    "subsection": "6.1",
+    "case_id": "CASE 6.1.032",
+    "context": "Review why a higher equity ratio indicates greater financial independence from creditors. Evaluate the following economic assertions:\n",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Three-sector Model Basics",
+    "statements": [
+      "Mining ore is primary-sector activity while smelting metal ingots is secondary.",
+      "The tertiary sector comprises services such as banking, insurance, and coaching.",
+      "The primary sector covers farming, fishing, mining, and forestry extracting raw materials.",
+      "Banking and insurance belong to the primary sector because they are basic needs.",
+      "The secondary sector delivers banking and insurance services to households."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.01",
+    "context": "Review the primary, secondary, and tertiary sectors as stages from extraction through manufacturing to services. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Tyrolean Ski Resort Services",
+    "statements": [
+      "Selling lift passes and ski instruction are tertiary services.",
+      "Instructors supply capital because they teach on mountain slopes.",
+      "Manufacturing skis on site would remain tertiary because guests consume the experience.",
+      "Guest services at a ski resort are primary extraction because snow is natural.",
+      "The resort belongs to the primary sector because it operates on a mountainside."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.02",
+    "context": "Consider a Tyrolean ski resort hires instructors and sells lift passes to local visitors. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Primary Sector Activities",
+    "statements": [
+      "A coal mine extracting ore belongs to the primary sector.",
+      "An olive farm harvesting and pressing oil performs primary agricultural activity.",
+      "Forestry concessions supplying logs to mills belong to the primary sector.",
+      "Milling logs into export boards at a timber mill is secondary manufacturing.",
+      "Commercial fishing that lands herring for sale is primary-sector extraction."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.03",
+    "context": "Analyze classification of primary-sector activity. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Secondary Manufacturing",
+    "statements": [
+      "Retail sale of finished jackets is tertiary distribution or trade.",
+      "Warehousing steel before welding is a tertiary logistics service.",
+      "A car plant assembling vehicles operates in the tertiary sector because it serves customers.",
+      "A fashion label sewing jackets performs tertiary retail because jackets are sold later.",
+      "Smelters shaping metal remain primary because ore originates underground."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.04",
+    "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Flood Rebuild and GDP",
+    "statements": [
+      "Measured GDP can rise after ecological disasters that require infrastructure repair.",
+      "Construction spending on bridge rebuilds is included in GDP measurement.",
+      "Rebuild spending can raise measured GDP while citizen wellbeing falls.",
+      "GDP reflects monetary value of final goods and services produced within national borders.",
+      "Rebuild activity proves GDP always equals citizen wellbeing after disasters."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.05",
+    "context": "Consider how, after floods a municipality rebuilds bridges and the spending enters national accounts. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Tertiary Services Scope",
+    "statements": [
+      "Banking branches providing loans perform tertiary financial services.",
+      "Remote coaching sessions sold to foreign clients are tertiary services.",
+      "Smelting metal ingots from ore on site is secondary manufacturing.",
+      "Software helpdesks troubleshooting home networks provide tertiary services.",
+      "Insurance cooperatives processing claims provide primary extraction services."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.06",
+    "context": "Review the scope of tertiary-sector services. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Emerging Economy Sector Mix",
+    "statements": [
+      "Heavy farming employment in less developed countries signals primary-sector dominance.",
+      "Primary-sector share typically shrinks as economic development advances.",
+      "Emerging economies show smaller primary shares than advanced EU states.",
+      "Emerging economies typically report tertiary output above seventy percent of GDP.",
+      "Advanced services above seventy percent of output characterises most emerging economies."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.07",
+    "context": "Analyze sector patterns in emerging economies. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Olive Farm and Factory Order",
+    "statements": [
+      "Fabricating electronic components transforms materials and therefore belongs to secondary manufacturing.",
+      "The farm is secondary because bottled oil is a processed product.",
+      "Both activities belong to the tertiary sector because each sells to customers.",
+      "Fabricating components from materials is tertiary because parts go to other businesses.",
+      "Harvesting and pressing olives on the farm is tertiary because oil is sold to customers."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.08",
+    "context": "Consider a farm selling olive oil while a factory fills an industrial production order. Evaluate the following economic assertions:",
+    "difficulty_level": "1/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Developed EU Tertiary Share",
+    "statements": [
+      "Advanced EU economies are service-dominated despite the importance of food production.",
+      "In highly developed EU economies the tertiary sector often exceeds seventy percent of output.",
+      "Higher GDP per capita in EU member states links to high living standards in the model.",
+      "A seventy percent-plus service share reflects primary dominance in advanced economies.",
+      "Developed EU states keep primary output above seventy percent because food is essential."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.09",
+    "context": "Review tertiary dominance in advanced European economies. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Gross Domestic Product Definition",
+    "statements": [
+      "GDP counts final goods and services rather than intermediate goods sold between factories.",
+      "GDP is usually calculated for final production within one year inside national borders.",
+      "GDP totals the monetary value of final goods and services produced within a country's borders.",
+      "GDP measures production within borders regardless of firm nationality.",
+      "Final services such as insurance produced domestically enter GDP totals."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.10",
+    "context": "Review the definition of gross domestic product as a measure of overall economic activity within a country. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "EU Services at Seventy-four Percent",
+    "statements": [
+      "Service share alone does not prove every component of GDP is environmentally sustainable.",
+      "Seventy-four percent services indicates tertiary dominance rather than primary leadership.",
+      "Such a share is typical for economically advanced EU countries.",
+      "Seventy-four percent service share fits a highly developed EU economy pattern.",
+      "That pattern reflects rising relative importance of tertiary activity with development."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.11",
+    "context": "Consider a GDP report for an EU member state shows services at seventy-four percent of total output. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "GDP Growth Measure",
+    "statements": [
+      "GDP growth compares inflation-adjusted GDP across years.",
+      "Real GDP per capita can rise after stripping out inflation from nominal figures.",
+      "Real GDP strips price changes to compare volume of production over time.",
+      "Nominal GDP increases always equal real economic growth.",
+      "Ignoring inflation never affects growth comparisons between years."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.12",
+    "context": "Analyze how GDP growth is assessed over time. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Remote Coaching Abroad",
+    "statements": [
+      "Remote delivery to foreign clients keeps the activity tertiary.",
+      "Exporting advice does not convert coaching into secondary manufacturing.",
+      "Remote coaching is primary because trainers work from home offices.",
+      "Because no goods cross borders, the activity cannot be counted in GDP.",
+      "Selling coaching sessions is primary extraction because trainers work from home offices."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.13",
+    "context": "Consider an Estonian coach delivers remote training sessions to clients in other countries. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Coal Mine and Car Plant Quarter",
+    "statements": [
+      "Coal extraction at the mine is primary-sector activity.",
+      "Vehicle assembly at the car plant is secondary manufacturing.",
+      "Steel inputs from mining do not make vehicle assembly primary activity.",
+      "Office staff at a mine or plant do not reclassify core production into tertiary services.",
+      "Both plants belong to the tertiary sector because they employ office staff."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.14",
+    "context": "Consider a Romanian coal mine and a Graz car plant report output in the same quarter. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "GDP Income Coverage Critique",
+    "statements": [
+      "GDP omission of some income sources is one reason its use is debated.",
+      "Every barter transaction is always fully recorded in official GDP.",
+      "Unpaid home maintenance done by owners is always included in GDP.",
+      "GDP fully captures household volunteering and unpaid care in its totals.",
+      "Household volunteering and unpaid care are always counted in official GDP totals."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.15",
+    "context": "Review criticisms that GDP misses some income. Evaluate the following economic assertions:",
+    "difficulty_level": "1/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Insurance Branch and Wheat Farm",
+    "statements": [
+      "Farm output and insurance services can coexist as primary and tertiary activity.",
+      "Both operations are tertiary because each serves customers.",
+      "Claims handling at the insurance branch is primary because policies cover basic risks.",
+      "Harvesting wheat is secondary manufacturing because flour milling follows.",
+      "Wheat farming is secondary because grain is processed into flour elsewhere."
+    ],
+    "subsection": "3.2",
+    "case_id": "CASE 3.2.16",
+    "context": "Consider an insurance cooperative processes claims while a nearby farm harvests wheat. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+]

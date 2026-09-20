@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.01",
+    "title": "Historische Kopplung von Wachstum und Umwelt",
+    "context": "Bewerten Sie die folgenden Aussagen zur Kopplung von Wirtschaftswachstum und ökologischer Belastung:",
+    "statements": [
+      "In der Vergangenheit war Wirtschaftswachstum, gemessen am Bruttoinlandsprodukt oder am Einkommen, eng mit einem steigenden Verbrauch von Energie, Rohstoffen und Flächen sowie mit wachsenden Emissionen verbunden.",
+      "Diese Kopplung führte zu einem stetig zunehmenden ökologischen Fußabdruck, der wesentlich zum Überschreiten mehrerer planetarer Grenzen beiträgt.",
+      "Historisch sanken Energieverbrauch und Emissionen automatisch, sobald das BIP stieg.",
+      "Ein zentrales Ziel nachhaltiger Wirtschaftspolitik besteht darin, den Zusammenhang zwischen wirtschaftlichem Erfolg und ökologischer Belastung zu lockern.",
+      "Der ökologische Fußabdruck aus dieser Kopplung trägt laut Abschnitt nichts zum Überschreiten planetarer Grenzen bei."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Lange Zeit liefen Energieverbrauch, Rohstoffeinsatz, Flächennutzung und Emissionen mit dem wirtschaftlichen Erfolg mit. Der Erfolg wurde am Bruttoinlandsprodukt oder am Einkommen gemessen. Der Abschnitt beschreibt genau diese enge historische Kopplung, nicht eine lockere Nebenbeziehung. Wer Wachstum als ökologisch neutral erzählt, unterschlägt den Mitlauf von Verbrauch und Ausstoß. Erst vor diesem Hintergrund wird verständlich, warum später von Entkopplung die Rede ist: zuerst war die Last an den Erfolg gebunden. Wer nur das heutige Plus im BIP sieht, übersieht, dass Flächen, Energie und Rohstoffe in derselben Bewegung mitwuchsen.\n\nDie Aussage ist wahr.",
+      "Der ökologische Fußabdruck wuchs in dieser Geschichte nicht zufällig, sondern als Folge der Kopplung. Der Text verbindet den stetig zunehmenden Fußabdruck ausdrücklich mit dem Überschreiten mehrerer planetarer Grenzen. Es geht nicht um eine bloß lokale Verschmutzung ohne Systembezug. Die stetige Zunahme ist der empirische Befund der Vergangenheit in diesem Abschnitt. Ohne diesen Beitrag zur Grenzverletzung gäbe es wenig Grund, den Zusammenhang zwischen Erfolg und Belastung zu lockern.\n\nDie Aussage ist wahr.",
+      "Automatisch sinkende Emissionen bei höherem BIP kennt der historische Befund nicht. Im Gegenteil: Wachstum war eng mit steigendem Verbrauch und wachsenden Emissionen verbunden. Eine Automatik, die den Ausstoß von selbst senkt, wäre bereits Entkopplung, und genau die fehlte in der beschriebenen Vergangenheit. Der Satz verdreht die Ausgangslage und macht aus der Kopplung eine Entlastung, die der Text nicht behauptet.\n\nDie Aussage ist falsch.",
+      "Ein zentrales Ziel nachhaltiger Wirtschaftspolitik ist die Lockerung des Zusammenhangs zwischen wirtschaftlichem Erfolg und ökologischer Belastung. Das steht am Anfang des Abschnitts und gibt die Richtung vor. Lockerung heißt nicht, Erfolg aufzugeben, sondern die ökologische Last vom Erfolg zu trennen. Genau dieses Ziel begründet später die Unterscheidung von relativer und absoluter Entkopplung. Die Aussage gibt den ersten Satz des Kapitels sachlich wieder.\n\nDie Aussage ist wahr.",
+      "Mehrere planetare Grenzen gelten im Text nicht als unberührt vom Fußabdruck. Die Kopplung trägt wesentlich zum Überschreiten mehrerer Grenzen bei. Wer den Beitrag auf null setzt, streicht die Begründung, warum Entkopplung nötig ist. Der Abschnitt sagt das Gegenteil: der wachsende Fußabdruck ist Teil der Grenzverletzung, nicht ein belangloses Nebenprodukt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.02",
+    "title": "Wachstumsdilemma der Politik",
+    "context": "Bewerten Sie die folgenden Aussagen zum politischen Dilemma zwischen Wachstum und ökologischer Stabilität:",
+    "statements": [
+      "Viele gesellschaftliche Ziele, etwa Beschäftigung, Einkommenssicherung und soziale Stabilität, sind traditionell mit Wirtschaftswachstum verknüpft.",
+      "Die Politik steht vor keinem Dilemma, weil Wachstum die ökologische Stabilität stets stärkt.",
+      "Einerseits ist Wachstum notwendig, um Armut zu verringern und öffentliche Güter zu finanzieren.",
+      "Andererseits bedroht die mit Wachstum verbundene Ressourcen- und Energieintensität die ökologische Stabilität.",
+      "Der Abschnitt erklärt Wachstum für die Armutsverringerung und die Finanzierung öffentlicher Güter für überflüssig."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Beschäftigung, Einkommenssicherung und soziale Stabilität hängen in der Darstellung traditionell am Wachstum. Deshalb kann Politik Wachstum nicht einfach als ökologisches Problem abhaken, ohne gesellschaftliche Ziele mitzudenken. Der Abschnitt nennt genau diese Verknüpfung als Ausgangspunkt des Dilemmas. Wer nur Emissionen zählt und Jobs ausblendet, unterschlägt die eine Seite der Spannung. Die Aufzählung ist im Text ausdrücklich, nicht als freie Interpretation.\n\nDie Aussage ist wahr.",
+      "Kein politisches Dilemma gäbe es nur dann, wenn Wachstum ökologische Stabilität immer mitlieferte. Der Text sagt das Gegenteil: die Politik steht vor einem Dilemma, weil Wachstum für Armut und öffentliche Güter gebraucht wird und zugleich über Ressourcen- und Energieintensität die ökologische Stabilität bedroht. Die Absolute „stets stärkt“ löst die Spannung auf, die der Abschnitt gerade aufmacht. Ohne Zielkonflikt bräuchte es keine Entkopplung als Ausweg. Genau deshalb braucht der Abschnitt Entkopplung als Ausweg statt eines einfachen Ja oder Nein zum Wachstum.\n\nDie Aussage ist falsch.",
+      "Armut zu verringern und öffentliche Güter zu finanzieren, nennt der Text als Gründe, warum Wachstum andererseits notwendig bleibt. Das ist die soziale und fiskalische Seite des Dilemmas. Wer diese Notwendigkeit streicht, macht aus Entkopplung eine bloße Wachstumsverweigerung. Der Abschnitt hält beides fest: Bedarf an Wachstum und ökologische Bedrohung. Die Aussage trifft die erste Hälfte dieser Doppelung.\n\nDie Aussage ist wahr.",
+      "Die mit Wachstum verbundene Ressourcen- und Energieintensität bedroht die ökologische Stabilität. Das ist die zweite Hälfte des Dilemmas, nicht eine Randbemerkung. Intensität heißt: mehr Wirtschaftstätigkeit zieht in der beschriebenen Tradition mehr Stoff- und Energieeinsatz nach sich. Genau deshalb reicht es nicht, Wachstum nur als Beschäftigungsprogramm zu lesen. Die ökologische Seite bleibt im selben Absatz stehen.\n\nDie Aussage ist wahr.",
+      "Ohne Wachstum käme die Armutsbekämpfung im Text nicht als erledigt vor. Der Abschnitt nennt Wachstum ausdrücklich als notwendig, um Armut zu verringern und öffentliche Güter zu finanzieren. Überflüssig wäre das genaue Gegenteil dieser Formulierung. Die Politik hat deshalb nicht die einfache Option, Wachstum ersatzlos zu streichen, ohne jene Ziele zu verlieren. Die Aussage verdreht die Notwendigkeit in Entbehrlichkeit.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.03",
+    "title": "Begriff der Entkopplung",
+    "context": "Bewerten Sie die folgenden Aussagen zum Begriff der Entkopplung:",
+    "statements": [
+      "Eine Entkopplung bezeichnet den Prozess, bei dem sich wirtschaftliche Entwicklung und Umweltschäden voneinander lösen.",
+      "Ziel ist es, Wohlstand, Beschäftigung und Lebensqualität zu sichern, ohne dass Ressourcenverbrauch oder Emissionen weiter steigen.",
+      "Entkopplung bedeutet im Lehrtext, sämtliche wirtschaftliche Aktivität einzustellen.",
+      "Entkopplung ist wünschenswert, weil sie das gesellschaftliche Wohlergehen mit ökologischer Tragfähigkeit verbindet.",
+      "Ziel der Entkopplung ist es, ökonomische Aktivität außerhalb der Erdsystemgrenzen fortzuführen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wirtschaftliche Entwicklung und Umweltschäden sollen sich voneinander lösen. Genau das nennt der Abschnitt Entkopplung, mit dem englischen Wort decoupling in Klammern. Es ist ein Prozess, kein einmaliger Schalter. Die Lösung der beiden Größen ist der Kern, nicht die Abschaffung einer der beiden. Wer Entkopplung mit Stillstand verwechselt, verfehlt diese Definition.\n\nDie Aussage ist wahr.",
+      "Wohlstand, Beschäftigung und Lebensqualität sollen gesichert werden, während Ressourcenverbrauch oder Emissionen nicht weiter steigen. Das Ziel trennt also soziale und ökonomische Erfolge von einem weiteren Anstieg der Last. Ohne diese Zielangabe wäre Entkopplung nur ein statistischer Fachausdruck. Der Text macht daraus eine politische Richtung: halten, was Gesellschaft braucht, ohne den Stoffumsatz weiter nach oben zu treiben. Steigender Wohlstand bei weiter steigendem Ausstoß wäre die alte Kopplung unter neuem Namen, nicht das genannte Ziel. Genau so trennt der Abschnitt Sicherung von weiterem Anstieg der Last.\n\nDie Aussage ist wahr.",
+      "Sämtliche ökonomische Aktivität einzustellen, wäre Stilllegung, nicht Entkopplung. Der Prozess soll Entwicklung und Schäden voneinander lösen, nicht die Entwicklung beenden. Wohlstand und Beschäftigung bleiben ausdrücklich im Ziel. Wer den Begriff als Stopp der Wirtschaft liest, verdreht die Definition in ihr Gegenteil. Der Abschnitt sucht eine Lösung innerhalb der Wirtschaft, nicht deren Abbruch.\n\nDie Aussage ist falsch.",
+      "Gesellschaftliches Wohlergehen und ökologische Tragfähigkeit sollen verbunden werden. Deshalb gilt Entkopplung als wünschenswert. Die Verbindung ermöglicht, ökonomische Aktivität innerhalb der Erdsystemgrenzen fortzuführen. Ohne diese Brücke stünden Wohlergehen und Tragfähigkeit als Rivalen da. Der Text fasst Entkopplung als die Brücke, nicht als Verzicht auf eines der beiden Ziele.\n\nDie Aussage ist wahr.",
+      "Außerhalb der Erdsystemgrenzen weiterzuwirtschaften, ist nicht das Ziel. Der Abschnitt sagt ausdrücklich: ökonomische Aktivität innerhalb der Erdsystemgrenzen fortführen. Außerhalb wäre die Fortsetzung der Kopplung, die bereits Grenzen überschreitet. Die Präposition entscheidet über den Sinn der Strategie. Die Aussage kehrt innen und außen um.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.04",
+    "title": "Relative Entkopplung am Zahlenbeispiel",
+    "context": "Bewerten Sie die folgenden Aussagen zur relativen Entkopplung:",
+    "statements": [
+      "Relative Entkopplung liegt vor, wenn die Umweltschäden langsamer zunehmen als die Wirtschaftsleistung.",
+      "Ein Land, dessen BIP um 3 Prozent steigt, während die CO2-Emissionen nur um 1 Prozent steigen, illustriert relative Entkopplung.",
+      "Bei relativer Entkopplung sinkt die Umweltbelastung bereits insgesamt, während das BIP wächst.",
+      "Emissionen oder Ressourcenverbrauch steigen bei relativer Entkopplung noch, aber weniger stark als das BIP.",
+      "Relative Entkopplung liegt vor, wenn das BIP fällt und die Emissionen noch stärker fallen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Langsamer zunehmen als die Wirtschaftsleistung: das ist die Definition relativer Entkopplung. Die Last wächst weiter, nur nicht im selben Tempo wie das BIP. Wer „langsamer“ mit „sinken“ verwechselt, rutscht in die absolute Form. Der Abschnitt trennt die beiden Formen gerade über diese Richtung: noch steigend, aber hinter dem BIP zurückbleibend. Die Aussage gibt die erste Form korrekt wieder. Das BIP-Beispiel mit plus drei und plus eins Prozent macht denselben Punkt rechnerisch sichtbar: beide Größen positiv, die Last nur langsamer. Relative Entkopplung ist also gebremstes Wachstum der Schäden, kein Rückgang.\n\nDie Aussage ist wahr.",
+      "Drei Prozent BIP gegen ein Prozent CO2: die Emissionen steigen, das BIP steigt stärker. Die Differenz der Wachstumsraten zeigt die relative Lockerung. Rechnung: Emissionen +1, Wirtschaftsleistung +3, also Lastzuwachs kleiner als Leistungszuwachs. Die Umweltbelastung wächst weiter, jedoch in geringerem Tempo. Genau dieses Zahlenpaar steht im Text als Beispiel, nicht als absolute Entlastung. Würden die Emissionen bereits fallen, wäre dasselbe Zahlenpaar keine relative, sondern eine absolute Entkopplung.\n\nDie Aussage ist wahr.",
+      "Insgesamt sinkende Umweltbelastung bei wachsendem BIP ist die Definition der absoluten Entkopplung, nicht der relativen. Relativ heißt: Schäden nehmen noch zu, nur langsamer als die Leistung. Wer bereits ein Absinken unterstellt, vertauscht die beiden Formen. Das Beispiel mit plus 1 Prozent Emissionen macht das sichtbar: plus ist kein Minus. Die Aussage schiebt die zweite Form in die erste.\n\nDie Aussage ist falsch.",
+      "Noch steigende Emissionen oder noch steigender Ressourcenverbrauch, aber schwächer als das BIP: das wiederholt die Definition in der Sprache des Abschnitts. Die Umweltbelastung wächst weiter, jedoch in geringerem Tempo. Ohne das „noch“ wäre die Form bereits absolut. Der Satz hält die Richtung des Umweltindikators fest, die das relative Muster ausmacht, und trennt sie klar vom späteren Absinken.\n\nDie Aussage ist wahr.",
+      "Fallendes BIP plus noch stärker fallende Emissionen beschreibt der Text nicht als relative Entkopplung. Relativ knüpft an wachsende Wirtschaftsleistung bei langsamer steigender Last. Ein Schrumpfungsszenario mit stärkerem Emissionsrückgang wäre eine andere Konstellation. Die Definition im Abschnitt braucht den Vergleich steigender Last gegen steigendes BIP. Die Aussage vertauscht Vorzeichen und Begriff.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.05",
+    "title": "Absolute Entkopplung am Zahlenbeispiel",
+    "context": "Bewerten Sie die folgenden Aussagen zur absoluten Entkopplung:",
+    "statements": [
+      "Absolute Entkopplung bedeutet, dass die Umweltbelastung insgesamt sinkt, während die Wirtschaftsleistung weiter zunimmt.",
+      "Steigt das BIP um 3 Prozent und sinken die CO2-Emissionen um 4 Prozent, liegt absolute Entkopplung vor.",
+      "Absolute Entkopplung verlangt, dass das BIP fällt, damit Emissionen fallen können.",
+      "Nur absolute Entkopplung gewährleistet, dass wirtschaftliche Entwicklung nicht länger auf Kosten ökologischer Stabilität erfolgt.",
+      "Steigt das BIP um 3 Prozent und steigen die Emissionen um 1 Prozent, ist das bereits absolute Entkopplung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Insgesamt sinkende Umweltbelastung bei weiter zunehmender Wirtschaftsleistung: das ist die zweite Grundform. Die Richtung der Last kehrt sich um, während die Leistung wächst. Genau das trennt absolut von relativ, wo die Last noch steigt. Der Abschnitt setzt diese Umkehr als Bedingung, nicht als Wunschformel ohne Vorzeichen. Die Aussage trifft die Definition wortgetreu. Relativ bleibt die Last positiv im Vorzeichen; absolut wird sie negativ, während das BIP positiv bleibt. Diese Vorzeichenregel ist die ganze Unterscheidung. Ohne diese Umkehr bleibt Entwicklung ökologisch teuer, auch wenn das Tempo nachlässt.\n\nDie Aussage ist wahr.",
+      "Plus 3 Prozent BIP und minus 4 Prozent CO2: die Leistung wächst, die Last fällt. Rechnung: Vorzeichen der Emissionen negativ, Vorzeichen des BIP positiv. Das ist das Lehrbuchbeispiel für absolute Entkopplung. Wer nur die 3 Prozent sieht und die 4 Prozent ignoriert, verfehlt den Punkt. Die Differenz ist hier nicht bloß ein langsameres Plus, sondern ein Minus der Umweltgröße. Minus vier Prozent Emissionen bei plus drei Prozent Leistung ist kein langsameres Plus, sondern ein Richtungswechsel der Umweltgröße.\n\nDie Aussage ist wahr.",
+      "Fallendes BIP als Voraussetzung kennt die Definition nicht. Absolute Entkopplung koppelt gerade wachsende Leistung an sinkende Last. Würde man Schrumpfung verlangen, wäre es keine Entkopplung von Wachstum und Schaden, sondern eine gemeinsame Abwärtsbewegung. Der Text hält fest: die Wirtschaftsleistung nimmt weiter zu. Die Aussage ersetzt Zunahme durch Abnahme und zerstört den Begriff.\n\nDie Aussage ist falsch.",
+      "Nur die absolute Form gewährleistet, dass Entwicklung nicht länger auf Kosten ökologischer Stabilität geht. Relative Entkopplung lässt die Last weiter wachsen, wenn auch langsamer. Deshalb reicht das relative Muster ökologisch nicht als Garantie. Der Abschnitt zieht diese Grenze ausdrücklich nach den beiden Beispielen. Wer relative Entkopplung schon als ökologische Unbedenklichkeit liest, übersieht das „nur“.\n\nDie Aussage ist wahr.",
+      "Plus 3 Prozent BIP und plus 1 Prozent Emissionen ist das Beispiel für relative Entkopplung. Beide Größen steigen, die Last nur langsamer. Absolut wäre ein Sinken der Emissionen. Die Vorzeichen plus und plus schließen die absolute Form aus. Die Aussage hängt das Etikett absolut an das relative Zahlenpaar und verwechselt die beiden Definitionen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.06",
+    "title": "Absolute Entkopplung als Strategie",
+    "context": "Bewerten Sie die folgenden Aussagen zur Bedeutung absoluter Entkopplung in der ökologischen Ökonomik:",
+    "statements": [
+      "Die absolute Entkopplung der Wirtschaftsleistung vom Umweltverbrauch gilt in der ökologischen Ökonomik als eine der zentralen Strategien für nachhaltige Entwicklung.",
+      "Sie ermöglicht es, ökonomischen Erfolg und Lebensqualität zu verbessern, ohne die planetaren Grenzen zu überschreiten.",
+      "Relative Entkopplung gewährleistet bereits, dass wirtschaftliche Entwicklung nicht auf Kosten ökologischer Stabilität erfolgt.",
+      "Entkopplung ermöglicht, ökonomische Aktivität innerhalb der Erdsystemgrenzen fortzuführen.",
+      "Der Text behandelt relative Entkopplung als ausreichende Bedingung für ökologische Stabilität."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zentrale Strategie, nicht Randtechnik: so ordnet die ökologische Ökonomik im Text die absolute Entkopplung der Wirtschaftsleistung vom Umweltverbrauch ein. Nachhaltige Entwicklung hängt daran, Erfolg vom Verbrauch zu lösen, nicht nur den Verbrauch etwas langsamer steigen zu lassen. Die Formulierung „eine der zentralen Strategien“ hebt die absolute Form hervor. Wer sie zur Fußnote macht, verfehlt die Gewichtung des Abschnitts. Die relative Form bleibt daneben als empirisch häufigerer Zwischenschritt, ohne denselben strategischen Rang zu bekommen.\n\nDie Aussage ist wahr.",
+      "Ökonomischen Erfolg und Lebensqualität verbessern, ohne planetare Grenzen zu überschreiten: das ist die Leistungsbeschreibung dieser Strategie. Beide Ziele bleiben im Satz, die Grenze wird nicht geopfert. Absolute Entkopplung ist der Weg, der beides zusammenhalten soll. Ohne die Grenze wäre Verbesserung des Erfolgs wieder das alte Kopplungsmuster. Die Aussage gibt diese Doppelaufgabe wieder.\n\nDie Aussage ist wahr.",
+      "Relative Entkopplung lässt Umweltschäden weiter zunehmen, nur langsamer als die Leistung. Eine weiter wachsende Last ist keine Gewähr, dass Entwicklung nicht auf Kosten der ökologischen Stabilität geht. Genau deshalb setzt der Text das Wort „nur“ vor die absolute Form. Wer die relative Form schon als Garantie nimmt, übersieht, dass plus 1 Prozent Emissionen weiterhin Belastung aufbaut. Die Gewähr sitzt an der Umkehr der Last, nicht am gebremsten Anstieg. Plus eins Prozent CO2 bleibt ein Anstieg der Belastung.\n\nDie Aussage ist falsch.",
+      "Innerhalb der Erdsystemgrenzen weiter wirtschaften zu können, ist der Sinn der Entkopplung als wünschenswerter Prozess. Gesellschaftliches Wohlergehen soll mit ökologischer Tragfähigkeit verbunden werden. Die Grenze ist der Rahmen, nicht ein Hindernis, das man umgeht. Die Aussage hält diesen Rahmen fest, den der Abschnitt an die Definition anschließt.\n\nDie Aussage ist wahr.",
+      "Ausreichend für ökologische Stabilität ist im Text die absolute, nicht die relative Form. Relative Entkopplung dämpft nur das Tempo des Schadens. Der Satz nach den Beispielen ist eindeutig: nur absolute Entkopplung gewährleistet, dass Entwicklung nicht länger auf Kosten der Stabilität erfolgt. Die Aussage setzt die schwächere Form an die Stelle der stärkeren Bedingung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.07",
+    "title": "Empirische Evidenz der Entkopplung",
+    "context": "Bewerten Sie die folgenden Aussagen zur empirischen Evidenz von relativer und absoluter Entkopplung:",
+    "statements": [
+      "Bisher wurde in vielen Ländern eine relative Entkopplung erreicht.",
+      "Eine absolute Entkopplung ist nur in wenigen Bereichen und Staaten nachweisbar.",
+      "Absolute Entkopplung ist bereits für alle Schadstoffe in allen Ländern nachgewiesen.",
+      "Die empirische Evidenz ist gemischt: einige Länder haben absolute Entkopplung erzielt, die meisten lediglich relative, und manche verstärken weiterhin die Kopplung zwischen BIP und Emissionen.",
+      "Abbildung 14 zeigt, dass alle Weltregionen bereits absolute Entkopplung erreicht haben."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Viele Länder, relative Form: so lautet der erste empirische Satz. Die relative Entkopplung ist also kein Einzelfall, sondern der häufigere Befund. Das erklärt, warum Fortschritt sichtbar sein kann, ohne dass die Last schon fällt. Wer aus einzelnen Erfolgsmeldungen gleich absolute Entkopplung weltweit ableitet, überspringt diese Abstufung. Der Abschnitt hält die relative Form als den breiten Stand fest.\n\nDie Aussage ist wahr.",
+      "Wenige Bereiche und wenige Staaten: absolute Entkopplung bleibt empirisch die Ausnahme. Nachweisbar heißt nicht flächendeckend. Der Kontrast zu „vielen Ländern“ bei der relativen Form ist bewusst. Politik kann sich daher nicht auf die Annahme stützen, die absolute Lösung sei schon der Normalfall. Die Aussage gibt die Enge des Nachweises korrekt wieder. Der Kontrast zu vielen Ländern mit nur relativer Entkopplung macht die Ausnahme sichtbar, ohne sie zur Weltregel zu erklären. Die Seltenheit ist der empirische Befund, nicht ein bloß vorläufiges Messproblem.\n\nDie Aussage ist wahr.",
+      "Alle Schadstoffe in allen Ländern wären die Maximalbehauptung, die der Text gerade nicht trägt. Absolute Entkopplung gelang für einige lokale Schadstoffe und ist bei CO2 deutlich schwieriger. Zudem ist sie nur in wenigen Bereichen und Staaten nachweisbar. Die doppelte Allaussage „alle“ und „allen“ widerspricht beiden Einschränkungen. Empirie im Abschnitt ist gemischt, nicht vollständig.\n\nDie Aussage ist falsch.",
+      "Gemischt heißt dreigeteilt: manche absolut, die meisten nur relativ, manche sogar mit verstärkter Kopplung von BIP und Emissionen. Abbildung 14 trägt genau dieses Bild. Es gibt also nicht nur zwei Körbe Erfolg und Misserfolg, sondern auch Regionen, in denen die Bindung enger wird. Die Aussage hält die drei Gruppen fest, ohne eine davon zu streichen. Wer nur Erfolgsstaaten zählt, unterschlägt die Gruppe, in der BIP und Emissionen sogar wieder enger mitlaufen.\n\nDie Aussage ist wahr.",
+      "Alle Weltregionen absolut entkoppelt: das wäre ein einheitlicher Erfolg, den Abbildung 14 nicht zeigt. Der Text sagt ausdrücklich, die Evidenz sei gemischt, die meisten hätten lediglich relative Entkopplung, manche verstärkten die Kopplung. Eine Totale über alle Regionen streicht zwei der drei Gruppen. Die Grafik illustriert Unterschiede, keine globale Vollendung der absoluten Form.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.08",
+    "title": "Lokale Schadstoffe und CO2",
+    "context": "Bewerten Sie die folgenden Aussagen zur Entkopplung bei SO2, FCKW und CO2:",
+    "statements": [
+      "Absolute Entkopplung gelang für einige lokale Schadstoffe, etwa Schwefeldioxid oder FCKW, dank technischer Ersatzstoffe und internationaler Umweltabkommen.",
+      "Bei CO2-Emissionen ist eine absolute Entkopplung deutlich schwieriger zu erreichen.",
+      "Dieselbe End-of-Pipe-Logik, die bei SO2 greift, neutralisiert CO2 laut Text bereits vollständig im großen Maßstab.",
+      "Elektrifizierung von Mobilität, Logistik und Wärmeerzeugung führt zu Effizienzsteigerungen und damit zu sinkendem Energiebedarf.",
+      "Der Treibhausgasausstoß in der industriellen Produktion ist nicht mehr mit dem Energieverbrauch verknüpft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Schwefeldioxid und FCKW stehen als Beispiele lokaler Schadstoffe, bei denen absolute Entkopplung gelang. Zwei Hebel nennt der Text: technische Ersatzstoffe und internationale Umweltabkommen. Filter und Substitution gehören später zu den End-of-Pipe-Wegen. Der Erfolg ist also an Stoffklasse und Instrument gebunden, nicht an beliebige Emissionen. Die Aussage hält Beispiele und Ursachen zusammen. CO2 fällt in dieselbe empirische Erzählung nicht hinein, weil Ersatzstoff und Abkommen dort nicht denselben Hebel bieten. Der lokale Erfolg bleibt an diese Stoffgruppe gebunden.\n\nDie Aussage ist wahr.",
+      "Deutlich schwieriger bei CO2: der Kontrast zu SO2 und FCKW ist der Kern des empirischen Teils. CO2 sitzt näher am Energiekern industrieller Wertschöpfung. Was lokal und durch Ersatzstoffe lösbar war, überträgt sich nicht einfach auf Treibhausgase. Die Aussage gibt diese Schwierigkeitsstufe wieder, ohne zu behaupten, CO2-Entkopplung sei unmöglich. Sie ist nur klar schwerer.\n\nDie Aussage ist wahr.",
+      "Vollständige Neutralisierung von CO2 im großen Maßstab durch End-of-Pipe gibt der Text nicht her. Für SO2 oder FCKW wurden Filter und Substitution entwickelt. Für CO2 existiert bislang keine großskalierbare Technologie, die Emissionen vollständig neutralisiert. CCS bleibt teuer, energieintensiv und begrenzt. Die Aussage überträgt den lokalen Erfolg unzulässig auf CO2 und behauptet eine Lösung, die der Abschnitt verneint.\n\nDie Aussage ist falsch.",
+      "Elektrifizierung von Mobilität, Logistik und Wärmeerzeugung bringt Effizienzsteigerungen und damit sinkenden Energiebedarf. Das ist der Hoffnungsschimmer auf der CO2-Seite. Zugleich bleibt der industrielle Treibhausgasausstoß eng mit dem Energieverbrauch verknüpft. Effizienz hier bedeutet also Entlastung in genannten Feldern, nicht automatisch das Ende der industriellen Kopplung. Die Aussage trifft den genannten Wirkungskanal.\n\nDie Aussage ist wahr.",
+      "Nicht mehr verknüpft wäre das Ende der engen Bindung von industriellem Treibhausgasausstoß und Energieverbrauch. Der Text sagt das Gegenteil: die Verknüpfung bleibt, und sie sitzt am Kern industrieller Wertschöpfung. Elektrifizierung senkt Bedarf in Mobilität, Logistik und Wärme, löst aber nicht diese Kernkopplung. Die Aussage streicht genau den Satz, der erklärt, warum CO2 schwerer ist als SO2.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.09",
+    "title": "End-of-Pipe und Carbon Capture",
+    "context": "Bewerten Sie die folgenden Aussagen zu End-of-Pipe-Technologien und CCS:",
+    "statements": [
+      "Für CO2 existiert bislang keine großskalierbare Technologie, die Emissionen vollständig neutralisiert.",
+      "Verfahren wie Carbon Capture and Storage sind technisch möglich, aber teuer, energieintensiv und bislang nur begrenzt einsetzbar.",
+      "Für SO2 oder FCKW wurden End-of-Pipe-Technologien entwickelt, etwa Filter oder Substitution durch weniger schädliche Stoffe.",
+      "CCS ist laut Abschnitt billig, energiesparend und bereits flächendeckend im Einsatz.",
+      "Carbon Capture and Storage löst den industriellen CO2-Ausstoß nach dem Lehrtext vollständig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Keine großskalierbare Vollneutralisierung: das ist die technische Lücke bei CO2 im Vergleich zu Filterlösungen bei anderen Stoffen. Der Satz ist bewusst absolut in der Reichweite, nicht in der Hoffnung. Es fehlt die Technologie, die Emissionen vollständig und im großen Maßstab aufhebt. Wer CCS schon als diese Lösung liest, übersieht die folgenden Einschränkungen zu Kosten, Energie und Einsatzbreite. Die Aussage trifft die Lücke, die der Abschnitt offenlässt. Filter, die Schwefel aus dem Abgas holen, haben bei Kohlendioxid kein gleichwertiges großes Gegenstück, das den Ausstoß tilgt.\n\nDie Aussage ist wahr.",
+      "Technisch möglich und trotzdem begrenzt: CCS wird nicht als Märchen verworfen, aber auch nicht als reife Massenlösung verkauft. Drei Einschränkungen stehen hintereinander: teuer, energieintensiv, bislang nur begrenzt einsetzbar. Energieintensiv heißt, das Verfahren selbst braucht Energie, die wieder Emissionen oder Kosten nach sich ziehen kann. Die Aussage hält Möglichkeit und Grenzen in dem Verhältnis, das der Text vorgibt.\n\nDie Aussage ist wahr.",
+      "Filter und Substitution sind die End-of-Pipe-Beispiele für SO2 oder FCKW. Sie sitzen am Ende der Prozesskette oder ersetzen den schädlichen Stoff. Genau dieser Weg erklärt, warum dort absolute Entkopplung gelang, während CO2 anders liegt. Der Abschnitt stellt die beiden Stoffgruppen über diese Technologiegeschichte einander gegenüber. Die Aussage gibt die entwickelte Option für die lokalen Schadstoffe korrekt wieder.\n\nDie Aussage ist wahr.",
+      "Billig, energiesparend, flächendeckend: das kehrt alle drei Attribute um. Der Text nennt CCS teuer, energieintensiv und nur begrenzt einsetzbar. Flächendeckend wäre das Gegenteil von begrenzt. Energiesparend wäre das Gegenteil von energieintensiv. Die Aussage malt eine Markt- und Technikreife, die der Abschnitt ausdrücklich nicht behauptet.\n\nDie Aussage ist falsch.",
+      "Vollständige Lösung des industriellen CO2-Ausstoßes durch CCS stünde im Widerspruch zur Aussage, es gebe keine großskalierbare Technologie der vollständigen Neutralisierung. CCS ist möglich, aber teuer, energieintensiv und begrenzt. In Österreich kommt hinzu, dass es nur für bestimmte Branchen erlaubt ist. Die Aussage überzieht ein begrenztes Verfahren zur Gesamtlösung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.10",
+    "title": "CCS in Österreich",
+    "context": "Bewerten Sie die folgenden Aussagen zur Zulassung von CCS in Österreich:",
+    "statements": [
+      "In Österreich wird CCS nur für hard-to-abate-Branchen erlaubt.",
+      "Hard-to-abate-Branchen sind solche, für die derzeit erwartet wird, dass bis 2040 noch keine wirtschaftlich konkurrenzfähigen kohlenstofffreien Alternativen existieren werden.",
+      "Als Beispiele nennt der Text Teile der Abfall- und Zementindustrie sowie die Luftfahrt.",
+      "Österreich erlaubt CCS ohne Einschränkung in allen Branchen.",
+      "Für die genannten hard-to-abate-Bereiche erwartet der Text bereits heute flächendeckend konkurrenzfähige kohlenstofffreie Alternativen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Nur hard-to-abate: die österreichische Regel ist eine Engführung, keine allgemeine Freigabe. CCS bleibt damit ein Instrument für schwer vermeidbare Restemissionen, nicht der Standardpfad jeder Fabrik. Die Einschränkung passt zur vorherigen Aussage, das Verfahren sei nur begrenzt einsetzbar. Wer aus der Erlaubnis eine Branchenfreiheit macht, liest das Wort „nur“ nicht. Die Aussage gibt die Zulassungsgrenze wieder. Eine allgemeine Freigabe für leicht elektrifizierbare Branchen steht nicht im Text; die Engführung bleibt der Punkt. CCS bleibt damit Ausnahmeinstrument, nicht Branchenstandard.\n\nDie Aussage ist wahr.",
+      "Bis 2040 keine wirtschaftlich konkurrenzfähigen kohlenstofffreien Alternativen: so definiert der Text hard-to-abate. Es geht um eine Erwartung über den Zeithorizont, nicht um ewige Unmöglichkeit. Wirtschaftlich konkurrenzfähig ist das Kriterium, nicht bloß technische Machbarkeit im Labor. Die Jahreszahl 2040 bindet die Kategorie an den Industrieländerhorizont, der später auch bei Netto-Null auftaucht. Die Aussage trifft Definition und Zeitangabe.\n\nDie Aussage ist wahr.",
+      "Teile der Abfall- und Zementindustrie sowie Luftfahrt: drei Felder, in denen Restemissionen schwer zu ersetzen sind. „Teile“ verhindert, die ganze Abfallwirtschaft pauschal zu meinen. Zement und Flugverkehr stehen für Prozess- und Verkehrsreste, die Elektrifizierung nicht leicht wegnimmt. Die Aufzählung ist im Text ausdrücklich. Die Aussage wiederholt sie ohne Erweiterung auf beliebige Branchen.\n\nDie Aussage ist wahr.",
+      "Ohne Einschränkung in allen Branchen wäre das Gegenteil der österreichischen Regel. Der Text erlaubt CCS nur für hard-to-abate-Branchen. Alle Branchen würden die Engführung aufheben und CCS zum allgemeinen Werkzeug machen. Genau das steht nicht im Abschnitt. Die Absolute „allen“ ist hier die Falle gegen das Wort „nur“.\n\nDie Aussage ist falsch.",
+      "Bereits heute flächendeckend konkurrenzfähige Alternativen widersprechen der Definition von hard-to-abate. Der Text erwartet bis 2040 gerade keine solchen Alternativen für diese Branchen. Würden sie schon existieren, fiele der Grund für die CCS-Ausnahme weg. Die Aussage vorverlegt die Konkurrenzfähigkeit und leugnet den Restcharakter der genannten Sektoren.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.11",
+    "title": "Carbon Leakage",
+    "context": "Bewerten Sie die folgenden Aussagen zur Verlagerung von Emissionen ins Ausland:",
+    "statements": [
+      "Selbst in Ländern mit sinkenden Emissionen ist ein Teil der Reduktion auf die Verlagerung von Produktion und Emissionen in andere Weltregionen zurückzuführen.",
+      "Carbon Leakage bedeutet, dass sich Emissionen ins Ausland verlagern, weil Produktion in Länder mit laxeren Standards wandert.",
+      "Sinkende nationale Emissionen beweisen stets, dass die globalen Emissionen derselben Produktion im gleichen Umfang gefallen sind.",
+      "Absolute Entkopplung ist nicht allein eine technologische, sondern vor allem eine strukturelle und institutionelle Herausforderung.",
+      "Wandert die Produktion ins Ausland, entspricht der Inventarrückgang im Inland vollständig der globalen Klimawirkung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Sinkende Inlandsemissionen können täuschen, wenn die Fabrik einfach woanders steht. Der Abschnitt nennt Carbon Leakage als Teil der Reduktion selbst in Ländern mit fallendem Ausstoß. Verlagerung von Produktion und Emissionen in andere Weltregionen erklärt einen Teil des statistischen Erfolgs. Wer nur die nationale Kurve liest, hält Leakage für Klimaschutz. Die Aussage hält fest, dass ein Teil der Reduktion genau diese Verschiebung ist. Nationale Klimakurven können so schöner aussehen, während dieselbe Tonne CO2 an einem anderen Standort weiter entsteht.\n\nDie Aussage ist wahr.",
+      "Ausland und laxere Standards: so erklärt der Merksatz Carbon Leakage. Emissionen verschwinden nicht, sie wechseln die Jurisdiktion. Produktion wandert dorthin, wo Regeln lockerer sind. Der Inlandssaldo verbessert sich, der Globussaldo muss das nicht tun. Die Aussage verbindet den Fachbegriff mit der Wanderung der Produktion, wie der Abschnitt sie fasst.\n\nDie Aussage ist wahr.",
+      "Stets gleicher globaler Rückgang wäre nur wahr, wenn Produktion und Ausstoß wirklich verschwänden statt umzuziehen. Carbon Leakage beschreibt gerade den Fall, in dem der nationale Erfolg die Weltlast nicht im gleichen Umfang senkt. Die Absolute „stets“ und „im gleichen Umfang“ ignoriert die Verlagerung. Nationale Inventare und globale Wirkung fallen dann auseinander. Die Aussage macht aus einer Buchhaltungsgrenze einen Weltbeweis.\n\nDie Aussage ist falsch.",
+      "Nicht allein Technologie, vor allem Struktur und Institutionen: so zieht der Text die Lehre aus Leakage und Rebound. Filter und Elektrifizierung reichen nicht, wenn Produktion abwandert oder Nachfrage nachwächst. Politische Rahmen, Systemumbau und Verhalten gehören dazu. Die Aussage gibt diese Gewichtung wieder und bereitet die folgende Anforderungsliste vor. Absolute Entkopplung wird zur Governance-Aufgabe, nicht nur zur Ingenieursaufgabe.\n\nDie Aussage ist wahr.",
+      "Vollständige globale Gleichheit von Inlandsinventar und Weltklima wäre das Gegenteil von Leakage. Wandert die Produktion, kann der inländische Rückgang die Emissionen nur geografisch verschieben. Der Globus zählt denselben Ausstoß weiter, nur an anderem Ort. Der Abschnitt warnt genau vor dieser Lesart nationaler Erfolge. Die Aussage setzt Inventar und Klimawirkung eins zu eins gleich.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.12",
+    "title": "Rebound-Effekte",
+    "context": "Bewerten Sie die folgenden Aussagen zu Rebound-Effekten:",
+    "statements": [
+      "Rebound-Effekte können Effizienzgewinne wieder aufheben, weil effizientere Technologien Kosten senken und häufig zu einer höheren Gesamtnachfrage nach Energie und Gütern führen.",
+      "Energieeffiziente Geräte können zu mehr Nutzung führen.",
+      "Effizienzgewinne senken den Gesamtverbrauch automatisch, weil billigere Energie stets weniger genutzt wird.",
+      "Als Rebound-Effekt gilt, dass Effizienzgewinne zu höherem Gesamtverbrauch führen.",
+      "Ist ein Gerät effizienter, kann der Gesamtenergiebedarf laut Text nicht mehr steigen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Kosten sinken, Nachfrage steigt, der Effizienzgewinn verpufft: das ist der Rebound im Abschnitt. Effizientere Technologien machen Energie und Güter billiger in der Nutzung. Häufig folgt daraus mehr Nachfrage, nicht weniger. Die Gesamtnachfrage nach Energie und Gütern kann so den technischen Fortschritt auffressen. Wer nur die Kilowattstunde pro Gerät sieht, unterschätzt die Mengenreaktion. Die Aussage hält Mechanismus und Folge zusammen. Pro Stück sinkt der Aufwand, über alle Stücke kann der Aufwand steigen. Entkopplung misst den zweiten, nicht nur den ersten Effekt.\n\nDie Aussage ist wahr.",
+      "Mehr Nutzung trotz besserer Geräte: der Merksatz begründet den Rebound genau so. Ein sparsamerer Kühlschrank oder eine sparsamere Fahrt kann zu längerer Laufzeit oder mehr Kilometern einladen, weil die einzelne Nutzung billiger wird. Der Abschnitt nennt das als Begründung, nicht als Randwitz. Effizienz auf der Geräteebene ist also nicht dasselbe wie Effizienz auf der Systemebene. Die Aussage trifft das Nutzungsbeispiel.\n\nDie Aussage ist wahr.",
+      "Automatisch weniger Gesamtverbrauch, weil Energie billiger wird, kehrt den Rebound um. Billiger heißt im Text häufiger mehr Nachfrage, nicht freiwilliger Verzicht. Die Absolute „stets weniger genutzt“ behauptet eine Richtung, die der Mechanismus nicht hergibt. Effizienzgewinne können den Gesamtverbrauch sogar erhöhen, wenn die Mengenreaktion stark genug ist. Die Aussage macht aus einer möglichen Aufhebung eine sichere Einsparung.\n\nDie Aussage ist falsch.",
+      "Höherer Gesamtverbrauch nach Effizienzgewinnen: so definiert der kurze Merksatz den Rebound-Effekt. Die Definition sitzt auf der Systemmenge, nicht auf dem einzelnen Gerät. Wer nur relative Effizienz (weniger Energie pro Stück) zählt, kann einen Rebound übersehen, der die Stückzahl treibt. Die Aussage gibt die Begriffsklärung des Abschnitts wieder und bleibt damit auf der Ebene, die für Entkopplung zählt: den Gesamtverbrauch.\n\nDie Aussage ist wahr.",
+      "Gesamtenergiebedarf kann nicht mehr steigen, sobald ein Gerät effizienter ist: das wäre ein Verbot des Rebounds. Der Text sagt, Rebound-Effekte können Effizienzgewinne wieder aufheben, und nennt mehr Nutzung als Weg. Steigender Gesamtbedarf bleibt also möglich, gerade weil das Gerät sparsamer und damit attraktiver wird. Die Aussage schließt die Mengenreaktion aus, die der Abschnitt erklärt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.13",
+    "title": "Politische und gesellschaftliche Hebel",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was absolute Entkopplung erfordert:",
+    "statements": [
+      "Absolute Entkopplung erfordert politische Maßnahmen, etwa CO2-Bepreisung und Förderinstrumente für erneuerbare Energien.",
+      "Sie erfordert Systemtransformationen in Energie-, Mobilitäts- und Ernährungssystemen.",
+      "Sie erfordert Verhaltensänderungen auf Konsumenten- und Unternehmensebene.",
+      "Technologische Innovationen allein reichen laut Schlussteil des Abschnitts aus.",
+      "Entscheidend sind geeignete politische Rahmenbedingungen, nachhaltige wirtschaftliche Strukturen und gesellschaftliche Werte, die ökologische Verantwortung fördern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "CO2-Bepreisung und Förderung erneuerbarer Energien stehen als Beispiele politischer Maßnahmen. Sie gehören zur ersten der drei Anforderungslinien, nicht in eine Fußnote. Preise und Förderungen sollen die relative Vorteilhaftigkeit kohlenstoffarmer Technik verschieben. Ohne diesen Rahmen bleibt Entkopplung dem Zufall von Erfindungen überlassen. Die Aussage trifft die politische Linie der Aufzählung.\n\nDie Aussage ist wahr.",
+      "Energie, Mobilität, Ernährung: drei Systeme, nicht drei Einzelprojekte. Systemtransformation meint Umbau der Infrastrukturen und Alltagspraktiken, nicht nur ein neues Gerät in derselben Struktur. Der Abschnitt stellt diese Transformationen neben Politik und Verhalten. Wer Entkopplung auf den Strommix reduziert und Verkehr sowie Ernährung ausblendet, streicht zwei der drei genannten Systeme. Die Aussage gibt die Breite wieder.\n\nDie Aussage ist wahr.",
+      "Konsumenten- und Unternehmensebene: Verhalten sitzt auf beiden Marktseiten. Haushalte und Firmen sollen Muster ändern, nicht nur auf neue Technik warten. Die dritte Anforderungslinie macht Entkopplung zur sozialen Praxis. Ohne diese Ebene blieben Preis und Systemumbau ohne alltagswirksame Nachfrage- und Produktionsentscheidungen. Die Aussage hält beide Adressaten fest.\n\nDie Aussage ist wahr.",
+      "Innovationen allein reichen nicht. Der Schlussteil sagt ausdrücklich, technologische Innovationen allein genügten nicht. Entscheidend seien politische Rahmenbedingungen, nachhaltige wirtschaftliche Strukturen und gesellschaftliche Werte. Die Absolute „allein reichen aus“ widerspricht diesem Satz. Technik bleibt nötig, aber als Teil eines Bündels, nicht als Ersatz für Politik, Struktur und Werte. Die Aussage isoliert genau das, was der Text als unzureichend bezeichnet. Wer die drei anderen Linien streicht, macht aus einem notwendigen Mittel die hinreichende Bedingung, die der Text verwirft.\n\nDie Aussage ist falsch.",
+      "Rahmen, Strukturen, Werte: das Dreieck am Ende des Abschnitts. Politische Rahmenbedingungen setzen Anreize, wirtschaftliche Strukturen müssen nachhaltig werden, gesellschaftliche Werte sollen ökologische Verantwortung fördern. Die drei gehören zusammen, weil Leakage und Rebound zeigen, dass Technik ohne Institutionen und Nachfrage nicht trägt. Die Aussage gibt dieses Bündel wieder, das über die Ingenieurslösung hinausweist.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.14",
+    "title": "Partielle absolute Entkopplung und Netto-Null",
+    "context": "Bewerten Sie die folgenden Aussagen zu partieller absoluter Entkopplung in wohlhabenden Staaten:",
+    "statements": [
+      "Einige wohlhabende Staaten, etwa die skandinavischen Länder oder das Vereinigte Königreich, haben eine partielle absolute Entkopplung von BIP und CO2-Emissionen erreicht.",
+      "Selbst dort reichen die Reduktionsraten bislang nicht aus, um bis 2040 in Industrieländern bzw. bis 2050 global Netto-Null-Emissionen zu erreichen.",
+      "Entkopplung ist eine Voraussetzung für langfristigen Wohlstand innerhalb ökologischer Grenzen.",
+      "Die Reduktionsraten jener Länder reichen laut Text bereits aus, um Klimaneutralität bis 2050 zu sichern.",
+      "Partielle absolute Entkopplung bedeutet, dass der Pfad zur Klimaneutralität bereits eingehalten wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Skandinavien und das Vereinigte Königreich stehen als Beispiele wohlhabender Staaten mit partieller absoluter Entkopplung von BIP und CO2. Partiell heißt: ein sichtbarer Erfolg, kein vollständiger Systemabschluss. BIP wächst, Emissionen fallen, aber nicht in dem Maße, das die späteren Zieljahre verlangen. Der Abschnitt nutzt diese Länder, um Fortschritt und Unzulänglichkeit zugleich zu zeigen. Die Aussage trifft Beispiele und den Vorbehalt „partiell“. Andere wohlhabende Staaten ohne diesen Befund bleiben im Satz außen vor; der Text behauptet keine flächendeckende absolute Entkopplung der Industrieländer.\n\nDie Aussage ist wahr.",
+      "2040 für Industrieländer, 2050 global: zwei Zieljahre, ein Befund der Unzulänglichkeit. Selbst die Vorreiter reduzieren zu langsam für Netto-Null auf diesen Horizonten. Empirischer Erfolg relativ zur eigenen Vergangenheit ist also nicht dasselbe wie Zielpfad. Der Text trennt beides bewusst. Die Aussage hält die Lücke zwischen beobachteter Rate und benötigter Rate fest, ohne den partiellen Erfolg zu leugnen.\n\nDie Aussage ist wahr.",
+      "Voraussetzung, nicht technische Nebensache: so hebt der Abschnitt Entkopplung für langfristigen Wohlstand innerhalb ökologischer Grenzen. Ohne Lösung von Wachstum und Schaden bleibt Wohlstand an Grenzverletzung gebunden. Innerhalb der Grenzen zu bleiben, ist die Bedingung, nicht ein späteres Add-on. Die Aussage gibt diese Rangfolge wieder. Entkopplung entscheidet mit darüber, ob moderne Gesellschaften innerhalb planetarer Grenzen wirtschaften können.\n\nDie Aussage ist wahr.",
+      "Bereits ausreichend für Klimaneutralität 2050 wären genau die Raten, die der Text als unzureichend bezeichnet. Selbst in erfolgreichen Ländern reicht die Reduktionsgeschwindigkeit nicht, um Klimaneutralität bis 2050 zu erreichen. Die Aussage streicht dieses „nicht aus“ und macht aus einem Teilerfolg einen Zielpfad. Vorreiterstatus und Zielerreichung fallen im Abschnitt auseinander.\n\nDie Aussage ist falsch.",
+      "Pfad eingehalten wäre eine stärkere Behauptung als partielle Entkopplung. Partiell und unzureichende Raten bedeuten: Richtung stimmt streckenweise, Tempo nicht. Klimaneutralität bis 2040 bzw. 2050 bleibt offen. Wer partiell mit eingehaltenem Pfad gleichsetzt, verwechselt Vorzeichen der Emissionen mit der erforderlichen Geschwindigkeit. Die Aussage überzieht den empirischen Teilerfolg zur Zielerreichung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.15",
+    "title": "Globale Trends 1990 bis 2024",
+    "context": "Bewerten Sie die folgenden Aussagen zu globalen Trends von BIP, Intensität und Gesamtemissionen:",
+    "statements": [
+      "Zwischen 1990 und 2024 haben rund 30 Länder, vor allem in der EU und in Nordamerika, ihre CO2-Emissionen absolut reduziert, während ihr BIP weiterwuchs.",
+      "Im selben Zeitraum fiel der CO2-Ausstoß pro BIP-Einheit global um rund 40 Prozent.",
+      "Dennoch stiegen die globalen Gesamtemissionen weiter an, weil das Wirtschaftswachstum die Effizienzgewinne überkompensierte.",
+      "Weil die Emissionsintensität global um rund 40 Prozent sank, müssen die globalen Gesamtemissionen im selben Umfang gefallen sein.",
+      "Die Reduktionsgeschwindigkeit reicht selbst in erfolgreichen Ländern nicht aus, um die Klimaneutralität bis 2050 zu erreichen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Rund 30 Länder, vor allem EU und Nordamerika, absolut weniger CO2 bei weiter wachsendem BIP: das ist die Länderliste hinter Abbildung 15 für 1990 bis 2024. Absolut reduziert plus wachsendes BIP ist absolute Entkopplung auf Länderebene. „Rund 30“ und die Regionalangabe verhindern, daraus schon die Weltgesamtheit zu machen. Die Aussage bleibt bei dieser Gruppe und diesem Zeitraum. Sie beschreibt Vorreiter, nicht den Globus.\n\nDie Aussage ist wahr.",
+      "CO2 pro BIP-Einheit ist die Emissionsintensität. Global um rund 40 Prozent gefallen bedeutet: jede Einheit Wirtschaftsleistung stößt im Schnitt deutlich weniger CO2 aus als 1990. Das ist relative Entlastung auf Weltebene, gemessen als Quotient Ausstoß durch BIP. Die 40 Prozent sind die Buchzahl für den Intensitätsrückgang, nicht für den Rückgang der Tonnen insgesamt. Die Aussage trifft Intensität und Größenordnung, ohne die Gesamtemissionen zu verwechseln.\n\nDie Aussage ist wahr.",
+      "Gesamtemissionen weiter oben, obwohl Intensität sank: Wachstum hat die Effizienzgewinne überkompensiert. Identität: Gesamtemissionen hängen an Intensität mal Wirtschaftsleistung. Fällt die Intensität um rund 40 Prozent, kann die Menge trotzdem steigen, wenn das BIP stärker wächst als die Intensität fällt. Genau das beschreibt der Abschnitt für die Welt. Die Aussage hält den Überkompensationsbefund fest, der relative Entkopplung global von absoluter Entlastung trennt. Intensität mal BIP ergibt die Menge. Nur wenn der Intensitätsrückgang den BIP-Zuwachs überwiegt, fällt die Weltlast. Das war global nicht der Fall.\n\nDie Aussage ist wahr.",
+      "Intensität minus 40 Prozent gleich Gesamtemissionen minus 40 Prozent wäre nur wahr, wenn das BIP konstant geblieben wäre. Die Größe Gesamtemissionen ist Intensität mal Wirtschaftsleistung. Steigt die Leistung kräftig, kann der Quotient fallen und das Produkt trotzdem steigen. Der Text sagt ausdrücklich, die globalen Gesamtemissionen stiegen weiter, weil Wachstum die Effizienzgewinne überkompensierte. Die Aussage setzt Quotient und Menge gleich und ignoriert den Wachstumsterm.\n\nDie Aussage ist falsch.",
+      "Selbst erfolgreiche Länder zu langsam für Klimaneutralität 2050: das wiederholt der Abschnitt an der globalen Abbildung. Ländereffolg und Zieltempo sind verschiedene Maßstäbe. Abbildung 15 verdeutlicht längerfristige Trends und zugleich die unzureichende Geschwindigkeit. Die Aussage überträgt den Befund von den Vorreitern auf den Zeithorizont 2050, ohne die 30-Länder-Gruppe zu leugnen. Tempo, nicht nur Richtung, entscheidet über Netto-Null.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.3",
+    "case_id": "WISO 2.3.16",
+    "title": "Erforderliche Intensitätsrate und Maßstab",
+    "context": "Bewerten Sie die folgenden Aussagen zur nötigen Geschwindigkeit der Entkopplung und zu ihrer Reichweite:",
+    "statements": [
+      "Nach Schätzungen des Global Carbon Budget müsste die globale CO2-Intensität jährlich um 8 bis 9 Prozent sinken; tatsächlich beträgt die Rate derzeit weniger als 2 Prozent.",
+      "Nur wenn absolute Entkopplung im großen Maßstab gelingt, kann Wirtschaftswachstum mit Klimaneutralität und langfristigem Wohlstand vereinbar werden.",
+      "Ein jährlicher Intensitätsrückgang von weniger als 2 Prozent entspricht bereits dem Pfad von 8 bis 9 Prozent.",
+      "Entkopplung ist keine rein technische Frage, sondern eine grundlegende Voraussetzung für die Vereinbarkeit von Wohlstand und ökologischer Stabilität.",
+      "Die meisten Länder haben laut gemischter Evidenz bereits absolute Entkopplung erzielt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Acht bis neun Prozent jährlich nötig, weniger als zwei Prozent tatsächlich: die Lücke ist der quantitative Kern am Ende. Intensität muss als globale CO2-Menge je BIP-Einheit in diesem Tempo fallen, damit der vom Global Carbon Budget 2024 skizzierte Pfad hält. Weniger als 2 Prozent Ist gegen 8 bis 9 Prozent Soll heißt: die heutige Rate liegt um einen großen Faktor unter der benötigten. Wer 40 Prozent Intensitätsrückgang über mehr als drei Jahrzehnte mit diesem Jahreserfordernis verwechselt, mischt Bestand und Rate. Die Aussage stellt Soll und Ist nebeneinander, wie der Text sie nennt.\n\nDie Aussage ist wahr.",
+      "Im großen Maßstab, nicht als Nischenstatistik: nur dann werden Wachstum, Klimaneutralität und langfristiger Wohlstand vereinbar. Partielle Erfolge in wenigen Staaten reichen nach dem Abschnitt nicht. Die Bedingung ist absolut und breit, weil relative Entkopplung die Weltlast weiter nach oben treiben kann. Die Aussage setzt genau diese Schwelle. Ohne große absolute Entkopplung bleibt die Vereinbarkeit eine Hoffnung ohne empirische Deckung in der nötigen Breite.\n\nDie Aussage ist wahr.",
+      "Weniger als 2 Prozent gleich 8 bis 9 Prozent ginge nur, wenn Soll und Ist dieselben Zahlen wären. Rechnung: benötigte Jahresrate 8 bis 9 Prozent, beobachtete Rate unter 2 Prozent. Die Differenz ist der Rückstand, nicht die Erfüllung. Ein Faktor von etwa vier bis fünf trennt die Raten. Die Aussage setzt den zu langsamen Ist-Wert auf den Soll-Pfad und streicht die Schätzung des Global Carbon Budget.\n\nDie Aussage ist falsch.",
+      "Keine rein technische Frage, sondern Voraussetzung für Wohlstand und ökologische Stabilität: so schließt der Merksatz. Entkopplung entscheidet, ob moderne Gesellschaften innerhalb der planetaren Grenzen wirtschaften können, ohne Tragfähigkeit und Wohlbefinden zu gefährden. Technik bleibt ein Mittel, nicht der ganze Rahmen. Die Aussage hält den Rang, den der Abschnitt der Entkopplung gibt, und weist die Nebenrollenfassung zurück.\n\nDie Aussage ist wahr.",
+      "Die meisten Länder absolut entkoppelt wäre das Gegenteil der gemischten Evidenz. Der Text sagt: einige Länder absolut, die meisten lediglich relativ, manche verstärken die Kopplung. „Die meisten“ gehört also zur relativen Form. Absolute Entkopplung im großen Maßstab steht noch aus, sonst wäre die 8-bis-9-Prozent-Lücke unverständlich. Die Aussage vertauscht die Mehrheitsgruppe und macht aus der Ausnahme den Normalfall.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]

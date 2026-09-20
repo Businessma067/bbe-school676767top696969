@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Sole Proprietorship Ownership and Management",
+    "statements": [
+      "A sole proprietorship is a business owned by one person who also manages and runs the business.",
+      "The sole proprietor can make all management decisions without necessarily having to consider other opinions.",
+      "Because the business is not a legal entity of its own, profits are reported on the owner's personal income tax statement.",
+      "A sole proprietorship is a separate legal person that files corporate income tax independently of the owner.",
+      "Retirement or long-term illness of the sole proprietor may create continuity problems for the business."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.01",
+    "context": "Analyze how a sole proprietorship concentrates ownership and operational control in a single individual. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Establishment Requirements and Liability Exposure",
+    "statements": [
+      "Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business.",
+      "Limited liability protects the sole proprietor's private assets so creditors may claim only assets formally recorded as business property.",
+      "Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid.",
+      "Incorporating as a sole proprietorship grants the owner limited liability equal to the capital originally invested.",
+      "Trade credit from suppliers eliminates the sole proprietor's liability for those purchase obligations."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.02",
+    "context": "Consider a neighbourhood bakery operated as a sole proprietorship with one owner-manager and a small team of assistants. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Legal Status and Tax Treatment",
+    "statements": [
+      "A sole proprietorship is not a legal entity of its own separate from the business owner.",
+      "The owner pays tax on the profits that are earned from the business through the personal income tax statement.",
+      "Management of the business largely depends on the sole proprietor, who retains responsibility for the most important decisions.",
+      "Because profits pass directly to the owner for tax purposes, the business cannot hire employees or enter supplier contracts.",
+      "If the sole proprietor needs support, he or she can hire personnel while still bearing the central management role."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.03",
+    "context": "Review the legal and fiscal position of a sole proprietorship compared with incorporated business forms. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Single Owner Control and Staffing",
+    "statements": [
+      "The sole proprietor may hire personnel when additional support is required to run the business.",
+      "Hiring staff transfers unlimited liability for business debts entirely to the employees rather than the owner.",
+      "Even with hired personnel, it remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "The sole proprietor can make all management decisions and does not necessarily have to consider other opinions.",
+      "Continuity of the business may be disrupted when the sole proprietor cannot continue managing due to long-term illness."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.04",
+    "context": "Analyze management authority within a sole proprietorship when the owner employs assistants for daily operations. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Misconceptions About Sole Trader Status",
+    "statements": [
+      "Registering a business name as a sole proprietorship converts the firm into an incorporated legal person with its own tax identity.",
+      "Profits earned by a sole proprietorship are directly reported on the business owner's personal income tax statement.",
+      "A sole proprietorship requires substantial minimum share capital before the owner may begin trading legally.",
+      "Limited liability protects a sole proprietor's private home from creditors when business debts exceed available firm assets.",
+      "Two persons who wish to share tasks and risk equally should choose a sole proprietorship rather than a partnership."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.05",
+    "context": "Review common claims about what sole proprietorship status implies for liability, taxation, and legal personality. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Continuity Risk and Decision Authority",
+    "statements": [
+      "A sole proprietorship automatically continues unchanged when the owner retires without any transfer arrangement.",
+      "Continuity problems may occur if the sole proprietor wants to retire or suffers a long-term illness.",
+      "Because one person owns and manages the firm, succession planning is always simpler than in structures with transferable shares.",
+      "Retirement of the sole proprietor has no effect on business continuity because staff can legally assume ownership without transfer.",
+      "The management of the business largely depends on the sole proprietor, who retains the most important decision rights."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.06",
+    "context": "Consider operational continuity when a sole trader plans retirement after years of running a local repair workshop. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Unlimited Liability in Practice",
+    "statements": [
+      "The sole proprietor is liable for all debts and obligations of the business under unlimited liability.",
+      "Unlimited liability applies only to short-term trade credit and not to long-term bank loans secured by property.",
+      "Creditors usually ask for assets that can serve as collateral, especially for long-term credit.",
+      "Private assets of the sole proprietor are also at stake if the business fails and debts need to be repaid.",
+      "Pledging collateral for a bank loan fully exempts all remaining private assets from any further creditor claims."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.07",
+    "context": "Analyze how creditor claims against a failing sole proprietorship may extend beyond business assets. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Personal Taxation of Business Profits",
+    "statements": [
+      "Because the sole proprietorship is not a legal entity, profits are reported on the owner's personal income tax statement.",
+      "Operating as a sole proprietorship exempts the owner from income tax on business profits entirely.",
+      "The owner pays tax on the profits earned from the business rather than through a separate corporate tax return.",
+      "Business profits and the proprietor's other personal income may appear on the same personal tax assessment.",
+      "Separate legal personality is required before profits can be taxed as personal income of the owner."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.08",
+    "context": "Review how fiscal treatment links sole proprietorship earnings to the owner's personal tax affairs. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Core Features of Sole Trader Businesses",
+    "statements": [
+      "A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners.",
+      "Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start.",
+      "The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement.",
+      "Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid.",
+      "If the sole proprietor needs support, personnel may be hired while the proprietor retains key management decisions."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.09",
+    "context": "Analyze the defining characteristics of sole proprietorship as described in business ownership theory. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Legal Personality and Liability Distinctions",
+    "statements": [
+      "A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name.",
+      "Profits of a sole proprietorship are reported on the business owner's personal income tax statement.",
+      "Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid.",
+      "Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses.",
+      "Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.10",
+    "context": "Review distinctions between unincorporated sole traders and incorporated companies regarding legal status and creditor protection. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Management Concentration and Risk Bearing",
+    "statements": [
+      "The sole proprietor can make all management decisions without necessarily consulting other owners.",
+      "It remains the sole proprietor's task to make the most important management decisions and take all the risk.",
+      "Management of the business largely depends on the sole proprietor rather than on a separate board of directors.",
+      "Even when administrative tasks are delegated, the proprietor retains authority over the most important management decisions.",
+      "Hiring personnel means the employees rather than the proprietor decide the firm's strategic direction."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.11",
+    "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Establishment Ease and Business Continuity",
+    "statements": [
+      "Sole proprietorships are easy to establish because there are no financial requirements to start this kind of business.",
+      "A sole proprietorship is owned and managed by one person who bears the central operational responsibility.",
+      "Stepping away through retirement or prolonged illness may interrupt continuity in a sole proprietorship.",
+      "Extra money can be sought from investors and/or from banks when personal funds prove insufficient.",
+      "Because the firm is not a legal entity, profits are taxed on the owner's personal income tax statement."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.12",
+    "context": "Analyze why sole proprietorships appeal for small start-ups yet pose succession challenges over time. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Creditor Claims and Collateral Exposure",
+    "statements": [
+      "Listing a trading name transforms a sole proprietorship into a corporation with its own legal personality.",
+      "A sole proprietorship remains unincorporated even when the owner registers for tax and hires multiple employees.",
+      "The sole proprietor pays personal income tax on business profits because the business is not a legal entity of its own.",
+      "All kinds of credit, short-term as well as long-term, are liabilities for the sole proprietor.",
+      "Collateral requirements apply only to internal sources of finance such as retained profit."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.13",
+    "context": "Review how secured and unsecured borrowing affects a sole proprietor when revenue falls short of repayment obligations. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Ownership Structure Compared With Partnership",
+    "statements": [
+      "A sole proprietorship suits one owner who both manages the business and accepts the associated risk.",
+      "A sole proprietorship allows two equal co-owners to divide management rights without a partnership agreement.",
+      "A sole proprietorship is the appropriate structure when several investors seek limited liability through transferable shares.",
+      "Two persons who want to share tasks and risk with equal rights would better realise their business as a partnership.",
+      "Partnerships are unnecessary when two founders can rely on sole proprietorship rules to share ownership equally."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.14",
+    "context": "Analyze when sole proprietorship is appropriate versus partnership for persons planning a jointly managed venture. Evaluate the following economic assertions:",
+    "difficulty_level": "4/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Tax Reporting Without Corporate Personality",
+    "statements": [
+      "Business profits of an unincorporated sole trader flow directly onto the owner's personal income tax statement.",
+      "The owner pays tax on profits earned from the business because the firm is not a separate legal entity.",
+      "Personal income tax treatment means the sole proprietorship must issue dividends to the owner before tax is due.",
+      "Operating without corporate personality does not exempt the proprietor from tax on business profits.",
+      "A separate corporate tax return is required for every sole proprietorship regardless of legal status."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.15",
+    "context": "Review fiscal consequences when a business lacks separate legal personality from its owner. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Liability Scope Across Credit Types",
+    "statements": [
+      "Trade credit from a supplier never requires repayment because deferred payment is a grant from the supplier.",
+      "Trade credit from a supplier creates a short-term liability that the sole proprietor must honour.",
+      "Long-term bank loans secured by land are excluded from unlimited liability because collateral protects the owner completely.",
+      "If the business fails, private assets are also at stake when debts need to be repaid beyond available business funds.",
+      "All kinds of credit, whether short-term or long-term, remain obligations of the sole proprietor."
+    ],
+    "subsection": "4.1",
+    "case_id": "CASE 4.1.16",
+    "context": "Consider a sole trader using supplier trade credit, a bank overdraft, and a property-backed long-term loan simultaneously. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  }
+]

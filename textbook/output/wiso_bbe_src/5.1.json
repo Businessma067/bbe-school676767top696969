@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Marketing Definition of a Product",
+    "statements": [
+      "In marketing terminology, a product refers only to physical goods and excludes services from the definition.",
+      "In marketing terminology, a product is every good and/or service that can be exchanged in order to fulfil the wishes and needs of customers.",
+      "Producer products are defined by whether an item is manufactured in a factory rather than by the customer who purchases it.",
+      "Consumer products are defined by retail packaging size rather than by whether the buyer is a household or business.",
+      "A printer is always a consumer product because households are the most visible end users of printers."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.01",
+    "context": "Review the marketing definition of a product as every good and service that can be exchanged to fulfil customer wishes and needs. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Goods and Services as Products",
+    "statements": [
+      "A printer is always a producer product because printers are produced by manufacturers for commercial supply chains.",
+      "Marketing defines a product as any good or service offered through exchange to satisfy customer wishes and needs.",
+      "A product in marketing includes both tangible goods and intangible services when they are exchanged with customers.",
+      "Customers of a product may be other businesses or private households according to introductory marketing terminology.",
+      "Producer products are goods and services sold from one business to another in business-to-business exchange."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.02",
+    "context": "Analyze how marketing terminology treats both goods and services as products when they can be exchanged. Evaluate the following economic assertions:",
+    "difficulty_level": "2/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "B2B Versus B2C Classification",
+    "statements": [
+      "Consumer products are goods and services sold to consumers or private households in business-to-consumer exchange.",
+      "Computer support services cannot be products because services lack physical form.",
+      "Business-to-business marketing relates to producer products exchanged between firms.",
+      "Business-to-consumer marketing relates to consumer products sold to private households.",
+      "A printer bought for office use by a business is classified as a producer product even if an identical model exists for home buyers."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.03",
+    "context": "Review the distinction between business-to-business marketing and business-to-consumer marketing in product classification. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Producer Products and Business Customers",
+    "statements": [
+      "Free after-sales advice is a product because it satisfies customer needs even without payment.",
+      "A printer bought for private home use is classified as a consumer product even when the same model is sold to offices.",
+      "Computer support services sold mainly to private households illustrate consumer products in a service form.",
+      "Internal office supplies moved between departments of the same company are products in the marketing sense.",
+      "Computer support services sold to other businesses illustrate producer products in a service form."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.04",
+    "context": "Consider a commercial bakery selling bulk flour sacks to restaurants while packaging smaller bags for supermarket shoppers. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Consumer Products and Household Customers",
+    "statements": [
+      "B2B and B2C labels describe production technology rather than the identity of the customer.",
+      "Exchange is required in the marketing sense for a good or service to be treated as a product.",
+      "Services such as maintenance contracts can be products when they are exchanged to fulfil customer needs.",
+      "Goods such as equipment and materials can be products when exchanged to fulfil customer wishes and needs.",
+      "A printer sold to a corporate client is a producer product because the purchaser is another business operating commercially."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.05",
+    "context": "Review how customers in the product definition may be other businesses or private households. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Exchange and Product Status",
+    "statements": [
+      "A printer sold to a private household is a consumer product because the purchaser is a private household or individual consumer.",
+      "The same printer may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.",
+      "When a firm exchanges a printer with a corporate client, the transaction is business-to-business and the item is a producer product.",
+      "When a firm exchanges a printer with a private household, the transaction is business-to-consumer and the item is a consumer product.",
+      "Marketing classifies a printer sold for commercial operations to a corporate client as a producer product rather than a consumer product."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.06",
+    "context": "Analyze why the same physical good may be classified as a producer product or a consumer product depending on use. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Identical Goods Different Classifications",
+    "statements": [
+      "Customers of products can only be private households, not other businesses.",
+      "Goods given as gifts with no exchange are still products because they fulfil recipient wishes.",
+      "A good becomes a consumer product whenever it is small enough to be carried home by an individual.",
+      "Marketing classifies a printer sold for personal or domestic use to a private household as a consumer product rather than a producer product.",
+      "A good becomes a producer product whenever it is heavy or bulky regardless of who buys it."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.07",
+    "context": "Review how goods sold from one business to another are treated as producer products in B2B exchange. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Office Printer as Producer Product",
+    "statements": [
+      "Services provided only to businesses are consumer products because the ultimate beneficiaries are people.",
+      "A printer sold to a corporate client is a consumer product because every sale ultimately serves human needs.",
+      "A printer exchanged to fulfil the operational needs of a corporate client counts as a product in the producer category.",
+      "A printer sold to a private household is a producer product because the seller is a business firm.",
+      "The same printer must keep one fixed product label for all buyers because the design never changes."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.08",
+    "context": "Consider a textile mill shipping fabric rolls to garment manufacturers and remnant bundles to craft buyers at a market stall. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Home Printer as Consumer Product",
+    "statements": [
+      "A printer exchanged to fulfil the personal wishes of a private household counts as a product in the consumer category.",
+      "Producer products include a printer when it is sold from one business to a corporate client for further commercial activity.",
+      "A printer is not a product unless it is a manufactured physical good.",
+      "Exchange is irrelevant to whether a printer counts as a product if customers desire it strongly enough.",
+      "Consumer products include a printer when it is sold to a private household for private consumption or domestic use."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.09",
+    "context": "Review the role of exchange in determining whether a good or service counts as a product in marketing. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Computer Support in B2C Markets",
+    "statements": [
+      "The marketing term product covers a printer whether the exchange is B2B with a corporate client or B2C with a private household.",
+      "A consultancy may list a printer under producer products when invoicing a corporate client and under consumer products when invoicing a private household.",
+      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged printer a product in marketing terminology.",
+      "Exchange value arises when a printer is traded with a corporate client or a private household to satisfy identifiable customer demand.",
+      "A computer sold to a manufacturing firm is a producer product because the purchaser is another business operating commercially."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.10",
+    "context": "Analyze how a printer purchased for office operations illustrates producer-product classification. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Computer Support in B2B Markets",
+    "statements": [
+      "A computer sold to a family home is a consumer product because the purchaser is a private household or individual consumer.",
+      "Marketing excludes a printer from products when sold to a corporate client because businesses do not have wishes or needs.",
+      "Marketing excludes a printer from products when sold to a private household because households only receive gifts, not products.",
+      "The same computer may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.",
+      "A printer transferred internally between branches of one corporation remains a marketed product."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.11",
+    "context": "Review how an identical printer purchased for private home use illustrates consumer-product classification. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "title": "Customer Types in Product Theory",
+    "statements": [
+      "When a firm exchanges a computer with a manufacturing firm, the transaction is business-to-business and the item is a producer product.",
+      "Marketing classifies a computer sold for commercial operations to a manufacturing firm as a producer product rather than a consumer product.",
+      "Marketing classifies a computer sold for personal or domestic use to a family home as a consumer product rather than a producer product.",
+      "A computer exchanged to fulfil the operational needs of a manufacturing firm counts as a product in the producer category.",
+      "A computer exchanged to fulfil the personal wishes of a family home counts as a product in the consumer category."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.12",
+    "context": "Consider a training academy offering compliance workshops to company staff and evening language courses to individual learners. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Fulfilling Wishes and Needs",
+    "statements": [
+      "B2B classification of a printer depends on the seller's industry rather than on the corporate client purchaser.",
+      "Producer products include a computer when it is sold from one business to a manufacturing firm for further commercial activity.",
+      "B2C classification of a printer depends on colourful retail branding rather than on the private household purchaser.",
+      "Consumer products include a computer when it is sold to a family home for private consumption or domestic use.",
+      "The marketing term product covers a computer whether the exchange is B2B with a manufacturing firm or B2C with a family home."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.13",
+    "context": "Review how computer support services sold to other businesses exemplify business-to-business offerings. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "title": "Producer Services Between Firms",
+    "statements": [
+      "A printer sold to a corporate client is B2C because money changes hands in the transaction.",
+      "A printer sold to a private household is B2B because the seller is a registered company.",
+      "Producer products include only raw materials, so a finished printer sold to a corporate client cannot be a producer product.",
+      "Consumer products include only luxury items, so a routine printer sold to a private household cannot be a consumer product.",
+      "A consultancy may list a computer under producer products when invoicing a manufacturing firm and under consumer products when invoicing a family home."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.14",
+    "context": "Analyze why marketing treats fulfilment of wishes and needs as central to the concept of a product. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "title": "Consumer Services for Households",
+    "statements": [
+      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged computer a product in marketing terminology.",
+      "A printer becomes a product only after advertising creates demand rather than when it is exchanged.",
+      "A computer sold to a manufacturing firm is a consumer product because every sale ultimately serves human needs.",
+      "A computer sold to a family home is a producer product because the seller is a business firm.",
+      "The same computer must keep one fixed product label for all buyers because the design never changes."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.15",
+    "context": "Review how producer products include services exchanged between businesses as well as physical goods. Evaluate the following economic assertions:",
+    "difficulty_level": "3/5",
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "title": "Scope Beyond Tangible Goods",
+    "statements": [
+      "A computer is not a product unless it is a manufactured physical good.",
+      "Exchange value arises when a computer is traded with a manufacturing firm or a family home to satisfy identifiable customer demand.",
+      "Exchange is irrelevant to whether a computer counts as a product if customers desire it strongly enough.",
+      "Marketing excludes a computer from products when sold to a manufacturing firm because businesses do not have wishes or needs.",
+      "Marketing excludes a computer from products when sold to a family home because households only receive gifts, not products."
+    ],
+    "subsection": "5.1",
+    "case_id": "CASE 5.1.16",
+    "context": "Consider a wholesale stationery supplier that sells printers to corporate offices while also stocking identical models for walk-in household buyers. Evaluate the following economic assertions:",
+    "difficulty_level": "5/5",
+    "answer_key": [
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.17",
+    "title": "Angebot und Nachfrage",
+    "context": "Bewerten Sie die folgenden Aussagen zum Thema Angebot und Nachfrage:",
+    "statements": [
+      "Das Angebot eines Gutes ist die gesamte Menge dieses Gutes, die zum Verkauf angeboten wird.",
+      "Die Nachfrage umfasst nur den Wunsch zu kaufen, unabhängig davon, ob die Wirtschaftsteilnehmer das Gut auch bezahlen können.",
+      "Käuferinnen und Käufer eines Gutes und Verkäuferinnen und Verkäufer dieses Gutes treffen auf einem Markt zusammen.",
+      "Das Angebot eines Gutes besteht nur aus der Menge, die ein einzelner Anbieter in seinem Lager hat.",
+      "Die gesamte Menge an Kakaobohnen, die alle Nachfrager kaufen wollen und können, stellt die gesamte Nachfrage nach Kakaobohnen dar."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zum Verkauf gestellt, nicht irgendwo gehortet: Das Buch definiert das Angebot eines Gutes als die gesamte Menge dieses Gutes, die zum Verkauf angeboten wird. Es geht um die angebotene Menge, nicht um Wünsche, Pläne oder bereits abgeschlossene Käufe. Genau diese Menge steht der Nachfrage gegenüber, sobald Käuferinnen und Verkäuferinnen auf einem Markt zusammentreffen. Im Kakaobeispiel ist das die von allen Anbietern angebotene Menge an Kakaobohnen, nicht die Ernte eines einzelnen Betriebs und nicht die schon gelieferte Ware. Angebot misst, was jetzt zum Verkauf steht. Wer Angebot mit Wunsch, Plan oder abgeschlossener Lieferung verwechselt, misst nicht die zum Verkauf stehende Menge.\n\nDie Aussage ist wahr.",
+      "Wollen allein reicht nicht. Die Nachfrage ist die gesamte Menge eines Gutes, die Wirtschaftsteilnehmer kaufen wollen und können. Wer den Kauf nur wünscht, aber nicht zahlen kann, zählt nicht zur gesamten Nachfrage. Die Einschränkung auf den bloßen Wunsch streicht die zweite Hälfte der Definition und macht den Satz falsch.\n\nDie Aussage ist falsch.",
+      "Markt meint hier das Zusammentreffen. Käuferinnen und Käufer eines Gutes und Verkäuferinnen und Verkäufer dieses Gutes treffen auf einem sogenannten Markt zusammen. Ohne diese Begegnung von beiden Seiten gäbe es weder das gegenüberstehende Angebot noch die Nachfrage im Sinne des Abschnitts. Der Satz gibt genau diese Ausgangslage wieder.\n\nDie Aussage ist wahr.",
+      "Ein Lager eines Betriebs ist nicht der Markt. Das Angebot umfasst die gesamte Menge, die von allen Anbietern zum Verkauf angeboten wird, im Kakaobeispiel die von allen Anbietern von Kakaobohnen angebotene Menge. Wer nur einen einzelnen Anbieter zählt, unterschlägt die übrigen Verkäuferinnen und Verkäufer desselben Gutes. Die Definition ist aggregiert, nicht betriebsbezogen. Ein volles Lager ohne Verkaufsabsicht zählt ebenso wenig wie die Menge nur eines Händlers, wenn andere dasselbe Gut ebenfalls anbieten. Genau deshalb ist die Begrenzung auf ein einzelnes Lager falsch.\n\nDie Aussage ist falsch.",
+      "Kakaobohnen dienen dem Buch als Beispiel für beide Seiten. Die gesamte Menge, die alle Nachfrager kaufen wollen und können, ist die gesamte Nachfrage nach Kakaobohnen. Wollen und Können gehören zusammen: Kaufabsicht ohne Zahlungsfähigkeit zählt ebenso wenig wie Zahlungsfähigkeit ohne Kaufabsicht. Das Beispiel überträgt die allgemeine Definition der Nachfrage auf ein konkretes Gut. Wirtschaftsteilnehmer, die kaufen wollen und können, bilden gemeinsam diese Menge, nicht ein einzelner Wunsch und nicht die schon gekaufte Lieferung von gestern. Das Buch braucht dieses Beispiel, damit Wollen und Können nicht als zwei getrennte Märkte missverstanden werden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.18",
+    "title": "Kakaobohnen am Markt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Angebot und zur Nachfrage nach Kakaobohnen:",
+    "statements": [
+      "Die von allen Anbietern von Kakaobohnen angebotene Menge an Kakaobohnen stellt das Angebot an Kakaobohnen dar.",
+      "Die Nachfrage nach Kakaobohnen ist die gesamte Menge, die Wirtschaftsteilnehmer kaufen wollen und können.",
+      "Wer Kakaobohnen kaufen möchte, aber kein Tauschmittel dafür einsetzen kann, bildet bereits die gesamte Nachfrage.",
+      "Dem gesamten Angebot eines Gutes steht die Nachfrage gegenüber.",
+      "Das Angebot an Kakaobohnen umfasst ausschließlich die Menge, die bereits verkauft und geliefert wurde."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Alle Anbieter zählen mit. Das Buch sagt ausdrücklich: Die von allen Anbietern von Kakaobohnen angebotene Menge an Kakaobohnen stellt das Angebot an Kakaobohnen dar. Es ist die Summe der zum Verkauf gestellten Mengen, nicht die Ernte eines einzelnen Betriebs und nicht die schon abgewickelten Lieferungen. Genau diese gesamte angebotene Menge ist das Angebot des Gutes.\n\nDie Aussage ist wahr.",
+      "Nachfragerseite analog: Die gesamte Menge an Kakaobohnen, die alle Nachfrager kaufen wollen und können, stellt die gesamte Nachfrage nach Kakaobohnen dar. Wirtschaftsteilnehmer müssen kaufen wollen und können. Das Beispiel wiederholt die allgemeine Definition der Nachfrage am konkreten Gut. Beide Bedingungen bleiben verbindlich.\n\nDie Aussage ist wahr.",
+      "Kaufwunsch ohne Können füllt die Nachfrage nicht. Die Definition verlangt die Menge, die Wirtschaftsteilnehmer kaufen wollen und können. Fehlt das Können, etwa weil kein Geld oder anderes Tauschmittel eingesetzt werden kann, gehört dieser Wunsch nicht zur gesamten Nachfrage. Die Behauptung, der bloße Wunsch sei schon die gesamte Nachfrage, widerspricht dem „und können“.\n\nWer nur möchte, steht noch nicht als Nachfrager im Sinne des Abschnitts. Das Buch koppelt Absicht und Fähigkeit. Ein Haushalt, der Kakaobohnen gern hätte, sie aber nicht erwerben kann, erhöht die definierte Nachfrage nicht. Deshalb ist der Satz falsch.\n\nDie Aussage ist falsch.",
+      "Gegenüberstehen ist der nächste Schritt nach den Definitionen. Dem gesamten Angebot eines Gutes steht die Nachfrage gegenüber. Angebot und Nachfrage sind also zwei Seiten desselben Marktes für dasselbe Gut, nicht zwei voneinander getrennte Welten. Erst dieses Gegenüber macht das Zusammentreffen auf dem Markt verständlich.\n\nDie Aussage ist wahr.",
+      "Angeboten heißt zum Verkauf gestellt, nicht schon verkauft. Das Angebot ist die gesamte Menge, die zum Verkauf angeboten wird. Bereits verkaufte und gelieferte Mengen sind abgewickelte Täusche, nicht mehr die angebotene Menge. Wer das Angebot auf das schon Gelieferte verengt, verdreht die Definition.\n\nVerkaufte Ware hat den Markt schon verlassen. Was noch angeboten wird, kann gekauft werden; was schon geliefert ist, steht nicht mehr als Angebot. Das Buch misst das Angebot an der zum Verkauf angebotenen Menge aller Anbieter. Die Einschränkung auf abgeschlossene Lieferungen ist daher falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.19",
+    "title": "Physische und virtuelle Märkte",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, was unter einem Markt verstanden wird:",
+    "statements": [
+      "Märkte sind ausschließlich physische Orte wie Geschäfte oder Börsen.",
+      "Elektronische Märkte gelten als virtuelle Orte, an denen Angebot und Nachfrage zusammenkommen.",
+      "Unter Markt werden auch nicht physische Möglichkeiten verstanden, durch die Angebot und Nachfrage zusammenkommen.",
+      "Ohne ein Ladengeschäft mit Theke kann kein Markt existieren.",
+      "Käuferinnen und Verkäuferinnen können auf einem Markt in Beziehung treten, auch wenn sie sich nicht in demselben Gebäude treffen."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Geschäfte und Börsen sind Beispiele, nicht die ganze Definition. Unter Markt werden nicht nur physische Orte des Zusammentreffens von Angebot und Nachfrage verstanden. Auch weitere, nicht physische Möglichkeiten sind umfasst, zum Beispiel virtuelle Orte wie elektronische Märkte. Die Einschränkung auf ausschließlich physische Orte streicht genau diesen zweiten Teil.\n\nDie Aussage ist falsch.",
+      "Virtuell zählt ausdrücklich. Das Buch nennt elektronische Märkte als virtuelle Orte, durch die Angebot und Nachfrage zusammenkommen. Ein Markt braucht also kein Verkaufsgebäude, solange Käuferinnen und Verkäuferinnen über diesen Mechanismus in Beziehung treten. Die elektronische Plattform ist damit Markt im Sinne des Abschnitts.\n\nElektronische Märkte stehen nicht neben der Definition, sondern in ihr. Sie sind die genannten nicht physischen Möglichkeiten des Zusammentreffens. Wer nur die Markthalle gelten lässt, übersieht diesen Satz.\n\nDie Aussage ist wahr.",
+      "Nicht physisch ist Teil des Marktbegriffs. Weitere Möglichkeiten, durch die Angebot und Nachfrage zusammenkommen, sind umfasst, zum Beispiel virtuelle Orte. Der Markt ist damit breiter als die Adresse eines Geschäfts. Der Satz trifft die Erweiterung, die das Buch nach den physischen Beispielen anschließt.\n\nDie Aussage ist wahr.",
+      "Die Theke ist kein Pflichtmerkmal. Physische Orte wie Geschäfte und Börsen sind Beispiele; virtuelle Orte wie elektronische Märkte gehören dazu. Ein Markt kann also existieren, ohne dass jemand über eine Ladentheke verkauft. Die Behauptung, ohne Ladengeschäft gebe es keinen Markt, widerspricht der Öffnung auf nicht physische Möglichkeiten.\n\nSamuelson und Nordhaus beschreiben den Markt als Mechanismus, mit dessen Hilfe Käufer und Verkäufer miteinander in Beziehung treten. Ein Mechanismus kann elektronisch sein. Wer die Existenz eines Marktes an ein Gebäude bindet, verwechselt ein Beispiel mit der Definition.\n\nDie Aussage ist falsch.",
+      "Beziehung statt Raumzwang: Der Markt ist ein Mechanismus, mit dessen Hilfe Käufer und Verkäufer miteinander in Beziehung treten, um Preis und Menge zu ermitteln. Diese Beziehung kann in einem Geschäft, an einer Börse oder auf einem elektronischen Markt entstehen. Dasselbe Gebäude ist dafür nicht erforderlich. Der Satz hält sich an diese weite Fassung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.20",
+    "title": "Markt als Mechanismus",
+    "context": "Bewerten Sie die folgenden Aussagen zur Bestimmung von Preis und Menge auf dem Markt:",
+    "statements": [
+      "Der Markt ist ein Mechanismus, mit dessen Hilfe Käufer und Verkäufer miteinander in Beziehung treten, um Preis und Menge einer Ware, einer Dienstleistung oder eines Vermögenswerts zu ermitteln.",
+      "Ein Markt existiert nur dort, wo eine Behörde jeden Transaktionspreis festsetzt.",
+      "Auf einem Markt können Preis und Menge einer Dienstleistung ermittelt werden, nicht nur die einer körperlichen Ware.",
+      "Dienstleistungen können nicht auf einem Markt gehandelt werden, weil sie unsichtbar sind.",
+      "Auch Vermögenswerte können Gegenstand der Preis- und Mengenermittlung auf einem Markt sein."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Samuelson und Nordhaus liefern die im Buch übernommene Kurzformel. Der Markt ist ein Mechanismus, mit dessen Hilfe Käufer und Verkäufer miteinander in Beziehung treten, um Preis und Menge einer Ware, einer Dienstleistung oder eines Vermögenswerts zu ermitteln. Mechanismus, Beziehung und Ermittlung von Preis und Menge gehören zusammen. Die Aussage gibt diese Bestimmung wieder.\n\nDie Aussage ist wahr.",
+      "Behördliche Festsetzung jedes Preises ist kein Merkmal des Marktbegriffs in diesem Abschnitt. Käufer und Verkäufer treten in Beziehung, um Preis und Menge zu ermitteln; das ist der beschriebene Mechanismus. Eine Pflicht, dass eine Behörde jeden Transaktionspreis setzt, steht hier nicht. Die Einschränkung „nur dort“ ist daher falsch.\n\nPreisbildung entsteht durch das Zusammentreffen von Angebot und Nachfrage und ist eine wesentliche Aufgabe von Märkten. Das ist etwas anderes als die Behauptung, Märkte existierten nur bei lückenloser behördlicher Preissetzung. Der Satz verdreht Aufgabe und Existenzbedingung.\n\nDie Aussage ist falsch.",
+      "Ware ist nicht alles. Die zitierte Bestimmung nennt Ware, Dienstleistung oder Vermögenswert. Preis und Menge einer Dienstleistung können also auf dem Markt ermittelt werden. Wer den Markt auf körperliche Waren verengt, streicht zwei der drei genannten Gegenstände.\n\nDie Aussage ist wahr.",
+      "Unsichtbarkeit schließt den Markt nicht aus. Dienstleistungen stehen in der Definition neben der Ware. Käufer und Verkäufer können in Beziehung treten, um Preis und Menge einer Dienstleistung zu ermitteln, etwa auf physischen oder elektronischen Märkten. Die Behauptung, unsichtbare Leistungen seien nicht marktlich, widerspricht dem zitierten Satz.\n\nReparatur, Beratung oder eine andere Leistung können angeboten und nachgefragt werden. Das Buch behandelt Güter als Produkte und Dienstleistungen; hier kommt die Dienstleistung ausdrücklich in die Marktformel. Unsichtbarkeit ist kein Ausschlusskriterium.\n\nDie Aussage ist falsch.",
+      "Vermögenswerte stehen in derselben Aufzählung. Preis und Menge eines Vermögenswerts können auf dem Markt ermittelt werden, sobald Käufer und Verkäufer über den Mechanismus in Beziehung treten. Der Marktbegriff ist also nicht auf Alltagsprodukte beschränkt. Der Satz folgt der dritten genannten Kategorie.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.21",
+    "title": "Arten von Märkten",
+    "context": "Bewerten Sie die folgenden Aussagen zu verschiedenen Arten von Märkten:",
+    "statements": [
+      "Je nachdem, um welches Gut es sich handelt, werden verschiedene Arten von Märkten unterschieden, zum Beispiel der Konsumgütermarkt oder der Arbeitsmarkt.",
+      "Es gibt nur einen einzigen Markt, auf dem alle Güter gemeinsam und ununterscheidbar gehandelt werden.",
+      "Der Immobilienmarkt, der Kapitalmarkt und der Rohstoffmarkt sind Beispiele für Marktarten.",
+      "Der Arbeitsmarkt ist kein Markt, weil Arbeit im Buch nicht als Gegenstand von Angebot und Nachfrage vorkommt.",
+      "Der Emissionszertifikatemarkt wird als Beispiel für eine Marktart genannt."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Das Gut bestimmt die Marktart. Je nachdem, um welches Gut es sich handelt, werden verschiedene Arten von Märkten unterschieden. Konsumgütermarkt und Arbeitsmarkt stehen in der Beispielreihe. Unterschiedliche Güter, unterschiedliche Märkte: genau das sagt der Abschnitt.\n\nDie Aussage ist wahr.",
+      "Ein Einheitsmarkt für alles widerspricht der Unterscheidung nach Gütern. Das Buch zählt Konsumgütermarkt, Arbeitsmarkt, Immobilienmarkt, Kapitalmarkt, Rohstoffmarkt und Emissionszertifikatemarkt als verschiedene Arten. Wer behauptet, es gebe nur einen einzigen, ununterscheidbaren Markt für alle Güter, streicht diese Gliederung.\n\nÖrtliche Abgrenzungen wie der österreichische Arbeitsmarkt oder der Weltmarkt für Rohöl kommen zusätzlich. Schon deshalb ist die Idee eines einzigen gemeinsamen Marktes zu grob und falsch. Gut und Gebiet werden kombiniert, nicht zu einem Haufen verschmolzen. Ein Markt für Konsumgüter ist nicht derselbe Markt wie der für Arbeit oder Rohstoffe.\n\nDie Aussage ist falsch.",
+      "Drei weitere Beispiele aus derselben Liste: Immobilienmarkt, Kapitalmarkt und Rohstoffmarkt. Sie stehen nebeneinander als Marktarten, nicht als Synonyme. Die Aussage wiederholt die Buchaufzählung korrekt.\n\nDie Aussage ist wahr.",
+      "Arbeit hat einen eigenen Markt in der Liste. Der Arbeitsmarkt wird ausdrücklich als Marktart genannt, sobald es um das betreffende Gut geht. Angebot und Nachfrage treffen auch dort zusammen. Die Behauptung, Arbeit komme nicht als Marktgegenstand vor, ist falsch.\n\nSpäter im selben Absatz erscheint der österreichische Arbeitsmarkt als örtlich bestimmtes Beispiel. Wer den Arbeitsmarkt aus dem Marktbegriff streicht, widerspricht beiden Sätzen.\n\nDie Aussage ist falsch.",
+      "Emissionszertifikate stehen in der Beispielreihe der Marktarten. Das Buch führt den Emissionszertifikatemarkt neben Konsumgütern, Arbeit, Immobilien, Kapital und Rohstoffen. Die Nennung als Marktart ist also buchgetreu.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.22",
+    "title": "Örtlich bestimmte Märkte",
+    "context": "Bewerten Sie die folgenden Aussagen zu Märkten in einem örtlich bestimmten Gebiet:",
+    "statements": [
+      "Meint man den Markt für ein bestimmtes Gut in einem örtlich genau bestimmten Gebiet, so spricht man zum Beispiel vom österreichischen Arbeitsmarkt.",
+      "Der europäische Kapitalmarkt bezeichnet den Kapitalmarkt in einem örtlich bestimmten Gebiet.",
+      "Der Weltmarkt für Rohöl ist ein Beispiel für den Markt eines bestimmten Gutes in einem räumlich gefassten Zusammenhang.",
+      "Märkte lassen sich niemals örtlich abgrenzen, sondern existieren nur als ein einziger Weltmarkt aller Güter.",
+      "Der österreichische Arbeitsmarkt und der Weltmarkt für Rohöl sind dieselbe Marktart am selben Ort."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Ort plus Gut ergibt die Bezeichnung. Meint man den Markt für ein bestimmtes Gut in einem örtlich genau bestimmten Gebiet, spricht man zum Beispiel vom österreichischen Arbeitsmarkt. Arbeit ist das Gut, Österreich das Gebiet. Der Satz gibt das Buchbeispiel wörtlich wieder.\n\nDie Aussage ist wahr.",
+      "Kapitalmarkt plus Europa: Derselbe Gedanke gilt für den europäischen Kapitalmarkt. Das Gut sind Kapitalleistungen, das Gebiet ist europäisch gefasst. Die Bezeichnung trennt diesen Markt vom österreichischen Arbeitsmarkt oder vom Weltmarkt für Rohöl.\n\nDie Aussage ist wahr.",
+      "Rohöl auf dem Weltmarkt folgt derselben Logik. Das Buch nennt den Weltmarkt für Rohöl als Beispiel, wenn der Markt für ein bestimmtes Gut in einem räumlich bestimmten Zusammenhang gemeint ist. Weltmarkt ist hier die weite räumliche Fassung, Rohöl das Gut. Das Beispiel steht in einer Reihe mit Arbeitsmarkt und Kapitalmarkt.\n\nRäumliche Fassung heißt nicht, dass alle Güter auf einem Haufen liegen. Rohöl bleibt Rohöl, Arbeit bleibt Arbeit. Der Weltmarkt für Rohöl ist der Markt dieses Gutes in weltweiter Betrachtung, neben dem europäischen Kapitalmarkt und dem österreichischen Arbeitsmarkt als weiteren Kombinationen aus Gut und Gebiet. Die drei Buchbeispiele liegen bewusst auf unterschiedlichen Ebenen von Gut und Raum.\n\nDie Aussage ist wahr.",
+      "Niemals örtlich abgrenzen, das sagt das Buch nicht. Es nennt ausdrücklich den österreichischen Arbeitsmarkt, den europäischen Kapitalmarkt und den Weltmarkt für Rohöl. Örtliche Bestimmung ist also vorgesehen, nicht verboten. Die Behauptung eines einzigen Weltmarkts aller Güter widerspricht der Unterscheidung nach Gut und Gebiet.\n\nDie Aussage ist falsch.",
+      "Verschiedene Güter, verschiedene Gebiete. Arbeitsmarkt in Österreich ist nicht derselbe Markt wie der Weltmarkt für Rohöl. Marktart und Ort fallen auseinander: Arbeit gegen Rohöl, Österreich gegen Welt. Die Gleichsetzung ist falsch.\n\nKonsumgüter, Arbeit, Immobilien, Kapital, Rohstoffe und Emissionszertifikate werden als Arten getrennt. Dazu kommt die örtliche Bestimmung. Zwei Beispiele aus der Liste zu vermengen, hebt genau diese Trennung auf. Wer beides in eins setzt, verfehlt Gut und Gebiet zugleich.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.23",
+    "title": "Preisbildung auf Märkten",
+    "context": "Bewerten Sie die folgenden Aussagen zur Preisbildung:",
+    "statements": [
+      "Durch das Zusammentreffen von Angebot und Nachfrage kommt es zur Preisbildung.",
+      "Die Preisbildung ist eine wesentliche Aufgabe von Märkten.",
+      "Der Preis drückt in der Regel in Geldeinheiten aus, wie viel für ein Gut zu bezahlen ist.",
+      "Preise entstehen unabhängig davon, ob Angebot und Nachfrage auf einem Markt zusammentreffen.",
+      "Märkte haben mit der Preisbildung nichts zu tun."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Zusammentreffen löst die Preisbildung aus. Das Buch sagt: Durch das Zusammentreffen von Angebot und Nachfrage kommt es zur Preisbildung. Ohne dieses Gegenüber von angebotener Menge und der Menge, die Nachfrager kaufen wollen und können, fehlt der beschriebene Vorgang. Der Satz hält sich an diese Reihenfolge.\n\nDie Aussage ist wahr.",
+      "Aufgabe, nicht Nebensache: Die Preisbildung ist eine wesentliche Aufgabe von Märkten. Märkte bringen Käufer und Verkäufer in Beziehung, und daraus entsteht der Preis. Wer Märkte nur als Lagerhallen denkt, übersieht diese Aufgabe.\n\nMechanismus und Aufgabe passen zusammen. Preis und Menge einer Ware, einer Dienstleistung oder eines Vermögenswerts werden ermittelt, indem beide Seiten in Beziehung treten. Genau das ist die wesentliche Aufgabe, die der Absatz der Preisbildung zuschreibt. Ohne Zusammentreffen von Angebot und Nachfrage fehlt dieser Vorgang. Preisbildung bleibt die wesentliche Aufgabe, ob der Ort ein Geschäft, eine Börse oder ein elektronischer Markt ist.\n\nDie Aussage ist wahr.",
+      "Geldeinheiten sind der Regelfall. Der Preis drückt in der Regel in Geldeinheiten aus, wie viel für ein Gut zu bezahlen ist. „In der Regel“ lässt andere Tauschmittel denkbar, nennt aber Geld als den üblichen Maßstab. Der Satz gibt diese Formulierung wieder.\n\nDie Aussage ist wahr.",
+      "Unabhängig vom Zusammentreffen entsteht der Preis in diesem Abschnitt nicht. Erst Angebot und Nachfrage auf dem Markt führen zur Preisbildung. Wer die Unabhängigkeit behauptet, trennt den Preis von seiner beschriebenen Entstehung.\n\nKäuferinnen und Verkäuferinnen treffen zusammen; daraus folgt die Preisbildung als wesentliche Marktaufgabe. Ein Preis ohne dieses Zusammentreffen gehört nicht zur Darstellung hier. Deshalb ist der Satz falsch. Der Preis soll in der Regel in Geldeinheiten zeigen, wie viel zu zahlen ist, und das nach diesem Zusammentreffen, nicht davor in einem luftleeren Raum. Unabhängigkeit vom Marktgeschehen würde die wesentliche Aufgabe der Preisbildung leugnen.\n\nDie Aussage ist falsch.",
+      "Nichts mit Preisbildung zu tun: Das Gegenteil steht im Text. Preisbildung ist eine wesentliche Aufgabe von Märkten. Der Markt als Mechanismus ermittelt Preis und Menge. Die Absage an jeden Zusammenhang ist falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.24",
+    "title": "Preis als Knappheitsindikator",
+    "context": "Bewerten Sie die folgenden Aussagen zum Preis als Indikator für Knappheit:",
+    "statements": [
+      "Der Preis ist auch ein Indikator für die Knappheit und das Ausmaß der Knappheit eines Gutes.",
+      "Ist das Angebot klein, die Nachfrage aber hoch, bildet sich in der Regel ein hoher Preis.",
+      "Preise dienen nur als Quittung und tragen keine Information über die Knappheit eines Gutes.",
+      "Ist die Nachfrage niedrig und das Angebot hoch, bildet sich in der Regel ein niedriger Preis.",
+      "Die Knappheit eines Gutes lässt sich am Marktpreis niemals ablesen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Indikator heißt Anzeiger, nicht bloß Kassenzettel. Der Preis ist auch ein Indikator für die Knappheit und das Ausmaß der Knappheit eines Gutes. Neben der Information, wie viel zu zahlen ist, zeigt er, wie knapp das Gut ist. Der Satz trifft beide Hälften: Knappheit und ihr Ausmaß.\n\nDie Aussage ist wahr.",
+      "Klein und hoch ergibt in der Regel hoch. Ist das Angebot klein, die Nachfrage aber hoch, bildet sich in der Regel ein hoher Preis. Das Buch formuliert das als typischen Zusammenhang, nicht als ausnahmslose Naturkonstante. Innerhalb dieser Formulierung ist der Satz richtig.\n\nKnappheit wird sichtbar, weil wenige angebotene Einheiten vielen kaufwilligen und kauffähigen Nachfragern gegenüberstehen. Der hohe Preis zeigt das Ausmaß dieser Knappheit. Genau das meint der Indikator.\n\nDie Aussage ist wahr.",
+      "Nur Quittung, keine Knappheitsinformation: Das Buch sagt das Gegenteil. Der Preis drückt aus, wie viel zu zahlen ist, und ist auch ein Indikator für Knappheit und ihr Ausmaß. Wer die Knappheitssignalwirkung streicht, lässt die zweite Funktion weg. Der Satz ist falsch.\n\nQuittung wäre eine bloße Zahlungsbestätigung. Der Abschnitt bindet den Preis an Angebot, Nachfrage und Knappheit. Eine reine Belegfunktion ohne Informationsgehalt über Knappheit steht dort nicht.\n\nDie Aussage ist falsch.",
+      "Die Umkehrung gilt analog. Ist die Nachfrage niedrig und das Angebot hoch, bildet sich in der Regel ein niedriger Preis. Viele angebotene Einheiten treffen auf wenige, die kaufen wollen und können. Der niedrige Preis zeigt dann geringe Knappheit in diesem Sinne.\n\nDie Aussage ist wahr.",
+      "Niemals ablesen widerspricht dem Indikator. Gerade weil der Preis Knappheit und ihr Ausmaß anzeigt, lässt sich aus einem hohen oder niedrigen Preis etwas über die Knappheitslage lesen, in der Regel im beschriebenen Muster. Die absolute Sperre „niemals“ ist falsch.\n\nKleines Angebot und hohe Nachfrage, hoher Preis; niedriges Nachfrage und hohes Angebot, niedriger Preis. Das sind die vom Buch genannten Regelzusammenhänge. Wer Ablesen grundsätzlich verneint, verwirft den Indikatorbegriff. Der Preis bleibt zugleich der Betrag, der in der Regel in Geldeinheiten zu zahlen ist, und das Signal für das Ausmaß der Knappheit.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.25",
+    "title": "Hoher Preis und mehr Angebot",
+    "context": "Bewerten Sie die folgenden Aussagen dazu, wie ein hoher Preis auf Anbieter wirkt:",
+    "statements": [
+      "Ein hoher Preis könnte Anbieter motivieren, das Angebot zu erhöhen.",
+      "Neue Anbieter würden in den Markt eintreten, um vom hohen Preis zu profitieren.",
+      "Ein hoher Preis hält alle potenziellen Anbieter dauerhaft vom Markteintritt ab.",
+      "Ist das Angebot klein und die Nachfrage hoch, bildet sich in der Regel ein hoher Preis, der Anlass für mehr Angebot oder neue Anbieter sein kann.",
+      "Bei kleinem Angebot und hoher Nachfrage bildet sich in der Regel ein besonders niedriger Preis."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Motivation zur Ausweitung: Ein hoher Preis könnte Anbieter motivieren, das Angebot zu erhöhen. Bestehende Verkäuferinnen und Verkäufer stellen dann mehr Menge zum Verkauf. Das Buch formuliert das als mögliche Folge des hohen Preises, nicht als Pflicht jedes Betriebs. Innerhalb dieser Möglichkeit ist der Satz richtig.\n\nDie Aussage ist wahr.",
+      "Eintritt als zweite Folge. Oder neue Anbieter würden in den Markt eintreten, um vom hohen Preis zu profitieren. Der hohe Preis wirkt also nicht nur auf bereits tätige Anbieter, sondern kann zusätzliche Verkäuferinnen und Verkäufer anlocken. Profitieren vom hohen Preis ist das im Text genannte Motiv.\n\nBeides kann zusammenkommen: mehr Menge der Alten und Eintritt der Neuen. Der Satz isoliert den Eintritt, der ausdrücklich genannt ist. Er bleibt wahr. Hoher Preis ist Anreiz, nicht Absperrung. Wer vom hohen Preis profitieren will, kommt als neuer Anbieter, nicht als Zuschauer hinter einer Sperre.\n\nDie Aussage ist wahr.",
+      "Dauerhaft abhalten ist die falsche Richtung. Der hohe Preis kann neue Anbieter zum Eintritt bewegen, um davon zu profitieren, und bestehende Anbieter zur Erhöhung des Angebots. Wer behauptet, der hohe Preis halte alle potenziellen Anbieter dauerhaft fern, kehrt den beschriebenen Anreiz um.\n\nDie Wörter alle und dauerhaft überziehen den Anreiz. Das Buch spricht von Motivation und Eintritt, nicht von einer Sperre. Deshalb ist der Satz falsch.\n\nDie Aussage ist falsch.",
+      "Kette aus Regelpreis und Reaktion: Kleines Angebot und hohe Nachfrage bilden in der Regel einen hohen Preis. Dieser hohe Preis könnte das Angebot erhöhen oder neue Anbieter anziehen. Der Satz verbindet beide Buchstellen in der Reihenfolge des Absatzes.\n\nDie Aussage ist wahr.",
+      "Besonders niedrig bei Knappheit: Das Gegenteil steht im Text. Kleines Angebot und hohe Nachfrage führen in der Regel zu einem hohen Preis. Ein niedriger Preis gehört zur umgekehrten Lage mit niedriger Nachfrage und hohem Angebot. Der Satz vertauscht die Regel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.26",
+    "title": "Steigendes Angebot und sinkende Preise",
+    "context": "Bewerten Sie die folgenden Aussagen zur Preisentwicklung nach einem Angebotsanstieg:",
+    "statements": [
+      "Ein steigendes Angebot würde bei gleichbleibender Nachfrage zu einem Sinken der Preise führen.",
+      "Bleibt die Nachfrage gleich und das Angebot steigt, fallen die Preise typischerweise.",
+      "Ein höheres Angebot bei unveränderter Nachfrage lässt die Preise in der Regel steigen.",
+      "Der hohe Preis kann den Anstoß geben, dass das Angebot wächst, wonach die Preise bei gleichbleibender Nachfrage sinken.",
+      "Gleichbleibende Nachfrage spielt für die beschriebene Preissenkung nach einem Angebotsanstieg keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Bedingung gleichbleibende Nachfrage: Ein steigendes Angebot würde bei gleichbleibender Nachfrage dann zu einem Sinken der Preise führen. Mehr zum Verkauf gestellte Menge trifft auf unveränderte kaufwillige und kauffähige Nachfrage. Der Preisdruck geht nach unten. Der Satz ist die Buchfolge nach dem hohen Preis.\n\nDie Aussage ist wahr.",
+      "Typisch heißt hier dieselbe Folge in anderen Worten. Angebot steigt, Nachfrage bleibt, Preise fallen. Das ist kein neues Gesetz, sondern die Wiederholung des Satzes über steigendes Angebot bei gleichbleibender Nachfrage. Innerhalb des Abschnitts ist das korrekt.\n\nDie Aussage ist wahr.",
+      "Steigen nach mehr Angebot bei gleicher Nachfrage widerspricht dem Text. Dort sinken die Preise, wenn das Angebot steigt und die Nachfrage gleich bleibt. Wer ein Steigen behauptet, kehrt die beschriebene Bewegung um.\n\nDer hohe Preis war der Ausgangspunkt, der mehr Angebot oder Eintritt auslösen kann. Die nächste Stufe ist das Sinken, nicht ein weiteres Steigen allein wegen des größeren Angebots. Deshalb ist der Satz falsch.\n\nDie Aussage ist falsch.",
+      "Anstoß und Folge in einer Linie: Hoher Preis motiviert zur Erhöhung des Angebots oder zum Eintritt. Steigt das Angebot und bleibt die Nachfrage, sinken die Preise. Der Satz koppelt Motiv und anschließende Preissenkung so, wie der Absatz sie hintereinander stellt.\n\nOhne den hohen Preis fehlte der beschriebene Anreiz. Ohne gleichbleibende Nachfrage wäre die Preissenkung so nicht formuliert. Beide Glieder stehen im Buch.\n\nDie Aussage ist wahr.",
+      "Keine Rolle für die gleichbleibende Nachfrage: Das Buch hängt die Preissenkung ausdrücklich an diese Bedingung. Fehlt sie im Satz, fehlt die Voraussetzung der dargestellten Folge. Die Behauptung, sie spiele keine Rolle, ist falsch.\n\nSteigendes Angebot allein wird nicht isoliert als Preissenkung ohne Blick auf die Nachfrage beschrieben. Der Text sagt: bei gleichbleibender Nachfrage. Wer diese Klausel streicht, ändert den Mechanismus. Die Klausel gehört zur beschriebenen Preissenkung, sie ist keine Zierde am Rand. Ohne gleichbleibende Nachfrage beschreibt der Absatz das Sinken der Preise so nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.27",
+    "title": "Niedriger Preis und Marktaustritt",
+    "context": "Bewerten Sie die folgenden Aussagen zu niedrigem Preis und dem Austritt von Unternehmen:",
+    "statements": [
+      "Ist die Nachfrage niedrig und das Angebot hoch, bildet sich in der Regel ein niedriger Preis.",
+      "Ein niedriger Preis führt typischerweise dazu, dass Unternehmen, die bei diesem Preis nicht profitabel geführt werden können, aus dem Markt austreten.",
+      "Austritt kann bedeuten, dass Unternehmen schließen oder sich auf andere Güter und Dienstleistungen fokussieren.",
+      "Ein niedriger Preis zwingt alle Anbieter, das Angebot weiter auszuweiten.",
+      "Unprofitable Unternehmen bleiben bei niedrigem Preis immer im Markt, weil ein Austritt unmöglich ist."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Umkehr der Knappheitslage: Niedrige Nachfrage und hohes Angebot bilden in der Regel einen niedrigen Preis. Viele Einheiten stehen wenigen gegenüber, die kaufen wollen und können. Der Preis zeigt dann geringe Knappheit. Der Satz folgt der zweiten Regel des Absatzes.\n\nDie Aussage ist wahr.",
+      "Typischerweise Austritt: Jene Unternehmen, die bei einem so niedrigen Preis nicht profitabel geführt werden können, treten aus dem Markt aus. Der niedrige Preis ist der Anlass, nicht ein freiwilliges Hobby. Typischerweise, nicht in jedem Einzelfall ohne Ausnahme, so das Buch.\n\nProfitabilität ist die Schwelle. Wer unter dem niedrigen Preis nicht mehr wirtschaftlich arbeiten kann, geht. Das ist die beschriebene Reaktion der Anbieterseite. Ohne diese Schwelle gäbe es im Text keinen Grund für den Austritt. Der niedrige Preis filtert über die fehlende Profitabilität, nicht über eine Pflicht zum Bleiben.\n\nDie Aussage ist wahr.",
+      "Zwei Formen des Austritts stehen in Klammern: entweder schließen, oder sich auf andere Güter und Dienstleistungen fokussieren. Austritt heißt also nicht nur Insolvenz und dunkle Fenster. Ein Wechsel des Sortiments ist im Text vorgesehen. Der Satz nennt beide Wege.\n\nDie Aussage ist wahr.",
+      "Weiter ausweiten bei niedrigem Preis ist die falsche Bewegung. Typisch ist der Austritt unprofitabler Unternehmen, nicht die Ausweitung durch alle Anbieter. „Alle“ und „ausweiten“ widersprechen dem beschriebenen Druck nach unten.\n\nHohe Preise können das Angebot erhöhen. Niedrige Preise treiben jene hinaus, die nicht profitabel bleiben. Die Richtungen nicht zu vertauschen, ist der Kern dieser Stelle.\n\nDie Aussage ist falsch.",
+      "Immer bleiben, Austritt unmöglich: Das Buch beschreibt gerade den Austritt als typische Folge. Schließen oder Fokuswechsel sind möglich. Die absolute Unmöglichkeit des Austritts und das immerwährende Verbleiben sind falsch.\n\nUnprofitabel bei so niedrigem Preis ist die Bedingung für den Ausgang. Wer sie durch ein Verbot des Austritts ersetzt, nimmt dem Mechanismus die zweite Hälfte nach dem hohen Preis.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.28",
+    "title": "Weniger Angebot nach Austritten",
+    "context": "Bewerten Sie die folgenden Aussagen zu den Folgen des Marktaustritts:",
+    "statements": [
+      "Der Austritt unprofitabler Unternehmen führt zu einem niedrigeren Angebot und einem Steigen der Preise.",
+      "Nach Austritten ist das Angebot niedriger als zuvor, weil Anbieter den Markt verlassen haben.",
+      "Nach dem Austritt unprofitabler Unternehmen fallen die Preise weiter, weil das Angebot steigt.",
+      "Ein niedrigeres Angebot nach Austritten kann die Preise wieder steigen lassen.",
+      "Marktaustritte lassen das Angebot unverändert, weil andere Anbieter sofort denselben Umfang ersetzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Das wiederum führt zu einem niedrigeren Angebot und einem Steigen der Preise. „Das“ meint den Austritt jener, die beim niedrigen Preis nicht profitabel bleiben. Weniger Anbieter, weniger angebotene Menge, dann steigende Preise. Der Satz ist die Schlussetappe des Absatzes.\n\nDie Aussage ist wahr.",
+      "Verlassen senkt die angebotene Menge. Wer schließt oder andere Güter in den Mittelpunkt stellt, bietet das bisherige Gut nicht mehr in dem früheren Umfang an. Das Angebot, definiert als gesamte zum Verkauf angebotene Menge, wird niedriger. Das ist die unmittelbare Mengenfolge des Austritts.\n\nDie Aussage ist wahr.",
+      "Weiter fallen, weil das Angebot steigt: Beides widerspricht der Folge. Austritt senkt das Angebot, und die Preise steigen. Wer fallende Preise und steigendes Angebot nach dem Austritt behauptet, verdreht Ursache und Wirkung.\n\nSteigendes Angebot bei gleichbleibender Nachfrage senkt Preise, das war die Phase nach dem hohen Preis. Nach dem niedrigen Preis und dem Austritt gilt die entgegengesetzte Bewegung. Die Phasen nicht zu vermischen, hält den Mechanismus gerade. Die Korrektur nach dem Austritt zeigt nach oben, nicht weiter nach unten. Nach dem Austritt ist die angebotene Menge kleiner, und genau deshalb steigen die Preise wieder.\n\nDie Aussage ist falsch.",
+      "Wieder steigen lassen: Genau so schließt der Text. Niedrigeres Angebot nach Austritten, dann ein Steigen der Preise. Der niedrige Preis löst den Austritt aus, der Austritt korrigiert über weniger Menge den Preis nach oben. Der Satz trifft diese Korrektur.\n\nDie Aussage ist wahr.",
+      "Unverändertes Angebot durch sofortigen Ersatz steht nicht im Buch. Der Austritt führt zu einem niedrigeren Angebot. Ein automatischer, vollständiger Ersatz durch andere Anbieter würde diese Folge aufheben. Die Behauptung ist falsch.\n\nNeue Anbieter treten bei hohem Preis ein, um zu profitieren. Das ist eine andere Stelle des Mechanismus. Beim Austritt wegen niedrigem Preis beschreibt der Text eine Mengensenkung, keinen sofortigen gleich großen Ersatz. Ersatz aller Ausgeschiedenen in gleichem Umfang beschreibt der Absatz nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.29",
+    "title": "Kakaohandel in Wien",
+    "context": "Händlerinnen und Händler bieten in Wien Kakaobohnen an, teils in einem Lagerhaus, teils über eine Handelsplattform im Netz. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die von allen Anbietern von Kakaobohnen angebotene Menge stellt das Angebot an Kakaobohnen dar.",
+      "Nur der Kaufwunsch ohne Zahlungsfähigkeit zählt als gesamte Nachfrage nach Kakaobohnen.",
+      "Sowohl das Lagerhaus als auch die Plattform im Netz können Märkte sein, auf denen Angebot und Nachfrage zusammenkommen.",
+      "Bildet sich wegen knappem Angebot und hoher Nachfrage ein hoher Preis, können neue Anbieter eintreten, um davon zu profitieren.",
+      "Der hohe Preis verhindert, dass bestehende Anbieter das Angebot an Kakaobohnen erhöhen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wiener Lager ändert die Definition nicht. Die von allen Anbietern von Kakaobohnen angebotene Menge ist das Angebot an Kakaobohnen. Ob die Bohnen in Wien, anderswo oder auf einer Plattform angeboten werden, die Summe der zum Verkauf gestellten Mengen bleibt das Angebot. Ein einzelner Händler ist nur ein Teil davon.\n\nDie Aussage ist wahr.",
+      "Wunsch ohne Können bleibt außen vor. Nachfrage ist die Menge, die Wirtschaftsteilnehmer kaufen wollen und können. Röstereien oder Haushalte, die gern kaufen würden, es aber nicht können, bilden nicht die gesamte Nachfrage. Der Satz streicht das Können und ist falsch.\n\nDie gesamte Menge, die alle Nachfrager kaufen wollen und können, ist die Nachfrage nach Kakaobohnen. Zahlungsfähigkeit und Kaufabsicht gehören zusammen, in Wien wie im Lehrbeispiel.\n\nDie Aussage ist falsch.",
+      "Physisch und virtuell nebeneinander. Geschäfte, Börsen und andere physische Orte zählen, ebenso virtuelle Orte wie elektronische Märkte. Das Lagerhaus und die Plattform im Netz sind genau diese beiden Möglichkeiten, Angebot und Nachfrage zusammenzubringen. Beide können Markt sein.\n\nKäufer und Verkäufer treten in Beziehung, um Preis und Menge zu ermitteln. Das kann an der Rampe oder über den Bildschirm geschehen. Der Marktbegriff verlangt kein Entweder-oder zwischen Halle und Netz. Halle und Netz sind zwei Wege desselben Marktbegriffs, nicht zwei rivalisierende Definitionen.\n\nDie Aussage ist wahr.",
+      "Knappes Angebot, hohe Nachfrage, in der Regel hoher Preis. Dieser hohe Preis könnte Anbieter zur Erhöhung des Angebots bewegen oder neue Anbieter anlocken, die vom hohen Preis profitieren wollen. Der Eintritt neuer Kakaohändlerinnen und Kakaohändler ist die im Buch genannte zweite Reaktion. Der Satz bleibt in diesem Rahmen.\n\nDie Aussage ist wahr.",
+      "Verhindern der Erhöhung ist die falsche Wirkung. Ein hoher Preis könnte Anbieter motivieren, das Angebot zu erhöhen. Bestehende Händlerinnen und Händler würden eher mehr Bohnen zum Verkauf stellen, nicht weniger. Der Satz kehrt den Anreiz um.\n\nProfitieren vom hohen Preis gilt für Neue und für Alte, die ausweiten. Eine Sperre gegen mehr Angebot steht hier nicht. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.30",
+    "title": "Elektronischer Markt für Gebrauchtfahrräder",
+    "context": "Auf einer elektronischen Plattform treffen Anbieter von Gebrauchtfahrrädern und Haushalte zusammen, die ein Rad kaufen wollen und können. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Plattform ist ein virtueller Ort, an dem Angebot und Nachfrage zusammenkommen, und damit ein Markt.",
+      "Ohne Ladenlokal gibt es keinen Markt für die angebotenen Fahrräder.",
+      "Der Preis auf dieser Plattform drückt in der Regel in Geldeinheiten aus, wie viel für ein Rad zu bezahlen ist.",
+      "Preisbildung ist keine Aufgabe dieses Marktes, weil er nicht physisch ist.",
+      "Käufer und Verkäufer können über diesen Mechanismus Preis und Menge der Fahrräder ermitteln."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Elektronische Märkte nennt das Buch als virtuelle Orte des Zusammentreffens. Angebot ist die zum Verkauf angebotene Menge an Rädern, Nachfrage die Menge, die Haushalte kaufen wollen und können. Die Plattform bringt beides zusammen. Sie ist damit Markt, nicht nur ein schwarzes Brett ohne Marktcharakter.\n\nDie Aussage ist wahr.",
+      "Ladenlokal als Pflichtmerkmal fällt aus. Nicht physische Möglichkeiten sind umfasst. Ein elektronischer Markt existiert ohne Theke. Die Behauptung, ohne Ladenlokal gebe es keinen Markt für die Räder, widerspricht der Öffnung auf virtuelle Orte.\n\nGeschäfte und Börsen bleiben Beispiele physischer Orte. Sie schließen die Plattform nicht aus. Wer Existenz an Miete und Schaufenster bindet, verwechselt Beispiel und Begriff.\n\nDie Aussage ist falsch.",
+      "Geldeinheiten bleiben der Regelfall, auch online. Der Preis drückt in der Regel in Geldeinheiten aus, wie viel für ein Gut zu bezahlen ist. Das Gebrauchtfahrrad ist das Gut, die angezeigte Summe der Preis. Virtualität ändert diese Ausdrucksform nicht.\n\nDie Aussage ist wahr.",
+      "Nicht physisch entbindet nicht von der Preisbildung. Durch das Zusammentreffen von Angebot und Nachfrage kommt es zur Preisbildung; sie ist eine wesentliche Aufgabe von Märkten. Elektronische Märkte sind Märkte. Die Absage an die Preisbildung wegen fehlender Physis ist falsch.\n\nMechanismus heißt: Käufer und Verkäufer treten in Beziehung, um Preis und Menge zu ermitteln. Genau das tut eine Handelsplattform, wenn Angebote und Kaufentscheidungen aufeinandertreffen. Die Aufgabe bleibt. Virtualität ändert die Aufgabe nicht, nur den Ort des Zusammentreffens.\n\nDie Aussage ist falsch.",
+      "Ermitteln von Preis und Menge ist die Samuelson-Formel, die das Buch übernimmt. Ware hier: das Fahrrad. Beziehung über den elektronischen Mechanismus. Der Satz überträgt die Definition auf die Plattform, ohne sie zu überdehnen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.31",
+    "title": "Wohnungen am Immobilienmarkt",
+    "context": "In einer österreichischen Stadt ist das Angebot an Mietwohnungen klein, die Nachfrage hoch. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Immobilienmarkt ist eine Marktart, auf der Angebot und Nachfrage zusammenkommen.",
+      "Ist das Angebot klein und die Nachfrage hoch, bildet sich in der Regel ein hoher Preis.",
+      "Ein hoher Preis könnte Anbieter motivieren, das Angebot zu erhöhen, oder neue Anbieter zum Eintritt bewegen.",
+      "Märkte für Wohnungen existieren nur als Weltmarkt und niemals in einem örtlich bestimmten Gebiet.",
+      "Ein niedriger Preis bei hohem Angebot und niedriger Nachfrage führt typischerweise dazu, dass unprofitable Anbieter das Angebot weiter ausweiten statt auszutreten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Immobilienmarkt steht in der Liste der Marktarten neben Konsumgütern, Arbeit, Kapital, Rohstoffen und Emissionszertifikaten. Angebot und Nachfrage treffen dort zusammen, physisch etwa über Maklerbüros oder virtuell über Inserateplattformen. Wohnungen sind das Gut dieses Marktes. Der Satz ist die Anwendung der Artunterscheidung.\n\nDie Aussage ist wahr.",
+      "Kleine Menge zum Verkauf, viele, die kaufen oder mieten wollen und können: In der Regel hoher Preis. Der Preis ist zugleich Indikator für die Knappheit und ihr Ausmaß. Die Stadtszene ist der Alltagsfall dieser Regel, nicht eine Ausnahme davon.\n\nDie Aussage ist wahr.",
+      "Hoher Preis als Anreiz: Anbieter könnten das Angebot erhöhen, neue Anbieter könnten eintreten, um vom hohen Preis zu profitieren. Am Immobilienmarkt heißt das mehr Wohnungen anbieten oder zusätzliche Vermieterinnen und Vermieter. Der Mechanismus ist derselbe wie im allgemeinen Absatz.\n\nSteigt das Angebot später bei gleichbleibender Nachfrage, würden die Preise sinken. Das ist die Folgestufe, die der hohe Preis in Gang setzen kann. Der Satz bleibt bei der ersten Reaktion und ist wahr.\n\nDie Aussage ist wahr.",
+      "Nur Weltmarkt, niemals örtlich: Das Buch nennt ausdrücklich Märkte in einem örtlich genau bestimmten Gebiet, zum Beispiel den österreichischen Arbeitsmarkt. Dieselbe Logik gilt für ein Gut in einem Gebiet, also auch für Wohnungen in einer Stadt oder in Österreich. Die Sperre gegen örtliche Märkte ist falsch.\n\nWeltmarkt für Rohöl ist ein anderes Beispiel für räumliche Fassung, nicht der Beweis, dass Wohnungen nur weltweit gedacht werden dürfen. Gut und Gebiet werden kombiniert.\n\nDie Aussage ist falsch.",
+      "Ausweiten statt austreten bei niedrigem Preis kehrt die typische Folge um. Bei niedrigem Preis treten Unternehmen aus, die nicht profitabel geführt werden können, durch Schließen oder Fokuswechsel. Das senkt das Angebot und lässt die Preise wieder steigen. Weiteres Ausweiten aller Unprofitablen ist nicht die beschriebene Reaktion.\n\nTypischerweise Austritt, dann niedrigeres Angebot, dann steigende Preise. Wer Ausweiten erzwingt, nimmt dem niedrigen Preis seine Korrekturfunktion im Text. Die Aussage ist falsch. Ausweiten wäre die Reaktion auf einen hohen Preis, nicht auf einen unprofitabel niedrigen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "1.4",
+    "case_id": "WISO 1.4.32",
+    "title": "Knappheitssignal und Eintritt oder Austritt",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenspiel von Preis, Angebot und Nachfrage auf dem Markt:",
+    "statements": [
+      "Der Preis zeigt die Knappheit: Ist das Angebot klein und die Nachfrage hoch, bildet sich in der Regel ein hoher Preis.",
+      "Ein hoher Preis kann das Angebot erhöhen und neue Anbieter anlocken; bei gleichbleibender Nachfrage sinken die Preise dann.",
+      "Niedrige Nachfrage und hohes Angebot führen in der Regel zu einem niedrigen Preis und typischerweise zum Austritt unprofitabler Unternehmen.",
+      "Nach solchen Austritten sinkt das Angebot und die Preise steigen.",
+      "Nachfrage ist nur der Wunsch zu kaufen, nicht die Fähigkeit zu kaufen, und ein Markt ist ausschließlich ein physisches Geschäft."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Indikator und Regelpreis fallen zusammen. Der Preis zeigt Knappheit und ihr Ausmaß. Kleines Angebot, hohe Nachfrage, in der Regel hoher Preis. Das ist der Ausgangspunkt der beschriebenen Anpassungen, nicht ein Sondergesetz neben dem Markt.\n\nKäuferinnen und Verkäuferinnen treffen auf physischen oder virtuellen Märkten zusammen. Aus diesem Zusammentreffen entsteht die Preisbildung als wesentliche Aufgabe. Der hohe Preis in der Knappheitslage ist genau dieses Signal.\n\nDie Aussage ist wahr.",
+      "Anreiz nach oben, Menge nach, Preis nach unten: Hoher Preis könnte Anbieter motivieren, das Angebot zu erhöhen, oder neue Anbieter zum Eintritt bewegen. Steigendes Angebot bei gleichbleibender Nachfrage führt dann zu sinkenden Preisen. Der Satz hält die Reihenfolge des Absatzes ein.\n\nGleichbleibende Nachfrage ist die genannte Bedingung für das Sinken. Ohne sie formuliert das Buch diese Preissenkung nicht. Mit ihr schließt sich der Bogen vom Knappheitssignal zur Entspannung über mehr Menge.\n\nDie Aussage ist wahr.",
+      "Spiegelbild der anderen Lage: Niedrige Nachfrage, hohes Angebot, in der Regel niedriger Preis. Typischerweise treten dann jene aus, die bei diesem Preis nicht profitabel bleiben, durch Schließen oder andere Güter. Der Satz verbindet Regelpreis und Austritt, ohne spätere Kurvenbegriffe einzuführen.\n\nProfitabilität ist die Schwelle, nicht eine moralische Pflicht zum Bleiben. Der niedrige Preis filtert Anbieter heraus. Das steht so im Text.\n\nDie Aussage ist wahr.",
+      "Schlussetappe: Austritt, niedrigeres Angebot, steigende Preise. Die Mengensenkung nach dem Ausgang unprofitabler Unternehmen lässt die Preise wieder steigen. Damit schließt sich der Kreis zur Knappheitsanzeige, ohne weitere Zusatzannahmen.\n\nNiedrigeres Angebot bedeutet: Die gesamte zum Verkauf angebotene Menge ist kleiner. Dem steht die Nachfrage gegenüber, also die Menge, die gekauft werden will und kann. Weniger Angebot bei gegebener Nachfrage macht das Gut knapper, der Preis steigt in der beschriebenen Folge. Der Absatz kommt mit Angebot, Nachfrage, Preis und Eintritt oder Austritt aus.\n\nDie Aussage ist wahr.",
+      "Zwei Fehler in einem Satz. Nachfrage ist die Menge, die Wirtschaftsteilnehmer kaufen wollen und können, nicht der bloße Wunsch. Märkte sind nicht nur physische Geschäfte, sondern auch Börsen und virtuelle Orte wie elektronische Märkte. Beide Verkürzungen widersprechen den Definitionen am Anfang des Abschnitts.\n\nOhne das Können wäre die Nachfrage nur Wunschdenken. Ohne die virtuellen Orte wäre der Marktbegriff auf die Markthalle beschränkt. Der Abschnitt öffnet beides. Deshalb ist die Aussage falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]
