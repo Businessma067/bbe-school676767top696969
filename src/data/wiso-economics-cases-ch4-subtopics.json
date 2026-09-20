@@ -25,7 +25,7 @@
       "Betriebswirtschaftlich tätig sein ändert sich an mehreren Stellen zugleich. Technologie wirkt darauf, wie Unternehmen interne Prozesse steuern, wie sie mit Kunden in Kontakt bleiben und wie sie Produkte und Dienstleistungen gestalten und auf den Markt bringen. Diese Wirkungen bilden später die drei Dimensionen: backstage, Frontstage und digitalisiertes Ergebnis.\n\nDie Aussage ist wahr.",
       "Hardware allein schließt die Transformation nicht ab. Digitale Transformation meint die Veränderung, die durch die Anwendung digitaler Technologie vorangetrieben wird. Bloße Anschaffung ohne Wandel von Abläufen oder Angeboten erfüllt diesen Maßstab nicht. Technik ohne Veränderung wäre Anwendung ohne Transformation.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -54,7 +54,7 @@
       "Die beiden Wörter fallen genau bei diesen Veränderungen. Wenn Technologie Prozesse, Kundenbeziehung und Marktangebot verschiebt, spricht man oft von Digitalisierung bzw. digitaler Transformation. Die Wortwahl ist an den beobachtbaren Wandel gebunden.\n\nDie Aussage ist wahr.",
       "Produkt- und Dienstleistungsgestaltung bleiben nicht außen vor. Technologie wirkt auch darauf, wie Angebote gestaltet und auf den Markt gebracht werden. Eine Beschränkung allein auf Lieferantenkommunikation streicht dieses Wirkungsfeld und ist zu eng.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -141,7 +141,7 @@
       "Mehrere Enden sind ausdrücklich vorgesehen. Die Definition nennt einen klar definierten Anfang und ein oder mehrere definierte Enden. Die Behauptung, nur genau ein Ende sei erlaubt, streicht diese Mehrzahl und ist zu eng. Abholung und Versand können etwa zwei klare Schlüsse desselben Bestellprozesses sein.\n\nDie Aussage ist falsch.",
       "Anfang und ein oder mehrere Enden gehören zur Definition. Neben dem klar definierten Anfang sind ein oder mehrere definierte Enden vorgesehen. Die Mehrzahl der Enden ist kein Widerspruch zur Klarheit, sondern Teil der Definition.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -170,7 +170,7 @@
       "Digitale Systeme sind gerade das Mittel der Dokumentation. Das Festhalten eines Prozesses durch ein digitales System hilft, Abläufe zu kommunizieren. Eine Beschränkung allein auf Papier widerspricht diesem Zweck und schließt die digitale Stütze aus.\n\nDie Aussage ist falsch.",
       "Praktikantinnen und Praktikanten sind ausdrücklich mitgedacht. Gerade wer neu anfängt und den zentralen Einkaufsprozess verstehen muss, soll mit dem Prozessmodell einen ersten Überblick bekommen. Eine Sperre nur für die Geschäftsleitung würde den Sinn der visuellen Darstellung umkehren.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -199,7 +199,7 @@
       "Erscheinen im System ist der Start der Bearbeitung, nicht das Ende. Der Prozess endet mit der Lieferung oder der Bereitstellung zur Abholung. Wer den Prozess am bloßen Eintrag im System für beendet erklärt, verwechselt Dokumentationseingang mit Prozessabschluss.\n\nDie Aussage ist falsch.",
       "Abschluss im System gibt den Weg frei für die nächste Bestellung. Nach erfolgreicher Bearbeitung markiert die Mitarbeiterin das im System und kann sich der folgenden Bestellung widmen. Das passt zur Wiederholbarkeit von Geschäftsprozessen.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -257,7 +257,7 @@
       "Der Service richtet sich an Nutzerinnen und Nutzer beim Schuhkauf – vor Ort und per App –, nicht ausschließlich an Großhändler. Endkundinnen und Endkunden sollen Passformanforderungen festhalten und abgleichen können. Die Beschränkung auf den Großhandel verfehlt das Beispiel.\n\nDie Aussage ist falsch.",
       "Abgleich zielt auf optimale Passform. Derselbe gespeicherte Fußabdruck dient im Laden und bei der nächsten Online-Bestellung dazu, das gewünschte Schuhmodell zu prüfen. So sollen die Wünsche der Nutzer effizienter und gezielter berücksichtigt werden.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -286,7 +286,7 @@
       "Beste Stufe: nachhaltig geprägtes Kundenerlebnis. Neben der einfachen Ergänzung gibt es den besten Fall, in dem die Digitalisierung das Erlebnis des Kunden nachhaltig prägt. Die Skala von einfach bis bestmöglich ist angelegt.\n\nDie Aussage ist wahr.",
       "Umbenennung ohne Erlebnisänderung ist nicht smart. Smart meint Digitalisierung von Produkt und Dienstleistung – vom einfachen Zusatz bis zur nachhaltigen Prägung des Erlebnisses. Ein bloßes Wort digital am Markennamen ohne veränderten Nutzen trifft diesen Maßstab nicht.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -344,7 +344,7 @@
       "Strategie richtet auf die Zukunft. Eine Digitalisierungsstrategie soll helfen, zukünftige Entscheidungen zu treffen und einer klaren Vision zu folgen. Bloß rückblickende Dokumentation ohne Entscheidungshilfe verfehlt diesen Zweck.\n\nDie Aussage ist falsch.",
       "Digital Business bündelt die Firmenebene. Der Ausdruck meint die Digitalisierung des Unternehmens insgesamt, die sich aus dem Handeln entlang der Dimensionen und aus einer Strategie ergibt – nicht die isolierte Anschaffung eines Softwaremoduls ohne Bezug zu Vision und Dimensionen.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -373,7 +373,7 @@
       "Innovativ erweiterter Nutzen und erweitertes Erlebnis. Nutzen und Erlebnis eines Produkts oder einer Dienstleistung sollen möglichst innovativ erweitert werden. Erfolg misst sich an dieser Erweiterung, nicht an der Menge umgestellter Masken.\n\nDie Aussage ist wahr.",
       "PDF-Kopien allein sind kein Erfolgsmaßstab. Entscheidend ist, sinnvolle Aspekte durch digitale Technologien zu erweitern. Bloßes Ersetzen von Papier durch PDF ohne Erweiterung von Nutzen, Kommunikation oder Kundenorientierung verfehlt diesen Maßstab.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -402,7 +402,7 @@
       "Wertschöpfung ist an die erste Dimension gebunden: Der interne Fokus nutzt Ressourcen, um Produkte und Dienstleistungen zu erstellen. Geschäftsprozesse hinter den Kulissen unterstützen genau diese Wertschöpfung. Werbung allein ersetzt diese Erstellung nicht.\n\nDie Aussage ist falsch.",
       "Ein Prozessmodell gibt Überblick über Abläufe und hilft zu kommunizieren; es ersetzt weder die Frontstage noch erfüllt es von selbst Kundenbedürfnisse. Frontstage bleibt die Verbindung zum Kunden und die Gestaltung von Angeboten im Sinne der Nutzerinnen und Nutzer.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -431,7 +431,7 @@
       "Zwei mögliche Enden, beide definiert. Lieferung oder Bereitstellung zur Abholung: so endet der beschriebene Bestellprozess. Das entspricht der Definition, nach der ein Geschäftsprozess ein oder mehrere definierte Enden hat.\n\nDie Aussage ist wahr.",
       "Lagerstand kann weitere Abläufe auslösen. Intern können je nach Lagerstand weitere Prozesse angestoßen werden, und der Kunde kann über den aktuellen Status informiert werden. Statusmeldung ist Begleitung des Ablaufs, nicht das definierte Ende.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -460,7 +460,7 @@
       "Das visuelle Abbild ist Orientierung, nicht Erstellung. Das Prozessmodell gibt einen Überblick und hilft, den Ablauf zu kommunizieren. Wertschöpfung bleibt die wirtschaftliche Nutzung von Ressourcen zur Erstellung von Produkten und Dienstleistungen. Dokumentation ersetzt den Prozess nicht.\n\nDie Aussage ist falsch.",
       "Einfachster Fall und bester Fall sind gestuft. Eine PDF-Anleitung ergänzt das analoge Produkt; eine Erweiterung kann das Erlebnis nachhaltig prägen. Wer beide Stufen gleichsetzt, macht den Unterschied zwischen schlichter Ergänzung und nachhaltig geprägtem Kundenerlebnis zunichte.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -489,7 +489,7 @@
       "Maßgeblich ist die Anwendung digitaler Technologie und die dadurch angestoßene Veränderung. Bloße Hardwarebeschaffung ohne Wandel von Abläufen oder Angeboten erfüllt digitale Transformation nicht.\n\nDie Aussage ist falsch.",
       "Vernetzte Alltagsszenarien setzen gerade Informations- und Kommunikationstechnologie voraus. Ohne sie wären Streaming, smarte Haustechnik und ähnliche Abläufe so nicht möglich.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -518,7 +518,7 @@
       "Auch in Unternehmen sind digitale Systeme im Einsatz – etwa zur Lagererfassung, Positionierung von Lieferungen oder Steuerung von Produktionsabläufen. Die Beschränkung auf den privaten Haushalt ist falsch.\n\nDie Aussage ist falsch.",
       "In der Produktion helfen Systeme gerade, Abläufe zu steuern und Probleme rasch zu erkennen und darauf zu reagieren. „Grundsätzlich ungeeignet“ widerspricht den Einsatzfeldern.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -634,7 +634,7 @@
       "Backstage-Geschäftsprozesse unterstützen die Wertschöpfung und werden zunehmend durch Systeme erweitert und gesteuert.\n\nDie Aussage ist wahr.",
       "Backstage meint gerade die Prozesse hinter den Kulissen – intern, nicht die kundengerichtete Werbung. Kundengerichtetes liegt in der Frontstage-Dimension.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -663,7 +663,7 @@
       "Digitalisierung bietet neue Potenziale, Wünsche der Nutzer effizienter und gezielter zu berücksichtigen.\n\nDie Aussage ist wahr.",
       "Gerade das Gegenteil gilt: Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein. Frontstage schließt diese Kundenarten nicht aus – S3 benennt sie ausdrücklich, die Verengung ist falsch.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -692,7 +692,7 @@
       "Gerade für neue Mitarbeitende – etwa im Praktikum – kann ein Prozessmodell einen ersten Überblick über einen zentralen Ablauf liefern.\n\nDie Aussage ist wahr.",
       "Prozessmodelle dienen gerade der internen Kommunikation und Orientierung – etwa für neue Mitarbeitende. Eine Beschränkung auf externe Prüfer widerspricht dem Zweck.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -750,7 +750,7 @@
       "Gerade weil Technologie so weit verbreitet ist, fällt es schwer, Bereiche ohne jeden Technologiekontakt zu identifizieren.\n\nDie Aussage ist wahr.",
       "Digitale Systeme werden gerade für Automatisierung, Optimierung und Unterstützung betrieblicher Abläufe eingesetzt. „Nur Unterhaltung ohne Betriebsbezug“ ist das Gegenteil der Beschreibung.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -779,7 +779,7 @@
       "Im Bestellbeispiel können je nach Lagerstand weitere Prozesse angestoßen und Statusinformationen an den Kunden gegeben werden.\n\nDie Aussage ist wahr.",
       "Geschäftsprozesse haben einen klar definierten Anfang und ein oder mehrere definierte Enden. Im Bestellbeispiel endet der Ablauf etwa mit Lieferung oder Abholung – nicht „weder Anfang noch Ende“.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -808,7 +808,7 @@
       "Gerade der Abgleich des digitalen Fußabdrucks mit dem gewünschten Schuhmodell – vor Ort und online – ist der Zweck des Service, um die Passform zu prüfen.\n\nDie Aussage ist wahr.",
       "Das Beispiel verbindet ausdrücklich Vor-Ort-Service und Smartphone-App bzw. Online-Bestellung. Frontstage-Potenziale sind online und offline nutzbar.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -866,7 +866,7 @@
       "Es handelt sich um mehrere logisch zusammenhängende Aktivitäten – der Zusammenhang ist definitionsbildend.\n\nDie Aussage ist wahr.",
       "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren – nicht, Abläufe geheim zu halten. Kommunikation und Nachvollziehbarkeit sind der Zweck.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -895,7 +895,7 @@
       "Die Erweiterung des Produkterlebnisses selbst ist die dritte Dimension: Digitalisierung von Produkt bzw. Dienstleistung.\n\nDie Aussage ist wahr.",
       "Strategie kann aus der gezielten Konzentration auf eine oder mehrere Dimensionen abgeleitet werden. Zwang zu allen drei Dimensionen ohne Schwerpunkt ist nicht die beschriebene Logik.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -924,7 +924,7 @@
       "Digitalisierung ist die Anwendung digitaler IKT und die damit verbundene Veränderung. Bloße Hardwarebeschaffung ohne Bezug zu Anwendung und Wandel trifft den Begriff nicht.\n\nDie Aussage ist falsch.",
       "Allgegenwärtigkeit bezieht sich auf Rechensysteme insgesamt – Alltag und Unternehmen. Die Verengung auf private Smartphones ist zu eng.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -953,7 +953,7 @@
       "Nicht jede digitale Datei ist die maximale Form. Die Stufung von einfacher Ergänzung bis erlebnisprägender Erweiterung zeigt Abstufungen; Maximum ist nicht automatisch erreicht.\n\nDie Aussage ist falsch.",
       "Die Dimensionen sind unterscheidbar und nicht automatisch mitabgedeckt. Konzentration auf eine Dimension ersetzt nicht die anderen.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -982,7 +982,7 @@
       "Kunde kann Privatperson, Unternehmen oder öffentliche Institution sein. Die Verengung auf Privatpersonen ist falsch.\n\nDie Aussage ist falsch.",
       "Die drei Dimensionen strukturieren gerade unterschiedliche Vorhaben. Vermengung ohne Unterscheidung macht Schwerpunktsetzung und Strategieableitung schwerer.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1011,7 +1011,7 @@
       "Dokumentation hilft zu kommunizieren; Prozessmodelle geben Überblick. Das sind zentrale Zwecke der digitalen Prozessabbildung.\n\nDie Aussage ist wahr.",
       "Interner Fokus: wirtschaftliche Ressourcennutzung zur Erstellung von Produkten und Dienstleistungen; es soll Wert geschaffen werden (Wertschöpfung).\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1069,7 +1069,7 @@
       "Zwei Gruppen, ein Muster. Externe Dienstleister liefern, und Lebensmittelhändler selbst tun dasselbe. Über eine Webseite stellen Kundinnen und Kunden den Einkauf zusammen und können ihn unter bestimmten Bedingungen nach Hause geliefert bekommen. Die genannten Namen machen die veränderte Dienstleistung im Handel greifbar.\n\nDie Aussage ist wahr.",
       "Technologie ist die Voraussetzung, nicht das Gegenteil. All diese neuen Möglichkeiten setzen auf Technologie. Durch den Einsatz von Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. Analog-only als Ersatz der IT widerspricht diesem Zusammenhang.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1098,7 +1098,7 @@
       "IT sitzt am Hebel, nicht nur an der Schreibtischlampe. Durch Informationstechnologie verändern sich Produkte, Dienstleistungen und Geschäftsmodelle. App-Fahrschein, Lieferhandel, Webshop und Streaming sind Ausprägungen genau dieser Veränderung.\n\nDie Aussage ist wahr.",
       "Mitarbeiterzahl ist kein Ersatz für die Gewinnlogik. Wertschöpfung hängt an der Gegenüberstellung von Ressourcen und Einnahmen mit dem Ziel eines Gewinns. Wer nur Headcount zählt und Einnahmen sowie Gewinn ausblendet, verfehlt den Begriff.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1127,7 +1127,7 @@
       "Umbenannte Konten ersetzen weder mehr Kunden noch individualisierte Angebote. Die Multiplikation des Werts meint konkrete Hebel wie Reichweite und Passung, nicht kosmetische Buchhaltungsbegriffe.\n\nDie Aussage ist falsch.",
       "Wertschöpfung verbindet Technologie, Geschäftsprozesse und Wert für Unternehmen und Kunden. Eine Verengung allein auf interne Buchhaltung trennt genau diese Glieder und trifft den Wirkungszusammenhang nicht.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1185,7 +1185,7 @@
       "Zugang, Suche, Kontakt, Preis: das ist die Kette des Betreibers. Interessierte Käufer können nach Produkten suchen und mit potenziellen Verkäufern in Kontakt treten, um den Preis festzulegen. Preisfindung läuft zwischen den Parteien.\n\nDie Aussage ist wahr.",
       "Der Betreiber stellt über eine Plattform den Zugang für Kunde und Verkäufer zur Verfügung. Ein Zwang zu rein analogen Flohmärkten ohne Plattform trifft das Online-Modell nicht.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -1214,7 +1214,7 @@
       "Unter anderem, nicht ausschließlich. Verkauf von Werbefläche ist eine genannte Einnahmequelle dieser Modellart. Die Formulierung lässt andere Quellen offen, nennt aber Werbung ausdrücklich.\n\nDie Aussage ist wahr.",
       "Soziale Netzwerke sind virtuelle Umgebungen im digitalen Raum. Ein gemeinsamer physischer Laden mit Warenanfassen gehört nicht zur Definition und würde Pure-Play-Gemeinschaften mit stationärem Handel verwechseln.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1243,7 +1243,7 @@
       "Pure-Play meint den ausschließlich online stattfindenden Betrieb digitaler Geschäftsmodelle. Rohstoffreinheit ist ein anderer Wortgebrauch und trifft die Definition hier nicht.\n\nDie Aussage ist falsch.",
       "Pure-Play verzichtet auf den Laden zum Anschauen der Ware; Clicks and Mortar erweitert gerade das traditionelle physische Geschäft digital. Identität bei Filialverzicht für beide ist falsch.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -1272,7 +1272,7 @@
       "Zwei Pole, nicht zwei Namen für denselben Online-only-Betrieb. Pure-Play findet ausschließlich online statt und hat keinen Laden zum Anschauen der Ware. Clicks and Mortar koppelt digitale Präsenz an das traditionelle physische Geschäft.\n\nDie Aussage ist falsch.",
       "Webseite oder Plattform sind typische Formen der digitalen Präsenz. Die Erweiterung kann also schlicht der Webshop neben der Buchhandlung sein, wie bei Thalia.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1301,7 +1301,7 @@
       "Apple steht für legalen Stückverkauf zum Download plus Abspielgerät; Streaming-Abo ist die spätere Stufe. Gleichsetzung von Anfang an tilgt den Unterschied zwischen iTunes und späteren Abo-Modellen.\n\nDie Aussage ist falsch.",
       "Der legale Onlinevertrieb einzelner Stücke und innovative Abspielgeräte setzen IKT voraus. Plastikhüllen erklären weder iTunes Store noch iPod und ersetzen keine Informations- und Kommunikationstechnologie.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1330,7 +1330,7 @@
       "Streaming bedeutet Wiedergabe über das Internet ohne den beschriebenen Pflichtweg über CD-Brand und Postversand. Wer Brennen und Versand verlangt, verfehlt den Stream.\n\nDie Aussage ist falsch.",
       "Das Modell baut auf einer laufenden Gebühr für Zugang zum Katalog auf, nicht auf dem Verkauf von Konzertbühnen. Bühnengeschäfte ersetzen weder Stream noch Abo-Erlös.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1359,7 +1359,7 @@
       "Zwei Namen, bewusster Ausschnitt. Es gibt viele Erlösmodelle; Werbemodell und Abonnentenmodell sind im Digitalisierungskontext besonders bedeutsam. Andere Modelle existieren, stehen hier aber nicht im Zentrum.\n\nDie Aussage ist wahr.",
       "Das Erlösmodell ist ein wichtiger Aspekt des Geschäftsmodells, kein Ersatz für Erzeugung und Bereitstellung. Wer den Erlös zum Ganzen aufbläht, verdickt den Teil und lässt die Leistungsseite weg.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1417,7 +1417,7 @@
       "Nachrichtenseiten bündeln mehrere Werbeoptionen auf einem Screen. Auf Startseiten von Online-Tageszeitungen wie derstandard.at können verschiedene digitale Werbeformen erscheinen. Das passt zur weiten Website-Definition, die Nachrichten einschließt.\n\nDie Aussage ist wahr.",
       "Suchmaschinen und Portale bieten Werbetreibenden gerade sichtbare Plätze – über Schlüsselwörter, Anzeigen bei Suchwörtern oder Banner. Unsichtbarkeit ohne Anzeigen widerspricht der digitalen Werbemechanik.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1446,7 +1446,7 @@
       "Gerade digitale Werbung trägt den Großteil des Quartalsumsatzes. Die Bedingung, erst ohne digitale Anzeigen entstünde Werbeumsatz, kehrt den Befund um.\n\nDie Aussage ist falsch.",
       "Stark vertreten, deshalb Alphabet. Der Online-Werbemarkt gilt als stark vertretenes Werbemodell; der Quartalsblick auf Alphabet macht die Stärke konkret, etwa über den hohen Werbeanteil am Umsatz.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1475,7 +1475,7 @@
       "Früher waren Online-Inhalte vieler Zeitungen oft frei mit Werbung nutzbar. Heute diversifizieren Inhaltsanbieter: Abonnentenmodell oder Mix aus Werbung und Abo. Ausschließlich werbefreie Gratisangebote ohne Gebühr treffen die heutige Lage nicht.\n\nDie Aussage ist falsch.",
       "Der Wandel an Erlösmodellen zeigt sich auch bei Software: Statt einmaligem Kauf greifen laufende Gebühren. Das Abonnentenmodell ist damit nicht auf Film und Musik beschränkt.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1504,7 +1504,7 @@
       "Adobe steht gerade für ein breites Portfolio in Bildbearbeitung, Fotografie, Film, Grafik und Illustration. Die Behauptung, es gebe keine solche Software, verfehlt das Unternehmensbeispiel.\n\nDie Aussage ist falsch.",
       "Nicht nur ein Wandel von analog zu digital findet statt. Gesamte Branchen mit Produkten, Dienstleistungen und dahinterstehenden Geschäftsmodellen werden digital transformiert. Musik, Werbung, Zeitungen und Softwareerlöse sind Stationen derselben These.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1533,7 +1533,7 @@
       "Verschachtelung ist die Definition. Das Internet soll als Netzwerk von Netzwerken verstanden werden, die weltweit verbunden sind. Erscheinungsformen dürfen differieren, der Zugriff bleibt ein Zugriff auf dieses Netz. Ohne diese Formulierung blieben Kabel und Funk zwei getrennte Welten statt Teile desselben Internets.\n\nDie Aussage ist wahr.",
       "Privat und betrieblich nutzen dasselbe Netz. Funktionen zum Informationsaustausch und zur Kommunikation bauen gerade auf dem Internet auf. Wer behauptet, weder private noch unternehmerische Nutzung stütze sich darauf, widerspricht dem Zweck der IT-Infrastruktur.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1562,7 +1562,7 @@
       "Räumliche Verteilung ist Pflichtbestandteil der Definition, kein Ausschlussgrund. Stationen können in verschiedenen Räumen oder Orten stehen und trotzdem ein Rechnernetz bilden. Die Forderung, alle müssten im selben Raum sein, kippt genau diesen Teil der Definition.\n\nDie Aussage ist falsch.",
       "Zweck des Netzes ist der Austausch. Stationen sind verbunden, um Daten auszutauschen, nicht um stumm nebeneinander zu liegen. Eine Verbindung ohne diesen Zweck wäre nach der Definition kein Rechnernetz.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1591,7 +1591,7 @@
       "Zugriff ist ortsunabhängig über das Netzwerk möglich. Hochseekabel und drahtlose Wege verbinden gerade entfernte Stationen. Die Forderung, alle müssten im selben Raum stehen, widerspricht globaler Vernetzung und räumlich verteilten Rechnernetzen.\n\nDie Aussage ist falsch.",
       "Zugriff zählt, nicht die Optik des Kabels. Ob Seekabel oder Funk: man greift auf ein Netzwerk zu, und dieses Netzwerk ist das Internet. Global und lokal sind Schichten, nicht zwei Internets.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1678,7 +1678,7 @@
       "Forschungsaustausch, nicht Werbeverkauf. Die Motivation am CERN war die Verwaltung und der Austausch von Forschungsergebnissen. Online-Werbung als alleiniger Ursprung verwechselt spätere Internetökonomie mit der Erfindung des WWW.\n\nDie Aussage ist falsch.",
       "Genau diese drei Konzepte sind zentral für ein funktionierendes WWW: HTTP für die Anforderung, HTML für die Darstellung, URL für die Adressierung. Sie gehören zur Idee von Berners-Lee und sind nicht erst Jahrzehnte später erfunden worden.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1707,7 +1707,7 @@
       "HTTP regelt die Anforderung beim Server, nicht die Optik von Werbung. Farbgestaltung von Bannern gehört nicht zur Protokolldefinition. Wer HTTP auf Dekoration reduziert, streicht Request und Response.\n\nDie Aussage ist falsch.",
       "Auffindbar und abrufbar ist der Zweck der URL, nicht Schmuck. Dekoration ohne Adresse ließe Ressourcen im Netz unsichtbar. Links auf weiteren Seiten sind URLs in der Praxis des Surfens.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1765,7 +1765,7 @@
       "HTTP ist das Protokoll zwischen Browser und Server beim Surfen, nicht die Briefpost. Wer die Kommunikation auf Papierpost verlegt, streicht das Hypertext Transfer Protocol aus dem Surfweg.\n\nDie Aussage ist falsch.",
       "Die URL ist gerade das einheitliche Locator-System. Ohne einheitliche Adressierung wären Ressourcen nicht systematisch auffindbar und abrufbar. Private Fantasieadressen jedes Browsers widersprechen dem Uniform Resource Locator.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1823,7 +1823,7 @@
       "Browser als Klient ist das Standardbeispiel. Er kann von einem Server Inhalte anfordern. Surfen im Web ist damit ein Fall der Architektur, nicht ein Sonderweg ohne Server.\n\nDie Aussage ist wahr.",
       "Auch heute noch bauen viele Interaktionen auf Architektur und Prinzip auf. Die Behauptung, das sei vorbei, dreht den Befund um. Vergleichsplattform, Webshop und Nachrichtenanbieter setzen genau diese Grundlage voraus.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1852,7 +1852,7 @@
       "Genau diese Ausprägungen gibt es im WWW. Vergleich, Bestellung und Nachricht sind Beispiele digitaler Dienstleistungen auf Client-Server-Basis. Technisch unmöglich wären sie nur ohne Architektur und Kommunikationsprinzipien.\n\nDie Aussage ist falsch.",
       "Zahlreich und wachsend, nicht knapp und schrumpfend. Die Möglichkeiten, über das Web Dienste anzubieten, sind zahlreich und wachsen stetig. Schrumpfen widerspricht diesem Befund und der folgenden Internetökonomie.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1881,7 +1881,7 @@
       "Schnittstellen der Software, nicht nur die des Browsers. Andere Unternehmen werden über das Netz erreicht, Daten fließen in beide Richtungen. Das ist die Brücke von der Weboberfläche zur betrieblichen Kopplung.\n\nDie Aussage ist wahr.",
       "Privater und betrieblicher Zugang sind nicht ausgeschlossen. Browser zu Hause und Unternehmenssoftware im Betrieb sind gerade die typischen Wege. Eine Beschränkung auf Bibliotheksrechner verengt den Internetzugang unsinnig.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1910,7 +1910,7 @@
       "Wertschöpfende Transaktionen stehen in der Definition, nicht Unterhaltung als Selbstzweck. Private Kommunikation kann über dasselbe Netz laufen, begründet aber nicht den Begriff Internetökonomie. Wer nur Chat gelten lässt, streicht Markt und Plattform.\n\nDie Aussage ist falsch.",
       "Neue Plattform für Unternehmen ist die Folgerung. Anbieter und Kunden treten in Austausch; manchmal kommen Plattformbetreiber hinzu. Die Verneinung widerspricht dem Schwenk vom technischen Netz zur Internetökonomie.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1939,7 +1939,7 @@
       "Mehr als 30 Jahre digitaler Raum, zahlreiche Innovationen. Das Internet bleibt grundlegend für die beschriebenen Innovationen. HTTP am CERN und Marktplätze heute teilen denselben Träger über diese Spanne.\n\nDie Aussage ist wahr.",
       "Betreiber können gerade nötig sein. Manchmal braucht es zusätzliche Plattformbetreiber für einen spezifischen Markt; ein physischer Laden ist kein Ersatz für den digitalen Ort. Die Behauptung streicht Vermittlung und Digitalität zugleich.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1968,7 +1968,7 @@
       "Verschiedene Branchen sind erlaubt, nicht nur eine. Willhaben ist gerade ein Marktplatz mit Anzeigen über mehrere Wirtschaftszweige. Die Beschränkung auf genau eine Branche widerspricht diesem Beispiel.\n\nDie Aussage ist falsch.",
       "Kontakt und Abschluss sind vorgesehen. Nach den Anzeigen sollen Interessenten miteinander in Verbindung treten, um Transaktionen zu tätigen. Kontaktverbot würde den Marktplatz zur reinen Pinnwand ohne Ökonomie machen.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1997,7 +1997,7 @@
       "Tragende Rolle und Gestaltung gehören zusammen. Das Verständnis für die Rolle der Wirtschaftsinformatik ist fundamental für eine nachhaltige und zukunftssichere Gestaltung der damit einhergehenden Systeme. Der Satz begründet, warum das Fach nicht nur als Sammlung von IT-Themen gelesen werden soll: Systeme sollen so entworfen werden, dass sie tragfähig bleiben. Wer die Rolle der Disziplin für belanglose Beiwerk hält, verfehlt diesen Begründungsstrang.\n\nDie Aussage ist wahr.",
       "Steuerformulare als alleiniger Gegenstand treffen die Disziplin nicht. Wirtschaftsinformatik behandelt Digitalisierung im Unternehmenskontext, die Transformation von Geschäftsmodellen und die Auswirkungen digitaler Netzwerke auf ökonomische Transaktionen sowie Gestaltung, Management und Ethik. Wer das Feld auf Formulare ohne Netzwerke und Modelle verengt, streicht genau die Verzahnung von Wirtschaft und Informations- und Kommunikationstechnologie. Digitale Transaktionen und Systemgestaltung blieben dann unsichtbar, obwohl sie zum Themenfeld gehören.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2026,7 +2026,7 @@
       "Digitalisierung, Geschäftsmodelle und Netzwerke sind Einstiege, keine geschlossene Liste. Die Disziplin umfasst noch viel mehr Themengebiete, etwa Gestaltung von Systemen, Management im Unternehmen und ethische Fragen in einer digitalisierten Gesellschaft. Wer glaubt, drei Stichworte erschöpften das Fach, unterschätzt seine Breite.\n\nDie Aussage ist wahr.",
       "Neben der Interdisziplinarität steht die Rolle von Anwendungs- und Informationssystemen als zweiter zentraler Baustein. Systeme, die entwickelt, gestaltet und betrieben werden, machen den Gegenstand greifbar und verbinden wirtschaftliche Vorhaben mit technischer Umsetzung. Wer nur Fächerzuschreibungen kennt und Systeme ausblendet, lässt genau diese zweite Säule weg. Beide Bausteine ergänzen sich: Interdisziplinarität erklärt den Blickwinkel, Systeme liefern den konkreten Gegenstand.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2055,7 +2055,7 @@
       "Eigenständig oder fächerübergreifend hängt vom Fokus ab. Beides ist möglich: je nach Betrachtungsebene kann die Wirtschaftsinformatik als eigenständiges Fach oder als fächerübergreifendes Fach gelesen werden. Wer nur eine der beiden Lesarten als einzig zulässig erklärt, macht die Differenzierung zunichte.\n\nDie Aussage ist wahr.",
       "Betriebswirtschaftlich und technisch zugleich möglich: In der klassischen Einordnung adressiert die Wirtschaftsinformatik Fragestellungen, die von betriebswirtschaftlicher und technischer Natur sein können. Das Wort können hält beide Naturen offen, ohne jedes Thema in beide zu zwingen. An der Wirtschaftsuniversität Wien wird daraus später eine Gewichtung mit betriebswirtschaftlichem Fokus und technischer Unterstützung. Die Öffnung erklärt, warum Überlappung möglich bleibt, ohne Allzwang zu werden.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2084,7 +2084,7 @@
       "Überlappung ist nicht Allzwang. Drei überlappende Bereiche deuten Schnittmengen an; zugleich müssen Wirtschaftsinformatik-Themen nicht zwingend mit Informatik und Informatikthemen nicht zwingend mit Betriebswirtschaftslehre verknüpft sein. Die Forderung, jedes Thema müsse in allen drei Bereichen zugleich liegen, macht aus einem Ordnungsmodell eine harte Mengenlehre. Gerade die Möglichkeit, Themen nur auf einer Seite zu verorten, hält die Einordnung flexibel und prüfungsrelevant.\n\nDie Aussage ist falsch.",
       "Können, nicht müssen: Fragestellungen können betriebswirtschaftlicher und technischer Natur sein. Das Wort können hält die Tür offen, ohne jedes einzelne Thema in beide Naturen zu zwingen. Genau das passt zur Feststellung, dass der Bezug zur Informatik oder zur BWL nicht zwingend ist. An der WU Wien wird der betriebswirtschaftliche Fokus betont, ohne die technische Seite zu leugnen.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2113,7 +2113,7 @@
       "Data Science steht auf der technischen Seite neben Produktionsmanagement und Informatik, nicht auf der verhaltenswissenschaftlichen. Verhaltenswissenschaftlich werden Betriebswirtschaftslehre, Soziologie und Psychologie genannt. Wer Data Science dorthin verschiebt und Technik abstreitet, vertauscht die beiden Blöcke des Rasters.\n\nDie Aussage ist falsch.",
       "Nebeneinander, nicht Entweder-oder: Technische Sicht mit Produktionsmanagement, Informatik und Data Science sowie verhaltenswissenschaftliche Sicht mit Psychologie, Soziologie und Betriebswirtschaftslehre bilden das Raster, in dem die einzelnen Fächer erklärt werden. Erst die Beleuchtung verschiedener Disziplinen macht die Wirtschaftsinformatik greifbar; zentral bleibt der betriebswirtschaftliche Fokus in Kombination mit Systemen und Menschen. Wer eine der beiden Seiten streicht, halbiert das interdisziplinäre Feld.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2142,7 +2142,7 @@
       "Technische Sichtweise, nicht die verhaltenswissenschaftliche: Produktionsmanagement steht auf der technischen Seite neben Informatik und Data Science. Die verhaltenswissenschaftliche Seite nennt Betriebswirtschaftslehre, Soziologie und Psychologie. Wer Produktionsmanagement dorthin verschiebt und Technik abstreitet, vertauscht die beiden Blöcke.\n\nDie Aussage ist falsch.",
       "Lieferketten, Inventar und Kapazitäten sind ausdrücklich relevante Themen, keine blinden Flecken. Der Fokus liegt auf Produktion und Herstellung von Gütern und Dienstleistungen, nicht auf Finanzspekulation ohne Produktionsbezug. Eine Umwidmung des Produktionsmanagements auf reine Derivate wäre ein anderes Fach.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2171,7 +2171,7 @@
       "Büroprogramme als einzige Tätigkeit wären zu eng. Planung, Gestaltung und Umsetzung von Systemen stehen im Zentrum, ebenso Algorithmen und die Übersetzung von Anforderungen in Software. Fertige Tabellenkalkulation kann später als Beispiel für ein Anwendungssystem dienen, definiert aber nicht die Informatikperspektive. Die Beschränkung aufs Bedienen streicht den Konstruktionskern.\n\nDie Aussage ist falsch.",
       "Informatik in diesem Feld reicht von Algorithmen und Netzwerken bis zu Software Engineering und der Umsetzung von Anforderungen in lauffähige Systeme. Bloße Hardwarebeschaffung ohne Softwareentwicklung ist nicht der einzige Kern.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2200,7 +2200,7 @@
       "Drei Herkunftsfächer, ein Zweck: Anwendungen aus Informatik, Statistik und Mathematik werden kombiniert, um Modelle für Prognosen und Analysen anzupassen und zu optimieren. Kombination ist hier der Kern: Data Science ist in diesem Raster kein isoliertes Zahlenklicken. Anpassen und Optimieren erklärt, warum die Analyse eine Herausforderung bleibt. Ohne diese Fächerbrücke gäbe es keine tragfähigen Prognosemodelle im Sinn dieser Perspektive.\n\nDie Aussage ist wahr.",
       "Künstliche Intelligenz und maschinelles Lernen je nach Anwendungsbereich: Nicht jedes Data-Science-Vorhaben ist schon KI, aber man kommt je nach Anwendungsbereich mit diesen Themen in Kontakt. Das hält die Tür offen, ohne Data Science mit KI gleichzusetzen. In der technischen Perspektive gehören solche Verfahren zum möglichen Werkzeugkasten der Modelle für Prognosen und Analysen.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2229,7 +2229,7 @@
       "Digitale Transformation und disruptive Innovationen stehen ausdrücklich als Fragestellungen der betriebswirtschaftlichen Perspektive. Sie auszuschließen, widerspricht genau diesen Leitfragen zur neuen Wertschöpfung. Wer Wandel und Umbruch streicht, behält nur eine statische BWL ohne Technikimpuls.\n\nDie Aussage ist falsch.",
       "Zahlreich ist das Vorzeichen: Die Fragestellungen und Themengebiete sind zahlreich, bevor Transformation, disruptive Innovation, Management und Regulation als Beispiele folgen. Die Liste ist also offen. Wer glaubt, drei Beispielsätze erschöpften die betriebswirtschaftliche Perspektive, unterschätzt ihre Breite. Interdisziplinarität bleibt hier eine Fülle von Fragen, nicht ein einziges Rezept.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2258,7 +2258,7 @@
       "Reine Technikartefakte ohne Sozialbezug widersprechen der soziologischen Perspektive. Gerade der Einfluss von Gruppen und Organisationen auf Systeme und die Rückwirkung auf Einzelne und Gesellschaft sind der Kern. Wer den Sozialraum streicht, lässt Soziologie im Fach leer.\n\nDie Aussage ist falsch.",
       "Digital Humanism und Ethical Computing stehen als Stichworte dafür, ethische Werte in einem System zu verankern. Sie als irrelevant abzutun, widerspricht der ethischen Seite der Psychologie im Fach. Die Wirtschaftsinformatik holt Ethik in die Gestaltung, statt sie an den Rand zu schieben.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2287,7 +2287,7 @@
       "Vorhaben und Menschen: Informationssysteme unterstützen Unternehmen bei ihren betriebswirtschaftlichen Vorhaben und werden durch Menschen gestaltet. Unterstützung der Vorhaben und Gestaltung durch Menschen gehören zusammen. Das bereitet die spätere Definition vor, in der Menschen und Maschinen gemeinsam Information erzeugen oder benutzen.\n\nDie Aussage ist wahr.",
       "Informationssysteme werden durch Menschen gestaltet und unterstützen betriebswirtschaftliche Vorhaben. Die Behauptung, Menschen spielten keine Rolle, widerspricht der Definition.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2316,7 +2316,7 @@
       "Tabellenkalkulation und betriebliche Bereiche: Ein gängiges Tabellenkalkulationsprogramm, das zusätzlich auf eine Datenbank zugreift, ist das klassische Beispiel. Rechnungswesen mit Kostenrechnung, Personalwesen, Logistik, Verkauf, Vertrieb und Marketing stehen als weitere Felder, in denen Software nötig ist, um betrieblichen Aufgaben nachzugehen. Die Beispiele machen den Begriff handfest, ohne ihn auf ein einziges Produkt zu reduzieren.\n\nDie Aussage ist wahr.",
       "Privater Hausgebrauch ohne betriebliches Aufgabengebiet trifft die Definition nicht. Anwendungssysteme sind für konkrete betriebliche Anwendungsgebiete vorgesehen und umfassen Daten, IT-Infrastruktur und Software für betriebliche Aufgaben. Wer den Betrieb streicht und nur den Haushalt übrig lässt, verfehlt den Systembegriff.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2345,7 +2345,7 @@
       "Mehrere Disziplinen für Integration: Informatik sowie Betriebswirtschaftslehre oder andere Disziplinen sind nötig, damit die Integration möglichst reibungsfrei gelingt. Das ist die praktische Pointe der Interdisziplinarität: nicht zwei Schilder an der Tür, sondern gemeinsames Wissen am Anpassungsprozess. Eine nur technische oder nur kaufmännische Sicht würde die reibungsfreie Integration gefährden, die als Ziel genannt wird. Anpassung ist damit der Ort, an dem Interdisziplinarität operativ wird.\n\nDie Aussage ist wahr.",
       "Auspacken ohne Prozesskenntnis reicht nicht. Anforderungen von Menschen müssen so übersetzt werden, dass sie funktional in der Anwendung angepasst werden können, und dazu sind Kenntnisse der Informatik sowie der Betriebswirtschaftslehre oder anderer Disziplinen nötig. Wer Standardsoftware stets ohne Bezug zu Kernprozessen installiert, verfehlt den zentralen Anpassungsaspekt der Disziplin. Reibungsfreie Integration setzt Verständnis des Betriebs voraus, nicht nur die ungeöffnete Packung.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2374,7 +2374,7 @@
       "Stets standardisiert zum Kauf ist falsch. Informationssysteme werden meist nicht standardisiert von einem Anbieter zum Kauf angeboten, sondern benötigen je nach Unternehmensgröße auch eine Begleitung durch Beratungsunternehmen. Das muss jedoch nicht immer zwingend der Fall sein: es können auch interne Ressourcen aufgestellt werden. Niemals Beratung oder interne Begleitung zu brauchen und immer nur den Standardkauf zu unterstellen, kehrt beide Seiten um.\n\nDie Aussage ist falsch.",
       "Definition mit Menschen und Maschinen: Ein Informationssystem wird zum Zweck eines bestimmten Unternehmens entwickelt und angepasst, berücksichtigt organisatorische Strukturen und besteht aus Menschen und Maschinen – Rechner, Anwendungssystem, Netzwerk und Kommunikationseinrichtungen –, die Information erzeugen und/oder benutzen und durch Kommunikationsbeziehungen miteinander verbunden sind. Maschinen ohne Menschen oder Menschen ohne Verbindung wären unvollständig; Software ist nur ein Teil dieser Menge Ohne organisatorische Strukturen und ohne Menschen, die Information erzeugen oder benutzen, bliebe nur ein Haufen Programme.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2403,7 +2403,7 @@
       "Netze fehlen nicht. Im Kontext müssen Daten ausgetauscht und es muss miteinander kommuniziert werden. Dazu werden lokale und globale Netzwerke verwendet, um Informationen zwischen Unternehmen auszutauschen. Die Behauptung, Austausch sei nur lokal ohne Netzwerke und globale Netze spielten keine Rolle, streicht genau diesen Punkt. Kommunikationseinrichtungen stehen auch in der Definition neben Rechner, Anwendungssystem und Netzwerk.\n\nDie Aussage ist falsch.",
       "Kauf oder Anpassung, Server und Endgeräte: Software wird entweder standardisiert zugekauft oder individuell an das Unternehmen angepasst. Ein Unternehmen hat möglicherweise mehrere Server, um Datenbestände zentral zu verwalten und zu sichern. Mitarbeiter verwenden Rechner und mobile Endgeräte, um zu kommunizieren und Daten zu verarbeiten. Zentral und mobil stehen nebeneinander, Standard und Individualsoftware ebenfalls; Netze tragen den Austausch zwischen Unternehmen Der Mensch innerhalb der Organisation bleibt zentral, weil er Informationen produziert und verarbeitet.\n\nDie Aussage ist wahr."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2432,7 +2432,7 @@
       "CRM, SCM und BI neben ERP: SAP bietet Informationssysteme, die es Unternehmen ermöglichen, mit Kunden in Kontakt zu bleiben, in der Logistik den Überblick zu behalten oder Analysen auf Basis der Unternehmensdaten zu generieren. Die Bezeichnungen Customer-Relationship-Management, Supply-Chain-Management und Business-Intelligence-Systeme machen das handfest. Das weitet das Beispiel über das ERP-Kernsystem hinaus und bleibt bei Informationssystemen zur Unterstützung betrieblicher Tätigkeiten.\n\nDie Aussage ist wahr.",
       "Österreichische Hardware ohne Software ist die falsche Branchenzuordnung. SAP ist ein deutsches Softwareunternehmen in Walldorf und bietet unter anderem ERP-Lösungen sowie weitere Informationssysteme. Herkunft, Softwarefokus und ERP-Angebot widersprechen der Behauptung; wer Hardware ohne Software unterstellt, vertauscht Branche und Produktportfolio.\n\nDie Aussage ist falsch."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   }
 ]

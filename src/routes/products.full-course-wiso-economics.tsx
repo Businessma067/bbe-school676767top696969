@@ -29,6 +29,7 @@ import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
+import { DifficultyBars } from "@/components/DifficultyBars";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
@@ -460,11 +461,14 @@ function EconomicsTasks() {
                                   {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
                                 {timed.enabled && !locked && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
+                                )}
+                                {!locked && c.difficulty_level !== "—" && (
+                                  <DifficultyBars level={c.difficulty_level} />
                                 )}
                               </button>
                             </li>
@@ -930,9 +934,12 @@ function CaseCard({
         <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
           Task {index + 1}
         </span>
-        <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          Difficulty {data.difficulty_level}
-        </span>
+        {data.difficulty_level !== "—" && (
+          <span className="inline-flex items-center gap-1.5 rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+            <DifficultyBars level={data.difficulty_level} />
+            <span className="sr-only">Difficulty {data.difficulty_level}</span>
+          </span>
+        )}
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed

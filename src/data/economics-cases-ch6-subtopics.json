@@ -25,7 +25,7 @@
       "The same pallet loader need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object. Operator → non-current tangible; dealer → inventory. Physical identity does not freeze the category. How pallet loader is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for pallet loader. Operators and dealers can report the same pallet loader on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is False.",
       "Intended use decides the line for the same physical object. An operator records a non-current tangible; a dealer records inventory. A dealer’s pallet loader stays inventory until sold.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -55,7 +55,7 @@
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of a pallet loader supports non-current classification. Counterexample: factory machines wear out yet sit in plant & equipment. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. A dealer’s pallet loader stays inventory until sold. Own use of a pallet loader for years makes it a tangible fixed asset. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is False.",
       "After the sale, the buyer’s purpose governs classification. If the buyer puts the machine into operations, it becomes the buyer’s non-current asset. Own use of a pallet loader for years makes it a tangible fixed asset.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -85,7 +85,7 @@
       "Multi-year operating use of an industrial dishwasher fits the non-current tangible test. Useful life beyond the period plus own use, not resale, drive that line.\n\nSo the statement is True.",
       "Dealer stock of an industrial dishwasher is inventory, a current asset. It is not the dealer’s non-current operating asset. Held for sale beats physical durability when choosing the line. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -115,7 +115,7 @@
       "The same industrial dishwasher need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object. Operator → non-current tangible; dealer → inventory. Physical identity does not freeze the category. A sheet reading of the extract breaks this claim. Operators and dealers can report the same industrial dishwasher on different lines.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets. Resale intent would have put the same object in inventory. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -123,7 +123,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.006",
     "title": "Comparative Balance Sheet Analysis 6",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 362 | 405 |\n| Machinery | 132 | 144 |\n| Office equipment | 45 | 52 |\n| Patents, trademarks and licences | 72 | 72 |\n| Inventory | 204 | 211 |\n| Trade receivables | 106 | 117 |\n| Cash and cash equivalents | 30 | 33 |\n| Total assets | **951** | **1034** |\n| **EQUITY** | | |\n| Share capital | 129 | 129 |\n| Retained earnings | 270 | 278 |\n| Total equity | **399** | **407** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 294 | 340 |\n| Bonds payable | 62 | 70 |\n| Trade payables | 149 | 160 |\n| Bank overdraft | 47 | 57 |\n| Total liabilities | **552** | **627** |\n| Total equity and liabilities | **951** | **1034** |\n\nEvaluate the following economic assertions:\n",
@@ -175,7 +175,7 @@
       "A dealer displaying an industrial dishwasher for sale holds inventory. That stock is not the dealer’s fixed asset. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets. Resale intent, not shelf time, decides the line. A unsold reading of the extract breaks this claim. Operators and dealers can report the same industrial dishwasher on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -183,7 +183,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.009",
     "title": "Liquidity From the Balance Sheet 9",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 409 |\n| Machinery | 265 |\n| Office equipment | 40 |\n| Patents, trademarks and licences | 72 |\n| Inventory | 201 |\n| Trade receivables | 163 |\n| Cash and cash equivalents | 42 |\n| Total assets | **1192** |\n| **EQUITY** | |\n| Share capital | 183 |\n| Retained earnings | 444 |\n| Total equity | **627** |\n| **LIABILITIES** | |\n| Long-term bank loan | 328 |\n| Bonds payable | 78 |\n| Trade payables | 101 |\n| Bank overdraft | 58 |\n| Total liabilities | **565** |\n| Total equity and liabilities | **1192** |\n\nEvaluate the following economic assertions:\n",
@@ -235,7 +235,7 @@
       "Physical form alone does not make a warehouse crane inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns. Operating use beyond a year puts warehouse crane among non-current tangibles. Counterexample: a forklift in the firm’s own warehouse is plant, not stock. Use-versus-resale is the split that matters. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is False.",
       "A dealer’s warehouse crane held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -265,7 +265,7 @@
       "Bought to resell, a warehouse crane belongs in inventory (current). It is not an operating fixed asset of the buyer-dealer. Current assets include stock held for the trading cycle. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
       "The same warehouse crane need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object. Operator → non-current tangible; dealer → inventory. Physical identity does not freeze the category. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Once warehouse crane is placed on the correct line, this assertion fails. How warehouse crane is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -273,7 +273,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.013",
     "title": "Gearing From Comparative Figures 13",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 499 |\n| Machinery | 178 | 199 |\n| Office equipment | 36 | 39 |\n| Patents, trademarks and licences | 82 | 82 |\n| Inventory | 147 | 162 |\n| Trade receivables | 87 | 99 |\n| Cash and cash equivalents | 114 | 123 |\n| Total assets | **1115** | **1203** |\n| **EQUITY** | | |\n| Share capital | 232 | 232 |\n| Retained earnings | 119 | 149 |\n| Total equity | **351** | **381** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 395 | 432 |\n| Bonds payable | 84 | 88 |\n| Trade payables | 213 | 231 |\n| Bank overdraft | 72 | 71 |\n| Total liabilities | **764** | **822** |\n| Total equity and liabilities | **1115** | **1203** |\n\nEvaluate the following economic assertions:\n",
@@ -303,7 +303,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.014",
     "title": "Balance Sheet Structure Review 14",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 202 |\n| Office equipment | 78 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 228 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 81 |\n| Total assets | **1127** |\n| **EQUITY** | |\n| Share capital | 129 |\n| Retained earnings | 400 |\n| Total equity | **529** |\n| **LIABILITIES** | |\n| Long-term bank loan | 342 |\n| Bonds payable | 75 |\n| Trade payables | 148 |\n| Bank overdraft | 33 |\n| Total liabilities | **598** |\n| Total equity and liabilities | **1127** |\n\nEvaluate the following economic assertions:\n",
@@ -355,7 +355,7 @@
       "A warehouse crane bought for the firm’s own daily work is a tangible fixed asset. Benefit spans periods; it is not held for sale. Tangible fixed assets sit among non-current assets on the sheet. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. The described treatment of warehouse crane matches standard reporting here. How warehouse crane is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for warehouse crane.\n\nSo the statement is True.",
       "A dealer displaying a warehouse crane for sale holds inventory. That stock is not the dealer’s fixed asset. Own use of a warehouse crane for years makes it a tangible fixed asset.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -385,7 +385,7 @@
       "Dealer stock of a delivery scooter is inventory, a current asset. It is not the dealer’s non-current operating asset. Settlement timing and intended use matter more than physical shape for delivery scooter.\n\nSo the statement is True.",
       "Intended use decides the line for the same physical object. An operator records a non-current tangible; a dealer records inventory. That dual outcome is exactly what use-versus-resale predicts. Nothing mystical about delivery scooter itself changes the rule. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -393,7 +393,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.017",
     "title": "Balance Sheet Structure Review 17",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 360 |\n| Machinery | 239 |\n| Office equipment | 54 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 224 |\n| Trade receivables | 133 |\n| Cash and cash equivalents | 32 |\n| Total assets | **1119** |\n| **EQUITY** | |\n| Share capital | 143 |\n| Retained earnings | 397 |\n| Total equity | **540** |\n| **LIABILITIES** | |\n| Long-term bank loan | 302 |\n| Bonds payable | 65 |\n| Trade payables | 147 |\n| Bank overdraft | 65 |\n| Total liabilities | **579** |\n| Total equity and liabilities | **1119** |\n\nEvaluate the following economic assertions:\n",
@@ -423,7 +423,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.018",
     "title": "Comparative Balance Sheet Analysis 18",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 302 | 329 |\n| Machinery | 234 | 230 |\n| Office equipment | 60 | 64 |\n| Patents, trademarks and licences | 28 | 28 |\n| Inventory | 189 | 205 |\n| Trade receivables | 138 | 135 |\n| Cash and cash equivalents | 55 | 60 |\n| Total assets | **1006** | **1051** |\n| **EQUITY** | | |\n| Share capital | 128 | 128 |\n| Retained earnings | 212 | 220 |\n| Total equity | **340** | **348** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 353 | 370 |\n| Bonds payable | 56 | 58 |\n| Trade payables | 178 | 188 |\n| Bank overdraft | 79 | 87 |\n| Total liabilities | **666** | **703** |\n| Total equity and liabilities | **1006** | **1051** |\n\nEvaluate the following economic assertions:\n",
@@ -453,7 +453,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.020",
     "title": "Balance Sheet Structure Review 20",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 492 |\n| Machinery | 256 |\n| Office equipment | 63 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 136 |\n| Trade receivables | 162 |\n| Cash and cash equivalents | 34 |\n| Total assets | **1206** |\n| **EQUITY** | |\n| Share capital | 296 |\n| Retained earnings | 422 |\n| Total equity | **718** |\n| **LIABILITIES** | |\n| Long-term bank loan | 207 |\n| Bonds payable | 83 |\n| Trade payables | 150 |\n| Bank overdraft | 48 |\n| Total liabilities | **488** |\n| Total equity and liabilities | **1206** |\n\nEvaluate the following economic assertions:\n",
@@ -505,7 +505,7 @@
       "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent, operate or resell, decides the class. A cheap delivery scooter used for years is still non-current; a costly one held for sale is inventory. Residual value reduces the depreciable base before the annual charge is calculated. Once delivery scooter is placed on the correct line, this assertion fails. How delivery scooter is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for delivery scooter.\n\nSo the statement is False.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets. Resale intent, not shelf time, decides the line. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -513,7 +513,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.022",
     "title": "Asset Composition Chart 22",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 450 |\n| Machinery | 186 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 46 |\n| Inventory | 164 |\n| Trade receivables | 127 |\n| Cash and cash equivalents | 30 |\n| Total assets | **1046** |\n| **EQUITY** | |\n| Share capital | 169 |\n| Retained earnings | 368 |\n| Total equity | **537** |\n| **LIABILITIES** | |\n| Long-term bank loan | 320 |\n| Bonds payable | 83 |\n| Trade payables | 65 |\n| Bank overdraft | 41 |\n| Total liabilities | **509** |\n| Total equity and liabilities | **1046** |\n\nEvaluate the following economic assertions:\n",
@@ -565,7 +565,7 @@
       "Multi-year operating use of a packaging line fits the non-current tangible test. Useful life beyond the period plus own use, not resale, drive that line. Tangible means physical substance; non-current means long-term benefit. How packaging line is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for packaging line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A classified reading of the extract supports this claim. Operators and dealers can report the same packaging line on different lines.\n\nSo the statement is True.",
       "Dealer stock of a packaging line is inventory, a current asset. It is not the dealer’s non-current operating asset. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -595,7 +595,7 @@
       "Physical form alone does not make a packaging line inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets. Resale intent would have put the same object in inventory. How packaging line is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for packaging line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -603,7 +603,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.025",
     "title": "Gearing From Comparative Figures 25",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 336 | 384 |\n| Machinery | 136 | 161 |\n| Office equipment | 74 | 86 |\n| Patents, trademarks and licences | 24 | 24 |\n| Inventory | 131 | 147 |\n| Trade receivables | 109 | 128 |\n| Cash and cash equivalents | 57 | 71 |\n| Total assets | **867** | **1001** |\n| **EQUITY** | | |\n| Share capital | 152 | 152 |\n| Retained earnings | 50 | 108 |\n| Total equity | **202** | **260** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 324 | 372 |\n| Bonds payable | 68 | 76 |\n| Trade payables | 205 | 215 |\n| Bank overdraft | 68 | 78 |\n| Total liabilities | **665** | **741** |\n| Total equity and liabilities | **867** | **1001** |\n\nEvaluate the following economic assertions:\n",
@@ -655,7 +655,7 @@
       "Multi-year operating use of a concrete mixer fits the non-current tangible test. Useful life beyond the period plus own use, not resale, drive that line. Tangible means physical substance; non-current means long-term benefit. A service reading of the extract supports this claim. Operators and dealers can report the same concrete mixer on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
       "Dealer stock of a concrete mixer is inventory, a current asset. It is not the dealer’s non-current operating asset. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -663,7 +663,7 @@
     "subsection": "6.1",
     "case_id": "CASE 6.1.027",
     "title": "Comparative Balance Sheet Analysis 27",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 465 | 511 |\n| Machinery | 277 | 301 |\n| Office equipment | 62 | 69 |\n| Patents, trademarks and licences | 78 | 78 |\n| Inventory | 271 | 306 |\n| Trade receivables | 80 | 85 |\n| Cash and cash equivalents | 49 | 52 |\n| Total assets | **1282** | **1402** |\n| **EQUITY** | | |\n| Share capital | 196 | 196 |\n| Retained earnings | 510 | 574 |\n| Total equity | **706** | **770** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 366 | 404 |\n| Bonds payable | 56 | 60 |\n| Trade payables | 72 | 82 |\n| Bank overdraft | 82 | 86 |\n| Total liabilities | **576** | **632** |\n| Total equity and liabilities | **1282** | **1402** |\n\nEvaluate the following economic assertions:\n",
@@ -715,7 +715,7 @@
       "Bought to resell, a concrete mixer belongs in inventory (current). It is not an operating fixed asset of the buyer-dealer. Current assets include stock held for the trading cycle. A dealer’s concrete mixer stays inventory until sold. Own use of a concrete mixer for years makes it a tangible fixed asset. The described treatment of concrete mixer matches standard reporting here.\n\nSo the statement is True.",
       "A concrete mixer bought for the firm’s own daily work is a tangible fixed asset. Benefit spans periods; it is not held for sale. Tangible fixed assets sit among non-current assets on the sheet. Operators and dealers can report the same concrete mixer on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -745,7 +745,7 @@
       "The same packaging line need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object. Operator → non-current tangible; dealer → inventory. Physical identity does not freeze the category. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Once packaging line is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
       "Intended use decides the line for the same physical object. An operator records a non-current tangible; a dealer records inventory. That dual outcome is exactly what use-versus-resale predicts. Nothing mystical about laptop computer itself changes the rule. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -775,7 +775,7 @@
       "A laptop computer bought for the firm’s own daily work is a tangible fixed asset. Benefit spans periods; it is not held for sale. Operators and dealers can report the same laptop computer on different lines.\n\nSo the statement is True.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets. Resale intent, not shelf time, decides the line. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -783,7 +783,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.001",
     "title": "Cash Flow Mix Over Two Years 1",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 291 | 324 |\n| Cash flow from investing activities | (246) | (362) |\n| Dividends paid | (57) | (73) |\n| Proceeds from new borrowing | 77 | 53 |\n| Cash flow from financing activities | 20 | (20) |\n\nEvaluate the following economic assertions:\n",
@@ -813,7 +813,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.002",
     "title": "Profit and Loss Over Two Years 2",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1055 | 1281 |\n| Cost of sales | (644) | (787) |\n| Gross profit | 411 | 494 |\n| Distribution costs | (35) | (49) |\n| General and administrative costs | (38) | (48) |\n| Other operating result | 4 | 3 |\n| Operating result | 342 | 400 |\n| Finance costs | (22) | (26) |\n| Finance costs – net | (19) | (22) |\n| Profit before tax | 323 | 378 |\n| Income taxes | (69) | (79) |\n| Profit for the year | 254 | 299 |\n\nEvaluate the following economic assertions:\n",
@@ -895,7 +895,7 @@
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure. Counterexample: a healthy retailer opening new stores shows investing outflows. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False.",
       "Loan repayments are financing outflows. Operating cash is the trading cycle, wages, suppliers, customers, not debt service principal. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. For bakery, the cited lines in the extract decide the comparison. Once the item is placed on the correct line, this assertion fails. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -925,7 +925,7 @@
       "Against that rule the claim is off. A triggers reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
       "Against that rule the claim is right. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Depreciation matches past spending on the asset, not a fresh cash bill. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -933,7 +933,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.006",
     "title": "Cash Flow Statement Over Two Years 6",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 314 | 359 |\n| Cash flow from investing activities | (347) | (299) |\n| Dividends paid | (39) | (56) |\n| Proceeds from new borrowing | 60 | 50 |\n| Cash flow from financing activities | 21 | (6) |\n\nEvaluate the following economic assertions:\n",
@@ -963,7 +963,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.007",
     "title": "Asset Composition Chart 7",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 317 |\n| Machinery | 185 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 100 |\n| Inventory | 159 |\n| Trade receivables | 158 |\n| Cash and cash equivalents | 93 |\n| Total assets | **1063** |\n| **EQUITY** | |\n| Share capital | 233 |\n| Retained earnings | 244 |\n| Total equity | **477** |\n| **LIABILITIES** | |\n| Long-term bank loan | 234 |\n| Bonds payable | 74 |\n| Trade payables | 197 |\n| Bank overdraft | 81 |\n| Total liabilities | **586** |\n| Total equity and liabilities | **1063** |\n\nEvaluate the following economic assertions:\n",
@@ -1015,7 +1015,7 @@
       "Against that rule the claim is right. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Equity is the owners' residual interest in the assets. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect. A concrete fix: put borrowings under liabilities and owner claims under equity. A during reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -1045,7 +1045,7 @@
       "For this hotel chain, buying long-lived equipment for cash is an investing outflow. Operating cash is the trading cycle, not plant purchases. Forklifts, vans, and similar kit used for years belong in investing when paid in cash. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. How the item is held and for how long decides the balance-sheet line. A outflow reading of the extract supports this claim.\n\nSo the statement is True.",
       "For this hotel chain, dividends paid are financing outflows, cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1075,7 +1075,7 @@
       "Borrowing and loan repayments are financing movements. Operating cash comes from the trading cycle, not from lenders. Counterexample: drawing a new loan raises financing inflows, not operating cash. Residual value reduces the depreciable base before the annual charge is calculated. Once the item is placed on the correct line, this assertion fails. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False.",
       "Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1105,7 +1105,7 @@
       "Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False.",
       "On that map the assertion is mislabeled. How the item is held and for how long decides the balance-sheet line. A operating reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1135,7 +1135,7 @@
       "For this furniture maker, investing and financing are separate cash-flow sections. Capex can sit beside a dividend payment in the same year without contradiction. One year’s statement routinely shows both buckets at once. Residual value reduces the depreciable base before the annual charge is calculated. For furniture maker, the cited lines in the extract decide the comparison.\n\nSo the statement is True.",
       "Loan repayments are financing outflows. Operating cash is the trading cycle, wages, suppliers, customers, not debt service principal. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1165,7 +1165,7 @@
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. Residual value reduces the depreciable base before the annual charge is calculated. Land is usually kept at cost without an annual write-down. Depreciation matches past spending on the asset, not a fresh cash bill. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
       "On that map the assertion is sound. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. A dealer’s the item stays inventory until sold. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1173,7 +1173,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.015",
     "title": "Revenue and Operating Result Chart 15",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1057 | 1282 |\n| Cost of sales | (676) | (824) |\n| Gross profit | 381 | 458 |\n| Distribution costs | (47) | (60) |\n| General and administrative costs | (41) | (52) |\n| Other operating result | 4 | 3 |\n| Operating result | 297 | 349 |\n| Finance costs | (16) | (19) |\n| Finance costs – net | (9) | (14) |\n| Profit before tax | 288 | 335 |\n| Income taxes | (69) | (80) |\n| Profit for the year | 219 | 255 |\n\nEvaluate the following economic assertions:\n",
@@ -1255,7 +1255,7 @@
       "On that map the assertion is sound. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. How the item is held and for how long decides the balance-sheet line. A construction reading of the extract supports this claim.\n\nSo the statement is True.",
       "The described treatment of the item matches standard reporting here. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1285,7 +1285,7 @@
       "Loan repayments are financing outflows. Operating cash is the trading cycle, wages, suppliers, customers, not debt service principal. A outflows reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
       "For this printing company, investing and financing are separate cash-flow sections. Capex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1315,7 +1315,7 @@
       "An income-statement line is a flow across the period, not a balance-sheet stock. With that split the claim is fine. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
       "With that split the claim is fine. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1323,7 +1323,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.021",
     "title": "Liquidity From the Balance Sheet 21",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 351 |\n| Machinery | 186 |\n| Office equipment | 70 |\n| Patents, trademarks and licences | 53 |\n| Inventory | 124 |\n| Trade receivables | 76 |\n| Cash and cash equivalents | 30 |\n| Total assets | **890** |\n| **EQUITY** | |\n| Share capital | 181 |\n| Retained earnings | 115 |\n| Total equity | **296** |\n| **LIABILITIES** | |\n| Long-term bank loan | 356 |\n| Bonds payable | 62 |\n| Trade payables | 142 |\n| Bank overdraft | 34 |\n| Total liabilities | **594** |\n| Total equity and liabilities | **890** |\n\nEvaluate the following economic assertions:\n",
@@ -1375,7 +1375,7 @@
       "On that map the assertion is mislabeled. How the item is held and for how long decides the balance-sheet line. A dispensing reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
       "Stock figures at a date and period flows must not be swapped. With that split the claim is wrong. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1383,7 +1383,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.023",
     "title": "Cash Flow Mix Over Two Years 23",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 397 | 467 |\n| Cash flow from investing activities | (300) | (386) |\n| Dividends paid | (38) | (52) |\n| Proceeds from new borrowing | 83 | 65 |\n| Cash flow from financing activities | 45 | 13 |\n\nEvaluate the following economic assertions:\n",
@@ -1413,7 +1413,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.024",
     "title": "Profit and Loss Over Two Years 24",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 967 | 1158 |\n| Cost of sales | (637) | (762) |\n| Gross profit | 330 | 396 |\n| Distribution costs | (50) | (60) |\n| General and administrative costs | (39) | (50) |\n| Other operating result | 0 | 4 |\n| Operating result | 241 | 290 |\n| Finance costs | (15) | (22) |\n| Finance costs – net | (11) | (20) |\n| Profit before tax | 230 | 270 |\n| Income taxes | (55) | (62) |\n| Profit for the year | 175 | 208 |\n\nEvaluate the following economic assertions:\n",
@@ -1465,7 +1465,7 @@
       "For this logistics company, investing and financing are separate cash-flow sections. Capex can sit beside a dividend payment in the same year without contradiction. One year’s statement routinely shows both buckets at once. For logistics company, the cited lines in the extract decide the comparison. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
       "For this logistics company, collecting a receivable is operating cash from the trading cycle. It is not new revenue and not an investing inflow. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1473,7 +1473,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.027",
     "title": "Annual Depreciation Chart 27",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €170,000 purchase price, 8-year useful life, no residual value |\n| Asset B – Delivery truck | €52,000 purchase price, 6-year useful life, €7,000 residual value |\n| Asset C – Computer equipment | €20,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:\n",
@@ -1533,7 +1533,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.030",
     "title": "Liquidity From the Balance Sheet 30",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 393 |\n| Machinery | 265 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 81 |\n| Inventory | 276 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 103 |\n| Total assets | **1257** |\n| **EQUITY** | |\n| Share capital | 217 |\n| Retained earnings | 618 |\n| Total equity | **835** |\n| **LIABILITIES** | |\n| Long-term bank loan | 220 |\n| Bonds payable | 63 |\n| Trade payables | 76 |\n| Bank overdraft | 63 |\n| Total liabilities | **422** |\n| Total equity and liabilities | **1257** |\n\nEvaluate the following economic assertions:\n",
@@ -1563,7 +1563,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.031",
     "title": "Cash Flow Mix Over Two Years 31",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 388 | 416 |\n| Cash flow from investing activities | (252) | (307) |\n| Dividends paid | (45) | (65) |\n| Proceeds from new borrowing | 78 | 69 |\n| Cash flow from financing activities | 33 | 4 |\n\nEvaluate the following economic assertions:\n",
@@ -1615,7 +1615,7 @@
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
       "For this fitness club chain, collecting a receivable is operating cash from the trading cycle. It is not new revenue and not an investing inflow. The sale was recorded earlier; cash collection closes the operating loop. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1645,7 +1645,7 @@
       "Equity is the owners' residual interest in the assets. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
       "With that split the claim is fine. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1653,7 +1653,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.034",
     "title": "Profit and Loss Over Two Years 34",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 805 | 972 |\n| Cost of sales | (477) | (568) |\n| Gross profit | 328 | 404 |\n| Distribution costs | (36) | (49) |\n| General and administrative costs | (33) | (44) |\n| Other operating result | (3) | 3 |\n| Operating result | 256 | 314 |\n| Finance costs | (15) | (18) |\n| Finance costs – net | (12) | (12) |\n| Profit before tax | 244 | 302 |\n| Income taxes | (49) | (61) |\n| Profit for the year | 195 | 241 |\n\nEvaluate the following economic assertions:\n",
@@ -1683,7 +1683,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.035",
     "title": "Annual Depreciation Chart 35",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €124,000 purchase price, 11-year useful life, no residual value |\n| Asset B – Delivery truck | €46,000 purchase price, 6-year useful life, €4,000 residual value |\n| Asset C – Computer equipment | €18,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:\n",
@@ -1713,7 +1713,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.036",
     "title": "Cash Flow Statement Over Two Years 36",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 325 | 367 |\n| Cash flow from investing activities | (254) | (321) |\n| Dividends paid | (70) | (92) |\n| Proceeds from new borrowing | 96 | 63 |\n| Cash flow from financing activities | 26 | (29) |\n\nEvaluate the following economic assertions:\n",
@@ -1765,7 +1765,7 @@
       "It is normally non-cash; land is not depreciated like buildings. Residual value reduces the depreciable base before the annual charge is calculated. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Depreciation matches past spending on the asset, not a fresh cash bill. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is False.",
       "On that map the assertion is sound. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A borrowing reading of the extract supports this claim.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1795,7 +1795,7 @@
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure. Counterexample: a healthy retailer opening new stores shows investing outflows. Once the item is placed on the correct line, this assertion fails. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A outflow reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False.",
       "Loan repayments are financing outflows. Operating cash is the trading cycle, wages, suppliers, customers, not debt service principal. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1803,7 +1803,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.039",
     "title": "Liquidity From the Balance Sheet 39",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 153 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 66 |\n| Inventory | 119 |\n| Trade receivables | 60 |\n| Cash and cash equivalents | 97 |\n| Total assets | **860** |\n| **EQUITY** | |\n| Share capital | 236 |\n| Retained earnings | 49 |\n| Total equity | **285** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 55 |\n| Trade payables | 74 |\n| Bank overdraft | 58 |\n| Total liabilities | **575** |\n| Total equity and liabilities | **860** |\n\nEvaluate the following economic assertions:\n",
@@ -1833,7 +1833,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.040",
     "title": "Cash Flow Statement Over Two Years 40",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 391 | 441 |\n| Cash flow from investing activities | (317) | (368) |\n| Dividends paid | (50) | (57) |\n| Proceeds from new borrowing | 86 | 53 |\n| Cash flow from financing activities | 36 | (4) |\n\nEvaluate the following economic assertions:\n",
@@ -1863,7 +1863,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.041",
     "title": "Revenue and Operating Result Chart 41",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 913 | 1073 |\n| Cost of sales | (564) | (665) |\n| Gross profit | 349 | 408 |\n| Distribution costs | (51) | (56) |\n| General and administrative costs | (33) | (42) |\n| Other operating result | 3 | 0 |\n| Operating result | 268 | 310 |\n| Finance costs | (18) | (23) |\n| Finance costs – net | (13) | (21) |\n| Profit before tax | 255 | 289 |\n| Income taxes | (57) | (66) |\n| Profit for the year | 198 | 223 |\n\nEvaluate the following economic assertions:\n",
@@ -1945,7 +1945,7 @@
       "On that map the assertion is sound. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
       "A point reading of the extract supports this claim. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. Operators and dealers can report the same the item on different lines. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1975,7 +1975,7 @@
       "For this catering company, collecting a receivable is operating cash from the trading cycle. It is not new revenue and not an investing inflow. The sale was recorded earlier; cash collection closes the operating loop. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. For catering company, the cited lines in the extract decide the comparison. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
       "For this catering company, buying long-lived equipment for cash is an investing outflow. Operating cash is the trading cycle, not plant purchases. Forklifts, vans, and similar kit used for years belong in investing when paid in cash. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A classified reading of the extract supports this claim.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -1983,7 +1983,7 @@
     "subsection": "6.2",
     "case_id": "CASE 6.2.047",
     "title": "Balance Sheet Structure Review 47",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 508 |\n| Machinery | 145 |\n| Office equipment | 57 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 190 |\n| Trade receivables | 96 |\n| Cash and cash equivalents | 82 |\n| Total assets | **1145** |\n| **EQUITY** | |\n| Share capital | 195 |\n| Retained earnings | 204 |\n| Total equity | **399** |\n| **LIABILITIES** | |\n| Long-term bank loan | 370 |\n| Bonds payable | 63 |\n| Trade payables | 227 |\n| Bank overdraft | 86 |\n| Total liabilities | **746** |\n| Total equity and liabilities | **1145** |\n\nEvaluate the following economic assertions:\n",
@@ -2095,7 +2095,7 @@
       "Looks do not decide the balance-sheet line. On the chapter test the wording is accepted. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A finance reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
       "With that split the claim is wrong. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2125,7 +2125,7 @@
       "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. A businesses reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
       "With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. A whether reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -2133,7 +2133,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.005",
     "title": "Revenue and Operating Result Chart 5",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 794 | 968 |\n| Cost of sales | (476) | (580) |\n| Gross profit | 318 | 388 |\n| Distribution costs | (39) | (50) |\n| General and administrative costs | (37) | (45) |\n| Other operating result | 2 | 0 |\n| Operating result | 244 | 293 |\n| Finance costs | (21) | (23) |\n| Finance costs – net | (14) | (21) |\n| Profit before tax | 230 | 272 |\n| Income taxes | (57) | (66) |\n| Profit for the year | 173 | 206 |\n\nEvaluate the following economic assertions:\n",
@@ -2185,7 +2185,7 @@
       "With that split the claim is fine. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
       "What the object looks like does not pick the heading. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2215,7 +2215,7 @@
       "The described treatment of the item matches standard reporting here. Customer collections recycle earlier sales through operating cash. How the item is held and for how long decides the balance-sheet line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Settlement timing and intended use matter more than physical shape for the item. A committing reading of the extract supports this claim.\n\nSo the statement is True.",
       "How the item is held and for how long decides the balance-sheet line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -2245,7 +2245,7 @@
       "Balance-sheet lines are read from the reporter’s purpose, not from generic labels. The described treatment of the item matches standard reporting here. A share reading of the extract supports this claim. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A owner reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
       "Being tangible is not enough by itself. On the chapter test the wording is rejected. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2253,7 +2253,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.012",
     "title": "Profit and Loss Over Two Years 12",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 755 | 883 |\n| Cost of sales | (471) | (559) |\n| Gross profit | 284 | 324 |\n| Distribution costs | (40) | (47) |\n| General and administrative costs | (38) | (43) |\n| Other operating result | (3) | 4 |\n| Operating result | 203 | 238 |\n| Finance costs | (16) | (23) |\n| Finance costs – net | (9) | (20) |\n| Profit before tax | 194 | 218 |\n| Income taxes | (48) | (55) |\n| Profit for the year | 146 | 163 |\n\nEvaluate the following economic assertions:\n",
@@ -2305,7 +2305,7 @@
       "Read that way, the statement is correct. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A value reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Looks do not decide the balance-sheet line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2335,7 +2335,7 @@
       "That reading makes the assertion fall. A industry reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False.",
       "Physical form is not the classification test. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -2343,7 +2343,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.015",
     "title": "Comparative Balance Sheet Analysis 15",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 320 | 359 |\n| Machinery | 133 | 148 |\n| Office equipment | 40 | 44 |\n| Patents, trademarks and licences | 45 | 45 |\n| Inventory | 133 | 147 |\n| Trade receivables | 148 | 172 |\n| Cash and cash equivalents | 103 | 113 |\n| Total assets | **922** | **1028** |\n| **EQUITY** | | |\n| Share capital | 178 | 178 |\n| Retained earnings | 182 | 234 |\n| Total equity | **360** | **412** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 239 | 260 |\n| Bonds payable | 84 | 95 |\n| Trade payables | 211 | 231 |\n| Bank overdraft | 28 | 30 |\n| Total liabilities | **562** | **616** |\n| Total equity and liabilities | **922** | **1028** |\n\nEvaluate the following economic assertions:\n",
@@ -2395,7 +2395,7 @@
       "With that split the claim is fine. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Cost of sales gathers direct production costs tied to units sold. Gross profit equals revenue minus cost of sales before those operating lines. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: Comparing a business's statements with those of its direct competitors can never reveal whether a change in results reflects conditions a….\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2425,7 +2425,7 @@
       "Customer collections recycle earlier sales through operating cash. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
       "Plant bought for cash is an investing outflow, not day-to-day operating spend. Gross profit equals revenue minus cost of sales before those operating lines. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Cost of sales gathers direct production costs tied to units sold. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2433,7 +2433,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.020",
     "title": "Profit and Loss Over Two Years 20",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 763 | 912 |\n| Cost of sales | (489) | (583) |\n| Gross profit | 274 | 329 |\n| Distribution costs | (48) | (54) |\n| General and administrative costs | (35) | (40) |\n| Other operating result | 3 | 2 |\n| Operating result | 194 | 237 |\n| Finance costs | (20) | (23) |\n| Finance costs – net | (14) | (19) |\n| Profit before tax | 180 | 218 |\n| Income taxes | (44) | (56) |\n| Profit for the year | 136 | 162 |\n\nEvaluate the following economic assertions:\n",
@@ -2463,7 +2463,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.021",
     "title": "Comparative Balance Sheet Analysis 21",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 386 | 435 |\n| Machinery | 175 | 202 |\n| Office equipment | 36 | 39 |\n| Patents, trademarks and licences | 50 | 50 |\n| Inventory | 271 | 320 |\n| Trade receivables | 95 | 103 |\n| Cash and cash equivalents | 79 | 82 |\n| Total assets | **1092** | **1231** |\n| **EQUITY** | | |\n| Share capital | 294 | 294 |\n| Retained earnings | -5 | 78 |\n| Total equity | **289** | **372** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 425 | 456 |\n| Bonds payable | 69 | 75 |\n| Trade payables | 240 | 258 |\n| Bank overdraft | 69 | 70 |\n| Total liabilities | **803** | **859** |\n| Total equity and liabilities | **1092** | **1231** |\n\nEvaluate the following economic assertions:\n",
@@ -2493,7 +2493,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.022",
     "title": "Asset Composition Chart 22",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 317 |\n| Machinery | 158 |\n| Office equipment | 64 |\n| Patents, trademarks and licences | 58 |\n| Inventory | 255 |\n| Trade receivables | 171 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1128** |\n| **EQUITY** | |\n| Share capital | 147 |\n| Retained earnings | 590 |\n| Total equity | **737** |\n| **LIABILITIES** | |\n| Long-term bank loan | 185 |\n| Bonds payable | 53 |\n| Trade payables | 76 |\n| Bank overdraft | 77 |\n| Total liabilities | **391** |\n| Total equity and liabilities | **1128** |\n\nEvaluate the following economic assertions:\n",
@@ -2545,7 +2545,7 @@
       "Materials and direct labour consumed in making goods sold belong in cost of sales. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Distribution and administration sit below gross profit as operating expenses. How the item is held and for how long decides the balance-sheet line. A profit reading of the extract supports this claim. Customer collections recycle earlier sales through operating cash. Cost of sales gathers direct production costs tied to units sold.\n\nSo the statement is True.",
       "Distribution and administration sit below gross profit as operating expenses. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -2575,7 +2575,7 @@
       "Counter-reading: place the item on the line that matches how the entity actually holds it. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
       "Period profit flows to retained earnings; it is not a separate cash-flow line. A current reading of the extract breaks this claim. Customer collections recycle earlier sales through operating cash. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2583,7 +2583,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.025",
     "title": "Revenue and Operating Result Chart 25",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 1053 | 1235 |\n| Cost of sales | (633) | (742) |\n| Gross profit | 420 | 493 |\n| Distribution costs | (49) | (54) |\n| General and administrative costs | (31) | (37) |\n| Other operating result | (2) | (3) |\n| Operating result | 338 | 399 |\n| Finance costs | (18) | (24) |\n| Finance costs – net | (14) | (19) |\n| Profit before tax | 324 | 380 |\n| Income taxes | (78) | (97) |\n| Profit for the year | 246 | 283 |\n\nEvaluate the following economic assertions:\n",
@@ -2613,7 +2613,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.026",
     "title": "Profit and Loss Over Two Years 26",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 821 | 927 |\n| Cost of sales | (523) | (595) |\n| Gross profit | 298 | 332 |\n| Distribution costs | (49) | (63) |\n| General and administrative costs | (43) | (48) |\n| Other operating result | (1) | 0 |\n| Operating result | 205 | 221 |\n| Finance costs | (22) | (29) |\n| Finance costs – net | (15) | (26) |\n| Profit before tax | 190 | 195 |\n| Income taxes | (46) | (48) |\n| Profit for the year | 144 | 147 |\n\nEvaluate the following economic assertions:\n",
@@ -2643,7 +2643,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.027",
     "title": "Comparative Balance Sheet Analysis 27",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 489 | 505 |\n| Machinery | 142 | 147 |\n| Office equipment | 74 | 77 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 81 | 85 |\n| Trade receivables | 180 | 193 |\n| Cash and cash equivalents | 57 | 58 |\n| Total assets | **1102** | **1144** |\n| **EQUITY** | | |\n| Share capital | 158 | 158 |\n| Retained earnings | 384 | 374 |\n| Total equity | **542** | **532** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 360 | 388 |\n| Bonds payable | 49 | 53 |\n| Trade payables | 93 | 104 |\n| Bank overdraft | 58 | 67 |\n| Total liabilities | **560** | **612** |\n| Total equity and liabilities | **1102** | **1144** |\n\nEvaluate the following economic assertions:\n",
@@ -2673,7 +2673,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.028",
     "title": "Asset Composition Chart 28",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 494 |\n| Machinery | 146 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 88 |\n| Inventory | 280 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 31 |\n| Total assets | **1166** |\n| **EQUITY** | |\n| Share capital | 219 |\n| Retained earnings | 469 |\n| Total equity | **688** |\n| **LIABILITIES** | |\n| Long-term bank loan | 200 |\n| Bonds payable | 52 |\n| Trade payables | 161 |\n| Bank overdraft | 65 |\n| Total liabilities | **478** |\n| Total equity and liabilities | **1166** |\n\nEvaluate the following economic assertions:\n",
@@ -2733,7 +2733,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.031",
     "title": "Revenue and Operating Result Chart 31",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 847 | 950 |\n| Cost of sales | (521) | (591) |\n| Gross profit | 326 | 359 |\n| Distribution costs | (42) | (48) |\n| General and administrative costs | (39) | (49) |\n| Other operating result | 0 | 4 |\n| Operating result | 245 | 266 |\n| Finance costs | (15) | (19) |\n| Finance costs – net | (12) | (13) |\n| Profit before tax | 233 | 253 |\n| Income taxes | (46) | (50) |\n| Profit for the year | 187 | 203 |\n\nEvaluate the following economic assertions:\n",
@@ -2763,7 +2763,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.032",
     "title": "Profit and Loss Over Two Years 32",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 840 | 945 |\n| Cost of sales | (551) | (626) |\n| Gross profit | 289 | 319 |\n| Distribution costs | (43) | (49) |\n| General and administrative costs | (40) | (49) |\n| Other operating result | 4 | (3) |\n| Operating result | 210 | 218 |\n| Finance costs | (19) | (24) |\n| Finance costs – net | (12) | (21) |\n| Profit before tax | 198 | 197 |\n| Income taxes | (40) | (42) |\n| Profit for the year | 158 | 155 |\n\nEvaluate the following economic assertions:\n",
@@ -2793,7 +2793,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.033",
     "title": "Comparative Balance Sheet Analysis 33",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 374 | 428 |\n| Machinery | 220 | 240 |\n| Office equipment | 35 | 41 |\n| Patents, trademarks and licences | 79 | 79 |\n| Inventory | 186 | 216 |\n| Trade receivables | 96 | 104 |\n| Cash and cash equivalents | 30 | 35 |\n| Total assets | **1020** | **1143** |\n| **EQUITY** | | |\n| Share capital | 229 | 229 |\n| Retained earnings | 284 | 342 |\n| Total equity | **513** | **571** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 329 | 376 |\n| Bonds payable | 40 | 44 |\n| Trade payables | 82 | 90 |\n| Bank overdraft | 56 | 62 |\n| Total liabilities | **507** | **572** |\n| Total equity and liabilities | **1020** | **1143** |\n\nEvaluate the following economic assertions:\n",
@@ -2823,7 +2823,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.034",
     "title": "Asset Composition Chart 34",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 446 |\n| Machinery | 238 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 109 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 35 |\n| Total assets | **1003** |\n| **EQUITY** | |\n| Share capital | 235 |\n| Retained earnings | 49 |\n| Total equity | **284** |\n| **LIABILITIES** | |\n| Long-term bank loan | 398 |\n| Bonds payable | 85 |\n| Trade payables | 165 |\n| Bank overdraft | 71 |\n| Total liabilities | **719** |\n| Total equity and liabilities | **1003** |\n\nEvaluate the following economic assertions:\n",
@@ -2853,7 +2853,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.036",
     "title": "Comparative Balance Sheet Analysis 36",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 484 | 524 |\n| Machinery | 221 | 229 |\n| Office equipment | 48 | 53 |\n| Patents, trademarks and licences | 32 | 32 |\n| Inventory | 224 | 238 |\n| Trade receivables | 154 | 182 |\n| Cash and cash equivalents | 88 | 104 |\n| Total assets | **1251** | **1362** |\n| **EQUITY** | | |\n| Share capital | 223 | 223 |\n| Retained earnings | 294 | 329 |\n| Total equity | **517** | **552** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 351 | 375 |\n| Bonds payable | 84 | 91 |\n| Trade payables | 215 | 247 |\n| Bank overdraft | 84 | 97 |\n| Total liabilities | **734** | **810** |\n| Total equity and liabilities | **1251** | **1362** |\n\nEvaluate the following economic assertions:\n",
@@ -2905,7 +2905,7 @@
       "On the chapter test the wording is rejected. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A credit reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is False.",
       "With that split the claim is fine. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -2913,7 +2913,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.039",
     "title": "Liquidity From the Balance Sheet 39",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 444 |\n| Machinery | 275 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 215 |\n| Trade receivables | 174 |\n| Cash and cash equivalents | 52 |\n| Total assets | **1269** |\n| **EQUITY** | |\n| Share capital | 221 |\n| Retained earnings | 336 |\n| Total equity | **557** |\n| **LIABILITIES** | |\n| Long-term bank loan | 439 |\n| Bonds payable | 73 |\n| Trade payables | 118 |\n| Bank overdraft | 82 |\n| Total liabilities | **712** |\n| Total equity and liabilities | **1269** |\n\nEvaluate the following economic assertions:\n",
@@ -2943,7 +2943,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.040",
     "title": "Profit and Loss Over Two Years 40",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 785 | 919 |\n| Cost of sales | (495) | (586) |\n| Gross profit | 290 | 333 |\n| Distribution costs | (53) | (67) |\n| General and administrative costs | (42) | (47) |\n| Other operating result | (3) | (2) |\n| Operating result | 192 | 217 |\n| Finance costs | (14) | (21) |\n| Finance costs – net | (10) | (17) |\n| Profit before tax | 182 | 200 |\n| Income taxes | (43) | (46) |\n| Profit for the year | 139 | 154 |\n\nEvaluate the following economic assertions:\n",
@@ -2995,7 +2995,7 @@
       "Once the item is placed on the correct line, this assertion fails. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Cost of sales gathers direct production costs tied to units sold. Gross profit equals revenue minus cost of sales before those operating lines. Distribution and administration sit below gross profit as operating expenses. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False.",
       "Read the claim against the chapter rule: Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each per….\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3025,7 +3025,7 @@
       "Assign the cash line to operating, investing, or financing before judging the claim. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
       "Settlement timing and intended use matter more than physical shape for the item. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3055,7 +3055,7 @@
       "With that split the claim is fine. Materials and direct labour consumed in making goods sold belong in cost of sales. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
       "Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Customer collections recycle earlier sales through operating cash. Cost of sales gathers direct production costs tied to units sold. Gross profit equals revenue minus cost of sales before those operating lines. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Plant bought for cash is an investing outflow, not day-to-day operating spend. Materials and direct labour consumed in making goods sold belong in cost of sales.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3063,7 +3063,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.044",
     "title": "Profit and Loss Over Two Years 44",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following two-year statement of profit and loss (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Revenue | 770 | 904 |\n| Cost of sales | (448) | (530) |\n| Gross profit | 322 | 374 |\n| Distribution costs | (46) | (61) |\n| General and administrative costs | (40) | (46) |\n| Other operating result | 4 | (3) |\n| Operating result | 240 | 264 |\n| Finance costs | (18) | (26) |\n| Finance costs – net | (12) | (23) |\n| Profit before tax | 228 | 241 |\n| Income taxes | (46) | (47) |\n| Profit for the year | 182 | 194 |\n\nEvaluate the following economic assertions:\n",
@@ -3115,7 +3115,7 @@
       "Operators and dealers can report the same the item on different lines. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Materials and direct labour consumed in making goods sold belong in cost of sales. How the item is held and for how long decides the balance-sheet line. A gross reading of the extract breaks this claim.\n\nSo the statement is False.",
       "Period profit flows to retained earnings; it is not a separate cash-flow line. A together reading of the extract supports this claim. Customer collections recycle earlier sales through operating cash. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3123,7 +3123,7 @@
     "subsection": "6.3",
     "case_id": "CASE 6.3.047",
     "title": "Balance Sheet Structure Review 47",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 289 |\n| Machinery | 272 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 259 |\n| Trade receivables | 69 |\n| Cash and cash equivalents | 107 |\n| Total assets | **1088** |\n| **EQUITY** | |\n| Share capital | 254 |\n| Retained earnings | 129 |\n| Total equity | **383** |\n| **LIABILITIES** | |\n| Long-term bank loan | 329 |\n| Bonds payable | 75 |\n| Trade payables | 214 |\n| Bank overdraft | 87 |\n| Total liabilities | **705** |\n| Total equity and liabilities | **1088** |\n\nEvaluate the following economic assertions:\n",
@@ -3175,7 +3175,7 @@
       "Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have …. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion fall. Replace the faulty reason with the correct category and the letter flips. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3205,7 +3205,7 @@
       "That reading makes the assertion fall. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A statements reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
       "Replace the faulty reason with the correct category and the letter flips. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -3213,7 +3213,7 @@
     "subsection": "6.4",
     "case_id": "CASE 6.4.003",
     "title": "Short Depreciation Extract 3",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €76,000 purchase price, 6-year useful life, no residual value |\n| Asset B | €23,000 purchase price, 5-year useful life, €4,000 residual value |\n\nEvaluate the following economic assertions:\n",
@@ -3265,7 +3265,7 @@
       "That reading makes the assertion fall. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A published reading of the extract breaks this claim.\n\nSo the statement is False.",
       "Plant bought for cash is an investing outflow, not day-to-day operating spend. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Residual value reduces the depreciable base before the annual charge is calculated. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -3295,7 +3295,7 @@
       "Plant bought for cash is an investing outflow, not day-to-day operating spend. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Residual value reduces the depreciable base before the annual charge is calculated. How the item is held and for how long decides the balance-sheet line. A around reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. The described treatment of the item matches standard reporting here. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
       "Residual value reduces the depreciable base before the annual charge is calculated. Period profit flows to retained earnings; it is not a separate cash-flow line. The described treatment of the item matches standard reporting here. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -3303,7 +3303,7 @@
     "subsection": "6.4",
     "case_id": "CASE 6.4.006",
     "title": "Liquidity From the Balance Sheet 6",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 292 |\n| Machinery | 176 |\n| Office equipment | 42 |\n| Patents, trademarks and licences | 45 |\n| Inventory | 192 |\n| Trade receivables | 115 |\n| Cash and cash equivalents | 102 |\n| Total assets | **964** |\n| **EQUITY** | |\n| Share capital | 149 |\n| Retained earnings | 116 |\n| Total equity | **265** |\n| **LIABILITIES** | |\n| Long-term bank loan | 436 |\n| Bonds payable | 58 |\n| Trade payables | 170 |\n| Bank overdraft | 35 |\n| Total liabilities | **699** |\n| Total equity and liabilities | **964** |\n\nEvaluate the following economic assertions:\n",
@@ -3355,7 +3355,7 @@
       "That reading makes the assertion hold. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A choosing reading of the extract supports this claim.\n\nSo the statement is True.",
       "How the item is held and for how long decides the balance-sheet line. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
   },
@@ -3393,7 +3393,7 @@
     "subsection": "6.4",
     "case_id": "CASE 6.4.010",
     "title": "Asset Composition Chart 10",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 464 |\n| Machinery | 277 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 41 |\n| Inventory | 156 |\n| Trade receivables | 81 |\n| Cash and cash equivalents | 119 |\n| Total assets | **1181** |\n| **EQUITY** | |\n| Share capital | 153 |\n| Retained earnings | 325 |\n| Total equity | **478** |\n| **LIABILITIES** | |\n| Long-term bank loan | 401 |\n| Bonds payable | 79 |\n| Trade payables | 197 |\n| Bank overdraft | 26 |\n| Total liabilities | **703** |\n| Total equity and liabilities | **1181** |\n\nEvaluate the following economic assertions:\n",
@@ -3475,7 +3475,7 @@
       "Operators and dealers can report the same the item on different lines. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
       "Flows for the year and stocks at year-end answer different questions. With that split the claim is wrong. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Once the item is placed on the correct line, this assertion fails. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -3483,7 +3483,7 @@
     "subsection": "6.4",
     "case_id": "CASE 6.4.014",
     "title": "Balance Sheet Structure Review 14",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 510 |\n| Machinery | 167 |\n| Office equipment | 75 |\n| Patents, trademarks and licences | 94 |\n| Inventory | 263 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 38 |\n| Total assets | **1313** |\n| **EQUITY** | |\n| Share capital | 204 |\n| Retained earnings | 419 |\n| Total equity | **623** |\n| **LIABILITIES** | |\n| Long-term bank loan | 361 |\n| Bonds payable | 66 |\n| Trade payables | 237 |\n| Bank overdraft | 26 |\n| Total liabilities | **690** |\n| Total equity and liabilities | **1313** |\n\nEvaluate the following economic assertions:\n",
@@ -3513,7 +3513,7 @@
     "subsection": "6.4",
     "case_id": "CASE 6.4.015",
     "title": "Short Balance Sheet Extract 15",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 255 |\n| Inventory | 85 |\n| Cash and cash equivalents | 76 |\n| Total assets | **416** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 117 |\n| Total equity | **279** |\n| **LIABILITIES** | |\n| Long-term bank loan | 101 |\n| Trade payables | 36 |\n| Total liabilities | **137** |\n| Total equity and liabilities | **416** |\n\nEvaluate the following economic assertions:\n",
@@ -3595,7 +3595,7 @@
       "Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Period profit flows to retained earnings; it is not a separate cash-flow line. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A needed reading of the extract supports this claim. Customer collections recycle earlier sales through operating cash. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Period profit flows to retained earnings; it is not a separate cash-flow line. The threshold in the sentence is compared directly to the computed percentage. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3625,7 +3625,7 @@
       "Period profit flows to retained earnings; it is not a separate cash-flow line. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
       "Customer collections recycle earlier sales through operating cash. A suppliers reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Plant bought for cash is an investing outflow, not day-to-day operating spend. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3655,7 +3655,7 @@
       "Place the cash movement in operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. A identical reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
       "An income-statement line is a flow across the period, not a balance-sheet stock. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A produced reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3685,7 +3685,7 @@
       "Read the claim against the chapter rule: A single return on capital employed figure is most informative when set against the same business's results in earlier years or against s…. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion hold. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
       "Shape and size never settle the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3693,7 +3693,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.006",
     "title": "Liquidity From the Balance Sheet 6",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 489 |\n| Machinery | 232 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 74 |\n| Inventory | 218 |\n| Trade receivables | 166 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1339** |\n| **EQUITY** | |\n| Share capital | 239 |\n| Retained earnings | 570 |\n| Total equity | **809** |\n| **LIABILITIES** | |\n| Long-term bank loan | 250 |\n| Bonds payable | 58 |\n| Trade payables | 135 |\n| Bank overdraft | 87 |\n| Total liabilities | **530** |\n| Total equity and liabilities | **1339** |\n\nEvaluate the following economic assertions:\n",
@@ -3745,7 +3745,7 @@
       "A dealer’s the item stays inventory until sold. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Own use of the item for years makes it a tangible fixed asset. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Being tangible is not enough by itself. On the chapter test the wording is rejected. A below reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -3783,7 +3783,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.009",
     "title": "Asset and Inventory Turnover 9",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,116 |\n| Cost of sales | 766 |\n| Total assets at the beginning of the year | 804 |\n| Total assets at the end of the year | 933 |\n| Inventory at the beginning of the year | 147 |\n| Inventory at the end of the year | 155 |\n| Trade receivables at the beginning of the year | 101 |\n| Trade receivables at the end of the year | 116 |\n\nEvaluate the following economic assertions:\n",
@@ -3835,7 +3835,7 @@
       "Counter-reading: place the item on the line that matches how the entity actually holds it. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A outweighs reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False.",
       "A terms reading of the extract breaks this claim. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3865,7 +3865,7 @@
       "Equity is the owners' residual interest in the assets. Dividends and share issues are financing events, not operating sales. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Place the cash movement in operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is mislabeled. Name the correct bucket and the wrong label falls away. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3873,7 +3873,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.012",
     "title": "Liquidity From the Balance Sheet 12",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 482 |\n| Machinery | 205 |\n| Office equipment | 61 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 230 |\n| Trade receivables | 140 |\n| Cash and cash equivalents | 79 |\n| Total assets | **1227** |\n| **EQUITY** | |\n| Share capital | 249 |\n| Retained earnings | 328 |\n| Total equity | **577** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 65 |\n| Trade payables | 142 |\n| Bank overdraft | 47 |\n| Total liabilities | **650** |\n| Total equity and liabilities | **1227** |\n\nEvaluate the following economic assertions:\n",
@@ -3925,7 +3925,7 @@
       "Test classification, measurement, or the stated comparison on its own terms. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
       "With that split the claim is fine. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3955,7 +3955,7 @@
       "With that split the claim is wrong. How the item is held and for how long decides the balance-sheet line. A relating reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False.",
       "Residual value reduces the depreciable base before the annual charge is calculated. Period profit flows to retained earnings; it is not a separate cash-flow line. Once the item is placed on the correct line, this assertion fails. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -3963,7 +3963,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.017",
     "title": "Balance Sheet Structure Review 17",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 373 |\n| Machinery | 194 |\n| Office equipment | 59 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 96 |\n| Trade receivables | 130 |\n| Cash and cash equivalents | 114 |\n| Total assets | **1043** |\n| **EQUITY** | |\n| Share capital | 141 |\n| Retained earnings | 340 |\n| Total equity | **481** |\n| **LIABILITIES** | |\n| Long-term bank loan | 289 |\n| Bonds payable | 79 |\n| Trade payables | 133 |\n| Bank overdraft | 61 |\n| Total liabilities | **562** |\n| Total equity and liabilities | **1043** |\n\nEvaluate the following economic assertions:\n",
@@ -4045,7 +4045,7 @@
       "Residual value reduces the depreciable base before the annual charge is calculated. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
       "The income statement tracks the period; the balance sheet freezes amounts at a moment. With that split the claim is fine. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A rounded reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4053,7 +4053,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.021",
     "title": "Liquidity From the Balance Sheet 21",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 471 |\n| Machinery | 175 |\n| Office equipment | 74 |\n| Patents, trademarks and licences | 90 |\n| Inventory | 166 |\n| Trade receivables | 107 |\n| Cash and cash equivalents | 114 |\n| Total assets | **1197** |\n| **EQUITY** | |\n| Share capital | 130 |\n| Retained earnings | 555 |\n| Total equity | **685** |\n| **LIABILITIES** | |\n| Long-term bank loan | 214 |\n| Bonds payable | 76 |\n| Trade payables | 152 |\n| Bank overdraft | 70 |\n| Total liabilities | **512** |\n| Total equity and liabilities | **1197** |\n\nEvaluate the following economic assertions:\n",
@@ -4105,7 +4105,7 @@
       "How the item is held and for how long decides the balance-sheet line. Plant bought for cash is an investing outflow, not day-to-day operating spend. Own use of the item for years makes it a tangible fixed asset. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. A dealer’s the item stays inventory until sold. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False.",
       "Settlement timing and intended use matter more than physical shape for the item. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4135,7 +4135,7 @@
       "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
       "Dividends and share issues are financing events, not operating sales. The threshold in the sentence is compared directly to the computed percentage. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4203,7 +4203,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.028",
     "title": "Turnover and Liquidity Extract 28",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,249 |\n| Cost of sales | 783 |\n| Total assets at the beginning of the year | 900 |\n| Total assets at the end of the year | 961 |\n| Inventory at the beginning of the year | 145 |\n| Inventory at the end of the year | 178 |\n| Trade receivables at the beginning of the year | 110 |\n| Trade receivables at the end of the year | 121 |\n\nEvaluate the following economic assertions:\n",
@@ -4233,7 +4233,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.029",
     "title": "Balance Sheet Structure Review 29",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 485 |\n| Machinery | 256 |\n| Office equipment | 66 |\n| Patents, trademarks and licences | 77 |\n| Inventory | 273 |\n| Trade receivables | 145 |\n| Cash and cash equivalents | 45 |\n| Total assets | **1347** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 684 |\n| Total equity | **882** |\n| **LIABILITIES** | |\n| Long-term bank loan | 288 |\n| Bonds payable | 49 |\n| Trade payables | 80 |\n| Bank overdraft | 48 |\n| Total liabilities | **465** |\n| Total equity and liabilities | **1347** |\n\nEvaluate the following economic assertions:\n",
@@ -4285,7 +4285,7 @@
       "Test classification, measurement, or the stated comparison on its own terms. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A weight reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
       "With that split the claim is fine. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4315,7 +4315,7 @@
       "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
       "Shape and size never settle the line. On the chapter test the wording is accepted. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4345,7 +4345,7 @@
       "A efficiency reading of the extract breaks this claim. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
       "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Liquidity, profitability, efficiency, and structure each illuminate a different angle.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4353,7 +4353,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.034",
     "title": "Turnover and Liquidity Extract 34",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,019 |\n| Cost of sales | 674 |\n| Total assets at the beginning of the year | 823 |\n| Total assets at the end of the year | 1028 |\n| Inventory at the beginning of the year | 169 |\n| Inventory at the end of the year | 179 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 107 |\n\nEvaluate the following economic assertions:\n",
@@ -4383,7 +4383,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.035",
     "title": "Balance Sheet Structure Review 35",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 482 |\n| Machinery | 270 |\n| Office equipment | 69 |\n| Patents, trademarks and licences | 62 |\n| Inventory | 143 |\n| Trade receivables | 100 |\n| Cash and cash equivalents | 31 |\n| Total assets | **1157** |\n| **EQUITY** | |\n| Share capital | 175 |\n| Retained earnings | 411 |\n| Total equity | **586** |\n| **LIABILITIES** | |\n| Long-term bank loan | 300 |\n| Bonds payable | 47 |\n| Trade payables | 135 |\n| Bank overdraft | 89 |\n| Total liabilities | **571** |\n| Total equity and liabilities | **1157** |\n\nEvaluate the following economic assertions:\n",
@@ -4443,7 +4443,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.037",
     "title": "Asset Composition Chart 37",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 309 |\n| Machinery | 180 |\n| Office equipment | 59 |\n| Patents, trademarks and licences | 99 |\n| Inventory | 219 |\n| Trade receivables | 99 |\n| Cash and cash equivalents | 91 |\n| Total assets | **1056** |\n| **EQUITY** | |\n| Share capital | 172 |\n| Retained earnings | 395 |\n| Total equity | **567** |\n| **LIABILITIES** | |\n| Long-term bank loan | 271 |\n| Bonds payable | 50 |\n| Trade payables | 120 |\n| Bank overdraft | 48 |\n| Total liabilities | **489** |\n| Total equity and liabilities | **1056** |\n\nEvaluate the following economic assertions:\n",
@@ -4473,7 +4473,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.038",
     "title": "Balance Sheet Structure Review 38",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 478 |\n| Machinery | 278 |\n| Office equipment | 46 |\n| Patents, trademarks and licences | 63 |\n| Inventory | 217 |\n| Trade receivables | 107 |\n| Cash and cash equivalents | 112 |\n| Total assets | **1301** |\n| **EQUITY** | |\n| Share capital | 158 |\n| Retained earnings | 663 |\n| Total equity | **821** |\n| **LIABILITIES** | |\n| Long-term bank loan | 244 |\n| Bonds payable | 84 |\n| Trade payables | 117 |\n| Bank overdraft | 35 |\n| Total liabilities | **480** |\n| Total equity and liabilities | **1301** |\n\nEvaluate the following economic assertions:\n",
@@ -4503,7 +4503,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.039",
     "title": "Asset and Inventory Turnover 39",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,177 |\n| Cost of sales | 793 |\n| Total assets at the beginning of the year | 761 |\n| Total assets at the end of the year | 1015 |\n| Inventory at the beginning of the year | 128 |\n| Inventory at the end of the year | 160 |\n| Trade receivables at the beginning of the year | 134 |\n| Trade receivables at the end of the year | 110 |\n\nEvaluate the following economic assertions:\n",
@@ -4555,7 +4555,7 @@
       "Read the claim against the chapter rule: Comparing a business's ratios with unrelated competitors in a completely different industry always produces the most reliable benchmark.\n\nSo the statement is False.",
       "Test classification, measurement, or the stated comparison on its own terms. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4563,7 +4563,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.041",
     "title": "Balance Sheet Structure Review 41",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 493 |\n| Machinery | 254 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 36 |\n| Inventory | 113 |\n| Trade receivables | 64 |\n| Cash and cash equivalents | 91 |\n| Total assets | **1094** |\n| **EQUITY** | |\n| Share capital | 221 |\n| Retained earnings | 299 |\n| Total equity | **520** |\n| **LIABILITIES** | |\n| Long-term bank loan | 388 |\n| Bonds payable | 40 |\n| Trade payables | 96 |\n| Bank overdraft | 50 |\n| Total liabilities | **574** |\n| Total equity and liabilities | **1094** |\n\nEvaluate the following economic assertions:\n",
@@ -4645,7 +4645,7 @@
       "Equity is the owners' residual interest in the assets. Dividends and share issues are financing events, not operating sales. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
       "With that split the claim is wrong. How the item is held and for how long decides the balance-sheet line. A turnover reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4683,7 +4683,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.045",
     "title": "Liquidity From the Balance Sheet 45",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 401 |\n| Machinery | 210 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 55 |\n| Inventory | 111 |\n| Trade receivables | 80 |\n| Cash and cash equivalents | 36 |\n| Total assets | **969** |\n| **EQUITY** | |\n| Share capital | 134 |\n| Retained earnings | 283 |\n| Total equity | **417** |\n| **LIABILITIES** | |\n| Long-term bank loan | 216 |\n| Bonds payable | 49 |\n| Trade payables | 212 |\n| Bank overdraft | 75 |\n| Total liabilities | **552** |\n| Total equity and liabilities | **969** |\n\nEvaluate the following economic assertions:\n",
@@ -4735,7 +4735,7 @@
       "Read the claim against the chapter rule: A supermarket chain reporting negative working capital always holds more cash than it needs for its daily operations. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion fall. Replace the faulty reason with the correct category and the letter flips. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A chain reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False.",
       "On the chapter test the wording is rejected. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Own use of the item for years makes it a tangible fixed asset. Once the item is placed on the correct line, this assertion fails. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full",
     "half": "text"
   },
@@ -4765,7 +4765,7 @@
       "Period profit flows to retained earnings; it is not a separate cash-flow line. A construction reading of the extract supports this claim. Customer collections recycle earlier sales through operating cash. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Plant bought for cash is an investing outflow, not day-to-day operating spend. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
       "The described treatment of the item matches standard reporting here. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4803,7 +4803,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.050",
     "title": "Balance Sheet Structure Review 50",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 303 |\n| Machinery | 275 |\n| Office equipment | 31 |\n| Patents, trademarks and licences | 54 |\n| Inventory | 185 |\n| Trade receivables | 73 |\n| Cash and cash equivalents | 83 |\n| Total assets | **1004** |\n| **EQUITY** | |\n| Share capital | 204 |\n| Retained earnings | 160 |\n| Total equity | **364** |\n| **LIABILITIES** | |\n| Long-term bank loan | 419 |\n| Bonds payable | 77 |\n| Trade payables | 62 |\n| Bank overdraft | 82 |\n| Total liabilities | **640** |\n| Total equity and liabilities | **1004** |\n\nEvaluate the following economic assertions:\n",
@@ -4855,7 +4855,7 @@
       "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is True.",
       "Test classification, measurement, or the stated comparison on its own terms. Plant bought for cash is an investing outflow, not day-to-day operating spend. The threshold in the sentence is compared directly to the computed percentage. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Year 1 and Year 2 columns give the pair of totals needed for the percentage. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -4863,7 +4863,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.052",
     "title": "Turnover and Liquidity Extract 52",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,215 |\n| Cost of sales | 818 |\n| Total assets at the beginning of the year | 774 |\n| Total assets at the end of the year | 1049 |\n| Inventory at the beginning of the year | 124 |\n| Inventory at the end of the year | 169 |\n| Trade receivables at the beginning of the year | 135 |\n| Trade receivables at the end of the year | 147 |\n\nEvaluate the following economic assertions:\n",
@@ -4923,7 +4923,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.054",
     "title": "Liquidity From the Balance Sheet 54",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 354 |\n| Machinery | 195 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 50 |\n| Inventory | 221 |\n| Trade receivables | 179 |\n| Cash and cash equivalents | 56 |\n| Total assets | **1094** |\n| **EQUITY** | |\n| Share capital | 212 |\n| Retained earnings | 318 |\n| Total equity | **530** |\n| **LIABILITIES** | |\n| Long-term bank loan | 292 |\n| Bonds payable | 59 |\n| Trade payables | 179 |\n| Bank overdraft | 34 |\n| Total liabilities | **564** |\n| Total equity and liabilities | **1094** |\n\nEvaluate the following economic assertions:\n",
@@ -4975,7 +4975,7 @@
       "On the chapter test the wording is accepted. How the item is held and for how long decides the balance-sheet line. A current reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
       "Operators and dealers can report the same the item on different lines. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5005,7 +5005,7 @@
       "With that split the claim is fine. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
       "With that split the claim is wrong. Cost of sales gathers direct production costs tied to units sold. Gross profit equals revenue minus cost of sales before those operating lines. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5013,7 +5013,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.057",
     "title": "Asset and Inventory Turnover 57",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,134 |\n| Cost of sales | 719 |\n| Total assets at the beginning of the year | 771 |\n| Total assets at the end of the year | 991 |\n| Inventory at the beginning of the year | 128 |\n| Inventory at the end of the year | 193 |\n| Trade receivables at the beginning of the year | 110 |\n| Trade receivables at the end of the year | 140 |\n\nEvaluate the following economic assertions:\n",
@@ -5043,7 +5043,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.058",
     "title": "Asset Composition Chart 58",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 372 |\n| Machinery | 124 |\n| Office equipment | 69 |\n| Patents, trademarks and licences | 81 |\n| Inventory | 124 |\n| Trade receivables | 65 |\n| Cash and cash equivalents | 72 |\n| Total assets | **907** |\n| **EQUITY** | |\n| Share capital | 185 |\n| Retained earnings | 98 |\n| Total equity | **283** |\n| **LIABILITIES** | |\n| Long-term bank loan | 330 |\n| Bonds payable | 88 |\n| Trade payables | 178 |\n| Bank overdraft | 28 |\n| Total liabilities | **624** |\n| Total equity and liabilities | **907** |\n\nEvaluate the following economic assertions:\n",
@@ -5095,7 +5095,7 @@
       "Test classification, measurement, or the stated comparison on its own terms. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
       "Counter-reading: place the item on the line that matches how the entity actually holds it. Plant bought for cash is an investing outflow, not day-to-day operating spend. Own use of the item for years makes it a tangible fixed asset. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5103,7 +5103,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.060",
     "title": "Liquidity From the Balance Sheet 60",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 474 |\n| Machinery | 153 |\n| Office equipment | 30 |\n| Patents, trademarks and licences | 26 |\n| Inventory | 97 |\n| Trade receivables | 79 |\n| Cash and cash equivalents | 104 |\n| Total assets | **963** |\n| **EQUITY** | |\n| Share capital | 119 |\n| Retained earnings | 191 |\n| Total equity | **310** |\n| **LIABILITIES** | |\n| Long-term bank loan | 424 |\n| Bonds payable | 51 |\n| Trade payables | 114 |\n| Bank overdraft | 64 |\n| Total liabilities | **653** |\n| Total equity and liabilities | **963** |\n\nEvaluate the following economic assertions:\n",
@@ -5185,7 +5185,7 @@
       "On the chapter test the wording is accepted. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A working reading of the extract supports this claim.\n\nSo the statement is True.",
       "How the item is held and for how long decides the balance-sheet line. Plant bought for cash is an investing outflow, not day-to-day operating spend. Settlement timing and intended use matter more than physical shape for the item. A utility reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5215,7 +5215,7 @@
       "With that split the claim is fine. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A interest reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
       "Test classification, measurement, or the stated comparison on its own terms. A years reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5223,7 +5223,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.065",
     "title": "Balance Sheet Structure Review 65",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 319 |\n| Machinery | 213 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 81 |\n| Inventory | 138 |\n| Trade receivables | 87 |\n| Cash and cash equivalents | 40 |\n| Total assets | **936** |\n| **EQUITY** | |\n| Share capital | 198 |\n| Retained earnings | 127 |\n| Total equity | **325** |\n| **LIABILITIES** | |\n| Long-term bank loan | 352 |\n| Bonds payable | 52 |\n| Trade payables | 152 |\n| Bank overdraft | 55 |\n| Total liabilities | **611** |\n| Total equity and liabilities | **936** |\n\nEvaluate the following economic assertions:\n",
@@ -5305,7 +5305,7 @@
       "An income-statement line is a flow across the period, not a balance-sheet stock. With that split the claim is fine. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: A return on capital employed figure for a wholesaler carries more weight when read alongside the business's own results from earlier year…. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion hold. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5313,7 +5313,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.068",
     "title": "Balance Sheet Structure Review 68",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 307 |\n| Machinery | 225 |\n| Office equipment | 39 |\n| Patents, trademarks and licences | 67 |\n| Inventory | 215 |\n| Trade receivables | 156 |\n| Cash and cash equivalents | 80 |\n| Total assets | **1089** |\n| **EQUITY** | |\n| Share capital | 146 |\n| Retained earnings | 301 |\n| Total equity | **447** |\n| **LIABILITIES** | |\n| Long-term bank loan | 286 |\n| Bonds payable | 89 |\n| Trade payables | 228 |\n| Bank overdraft | 39 |\n| Total liabilities | **642** |\n| Total equity and liabilities | **1089** |\n\nEvaluate the following economic assertions:\n",
@@ -5365,7 +5365,7 @@
       "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A equity reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
       "On the chapter test the wording is accepted. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A draws reading of the extract supports this claim.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },
@@ -5403,7 +5403,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.072",
     "title": "Liquidity From the Balance Sheet 72",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 425 |\n| Machinery | 168 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 83 |\n| Inventory | 109 |\n| Trade receivables | 117 |\n| Cash and cash equivalents | 63 |\n| Total assets | **1041** |\n| **EQUITY** | |\n| Share capital | 197 |\n| Retained earnings | 196 |\n| Total equity | **393** |\n| **LIABILITIES** | |\n| Long-term bank loan | 418 |\n| Bonds payable | 60 |\n| Trade payables | 140 |\n| Bank overdraft | 30 |\n| Total liabilities | **648** |\n| Total equity and liabilities | **1041** |\n\nEvaluate the following economic assertions:\n",
@@ -5463,7 +5463,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.074",
     "title": "Balance Sheet Structure Review 74",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 305 |\n| Machinery | 176 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 39 |\n| Inventory | 169 |\n| Trade receivables | 103 |\n| Cash and cash equivalents | 83 |\n| Total assets | **933** |\n| **EQUITY** | |\n| Share capital | 298 |\n| Retained earnings | -8 |\n| Total equity | **290** |\n| **LIABILITIES** | |\n| Long-term bank loan | 396 |\n| Bonds payable | 70 |\n| Trade payables | 143 |\n| Bank overdraft | 34 |\n| Total liabilities | **643** |\n| Total equity and liabilities | **933** |\n\nEvaluate the following economic assertions:\n",
@@ -5493,7 +5493,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.075",
     "title": "Asset and Inventory Turnover 75",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,053 |\n| Cost of sales | 711 |\n| Total assets at the beginning of the year | 802 |\n| Total assets at the end of the year | 1035 |\n| Inventory at the beginning of the year | 167 |\n| Inventory at the end of the year | 175 |\n| Trade receivables at the beginning of the year | 117 |\n| Trade receivables at the end of the year | 150 |\n\nEvaluate the following economic assertions:\n",
@@ -5523,7 +5523,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.076",
     "title": "Asset Composition Chart 76",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 312 |\n| Machinery | 147 |\n| Office equipment | 77 |\n| Patents, trademarks and licences | 44 |\n| Inventory | 204 |\n| Trade receivables | 67 |\n| Cash and cash equivalents | 109 |\n| Total assets | **960** |\n| **EQUITY** | |\n| Share capital | 187 |\n| Retained earnings | 298 |\n| Total equity | **485** |\n| **LIABILITIES** | |\n| Long-term bank loan | 180 |\n| Bonds payable | 57 |\n| Trade payables | 165 |\n| Bank overdraft | 73 |\n| Total liabilities | **475** |\n| Total equity and liabilities | **960** |\n\nEvaluate the following economic assertions:\n",
@@ -5553,7 +5553,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.077",
     "title": "Balance Sheet Structure Review 77",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 502 |\n| Machinery | 124 |\n| Office equipment | 43 |\n| Patents, trademarks and licences | 29 |\n| Inventory | 231 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 105 |\n| Total assets | **1214** |\n| **EQUITY** | |\n| Share capital | 110 |\n| Retained earnings | 474 |\n| Total equity | **584** |\n| **LIABILITIES** | |\n| Long-term bank loan | 346 |\n| Bonds payable | 47 |\n| Trade payables | 153 |\n| Bank overdraft | 84 |\n| Total liabilities | **630** |\n| Total equity and liabilities | **1214** |\n\nEvaluate the following economic assertions:\n",
@@ -5613,7 +5613,7 @@
     "subsection": "6.5",
     "case_id": "CASE 6.5.079",
     "title": "Asset Composition Chart 79",
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full",
     "half": "table",
     "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 506 |\n| Machinery | 182 |\n| Office equipment | 41 |\n| Patents, trademarks and licences | 59 |\n| Inventory | 238 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 30 |\n| Total assets | **1151** |\n| **EQUITY** | |\n| Share capital | 174 |\n| Retained earnings | 496 |\n| Total equity | **670** |\n| **LIABILITIES** | |\n| Long-term bank loan | 226 |\n| Bonds payable | 90 |\n| Trade payables | 76 |\n| Bank overdraft | 89 |\n| Total liabilities | **481** |\n| Total equity and liabilities | **1151** |\n\nEvaluate the following economic assertions:\n",

@@ -11,7 +11,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.02",
@@ -37,7 +37,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.1.04",
@@ -50,7 +50,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.1.05",
@@ -63,7 +63,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.06",
@@ -76,7 +76,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.1.07",
@@ -89,7 +89,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.08",
@@ -102,7 +102,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.09",
@@ -167,7 +167,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.14",
@@ -180,7 +180,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.1.15",
@@ -193,7 +193,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.1.16",
@@ -206,7 +206,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.1.17",
@@ -676,7 +676,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.2.03",
@@ -793,7 +793,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.2.12",
@@ -806,7 +806,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.2.13",
@@ -832,7 +832,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.2.15",
@@ -845,7 +845,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.2.16",
@@ -858,7 +858,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.2.17",
@@ -1328,7 +1328,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.03",
@@ -1341,7 +1341,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.04",
@@ -1380,7 +1380,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "5/5"
     },
     {
       "case_id": "CASE 4.3.07",
@@ -1393,7 +1393,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.08",
@@ -1458,7 +1458,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.13",
@@ -1471,7 +1471,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.14",
@@ -1484,7 +1484,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.15",
@@ -1497,7 +1497,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.16",
@@ -1510,7 +1510,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.17",
@@ -1523,7 +1523,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.3.18",
@@ -1549,7 +1549,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.20",
@@ -1588,7 +1588,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.23",
@@ -1627,7 +1627,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.3.26",
@@ -1653,7 +1653,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.3.28",
@@ -1666,7 +1666,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.29",
@@ -1705,7 +1705,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.32",
@@ -1744,7 +1744,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.35",
@@ -1757,7 +1757,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.3.36",
@@ -1770,7 +1770,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.37",
@@ -1783,7 +1783,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.3.38",
@@ -1926,7 +1926,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.3.49",
@@ -1980,7 +1980,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.4.03",
@@ -2019,7 +2019,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.4.06",
@@ -2032,7 +2032,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.4.07",
@@ -2045,7 +2045,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "1/5"
     },
     {
       "case_id": "CASE 4.4.08",
@@ -2110,7 +2110,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.4.13",
@@ -2136,7 +2136,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.4.15",
@@ -2671,7 +2671,7 @@
         true,
         true
       ],
-      "difficulty_level": "3/5"
+      "difficulty_level": "2/5"
     },
     {
       "case_id": "CASE 4.5.06",
@@ -2684,7 +2684,7 @@
         false,
         true
       ],
-      "difficulty_level": "3/5"
+      "difficulty_level": "2/5"
     },
     {
       "case_id": "CASE 4.5.07",
@@ -2697,7 +2697,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.5.08",
@@ -2723,7 +2723,7 @@
         false,
         true
       ],
-      "difficulty_level": "4/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.5.10",
@@ -2762,7 +2762,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.5.13",
@@ -2788,7 +2788,7 @@
         false,
         false
       ],
-      "difficulty_level": "3/5"
+      "difficulty_level": "2/5"
     },
     {
       "case_id": "CASE 4.5.15",
@@ -3284,7 +3284,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.6.03",
@@ -3310,7 +3310,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.6.05",
@@ -3323,7 +3323,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.6.06",
@@ -3349,7 +3349,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.6.08",
@@ -3362,7 +3362,7 @@
         true,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.6.09",
@@ -3375,7 +3375,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.6.10",
@@ -3388,7 +3388,7 @@
         false,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.6.11",
@@ -3401,7 +3401,7 @@
         false,
         false
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.6.12",
@@ -3427,7 +3427,7 @@
         false,
         false
       ],
-      "difficulty_level": "4/5"
+      "difficulty_level": "5/5"
     },
     {
       "case_id": "CASE 4.6.14",
@@ -3440,7 +3440,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "4/5"
     },
     {
       "case_id": "CASE 4.6.15",
@@ -3466,7 +3466,7 @@
         true,
         true
       ],
-      "difficulty_level": "2/5"
+      "difficulty_level": "3/5"
     },
     {
       "case_id": "CASE 4.6.17",

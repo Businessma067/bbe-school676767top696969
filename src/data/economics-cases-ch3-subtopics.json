@@ -25,7 +25,7 @@
       "Installing software is an activity performed for a client: human skills applied as labour. Intangibility makes it a service, not a \"want.\" Wants are consumption preferences; labour is a production factor. Mixing those categories mislabels the installer's work.\n\nSo the statement is False.",
       "Seasonal pickers work for wages during harvest weeks and still supply labour. Contract length does not reclassify the factor. Short employment remains human effort in production.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -54,7 +54,7 @@
       "Fermentation know-how applied when blending batches is knowledge used in production. It sits beside land, labour, and capital as a distinct input that raises the quality and yield of the wine.\n\nSo the statement is True.",
       "Ordering barrels is a capital choice, yet someone still decides timing, suppliers, and risk. That organising role is entrepreneurship; capital decisions do not erase it.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -83,7 +83,7 @@
       "Oak barrels are manufactured containers used to age wine: capital goods. Oak trees in a forest are land; shaped barrels are not. Originating from forest wood does not keep finished cooperage inside the land factor.\n\nSo the statement is False.",
       "Land includes forests, fisheries, mineral deposits, and water, not only fenced factory plots. Narrowing land to industrial sites excludes core natural-resource inputs.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -112,7 +112,7 @@
       "Cash held specifically to cover payroll between invoice receipts is financial capital. Without that buffer, shifts stop even if machines sit idle. Money reserved for operations is part of the capital factor here.\n\nSo the statement is True.",
       "Delivery vans that ship finished goods are vehicles used in production and distribution. That fleet is capital, not a consumer toy parked at home.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -141,7 +141,7 @@
       "Copper already purchased as an input is a material for manufacturing, not land. Land covers deposits in the earth; once copper is extracted and bought as stock, it has left the natural-resource land category.\n\nSo the statement is False.",
       "Production know-how is a knowledge factor even without patents. Registration protects rights; it does not create the factor from a consumer good.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -170,7 +170,7 @@
       "Hiring staff adds labour, yet someone still coordinates suppliers, pricing, and strategy. Employment contracts do not dissolve entrepreneurship into pure wage work.\n\nSo the statement is False.",
       "Choosing which machines to buy is an entrepreneurial allocation decision, even though the machines themselves are capital. Selection is not \"capital only.\"\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -199,7 +199,7 @@
       "Service firms use technology constantly: booking systems, diagnostic licences, and digital workflows. Restricting the factor to physical-hardware manufacturers is too narrow and false.\n\nSo the statement is False.",
       "Design know-how is knowledge, not capital, even if files sit on servers. Storage media are capital; the expertise itself is the knowledge factor.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -228,7 +228,7 @@
       "Spare screens and batteries held for swaps are capital stock waiting to enter repaired machines. Inventory dedicated to production belongs with capital inputs for the workshop.\n\nSo the statement is True.",
       "Time spent diagnosing faults is human effort: labour. The technician's hours are the labour input that turns parts and apps into a working laptop.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -257,7 +257,7 @@
       "Services combine factors too: trainers, software, venues, and scheduling. Manufacturing is not the only sector that mixes land, labour, capital, and entrepreneurship.\n\nSo the statement is False.",
       "Automated lines still need programmers, maintainers, and process knowledge. Automation shifts labour mix; it does not wipe labour and knowledge from manufacturing.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -286,7 +286,7 @@
       "Soil fertility is a natural-resource land input; bottling machinery on the same estate is capital. Sharing a site does not turn machines into land or soil into equipment.\n\nSo the statement is True.",
       "Seasonal harvest workers supply labour just as permanent cellar staff do. Employment duration does not exclude pickers from the labour factor during crush season.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -315,7 +315,7 @@
       "Founders who coordinate suppliers and staff perform entrepreneurship distinct from the hours spent on a single repair task. Coordination and risk sit in the entrepreneurial column.\n\nSo the statement is True.",
       "Bearing business risk is entrepreneurship, not labour, even though worry takes time. Hours of anxiety do not reclassify risk-bearing as wage labour.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -344,7 +344,7 @@
       "Hire-purchase machines are capital goods being paid for over time. Standing on a workshop floor does not make them land. Land is the natural site or resource, not manufactured equipment.\n\nSo the statement is False.",
       "Seasonal outdoor leases leave harvesters and presses as capital equipment. Working on open terrain does not redefine those machines as land inputs.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -373,7 +373,7 @@
       "Harvesters are capital equipment operating on forest land. Working among trees does not convert those machines into the land factor itself or erase labour.\n\nSo the statement is False.",
       "Forests remain natural-resource land after cutting begins. Harvesting timber does not flip the standing resource into capital equipment overnight.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -402,7 +402,7 @@
       "Manufacturers also use loans, retained earnings, and working balances, not only share capital. Claiming share capital is the sole allowed form is false.\n\nSo the statement is False.",
       "Emergency cash held for surprises is financial capital, not land. Storing notes on business premises does not turn money into a natural-resource plot.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -431,7 +431,7 @@
       "Installing software for a client uses human skills as labour. The installer's competence is the production factor, distinct from the licence file or laptop hardware.\n\nSo the statement is True.",
       "Specialists and general staff both count when human resources are deployed in services. Skill level changes pay grades, not whether labour is present.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -460,7 +460,7 @@
       "Designs in the tailor's head are knowledge, and machines plus fabric are still required. Labour alone cannot sew without materials and capital equipment.\n\nSo the statement is False.",
       "Hire-purchase sewing machines are capital occupying workshop floor space. Using room on a plot does not reclassify manufactured equipment as land.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -489,7 +489,7 @@
       "Banking and insurance are tertiary services. Calling them \"basic needs\" does not move finance into the primary extraction sector with farms and mines.\n\nSo the statement is False.",
       "Secondary manufacturing shapes goods from materials; it does not deliver banking or insurance. Those financial services belong in the tertiary sector.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -518,7 +518,7 @@
       "Guest services use snow as a setting, but the activity is hospitality and instruction, not primary extraction of a natural resource for sale as raw material.\n\nSo the statement is False.",
       "Operating on a mountainside does not make a ski resort primary. Location is not the sector test; delivering guest services is what classifies the resort.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -547,7 +547,7 @@
       "A timber mill that turns logs into export boards performs secondary manufacturing. Transformation of materials into processed wood products leaves the primary stage.\n\nSo the statement is True.",
       "Commercial fishing that lands herring for sale extracts a natural resource from the sea. That landing activity is primary-sector work, not manufacturing.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -576,7 +576,7 @@
       "GDP summarises the monetary value of final goods and services produced inside national borders over a period. That is the core definition used in the accounts.\n\nSo the statement is True.",
       "Rebuild activity can raise measured GDP while wellbeing falls after floods. Equality between GDP and citizen wellbeing after disasters therefore does not hold.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -605,7 +605,7 @@
       "Software helpdesks that troubleshoot home networks provide tertiary services. Human support over a line is service output, not extraction or factory work.\n\nSo the statement is True.",
       "Insurance cooperatives that process claims provide tertiary financial services. Claims handling is not primary extraction of natural resources from the earth.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -634,7 +634,7 @@
       "Tertiary shares above seventy percent of GDP are typical of highly developed economies, not of most emerging ones still building industry and services.\n\nSo the statement is False.",
       "Advanced services above seventy percent of output characterise developed economies in the model, not most emerging ones still building industry and services.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -692,7 +692,7 @@
       "A seventy percent-plus service share means tertiary dominance, not primary dominance. Primary would be agriculture, mining, and similar extraction shares.\n\nSo the statement is False.",
       "Developed EU states do not keep primary output above seventy percent of GDP. Food still matters, but primary shares are far smaller than that threshold.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -721,7 +721,7 @@
       "Nominal GDP can rise from inflation alone while real output is flat or falling. Nominal increases therefore do not always equal real economic growth.\n\nSo the statement is False.",
       "Ignoring inflation distorts year-to-year growth comparisons whenever prices move. Claiming that inflation never affects those comparisons is false.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -750,7 +750,7 @@
       "Services produced domestically can enter GDP even when no physical goods cross borders. Intangible coaching exports still count as production in the accounts.\n\nSo the statement is False.",
       "Selling coaching sessions is tertiary service work for foreign clients. Home offices do not turn online training into primary extraction of natural resources.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -779,7 +779,7 @@
       "Office staff support a mine or plant without reclassifying core extraction or assembly as tertiary services. Ancillary admin does not redefine the establishment's main sector.\n\nSo the statement is True.",
       "Employing office clerks does not make a coal mine or car plant tertiary. Core extraction or assembly still sets the sector label for each establishment.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -808,7 +808,7 @@
       "Household volunteering and unpaid care largely sit outside GDP totals. Saying GDP fully captures them contradicts a standard limitation of the measure.\n\nSo the statement is False.",
       "Official GDP totals do not always count volunteering or unpaid care inside the home. Treating those activities as always recorded overstates what the accounts include.\n\nSo the statement is False."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -837,7 +837,7 @@
       "Harvesting wheat is primary. Later flour milling elsewhere is a separate secondary stage and does not reclassify the harvest itself as manufacturing.\n\nSo the statement is False.",
       "Wheat farming stays primary even if mills later turn grain into flour elsewhere. Downstream processing does not redefine the farm's own sector label.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -866,7 +866,7 @@
       "Matching expenses exactly describes break-even, not profit. Profit is the surplus when revenue exceeds total costs. Ignoring that surplus empties the word of its usual commercial meaning.\n\nSo the statement is False.",
       "Covering costs is necessary but not the usual long-run target for profit-oriented manufacturers. Once costs are met, owners still seek a surplus for returns and reinvestment. Treating cost coverage as the end goal stops one step short of profit orientation.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -895,7 +895,7 @@
       "Durability does not require paying out every euro of earnings at once. Distributing all surplus immediately would leave nothing for oven replacements or buffer stock. Many firms retain part of earnings precisely so the shop can keep investing and lasting.\n\nSo the statement is False.",
       "Oven purchases in a commercial bakery normally come from business surplus or financed investment, not from donations. Charity funding is an NPO pattern, not the default path for a profit-oriented chain.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -924,7 +924,7 @@
       "In any given period, profit appears when revenue exceeds total costs for that period. Equal revenue and costs yield break-even; a shortfall is a loss. The statement simply restates that comparison.\n\nSo the statement is True.",
       "Profit orientation means aiming for revenues larger than costs and expenses, not merely matching them. That surplus target is what separates the commercial goal from pure cost recovery.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -953,7 +953,7 @@
       "Dispatching kits before any inflows arrive is not typical sustainable practice. Materials and logistics usually require prior donations or grants. Urgency may pressure timing, but empty coffers still block shipment.\n\nSo the statement is False.",
       "Volunteers reduce some labour costs, yet relief organisations still need money for supplies, fuel, and storage. Claiming that volunteers alone remove every need for inflows understates those cash requirements.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -982,7 +982,7 @@
       "A repair shop that buys better diagnostic tools out of profit is doing commercial reinvestment. The surplus is converted into capital that serves paying customers, which is the commercial pattern.\n\nSo the statement is True.",
       "Profit need not be paid out immediately in full. Firms routinely retain earnings for equipment. Saying profit cannot fund tools because distribution is mandatory invents a false payout rule.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1011,7 +1011,7 @@
       "A conservation NPO's primary aim is habitat and species outcomes, not maximum private owner wealth. Listed corporations answer to shareholders; mission-first NPOs answer to their purpose and governance rules. Equating the two erases that difference.\n\nSo the statement is False.",
       "Merchandise surplus in a conservation NPO is not owed as private shareholder dividends. Dividends belong to for-profit ownership structures, not to typical NPO surplus rules.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1040,7 +1040,7 @@
       "Profits compensate owners and investors for accepting the chance of loss. That risk-reward link is a core reason commercial firms seek surplus rather than permanent break-even.\n\nSo the statement is True.",
       "When revenues exceed expenses, owners have a residual claim on the surplus. Saying they deserve no return at that point denies the ordinary reward for risk-bearing capital.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1098,7 +1098,7 @@
       "Humanitarian relief groups, conservation bodies, and environmental campaign organisations all organise around mission delivery. Private profit for owners is not their primary objective across those NPO types.\n\nSo the statement is True.",
       "Not-for-profit status never cancels funding needs. Ignoring donations, fees, or grants would shut operations down. Mission without money is not a workable model.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1127,7 +1127,7 @@
       "Sending invoices to insurers does not list the clinic on a stock exchange or create private shareholders. Billing is a payment mechanism. Corporate listing status depends on legal form and ownership, not on whether insurers are charged.\n\nSo the statement is False.",
       "Community clinics still need to pay nurses, buy supplies, and heat rooms. NPO status does not prove costs can be ignored. Coverage remains necessary.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1156,7 +1156,7 @@
       "Registration papers do not create a permanent free pass on funding. After registration, inflows are still required for staff, space, and supplies. Mission delivery without finance collapses quickly.\n\nSo the statement is False.",
       "Donor income must still be managed against rent, transport, and wages. Gifts do not free an NPO from covering operating costs responsibly; they are the means used to cover them.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1185,7 +1185,7 @@
       "Reinvesting ticket surplus in outreach expands the mission with earned gains. That use of residual box-office funds is classic NPO surplus deployment.\n\nSo the statement is True.",
       "The theatre both sells tickets and ploughs leftover margin into outreach. Earned income and mission reinvestment operate together in one organisation.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1214,7 +1214,7 @@
       "Urgency does not magically create kits without funding. Materials and logistics still need money first, even in disasters. Dispatch before any funding is not the sustainable template.\n\nSo the statement is False.",
       "Donor gifts are meant to cover operating costs, not to erase them. Rent, transport, and coordination still require careful spending of those gifts. Responsibility for cost coverage remains.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1272,7 +1272,7 @@
       "Mission spending can be financed by donations, fees, trading, and grants, not by government grants alone. Many NPOs run with little or no state money. Grant-only financing is not a rule.\n\nSo the statement is False.",
       "NPO surplus is not paid out as private-owner dividends. Dividend distribution is a for-profit ownership pattern, not the usual NPO surplus rule.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1301,7 +1301,7 @@
       "Staff wages and warehouse costs still appear on a humanitarian NPO's books. Operating without covering those expenses is not a viable model, whatever the mission urgency.\n\nSo the statement is False.",
       "Any surplus is directed back into relief work, not handed out as private shareholder dividends. Dividend payouts contradict typical NPO surplus rules.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1330,7 +1330,7 @@
       "Under the EU definition, a micro enterprise may employ fewer than ten people as its staff ceiling. That headcount limit is the employment half of the micro tests.\n\nSo the statement is True.",
       "A balance sheet below €2m helps only if the other micro tests also hold. Turnover above €2m can still disqualify micro status even when the balance sheet looks small.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -1388,7 +1388,7 @@
       "Medium status needs fewer than 250 employees. Exactly 250 does not satisfy \"fewer than 250.\" That headcount sits on the wrong side of the ceiling.\n\nSo the statement is False.",
       "Small enterprises need fewer than fifty staff. Exactly fifty fails that test. Fifty is not inside the small employee limit under EU wording.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1446,7 +1446,7 @@
       "A micro supplier and a large components manufacturer can face different accounting packages precisely because size categories differ. Those differences are why the tiers exist.\n\nSo the statement is True.",
       "Small enterprises must keep turnover from exceeding €10m on the turnover route of the definition. That ceiling is part of remaining inside the small band.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1504,7 +1504,7 @@
       "SME tiers ask for joint satisfaction of staff limits and the relevant financial thresholds. Passing only one side is not enough to lock in a size band.\n\nSo the statement is True.",
       "Most EU businesses by count fall inside SME size bands. Large firms are rare in the population count even when they are large in employment scale.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1533,7 +1533,7 @@
       "Adding staff and sales that cross small thresholds moves the firm out of micro. It cannot remain micro after those crossings; the definition reclassifies it upward when limits break.\n\nSo the statement is False.",
       "EU filing duties often vary by size category. Micro and small firms may use simplified accounts while larger entities face fuller public reporting. Identical full accounts for all sizes is false.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1562,7 +1562,7 @@
       "One hundred and eighty employees sit under the medium staff ceiling of fewer than 250. If financial tests also pass, that headcount fits the medium staff band.\n\nSo the statement is True.",
       "Micro pairs fewer than ten staff with €2m turnover or balance-sheet limits. Those paired tests form the complete official micro package under EU rules.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1591,7 +1591,7 @@
       "Eight staff fit the micro headcount band, but turnover and balance-sheet figures still need checking before micro status is confirmed. Staff fit is necessary, not sufficient alone.\n\nSo the statement is True.",
       "The ninety-nine percent SME count statistic does not prove SMEs produce ninety-nine percent of EU GDP. Headcount of firms and share of output are different measures.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1620,7 +1620,7 @@
       "Local and regional firms characteristically serve a bounded area with customers close at hand. The district bakery fits that pattern: walk-ins within one neighbourhood, not nationwide delivery. Geographic narrowness is the defining trait, not a side detail.\n\nSo the statement is True.",
       "Regional firms stay inside a defined territory such as a province or cluster of counties. Worldwide operations would be multinational, not regional, regardless of how small the marketing budget looks next to a global brand.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1649,7 +1649,7 @@
       "A website that foreigners can open does not make a firm multinational if no cross-border sales or production occur. Visibility abroad is not the same as operating abroad. Multinational status still requires making or selling in more than one country.\n\nSo the statement is False.",
       "National operations usually stretch suppliers and depots across a whole country, so the chain is longer than a bakery buying flour from a mill two streets away. Distance and node count rise with national reach.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1678,7 +1678,7 @@
       "National supply chains typically run longer than purely local ones because goods move across regions of the home country. Domestic transport speed does not magically shorten every link relative to a neighbourhood workshop buying next door. Local proximity usually means fewer miles and fewer intermediaries.\n\nSo the statement is False.",
       "Proximity helps footfall but does not guarantee demand. Local shops still compete, face empty hours, and can fail to attract enough buyers. Customer finding remains a live challenge at local scale.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1707,7 +1707,7 @@
       "Crossing borders forces firms to handle different cultures, languages, and currencies in customer contact, contracts, and pricing. Those frictions are core international-business costs, not optional extras. A multi-country manufacturer meets them daily.\n\nSo the statement is True.",
       "International operations stretch supply chains across borders and through differing legal and economic systems. That length and complexity exceed a single-country domestic chain.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1765,7 +1765,7 @@
       "Undercapitalisation is especially familiar among smaller local and regional firms, not a multinational-only disease of foreign factories. Craft businesses that cannot raise funds illustrate the risk at home. Restricting the problem to overseas plants misplaces where thin capital bites first.\n\nSo the statement is False.",
       "Culture and language differences matter for manufacturers managing foreign staff, contracts, and buyers, not only for tourist shops. Cross-border production teams face those frictions daily.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1794,7 +1794,7 @@
       "A components manufacturer with plants or sales across countries is multinational regardless of where the first plant opened. Hometown origins do not freeze scope forever. First-plant location is history, not the current geographic classification.\n\nSo the statement is False.",
       "Globalisation shows more firms producing and selling beyond a single country. Rising multinational activity is the chapter's compact description of that process.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1823,7 +1823,7 @@
       "Cross-border manufacturing is international or multinational even if headquarters stays at home. HQ location does not cancel foreign plants. Home HQ plus foreign production is a classic multinational pattern, not a national one.\n\nSo the statement is False.",
       "A plumber serving one town with nearby customers is a local business. The service area and customer proximity match the local definition directly.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1852,7 +1852,7 @@
       "Local scope is about limited area and nearby customers, not solely about EU SME headcount or turnover tests. A large local utility could still be local geographically while failing an SME size screen. Size rules and geographic scope answer different questions.\n\nSo the statement is False.",
       "Exporting part of output while producing at home can still sit beside a largely national identity if foreign sales are limited, and national labels are not automatically voided by a minority export share. Absolute bans on mixing are too rigid.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1881,7 +1881,7 @@
       "Multinationals still need cultural awareness; they do not succeed by erasing every local language and custom for one corporate tongue. Ignoring cultures is a failure mode, not a membership requirement. Cross-border firms that adapt communicate better with staff and buyers.\n\nSo the statement is False.",
       "Regional seasonal hotels often struggle to find customers in off-season months. Empty rooms are a classic limited-area demand problem, not proof that customer finding vanishes.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1910,7 +1910,7 @@
       "Undercapitalisation can block fundraising when a firm is stuck in a small market area with thin collateral and limited investor interest. Regional craft and tourism operators often hit that wall. Capital shortage is a real constraint on limited-area growth.\n\nSo the statement is True.",
       "Where stakeholders sit geographically matters for multinational classification: plants, customers, and suppliers across countries signal cross-border scope. Geography of parties is part of the story, not unrelated noise.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1939,7 +1939,7 @@
       "Seasonal regional tourism income comes from a geographically limited customer base of holidaymakers in neighbouring counties. That limited map is why the operator is regional rather than national. Seasonal swings sit on top of that geographic constraint.\n\nSo the statement is True.",
       "A domestic rail freight network running nationally has a longer chain than a neighbourhood supplier serving one district. More nodes and miles enter once the whole country is the operating area.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1968,7 +1968,7 @@
       "Globalisation raises multinational activity; it does not erase national firms from the home economy. Domestic chains and local shops continue beside cross-border giants. Disappearance of national firms is not part of the definition.\n\nSo the statement is False.",
       "Local market saturation arrives when most nearby customers are already served, so extra local capacity wins little new demand. That ceiling is a classic limited-area constraint.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1997,7 +1997,7 @@
       "Cultural awareness matters when managing staff and customers in foreign subsidiaries. Practices that work at home can offend or confuse abroad. Ignoring culture raises conflict and turnover risk in international teams.\n\nSo the statement is True.",
       "Producing domestically and exporting only a minority share can still leave a largely national profile when foreign sales are limited or absent from the core model. Minority exports need not rewrite the whole scope label overnight.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2026,7 +2026,7 @@
       "Stakeholders include anyone affected by or interested in the business. That broad definition covers owners, managers, employees, customers, suppliers, communities, and other parties touched by outcomes. Narrow ownership tests are too small for the concept used here.\n\nSo the statement is True.",
       "Senior managers are stakeholders, yet they are not the only ones. Shop-floor staff, customers, and suppliers also qualify. Organisation-chart height is not the membership test.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2055,7 +2055,7 @@
       "Owners accept business risk because poor trading can shrink or wipe out their personal return and invested capital. Downside exposure is part of the owner role, not a myth reserved for employees. Weak sales hit the owner's pocket directly.\n\nSo the statement is True.",
       "As owners they seek profit from daily bread and pastry sales. That profit motive is a core owner interest in the bakery setting described here.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2084,7 +2084,7 @@
       "Risk and reward apply first to people who provide capital, not only to employees. Owners put money at stake and claim residual returns. Restricting the pair to staff alone reverses the classic ownership logic.\n\nSo the statement is False.",
       "Limited liability does not guarantee positive returns. Owners can still lose the capital they invested in the firm. Profit without risk is not what limited liability means.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2113,7 +2113,7 @@
       "Managers depend on continued firm success for promotion paths and salary growth. Stalling organisations freeze careers; growing ones open them. That dependence reinforces their stakeholder position.\n\nSo the statement is True.",
       "Managers are stakeholders because business outcomes shape their careers and pay. Effect on livelihood is enough; share ownership is not required.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2142,7 +2142,7 @@
       "Employees may identify with the bakery and feel pride when it succeeds locally. Identification strengthens engagement and shows a personal stake beyond the payslip. Local success can matter emotionally and professionally to staff.\n\nSo the statement is True.",
       "Receiving this month's wage does not end stakeholder status. Ongoing employment, future pay, and security keep the relationship alive after each payday.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2171,7 +2171,7 @@
       "Mutual dependence also runs between staff and the firm, not only between customers and suppliers. Employment is a two-way stake. Limiting the idea to external trade partners leaves out the internal labour link.\n\nSo the statement is False.",
       "Owners alone do not create output; staff labour is essential, and staff also depend on the firm. The relationship runs both ways rather than as a one-way owner machine.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2200,7 +2200,7 @@
       "Shared values can strengthen cooperation between employees and management on firm goals by reducing friction over what counts as acceptable practice. Alignment makes joint effort easier. That cooperation channel supports organisational performance.\n\nSo the statement is True.",
       "Shared values between staff and the organisation can support business success through better engagement and smoother teamwork. Value fit is a practical performance aid, not only a slogan.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2229,7 +2229,7 @@
       "Fair payment terms express supplier stakeholder interests, not merely bookkeeping preferences. Late or predatory terms harm the supplier's business. Treating terms as pure accounting detail misses the relational stake.\n\nSo the statement is True.",
       "Suppliers rely on future orders as well as payment for past deliveries. Ongoing demand keeps their own operations viable beyond one cleared invoice.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2287,7 +2287,7 @@
       "The bakery depends on customers for revenue that keeps the shop trading. Walk-in purchases fund wages, flour, and rent. Customer spending is the firm's lifeblood, not an optional extra.\n\nSo the statement is True.",
       "If the bakery closes, regular customers lose a relied-upon source of fresh bread and must switch at a cost. Closure reveals the customer's stake in continued local supply.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2316,7 +2316,7 @@
       "A town that relies on one major employer has a clear stake in that firm's survival because jobs, local shops, and tax bases move with the plant. Single-employer towns illustrate community dependence vividly.\n\nSo the statement is True.",
       "Communities can be stakeholders without signing contracts with the firm. Effect and interest suffice; a formal supply agreement is not required for membership.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2374,7 +2374,7 @@
       "Environmental stakeholders expect real action rather than superficial green marketing alone. Substantive cuts in harm, better processes, and honest reporting outrank slogans. That expectation is the core of the environmental stake described here.\n\nSo the statement is True.",
       "Marketing slogans without operational change do not satisfy environmental stakeholders. Empty claims leave the underlying impacts untouched and trust eroded.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2403,7 +2403,7 @@
       "Advertising recyclable packaging while increasing pollution elsewhere is a classic greenwash pattern: a narrow green claim masking wider harm. Stakeholders who dig into operations will see the mismatch. That risk is exactly why greenwash damages relations.\n\nSo the statement is True.",
       "Empty eco-slogans without process change can erode stakeholder trust over time as gaps become visible. Credibility falls when words outrun deeds.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2432,7 +2432,7 @@
       "Environmental reporting without operational improvement may still mislead stakeholders if glossy pages imply progress that plants have not made. Disclosure paired with inaction can become another greenwash route. Reports need substance behind them.\n\nSo the statement is True.",
       "The natural environment is treated as a stakeholder expecting substantive corporate response to impacts. That framing pushes firms beyond ignoring ecological effects as external to the business.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2461,7 +2461,7 @@
       "Stakeholder groups do not all want the same outcome on every decision. Interests diverge by role and exposure. Assuming universal agreement erases the conflict the topic exists to analyse.\n\nSo the statement is False.",
       "Stakeholder conflict is common and appears among many pairs, not only owners versus customers. Environment, community, staff, and suppliers also clash with one another and with owners.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2490,7 +2490,7 @@
       "Companies often owe accounts, tax filings, and governance reports to owners, regulators, and sometimes employees. Legal form sets which of those duties bite and how public they are. Reporting toward stakeholder groups is not identical across all forms.\n\nSo the statement is True.",
       "Duties to shareholders, partners, or members differ by legal form. So do duties toward creditors when insolvency rules kick in. Legal form shapes those obligations across stakeholder groups in ways owners feel day to day.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2519,7 +2519,7 @@
       "Interest and dividends are funded from different claims on cash. Equity and debt mix decides whose returns get priority when profits are thin. Treating that mix as unrelated to stakeholder returns invents a wall that finance does not draw.\n\nSo the statement is False.",
       "Accountants record the mix, yet creditors and owners live with its consequences for repayment and residual claims. Financial structure is their concern as well, not a bookkeeping hobby sealed off from stakeholder analysis.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2548,7 +2548,7 @@
       "Customers are the first people market awareness serves: preference shifts, service gaps, and willingness to pay. Rivals matter too, but excluding customers invents a rival-only rule the idea does not use.\n\nSo the statement is False.",
       "Knowing what rival bakeries offer helps an IT-support owner keep quality sharp for regular buyers who can walk away. Rival watching protects customer relationships rather than replacing them.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2577,7 +2577,7 @@
       "Unprofitable firms shed hours, freeze hiring, or close sites. Job security moves with whether the business can still earn a surplus. Pretending employees are insulated from profitability ignores that dependence.\n\nSo the statement is False.",
       "Suppliers need repeat orders to plan milling and deliveries. Weak profitability often shrinks purchasing plans, so future orders are not sealed off from profit levels at the buying firm.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2606,7 +2606,7 @@
       "Owners commonly want shares or the whole business to become more valuable over the years. That preference sits beside profit extraction as a core owner aim in stakeholder analysis.\n\nSo the statement is True.",
       "Stronger brands can raise what buyers would pay for the firm as a going concern. Brand building is one practical path to higher owner valuation when trading stays healthy.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2635,7 +2635,7 @@
       "Customers and employees are classic stakeholder groups even when they own no shares. Ownership is one route into the set, not the only route. Excluding them contradicts mutual-dependence teaching in the unit.\n\nSo the statement is False.",
       "Anyone affected by or interested in the business can be a stakeholder under the wide definition. Shareholders are included in that set, not exclusive owners of the label.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2664,7 +2664,7 @@
       "Share ownership is not required for stakeholder status in the chapter definition. Employees hold interests through pay and security even when the register lists none of their names.\n\nSo the statement is True.",
       "Managers and employees both need the firm to keep trading if their livelihoods are to continue. Shared dependence on profitable operation is real for both groups on the payroll.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2693,7 +2693,7 @@
       "Stakeholder interest continues across future contracts and planning cycles. Settling one invoice closes that bill; it does not end the relationship or the interest in what comes next.\n\nSo the statement is False.",
       "Suppliers watch future volumes because idle capacity still costs money for wages and storage. Payment for past loads alone does not capture their full ongoing stake.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2722,7 +2722,7 @@
       "Households rely on firms for safe, available products in the right quantity at usable times. That dependence is exactly why customers sit inside stakeholder analysis.\n\nSo the statement is True.",
       "If the shop closes, locals lose a convenient supply of bread and related goods nearby. Neighbourhood buyers therefore hold a stake in the bakery staying open for daily needs.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2751,7 +2751,7 @@
       "Residents near an industrial plant notice noise, pollution, and hiring patterns. Those impacts create genuine care about how the firm runs, which is stakeholder territory.\n\nSo the statement is True.",
       "Commercial success influences hiring levels and local spending in surrounding streets. Communities near a plant therefore have an interest in how the firm performs commercially.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2780,7 +2780,7 @@
       "Compliance inspections connect oversight to how firms treat workers, customers, and the environment. Government's stake shows up in that monitoring link to wider interests.\n\nSo the statement is True.",
       "Tax takes rise and fall with trading success across the local base. Collection therefore gives government a stake in local firm performance, not a detached spectator seat.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2809,7 +2809,7 @@
       "Rebranding packaging while processes stay dirty does not satisfy environmental stakeholders who track real harm. Process improvement is still required beside any new label.\n\nSo the statement is False.",
       "Advertising the word sustainable matters less than shop-floor action that actually reduces harm. Real measures outrank the label when environmental stakeholders judge performance.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2838,7 +2838,7 @@
       "The definition reaches anyone affected by or interested in the business across its activities. Shareholders are one group inside a wider set, not the whole set by themselves.\n\nSo the statement is True.",
       "Customers who rely on a firm's products stand in mutual dependence with that firm for supply. That dependence makes them stakeholders without any need for share certificates.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2867,7 +2867,7 @@
       "Profit and a return for bearing risk are standard owner aims in stakeholder teaching for this unit. Seeking those outcomes is ordinary owner behaviour, not optional colour.\n\nSo the statement is True.",
       "Owners know invested capital can shrink when results disappoint over a season or longer. Accepting that downside exposure is part of the owner role described in the chapter.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2896,7 +2896,7 @@
       "Firms need labour to bake, deliver, sell, and keep records day after day. Employees need wages, and the firm needs employees; the dependence runs both ways through operations.\n\nSo the statement is False.",
       "Staff-firm dependence is its own livelihood link, separate from customer-supplier market ties. Limiting mutual dependence to market pairs alone is too narrow for this chapter.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2925,7 +2925,7 @@
       "Late bakery orders push the flour supplier's cash timing and staffing off plan for the week. Threats to cash flow and rosters follow delayed schedules into the supplier's own bills.\n\nSo the statement is True.",
       "Buyers need goods in usable condition; suppliers need paid demand that continues. Orders and cash flow tie the two sides together in ordinary trade relationships.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2954,7 +2954,7 @@
       "If a trusted supplier closes its doors, customers lose access to what they regularly bought there. That loss is a direct customer effect tied to the supplier's fate.\n\nSo the statement is True.",
       "Reliable supply matters to buyers who plan meals and menus; paid custom matters to suppliers who plan output. The reliance runs both directions through the same transactions.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2983,7 +2983,7 @@
       "When neighbours fight a warehouse plan, their preferences clash with the developer's growth aims. That clash is conflicting stakeholder interests playing out in planning meetings.\n\nSo the statement is True.",
       "Extra lorry movements raise noise and congestion for nearby residents along approach roads. Those effects are stakeholder impacts from the new facility on the surrounding community.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3012,7 +3012,7 @@
       "Environmental rules speak for community and public interests the state is charged to protect. Government acts as a stakeholder through those rules when firms affect shared resources.\n\nSo the statement is True.",
       "Roads move freight and customers as well as private leisure trips across a region. Public road building is tied to business logistics, not mere amusement for officials.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3041,7 +3041,7 @@
       "A green logo on packaging does not replace structured environmental reporting to interested parties. Labels and reports serve different jobs; one does not retire the other.\n\nSo the statement is False.",
       "Reporting is meant to reveal impacts to interested parties, including communities near facilities. Hiding impacts would defeat the purpose of the disclosure exercise entirely.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3070,7 +3070,7 @@
       "Pollution control that raises costs squeezes residual returns owners care about each quarter. Tension with owner interests is real when abatement is expensive relative to cash flow.\n\nSo the statement is False.",
       "Cleaner production outlays can trim near-term profit and pull owner aims away from environmental aims. That tension between groups is acknowledged correctly in the statement.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3099,7 +3099,7 @@
       "Extra bakery profit can rise with scale while noise rises for people next door at peak hours. Owners and neighbours can be pulled in different directions by the same extension project.\n\nSo the statement is True.",
       "Neighbours who oppose an extension are defending local amenities against the venture's growth plans. That opposition displays conflicting stakeholder interests over how the area should feel.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3128,7 +3128,7 @@
       "Persuasive slogans without real environmental change are greenwash, not genuine satisfaction. Environmental stakeholders are not paid in marketing copy alone when harm continues.\n\nSo the statement is False.",
       "Even well-managed firms can face owner-versus-community or profit-versus-environment clashes. Good success-factor work does not erase conflicting interests from the stakeholder map.\n\nSo the statement is False."
     ],
-    "difficulty_level": "1/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3215,7 +3215,7 @@
       "Greenwash exaggerates environmental performance in ads relative to what the firm actually does on site. That exaggeration misleads stakeholders who take the ads at face value.\n\nSo the statement is True.",
       "Promoting recyclable boxes while dumping waste illegally is a clear greenwash illustration for any exam. Advertising and practice have come apart in a way stakeholders can spot.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3244,7 +3244,7 @@
       "A signed contract still leaves interest in whether invoices are paid on the dates promised in the schedule. Timing remains a live stakeholder concern after signature day.\n\nSo the statement is False.",
       "Legal wording may set the terms on paper, yet fairness to suppliers is also a stakeholder issue about how partners are treated when cash is tight in practice.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3273,7 +3273,7 @@
       "Staff who share organisational values often feel the firm's wins as partly their own achievement. Closer identification with success follows that overlap between personal and company aims.\n\nSo the statement is True.",
       "Aligned values make it simpler for employees and managers to pursue the same objectives each week. Cooperation benefits from that shared ground when priorities compete for time.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3302,7 +3302,7 @@
       "Retained profit can fund capacity and brand that raise what the business is worth later on sale. Keeping earnings in can build long-term owner value rather than only today's cash.\n\nSo the statement is True.",
       "Reinvestment decisions change owner wealth prospects through future capacity and earnings power. They are not an accountants-only curiosity sealed away from stakeholder interests.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3331,7 +3331,7 @@
       "Wages spent in local shops link community welfare to continued factory operation through retail demand. Local spending is one clear channel of that community stake in the firm.\n\nSo the statement is True.",
       "When jobs cluster at one company, the town's continuity interest focuses on that firm's survival. Concentration of employment sharpens the community stake in whether trading continues.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3360,7 +3360,7 @@
       "Axle limits, driver hours, and safety checks set by regulators change how road-dependent firms plan routes. Transport standards are a stakeholder-facing constraint on distributor operations.\n\nSo the statement is True.",
       "Public roads move distributor loads as well as private traffic between towns. Business logistics lean on that shared network whenever goods leave the warehouse gate.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   }
 ]
