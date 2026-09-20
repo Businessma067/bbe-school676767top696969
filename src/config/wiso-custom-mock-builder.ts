@@ -1,5 +1,5 @@
 /**
- * WiSo Custom Mock Builder — Wirtschaft / Mathematik / Deutsch.
+ * WiSo Custom Mock Builder — Wirtschaft / Mathematik.
  * Reuses shared caps and duration helpers from the BBE builder config.
  */
 
@@ -17,15 +17,12 @@ import {
   maxQuestionsForChapters,
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
-import { ENGLISH_POINTS_BY_TYPE, SCORING_CONFIG } from "@/config/scoring-config";
+import { SCORING_CONFIG } from "@/config/scoring-config";
 
-export type WisoCustomMockSubjectId = "economics" | "math" | "german";
+export type WisoCustomMockSubjectId = "economics" | "math";
 
 /** DB `custom_mocks.subject` values — keep WiSo history separate from BBE. */
-export type WisoCustomMockDbSubject =
-  | "wiso-economics"
-  | "wiso-math"
-  | "wiso-german";
+export type WisoCustomMockDbSubject = "wiso-economics" | "wiso-math" | "wiso-german";
 
 export type WisoCustomMockChapter = {
   num: number;
@@ -40,7 +37,7 @@ export type WisoCustomMockSubjectConfig = {
   accent: string;
   chapters: WisoCustomMockChapter[];
   pointsPerQuestion: number;
-  dbSubject: WisoCustomMockDbSubject;
+  dbSubject: Exclude<WisoCustomMockDbSubject, "wiso-german">;
 };
 
 export const WISO_CUSTOM_MOCK_SUBJECTS: Record<
@@ -65,17 +62,9 @@ export const WISO_CUSTOM_MOCK_SUBJECTS: Record<
     dbSubject: "wiso-math",
     chapters: [],
   },
-  german: {
-    id: "german",
-    label: "Deutsch",
-    enabled: true,
-    accent: "#0F9B7C",
-    pointsPerQuestion: ENGLISH_POINTS_BY_TYPE.text,
-    dbSubject: "wiso-german",
-    chapters: [],
-  },
 };
 
+/** Includes legacy `wiso-german` so old rows still resolve/filter correctly. */
 export const WISO_CUSTOM_MOCK_DB_SUBJECTS: WisoCustomMockDbSubject[] = [
   "wiso-economics",
   "wiso-math",
@@ -95,7 +84,6 @@ export function isWisoCustomMockDbSubject(subject: string): subject is WisoCusto
 export function wisoSubjectFromDb(subject: string): WisoCustomMockSubjectId | null {
   if (subject === "wiso-economics") return "economics";
   if (subject === "wiso-math") return "math";
-  if (subject === "wiso-german") return "german";
   return null;
 }
 

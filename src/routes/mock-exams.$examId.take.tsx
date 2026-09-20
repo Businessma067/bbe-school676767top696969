@@ -562,7 +562,13 @@ function TakeExamPage() {
               onClick={() => setPhase("review")}
               className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
             >
-              {usesAnswerSheet ? "Review" : "Finish exam"}
+              {usesAnswerSheet
+                ? examTrack === "wiso"
+                  ? "Prüfen"
+                  : "Review"
+                : examTrack === "wiso"
+                  ? "Prüfung beenden"
+                  : "Finish exam"}
             </button>
             <ThemeToggle />
             <AuthNav />
@@ -729,7 +735,7 @@ function TakeExamPage() {
               onClick={() => goTo(session.currentIndex - 1)}
               className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-all hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
             >
-              Previous
+              {examTrack === "wiso" ? "Zurück" : "Previous"}
             </button>
             {isLast ? (
               <button
@@ -737,7 +743,7 @@ function TakeExamPage() {
                 onClick={() => setPhase("review")}
                 className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
               >
-                Finish exam
+                {examTrack === "wiso" ? "Prüfung beenden" : "Finish exam"}
               </button>
             ) : (
               <button
@@ -745,7 +751,7 @@ function TakeExamPage() {
                 onClick={() => goTo(session.currentIndex + 1)}
                 className="rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:opacity-90"
               >
-                Next
+                {examTrack === "wiso" ? "Weiter" : "Next"}
               </button>
             )}
           </nav>
@@ -754,8 +760,8 @@ function TakeExamPage() {
         <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:top-[4.5rem] lg:inset-auto lg:bottom-auto lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
           {usesAnswerSheet && (
             <ToolRailButton
-              label="Answer Sheet"
-              short="Sheet"
+              label={examTrack === "wiso" ? "Antwortbogen" : "Answer Sheet"}
+              short={examTrack === "wiso" ? "Bogen" : "Sheet"}
               active={rightPanel === "sheet"}
               badge={answered}
               onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
@@ -796,9 +802,13 @@ function TakeExamPage() {
         <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
           <SheetContent side="right" className="flex w-full flex-col overflow-y-auto sm:max-w-md">
             <SheetHeader className="pr-8 text-left">
-              <SheetTitle className="font-display">Answer Sheet</SheetTitle>
+              <SheetTitle className="font-display">
+                {examTrack === "wiso" ? "Antwortbogen" : "Answer Sheet"}
+              </SheetTitle>
               <SheetDescription>
-                Mark ✕ for True. Same marks as the True checkboxes on the question.
+                {examTrack === "wiso"
+                  ? "✕ für richtig markieren. Dieselben Markierungen wie bei den Aussagen der Aufgabe."
+                  : "Mark ✕ for True. Same marks as the True checkboxes on the question."}
               </SheetDescription>
             </SheetHeader>
             <div className="mt-4 flex min-h-0 flex-1 flex-col pb-6">
@@ -811,6 +821,7 @@ function TakeExamPage() {
                 onNavigate={(n) => {
                   goTo(n - 1);
                 }}
+                variant={examTrack === "wiso" ? "wiso" : "bbe"}
               />
               <button
                 type="button"
@@ -820,7 +831,7 @@ function TakeExamPage() {
                 }}
                 className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-caramel-deep px-4 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
               >
-                Finish exam
+                {examTrack === "wiso" ? "Prüfung beenden" : "Finish exam"}
               </button>
             </div>
           </SheetContent>

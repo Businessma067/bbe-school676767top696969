@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
@@ -107,16 +107,7 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
-  // Read search from the location — not Route.useSearch() — so /de|/uk
-  // dashboard (rendered via /$lang/$) still works. File-route useSearch
-  // throws when the matched route is the locale splat.
-  const rawSearchTab = useRouterState({
-    select: (s): unknown => (s.location.search as { tab?: unknown }).tab,
-  });
-  const searchTab =
-    rawSearchTab == null || rawSearchTab === ""
-      ? undefined
-      : parseDashboardTab(rawSearchTab);
+  const { tab: searchTab } = Route.useSearch();
   // Keep the last explicit tab while TanStack briefly clears search during
   // outbound navigations (Open flashcards / matching / tutor), so the main
   // Courses dashboard does not flash before the tool page mounts.
@@ -998,12 +989,16 @@ function CustomMocksTab({
                   const badge = wisoId
                     ? {
                         label: WISO_CUSTOM_MOCK_SUBJECTS[wisoId].label,
-                        badgeClass:
-                          SUBJECT_META[wisoId === "german" ? "german" : wisoId].badgeClass,
+                        badgeClass: SUBJECT_META[wisoId].badgeClass,
                       }
-                    : SUBJECT_META[mock.subject as SubjectKey]
-                      ? SUBJECT_META[mock.subject as SubjectKey]
-                      : null;
+                    : mock.subject === "wiso-german"
+                      ? {
+                          label: "Deutsch",
+                          badgeClass: SUBJECT_META.german.badgeClass,
+                        }
+                      : SUBJECT_META[mock.subject as SubjectKey]
+                        ? SUBJECT_META[mock.subject as SubjectKey]
+                        : null;
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">

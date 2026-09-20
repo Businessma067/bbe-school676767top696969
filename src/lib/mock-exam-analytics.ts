@@ -106,16 +106,13 @@ export function chapterOf(q: ExamQuestion): { key: string; label: string } | nul
   if (!id) return null;
 
   if (q.subject === "german") {
-    const meta = findWisoCustomMockSubtopic("german", id);
-    const chapters = getWisoCustomMockChapters("german");
-    const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;
-    if (ch) {
-      return {
-        key: `${q.subject}:${ch.num}`,
-        label: `${SUBJECT_META.german.label} · ${ch.heading}`,
-      };
-    }
-  } else {
+    return {
+      key: `${q.subject}:1`,
+      label: `${SUBJECT_META.german.label} · Texte`,
+    };
+  }
+
+  {
     const meta = findCustomMockSubtopic(q.subject, id);
     const chapters = getCustomMockChapters(q.subject);
     const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;

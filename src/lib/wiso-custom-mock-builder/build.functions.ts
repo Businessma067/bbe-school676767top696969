@@ -12,7 +12,6 @@ import {
   type WisoCustomMockSubjectId,
 } from "@/config/wiso-custom-mock-builder";
 import {
-  ENGLISH_POINTS_BY_TYPE,
   SCORING_CONFIG,
   type SubjectKey,
 } from "@/config/scoring-config";
@@ -31,7 +30,7 @@ import { pickRandomFromSubtopics } from "@/lib/custom-mock-builder/pick";
 import { scrubStatementHints } from "@/lib/case-context";
 
 const Input = z.object({
-  subject: z.enum(["economics", "math", "german"]),
+  subject: z.enum(["economics", "math"]),
   subtopics: z.array(z.string().min(1)).min(1).max(80),
   questionCount: z.number().int().min(1).max(50),
   topicCounts: z.record(z.string(), z.number().int().min(0)).optional(),
@@ -47,12 +46,10 @@ function padFive<T>(arr: T[], fill: T): T[] {
 
 /** ExamQuestion.subject for take/review UI + scoring. */
 function examSubjectFor(subject: WisoCustomMockSubjectId): SubjectKey {
-  if (subject === "german") return "german";
   return subject;
 }
 
 function maxPointsFor(subject: WisoCustomMockSubjectId): number {
-  if (subject === "german") return ENGLISH_POINTS_BY_TYPE.text;
   if (subject === "math") return SCORING_CONFIG.math.defaultMaxPerTask;
   return SCORING_CONFIG.economics.defaultMaxPerTask;
 }

@@ -1,10 +1,9 @@
 /**
  * Server-only WiSo Full Course banks for Custom Mock Builder
- * (Wirtschaft / Mathematik / Deutsch). Keep off the builder page so the
+ * (Wirtschaft / Mathematik). Keep off the builder page so the
  * client does not download the entire course JSON.
  */
 
-import { WISO_GERMAN_CHAPTERS, type WisoGermanTask } from "@/data/wiso-german-chapters";
 import { loadAllWisoEconomicsChapterTasks } from "@/data/wiso-economics-chapters";
 import type { EconomicsTask } from "@/data/economics-chapters";
 import { loadWisoMathChapterTasks, WISO_MATH_CHAPTERS } from "@/data/wiso-math-chapters";
@@ -42,20 +41,6 @@ function economicsTaskToBank(t: EconomicsTask): WisoCustomMockBankTask {
   };
 }
 
-function germanTaskToBank(t: WisoGermanTask): WisoCustomMockBankTask {
-  return {
-    id: t.id,
-    case_id: t.case_id,
-    subsection: t.subsection,
-    context: t.context ?? "",
-    statements: t.statements ?? [],
-    answer_key: t.answer_key ?? [],
-    tactical_explanations: t.tactical_explanations ?? [],
-    passage: t.passage,
-    solution_overview: t.solution_overview,
-  };
-}
-
 async function loadAllWisoMathTasks(): Promise<WisoCustomMockBankTask[]> {
   const loaded = await Promise.all(
     WISO_MATH_CHAPTERS.map(async (ch) => ({
@@ -74,9 +59,6 @@ export async function getWisoLocalBuilderTasks(
   if (subject === "math") {
     return loadAllWisoMathTasks();
   }
-  if (subject === "economics") {
-    const loaded = await loadAllWisoEconomicsChapterTasks();
-    return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
-  }
-  return WISO_GERMAN_CHAPTERS.flatMap((ch) => ch.tasks.map(germanTaskToBank));
+  const loaded = await loadAllWisoEconomicsChapterTasks();
+  return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
 }

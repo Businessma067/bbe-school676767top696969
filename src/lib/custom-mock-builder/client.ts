@@ -145,7 +145,7 @@ export type GenerateArgs = {
 };
 
 export type WisoGenerateArgs = {
-  subject: "economics" | "math" | "german";
+  subject: "economics" | "math";
   subtopics: string[];
   questionCount: number;
   topicCounts?: Record<string, number>;
