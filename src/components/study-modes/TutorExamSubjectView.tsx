@@ -67,7 +67,12 @@ export function TutorExamSubjectView({
 
   const startExam = useCallback(
     (nextSection: string | "all", nextExam?: number) => {
-      const qs = buildTutorExam(subject.sections, nextSection, TUTOR_EXAM_SIZE, locale);
+      const qs = buildTutorExam(
+        subject.sections,
+        nextSection,
+        demoRevealLocked ? 1 : TUTOR_EXAM_SIZE,
+        locale,
+      );
       setQuestions(qs);
       setIndex(0);
       setScore(0);
@@ -77,12 +82,18 @@ export function TutorExamSubjectView({
       setShowRevealLock(false);
       if (nextExam != null) setExamNo(nextExam);
     },
-    [subject.sections, locale, greetings],
+    [subject.sections, locale, greetings, demoRevealLocked],
   );
 
   useEffect(() => {
     startExam(sectionId, 1);
   }, [sectionId, startExam]);
+
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
+  }, [demoRevealLocked]);
 
   const current = questions[index] ?? null;
   const progressLabel =
@@ -151,7 +162,10 @@ export function TutorExamSubjectView({
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => startExam(sectionId, examNo)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startExam(sectionId, examNo);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
@@ -159,7 +173,10 @@ export function TutorExamSubjectView({
               </button>
               <button
                 type="button"
-                onClick={() => startExam(sectionId, examNo + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startExam(sectionId, examNo + 1);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >
@@ -174,7 +191,10 @@ export function TutorExamSubjectView({
               active={sectionId === "all"}
               label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
-              onClick={() => setSectionId("all")}
+              onClick={() => {
+                if (attemptDemoNav()) return;
+                setSectionId("all");
+              }}
             />
             {subject.sections.map((s) => (
               <SectionChip
@@ -182,7 +202,10 @@ export function TutorExamSubjectView({
                 active={sectionId === s.id}
                 label={s.title}
                 accent={subject.accent}
-                onClick={() => setSectionId(s.id)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  setSectionId(s.id);
+                }}
               />
             ))}
           </div>
@@ -217,7 +240,10 @@ export function TutorExamSubjectView({
               total={questions.length}
               pct={pct}
               locale={locale}
-              onAgain={() => startExam(sectionId, examNo + 1)}
+              onAgain={() => {
+                if (attemptDemoNav()) return;
+                startExam(sectionId, examNo + 1);
+              }}
             />
           ) : current ? (
             <ExamCard

@@ -90,6 +90,12 @@ export function DemoStudyToolSubjectPage({
     : getFlashcardSubject(subjectId);
   if (!subject) return null;
 
+  const demoSubject = {
+    ...subject,
+    downloadHref: null,
+    downloadLabel: null,
+  };
+
   const href = subjectsHref(track, kind);
   const slug = productSlug(track);
   const locale = isWiso ? ("de" as const) : ("en" as const);
@@ -98,7 +104,7 @@ export function DemoStudyToolSubjectPage({
     return (
       <MatchingSubjectView
         subjectId={subjectId}
-        subject={subject}
+        subject={demoSubject}
         subjectsHref={href}
         locale={locale}
         demoRevealLocked
@@ -111,7 +117,7 @@ export function DemoStudyToolSubjectPage({
     return (
       <TutorExamSubjectView
         subjectId={subjectId}
-        subject={subject}
+        subject={demoSubject}
         subjectsHref={href}
         locale={locale}
         demoRevealLocked
@@ -123,7 +129,7 @@ export function DemoStudyToolSubjectPage({
   return (
     <FlashcardSubjectView
       subjectId={subjectId}
-      subject={subject}
+      subject={demoSubject}
       progressSubjectId={isWiso ? `demo-wiso-${subjectId}` : `demo-${subjectId}`}
       subjectsHref={href}
       vocabularyModes={subjectId === "english"}
