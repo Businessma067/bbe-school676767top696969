@@ -116,20 +116,18 @@ export function WisoLandingPage() {
                   <span className="mt-0.5 text-[11px] font-medium opacity-70">Full WiSo Course</span>
                 </LocalizedLink>
               </div>
-            </div>
 
-            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap track="wiso" accent="wiso-blue" />
-            </div>
-
-            <div className="mx-auto mt-8 max-w-4xl text-center">
               <LocalizedLink
                 to="/wiso/entrance-exam"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300"
               >
                 Read the WiSo entrance exam overview
                 <ArrowRight className="h-3.5 w-3.5" />
               </LocalizedLink>
+            </div>
+
+            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
+              <PrepJourneyRoadmap track="wiso" accent="wiso-blue" />
             </div>
           </div>
         </section>
