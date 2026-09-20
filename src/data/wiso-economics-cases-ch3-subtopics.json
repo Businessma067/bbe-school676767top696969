@@ -928,6 +928,180 @@
     "tier": "full"
   },
   {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.33",
+    "title": "Tab. 1: Schwellen der Unternehmensgröße",
+    "context": "Tab. 1 des Lehrbuchs kategorisiert Unternehmen nach Größe (EU-Empfehlung). Umsatz und Bilanzsumme stehen alternativ nebeneinander.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Kleinstunternehmen hat höchstens 9 Mitarbeiterinnen und Mitarbeiter.",
+      "Kleine Unternehmen liegen bei Umsatz oder Bilanzsumme bei höchstens 10 Millionen Euro.",
+      "Mittlere Unternehmen dürfen bis 249 Beschäftigte haben, beim Umsatz bis 50 Millionen Euro und bei der Bilanzsumme bis 43 Millionen Euro.",
+      "Große Unternehmen beginnen laut Tabelle bereits ab 50 Beschäftigten.",
+      "Die Bilanzsummenschwelle der mittleren Unternehmen ist mit 43 Millionen Euro niedriger als ihre Umsatzschwelle von 50 Millionen Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Die erste Zeile setzt die Beschäftigtengrenze bei neun. Bis 9 heißt: zehn Beschäftigte sprengen bereits die Kleinstkategorie. Die Tabelle koppelt diese Personenzahl an höchstens 2 Millionen Euro Umsatz oder Bilanzsumme. Wer 49 in die erste Zeile liest, greift die nächste Kategorie. Die Aussage trifft genau Tab. 1.\n\nDie Aussage ist wahr.",
+      "Zehn Millionen Euro ist die obere Grenze der zweiten Zeile, und zwar sowohl beim Umsatz als auch bei der Bilanzsumme. Die Tabelle schreibt Bis zu 10 Mio. Euro in beide Geldspalten. 10 Millionen gehören noch zu den kleinen Unternehmen; über 10 Millionen bei gleicher Beschäftigtenzahl würde die nächste Stufe prüfen. Die 2-Millionen-Grenze gilt nur für Kleinstunternehmen.\n\nDie Aussage ist wahr.",
+      "Drei Schwellen stehen in derselben Zeile. Mitarbeiter: Bis 249. Umsatz: Bis zu 50 Mio. Euro. Bilanzsumme: Bis zu 43 Mio. Euro. Die 43 Millionen sind keine Tippfehler gegenüber den 50 Millionen Umsatz; Tab. 1 trennt die beiden Geldgrößen bewusst. 250 Beschäftigte oder mehr als 50 Millionen Umsatz bzw. mehr als 43 Millionen Bilanzsumme führen in die Großkategorie.\n\nDie Aussage ist wahr.",
+      "Große Unternehmen beginnen in der Personenspalte bei 250, nicht bei 50. Ab 250 steht in der letzten Zeile. 50 Beschäftigte liegen noch in der kleinen Kategorie (Bis 49 wäre die Obergrenze der Kleinen, also 50 Beschäftigte sind bereits mittlere, sofern die Geldschwellen passen). Die Behauptung setzt die Umsatzzahl 50 Millionen mit 50 Köpfen gleich und liest die falsche Spalte.\n\nDie Aussage ist falsch.",
+      "Vergleich in der Mittelzeile: Umsatz Bis zu 50 Mio. Euro, Bilanzsumme Bis zu 43 Mio. Euro. 43 ist kleiner als 50. Deshalb kann ein Unternehmen beim Umsatz noch mittel sein und bei der Bilanzsumme schon die Großschwelle reißen, wenn die Bilanzsumme über 43 Millionen liegt. Die Tabelle hält diese Asymmetrie fest.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.34",
+    "title": "Tab. 1: Kleinst, klein, mittel an Zahlen",
+    "context": "Dieselbe Größentabelle. Drei Betriebe werden den Zeilen zugeordnet.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Betrieb mit 8 Beschäftigten, 1,5 Millionen Euro Umsatz und 1,2 Millionen Euro Bilanzsumme ist ein Kleinstunternehmen.",
+      "Ein Betrieb mit 40 Beschäftigten und 9 Millionen Euro Umsatz fällt in die Kategorie kleine Unternehmen, sofern die Bilanzsumme 10 Millionen Euro nicht übersteigt.",
+      "Ein Betrieb mit 200 Beschäftigten und 40 Millionen Euro Umsatz ist nach der Personenzahl noch ein mittleres Unternehmen.",
+      "Ein Betrieb mit 9 Beschäftigten und 12 Millionen Euro Umsatz bleibt Kleinstunternehmen, weil die Personenzahl unter 10 liegt.",
+      "Ein Betrieb mit 249 Beschäftigten, 50 Millionen Euro Umsatz und 43 Millionen Euro Bilanzsumme liegt noch in der mittleren Kategorie."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Alle drei Kleinstgrenzen sind eingehalten. 8 liegt unter Bis 9. 1,5 Millionen liegt unter Bis zu 2 Mio. Euro. 1,2 Millionen ebenfalls. Die Tabelle verlangt die Kombination, nicht nur die Köpfe. Dieser Betrieb sitzt in der ersten Zeile.\n\nDie Aussage ist wahr.",
+      "Vierzig Köpfe liegen über 9 und unter 49, gehören also nicht mehr zu Kleinst, sondern zu klein. 9 Millionen Euro Umsatz liegen unter 10 Millionen. Die Bilanzsumme darf ebenfalls höchstens 10 Millionen betragen. Dann ist die zweite Zeile erfüllt. 40 Beschäftigte allein ohne Geldprüfung würden nicht reichen; hier sind beide genannten Größen klein.\n\nDie Aussage ist wahr.",
+      "Zweihundert Beschäftigte liegen unter Bis 249. 40 Millionen Euro Umsatz liegen unter Bis zu 50 Mio. Euro. Damit ist die Mittelzeile nach Köpfen und Umsatz noch nicht gesprengt. Die Bilanzsumme müsste zusätzlich Bis zu 43 Mio. Euro bleiben; die Aussage prüft ausdrücklich die Personenzahl und bleibt dabei korrekt.\n\nDie Aussage ist wahr.",
+      "Köpfe allein halten niemanden in der Kleinstzeile, wenn der Umsatz die 2-Millionen-Grenze reißt. 12 Millionen Euro Umsatz liegen über 2 Millionen und sogar über 10 Millionen. Je nach übrigen Größen rutscht der Betrieb mindestens aus der Kleinstkategorie, oft in die mittlere oder große. Die Tabelle koppelt Mitarbeiterzahl und Geldgrößen; eine einzige unterschrittene Personenschwelle rettet die Kleinstzeile nicht.\n\nDie Aussage ist falsch.",
+      "Die Mittelzeile ist an ihren Obergrenzen ausgeschöpft, aber nicht überschritten. Bis 249, Bis zu 50 Mio. Euro, Bis zu 43 Mio. Euro: alle drei Werte stehen genau auf der Grenze und gehören noch dazu. Erst 250 Köpfe, über 50 Millionen Umsatz oder über 43 Millionen Bilanzsumme öffnen die Großzeile.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.35",
+    "title": "Tab. 1: FunBike-Bilanzsumme und KMU",
+    "context": "Tab. 1 und die FunBike-Bilanzsumme aus dem Rechnungswesen-Kapitel. FunBike weist 9 638 250 Euro Bilanzsumme aus. Das Buch ordnet ein Unternehmen knapp unter 10 Millionen Euro Bilanzsumme noch den Kleinunternehmen zu.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "9 638 250 Euro Bilanzsumme liegen unter 10 Millionen Euro und damit in der Geldspalte der kleinen Unternehmen.",
+      "9 638 250 Euro Bilanzsumme liegen über 2 Millionen Euro, also nicht mehr in der Kleinstzeile der Bilanzsumme.",
+      "Weil 9 638 250 unter 43 Millionen liegt, ist FunBike nach Tab. 1 automatisch ein Großunternehmen.",
+      "Rund 99 Prozent der Unternehmen in der EU sind KMU, also Kleinst-, kleine und mittlere Unternehmen.",
+      "KMU im Sinne der Tabelle umfassen Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen, nicht die Zeile Große Unternehmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Zehn Millionen sind die Obergrenze der kleinen Bilanzsumme. 9 638 250 < 10 000 000. Die Differenz beträgt 361 750 Euro. Das Buch spricht von einer Bilanzsumme knapp unter 10 Millionen Euro und zählt das Unternehmen gerade noch zu den Kleinunternehmen. Die Tabellenzeile Kleine Unternehmen trägt genau diese 10-Millionen-Grenze.\n\nDie Aussage ist wahr.",
+      "Zwei Millionen Euro begrenzen die Kleinst-Bilanzsumme. 9 638 250 > 2 000 000. FunBike liegt klar über der ersten Geldzeile. Ohne die übrigen Kriterien zu prüfen, scheidet die Kleinstkategorie nach der Bilanzsumme aus. Die nächste passende Geldzeile ist Bis zu 10 Mio. Euro.\n\nDie Aussage ist wahr.",
+      "Unter 43 Millionen spricht gegen die Großzeile, nicht dafür. Große Unternehmen brauchen Über 43 Mio. Euro Bilanzsumme oder Über 50 Mio. Euro Umsatz oder Ab 250 Beschäftigte. 9 638 250 liegt weit unter 43 Millionen. Automatisch groß wäre die Umkehrung der Tabelle. FunBike bleibt nach der Bilanzsumme im kleinen Band.\n\nDie Aussage ist falsch.",
+      "Der Abschnitt koppelt die Tabelle an die EU-Empfehlung: Rund 99 % der Unternehmen in der EU sind KMU. KMU bündelt die ersten drei Zeilen, nicht die Großzeile. Die 99 Prozent beschreiben die Anzahl der Unternehmen, nicht den Umsatzanteil.\n\nDie Aussage ist wahr.",
+      "Der Begriff KMU ist im Text definiert als Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen (englisch SME/MSME). Die letzte Tabellenzeile Große Unternehmen steht außerhalb dieses Bündels. Wer Großunternehmen unter KMU mischt, sprengt die Definition.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.36",
+    "title": "Tab. 1 und österreichische Anteile",
+    "context": "Tab. 1 plus die Zahlen, Daten, Fakten zur österreichischen Unternehmenslandschaft.\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Auch in Österreich dominieren KMU mit rund 99 Prozent Anteil an der Anzahl der Unternehmen.",
+      "Der Großteil der KMU sind Kleinstunternehmen mit weniger als zehn Mitarbeiterinnen und Mitarbeitern, rund 90 Prozent der Gesamtzahl.",
+      "Ungefähr 85 Prozent der Unternehmen haben weniger als eine Million Euro Umsatz.",
+      "Rund zwei Drittel der Erwerbstätigen arbeiten in KMU.",
+      "Etwas mehr als ein Drittel der Umsatzerlöse wird von rund 1.900 Großunternehmen erwirtschaftet."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Kasten Zahlen, Daten, Fakten wiederholt die EU-Relation für Österreich: rund 99 Prozent Anteil an der Anzahl. Anzahl ist nicht Umsatz. Die Tabelle erklärt, wer in diese 99 Prozent fällt: die ersten drei Zeilen. Die Aussage trifft den Text.\n\nDie Aussage ist wahr.",
+      "Weniger als zehn Beschäftigte ist die Kleinstzeile (Bis 9). Rund 90 Prozent der Gesamtzahl von Unternehmen sind solche Kleinstbetriebe. Das ist der Großteil der KMU und zugleich der Großteil aller Unternehmen. 90 Prozent der Anzahl ist nicht 90 Prozent des Umsatzes.\n\nDie Aussage ist wahr.",
+      "Eine Million Euro Umsatz liegt unter der Kleinst-Umsatzgrenze von 2 Millionen, ist aber eine eigene Faktenzahl: Ungefähr 85 Prozent der Unternehmen haben weniger als eine Million Euro Umsatz. Die Tabelle selbst nennt 2 / 10 / 50 Millionen; die 85 Prozent kommen aus dem Faktenkasten und gehören zur Größenordnung sehr kleiner Umsätze.\n\nDie Aussage ist wahr.",
+      "KMU als Arbeitgeber: Rund zwei Drittel der Erwerbstätigen arbeiten in KMU. Das ist Beschäftigtenanteil, nicht Unternehmensanzahl. Die 99 Prozent zählen Betriebe, die zwei Drittel zählen Köpfe. Beide Sätze stehen nebeneinander und widersprechen sich nicht, weil viele Kleinstbetriebe wenige Personen beschäftigen.\n\nDie Aussage ist wahr.",
+      "Umsatzkonzentration bei Großen: Etwas mehr als ein Drittel der Umsatzerlöse der österreichischen gewerblichen Wirtschaft kommt von rund 1.900 Großunternehmen. Die Großzeile der Tabelle (Ab 250, über 50 Millionen Umsatz oder über 43 Millionen Bilanzsumme) ist zahlenmäßig klein und umsatzstark. Knapp unter zwei Drittel der Umsätze erarbeiten die KMU.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.37",
+    "title": "Tab. 1: Umsatz oder Bilanzsumme",
+    "context": "In Tab. 1 stehen Umsatz je Jahr und Bilanzsumme als Alternative (oder).\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | oder Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Überschrift der Tabelle nennt Umsatz je Jahr oder Bilanzsumme, nicht Umsatz und Bilanzsumme als zwingend gleichzeitig zu erfüllende Geldgrenze derselben Höhe.",
+      "Bei mittleren Unternehmen fallen die beiden Geldschwellen auseinander: 50 Millionen Euro Umsatz gegen 43 Millionen Euro Bilanzsumme.",
+      "Wer 250 Beschäftigte hat, ist unabhängig vom Umsatz ein Großunternehmen.",
+      "Ein Unternehmen mit 30 Beschäftigten und 3 Millionen Euro Umsatz muss nach der Personenzahl ein Großunternehmen sein.",
+      "Kleine und Kleinstunternehmen haben in der Tabelle jeweils dieselbe Eurogrenze für Umsatz und Bilanzsumme (2 Millionen bzw. 10 Millionen)."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Die Buchüberschrift lautet Umsatz / Jahr oder Bilanzsumme. Das oder trennt zwei Geldmaßstäbe. Man misst nicht, dass beide Spalten dieselbe Zahl gleichzeitig reißen müssen, bevor eine Kategorie greift. Die Personenspalte steht zusätzlich. Die Aussage trifft die Tabellenlogik.\n\nDie Aussage ist wahr.",
+      "Nur die Mittelzeile bricht die Gleichheit der Geldspalten. Kleinst: 2 und 2. Klein: 10 und 10. Mittel: 50 gegen 43. Groß: über 50 gegen über 43. Wer 50 Millionen Bilanzsumme als Mittelgrenze liest, erfindet eine Zahl, die Tab. 1 nicht hat.\n\nDie Aussage ist wahr.",
+      "Ab 250 steht ohne Wenn in der Großzeile der Personenspalte. Die Geldspalten gelten daneben; schon die Beschäftigtenzahl 250 öffnet die letzte Kategorie. 249 wäre noch mittel, 250 groß.\n\nDie Aussage ist wahr.",
+      "Dreißig Beschäftigte liegen in Bis 49, also bei den kleinen Unternehmen, sofern die Geldgrößen passen. 3 Millionen Euro Umsatz liegen über 2 Millionen (nicht mehr Kleinst) und unter 10 Millionen (noch klein). Groß wäre Ab 250 oder über 50 Millionen Umsatz bzw. über 43 Millionen Bilanzsumme. 30 Köpfe und 3 Millionen erfüllen nichts davon.\n\nDie Aussage ist falsch.",
+      "Erste Zeile: 2 Millionen in beiden Geldspalten. Zweite Zeile: 10 Millionen in beiden Geldspalten. Erst ab Mittel differieren 50 und 43. Die Aussage beschreibt genau die beiden oberen KMU-Zeilen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.1",
+    "case_id": "WISO 3.1.38",
+    "title": "Tab. 1: falsche Schwellen erkennen",
+    "context": "Lesen Sie die Schwellen wörtlich. Bewerten Sie die folgenden Aussagen:\n\n| Kategorie | Mitarbeiterzahl | Umsatz / Jahr | Bilanzsumme |\n| --- | --- | ---: | ---: |\n| Kleinstunternehmen | Bis 9 | Bis zu 2 Mio. Euro | Bis zu 2 Mio. Euro |\n| Kleine Unternehmen | Bis 49 | Bis zu 10 Mio. Euro | Bis zu 10 Mio. Euro |\n| Mittlere Unternehmen | Bis 249 | Bis zu 50 Mio. Euro | Bis zu 43 Mio. Euro |\n| Große Unternehmen | Ab 250 | Über 50 Mio. Euro | Über 43 Mio. Euro |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Kleinstunternehmen dürfen laut Tabelle bis 49 Beschäftigte haben.",
+      "Die Umsatzgrenze kleiner Unternehmen liegt bei 10 Millionen Euro, nicht bei 50 Millionen Euro.",
+      "Mittlere Unternehmen enden bei 249 Beschäftigten, große beginnen bei 250.",
+      "Die Bilanzsumme großer Unternehmen liegt über 43 Millionen Euro.",
+      "Ein Unternehmen mit 10 Beschäftigten ist nach der Personenspalte kein Kleinstunternehmen mehr."
+    ],
+    "answer_key": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Bis 49 ist die Personenspalte der kleinen Unternehmen. Kleinst endet bei Bis 9. Wer 49 in die erste Zeile schiebt, überspringt eine ganze Kategorie. 10 bis 49 Beschäftigte sind klein, nicht Kleinst.\n\nDie Aussage ist falsch.",
+      "Zweite Zeile, Umsatzspalte: Bis zu 10 Mio. Euro. 50 Millionen sind die Umsatzgrenze der mittleren Unternehmen. Die Verwechslung 10 gegen 50 verschiebt ein Unternehmen um eine Klasse. Die Aussage hält die 10-Millionen-Grenze fest.\n\nDie Aussage ist wahr.",
+      "249 und 250 liegen direkt aneinander. Bis 249 bleibt mittel, Ab 250 ist groß. Es gibt in der Tabelle keine Lücke und keine Überlappung in der Personenspalte. Ein Kopf entscheidet die letzte Stufe, sobald 250 erreicht ist.\n\nDie Aussage ist wahr.",
+      "Letzte Zeile, Bilanzsumme: Über 43 Mio. Euro. 43 Millionen selbst gehören noch zur Mittelzeile (Bis zu 43). Erst darüber greift groß. Die Aussage nennt die Großschwelle korrekt.\n\nDie Aussage ist wahr.",
+      "Kleinst: Bis 9. Zehn Beschäftigte liegen über 9 und fallen mindestens in die kleine Kategorie. Die Personenspalte allein schließt Kleinst aus. Umsatz und Bilanzsumme entscheiden dann zwischen klein, mittel und groß, ändern aber nichts daran, dass 10 nicht mehr Bis 9 ist.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
     "subsection": "3.2",
     "case_id": "WISO 3.2.01",
     "title": "Bedeutung der Rechtsform",
@@ -1856,6 +2030,180 @@
     "tier": "full"
   },
   {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.33",
+    "title": "Tab. 2: Mindestkapital der Rechtsformen",
+    "context": "Tab. 2 fasst Merkmale österreichischer Rechtsformen zusammen. Die Mindestkapitalzeile des Buches lautet:\n\n| Rechtsform | Mindestkapital |\n| --- | --- |\n| Einzelunternehmen | nein |\n| Offene Gesellschaft (OG) | nein |\n| Kommanditgesellschaft (KG) | nein |\n| Gesellschaft mit beschränkter Haftung (GmbH) | ja, 10.000 Euro |\n| Aktiengesellschaft (AG) | ja, 70.000 Euro |\n| Societas Europaea (SE) | 120.000 Euro |\n| Genossenschaft | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Für eine GmbH gilt ein Mindeststammkapital von 10.000 Euro.",
+      "Für eine AG gilt ein Mindestgrundkapital von 70.000 Euro.",
+      "Die SE verlangt 120.000 Euro Mindestkapital.",
+      "Einzelunternehmen, OG, KG und Genossenschaft haben laut Tabelle kein gesetzliches Mindestkapital.",
+      "Eine OG muss dasselbe Mindestkapital aufbringen wie eine AG, nämlich 70.000 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Die GmbH-Zelle der Mindestkapitalzeile lautet ja, 10.000 Euro. Das ist Stammkapital, nicht Aktienkapital. 10.000 Euro sind die Untergrenze, die die Gesellschafter mit Stammeinlagen insgesamt erreichen müssen. 70.000 Euro gehören der AG, 120.000 Euro der SE. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Die AG-Zelle nennt 70.000 Euro. Das Grundkapital ist in Aktien zerlegt. 10.000 Euro wären GmbH, 120.000 Euro SE. Ohne 70.000 Euro kommt die AG-Gründung nicht zustande. Die Tabelle trennt die drei Kapitalgesellschaften genau über diese Beträge.\n\nDie Aussage ist wahr.",
+      "In Klammern zur AG-Zelle bzw. als eigene SE-Spalte steht 120.000 Euro. Die europäische Aktiengesellschaft liegt damit über der österreichischen AG. 70.000 Euro reichen für die AG, nicht für die SE. Die Aussage liest die höhere Schwelle richtig.\n\nDie Aussage ist wahr.",
+      "Vier Nein in derselben Zeile: Einzelunternehmen, OG, KG, Genossenschaft. Personengesellschaften und die Genossenschaft starten ohne gesetzliche Kapitalsumme dieser Art. Mindestkapital ist das Merkmal von GmbH, AG und SE. Die Aussage zählt genau die Formen ohne Euroschranke.\n\nDie Aussage ist wahr.",
+      "OG hat in der Tabelle nein. 70.000 Euro sind die AG. Eine OG entsteht durch mindestens zwei Gesellschafter mit persönlicher Haftung, nicht durch eine Kapitalsperre von 70.000 Euro. Die Gleichsetzung OG = AG beim Mindestkapital widerspricht Tab. 2.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.34",
+    "title": "Tab. 2: Haftung neben dem Mindestkapital",
+    "context": "Mindestkapital und Haftung gehören in Tab. 2 zusammen, weil beschränkte Haftung typischerweise an eine Kapitalschranke gekoppelt ist.\n\n| Rechtsform | Mindestkapital | Wer haftet für die Schulden? |\n| --- | --- | --- |\n| Einzelunternehmen | nein | der Einzelunternehmer persönlich, unbeschränkt |\n| OG | nein | die OG-Gesellschafter persönlich, unbeschränkt, jeder für den Gesamtbetrag |\n| KG | nein | Komplementär wie OG-Gesellschafter; Kommanditist nur bis zur Höhe seiner Einlage |\n| GmbH | ja, 10.000 Euro | die GmbH-Gesellschafter nur mit ihrer Stammeinlage |\n| AG | ja, 70.000 Euro | die Aktionäre nur mit ihrem Aktienkapital |\n| SE | 120.000 Euro | wie bei der AG |\n| Genossenschaft | nein | die Genossenschafter mit ihrer Einlage (i. d. R. in doppelter Höhe) |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim Einzelunternehmen und bei der OG haften die Inhaber persönlich und unbeschränkt, ohne Mindestkapital in der Tabelle.",
+      "GmbH-Gesellschafter haften nur mit ihrer Stammeinlage, und die GmbH braucht 10.000 Euro Mindestkapital.",
+      "Kommanditisten haften wie Komplementäre persönlich unbeschränkt für den Gesamtbetrag der Schulden.",
+      "Aktionäre haften nur mit ihrem Aktienkapital; die AG hat 70.000 Euro Mindestkapital.",
+      "Weil die GmbH 10.000 Euro Mindestkapital hat, haftet jeder Gesellschafter persönlich mit seinem gesamten Privatvermögen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zwei Spalten, ein Muster: kein Mindestkapital und volle persönliche Haftung. Einzelunternehmer und OG-Gesellschafter stehen mit ihrem Vermögen ein, jeder OG-Gesellschafter für den Gesamtbetrag. Die fehlende Euroschranke ist kein Schutzschild, sondern Teil derselben unbeschränkten Haftung. Die Tabelle stellt genau dieses Paar dar.\n\nDie Aussage ist wahr.",
+      "Beschränkte Haftung und Stammkapital gehören zusammen. 10.000 Euro sind die Untergrenze der Einlagen. Die Haftung der Gesellschafter endet bei der Stammeinlage, nicht beim Privatvermögen. Wer 10.000 Euro mit 70.000 Euro verwechselt, liest die AG. Die Aussage hält beide GmbH-Zellen.\n\nDie Aussage ist wahr.",
+      "Die KG-Zeile trennt zwei Rollen. Der Komplementär haftet wie der OG-Gesellschafter persönlich unbeschränkt. Der Kommanditist haftet nur bis zur Höhe seiner Einlage. Die Gleichsetzung beider Rollen streicht genau den Kommanditisten. Mindestkapital bleibt nein; die beschränkte Haftung des Kommanditisten hängt an seiner Einlage, nicht an 10.000 Euro Stammkapital.\n\nDie Aussage ist falsch.",
+      "AG-Zelle Haftung: nur mit ihrem Aktienkapital. AG-Zelle Mindestkapital: 70.000 Euro. Beides zusammen beschreibt die Kapitalgesellschaft, deren Anteile frei übertragbar sind. 10.000 Euro wären GmbH. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Mindestkapital begrenzt die Haftung, es erweitert sie nicht auf das Privatvermögen. Die GmbH-Haftungszelle lautet: nur mit ihrer Stammeinlage. Persönlich unbeschränkt wäre die OG- oder Einzelunternehmerzeile. 10.000 Euro sind die Kapitalsperre der Gesellschaft, nicht die Privatschuld jedes Gesellschafters.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.35",
+    "title": "Tab. 2: Geschäftsführung",
+    "context": "Tab. 2 fragt, wer die Geschäfte führt.\n\n| Rechtsform | Wer führt die Geschäfte? | Mindestkapital |\n| --- | --- | --- |\n| Einzelunternehmen | der Einzelunternehmer | nein |\n| OG | die OG-Gesellschafter (mindestens zwei) | nein |\n| KG | der oder die Komplementäre (mindestens einer) | nein |\n| GmbH | der oder die Geschäftsführer (mindestens einer) | ja, 10.000 Euro |\n| AG | der Vorstand | ja, 70.000 Euro |\n| SE | der Vorstand | 120.000 Euro |\n| Genossenschaft | der Vorstand | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der OG führen die Gesellschafter die Geschäfte, mindestens zwei Personen.",
+      "Bei der KG führen die Komplementäre die Geschäfte, nicht die Kommanditisten als solche.",
+      "Eine GmbH wird von mindestens einem Geschäftsführer geleitet.",
+      "Eine AG und eine SE werden vom Vorstand geleitet.",
+      "Kommanditisten führen die KG-Geschäfte ebenso wie der Vorstand einer AG, weil beide 70.000 Euro Mindestkapital brauchen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "OG-Zelle: Die OG-Gesellschafter, mindestens zwei. Ohne zweiten Gesellschafter gibt es keine OG. Geschäftsführung und Haftung liegen bei denselben Personen. Mindestkapital bleibt nein. Die Aussage wiederholt die Tabellenzelle.\n\nDie Aussage ist wahr.",
+      "KG-Geschäftsführung: der oder die Komplementäre, mindestens einer. Kommanditisten bringen Einlage und haften begrenzt; sie stehen nicht in der Führungszelle. Wer Kommanditisten zu Geschäftsführern macht, vermengt Einlage und Leitung. Die Aussage trennt die Rollen.\n\nDie Aussage ist wahr.",
+      "GmbH-Zelle: der oder die Geschäftsführer, mindestens einer. Das muss nicht jeder Gesellschafter sein. 10.000 Euro Mindestkapital ändert die Organbezeichnung nicht in Vorstand. Vorstand steht bei AG, SE und Genossenschaft.\n\nDie Aussage ist wahr.",
+      "AG und SE teilen die Organzeile Vorstand. Die SE liegt beim Kapital höher (120.000 gegen 70.000), nicht bei einem anderen Leitungsorgan in dieser Tabelle. Die Genossenschaft hat ebenfalls einen Vorstand, aber kein Mindestkapital dieser Art.\n\nDie Aussage ist wahr.",
+      "Zwei Fehler. Kommanditisten führen nicht. 70.000 Euro Mindestkapital hat die AG, die KG hat nein. Die Gleichsetzung Kommanditist = Vorstand über eine erfundene Kapitalsumme widerspricht beiden Spalten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.36",
+    "title": "Tab. 2: Zahlenvergleich GmbH, AG, SE",
+    "context": "Drei Kapitalgesellschaften und ihre Eurobeträge aus Tab. 2.\n\n| Rechtsform | Mindestkapital (Euro) |\n| --- | ---: |\n| GmbH | 10.000 |\n| AG | 70.000 |\n| SE | 120.000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das AG-Mindestkapital ist siebenmal so hoch wie das der GmbH (70.000 / 10.000 = 7).",
+      "Die SE liegt 50.000 Euro über der AG (120.000 − 70.000 = 50.000).",
+      "GmbH plus AG ergeben zusammen das SE-Mindestkapital (10.000 + 70.000 = 80.000, also gleich 120.000).",
+      "10.000 Euro reichen für die GmbH, nicht für die AG.",
+      "120.000 Euro sind die höchste Mindestkapitalschwelle in dieser Tabelle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Division der Tabellenwerte: 70.000 / 10.000 = 7. Die AG-Schwelle ist das Siebenfache der GmbH-Schwelle. Das erklärt, warum viele KMU die GmbH wählen und Großunternehmen mit großem Kapitalbedarf AG oder SE. Die Rechnung sitzt auf den Buchzahlen, nicht auf einer erfundenen Quote.\n\nDie Aussage ist wahr.",
+      "Subtraktion: 120.000 − 70.000 = 50.000. Die europäische Form verlangt 50.000 Euro mehr als die österreichische AG. 10.000 Euro GmbH plus 50.000 ergibt nicht die SE; nur AG und SE stehen in diesem Vergleich. Die Differenz 50.000 folgt direkt aus Tab. 2.\n\nDie Aussage ist wahr.",
+      "10.000 + 70.000 = 80.000, und 80.000 ist nicht 120.000. Die SE-Schwelle ist keine Summe der beiden anderen. Wer die drei Zellen addiert, erfindet eine Identität, die das Buch nicht behauptet. 120.000 steht allein.\n\nDie Aussage ist falsch.",
+      "Zehn Tausend öffnen die GmbH-Zeile und verfehlen 70.000. Eine AG mit 10.000 Euro Grundkapital erfüllt Tab. 2 nicht. Die Aussage hält die Untergrenze der GmbH gegen die höhere AG-Schranke.\n\nDie Aussage ist wahr.",
+      "Vergleich 10.000 < 70.000 < 120.000. Die SE steht oben. Personengesellschaften haben in der großen Tabelle nein, also 0 in diesem Sinn, und liegen darunter. Innerhalb der drei Kapitalzahlen ist 120.000 das Maximum.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.37",
+    "title": "Tab. 2 und österreichische Anteile",
+    "context": "Tab. 2 plus der Faktenkasten: rund 85 Prozent der Unternehmen und Gründungen in Österreich sind Einzelunternehmen; ungefähr jedes zehnte Unternehmen ist eine GmbH, gefolgt von je etwa 2 Prozent OG und KG.\n\n| Rechtsform | Mindestkapital | ungefährer Anteil (Österreich) |\n| --- | --- | --- |\n| Einzelunternehmen | nein | rund 85 % |\n| GmbH | 10.000 Euro | ungefähr 10 % |\n| OG | nein | ca. 2 % |\n| KG | nein | ca. 2 % |\n| übrige (AG, SE, Genossenschaft u. a.) | je nach Form | noch geringer |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der überwiegende Teil der österreichischen Unternehmen sind Einzelunternehmen, rund 85 Prozent, ohne Mindestkapital in Tab. 2.",
+      "Ungefähr jedes zehnte Unternehmen ist eine GmbH mit 10.000 Euro Mindestkapital.",
+      "OG und KG liegen bei je etwa 2 Prozent und haben kein Mindestkapital in der Tabelle.",
+      "Weil 85 Prozent Einzelunternehmen sind, müssen 85 Prozent der Unternehmen 70.000 Euro AG-Kapital aufbringen.",
+      "AG und SE haben in Österreich einen noch geringeren Anteil als OG und KG, obwohl ihr Mindestkapital höher ist als bei der GmbH."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Faktenkasten und Tabellenzeile passen: 85 Prozent Einzelunternehmen, Mindestkapital nein. Die häufigste Form braucht keine 10.000 Euro Stammkapital. Persönliche unbeschränkte Haftung tritt an diese Stelle. Die Aussage verbindet Anteil und Tabellenzelle.\n\nDie Aussage ist wahr.",
+      "Jedes zehnte Unternehmen: etwa 10 Prozent GmbH. Tab. 2 verlangt 10.000 Euro. Das ist die häufigste Kapitalgesellschaft, weit vor der AG. 70.000 Euro wären die seltenere AG. Die Aussage hält Anteil und Eurobetrag der GmbH.\n\nDie Aussage ist wahr.",
+      "Je ca. 2 Prozent OG und KG. Beide Zeilen Mindestkapital: nein. Zusammen etwa 4 Prozent, deutlich hinter der GmbH. Die Personengesellschaften bleiben ohne die Euroschranke von GmbH, AG und SE.\n\nDie Aussage ist wahr.",
+      "85 Prozent sind Einzelunternehmen, und Einzelunternehmen haben kein Mindestkapital. 70.000 Euro gelten nur für die AG, die zu den übrigen, kleineren Anteilen zählt. Die Behauptung legt die seltenste Kapitalschwelle auf die häufigste Rechtsform.\n\nDie Aussage ist falsch.",
+      "Der Kasten sagt: Die übrigen Rechtsformen haben einen noch geringeren Anteil. AG und SE liegen hinter GmbH, OG und KG. Zugleich stehen 70.000 und 120.000 über 10.000. Höheres Mindestkapital und geringerer Anteil treten zusammen auf, weil großer Kapitalbedarf selten ist. Die Aussage trifft beides.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.2",
+    "case_id": "WISO 3.2.38",
+    "title": "Tab. 2: Kapital aufbringen",
+    "context": "Tab. 2 fragt, wer das Kapital aufbringt und wie zusätzliches Eigenkapital beschafft werden kann.\n\n| Rechtsform | Wer bringt das Kapital auf? | Mindestkapital |\n| --- | --- | --- |\n| Einzelunternehmen | der Einzelunternehmer | nein |\n| OG | die OG-Gesellschafter | nein |\n| KG | Komplementär kann, Kommanditist muss eine Kapitaleinlage leisten | nein |\n| GmbH | die GmbH-Gesellschafter mit ihren Stammeinlagen | 10.000 Euro |\n| AG | die Aktionäre durch den Aktienkauf | 70.000 Euro |\n| SE | die Aktionäre durch den Aktienkauf | 120.000 Euro |\n| Genossenschaft | die Genossenschafter | nein |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei der GmbH bringen die Gesellschafter das Kapital als Stammeinlagen auf, insgesamt mindestens 10.000 Euro.",
+      "Bei der AG bringen die Aktionäre das Kapital durch den Aktienkauf auf; das Grundkapital muss mindestens 70.000 Euro erreichen.",
+      "Der Kommanditist muss eine Kapitaleinlage leisten, der Komplementär kann eine leisten.",
+      "Zusätzliches Eigenkapital der AG entsteht, indem neue Aktien ausgegeben werden.",
+      "Eine GmbH beschafft zusätzliches Eigenkapital, indem sie wie eine AG frei neue Aktien an der Börse ausgibt, ohne die Stammeinlagen zu erhöhen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "GmbH-Kapitalzelle: die GmbH-Gesellschafter mit ihren Stammeinlagen. Die Einlagen dürfen unterschiedlich hoch sein, die Summe muss das Mindeststammkapital 10.000 Euro erreichen. Ohne diese Summe fehlt die Kapitalschranke der Tabelle. Die Aussage verbindet Aufbringung und Mindestbetrag.\n\nDie Aussage ist wahr.",
+      "AG-Kapitalzelle: die Aktionäre durch den Aktienkauf. Das Grundkapital ist in Aktien zerlegt, Untergrenze 70.000 Euro. Große Beträge lassen sich so leichter beschaffen als über wenige Stammeinlagen. 10.000 Euro wären die GmbH. Die Aussage trifft Tab. 2.\n\nDie Aussage ist wahr.",
+      "Die KG-Zeile trennt Pflicht und Möglichkeit. Kommanditist muss eine Kapitaleinlage leisten, Komplementär kann. Das passt zur Haftung: der Kommanditist begrenzt seine Last auf die Einlage, der Komplementär haftet persönlich. Mindestkapital der KG bleibt nein.\n\nDie Aussage ist wahr.",
+      "Tab. 2 zur Aufbringung zusätzlichen Eigenkapitals bei der AG: Neue Aktien werden ausgegeben, die entweder die bisherigen Aktionäre oder neue Aktionäre übernehmen. Emission hat Finanzierungseffekt, weil Käufer zahlen. Das ist Außenfinanzierung mit Eigenkapital, nicht ein Bankkredit.\n\nDie Aussage ist wahr.",
+      "GmbH-Weg in Tab. 2: Die bisherigen Gesellschafter erhöhen ihre Einlagen oder nehmen einen zusätzlichen Gesellschafter auf. Aktienausgabe ist die AG-Zelle. Eine GmbH hat Stammeinlagen, keine frei handelbaren Aktien derselben Art. Die Behauptung liest die falsche Spalte.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
     "subsection": "3.3",
     "case_id": "WISO 3.3.01",
     "title": "Finanzbedarf bei Gründung und Betrieb",
@@ -2315,6 +2663,238 @@
       "Physisch außen ist nicht finanzwirtschaftlich fremd. Sacheinlagen der Gründerinnen erhöhen das Eigenkapital: Lieferwagen und PCs zählen wie Geld. Außenfinanzierung mit Eigenkapital wäre denkbar, wenn die Einlage von Gesellschaftern kommt, niemals aber Fremdkapital nur weil das Fahrzeug durch das Tor rollt. Fremdkapital kommt von Dritten als Kreditbeziehung. Die Verwechslung von Sachort und Kapitalqualität ist die Falle.\n\nDie Aussage ist falsch.",
       "Zahlungsziel schafft Gläubiger, keine Gesellschafter. Auf Ziel zahlen heißt Lieferantenfinanzierung und Lieferverbindlichkeiten: kurzfristiges Fremdkapital, oft ohne formellen Bankvertrag, mit verstecktem Zins über entgangenen Skonto. Eigenkapital wäre Einlage oder einbehaltener Gewinn. Lieferanten haben in der Regel kein Mitspracherecht der Führung. Die Aussage ordnet die Position in die Fremdspalte und die kurze Frist.\n\nDie Aussage ist wahr.",
       "Emission speist die AG, der Zweitmarkt speist sie nicht. Beim ersten Verkauf durch die Gesellschaft fließt Kapital zu, Außenfinanzierung mit Eigenkapital. Danach tauschen Anleger Stücke; die AG erhält keinen weiteren Finanzierungseffekt, Kursgewinne bleiben bei den Verkäuferinnen und Verkäufern. Dieselbe Buchung wie bei der Emission gibt es beim Weiterverkauf nicht. Die Gleichsetzung beider Vorgänge ist die härteste Klassifikationsfalle des Abschnitts.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.17",
+    "title": "Laufzeit in Tabelle 3",
+    "context": "Tab. 3 fasst die Merkmale von Eigen- und Fremdkapital zusammen. Bewerten Sie die folgenden Aussagen zur Laufzeit:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Eigenkapital steht dem Unternehmen langfristig, in der Regel unbefristet, zur Verfügung.",
+      "Fremdkapital kann nach der Tabelle ausschließlich kurzfristig bereitstehen.",
+      "Fremdkapital kann kurzfristig und langfristig zur Verfügung stehen, je nach Vereinbarung.",
+      "Eigenkapital muss in der Regel nach einem festgelegten Enddatum vollständig an die Geber zurückgezahlt werden.",
+      "Die Laufzeit von Fremdkapital richtet sich nach der Vereinbarung, nicht nach einer einzigen festen Frist für alle Kredite."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Unbefristet ist die Regelzelle der Eigenkapitalsäule. Die Tabelle antwortet auf die Frage, wie lange das Kapital zur Verfügung steht, mit langfristig, in der Regel unbefristet. Das folgt daraus, dass Eigenkapital nicht zurückgezahlt werden muss und sich deshalb für langfristige Investitionen eignet. Eine befristete Tilgungspflicht würde die Einlage wie einen Kredit behandeln. Die Formulierung \"in der Regel\" lässt seltene vertragliche Sonderwege offen, ändert die Buchregel aber nicht. Wer Eigenmittel wie einen Dreimonatskredit denkt, liest die falsche Spalte.\n\nDie Aussage ist wahr.",
+      "Ausschließlich kurz ist nicht die Fremdzelle. Dort steht: kurzfristig und langfristig möglich, je nach Vereinbarung. Lieferverbindlichkeiten können Wochen decken, Bankkredite und Anleihen Jahre. Wer nur die kurze Frist gelten lässt, streicht die zweite Hälfte der Zelle. Eigenkapital bleibt unbefristet; die Fremdspalte ist gerade die flexible. Die absolute Behauptung \"ausschließlich kurzfristig\" widerspricht der Tabelle.\n\nDie Aussage ist falsch.",
+      "Vereinbarung setzt die Frist auf der Fremdseite. Dieselbe Tabellenzeile nennt kurzfristig und langfristig als mögliche Formen, abhängig von der Abrede mit der Gläubigerin oder dem Gläubiger. Damit ist ein mehrjähriger Investitionskredit ebenso Fremdkapital wie ein Zahlungsziel. Die Aussage wiederholt die Buchzelle, ohne aus jedem Kredit automatisch eine ewige Einlage zu machen. Eigenkapital bleibt daneben in der Regel ohne Enddatum.\n\nDie Aussage ist wahr.",
+      "Rückzahlungspflicht wäre Kreditlehre, nicht Eigenkapital. Die Tabelle stellt der unbefristeten Einlage die Rückzahlung des Kapitals selbst auf der Fremdseite gegenüber. Ein festgelegtes Enddatum, zu dem alles an die Geber zurückfließen muss, würde die Eigenspalte in die Fremdspalte kippen. Genau das geschieht in der Regel nicht. Der Satz kehrt das Laufzeitmerkmal um und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Keine Einheitslaufzeit für alle Kredite. Weil die Fremdzelle \"je nach Vereinbarung\" lautet, gibt es nicht eine gesetzlich starre Frist, die jeden Bankkredit, jede Lieferverbindlichkeit und jede Anleihe gleich lang macht. Kurz und lang stehen nebeneinander. Die Aussage hält diese Abhängigkeit fest, ohne die Rückzahlungspflicht selbst aufzuheben. Eigenkapital bleibt davon getrennt: langfristig, in der Regel unbefristet.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.18",
+    "title": "Entgelt in Tabelle 3",
+    "context": "Tab. 3 stellt gegenüber, was für Eigen- und Fremdkapital zu bezahlen ist. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Für Eigenkapital können Gewinnanteile an die Eigenkapitalgeber gezahlt werden; eine Verpflichtung dazu folgt aus der Tabelle nicht.",
+      "Für Fremdkapital sind Zinsen zu zahlen, und das Kapital selbst muss zurückgezahlt werden.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber erhalten stets denselben festen Zins wie Gläubiger, unabhängig vom Gewinn.",
+      "Die Rückzahlung des Kapitals selbst steht in der Entgeltzeile auf der Fremdkapitalseite, nicht auf der Eigenkapitalseite.",
+      "Eigenkapital muss ebenso zwingend verzinst und getilgt werden wie ein Bankkredit."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Eventuell heißt möglich, nicht zwingend. Die Eigenspalte nennt Gewinnanteile an die Eigenkapitalgeber, und das Wort \"eventuell\" in der Buchzelle schließt eine Pflicht aus. Werden Gewinne erwirtschaftet, dürfen Auszahlungen folgen; belassen erhöht das Eigenkapital. In Verlustjahren entfällt der feste Zinsanspruch, den Gläubiger typischerweise haben. Die Fremdzelle daneben verlangt Zinsen plus Rückzahlung des Kapitals selbst, unabhängig vom Jahresergebnis. Genau dieser Kontrast macht aus Gewinnanteilen keine Kreditzinsen. Die Aussage hält Option und fehlende Verpflichtung fest, ohne Ausschüttungen zu verbieten.\n\nDie Aussage ist wahr.",
+      "Zins und Tilgung gehören zusammen zur Fremdspalte. Die Entgeltzeile sagt: Zinsen für das Fremdkapital, und das Kapital selbst muss auch zurückgezahlt werden. Beides, nicht nur eines von beiden. Am Ende der Laufzeit geht die Schuldsumme zurück, während der Laufzeit laufen meist Zinsen, unabhängig davon, ob das Unternehmen Gewinn ausweist. Eigenkapital kennt diese Doppelbelastung nicht: dort stehen nur eventuelle Gewinnanteile. Die Aussage gibt genau die Fremdzelle wieder.\n\nDie Aussage ist wahr.",
+      "Fester Zins unabhängig vom Gewinn ist Gläubigerlogik. Eigenkapital verlangt in Zeiten ohne Gewinn keine solchen Zinsen; Auszahlungen an die Geber können bei Gewinn erfolgen, müssen aber nicht. Die Gleichsetzung mit einem festen Kreditzins unabhängig vom Ergebnis liest die Fremdzelle in die Eigenspalte. \"Stets derselbe feste Zins\" ist die Umkehrung der Tabelle und daher falsch.\n\nDie Aussage ist falsch.",
+      "Die Entgeltzeile trennt Einlage und Schuld. Rückzahlung des Kapitals selbst steht ausdrücklich in der Fremdzelle. Eigenkapital muss nicht zurückgezahlt werden, deshalb fehlt dort diese Pflicht. Wer Tilgung in beide Spalten schreibt, macht aus Gesellschaftern Gläubiger. Die Aussage ordnet die Tilgung der richtigen Spalte zu, ohne Zinsen zu leugnen.\n\nDie Aussage ist wahr.",
+      "Gleichsetzung beider Spalten verfehlt das Entgelt. Ein Bankkredit trägt Zinsen und Tilgung. Eigenkapital trägt eventuell Gewinnanteile und keine Rückzahlungspflicht. Wer beides \"ebenso zwingend\" verzinst und tilgt, streicht \"eventuell\" und die fehlende Tilgung. Die Tabelle ist gerade der Kontrast, nicht die Identität der Lasten.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.19",
+    "title": "Jahresabschreibung 200.000 Euro",
+    "context": "Ein Unternehmen hat 200.000 Euro in Sachanlagen investiert, die zehn Jahre genutzt werden. Die Abschreibung wird linear verteilt. Bewerten Sie die folgenden Aussagen:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Die jährliche Abschreibung beträgt 20.000 Euro, weil 200.000 Euro durch 10 Jahre geteilt werden.",
+      "Nach einem Jahr beträgt der Restbuchwert 180.000 Euro.",
+      "Die jährliche Abschreibung steigt von Jahr zu Jahr, weil der Restbuchwert fällt.",
+      "Nach zwei Jahren beträgt der Restbuchwert 160.000 Euro.",
+      "Jedes Nutzungsjahr stehen 200.000 Euro aus dieser Abschreibung zur Verfügung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Anschaffung geteilt durch Nutzungsdauer ergibt den Jahresbetrag.\n\nJahresabschreibung = Anschaffung / Nutzungsdauer\n= 200.000 / 10\n= 20.000 Euro je Jahr.\n\nDas Buchbeispiel verteilt 200.000 Euro linear auf zehn Jahre. In jeder Planzeile steht deshalb 20.000 als Jahresabschreibung, nicht 200.000. Wer den Kaufpreis jedes Jahr als Abschreibung ansetzt, würde denselben Betrag zehnmal verdienen wollen. Nach einem Jahr wäre der Restbuchwert dann nicht 180.000, sondern unsinnig negativ, wenn man 200.000 nochmals abzöge. Die Division 200.000 / 10 = 20.000 trifft Tabellenzeile und Buchzahl zugleich.\n\nDie Aussage ist wahr.",
+      "Ein Jahresbetrag mindert den Anfangswert einmal.\n\nRestbuchwert nach 1 Jahr = 200.000 − 1 × 20.000\n= 200.000 − 20.000\n= 180.000 Euro.\n\nDie Planzeile \"nach 1 Jahr\" zeigt denselben Restbuchwert. Die Abschreibung selbst bleibt 20.000; nur der noch nicht verteilte Anschaffungsbetrag sinkt. Die Aussage liest die Tabelle richtig.\n\nDie Aussage ist wahr.",
+      "Fallender Restbuchwert ändert den linearen Jahresbetrag nicht. 200.000 / 10 bleibt 20.000 in Jahr 1 wie in Jahr 5. Die Spalte Jahresabschreibung bleibt in jeder Zeile 20.000. Steigen würde eine andere Methode bedeuten, die das Buchbeispiel nicht verwendet. Weil der Restbuchwert fällt, könnte jemand meinen, die Abschreibung müsse steigen; linear heißt aber konstanter Jahresbetrag bei sinkendem Buchwert. Die Behauptung widerspricht Division und Tabelle.\n\nDie Aussage ist falsch.",
+      "Zwei Jahre heißen zwei Jahresbeträge.\n\nRestbuchwert nach 2 Jahren = 200.000 − 2 × 20.000\n= 200.000 − 40.000\n= 160.000 Euro.\n\nKumuliert stehen 40.000 in der Tabelle, Restbuchwert 160.000. Das ist nicht 180.000 (nur ein Jahr) und nicht 100.000 (fünf Jahre). Die Rechnung bestätigt die Planzeile.\n\nDie Aussage ist wahr.",
+      "Jährlich stehen 20.000 Euro, nicht 200.000. Werden die Erzeugnisse zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung. 200.000 ist die einmalige Anschaffung. 200.000 / 10 = 20.000. Wer jedes Jahr die volle Investitionssumme als Abschreibungszufluss erwartet, verzehnfacht das Beispiel. Die Planzeilen mit 20.000 je Jahr widersprechen der Behauptung.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.20",
+    "title": "Restbuchwert nach fünf Jahren",
+    "context": "Dieselbe Anschaffung von 200.000 Euro wird zehn Jahre linear mit 20.000 Euro je Jahr abgeschrieben. Bewerten Sie die folgenden Aussagen zum Plan:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Nach fünf Jahren beträgt die kumulierte Abschreibung 100.000 Euro.",
+      "Nach fünf Jahren beträgt der Restbuchwert 100.000 Euro.",
+      "Nach fünf Jahren beträgt der Restbuchwert 20.000 Euro, weil nur noch ein Jahresbetrag offen ist.",
+      "Nach zehn Jahren ist der Restbuchwert 0 Euro, wenn linear über die gesamte Nutzungsdauer verteilt wird.",
+      "Die Abschreibung ist in jedem Nutzungsjahr eine Auszahlung von 20.000 Euro vom Bankkonto."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fünf gleiche Jahresbeträge addieren sich zur Hälfte der Anschaffung.\n\nKumulierte Abschreibung nach 5 Jahren = 5 × 20.000\n= 100.000 Euro.\n\nProbe: 200.000 / 10 = 20.000, fünfmal genommen. Die Tabellenzeile \"nach 5 Jahren\" zeigt 100.000 in der Kumulationsspalte. Das ist nicht 20.000 (ein Jahr) und nicht 200.000 (die volle Anschaffung auf einmal). Die Aussage trifft Summe und Plan.\n\nDie Aussage ist wahr.",
+      "Restbuchwert ist Anschaffung minus bisherige Abschreibung.\n\nRestbuchwert nach 5 Jahren = 200.000 − 5 × 20.000\n= 200.000 − 100.000\n= 100.000 Euro.\n\nHalbzeit der zehn Jahre, halber Buchwert bei linearer Verteilung ohne Restwert. Die Planzeile bestätigt 100.000. Wer 180.000 (Jahr 1) oder 0 (Jahr 10) einsetzt, greift die falsche Zeile.\n\nDie Aussage ist wahr.",
+      "Offen sind nach fünf Jahren nicht ein, sondern fünf Jahresbeträge.\n\nVerbleibende Jahre = 10 − 5 = 5\nverbleibender Buchwert = 5 × 20.000 = 100.000 Euro,\nnicht 1 × 20.000 = 20.000.\n\nDie Falle verwechselt den konstanten Jahresbetrag mit dem Restbuchwert. 20.000 ist die Abschreibung eines einzelnen Jahres, nicht der Wert nach fünf Jahren. Nach einem Jahr bleiben 180.000, nach zwei Jahren 160.000, nach fünf Jahren die Hälfte: 100.000. Nur nach neun Jahren stünde 20.000 als Restbuchwert, weil 200.000 − 9 × 20.000 = 20.000. Fünf Jahre sind nicht neun. Die Tabelle zeigt Restbuchwert 100.000. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "Am Ende der Nutzungsdauer ist der Anschaffungsbetrag verteilt.\n\nRestbuchwert nach 10 Jahren = 200.000 − 10 × 20.000\n= 200.000 − 200.000\n= 0 Euro.\n\nKumuliert stehen 200.000, Restbuchwert 0. Das Buchbeispiel nutzt die Anlagen zehn Jahre und verteilt 200.000 linear; ohne genannten Restwert bleibt am Schluss nichts in der Anlage. Die Aussage folgt der letzten Planzeile.\n\nDie Aussage ist wahr.",
+      "Buchung ist nicht Abfluss. Der Wertverlust stellt keine Auszahlung dar; das Geld bleibt vorerst im Unternehmen. Genau darin liegt die Abschreibungsfinanzierung: 20.000 Euro Aufwand je Jahr, ohne dass 20.000 vom Konto an einen Maschinenhändler gehen. Die Anschaffungsauszahlung von 200.000 lag im Investitionsjahr. Wer jedes Nutzungsjahr 20.000 als Überweisung behandelt, streicht den Innenfinanzierungseffekt.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.21",
+    "title": "Mitsprache und Sicherheit in Tabelle 3",
+    "context": "Tab. 3 beantwortet, ob Kapitalgeber mitreden und ob sie eine Sicherheit für die Rückzahlung haben. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |",
+    "statements": [
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben abhängig von der Rechtsform Mitspracherechte in unterschiedlichem Ausmaß.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben laut Tabelle eine Sicherheit für die Rückzahlung ihres Kapitals.",
+      "Fremdkapitalgeberinnen und Fremdkapitalgeber können eine Sicherheit haben, wenn der Kredit ausreichend besichert ist.",
+      "Ein Bankkredit und eine Gesellschaftereinlage gewähren denselben Einfluss auf die Unternehmensführung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Rechtsform steuert die Stimme der Eigenen. Die Mitsprachezeile ordnet Eigenkapitalgebern Mitspracherechte zu, aber nicht in einheitlicher Stärke: das Ausmaß hängt von der Rechtsform ab. In einer Personengesellschaft greifen andere Mitwirkungsregeln als in einer GmbH oder AG. Unterschiedlich heißt nicht beliebig null und nicht überall gleich. Fremdkapitalgeber bleiben in der Regel außen vor. Der Satz gibt die Eigenspalte der Tabelle wieder.\n\nDie Aussage ist wahr.",
+      "Gläubiger führen den Betrieb in der Regel nicht. Die Fremdzelle der Mitsprachezeile lautet: in der Regel kein Mitspracherecht bei der Unternehmensführung. Banken und Lieferanten stellen befristete Mittel, verlangen Zinsen und Tilgung, sitzen aber nicht anstelle der Gesellschafter in der Leitung. \"In der Regel\" lässt besondere Vertragsbindungen offen, ändert die Grundregel aber nicht. Eigenkapitalgeber reden je nach Rechtsform mit, Gläubiger sichern Rückzahlung, wenn der Kredit ausreichend besichert ist. Wer der Bank denselben Einfluss wie den Eigentümern zuschreibt, liest die falsche Spalte und vermengt Mitsprache mit Sicherheit.\n\nDie Aussage ist wahr.",
+      "Rückzahlungssicherheit steht bei Eigenkapital auf nein. Die Tabelle fragt, ob Kapitalgeber eine Sicherheit für die Rückzahlung haben, und antwortet für Eigenkapital mit nein. Das folgt daraus, dass Eigenkapital nicht zurückgezahlt werden muss. Eine ständige Sicherheit für Rückzahlung würde Eigenmittel wie einen besicherten Kredit behandeln. Der Satz behauptet das Gegenteil der Buchzelle.\n\nDie Aussage ist falsch.",
+      "Besicherung entscheidet auf der Fremdseite. Für Fremdkapital gilt: wenn der Kredit ausreichend besichert ist, ja. Hypothek, Pfand oder vergleichbare Sicherheiten geben Gläubigern Zugriff, falls nicht gezahlt wird. Ohne ausreichende Besicherung fehlt diese Sicherheit. Die Aussage wiederholt die bedingte Tabellenantwort, ohne aus jedem Kredit automatisch eine Vollbesicherung zu machen.\n\nDie Aussage ist wahr.",
+      "Einfluss folgt der Rechtsstellung, nicht dem Geldbetrag. Die Einlage trägt Mitsprache je nach Rechtsform; der Bankkredit trägt in der Regel keines. Dieselbe Tabelle trennt die Spalten gerade hier. Wer Kredit und Einlage denselben Einfluss zuschreibt, macht aus Gläubigern Gesellschafter. Zinsen, Tilgung und mögliche Besicherung bleiben Fremdmerkmale und ersetzen die Stimme in der Führung nicht.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.22",
+    "title": "Merkmalstabelle und Abschreibungsplan",
+    "context": "Eine Werkstatt finanziert Maschinen sowohl über Gesellschaftereinlagen als auch über einen Bankkredit. Dieselbe Werkstatt hat 200.000 Euro Sachanlagen mit zehnjähriger Nutzung. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Ein Bankkredit ist Fremdkapital: er wird verzinst, zurückgezahlt und gibt in der Regel kein Mitspracherecht.",
+      "Die Gesellschaftereinlage ist Eigenkapital: unbefristet, ohne Rückzahlungssicherheit, mit Mitsprache je nach Rechtsform.",
+      "Die jährliche Abschreibung von 20.000 Euro verwandelt die Sachanlagen in Fremdkapital.",
+      "Nach einem Jahr beträgt der Restbuchwert 180.000 Euro; die verdiente Abschreibung bleibt Innenfinanzierung, kein Kredit.",
+      "Weil Eigenkapital unbefristet ist, muss die Abschreibung zwingend 200.000 Euro pro Jahr betragen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Fremdzellen treffen den Kredit. Entgelt: Zinsen und Rückzahlung des Kapitals selbst. Mitsprache: in der Regel keines bei der Führung. Sicherheit: möglich, wenn ausreichend besichert. Laufzeit: je nach Vereinbarung kurz oder lang, also auch ein mehrjähriger Investitionskredit. Die Bank ist Dritte, nicht Gesellschafterin kraft Darlehen. Die Aussage bündelt die Fremdspalte am alltäglichsten Beispiel, ohne die Einlage zu leugnen.\n\nDie Aussage ist wahr.",
+      "Vier Eigenzellen treffen die Einlage. Laufzeit langfristig, in der Regel unbefristet. Entgelt eventuell Gewinnanteile, keine Tilgungspflicht. Mitsprache abhängig von der Rechtsform. Sicherheit für Rückzahlung: nein. Das ist die Gegenspalte zum Kredit. Wer die Einlage als besicherten Kredit mit festem Zins liest, vertauscht die Tabelle. Die Aussage hält die Eigenspalte zusammen.\n\nDie Aussage ist wahr.",
+      "Abschreibung ändert die Kapitalart der Anlage nicht. 200.000 / 10 = 20.000 Euro Aufwand je Jahr verteilt den Wertverlust. Sachanlagen bleiben Betriebsmittel; ihre Finanzierung kann eigen oder fremd sein, je nachdem ob Einlage oder Kredit den Kauf trug. Der Jahresbetrag 20.000 schafft keinen Gläubiger und keine Tilgungspflicht. Innenfinanzierung durch verdiente Abschreibung ist kein Umschreiben in Fremdkapital. Die Behauptung vermengt Plan und Merkmalstabelle.\n\nDie Aussage ist falsch.",
+      "Ein Jahr linear und die Innenquelle fallen zusammen.\n\nRestbuchwert nach 1 Jahr = 200.000 − 20.000 = 180.000 Euro.\n\nDie 20.000 sind Aufwand ohne Auszahlung, verdient wenn die Preise die Abschreibung enthalten. Das Geld bleibt vorerst im Unternehmen und kann andere Investitionen tragen: Abschreibungsfinanzierung, Quelle im Umsatz, nicht Kredit von Dritten. 180.000 Restbuchwert und 20.000 Innenmittel sind dieselbe Rechnung, nicht ein Bankvertrag. Ein Kredit stünde in der Merkmalstabelle mit Zins, Tilgung und in der Regel ohne Mitsprache; die verdiente Abschreibung erzeugt keinen solchen Gläubiger. Die Aussage trennt Plan und Kapitalart korrekt.\n\nDie Aussage ist wahr.",
+      "Unbefristetes Eigenkapital setzt den Jahresbetrag nicht auf 200.000. Die Abschreibung folgt der Nutzungsdauer der Anlagen:\n\n200.000 / 10 = 20.000 Euro je Jahr,\nzehn Jahre lang, nicht 200.000 jedes Jahr.\n\nDie Merkmalstabelle erklärt, wie lange Einlagen stehen, nicht wie schnell Maschinen abgeschrieben werden. Wer beide Tabellen kreuzt und den Kaufpreis zur Jahresabschreibung macht, verzehnfacht das Buchbeispiel.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.23",
+    "title": "Verdiente Abschreibung und konstanter Jahresbetrag",
+    "context": "Die Abschreibung von 200.000 Euro Anschaffung über zehn Jahre geht in die kalkulierten Preise ein. Bewerten Sie die folgenden Aussagen zu Plan und Finanzierungseffekt:\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Die Jahresabschreibung beträgt in jedem dargestellten Nutzungsjahr 20.000 Euro.",
+      "Werden die Erzeugnisse zu den kalkulierten Preisen verkauft, stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung.",
+      "Der Finanzierungseffekt entsteht, weil die Abschreibung Aufwand ist, aber keine Auszahlung darstellt.",
+      "Nach zwei Jahren stehen kumuliert 400.000 Euro aus dieser einen Anschaffung als jährliche Abschreibung bereit.",
+      "Sinkt der Restbuchwert, verdoppelt sich automatisch die Jahresabschreibung in der Tabelle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Konstante Spalte heißt konstanter Jahresbetrag. Nach 1, 2 und 5 Jahren steht jeweils 20.000, weil 200.000 / 10 = 20.000. Die Tabelle wiederholt denselben Jahresbetrag in jeder Nutzungszeile. Eine steigende oder fallende Jahresabschreibung würde eine andere Verteilung zeigen, die das Beispiel nicht verwendet. Die Aussage liest die Spalte richtig, ohne den fallenden Restbuchwert mit der Jahresabschreibung zu verwechseln.\n\nDie Aussage ist wahr.",
+      "Verdient ist der kalkulierte Jahresbetrag. Das Buch rechnet: Anschaffung 200.000 Euro, Nutzung zehn Jahre, Abschreibung 20.000 Euro pro Jahr, einkalkuliert in die Preise. Werden die Erzeugnisse zu diesen Preisen verkauft, wird die Abschreibung verdient. Dann stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung, nicht 200.000. Die Identität 200.000 / 10 = 20.000 ist dieselbe wie im Plan. Die Aussage gibt den Finanzierungssatz des Beispiels wieder.\n\nDie Aussage ist wahr.",
+      "Aufwand ohne Abfluss schafft den Spielraum. Bei der Preisbildung zählt der Wertverlust von Maschinen, Computern und Fahrzeugen zu den Aufwänden. Wird er verdient, fließt trotzdem in diesem Schritt kein Geld in Höhe der Abschreibung ab. Das Geld bleibt vorerst im Unternehmen und kann andere Investitionen tragen, damit Betriebsmittel aktuell bleiben. Wäre die Abschreibung eine Auszahlung von 20.000 Euro je Jahr, ginge genau der verdiente Betrag wieder vom Konto und der Innenfinanzierungseffekt entfiele. 200.000 / 10 = 20.000 bleibt Aufwand, nicht Überweisung. Die Aussage trifft den Mechanismus, nicht eine zweite Kreditsumme.\n\nDie Aussage ist wahr.",
+      "Zwei Jahre mal 20.000 sind 40.000, nicht 400.000.\n\nKumulierte Abschreibung nach 2 Jahren = 2 × 20.000 = 40.000 Euro.\nRestbuchwert = 200.000 − 40.000 = 160.000 Euro.\n\n400.000 wäre 2 × 200.000, also zweimal die volle Anschaffung als Jahresabschreibung. Die Tabelle zeigt kumuliert 40.000. Wer 400.000 liest, verdoppelt den Kaufpreis statt den Jahresbetrag. Die Behauptung ist falsch.\n\nDie Aussage ist falsch.",
+      "Restbuchwert und Jahresabschreibung laufen nicht spiegelbildlich. Der Restbuchwert fällt (180.000, 160.000, 100.000), die Jahresabschreibung bleibt 20.000. Verdopplung auf 40.000 stünde in keiner Planzeile. Linear heißt: konstanter Jahresbetrag, sinkender Buchwert. Die Behauptung koppelt beide Spalten falsch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.3",
+    "case_id": "WISO 3.3.24",
+    "title": "Tabellenlesen mit Zahlen- und Merkmalsfallen",
+    "context": "Lesen Sie Merkmalstabelle und Abschreibungsplan gemeinsam. Bewerten Sie die folgenden Aussagen:\n\n| Merkmal | Eigenkapital | Fremdkapital |\n| --- | --- | --- |\n| Laufzeit | langfristig, in der Regel unbefristet | kurzfristig und langfristig möglich, je nach Vereinbarung |\n| Entgelt | eventuell Gewinnanteile an die Eigenkapitalgeber | Zinsen für das Fremdkapital; das Kapital selbst muss auch zurückgezahlt werden |\n| Mitsprache | abhängig von der Rechtsform in unterschiedlichem Ausmaß | in der Regel kein Mitspracherecht bei der Unternehmensführung |\n| Sicherheit für die Rückzahlung | nein | ja, wenn der Kredit ausreichend besichert ist |\n\n| Zeitpunkt | Jahresabschreibung (Euro) | kumulierte Abschreibung (Euro) | Restbuchwert (Euro) |\n| --- | ---: | ---: | ---: |\n| Anschaffung | 0 | 0 | 200.000 |\n| nach 1 Jahr | 20.000 | 20.000 | 180.000 |\n| nach 2 Jahren | 20.000 | 40.000 | 160.000 |\n| nach 5 Jahren | 20.000 | 100.000 | 100.000 |\n| nach 10 Jahren | 20.000 | 200.000 | 0 |",
+    "statements": [
+      "Nach fünf Jahren beträgt der Restbuchwert 100.000 Euro, weil 200.000 minus 5 mal 20.000 gerechnet wird.",
+      "Fremdkapital kann nur kurzfristig sein, weil die Sachanlagen zehn Jahre abgeschrieben werden.",
+      "Nach zwei Jahren beträgt der Restbuchwert 160.000 Euro.",
+      "Eigenkapitalgeberinnen und Eigenkapitalgeber haben laut Tabelle eine Sicherheit für die Rückzahlung und müssen die 200.000 Euro nach zehn Jahren tilgen.",
+      "Die jährliche Abschreibung von 20.000 Euro ist verdienter Aufwand ohne Auszahlung; nach fünf Jahren bleiben 100.000 Euro Buchwert, nicht fünfmal 200.000 Euro verdient."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Halbzeit der Nutzungsdauer, halber Buchwert bei linearer Verteilung.\n\nJahresabschreibung = 200.000 / 10 = 20.000\nRestbuchwert nach 5 Jahren = 200.000 − 5 × 20.000\n= 200.000 − 100.000\n= 100.000 Euro.\n\nDieselbe 100.000 stehen als kumulierte Abschreibung. Die Jahresabschreibung bleibt 20.000; nur der Restbuchwert ist halbiert. Die Aussage setzt Formel, Zahlen und Planzeile gleich.\n\nDie Aussage ist wahr.",
+      "Nutzungsdauer der Anlage setzt nicht die Kapitalfrist. Fremdkapital kann nach Tabelle kurzfristig und langfristig zur Verfügung stehen, je nach Vereinbarung. Ein zehnjähriger Bankkredit wäre weiterhin Fremdkapital mit Zins, Tilgung und in der Regel ohne Mitsprache. Die zehn Jahre im Abschreibungsplan beschreiben, wie der Wertverlust von 200.000 verteilt wird, nicht dass Gläubiger nur kurze Mittel geben dürften. Die Kopplung \"nur kurzfristig, weil Abschreibung zehn Jahre\" vermengt beide Tabellen und ist falsch.\n\nDie Aussage ist falsch.",
+      "Zwei Jahresbeträge vom Anfangswert abziehen.\n\nRestbuchwert nach 2 Jahren = 200.000 − 2 × 20.000\n= 200.000 − 40.000\n= 160.000 Euro.\n\nKumuliert 40.000 in der Tabelle, Jahresabschreibung weiter 20.000. Das ist nicht 180.000 (ein Jahr) und nicht 100.000 (fünf Jahre). Die Rechnung bestätigt die Planzeile.\n\nDie Aussage ist wahr.",
+      "Zwei falsche Eigenmerkmale auf einmal. Sicherheit für Rückzahlung steht in der Eigenspalte auf nein. Tilgung des Kapitals selbst steht in der Fremd-Entgeltzelle, nicht bei der Einlage. Die 200.000 Euro im Plan sind Anschaffungskosten der Sachanlagen, die über zehn Jahre mit 20.000 abgeschrieben werden, keine Pflicht der Gesellschafter, denselben Betrag am Ende der Nutzungsdauer an sich selbst zurückzuzahlen. Wer Sicherheit plus Tilgung auf Eigenkapital legt, liest die Fremdspalte und verwechselt außerdem Abschreibungsende mit Kreditfälligkeit.\n\nDie Aussage ist falsch.",
+      "Jahresbetrag, Innenfinanzierung und Restbuchwert gehören zusammen, ohne den Kaufpreis zu verfünffachen.\n\n5 × 20.000 = 100.000 kumulierte Abschreibung,\nRestbuchwert = 200.000 − 100.000 = 100.000 Euro.\n5 × 200.000 = 1.000.000 wäre fünfmal die Anschaffung und steht nirgends.\n\nJede Planzeile mit 20.000 ist Aufwand ohne Auszahlung, verdient über die Preise, zehn Jahre lang derselbe Jahresbetrag. Nach fünf Jahren bleibt halber Buchwert, nicht fünf volle Investitionssummen in der Kasse. Fremdkapital tilgt man an Gläubiger; diese 20.000 verlassen das Unternehmen in der Buchung nicht. Die Aussage hält Tabelle, Division und Merkmal \"keine Auszahlung\" zusammen.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3248,6 +3828,470 @@
     "tier": "full"
   },
   {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.33",
+    "title": "FunBike: Bilanzgleichheit in der Tabelle",
+    "context": "Die vereinfachte Bilanz der FunBike GmbH per 31.12.20xx (alle Beträge in Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Gesamtvermögen und Gesamtkapital betragen jeweils 9 638 250 Euro.",
+      "Das Eigenkapital ergibt sich als 525 000 + 3 614 250 = 4 139 250 Euro.",
+      "Die Summe der Aktiva übersteigt die Summe der Passiva um mehr als 500 000 Euro.",
+      "Das Fremdkapital beträgt 2 000 000 + 3 199 000 + 300 000 = 5 499 000 Euro.",
+      "Die Bareinlagen der Gesellschafter allein sind bereits das gesamte Eigenkapital."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Beide Seiten schließen mit derselben Zahl. Auf der Aktivseite addiert man Grundstücke und Bauten 750 000, technische Anlagen und Geschäftsausstattung 2 330 000, Finanzanlagen 240 000, Vorräte 5 400 000, Forderungen 598 000 und Bankguthaben 320 250. Rechnung: 750 000 + 2 330 000 = 3 080 000, plus 240 000 = 3 320 000, plus 5 400 000 = 8 720 000, plus 598 000 = 9 318 000, plus 320 250 = 9 638 250. Passiva: Bareinlagen 525 000 + Gewinn 3 614 250 = 4 139 250, plus Rückstellungen 2 000 000 = 6 139 250, plus Bankkredite 3 199 000 = 9 338 250, plus Verbindlichkeiten 300 000 = 9 638 250. Vermögen gleich Kapital, wie die Summenzeile der Tabelle zeigt.\n\nDie Aussage ist wahr.",
+      "Eigenkapital steht in zwei Passivzeilen, nicht in einer. Formel: Eigenkapital = Bareinlagen der Gesellschafter + Gewinn. Einsetzen aus der Tabelle: 525 000 + 3 614 250 = 4 139 250 Euro. Probe gegen die Bilanzsumme: Fremdkapital 2 000 000 + 3 199 000 + 300 000 = 5 499 000, und 4 139 250 + 5 499 000 = 9 638 250. Wer nur die Bareinlagen 525 000 liest, unterschlägt den Gewinn 3 614 250, der den weitaus größeren Teil der eigenen Mittel bildet.\n\nDie Aussage ist wahr.",
+      "Eine Schieflage zwischen den Seiten gibt es in dieser Tabelle nicht. Summe Aktiva = 9 638 250, Summe Passiva = 9 638 250. Differenz: 9 638 250 − 9 638 250 = 0. Die Behauptung, die Aktiva lägen um mehr als 500 000 über den Passiva, verlangt eine Lücke, die die Summenzeile nicht hergibt. In der Buchhaltung gilt Vermögen = Kapital: jeder Teil des Vermögens ist finanziert, die Aktiva stehen im Soll, die Passiva im Haben. Eine Differenz über 500 000 würde die Bilanz sprengen; FunBike zeigt Soll-Haben-Gleichheit.\n\nDie Aussage ist falsch.",
+      "Fremdkapital sammelt drei Passivpositionen unterhalb des Eigenkapitals. Formel: Fremdkapital = Rückstellungen + Bankkredite + Verbindlichkeiten aus Lieferungen und Leistungen. Einsetzen: 2 000 000 + 3 199 000 = 5 199 000, plus 300 000 = 5 499 000 Euro. Probe: Gesamtkapital 9 638 250 minus Eigenkapital 4 139 250 = 5 499 000. Bankkredite 3 199 000 sind der größte Brocken (3 199 000 / 5 499 000 ≈ 0,58), ersetzen aber weder Rückstellungen noch Lieferantenverbindlichkeiten.\n\nDie Aussage ist wahr.",
+      "Nicht jede Einlagenzeile ist schon das ganze Eigenkapital. Bareinlagen der Gesellschafter stehen mit 525 000 in der Tabelle. Eigenkapital ist 525 000 + Gewinn 3 614 250 = 4 139 250. Vergleich: 525 000 / 4 139 250 ≈ 0,127, also rund 13 Prozent der eigenen Mittel, der Gewinn trägt die restlichen 87 Prozent. Die Aussage streicht genau die Gewinnzeile und würde FunBike als unterkapitalisiert erscheinen lassen, obwohl 4 139 250 Euro eigene Mittel in der Passiva stehen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.34",
+    "title": "FunBike: Anlage- und Umlaufvermögen",
+    "context": "Bilanz der FunBike GmbH per 31.12.20xx (alle Beträge in Euro). Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen; Umlaufvermögen bleibt für gewöhnlich kürzer als ein Jahr.\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Anlagevermögen beträgt 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro.",
+      "Das Umlaufvermögen beträgt 5 400 000 + 598 000 + 320 250 = 6 318 250 Euro.",
+      "Das Anlagevermögen übersteigt das Umlaufvermögen deutlich.",
+      "FunBike ist umlaufintensiv, weil das Umlaufvermögen deutlich über dem Anlagevermögen liegt.",
+      "Beim Umlaufvermögen dominieren die Vorräte mit 5 400 000 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Länger als ein Jahr gebunden: das sind die drei Anlagezeilen. Formel: Anlagevermögen = Grundstücke und Bauten + technische Anlagen und Geschäftsausstattung + Finanzanlagen. Einsetzen: 750 000 + 2 330 000 = 3 080 000, plus 240 000 = 3 320 000 Euro. Das Buch rechnet hier Gebäude und Maschinen zum Anlagevermögen, Vorräte ausdrücklich nicht. Probe gegen die Bilanzsumme: bleibt 9 638 250 − 3 320 000 = 6 318 250 für den Umlauf. Die 3 320 000 Euro sind das langfristige Vermögen von etwas mehr als drei Millionen, von dem später die goldene Bilanzregel spricht.\n\nDie Aussage ist wahr.",
+      "Kürzer als ein Jahr: Vorräte, Forderungen, Bankguthaben. Formel: Umlaufvermögen = Vorräte + Forderungen aus Lieferungen und Leistungen + Bankguthaben und Barbestand. Einsetzen: 5 400 000 + 598 000 = 5 998 000, plus 320 250 = 6 318 250 Euro. Probe: Anlage 3 320 000 + Umlauf 6 318 250 = 9 638 250 schließt die Aktivseite ohne Rest. Die Vorräte 5 400 000 allein tragen bereits den Großteil dieses Umlaufs; Forderungen und Bank sind die kleineren Reste 598 000 und 320 250.\n\nDie Aussage ist wahr.",
+      "Die Relation liegt umgekehrt zur Behauptung. Vergleich aus der Tabelle: Umlaufvermögen 6 318 250 gegen Anlagevermögen 3 320 000. Differenz: 6 318 250 − 3 320 000 = 2 998 250 Euro zugunsten des Umlaufs. Verhältnis: 6 318 250 / 3 320 000 ≈ 1,90, also knapp das Doppelte. Wer Gebäude und Maschinen als den größeren Block liest, übersieht die Vorrätezeile 5 400 000, die allein schon über dem gesamten Anlagevermögen liegt (5 400 000 > 3 320 000). FunBike ist damit nicht anlagenlastig.\n\nDie Aussage ist falsch.",
+      "Umlaufintensiv heißt: deutlich mehr Umlauf- als Anlagevermögen. Zahlen der Tabelle: 6 318 250 steht gegen 3 320 000, also mehr als das 1,9-Fache (6 318 250 / 3 320 000 ≈ 1,90). Anteil am Gesamtvermögen: 6 318 250 / 9 638 250 ≈ 0,656, rund 66 Prozent Umlauf. Das Buch ordnet FunBike genau so ein, weil ein Fahrradproduzent Bestandteile und fertige Räder lagert. Die Maschinenhalle 2 330 000 ändert diese Einordnung nicht, solange die Vorräte den Umlauf tragen.\n\nDie Aussage ist wahr.",
+      "Vorräte stechen aus dem Umlauf heraus. Umlaufvermögen = 6 318 250, davon Vorräte 5 400 000. Anteil: 5 400 000 / 6 318 250 ≈ 0,855, also rund 86 Prozent. Rest: Forderungen 598 000 + Bank 320 250 = 918 250. Für einen Fahrradproduzenten, der viele Teile und teilweise fertige Räder lagert, ist das plausibel. Trotzdem könnte geprüft werden, ob die Lagerhaltung reduzierbar ist, ohne die Produktion zu beeinträchtigen. Dominanz heißt hier: eine Zeile trägt fast den ganzen Umlauf.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.35",
+    "title": "FunBike: Eigenkapital, Fremdkapital, Quote",
+    "context": "Die Finanzierung der FunBike GmbH erfolgt durch Eigen- und Fremdkapital. Bilanz per 31.12.20xx (Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Rund 57 Prozent des Kapitals sind Fremdkapital.",
+      "Die Eigenkapitalquote liegt über 60 Prozent der Bilanzsumme.",
+      "Den Großteil des Fremdkapitals bilden die Bankkredite mit 3 199 000 Euro.",
+      "Das Eigenkapital beträgt über vier Millionen Euro.",
+      "Das gesamte Fremdkapital besteht nur aus den Verbindlichkeiten aus Lieferungen und Leistungen von 300 000 Euro."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fremdkapitalquote braucht Zähler und Nenner aus der Tabelle. Zähler: Rückstellungen 2 000 000 + Bankkredite 3 199 000 + Verbindlichkeiten 300 000 = 5 499 000. Nenner: Bilanzsumme 9 638 250. Quotient: 5 499 000 / 9 638 250 ≈ 0,5705, also rund 57 Prozent. Probe: Eigenkapital 4 139 250 / 9 638 250 ≈ 0,4295, und 57,05 + 42,95 = 100 Prozent. Bankkredite allein sind 3 199 000 / 9 638 250 ≈ 33 Prozent der Bilanzsumme und treiben die Quote. Das Buch nennt genau diese Größenordnung für FunBike und hält sie für ein österreichisches Unternehmen knapp unter 10 Millionen Euro Bilanzsumme für nicht untypisch.\n\nDie Aussage ist wahr.",
+      "Sechzig Prozent Eigenkapital stünden nicht in dieser Tabelle. Eigenkapital = 525 000 + 3 614 250 = 4 139 250. Quote: 4 139 250 / 9 638 250 ≈ 0,4295, also rund 43 Prozent, nicht über 60. Schwelle 60 Prozent von 9 638 250 wäre 5 782 950; 4 139 250 bleibt 1 643 700 darunter. 43 Prozent liegt klar unter 60; die Behauptung verdreht Eigen- und Fremdanteil. FunBike finanziert sich mehrheitlich fremd (5 499 000 gegen 4 139 250), nicht zu drei Fünfteln eigen.\n\nDie Aussage ist falsch.",
+      "Bankkredite gegen die übrigen Schulden halten. Fremdkapital 5 499 000, davon Bankkredite 3 199 000. Anteil: 3 199 000 / 5 499 000 ≈ 0,582, also rund 58 Prozent. Rückstellungen 2 000 000 plus Lieferanten 300 000 ergeben zusammen 2 300 000, weniger als die Bankzeile allein. 3 199 000 > 2 300 000, daher der Großteil. Das Buch führt den Großteil des Fremdkapitals auf Bankkredite zurück; die drei FK-Zeilen der Tabelle bestätigen das ohne zusätzliche Annahmen.\n\nDie Aussage ist wahr.",
+      "Vier-Millionen-Schwelle und Tabellenwert. Eigenkapital = Bareinlagen 525 000 + Gewinn 3 614 250 = 4 139 250 Euro. Vergleich: 4 139 250 > 4 000 000, Differenz 139 250. Das Buch spricht davon, dass das Eigenkapital über vier Millionen Euro beträgt. Genau dieser Puffer trägt die goldene Bilanzregel, weil das langfristige Vermögen nur 3 320 000, also etwas über drei Millionen, beträgt. 4 139 250 − 3 320 000 = 819 250 Überdeckung durch eigene Mittel.\n\nDie Aussage ist wahr.",
+      "Dreihunderttausend ersetzen nicht 5,5 Millionen. Verbindlichkeiten aus Lieferungen und Leistungen stehen mit 300 000 in einer einzigen Zeile. Fremdkapital umfasst zusätzlich Rückstellungen 2 000 000 und Bankkredite 3 199 000, Summe 5 499 000. Anteil der Lieferanten: 300 000 / 5 499 000 ≈ 0,055, knapp 5,5 Prozent, nicht das Ganze. Wer nur die letzte Passivzeile liest, unterschlägt Bank und Rückstellungen und würde FunBike als fast schuldenfrei erscheinen lassen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.36",
+    "title": "FunBike: Goldene Bilanzregel",
+    "context": "Langfristig gebundenes Vermögen soll auch langfristig finanziert sein (goldene Bilanzregel). Bilanz der FunBike GmbH per 31.12.20xx (Euro):\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das langfristige Vermögen von 3 320 000 Euro ist durch Eigenkapital von 4 139 250 Euro mehr als gedeckt, die goldene Bilanzregel ist erfüllt.",
+      "Weil 3 320 000 größer ist als 4 139 250, bricht FunBike die goldene Bilanzregel.",
+      "Vorräte von 5 400 000 Euro zählen zum Anlagevermögen, weil sie für die Produktion unentbehrlich sind.",
+      "Die Verbindlichkeiten aus Lieferungen und Leistungen von 300 000 Euro allein finanzieren die technischen Anlagen von 2 330 000 Euro fristenkongruent.",
+      "Ein Teil des Fremdkapitals kann zusätzlich langfristig sein und die Deckung des Anlagevermögens weiter stützen."
+    ],
+    "answer_key": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fristenkongruenz prüft man zahlenmäßig an der Tabelle. Langfristiges Vermögen = Anlagevermögen = 750 000 + 2 330 000 + 240 000 = 3 320 000 Euro (etwas mehr als drei Millionen, wie das Buch sagt). Eigenkapital = 525 000 + 3 614 250 = 4 139 250 Euro (über vier Millionen). Vergleich: 4 139 250 > 3 320 000, Überdeckung 819 250 Euro. Damit ist langfristig gebundenes Vermögen durch eigene Mittel bereits voll finanziert. Die goldene Bilanzregel, dass langfristiges Vermögen langfristig finanziert sein soll, ist erfüllt, noch bevor man einen vermutlich langfristigen Teil des Fremdkapitals hinzurechnet.\n\nDie Aussage ist wahr.",
+      "Die Ungleichung steht falsch herum. 3 320 000 ist nicht größer als 4 139 250, sondern kleiner: 4 139 250 − 3 320 000 = 819 250. Wer die goldene Bilanzregel als gebrochen darstellt, vertauscht Vermögen und Kapital. Das Buch stellt ausdrücklich fest, dass die Regel erfüllt ist, weil das langfristige Vermögen etwas über drei Millionen und das Eigenkapital über vier Millionen liegt. Eine gebrochene Regel läge vor, wenn 3 320 000 ungedeckt über den langfristigen Mitteln stünde; hier ist das Gegenteil der Fall.\n\nDie Aussage ist falsch.",
+      "Unentbehrlich macht noch kein Anlagevermögen. Die Fristigkeitsregel des Buchs: Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, heißt Anlagevermögen, zum Beispiel Gebäude und Maschinen. Vorräte bleiben für gewöhnlich kürzer als ein Jahr und stehen in der Tabelle unter Umlaufvermögen mit 5 400 000. 5 400 000 gehört also nicht zu den 3 320 000 Anlage (750 000 + 2 330 000 + 240 000). Produktionsnähe ändert die Bilanzgliederung nicht: Rahmen und Reifen auf Lager sind Umlauf, die Montagehalle ist Anlage.\n\nNote: Die Einordnung folgt der geplanten Verweildauer, nicht der betrieblichen Wichtigkeit.\n\nDie Aussage ist falsch.",
+      "Dreihunderttausend tragen keine 2,33 Millionen fristenkongruent. Technische Anlagen und Geschäftsausstattung 2 330 000 sind Anlagevermögen, also langfristig gebunden. Verbindlichkeiten aus Lieferungen und Leistungen 300 000 sind typischerweise kurzfristig. Deckung: 300 000 / 2 330 000 ≈ 0,129, knapp 13 Prozent der Anlagenzeile, nicht die volle Finanzierung. Fehlbetrag 2 330 000 − 300 000 = 2 030 000. Die goldene Bilanzregel verlangt langfristige Deckung durch Eigenkapital 4 139 250 und vermutlich langfristige Teile des Fremdkapitals, nicht durch die Lieferantenziele allein.\n\nDie Aussage ist falsch.",
+      "Eigenkapital reicht, zusätzliches langfristiges FK wäre Reserve. Das Buch sagt: das Eigenkapital beträgt über vier Millionen und auch ein Teil des Fremdkapitals wird vermutlich langfristig sein. Bankkredite 3 199 000 können Laufzeiten über ein Jahr haben; Rückstellungen 2 000 000 sind nicht automatisch kurzfristig. Selbst ohne diese Vermutung deckt EK 4 139 250 bereits AV 3 320 000 (Überhang 819 250). Die Aussage bleibt im Rahmen des Buchs: sie erfindet keine zweite Firma, kein zweites Jahr und keine Zahl außerhalb der Tabelle.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.37",
+    "title": "FunBike: G&V von Umsatz bis EBIT",
+    "context": "Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx (Euro). Von den Umsatzerlösen und anderen Erträgen werden die Aufwände abgezogen.\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Umsatzerlöse minus die vier betrieblichen Aufwandsblöcke ergeben das EBIT von 4 906 000 Euro.",
+      "Das Finanzergebnis beträgt 12 000 − 99 000 = −87 000 Euro.",
+      "Das Jahresergebnis ist identisch mit dem EBIT von 4 906 000 Euro.",
+      "Ergebnis vor Steuern = EBIT + Finanzergebnis = 4 906 000 + (−87 000) = 4 819 000 Euro.",
+      "Die Steuern von 1 204 750 Euro übersteigen den Gewinn von 3 614 250 Euro."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Betriebsergebnis rechnet man zeilenweise nach. Start: Umsatzerlöse 70 656 000. Minus Material 53 175 000 ergibt 17 481 000. Minus Personal 7 900 000 ergibt 9 581 000. Minus Abschreibungen 1 800 000 ergibt 7 781 000. Minus sonstige betriebliche Aufwände 2 875 000 ergibt 4 906 000. Das ist genau die EBIT-Zeile der Tabelle. Probe in einem Schritt: Summe der vier Aufwände 53 175 000 + 7 900 000 + 1 800 000 + 2 875 000 = 65 750 000, und 70 656 000 − 65 750 000 = 4 906 000. Zinsen 12 000 und 99 000 sowie Steuern 1 204 750 gehören noch nicht in diese Stufe, sie kommen erst nach dem EBIT.\n\nDie Aussage ist wahr.",
+      "Zinsen haben ein Vorzeichen und eine Saldierung. Formel: Finanzergebnis = Zinserträge − Zinsaufwand. Einsetzen aus der Tabelle: 12 000 − 99 000 = −87 000 Euro. Die Zeile Finanzergebnis weist genau diese −87 000 aus. Der Zinsaufwand übersteigt die Zinserträge um 87 000; der Saldo ist negativ und mindert das Ergebnis nach dem EBIT 4 906 000 auf 4 819 000 vor Steuern. Das Finanzergebnis ersetzt weder das EBIT noch das Jahresergebnis, es ist die Zinsbrücke dazwischen.\n\nDie Aussage ist wahr.",
+      "EBIT ist eine Zwischenstufe, nicht der Gewinn nach Zinsen und Steuern. Nach EBIT 4 906 000 folgt Finanzergebnis −87 000, danach 4 819 000 vor Steuern, danach Steuern 1 204 750, danach Jahresergebnis 3 614 250. Vergleich: 4 906 000 ≠ 3 614 250. Differenz 4 906 000 − 3 614 250 = 1 291 750, das sind genau Finanzergebnis 87 000 plus Steuern 1 204 750. Wer EBIT als Jahresergebnis liest, stoppt zwei Zeilen zu früh. In der Bilanz steht als Gewinn 3 614 250, nicht 4 906 000.\n\nDie Aussage ist falsch.",
+      "Die Brücke vom Betriebsergebnis zur Steuerbasis. Formel: Ergebnis vor Steuern = EBIT + Finanzergebnis. Einsetzen: 4 906 000 + (−87 000) = 4 819 000. Die Tabellenzeile bestätigt 4 819 000. Probe rückwärts: 4 819 000 − 4 906 000 = −87 000, gleich dem Finanzergebnis. Ohne diese Identität wäre die G&V intern unstimmig; mit ihr sitzt die nächste Subtraktion, die Steuern 1 204 750, auf der richtigen Basis und führt auf 3 614 250.\n\nDie Aussage ist wahr.",
+      "Steuerzeile und Gewinnzeile nicht vertauschen. Vergleich in der Tabelle: Steuern 1 204 750 gegen Jahresergebnis 3 614 250. 1 204 750 < 3 614 250, Differenz 3 614 250 − 1 204 750 = 2 409 500. Probe der Gewinnzeile: Ergebnis vor Steuern 4 819 000 − Steuern 1 204 750 = 3 614 250. Die Steuern sind der Abzug von der Steuerbasis, nicht der größere Rest. Die Aussage behauptet das Gegenteil der beiden letzten G&V-Zahlen und würde den Gewinn kleiner als die Steuerlast lesen.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.38",
+    "title": "FunBike: Gewinn in G&V und Bilanz",
+    "context": "Der Gewinn wird in der G&V ermittelt und muss dem Gewinn in der Bilanz entsprechen (doppelte Gewinnermittlung). FunBike GmbH per 31.12.20xx (Euro):\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Jahresergebnis der G&V von 3 614 250 Euro ist derselbe Betrag wie der Gewinn in der Bilanz.",
+      "Eigenkapital = Bareinlagen 525 000 + G&V-Gewinn 3 614 250 = 4 139 250 Euro.",
+      "In der Bilanz steht als Gewinn die Umsatzerlösezeile 70 656 000 Euro.",
+      "Materialaufwand 53 175 000 Euro ist das Jahresergebnis.",
+      "4 819 000 − 1 204 750 = 3 614 250 schließt die G&V und bindet den Bilanzgewinn."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Ausweise, eine Zahl. Die G&V endet mit Jahresergebnis / Gewinn 3 614 250. In der Bilanz steht unter Eigenkapital die Zeile Gewinn 3 614 250. Vergleich: 3 614 250 = 3 614 250. Probe der letzten G&V-Stufe: 4 819 000 − 1 204 750 = 3 614 250. Genau das meint doppelte Gewinnermittlung: der Gewinn wird in der G&V ermittelt und muss sich auch aus dem Vergleich des Eigenkapitals ergeben, beides denselben Betrag. Wären die Beträge verschieden, wäre die doppelte Buchhaltung in diesen FunBike-Zahlen gebrochen. Die Tabellen sind daher nicht zwei unabhängige Geschichten, sondern eine Identität.\n\nDie Aussage ist wahr.",
+      "Passivseite nimmt den G&V-Gewinn auf. Formel: Eigenkapital = Bareinlagen der Gesellschafter + Gewinn. Der Gewinn ist das Jahresergebnis 3 614 250 aus der G&V. Einsetzen: 525 000 + 3 614 250 = 4 139 250 Euro. Probe gegen die Bilanzsumme: Fremdkapital 2 000 000 + 3 199 000 + 300 000 = 5 499 000, und 4 139 250 + 5 499 000 = 9 638 250. Der Gewinn erhöht das Eigenkapital, sofern er im Unternehmen bleibt; beide Tabellen zeigen ihn bereits in dieser Höhe.\n\nDie Aussage ist wahr.",
+      "Umsatz ist die erste G&V-Zeile, nicht die Gewinnzeile der Bilanz. Umsatzerlöse 70 656 000 stehen nur in der Erfolgsrechnung oben. In der Bilanz lautet die Gewinnposition 3 614 250. Vergleich: 70 656 000 ≠ 3 614 250. Dazwischen liegen Material 53 175 000, Personal 7 900 000, Abschreibungen 1 800 000, sonstige Aufwände 2 875 000, Finanzergebnis 87 000 und Steuern 1 204 750. Wer den Umsatz in die Passiva kopiert, verwechselt Erlöse mit dem Periodenergebnis nach allen Abzügen und würde die Bilanzsumme sprengen.\n\nDie Aussage ist falsch.",
+      "Material ist Aufwand, nicht Gewinn. Materialaufwand 53 175 000 ist die größte Minuszeile der G&V. Jahresergebnis ist 3 614 250. Vergleich: 53 175 000 ≠ 3 614 250; der Materialblock ist sogar größer als das EBIT 4 906 000. Anteil am Umsatz: 53 175 000 / 70 656 000 ≈ 0,753, rund 75 Prozent der Erlöse gehen in Material. Der Rest trägt Personal, Abschreibungen, sonstige Aufwände, Zinsen, Steuern und erst dann den Gewinn 3 614 250, der in der Bilanz wiederkehrt.\n\nDie Aussage ist falsch.",
+      "Letzte Subtraktion vor dem Gewinn. Formel: Jahresergebnis = Ergebnis vor Steuern − Steuern. Einsetzen: 4 819 000 − 1 204 750 = 3 614 250. Dieselbe 3 614 250 steht in der Bilanz als Gewinn neben den Bareinlagen 525 000. Die Kette sitzt durchgängig: EBIT 4 906 000 plus Finanzergebnis −87 000 ergibt 4 819 000, minus Steuern 1 204 750 ergibt 3 614 250. Damit ist die Brücke zwischen G&V-Tabelle und Bilanz-Tabelle arithmetisch geschlossen, wie es die doppelte Gewinnermittlung verlangt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.39",
+    "title": "FunBike: Umlaufintensität und Vermögensanteile",
+    "context": "FunBike GmbH, Bilanz per 31.12.20xx (Euro). Das Buch nennt das Unternehmen umlaufintensiv, weil das Umlaufvermögen deutlich über dem Anlagevermögen liegt und beim Umlaufvermögen die Vorräte dominieren.\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Vorräte von 5 400 000 Euro übersteigen für sich genommen das gesamte Anlagevermögen von 3 320 000 Euro.",
+      "Mehr als die Hälfte der Bilanzsumme ist Anlagevermögen.",
+      "Das Umlaufvermögen macht mehr als 65 Prozent der Bilanzsumme aus.",
+      "Bankguthaben und Barbestand 320 250 Euro übersteigen die Vorräte 5 400 000 Euro.",
+      "FunBike ist umlaufintensiv, weil 6 318 250 Euro Umlaufvermögen deutlich über 3 320 000 Euro Anlagevermögen liegen und die Vorräte diesen Umlauf dominieren."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Eine einzige Aktivzeile schlägt den ganzen Anlageblock. Vorräte 5 400 000, Anlagevermögen 750 000 + 2 330 000 + 240 000 = 3 320 000. Vergleich: 5 400 000 − 3 320 000 = 2 080 000 Euro Vorsprung der Vorräte. Verhältnis: 5 400 000 / 3 320 000 ≈ 1,63, gut das 1,6-Fache der gesamten Gebäude, Anlagen und Finanzanlagen. Anteil an der Bilanzsumme: 5 400 000 / 9 638 250 ≈ 0,56, also rund 56 Prozent des Gesamtvermögens liegen im Lager. Genau deshalb spricht das Buch von Dominanz der Vorräte bei einem Fahrradproduzenten, der Bestandteile und fertige Räder lagert.\n\nDie Aussage ist wahr.",
+      "Anlagevermögen ist der kleinere Teil der Aktiva. Anteil: 3 320 000 / 9 638 250 ≈ 0,3444, rund 34 Prozent, nicht über 50 Prozent. Die Hälfte der Bilanzsumme wäre 9 638 250 / 2 = 4 819 125; 3 320 000 bleibt 1 499 125 darunter. Umlauf 6 318 250 / 9 638 250 ≈ 0,656 liegt klar über der Hälfte. Wer Gebäude und Maschinen als Mehrheitsvermögen liest, ignoriert Vorräte 5 400 000 plus Forderungen 598 000 plus Bank 320 250. Die Tabelle ist umlauflastig, nicht anlagenlastig.\n\nDie Aussage ist falsch.",
+      "Fünfundsechzig Prozent als Schwelle gegen den Tabellenwert. Umlaufvermögen = 5 400 000 + 598 000 + 320 250 = 6 318 250. Quote: 6 318 250 / 9 638 250 ≈ 0,6556, also rund 65,6 Prozent. Vergleich zur Schwelle: 65,6 > 65, die Bedingung ist erfüllt. Probe: Anlage 3 320 000 / 9 638 250 ≈ 34,4 Prozent, und 34,4 + 65,6 = 100 Prozent der 9 638 250. Die Aussage verlangt genau dieses Ablesen der drei Umlaufzeilen, nicht eine Schätzung ohne Division.\n\nDie Aussage ist wahr.",
+      "Kasse gegen Lager: die Größenordnung kippt. Bankguthaben und Barbestand 320 250, Vorräte 5 400 000. Vergleich: 320 250 < 5 400 000. Verhältnis: 320 250 / 5 400 000 ≈ 0,059, rund 6 Prozent der Vorräte. Differenz 5 400 000 − 320 250 = 5 079 750. Liquide Mittel sind vorhanden, dominieren aber weder den Umlauf (6 318 250) noch die Bilanzsumme (9 638 250). Die Behauptung vertauscht die beiden Zeilen und würde FunBike als kassenlastig statt vorratsintensiv erscheinen lassen.\n\nDie Aussage ist falsch.",
+      "Beide Buchkriterien fallen in derselben Tabelle zusammen. Umlauf 6 318 250 gegen Anlage 3 320 000: 6 318 250 / 3 320 000 ≈ 1,90, deutlich mehr Umlauf, daher umlaufintensiv. Innerhalb des Umlaufs: Vorräte 5 400 000 / 6 318 250 ≈ 0,855, rund 86 Prozent, daher Dominanz der Vorräte. Forderungen und Bank bleiben 598 000 + 320 250 = 918 250. Das Buch wendet genau diese beiden Beobachtungen auf FunBike an, ohne eine zweite Gesellschaft oder ein zweites Jahr zu brauchen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.40",
+    "title": "FunBike: Kennzahlen aus Bilanz und G&V",
+    "context": "Dieselben FunBike-Zahlen aus Bilanz und Gewinn- und Verlustrechnung per 31.12.20xx (Euro). Die Aussagen verlangen das Einsetzen der Tabellenwerte.\n\n| Position | Euro |\n| --- | ---: |\n| Umsatzerlöse | 70 656 000 |\n| Materialaufwand | −53 175 000 |\n| Personalaufwand | −7 900 000 |\n| Abschreibungen | −1 800 000 |\n| sonstige betriebliche Aufwände | −2 875 000 |\n| Ergebnis vor Zinsen und Steuern (EBIT) | 4 906 000 |\n| Zinserträge | 12 000 |\n| Zinsaufwand | −99 000 |\n| Finanzergebnis | −87 000 |\n| Ergebnis vor Steuern | 4 819 000 |\n| Steuern | −1 204 750 |\n| Jahresergebnis / Gewinn | 3 614 250 |\n\n| Aktiva (Vermögen) | Euro | Passiva (Kapital) | Euro |\n| --- | ---: | --- | ---: |\n| **Anlagevermögen** |  | **Eigenkapital** |  |\n| Grundstücke und Bauten | 750 000 | Bareinlagen der Gesellschafter | 525 000 |\n| Technische Anlagen, Geschäftsausstattung | 2 330 000 | Gewinn | 3 614 250 |\n| Finanzanlagen | 240 000 | **Fremdkapital** |  |\n| **Umlaufvermögen** |  | Rückstellungen | 2 000 000 |\n| Vorräte | 5 400 000 | Bankkredite | 3 199 000 |\n| Forderungen aus Lieferungen und Leistungen | 598 000 | Verbindlichkeiten aus Lieferungen und Leistungen | 300 000 |\n| Bankguthaben und Barbestand | 320 250 |  |  |\n| Gesamtvermögen | **9 638 250** | Gesamtkapital | **9 638 250** |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Fremdkapitalquote = 5 499 000 / 9 638 250 ≈ 57 Prozent, wie das Buch für FunBike festhält.",
+      "Der Materialaufwand entspricht mehr als 70 Prozent der Umsatzerlöse.",
+      "Der Personalaufwand 7 900 000 Euro übersteigt den Materialaufwand 53 175 000 Euro.",
+      "Der Gewinn 3 614 250 Euro in der Bilanz ist kleiner als das EBIT 4 906 000 Euro, weil danach noch Finanzergebnis und Steuern abgezogen werden.",
+      "Abschreibungen 1 800 000 Euro sind in derselben Periode ein Auszahlungsbetrag in gleicher Höhe und daher mit dem Gewinn identisch."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Quote aus den Passiva, nicht aus dem Gefühl. Fremdkapital = 2 000 000 + 3 199 000 + 300 000 = 5 499 000. Bilanzsumme = 9 638 250. Division: 5 499 000 / 9 638 250 = 0,570539… ≈ 57,05 Prozent, vom Buch als rund 57 Prozent gerundet. Probe Eigenkapitalquote: (525 000 + 3 614 250) / 9 638 250 = 4 139 250 / 9 638 250 ≈ 42,95 Prozent, und 57,05 + 42,95 = 100. Die Kapitalstruktur mit rund 57 Prozent Fremdkapital, davon der Großteil Bankkredite 3 199 000, bleibt damit an den Tabellenzeilen festgemacht.\n\nDie Aussage ist wahr.",
+      "Materialintensität am Umsatz messen. Zähler Materialaufwand 53 175 000, Nenner Umsatzerlöse 70 656 000. Quotient: 53 175 000 / 70 656 000 ≈ 0,7526, also rund 75,3 Prozent. Vergleich zur Schwelle: 75,3 > 70, die Bedingung ist klar erfüllt. Personal 7 900 000 / 70 656 000 ≈ 0,112, rund 11,2 Prozent, bleibt weit darunter. Abschreibungen 1 800 000 / 70 656 000 ≈ 2,5 Prozent. Für den Fahrradproduzenten ist der Materialblock der dominante betriebliche Aufwand; die G&V-Tabelle trägt das in der ersten Minuszeile.\n\nDie Aussage ist wahr.",
+      "Personal gegen Material: die größere Zeile ist Material. Vergleich der G&V: Personalaufwand 7 900 000 gegen Materialaufwand 53 175 000. 7 900 000 − 53 175 000 = −45 275 000, Personal liegt um 45,275 Millionen unter dem Material. Verhältnis: 7 900 000 / 53 175 000 ≈ 0,149, rund 15 Prozent des Materialaufwands. Die Aussage dreht die beiden Minuszeilen um. EBIT 4 906 000 entsteht erst, nachdem der viel größere Materialabzug bereits von den Umsatzerlösen 70 656 000 abgezogen wurde.\n\nDie Aussage ist falsch.",
+      "Gewinn nach Zinsen und Steuern ist die kleinere Stufe. EBIT 4 906 000, Jahresergebnis 3 614 250, und genau 3 614 250 steht in der Bilanz als Gewinn. Differenz: 4 906 000 − 3 614 250 = 1 291 750. Zerlegung an der G&V: Finanzergebnis 87 000 plus Steuern 1 204 750 = 1 291 750. Stufen: EBIT 4 906 000, Ergebnis vor Steuern 4 819 000, Jahresergebnis 3 614 250. Deshalb muss der Bilanzgewinn unter dem EBIT liegen, sobald Zinsen und Steuern negativ zu Buche schlagen. Die beiden Tabellen tragen dieselbe 3 614 250.\n\nDie Aussage ist wahr.",
+      "Abschreibung ist Aufwand, nicht automatisch Auszahlung und nicht der Gewinn. Die G&V zeigt Abschreibungen −1 800 000 und Jahresergebnis 3 614 250; Vergleich 1 800 000 ≠ 3 614 250. Der Abschnitt zur Finanzrechnung nennt die Abschreibung als Beispiel dafür, dass eine Ausgabe nicht mit einer Auszahlung einhergeht. Gewinn und Cashflow sind nicht identisch: man kann Gewinn erzielen, ohne über liquide Mittel zu verfügen, und liquide sein, ohne Gewinn zu erzielen. FunBike illustriert die Trennung, weil 1 800 000 den Gewinn mindern, ohne in derselben Höhe Geld abfließen zu müssen.\n\nNote: Einzahlungen und Auszahlungen steuert die Finanz- bzw. Cashflowrechnung, Erträge und Aufwände die G&V.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.41",
+    "title": "Stückdeckungsbeitrag 400 minus 180",
+    "context": "Ein Unternehmen erzeugt ein Fahrrad und kalkuliert mit den folgenden Größen des Kostenrechnungsbeispiels (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Deckungsbeitrag je Rad ergibt sich als 400 minus 180 und beträgt 220 Euro.",
+      "Der Deckungsbeitrag je Rad beträgt 180 Euro.",
+      "Die Deckungsquote beträgt 220 geteilt durch 400, also 55 Prozent.",
+      "Die Deckungsquote beträgt 180 geteilt durch 400, also 45 Prozent.",
+      "Der Verkaufspreis übersteigt die variablen Kosten um 220 Euro."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Preis minus variable Kosten, das ist der Stückbeitrag. Die Tabelle setzt den Verkaufspreis auf 400 Euro und die variablen Kosten auf 180 Euro. Dann gilt\n\n$$\\mathrm{DB}=400-180=220.$$\n\nGenau 220 Euro bleiben nach den Mengenkosten für die Deckung der Fixkosten. Die 220 Euro sind nicht der Gewinn nach allen Kosten und nicht der Materialblock. Die Rechnung bestätigt die Tabellenzeile Deckungsbeitrag.\n\nDie Aussage ist wahr.",
+      "Ein Hundertachtzig Euro sind die variablen Kosten, nicht der Beitrag. Wer 180 als Deckungsbeitrag liest, setzt den Mengenkostenblock mit dem Überschuss gleich. Richtig ist $400-180=220$. Bei 180 Euro Beitrag wäre die Quote $180/400=0{,}45$, also 45 Prozent, und widerspräche den 55 Prozent der Tabelle. Die 180 Euro müssen zuerst verdient sein, der Deckungsbeitrag kommt danach.\n\nDie Aussage ist falsch.",
+      "Anteil am Preis, nicht Anteil an den Teilen. 220 Euro von 400 Euro ergeben\n\n$$\\frac{220}{400}=0{,}55=55\\,.$$\n\nDiesen Prozentsatz nennt das Buch Deckungsquote. Von jedem Umsatz-Euro bleiben nach den variablen Kosten 55 Cent für den Fixkostenblock. Die Quote hängt am Verhältnis Beitrag zu Preis, nicht am bloßen Betrag 180.\n\nDie Aussage ist wahr.",
+      "Fünfundundvierzig Prozent messen den variablen Anteil am Preis, nicht die Deckungsquote. $180/400=0{,}45$. Die Deckungsquote ist $220/400=0{,}55$. Die falsche Division vertauscht den Zähler: sie nimmt die variablen Kosten statt des Deckungsbeitrags. 45 Prozent und 55 Prozent ergänzen sich zu 100 Prozent, weil $180+220=400$, aber nur 55 Prozent heißen Deckungsquote.\n\nDie Aussage ist falsch.",
+      "Die Differenz Preis minus variable Kosten ist derselbe 220-Euro-Schritt. $400-180=220$, und 400 liegt klar über 180. Genau dieser Überschuss ist der Deckungsbeitrag je Rad. Ohne ihn gäbe es keinen Beitrag zur Fixkostendeckung. Die Aussage wiederholt die Subtraktion, ohne eine neue Kostenart einzuführen.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.42",
+    "title": "Break-even-Umsatz aus 4 Millionen und 55 Prozent",
+    "context": "Dieselben Kennzahlen des Fahrradbeispiels: Preis 400 Euro, variable Kosten 180 Euro, Deckungsbeitrag 220 Euro, Deckungsquote 55 Prozent, Fixkosten 4 Millionen Euro.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 0,55, also 7 272 727,27 Euro.",
+      "Das Unternehmen sollte zumindest knapp 7,3 Millionen Euro Umsatz machen, um alle Kosten zu decken.",
+      "Der Break-even-Umsatz beträgt 4 Millionen Euro, weil das die Fixkosten sind.",
+      "Der Break-even-Umsatz ergibt sich, indem man 4 000 000 mit 0,55 multipliziert.",
+      "Bei einem Umsatz über 7 272 727,27 Euro kommt das Unternehmen in die Gewinnzone."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fixkosten gleich 55 Prozent vom gesuchten Umsatz. Die 4 000 000 Euro Fixkosten werden mit der Deckungsquote gleichgesetzt. Dann gilt\n\n$$U=\\frac{4\\,000\\,000}{0{,}55}=\\frac{4\\,000\\,000}{55}\\times 100=7\\,272\\,727{,}27.$$\n\nBei diesem Umsatz decken die kumulierten Deckungsbeiträge gerade den Fixkostenblock. Das Buch rechnet denselben Weg: 4 Mio. dividiert durch 55, multipliziert mal 100.\n\nDie Aussage ist wahr.",
+      "Knapp 7,3 Millionen ist die gerundete Schwelle. $7\\,272\\,727{,}27$ Euro sind knapp 7,3 Millionen Euro. Unter dieser Marke bleiben Fixkosten ungedeckt, darüber beginnt die Gewinnzone. Die Rundung ändert die Größenordnung nicht: weder 4 Millionen noch 8 Millionen ersetzen die Division durch 0,55. Existenzsicherung hängt hier an der vollen Kostendeckung durch den Umsatz.\n\nDie Aussage ist wahr.",
+      "Vier Millionen Euro sind die Fixkosten, nicht der nötige Umsatz. Wäre der Break-even-Umsatz 4 000 000, lieferten 55 Prozent davon nur $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$ Euro Deckungsbeitrag, also 1,8 Millionen unter den Fixkosten. Die Gleichsetzung Fixkosten = Break-even-Umsatz unterstellt eine Deckungsquote von 100 Prozent, die das Beispiel nicht hat. Der gesuchte Umsatz ist $4\\,000\\,000/0{,}55\\approx 7{,}27$ Millionen.\n\nDie Aussage ist falsch.",
+      "Multiplizieren statt Dividieren liefert den Deckungsbeitrag eines schon bekannten Umsatzes, nicht den Break-even. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$. Das wäre der Beitrag bei 4 Millionen Umsatz, weit unter 4 Millionen Fixkosten. Die Gleichsetzung lautet $0{,}55\\cdot U=4\\,000\\,000$, also $U=4\\,000\\,000/0{,}55$. Die falsche Rechenrichtung dreht diese Gleichung um.\n\nDie Aussage ist falsch.",
+      "Über der Schwelle bleibt Beitrag übrig. Jeder weitere Euro Umsatz liefert nach den Annahmen 55 Cent über die bereits gedeckten Fixkosten hinaus. Unter $7\\,272\\,727{,}27$ bleiben die Fixkosten teilweise ungedeckt. Das Buch sagt ausdrücklich: bei höherem Umsatz kommt das Unternehmen in die Gewinnzone und sichert damit seine Existenz. Die Aussage trifft genau diese Folgerung.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.43",
+    "title": "Deckungsquote als 55 Prozent vom Umsatz",
+    "context": "Ein Fahrradproduzent verwendet die folgenden Kostenrechnungskennzahlen (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "55 Prozent der Verkaufspreise können zur Deckung der Fixkosten verwendet werden.",
+      "Die Deckungsquote beträgt 4 000 000 geteilt durch 400, also 10 000 Prozent.",
+      "55 Prozent von 7 272 727,27 Euro ergeben 4 000 000 Euro und treffen damit die Fixkosten.",
+      "Die Deckungsquote ist 180 Euro, weil das die variablen Kosten sind.",
+      "Von jedem Umsatz-Euro bleiben nach den variablen Kosten 0,55 Euro für die Fixkosten."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fünfundünfzig Prozent sind die Brücke vom Stück zum Umsatz. Weil $220/400=0{,}55$, können 55 Prozent der Verkaufspreise zur Deckung der Fixkosten verwendet werden. Das gilt im Beispiel über alle Modelle hinweg mit derselben Quote. Die 45 Prozent, die in den variablen Kosten stecken, stehen dafür nicht zur Verfügung. Der Satz wiederholt die Logik, mit der das Buch vom Stückbeispiel zur Break-even-Rechnung übergeht.\n\nDie Aussage ist wahr.",
+      "Fixkosten durch Stückpreis ist keine Deckungsquote. $4\\,000\\,000/400=10\\,000$ wäre eine Stückzahl, nicht ein Prozentsatz von 10 000 Prozent. Die Quote ist beitragsbezogen: $220/400=55$ Prozent. Wer den Millionenblock durch 400 teilt, mischt Gesamtfixkosten und Stückpreis und verlässt die Definition der Deckungsquote. 10 000 Räder wären außerdem zu wenig, weil $10\\,000\\times 220=2\\,200\\,000$ die Fixkosten nicht decken.\n\nDie Aussage ist falsch.",
+      "Probe der Break-even-Gleichung. Wenn $U=7\\,272\\,727{,}27$ und die Quote 55 Prozent beträgt, dann gilt\n\n$$0{,}55\\times 7\\,272\\,727{,}27=4\\,000\\,000.$$\n\nDie kumulierten Deckungsbeiträge treffen genau die Fixkosten, Gewinn ist an diesem Punkt noch null. Die Probe bestätigt, dass die Division $4\\,000\\,000/0{,}55$ umkehrbar ist und nicht durch Multiplikation $4\\,000\\,000\\times 0{,}55$ ersetzt werden darf.\n\nDie Aussage ist wahr.",
+      "Ein Hundertachtzig Euro sind ein Geldbetrag je Rad, keine Quote. Die Deckungsquote ist ein Prozentsatz vom Verkaufspreis, hier 55 Prozent. Variable Kosten 180 Euro erklären, warum nach dem Preis 220 Euro Beitrag bleiben, sie sind aber nicht selbst die Quote. Eine Gleichsetzung von 180 Euro mit der Deckungsquote vermischt Stückkosten und Verhältniszahl.\n\nDie Aussage ist falsch.",
+      "Fünfundünfzig Cent je Euro Umsatz, in Euro geschrieben 0,55. Nach Abzug der variablen 45 Prozent vom Umsatz-Euro bleiben 55 Cent für Miete, Versicherung, Geschäftsführungsgehälter und den übrigen Fixkostenblock, soweit sie im Beispiel als Fixkosten gelten. $1-180/400=1-0{,}45=0{,}55$. Genau dieser Rest finanziert die 4 Millionen, sobald der Umsatz die Break-even-Marke erreicht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.44",
+    "title": "Stückzahl am Break-even",
+    "context": "Aus Preis, variablen Kosten und Fixkosten des Buchbeispiels lässt sich auch die Stückzahl ablesen, bei der die Summe der Deckungsbeiträge die Fixkosten trifft.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Break-even-Stückzahl beträgt 4 000 000 geteilt durch 220, also rund 18 182 Fahrräder.",
+      "Die Break-even-Stückzahl beträgt 4 000 000 geteilt durch 400, also 10 000 Fahrräder.",
+      "18 182 Fahrräder mal 400 Euro ergeben rund 7 272 800 Euro und treffen damit den Break-even-Umsatz.",
+      "10 000 verkaufte Fahrräder reichen aus, um die Fixkosten vollständig zu decken.",
+      "20 000 Fahrräder liefern 4 400 000 Euro Deckungsbeitrag und liegen damit über den Fixkosten."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fixkosten durch Stückbeitrag, das ist die Mengenschwelle. Jedes Rad bringt 220 Euro. Also\n\n$$n=\\frac{4\\,000\\,000}{220}=18\\,181{,}\\overline{81}\\approx 18\\,182.$$\n\nBei dieser Stückzahl ist $n\\times 220=4\\,000\\,000$. Das ist dieselbe Schwelle wie der Break-even-Umsatz, nur in Rädern statt in Euro. Die Division durch 180 oder durch 400 beantwortet eine andere Frage.\n\nDie Aussage ist wahr.",
+      "Division durch den Preis unterstellt, der gesamte Verkaufspreis stünde für Fixkosten bereit. $4\\,000\\,000/400=10\\,000$. Tatsächlich müssen zuerst 180 Euro variable Kosten je Rad verdient werden. 10 000 Räder bringen nur $10\\,000\\times 220=2\\,200\\,000$ Euro Beitrag, die Hälfte der Fixkosten. Die richtige Nennergröße ist der Deckungsbeitrag 220, nicht der Preis 400.\n\nDie Aussage ist falsch.",
+      "Stückzahl mal Preis schließt die Brücke zum Umsatz. $18\\,181{,}\\overline{81}\\times 400=7\\,272\\,727{,}27$, gerundet auf ganze Räder etwa $18\\,182\\times 400=7\\,272\\,800$. Das liegt an der Break-even-Umsatzzeile 7 272 727,27 Euro. Alternativ: $18\\,181{,}\\overline{81}\\times 220=4\\,000\\,000$. Beide Wege, Umsatzquote und Stückbeitrag, treffen denselben Punkt.\n\nDie Aussage ist wahr.",
+      "Zehntausend Räder lassen 1,8 Millionen ungedeckt. $10\\,000\\times 220=2\\,200\\,000$. Die Fixkosten sind 4 000 000, Restlücke $1\\,800\\,000$. Auch als Umsatz: $10\\,000\\times 400=4\\,000\\,000$, davon 55 Prozent nur 2 200 000. Die Behauptung, 10 000 Stück reichten, verwechselt den Umsatz 4 Millionen mit der Fixkostendeckung. Am Break-even braucht man rund 18 182 Räder.\n\nDie Aussage ist falsch.",
+      "Zwanzigtausend Räder liegen klar über der Schwelle. $20\\,000\\times 220=4\\,400\\,000$. Das übersteigt 4 000 000 um 400 000 Euro, also Gewinn nach den Annahmen des Beispiels. Als Umsatz: $20\\,000\\times 400=8\\,000\\,000$ und $8\\,000\\,000\\times 0{,}55=4\\,400\\,000$. Die Aussage vergleicht den kumulierten Deckungsbeitrag mit den Fixkosten und trifft die Gewinnzone.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.45",
+    "title": "Umsatz 4 Millionen gegen 7 Millionen gegen 8 Millionen",
+    "context": "Prüfen Sie an den Kennzahlen des Beispiels, ob ausgewählte Umsätze die Fixkosten decken.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei 4 Millionen Euro Umsatz entstehen nur 2 200 000 Euro Deckungsbeitrag, die Fixkosten bleiben unterdeckt.",
+      "Ein Umsatz von 4 Millionen Euro liegt bereits am Break-even-Punkt.",
+      "Bei 8 Millionen Euro Umsatz entstehen 4 400 000 Euro Deckungsbeitrag, also 400 000 Euro über den Fixkosten.",
+      "Bei 7 Millionen Euro Umsatz entstehen 3 850 000 Euro Deckungsbeitrag, die Fixkosten sind noch nicht voll gedeckt.",
+      "Ein Umsatz von 7 Millionen Euro liegt bereits in der Gewinnzone."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Vier Millionen Umsatz mal Quote ergibt den halben Fixkostenbedarf. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000$. Gegenüber 4 000 000 Fixkosten fehlt $1\\,800\\,000$. Denselben Betrag erhält man über die Stückzahl: $4\\,000\\,000/400=10\\,000$ Räder und $10\\,000\\times 220=2\\,200\\,000$. 4 Millionen sind die Fixkostenzeile, nicht der Break-even-Umsatz.\n\nDie Aussage ist wahr.",
+      "Break-even und Fixkostenbetrag fallen auseinander, sobald die Quote unter 100 Prozent liegt. Der Break-even-Umsatz ist $4\\,000\\,000/0{,}55=7\\,272\\,727{,}27$, nicht 4 000 000. Bei 4 Millionen Umsatz bleiben 1,8 Millionen Fixkosten offen. Die Aussage setzt den Fixkostenblock mit der Umsatzschwelle gleich und ist deshalb falsch.\n\nDie Aussage ist falsch.",
+      "Acht Millionen liegen über der 7,27-Millionen-Marke. $8\\,000\\,000\\times 0{,}55=4\\,400\\,000$. $4\\,400\\,000-4\\,000\\,000=400\\,000$ Euro über den Fixkosten, also Gewinn nach dem Beispiel. Als Stückzahl: $8\\,000\\,000/400=20\\,000$ und $20\\,000\\times 220=4\\,400\\,000$. Die Rechnung bestätigt die Gewinnzone oberhalb des Break-even.\n\nDie Aussage ist wahr.",
+      "Sieben Millionen bleiben knapp unter der Schwelle. $7\\,000\\,000\\times 0{,}55=3\\,850\\,000$. Gegen 4 000 000 fehlt $150\\,000$. $7\\,000\\,000$ ist kleiner als $7\\,272\\,727{,}27$. Als Stückzahl: $7\\,000\\,000/400=17\\,500$ und $17\\,500\\times 220=3\\,850\\,000$. Die Fixkosten sind noch nicht voll gedeckt, Gewinn entsteht hier nicht.\n\nDie Aussage ist wahr.",
+      "Gewinnzone beginnt erst oberhalb von knapp 7,3 Millionen. 7 000 000 liegen darunter, der Beitrag 3 850 000 unterschreitet 4 000 000. Das Buch setzt die Gewinnzone ausdrücklich an höheren Umsatz als den Break-even, nicht an jede Zahl in der Nähe von 7 Millionen. 150 000 Euro Unterdeckung bleiben Unterdeckung, auch wenn 7 Millionen nach 4 Millionen groß wirken.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.46",
+    "title": "Identitäten von Preis, Beitrag und Break-even",
+    "context": "Ein Unternehmen erzeugt ein Fahrrad zu den folgenden Kostenrechnungsgrößen (Euro).\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Deckungsbeitrag plus variable Kosten ergeben den Preis: 220 plus 180 gleich 400.",
+      "Break-even-Umsatz mal Deckungsquote ergibt die Fixkosten: 7 272 727,27 mal 0,55 gleich 4 000 000.",
+      "Am Break-even-Punkt ist die Summe der Deckungsbeiträge gleich den Fixkosten.",
+      "Am Break-even-Punkt ist der Umsatz gleich den Fixkosten, also 4 Millionen Euro.",
+      "Insgesamt sollte der Preis variable und fixe Kosten decken, nicht nur die 180 Euro je Rad."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Addition kehrt die Definitionsgleichung um. $\\mathrm{DB}=\\text{Preis}-\\text{variable Kosten}$ ist gleichbedeutend mit $\\text{Preis}=\\mathrm{DB}+\\text{variable Kosten}$. Einsetzen: $220+180=400$. Die Probe bestätigt, dass keine dritte Kostenart in der Stückzeile steckt. 220 und 180 sind die beiden Teile des Preises, 55 Prozent und 45 Prozent dieselben Teile als Anteile.\n\nDie Aussage ist wahr.",
+      "Umkehr der Break-even-Formel. $U=F/q$ impliziert $U\\cdot q=F$. Zahlen:\n\n$$7\\,272\\,727{,}27\\times 0{,}55=4\\,000\\,000.$$\n\nDie Probe zeigt, dass 7 272 727,27 Euro kein geratener Umsatz sind, sondern genau der Betrag, dessen 55 Prozent die 4 Millionen treffen. Wer $7\\,272\\,727{,}27\\times 0{,}45$ bildete, erhielte die variablen Kosten im Break-even-Umsatz, nicht die Fixkosten.\n\nDie Aussage ist wahr.",
+      "Nullgewinn heißt: Beiträge tragen den Fixkostenblock, mehr nicht. Break-even-Umsatz oder Break-even-Point ist die Schwelle, an der das Unternehmen in die Gewinnzone kommt, also gerade alle Kosten deckt. $n\\times 220=4\\,000\\,000$ und $U\\times 0{,}55=4\\,000\\,000$ sind dieselbe Bedingung. Darunter bleibt Unterdeckung, darüber Gewinn. Die Aussage trifft diese Gleichheit, ohne Umsatz und Fixkosten zu vertauschen.\n\nDie Aussage ist wahr.",
+      "Umsatz gleich Fixkosten gilt nur bei 100 Prozent Deckungsquote. Hier sind 55 Prozent aktiv, also muss der Umsatz größer sein als 4 000 000. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000\\neq 4\\,000\\,000$. Der Break-even-Umsatz der Tabelle ist 7 272 727,27 Euro. Die Behauptung, am Break-even sei der Umsatz 4 Millionen, wiederholt den Fixkostenbetrag und verfehlt die Division durch 0,55.\n\nDie Aussage ist falsch.",
+      "Langfristig zählt die volle Deckung. Die variablen 180 Euro sind die Untergrenze je Stück, der Deckungsbeitrag 220 Euro trägt die Fixkosten, und insgesamt sollte der Preis variable und fixe Kosten decken. Kurzfristige Ausnahmen für unverkäufliche Vorsaisonware ändert diese Zielgröße nicht. Der Satz hält das Soll fest, das das Buch nach der Definition des Deckungsbeitrags nennt, ohne neue Kostenposten zu erfinden.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.47",
+    "title": "Falsche Nenner in der Break-even-Rechnung",
+    "context": "Dieselben sechs Kennzahlen des Kostenrechnungsbeispiels. Prüfen Sie, welche Rechenwege den Break-even treffen.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 220 und dann mal 100.",
+      "Der Break-even-Umsatz beträgt 4 000 000 dividiert durch 55 und multipliziert mal 100.",
+      "Die Deckungsquote ergibt sich als 400 geteilt durch 180.",
+      "Zuerst 400 minus 180, danach 220 geteilt durch 400, ergibt die Deckungsquote 55 Prozent.",
+      "Der Break-even-Umsatz beträgt 4 000 000 geteilt durch 180."
+    ],
+    "answer_key": [
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Division der Fixkosten durch den Stückbeitrag liefert Räder, nicht Euro-Umsatz mit einem Faktor 100. $4\\,000\\,000/220\\approx 18\\,182$ Stück. Mal 100 wäre etwa 1,82 Millionen und liegt weit neben $7\\,272\\,727{,}27$. Der Faktor 100 gehört zur Prozentrechnung $4\\,000\\,000/55\\times 100$, weil 55 die Prozentzahl zur Quote 0,55 ist, nicht der Euro-Beitrag 220. Wer 220 in die Umsatzformel mit mal 100 steckt, mischt Stückformel und Prozentformel.\n\nDie Aussage ist falsch.",
+      "Genau der Rechenweg des Buchs. 55 Prozent der Verkaufspreise decken die Fixkosten. Setzt man 4 Millionen gleich 55 Prozent, dann sind 100 Prozent\n\n$$\\frac{4\\,000\\,000}{55}\\times 100=7\\,272\\,727{,}27.$$\n\nDasselbe als $4\\,000\\,000/0{,}55$. Die Aussage trifft die Formel, mit der das Zahlenbeispiel den Break-even-Umsatz bestimmt.\n\nDie Aussage ist wahr.",
+      "Preis durch variable Kosten ist kein Deckungsprozentsatz. $400/180\\approx 2{,}22$, also rund 222 Prozent, was weder 55 Prozent noch 45 Prozent ist. Die Quote ist $220/400=0{,}55$. $400/180$ misst, wie oft die variablen Kosten in den Preis passen, und beantwortet die Break-even-Frage nicht. Die Tabelle nennt 55 Prozent, nicht 222 Prozent.\n\nDie Aussage ist falsch.",
+      "Zwei Schritte, eine Quote. Zuerst der Beitrag: $400-180=220$. Dann der Anteil am Preis: $220/400=0{,}55=55$ Prozent. Das ist die Definition der Deckungsquote im Buch. Die Reihenfolge darf nicht zu $180/400$ oder $400/180$ umgebogen werden. 55 Prozent tragen später die Division der 4 Millionen.\n\nDie Aussage ist wahr.",
+      "Division durch 180 verwendet die variablen Kosten als Nenner. $4\\,000\\,000/180\\approx 22\\,222$. Das wäre eine Stückzahl, bei der die Summe der variablen Kosten 4 Millionen erreichte, nicht die Summe der Deckungsbeiträge. Als Pseudo-Umsatz $22\\,222\\times 400\\approx 8{,}89$ Millionen neben den echten 7,27 Millionen. Der richtige Stücknenner ist 220, der richtige Umsatznenner 0,55.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.4",
+    "case_id": "WISO 3.4.48",
+    "title": "Break-even-Probe und Existenzsicherung",
+    "context": "Ein Fahrradproduzent kennt Preis, variable Kosten, Deckungsbeitrag, Deckungsquote, Fixkosten und Break-even-Umsatz wie im Buch.\n\n| Kennzahl | Betrag |\n| --- | ---: |\n| Preis | 400 |\n| variable Kosten | 180 |\n| Deckungsbeitrag | 220 |\n| Deckungsquote | 55 % |\n| Fixkosten | 4.000.000 |\n| Break-even | 7.272.727 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "7 272 727,27 Euro geteilt durch 400 Euro ergibt dieselbe Break-even-Stückzahl wie 4 000 000 geteilt durch 220.",
+      "Der Deckungsbeitrag je Rad beträgt 180 Euro, daher liegt der Break-even-Umsatz bei 4 000 000 geteilt durch 0,45.",
+      "Knapp 7,3 Millionen Euro Umsatz decken zumindest alle Kosten; höherer Umsatz führt in die Gewinnzone und sichert die Existenz im Sinn des Abschnitts.",
+      "Weil die Fixkosten 4 Millionen Euro betragen, ist der Break-even-Umsatz 4 Millionen Euro.",
+      "Bei einem Umsatz von 7 272 727,27 Euro bleiben nach variablen Kosten genau 4 000 000 Euro zur Fixkostendeckung, der Gewinn ist an diesem Punkt null."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Zwei Nenner, eine Stückzahl. Umsatzweg: $7\\,272\\,727{,}27/400=18\\,181{,}\\overline{81}$. Beitragsweg: $4\\,000\\,000/220=18\\,181{,}\\overline{81}$. Die Gleichheit folgt daraus, dass $220/400=0{,}55$ und $4\\,000\\,000/0{,}55=7\\,272\\,727{,}27$. Wer $7\\,272\\,727{,}27/180$ oder $4\\,000\\,000/400$ bildete, landete bei anderen Größen. Die Probe zeigt, dass Umsatzbreak-even und Stückbreak-even dasselbe Ereignis beschreiben.\n\nDie Aussage ist wahr.",
+      "Die Kette beginnt mit der falschen 180-Euro-Verwechslung. Der Deckungsbeitrag ist $400-180=220$, nicht 180. Die Quote ist 55 Prozent, nicht $180/400=45$ Prozent. $4\\,000\\,000/0{,}45\\approx 8\\,888\\,889$ Euro wäre ein anderer Umsatz und nicht der Tabellenwert 7 272 727,27. Sowohl der Zählerbeitrag als auch der Nenner der Umsatzformel sind vertauscht. Die Aussage ist in beiden Teilen falsch.\n\nDie Aussage ist falsch.",
+      "Kostendeckung ist hier die Existenzbedingung. Das Unternehmen soll zumindest knapp 7,3 Millionen Umsatz machen, um zumindest alle Kosten zu decken. $7\\,272\\,727{,}27$ rundet auf knapp 7,3 Millionen. Bei höherem Umsatz kommt es in die Gewinnzone und sichert damit seine Existenz. Auf Dauer kann kein Unternehmen existieren, wenn Kosten durch Erträge nicht gedeckt sind. Der Break-even-Punkt ist genau diese Schwelle im Zahlenbeispiel.\n\nDie Aussage ist wahr.",
+      "Vier Millionen als Umsatzschwelle wiederholt den bekannten Fixkostenfehler. $4\\,000\\,000\\times 0{,}55=2\\,200\\,000\\neq 4\\,000\\,000$. Der Break-even-Umsatz der Rechnung und der Tabelle ist 7 272 727,27 Euro. Nur bei einer Deckungsquote von 100 Prozent fielen Fixkostenbetrag und nötiger Umsatz zusammen. 55 Prozent erzwingen den höheren Umsatz. Die Aussage bleibt falsch.\n\nDie Aussage ist falsch.",
+      "Nullgewinn als Probe, nicht als Widerspruch zur Gewinnzone. Variable Kosten im Break-even-Umsatz: $7\\,272\\,727{,}27\\times 0{,}45=3\\,272\\,727{,}27$. Rest: $7\\,272\\,727{,}27-3\\,272\\,727{,}27=4\\,000\\,000$, oder direkt $7\\,272\\,727{,}27\\times 0{,}55=4\\,000\\,000$. Die Fixkosten sind getroffen, ein Überschuss bleibt nicht. Gewinn entsteht erst darüber. Die Aussage beschreibt den Break-even-Punkt als volle Deckung ohne Gewinn, genau so wie das Buch die Schwelle vor der Gewinnzone setzt.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
     "subsection": "3.5",
     "case_id": "WISO 3.5.01",
     "title": "Marketing ist mehr als Werbung",
@@ -4173,6 +5217,238 @@
       "Erlebnis und Aktivierung. Event Marketing umfasst erlebnisorientierte Veranstaltungen, die einen starken Aktivierungsprozess beim Kunden auslösen sollen. Sie sollen die Aufmerksamkeit auf ein Unternehmen, eine Produktgruppe oder ein Ereignis richten: Modeschauen, Messen, Ausstellungs- und Geschäftseröffnungen, Kultur- und Sportveranstaltungen. Der Satz trifft die Definition vor der Beispielreihe. Aktivierung ist das Ziel, nicht eine stille Information ohne Erlebnis.\n\nDie Aussage ist wahr.",
       "Außen zum Kunden, nicht nur intern. Die genannten Veranstaltungen richten Aufmerksamkeit auf Unternehmen, Produktgruppe oder Ereignis und sollen Kundinnen und Kunden aktivieren. Interne Mitarbeiterschulungen ohne Außenwirkung stehen in dieser Liste nicht. Die Beschränkung „ausschließlich intern“ streicht Modeschau, Messe und Sportevent. Event Marketing ist ein Kommunikationsinstrument nach außen, ergänzend zu Werbung und SMM.\n\nDie Aussage ist falsch."
     ],
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.33",
+    "title": "Übungstabelle zum Marktanteil (15/100/30)",
+    "context": "Die folgende Übungstabelle wendet die Formeln aus Tab. 5 des Lehrbuchs an. Es handelt sich um ein Übungsbeispiel, nicht um eine amtliche Marktstatistik. Ein österreichischer Fahrradhersteller A beobachtet den wertmäßigen Markt.\n\n| Größe | Mio. Euro |\n| --- | ---: |\n| Marktvolumen | 100 |\n| Umsatz Unternehmen A | 15 |\n| Umsatz größter Mitbewerber | 30 |\n\nBewerten Sie die folgenden Aussagen zu absolutem und relativem Marktanteil:",
+    "statements": [
+      "Der absolute Marktanteil von Unternehmen A beträgt 15 Prozent.",
+      "Der relative Marktanteil von Unternehmen A beträgt 0,5.",
+      "Unternehmen A ist Marktführer, weil der relative Marktanteil größer als eins ist.",
+      "Der relative Marktanteil entsteht, indem man den Umsatz von A durch das Marktvolumen teilt.",
+      "Weil der relative Marktanteil kleiner als eins ist, ist A nicht der Marktführer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Fünfzehn durch hundert, dann mal hundert. Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an. Formel nach Tab. 5: Unternehmensumsatz × 100 / Marktvolumen. Aus der Übungstabelle eingesetzt: 15 × 100 / 100 = 1500 / 100 = 15. A hält also 15 Prozent des wertmäßigen Ist-Marktes von 100 Mio. Euro. Der größte Mitbewerber mit 30 gehört nicht in diese Rechnung. Wer 15 durch 30 teilt, wechselt bereits zur relativen Kennzahl und verfehlt die 15 Prozent. Probe: 15 Prozent von 100 sind genau 15, die Tabellenzeile schließt.\n\nDie Aussage ist wahr.",
+      "Fünfzehn steht über dreißig. Der relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größten Mitbewerbers. Formel: Unternehmensumsatz / Umsatz des größten Mitbewerbers. Einsetzen: 15 / 30 = 0,5. Das ist ein Verhältnis, kein Prozent am Gesamtmarkt. 0,5 heißt: A setzt halb so viel um wie der Stärkste. Die 15 Prozent absolut ersetzen diese Relation nicht, weil der Nenner ein anderer ist. 30 / 15 = 2 wäre der Vorsprung des Rivalen, nicht der Wert für A. Tab. 5 trennt die beiden Nenner bewusst: Volumen gegen Rivalenumsatz.\n\nDie Aussage ist wahr.",
+      "Führerschaft hängt an der Schwelle eins. Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist. Hier gilt 15 / 30 = 0,5, und 0,5 ist kleiner als eins. A liegt hinter dem größten Mitbewerber, obwohl 15 Prozent am Volumen schon ein nennenswerter Brocken sind. Die Behauptung, der relative Anteil sei größer als eins, verdreht die Tabelle. Marktführer wäre, wer mehr als 30 umsetzte. 15 Prozent absolut und Führerschaft sind zwei verschiedene Urteile. Die Eins prüft nur den Vergleich 15 gegen 30.\n\nDie Aussage ist falsch.",
+      "Hundert im Nenner wäre die absolute Formel. Relativ heißt: eigener Umsatz geteilt durch den Umsatz des größten Mitbewerbers, hier 15 / 30 = 0,5. 15 / 100 = 0,15 bzw. 15 Prozent ist der absolute Marktanteil. Wer das Marktvolumen in den Nenner der relativen Kennzahl schiebt, vertauscht Tab. 5. Dann verschwindet der Vergleich mit dem Rivalen, und die Führerschaftsschwelle eins verliert ihren Sinn. 15 geteilt durch 100 kann 0,5 nicht ergeben. Die Tabelle liefert 30 als den richtigen relativen Nenner.\n\nDie Aussage ist falsch.",
+      "Rückstand folgt aus einem halben Verhältnis. Relativ = 15 / 30 = 0,5. 0,5 liegt unter eins, also Rückstand gegenüber dem Größten, nicht Führerschaft. Die 15 Prozent absolut beschreiben nur den Brocken am Volumen von 100. Beide Kennzahlen stehen nebeneinander: absolut 15 Prozent, relativ 0,5. Nur die relative Zahl entscheidet über den Marktführer im Sinne des Buchs. Wäre der eigene Umsatz 31 bei einem Rivalen von 30, gälte 31 / 30 > 1 und damit Führerschaft, unabhängig davon, ob absolut 15 oder 31 Prozent anfallen.\n\nNote: Absolut 15 Prozent und relativ 0,5 können zusammenfallen. Die eine Zahl ersetzt die andere nicht.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.34",
+    "title": "Potenzial und Volumen in der Übungstabelle",
+    "context": "Die Zahlen stammen aus einem Übungsbeispiel und sind keine Buchstatistik. Ein Hersteller von Alltagsrädern stellt Markt- und Unternehmenskennzahlen in Stück gegenüber.\n\n| Kennzahl | Stück |\n| --- | ---: |\n| Marktpotenzial | 80000 |\n| Marktvolumen | 48000 |\n| Verkaufsvolumen Unternehmen A | 6000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Marktpotenzial von 80000 Stück ist die maximal mögliche Absatzmenge des Produkts.",
+      "Das Marktvolumen von 48000 Stück ist die tatsächlich verkaufte Menge des Produkts.",
+      "Der Markt ist beinahe gesättigt, weil das Marktvolumen nahe am Marktpotenzial liegt.",
+      "Das Verkaufsvolumen von A in Höhe von 6000 Stück ist dasselbe wie das Marktvolumen.",
+      "Zwischen Potenzial und Volumen bleiben 32000 Stück Spielraum, es könnte also noch mehr verkauft werden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Achtzigtausend markiert die Obergrenze. Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes. Es macht deutlich, wie groß der Markt wäre, wenn alle Personen und Unternehmen, die ein Bedürfnis haben, das mit dem Produkt erfüllt werden könnte, tatsächlich kauften. 80000 ist deshalb keine Ist-Menge, sondern das gedachte Maximum. Die 48000 darunter zeigen, dass dieses Maximum noch nicht ausgeschöpft ist. Wären Potenzial und Volumen gleich, gäbe es keinen Rest. Hier bleibt 80000 − 48000 = 32000. Die Zeile Verkaufsvolumen 6000 ändert die Definition des Marktpotenzials nicht.\n\nDie Aussage ist wahr.",
+      "Achtundvierzigtausend ist der Ist-Absatz aller Anbieter. Das Marktvolumen ist die tatsächlich verkaufte Menge des Produkts. Es zählt, was wirklich abgesetzt wurde, nicht was maximal möglich wäre. 48000 liegt klar unter 80000. Wer die 48000 als Potenzial liest, vertauscht Ist und Obergrenze und kann Sättigung nicht mehr erkennen. Die 6000 von A sind nur ein Teil dieses Volumens, nicht seine Definition. Probe: 6000 ist kleiner als 48000, also kann 48000 nicht der Absatz einer einzelnen Firma sein.\n\nDie Aussage ist wahr.",
+      "Nähe zur Obergrenze liegt hier nicht vor. Sättigung tritt ein, wenn das Marktvolumen nahe am Marktpotenzial liegt und kaum mehr verkauft werden könnte. Rechnung: 48000 / 80000 = 0,6, also 60 Prozent der Obergrenze. Die Lücke beträgt 80000 − 48000 = 32000 Stück. Das ist kein beinahe ausgeschöpfter Markt. Die Tabelle beschreibt einen ungesättigten Markt mit deutlichem Restspielraum, nicht den Grenzfall knapper Restkapazität. Bei 78000 von 80000 wäre die Buchformel der Nähe erfüllt, bei 48000 nicht. 32000 zusätzliche Stück sind mehr als das heutige Verkaufsvolumen von A.\n\nDie Aussage ist falsch.",
+      "Sechstausend ist nur der Absatz von A. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein Produkt oder eine Produktgruppe. Das Marktvolumen ist der Absatz aller Anbieter zusammen, hier 48000. 6000 ist ein Teil davon, nicht die Summe. Wer Unternehmensabsatz und Marktvolumen gleichsetzt, macht aus einer Firma den ganzen Markt. Mengenmäßig läge der absolute Marktanteil von A bei 6000 × 100 / 48000 = 12,5 Prozent, was nur Sinn hat, wenn 6000 und 48000 verschiedene Größen bleiben.\n\nDie Aussage ist falsch.",
+      "Differenz zeigt ungenutzten Raum. Marktpotenzial minus Marktvolumen = 80000 − 48000 = 32000. Solange diese Lücke besteht, könnten noch weitere Käufe stattfinden, ohne dass schon alle Bedarfsträger kaufen. Sättigung wäre erst gegeben, wenn 48000 nahe an 80000 heranrückte. Die 32000 Stück sind genau der Spielraum, den die Buchunterscheidung von Potenzial und Volumen sichtbar macht. Das Verkaufsvolumen von A (6000) kann in diesem ungesättigten Markt noch wachsen, ohne dass dafür schon neue Modelle nötig wären. 32000 Rest gegen 48000 Ist ist eine weite, keine enge Lücke.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.35",
+    "title": "Beinahe gesättigter Markt in Zahlen",
+    "context": "Übungsbeispiel, keine reale Statistik. Ein regionaler Markt für Citybikes wird wertmäßig beschrieben.\n\n| Kennzahl | Mio. Euro |\n| --- | ---: |\n| Marktpotenzial | 50 |\n| Marktvolumen | 48 |\n| Umsatz Unternehmen A | 8 |\n| Umsatz größter Mitbewerber | 12 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Weil das Marktvolumen mit 48 nahe am Marktpotenzial von 50 liegt, ist der Markt beinahe gesättigt.",
+      "In diesem Markt könnte kaum mehr verkauft werden, solange Potenzial und Bedürfniskreis unverändert bleiben.",
+      "Der absolute Marktanteil von A beträgt 16 Prozent, gerechnet als 8 × 100 / 50.",
+      "Der relative Marktanteil von A beträgt 8 / 12, also zwei Drittel.",
+      "Gesättigte Märkte lassen sich nach dem Lehrtext nicht mehr öffnen, neue Modelle oder neue Käuferschichten ändern daran nichts."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Achtundvierzig sitzt dicht unter fünfzig. Ist das Marktvolumen nahe am Marktpotenzial, bedeutet das, dass der Markt beinahe gesättigt ist. Rechnung: 48 / 50 = 0,96, also 96 Prozent der Obergrenze. Die Restlücke beträgt 50 − 48 = 2 Mio. Euro. Fast alle, die ein erfüllbares Bedürfnis haben, kaufen bereits. Die Tabelle erfüllt damit die Buchbedingung der Nähe, nicht den ungesättigten Fall mit weiter Lücke. Die Umsätze 8 und 12 erklären die Aufteilung des Ist-Marktes, nicht die Sättigung selbst.\n\nDie Aussage ist wahr.",
+      "Kaum noch zusätzlicher Absatz im bisherigen Markt. Bei beinahe ausgeschöpftem Potenzial bleibt wenig Raum, weitere Mengen an dieselben Bedarfsträger zu verkaufen. 50 − 48 = 2 Mio. Euro Rest. Das ist der Kern der Sättigungsaussage: kaum mehr verkauft werden könnte. Wachstum müsste dann über veränderte Produkte oder neue Schichten laufen, nicht über denselben unveränderten Kreis. 2 gegenüber einem Volumen von 48 ist eine enge Lücke, anders als 32000 Rest bei 48000 Ist in einem ungesättigten Beispiel.\n\nDie Aussage ist wahr.",
+      "Fünfzig im Nenner ist das Potenzial, nicht das Volumen. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen. Einsetzen: 8 × 100 / 48 = 800 / 48 ≈ 16,67 Prozent. Wer durch 50 teilt, bezieht den Umsatz auf die Obergrenze statt auf den Ist-Markt. 8 × 100 / 50 = 16 ist eine andere Kennzahl und nicht der absolute Marktanteil nach Tab. 5. Der Nenner muss 48 heißen. Probe: 16,67 Prozent von 48 sind 8, die Tabellenzeile Umsatz A schließt nur mit Volumen 48.\n\nDie Aussage ist falsch.",
+      "Acht durch zwölf bleibt unter eins. Relativer Marktanteil = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 8 / 12 = 2/3 ≈ 0,67. Das ist kleiner als eins, A ist also nicht Marktführer. Zwei Drittel beschreibt den Rückstand zum Stärksten, unabhängig von der Sättigung des Gesamtmarkts. Die Division trifft die Buchformel. 8 / 48 ≈ 0,167 wäre wieder der absolute Anteil als Dezimalzahl, nicht die relative Kennzahl. Nenner 12, nicht 48 und nicht 50.\n\nDie Aussage ist wahr.",
+      "Neue Modelle können den Markt wieder öffnen. Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen, etwa durch neue Funktionen. Dann verschiebt sich, wer ein erfüllbares Bedürfnis hat, und die Lücke zwischen Volumen und Potenzial kann wieder wachsen. Die Behauptung, daran ändere nichts, widerspricht genau dieser Strategie des Lehrtexts. 48 nahe 50 ist der heutige Zustand, nicht ein Verbot späterer Modellwechsel. Ein neues Citybike mit anderer Funktion würde das relevante Potenzial über 50 heben können.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.36",
+    "title": "Umsatzanteile in der Anbietertabelle",
+    "context": "Übungsbeispiel nach den Formeln von Tab. 5, keine amtliche Statistik. Der wertmäßige Fahrradmarkt eines Jahres beträgt 100 Mio. Euro. Die Tabelle zerlegt das Marktvolumen auf die Anbieter.\n\n| Anbieter | Umsatz Mio. Euro |\n| --- | ---: |\n| Unternehmen A | 40 |\n| Größter Mitbewerber B | 25 |\n| Anbieter C | 20 |\n| Übrige | 15 |\n| Marktvolumen | 100 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der absolute Marktanteil von A beträgt 40 Prozent.",
+      "B ist in der Tabelle der größte Mitbewerber von A.",
+      "Der relative Marktanteil von A beträgt 1,6. A ist daher Marktführer.",
+      "Der relative Marktanteil von A beträgt 0,4, weil 40 durch 100 geteilt wird.",
+      "Anbieter C hat einen höheren relativen Marktanteil als A, weil 20 näher an 25 liegt als 40."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Vierzig von hundert sind vierzig Prozent. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen. Einsetzen: 40 × 100 / 100 = 4000 / 100 = 40. A hält 40 Prozent des wertmäßigen Ist-Marktes. Probe der Tabelle: 40 + 25 + 20 + 15 = 100, die Summe schließt. Die übrigen Zeilen ändern den eigenen Absolutanteil von A nicht, sie erklären nur, woraus sich 100 zusammensetzt. 40 / 25 wäre bereits die relative Rechnung und liefert 1,6, nicht 40 Prozent.\n\nDie Aussage ist wahr.",
+      "Fünfundzwanzig ist die größte rivalisierende Zeile. Relativ wird mit dem Umsatz des größten Mitbewerbers gerechnet. B liegt mit 25 über C (20) und über den Übrigen (15), ist also der Stärkste neben A. A selbst ist nicht sein eigener Mitbewerber in dieser Formel. Der Nenner der relativen Kennzahl von A ist deshalb 25, nicht 20 und nicht 100. Wäre C mit 26 ausgewiesen, müsste der Nenner 26 heißen. Hier bleibt B mit 25 der Bezugspunkt von Tab. 5.\n\nDie Aussage ist wahr.",
+      "Vierzig durch fünfundzwanzig überschreitet die Eins. Relativer Marktanteil = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 40 / 25 = 1,6. Größer als eins zeigt an, dass das Unternehmen der Marktführer ist. A setzt mehr um als der bisher größte Mitbewerber B. 1,6 ist kein Prozent, sondern ein Vielfaches: A macht das 1,6-Fache von B. Die Führerschaft folgt aus dieser Relation, nicht allein aus den 40 Prozent absolut. Probe: 1,6 × 25 = 40, die beiden Tabellenzeilen passen. 40 / 20 = 2 gegen C wäre ein anderer Vergleich und nicht Tab. 5, weil C nicht der größte Mitbewerber ist.\n\nDie Aussage ist wahr.",
+      "Hundert gehört in die absolute Formel. 40 / 100 = 0,4 bzw. 40 Prozent ist der absolute Marktanteil. Relativ teilt durch den größten Mitbewerber: 40 / 25 = 1,6. Wer 100 in den relativen Nenner setzt, löscht den Rivalenvergleich und kann die Schwelle eins nicht mehr sinnvoll lesen. Tab. 5 trennt die beiden Nenner bewusst. 0,4 liegt unter eins, 1,6 darüber. Dieselbe 40 in zwei Formeln ergibt zwei verschiedene Aussagen über Rang und Brocken.\n\nDie Aussage ist falsch.",
+      "Nähe zu 25 ersetzt nicht den Zähler von A. Relativ für A ist 40 / 25 = 1,6. Relativ für C gegen denselben B wäre 20 / 25 = 0,8, also kleiner als eins und kleiner als 1,6. Dass 20 näher an 25 liegt als 40, ist ein Abstandsvergleich und ökonomisch irrelevant: Führerschaft misst das Verhältnis der Umsätze, nicht den Abstand der Tabellenzeilen. C liegt hinter B, A liegt davor. 40 − 25 = 15 Vorsprung, 25 − 20 = 5 Rückstand. Der Quotient, nicht die Differenz, entscheidet nach dem Buch.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.37",
+    "title": "Absatzpotenzial, Absatzvolumen und Anteile",
+    "context": "Übungsbeispiel in Stückzahlen, keine Buchstatistik. Ein Produzent von Kinderrädern (Unternehmen A) stellt Markt- und eigene Kennzahlen nebeneinander.\n\n| Kennzahl | Stück |\n| --- | ---: |\n| Marktpotenzial | 20000 |\n| Marktvolumen | 12000 |\n| Absatzpotenzial Unternehmen A | 4000 |\n| Absatzvolumen Unternehmen A | 2400 |\n| Absatzvolumen größter Mitbewerber | 3000 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Absatzpotenzial von A in Höhe von 4000 Stück ist die Menge, die A im besten Fall erreichen kann oder zu erreichen hofft.",
+      "Das Absatzvolumen von A in Höhe von 2400 Stück ist der tatsächliche Absatz dieses Unternehmens.",
+      "Das Absatzpotenzial von A ist begrifflich dasselbe wie das Marktpotenzial von 20000 Stück.",
+      "Der mengenmäßige absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der relative Marktanteil von A beträgt 2400 / 4000 = 0,6. A ist daher Marktführer."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Viertausend ist der Bestfall der eigenen Firma. Als Verkaufs- oder Absatzpotenzial eines Unternehmens bezeichnet man jene Absatzmenge, die das Unternehmen im besten Fall erreichen kann oder zu erreichen hofft. 4000 liegt über dem Ist von 2400 und unter dem Marktpotenzial von 20000. Hoffnung und Bestfall markieren, dass es sich nicht um den bereits realisierten Absatz handelt. woom im Lehrtext illustriert dieselbe Idee: Idealfall, nicht heutiger Absatz. 4000 / 2400 = 5/3, A hofft also auf deutlich mehr als das laufende Verkaufsvolumen, ohne den ganzen Markt von 20000 beanspruchen zu müssen.\n\nDie Aussage ist wahr.",
+      "Zweitausendvierhundert ist der Ist-Absatz von A. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein bestimmtes Produkt oder eine Produktgruppe. 2400 entspricht auf Unternehmensebene dem, was 12000 auf Marktebene ist: die tatsächlich abgesetzte Menge. Die 4000 darüber bleiben Potenzial. Wer 2400 und 4000 gleichsetzt, streicht genau den Unterschied der beiden Unternehmenskennzahlen. 2400 ist auch nicht das Marktvolumen. Probe: 2400 + 3000 = 5400, der Rest des Volumens 12000 − 5400 = 6600 entfällt auf andere Anbieter.\n\nDie Aussage ist wahr.",
+      "Bestfall einer Firma ist nicht die Markt-Obergrenze. Marktpotenzial ist die maximal mögliche Absatzmenge des Produkts insgesamt, hier 20000, wenn alle mit erfüllbarem Bedürfnis kauften. Absatzpotenzial von A ist nur die Menge, die A selbst im Idealfall schaffen kann, hier 4000. Die begriffliche Gleichsetzung macht aus einem Anbieter den ganzen Bedarfskreis. 4000 kann unter 20000 liegen, weil nicht jedes Unternehmen den ganzen Markt bedienen kann. 4000 / 20000 = 0,2 wäre ein Anteil am Potenzial, nicht die Identität zweier Begriffe.\n\nDie Aussage ist falsch.",
+      "Zweitausendvierhundert durch zwölftausend mal hundert. Der Marktanteil kann mengen- oder wertmäßig ermittelt werden. Absolut = Absatzvolumen A × 100 / Marktvolumen = 2400 × 100 / 12000 = 240000 / 12000 = 20. Nenner ist das Ist des Marktes (12000), nicht das Marktpotenzial (20000) und nicht das eigene Absatzpotenzial (4000). 2400 / 20000 × 100 = 12 wäre ein anderer, hier nicht gefragter Bezug auf die Obergrenze. 2400 / 4000 × 100 = 60 Prozent Zielerreichung ist ebenfalls keine Marktanteilsformel.\n\nDie Aussage ist wahr.",
+      "Viertausend ist der falsche Nenner. Relativ = Absatzvolumen A / Absatzvolumen des größten Mitbewerbers = 2400 / 3000 = 0,8. 0,8 ist kleiner als eins, A ist nicht Marktführer. 2400 / 4000 = 0,6 teilt den Ist-Absatz durch das eigene Potenzial und misst Zielerreichung, nicht Rivalität. Tab. 5 verlangt den größten Mitbewerber im Nenner. Außerdem wäre selbst 0,6 kleiner als eins und würde Führerschaft nicht begründen. 3000 > 2400, der Rivale bleibt vorn. Führerschaft gälte erst bei einem eigenen Absatz über 3000.\n\nNote: Relativ vergleicht zwei Ist-Absätze, nie das eigene Absatzpotenzial.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.38",
+    "title": "Marktführer und Volumenanteil in einer Tabelle",
+    "context": "Übungsbeispiel nach Tab. 5, keine reale Marktstatistik. Drei Blöcke teilen einen wertmäßigen Markt für E-Bikes.\n\n| Größe | Mio. Euro |\n| --- | ---: |\n| Marktvolumen | 90 |\n| Umsatz Unternehmen A | 45 |\n| Umsatz größter Mitbewerber | 30 |\n| Umsatz der übrigen Anbieter | 15 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der absolute Marktanteil von A beträgt 50 Prozent.",
+      "Der relative Marktanteil von A beträgt 1,5. A ist daher Marktführer.",
+      "Marktführer ist man nur, wenn der absolute Marktanteil über 50 Prozent liegt. Der relative Marktanteil spielt dafür keine Rolle.",
+      "Der relative Marktanteil von A beträgt 30 / 45 = 0,67. A ist daher nicht Marktführer.",
+      "Der Marktanteil eines Unternehmens darf nur wertmäßig ermittelt werden, niemals mengenmäßig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Fünfundvierzig durch neunzig mal hundert. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen = 45 × 100 / 90 = 4500 / 90 = 50. A hält die Hälfte des Ist-Marktes. Probe: 45 + 30 + 15 = 90, die Tabelle schließt. 50 Prozent absolut sagt noch nichts über die Relation zu den 30 des Rivalen. Dafür braucht man die zweite Formel. 45 / 90 = 0,5 als Dezimalzahl ist dasselbe Urteil wie 50 Prozent, nicht wie relativ 1,5.\n\nDie Aussage ist wahr.",
+      "Fünfundvierzig durch dreißig liegt über eins. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 45 / 30 = 1,5. Ein relativer Marktanteil größer als eins zeigt an, dass das Unternehmen der Marktführer ist. A setzt das 1,5-Fache des bisher größten Mitbewerbers um. Die 50 Prozent absolut und die 1,5 relativ beschreiben denselben Vorsprung aus zwei Blickwinkeln: Brocken am Volumen und Abstand zum Nächsten. Probe: 1,5 × 30 = 45. Die übrigen 15 ändern den Nenner nicht, weil sie nicht der größte Mitbewerber sind.\n\nDie Aussage ist wahr.",
+      "Die Buchregel nennt die Eins, nicht die Fünfzig. Führerschaft in dieser Kennzahl heißt relativ größer als eins, also eigener Umsatz über dem des größten Mitbewerbers. Ein Betrieb mit 40 von 100 und einem Rivalen mit 25 hätte relativ 40 / 25 = 1,6 und wäre Marktführer, obwohl absolut nur 40 Prozent anfallen. Umgekehrt wäre 50 Prozent absolut ohne den Vergleich zu 30 unvollständig. Die Behauptung, nur absolut über 50 zähle und relativ spiele keine Rolle, streicht Tab. 5. Hier fallen 50 Prozent und 1,5 zusammen. Das ist Zufall der Zahlen 45, 30, 90, keine allgemeine Regel.\n\nDie Aussage ist falsch.",
+      "Zähler und Nenner sind vertauscht. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 45 / 30 = 1,5, nicht 30 / 45. 30 / 45 = 2/3 ≈ 0,67 wäre der relative Anteil des Rivalen gegenüber A. Wer die Brüche dreht, erklärt den Zweiten zum Maßstab und den Ersten zum Verlierer. 1,5 > 1 bleibt die richtige Lesart: A führt. 0,67 < 1 beschreibt den Rückstand von 30 gegenüber 45, also genau die Gegenrichtung.\n\nDie Aussage ist falsch.",
+      "Menge oder Wert sind beide zulässig. Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden. Stückzahlen und Umsätze tragen denselben Anteilgedanken, können bei unterschiedlichen Preisen aber verschiedene Prozente liefern. Die Tabelle hier ist wertmäßig in Mio. Euro. Ein Verbot der Mengenrechnung erfindet das Buch nicht. Wer nur eine Rechenart anerkennt, verkürzt die Kennzahl. Dieselbe Firma könnte stückmäßig unter eins und wertmäßig über eins liegen, wenn ihre Räder teurer sind.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.39",
+    "title": "Mengenanteil und Wertanteil in einer Tabelle",
+    "context": "Übungsbeispiel, keine amtliche Statistik. Derselbe Fahrradmarkt wird einmal in Stück und einmal in Euro beschrieben. Unternehmen A verkauft teurere Räder als der größte Mitbewerber.\n\n| Größe | Menge (Stück) | Wert (Mio. Euro) |\n| --- | ---: | ---: |\n| Marktvolumen | 200 | 1000 |\n| Unternehmen A | 40 | 280 |\n| Größter Mitbewerber | 50 | 200 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der mengenmäßige absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der wertmäßige absolute Marktanteil von A beträgt 28 Prozent.",
+      "Weil A weniger Stück verkauft als der größte Mitbewerber, kann A in keiner Betrachtung Marktführer sein.",
+      "Wertmäßig beträgt der relative Marktanteil von A 1,4. A ist daher wertmäßiger Marktführer.",
+      "Mengenmäßiger und wertmäßiger absoluter Marktanteil müssen stets denselben Prozentsatz liefern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Vierzig durch zweihundert mal hundert. Mengenmäßig gilt Absoluter Marktanteil = Absatz A × 100 / Marktvolumen = 40 × 100 / 200 = 4000 / 200 = 20. A hält ein Fünftel der Stückzahl. Die 280 Mio. Euro in der Wertspalte gehören nicht in diese Stückrechnung. 20 Prozent beschreiben nur die Menge, nicht den Umsatzanteil. Probe: 20 Prozent von 200 Stück sind 40. 40 / 50 = 0,8 wäre bereits der mengenmäßige relative Anteil und darf mit den 20 Prozent nicht vermischt werden.\n\nDie Aussage ist wahr.",
+      "Zweihundertachtzig durch tausend mal hundert. Wertmäßig: Unternehmensumsatz × 100 / Marktvolumen = 280 × 100 / 1000 = 28000 / 1000 = 28. A hält 28 Prozent des Umsatzes, obwohl nur 20 Prozent der Stücke auf A entfallen. Höherer Durchschnittspreis erklärt die Spreizung: 280 / 40 = 7 Mio. Euro je Stückblock gegenüber 200 / 50 = 4 beim Rivalen. Beide Rechenarten lässt das Buch zu. 28 Prozent absolut sind nicht 1,4 relativ. Dafür braucht man den Nenner 200.\n\nDie Aussage ist wahr.",
+      "Stückrückstand hebt die Wertführerschaft nicht auf. Mengenmäßig relativ = 40 / 50 = 0,8 < 1, A ist nach Stückzahl nicht Marktführer. Wertmäßig relativ = 280 / 200 = 1,4 > 1, A ist nach Umsatz Marktführer. Die Behauptung, weniger Stück schließe jede Führerschaft aus, ignoriert, dass der Marktanteil mengen- oder wertmäßig ermittelt werden kann. Teurere Räder können den Wertvergleich drehen. In keiner Betrachtung wäre nur dann wahr, wenn beide Relationen unter eins lägen. Hier gilt das nur für die Menge.\n\nNote: Relativ größer als eins gilt je nach gewählter Rechenart. Menge und Wert können verschiedene Rangfolgen zeigen.\n\nDie Aussage ist falsch.",
+      "Zweihundertachtzig durch zweihundert überschreitet die Eins. Wertmäßig relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 280 / 200 = 1,4. Größer als eins zeigt den Marktführer in dieser Betrachtung. A setzt mehr Euro um als der stückstärkere Rivale. Die 28 Prozent absolut und die 1,4 relativ gehören zusammen: Brocken am Wertvolumen und Vorsprung vor dem Größten. Probe: 1,4 × 200 = 280. 280 / 1000 = 0,28 bleibt die absolute Kontrolle, nicht der Rivalenvergleich.\n\nDie Aussage ist wahr.",
+      "Preisunterschiede sprengen die Gleichheit. Hier 20 Prozent (Menge) gegen 28 Prozent (Wert). Das Buch erlaubt beide Ermittlungen gerade deshalb, weil sie bei unterschiedlichen Preisen auseinanderlaufen. Stets denselben Prozentsatz zu verlangen, würde die Wertspalte überflüssig machen. Nur wenn alle Anbieter denselben Preis hätten, fielen die Prozente zusammen. Die Tabelle ist gegen diese Gleichheit gebaut: 7 gegen 4 in der impliziten Preisrelation. 20 = 28 wäre ein Zufall, den die Zahlen 40, 200, 280, 1000 nicht liefern.\n\nDie Aussage ist falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "3.5",
+    "case_id": "WISO 3.5.40",
+    "title": "Sättigung, Anteile und Absatzpotenzial zusammen",
+    "context": "Übungsbeispiel für den österreichischen Kinderradmarkt, keine Buchstatistik. Die Kennzahlen folgen den Definitionen von Marktpotenzial, Marktvolumen, Verkaufspotenzial und Tab. 5.\n\n| Kennzahl | Mio. Euro |\n| --- | ---: |\n| Marktpotenzial | 200 |\n| Marktvolumen | 190 |\n| Umsatz Unternehmen A | 38 |\n| Umsatz größter Mitbewerber | 57 |\n| Absatzpotenzial Unternehmen A | 50 |\n\nBewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Marktvolumen liegt mit 190 nahe am Marktpotenzial von 200. Der Markt ist beinahe gesättigt.",
+      "Der absolute Marktanteil von A beträgt 20 Prozent.",
+      "Der relative Marktanteil von A ist größer als eins. A ist daher Marktführer.",
+      "Das Absatzpotenzial von A in Höhe von 50 ist identisch mit dem Marktpotenzial.",
+      "Auch bei beinahe gesättigtem Markt kann versucht werden, durch veränderte Produkte oder neue Käuferschichten wieder einen ungesättigten Markt zu schaffen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Hundertneunzig zu zweihundert ist eine enge Lücke. Ist das Marktvolumen nahe am Marktpotenzial, ist der Markt beinahe gesättigt und kaum mehr verkauft werden könnte. 190 / 200 = 0,95, Rest 200 − 190 = 10 Mio. Euro. Fast alle Bedarfsträger kaufen bereits. Die 38 von A und die 57 des Rivalen spielen für diese Marktaussage keine Rolle. Sättigung vergleicht Volumen mit Potenzial, nicht Firma mit Firma. 10 Rest bei 190 Ist ist eng, anders als eine weite Lücke von mehreren Zehnteln der Obergrenze.\n\nDie Aussage ist wahr.",
+      "Achtunddreißig durch hundertneunzig mal hundert. Absoluter Marktanteil = Unternehmensumsatz × 100 / Marktvolumen = 38 × 100 / 190 = 3800 / 190 = 20. Nenner ist das Marktvolumen 190, nicht das Potenzial 200. 38 × 100 / 200 = 19 wäre ein Bezug auf die Obergrenze und nicht Tab. 5. A hält ein Fünftel des Ist-Marktes. Probe: 20 Prozent von 190 = 38, die Tabelle passt. 38 / 57 wäre die relative Rechnung und liefert etwa 0,67, nicht 20 Prozent.\n\nDie Aussage ist wahr.",
+      "Siebenundfünfzig im Nenner drücken A unter die Eins. Relativ = Unternehmensumsatz / Umsatz des größten Mitbewerbers = 38 / 57 = 2/3 ≈ 0,67. Kleiner als eins heißt: A ist nicht Marktführer. Der Rivale setzt mehr um. Wer 38 / 190 ≈ 0,20 mit der relativen Schwelle eins verwechselt, mischt Absolutprozent und Verhältniszahl. Führerschaft verlangt eigenen Umsatz über dem des größten Mitbewerbers, hier 38 gegen 57, also Rückstand. 38 müsste über 57 steigen, bevor relativ > 1 wird.\n\nDie Aussage ist falsch.",
+      "Fünfzig ist der Bestfall von A, zweihundert der des Marktes. Absatzpotenzial ist die Menge bzw. der Wert, den das Unternehmen im besten Fall erreichen kann oder hofft, hier 50. Marktpotenzial ist die maximal mögliche Absatzmenge aller, hier 200. 50 liegt über dem Ist von 38, bleibt aber weit unter 200. Die Gleichsetzung streicht die Unternehmensgrenze und würde A den gesamten Bedarfskreis zuschreiben. 50 / 200 = 0,25 wäre ein Anteil am Potenzial, nicht Identität. Verkaufsvolumen 38 und Verkaufspotenzial 50 bleiben zwei Firmenkennzahlen unter dem Marktpotenzial.\n\nDie Aussage ist falsch.",
+      "Sättigung ist kein Endzustand ohne Ausweg. Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen, zum Beispiel durch neue Modelle mit neuen Funktionen. Dann wächst der Kreis derer, die ein erfüllbares Bedürfnis haben, und die Lücke zwischen 190 und 200 kann sich wieder weiten. Das Absatzpotenzial von A (50 gegen Ist 38) wäre in einem geöffneten Markt leichter zu begründen als im unveränderten, fast vollen Markt. 50 − 38 = 12 gewünschter Zuwachs übersteigt den heutigen Marktrest von 10. Ohne neue Modelle oder neue Schichten bleibt dieser Wunsch im gesättigten Kreis schwer erfüllbar.\n\nDie Aussage ist wahr."
+    ],
+    "difficulty_level": "5/5",
     "tier": "full"
   }
 ]
