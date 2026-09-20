@@ -2,45 +2,86 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import {
   translateWisoTask,
+  translateWisoTaskStem,
   type WisoTaskTranslatePayload,
 } from "@/lib/translate-wiso-task.functions";
 import type { TaskContentLang } from "@/components/TaskContentLangToggle";
+import type { WisoEconomicsEnOverlay } from "@/data/wiso-economics-en-overlays";
 
 type CacheMap = Record<string, WisoTaskTranslatePayload>;
 
 function readCache(storageKey: string): CacheMap {
   if (typeof window === "undefined") return {};
-  try {
-    const raw = sessionStorage.getItem(storageKey);
-    if (!raw) return {};
-    const parsed = JSON.parse(raw) as CacheMap;
-    return parsed && typeof parsed === "object" ? parsed : {};
-  } catch {
-    return {};
+  for (const store of [localStorage, sessionStorage]) {
+    try {
+      const raw = store.getItem(storageKey);
+      if (!raw) continue;
+      const parsed = JSON.parse(raw) as CacheMap;
+      if (parsed && typeof parsed === "object") return parsed;
+    } catch {
+      /* ignore */
+    }
   }
+  return {};
 }
 
 function writeCache(storageKey: string, cache: CacheMap) {
   if (typeof window === "undefined") return;
+  const raw = JSON.stringify(cache);
   try {
-    sessionStorage.setItem(storageKey, JSON.stringify(cache));
+    localStorage.setItem(storageKey, raw);
   } catch {
-    /* quota — ignore */
+    try {
+      sessionStorage.setItem(storageKey, raw);
+    } catch {
+      /* quota */
+    }
   }
 }
 
 function readLang(storageKey: string): TaskContentLang {
   if (typeof window === "undefined") return "de";
   try {
-    return sessionStorage.getItem(storageKey) === "en" ? "en" : "de";
+    return localStorage.getItem(storageKey) === "en" ||
+      sessionStorage.getItem(storageKey) === "en"
+      ? "en"
+      : "de";
   } catch {
     return "de";
   }
 }
 
+function writeLang(storageKey: string, lang: TaskContentLang) {
+  try {
+    localStorage.setItem(storageKey, lang);
+  } catch {
+    try {
+      sessionStorage.setItem(storageKey, lang);
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+function overlayToPayload(o: WisoEconomicsEnOverlay): WisoTaskTranslatePayload {
+  return {
+    title: o.title,
+    context: o.context,
+    statements: o.statements,
+    tactical_explanations: o.tactical_explanations,
+    solution_overview: "",
+    passage: "",
+    highlights: [],
+  };
+}
+
+function hasExplanations(p: WisoTaskTranslatePayload | null | undefined): boolean {
+  return Boolean(p?.tactical_explanations?.some((s) => typeof s === "string" && s.trim()));
+}
+
 /**
- * DE/EN content language for WiSo economics & German texts.
- * German source stays untouched; English is translated once per task and cached.
+ * DE/EN for WiSo economics & German texts.
+ * Priority: prebuilt EN overlay (instant) → durable cache → stem-first AI → fill explanations.
  */
 export function useWisoTaskTranslation(opts: {
   enabled: boolean;
@@ -48,16 +89,29 @@ export function useWisoTaskTranslation(opts: {
   cacheStorageKey: string;
   taskId: string | null;
   source: WisoTaskTranslatePayload | null;
+  prebuiltById?: Map<string, WisoEconomicsEnOverlay> | null;
+  prefetchIds?: string[];
+  prefetchSources?: Record<string, WisoTaskTranslatePayload | null | undefined>;
 }) {
-  const { enabled, langStorageKey, cacheStorageKey, taskId, source } = opts;
-  const translateFn = useServerFn(translateWisoTask);
+  const {
+    enabled,
+    langStorageKey,
+    cacheStorageKey,
+    taskId,
+    source,
+    prebuiltById,
+    prefetchIds = [],
+    prefetchSources = {},
+  } = opts;
+  const translateFullFn = useServerFn(translateWisoTask);
+  const translateStemFn = useServerFn(translateWisoTaskStem);
   const [lang, setLangState] = useState<TaskContentLang>("de");
   const [cache, setCache] = useState<CacheMap>({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const sourceRef = useRef(source);
   sourceRef.current = source;
-  const loadingRef = useRef(false);
+  const inFlight = useRef<Set<string>>(new Set());
 
   useEffect(() => {
     if (!enabled) return;
@@ -65,55 +119,104 @@ export function useWisoTaskTranslation(opts: {
     setCache(readCache(cacheStorageKey));
   }, [enabled, langStorageKey, cacheStorageKey]);
 
+  const putCache = useCallback(
+    (id: string, payload: WisoTaskTranslatePayload) => {
+      setCache((prev) => {
+        const nextCache = { ...prev, [id]: payload };
+        writeCache(cacheStorageKey, nextCache);
+        return nextCache;
+      });
+    },
+    [cacheStorageKey],
+  );
+
+  const resolvePrebuilt = useCallback(
+    (id: string): WisoTaskTranslatePayload | null => {
+      const row = prebuiltById?.get(id);
+      return row ? overlayToPayload(row) : null;
+    },
+    [prebuiltById],
+  );
+
+  const fillExplanations = useCallback(
+    async (id: string, payload: WisoTaskTranslatePayload) => {
+      if (hasExplanations(readCache(cacheStorageKey)[id])) return;
+      if (inFlight.current.has(`${id}:expl`)) return;
+      inFlight.current.add(`${id}:expl`);
+      try {
+        const full = await translateFullFn({ data: payload });
+        putCache(id, full);
+      } catch {
+        /* stem already shown */
+      } finally {
+        inFlight.current.delete(`${id}:expl`);
+      }
+    },
+    [translateFullFn, putCache, cacheStorageKey],
+  );
+
   const ensureEnglish = useCallback(
-    async (id: string) => {
-      if (loadingRef.current) return;
-      const payload = sourceRef.current;
-      if (!payload) {
+    async (id: string, src?: WisoTaskTranslatePayload | null) => {
+      const prebuilt = resolvePrebuilt(id);
+      if (prebuilt) {
+        putCache(id, prebuilt);
         setLangState("en");
-        try {
-          sessionStorage.setItem(langStorageKey, "en");
-        } catch {
-          /* ignore */
-        }
+        writeLang(langStorageKey, "en");
+        setLoading(false);
+        setError(null);
         return;
       }
-      const existing = readCache(cacheStorageKey)[id];
+
+      const existing = readCache(cacheStorageKey)[id] ?? cache[id];
       if (existing) {
         setCache((prev) => (prev[id] ? prev : { ...prev, [id]: existing }));
         setLangState("en");
-        try {
-          sessionStorage.setItem(langStorageKey, "en");
-        } catch {
-          /* ignore */
+        writeLang(langStorageKey, "en");
+        if (!hasExplanations(existing) && (src ?? sourceRef.current)) {
+          void fillExplanations(id, src ?? sourceRef.current!);
         }
         return;
       }
-      loadingRef.current = true;
+
+      const payload = src ?? sourceRef.current;
+      if (!payload) {
+        setLangState("en");
+        writeLang(langStorageKey, "en");
+        return;
+      }
+
+      if (inFlight.current.has(id)) return;
+      inFlight.current.add(id);
       setLoading(true);
       setError(null);
       try {
-        const translated = await translateFn({ data: payload });
-        setCache((prev) => {
-          const nextCache = { ...prev, [id]: translated };
-          writeCache(cacheStorageKey, nextCache);
-          return nextCache;
-        });
+        const stem = await translateStemFn({ data: payload });
+        const partial: WisoTaskTranslatePayload = {
+          ...stem,
+          tactical_explanations: payload.tactical_explanations.map(() => ""),
+        };
+        putCache(id, partial);
         setLangState("en");
-        try {
-          sessionStorage.setItem(langStorageKey, "en");
-        } catch {
-          /* ignore */
-        }
+        writeLang(langStorageKey, "en");
+        setLoading(false);
+        void fillExplanations(id, payload);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Translation failed");
         setLangState("de");
-      } finally {
-        loadingRef.current = false;
         setLoading(false);
+      } finally {
+        inFlight.current.delete(id);
       }
     },
-    [translateFn, langStorageKey, cacheStorageKey],
+    [
+      resolvePrebuilt,
+      putCache,
+      langStorageKey,
+      cacheStorageKey,
+      cache,
+      translateStemFn,
+      fillExplanations,
+    ],
   );
 
   const setLang = useCallback(
@@ -122,50 +225,81 @@ export function useWisoTaskTranslation(opts: {
       setError(null);
       if (next === "de") {
         setLangState("de");
-        try {
-          sessionStorage.setItem(langStorageKey, "de");
-        } catch {
-          /* ignore */
-        }
+        writeLang(langStorageKey, "de");
         return;
       }
       if (!taskId) {
         setLangState("en");
-        try {
-          sessionStorage.setItem(langStorageKey, "en");
-        } catch {
-          /* ignore */
-        }
+        writeLang(langStorageKey, "en");
         return;
       }
-      if (cache[taskId]) {
+      const prebuilt = resolvePrebuilt(taskId);
+      if (prebuilt) {
+        putCache(taskId, prebuilt);
         setLangState("en");
-        try {
-          sessionStorage.setItem(langStorageKey, "en");
-        } catch {
-          /* ignore */
-        }
+        writeLang(langStorageKey, "en");
+        return;
+      }
+      if (cache[taskId] || readCache(cacheStorageKey)[taskId]) {
+        setLangState("en");
+        writeLang(langStorageKey, "en");
         return;
       }
       await ensureEnglish(taskId);
     },
-    [enabled, taskId, cache, ensureEnglish, langStorageKey],
+    [
+      enabled,
+      taskId,
+      cache,
+      ensureEnglish,
+      langStorageKey,
+      cacheStorageKey,
+      resolvePrebuilt,
+      putCache,
+    ],
   );
 
-  // Stay on EN across task navigation — translate the new task if needed.
   useEffect(() => {
     if (!enabled || lang !== "en" || !taskId) return;
-    if (cache[taskId] || loadingRef.current) return;
+    if (resolvePrebuilt(taskId)) {
+      const p = resolvePrebuilt(taskId)!;
+      if (!cache[taskId]) putCache(taskId, p);
+      return;
+    }
+    if (cache[taskId] || inFlight.current.has(taskId)) return;
     void ensureEnglish(taskId);
-  }, [enabled, lang, taskId, cache, ensureEnglish]);
+  }, [enabled, lang, taskId, cache, ensureEnglish, resolvePrebuilt, putCache]);
 
-  const translated = taskId ? cache[taskId] ?? null : null;
+  useEffect(() => {
+    if (!enabled || lang !== "en") return;
+    for (const id of prefetchIds) {
+      if (!id || id === taskId) continue;
+      if (resolvePrebuilt(id) || cache[id] || readCache(cacheStorageKey)[id]) continue;
+      const src = prefetchSources[id];
+      if (!src) continue;
+      void ensureEnglish(id, src);
+    }
+  }, [
+    enabled,
+    lang,
+    prefetchIds,
+    prefetchSources,
+    taskId,
+    cache,
+    cacheStorageKey,
+    ensureEnglish,
+    resolvePrebuilt,
+  ]);
+
+  const translated = taskId
+    ? cache[taskId] ?? (resolvePrebuilt(taskId) ? resolvePrebuilt(taskId) : null) ?? null
+    : null;
   const activeTranslation = lang === "en" ? translated : null;
 
   return {
     lang: enabled ? lang : ("de" as TaskContentLang),
     setLang,
-    loading,
+    loading: enabled && lang === "en" && Boolean(taskId) && !translated ? loading : false,
     error,
     activeTranslation,
   };

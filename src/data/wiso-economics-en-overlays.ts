@@ -68,14 +68,16 @@ export async function loadAllWisoEconomicsEnOverlays(): Promise<
   return merged;
 }
 
-export function applyWisoEconomicsEnOverlay<T extends {
-  case_id?: string;
-  id?: string;
-  title: string;
-  context: string;
-  statements: string[];
-  tactical_explanations: string[];
-}>(task: T, overlay: WisoEconomicsEnOverlay | undefined): T {
+export function applyWisoEconomicsEnOverlay<
+  T extends {
+    case_id?: string;
+    id?: string;
+    title: string;
+    context: string;
+    statements: string[];
+    tactical_explanations: string[];
+  },
+>(task: T, overlay: WisoEconomicsEnOverlay | undefined): T {
   if (!overlay) return task;
   return {
     ...task,

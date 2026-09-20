@@ -32,6 +32,10 @@ import { TaskContentLangToggle } from "@/components/TaskContentLangToggle";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useWisoTaskTranslation } from "@/hooks/use-wiso-task-translation";
 import type { WisoTaskTranslatePayload } from "@/lib/translate-wiso-task.functions";
+import {
+  loadAllWisoEconomicsEnOverlays,
+  type WisoEconomicsEnOverlay,
+} from "@/data/wiso-economics-en-overlays";
 
 // Full course: everything unlocked. Demo can pass freeLimitPerChapter (e.g. 8).
 const DEFAULT_PHANTOM_LOCKED_COUNT = 0;
@@ -124,7 +128,7 @@ export function EconomicsTasksPage({
   phantomLockedCount = DEFAULT_PHANTOM_LOCKED_COUNT,
   enableContentTranslation = false,
   contentLangStorageKey = "wiso.economics.contentLang.v1",
-  contentTranslationCacheKey = "wiso.economics.enCache.v1",
+  contentTranslationCacheKey = "wiso.economics.enCache.v2",
 }: EconomicsTasksPageProps) {
   const phantomCountFor = (_ch: number): number => phantomLockedCount;
   const freeLimitOf = (ch: number | "revision" | null): number => {
@@ -162,10 +166,29 @@ export function EconomicsTasksPage({
   );
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileChaptersOpen, setMobileChaptersOpen] = useState(false);
+  const [enOverlays, setEnOverlays] = useState<Map<string, WisoEconomicsEnOverlay> | null>(
+    null,
+  );
 
   useEffect(() => {
     setMobileChaptersOpen(false);
   }, [activeChapter, activeIdx, theoryChapter]);
+
+  useEffect(() => {
+    if (!enableContentTranslation) return;
+    let cancel = false;
+    (async () => {
+      try {
+        const map = await loadAllWisoEconomicsEnOverlays();
+        if (!cancel) setEnOverlays(map);
+      } catch {
+        if (!cancel) setEnOverlays(new Map());
+      }
+    })();
+    return () => {
+      cancel = true;
+    };
+  }, [enableContentTranslation]);
 
   useEffect(() => {
     let cancel = false;
@@ -260,17 +283,37 @@ export function EconomicsTasksPage({
   const activeCase = activeList[activeIdx];
   const setPracticeCase = useSetPracticeCase();
 
+  const toTranslatePayload = (c: Case): WisoTaskTranslatePayload => ({
+    title: c.title,
+    context: c.context,
+    statements: c.statements,
+    tactical_explanations: c.tactical_explanations,
+    solution_overview: "",
+    passage: "",
+    highlights: [],
+  });
+
   const translateSource: WisoTaskTranslatePayload | null = activeCase
-    ? {
-        title: activeCase.title,
-        context: activeCase.context,
-        statements: activeCase.statements,
-        tactical_explanations: activeCase.tactical_explanations,
-        solution_overview: "",
-        passage: "",
-        highlights: [],
-      }
+    ? toTranslatePayload(activeCase)
     : null;
+
+  const prefetchIds = useMemo(() => {
+    if (!activeCase || activeList.length === 0) return [] as string[];
+    const ids: string[] = [];
+    if (activeIdx + 1 < activeList.length) ids.push(activeList[activeIdx + 1]!.id);
+    if (activeIdx + 2 < activeList.length) ids.push(activeList[activeIdx + 2]!.id);
+    if (activeIdx > 0) ids.push(activeList[activeIdx - 1]!.id);
+    return ids;
+  }, [activeCase, activeList, activeIdx]);
+
+  const prefetchSources = useMemo(() => {
+    const out: Record<string, WisoTaskTranslatePayload> = {};
+    for (const id of prefetchIds) {
+      const row = activeList.find((c) => c.id === id);
+      if (row) out[id] = toTranslatePayload(row);
+    }
+    return out;
+  }, [prefetchIds, activeList]);
 
   const {
     lang: contentLang,
@@ -284,6 +327,9 @@ export function EconomicsTasksPage({
     cacheStorageKey: contentTranslationCacheKey,
     taskId: activeCase?.id ?? null,
     source: translateSource,
+    prebuiltById: enOverlays,
+    prefetchIds,
+    prefetchSources,
   });
 
   const displayCase: Case | undefined = activeCase
@@ -293,7 +339,11 @@ export function EconomicsTasksPage({
           title: activeTranslation.title,
           context: activeTranslation.context,
           statements: activeTranslation.statements,
-          tactical_explanations: activeTranslation.tactical_explanations,
+          tactical_explanations: activeTranslation.tactical_explanations.some((s) =>
+            Boolean(s?.trim()),
+          )
+            ? activeTranslation.tactical_explanations
+            : activeCase.tactical_explanations,
         }
       : activeCase
     : undefined;
