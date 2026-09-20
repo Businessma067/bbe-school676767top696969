@@ -3,7 +3,12 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { isNavItemActive, type NavItem } from "@/config/site-nav";
 import { useLanguage } from "@/lib/i18n/context";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
-import { resolveExamTrack, trackHome } from "@/lib/exam-track";
+import {
+  entryLangForDestination,
+  resolveExamTrack,
+  trackHome,
+  trackUiLang,
+} from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
@@ -28,7 +33,7 @@ export function NavItemLink({
   const { pathname, search } = useRouterState({
     select: (s) => ({ pathname: s.location.pathname, search: s.location.search }),
   });
-  const { lang, t } = useLanguage();
+  const { lang, setLang, t } = useLanguage();
   const pathForActive = stripLocalePrefix(pathname);
   const effective = effectiveLangFromLocation(pathname, lang);
   const isActive = isNavItemActive(item, pathForActive, search);
@@ -38,7 +43,9 @@ export function NavItemLink({
 
   if (item.isRoute) {
     const { path, hash } = splitHref(item.href);
-    const link = getLocaleLinkProps(hash ? `${path}#${hash}` : path, effective);
+    const entryLang = entryLangForDestination(path, pathname);
+    const linkLang = entryLang ?? effective;
+    const link = getLocaleLinkProps(hash ? `${path}#${hash}` : path, linkLang);
     return (
       <Link
         to={link.to as never}
@@ -47,7 +54,10 @@ export function NavItemLink({
         {...(item.search ? { search: item.search as never } : {})}
         className={cn(className, isActive && "text-primary")}
         aria-current={isActive ? "page" : undefined}
-        onClick={onNavigate}
+        onClick={() => {
+          if (entryLang) setLang(entryLang);
+          onNavigate?.();
+        }}
         data-no-i18n
       >
         {label}
@@ -77,14 +87,18 @@ export function NavItemLink({
     );
   }
 
-  const home = getLocaleLinkProps(homePath, effective);
+  const homeLang = trackUiLang(track);
+  const home = getLocaleLinkProps(homePath, homeLang);
   return (
     <Link
       to={home.to as never}
       params={home.params as never}
       hash={hash}
       className={className}
-      onClick={onNavigate}
+      onClick={() => {
+        setLang(homeLang);
+        onNavigate?.();
+      }}
       data-no-i18n
     >
       {label}

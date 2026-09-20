@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import { Layers, Shuffle, Sparkles } from "lucide-react";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { storeExamTrack } from "@/lib/exam-track";
@@ -114,12 +115,12 @@ function WisoFullCourseSubjects() {
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/wiso/products/full-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             {ui.back}
-          </Link>
+          </LocalizedLink>
         }
       />
 

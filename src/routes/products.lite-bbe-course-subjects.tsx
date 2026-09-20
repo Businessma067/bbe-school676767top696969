@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 
@@ -64,12 +65,12 @@ function LiteCourseSubjects() {
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/products/lite-bbe-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
-          </Link>
+          </LocalizedLink>
         }
       />
 
