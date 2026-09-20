@@ -59,6 +59,7 @@ function ReviewExamPage() {
   const [questions, setQuestions] = useState<ExamQuestion[]>([]);
   const [pointsTotal, setPointsTotal] = useState<number>(SCORING_CONFIG.examTotalPoints);
   const [isCustom, setIsCustom] = useState(false);
+  const [examTrack, setExamTrack] = useState<"bbe" | "wiso">("bbe");
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
   const attempt = useMemo(() => readAttempt(examId), [examId]);
@@ -79,6 +80,7 @@ function ReviewExamPage() {
       setQuestions(resolved.questions);
       setPointsTotal(resolved.pointsTotal);
       setIsCustom(resolved.isCustom);
+      setExamTrack(resolved.track);
       setReady(true);
     })();
     return () => {
@@ -99,9 +101,14 @@ function ReviewExamPage() {
     } catch {
       /* ignore */
     }
-    const perSubject = { economics: 0, math: 0, english: 0 };
+    const perSubject: Record<string, number> = { economics: 0, math: 0, english: 0, german: 0 };
     for (const row of analytics.sections) {
-      if (row.key === "economics" || row.key === "math" || row.key === "english") {
+      if (
+        row.key === "economics" ||
+        row.key === "math" ||
+        row.key === "english" ||
+        row.key === "german"
+      ) {
         perSubject[row.key] = Number(row.earned.toFixed(2));
       }
     }
@@ -138,7 +145,7 @@ function ReviewExamPage() {
         <p className="text-sm text-muted-foreground">{loadError}</p>
         {isCustomExamId(examId) ? (
           <Link
-            to="/products/custom-mock-builder"
+            to={examTrack === "wiso" ? "/wiso/mock-builder" : "/products/custom-mock-builder"}
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
           >
             ← Back
@@ -188,7 +195,13 @@ function ReviewExamPage() {
               Tasks
             </button>
             <Link
-              to={isCustom ? "/products/custom-mock-builder" : "/mock-exams"}
+              to={
+                isCustom
+                  ? examTrack === "wiso"
+                    ? "/wiso/mock-builder"
+                    : "/products/custom-mock-builder"
+                  : "/mock-exams"
+              }
               className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
             >
               {isCustom ? "← Custom Mock Builder" : "← All mock exams"}

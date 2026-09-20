@@ -2,6 +2,7 @@ import {
   isCustomExamId,
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
+import { isWisoCustomMockDbSubject } from "@/config/wiso-custom-mock-builder";
 import {
   cacheCustomMock,
   fetchCustomMockById,
@@ -23,6 +24,8 @@ export type ResolvedExam = {
   durationSeconds: number;
   pointsTotal: number;
   isCustom: boolean;
+  /** Which product unlocks this exam when tier is full. */
+  track: "bbe" | "wiso";
 };
 
 async function loadCustomRow(examId: string): Promise<CustomMockRow | null> {
@@ -47,6 +50,7 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
       durationSeconds: row.duration_minutes * 60,
       pointsTotal: row.points_total,
       isCustom: true,
+      track: isWisoCustomMockDbSubject(row.subject) ? "wiso" : "bbe",
     };
   }
 
@@ -72,5 +76,6 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
     durationSeconds: EXAM_SECONDS,
     pointsTotal,
     isCustom: false,
+    track: "bbe",
   };
 }

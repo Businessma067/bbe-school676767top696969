@@ -255,4 +255,5 @@ export const SECTION_TOTALS: Record<SubjectKey, number> = {
   economics: SCORING_CONFIG.economics.totalPoints,
   math: SCORING_CONFIG.math.totalPoints,
   english: SCORING_CONFIG.english.totalPoints,
+  german: SCORING_CONFIG.german.totalPoints,
 };

@@ -89,6 +89,8 @@ function TakeExamPage() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [contentReady, setContentReady] = useState(false);
   const [lockMinTier, setLockMinTier] = useState<AccessTier | null>(null);
+  const [lockProductSlug, setLockProductSlug] = useState<string | undefined>(undefined);
+  const [examTrack, setExamTrack] = useState<"bbe" | "wiso">("bbe");
 
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions]);
   const examSecondsRef = useRef(examSeconds);
@@ -114,6 +116,8 @@ function TakeExamPage() {
     setSession(null);
     setLoadError(null);
     setLockMinTier(null);
+    setLockProductSlug(undefined);
+    setExamTrack("bbe");
     warningsSeeded.current = false;
     submitted.current = false;
     (async () => {
@@ -134,11 +138,19 @@ function TakeExamPage() {
         return;
       }
       if (resolved.summary.tier === "full") {
-        const { userOwnsFullTier } = await import("@/lib/full-course-access");
-        const ownsFull = await userOwnsFullTier();
+        const { userOwnsFullTier, userOwnsWisoFullCourse } = await import(
+          "@/lib/full-course-access"
+        );
+        const ownsFull =
+          resolved.track === "wiso"
+            ? await userOwnsWisoFullCourse()
+            : await userOwnsFullTier();
         if (cancelled) return;
         if (!ownsFull) {
           setLockMinTier("full");
+          setLockProductSlug(
+            resolved.track === "wiso" ? "wiso-full-course" : undefined,
+          );
           setContentReady(true);
           return;
         }
@@ -152,6 +164,7 @@ function TakeExamPage() {
           return;
         }
       }
+      setExamTrack(resolved.track);
       setExam(resolved.summary);
       setQuestions(resolved.questions);
       setExamSeconds(resolved.durationSeconds);
@@ -436,7 +449,13 @@ function TakeExamPage() {
   }, [questions, flaggedSet]);
 
   if (lockMinTier) {
-    return <CourseLockedView feature="mock-exams" minTier={lockMinTier} />;
+    return (
+      <CourseLockedView
+        feature="mock-exams"
+        minTier={lockMinTier}
+        productSlug={lockProductSlug}
+      />
+    );
   }
 
   if (loadError) {
@@ -444,10 +463,10 @@ function TakeExamPage() {
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-background px-6 font-sans text-foreground">
         <p className="text-sm text-muted-foreground">{loadError}</p>
         <Link
-          to="/products/custom-mock-builder"
+          to={examTrack === "wiso" ? "/wiso/mock-builder" : "/products/custom-mock-builder"}
           className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
         >
-          ← Custom Mock Builder
+          ← {examTrack === "wiso" ? "WiSo Mock Builder" : "Custom Mock Builder"}
         </Link>
       </div>
     );

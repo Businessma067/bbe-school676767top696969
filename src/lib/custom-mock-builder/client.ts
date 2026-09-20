@@ -1,5 +1,9 @@
 import { supabase } from "@/integrations/supabase/client";
 import { customMockExamId } from "@/config/custom-mock-builder";
+import {
+  isWisoCustomMockDbSubject,
+  WISO_CUSTOM_MOCK_DB_SUBJECTS,
+} from "@/config/wiso-custom-mock-builder";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import type { CustomMockRow, CustomMockSummary } from "./types";
 
@@ -43,7 +47,7 @@ export function toCustomMockSummary(row: CustomMockRow): CustomMockSummary {
   };
 }
 
-export async function fetchCustomMocks(): Promise<CustomMockSummary[]> {
+async function fetchCustomMockRows(): Promise<CustomMockRow[]> {
   const { data: session } = await supabase.auth.getSession();
   const userId = session.session?.user?.id;
   if (!userId) return [];
@@ -61,7 +65,23 @@ export async function fetchCustomMocks(): Promise<CustomMockSummary[]> {
     return [];
   }
 
-  return (data ?? []).map((row) => toCustomMockSummary(mapRow(row as never)));
+  return (data ?? []).map((row) => mapRow(row as never));
+}
+
+/** BBE Custom Mock Builder history (excludes WiSo-prefixed subjects). */
+export async function fetchCustomMocks(): Promise<CustomMockSummary[]> {
+  const rows = await fetchCustomMockRows();
+  return rows
+    .filter((row) => !isWisoCustomMockDbSubject(row.subject))
+    .map(toCustomMockSummary);
+}
+
+/** WiSo Custom Mock Builder history. */
+export async function fetchWisoCustomMocks(): Promise<CustomMockSummary[]> {
+  const rows = await fetchCustomMockRows();
+  return rows
+    .filter((row) => isWisoCustomMockDbSubject(row.subject))
+    .map(toCustomMockSummary);
 }
 
 export async function fetchCustomMockById(id: string): Promise<CustomMockRow | null> {
@@ -123,3 +143,13 @@ export type GenerateArgs = {
   /** Per-subtopic question targets from the Topic Weight Selector. */
   topicCounts?: Record<string, number>;
 };
+
+export type WisoGenerateArgs = {
+  subject: "economics" | "math" | "german";
+  subtopics: string[];
+  questionCount: number;
+  topicCounts?: Record<string, number>;
+};
+
+/** @deprecated Prefer isWisoCustomMockDbSubject — re-export for call sites. */
+export { WISO_CUSTOM_MOCK_DB_SUBJECTS };

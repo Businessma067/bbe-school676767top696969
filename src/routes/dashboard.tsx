@@ -21,9 +21,13 @@ import {
 } from "@/lib/user-progress";
 import { storeExamTrack, type ExamTrack } from "@/lib/exam-track";
 import { syncMyPaidEnrollments } from "@/lib/payments.functions";
-import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
+import { fetchCustomMocks, fetchWisoCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
+import {
+  WISO_CUSTOM_MOCK_SUBJECTS,
+  wisoSubjectFromDb,
+} from "@/config/wiso-custom-mock-builder";
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
@@ -142,19 +146,24 @@ function DashboardPage() {
       } catch (err) {
         console.error("dashboard: syncMyPaidEnrollments", err);
       }
-      const [e, t, m, s, c] = await Promise.all([
+      const [e, t, m, s, cBbe, cWiso] = await Promise.all([
         fetchEnrollments(),
         fetchTaskAttempts(),
         fetchMockAttempts(),
         fetchSessionAnswerStats(),
         fetchCustomMocks(),
+        fetchWisoCustomMocks(),
       ]);
       if (cancelled) return;
       setEnrollments(e);
       setTasks(t);
       setMocks(m);
       setSessionAnswers(s);
-      setCustomMocks(c);
+      setCustomMocks(
+        [...cBbe, ...cWiso].sort(
+          (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+        ),
+      );
     })();
     return () => {
       cancelled = true;
@@ -976,15 +985,25 @@ function CustomMocksTab({
                   const best = examAttempts[0]
                     ? examAttempts.reduce((a, b) => (a.points_earned >= b.points_earned ? a : b))
                     : null;
+                  const wisoId = wisoSubjectFromDb(mock.subject);
+                  const badge = wisoId
+                    ? {
+                        label: WISO_CUSTOM_MOCK_SUBJECTS[wisoId].label,
+                        badgeClass:
+                          SUBJECT_META[wisoId === "german" ? "german" : wisoId].badgeClass,
+                      }
+                    : SUBJECT_META[mock.subject as SubjectKey]
+                      ? SUBJECT_META[mock.subject as SubjectKey]
+                      : null;
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">
                         <div className="flex flex-wrap items-center gap-2">
-                          {SUBJECT_META[mock.subject as SubjectKey] ? (
+                          {badge ? (
                             <span
-                              className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${SUBJECT_META[mock.subject as SubjectKey].badgeClass}`}
+                              className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${badge.badgeClass}`}
                             >
-                              {SUBJECT_META[mock.subject as SubjectKey].label}
+                              {badge.label}
                             </span>
                           ) : null}
                           <p className="font-medium">{displayTitleForCustomMock(mock)}</p>
