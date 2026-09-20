@@ -98,11 +98,24 @@ export async function fetchAccessState(options?: { refresh?: boolean }): Promise
   if (!options?.refresh && cachedAccess) return cachedAccess;
   if (!options?.refresh && inflightAccess) return inflightAccess;
 
-  const request = loadAccessState().then((state) => {
-    cachedAccess = state;
-    if (inflightAccess === request) inflightAccess = null;
-    return state;
-  });
+  const request: Promise<AccessState> = loadAccessState()
+    .then((state) => {
+      cachedAccess = state;
+      return state;
+    })
+    .catch(() => {
+      const fallback: AccessState = {
+        signedIn: false,
+        email: null,
+        tier: "none",
+        productSlugs: [],
+      };
+      cachedAccess = fallback;
+      return fallback;
+    })
+    .finally(() => {
+      if (inflightAccess === request) inflightAccess = null;
+    });
   inflightAccess = request;
   return request;
 }

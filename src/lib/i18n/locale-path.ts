@@ -32,7 +32,6 @@ export const LOCALIZABLE_PATHS = [
   "/wiso/demo-practice",
   "/wiso/mock-exams",
   "/wiso/mock-builder",
-  "/wiso/flashcards",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
@@ -137,7 +136,8 @@ export function localizePath(pathname: string, lang: Lang): string {
   const pathOnly = hashIndex >= 0 ? pathname.slice(0, hashIndex) : pathname;
   const base = stripLocalePrefix(pathOnly);
 
-  if (!isLocalizablePath(base) || lang === "en") {
+  // Study tools / course drills stay on unprefixed gated routes (never /de|/uk).
+  if (isStudyContentPath(base) || !isLocalizablePath(base) || lang === "en") {
     return `${base === "/" ? "/" : base}${hash}`;
   }
 

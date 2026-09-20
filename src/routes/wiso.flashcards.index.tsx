@@ -1,14 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { StudyToolsSubjectIndex } from "@/components/study-modes/StudyToolsSubjectIndex";
 import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
-import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/flashcards" as const;
 
 export const Route = createFileRoute("/wiso/flashcards/")({
   head: () => ({
-    links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
+    links: [{ rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "WiSo-Karteikarten — BBE School" },
       {

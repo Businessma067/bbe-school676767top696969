@@ -15,10 +15,11 @@ export const Route = createFileRoute("/$lang/$")({
     if (!isLocalePrefix(params.lang)) throw notFound();
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
 
-    // Paid / study surfaces stay English-only. Locale-prefixed deep links
-    // (e.g. /de/products/full-course-math) must land on the gated English
-    // route — never skip RequireFullCourse via a translated URL.
-    if (!isLocalizablePath(path) && (isFullSiteProtectedPath(path) || isStudyContentPath(path))) {
+    // Paid / study surfaces stay on unprefixed gated routes. Locale-prefixed
+    // deep links (e.g. /de/wiso/flashcards, /de/products/full-course-math)
+    // must redirect — never skip RequireFullCourse via a translated URL,
+    // even if the path was mistakenly listed as localizable.
+    if (isFullSiteProtectedPath(path) || isStudyContentPath(path)) {
       throw redirect({ to: path as never });
     }
 
