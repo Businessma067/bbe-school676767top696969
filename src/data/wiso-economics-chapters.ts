@@ -1,6 +1,7 @@
 /**
  * WISO Wirtschaft Full Course banks (Wirtschaft verstehen 2026, chapters 1–4).
  * German true/false cases with teacher explanations for all book subsections.
+ * Chapter 4 §4.1 (Digitale Transformation) includes WiSo-native authored practice.
  */
 
 import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
