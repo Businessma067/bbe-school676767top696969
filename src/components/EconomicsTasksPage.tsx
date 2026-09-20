@@ -59,6 +59,8 @@ export type EconomicsTasksPageProps = {
   backLabel?: string;
   /** Disable theory reader when WiSo theory markdown is not shipped yet. */
   enableTheory?: boolean;
+  /** TheoryReader bank. Defaults to BBE economics. */
+  theorySubject?: "economics" | "math" | "wiso-economics";
 };
 
 
@@ -102,6 +104,7 @@ export function EconomicsTasksPage({
   backTo,
   backLabel = "← Back",
   enableTheory = true,
+  theorySubject = "economics",
 }: EconomicsTasksPageProps) {
   const [cases, setCases] = useState<Case[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -562,6 +565,7 @@ export function EconomicsTasksPage({
             <TheoryReader
               chapter={theoryChapter}
               title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
+              subject={theorySubject}
               onGoToPractice={() => {
                 setTheoryChapter(null);
                 setActiveChapter(theoryChapter);

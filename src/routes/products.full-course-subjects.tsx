@@ -48,7 +48,7 @@ const subjects = [
     image: economicsAsset.url,
     accent: "#0F766E",
     tag: "WISO · Deutsch",
-    href: "/products/full-course-wiso-economics",
+    href: "/wiso/products/full-course-economics",
     description:
       "Aufgaben zur Lernunterlage Wirtschaft verstehen (Aufnahmeprüfung 2026): Wahr/Falsch nach Kapiteln, mit Lehrererklärungen.",
   },
