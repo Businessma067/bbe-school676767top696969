@@ -9,10 +9,12 @@ const TaskPayload = z.object({
   context: z.string(),
   statements: z.array(z.string()),
   tactical_explanations: z.array(z.string()),
-  solution_overview: z.string().optional().default(""),
-  passage: z.string().optional().default(""),
+  // Structured-output JSON Schema requires every property key in `required`
+  // (OpenAI rejects .optional() fields). Always send "" when unused.
+  solution_overview: z.string(),
+  passage: z.string(),
   /** Passage locator snippets — must remain verbatim substrings of `passage` after translation. */
-  highlights: z.array(z.string()).optional().default([]),
+  highlights: z.array(z.string()),
 });
 
 export type WisoTaskTranslatePayload = z.infer<typeof TaskPayload>;
@@ -24,7 +26,22 @@ export type WisoTaskTranslatePayload = z.infer<typeof TaskPayload>;
  */
 export const translateWisoTask = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((d: unknown) => TaskPayload.parse(d))
+  .inputValidator((d: unknown) =>
+    TaskPayload.parse({
+      ...(d as Record<string, unknown>),
+      solution_overview:
+        typeof (d as { solution_overview?: unknown })?.solution_overview === "string"
+          ? (d as { solution_overview: string }).solution_overview
+          : "",
+      passage:
+        typeof (d as { passage?: unknown })?.passage === "string"
+          ? (d as { passage: string }).passage
+          : "",
+      highlights: Array.isArray((d as { highlights?: unknown })?.highlights)
+        ? (d as { highlights: string[] }).highlights
+        : [],
+    }),
+  )
   .handler(async ({ data }) => {
     const key = process.env.LOVABLE_API_KEY;
     if (!key) throw new Error("Missing LOVABLE_API_KEY");

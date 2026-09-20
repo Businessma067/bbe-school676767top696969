@@ -46,6 +46,8 @@ export type EconomicsTasksPageProps = {
   backLabel?: string;
   /** Disable theory reader when WiSo theory markdown is not shipped yet. */
   enableTheory?: boolean;
+  /** TheoryReader bank. Defaults to BBE economics. */
+  theorySubject?: "economics" | "math" | "wiso-economics";
   /**
    * Demo unlock: first N tasks per chapter are free.
    * Omit (or Infinity) for Full Course — everything unlocked.
@@ -117,6 +119,7 @@ export function EconomicsTasksPage({
   backTo,
   backLabel = "← Back",
   enableTheory = true,
+  theorySubject = "economics",
   freeLimitPerChapter = Number.POSITIVE_INFINITY,
   phantomLockedCount = DEFAULT_PHANTOM_LOCKED_COUNT,
   enableContentTranslation = false,
@@ -647,6 +650,7 @@ export function EconomicsTasksPage({
             <TheoryReader
               chapter={theoryChapter}
               title={CHAPTERS.find((c) => c.num === theoryChapter)?.title ?? ""}
+              subject={theorySubject}
               onGoToPractice={() => {
                 setTheoryChapter(null);
                 setActiveChapter(theoryChapter);

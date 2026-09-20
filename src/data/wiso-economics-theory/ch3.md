@@ -1,490 +1,169 @@
 # Kapitel 3: Was Wirtschaften für Unternehmen bedeutet
 
+Diese Theorie folgt der Lernunterlage *Wirtschaft verstehen* (Aufnahmeverfahren für das Bachelorstudium Wirtschafts- und Sozialwissenschaften, Studienjahr 2026/27, WU Wien). Inhalt und Reihenfolge entsprechen der aktuellen Unterlage.
+
+## Lernziele
+
+- 3.1 — Was ist ein Unternehmen und welche Arten von Unternehmen gibt es?
+- 3.2 — Rechtsformen von Unternehmen
+- 3.3 — Wie Unternehmen finanzielle Mittel aufbringen
+- 3.4 — Welche Fragen das Rechnungswesen beantwortet
+- 3.5 — Marketing – kein Erfolg ohne Marktorientierung
+
+---
+
+## Was Wirtschaften für Unternehmen bedeutet
+
+Unternehmen wirtschaften teilweise unter ähnlichen Bedingungen wie ein privater Haushalt. Von der Knappheit der Ressourcen sind Unternehmen genauso betroffen wie private Haushalte. Wirtschaften bedeutet daher auch für Unternehmen, genau zu überlegen, wofür sie ihre knappen Ressourcen einsetzen. Sie haben ebenso wie private Haushalte nicht beliebig viel Geld und nicht beliebig viele Produktionsmittel. Nachhaltig zu wirtschaften ist für den langfristigen Bestand und Erfolg eines Unternehmens ebenso wichtig und förderlich wie für einen privaten Haushalt. Unternehmen müssen daher planen, was sie brauchen und ob genug finanzielle Mittel dafür vorhanden sind, um das Benötigte zu beschaffen. Im Vergleich zu privaten Haushalten haben sie auch dabei ähnliche finanzielle Ziele: sie wollen zahlungsfähig sein, finanzielle Reserven für Notfälle bilden, Geld anlegen und möglichst günstige Finanzierungen nutzen. Trotzdem weist das Wirtschaften im Unternehmen auch Besonderheiten auf, und es ist in den meisten Fällen viel komplexer als das Wirtschaften im Haushalt. Die Betriebswirtschaftslehre beschäftigt sich intensiv damit, was Unternehmen sind, was sie charakterisiert, welche Aufgaben und Funktionen sie zu erfüllen haben, wie sie arbeiten und was sie zum Erfolg führt. In dieser Lernunterlage werden ausgewählte wesentliche betriebswirtschaftliche Bereiche behandelt und erklärt. Zunächst wird beschrieben, was ein Unternehmen ist und welche Unternehmensarten unterschieden werden können. Jedes Unternehmen agiert in einem bestimmten rechtlichen Rahmen und weist eine Rechtsform auf. Daher werden auch wesentliche Rechtsformen näher charakterisiert, die Implikationen für die Finanzierungsmöglichkeiten von Unternehmen haben. Außerdem müssen im Unternehmen auch Aufzeichnungen über alle Transaktionen – über jede Anschaffung, jede Zahlung, jeden Verkauf – geführt werden, sodass das Rechnungswesen eine wesentliche Dokumentationsfunktion in jedem Unternehmen übernimmt. Also werden auch die Bereiche des betrieblichen Rechnungswesens vorgestellt, damit das Lesen und Verstehen eines Finanzplans, einer Bilanz und Gewinn- und Verlustrechnung (G&V) sowie einer Cashflowrechnung gelingen kann. Da kein Unternehmen lange erfolgreich agieren kann, ohne sich am Markt zu orientieren, wird schließlich dem Themenbereich Marktorientierung und Marketing besondere Aufmerksamkeit gewidmet.
+
 ## 3.1 Was ist ein Unternehmen und welche Arten von Unternehmen gibt es?
 
 Wie bereits erläutert, sind Unternehmen wirtschaftlich selbstständige Organisationseinheiten, die Produkte und Dienstleistungen für andere erstellen. Ihre Aufgabe ist es, die Bedürfnisse von privaten Haushalten und/oder anderen Unternehmen und/oder dem Staat zu erkennen oder zu wecken und anzubieten, was diese brauchen oder sich wünschen. Nur wenn die Kundinnen und Kunden einen Wert und einen Nutzen im Angebotenen erkennen, werden sie interessiert sein diese zu kaufen. Es ist daher für Unternehmen bedeutend, diesen Wert und Nutzen für die Kundinnen und Kunden zu schaffen. Für ihre Leistungserstellung setzen Unternehmen vor allem
 
-• Betriebsmittel wie Maschinen und Geschäftsausstattung, 
-• verschiedene Werkstoffe wie zum Beispiel Rohstoffe, 
-• Arbeitskräfte, d.h. die Arbeitsleistung ihres Personals, sowie 
-• Know-how und Information ein. Wenn Unternehmen Mitarbeiterinnen und Mitarbeiter beschäftigen, schaffen sie Arbeitsplätze. Vor allem wenn sie mit anderen Unternehmen im Wettbewerb stehen, schaffen sie auch Innovationen, 
+- Betriebsmittel wie Maschinen und Geschäftsausstattung,
+- verschiedene Werkstoffe wie zum Beispiel Rohstoffe,
+- Arbeitskräfte, d.h. die Arbeitsleistung ihres Personals, sowie
+- Know-how und Information ein. Wenn Unternehmen Mitarbeiterinnen und Mitarbeiter beschäftigen, schaffen sie Arbeitsplätze. Vor allem wenn sie mit anderen Unternehmen im Wettbewerb stehen, schaffen sie auch Innovationen,
 
 wenn sie ihr Angebot laufend weiterentwickeln und Neues entwickeln. Ein Unternehmen hat daher in vielfacher Hinsicht Einfluss auf mehrere Personengruppen und auf sein Umfeld und wird selbst auch von diesen beeinflusst:
 
-• auf seine Mitarbeiter:innen, die sich einen sicheren, interessanten und gut bezahlten Arbeitsplatz wünschen; 
-• auf seine Lieferant:innen, die sich eine gute Geschäftsbeziehung und eine pünktliche vollständige Bezahlung ihrer Lieferungen wünschen; 
-• auf seine Kund:innen, die sich gute Produkte und Dienstleistungen zu einem günstigen Preis wünschen; 
-• auf seine Eigentümer:innen, Gesellschafter:innen und Geldgeber:innen, die sich eine gute Entwicklung des Unternehmens erhoffen und mit ihrem eingesetzten Geld auch bestimmte Ziele verfolgen; 
-• auf die Gemeinde(n) und das Land, in denen das Unternehmen ansässig ist, weil sie von der Schaffung von Arbeitsplätzen und von den Abgaben, die das Unternehmen bezahlt, profitieren. Sie erwarten sich auch, dass das Unternehmen seinen finanziellen und anderen Verpflichtungen nachkommt, sorgsam und verantwortungsvoll mit der Umwelt umgeht und seine soziale Verantwortung gegenüber der Gesellschaft wahrnimmt. Man sieht also, dass Unternehmen viele Anspruchsgruppen (Stakeholder) haben, die an das Unternehmen Erwartungen haben und an die auch das Unternehmen Erwartungen hat. 
+- auf seine Mitarbeiter:innen, die sich einen sicheren, interessanten und gut bezahlten Arbeitsplatz wünschen;
+- auf seine Lieferant:innen, die sich eine gute Geschäftsbeziehung und eine pünktliche vollständige Bezahlung ihrer Lieferungen wünschen;
+- auf seine Kund:innen, die sich gute Produkte und Dienstleistungen zu einem günstigen Preis wünschen;
+- auf seine Eigentümer:innen, Gesellschafter:innen und Geldgeber:innen, die sich eine gute Entwicklung des Unternehmens erhoffen und mit ihrem eingesetzten Geld auch bestimmte Ziele verfolgen;
+- auf die Gemeinde(n) und das Land, in denen das Unternehmen ansässig ist, weil sie von der Schaffung von Arbeitsplätzen und von den Abgaben, die das Unternehmen bezahlt, profitieren. Sie erwarten sich auch, dass das Unternehmen seinen finanziellen und anderen Verpflichtungen nachkommt, sorgsam und verantwortungsvoll mit der Umwelt umgeht und seine soziale Verantwortung gegenüber der Gesellschaft wahrnimmt. Man sieht also, dass Unternehmen viele Anspruchsgruppen (Stakeholder) haben, die an das Unternehmen Erwartungen haben und an die auch das Unternehmen Erwartungen hat.
 
-### Was laut Gesetz ein Unternehmen ist
-
-Der Staat, der den gesetzlichen Rahmen für die Wirtschaft schafft, hat auch ein Interesse, aus rechtlicher Sicht zu klären, wer Unternehmer ist, was ein Unternehmen ist und welche Bestimmungen für Unternehmen gelten. Daher gibt es eine gesetzliche Definition für Unternehmen in §1 des Unternehmensgesetzbuchs (UGB).
+Was laut Gesetz ein Unternehmen ist Der Staat, der den gesetzlichen Rahmen für die Wirtschaft schafft, hat auch ein Interesse, aus rechtlicher Sicht zu klären, wer Unternehmer ist, was ein Unternehmen ist und welche Bestimmungen für Unternehmen gelten. Daher gibt es eine gesetzliche Definition für Unternehme n in §1 des Unternehmensgesetzbuchs (UGB).
 
 Was ist aus rechtlicher Sicht ein Unternehmen, wer ist Unternehmer:in? §1(1) UGB bestimmt: Unternehmer ist, wer ein Unternehmen betreibt. §1(2) UGB führt fort: Ein Unternehmen ist jede auf Dauer angelegte Organisation selbständiger wirtschaftlicher Tätigkeit, mag sie auch nicht auf Gewinn gerichtet sein.
 
 Die rechtliche Definition eines Unternehmens umfasst die folgenden drei Merkmale:
 
-• Es ist auf Dauer angelegt, d.h. es handelt nicht nur einmalig. 
-• Es handelt sich um eine selbstständige wirtschaftliche Tätigkeit, d.h. es besteht darin, selbstständig und auf eigenes Risiko Produkte und/oder Dienstleistungen für Dritte zu erstellen. 
-• Unternehmen müssen nicht unbedingt auf Gewinnerzielung ausgerichtet sein. 
+- Es ist auf Dauer angelegt, d.h. es handelt nicht nur einmalig.
+- Es handelt sich um eine selbstständige wirtschaftliche Tätigkeit, d.h. es besteht darin, selbstständig und auf eigenes Risiko Produkte und/oder Dienstleistungen für Dritte zu erstellen.
+- Unternehmen müssen nicht unbedingt auf Gewinnerzielung ausgerichtet sein.
 
-Beispiele für Unternehmen
+Beispiele für Unternehmen Die woom GmbH, die Fahrräder erzeugt, und die Josef Manner & Comp. AG, die Waffeln und andere Süßigkeiten erzeugt, sind nur zwei Beispiele für sehr bekannte österreichische Unternehmen. Sie sind auf Dauer angelegt, da nicht nur für ein paar Tage vorübergehend Fahrräder und Waffeln produziert werden. Sie tragen unternehmerisches Risiko und produzieren für Dritte. Beide Unternehmen werden durchaus mit einer Gewinnabsicht geführt, auch wenn sie das nicht müssten, um als Unternehmen zu gelten.
 
-Die woom GmbH, die Fahrräder erzeugt, und die Josef Manner & Comp. AG, die Waffeln und andere Süßigkeiten erzeugt, sind nur zwei Beispiele für sehr bekannte österreichische Unternehmen. Sie sind auf Dauer angelegt, da nicht nur für ein paar Tage vorübergehend Fahrräder und Waffeln produziert werden. Sie tragen unternehmerisches Risiko und produzieren für Dritte. Beide Unternehmen werden durchaus mit einer Gewinnabsicht geführt, auch wenn sie das nicht müssten, um als Unternehmen zu gelten. Diese Merkmale der juristischen Definition von Unternehmen sind auch aus betriebswirtschaftlicher Sicht bedeutsam. Ein Unternehmen ist „wirtschaftlich tätig, indem es Leistungen für Dritte erbringt“ (Lechner, Egger & Schauer 2003, S. 61). Auch das dritte Merkmal wird anerkannt, wobei aus betriebswirtschaftlicher Sicht betont wird, dass ein Unternehmen seine Existenzgrundlage verliert, wenn es nicht zumindest kostendeckend arbeiten kann und zahlungsfähig ist.
+Diese Merkmale der juristischen Definition von Unternehmen sind auch aus betriebswirtschaftlicher Sicht bedeutsam. Ein Unternehmen ist „wirtschaftlich tätig, indem es Leistungen für Dritte erbringt“ (Lechner, Egger & Schauer 2003, S. 61). Auch das dritte M erkmal wird anerkannt, wobei aus betriebswirtschaftlicher Sicht betont wird, dass ein Unternehmen seine Existenzgrundlage verliert, wenn es nicht zumindest kostendeckend arbeiten kann und zahlungsfähig ist.
 
 Was sind Gewinne und welche Bedeutung haben sie für ein Unternehmen? Gewinne erzielen: das bedeutet – stark vereinfacht gesagt – mehr einzunehmen als auszugeben. Buchhalterisch gesprochen bedeutet es, mehr Erträge als Aufwände zu haben. Gewinne sind für den Fortbestand eines Unternehmens in der Regel wesentlich, weil sie in das Unternehmen reinvestiert werden können und so ein Unternehmen dauerhaft leistungs- und konkurrenzfähig bleibt und in Zeiten, in denen Verluste geschrieben werden, weniger überschuldungsgefährdet ist.
 
-Auch wenn ein Unternehmen als „Non-Profit-Organisation“ (NPO) konzipiert ist und primär daran orientiert ist, kostendeckend zu arbeiten, kann es seine Ziele dennoch besser verfolgen und sein Aufgabenspektrum besser an seine Zielgruppe kommunizieren, wenn es über ausreichend Einnahmen (zum Beispiel durch Spendengelder) verfügt. NPOs profitieren ebenso von der Reinvestition von Gewinnen in das Unternehmen, weil sie dadurch ihr Angebot verbessern und ausbauen können.
+Auch wenn ein Unternehmen als „ Non-Profit-Organisation“ (NPO) konzipiert ist und primär daran orientiert ist, kostendeckend zu arbeiten, kann es seine Ziele dennoch besser verfolgen und sein Aufgabenspektrum besser an seine Zielgruppe kommunizieren, wenn es über ausreichend Einnahmen (zum Beispiel durch Spendengelder) verfügt. NPOs profitieren ebenso von der Reinvestition von Gewinnen in das Unternehmen, weil sie dadurch ihr Angebot verbessern und ausbauen können.
 
-### Unternehmen schaffen Wertschöpfung und Wirtschaftsleistung
+Unternehmen schaffen Wertschöpfung und Wirtschaftsleistung Durch den Produktions- und/oder Dienstleistungsprozess eines Unternehmens werden Güter erstellt, die einen höheren Wert haben als jene, die ursprünglich in diesen Prozess eingeflossen sind. Dieser Prozess stellt – aus betriebswirtschaftlicher Sicht – die W ertschöpfung dar, die die Unternehmen schaffen. Werden zum Beispiel Kinderfahrräder produziert, so haben diese als Endprodukt einen höheren Wert als die Bestandteile und Materialien, die in den Produktionsprozess eingeflossen sind. Die Differenz aus dem Wert des Endprodukts eines Unternehmens und dem Wert der dafür eingesetzten Vorleistungen stellt die Wertschöpfung dar.
 
-Durch den Produktions- und/oder Dienstleistungsprozess eines Unternehmens werden Güter erstellt, die einen höheren Wert haben als jene, die ursprünglich in diesen Prozess eingeflossen sind. Dieser Prozess stellt – aus betriebswirtschaftlicher Sicht – die Wertschöpfung dar, die die Unternehmen schaffen. Werden zum Beispiel Kinderfahrräder produziert, so haben diese als Endprodukt einen höheren Wert als die Bestandteile und Materialien, die in den Produktionsprozess eingeflossen sind. Die Differenz aus dem Wert des Endprodukts eines Unternehmens und dem Wert der dafür eingesetzten Vorleistungen stellt die Wertschöpfung dar.
+Ein Beispiel zur Wertschöpfung Angenommen, ein Unternehmen produziert ein Kinderfahrrad, das fix und fertig einen Wert von 500 Euro hat. Der Wert der dafür eingesetzten Vorleistungen, also der verschiedenen Bestandteile, die das Unternehmen nicht selbst produziert, sondern von anderen zugekauft hat, beträgt rund 100 Euro. Die Wertschöpfung, die durch die Produktion des Rades geschaffen wurde, beträgt in diesem Fall 400 Euro. Dies entspricht allerdings nicht dem Gewinn des Unternehmens pro Fahrrad, weil ja noch weitere Kosten zu decken sind.
 
-Ein Beispiel zur Wertschöpfung
+Die Wertschöpfung ist auch für die Berechnung des Bruttoinlandsprodukts (BIP) r elevant, denn sie stellt die Entstehung des BIP dar. Als Basis für die Berechnung des BIP wird der Gesamtwert aller innerhalb der Grenzen eines Landes hergestellten Güter aller Unternehmen abzüglich des Wertes der Vorleistungen herangezogen.
 
-Angenommen, ein Unternehmen produziert ein Kinderfahrrad, das fix und fertig einen Wert von 500 Euro hat. Der Wert der dafür eingesetzten Vorleistungen, also der verschiedenen Bestandteile, die das Unternehmen nicht selbst produziert, sondern von anderen zugekauft hat, beträgt rund 100 Euro. Die Wertschöpfung, die durch die Produktion des Rades geschaffen wurde, beträgt in diesem Fall 400 Euro. Dies entspricht allerdings nicht dem Gewinn des Unternehmens pro Fahrrad, weil ja noch weitere Kosten zu decken sind.
+Unternehmen sind in verschiedenen Wirtschaftssektoren tätig Der Unternehmensgegenstand bestimmt, in welchem Sektor bzw. in welchen Sektoren ein Unternehmen tätig ist. Im Wesentlichen werden drei verschiedene Wirtschaftssektoren unterschieden. Der primäre Sektor umfasst jegliche Art von Rohstoffgewinnung, insbesondere Land - und Forstwirtschaft, Fischerei und Bergbau. Erze zu gewinnen, aus denen Metalle produziert werden können, zählt zum primären Sektor. Ebenso zählen der Anbau und die Ernte von Früchten zum primären Sektor. Der sekundäre Sektor produziert aus den Rohstoffen Produkte, er umfasst die gesamte Industrie und das Handwerk sowie Energiewirtschaft. Erzeugen nun Unternehmen zum Beispiel aus den Erzen Metalle oder aus Kakao und Haselnüssen eine Füllung für Waffeln, dann zählen diese Unternehmen zum sekundären Wirtschaftssektor ebenso wie Maschinenbau - und Elektronikunternehmen oder Produzenten chemischer Erzeugnisse. Der tertiäre Sektor umfasst jegliche Dienstleistungen. Dazu zählen der Handel, der Tourismus und viele weitere Branchen, die Leistungen anbieten: Rechtsberatung, Steuerberatung, Banken und Versicherungen, Pflege und Betreuung, Bildung, Coaching und Training etc.
 
-Die Wertschöpfung ist auch für die Berechnung des Bruttoinlandsprodukts (BIP) relevant, denn sie stellt die Entstehung des BIP dar. Als Basis für die Berechnung des BIP wird der Gesamtwert aller innerhalb der Grenzen eines Landes hergestellten Güter aller Unternehmen abzüglich des Wertes der Vorleistungen herangezogen.
+Beispiele zu den Wirtschaftssektoren Die woom GmbH und die Manner AG sind im sekundären Sektor tätig, denn sie produzieren aus verschiedenen Rohstoffen und einzelnen Bestandteilen Produkte. Die landwirtschaftlichen Betriebe, die zum Beispiel Nüsse liefern, sind im primären Sektor tätig. Eine Steuerberaterin, die die Bilanzen für Unternehmen erstellt, ist zum Beispiel im tertiären Sektor tätig. Ebenso würde ein Fahrradhändler, der woom Räder im Sortiment hat, auch zum tertiären Sektor zählen.
 
-### Unternehmen sind in verschiedenen Wirtschaftssektoren tätig
+In der Regel steigt mit dem Grad der wirtschaftlichen Entwicklung eines Landes sein Anteil des tertiären Sektors an der gesamten Wirtschaftsleistung, da mit steigender wirtschaftlicher Entwicklung immer mehr Dienstleistungen nachgefragt werden. Der Anteil des tertiären Sektors an der Wirtschaftsleistung in Österreich beträgt rund 70 %. Der primäre Sektor – obwohl er für die Versorgung mit Nahrungsmitteln und für die Erhaltung und Pflege der Natur eine wesentliche Rolle spielt – trägt hingegen nur etwas über 1 % der gesamten Wirtschaftsleistung bei.
 
-Der Unternehmensgegenstand bestimmt, in welchem Sektor bzw. in welchen Sektoren ein 
-Unternehmen tätig ist. Im Wesentlichen werden drei verschiedene Wirtschaftssektoren 
-unterschieden. 
-Der primäre Sektor umfasst jegliche Art von Rohstoffgewinnung, insbesondere Land- und 
-Forstwirtschaft, Fischerei und Bergbau. Erze zu gewinnen, aus denen Metalle produziert werden 
-können, zählt zum primären Sektor. Ebenso zählen der Anbau und die Ernte von Früchten zum 
-primären Sektor. 
-Der sekundäre Sektor produziert aus den Rohstoffen Produkte, er umfasst die gesamte Industrie und 
-das Handwerk sowie Energiewirtschaft. Erzeugen nun Unternehmen zum Beispiel aus den Erzen 
-Metalle oder aus Kakao und Haselnüssen eine Füllung für Waffeln, dann zählen diese Unternehmen 
-zum sekundären Wirtschaftssektor ebenso wie Maschinenbau- und Elektronikunternehmen oder 
-Produzenten chemischer Erzeugnisse. 
-Der tertiäre Sektor umfasst jegliche Dienstleistungen. Dazu zählen der Handel, der Tourismus und viele 
-weitere Branchen, die Leistungen anbieten: Rechtsberatung, Steuerberatung, Banken und 
-Versicherungen, Pflege und Betreuung, Bildung, Coaching und Training etc. 
-
-Beispiele zu den Wirtschaftssektoren
-
-Die woom GmbH und die Manner AG sind im sekundären Sektor tätig, denn sie produzieren aus verschiedenen Rohstoffen und einzelnen Bestandteilen Produkte. Die landwirtschaftlichen Betriebe, die zum Beispiel Nüsse liefern, sind im primären Sektor tätig. Eine Steuerberaterin, die die Bilanzen für Unternehmen erstellt, ist zum Beispiel im tertiären Sektor tätig. Ebenso würde ein Fahrradhändler, der woom Räder im Sortiment hat, auch zum tertiären Sektor zählen. In der Regel steigt mit dem Grad der wirtschaftlichen Entwicklung eines Landes sein Anteil des tertiären Sektors an der gesamten Wirtschaftsleistung, da mit steigender wirtschaftlicher Entwicklung immer mehr Dienstleistungen nachgefragt werden. Der Anteil des tertiären Sektors an der Wirtschaftsleistung in Österreich beträgt rund 70 %. Der primäre Sektor – obwohl er für die Versorgung mit Nahrungsmitteln und für die Erhaltung und Pflege der Natur eine wesentliche Rolle spielt – trägt hingegen nur etwas über 1 % der gesamten Wirtschaftsleistung bei.
-
-### Unternehmen sind einer oder mehreren Branchen zugehörig
-
-Der Tätigkeitsbereich eines Unternehmens bestimmt auch, welcher Branche oder welchen Branchen das Unternehmen zugeordnet wird. Innerhalb einer Branche („Wirtschaftszweig“) stellen Unternehmen sehr ähnliche Produkte her bzw. erstellen sehr ähnliche Leistungen.
+Unternehmen sind einer oder mehreren Branchen zugehörig Der Tätigkeitsbereich eines Unternehmens bestimmt auch, welcher Branche oder welchen Branchen das Unternehmen zugeordnet wird. Innerhalb einer Branche („Wirtschaftszweig“) stellen Unternehmen sehr ähnliche Produkte her bzw. erstellen sehr ähnliche Leistungen.
 
 Beispiele für Branchen sind etwa
 
-• die Baubranche (Errichtung von Gebäuden, …) 
-• das Handwerk (Tischlereien, Installateure, Elektriker, Schlosser …) 
-• der Handel (Großhandel, Einzelhandel, …) 
-• Pharma- und Gesundheitsbranche 
-• Telekommunikation 
-• Tourismus 
-• Gastronomie 
-• Verkehr und Logistik 
-• Medienbranche Unternehmen, die einer Branche zugehören, haben oft ähnliche Herausforderungen zu bewältigen und verfolgen ähnliche Interessen. Daher sind auch Interessensvertretungen oft entsprechend der Branchenlogik strukturiert. 
+- die Baubranche (Errichtung von Gebäuden, …)
+- das Handwerk (Tischlereien, Installateure, Elektriker, Schlosser …)
+- der Handel (Großhandel, Einzelhandel, …)
+- Pharma- und Gesundheitsbranche
+- Telekommunikation
+- Tourismus
+- Gastronomie
+- Verkehr und Logistik
+- Medienbranche Unternehmen, die einer Branche zugehören, haben oft ähnliche Herausforderungen zu bewältigen und verfolgen ähnliche Interessen. Daher sind auch Interessensvertretungen oft entsprechend der Branchenlogik strukturiert.
 
-### Unternehmen sind verschieden groß
+Unternehmen sind verschieden groß Die Klassifizierung nach Unternehmensgröße ist bedeutsam, weil es Steuerbestimmungen, Rechnungslegungspflichten und Förderungsmöglichkeiten gibt, die an eine bestimmte Unternehmensgröße gekoppelt sind. In diesem Zusammenhang ist der Begriff KMU wichtig, der Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen bedeutet (engl. SME/MSME micro, small and medium enterprises) und von der Europäischen Union in einer EU -Empfehlung definiert wurde. Rund 99 % der Unternehmen in der EU sind KMU. Tab. 1: Kategorisierung von Unternehmen nach Größe Kategorie Mitarbeiterzahl Umsatz / Jahr oder Bilanzsumme Kleinstunternehmen Bis 9 Bis zu 2 Mio. Euro Bis zu 2 Mio. Euro Kleine Unternehmen Bis 49 Bis zu 10 Mio. Euro Bis zu 10 Mio. Euro Mittlere Unternehmen Bis 249 Bis zu 50 Mio. Euro Bis zu 43 Mio. Euro Große Unternehmen Ab 250 Über 50 Mio. Euro Über 43 Mio. Euro
 
-Die Klassifizierung nach Unternehmensgröße ist bedeutsam, weil es Steuerbestimmungen, 
-Rechnungslegungspflichten und Förderungsmöglichkeiten gibt, die an eine bestimmte 
-Unternehmensgröße gekoppelt sind. In diesem Zusammenhang ist der Begriff KMU wichtig, der 
-Kleinstunternehmen, kleine Unternehmen und mittlere Unternehmen bedeutet (engl. SME/MSME 
-micro, small and medium enterprises) und von der Europäischen Union in einer EU-Empfehlung 
-definiert wurde. Rund 99 % der Unternehmen in der EU sind KMU. 
-Tab. 1: Kategorisierung von Unternehmen nach Größe 
-Kategorie Mitarbeiterzahl Umsatz / Jahr oder Bilanzsumme 
-Kleinstunternehmen Bis 9 Bis zu 2 Mio. Euro Bis zu 2 Mio. Euro 
-Kleine Unternehmen Bis 49 Bis zu 10 Mio. Euro Bis zu 10 Mio. Euro 
-Mittlere Unternehmen Bis 249 Bis zu 50 Mio. Euro Bis zu 43 Mio. Euro 
-Große Unternehmen Ab 250 Über 50 Mio. Euro Über 43 Mio. Euro 
-
-| | Kategorie | | | Mitarbeiterzahl | Umsatz / Jahr | oder | Bilanzsumme | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Kleinstunternehmen | | | Bis 9 | Bis zu 2 Mio. Euro | | Bis zu 2 Mio. Euro | | |
-| | Kleine Unternehmen | | | Bis 49 | Bis zu 10 Mio. Euro | | Bis zu 10 Mio. Euro | | |
-| | Mittlere Unternehmen | | | Bis 249 | Bis zu 50 Mio. Euro | | Bis zu 43 Mio. Euro | | |
-| | Große Unternehmen | | | Ab 250 | Über 50 Mio. Euro | | Über 43 Mio. Euro | | |
-
-Zahlen, Daten, Fakten … 
-Auch in Österreich dominieren KMU mit rund 99% Anteil an der Anzahl von 
-Unternehmen die Unternehmenslandschaft. Der Großteil der KMU sind 
-sogar Kleinstunternehmen mit weniger als zehn Mitarbeiterinnen und 
-Mitarbeitern, sie machen rund 90% der Gesamtzahl von Unternehmen aus. 
-Ungefähr 85% der Unternehmen haben weniger als eine Million Euro 
-Umsatz. 
+Zahlen, Daten, Fakten … Auch in Österreich dominieren KMU mit rund 99% Anteil an der Anzahl von Unternehmen die Unternehmenslandschaft. Der Großteil der KMU sind sogar Kleinstunternehmen mit weniger als zehn Mitarbeiterinnen und Mitarbeitern, sie machen rund 90% der Gesamtzahl von Unternehmen aus. Ungefähr 85% der Unternehmen haben weniger als eine Million Euro Umsatz.
 
 KMU sind wichtige Arbeitgeber. Rund zwei Drittel der Erwerbstätigen arbeiten in KMU. Sie erarbeiten knapp unter zwei Drittel der Umsatzerlöse der österreichischen gewerblichen Wirtschaft. Etwas mehr als ein Drittel der Umsatzerlöse wird von rund 1.900 Großunternehmen erwirtschaftet (Quelle: WKO, Statistik Austria). Zu den größten Unternehmen Österreichs (gemessen am Umsatz) zählen zum Beispiel OMV AG, Porsche Holding GmbH, Strabag SE, REWE International AG, Spar Österreichische Warenhandels AG, voestalpine AG, Mondi AG, ÖBB AG, Andritz AG, Red Bull GmbH.
 
-Lernvideo Was bedeutet Wirtschaften für Unternehmen?
-
-Zur Wiederholung und Vertiefung der Inhalte, was Unternehmen sind und was sie tun, können Sie das Lernvideo Was bedeutet Wirtschaften für Unternehmen? im Basismodul Der Wirtschaftskreislauf und seine Akteure / Modul Was bedeutet Wirtschaften für Unternehmen? durcharbeiten: https://www.wu.ac.at/wu4juniors/wu4juniors-online/
+Lernvideo Was bedeutet Wirtschaften für Unternehmen? Zur Wiederholung und Vertiefung der Inhalte, was Unternehmen sind und was sie tun, können Sie das Lernvideo Was bedeutet Wirtschaften für Unternehmen? im Basismodul Der Wirtschaftskreislauf und seine Akteure / Modul Was bedeutet Wirtschaften für Unternehmen? durcharbeiten: https://www.wu.ac.at/wu4juniors/wu4juniors-online/
 
 ## 3.2 Rechtsformen von Unternehmen
 
-Wer mit Unternehmen Geschäfte macht, soll auch Klarheit darüber haben, wer das Unternehmen leitet, wer die Geschäfte führt, wer für das Unternehmen Verträge abschließen darf, wer Kapital eingebracht hat und wer für die Schulden des Unternehmens haftet. Daher gibt es dafür gesetzliche Regelungen. Die Rechtsform ist für die alle angeführten Fragen bedeutsam. Viele dieser Informationen sind für an dem Unternehmen Interessierte aus dem Firmenbuch ersichtlich, jedoch nur im Hinblick auf Unternehmen, die ins Firmenbuch eingetragen sind (siehe dazu weiter unten). Aus der oben angeführten Aufzählung der größten Unternehmen Österreichs gehen bereits zwei Rechtsformen hervor, die vor allem bei großen Unternehmen häufig gewählt werden, weil sie einen großen Kapitalbedarf haben. Viele Großunternehmen sind als Aktiengesellschaft (AG) oder als Gesellschaft mit beschränkter Haftung (GmbH) organisiert. Die meisten Unternehmen in Österreich sind allerdings KMU, von denen der Großteil Einzelunternehmen sind. Die nachstehende Abbildung gibt einen ersten Überblick über wesentliche Rechtsformen von Unternehmen.
+Wer mit Unternehmen Geschäfte ma cht, soll auch Klarheit darüber haben, wer das Unternehmen leitet, wer die Geschäfte führt, wer für das Unternehmen Verträge abschließen darf, wer Kapital eingebracht hat und wer für die Schulden des Unternehmen s haftet. Daher gibt es dafür gesetzliche Regelungen. Die Rechtsform ist für die alle angeführten Fragen bedeutsam. Viele dieser Informationen sind für an dem Unternehmen Interessierte aus dem Firmenbuch ersichtlich, jedoch nur im Hinblick auf Unternehmen, die ins Firmenbuch eingetragen sind (siehe dazu weiter unten). Aus der oben angeführten Aufzählung der größten Unternehmen Österreichs gehen be reits zwei Rechtsformen hervor, die vor allem bei großen Unternehmen häufig gewählt werden, weil sie einen großen Kapitalbedarf haben. Viele Großunternehmen sind als Aktiengesellschaft (AG) oder als Gesellschaft mit beschränkter Haftung (GmbH) organisiert. Die meisten Unternehmen in Österreich sind allerdings KMU, von denen der Großteil Einzelunternehmen sind. Die nachstehende Abbildung gibt einen ersten Überblick über wesentliche Rechtsformen von Unternehmen.
 
-Abbildung 18: Überblick über wesentliche Rechtsformen von Unternehmen in Österreich
+*Abbildung 18: Überblick über wesentliche Rechtsformen von Unternehmen in Österreich*
 
-Die für ein Unternehmen geeignete Rechtsform ist insgesamt von mehreren Faktoren abhängig: einerseits von der Frage, wer das Unternehmen gründet und wer es leiten will oder soll, andererseits von der Frage, wie das notwendige Kapital für das Unternehmen aufgebracht werden soll und wer in welchem Umfang für die Schulden des Unternehmens haftet. Für eine Person, die in kleinem Rahmen mit ihrem Ersparten ein Unternehmen aufbaut, wird eine andere Rechtsform geeignet sein als für einen großen Industriebetrieb, der umfangreiche Produktionskapazitäten aufbauen und finanzieren muss.
+Die für ein Unternehmen geeignete Rechtsform ist insgesamt von mehreren Faktoren abhängig: einerseits von der Frage, wer das Unternehmen gründet und wer es leiten will oder soll, andererseits von der Frage, wie das notwendige Kapital für das Unternehmen aufgebracht werden soll und wer in welchem Umfang für die Schulden des Unternehmens haftet. Für eine Person, die in kleinem Rahmen mit ihrem Ersparten ein Unternehmen aufbaut, wird eine andere Rechtsform geeignet sein als für einen großen Industriebetrieb, d er umfangreiche Produktionskapazitäten aufbauen und finanzieren muss.
 
-### Das Einzelunternehmen
+Das Einzelunternehmen Ein Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person das Unternehmen führt, die Entscheidungen trifft und das unternehmerische Risiko trägt. Ein Einzelunternehmer oder eine Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden seines Unternehmens, d.h. die Haftung besteht nicht nur mit dem betrieblichen Vermögen, sondern auch mit dem Privatvermögen. Viele Kleinunternehmen sind als Einzelunternehmen organisiert, weil sie relativ einfach und ohne Mindestkapitalerfordernisse gegrü ndet werden können. Das Kapital, das benötigt wird, muss der Einzelunternehmer oder die Einzelunternehmerin für gewöhnlich allein aufbringen. Reichen die eigenen Mittel nicht, wird der weitere Bedarf an finanziellen Mitteln in den meisten Fällen durch einen Kredit abgedeckt. Oft arbeitet nur der Einzelunternehmer oder die Einzelunternehmerin selbst für das Unternehmen, manchmal werden ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt. Der Selbstständigkeit und der Unabhängigkeit von anderen Gesellschafter:innen bei der Unternehmensführung steht aber immer das Risiko gegenüber, das der oder die Einzelunternehmer:in ganz allein in vollem Umfang tragen muss. Scheitert ein Einzelunternehme n, bedeutet das oft nicht nur das Ende für das Unternehmen, sondern auch finanzielle Schwierigkeiten für die Unternehmerin oder den Unternehmer als Privatperson. Die gescheiterte Selbstständigkeit ist ein häufiger Grund für einen Privatkonkurs (Schuldenregulierungsverfahren bei Privatpersonen).
 
-Ein Einzelunternehmen ist dadurch gekennzeichnet, dass nur eine Person das Unternehmen führt, die 
-Entscheidungen trifft und das unternehmerische Risiko trägt. Ein Einzelunternehmer oder eine 
-Einzelunternehmerin haftet unbeschränkt für die gesamten Schulden seines Unternehmens, d.h. die 
-Haftung besteht nicht nur mit dem betrieblichen Vermögen, sondern auch mit dem Privatvermögen. 
-Viele Kleinunternehmen sind als Einzelunternehmen organisiert, weil sie relativ einfach und ohne 
-Mindestkapitalerfordernisse gegründet werden können. Das Kapital, das benötigt wird, muss der 
-Einzelunternehmer oder die Einzelunternehmerin für gewöhnlich allein aufbringen. Reichen die 
-eigenen Mittel nicht, wird der weitere Bedarf an finanziellen Mitteln in den meisten Fällen durch einen 
-Kredit abgedeckt. 
-Oft arbeitet nur der Einzelunternehmer oder die Einzelunternehmerin selbst für das Unternehmen, 
-manchmal werden ein paar Mitarbeiterinnen und Mitarbeiter zur Unterstützung beschäftigt. Der 
-Selbstständigkeit und der Unabhängigkeit von anderen Gesellschafter:innen bei der 
-Unternehmensführung steht aber immer das Risiko gegenüber, das der oder die Einzelunternehmer:in 
-ganz allein in vollem Umfang tragen muss. Scheitert ein Einzelunternehmen, bedeutet das oft nicht 
-nur das Ende für das Unternehmen, sondern auch finanzielle Schwierigkeiten für die Unternehmerin 
-oder den Unternehmer als Privatperson. Die gescheiterte Selbstständigkeit ist ein häufiger Grund für 
-einen Privatkonkurs (Schuldenregulierungsverfahren bei Privatpersonen). 
-
-### Personengesellschaften
-
-An einer Personengesellschaft ist mehr als eine Person beteiligt. Diese Personen bringen nicht nur das 
-Kapital für das Unternehmen auf, sie haften auch für die Schulden des Unternehmens. Je nachdem, 
-um welche Art von Gesellschafter:in es sich handelt, arbeiten sie auch im Unternehmen mit. 
-Einzelunternehmen, deren Unternehmensumfang deutlich zunimmt, sodass die 
-Unternehmensführung und/oder die Finanzierung für eine Person zu viel werden, können in 
-Personengesellschaften umgewandelt werden, um die Finanzierungsmöglichkeiten, die 
-Haftungssituation zu verbessern und die Verantwortung für die Unternehmensleitung aufzuteilen. Bei 
-den Personengesellschaften werden die Varianten Offene Gesellschaft und Kommanditgesellschaft 
-unterschieden. 
-Die Offene Gesellschaft (OG) kennt nur eine Art von Gesellschafter:innen. Mindestens zwei 
-Gesellschafter:innen gründen die OG, alle Gesellschafter:innen sind zur Geschäftsführung berechtigt 
-und verpflichtet. Jede Gesellschafterin und jeder Gesellschafter haftet mit dem gesamten 
-Privatvermögen für den Gesamtbetrag der Schulden des Unternehmens (solidarische Haftung) und 
-beteiligt sich am Kapital des Unternehmens, für das es jedoch wie beim Einzelunternehmen keine 
-gesetzliche Mindesthöhe gibt. 
-Die Kommanditgesellschaft (KG) hingegen unterscheidet zwischen zwei Arten von 
-Gesellschafter:innen, den Komplementären und den Kommanditisten. Mindestens eine Person ist 
-Komplementär, die im Hinblick auf die Mitarbeit im Unternehmen, die Beteiligung am Kapital und die 
-Haftung einem OG-Gesellschafter oder einer OG-Gesellschafterin vergleichbar ist. Daneben gibt es 
-noch mindestens eine Person als Kommanditisten, die nur mit der eigenen Kapitaleinlage haftet und 
-nicht im Unternehmen mitarbeitet. Für diesen Gesellschaftertyp ist also eine Haftungsbeschränkung 
-möglich. Kommanditisten haben Kontrollrechte und dürfen in die Bücher der Gesellschaft Einsicht 
-nehmen. 
+Personengesellschaften An einer Personengesellschaft ist mehr als eine Person beteiligt. Diese Personen bringen nicht nur das Kapital für das Unternehmen auf, sie haften auch für die Schulden des Unternehmens. Je nachdem, um welche Art von Gesellschafter:in es sich handelt, arbeiten sie auch im Unternehmen mit. Einzelunternehmen, deren Unternehmensumfang deutlich zunimmt, sodass die Unternehmensführung und/oder die Finanzierung für eine Person zu viel werden, können in Personengesellschaften umgewandelt werden, um die Finanzierungsmöglichkeiten, die Haftungssituation zu verbessern und die Verantwortung für die Unternehmensleitung aufzuteilen. Bei den Personengesellschaften werden die Varianten Offene Gesellschaft und Kommanditgesellschaft unterschieden. Die Offene Gesellschaft (OG) kennt nur eine Art von Gesellschafter:innen. Mindestens zwei Gesellschafter:innen gründen die OG, alle Gesellschafter:innen sind zur Geschäftsführung berechtigt und verpflichtet. Jede Gesellschafterin und jede r Gesellschafter haftet mit dem gesamten Privatvermögen für den Gesamtbetrag der Schulden des Unternehmens (solidarische Haftung) und beteiligt sich am Kapital des Unternehmens, für das es jedoch wie beim Einzelunternehmen keine gesetzliche Mindesthöhe gibt. Die Kommanditgesellschaft (KG) hingegen unterscheidet zwischen zwei Arten von Gesellschafter:innen, den Komplementären und den Kommanditisten. Mindestens eine Person ist Komplementär, die im Hinblick auf die Mitarbeit im Unternehmen, die Beteiligung am Kapital und die Haftung einem OG -Gesellschafter oder einer OG -Gesellschafterin vergleichbar ist. Daneben gibt es noch mindestens eine Person als Kommanditisten, die nur mit der eigenen Kapitaleinlage haftet und nicht im Unternehmen mitarbeitet. Für diesen Gesellschaftertyp ist also eine Haftungsbeschränkung möglich. Kommanditisten haben Kontrollrechte und dürfen in die Bücher der Gesellschaft Einsicht nehmen.
 
 Personengesellschaften sind im Hinblick auf die von den Gesellschaftern eingebrachten Mittel in der Regel beschränkt, weil Personengesellschaften meist nur wenige Gesellschafter haben. Diese sind in vielen Fällen nicht in der Lage, hohe Kapitalsummen in das Unternehmen einzubringen. Personengesellschaften sind daher auch oft von der Finanzierung durch Bankkredite abhängig.
 
-### Kapitalgesellschaften
+Kapitalgesellschaften Höhere Kapitalsummen können eher mit Kapitalgesellschaften aufgebracht werden. Die Idee von Kapitalgesellschaften besteht darin, dass die Gesellschafter:innen Kapital für das Unternehmen zur Verfügung stellen, jedoch nicht (notwendigerweise) im Unternehmen mitarbeiten und dieses leiten. Das Gesetz sieht hier für die Kapitalbeteiligung eine Mindestkapitalhöhe vor. Durch viele Gesellschafter:innen, die grundsätzlich nur mit dem eingebrachten Kapital haften, können auch eher hohe Kapitalsummen aufgebracht werden. Da die Gesellschafter:innen nicht notwendigerweise auch mit der Geschäftsführung betraut sind, können Kapitalaufbringung und Geschäftsführung daher bei Kapitalgesellschaften getrennt sein. Kapitalgesellschaften weisen eine eigene Rechtspersönlichkeit auf, sie gelten als juristische Personen (im Vergleich zu „natürlichen Personen“, also Menschen). Sie können als juristische Personen Geschäfte machen, Verträge abschließen, klagen und geklagt w erden, sie brauchen aber natürliche Personen, die für sie handeln. Die Gesellschaft mit beschränkter Haftung (GmbH) ist eine mögliche Form von Kapitalgesellschaft. Es muss zumindest einen Gesellschafter geben. Das von dem/den Gesellschafter/n aufgebrachte Kapital wird Stammkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens € 10.000 (seit 1.1.2024, davor waren es € 35.000 ) betragen. Jede Einlage eines Gesellschafters oder einer Gesellschafterin (Stammeinlage) muss zumindest € 70 betragen. Zumindest die Hälfte des Stammkapitals ist in Form von Geld aufzubringen, der Rest kann auch eine Sacheinlage sein (Computer, Auto, etc.). Die GmbH wird von einem oder mehreren Geschäftsführer:innen geleitet. Der Geschäftsführer oder die Geschäftsführerin kann auch Gesellschafter:in der GmbH sein („geschäftsführende:r Gesellschafter:in“), muss aber nicht. Für die Geschäftsführung wird ein Gehalt bezogen, die Gesellschafter:innen erhalten für ihre Kapitaleinlagen Gewinnanteile. Seit kurzem gibt es eine weitere an die GmbH „angelehnte“ Gesellschaftsform, die Flexible Kapitalgesellschaft (FlexKapG). Ebenso wie bei der GmbH reicht ein Gesellschafter oder eine Gesellschafterin, das Stammkapital beträgt ebenfalls € 10.000. Der Mindestbetrag einer Stammeinlage beträgt jedoch nur € 1. Ein wesentlicher Unterschied besteht darin, dass die FlexKapG Unternehmenswert-Anteile vorsieht, die eine Sonderform des Stammkapitals sind und eine einfache Beteiligung der Mitarbeiter:innen ermöglichen so llen. Unternehmenswert- Beteiligte haben einen Anspruch auf ihren Gewinnanteil, sie verfügen aber über kein Stimmrecht. Auch die Aktiengesellschaft (AG) zählt zu den Kapitalgesellschaften. Das Kapital, das die Gesellschafter einbringen, wird Grundkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens 70.000 Euro betragen. Da das Grundkapital in Aktien aufgeteilt wird, werden die Gesellsch after Aktionäre genannt. So wie die GmbH-Gesellschafter haften auch die Aktionäre nicht persönlich für die Schulden der AG, sie riskieren nur das Geld, das sie in den Aktienkauf investieren. Der Vorstand führt die Geschäfte in eigener Verantwortung und vertritt die Gesellschaft. Die Vorstandsmitglieder werden vom Aufsichtsrat bestellt und abberufen. Große Unternehmen, die viel Kapital benötigen, sind häufig als AG organisiert.
 
-Höhere Kapitalsummen können eher mit Kapitalgesellschaften aufgebracht werden. Die Idee von 
-Kapitalgesellschaften besteht darin, dass die Gesellschafter:innen Kapital für das Unternehmen zur 
-Verfügung stellen, jedoch nicht (notwendigerweise) im Unternehmen mitarbeiten und dieses leiten. 
-Das Gesetz sieht hier für die Kapitalbeteiligung eine Mindestkapitalhöhe vor. Durch viele 
-Gesellschafter:innen, die grundsätzlich nur mit dem eingebrachten Kapital haften, können auch eher 
-hohe Kapitalsummen aufgebracht werden. Da die Gesellschafter:innen nicht notwendigerweise auch 
-mit der Geschäftsführung betraut sind, können Kapitalaufbringung und Geschäftsführung daher bei 
-Kapitalgesellschaften getrennt sein. 
-Kapitalgesellschaften weisen eine eigene Rechtspersönlichkeit auf, sie gelten als juristische Personen 
-(im Vergleich zu „natürlichen Personen“, also Menschen). Sie können als juristische Personen 
-Geschäfte machen, Verträge abschließen, klagen und geklagt werden, sie brauchen aber natürliche 
-Personen, die für sie handeln. 
-Die Gesellschaft mit beschränkter Haftung (GmbH) ist eine mögliche Form von Kapitalgesellschaft. Es 
-muss zumindest einen Gesellschafter geben. Das von dem/den Gesellschafter/n aufgebrachte Kapital 
-wird Stammkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens € 10.000 (seit 
-1.1.2024, davor waren es € 35.000) betragen. Jede Einlage eines Gesellschafters oder einer 
-Gesellschafterin (Stammeinlage) muss zumindest € 70 betragen. Zumindest die Hälfte des 
-Stammkapitals ist in Form von Geld aufzubringen, der Rest kann auch eine Sacheinlage sein (Computer, 
-Auto, etc.). 
-Die GmbH wird von einem oder mehreren Geschäftsführer:innen geleitet. Der Geschäftsführer oder 
-die Geschäftsführerin kann auch Gesellschafter:in der GmbH sein („geschäftsführende:r 
-Gesellschafter:in“), muss aber nicht. Für die Geschäftsführung wird ein Gehalt bezogen, die 
-Gesellschafter:innen erhalten für ihre Kapitaleinlagen Gewinnanteile. 
-Seit kurzem gibt es eine weitere an die GmbH „angelehnte“ Gesellschaftsform, die Flexible 
-Kapitalgesellschaft (FlexKapG). Ebenso wie bei der GmbH reicht ein Gesellschafter oder eine 
-Gesellschafterin, das Stammkapital beträgt ebenfalls € 10.000. Der Mindestbetrag einer Stammeinlage 
-beträgt jedoch nur € 1. Ein wesentlicher Unterschied besteht darin, dass die FlexKapG 
-Unternehmenswert-Anteile vorsieht, die eine Sonderform des Stammkapitals sind und eine einfache 
-Beteiligung der Mitarbeiter:innen ermöglichen sollen. Unternehmenswert-Beteiligte haben einen 
-Anspruch auf ihren Gewinnanteil, sie verfügen aber über kein Stimmrecht. 
-Auch die Aktiengesellschaft (AG)zählt zu den Kapitalgesellschaften. Das Kapital, das die Gesellschafter 
-einbringen, wird Grundkapital genannt und muss auf Grund gesetzlicher Bestimmungen mindestens 
-70.000 Euro betragen. Da das Grundkapital in Aktien aufgeteilt wird, werden die Gesellschafter 
-Aktionäre genannt. So wie die GmbH-Gesellschafter haften auch die Aktionäre nicht persönlich für die 
-Schulden der AG, sie riskieren nur das Geld, das sie in den Aktienkauf investieren. Der Vorstand führt 
-die Geschäfte in eigener Verantwortung und vertritt die Gesellschaft. Die Vorstandsmitglieder werden 
-vom Aufsichtsrat bestellt und abberufen. Große Unternehmen, die viel Kapital benötigen, sind häufig 
-als AG organisiert. 
+Eine Variante der Aktiengesellschaft ist die Rechtsform der Europäischen Gesellschaft, die auch Europäische Aktiengesellschaft oder Societas Europaea (SE) genannt wird. Die Strabag ist zum Beispiel als SE organisiert. Die SE stellt eine mögliche Rechtsform für Aktiengesellschaften in der Europäischen Union und im Europäischen Wirtschaftsraum dar. So ist der Rechtsrahmen für diese Gesellschaftsform immer gleich, egal in welchem Mitgliedsstaat der EU oder des EWR die SE ihren Sitz hat. Das ist vor allem für Unternehmen, die in mehreren EU -/ EWR-Staaten Niederlassungen haben, von Interesse. Das Mindestkapital beträgt 120.000 Euro.
 
-Eine Variante der Aktiengesellschaft ist die Rechtsform der Europäischen Gesellschaft, die auch Europäische Aktiengesellschaft oder Societas Europaea (SE) genannt wird. Die Strabag ist zum Beispiel als SE organisiert. Die SE stellt eine mögliche Rechtsform für Aktiengesellschaften in der Europäischen Union und im Europäischen Wirtschaftsraum dar. So ist der Rechtsrahmen für diese Gesellschaftsform immer gleich, egal in welchem Mitgliedsstaat der EU oder des EWR die SE ihren Sitz hat. Das ist vor allem für Unternehmen, die in mehreren EU-/ EWR-Staaten Niederlassungen haben, von Interesse. Das Mindestkapital beträgt 120.000 Euro.
+Genossenschaften Genossenschaften sind Zusammenschlüsse von zumindest zwei natürlichen und/oder juristischen Personen mit dem Ziel der Förderung des Erwerbs und der Wirtschaft ihrer Mitglieder. Die Rechtsform selbst lautet in Österreich „eingetragene Genossenschaft“ (e. Gen.) und dient zur Errichtung von Erwerbs - und Wirtschaftsgenossenschaften. Auch die Genossenschaft hat ein europäisches Pendant: die Europäischen Genossenschaft oder Societas Cooperativa Europaea (SCE). Genossenschaften folgen dem Motto: „Was einer nicht schafft, das schaffen viele!“. Im Vordergrund steht daher nicht das Erzielen von Gewinnen, sondern das gemeinsame Wirtschaften, zum Beispiel durch
 
-### Genossenschaften
+- das gemeinsame Nutzen von Produktionsanlagen und Betriebsmitteln und/oder
+- den gemeinsamen Einkauf und/oder Vertrieb. So können Synergieeffekte genutzt werden, weil man gemeinsam andere Größenverhältnisse erreichen kann. Gewinne werden entweder wieder in die Genossenschaft reinvestiert oder als Rückvergütungen an die Genossenschaftsmitglieder ausgezahlt. Die Anzahl der Mi tglieder ist leicht veränderlich, weil es einfach ist, in eine Genossenschaft einzutreten und auch wieder auszutreten. So kann man auch nur vorübergehend zusammenarbeiten. Es ist kein Mindestkapital notwendig, Genossenschafter beteiligen sich an der Genossenschaft mit einer Kapitaleinlage. Ihre Haftung ist für gewöhnlich auf einen bestimmten Geldbetrag beschränkt. Wenn zum Beispiel ein Genossenschaftsanteil 100 Euro beträgt, haftet der Genossenschafter mit weiteren 100 Euro, d.h. der mögliche Verlust sind maximal 200 Euro. Die Leitung der Genossenschaft erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird. Das oberste Organ ist jedoch die Hauptversammlung, in der über die wesentlichen Entscheidungen in der Genossenschaft abgestimmt wird. Bemerkenswert ist in diesem Zusammenhang das so genannte Kopfstimmrecht, das bedeutet, dass bei einer Abstimmung jede Person – unabhängig von ihrem Anteil am Genossenschaftskapital – eine Stimme hat und diese Stimme nicht entsprechend dem Anteil am Kapital gewichtet wird. Die Satzung einer Genossenschaft kann aber eine abweichende Regelung vorsehen. Ab einer bestimmten Größe der Genossenschaft (ab 40 Arbeitnehmer/innen) ist auch ein Aufsichtsrat zu bilden.
 
-Genossenschaften sind Zusammenschlüsse von zumindest zwei natürlichen und/oder juristischen Personen mit dem Ziel der Förderung des Erwerbs und der Wirtschaft ihrer Mitglieder. Die Rechtsform selbst lautet in Österreich „eingetragene Genossenschaft“ (e. Gen.) und dient zur Errichtung von Erwerbs- und Wirtschaftsgenossenschaften. Auch die Genossenschaft hat ein europäisches Pendant: die Europäischen Genossenschaft oder Societas Cooperativa Europaea (SCE). Genossenschaften folgen dem Motto: „Was einer nicht schafft, das schaffen viele!“. Im Vordergrund steht daher nicht das Erzielen von Gewinnen, sondern das gemeinsame Wirtschaften, zum Beispiel durch
+Eintragung ins Firmenbuch Manche Unternehmen können, andere müssen ins Firmenbuch eingetragen werden. Im Wesentlichen ist es die Rechtsform, die hier entscheidend ist.
 
-• das gemeinsame Nutzen von Produktionsanlagen und Betriebsmitteln und/oder 
-• den gemeinsamen Einkauf und/oder Vertrieb. So können Synergieeffekte genutzt werden, weil man gemeinsam andere Größenverhältnisse erreichen kann. Gewinne werden entweder wieder in die Genossenschaft reinvestiert oder als Rückvergütungen an die Genossenschaftsmitglieder ausgezahlt. Die Anzahl der Mitglieder ist leicht veränderlich, weil es einfach ist, in eine Genossenschaft einzutreten und auch wieder auszutreten. So kann man auch nur vorübergehend zusammenarbeiten. Es ist kein Mindestkapital notwendig, Genossenschafter beteiligen sich an der Genossenschaft mit einer Kapitaleinlage. Ihre Haftung ist für gewöhnlich auf einen bestimmten Geldbetrag beschränkt. Wenn zum Beispiel ein Genossenschaftsanteil 100 Euro beträgt, haftet der Genossenschafter mit weiteren 100 Euro, d.h. der mögliche Verlust sind maximal 200 Euro. Die Leitung der Genossenschaft erfolgt durch den Vorstand, der auch von Genossenschaftern gebildet wird. Das oberste Organ ist jedoch die Hauptversammlung, in der über die wesentlichen Entscheidungen in der Genossenschaft abgestimmt wird. Bemerkenswert ist in diesem Zusammenhang das so genannte Kopfstimmrecht, das bedeutet, dass bei einer Abstimmung jede Person – unabhängig von ihrem Anteil am Genossenschaftskapital – eine Stimme hat und diese Stimme nicht entsprechend dem Anteil am Kapital gewichtet wird. Die Satzung einer Genossenschaft kann aber eine abweichende Regelung vorsehen. Ab einer bestimmten Größe der Genossenschaft (ab 40 Arbeitnehmer/innen) ist auch ein Aufsichtsrat zu bilden. 
-Eintragung ins Firmenbuch 
-Manche Unternehmen können, andere müssen ins Firmenbuch eingetragen werden. Im Wesentlichen 
-ist es die Rechtsform, die hier entscheidend ist. 
-Was ist das Firmenbuch? 
-Das Firmenbuch ist eine öffentliche, zentrale von Gerichten geführte 
-Unternehmensdatenbank, in die Einsicht genommen werden kann. Dadurch wird 
-das Unternehmen transparenter, was für Geschäftsabschlüsse förderlich sein 
-kann, weil Geschäftspartner wichtige Informationen zum Unternehmen im 
-Firmenbuch ersehen können. 
-Die OG, KG, GmbH und AG sowie die Genossenschaften müssen ins Firmenbuch eingetragen werden, 
-das Einzelunternehmen erst ab einer bestimmten Größe (mehr als 700.000 Euro Umsatz pro Jahr in 
-zwei aufeinanderfolgenden Jahren oder mehr als 1 Mio. Euro Umsatz in einem Jahr). Eine freiwillige 
-Eintragung von Einzelunternehmen ist möglich, wenn ihnen zum Beispiel die oben genannte 
-Transparenz gegenüber ihren Geschäftspartnern wichtig ist. Kleine Einzelunternehmen sind trotzdem 
-häufig nicht eingetragen. 
-Die Firmenbucheintragung enthält die Firma, das ist der rechtliche Name des Unternehmens (z.B. 
-woom GmbH), den Sitz des Unternehmens und den Unternehmensgegenstand, die Namen der 
-Gesellschafter (nicht jedoch die Aktionäre der AG), die Höhe der Kapitaleinlagen (bei Kommanditisten 
-und GmbH-Gesellschaftern) und zeigt auf, wer die Geschäfte führen darf. 
-Zahlen, Daten, Fakten … 
-Der überwiegende Teil der Unternehmen sowie der 
-Unternehmensgründungen in Österreich – rund 85 % - sind 
-Einzelunternehmen. Ungefähr jedes zehnte Unternehmen ist eine GmbH, 
-gefolgt von je ca. 2 % OG und KG. Die übrigen Rechtsformen haben einen 
-noch geringeren Anteil. 
+Was ist das Firmenbuch? Das Firmenbuch ist ein e öffentliche, zentrale von Gerichten geführte Unternehmensdatenbank, in die Einsicht genommen werden kann. Dadurch wird das Unternehmen transparenter, was für Geschäftsabschlüsse förderlich sein kann, weil Geschäftspartner wichtige Informationen zum Unternehmen im Firmenbuch ersehen können.
 
-Tab. 2: Zusammenfassende Darstellung der Merkmale der verschiedenen Rechtsformen
+Die OG, KG, GmbH und AG sowie die Genossenschaften müssen ins Firmenbuch eingetragen werden, das Einzelunternehmen erst ab einer bestimmten Größe (mehr als 700.000 Euro Umsatz pro Jahr in zwei aufeinanderfolgenden Jahren oder mehr als 1 Mio. Euro Umsatz in einem Jahr). Eine freiwillige Eintragung von Einzelunternehmen ist möglich, wenn ihnen zum Beispiel die oben genannte Transparenz gegenüber ihren Geschäftspartnern wichtig ist. Kleine Einzelunternehmen sind trotzdem häufig nicht eingetragen. Die Firmenbucheintragung enthält die Firma, das ist der rechtliche Name des Unternehmens (z.B. woom GmbH), den Sitz des Unternehmens und den Unternehmensgegenstand, die Namen der Gesellschafter (nicht jedoch die Aktionäre der AG), die Höhe der Kapitaleinlagen (bei Kommanditisten und GmbH-Gesellschaftern) und zeigt auf, wer die Geschäfte führen darf.
 
-Einzel unternehmen
+Zahlen, Daten, Fakten … Der überwiegende Teil der Unternehmen sowie der Unternehmensgründungen in Österreich – rund 85 % - sind Einzelunternehmen. Ungefähr jedes zehnte Unternehmen ist eine GmbH, gefolgt von je ca. 2 % OG und KG. Die übrigen Rechtsformen haben einen noch geringeren Anteil.
 
-Offene Gesellschaft
+Tab. 2: Zusammenfassende Darstellung der Merkmale der verschiedenen Rechtsformen Einzelunternehmen Offene Gesellschaft Kommanditgesellschaft Gesellschaft mit beschränkter Haftung Aktiengesellschaft Societas Europaea (SE) Genossenschaft Wer führt die Geschäfte? Der Einzelunternehmer Die OGGesellschafter (mind. zwei) Der/die Komplementäre (mind. einer) Der/die Geschäftsführ er (mind. einer) Der Vorstand Der Vorstand Wer ist Gesellschafter? Der Einzelunternehmer Die OGGesellschafter (mind. zwei) Der/die Komplementäre (mind. einer) und der/die Kommanditisten (mind. einer) Alle GmbHGesellschafter (mind. einer), die eine Stammeinlage geleistet haben Die Aktionäre, die zumindest eine Aktie gekauft haben Die Genossenschafter Wer bringt das Kapital auf? Der Einzelunternehmer Die OGGesellschafter Der Komplementär kann, der Kommanditist muss eine Die GmbHGesellschafter mit ihren Stammeinlage n Die Aktionäre durch den Aktienkauf Die Genossenschafter
 
-Kommandit gesellschaft
-
-Genossen schaft
-
-Gesellschaft mit beschränkter Haftung
-
-Aktien 
-gesellschaft 
-Societas 
-Europaea (SE) 
-
-Der Einzel unternehmer
-
-Der Vorstand Der Vorstand
-
-Wer führt die Geschäfte?
-
-Die OG Gesellschafter (mind. zwei)
-
-Der/die Komplementäre (mind. einer)
-
-Der/die 
-Geschäftsführ 
-er (mind. 
-einer) 
-
-| | Wer ist | Der Einzel | | Die OG | Der/die | | | Alle GmbH | | Die Aktionäre, | Die | | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | Gesell | unternehmer | | Gesellschafter | Komplementäre | | | Gesellschafter | | die zumindest | Genossen | | |
-| | schafter? | | | (mind. zwei) | (mind. einer) | | | (mind. einer), | | eine Aktie | schafter | | |
-| | | | | | und der/die | | | die eine | | gekauft haben | | | |
-| | | | | | Kommandi | | | Stammeinlage | | | | | |
-| | | | | | tisten (mind. | | | geleistet | | | | | |
-| | | | | | einer) | | | haben | | | | | |
-| | Wer bringt | Der Einzel | | Die OG | Der | | | Die GmbH | | Die Aktionäre | Die | | |
-| | das Kapital | unternehmer | | Gesellschafter | Komplementär | | | Gesellschafter | | durch den | Genossen | | |
-| | auf? | | | | kann, der | | | mit ihren | | Aktienkauf | schafter | | |
-| | | | | | Kommanditist | | | Stammeinlage | | | | | |
-| | | | | | muss eine | | | n | | | | | |
-
-Kapitaleinlage leisten
-
-| Gibt es ein | | Nein | Nein | | Nein | | Ja, 10.000 | Ja, 70.000 | | | Nein | |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mindest | | | | | | | Euro | Euro (SE: | | | | |
-| kapital? | | | | | | | | 120.000 Euro) | | | | |
-| Wer haftet | | Der Einzel | Die OG | | Der | | Die GmbH | Die Aktionäre | | | Die | |
-| für die | | unternehmer | Gesellschafter | | Komplementär | | Gesellschafter | nur mit ihrem | | | Genossen | |
-| Schulden des | | persönlich, | persönlich, | | haftet so wie | | nur mit ihrer | Aktienkapital | | | schafter mit | |
-| Unter | | unbeschränkt | unbeschränkt, | | der OG | | Stammeinlage | | | | ihrer | |
-| nehmens | | | jeder für den | | Gesellschafter, | | | | | | Einlage | |
-| | | | Gesamtbetrag | | der | | | | | | (i.d.R. in | |
-| | | | der Schulden | | Kommanditist | | | | | | doppelter | |
-| | | | | | nur bis zur Höhe | | | | | | Höhe) | |
-| | | | | | seiner Einlage | | | | | | | |
-| Wie kann | | Der Einzel | Die OG | | Komplementär: | | Die bisherigen | Neue Aktien | | | Durch die | |
-| zusätzliches | | unternehmer | Gesellschafter | | siehe OG; | | Gesellschafter | werden | | | Aufnahme | |
-| (Eigen-) | | muss Kapital | müssen Kapital | | Kommanditist: | | erhöhen ihre | ausgegeben, | | | weiterer | |
-| Kapital | | einbringen. | einbringen | | Kapitaleinlage | | Einlagen oder | die entweder | | | Genossen | |
-| aufgebracht | | | | | erhöhen | | nehmen einen | die bisherigen | | | schafter | |
-| werden? | | | | | | | zusätzlichen | Aktionäre | | | | |
-
-Gesellschafter kaufen auf können oder sonst neue Aktionäre
-
-Anmerkung: Aus Platzgründen wurde in dieser Tabelle auf das Gendern des Texts verzichtet.
+Kapitaleinlage leisten Gibt es ein Mindestkapital? Nein Nein Nein Ja, 10.000 Euro Ja, 70.000 Euro (SE: 120.000 Euro) Nein Wer haftet für die Schulden des Unternehmens Der Einzelunternehmer persönlich, unbeschränkt Die OGGesellschafter persönlich, unbeschränkt, jeder für den Gesamtbetrag der Schulden Der Komplementär haftet so wie der OGGesellschafter, der Kommanditist nur bis zur Höhe seiner Einlage Die GmbHGesellschafter nur mit ihrer Stammeinlage Die Aktionäre nur mit ihrem Aktienkapital Die Genossenschafter mit ihrer Einlage (i.d.R. in doppelter Höhe) Wie kann zusätzliches (Eigen-) Kapital aufgebracht werden? Der Einzelunternehmer muss Kapital einbringen. Die OGGesellschafter müssen Kapital einbringen Komplementär: siehe OG; Kommanditist: Kapitaleinlage erhöhen Die bisherigen Gesellschafter erhöhen ihre Einlagen oder nehmen einen zusätzlichen Gesellschafter auf Neue Aktien werden ausgegeben, die entweder die bisherigen Aktionäre kaufen können oder sonst neue Aktionäre Durch die Aufnahme weiterer Genossenschafter Anmerkung: Aus Platzgründen wurde in dieser Tabelle auf das Gendern des Texts verzichtet.
 
 ## 3.3 Wie Unternehmen finanzielle Mittel aufbringen
 
-Schon bei der Gründung eines Unternehmens ist die ausreichende Finanzierung eine der 
-wesentlichsten Gelingensbedingungen. Viele Unternehmen brauchen Geschäfts- und 
-Büroräumlichkeiten, die ausgestattet werden müssen. Es besteht daher Finanzierungsbedarf für diese 
-(langfristigen) Investitionen. Auch die Finanzierung dafür muss daher langfristig zur Verfügung stehen. 
-Wenn das Unternehmen nach der Gründung seine Tätigkeit aufnimmt, erfolgen durch Umsätze 
-(Verkaufserlöse) auch Zahlungen an das Unternehmen und so stehen auch wieder finanzielle Mittel 
-zur Verfügung. Oft müssen aber Lieferant:innen früher bezahlt werden, als es zu Einnahmen durch 
-Verkäufe kommt. Daher gibt es neben dem langfristigen Finanzbedarf auch einen kurzfristigen 
-Finanzbedarf. 
-Finanzieren bedeutet daher finanzielle Mittel aufzubringen, um 
-• Investitionen (zum Beispiel Anschaffung von Maschinen, Fuhrpark, Computerausstattung etc.), die nur in größeren zeitlichen Abständen vorgenommen werden, und 
-• laufende, wiederkehrende Zahlungen (zum Beispiel Einkauf von Waren und/oder Rohstoffen, Zahlung von Löhnen und Gehältern, Energie, Miete, etc.). tätigen zu können. Aus den Ausführungen zu den Rechtsformen ist bereits hervorgegangen, dass zunächst die Unternehmer:innen bzw. die Gesellschafter:innen finanzielle Mittel in das Unternehmen einbringen, es jedoch auch weitere Finanzierungsmöglichkeiten gibt. 
+Schon bei der Gründung eines Unternehmens ist die ausreichende Finanzierung eine der wesentlichsten Gelingensbedingungen. Viele Unternehmen brauchen Geschäfts - und Büroräumlichkeiten, die ausgestattet werden müssen. Es besteht daher Finanzierungsbedarf für diese (langfristigen) Investitionen. Auch die Finanzierung dafür muss daher langfristig zur Verfügung stehen. Wenn das Unternehmen nach der Gründung seine Tätigkeit aufnimmt, erfolgen durch Umsätze (Verkaufserlöse) auch Zahlungen an das Unternehmen und so stehen auch wieder finanzielle Mittel zur Verfügung. Oft müssen aber Lieferant:innen früher bezahlt werden, als es zu Einnahmen durch Verkäufe kommt. Daher gibt es neben dem langfristigen Finanzbedarf auch einen kurzfristigen Finanzbedarf. Finanzieren bedeutet daher finanzielle Mittel aufzubringen, um
 
-### Eigen- und Fremdfinanzierung
+- Investitionen (zum Beispiel Anschaffung von Maschinen, Fuhrpark, Computerausstattung etc.), die nur in größeren zeitlichen Abständen vorgenommen werden, und
+- laufende, wiederkehrende Zahlungen (zum Beispiel Einkauf von Waren und/oder Rohstoffen, Zahlung von Löhnen und Gehältern, Energie, Miete, etc.). tätigen zu können. Aus den Ausführungen zu den Rechtsformen ist bereits hervorgegangen, dass zunächst die Unternehmer:innen bzw. die Gesellschafter:innen finanzielle Mittel in das Unternehmen einbringen, es jedoch auch weitere Finanzierungsmöglichkeiten gibt.
 
-Kapital, das die Unternehmensgründer:innen und/oder die Gesellschafter:innen in das Unternehmen 
-einbringen, gilt als Eigenkapital. Dazu zählen nicht nur die finanziellen Mittel, sondern auch 
-Sacheinlagen. Bringen die Gründer:innen also zum Beispiel bei der Gründung nicht nur Geld, sondern 
-auch einen kleinen Lieferwagen und zwei PCs in das Unternehmen ein, erhöhen auch diese 
-Sacheinlagen das Eigenkapital. 
-Eigenkapital hat eine sehr große Bedeutung für ein Unternehmen: es muss nicht zurückgezahlt werden 
-und steht dem Unternehmen daher langfristig (in der Regel unbefristet) zur Verfügung. Es ist daher 
-eine mögliche geeignete Finanzierungsart für langfristige Investitionen. Für Eigenkapital müssen in 
-Zeiten, in denen keine Gewinne erwirtschaftet werden, keine Zinsen gezahlt werden wie für einen 
-Kredit. In Zeiten, in denen Gewinne erwirtschaftet werden, können Auszahlungen an die 
-Eigenkapitalgeber erfolgen, jedoch besteht dazu keine Verpflichtung. Werden Gewinne im 
-Unternehmen belassen, erhöhen sie das Eigenkapital. 
-Für viele Unternehmen ist es jedoch unrealistisch, sich zur Gänze über Eigenkapital zu finanzieren. 
-Kommt das Kapital von „Dritten“, zum Beispiel von einer Bank, wird es Fremdkapital genannt. 
-Fremdkapital steht für gewöhnlich nur befristet zur Verfügung und muss zurückgezahlt werden. 
-Meistens muss Fremdkapital auch verzinst werden, d.h. es sind Zinszahlungen an die 
-Fremdkapitalgeber:innen (Gläubiger) zu bezahlen. Kredite sind die wesentlichste Form von 
-Fremdkapital. 
+Eigen- und Fremdfinanzierung Kapital, das die Unternehmensgründer:innen und/oder die Gesellschafter:innen in das Unternehmen einbringen, gilt als Eigenkapital. Dazu zählen nicht nur die finanziellen Mittel, sondern auch Sacheinlagen. Bringen die Gründer:innen also zum Beispiel bei der Gründung nicht nur Geld, sondern auch einen kleinen Lieferwagen und zwei PCs in das Unternehmen ein, erhöhen auch diese Sacheinlagen das Eigenkapital. Eigenkapital hat eine sehr große Bedeutung für ein Unternehmen: es muss nicht zurückgezahlt werden und steht dem Unternehmen daher langfristig (in der Regel unbefristet) zur Verfügung. Es ist daher eine mögliche geeignete Finanzierungsart für langfristige Investitionen. Für Eigenkapital müssen in Zeiten, in denen keine Gewinne erwirtschaftet werden, keine Zinsen gezahlt werden wie für einen Kredit. In Zeiten, in denen Gewinne erwirtschaftet werden, können Auszahlungen an die Eigenkapitalgeber erfolgen, jedo ch besteht dazu keine Verpflichtung. Werden Gewinne im Unternehmen belassen, erhöhen sie das Eigenkapital. Für viele Unternehmen ist es jedoch unrealistisch, sich zur Gänze über Eigenkapital zu finanzieren. Kommt das Kapital von „Dritten“, zum Beispiel von einer Bank, wird es Fremdkapital genannt. Fremdkapital steht für gewöhnlich nur befristet zur Verfügung und muss zurückgezahlt werden. Meistens muss Fremdkapital auch verzinst werden, d.h. es sind Zinszahlungen an die Fremdkapitalgeber:innen (Gläubiger) zu bezahlen. Kredite sind die wesentlichste Form von Fremdkapital.
 
-Während langfristige Kreditfinanzierung hauptsächlich von Banken gewährt wird, sind bei der 
-kurzfristigen Kreditfinanzierung neben den Banken auch Lieferant:innen wichtige Kreditgeber. Müssen 
-Lieferungen nicht gleich, sondern „auf Ziel“, d.h. erst zu einem späteren Zeitpunkt, bezahlt werden, 
-erfolgt die Finanzierung durch die Lieferanten, man spricht von Lieferverbindlichkeiten gegenüber 
-diesen Lieferanten. Verzichtet man für das Nutzen dieses Zahlungsziels auf einen möglichen Preisabzug 
-für sofortiges Bezahlen („Skonto“), werden genau genommen auch für das Zahlen auf Ziel Zinsen 
-bezahlt. Die Effektivverzinsung des Skontos ist sogar in den meisten Fällen sehr hoch, sodass das 
-kurzfristige Überziehen des Bankkontos für rascheres Bezahlen die ökonomisch sinnvollere Variante 
-sein kann. 
-In der nachstehenden Tabelle sind die wesentlichen Merkmale von Eigen- und Fremdkapital 
-zusammengefasst: 
-Tab. 3 Merkmale von Eigen- und Fremdkapital 
-Eigenkapital Fremdkapital 
+Während langfristige Kreditfinanzierung hauptsächlich von Banken gewährt wird, sind bei der kurzfristigen Kreditfinanzierung neben den Banken auch Lieferant:innen wichtige Kreditgeber. Müssen Lieferungen nicht gleich, sondern „auf Ziel“, d.h. erst zu einem späteren Zeitpunkt, bezahlt werden, erfolgt die Finanzierung durch die Lieferanten, man spricht von Lieferverbindlichkeiten gegenüber diesen Lieferanten. Verzichtet man für das Nutzen dieses Zahlungsziels auf einen möglichen Preisabzug für sofortiges Bezahlen („Skonto“), werden genau genommen auch für das Zahlen auf Ziel Zinsen bezahlt. Die Effektivverzinsung des Skontos ist sogar in den meisten Fällen sehr hoch, sodass das kurzfristige Überziehen des Bankkontos für rascheres Bezahlen die ökonomisch sinnvollere Variante sein kann. In der nachstehenden Tabelle sind die wesentlichen Merkmale von Eigen - und Fremdkapital zusammengefasst: Tab. 3 Merkmale von Eigen- und Fremdkapital Eigenkapital Fremdkapital Wie lange steht das Kapital zur Verfügung? Langfristig, in der Regel unbefristet Kurzfristig und langfristig möglich, je nach Vereinbarung Was ist für das Kapital zu bezahlen? Evtl. Gewinnanteile an die Eigenkapitalgeber Zinsen für das Fremdkapital. Das Kapital selbst muss auch zurückgezahlt werden. Können die Kapitalgeber im Unternehmen mitreden? Abhängig von der Rechtsform haben Eigenkapitalgeber in unterschiedlichem Ausmaß Mitspracherechte Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung. Haben Kapitalgeber eine Sicherheit für die Rückzahlung des Kapitals? nein Wenn der Kredit ausreichend besichert ist, ja
 
-Wie lange steht das Kapital zur Verfügung?
+Innen- und Außenfinanzierung Stammt die Finanzierungsquelle aus dem Umsatz des Unternehmens, spricht man von Innenfinanzierung. Wesentliche Formen von Innenfinanzierung Hier ist vor allem das Einbehalten von Gewinnen eine wichtige Finanzierungsquelle. Sie wird auch Selbstfinanzierung genannt und erhöht das Eigenkapital. Damit wird das Unternehmen auf mehrfache Weise krisenresistenter:
 
-Langfristig, in der Regel unbefristet
+- Es ist weniger abhängig von Fremdkapitalgebern.
+- Es müssen keine (Fremdkapital-)Zinsen dafür bezahlt werden.
+- Verluste reduzieren das Eigenkapital. Ist daher viel Eigenkapital vorhanden, kann ein Unternehmen auch mehrere Jahre mit Verlusten überstehen, ohne überschuldet zu sein. Ist das Eigenkapital hingegen rasch aufgebraucht und übersteigt das Fremdkapital das Vermögen des Unternehmens, ist das Unternehmen überschuldet und wirtschaftlich gefährdet.
+- Gewinne, die in das Unternehmen reinvestiert werden, tragen dazu bei, Anlagen und Betriebsmittel zu erneuern, das Unternehmen bleibt modern ausgestattet und wettbewerbsfähig. Auch Abschreibungen und das Bilden von Rückstellungen können eine Innenfinanzierungsquelle sein:
 
-Kurzfristig und langfristig möglich, je nach Vereinbarung
+Abschreibungsfinanzierung Wenn ein Unternehmen die Preise für seine Produkte und Dienstleistungen berechnet, berücksichtigt es alle Aufwände (oder auch Kosten), die für die Produktion anfallen (und meist zusätzlich noch einen Gewinn). Kann es seine Produkte und Dienstleistungen dann zu diesen berechneten Preisen verkaufen, werden mit dem Verkaufserlös alle Aufwände verdient. Berücksichtigt ein Unternehmen bei diesen Aufwänden auch den Wertverlust seiner Maschinen, Computer, Fahrzeuge etc. (das ist die so genannte Abschreibung), wird auch dieser verdient. Der Wertverlust stellt aber keine Auszahlung dar, das Geld bleibt daher vorerst im Unternehmen. Die „verdienten“ Abschreibungen können in der Zwischenzeit für andere Investitionen verwendet werden. So können die Betriebsmittel laufend aktuell gehalten werden. Ein Beispiel zur Abschreibungsfinanzierung Angenommen, ein Unternehmen hat in einem Jahr über 200.000 Euro in die Anschaffung von Sachanlagen investiert. Werden diese Sachanlagen zehn Jahre genutzt, dann beträgt die Abschreibung pro Jahr 20.000 Euro. Diese Abschreibung wird (wie andere Kosten) in die Preise für die Räder einkalkuliert. Werden die Räder zu den kalkulierten Preisen verkauft, wird diese Abschreibung auch verdient. So stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung.
 
-Was ist für das Kapital zu bezahlen?
+Rückstellungsfinanzierung Unternehmen bilden für (mögliche) Aufwände in der Zukunft Rückstellungen, d.h. sie sorgen in ihrer Buchhaltung (vgl. nächster Abschnitt zum Themenbereich Rechnungswesen) dafür vor, dass sie in der Zukunft möglicherweise einen Aufwand haben werden. Das kann ein Aufwand für einen Gerichtsprozess sein, den das Unternehmen verlieren könnte, oder Aufwände für Urlaubsansprüche, Pensionen und Abfertigungszahlunge n. Wenn Unternehmen eine Rückstellung bilden, stellt diese Rückstellungsbildung einen Aufwand dar, der den Gewinn des Unt ernehmens verringert, aber keine Auszahlung darstellt (ähnlich wie bei der Abschreibung). Es stehen diese Mittel daher auch in der Zwischenzeit für andere Investitionen zur Verfügung. Ein Beispiel zur Rückstellungsfinanzierung Angenommen, ein Unternehmen hat Pensionsrückstellungen für Mitarbeiter:innen, die erst in 20 oder 30 Jahren in Pension gehen, gebildet. Durch die Rückstellungsbildung ist ein langfristiger Finanzierungseffekt gegeben.
 
-Evtl. Gewinnanteile an die Eigenkapitalgeber
+Wesentliche Formen von Außenfinanzierung Liegt die Finanzierungsquelle außerhalb des Unternehmens, spricht man von Außenfinanzierung. Von außen können sowohl Eigen - als auch Fremdkapital zugeführt werden. Die folgende Grafik zeigt wesentliche Formen der Außenfinanzierung.
 
-Zinsen für das Fremdkapital. Das Kapital selbst muss auch zurückgezahlt werden.
+*Abbildung 19: Wesentliche Formen der Außenﬁnanzierung*
 
-Können die Kapitalgeber im Unternehmen mitreden?
-
-Abhängig von der Rechtsform haben Eigenkapitalgeber in unterschiedlichem Ausmaß Mitspracherechte
-
-Fremdkapitalgeber haben in der Regel kein Mitspracherecht bei der Unternehmensführung.
-
-Haben Kapitalgeber eine Sicherheit für die Rückzahlung des Kapitals?
-
-nein Wenn der Kredit ausreichend besichert ist, ja
-
-### Innen- und Außenfinanzierung
-
-Stammt die Finanzierungsquelle aus dem Umsatz des Unternehmens, spricht man von 
-Innenfinanzierung. 
-Wesentliche Formen von Innenfinanzierung 
-Hier ist vor allem das Einbehalten von Gewinnen eine wichtige Finanzierungsquelle. Sie wird auch 
-Selbstfinanzierung genannt und erhöht das Eigenkapital. Damit wird das Unternehmen auf 
-mehrfache Weise krisenresistenter: 
-• Es ist weniger abhängig von Fremdkapitalgebern. 
-• Es müssen keine (Fremdkapital-)Zinsen dafür bezahlt werden. 
-• Verluste reduzieren das Eigenkapital. Ist daher viel Eigenkapital vorhanden, kann ein Unternehmen auch mehrere Jahre mit Verlusten überstehen, ohne überschuldet zu sein. Ist das Eigenkapital hingegen rasch aufgebraucht und übersteigt das Fremdkapital das Vermögen des Unternehmens, ist das Unternehmen überschuldet und wirtschaftlich gefährdet. 
-• Gewinne, die in das Unternehmen reinvestiert werden, tragen dazu bei, Anlagen und Betriebsmittel zu erneuern, das Unternehmen bleibt modern ausgestattet und wettbewerbsfähig. Auch Abschreibungen und das Bilden von Rückstellungen können eine Innenfinanzierungsquelle sein: 
-
-Abschreibungsfinanzierung 
-Wenn ein Unternehmen die Preise für seine Produkte und Dienstleistungen berechnet, berücksichtigt 
-es alle Aufwände (oder auch Kosten), die für die Produktion anfallen (und meist zusätzlich noch einen 
-Gewinn). Kann es seine Produkte und Dienstleistungen dann zu diesen berechneten Preisen 
-verkaufen, werden mit dem Verkaufserlös alle Aufwände verdient. Berücksichtigt ein Unternehmen 
-bei diesen Aufwänden auch den Wertverlust seiner Maschinen, Computer, Fahrzeuge etc. (das ist die 
-so genannte Abschreibung), wird auch dieser verdient. Der Wertverlust stellt aber keine Auszahlung 
-dar, das Geld bleibt daher vorerst im Unternehmen. Die „verdienten“ Abschreibungen können in der 
-Zwischenzeit für andere Investitionen verwendet werden. So können die Betriebsmittel laufend 
-aktuell gehalten werden. 
-Ein Beispiel zur 
-Abschreibungsfinanzierung 
-
-Angenommen, ein Unternehmen hat in einem Jahr über 200.000 Euro in die Anschaffung von Sachanlagen investiert. Werden diese Sachanlagen zehn Jahre genutzt, dann beträgt die Abschreibung pro Jahr 20.000 Euro. Diese Abschreibung wird (wie andere Kosten) in die Preise für die Räder einkalkuliert. Werden die Räder zu den kalkulierten Preisen verkauft, wird diese Abschreibung auch verdient. So stehen zehn Jahre lang jedes Jahr 20.000 Euro zur Verfügung.
-
-Rückstellungsfinanzierung 
-Unternehmen bilden für (mögliche) Aufwände in der Zukunft Rückstellungen, d.h. sie sorgen in ihrer 
-Buchhaltung (vgl. nächster Abschnitt zum Themenbereich Rechnungswesen) dafür vor, dass sie in der 
-Zukunft möglicherweise einen Aufwand haben werden. Das kann ein Aufwand für einen 
-Gerichtsprozess sein, den das Unternehmen verlieren könnte, oder Aufwände für Urlaubsansprüche, 
-Pensionen und Abfertigungszahlungen. Wenn Unternehmen eine Rückstellung bilden, stellt diese 
-Rückstellungsbildung einen Aufwand dar, der den Gewinn des Unternehmens verringert, aber keine 
-Auszahlung darstellt (ähnlich wie bei der Abschreibung). Es stehen diese Mittel daher auch in der 
-Zwischenzeit für andere Investitionen zur Verfügung. 
-Ein Beispiel zur 
-Rückstellungsfinanzierung 
-
-Angenommen, ein Unternehmen hat Pensionsrückstellungen für Mitarbeiter:innen, die erst in 20 oder 30 Jahren in Pension gehen, gebildet. Durch die Rückstellungsbildung ist ein langfristiger Finanzierungseffekt gegeben.
-
-Wesentliche Formen von Außenfinanzierung 
-Liegt die Finanzierungsquelle außerhalb des Unternehmens, spricht man von Außenfinanzierung. Von 
-außen können sowohl Eigen- als auch Fremdkapital zugeführt werden. Die folgende Grafik zeigt 
-wesentliche Formen der Außenfinanzierung. 
-
-Abbildung 19: Wesentliche Formen der Außenfinanzierung
-
-Eigenkapitalgeber können bestehende oder neue Gesellschafter sein. Gesellschafter einer GmbH 
-müssen Einlagen leisten, die Stammeinlagen oder Geschäftsanteile heißen. Die Stammeinlagen 
-verschiedener Gesellschafter können unterschiedlich hoch sein, insgesamt muss jedoch das 
-Mindeststammkapital erreicht werden. 
-Bei einer Aktiengesellschaft heißen die Gesellschafter Aktionäre. Das Grundkapital (Aktienkapital) ist 
-in Aktien zerlegt, sodass große Kapitalbeträge leichter beschafft werden können. Werden Aktien von 
-der Aktiengesellschaft ausgegeben („emittiert“), hat sie bei dieser Emission einen Finanzierungseffekt 
-dadurch, dass Personen die Aktien kaufen. 
+Eigenkapitalgeber können bestehende oder neue Gesellschafter sein. Gesellschafter einer GmbH müssen Einlagen leisten, die Stammeinlagen oder Geschäftsanteile heißen. Die Stammeinlagen verschiedener Gesellschafter können unterschiedlich hoch sein, insgesamt muss jedoch das Mindeststammkapital erreicht werden. Bei einer Aktiengesellschaft heißen die Gesellschafter Aktionäre. Das Grundkapital (Aktienkapital) ist in Aktien zerlegt, sodass große K apitalbeträge leichter beschafft werden können. Werden Aktien von der Aktiengesellschaft ausgegeben („emittiert“), hat sie bei dieser Emission einen Finanzierungseffekt dadurch, dass Personen die Aktien kaufen.
 
 Was sind Aktien? Die Aktie ist damit ein Wertpapier, das ein Anteilsrecht verbrieft: einen Anteil am Grundkapital der AG. Der Preis der Aktie einer AG wird auch „Kurs“ genannt und kommt durch Angebot und Nachfrage nach den Aktien dieser AG zustande.
 
-Eine Rückzahlung des Aktienkapitals an die Aktionäre ist nicht vorgesehen, es ist unbefristet zur Verfügung gestelltes Kapital. Aktionäre können ihre Aktien jedoch wieder an andere verkaufen, die sich an dem Unternehmen beteiligen und Aktionäre werden wollen. Durch diesen Aktienhandel entsteht kein weiterer Finanzierungseffekt für die AG, von Kursgewinnen profitieren die Aktionäre.
+Eine Rückzahlung des Aktienkapitals an die Aktionäre ist nicht vorgesehen, es ist unbefristet zur Verfügung gestelltes Kapital. Aktionäre können ihre Aktien jedoch wieder an andere verkaufen, die sich an dem Unternehmen beteiligen und Aktionäre werden woll en. Durch diesen Aktienhandel entsteht kein weiterer Finanzierungseffekt für die AG, von Kursgewinnen profitieren die Aktionäre.
 
-Zahlen, Daten, Fakten … 
-Betrachtet man den Wertzuwachs und die Gewinnausschüttungen bei 
-Aktien seit dem Jahr 1900, so haben Aktien den Aktionären im Schnitt pro 
-Jahr 6,5 % Ertrag gebracht, deutlich mehr als Sparguthaben (0,6 % Ertrag pro 
-Jahr). 
+Zahlen, Daten, Fakten … Betrachtet man den Wertzuwachs und die Gewinnausschüttungen bei Aktien seit dem Jahr 1900, so haben Aktien den Aktionären im Schnitt pro Jahr 6,5 % Ertrag gebracht, deutlich mehr als Sparguthaben (0,6 % Ertrag pro Jahr).
 
 Erhöht zum Beispiel eine Aktiengesellschaft ihr Grundkapital („Kapitalerhöhung“), haben zunächst die bestehenden Aktionäre (als Gesellschafter:innen der AG) das Recht, die neu ausgegebenen, so genannten jungen Aktien zu kaufen. Auf diese Weise können sie ihren prozentuellen Anteil am Grundkapital gleich halten, wenn sie das möchten. Sie können ihr Bezugsrecht auf neue Aktien aber
 
-auch verkaufen, dann können andere Personen Aktien kaufen und so zu neuen Aktionären werden. 
-Auch Gesellschaften, die als eine andere Rechtsform organisiert sind, können neue 
-Gesellschafter:innen aufnehmen, die Kapitaleinlagen leisten. 
-Ebenfalls von außen kommen Fremdfinanzierungsquellen, sie stellen ebenfalls 
-Außenfinanzierungsmöglichkeiten dar. Die wichtigsten Fremdkapitalgeber sind, wie oben bereits 
-erwähnt, die Lieferant:innen und die Banken. 
-Große Unternehmen haben außerdem die Möglichkeit, über die Emission einer Anleihe Fremdkapital 
-aufzunehmen. Anleihen werden auch „Schuldverschreibungen“, „Renten“ oder „Bonds“ genannt. 
-Was sind Anleihen? 
-Anleihen sind Wertpapiere, die ein Forderungsrecht verbriefen. Die Forderung 
-besteht für die Käufer:innen der Anleihe gegenüber dem Emittenten der 
-Anleihe, einem Großschuldner (ein Staat oder ein Unternehmen), der sich Geld 
-von den Anleihengläubigern zu bestimmten Bedingungen (Verzinsung, Laufzeit) 
-ausborgt. 
+auch verkaufen, dann können andere Personen Aktien kaufen und so zu neuen Aktionären werden. Auch Gesellschaften, die als eine andere Rechtsform organisiert sind, können neue Gesellschafter:innen aufnehmen, die Kapitaleinlagen leisten. Ebenfalls von außen kommen Fremdfinanzierungsquellen, sie stellen ebenfalls Außenfinanzierungsmöglichkeiten dar. Die wichtigsten Fremdkapitalgeber sind, wie oben bereits erwähnt, die Lieferant:innen und die Banken. Große Unternehmen haben außerdem die Möglichkeit, über die Emission einer Anleihe Fremdkapital aufzunehmen. Anleihen werden auch „Schuldverschreibungen“, „Renten“ oder „Bonds“ genannt.
 
-Großunternehmen (z.B. die voestalpine AG) oder auch Staaten (z.B. der österreichische Staat) benötigen für ihre Projekte und für die Erfüllung ihrer Aufgaben viel Geld. Besonders große Geldbeträge können schwer als Kredit bei einer Bank aufgenommen werden. So wird der benötigte große Geldbetrag (das „Anleihenominale“) in kleinere Teilbeträge geteilt („Stückelung“) und viele verschiedene Geldgeber können durch den Anleihenkauf einen oder mehrere Teilbeträge zur Verfügung stellen. Anleihen können zu dem Zeitpunkt gekauft werden, zu dem sie herausgegeben („emittiert“, „begeben“) werden oder auch während der Laufzeit. Ihr Preis, der Kurs der Anleihe, richtet sich nach Angebot und Nachfrage nach der Anleihe. Für gewöhnlich wird am Ende der Laufzeit das ausgeborgte Geld zum Nominale (oder zum festgelegten Kurs) zurückgezahlt (man sagt auch: „die Anleihe wird getilgt“). Anleihengläubiger haben die Erwartung, dass die Anleihe zum Fälligkeitstermin getilgt wird und die vereinbarten Zinsen bezahlt werden. Sie erzielen insgesamt daher die folgenden Erträge:
+Was sind Anleihen? Anleihen sind Wertpapiere, die ein Forderungsrecht verbriefen. Die Forderung besteht für die Käufer:innen der Anleihe gegenüber dem Emittenten der Anleihe, einem Großschuldner (ein Staat oder ein Unternehmen), der sich Geld von den Anleihengläubigern zu bestimmten Bedingungen (Verzinsung, Laufzeit) ausborgt.
 
-• Zinsen (entsprechend der Verzinsung der Anleihe) und 
-• den Unterschiedsbetrag zwischen dem Kaufs- und dem Verkaufskurs (sofern die Anleihe nicht bis zum Fälligkeitstermin gehalten, sondern vorzeitig verkauft wird). 
+Großunternehmen (z.B. die voestalpine AG) oder auch Staaten (z.B. der österreichische Staat) benötigen für ihre Projekte und für die Erfüllung ihrer Aufgaben viel Geld. Besonders große Geldbeträge können schwer als Kredit bei einer Bank aufgenommen werden. So wird der benötigte große Geldbetrag (das „Anleihenominale“) in kleinere Teilbeträge geteilt („Stückelung“) und viele verschiedene Geldgeber können durch den Anleihenkauf einen oder mehrere Teilbeträge zur Verfügung stellen. Anleihen können zu dem Zeitp unkt gekauft werden, zu dem sie herausgegeben („emittiert“, „begeben“) werden oder auch während der Laufzeit. Ihr Preis, der Kurs der Anleihe, richtet sich nach Angebot und Nachfrage nach der Anleihe. Für gewöhnlich wird am Ende der Laufzeit das ausgeborgte Geld zum Nominale (oder zum festgelegten Kurs) zurückgezahlt (man sagt auch: „die Anleihe wird getilgt“). Anleihengläubiger haben die Erwartung, dass die Anleihe zum Fälligkeitstermin getilgt wird und die vereinbarten Zinsen bezahlt werden. Sie erzielen insgesamt daher die folgenden Erträge:
+
+- Zinsen (entsprechend der Verzinsung der Anleihe) und
+- den Unterschiedsbetrag zwischen dem Kaufs- und dem Verkaufskurs (sofern die Anleihe nicht bis zum Fälligkeitstermin gehalten, sondern vorzeitig verkauft wird).
 
 Die Verzinsung der Anleihe zählt zu den wichtigsten Anleihebedingungen, sie kann während der Laufzeit fix (also unveränderlich) oder variabel sein. Bei variabler Verzinsung wird die Verzinsung der Anleihe an das allgemeine Zinsniveau angepasst, zum Beispiel an den Euribor.
 
@@ -492,216 +171,63 @@ Was ist der Euribor und welche Rolle spielt er? Euribor bedeutet Euro Interbank 
 
 ## 3.4 Welche Fragen das Rechnungswesen beantwortet
 
-Das betriebliche Rechnungswesen umfasst mehrere Bereiche, die auf verschiedene zentrale 
-betriebswirtschaftliche Fragen Antworten liefern (vgl. Schneider & Schneider 2019). 
-Tab. 4: Bereiche des betrieblichen Rechnungswesens 
-Betriebswirtschaftliche Fragen Bereich des betrieblichen Rechnungswesens 
-Kommt das Unternehmen mit seinen 
-finanziellen Mitteln aus oder besteht ein 
-Finanzierungsbedarf? 
+Das betriebliche Rechnungswesen umfasst mehrere Bereiche, die auf verschiedene zentrale betriebswirtschaftliche Fragen Antworten liefern (vgl. Schneider & Schneider 2019). Tab. 4: Bereiche des betrieblichen Rechnungswesens Betriebswirtschaftliche Fragen Bereich des betrieblichen Rechnungswesens Kommt das Unternehmen mit seinen finanziellen Mitteln aus oder besteht ein Finanzierungsbedarf? Finanzrechnung (Finanzplanung, Budgetierung, Cashflow) Welches Vermögen hat ein Unternehmen und wie hat es dieses Vermögen finanziert?
 
-Finanzrechnung (Finanzplanung, Budgetierung, Cashflow)
+Hat das Unternehmen in einer bestimmten Zeitperiode einen Gewinn oder einen Verlust erzielt, d.h. ist es „reicher“ oder „ärmer“ geworden? Buchhaltung (Erstellung der Bilanz und der Gewinn- und Verlustrechnung) Wie viel kostet das im Unternehmen erzeugte Produkt oder die erstellte Leistung? Wie viel trägt der Ertrag aus dem Verkauf eines Produkts zur Kostendeckung bei? Kostenrechnung
 
-Welches Vermögen hat ein Unternehmen und wie hat es dieses Vermögen finanziert? Hat das Unternehmen in einer bestimmten Zeitperiode einen Gewinn oder einen Verlust erzielt, d.h. ist es „reicher“ oder „ärmer“ geworden?
-
-Buchhaltung 
-(Erstellung der Bilanz und der Gewinn- und 
-Verlustrechnung) 
-
-Wie viel kostet das im Unternehmen erzeugte Produkt oder die erstellte Leistung? Wie viel trägt der Ertrag aus dem Verkauf eines Produkts zur Kostendeckung bei?
-
-Kostenrechnung
-
-### Finanzrechnung
-
-Genauso wie private Haushalte muss auch ein Unternehmen jederzeit zahlungsfähig („liquide“) sein. Das heißt, dass es sämtliche fällige Rechnungen für Investitionen und laufende Aufwände bezahlen können muss. Ist die Zahlungsfähigkeit („Liquidität“) nicht mehr gegeben, ist das Unternehmen gefährdet, die Insolvenz droht. Zur Planung der Zahlungsfähigkeit werden Finanzpläne (Budgets) erstellt.
+Finanzrechnung Genauso wie private Haushalte muss auch ein Unternehmen jederzeit zahlungsfähig („liquide“) sein. Das heißt, dass es sämtliche fällige Rechnungen für Investitionen und laufende Aufwände bezahlen können muss. Ist die Zahlungsfähigkeit („Liquidität“) nicht mehr gegeben, ist das Unternehmen gefährdet, die Insolvenz droht. Zur Planung der Zahlungsfähigkeit werden Finanzpläne (Budgets) erstellt.
 
 Was ist ein Finanzplan eines Unternehmens? Vom Grundprinzip her ähneln Finanzpläne eines Unternehmens denen von privaten Haushalten. Auch Unternehmen stellen in einem Finanzplan die geplanten Einzahlungen (EZ) den geplanten Auszahlungen (AZ) für einen bestimmten Zeitraum (z.B. einen Monat) gegenüber, um zu ermitteln, ob es einen Einzahlungsüberschuss oder einen Fehlbetrag gibt, der einen Finanzbedarf bedeutet.
 
-Manchmal wird im Zusammenhang mit dem Finanzplan auch von Einnahmen und Ausgaben gesprochen. Die meisten Einnahmen stellen auch Einzahlungen dar, die meisten Ausgaben auch Auszahlungen. Differenzen ergeben sich hier entweder zeitlich, wenn eine Einnahme erst später zu einer Einzahlung führt, oder auch sachlich, wenn eine Ausgabe nicht mit einer Auszahlung einhergeht (z.B. die Abschreibung). Die Begriffe Einzahlung und Auszahlung sind daher im Zusammenhang mit der Finanzrechnung präziser.
+Manchmal wird im Zusammenhang mit dem Finanzplan auch von Einnahmen und Ausgaben gesprochen. Die meisten Einnahmen stellen auch Einzahlungen dar, die meisten Ausgaben auch Auszahlungen. Differenzen ergeben sich hier entweder zeitlich, wenn eine Einnahme er st später zu einer Einzahlung führt, oder auch sachlich, wenn eine Ausgabe nicht mit einer Auszahlung einhergeht (z.B. die Abschreibung). Die Begriffe Einzahlung und Auszahlung sind daher im Zusammenhang mit der Finanzrechnung präziser. • Übersteigen die Einzahlungen (EZ) die Auszahlungen (AZ), ist die Zahlungsfähigkeit gegeben. Ist der Überschuss der EZ gegenüber den AZ sehr hoch, sollte überlegt werden, ob man einen Teil des Überschusses besser anlegen kann als auf einem Bankkonto. Dabei ist jedoch immer
 
-• Übersteigen die Einzahlungen (EZ) die Auszahlungen (AZ), ist die Zahlungsfähigkeit gegeben. Ist der Überschuss der EZ gegenüber den AZ sehr hoch, sollte überlegt werden, ob man einen Teil des Überschusses besser anlegen kann als auf einem Bankkonto. Dabei ist jedoch immer 
+zu beachten, dass in den folgenden Perioden (Wochen, Monaten) vielleicht die AZ höher sein werden und die Überschüsse bald wieder gebraucht werden. Finanzielle Reserven, auf die man rasch zugreifen kann, sind vor allem für unvorhergesehene Zahlungen, die i n der Finanzplanung nicht berücksichtigt sind, wichtig. • Übersteigen die AZ die EZ, ist die Zahlungsfähigkeit gefährdet. Das Unternehmen muss sofort Gegenmaßnahmen ergreifen, um die Zahlungsfähigkeit sicherzustellen. E s kann z.B. versuchen, Ausgaben zu reduzieren, mit seinen Lieferant:innen ein längeres Zahlungsziel vereinbaren, selbst seinen Kund:innen nur kurze Zahlungsziele gewähren, Lagerstände reduzieren, einen kurzfristigen Kredit bei der Bank aufnehmen. Droht immer wieder Zahlungsunfähigkeit und kann diese nicht leicht behoben werden, müsste überlegt werde n, ob durch die Aufnahme weiterer Gesellschafter:innen, die Kapitaleinlagen leisten, die Liquidität dauerhaft verbessert und abgesichert werden könnte. Die Finanzrechnung hat eine große betriebswirtschaftliche Bedeutung. Schon Unternehmensgründer:innen stehen im Hinblick auf die Finanzplanung vor einer schwierigen Situation: im Rahmen der Gründung sind bereits vergleichsweise hohe Auszahlungen zu tätigen, es gibt aber meist noch keine Einzahlungen und auch keine Erfahrungswerte, mit wie viel Einzahlungen kalkuliert werden kann. Genau aus diesem Grund müssen Unternehmensgründer:innen häufig bei Finanzierungsansuchen einen Finanzplan vorlegen. Dieser sollte vorsichtig und realistisch geplant sein, damit Kapitalgeber:innen überzeugt werden können. Im Hinblick auf die Zahlungsfähigkeit wird auch vom Cashflow gesprochen.
 
-zu beachten, dass in den folgenden Perioden (Wochen, Monaten) vielleicht die AZ höher sein werden und die Überschüsse bald wieder gebraucht werden. Finanzielle Reserven, auf die man rasch zugreifen kann, sind vor allem für unvorhergesehene Zahlungen, die in der Finanzplanung nicht berücksichtigt sind, wichtig.
+Was ist der Cashflow eines Unternehmens? Ermittelt wird der Cashflow, indem Einzahlungen und Auszahlungen innerhalb eines bestimmten Zeitraums einander gegenübergestellt werden. Übersteigen die Einzahlungen die Auszahlungen in einem bestimmten Zeitraum, ist der Cashflow positiv, d.h. es gibt einen Geld- bzw. Zahlungsmittelzufluss zum Unternehmen. Damit ist ein positiver Cashflow ein Indikator für Zahlungsfähigkeit. Das ist für Investitionen und für Kreditrückzahlungen von großer Bedeutung.
 
-• Übersteigen die AZ die EZ, ist die Zahlungsfähigkeit gefährdet. Das Unternehmen muss sofort Gegenmaßnahmen ergreifen, um die Zahlungsfähigkeit sicherzustellen. Es kann z.B. versuchen, Ausgaben zu reduzieren, mit seinen Lieferant:innen ein längeres Zahlungsziel vereinbaren, selbst seinen Kund:innen nur kurze Zahlungsziele gewähren, Lagerstände reduzieren, einen kurzfristigen Kredit bei der Bank aufnehmen. Droht immer wieder Zahlungsunfähigkeit und kann diese nicht leicht behoben werden, müsste überlegt werden, ob durch die Aufnahme weiterer Gesellschafter:innen, die Kapitaleinlagen leisten, die Liquidität dauerhaft verbessert und abgesichert werden könnte. Die Finanzrechnung hat eine große betriebswirtschaftliche Bedeutung. Schon Unternehmensgründer:innen stehen im Hinblick auf die Finanzplanung vor einer schwierigen Situation: im Rahmen der Gründung sind bereits vergleichsweise hohe Auszahlungen zu tätigen, es gibt aber meist noch keine Einzahlungen und auch keine Erfahrungswerte, mit wie viel Einzahlungen kalkuliert werden kann. Genau aus diesem Grund müssen Unternehmensgründer:innen häufig bei Finanzierungsansuchen einen Finanzplan vorlegen. Dieser sollte vorsichtig und realistisch geplant sein, damit Kapitalgeber:innen überzeugt werden können. Im Hinblick auf die Zahlungsfähigkeit wird auch vom Cashflow gesprochen. 
-Was ist der Cashflow eines Unternehmens? 
-Ermittelt wird der Cashflow, indem Einzahlungen und Auszahlungen innerhalb 
-eines bestimmten Zeitraums einander gegenübergestellt werden. Übersteigen 
-die Einzahlungen die Auszahlungen in einem bestimmten Zeitraum, ist der 
-Cashflow positiv, d.h. es gibt einen Geld- bzw. Zahlungsmittelzufluss zum 
-Unternehmen. Damit ist ein positiver Cashflow ein Indikator für 
-Zahlungsfähigkeit. Das ist für Investitionen und für Kreditrückzahlungen von 
-großer Bedeutung. 
-
-### Buchhaltung
-
-Jedes Unternehmen ist gesetzlich verpflichtet, seinen Gewinn oder Verlust für jedes Geschäftsjahr zu 
-ermitteln. Das ist nicht zuletzt für die Berechnung von Ertragssteuern, die – je nach Rechtsform – der 
-Unternehmer oder die Unternehmerin oder das Unternehmen zu bezahlen haben, von Bedeutung. Die 
-Buchhaltung wird daher auch externes Rechnungswesen genannt, weil sie eine Informations- und 
-Dokumentationsfunktion nach außen hat. 
-Ob in einem bestimmten Zeitraum ein Gewinn oder Verlust erzielt worden ist, ist nicht nur für die 
-Steuerbehörde, sondern auch für die Unternehmensleitung selbst von Bedeutung, weil das Ergebnis 
-zeigt, wie erfolgreich das Unternehmen war und wie gut gewirtschaftet wurde. 
-Darüber hinaus gibt es weitere Stakeholder, die Interesse an dieser Information haben. Dazu zählen 
-vor allem Kapitalgeber:innen, Gesellschafter:innen (z.B. Aktionäre), Geschäftspartner:innen (z.B. 
-Lieferant:innen), und Mitarbeiter:innen. Die Unternehmensleitung muss entscheiden, ob der Gewinn 
-entnommen (ausgeschüttet) werden kann oder im Unternehmen belassen werden soll, um z.B. in neue 
-Maschinen oder andere Anlagen zu investieren. 
+Buchhaltung Jedes Unternehmen ist gesetzlich verpflichtet, seinen Gewinn oder Verlust für jedes Geschäftsjahr zu ermitteln. Das ist nicht zuletzt für die Berechnung von Ertragssteuern, die – je nach Rechtsform – der Unternehmer oder die Unternehmerin oder das Unternehmen zu bezahlen haben, von Bedeutung. Die Buchhaltung wird daher auch externes Rechnungswesen genannt, weil sie eine Informations - und Dokumentationsfunktion nach außen hat. Ob in einem bestimmten Zeitraum ein Gewinn oder Verlust erzielt worden ist, ist nicht nur für die Steuerbehörde, sondern auch für die Unternehmensleitung selbst von Bedeutung, weil das Ergebnis zeigt, wie erfolgreich das Unternehmen war und wie gut gewirtschaftet wurde. Darüber hinaus gibt es weitere Stakeholder, die Interesse an dieser Information haben. Dazu zählen vor allem Kapitalgeber: innen, Gesellschafter:innen (z.B. Aktionäre), Geschäftspartner:innen (z.B. Lieferant:innen), und Mitarbeiter:innen. Die Unternehmensleitung muss entscheiden, ob der Gewinn entnommen (ausgeschüttet) werden kann oder im Unternehmen belassen werden soll, um z.B. in neue Maschinen oder andere Anlagen zu investieren.
 
 Abhängig von der Rechtsform des Unternehmens und seiner Größe erfolgen die Gewinnermittlung und der Jahresabschluss entweder in Form einer
 
-• Einnahmen-Ausgaben-Rechnung (EAR), in der die Einnahmen eines Geschäftsjahres den Ausgaben gegenübergestellt werden. Die Ausgaben entsprechen im Wesentlichen den Auszahlungen, beinhalten aber auch die Abschreibungen 
-• oder durch doppelte Buchhaltung, d.h. Erstellung einer Bilanz und einer Gewinn- und Verlustrechnung (G&V). Der Gewinn wird in der G&V ermittelt, er kann aber auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende eines Geschäftsjahres ermittelt werden (beides muss denselben Gewinn ergeben, daher doppelte Gewinnermittlung, „doppelte Buchhaltung“) Einzelunternehmen und Personengesellschaften, deren Umsatz unter 700.000 Euro pro Geschäftsjahr liegt, können eine EAR erstellen, die weniger aufwendig ist als die doppelte Buchhaltung. Überschreiten sie diese Umsatzgrenze oder liegt eine Kapitalgesellschaft vor, muss eine doppelte Buchhaltung geführt werden. Aktiengesellschaften und große GmbHs müssen ihren Jahresabschluss veröffentlichen, im Firmenbuch geführte Unternehmen müssen bestimmte Zahlen ihres Jahresabschlusses beim Firmenbuchgericht melden. 
-Die Bilanz 
-Die Bilanz stellt dar, über welches Vermögen (oder „Aktiva“, das sind z.B. Grundstücke, Gebäude, 
-Maschinen, Vorräte etc.) ein Unternehmen verfügt und wie dieses Vermögen finanziert worden ist (mit 
-eigenen Mitteln oder mit fremden Mitteln, d.h. mit welcher Art von Kapital, „Passiva“). Daher kann 
-man ersehen, wie „reich“ ein Unternehmen zu einem bestimmten Zeitpunkt ist, d.h. ob ein großer 
-Teil des Vermögens mit eigenen Mitteln finanziert worden ist oder nur ein kleiner. 
-Daher wird in der Bilanz das Vermögen eines Unternehmens dem Fremdkapital zu einem bestimmten 
-Zeitpunkt, üblicherweise dem Ende eines Geschäftsjahres, gegenübergestellt. Übersteigt das 
-Vermögen, also Grundstücke, Gebäude, Geschäftsausstattung, Vorräte, Bankguthaben etc., das 
-Fremdkapital, also die Schulden, ergibt das einen positiven Differenzbetrag. Dieser ist das Eigenkapital, 
-also jener Teil des Vermögens, der NICHT mit Schulden finanziert worden ist. Vergleicht man die 
-Bilanzen eines Unternehmens von zwei Zeitpunkten, bedeutet ein Steigen des Eigenkapitals einen 
-Gewinn und das Sinken einen Verlust. 
-So könnte etwa die Bilanz eines Unternehmens, das Fahrräder produziert, in vereinfachter Form 
-aussehen (alle Beträge in Euro): 
-Bilanz der FunBike GmbH per 31.12.20xx 
-Aktiva (Vermögen) Passiva (Kapital) 
-Anlagevermögen Eigenkapital 
-Grundstücke und Bauten 750 000 Bareinlagen der Gesellschafter 525 000 
-Technische Anlagen, Geschäftsausstauttung 2 330 000 Gewinn 3 614 250 
-Finanzanlagen 240 000 Fremdkapital 
-Umlaufvermögen Rückstellungen 2 000 000 
-Vorräte 5 400 000 Bankkredite 3 199 000 
-Forderungen aus Lieferungen und Leistungen 598 000 Verbindlichkeiten aus Lieferungen und Leistungen 300 000 
-Bankguthaben und Barbestand 320 250 
-Gesamtvermögen 9 638 250 Gesamtkapital 9 638 250 
+- Einnahmen-Ausgaben-Rechnung (EAR), in der die Einnahmen eines Geschäftsjahres den Ausgaben gegenübergestellt werden. Die Ausgaben entsprechen im Wesentlichen den Auszahlungen, beinhalten aber auch die Abschreibungen
+- oder durch doppelte Buchhaltung, d.h. Erstellung einer Bilanz und einer Gewinn- und Verlustrechnung (G&V). Der Gewinn wird in der G&V ermittelt, er kann aber auch durch den Vergleich des Eigenkapitals zu Beginn und am Ende eines Geschäftsjahres ermittelt werden (beides muss denselben Gewinn ergeben, daher doppelte Gewinnermittlung, „doppelte Buchhaltung“) Einzelunternehmen und Personengesellschaften, deren Umsatz unter 700.000 Euro pro Geschäftsjahr liegt, können eine EAR erstellen, die weniger aufwendig ist als die doppelte Buchhaltung. Überschreiten sie diese Umsatzgrenze oder liegt eine Kapitalgesellschaft vor, muss eine doppelte Buchhaltung geführt werden. Aktiengesellschaften und große GmbHs müssen ihren Jahresabschluss veröffentlichen, im Firmenbuch geführte Unternehmen müssen bestimmte Zahlen ihres Jahresabschlusses beim Firmenbuchgericht melden.
 
-Gesamtvermögen bzw. Gesamtkapital werden auch als Bilanzsumme bezeichnet. Zu beachten ist 
-außerdem: 
-1) Vermögen = Kapital, Summe der Aktiva = Summe der Passiva, da jeder Teil des Vermögens 
-auch finanziert worden sein muss. 
-2) Jede Bilanz hat Soll- und Haben-Gleichheit: Die Aktiva stehen auf der Sollseite der Bilanz, die 
-Passiva auf der Habenseite. Die Differenz zwischen Vermögen und Fremdkapital ist das 
-Eigenkapital. 
-3) In der Buchhaltung stellt die Sollseite in der Regel dar, WOFÜR Mittel verwendet worden 
-sind. Daher steht das gesamte Vermögen auf der Sollseite der Bilanz. Die Habenseite gibt 
-wieder, WOHER die Mittel stammen. Daher findet man auf der Habenseite der Bilanz das 
-Kapital. Da sich die Bilanz aus der Berücksichtigung vieler einzelner Geschäftsfälle ergibt, gilt 
-die Logik von Soll (Mittelverwendung) und Haben (Mittelherkunft) auch bei der Verbuchung 
-von einzelnen Geschäftsfällen. 
-4) Vermögen, das länger als ein Jahr im Unternehmen bleiben soll, wird Anlagevermögen 
-genannt. Dazu zählen zum Beispiel Gebäude und Maschinen. Umlaufvermögen stellt den Teil 
-des Vermögens dar, der für gewöhnlich kürzer als ein Jahr im Unternehmen bleibt, zum 
-Beispiel Vorräte. 
-Das oben dargestellte Unternehmen ist „umlaufintensiv“, d.h. es hat deutlich mehr 
-Umlaufvermögen als Anlagevermögen. Beim Umlaufvermögen dominieren die Vorräte, was 
-für einen Fahrradproduzenten plausibel erscheint, der viele Bestandteile zur Produktion 
-braucht und auch teilweise fertig produzierte Fahrräder auf Lager haben könnte. Trotzdem 
-könnte hier geprüft werden, ob die Lagerhaltung reduziert werden könnte oder ob das die 
-Produktion beeinträchtigen würde. 
-5) Die Finanzierung erfolgt sowohl durch Eigen- als auch durch Fremdkapital. Rund 57% des 
-Kapitals des Unternehmens ist Fremdkapital, davon ist der Großteil auf Bankkredite 
-zurückzuführen. Diese Kapitalstruktur ist nicht untypisch für ein österreichisches 
-Unternehmen, das mit einer Bilanzsumme knapp unter 10 Mio. Euro gerade noch zu den 
-Kleinunternehmen zählt. Es ist typisch für österreichische KMU, in hohem Ausmaß von 
-Fremdkapital abhängig zu sein. Der hohe Gewinn stärkt jedoch das Eigenkapital und die 
-Innenfinanzierungskraft des Unternehmens, wenn er im Unternehmen verbleibt. 
-6) Das langfristige Vermögen (etwas mehr als drei Millionen Euro) ist auch langfristig finanziert 
-(das Eigenkapital beträgt über vier Millionen Euro und auch ein Teil des Fremdkapitals wird 
-vermutlich langfristig sein), d.h. die „goldene Bilanzregel“, dass langfristig gebundenes 
-Vermögen auch langfristig finanziert sein sollte, ist erfüllt. 
+Die Bilanz Die Bilanz stellt dar, über welches Vermögen (oder „Aktiva“, das sind z.B. Grundstücke, Gebäude, Maschinen, Vorräte etc.) ein Unternehmen verfügt und wie dieses Vermögen finanziert worden ist (mit eigenen Mitteln oder mit fremden Mitteln, d.h. mit welcher Art von Kapital, „Passi va“). Daher kann man ersehen, wie „reich“ ein Unternehmen zu einem bestimmten Zeitpunkt ist, d.h. ob ein großer Teil des Vermögens mit eigenen Mitteln finanziert worden ist oder nur ein kleiner. Daher wird in der Bilanz das Vermögen eines Unternehmens dem Fremdkapital zu einem bestimmten Zeitpunkt, üblicherweise dem Ende eines Geschäftsjahres, gegenübergestellt. Übersteigt das Vermögen, also Grundstücke, Gebäude, Geschäftsausstattung, Vorräte, Bankguthaben etc., das Fremdkapital, also die Schulden, ergibt das einen positiven Differenzbetrag. Dieser ist das Eigenkapital, also jener Teil des Vermögens, der NICHT mit Schulden finanziert worden ist. Vergleicht man die Bilanzen eines Unternehmens von zw ei Zeitpunkten, bedeutet ein Steigen des Eigenkapitals einen Gewinn und das Sinken einen Verlust. So könnte etwa die Bilanz eines Unternehmens, das Fahrräder produziert, in vereinfachter Form aussehen (alle Beträge in Euro): Bilanz der FunBike GmbH per 31.12.20xx
 
-Die Gewinn- und Verlustrechnung (G&V) 
-In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Zu den 
-Aufwänden zählen zum Beispiel Löhne und Gehälter für Mitarbeiter:innen, Materialaufwand, Miete 
-für die Geschäftsräumlichkeiten, Versicherungsaufwand, Energieaufwand, aber auch Abschreibungen 
-auf die Sachanlagen (z.B. Maschinen) und die Bildung von Rückstellungen. 
-Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt. Die 
-betriebswirtschaftliche Bedeutung des Gewinns für ein Unternehmen wurde bereits im Rahmen der 
-Selbstfinanzierung erläutert. Der Gewinn erhöht das Eigenkapital und kann auch aus dem Vergleich 
-des aktuellen Eigenkapitals mit jenem zu Beginn des Geschäftsjahres ermittelt werden. Man spricht 
-daher auch von doppelter Gewinnermittlung (und in diesem Zusammenhang auch von „doppelter 
-Buchhaltung“). 
-Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx 
-Die Cashflowrechnung / Geldflussrechnung 
-Publizierte Jahresabschlüsse umfassen neben Bilanz und G&V auch eine Cashflowrechnung. Sie zeigt 
-die Geldzuflüsse und -abflüsse in und aus dem Unternehmen im Laufe der betrachteten Periode, in 
-der Regel für ein Geschäftsjahr. Sie wird daher auch als Geldflussrechnung bezeichnet. 
-Wie bereits erwähnt, ist der Cashflow eine wichtige Kennzahl für die Zahlungsfähigkeit, die Liquidität 
-eines Unternehmens. Sie ist nicht identisch mit dem Gewinn, denn man kann einen Gewinn erzielen, 
-ohne über liquide Mittel zu verfügen, und man kann liquide sein, ohne einen Gewinn zu erzielen. 
-Die Cashflowrechnung ist so aufgebaut, dass man über die Ursache der Zu- und Abflüsse mehr erfahren 
-kann. Sie zeigt Veränderungen in den Bereichen: 
-• Betriebstätigkeit („operations“ oder „operating acitivities“): dieser ist der wichtigste Bereich in der Cashflowrechnung, weil er den Kern des Geschäfts des Unternehmens betrifft. Er zeigt, ob der Kernbereich des Unternehmens gut läuft und hier Einzahlungsüberschüsse erwirtschaftet werden. Investor/inn/en schauen daher oft vor allem auf diesen Teil der Cashflowrechnung. 
-• Finanzierung („financial acitivities“): dieser Bereich zeigt, ob es zu Zuflüssen aus Finanzierungsaktivitäten gekommen ist, indem zum Beispiel neue Gesellschafter – und damit Eigenkapital – oder Kredite – und damit Fremdkapital – aufgenommen worden sind. Der 
+Aktiva (Vermögen) Passiva (Kapital) Anlagevermögen Eigenkapital Grundstücke und Bauten 750 000 Bareinlagen der Gesellschafter 525 000 Technische Anlagen, Geschäftsausstauttung 2 330 000 Gewinn 3 614 250 Finanzanlagen 240 000 Fremdkapital Umlaufvermögen Rückstellungen 2 000 000 Vorräte 5 400 000 Bankkredite 3 199 000 Forderungen aus Lieferungen und Leistungen 598 000 Verbindlichkeiten aus Lieferungen und Leistungen 300 000 Bankguthaben und Barbestand 320 250 Gesamtvermögen 9 638 250 Gesamtkapital 9 638 250
 
-Umsatzerlöse 70 656 000 
-Materialaufwand - 53 175 000 
-Personalaufwand - 7 900 000 
-Abschreibungen - 1 800 000 
-sonstige betriebliche Aufwände - 2 875 000 
-Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000 
-Zinserträge 12 000 
-Zinsaufwand - 99 000 
-Finanzergebnis - 87 000 
-Ergebnis vor Steuern 4 819 000 
-Steuern - 1 204 750 
-Jahresergebnis / Gewinn 3 614 250 
+Gesamtvermögen bzw. Gesamtkapital werden auch als Bilanzsumme bezeichnet. Zu beachten ist außerdem: 1) Vermögen = Kapital, Summe der Aktiva = Summe der Passiva, da jeder Teil des Vermögens auch finanziert worden sein muss.
 
-Abfluss in diesem Bereich steht zum Beispiel in Zusammenhang mit Zinszahlungen, Dividendenzahlungen oder Kreditrückzahlungen.
+2) Jede Bilanz hat Soll- und Haben-Gleichheit: Die Aktiva stehen auf der Sollseite der Bilanz, die Passiva auf der Habenseite. Die Differenz zwischen Vermögen und Fremdkapital ist das Eigenkapital.
 
-• Investition („investing activities“): hier zeigt sich, ob Zahlungsmittel in die Anschaffung von langfristigen Investments geflossen sind, um etwa Anlagevermögen zu kaufen. Andererseits können hier auch Zahlungsmittel generiert werden, wenn Anlagevermögen verkauft worden ist, etwa ein Grundstück oder ein Gebäude. 
+3) In der Buchhaltung stellt die Sollseite in der Regel dar, WOFÜR Mittel verwendet worden sind. Daher steht das gesamte Vermögen auf der Sollseite der Bilanz. Die Habenseite gibt wieder, WOHER die Mittel stammen. Daher findet man auf der Habenseite der Bilanz das Kapital. Da sich die Bilanz aus der Berücksichtigung vieler einzelner Geschäftsfälle ergibt, gilt die Logik von Soll (Mittelverwendung) und Haben (Mittelherkunft) auch bei der Verbuchung von einzelnen Geschäftsfällen.
 
-### Kostenrechnung
+4) Vermögen, das länger als ein Jahr im Unternehmen bleib en soll, wird Anlagevermögen genannt. Dazu zählen zum Beispiel Gebäude und Maschinen. Umlaufvermögen stellt den Teil des Vermögens dar, der für gewöhnlich kürzer als ein Jahr im Unternehmen bleibt, zum Beispiel Vorräte. Das oben dargestellte Unternehmen ist „umlaufintensiv“, d.h. es hat deutlich mehr Umlaufvermögen als Anlagevermögen. Beim Umlaufvermögen dominieren die Vorräte, was für einen Fahrradproduzenten plausibel erscheint, der viele Bestandteile zur Produktion braucht und auch teilweise fertig produzierte Fahrräder auf Lager haben könnte. Trotzdem könnte hier geprüft werden, ob die Lagerhaltung reduziert werden könnte oder ob das die Produktion beeinträchtigen würde.
 
-Ein Unternehmen muss auch seine Kosten kennen, damit es errechnen kann, wie viel das produzierte Stück, zum Beispiel ein Fahrrad, und wie viel eine erstellte Leistung kostet. Auf Dauer kann kein Unternehmen existieren, wenn die Kosten durch die Erträge nicht gedeckt sind. Die Kosten entsprechen dabei in den meisten Fällen weitgehend den Aufwänden in der Buchhaltung. Auch zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind, sind möglich, z.B. der Unternehmerlohn für Einzelunternehmer oder OG-Gesellschafter sowie Komplementäre. Der Unternehmerlohn ist jener Verdienst, den sie sich für ihre Tätigkeit im Unternehmen erwarten. Er kann sich an den Opportunitätskosten orientieren, d.h. an jenem Einkommen, das die Unternehmer verdienen könnten, wenn sie einer anderen beruflichen Tätigkeit nachgingen. Die Kostenrechnung ist nicht gesetzlich verpflichtend für Unternehmen, sie wird auch als internes Rechnungswesen bezeichnet, weil sie nur intern verwendet wird. Betriebswirtschaftlich ist es vorteilhaft, als Steuerungs und Kontrollinstrument eine Kostenrechnung zu führen, was allerdings vor allem in kleinen Unternehmen häufig nicht erfolgt.
+5) Die Finanzierung erfolgt sowohl durch Eigen- als auch durch Fremdkapital. Rund 57 % des Kapitals des Unternehmens ist Fremdkapital, davon ist der Großteil auf Bankkredite zurückzuführen. Diese Kapitalstruktur ist nicht un typisch für ein österreichisches Unternehmen, das mit einer Bilanzsumme knapp unter 10 Mio. Euro gerade noch zu den Kleinunternehmen zählt. Es ist typisch für österreichische KMU, in hohem Ausmaß von Fremdkapital abhängig zu sein. Der hohe Gewinn stärkt jedoch das Eigenkapital und die Innenfinanzierungskraft des Unternehmens, wenn er im Unternehmen verbleibt.
+
+6) Das langfristige Vermögen ( etwas mehr als drei Millionen Euro) ist auch langfristig finanziert (das Eigenkapital beträgt über vier Millionen Euro und auch ein Teil des Fremdkapitals wird vermutlich langfristig sein), d.h. die „ goldene Bilanzregel“, dass langfristig gebundenes Vermögen auch langfristig finanziert sein sollte, ist erfüllt.
+
+Die Gewinn- und Verlustrechnung (G&V) In der G&V werden von den Umsatzerlösen und anderen Erträgen die Aufwände abgezogen. Zu den Aufwänden zählen zum Beispiel Löhne und Gehälter für Mitarbeiter: innen, Materialaufwand, Miete für die Geschäftsräumlichkeiten, Versicherungsaufwand, Energieaufwand, aber auch Abschreibungen auf die Sachanlagen (z.B. Maschinen) und die Bildung von Rückstellungen. Übersteigt die Summe aus Erlösen und Erträgen die Aufwände, wird ein Gewinn erzielt. Die betriebswirtschaftliche Bedeutung des Gewinns für ein Unternehmen wurde bereits im Rahmen der Selbstfinanzierung erläutert. Der Gewinn erhöht das Eigenkapital und kann auch aus dem Vergleich des aktuellen Eigenkap itals mit jenem zu Beginn des Geschäftsjahres ermittelt werden. Man spricht daher auch von doppelter Gewinnermittlung (und in diesem Zusammenhang auch von „doppelter Buchhaltung“). Gewinn- und Verlustrechnung der FunBike GmbH per 31.12.20xx
+
+Die Cashflowrechnung / Geldflussrechnung Publizierte Jahresabschlüsse umfassen neben Bilanz und G&V auch eine Cashflowrechnung. Sie zeigt die Geldzuflüsse und -abflüsse in und aus dem Unternehmen im Laufe der betrachteten Periode, in der Regel für ein Geschäftsjahr. Sie wird daher auch als Geldflussrechnung bezeichnet. Wie bereits erwähnt, ist der Cashflow eine wichtige Kennzahl für die Zahlungsfähigkeit, die Liquidität eines Unternehmens. Sie ist nicht identisch mit dem Gewinn, denn man kann einen Gewinn erzielen, ohne über liquide Mittel zu verfügen, und man kann liquide sein, ohne einen Gewinn zu erzielen. Die Cashflowrechnung ist so aufgebaut, dass man über die Ursache der Zu- und Abflüsse mehr erfahren kann. Sie zeigt Veränderungen in den Bereichen:
+
+- Betriebstätigkeit („operations“ oder „operating acitivities“): dieser ist der wichtigste Bereich in der Cashflowrechnung, weil er den Kern des Geschäfts des Unternehmens betrifft. Er zeigt, ob der Kernbereich des Unternehmens gut läuft und hier Einzahlungsüberschüsse erwirtschaftet werden. Investor/ inn/en schauen daher oft vor allem auf diesen Teil der Cashflowrechnung.
+- Finanzierung („financial acitivities“): dieser Bereich zeigt, ob es zu Zuflüssen aus Finanzierungsaktivitäten gekommen ist, indem zum Beispiel neue Gesellschafter – und damit Eigenkapital – oder Kredite – und damit Fremdkapital – aufgenommen worden sind. Der Umsatzerlöse 70 656 000 Materialaufwand 53 175 000Personalaufwand 7 900 000Abschreibungen 1 800 000sonstige betriebliche Aufwände 2 875 000Ergebnis vor Zinsen und Steuern (EBIT) 4 906 000 Zinserträge 12 000 Zinsaufwand 99 000Finanzergebnis 87 000Ergebnis vor Steuern 4 819 000 Steuern 1 204 750Jahresergebnis / Gewinn 3 614 250
+
+Abfluss in diesem Bereich steht zum Beispiel in Zusammenhang mit Zinszahlungen, Dividendenzahlungen oder Kreditrückzahlungen. • Investition („investing activities“): hier zeigt sich, ob Zahlungsmittel in die Anschaffung von langfristigen Investments geflossen sind, um etwa Anlagevermögen zu kaufen. Andererseits können hier auch Zahlungsmittel generiert werden, wenn Anlagevermögen verkauft worden ist, etwa ein Grundstück oder ein Gebäude.
+
+Kostenrechnung Ein Unternehmen muss auch seine Kosten kennen, damit es errechnen kann, wie viel das produzierte Stück, zum Beispiel ein Fahrrad, und wie viel eine erstellte Leistung kostet. Auf Dauer kann kein Unternehmen existieren, wenn die Kosten durch die Erträge nicht gedeckt sind. Die Kosten entsprechen dabei in den meisten Fällen weitgehend den Aufwänden in der Buchhaltung. Auch zusätzliche Kosten, die in der Buchhaltung nicht berücksichtigt sind, sind möglich, z.B. der Unternehmerlohn für Einzelunternehmer oder OG -Gesellschafter sowie Komplementäre. Der Unternehmerlohn ist jener Verdienst, den sie sich für ihre Tätigkeit im Unternehmen erwarten. Er kann sich an den Opportunitätskosten orientieren, d.h. an jenem Einkommen, das die Unternehmer verdienen könnten, wenn sie einer anderen beruflichen Tätigkeit nachgingen. Die Kostenrechnung ist nicht gesetzlich verpflichtend für Unternehmen, sie wird auch als internes Rechnungswesen bezeichnet, weil sie nur intern verwendet wird. Betriebswirtschaftlich ist es vorteilhaft, als Steuerungsund Kontrollinstrument eine Kostenrechnung zu führen, was allerdings vor allem in kleinen Unternehmen häufig nicht erfolgt.
 
 Was sind überhaupt Kosten? Kosten sind der wertmäßige Verbrauch von Leistungsfaktoren (z.B. Maschinen, Arbeit, Einsatzstoffe) bei der Produktion oder Leistungserstellung eines Unternehmens. Sie entsprechen weitgehend den Aufwänden aus der Buchhaltung, es gibt aber einige Differenzen (z.B. der Unternehmerlohn).
 
-Wichtig ist die Unterscheidung von Kosten, die unabhängig von der produzierten/erstellen Menge 
-anfallen (fixe Kosten), und Kosten, die mit der Produktionsmenge steigen (variable Kosten). Um zu 
-entscheiden, welche Kosten fix und welche variabel sind, muss man daher wissen, welche Kosten in 
-welchem Ausmaß bei der Produktion anfallen und wie sie sich bei steigender Produktionsmenge 
-verändern. Entscheidet man über die Annahme oder Ablehnung eines Zusatzauftrags, wird man 
-betrachten, welche zusätzlichen Kosten durch diesen Auftrag anfallen. 
-Ein Beispiel zu 
-fixen und 
-variablen 
-Kosten 
-Fixe Kosten eines Unternehmens, das Fahrräder erzeugt, sind jene Kosten, die 
-unabhängig davon anfallen, wie viele Räder in einer bestimmten Periode 
-produziert werden. Dazu zählen die Gehälter für die Geschäftsführung, die 
-Miete für den Produktionsstandort (falls Miete zu bezahlen ist), Versicherungen 
-und (zumindest teilweise) auch Abschreibungen. Variable Kosten steigen (in der 
-Regel proportional) zur produzierten Menge. Bei Fahrrädern sind das im 
-Wesentlichen die Kosten für die Bestandteile, aus denen die Räder 
-zusammengebaut werden. 
-Die variablen Kosten sollten auf alle Fälle durch den erzielten Preis gedeckt werden. Übersteigt der 
-erzielte Preis die variablen Kosten, wird ein Beitrag zur Deckung der fixen Kosten geleistet, man spricht 
+Wichtig ist die Unterscheidung von Kosten, die unabhängig von der produzierten/erstellen Menge anfallen (fixe Kosten), und Kosten, die mit der Produktionsmenge steigen ( variable Kosten). Um zu entscheiden, welche Kosten fix und welche variabel sind, muss man daher wissen, welche Kosten in welchem Ausmaß bei der Produktion anfallen und wie sie sich bei steigender Produktionsmenge verändern. Entscheidet man über die Annahme oder Ablehnung eines Zusatzauftrags, wird man betrachten, welche zusätzlichen Kosten durch diesen Auftrag anfallen. Ein Beispiel zu fixen und variablen Kosten Fixe Kosten eines Unternehmens, das Fahrräder erzeugt, sind jene Kosten, die unabhängig davon anfallen, wie viele Räder in einer bestimmten Periode produziert werden. Dazu zählen die Gehälter für die Geschäftsführung, die Miete für den Produktionsstandort (falls Miete zu bezahlen ist), Versicherungen und (zumindest teilweise) auch Abschreibungen. Variable Kosten steigen (in der Regel proportional) zur produzierten Menge. Bei Fahrrädern sind das im Wesentlichen die Kosten für die Bestandteile, aus denen die Räder zusammengebaut werden.
 
-daher auch von „Deckungsbeitrag“. Insgesamt sollte der Preis natürlich die gesamten Kosten, sowohl 
-variable als auch fixe Kosten decken. Kurzfristig kann auch ein geringerer Preis betriebswirtschaftlich 
-sinnvoll sein, wenn z.B. Räder aus der Vorsaison, die sich nicht mehr regulär verkaufen lassen, zu einem 
-günstigeren Preis noch verkauft werden sollen. Übersteigt der reduzierte Preis die variablen Kosten, 
-wird zumindest ein Deckungsbeitrag erzielt, d.h. ein Beitrag zur Deckung der fixen Kosten, die sowieso 
-anfallen. Das ist daher sinnvoller als ein Rad gar nicht zu verkaufen. 
-Ein Beispiel zum 
-Deckungsbeitrag 
+Die variablen Kosten sollten auf alle Fälle durch den erzielten Preis gedeckt werden. Übersteigt der erzielte Preis die variablen Kosten, wird ein Beitrag zur Deckung der fixen Kosten geleistet, man spricht
 
-Angenommen, ein Unternehmen erzeugt ein Fahrrad, das es um 400 Euro verkaufen kann. Die variablen Kosten dafür betragen 180 Euro (ebenfalls eine Annahme). Der Deckungsbeitrag beträgt dann 220 für dieses Rad, das sind 55 % vom Verkaufspreis. Dieser Prozentsatz wird auch Deckungsquote genannt. Kennt ein Unternehmen seine gesamten Fixkosten (angenommen, diese betragen 4 Millionen Euro) und beträgt die Deckungsquote über alle Fahrradmodelle hinweg (ebenfalls angenommen) 55 %, dann kann berechnet werden, wie hoch der Umsatz sein muss, damit das Unternehmen in die Gewinnzone kommt (Break-even Umsatz oder Break-even Point): Ein Beispiel zum Break-Even Point
+daher auch von „Deckungsbeitrag“. Insgesamt sollte der Preis natürlich die gesamten Kosten, sowohl variable als auch fixe Kosten decken. Kurzfristig kann auch ein geringerer Preis betriebswirtschaftlich sinnvoll sein, wenn z.B. Räder aus der Vorsaison, die sich nicht mehr regulär verkaufen lassen, zu einem günstigeren Preis noch verkauft werden sollen. Übersteigt der reduzier te Preis die variablen Kosten, wird zumindest ein Deckungsbeitrag erzielt, d.h. ein Beitrag zur Deckung der fixen Kosten, die sowieso anfallen. Das ist daher sinnvoller als ein Rad gar nicht zu verkaufen. Ein Beispiel zum Deckungsbeitrag Angenommen, ein Unternehmen erzeugt ein Fahrrad, das es um 400 Euro verkaufen kann. Die variablen Kosten dafür betragen 180 Euro (ebenfalls eine Annahme). Der Deckungsbeitrag beträgt dann 220 für dieses Rad, das sind 55 % vom Verkaufspreis. Dieser Prozentsatz wird auch Deckungsquote genannt.
 
-55 % der Verkaufspreise können zur Deckung der Fixkosten verwendet werden. 
-Wenn nun die Fixkosten 4 Mio. betragen und diese mit 55 % gleichgesetzt 
-werden, dann betragen 100 %: 
-4 Mio. dividiert durch 55 und multipliziert mal 100 = 7.272.727,27. 
-Das bedeutet, das Unternehmen sollte zumindest knapp 7,3 Mio. Umsatz 
-machen, um zumindest alle Kosten zu decken. Bei höherem Umsatz kommt es in 
-die Gewinnzone und sichert damit seine Existenz.
+Kennt ein Unternehmen seine gesamten Fixkosten (angenommen, diese betragen 4 Millionen Euro) und beträgt die Deckungsquote über alle Fahrradmodelle hinweg (ebenfalls angenommen) 55 %, dann kann berechnet werden, wie hoch der Umsatz sein muss, damit das Unternehmen in die Gewinnzone kommt (Break-even Umsatz oder Break-even Point): Ein Beispiel zum Break-Even Point 55 % der Verkaufspreise können zur Deckung der Fixkosten verwendet werden. Wenn nun die Fixkosten 4 Mio. betragen und diese mit 55 % gleichgesetzt werden, dann betragen 100 %: 4 Mio. dividiert durch 55 und multipliziert mal 100 = 7.272.727,27. Das bedeutet, das Unternehmen sollte zumindest knapp 7,3 Mio. Umsatz machen, um zumindest alle Kosten zu decken. Bei höherem Umsatz kommt es in die Gewinnzone und sichert damit seine Existenz.
 
 ## 3.5 Marketing – kein Erfolg ohne Marktorientierung
 
@@ -711,297 +237,112 @@ Was ist eigentlich Marketing? Marketing ist daher – entgegen der landläufigen
 
 Für ein gelungenes Marketing ist es für ein Unternehmen wesentlich,
 
-• herauszufinden, was (bestehende und mögliche zukünftige) Kundinnen und Kunden brauchen und sich wünschen; 
-• das Angebot des Unternehmens entsprechend zu planen; 
-• dieses Angebot und den Nutzen des Angebots den Kundinnen und Kunden zu kommunizieren, damit sie davon erfahren; 
-• die Preise so zu gestalten, dass Kundinnen und Kunden das Angebot nachfragen können und wollen; 
-• zu organisieren, dass das Angebot am richtigen Ort zur richtigen Zeit zur Verfügung steht. 
+- herauszufinden, was (bestehende und mögliche zukünftige) Kundinnen und Kunden brauchen und sich wünschen;
+- das Angebot des Unternehmens entsprechend zu planen;
+- dieses Angebot und den Nutzen des Angebots den Kundinnen und Kunden zu kommunizieren, damit sie davon erfahren;
+- die Preise so zu gestalten, dass Kundinnen und Kunden das Angebot nachfragen können und wollen;
+- zu organisieren, dass das Angebot am richtigen Ort zur richtigen Zeit zur Verfügung steht.
 
-### Marktorientierte Fragen
+Marktorientierte Fragen Ein Unternehmen orientiert sich bei seinem Angebot insbesondere an den folgenden marktorientierten Fragen, für die u.a. die Marktforschung die grundlegenden Informationen liefert.
 
-Ein Unternehmen orientiert sich bei seinem Angebot insbesondere an den folgenden marktorientierten Fragen, für die u.a. die Marktforschung die grundlegenden Informationen liefert.
+*Abbildung 20: Marktorientierte Fragen*
 
-Abbildung 20: Marktorientierte Fragen
+Die Marketingmaßnahmen beziehen sich also ganz besonders auf die folgenden vier Bereiche: • Was wird angeboten? Bereich Produkt- und Sortimentspolitik („PRODUCT“) Marketingmaßnahmen beziehen sich einerseits auf den Umfang des Produktprogramms bzw. des Sortiments, auf die Gestaltung der einzelnen Produkte und auf Zusatzleistungen. In der Marketingsprache werden nicht nur Produkte, die man tatsächlich angreifen kann wie ein Fahrrad oder ein Packerl Kristallzucker als „Produkt“ bezeichnet, sondern auch Dienstleistungen, Organisationen, Kampagnen, Ideen, Personen und Orte können vermarktet werden und gelten im Marketing als „Produkt“. Auch ein Dienstleistungsunternehmen wie ein Fitnessstudio, eine Steuerberatungskanzlei oder ein Nachhilfeinstitut betreiben Marketing, ebenso Hilfsorganisationen, Parteien, Initiativen, Städte, Regionen und Länder. Rund um ein Produkt auch Dienstleistungen wie Beratung, Einschulung und laufende Betreuung anzubieten bedeutet, dass das „Produkt im Sinne des Marketing“ sowohl das Produkt selbst als auch die damit verbundenen Dienstleistungen umfasst.
 
-Die Marketingmaßnahmen beziehen sich also ganz besonders auf die folgenden vier Bereiche:
+• Zu welchem Preis wird angeboten? Preis- und Konditionenpolitik („PRICE“) Marketingmaßnahmen beziehen sich aber auch auf die Höhe und die Gestaltung der Preise, auf Rabatte, auf Aktionen und Sonderpreise, auf Liefer- und Zahlungsbedingungen. Bei vielen Produkten reagieren die Kundinnen und Kunden vorwiegend auf den Preis. Vor allem bei Lebensmitteln greifen viele Käufer hauptsächlich zum günstigsten Angebot. Die Bereitschaft, für ein hochwertiges Produkt mehr zu zahlen, ist häufig begrenzt.
 
-• Was wird angeboten? Bereich Produkt- und Sortimentspolitik („PRODUCT“) Marketingmaßnahmen beziehen sich einerseits auf den Umfang des Produktprogramms bzw. des Sortiments, auf die Gestaltung der einzelnen Produkte und auf Zusatzleistungen. In der Marketingsprache werden nicht nur Produkte, die man tatsächlich angreifen kann wie ein Fahrrad oder ein Packerl Kristallzucker als „Produkt“ bezeichnet, sondern auch Dienstleistungen, Organisationen, Kampagnen, Ideen, Personen und Orte können vermarktet werden und gelten im Marketing als „Produkt“. Auch ein Dienstleistungsunternehmen wie ein Fitnessstudio, eine Steuerberatungskanzlei oder ein Nachhilfeinstitut betreiben Marketing, ebenso Hilfsorganisationen, Parteien, Initiativen, Städte, Regionen und Länder. Rund um ein Produkt auch Dienstleistungen wie Beratung, Einschulung und laufende Betreuung anzubieten bedeutet, dass das „Produkt im Sinne des Marketing“ sowohl das Produkt selbst als auch die damit verbundenen Dienstleistungen umfasst. 
-• Zu welchem Preis wird angeboten? Preis- und Konditionenpolitik („PRICE“) Marketingmaßnahmen beziehen sich aber auch auf die Höhe und die Gestaltung der Preise, auf Rabatte, auf Aktionen und Sonderpreise, auf Liefer- und Zahlungsbedingungen. Bei vielen Produkten reagieren die Kundinnen und Kunden vorwiegend auf den Preis. Vor allem bei Lebensmitteln greifen viele Käufer hauptsächlich zum günstigsten Angebot. Die Bereitschaft, für ein hochwertiges Produkt mehr zu zahlen, ist häufig begrenzt. 
-• Wo wird angeboten? Distributionspolitik („PLACE“) Marketingmaßnahmen beziehen sich außerdem auf die Organisation des Absatzes, die ein Betrieb wählt, um seine Produkte zu seinen Kundinnen und Kunden zu bringen (z.B. Verkauf im Groß- und/oder Einzelhandel, Verkauf im Internet, eigene Filialen, Franchising, Verkauf durch Handelsvertreter). Die Distribution ist entscheidend, denn auch ein richtiges Produkt am falschen Ort kann dann nicht verkauft werden. 
-• Mit welcher Botschaft spreche ich wen an? Kommunikationspolitik („PROMOTION“) Marketingmaßnahmen beziehen sich schließlich auch auf die Werbung, die Verkaufsförderung und die Öffentlichkeitsarbeit eines Unternehmens. Werbung ist also nur ein kleiner Teilbereich des gesamten Marketing eines Unternehmens. 
+• Wo wird angeboten? Distributionspolitik („PLACE“) Marketingmaßnahmen beziehen sich außerdem auf die Organisation des Absatzes, die ein Betrieb wählt, um seine Produkte zu seinen Kundinnen und Kunden zu bringen (z.B. Verkauf im Groß - und/oder Einzelhandel, Verkauf im Internet, eigene Filialen, Franchising, Verkauf durch Handelsvertreter). Die Distribution ist entscheidend, denn auch ein richtiges Produkt am falschen Ort kann dann nicht verkauft werden.
 
-### Marktorientierung im gesamten Unternehmen
+• Mit welcher Botschaft spreche ich wen an? Kommunikationspolitik („PROMOTION“) Marketingmaßnahmen beziehen sich schließlich auch auf die Werbung, die Verkaufsförderung und die Öffentlichkeitsarbeit eines Unternehmens. Werbung ist also nur ein kleiner Teilbereich des gesamten Marketing eines Unternehmens.
 
-Das Marketing eines Unternehmens betrifft daher viele Unternehmensbereiche, von der Planung und 
-Entwicklung des Angebots, der Produktion bis hin zur Distribution und dem Verkauf. Manche 
-verstehen Marketing aber nicht nur als Managementprozess, sondern als Philosophie für das 
-gesamte Unternehmen, das sich in seinem Tun am Markt und am Unternehmensumfeld orientiert. 
-Ein Beispiel zur 
-Marktorientierung 
+Marktorientierung im gesamten Unternehmen Das Marketing eines Unternehmens betrifft daher viele Unternehmensbereiche, von der Planung und Entwicklung des Angebots, der Produktion bis hin zur Distribution und dem Verkauf. Manche verstehen Marketing aber nicht nur als Managementprozess, sondern als Philosophie für das gesamte Unternehmen, das sich in seinem Tun am Markt und am Unternehmensumfeld orientiert. Ein Beispiel zur Marktorientierung Ein Unternehmen muss sich selbstverständlich insbesondere an den Bedürfnissen und Wünschen der Kundinnen und Kunden orientieren. Werden zum Beispiel Fahrräder erzeugt, die den Eltern und/oder den Kindern nicht gefallen, die sich nicht gut fahren, zu teuer sind oder die man nur umständlich erhalten kann, kann das Unternehmen seine Produkte nicht verkaufen. Sind die Produkte zwar gut und erschwinglich, aber keiner kennt sie, weil man nirgends auf diese Räder hingewiesen wird, wird ebenfalls wenig verkauft wer den können.
 
-Ein Unternehmen muss sich selbstverständlich insbesondere an den Bedürfnissen und Wünschen der Kundinnen und Kunden orientieren. Werden zum Beispiel Fahrräder erzeugt, die den Eltern und/oder den Kindern nicht gefallen, die sich nicht gut fahren, zu teuer sind oder die man nur umständlich erhalten kann, kann das Unternehmen seine Produkte nicht verkaufen. Sind die Produkte zwar gut und erschwinglich, aber keiner kennt sie, weil man nirgends auf diese Räder hingewiesen wird, wird ebenfalls wenig verkauft werden können.
+Diese Maßnahmen sollten nicht nur fall- oder phasenweise eingesetzt werden, sondern laufend systematisch aufeinander abgestimmt zum Einsatz kommen. Diese systematische Abstimmung ist nicht immer einfach. Daten aus der Marktforschung tragen dazu bei, die richtigen Entscheidungen zu treffen. Ein Beispiel zur Abstimmung der Marketingmaßnahmen Ein hochwertiges Fahrrad hat einen hohen Preis, weil es in der Produktion teuer war und eine hohe Qualität aufweist. Auch haben vergleichbare Räder einen ähnlich hohen Preis. Ein hoher Preis wird von vielen Käuferinnen und Käufern als Indikator für Qualität und Exklusivität interpretiert. Ist das Rad jedoch zu teuer, werden mögliche Käuferinnen und Käufer vielleicht doch ein anderes Rad kaufen. Ist es zu günstig, werden viele die Qualität anzweifeln oder es nicht mehr für exklusiv halten. Produkt und Preis müssen daher gut aufeinander abgestimmt werden – ebenso wie der Ort, an dem das Produkt verfügbar ist, und die Botschaft, mit der es vermarktet wird.
 
-Diese Maßnahmen sollten nicht nur fall- oder phasenweise eingesetzt werden, sondern laufend 
-systematisch aufeinander abgestimmt zum Einsatz kommen. Diese systematische Abstimmung ist 
-nicht immer einfach. Daten aus der Marktforschung tragen dazu bei, die richtigen Entscheidungen zu 
-treffen. 
-Ein Beispiel zur 
-Abstimmung der 
-Marketingmaßnahmen 
+Bietet man es in vielen – auch nicht so spezialisierten Geschäften – zum Verkauf an, um möglichst viele Kunden zu erreichen, gilt es ebenfalls nicht mehr als exklusiv. Wird es nur in ausgewählten Fachgeschäften angeboten, kann es sein, dass insgesamt zu we nige Kaufinteressenten darauf aufmerksam werden. Auch der Vertrieb über das Internet kann – ergänzend zu anderen Vertriebswegen oder als einziger Vertriebsweg – überlegt werden, die Website muss aber laufend aktualisiert werden und bedienungsfreundlich für die Kundinnen und Kunden sein. Auch hier muss man darauf achten, dass genug Kaufinteressenten auf die Website stoßen und das Angebot auch in Suchmaschinen gefunden wird. Jedenfalls braucht man Werbung und andere verkaufsfördernde Maßnahmen, um Käufer/inne n auf die Räder aufmerksam zu machen und den Wunsch zu wecken, genau dieses Rad und kein anderes zu kaufen.
 
-Ein hochwertiges Fahrrad hat einen hohen Preis, weil es in der Produktion teuer war und eine hohe Qualität aufweist. Auch haben vergleichbare Räder einen ähnlich hohen Preis. Ein hoher Preis wird von vielen Käuferinnen und Käufern als Indikator für Qualität und Exklusivität interpretiert. Ist das Rad jedoch zu teuer, werden mögliche Käuferinnen und Käufer vielleicht doch ein anderes Rad kaufen. Ist es zu günstig, werden viele die Qualität anzweifeln oder es nicht mehr für exklusiv halten. Produkt und Preis müssen daher gut aufeinander abgestimmt werden – ebenso wie der Ort, an dem das Produkt verfügbar ist, und die Botschaft, mit der es vermarktet wird.
+Marketingziele und -konzept Die Ziele des Marketing sind vielfältig. Gemeinsam ist den meisten Marketingmaßnahmen, dass sie zum Ziel haben,
 
-Bietet man es in vielen – auch nicht so spezialisierten Geschäften – zum Verkauf an, um möglichst viele Kunden zu erreichen, gilt es ebenfalls nicht mehr als exklusiv. Wird es nur in ausgewählten Fachgeschäften angeboten, kann es sein, dass insgesamt zu wenige Kaufinteressenten darauf aufmerksam werden. Auch der Vertrieb über das Internet kann – ergänzend zu anderen Vertriebswegen oder als einziger Vertriebsweg – überlegt werden, die Website muss aber laufend aktualisiert werden und bedienungsfreundlich für die Kundinnen und Kunden sein. Auch hier muss man darauf achten, dass genug Kaufinteressenten auf die Website stoßen und das Angebot auch in Suchmaschinen gefunden wird. Jedenfalls braucht man Werbung und andere verkaufsfördernde Maßnahmen, um Käufer/innen auf die Räder aufmerksam zu machen und den Wunsch zu wecken, genau dieses Rad und kein anderes zu kaufen.
-
-### Marketingziele und -konzept
-
-Die Ziele des Marketing sind vielfältig. Gemeinsam ist den meisten Marketingmaßnahmen, dass sie zum Ziel haben,
-
-• die Zielgruppe zu erreichen, d.h. genau die Personen, die man mit seinem Angebot erreichen und ansprechen will 
-• einen hohen Bekanntheitsgrad zu haben und positiv gesehen zu werden bzw. eine Imagekorrektur vorzunehmen. 
+- die Zielgruppe zu erreichen, d.h. genau die Personen, die man mit seinem Angebot erreichen und ansprechen will
+- einen hohen Bekanntheitsgrad zu haben und positiv gesehen zu werden bzw. eine Imagekorrektur vorzunehmen.
 
 Weitere mögliche Marketingziele bestehen darin,
 
-• bestehende Kunden zu halten und neue Kunden zu gewinnen 
-• damit den Anteil am Gesamtmarkt zu halten oder sogar zu erhöhen 
-• den Umsatz zu halten oder sogar zu steigern 
-• und damit zumindest die Kosten zu decken oder Gewinne zu erzielen. 
+- bestehende Kunden zu halten und neue Kunden zu gewinnen
+- damit den Anteil am Gesamtmarkt zu halten oder sogar zu erhöhen
+- den Umsatz zu halten oder sogar zu steigern
+- und damit zumindest die Kosten zu decken oder Gewinne zu erzielen.
 
 Was ist ein Marketingkonzept? Ein umfassendes Marketingkonzept wird entwickelt, um die Marketingziele zu erreichen. Es orientiert sich daher am Markt, legt genau formulierte Ziele fest und koordiniert alle Maßnahmen im Unternehmen, die der Marktorientierung dienen, insbesondere Product, Price, Place und Promotion. Ein solches Konzept sollte zu Kundenzufriedenheit führen, die die Voraussetzung für Unternehmenserfolg ist.
 
-Abbildung 21: Marketingkonzept
+*Abbildung 21: Marketingkonzept*
 
-### Markt und Marktkennzahlen
+Markt und Marktkennzahlen Wie bereits erwähnt, ist der Markt für die Ausrichtung der Marketingmaßnahmen wesentlich. Während der Markt im Allgemeinen das Zusammentreffen von Angebot von und Nachfrage nach einem bestimmten Gut bezeichnet, bedeutet Markt im Marketing die Summe der Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem angebotenen Produkt erfüllt werden kann. Der Markt kann durch verschiedene Kennzahlen beschrieben werden. Besonders bedeutend sind das Marktpotenzial, das Marktvolumen und der Marktanteil eines Unternehmens:
 
-Wie bereits erwähnt, ist der Markt für die Ausrichtung der Marketingmaßnahmen wesentlich. 
-Während der Markt im Allgemeinen das Zusammentreffen von Angebot von und Nachfrage nach 
-einem bestimmten Gut bezeichnet, bedeutet Markt im Marketing die Summe der Personen 
-und/oder Unternehmen, die ein Bedürfnis haben, das mit dem angebotenen Produkt erfüllt 
-werden kann. 
-Der Markt kann durch verschiedene Kennzahlen beschrieben werden. Besonders bedeutend sind das 
-Marktpotenzial, das Marktvolumen und der Marktanteil eines Unternehmens: 
-Was versteht man unter Marktpotenzial und Marktvolumen? 
-Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes. Das 
-Marktpotenzial macht daher deutlich, wie groß ein Markt wäre, wenn alle 
-Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem Produkt 
-erfüllt werden könnte, tatsächlich dieses Produkt kaufen würden. Das 
-Marktvolumen ist die tatsächlich verkaufte Menge des Produkts. 
+Was versteht man unter Marktpotenzial und Marktvolumen? Das Marktpotenzial ist die maximal mögliche Absatzmenge eines Produktes. Das Marktpotenzial macht daher deutlich, wie groß ein Markt wäre, wenn alle Personen und/oder Unternehmen, die ein Bedürfnis haben, das mit dem Produkt erfüllt werden könnte, tatsächl ich dieses Produkt kaufen würden. Das Marktvolumen ist die tatsächlich verkaufte Menge des Produkts.
 
 Ist das Marktvolumen nahe am Marktpotenzial, dann bedeutet das, dass der Markt beinahe gesättigt ist (und kaum mehr verkauft werden könnte). Häufig wird versucht, gesättigte Märkte durch veränderte Produkte oder durch das Ansprechen neuer Käuferschichten wieder zu ungesättigten Märkten zu machen (z.B. neue Modelle mit neuen Funktionen).
 
-Was versteht man unter Verkaufspotenzial und Verkaufsvolumen eines 
-Unternehmens? 
-Als Verkaufs- oder Absatzpotenzial eines Unternehmens für ein Produkt oder eine 
-Produktgruppe bezeichnet man jene Absatzmenge, die das Unternehmen im 
-besten Fall erreichen kann oder zu erreichen hofft. Das Absatzpotenzial der 
-woom GmbH ist jene Absatzmenge von Fahrrädern, die es im Idealfall verkaufen 
-kann. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für 
-ein bestimmtes Produkt oder eine Produktgruppe. 
-Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden. 
-Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an, der 
-relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größten 
-Mitbewerbers. Ein relativer Marktanteil größer als eins zeigt daher an, dass das Unternehmen der 
-Marktführer ist. 
-Tab. 5: Absoluter und relativer Marktanteil 
-absoluter Marktanteil in Prozent relativer Marktanteil 
-Unternehmensumsatz × 100 
-Marktvolumen 
+Was versteht man unter Verkaufspotenzial und Verkaufsvolumen eines Unternehmens? Als Verkaufs- oder Absatzpotenzial eines Unternehmens für ein Produkt oder eine Produktgruppe bezeichnet man jene Absatzmenge, die das Unternehmen im besten Fall erreichen kann oder zu erreichen hofft. Das Absatzpotenzial der woom GmbH ist jene Absatzmenge von Fahrrädern, die es im Idealfall verkaufen kann. Das Verkaufs- oder Absatzvolumen ist der Absatz eines Unternehmens für ein bestimmtes Produkt oder eine Produktgruppe.
 
-Unternehmensumsatz_ Umsatz des größten Mitbewerbers
+Der Marktanteil eines Unternehmens für ein Produkt kann mengen- oder wertmäßig ermittelt werden. Der absolute Marktanteil gibt den Anteil des Unternehmensumsatzes am Marktvolumen an, der relative Marktanteil setzt den Unternehmensumsatz in Beziehung zum Umsatz des größte n Mitbewerbers. Ein relativer Marktanteil größer als eins zeigt daher an, dass das Unternehmen der Marktführer ist. Tab. 5: Absoluter und relativer Marktanteil absoluter Marktanteil in Prozent relativer Marktanteil Unternehmensumsatz × 100 Marktvolumen Unternehmensumsatz_ Umsatz des größten Mitbewerbers
 
-Abbildung 22: Marktkennzahlen
+*Abbildung 22: Marktkennzahlen*
 
-### Formen der Marktbearbeitung
+Formen der Marktbearbeitung Bedürfnisse und Kaufverhalten der verschiedenen Käufergruppen sind sehr unterschiedlich. Es ist daher meist nicht sinnvoll, Produkte für den Gesamtmarkt zu entwickeln und für jedes Produkt auf allen Märkten Marketing zu betreiben. Der Markt wird daher in Käufergruppen (Zielgruppen) aufgeteilt („segmentiert“). Jede Gruppe umfasst Personen mit Gemeinsamkeiten bei bestimmten Merkmalen (zum Beispiel Alter, Einkommen, Konsumgewohnheiten). Dadurch kann man die Produktentwicklung, die Preise, die Absatzwege und di e Werbung gezielter ausrichten. Zielgruppe(n) sind nicht nur die Personen, die Produkte nachfragen und kaufen, sondern auch jene, die die Kaufentscheidung beeinflussen, oder jene, die zwar nicht kaufen, aber das Produkt dann nutzen.
 
-Bedürfnisse und Kaufverhalten der verschiedenen Käufergruppen sind sehr unterschiedlich. Es ist daher meist nicht sinnvoll, Produkte für den Gesamtmarkt zu entwickeln und für jedes Produkt auf allen Märkten Marketing zu betreiben. Der Markt wird daher in Käufergruppen (Zielgruppen) aufgeteilt („segmentiert“). Jede Gruppe umfasst Personen mit Gemeinsamkeiten bei bestimmten Merkmalen (zum Beispiel Alter, Einkommen, Konsumgewohnheiten). Dadurch kann man die Produktentwicklung, die Preise, die Absatzwege und die Werbung gezielter ausrichten. Zielgruppe(n) sind nicht nur die Personen, die Produkte nachfragen und kaufen, sondern auch jene, die die Kaufentscheidung beeinflussen, oder jene, die zwar nicht kaufen, aber das Produkt dann nutzen.
-
-Abbildung 23: Mögliche Zielgruppen für die Marketingaktivitäten
+*Abbildung 23: Mögliche Zielgruppen für die Marketingaktivitäten*
 
 Das zielgruppenorientierte Marketing erfolgt in drei Phasen: 1. In der ersten Phase wird der Markt segmentiert. 2. In der zweiten Phase wird festgelegt, welche Marktsegmente bearbeitet werden sollen. 3. In der dritten Phase positioniert das Unternehmen sein Angebot auf diesem Zielmarkt.
 
-Abbildung 24: Phasen der Markt
+*Abbildung 24: Phasen der Markt*
 
-Marktpositionierung Die Positionierung des Produkts auf dem Markt beschreibt, wie das Produkt in Hinblick auf wichtige Eigenschaften von den Konsumenten gesehen wird bzw. gesehen werden soll. Das Produkt soll sich deutlich und unverwechselbar von der Konkurrenz abheben und für die Zielgruppe besonders
+Marktpositionierung Die Positionierung des Produkts auf dem Markt beschreibt, wie das Produkt in Hinblick auf wichtige Eigenschaften von den Konsumenten gesehen wird bzw. gesehen werden soll. Das Produkt soll sich deutlich und unverwechselbar von der Konkurrenz abheben und fü r die Zielgruppe besonders
 
 wünschenswert sein: Das Produkt soll eine Unique Selling Proposition (USP) erlangen. Für die woom GmbH ist die USP „besonders kindertaugliche hochqualitative Fahrräder, die lange halten“.
 
-### Der Marketing Mix
+Der Marketing Mix Produktpolitik Bei der Produktpolitik muss bedacht werden, dass das Produkt für den Kunden einen Nutzen haben muss, dass Produkte einem Lebenszyklus unterliegen und dass die produktpolitischen Maßnahmen daher den Kundennutzen im Blick haben und die Produktlebenszyklusphase berücksichtigen sollten. Das Produkt muss für den Kunden einen Nutzen haben Wer etwas kauft, erwartet sich, dass das Gekaufte einen Nutzen haben wird. Ein Notebook zum Beispiel hat für den Käufer den Nutzen, dass er darauf Computerprogramme installieren kann und mit diesen Programmen arbeiten kann. Darüber hinaus könnte der Nutzen aber auch darin liegen, dass man damit ortsunabhängig arbeiten kann, dass es leicht ist und schön ausschaut. Welchen Nutzen das Produkt für Käufer haben kann, muss bei der Produktentwicklung und später auch bei der Vermarktung genau überlegt werden. Beim Nutzen unterscheidet man zwischen Grund- und Zusatznutzen. Tab. 6: Grund- und Zusatznutzen eines Produkts Grundnutzen des Produkts Primärer Zweck des Produkts, z.B. beim Fahrrad das Fahren Zusatznutzen: 1) Geltungsnutzen 2) Erlebnisnutzen Über den Grundnutzen hinausgehender Nutzen: 1) Prestige, sich ein bestimmtes Rad leisten zu können 2) Es macht Spaß damit zu fahren / Es ist ein besonders sicheres Rad.
 
-Produktpolitik 
-Bei der Produktpolitik muss bedacht werden, dass das Produkt für den Kunden einen Nutzen haben 
-muss, dass Produkte einem Lebenszyklus unterliegen und dass die produktpolitischen Maßnahmen 
-daher den Kundennutzen im Blick haben und die Produktlebenszyklusphase berücksichtigen sollten. 
-Das Produkt muss für den Kunden einen Nutzen haben 
-Wer etwas kauft, erwartet sich, dass das Gekaufte einen Nutzen haben wird. Ein Notebook zum 
-Beispiel hat für den Käufer den Nutzen, dass er darauf Computerprogramme installieren kann und mit 
-diesen Programmen arbeiten kann. Darüber hinaus könnte der Nutzen aber auch darin liegen, dass 
-man damit ortsunabhängig arbeiten kann, dass es leicht ist und schön ausschaut. Welchen Nutzen das 
-Produkt für Käufer haben kann, muss bei der Produktentwicklung und später auch bei der Vermarktung 
-genau überlegt werden. Beim Nutzen unterscheidet man zwischen Grund- und Zusatznutzen. 
-Tab. 6: Grund- und Zusatznutzen eines Produkts 
-Grundnutzen des Produkts Primärer Zweck des Produkts, z.B. beim Fahrrad das Fahren 
-Zusatznutzen: 
-1) Geltungsnutzen 
-2) Erlebnisnutzen 
+Produkte haben einen Lebenszyklus Viele Produkte gibt es nur eine Zeit lang auf dem Markt, dann werden sie – früher oder später – durch neue Produkte ersetzt. Wie lange die „Lebensdauer“ eines Produkts ist, ist allerdings von vielen Faktoren abhängig, zum Beispiel von den Änderungen des Ve rbraucherverhaltens (ändern sich die Präferenzen der Käufer?), vom technischen Fortschritt, von gesetzlichen Bestimmungen und von der Intensität des Wettbewerbs. Idealtypisch hat der Produktlebenszyklus das folgende Aussehen: 
 
-Über den Grundnutzen hinausgehender Nutzen: 1) Prestige, sich ein bestimmtes Rad leisten zu können 2) Es macht Spaß damit zu fahren / Es ist ein besonders sicheres Rad.
+*Abbildung 25: Produktlebenszyklus*
 
-Produkte haben einen Lebenszyklus 
-Viele Produkte gibt es nur eine Zeit lang auf dem Markt, dann werden sie – früher oder später – durch 
-neue Produkte ersetzt. Wie lange die „Lebensdauer“ eines Produkts ist, ist allerdings von vielen 
-Faktoren abhängig, zum Beispiel von den Änderungen des Verbraucherverhaltens (ändern sich die 
-Präferenzen der Käufer?), vom technischen Fortschritt, von gesetzlichen Bestimmungen und von der 
-Intensität des Wettbewerbs. Idealtypisch hat der Produktlebenszyklus das folgende Aussehen: 
-Abbildung 25: Produktlebenszyklus 
+Mit der Einführungsphase wird das neue Produkt auf dem Markt mit verschiedenen Werbemaßnahmen eingeführt. Wenn es Erfolg hat und nachgefragt wird, steigen die Umsätze langsam an. Da die Kosten für die Produktentwicklung und den Werbeaufwand für die Produkteinführung hoch sind, wi rd erst gegen Ende der Einführungsphase Gewinn erzielt. Hat das Produkt in dieser Phase keinen Erfolg, wird es – eher früher als später – wieder vom Markt verschwinden. Ist das Produkt jedoch erfolgreich, kommt es in die Wachstumsphase. Nun steigen die Umsätze kräftig an und mit ihnen auch die Gewinne. Allerdings wird nun auch die Konkurrenz vermehrt auf das Produkt aufmerksam. Es ist wahrscheinlich, dass es nun Nachahmer auf dem Markt gibt. Die Preisgestaltung ist nun entscheidend, um die Marktposition auszubauen. An die Wachstumsphase schließt die Reifephase an, in der der Umsatz sein Maximum erreicht. Die Gewinne sinken allerdings schon wieder, weil wegen der zunehmenden Konkurrenz immer mehr Aufwand für Werbung und andere verkaufsfördernde Maßnahmen (Rabatte und Promotions) anfällt. In der Sättigungsphase fallen sowohl Umsatz als auch Gewinne, der Markt beginnt zu schrumpfen. Daher muss schon zu Beginn der Sättigungsphase klar sein, wie man mit dem Produkt weiter umgehen will, bevor es in die Degenerationsphase kommt, in der es nur noch hohe Kosten verursacht. Es muss daher bereits davor klar sein, ob man das Produkt aus dem Angebot ausscheidet oder ob man mit einer Produktveränderung einen Neustart (Relaunch) versucht. Ein Unternehmen kann verschiedene produktpolitische Maßnahmen ergreifen: 1. Verschiedene Formen der Produktinnovation, bei der ein neues Produkt die bestehenden Produkte ergänzt und dadurch das Sortiment tiefer (Produktdifferenzierung) oder breiter (Produktdiversifikation) wird. Bietet die woom GmbH zum Beispiel zusätzlich zu den bereits bestehenden Rädern noch weitere Modelle von Rädern an, vertieft sie ihr Radsortiment und betreibt Produktdifferenzierung. Entscheidet sich die woom GmbH eines Tages dafür, neben Rädern auch Sportausrüstung (Kleidung, Regenschutz, etc.) und Fitnessgeräte anzubieten, würde sie das Sortiment verbreitern. Dies wäre dann Produktdiversifikation.
 
-Mit der Einführungsphase wird das neue Produkt auf dem Markt mit verschiedenen 
-Werbemaßnahmen eingeführt. Wenn es Erfolg hat und nachgefragt wird, steigen die Umsätze langsam 
-an. Da die Kosten für die Produktentwicklung und den Werbeaufwand für die Produkteinführung hoch 
-sind, wird erst gegen Ende der Einführungsphase Gewinn erzielt. Hat das Produkt in dieser Phase 
-keinen Erfolg, wird es – eher früher als später – wieder vom Markt verschwinden. 
-Ist das Produkt jedoch erfolgreich, kommt es in die Wachstumsphase. Nun steigen die Umsätze kräftig 
-an und mit ihnen auch die Gewinne. Allerdings wird nun auch die Konkurrenz vermehrt auf das Produkt 
-aufmerksam. Es ist wahrscheinlich, dass es nun Nachahmer auf dem Markt gibt. Die Preisgestaltung ist 
-nun entscheidend, um die Marktposition auszubauen. 
-An die Wachstumsphase schließt die Reifephase an, in der der Umsatz sein Maximum erreicht. Die 
-Gewinne sinken allerdings schon wieder, weil wegen der zunehmenden Konkurrenz immer mehr 
-Aufwand für Werbung und andere verkaufsfördernde Maßnahmen (Rabatte und Promotions) anfällt. 
-In der Sättigungsphase fallen sowohl Umsatz als auch Gewinne, der Markt beginnt zu schrumpfen. 
-Daher muss schon zu Beginn der Sättigungsphase klar sein, wie man mit dem Produkt weiter umgehen 
-will, bevor es in die Degenerationsphase kommt, in der es nur noch hohe Kosten verursacht. Es muss 
-daher bereits davor klar sein, ob man das Produkt aus dem Angebot ausscheidet oder ob man mit einer 
-Produktveränderung einen Neustart (Relaunch) versucht. 
-Ein Unternehmen kann verschiedene produktpolitische Maßnahmen ergreifen: 
-1. Verschiedene Formen der Produktinnovation, bei der ein neues Produkt die bestehenden 
-Produkte ergänzt und dadurch das Sortiment tiefer (Produktdifferenzierung) oder breiter 
-(Produktdiversifikation) wird. Bietet die woom GmbH zum Beispiel zusätzlich zu den bereits 
-bestehenden Rädern noch weitere Modelle von Rädern an, vertieft sie ihr Radsortiment und 
-betreibt Produktdifferenzierung. Entscheidet sich die woom GmbH eines Tages dafür, neben 
-Rädern auch Sportausrüstung (Kleidung, Regenschutz, etc.) und Fitnessgeräte anzubieten, 
-würde sie das Sortiment verbreitern. Dies wäre dann Produktdiversifikation. 
-2. Produktvariation, bei der ein bestehendes Produkt verändert wird. Bei der Produktvariation 
-wird nur noch die veränderte neue Version angeboten, die vorhergehende Version nicht mehr. 
-3. Produktelimination, bei der ein Produkt, das nicht mehr erfolgreich ist, vom Markt genommen 
-wird. 
+2. Produktvariation, bei der ein bestehendes Produkt verändert wird. Bei der Produktvariation wird nur noch die veränderte neue Version angeboten, die vorhergehende Version nicht mehr.
 
-Abbildung 26: Produktpolitische Maßnahmen
+*Abbildung 26: Produktpolitische Maßnahmen*
 
 Die produktpolitischen Maßnahmen dienen dazu, den Produktlebenszyklus möglichst optimal zu gestalten und den Erfolg eines Produkts entsprechend zu verlängern. Schon beim Einstieg ist zu überlegen, ob man es wagen kann, als erster mit höherem unternehmerischem Risiko („Markteröffnungskosten“ wie etwa die anfallenden Entwicklungs- und Kommunikationskosten) in den Markt zu gehen oder ob man eher zuwartet, wie sich der Markt entwickelt und dann mit einem ähnlichen Produkt nachzieht.
 
-Preispolitik 
-Konkurrieren auf dem Markt viele Produkte und Dienstleistungen, deren Nutzen für die 
-Abnehmer:innen etwa gleich ist, spielt die Preispolitik eine entscheidende Rolle. Günstige Preise sind 
-für viele Käufer:innen relevant z.B. bei Lebensmitteln, Alltagskleidung, Flugreisen oder Handytarifen. 
-Ist die USP eines Produkts aber gut etabliert und sein Image entsprechend, sind Käufer:innen auch oft 
-bereit, höhere Preise zu bezahlen. Preispolitik ist daher zwischen „Hochpreispolitik“ und 
-„Niedrigpreispolitik“ oder „Diskontpreispolitik“ angesiedelt. Zusätzlich sind die Zahlungskonditionen 
-wichtig. 
-In der Praxis sind es vor allem drei Faktoren, die für die Festsetzung des Preises bedeutend sind: 
-1. Wie hoch sind die Kosten des Produkts? Können sie mit dem Preis zumindest gedeckt werden? 
-2. Wie hoch ist der Preis für ein vergleichbares Konkurrenzprodukt? 
-3. Wie viel sind die Kunden bereit für das Produkt zu zahlen? 
+Preispolitik Konkurrieren auf dem Markt viele Produkte und Dienstleistungen, deren Nutzen für die Abnehmer:innen etwa gleich ist, spielt die Preispolitik eine entscheidende Rolle. Günstige Preise sind für viele Käufer:innen relevant z.B. bei Lebensmitteln, Alltagskleidung, Flugreisen oder Handytarifen. Ist die USP eines Produkts aber gut etabliert und sein Image entsprechend, sind Käufer:innen auch oft bereit, höhere Preise zu bezahlen. Preispolitik ist daher zwischen „Hochpreispolitik“ und „Niedrigpreispolitik“ oder „Diskontpreispolitik“ angesiedelt. Zusätzlich sind die Zahlungskonditionen wichtig. In der Praxis sind es vor allem drei Faktoren, die für die Festsetzung des Preises bedeutend sind: 1. Wie hoch sind die Kosten des Produkts? Können sie mit dem Preis zumindest gedeckt werden? 2. Wie hoch ist der Preis für ein vergleichbares Konkurrenzprodukt? 3. Wie viel sind die Kunden bereit für das Produkt zu zahlen?
 
-Abbildung 27: Wesentliche Faktoren für die Preisfestsetzung
+*Abbildung 27: Wesentliche Faktoren für die Preisfestsetzung*
 
-Einen höheren Preis zu verlangen als die Kund:innen zahlen können oder wollen, ist wenig sinnvoll. 
-Grundsätzlich ist bei hohen Preisen die Nachfrage normalerweise niedrig und bei niedrigen Preisen 
-hoch. In der Regel bedeutet eine hohe Nachfrage, dass die Preise (etwas) erhöht werden können. Sinkt 
-die Nachfrage, so werden häufig auch die Preise wieder gesenkt. 
-Verkäufermarkt und Käufermarkt 
-Übersteigt die Nachfrage das Angebot, spricht man von einem „Verkäufermarkt“. Hier haben es die 
-Verkäufer:innen leichter als die Käufer:innen, den Preis zu beeinflussen. Die Preise werden daher eher 
-hoch sein oder tendenziell steigen. Als Käufer:in hat man vergleichsweise wenig Verhandlungsmacht 
-und Gestaltungsspielräume. 
-Langfristig führt ein Verkäufermarkt oft dazu, dass mehrere Unternehmen das gewünschte Gut 
-produzieren, das Angebot dadurch steigt und die Preise wieder fallen. Falls das Angebot dann die 
-Nachfrage übersteigt, entsteht ein Käufermarkt. 
-In einem Käufermarkt können die Käufer:innen die Preise beeinflussen und verfügen über mehr 
-Verhandlungsmacht. Langfristig werden die Preise so lange fallen, bis einige Anbieter:innen um diesen 
-Preis nicht mehr verkaufen. Das Angebot wird zurückgehen und die Preise werden wieder steigen. 
-Nicht immer sind die Reaktionen der Kund:innen auf Preisänderungen ganz rational. Zu 
-berücksichtigen sind hier etwa 
-• der Snob-Effekt (es wird teuer gekauft, um zu zeigen, dass man es sich leisten kann), 
-• der Mitläufer-Effekt (es wird teuer gekauft, weil es andere auch tun) und 
-• der Qualitätseffekt (man vermutet, dass teure Produkte besser sind als billigere, also kauft man das teurere). 
+Einen höheren Preis zu verlangen als die Kund:innen zahlen können oder wollen, ist wenig sinnvoll. Grundsätzlich ist bei hohen Preisen die Nachfrage normalerweise niedrig und bei niedrigen Preisen hoch. In der Regel bedeutet eine hohe Nachfrage, dass die Preise (etwas) erhöht werden können. Sinkt die Nachfrage, so werden häufig auch die Preise wieder gesenkt. Verkäufermarkt und Käufermarkt Übersteigt die Nachfrage das Angebot, spricht man von einem „Verkäufermarkt“. Hier haben es die Verkäufer:innen leichter als die Käufer:innen, den Preis zu beeinflussen. Die Preise werden daher eher hoch sein oder tendenziell steigen. Als Käufer:in hat man vergleichsweise wenig Verhandlungsmacht und Gestaltungsspielräume. Langfristig führt ein Verkäufermarkt oft dazu, dass mehrere Unternehmen das gewünschte Gut produzieren, das Angebot dadurch steigt und die Preise wieder fallen. Falls das Angebot dann die Nachfrage übersteigt, entsteht ein Käufermarkt. In einem Käufermarkt können die Käufer:innen die Preise beeinflussen und verfügen über mehr Verhandlungsmacht. Langfristig werden die Preise so lange fallen, bis einige Anbieter:innen um diesen Preis nicht mehr verkaufen. Das Angebot wird zurückgehen und die Preise werden wieder steigen. Nicht immer sind die Reaktionen der Kund:innen auf Preisänderungen ganz rational. Zu berücksichtigen sind hier etwa
+
+- der Snob-Effekt (es wird teuer gekauft, um zu zeigen, dass man es sich leisten kann),
+- der Mitläufer-Effekt (es wird teuer gekauft, weil es andere auch tun) und
+- der Qualitätseffekt (man vermutet, dass teure Produkte besser sind als billigere, also kauft man das teurere).
 
 Distributionspolitik Die Distributionspolitik versucht zwei wesentliche Fragen zu beantworten, nämlich
 
-• wie das Produkt zum Kunden kommt, d.h. wie der „Absatzweg” gestaltet werden soll, und 
-• welcher Transportweg gewählt werden soll. 
+- wie das Produkt zum Kunden kommt, d.h. wie der „Absatzweg” gestaltet werden soll, und
+- welcher Transportweg gewählt werden soll.
 
-Der Absatz an die Kund:innen kann direkt oder indirekt erfolgen: Beim direkten Absatz wird vom produzierenden Unternehmen direkt an den Endabnehmer verkauft. Bestellt man direkt beim Produzenten, der die Bestellung aus seiner Zentrale oder auch aus einer eigenen Niederlassung erfüllt, handelt es sich um einen direkten Absatzweg. Beim indirekten Absatz sind auf dem Absatzweg zwischen Produzenten und Endabnehmer ein oder mehr Handelsbetriebe dazwischengeschaltet. Dazu zählen zum Beispiel die Großhändler, die an andere Händler weiterverkaufen, und die Einzelhändler, die dann an den Letztverbraucher verkaufen. Ein besonderer Absatzweg ist das Franchising, bei dem ein Unternehmen, der Franchisegeber, einem anderen Unternehmen, dem Franchisenehmer, gegen Bezahlung einer Franchisegebühr (meist Fixbetrag plus Umsatzbeteiligung), seinen Markennamen, seine Produkte und sein gesamtes „Marketing- Know-how“ (Geschäftsgestaltung, Werbung, Internetauftritt, etc.) zur Verfügung stellt. Der Franchisenehmer ist wirtschaftlich und rechtlich selbständig, ist jedoch an das übernommene Marketingkonzept und Geschäftsmodell des Franchisegebers im vereinbarten Ausmaß gebunden.
+Der Absatz an die Kund:innen kann direkt oder indirekt erfolgen: Beim direkten Absatz wird vom produzierenden Unternehmen direkt an den Endabnehmer verkauft. Bestellt man direkt beim Produzenten, der die Bestellung aus seiner Zentrale oder auch aus einer eigenen Niederlassung erfüllt, handelt es sich um einen direkten Absatzweg. Beim indirekten Absatz sind auf dem Absatzweg zwischen Produzenten und Endabnehmer ein oder mehr Handelsbetriebe dazwischengeschaltet. Dazu zählen zum Beispiel die Großhändler, die an andere Händler weiterverkaufen, und die Einzelhändler, die dann an den Letztverbraucher verkaufen. Ein besonderer Absatzweg ist das Franchising, bei dem ein Unternehmen, der Franchisegeber, einem anderen Unternehmen, dem Franchisenehmer, gegen Bezahlung einer Franchisegebühr (meist Fixbetrag plus Umsatzbeteiligung), seinen Markennamen, seine Produkte un d sein gesamtes „Marketing- Know-how“ (Geschäftsgestaltung, Werbung, Internetauftritt, etc.) zur Verfügung stellt. Der Franchisenehmer ist wirtschaftlich und rechtlich selbständig, ist jedoch an das übernommene Marketingkonzept und Geschäftsmodell des Franchisegebers im vereinbarten Ausmaß gebunden.
 
-Kommunikationspolitik 
-Zur Kommunikationspolitik gehört in erster Linie die Werbung, wie man sie ganz klassisch in den 
-folgenden Formen kennt: 
-Tab. 7: Wesentliche klassische Werbemittel und Werbeträger 
-Werbemittel Werbeträger 
-Anzeigen (Inserate) Tages- und Wochenzeitschriften, Illustrierte, 
-Fachzeitschriften, Veranstaltungsprogramme, etc. 
-TV-Spots, Radiospots Fernsehen, Hörfunk 
-Werbefilme Kinos, Theater, Veranstaltungen etc. 
-Plakate, Werbetafeln Plakatwände, Litfaßsäulen, öffentliche 
-Verkehrseinrichtungen, Sportplätze etc. 
-
-| | TV-Spots, Radiospots | | Fernsehen, Hörfunk | |
-| --- | --- | --- | --- | --- |
-| | Werbefilme | | Kinos, Theater, Veranstaltungen etc. | |
-| | Plakate, Werbetafeln | | Plakatwände, Litfaßsäulen, öffentliche | |
-
-Werbebriefe, Flugblätter, Prospekte, Kataloge
-
-Post, gewerbsmäßige Verteiler, bei Veranstaltungen, als Zeitungsbeilage etc.
-
-Mitteilungen, Blogs, Foren, Banner, Websites etc.
-
-Social Media wie Facebook, Instagram, Twitter, YouTube, etc.
+Kommunikationspolitik Zur Kommunikationspolitik gehört in erster Linie die Werbung, wie man sie ganz klassisch in den folgenden Formen kennt: Tab. 7: Wesentliche klassische Werbemittel und Werbeträger Werbemittel Werbeträger Anzeigen (Inserate) Tages- und Wochenzeitschriften, Illustrierte, Fachzeitschriften, Veranstaltungsprogramme, etc. TV-Spots, Radiospots Fernsehen, Hörfunk Werbefilme Kinos, Theater, Veranstaltungen etc. Plakate, Werbetafeln Plakatwände, Litfaßsäulen, öffentliche Verkehrseinrichtungen, Sportplätze etc. Werbebriefe, Flugblätter, Prospekte, Kataloge Post, gewerbsmäßige Verteiler, bei Veranstaltungen, als Zeitungsbeilage etc. Mitteilungen, Blogs, Foren, Banner, Websites etc. Social Media wie Facebook, Instagram, Twitter, YouTube, etc.
 
 Zur Kommunikationspolitik gehören neben verschiedenen Formen der Werbung auch
 
-• der gesamte Auftritt des Unternehmens im Internet mit eigener Website und in sozialen Netzwerken, 
-• die Verkaufsförderung durch bestimmte Aktionen und 
-• das Verhalten der Verkäufer/innen („Personal Selling“). 
-• Schließlich bezieht sich die Kommunikationspolitik auch nicht nur auf die Produkte, sondern oft auf das ganze Unternehmen, etwa im Bereich „Public Relations“. PR-Aktivitäten umfassen das Abhalten von Pressekonferenzen, Presseaussendungen und die gezielte Information von bestimmten Zielgruppen, z.B. Investoren („Investors Relations“) sowie das Sponsoring. 
+- der gesamte Auftritt des Unternehmens im Internet mit eigener Website und in sozialen Netzwerken,
+- die Verkaufsförderung durch bestimmte Aktionen und
+- das Verhalten der Verkäufer/innen („Personal Selling“).
+- Schließlich bezieht sich die Kommunikationspolitik auch nicht nur auf die Produkte, sondern oft auf das ganze Unternehmen, etwa im Bereich „Public Relations“. PR-Aktivitäten umfassen das Abhalten von Pressekonferenzen, Presseaussendungen und die gezielte Information von bestimmten Zielgruppen, z.B. Investoren („Investors Relations“) sowie das Sponsoring.
 
 Für Werbung und PR hat Social-Media-Marketing enorm an Bedeutung gewonnen:
 
-Was ist Social-Media-Marketing? Social-Media-Marketing (SMM) bezeichnet Marketingaktivitäten, in der Regel Werbung und PR, eines Unternehmens in sozialen Medien wie z.B. Facebook und X (ehemals Twitter). Die Öffentlichkeitsarbeit mittels Social Media wird Social Media Relations genannt. Soziale Medien haben in den letzten Jahren enorm an Bedeutung gewonnen, die Nutzerzahlen sind um ein Vielfaches gestiegen.
+Was ist Social-Media-Marketing? Social-Media-Marketing (SMM) bezeichnet Marketingaktivitäten, in der Regel Werbung und PR, eines Unternehmens in sozialen Medien wie z.B. Facebook und X (ehemals Twitter ). Die Öffentlichkeitsarbeit mittels Social Media wird Social Media Relations genannt. Soziale Medien haben in den letzten Jahren enorm an Bedeutung gewonnen, die Nutzerzahlen sind um ein Vielfaches gestiegen.
 
-Unternehmen können über soziale Medien daher mit einer Vielzahl von (potenziellen) Kundinnen und 
-Kunden rasch und direkt Kontakt aufnehmen, ihre Produkte vorstellen, ihre Botschaften 
-kommunizieren und positive Stimmung für sich und ihre Produkte machen. 
-Ebenso hat das Event Marketing an Bedeutung gewonnen. Event Marketing umfasst 
-„erlebnisorientierte Veranstaltungen, die einen starken Aktivierungsprozess“ beim Kunden auslösen 
-sollen. Sie sollen die Aufmerksamkeit auf ein bestimmtes Unternehmen, eine bestimmte 
-Produktgruppe oder ein bestimmtes Ereignis richten, jegliche Art von Veranstaltungen, z.B. 
-Modeschauen, Messeveranstaltungen, Ausstellungs- und Geschäftseröffnungen, Kultur- und 
-Sportveranstaltungen. 
-
-## 4. Digitalisierung und Vernetzung von Wirtschaft und Gesellschaft
-
-Wenn wir an das einführende Beispiel aus Kapitel 1 zurückdenken und uns einen typischen Morgen an 
-einem Arbeitstag vorstellen, dann dauert es nicht lange bis wir mit Technologie in Kontakt kommen. 
-Sie werden geweckt – am besten zum optimalen Zeitpunkt auf Basis ihrer digital gemessenen 
-Schlafphase. Sie putzen sich die Zähne – womöglich mit einer „smarten“ Zahnbürste, die erkennt, ob 
-Sie alle Zähne auch ausreichend und mit richtigem Druck geputzt haben. Während des Frühstücks 
-hören Sie Musik – vielleicht über einen Streaming Dienst, der auf Ihrem Smartphone läuft und sich 
-automatisch mit dem drahtlosen Boxensystem verbindet. Schlussendlich erkennt ein intelligentes 
-Heizsystem, dass Sie die Wohnung verlassen, und stellt auf Basis aktueller Wetterdaten und Ihrem 
-persönlichen Kalender die optimale Temperatur ein, damit Sie am Ende des Tages nicht in eine kalte 
-Wohnung zurückkommen. Sie kommen überall dort in Kontakt mit digitalen Systemen. Ohne 
-Informations- und Kommunikationstechnologie wäre das nicht möglich. 
-Diese Beobachtung setzt sich fort, wenn wir in die Unternehmenswelt blicken. Im Supermarkt werden 
-Systeme verwendet, um automatisch zu erfassen wie viele Produkte noch lagernd sind und 
-möglicherweise zeitgleich nachbestellt werden müssen. Der Lieferdienst verwendet 
-Positionierungssysteme und ein Benachrichtigungssystem, um seinen aktuellen Standort möglichst 
-zeitnah und genau dem Kunden mitteilen zu können. Bei der Herstellung von Produkten helfen 
-Systeme in der Produktionsanlage die Prozessabläufe zu steuern und rasch Probleme zu erkennen und 
-darauf zu reagieren. Auch hier sind verschiedene digitale Systeme im Einsatz, um Arbeitsschritte zu 
-automatisieren, optimieren bzw. zu unterstützen. 
-Es fällt mittlerweile schwer, einen Bereich zu identifizieren, in dem Sie in gar keiner Weise mit 
-Technologie in Kontakt kommen. Wir sind uns dessen vielleicht schon gar nicht mehr bewusst. Der 
-englische Begriff „ubiquitous computing“ (deutsch: Allgegenwärtigkeit von Rechensystemen) ist 
-treffender denn je. 
-Die Wirtschaftsinformatik beschäftigt sich mit genau diesem Thema. Wie kann Technologie uns 
-unterstützen und welche Auswirkungen hat das auf unsere Gesellschaft, Wirtschaft und unser 
-persönliches Leben.
+Unternehmen können über soziale Medien daher mit einer Vielzahl von (potenziellen) Kundinnen und Kunden rasch und direkt Kontakt aufnehmen, ihre Produkte vorstellen, ihre Botschaften kommunizieren und positive Stimmung für sich und ihre Produkte machen. Ebenso hat das Event Marketing an Bedeutung gewonnen. Event Marketing umfasst „erlebnisorientierte Veranstaltungen, die einen starken Aktivierungsprozess“ beim Kunden auslösen sollen. Sie sollen die Aufmerksamkeit auf ein bestimmtes Unternehmen, eine bestimmte Produktgruppe oder ein bestimmtes Ereignis richte n, jegliche Art von Veranstaltungen, z.B. Modeschauen, Messeveranstaltungen, Ausstellungs - und Geschäftseröffnungen, Kultur - und Sportveranstaltungen.
