@@ -24,6 +24,60 @@ const VIEW = 240;
 const PAD = 38;
 const R = 102;
 
+type UiLocale = "en" | "de";
+
+function weightCopy(locale: UiLocale) {
+  if (locale === "de") {
+    return {
+      emptyTitle: "Mock formen",
+      emptyBody: (n: number) =>
+        `Links Unterkapitel wählen. Ab zwei Themen erscheint ein Polygon — damit verteilst du die ${n} Fragen auf die Themen.`,
+      oneTopicSubtitle: "Ein Thema gewählt — volle Gewichtung",
+      questions: (n: number) => (n === 1 ? "1 Frage" : `${n} Fragen`),
+      manualSubtitle: "Fragen pro Thema eingeben — Summe bleibt exakt",
+      mixerSubtitle: "Punkt ziehen, um die Fragenverteilung zu formen",
+      useMixer: "Mixer nutzen",
+      enterManually: "Manuell eingeben",
+      ariaPolygon:
+        "Themengewichtungs-Polygon. Zieh den Steuerpunkt, um Fragen neu zu verteilen.",
+      balanced: "Ausgewogen",
+      reset: "Zurücksetzen",
+      nearest: "100 % nächstes",
+      random: "Zufällig",
+      questionsPerTopic: "Fragen pro Thema",
+      redistribute: (n: number) =>
+        `Ändern eines Felds verteilt den Rest neu — Summe bleibt ${n}.`,
+      totalQuestions: "Fragen gesamt",
+      estMin: "ca.",
+      minUnit: "Min.",
+      mixerBadge: "Mixer",
+    };
+  }
+  return {
+    emptyTitle: "Shape your mock",
+    emptyBody: (n: number) =>
+      `Select subtopics on the left. With two or more, a polygon appears so you can balance how many of the ${n} questions each topic gets.`,
+    oneTopicSubtitle: "One topic selected — full weight",
+    questions: (n: number) => (n === 1 ? "1 question" : `${n} questions`),
+    manualSubtitle: "Type questions per topic — total always stays exact",
+    mixerSubtitle: "Drag the point to shape how questions are split",
+    useMixer: "Use mixer",
+    enterManually: "Enter manually",
+    ariaPolygon: "Topic weight polygon. Drag the control point to redistribute questions.",
+    balanced: "Balanced",
+    reset: "Reset",
+    nearest: "100% nearest",
+    random: "Random",
+    questionsPerTopic: "Questions per topic",
+    redistribute: (n: number) =>
+      `Changing one field redistributes the rest so the sum stays ${n}.`,
+    totalQuestions: "Total Questions",
+    estMin: "Est.",
+    minUnit: "min",
+    mixerBadge: "Mixer",
+  };
+}
+
 function softFromAccent(accent: string): string {
   return `color-mix(in oklab, ${accent} 55%, white)`;
 }
@@ -44,6 +98,8 @@ type Props = {
   /** Subject accent from the site (Economics / Math / English). */
   accent?: string;
   subjectLabel?: string;
+  /** UI language — WiSo builder uses German. */
+  locale?: UiLocale;
 };
 
 function toSvg(p: Vec2): Vec2 {
@@ -98,7 +154,9 @@ export function TopicWeightSelector({
   title = "Topic weights",
   accent = DEFAULT_ACCENT,
   subjectLabel = "Economics",
+  locale = "en",
 }: Props) {
+  const copy = weightCopy(locale);
   const accentSoft = softFromAccent(accent);
   const gid = useId().replace(/:/g, "");
   const svgRef = useRef<SVGSVGElement>(null);
@@ -250,10 +308,9 @@ export function TopicWeightSelector({
           >
             <Focus className="h-5 w-5" style={{ color: accent }} />
           </div>
-          <p className="font-display text-base font-bold text-foreground">Shape your mock</p>
+          <p className="font-display text-base font-bold text-foreground">{copy.emptyTitle}</p>
           <p className="mt-2 max-w-[16rem] text-xs leading-relaxed text-muted-foreground">
-            Select subtopics on the left. With two or more, a polygon appears so you can balance how
-            many of the {questionCount} questions each topic gets.
+            {copy.emptyBody(questionCount)}
           </p>
         </div>
       </PanelShell>
@@ -264,7 +321,7 @@ export function TopicWeightSelector({
     const only = displayTopics[0];
     return (
       <PanelShell className={className} accent={accent}>
-        <Header title={title} subtitle="One topic selected — full weight" accent={accent} />
+        <Header title={title} subtitle={copy.oneTopicSubtitle} accent={accent} badge={copy.mixerBadge} />
         <div className="mt-4 rounded-xl border border-border bg-secondary/30 p-4">
           <div className="flex items-baseline justify-between gap-2">
             <span className="text-sm font-semibold">{only.label}</span>
@@ -272,15 +329,14 @@ export function TopicWeightSelector({
               100%
             </span>
           </div>
-          <p className="mt-1 text-xs text-muted-foreground">
-            {only.questions} question{only.questions === 1 ? "" : "s"}
-          </p>
+          <p className="mt-1 text-xs text-muted-foreground">{copy.questions(only.questions)}</p>
         </div>
         <PreviewList
           topics={displayTopics}
           total={questionCount}
           accent={accent}
           subjectLabel={subjectLabel}
+          locale={locale}
         />
       </PanelShell>
     );
@@ -296,17 +352,14 @@ export function TopicWeightSelector({
       <div className="flex flex-wrap items-start justify-between gap-2">
         <Header
           title={title}
-          subtitle={
-            isManual
-              ? "Type questions per topic — total always stays exact"
-              : "Drag the point to shape how questions are split"
-          }
+          subtitle={isManual ? copy.manualSubtitle : copy.mixerSubtitle}
           accent={accent}
+          badge={copy.mixerBadge}
         />
         {isManual ? (
-          <QuickBtn icon={<Workflow className="h-3 w-3" />} label="Use mixer" onClick={() => setManual(false)} accent={accent} />
+          <QuickBtn icon={<Workflow className="h-3 w-3" />} label={copy.useMixer} onClick={() => setManual(false)} accent={accent} />
         ) : (
-          <QuickBtn icon={<Keyboard className="h-3 w-3" />} label="Enter manually" onClick={enterManual} accent={accent} />
+          <QuickBtn icon={<Keyboard className="h-3 w-3" />} label={copy.enterManually} onClick={enterManual} accent={accent} />
         )}
       </div>
 
@@ -322,7 +375,7 @@ export function TopicWeightSelector({
           viewBox={`${-PAD} ${-PAD} ${VIEW + PAD * 2} ${VIEW + PAD * 2}`}
           className="relative w-full touch-none select-none drop-shadow-sm"
           role="application"
-          aria-label="Topic weight polygon. Drag the control point to redistribute questions."
+          aria-label={copy.ariaPolygon}
           tabIndex={0}
           onKeyDown={(e) => {
             const step = e.shiftKey ? 0.08 : 0.03;
@@ -505,19 +558,19 @@ export function TopicWeightSelector({
       <div className="mt-3 flex flex-wrap gap-1.5">
             <QuickBtn
               icon={<Equal className="h-3 w-3" />}
-              label="Balanced"
+              label={copy.balanced}
               onClick={() => setPoint(balancedPoint(), false)}
               accent={accent}
             />
             <QuickBtn
               icon={<RotateCcw className="h-3 w-3" />}
-              label="Reset"
+              label={copy.reset}
               onClick={() => setPoint(balancedPoint(), false)}
               accent={accent}
             />
             <QuickBtn
               icon={<Focus className="h-3 w-3" />}
-              label="100% nearest"
+              label={copy.nearest}
               onClick={() => {
                 const verts = computed.vertices;
                 let best = 0;
@@ -535,7 +588,7 @@ export function TopicWeightSelector({
             />
             <QuickBtn
               icon={<Dices className="h-3 w-3" />}
-              label="Random"
+              label={copy.random}
               onClick={() => setPoint(randomBalancedPoint(computed.vertices), false)}
               accent={accent}
             />
@@ -548,7 +601,7 @@ export function TopicWeightSelector({
             className="text-[10px] font-bold uppercase tracking-widest"
             style={{ color: accent }}
           >
-            Questions per topic
+            {copy.questionsPerTopic}
           </p>
           <ul className="space-y-2">
             {topics.map((t) => (
@@ -584,8 +637,7 @@ export function TopicWeightSelector({
             ))}
           </ul>
           <p className="text-[10px] text-muted-foreground">
-            Changing one field redistributes the rest so the sum stays{" "}
-            <span className="font-semibold text-foreground">{questionCount}</span>.
+            {copy.redistribute(questionCount)}
           </p>
         </div>
       )}
@@ -595,19 +647,30 @@ export function TopicWeightSelector({
         total={questionCount}
         accent={accent}
         subjectLabel={subjectLabel}
+        locale={locale}
       />
     </PanelShell>
   );
 }
 
-function Header({ title, subtitle, accent }: { title: string; subtitle: string; accent: string }) {
+function Header({
+  title,
+  subtitle,
+  accent,
+  badge = "Mixer",
+}: {
+  title: string;
+  subtitle: string;
+  accent: string;
+  badge?: string;
+}) {
   return (
     <div>
       <p
         className="text-[10px] font-bold uppercase tracking-[0.18em]"
         style={{ color: accent }}
       >
-        Mixer
+        {badge}
       </p>
       <h3 className="mt-0.5 font-display text-base font-bold tracking-tight text-foreground">
         {title}
@@ -646,13 +709,16 @@ function PreviewList({
   total,
   accent,
   subjectLabel,
+  locale = "en",
 }: {
   topics: WeightedTopic[];
   total: number;
   accent: string;
   subjectLabel: string;
+  locale?: UiLocale;
 }) {
   const minutes = total * 2;
+  const copy = weightCopy(locale);
   return (
     <div className="mt-4 rounded-xl border border-border bg-secondary/30 p-3.5">
       <p
@@ -681,10 +747,10 @@ function PreviewList({
       </ul>
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-2 text-[11px] font-semibold">
         <span>
-          Total <span className="tabular-nums">{total}</span> Questions
+          {copy.totalQuestions} <span className="tabular-nums">{total}</span>
         </span>
         <span className="text-muted-foreground">
-          Est. <span className="tabular-nums text-foreground">{minutes}</span> min
+          {copy.estMin} <span className="tabular-nums text-foreground">{minutes}</span> {copy.minUnit}
         </span>
       </div>
     </div>

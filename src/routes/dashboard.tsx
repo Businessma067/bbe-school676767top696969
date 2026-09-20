@@ -989,12 +989,16 @@ function CustomMocksTab({
                   const badge = wisoId
                     ? {
                         label: WISO_CUSTOM_MOCK_SUBJECTS[wisoId].label,
-                        badgeClass:
-                          SUBJECT_META[wisoId === "german" ? "german" : wisoId].badgeClass,
+                        badgeClass: SUBJECT_META[wisoId].badgeClass,
                       }
-                    : SUBJECT_META[mock.subject as SubjectKey]
-                      ? SUBJECT_META[mock.subject as SubjectKey]
-                      : null;
+                    : mock.subject === "wiso-german"
+                      ? {
+                          label: "Deutsch",
+                          badgeClass: SUBJECT_META.german.badgeClass,
+                        }
+                      : SUBJECT_META[mock.subject as SubjectKey]
+                        ? SUBJECT_META[mock.subject as SubjectKey]
+                        : null;
                   return (
                     <tr key={mock.id} className="border-t border-border/60">
                       <td className="px-3 py-3">

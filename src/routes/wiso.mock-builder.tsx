@@ -26,7 +26,7 @@ import {
   getWisoCustomMockChapters,
   wisoChaptersFromSubtopicIds,
 } from "@/data/wiso-custom-mock-catalog";
-import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
+import { SUBJECT_META } from "@/config/scoring-config";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import {
@@ -59,11 +59,11 @@ export const Route = createFileRoute("/wiso/mock-builder")({
   head: () => ({
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "WiSo Mock Builder | BBE School" },
+      { title: "WiSo Mock-Builder | BBE School" },
       {
         name: "description",
         content:
-          "Build Wirtschaft, Mathematik, and Deutsch mock exams from WiSo Full Course questions by topic and subtopic.",
+          "Erstelle Wirtschaft- und Mathematik-Mocks aus dem WiSo Full Course — nach Thema und Unterkapitel.",
       },
       { name: "robots", content: "noindex" },
       ...socialImageMetaForPath(PATH),
@@ -83,8 +83,10 @@ function historySubjectMeta(dbSubject: string): {
   const wisoId = wisoSubjectFromDb(dbSubject);
   if (wisoId) {
     const cfg = WISO_CUSTOM_MOCK_SUBJECTS[wisoId];
-    const examKey: SubjectKey = wisoId === "german" ? "german" : wisoId;
-    return { label: cfg.label, badgeClass: SUBJECT_META[examKey].badgeClass };
+    return { label: cfg.label, badgeClass: SUBJECT_META[wisoId].badgeClass };
+  }
+  if (dbSubject === "wiso-german") {
+    return { label: "Deutsch", badgeClass: SUBJECT_META.german.badgeClass };
   }
   return SUBJECT_META.economics;
 }
@@ -436,7 +438,7 @@ export function WisoMockBuilderPage() {
                 <h2 className="mt-8 font-display text-lg font-semibold">Anzahl der Fragen</h2>
                 <p className="mt-1 text-sm text-muted-foreground">
                   1–{maxQuestions} für den gesamten Mock · {CUSTOM_MOCK_MINUTES_PER_QUESTION} Min.
-                  je Frage (timed)
+                  je Frage (mit Zeitlimit)
                 </p>
                 <div className="mt-3 flex flex-wrap items-center gap-2">
                   <label htmlFor="wiso-custom-q-count" className="text-sm font-medium text-foreground">
@@ -470,7 +472,7 @@ export function WisoMockBuilderPage() {
                 <div className="mt-3 flex flex-wrap gap-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1.5">
                     <Clock className="h-3.5 w-3.5" />
-                    {durationMinutes} Min. timed
+                    {durationMinutes} Min. mit Zeitlimit
                   </span>
                   {selectedSubtopics.length > 0 && (
                     <span>
@@ -493,6 +495,7 @@ export function WisoMockBuilderPage() {
                   title="Themengewichtung"
                   accent={accent}
                   subjectLabel={subjectCfg.label}
+                  locale="de"
                 />
               </div>
             </div>
@@ -608,18 +611,22 @@ export function WisoMockBuilderPage() {
               {selected ? displayTitleForCustomMock(selected) : "Mock starten"}
             </DialogTitle>
             <DialogDescription>
-              {selected?.questionCount} Fragen · {selected?.durationMinutes} Minuten timed
+              {selected?.questionCount} Fragen · {selected?.durationMinutes} Minuten mit Zeitlimit
             </DialogDescription>
           </DialogHeader>
           <div className="mt-2 grid gap-3">
-            <ExamStartAnswerMode withAnswerSheet={withAnswerSheet} onChange={setWithAnswerSheet} />
+            <ExamStartAnswerMode
+              withAnswerSheet={withAnswerSheet}
+              onChange={setWithAnswerSheet}
+              locale="de"
+            />
             <button
               type="button"
               onClick={() => start(true)}
               className="inline-flex items-center justify-center gap-2 rounded-md bg-foreground px-4 py-3 text-sm font-semibold text-background hover:opacity-90"
             >
               <Clock className="h-4 w-4" />
-              Timed ({selected?.durationMinutes} Min.)
+              Mit Zeitlimit ({selected?.durationMinutes} Min.)
             </button>
             <button
               type="button"

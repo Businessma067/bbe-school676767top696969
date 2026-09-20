@@ -17,7 +17,7 @@ export type WisoCustomMockSubtopic = {
 export type WisoCustomMockChapterToc = {
   num: number;
   title: string;
-  /** Picker heading, e.g. "Kapitel 2" or "Texte". */
+  /** Picker heading, e.g. "Kapitel 2". */
   heading: string;
   enabled: boolean;
   subtopics: WisoCustomMockSubtopic[];
@@ -38,20 +38,6 @@ function subs(
 ): WisoCustomMockSubtopic[] {
   return items.map((s) => ({ id: s.id, chapter, title: s.title }));
 }
-
-/** Client-safe German reading TOC (titles only — no Full Course bank). */
-const WISO_GERMAN_TEXT_TOPICS: { id: string; title: string }[] = [
-  { id: "t.1", title: "Die Vier-Tage-Woche und die Produktivitätsdebatte" },
-  { id: "t.2", title: "Dynamische Preise und algorithmische Preisdiskriminierung" },
-  { id: "t.3", title: "Der klassische Goldstandard und sein Zusammenbruch" },
-  { id: "t.4", title: "Reshoring, Nearshoring und die Neuordnung globaler Lieferketten" },
-  { id: "t.5", title: "Der Marshallplan und die Politik der wirtschaftlichen Erholung" },
-  { id: "t.6", title: "Nudging und die Grenzen verhaltensökonomischer Politik" },
-  { id: "t.7", title: "Antibiotikaresistenz und die Ökonomie der Entdeckungslücke" },
-  { id: "t.8", title: "Fachkräftemangel, Zuwanderung und der deutsche Arbeitsmarkt" },
-  { id: "t.9", title: "CO₂-Bepreisung und die Debatte um klimapolitische Instrumente" },
-  { id: "t.10", title: "Plattformökonomie, Gig-Work und die Zukunft der Erwerbsarbeit" },
-];
 
 export function getWisoEconomicsBuilderChapters(): WisoCustomMockChapterToc[] {
   return WISO_ECONOMICS_BOOK_TOC.filter((c) => c.enabled && !c.blank).map((c) =>
@@ -219,27 +205,11 @@ export function getWisoMathBuilderChapters(): WisoCustomMockChapterToc[] {
   ];
 }
 
-export function getWisoGermanBuilderChapters(): WisoCustomMockChapterToc[] {
-  return [
-    toChapterToc(
-      1,
-      "Texte",
-      "Texte",
-      WISO_GERMAN_TEXT_TOPICS.map((s) => ({
-        id: s.id,
-        chapter: 1,
-        title: s.title,
-      })),
-    ),
-  ];
-}
-
 export function getWisoCustomMockChapters(
   subject: WisoBuilderSubjectId,
 ): WisoCustomMockChapterToc[] {
-  if (subject === "economics") return getWisoEconomicsBuilderChapters();
   if (subject === "math") return getWisoMathBuilderChapters();
-  return getWisoGermanBuilderChapters();
+  return getWisoEconomicsBuilderChapters();
 }
 
 export function findWisoCustomMockSubtopic(

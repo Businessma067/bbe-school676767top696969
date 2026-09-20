@@ -13,6 +13,8 @@ type Props = {
   onToggle: (questionNumber: number, statementIndex: number) => void;
   onNavigate: (questionNumber: number) => void;
   className?: string;
+  /** WiSo custom mocks use German WiSo exam chrome. */
+  variant?: "bbe" | "wiso";
 };
 
 /**
@@ -27,8 +29,10 @@ export function ExamAnswerSheet({
   onToggle,
   onNavigate,
   className,
+  variant = "bbe",
 }: Props) {
   const mid = Math.ceil(questionCount / 2);
+  const wiso = variant === "wiso";
 
   return (
     <div
@@ -40,11 +44,17 @@ export function ExamAnswerSheet({
     >
       <div className="border-b border-gray-200 bg-gray-50 px-3 py-2">
         <div className="text-[11px] font-bold leading-tight sm:text-xs">
-          Vienna University of Economics and Business
+          {wiso
+            ? "Wirtschaftsuniversität Wien"
+            : "Vienna University of Economics and Business"}
         </div>
-        <div className="text-[10px] font-semibold text-gray-700">BBE Entrance Exam — Answer Sheet</div>
+        <div className="text-[10px] font-semibold text-gray-700">
+          {wiso ? "WiSo Aufnahmeprüfung — Antwortbogen" : "BBE Entrance Exam — Answer Sheet"}
+        </div>
         <p className="mt-0.5 text-[9px] text-gray-500">
-          Mark ✕ for True. Click a number to jump. Answers update instantly.
+          {wiso
+            ? "✕ für richtig markieren. Auf eine Nummer tippen zum Springen. Markierungen werden sofort übernommen."
+            : "Mark ✕ for True. Click a number to jump. Answers update instantly."}
         </p>
       </div>
 
