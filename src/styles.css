@@ -602,55 +602,53 @@ body.flashcard-swiping {
 
 /**
  * Soft blink + expand when the comet reaches each node.
- * Cycle matches .prep-roadmap-comet (8.5s); delays stagger nodes along the path.
+ * Duration/delay must match .prep-roadmap-comet; flash peaks at 0% of the cycle.
  */
 @keyframes prep-roadmap-node-pass {
-  0%,
-  12%,
+  /* Peak at 0% so animation-delay == comet arrival time. */
+  0% {
+    transform: scale(1.07);
+    filter: brightness(1.1);
+  }
+  3.5% {
+    transform: scale(1.03);
+    filter: brightness(1.04);
+  }
+  8%,
   100% {
     transform: scale(1);
     filter: brightness(1);
   }
-  3.5% {
-    transform: scale(1.07);
-    filter: brightness(1.1);
-  }
-  7% {
-    transform: scale(1.03);
-    filter: brightness(1.04);
-  }
 }
 
 @keyframes prep-roadmap-node-spark {
-  0%,
-  12%,
+  0% {
+    opacity: 0.5;
+    transform: scale(1.22);
+  }
+  3.5% {
+    opacity: 0.18;
+    transform: scale(1.34);
+  }
+  8%,
   100% {
     opacity: 0;
     transform: scale(0.92);
   }
-  3.5% {
-    opacity: 0.5;
-    transform: scale(1.22);
-  }
-  7% {
-    opacity: 0.18;
-    transform: scale(1.34);
-  }
 }
 
 @keyframes prep-roadmap-node-glow {
-  0%,
-  12%,
-  100% {
-    box-shadow: 0 0 0 0 transparent;
-  }
-  3.5% {
+  0% {
     box-shadow:
       0 0 0 2px color-mix(in oklab, var(--prep-accent) 28%, transparent),
       0 0 14px -2px color-mix(in oklab, var(--prep-accent) 42%, transparent);
   }
-  7% {
+  3.5% {
     box-shadow: 0 0 8px -3px color-mix(in oklab, var(--prep-accent) 22%, transparent);
+  }
+  8%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
   }
 }
 

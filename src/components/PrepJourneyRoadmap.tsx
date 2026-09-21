@@ -156,12 +156,22 @@ function MilestoneIcon({
   );
 }
 
-/** Comet loop is 8.5s with 0.4s delay; nodes sit ~evenly along the path. */
+/** Comet: 8.5s linear, 0.4s delay, dash 0.09 of pathLength 1. */
 const COMET_DURATION_S = 8.5;
 const COMET_DELAY_S = 0.4;
+/** Half dash length — flash when comet center sits on the node. */
+const COMET_HALF_DASH = 0.045;
+/**
+ * Arc-length fractions of the desktop path at the four circle centers
+ * (M125→375→625→875). Last node uses near-end so the head still overlaps.
+ */
+const NODE_PATH_FRACTIONS = [0, 0.3348, 0.6688, 0.955] as const;
 
 function nodePassDelay(index: number): string {
-  return `${COMET_DELAY_S + index * (COMET_DURATION_S / 3)}s`;
+  const f = NODE_PATH_FRACTIONS[index] ?? index / 3;
+  // Comet center at fraction f when progress u = f - halfDash (clamped).
+  const u = Math.max(0, f - COMET_HALF_DASH);
+  return `${COMET_DELAY_S + u * COMET_DURATION_S}s`;
 }
 
 function NodeCircle({
