@@ -641,249 +641,282 @@
   },
   "math": [
     {
-      "case_id": "MATH 1.120",
-      "id": "math-1-120",
-      "title": "Klausuraufgaben – 12",
+      "case_id": "MATH 1.108",
+      "id": "math-1-108",
+      "title": "Sieben Finalisten und das Turnieraufgebot",
       "chapter": 1,
-      "subsection": "1.5",
-      "context": "Ein Schulungszentrum hat 180 Teilnehmer. Analytik hat 105, Budgetierung 92 und Compliance 80. Die paarweisen Überschneidungen betragen 48 für Analytik und Budgetierung, 41 für Analytik und Compliance sowie 36 für Budgetierung und Compliance; 20 Teilnehmer belegen alle drei Kurse. Jeder Teilnehmer wird einmal in der Gesamtzahl des Zentrums gezählt, einschließlich derjenigen, die keinen Kurs belegen.",
+      "subsection": "1.4",
+      "context": "Sieben Finalisten — Uma, Victor, Wendy, Xavier, Yara, Zane und Bianca — entscheiden, ob sie an einem Turnier teilnehmen. Ihre Teilnahme folgt diesen Regeln:\n\n1. Uma nimmt genau dann teil, wenn Victor teilnimmt.\n2. Wenn Victor teilnimmt, dann nimmt Wendy teil.\n3. Genau eine von Wendy oder Xavier nimmt teil (nie beide, nie keine).\n4. Wenn Xavier teilnimmt, dann nimmt Yara nicht teil.\n5. Mindestens eine von Yara oder Zane nimmt teil.\n6. Zane nimmt nur dann teil, wenn Bianca nicht teilnimmt.\n7. Wenn Bianca teilnimmt, dann nimmt Uma teil.\n8. Mindestens vier der sieben Finalisten nehmen teil.\n\nBewerte jede Aussage.",
       "statements": [
-        "Genau 8 Teilnehmer belegen keinen der drei Kurse.",
-        "Genau 56 belegen nur Analytik.",
-        "Genau 65 belegen genau zwei Kurse.",
-        "Genau 65 belegen mindestens zwei Kurse.",
-        "Genau 23 belegen nur Compliance."
+        "Victor muss in jedem gültigen Aufgebot teilnehmen.",
+        "Es ist möglich, dass Xavier in einem gültigen Aufgebot teilnimmt.",
+        "Wenn Bianca teilnimmt, dann nimmt Zane nicht teil.",
+        "Es gibt genau eine gültige Möglichkeit, das Aufgebot zu bilden, die mit allen acht Regeln verträglich ist.",
+        "Es ist möglich, dass genau sechs der sieben Finalisten teilnehmen."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nVerwende die Inklusions-Exklusions-Formel für drei Mengen zur Vereinigung von Analytik ($A$), Budgetierung ($B$) und Compliance ($C$):\n\n$$\n|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\n$$\n\nSetze die gegebenen Mächtigkeiten ein:\n\n$$\n|A|+|B|+|C|=105+92+80=277\n$$\n\n$$\n|A\\cap B|+|A\\cap C|+|B\\cap C|=48+41+36=125\n$$\n\n$$\n|A\\cup B\\cup C|=277-125+20=172\n$$\n\nAlle, die nicht in der Vereinigung liegen, belegen keinen der drei Kurse:\n\n$$\n180-172=8\n$$\n\nAlso belegen genau $8$ Teilnehmer keinen der drei Kurse.\n\nDie Aussage ist wahr.",
-        "**B.** → Falsch\n\n„Nur Analytik“ bedeutet in $A$, aber nicht in $B$ und nicht in $C$:\n\n$$\n|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|\n$$\n\n$$\n105-48-41+20=36\n$$\n\nDie Behauptung nennt $56$, was nicht gleich $36$ ist.\n\nDie Aussage ist falsch.",
-        "**C.** → Wahr\n\nGenau zwei Kurse bedeutet die drei paarweisen Nur-Regionen (jedes Paar ohne die Dreifachschnittmenge):\n\n$$\n|A\\cap B|-|A\\cap B\\cap C|=48-20=28\n$$\n\n$$\n|A\\cap C|-|A\\cap B\\cap C|=41-20=21\n$$\n\n$$\n|B\\cap C|-|A\\cap B\\cap C|=36-20=16\n$$\n\nAddiere sie:\n\n$$\n28+21+16=65\n$$\n\nAlso belegen genau $65$ Teilnehmer genau zwei Kurse.\n\nDie Aussage ist wahr.",
-        "**D.** → Falsch\n\n„Mindestens zwei Kurse“ zählt alle mit genau zwei plus alle mit allen drei:\n\n$$\n65+20=85\n$$\n\n(unter Verwendung der Genau-zwei-Zählung aus Buchstabe C). Die Behauptung nennt $65$, also nur die Genau-zwei-Schicht, und lässt die $20$ aus, die alle drei belegen.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\n„Nur Compliance“ bedeutet in $C$, aber nicht in $A$ und nicht in $B$:\n\n$$\n|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\n$$\n\n$$\n80-41-36+20=23\n$$\n\nSchrittweise: $80-41=39$, dann $39-36=3$, dann $3+20=23$. Das stimmt genau mit der Behauptung überein.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\nAnnahme $\\neg V$. Regel (1) liefert $\\neg U$. Die Kontraposition von (7) ist $\\neg U\\Rightarrow\\neg B$, also $\\neg B$. Mit Xavier oder Wendy aus (3) und den Bedingungen (5)/(6)/(8) lässt sich kein konsistentes Aufgebot mit mindestens vier Personen bauen. Also ist Victor in jedem gültigen Aufgebot.\n\nDie Aussage ist wahr.",
+        "**B.** → Falsch\n\nAus A: Victor ist immer drinnen. Regel (2) erzwingt Wendy. Regel (3) mit Wendy drinnen erzwingt Xavier draußen. Xavier steht in keinem gültigen Aufgebot.\n\nDie Aussage ist falsch.",
+        "**C.** → Wahr\n\nRegel (6) lautet $Z\\Rightarrow\\neg B$. Die Kontraposition ist $B\\Rightarrow\\neg Z$. Genau das sagt die Aussage.\n\nDie Aussage ist wahr.",
+        "**D.** → Falsch\n\nNach dem erzwungenen Kern $\\{U,V,W\\}$ und Xavier draußen bleiben $Y,Z,B$ unter (5) und (6). Zulässig sind mehrere Kombinationen (z.\\,B. $Y$ allein; $Z$ ohne $B$; $Y$ und $B$ ohne $Z$). Also nicht genau eine Möglichkeit.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nGröße 6 bräuchte bei Kern $\\{U,V,W\\}$ und Xavier draußen alle drei $Y,Z,B$. Aber (6) verbietet $Z$ und $B$ gleichzeitig. Also ist Größe 6 unmöglich.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Themen: 1.2.\n\nGemeinsame Lösung:\n1. Bezeichne die Kursmengen mit $A$, $B$ und $C$.\n2. Verwende $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n3. Setze $105+92+80-48-41-36+20$ ein.\n4. Die Vereinigung enthält $172$ Teilnehmer.\n5. Die Keine-Region ist daher $180-172=8$.\n6. Nur Analytik ist $105-48-41+20=36$.\n7. Nur Budgetierung ist $92-48-36+20=28$.\n8. Nur Compliance ist $80-41-36+20=23$.\n9. Nur Analytik-Budgetierung ist $48-20=28$.\n10. Nur Analytik-Compliance ist $41-20=21$.\n11. Nur Budgetierung-Compliance ist $36-20=16$.\n12. Genau zwei Kurse ergeben zusammen $28+21+16=65$.\n13. Mindestens zwei Kurse ergeben zusammen $65+20=85$.",
+      "solution_overview": "Schreibe $U,V,W,X,Y,Z,B$ für die Teilnahme. Die Regeln sind\n$$\n(1)\\ U\\Leftrightarrow V,\\quad (2)\\ V\\Rightarrow W,\\quad (3)\\ \\text{genau eine von }W,X,\n$$\n$$\n(4)\\ X\\Rightarrow\\neg Y,\\quad (5)\\ Y\\lor Z,\\quad (6)\\ Z\\Rightarrow\\neg B,\\quad (7)\\ B\\Rightarrow U,\n$$\nund (8) mindestens vier Teilnehmer. Annahme $\\neg V$ erzwingt $\\neg U$, dann $\\neg B$, und mit (3)/(5)/(6) entsteht ein Widerspruch zur Mindestzahl — also ist Victor erzwungen. Daraus folgen Uma und Wendy drinnen und Xavier draußen. Frei bleiben nur $Y,Z,B$ unter (5) und (6); es gibt mehr als ein gültiges Aufgebot, keines der Größe 6.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 2.142",
-      "id": "math-2-142",
-      "title": "Klausuraufgaben – 6",
+      "case_id": "MATH 2.137",
+      "id": "math-2-137",
+      "title": "Klausuraufgaben – Algebraische Identitäten",
       "chapter": 2,
       "subsection": "2.5",
-      "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
       "statements": [
-        "Wenn $abc\\neq0$ und $ab+bc+ca=0$, dann $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
-        "Für $s>0$ gilt $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
-        "Bei $v=0$ , $|v-1|=1<2$ und $0\\in(-1,3)$ ; bei $v=4$ , $|4-1|=3\\not<2$ .",
-        "Wenn $s+t=u$, dann $s^3+t^3+3stu=u^3$.",
-        "Für $z>1$ gilt $\\dfrac{z+1}{z-1}>1$."
+        "Für alle echten $x$ , $y$ , $z$ gilt, dass $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$ .",
+        "Bei $t=2$ sind sowohl $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}$ als auch $\\dfrac{t+1}{2t+1}$ gleich $\\dfrac{3}{5}$.",
+        "Für $u>0$ und $v>0$ mit $u\\neq v$ gilt $\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
+        "Bei $x=-2$, $y=3$ sind sowohl $|xy|$ als auch $|x|\\,|y|$ gleich $6$.",
+        "Wenn $p>q$, dann $p^2>q^2$."
       ],
       "answer_key": [
         true,
-        false,
         true,
         true,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nSchreibe die Summe der Reziproken über den gemeinsamen Nenner $abc$ und verwende dann $ab+bc+ca=0$ .\n\nZusammenfassen:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}\n$$\n\nDer Zähler ist genau $ab+bc+ca$ , der durch Hypothese verschwindet, und $abc\\ne0$ .\n\nDaher ist die Summe der Reziproken $0$ .\n\n$$\nabc\\neq0\n$$\n\n$$\nab+bc+ca=0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b+\\dfrac1c=0\n$$\n\nDie Aussage ist wahr.",
-        "**B.** → Falsch\n\nSchreibe den Radicand als Quadrat um und vergleiche dann mit der beanspruchten rechten Seite.\n\nFür $s>0$:\n\n$$\ns+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2\n$$\n\n$$\n\\sqrt{s+\\dfrac{1}{s}-2}=\\left|\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right|\n$$\n\nDer Behauptung schreibt $\\sqrt{s}+\\dfrac{1}{\\sqrt{s}}$ , der streng größer ist, wenn $s\\neq1$ . Bei $s=4$ :\n\n$$\n\\left|2-\\tfrac12\\right|=\\tfrac32\\neq2+\\tfrac12\n$$\n\n$$\n\\tfrac52\n$$\n\nDie Aussage ist falsch.",
-        "**C.** → Wahr\n\nEine strenge Betragsungleichung $|v-c|<r$ beschreibt das offene Intervall mit Radius $r$ um $c$.\n\n$$\n\\begin{aligned}\nv\\\\\nv&=0\\\\\n|v-1|\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n|v-1|&=1<2\\\\\n0\\in(-1,3)\\\\\nv\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nv&=4\\\\\n|4-1|\\\\\n|4-1|&=3\\not<2\n\\end{aligned}\n$$\n\nEntfalten Sie sich über das Zentrum $1$ :\n\n$$|v-1|<2\\Longleftrightarrow-2<v-1<2$$\n\nAddiere $1$ durch die Kette:\n\n$$-1<v<3$$\n\nDas entspricht dem beanspruchten offenen Intervall genau. Numerische Überprüfung: bei $v=0$ , $|0-1|=1<2$ ; bei $v=4$ , $|4-1|=3\\nless2$ .\n\nKonkrete Überprüfung des umgeschriebenen Anspruchs. Lösungssatz ist $(-1,3)$ .\n\nDie Aussage ist wahr.",
-        "**D.** → Wahr\n\nMultipliziere $(s+t)^{3}$ aus und identifiziere die Summe mit dem dritten Buchstaben $u$.\n\nWürfel die Summe:\n\n$$\n(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}\n$$\n\n$$\n(s+t)^{3}=s^{3}+t^{3}+3st(s+t)\n$$\n\nSetze $s+t$ durch $u$ :\n\n$$\nu^{3}=s^{3}+t^{3}+3stu\n$$\n\nUmlagerung:\n\n$$\ns^{3}+t^{3}+3stu=u^{3}.\n$$\n\nDie Aussage ist wahr.",
-        "**E.** → Wahr\n\nVergleiche den Bruch mit $1$ , indem man die Definitionsmenge $z>1$ subtrahieren.\n\n$$\nz>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}\n$$\n\n$$\n\\dfrac{2}{z-1}\n$$\n\nFür $z>1$ ist der Nenner positiv, also $\\dfrac{2}{z-1}>0$ , daher $\\dfrac{z+1}{z-1}>1$ .\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\nDie algebraische Identität multipliziert die rechte Seite zur selben quadratischen Form wie die linke aus.\n\nErsnn er:\n\n$$\n(x-y)^2=x^2-2xy+y^2\n$$\n\n$$\n(y-z)^2=y^2-2yz+z^2\n$$\n\n$$\n(z-x)^2=z^2-2zx+x^2\n$$\n\nAddieren und teilen durch $2$ :\n\n$$\n\\tfrac12\\bigl[(x-y)^2+(y-z)^2+(z-x)^2\\bigr]=x^2+y^2+z^2-xy-yz-zx\n$$\n\nDie beiden Seiten passen für jeden echten $x$ , $y$ , $z$ identisch zusammen.\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\nVereinfache den Kettenbruch von der innersten Schicht nach außen, mit $t\\neq0$, $t\\neq-1$ und $t\\neq-\\tfrac12$.\n\nmodellaus sperrig\n\n$$\n1+\\frac{1}{t}=\\frac{t+1}{t}\n$$\n\nErste Gegenseitigkeit:\n\n$$\n\\frac{1}{1+\\frac{1}{t}}=\\frac{t}{t+1}\n$$\n\nGesamtsumme:\n\n$$\n1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}\n$$\n\nÄußerer Gegenwert:\n\n$$\n\\dfrac{1}{1+\\dfrac{1}{1+\\frac{1}{t}}}=\\dfrac{t+1}{2t+1}\n$$\n\nEs ist, und es ist der geforderte Wert.\n\nKonkrete Prüfung der umgeschriebenen Behauptung. Beide Seiten sind gleich $3/5$.\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\nden durchgangs-ge-\n\n$$\n\\begin{aligned}\nu>0\\\\\nv>0\\\\\nu\\neq v\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}\\\\\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}&=\\dfrac{u-2\\sqrt{uv}+v}{u-v}\n\\end{aligned}\n$$\n\nMultiplyZähler und Denominator von $\\sqrt{u}-\\sqrt{v}$ :\n\n$$\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^2}{u-v}$$\n\nMultipliziere den quadrierten Zähler aus:\n\n$$(\\sqrt{u}-\\sqrt{v})^2=u-2\\sqrt{uv}+v$$\n\nAlso\n\n$$\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{u+v-2\\sqrt{uv}}{u-v}$$\n\nDies ist die beanspruchte rationalisierte Form.\n\nDie Aussage ist wahr.",
+        "**D.** → Wahr\n\nSetze $x=-2$ auf beiden Seiten ein und vergleiche die Werte.\n\n$$\nx=-2\n$$\n\n$$\n|xy|\n$$\n\n$$\n|x|\\,|y|\n$$\n\n$$\n\\text{claimed value }6\n$$\n\nBeide Seiten stimmen mit dem behaupteten Wert überein.\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\nDie Platzierung der Anlage istpet.\n\n$$\np>q\n$$\n\n$$\np^2>q^2\n$$\n\nGeregelte und veränderliche Person\n\n$$\np^2-q^2=(p-q)(p+q)\n$$\n\nWenn $p>q$, dann $p-q>0$, aber $p+q$ kann trotzdem negativ sein.\n\nGegenbeispiel: $p=-1$, $q=-3$ liefert $p>q$, aber\n\n$$\np^2=1<9\n$$\n\n$$\nq^2\n$$\n\nAlso erzwingt $p>q$ nicht $p^{2}>q^{2}$.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "",
+      "solution_overview": "Prüfe Identitäten durch Ausmultiplizieren, vereinfache Kettenbrüche schrittweise, rationalisiere Wurzelausdrücke und teste Ordnungserhaltung beim Quadrieren mit einem Gegenbeispiel.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 11.132",
-      "id": "math-11-132",
-      "title": "Klausuraufgaben – 9",
+      "case_id": "MATH 11.60",
+      "id": "math-11-60",
+      "title": "Zwei Franchise-Zahlungen mit gemeinsamem Zeithorizont",
       "chapter": 3,
-      "subsection": "3.8",
-      "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "3.3",
+      "context": "Ein Franchise-Vertrag verspricht einem Investor zwei Zahlungen: USD $30{,}000$ in genau $5$ Jahren und USD $55{,}000$ in genau $10$ Jahren. Abzinsung erfolgt kontinuierlich mit $8\\%$ pro Jahr. Weil der zweite Horizont genau doppelt so lang ist, ist sein Diskontfaktor das Quadrat des ersten. Es gilt $K_{1}=30{,}000$ bei $t_{1}=5$, $K_{2}=55{,}000$ bei $t_{2}=10$ und $r=0{,}08$. Bewerte jede Aussage.",
       "statements": [
-        "Ein Stiftungsvermögen stieg in sechs Jahren unter stetiger Verzinsung von $50{,}000$ auf $63{,}500$. Die Zinsintensität betrug 3{,}98\\%.",
-        "Ein Earnout aus einer Übernahme liefert $25{,}000$ nach zwei Jahren und $40{,}000$ nach fünf Jahren. Bei einem Kapitalkostensatz von $8{,}2\\%$ bilanziert der Käufer eine Verbindlichkeit von USD 48{,}746.96.",
-        "Eine Genossenschaft spart nach der ersten Ernte $2{,}500$ und lässt die Einzahlungen jährlich um $8\\%$ wachsen, während das Konto $4{,}5\\%$ abwirft. Unmittelbar nach der siebten Einzahlung verfügt die Genossenschaft über USD 25{,}211.60.",
-        "Eine Filmgenossenschaft investiert an jedem Quartalsende $1{,}200$ über 20 Quartale. Die Quartalsrendite beträgt $1{,}1\\%$; am Ende von Quartal 20 stehen USD 26{,}876.55.",
-        "Die Hypothek eines Bauernhofs über $360{,}000$ umfasst 288 Raten bei einem monatlichen Zinssatz von $0{,}46\\%$. Unmittelbar nach Rate 96 beträgt der Restschuld USD 287{,}526.80."
+        "Der Diskontfaktor für die 5-Jahres-Zahlung beträgt näherungsweise $0{,}6703$.",
+        "Der Diskontfaktor für die 10-Jahres-Zahlung beträgt näherungsweise $0{,}4493$.",
+        "Der Barwert der Zahlung von USD $30{,}000$ beträgt näherungsweise USD $21{,}500{,}00$.",
+        "Der Barwert der Zahlung von USD $55{,}000$ beträgt näherungsweise USD $26{,}000{,}00$.",
+        "Der gemeinsame Barwert beider Zahlungen beträgt näherungsweise USD $47{,}500{,}00$."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nLöse aus beiden beobachteten Werten die Zinsintensität im Exponentialmodell.\n\n$$63500.00=50000.00e^{r(6)}$$\n\n$$\ne^{6r} = \\frac{63500.00}{50000.00} = 1.27000000\n$$\n\n$$6r=\\ln(1.27000000)$$\n\n$$\nr = \\frac{\\ln(1.27000000)}{6} = 0.03983615\n$$\n\n$$100r=3.9836\\%$$\n\nDie berechnete stetige Jahresrate ist 3{,}98\\% und stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-        "**B.** → Falsch\n\nJeder datierte Zahlungsstrom braucht seinen eigenen Diskontexponenten, bevor die Werte addiert werden dürfen.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{25000.00}{(1+0.0820)^2}+\\frac{40000.00}{(1+0.0820)^5}$$\n\n$$\nPV_2 = \\frac{25000.00}{(1+0.0820)^2} = 21354.307249\n$$\n\n$$\nPV_5 = \\frac{40000.00}{(1+0.0820)^5} = 26972.654379\n$$\n\n$$PV=21354.307249+26972.654379$$\n\n$$\n21354.307249 + 26972.654379 = 48326.961628\n$$\n\n$$PV=48326.961628$$\n\nDer berechnete Barwert beträgt USD 48{,}326.96, nicht USD 48{,}746.96.\n\nDie Aussage ist falsch.",
-        "**C.** → Wahr\n\nAm Tag der letzten Einzahlung hat jeder wachsende Beitrag eine andere Anzahl an Zinsperioden verdient.\n\n$$\nFV = \\sum_{k=0}^{6}2500.00(1+0.0800)^k(1+0.0450)^{6-k}\n$$\n\n$$\nFV = 2500.00(1+0.0450)^{6}\\sum_{k=0}^{6}\\left(\\frac{1+0.0800}{1+0.0450}\\right)^k\n$$\n\n$$FV=2500.00(1+0.0450)^{6}\\frac{1-1.03349282^7}{1-1.03349282}$$\n\n$$FV=25211.602737$$\n\nDer berechnete Endwert beträgt USD 25{,}211.60 und stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-        "**D.** → Falsch\n\nEine nachschüssige Rente zinst jede Periodenendzahlung auf den Termin der letzten Zahlung auf.\n\n$$s_{\\overline{20}|}=\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=1200.00s_{\\overline{20}|}$$\n\n$$FV=1200.00\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=26681.546485$$\n\nDer berechnete Renten-Endwert beträgt USD 26{,}681.55, nicht USD 26{,}876.55.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nDer Hypothekenbetrag entspricht dem Barwert der gleichbleibenden Monatsendraten.\n\n$$P=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PMT=360000.00\\frac{0.004600}{1-(1+0.004600)^{-288}}$$\n\n$$PMT=2258.176536$$\n\n$$\nn_{\\mathrm{remaining}} = 288-96\n$$\n\n$$\n288 - 96 = 192\n$$\n\n$$B_96=PMT\\frac{1-(1+i)^{-192}}{i}$$\n\n$$B_96=287526.799220$$\n\nDer berechnete Saldo nach Rate 96 beträgt USD 287{,}526.80 und stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\n$$\ne^{-0{,}08\\cdot 5}=e^{-0{,}4}\\approx 0{,}67032,\n$$\ngerundet $0{,}6703$.\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\n$$\ne^{-0{,}08\\cdot 10}=e^{-0{,}8}=(e^{-0{,}4})^{2}\\approx(0{,}6703)^{2}\\approx 0{,}4493.\n$$\n\nDie Aussage ist wahr.",
+        "**C.** → Falsch\n\n$$\n\\mathrm{PV}_{1}=30{,}000\\cdot e^{-0{,}4}\\approx 20{,}109{,}60 \\ne 21{,}500.\n$$\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\n$$\n\\mathrm{PV}_{2}=55{,}000\\cdot e^{-0{,}8}\\approx 24{,}713{,}09 \\ne 26{,}000.\n$$\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$$\n\\mathrm{PV}_{1}+\\mathrm{PV}_{2}\\approx 44{,}822{,}69 \\ne 47{,}500.\n$$\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Jeder Buchstabe ist eine eigenständige finanzmathematische Behauptung. Nenne die passende Formel, setze die Zahlen aus dem Stamm ein und vergleiche mit dem genannten Betrag.\n\nThemen: 3.2, 3.3, 3.4, 3.5, 3.6\n\nA. Stetige Zinsintensität aus zwei Stiftungsständen lösen.\nB. Barwert einer Earnout-Verbindlichkeit aus einer Übernahme.\nC. Aufzinsen wachsender Ernte-Einzahlungen, die schneller wachsen als der Zins.\nD. Aufzinsen vierteljährlicher Beiträge einer Filmgenossenschaft.\nE. Restschuld der verbleibenden Hypothekenraten bewerten.",
+      "solution_overview": "Kontinuierliche Abzinsung $\\mathrm{PV}=Ke^{-rt}$. Mit $r=0{,}08$ ist $e^{-0{,}4}\\approx 0{,}6703$ und $e^{-0{,}8}=(e^{-0{,}4})^{2}\\approx 0{,}4493$. Die Barwerte sind etwa $20{,}110$ und $24{,}713$, Summe etwa $44{,}823$.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 4.215",
-      "id": "math-4-215",
-      "title": "Klausuraufgaben – 22",
+      "case_id": "MATH 4.165",
+      "id": "math-4-165",
+      "title": "Durchschnittsgeschwindigkeit Hin- und Rückfahrt",
       "chapter": 4,
-      "subsection": "4.5",
-      "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "4.3",
+      "context": "Eine Logistikfirma betreibt eine Strecke mit einfacher Entfernung $d=120\\ \\mathrm{km}$. Hin mit konstanter Geschwindigkeit $v\\ \\mathrm{km/h}$, zurück mit $v-20\\ \\mathrm{km/h}$. Die Durchschnittsgeschwindigkeit der Rundfahrt ist das harmonische Mittel und beträgt $\\bar{v}=48\\ \\mathrm{km/h}$. Bewerte jede Aussage.",
       "statements": [
-        "Ein Vater ist $28$ Jahre älter als sein Sohn. In $8$ Jahren wird der Vater doppelt so alt sein wie der Sohn dann. Ein Klassenkamerad folgert, dass der Sohn jetzt $18$ Jahre alt ist.",
-        "Ein Foto von $24$ cm mal $16$ cm wird mit einem gleichmäßigen Rahmen so montiert, dass die Außenfläche das Doppelte des Fotos beträgt. Der Rahmen ist dann $4$ cm breit.",
-        "Ein Läufer legt $9$ km mit $6$ km/h und danach $6$ km mit $9$ km/h zurück. Der gesamte Lauf dauert daher genau $2$ Stunden.",
-        "Die Lösung der Gleichung $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, wobei $\\log x$ den dekadischen Logarithmus von $x$ bezeichnet, ist kleiner als $5$.",
-        "Eine Börse enthält nur $2$-EUR-Münzen und $5$-EUR-Münzen. Es gibt insgesamt $16$ Münzen im Wert von $53$ EUR. Dann gibt es $7$ Münzen zu $5$ EUR."
+        "Multipliziert man die rationale Durchschnittsgeschwindigkeitsgleichung $\\dfrac{2}{\\frac{1}{v}+\\frac{1}{v-20}}=48$ mit dem gemeinsamen Nenner, so entsteht eine Quadratgleichung, deren Wurzeln sich zu $68$ addieren; genau eine dieser Wurzeln ist unter $v>20$ zulässig.",
+        "Modelliert man die Rückfahrgeschwindigkeit $w=v-20$ durch $\\sqrt{10w}=w-20$, so liefert Quadrieren eine algebraische Gleichung mit zwei verschiedenen reellen Lösungen, die beide gültige Lösungen der ursprünglichen Wurzelgleichung sind.",
+        "Die Gleichung $\\dfrac{v}{v-20}-3\\sqrt{\\dfrac{v}{v-20}}-4=0$, reduzierbar durch $u=\\sqrt{\\dfrac{v}{v-20}}$, hat keine reelle Lösung im physikalischen Bereich $v>20$.",
+        "Die Absolutwertgleichung $|v-50|+|v-70|=30$ hat genau zwei reelle Lösungen, und ihr arithmetisches Mittel ist gleich der gültigen Hinfahrtgeschwindigkeit $v=60\\ \\mathrm{km/h}$.",
+        "Wird die Geschwindigkeitsreduktion durch $c>0$ parametrisiert, so besitzt die Gleichung $\\dfrac{2v(v-c)}{2v-c}=48$ genau dann mindestens eine physikalisch sinnvolle Lösung $v>c$, wenn $c<48$."
       ],
       "answer_key": [
-        false,
         true,
         false,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nEs sei $s$ das gegenwärtige Alter des Sohnes in Jahren. Der Vater ist dann $s + 28$. In acht Jahren:\n\n$$s + 28 + 8 = 2(s + 8)$$\n\n$$s + 36 = 2s + 16$$\n\n$$s = 20$$\n\nDer Sohn ist $20$, nicht $18$. Kontrolle: in acht Jahren sind sie $28$ und $56$, und $56 = 2 \\cdot 28$.\n\nDas Einsetzen der behaupteten Zahl in die maßgebende Gleichung reproduziert die Daten der Geschichte nicht.\n\nWird die behauptete Zahl in die ursprüngliche Beziehung zurückgezwungen, stimmen die beiden Seiten der Gleichung nicht mehr mit den Daten der Geschichte überein; das bestätigt das Scheitern der Behauptung.\n\nDie Aussage ist falsch.",
-        "**B.** → Wahr\n\nFotofläche $24 \\cdot 16 = 384$, also ist die Außenfläche $768$. Mit Rahmenbreite $x$ cm:\n\n$$(24 + 2x)(16 + 2x) = 768$$\n\n$$4x^{2} + 80x + 384 = 768$$\n\n$$x^{2} + 20x - 96 = 0$$\n\n$$\\Delta = 400 + 384$$\n\n$$\n400 + 384 = 784 = 28^{2}\n$$\n\n$$\nx = \\dfrac{-20 + 28}{2} = 4\n$$\n\n(positive Wurzel). Kontrolle: Außenkanten $32$ mal $24$ ergeben Fläche $768 = 2 \\cdot 384$.\n\nDas Einsetzen des gewonnenen Werts in die maßgebende Gleichung bestätigt, dass die Geschichtsdaten exakt reproduziert werden.\n\nPrüfe durch Einsetzen des gewonnenen Werts in die ursprüngliche Beziehung aus der Geschichte: linke und rechte Seite stimmen überein, also hält die Behauptung stand.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nZerlege den Lauf in zwei Teilstrecken:\n\n$$\nt = \\frac{9}{6} + \\frac{6}{9} = 1.5 + \\frac{2}{3} = \\frac{13}{6}\n$$\n\nStunden, also $2$ Stunden und $10$ Minuten, nicht genau $2$ Stunden.\n\nDrücke die Fahrzeit zuerst als exakten Stundenbruch aus und wandle den Bruchteil dann in Minuten um, bevor du vom Ankunftsuhr abzählst.\n\nDas Einsetzen der behaupteten Zahl in die maßgebende Gleichung reproduziert die Daten der Geschichte nicht.\n\nWird die behauptete Zahl in die ursprüngliche Beziehung zurückgezwungen, stimmen die beiden Seiten nicht mehr mit den Daten überein; das bestätigt das Scheitern der Behauptung.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDurchgängig bezeichnet $\\log$ den dekadischen Logarithmus, und der Definitionsbereich verlangt $x > 0$. Setze $L = \\log x$ und wende die Potenzregel auf jeden Logarithmusterm an:\n\n$$\\log\\sqrt[3]{x} = \\frac{1}{3}L$$\n\n$$\n\\log\\frac{1}{x^{3}} = \\log\\bigl(x^{-3}\\bigr) = -3L\n$$\n\n$$\\log\\sqrt{x} = \\frac{1}{2}L$$\n\n$$\n\\log 10 = 1\n$$\n\nDie Gleichung wird zu\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{1 + 1}$$\n\nFasse die Koeffizienten von $L$ auf der linken Seite zusammen:\n\n$$\n\\frac{1}{3} - 3 - \\frac{1}{2} = \\frac{2}{6} - \\frac{18}{6} - \\frac{3}{6} = -\\frac{19}{6}\n$$\n\nalso\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\nAddiere $\\dfrac{19}{6}L$ auf beiden Seiten:\n\n$$\n\\frac{11}{3} = \\frac{L}{2} + \\frac{19}{6}L = \\frac{3L}{6} + \\frac{19L}{6} = \\frac{22L}{6} = \\frac{11L}{3}\n$$\n\n$$L = 1$$\n\n$$\nx = 10^{1} = 10\n$$\n\nDie eindeutige positive Lösung ist $x = 10$, die nicht kleiner als $5$ ist.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nEs sei $x$ die Anzahl der $5$-EUR-Münzen. Dann gibt es $16 - x$ Münzen zu $2$ EUR:\n\n$$5x + 2(16 - x) = 53$$\n\n$$3x + 32 = 53$$\n\n$$3x = 53 - 32$$\n\n$$x = 7$$\n\nKontrolle:\n\n$$\n7 \\cdot 5 + 9 \\cdot 2 = 35 + 18\n$$\n\n$$\n35 + 18 = 53\n$$\n\n.\n\nDas Einsetzen des gewonnenen Werts in die maßgebende Gleichung bestätigt, dass die Geschichtsdaten exakt reproduziert werden.\n\nPrüfe durch Einsetzen in die ursprüngliche Beziehung: linke und rechte Seite stimmen überein, also hält die Behauptung stand.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\nNach Freimachen des Nenners entsteht $v^{2}-68v+480=0$. Nach Vieta ist die Wurzelsumme $68$. Die Wurzeln sind $60$ und $8$; wegen $v>20$ ist nur $60$ zulässig.\n\nDie Aussage ist wahr.",
+        "**B.** → Falsch\n\nQuadrieren von $\\sqrt{10w}=w-20$ (mit $w\\ge 20$) liefert $w^{2}-50w+400=0$, also $w=40$ und $w=10$. Nur $w=40$ erfüllt die Originalgleichung; $w=10$ ist fremd. Nicht beide algebraischen Lösungen sind gültig.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nMit $u=\\sqrt{v/(v-20)}\\ge 0$ folgt $u^{2}-3u-4=0$, also $u=4$. Rückrechnung:\n$$\nv=\\dfrac{64}{3}=21\\tfrac13>20.\n$$\nEs gibt also eine reelle Lösung im Bereich $v>20$ — die Behauptung „keine“ ist falsch.\n\nDie Aussage ist falsch.",
+        "**D.** → Wahr\n\nFallanalyse liefert die Lösungen $v=75$ und $v=45$. Mittelwert:\n$$\n\\dfrac{45+75}{2}=60,\n$$\ndie gültige Hinfahrtgeschwindigkeit.\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\nDie Diskriminante $c^{2}+2304>0$ für alle $c$. Die größere Wurzel erfüllt $v_{+}>c$ für jedes $c>0$, nicht nur für $c<48$. Die „genau dann wenn $c<48$“-Behauptung ist falsch.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Unabhängige Behauptungen: eine Altersbeziehung, ein gerahmtes Foto, ein Zwei-Tempo-Lauf, ein zusammengesetzter Logarithmus und eine Zwei-Münzen-Börse.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; verwende keine Wurzel aus einem anderen Buchstaben erneut.",
+      "solution_overview": "Harmonisches Mittel:\n$$\n\\dfrac{v(v-20)}{v-10}=48 \\quad\\Rightarrow\\quad v^{2}-68v+480=0\n$$\nmit Wurzeln $60$ und $8$; nur $v=60$ ist zulässig. Nebenformen: Wurzelgleichung, Substitutionsgleichung, Absolutwertgleichung und Parameter-$c$.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 5.MOCK.WORK",
-      "id": "MATH 5.MOCK.WORK",
-      "title": "Zweipersonen-Packraten mit unterbrochener Schicht",
+      "case_id": "MATH 5.17",
+      "id": "math-5-17",
+      "title": "Wasserrechnung Riverside – Gebührenstreit",
       "chapter": 5,
-      "subsection": "5.5",
-      "context": "Zwei Werkstattinhaberinnen, Mira und Leo, packen Geschenkboxen für einen Kundenauftrag. Hätten sie die ganze Zeit gemeinsam gearbeitet, wären sie in $8$ Stunden fertig gewesen. Nach $4$ Stunden gemeinsamer Arbeit musste Mira gehen. Leo brauchte danach allein noch $6$ Stunden, um den Auftrag fertigzustellen.",
+      "subsection": "5",
+      "context": "Eine Kundin hat zwei aufeinanderfolgende Rechnungen hinterfragt. Im Mai verbrauchte sie $18\\ \\mathrm{m}^{3}$ und zahlte USD $56{,}10$ — die Mai-Rechnung enthielt jedoch einen Verzugszuschlag von $10\\%$ auf den gesamten Betrag. Im Juni verbrauchte sie $25\\ \\mathrm{m}^{3}$ ohne Zuschlag und zahlte USD $65{,}00$. Das Büro behauptet eine Fixgebühr von USD $18{,}00$ und einen Preis von USD $1{,}85$ pro $\\mathrm{m}^{3}$. Bewerte jede Aussage.",
       "statements": [
-        "Hätten sie den gesamten Auftrag gemeinsam erledigt, hätte Mira genau ein Drittel des Auftrags erledigt.",
-        "Wäre der Auftrag doppelt so groß wie der ursprüngliche, bräuchte Leo $12$ Stunden, um ihn fertigzustellen, nachdem Mira zum selben Zeitpunkt gegangen ist.",
-        "Würde Mira die ganze Zeit allein arbeiten, bräuchte sie $24$ Stunden für den Auftrag.",
-        "Ginge es um $120$ Boxen, so wäre die Differenz der Zeiten, die Mira und Leo zum Packen einer Box brauchen, größer als $7$ Minuten.",
-        "Wären die Rollen vertauscht — Leo geht nach $4$ Stunden, Mira macht allein fertig —, bräuchte Mira mehr als $14$ Stunden, um den Auftrag fertigzustellen."
+        "Die Behauptung des Büros einer monatlichen Fixgebühr von USD $18{,}00$ ist korrekt.",
+        "Der verrechnete Preis beträgt USD $2{,}00$ pro Kubikmeter.",
+        "Nach Abzug des Verzugszuschlags betrug die tatsächliche Wassergebühr im Mai USD $51{,}00$.",
+        "Eine Kundin mit $40\\ \\mathrm{m}^{3}$ Verbrauch in einem Monat würde USD $85{,}00$ berechnet bekommen.",
+        "Hätte derselbe $10\\%$-Verzugszuschlag auf die Juni-Rechnung von USD $65{,}00$ gelegen, wäre der Gesamtbetrag USD $71{,}50$ gewesen."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Falsch\n\nAus dem System folgt $x=15$, nicht $18$. Die Büro-Behauptung stimmt nicht.\n\nDie Aussage ist falsch.",
+        "**B.** → Wahr\n\nAus dem System folgt $y=2$. Der Preis ist USD $2{,}00$ pro $\\mathrm{m}^{3}$.\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\n$$\n\\dfrac{56{,}10}{1{,}10}=51.\n$$\nDie Mai-Gebühr ohne Zuschlag beträgt USD $51{,}00$.\n\nDie Aussage ist wahr.",
+        "**D.** → Falsch\n\nMit $x=15$ und $y=2$ wäre die Rechnung\n$$\n15+40\\cdot 2=95,\n$$\nnicht $85$.\n\nDie Aussage ist falsch.",
+        "**E.** → Wahr\n\n$$\n65\\cdot 1{,}10=71{,}50.\n$$\n\nDie Aussage ist wahr."
+      ],
+      "difficulty_level": "\\frac{2}{5}",
+      "solution_overview": "Sei $x$ die Fixgebühr und $y$ der Preis pro $\\mathrm{m}^{3}$. Mai ohne Zuschlag:\n$$\n\\dfrac{56{,}10}{1{,}10}=51,\\qquad x+18y=51.\n$$\nJuni: $x+25y=65$. Differenz $7y=14$ liefert $y=2$ und $x=15$.",
+      "figure": null,
+      "tables_markdown": null
+    },
+    {
+      "case_id": "MATH 6.MOCK.INEQ",
+      "id": "MATH 6.MOCK.INEQ",
+      "title": "Mehrstufige Ungleichungs-Textaufgaben",
+      "chapter": 6,
+      "subsection": "6.4",
+      "context": "Entscheide für jede Aussage zu Ungleichungen, ob sie wahr oder falsch ist.",
+      "statements": [
+        "Ist die Länge eines rechteckigen Gartens mindestens $4\\ \\mathrm{m}$ länger als die Breite und die Fläche höchstens $45\\ \\mathrm{m}^{2}$, dann kann die Breite $5\\ \\mathrm{m}$ nicht überschreiten.",
+        "Ein Kurier fährt mit einer Durchschnittsgeschwindigkeit von höchstens $72\\ \\mathrm{km/h}$. Bis $16{:}00$ Uhr hat er mindestens $126\\ \\mathrm{km}$ zurückgelegt. Dann muss er spätestens um $14{:}15$ Uhr gestartet sein.",
+        "Eine Saftmischung muss mindestens $12\\%$ Konzentrat enthalten. Ausgehend von $2$ Litern mit $18\\%$ Konzentrat darf man höchstens $1$ Liter Wasser zugeben und die Vorgabe noch erfüllen.",
+        "Preisgeld von $18{,}200$ EUR wird so geteilt, dass der 2. Platz mindestens $75\\%$ des 1. Platzes erhält und der 3. Platz mindestens $75\\%$ des 2. Platzes. Erhält der 1. Platz höchstens $8{,}000$ EUR, dann erhält der 3. Platz notwendig weniger als $4{,}500$ EUR.",
+        "Die Lösungsmenge der Ungleichung $\\dfrac{2x-5}{x+1}\\ge 1$ (mit $x\\ne -1$) ist genau $[-4,\\infty)$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nDie gemeinsame Fertigstellungszeit beträgt $8$ Stunden, also ist die kombinierte Arbeitsrate\n\n$$\n\\dfrac{1}{8}\\quad\\text{(Aufträge pro Stunde)}\n$$\n\nIn den ersten $4$ Stunden erledigen sie\n\n$$\n4\\cdot\\dfrac{1}{8}=\\dfrac{1}{2}\n$$\n\ndes Auftrags. Leo erledigt die verbleibende Hälfte allein in $6$ Stunden, also ist Leos Rate\n\n$$\n\\dfrac{1/2}{6}=\\dfrac{1}{12}\n$$\n\nMiras Rate ist die Differenz aus kombinierter Rate und Leos Rate:\n\n$$\n\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{3-2}{24}=\\dfrac{1}{24}\n$$\n\nÜber einen vollständigen gemeinsamen Lauf von $8$ Stunden erledigt Mira daher\n\n$$\n\\dfrac{1}{24}\\cdot 8=\\dfrac{1}{3}\n$$\n\ndes Auftrags — genau ein Drittel.\n\nDie Aussage ist wahr.",
-        "**B.** → Falsch\n\nMiss die Arbeit in Einheiten des vergrößerten (verdoppelten) Auftrags. Leos ursprüngliche Rate $\\dfrac{1}{12}$ des alten Auftrags pro Stunde ist nur\n\n$$\n\\dfrac{1}{24}\n$$\n\ndes verdoppelten Auftrags pro Stunde. Nach denselben $4$ gemeinsamen Stunden haben sie $\\dfrac{1}{2}$ des ursprünglichen Auftrags erledigt, also nur $\\dfrac{1}{4}$ des verdoppelten. Für Leo bleiben $\\dfrac{3}{4}$ des verdoppelten Auftrags:\n\n$$\nt=\\dfrac{3/4}{1/24}=18\n$$\n\nStunden. Die Behauptung nennt $12$ Stunden; $18\\ne 12$.\n\nDie Aussage ist falsch.",
-        "**C.** → Wahr\n\nAus A ist Miras Rate $\\dfrac{1}{24}$ des Auftrags pro Stunde. Allein braucht sie daher\n\n$$\nT=\\dfrac{1}{1/24}=24\n$$\n\nStunden für den gesamten Auftrag. Das ist genau die behauptete Zahl.\n\nDie Aussage ist wahr.",
-        "**D.** → Falsch\n\nBei $120$ Boxen ist die Zeit pro Box die Solo-Gesamtzeit geteilt durch $120$. Mira braucht $24$ Stunden für den Auftrag, Leo $12$ Stunden (Rate $\\dfrac{1}{12}$):\n\n$$\n\\text{Mira: }\\dfrac{24}{120}=0.2\\text{ h}=12\\text{ min pro Box}\n$$\n\n$$\n\\text{Leo: }\\dfrac{12}{120}=0.1\\text{ h}=6\\text{ min pro Box}\n$$\n\n$$\n12-6=6\\text{ min}\n$$\n\nDie Behauptung sagt, die Differenz sei größer als $7$ Minuten. Aber $6\\ngtr 7$.\n\nDie Aussage ist falsch.",
-        "**E.** → Falsch\n\nNach $4$ gemeinsamen Stunden ist die Hälfte des Auftrags erledigt, also bleibt die Hälfte. Geht Leo und macht Mira allein mit Rate $\\dfrac{1}{24}$ fertig,\n\n$$\nt=\\dfrac{1/2}{1/24}=12\n$$\n\nStunden. Die Behauptung sagt mehr als $14$ Stunden. Aber $12\\ngtr 14$.\n\nDie Aussage ist falsch."
+        "**A.** → Wahr\n\nSei die Breite $w>0$ und die Länge $w+4$. Dann\n$$\nw(w+4)\\le 45 \\quad\\Rightarrow\\quad w^{2}+4w-45\\le 0 \\quad\\Rightarrow\\quad (w+9)(w-5)\\le 0.\n$$\nAlso $w\\in[-9,5]$. Mit $w>0$ folgt $0<w\\le 5$. Die Breite überschreitet $5\\ \\mathrm{m}$ nicht.\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\nFür mindestens $126\\ \\mathrm{km}$ bei höchstens $72\\ \\mathrm{km/h}$ gilt\n$$\n72\\,t\\ge 126 \\quad\\Rightarrow\\quad t\\ge \\dfrac{126}{72}=1{,}75\\ \\mathrm{h}=1\\ \\mathrm{h}\\ 45\\ \\mathrm{min}.\n$$\nVon $16{:}00$ um $1\\ \\mathrm{h}\\ 45\\ \\mathrm{min}$ zurück: $14{:}15$. Jeder spätere Start liefert unter der Geschwindigkeitsgrenze keine $126\\ \\mathrm{km}$.\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\nZwei Liter mit $18\\%$ enthalten $0{,}36$ Liter Konzentrat. Nach Zugabe von $w$ Litern Wasser:\n$$\n\\dfrac{0{,}36}{2+w}\\ge 0{,}12 \\quad\\Rightarrow\\quad w\\le 1.\n$$\nAlso höchstens $1$ Liter Wasser.\n\nDie Aussage ist wahr.",
+        "**D.** → Falsch\n\nMit $a+b+c=18{,}200$, $b\\ge 0{,}75a$, $c\\ge 0{,}75b$, $a\\le 8{,}000$ ist\n$$\na=7{,}800,\\quad b=5{,}850,\\quad c=4{,}550\n$$\nzulässig und $c=4{,}550\\nless 4{,}500$. Also muss der 3. Platz nicht unter $4{,}500$ liegen.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\nUmformen:\n$$\n\\dfrac{2x-5}{x+1}-1\\ge 0 \\quad\\Rightarrow\\quad \\dfrac{x-6}{x+1}\\ge 0.\n$$\nKritische Stellen $x=-1$ (ausgeschlossen) und $x=6$. Vorzeichentabelle:\n$$\n(-\\infty,-1)\\cup[6,\\infty),\n$$\nnicht $[-4,\\infty)$.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Aus der gemeinsamen Zeit und Leos Fertigstellungsstrecke gewinnt man beide Raten: Mira $\\frac{1}{24}$, Leo $\\frac{1}{12}$. Jede Behauptung ist dann ein direkter Vergleich mit diesen Raten.",
+      "solution_overview": "Übersetze jede Textaussage in eine Ungleichung, löse oder schätze sie ab und vergleiche mit der Behauptung. Bei der rationalen Ungleichung alle Terme auf eine Seite und Vorzeichentabelle an den kritischen Stellen.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 6.47",
-      "id": "math-6-47",
-      "title": "Zusammengesetzte und spezielle Ungleichungen — 10",
-      "chapter": 6,
-      "subsection": "6.3",
-      "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-      "statements": [
-        "Die Lösungsmenge der Ungleichung $\\sqrt{x + 6} < \\sqrt{2x + 1} - 1$ ist $x > 8 - 2\\sqrt{13}$.",
-        "Die Lösungsmenge der Ungleichung $|x^{2} - 2x - 3| > 4$ ist $x < 1 - 2\\sqrt{2}$ oder $x > 1 + 2\\sqrt{2}$.",
-        "Die Ungleichung $-2 \\le x^{2} - 4x + 1 \\le 6$ hat die Lösungsmenge $[-1, 1] \\cup [3, 5]$.",
-        "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 5x + 4} > x - 2$ ist $x < 1$.",
-        "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 3| - 2\\bigr| < 1$ ist $(0, 2) \\cup (4, 6)$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 6}<\\sqrt{2 x + 1} - 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 6\\ge 0,\\quad x\\in [-6, \\infty),\\quad 2 x + 1\\ge 0,\\quad x\\in [- \\frac{1}{2}, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 6<2 x - 2 \\sqrt{2 x + 1} + 2,\\quad - x + 2 \\sqrt{2 x + 1} + 4<0,\\quad x=2 \\sqrt{13} + 8\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x + 2 \\sqrt{2 x + 1} + 4$ |\n| --- | --- |\n| $(-\\infty,2 \\sqrt{13} + 8)$ | $+$ |\n| $(2 \\sqrt{13} + 8,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(2 \\sqrt{13} + 8, \\infty)\n$$\n\nmit dem Preiswert: $x > 8 - 2\\sqrt{13}$.\n\nDie Aussage ist falsch.",
-        "**B.** → Wahr\n\nStarte von der Wurzelungleichung.\n\n$$\nx<1 - 2 \\sqrt{2}\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n2\\ge 0\n$$\n\n$$\nx\\in \\mathbb{R}\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx^{2}<9 - 4 \\sqrt{2}\n$$\n\n$$\nx^{2} - 9 + 4 \\sqrt{2}<0\n$$\n\n$$\nx=- \\sqrt{9 - 4 \\sqrt{2}} = \\sqrt{9 - 4 \\sqrt{2}}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 9 + 4 \\sqrt{2}$ |\n| --- | --- |\n| $(-\\infty,- \\sqrt{9 - 4 \\sqrt{2}})$ | $+$ |\n| $(- \\sqrt{9 - 4 \\sqrt{2}},\\sqrt{9 - 4 \\sqrt{2}})$ | $-$ |\n| $(\\sqrt{9 - 4 \\sqrt{2}},\\infty)$ | $+$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(-\\infty, 1 - 2 \\sqrt{2})\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
-        "**C.** → Wahr\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-2\\le (x^{2} - 4 x) + 1\\le 6\n$$\n\n**Linkes Teilstück.**\n\n$$\n-2\\le (x^{2} - 4 x) + 1,\\quad x^{2} - 4 x + 3\\ge 0,\\quad (x - 3) (x - 1)\\ge 0,\\quad x=1 = 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x + 3$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 1] \\cup [3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 4 x) + 1\\le 6,\\quad x^{2} - 4 x - 5\\le 0,\\quad (x - 5) (x + 1)\\le 0,\\quad x=-1 = 5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 4 x - 5$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[-1, 5]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[-1, 1] \\cup [3, 5]\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr.",
-        "**D.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{(x^{2} - 5 x) + 4}>x - 2\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx^{2} - 5 x + 4\\ge 0\n$$\n\n$$\nx\\in (-\\infty, 1] \\cup [4, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichung automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx^{2} - 5 x + 4>x^{2} - 4 x + 4\n$$\n\n$$\n- x>0\n$$\n\n$$\nx=0\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $- x$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(-\\infty, 1]\n$$\n\nmit dem Preiswert: $x < 1$.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nStarte von der Betragsungleichung.\n\n$$\n|{|{x - 3}| - 2}|<1\n$$\n\nEin absoluter Wert unterhalb einer nicht negativen Konstante entfaltet sich zu einer zusammengesetzten Ungleichung.\n\n$$\n-1<|{x - 3}| - 2<1\n$$\n\nLöse die linke Hälfte.\n\n$$\n|{x - 3}| - 2>-1\n$$\n\n$$\nx\\in (-\\infty, 2) \\cup (4, \\infty)\n$$\n\nLöse die rechte Hälfte.\n\n$$\n|{x - 3}| - 2<1\n$$\n\n$$\nx\\in (0, 6)\n$$\n\nSchnitte beide Hälften.\n\n$$\n(0, 2) \\cup (4, 6)\n$$\n\nDas entspricht der behaupteten Menge.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5",
-      "solution_overview": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.\n\nBestimme den Typ (zusammengesetzt, Betrag oder Wurzel), schreibe die Definitionsmenge bei Quadratwurzel, teile an den Vorzeichenwechselpunkten und bilde die Schnittmenge aller Bedingungen. Randpunkte richten sich nach der Striktheit des Teilstücks, das sie erzeugt hat.\n\nTypen in diesem Satz: Radikale Ungleichheit (Unterschied von zwei unterschiedlichen Quadratwurzeln, doppelte Quadrat ungleich) Absolutwertungleichheit (quadratisch innen), zusammengesetzte (doppelte) quadratische Ungleichheit.",
-      "figure": null,
-      "tables_markdown": null
-    },
-    {
-      "case_id": "MATH 7.E03",
-      "id": "math-7-e3",
-      "title": "Ticketschalter — rekonstruierter Umsatz",
+      "case_id": "MATH 7.47",
+      "id": "math-7-47",
+      "title": "Parameterfenster für zwei Schnittpunkte",
       "chapter": 7,
-      "subsection": "7.5",
-      "context": "Ein Club verkauft Tickets zum Preis $p$ Euro. Die Tabelle verzeichnet den Gesamtumsatz $R$ (in Euro) zu fünf Preisen. Auf dem Kassenzettel steht keine Formel. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "7",
+      "context": "Die feste Parabel $g(x)=x^{2}-4x+1$ wird mit der Geradenschar $f_{k}(x)=kx+1$ verglichen, wobei der reelle Parameter $k$ variiert. Bewerte jede Aussage.",
       "statements": [
-        "Unter den gelisteten Preisen tritt das eindeutige Maximum am Mittelpunkt der beiden Preise auf, an denen der Umsatz $15$ ist.",
-        "Baut man eine Quadratfunktion aus der konstanten zweiten Differenz wieder auf, erhält man den Leitkoeffizienten $-1$.",
-        "Der Umsatz steigt in jedem gelisteten Schritt von $p=1$ bis $p=5$.",
-        "Die interpolierende Parabel hat die Nullstellen $0$ und $8$, also ist ihre Achse $p=4$.",
-        "Eine Preiserhöhung von $4$ auf $5$ verringert den gelisteten Umsatz um $1$ Euro."
+        "Für jedes $k$ schneiden sich die Graphen im Punkt $(0,1)$.",
+        "Es gibt genau eine Steigung, bei der die Gerade die Parabel in genau einem Punkt berührt.",
+        "Diese eindeutige Berührung liegt am gemeinsamen $y$-Achsenabschnitt $(0,1)$ und entspricht der Steigung der Parabel dort.",
+        "Neben dem gemeinsamen $y$-Achsenabschnitt können sich die Graphen erneut in einem Punkt mit positiver $x$-Koordinate treffen.",
+        "Es gibt ein reelles $k$, für das sich die Graphen nicht treffen."
       ],
       "answer_key": [
         true,
         true,
-        false,
         true,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nLies die fünf Umsätze in Preisreihenfolge und notiere, wo der Wert $15$ erscheint.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(3)=15$$\n\n$$R(5)=15$$\n\nDiese beiden Preise liegen gleich weit von $p=4$, und $R(4)=16$ ist das eindeutige gelistete Maximum. Der Mittelpunkt der beiden $15$er ist daher der gelistete Gipfel.\n\n$$x=\\frac{3+5}{2}$$\n\n$$x=\\frac{8}{2}$$\n\n$$x=4$$\n\nEine nach unten interpolierende Parabel ist symmetrisch zu ihrer Achse, also müssen gleiche Umsätze $15$ gleich weit vom gelisteten Gipfel liegen.\n\nDas eindeutige Maximum sitzt an diesem Mittelpunkt.\n\nDie Aussage ist wahr.",
-        "**B.** → Wahr\n\nBenachbarte Abstände der Umsatzzeile sind nicht konstant; ihre eigenen Abstände schon. Bilde die beiden Differenzschichten aus den gelisteten Höhen $7,12,15,16,15$.\n\n$$\\Delta_{1}:\\ 5,\\ 3,\\ 1,\\ -1$$\n\n$$\\Delta_{2}:\\ -2,\\ -2,\\ -2$$\n\nBei Einheitsabstand entspricht die konstante zweite Differenz $2a$, also ist der Leitkoeffizient der interpolierenden Parabel $-1$.\n\n$$2a=-2$$\n\n$$a=-1$$\n\nDer rekonstruierte Leitkoeffizient ist $-1$.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nEine stets steigende Folge hätte jede erste Differenz streng positiv. Der letzte gelistete Abstand ist das nicht.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(5)-R(4)=15-16$$\n\n$$R(5)-R(4)=-1$$\n\n$$-1<0$$\n\nDer Umsatz steigt bis $p=4$ und fällt dann im letzten gelisteten Schritt. Ein einziger negativer Abstand widerlegt bereits die Behauptung eines Anstiegs in jedem Schritt.\n\nDie erste Differenzzeile $5,3,1,-1$ wechselt bereits das Vorzeichen; das ist die diskrete Form eines Gipfels bei $p=4$.\n\nDer Umsatz fällt im letzten gelisteten Schritt.\n\nDie Aussage ist falsch.",
-        "**D.** → Wahr\n\nDie zweiten Differenzen der Umsatzzeile sind konstant $-2$, also $2a=-2$ und $a=-1$. Anpassung an $R(1)=7$ und $R(2)=12$ legt dann die übrigen Koeffizienten fest.\n\n$$R(p)=-p^{2}+8p$$\n\n$$R(p)=p(8-p)$$\n\nDie Nullstellen dieses Interpolanten sind $0$ und $8$, also ist die Achse ihr Mittelpunkt $p=4$, der zugleich der gelistete Gipfel ist.\n\n$$p=\\frac{0+8}{2}$$\n\n$$p=\\frac{8}{2}$$\n\n$$p=4$$\n\nVietas Mittelpunkt der Nullstellen $0$ und $8$ ist dieselbe Achsenformel $p=-b/(2a)$ angewandt auf $-p^{2}+8p$.\n\nDie interpolierende Parabel hat diese Nullstellen und diese Achse.\n\nDie Aussage ist wahr.",
-        "**E.** → Wahr\n\nDer letzte Abstand der ersten Differenzzeile ist genau die Änderung von Preis $4$ zu Preis $5$. Diese beiden Höhen sind als $16$ und $15$ gelistet.\n\n$$R(4)=16$$\n\n$$R(5)=15$$\n\n$$h=15-16$$\n\n$$h=-1$$\n\nDer gelistete Umsatz fällt daher in diesem Schritt um $1$ Euro. Derselbe Rückgang ist als letzte erste Differenz der Tabelle sichtbar.\n\nAuf einer nach unten geöffneten Parabel hinter der Achse senkt jede zusätzliche Preiseinheit den Umsatz; hier ist dieser Rückgang der gelistete $1$ Euro.\n\nEine Preiserhöhung von $4$ auf $5$ verringert den gelisteten Umsatz um $1$ Euro.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\n$f_{k}(0)=1$ und $g(0)=1$. Also treffen sich alle Graphen in $(0,1)$.\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\nDie zweite Nullstelle von $g-f_{k}$ ist $x=4+k$. Sie fällt genau dann mit $0$ zusammen, wenn $k=-4$. Das ist die einzige Berührsteigung.\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\nBei $k=-4$ bleibt nur der Punkt $(0,1)$. Dort ist $g'(0)=-4$, also stimmt die Geradensteigung mit der Parabelsteigung überein.\n\nDie Aussage ist wahr.",
+        "**D.** → Wahr\n\nFür $k>-4$ ist $x=4+k>0$: es gibt einen zweiten Schnitt mit positiver Abszisse.\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\nJeder Graph der Schar trifft die Parabel bereits in $(0,1)$, unabhängig von $k$. Es gibt kein $k$ ohne Schnitt.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Das Kassenzettelblatt zeigt nur fünf Preise und die zugehörigen Umsätze; behandle die Tabelle als Liste von Paaren und rekonstruiere im Hintergrund die versteckte Quadratik $R(p)=p(8-p)$, die sie erzeugt hat.\n\n$$(1,7),\\;(2,12),\\;(3,15),\\;(4,16),\\;(5,15)$$\n\nBenachbarte Abstände der Umsatzzeile sind nicht konstant, also ist das Modell keine Gerade; sie nehmen jeweils um $2$ ab, die Signatur zweiter Differenzen einer nach unten geöffneten Parabel.\n\n$$\\mathrm{fir}:\\ 5,\\ 3,\\ 1,\\ -1\\qquad \\mathrm{sec}:\\ -2,\\ -2,\\ -2$$\n\nBei Einheitsabstand entspricht diese konstante zweite Differenz $2a$, also $a=-1$. Anpassung an $R(1)=7$ liefert die faktorisierte Umsatzregel.\n\n$$\nR(p) = p(8-p) = -p^{2}+8p\n$$\n\nEine nach unten geöffnete Parabel hat ihren größten gelisteten Wert im Scheitel, der im Mittelpunkt der Nullstellen $0$ und $8$ liegt.\n\n$$\n\\mathrm{ver} = \\left(4,16\\right),\\qquad R(3) = R(5) = 15,\\qquad R(2) = 12\n$$\n\nVon $p=4$ nach $p=5$ fällt der gelistete Umsatz von $16$ auf $15$. Der Umsatz steigt daher nicht in jedem Schritt von $1$ bis $5$.",
+      "solution_overview": "$g(0)=f_{k}(0)=1$ für jedes $k$. Differenz:\n$$\ng-f_{k}=x^{2}-(4+k)x=x\\bigl(x-(4+k)\\bigr).\n$$\nZweite Nullstelle $x=4+k$. Berührung genau für $k=-4$, dann nur $(0,1)$ und $g'(0)=-4$. Für $k>-4$ liegt ein zweiter Schnitt bei positivem $x$. Der Schnitt in $(0,1)$ fehlt nie.",
       "figure": null,
-      "tables_markdown": "| $p$ | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- |\n| $R$ | 7 | 12 | 15 | 16 | 15 |"
+      "tables_markdown": null
     },
     {
-      "case_id": "MATH 8.81",
-      "id": "math-8-81",
-      "title": "Widerstand und Dauerleistung auf einer Radrennbahn",
+      "case_id": "MATH 8.95",
+      "id": "math-8-95",
+      "title": "Nachtproduktion auf zwei Ofenlinien",
       "chapter": 8,
       "subsection": "8",
-      "context": "Der aerodynamische Widerstand eines Bahnradsportlers folgt $F(v)=A v^{r}$ Newton für Geschwindigkeit $v>0$ Meter pro Sekunde; beide Konstanten sind unbekannt. Verdoppelt man eine beliebige Geschwindigkeit, so vervierfacht sich der Widerstand, und die Erhöhung der Geschwindigkeit von $8$ auf $12$ m/s erhöhte den Widerstand um genau $40$ N. Die Leistung, die diesen Widerstand überwindet, ist $P=Fv$ Watt, und der Fahrer kann $500$ W über eine volle Verfolgung halten. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "context": "Eine Regionalbäckerei muss über Nacht $30$ Tausend Laibe backen und kann sie auf zwei Ofenlinien aufteilen. Der Energiekostenindex von Linie 1 folgt $C_{1}(q)=a q^{2}$ und von Linie 2 $C_{2}(q)=b q^{2}$, wobei $q$ die eigene Menge der Linie in Tausend Laiben ist. Ein Lauf von $10$ Tausend Laiben auf Linie 1 ergab Index $100$, ein Lauf von $8$ Tausend auf Linie 2 ergab Index $16$. Bewerte jede Aussage.",
       "statements": [
-        "Die aufgenommene Leistung wächst schneller als die Geschwindigkeit.",
-        "Wenn der Fahrer die Geschwindigkeit verdoppelt, verdoppelt sich die aufgenommene Leistung.",
-        "Ein zusätzlicher Meter pro Sekunde Geschwindigkeit bringt bei $12$ m/s mehr Watt als bei $8$ m/s.",
-        "Bei $8$ m/s liegt der Fahrer noch unter $300$ W.",
-        "Bei $12$ m/s liegt der Fahrer noch unter $800$ W."
+        "Die gesamte Bestellung auf der billigeren Linie zu konzentrieren ist der günstigste Plan.",
+        "Alle dreißigtausend Laibe an Linie 2 zu schicken ergibt mehr als $200$ Indexpunkte.",
+        "Die billigere Linie sollte den größeren Anteil der Nachtproduktion übernehmen.",
+        "Der durchschnittliche Kostenindex von Linie 1 fällt, wenn ihre eigene Menge steigt.",
+        "Die Aufteilung sechs-und-vierundzwanzig ergibt unter $200$ Indexpunkte."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → Falsch\n\nLinie 2 ist billiger, weil $b=1/4<a=1$. Die reine Ecke auf Linie 2 kostet $C_{2}(30)=225$. Die Innenaufteilung $(6,24)$ kostet $180$. Wegen $180<225$ ist Konzentrieren auf der billigeren Linie nicht optimal.\n\nDie Aussage ist falsch.",
+        "**B.** → Wahr\n\n$$\nC_{2}(30)=\\tfrac14\\cdot 30^{2}=225>200.\n$$\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\nIm Optimum $q_{2}=24$ und $q_{1}=6$. Linie 2 ist die billigere ($b<a$) und trägt den größeren Anteil.\n\nDie Aussage ist wahr.",
+        "**D.** → Falsch\n\nDurchschnittsindex von Linie 1:\n$$\n\\dfrac{C_{1}(q)}{q}=q.\n$$\nDer Exponent ist positiv — der Durchschnitt steigt mit der Menge, er fällt nicht.\n\nDie Aussage ist falsch.",
+        "**E.** → Wahr\n\n$$\nC_{1}(6)+C_{2}(24)=36+\\tfrac14\\cdot 576=36+144=180<200.\n$$\n\nDie Aussage ist wahr."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Aus den Kalibrierläufen:\n$$\na\\cdot 10^{2}=100 \\Rightarrow a=1,\\qquad b\\cdot 8^{2}=16 \\Rightarrow b=\\tfrac14.\n$$\nAlso $C_{1}(q)=q^{2}$ und $C_{2}(q)=q^{2}/4$. Grenzkosten ausgleichen: $2q_{1}=\\tfrac12 q_{2}$, also $q_{2}=4q_{1}$. Mit $q_{1}+q_{2}=30$ folgt $(q_{1},q_{2})=(6,24)$.\nEckenlösung nur Linie 2: $C_{2}(30)=225$. Innenaufteilung: $C_{1}(6)+C_{2}(24)=180$.",
+      "figure": null,
+      "tables_markdown": null
+    },
+    {
+      "case_id": "MATH 9.72",
+      "id": "math-9-72",
+      "title": "Kubik und vertikale Verschiebung",
+      "chapter": 9,
+      "subsection": "9",
+      "context": "Die Abbildung zeigt $p(x)=x\\left(x^{2}-3\\right)$. Sei $q(x)=p(x)+c$. Bewerte jede Aussage.",
+      "statements": [
+        "Für $c=0$ hat $q$ drei reelle Nullstellen.",
+        "Die Abszissen der Extrema von $q$ hängen von $c$ ab.",
+        "Es gibt ein $c$, für das $q$ nur eine reelle Nullstelle hat.",
+        "$p$ ist ungerade.",
+        "Für jedes $c$ bleibt $q$ ungerade."
       ],
       "answer_key": [
         true,
@@ -893,179 +926,146 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nDie Übersicht liefert\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nDie Leistung überholt die Geschwindigkeit, wenn der verbleibende Exponent größer als $1$ ist.\n\n$$3>1$$\n\nEin proportionales Gesetz hätte den Exponenten $1$ getragen. Der Widerstand selbst hat nur den Exponenten $2$; die Multiplikation mit der Geschwindigkeit hebt ihn auf $3$.\n\nDer verbleibende Exponent ist $3$.\n\nDer berechnete Wert stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-        "**B.** → Falsch\n\nDie Übersicht liefert den Leistungs-Exponenten $3$. Verdopplung der Geschwindigkeit multipliziert die aufgenommene Leistung mit\n\n$$2^{3}=8$$\n\nDie Behauptung nennt den Faktor $2$. Der Widerstand selbst vervierfachte sich nur, weil sein Exponent $2$ war; die Multiplikation mit der verdoppelten Geschwindigkeit macht aus dieser $4$ eine $8$.\n\nDie Leistung steigt auf das Achtfache, nicht auf das Doppelte.\n\nDer berechnete Wert widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-        "**C.** → Wahr\n\nDie Übersicht liefert\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nDifferenzieren ergibt\n\n$$P'(v)=\\frac{3}{2}v^{2}$$\n\nBei $8$ m/s:\n\n$$P'(8)=\\frac{3}{2}\\cdot 64$$\n\n$$P'(8)=96$$\n\nBei $12$ m/s:\n\n$$P'(12)=\\frac{3}{2}\\cdot 144$$\n\n$$P'(12)=216$$\n\nDie Behauptung verlangt $P'(12)>P'(8)$. Es gilt $216>96$.\n\nDie Aussage ist wahr.",
-        "**D.** → Wahr\n\nStarte von der kalibrierten geschlossenen Form aus der Übersicht und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nBei $8$ m/s:\n\n$$P(8)=\\frac{1}{2}\\cdot 512$$\n\n$$P(8)=256$$\n\nDie Behauptung sagt, dies liege unter $300$. Vergleich mit der Behauptung:\n\n$$256<300.$$\n\nDie Aussage ist wahr.",
-        "**E.** → Falsch\n\nStarte von der kalibrierten geschlossenen Form aus der Übersicht und setze nur die in der Behauptung genannte Eingabe ein.\n\nDie Übersicht liefert\n\n$$P(v)=\\frac{1}{2}v^{3}$$\n\nBei $12$ m/s:\n\n$$P(12)=\\frac{1}{2}\\cdot 1728$$\n\n$$P(12)=864$$\n\nDie Behauptung sagt, dies liege unter $800$. Vergleich mit der Behauptung:\n\n$$864>800.$$\n\nDie Aussage ist falsch."
+        "**A.** → Wahr\n\nFür $c=0$ ist $q=p=x(x^{2}-3)$ mit Nullstellen $0,\\pm\\sqrt{3}$ — drei reelle Nullstellen.\n\nDie Aussage ist wahr.",
+        "**B.** → Falsch\n\n$$\nq'(x)=p'(x)=3x^{2}-3,\n$$\nunabhängig von $c$. Die Extremstellen $\\pm 1$ bewegen sich nicht mit $c$.\n\nDie Aussage ist falsch.",
+        "**C.** → Wahr\n\n$p(-1)=2$ und $p(1)=-2$. Für $c>2$ oder $c<-2$ schneidet $q$ die Achse nur noch einmal.\n\nDie Aussage ist wahr.",
+        "**D.** → Wahr\n\n$p(-x)=-x^{3}+3x=-p(x)$. Also ist $p$ ungerade.\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\n$q(0)=c$. Für $c\\ne 0$ ist $q(0)\\ne 0$, also kann $q$ nicht ungerade sein.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "4/5",
-      "solution_overview": "Der aerodynamische Widerstand eines Bahnradsportlers folgt $F(v)=Av^{r}$ Newton für Geschwindigkeit $v>0$. Verdoppelt man eine beliebige Geschwindigkeit, so vervierfacht sich der Widerstand, und die Erhöhung von $8$ auf $12$ m/s erhöhte den Widerstand um $40$ N. Die aufgenommene Leistung ist $P=Fv$ Watt.\n\n**Teil 1: Modell aufbauen.**\n\nEs sei $v$ = Geschwindigkeit in Metern pro Sekunde, $F$ = Widerstand in Newton und $P$ = aufgenommene Leistung in Watt. Der Verdopplungsbefund ist ein Verhältnis, also kürzt sich der Koeffizient und isoliert den Exponenten. Der protokollierte Anstieg ist eine Differenz zweier Niveaus, die dann den Koeffizienten festlegt.\n\n**1. Übersetzen: die Verdopplungsregel.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2. Übersetzen: der protokollierte Anstieg.**\n\n$$A\\bigl(12^{r}-8^{r}\\bigr)=40 \\tag{2}$$\n\n**3. Übersetzen: Leistung.**\n\n$$P(v)=Av^{r+1}$$\n\n**Teil 2: Lösen.**\n\nAus $(1)$ folgt\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nDann wird $(2)$ zu einer Differenz von Quadraten:\n\n$$A(144-64)=40$$\n\n$$80A=40$$\n\n$$A=\\frac{1}{2}$$\n\nDie gewonnenen Gesetze sind $F(v)=\\frac{1}{2}v^{2}$ und $P(v)=\\frac{1}{2}v^{3}$.\n\n**Antwort.** $r=2$ | $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$ | $P(v)=\\frac{1}{2}v^{3}$",
-      "figure": null,
+      "solution_overview": "$p(x)=x^{3}-3x$ hat Nullstellen $0,\\pm\\sqrt{3}$. Ableitung $p'(x)=3x^{2}-3$ mit stationären Stellen $\\pm 1$, unabhängig von der Verschiebung $c$. Lokales Maximum $2$, Minimum $-2$: für $|c|>2$ bleibt nur eine reelle Nullstelle. $p$ ist ungerade; $p+c$ nur für $c=0$.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22720%22%20height%3D%22420%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22720%22%20height%3D%22420%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-family%3D%22Georgia%2Cserif%22%20font-weight%3D%22700%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%28x%C2%B2%20%E2%88%92%203%29%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22157.0%22%20x2%3D%22542%22%20y2%3D%22157.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%3Cline%20x1%3D%2278.1%22%20y1%3D%22278.0%22%20x2%3D%2278.1%22%20y2%3D%22284.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2278.1%22%20y%3D%22298.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%22188.5%22%20y1%3D%22278.0%22%20x2%3D%22188.5%22%20y2%3D%22284.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22188.5%22%20y%3D%22298.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278.0%22%20x2%3D%22299.0%22%20y2%3D%22284.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22298.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22409.5%22%20y1%3D%22278.0%22%20x2%3D%22409.5%22%20y2%3D%22284.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22409.5%22%20y%3D%22298.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E1%3C%2Ftext%3E%3Cline%20x1%3D%22519.9%22%20y1%3D%22278.0%22%20x2%3D%22519.9%22%20y2%3D%22284.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22519.9%22%20y%3D%22298.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2256.0%22%20y1%3D%22277.3%22%20x2%3D%22542.0%22%20y2%3D%22277.3%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2250.0%22%20y1%3D%22277.3%22%20x2%3D%2256.0%22%20y2%3D%22277.3%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2246.0%22%20y%3D%22277.3%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-5%3C%2Ftext%3E%3Cline%20x1%3D%2256.0%22%20y1%3D%22161.0%22%20x2%3D%22542.0%22%20y2%3D%22161.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2250.0%22%20y1%3D%22161.0%22%20x2%3D%2256.0%22%20y2%3D%22161.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2246.0%22%20y%3D%22161.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2256.0%22%20y1%3D%2244.7%22%20x2%3D%22542.0%22%20y2%3D%2244.7%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2250.0%22%20y1%3D%2244.7%22%20x2%3D%2256.0%22%20y2%3D%2244.7%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2246.0%22%20y%3D%2244.7%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2216%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.8%22%20points%3D%2256.0%2C251.5%2057.7%2C247.3%2059.5%2C243.2%2061.2%2C239.2%2062.9%2C235.2%2064.7%2C231.3%2066.4%2C227.5%2068.1%2C223.8%2069.9%2C220.1%2071.6%2C216.5%2073.4%2C213.0%2075.1%2C209.5%2076.8%2C206.1%2078.6%2C202.8%2080.3%2C199.6%2082.0%2C196.4%2083.8%2C193.3%2085.5%2C190.2%2087.2%2C187.2%2089.0%2C184.3%2090.7%2C181.5%2092.5%2C178.7%2094.2%2C176.0%2095.9%2C173.3%2097.7%2C170.7%2099.4%2C168.2%20101.1%2C165.8%20102.9%2C163.4%20104.6%2C161.0%20106.3%2C158.7%20108.1%2C156.5%20109.8%2C154.4%20111.5%2C152.3%20113.3%2C150.2%20115.0%2C148.2%20116.8%2C146.3%20118.5%2C144.4%20120.2%2C142.6%20122.0%2C140.9%20123.7%2C139.2%20125.4%2C137.5%20127.2%2C135.9%20128.9%2C134.4%20130.6%2C132.9%20132.4%2C131.5%20134.1%2C130.1%20135.8%2C128.8%20137.6%2C127.5%20139.3%2C126.3%20141.1%2C125.1%20142.8%2C124.0%20144.5%2C122.9%20146.3%2C121.9%20148.0%2C120.9%20149.7%2C120.0%20151.5%2C119.1%20153.2%2C118.2%20154.9%2C117.4%20156.7%2C116.7%20158.4%2C116.0%20160.1%2C115.3%20161.9%2C114.7%20163.6%2C114.1%20165.4%2C113.6%20167.1%2C113.1%20168.8%2C112.7%20170.6%2C112.3%20172.3%2C111.9%20174.0%2C111.6%20175.8%2C111.3%20177.5%2C111.0%20179.2%2C110.8%20181.0%2C110.6%20182.7%2C110.5%20184.4%2C110.4%20186.2%2C110.3%20187.9%2C110.3%20189.6%2C110.3%20191.4%2C110.3%20193.1%2C110.4%20194.9%2C110.5%20196.6%2C110.7%20198.3%2C110.8%20200.1%2C111.0%20201.8%2C111.3%20203.5%2C111.5%20205.3%2C111.8%20207.0%2C112.1%20208.7%2C112.5%20210.5%2C112.9%20212.2%2C113.3%20214.0%2C113.7%20215.7%2C114.2%20217.4%2C114.7%20219.2%2C115.2%20220.9%2C115.7%20222.6%2C116.3%20224.4%2C116.9%20226.1%2C117.5%20227.8%2C118.1%20229.6%2C118.8%20231.3%2C119.4%20233.0%2C120.1%20234.8%2C120.9%20236.5%2C121.6%20238.2%2C122.4%20240.0%2C123.1%20241.7%2C123.9%20243.5%2C124.7%20245.2%2C125.6%20246.9%2C126.4%20248.7%2C127.3%20250.4%2C128.2%20252.1%2C129.1%20253.9%2C130.0%20255.6%2C130.9%20257.3%2C131.8%20259.1%2C132.8%20260.8%2C133.7%20262.5%2C134.7%20264.3%2C135.7%20266.0%2C136.7%20267.8%2C137.7%20269.5%2C138.7%20271.2%2C139.8%20273.0%2C140.8%20274.7%2C141.8%20276.4%2C142.9%20278.2%2C143.9%20279.9%2C145.0%20281.6%2C146.1%20283.4%2C147.2%20285.1%2C148.2%20286.9%2C149.3%20288.6%2C150.4%20290.3%2C151.5%20292.1%2C152.6%20293.8%2C153.7%20295.5%2C154.8%20297.3%2C155.9%20299.0%2C157.0%20300.7%2C158.1%20302.5%2C159.2%20304.2%2C160.3%20305.9%2C161.4%20307.7%2C162.5%20309.4%2C163.6%20311.1%2C164.7%20312.9%2C165.8%20314.6%2C166.8%20316.4%2C167.9%20318.1%2C169.0%20319.8%2C170.1%20321.6%2C171.1%20323.3%2C172.2%20325.0%2C173.2%20326.8%2C174.2%20328.5%2C175.3%20330.2%2C176.3%20332.0%2C177.3%20333.7%2C178.3%20335.4%2C179.3%20337.2%2C180.3%20338.9%2C181.2%20340.7%2C182.2%20342.4%2C183.1%20344.1%2C184.0%20345.9%2C184.9%20347.6%2C185.8%20349.3%2C186.7%20351.1%2C187.6%20352.8%2C188.4%20354.5%2C189.3%20356.3%2C190.1%20358.0%2C190.9%20359.8%2C191.6%20361.5%2C192.4%20363.2%2C193.1%20365.0%2C193.9%20366.7%2C194.6%20368.4%2C195.2%20370.2%2C195.9%20371.9%2C196.5%20373.6%2C197.1%20375.4%2C197.7%20377.1%2C198.3%20378.8%2C198.8%20380.6%2C199.3%20382.3%2C199.8%20384.1%2C200.3%20385.8%2C200.7%20387.5%2C201.1%20389.3%2C201.5%20391.0%2C201.9%20392.7%2C202.2%20394.5%2C202.5%20396.2%2C202.7%20397.9%2C203.0%20399.7%2C203.2%20401.4%2C203.3%20403.1%2C203.5%20404.9%2C203.6%20406.6%2C203.7%20408.3%2C203.7%20410.1%2C203.7%20411.8%2C203.7%20413.6%2C203.6%20415.3%2C203.5%20417.0%2C203.4%20418.8%2C203.2%20420.5%2C203.0%20422.2%2C202.7%20424.0%2C202.4%20425.7%2C202.1%20427.4%2C201.7%20429.2%2C201.3%20430.9%2C200.9%20432.7%2C200.4%20434.4%2C199.9%20436.1%2C199.3%20437.9%2C198.7%20439.6%2C198.0%20441.3%2C197.3%20443.1%2C196.6%20444.8%2C195.8%20446.5%2C194.9%20448.3%2C194.0%20450.0%2C193.1%20451.7%2C192.1%20453.5%2C191.1%20455.2%2C190.0%20456.9%2C188.9%20458.7%2C187.7%20460.4%2C186.5%20462.2%2C185.2%20463.9%2C183.9%20465.6%2C182.5%20467.4%2C181.1%20469.1%2C179.6%20470.8%2C178.1%20472.6%2C176.5%20474.3%2C174.8%20476.0%2C173.1%20477.8%2C171.4%20479.5%2C169.6%20481.2%2C167.7%20483.0%2C165.8%20484.7%2C163.8%20486.5%2C161.7%20488.2%2C159.6%20489.9%2C157.5%20491.7%2C155.3%20493.4%2C153.0%20495.1%2C150.6%20496.9%2C148.2%20498.6%2C145.8%20500.3%2C143.3%20502.1%2C140.7%20503.8%2C138.0%20505.6%2C135.3%20507.3%2C132.5%20509.0%2C129.7%20510.8%2C126.8%20512.5%2C123.8%20514.2%2C120.7%20516.0%2C117.6%20517.7%2C114.4%20519.4%2C111.2%20521.2%2C107.9%20522.9%2C104.5%20524.6%2C101.0%20526.4%2C97.5%20528.1%2C93.9%20529.8%2C90.2%20531.6%2C86.5%20533.3%2C82.7%20535.1%2C78.8%20536.8%2C74.8%20538.5%2C70.8%20540.3%2C66.7%20542.0%2C62.5%22%2F%3E%0A%0A%3Ccircle%20cx%3D%22107.7%22%20cy%3D%22157.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ccircle%20cx%3D%22299.0%22%20cy%3D%22157.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ccircle%20cx%3D%22490.3%22%20cy%3D%22157.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ccircle%20cx%3D%22188.5%22%20cy%3D%22110.3%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ccircle%20cx%3D%22409.5%22%20cy%3D%22203.7%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-family%3D%22Georgia%2Cserif%22%20font-weight%3D%22700%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-family%3D%22Georgia%2Cserif%22%20font-weight%3D%22700%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 9.37",
-      "id": "math-9-37",
-      "title": "Fahrradgeschwindigkeit: eine weitere Kubik und eine Tabelle",
-      "chapter": 9,
-      "subsection": "9",
-      "context": "Die Geschwindigkeit eines Fahrers in m/s ist $$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$ Die Distanzen eines zweiten Fahrers ab dem Start sind tabelliert. Der zweite Fahrer kommt $90$ s nach dem Start bei $900$ m an. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-      "statements": [
-        "Der erste Fahrer verzögert bei $t=60$.",
-        "Die Durchschnittsgeschwindigkeit des zweiten Fahrers beträgt $36$ km/h.",
-        "Die höchste Intervallgeschwindigkeit des zweiten Fahrers liegt auf $[0,15]$.",
-        "Die Beschleunigung $a(t)$ des ersten Fahrers ist ein quadratisches Polynom.",
-        "Die Intervallgeschwindigkeiten des zweiten Fahrers haben nur ein lokales Maximum."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → Wahr\n\nVerzögern bedeutet negative Beschleunigung; differenziere daher die kubische Geschwindigkeit und werte bei $t=60$ aus.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$a(t)=v'(t)$$\n\n$$v'(t)=0.00003t^{2}-0.006t+0.24$$\n\n$$a(60)=0.00003\\cdot 3600-0.006\\cdot 60+0.24$$\n\n$$0.00003\\cdot 3600-0.006\\cdot 60+0.24$$\n\n$$a(60)=-0.012$$\n\nDie Beschleunigung ist $-0.012$, also negativ. Der erste Fahrer wird bei $t=60$ langsamer.\n\nDie Aussage ist wahr.",
-        "**B.** → Wahr\n\nDer zweite Fahrer legt $900$ m in $90$ s zurück. Die Durchschnittsgeschwindigkeit ist Weg durch Zeit; meter pro Sekunde werden mit dem Faktor $3.6$ in Kilometer pro Stunde umgerechnet.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$\\frac{900}{90}$$\n\n$$v(t)=10$$\n\n$$10\\cdot 3.6$$\n\n$$v(t)=36$$\n\nZehn Meter pro Sekunde sind genau $36$ km/h. Der behauptete Gesamtlauf-Durchschnitt ist genau dieser umgerechnete Wert.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nDie Intervallgeschwindigkeit ist der Distanzsprung über jeden $15$-s-Block der Tabelle.\n\n$$90,\\;120,\\;150,\\;180,\\;210,\\;150$$\n\nTeile durch $15$:\n\n$$6,\\;8,\\;10,\\;12,\\;14,\\;10$$\n\nDas erste Intervall $[0,15]$ hat den kleinsten dieser Werte, $6$ m/s. Der Gipfel $14$ m/s liegt auf $[60,75]$. Die höchste Intervallgeschwindigkeit liegt nicht auf $[0,15]$.\n\nDie Aussage ist falsch.",
-        "**D.** → Wahr\n\nBeschleunigung ist die Ableitung der Geschwindigkeit. Die Ableitung einer Kubik ist eine Quadratik.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$a(t)=0.00003t^{2}-0.006t+0.24$$\n\nDer $t^{2}$-Koeffizient $0.00003$ ist von null verschieden, also ist $a(t)$ echt quadratisch und nicht linear oder konstant. Die Beschleunigung des ersten Fahrers ist ein quadratisches Polynom in $t$.\n\nDie Aussage ist wahr.",
-        "**E.** → Wahr\n\nDie sechs Intervallgeschwindigkeiten des zweiten Fahrers, bereits aus benachbarten Distanzen berechnet, bilden die Folge\n\n$$6,\\;8,\\;10,\\;12,\\;14,\\;10$$\n\nVon links nach rechts steigt die Liste bis $14$ und fällt dann einmal auf $10$. Dieser einzige Gipfel sitzt im fünften Intervall und ist größer als beide Nachbarn $12$ und $10$. Es gibt nur ein lokales Maximum.\n\nDie Aussage ist wahr."
-      ],
-      "difficulty_level": "4/5",
-      "solution_overview": "Das Modell ist ein benanntes Polynom der Zeit, Menge oder Kosten; spätere Behauptungen sind Einsetzungen, Ableitungen oder tabellierte Zuwächse.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferenziere $v$; rechne den $900/90$-Quotienten des zweiten Fahrers in km/h um.",
-      "figure": null,
-      "tables_markdown": "| Zeit $t$ in Sekunden | $0$ | $15$ | $30$ | $45$ | $60$ | $75$ | $90$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Distanz in Metern | $0$ | $90$ | $210$ | $360$ | $540$ | $750$ | $900$ |"
-    },
-    {
-      "case_id": "MATH 10.MOCK.EXP",
-      "id": "MATH 10.MOCK.EXP",
-      "title": "Bevölkerungswachstum, Zinsintensität und BIP pro Kopf",
+      "case_id": "MATH 10.MOCK.RAD",
+      "id": "MATH 10.MOCK.RAD",
+      "title": "Radioaktiver Tracer: Zerfall und Verdünnung",
       "chapter": 10,
       "subsection": "10.3",
-      "context": "Es sei $P(t)$ die Bevölkerung eines Landes (Einwohnerzahl) nach $t$ Jahren. Die aktuelle Bevölkerung beträgt $P(0)=15{,}000{,}000$, und sie wächst angenommen um $2{,}4\\%$ pro Jahr.",
+      "context": "Ein Labor lagert einen radioaktiven Tracer, dessen Aktivität (in Becquerel) nach $t$ Stunden modelliert wird durch\n$$\nA(t)=A_{0}\\,e^{-kt},\\qquad A(0)=A_{0}=2{,}4\\cdot 10^{6},\\qquad k=\\ln 2\\,/\\,6.\n$$\nDie Halbwertszeit beträgt also genau $6$ Stunden. Eine zweite, unabhängig zerfallende Probe hat die Aktivität\n$$\nB(t)=1{,}5\\cdot 10^{6}\\cdot (0{,}92)^{t}.\n$$\nBewerte jede Aussage.",
       "statements": [
-        "Es gilt $P(t)=15\\cdot 1.024^{t}$.",
-        "Hat ein Nachbarland die Bevölkerung $9\\cdot 10^{6}e^{0.028t}$, so ist dessen effektive jährliche Wachstumsrate kleiner als $2{,}8\\%$.",
-        "Nach $25$ Jahren ist die heimische Bevölkerung um mehr als $85\\%$ gewachsen.",
-        "Das Finanzministerium prognostiziert, dass das reale BIP um $5{,}2\\%$ pro Jahr wächst. Dann wächst das reale BIP pro Kopf um mehr als $3\\%$ pro Jahr.",
-        "Angenommen, nach $8$ Jahren sinkt die heimische Wachstumsrate auf $1{,}5\\%$ pro Jahr. Dann wird eine Bevölkerung von $22$ Millionen erstmals bei irgendeinem $t>20$ erreicht."
+        "Es gilt $A(t)=2{,}4\\cdot 10^{6}\\cdot \\left(\\dfrac{1}{2}\\right)^{t/6}$.",
+        "Schreibt man $B(t)=1{,}5\\cdot 10^{6}e^{\\delta t}$, so gilt $\\delta>-0{,}08$ (der Betrag des kontinuierlichen Zerfalls ist also kleiner als $0{,}08$).",
+        "Nach $18$ Stunden liegt die Tracer-Aktivität $A(18)$ noch über $4\\cdot 10^{5}$.",
+        "Die Aktivität $B(t)$ fällt erstmals unter $5\\cdot 10^{5}$ zu einem Zeitpunkt $t<12$.",
+        "Angenommen, nach $6$ Stunden wird der verbleibende Tracer so verdünnt, dass die Aktivität als $0{,}6\\,A(6)\\,e^{-k(t-6)}$ weiterläuft. Dann fällt die Aktivität erstmals unter $2\\cdot 10^{5}$ zu einem Zeitpunkt $t>12$."
       ],
       "answer_key": [
-        false,
+        true,
         false,
         false,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nDie Funktion $P(t)$ zählt Einwohner, und der Stamm setzt\n\n$$\nP(0)=15{,}000{,}000\n$$\n\nBei diskretem Jahreswachstum von $2{,}4\\%$ lautet das korrekte Modell\n\n$$\nP(t)=15{,}000{,}000\\cdot 1.024^{t}\n$$\n\n(äquivalent $15\\cdot 10^{6}\\cdot 1.024^{t}$). Die behauptete Formel $P(t)=15\\cdot 1.024^{t}$ behandelt den Anfangsstand als $15$ statt fünfzehn Millionen und unterschätzt jede zukünftige Bevölkerung um den Faktor eine Million.\n\nDie Aussage ist falsch.",
-        "**B.** → Falsch\n\nEin stetiges Modell $9\\cdot 10^{6}e^{0.028t}$ hat die Wachstumskraft $k=0.028$. Die effektive jährliche Wachstumsrate ist\n\n$$\ne^{k}-1=e^{0.028}-1\n$$\n\nWegen $e^{0.028}\\approx 1.02839$ gilt\n\n$$\ne^{0.028}-1\\approx 0.02839=2.839\\%\n$$\n\nVergleiche mit der Behauptung „kleiner als $2{,}8\\%$“:\n\n$$\n2.839\\%\\ngtr?\\quad 2.839\\%\\nless 2.8\\%\n$$\n\nDie effektive Rate ist größer als $2{,}8\\%$, nicht kleiner.\n\nDie Aussage ist falsch.",
-        "**C.** → Falsch\n\nNach $25$ Jahren ist der Wachstumsfaktor\n\n$$\n1.024^{25}=e^{25\\ln 1.024}\n$$\n\nMit $\\ln 1.024\\approx 0.023717$ gilt\n\n$$\n25\\cdot 0.023717\\approx 0.5929,\\qquad e^{0.5929}\\approx 1.809\n$$\n\nDie Bevölkerung multipliziert sich also um etwa $1.809$, ein relativer Anstieg von etwa $80{,}9\\%$. Die Behauptung verlangt mehr als $85\\%$:\n\n$$\n80.9\\%\\ngtr 85\\%\n$$\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nDas reale BIP wächst jährlich mit dem Faktor $1.052$, die Bevölkerung mit $1.024$. Das reale BIP pro Kopf wächst daher mit dem Quotienten\n\n$$\n\\dfrac{1.052}{1.024}\\approx 1.02734\n$$\n\nalso etwa $2{,}734\\%$ pro Jahr. Die Behauptung sagt mehr als $3\\%$:\n\n$$\n2.734\\%\\ngtr 3\\%\n$$\n\n(Die grobe Subtraktion $5{,}2\\%-2{,}4\\%=2{,}8\\%$ ist nur eine Näherung und verfehlt die $3\\%$-Schwelle ebenfalls.)\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nErste Phase, acht Jahre mit $2{,}4\\%$:\n\n$$\nP(8)=15{,}000{,}000\\cdot 1.024^{8}\n$$\n\nWegen $1.024^{8}\\approx 1.20913$ gilt\n\n$$\nP(8)\\approx 15{,}000{,}000\\cdot 1.20913\\approx 18{,}136{,}950\n$$\n\nZweite Phase mit $1{,}5\\%$ bis $22$ Millionen:\n\n$$\n18{,}136{,}950\\cdot 1.015^{n}=22{,}000{,}000\n$$\n\n$$\n1.015^{n}=\\dfrac{22{,}000{,}000}{18{,}136{,}950}\\approx 1.21299\n$$\n\n$$\nn=\\dfrac{\\ln 1.21299}{\\ln 1.015}\\approx\\dfrac{0.19315}{0.014889}\\approx 12.97\n$$\n\nGesamtzeit:\n\n$$\nt=8+12.97\\approx 20.97>20\n$$\n\nDie Bevölkerung von $22$ Millionen wird also erstmals nach mehr als $20$ Jahren erreicht.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\nHalbwertszeit $6$ Stunden und $k=\\ln 2/6$ liefern\n$$\nA(t)=A_{0}\\,e^{-(\\ln 2)\\,t/6}=A_{0}\\left(\\dfrac{1}{2}\\right)^{t/6}.\n$$\nMit $A_{0}=2{,}4\\cdot 10^{6}$ ist das genau die behauptete Formel.\n\nDie Aussage ist wahr.",
+        "**B.** → Falsch\n\n$$\nB(t)=1{,}5\\cdot 10^{6}\\cdot (0{,}92)^{t}=1{,}5\\cdot 10^{6}\\,e^{t\\ln 0{,}92},\n$$\nalso $\\delta=\\ln 0{,}92\\approx -0{,}08338$. Es gilt $-0{,}08338\\ngtr -0{,}08$; der Zerfall ist stärker als $8\\%$ pro Stunde, nicht schwächer.\n\nDie Aussage ist falsch.",
+        "**C.** → Falsch\n\nAchtzehn Stunden sind genau drei Halbwertszeiten:\n$$\nA(18)=2{,}4\\cdot 10^{6}\\cdot \\left(\\dfrac{1}{2}\\right)^{3}=3{,}0\\cdot 10^{5}.\n$$\nDas liegt nicht über $4\\cdot 10^{5}$.\n\nDie Aussage ist falsch.",
+        "**D.** → Falsch\n\nAus $B(t)<5\\cdot 10^{5}$ folgt $(0{,}92)^{t}<1/3$, also\n$$\nt>\\dfrac{\\ln(1/3)}{\\ln 0{,}92}\\approx 13{,}18.\n$$\nDer erste Schnitt liegt bei $t\\approx 13{,}18$, nicht unter $12$.\n\nDie Aussage ist falsch.",
+        "**E.** → Wahr\n\nNach Verdünnung: $C(t)=7{,}2\\cdot 10^{5}\\,e^{-k(t-6)}$. Aus $C(t)<2\\cdot 10^{5}$ folgt\n$$\nt-6>\\dfrac{\\ln(7{,}2/2)}{k}\\approx 6{,}51,\n$$\nalso $t\\approx 12{,}51>12$.\n\nDie Aussage ist wahr."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Halte die Einheiten von $P(t)$ explizit, wandle stetige Wachstumskraft über $e^{k}-1$ in effektives Jahreswachstum um, und löse bei stückweisem Wachstum die zweite Phase mit Logarithmen.",
+      "solution_overview": "Schreibe das Halbwertszeit-Modell als reine Potenz von $1/2$ um, vergleiche diskrete Basen über $\\delta=\\ln b$, und löse stückweise Verdünnung mit Logarithmen.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 11.174",
-      "id": "math-11-174",
-      "title": "Reederei: Kapazität, Kosten und glatte Beladungsregel",
+      "case_id": "MATH 11.108",
+      "id": "math-11-108",
+      "title": "Draht zu Quadrat und Kreis: minimale Gesamtfläche",
       "chapter": 11,
-      "subsection": "11.5",
-      "context": "Eine Reederei transportiert $x>0$ Containerladungen pro Reise. Der Erlös ist $R(x)=150x-3x^{2}$ und die Kosten sind $C(x)=0.5x^{3}-9x^{2}+24x+500$. Die Beladungsstunden sind\n$$L(x)=\\begin{cases}x^{2}+5x&\\text{falls }x<20\\\\45x-400&\\text{falls }x\\ge20.\\end{cases}$$\nDie Geschäftsleitung vergleicht eine Outputmenge, die den Gewinn maximiert, mit einer, die den Erlös maximiert, sowie eine Aussage eines Subunternehmers zur Grenzumsatz. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "11.3",
+      "context": "Ein Draht der Länge $60\\ \\mathrm{cm}$ wird in zwei Stücke geschnitten. Ein Stück wird zum Quadrat gebogen, das andere zum Kreis. Ziel ist die Minimierung der eingeschlossenen Gesamtfläche. Sei $x$ die Drahtlänge für das Quadrat ($0\\le x\\le 60$). Bewerte jede Aussage.",
       "statements": [
-        "Der Gewinn wird bei $x=14$ Ladungen maximiert.",
-        "Der Erlös wird bei einem Output über $20$ Ladungen maximiert.",
-        "Die Stückkosten steigen bei $x=10$.",
-        "Die Beladungsstunden-Regel hat bei $x=20$ einen Ableitungssprung.",
-        "Beginnt ein Subunternehmer bei $x=10$ mit demselben Erlös, hat aber bis $x=18$ einen niedrigeren Grenzumsatz, so hat er bei $x=18$ einen niedrigeren Erlös."
+        "Die eingeschlossene Gesamtfläche als Funktion der Quadrat-Drahtlänge $x$ ist $A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$.",
+        "Die Ableitung dieser Gesamtfläche ist $A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$.",
+        "Die Gesamtfläche hat eine flache Steigung bei der Aufteilung $x=\\dfrac{240}{4+\\pi}$.",
+        "An dieser Aufteilung krümmt sich die Flächenkurve nach oben, also ist die Aufteilung ein lokales Minimum der eingeschlossenen Gesamtfläche.",
+        "Weil zwei Formen beteiligt sind, lässt sich das Problem nicht auf eine einvariablige Analysis-Aufgabe reduzieren."
       ],
       "answer_key": [
         true,
         true,
-        false,
-        false,
-        true
+        true,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nBilde den Gewinn $P=R-C$, differenziere und faktorisiere die Quadratik $P'$. Der positive kritische Punkt braucht $P''<0$, um ein Maximum zu sein.\n\nDer Gewinn $P=R-C$ hat die Ableitung\n\n$$\nP'(x) = 126+12x-1.5x^{2}\n$$\n\n$$\nP'(x) = -1.5(x-14)(x+6)\n$$\n\nBei $x=14$ gilt\n\n$$\nP''(x) = 12-3x = 12-42 = -30<0\n$$\n\nAlso maximiert $x=14$ den Gewinn.\n\nDie Aussage ist wahr.",
-        "**B.** → Wahr\n\nDer Erlös hat sein Maximum dort, wo $R'=0$ und $R''<0$. Löse diese kritische Ladungszahl und vergleiche sie mit der Schwelle $20$.\n\nDer Grenzerlös ist\n\n$$\nR'(x) = 150-6x = 0 \\implies x = 25\n$$\n\nAußerdem gilt $R''=-6<0$, und $25>20$, also liegt das Erlömaximum über zwanzig Ladungen.\n\nFühre den Ableitungsvergleich bis zur behaupteten Zahl durch, bevor du entscheidest.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nDie Stückkosten steigen nur dort, wo $AC'>0$. Werte $AC'(10)$ aus — ein negativer Wert bedeutet, dass $AC$ noch fällt, entgegen der Behauptung.\n\nDie Stückkosten sind\n\n$$\nAC(x) = 0.5x^{2}-9x+24+\\dfrac{500}{x}\n$$\n\n$$\nAC'(x) = x-9-\\dfrac{500}{x^{2}}\n$$\n\n$$\nAC'(10) = 10-9-5\n$$\n\n$$\n10 - 9 = 1\n$$\n\n$$\n1 - 5 = -4\n$$\n\n$$\nAC'(10) = -4\n$$\n\nDie Ableitung ist negativ, also fallen die Stückkosten bei $x=10$, sie steigen nicht. Die Zwischenrechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nEin Ableitungssprung verlangt ungleiche einseitige Steigungen. Prüfe sowohl das gemeinsame Niveau als auch die links- und rechtsseitigen Ableitungen der Beladungsstunden bei $x=20$.\n\nBeide Beladungsstunden-Formeln ergeben bei $x=20$ das Niveau $500$. Die einseitigen Steigungen sind\n\n$$\nL'_{-}(20) = 2\\cdot 20+5 = 45\n$$\n\n$$\nL'_{+}(20) = 45\n$$\n\nDie Steigungen stimmen überein, also gibt es keinen Ableitungssprung an der Schwelle. Die Zwischenrechnung widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nEin niedrigerer Grenzumsatz des Subunternehmers akkumuliert einen kleineren Zuwachs. Gleicher Erlös bei $x=10$ erzwingt dann einen niedrigeren Subunternehmer-Erlös bei $x=18$.\n\nEin Subunternehmer mit niedrigerem Grenzumsatz von $10$ bis $18$ akkumuliert einen kleineren Erlöszuwachs.\n\n$$\nR_{s}(18)-R_{s}(10)<R(18)-R(10)\n$$\n\nGleiche Startumätze bei $10$ lassen den Subunternehmer bei $18$ daher streng niedriger.\n\n$$\nx = 10\n$$\n\n$$\nx = 18\n$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\nQuadratseite $x/4$, Kreisradius $r=(60-x)/(2\\pi)$. Dann\n$$\nA(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi r^{2}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.\n$$\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\nDifferenzieren:\n$$\nA'(x)=\\dfrac{2x}{16}+\\dfrac{2(60-x)(-1)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.\n$$\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\n$A'(x)=0$ liefert $x/8=(60-x)/(2\\pi)$, also $x=240/(4+\\pi)$. Zusätzlich $A''(x)=1/8+1/(2\\pi)>0$.\n\nDie Aussage ist wahr.",
+        "**D.** → Wahr\n\nWegen $A''>0$ am kritischen Punkt ist es nach dem zweiten Ableitungstest ein lokales Minimum.\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\nBeide Formen hängen nur von $x$ ab. Nach dem Aufschreiben von $A(x)$ ist es gewöhnliche Analysis in einer Variablen auf $[0,60]$.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Der Erlös ist $R(x)=150x-3x^{2}$ und die Kosten sind $C(x)=0.5x^{3}-9x^{2}+24x+500$. Der Gewinn hat\n\n$$\nP'(x) = 126+12x-1.5x^{2} = -1.5(x-14)(x+6)\n$$\n\nalso ist $x=14$ ein kritischer Punkt mit $P''(14)=-30<0$. Der Erlös hat sein Maximum dort, wo $R'=150-6x=0$, nämlich bei $x=25>20$. Die Stückkosten erfüllen\n\n$$AC'(x)=x-9-\\dfrac{500}{x^{2}}$$\n\nund $AC'(10)=1-5=-4<0$, also fallen die Stückkosten bei $x=10$ noch. Beladungsstunden: $L(20^{-})=20^{2}+5\\cdot 20=500$ und $L(20^{+})=45\\cdot 20-400=500$; Steigungen $L'_{-}=2x+5$ ergibt $45$ bei $20$, und $L'_{+}=45$, also kein Ableitungssprung. Die Integration eines streng kleineren Subunternehmer-Grenzumsatzes von einem übereinstimmenden Endpunkt aus erzwingt einen niedrigeren Subunternehmer-Erlös am fernen Ende.",
+      "solution_overview": "Länge $x$ fürs Quadrat, $60-x$ fürs Kreis. Seite $x/4$, Radius $(60-x)/(2\\pi)$. Gesamtfläche\n$$\nA(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.\n$$\nEinziger kritischer Punkt in $(0,60)$ ist wegen $A''>0$ ein lokales Minimum. Zwei Formen, aber eine Variable $x$.",
       "figure": null,
       "tables_markdown": null
     },
     {
-      "case_id": "MATH 12.205",
-      "id": "math-12-205",
-      "title": "Klausuraufgaben – 7",
+      "case_id": "MATH 12.150",
+      "id": "math-12-150",
+      "title": "Trivia-Quiz: zwei Formate im Vergleich",
       "chapter": 12,
-      "subsection": "12.6",
-      "context": "Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "12.4",
+      "context": "Eine Trivia-Liga wählt zwischen zwei Quizformaten mit je $4$ Fragen. In Format A ist $X$ die Anzahl richtiger Antworten mit\n$P(X=0)=0{,}05$, $P(X=1)=0{,}20$, $P(X=2)=0{,}35$, $P(X=3)=0{,}30$, $P(X=4)=0{,}10$.\nIn Format B gilt\n$P(X=0)=0{,}15$, $P(X=1)=0{,}20$, $P(X=2)=0{,}15$, $P(X=3)=0{,}30$, $P(X=4)=0{,}20$.\nBewerte jede Aussage.",
       "statements": [
-        "Eine Sprachschule hat 150 Lernende: 63 lernen Spanisch, 57 Französisch und 18 beide. Genau $49$ Lernende lernen keine der beiden Sprachen.",
-        "Zwei unabhängige faire Münzen werden geworfen. Gegeben Kopf beim ersten Wurf, ist die Wahrscheinlichkeit für Kopf beim zweiten größer als $49\\%$.",
-        "Eine Spielhallen-Challenge zahlt $10$ Credits mit Wahrscheinlichkeit $\\frac3{10}$ und verliert sonst $4$ Credits. Der mittlere Gewinn ist größer als $0.3$ Credits.",
-        "Eine Erkrankung hat Prävalenz $5\\%$. Ein Test erkennt die Erkrankung immer, liefert aber bei $10\\%$ der Gesunden ein falsch positives Ergebnis. Nach einem positiven Ergebnis ist die Wahrscheinlichkeit der Erkrankung größer als $34\\%$.",
-        "Ein Laborgefäß enthält zehn weiße und zehn schwarze Kapseln. Drei Kapseln werden ohne Zurücklegen gezogen. Die Wahrscheinlichkeit, dass alle drei weiß sind, ist größer als $10\\%$."
+        "Beide Formate haben denselben Erwartungswert von $X$.",
+        "Format B hat eine größere Varianz von $X$ als Format A.",
+        "In Format A trägt der Wert $x=4$ mehr zur Varianz von $X$ bei als $x=0$.",
+        "In Format B trägt der Wert $x=4$ mehr zur Varianz von $X$ bei als $x=0$.",
+        "Die Standardabweichung von B ist mehr als doppelt so groß wie die Standardabweichung von A."
       ],
       "answer_key": [
-        false,
+        true,
+        true,
         true,
         false,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Falsch\n\nDiese Behauptung fragt, wie viele Lernende weder Spanisch noch Französisch lernen. Stelle zuerst die Vereinigung der beiden Sprachgruppen per Inklusion-Exklusion wieder her:\n\n$$\nN(S\\cup F) = 63+57-18\n$$\n\n$$\n63 + 57 = 120\n$$\n\n$$\n120 - 18 = 102\n$$\n\nUnter den $150$ Lernenden ist das Komplement\n\n$$\nN(\\text{neither}) = 150-102\n$$\n\n$$\n150 - 102 = 48\n$$\n\nGenau $48$ lernen keine der beiden Sprachen. Die Behauptung nennt die Anzahl $49$.\n\nDie Aussage ist falsch.",
-        "**B.** → Wahr\n\nDiese Behauptung fragt nach der Wahrscheinlichkeit für Kopf beim zweiten Wurf gegeben Kopf beim ersten. Die Münzen sind unabhängig und fair, also ändert der erste Ausgang den zweiten nicht:\n\n$$\nP(H_2\\mid H_1) = P(H_2) = \\frac{1}{2} = 0.5\n$$\n\nAls Prozentangabe sind das $50\\%$. Die Behauptung sagt, diese Wahrscheinlichkeit sei größer als $49\\%$.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nDiese Behauptung fragt nach dem mittleren Spielhallen-Gewinn. Mit Wahrscheinlichkeit $\\frac{3}{10}$ beträgt der Gewinn $10$, sonst $-4$:\n\n$$\nE(X) = 10\\cdot\\frac{3}{10}+(-4)\\cdot\\frac{7}{10} = 3-\\frac{28}{10} = \\frac{1}{5} = 0.2\n$$\n\nDer Mittelwert beträgt $0.2$ Credits. Die Behauptung sagt, er sei größer als $0.3$.\n\nDie Aussage ist falsch.",
-        "**D.** → Wahr\n\nEs sei $C$ die Erkrankung und $+$ ein positives Testergebnis. Dann gilt $P(+\\mid C)=1$, $P(+\\mid C^c)=0.10$, $P(C)=0.05$:\n\n$$\nP(C\\mid +) = \\frac{1\\cdot 0.05}{1\\cdot 0.05+0.10\\cdot 0.95} = \\frac{0.05}{0.145} = \\frac{10}{29}\n$$\n\n$$\n\\approx 0.344828\n$$\n\nAls Prozentangabe sind das etwa $34{,}483\\%$. Die Behauptung sagt, diese Wahrscheinlichkeit sei größer als $34\\%$.\n\nDie Aussage ist wahr.",
-        "**E.** → Wahr\n\nUngeordnete Dreier aus zwanzig Kapseln ergeben\n\n$$\nP(\\text{all white}) = \\frac{\\binom{10}{3}}{\\binom{20}{3}} = \\frac{120}{1140} = \\frac{2}{19}\n$$\n\n$$\n\\approx 0.105263\n$$\n\nAls Prozentangabe sind das etwa $10{,}526\\%$. Die Behauptung sagt, diese Wahrscheinlichkeit sei größer als $10\\%$.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\n$$\nE[X_A]=0\\cdot 0{,}05+1\\cdot 0{,}20+2\\cdot 0{,}35+3\\cdot 0{,}30+4\\cdot 0{,}10=2{,}20,\n$$\n$$\nE[X_B]=0\\cdot 0{,}15+1\\cdot 0{,}20+2\\cdot 0{,}15+3\\cdot 0{,}30+4\\cdot 0{,}20=2{,}20.\n$$\nDie Erwartungswerte stimmen überein.\n\nDie Aussage ist wahr.",
+        "**B.** → Wahr\n\nMit $E[X^{2}]_A=5{,}90$ und $E[X^{2}]_B=6{,}80$ folgt\n$$\n\\mathrm{Var}(X_A)=5{,}90-2{,}20^{2}=1{,}06,\\qquad \\mathrm{Var}(X_B)=6{,}80-2{,}20^{2}=1{,}96.\n$$\nAlso $\\mathrm{Var}(X_B)>\\mathrm{Var}(X_A)$.\n\nDie Aussage ist wahr.",
+        "**C.** → Wahr\n\nBeitrag $x=4$ in A: $0{,}10\\cdot(4-2{,}20)^{2}=0{,}324$. Beitrag $x=0$: $0{,}05\\cdot(0-2{,}20)^{2}=0{,}242$. Also trägt $x=4$ mehr bei.\n\nDie Aussage ist wahr.",
+        "**D.** → Falsch\n\nBeitrag $x=4$ in B: $0{,}20\\cdot(4-2{,}20)^{2}=0{,}648$. Beitrag $x=0$: $0{,}15\\cdot(0-2{,}20)^{2}=0{,}726$. Also trägt $x=0$ mehr bei, nicht $x=4$.\n\nDie Aussage ist falsch.",
+        "**E.** → Falsch\n\n$$\n\\mathrm{SD}_A=\\sqrt{1{,}06}\\approx 1{,}03,\\qquad \\mathrm{SD}_B=\\sqrt{1{,}96}=1{,}40.\n$$\n$2\\cdot 1{,}03=2{,}06>1{,}40$, also ist SD(B) nicht mehr als doppelt so groß.\n\nDie Aussage ist falsch."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Fünf getrennte Prüfungen. Buchstabe A ermittelt die Anzahl derer, die keine der beiden Sprachen lernen. Buchstabe B nutzt die Unabhängigkeit aufeinanderfolgender Münzwürfe. Buchstabe C berechnet den mittleren Spielhallen-Gewinn. Buchstabe D wendet den Satz von Bayes nach einem positiven medizinischen Test an. Buchstabe E zählt rein weiße Dreierziehungen ohne Zurücklegen.",
-      "figure": null,
-      "tables_markdown": null
+      "solution_overview": "Berechne $E[X]=\\sum x P(X=x)$ und $\\mathrm{Var}(X)=E[X^{2}]-(E[X])^{2}$ für beide Formate. Beitrag eines Wertes $x$ zur Varianz: $P(X=x)(x-E[X])^{2}$. Es gilt $E[X_A]=E[X_B]=2{,}20$, $\\mathrm{Var}(X_A)=1{,}06$, $\\mathrm{Var}(X_B)=1{,}96$.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20560%20620%22%20width%3D%22560%22%20height%3D%22620%22%20role%3D%22img%22%3E%3Cg%3E%3Crect%20width%3D%22560%22%20height%3D%22300%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22/%3E%3Ctext%20x%3D%22280.0%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EFormat%20A%3C/text%3E%3Cline%20x1%3D%2258%22%20y1%3D%2242%22%20x2%3D%2258%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2258%22%20y1%3D%22252%22%20x2%3D%22536%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2254%22%20y1%3D%22252.0%22%20x2%3D%22536%22%20y2%3D%22252.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22256.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.00%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22199.5%22%20x2%3D%22536%22%20y2%3D%22199.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22203.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.10%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22147.0%22%20x2%3D%22536%22%20y2%3D%22147.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22151.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.21%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2294.5%22%20x2%3D%22536%22%20y2%3D%2294.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2298.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.31%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2242.0%22%20x2%3D%22536%22%20y2%3D%2242.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2246.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.41%3C/text%3E%3Ctext%20x%3D%2218%22%20y%3D%22147.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%20transform%3D%22rotate%28-90%2018%20147.0%29%22%3EProbability%3C/text%3E%3Crect%20x%3D%2270.0%22%20y%3D%22226.6%22%20width%3D%2281.2%22%20height%3D%2225.4%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22220.6%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.05%3C/text%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C/text%3E%3Crect%20x%3D%22163.2%22%20y%3D%22150.3%22%20width%3D%2281.2%22%20height%3D%22101.7%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22144.3%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C/text%3E%3Crect%20x%3D%22256.4%22%20y%3D%2274.0%22%20width%3D%2281.2%22%20height%3D%22178.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22297.0%22%20y%3D%2268.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.35%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C/text%3E%3Crect%20x%3D%22349.6%22%20y%3D%2299.5%22%20width%3D%2281.2%22%20height%3D%22152.5%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22390.2%22%20y%3D%2293.5%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.3%3C/text%3E%3Ctext%20x%3D%22390.2%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C/text%3E%3Crect%20x%3D%22442.8%22%20y%3D%22201.2%22%20width%3D%2281.2%22%20height%3D%2250.8%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22195.2%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.1%3C/text%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3EValue%20of%20X%3C/text%3E%3C/g%3E%3Cg%20transform%3D%22translate%280%2C310%29%22%3E%3Crect%20width%3D%22560%22%20height%3D%22300%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22/%3E%3Ctext%20x%3D%22280.0%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EFormat%20B%3C/text%3E%3Cline%20x1%3D%2258%22%20y1%3D%2242%22%20x2%3D%2258%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2258%22%20y1%3D%22252%22%20x2%3D%22536%22%20y2%3D%22252%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22/%3E%3Cline%20x1%3D%2254%22%20y1%3D%22252.0%22%20x2%3D%22536%22%20y2%3D%22252.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22256.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.00%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22199.5%22%20x2%3D%22536%22%20y2%3D%22199.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22203.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.09%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%22147.0%22%20x2%3D%22536%22%20y2%3D%22147.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%22151.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.18%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2294.5%22%20x2%3D%22536%22%20y2%3D%2294.5%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2298.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.27%3C/text%3E%3Cline%20x1%3D%2254%22%20y1%3D%2242.0%22%20x2%3D%22536%22%20y2%3D%2242.0%22%20stroke%3D%22%23e6e0d6%22%20stroke-width%3D%221%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2246.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3E0.35%3C/text%3E%3Ctext%20x%3D%2218%22%20y%3D%22147.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%20transform%3D%22rotate%28-90%2018%20147.0%29%22%3EProbability%3C/text%3E%3Crect%20x%3D%2270.0%22%20y%3D%22163.0%22%20width%3D%2281.2%22%20height%3D%2289.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22157.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.15%3C/text%3E%3Ctext%20x%3D%22110.6%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C/text%3E%3Crect%20x%3D%22163.2%22%20y%3D%22133.4%22%20width%3D%2281.2%22%20height%3D%22118.6%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22127.4%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22203.8%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C/text%3E%3Crect%20x%3D%22256.4%22%20y%3D%22163.0%22%20width%3D%2281.2%22%20height%3D%2289.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22157.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.15%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C/text%3E%3Crect%20x%3D%22349.6%22%20y%3D%2274.0%22%20width%3D%2281.2%22%20height%3D%22178.0%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22390.2%22%20y%3D%2268.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.3%3C/text%3E%3Ctext%20x%3D%22390.2%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C/text%3E%3Crect%20x%3D%22442.8%22%20y%3D%22133.4%22%20width%3D%2281.2%22%20height%3D%22118.6%22%20rx%3D%224%22%20fill%3D%22%23c9dff8%22%20stroke%3D%22%233b6ea5%22%20stroke-width%3D%221.2%22/%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22127.4%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.2%3C/text%3E%3Ctext%20x%3D%22483.4%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x%3D%22297.0%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%235c564e%22%3EValue%20of%20X%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "tables_markdown": "| x | 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- | --- |\n| Format A | 0.05 | 0.2 | 0.35 | 0.3 | 0.1 |\n\n| x | 0 | 1 | 2 | 3 | 4 |\n| --- | --- | --- | --- | --- | --- |\n| Format B | 0.15 | 0.2 | 0.15 | 0.3 | 0.2 |"
     },
     {
-      "case_id": "MATH 13.46",
-      "id": "math-13-46",
-      "title": "Bäckerei-Qualitätskontrolle",
+      "case_id": "MATH 13.78",
+      "id": "math-13-78",
+      "title": "Screening in der Gemeindeklinik",
       "chapter": 13,
-      "subsection": "13",
-      "context": "Eine Bäckerei prüft chargenweise 18 Gebäckstücke. Bäcker A ist Auszubildender (p = 0,45, ein Gebäckstück spezifikationsgerecht zu formen). Bäcker B ist Experte (p = 0,85). Um die Prüfung zu bestehen, muss ein Bäcker mindestens 15 der 18 Gebäckstücke korrekt formen. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+      "subsection": "13.5",
+      "context": "An einem Screening-Tag mit $80$ unabhängigen Personen werden Positive und Negative im Verhältnis $3:17$ erwartet. Die Standardabweichung der Anzahl der Positiven ist $\\sqrt{10{,}2}$. Bewerte jede Aussage.",
       "statements": [
-        "Die Wahrscheinlichkeit einer fehlerfreien Charge von Bäcker A ist kleiner als 0,0001%.",
-        "Die Wahrscheinlichkeit, dass Bäcker B die Prüfung besteht, ist größer als die Wahrscheinlichkeit von genau 15.",
-        "Bäcker B besteht die Prüfung mehr als 750-mal so wahrscheinlich wie Bäcker A.",
-        "Die Varianz der Anzahl korrekt geformter Gebäckstücke von Bäcker A ist mehr als doppelt so groß wie die von Bäcker B.",
-        "Der Erwartungswert der Anzahl korrekt geformter Gebäckstücke von Bäcker B liegt um mehr als 90% über dem von Bäcker A."
+        "Eine gegebene Person wird mit Wahrscheinlichkeit $0{,}85$ negativ gescreent.",
+        "Unter den nächsten $20$ Personen ist die erwartete Anzahl positiver Screens gleich $4$.",
+        "Bei $40$ Personen beträgt die Varianz der Anzahl positiver Screens $5{,}1$.",
+        "Die Wahrscheinlichkeit von $3$ aufeinanderfolgenden positiven Screens ist kleiner als $0{,}005$.",
+        "Die Wahrscheinlichkeit von höchstens einem positiven Screen unter den nächsten $8$ Personen ist größer als $0{,}7$."
       ],
       "answer_key": [
         true,
+        false,
         true,
-        false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → Wahr\n\nEin perfekter Lauf bedeutet, dass jeder der $n$ Versuche gelingt. Unabhängigkeit erlaubt, die Erfolgswahrscheinlichkeit über alle Versuche zu multiplizieren; das ist die Binomial-PMF bei $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFür Seite A gilt $p = 0.45$ und $n = 18$:\n\n$$\nP(X = 18)\n$$\n\n$$\n(0.45)^{18} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n5.7257 \\times 10^{-5}\\%\n$$\n\nDie Behauptung vergleicht dies mit $0.0001\\%$. Wir erhalten etwa $5.7257 \\times 10^{-5}\\%$, was unter der Schwelle liegt.\n\nDie Aussage ist wahr.",
-        "**B.** → Wahr\n\nDas genannte Ereignis umfasst jede zulässige Anzahl von 15 bis 18, nicht nur die Einzelanzahl 15. Diese zusätzlichen Anzahlen haben positive Wahrscheinlichkeit, wenn $0<p<1$, also ist die Ereigniswahrscheinlichkeit streng größer als $P(X=15)$.\n\nDie Aussage ist wahr.",
-        "**C.** → Falsch\n\nDie Schwelle zu überschreiten bedeutet mindestens 15 Erfolge von 18. Dieses Ereignis ist die Vereinigung der paarweise disjunkten Ausgänge $X = 15, 16, \\ldots, 18$, also addieren wir die einzelnen Binomialwahrscheinlichkeiten:\n\n$$\nP(X \\ge 15) = \\sum_{x = 15}^{18} \\binom{18}{x} p^{x} (1-p)^{18-x}\n$$\n\nEin einzelner Term $P(X = k)$ würde nur „genau $k$“ zählen und den Rest des Schwanzes verfehlen, also unterschätzt er die Chance, die Schwelle zu erreichen. Wir brauchen den vollen oberen Schwanz für jede Seite und dann das Verhältnis dieser beiden Wahrscheinlichkeiten — nicht das Verhältnis der beiden Erfolgswahrscheinlichkeiten $p$.\n\nSeite A ($n = 18$, $p = 0.45$):\n\n$$\nP(X = 15) = \\binom{18}{15} (0.45)^{15} (0.55)^{3}\n$$\n\n$$\n\\binom{18}{15} = \\dfrac{18!}{15!(18-15)!}\n$$\n\n$$\n\\dfrac{18!}{15!(3)!} = \\dfrac{18 \\cdot 17 \\cdot 16}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n18 \\cdot 17 = 306\n$$\n\n$$\n306 \\cdot 16 = 4896\n$$\n\n$$\n\\dfrac{4896}{6} = 816\n$$\n\n$$\n\\binom{18}{15} = 816\n$$\n\n$$\n(0.45)^{15} = 6.283299 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{3}\n$$\n\n$$\n0.55 \\times 0.55 = 0.3025\n$$\n\n$$\n0.3025 \\times 0.55 = 0.166375\n$$\n\n$$\n(0.55)^{3} = 0.166375\n$$\n\n$$\n816 \\times 6.283299 \\times 10^{-6} = 0.005127171746\n$$\n\n$$\n0.005127171746 \\times 0.166375 = 0.000853033199\n$$\n\n$$\nP(X = 15) = 0.000853033199\n$$\n\n$$\nP(X = 16) = \\binom{18}{16} (0.45)^{16} (0.55)^{2}\n$$\n\n$$\n\\binom{18}{16} = \\dfrac{18!}{16!(18-16)!}\n$$\n\n$$\n\\dfrac{18!}{16!(2)!} = \\dfrac{18 \\cdot 17}{1 \\cdot 2}\n$$\n\n$$\n18 \\cdot 17 = 306\n$$\n\n$$\n\\dfrac{306}{2} = 153\n$$\n\n$$\n\\binom{18}{16} = 153\n$$\n\n$$\n(0.45)^{16} = 2.827484 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{2}\n$$\n\n$$\n0.55 \\times 0.55 = 0.3025\n$$\n\n$$\n(0.55)^{2} = 0.3025\n$$\n\n$$\n153 \\times 2.827484 \\times 10^{-6} = 0.000432605116\n$$\n\n$$\n0.000432605116 \\times 0.3025 = 0.000130863048\n$$\n\n$$\nP(X = 16) = 0.000130863048\n$$\n\n$$\nP(X = 17) = \\binom{18}{17} (0.45)^{17} (0.55)^{1}\n$$\n\n$$\n\\binom{18}{17} = \\dfrac{18!}{17!(18-17)!}\n$$\n\n$$\n\\binom{18}{17} = 18\n$$\n\n$$\n(0.45)^{17} = 1.272368 \\times 10^{-6}\n$$\n\n$$\n(0.55)^{1} = 0.55\n$$\n\n$$\n18 \\times 1.272368 \\times 10^{-6} = 2.290262 \\times 10^{-5}\n$$\n\n$$\n2.290262 \\times 10^{-5} \\times 0.55 = 1.259644 \\times 10^{-5}\n$$\n\n$$\nP(X = 17) = 1.259644 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = \\binom{18}{18} (0.45)^{18} (0.55)^{0}\n$$\n\n$$\n\\binom{18}{18} = 1\n$$\n\n$$\n(0.45)^{18} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n(0.55)^{0} = 1\n$$\n\n$$\n1 \\times 5.725656 \\times 10^{-7} = 5.725656 \\times 10^{-7}\n$$\n\n$$\n5.725656 \\times 10^{-7} \\times 1 = 5.725656 \\times 10^{-7}\n$$\n\n$$\nP(X = 18) = 5.725656 \\times 10^{-7}\n$$\n\nAddition der paarweise disjunkten Teile:\n\n$$\n0.0009 + 0.0001 + 1.2596 \\times 10^{-5}\n$$\n\n$$\n+ 5.7257 \\times 10^{-7}\n$$\n\n$$\nP(X \\ge 15)\n$$\n\n$$\n0.001\n$$\n\n$$\n0.1\\%\n$$\n\nSeite B ($n = 18$, $p = 0.85$):\n\n$$\nP(X = 15) = \\binom{18}{15} (0.85)^{15} (0.15)^{3}\n$$\n\n$$\n(0.85)^{15} = 0.087354219101\n$$\n\n$$\n(0.15)^{3}\n$$\n\n$$\n0.15 \\times 0.15 = 0.0225\n$$\n\n$$\n0.0225 \\times 0.15 = 0.003375\n$$\n\n$$\n(0.15)^{3} = 0.003375\n$$\n\n$$\n816 \\times 0.087354219101 = 71.281042786621\n$$\n\n$$\n71.281042786621 \\times 0.003375 = 0.240573519405\n$$\n\n$$\nP(X = 15) = 0.240573519405\n$$\n\n$$\nP(X = 16) = \\binom{18}{16} (0.85)^{16} (0.15)^{2}\n$$\n\n$$\n(0.85)^{16} = 0.074251086236\n$$\n\n$$\n(0.15)^{2}\n$$\n\n$$\n0.15 \\times 0.15 = 0.0225\n$$\n\n$$\n(0.15)^{2} = 0.0225\n$$\n\n$$\n153 \\times 0.074251086236 = 11.360416194118\n$$\n\n$$\n11.360416194118 \\times 0.0225 = 0.255609364368\n$$\n\n$$\nP(X = 16) = 0.255609364368\n$$\n\n$$\nP(X = 17) = \\binom{18}{17} (0.85)^{17} (0.15)^{1}\n$$\n\n$$\n(0.85)^{17} = 0.063113423301\n$$\n\n$$\n(0.15)^{1} = 0.15\n$$\n\n$$\n18 \\times 0.063113423301 = 1.136041619412\n$$\n\n$$\n1.136041619412 \\times 0.15 = 0.170406242912\n$$\n\n$$\nP(X = 17) = 0.170406242912\n$$\n\n$$\nP(X = 18) = \\binom{18}{18} (0.85)^{18} (0.15)^{0}\n$$\n\n$$\n(0.85)^{18} = 0.053646409806\n$$\n\n$$\n(0.15)^{0} = 1\n$$\n\n$$\n1 \\times 0.053646409806 = 0.053646409806\n$$\n\n$$\n0.053646409806 \\times 1 = 0.053646409806\n$$\n\n$$\nP(X = 18) = 0.053646409806\n$$\n\nAddition der paarweise disjunkten Teile:\n\n$$\n0.2406 + 0.2556 + 0.1704\n$$\n\n$$\n+ 0.0536\n$$\n\n$$\nP(X \\ge 15)\n$$\n\n$$\n0.7202\n$$\n\n$$\n72.02\\%\n$$\n\nDas Verhältnis in der Reihenfolge der Behauptung (B relativ zu A):\n\n$$\n\\frac{P_B(X \\ge 15)}{P_A(X \\ge 15)}\n$$\n\n$$\n\\frac{72.02\\%}{0.1\\%}\n$$\n\n$$\n722.36\n$$\n\nDa $722.36 \\le 750$.\n\nDie Aussage ist falsch.",
-        "**D.** → Falsch\n\nFür eine Binomialzählung $X \\sim \\mathrm{Bin}(n,p)$ schreibe $X$ als Summe von $n$ unabhängigen Bernoulli-Versuchen mit Erfolgswahrscheinlichkeit $p$. Jeder Versuch hat Varianz $p(1-p)$, und Varianzen unabhängiger Summanden addieren sich, also\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nDas ist am größten, wenn $p$ am nächsten bei $\\frac{1}{2}$ liegt, nicht wenn $p$ selbst am größten ist.\n\nSeite A mit $n_A = 18$, $p_A = 0.45$:\n\n$$\n\\mathrm{Var}(A) = 18 \\cdot 0.45 \\cdot 0.55\n$$\n\n$$\n18 \\times 0.45 = 8.1\n$$\n\n$$\n8.1 \\times 0.55 = 4.455\n$$\n\nSeite B mit $n_B = 18$, $p_B = 0.85$:\n\n$$\n\\mathrm{Var}(B) = 18 \\cdot 0.85 \\cdot 0.15\n$$\n\n$$\n18 \\times 0.85 = 15.3\n$$\n\n$$\n15.3 \\times 0.15 = 2.295\n$$\n\nDas Varianzverhältnis ist\n\n$$\n\\frac{\\mathrm{Var}(A)}{\\mathrm{Var}(B)} = \\frac{4.455}{2.295} \\approx 1.94\n$$\n\n.\n\nDie Aussage ist falsch.",
-        "**E.** → Wahr\n\nDer Erwartungswert einer Binomialzählung ist die Anzahl der Versuche mal die Erfolgswahrscheinlichkeit, weil $X$ die Summe von $n$ unabhängigen Bernoulli-Versuchen je mit Mittelwert $p$ ist:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 18 \\cdot 0.45\n$$\n\n$$\n18 \\times 0.45 = 8.1\n$$\n\n$$\nE[B] = 18 \\cdot 0.85\n$$\n\n$$\n18 \\times 0.85 = 15.3\n$$\n\nDie prozentuale Erhöhung von B gegenüber A ist\n\n$$\n100\\Big(\\frac{E[B]}{E[A]} - 1\\Big)\n$$\n\n$$\n88.89\\%\n$$\n\n.\n\nDie Aussage ist wahr."
+        "**A.** → Wahr\n\n$$\np=\\dfrac{3}{3+17}=0{,}15,\\qquad 1-p=0{,}85.\n$$\n\nDie Aussage ist wahr.",
+        "**B.** → Falsch\n\n$$\nE[X]=20\\cdot 0{,}15=3 \\ne 4.\n$$\n\nDie Aussage ist falsch.",
+        "**C.** → Wahr\n\n$$\n\\mathrm{Var}(X)=40\\cdot 0{,}15\\cdot 0{,}85=5{,}1.\n$$\n\nDie Aussage ist wahr.",
+        "**D.** → Wahr\n\n$$\np^{3}=(0{,}15)^{3}=0{,}003375<0{,}005.\n$$\n\nDie Aussage ist wahr.",
+        "**E.** → Falsch\n\nFür $X\\sim\\mathrm{Bin}(8,0{,}15)$:\n$$\nP(X\\le 1)\\approx 0{,}2725+0{,}3847=0{,}6572 \\le 0{,}7.\n$$\n\nDie Aussage ist falsch."
       ],
-      "difficulty_level": "3/5",
-      "solution_overview": "Eine Bäckerei prüft chargenweise 18 Gebäckstücke. Bäcker A ist Auszubildender (p = 0,45, ein Gebäckstück spezifikationsgerecht zu formen). Bäcker B ist Experte (p = 0,85). Um die Prüfung zu bestehen, muss ein Bäcker mindestens 15 der 18 Gebäckstücke korrekt formen.\n\nWir modellieren jede Seite als Binomialzählung mit $n = 18$ unabhängigen Versuchen: Seite A hat Erfolgswahrscheinlichkeit $p_A = 0.45$, Seite B hat $p_B = 0.85$.\n\nDie Erfolgsschwelle des Szenarios liegt bei mindestens $k = 15$ Erfolgen von $n = 18$.",
+      "difficulty_level": "5/5",
+      "solution_overview": "Verhältnis $3:17$ liefert $p=0{,}15$. Modell $X\\sim\\mathrm{Bin}(n,0{,}15)$ für die jeweiligen Stichprobengrößen.",
       "figure": null,
       "tables_markdown": null
     }

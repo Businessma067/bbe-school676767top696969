@@ -2,7 +2,8 @@
  * Assemble WiSo Mock Exam 1 sourced bank (curated).
  * Shape: 10 economics + 11 German reading + 13 BBE-format math (German copy).
  *
- * Math IDs mirror BBE Mock Exam 1; German body lives in wiso-mock-exam-1-math-de.json.
+ * Math IDs follow BBE Mock Exam 2 (diversified types; not a Mock 1 clone).
+ * German body lives in wiso-mock-exam-1-math-de.json.
  * German: full t.2 set (10) + hardest t.1 task with its own passage.
  *
  * Run: npx tsx scripts/build-wiso-mock-exam-1.mts
