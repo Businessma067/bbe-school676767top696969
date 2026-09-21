@@ -168,9 +168,10 @@ const PATH_VB_H = 320;
 /**
  * With stroke-dasharray COMET_DASH+(1-COMET_DASH) and dashoffset = 1-u,
  * the visible dash covers [u, u+COMET_DASH) (wrapping at 1).
- * Strength is a sine envelope over the exact geometric pass:
- * 0 when the leading edge first touches the circle, peaks mid-pass,
- * 0 when the trailing edge leaves — smooth blink, no snap.
+ *
+ * Strength is 0 until the leading edge touches the circle, then eases up
+ * quickly, stays bright while the dash crosses, and eases down as the
+ * trail leaves — smooth blink over the exact geometric pass window.
  */
 function cometLitStrength(u: number, f: number, r: number): number {
   if (r <= 0) return 0;
@@ -180,12 +181,27 @@ function cometLitStrength(u: number, f: number, r: number): number {
   const passLen = passEnd - passStart;
   if (passLen <= 0) return 0;
 
+  // Ease in/out over a fixed fraction of the pass (not a thin mid spike).
+  const FADE = 0.22;
+
+  const envelope = (phase: number): number => {
+    if (phase <= 0 || phase >= 1) return 0;
+    if (phase < FADE) {
+      const t = phase / FADE;
+      return t * t * (3 - 2 * t);
+    }
+    if (phase > 1 - FADE) {
+      const t = (1 - phase) / FADE;
+      return t * t * (3 - 2 * t);
+    }
+    return 1;
+  };
+
   const samples = u + COMET_DASH > 1 ? [u, u - 1] : [u];
   let best = 0;
   for (const uu of samples) {
     if (uu < passStart || uu > passEnd) continue;
-    const phase = (uu - passStart) / passLen;
-    best = Math.max(best, Math.sin(phase * Math.PI));
+    best = Math.max(best, envelope((uu - passStart) / passLen));
   }
   return best;
 }
@@ -273,14 +289,15 @@ function NodeCircle({
   size = "md",
   accent,
   youAreHereLabel,
-  nodeRef,
+  hitRef,
 }: {
   milestone: Milestone;
   index: number;
   size?: "sm" | "md" | "lg";
   accent: PrepRoadmapAccent;
   youAreHereLabel: string;
-  nodeRef?: (el: HTMLDivElement | null) => void;
+  /** Measure the visible circle (not the wrap) for comet hit-testing. */
+  hitRef?: (el: HTMLDivElement | null) => void;
 }) {
   const color = accentVar(accent);
   const dim =
@@ -294,11 +311,12 @@ function NodeCircle({
 
   return (
     <div
-      ref={nodeRef}
       className="prep-roadmap-node-pass-wrap relative"
       style={{ ["--prep-lit" as string]: 0 } as CSSProperties}
+      data-node-wrap={index}
     >
       <div
+        ref={hitRef}
         className={cn(
           "prep-roadmap-node relative grid place-items-center rounded-full",
           dim,
@@ -426,7 +444,7 @@ function SpreadDesktopRoadmap({
   const svgRef = useRef<SVGSVGElement | null>(null);
   const pathRef = useRef<SVGPathElement | null>(null);
   const cometRef = useRef<SVGPathElement | null>(null);
-  const nodeElsRef = useRef<Array<HTMLDivElement | null>>([null, null, null, null]);
+  const hitElsRef = useRef<Array<HTMLDivElement | null>>([null, null, null, null]);
   const litStrengthRef = useRef<Array<number>>([0, 0, 0, 0]);
   const hitsRef = useRef<NodePathHit[]>([
     { f: 0, r: 0.036 },
@@ -448,10 +466,15 @@ function SpreadDesktopRoadmap({
       return;
     }
 
+    const wrapFor = (index: number): HTMLElement | null => {
+      const hit = hitElsRef.current[index];
+      return hit?.closest(".prep-roadmap-node-pass-wrap") as HTMLElement | null;
+    };
+
     const remmeasure = () => {
       const next: NodePathHit[] = [];
       for (let i = 0; i < 4; i++) {
-        const el = nodeElsRef.current[i];
+        const el = hitElsRef.current[i];
         if (!el) {
           next.push(hitsRef.current[i]!);
           continue;
@@ -465,7 +488,7 @@ function SpreadDesktopRoadmap({
     const measureRaf = requestAnimationFrame(() => remmeasure());
     const ro = new ResizeObserver(() => remmeasure());
     ro.observe(svg);
-    for (const el of nodeElsRef.current) {
+    for (const el of hitElsRef.current) {
       if (el) ro.observe(el);
     }
 
@@ -477,9 +500,9 @@ function SpreadDesktopRoadmap({
       const next = strength < 0.004 ? 0 : strength;
       if (Math.abs(prev - next) < 0.003) return;
       litStrengthRef.current[index] = next;
-      const el = nodeElsRef.current[index];
-      if (!el) return;
-      el.style.setProperty("--prep-lit", next.toFixed(4));
+      const wrap = wrapFor(index);
+      if (!wrap) return;
+      wrap.style.setProperty("--prep-lit", next.toFixed(4));
     };
 
     const tick = (now: number) => {
@@ -587,8 +610,8 @@ function SpreadDesktopRoadmap({
                 size="lg"
                 accent={accent}
                 youAreHereLabel={youAreHereLabel}
-                nodeRef={(el) => {
-                  nodeElsRef.current[i] = el;
+                hitRef={(el) => {
+                  hitElsRef.current[i] = el;
                 }}
               />
               {n.caption === "below" && (

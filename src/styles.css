@@ -618,8 +618,8 @@ body.flashcard-swiping {
 .prep-roadmap-node-pass-wrap {
   --prep-lit: 0;
   transform-origin: center;
-  transform: scale(calc(1 + 0.075 * var(--prep-lit)));
-  filter: brightness(calc(1 + 0.12 * var(--prep-lit)));
+  transform: scale(calc(1 + 0.08 * var(--prep-lit)));
+  filter: brightness(calc(1 + 0.14 * var(--prep-lit)));
   will-change: transform, filter;
 }
 
@@ -635,9 +635,9 @@ body.flashcard-swiping {
   border-radius: 9999px;
   opacity: var(--prep-lit);
   box-shadow:
-    0 0 0 calc(2.5px * var(--prep-lit)) color-mix(in oklab, var(--prep-accent) 30%, transparent),
-    0 0 calc(16px * var(--prep-lit)) calc(-2px * var(--prep-lit))
-      color-mix(in oklab, var(--prep-accent) 46%, transparent);
+    0 0 0 calc(2.5px * var(--prep-lit)) color-mix(in oklab, var(--prep-accent) 32%, transparent),
+    0 0 calc(18px * var(--prep-lit)) calc(-1px * var(--prep-lit))
+      color-mix(in oklab, var(--prep-accent) 50%, transparent);
   will-change: opacity, box-shadow;
 }
 
@@ -649,12 +649,12 @@ body.flashcard-swiping {
   background:
     radial-gradient(
       circle,
-      color-mix(in oklab, var(--prep-accent) 40%, transparent) 0%,
-      color-mix(in oklab, var(--prep-accent) 14%, transparent) 42%,
+      color-mix(in oklab, var(--prep-accent) 42%, transparent) 0%,
+      color-mix(in oklab, var(--prep-accent) 16%, transparent) 42%,
       transparent 70%
     );
-  opacity: calc(0.55 * var(--prep-lit));
-  transform: scale(calc(0.94 + 0.32 * var(--prep-lit)));
+  opacity: calc(0.65 * var(--prep-lit));
+  transform: scale(calc(0.96 + 0.34 * var(--prep-lit)));
   will-change: opacity, transform;
 }
 
