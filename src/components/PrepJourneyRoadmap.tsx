@@ -156,6 +156,14 @@ function MilestoneIcon({
   );
 }
 
+/** Comet loop is 8.5s with 0.4s delay; nodes sit ~evenly along the path. */
+const COMET_DURATION_S = 8.5;
+const COMET_DELAY_S = 0.4;
+
+function nodePassDelay(index: number): string {
+  return `${COMET_DELAY_S + index * (COMET_DURATION_S / 3)}s`;
+}
+
 function NodeCircle({
   milestone,
   index,
@@ -170,6 +178,7 @@ function NodeCircle({
   youAreHereLabel: string;
 }) {
   const color = accentVar(accent);
+  const passDelay = nodePassDelay(index);
   const dim =
     size === "lg"
       ? "h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]"
@@ -181,57 +190,82 @@ function NodeCircle({
 
   return (
     <div
-      className={cn(
-        "prep-roadmap-node relative grid place-items-center rounded-full",
-        dim,
-        milestone.destination
-          ? "text-white"
-          : "border-[1.5px] border-foreground/70 bg-background text-foreground",
-        milestone.youAreHere && !milestone.destination && "border-[color:var(--prep-accent)]",
-      )}
-      style={
-        {
-          animationDelay: `${0.22 + index * 0.22}s`,
-          ["--prep-accent" as string]: color,
-          ...(milestone.destination
-            ? {
-                backgroundColor: color,
-                boxShadow: `0 8px 20px -8px color-mix(in oklab, ${color} 55%, transparent)`,
-              }
-            : milestone.youAreHere
-              ? { borderColor: color }
-              : {}),
-        } as CSSProperties
-      }
+      className="prep-roadmap-node-pass-wrap relative"
+      style={{ animationDelay: passDelay }}
     >
-      {milestone.youAreHere && (
-        <>
-          <span
-            className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
-            style={{ borderColor: color }}
-            aria-hidden
-          />
-          <span
-            className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
-            style={{ borderColor: color }}
-            aria-hidden
-          />
-        </>
-      )}
-      <MilestoneIcon type={milestone.icon} className={iconDim} />
-      {milestone.youAreHere && (
+      <div
+        className={cn(
+          "prep-roadmap-node relative grid place-items-center rounded-full",
+          dim,
+          milestone.destination
+            ? "text-white"
+            : "border-[1.5px] border-foreground/70 bg-background text-foreground",
+          milestone.youAreHere && !milestone.destination && "border-[color:var(--prep-accent)]",
+        )}
+        style={
+          {
+            animationDelay: `${0.22 + index * 0.22}s`,
+            ["--prep-accent" as string]: color,
+            ...(milestone.destination
+              ? {
+                  backgroundColor: color,
+                  boxShadow: `0 8px 20px -8px color-mix(in oklab, ${color} 55%, transparent)`,
+                }
+              : milestone.youAreHere
+                ? { borderColor: color }
+                : {}),
+          } as CSSProperties
+        }
+      >
         <span
-          className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white"
-          style={{
-            backgroundColor: color,
-            border: `1px solid ${color}`,
-            boxShadow: `0 4px 12px -6px color-mix(in oklab, ${color} 70%, transparent)`,
-          }}
+          className="prep-roadmap-node-glow"
+          style={
+            {
+              animationDelay: passDelay,
+              ["--prep-accent" as string]: color,
+            } as CSSProperties
+          }
           aria-hidden
-        >
-          {youAreHereLabel}
-        </span>
-      )}
+        />
+        <span
+          className="prep-roadmap-node-spark"
+          style={
+            {
+              animationDelay: passDelay,
+              ["--prep-accent" as string]: color,
+            } as CSSProperties
+          }
+          aria-hidden
+        />
+        {milestone.youAreHere && (
+          <>
+            <span
+              className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
+              style={{ borderColor: color }}
+              aria-hidden
+            />
+            <span
+              className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
+              style={{ borderColor: color }}
+              aria-hidden
+            />
+          </>
+        )}
+        <MilestoneIcon type={milestone.icon} className={cn(iconDim, "relative z-[1]")} />
+        {milestone.youAreHere && (
+          <span
+            className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white"
+            style={{
+              backgroundColor: color,
+              border: `1px solid ${color}`,
+              boxShadow: `0 4px 12px -6px color-mix(in oklab, ${color} 70%, transparent)`,
+            }}
+            aria-hidden
+          >
+            {youAreHereLabel}
+          </span>
+        )}
+      </div>
     </div>
   );
 }
