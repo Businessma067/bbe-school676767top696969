@@ -203,6 +203,11 @@ function looksLikeMathInner(inner: string): boolean {
   // Thin-space-only chunks like `12\,000` (no letter commands) are math numbers.
   if (/^\d{1,3}(?:\\,\d{3})+(?:\.\d+)?$/.test(t)) return true;
 
+  // German decimal / grouped digits in math mode: $0{,}61$, $14{,}79$, $87{,}500$.
+  // Without this, `$0{,}61$` fails every bare-number check (`.` / `\,` only) and the
+  // dollar delimiters leak into the UI as literal `0{,}61$`.
+  if (/^[+\-]?\d+(?:\{,\}\d+)+$/.test(t)) return true;
+
   // Glue words mean currency `$8,000 < 0 and $a_1$` must NOT become one math span.
   if (
     /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|is|are|was|be|if|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
